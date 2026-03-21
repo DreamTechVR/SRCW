@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
+#include "UNION_structs.hpp"
 #include "UnionRun_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "UnionUI_structs.hpp"
-#include "UNION_structs.hpp"
 
 
 namespace SDK
@@ -154,92 +154,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_FestaResult_PointReward_C">();
+		BP_STATIC_CLASS_IMPL("WBP_FestaResult_PointReward_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_FestaResult_PointReward_C")
 	}
 	static class UWBP_FestaResult_PointReward_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_FestaResult_PointReward_C>();
 	}
 };
-static_assert(alignof(UWBP_FestaResult_PointReward_C) == 0x000010, "Wrong alignment on UWBP_FestaResult_PointReward_C");
-static_assert(sizeof(UWBP_FestaResult_PointReward_C) == 0x000690, "Wrong size on UWBP_FestaResult_PointReward_C");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, UberGraphFrame) == 0x000318, "Member 'UWBP_FestaResult_PointReward_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, PointUpChance_In) == 0x000320, "Member 'UWBP_FestaResult_PointReward_C::PointUpChance_In' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, PointUpWin_In_Loop) == 0x000328, "Member 'UWBP_FestaResult_PointReward_C::PointUpWin_In_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, PointReward_In) == 0x000330, "Member 'UWBP_FestaResult_PointReward_C::PointReward_In' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, Win_Out) == 0x000338, "Member 'UWBP_FestaResult_PointReward_C::Win_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, Win_In_Loop) == 0x000340, "Member 'UWBP_FestaResult_PointReward_C::Win_In_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, FestaResult_Out) == 0x000348, "Member 'UWBP_FestaResult_PointReward_C::FestaResult_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, FestaResult_Loop) == 0x000350, "Member 'UWBP_FestaResult_PointReward_C::FestaResult_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, FestaResult_In) == 0x000358, "Member 'UWBP_FestaResult_PointReward_C::FestaResult_In' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, Button_front) == 0x000360, "Member 'UWBP_FestaResult_PointReward_C::Button_front' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, DSP_Num_PointUpChance_02) == 0x000368, "Member 'UWBP_FestaResult_PointReward_C::DSP_Num_PointUpChance_02' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, DSP_WBP_FestaResult_ContributionRate) == 0x000370, "Member 'UWBP_FestaResult_PointReward_C::DSP_WBP_FestaResult_ContributionRate' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, MLC_Base) == 0x000378, "Member 'UWBP_FestaResult_PointReward_C::MLC_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, Panel_01) == 0x000380, "Member 'UWBP_FestaResult_PointReward_C::Panel_01' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, Panel_02) == 0x000388, "Member 'UWBP_FestaResult_PointReward_C::Panel_02' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, TXT_WIN_1_1) == 0x000390, "Member 'UWBP_FestaResult_PointReward_C::TXT_WIN_1_1' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, TXT_WIN_1_2) == 0x000398, "Member 'UWBP_FestaResult_PointReward_C::TXT_WIN_1_2' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, TXT_WIN_1_3) == 0x0003A0, "Member 'UWBP_FestaResult_PointReward_C::TXT_WIN_1_3' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, TXT_WIN_2_1) == 0x0003A8, "Member 'UWBP_FestaResult_PointReward_C::TXT_WIN_2_1' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, TXT_WIN_2_2) == 0x0003B0, "Member 'UWBP_FestaResult_PointReward_C::TXT_WIN_2_2' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, TXT_WIN_2_3) == 0x0003B8, "Member 'UWBP_FestaResult_PointReward_C::TXT_WIN_2_3' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, TXT_WIN_3_1) == 0x0003C0, "Member 'UWBP_FestaResult_PointReward_C::TXT_WIN_3_1' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, TXT_WIN_3_2) == 0x0003C8, "Member 'UWBP_FestaResult_PointReward_C::TXT_WIN_3_2' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, TXT_WIN_3_3) == 0x0003D0, "Member 'UWBP_FestaResult_PointReward_C::TXT_WIN_3_3' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, WBP_CMN_GadgetCount) == 0x0003D8, "Member 'UWBP_FestaResult_PointReward_C::WBP_CMN_GadgetCount' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, WBP_Festa_PointReward) == 0x0003E0, "Member 'UWBP_FestaResult_PointReward_C::WBP_Festa_PointReward' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, WBP_Festa_PointReward_FestaPointTable) == 0x0003E8, "Member 'UWBP_FestaResult_PointReward_C::WBP_Festa_PointReward_FestaPointTable' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, WBP_FestaResult_RewardComplete) == 0x0003F0, "Member 'UWBP_FestaResult_PointReward_C::WBP_FestaResult_RewardComplete' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, WidgetSwitcher_WInName) == 0x0003F8, "Member 'UWBP_FestaResult_PointReward_C::WidgetSwitcher_WInName' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, StartPoint) == 0x000400, "Member 'UWBP_FestaResult_PointReward_C::StartPoint' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, AddPoint) == 0x000404, "Member 'UWBP_FestaResult_PointReward_C::AddPoint' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, StartItemCount) == 0x000408, "Member 'UWBP_FestaResult_PointReward_C::StartItemCount' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, NowPoint) == 0x00040C, "Member 'UWBP_FestaResult_PointReward_C::NowPoint' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, RewardDataList) == 0x000410, "Member 'UWBP_FestaResult_PointReward_C::RewardDataList' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, FrameAddPoint) == 0x000420, "Member 'UWBP_FestaResult_PointReward_C::FrameAddPoint' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, Endpoint) == 0x000424, "Member 'UWBP_FestaResult_PointReward_C::Endpoint' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, DonpaNum) == 0x000428, "Member 'UWBP_FestaResult_PointReward_C::DonpaNum' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, bIsRewardUIEnd) == 0x00042C, "Member 'UWBP_FestaResult_PointReward_C::bIsRewardUIEnd' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, ResultRewardGetDisplay) == 0x000430, "Member 'UWBP_FestaResult_PointReward_C::ResultRewardGetDisplay' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, RewardIndexOffset) == 0x000438, "Member 'UWBP_FestaResult_PointReward_C::RewardIndexOffset' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, bIsPress) == 0x00043C, "Member 'UWBP_FestaResult_PointReward_C::bIsPress' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, Wait) == 0x000440, "Member 'UWBP_FestaResult_PointReward_C::Wait' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, bIsFestaResultEnd) == 0x000444, "Member 'UWBP_FestaResult_PointReward_C::bIsFestaResultEnd' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, GaugeSound) == 0x000448, "Member 'UWBP_FestaResult_PointReward_C::GaugeSound' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, PanelDebugTexture_01) == 0x000450, "Member 'UWBP_FestaResult_PointReward_C::PanelDebugTexture_01' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, PanelDebugTexture_02) == 0x000478, "Member 'UWBP_FestaResult_PointReward_C::PanelDebugTexture_02' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, BG_Color) == 0x0004A0, "Member 'UWBP_FestaResult_PointReward_C::BG_Color' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, ContributionList) == 0x0004A8, "Member 'UWBP_FestaResult_PointReward_C::ContributionList' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, ActorList) == 0x0004B8, "Member 'UWBP_FestaResult_PointReward_C::ActorList' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, ZposBG) == 0x0004C8, "Member 'UWBP_FestaResult_PointReward_C::ZposBG' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, LoadCount) == 0x0004D0, "Member 'UWBP_FestaResult_PointReward_C::LoadCount' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, Machines) == 0x0004D8, "Member 'UWBP_FestaResult_PointReward_C::Machines' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, Hoverboards) == 0x0004E8, "Member 'UWBP_FestaResult_PointReward_C::Hoverboards' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, Array_Index) == 0x0004F8, "Member 'UWBP_FestaResult_PointReward_C::Array_Index' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, RewardInfo) == 0x000500, "Member 'UWBP_FestaResult_PointReward_C::RewardInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, bIsHoverList) == 0x000538, "Member 'UWBP_FestaResult_PointReward_C::bIsHoverList' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, bIsExist) == 0x000548, "Member 'UWBP_FestaResult_PointReward_C::bIsExist' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, LoadCount2) == 0x00054C, "Member 'UWBP_FestaResult_PointReward_C::LoadCount2' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, StartAdd) == 0x000550, "Member 'UWBP_FestaResult_PointReward_C::StartAdd' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, MachinePositions) == 0x000558, "Member 'UWBP_FestaResult_PointReward_C::MachinePositions' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, FestResultBG) == 0x000568, "Member 'UWBP_FestaResult_PointReward_C::FestResultBG' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, DefaultCameraTransform) == 0x000570, "Member 'UWBP_FestaResult_PointReward_C::DefaultCameraTransform' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, SequencePlayer) == 0x0005D0, "Member 'UWBP_FestaResult_PointReward_C::SequencePlayer' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, ResultPosition) == 0x0005E0, "Member 'UWBP_FestaResult_PointReward_C::ResultPosition' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, FestaTeamColor) == 0x000640, "Member 'UWBP_FestaResult_PointReward_C::FestaTeamColor' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, SequenceActor) == 0x000648, "Member 'UWBP_FestaResult_PointReward_C::SequenceActor' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, bIsLastNormalReward) == 0x000650, "Member 'UWBP_FestaResult_PointReward_C::bIsLastNormalReward' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, Next_Add) == 0x000654, "Member 'UWBP_FestaResult_PointReward_C::Next_Add' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, Bonus_Text) == 0x000658, "Member 'UWBP_FestaResult_PointReward_C::Bonus_Text' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, CurrentStageId) == 0x000668, "Member 'UWBP_FestaResult_PointReward_C::CurrentStageId' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, Mul_Bonus) == 0x00066C, "Member 'UWBP_FestaResult_PointReward_C::Mul_Bonus' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, StreakRewardList) == 0x000670, "Member 'UWBP_FestaResult_PointReward_C::StreakRewardList' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, RewardIndex) == 0x000680, "Member 'UWBP_FestaResult_PointReward_C::RewardIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, DrawBonus) == 0x000684, "Member 'UWBP_FestaResult_PointReward_C::DrawBonus' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, bIsStreakReward) == 0x000688, "Member 'UWBP_FestaResult_PointReward_C::bIsStreakReward' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, StageId) == 0x000689, "Member 'UWBP_FestaResult_PointReward_C::StageId' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_PointReward_C, StageIndex) == 0x00068C, "Member 'UWBP_FestaResult_PointReward_C::StageIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_FestaResult_PointReward_C;
 
 }
 

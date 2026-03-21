@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "UMG_structs.hpp"
-#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "UNION_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK::Params
@@ -126,96 +126,7 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_5;            // 0x0298(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_6;            // 0x02A8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail) == 0x000008, "Wrong alignment on WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail");
-static_assert(sizeof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail) == 0x0002B8, "Wrong size on WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, EntryPoint) == 0x000000, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, Temp_byte_Variable) == 0x000004, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_CreateDelegate_OutputDelegate_1) == 0x000018, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_CreateDelegate_OutputDelegate_2) == 0x000028, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, Temp_bool_Variable) == 0x000038, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, Temp_bool_Variable_1) == 0x000039, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, Temp_bool_Variable_2) == 0x00003A, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, Temp_bool_Variable_3) == 0x00003B, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, Temp_bool_Variable_4) == 0x00003C, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::Temp_bool_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, Temp_bool_Variable_5) == 0x00003D, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::Temp_bool_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000040, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_GetWorldSubsystem_ReturnValue_1) == 0x000048, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_GetWorldSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_GetWorldSubsystem_ReturnValue_2) == 0x000050, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_GetWorldSubsystem_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_GetWorldSubsystem_ReturnValue_3) == 0x000058, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_GetWorldSubsystem_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_GetWorldSubsystem_ReturnValue_4) == 0x000060, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_GetWorldSubsystem_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_GetWorldSubsystem_ReturnValue_5) == 0x000068, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_GetWorldSubsystem_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_GetWorldSubsystem_ReturnValue_6) == 0x000070, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_GetWorldSubsystem_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_CreatePlayAnimationProxyObject_Result) == 0x000078, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_CreatePlayAnimationProxyObject_Result' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_CreatePlayAnimationProxyObject_ReturnValue) == 0x000080, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_CreatePlayAnimationProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_IsValid_ReturnValue) == 0x000088, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_CreatePlayAnimationProxyObject_Result_1) == 0x000090, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_CreatePlayAnimationProxyObject_Result_1' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_CreatePlayAnimationProxyObject_ReturnValue_1) == 0x000098, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_CreatePlayAnimationProxyObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_IsValid_ReturnValue_1) == 0x0000A0, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_GetOwningPlayer_ReturnValue) == 0x0000A8, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_DynamicCast_AsApp_Player_Controller) == 0x0000B0, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_DynamicCast_bSuccess) == 0x0000B8, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, Temp_byte_Variable_1) == 0x0000B9, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_CreatePlayAnimationProxyObject_Result_2) == 0x0000C0, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_CreatePlayAnimationProxyObject_Result_2' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_CreatePlayAnimationProxyObject_ReturnValue_2) == 0x0000C8, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_CreatePlayAnimationProxyObject_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_IsValid_ReturnValue_2) == 0x0000D0, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_InPlayerData) == 0x0000D8, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_InPlayerData' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_InBlockType) == 0x0001D8, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_InBlockType' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_bInIsOwn) == 0x0001D9, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_bInIsOwn' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_bInIsSendNice) == 0x0001DA, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_bInIsSendNice' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_bInIsNPC) == 0x0001DB, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_bInIsNPC' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_InNiceCount_1) == 0x0001DC, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_InNiceCount_1' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_InProductUserId) == 0x0001E0, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_InProductUserId' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_bInIsOwnHost) == 0x0001F0, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_bInIsOwnHost' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_InLobbyType) == 0x0001F1, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_InLobbyType' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_InPlatformID) == 0x0001F8, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_InPlatformID' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_InPlatform) == 0x000208, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_InPlatform' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_bInIsEnableBlockWindowButton) == 0x000218, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_bInIsEnableBlockWindowButton' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000219, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanOR_ReturnValue) == 0x00021A, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_CreateDelegate_OutputDelegate_3) == 0x00021C, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_CreatePlayAnimationProxyObject_Result_3) == 0x000230, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_CreatePlayAnimationProxyObject_Result_3' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_CreatePlayAnimationProxyObject_ReturnValue_3) == 0x000238, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_CreatePlayAnimationProxyObject_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_IsValid_ReturnValue_3) == 0x000240, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanOR_ReturnValue_1) == 0x000241, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_CreatePlayAnimationProxyObject_Result_4) == 0x000248, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_CreatePlayAnimationProxyObject_Result_4' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_CreatePlayAnimationProxyObject_ReturnValue_4) == 0x000250, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_CreatePlayAnimationProxyObject_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_IsValid_ReturnValue_4) == 0x000258, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanOR_ReturnValue_2) == 0x000259, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanOR_ReturnValue_3) == 0x00025A, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanOR_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_InNiceCount) == 0x00025C, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_InNiceCount' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000260, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000261, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, Temp_bool_Variable_6) == 0x000262, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::Temp_bool_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_Not_PreBool_ReturnValue) == 0x000263, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanAND_ReturnValue) == 0x000264, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Select_Default) == 0x000265, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanOR_ReturnValue_4) == 0x000266, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanOR_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_GetAppPlayerController_ReturnValue) == 0x000268, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_GetAppPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x000270, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_EqualEqual_ByteByte_ReturnValue_3) == 0x000271, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_EqualEqual_ByteByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanOR_ReturnValue_5) == 0x000272, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanOR_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Select_Default_1) == 0x000273, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Select_Default_2) == 0x000274, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, Temp_byte_Variable_2) == 0x000275, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_CreateDelegate_OutputDelegate_4) == 0x000278, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_Not_PreBool_ReturnValue_1) == 0x000288, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_Not_PreBool_ReturnValue_2) == 0x000289, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanAND_ReturnValue_1) == 0x00028A, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_EqualEqual_ByteByte_ReturnValue_4) == 0x00028B, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_EqualEqual_ByteByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_EqualEqual_ByteByte_ReturnValue_5) == 0x00028C, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_EqualEqual_ByteByte_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, Temp_byte_Variable_3) == 0x00028D, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_Not_PreBool_ReturnValue_3) == 0x00028E, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_Not_PreBool_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanAND_ReturnValue_2) == 0x00028F, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanOR_ReturnValue_6) == 0x000290, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanOR_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_Not_PreBool_ReturnValue_4) == 0x000291, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_Not_PreBool_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanAND_ReturnValue_3) == 0x000292, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, Temp_bool_Variable_7) == 0x000293, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::Temp_bool_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanAND_ReturnValue_4) == 0x000294, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanAND_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Select_Default_3) == 0x000295, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_IsDesignTime) == 0x000296, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_CreateDelegate_OutputDelegate_5) == 0x000298, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_CreateDelegate_OutputDelegate_6) == 0x0002A8, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail;
 
 // Function WBP_Online_PlayerDetail.WBP_Online_PlayerDetail_C.OnUpdateNiceCount
 // 0x0004 (0x0004 - 0x0000)
@@ -224,9 +135,7 @@ struct WBP_Online_PlayerDetail_C_OnUpdateNiceCount final
 public:
 	int32                                         InNiceCount;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Online_PlayerDetail_C_OnUpdateNiceCount) == 0x000004, "Wrong alignment on WBP_Online_PlayerDetail_C_OnUpdateNiceCount");
-static_assert(sizeof(WBP_Online_PlayerDetail_C_OnUpdateNiceCount) == 0x000004, "Wrong size on WBP_Online_PlayerDetail_C_OnUpdateNiceCount");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_OnUpdateNiceCount, InNiceCount) == 0x000000, "Member 'WBP_Online_PlayerDetail_C_OnUpdateNiceCount::InNiceCount' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Online_PlayerDetail_C_OnUpdateNiceCount;
 
 // Function WBP_Online_PlayerDetail.WBP_Online_PlayerDetail_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -235,9 +144,7 @@ struct WBP_Online_PlayerDetail_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Online_PlayerDetail_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_Online_PlayerDetail_C_PreConstruct");
-static_assert(sizeof(WBP_Online_PlayerDetail_C_PreConstruct) == 0x000001, "Wrong size on WBP_Online_PlayerDetail_C_PreConstruct");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_Online_PlayerDetail_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Online_PlayerDetail_C_PreConstruct;
 
 // Function WBP_Online_PlayerDetail.WBP_Online_PlayerDetail_C.Set Lobby Player Data
 // 0x0120 (0x0120 - 0x0000)
@@ -260,22 +167,7 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x011E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x011F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data) == 0x000008, "Wrong alignment on WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data");
-static_assert(sizeof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data) == 0x000120, "Wrong size on WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, InPlayerData) == 0x000000, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::InPlayerData' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, bIsBlocked) == 0x000100, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::bIsBlocked' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, bIsOwn) == 0x000101, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::bIsOwn' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, bIsSentNice) == 0x000102, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::bIsSentNice' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, NiceCounts) == 0x000104, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::NiceCounts' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, ProductUserId_0) == 0x000108, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::ProductUserId_0' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, BlockType) == 0x000118, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::BlockType' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, bIsNPC) == 0x000119, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::bIsNPC' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, Temp_bool_Variable) == 0x00011A, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, Temp_byte_Variable) == 0x00011B, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, Temp_byte_Variable_1) == 0x00011C, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, CallFunc_BooleanOR_ReturnValue) == 0x00011D, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, CallFunc_BooleanOR_ReturnValue_1) == 0x00011E, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, K2Node_Select_Default) == 0x00011F, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data;
 
 // Function WBP_Online_PlayerDetail.WBP_Online_PlayerDetail_C.SetPlayerDetailData
 // 0x0148 (0x0148 - 0x0000)
@@ -296,20 +188,7 @@ public:
 	class FString                                 InPlatform;                                        // 0x0130(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          bInIsEnableBlockWindowButton;                      // 0x0140(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Online_PlayerDetail_C_SetPlayerDetailData) == 0x000008, "Wrong alignment on WBP_Online_PlayerDetail_C_SetPlayerDetailData");
-static_assert(sizeof(WBP_Online_PlayerDetail_C_SetPlayerDetailData) == 0x000148, "Wrong size on WBP_Online_PlayerDetail_C_SetPlayerDetailData");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, InPlayerData) == 0x000000, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::InPlayerData' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, InBlockType) == 0x000100, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::InBlockType' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, bInIsOwn) == 0x000101, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::bInIsOwn' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, bInIsSendNice) == 0x000102, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::bInIsSendNice' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, bInIsNPC) == 0x000103, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::bInIsNPC' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, InNiceCount) == 0x000104, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::InNiceCount' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, InProductUserId) == 0x000108, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::InProductUserId' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, bInIsOwnHost) == 0x000118, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::bInIsOwnHost' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, InLobbyType) == 0x000119, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::InLobbyType' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, InPlatformId) == 0x000120, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::InPlatformId' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, InPlatform) == 0x000130, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::InPlatform' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, bInIsEnableBlockWindowButton) == 0x000140, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::bInIsEnableBlockWindowButton' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Online_PlayerDetail_C_SetPlayerDetailData;
 
 }
 

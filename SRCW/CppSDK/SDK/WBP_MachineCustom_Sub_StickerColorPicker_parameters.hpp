@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "ST_ColorDetailWindowData_structs.hpp"
+#include "ST_ColorDetailWindowColorItemData_structs.hpp"
 #include "EColorDetailWindowMode_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "ST_ColorDetailWindowColorItemData_structs.hpp"
 
 
 namespace SDK::Params
@@ -27,10 +27,7 @@ public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_StickerColorPicker_C_ButtonsPanel_OnDecision) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_StickerColorPicker_C_ButtonsPanel_OnDecision");
-static_assert(sizeof(WBP_MachineCustom_Sub_StickerColorPicker_C_ButtonsPanel_OnDecision) == 0x000010, "Wrong size on WBP_MachineCustom_Sub_StickerColorPicker_C_ButtonsPanel_OnDecision");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ButtonsPanel_OnDecision, Button) == 0x000000, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ButtonsPanel_OnDecision::Button' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ButtonsPanel_OnDecision, ButtonIndex) == 0x000008, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ButtonsPanel_OnDecision::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_StickerColorPicker_C_ButtonsPanel_OnDecision;
 
 // Function WBP_MachineCustom_Sub_StickerColorPicker.WBP_MachineCustom_Sub_StickerColorPicker_C.ButtonsPanel_OnFocus
 // 0x0010 (0x0010 - 0x0000)
@@ -40,10 +37,7 @@ public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_StickerColorPicker_C_ButtonsPanel_OnFocus) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_StickerColorPicker_C_ButtonsPanel_OnFocus");
-static_assert(sizeof(WBP_MachineCustom_Sub_StickerColorPicker_C_ButtonsPanel_OnFocus) == 0x000010, "Wrong size on WBP_MachineCustom_Sub_StickerColorPicker_C_ButtonsPanel_OnFocus");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ButtonsPanel_OnFocus, Button) == 0x000000, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ButtonsPanel_OnFocus::Button' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ButtonsPanel_OnFocus, ButtonIndex) == 0x000008, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ButtonsPanel_OnFocus::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_StickerColorPicker_C_ButtonsPanel_OnFocus;
 
 // Function WBP_MachineCustom_Sub_StickerColorPicker.WBP_MachineCustom_Sub_StickerColorPicker_C.ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker
 // 0x02B0 (0x02B0 - 0x0000)
@@ -125,65 +119,7 @@ public:
 	uint8                                         Pad_2A9[0x3];                                      // 0x02A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x02AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker");
-static_assert(sizeof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker) == 0x0002B0, "Wrong size on WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, EntryPoint) == 0x000000, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, CallFunc_MakeLiteralBool_ReturnValue) == 0x000004, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::CallFunc_MakeLiteralBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, CallFunc_CreateButtonsPanel_ReturnValue) == 0x000008, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::CallFunc_CreateButtonsPanel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, CallFunc_Array_Get_Item) == 0x000010, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, CallFunc_PlayAnimation_ReturnValue) == 0x000018, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, CallFunc_Array_Get_Item_1) == 0x000020, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, K2Node_CreateDelegate_OutputDelegate) == 0x000028, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, K2Node_CreateDelegate_OutputDelegate_1) == 0x000038, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, K2Node_CreateDelegate_OutputDelegate_2) == 0x000048, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, CallFunc_Array_Get_Item_2) == 0x000058, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, K2Node_MakeMap_Map) == 0x000060, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::K2Node_MakeMap_Map' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, K2Node_MakeMap_Map_1) == 0x0000B0, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::K2Node_MakeMap_Map_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, K2Node_MakeMap_Map_2) == 0x000100, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::K2Node_MakeMap_Map_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, CallFunc_Array_Get_Item_3) == 0x000150, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, K2Node_CreateDelegate_OutputDelegate_3) == 0x000158, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, K2Node_CustomEvent_Button_3) == 0x000168, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::K2Node_CustomEvent_Button_3' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, K2Node_CustomEvent_PanelIndex) == 0x000170, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::K2Node_CustomEvent_PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, K2Node_CustomEvent_ButtonIndex_2) == 0x000174, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::K2Node_CustomEvent_ButtonIndex_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, CallFunc_GetAllChildren_ReturnValue) == 0x000178, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, CallFunc_Array_Length_ReturnValue) == 0x000188, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, K2Node_CustomEvent_Button_2) == 0x000190, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::K2Node_CustomEvent_Button_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, K2Node_CustomEvent_ButtonIndex_1) == 0x000198, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::K2Node_CustomEvent_ButtonIndex_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Color_Picker_Liquid_Icon) == 0x0001A0, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Color_Picker_Liquid_Icon' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, K2Node_DynamicCast_bSuccess) == 0x0001A8, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, CallFunc_Percent_IntInt_ReturnValue) == 0x0001AC, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, CallFunc_GetItemData_OutItemData) == 0x0001B0, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::CallFunc_GetItemData_OutItemData' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, Temp_int_Array_Index_Variable) == 0x0001C8, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, K2Node_CustomEvent_Button_1) == 0x0001D0, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::K2Node_CustomEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, K2Node_CustomEvent_ButtonIndex) == 0x0001D8, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::K2Node_CustomEvent_ButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Color_Picker_Liquid_Icon_1) == 0x0001E0, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Color_Picker_Liquid_Icon_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, K2Node_DynamicCast_bSuccess_1) == 0x0001E8, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, CallFunc_GetItemData_OutItemData_1) == 0x0001EC, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::CallFunc_GetItemData_OutItemData_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, CallFunc_Array_Get_Item_4) == 0x000208, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, CallFunc_Array_Length_ReturnValue_1) == 0x000210, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000214, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, Temp_int_Loop_Counter_Variable) == 0x000218, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, CallFunc_Less_IntInt_ReturnValue) == 0x00021C, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, CallFunc_Add_IntInt_ReturnValue) == 0x000220, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, K2Node_CustomEvent_Button) == 0x000228, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, Temp_int_Loop_Counter_Variable_1) == 0x000230, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, CallFunc_SpawnObject_ReturnValue) == 0x000238, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, CallFunc_Less_IntInt_ReturnValue_1) == 0x000240, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, CallFunc_Add_IntInt_ReturnValue_1) == 0x000244, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, CallFunc_GetButtonsByColumnIndex_OutButtons) == 0x000248, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::CallFunc_GetButtonsByColumnIndex_OutButtons' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, CallFunc_Array_Length_ReturnValue_2) == 0x000258, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, CallFunc_GetButtonsByColumnIndex_OutButtons_1) == 0x000260, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::CallFunc_GetButtonsByColumnIndex_OutButtons_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, CallFunc_Subtract_IntInt_ReturnValue) == 0x000270, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, CallFunc_Array_Get_Item_5) == 0x000278, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::CallFunc_Array_Get_Item_5' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, CallFunc_Array_Get_Item_6) == 0x000280, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::CallFunc_Array_Get_Item_6' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, Temp_int_Variable) == 0x000288, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, Temp_int_Array_Index_Variable_1) == 0x00028C, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, CallFunc_Array_Get_Item_7) == 0x000290, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::CallFunc_Array_Get_Item_7' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Color_Picker_Liquid_Icon_2) == 0x000298, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Color_Picker_Liquid_Icon_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, K2Node_DynamicCast_bSuccess_2) == 0x0002A0, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, CallFunc_Array_Add_ReturnValue) == 0x0002A4, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0002A8, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker, CallFunc_Add_IntInt_ReturnValue_2) == 0x0002AC, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_StickerColorPicker_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerColorPicker;
 
 // Function WBP_MachineCustom_Sub_StickerColorPicker.WBP_MachineCustom_Sub_StickerColorPicker_C.PlayColorPickerIn
 // 0x0008 (0x0008 - 0x0000)
@@ -192,9 +128,7 @@ struct WBP_MachineCustom_Sub_StickerColorPicker_C_PlayColorPickerIn final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_StickerColorPicker_C_PlayColorPickerIn) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_StickerColorPicker_C_PlayColorPickerIn");
-static_assert(sizeof(WBP_MachineCustom_Sub_StickerColorPicker_C_PlayColorPickerIn) == 0x000008, "Wrong size on WBP_MachineCustom_Sub_StickerColorPicker_C_PlayColorPickerIn");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_PlayColorPickerIn, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_PlayColorPickerIn::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_StickerColorPicker_C_PlayColorPickerIn;
 
 // Function WBP_MachineCustom_Sub_StickerColorPicker.WBP_MachineCustom_Sub_StickerColorPicker_C.PlayColorPickerOut
 // 0x0008 (0x0008 - 0x0000)
@@ -203,9 +137,7 @@ struct WBP_MachineCustom_Sub_StickerColorPicker_C_PlayColorPickerOut final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_StickerColorPicker_C_PlayColorPickerOut) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_StickerColorPicker_C_PlayColorPickerOut");
-static_assert(sizeof(WBP_MachineCustom_Sub_StickerColorPicker_C_PlayColorPickerOut) == 0x000008, "Wrong size on WBP_MachineCustom_Sub_StickerColorPicker_C_PlayColorPickerOut");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_PlayColorPickerOut, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_PlayColorPickerOut::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_StickerColorPicker_C_PlayColorPickerOut;
 
 // Function WBP_MachineCustom_Sub_StickerColorPicker.WBP_MachineCustom_Sub_StickerColorPicker_C.Scene_OnCancel
 // 0x0010 (0x0010 - 0x0000)
@@ -216,11 +148,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_StickerColorPicker_C_Scene_OnCancel) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_StickerColorPicker_C_Scene_OnCancel");
-static_assert(sizeof(WBP_MachineCustom_Sub_StickerColorPicker_C_Scene_OnCancel) == 0x000010, "Wrong size on WBP_MachineCustom_Sub_StickerColorPicker_C_Scene_OnCancel");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_Scene_OnCancel, Button) == 0x000000, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_Scene_OnCancel::Button' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_Scene_OnCancel, PanelIndex) == 0x000008, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_Scene_OnCancel::PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_Scene_OnCancel, ButtonIndex) == 0x00000C, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_Scene_OnCancel::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_StickerColorPicker_C_Scene_OnCancel;
 
 // Function WBP_MachineCustom_Sub_StickerColorPicker.WBP_MachineCustom_Sub_StickerColorPicker_C.Setup
 // 0x0070 (0x0070 - 0x0000)
@@ -230,10 +158,7 @@ public:
 	struct FST_ColorDetailWindowData              InWindowData;                                      // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FST_ColorDetailWindowData              WindowData;                                        // 0x0038(0x0038)(Edit, BlueprintVisible, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_StickerColorPicker_C_Setup) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_StickerColorPicker_C_Setup");
-static_assert(sizeof(WBP_MachineCustom_Sub_StickerColorPicker_C_Setup) == 0x000070, "Wrong size on WBP_MachineCustom_Sub_StickerColorPicker_C_Setup");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_Setup, InWindowData) == 0x000000, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_Setup::InWindowData' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_Setup, WindowData) == 0x000038, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_Setup::WindowData' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_StickerColorPicker_C_Setup;
 
 // Function WBP_MachineCustom_Sub_StickerColorPicker.WBP_MachineCustom_Sub_StickerColorPicker_C.SurfaceButton_OnFocus
 // 0x0008 (0x0008 - 0x0000)
@@ -242,9 +167,7 @@ struct WBP_MachineCustom_Sub_StickerColorPicker_C_SurfaceButton_OnFocus final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_StickerColorPicker_C_SurfaceButton_OnFocus) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_StickerColorPicker_C_SurfaceButton_OnFocus");
-static_assert(sizeof(WBP_MachineCustom_Sub_StickerColorPicker_C_SurfaceButton_OnFocus) == 0x000008, "Wrong size on WBP_MachineCustom_Sub_StickerColorPicker_C_SurfaceButton_OnFocus");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerColorPicker_C_SurfaceButton_OnFocus, Button) == 0x000000, "Member 'WBP_MachineCustom_Sub_StickerColorPicker_C_SurfaceButton_OnFocus::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_StickerColorPicker_C_SurfaceButton_OnFocus;
 
 }
 

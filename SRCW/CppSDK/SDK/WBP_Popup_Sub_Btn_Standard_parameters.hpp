@@ -12,8 +12,8 @@
 
 #include "UnionSystem_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "UMG_structs.hpp"
 #include "UnionUI_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK::Params
@@ -34,15 +34,7 @@ public:
 	EAppControllerInputType                       CallFunc_GetCurrentInputType_ReturnValue;          // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Sub_Btn_Standard_C_Check_Release_Response_InputType) == 0x000008, "Wrong alignment on WBP_Popup_Sub_Btn_Standard_C_Check_Release_Response_InputType");
-static_assert(sizeof(WBP_Popup_Sub_Btn_Standard_C_Check_Release_Response_InputType) == 0x000028, "Wrong size on WBP_Popup_Sub_Btn_Standard_C_Check_Release_Response_InputType");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_Check_Release_Response_InputType, bOutReleaseResponseInput) == 0x000000, "Member 'WBP_Popup_Sub_Btn_Standard_C_Check_Release_Response_InputType::bOutReleaseResponseInput' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_Check_Release_Response_InputType, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'WBP_Popup_Sub_Btn_Standard_C_Check_Release_Response_InputType::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_Check_Release_Response_InputType, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'WBP_Popup_Sub_Btn_Standard_C_Check_Release_Response_InputType::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_Check_Release_Response_InputType, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000018, "Member 'WBP_Popup_Sub_Btn_Standard_C_Check_Release_Response_InputType::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_Check_Release_Response_InputType, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'WBP_Popup_Sub_Btn_Standard_C_Check_Release_Response_InputType::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_Check_Release_Response_InputType, CallFunc_GetCurrentInputType_ReturnValue) == 0x000021, "Member 'WBP_Popup_Sub_Btn_Standard_C_Check_Release_Response_InputType::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_Check_Release_Response_InputType, K2Node_SwitchEnum_CmpSuccess) == 0x000022, "Member 'WBP_Popup_Sub_Btn_Standard_C_Check_Release_Response_InputType::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Sub_Btn_Standard_C_Check_Release_Response_InputType;
 
 // Function WBP_Popup_Sub_Btn_Standard.WBP_Popup_Sub_Btn_Standard_C.ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard
 // 0x00D8 (0x00D8 - 0x0000)
@@ -95,47 +87,7 @@ public:
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard) == 0x000008, "Wrong alignment on WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard");
-static_assert(sizeof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard) == 0x0000D8, "Wrong size on WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, EntryPoint) == 0x000000, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, K2Node_SwitchEnum_CmpSuccess) == 0x000014, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, CallFunc_SoundPlay_ReturnValue) == 0x000018, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable) == 0x00001C, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, Temp_bool_Has_Been_Initd_Variable) == 0x00001D, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, CallFunc_PlayAnimation_ReturnValue) == 0x000020, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, CallFunc_PlayAnimation_ReturnValue_1) == 0x000028, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, K2Node_CustomEvent_Button) == 0x000030, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, Temp_bool_IsClosed_Variable) == 0x000038, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, CallFunc_PlayAnimation_ReturnValue_2) == 0x000040, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, CallFunc_PlayAnimation_ReturnValue_3) == 0x000048, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, K2Node_Event_InFocusEvent_2) == 0x000050, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::K2Node_Event_InFocusEvent_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, CallFunc_PlayAnimation_ReturnValue_4) == 0x000058, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::CallFunc_PlayAnimation_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, CallFunc_GetUserIndexByFocusEvent_ReturnValue) == 0x000060, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::CallFunc_GetUserIndexByFocusEvent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, CallFunc_HasAnyUserFocus_ReturnValue) == 0x000064, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::CallFunc_HasAnyUserFocus_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, CallFunc_GetPlayerController_ReturnValue) == 0x000068, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, K2Node_Event_InFocusEvent_1) == 0x000070, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::K2Node_Event_InFocusEvent_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, K2Node_Event_InFocusEvent) == 0x000078, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::K2Node_Event_InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, CallFunc_GetOwningPlayer_ReturnValue) == 0x000080, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000088, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, K2Node_DynamicCast_bSuccess) == 0x000090, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000091, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, CallFunc_PlayAnimation_ReturnValue_5) == 0x000098, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::CallFunc_PlayAnimation_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, Temp_byte_Variable) == 0x0000A0, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable_1) == 0x0000A1, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, Temp_bool_Has_Been_Initd_Variable_1) == 0x0000A2, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::Temp_bool_Has_Been_Initd_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, Temp_bool_IsClosed_Variable_1) == 0x0000A3, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::Temp_bool_IsClosed_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, K2Node_CreateDelegate_OutputDelegate_1) == 0x0000A4, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, K2Node_SwitchEnum_CmpSuccess_1) == 0x0000B4, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, Temp_byte_Variable_1) == 0x0000B5, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, Temp_bool_Variable) == 0x0000B6, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, K2Node_Select_Default) == 0x0000B7, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, CallFunc_SoundPlay_ReturnValue_1) == 0x0000B8, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, CallFunc_UnregisterMainMenu_ReturnValue) == 0x0000BC, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::CallFunc_UnregisterMainMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000BD, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, K2Node_CreateDelegate_OutputDelegate_2) == 0x0000C0, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x0000D0, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard, CallFunc_BooleanAND_ReturnValue) == 0x0000D1, "Member 'WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Sub_Btn_Standard_C_ExecuteUbergraph_WBP_Popup_Sub_Btn_Standard;
 
 // Function WBP_Popup_Sub_Btn_Standard.WBP_Popup_Sub_Btn_Standard_C.OnAddedToFocusPath
 // 0x0008 (0x0008 - 0x0000)
@@ -144,9 +96,7 @@ struct WBP_Popup_Sub_Btn_Standard_C_OnAddedToFocusPath final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_Popup_Sub_Btn_Standard_C_OnAddedToFocusPath) == 0x000004, "Wrong alignment on WBP_Popup_Sub_Btn_Standard_C_OnAddedToFocusPath");
-static_assert(sizeof(WBP_Popup_Sub_Btn_Standard_C_OnAddedToFocusPath) == 0x000008, "Wrong size on WBP_Popup_Sub_Btn_Standard_C_OnAddedToFocusPath");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_OnAddedToFocusPath, InFocusEvent) == 0x000000, "Member 'WBP_Popup_Sub_Btn_Standard_C_OnAddedToFocusPath::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Sub_Btn_Standard_C_OnAddedToFocusPath;
 
 // Function WBP_Popup_Sub_Btn_Standard.WBP_Popup_Sub_Btn_Standard_C.OnFocus_Imp
 // 0x0008 (0x0008 - 0x0000)
@@ -155,9 +105,7 @@ struct WBP_Popup_Sub_Btn_Standard_C_OnFocus_Imp final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Sub_Btn_Standard_C_OnFocus_Imp) == 0x000008, "Wrong alignment on WBP_Popup_Sub_Btn_Standard_C_OnFocus_Imp");
-static_assert(sizeof(WBP_Popup_Sub_Btn_Standard_C_OnFocus_Imp) == 0x000008, "Wrong size on WBP_Popup_Sub_Btn_Standard_C_OnFocus_Imp");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_OnFocus_Imp, Button) == 0x000000, "Member 'WBP_Popup_Sub_Btn_Standard_C_OnFocus_Imp::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Sub_Btn_Standard_C_OnFocus_Imp;
 
 // Function WBP_Popup_Sub_Btn_Standard.WBP_Popup_Sub_Btn_Standard_C.OnFocusLost
 // 0x0008 (0x0008 - 0x0000)
@@ -166,9 +114,7 @@ struct WBP_Popup_Sub_Btn_Standard_C_OnFocusLost final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_Popup_Sub_Btn_Standard_C_OnFocusLost) == 0x000004, "Wrong alignment on WBP_Popup_Sub_Btn_Standard_C_OnFocusLost");
-static_assert(sizeof(WBP_Popup_Sub_Btn_Standard_C_OnFocusLost) == 0x000008, "Wrong size on WBP_Popup_Sub_Btn_Standard_C_OnFocusLost");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_OnFocusLost, InFocusEvent) == 0x000000, "Member 'WBP_Popup_Sub_Btn_Standard_C_OnFocusLost::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Sub_Btn_Standard_C_OnFocusLost;
 
 // Function WBP_Popup_Sub_Btn_Standard.WBP_Popup_Sub_Btn_Standard_C.OnFocusReceived
 // 0x01B0 (0x01B0 - 0x0000)
@@ -180,12 +126,7 @@ public:
 	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
 	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x00F8(0x00B8)()
 };
-static_assert(alignof(WBP_Popup_Sub_Btn_Standard_C_OnFocusReceived) == 0x000008, "Wrong alignment on WBP_Popup_Sub_Btn_Standard_C_OnFocusReceived");
-static_assert(sizeof(WBP_Popup_Sub_Btn_Standard_C_OnFocusReceived) == 0x0001B0, "Wrong size on WBP_Popup_Sub_Btn_Standard_C_OnFocusReceived");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'WBP_Popup_Sub_Btn_Standard_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'WBP_Popup_Sub_Btn_Standard_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'WBP_Popup_Sub_Btn_Standard_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_OnFocusReceived, K2Node_MakeStruct_EventReply) == 0x0000F8, "Member 'WBP_Popup_Sub_Btn_Standard_C_OnFocusReceived::K2Node_MakeStruct_EventReply' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Sub_Btn_Standard_C_OnFocusReceived;
 
 // Function WBP_Popup_Sub_Btn_Standard.WBP_Popup_Sub_Btn_Standard_C.OnMouseButtonUp
 // 0x0220 (0x0220 - 0x0000)
@@ -197,12 +138,7 @@ public:
 	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x00B8)(Parm, OutParm, ReturnParm)
 	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x0168(0x00B8)()
 };
-static_assert(alignof(WBP_Popup_Sub_Btn_Standard_C_OnMouseButtonUp) == 0x000008, "Wrong alignment on WBP_Popup_Sub_Btn_Standard_C_OnMouseButtonUp");
-static_assert(sizeof(WBP_Popup_Sub_Btn_Standard_C_OnMouseButtonUp) == 0x000220, "Wrong size on WBP_Popup_Sub_Btn_Standard_C_OnMouseButtonUp");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_OnMouseButtonUp, MyGeometry) == 0x000000, "Member 'WBP_Popup_Sub_Btn_Standard_C_OnMouseButtonUp::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_OnMouseButtonUp, MouseEvent) == 0x000038, "Member 'WBP_Popup_Sub_Btn_Standard_C_OnMouseButtonUp::MouseEvent' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_OnMouseButtonUp, ReturnValue) == 0x0000B0, "Member 'WBP_Popup_Sub_Btn_Standard_C_OnMouseButtonUp::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_OnMouseButtonUp, K2Node_MakeStruct_EventReply) == 0x000168, "Member 'WBP_Popup_Sub_Btn_Standard_C_OnMouseButtonUp::K2Node_MakeStruct_EventReply' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Sub_Btn_Standard_C_OnMouseButtonUp;
 
 // Function WBP_Popup_Sub_Btn_Standard.WBP_Popup_Sub_Btn_Standard_C.OnRemovedFromFocusPath
 // 0x0008 (0x0008 - 0x0000)
@@ -211,9 +147,7 @@ struct WBP_Popup_Sub_Btn_Standard_C_OnRemovedFromFocusPath final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_Popup_Sub_Btn_Standard_C_OnRemovedFromFocusPath) == 0x000004, "Wrong alignment on WBP_Popup_Sub_Btn_Standard_C_OnRemovedFromFocusPath");
-static_assert(sizeof(WBP_Popup_Sub_Btn_Standard_C_OnRemovedFromFocusPath) == 0x000008, "Wrong size on WBP_Popup_Sub_Btn_Standard_C_OnRemovedFromFocusPath");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_OnRemovedFromFocusPath, InFocusEvent) == 0x000000, "Member 'WBP_Popup_Sub_Btn_Standard_C_OnRemovedFromFocusPath::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Sub_Btn_Standard_C_OnRemovedFromFocusPath;
 
 // Function WBP_Popup_Sub_Btn_Standard.WBP_Popup_Sub_Btn_Standard_C.SetButtonColorIndex
 // 0x0020 (0x0020 - 0x0000)
@@ -226,12 +160,7 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Sub_Btn_Standard_C_SetButtonColorIndex) == 0x000008, "Wrong alignment on WBP_Popup_Sub_Btn_Standard_C_SetButtonColorIndex");
-static_assert(sizeof(WBP_Popup_Sub_Btn_Standard_C_SetButtonColorIndex) == 0x000020, "Wrong size on WBP_Popup_Sub_Btn_Standard_C_SetButtonColorIndex");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_SetButtonColorIndex, ColorIndex) == 0x000000, "Member 'WBP_Popup_Sub_Btn_Standard_C_SetButtonColorIndex::ColorIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_SetButtonColorIndex, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000008, "Member 'WBP_Popup_Sub_Btn_Standard_C_SetButtonColorIndex::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_SetButtonColorIndex, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000010, "Member 'WBP_Popup_Sub_Btn_Standard_C_SetButtonColorIndex::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_SetButtonColorIndex, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000018, "Member 'WBP_Popup_Sub_Btn_Standard_C_SetButtonColorIndex::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Sub_Btn_Standard_C_SetButtonColorIndex;
 
 // Function WBP_Popup_Sub_Btn_Standard.WBP_Popup_Sub_Btn_Standard_C.SetDecisionSound
 // 0x0008 (0x0008 - 0x0000)
@@ -240,9 +169,7 @@ struct WBP_Popup_Sub_Btn_Standard_C_SetDecisionSound final
 public:
 	class USoundAtomCue*                          InDecisionSound;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Sub_Btn_Standard_C_SetDecisionSound) == 0x000008, "Wrong alignment on WBP_Popup_Sub_Btn_Standard_C_SetDecisionSound");
-static_assert(sizeof(WBP_Popup_Sub_Btn_Standard_C_SetDecisionSound) == 0x000008, "Wrong size on WBP_Popup_Sub_Btn_Standard_C_SetDecisionSound");
-static_assert(offsetof(WBP_Popup_Sub_Btn_Standard_C_SetDecisionSound, InDecisionSound) == 0x000000, "Member 'WBP_Popup_Sub_Btn_Standard_C_SetDecisionSound::InDecisionSound' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Sub_Btn_Standard_C_SetDecisionSound;
 
 }
 

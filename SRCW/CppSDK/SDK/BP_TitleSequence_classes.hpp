@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK
@@ -144,43 +144,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_TitleSequence_C">();
+		BP_STATIC_CLASS_IMPL("BP_TitleSequence_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_TitleSequence_C")
 	}
 	static class ABP_TitleSequence_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_TitleSequence_C>();
 	}
 };
-static_assert(alignof(ABP_TitleSequence_C) == 0x000008, "Wrong alignment on ABP_TitleSequence_C");
-static_assert(sizeof(ABP_TitleSequence_C) == 0x000490, "Wrong size on ABP_TitleSequence_C");
-static_assert(offsetof(ABP_TitleSequence_C, UberGraphFrame) == 0x0003A0, "Member 'ABP_TitleSequence_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_TitleSequence_C, WaitTime) == 0x0003A8, "Member 'ABP_TitleSequence_C::WaitTime' has a wrong offset!");
-static_assert(offsetof(ABP_TitleSequence_C, WaitTime_TitleTop) == 0x0003B0, "Member 'ABP_TitleSequence_C::WaitTime_TitleTop' has a wrong offset!");
-static_assert(offsetof(ABP_TitleSequence_C, WaitTimerHandle) == 0x0003B8, "Member 'ABP_TitleSequence_C::WaitTimerHandle' has a wrong offset!");
-static_assert(offsetof(ABP_TitleSequence_C, OnRequestInputDispacher) == 0x0003C0, "Member 'ABP_TitleSequence_C::OnRequestInputDispacher' has a wrong offset!");
-static_assert(offsetof(ABP_TitleSequence_C, MainUIScene) == 0x0003D0, "Member 'ABP_TitleSequence_C::MainUIScene' has a wrong offset!");
-static_assert(offsetof(ABP_TitleSequence_C, AdvertiseWidget) == 0x0003D8, "Member 'ABP_TitleSequence_C::AdvertiseWidget' has a wrong offset!");
-static_assert(offsetof(ABP_TitleSequence_C, WaitTimer_Adv) == 0x0003E0, "Member 'ABP_TitleSequence_C::WaitTimer_Adv' has a wrong offset!");
-static_assert(offsetof(ABP_TitleSequence_C, WaitTimerAdvHandle) == 0x0003E8, "Member 'ABP_TitleSequence_C::WaitTimerAdvHandle' has a wrong offset!");
-static_assert(offsetof(ABP_TitleSequence_C, AutoSaveInfoWidget) == 0x0003F0, "Member 'ABP_TitleSequence_C::AutoSaveInfoWidget' has a wrong offset!");
-static_assert(offsetof(ABP_TitleSequence_C, PopupScrollWidget) == 0x0003F8, "Member 'ABP_TitleSequence_C::PopupScrollWidget' has a wrong offset!");
-static_assert(offsetof(ABP_TitleSequence_C, BP_SaveDataSetting) == 0x000400, "Member 'ABP_TitleSequence_C::BP_SaveDataSetting' has a wrong offset!");
-static_assert(offsetof(ABP_TitleSequence_C, OnSkipAutoSaveInfoDispacher) == 0x000408, "Member 'ABP_TitleSequence_C::OnSkipAutoSaveInfoDispacher' has a wrong offset!");
-static_assert(offsetof(ABP_TitleSequence_C, WaitTimer_AutoSaveInfo) == 0x000418, "Member 'ABP_TitleSequence_C::WaitTimer_AutoSaveInfo' has a wrong offset!");
-static_assert(offsetof(ABP_TitleSequence_C, BlackWidget) == 0x000420, "Member 'ABP_TitleSequence_C::BlackWidget' has a wrong offset!");
-static_assert(offsetof(ABP_TitleSequence_C, BP_OnlinePrivilegeChecker) == 0x000428, "Member 'ABP_TitleSequence_C::BP_OnlinePrivilegeChecker' has a wrong offset!");
-static_assert(offsetof(ABP_TitleSequence_C, BP_LoginProcessor) == 0x000430, "Member 'ABP_TitleSequence_C::BP_LoginProcessor' has a wrong offset!");
-static_assert(offsetof(ABP_TitleSequence_C, BP_SaveDataUpgradePS) == 0x000438, "Member 'ABP_TitleSequence_C::BP_SaveDataUpgradePS' has a wrong offset!");
-static_assert(offsetof(ABP_TitleSequence_C, TitleMoviewidget) == 0x000440, "Member 'ABP_TitleSequence_C::TitleMoviewidget' has a wrong offset!");
-static_assert(offsetof(ABP_TitleSequence_C, WaitMovieHandle) == 0x000448, "Member 'ABP_TitleSequence_C::WaitMovieHandle' has a wrong offset!");
-static_assert(offsetof(ABP_TitleSequence_C, BP_TransferSaveDataFromDemo) == 0x000450, "Member 'ABP_TitleSequence_C::BP_TransferSaveDataFromDemo' has a wrong offset!");
-static_assert(offsetof(ABP_TitleSequence_C, SaveDataAppRomVersionWindow) == 0x000458, "Member 'ABP_TitleSequence_C::SaveDataAppRomVersionWindow' has a wrong offset!");
-static_assert(offsetof(ABP_TitleSequence_C, StoreWindow) == 0x000460, "Member 'ABP_TitleSequence_C::StoreWindow' has a wrong offset!");
-static_assert(offsetof(ABP_TitleSequence_C, bTitleLogoLoaded) == 0x000468, "Member 'ABP_TitleSequence_C::bTitleLogoLoaded' has a wrong offset!");
-static_assert(offsetof(ABP_TitleSequence_C, UpdateWindow) == 0x000470, "Member 'ABP_TitleSequence_C::UpdateWindow' has a wrong offset!");
-static_assert(offsetof(ABP_TitleSequence_C, GameQuitWindow) == 0x000478, "Member 'ABP_TitleSequence_C::GameQuitWindow' has a wrong offset!");
-static_assert(offsetof(ABP_TitleSequence_C, bIsInputBound) == 0x000480, "Member 'ABP_TitleSequence_C::bIsInputBound' has a wrong offset!");
-static_assert(offsetof(ABP_TitleSequence_C, TermsConditionDataAsset) == 0x000488, "Member 'ABP_TitleSequence_C::TermsConditionDataAsset' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_TitleSequence_C;
 
 }
 

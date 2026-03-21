@@ -71,45 +71,7 @@ public:
 	int32                                         Temp_int_Array_Index_Variable_4;                   // 0x00C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWBP_CourseSelect_Sub_Thumbnail_C*      CallFunc_Array_Get_Item_4;                         // 0x00C8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple) == 0x000008, "Wrong alignment on WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple");
-static_assert(sizeof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple) == 0x0000D0, "Wrong size on WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, EntryPoint) == 0x000000, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, CallFunc_SpawnObject_ReturnValue) == 0x000008, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, CallFunc_Array_Length_ReturnValue) == 0x000010, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, Temp_int_Array_Index_Variable) == 0x000014, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, Temp_int_Loop_Counter_Variable) == 0x000018, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, CallFunc_Add_IntInt_ReturnValue) == 0x00001C, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, Temp_int_Array_Index_Variable_1) == 0x000020, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, Temp_int_Loop_Counter_Variable_1) == 0x000024, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, Temp_int_Loop_Counter_Variable_2) == 0x000028, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, CallFunc_Less_IntInt_ReturnValue) == 0x00002C, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, CallFunc_Add_IntInt_ReturnValue_1) == 0x000030, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, CallFunc_Add_IntInt_ReturnValue_2) == 0x000034, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, Temp_int_Array_Index_Variable_2) == 0x000038, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, CallFunc_Array_Get_Item) == 0x000040, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, Temp_int_Array_Index_Variable_3) == 0x000048, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::Temp_int_Array_Index_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, CallFunc_Array_Length_ReturnValue_1) == 0x00004C, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, K2Node_CustomEvent_Button) == 0x000050, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, Temp_int_Loop_Counter_Variable_3) == 0x000058, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::Temp_int_Loop_Counter_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, CallFunc_Array_Get_Item_1) == 0x000060, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, CallFunc_Less_IntInt_ReturnValue_1) == 0x000068, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, CallFunc_Add_IntInt_ReturnValue_3) == 0x00006C, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, CallFunc_Array_Length_ReturnValue_2) == 0x000070, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, CallFunc_Less_IntInt_ReturnValue_2) == 0x000074, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, CallFunc_Array_Get_Item_2) == 0x000078, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, CallFunc_Array_Length_ReturnValue_3) == 0x000080, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, K2Node_CustomEvent_InParentPanel) == 0x000088, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::K2Node_CustomEvent_InParentPanel' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, K2Node_CustomEvent_InPanelIndex) == 0x000090, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::K2Node_CustomEvent_InPanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, K2Node_CustomEvent_Interactable) == 0x000094, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::K2Node_CustomEvent_Interactable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, K2Node_MakeArray_Array) == 0x000098, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, CallFunc_Array_Get_Item_3) == 0x0000A8, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, CallFunc_Array_Length_ReturnValue_4) == 0x0000B0, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::CallFunc_Array_Length_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, CallFunc_Less_IntInt_ReturnValue_3) == 0x0000B4, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, Temp_int_Loop_Counter_Variable_4) == 0x0000B8, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::Temp_int_Loop_Counter_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, CallFunc_Less_IntInt_ReturnValue_4) == 0x0000BC, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::CallFunc_Less_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, CallFunc_Add_IntInt_ReturnValue_4) == 0x0000C0, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, Temp_int_Array_Index_Variable_4) == 0x0000C4, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::Temp_int_Array_Index_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple, CallFunc_Array_Get_Item_4) == 0x0000C8, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple::CallFunc_Array_Get_Item_4' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_Sub_StageBox_Multiple_C_ExecuteUbergraph_WBP_CourseSelect_Sub_StageBox_Multiple;
 
 // Function WBP_CourseSelect_Sub_StageBox_Multiple.WBP_CourseSelect_Sub_StageBox_Multiple_C.GetEnableCourse
 // 0x0010 (0x0010 - 0x0000)
@@ -121,11 +83,7 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_CourseSelect_Sub_Thumbnail_C*      CallFunc_Array_Get_Item;                           // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_Sub_StageBox_Multiple_C_GetEnableCourse) == 0x000008, "Wrong alignment on WBP_CourseSelect_Sub_StageBox_Multiple_C_GetEnableCourse");
-static_assert(sizeof(WBP_CourseSelect_Sub_StageBox_Multiple_C_GetEnableCourse) == 0x000010, "Wrong size on WBP_CourseSelect_Sub_StageBox_Multiple_C_GetEnableCourse");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_GetEnableCourse, Index_0) == 0x000000, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_GetEnableCourse::Index_0' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_GetEnableCourse, bEnableCourse) == 0x000004, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_GetEnableCourse::bEnableCourse' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_GetEnableCourse, CallFunc_Array_Get_Item) == 0x000008, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_GetEnableCourse::CallFunc_Array_Get_Item' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_Sub_StageBox_Multiple_C_GetEnableCourse;
 
 // Function WBP_CourseSelect_Sub_StageBox_Multiple.WBP_CourseSelect_Sub_StageBox_Multiple_C.Next Panel Navigation
 // 0x0018 (0x0018 - 0x0000)
@@ -137,11 +95,7 @@ public:
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_Sub_StageBox_Multiple_C_Next_Panel_Navigation) == 0x000008, "Wrong alignment on WBP_CourseSelect_Sub_StageBox_Multiple_C_Next_Panel_Navigation");
-static_assert(sizeof(WBP_CourseSelect_Sub_StageBox_Multiple_C_Next_Panel_Navigation) == 0x000018, "Wrong size on WBP_CourseSelect_Sub_StageBox_Multiple_C_Next_Panel_Navigation");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_Next_Panel_Navigation, Navigation_0) == 0x000000, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_Next_Panel_Navigation::Navigation_0' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_Next_Panel_Navigation, ReturnValue) == 0x000008, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_Next_Panel_Navigation::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_Next_Panel_Navigation, K2Node_SwitchEnum_CmpSuccess) == 0x000010, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_Next_Panel_Navigation::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_Sub_StageBox_Multiple_C_Next_Panel_Navigation;
 
 // Function WBP_CourseSelect_Sub_StageBox_Multiple.WBP_CourseSelect_Sub_StageBox_Multiple_C.OnDecideCourseEvent
 // 0x0008 (0x0008 - 0x0000)
@@ -150,9 +104,7 @@ struct WBP_CourseSelect_Sub_StageBox_Multiple_C_OnDecideCourseEvent final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_Sub_StageBox_Multiple_C_OnDecideCourseEvent) == 0x000008, "Wrong alignment on WBP_CourseSelect_Sub_StageBox_Multiple_C_OnDecideCourseEvent");
-static_assert(sizeof(WBP_CourseSelect_Sub_StageBox_Multiple_C_OnDecideCourseEvent) == 0x000008, "Wrong size on WBP_CourseSelect_Sub_StageBox_Multiple_C_OnDecideCourseEvent");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_OnDecideCourseEvent, Button) == 0x000000, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_OnDecideCourseEvent::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_Sub_StageBox_Multiple_C_OnDecideCourseEvent;
 
 // Function WBP_CourseSelect_Sub_StageBox_Multiple.WBP_CourseSelect_Sub_StageBox_Multiple_C.OnFocusReceived
 // 0x01C0 (0x01C0 - 0x0000)
@@ -166,14 +118,7 @@ public:
 	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x0100(0x00B8)()
 	class UWBP_CourseSelect_Sub_Thumbnail_C*      CallFunc_Array_Get_Item;                           // 0x01B8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_Sub_StageBox_Multiple_C_OnFocusReceived) == 0x000008, "Wrong alignment on WBP_CourseSelect_Sub_StageBox_Multiple_C_OnFocusReceived");
-static_assert(sizeof(WBP_CourseSelect_Sub_StageBox_Multiple_C_OnFocusReceived) == 0x0001C0, "Wrong size on WBP_CourseSelect_Sub_StageBox_Multiple_C_OnFocusReceived");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_OnFocusReceived, CallFunc_GetPlayerController_ReturnValue) == 0x0000F8, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_OnFocusReceived::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_OnFocusReceived, K2Node_MakeStruct_EventReply) == 0x000100, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_OnFocusReceived::K2Node_MakeStruct_EventReply' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_OnFocusReceived, CallFunc_Array_Get_Item) == 0x0001B8, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_OnFocusReceived::CallFunc_Array_Get_Item' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_Sub_StageBox_Multiple_C_OnFocusReceived;
 
 // Function WBP_CourseSelect_Sub_StageBox_Multiple.WBP_CourseSelect_Sub_StageBox_Multiple_C.SetButtonsInteractableState
 // 0x0001 (0x0001 - 0x0000)
@@ -182,9 +127,7 @@ struct WBP_CourseSelect_Sub_StageBox_Multiple_C_SetButtonsInteractableState fina
 public:
 	bool                                          Interactable;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetButtonsInteractableState) == 0x000001, "Wrong alignment on WBP_CourseSelect_Sub_StageBox_Multiple_C_SetButtonsInteractableState");
-static_assert(sizeof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetButtonsInteractableState) == 0x000001, "Wrong size on WBP_CourseSelect_Sub_StageBox_Multiple_C_SetButtonsInteractableState");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetButtonsInteractableState, Interactable) == 0x000000, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetButtonsInteractableState::Interactable' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_Sub_StageBox_Multiple_C_SetButtonsInteractableState;
 
 // Function WBP_CourseSelect_Sub_StageBox_Multiple.WBP_CourseSelect_Sub_StageBox_Multiple_C.SetCourseId
 // 0x0158 (0x0158 - 0x0000)
@@ -222,30 +165,7 @@ public:
 	class UWBP_CourseSelect_Sub_Thumbnail_C*      CallFunc_Array_Get_Item;                           // 0x0148(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId) == 0x000008, "Wrong alignment on WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId");
-static_assert(sizeof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId) == 0x000158, "Wrong size on WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId, InIndex) == 0x000000, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId::InIndex' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId, InCourseId) == 0x000004, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId::InCourseId' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId, OpenThreshold) == 0x000008, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId::OpenThreshold' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId, ForceHidden) == 0x000010, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId::ForceHidden' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId, Temp_bool_Variable) == 0x000011, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId, Temp_softobject_Variable) == 0x000018, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId::Temp_softobject_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId, Temp_bool_Variable_1) == 0x000040, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId, Temp_softobject_Variable_1) == 0x000048, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId::Temp_softobject_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId, Temp_text_Variable) == 0x000070, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId, CallFunc_Map_Find_Value) == 0x000080, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId, CallFunc_Map_Find_ReturnValue) == 0x0000A8, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId, CallFunc_Map_Find_Value_1) == 0x0000B0, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId::CallFunc_Map_Find_Value_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId, CallFunc_Map_Find_ReturnValue_1) == 0x0000B8, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId::CallFunc_Map_Find_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId, K2Node_Select_Default) == 0x0000C0, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId, CallFunc_GreaterEqual_DoubleDouble_ReturnValue) == 0x0000E8, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId::CallFunc_GreaterEqual_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId, K2Node_Select_Default_1) == 0x0000F0, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId, Temp_bool_Variable_2) == 0x000118, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId, CallFunc_Map_Find_Value_2) == 0x000120, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId::CallFunc_Map_Find_Value_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId, CallFunc_Map_Find_ReturnValue_2) == 0x000130, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId::CallFunc_Map_Find_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId, K2Node_Select_Default_2) == 0x000138, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId, CallFunc_Array_Get_Item) == 0x000148, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000150, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseId;
 
 // Function WBP_CourseSelect_Sub_StageBox_Multiple.WBP_CourseSelect_Sub_StageBox_Multiple_C.SetCourseNameText
 // 0x0020 (0x0020 - 0x0000)
@@ -257,11 +177,7 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_CourseSelect_Sub_Thumbnail_C*      CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseNameText) == 0x000008, "Wrong alignment on WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseNameText");
-static_assert(sizeof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseNameText) == 0x000020, "Wrong size on WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseNameText");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseNameText, CourseNameText) == 0x000000, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseNameText::CourseNameText' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseNameText, Index_0) == 0x000010, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseNameText::Index_0' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseNameText, CallFunc_Array_Get_Item) == 0x000018, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseNameText::CallFunc_Array_Get_Item' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_Sub_StageBox_Multiple_C_SetCourseNameText;
 
 // Function WBP_CourseSelect_Sub_StageBox_Multiple.WBP_CourseSelect_Sub_StageBox_Multiple_C.SetDataTableData
 // 0x00A0 (0x00A0 - 0x0000)
@@ -271,10 +187,7 @@ public:
 	TMap<EStageId, double>                        InCourseCompleteRate;                              // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm)
 	TMap<EStageId, class FText>                   InValidStageId;                                    // 0x0050(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetDataTableData) == 0x000008, "Wrong alignment on WBP_CourseSelect_Sub_StageBox_Multiple_C_SetDataTableData");
-static_assert(sizeof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetDataTableData) == 0x0000A0, "Wrong size on WBP_CourseSelect_Sub_StageBox_Multiple_C_SetDataTableData");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetDataTableData, InCourseCompleteRate) == 0x000000, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetDataTableData::InCourseCompleteRate' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetDataTableData, InValidStageId) == 0x000050, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetDataTableData::InValidStageId' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_Sub_StageBox_Multiple_C_SetDataTableData;
 
 // Function WBP_CourseSelect_Sub_StageBox_Multiple.WBP_CourseSelect_Sub_StageBox_Multiple_C.SetFocusIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -283,9 +196,7 @@ struct WBP_CourseSelect_Sub_StageBox_Multiple_C_SetFocusIndex final
 public:
 	int32                                         FocusIndex_0;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetFocusIndex) == 0x000004, "Wrong alignment on WBP_CourseSelect_Sub_StageBox_Multiple_C_SetFocusIndex");
-static_assert(sizeof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetFocusIndex) == 0x000004, "Wrong size on WBP_CourseSelect_Sub_StageBox_Multiple_C_SetFocusIndex");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetFocusIndex, FocusIndex_0) == 0x000000, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetFocusIndex::FocusIndex_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_Sub_StageBox_Multiple_C_SetFocusIndex;
 
 // Function WBP_CourseSelect_Sub_StageBox_Multiple.WBP_CourseSelect_Sub_StageBox_Multiple_C.SetGameModeId
 // 0x0028 (0x0028 - 0x0000)
@@ -302,15 +213,7 @@ public:
 	class UWBP_CourseSelect_Sub_Thumbnail_C*      CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetGameModeId) == 0x000008, "Wrong alignment on WBP_CourseSelect_Sub_StageBox_Multiple_C_SetGameModeId");
-static_assert(sizeof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetGameModeId) == 0x000028, "Wrong size on WBP_CourseSelect_Sub_StageBox_Multiple_C_SetGameModeId");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetGameModeId, InGameModeId) == 0x000000, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetGameModeId::InGameModeId' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetGameModeId, Temp_int_Array_Index_Variable) == 0x000004, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetGameModeId::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetGameModeId, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetGameModeId::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetGameModeId, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetGameModeId::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetGameModeId, CallFunc_Array_Length_ReturnValue) == 0x000010, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetGameModeId::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetGameModeId, CallFunc_Array_Get_Item) == 0x000018, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetGameModeId::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetGameModeId, CallFunc_Less_IntInt_ReturnValue) == 0x000020, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetGameModeId::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_Sub_StageBox_Multiple_C_SetGameModeId;
 
 // Function WBP_CourseSelect_Sub_StageBox_Multiple.WBP_CourseSelect_Sub_StageBox_Multiple_C.SetLastFocusedId
 // 0x0004 (0x0004 - 0x0000)
@@ -319,9 +222,7 @@ struct WBP_CourseSelect_Sub_StageBox_Multiple_C_SetLastFocusedId final
 public:
 	int32                                         InButtonIndex;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetLastFocusedId) == 0x000004, "Wrong alignment on WBP_CourseSelect_Sub_StageBox_Multiple_C_SetLastFocusedId");
-static_assert(sizeof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetLastFocusedId) == 0x000004, "Wrong size on WBP_CourseSelect_Sub_StageBox_Multiple_C_SetLastFocusedId");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetLastFocusedId, InButtonIndex) == 0x000000, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetLastFocusedId::InButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_Sub_StageBox_Multiple_C_SetLastFocusedId;
 
 // Function WBP_CourseSelect_Sub_StageBox_Multiple.WBP_CourseSelect_Sub_StageBox_Multiple_C.SetMedalView
 // 0x0030 (0x0030 - 0x0000)
@@ -339,17 +240,7 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetMedalView) == 0x000008, "Wrong alignment on WBP_CourseSelect_Sub_StageBox_Multiple_C_SetMedalView");
-static_assert(sizeof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetMedalView) == 0x000030, "Wrong size on WBP_CourseSelect_Sub_StageBox_Multiple_C_SetMedalView");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetMedalView, InTimeTrialClearRanks) == 0x000000, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetMedalView::InTimeTrialClearRanks' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetMedalView, Temp_int_Array_Index_Variable) == 0x000010, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetMedalView::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetMedalView, Temp_int_Loop_Counter_Variable) == 0x000014, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetMedalView::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetMedalView, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetMedalView::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetMedalView, CallFunc_Array_Get_Item) == 0x00001C, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetMedalView::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetMedalView, CallFunc_Array_Get_Item_1) == 0x000020, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetMedalView::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetMedalView, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetMedalView::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetMedalView, CallFunc_Less_IntInt_ReturnValue) == 0x00002C, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetMedalView::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetMedalView, CallFunc_Array_IsValidIndex_ReturnValue) == 0x00002D, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetMedalView::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_Sub_StageBox_Multiple_C_SetMedalView;
 
 // Function WBP_CourseSelect_Sub_StageBox_Multiple.WBP_CourseSelect_Sub_StageBox_Multiple_C.SetTimeTrialData
 // 0x0060 (0x0060 - 0x0000)
@@ -376,24 +267,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData) == 0x000008, "Wrong alignment on WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData");
-static_assert(sizeof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData) == 0x000060, "Wrong size on WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData, InStageIds) == 0x000000, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData::InStageIds' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData, InMedalAcquisitions) == 0x000010, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData::InMedalAcquisitions' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData, OpenThreshold) == 0x000020, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData::OpenThreshold' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData, bForceHidden) == 0x000028, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData::bForceHidden' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData, Temp_int_Array_Index_Variable) == 0x00002C, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData, Temp_int_Loop_Counter_Variable) == 0x000030, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData, CallFunc_Add_IntInt_ReturnValue) == 0x000034, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData, Temp_int_Array_Index_Variable_1) == 0x000038, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData, Temp_int_Loop_Counter_Variable_1) == 0x00003C, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData, CallFunc_Add_IntInt_ReturnValue_1) == 0x000040, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData, CallFunc_Array_Get_Item) == 0x000048, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData, CallFunc_Array_Length_ReturnValue) == 0x000050, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData, CallFunc_Less_IntInt_ReturnValue) == 0x000054, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData, CallFunc_Array_Get_Item_1) == 0x000055, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData, CallFunc_Array_Length_ReturnValue_1) == 0x000058, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData, CallFunc_Less_IntInt_ReturnValue_1) == 0x00005C, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_Sub_StageBox_Multiple_C_SetTimeTrialData;
 
 // Function WBP_CourseSelect_Sub_StageBox_Multiple.WBP_CourseSelect_Sub_StageBox_Multiple_C.SetupStageBoxButtonPanel
 // 0x0010 (0x0010 - 0x0000)
@@ -403,10 +277,7 @@ public:
 	class UUnionUISceneBase*                      InParentPanel;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                         InPanelIndex;                                      // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetupStageBoxButtonPanel) == 0x000008, "Wrong alignment on WBP_CourseSelect_Sub_StageBox_Multiple_C_SetupStageBoxButtonPanel");
-static_assert(sizeof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetupStageBoxButtonPanel) == 0x000010, "Wrong size on WBP_CourseSelect_Sub_StageBox_Multiple_C_SetupStageBoxButtonPanel");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetupStageBoxButtonPanel, InParentPanel) == 0x000000, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetupStageBoxButtonPanel::InParentPanel' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetupStageBoxButtonPanel, InPanelIndex) == 0x000008, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetupStageBoxButtonPanel::InPanelIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_Sub_StageBox_Multiple_C_SetupStageBoxButtonPanel;
 
 // Function WBP_CourseSelect_Sub_StageBox_Multiple.WBP_CourseSelect_Sub_StageBox_Multiple_C.SetupTmb
 // 0x0050 (0x0050 - 0x0000)
@@ -415,9 +286,7 @@ struct WBP_CourseSelect_Sub_StageBox_Multiple_C_SetupTmb final
 public:
 	TMap<EStageId, TSoftObjectPtr<class UTexture2D>> StageId_Tmb;                                    // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetupTmb) == 0x000008, "Wrong alignment on WBP_CourseSelect_Sub_StageBox_Multiple_C_SetupTmb");
-static_assert(sizeof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetupTmb) == 0x000050, "Wrong size on WBP_CourseSelect_Sub_StageBox_Multiple_C_SetupTmb");
-static_assert(offsetof(WBP_CourseSelect_Sub_StageBox_Multiple_C_SetupTmb, StageId_Tmb) == 0x000000, "Member 'WBP_CourseSelect_Sub_StageBox_Multiple_C_SetupTmb::StageId_Tmb' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_Sub_StageBox_Multiple_C_SetupTmb;
 
 }
 

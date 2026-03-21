@@ -23,9 +23,7 @@ struct FST_PullDownMenuData final
 public:
 	TArray<struct FST_PullDownMenuItemData>       ItemDataList_3_46F2A3A44BED2D7C9B59718337B53226;   // 0x0000(0x0010)(Edit, BlueprintVisible)
 };
-static_assert(alignof(FST_PullDownMenuData) == 0x000008, "Wrong alignment on FST_PullDownMenuData");
-static_assert(sizeof(FST_PullDownMenuData) == 0x000010, "Wrong size on FST_PullDownMenuData");
-static_assert(offsetof(FST_PullDownMenuData, ItemDataList_3_46F2A3A44BED2D7C9B59718337B53226) == 0x000000, "Member 'FST_PullDownMenuData::ItemDataList_3_46F2A3A44BED2D7C9B59718337B53226' has a wrong offset!");
+DUMPER7_ASSERTS_FST_PullDownMenuData;
 
 }
 

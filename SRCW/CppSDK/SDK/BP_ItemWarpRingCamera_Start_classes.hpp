@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ItemWarpRingCamera_Start_C">();
+		BP_STATIC_CLASS_IMPL("BP_ItemWarpRingCamera_Start_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ItemWarpRingCamera_Start_C")
 	}
 	static class ABP_ItemWarpRingCamera_Start_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ItemWarpRingCamera_Start_C>();
 	}
 };
-static_assert(alignof(ABP_ItemWarpRingCamera_Start_C) == 0x000010, "Wrong alignment on ABP_ItemWarpRingCamera_Start_C");
-static_assert(sizeof(ABP_ItemWarpRingCamera_Start_C) == 0x0003F0, "Wrong size on ABP_ItemWarpRingCamera_Start_C");
-static_assert(offsetof(ABP_ItemWarpRingCamera_Start_C, DebugRootAnchor) == 0x0003E0, "Member 'ABP_ItemWarpRingCamera_Start_C::DebugRootAnchor' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_ItemWarpRingCamera_Start_C;
 
 }
 

@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -55,27 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_TopInfo_Sub_Category_C">();
+		BP_STATIC_CLASS_IMPL("WBP_TopInfo_Sub_Category_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_TopInfo_Sub_Category_C")
 	}
 	static class UWBP_TopInfo_Sub_Category_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_TopInfo_Sub_Category_C>();
 	}
 };
-static_assert(alignof(UWBP_TopInfo_Sub_Category_C) == 0x000008, "Wrong alignment on UWBP_TopInfo_Sub_Category_C");
-static_assert(sizeof(UWBP_TopInfo_Sub_Category_C) == 0x000358, "Wrong size on UWBP_TopInfo_Sub_Category_C");
-static_assert(offsetof(UWBP_TopInfo_Sub_Category_C, UberGraphFrame) == 0x0002F8, "Member 'UWBP_TopInfo_Sub_Category_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_Sub_Category_C, DSP_NewIcon) == 0x000300, "Member 'UWBP_TopInfo_Sub_Category_C::DSP_NewIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_Sub_Category_C, WBP_BonusInfo) == 0x000308, "Member 'UWBP_TopInfo_Sub_Category_C::WBP_BonusInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_Sub_Category_C, WBP_CollaboInfo) == 0x000310, "Member 'UWBP_TopInfo_Sub_Category_C::WBP_CollaboInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_Sub_Category_C, WBP_DLCInfo) == 0x000318, "Member 'UWBP_TopInfo_Sub_Category_C::WBP_DLCInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_Sub_Category_C, WBP_FestaInfo) == 0x000320, "Member 'UWBP_TopInfo_Sub_Category_C::WBP_FestaInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_Sub_Category_C, WBP_FooterMenu_Sub_CommonBtn) == 0x000328, "Member 'UWBP_TopInfo_Sub_Category_C::WBP_FooterMenu_Sub_CommonBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_Sub_Category_C, WBP_GadgetInfo) == 0x000330, "Member 'UWBP_TopInfo_Sub_Category_C::WBP_GadgetInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_Sub_Category_C, WBP_LegendInfo) == 0x000338, "Member 'UWBP_TopInfo_Sub_Category_C::WBP_LegendInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_Sub_Category_C, WBP_Popup_Sub_Btn_Standard) == 0x000340, "Member 'UWBP_TopInfo_Sub_Category_C::WBP_Popup_Sub_Btn_Standard' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_Sub_Category_C, WBP_WorldMatchInfo) == 0x000348, "Member 'UWBP_TopInfo_Sub_Category_C::WBP_WorldMatchInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_Sub_Category_C, WidgetSwitcher_0) == 0x000350, "Member 'UWBP_TopInfo_Sub_Category_C::WidgetSwitcher_0' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_TopInfo_Sub_Category_C;
 
 }
 

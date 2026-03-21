@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -46,27 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_Sub_MatchingState_CharaIcon_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_Sub_MatchingState_CharaIcon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_Sub_MatchingState_CharaIcon_C")
 	}
 	static class UWBP_CMN_Sub_MatchingState_CharaIcon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_Sub_MatchingState_CharaIcon_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_Sub_MatchingState_CharaIcon_C) == 0x000008, "Wrong alignment on UWBP_CMN_Sub_MatchingState_CharaIcon_C");
-static_assert(sizeof(UWBP_CMN_Sub_MatchingState_CharaIcon_C) == 0x000450, "Wrong size on UWBP_CMN_Sub_MatchingState_CharaIcon_C");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_CharaIcon_C, UberGraphFrame) == 0x0003F0, "Member 'UWBP_CMN_Sub_MatchingState_CharaIcon_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_CharaIcon_C, base) == 0x0003F8, "Member 'UWBP_CMN_Sub_MatchingState_CharaIcon_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_CharaIcon_C, Base_Waiting) == 0x000400, "Member 'UWBP_CMN_Sub_MatchingState_CharaIcon_C::Base_Waiting' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_CharaIcon_C, DMY_CharaIcon) == 0x000408, "Member 'UWBP_CMN_Sub_MatchingState_CharaIcon_C::DMY_CharaIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_CharaIcon_C, DSP_WS_Status_Icon) == 0x000410, "Member 'UWBP_CMN_Sub_MatchingState_CharaIcon_C::DSP_WS_Status_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_CharaIcon_C, Join_NG) == 0x000418, "Member 'UWBP_CMN_Sub_MatchingState_CharaIcon_C::Join_NG' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_CharaIcon_C, Logout) == 0x000420, "Member 'UWBP_CMN_Sub_MatchingState_CharaIcon_C::Logout' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_CharaIcon_C, MLC_PlayerColor) == 0x000428, "Member 'UWBP_CMN_Sub_MatchingState_CharaIcon_C::MLC_PlayerColor' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_CharaIcon_C, OK) == 0x000430, "Member 'UWBP_CMN_Sub_MatchingState_CharaIcon_C::OK' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_CharaIcon_C, Waiting_dot) == 0x000438, "Member 'UWBP_CMN_Sub_MatchingState_CharaIcon_C::Waiting_dot' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_CharaIcon_C, WS_CharaIcon) == 0x000440, "Member 'UWBP_CMN_Sub_MatchingState_CharaIcon_C::WS_CharaIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_CharaIcon_C, M_CharaIcon) == 0x000448, "Member 'UWBP_CMN_Sub_MatchingState_CharaIcon_C::M_CharaIcon' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_Sub_MatchingState_CharaIcon_C;
 
 }
 

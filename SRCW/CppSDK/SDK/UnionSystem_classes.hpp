@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "InputCore_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "CriWareRuntime_structs.hpp"
 #include "CriWareRuntime_classes.hpp"
-#include "InputCore_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "SlateCore_structs.hpp"
@@ -39,15 +39,18 @@ class UUnionAddOnBase : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionAddOnBase">();
+		STATIC_CLASS_IMPL("UnionAddOnBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionAddOnBase")
 	}
 	static class UUnionAddOnBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionAddOnBase>();
 	}
 };
-static_assert(alignof(UUnionAddOnBase) == 0x000008, "Wrong alignment on UUnionAddOnBase");
-static_assert(sizeof(UUnionAddOnBase) == 0x000028, "Wrong size on UUnionAddOnBase");
+DUMPER7_ASSERTS_UUnionAddOnBase;
 
 // Class UnionSystem.UnionAddOnSteam
 // 0x0050 (0x0078 - 0x0028)
@@ -59,15 +62,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionAddOnSteam">();
+		STATIC_CLASS_IMPL("UnionAddOnSteam")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionAddOnSteam")
 	}
 	static class UUnionAddOnSteam* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionAddOnSteam>();
 	}
 };
-static_assert(alignof(UUnionAddOnSteam) == 0x000008, "Wrong alignment on UUnionAddOnSteam");
-static_assert(sizeof(UUnionAddOnSteam) == 0x000078, "Wrong size on UUnionAddOnSteam");
+DUMPER7_ASSERTS_UUnionAddOnSteam;
 
 // Class UnionSystem.AppControllerInputManager
 // 0x0018 (0x0058 - 0x0040)
@@ -87,47 +93,46 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AppControllerInputManager">();
+		STATIC_CLASS_IMPL("AppControllerInputManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AppControllerInputManager")
 	}
 	static class UAppControllerInputManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAppControllerInputManager>();
 	}
 };
-static_assert(alignof(UAppControllerInputManager) == 0x000008, "Wrong alignment on UAppControllerInputManager");
-static_assert(sizeof(UAppControllerInputManager) == 0x000058, "Wrong size on UAppControllerInputManager");
-static_assert(offsetof(UAppControllerInputManager, Controllers) == 0x000040, "Member 'UAppControllerInputManager::Controllers' has a wrong offset!");
+DUMPER7_ASSERTS_UAppControllerInputManager;
 
-// Class UnionSystem.AppSequenceLogManagerSubsystem
-// 0x0008 (0x0038 - 0x0030)
-class UAppSequenceLogManagerSubsystem final : public UGameInstanceSubsystem
+// Class UnionSystem.AppTimeSubsystem
+// 0x0050 (0x0080 - 0x0030)
+class UAppTimeSubsystem final : public UGameInstanceSubsystem
 {
 public:
-	uint8                                         Pad_30[0x8];                                       // 0x0030(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TMap<class FName, struct FDateTime>           NamedDateTime;                                     // 0x0030(0x0050)(NativeAccessSpecifierPrivate)
 
 public:
-	void BackupSequenceType();
-	ESequenceMainType GetBackupSequenceMainType();
-	ESequenceSubType GetBackupSequenceSubType();
-	ESequenceMainType GetSequenceMainType();
-	ESequenceSubType GetSequenceSubType();
-	void SetSequenceSubType(ESequenceSubType SubType);
-	void SetSequenceType(ESequenceMainType MainType, ESequenceSubType SubType);
-
-	int32 GetSequenceTypeNum() const;
+	void AddNamedDateTimeNow(const class FName& InTimeName);
+	bool GetTimeSpanMillisecondsByNamedDateTimes(const class FName& InBeginTimeName, const class FName& InEndTimeName, int32* OutTimeSpan);
+	void LogTimeSpanMillisecondsByNamedDateTimes(const class FName& InBeginTimeName, const class FName& InEndTimeName);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AppSequenceLogManagerSubsystem">();
+		STATIC_CLASS_IMPL("AppTimeSubsystem")
 	}
-	static class UAppSequenceLogManagerSubsystem* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UAppSequenceLogManagerSubsystem>();
+		STATIC_NAME_IMPL(L"AppTimeSubsystem")
+	}
+	static class UAppTimeSubsystem* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAppTimeSubsystem>();
 	}
 };
-static_assert(alignof(UAppSequenceLogManagerSubsystem) == 0x000008, "Wrong alignment on UAppSequenceLogManagerSubsystem");
-static_assert(sizeof(UAppSequenceLogManagerSubsystem) == 0x000038, "Wrong size on UAppSequenceLogManagerSubsystem");
+DUMPER7_ASSERTS_UAppTimeSubsystem;
 
 // Class UnionSystem.AppFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -171,55 +176,47 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AppFunctionLibrary">();
+		STATIC_CLASS_IMPL("AppFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AppFunctionLibrary")
 	}
 	static class UAppFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAppFunctionLibrary>();
 	}
 };
-static_assert(alignof(UAppFunctionLibrary) == 0x000008, "Wrong alignment on UAppFunctionLibrary");
-static_assert(sizeof(UAppFunctionLibrary) == 0x000028, "Wrong size on UAppFunctionLibrary");
+DUMPER7_ASSERTS_UAppFunctionLibrary;
 
-// Class UnionSystem.ChallengeStatsUtility
+// Class UnionSystem.CollectHelper
 // 0x0000 (0x0028 - 0x0028)
-class UChallengeStatsUtility final : public UBlueprintFunctionLibrary
+class UCollectHelper final : public UBlueprintFunctionLibrary
 {
 public:
-	static void AddChallengeStats(EChallengeId InChallengeId, int32 InValue);
-	static void ChallengeProgressUpdateCategory(const EChallengeCategory InCategory);
-	static void CheckAllChallengeStats();
-	static TArray<EChallengeId> GetCategoryChallenge(const EChallengeCategory InCategory);
-	static TArray<struct FChallengeStruct> GetCategoryChallengeData(const EChallengeCategory InCategory);
-	static int32 GetCategoryClearCount(const EChallengeCategory InCategory);
-	static TArray<struct FChallengeStatsData> GetCategoryStats(const EChallengeCategory InCategory);
-	static EChallengeCategory GetChallengeCategory(const EChallengeId InId);
-	static struct FChallengeStruct GetChallengeData(const EChallengeId InChallengeId);
-	static int32 GetChallengeProgressCount();
-	static EChallengeProgressState GetChallengeProgressState(const EChallengeId InChallengeId);
-	static struct FChallengeStatsData GetChallengeStats(const EChallengeId InChallengeId);
-	static int32 GetChallengeStatsCount(const EChallengeId InChallengeId);
-	static struct FChallengePointReward GetPointReward(int32 ItemGetBgIdx, int32 ItemGetPointIdx);
-	static int32 GetSpecialChallengeClearCount();
-	static bool IsChallengeAcquiredStateCheck();
-	static bool IsChallengeCategoryNewIcon(const EChallengeCategory InCategory);
-	static bool IsCompleteChallenge(const EChallengeId InChallengeId);
-	static bool IsCompleteChallengeCategory(const EChallengeCategory InCategory);
-	static void SetChallengeProgressState(const EChallengeId InChallengeId, const EChallengeProgressState InProgressState);
-	static void SetChallengeStats(EChallengeId InChallengeId, int32 InValue);
+	static class FString CollectBytesData(const class FString& Name_0, const class FString& Suffix, const TArray<uint8>& Data);
+	static class FString CollectCacheDirectory();
+	static class FString CollectChangeList();
+	static bool CollectCheckEnabled();
+	static class FString CollectLevelName();
+	static class FString CollectScreenShot(const class FString& Name_0);
+	static class FString CollectStringData(const class FString& Name_0, const class FString& Suffix, const class FString& Data);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ChallengeStatsUtility">();
+		STATIC_CLASS_IMPL("CollectHelper")
 	}
-	static class UChallengeStatsUtility* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UChallengeStatsUtility>();
+		STATIC_NAME_IMPL(L"CollectHelper")
+	}
+	static class UCollectHelper* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UCollectHelper>();
 	}
 };
-static_assert(alignof(UChallengeStatsUtility) == 0x000008, "Wrong alignment on UChallengeStatsUtility");
-static_assert(sizeof(UChallengeStatsUtility) == 0x000028, "Wrong size on UChallengeStatsUtility");
+DUMPER7_ASSERTS_UCollectHelper;
 
 // Class UnionSystem.MenuPopupWindowInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -250,7 +247,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MenuPopupWindowInterface">();
+		STATIC_CLASS_IMPL("MenuPopupWindowInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MenuPopupWindowInterface")
 	}
 	static class IMenuPopupWindowInterface* GetDefaultObj()
 	{
@@ -266,8 +267,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IMenuPopupWindowInterface) == 0x000001, "Wrong alignment on IMenuPopupWindowInterface");
-static_assert(sizeof(IMenuPopupWindowInterface) == 0x000001, "Wrong size on IMenuPopupWindowInterface");
+DUMPER7_ASSERTS_IMenuPopupWindowInterface;
 
 // Class UnionSystem.AppGameInstance
 // 0x0020 (0x01E0 - 0x01C0)
@@ -286,38 +286,56 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AppGameInstance">();
+		STATIC_CLASS_IMPL("AppGameInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AppGameInstance")
 	}
 	static class UAppGameInstance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAppGameInstance>();
 	}
 };
-static_assert(alignof(UAppGameInstance) == 0x000008, "Wrong alignment on UAppGameInstance");
-static_assert(sizeof(UAppGameInstance) == 0x0001E0, "Wrong size on UAppGameInstance");
+DUMPER7_ASSERTS_UAppGameInstance;
 
-// Class UnionSystem.HashHelper
-// 0x0000 (0x0028 - 0x0028)
-class UHashHelper final : public UBlueprintFunctionLibrary
+// Class UnionSystem.HonorTitleListDataAsset
+// 0x00A8 (0x00D8 - 0x0030)
+class UHonorTitleListDataAsset final : public UDataAsset
 {
 public:
-	static TArray<uint8> HashIntoByteArray(const class FString& Data);
-	static TArray<uint8> HashIntoByteArrayFromByteArray(const TArray<uint8>& Bytes);
-	static class FString HashIntoTextString(const class FString& Data);
-	static class FString HashIntoTextStringFromByteArray(const TArray<uint8>& Bytes);
+	class UDataTable*                             HonorTitleCompositeDataTable;                      // 0x0030(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<int32, struct FHonorTitleListData>       HonorTitleTableDataMap;                            // 0x0038(0x0050)(Edit, BlueprintVisible, EditConst, NativeAccessSpecifierPublic)
+	TMap<int32, int32>                            HonorTitleFestaSortId;                             // 0x0088(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+
+public:
+	void ClearData();
+	void Update();
+
+	TArray<struct FHonorTitleListData> GetAllHonorTitleAndIdWithRarity(int32 Rarity, TArray<int32>* outHonorTitleIdArray) const;
+	TArray<struct FHonorTitleListData> GetAllHonorTitleWithRarity(int32 Rarity) const;
+	int32 GetHonorTitleFestaSortId(int32 festaId) const;
+	void GetHonorTitleLegendCompeInfo(int32 HonorTitleIndex, bool* IsLegendCompe, int32* RoundNum) const;
+	TSoftObjectPtr<class UTexture2D> GetHonorTitlePlate(int32 HonorTitleId) const;
+	int32 GetHonorTitleRarity(int32 HonorTitleId) const;
+	class FText GetHonorTitleVBName(int32 HonorTitleId, bool* IsValid) const;
+	bool GetIsHonorTitleDLC(int32 HonorTitleIndex) const;
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HashHelper">();
+		STATIC_CLASS_IMPL("HonorTitleListDataAsset")
 	}
-	static class UHashHelper* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UHashHelper>();
+		STATIC_NAME_IMPL(L"HonorTitleListDataAsset")
+	}
+	static class UHonorTitleListDataAsset* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UHonorTitleListDataAsset>();
 	}
 };
-static_assert(alignof(UHashHelper) == 0x000008, "Wrong alignment on UHashHelper");
-static_assert(sizeof(UHashHelper) == 0x000028, "Wrong size on UHashHelper");
+DUMPER7_ASSERTS_UHonorTitleListDataAsset;
 
 // Class UnionSystem.AppGameMode
 // 0x0000 (0x0328 - 0x0328)
@@ -326,56 +344,49 @@ class AAppGameMode : public AGameModeBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AppGameMode">();
+		STATIC_CLASS_IMPL("AppGameMode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AppGameMode")
 	}
 	static class AAppGameMode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAppGameMode>();
 	}
 };
-static_assert(alignof(AAppGameMode) == 0x000008, "Wrong alignment on AAppGameMode");
-static_assert(sizeof(AAppGameMode) == 0x000328, "Wrong size on AAppGameMode");
+DUMPER7_ASSERTS_AAppGameMode;
 
-// Class UnionSystem.JukeboxDataAsset
-// 0x00B0 (0x00E0 - 0x0030)
-class UJukeboxDataAsset final : public UDataAsset
+// Class UnionSystem.ControllerButtonData
+// 0x0050 (0x0080 - 0x0030)
+class UControllerButtonData final : public UDataAsset
 {
 public:
-	class UDataTable*                             JukeboxAlbumCompositeDataTable;                    // 0x0030(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             JukeboxTrackCompositeDataTable;                    // 0x0038(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<int32, struct FAlbumData>                AlbumDataMap;                                      // 0x0040(0x0050)(Edit, BlueprintVisible, EditConst, NativeAccessSpecifierPublic)
-	TMap<int32, struct FTrackData>                TrackDataMap;                                      // 0x0090(0x0050)(Edit, BlueprintVisible, EditConst, NativeAccessSpecifierPublic)
-
-public:
-	void ClearData();
-	struct FAlbumData GetAlbumData(int32 AlbumID);
-	struct FTrackData GetTrackData(int32 TrackID);
-	void Update();
+	TMap<struct FKey, EControllerButtonTextureIndex> KeyConfig;                                      // 0x0030(0x0050)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"JukeboxDataAsset">();
+		STATIC_CLASS_IMPL("ControllerButtonData")
 	}
-	static class UJukeboxDataAsset* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UJukeboxDataAsset>();
+		STATIC_NAME_IMPL(L"ControllerButtonData")
+	}
+	static class UControllerButtonData* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UControllerButtonData>();
 	}
 };
-static_assert(alignof(UJukeboxDataAsset) == 0x000008, "Wrong alignment on UJukeboxDataAsset");
-static_assert(sizeof(UJukeboxDataAsset) == 0x0000E0, "Wrong size on UJukeboxDataAsset");
-static_assert(offsetof(UJukeboxDataAsset, JukeboxAlbumCompositeDataTable) == 0x000030, "Member 'UJukeboxDataAsset::JukeboxAlbumCompositeDataTable' has a wrong offset!");
-static_assert(offsetof(UJukeboxDataAsset, JukeboxTrackCompositeDataTable) == 0x000038, "Member 'UJukeboxDataAsset::JukeboxTrackCompositeDataTable' has a wrong offset!");
-static_assert(offsetof(UJukeboxDataAsset, AlbumDataMap) == 0x000040, "Member 'UJukeboxDataAsset::AlbumDataMap' has a wrong offset!");
-static_assert(offsetof(UJukeboxDataAsset, TrackDataMap) == 0x000090, "Member 'UJukeboxDataAsset::TrackDataMap' has a wrong offset!");
+DUMPER7_ASSERTS_UControllerButtonData;
 
 // Class UnionSystem.SimpleAnimationComponent
 // 0x0080 (0x0120 - 0x00A0)
 class alignas(0x10) USimpleAnimationComponent : public UActorComponent
 {
 public:
-	class UAnimSequence*                          Animation;                                         // 0x00A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USceneComponent*                        Target;                                            // 0x00A8(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimSequence*                          Animation;                                         // 0x00A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class USceneComponent*                        Target;                                            // 0x00A8(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 	float                                         PlayRate;                                          // 0x00B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         PlayOffsetInFrame;                                 // 0x00B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_B8[0x68];                                      // 0x00B8(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -383,53 +394,22 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SimpleAnimationComponent">();
+		STATIC_CLASS_IMPL("SimpleAnimationComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SimpleAnimationComponent")
 	}
 	static class USimpleAnimationComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USimpleAnimationComponent>();
 	}
 };
-static_assert(alignof(USimpleAnimationComponent) == 0x000010, "Wrong alignment on USimpleAnimationComponent");
-static_assert(sizeof(USimpleAnimationComponent) == 0x000120, "Wrong size on USimpleAnimationComponent");
-static_assert(offsetof(USimpleAnimationComponent, Animation) == 0x0000A0, "Member 'USimpleAnimationComponent::Animation' has a wrong offset!");
-static_assert(offsetof(USimpleAnimationComponent, Target) == 0x0000A8, "Member 'USimpleAnimationComponent::Target' has a wrong offset!");
-static_assert(offsetof(USimpleAnimationComponent, PlayRate) == 0x0000B0, "Member 'USimpleAnimationComponent::PlayRate' has a wrong offset!");
-static_assert(offsetof(USimpleAnimationComponent, PlayOffsetInFrame) == 0x0000B4, "Member 'USimpleAnimationComponent::PlayOffsetInFrame' has a wrong offset!");
-
-// Class UnionSystem.AtomListenerFocusPointForCamera
-// 0x0020 (0x0250 - 0x0230)
-class UAtomListenerFocusPointForCamera : public USceneComponent
-{
-public:
-	float                                         DistanceFocusLevel;                                // 0x0230(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DirectionFocusLevel;                               // 0x0234(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCameraComponent*                       Camera;                                            // 0x0238(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_240[0x10];                                     // 0x0240(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void OnCameraActivated();
-	void SetCamera(class UCameraComponent* NewCamera);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AtomListenerFocusPointForCamera">();
-	}
-	static class UAtomListenerFocusPointForCamera* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAtomListenerFocusPointForCamera>();
-	}
-};
-static_assert(alignof(UAtomListenerFocusPointForCamera) == 0x000010, "Wrong alignment on UAtomListenerFocusPointForCamera");
-static_assert(sizeof(UAtomListenerFocusPointForCamera) == 0x000250, "Wrong size on UAtomListenerFocusPointForCamera");
-static_assert(offsetof(UAtomListenerFocusPointForCamera, DistanceFocusLevel) == 0x000230, "Member 'UAtomListenerFocusPointForCamera::DistanceFocusLevel' has a wrong offset!");
-static_assert(offsetof(UAtomListenerFocusPointForCamera, DirectionFocusLevel) == 0x000234, "Member 'UAtomListenerFocusPointForCamera::DirectionFocusLevel' has a wrong offset!");
-static_assert(offsetof(UAtomListenerFocusPointForCamera, Camera) == 0x000238, "Member 'UAtomListenerFocusPointForCamera::Camera' has a wrong offset!");
+DUMPER7_ASSERTS_USimpleAnimationComponent;
 
 // Class UnionSystem.AppListenerFocusPoint
-// 0x0000 (0x0250 - 0x0250)
-class UAppListenerFocusPoint final : public UAtomListenerFocusPointForCamera
+// 0x0000 (0x0240 - 0x0240)
+class UAppListenerFocusPoint final : public UAtomListenerFocusPoint
 {
 public:
 	void SetupComponent(int32 PlayerIndex, int32 NumLocalPlayers);
@@ -437,15 +417,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AppListenerFocusPoint">();
+		STATIC_CLASS_IMPL("AppListenerFocusPoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AppListenerFocusPoint")
 	}
 	static class UAppListenerFocusPoint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAppListenerFocusPoint>();
 	}
 };
-static_assert(alignof(UAppListenerFocusPoint) == 0x000010, "Wrong alignment on UAppListenerFocusPoint");
-static_assert(sizeof(UAppListenerFocusPoint) == 0x000250, "Wrong size on UAppListenerFocusPoint");
+DUMPER7_ASSERTS_UAppListenerFocusPoint;
 
 // Class UnionSystem.AppOptionConfigSaveGameHelper
 // 0x0000 (0x0028 - 0x0028)
@@ -475,7 +458,9 @@ public:
 	static void CalcGetUserAssistData(TArray<struct FUserAssistData>* OutAssistData);
 	static ECaptionVisible GetCaptionVisibility();
 	static EKeyConfigOperationType GetControllerOperationType(int32 InPlayerIndex);
+	static bool GetEnableAutoSelectRentalPlate();
 	static EForceFeedbackLevel GetForceFeedbackLevel(int32 PlayerIndex);
+	static ESecondaryGadgetButtonType GetSecondaryGadgetButtonType(int32 InPlayerIndex);
 	static ELanguage GetTextLangFromSave();
 	static ELanguage GetVoiceLangFromSave();
 	static void InitTextLangIfInvalid();
@@ -483,48 +468,62 @@ public:
 	static bool IsControllerGyroAssistEnabled(int32 InPlayerIndex);
 	static bool IsControllerOperationTypeCustom(int32 InPlayerIndex);
 	static bool IsDiffUserAssistDataWithSaveData(const TArray<struct FUserAssistData>& InAssistData);
+	static bool IsDirty_ControllerSettings(int32 PlayerIndex, const struct FControllerSettings& EditingSetting, const struct FControllerAdditionalSetting& EditingAditionalSetting);
+	static bool IsDirty_RaceSettings(const struct FOptionRaceSettings& EditingSetting, const struct FRaceAdditionalSetting& EditingAditionalSetting);
 	static bool IsInverseAcceptAndCancel(int32 InPlayerIndex);
 	static bool IsInverseFlyModeUpDown(int32 InPlayerIndex);
 	static bool IsRunningOnSteamDeck();
+	static TArray<struct FControllerAdditionalSetting> ReadControlAdditionalSettingArrayBySave(int32 ArrayLength);
+	static struct FRaceAdditionalSetting ReadRaceAdditionalSettingBySave();
+	static void ResetControlAdditionalSettingArrayForSaveDataDefault(TArray<struct FControllerAdditionalSetting>* Settings);
+	static void ResetControlAdditionalSettingForSaveDataDefault(struct FControllerAdditionalSetting* Setting);
 	static void ResetControllerSettingsForLocalMultiPlayer();
+	static void ResetRaceAdditionalSettingForSaveDataDefault(struct FRaceAdditionalSetting* Setting);
 	static void SetAllPlayerForceFeedbackLevelFromSave();
 	static void SetControllerGyroAssistEnabled(int32 InPlayerIndex, bool InEnable);
 	static void SetControllerOperationType(int32 InPlayerIndex, EKeyConfigOperationType InOperationType);
+	static void SetEnableAutoSelectRentalPlate(bool InEnable);
 	static void SetForceFeedbackLevel(int32 PlayerIndex, EForceFeedbackLevel VibrationLevel);
 	static void SetInverseAcceptAndCancel(int32 InPlayerIndex, bool InInverse);
+	static void SetSecondaryGadgetButtonType(int32 InPlayerIndex, ESecondaryGadgetButtonType InType);
 	static void SetTextLangToSave(ELanguage NewLanguage);
 	static void SetVoiceLangToSave(ELanguage NewLanguage);
 	static bool UpdateGraphicSettingsAtFirstTime();
+	static bool WriteControlAdditionalSettingArrayForSave(const TArray<struct FControllerAdditionalSetting>& Source);
+	static bool WriteRaceAdditionalSettingForSave(const struct FRaceAdditionalSetting& Source);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AppOptionConfigSaveGameHelper">();
+		STATIC_CLASS_IMPL("AppOptionConfigSaveGameHelper")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AppOptionConfigSaveGameHelper")
 	}
 	static class UAppOptionConfigSaveGameHelper* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAppOptionConfigSaveGameHelper>();
 	}
 };
-static_assert(alignof(UAppOptionConfigSaveGameHelper) == 0x000008, "Wrong alignment on UAppOptionConfigSaveGameHelper");
-static_assert(sizeof(UAppOptionConfigSaveGameHelper) == 0x000028, "Wrong size on UAppOptionConfigSaveGameHelper");
+DUMPER7_ASSERTS_UAppOptionConfigSaveGameHelper;
 
 // Class UnionSystem.AppPlayerController
-// 0x01E0 (0x0A38 - 0x0858)
+// 0x01D8 (0x0A30 - 0x0858)
 class AAppPlayerController : public APlayerController
 {
 public:
-	uint8                                         Pad_858[0x8];                                      // 0x0858(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UInputDataAsset*                        InputDataAsset;                                    // 0x0860(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   DefaultInputConfigName;                            // 0x0868(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EAppControllerInputType BeforeType, EAppControllerInputType AfterType)> OnChangeControllerInputTypeEvent; // 0x0870(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FPointerEvent& InPointerEvent)> OnMousePointerEvent;  // 0x0880(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FPointerEvent& InPointerEvent)> OnMousePointerUpEvent; // 0x0890(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnMouseFullScreenClickEvent;                       // 0x08A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnMouseLeftButtonReleasedEvent;                    // 0x08B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_8C0[0x100];                                    // 0x08C0(0x0100)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                LastHoveredObject;                                 // 0x09C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_9C8[0x70];                                     // 0x09C8(0x0070)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_858[0x4];                                      // 0x0858(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   DefaultInputConfigName;                            // 0x085C(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_864[0x4];                                      // 0x0864(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(EAppControllerInputType BeforeType, EAppControllerInputType AfterType)> OnChangeControllerInputTypeEvent; // 0x0868(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FPointerEvent& InPointerEvent)> OnMousePointerEvent;  // 0x0878(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FPointerEvent& InPointerEvent)> OnMousePointerUpEvent; // 0x0888(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnMouseFullScreenClickEvent;                       // 0x0898(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnMouseLeftButtonReleasedEvent;                    // 0x08A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_8B8[0x100];                                    // 0x08B8(0x0100)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                LastHoveredObject;                                 // 0x09B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_9C0[0x70];                                     // 0x09C0(0x0070)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void AddRegisterSubMenu(class UObject* InMenuObject, int32 InPriority);
@@ -577,43 +576,39 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AppPlayerController">();
+		STATIC_CLASS_IMPL("AppPlayerController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AppPlayerController")
 	}
 	static class AAppPlayerController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAppPlayerController>();
 	}
 };
-static_assert(alignof(AAppPlayerController) == 0x000008, "Wrong alignment on AAppPlayerController");
-static_assert(sizeof(AAppPlayerController) == 0x000A38, "Wrong size on AAppPlayerController");
-static_assert(offsetof(AAppPlayerController, InputDataAsset) == 0x000860, "Member 'AAppPlayerController::InputDataAsset' has a wrong offset!");
-static_assert(offsetof(AAppPlayerController, DefaultInputConfigName) == 0x000868, "Member 'AAppPlayerController::DefaultInputConfigName' has a wrong offset!");
-static_assert(offsetof(AAppPlayerController, OnChangeControllerInputTypeEvent) == 0x000870, "Member 'AAppPlayerController::OnChangeControllerInputTypeEvent' has a wrong offset!");
-static_assert(offsetof(AAppPlayerController, OnMousePointerEvent) == 0x000880, "Member 'AAppPlayerController::OnMousePointerEvent' has a wrong offset!");
-static_assert(offsetof(AAppPlayerController, OnMousePointerUpEvent) == 0x000890, "Member 'AAppPlayerController::OnMousePointerUpEvent' has a wrong offset!");
-static_assert(offsetof(AAppPlayerController, OnMouseFullScreenClickEvent) == 0x0008A0, "Member 'AAppPlayerController::OnMouseFullScreenClickEvent' has a wrong offset!");
-static_assert(offsetof(AAppPlayerController, OnMouseLeftButtonReleasedEvent) == 0x0008B0, "Member 'AAppPlayerController::OnMouseLeftButtonReleasedEvent' has a wrong offset!");
-static_assert(offsetof(AAppPlayerController, LastHoveredObject) == 0x0009C0, "Member 'AAppPlayerController::LastHoveredObject' has a wrong offset!");
+DUMPER7_ASSERTS_AAppPlayerController;
 
 // Class UnionSystem.AppPlayerControllerSubsystem
-// 0x0280 (0x02B0 - 0x0030)
+// 0x0288 (0x02B8 - 0x0030)
 class UAppPlayerControllerSubsystem final : public UGameInstanceSubsystem
 {
 public:
 	TMap<class FName, EControllerButtonTextureIndex> ButtonNameToTextureIndex;                       // 0x0030(0x0050)(BlueprintVisible, NativeAccessSpecifierPublic)
-	TMap<class FName, class UMaterialInstanceDynamic*> ButtonMaterials;                              // 0x0080(0x0050)(BlueprintVisible, UObjectWrapper, NativeAccessSpecifierPublic)
+	TMap<class FName, class UMaterialInstanceDynamic*> ButtonMaterials;                              // 0x0080(0x0050)(BlueprintVisible, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
 	TMap<class FName, class FName>                TagToActionMapping;                                // 0x00D0(0x0050)(BlueprintVisible, NativeAccessSpecifierPublic)
-	TMap<struct FKey, class UMaterialInstanceDynamic*> KeyToButtonMaterial;                          // 0x0120(0x0050)(BlueprintVisible, UObjectWrapper, NativeAccessSpecifierPublic)
+	TMap<struct FKey, class UMaterialInstanceDynamic*> KeyToButtonMaterial;                          // 0x0120(0x0050)(BlueprintVisible, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
 	TMap<struct FKey, EControllerButtonTextureIndex> KeyToPadTextureIndex;                           // 0x0170(0x0050)(BlueprintVisible, NativeAccessSpecifierPublic)
-	class UTexture2D*                             CurrentButtonTexture;                              // 0x01C0(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UControllerButtonData*                  FKeyToControllerTextureIndex;                      // 0x01C8(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             CurrentButtonTexture;                              // 0x01C0(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UControllerButtonData*                  FKeyToControllerTextureIndex;                      // 0x01C8(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 	uint8                                         CurrentDisplayKeyboardLayout;                      // 0x01D0(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         CurrentDisplayKeytopPattern;                       // 0x01D1(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1D2[0x6];                                      // 0x01D2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<EControllerButtonTextureIndex, EMenuKeyboardButtonTextureIndex> PadToMenuKeyboardTextureIndex; // 0x01D8(0x0050)(BlueprintVisible, NativeAccessSpecifierPublic)
 	uint8                                         Pad_228[0x28];                                     // 0x0228(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AAppPlayerController*>           AppPlayerControllers;                              // 0x0250(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPrivate)
-	TMap<struct FKey, struct FLocalizeRuntimeTextArray> KeyToKeytopTextMap;                          // 0x0260(0x0050)(NativeAccessSpecifierPrivate)
+	TArray<class AAppPlayerController*>           AppPlayerControllers;                              // 0x0250(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
+	class UInputDataAsset*                        InputDataAsset;                                    // 0x0260(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	TMap<struct FKey, struct FLocalizeRuntimeTextArray> KeyToKeytopTextMap;                          // 0x0268(0x0050)(NativeAccessSpecifierPrivate)
 
 public:
 	void AddDeviceChangeInterface(int32 InPlayerControllerIndex, class UObject* InIFObject);
@@ -639,27 +634,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AppPlayerControllerSubsystem">();
+		STATIC_CLASS_IMPL("AppPlayerControllerSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AppPlayerControllerSubsystem")
 	}
 	static class UAppPlayerControllerSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAppPlayerControllerSubsystem>();
 	}
 };
-static_assert(alignof(UAppPlayerControllerSubsystem) == 0x000008, "Wrong alignment on UAppPlayerControllerSubsystem");
-static_assert(sizeof(UAppPlayerControllerSubsystem) == 0x0002B0, "Wrong size on UAppPlayerControllerSubsystem");
-static_assert(offsetof(UAppPlayerControllerSubsystem, ButtonNameToTextureIndex) == 0x000030, "Member 'UAppPlayerControllerSubsystem::ButtonNameToTextureIndex' has a wrong offset!");
-static_assert(offsetof(UAppPlayerControllerSubsystem, ButtonMaterials) == 0x000080, "Member 'UAppPlayerControllerSubsystem::ButtonMaterials' has a wrong offset!");
-static_assert(offsetof(UAppPlayerControllerSubsystem, TagToActionMapping) == 0x0000D0, "Member 'UAppPlayerControllerSubsystem::TagToActionMapping' has a wrong offset!");
-static_assert(offsetof(UAppPlayerControllerSubsystem, KeyToButtonMaterial) == 0x000120, "Member 'UAppPlayerControllerSubsystem::KeyToButtonMaterial' has a wrong offset!");
-static_assert(offsetof(UAppPlayerControllerSubsystem, KeyToPadTextureIndex) == 0x000170, "Member 'UAppPlayerControllerSubsystem::KeyToPadTextureIndex' has a wrong offset!");
-static_assert(offsetof(UAppPlayerControllerSubsystem, CurrentButtonTexture) == 0x0001C0, "Member 'UAppPlayerControllerSubsystem::CurrentButtonTexture' has a wrong offset!");
-static_assert(offsetof(UAppPlayerControllerSubsystem, FKeyToControllerTextureIndex) == 0x0001C8, "Member 'UAppPlayerControllerSubsystem::FKeyToControllerTextureIndex' has a wrong offset!");
-static_assert(offsetof(UAppPlayerControllerSubsystem, CurrentDisplayKeyboardLayout) == 0x0001D0, "Member 'UAppPlayerControllerSubsystem::CurrentDisplayKeyboardLayout' has a wrong offset!");
-static_assert(offsetof(UAppPlayerControllerSubsystem, CurrentDisplayKeytopPattern) == 0x0001D1, "Member 'UAppPlayerControllerSubsystem::CurrentDisplayKeytopPattern' has a wrong offset!");
-static_assert(offsetof(UAppPlayerControllerSubsystem, PadToMenuKeyboardTextureIndex) == 0x0001D8, "Member 'UAppPlayerControllerSubsystem::PadToMenuKeyboardTextureIndex' has a wrong offset!");
-static_assert(offsetof(UAppPlayerControllerSubsystem, AppPlayerControllers) == 0x000250, "Member 'UAppPlayerControllerSubsystem::AppPlayerControllers' has a wrong offset!");
-static_assert(offsetof(UAppPlayerControllerSubsystem, KeyToKeytopTextMap) == 0x000260, "Member 'UAppPlayerControllerSubsystem::KeyToKeytopTextMap' has a wrong offset!");
+DUMPER7_ASSERTS_UAppPlayerControllerSubsystem;
 
 // Class UnionSystem.AppRaceEventManager
 // 0x0238 (0x0278 - 0x0040)
@@ -710,51 +696,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AppRaceEventManager">();
+		STATIC_CLASS_IMPL("AppRaceEventManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AppRaceEventManager")
 	}
 	static class UAppRaceEventManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAppRaceEventManager>();
 	}
 };
-static_assert(alignof(UAppRaceEventManager) == 0x000008, "Wrong alignment on UAppRaceEventManager");
-static_assert(sizeof(UAppRaceEventManager) == 0x000278, "Wrong size on UAppRaceEventManager");
-static_assert(offsetof(UAppRaceEventManager, OnRacerPassedTravelRingGate) == 0x000040, "Member 'UAppRaceEventManager::OnRacerPassedTravelRingGate' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, OnRaceSetBGMNameFirstLap) == 0x000050, "Member 'UAppRaceEventManager::OnRaceSetBGMNameFirstLap' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, OnRacePassedToPreFirstLapWhenAnotherTimeTraial) == 0x000060, "Member 'UAppRaceEventManager::OnRacePassedToPreFirstLapWhenAnotherTimeTraial' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, OnRacePassedToFirstLap) == 0x000070, "Member 'UAppRaceEventManager::OnRacePassedToFirstLap' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, OnRacePassedToFirstLapWhenAnotherTimeTraial) == 0x000080, "Member 'UAppRaceEventManager::OnRacePassedToFirstLapWhenAnotherTimeTraial' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, OnRaceTransitionToDomainSubInFirstLap) == 0x000090, "Member 'UAppRaceEventManager::OnRaceTransitionToDomainSubInFirstLap' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, OnRaceReturnFromDomainSubInFirstLap) == 0x0000A0, "Member 'UAppRaceEventManager::OnRaceReturnFromDomainSubInFirstLap' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, OnRaceSelectTravelRingGate) == 0x0000B0, "Member 'UAppRaceEventManager::OnRaceSelectTravelRingGate' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, OnRaceDecideTravelRingGate) == 0x0000C0, "Member 'UAppRaceEventManager::OnRaceDecideTravelRingGate' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, OnRacePassedToSecondLap) == 0x0000D0, "Member 'UAppRaceEventManager::OnRacePassedToSecondLap' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, OnRaceTransitionToDomainSubInSecondLap) == 0x0000E0, "Member 'UAppRaceEventManager::OnRaceTransitionToDomainSubInSecondLap' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, OnRaceReturnFromDomainSubInSecondLap) == 0x0000F0, "Member 'UAppRaceEventManager::OnRaceReturnFromDomainSubInSecondLap' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, OnRacePassedToFinalLap) == 0x000100, "Member 'UAppRaceEventManager::OnRacePassedToFinalLap' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, OnRacePassedToFinalLapWhenTimeTiral) == 0x000110, "Member 'UAppRaceEventManager::OnRacePassedToFinalLapWhenTimeTiral' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, OnRaceFinalLapLast) == 0x000120, "Member 'UAppRaceEventManager::OnRaceFinalLapLast' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, OnRaceTransitionToDomainSubInFinalLap) == 0x000130, "Member 'UAppRaceEventManager::OnRaceTransitionToDomainSubInFinalLap' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, OnRaceReturnFromDomainSubInFinalLap) == 0x000140, "Member 'UAppRaceEventManager::OnRaceReturnFromDomainSubInFinalLap' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, OnRaceGoal) == 0x000150, "Member 'UAppRaceEventManager::OnRaceGoal' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, OnRaceGoalWithParam) == 0x000160, "Member 'UAppRaceEventManager::OnRaceGoalWithParam' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, OnRacePassedToSecondLapForce) == 0x000170, "Member 'UAppRaceEventManager::OnRacePassedToSecondLapForce' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, OnRacePassedToFinalLapForce) == 0x000180, "Member 'UAppRaceEventManager::OnRacePassedToFinalLapForce' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, OnRaceSetAisacRingGateDistanceFirstLapToSecondLap) == 0x000190, "Member 'UAppRaceEventManager::OnRaceSetAisacRingGateDistanceFirstLapToSecondLap' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, OnRaceSetAisacRingGateDistanceSecondLapToFinalLap) == 0x0001A0, "Member 'UAppRaceEventManager::OnRaceSetAisacRingGateDistanceSecondLapToFinalLap' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, OnRaceBGMOnCourseEditor) == 0x0001B0, "Member 'UAppRaceEventManager::OnRaceBGMOnCourseEditor' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, OnRaceBGMFinished) == 0x0001C0, "Member 'UAppRaceEventManager::OnRaceBGMFinished' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, OnEnableRaceSilenceSound) == 0x0001D0, "Member 'UAppRaceEventManager::OnEnableRaceSilenceSound' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, OnEnableResultSilenceSound) == 0x0001E0, "Member 'UAppRaceEventManager::OnEnableResultSilenceSound' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, OnChangeSubCourse) == 0x0001F0, "Member 'UAppRaceEventManager::OnChangeSubCourse' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, RingGates) == 0x000200, "Member 'UAppRaceEventManager::RingGates' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, TravelRings) == 0x000210, "Member 'UAppRaceEventManager::TravelRings' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, TravelRingLeftWaves) == 0x000220, "Member 'UAppRaceEventManager::TravelRingLeftWaves' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, TravelRingRightWaves) == 0x000230, "Member 'UAppRaceEventManager::TravelRingRightWaves' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, TravelRingFloors) == 0x000240, "Member 'UAppRaceEventManager::TravelRingFloors' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, TravelDecidePanels) == 0x000250, "Member 'UAppRaceEventManager::TravelDecidePanels' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, SequenceParameterActorList) == 0x000260, "Member 'UAppRaceEventManager::SequenceParameterActorList' has a wrong offset!");
-static_assert(offsetof(UAppRaceEventManager, bForceSkipResultSequence) == 0x000270, "Member 'UAppRaceEventManager::bForceSkipResultSequence' has a wrong offset!");
+DUMPER7_ASSERTS_UAppRaceEventManager;
 
 // Class UnionSystem.AppSaveGameHelper
 // 0x0000 (0x0028 - 0x0028)
@@ -846,6 +799,7 @@ public:
 	static EMachineId GetUserSelectedMachineId();
 	static bool HasAgreedNoticeAgreement();
 	static bool HasEnteredMachineCustomizeSequence();
+	static void InitializePatchUpdate();
 	static bool IsClearedGrandPrixAnySpeedClass(EGrandPrixId GrandPrixId);
 	static bool IsClearedGrandPrixMenuSpeedClass(const EGrandPrixId& GrandPirxId, const EMenuSpeedClassId& SpeedClassId);
 	static bool IsCompletedGrandPrixEvent(EGrandPrixEventFlag EventFlagId);
@@ -875,6 +829,8 @@ public:
 	static bool IsSpawnGrandPrixLevelDownUIFlag(const EMenuSpeedClassId SpeedClassId);
 	static bool IsSpawnPowerRivalFlag();
 	static bool IsStickerUnlocked(int32 InStickerId);
+	static bool IsUnlockedHornFromHornType(const EMachineHornType InHornType);
+	static bool IsUnlockedHornFromRewardId(const int32 InRewardId);
 	static void ReflectRivalLose(const EMenuSpeedClassId SpeedClassId);
 	static void ReflectRivalWin(const EMenuSpeedClassId SpeedClassId, const EDriverId DriverId, const int32 MaxRivalLevel, const int32 PowerRivalAddLevel, const int32 KnockdownRivalLevel, const bool bSpawnedPowRival);
 	static void RemoveCompensationData(int32 ID);
@@ -949,18 +905,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AppSaveGameHelper">();
+		STATIC_CLASS_IMPL("AppSaveGameHelper")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AppSaveGameHelper")
 	}
 	static class UAppSaveGameHelper* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAppSaveGameHelper>();
 	}
 };
-static_assert(alignof(UAppSaveGameHelper) == 0x000008, "Wrong alignment on UAppSaveGameHelper");
-static_assert(sizeof(UAppSaveGameHelper) == 0x000028, "Wrong size on UAppSaveGameHelper");
+DUMPER7_ASSERTS_UAppSaveGameHelper;
 
 // Class UnionSystem.AppSaveGame
-// 0x0C50 (0x0C78 - 0x0028)
+// 0x0CA8 (0x0CD0 - 0x0028)
 class UAppSaveGame final : public USaveGame
 {
 public:
@@ -978,82 +937,70 @@ public:
 	struct FUserRewardGetDisplayRequestData       _UserRewardGetDisplayRequestData;                  // 0x07A0(0x0010)(NativeAccessSpecifierPublic)
 	struct FStatsSaveData                         _StatsData;                                        // 0x07B0(0x0140)(NativeAccessSpecifierPublic)
 	struct FAppFriendUserData                     _AppFriendUserData;                                // 0x08F0(0x0078)(NativeAccessSpecifierPublic)
-	struct FUserNoticeData                        _AppNoticeData;                                    // 0x0968(0x0018)(NativeAccessSpecifierPublic)
-	struct FUserPartyRaceData                     _UserPartyRaceData;                                // 0x0980(0x0120)(NativeAccessSpecifierPublic)
-	struct FUserPartyRaceRivalData                _UserPartyRaceRivalData;                           // 0x0AA0(0x0004)(NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_AA4[0x4];                                      // 0x0AA4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUserHonorTitleData                    _UserHonorTitleData;                               // 0x0AA8(0x0068)(NativeAccessSpecifierPublic)
-	struct FUserCustomLapBGMData                  _UserCustomLapBGMData;                             // 0x0B10(0x0010)(NativeAccessSpecifierPublic)
-	struct FUserJukeboxData                       _UserJukeboxData;                                  // 0x0B20(0x00A8)(NativeAccessSpecifierPublic)
-	struct FUserFriendShipData                    _UserFriendShipData;                               // 0x0BC8(0x0050)(NativeAccessSpecifierPublic)
-	struct FUserGadgetCustomizeData               _UserGadgetCustomizeData;                          // 0x0C18(0x0001)(NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C19[0x7];                                      // 0x0C19(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUserActivityCardFlagData              _UserActivityCardFlagData;                         // 0x0C20(0x0028)(ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FCompensationData                      _CompensationData;                                 // 0x0C48(0x0010)(NativeAccessSpecifierPublic)
-	struct FUserLegendCompeData                   _UserLegendCompeData;                              // 0x0C58(0x0020)(NativeAccessSpecifierPublic)
+	struct FUserNoticeData                        _AppNoticeData;                                    // 0x0968(0x0020)(NativeAccessSpecifierPublic)
+	struct FUserPartyRaceData                     _UserPartyRaceData;                                // 0x0988(0x0120)(NativeAccessSpecifierPublic)
+	struct FUserPartyRaceRivalData                _UserPartyRaceRivalData;                           // 0x0AA8(0x0004)(NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_AAC[0x4];                                      // 0x0AAC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUserHonorTitleData                    _UserHonorTitleData;                               // 0x0AB0(0x0068)(NativeAccessSpecifierPublic)
+	struct FUserCustomLapBGMData                  _UserCustomLapBGMData;                             // 0x0B18(0x0010)(NativeAccessSpecifierPublic)
+	struct FUserJukeboxData                       _UserJukeboxData;                                  // 0x0B28(0x00A8)(NativeAccessSpecifierPublic)
+	struct FUserFriendShipData                    _UserFriendShipData;                               // 0x0BD0(0x0050)(NativeAccessSpecifierPublic)
+	struct FUserGadgetCustomizeData               _UserGadgetCustomizeData;                          // 0x0C20(0x0001)(NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C21[0x7];                                      // 0x0C21(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUserActivityCardFlagData              _UserActivityCardFlagData;                         // 0x0C28(0x0028)(ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FCompensationData                      _CompensationData;                                 // 0x0C50(0x0010)(NativeAccessSpecifierPublic)
+	struct FUserLegendCompeData                   _UserLegendCompeData;                              // 0x0C60(0x0020)(NativeAccessSpecifierPublic)
+	struct FUserRestorationData                   _UserRestorationData;                              // 0x0C80(0x0050)(NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AppSaveGame">();
+		STATIC_CLASS_IMPL("AppSaveGame")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AppSaveGame")
 	}
 	static class UAppSaveGame* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAppSaveGame>();
 	}
 };
-static_assert(alignof(UAppSaveGame) == 0x000008, "Wrong alignment on UAppSaveGame");
-static_assert(sizeof(UAppSaveGame) == 0x000C78, "Wrong size on UAppSaveGame");
-static_assert(offsetof(UAppSaveGame, _Header) == 0x000028, "Member 'UAppSaveGame::_Header' has a wrong offset!");
-static_assert(offsetof(UAppSaveGame, _UserCommonData) == 0x000038, "Member 'UAppSaveGame::_UserCommonData' has a wrong offset!");
-static_assert(offsetof(UAppSaveGame, _UserMachineAssemblyData) == 0x0000B0, "Member 'UAppSaveGame::_UserMachineAssemblyData' has a wrong offset!");
-static_assert(offsetof(UAppSaveGame, _UserGrandPrixData) == 0x000440, "Member 'UAppSaveGame::_UserGrandPrixData' has a wrong offset!");
-static_assert(offsetof(UAppSaveGame, _UserTimeTrialData) == 0x000610, "Member 'UAppSaveGame::_UserTimeTrialData' has a wrong offset!");
-static_assert(offsetof(UAppSaveGame, _UserChallengeData) == 0x000628, "Member 'UAppSaveGame::_UserChallengeData' has a wrong offset!");
-static_assert(offsetof(UAppSaveGame, _UserTutorialData) == 0x000680, "Member 'UAppSaveGame::_UserTutorialData' has a wrong offset!");
-static_assert(offsetof(UAppSaveGame, _UserDriverData) == 0x000728, "Member 'UAppSaveGame::_UserDriverData' has a wrong offset!");
-static_assert(offsetof(UAppSaveGame, _UserHintData) == 0x000778, "Member 'UAppSaveGame::_UserHintData' has a wrong offset!");
-static_assert(offsetof(UAppSaveGame, _UserAssistData) == 0x000790, "Member 'UAppSaveGame::_UserAssistData' has a wrong offset!");
-static_assert(offsetof(UAppSaveGame, _UserRewardGetDisplayRequestData) == 0x0007A0, "Member 'UAppSaveGame::_UserRewardGetDisplayRequestData' has a wrong offset!");
-static_assert(offsetof(UAppSaveGame, _StatsData) == 0x0007B0, "Member 'UAppSaveGame::_StatsData' has a wrong offset!");
-static_assert(offsetof(UAppSaveGame, _AppFriendUserData) == 0x0008F0, "Member 'UAppSaveGame::_AppFriendUserData' has a wrong offset!");
-static_assert(offsetof(UAppSaveGame, _AppNoticeData) == 0x000968, "Member 'UAppSaveGame::_AppNoticeData' has a wrong offset!");
-static_assert(offsetof(UAppSaveGame, _UserPartyRaceData) == 0x000980, "Member 'UAppSaveGame::_UserPartyRaceData' has a wrong offset!");
-static_assert(offsetof(UAppSaveGame, _UserPartyRaceRivalData) == 0x000AA0, "Member 'UAppSaveGame::_UserPartyRaceRivalData' has a wrong offset!");
-static_assert(offsetof(UAppSaveGame, _UserHonorTitleData) == 0x000AA8, "Member 'UAppSaveGame::_UserHonorTitleData' has a wrong offset!");
-static_assert(offsetof(UAppSaveGame, _UserCustomLapBGMData) == 0x000B10, "Member 'UAppSaveGame::_UserCustomLapBGMData' has a wrong offset!");
-static_assert(offsetof(UAppSaveGame, _UserJukeboxData) == 0x000B20, "Member 'UAppSaveGame::_UserJukeboxData' has a wrong offset!");
-static_assert(offsetof(UAppSaveGame, _UserFriendShipData) == 0x000BC8, "Member 'UAppSaveGame::_UserFriendShipData' has a wrong offset!");
-static_assert(offsetof(UAppSaveGame, _UserGadgetCustomizeData) == 0x000C18, "Member 'UAppSaveGame::_UserGadgetCustomizeData' has a wrong offset!");
-static_assert(offsetof(UAppSaveGame, _UserActivityCardFlagData) == 0x000C20, "Member 'UAppSaveGame::_UserActivityCardFlagData' has a wrong offset!");
-static_assert(offsetof(UAppSaveGame, _CompensationData) == 0x000C48, "Member 'UAppSaveGame::_CompensationData' has a wrong offset!");
-static_assert(offsetof(UAppSaveGame, _UserLegendCompeData) == 0x000C58, "Member 'UAppSaveGame::_UserLegendCompeData' has a wrong offset!");
+DUMPER7_ASSERTS_UAppSaveGame;
 
-// Class UnionSystem.AppTimeSubsystem
-// 0x0050 (0x0080 - 0x0030)
-class UAppTimeSubsystem final : public UGameInstanceSubsystem
+// Class UnionSystem.AppSequenceLogManagerSubsystem
+// 0x0008 (0x0038 - 0x0030)
+class UAppSequenceLogManagerSubsystem final : public UGameInstanceSubsystem
 {
 public:
-	TMap<class FName, struct FDateTime>           NamedDateTime;                                     // 0x0030(0x0050)(NativeAccessSpecifierPrivate)
+	uint8                                         Pad_30[0x8];                                       // 0x0030(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	void AddNamedDateTimeNow(const class FName& InTimeName);
-	bool GetTimeSpanMillisecondsByNamedDateTimes(const class FName& InBeginTimeName, const class FName& InEndTimeName, int32* OutTimeSpan);
-	void LogTimeSpanMillisecondsByNamedDateTimes(const class FName& InBeginTimeName, const class FName& InEndTimeName);
+	void BackupSequenceType();
+	ESequenceMainType GetBackupSequenceMainType();
+	ESequenceSubType GetBackupSequenceSubType();
+	ESequenceMainType GetSequenceMainType();
+	ESequenceSubType GetSequenceSubType();
+	void SetSequenceSubType(ESequenceSubType SubType);
+	void SetSequenceType(ESequenceMainType MainType, ESequenceSubType SubType);
+
+	int32 GetSequenceTypeNum() const;
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AppTimeSubsystem">();
+		STATIC_CLASS_IMPL("AppSequenceLogManagerSubsystem")
 	}
-	static class UAppTimeSubsystem* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UAppTimeSubsystem>();
+		STATIC_NAME_IMPL(L"AppSequenceLogManagerSubsystem")
+	}
+	static class UAppSequenceLogManagerSubsystem* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAppSequenceLogManagerSubsystem>();
 	}
 };
-static_assert(alignof(UAppTimeSubsystem) == 0x000008, "Wrong alignment on UAppTimeSubsystem");
-static_assert(sizeof(UAppTimeSubsystem) == 0x000080, "Wrong size on UAppTimeSubsystem");
-static_assert(offsetof(UAppTimeSubsystem, NamedDateTime) == 0x000030, "Member 'UAppTimeSubsystem::NamedDateTime' has a wrong offset!");
+DUMPER7_ASSERTS_UAppSequenceLogManagerSubsystem;
 
 // Class UnionSystem.AppTimeUtil
 // 0x0000 (0x0028 - 0x0028)
@@ -1061,6 +1008,7 @@ class UAppTimeUtil final : public UBlueprintFunctionLibrary
 {
 public:
 	static void AddNamedDateTimeNow(const class FName& InTimeName);
+	static struct FDateTime ConvertUtcToLocalTime(const struct FDateTime& UtcDateTime);
 	static class FText LocalizeDateTimePlaceholder(const class FText& BaseText, const struct FDateTime& StartDateUTCTime, const struct FDateTime& EndDateUTCTime);
 	static void LogTimeSpanMillisecondsByNamedDateTimes(const class FName& InBeginTimeName, const class FName& InEndTimeName);
 	static class FText MakeDateText(const struct FDateTime& DateTime);
@@ -1072,15 +1020,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AppTimeUtil">();
+		STATIC_CLASS_IMPL("AppTimeUtil")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AppTimeUtil")
 	}
 	static class UAppTimeUtil* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAppTimeUtil>();
 	}
 };
-static_assert(alignof(UAppTimeUtil) == 0x000008, "Wrong alignment on UAppTimeUtil");
-static_assert(sizeof(UAppTimeUtil) == 0x000028, "Wrong size on UAppTimeUtil");
+DUMPER7_ASSERTS_UAppTimeUtil;
 
 // Class UnionSystem.AppViewUtil
 // 0x0000 (0x0028 - 0x0028)
@@ -1092,15 +1043,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AppViewUtil">();
+		STATIC_CLASS_IMPL("AppViewUtil")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AppViewUtil")
 	}
 	static class UAppViewUtil* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAppViewUtil>();
 	}
 };
-static_assert(alignof(UAppViewUtil) == 0x000008, "Wrong alignment on UAppViewUtil");
-static_assert(sizeof(UAppViewUtil) == 0x000028, "Wrong size on UAppViewUtil");
+DUMPER7_ASSERTS_UAppViewUtil;
 
 // Class UnionSystem.AuthSubsystem
 // 0x00F0 (0x0120 - 0x0030)
@@ -1138,15 +1092,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AuthSubsystem">();
+		STATIC_CLASS_IMPL("AuthSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AuthSubsystem")
 	}
 	static class UAuthSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAuthSubsystem>();
 	}
 };
-static_assert(alignof(UAuthSubsystem) == 0x000008, "Wrong alignment on UAuthSubsystem");
-static_assert(sizeof(UAuthSubsystem) == 0x000120, "Wrong size on UAuthSubsystem");
+DUMPER7_ASSERTS_UAuthSubsystem;
 
 // Class UnionSystem.BPFL_AppInputUtil
 // 0x0000 (0x0028 - 0x0028)
@@ -1160,15 +1117,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BPFL_AppInputUtil">();
+		STATIC_CLASS_IMPL("BPFL_AppInputUtil")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPFL_AppInputUtil")
 	}
 	static class UBPFL_AppInputUtil* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPFL_AppInputUtil>();
 	}
 };
-static_assert(alignof(UBPFL_AppInputUtil) == 0x000008, "Wrong alignment on UBPFL_AppInputUtil");
-static_assert(sizeof(UBPFL_AppInputUtil) == 0x000028, "Wrong size on UBPFL_AppInputUtil");
+DUMPER7_ASSERTS_UBPFL_AppInputUtil;
 
 // Class UnionSystem.BPFL_AutoPlay
 // 0x0000 (0x0028 - 0x0028)
@@ -1183,41 +1143,61 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BPFL_AutoPlay">();
+		STATIC_CLASS_IMPL("BPFL_AutoPlay")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPFL_AutoPlay")
 	}
 	static class UBPFL_AutoPlay* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPFL_AutoPlay>();
 	}
 };
-static_assert(alignof(UBPFL_AutoPlay) == 0x000008, "Wrong alignment on UBPFL_AutoPlay");
-static_assert(sizeof(UBPFL_AutoPlay) == 0x000028, "Wrong size on UBPFL_AutoPlay");
+DUMPER7_ASSERTS_UBPFL_AutoPlay;
 
-// Class UnionSystem.CollectHelper
+// Class UnionSystem.ChallengeStatsUtility
 // 0x0000 (0x0028 - 0x0028)
-class UCollectHelper final : public UBlueprintFunctionLibrary
+class UChallengeStatsUtility final : public UBlueprintFunctionLibrary
 {
 public:
-	static class FString CollectBytesData(const class FString& Name_0, const class FString& Suffix, const TArray<uint8>& Data);
-	static class FString CollectCacheDirectory();
-	static class FString CollectChangeList();
-	static bool CollectCheckEnabled();
-	static class FString CollectLevelName();
-	static class FString CollectScreenShot(const class FString& Name_0);
-	static class FString CollectStringData(const class FString& Name_0, const class FString& Suffix, const class FString& Data);
+	static void AddChallengeStats(EChallengeId InChallengeId, int32 InValue);
+	static void ChallengeProgressUpdateCategory(const EChallengeCategory InCategory);
+	static void CheckAllChallengeStats();
+	static TArray<EChallengeId> GetCategoryChallenge(const EChallengeCategory InCategory);
+	static TArray<struct FChallengeStruct> GetCategoryChallengeData(const EChallengeCategory InCategory);
+	static int32 GetCategoryClearCount(const EChallengeCategory InCategory);
+	static TArray<struct FChallengeStatsData> GetCategoryStats(const EChallengeCategory InCategory);
+	static EChallengeCategory GetChallengeCategory(const EChallengeId InId);
+	static struct FChallengeStruct GetChallengeData(const EChallengeId InChallengeId);
+	static int32 GetChallengeProgressCount();
+	static EChallengeProgressState GetChallengeProgressState(const EChallengeId InChallengeId);
+	static struct FChallengeStatsData GetChallengeStats(const EChallengeId InChallengeId);
+	static int32 GetChallengeStatsCount(const EChallengeId InChallengeId);
+	static struct FChallengePointReward GetPointReward(int32 ItemGetBgIdx, int32 ItemGetPointIdx);
+	static int32 GetSpecialChallengeClearCount();
+	static bool IsChallengeAcquiredStateCheck();
+	static bool IsChallengeCategoryNewIcon(const EChallengeCategory InCategory);
+	static bool IsCompleteChallenge(const EChallengeId InChallengeId);
+	static bool IsCompleteChallengeCategory(const EChallengeCategory InCategory);
+	static void SetChallengeProgressState(const EChallengeId InChallengeId, const EChallengeProgressState InProgressState);
+	static void SetChallengeStats(EChallengeId InChallengeId, int32 InValue);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CollectHelper">();
+		STATIC_CLASS_IMPL("ChallengeStatsUtility")
 	}
-	static class UCollectHelper* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UCollectHelper>();
+		STATIC_NAME_IMPL(L"ChallengeStatsUtility")
+	}
+	static class UChallengeStatsUtility* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UChallengeStatsUtility>();
 	}
 };
-static_assert(alignof(UCollectHelper) == 0x000008, "Wrong alignment on UCollectHelper");
-static_assert(sizeof(UCollectHelper) == 0x000028, "Wrong size on UCollectHelper");
+DUMPER7_ASSERTS_UChallengeStatsUtility;
 
 // Class UnionSystem.CryptoHelper
 // 0x0000 (0x0028 - 0x0028)
@@ -1231,15 +1211,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CryptoHelper">();
+		STATIC_CLASS_IMPL("CryptoHelper")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CryptoHelper")
 	}
 	static class UCryptoHelper* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCryptoHelper>();
 	}
 };
-static_assert(alignof(UCryptoHelper) == 0x000008, "Wrong alignment on UCryptoHelper");
-static_assert(sizeof(UCryptoHelper) == 0x000028, "Wrong size on UCryptoHelper");
+DUMPER7_ASSERTS_UCryptoHelper;
 
 // Class UnionSystem.DataCollectSubsystem
 // 0x00F0 (0x0120 - 0x0030)
@@ -1261,15 +1244,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DataCollectSubsystem">();
+		STATIC_CLASS_IMPL("DataCollectSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DataCollectSubsystem")
 	}
 	static class UDataCollectSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDataCollectSubsystem>();
 	}
 };
-static_assert(alignof(UDataCollectSubsystem) == 0x000008, "Wrong alignment on UDataCollectSubsystem");
-static_assert(sizeof(UDataCollectSubsystem) == 0x000120, "Wrong size on UDataCollectSubsystem");
+DUMPER7_ASSERTS_UDataCollectSubsystem;
 
 // Class UnionSystem.DebugImportantLogLine
 // 0x0000 (0x02E0 - 0x02E0)
@@ -1281,15 +1267,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DebugImportantLogLine">();
+		STATIC_CLASS_IMPL("DebugImportantLogLine")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DebugImportantLogLine")
 	}
 	static class UDebugImportantLogLine* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDebugImportantLogLine>();
 	}
 };
-static_assert(alignof(UDebugImportantLogLine) == 0x000008, "Wrong alignment on UDebugImportantLogLine");
-static_assert(sizeof(UDebugImportantLogLine) == 0x0002E0, "Wrong size on UDebugImportantLogLine");
+DUMPER7_ASSERTS_UDebugImportantLogLine;
 
 // Class UnionSystem.DebugImportantLogPanel
 // 0x0008 (0x02E8 - 0x02E0)
@@ -1305,16 +1294,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DebugImportantLogPanel">();
+		STATIC_CLASS_IMPL("DebugImportantLogPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DebugImportantLogPanel")
 	}
 	static class UDebugImportantLogPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDebugImportantLogPanel>();
 	}
 };
-static_assert(alignof(UDebugImportantLogPanel) == 0x000008, "Wrong alignment on UDebugImportantLogPanel");
-static_assert(sizeof(UDebugImportantLogPanel) == 0x0002E8, "Wrong size on UDebugImportantLogPanel");
-static_assert(offsetof(UDebugImportantLogPanel, MaxEntryCount) == 0x0002E0, "Member 'UDebugImportantLogPanel::MaxEntryCount' has a wrong offset!");
+DUMPER7_ASSERTS_UDebugImportantLogPanel;
 
 // Class UnionSystem.DebugImportantLogSubsystem
 // 0x0010 (0x0040 - 0x0030)
@@ -1334,17 +1325,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DebugImportantLogSubsystem">();
+		STATIC_CLASS_IMPL("DebugImportantLogSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DebugImportantLogSubsystem")
 	}
 	static class UDebugImportantLogSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDebugImportantLogSubsystem>();
 	}
 };
-static_assert(alignof(UDebugImportantLogSubsystem) == 0x000008, "Wrong alignment on UDebugImportantLogSubsystem");
-static_assert(sizeof(UDebugImportantLogSubsystem) == 0x000040, "Wrong size on UDebugImportantLogSubsystem");
-static_assert(offsetof(UDebugImportantLogSubsystem, ImportantLogPanel) == 0x000030, "Member 'UDebugImportantLogSubsystem::ImportantLogPanel' has a wrong offset!");
-static_assert(offsetof(UDebugImportantLogSubsystem, bPanelVisibility) == 0x000038, "Member 'UDebugImportantLogSubsystem::bPanelVisibility' has a wrong offset!");
+DUMPER7_ASSERTS_UDebugImportantLogSubsystem;
 
 // Class UnionSystem.DebugImportantLogUtil
 // 0x0000 (0x0028 - 0x0028)
@@ -1358,15 +1350,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DebugImportantLogUtil">();
+		STATIC_CLASS_IMPL("DebugImportantLogUtil")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DebugImportantLogUtil")
 	}
 	static class UDebugImportantLogUtil* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDebugImportantLogUtil>();
 	}
 };
-static_assert(alignof(UDebugImportantLogUtil) == 0x000008, "Wrong alignment on UDebugImportantLogUtil");
-static_assert(sizeof(UDebugImportantLogUtil) == 0x000028, "Wrong size on UDebugImportantLogUtil");
+DUMPER7_ASSERTS_UDebugImportantLogUtil;
 
 // Class UnionSystem.DebugOnlineAutoPlaySetting
 // 0x0000 (0x0028 - 0x0028)
@@ -1386,15 +1381,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DebugOnlineAutoPlaySetting">();
+		STATIC_CLASS_IMPL("DebugOnlineAutoPlaySetting")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DebugOnlineAutoPlaySetting")
 	}
 	static class UDebugOnlineAutoPlaySetting* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDebugOnlineAutoPlaySetting>();
 	}
 };
-static_assert(alignof(UDebugOnlineAutoPlaySetting) == 0x000008, "Wrong alignment on UDebugOnlineAutoPlaySetting");
-static_assert(sizeof(UDebugOnlineAutoPlaySetting) == 0x000028, "Wrong size on UDebugOnlineAutoPlaySetting");
+DUMPER7_ASSERTS_UDebugOnlineAutoPlaySetting;
 
 // Class UnionSystem.DeviceChangeInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -1407,7 +1405,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DeviceChangeInterface">();
+		STATIC_CLASS_IMPL("DeviceChangeInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DeviceChangeInterface")
 	}
 	static class IDeviceChangeInterface* GetDefaultObj()
 	{
@@ -1423,8 +1425,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IDeviceChangeInterface) == 0x000001, "Wrong alignment on IDeviceChangeInterface");
-static_assert(sizeof(IDeviceChangeInterface) == 0x000001, "Wrong size on IDeviceChangeInterface");
+DUMPER7_ASSERTS_IDeviceChangeInterface;
 
 // Class UnionSystem.DriverIdUtilityLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -1437,23 +1438,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DriverIdUtilityLibrary">();
+		STATIC_CLASS_IMPL("DriverIdUtilityLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DriverIdUtilityLibrary")
 	}
 	static class UDriverIdUtilityLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDriverIdUtilityLibrary>();
 	}
 };
-static_assert(alignof(UDriverIdUtilityLibrary) == 0x000008, "Wrong alignment on UDriverIdUtilityLibrary");
-static_assert(sizeof(UDriverIdUtilityLibrary) == 0x000028, "Wrong size on UDriverIdUtilityLibrary");
+DUMPER7_ASSERTS_UDriverIdUtilityLibrary;
 
 // Class UnionSystem.LobbyMemberContextBase
 // 0x0078 (0x00A0 - 0x0028)
 class ULobbyMemberContextBase : public UObject
 {
 public:
-	class ULobbyContextBase*                      LobbyContext;                                      // 0x0028(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class ULobbyMemberTransactionParam*           TransactionParam;                                  // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class ULobbyContextBase*                      LobbyContext;                                      // 0x0028(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	class ULobbyMemberTransactionParam*           TransactionParam;                                  // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
 	uint8                                         Pad_38[0x68];                                      // 0x0038(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -1479,17 +1483,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LobbyMemberContextBase">();
+		STATIC_CLASS_IMPL("LobbyMemberContextBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LobbyMemberContextBase")
 	}
 	static class ULobbyMemberContextBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULobbyMemberContextBase>();
 	}
 };
-static_assert(alignof(ULobbyMemberContextBase) == 0x000008, "Wrong alignment on ULobbyMemberContextBase");
-static_assert(sizeof(ULobbyMemberContextBase) == 0x0000A0, "Wrong size on ULobbyMemberContextBase");
-static_assert(offsetof(ULobbyMemberContextBase, LobbyContext) == 0x000028, "Member 'ULobbyMemberContextBase::LobbyContext' has a wrong offset!");
-static_assert(offsetof(ULobbyMemberContextBase, TransactionParam) == 0x000030, "Member 'ULobbyMemberContextBase::TransactionParam' has a wrong offset!");
+DUMPER7_ASSERTS_ULobbyMemberContextBase;
 
 // Class UnionSystem.MatchmakingRequestMemberContext
 // 0x0000 (0x00A0 - 0x00A0)
@@ -1498,15 +1503,18 @@ class UMatchmakingRequestMemberContext : public ULobbyMemberContextBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MatchmakingRequestMemberContext">();
+		STATIC_CLASS_IMPL("MatchmakingRequestMemberContext")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MatchmakingRequestMemberContext")
 	}
 	static class UMatchmakingRequestMemberContext* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMatchmakingRequestMemberContext>();
 	}
 };
-static_assert(alignof(UMatchmakingRequestMemberContext) == 0x000008, "Wrong alignment on UMatchmakingRequestMemberContext");
-static_assert(sizeof(UMatchmakingRequestMemberContext) == 0x0000A0, "Wrong size on UMatchmakingRequestMemberContext");
+DUMPER7_ASSERTS_UMatchmakingRequestMemberContext;
 
 // Class UnionSystem.DummyMatchmakingMemberContext
 // 0x0000 (0x00A0 - 0x00A0)
@@ -1515,15 +1523,18 @@ class UDummyMatchmakingMemberContext final : public UMatchmakingRequestMemberCon
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DummyMatchmakingMemberContext">();
+		STATIC_CLASS_IMPL("DummyMatchmakingMemberContext")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DummyMatchmakingMemberContext")
 	}
 	static class UDummyMatchmakingMemberContext* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDummyMatchmakingMemberContext>();
 	}
 };
-static_assert(alignof(UDummyMatchmakingMemberContext) == 0x000008, "Wrong alignment on UDummyMatchmakingMemberContext");
-static_assert(sizeof(UDummyMatchmakingMemberContext) == 0x0000A0, "Wrong size on UDummyMatchmakingMemberContext");
+DUMPER7_ASSERTS_UDummyMatchmakingMemberContext;
 
 // Class UnionSystem.EnhancedInputHelper
 // 0x0000 (0x0028 - 0x0028)
@@ -1536,15 +1547,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EnhancedInputHelper">();
+		STATIC_CLASS_IMPL("EnhancedInputHelper")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnhancedInputHelper")
 	}
 	static class UEnhancedInputHelper* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEnhancedInputHelper>();
 	}
 };
-static_assert(alignof(UEnhancedInputHelper) == 0x000008, "Wrong alignment on UEnhancedInputHelper");
-static_assert(sizeof(UEnhancedInputHelper) == 0x000028, "Wrong size on UEnhancedInputHelper");
+DUMPER7_ASSERTS_UEnhancedInputHelper;
 
 // Class UnionSystem.FestaUIDataAsset
 // 0x0058 (0x0088 - 0x0030)
@@ -1568,17 +1582,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FestaUIDataAsset">();
+		STATIC_CLASS_IMPL("FestaUIDataAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FestaUIDataAsset")
 	}
 	static class UFestaUIDataAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFestaUIDataAsset>();
 	}
 };
-static_assert(alignof(UFestaUIDataAsset) == 0x000008, "Wrong alignment on UFestaUIDataAsset");
-static_assert(sizeof(UFestaUIDataAsset) == 0x000088, "Wrong size on UFestaUIDataAsset");
-static_assert(offsetof(UFestaUIDataAsset, FestaUIDataTable) == 0x000030, "Member 'UFestaUIDataAsset::FestaUIDataTable' has a wrong offset!");
-static_assert(offsetof(UFestaUIDataAsset, FestaUITableDataMap) == 0x000038, "Member 'UFestaUIDataAsset::FestaUITableDataMap' has a wrong offset!");
+DUMPER7_ASSERTS_UFestaUIDataAsset;
 
 // Class UnionSystem.FestaUtil
 // 0x0000 (0x0028 - 0x0028)
@@ -1597,15 +1612,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FestaUtil">();
+		STATIC_CLASS_IMPL("FestaUtil")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FestaUtil")
 	}
 	static class UFestaUtil* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFestaUtil>();
 	}
 };
-static_assert(alignof(UFestaUtil) == 0x000008, "Wrong alignment on UFestaUtil");
-static_assert(sizeof(UFestaUtil) == 0x000028, "Wrong size on UFestaUtil");
+DUMPER7_ASSERTS_UFestaUtil;
 
 // Class UnionSystem.FlagFileManager
 // 0x0148 (0x0178 - 0x0030)
@@ -1617,22 +1635,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FlagFileManager">();
+		STATIC_CLASS_IMPL("FlagFileManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FlagFileManager")
 	}
 	static class UFlagFileManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFlagFileManager>();
 	}
 };
-static_assert(alignof(UFlagFileManager) == 0x000008, "Wrong alignment on UFlagFileManager");
-static_assert(sizeof(UFlagFileManager) == 0x000178, "Wrong size on UFlagFileManager");
+DUMPER7_ASSERTS_UFlagFileManager;
 
 // Class UnionSystem.FriendSubsystem
-// 0x0CB0 (0x0CE0 - 0x0030)
+// 0x0CC0 (0x0CF0 - 0x0030)
 class UFriendSubsystem final : public UGameInstanceSubsystem
 {
 public:
-	uint8                                         Pad_30[0xCB0];                                     // 0x0030(0x0CB0)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30[0xCC0];                                     // 0x0030(0x0CC0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void AddBlockPlayer(const class FString& ProductUserId, TDelegate<void(EBlockPlayerErrorCode ErrorCode, const class FString& ProductUserId)> OnComplete);
@@ -1719,23 +1740,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FriendSubsystem">();
+		STATIC_CLASS_IMPL("FriendSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FriendSubsystem")
 	}
 	static class UFriendSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFriendSubsystem>();
 	}
 };
-static_assert(alignof(UFriendSubsystem) == 0x000008, "Wrong alignment on UFriendSubsystem");
-static_assert(sizeof(UFriendSubsystem) == 0x000CE0, "Wrong size on UFriendSubsystem");
+DUMPER7_ASSERTS_UFriendSubsystem;
 
 // Class UnionSystem.GadgetSettingData
-// 0x02A0 (0x02D0 - 0x0030)
+// 0x02D0 (0x0300 - 0x0030)
 class UGadgetSettingData final : public UDataAsset
 {
 public:
-	struct FGadgetSetting                         GadgetSettingTable[0x85];                          // 0x0030(0x0005)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2C9[0x7];                                      // 0x02C9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FGadgetSetting                         GadgetSettingTable[0x8F];                          // 0x0030(0x0005)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2FB[0x5];                                      // 0x02FB(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void UpdateGadgetSetting();
@@ -1748,16 +1772,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GadgetSettingData">();
+		STATIC_CLASS_IMPL("GadgetSettingData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GadgetSettingData")
 	}
 	static class UGadgetSettingData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGadgetSettingData>();
 	}
 };
-static_assert(alignof(UGadgetSettingData) == 0x000008, "Wrong alignment on UGadgetSettingData");
-static_assert(sizeof(UGadgetSettingData) == 0x0002D0, "Wrong size on UGadgetSettingData");
-static_assert(offsetof(UGadgetSettingData, GadgetSettingTable) == 0x000030, "Member 'UGadgetSettingData::GadgetSettingTable' has a wrong offset!");
+DUMPER7_ASSERTS_UGadgetSettingData;
 
 // Class UnionSystem.GameActivitySubsystem
 // 0x0000 (0x0030 - 0x0030)
@@ -1771,15 +1797,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GameActivitySubsystem">();
+		STATIC_CLASS_IMPL("GameActivitySubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GameActivitySubsystem")
 	}
 	static class UGameActivitySubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGameActivitySubsystem>();
 	}
 };
-static_assert(alignof(UGameActivitySubsystem) == 0x000008, "Wrong alignment on UGameActivitySubsystem");
-static_assert(sizeof(UGameActivitySubsystem) == 0x000030, "Wrong size on UGameActivitySubsystem");
+DUMPER7_ASSERTS_UGameActivitySubsystem;
 
 // Class UnionSystem.GameHttpSubsystem
 // 0x03E0 (0x0410 - 0x0030)
@@ -1797,28 +1826,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GameHttpSubsystem">();
+		STATIC_CLASS_IMPL("GameHttpSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GameHttpSubsystem")
 	}
 	static class UGameHttpSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGameHttpSubsystem>();
 	}
 };
-static_assert(alignof(UGameHttpSubsystem) == 0x000008, "Wrong alignment on UGameHttpSubsystem");
-static_assert(sizeof(UGameHttpSubsystem) == 0x000410, "Wrong size on UGameHttpSubsystem");
-static_assert(offsetof(UGameHttpSubsystem, ServerList) == 0x0002B0, "Member 'UGameHttpSubsystem::ServerList' has a wrong offset!");
+DUMPER7_ASSERTS_UGameHttpSubsystem;
 
 // Class UnionSystem.GhostDataController
-// 0x04F8 (0x0520 - 0x0028)
+// 0x0508 (0x0530 - 0x0028)
 class UGhostDataController final : public UObject
 {
 public:
 	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	TMulticastInlineDelegate<void(bool IsError, EUploadState UploadState)> CompleteUpload;           // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void()>              FinishUpload;                                      // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	class UGhostUploader*                         m_ghostUploader;                                   // 0x0050(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UGhostResultUploader*                   m_resultUploader;                                  // 0x0058(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_60[0x4C0];                                     // 0x0060(0x04C0)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UGhostUploader*                         m_ghostUploader;                                   // 0x0050(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	class UGhostResultUploader*                   m_resultUploader;                                  // 0x0058(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	uint8                                         Pad_60[0x4D0];                                     // 0x0060(0x04D0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	bool CancelUpload();
@@ -1842,19 +1873,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GhostDataController">();
+		STATIC_CLASS_IMPL("GhostDataController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GhostDataController")
 	}
 	static class UGhostDataController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGhostDataController>();
 	}
 };
-static_assert(alignof(UGhostDataController) == 0x000008, "Wrong alignment on UGhostDataController");
-static_assert(sizeof(UGhostDataController) == 0x000520, "Wrong size on UGhostDataController");
-static_assert(offsetof(UGhostDataController, CompleteUpload) == 0x000030, "Member 'UGhostDataController::CompleteUpload' has a wrong offset!");
-static_assert(offsetof(UGhostDataController, FinishUpload) == 0x000040, "Member 'UGhostDataController::FinishUpload' has a wrong offset!");
-static_assert(offsetof(UGhostDataController, m_ghostUploader) == 0x000050, "Member 'UGhostDataController::m_ghostUploader' has a wrong offset!");
-static_assert(offsetof(UGhostDataController, m_resultUploader) == 0x000058, "Member 'UGhostDataController::m_resultUploader' has a wrong offset!");
+DUMPER7_ASSERTS_UGhostDataController;
 
 // Class UnionSystem.GhostDebugMenu
 // 0x0028 (0x0050 - 0x0028)
@@ -1866,15 +1896,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GhostDebugMenu">();
+		STATIC_CLASS_IMPL("GhostDebugMenu")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GhostDebugMenu")
 	}
 	static class UGhostDebugMenu* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGhostDebugMenu>();
 	}
 };
-static_assert(alignof(UGhostDebugMenu) == 0x000008, "Wrong alignment on UGhostDebugMenu");
-static_assert(sizeof(UGhostDebugMenu) == 0x000050, "Wrong size on UGhostDebugMenu");
+DUMPER7_ASSERTS_UGhostDebugMenu;
 
 // Class UnionSystem.GhostDonwnloadController
 // 0x00F8 (0x0388 - 0x0290)
@@ -1884,7 +1917,7 @@ public:
 	TMulticastInlineDelegate<void(bool OutIsError)> FinishDownload;                                  // 0x0290(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void()>              FailedDownload;                                    // 0x02A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_2B0[0x28];                                     // 0x02B0(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
-	class UGhostDownloader*                       m_ghostDownloader;                                 // 0x02D8(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UGhostDownloader*                       m_ghostDownloader;                                 // 0x02D8(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
 	uint8                                         Pad_2E0[0xA8];                                     // 0x02E0(0x00A8)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -1901,18 +1934,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GhostDonwnloadController">();
+		STATIC_CLASS_IMPL("GhostDonwnloadController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GhostDonwnloadController")
 	}
 	static class AGhostDonwnloadController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGhostDonwnloadController>();
 	}
 };
-static_assert(alignof(AGhostDonwnloadController) == 0x000008, "Wrong alignment on AGhostDonwnloadController");
-static_assert(sizeof(AGhostDonwnloadController) == 0x000388, "Wrong size on AGhostDonwnloadController");
-static_assert(offsetof(AGhostDonwnloadController, FinishDownload) == 0x000290, "Member 'AGhostDonwnloadController::FinishDownload' has a wrong offset!");
-static_assert(offsetof(AGhostDonwnloadController, FailedDownload) == 0x0002A0, "Member 'AGhostDonwnloadController::FailedDownload' has a wrong offset!");
-static_assert(offsetof(AGhostDonwnloadController, m_ghostDownloader) == 0x0002D8, "Member 'AGhostDonwnloadController::m_ghostDownloader' has a wrong offset!");
+DUMPER7_ASSERTS_AGhostDonwnloadController;
 
 // Class UnionSystem.GhostDownloader
 // 0x00B8 (0x00E0 - 0x0028)
@@ -1930,17 +1963,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GhostDownloader">();
+		STATIC_CLASS_IMPL("GhostDownloader")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GhostDownloader")
 	}
 	static class UGhostDownloader* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGhostDownloader>();
 	}
 };
-static_assert(alignof(UGhostDownloader) == 0x000008, "Wrong alignment on UGhostDownloader");
-static_assert(sizeof(UGhostDownloader) == 0x0000E0, "Wrong size on UGhostDownloader");
-static_assert(offsetof(UGhostDownloader, m_completeDelegate) == 0x000028, "Member 'UGhostDownloader::m_completeDelegate' has a wrong offset!");
-static_assert(offsetof(UGhostDownloader, m_progressDelegate) == 0x000038, "Member 'UGhostDownloader::m_progressDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UGhostDownloader;
 
 // Class UnionSystem.GhostResultUploader
 // 0x0178 (0x01A0 - 0x0028)
@@ -1952,15 +1986,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GhostResultUploader">();
+		STATIC_CLASS_IMPL("GhostResultUploader")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GhostResultUploader")
 	}
 	static class UGhostResultUploader* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGhostResultUploader>();
 	}
 };
-static_assert(alignof(UGhostResultUploader) == 0x000008, "Wrong alignment on UGhostResultUploader");
-static_assert(sizeof(UGhostResultUploader) == 0x0001A0, "Wrong size on UGhostResultUploader");
+DUMPER7_ASSERTS_UGhostResultUploader;
 
 // Class UnionSystem.GhostSubSystem
 // 0x01D0 (0x0200 - 0x0030)
@@ -1991,21 +2028,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GhostSubSystem">();
+		STATIC_CLASS_IMPL("GhostSubSystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GhostSubSystem")
 	}
 	static class UGhostSubSystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGhostSubSystem>();
 	}
 };
-static_assert(alignof(UGhostSubSystem) == 0x000008, "Wrong alignment on UGhostSubSystem");
-static_assert(sizeof(UGhostSubSystem) == 0x000200, "Wrong size on UGhostSubSystem");
-static_assert(offsetof(UGhostSubSystem, m_GhostDebugMenu) == 0x000038, "Member 'UGhostSubSystem::m_GhostDebugMenu' has a wrong offset!");
-static_assert(offsetof(UGhostSubSystem, m_DownloadGhostData) == 0x000090, "Member 'UGhostSubSystem::m_DownloadGhostData' has a wrong offset!");
-static_assert(offsetof(UGhostSubSystem, m_CurrentUserId) == 0x0001D0, "Member 'UGhostSubSystem::m_CurrentUserId' has a wrong offset!");
-static_assert(offsetof(UGhostSubSystem, m_CurrentSpeedClassId) == 0x0001E0, "Member 'UGhostSubSystem::m_CurrentSpeedClassId' has a wrong offset!");
-static_assert(offsetof(UGhostSubSystem, m_CurrentStageId) == 0x0001E1, "Member 'UGhostSubSystem::m_CurrentStageId' has a wrong offset!");
-static_assert(offsetof(UGhostSubSystem, m_CurrentDateTime) == 0x0001E8, "Member 'UGhostSubSystem::m_CurrentDateTime' has a wrong offset!");
+DUMPER7_ASSERTS_UGhostSubSystem;
 
 // Class UnionSystem.GhostUploader
 // 0x00C0 (0x00E8 - 0x0028)
@@ -2023,17 +2057,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GhostUploader">();
+		STATIC_CLASS_IMPL("GhostUploader")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GhostUploader")
 	}
 	static class UGhostUploader* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGhostUploader>();
 	}
 };
-static_assert(alignof(UGhostUploader) == 0x000008, "Wrong alignment on UGhostUploader");
-static_assert(sizeof(UGhostUploader) == 0x0000E8, "Wrong size on UGhostUploader");
-static_assert(offsetof(UGhostUploader, m_completeDelegate) == 0x000028, "Member 'UGhostUploader::m_completeDelegate' has a wrong offset!");
-static_assert(offsetof(UGhostUploader, m_progressDelegate) == 0x000038, "Member 'UGhostUploader::m_progressDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UGhostUploader;
 
 // Class UnionSystem.GrandPrixCommonData
 // 0x0030 (0x0060 - 0x0030)
@@ -2054,24 +2089,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GrandPrixCommonData">();
+		STATIC_CLASS_IMPL("GrandPrixCommonData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GrandPrixCommonData")
 	}
 	static class UGrandPrixCommonData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGrandPrixCommonData>();
 	}
 };
-static_assert(alignof(UGrandPrixCommonData) == 0x000008, "Wrong alignment on UGrandPrixCommonData");
-static_assert(sizeof(UGrandPrixCommonData) == 0x000060, "Wrong size on UGrandPrixCommonData");
-static_assert(offsetof(UGrandPrixCommonData, RivalLevelMax) == 0x000030, "Member 'UGrandPrixCommonData::RivalLevelMax' has a wrong offset!");
-static_assert(offsetof(UGrandPrixCommonData, PowerRivalAddLevel) == 0x000031, "Member 'UGrandPrixCommonData::PowerRivalAddLevel' has a wrong offset!");
-static_assert(offsetof(UGrandPrixCommonData, BlankIconHideCount) == 0x000032, "Member 'UGrandPrixCommonData::BlankIconHideCount' has a wrong offset!");
-static_assert(offsetof(UGrandPrixCommonData, MaxLevelUpRivalLevel) == 0x000033, "Member 'UGrandPrixCommonData::MaxLevelUpRivalLevel' has a wrong offset!");
-static_assert(offsetof(UGrandPrixCommonData, PowerRivalFrequency) == 0x000034, "Member 'UGrandPrixCommonData::PowerRivalFrequency' has a wrong offset!");
-static_assert(offsetof(UGrandPrixCommonData, RivalWinFirstRewardEventThreshold) == 0x000038, "Member 'UGrandPrixCommonData::RivalWinFirstRewardEventThreshold' has a wrong offset!");
-static_assert(offsetof(UGrandPrixCommonData, RivalWinRewardEventThreshold) == 0x00003C, "Member 'UGrandPrixCommonData::RivalWinRewardEventThreshold' has a wrong offset!");
-static_assert(offsetof(UGrandPrixCommonData, TargetRivalIds) == 0x000040, "Member 'UGrandPrixCommonData::TargetRivalIds' has a wrong offset!");
-static_assert(offsetof(UGrandPrixCommonData, FeverConditionAnotherStageIds) == 0x000050, "Member 'UGrandPrixCommonData::FeverConditionAnotherStageIds' has a wrong offset!");
+DUMPER7_ASSERTS_UGrandPrixCommonData;
 
 // Class UnionSystem.UIColorInfoDataAsset
 // 0x0058 (0x0088 - 0x0030)
@@ -2089,52 +2118,44 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UIColorInfoDataAsset">();
+		STATIC_CLASS_IMPL("UIColorInfoDataAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UIColorInfoDataAsset")
 	}
 	static class UUIColorInfoDataAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUIColorInfoDataAsset>();
 	}
 };
-static_assert(alignof(UUIColorInfoDataAsset) == 0x000008, "Wrong alignment on UUIColorInfoDataAsset");
-static_assert(sizeof(UUIColorInfoDataAsset) == 0x000088, "Wrong size on UUIColorInfoDataAsset");
-static_assert(offsetof(UUIColorInfoDataAsset, UIColorInfoDataTable) == 0x000030, "Member 'UUIColorInfoDataAsset::UIColorInfoDataTable' has a wrong offset!");
-static_assert(offsetof(UUIColorInfoDataAsset, UIColorInfoDataMap) == 0x000038, "Member 'UUIColorInfoDataAsset::UIColorInfoDataMap' has a wrong offset!");
+DUMPER7_ASSERTS_UUIColorInfoDataAsset;
 
-// Class UnionSystem.HonorTitleListDataAsset
-// 0x0058 (0x0088 - 0x0030)
-class UHonorTitleListDataAsset final : public UDataAsset
+// Class UnionSystem.HashHelper
+// 0x0000 (0x0028 - 0x0028)
+class UHashHelper final : public UBlueprintFunctionLibrary
 {
 public:
-	class UDataTable*                             HonorTitleCompositeDataTable;                      // 0x0030(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<int32, struct FHonorTitleListData>       HonorTitleTableDataMap;                            // 0x0038(0x0050)(Edit, BlueprintVisible, EditConst, NativeAccessSpecifierPublic)
-
-public:
-	void ClearData();
-	void Update();
-
-	TArray<struct FHonorTitleListData> GetAllHonorTitleAndIdWithRarity(int32 Rarity, TArray<int32>* outHonorTitleIdArray) const;
-	TArray<struct FHonorTitleListData> GetAllHonorTitleWithRarity(int32 Rarity) const;
-	void GetHonorTitleLegendCompeInfo(int32 HonorTitleIndex, bool* IsLegendCompe, int32* RoundNum) const;
-	TSoftObjectPtr<class UTexture2D> GetHonorTitlePlate(int32 HonorTitleId) const;
-	int32 GetHonorTitleRarity(int32 HonorTitleId) const;
-	class FText GetHonorTitleVBName(int32 HonorTitleId, bool* IsValid) const;
-	bool GetIsHonorTitleDLC(int32 HonorTitleIndex) const;
+	static TArray<uint8> HashIntoByteArray(const class FString& Data);
+	static TArray<uint8> HashIntoByteArrayFromByteArray(const TArray<uint8>& Bytes);
+	static class FString HashIntoTextString(const class FString& Data);
+	static class FString HashIntoTextStringFromByteArray(const TArray<uint8>& Bytes);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HonorTitleListDataAsset">();
+		STATIC_CLASS_IMPL("HashHelper")
 	}
-	static class UHonorTitleListDataAsset* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UHonorTitleListDataAsset>();
+		STATIC_NAME_IMPL(L"HashHelper")
+	}
+	static class UHashHelper* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UHashHelper>();
 	}
 };
-static_assert(alignof(UHonorTitleListDataAsset) == 0x000008, "Wrong alignment on UHonorTitleListDataAsset");
-static_assert(sizeof(UHonorTitleListDataAsset) == 0x000088, "Wrong size on UHonorTitleListDataAsset");
-static_assert(offsetof(UHonorTitleListDataAsset, HonorTitleCompositeDataTable) == 0x000030, "Member 'UHonorTitleListDataAsset::HonorTitleCompositeDataTable' has a wrong offset!");
-static_assert(offsetof(UHonorTitleListDataAsset, HonorTitleTableDataMap) == 0x000038, "Member 'UHonorTitleListDataAsset::HonorTitleTableDataMap' has a wrong offset!");
+DUMPER7_ASSERTS_UHashHelper;
 
 // Class UnionSystem.HttpHelper
 // 0x0000 (0x0028 - 0x0028)
@@ -2150,6 +2171,7 @@ public:
 	static void LoginContextUpdate(const struct FLoginCheckResponse& Response);
 	static void Parse_CntReplayGetSignedUrl(const class FString& OutData, int32* ResCode, struct FCntReplayGetSignedUrlResponse* Response);
 	static void Parse_CompensationGetCompensations(const class FString& OutData, int32* ResCode, struct FCompensationGetCompensationsResponse* Response);
+	static void Parse_CompensationSaveCompensations(const class FString& OutData, int32* ResCode, struct FCompensationSaveCompensationsResponse* Response);
 	static void Parse_DebugChangeFairPlayPoint(const class FString& OutData, int32* ResCode, struct FDebugChangeFairPlayPointResponse* Response);
 	static void Parse_DebugChangeFestaLastOrder(const class FString& OutData, int32* ResCode, struct FDebugChangeFestaLastOrderResponse* Response);
 	static void Parse_DebugChangeLegendCompeLastOrder(const class FString& OutData, int32* ResCode, struct FDebugChangeLegendCompeLastOrderResponse* Response);
@@ -2227,6 +2249,7 @@ public:
 	static void QueryServerTime(TDelegate<void(const struct FDateTime& Timestamp, bool Error)> OnComplete);
 	static bool Receive_CntReplayGetSignedUrl(int32 Handle, bool* OutError, int32* ResCode, struct FCntReplayGetSignedUrlResponse* Response);
 	static bool Receive_CompensationGetCompensations(int32 Handle, bool* OutError, int32* ResCode, struct FCompensationGetCompensationsResponse* Response);
+	static bool Receive_CompensationSaveCompensations(int32 Handle, bool* OutError, int32* ResCode, struct FCompensationSaveCompensationsResponse* Response);
 	static bool Receive_DebugChangeFairPlayPoint(int32 Handle, bool* OutError, int32* ResCode, struct FDebugChangeFairPlayPointResponse* Response);
 	static bool Receive_DebugChangeFestaLastOrder(int32 Handle, bool* OutError, int32* ResCode, struct FDebugChangeFestaLastOrderResponse* Response);
 	static bool Receive_DebugChangeLegendCompeLastOrder(int32 Handle, bool* OutError, int32* ResCode, struct FDebugChangeLegendCompeLastOrderResponse* Response);
@@ -2309,6 +2332,10 @@ public:
 	static void Send_CompensationGetCompensations_Callbacked(const struct FCompensationGetCompensationsRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback);
 	static void Send_CompensationGetCompensations_Callbacked_NoResend(const struct FCompensationGetCompensationsRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback);
 	static int32 Send_CompensationGetCompensations_NoResend(const struct FCompensationGetCompensationsRequest& Request);
+	static int32 Send_CompensationSaveCompensations(const struct FCompensationSaveCompensationsRequest& Request);
+	static void Send_CompensationSaveCompensations_Callbacked(const struct FCompensationSaveCompensationsRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback);
+	static void Send_CompensationSaveCompensations_Callbacked_NoResend(const struct FCompensationSaveCompensationsRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback);
+	static int32 Send_CompensationSaveCompensations_NoResend(const struct FCompensationSaveCompensationsRequest& Request);
 	static int32 Send_DebugChangeFairPlayPoint(const struct FDebugChangeFairPlayPointRequest& Request);
 	static void Send_DebugChangeFairPlayPoint_Callbacked(const struct FDebugChangeFairPlayPointRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback);
 	static void Send_DebugChangeFairPlayPoint_Callbacked_NoResend(const struct FDebugChangeFairPlayPointRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback);
@@ -2621,15 +2648,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HttpHelper">();
+		STATIC_CLASS_IMPL("HttpHelper")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HttpHelper")
 	}
 	static class UHttpHelper* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHttpHelper>();
 	}
 };
-static_assert(alignof(UHttpHelper) == 0x000008, "Wrong alignment on UHttpHelper");
-static_assert(sizeof(UHttpHelper) == 0x000028, "Wrong size on UHttpHelper");
+DUMPER7_ASSERTS_UHttpHelper;
 
 // Class UnionSystem.HttpHelperContext
 // 0x0170 (0x01A0 - 0x0030)
@@ -2641,15 +2671,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HttpHelperContext">();
+		STATIC_CLASS_IMPL("HttpHelperContext")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HttpHelperContext")
 	}
 	static class UHttpHelperContext* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHttpHelperContext>();
 	}
 };
-static_assert(alignof(UHttpHelperContext) == 0x000008, "Wrong alignment on UHttpHelperContext");
-static_assert(sizeof(UHttpHelperContext) == 0x0001A0, "Wrong size on UHttpHelperContext");
+DUMPER7_ASSERTS_UHttpHelperContext;
 
 // Class UnionSystem.InformManager
 // 0x0090 (0x00C0 - 0x0030)
@@ -2664,15 +2697,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InformManager">();
+		STATIC_CLASS_IMPL("InformManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InformManager")
 	}
 	static class UInformManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInformManager>();
 	}
 };
-static_assert(alignof(UInformManager) == 0x000008, "Wrong alignment on UInformManager");
-static_assert(sizeof(UInformManager) == 0x0000C0, "Wrong size on UInformManager");
+DUMPER7_ASSERTS_UInformManager;
 
 // Class UnionSystem.InputDataAsset
 // 0x0050 (0x0080 - 0x0030)
@@ -2684,16 +2720,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputDataAsset">();
+		STATIC_CLASS_IMPL("InputDataAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputDataAsset")
 	}
 	static class UInputDataAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputDataAsset>();
 	}
 };
-static_assert(alignof(UInputDataAsset) == 0x000008, "Wrong alignment on UInputDataAsset");
-static_assert(sizeof(UInputDataAsset) == 0x000080, "Wrong size on UInputDataAsset");
-static_assert(offsetof(UInputDataAsset, InputConfigs) == 0x000030, "Member 'UInputDataAsset::InputConfigs' has a wrong offset!");
+DUMPER7_ASSERTS_UInputDataAsset;
 
 // Class UnionSystem.InputProcessInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -2705,7 +2743,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputProcessInterface">();
+		STATIC_CLASS_IMPL("InputProcessInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputProcessInterface")
 	}
 	static class IInputProcessInterface* GetDefaultObj()
 	{
@@ -2721,29 +2763,39 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IInputProcessInterface) == 0x000001, "Wrong alignment on IInputProcessInterface");
-static_assert(sizeof(IInputProcessInterface) == 0x000001, "Wrong size on IInputProcessInterface");
+DUMPER7_ASSERTS_IInputProcessInterface;
 
-// Class UnionSystem.ControllerButtonData
-// 0x0050 (0x0080 - 0x0030)
-class UControllerButtonData final : public UDataAsset
+// Class UnionSystem.JukeboxDataAsset
+// 0x00B0 (0x00E0 - 0x0030)
+class UJukeboxDataAsset final : public UDataAsset
 {
 public:
-	TMap<struct FKey, EControllerButtonTextureIndex> KeyConfig;                                      // 0x0030(0x0050)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UDataTable*                             JukeboxAlbumCompositeDataTable;                    // 0x0030(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UDataTable*                             JukeboxTrackCompositeDataTable;                    // 0x0038(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<int32, struct FAlbumData>                AlbumDataMap;                                      // 0x0040(0x0050)(Edit, BlueprintVisible, EditConst, NativeAccessSpecifierPublic)
+	TMap<int32, struct FTrackData>                TrackDataMap;                                      // 0x0090(0x0050)(Edit, BlueprintVisible, EditConst, NativeAccessSpecifierPublic)
+
+public:
+	void ClearData();
+	struct FAlbumData GetAlbumData(int32 AlbumID);
+	struct FTrackData GetTrackData(int32 TrackID);
+	void Update();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ControllerButtonData">();
+		STATIC_CLASS_IMPL("JukeboxDataAsset")
 	}
-	static class UControllerButtonData* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UControllerButtonData>();
+		STATIC_NAME_IMPL(L"JukeboxDataAsset")
+	}
+	static class UJukeboxDataAsset* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UJukeboxDataAsset>();
 	}
 };
-static_assert(alignof(UControllerButtonData) == 0x000008, "Wrong alignment on UControllerButtonData");
-static_assert(sizeof(UControllerButtonData) == 0x000080, "Wrong size on UControllerButtonData");
-static_assert(offsetof(UControllerButtonData, KeyConfig) == 0x000030, "Member 'UControllerButtonData::KeyConfig' has a wrong offset!");
+DUMPER7_ASSERTS_UJukeboxDataAsset;
 
 // Class UnionSystem.KeyConfigItem
 // 0x00E8 (0x0110 - 0x0028)
@@ -2773,15 +2825,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"KeyConfigItem">();
+		STATIC_CLASS_IMPL("KeyConfigItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"KeyConfigItem")
 	}
 	static class UKeyConfigItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UKeyConfigItem>();
 	}
 };
-static_assert(alignof(UKeyConfigItem) == 0x000008, "Wrong alignment on UKeyConfigItem");
-static_assert(sizeof(UKeyConfigItem) == 0x000110, "Wrong size on UKeyConfigItem");
+DUMPER7_ASSERTS_UKeyConfigItem;
 
 // Class UnionSystem.KeyConfigHelpers
 // 0x0000 (0x0028 - 0x0028)
@@ -2792,26 +2847,29 @@ public:
 	static void ClearAssignedKey(int32 InPlayerControllerIndex, const class FName& MappingName);
 	static void ClearCustomKeyConfigs(int32 InPlayerControllerIndex);
 	static bool CompareCustomKeyConfigs(const TMap<class FName, struct FKey>& CustomKeyConfigs1, const TMap<class FName, struct FKey>& CustomKeyConfigs2);
-	static bool FindInputConfig(class UInputDataAsset* InputDataAsset, EKeyConfigOperationType OperationType, struct FInputConfig* OutInputConfig);
+	static bool FindInputConfig(class UInputDataAsset* InputDataAsset, EKeyConfigOperationType OperationType, ESecondaryGadgetButtonType SecondaryGadgetButtonType, struct FInputConfig* OutInputConfig);
 	static struct FKey GetAssignedKey(int32 InPlayerControllerIndex, const class FName& MappingName, bool* IsFound);
 	static bool GetCustomKeyConfigs(int32 InPlayerControllerIndex, TMap<class FName, struct FKey>* OutCustomKeyConfigs);
-	static const class FName GetInputConfigNameFromOperationType(EKeyConfigOperationType OperationType);
 	static void GetKeyConfigItems(int32 InPlayerControllerIndex, const struct FInputConfig& InputConfig, EKeyConfigDeviceType Type, TMap<class FName, class UKeyConfigItem*>* OutKeyConfigItems);
+	static struct FKey GetRaceConfigKey(int32 PlayerIndex, const class FName& InActionName, bool IsPrimary, bool IsGamepad);
 	static void SetAssignedKey(int32 InPlayerControllerIndex, const class FName& MappingName, const struct FKey& NewKey);
 	static void SetCustomKeyConfigs(int32 InPlayerControllerIndex, const TMap<class FName, struct FKey>& InCustomKeyConfigs);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"KeyConfigHelpers">();
+		STATIC_CLASS_IMPL("KeyConfigHelpers")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"KeyConfigHelpers")
 	}
 	static class UKeyConfigHelpers* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UKeyConfigHelpers>();
 	}
 };
-static_assert(alignof(UKeyConfigHelpers) == 0x000008, "Wrong alignment on UKeyConfigHelpers");
-static_assert(sizeof(UKeyConfigHelpers) == 0x000028, "Wrong size on UKeyConfigHelpers");
+DUMPER7_ASSERTS_UKeyConfigHelpers;
 
 // Class UnionSystem.KeyConfigPressAnyKey
 // 0x0050 (0x0330 - 0x02E0)
@@ -2834,17 +2892,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"KeyConfigPressAnyKey">();
+		STATIC_CLASS_IMPL("KeyConfigPressAnyKey")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"KeyConfigPressAnyKey")
 	}
 	static class UKeyConfigPressAnyKey* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UKeyConfigPressAnyKey>();
 	}
 };
-static_assert(alignof(UKeyConfigPressAnyKey) == 0x000008, "Wrong alignment on UKeyConfigPressAnyKey");
-static_assert(sizeof(UKeyConfigPressAnyKey) == 0x000330, "Wrong size on UKeyConfigPressAnyKey");
-static_assert(offsetof(UKeyConfigPressAnyKey, OnNewKeyAssigned) == 0x0002E0, "Member 'UKeyConfigPressAnyKey::OnNewKeyAssigned' has a wrong offset!");
-static_assert(offsetof(UKeyConfigPressAnyKey, OnKeyAssignCancel) == 0x0002F0, "Member 'UKeyConfigPressAnyKey::OnKeyAssignCancel' has a wrong offset!");
+DUMPER7_ASSERTS_UKeyConfigPressAnyKey;
 
 // Class UnionSystem.LobbyContextBase
 // 0x0258 (0x0280 - 0x0028)
@@ -2861,9 +2920,9 @@ public:
 	TDelegate<void(class ULobbyContextBase* LobbyContext, class ULobbyMemberContextBase* MemberContext)> LobbyContextOnMemberPromoteDelegate; // 0x00B4(0x0010)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_C4[0x24];                                      // 0x00C4(0x0024)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class ULobbyMemberContextBase>    LobbyMemberContextClass;                           // 0x00E8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class ULobbyTransactionParam*                 TransactionParam;                                  // 0x00F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class ULobbyTransactionParam*                 TransactionParam;                                  // 0x00F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
 	uint8                                         Pad_F8[0x58];                                      // 0x00F8(0x0058)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<int32, class ULobbyMemberContextBase*>   Members;                                           // 0x0150(0x0050)(Transient, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	TMap<int32, class ULobbyMemberContextBase*>   Members;                                           // 0x0150(0x0050)(Transient, Protected, UObjectWrapper, NativeAccessSpecifierProtected, TObjectPtr)
 	uint8                                         Pad_1A0[0xE0];                                     // 0x01A0(0x00E0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -2948,25 +3007,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LobbyContextBase">();
+		STATIC_CLASS_IMPL("LobbyContextBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LobbyContextBase")
 	}
 	static class ULobbyContextBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULobbyContextBase>();
 	}
 };
-static_assert(alignof(ULobbyContextBase) == 0x000008, "Wrong alignment on ULobbyContextBase");
-static_assert(sizeof(ULobbyContextBase) == 0x000280, "Wrong size on ULobbyContextBase");
-static_assert(offsetof(ULobbyContextBase, MaxLobbyMember) == 0x000060, "Member 'ULobbyContextBase::MaxLobbyMember' has a wrong offset!");
-static_assert(offsetof(ULobbyContextBase, LobbyContextOnLobbyUpdateDelegate) == 0x000064, "Member 'ULobbyContextBase::LobbyContextOnLobbyUpdateDelegate' has a wrong offset!");
-static_assert(offsetof(ULobbyContextBase, LobbyContextOnLobbyDeleteDelegate) == 0x000074, "Member 'ULobbyContextBase::LobbyContextOnLobbyDeleteDelegate' has a wrong offset!");
-static_assert(offsetof(ULobbyContextBase, LobbyContextOnMemberConnectDelegate) == 0x000084, "Member 'ULobbyContextBase::LobbyContextOnMemberConnectDelegate' has a wrong offset!");
-static_assert(offsetof(ULobbyContextBase, LobbyContextOnMemberUpdateDelegate) == 0x000094, "Member 'ULobbyContextBase::LobbyContextOnMemberUpdateDelegate' has a wrong offset!");
-static_assert(offsetof(ULobbyContextBase, LobbyContextOnMemberDisconnectDelegate) == 0x0000A4, "Member 'ULobbyContextBase::LobbyContextOnMemberDisconnectDelegate' has a wrong offset!");
-static_assert(offsetof(ULobbyContextBase, LobbyContextOnMemberPromoteDelegate) == 0x0000B4, "Member 'ULobbyContextBase::LobbyContextOnMemberPromoteDelegate' has a wrong offset!");
-static_assert(offsetof(ULobbyContextBase, LobbyMemberContextClass) == 0x0000E8, "Member 'ULobbyContextBase::LobbyMemberContextClass' has a wrong offset!");
-static_assert(offsetof(ULobbyContextBase, TransactionParam) == 0x0000F0, "Member 'ULobbyContextBase::TransactionParam' has a wrong offset!");
-static_assert(offsetof(ULobbyContextBase, Members) == 0x000150, "Member 'ULobbyContextBase::Members' has a wrong offset!");
+DUMPER7_ASSERTS_ULobbyContextBase;
 
 // Class UnionSystem.LobbySubsystem
 // 0x19E0 (0x1A10 - 0x0030)
@@ -3023,23 +3075,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LobbySubsystem">();
+		STATIC_CLASS_IMPL("LobbySubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LobbySubsystem")
 	}
 	static class ULobbySubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULobbySubsystem>();
 	}
 };
-static_assert(alignof(ULobbySubsystem) == 0x000008, "Wrong alignment on ULobbySubsystem");
-static_assert(sizeof(ULobbySubsystem) == 0x001A10, "Wrong size on ULobbySubsystem");
-static_assert(offsetof(ULobbySubsystem, LobbyUpdateMulticastDelegate) == 0x000038, "Member 'ULobbySubsystem::LobbyUpdateMulticastDelegate' has a wrong offset!");
-static_assert(offsetof(ULobbySubsystem, LobbyDeleteMulticastDelegate) == 0x000048, "Member 'ULobbySubsystem::LobbyDeleteMulticastDelegate' has a wrong offset!");
-static_assert(offsetof(ULobbySubsystem, MemberConnectMulticastDelegate) == 0x000058, "Member 'ULobbySubsystem::MemberConnectMulticastDelegate' has a wrong offset!");
-static_assert(offsetof(ULobbySubsystem, MemberUpdateMulticastDelegate) == 0x000068, "Member 'ULobbySubsystem::MemberUpdateMulticastDelegate' has a wrong offset!");
-static_assert(offsetof(ULobbySubsystem, MemberDisconnectMulticastDelegate) == 0x000078, "Member 'ULobbySubsystem::MemberDisconnectMulticastDelegate' has a wrong offset!");
-static_assert(offsetof(ULobbySubsystem, MemberPromotedMulticastDelegate) == 0x000088, "Member 'ULobbySubsystem::MemberPromotedMulticastDelegate' has a wrong offset!");
-static_assert(offsetof(ULobbySubsystem, InvitationReceivedMulticastDelegate) == 0x000098, "Member 'ULobbySubsystem::InvitationReceivedMulticastDelegate' has a wrong offset!");
-static_assert(offsetof(ULobbySubsystem, PlatformInviteReceivedMulticastDelegate) == 0x0000A8, "Member 'ULobbySubsystem::PlatformInviteReceivedMulticastDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_ULobbySubsystem;
 
 // Class UnionSystem.LobbyTransactionParam
 // 0x0070 (0x0098 - 0x0028)
@@ -3064,15 +3111,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LobbyTransactionParam">();
+		STATIC_CLASS_IMPL("LobbyTransactionParam")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LobbyTransactionParam")
 	}
 	static class ULobbyTransactionParam* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULobbyTransactionParam>();
 	}
 };
-static_assert(alignof(ULobbyTransactionParam) == 0x000008, "Wrong alignment on ULobbyTransactionParam");
-static_assert(sizeof(ULobbyTransactionParam) == 0x000098, "Wrong size on ULobbyTransactionParam");
+DUMPER7_ASSERTS_ULobbyTransactionParam;
 
 // Class UnionSystem.LobbyMemberTransactionParam
 // 0x0060 (0x0088 - 0x0028)
@@ -3091,15 +3141,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LobbyMemberTransactionParam">();
+		STATIC_CLASS_IMPL("LobbyMemberTransactionParam")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LobbyMemberTransactionParam")
 	}
 	static class ULobbyMemberTransactionParam* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULobbyMemberTransactionParam>();
 	}
 };
-static_assert(alignof(ULobbyMemberTransactionParam) == 0x000008, "Wrong alignment on ULobbyMemberTransactionParam");
-static_assert(sizeof(ULobbyMemberTransactionParam) == 0x000088, "Wrong size on ULobbyMemberTransactionParam");
+DUMPER7_ASSERTS_ULobbyMemberTransactionParam;
 
 // Class UnionSystem.LobbySubsystemLobbySearchQueryUtility
 // 0x0000 (0x0028 - 0x0028)
@@ -3115,15 +3168,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LobbySubsystemLobbySearchQueryUtility">();
+		STATIC_CLASS_IMPL("LobbySubsystemLobbySearchQueryUtility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LobbySubsystemLobbySearchQueryUtility")
 	}
 	static class ULobbySubsystemLobbySearchQueryUtility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULobbySubsystemLobbySearchQueryUtility>();
 	}
 };
-static_assert(alignof(ULobbySubsystemLobbySearchQueryUtility) == 0x000008, "Wrong alignment on ULobbySubsystemLobbySearchQueryUtility");
-static_assert(sizeof(ULobbySubsystemLobbySearchQueryUtility) == 0x000028, "Wrong size on ULobbySubsystemLobbySearchQueryUtility");
+DUMPER7_ASSERTS_ULobbySubsystemLobbySearchQueryUtility;
 
 // Class UnionSystem.LobbyJoinInfo
 // 0x0038 (0x0060 - 0x0028)
@@ -3144,15 +3200,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LobbyJoinInfo">();
+		STATIC_CLASS_IMPL("LobbyJoinInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LobbyJoinInfo")
 	}
 	static class ULobbyJoinInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULobbyJoinInfo>();
 	}
 };
-static_assert(alignof(ULobbyJoinInfo) == 0x000008, "Wrong alignment on ULobbyJoinInfo");
-static_assert(sizeof(ULobbyJoinInfo) == 0x000060, "Wrong size on ULobbyJoinInfo");
+DUMPER7_ASSERTS_ULobbyJoinInfo;
 
 // Class UnionSystem.LocalizationFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -3178,15 +3237,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LocalizationFunctionLibrary">();
+		STATIC_CLASS_IMPL("LocalizationFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LocalizationFunctionLibrary")
 	}
 	static class ULocalizationFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULocalizationFunctionLibrary>();
 	}
 };
-static_assert(alignof(ULocalizationFunctionLibrary) == 0x000008, "Wrong alignment on ULocalizationFunctionLibrary");
-static_assert(sizeof(ULocalizationFunctionLibrary) == 0x000028, "Wrong size on ULocalizationFunctionLibrary");
+DUMPER7_ASSERTS_ULocalizationFunctionLibrary;
 
 // Class UnionSystem.LocalStorageSubsystem
 // 0x0030 (0x0060 - 0x0030)
@@ -3207,17 +3269,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LocalStorageSubsystem">();
+		STATIC_CLASS_IMPL("LocalStorageSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LocalStorageSubsystem")
 	}
 	static class ULocalStorageSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULocalStorageSubsystem>();
 	}
 };
-static_assert(alignof(ULocalStorageSubsystem) == 0x000008, "Wrong alignment on ULocalStorageSubsystem");
-static_assert(sizeof(ULocalStorageSubsystem) == 0x000060, "Wrong size on ULocalStorageSubsystem");
-static_assert(offsetof(ULocalStorageSubsystem, OnSaveComplete) == 0x000030, "Member 'ULocalStorageSubsystem::OnSaveComplete' has a wrong offset!");
-static_assert(offsetof(ULocalStorageSubsystem, OnLoadComplete) == 0x000040, "Member 'ULocalStorageSubsystem::OnLoadComplete' has a wrong offset!");
+DUMPER7_ASSERTS_ULocalStorageSubsystem;
 
 // Class UnionSystem.LogTrackSubsystem
 // 0x0020 (0x0050 - 0x0030)
@@ -3229,15 +3292,45 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LogTrackSubsystem">();
+		STATIC_CLASS_IMPL("LogTrackSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LogTrackSubsystem")
 	}
 	static class ULogTrackSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULogTrackSubsystem>();
 	}
 };
-static_assert(alignof(ULogTrackSubsystem) == 0x000008, "Wrong alignment on ULogTrackSubsystem");
-static_assert(sizeof(ULogTrackSubsystem) == 0x000050, "Wrong size on ULogTrackSubsystem");
+DUMPER7_ASSERTS_ULogTrackSubsystem;
+
+// Class UnionSystem.LongInputTimeLine
+// 0x00D0 (0x00F8 - 0x0028)
+class ULongInputTimeLine final : public UObject
+{
+public:
+	class UCurveFloat*                            HoldCurve;                                         // 0x0028(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	uint8                                         Pad_30[0xC8];                                      // 0x0030(0x00C8)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void OnHoldUpdateLocalFunc(float InVlalue);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LongInputTimeLine")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LongInputTimeLine")
+	}
+	static class ULongInputTimeLine* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULongInputTimeLine>();
+	}
+};
+DUMPER7_ASSERTS_ULongInputTimeLine;
 
 // Class UnionSystem.MachineIdUtilityLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -3258,170 +3351,123 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MachineIdUtilityLibrary">();
+		STATIC_CLASS_IMPL("MachineIdUtilityLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MachineIdUtilityLibrary")
 	}
 	static class UMachineIdUtilityLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMachineIdUtilityLibrary>();
 	}
 };
-static_assert(alignof(UMachineIdUtilityLibrary) == 0x000008, "Wrong alignment on UMachineIdUtilityLibrary");
-static_assert(sizeof(UMachineIdUtilityLibrary) == 0x000028, "Wrong size on UMachineIdUtilityLibrary");
+DUMPER7_ASSERTS_UMachineIdUtilityLibrary;
 
 // Class UnionSystem.MasterDataHelper
-// 0x01C0 (0x01E8 - 0x0028)
+// 0x01D0 (0x01F8 - 0x0028)
 class UMasterDataHelper : public UObject
 {
 public:
-	class UDataTable*                             DriverData;                                        // 0x0028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             DriverCustomParamData;                             // 0x0030(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             DriverEffectData;                                  // 0x0038(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             MachineCockpitDataTable;                           // 0x0040(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             MachinePartsDataTable;                             // 0x0048(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             MachineTypeDataTable;                              // 0x0050(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             DefaultMachineCustomizeDataTable;                  // 0x0058(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             MonsterTruckCockpitDataTable;                      // 0x0060(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             MachineColorDataTable;                             // 0x0068(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             MachineSurfaceDataTable;                           // 0x0070(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             MachineGlowDataTable;                              // 0x0078(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             MachineColorPresetDataTable;                       // 0x0080(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             GroupColorIdToMachineColorPresetIdDataTable;       // 0x0088(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             MachineOffsetDataTable;                            // 0x0090(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             MachineOtherNameDataTable;                         // 0x0098(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             MachineBakeAsset;                                  // 0x00A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             MachineHornDataTable;                              // 0x00A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             MachineAuraDataTable;                              // 0x00B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             StageDataTable;                                    // 0x00B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             GadgetDataTable;                                   // 0x00C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             GadgetPlateDataTable;                              // 0x00C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             DefaultGadgetPresetDataTable;                      // 0x00D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             GadgetLayoutDataTable;                             // 0x00D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             GadgetCustomCategoryColorDataTable;                // 0x00E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             StickerDataTable;                                  // 0x00E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             RaceItemDataTable;                                 // 0x00F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             FooterTextDataTable;                               // 0x00F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             RivalTeamDataTable;                                // 0x0100(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             PartyRaceMissionDataTable;                         // 0x0108(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             PartyRacePresetSettingDataTable;                   // 0x0110(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             RewardRivalLevelDataTable;                         // 0x0118(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             RateRankUpExpDataTable;                            // 0x0120(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             UIResultParamTable;                                // 0x0128(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             RewardTimeTrialDataTable;                          // 0x0130(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             OnlineErrorTextLabelTable;                         // 0x0138(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             ServerErrorTextLabelTable;                         // 0x0140(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             CompensationTitleTextLabelTable;                   // 0x0148(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             CompensationBodyTextLabelTable;                    // 0x0150(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             SaveDataTextTable;                                 // 0x0158(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UGrandPrixCommonData*                   GrandPrixCommonData;                               // 0x0160(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             GrandPrixStages;                                   // 0x0168(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataAsset*                             UIColorInfoDataAsset;                              // 0x0170(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataAsset*                             FestaUIDataAsset;                                  // 0x0178(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataAsset*                             HonorTitleDataAsset;                               // 0x0180(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataAsset*                             JukeboxDataAsset;                                  // 0x0188(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataAsset*                             ContentDataAsset;                                  // 0x0190(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             ChallengeDataTable;                                // 0x0198(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             ChallengeProgressRewardTable;                      // 0x01A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             RewardAchievementDataTable;                        // 0x01A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             RewardGrandPrixRivalWinHonorDataTable;             // 0x01B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataAsset*                             IgnoreWidgetDataAsset;                             // 0x01B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             PlatformPresence;                                  // 0x01C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataAsset*                             PlatformStoreMessageDataAsset;                     // 0x01C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             PlayerInteractionData;                             // 0x01D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             RivalInteractionData;                              // 0x01D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             CueSheetIdTable;                                   // 0x01E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UDataTable*                             DriverData;                                        // 0x0028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             DriverCustomParamData;                             // 0x0030(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             DriverEffectData;                                  // 0x0038(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             MachineCockpitDataTable;                           // 0x0040(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             MachinePartsDataTable;                             // 0x0048(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             MachineTypeDataTable;                              // 0x0050(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             DefaultMachineCustomizeDataTable;                  // 0x0058(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             MonsterTruckCockpitDataTable;                      // 0x0060(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             MachineColorDataTable;                             // 0x0068(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             MachineSurfaceDataTable;                           // 0x0070(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             MachineGlowDataTable;                              // 0x0078(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             MachineColorPresetDataTable;                       // 0x0080(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             GroupColorIdToMachineColorPresetIdDataTable;       // 0x0088(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             MachineOffsetDataTable;                            // 0x0090(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             MachineOtherNameDataTable;                         // 0x0098(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             MachineBakeAsset;                                  // 0x00A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             MachineHornDataTable;                              // 0x00A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             MachineAuraDataTable;                              // 0x00B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             StageDataTable;                                    // 0x00B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             GadgetDataTable;                                   // 0x00C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             GadgetPlateDataTable;                              // 0x00C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             DefaultGadgetPresetDataTable;                      // 0x00D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             GadgetLayoutDataTable;                             // 0x00D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             GadgetCustomCategoryColorDataTable;                // 0x00E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             StickerDataTable;                                  // 0x00E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             RaceItemDataTable;                                 // 0x00F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             FooterTextDataTable;                               // 0x00F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             RivalTeamDataTable;                                // 0x0100(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             PartyRaceMissionDataTable;                         // 0x0108(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             PartyRacePresetSettingDataTable;                   // 0x0110(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             RewardRivalLevelDataTable;                         // 0x0118(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             RateRankUpExpDataTable;                            // 0x0120(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             UIResultParamTable;                                // 0x0128(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             RewardTimeTrialDataTable;                          // 0x0130(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             OnlineErrorTextLabelTable;                         // 0x0138(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             ServerErrorTextLabelTable;                         // 0x0140(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             CompensationTitleTextLabelTable;                   // 0x0148(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             CompensationBodyTextLabelTable;                    // 0x0150(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             SaveDataTextTable;                                 // 0x0158(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UGrandPrixCommonData*                   GrandPrixCommonData;                               // 0x0160(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             GrandPrixStages;                                   // 0x0168(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataAsset*                             UIColorInfoDataAsset;                              // 0x0170(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataAsset*                             FestaUIDataAsset;                                  // 0x0178(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataAsset*                             HonorTitleDataAsset;                               // 0x0180(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataAsset*                             JukeboxDataAsset;                                  // 0x0188(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataAsset*                             ContentDataAsset;                                  // 0x0190(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             ChallengeDataTable;                                // 0x0198(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             ChallengeProgressRewardTable;                      // 0x01A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             RewardAchievementDataTable;                        // 0x01A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             RewardGrandPrixRivalWinHonorDataTable;             // 0x01B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataAsset*                             IgnoreWidgetDataAsset;                             // 0x01B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             PlatformPresence;                                  // 0x01C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataAsset*                             PlatformStoreMessageDataAsset;                     // 0x01C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             PlayerInteractionData;                             // 0x01D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             RivalInteractionData;                              // 0x01D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             CueSheetIdTable;                                   // 0x01E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             TimeTrialSonicSpeedClearTimeTable;                 // 0x01E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             TimeTrialSuperSonicSpeedClearTimeTable;            // 0x01F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MasterDataHelper">();
+		STATIC_CLASS_IMPL("MasterDataHelper")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MasterDataHelper")
 	}
 	static class UMasterDataHelper* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMasterDataHelper>();
 	}
 };
-static_assert(alignof(UMasterDataHelper) == 0x000008, "Wrong alignment on UMasterDataHelper");
-static_assert(sizeof(UMasterDataHelper) == 0x0001E8, "Wrong size on UMasterDataHelper");
-static_assert(offsetof(UMasterDataHelper, DriverData) == 0x000028, "Member 'UMasterDataHelper::DriverData' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, DriverCustomParamData) == 0x000030, "Member 'UMasterDataHelper::DriverCustomParamData' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, DriverEffectData) == 0x000038, "Member 'UMasterDataHelper::DriverEffectData' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, MachineCockpitDataTable) == 0x000040, "Member 'UMasterDataHelper::MachineCockpitDataTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, MachinePartsDataTable) == 0x000048, "Member 'UMasterDataHelper::MachinePartsDataTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, MachineTypeDataTable) == 0x000050, "Member 'UMasterDataHelper::MachineTypeDataTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, DefaultMachineCustomizeDataTable) == 0x000058, "Member 'UMasterDataHelper::DefaultMachineCustomizeDataTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, MonsterTruckCockpitDataTable) == 0x000060, "Member 'UMasterDataHelper::MonsterTruckCockpitDataTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, MachineColorDataTable) == 0x000068, "Member 'UMasterDataHelper::MachineColorDataTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, MachineSurfaceDataTable) == 0x000070, "Member 'UMasterDataHelper::MachineSurfaceDataTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, MachineGlowDataTable) == 0x000078, "Member 'UMasterDataHelper::MachineGlowDataTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, MachineColorPresetDataTable) == 0x000080, "Member 'UMasterDataHelper::MachineColorPresetDataTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, GroupColorIdToMachineColorPresetIdDataTable) == 0x000088, "Member 'UMasterDataHelper::GroupColorIdToMachineColorPresetIdDataTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, MachineOffsetDataTable) == 0x000090, "Member 'UMasterDataHelper::MachineOffsetDataTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, MachineOtherNameDataTable) == 0x000098, "Member 'UMasterDataHelper::MachineOtherNameDataTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, MachineBakeAsset) == 0x0000A0, "Member 'UMasterDataHelper::MachineBakeAsset' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, MachineHornDataTable) == 0x0000A8, "Member 'UMasterDataHelper::MachineHornDataTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, MachineAuraDataTable) == 0x0000B0, "Member 'UMasterDataHelper::MachineAuraDataTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, StageDataTable) == 0x0000B8, "Member 'UMasterDataHelper::StageDataTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, GadgetDataTable) == 0x0000C0, "Member 'UMasterDataHelper::GadgetDataTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, GadgetPlateDataTable) == 0x0000C8, "Member 'UMasterDataHelper::GadgetPlateDataTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, DefaultGadgetPresetDataTable) == 0x0000D0, "Member 'UMasterDataHelper::DefaultGadgetPresetDataTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, GadgetLayoutDataTable) == 0x0000D8, "Member 'UMasterDataHelper::GadgetLayoutDataTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, GadgetCustomCategoryColorDataTable) == 0x0000E0, "Member 'UMasterDataHelper::GadgetCustomCategoryColorDataTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, StickerDataTable) == 0x0000E8, "Member 'UMasterDataHelper::StickerDataTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, RaceItemDataTable) == 0x0000F0, "Member 'UMasterDataHelper::RaceItemDataTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, FooterTextDataTable) == 0x0000F8, "Member 'UMasterDataHelper::FooterTextDataTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, RivalTeamDataTable) == 0x000100, "Member 'UMasterDataHelper::RivalTeamDataTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, PartyRaceMissionDataTable) == 0x000108, "Member 'UMasterDataHelper::PartyRaceMissionDataTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, PartyRacePresetSettingDataTable) == 0x000110, "Member 'UMasterDataHelper::PartyRacePresetSettingDataTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, RewardRivalLevelDataTable) == 0x000118, "Member 'UMasterDataHelper::RewardRivalLevelDataTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, RateRankUpExpDataTable) == 0x000120, "Member 'UMasterDataHelper::RateRankUpExpDataTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, UIResultParamTable) == 0x000128, "Member 'UMasterDataHelper::UIResultParamTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, RewardTimeTrialDataTable) == 0x000130, "Member 'UMasterDataHelper::RewardTimeTrialDataTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, OnlineErrorTextLabelTable) == 0x000138, "Member 'UMasterDataHelper::OnlineErrorTextLabelTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, ServerErrorTextLabelTable) == 0x000140, "Member 'UMasterDataHelper::ServerErrorTextLabelTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, CompensationTitleTextLabelTable) == 0x000148, "Member 'UMasterDataHelper::CompensationTitleTextLabelTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, CompensationBodyTextLabelTable) == 0x000150, "Member 'UMasterDataHelper::CompensationBodyTextLabelTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, SaveDataTextTable) == 0x000158, "Member 'UMasterDataHelper::SaveDataTextTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, GrandPrixCommonData) == 0x000160, "Member 'UMasterDataHelper::GrandPrixCommonData' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, GrandPrixStages) == 0x000168, "Member 'UMasterDataHelper::GrandPrixStages' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, UIColorInfoDataAsset) == 0x000170, "Member 'UMasterDataHelper::UIColorInfoDataAsset' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, FestaUIDataAsset) == 0x000178, "Member 'UMasterDataHelper::FestaUIDataAsset' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, HonorTitleDataAsset) == 0x000180, "Member 'UMasterDataHelper::HonorTitleDataAsset' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, JukeboxDataAsset) == 0x000188, "Member 'UMasterDataHelper::JukeboxDataAsset' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, ContentDataAsset) == 0x000190, "Member 'UMasterDataHelper::ContentDataAsset' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, ChallengeDataTable) == 0x000198, "Member 'UMasterDataHelper::ChallengeDataTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, ChallengeProgressRewardTable) == 0x0001A0, "Member 'UMasterDataHelper::ChallengeProgressRewardTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, RewardAchievementDataTable) == 0x0001A8, "Member 'UMasterDataHelper::RewardAchievementDataTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, RewardGrandPrixRivalWinHonorDataTable) == 0x0001B0, "Member 'UMasterDataHelper::RewardGrandPrixRivalWinHonorDataTable' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, IgnoreWidgetDataAsset) == 0x0001B8, "Member 'UMasterDataHelper::IgnoreWidgetDataAsset' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, PlatformPresence) == 0x0001C0, "Member 'UMasterDataHelper::PlatformPresence' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, PlatformStoreMessageDataAsset) == 0x0001C8, "Member 'UMasterDataHelper::PlatformStoreMessageDataAsset' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, PlayerInteractionData) == 0x0001D0, "Member 'UMasterDataHelper::PlayerInteractionData' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, RivalInteractionData) == 0x0001D8, "Member 'UMasterDataHelper::RivalInteractionData' has a wrong offset!");
-static_assert(offsetof(UMasterDataHelper, CueSheetIdTable) == 0x0001E0, "Member 'UMasterDataHelper::CueSheetIdTable' has a wrong offset!");
+DUMPER7_ASSERTS_UMasterDataHelper;
 
 // Class UnionSystem.MasterDataManageSubsystem
 // 0x0020 (0x0050 - 0x0030)
 class UMasterDataManageSubsystem final : public UGameInstanceSubsystem
 {
 public:
-	class UMasterDataHelper*                      MasterDataHelper;                                  // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class URaceMasterDataAccessor*                RaceMasterDataAccessor;                            // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UMasterDataHelper*                      MasterDataHelper;                                  // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class URaceMasterDataAccessor*                RaceMasterDataAccessor;                            // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
 	uint8                                         Pad_40[0x10];                                      // 0x0040(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MasterDataManageSubsystem">();
+		STATIC_CLASS_IMPL("MasterDataManageSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MasterDataManageSubsystem")
 	}
 	static class UMasterDataManageSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMasterDataManageSubsystem>();
 	}
 };
-static_assert(alignof(UMasterDataManageSubsystem) == 0x000008, "Wrong alignment on UMasterDataManageSubsystem");
-static_assert(sizeof(UMasterDataManageSubsystem) == 0x000050, "Wrong size on UMasterDataManageSubsystem");
-static_assert(offsetof(UMasterDataManageSubsystem, MasterDataHelper) == 0x000030, "Member 'UMasterDataManageSubsystem::MasterDataHelper' has a wrong offset!");
-static_assert(offsetof(UMasterDataManageSubsystem, RaceMasterDataAccessor) == 0x000038, "Member 'UMasterDataManageSubsystem::RaceMasterDataAccessor' has a wrong offset!");
+DUMPER7_ASSERTS_UMasterDataManageSubsystem;
 
 // Class UnionSystem.MatchmakingRequestContext
 // 0x0028 (0x02A8 - 0x0280)
@@ -3438,15 +3484,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MatchmakingRequestContext">();
+		STATIC_CLASS_IMPL("MatchmakingRequestContext")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MatchmakingRequestContext")
 	}
 	static class UMatchmakingRequestContext* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMatchmakingRequestContext>();
 	}
 };
-static_assert(alignof(UMatchmakingRequestContext) == 0x000008, "Wrong alignment on UMatchmakingRequestContext");
-static_assert(sizeof(UMatchmakingRequestContext) == 0x0002A8, "Wrong size on UMatchmakingRequestContext");
+DUMPER7_ASSERTS_UMatchmakingRequestContext;
 
 // Class UnionSystem.MatchmakingContext_WithFlexMatch
 // 0x0018 (0x02C0 - 0x02A8)
@@ -3462,16 +3511,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MatchmakingContext_WithFlexMatch">();
+		STATIC_CLASS_IMPL("MatchmakingContext_WithFlexMatch")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MatchmakingContext_WithFlexMatch")
 	}
 	static class UMatchmakingContext_WithFlexMatch* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMatchmakingContext_WithFlexMatch>();
 	}
 };
-static_assert(alignof(UMatchmakingContext_WithFlexMatch) == 0x000008, "Wrong alignment on UMatchmakingContext_WithFlexMatch");
-static_assert(sizeof(UMatchmakingContext_WithFlexMatch) == 0x0002C0, "Wrong size on UMatchmakingContext_WithFlexMatch");
-static_assert(offsetof(UMatchmakingContext_WithFlexMatch, DefaultMatchmakingDescribeTimeSpan) == 0x0002A8, "Member 'UMatchmakingContext_WithFlexMatch::DefaultMatchmakingDescribeTimeSpan' has a wrong offset!");
+DUMPER7_ASSERTS_UMatchmakingContext_WithFlexMatch;
 
 // Class UnionSystem.MatchmakingSubsystem
 // 0x0020 (0x0050 - 0x0030)
@@ -3479,7 +3530,7 @@ class UMatchmakingSubsystem final : public UGameInstanceSubsystem
 {
 public:
 	uint8                                         Pad_30[0x8];                                       // 0x0030(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMatchmakingRequestContext*             MatchmakingRequestContext;                         // 0x0038(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UMatchmakingRequestContext*             MatchmakingRequestContext;                         // 0x0038(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
 	TDelegate<void(EGameMatchmakingCompleteStatus Status, const struct FCreateOrConnectLobbyResult& Result)> OnMatchmakingComplete; // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
@@ -3494,17 +3545,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MatchmakingSubsystem">();
+		STATIC_CLASS_IMPL("MatchmakingSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MatchmakingSubsystem")
 	}
 	static class UMatchmakingSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMatchmakingSubsystem>();
 	}
 };
-static_assert(alignof(UMatchmakingSubsystem) == 0x000008, "Wrong alignment on UMatchmakingSubsystem");
-static_assert(sizeof(UMatchmakingSubsystem) == 0x000050, "Wrong size on UMatchmakingSubsystem");
-static_assert(offsetof(UMatchmakingSubsystem, MatchmakingRequestContext) == 0x000038, "Member 'UMatchmakingSubsystem::MatchmakingRequestContext' has a wrong offset!");
-static_assert(offsetof(UMatchmakingSubsystem, OnMatchmakingComplete) == 0x000040, "Member 'UMatchmakingSubsystem::OnMatchmakingComplete' has a wrong offset!");
+DUMPER7_ASSERTS_UMatchmakingSubsystem;
 
 // Class UnionSystem.MaterialPlayer
 // 0x0050 (0x0078 - 0x0028)
@@ -3538,20 +3590,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialPlayer">();
+		STATIC_CLASS_IMPL("MaterialPlayer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialPlayer")
 	}
 	static class UMaterialPlayer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialPlayer>();
 	}
 };
-static_assert(alignof(UMaterialPlayer) == 0x000008, "Wrong alignment on UMaterialPlayer");
-static_assert(sizeof(UMaterialPlayer) == 0x000078, "Wrong size on UMaterialPlayer");
-static_assert(offsetof(UMaterialPlayer, MaterialInstances) == 0x000028, "Member 'UMaterialPlayer::MaterialInstances' has a wrong offset!");
-static_assert(offsetof(UMaterialPlayer, AnimationCurves) == 0x000038, "Member 'UMaterialPlayer::AnimationCurves' has a wrong offset!");
-static_assert(offsetof(UMaterialPlayer, Priority) == 0x000060, "Member 'UMaterialPlayer::Priority' has a wrong offset!");
-static_assert(offsetof(UMaterialPlayer, PlaySpeed) == 0x000064, "Member 'UMaterialPlayer::PlaySpeed' has a wrong offset!");
-static_assert(offsetof(UMaterialPlayer, bResetMaterialWhenDestroyed) == 0x000068, "Member 'UMaterialPlayer::bResetMaterialWhenDestroyed' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialPlayer;
 
 // Class UnionSystem.MaterialPlayerComponent
 // 0x0018 (0x00B8 - 0x00A0)
@@ -3560,7 +3610,7 @@ class UMaterialPlayerComponent final : public UActorComponent
 public:
 	bool                                          bManualUpdate;                                     // 0x00A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UMaterialPlayer*>                MaterialPlayers;                                   // 0x00A8(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPrivate)
+	TArray<class UMaterialPlayer*>                MaterialPlayers;                                   // 0x00A8(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
 
 public:
 	int32 BindCurves(class UCurveTable* CurveTable, class FName TargetTag);
@@ -3583,17 +3633,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialPlayerComponent">();
+		STATIC_CLASS_IMPL("MaterialPlayerComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialPlayerComponent")
 	}
 	static class UMaterialPlayerComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialPlayerComponent>();
 	}
 };
-static_assert(alignof(UMaterialPlayerComponent) == 0x000008, "Wrong alignment on UMaterialPlayerComponent");
-static_assert(sizeof(UMaterialPlayerComponent) == 0x0000B8, "Wrong size on UMaterialPlayerComponent");
-static_assert(offsetof(UMaterialPlayerComponent, bManualUpdate) == 0x0000A0, "Member 'UMaterialPlayerComponent::bManualUpdate' has a wrong offset!");
-static_assert(offsetof(UMaterialPlayerComponent, MaterialPlayers) == 0x0000A8, "Member 'UMaterialPlayerComponent::MaterialPlayers' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialPlayerComponent;
 
 // Class UnionSystem.MCEventDataAsset
 // 0x0010 (0x0040 - 0x0030)
@@ -3605,16 +3656,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MCEventDataAsset">();
+		STATIC_CLASS_IMPL("MCEventDataAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MCEventDataAsset")
 	}
 	static class UMCEventDataAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMCEventDataAsset>();
 	}
 };
-static_assert(alignof(UMCEventDataAsset) == 0x000008, "Wrong alignment on UMCEventDataAsset");
-static_assert(sizeof(UMCEventDataAsset) == 0x000040, "Wrong size on UMCEventDataAsset");
-static_assert(offsetof(UMCEventDataAsset, list) == 0x000030, "Member 'UMCEventDataAsset::list' has a wrong offset!");
+DUMPER7_ASSERTS_UMCEventDataAsset;
 
 // Class UnionSystem.MCEvent
 // 0x0000 (0x0028 - 0x0028)
@@ -3627,15 +3680,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MCEvent">();
+		STATIC_CLASS_IMPL("MCEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MCEvent")
 	}
 	static class UMCEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMCEvent>();
 	}
 };
-static_assert(alignof(UMCEvent) == 0x000008, "Wrong alignment on UMCEvent");
-static_assert(sizeof(UMCEvent) == 0x000028, "Wrong size on UMCEvent");
+DUMPER7_ASSERTS_UMCEvent;
 
 // Class UnionSystem.MenuInputRecieveInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -3703,7 +3759,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MenuInputRecieveInterface">();
+		STATIC_CLASS_IMPL("MenuInputRecieveInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MenuInputRecieveInterface")
 	}
 	static class IMenuInputRecieveInterface* GetDefaultObj()
 	{
@@ -3719,11 +3779,10 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IMenuInputRecieveInterface) == 0x000001, "Wrong alignment on IMenuInputRecieveInterface");
-static_assert(sizeof(IMenuInputRecieveInterface) == 0x000001, "Wrong size on IMenuInputRecieveInterface");
+DUMPER7_ASSERTS_IMenuInputRecieveInterface;
 
 // Class UnionSystem.MenuPlayerController
-// 0x0000 (0x0A38 - 0x0A38)
+// 0x0000 (0x0A30 - 0x0A30)
 class AMenuPlayerController : public AAppPlayerController
 {
 public:
@@ -3734,15 +3793,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MenuPlayerController">();
+		STATIC_CLASS_IMPL("MenuPlayerController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MenuPlayerController")
 	}
 	static class AMenuPlayerController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMenuPlayerController>();
 	}
 };
-static_assert(alignof(AMenuPlayerController) == 0x000008, "Wrong alignment on AMenuPlayerController");
-static_assert(sizeof(AMenuPlayerController) == 0x000A38, "Wrong size on AMenuPlayerController");
+DUMPER7_ASSERTS_AMenuPlayerController;
 
 // Class UnionSystem.MilestoneUtil
 // 0x0000 (0x0028 - 0x0028)
@@ -3803,15 +3865,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MilestoneUtil">();
+		STATIC_CLASS_IMPL("MilestoneUtil")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MilestoneUtil")
 	}
 	static class UMilestoneUtil* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMilestoneUtil>();
 	}
 };
-static_assert(alignof(UMilestoneUtil) == 0x000008, "Wrong alignment on UMilestoneUtil");
-static_assert(sizeof(UMilestoneUtil) == 0x000028, "Wrong size on UMilestoneUtil");
+DUMPER7_ASSERTS_UMilestoneUtil;
 
 // Class UnionSystem.MovieFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -3823,22 +3888,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieFunctionLibrary">();
+		STATIC_CLASS_IMPL("MovieFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieFunctionLibrary")
 	}
 	static class UMovieFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieFunctionLibrary>();
 	}
 };
-static_assert(alignof(UMovieFunctionLibrary) == 0x000008, "Wrong alignment on UMovieFunctionLibrary");
-static_assert(sizeof(UMovieFunctionLibrary) == 0x000028, "Wrong size on UMovieFunctionLibrary");
+DUMPER7_ASSERTS_UMovieFunctionLibrary;
 
 // Class UnionSystem.NetMasterDataManageSubsystem
-// 0x0410 (0x0440 - 0x0030)
+// 0x0420 (0x0450 - 0x0030)
 class UNetMasterDataManageSubsystem final : public UGameInstanceSubsystem
 {
 public:
-	uint8                                         Pad_30[0x410];                                     // 0x0030(0x0410)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30[0x420];                                     // 0x0030(0x0420)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	const struct FMasterDataGetMasterDataResponse_MstFestaData GetCurrentFestaData(bool* bResult);
@@ -3855,15 +3923,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NetMasterDataManageSubsystem">();
+		STATIC_CLASS_IMPL("NetMasterDataManageSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NetMasterDataManageSubsystem")
 	}
 	static class UNetMasterDataManageSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNetMasterDataManageSubsystem>();
 	}
 };
-static_assert(alignof(UNetMasterDataManageSubsystem) == 0x000008, "Wrong alignment on UNetMasterDataManageSubsystem");
-static_assert(sizeof(UNetMasterDataManageSubsystem) == 0x000440, "Wrong size on UNetMasterDataManageSubsystem");
+DUMPER7_ASSERTS_UNetMasterDataManageSubsystem;
 
 // Class UnionSystem.NetPingSubsystem
 // 0x0018 (0x0048 - 0x0030)
@@ -3882,41 +3953,44 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NetPingSubsystem">();
+		STATIC_CLASS_IMPL("NetPingSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NetPingSubsystem")
 	}
 	static class UNetPingSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNetPingSubsystem>();
 	}
 };
-static_assert(alignof(UNetPingSubsystem) == 0x000008, "Wrong alignment on UNetPingSubsystem");
-static_assert(sizeof(UNetPingSubsystem) == 0x000048, "Wrong size on UNetPingSubsystem");
+DUMPER7_ASSERTS_UNetPingSubsystem;
 
 // Class UnionSystem.NetSaveGame
-// 0x02F0 (0x0318 - 0x0028)
+// 0x0300 (0x0328 - 0x0028)
 class UNetSaveGame final : public USaveGame
 {
 public:
 	struct FSaveDataHeader                        _Header;                                           // 0x0028(0x000C)(NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FNetMasterDataVersionData              _LocalNetMasterDataVersion;                        // 0x0038(0x0010)(NativeAccessSpecifierPublic)
-	struct FAppLocalNetMasterData                 _LocalNetMasterData;                               // 0x0048(0x02D0)(NativeAccessSpecifierPublic)
+	struct FAppLocalNetMasterData                 _LocalNetMasterData;                               // 0x0048(0x02E0)(NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NetSaveGame">();
+		STATIC_CLASS_IMPL("NetSaveGame")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NetSaveGame")
 	}
 	static class UNetSaveGame* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNetSaveGame>();
 	}
 };
-static_assert(alignof(UNetSaveGame) == 0x000008, "Wrong alignment on UNetSaveGame");
-static_assert(sizeof(UNetSaveGame) == 0x000318, "Wrong size on UNetSaveGame");
-static_assert(offsetof(UNetSaveGame, _Header) == 0x000028, "Member 'UNetSaveGame::_Header' has a wrong offset!");
-static_assert(offsetof(UNetSaveGame, _LocalNetMasterDataVersion) == 0x000038, "Member 'UNetSaveGame::_LocalNetMasterDataVersion' has a wrong offset!");
-static_assert(offsetof(UNetSaveGame, _LocalNetMasterData) == 0x000048, "Member 'UNetSaveGame::_LocalNetMasterData' has a wrong offset!");
+DUMPER7_ASSERTS_UNetSaveGame;
 
 // Class UnionSystem.NetworkClientDevelopmentSettings
 // 0x0030 (0x0068 - 0x0038)
@@ -3933,21 +4007,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NetworkClientDevelopmentSettings">();
+		STATIC_CLASS_IMPL("NetworkClientDevelopmentSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NetworkClientDevelopmentSettings")
 	}
 	static class UNetworkClientDevelopmentSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNetworkClientDevelopmentSettings>();
 	}
 };
-static_assert(alignof(UNetworkClientDevelopmentSettings) == 0x000008, "Wrong alignment on UNetworkClientDevelopmentSettings");
-static_assert(sizeof(UNetworkClientDevelopmentSettings) == 0x000068, "Wrong size on UNetworkClientDevelopmentSettings");
-static_assert(offsetof(UNetworkClientDevelopmentSettings, CollectKeyMachine) == 0x000038, "Member 'UNetworkClientDevelopmentSettings::CollectKeyMachine' has a wrong offset!");
-static_assert(offsetof(UNetworkClientDevelopmentSettings, LongRespWarnMessage) == 0x000048, "Member 'UNetworkClientDevelopmentSettings::LongRespWarnMessage' has a wrong offset!");
-static_assert(offsetof(UNetworkClientDevelopmentSettings, LongRespThresholdPc) == 0x000058, "Member 'UNetworkClientDevelopmentSettings::LongRespThresholdPc' has a wrong offset!");
-static_assert(offsetof(UNetworkClientDevelopmentSettings, LongRespThresholdPs) == 0x00005C, "Member 'UNetworkClientDevelopmentSettings::LongRespThresholdPs' has a wrong offset!");
-static_assert(offsetof(UNetworkClientDevelopmentSettings, LongRespThresholdNx) == 0x000060, "Member 'UNetworkClientDevelopmentSettings::LongRespThresholdNx' has a wrong offset!");
-static_assert(offsetof(UNetworkClientDevelopmentSettings, LongRespThresholdXb) == 0x000064, "Member 'UNetworkClientDevelopmentSettings::LongRespThresholdXb' has a wrong offset!");
+DUMPER7_ASSERTS_UNetworkClientDevelopmentSettings;
 
 // Class UnionSystem.NetworkClientSettings
 // 0x0020 (0x0058 - 0x0038)
@@ -3960,17 +4031,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NetworkClientSettings">();
+		STATIC_CLASS_IMPL("NetworkClientSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NetworkClientSettings")
 	}
 	static class UNetworkClientSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNetworkClientSettings>();
 	}
 };
-static_assert(alignof(UNetworkClientSettings) == 0x000008, "Wrong alignment on UNetworkClientSettings");
-static_assert(sizeof(UNetworkClientSettings) == 0x000058, "Wrong size on UNetworkClientSettings");
-static_assert(offsetof(UNetworkClientSettings, ServerStagingName) == 0x000038, "Member 'UNetworkClientSettings::ServerStagingName' has a wrong offset!");
-static_assert(offsetof(UNetworkClientSettings, CrmApplicationId) == 0x000048, "Member 'UNetworkClientSettings::CrmApplicationId' has a wrong offset!");
+DUMPER7_ASSERTS_UNetworkClientSettings;
 
 // Class UnionSystem.NetworkMeasurementSubsystem
 // 0x01B8 (0x01E8 - 0x0030)
@@ -3982,15 +4054,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NetworkMeasurementSubsystem">();
+		STATIC_CLASS_IMPL("NetworkMeasurementSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NetworkMeasurementSubsystem")
 	}
 	static class UNetworkMeasurementSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNetworkMeasurementSubsystem>();
 	}
 };
-static_assert(alignof(UNetworkMeasurementSubsystem) == 0x000008, "Wrong alignment on UNetworkMeasurementSubsystem");
-static_assert(sizeof(UNetworkMeasurementSubsystem) == 0x0001E8, "Wrong size on UNetworkMeasurementSubsystem");
+DUMPER7_ASSERTS_UNetworkMeasurementSubsystem;
 
 // Class UnionSystem.OnlineActivitySubsystem
 // 0x0058 (0x0088 - 0x0030)
@@ -4021,15 +4096,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OnlineActivitySubsystem">();
+		STATIC_CLASS_IMPL("OnlineActivitySubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OnlineActivitySubsystem")
 	}
 	static class UOnlineActivitySubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOnlineActivitySubsystem>();
 	}
 };
-static_assert(alignof(UOnlineActivitySubsystem) == 0x000008, "Wrong alignment on UOnlineActivitySubsystem");
-static_assert(sizeof(UOnlineActivitySubsystem) == 0x000088, "Wrong size on UOnlineActivitySubsystem");
+DUMPER7_ASSERTS_UOnlineActivitySubsystem;
 
 // Class UnionSystem.OnlineMatchSubsystem
 // 0x0230 (0x0260 - 0x0030)
@@ -4038,7 +4116,7 @@ class UOnlineMatchSubsystem final : public UGameInstanceSubsystem
 public:
 	uint8                                         Pad_30[0x218];                                     // 0x0030(0x0218)(Fixing Size After Last Property [ Dumper-7 ])
 	TMulticastInlineDelegate<void(const struct FUniqueNetIdRepl& UserId, bool bIsConnecting)> PeerChangeStatusClosedDelegate; // 0x0248(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
-	class UFont*                                  FontObject;                                        // 0x0258(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UFont*                                  FontObject;                                        // 0x0258(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
 
 public:
 	static bool IsEnableOnlineSinglePlay();
@@ -4058,17 +4136,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OnlineMatchSubsystem">();
+		STATIC_CLASS_IMPL("OnlineMatchSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OnlineMatchSubsystem")
 	}
 	static class UOnlineMatchSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOnlineMatchSubsystem>();
 	}
 };
-static_assert(alignof(UOnlineMatchSubsystem) == 0x000008, "Wrong alignment on UOnlineMatchSubsystem");
-static_assert(sizeof(UOnlineMatchSubsystem) == 0x000260, "Wrong size on UOnlineMatchSubsystem");
-static_assert(offsetof(UOnlineMatchSubsystem, PeerChangeStatusClosedDelegate) == 0x000248, "Member 'UOnlineMatchSubsystem::PeerChangeStatusClosedDelegate' has a wrong offset!");
-static_assert(offsetof(UOnlineMatchSubsystem, FontObject) == 0x000258, "Member 'UOnlineMatchSubsystem::FontObject' has a wrong offset!");
+DUMPER7_ASSERTS_UOnlineMatchSubsystem;
 
 // Class UnionSystem.OnlineMessageFactorySubsystem
 // 0x0000 (0x0030 - 0x0030)
@@ -4077,15 +4156,18 @@ class UOnlineMessageFactorySubsystem final : public UGameInstanceSubsystem
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OnlineMessageFactorySubsystem">();
+		STATIC_CLASS_IMPL("OnlineMessageFactorySubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OnlineMessageFactorySubsystem")
 	}
 	static class UOnlineMessageFactorySubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOnlineMessageFactorySubsystem>();
 	}
 };
-static_assert(alignof(UOnlineMessageFactorySubsystem) == 0x000008, "Wrong alignment on UOnlineMessageFactorySubsystem");
-static_assert(sizeof(UOnlineMessageFactorySubsystem) == 0x000030, "Wrong size on UOnlineMessageFactorySubsystem");
+DUMPER7_ASSERTS_UOnlineMessageFactorySubsystem;
 
 // Class UnionSystem.OnlineMessageSubsystem
 // 0x0050 (0x0080 - 0x0030)
@@ -4097,18 +4179,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OnlineMessageSubsystem">();
+		STATIC_CLASS_IMPL("OnlineMessageSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OnlineMessageSubsystem")
 	}
 	static class UOnlineMessageSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOnlineMessageSubsystem>();
 	}
 };
-static_assert(alignof(UOnlineMessageSubsystem) == 0x000008, "Wrong alignment on UOnlineMessageSubsystem");
-static_assert(sizeof(UOnlineMessageSubsystem) == 0x000080, "Wrong size on UOnlineMessageSubsystem");
+DUMPER7_ASSERTS_UOnlineMessageSubsystem;
 
 // Class UnionSystem.OptionConfigSaveGame
-// 0x0060 (0x0088 - 0x0028)
+// 0x0078 (0x00A0 - 0x0028)
 class UOptionConfigSaveGame final : public USaveGame
 {
 public:
@@ -4121,27 +4206,24 @@ public:
 	uint8                                         Pad_5B[0x1];                                       // 0x005B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGraphicsSettings                      _GraphicsSettings;                                 // 0x005C(0x0018)(NoDestructor, NativeAccessSpecifierPublic)
 	struct FOptionAudioSettings                   _AudioSettings;                                    // 0x0074(0x0010)(NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FOptionAdditionalSettings_1_3          _AdditionalSettings_1_3;                           // 0x0088(0x0018)(NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptionConfigSaveGame">();
+		STATIC_CLASS_IMPL("OptionConfigSaveGame")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptionConfigSaveGame")
 	}
 	static class UOptionConfigSaveGame* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptionConfigSaveGame>();
 	}
 };
-static_assert(alignof(UOptionConfigSaveGame) == 0x000008, "Wrong alignment on UOptionConfigSaveGame");
-static_assert(sizeof(UOptionConfigSaveGame) == 0x000088, "Wrong size on UOptionConfigSaveGame");
-static_assert(offsetof(UOptionConfigSaveGame, _Header) == 0x000028, "Member 'UOptionConfigSaveGame::_Header' has a wrong offset!");
-static_assert(offsetof(UOptionConfigSaveGame, _OnlineSettings) == 0x000034, "Member 'UOptionConfigSaveGame::_OnlineSettings' has a wrong offset!");
-static_assert(offsetof(UOptionConfigSaveGame, _RaceSettings) == 0x00003A, "Member 'UOptionConfigSaveGame::_RaceSettings' has a wrong offset!");
-static_assert(offsetof(UOptionConfigSaveGame, _ControllerSettings) == 0x000048, "Member 'UOptionConfigSaveGame::_ControllerSettings' has a wrong offset!");
-static_assert(offsetof(UOptionConfigSaveGame, _OptionInternationalizationData) == 0x000058, "Member 'UOptionConfigSaveGame::_OptionInternationalizationData' has a wrong offset!");
-static_assert(offsetof(UOptionConfigSaveGame, _GraphicsSettings) == 0x00005C, "Member 'UOptionConfigSaveGame::_GraphicsSettings' has a wrong offset!");
-static_assert(offsetof(UOptionConfigSaveGame, _AudioSettings) == 0x000074, "Member 'UOptionConfigSaveGame::_AudioSettings' has a wrong offset!");
+DUMPER7_ASSERTS_UOptionConfigSaveGame;
 
 // Class UnionSystem.OutOfContentButton
 // 0x0000 (0x02E0 - 0x02E0)
@@ -4150,15 +4232,18 @@ class UOutOfContentButton final : public UImage
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OutOfContentButton">();
+		STATIC_CLASS_IMPL("OutOfContentButton")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OutOfContentButton")
 	}
 	static class UOutOfContentButton* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOutOfContentButton>();
 	}
 };
-static_assert(alignof(UOutOfContentButton) == 0x000010, "Wrong alignment on UOutOfContentButton");
-static_assert(sizeof(UOutOfContentButton) == 0x0002E0, "Wrong size on UOutOfContentButton");
+DUMPER7_ASSERTS_UOutOfContentButton;
 
 // Class UnionSystem.P2PConnectionSubsystem
 // 0x02C0 (0x02F0 - 0x0030)
@@ -4178,16 +4263,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"P2PConnectionSubsystem">();
+		STATIC_CLASS_IMPL("P2PConnectionSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"P2PConnectionSubsystem")
 	}
 	static class UP2PConnectionSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UP2PConnectionSubsystem>();
 	}
 };
-static_assert(alignof(UP2PConnectionSubsystem) == 0x000008, "Wrong alignment on UP2PConnectionSubsystem");
-static_assert(sizeof(UP2PConnectionSubsystem) == 0x0002F0, "Wrong size on UP2PConnectionSubsystem");
-static_assert(offsetof(UP2PConnectionSubsystem, SquadLobby) == 0x000218, "Member 'UP2PConnectionSubsystem::SquadLobby' has a wrong offset!");
+DUMPER7_ASSERTS_UP2PConnectionSubsystem;
 
 // Class UnionSystem.PlatformPrivilegeObject
 // 0x0068 (0x02F8 - 0x0290)
@@ -4205,15 +4292,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PlatformPrivilegeObject">();
+		STATIC_CLASS_IMPL("PlatformPrivilegeObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlatformPrivilegeObject")
 	}
 	static class APlatformPrivilegeObject* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APlatformPrivilegeObject>();
 	}
 };
-static_assert(alignof(APlatformPrivilegeObject) == 0x000008, "Wrong alignment on APlatformPrivilegeObject");
-static_assert(sizeof(APlatformPrivilegeObject) == 0x0002F8, "Wrong size on APlatformPrivilegeObject");
+DUMPER7_ASSERTS_APlatformPrivilegeObject;
 
 // Class UnionSystem.PlatformStoreMessageDataAsset
 // 0x00D0 (0x0100 - 0x0030)
@@ -4244,28 +4334,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PlatformStoreMessageDataAsset">();
+		STATIC_CLASS_IMPL("PlatformStoreMessageDataAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlatformStoreMessageDataAsset")
 	}
 	static class UPlatformStoreMessageDataAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlatformStoreMessageDataAsset>();
 	}
 };
-static_assert(alignof(UPlatformStoreMessageDataAsset) == 0x000008, "Wrong alignment on UPlatformStoreMessageDataAsset");
-static_assert(sizeof(UPlatformStoreMessageDataAsset) == 0x000100, "Wrong size on UPlatformStoreMessageDataAsset");
-static_assert(offsetof(UPlatformStoreMessageDataAsset, PlayStationPlatformStoreMessage) == 0x000030, "Member 'UPlatformStoreMessageDataAsset::PlayStationPlatformStoreMessage' has a wrong offset!");
-static_assert(offsetof(UPlatformStoreMessageDataAsset, XboxPlatformStoreMessage) == 0x000040, "Member 'UPlatformStoreMessageDataAsset::XboxPlatformStoreMessage' has a wrong offset!");
-static_assert(offsetof(UPlatformStoreMessageDataAsset, SwitchPlatformStoreMessage) == 0x000050, "Member 'UPlatformStoreMessageDataAsset::SwitchPlatformStoreMessage' has a wrong offset!");
-static_assert(offsetof(UPlatformStoreMessageDataAsset, SteamPlatformStoreMessage) == 0x000060, "Member 'UPlatformStoreMessageDataAsset::SteamPlatformStoreMessage' has a wrong offset!");
-static_assert(offsetof(UPlatformStoreMessageDataAsset, EpicPlatformStoreMessage) == 0x000070, "Member 'UPlatformStoreMessageDataAsset::EpicPlatformStoreMessage' has a wrong offset!");
-static_assert(offsetof(UPlatformStoreMessageDataAsset, AcceptButtonText) == 0x000080, "Member 'UPlatformStoreMessageDataAsset::AcceptButtonText' has a wrong offset!");
-static_assert(offsetof(UPlatformStoreMessageDataAsset, CancelButtonText) == 0x000090, "Member 'UPlatformStoreMessageDataAsset::CancelButtonText' has a wrong offset!");
-static_assert(offsetof(UPlatformStoreMessageDataAsset, PlatformStoreButtonMessage) == 0x0000A0, "Member 'UPlatformStoreMessageDataAsset::PlatformStoreButtonMessage' has a wrong offset!");
-static_assert(offsetof(UPlatformStoreMessageDataAsset, PlayStationPlatformStoreButtonMessage) == 0x0000B0, "Member 'UPlatformStoreMessageDataAsset::PlayStationPlatformStoreButtonMessage' has a wrong offset!");
-static_assert(offsetof(UPlatformStoreMessageDataAsset, XboxPlatformStoreButtonMessage) == 0x0000C0, "Member 'UPlatformStoreMessageDataAsset::XboxPlatformStoreButtonMessage' has a wrong offset!");
-static_assert(offsetof(UPlatformStoreMessageDataAsset, SwitchPlatformStoreButtonMessage) == 0x0000D0, "Member 'UPlatformStoreMessageDataAsset::SwitchPlatformStoreButtonMessage' has a wrong offset!");
-static_assert(offsetof(UPlatformStoreMessageDataAsset, SteamPlatformStoreButtonMessage) == 0x0000E0, "Member 'UPlatformStoreMessageDataAsset::SteamPlatformStoreButtonMessage' has a wrong offset!");
-static_assert(offsetof(UPlatformStoreMessageDataAsset, EpicPlatformStoreButtonMessage) == 0x0000F0, "Member 'UPlatformStoreMessageDataAsset::EpicPlatformStoreButtonMessage' has a wrong offset!");
+DUMPER7_ASSERTS_UPlatformStoreMessageDataAsset;
 
 // Class UnionSystem.PlatformUIUtilityLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -4277,15 +4357,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PlatformUIUtilityLibrary">();
+		STATIC_CLASS_IMPL("PlatformUIUtilityLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlatformUIUtilityLibrary")
 	}
 	static class UPlatformUIUtilityLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlatformUIUtilityLibrary>();
 	}
 };
-static_assert(alignof(UPlatformUIUtilityLibrary) == 0x000008, "Wrong alignment on UPlatformUIUtilityLibrary");
-static_assert(sizeof(UPlatformUIUtilityLibrary) == 0x000028, "Wrong size on UPlatformUIUtilityLibrary");
+DUMPER7_ASSERTS_UPlatformUIUtilityLibrary;
 
 // Class UnionSystem.PlayerNameInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -4305,7 +4388,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PlayerNameInterface">();
+		STATIC_CLASS_IMPL("PlayerNameInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerNameInterface")
 	}
 	static class IPlayerNameInterface* GetDefaultObj()
 	{
@@ -4321,8 +4408,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IPlayerNameInterface) == 0x000001, "Wrong alignment on IPlayerNameInterface");
-static_assert(sizeof(IPlayerNameInterface) == 0x000001, "Wrong size on IPlayerNameInterface");
+DUMPER7_ASSERTS_IPlayerNameInterface;
 
 // Class UnionSystem.PlaylogHelper
 // 0x0000 (0x0028 - 0x0028)
@@ -4454,15 +4540,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PlaylogHelper">();
+		STATIC_CLASS_IMPL("PlaylogHelper")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlaylogHelper")
 	}
 	static class UPlaylogHelper* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlaylogHelper>();
 	}
 };
-static_assert(alignof(UPlaylogHelper) == 0x000008, "Wrong alignment on UPlaylogHelper");
-static_assert(sizeof(UPlaylogHelper) == 0x000028, "Wrong size on UPlaylogHelper");
+DUMPER7_ASSERTS_UPlaylogHelper;
 
 // Class UnionSystem.PlaylogManager
 // 0x0168 (0x0198 - 0x0030)
@@ -4482,20 +4571,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PlaylogManager">();
+		STATIC_CLASS_IMPL("PlaylogManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlaylogManager")
 	}
 	static class UPlaylogManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlaylogManager>();
 	}
 };
-static_assert(alignof(UPlaylogManager) == 0x000008, "Wrong alignment on UPlaylogManager");
-static_assert(sizeof(UPlaylogManager) == 0x000198, "Wrong size on UPlaylogManager");
-static_assert(offsetof(UPlaylogManager, CrmWidget) == 0x000178, "Member 'UPlaylogManager::CrmWidget' has a wrong offset!");
-static_assert(offsetof(UPlaylogManager, SetupCompleteDelegate) == 0x000180, "Member 'UPlaylogManager::SetupCompleteDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UPlaylogManager;
 
 // Class UnionSystem.PlayLogSaveGame
-// 0x9740 (0x9768 - 0x0028)
+// 0x9790 (0x97B8 - 0x0028)
 class UPlayLogSaveGame final : public USaveGame
 {
 public:
@@ -4503,48 +4593,35 @@ public:
 	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	int64                                         Timestamp;                                         // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	struct FPlayLogSystem                         System;                                            // 0x0040(0x0028)(NativeAccessSpecifierPrivate)
-	struct FPlayLogSaveGameCondition              Condition;                                         // 0x0068(0x0040)(NativeAccessSpecifierPrivate)
-	struct FPlayLogSaveGameProgressGrandprix      ProgressGrandprix;                                 // 0x00A8(0x012C)(NoDestructor, NativeAccessSpecifierPrivate)
-	struct FPlayLogSaveGameProgressRival          ProgressRival;                                     // 0x01D4(0x0190)(NoDestructor, NativeAccessSpecifierPrivate)
-	struct FPlayLogSaveGameProgressParty          ProgressParty;                                     // 0x0364(0x0154)(NoDestructor, NativeAccessSpecifierPrivate)
-	struct FPlayLogSaveGameCharacter              Character;                                         // 0x04B8(0x0DE8)(NoDestructor, NativeAccessSpecifierPrivate)
-	struct FPlayLogSaveGameMachine                machine;                                           // 0x12A0(0x6720)(NoDestructor, NativeAccessSpecifierPrivate)
-	struct FPlayLogSaveGameGadget                 gadget;                                            // 0x79C0(0x07D0)(NoDestructor, NativeAccessSpecifierPrivate)
-	struct FPlayLogSaveGameGrandprix              GrandPrix;                                         // 0x8190(0x0258)(NativeAccessSpecifierPrivate)
-	struct FPlayLogSaveGameParty                  Party;                                             // 0x83E8(0x0220)(NativeAccessSpecifierPrivate)
-	struct FPlayLogSaveGameTimeTrial              TimeTrial;                                         // 0x8608(0x0EB8)(NoDestructor, NativeAccessSpecifierPrivate)
-	struct FPlayLogSaveGameFriendMatch            FriendMatch;                                       // 0x94C0(0x0088)(NoDestructor, NativeAccessSpecifierPrivate)
-	struct FPlayLogSaveGameEventFesta             EventFesta;                                        // 0x9548(0x0020)(NativeAccessSpecifierPrivate)
-	struct FPlayLogSaveGameMode                   GameMode;                                          // 0x9568(0x0200)(NativeAccessSpecifierPrivate)
+	struct FPlayLogSaveGameCondition              Condition;                                         // 0x0068(0x0090)(NativeAccessSpecifierPrivate)
+	struct FPlayLogSaveGameProgressGrandprix      ProgressGrandprix;                                 // 0x00F8(0x012C)(NoDestructor, NativeAccessSpecifierPrivate)
+	struct FPlayLogSaveGameProgressRival          ProgressRival;                                     // 0x0224(0x0190)(NoDestructor, NativeAccessSpecifierPrivate)
+	struct FPlayLogSaveGameProgressParty          ProgressParty;                                     // 0x03B4(0x0154)(NoDestructor, NativeAccessSpecifierPrivate)
+	struct FPlayLogSaveGameCharacter              Character;                                         // 0x0508(0x0DE8)(NoDestructor, NativeAccessSpecifierPrivate)
+	struct FPlayLogSaveGameMachine                machine;                                           // 0x12F0(0x6720)(NoDestructor, NativeAccessSpecifierPrivate)
+	struct FPlayLogSaveGameGadget                 gadget;                                            // 0x7A10(0x07D0)(NoDestructor, NativeAccessSpecifierPrivate)
+	struct FPlayLogSaveGameGrandprix              GrandPrix;                                         // 0x81E0(0x0258)(NativeAccessSpecifierPrivate)
+	struct FPlayLogSaveGameParty                  Party;                                             // 0x8438(0x0220)(NativeAccessSpecifierPrivate)
+	struct FPlayLogSaveGameTimeTrial              TimeTrial;                                         // 0x8658(0x0EB8)(NoDestructor, NativeAccessSpecifierPrivate)
+	struct FPlayLogSaveGameFriendMatch            FriendMatch;                                       // 0x9510(0x0088)(NoDestructor, NativeAccessSpecifierPrivate)
+	struct FPlayLogSaveGameEventFesta             EventFesta;                                        // 0x9598(0x0020)(NativeAccessSpecifierPrivate)
+	struct FPlayLogSaveGameMode                   GameMode;                                          // 0x95B8(0x0200)(NativeAccessSpecifierPrivate)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PlayLogSaveGame">();
+		STATIC_CLASS_IMPL("PlayLogSaveGame")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayLogSaveGame")
 	}
 	static class UPlayLogSaveGame* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayLogSaveGame>();
 	}
 };
-static_assert(alignof(UPlayLogSaveGame) == 0x000008, "Wrong alignment on UPlayLogSaveGame");
-static_assert(sizeof(UPlayLogSaveGame) == 0x009768, "Wrong size on UPlayLogSaveGame");
-static_assert(offsetof(UPlayLogSaveGame, _Header) == 0x000028, "Member 'UPlayLogSaveGame::_Header' has a wrong offset!");
-static_assert(offsetof(UPlayLogSaveGame, Timestamp) == 0x000038, "Member 'UPlayLogSaveGame::Timestamp' has a wrong offset!");
-static_assert(offsetof(UPlayLogSaveGame, System) == 0x000040, "Member 'UPlayLogSaveGame::System' has a wrong offset!");
-static_assert(offsetof(UPlayLogSaveGame, Condition) == 0x000068, "Member 'UPlayLogSaveGame::Condition' has a wrong offset!");
-static_assert(offsetof(UPlayLogSaveGame, ProgressGrandprix) == 0x0000A8, "Member 'UPlayLogSaveGame::ProgressGrandprix' has a wrong offset!");
-static_assert(offsetof(UPlayLogSaveGame, ProgressRival) == 0x0001D4, "Member 'UPlayLogSaveGame::ProgressRival' has a wrong offset!");
-static_assert(offsetof(UPlayLogSaveGame, ProgressParty) == 0x000364, "Member 'UPlayLogSaveGame::ProgressParty' has a wrong offset!");
-static_assert(offsetof(UPlayLogSaveGame, Character) == 0x0004B8, "Member 'UPlayLogSaveGame::Character' has a wrong offset!");
-static_assert(offsetof(UPlayLogSaveGame, machine) == 0x0012A0, "Member 'UPlayLogSaveGame::machine' has a wrong offset!");
-static_assert(offsetof(UPlayLogSaveGame, gadget) == 0x0079C0, "Member 'UPlayLogSaveGame::gadget' has a wrong offset!");
-static_assert(offsetof(UPlayLogSaveGame, GrandPrix) == 0x008190, "Member 'UPlayLogSaveGame::GrandPrix' has a wrong offset!");
-static_assert(offsetof(UPlayLogSaveGame, Party) == 0x0083E8, "Member 'UPlayLogSaveGame::Party' has a wrong offset!");
-static_assert(offsetof(UPlayLogSaveGame, TimeTrial) == 0x008608, "Member 'UPlayLogSaveGame::TimeTrial' has a wrong offset!");
-static_assert(offsetof(UPlayLogSaveGame, FriendMatch) == 0x0094C0, "Member 'UPlayLogSaveGame::FriendMatch' has a wrong offset!");
-static_assert(offsetof(UPlayLogSaveGame, EventFesta) == 0x009548, "Member 'UPlayLogSaveGame::EventFesta' has a wrong offset!");
-static_assert(offsetof(UPlayLogSaveGame, GameMode) == 0x009568, "Member 'UPlayLogSaveGame::GameMode' has a wrong offset!");
+DUMPER7_ASSERTS_UPlayLogSaveGame;
 
 // Class UnionSystem.ProceduralMeshComponentEx
 // 0x0050 (0x05A0 - 0x0550)
@@ -4566,16 +4643,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ProceduralMeshComponentEx">();
+		STATIC_CLASS_IMPL("ProceduralMeshComponentEx")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ProceduralMeshComponentEx")
 	}
 	static class UProceduralMeshComponentEx* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UProceduralMeshComponentEx>();
 	}
 };
-static_assert(alignof(UProceduralMeshComponentEx) == 0x000010, "Wrong alignment on UProceduralMeshComponentEx");
-static_assert(sizeof(UProceduralMeshComponentEx) == 0x0005A0, "Wrong size on UProceduralMeshComponentEx");
-static_assert(offsetof(UProceduralMeshComponentEx, LocalBounds) == 0x000560, "Member 'UProceduralMeshComponentEx::LocalBounds' has a wrong offset!");
+DUMPER7_ASSERTS_UProceduralMeshComponentEx;
 
 // Class UnionSystem.ProjectDecal
 // 0x0028 (0x0050 - 0x0028)
@@ -4592,15 +4671,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ProjectDecal">();
+		STATIC_CLASS_IMPL("ProjectDecal")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ProjectDecal")
 	}
 	static class UProjectDecal* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UProjectDecal>();
 	}
 };
-static_assert(alignof(UProjectDecal) == 0x000008, "Wrong alignment on UProjectDecal");
-static_assert(sizeof(UProjectDecal) == 0x000050, "Wrong size on UProjectDecal");
+DUMPER7_ASSERTS_UProjectDecal;
 
 // Class UnionSystem.QueryFunction
 // 0x0000 (0x0028 - 0x0028)
@@ -4609,15 +4691,18 @@ class UQueryFunction final : public UBlueprintFunctionLibrary
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"QueryFunction">();
+		STATIC_CLASS_IMPL("QueryFunction")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QueryFunction")
 	}
 	static class UQueryFunction* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UQueryFunction>();
 	}
 };
-static_assert(alignof(UQueryFunction) == 0x000008, "Wrong alignment on UQueryFunction");
-static_assert(sizeof(UQueryFunction) == 0x000028, "Wrong size on UQueryFunction");
+DUMPER7_ASSERTS_UQueryFunction;
 
 // Class UnionSystem.RaceInputRecieveInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -4652,7 +4737,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RaceInputRecieveInterface">();
+		STATIC_CLASS_IMPL("RaceInputRecieveInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RaceInputRecieveInterface")
 	}
 	static class IRaceInputRecieveInterface* GetDefaultObj()
 	{
@@ -4668,15 +4757,14 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IRaceInputRecieveInterface) == 0x000001, "Wrong alignment on IRaceInputRecieveInterface");
-static_assert(sizeof(IRaceInputRecieveInterface) == 0x000001, "Wrong size on IRaceInputRecieveInterface");
+DUMPER7_ASSERTS_IRaceInputRecieveInterface;
 
 // Class UnionSystem.RaceMasterDataAccessor
 // 0x0130 (0x0158 - 0x0028)
 class URaceMasterDataAccessor : public UObject
 {
 public:
-	class UObject*                                RunData[0x26];                                     // 0x0028(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UObject*                                RunData[0x26];                                     // 0x0028(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 
 public:
 	void Initialize();
@@ -4686,25 +4774,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RaceMasterDataAccessor">();
+		STATIC_CLASS_IMPL("RaceMasterDataAccessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RaceMasterDataAccessor")
 	}
 	static class URaceMasterDataAccessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URaceMasterDataAccessor>();
 	}
 };
-static_assert(alignof(URaceMasterDataAccessor) == 0x000008, "Wrong alignment on URaceMasterDataAccessor");
-static_assert(sizeof(URaceMasterDataAccessor) == 0x000158, "Wrong size on URaceMasterDataAccessor");
-static_assert(offsetof(URaceMasterDataAccessor, RunData) == 0x000028, "Member 'URaceMasterDataAccessor::RunData' has a wrong offset!");
+DUMPER7_ASSERTS_URaceMasterDataAccessor;
 
 // Class UnionSystem.RacePlayerController
-// 0x0160 (0x0B98 - 0x0A38)
+// 0x0160 (0x0B90 - 0x0A30)
 class ARacePlayerController : public AAppPlayerController
 {
 public:
-	uint8                                         Pad_A38[0x8];                                      // 0x0A38(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class APawn*                                  RaceInputReciever;                                 // 0x0A40(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_A48[0x150];                                    // 0x0A48(0x0150)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A30[0x8];                                      // 0x0A30(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class APawn*                                  RaceInputReciever;                                 // 0x0A38(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_A40[0x150];                                    // 0x0A40(0x0150)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void DoInputRacePressed(ERaceInputKey InKey, float Amount);
@@ -4717,16 +4807,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RacePlayerController">();
+		STATIC_CLASS_IMPL("RacePlayerController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RacePlayerController")
 	}
 	static class ARacePlayerController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ARacePlayerController>();
 	}
 };
-static_assert(alignof(ARacePlayerController) == 0x000008, "Wrong alignment on ARacePlayerController");
-static_assert(sizeof(ARacePlayerController) == 0x000B98, "Wrong size on ARacePlayerController");
-static_assert(offsetof(ARacePlayerController, RaceInputReciever) == 0x000A40, "Member 'ARacePlayerController::RaceInputReciever' has a wrong offset!");
+DUMPER7_ASSERTS_ARacePlayerController;
 
 // Class UnionSystem.RankingSubsystem
 // 0x0080 (0x00B0 - 0x0030)
@@ -4744,15 +4836,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RankingSubsystem">();
+		STATIC_CLASS_IMPL("RankingSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RankingSubsystem")
 	}
 	static class URankingSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URankingSubsystem>();
 	}
 };
-static_assert(alignof(URankingSubsystem) == 0x000008, "Wrong alignment on URankingSubsystem");
-static_assert(sizeof(URankingSubsystem) == 0x0000B0, "Wrong size on URankingSubsystem");
+DUMPER7_ASSERTS_URankingSubsystem;
 
 // Class UnionSystem.ReplaySaveGame
 // 0x0020 (0x0048 - 0x0028)
@@ -4766,17 +4861,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ReplaySaveGame">();
+		STATIC_CLASS_IMPL("ReplaySaveGame")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ReplaySaveGame")
 	}
 	static class UReplaySaveGame* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UReplaySaveGame>();
 	}
 };
-static_assert(alignof(UReplaySaveGame) == 0x000008, "Wrong alignment on UReplaySaveGame");
-static_assert(sizeof(UReplaySaveGame) == 0x000048, "Wrong size on UReplaySaveGame");
-static_assert(offsetof(UReplaySaveGame, _Header) == 0x000028, "Member 'UReplaySaveGame::_Header' has a wrong offset!");
-static_assert(offsetof(UReplaySaveGame, ReplaySlot) == 0x000038, "Member 'UReplaySaveGame::ReplaySlot' has a wrong offset!");
+DUMPER7_ASSERTS_UReplaySaveGame;
 
 // Class UnionSystem.ResponseCodeHttp
 // 0x0000 (0x0028 - 0x0028)
@@ -4788,15 +4884,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ResponseCodeHttp">();
+		STATIC_CLASS_IMPL("ResponseCodeHttp")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ResponseCodeHttp")
 	}
 	static class UResponseCodeHttp* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UResponseCodeHttp>();
 	}
 };
-static_assert(alignof(UResponseCodeHttp) == 0x000008, "Wrong alignment on UResponseCodeHttp");
-static_assert(sizeof(UResponseCodeHttp) == 0x000028, "Wrong size on UResponseCodeHttp");
+DUMPER7_ASSERTS_UResponseCodeHttp;
 
 // Class UnionSystem.SaveDataManageSubsystem
 // 0x0240 (0x0270 - 0x0030)
@@ -4807,14 +4906,14 @@ public:
 	TMulticastInlineDelegate<void(ESaveDataStatus Status)> OnLoadComplete;                           // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void(ESaveDataStatus Status)> OnSaveComplete;                           // 0x0048(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_58[0x20];                                      // 0x0058(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
-	class USavingIcon*                            AutoSaveIconWidget;                                // 0x0078(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USavingIcon*                            AutoSaveIconWidget;                                // 0x0078(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 	uint8                                         Pad_80[0x8];                                       // 0x0080(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<class FString, bool>                     LoadedMap;                                         // 0x0088(0x0050)(NativeAccessSpecifierPrivate)
-	class UAppSaveGame*                           _AppSaveGame;                                      // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UPlayLogSaveGame*                       _PlayLogSaveGame;                                  // 0x00E0(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UOptionConfigSaveGame*                  _OptionConfigSaveGame;                             // 0x00E8(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UReplaySaveGame*                        _ReplaySaveGame;                                   // 0x00F0(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UNetSaveGame*                           _NetSaveGame;                                      // 0x00F8(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UAppSaveGame*                           _AppSaveGame;                                      // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	class UPlayLogSaveGame*                       _PlayLogSaveGame;                                  // 0x00E0(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	class UOptionConfigSaveGame*                  _OptionConfigSaveGame;                             // 0x00E8(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	class UReplaySaveGame*                        _ReplaySaveGame;                                   // 0x00F0(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	class UNetSaveGame*                           _NetSaveGame;                                      // 0x00F8(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
 	uint8                                         Pad_100[0x170];                                    // 0x0100(0x0170)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -4886,24 +4985,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SaveDataManageSubsystem">();
+		STATIC_CLASS_IMPL("SaveDataManageSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SaveDataManageSubsystem")
 	}
 	static class USaveDataManageSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USaveDataManageSubsystem>();
 	}
 };
-static_assert(alignof(USaveDataManageSubsystem) == 0x000008, "Wrong alignment on USaveDataManageSubsystem");
-static_assert(sizeof(USaveDataManageSubsystem) == 0x000270, "Wrong size on USaveDataManageSubsystem");
-static_assert(offsetof(USaveDataManageSubsystem, OnLoadComplete) == 0x000038, "Member 'USaveDataManageSubsystem::OnLoadComplete' has a wrong offset!");
-static_assert(offsetof(USaveDataManageSubsystem, OnSaveComplete) == 0x000048, "Member 'USaveDataManageSubsystem::OnSaveComplete' has a wrong offset!");
-static_assert(offsetof(USaveDataManageSubsystem, AutoSaveIconWidget) == 0x000078, "Member 'USaveDataManageSubsystem::AutoSaveIconWidget' has a wrong offset!");
-static_assert(offsetof(USaveDataManageSubsystem, LoadedMap) == 0x000088, "Member 'USaveDataManageSubsystem::LoadedMap' has a wrong offset!");
-static_assert(offsetof(USaveDataManageSubsystem, _AppSaveGame) == 0x0000D8, "Member 'USaveDataManageSubsystem::_AppSaveGame' has a wrong offset!");
-static_assert(offsetof(USaveDataManageSubsystem, _PlayLogSaveGame) == 0x0000E0, "Member 'USaveDataManageSubsystem::_PlayLogSaveGame' has a wrong offset!");
-static_assert(offsetof(USaveDataManageSubsystem, _OptionConfigSaveGame) == 0x0000E8, "Member 'USaveDataManageSubsystem::_OptionConfigSaveGame' has a wrong offset!");
-static_assert(offsetof(USaveDataManageSubsystem, _ReplaySaveGame) == 0x0000F0, "Member 'USaveDataManageSubsystem::_ReplaySaveGame' has a wrong offset!");
-static_assert(offsetof(USaveDataManageSubsystem, _NetSaveGame) == 0x0000F8, "Member 'USaveDataManageSubsystem::_NetSaveGame' has a wrong offset!");
+DUMPER7_ASSERTS_USaveDataManageSubsystem;
 
 // Class UnionSystem.SavingIcon
 // 0x0000 (0x02E0 - 0x02E0)
@@ -4916,15 +5009,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SavingIcon">();
+		STATIC_CLASS_IMPL("SavingIcon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SavingIcon")
 	}
 	static class USavingIcon* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USavingIcon>();
 	}
 };
-static_assert(alignof(USavingIcon) == 0x000008, "Wrong alignment on USavingIcon");
-static_assert(sizeof(USavingIcon) == 0x0002E0, "Wrong size on USavingIcon");
+DUMPER7_ASSERTS_USavingIcon;
 
 // Class UnionSystem.SequenceParameterActor
 // 0x0120 (0x03B0 - 0x0290)
@@ -4954,23 +5050,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SequenceParameterActor">();
+		STATIC_CLASS_IMPL("SequenceParameterActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SequenceParameterActor")
 	}
 	static class ASequenceParameterActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASequenceParameterActor>();
 	}
 };
-static_assert(alignof(ASequenceParameterActor) == 0x000010, "Wrong alignment on ASequenceParameterActor");
-static_assert(sizeof(ASequenceParameterActor) == 0x0003B0, "Wrong size on ASequenceParameterActor");
-static_assert(offsetof(ASequenceParameterActor, SequenceTransform_) == 0x000290, "Member 'ASequenceParameterActor::SequenceTransform_' has a wrong offset!");
-static_assert(offsetof(ASequenceParameterActor, bSequenceVisibility_) == 0x0002F0, "Member 'ASequenceParameterActor::bSequenceVisibility_' has a wrong offset!");
-static_assert(offsetof(ASequenceParameterActor, bSequenceEvent_) == 0x0002F1, "Member 'ASequenceParameterActor::bSequenceEvent_' has a wrong offset!");
-static_assert(offsetof(ASequenceParameterActor, bSequenceMainFloorVisibility_) == 0x0002F2, "Member 'ASequenceParameterActor::bSequenceMainFloorVisibility_' has a wrong offset!");
-static_assert(offsetof(ASequenceParameterActor, bSequenceFloorFrontVisibility_) == 0x0002F3, "Member 'ASequenceParameterActor::bSequenceFloorFrontVisibility_' has a wrong offset!");
-static_assert(offsetof(ASequenceParameterActor, bSequenceFloorBackVisibility_) == 0x0002F4, "Member 'ASequenceParameterActor::bSequenceFloorBackVisibility_' has a wrong offset!");
-static_assert(offsetof(ASequenceParameterActor, bSequenceAccelFloorVisibility_) == 0x0002F5, "Member 'ASequenceParameterActor::bSequenceAccelFloorVisibility_' has a wrong offset!");
-static_assert(offsetof(ASequenceParameterActor, SequenceLabel) == 0x0002F8, "Member 'ASequenceParameterActor::SequenceLabel' has a wrong offset!");
+DUMPER7_ASSERTS_ASequenceParameterActor;
 
 // Class UnionSystem.SequenceTriggerComponent
 // 0x0080 (0x0120 - 0x00A0)
@@ -4978,30 +5069,31 @@ class USequenceTriggerComponent final : public UActorComponent
 {
 public:
 	class FName                                   SequenceParameterLabel;                            // 0x00A0(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USoundAtomCue*                          soundAsset_;                                       // 0x00A8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USoundAtomCue*                          soundAsset_;                                       // 0x00A8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
 	uint8                                         Pad_B0[0x70];                                      // 0x00B0(0x0070)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SequenceTriggerComponent">();
+		STATIC_CLASS_IMPL("SequenceTriggerComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SequenceTriggerComponent")
 	}
 	static class USequenceTriggerComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USequenceTriggerComponent>();
 	}
 };
-static_assert(alignof(USequenceTriggerComponent) == 0x000008, "Wrong alignment on USequenceTriggerComponent");
-static_assert(sizeof(USequenceTriggerComponent) == 0x000120, "Wrong size on USequenceTriggerComponent");
-static_assert(offsetof(USequenceTriggerComponent, SequenceParameterLabel) == 0x0000A0, "Member 'USequenceTriggerComponent::SequenceParameterLabel' has a wrong offset!");
-static_assert(offsetof(USequenceTriggerComponent, soundAsset_) == 0x0000A8, "Member 'USequenceTriggerComponent::soundAsset_' has a wrong offset!");
+DUMPER7_ASSERTS_USequenceTriggerComponent;
 
 // Class UnionSystem.SessionManager
-// 0x0128 (0x0158 - 0x0030)
+// 0x0130 (0x0160 - 0x0030)
 class USessionManager final : public UGameInstanceSubsystem
 {
 public:
-	uint8                                         Pad_30[0x128];                                     // 0x0030(0x0128)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30[0x130];                                     // 0x0030(0x0130)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	bool GetDisplayCode(class FString* displayCode);
@@ -5019,15 +5111,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SessionManager">();
+		STATIC_CLASS_IMPL("SessionManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SessionManager")
 	}
 	static class USessionManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USessionManager>();
 	}
 };
-static_assert(alignof(USessionManager) == 0x000008, "Wrong alignment on USessionManager");
-static_assert(sizeof(USessionManager) == 0x000158, "Wrong size on USessionManager");
+DUMPER7_ASSERTS_USessionManager;
 
 // Class UnionSystem.ShareConfig
 // 0x0040 (0x0078 - 0x0038)
@@ -5042,19 +5137,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ShareConfig">();
+		STATIC_CLASS_IMPL("ShareConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShareConfig")
 	}
 	static class UShareConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UShareConfig>();
 	}
 };
-static_assert(alignof(UShareConfig) == 0x000008, "Wrong alignment on UShareConfig");
-static_assert(sizeof(UShareConfig) == 0x000078, "Wrong size on UShareConfig");
-static_assert(offsetof(UShareConfig, UrlOfficial) == 0x000038, "Member 'UShareConfig::UrlOfficial' has a wrong offset!");
-static_assert(offsetof(UShareConfig, UrlTwitter) == 0x000048, "Member 'UShareConfig::UrlTwitter' has a wrong offset!");
-static_assert(offsetof(UShareConfig, UrlYouTube) == 0x000058, "Member 'UShareConfig::UrlYouTube' has a wrong offset!");
-static_assert(offsetof(UShareConfig, Tags) == 0x000068, "Member 'UShareConfig::Tags' has a wrong offset!");
+DUMPER7_ASSERTS_UShareConfig;
 
 // Class UnionSystem.SimpleAnimEventComponent
 // 0x0020 (0x0140 - 0x0120)
@@ -5067,16 +5161,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SimpleAnimEventComponent">();
+		STATIC_CLASS_IMPL("SimpleAnimEventComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SimpleAnimEventComponent")
 	}
 	static class USimpleAnimEventComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USimpleAnimEventComponent>();
 	}
 };
-static_assert(alignof(USimpleAnimEventComponent) == 0x000010, "Wrong alignment on USimpleAnimEventComponent");
-static_assert(sizeof(USimpleAnimEventComponent) == 0x000140, "Wrong size on USimpleAnimEventComponent");
-static_assert(offsetof(USimpleAnimEventComponent, AnimEventSequence) == 0x000120, "Member 'USimpleAnimEventComponent::AnimEventSequence' has a wrong offset!");
+DUMPER7_ASSERTS_USimpleAnimEventComponent;
 
 // Class UnionSystem.UnionSpeedClassLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -5091,15 +5187,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionSpeedClassLibrary">();
+		STATIC_CLASS_IMPL("UnionSpeedClassLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionSpeedClassLibrary")
 	}
 	static class UUnionSpeedClassLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionSpeedClassLibrary>();
 	}
 };
-static_assert(alignof(UUnionSpeedClassLibrary) == 0x000008, "Wrong alignment on UUnionSpeedClassLibrary");
-static_assert(sizeof(UUnionSpeedClassLibrary) == 0x000028, "Wrong size on UUnionSpeedClassLibrary");
+DUMPER7_ASSERTS_UUnionSpeedClassLibrary;
 
 // Class UnionSystem.StageIdUtilityLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -5139,15 +5238,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"StageIdUtilityLibrary">();
+		STATIC_CLASS_IMPL("StageIdUtilityLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StageIdUtilityLibrary")
 	}
 	static class UStageIdUtilityLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStageIdUtilityLibrary>();
 	}
 };
-static_assert(alignof(UStageIdUtilityLibrary) == 0x000008, "Wrong alignment on UStageIdUtilityLibrary");
-static_assert(sizeof(UStageIdUtilityLibrary) == 0x000028, "Wrong size on UStageIdUtilityLibrary");
+DUMPER7_ASSERTS_UStageIdUtilityLibrary;
 
 // Class UnionSystem.SwitchPlatformUtility
 // 0x0000 (0x0028 - 0x0028)
@@ -5161,15 +5263,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SwitchPlatformUtility">();
+		STATIC_CLASS_IMPL("SwitchPlatformUtility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SwitchPlatformUtility")
 	}
 	static class USwitchPlatformUtility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USwitchPlatformUtility>();
 	}
 };
-static_assert(alignof(USwitchPlatformUtility) == 0x000008, "Wrong alignment on USwitchPlatformUtility");
-static_assert(sizeof(USwitchPlatformUtility) == 0x000028, "Wrong size on USwitchPlatformUtility");
+DUMPER7_ASSERTS_USwitchPlatformUtility;
 
 // Class UnionSystem.TimeTrialVariousLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -5198,15 +5303,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TimeTrialVariousLibrary">();
+		STATIC_CLASS_IMPL("TimeTrialVariousLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TimeTrialVariousLibrary")
 	}
 	static class UTimeTrialVariousLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTimeTrialVariousLibrary>();
 	}
 };
-static_assert(alignof(UTimeTrialVariousLibrary) == 0x000008, "Wrong alignment on UTimeTrialVariousLibrary");
-static_assert(sizeof(UTimeTrialVariousLibrary) == 0x000028, "Wrong size on UTimeTrialVariousLibrary");
+DUMPER7_ASSERTS_UTimeTrialVariousLibrary;
 
 // Class UnionSystem.TransferFunction
 // 0x0000 (0x0028 - 0x0028)
@@ -5215,15 +5323,18 @@ class UTransferFunction final : public UBlueprintFunctionLibrary
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TransferFunction">();
+		STATIC_CLASS_IMPL("TransferFunction")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TransferFunction")
 	}
 	static class UTransferFunction* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTransferFunction>();
 	}
 };
-static_assert(alignof(UTransferFunction) == 0x000008, "Wrong alignment on UTransferFunction");
-static_assert(sizeof(UTransferFunction) == 0x000028, "Wrong size on UTransferFunction");
+DUMPER7_ASSERTS_UTransferFunction;
 
 // Class UnionSystem.UISubsystem
 // 0x0050 (0x0080 - 0x0030)
@@ -5259,21 +5370,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISubsystem">();
+		STATIC_CLASS_IMPL("UISubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISubsystem")
 	}
 	static class UUISubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISubsystem>();
 	}
 };
-static_assert(alignof(UUISubsystem) == 0x000008, "Wrong alignment on UUISubsystem");
-static_assert(sizeof(UUISubsystem) == 0x000080, "Wrong size on UUISubsystem");
-static_assert(offsetof(UUISubsystem, PopupWindow) == 0x000038, "Member 'UUISubsystem::PopupWindow' has a wrong offset!");
-static_assert(offsetof(UUISubsystem, RewardDisplayWidget) == 0x000040, "Member 'UUISubsystem::RewardDisplayWidget' has a wrong offset!");
-static_assert(offsetof(UUISubsystem, FriendListWidget) == 0x000048, "Member 'UUISubsystem::FriendListWidget' has a wrong offset!");
-static_assert(offsetof(UUISubsystem, AdvertiseWidget) == 0x000050, "Member 'UUISubsystem::AdvertiseWidget' has a wrong offset!");
-static_assert(offsetof(UUISubsystem, AutoSaveInfoWidget) == 0x000058, "Member 'UUISubsystem::AutoSaveInfoWidget' has a wrong offset!");
-static_assert(offsetof(UUISubsystem, ProfileErrorWidget) == 0x000060, "Member 'UUISubsystem::ProfileErrorWidget' has a wrong offset!");
+DUMPER7_ASSERTS_UUISubsystem;
 
 // Class UnionSystem.UnionAddOnEpic
 // 0x0070 (0x0098 - 0x0028)
@@ -5285,15 +5393,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionAddOnEpic">();
+		STATIC_CLASS_IMPL("UnionAddOnEpic")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionAddOnEpic")
 	}
 	static class UUnionAddOnEpic* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionAddOnEpic>();
 	}
 };
-static_assert(alignof(UUnionAddOnEpic) == 0x000008, "Wrong alignment on UUnionAddOnEpic");
-static_assert(sizeof(UUnionAddOnEpic) == 0x000098, "Wrong size on UUnionAddOnEpic");
+DUMPER7_ASSERTS_UUnionAddOnEpic;
 
 // Class UnionSystem.UnionAddOnNX
 // 0x0050 (0x0078 - 0x0028)
@@ -5305,15 +5416,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionAddOnNX">();
+		STATIC_CLASS_IMPL("UnionAddOnNX")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionAddOnNX")
 	}
 	static class UUnionAddOnNX* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionAddOnNX>();
 	}
 };
-static_assert(alignof(UUnionAddOnNX) == 0x000008, "Wrong alignment on UUnionAddOnNX");
-static_assert(sizeof(UUnionAddOnNX) == 0x000078, "Wrong size on UUnionAddOnNX");
+DUMPER7_ASSERTS_UUnionAddOnNX;
 
 // Class UnionSystem.UnionAddOnPS
 // 0x0098 (0x00C0 - 0x0028)
@@ -5325,15 +5439,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionAddOnPS">();
+		STATIC_CLASS_IMPL("UnionAddOnPS")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionAddOnPS")
 	}
 	static class UUnionAddOnPS* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionAddOnPS>();
 	}
 };
-static_assert(alignof(UUnionAddOnPS) == 0x000008, "Wrong alignment on UUnionAddOnPS");
-static_assert(sizeof(UUnionAddOnPS) == 0x0000C0, "Wrong size on UUnionAddOnPS");
+DUMPER7_ASSERTS_UUnionAddOnPS;
 
 // Class UnionSystem.UnionStaticMeshComponent
 // 0x0000 (0x05E0 - 0x05E0)
@@ -5349,7 +5466,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionStaticMeshComponent">();
+		STATIC_CLASS_IMPL("UnionStaticMeshComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionStaticMeshComponent")
 	}
 	static class UUnionStaticMeshComponent* GetDefaultObj()
 	{
@@ -5357,8 +5478,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UUnionStaticMeshComponent) == 0x000010, "Wrong alignment on UUnionStaticMeshComponent");
-static_assert(sizeof(UUnionStaticMeshComponent) == 0x0005E0, "Wrong size on UUnionStaticMeshComponent");
+DUMPER7_ASSERTS_UUnionStaticMeshComponent;
 
 // Class UnionSystem.UnionAOStaticMeshComponent
 // 0x0050 (0x0630 - 0x05E0)
@@ -5372,10 +5492,10 @@ public:
 	float                                         Intensity;                                         // 0x05EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DistanceShadow;                                    // 0x05F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         RayLength;                                         // 0x05F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstance*                      MaterialInstance;                                  // 0x05F8(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstanceDynamic*               DynamicMaterialInstance;                           // 0x0600(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Texture2D;                                         // 0x0608(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UStaticMesh*                            StaticShadowMesh;                                  // 0x0610(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstance*                      MaterialInstance;                                  // 0x05F8(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UMaterialInstanceDynamic*               DynamicMaterialInstance;                           // 0x0600(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UTexture2D*                             Texture2D;                                         // 0x0608(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UStaticMesh*                            StaticShadowMesh;                                  // 0x0610(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 	bool                                          IsSetUp;                                           // 0x0618(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_619[0xF];                                      // 0x0619(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUnionStaticMeshComponent*              ShadowMesh;                                        // 0x0628(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -5383,27 +5503,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionAOStaticMeshComponent">();
+		STATIC_CLASS_IMPL("UnionAOStaticMeshComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionAOStaticMeshComponent")
 	}
 	static class UUnionAOStaticMeshComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionAOStaticMeshComponent>();
 	}
 };
-static_assert(alignof(UUnionAOStaticMeshComponent) == 0x000010, "Wrong alignment on UUnionAOStaticMeshComponent");
-static_assert(sizeof(UUnionAOStaticMeshComponent) == 0x000630, "Wrong size on UUnionAOStaticMeshComponent");
-static_assert(offsetof(UUnionAOStaticMeshComponent, IsMesh) == 0x0005D8, "Member 'UUnionAOStaticMeshComponent::IsMesh' has a wrong offset!");
-static_assert(offsetof(UUnionAOStaticMeshComponent, IsAO) == 0x0005D9, "Member 'UUnionAOStaticMeshComponent::IsAO' has a wrong offset!");
-static_assert(offsetof(UUnionAOStaticMeshComponent, ShadowColor) == 0x0005DC, "Member 'UUnionAOStaticMeshComponent::ShadowColor' has a wrong offset!");
-static_assert(offsetof(UUnionAOStaticMeshComponent, Intensity) == 0x0005EC, "Member 'UUnionAOStaticMeshComponent::Intensity' has a wrong offset!");
-static_assert(offsetof(UUnionAOStaticMeshComponent, DistanceShadow) == 0x0005F0, "Member 'UUnionAOStaticMeshComponent::DistanceShadow' has a wrong offset!");
-static_assert(offsetof(UUnionAOStaticMeshComponent, RayLength) == 0x0005F4, "Member 'UUnionAOStaticMeshComponent::RayLength' has a wrong offset!");
-static_assert(offsetof(UUnionAOStaticMeshComponent, MaterialInstance) == 0x0005F8, "Member 'UUnionAOStaticMeshComponent::MaterialInstance' has a wrong offset!");
-static_assert(offsetof(UUnionAOStaticMeshComponent, DynamicMaterialInstance) == 0x000600, "Member 'UUnionAOStaticMeshComponent::DynamicMaterialInstance' has a wrong offset!");
-static_assert(offsetof(UUnionAOStaticMeshComponent, Texture2D) == 0x000608, "Member 'UUnionAOStaticMeshComponent::Texture2D' has a wrong offset!");
-static_assert(offsetof(UUnionAOStaticMeshComponent, StaticShadowMesh) == 0x000610, "Member 'UUnionAOStaticMeshComponent::StaticShadowMesh' has a wrong offset!");
-static_assert(offsetof(UUnionAOStaticMeshComponent, IsSetUp) == 0x000618, "Member 'UUnionAOStaticMeshComponent::IsSetUp' has a wrong offset!");
-static_assert(offsetof(UUnionAOStaticMeshComponent, ShadowMesh) == 0x000628, "Member 'UUnionAOStaticMeshComponent::ShadowMesh' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionAOStaticMeshComponent;
 
 // Class UnionSystem.UnionAtomComponent
 // 0x0080 (0x1370 - 0x12F0)
@@ -5436,23 +5547,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionAtomComponent">();
+		STATIC_CLASS_IMPL("UnionAtomComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionAtomComponent")
 	}
 	static class UUnionAtomComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionAtomComponent>();
 	}
 };
-static_assert(alignof(UUnionAtomComponent) == 0x000010, "Wrong alignment on UUnionAtomComponent");
-static_assert(sizeof(UUnionAtomComponent) == 0x001370, "Wrong size on UUnionAtomComponent");
-static_assert(offsetof(UUnionAtomComponent, bUseRate) == 0x0012F0, "Member 'UUnionAtomComponent::bUseRate' has a wrong offset!");
-static_assert(offsetof(UUnionAtomComponent, StartTime) == 0x0012F4, "Member 'UUnionAtomComponent::StartTime' has a wrong offset!");
-static_assert(offsetof(UUnionAtomComponent, StartTimeRate) == 0x0012F8, "Member 'UUnionAtomComponent::StartTimeRate' has a wrong offset!");
-static_assert(offsetof(UUnionAtomComponent, AutoAttachParent) == 0x001304, "Member 'UUnionAtomComponent::AutoAttachParent' has a wrong offset!");
-static_assert(offsetof(UUnionAtomComponent, AutoAttachSocketName) == 0x00130C, "Member 'UUnionAtomComponent::AutoAttachSocketName' has a wrong offset!");
-static_assert(offsetof(UUnionAtomComponent, AutoAttachLocationRule) == 0x001314, "Member 'UUnionAtomComponent::AutoAttachLocationRule' has a wrong offset!");
-static_assert(offsetof(UUnionAtomComponent, AutoAttachRotationRule) == 0x001315, "Member 'UUnionAtomComponent::AutoAttachRotationRule' has a wrong offset!");
-static_assert(offsetof(UUnionAtomComponent, AutoAttachScaleRule) == 0x001316, "Member 'UUnionAtomComponent::AutoAttachScaleRule' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionAtomComponent;
 
 // Class UnionSystem.UnionBoxComponent
 // 0x0000 (0x0560 - 0x0560)
@@ -5461,15 +5567,18 @@ class UUnionBoxComponent final : public UBoxComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionBoxComponent">();
+		STATIC_CLASS_IMPL("UnionBoxComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionBoxComponent")
 	}
 	static class UUnionBoxComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionBoxComponent>();
 	}
 };
-static_assert(alignof(UUnionBoxComponent) == 0x000010, "Wrong alignment on UUnionBoxComponent");
-static_assert(sizeof(UUnionBoxComponent) == 0x000560, "Wrong size on UUnionBoxComponent");
+DUMPER7_ASSERTS_UUnionBoxComponent;
 
 // Class UnionSystem.UnionCapsuleComponent
 // 0x0000 (0x0550 - 0x0550)
@@ -5478,15 +5587,18 @@ class UUnionCapsuleComponent final : public UCapsuleComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionCapsuleComponent">();
+		STATIC_CLASS_IMPL("UnionCapsuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionCapsuleComponent")
 	}
 	static class UUnionCapsuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionCapsuleComponent>();
 	}
 };
-static_assert(alignof(UUnionCapsuleComponent) == 0x000010, "Wrong alignment on UUnionCapsuleComponent");
-static_assert(sizeof(UUnionCapsuleComponent) == 0x000550, "Wrong size on UUnionCapsuleComponent");
+DUMPER7_ASSERTS_UUnionCapsuleComponent;
 
 // Class UnionSystem.UnionChallengeManager
 // 0x0038 (0x0068 - 0x0030)
@@ -5504,16 +5616,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionChallengeManager">();
+		STATIC_CLASS_IMPL("UnionChallengeManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionChallengeManager")
 	}
 	static class UUnionChallengeManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionChallengeManager>();
 	}
 };
-static_assert(alignof(UUnionChallengeManager) == 0x000008, "Wrong alignment on UUnionChallengeManager");
-static_assert(sizeof(UUnionChallengeManager) == 0x000068, "Wrong size on UUnionChallengeManager");
-static_assert(offsetof(UUnionChallengeManager, ShowChallengeClearNoticeEvent) == 0x000030, "Member 'UUnionChallengeManager::ShowChallengeClearNoticeEvent' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionChallengeManager;
 
 // Class UnionSystem.UnionCombineDescendantBoundsComponent
 // 0x0040 (0x0270 - 0x0230)
@@ -5525,15 +5639,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionCombineDescendantBoundsComponent">();
+		STATIC_CLASS_IMPL("UnionCombineDescendantBoundsComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionCombineDescendantBoundsComponent")
 	}
 	static class UUnionCombineDescendantBoundsComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionCombineDescendantBoundsComponent>();
 	}
 };
-static_assert(alignof(UUnionCombineDescendantBoundsComponent) == 0x000010, "Wrong alignment on UUnionCombineDescendantBoundsComponent");
-static_assert(sizeof(UUnionCombineDescendantBoundsComponent) == 0x000270, "Wrong size on UUnionCombineDescendantBoundsComponent");
+DUMPER7_ASSERTS_UUnionCombineDescendantBoundsComponent;
 
 // Class UnionSystem.ContentDebugMenu
 // 0x0008 (0x0030 - 0x0028)
@@ -5545,23 +5662,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ContentDebugMenu">();
+		STATIC_CLASS_IMPL("ContentDebugMenu")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ContentDebugMenu")
 	}
 	static class UContentDebugMenu* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UContentDebugMenu>();
 	}
 };
-static_assert(alignof(UContentDebugMenu) == 0x000008, "Wrong alignment on UContentDebugMenu");
-static_assert(sizeof(UContentDebugMenu) == 0x000030, "Wrong size on UContentDebugMenu");
+DUMPER7_ASSERTS_UContentDebugMenu;
 
 // Class UnionSystem.UnionContentManager
 // 0x00B0 (0x00D8 - 0x0028)
 class UUnionContentManager final : public UObject
 {
 public:
-	class UUnionAddOnBase*                        m_addOn;                                           // 0x0028(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UContentDebugMenu*                      m_DebugMenu;                                       // 0x0030(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UUnionAddOnBase*                        m_addOn;                                           // 0x0028(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	class UContentDebugMenu*                      m_DebugMenu;                                       // 0x0030(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
 	TArray<int32>                                 m_packageIds;                                      // 0x0038(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	TArray<EDriverId>                             m_serverReleaseDriverList;                         // 0x0048(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	TArray<EMachineId>                            m_serverReleaseMachineList;                        // 0x0058(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
@@ -5571,21 +5691,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionContentManager">();
+		STATIC_CLASS_IMPL("UnionContentManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionContentManager")
 	}
 	static class UUnionContentManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionContentManager>();
 	}
 };
-static_assert(alignof(UUnionContentManager) == 0x000008, "Wrong alignment on UUnionContentManager");
-static_assert(sizeof(UUnionContentManager) == 0x0000D8, "Wrong size on UUnionContentManager");
-static_assert(offsetof(UUnionContentManager, m_addOn) == 0x000028, "Member 'UUnionContentManager::m_addOn' has a wrong offset!");
-static_assert(offsetof(UUnionContentManager, m_DebugMenu) == 0x000030, "Member 'UUnionContentManager::m_DebugMenu' has a wrong offset!");
-static_assert(offsetof(UUnionContentManager, m_packageIds) == 0x000038, "Member 'UUnionContentManager::m_packageIds' has a wrong offset!");
-static_assert(offsetof(UUnionContentManager, m_serverReleaseDriverList) == 0x000048, "Member 'UUnionContentManager::m_serverReleaseDriverList' has a wrong offset!");
-static_assert(offsetof(UUnionContentManager, m_serverReleaseMachineList) == 0x000058, "Member 'UUnionContentManager::m_serverReleaseMachineList' has a wrong offset!");
-static_assert(offsetof(UUnionContentManager, m_serverReleaseAlbumIdList) == 0x000068, "Member 'UUnionContentManager::m_serverReleaseAlbumIdList' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionContentManager;
 
 // Class UnionSystem.ContentDataAsset
 // 0x02F0 (0x0320 - 0x0030)
@@ -5610,26 +5727,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ContentDataAsset">();
+		STATIC_CLASS_IMPL("ContentDataAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ContentDataAsset")
 	}
 	static class UContentDataAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UContentDataAsset>();
 	}
 };
-static_assert(alignof(UContentDataAsset) == 0x000008, "Wrong alignment on UContentDataAsset");
-static_assert(sizeof(UContentDataAsset) == 0x000320, "Wrong size on UContentDataAsset");
-static_assert(offsetof(UContentDataAsset, CharaDLCMap) == 0x000030, "Member 'UContentDataAsset::CharaDLCMap' has a wrong offset!");
-static_assert(offsetof(UContentDataAsset, CharaContentSeverTimeMap) == 0x000080, "Member 'UContentDataAsset::CharaContentSeverTimeMap' has a wrong offset!");
-static_assert(offsetof(UContentDataAsset, MachineDLCMap) == 0x0000D0, "Member 'UContentDataAsset::MachineDLCMap' has a wrong offset!");
-static_assert(offsetof(UContentDataAsset, MachineContentSeverTimeMap) == 0x000120, "Member 'UContentDataAsset::MachineContentSeverTimeMap' has a wrong offset!");
-static_assert(offsetof(UContentDataAsset, StageDLCMap) == 0x000170, "Member 'UContentDataAsset::StageDLCMap' has a wrong offset!");
-static_assert(offsetof(UContentDataAsset, StickerDLCMap) == 0x0001C0, "Member 'UContentDataAsset::StickerDLCMap' has a wrong offset!");
-static_assert(offsetof(UContentDataAsset, HonorOtherTitleDLCMap) == 0x000210, "Member 'UContentDataAsset::HonorOtherTitleDLCMap' has a wrong offset!");
-static_assert(offsetof(UContentDataAsset, AlbumDLCMap) == 0x000260, "Member 'UContentDataAsset::AlbumDLCMap' has a wrong offset!");
-static_assert(offsetof(UContentDataAsset, AlbumSeverTimeMap) == 0x0002B0, "Member 'UContentDataAsset::AlbumSeverTimeMap' has a wrong offset!");
-static_assert(offsetof(UContentDataAsset, PackageDataList) == 0x000300, "Member 'UContentDataAsset::PackageDataList' has a wrong offset!");
-static_assert(offsetof(UContentDataAsset, ServerTimeContent) == 0x000310, "Member 'UContentDataAsset::ServerTimeContent' has a wrong offset!");
+DUMPER7_ASSERTS_UContentDataAsset;
 
 // Class UnionSystem.UnionContentUtils
 // 0x0000 (0x0028 - 0x0028)
@@ -5660,15 +5769,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionContentUtils">();
+		STATIC_CLASS_IMPL("UnionContentUtils")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionContentUtils")
 	}
 	static class UUnionContentUtils* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionContentUtils>();
 	}
 };
-static_assert(alignof(UUnionContentUtils) == 0x000008, "Wrong alignment on UUnionContentUtils");
-static_assert(sizeof(UUnionContentUtils) == 0x000028, "Wrong size on UUnionContentUtils");
+DUMPER7_ASSERTS_UUnionContentUtils;
 
 // Class UnionSystem.UnionCueSheetIdDataAsset
 // 0x0000 (0x0030 - 0x0030)
@@ -5677,15 +5789,18 @@ class UUnionCueSheetIdDataAsset : public UDataAsset
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionCueSheetIdDataAsset">();
+		STATIC_CLASS_IMPL("UnionCueSheetIdDataAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionCueSheetIdDataAsset")
 	}
 	static class UUnionCueSheetIdDataAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionCueSheetIdDataAsset>();
 	}
 };
-static_assert(alignof(UUnionCueSheetIdDataAsset) == 0x000008, "Wrong alignment on UUnionCueSheetIdDataAsset");
-static_assert(sizeof(UUnionCueSheetIdDataAsset) == 0x000030, "Wrong size on UUnionCueSheetIdDataAsset");
+DUMPER7_ASSERTS_UUnionCueSheetIdDataAsset;
 
 // Class UnionSystem.UnionCueSheetIdDataAsset_01_Union
 // 0x0000 (0x0030 - 0x0030)
@@ -5694,15 +5809,18 @@ class UUnionCueSheetIdDataAsset_01_Union final : public UUnionCueSheetIdDataAsse
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionCueSheetIdDataAsset_01_Union">();
+		STATIC_CLASS_IMPL("UnionCueSheetIdDataAsset_01_Union")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionCueSheetIdDataAsset_01_Union")
 	}
 	static class UUnionCueSheetIdDataAsset_01_Union* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionCueSheetIdDataAsset_01_Union>();
 	}
 };
-static_assert(alignof(UUnionCueSheetIdDataAsset_01_Union) == 0x000008, "Wrong alignment on UUnionCueSheetIdDataAsset_01_Union");
-static_assert(sizeof(UUnionCueSheetIdDataAsset_01_Union) == 0x000030, "Wrong size on UUnionCueSheetIdDataAsset_01_Union");
+DUMPER7_ASSERTS_UUnionCueSheetIdDataAsset_01_Union;
 
 // Class UnionSystem.UnionCueSheetIdDataAsset_02_Union
 // 0x0000 (0x0030 - 0x0030)
@@ -5711,15 +5829,18 @@ class UUnionCueSheetIdDataAsset_02_Union final : public UUnionCueSheetIdDataAsse
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionCueSheetIdDataAsset_02_Union">();
+		STATIC_CLASS_IMPL("UnionCueSheetIdDataAsset_02_Union")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionCueSheetIdDataAsset_02_Union")
 	}
 	static class UUnionCueSheetIdDataAsset_02_Union* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionCueSheetIdDataAsset_02_Union>();
 	}
 };
-static_assert(alignof(UUnionCueSheetIdDataAsset_02_Union) == 0x000008, "Wrong alignment on UUnionCueSheetIdDataAsset_02_Union");
-static_assert(sizeof(UUnionCueSheetIdDataAsset_02_Union) == 0x000030, "Wrong size on UUnionCueSheetIdDataAsset_02_Union");
+DUMPER7_ASSERTS_UUnionCueSheetIdDataAsset_02_Union;
 
 // Class UnionSystem.UnionCueSheetIdDataAsset_03_Union
 // 0x0000 (0x0030 - 0x0030)
@@ -5728,15 +5849,18 @@ class UUnionCueSheetIdDataAsset_03_Union final : public UUnionCueSheetIdDataAsse
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionCueSheetIdDataAsset_03_Union">();
+		STATIC_CLASS_IMPL("UnionCueSheetIdDataAsset_03_Union")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionCueSheetIdDataAsset_03_Union")
 	}
 	static class UUnionCueSheetIdDataAsset_03_Union* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionCueSheetIdDataAsset_03_Union>();
 	}
 };
-static_assert(alignof(UUnionCueSheetIdDataAsset_03_Union) == 0x000008, "Wrong alignment on UUnionCueSheetIdDataAsset_03_Union");
-static_assert(sizeof(UUnionCueSheetIdDataAsset_03_Union) == 0x000030, "Wrong size on UUnionCueSheetIdDataAsset_03_Union");
+DUMPER7_ASSERTS_UUnionCueSheetIdDataAsset_03_Union;
 
 // Class UnionSystem.UnionCueSheetIdDataAsset_04_Union
 // 0x0000 (0x0030 - 0x0030)
@@ -5745,32 +5869,18 @@ class UUnionCueSheetIdDataAsset_04_Union final : public UUnionCueSheetIdDataAsse
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionCueSheetIdDataAsset_04_Union">();
+		STATIC_CLASS_IMPL("UnionCueSheetIdDataAsset_04_Union")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionCueSheetIdDataAsset_04_Union")
 	}
 	static class UUnionCueSheetIdDataAsset_04_Union* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionCueSheetIdDataAsset_04_Union>();
 	}
 };
-static_assert(alignof(UUnionCueSheetIdDataAsset_04_Union) == 0x000008, "Wrong alignment on UUnionCueSheetIdDataAsset_04_Union");
-static_assert(sizeof(UUnionCueSheetIdDataAsset_04_Union) == 0x000030, "Wrong size on UUnionCueSheetIdDataAsset_04_Union");
-
-// Class UnionSystem.UnionCueSheetIdDataAsset_05_Union
-// 0x0000 (0x0030 - 0x0030)
-class UUnionCueSheetIdDataAsset_05_Union final : public UUnionCueSheetIdDataAsset
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"UnionCueSheetIdDataAsset_05_Union">();
-	}
-	static class UUnionCueSheetIdDataAsset_05_Union* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UUnionCueSheetIdDataAsset_05_Union>();
-	}
-};
-static_assert(alignof(UUnionCueSheetIdDataAsset_05_Union) == 0x000008, "Wrong alignment on UUnionCueSheetIdDataAsset_05_Union");
-static_assert(sizeof(UUnionCueSheetIdDataAsset_05_Union) == 0x000030, "Wrong size on UUnionCueSheetIdDataAsset_05_Union");
+DUMPER7_ASSERTS_UUnionCueSheetIdDataAsset_04_Union;
 
 // Class UnionSystem.UnionDateTime
 // 0x0000 (0x0028 - 0x0028)
@@ -5794,15 +5904,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionDateTime">();
+		STATIC_CLASS_IMPL("UnionDateTime")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionDateTime")
 	}
 	static class UUnionDateTime* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionDateTime>();
 	}
 };
-static_assert(alignof(UUnionDateTime) == 0x000008, "Wrong alignment on UUnionDateTime");
-static_assert(sizeof(UUnionDateTime) == 0x000028, "Wrong size on UUnionDateTime");
+DUMPER7_ASSERTS_UUnionDateTime;
 
 // Class UnionSystem.NiagaraWatcher
 // 0x0018 (0x0040 - 0x0028)
@@ -5814,15 +5927,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraWatcher">();
+		STATIC_CLASS_IMPL("NiagaraWatcher")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraWatcher")
 	}
 	static class UNiagaraWatcher* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraWatcher>();
 	}
 };
-static_assert(alignof(UNiagaraWatcher) == 0x000008, "Wrong alignment on UNiagaraWatcher");
-static_assert(sizeof(UNiagaraWatcher) == 0x000040, "Wrong size on UNiagaraWatcher");
+DUMPER7_ASSERTS_UNiagaraWatcher;
 
 // Class UnionSystem.DebugViewBlueprintFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -5839,15 +5955,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DebugViewBlueprintFunctionLibrary">();
+		STATIC_CLASS_IMPL("DebugViewBlueprintFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DebugViewBlueprintFunctionLibrary")
 	}
 	static class UDebugViewBlueprintFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDebugViewBlueprintFunctionLibrary>();
 	}
 };
-static_assert(alignof(UDebugViewBlueprintFunctionLibrary) == 0x000008, "Wrong alignment on UDebugViewBlueprintFunctionLibrary");
-static_assert(sizeof(UDebugViewBlueprintFunctionLibrary) == 0x000028, "Wrong size on UDebugViewBlueprintFunctionLibrary");
+DUMPER7_ASSERTS_UDebugViewBlueprintFunctionLibrary;
 
 // Class UnionSystem.DebugViewGameplayStatics
 // 0x0000 (0x0028 - 0x0028)
@@ -5856,15 +5975,18 @@ class UDebugViewGameplayStatics final : public UGameplayStatics
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DebugViewGameplayStatics">();
+		STATIC_CLASS_IMPL("DebugViewGameplayStatics")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DebugViewGameplayStatics")
 	}
 	static class UDebugViewGameplayStatics* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDebugViewGameplayStatics>();
 	}
 };
-static_assert(alignof(UDebugViewGameplayStatics) == 0x000008, "Wrong alignment on UDebugViewGameplayStatics");
-static_assert(sizeof(UDebugViewGameplayStatics) == 0x000028, "Wrong size on UDebugViewGameplayStatics");
+DUMPER7_ASSERTS_UDebugViewGameplayStatics;
 
 // Class UnionSystem.UnionDebugMayaCameraController
 // 0x0078 (0x08D0 - 0x0858)
@@ -5876,15 +5998,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionDebugMayaCameraController">();
+		STATIC_CLASS_IMPL("UnionDebugMayaCameraController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionDebugMayaCameraController")
 	}
 	static class AUnionDebugMayaCameraController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AUnionDebugMayaCameraController>();
 	}
 };
-static_assert(alignof(AUnionDebugMayaCameraController) == 0x000008, "Wrong alignment on AUnionDebugMayaCameraController");
-static_assert(sizeof(AUnionDebugMayaCameraController) == 0x0008D0, "Wrong size on AUnionDebugMayaCameraController");
+DUMPER7_ASSERTS_AUnionDebugMayaCameraController;
 
 // Class UnionSystem.UnionDeviceSelector
 // 0x0068 (0x0090 - 0x0028)
@@ -5896,15 +6021,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionDeviceSelector">();
+		STATIC_CLASS_IMPL("UnionDeviceSelector")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionDeviceSelector")
 	}
 	static class UUnionDeviceSelector* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionDeviceSelector>();
 	}
 };
-static_assert(alignof(UUnionDeviceSelector) == 0x000008, "Wrong alignment on UUnionDeviceSelector");
-static_assert(sizeof(UUnionDeviceSelector) == 0x000090, "Wrong size on UUnionDeviceSelector");
+DUMPER7_ASSERTS_UUnionDeviceSelector;
 
 // Class UnionSystem.UnionErrorDebugMenu
 // 0x0010 (0x0038 - 0x0028)
@@ -5916,15 +6044,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionErrorDebugMenu">();
+		STATIC_CLASS_IMPL("UnionErrorDebugMenu")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionErrorDebugMenu")
 	}
 	static class UUnionErrorDebugMenu* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionErrorDebugMenu>();
 	}
 };
-static_assert(alignof(UUnionErrorDebugMenu) == 0x000008, "Wrong alignment on UUnionErrorDebugMenu");
-static_assert(sizeof(UUnionErrorDebugMenu) == 0x000038, "Wrong size on UUnionErrorDebugMenu");
+DUMPER7_ASSERTS_UUnionErrorDebugMenu;
 
 // Class UnionSystem.UnionErrorManager
 // 0x00A8 (0x00D8 - 0x0030)
@@ -5934,7 +6065,7 @@ public:
 	uint8                                         Pad_30[0x8];                                       // 0x0030(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	class UNetworkLastError*                      m_NetworkLastError;                                // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UUnionErrorDebugMenu*                   m_ErrorDebugMenu;                                  // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UUnionErrorViewer*                      m_ErrorViewer;                                     // 0x0048(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UUnionErrorViewer*                      m_ErrorViewer;                                     // 0x0048(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
 	uint8                                         Pad_50[0x88];                                      // 0x0050(0x0088)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -5945,18 +6076,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionErrorManager">();
+		STATIC_CLASS_IMPL("UnionErrorManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionErrorManager")
 	}
 	static class UUnionErrorManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionErrorManager>();
 	}
 };
-static_assert(alignof(UUnionErrorManager) == 0x000008, "Wrong alignment on UUnionErrorManager");
-static_assert(sizeof(UUnionErrorManager) == 0x0000D8, "Wrong size on UUnionErrorManager");
-static_assert(offsetof(UUnionErrorManager, m_NetworkLastError) == 0x000038, "Member 'UUnionErrorManager::m_NetworkLastError' has a wrong offset!");
-static_assert(offsetof(UUnionErrorManager, m_ErrorDebugMenu) == 0x000040, "Member 'UUnionErrorManager::m_ErrorDebugMenu' has a wrong offset!");
-static_assert(offsetof(UUnionErrorManager, m_ErrorViewer) == 0x000048, "Member 'UUnionErrorManager::m_ErrorViewer' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionErrorManager;
 
 // Class UnionSystem.UnionErrorUtils
 // 0x0000 (0x0028 - 0x0028)
@@ -5967,6 +6098,7 @@ public:
 	static void DbgSetNetworkErrorWithString(EOnlineErrorId ErrorID, const class FString& BodyStr);
 	static void DbgSetNetworkErrorWithText(EOnlineErrorId ErrorID, const class FText& BodyText);
 	static EErrorLevel GetErrorLevel();
+	static ELobbyAddFairPointErrorType GetLobbyAddFairPointErrorType();
 	static class FText GetOnlineErrorBodyText(EOnlineErrorId ErrorID, int32 AppendId, int32 NetworkDelayLevel, EPopupWindowType WindowType);
 	static class FText GetOnlineErrorReturnMenuText(EOnlineErrorId ErrorID, int32 AppendId);
 	static const class FText GetOnlineErrorTitleText(EOnlineErrorId ErrorID);
@@ -5986,15 +6118,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionErrorUtils">();
+		STATIC_CLASS_IMPL("UnionErrorUtils")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionErrorUtils")
 	}
 	static class UUnionErrorUtils* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionErrorUtils>();
 	}
 };
-static_assert(alignof(UUnionErrorUtils) == 0x000008, "Wrong alignment on UUnionErrorUtils");
-static_assert(sizeof(UUnionErrorUtils) == 0x000028, "Wrong size on UUnionErrorUtils");
+DUMPER7_ASSERTS_UUnionErrorUtils;
 
 // Class UnionSystem.UnionErrorViewer
 // 0x0000 (0x0028 - 0x0028)
@@ -6003,15 +6138,18 @@ class UUnionErrorViewer : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionErrorViewer">();
+		STATIC_CLASS_IMPL("UnionErrorViewer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionErrorViewer")
 	}
 	static class UUnionErrorViewer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionErrorViewer>();
 	}
 };
-static_assert(alignof(UUnionErrorViewer) == 0x000008, "Wrong alignment on UUnionErrorViewer");
-static_assert(sizeof(UUnionErrorViewer) == 0x000028, "Wrong size on UUnionErrorViewer");
+DUMPER7_ASSERTS_UUnionErrorViewer;
 
 // Class UnionSystem.UnionExecuteConsoleCommandBP
 // 0x0000 (0x0028 - 0x0028)
@@ -6027,15 +6165,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionExecuteConsoleCommandBP">();
+		STATIC_CLASS_IMPL("UnionExecuteConsoleCommandBP")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionExecuteConsoleCommandBP")
 	}
 	static class UUnionExecuteConsoleCommandBP* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionExecuteConsoleCommandBP>();
 	}
 };
-static_assert(alignof(UUnionExecuteConsoleCommandBP) == 0x000008, "Wrong alignment on UUnionExecuteConsoleCommandBP");
-static_assert(sizeof(UUnionExecuteConsoleCommandBP) == 0x000028, "Wrong size on UUnionExecuteConsoleCommandBP");
+DUMPER7_ASSERTS_UUnionExecuteConsoleCommandBP;
 
 // Class UnionSystem.UnionForceFeedbackManager
 // 0x01A8 (0x01D0 - 0x0028)
@@ -6049,16 +6190,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionForceFeedbackManager">();
+		STATIC_CLASS_IMPL("UnionForceFeedbackManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionForceFeedbackManager")
 	}
 	static class UUnionForceFeedbackManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionForceFeedbackManager>();
 	}
 };
-static_assert(alignof(UUnionForceFeedbackManager) == 0x000008, "Wrong alignment on UUnionForceFeedbackManager");
-static_assert(sizeof(UUnionForceFeedbackManager) == 0x0001D0, "Wrong size on UUnionForceFeedbackManager");
-static_assert(offsetof(UUnionForceFeedbackManager, PresetForceFeedbackEffects) == 0x000038, "Member 'UUnionForceFeedbackManager::PresetForceFeedbackEffects' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionForceFeedbackManager;
 
 // Class UnionSystem.UnionForceFeedbackLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -6078,15 +6221,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionForceFeedbackLibrary">();
+		STATIC_CLASS_IMPL("UnionForceFeedbackLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionForceFeedbackLibrary")
 	}
 	static class UUnionForceFeedbackLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionForceFeedbackLibrary>();
 	}
 };
-static_assert(alignof(UUnionForceFeedbackLibrary) == 0x000008, "Wrong alignment on UUnionForceFeedbackLibrary");
-static_assert(sizeof(UUnionForceFeedbackLibrary) == 0x000028, "Wrong size on UUnionForceFeedbackLibrary");
+DUMPER7_ASSERTS_UUnionForceFeedbackLibrary;
 
 // Class UnionSystem.UnionGameInstanceSubsystem
 // 0x0220 (0x0250 - 0x0030)
@@ -6109,15 +6255,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionGameInstanceSubsystem">();
+		STATIC_CLASS_IMPL("UnionGameInstanceSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionGameInstanceSubsystem")
 	}
 	static class UUnionGameInstanceSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionGameInstanceSubsystem>();
 	}
 };
-static_assert(alignof(UUnionGameInstanceSubsystem) == 0x000008, "Wrong alignment on UUnionGameInstanceSubsystem");
-static_assert(sizeof(UUnionGameInstanceSubsystem) == 0x000250, "Wrong size on UUnionGameInstanceSubsystem");
+DUMPER7_ASSERTS_UUnionGameInstanceSubsystem;
 
 // Class UnionSystem.UnionGraph
 // 0x0010 (0x0038 - 0x0028)
@@ -6133,15 +6282,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionGraph">();
+		STATIC_CLASS_IMPL("UnionGraph")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionGraph")
 	}
 	static class UUnionGraph* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionGraph>();
 	}
 };
-static_assert(alignof(UUnionGraph) == 0x000008, "Wrong alignment on UUnionGraph");
-static_assert(sizeof(UUnionGraph) == 0x000038, "Wrong size on UUnionGraph");
+DUMPER7_ASSERTS_UUnionGraph;
 
 // Class UnionSystem.InputModifierAbsHighPass
 // 0x0008 (0x0030 - 0x0028)
@@ -6154,16 +6306,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputModifierAbsHighPass">();
+		STATIC_CLASS_IMPL("InputModifierAbsHighPass")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputModifierAbsHighPass")
 	}
 	static class UInputModifierAbsHighPass* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputModifierAbsHighPass>();
 	}
 };
-static_assert(alignof(UInputModifierAbsHighPass) == 0x000008, "Wrong alignment on UInputModifierAbsHighPass");
-static_assert(sizeof(UInputModifierAbsHighPass) == 0x000030, "Wrong size on UInputModifierAbsHighPass");
-static_assert(offsetof(UInputModifierAbsHighPass, Threshold) == 0x000028, "Member 'UInputModifierAbsHighPass::Threshold' has a wrong offset!");
+DUMPER7_ASSERTS_UInputModifierAbsHighPass;
 
 // Class UnionSystem.InputModifierAxisToBool
 // 0x0008 (0x0030 - 0x0028)
@@ -6176,17 +6330,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputModifierAxisToBool">();
+		STATIC_CLASS_IMPL("InputModifierAxisToBool")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputModifierAxisToBool")
 	}
 	static class UInputModifierAxisToBool* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputModifierAxisToBool>();
 	}
 };
-static_assert(alignof(UInputModifierAxisToBool) == 0x000008, "Wrong alignment on UInputModifierAxisToBool");
-static_assert(sizeof(UInputModifierAxisToBool) == 0x000030, "Wrong size on UInputModifierAxisToBool");
-static_assert(offsetof(UInputModifierAxisToBool, Min) == 0x000028, "Member 'UInputModifierAxisToBool::Min' has a wrong offset!");
-static_assert(offsetof(UInputModifierAxisToBool, Max) == 0x00002C, "Member 'UInputModifierAxisToBool::Max' has a wrong offset!");
+DUMPER7_ASSERTS_UInputModifierAxisToBool;
 
 // Class UnionSystem.UnionManaPlayer
 // 0x00F0 (0x0118 - 0x0028)
@@ -6272,30 +6427,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionManaPlayer">();
+		STATIC_CLASS_IMPL("UnionManaPlayer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionManaPlayer")
 	}
 	static class UUnionManaPlayer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionManaPlayer>();
 	}
 };
-static_assert(alignof(UUnionManaPlayer) == 0x000008, "Wrong alignment on UUnionManaPlayer");
-static_assert(sizeof(UUnionManaPlayer) == 0x000118, "Wrong size on UUnionManaPlayer");
-static_assert(offsetof(UUnionManaPlayer, OnEndReached) == 0x000030, "Member 'UUnionManaPlayer::OnEndReached' has a wrong offset!");
-static_assert(offsetof(UUnionManaPlayer, OnMovieClosed) == 0x000040, "Member 'UUnionManaPlayer::OnMovieClosed' has a wrong offset!");
-static_assert(offsetof(UUnionManaPlayer, OnMovieOpened) == 0x000050, "Member 'UUnionManaPlayer::OnMovieOpened' has a wrong offset!");
-static_assert(offsetof(UUnionManaPlayer, OnMovieOpenFailed) == 0x000060, "Member 'UUnionManaPlayer::OnMovieOpenFailed' has a wrong offset!");
-static_assert(offsetof(UUnionManaPlayer, OnPlaybackResumed) == 0x000070, "Member 'UUnionManaPlayer::OnPlaybackResumed' has a wrong offset!");
-static_assert(offsetof(UUnionManaPlayer, OnPlaybackSuspended) == 0x000080, "Member 'UUnionManaPlayer::OnPlaybackSuspended' has a wrong offset!");
-static_assert(offsetof(UUnionManaPlayer, OnSeekCompleted) == 0x000090, "Member 'UUnionManaPlayer::OnSeekCompleted' has a wrong offset!");
-static_assert(offsetof(UUnionManaPlayer, OnTracksChanged) == 0x0000A0, "Member 'UUnionManaPlayer::OnTracksChanged' has a wrong offset!");
-static_assert(offsetof(UUnionManaPlayer, OnSubtitleChanged) == 0x0000B0, "Member 'UUnionManaPlayer::OnSubtitleChanged' has a wrong offset!");
-static_assert(offsetof(UUnionManaPlayer, OnEventPoint) == 0x0000C0, "Member 'UUnionManaPlayer::OnEventPoint' has a wrong offset!");
-static_assert(offsetof(UUnionManaPlayer, _ManaPlayer) == 0x0000D0, "Member 'UUnionManaPlayer::_ManaPlayer' has a wrong offset!");
-static_assert(offsetof(UUnionManaPlayer, _ManaMovie) == 0x0000D8, "Member 'UUnionManaPlayer::_ManaMovie' has a wrong offset!");
-static_assert(offsetof(UUnionManaPlayer, _ManaTexture) == 0x0000E0, "Member 'UUnionManaPlayer::_ManaTexture' has a wrong offset!");
-static_assert(offsetof(UUnionManaPlayer, _Material) == 0x0000E8, "Member 'UUnionManaPlayer::_Material' has a wrong offset!");
-static_assert(offsetof(UUnionManaPlayer, _Cue) == 0x0000F8, "Member 'UUnionManaPlayer::_Cue' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionManaPlayer;
 
 // Class UnionSystem.UnionNetRequestTimeManager
 // 0x0060 (0x0090 - 0x0030)
@@ -6317,16 +6460,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionNetRequestTimeManager">();
+		STATIC_CLASS_IMPL("UnionNetRequestTimeManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionNetRequestTimeManager")
 	}
 	static class UUnionNetRequestTimeManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionNetRequestTimeManager>();
 	}
 };
-static_assert(alignof(UUnionNetRequestTimeManager) == 0x000008, "Wrong alignment on UUnionNetRequestTimeManager");
-static_assert(sizeof(UUnionNetRequestTimeManager) == 0x000090, "Wrong size on UUnionNetRequestTimeManager");
-static_assert(offsetof(UUnionNetRequestTimeManager, LastRequestTime) == 0x000030, "Member 'UUnionNetRequestTimeManager::LastRequestTime' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionNetRequestTimeManager;
 
 // Class UnionSystem.UnionNetUtils
 // 0x0000 (0x0028 - 0x0028)
@@ -6367,15 +6512,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionNetUtils">();
+		STATIC_CLASS_IMPL("UnionNetUtils")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionNetUtils")
 	}
 	static class UUnionNetUtils* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionNetUtils>();
 	}
 };
-static_assert(alignof(UUnionNetUtils) == 0x000008, "Wrong alignment on UUnionNetUtils");
-static_assert(sizeof(UUnionNetUtils) == 0x000028, "Wrong size on UUnionNetUtils");
+DUMPER7_ASSERTS_UUnionNetUtils;
 
 // Class UnionSystem.NetworkLastError
 // 0x0188 (0x01B0 - 0x0028)
@@ -6387,15 +6535,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NetworkLastError">();
+		STATIC_CLASS_IMPL("NetworkLastError")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NetworkLastError")
 	}
 	static class UNetworkLastError* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNetworkLastError>();
 	}
 };
-static_assert(alignof(UNetworkLastError) == 0x000008, "Wrong alignment on UNetworkLastError");
-static_assert(sizeof(UNetworkLastError) == 0x0001B0, "Wrong size on UNetworkLastError");
+DUMPER7_ASSERTS_UNetworkLastError;
 
 // Class UnionSystem.UnionNiagaraComponents
 // 0x0000 (0x0780 - 0x0780)
@@ -6404,15 +6555,18 @@ class UUnionNiagaraComponents final : public UNiagaraComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionNiagaraComponents">();
+		STATIC_CLASS_IMPL("UnionNiagaraComponents")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionNiagaraComponents")
 	}
 	static class UUnionNiagaraComponents* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionNiagaraComponents>();
 	}
 };
-static_assert(alignof(UUnionNiagaraComponents) == 0x000010, "Wrong alignment on UUnionNiagaraComponents");
-static_assert(sizeof(UUnionNiagaraComponents) == 0x000780, "Wrong size on UUnionNiagaraComponents");
+DUMPER7_ASSERTS_UUnionNiagaraComponents;
 
 // Class UnionSystem.UnionPlatformDebugMenu
 // 0x0080 (0x00A8 - 0x0028)
@@ -6428,28 +6582,31 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionPlatformDebugMenu">();
+		STATIC_CLASS_IMPL("UnionPlatformDebugMenu")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionPlatformDebugMenu")
 	}
 	static class UUnionPlatformDebugMenu* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionPlatformDebugMenu>();
 	}
 };
-static_assert(alignof(UUnionPlatformDebugMenu) == 0x000008, "Wrong alignment on UUnionPlatformDebugMenu");
-static_assert(sizeof(UUnionPlatformDebugMenu) == 0x0000A8, "Wrong size on UUnionPlatformDebugMenu");
+DUMPER7_ASSERTS_UUnionPlatformDebugMenu;
 
 // Class UnionSystem.UnionPlatformManager
-// 0x0180 (0x01B0 - 0x0030)
+// 0x01A8 (0x01D8 - 0x0030)
 class UUnionPlatformManager final : public UGameInstanceSubsystem
 {
 public:
 	uint8                                         Pad_30[0x28];                                      // 0x0030(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionPlatformDebugMenu*                m_DebugMenu;                                       // 0x0058(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UUnionDeviceSelector*                   m_XboxDeviceSelector;                              // 0x0060(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UUnionPlatformSoftwareKeyboardBase*     m_SoftwareKeyboard;                                // 0x0068(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UUnionPlatformDebugMenu*                m_DebugMenu;                                       // 0x0058(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	class UUnionDeviceSelector*                   m_XboxDeviceSelector;                              // 0x0060(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	class UUnionPlatformSoftwareKeyboardBase*     m_SoftwareKeyboard;                                // 0x0068(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
 	uint8                                         Pad_70[0x118];                                     // 0x0070(0x0118)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionContentManager*                   m_ContentManager;                                  // 0x0188(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_190[0x20];                                     // 0x0190(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UUnionContentManager*                   m_ContentManager;                                  // 0x0188(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	uint8                                         Pad_190[0x48];                                     // 0x0190(0x0048)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnPlatformEvent(const struct FUnionPlatformEventInfo& EventInfo);
@@ -6457,19 +6614,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionPlatformManager">();
+		STATIC_CLASS_IMPL("UnionPlatformManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionPlatformManager")
 	}
 	static class UUnionPlatformManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionPlatformManager>();
 	}
 };
-static_assert(alignof(UUnionPlatformManager) == 0x000008, "Wrong alignment on UUnionPlatformManager");
-static_assert(sizeof(UUnionPlatformManager) == 0x0001B0, "Wrong size on UUnionPlatformManager");
-static_assert(offsetof(UUnionPlatformManager, m_DebugMenu) == 0x000058, "Member 'UUnionPlatformManager::m_DebugMenu' has a wrong offset!");
-static_assert(offsetof(UUnionPlatformManager, m_XboxDeviceSelector) == 0x000060, "Member 'UUnionPlatformManager::m_XboxDeviceSelector' has a wrong offset!");
-static_assert(offsetof(UUnionPlatformManager, m_SoftwareKeyboard) == 0x000068, "Member 'UUnionPlatformManager::m_SoftwareKeyboard' has a wrong offset!");
-static_assert(offsetof(UUnionPlatformManager, m_ContentManager) == 0x000188, "Member 'UUnionPlatformManager::m_ContentManager' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionPlatformManager;
 
 // Class UnionSystem.UnionPlatformSignInBase
 // 0x0008 (0x0030 - 0x0028)
@@ -6481,15 +6637,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionPlatformSignInBase">();
+		STATIC_CLASS_IMPL("UnionPlatformSignInBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionPlatformSignInBase")
 	}
 	static class UUnionPlatformSignInBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionPlatformSignInBase>();
 	}
 };
-static_assert(alignof(UUnionPlatformSignInBase) == 0x000008, "Wrong alignment on UUnionPlatformSignInBase");
-static_assert(sizeof(UUnionPlatformSignInBase) == 0x000030, "Wrong size on UUnionPlatformSignInBase");
+DUMPER7_ASSERTS_UUnionPlatformSignInBase;
 
 // Class UnionSystem.UnionPlatformSignInEpic
 // 0x0080 (0x00B0 - 0x0030)
@@ -6501,15 +6660,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionPlatformSignInEpic">();
+		STATIC_CLASS_IMPL("UnionPlatformSignInEpic")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionPlatformSignInEpic")
 	}
 	static class UUnionPlatformSignInEpic* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionPlatformSignInEpic>();
 	}
 };
-static_assert(alignof(UUnionPlatformSignInEpic) == 0x000008, "Wrong alignment on UUnionPlatformSignInEpic");
-static_assert(sizeof(UUnionPlatformSignInEpic) == 0x0000B0, "Wrong size on UUnionPlatformSignInEpic");
+DUMPER7_ASSERTS_UUnionPlatformSignInEpic;
 
 // Class UnionSystem.UnionPlatformSignInSteam
 // 0x0080 (0x00B0 - 0x0030)
@@ -6521,15 +6683,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionPlatformSignInSteam">();
+		STATIC_CLASS_IMPL("UnionPlatformSignInSteam")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionPlatformSignInSteam")
 	}
 	static class UUnionPlatformSignInSteam* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionPlatformSignInSteam>();
 	}
 };
-static_assert(alignof(UUnionPlatformSignInSteam) == 0x000008, "Wrong alignment on UUnionPlatformSignInSteam");
-static_assert(sizeof(UUnionPlatformSignInSteam) == 0x0000B0, "Wrong size on UUnionPlatformSignInSteam");
+DUMPER7_ASSERTS_UUnionPlatformSignInSteam;
 
 // Class UnionSystem.UnionPlatformSoftwareKeyboardBase
 // 0x0008 (0x0030 - 0x0028)
@@ -6541,15 +6706,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionPlatformSoftwareKeyboardBase">();
+		STATIC_CLASS_IMPL("UnionPlatformSoftwareKeyboardBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionPlatformSoftwareKeyboardBase")
 	}
 	static class UUnionPlatformSoftwareKeyboardBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionPlatformSoftwareKeyboardBase>();
 	}
 };
-static_assert(alignof(UUnionPlatformSoftwareKeyboardBase) == 0x000008, "Wrong alignment on UUnionPlatformSoftwareKeyboardBase");
-static_assert(sizeof(UUnionPlatformSoftwareKeyboardBase) == 0x000030, "Wrong size on UUnionPlatformSoftwareKeyboardBase");
+DUMPER7_ASSERTS_UUnionPlatformSoftwareKeyboardBase;
 
 // Class UnionSystem.UnionPlatformSoftwareKeyboardSteam
 // 0x00E0 (0x0110 - 0x0030)
@@ -6561,15 +6729,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionPlatformSoftwareKeyboardSteam">();
+		STATIC_CLASS_IMPL("UnionPlatformSoftwareKeyboardSteam")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionPlatformSoftwareKeyboardSteam")
 	}
 	static class UUnionPlatformSoftwareKeyboardSteam* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionPlatformSoftwareKeyboardSteam>();
 	}
 };
-static_assert(alignof(UUnionPlatformSoftwareKeyboardSteam) == 0x000008, "Wrong alignment on UUnionPlatformSoftwareKeyboardSteam");
-static_assert(sizeof(UUnionPlatformSoftwareKeyboardSteam) == 0x000110, "Wrong size on UUnionPlatformSoftwareKeyboardSteam");
+DUMPER7_ASSERTS_UUnionPlatformSoftwareKeyboardSteam;
 
 // Class UnionSystem.UnionPlatformUtils
 // 0x0000 (0x0028 - 0x0028)
@@ -6605,15 +6776,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionPlatformUtils">();
+		STATIC_CLASS_IMPL("UnionPlatformUtils")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionPlatformUtils")
 	}
 	static class UUnionPlatformUtils* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionPlatformUtils>();
 	}
 };
-static_assert(alignof(UUnionPlatformUtils) == 0x000008, "Wrong alignment on UUnionPlatformUtils");
-static_assert(sizeof(UUnionPlatformUtils) == 0x000028, "Wrong size on UUnionPlatformUtils");
+DUMPER7_ASSERTS_UUnionPlatformUtils;
 
 // Class UnionSystem.UnionPrimitiveComponent
 // 0x0000 (0x0520 - 0x0520)
@@ -6622,15 +6796,18 @@ class UUnionPrimitiveComponent final : public UPrimitiveComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionPrimitiveComponent">();
+		STATIC_CLASS_IMPL("UnionPrimitiveComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionPrimitiveComponent")
 	}
 	static class UUnionPrimitiveComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionPrimitiveComponent>();
 	}
 };
-static_assert(alignof(UUnionPrimitiveComponent) == 0x000010, "Wrong alignment on UUnionPrimitiveComponent");
-static_assert(sizeof(UUnionPrimitiveComponent) == 0x000520, "Wrong size on UUnionPrimitiveComponent");
+DUMPER7_ASSERTS_UUnionPrimitiveComponent;
 
 // Class UnionSystem.UnionProceduralMeshComponent
 // 0x0000 (0x05D0 - 0x05D0)
@@ -6639,15 +6816,18 @@ class UUnionProceduralMeshComponent : public UProceduralMeshComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionProceduralMeshComponent">();
+		STATIC_CLASS_IMPL("UnionProceduralMeshComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionProceduralMeshComponent")
 	}
 	static class UUnionProceduralMeshComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionProceduralMeshComponent>();
 	}
 };
-static_assert(alignof(UUnionProceduralMeshComponent) == 0x000010, "Wrong alignment on UUnionProceduralMeshComponent");
-static_assert(sizeof(UUnionProceduralMeshComponent) == 0x0005D0, "Wrong size on UUnionProceduralMeshComponent");
+DUMPER7_ASSERTS_UUnionProceduralMeshComponent;
 
 // Class UnionSystem.UnionRaceBGMManager
 // 0x0060 (0x0088 - 0x0028)
@@ -6659,15 +6839,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionRaceBGMManager">();
+		STATIC_CLASS_IMPL("UnionRaceBGMManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionRaceBGMManager")
 	}
 	static class UUnionRaceBGMManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionRaceBGMManager>();
 	}
 };
-static_assert(alignof(UUnionRaceBGMManager) == 0x000008, "Wrong alignment on UUnionRaceBGMManager");
-static_assert(sizeof(UUnionRaceBGMManager) == 0x000088, "Wrong size on UUnionRaceBGMManager");
+DUMPER7_ASSERTS_UUnionRaceBGMManager;
 
 // Class UnionSystem.UnionRaceBGMLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -6704,15 +6887,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionRaceBGMLibrary">();
+		STATIC_CLASS_IMPL("UnionRaceBGMLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionRaceBGMLibrary")
 	}
 	static class UUnionRaceBGMLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionRaceBGMLibrary>();
 	}
 };
-static_assert(alignof(UUnionRaceBGMLibrary) == 0x000008, "Wrong alignment on UUnionRaceBGMLibrary");
-static_assert(sizeof(UUnionRaceBGMLibrary) == 0x000028, "Wrong size on UUnionRaceBGMLibrary");
+DUMPER7_ASSERTS_UUnionRaceBGMLibrary;
 
 // Class UnionSystem.UnionRenderTargetUtility
 // 0x0000 (0x0028 - 0x0028)
@@ -6729,15 +6915,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionRenderTargetUtility">();
+		STATIC_CLASS_IMPL("UnionRenderTargetUtility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionRenderTargetUtility")
 	}
 	static class UUnionRenderTargetUtility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionRenderTargetUtility>();
 	}
 };
-static_assert(alignof(UUnionRenderTargetUtility) == 0x000008, "Wrong alignment on UUnionRenderTargetUtility");
-static_assert(sizeof(UUnionRenderTargetUtility) == 0x000028, "Wrong size on UUnionRenderTargetUtility");
+DUMPER7_ASSERTS_UUnionRenderTargetUtility;
 
 // Class UnionSystem.UnionRingGateCameraInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -6752,7 +6941,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionRingGateCameraInterface">();
+		STATIC_CLASS_IMPL("UnionRingGateCameraInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionRingGateCameraInterface")
 	}
 	static class IUnionRingGateCameraInterface* GetDefaultObj()
 	{
@@ -6768,8 +6961,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IUnionRingGateCameraInterface) == 0x000001, "Wrong alignment on IUnionRingGateCameraInterface");
-static_assert(sizeof(IUnionRingGateCameraInterface) == 0x000001, "Wrong size on IUnionRingGateCameraInterface");
+DUMPER7_ASSERTS_IUnionRingGateCameraInterface;
 
 // Class UnionSystem.UnionSaveDataTransferBase
 // 0x0050 (0x02E0 - 0x0290)
@@ -6789,17 +6981,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionSaveDataTransferBase">();
+		STATIC_CLASS_IMPL("UnionSaveDataTransferBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionSaveDataTransferBase")
 	}
 	static class AUnionSaveDataTransferBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AUnionSaveDataTransferBase>();
 	}
 };
-static_assert(alignof(AUnionSaveDataTransferBase) == 0x000008, "Wrong alignment on AUnionSaveDataTransferBase");
-static_assert(sizeof(AUnionSaveDataTransferBase) == 0x0002E0, "Wrong size on AUnionSaveDataTransferBase");
-static_assert(offsetof(AUnionSaveDataTransferBase, m_ResultSearch) == 0x000290, "Member 'AUnionSaveDataTransferBase::m_ResultSearch' has a wrong offset!");
-static_assert(offsetof(AUnionSaveDataTransferBase, m_ResultTransfer) == 0x000291, "Member 'AUnionSaveDataTransferBase::m_ResultTransfer' has a wrong offset!");
+DUMPER7_ASSERTS_AUnionSaveDataTransferBase;
 
 // Class UnionSystem.UnionSceneComponent
 // 0x0060 (0x0290 - 0x0230)
@@ -6818,42 +7011,39 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionSceneComponent">();
+		STATIC_CLASS_IMPL("UnionSceneComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionSceneComponent")
 	}
 	static class UUnionSceneComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionSceneComponent>();
 	}
 };
-static_assert(alignof(UUnionSceneComponent) == 0x000010, "Wrong alignment on UUnionSceneComponent");
-static_assert(sizeof(UUnionSceneComponent) == 0x000290, "Wrong size on UUnionSceneComponent");
-static_assert(offsetof(UUnionSceneComponent, AutoAttachParent) == 0x000234, "Member 'UUnionSceneComponent::AutoAttachParent' has a wrong offset!");
-static_assert(offsetof(UUnionSceneComponent, AutoAttachSocketName) == 0x00023C, "Member 'UUnionSceneComponent::AutoAttachSocketName' has a wrong offset!");
-static_assert(offsetof(UUnionSceneComponent, AutoAttachLocationRule) == 0x000244, "Member 'UUnionSceneComponent::AutoAttachLocationRule' has a wrong offset!");
-static_assert(offsetof(UUnionSceneComponent, AutoAttachRotationRule) == 0x000245, "Member 'UUnionSceneComponent::AutoAttachRotationRule' has a wrong offset!");
-static_assert(offsetof(UUnionSceneComponent, AutoAttachScaleRule) == 0x000246, "Member 'UUnionSceneComponent::AutoAttachScaleRule' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionSceneComponent;
 
 // Class UnionSystem.UnionSettings
-// 0x0248 (0x0280 - 0x0038)
+// 0x0258 (0x0290 - 0x0038)
 class UUnionSettings final : public UDeveloperSettings
 {
 public:
-	struct FUnionQualitySettings                  QualitySettings;                                   // 0x0038(0x0068)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
-	EViewResolution                               TravelRingResolution;                              // 0x00A0(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_A1[0x3];                                       // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUnionTravelRingSettings               TravelRingSettings[0x3];                           // 0x00A4(0x0020)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
-	EShortcutViewScale                            ShortcutRingViewScale;                             // 0x0104(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_105[0x3];                                      // 0x0105(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMachineSettings                       MachineSettings;                                   // 0x0108(0x00B4)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
-	struct FUnionCastShadowSettings               CastShadowSettings[0x3];                           // 0x01BC(0x0003)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C5[0x3];                                      // 0x01C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUnionRaceCarSettings                  RaceCarSettings;                                   // 0x01C8(0x000C)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D4[0x4];                                      // 0x01D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHoldItemSettings                      HoldItemSettings;                                  // 0x01D8(0x0060)(Edit, Config, NativeAccessSpecifierPublic)
-	struct FMenuSettings                          MenuSettings;                                      // 0x0238(0x0008)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMatchingLobbySettings                 MatchingLobbySettings;                             // 0x0240(0x000C)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
-	struct FIntPoint                              ScreenResolutionsEditor;                           // 0x024C(0x0008)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_254[0x2C];                                     // 0x0254(0x002C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FUnionQualitySettings                  QualitySettings;                                   // 0x0038(0x0074)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
+	EViewResolution                               TravelRingResolution;                              // 0x00AC(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_AD[0x3];                                       // 0x00AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUnionTravelRingSettings               TravelRingSettings[0x3];                           // 0x00B0(0x0020)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
+	EShortcutViewScale                            ShortcutRingViewScale;                             // 0x0110(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_111[0x3];                                      // 0x0111(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMachineSettings                       MachineSettings;                                   // 0x0114(0x00B4)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
+	struct FUnionCastShadowSettings               CastShadowSettings[0x3];                           // 0x01C8(0x0003)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D1[0x3];                                      // 0x01D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUnionRaceCarSettings                  RaceCarSettings;                                   // 0x01D4(0x000C)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
+	struct FHoldItemSettings                      HoldItemSettings;                                  // 0x01E0(0x0060)(Edit, Config, NativeAccessSpecifierPublic)
+	struct FMenuSettings                          MenuSettings;                                      // 0x0240(0x0008)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMatchingLobbySettings                 MatchingLobbySettings;                             // 0x0248(0x000C)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
+	struct FIntPoint                              ScreenResolutionsEditor;                           // 0x0254(0x0008)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_25C[0x34];                                     // 0x025C(0x0034)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void SetEnableBlur(bool Enable);
@@ -6885,26 +7075,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionSettings">();
+		STATIC_CLASS_IMPL("UnionSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionSettings")
 	}
 	static class UUnionSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionSettings>();
 	}
 };
-static_assert(alignof(UUnionSettings) == 0x000008, "Wrong alignment on UUnionSettings");
-static_assert(sizeof(UUnionSettings) == 0x000280, "Wrong size on UUnionSettings");
-static_assert(offsetof(UUnionSettings, QualitySettings) == 0x000038, "Member 'UUnionSettings::QualitySettings' has a wrong offset!");
-static_assert(offsetof(UUnionSettings, TravelRingResolution) == 0x0000A0, "Member 'UUnionSettings::TravelRingResolution' has a wrong offset!");
-static_assert(offsetof(UUnionSettings, TravelRingSettings) == 0x0000A4, "Member 'UUnionSettings::TravelRingSettings' has a wrong offset!");
-static_assert(offsetof(UUnionSettings, ShortcutRingViewScale) == 0x000104, "Member 'UUnionSettings::ShortcutRingViewScale' has a wrong offset!");
-static_assert(offsetof(UUnionSettings, MachineSettings) == 0x000108, "Member 'UUnionSettings::MachineSettings' has a wrong offset!");
-static_assert(offsetof(UUnionSettings, CastShadowSettings) == 0x0001BC, "Member 'UUnionSettings::CastShadowSettings' has a wrong offset!");
-static_assert(offsetof(UUnionSettings, RaceCarSettings) == 0x0001C8, "Member 'UUnionSettings::RaceCarSettings' has a wrong offset!");
-static_assert(offsetof(UUnionSettings, HoldItemSettings) == 0x0001D8, "Member 'UUnionSettings::HoldItemSettings' has a wrong offset!");
-static_assert(offsetof(UUnionSettings, MenuSettings) == 0x000238, "Member 'UUnionSettings::MenuSettings' has a wrong offset!");
-static_assert(offsetof(UUnionSettings, MatchingLobbySettings) == 0x000240, "Member 'UUnionSettings::MatchingLobbySettings' has a wrong offset!");
-static_assert(offsetof(UUnionSettings, ScreenResolutionsEditor) == 0x00024C, "Member 'UUnionSettings::ScreenResolutionsEditor' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionSettings;
 
 // Class UnionSystem.UnionSkeletalMeshActor
 // 0x0000 (0x0310 - 0x0310)
@@ -6913,15 +7095,18 @@ class AUnionSkeletalMeshActor final : public ASkeletalMeshActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionSkeletalMeshActor">();
+		STATIC_CLASS_IMPL("UnionSkeletalMeshActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionSkeletalMeshActor")
 	}
 	static class AUnionSkeletalMeshActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AUnionSkeletalMeshActor>();
 	}
 };
-static_assert(alignof(AUnionSkeletalMeshActor) == 0x000008, "Wrong alignment on AUnionSkeletalMeshActor");
-static_assert(sizeof(AUnionSkeletalMeshActor) == 0x000310, "Wrong size on AUnionSkeletalMeshActor");
+DUMPER7_ASSERTS_AUnionSkeletalMeshActor;
 
 // Class UnionSystem.UnionSkeletalMeshComponent
 // 0x0000 (0x0F70 - 0x0F70)
@@ -6933,15 +7118,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionSkeletalMeshComponent">();
+		STATIC_CLASS_IMPL("UnionSkeletalMeshComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionSkeletalMeshComponent")
 	}
 	static class UUnionSkeletalMeshComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionSkeletalMeshComponent>();
 	}
 };
-static_assert(alignof(UUnionSkeletalMeshComponent) == 0x000010, "Wrong alignment on UUnionSkeletalMeshComponent");
-static_assert(sizeof(UUnionSkeletalMeshComponent) == 0x000F70, "Wrong size on UUnionSkeletalMeshComponent");
+DUMPER7_ASSERTS_UUnionSkeletalMeshComponent;
 
 // Class UnionSystem.UnionSkeletalMeshComponentBudgeted
 // 0x0000 (0x0F90 - 0x0F90)
@@ -6950,15 +7138,18 @@ class UUnionSkeletalMeshComponentBudgeted final : public USkeletalMeshComponentB
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionSkeletalMeshComponentBudgeted">();
+		STATIC_CLASS_IMPL("UnionSkeletalMeshComponentBudgeted")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionSkeletalMeshComponentBudgeted")
 	}
 	static class UUnionSkeletalMeshComponentBudgeted* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionSkeletalMeshComponentBudgeted>();
 	}
 };
-static_assert(alignof(UUnionSkeletalMeshComponentBudgeted) == 0x000010, "Wrong alignment on UUnionSkeletalMeshComponentBudgeted");
-static_assert(sizeof(UUnionSkeletalMeshComponentBudgeted) == 0x000F90, "Wrong size on UUnionSkeletalMeshComponentBudgeted");
+DUMPER7_ASSERTS_UUnionSkeletalMeshComponentBudgeted;
 
 // Class UnionSystem.UnionSphereComponent
 // 0x0000 (0x0550 - 0x0550)
@@ -6967,15 +7158,18 @@ class UUnionSphereComponent final : public USphereComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionSphereComponent">();
+		STATIC_CLASS_IMPL("UnionSphereComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionSphereComponent")
 	}
 	static class UUnionSphereComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionSphereComponent>();
 	}
 };
-static_assert(alignof(UUnionSphereComponent) == 0x000010, "Wrong alignment on UUnionSphereComponent");
-static_assert(sizeof(UUnionSphereComponent) == 0x000550, "Wrong size on UUnionSphereComponent");
+DUMPER7_ASSERTS_UUnionSphereComponent;
 
 // Class UnionSystem.UnionStaticMeshActor
 // 0x0000 (0x02A0 - 0x02A0)
@@ -6984,15 +7178,18 @@ class AUnionStaticMeshActor final : public AStaticMeshActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionStaticMeshActor">();
+		STATIC_CLASS_IMPL("UnionStaticMeshActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionStaticMeshActor")
 	}
 	static class AUnionStaticMeshActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AUnionStaticMeshActor>();
 	}
 };
-static_assert(alignof(AUnionStaticMeshActor) == 0x000008, "Wrong alignment on AUnionStaticMeshActor");
-static_assert(sizeof(AUnionStaticMeshActor) == 0x0002A0, "Wrong size on AUnionStaticMeshActor");
+DUMPER7_ASSERTS_AUnionStaticMeshActor;
 
 // Class UnionSystem.UnionStatsManager
 // 0x08B8 (0x08E8 - 0x0030)
@@ -7030,21 +7227,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionStatsManager">();
+		STATIC_CLASS_IMPL("UnionStatsManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionStatsManager")
 	}
 	static class UUnionStatsManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionStatsManager>();
 	}
 };
-static_assert(alignof(UUnionStatsManager) == 0x000008, "Wrong alignment on UUnionStatsManager");
-static_assert(sizeof(UUnionStatsManager) == 0x0008E8, "Wrong size on UUnionStatsManager");
-static_assert(offsetof(UUnionStatsManager, OnStatsLoadedSaveData) == 0x000038, "Member 'UUnionStatsManager::OnStatsLoadedSaveData' has a wrong offset!");
-static_assert(offsetof(UUnionStatsManager, OnStatsEventUpdate) == 0x000048, "Member 'UUnionStatsManager::OnStatsEventUpdate' has a wrong offset!");
-static_assert(offsetof(UUnionStatsManager, OnMachineStatsEventUpdate) == 0x000058, "Member 'UUnionStatsManager::OnMachineStatsEventUpdate' has a wrong offset!");
-static_assert(offsetof(UUnionStatsManager, OnCharacterStatsEventUpdate) == 0x000068, "Member 'UUnionStatsManager::OnCharacterStatsEventUpdate' has a wrong offset!");
-static_assert(offsetof(UUnionStatsManager, OnHonorResultEvent) == 0x000078, "Member 'UUnionStatsManager::OnHonorResultEvent' has a wrong offset!");
-static_assert(offsetof(UUnionStatsManager, HonorList) == 0x000088, "Member 'UUnionStatsManager::HonorList' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionStatsManager;
 
 // Class UnionSystem.UnionSystemBP
 // 0x0000 (0x0028 - 0x0028)
@@ -7126,15 +7320,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionSystemBP">();
+		STATIC_CLASS_IMPL("UnionSystemBP")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionSystemBP")
 	}
 	static class UUnionSystemBP* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionSystemBP>();
 	}
 };
-static_assert(alignof(UUnionSystemBP) == 0x000008, "Wrong alignment on UUnionSystemBP");
-static_assert(sizeof(UUnionSystemBP) == 0x000028, "Wrong size on UUnionSystemBP");
+DUMPER7_ASSERTS_UUnionSystemBP;
 
 // Class UnionSystem.UnionTestUserWidget
 // 0x0000 (0x02E0 - 0x02E0)
@@ -7146,15 +7343,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionTestUserWidget">();
+		STATIC_CLASS_IMPL("UnionTestUserWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionTestUserWidget")
 	}
 	static class UUnionTestUserWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionTestUserWidget>();
 	}
 };
-static_assert(alignof(UUnionTestUserWidget) == 0x000008, "Wrong alignment on UUnionTestUserWidget");
-static_assert(sizeof(UUnionTestUserWidget) == 0x0002E0, "Wrong size on UUnionTestUserWidget");
+DUMPER7_ASSERTS_UUnionTestUserWidget;
 
 // Class UnionSystem.UnionTestForceFeedbackViewerUI
 // 0x0010 (0x02F0 - 0x02E0)
@@ -7170,16 +7370,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionTestForceFeedbackViewerUI">();
+		STATIC_CLASS_IMPL("UnionTestForceFeedbackViewerUI")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionTestForceFeedbackViewerUI")
 	}
 	static class UUnionTestForceFeedbackViewerUI* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionTestForceFeedbackViewerUI>();
 	}
 };
-static_assert(alignof(UUnionTestForceFeedbackViewerUI) == 0x000008, "Wrong alignment on UUnionTestForceFeedbackViewerUI");
-static_assert(sizeof(UUnionTestForceFeedbackViewerUI) == 0x0002F0, "Wrong size on UUnionTestForceFeedbackViewerUI");
-static_assert(offsetof(UUnionTestForceFeedbackViewerUI, CueList) == 0x0002E0, "Member 'UUnionTestForceFeedbackViewerUI::CueList' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionTestForceFeedbackViewerUI;
 
 // Class UnionSystem.UnionTestGameMode
 // 0x0000 (0x0328 - 0x0328)
@@ -7188,15 +7390,18 @@ class AUnionTestGameMode final : public AGameModeBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionTestGameMode">();
+		STATIC_CLASS_IMPL("UnionTestGameMode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionTestGameMode")
 	}
 	static class AUnionTestGameMode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AUnionTestGameMode>();
 	}
 };
-static_assert(alignof(AUnionTestGameMode) == 0x000008, "Wrong alignment on AUnionTestGameMode");
-static_assert(sizeof(AUnionTestGameMode) == 0x000328, "Wrong size on AUnionTestGameMode");
+DUMPER7_ASSERTS_AUnionTestGameMode;
 
 // Class UnionSystem.UnionTestInputActor
 // 0x0000 (0x0290 - 0x0290)
@@ -7205,15 +7410,18 @@ class AUnionTestInputActor final : public AActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionTestInputActor">();
+		STATIC_CLASS_IMPL("UnionTestInputActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionTestInputActor")
 	}
 	static class AUnionTestInputActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AUnionTestInputActor>();
 	}
 };
-static_assert(alignof(AUnionTestInputActor) == 0x000008, "Wrong alignment on AUnionTestInputActor");
-static_assert(sizeof(AUnionTestInputActor) == 0x000290, "Wrong size on AUnionTestInputActor");
+DUMPER7_ASSERTS_AUnionTestInputActor;
 
 // Class UnionSystem.UnionTestMapViewerUI
 // 0x0000 (0x02E0 - 0x02E0)
@@ -7225,15 +7433,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionTestMapViewerUI">();
+		STATIC_CLASS_IMPL("UnionTestMapViewerUI")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionTestMapViewerUI")
 	}
 	static class UUnionTestMapViewerUI* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionTestMapViewerUI>();
 	}
 };
-static_assert(alignof(UUnionTestMapViewerUI) == 0x000008, "Wrong alignment on UUnionTestMapViewerUI");
-static_assert(sizeof(UUnionTestMapViewerUI) == 0x0002E0, "Wrong size on UUnionTestMapViewerUI");
+DUMPER7_ASSERTS_UUnionTestMapViewerUI;
 
 // Class UnionSystem.UnionTestMovieViewerUI
 // 0x0000 (0x02E0 - 0x02E0)
@@ -7246,15 +7457,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionTestMovieViewerUI">();
+		STATIC_CLASS_IMPL("UnionTestMovieViewerUI")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionTestMovieViewerUI")
 	}
 	static class UUnionTestMovieViewerUI* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionTestMovieViewerUI>();
 	}
 };
-static_assert(alignof(UUnionTestMovieViewerUI) == 0x000008, "Wrong alignment on UUnionTestMovieViewerUI");
-static_assert(sizeof(UUnionTestMovieViewerUI) == 0x0002E0, "Wrong size on UUnionTestMovieViewerUI");
+DUMPER7_ASSERTS_UUnionTestMovieViewerUI;
 
 // Class UnionSystem.UnionTestPawn
 // 0x0000 (0x0340 - 0x0340)
@@ -7263,15 +7477,18 @@ class AUnionTestPawn final : public ADefaultPawn
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionTestPawn">();
+		STATIC_CLASS_IMPL("UnionTestPawn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionTestPawn")
 	}
 	static class AUnionTestPawn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AUnionTestPawn>();
 	}
 };
-static_assert(alignof(AUnionTestPawn) == 0x000008, "Wrong alignment on AUnionTestPawn");
-static_assert(sizeof(AUnionTestPawn) == 0x000340, "Wrong size on AUnionTestPawn");
+DUMPER7_ASSERTS_AUnionTestPawn;
 
 // Class UnionSystem.UnionTestPlayerController
 // 0x0000 (0x0858 - 0x0858)
@@ -7280,15 +7497,18 @@ class AUnionTestPlayerController final : public APlayerController
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionTestPlayerController">();
+		STATIC_CLASS_IMPL("UnionTestPlayerController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionTestPlayerController")
 	}
 	static class AUnionTestPlayerController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AUnionTestPlayerController>();
 	}
 };
-static_assert(alignof(AUnionTestPlayerController) == 0x000008, "Wrong alignment on AUnionTestPlayerController");
-static_assert(sizeof(AUnionTestPlayerController) == 0x000858, "Wrong size on AUnionTestPlayerController");
+DUMPER7_ASSERTS_AUnionTestPlayerController;
 
 // Class UnionSystem.UnionVATMeshComponent
 // 0x0050 (0x0640 - 0x05F0)
@@ -7318,22 +7538,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionVATMeshComponent">();
+		STATIC_CLASS_IMPL("UnionVATMeshComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionVATMeshComponent")
 	}
 	static class UUnionVATMeshComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionVATMeshComponent>();
 	}
 };
-static_assert(alignof(UUnionVATMeshComponent) == 0x000010, "Wrong alignment on UUnionVATMeshComponent");
-static_assert(sizeof(UUnionVATMeshComponent) == 0x000640, "Wrong size on UUnionVATMeshComponent");
-static_assert(offsetof(UUnionVATMeshComponent, OnVATSequenceCallback) == 0x0005F0, "Member 'UUnionVATMeshComponent::OnVATSequenceCallback' has a wrong offset!");
-static_assert(offsetof(UUnionVATMeshComponent, VisibilityBasedVatUpdateOption) == 0x000600, "Member 'UUnionVATMeshComponent::VisibilityBasedVatUpdateOption' has a wrong offset!");
-static_assert(offsetof(UUnionVATMeshComponent, PlayMode) == 0x000601, "Member 'UUnionVATMeshComponent::PlayMode' has a wrong offset!");
-static_assert(offsetof(UUnionVATMeshComponent, MaterialIndice0) == 0x000604, "Member 'UUnionVATMeshComponent::MaterialIndice0' has a wrong offset!");
-static_assert(offsetof(UUnionVATMeshComponent, MaterialIndice1) == 0x000608, "Member 'UUnionVATMeshComponent::MaterialIndice1' has a wrong offset!");
-static_assert(offsetof(UUnionVATMeshComponent, MaterialIndice2) == 0x00060C, "Member 'UUnionVATMeshComponent::MaterialIndice2' has a wrong offset!");
-static_assert(offsetof(UUnionVATMeshComponent, MaterialIndice3) == 0x000610, "Member 'UUnionVATMeshComponent::MaterialIndice3' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionVATMeshComponent;
 
 // Class UnionSystem.UnionVATAnimEventComponent
 // 0x0020 (0x0660 - 0x0640)
@@ -7349,16 +7565,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionVATAnimEventComponent">();
+		STATIC_CLASS_IMPL("UnionVATAnimEventComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionVATAnimEventComponent")
 	}
 	static class UUnionVATAnimEventComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionVATAnimEventComponent>();
 	}
 };
-static_assert(alignof(UUnionVATAnimEventComponent) == 0x000010, "Wrong alignment on UUnionVATAnimEventComponent");
-static_assert(sizeof(UUnionVATAnimEventComponent) == 0x000660, "Wrong size on UUnionVATAnimEventComponent");
-static_assert(offsetof(UUnionVATAnimEventComponent, AnimEventSequences) == 0x000640, "Member 'UUnionVATAnimEventComponent::AnimEventSequences' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionVATAnimEventComponent;
 
 // Class UnionSystem.UnionVATMeshActor
 // 0x0000 (0x02A0 - 0x02A0)
@@ -7367,15 +7585,18 @@ class AUnionVATMeshActor final : public AStaticMeshActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionVATMeshActor">();
+		STATIC_CLASS_IMPL("UnionVATMeshActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionVATMeshActor")
 	}
 	static class AUnionVATMeshActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AUnionVATMeshActor>();
 	}
 };
-static_assert(alignof(AUnionVATMeshActor) == 0x000008, "Wrong alignment on AUnionVATMeshActor");
-static_assert(sizeof(AUnionVATMeshActor) == 0x0002A0, "Wrong size on AUnionVATMeshActor");
+DUMPER7_ASSERTS_AUnionVATMeshActor;
 
 // Class UnionSystem.UnionVersionUtility
 // 0x0000 (0x0028 - 0x0028)
@@ -7384,15 +7605,18 @@ class UUnionVersionUtility final : public UBlueprintFunctionLibrary
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionVersionUtility">();
+		STATIC_CLASS_IMPL("UnionVersionUtility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionVersionUtility")
 	}
 	static class UUnionVersionUtility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionVersionUtility>();
 	}
 };
-static_assert(alignof(UUnionVersionUtility) == 0x000008, "Wrong alignment on UUnionVersionUtility");
-static_assert(sizeof(UUnionVersionUtility) == 0x000028, "Wrong size on UUnionVersionUtility");
+DUMPER7_ASSERTS_UUnionVersionUtility;
 
 // Class UnionSystem.UnionWidgetComponent
 // 0x0000 (0x0690 - 0x0690)
@@ -7401,15 +7625,18 @@ class UUnionWidgetComponent : public UWidgetComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionWidgetComponent">();
+		STATIC_CLASS_IMPL("UnionWidgetComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionWidgetComponent")
 	}
 	static class UUnionWidgetComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionWidgetComponent>();
 	}
 };
-static_assert(alignof(UUnionWidgetComponent) == 0x000010, "Wrong alignment on UUnionWidgetComponent");
-static_assert(sizeof(UUnionWidgetComponent) == 0x000690, "Wrong size on UUnionWidgetComponent");
+DUMPER7_ASSERTS_UUnionWidgetComponent;
 
 // Class UnionSystem.UnionWidgetImageComponent
 // 0x00F0 (0x06C0 - 0x05D0)
@@ -7420,7 +7647,7 @@ public:
 	struct FUnionWidgetTransform                  _WidgetTransform;                                  // 0x05D8(0x00B8)(Edit, NoDestructor, NativeAccessSpecifierPrivate)
 	TArray<class USceneComponent*>                _ParentComponents;                                 // 0x0690(0x0010)(Edit, ExportObject, ZeroConstructor, Transient, EditConst, ContainsInstancedReference, NativeAccessSpecifierPrivate)
 	struct FLinearColor                           _TintColorAndOpacity;                              // 0x06A0(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UTexture2D*                             _BrushImageTexture;                                // 0x06B0(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UTexture2D*                             _BrushImageTexture;                                // 0x06B0(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
 	uint8                                         Pad_6B8[0x8];                                      // 0x06B8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -7431,19 +7658,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionWidgetImageComponent">();
+		STATIC_CLASS_IMPL("UnionWidgetImageComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionWidgetImageComponent")
 	}
 	static class UUnionWidgetImageComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionWidgetImageComponent>();
 	}
 };
-static_assert(alignof(UUnionWidgetImageComponent) == 0x000010, "Wrong alignment on UUnionWidgetImageComponent");
-static_assert(sizeof(UUnionWidgetImageComponent) == 0x0006C0, "Wrong size on UUnionWidgetImageComponent");
-static_assert(offsetof(UUnionWidgetImageComponent, _WidgetTransform) == 0x0005D8, "Member 'UUnionWidgetImageComponent::_WidgetTransform' has a wrong offset!");
-static_assert(offsetof(UUnionWidgetImageComponent, _ParentComponents) == 0x000690, "Member 'UUnionWidgetImageComponent::_ParentComponents' has a wrong offset!");
-static_assert(offsetof(UUnionWidgetImageComponent, _TintColorAndOpacity) == 0x0006A0, "Member 'UUnionWidgetImageComponent::_TintColorAndOpacity' has a wrong offset!");
-static_assert(offsetof(UUnionWidgetImageComponent, _BrushImageTexture) == 0x0006B0, "Member 'UUnionWidgetImageComponent::_BrushImageTexture' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionWidgetImageComponent;
 
 // Class UnionSystem.UnionWidgetInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -7457,7 +7683,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionWidgetInterface">();
+		STATIC_CLASS_IMPL("UnionWidgetInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionWidgetInterface")
 	}
 	static class IUnionWidgetInterface* GetDefaultObj()
 	{
@@ -7473,8 +7703,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IUnionWidgetInterface) == 0x000001, "Wrong alignment on IUnionWidgetInterface");
-static_assert(sizeof(IUnionWidgetInterface) == 0x000001, "Wrong size on IUnionWidgetInterface");
+DUMPER7_ASSERTS_IUnionWidgetInterface;
 
 // Class UnionSystem.UnionWidgetPanelComponent
 // 0x00C0 (0x02F0 - 0x0230)
@@ -7487,16 +7716,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionWidgetPanelComponent">();
+		STATIC_CLASS_IMPL("UnionWidgetPanelComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionWidgetPanelComponent")
 	}
 	static class UUnionWidgetPanelComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionWidgetPanelComponent>();
 	}
 };
-static_assert(alignof(UUnionWidgetPanelComponent) == 0x000010, "Wrong alignment on UUnionWidgetPanelComponent");
-static_assert(sizeof(UUnionWidgetPanelComponent) == 0x0002F0, "Wrong size on UUnionWidgetPanelComponent");
-static_assert(offsetof(UUnionWidgetPanelComponent, _WidgetTransform) == 0x000238, "Member 'UUnionWidgetPanelComponent::_WidgetTransform' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionWidgetPanelComponent;
 
 // Class UnionSystem.UnionWidgetTextComponent
 // 0x03D0 (0x0A60 - 0x0690)
@@ -7521,22 +7752,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionWidgetTextComponent">();
+		STATIC_CLASS_IMPL("UnionWidgetTextComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionWidgetTextComponent")
 	}
 	static class UUnionWidgetTextComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionWidgetTextComponent>();
 	}
 };
-static_assert(alignof(UUnionWidgetTextComponent) == 0x000010, "Wrong alignment on UUnionWidgetTextComponent");
-static_assert(sizeof(UUnionWidgetTextComponent) == 0x000A60, "Wrong size on UUnionWidgetTextComponent");
-static_assert(offsetof(UUnionWidgetTextComponent, _WidgetTransform) == 0x000698, "Member 'UUnionWidgetTextComponent::_WidgetTransform' has a wrong offset!");
-static_assert(offsetof(UUnionWidgetTextComponent, _Text) == 0x000750, "Member 'UUnionWidgetTextComponent::_Text' has a wrong offset!");
-static_assert(offsetof(UUnionWidgetTextComponent, _Style) == 0x000760, "Member 'UUnionWidgetTextComponent::_Style' has a wrong offset!");
-static_assert(offsetof(UUnionWidgetTextComponent, _IsReadOnly) == 0x000A50, "Member 'UUnionWidgetTextComponent::_IsReadOnly' has a wrong offset!");
-static_assert(offsetof(UUnionWidgetTextComponent, _IsPassword) == 0x000A51, "Member 'UUnionWidgetTextComponent::_IsPassword' has a wrong offset!");
-static_assert(offsetof(UUnionWidgetTextComponent, _MinDesiredWidth) == 0x000A54, "Member 'UUnionWidgetTextComponent::_MinDesiredWidth' has a wrong offset!");
-static_assert(offsetof(UUnionWidgetTextComponent, _Justification) == 0x000A58, "Member 'UUnionWidgetTextComponent::_Justification' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionWidgetTextComponent;
 
 // Class UnionSystem.UnionWidgetTextInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -7548,7 +7775,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionWidgetTextInterface">();
+		STATIC_CLASS_IMPL("UnionWidgetTextInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionWidgetTextInterface")
 	}
 	static class IUnionWidgetTextInterface* GetDefaultObj()
 	{
@@ -7564,8 +7795,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IUnionWidgetTextInterface) == 0x000001, "Wrong alignment on IUnionWidgetTextInterface");
-static_assert(sizeof(IUnionWidgetTextInterface) == 0x000001, "Wrong size on IUnionWidgetTextInterface");
+DUMPER7_ASSERTS_IUnionWidgetTextInterface;
 
 // Class UnionSystem.UnionWidgetUtility
 // 0x0000 (0x0028 - 0x0028)
@@ -7577,15 +7807,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionWidgetUtility">();
+		STATIC_CLASS_IMPL("UnionWidgetUtility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionWidgetUtility")
 	}
 	static class UUnionWidgetUtility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionWidgetUtility>();
 	}
 };
-static_assert(alignof(UUnionWidgetUtility) == 0x000008, "Wrong alignment on UUnionWidgetUtility");
-static_assert(sizeof(UUnionWidgetUtility) == 0x000028, "Wrong size on UUnionWidgetUtility");
+DUMPER7_ASSERTS_UUnionWidgetUtility;
 
 // Class UnionSystem.CommonNetworkSettings
 // 0x0008 (0x0040 - 0x0038)
@@ -7598,16 +7831,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonNetworkSettings">();
+		STATIC_CLASS_IMPL("CommonNetworkSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonNetworkSettings")
 	}
 	static class UCommonNetworkSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonNetworkSettings>();
 	}
 };
-static_assert(alignof(UCommonNetworkSettings) == 0x000008, "Wrong alignment on UCommonNetworkSettings");
-static_assert(sizeof(UCommonNetworkSettings) == 0x000040, "Wrong size on UCommonNetworkSettings");
-static_assert(offsetof(UCommonNetworkSettings, OnlineEnvironmentSpec) == 0x000038, "Member 'UCommonNetworkSettings::OnlineEnvironmentSpec' has a wrong offset!");
+DUMPER7_ASSERTS_UCommonNetworkSettings;
 
 // Class UnionSystem.UnionMatchmakingSettings
 // 0x0060 (0x0098 - 0x0038)
@@ -7636,28 +7871,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionMatchmakingSettings">();
+		STATIC_CLASS_IMPL("UnionMatchmakingSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionMatchmakingSettings")
 	}
 	static class UUnionMatchmakingSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionMatchmakingSettings>();
 	}
 };
-static_assert(alignof(UUnionMatchmakingSettings) == 0x000008, "Wrong alignment on UUnionMatchmakingSettings");
-static_assert(sizeof(UUnionMatchmakingSettings) == 0x000098, "Wrong size on UUnionMatchmakingSettings");
-static_assert(offsetof(UUnionMatchmakingSettings, bUseFlexMatch) == 0x000038, "Member 'UUnionMatchmakingSettings::bUseFlexMatch' has a wrong offset!");
-static_assert(offsetof(UUnionMatchmakingSettings, matchVersion) == 0x000040, "Member 'UUnionMatchmakingSettings::matchVersion' has a wrong offset!");
-static_assert(offsetof(UUnionMatchmakingSettings, MinLobbyPlayerNumArray) == 0x000050, "Member 'UUnionMatchmakingSettings::MinLobbyPlayerNumArray' has a wrong offset!");
-static_assert(offsetof(UUnionMatchmakingSettings, MinMatchmakingTimeArray) == 0x000060, "Member 'UUnionMatchmakingSettings::MinMatchmakingTimeArray' has a wrong offset!");
-static_assert(offsetof(UUnionMatchmakingSettings, DefaultFilterLobbyRank) == 0x000070, "Member 'UUnionMatchmakingSettings::DefaultFilterLobbyRank' has a wrong offset!");
-static_assert(offsetof(UUnionMatchmakingSettings, DefaultExtraProgressTime) == 0x000074, "Member 'UUnionMatchmakingSettings::DefaultExtraProgressTime' has a wrong offset!");
-static_assert(offsetof(UUnionMatchmakingSettings, ExtendFilterLobbyRank) == 0x000078, "Member 'UUnionMatchmakingSettings::ExtendFilterLobbyRank' has a wrong offset!");
-static_assert(offsetof(UUnionMatchmakingSettings, ExtendExtraProgressTime) == 0x00007C, "Member 'UUnionMatchmakingSettings::ExtendExtraProgressTime' has a wrong offset!");
-static_assert(offsetof(UUnionMatchmakingSettings, DefaultFilterLobbyRankForUser) == 0x000080, "Member 'UUnionMatchmakingSettings::DefaultFilterLobbyRankForUser' has a wrong offset!");
-static_assert(offsetof(UUnionMatchmakingSettings, DefaultExtraProgressTimeForUser) == 0x000084, "Member 'UUnionMatchmakingSettings::DefaultExtraProgressTimeForUser' has a wrong offset!");
-static_assert(offsetof(UUnionMatchmakingSettings, ExtendFilterLobbyRankForUser) == 0x000088, "Member 'UUnionMatchmakingSettings::ExtendFilterLobbyRankForUser' has a wrong offset!");
-static_assert(offsetof(UUnionMatchmakingSettings, ExtendExtraProgressTimeForUser) == 0x00008C, "Member 'UUnionMatchmakingSettings::ExtendExtraProgressTimeForUser' has a wrong offset!");
-static_assert(offsetof(UUnionMatchmakingSettings, EnteringRemainLobbyTimeCount) == 0x000090, "Member 'UUnionMatchmakingSettings::EnteringRemainLobbyTimeCount' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionMatchmakingSettings;
 
 }
 

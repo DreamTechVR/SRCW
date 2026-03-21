@@ -30,14 +30,7 @@ public:
 	class FString                                 Token;                                             // 0x0028(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UMariaEpicIdentitySequence*             ReturnValue;                                       // 0x0038(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaEpicIdentitySequence_LoginEOS) == 0x000008, "Wrong alignment on MariaEpicIdentitySequence_LoginEOS");
-static_assert(sizeof(MariaEpicIdentitySequence_LoginEOS) == 0x000040, "Wrong size on MariaEpicIdentitySequence_LoginEOS");
-static_assert(offsetof(MariaEpicIdentitySequence_LoginEOS, WorldContextObject) == 0x000000, "Member 'MariaEpicIdentitySequence_LoginEOS::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(MariaEpicIdentitySequence_LoginEOS, PlayerController) == 0x000008, "Member 'MariaEpicIdentitySequence_LoginEOS::PlayerController' has a wrong offset!");
-static_assert(offsetof(MariaEpicIdentitySequence_LoginEOS, LoginType) == 0x000010, "Member 'MariaEpicIdentitySequence_LoginEOS::LoginType' has a wrong offset!");
-static_assert(offsetof(MariaEpicIdentitySequence_LoginEOS, ID) == 0x000018, "Member 'MariaEpicIdentitySequence_LoginEOS::ID' has a wrong offset!");
-static_assert(offsetof(MariaEpicIdentitySequence_LoginEOS, Token) == 0x000028, "Member 'MariaEpicIdentitySequence_LoginEOS::Token' has a wrong offset!");
-static_assert(offsetof(MariaEpicIdentitySequence_LoginEOS, ReturnValue) == 0x000038, "Member 'MariaEpicIdentitySequence_LoginEOS::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaEpicIdentitySequence_LoginEOS;
 
 // Function mariaUploadPlugin.MariaEpicIdentitySequence.LogoutEOS
 // 0x0018 (0x0018 - 0x0000)
@@ -48,11 +41,7 @@ public:
 	class APlayerController*                      PlayerController;                                  // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UMariaEpicIdentitySequence*             ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaEpicIdentitySequence_LogoutEOS) == 0x000008, "Wrong alignment on MariaEpicIdentitySequence_LogoutEOS");
-static_assert(sizeof(MariaEpicIdentitySequence_LogoutEOS) == 0x000018, "Wrong size on MariaEpicIdentitySequence_LogoutEOS");
-static_assert(offsetof(MariaEpicIdentitySequence_LogoutEOS, WorldContextObject) == 0x000000, "Member 'MariaEpicIdentitySequence_LogoutEOS::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(MariaEpicIdentitySequence_LogoutEOS, PlayerController) == 0x000008, "Member 'MariaEpicIdentitySequence_LogoutEOS::PlayerController' has a wrong offset!");
-static_assert(offsetof(MariaEpicIdentitySequence_LogoutEOS, ReturnValue) == 0x000010, "Member 'MariaEpicIdentitySequence_LogoutEOS::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaEpicIdentitySequence_LogoutEOS;
 
 // Function mariaUploadPlugin.MariaInitializeAuthSequence.RunInitializeAuthSeq
 // 0x0038 (0x0038 - 0x0000)
@@ -66,13 +55,7 @@ public:
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMariaInitializeAuthSequence*           ReturnValue;                                       // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaInitializeAuthSequence_RunInitializeAuthSeq) == 0x000008, "Wrong alignment on MariaInitializeAuthSequence_RunInitializeAuthSeq");
-static_assert(sizeof(MariaInitializeAuthSequence_RunInitializeAuthSeq) == 0x000038, "Wrong size on MariaInitializeAuthSequence_RunInitializeAuthSeq");
-static_assert(offsetof(MariaInitializeAuthSequence_RunInitializeAuthSeq, WorldContextObject) == 0x000000, "Member 'MariaInitializeAuthSequence_RunInitializeAuthSeq::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(MariaInitializeAuthSequence_RunInitializeAuthSeq, Phase) == 0x000008, "Member 'MariaInitializeAuthSequence_RunInitializeAuthSeq::Phase' has a wrong offset!");
-static_assert(offsetof(MariaInitializeAuthSequence_RunInitializeAuthSeq, UrlCallback) == 0x00000C, "Member 'MariaInitializeAuthSequence_RunInitializeAuthSeq::UrlCallback' has a wrong offset!");
-static_assert(offsetof(MariaInitializeAuthSequence_RunInitializeAuthSeq, IdCallback) == 0x00001C, "Member 'MariaInitializeAuthSequence_RunInitializeAuthSeq::IdCallback' has a wrong offset!");
-static_assert(offsetof(MariaInitializeAuthSequence_RunInitializeAuthSeq, ReturnValue) == 0x000030, "Member 'MariaInitializeAuthSequence_RunInitializeAuthSeq::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaInitializeAuthSequence_RunInitializeAuthSeq;
 
 // Function mariaUploadPlugin.MariaSteamEncryptedAppTicketSequence.RequestEncryptedAppTicket
 // 0x0010 (0x0010 - 0x0000)
@@ -82,10 +65,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UMariaSteamEncryptedAppTicketSequence*  ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaSteamEncryptedAppTicketSequence_RequestEncryptedAppTicket) == 0x000008, "Wrong alignment on MariaSteamEncryptedAppTicketSequence_RequestEncryptedAppTicket");
-static_assert(sizeof(MariaSteamEncryptedAppTicketSequence_RequestEncryptedAppTicket) == 0x000010, "Wrong size on MariaSteamEncryptedAppTicketSequence_RequestEncryptedAppTicket");
-static_assert(offsetof(MariaSteamEncryptedAppTicketSequence_RequestEncryptedAppTicket, WorldContextObject) == 0x000000, "Member 'MariaSteamEncryptedAppTicketSequence_RequestEncryptedAppTicket::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(MariaSteamEncryptedAppTicketSequence_RequestEncryptedAppTicket, ReturnValue) == 0x000008, "Member 'MariaSteamEncryptedAppTicketSequence_RequestEncryptedAppTicket::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaSteamEncryptedAppTicketSequence_RequestEncryptedAppTicket;
 
 // Function mariaUploadPlugin.MariaSwitchNetworkRequestSequence.Run_nn_nifm_SubmitNetworkRequest
 // 0x0010 (0x0010 - 0x0000)
@@ -95,10 +75,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UMariaSwitchNetworkRequestSequence*     ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaSwitchNetworkRequestSequence_Run_nn_nifm_SubmitNetworkRequest) == 0x000008, "Wrong alignment on MariaSwitchNetworkRequestSequence_Run_nn_nifm_SubmitNetworkRequest");
-static_assert(sizeof(MariaSwitchNetworkRequestSequence_Run_nn_nifm_SubmitNetworkRequest) == 0x000010, "Wrong size on MariaSwitchNetworkRequestSequence_Run_nn_nifm_SubmitNetworkRequest");
-static_assert(offsetof(MariaSwitchNetworkRequestSequence_Run_nn_nifm_SubmitNetworkRequest, WorldContextObject) == 0x000000, "Member 'MariaSwitchNetworkRequestSequence_Run_nn_nifm_SubmitNetworkRequest::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(MariaSwitchNetworkRequestSequence_Run_nn_nifm_SubmitNetworkRequest, ReturnValue) == 0x000008, "Member 'MariaSwitchNetworkRequestSequence_Run_nn_nifm_SubmitNetworkRequest::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaSwitchNetworkRequestSequence_Run_nn_nifm_SubmitNetworkRequest;
 
 // Function mariaUploadPlugin.MariaTableRowLibrary.AddFloat
 // 0x0010 (0x0010 - 0x0000)
@@ -109,10 +86,7 @@ public:
 	float                                         Value;                                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MariaTableRowLibrary_AddFloat) == 0x000008, "Wrong alignment on MariaTableRowLibrary_AddFloat");
-static_assert(sizeof(MariaTableRowLibrary_AddFloat) == 0x000010, "Wrong size on MariaTableRowLibrary_AddFloat");
-static_assert(offsetof(MariaTableRowLibrary_AddFloat, Row) == 0x000000, "Member 'MariaTableRowLibrary_AddFloat::Row' has a wrong offset!");
-static_assert(offsetof(MariaTableRowLibrary_AddFloat, Value) == 0x000008, "Member 'MariaTableRowLibrary_AddFloat::Value' has a wrong offset!");
+DUMPER7_ASSERTS_MariaTableRowLibrary_AddFloat;
 
 // Function mariaUploadPlugin.MariaTableRowLibrary.AddInt
 // 0x0010 (0x0010 - 0x0000)
@@ -123,10 +97,7 @@ public:
 	int32                                         Value;                                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MariaTableRowLibrary_AddInt) == 0x000008, "Wrong alignment on MariaTableRowLibrary_AddInt");
-static_assert(sizeof(MariaTableRowLibrary_AddInt) == 0x000010, "Wrong size on MariaTableRowLibrary_AddInt");
-static_assert(offsetof(MariaTableRowLibrary_AddInt, Row) == 0x000000, "Member 'MariaTableRowLibrary_AddInt::Row' has a wrong offset!");
-static_assert(offsetof(MariaTableRowLibrary_AddInt, Value) == 0x000008, "Member 'MariaTableRowLibrary_AddInt::Value' has a wrong offset!");
+DUMPER7_ASSERTS_MariaTableRowLibrary_AddInt;
 
 // Function mariaUploadPlugin.MariaTableRowLibrary.AddString
 // 0x0018 (0x0018 - 0x0000)
@@ -136,10 +107,7 @@ public:
 	struct FMariaTableRow                         Row;                                               // 0x0000(0x0008)(Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                 Value;                                             // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaTableRowLibrary_AddString) == 0x000008, "Wrong alignment on MariaTableRowLibrary_AddString");
-static_assert(sizeof(MariaTableRowLibrary_AddString) == 0x000018, "Wrong size on MariaTableRowLibrary_AddString");
-static_assert(offsetof(MariaTableRowLibrary_AddString, Row) == 0x000000, "Member 'MariaTableRowLibrary_AddString::Row' has a wrong offset!");
-static_assert(offsetof(MariaTableRowLibrary_AddString, Value) == 0x000008, "Member 'MariaTableRowLibrary_AddString::Value' has a wrong offset!");
+DUMPER7_ASSERTS_MariaTableRowLibrary_AddString;
 
 // Function mariaUploadPlugin.MariaUpload.AddEventParameterArrayFloat
 // 0x0020 (0x0020 - 0x0000)
@@ -149,10 +117,7 @@ public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<float>                                 Value;                                             // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_AddEventParameterArrayFloat) == 0x000008, "Wrong alignment on MariaUpload_AddEventParameterArrayFloat");
-static_assert(sizeof(MariaUpload_AddEventParameterArrayFloat) == 0x000020, "Wrong size on MariaUpload_AddEventParameterArrayFloat");
-static_assert(offsetof(MariaUpload_AddEventParameterArrayFloat, Key) == 0x000000, "Member 'MariaUpload_AddEventParameterArrayFloat::Key' has a wrong offset!");
-static_assert(offsetof(MariaUpload_AddEventParameterArrayFloat, Value) == 0x000010, "Member 'MariaUpload_AddEventParameterArrayFloat::Value' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_AddEventParameterArrayFloat;
 
 // Function mariaUploadPlugin.MariaUpload.AddEventParameterArrayInteger
 // 0x0020 (0x0020 - 0x0000)
@@ -162,10 +127,7 @@ public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<int32>                                 Value;                                             // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_AddEventParameterArrayInteger) == 0x000008, "Wrong alignment on MariaUpload_AddEventParameterArrayInteger");
-static_assert(sizeof(MariaUpload_AddEventParameterArrayInteger) == 0x000020, "Wrong size on MariaUpload_AddEventParameterArrayInteger");
-static_assert(offsetof(MariaUpload_AddEventParameterArrayInteger, Key) == 0x000000, "Member 'MariaUpload_AddEventParameterArrayInteger::Key' has a wrong offset!");
-static_assert(offsetof(MariaUpload_AddEventParameterArrayInteger, Value) == 0x000010, "Member 'MariaUpload_AddEventParameterArrayInteger::Value' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_AddEventParameterArrayInteger;
 
 // Function mariaUploadPlugin.MariaUpload.AddEventParameterArrayStrings
 // 0x0020 (0x0020 - 0x0000)
@@ -175,10 +137,7 @@ public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FString>                         Value;                                             // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_AddEventParameterArrayStrings) == 0x000008, "Wrong alignment on MariaUpload_AddEventParameterArrayStrings");
-static_assert(sizeof(MariaUpload_AddEventParameterArrayStrings) == 0x000020, "Wrong size on MariaUpload_AddEventParameterArrayStrings");
-static_assert(offsetof(MariaUpload_AddEventParameterArrayStrings, Key) == 0x000000, "Member 'MariaUpload_AddEventParameterArrayStrings::Key' has a wrong offset!");
-static_assert(offsetof(MariaUpload_AddEventParameterArrayStrings, Value) == 0x000010, "Member 'MariaUpload_AddEventParameterArrayStrings::Value' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_AddEventParameterArrayStrings;
 
 // Function mariaUploadPlugin.MariaUpload.AddEventParameterFloat
 // 0x0018 (0x0018 - 0x0000)
@@ -189,10 +148,7 @@ public:
 	float                                         Value;                                             // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MariaUpload_AddEventParameterFloat) == 0x000008, "Wrong alignment on MariaUpload_AddEventParameterFloat");
-static_assert(sizeof(MariaUpload_AddEventParameterFloat) == 0x000018, "Wrong size on MariaUpload_AddEventParameterFloat");
-static_assert(offsetof(MariaUpload_AddEventParameterFloat, Key) == 0x000000, "Member 'MariaUpload_AddEventParameterFloat::Key' has a wrong offset!");
-static_assert(offsetof(MariaUpload_AddEventParameterFloat, Value) == 0x000010, "Member 'MariaUpload_AddEventParameterFloat::Value' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_AddEventParameterFloat;
 
 // Function mariaUploadPlugin.MariaUpload.AddEventParameterInteger
 // 0x0018 (0x0018 - 0x0000)
@@ -203,10 +159,7 @@ public:
 	int32                                         Value;                                             // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MariaUpload_AddEventParameterInteger) == 0x000008, "Wrong alignment on MariaUpload_AddEventParameterInteger");
-static_assert(sizeof(MariaUpload_AddEventParameterInteger) == 0x000018, "Wrong size on MariaUpload_AddEventParameterInteger");
-static_assert(offsetof(MariaUpload_AddEventParameterInteger, Key) == 0x000000, "Member 'MariaUpload_AddEventParameterInteger::Key' has a wrong offset!");
-static_assert(offsetof(MariaUpload_AddEventParameterInteger, Value) == 0x000010, "Member 'MariaUpload_AddEventParameterInteger::Value' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_AddEventParameterInteger;
 
 // Function mariaUploadPlugin.MariaUpload.AddEventParameterMapFloat
 // 0x0060 (0x0060 - 0x0000)
@@ -216,10 +169,7 @@ public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TMap<class FString, float>                    Value;                                             // 0x0010(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_AddEventParameterMapFloat) == 0x000008, "Wrong alignment on MariaUpload_AddEventParameterMapFloat");
-static_assert(sizeof(MariaUpload_AddEventParameterMapFloat) == 0x000060, "Wrong size on MariaUpload_AddEventParameterMapFloat");
-static_assert(offsetof(MariaUpload_AddEventParameterMapFloat, Key) == 0x000000, "Member 'MariaUpload_AddEventParameterMapFloat::Key' has a wrong offset!");
-static_assert(offsetof(MariaUpload_AddEventParameterMapFloat, Value) == 0x000010, "Member 'MariaUpload_AddEventParameterMapFloat::Value' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_AddEventParameterMapFloat;
 
 // Function mariaUploadPlugin.MariaUpload.AddEventParameterMapInteger
 // 0x0060 (0x0060 - 0x0000)
@@ -229,10 +179,7 @@ public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TMap<class FString, int32>                    Value;                                             // 0x0010(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_AddEventParameterMapInteger) == 0x000008, "Wrong alignment on MariaUpload_AddEventParameterMapInteger");
-static_assert(sizeof(MariaUpload_AddEventParameterMapInteger) == 0x000060, "Wrong size on MariaUpload_AddEventParameterMapInteger");
-static_assert(offsetof(MariaUpload_AddEventParameterMapInteger, Key) == 0x000000, "Member 'MariaUpload_AddEventParameterMapInteger::Key' has a wrong offset!");
-static_assert(offsetof(MariaUpload_AddEventParameterMapInteger, Value) == 0x000010, "Member 'MariaUpload_AddEventParameterMapInteger::Value' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_AddEventParameterMapInteger;
 
 // Function mariaUploadPlugin.MariaUpload.AddEventParameterMapString
 // 0x0060 (0x0060 - 0x0000)
@@ -242,10 +189,7 @@ public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TMap<class FString, class FString>            Value;                                             // 0x0010(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_AddEventParameterMapString) == 0x000008, "Wrong alignment on MariaUpload_AddEventParameterMapString");
-static_assert(sizeof(MariaUpload_AddEventParameterMapString) == 0x000060, "Wrong size on MariaUpload_AddEventParameterMapString");
-static_assert(offsetof(MariaUpload_AddEventParameterMapString, Key) == 0x000000, "Member 'MariaUpload_AddEventParameterMapString::Key' has a wrong offset!");
-static_assert(offsetof(MariaUpload_AddEventParameterMapString, Value) == 0x000010, "Member 'MariaUpload_AddEventParameterMapString::Value' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_AddEventParameterMapString;
 
 // Function mariaUploadPlugin.MariaUpload.AddEventParameterMapStrings
 // 0x0060 (0x0060 - 0x0000)
@@ -255,10 +199,7 @@ public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TMap<class FString, class FString>            Value;                                             // 0x0010(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_AddEventParameterMapStrings) == 0x000008, "Wrong alignment on MariaUpload_AddEventParameterMapStrings");
-static_assert(sizeof(MariaUpload_AddEventParameterMapStrings) == 0x000060, "Wrong size on MariaUpload_AddEventParameterMapStrings");
-static_assert(offsetof(MariaUpload_AddEventParameterMapStrings, Key) == 0x000000, "Member 'MariaUpload_AddEventParameterMapStrings::Key' has a wrong offset!");
-static_assert(offsetof(MariaUpload_AddEventParameterMapStrings, Value) == 0x000010, "Member 'MariaUpload_AddEventParameterMapStrings::Value' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_AddEventParameterMapStrings;
 
 // Function mariaUploadPlugin.MariaUpload.AddEventParameterStrings
 // 0x0020 (0x0020 - 0x0000)
@@ -268,10 +209,7 @@ public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Value;                                             // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_AddEventParameterStrings) == 0x000008, "Wrong alignment on MariaUpload_AddEventParameterStrings");
-static_assert(sizeof(MariaUpload_AddEventParameterStrings) == 0x000020, "Wrong size on MariaUpload_AddEventParameterStrings");
-static_assert(offsetof(MariaUpload_AddEventParameterStrings, Key) == 0x000000, "Member 'MariaUpload_AddEventParameterStrings::Key' has a wrong offset!");
-static_assert(offsetof(MariaUpload_AddEventParameterStrings, Value) == 0x000010, "Member 'MariaUpload_AddEventParameterStrings::Value' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_AddEventParameterStrings;
 
 // Function mariaUploadPlugin.MariaUpload.AddEventParameterTable
 // 0x0020 (0x0020 - 0x0000)
@@ -281,10 +219,7 @@ public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FMariaTableRow>                 Value;                                             // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_AddEventParameterTable) == 0x000008, "Wrong alignment on MariaUpload_AddEventParameterTable");
-static_assert(sizeof(MariaUpload_AddEventParameterTable) == 0x000020, "Wrong size on MariaUpload_AddEventParameterTable");
-static_assert(offsetof(MariaUpload_AddEventParameterTable, Key) == 0x000000, "Member 'MariaUpload_AddEventParameterTable::Key' has a wrong offset!");
-static_assert(offsetof(MariaUpload_AddEventParameterTable, Value) == 0x000010, "Member 'MariaUpload_AddEventParameterTable::Value' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_AddEventParameterTable;
 
 // Function mariaUploadPlugin.MariaUpload.AddUserParameterArrayFloat
 // 0x0020 (0x0020 - 0x0000)
@@ -294,10 +229,7 @@ public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<float>                                 Value;                                             // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_AddUserParameterArrayFloat) == 0x000008, "Wrong alignment on MariaUpload_AddUserParameterArrayFloat");
-static_assert(sizeof(MariaUpload_AddUserParameterArrayFloat) == 0x000020, "Wrong size on MariaUpload_AddUserParameterArrayFloat");
-static_assert(offsetof(MariaUpload_AddUserParameterArrayFloat, Key) == 0x000000, "Member 'MariaUpload_AddUserParameterArrayFloat::Key' has a wrong offset!");
-static_assert(offsetof(MariaUpload_AddUserParameterArrayFloat, Value) == 0x000010, "Member 'MariaUpload_AddUserParameterArrayFloat::Value' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_AddUserParameterArrayFloat;
 
 // Function mariaUploadPlugin.MariaUpload.AddUserParameterArrayInteger
 // 0x0020 (0x0020 - 0x0000)
@@ -307,10 +239,7 @@ public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<int32>                                 Value;                                             // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_AddUserParameterArrayInteger) == 0x000008, "Wrong alignment on MariaUpload_AddUserParameterArrayInteger");
-static_assert(sizeof(MariaUpload_AddUserParameterArrayInteger) == 0x000020, "Wrong size on MariaUpload_AddUserParameterArrayInteger");
-static_assert(offsetof(MariaUpload_AddUserParameterArrayInteger, Key) == 0x000000, "Member 'MariaUpload_AddUserParameterArrayInteger::Key' has a wrong offset!");
-static_assert(offsetof(MariaUpload_AddUserParameterArrayInteger, Value) == 0x000010, "Member 'MariaUpload_AddUserParameterArrayInteger::Value' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_AddUserParameterArrayInteger;
 
 // Function mariaUploadPlugin.MariaUpload.AddUserParameterArrayStrings
 // 0x0020 (0x0020 - 0x0000)
@@ -320,10 +249,7 @@ public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FString>                         Value;                                             // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_AddUserParameterArrayStrings) == 0x000008, "Wrong alignment on MariaUpload_AddUserParameterArrayStrings");
-static_assert(sizeof(MariaUpload_AddUserParameterArrayStrings) == 0x000020, "Wrong size on MariaUpload_AddUserParameterArrayStrings");
-static_assert(offsetof(MariaUpload_AddUserParameterArrayStrings, Key) == 0x000000, "Member 'MariaUpload_AddUserParameterArrayStrings::Key' has a wrong offset!");
-static_assert(offsetof(MariaUpload_AddUserParameterArrayStrings, Value) == 0x000010, "Member 'MariaUpload_AddUserParameterArrayStrings::Value' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_AddUserParameterArrayStrings;
 
 // Function mariaUploadPlugin.MariaUpload.AddUserParameterFloat
 // 0x0018 (0x0018 - 0x0000)
@@ -334,10 +260,7 @@ public:
 	float                                         Value;                                             // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MariaUpload_AddUserParameterFloat) == 0x000008, "Wrong alignment on MariaUpload_AddUserParameterFloat");
-static_assert(sizeof(MariaUpload_AddUserParameterFloat) == 0x000018, "Wrong size on MariaUpload_AddUserParameterFloat");
-static_assert(offsetof(MariaUpload_AddUserParameterFloat, Key) == 0x000000, "Member 'MariaUpload_AddUserParameterFloat::Key' has a wrong offset!");
-static_assert(offsetof(MariaUpload_AddUserParameterFloat, Value) == 0x000010, "Member 'MariaUpload_AddUserParameterFloat::Value' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_AddUserParameterFloat;
 
 // Function mariaUploadPlugin.MariaUpload.AddUserParameterInteger
 // 0x0018 (0x0018 - 0x0000)
@@ -348,10 +271,7 @@ public:
 	int32                                         Value;                                             // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MariaUpload_AddUserParameterInteger) == 0x000008, "Wrong alignment on MariaUpload_AddUserParameterInteger");
-static_assert(sizeof(MariaUpload_AddUserParameterInteger) == 0x000018, "Wrong size on MariaUpload_AddUserParameterInteger");
-static_assert(offsetof(MariaUpload_AddUserParameterInteger, Key) == 0x000000, "Member 'MariaUpload_AddUserParameterInteger::Key' has a wrong offset!");
-static_assert(offsetof(MariaUpload_AddUserParameterInteger, Value) == 0x000010, "Member 'MariaUpload_AddUserParameterInteger::Value' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_AddUserParameterInteger;
 
 // Function mariaUploadPlugin.MariaUpload.AddUserParameterMapFloat
 // 0x0060 (0x0060 - 0x0000)
@@ -361,10 +281,7 @@ public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TMap<class FString, float>                    Value;                                             // 0x0010(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_AddUserParameterMapFloat) == 0x000008, "Wrong alignment on MariaUpload_AddUserParameterMapFloat");
-static_assert(sizeof(MariaUpload_AddUserParameterMapFloat) == 0x000060, "Wrong size on MariaUpload_AddUserParameterMapFloat");
-static_assert(offsetof(MariaUpload_AddUserParameterMapFloat, Key) == 0x000000, "Member 'MariaUpload_AddUserParameterMapFloat::Key' has a wrong offset!");
-static_assert(offsetof(MariaUpload_AddUserParameterMapFloat, Value) == 0x000010, "Member 'MariaUpload_AddUserParameterMapFloat::Value' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_AddUserParameterMapFloat;
 
 // Function mariaUploadPlugin.MariaUpload.AddUserParameterMapInteger
 // 0x0060 (0x0060 - 0x0000)
@@ -374,10 +291,7 @@ public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TMap<class FString, int32>                    Value;                                             // 0x0010(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_AddUserParameterMapInteger) == 0x000008, "Wrong alignment on MariaUpload_AddUserParameterMapInteger");
-static_assert(sizeof(MariaUpload_AddUserParameterMapInteger) == 0x000060, "Wrong size on MariaUpload_AddUserParameterMapInteger");
-static_assert(offsetof(MariaUpload_AddUserParameterMapInteger, Key) == 0x000000, "Member 'MariaUpload_AddUserParameterMapInteger::Key' has a wrong offset!");
-static_assert(offsetof(MariaUpload_AddUserParameterMapInteger, Value) == 0x000010, "Member 'MariaUpload_AddUserParameterMapInteger::Value' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_AddUserParameterMapInteger;
 
 // Function mariaUploadPlugin.MariaUpload.AddUserParameterMapString
 // 0x0060 (0x0060 - 0x0000)
@@ -387,10 +301,7 @@ public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TMap<class FString, class FString>            Value;                                             // 0x0010(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_AddUserParameterMapString) == 0x000008, "Wrong alignment on MariaUpload_AddUserParameterMapString");
-static_assert(sizeof(MariaUpload_AddUserParameterMapString) == 0x000060, "Wrong size on MariaUpload_AddUserParameterMapString");
-static_assert(offsetof(MariaUpload_AddUserParameterMapString, Key) == 0x000000, "Member 'MariaUpload_AddUserParameterMapString::Key' has a wrong offset!");
-static_assert(offsetof(MariaUpload_AddUserParameterMapString, Value) == 0x000010, "Member 'MariaUpload_AddUserParameterMapString::Value' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_AddUserParameterMapString;
 
 // Function mariaUploadPlugin.MariaUpload.AddUserParameterMapStrings
 // 0x0060 (0x0060 - 0x0000)
@@ -400,10 +311,7 @@ public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TMap<class FString, class FString>            Value;                                             // 0x0010(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_AddUserParameterMapStrings) == 0x000008, "Wrong alignment on MariaUpload_AddUserParameterMapStrings");
-static_assert(sizeof(MariaUpload_AddUserParameterMapStrings) == 0x000060, "Wrong size on MariaUpload_AddUserParameterMapStrings");
-static_assert(offsetof(MariaUpload_AddUserParameterMapStrings, Key) == 0x000000, "Member 'MariaUpload_AddUserParameterMapStrings::Key' has a wrong offset!");
-static_assert(offsetof(MariaUpload_AddUserParameterMapStrings, Value) == 0x000010, "Member 'MariaUpload_AddUserParameterMapStrings::Value' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_AddUserParameterMapStrings;
 
 // Function mariaUploadPlugin.MariaUpload.AddUserParameterStrings
 // 0x0020 (0x0020 - 0x0000)
@@ -413,10 +321,7 @@ public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Value;                                             // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_AddUserParameterStrings) == 0x000008, "Wrong alignment on MariaUpload_AddUserParameterStrings");
-static_assert(sizeof(MariaUpload_AddUserParameterStrings) == 0x000020, "Wrong size on MariaUpload_AddUserParameterStrings");
-static_assert(offsetof(MariaUpload_AddUserParameterStrings, Key) == 0x000000, "Member 'MariaUpload_AddUserParameterStrings::Key' has a wrong offset!");
-static_assert(offsetof(MariaUpload_AddUserParameterStrings, Value) == 0x000010, "Member 'MariaUpload_AddUserParameterStrings::Value' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_AddUserParameterStrings;
 
 // Function mariaUploadPlugin.MariaUpload.AddUserParameterTable
 // 0x0020 (0x0020 - 0x0000)
@@ -426,10 +331,7 @@ public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FMariaTableRow>                 Value;                                             // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_AddUserParameterTable) == 0x000008, "Wrong alignment on MariaUpload_AddUserParameterTable");
-static_assert(sizeof(MariaUpload_AddUserParameterTable) == 0x000020, "Wrong size on MariaUpload_AddUserParameterTable");
-static_assert(offsetof(MariaUpload_AddUserParameterTable, Key) == 0x000000, "Member 'MariaUpload_AddUserParameterTable::Key' has a wrong offset!");
-static_assert(offsetof(MariaUpload_AddUserParameterTable, Value) == 0x000010, "Member 'MariaUpload_AddUserParameterTable::Value' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_AddUserParameterTable;
 
 // Function mariaUploadPlugin.MariaUpload.CanStartLogging
 // 0x0001 (0x0001 - 0x0000)
@@ -438,9 +340,7 @@ struct MariaUpload_CanStartLogging final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_CanStartLogging) == 0x000001, "Wrong alignment on MariaUpload_CanStartLogging");
-static_assert(sizeof(MariaUpload_CanStartLogging) == 0x000001, "Wrong size on MariaUpload_CanStartLogging");
-static_assert(offsetof(MariaUpload_CanStartLogging, ReturnValue) == 0x000000, "Member 'MariaUpload_CanStartLogging::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_CanStartLogging;
 
 // Function mariaUploadPlugin.MariaUpload.CheckSegaAccountLinkStatus
 // 0x0001 (0x0001 - 0x0000)
@@ -449,9 +349,7 @@ struct MariaUpload_CheckSegaAccountLinkStatus final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_CheckSegaAccountLinkStatus) == 0x000001, "Wrong alignment on MariaUpload_CheckSegaAccountLinkStatus");
-static_assert(sizeof(MariaUpload_CheckSegaAccountLinkStatus) == 0x000001, "Wrong size on MariaUpload_CheckSegaAccountLinkStatus");
-static_assert(offsetof(MariaUpload_CheckSegaAccountLinkStatus, ReturnValue) == 0x000000, "Member 'MariaUpload_CheckSegaAccountLinkStatus::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_CheckSegaAccountLinkStatus;
 
 // Function mariaUploadPlugin.MariaUpload.CreateQRCodeTextureDynamic
 // 0x0028 (0x0028 - 0x0000)
@@ -463,11 +361,7 @@ public:
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2DDynamic*                      ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_CreateQRCodeTextureDynamic) == 0x000008, "Wrong alignment on MariaUpload_CreateQRCodeTextureDynamic");
-static_assert(sizeof(MariaUpload_CreateQRCodeTextureDynamic) == 0x000028, "Wrong size on MariaUpload_CreateQRCodeTextureDynamic");
-static_assert(offsetof(MariaUpload_CreateQRCodeTextureDynamic, QRCode) == 0x000000, "Member 'MariaUpload_CreateQRCodeTextureDynamic::QRCode' has a wrong offset!");
-static_assert(offsetof(MariaUpload_CreateQRCodeTextureDynamic, Border) == 0x000018, "Member 'MariaUpload_CreateQRCodeTextureDynamic::Border' has a wrong offset!");
-static_assert(offsetof(MariaUpload_CreateQRCodeTextureDynamic, ReturnValue) == 0x000020, "Member 'MariaUpload_CreateQRCodeTextureDynamic::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_CreateQRCodeTextureDynamic;
 
 // Function mariaUploadPlugin.MariaUpload.GenerateTemporaryAccount
 // 0x0010 (0x0010 - 0x0000)
@@ -476,9 +370,7 @@ struct MariaUpload_GenerateTemporaryAccount final
 public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_GenerateTemporaryAccount) == 0x000008, "Wrong alignment on MariaUpload_GenerateTemporaryAccount");
-static_assert(sizeof(MariaUpload_GenerateTemporaryAccount) == 0x000010, "Wrong size on MariaUpload_GenerateTemporaryAccount");
-static_assert(offsetof(MariaUpload_GenerateTemporaryAccount, ReturnValue) == 0x000000, "Member 'MariaUpload_GenerateTemporaryAccount::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_GenerateTemporaryAccount;
 
 // Function mariaUploadPlugin.MariaUpload.GetAccessTokenElapsedSeconds
 // 0x0004 (0x0004 - 0x0000)
@@ -487,9 +379,7 @@ struct MariaUpload_GetAccessTokenElapsedSeconds final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_GetAccessTokenElapsedSeconds) == 0x000004, "Wrong alignment on MariaUpload_GetAccessTokenElapsedSeconds");
-static_assert(sizeof(MariaUpload_GetAccessTokenElapsedSeconds) == 0x000004, "Wrong size on MariaUpload_GetAccessTokenElapsedSeconds");
-static_assert(offsetof(MariaUpload_GetAccessTokenElapsedSeconds, ReturnValue) == 0x000000, "Member 'MariaUpload_GetAccessTokenElapsedSeconds::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_GetAccessTokenElapsedSeconds;
 
 // Function mariaUploadPlugin.MariaUpload.GetAccessTokenErrorCount
 // 0x0004 (0x0004 - 0x0000)
@@ -498,9 +388,7 @@ struct MariaUpload_GetAccessTokenErrorCount final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_GetAccessTokenErrorCount) == 0x000004, "Wrong alignment on MariaUpload_GetAccessTokenErrorCount");
-static_assert(sizeof(MariaUpload_GetAccessTokenErrorCount) == 0x000004, "Wrong size on MariaUpload_GetAccessTokenErrorCount");
-static_assert(offsetof(MariaUpload_GetAccessTokenErrorCount, ReturnValue) == 0x000000, "Member 'MariaUpload_GetAccessTokenErrorCount::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_GetAccessTokenErrorCount;
 
 // Function mariaUploadPlugin.MariaUpload.GetAccessTokenNgCount
 // 0x0004 (0x0004 - 0x0000)
@@ -509,9 +397,7 @@ struct MariaUpload_GetAccessTokenNgCount final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_GetAccessTokenNgCount) == 0x000004, "Wrong alignment on MariaUpload_GetAccessTokenNgCount");
-static_assert(sizeof(MariaUpload_GetAccessTokenNgCount) == 0x000004, "Wrong size on MariaUpload_GetAccessTokenNgCount");
-static_assert(offsetof(MariaUpload_GetAccessTokenNgCount, ReturnValue) == 0x000000, "Member 'MariaUpload_GetAccessTokenNgCount::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_GetAccessTokenNgCount;
 
 // Function mariaUploadPlugin.MariaUpload.GetLogCategoryThreshold
 // 0x0001 (0x0001 - 0x0000)
@@ -520,9 +406,7 @@ struct MariaUpload_GetLogCategoryThreshold final
 public:
 	EMariaDevelopLogCategory                      ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_GetLogCategoryThreshold) == 0x000001, "Wrong alignment on MariaUpload_GetLogCategoryThreshold");
-static_assert(sizeof(MariaUpload_GetLogCategoryThreshold) == 0x000001, "Wrong size on MariaUpload_GetLogCategoryThreshold");
-static_assert(offsetof(MariaUpload_GetLogCategoryThreshold, ReturnValue) == 0x000000, "Member 'MariaUpload_GetLogCategoryThreshold::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_GetLogCategoryThreshold;
 
 // Function mariaUploadPlugin.MariaUpload.GetMessagesNumInQueue
 // 0x0004 (0x0004 - 0x0000)
@@ -531,9 +415,7 @@ struct MariaUpload_GetMessagesNumInQueue final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_GetMessagesNumInQueue) == 0x000004, "Wrong alignment on MariaUpload_GetMessagesNumInQueue");
-static_assert(sizeof(MariaUpload_GetMessagesNumInQueue) == 0x000004, "Wrong size on MariaUpload_GetMessagesNumInQueue");
-static_assert(offsetof(MariaUpload_GetMessagesNumInQueue, ReturnValue) == 0x000000, "Member 'MariaUpload_GetMessagesNumInQueue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_GetMessagesNumInQueue;
 
 // Function mariaUploadPlugin.MariaUpload.GetNetworkAccount_Epic
 // 0x0010 (0x0010 - 0x0000)
@@ -542,9 +424,7 @@ struct MariaUpload_GetNetworkAccount_Epic final
 public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_GetNetworkAccount_Epic) == 0x000008, "Wrong alignment on MariaUpload_GetNetworkAccount_Epic");
-static_assert(sizeof(MariaUpload_GetNetworkAccount_Epic) == 0x000010, "Wrong size on MariaUpload_GetNetworkAccount_Epic");
-static_assert(offsetof(MariaUpload_GetNetworkAccount_Epic, ReturnValue) == 0x000000, "Member 'MariaUpload_GetNetworkAccount_Epic::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_GetNetworkAccount_Epic;
 
 // Function mariaUploadPlugin.MariaUpload.GetNetworkAccountString_GDK
 // 0x0010 (0x0010 - 0x0000)
@@ -553,9 +433,7 @@ struct MariaUpload_GetNetworkAccountString_GDK final
 public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_GetNetworkAccountString_GDK) == 0x000008, "Wrong alignment on MariaUpload_GetNetworkAccountString_GDK");
-static_assert(sizeof(MariaUpload_GetNetworkAccountString_GDK) == 0x000010, "Wrong size on MariaUpload_GetNetworkAccountString_GDK");
-static_assert(offsetof(MariaUpload_GetNetworkAccountString_GDK, ReturnValue) == 0x000000, "Member 'MariaUpload_GetNetworkAccountString_GDK::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_GetNetworkAccountString_GDK;
 
 // Function mariaUploadPlugin.MariaUpload.GetNetworkAccountString_PS
 // 0x0010 (0x0010 - 0x0000)
@@ -564,9 +442,7 @@ struct MariaUpload_GetNetworkAccountString_PS final
 public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_GetNetworkAccountString_PS) == 0x000008, "Wrong alignment on MariaUpload_GetNetworkAccountString_PS");
-static_assert(sizeof(MariaUpload_GetNetworkAccountString_PS) == 0x000010, "Wrong size on MariaUpload_GetNetworkAccountString_PS");
-static_assert(offsetof(MariaUpload_GetNetworkAccountString_PS, ReturnValue) == 0x000000, "Member 'MariaUpload_GetNetworkAccountString_PS::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_GetNetworkAccountString_PS;
 
 // Function mariaUploadPlugin.MariaUpload.GetNetworkAccountString_Steam
 // 0x0010 (0x0010 - 0x0000)
@@ -575,9 +451,7 @@ struct MariaUpload_GetNetworkAccountString_Steam final
 public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_GetNetworkAccountString_Steam) == 0x000008, "Wrong alignment on MariaUpload_GetNetworkAccountString_Steam");
-static_assert(sizeof(MariaUpload_GetNetworkAccountString_Steam) == 0x000010, "Wrong size on MariaUpload_GetNetworkAccountString_Steam");
-static_assert(offsetof(MariaUpload_GetNetworkAccountString_Steam, ReturnValue) == 0x000000, "Member 'MariaUpload_GetNetworkAccountString_Steam::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_GetNetworkAccountString_Steam;
 
 // Function mariaUploadPlugin.MariaUpload.GetNetworkAccountString_Switch
 // 0x0010 (0x0010 - 0x0000)
@@ -586,9 +460,7 @@ struct MariaUpload_GetNetworkAccountString_Switch final
 public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_GetNetworkAccountString_Switch) == 0x000008, "Wrong alignment on MariaUpload_GetNetworkAccountString_Switch");
-static_assert(sizeof(MariaUpload_GetNetworkAccountString_Switch) == 0x000010, "Wrong size on MariaUpload_GetNetworkAccountString_Switch");
-static_assert(offsetof(MariaUpload_GetNetworkAccountString_Switch, ReturnValue) == 0x000000, "Member 'MariaUpload_GetNetworkAccountString_Switch::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_GetNetworkAccountString_Switch;
 
 // Function mariaUploadPlugin.MariaUpload.GetPlatformString
 // 0x0010 (0x0010 - 0x0000)
@@ -597,9 +469,7 @@ struct MariaUpload_GetPlatformString final
 public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_GetPlatformString) == 0x000008, "Wrong alignment on MariaUpload_GetPlatformString");
-static_assert(sizeof(MariaUpload_GetPlatformString) == 0x000010, "Wrong size on MariaUpload_GetPlatformString");
-static_assert(offsetof(MariaUpload_GetPlatformString, ReturnValue) == 0x000000, "Member 'MariaUpload_GetPlatformString::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_GetPlatformString;
 
 // Function mariaUploadPlugin.MariaUpload.GetPostErrorCount
 // 0x0004 (0x0004 - 0x0000)
@@ -608,9 +478,7 @@ struct MariaUpload_GetPostErrorCount final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_GetPostErrorCount) == 0x000004, "Wrong alignment on MariaUpload_GetPostErrorCount");
-static_assert(sizeof(MariaUpload_GetPostErrorCount) == 0x000004, "Wrong size on MariaUpload_GetPostErrorCount");
-static_assert(offsetof(MariaUpload_GetPostErrorCount, ReturnValue) == 0x000000, "Member 'MariaUpload_GetPostErrorCount::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_GetPostErrorCount;
 
 // Function mariaUploadPlugin.MariaUpload.GetPostNgCount
 // 0x0004 (0x0004 - 0x0000)
@@ -619,9 +487,7 @@ struct MariaUpload_GetPostNgCount final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_GetPostNgCount) == 0x000004, "Wrong alignment on MariaUpload_GetPostNgCount");
-static_assert(sizeof(MariaUpload_GetPostNgCount) == 0x000004, "Wrong size on MariaUpload_GetPostNgCount");
-static_assert(offsetof(MariaUpload_GetPostNgCount, ReturnValue) == 0x000000, "Member 'MariaUpload_GetPostNgCount::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_GetPostNgCount;
 
 // Function mariaUploadPlugin.MariaUpload.GetRecoveryWaitModeCount
 // 0x0004 (0x0004 - 0x0000)
@@ -630,9 +496,7 @@ struct MariaUpload_GetRecoveryWaitModeCount final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_GetRecoveryWaitModeCount) == 0x000004, "Wrong alignment on MariaUpload_GetRecoveryWaitModeCount");
-static_assert(sizeof(MariaUpload_GetRecoveryWaitModeCount) == 0x000004, "Wrong size on MariaUpload_GetRecoveryWaitModeCount");
-static_assert(offsetof(MariaUpload_GetRecoveryWaitModeCount, ReturnValue) == 0x000000, "Member 'MariaUpload_GetRecoveryWaitModeCount::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_GetRecoveryWaitModeCount;
 
 // Function mariaUploadPlugin.MariaUpload.GetSegaAccountID
 // 0x0010 (0x0010 - 0x0000)
@@ -641,9 +505,7 @@ struct MariaUpload_GetSegaAccountID final
 public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_GetSegaAccountID) == 0x000008, "Wrong alignment on MariaUpload_GetSegaAccountID");
-static_assert(sizeof(MariaUpload_GetSegaAccountID) == 0x000010, "Wrong size on MariaUpload_GetSegaAccountID");
-static_assert(offsetof(MariaUpload_GetSegaAccountID, ReturnValue) == 0x000000, "Member 'MariaUpload_GetSegaAccountID::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_GetSegaAccountID;
 
 // Function mariaUploadPlugin.MariaUpload.GetSegaAccountType
 // 0x0001 (0x0001 - 0x0000)
@@ -652,9 +514,7 @@ struct MariaUpload_GetSegaAccountType final
 public:
 	EMariaSegaAccountType                         ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_GetSegaAccountType) == 0x000001, "Wrong alignment on MariaUpload_GetSegaAccountType");
-static_assert(sizeof(MariaUpload_GetSegaAccountType) == 0x000001, "Wrong size on MariaUpload_GetSegaAccountType");
-static_assert(offsetof(MariaUpload_GetSegaAccountType, ReturnValue) == 0x000000, "Member 'MariaUpload_GetSegaAccountType::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_GetSegaAccountType;
 
 // Function mariaUploadPlugin.MariaUpload.GetSentMessagesNum
 // 0x0004 (0x0004 - 0x0000)
@@ -663,9 +523,7 @@ struct MariaUpload_GetSentMessagesNum final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_GetSentMessagesNum) == 0x000004, "Wrong alignment on MariaUpload_GetSentMessagesNum");
-static_assert(sizeof(MariaUpload_GetSentMessagesNum) == 0x000004, "Wrong size on MariaUpload_GetSentMessagesNum");
-static_assert(offsetof(MariaUpload_GetSentMessagesNum, ReturnValue) == 0x000000, "Member 'MariaUpload_GetSentMessagesNum::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_GetSentMessagesNum;
 
 // Function mariaUploadPlugin.MariaUpload.GetUserID
 // 0x0010 (0x0010 - 0x0000)
@@ -674,9 +532,7 @@ struct MariaUpload_GetUserID final
 public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_GetUserID) == 0x000008, "Wrong alignment on MariaUpload_GetUserID");
-static_assert(sizeof(MariaUpload_GetUserID) == 0x000010, "Wrong size on MariaUpload_GetUserID");
-static_assert(offsetof(MariaUpload_GetUserID, ReturnValue) == 0x000000, "Member 'MariaUpload_GetUserID::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_GetUserID;
 
 // Function mariaUploadPlugin.MariaUpload.Initialize
 // 0x0001 (0x0001 - 0x0000)
@@ -685,9 +541,7 @@ struct MariaUpload_Initialize final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_Initialize) == 0x000001, "Wrong alignment on MariaUpload_Initialize");
-static_assert(sizeof(MariaUpload_Initialize) == 0x000001, "Wrong size on MariaUpload_Initialize");
-static_assert(offsetof(MariaUpload_Initialize, ReturnValue) == 0x000000, "Member 'MariaUpload_Initialize::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_Initialize;
 
 // Function mariaUploadPlugin.MariaUpload.InitializeNNLibraries
 // 0x0001 (0x0001 - 0x0000)
@@ -696,9 +550,7 @@ struct MariaUpload_InitializeNNLibraries final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_InitializeNNLibraries) == 0x000001, "Wrong alignment on MariaUpload_InitializeNNLibraries");
-static_assert(sizeof(MariaUpload_InitializeNNLibraries) == 0x000001, "Wrong size on MariaUpload_InitializeNNLibraries");
-static_assert(offsetof(MariaUpload_InitializeNNLibraries, ReturnValue) == 0x000000, "Member 'MariaUpload_InitializeNNLibraries::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_InitializeNNLibraries;
 
 // Function mariaUploadPlugin.MariaUpload.InitializeUltThread
 // 0x0001 (0x0001 - 0x0000)
@@ -707,9 +559,7 @@ struct MariaUpload_InitializeUltThread final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_InitializeUltThread) == 0x000001, "Wrong alignment on MariaUpload_InitializeUltThread");
-static_assert(sizeof(MariaUpload_InitializeUltThread) == 0x000001, "Wrong size on MariaUpload_InitializeUltThread");
-static_assert(offsetof(MariaUpload_InitializeUltThread, ReturnValue) == 0x000000, "Member 'MariaUpload_InitializeUltThread::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_InitializeUltThread;
 
 // Function mariaUploadPlugin.MariaUpload.IsInitializeAuthSeqNeeded
 // 0x0001 (0x0001 - 0x0000)
@@ -718,9 +568,7 @@ struct MariaUpload_IsInitializeAuthSeqNeeded final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_IsInitializeAuthSeqNeeded) == 0x000001, "Wrong alignment on MariaUpload_IsInitializeAuthSeqNeeded");
-static_assert(sizeof(MariaUpload_IsInitializeAuthSeqNeeded) == 0x000001, "Wrong size on MariaUpload_IsInitializeAuthSeqNeeded");
-static_assert(offsetof(MariaUpload_IsInitializeAuthSeqNeeded, ReturnValue) == 0x000000, "Member 'MariaUpload_IsInitializeAuthSeqNeeded::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_IsInitializeAuthSeqNeeded;
 
 // Function mariaUploadPlugin.MariaUpload.IsInRecoveryWaitMode
 // 0x0001 (0x0001 - 0x0000)
@@ -729,9 +577,7 @@ struct MariaUpload_IsInRecoveryWaitMode final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_IsInRecoveryWaitMode) == 0x000001, "Wrong alignment on MariaUpload_IsInRecoveryWaitMode");
-static_assert(sizeof(MariaUpload_IsInRecoveryWaitMode) == 0x000001, "Wrong size on MariaUpload_IsInRecoveryWaitMode");
-static_assert(offsetof(MariaUpload_IsInRecoveryWaitMode, ReturnValue) == 0x000000, "Member 'MariaUpload_IsInRecoveryWaitMode::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_IsInRecoveryWaitMode;
 
 // Function mariaUploadPlugin.MariaUpload.IsLoggingAvailable
 // 0x0001 (0x0001 - 0x0000)
@@ -740,9 +586,7 @@ struct MariaUpload_IsLoggingAvailable final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_IsLoggingAvailable) == 0x000001, "Wrong alignment on MariaUpload_IsLoggingAvailable");
-static_assert(sizeof(MariaUpload_IsLoggingAvailable) == 0x000001, "Wrong size on MariaUpload_IsLoggingAvailable");
-static_assert(offsetof(MariaUpload_IsLoggingAvailable, ReturnValue) == 0x000000, "Member 'MariaUpload_IsLoggingAvailable::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_IsLoggingAvailable;
 
 // Function mariaUploadPlugin.MariaUpload.IsOnMSPC
 // 0x0001 (0x0001 - 0x0000)
@@ -751,9 +595,7 @@ struct MariaUpload_IsOnMSPC final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_IsOnMSPC) == 0x000001, "Wrong alignment on MariaUpload_IsOnMSPC");
-static_assert(sizeof(MariaUpload_IsOnMSPC) == 0x000001, "Wrong size on MariaUpload_IsOnMSPC");
-static_assert(offsetof(MariaUpload_IsOnMSPC, ReturnValue) == 0x000000, "Member 'MariaUpload_IsOnMSPC::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_IsOnMSPC;
 
 // Function mariaUploadPlugin.MariaUpload.IsOnSwitch1
 // 0x0001 (0x0001 - 0x0000)
@@ -762,9 +604,7 @@ struct MariaUpload_IsOnSwitch1 final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_IsOnSwitch1) == 0x000001, "Wrong alignment on MariaUpload_IsOnSwitch1");
-static_assert(sizeof(MariaUpload_IsOnSwitch1) == 0x000001, "Wrong size on MariaUpload_IsOnSwitch1");
-static_assert(offsetof(MariaUpload_IsOnSwitch1, ReturnValue) == 0x000000, "Member 'MariaUpload_IsOnSwitch1::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_IsOnSwitch1;
 
 // Function mariaUploadPlugin.MariaUpload.IsOnSwitch2
 // 0x0001 (0x0001 - 0x0000)
@@ -773,9 +613,7 @@ struct MariaUpload_IsOnSwitch2 final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_IsOnSwitch2) == 0x000001, "Wrong alignment on MariaUpload_IsOnSwitch2");
-static_assert(sizeof(MariaUpload_IsOnSwitch2) == 0x000001, "Wrong size on MariaUpload_IsOnSwitch2");
-static_assert(offsetof(MariaUpload_IsOnSwitch2, ReturnValue) == 0x000000, "Member 'MariaUpload_IsOnSwitch2::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_IsOnSwitch2;
 
 // Function mariaUploadPlugin.MariaUpload.IsOnXbox
 // 0x0001 (0x0001 - 0x0000)
@@ -784,9 +622,7 @@ struct MariaUpload_IsOnXbox final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_IsOnXbox) == 0x000001, "Wrong alignment on MariaUpload_IsOnXbox");
-static_assert(sizeof(MariaUpload_IsOnXbox) == 0x000001, "Wrong size on MariaUpload_IsOnXbox");
-static_assert(offsetof(MariaUpload_IsOnXbox, ReturnValue) == 0x000000, "Member 'MariaUpload_IsOnXbox::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_IsOnXbox;
 
 // Function mariaUploadPlugin.MariaUpload.IsRunningUploading
 // 0x0001 (0x0001 - 0x0000)
@@ -795,9 +631,7 @@ struct MariaUpload_IsRunningUploading final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_IsRunningUploading) == 0x000001, "Wrong alignment on MariaUpload_IsRunningUploading");
-static_assert(sizeof(MariaUpload_IsRunningUploading) == 0x000001, "Wrong size on MariaUpload_IsRunningUploading");
-static_assert(offsetof(MariaUpload_IsRunningUploading, ReturnValue) == 0x000000, "Member 'MariaUpload_IsRunningUploading::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_IsRunningUploading;
 
 // Function mariaUploadPlugin.MariaUpload.IsSegaAccountLinkPending
 // 0x0001 (0x0001 - 0x0000)
@@ -806,9 +640,7 @@ struct MariaUpload_IsSegaAccountLinkPending final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_IsSegaAccountLinkPending) == 0x000001, "Wrong alignment on MariaUpload_IsSegaAccountLinkPending");
-static_assert(sizeof(MariaUpload_IsSegaAccountLinkPending) == 0x000001, "Wrong size on MariaUpload_IsSegaAccountLinkPending");
-static_assert(offsetof(MariaUpload_IsSegaAccountLinkPending, ReturnValue) == 0x000000, "Member 'MariaUpload_IsSegaAccountLinkPending::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_IsSegaAccountLinkPending;
 
 // Function mariaUploadPlugin.MariaUpload.IsSegaAccountLinkStatusChecking
 // 0x0001 (0x0001 - 0x0000)
@@ -817,9 +649,7 @@ struct MariaUpload_IsSegaAccountLinkStatusChecking final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_IsSegaAccountLinkStatusChecking) == 0x000001, "Wrong alignment on MariaUpload_IsSegaAccountLinkStatusChecking");
-static_assert(sizeof(MariaUpload_IsSegaAccountLinkStatusChecking) == 0x000001, "Wrong size on MariaUpload_IsSegaAccountLinkStatusChecking");
-static_assert(offsetof(MariaUpload_IsSegaAccountLinkStatusChecking, ReturnValue) == 0x000000, "Member 'MariaUpload_IsSegaAccountLinkStatusChecking::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_IsSegaAccountLinkStatusChecking;
 
 // Function mariaUploadPlugin.MariaUpload.LoginEOSAsync_Epic
 // 0x0048 (0x0048 - 0x0000)
@@ -834,14 +664,7 @@ public:
 	class FString                                 Token;                                             // 0x0028(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TDelegate<void(bool Success)>                 Completed;                                         // 0x0038(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_LoginEOSAsync_Epic) == 0x000008, "Wrong alignment on MariaUpload_LoginEOSAsync_Epic");
-static_assert(sizeof(MariaUpload_LoginEOSAsync_Epic) == 0x000048, "Wrong size on MariaUpload_LoginEOSAsync_Epic");
-static_assert(offsetof(MariaUpload_LoginEOSAsync_Epic, WorldContextObject) == 0x000000, "Member 'MariaUpload_LoginEOSAsync_Epic::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(MariaUpload_LoginEOSAsync_Epic, PlayerController) == 0x000008, "Member 'MariaUpload_LoginEOSAsync_Epic::PlayerController' has a wrong offset!");
-static_assert(offsetof(MariaUpload_LoginEOSAsync_Epic, LoginType) == 0x000010, "Member 'MariaUpload_LoginEOSAsync_Epic::LoginType' has a wrong offset!");
-static_assert(offsetof(MariaUpload_LoginEOSAsync_Epic, ID) == 0x000018, "Member 'MariaUpload_LoginEOSAsync_Epic::ID' has a wrong offset!");
-static_assert(offsetof(MariaUpload_LoginEOSAsync_Epic, Token) == 0x000028, "Member 'MariaUpload_LoginEOSAsync_Epic::Token' has a wrong offset!");
-static_assert(offsetof(MariaUpload_LoginEOSAsync_Epic, Completed) == 0x000038, "Member 'MariaUpload_LoginEOSAsync_Epic::Completed' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_LoginEOSAsync_Epic;
 
 // Function mariaUploadPlugin.MariaUpload.LogoutEOSAsync_Epic
 // 0x0020 (0x0020 - 0x0000)
@@ -852,11 +675,7 @@ public:
 	class APlayerController*                      PlayerController;                                  // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TDelegate<void(bool Success)>                 Completed;                                         // 0x0010(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_LogoutEOSAsync_Epic) == 0x000008, "Wrong alignment on MariaUpload_LogoutEOSAsync_Epic");
-static_assert(sizeof(MariaUpload_LogoutEOSAsync_Epic) == 0x000020, "Wrong size on MariaUpload_LogoutEOSAsync_Epic");
-static_assert(offsetof(MariaUpload_LogoutEOSAsync_Epic, WorldContextObject) == 0x000000, "Member 'MariaUpload_LogoutEOSAsync_Epic::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(MariaUpload_LogoutEOSAsync_Epic, PlayerController) == 0x000008, "Member 'MariaUpload_LogoutEOSAsync_Epic::PlayerController' has a wrong offset!");
-static_assert(offsetof(MariaUpload_LogoutEOSAsync_Epic, Completed) == 0x000010, "Member 'MariaUpload_LogoutEOSAsync_Epic::Completed' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_LogoutEOSAsync_Epic;
 
 // Function mariaUploadPlugin.MariaUpload.LoopInitializeAuthSeq
 // 0x0024 (0x0024 - 0x0000)
@@ -868,11 +687,7 @@ public:
 	EMariaInitializeAuthResult                    ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MariaUpload_LoopInitializeAuthSeq) == 0x000004, "Wrong alignment on MariaUpload_LoopInitializeAuthSeq");
-static_assert(sizeof(MariaUpload_LoopInitializeAuthSeq) == 0x000024, "Wrong size on MariaUpload_LoopInitializeAuthSeq");
-static_assert(offsetof(MariaUpload_LoopInitializeAuthSeq, UrlCallback) == 0x000000, "Member 'MariaUpload_LoopInitializeAuthSeq::UrlCallback' has a wrong offset!");
-static_assert(offsetof(MariaUpload_LoopInitializeAuthSeq, IdCallback) == 0x000010, "Member 'MariaUpload_LoopInitializeAuthSeq::IdCallback' has a wrong offset!");
-static_assert(offsetof(MariaUpload_LoopInitializeAuthSeq, ReturnValue) == 0x000020, "Member 'MariaUpload_LoopInitializeAuthSeq::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_LoopInitializeAuthSeq;
 
 // Function mariaUploadPlugin.MariaUpload.MakeQRCode
 // 0x0030 (0x0030 - 0x0000)
@@ -884,11 +699,7 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FMariaQRCode                           ReturnValue;                                       // 0x0018(0x0018)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_MakeQRCode) == 0x000008, "Wrong alignment on MariaUpload_MakeQRCode");
-static_assert(sizeof(MariaUpload_MakeQRCode) == 0x000030, "Wrong size on MariaUpload_MakeQRCode");
-static_assert(offsetof(MariaUpload_MakeQRCode, Text) == 0x000000, "Member 'MariaUpload_MakeQRCode::Text' has a wrong offset!");
-static_assert(offsetof(MariaUpload_MakeQRCode, ErrorCorrectionLevel) == 0x000010, "Member 'MariaUpload_MakeQRCode::ErrorCorrectionLevel' has a wrong offset!");
-static_assert(offsetof(MariaUpload_MakeQRCode, ReturnValue) == 0x000018, "Member 'MariaUpload_MakeQRCode::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_MakeQRCode;
 
 // Function mariaUploadPlugin.MariaUpload.MakeQRCodeSvgString
 // 0x0030 (0x0030 - 0x0000)
@@ -900,11 +711,7 @@ public:
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ReturnValue;                                       // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_MakeQRCodeSvgString) == 0x000008, "Wrong alignment on MariaUpload_MakeQRCodeSvgString");
-static_assert(sizeof(MariaUpload_MakeQRCodeSvgString) == 0x000030, "Wrong size on MariaUpload_MakeQRCodeSvgString");
-static_assert(offsetof(MariaUpload_MakeQRCodeSvgString, QRCode) == 0x000000, "Member 'MariaUpload_MakeQRCodeSvgString::QRCode' has a wrong offset!");
-static_assert(offsetof(MariaUpload_MakeQRCodeSvgString, Border) == 0x000018, "Member 'MariaUpload_MakeQRCodeSvgString::Border' has a wrong offset!");
-static_assert(offsetof(MariaUpload_MakeQRCodeSvgString, ReturnValue) == 0x000020, "Member 'MariaUpload_MakeQRCodeSvgString::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_MakeQRCodeSvgString;
 
 // Function mariaUploadPlugin.MariaUpload.nn_nifm_IsNetworkAvailable
 // 0x0001 (0x0001 - 0x0000)
@@ -913,9 +720,7 @@ struct MariaUpload_nn_nifm_IsNetworkAvailable final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_nn_nifm_IsNetworkAvailable) == 0x000001, "Wrong alignment on MariaUpload_nn_nifm_IsNetworkAvailable");
-static_assert(sizeof(MariaUpload_nn_nifm_IsNetworkAvailable) == 0x000001, "Wrong size on MariaUpload_nn_nifm_IsNetworkAvailable");
-static_assert(offsetof(MariaUpload_nn_nifm_IsNetworkAvailable, ReturnValue) == 0x000000, "Member 'MariaUpload_nn_nifm_IsNetworkAvailable::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_nn_nifm_IsNetworkAvailable;
 
 // Function mariaUploadPlugin.MariaUpload.nn_nifm_IsNetworkRequestOnHold
 // 0x0001 (0x0001 - 0x0000)
@@ -924,9 +729,7 @@ struct MariaUpload_nn_nifm_IsNetworkRequestOnHold final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_nn_nifm_IsNetworkRequestOnHold) == 0x000001, "Wrong alignment on MariaUpload_nn_nifm_IsNetworkRequestOnHold");
-static_assert(sizeof(MariaUpload_nn_nifm_IsNetworkRequestOnHold) == 0x000001, "Wrong size on MariaUpload_nn_nifm_IsNetworkRequestOnHold");
-static_assert(offsetof(MariaUpload_nn_nifm_IsNetworkRequestOnHold, ReturnValue) == 0x000000, "Member 'MariaUpload_nn_nifm_IsNetworkRequestOnHold::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_nn_nifm_IsNetworkRequestOnHold;
 
 // Function mariaUploadPlugin.MariaUpload.OpenConsole
 // 0x0008 (0x0008 - 0x0000)
@@ -935,9 +738,7 @@ struct MariaUpload_OpenConsole final
 public:
 	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_OpenConsole) == 0x000008, "Wrong alignment on MariaUpload_OpenConsole");
-static_assert(sizeof(MariaUpload_OpenConsole) == 0x000008, "Wrong size on MariaUpload_OpenConsole");
-static_assert(offsetof(MariaUpload_OpenConsole, WorldContextObject) == 0x000000, "Member 'MariaUpload_OpenConsole::WorldContextObject' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_OpenConsole;
 
 // Function mariaUploadPlugin.MariaUpload.PreInitializeAuthSeq
 // 0x0008 (0x0008 - 0x0000)
@@ -948,10 +749,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MariaUpload_PreInitializeAuthSeq) == 0x000004, "Wrong alignment on MariaUpload_PreInitializeAuthSeq");
-static_assert(sizeof(MariaUpload_PreInitializeAuthSeq) == 0x000008, "Wrong size on MariaUpload_PreInitializeAuthSeq");
-static_assert(offsetof(MariaUpload_PreInitializeAuthSeq, Phase) == 0x000000, "Member 'MariaUpload_PreInitializeAuthSeq::Phase' has a wrong offset!");
-static_assert(offsetof(MariaUpload_PreInitializeAuthSeq, ReturnValue) == 0x000004, "Member 'MariaUpload_PreInitializeAuthSeq::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_PreInitializeAuthSeq;
 
 // Function mariaUploadPlugin.MariaUpload.PushMessage
 // 0x0010 (0x0010 - 0x0000)
@@ -960,9 +758,7 @@ struct MariaUpload_PushMessage final
 public:
 	class FString                                 EventName;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_PushMessage) == 0x000008, "Wrong alignment on MariaUpload_PushMessage");
-static_assert(sizeof(MariaUpload_PushMessage) == 0x000010, "Wrong size on MariaUpload_PushMessage");
-static_assert(offsetof(MariaUpload_PushMessage, EventName) == 0x000000, "Member 'MariaUpload_PushMessage::EventName' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_PushMessage;
 
 // Function mariaUploadPlugin.MariaUpload.ResetSegaAccountID
 // 0x0001 (0x0001 - 0x0000)
@@ -971,9 +767,7 @@ struct MariaUpload_ResetSegaAccountID final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_ResetSegaAccountID) == 0x000001, "Wrong alignment on MariaUpload_ResetSegaAccountID");
-static_assert(sizeof(MariaUpload_ResetSegaAccountID) == 0x000001, "Wrong size on MariaUpload_ResetSegaAccountID");
-static_assert(offsetof(MariaUpload_ResetSegaAccountID, ReturnValue) == 0x000000, "Member 'MariaUpload_ResetSegaAccountID::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_ResetSegaAccountID;
 
 // Function mariaUploadPlugin.MariaUpload.SetAccessEndpointDevMode
 // 0x0001 (0x0001 - 0x0000)
@@ -982,9 +776,7 @@ struct MariaUpload_SetAccessEndpointDevMode final
 public:
 	EMariaDevMode                                 DevMode;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_SetAccessEndpointDevMode) == 0x000001, "Wrong alignment on MariaUpload_SetAccessEndpointDevMode");
-static_assert(sizeof(MariaUpload_SetAccessEndpointDevMode) == 0x000001, "Wrong size on MariaUpload_SetAccessEndpointDevMode");
-static_assert(offsetof(MariaUpload_SetAccessEndpointDevMode, DevMode) == 0x000000, "Member 'MariaUpload_SetAccessEndpointDevMode::DevMode' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_SetAccessEndpointDevMode;
 
 // Function mariaUploadPlugin.MariaUpload.SetActive
 // 0x0001 (0x0001 - 0x0000)
@@ -993,9 +785,7 @@ struct MariaUpload_SetActive final
 public:
 	bool                                          Active;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_SetActive) == 0x000001, "Wrong alignment on MariaUpload_SetActive");
-static_assert(sizeof(MariaUpload_SetActive) == 0x000001, "Wrong size on MariaUpload_SetActive");
-static_assert(offsetof(MariaUpload_SetActive, Active) == 0x000000, "Member 'MariaUpload_SetActive::Active' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_SetActive;
 
 // Function mariaUploadPlugin.MariaUpload.SetAppInformations
 // 0x0040 (0x0040 - 0x0000)
@@ -1007,12 +797,7 @@ public:
 	class FString                                 Language;                                          // 0x0020(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Region;                                            // 0x0030(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_SetAppInformations) == 0x000008, "Wrong alignment on MariaUpload_SetAppInformations");
-static_assert(sizeof(MariaUpload_SetAppInformations) == 0x000040, "Wrong size on MariaUpload_SetAppInformations");
-static_assert(offsetof(MariaUpload_SetAppInformations, AppID) == 0x000000, "Member 'MariaUpload_SetAppInformations::AppID' has a wrong offset!");
-static_assert(offsetof(MariaUpload_SetAppInformations, PlatformId) == 0x000010, "Member 'MariaUpload_SetAppInformations::PlatformId' has a wrong offset!");
-static_assert(offsetof(MariaUpload_SetAppInformations, Language) == 0x000020, "Member 'MariaUpload_SetAppInformations::Language' has a wrong offset!");
-static_assert(offsetof(MariaUpload_SetAppInformations, Region) == 0x000030, "Member 'MariaUpload_SetAppInformations::Region' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_SetAppInformations;
 
 // Function mariaUploadPlugin.MariaUpload.SetAppVersion
 // 0x0010 (0x0010 - 0x0000)
@@ -1021,9 +806,7 @@ struct MariaUpload_SetAppVersion final
 public:
 	class FString                                 AppVersion;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_SetAppVersion) == 0x000008, "Wrong alignment on MariaUpload_SetAppVersion");
-static_assert(sizeof(MariaUpload_SetAppVersion) == 0x000010, "Wrong size on MariaUpload_SetAppVersion");
-static_assert(offsetof(MariaUpload_SetAppVersion, AppVersion) == 0x000000, "Member 'MariaUpload_SetAppVersion::AppVersion' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_SetAppVersion;
 
 // Function mariaUploadPlugin.MariaUpload.SetAuthenticateDevMode_GDK
 // 0x0001 (0x0001 - 0x0000)
@@ -1032,9 +815,7 @@ struct MariaUpload_SetAuthenticateDevMode_GDK final
 public:
 	EMariaDevMode                                 DevMode;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_SetAuthenticateDevMode_GDK) == 0x000001, "Wrong alignment on MariaUpload_SetAuthenticateDevMode_GDK");
-static_assert(sizeof(MariaUpload_SetAuthenticateDevMode_GDK) == 0x000001, "Wrong size on MariaUpload_SetAuthenticateDevMode_GDK");
-static_assert(offsetof(MariaUpload_SetAuthenticateDevMode_GDK, DevMode) == 0x000000, "Member 'MariaUpload_SetAuthenticateDevMode_GDK::DevMode' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_SetAuthenticateDevMode_GDK;
 
 // Function mariaUploadPlugin.MariaUpload.SetAuthenticateDevMode_Steam
 // 0x0001 (0x0001 - 0x0000)
@@ -1043,9 +824,7 @@ struct MariaUpload_SetAuthenticateDevMode_Steam final
 public:
 	EMariaDevMode                                 DevMode;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_SetAuthenticateDevMode_Steam) == 0x000001, "Wrong alignment on MariaUpload_SetAuthenticateDevMode_Steam");
-static_assert(sizeof(MariaUpload_SetAuthenticateDevMode_Steam) == 0x000001, "Wrong size on MariaUpload_SetAuthenticateDevMode_Steam");
-static_assert(offsetof(MariaUpload_SetAuthenticateDevMode_Steam, DevMode) == 0x000000, "Member 'MariaUpload_SetAuthenticateDevMode_Steam::DevMode' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_SetAuthenticateDevMode_Steam;
 
 // Function mariaUploadPlugin.MariaUpload.SetAuthenticateDevMode_Switch
 // 0x0001 (0x0001 - 0x0000)
@@ -1054,9 +833,7 @@ struct MariaUpload_SetAuthenticateDevMode_Switch final
 public:
 	EMariaDevMode                                 DevMode;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_SetAuthenticateDevMode_Switch) == 0x000001, "Wrong alignment on MariaUpload_SetAuthenticateDevMode_Switch");
-static_assert(sizeof(MariaUpload_SetAuthenticateDevMode_Switch) == 0x000001, "Wrong size on MariaUpload_SetAuthenticateDevMode_Switch");
-static_assert(offsetof(MariaUpload_SetAuthenticateDevMode_Switch, DevMode) == 0x000000, "Member 'MariaUpload_SetAuthenticateDevMode_Switch::DevMode' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_SetAuthenticateDevMode_Switch;
 
 // Function mariaUploadPlugin.MariaUpload.SetDevMode
 // 0x0002 (0x0002 - 0x0000)
@@ -1066,10 +843,7 @@ public:
 	EMariaDevMode                                 LogAuthDevMode;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EMariaDevMode                                 SegaAccountDevMode;                                // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_SetDevMode) == 0x000001, "Wrong alignment on MariaUpload_SetDevMode");
-static_assert(sizeof(MariaUpload_SetDevMode) == 0x000002, "Wrong size on MariaUpload_SetDevMode");
-static_assert(offsetof(MariaUpload_SetDevMode, LogAuthDevMode) == 0x000000, "Member 'MariaUpload_SetDevMode::LogAuthDevMode' has a wrong offset!");
-static_assert(offsetof(MariaUpload_SetDevMode, SegaAccountDevMode) == 0x000001, "Member 'MariaUpload_SetDevMode::SegaAccountDevMode' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_SetDevMode;
 
 // Function mariaUploadPlugin.MariaUpload.SetHaltSending
 // 0x0001 (0x0001 - 0x0000)
@@ -1078,9 +852,7 @@ struct MariaUpload_SetHaltSending final
 public:
 	bool                                          Halt;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_SetHaltSending) == 0x000001, "Wrong alignment on MariaUpload_SetHaltSending");
-static_assert(sizeof(MariaUpload_SetHaltSending) == 0x000001, "Wrong size on MariaUpload_SetHaltSending");
-static_assert(offsetof(MariaUpload_SetHaltSending, Halt) == 0x000000, "Member 'MariaUpload_SetHaltSending::Halt' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_SetHaltSending;
 
 // Function mariaUploadPlugin.MariaUpload.SetHeartbeatDelay
 // 0x0004 (0x0004 - 0x0000)
@@ -1089,9 +861,7 @@ struct MariaUpload_SetHeartbeatDelay final
 public:
 	int32                                         Seconds;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_SetHeartbeatDelay) == 0x000004, "Wrong alignment on MariaUpload_SetHeartbeatDelay");
-static_assert(sizeof(MariaUpload_SetHeartbeatDelay) == 0x000004, "Wrong size on MariaUpload_SetHeartbeatDelay");
-static_assert(offsetof(MariaUpload_SetHeartbeatDelay, Seconds) == 0x000000, "Member 'MariaUpload_SetHeartbeatDelay::Seconds' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_SetHeartbeatDelay;
 
 // Function mariaUploadPlugin.MariaUpload.SetInFocus
 // 0x0001 (0x0001 - 0x0000)
@@ -1100,9 +870,7 @@ struct MariaUpload_SetInFocus final
 public:
 	bool                                          InFocus;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_SetInFocus) == 0x000001, "Wrong alignment on MariaUpload_SetInFocus");
-static_assert(sizeof(MariaUpload_SetInFocus) == 0x000001, "Wrong size on MariaUpload_SetInFocus");
-static_assert(offsetof(MariaUpload_SetInFocus, InFocus) == 0x000000, "Member 'MariaUpload_SetInFocus::InFocus' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_SetInFocus;
 
 // Function mariaUploadPlugin.MariaUpload.SetInitializeParamApplicationId_GDK
 // 0x0010 (0x0010 - 0x0000)
@@ -1111,9 +879,7 @@ struct MariaUpload_SetInitializeParamApplicationId_GDK final
 public:
 	class FString                                 MSAAppID;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_SetInitializeParamApplicationId_GDK) == 0x000008, "Wrong alignment on MariaUpload_SetInitializeParamApplicationId_GDK");
-static_assert(sizeof(MariaUpload_SetInitializeParamApplicationId_GDK) == 0x000010, "Wrong size on MariaUpload_SetInitializeParamApplicationId_GDK");
-static_assert(offsetof(MariaUpload_SetInitializeParamApplicationId_GDK, MSAAppID) == 0x000000, "Member 'MariaUpload_SetInitializeParamApplicationId_GDK::MSAAppID' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_SetInitializeParamApplicationId_GDK;
 
 // Function mariaUploadPlugin.MariaUpload.SetInitializeParamApplicationId_Switch
 // 0x0010 (0x0010 - 0x0000)
@@ -1122,9 +888,7 @@ struct MariaUpload_SetInitializeParamApplicationId_Switch final
 public:
 	class FString                                 ApplicationID;                                     // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_SetInitializeParamApplicationId_Switch) == 0x000008, "Wrong alignment on MariaUpload_SetInitializeParamApplicationId_Switch");
-static_assert(sizeof(MariaUpload_SetInitializeParamApplicationId_Switch) == 0x000010, "Wrong size on MariaUpload_SetInitializeParamApplicationId_Switch");
-static_assert(offsetof(MariaUpload_SetInitializeParamApplicationId_Switch, ApplicationID) == 0x000000, "Member 'MariaUpload_SetInitializeParamApplicationId_Switch::ApplicationID' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_SetInitializeParamApplicationId_Switch;
 
 // Function mariaUploadPlugin.MariaUpload.SetInitializeParamUserHandle
 // 0x0003 (0x0003 - 0x0000)
@@ -1135,11 +899,7 @@ public:
 	bool                                          Cancelled;                                         // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ShowUserSelector;                                  // 0x0002(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_SetInitializeParamUserHandle) == 0x000001, "Wrong alignment on MariaUpload_SetInitializeParamUserHandle");
-static_assert(sizeof(MariaUpload_SetInitializeParamUserHandle) == 0x000003, "Wrong size on MariaUpload_SetInitializeParamUserHandle");
-static_assert(offsetof(MariaUpload_SetInitializeParamUserHandle, Success) == 0x000000, "Member 'MariaUpload_SetInitializeParamUserHandle::Success' has a wrong offset!");
-static_assert(offsetof(MariaUpload_SetInitializeParamUserHandle, Cancelled) == 0x000001, "Member 'MariaUpload_SetInitializeParamUserHandle::Cancelled' has a wrong offset!");
-static_assert(offsetof(MariaUpload_SetInitializeParamUserHandle, ShowUserSelector) == 0x000002, "Member 'MariaUpload_SetInitializeParamUserHandle::ShowUserSelector' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_SetInitializeParamUserHandle;
 
 // Function mariaUploadPlugin.MariaUpload.SetLogCallback
 // 0x0010 (0x0010 - 0x0000)
@@ -1148,9 +908,7 @@ struct MariaUpload_SetLogCallback final
 public:
 	TDelegate<void(EMariaDevelopLogCategory Category, const class FString& Message)> LogCallback;    // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_SetLogCallback) == 0x000004, "Wrong alignment on MariaUpload_SetLogCallback");
-static_assert(sizeof(MariaUpload_SetLogCallback) == 0x000010, "Wrong size on MariaUpload_SetLogCallback");
-static_assert(offsetof(MariaUpload_SetLogCallback, LogCallback) == 0x000000, "Member 'MariaUpload_SetLogCallback::LogCallback' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_SetLogCallback;
 
 // Function mariaUploadPlugin.MariaUpload.SetLogCategoryThreshold
 // 0x0001 (0x0001 - 0x0000)
@@ -1159,9 +917,7 @@ struct MariaUpload_SetLogCategoryThreshold final
 public:
 	EMariaDevelopLogCategory                      LogCategory;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_SetLogCategoryThreshold) == 0x000001, "Wrong alignment on MariaUpload_SetLogCategoryThreshold");
-static_assert(sizeof(MariaUpload_SetLogCategoryThreshold) == 0x000001, "Wrong size on MariaUpload_SetLogCategoryThreshold");
-static_assert(offsetof(MariaUpload_SetLogCategoryThreshold, LogCategory) == 0x000000, "Member 'MariaUpload_SetLogCategoryThreshold::LogCategory' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_SetLogCategoryThreshold;
 
 // Function mariaUploadPlugin.MariaUpload.SetNetworkAccount_Epic
 // 0x0010 (0x0010 - 0x0000)
@@ -1170,9 +926,7 @@ struct MariaUpload_SetNetworkAccount_Epic final
 public:
 	class FString                                 EpicAccountID;                                     // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_SetNetworkAccount_Epic) == 0x000008, "Wrong alignment on MariaUpload_SetNetworkAccount_Epic");
-static_assert(sizeof(MariaUpload_SetNetworkAccount_Epic) == 0x000010, "Wrong size on MariaUpload_SetNetworkAccount_Epic");
-static_assert(offsetof(MariaUpload_SetNetworkAccount_Epic, EpicAccountID) == 0x000000, "Member 'MariaUpload_SetNetworkAccount_Epic::EpicAccountID' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_SetNetworkAccount_Epic;
 
 // Function mariaUploadPlugin.MariaUpload.SetNetworkAccountFromPlayerController_Epic
 // 0x0010 (0x0010 - 0x0000)
@@ -1183,10 +937,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MariaUpload_SetNetworkAccountFromPlayerController_Epic) == 0x000008, "Wrong alignment on MariaUpload_SetNetworkAccountFromPlayerController_Epic");
-static_assert(sizeof(MariaUpload_SetNetworkAccountFromPlayerController_Epic) == 0x000010, "Wrong size on MariaUpload_SetNetworkAccountFromPlayerController_Epic");
-static_assert(offsetof(MariaUpload_SetNetworkAccountFromPlayerController_Epic, PlayerController) == 0x000000, "Member 'MariaUpload_SetNetworkAccountFromPlayerController_Epic::PlayerController' has a wrong offset!");
-static_assert(offsetof(MariaUpload_SetNetworkAccountFromPlayerController_Epic, ReturnValue) == 0x000008, "Member 'MariaUpload_SetNetworkAccountFromPlayerController_Epic::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_SetNetworkAccountFromPlayerController_Epic;
 
 // Function mariaUploadPlugin.MariaUpload.SetNetworkAccountFromUniqueNetID_Epic
 // 0x0038 (0x0038 - 0x0000)
@@ -1197,10 +948,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MariaUpload_SetNetworkAccountFromUniqueNetID_Epic) == 0x000008, "Wrong alignment on MariaUpload_SetNetworkAccountFromUniqueNetID_Epic");
-static_assert(sizeof(MariaUpload_SetNetworkAccountFromUniqueNetID_Epic) == 0x000038, "Wrong size on MariaUpload_SetNetworkAccountFromUniqueNetID_Epic");
-static_assert(offsetof(MariaUpload_SetNetworkAccountFromUniqueNetID_Epic, UniqueNetId) == 0x000000, "Member 'MariaUpload_SetNetworkAccountFromUniqueNetID_Epic::UniqueNetId' has a wrong offset!");
-static_assert(offsetof(MariaUpload_SetNetworkAccountFromUniqueNetID_Epic, ReturnValue) == 0x000030, "Member 'MariaUpload_SetNetworkAccountFromUniqueNetID_Epic::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_SetNetworkAccountFromUniqueNetID_Epic;
 
 // Function mariaUploadPlugin.MariaUpload.SetPendingUntilNetworkAvailable_Switch
 // 0x0001 (0x0001 - 0x0000)
@@ -1209,9 +957,7 @@ struct MariaUpload_SetPendingUntilNetworkAvailable_Switch final
 public:
 	bool                                          Enable;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_SetPendingUntilNetworkAvailable_Switch) == 0x000001, "Wrong alignment on MariaUpload_SetPendingUntilNetworkAvailable_Switch");
-static_assert(sizeof(MariaUpload_SetPendingUntilNetworkAvailable_Switch) == 0x000001, "Wrong size on MariaUpload_SetPendingUntilNetworkAvailable_Switch");
-static_assert(offsetof(MariaUpload_SetPendingUntilNetworkAvailable_Switch, Enable) == 0x000000, "Member 'MariaUpload_SetPendingUntilNetworkAvailable_Switch::Enable' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_SetPendingUntilNetworkAvailable_Switch;
 
 // Function mariaUploadPlugin.MariaUpload.SetRecoveryWaitModeSpan
 // 0x0008 (0x0008 - 0x0000)
@@ -1221,10 +967,7 @@ public:
 	int32                                         SecondsForNg;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         SecondsForError;                                   // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_SetRecoveryWaitModeSpan) == 0x000004, "Wrong alignment on MariaUpload_SetRecoveryWaitModeSpan");
-static_assert(sizeof(MariaUpload_SetRecoveryWaitModeSpan) == 0x000008, "Wrong size on MariaUpload_SetRecoveryWaitModeSpan");
-static_assert(offsetof(MariaUpload_SetRecoveryWaitModeSpan, SecondsForNg) == 0x000000, "Member 'MariaUpload_SetRecoveryWaitModeSpan::SecondsForNg' has a wrong offset!");
-static_assert(offsetof(MariaUpload_SetRecoveryWaitModeSpan, SecondsForError) == 0x000004, "Member 'MariaUpload_SetRecoveryWaitModeSpan::SecondsForError' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_SetRecoveryWaitModeSpan;
 
 // Function mariaUploadPlugin.MariaUpload.SetSaveSlot
 // 0x0004 (0x0004 - 0x0000)
@@ -1233,9 +976,7 @@ struct MariaUpload_SetSaveSlot final
 public:
 	int32                                         Slot;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_SetSaveSlot) == 0x000004, "Wrong alignment on MariaUpload_SetSaveSlot");
-static_assert(sizeof(MariaUpload_SetSaveSlot) == 0x000004, "Wrong size on MariaUpload_SetSaveSlot");
-static_assert(offsetof(MariaUpload_SetSaveSlot, Slot) == 0x000000, "Member 'MariaUpload_SetSaveSlot::Slot' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_SetSaveSlot;
 
 // Function mariaUploadPlugin.MariaUpload.SetSegaAccountDevMode
 // 0x0001 (0x0001 - 0x0000)
@@ -1244,9 +985,7 @@ struct MariaUpload_SetSegaAccountDevMode final
 public:
 	EMariaDevMode                                 DevMode;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_SetSegaAccountDevMode) == 0x000001, "Wrong alignment on MariaUpload_SetSegaAccountDevMode");
-static_assert(sizeof(MariaUpload_SetSegaAccountDevMode) == 0x000001, "Wrong size on MariaUpload_SetSegaAccountDevMode");
-static_assert(offsetof(MariaUpload_SetSegaAccountDevMode, DevMode) == 0x000000, "Member 'MariaUpload_SetSegaAccountDevMode::DevMode' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_SetSegaAccountDevMode;
 
 // Function mariaUploadPlugin.MariaUpload.SetSegaAccountLinkTarget
 // 0x0002 (0x0002 - 0x0000)
@@ -1256,10 +995,7 @@ public:
 	EMariaSegaAccountLinkTarget                   LinkTarget;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_SetSegaAccountLinkTarget) == 0x000001, "Wrong alignment on MariaUpload_SetSegaAccountLinkTarget");
-static_assert(sizeof(MariaUpload_SetSegaAccountLinkTarget) == 0x000002, "Wrong size on MariaUpload_SetSegaAccountLinkTarget");
-static_assert(offsetof(MariaUpload_SetSegaAccountLinkTarget, LinkTarget) == 0x000000, "Member 'MariaUpload_SetSegaAccountLinkTarget::LinkTarget' has a wrong offset!");
-static_assert(offsetof(MariaUpload_SetSegaAccountLinkTarget, ReturnValue) == 0x000001, "Member 'MariaUpload_SetSegaAccountLinkTarget::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_SetSegaAccountLinkTarget;
 
 // Function mariaUploadPlugin.MariaUpload.SetSendQueueDelay
 // 0x0004 (0x0004 - 0x0000)
@@ -1268,9 +1004,7 @@ struct MariaUpload_SetSendQueueDelay final
 public:
 	int32                                         Milliseconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_SetSendQueueDelay) == 0x000004, "Wrong alignment on MariaUpload_SetSendQueueDelay");
-static_assert(sizeof(MariaUpload_SetSendQueueDelay) == 0x000004, "Wrong size on MariaUpload_SetSendQueueDelay");
-static_assert(offsetof(MariaUpload_SetSendQueueDelay, Milliseconds) == 0x000000, "Member 'MariaUpload_SetSendQueueDelay::Milliseconds' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_SetSendQueueDelay;
 
 // Function mariaUploadPlugin.MariaUpload.SetSteamEncryptedAppTicket
 // 0x0010 (0x0010 - 0x0000)
@@ -1279,9 +1013,7 @@ struct MariaUpload_SetSteamEncryptedAppTicket final
 public:
 	TArray<uint8>                                 Ticket;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_SetSteamEncryptedAppTicket) == 0x000008, "Wrong alignment on MariaUpload_SetSteamEncryptedAppTicket");
-static_assert(sizeof(MariaUpload_SetSteamEncryptedAppTicket) == 0x000010, "Wrong size on MariaUpload_SetSteamEncryptedAppTicket");
-static_assert(offsetof(MariaUpload_SetSteamEncryptedAppTicket, Ticket) == 0x000000, "Member 'MariaUpload_SetSteamEncryptedAppTicket::Ticket' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_SetSteamEncryptedAppTicket;
 
 // Function mariaUploadPlugin.MariaUpload.SetSuspended
 // 0x0001 (0x0001 - 0x0000)
@@ -1290,9 +1022,7 @@ struct MariaUpload_SetSuspended final
 public:
 	bool                                          Suspended;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_SetSuspended) == 0x000001, "Wrong alignment on MariaUpload_SetSuspended");
-static_assert(sizeof(MariaUpload_SetSuspended) == 0x000001, "Wrong size on MariaUpload_SetSuspended");
-static_assert(offsetof(MariaUpload_SetSuspended, Suspended) == 0x000000, "Member 'MariaUpload_SetSuspended::Suspended' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_SetSuspended;
 
 // Function mariaUploadPlugin.MariaUpload.SetupSteamEncryptedAppTicketAsync
 // 0x0018 (0x0018 - 0x0000)
@@ -1302,10 +1032,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TDelegate<void(bool Success)>                 Completed;                                         // 0x0008(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_SetupSteamEncryptedAppTicketAsync) == 0x000008, "Wrong alignment on MariaUpload_SetupSteamEncryptedAppTicketAsync");
-static_assert(sizeof(MariaUpload_SetupSteamEncryptedAppTicketAsync) == 0x000018, "Wrong size on MariaUpload_SetupSteamEncryptedAppTicketAsync");
-static_assert(offsetof(MariaUpload_SetupSteamEncryptedAppTicketAsync, WorldContextObject) == 0x000000, "Member 'MariaUpload_SetupSteamEncryptedAppTicketAsync::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(MariaUpload_SetupSteamEncryptedAppTicketAsync, Completed) == 0x000008, "Member 'MariaUpload_SetupSteamEncryptedAppTicketAsync::Completed' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_SetupSteamEncryptedAppTicketAsync;
 
 // Function mariaUploadPlugin.MariaUpload.SetUserAllowGuests_GDK
 // 0x0001 (0x0001 - 0x0000)
@@ -1314,9 +1041,7 @@ struct MariaUpload_SetUserAllowGuests_GDK final
 public:
 	bool                                          Allow;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_SetUserAllowGuests_GDK) == 0x000001, "Wrong alignment on MariaUpload_SetUserAllowGuests_GDK");
-static_assert(sizeof(MariaUpload_SetUserAllowGuests_GDK) == 0x000001, "Wrong size on MariaUpload_SetUserAllowGuests_GDK");
-static_assert(offsetof(MariaUpload_SetUserAllowGuests_GDK, Allow) == 0x000000, "Member 'MariaUpload_SetUserAllowGuests_GDK::Allow' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_SetUserAllowGuests_GDK;
 
 // Function mariaUploadPlugin.MariaUpload.SetUserID
 // 0x0010 (0x0010 - 0x0000)
@@ -1325,9 +1050,7 @@ struct MariaUpload_SetUserID final
 public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_SetUserID) == 0x000008, "Wrong alignment on MariaUpload_SetUserID");
-static_assert(sizeof(MariaUpload_SetUserID) == 0x000010, "Wrong size on MariaUpload_SetUserID");
-static_assert(offsetof(MariaUpload_SetUserID, UserId) == 0x000000, "Member 'MariaUpload_SetUserID::UserId' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_SetUserID;
 
 // Function mariaUploadPlugin.MariaUpload.SetUserPickMode_GDK
 // 0x0001 (0x0001 - 0x0000)
@@ -1336,9 +1059,7 @@ struct MariaUpload_SetUserPickMode_GDK final
 public:
 	EMariaXboxUserPickMode                        PickMode;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_SetUserPickMode_GDK) == 0x000001, "Wrong alignment on MariaUpload_SetUserPickMode_GDK");
-static_assert(sizeof(MariaUpload_SetUserPickMode_GDK) == 0x000001, "Wrong size on MariaUpload_SetUserPickMode_GDK");
-static_assert(offsetof(MariaUpload_SetUserPickMode_GDK, PickMode) == 0x000000, "Member 'MariaUpload_SetUserPickMode_GDK::PickMode' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_SetUserPickMode_GDK;
 
 // Function mariaUploadPlugin.MariaUpload.StartLogging
 // 0x0001 (0x0001 - 0x0000)
@@ -1347,9 +1068,7 @@ struct MariaUpload_StartLogging final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_StartLogging) == 0x000001, "Wrong alignment on MariaUpload_StartLogging");
-static_assert(sizeof(MariaUpload_StartLogging) == 0x000001, "Wrong size on MariaUpload_StartLogging");
-static_assert(offsetof(MariaUpload_StartLogging, ReturnValue) == 0x000000, "Member 'MariaUpload_StartLogging::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_StartLogging;
 
 // Function mariaUploadPlugin.MariaUpload.UseAccountAuthInteraction_Switch
 // 0x0001 (0x0001 - 0x0000)
@@ -1358,9 +1077,7 @@ struct MariaUpload_UseAccountAuthInteraction_Switch final
 public:
 	bool                                          Enable;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_UseAccountAuthInteraction_Switch) == 0x000001, "Wrong alignment on MariaUpload_UseAccountAuthInteraction_Switch");
-static_assert(sizeof(MariaUpload_UseAccountAuthInteraction_Switch) == 0x000001, "Wrong size on MariaUpload_UseAccountAuthInteraction_Switch");
-static_assert(offsetof(MariaUpload_UseAccountAuthInteraction_Switch, Enable) == 0x000000, "Member 'MariaUpload_UseAccountAuthInteraction_Switch::Enable' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_UseAccountAuthInteraction_Switch;
 
 // Function mariaUploadPlugin.MariaUpload.UseEnsureNSAAvailable
 // 0x0001 (0x0001 - 0x0000)
@@ -1369,9 +1086,7 @@ struct MariaUpload_UseEnsureNSAAvailable final
 public:
 	bool                                          Enable;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_UseEnsureNSAAvailable) == 0x000001, "Wrong alignment on MariaUpload_UseEnsureNSAAvailable");
-static_assert(sizeof(MariaUpload_UseEnsureNSAAvailable) == 0x000001, "Wrong size on MariaUpload_UseEnsureNSAAvailable");
-static_assert(offsetof(MariaUpload_UseEnsureNSAAvailable, Enable) == 0x000000, "Member 'MariaUpload_UseEnsureNSAAvailable::Enable' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_UseEnsureNSAAvailable;
 
 // Function mariaUploadPlugin.MariaUpload.UseSegaAccountOnWindows
 // 0x0001 (0x0001 - 0x0000)
@@ -1380,9 +1095,7 @@ struct MariaUpload_UseSegaAccountOnWindows final
 public:
 	bool                                          Enable;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MariaUpload_UseSegaAccountOnWindows) == 0x000001, "Wrong alignment on MariaUpload_UseSegaAccountOnWindows");
-static_assert(sizeof(MariaUpload_UseSegaAccountOnWindows) == 0x000001, "Wrong size on MariaUpload_UseSegaAccountOnWindows");
-static_assert(offsetof(MariaUpload_UseSegaAccountOnWindows, Enable) == 0x000000, "Member 'MariaUpload_UseSegaAccountOnWindows::Enable' has a wrong offset!");
+DUMPER7_ASSERTS_MariaUpload_UseSegaAccountOnWindows;
 
 }
 

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -81,35 +81,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GadgetCustom_Sub_GadgetPlate_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GadgetCustom_Sub_GadgetPlate_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GadgetCustom_Sub_GadgetPlate_C")
 	}
 	static class UWBP_GadgetCustom_Sub_GadgetPlate_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GadgetCustom_Sub_GadgetPlate_C>();
 	}
 };
-static_assert(alignof(UWBP_GadgetCustom_Sub_GadgetPlate_C) == 0x000008, "Wrong alignment on UWBP_GadgetCustom_Sub_GadgetPlate_C");
-static_assert(sizeof(UWBP_GadgetCustom_Sub_GadgetPlate_C) == 0x000590, "Wrong size on UWBP_GadgetCustom_Sub_GadgetPlate_C");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, UberGraphFrame) == 0x0004E8, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, base) == 0x0004F0, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, DSP_PreviewEquippedGadget) == 0x0004F8, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::DSP_PreviewEquippedGadget' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, DSP_WBP_GadgetCustom_Sub_Tab) == 0x000500, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::DSP_WBP_GadgetCustom_Sub_Tab' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, DSP_WBP_GadgetIcon_02) == 0x000508, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::DSP_WBP_GadgetIcon_02' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, DSP_WBP_GadgetIcon_03) == 0x000510, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::DSP_WBP_GadgetIcon_03' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, DSP_WBP_GadgetIcon_05) == 0x000518, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::DSP_WBP_GadgetIcon_05' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, DSP_WBP_GadgetIcon_06) == 0x000520, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::DSP_WBP_GadgetIcon_06' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, DummyGadgetIcon) == 0x000528, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::DummyGadgetIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, PAT_GadgetPlate) == 0x000530, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::PAT_GadgetPlate' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, PlateOverlay) == 0x000538, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::PlateOverlay' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, TXT_ClassName) == 0x000540, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::TXT_ClassName' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, WBP_GadgetIcon_01) == 0x000548, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::WBP_GadgetIcon_01' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, WBP_GadgetIcon_04) == 0x000550, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::WBP_GadgetIcon_04' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, WBP_GadgetIcon_EX_01) == 0x000558, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::WBP_GadgetIcon_EX_01' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, WBP_GadgetIcon_EX_02) == 0x000560, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::WBP_GadgetIcon_EX_02' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, WBP_GadgetIcon_EX_03) == 0x000568, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::WBP_GadgetIcon_EX_03' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, CaptionEvent) == 0x000570, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::CaptionEvent' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, IsVisibleTabWidget) == 0x000580, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::IsVisibleTabWidget' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, DummyWidget) == 0x000588, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::DummyWidget' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GadgetCustom_Sub_GadgetPlate_C;
 
 }
 

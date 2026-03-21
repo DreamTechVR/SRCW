@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MachineSelect_Sub_PartsScrollBox_W_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MachineSelect_Sub_PartsScrollBox_W_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MachineSelect_Sub_PartsScrollBox_W_C")
 	}
 	static class UWBP_MachineSelect_Sub_PartsScrollBox_W_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MachineSelect_Sub_PartsScrollBox_W_C>();
 	}
 };
-static_assert(alignof(UWBP_MachineSelect_Sub_PartsScrollBox_W_C) == 0x000008, "Wrong alignment on UWBP_MachineSelect_Sub_PartsScrollBox_W_C");
-static_assert(sizeof(UWBP_MachineSelect_Sub_PartsScrollBox_W_C) == 0x000398, "Wrong size on UWBP_MachineSelect_Sub_PartsScrollBox_W_C");
-static_assert(offsetof(UWBP_MachineSelect_Sub_PartsScrollBox_W_C, Side_Shadow) == 0x000390, "Member 'UWBP_MachineSelect_Sub_PartsScrollBox_W_C::Side_Shadow' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MachineSelect_Sub_PartsScrollBox_W_C;
 
 }
 

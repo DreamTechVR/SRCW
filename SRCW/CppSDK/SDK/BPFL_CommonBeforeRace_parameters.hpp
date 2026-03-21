@@ -34,17 +34,7 @@ public:
 	bool                                          CallFunc_IsInViewport_ReturnValue;                 // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPFL_CommonBeforeRace_C_AddFooterIfNotInViewport) == 0x000008, "Wrong alignment on BPFL_CommonBeforeRace_C_AddFooterIfNotInViewport");
-static_assert(sizeof(BPFL_CommonBeforeRace_C_AddFooterIfNotInViewport) == 0x000038, "Wrong size on BPFL_CommonBeforeRace_C_AddFooterIfNotInViewport");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_AddFooterIfNotInViewport, In_RaceSequence) == 0x000000, "Member 'BPFL_CommonBeforeRace_C_AddFooterIfNotInViewport::In_RaceSequence' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_AddFooterIfNotInViewport, __WorldContext) == 0x000008, "Member 'BPFL_CommonBeforeRace_C_AddFooterIfNotInViewport::__WorldContext' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_AddFooterIfNotInViewport, CallFunc_MakeLiteralByte_ReturnValue) == 0x000010, "Member 'BPFL_CommonBeforeRace_C_AddFooterIfNotInViewport::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_AddFooterIfNotInViewport, CallFunc_GetFooterMenu_ReturnValue) == 0x000018, "Member 'BPFL_CommonBeforeRace_C_AddFooterIfNotInViewport::CallFunc_GetFooterMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_AddFooterIfNotInViewport, K2Node_DynamicCast_AsWBP_Footer_Menu) == 0x000020, "Member 'BPFL_CommonBeforeRace_C_AddFooterIfNotInViewport::K2Node_DynamicCast_AsWBP_Footer_Menu' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_AddFooterIfNotInViewport, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'BPFL_CommonBeforeRace_C_AddFooterIfNotInViewport::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_AddFooterIfNotInViewport, CallFunc_Conv_ByteToInt_ReturnValue) == 0x00002C, "Member 'BPFL_CommonBeforeRace_C_AddFooterIfNotInViewport::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_AddFooterIfNotInViewport, CallFunc_IsInViewport_ReturnValue) == 0x000030, "Member 'BPFL_CommonBeforeRace_C_AddFooterIfNotInViewport::CallFunc_IsInViewport_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_AddFooterIfNotInViewport, CallFunc_IsValid_ReturnValue) == 0x000031, "Member 'BPFL_CommonBeforeRace_C_AddFooterIfNotInViewport::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_CommonBeforeRace_C_AddFooterIfNotInViewport;
 
 // Function BPFL_CommonBeforeRace.BPFL_CommonBeforeRace_C.ApplyAuraToRacers
 // 0x00B8 (0x00B8 - 0x0000)
@@ -78,30 +68,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPFL_CommonBeforeRace_C_ApplyAuraToRacers) == 0x000008, "Wrong alignment on BPFL_CommonBeforeRace_C_ApplyAuraToRacers");
-static_assert(sizeof(BPFL_CommonBeforeRace_C_ApplyAuraToRacers) == 0x0000B8, "Wrong size on BPFL_CommonBeforeRace_C_ApplyAuraToRacers");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_ApplyAuraToRacers, In_Vehicles) == 0x000000, "Member 'BPFL_CommonBeforeRace_C_ApplyAuraToRacers::In_Vehicles' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_ApplyAuraToRacers, In_Indices) == 0x000010, "Member 'BPFL_CommonBeforeRace_C_ApplyAuraToRacers::In_Indices' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_ApplyAuraToRacers, __WorldContext) == 0x000020, "Member 'BPFL_CommonBeforeRace_C_ApplyAuraToRacers::__WorldContext' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_ApplyAuraToRacers, Out_Effects) == 0x000028, "Member 'BPFL_CommonBeforeRace_C_ApplyAuraToRacers::Out_Effects' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_ApplyAuraToRacers, Effects) == 0x000038, "Member 'BPFL_CommonBeforeRace_C_ApplyAuraToRacers::Effects' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_ApplyAuraToRacers, Temp_int_Loop_Counter_Variable) == 0x000048, "Member 'BPFL_CommonBeforeRace_C_ApplyAuraToRacers::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_ApplyAuraToRacers, CallFunc_Add_IntInt_ReturnValue) == 0x00004C, "Member 'BPFL_CommonBeforeRace_C_ApplyAuraToRacers::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_ApplyAuraToRacers, Temp_int_Array_Index_Variable) == 0x000050, "Member 'BPFL_CommonBeforeRace_C_ApplyAuraToRacers::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_ApplyAuraToRacers, Temp_int_Array_Index_Variable_1) == 0x000054, "Member 'BPFL_CommonBeforeRace_C_ApplyAuraToRacers::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_ApplyAuraToRacers, CallFunc_Array_Get_Item) == 0x000058, "Member 'BPFL_CommonBeforeRace_C_ApplyAuraToRacers::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_ApplyAuraToRacers, CallFunc_Array_Get_Item_1) == 0x000060, "Member 'BPFL_CommonBeforeRace_C_ApplyAuraToRacers::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_ApplyAuraToRacers, CallFunc_Array_Length_ReturnValue) == 0x000068, "Member 'BPFL_CommonBeforeRace_C_ApplyAuraToRacers::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_ApplyAuraToRacers, CallFunc_GetActiveVehicle_ReturnValue) == 0x000070, "Member 'BPFL_CommonBeforeRace_C_ApplyAuraToRacers::CallFunc_GetActiveVehicle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_ApplyAuraToRacers, CallFunc_K2_GetComponentsByClass_ReturnValue) == 0x000078, "Member 'BPFL_CommonBeforeRace_C_ApplyAuraToRacers::CallFunc_K2_GetComponentsByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_ApplyAuraToRacers, Temp_int_Loop_Counter_Variable_1) == 0x000088, "Member 'BPFL_CommonBeforeRace_C_ApplyAuraToRacers::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_ApplyAuraToRacers, CallFunc_Array_Get_Item_2) == 0x000090, "Member 'BPFL_CommonBeforeRace_C_ApplyAuraToRacers::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_ApplyAuraToRacers, CallFunc_GetObjectName_ReturnValue) == 0x000098, "Member 'BPFL_CommonBeforeRace_C_ApplyAuraToRacers::CallFunc_GetObjectName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_ApplyAuraToRacers, CallFunc_Less_IntInt_ReturnValue) == 0x0000A8, "Member 'BPFL_CommonBeforeRace_C_ApplyAuraToRacers::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_ApplyAuraToRacers, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x0000A9, "Member 'BPFL_CommonBeforeRace_C_ApplyAuraToRacers::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_ApplyAuraToRacers, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000AC, "Member 'BPFL_CommonBeforeRace_C_ApplyAuraToRacers::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_ApplyAuraToRacers, CallFunc_Array_Length_ReturnValue_1) == 0x0000B0, "Member 'BPFL_CommonBeforeRace_C_ApplyAuraToRacers::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_ApplyAuraToRacers, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000B4, "Member 'BPFL_CommonBeforeRace_C_ApplyAuraToRacers::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_CommonBeforeRace_C_ApplyAuraToRacers;
 
 // Function BPFL_CommonBeforeRace.BPFL_CommonBeforeRace_C.OffsetRacerTransform
 // 0x0190 (0x0190 - 0x0000)
@@ -118,16 +85,7 @@ public:
 	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0118(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0130(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPFL_CommonBeforeRace_C_OffsetRacerTransform) == 0x000010, "Wrong alignment on BPFL_CommonBeforeRace_C_OffsetRacerTransform");
-static_assert(sizeof(BPFL_CommonBeforeRace_C_OffsetRacerTransform) == 0x000190, "Wrong size on BPFL_CommonBeforeRace_C_OffsetRacerTransform");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_OffsetRacerTransform, InTransform) == 0x000000, "Member 'BPFL_CommonBeforeRace_C_OffsetRacerTransform::InTransform' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_OffsetRacerTransform, __WorldContext) == 0x000060, "Member 'BPFL_CommonBeforeRace_C_OffsetRacerTransform::__WorldContext' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_OffsetRacerTransform, OutTransform) == 0x000070, "Member 'BPFL_CommonBeforeRace_C_OffsetRacerTransform::OutTransform' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_OffsetRacerTransform, CallFunc_BreakTransform_Location) == 0x0000D0, "Member 'BPFL_CommonBeforeRace_C_OffsetRacerTransform::CallFunc_BreakTransform_Location' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_OffsetRacerTransform, CallFunc_BreakTransform_Rotation) == 0x0000E8, "Member 'BPFL_CommonBeforeRace_C_OffsetRacerTransform::CallFunc_BreakTransform_Rotation' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_OffsetRacerTransform, CallFunc_BreakTransform_Scale) == 0x000100, "Member 'BPFL_CommonBeforeRace_C_OffsetRacerTransform::CallFunc_BreakTransform_Scale' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_OffsetRacerTransform, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000118, "Member 'BPFL_CommonBeforeRace_C_OffsetRacerTransform::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_OffsetRacerTransform, CallFunc_MakeTransform_ReturnValue) == 0x000130, "Member 'BPFL_CommonBeforeRace_C_OffsetRacerTransform::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_CommonBeforeRace_C_OffsetRacerTransform;
 
 // Function BPFL_CommonBeforeRace.BPFL_CommonBeforeRace_C.RemoveFooterIfInViewport
 // 0x0020 (0x0020 - 0x0000)
@@ -140,13 +98,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsInViewport_ReturnValue;                 // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPFL_CommonBeforeRace_C_RemoveFooterIfInViewport) == 0x000008, "Wrong alignment on BPFL_CommonBeforeRace_C_RemoveFooterIfInViewport");
-static_assert(sizeof(BPFL_CommonBeforeRace_C_RemoveFooterIfInViewport) == 0x000020, "Wrong size on BPFL_CommonBeforeRace_C_RemoveFooterIfInViewport");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_RemoveFooterIfInViewport, In_RaceSequence) == 0x000000, "Member 'BPFL_CommonBeforeRace_C_RemoveFooterIfInViewport::In_RaceSequence' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_RemoveFooterIfInViewport, __WorldContext) == 0x000008, "Member 'BPFL_CommonBeforeRace_C_RemoveFooterIfInViewport::__WorldContext' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_RemoveFooterIfInViewport, CallFunc_GetFooterMenu_ReturnValue) == 0x000010, "Member 'BPFL_CommonBeforeRace_C_RemoveFooterIfInViewport::CallFunc_GetFooterMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_RemoveFooterIfInViewport, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'BPFL_CommonBeforeRace_C_RemoveFooterIfInViewport::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_RemoveFooterIfInViewport, CallFunc_IsInViewport_ReturnValue) == 0x000019, "Member 'BPFL_CommonBeforeRace_C_RemoveFooterIfInViewport::CallFunc_IsInViewport_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_CommonBeforeRace_C_RemoveFooterIfInViewport;
 
 // Function BPFL_CommonBeforeRace.BPFL_CommonBeforeRace_C.SwitchFooterVisible
 // 0x0028 (0x0028 - 0x0000)
@@ -161,14 +113,7 @@ public:
 	bool                                          bCanSkip;                                          // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_CanSkipSequence_ReturnValue;              // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPFL_CommonBeforeRace_C_SwitchFooterVisible) == 0x000008, "Wrong alignment on BPFL_CommonBeforeRace_C_SwitchFooterVisible");
-static_assert(sizeof(BPFL_CommonBeforeRace_C_SwitchFooterVisible) == 0x000028, "Wrong size on BPFL_CommonBeforeRace_C_SwitchFooterVisible");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_SwitchFooterVisible, In_Param) == 0x000000, "Member 'BPFL_CommonBeforeRace_C_SwitchFooterVisible::In_Param' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_SwitchFooterVisible, In_Sequence) == 0x000008, "Member 'BPFL_CommonBeforeRace_C_SwitchFooterVisible::In_Sequence' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_SwitchFooterVisible, In_State) == 0x000010, "Member 'BPFL_CommonBeforeRace_C_SwitchFooterVisible::In_State' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_SwitchFooterVisible, __WorldContext) == 0x000018, "Member 'BPFL_CommonBeforeRace_C_SwitchFooterVisible::__WorldContext' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_SwitchFooterVisible, bCanSkip) == 0x000020, "Member 'BPFL_CommonBeforeRace_C_SwitchFooterVisible::bCanSkip' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonBeforeRace_C_SwitchFooterVisible, CallFunc_CanSkipSequence_ReturnValue) == 0x000021, "Member 'BPFL_CommonBeforeRace_C_SwitchFooterVisible::CallFunc_CanSkipSequence_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_CommonBeforeRace_C_SwitchFooterVisible;
 
 }
 

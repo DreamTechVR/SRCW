@@ -34,19 +34,7 @@ public:
 	int32                                         CallFunc_GetUserIndexByFocusEvent_ReturnValue_1;   // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue_2;        // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalChoice_Btn_Right) == 0x000008, "Wrong alignment on WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalChoice_Btn_Right");
-static_assert(sizeof(WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalChoice_Btn_Right) == 0x000050, "Wrong size on WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalChoice_Btn_Right");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalChoice_Btn_Right, EntryPoint) == 0x000000, "Member 'WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalChoice_Btn_Right::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalChoice_Btn_Right, K2Node_Event_InFocusEvent_1) == 0x000004, "Member 'WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalChoice_Btn_Right::K2Node_Event_InFocusEvent_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalChoice_Btn_Right, CallFunc_GetUserIndexByFocusEvent_ReturnValue) == 0x00000C, "Member 'WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalChoice_Btn_Right::CallFunc_GetUserIndexByFocusEvent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalChoice_Btn_Right, CallFunc_GetPlayerController_ReturnValue) == 0x000010, "Member 'WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalChoice_Btn_Right::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalChoice_Btn_Right, CallFunc_GetPlayerController_ReturnValue_1) == 0x000018, "Member 'WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalChoice_Btn_Right::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalChoice_Btn_Right, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000020, "Member 'WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalChoice_Btn_Right::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalChoice_Btn_Right, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalChoice_Btn_Right::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalChoice_Btn_Right, K2Node_Event_InFocusEvent) == 0x00002C, "Member 'WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalChoice_Btn_Right::K2Node_Event_InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalChoice_Btn_Right, K2Node_CreateDelegate_OutputDelegate) == 0x000034, "Member 'WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalChoice_Btn_Right::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalChoice_Btn_Right, CallFunc_GetUserIndexByFocusEvent_ReturnValue_1) == 0x000044, "Member 'WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalChoice_Btn_Right::CallFunc_GetUserIndexByFocusEvent_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalChoice_Btn_Right, CallFunc_GetPlayerController_ReturnValue_2) == 0x000048, "Member 'WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalChoice_Btn_Right::CallFunc_GetPlayerController_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalChoice_Btn_Right;
 
 // Function WBP_CourseSelect_Sub_RivalChoice_Btn_Right.WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C.OnAddedToFocusPath
 // 0x0008 (0x0008 - 0x0000)
@@ -55,9 +43,7 @@ struct WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_OnAddedToFocusPath final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_OnAddedToFocusPath) == 0x000004, "Wrong alignment on WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_OnAddedToFocusPath");
-static_assert(sizeof(WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_OnAddedToFocusPath) == 0x000008, "Wrong size on WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_OnAddedToFocusPath");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_OnAddedToFocusPath, InFocusEvent) == 0x000000, "Member 'WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_OnAddedToFocusPath::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_OnAddedToFocusPath;
 
 // Function WBP_CourseSelect_Sub_RivalChoice_Btn_Right.WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C.OnNavigationLeft
 // 0x0010 (0x0010 - 0x0000)
@@ -68,10 +54,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_OnNavigationLeft) == 0x000008, "Wrong alignment on WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_OnNavigationLeft");
-static_assert(sizeof(WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_OnNavigationLeft) == 0x000010, "Wrong size on WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_OnNavigationLeft");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_OnNavigationLeft, Navigation_0) == 0x000000, "Member 'WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_OnNavigationLeft::Navigation_0' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_OnNavigationLeft, ReturnValue) == 0x000008, "Member 'WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_OnNavigationLeft::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_OnNavigationLeft;
 
 // Function WBP_CourseSelect_Sub_RivalChoice_Btn_Right.WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C.OnRemovedFromFocusPath
 // 0x0008 (0x0008 - 0x0000)
@@ -80,9 +63,7 @@ struct WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_OnRemovedFromFocusPath final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_OnRemovedFromFocusPath) == 0x000004, "Wrong alignment on WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_OnRemovedFromFocusPath");
-static_assert(sizeof(WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_OnRemovedFromFocusPath) == 0x000008, "Wrong size on WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_OnRemovedFromFocusPath");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_OnRemovedFromFocusPath, InFocusEvent) == 0x000000, "Member 'WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_OnRemovedFromFocusPath::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_OnRemovedFromFocusPath;
 
 // Function WBP_CourseSelect_Sub_RivalChoice_Btn_Right.WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C.SetupLV
 // 0x0014 (0x0014 - 0x0000)
@@ -97,14 +78,7 @@ public:
 	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_SetupLV) == 0x000004, "Wrong alignment on WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_SetupLV");
-static_assert(sizeof(WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_SetupLV) == 0x000014, "Wrong size on WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_SetupLV");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_SetupLV, InMaxRivalLevel) == 0x000000, "Member 'WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_SetupLV::InMaxRivalLevel' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_SetupLV, InRivalLevel) == 0x000004, "Member 'WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_SetupLV::InRivalLevel' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_SetupLV, InBlankIconHideCount) == 0x000008, "Member 'WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_SetupLV::InBlankIconHideCount' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_SetupLV, bIsRivalPowerFlag) == 0x00000C, "Member 'WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_SetupLV::bIsRivalPowerFlag' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_SetupLV, CallFunc_GetMenuDataBaseRivalLevel_ReturnValue) == 0x00000D, "Member 'WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_SetupLV::CallFunc_GetMenuDataBaseRivalLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_SetupLV, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000010, "Member 'WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_SetupLV::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C_SetupLV;
 
 }
 

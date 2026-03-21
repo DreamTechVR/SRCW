@@ -30,6 +30,7 @@ public:
 	class UImage*                                 Rank_0010;                                         // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Rank_0100;                                         // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	int32                                         Num;                                               // 0x0318(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         MaxNum;                                            // 0x031C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_CMN_Sub_RankNum(int32 EntryPoint);
@@ -39,23 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_Sub_RankNum_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_Sub_RankNum_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_Sub_RankNum_C")
 	}
 	static class UWBP_CMN_Sub_RankNum_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_Sub_RankNum_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_Sub_RankNum_C) == 0x000008, "Wrong alignment on UWBP_CMN_Sub_RankNum_C");
-static_assert(sizeof(UWBP_CMN_Sub_RankNum_C) == 0x000320, "Wrong size on UWBP_CMN_Sub_RankNum_C");
-static_assert(offsetof(UWBP_CMN_Sub_RankNum_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_CMN_Sub_RankNum_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_RankNum_C, Rank_1000) == 0x0002E8, "Member 'UWBP_CMN_Sub_RankNum_C::Rank_1000' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_RankNum_C, Rank_10000) == 0x0002F0, "Member 'UWBP_CMN_Sub_RankNum_C::Rank_10000' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_RankNum_C, Rank_100000) == 0x0002F8, "Member 'UWBP_CMN_Sub_RankNum_C::Rank_100000' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_RankNum_C, Rank_0001) == 0x000300, "Member 'UWBP_CMN_Sub_RankNum_C::Rank_0001' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_RankNum_C, Rank_0010) == 0x000308, "Member 'UWBP_CMN_Sub_RankNum_C::Rank_0010' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_RankNum_C, Rank_0100) == 0x000310, "Member 'UWBP_CMN_Sub_RankNum_C::Rank_0100' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_RankNum_C, Num) == 0x000318, "Member 'UWBP_CMN_Sub_RankNum_C::Num' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_Sub_RankNum_C;
 
 }
 

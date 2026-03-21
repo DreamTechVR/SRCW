@@ -34,17 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LS_RivalResult_Hvr_L_DirectorBP_C">();
+		BP_STATIC_CLASS_IMPL("LS_RivalResult_Hvr_L_DirectorBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LS_RivalResult_Hvr_L_DirectorBP_C")
 	}
 	static class ULS_RivalResult_Hvr_L_DirectorBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULS_RivalResult_Hvr_L_DirectorBP_C>();
 	}
 };
-static_assert(alignof(ULS_RivalResult_Hvr_L_DirectorBP_C) == 0x000008, "Wrong alignment on ULS_RivalResult_Hvr_L_DirectorBP_C");
-static_assert(sizeof(ULS_RivalResult_Hvr_L_DirectorBP_C) == 0x000058, "Wrong size on ULS_RivalResult_Hvr_L_DirectorBP_C");
-static_assert(offsetof(ULS_RivalResult_Hvr_L_DirectorBP_C, UberGraphFrame) == 0x000048, "Member 'ULS_RivalResult_Hvr_L_DirectorBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULS_RivalResult_Hvr_L_DirectorBP_C, UI) == 0x000050, "Member 'ULS_RivalResult_Hvr_L_DirectorBP_C::UI' has a wrong offset!");
+DUMPER7_ASSERTS_ULS_RivalResult_Hvr_L_DirectorBP_C;
 
 }
 

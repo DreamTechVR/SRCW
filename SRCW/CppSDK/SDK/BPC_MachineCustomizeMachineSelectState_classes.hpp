@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "UnionRun_structs.hpp"
+#include "UNION_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UnionLib_structs.hpp"
-#include "UNION_classes.hpp"
-#include "UnionRun_structs.hpp"
 
 
 namespace SDK
@@ -62,22 +62,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_MachineCustomizeMachineSelectState_C">();
+		BP_STATIC_CLASS_IMPL("BPC_MachineCustomizeMachineSelectState_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_MachineCustomizeMachineSelectState_C")
 	}
 	static class UBPC_MachineCustomizeMachineSelectState_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_MachineCustomizeMachineSelectState_C>();
 	}
 };
-static_assert(alignof(UBPC_MachineCustomizeMachineSelectState_C) == 0x000008, "Wrong alignment on UBPC_MachineCustomizeMachineSelectState_C");
-static_assert(sizeof(UBPC_MachineCustomizeMachineSelectState_C) == 0x000128, "Wrong size on UBPC_MachineCustomizeMachineSelectState_C");
-static_assert(offsetof(UBPC_MachineCustomizeMachineSelectState_C, UberGraphFrame) == 0x0000F8, "Member 'UBPC_MachineCustomizeMachineSelectState_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_MachineCustomizeMachineSelectState_C, Sequence) == 0x000100, "Member 'UBPC_MachineCustomizeMachineSelectState_C::Sequence' has a wrong offset!");
-static_assert(offsetof(UBPC_MachineCustomizeMachineSelectState_C, TipsWindow) == 0x000108, "Member 'UBPC_MachineCustomizeMachineSelectState_C::TipsWindow' has a wrong offset!");
-static_assert(offsetof(UBPC_MachineCustomizeMachineSelectState_C, FirstGarageTipsId) == 0x000110, "Member 'UBPC_MachineCustomizeMachineSelectState_C::FirstGarageTipsId' has a wrong offset!");
-static_assert(offsetof(UBPC_MachineCustomizeMachineSelectState_C, LastMachineId) == 0x000111, "Member 'UBPC_MachineCustomizeMachineSelectState_C::LastMachineId' has a wrong offset!");
-static_assert(offsetof(UBPC_MachineCustomizeMachineSelectState_C, TimerHandle) == 0x000118, "Member 'UBPC_MachineCustomizeMachineSelectState_C::TimerHandle' has a wrong offset!");
-static_assert(offsetof(UBPC_MachineCustomizeMachineSelectState_C, RacerUpdateDelay) == 0x000120, "Member 'UBPC_MachineCustomizeMachineSelectState_C::RacerUpdateDelay' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_MachineCustomizeMachineSelectState_C;
 
 }
 

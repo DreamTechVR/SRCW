@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
+#include "UnionSystem_structs.hpp"
 
 
 namespace SDK
@@ -34,6 +34,8 @@ public:
 	bool                                          Is_Ghost_Valid;                                    // 0x0230(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void SetFooterVisible(bool IsVisible, bool IsNextButtonVisisble);
+	void OnFinishedRankingRequest(bool bIsDisplayRanking);
 	void SettingGhostGadgetPreset();
 	void CreateServerErrorWindow(const EResponseCodeAbstract& ResponseCode);
 	void CreateErrorWindow(const class FText& MessageText);
@@ -44,13 +46,12 @@ public:
 	void RankingUnbind();
 	void SetRegisterSubMenu();
 	void OnExitState();
-	void OnUpdateState(float InDeltaTime);
-	void OnInitState();
 	void FinishDownloadEvent(bool Success);
 	void Window_OnDecide(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex);
 	void OnClosed_RankingWidget();
-	void SetupFooter(bool IsVisible);
+	void OnUpdateState(float InDeltaTime);
 	void OnMyBestButtonPressed(class UObject* Object);
+	void OnInitState();
 	void RankingClosed_MyBest();
 	void OnMouseClickEvent();
 	void カスタムイベント();
@@ -59,24 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_TimeTrialRanking_C">();
+		BP_STATIC_CLASS_IMPL("BPC_TimeTrialRanking_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_TimeTrialRanking_C")
 	}
 	static class UBPC_TimeTrialRanking_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_TimeTrialRanking_C>();
 	}
 };
-static_assert(alignof(UBPC_TimeTrialRanking_C) == 0x000008, "Wrong alignment on UBPC_TimeTrialRanking_C");
-static_assert(sizeof(UBPC_TimeTrialRanking_C) == 0x000238, "Wrong size on UBPC_TimeTrialRanking_C");
-static_assert(offsetof(UBPC_TimeTrialRanking_C, UberGraphFrame) == 0x000128, "Member 'UBPC_TimeTrialRanking_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialRanking_C, OwnerTimeTrialSequence) == 0x000130, "Member 'UBPC_TimeTrialRanking_C::OwnerTimeTrialSequence' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialRanking_C, RankingWidget) == 0x000138, "Member 'UBPC_TimeTrialRanking_C::RankingWidget' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialRanking_C, SubInputReciever) == 0x000140, "Member 'UBPC_TimeTrialRanking_C::SubInputReciever' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialRanking_C, GhostDownloadActor) == 0x000148, "Member 'UBPC_TimeTrialRanking_C::GhostDownloadActor' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialRanking_C, PopupWindow) == 0x000150, "Member 'UBPC_TimeTrialRanking_C::PopupWindow' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialRanking_C, DownloadingWidget) == 0x000158, "Member 'UBPC_TimeTrialRanking_C::DownloadingWidget' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialRanking_C, SelectedRankingData) == 0x000160, "Member 'UBPC_TimeTrialRanking_C::SelectedRankingData' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialRanking_C, Is_Ghost_Valid) == 0x000230, "Member 'UBPC_TimeTrialRanking_C::Is_Ghost_Valid' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_TimeTrialRanking_C;
 
 }
 

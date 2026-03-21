@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_classes.hpp"
 
 
@@ -61,27 +61,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Result_Reward_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Result_Reward_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Result_Reward_C")
 	}
 	static class UWBP_Result_Reward_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Result_Reward_C>();
 	}
 };
-static_assert(alignof(UWBP_Result_Reward_C) == 0x000008, "Wrong alignment on UWBP_Result_Reward_C");
-static_assert(sizeof(UWBP_Result_Reward_C) == 0x000358, "Wrong size on UWBP_Result_Reward_C");
-static_assert(offsetof(UWBP_Result_Reward_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Result_Reward_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Reward_C, InLoop) == 0x0002E8, "Member 'UWBP_Result_Reward_C::InLoop' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Reward_C, TXT_RacerAward) == 0x0002F0, "Member 'UWBP_Result_Reward_C::TXT_RacerAward' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Reward_C, WBP_Result_Sub_DonpaTicket_Details_01) == 0x0002F8, "Member 'UWBP_Result_Reward_C::WBP_Result_Sub_DonpaTicket_Details_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Reward_C, WBP_Result_Sub_DonpaTicket_Details_02) == 0x000300, "Member 'UWBP_Result_Reward_C::WBP_Result_Sub_DonpaTicket_Details_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Reward_C, WBP_Result_Sub_DonpaTicket_Details_03) == 0x000308, "Member 'UWBP_Result_Reward_C::WBP_Result_Sub_DonpaTicket_Details_03' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Reward_C, WBP_Result_Sub_DonpaTicket_Details_04) == 0x000310, "Member 'UWBP_Result_Reward_C::WBP_Result_Sub_DonpaTicket_Details_04' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Reward_C, CurrentItemIndex) == 0x000318, "Member 'UWBP_Result_Reward_C::CurrentItemIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Reward_C, bRewardDispFinish) == 0x00031C, "Member 'UWBP_Result_Reward_C::bRewardDispFinish' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Reward_C, ItemInfos) == 0x000320, "Member 'UWBP_Result_Reward_C::ItemInfos' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Reward_C, CurrentItemInfo) == 0x000330, "Member 'UWBP_Result_Reward_C::CurrentItemInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Reward_C, CurrentItemWidget) == 0x000350, "Member 'UWBP_Result_Reward_C::CurrentItemWidget' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Result_Reward_C;
 
 }
 

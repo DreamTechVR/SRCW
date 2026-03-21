@@ -68,49 +68,7 @@ public:
 	uint8                                         Pad_324[0x4];                                      // 0x0324(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class UTexture2D>              K2Node_Select_Default_1;                           // 0x0328(0x0028)(UObjectWrapper, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_Window_C_ChangePresetType) == 0x000008, "Wrong alignment on WBP_PartyRace_Sub_Window_C_ChangePresetType");
-static_assert(sizeof(WBP_PartyRace_Sub_Window_C_ChangePresetType) == 0x000350, "Wrong size on WBP_PartyRace_Sub_Window_C_ChangePresetType");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Preset_Type1) == 0x000000, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Preset_Type1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_byte_Variable) == 0x000001, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_int_Variable) == 0x000004, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_int_Variable_1) == 0x000008, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_int_Variable_2) == 0x00000C, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_int_Variable_3) == 0x000010, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_int_Variable_4) == 0x000014, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_int_Variable_5) == 0x000018, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_int_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_int_Variable_6) == 0x00001C, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_int_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_int_Variable_7) == 0x000020, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_int_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_int_Variable_8) == 0x000024, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_int_Variable_8' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_int_Variable_9) == 0x000028, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_int_Variable_9' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_int_Variable_10) == 0x00002C, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_int_Variable_10' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_int_Variable_11) == 0x000030, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_int_Variable_11' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_int_Variable_12) == 0x000034, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_int_Variable_12' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_int_Variable_13) == 0x000038, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_int_Variable_13' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_int_Variable_14) == 0x00003C, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_int_Variable_14' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_int_Variable_15) == 0x000040, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_int_Variable_15' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_int_Variable_16) == 0x000044, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_int_Variable_16' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_int_Variable_17) == 0x000048, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_int_Variable_17' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_byte_Variable_1) == 0x00004C, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_softobject_Variable) == 0x000050, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_softobject_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_softobject_Variable_1) == 0x000078, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_softobject_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_softobject_Variable_2) == 0x0000A0, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_softobject_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_softobject_Variable_3) == 0x0000C8, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_softobject_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_softobject_Variable_4) == 0x0000F0, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_softobject_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_softobject_Variable_5) == 0x000118, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_softobject_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_softobject_Variable_6) == 0x000140, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_softobject_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_softobject_Variable_7) == 0x000168, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_softobject_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_softobject_Variable_8) == 0x000190, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_softobject_Variable_8' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_softobject_Variable_9) == 0x0001B8, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_softobject_Variable_9' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_softobject_Variable_10) == 0x0001E0, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_softobject_Variable_10' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_softobject_Variable_11) == 0x000208, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_softobject_Variable_11' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_softobject_Variable_12) == 0x000230, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_softobject_Variable_12' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_softobject_Variable_13) == 0x000258, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_softobject_Variable_13' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_softobject_Variable_14) == 0x000280, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_softobject_Variable_14' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_softobject_Variable_15) == 0x0002A8, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_softobject_Variable_15' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_softobject_Variable_16) == 0x0002D0, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_softobject_Variable_16' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, Temp_softobject_Variable_17) == 0x0002F8, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::Temp_softobject_Variable_17' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, K2Node_Select_Default) == 0x000320, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ChangePresetType, K2Node_Select_Default_1) == 0x000328, "Member 'WBP_PartyRace_Sub_Window_C_ChangePresetType::K2Node_Select_Default_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_Window_C_ChangePresetType;
 
 // Function WBP_PartyRace_Sub_Window.WBP_PartyRace_Sub_Window_C.ExecuteUbergraph_WBP_PartyRace_Sub_Window
 // 0x0060 (0x0060 - 0x0000)
@@ -126,15 +84,7 @@ public:
 	TSoftObjectPtr<class UTexture2D>              K2Node_CustomEvent_SoftTexture;                    // 0x0028(0x0028)(UObjectWrapper, HasGetValueTypeHash)
 	TArray<class UCustomRaceSubOptionPreviewLine*> K2Node_MakeArray_Array;                           // 0x0050(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(WBP_PartyRace_Sub_Window_C_ExecuteUbergraph_WBP_PartyRace_Sub_Window) == 0x000008, "Wrong alignment on WBP_PartyRace_Sub_Window_C_ExecuteUbergraph_WBP_PartyRace_Sub_Window");
-static_assert(sizeof(WBP_PartyRace_Sub_Window_C_ExecuteUbergraph_WBP_PartyRace_Sub_Window) == 0x000060, "Wrong size on WBP_PartyRace_Sub_Window_C_ExecuteUbergraph_WBP_PartyRace_Sub_Window");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ExecuteUbergraph_WBP_PartyRace_Sub_Window, EntryPoint) == 0x000000, "Member 'WBP_PartyRace_Sub_Window_C_ExecuteUbergraph_WBP_PartyRace_Sub_Window::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ExecuteUbergraph_WBP_PartyRace_Sub_Window, K2Node_Event_IsDesignTime) == 0x000004, "Member 'WBP_PartyRace_Sub_Window_C_ExecuteUbergraph_WBP_PartyRace_Sub_Window::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ExecuteUbergraph_WBP_PartyRace_Sub_Window, K2Node_CustomEvent_Loaded) == 0x000008, "Member 'WBP_PartyRace_Sub_Window_C_ExecuteUbergraph_WBP_PartyRace_Sub_Window::K2Node_CustomEvent_Loaded' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ExecuteUbergraph_WBP_PartyRace_Sub_Window, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'WBP_PartyRace_Sub_Window_C_ExecuteUbergraph_WBP_PartyRace_Sub_Window::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ExecuteUbergraph_WBP_PartyRace_Sub_Window, Temp_object_Variable) == 0x000020, "Member 'WBP_PartyRace_Sub_Window_C_ExecuteUbergraph_WBP_PartyRace_Sub_Window::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ExecuteUbergraph_WBP_PartyRace_Sub_Window, K2Node_CustomEvent_SoftTexture) == 0x000028, "Member 'WBP_PartyRace_Sub_Window_C_ExecuteUbergraph_WBP_PartyRace_Sub_Window::K2Node_CustomEvent_SoftTexture' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_ExecuteUbergraph_WBP_PartyRace_Sub_Window, K2Node_MakeArray_Array) == 0x000050, "Member 'WBP_PartyRace_Sub_Window_C_ExecuteUbergraph_WBP_PartyRace_Sub_Window::K2Node_MakeArray_Array' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_Window_C_ExecuteUbergraph_WBP_PartyRace_Sub_Window;
 
 // Function WBP_PartyRace_Sub_Window.WBP_PartyRace_Sub_Window_C.FirePreviewAnimation
 // 0x0018 (0x0018 - 0x0000)
@@ -147,12 +97,7 @@ public:
 	class UWidgetAnimation*                       K2Node_Select_Default;                             // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_Window_C_FirePreviewAnimation) == 0x000008, "Wrong alignment on WBP_PartyRace_Sub_Window_C_FirePreviewAnimation");
-static_assert(sizeof(WBP_PartyRace_Sub_Window_C_FirePreviewAnimation) == 0x000018, "Wrong size on WBP_PartyRace_Sub_Window_C_FirePreviewAnimation");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_FirePreviewAnimation, SceneAnim) == 0x000000, "Member 'WBP_PartyRace_Sub_Window_C_FirePreviewAnimation::SceneAnim' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_FirePreviewAnimation, Temp_byte_Variable) == 0x000001, "Member 'WBP_PartyRace_Sub_Window_C_FirePreviewAnimation::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_FirePreviewAnimation, K2Node_Select_Default) == 0x000008, "Member 'WBP_PartyRace_Sub_Window_C_FirePreviewAnimation::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_FirePreviewAnimation, CallFunc_PlayAnimation_ReturnValue) == 0x000010, "Member 'WBP_PartyRace_Sub_Window_C_FirePreviewAnimation::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_Window_C_FirePreviewAnimation;
 
 // Function WBP_PartyRace_Sub_Window.WBP_PartyRace_Sub_Window_C.LoadAndSet
 // 0x0028 (0x0028 - 0x0000)
@@ -161,9 +106,7 @@ struct WBP_PartyRace_Sub_Window_C_LoadAndSet final
 public:
 	TSoftObjectPtr<class UTexture2D>              SoftTexture;                                       // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, UObjectWrapper, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_Window_C_LoadAndSet) == 0x000008, "Wrong alignment on WBP_PartyRace_Sub_Window_C_LoadAndSet");
-static_assert(sizeof(WBP_PartyRace_Sub_Window_C_LoadAndSet) == 0x000028, "Wrong size on WBP_PartyRace_Sub_Window_C_LoadAndSet");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_LoadAndSet, SoftTexture) == 0x000000, "Member 'WBP_PartyRace_Sub_Window_C_LoadAndSet::SoftTexture' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_Window_C_LoadAndSet;
 
 // Function WBP_PartyRace_Sub_Window.WBP_PartyRace_Sub_Window_C.OnLoaded_815D1AFD46CCC0F0BAD11AA6EC238B2D
 // 0x0008 (0x0008 - 0x0000)
@@ -172,9 +115,7 @@ struct WBP_PartyRace_Sub_Window_C_OnLoaded_815D1AFD46CCC0F0BAD11AA6EC238B2D fina
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_Window_C_OnLoaded_815D1AFD46CCC0F0BAD11AA6EC238B2D) == 0x000008, "Wrong alignment on WBP_PartyRace_Sub_Window_C_OnLoaded_815D1AFD46CCC0F0BAD11AA6EC238B2D");
-static_assert(sizeof(WBP_PartyRace_Sub_Window_C_OnLoaded_815D1AFD46CCC0F0BAD11AA6EC238B2D) == 0x000008, "Wrong size on WBP_PartyRace_Sub_Window_C_OnLoaded_815D1AFD46CCC0F0BAD11AA6EC238B2D");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_OnLoaded_815D1AFD46CCC0F0BAD11AA6EC238B2D, Loaded) == 0x000000, "Member 'WBP_PartyRace_Sub_Window_C_OnLoaded_815D1AFD46CCC0F0BAD11AA6EC238B2D::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_Window_C_OnLoaded_815D1AFD46CCC0F0BAD11AA6EC238B2D;
 
 // Function WBP_PartyRace_Sub_Window.WBP_PartyRace_Sub_Window_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -183,9 +124,7 @@ struct WBP_PartyRace_Sub_Window_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_Window_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_PartyRace_Sub_Window_C_PreConstruct");
-static_assert(sizeof(WBP_PartyRace_Sub_Window_C_PreConstruct) == 0x000001, "Wrong size on WBP_PartyRace_Sub_Window_C_PreConstruct");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_PartyRace_Sub_Window_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_Window_C_PreConstruct;
 
 // Function WBP_PartyRace_Sub_Window.WBP_PartyRace_Sub_Window_C.Set Pict Color
 // 0x0001 (0x0001 - 0x0000)
@@ -194,9 +133,7 @@ struct WBP_PartyRace_Sub_Window_C_Set_Pict_Color final
 public:
 	bool                                          Active;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_Window_C_Set_Pict_Color) == 0x000001, "Wrong alignment on WBP_PartyRace_Sub_Window_C_Set_Pict_Color");
-static_assert(sizeof(WBP_PartyRace_Sub_Window_C_Set_Pict_Color) == 0x000001, "Wrong size on WBP_PartyRace_Sub_Window_C_Set_Pict_Color");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_Set_Pict_Color, Active) == 0x000000, "Member 'WBP_PartyRace_Sub_Window_C_Set_Pict_Color::Active' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_Window_C_Set_Pict_Color;
 
 // Function WBP_PartyRace_Sub_Window.WBP_PartyRace_Sub_Window_C.SetPresetSettingValue
 // 0x0050 (0x0050 - 0x0000)
@@ -205,9 +142,7 @@ struct WBP_PartyRace_Sub_Window_C_SetPresetSettingValue final
 public:
 	TMap<EPartyRacePreset, struct FPartyRacePresetSetting> PresetName_Value_0;                       // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_PartyRace_Sub_Window_C_SetPresetSettingValue) == 0x000008, "Wrong alignment on WBP_PartyRace_Sub_Window_C_SetPresetSettingValue");
-static_assert(sizeof(WBP_PartyRace_Sub_Window_C_SetPresetSettingValue) == 0x000050, "Wrong size on WBP_PartyRace_Sub_Window_C_SetPresetSettingValue");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_SetPresetSettingValue, PresetName_Value_0) == 0x000000, "Member 'WBP_PartyRace_Sub_Window_C_SetPresetSettingValue::PresetName_Value_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_Window_C_SetPresetSettingValue;
 
 // Function WBP_PartyRace_Sub_Window.WBP_PartyRace_Sub_Window_C.UpdatePresetSettingLine
 // 0x02A8 (0x02A8 - 0x0000)
@@ -260,47 +195,7 @@ public:
 	class FString                                 K2Node_Select_Default;                             // 0x0288(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x0298(0x0010)()
 };
-static_assert(alignof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine) == 0x000008, "Wrong alignment on WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine");
-static_assert(sizeof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine) == 0x0002A8, "Wrong size on WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, NewLocalVar) == 0x000000, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::NewLocalVar' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, Temp_string_Variable) == 0x000010, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::Temp_string_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, Temp_string_Variable_1) == 0x000020, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::Temp_string_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, Temp_string_Variable_2) == 0x000030, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::Temp_string_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, Temp_string_Variable_3) == 0x000040, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::Temp_string_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, Temp_string_Variable_4) == 0x000050, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::Temp_string_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, Temp_string_Variable_5) == 0x000060, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::Temp_string_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, Temp_string_Variable_6) == 0x000070, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::Temp_string_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, Temp_string_Variable_7) == 0x000080, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::Temp_string_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, Temp_string_Variable_8) == 0x000090, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::Temp_string_Variable_8' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, Temp_string_Variable_9) == 0x0000A0, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::Temp_string_Variable_9' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, Temp_int_Array_Index_Variable) == 0x0000B0, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, Temp_byte_Variable) == 0x0000B4, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, CallFunc_Array_Get_Item) == 0x0000B8, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, K2Node_DynamicCast_AsWBP_Party_Race_Sub_Option_Preview) == 0x0000C0, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::K2Node_DynamicCast_AsWBP_Party_Race_Sub_Option_Preview' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, K2Node_DynamicCast_bSuccess) == 0x0000C8, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue) == 0x0000D0, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, CallFunc_Array_Length_ReturnValue) == 0x0000E0, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, CallFunc_Conv_StringToText_ReturnValue) == 0x0000E8, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, CallFunc_Array_IsValidIndex_ReturnValue) == 0x0000F8, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, Temp_int_Loop_Counter_Variable) == 0x0000FC, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, CallFunc_Less_IntInt_ReturnValue) == 0x000100, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, CallFunc_Add_IntInt_ReturnValue) == 0x000104, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, CallFunc_Map_Find_Value) == 0x000108, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, CallFunc_Map_Find_ReturnValue) == 0x0001C0, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_1) == 0x0001C8, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_2) == 0x0001D8, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_3) == 0x0001E8, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_4) == 0x0001F8, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_5) == 0x000208, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_6) == 0x000218, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_7) == 0x000228, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, CallFunc_Conv_IntToString_ReturnValue) == 0x000238, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, CallFunc_Conv_IntToString_ReturnValue_1) == 0x000248, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::CallFunc_Conv_IntToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_8) == 0x000258, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_9) == 0x000268, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_10) == 0x000278, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, K2Node_Select_Default) == 0x000288, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine, CallFunc_Conv_StringToText_ReturnValue_1) == 0x000298, "Member 'WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_Window_C_UpdatePresetSettingLine;
 
 // Function WBP_PartyRace_Sub_Window.WBP_PartyRace_Sub_Window_C.UpdateTitleBGColor
 // 0x0074 (0x0074 - 0x0000)
@@ -316,16 +211,7 @@ public:
 	struct FLinearColor                           Temp_struct_Variable_5;                            // 0x0054(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_Select_Default;                             // 0x0064(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_Window_C_UpdateTitleBGColor) == 0x000004, "Wrong alignment on WBP_PartyRace_Sub_Window_C_UpdateTitleBGColor");
-static_assert(sizeof(WBP_PartyRace_Sub_Window_C_UpdateTitleBGColor) == 0x000074, "Wrong size on WBP_PartyRace_Sub_Window_C_UpdateTitleBGColor");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdateTitleBGColor, Temp_int_Variable) == 0x000000, "Member 'WBP_PartyRace_Sub_Window_C_UpdateTitleBGColor::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdateTitleBGColor, Temp_struct_Variable) == 0x000004, "Member 'WBP_PartyRace_Sub_Window_C_UpdateTitleBGColor::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdateTitleBGColor, Temp_struct_Variable_1) == 0x000014, "Member 'WBP_PartyRace_Sub_Window_C_UpdateTitleBGColor::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdateTitleBGColor, Temp_struct_Variable_2) == 0x000024, "Member 'WBP_PartyRace_Sub_Window_C_UpdateTitleBGColor::Temp_struct_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdateTitleBGColor, Temp_struct_Variable_3) == 0x000034, "Member 'WBP_PartyRace_Sub_Window_C_UpdateTitleBGColor::Temp_struct_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdateTitleBGColor, Temp_struct_Variable_4) == 0x000044, "Member 'WBP_PartyRace_Sub_Window_C_UpdateTitleBGColor::Temp_struct_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdateTitleBGColor, Temp_struct_Variable_5) == 0x000054, "Member 'WBP_PartyRace_Sub_Window_C_UpdateTitleBGColor::Temp_struct_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Window_C_UpdateTitleBGColor, K2Node_Select_Default) == 0x000064, "Member 'WBP_PartyRace_Sub_Window_C_UpdateTitleBGColor::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_Window_C_UpdateTitleBGColor;
 
 }
 

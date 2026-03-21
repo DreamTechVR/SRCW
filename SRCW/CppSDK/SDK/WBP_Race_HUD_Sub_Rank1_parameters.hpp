@@ -25,10 +25,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Rank1_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Rank1) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Rank1_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Rank1");
-static_assert(sizeof(WBP_Race_HUD_Sub_Rank1_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Rank1) == 0x000010, "Wrong size on WBP_Race_HUD_Sub_Rank1_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Rank1");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank1_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Rank1, EntryPoint) == 0x000000, "Member 'WBP_Race_HUD_Sub_Rank1_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Rank1::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank1_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Rank1, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'WBP_Race_HUD_Sub_Rank1_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Rank1::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Rank1_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Rank1;
 
 // Function WBP_Race_HUD_Sub_Rank1.WBP_Race_HUD_Sub_Rank1_C.UpdateLocalizeTexture
 // 0x00A8 (0x00A8 - 0x0000)
@@ -59,25 +56,7 @@ public:
 	class UTexture2D*                             K2Node_DynamicCast_As_____2D;                      // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture");
-static_assert(sizeof(WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture) == 0x0000A8, "Wrong size on WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture, Temp_int_Array_Index_Variable) == 0x000000, "Member 'WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture, K2Node_SwitchInteger_CmpSuccess) == 0x000008, "Member 'WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture, CallFunc_GetTextLangFromSave_ReturnValue) == 0x000010, "Member 'WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture::CallFunc_GetTextLangFromSave_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x000018, "Member 'WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture, CallFunc_GetEnumeratorName_ReturnValue) == 0x000020, "Member 'WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture, K2Node_DynamicCast_As_______) == 0x000028, "Member 'WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture::K2Node_DynamicCast_As_______' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture, CallFunc_GetDataTableRowFromName_OutRow) == 0x000038, "Member 'WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000050, "Member 'WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture, CallFunc_Array_Get_Item) == 0x000058, "Member 'WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture, CallFunc_Array_Length_ReturnValue) == 0x000080, "Member 'WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture, CallFunc_LoadAsset_Blocking_ReturnValue_1) == 0x000088, "Member 'WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture::CallFunc_LoadAsset_Blocking_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture, CallFunc_Less_IntInt_ReturnValue) == 0x000090, "Member 'WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture, K2Node_DynamicCast_As_____2D) == 0x000098, "Member 'WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture, K2Node_DynamicCast_bSuccess_1) == 0x0000A0, "Member 'WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Rank1_C_UpdateLocalizeTexture;
 
 }
 

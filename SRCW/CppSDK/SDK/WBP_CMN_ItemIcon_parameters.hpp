@@ -34,17 +34,7 @@ public:
 	class UTexture2D*                             K2Node_Event_Texture_1;                            // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_1;         // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_ItemIcon_C_ExecuteUbergraph_WBP_CMN_ItemIcon) == 0x000008, "Wrong alignment on WBP_CMN_ItemIcon_C_ExecuteUbergraph_WBP_CMN_ItemIcon");
-static_assert(sizeof(WBP_CMN_ItemIcon_C_ExecuteUbergraph_WBP_CMN_ItemIcon) == 0x000048, "Wrong size on WBP_CMN_ItemIcon_C_ExecuteUbergraph_WBP_CMN_ItemIcon");
-static_assert(offsetof(WBP_CMN_ItemIcon_C_ExecuteUbergraph_WBP_CMN_ItemIcon, EntryPoint) == 0x000000, "Member 'WBP_CMN_ItemIcon_C_ExecuteUbergraph_WBP_CMN_ItemIcon::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ItemIcon_C_ExecuteUbergraph_WBP_CMN_ItemIcon, K2Node_Event_Texture) == 0x000008, "Member 'WBP_CMN_ItemIcon_C_ExecuteUbergraph_WBP_CMN_ItemIcon::K2Node_Event_Texture' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ItemIcon_C_ExecuteUbergraph_WBP_CMN_ItemIcon, K2Node_CustomEvent_Texture_1) == 0x000010, "Member 'WBP_CMN_ItemIcon_C_ExecuteUbergraph_WBP_CMN_ItemIcon::K2Node_CustomEvent_Texture_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ItemIcon_C_ExecuteUbergraph_WBP_CMN_ItemIcon, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'WBP_CMN_ItemIcon_C_ExecuteUbergraph_WBP_CMN_ItemIcon::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ItemIcon_C_ExecuteUbergraph_WBP_CMN_ItemIcon, K2Node_CustomEvent_Texture) == 0x000020, "Member 'WBP_CMN_ItemIcon_C_ExecuteUbergraph_WBP_CMN_ItemIcon::K2Node_CustomEvent_Texture' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ItemIcon_C_ExecuteUbergraph_WBP_CMN_ItemIcon, CallFunc_IsValid_ReturnValue_1) == 0x000028, "Member 'WBP_CMN_ItemIcon_C_ExecuteUbergraph_WBP_CMN_ItemIcon::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ItemIcon_C_ExecuteUbergraph_WBP_CMN_ItemIcon, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000030, "Member 'WBP_CMN_ItemIcon_C_ExecuteUbergraph_WBP_CMN_ItemIcon::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ItemIcon_C_ExecuteUbergraph_WBP_CMN_ItemIcon, K2Node_Event_Texture_1) == 0x000038, "Member 'WBP_CMN_ItemIcon_C_ExecuteUbergraph_WBP_CMN_ItemIcon::K2Node_Event_Texture_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ItemIcon_C_ExecuteUbergraph_WBP_CMN_ItemIcon, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x000040, "Member 'WBP_CMN_ItemIcon_C_ExecuteUbergraph_WBP_CMN_ItemIcon::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_ItemIcon_C_ExecuteUbergraph_WBP_CMN_ItemIcon;
 
 // Function WBP_CMN_ItemIcon.WBP_CMN_ItemIcon_C.SetGadgetTexture
 // 0x0008 (0x0008 - 0x0000)
@@ -53,9 +43,7 @@ struct WBP_CMN_ItemIcon_C_SetGadgetTexture final
 public:
 	class UTexture2D*                             Texture;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_ItemIcon_C_SetGadgetTexture) == 0x000008, "Wrong alignment on WBP_CMN_ItemIcon_C_SetGadgetTexture");
-static_assert(sizeof(WBP_CMN_ItemIcon_C_SetGadgetTexture) == 0x000008, "Wrong size on WBP_CMN_ItemIcon_C_SetGadgetTexture");
-static_assert(offsetof(WBP_CMN_ItemIcon_C_SetGadgetTexture, Texture) == 0x000000, "Member 'WBP_CMN_ItemIcon_C_SetGadgetTexture::Texture' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_ItemIcon_C_SetGadgetTexture;
 
 // Function WBP_CMN_ItemIcon.WBP_CMN_ItemIcon_C.SetHonorTitleImage
 // 0x0008 (0x0008 - 0x0000)
@@ -64,9 +52,7 @@ struct WBP_CMN_ItemIcon_C_SetHonorTitleImage final
 public:
 	class UTexture2D*                             Texture;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_ItemIcon_C_SetHonorTitleImage) == 0x000008, "Wrong alignment on WBP_CMN_ItemIcon_C_SetHonorTitleImage");
-static_assert(sizeof(WBP_CMN_ItemIcon_C_SetHonorTitleImage) == 0x000008, "Wrong size on WBP_CMN_ItemIcon_C_SetHonorTitleImage");
-static_assert(offsetof(WBP_CMN_ItemIcon_C_SetHonorTitleImage, Texture) == 0x000000, "Member 'WBP_CMN_ItemIcon_C_SetHonorTitleImage::Texture' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_ItemIcon_C_SetHonorTitleImage;
 
 // Function WBP_CMN_ItemIcon.WBP_CMN_ItemIcon_C.SetHornImage
 // 0x0008 (0x0008 - 0x0000)
@@ -75,9 +61,7 @@ struct WBP_CMN_ItemIcon_C_SetHornImage final
 public:
 	class UTexture2D*                             Texture;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_ItemIcon_C_SetHornImage) == 0x000008, "Wrong alignment on WBP_CMN_ItemIcon_C_SetHornImage");
-static_assert(sizeof(WBP_CMN_ItemIcon_C_SetHornImage) == 0x000008, "Wrong size on WBP_CMN_ItemIcon_C_SetHornImage");
-static_assert(offsetof(WBP_CMN_ItemIcon_C_SetHornImage, Texture) == 0x000000, "Member 'WBP_CMN_ItemIcon_C_SetHornImage::Texture' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_ItemIcon_C_SetHornImage;
 
 // Function WBP_CMN_ItemIcon.WBP_CMN_ItemIcon_C.SetStickerImage
 // 0x0008 (0x0008 - 0x0000)
@@ -86,9 +70,7 @@ struct WBP_CMN_ItemIcon_C_SetStickerImage final
 public:
 	class UTexture2D*                             Texture;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_ItemIcon_C_SetStickerImage) == 0x000008, "Wrong alignment on WBP_CMN_ItemIcon_C_SetStickerImage");
-static_assert(sizeof(WBP_CMN_ItemIcon_C_SetStickerImage) == 0x000008, "Wrong size on WBP_CMN_ItemIcon_C_SetStickerImage");
-static_assert(offsetof(WBP_CMN_ItemIcon_C_SetStickerImage, Texture) == 0x000000, "Member 'WBP_CMN_ItemIcon_C_SetStickerImage::Texture' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_ItemIcon_C_SetStickerImage;
 
 // Function WBP_CMN_ItemIcon.WBP_CMN_ItemIcon_C.GetWidget
 // 0x0040 (0x0040 - 0x0000)
@@ -106,16 +88,7 @@ public:
 	class UWidget*                                Temp_object_Variable_3;                            // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                K2Node_Select_Default;                             // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_ItemIcon_C_GetWidget) == 0x000008, "Wrong alignment on WBP_CMN_ItemIcon_C_GetWidget");
-static_assert(sizeof(WBP_CMN_ItemIcon_C_GetWidget) == 0x000040, "Wrong size on WBP_CMN_ItemIcon_C_GetWidget");
-static_assert(offsetof(WBP_CMN_ItemIcon_C_GetWidget, InRewardType) == 0x000000, "Member 'WBP_CMN_ItemIcon_C_GetWidget::InRewardType' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ItemIcon_C_GetWidget, ReturnValue) == 0x000008, "Member 'WBP_CMN_ItemIcon_C_GetWidget::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ItemIcon_C_GetWidget, Temp_byte_Variable) == 0x000010, "Member 'WBP_CMN_ItemIcon_C_GetWidget::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ItemIcon_C_GetWidget, Temp_object_Variable) == 0x000018, "Member 'WBP_CMN_ItemIcon_C_GetWidget::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ItemIcon_C_GetWidget, Temp_object_Variable_1) == 0x000020, "Member 'WBP_CMN_ItemIcon_C_GetWidget::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ItemIcon_C_GetWidget, Temp_object_Variable_2) == 0x000028, "Member 'WBP_CMN_ItemIcon_C_GetWidget::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ItemIcon_C_GetWidget, Temp_object_Variable_3) == 0x000030, "Member 'WBP_CMN_ItemIcon_C_GetWidget::Temp_object_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ItemIcon_C_GetWidget, K2Node_Select_Default) == 0x000038, "Member 'WBP_CMN_ItemIcon_C_GetWidget::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_ItemIcon_C_GetWidget;
 
 }
 

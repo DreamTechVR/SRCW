@@ -23,15 +23,18 @@ class ABP_ItemSplashProjectile_C final : public AItemSplashProjectile
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ItemSplashProjectile_C">();
+		BP_STATIC_CLASS_IMPL("BP_ItemSplashProjectile_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ItemSplashProjectile_C")
 	}
 	static class ABP_ItemSplashProjectile_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ItemSplashProjectile_C>();
 	}
 };
-static_assert(alignof(ABP_ItemSplashProjectile_C) == 0x000010, "Wrong alignment on ABP_ItemSplashProjectile_C");
-static_assert(sizeof(ABP_ItemSplashProjectile_C) == 0x000610, "Wrong size on ABP_ItemSplashProjectile_C");
+DUMPER7_ASSERTS_ABP_ItemSplashProjectile_C;
 
 }
 

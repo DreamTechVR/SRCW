@@ -21,9 +21,7 @@ struct WBP_Advertise_Black_C_ExecuteUbergraph_WBP_Advertise_Black final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Advertise_Black_C_ExecuteUbergraph_WBP_Advertise_Black) == 0x000004, "Wrong alignment on WBP_Advertise_Black_C_ExecuteUbergraph_WBP_Advertise_Black");
-static_assert(sizeof(WBP_Advertise_Black_C_ExecuteUbergraph_WBP_Advertise_Black) == 0x000004, "Wrong size on WBP_Advertise_Black_C_ExecuteUbergraph_WBP_Advertise_Black");
-static_assert(offsetof(WBP_Advertise_Black_C_ExecuteUbergraph_WBP_Advertise_Black, EntryPoint) == 0x000000, "Member 'WBP_Advertise_Black_C_ExecuteUbergraph_WBP_Advertise_Black::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Advertise_Black_C_ExecuteUbergraph_WBP_Advertise_Black;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UNION_structs.hpp"
 #include "Engine_structs.hpp"
+#include "UNION_structs.hpp"
 
 
 namespace SDK::Params
@@ -24,9 +24,7 @@ struct WBP_CMN_Sub_Tab_C_ChangeCourseSwitchTag final
 public:
 	EPartyRaceCourseSwitchTag                     Tag;                                               // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_Sub_Tab_C_ChangeCourseSwitchTag) == 0x000001, "Wrong alignment on WBP_CMN_Sub_Tab_C_ChangeCourseSwitchTag");
-static_assert(sizeof(WBP_CMN_Sub_Tab_C_ChangeCourseSwitchTag) == 0x000001, "Wrong size on WBP_CMN_Sub_Tab_C_ChangeCourseSwitchTag");
-static_assert(offsetof(WBP_CMN_Sub_Tab_C_ChangeCourseSwitchTag, Tag) == 0x000000, "Member 'WBP_CMN_Sub_Tab_C_ChangeCourseSwitchTag::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Sub_Tab_C_ChangeCourseSwitchTag;
 
 // Function WBP_CMN_Sub_Tab.WBP_CMN_Sub_Tab_C.ExecuteUbergraph_WBP_CMN_Sub_Tab
 // 0x0058 (0x0058 - 0x0000)
@@ -46,17 +44,7 @@ public:
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0048(0x0010)()
 };
-static_assert(alignof(WBP_CMN_Sub_Tab_C_ExecuteUbergraph_WBP_CMN_Sub_Tab) == 0x000008, "Wrong alignment on WBP_CMN_Sub_Tab_C_ExecuteUbergraph_WBP_CMN_Sub_Tab");
-static_assert(sizeof(WBP_CMN_Sub_Tab_C_ExecuteUbergraph_WBP_CMN_Sub_Tab) == 0x000058, "Wrong size on WBP_CMN_Sub_Tab_C_ExecuteUbergraph_WBP_CMN_Sub_Tab");
-static_assert(offsetof(WBP_CMN_Sub_Tab_C_ExecuteUbergraph_WBP_CMN_Sub_Tab, EntryPoint) == 0x000000, "Member 'WBP_CMN_Sub_Tab_C_ExecuteUbergraph_WBP_CMN_Sub_Tab::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_Tab_C_ExecuteUbergraph_WBP_CMN_Sub_Tab, K2Node_MakeArray_Array) == 0x000008, "Member 'WBP_CMN_Sub_Tab_C_ExecuteUbergraph_WBP_CMN_Sub_Tab::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_Tab_C_ExecuteUbergraph_WBP_CMN_Sub_Tab, CallFunc_Format_ReturnValue) == 0x000018, "Member 'WBP_CMN_Sub_Tab_C_ExecuteUbergraph_WBP_CMN_Sub_Tab::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_Tab_C_ExecuteUbergraph_WBP_CMN_Sub_Tab, K2Node_Event_IsDesignTime) == 0x000028, "Member 'WBP_CMN_Sub_Tab_C_ExecuteUbergraph_WBP_CMN_Sub_Tab::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_Tab_C_ExecuteUbergraph_WBP_CMN_Sub_Tab, K2Node_CustomEvent_Tag) == 0x000029, "Member 'WBP_CMN_Sub_Tab_C_ExecuteUbergraph_WBP_CMN_Sub_Tab::K2Node_CustomEvent_Tag' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_Tab_C_ExecuteUbergraph_WBP_CMN_Sub_Tab, K2Node_SwitchEnum_CmpSuccess) == 0x00002A, "Member 'WBP_CMN_Sub_Tab_C_ExecuteUbergraph_WBP_CMN_Sub_Tab::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_Tab_C_ExecuteUbergraph_WBP_CMN_Sub_Tab, K2Node_MakeArray_Array_1) == 0x000030, "Member 'WBP_CMN_Sub_Tab_C_ExecuteUbergraph_WBP_CMN_Sub_Tab::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_Tab_C_ExecuteUbergraph_WBP_CMN_Sub_Tab, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000040, "Member 'WBP_CMN_Sub_Tab_C_ExecuteUbergraph_WBP_CMN_Sub_Tab::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_Tab_C_ExecuteUbergraph_WBP_CMN_Sub_Tab, CallFunc_Format_ReturnValue_1) == 0x000048, "Member 'WBP_CMN_Sub_Tab_C_ExecuteUbergraph_WBP_CMN_Sub_Tab::CallFunc_Format_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Sub_Tab_C_ExecuteUbergraph_WBP_CMN_Sub_Tab;
 
 // Function WBP_CMN_Sub_Tab.WBP_CMN_Sub_Tab_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -65,9 +53,7 @@ struct WBP_CMN_Sub_Tab_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_Sub_Tab_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_CMN_Sub_Tab_C_PreConstruct");
-static_assert(sizeof(WBP_CMN_Sub_Tab_C_PreConstruct) == 0x000001, "Wrong size on WBP_CMN_Sub_Tab_C_PreConstruct");
-static_assert(offsetof(WBP_CMN_Sub_Tab_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_CMN_Sub_Tab_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Sub_Tab_C_PreConstruct;
 
 }
 

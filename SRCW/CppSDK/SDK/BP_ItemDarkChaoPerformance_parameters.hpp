@@ -27,12 +27,7 @@ public:
 	EItemDarkChaoPerfomanceType                   K2Node_Event_ChaoType;                             // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_ItemDarkChaoPerformance_C_ExecuteUbergraph_BP_ItemDarkChaoPerformance) == 0x000008, "Wrong alignment on BP_ItemDarkChaoPerformance_C_ExecuteUbergraph_BP_ItemDarkChaoPerformance");
-static_assert(sizeof(BP_ItemDarkChaoPerformance_C_ExecuteUbergraph_BP_ItemDarkChaoPerformance) == 0x000018, "Wrong size on BP_ItemDarkChaoPerformance_C_ExecuteUbergraph_BP_ItemDarkChaoPerformance");
-static_assert(offsetof(BP_ItemDarkChaoPerformance_C_ExecuteUbergraph_BP_ItemDarkChaoPerformance, EntryPoint) == 0x000000, "Member 'BP_ItemDarkChaoPerformance_C_ExecuteUbergraph_BP_ItemDarkChaoPerformance::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_ItemDarkChaoPerformance_C_ExecuteUbergraph_BP_ItemDarkChaoPerformance, K2Node_Event_OtherActor) == 0x000008, "Member 'BP_ItemDarkChaoPerformance_C_ExecuteUbergraph_BP_ItemDarkChaoPerformance::K2Node_Event_OtherActor' has a wrong offset!");
-static_assert(offsetof(BP_ItemDarkChaoPerformance_C_ExecuteUbergraph_BP_ItemDarkChaoPerformance, K2Node_Event_ChaoType) == 0x000010, "Member 'BP_ItemDarkChaoPerformance_C_ExecuteUbergraph_BP_ItemDarkChaoPerformance::K2Node_Event_ChaoType' has a wrong offset!");
-static_assert(offsetof(BP_ItemDarkChaoPerformance_C_ExecuteUbergraph_BP_ItemDarkChaoPerformance, K2Node_SwitchEnum_CmpSuccess) == 0x000011, "Member 'BP_ItemDarkChaoPerformance_C_ExecuteUbergraph_BP_ItemDarkChaoPerformance::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BP_ItemDarkChaoPerformance_C_ExecuteUbergraph_BP_ItemDarkChaoPerformance;
 
 // Function BP_ItemDarkChaoPerformance.BP_ItemDarkChaoPerformance_C.ReceiveActorBeginOverlap
 // 0x0008 (0x0008 - 0x0000)
@@ -41,9 +36,7 @@ struct BP_ItemDarkChaoPerformance_C_ReceiveActorBeginOverlap final
 public:
 	class AActor*                                 OtherActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_ItemDarkChaoPerformance_C_ReceiveActorBeginOverlap) == 0x000008, "Wrong alignment on BP_ItemDarkChaoPerformance_C_ReceiveActorBeginOverlap");
-static_assert(sizeof(BP_ItemDarkChaoPerformance_C_ReceiveActorBeginOverlap) == 0x000008, "Wrong size on BP_ItemDarkChaoPerformance_C_ReceiveActorBeginOverlap");
-static_assert(offsetof(BP_ItemDarkChaoPerformance_C_ReceiveActorBeginOverlap, OtherActor) == 0x000000, "Member 'BP_ItemDarkChaoPerformance_C_ReceiveActorBeginOverlap::OtherActor' has a wrong offset!");
+DUMPER7_ASSERTS_BP_ItemDarkChaoPerformance_C_ReceiveActorBeginOverlap;
 
 // Function BP_ItemDarkChaoPerformance.BP_ItemDarkChaoPerformance_C.SetPerfomanceType
 // 0x0001 (0x0001 - 0x0000)
@@ -52,9 +45,7 @@ struct BP_ItemDarkChaoPerformance_C_SetPerfomanceType final
 public:
 	EItemDarkChaoPerfomanceType                   ChaoType;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_ItemDarkChaoPerformance_C_SetPerfomanceType) == 0x000001, "Wrong alignment on BP_ItemDarkChaoPerformance_C_SetPerfomanceType");
-static_assert(sizeof(BP_ItemDarkChaoPerformance_C_SetPerfomanceType) == 0x000001, "Wrong size on BP_ItemDarkChaoPerformance_C_SetPerfomanceType");
-static_assert(offsetof(BP_ItemDarkChaoPerformance_C_SetPerfomanceType, ChaoType) == 0x000000, "Member 'BP_ItemDarkChaoPerformance_C_SetPerfomanceType::ChaoType' has a wrong offset!");
+DUMPER7_ASSERTS_BP_ItemDarkChaoPerformance_C_SetPerfomanceType;
 
 }
 

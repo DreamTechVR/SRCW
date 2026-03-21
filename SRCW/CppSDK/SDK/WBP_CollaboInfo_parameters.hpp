@@ -21,9 +21,7 @@ struct WBP_CollaboInfo_C_SetSchedule final
 public:
 	class FText                                   Schedule;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_CollaboInfo_C_SetSchedule) == 0x000008, "Wrong alignment on WBP_CollaboInfo_C_SetSchedule");
-static_assert(sizeof(WBP_CollaboInfo_C_SetSchedule) == 0x000010, "Wrong size on WBP_CollaboInfo_C_SetSchedule");
-static_assert(offsetof(WBP_CollaboInfo_C_SetSchedule, Schedule) == 0x000000, "Member 'WBP_CollaboInfo_C_SetSchedule::Schedule' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CollaboInfo_C_SetSchedule;
 
 // Function WBP_CollaboInfo.WBP_CollaboInfo_C.SetTextureBG
 // 0x0010 (0x0010 - 0x0000)
@@ -33,10 +31,7 @@ public:
 	class UTexture2D*                             Texture;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CollaboInfo_C_SetTextureBG) == 0x000008, "Wrong alignment on WBP_CollaboInfo_C_SetTextureBG");
-static_assert(sizeof(WBP_CollaboInfo_C_SetTextureBG) == 0x000010, "Wrong size on WBP_CollaboInfo_C_SetTextureBG");
-static_assert(offsetof(WBP_CollaboInfo_C_SetTextureBG, Texture) == 0x000000, "Member 'WBP_CollaboInfo_C_SetTextureBG::Texture' has a wrong offset!");
-static_assert(offsetof(WBP_CollaboInfo_C_SetTextureBG, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'WBP_CollaboInfo_C_SetTextureBG::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CollaboInfo_C_SetTextureBG;
 
 // Function WBP_CollaboInfo.WBP_CollaboInfo_C.SetTitle
 // 0x0010 (0x0010 - 0x0000)
@@ -45,9 +40,7 @@ struct WBP_CollaboInfo_C_SetTitle final
 public:
 	class FText                                   Title;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_CollaboInfo_C_SetTitle) == 0x000008, "Wrong alignment on WBP_CollaboInfo_C_SetTitle");
-static_assert(sizeof(WBP_CollaboInfo_C_SetTitle) == 0x000010, "Wrong size on WBP_CollaboInfo_C_SetTitle");
-static_assert(offsetof(WBP_CollaboInfo_C_SetTitle, Title) == 0x000000, "Member 'WBP_CollaboInfo_C_SetTitle::Title' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CollaboInfo_C_SetTitle;
 
 }
 

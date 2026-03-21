@@ -45,28 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_AddCharacterInfo_Sub_Ring_C">();
+		BP_STATIC_CLASS_IMPL("WBP_AddCharacterInfo_Sub_Ring_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_AddCharacterInfo_Sub_Ring_C")
 	}
 	static class UWBP_AddCharacterInfo_Sub_Ring_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_AddCharacterInfo_Sub_Ring_C>();
 	}
 };
-static_assert(alignof(UWBP_AddCharacterInfo_Sub_Ring_C) == 0x000008, "Wrong alignment on UWBP_AddCharacterInfo_Sub_Ring_C");
-static_assert(sizeof(UWBP_AddCharacterInfo_Sub_Ring_C) == 0x000348, "Wrong size on UWBP_AddCharacterInfo_Sub_Ring_C");
-static_assert(offsetof(UWBP_AddCharacterInfo_Sub_Ring_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_AddCharacterInfo_Sub_Ring_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_Sub_Ring_C, AddCharacter_In) == 0x0002E8, "Member 'UWBP_AddCharacterInfo_Sub_Ring_C::AddCharacter_In' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_Sub_Ring_C, DMY_CharaCut) == 0x0002F0, "Member 'UWBP_AddCharacterInfo_Sub_Ring_C::DMY_CharaCut' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_Sub_Ring_C, Eff) == 0x0002F8, "Member 'UWBP_AddCharacterInfo_Sub_Ring_C::Eff' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_Sub_Ring_C, Eff_1) == 0x000300, "Member 'UWBP_AddCharacterInfo_Sub_Ring_C::Eff_1' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_Sub_Ring_C, Eff_01) == 0x000308, "Member 'UWBP_AddCharacterInfo_Sub_Ring_C::Eff_01' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_Sub_Ring_C, Eff_02) == 0x000310, "Member 'UWBP_AddCharacterInfo_Sub_Ring_C::Eff_02' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_Sub_Ring_C, Ring_Cover) == 0x000318, "Member 'UWBP_AddCharacterInfo_Sub_Ring_C::Ring_Cover' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_Sub_Ring_C, RingBase) == 0x000320, "Member 'UWBP_AddCharacterInfo_Sub_Ring_C::RingBase' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_Sub_Ring_C, RingEff) == 0x000328, "Member 'UWBP_AddCharacterInfo_Sub_Ring_C::RingEff' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_Sub_Ring_C, RingEff_Add) == 0x000330, "Member 'UWBP_AddCharacterInfo_Sub_Ring_C::RingEff_Add' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_Sub_Ring_C, RingEff_Add_Out) == 0x000338, "Member 'UWBP_AddCharacterInfo_Sub_Ring_C::RingEff_Add_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_Sub_Ring_C, RingEff_Light) == 0x000340, "Member 'UWBP_AddCharacterInfo_Sub_Ring_C::RingEff_Light' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_AddCharacterInfo_Sub_Ring_C;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -60,38 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_AirTrickText_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_AirTrickText_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_AirTrickText_C")
 	}
 	static class UWBP_Race_AirTrickText_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_AirTrickText_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_AirTrickText_C) == 0x000008, "Wrong alignment on UWBP_Race_AirTrickText_C");
-static_assert(sizeof(UWBP_Race_AirTrickText_C) == 0x0003A8, "Wrong size on UWBP_Race_AirTrickText_C");
-static_assert(offsetof(UWBP_Race_AirTrickText_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Race_AirTrickText_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_AirTrickText_C, AirTrick_InOut) == 0x0002E8, "Member 'UWBP_Race_AirTrickText_C::AirTrick_InOut' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_AirTrickText_C, HorizontalBox_Tex_01) == 0x0002F0, "Member 'UWBP_Race_AirTrickText_C::HorizontalBox_Tex_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_AirTrickText_C, HorizontalBox_Tex_02) == 0x0002F8, "Member 'UWBP_Race_AirTrickText_C::HorizontalBox_Tex_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_AirTrickText_C, HorizontalBox_Tex_03) == 0x000300, "Member 'UWBP_Race_AirTrickText_C::HorizontalBox_Tex_03' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_AirTrickText_C, NUM_Tex_01_100) == 0x000308, "Member 'UWBP_Race_AirTrickText_C::NUM_Tex_01_100' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_AirTrickText_C, NUM_Tex_01_001) == 0x000310, "Member 'UWBP_Race_AirTrickText_C::NUM_Tex_01_001' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_AirTrickText_C, NUM_Tex_01_010) == 0x000318, "Member 'UWBP_Race_AirTrickText_C::NUM_Tex_01_010' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_AirTrickText_C, NUM_Tex_01_unit) == 0x000320, "Member 'UWBP_Race_AirTrickText_C::NUM_Tex_01_unit' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_AirTrickText_C, NUM_Tex_02_100) == 0x000328, "Member 'UWBP_Race_AirTrickText_C::NUM_Tex_02_100' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_AirTrickText_C, NUM_Tex_02_001) == 0x000330, "Member 'UWBP_Race_AirTrickText_C::NUM_Tex_02_001' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_AirTrickText_C, NUM_Tex_02_010) == 0x000338, "Member 'UWBP_Race_AirTrickText_C::NUM_Tex_02_010' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_AirTrickText_C, NUM_Tex_02_uni) == 0x000340, "Member 'UWBP_Race_AirTrickText_C::NUM_Tex_02_uni' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_AirTrickText_C, NUM_Tex_03_1000) == 0x000348, "Member 'UWBP_Race_AirTrickText_C::NUM_Tex_03_1000' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_AirTrickText_C, NUM_Tex_03_0001) == 0x000350, "Member 'UWBP_Race_AirTrickText_C::NUM_Tex_03_0001' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_AirTrickText_C, NUM_Tex_03_0010) == 0x000358, "Member 'UWBP_Race_AirTrickText_C::NUM_Tex_03_0010' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_AirTrickText_C, NUM_Tex_03_0100) == 0x000360, "Member 'UWBP_Race_AirTrickText_C::NUM_Tex_03_0100' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_AirTrickText_C, NUM_Tex_03_unit) == 0x000368, "Member 'UWBP_Race_AirTrickText_C::NUM_Tex_03_unit' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_AirTrickText_C, CurrentIndex) == 0x000370, "Member 'UWBP_Race_AirTrickText_C::CurrentIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_AirTrickText_C, AirTrickTextString) == 0x000378, "Member 'UWBP_Race_AirTrickText_C::AirTrickTextString' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_AirTrickText_C, AirTrickText) == 0x000388, "Member 'UWBP_Race_AirTrickText_C::AirTrickText' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_AirTrickText_C, TempHorizonBox) == 0x000398, "Member 'UWBP_Race_AirTrickText_C::TempHorizonBox' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_AirTrickText_C, IsPlaying) == 0x0003A0, "Member 'UWBP_Race_AirTrickText_C::IsPlaying' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_AirTrickText_C;
 
 }
 

@@ -27,17 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GrandPrixTips_Sub_BG_Yellow_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GrandPrixTips_Sub_BG_Yellow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GrandPrixTips_Sub_BG_Yellow_C")
 	}
 	static class UWBP_GrandPrixTips_Sub_BG_Yellow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GrandPrixTips_Sub_BG_Yellow_C>();
 	}
 };
-static_assert(alignof(UWBP_GrandPrixTips_Sub_BG_Yellow_C) == 0x000008, "Wrong alignment on UWBP_GrandPrixTips_Sub_BG_Yellow_C");
-static_assert(sizeof(UWBP_GrandPrixTips_Sub_BG_Yellow_C) == 0x0002F0, "Wrong size on UWBP_GrandPrixTips_Sub_BG_Yellow_C");
-static_assert(offsetof(UWBP_GrandPrixTips_Sub_BG_Yellow_C, BG_Blue) == 0x0002E0, "Member 'UWBP_GrandPrixTips_Sub_BG_Yellow_C::BG_Blue' has a wrong offset!");
-static_assert(offsetof(UWBP_GrandPrixTips_Sub_BG_Yellow_C, YellowLine_Right_5) == 0x0002E8, "Member 'UWBP_GrandPrixTips_Sub_BG_Yellow_C::YellowLine_Right_5' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GrandPrixTips_Sub_BG_Yellow_C;
 
 }
 

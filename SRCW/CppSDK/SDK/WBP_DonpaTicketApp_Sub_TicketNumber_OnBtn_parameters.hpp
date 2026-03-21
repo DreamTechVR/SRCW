@@ -25,12 +25,7 @@ public:
 	class FText                                   K2Node_CustomEvent_Current;                        // 0x0010(0x0010)()
 	class FText                                   K2Node_CustomEvent_After;                          // 0x0020(0x0010)()
 };
-static_assert(alignof(WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C_ExecuteUbergraph_WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn) == 0x000008, "Wrong alignment on WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C_ExecuteUbergraph_WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn");
-static_assert(sizeof(WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C_ExecuteUbergraph_WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn) == 0x000030, "Wrong size on WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C_ExecuteUbergraph_WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn");
-static_assert(offsetof(WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C_ExecuteUbergraph_WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn, EntryPoint) == 0x000000, "Member 'WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C_ExecuteUbergraph_WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C_ExecuteUbergraph_WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C_ExecuteUbergraph_WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C_ExecuteUbergraph_WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn, K2Node_CustomEvent_Current) == 0x000010, "Member 'WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C_ExecuteUbergraph_WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn::K2Node_CustomEvent_Current' has a wrong offset!");
-static_assert(offsetof(WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C_ExecuteUbergraph_WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn, K2Node_CustomEvent_After) == 0x000020, "Member 'WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C_ExecuteUbergraph_WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn::K2Node_CustomEvent_After' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C_ExecuteUbergraph_WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn;
 
 // Function WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn.WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C.SetTicketCount
 // 0x0020 (0x0020 - 0x0000)
@@ -40,10 +35,7 @@ public:
 	class FText                                   Current;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 	class FText                                   After;                                             // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C_SetTicketCount) == 0x000008, "Wrong alignment on WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C_SetTicketCount");
-static_assert(sizeof(WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C_SetTicketCount) == 0x000020, "Wrong size on WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C_SetTicketCount");
-static_assert(offsetof(WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C_SetTicketCount, Current) == 0x000000, "Member 'WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C_SetTicketCount::Current' has a wrong offset!");
-static_assert(offsetof(WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C_SetTicketCount, After) == 0x000010, "Member 'WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C_SetTicketCount::After' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C_SetTicketCount;
 
 }
 

@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "UnionUI_structs.hpp"
+#include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UMG_structs.hpp"
-#include "UnionSystem_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK::Params
@@ -57,35 +57,7 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x008A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x008B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile) == 0x000008, "Wrong alignment on BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile");
-static_assert(sizeof(BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile) == 0x000090, "Wrong size on BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile");
-static_assert(offsetof(BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile, EntryPoint) == 0x000000, "Member 'BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile, Temp_bool_Variable) == 0x000004, "Member 'BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile, CallFunc_GetPlayerController_ReturnValue) == 0x000008, "Member 'BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile, K2Node_CustomEvent_bIsLeftInput) == 0x000011, "Member 'BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile::K2Node_CustomEvent_bIsLeftInput' has a wrong offset!");
-static_assert(offsetof(BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile, CallFunc_GetLobbyPlayerIndex_ReturnValue) == 0x000014, "Member 'BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile::CallFunc_GetLobbyPlayerIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile, K2Node_Event_MoveType) == 0x000018, "Member 'BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile::K2Node_Event_MoveType' has a wrong offset!");
-static_assert(offsetof(BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000019, "Member 'BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x00001A, "Member 'BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x00001B, "Member 'BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile, CallFunc_IsValid_ReturnValue_1) == 0x00001C, "Member 'BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile, CallFunc_SoundPlay_ReturnValue) == 0x000020, "Member 'BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile, CallFunc_GetUserNiceCount_ReturnValue) == 0x000024, "Member 'BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile::CallFunc_GetUserNiceCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile, CallFunc_SoundPlay_ReturnValue_1) == 0x000028, "Member 'BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile, CallFunc_Not_PreBool_ReturnValue) == 0x00002C, "Member 'BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile, CallFunc_BooleanAND_ReturnValue) == 0x00002D, "Member 'BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile, K2Node_CreateDelegate_OutputDelegate) == 0x000030, "Member 'BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile, K2Node_CreateDelegate_OutputDelegate_1) == 0x000040, "Member 'BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile, K2Node_CreateDelegate_OutputDelegate_2) == 0x000050, "Member 'BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile, K2Node_Event_InState) == 0x000060, "Member 'BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile::K2Node_Event_InState' has a wrong offset!");
-static_assert(offsetof(BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile, CallFunc_Create_ReturnValue) == 0x000068, "Member 'BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile, K2Node_CreateDelegate_OutputDelegate_3) == 0x000070, "Member 'BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile, CallFunc_Create_ReturnValue_1) == 0x000080, "Member 'BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile::CallFunc_Create_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile, CallFunc_IsValid_ReturnValue_2) == 0x000088, "Member 'BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile, Temp_byte_Variable) == 0x000089, "Member 'BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile, Temp_byte_Variable_1) == 0x00008A, "Member 'BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile, K2Node_Select_Default) == 0x00008B, "Member 'BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_PlayerProfile_C_ExecuteUbergraph_BPC_PlayerProfile;
 
 // Function BPC_PlayerProfile.BPC_PlayerProfile_C.OnPlayerProfileCameraMoveEndEvent
 // 0x0001 (0x0001 - 0x0000)
@@ -94,9 +66,7 @@ struct BPC_PlayerProfile_C_OnPlayerProfileCameraMoveEndEvent final
 public:
 	ELobbyCameraMoveType                          MoveType;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_PlayerProfile_C_OnPlayerProfileCameraMoveEndEvent) == 0x000001, "Wrong alignment on BPC_PlayerProfile_C_OnPlayerProfileCameraMoveEndEvent");
-static_assert(sizeof(BPC_PlayerProfile_C_OnPlayerProfileCameraMoveEndEvent) == 0x000001, "Wrong size on BPC_PlayerProfile_C_OnPlayerProfileCameraMoveEndEvent");
-static_assert(offsetof(BPC_PlayerProfile_C_OnPlayerProfileCameraMoveEndEvent, MoveType) == 0x000000, "Member 'BPC_PlayerProfile_C_OnPlayerProfileCameraMoveEndEvent::MoveType' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_PlayerProfile_C_OnPlayerProfileCameraMoveEndEvent;
 
 // Function BPC_PlayerProfile.BPC_PlayerProfile_C.OnPressedNextPlayer
 // 0x0001 (0x0001 - 0x0000)
@@ -105,9 +75,7 @@ struct BPC_PlayerProfile_C_OnPressedNextPlayer final
 public:
 	bool                                          bIsLeftInput;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_PlayerProfile_C_OnPressedNextPlayer) == 0x000001, "Wrong alignment on BPC_PlayerProfile_C_OnPressedNextPlayer");
-static_assert(sizeof(BPC_PlayerProfile_C_OnPressedNextPlayer) == 0x000001, "Wrong size on BPC_PlayerProfile_C_OnPressedNextPlayer");
-static_assert(offsetof(BPC_PlayerProfile_C_OnPressedNextPlayer, bIsLeftInput) == 0x000000, "Member 'BPC_PlayerProfile_C_OnPressedNextPlayer::bIsLeftInput' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_PlayerProfile_C_OnPressedNextPlayer;
 
 // Function BPC_PlayerProfile.BPC_PlayerProfile_C.SetNextMenuSequenceSubState
 // 0x0001 (0x0001 - 0x0000)
@@ -116,9 +84,7 @@ struct BPC_PlayerProfile_C_SetNextMenuSequenceSubState final
 public:
 	EMenuSequenceSubState                         InState;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_PlayerProfile_C_SetNextMenuSequenceSubState) == 0x000001, "Wrong alignment on BPC_PlayerProfile_C_SetNextMenuSequenceSubState");
-static_assert(sizeof(BPC_PlayerProfile_C_SetNextMenuSequenceSubState) == 0x000001, "Wrong size on BPC_PlayerProfile_C_SetNextMenuSequenceSubState");
-static_assert(offsetof(BPC_PlayerProfile_C_SetNextMenuSequenceSubState, InState) == 0x000000, "Member 'BPC_PlayerProfile_C_SetNextMenuSequenceSubState::InState' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_PlayerProfile_C_SetNextMenuSequenceSubState;
 
 }
 

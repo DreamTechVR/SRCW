@@ -23,15 +23,18 @@ class URTD_UnionImageDecorator_3_C final : public UUnionRichTextBlockImageDecora
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RTD_UnionImageDecorator_3_C">();
+		BP_STATIC_CLASS_IMPL("RTD_UnionImageDecorator_3_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RTD_UnionImageDecorator_3_C")
 	}
 	static class URTD_UnionImageDecorator_3_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URTD_UnionImageDecorator_3_C>();
 	}
 };
-static_assert(alignof(URTD_UnionImageDecorator_3_C) == 0x000008, "Wrong alignment on URTD_UnionImageDecorator_3_C");
-static_assert(sizeof(URTD_UnionImageDecorator_3_C) == 0x000040, "Wrong size on URTD_UnionImageDecorator_3_C");
+DUMPER7_ASSERTS_URTD_UnionImageDecorator_3_C;
 
 }
 

@@ -24,10 +24,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCutom_M2_Div_C_ExecuteUbergraph_WBP_GadgetCutom_M2_Div) == 0x000004, "Wrong alignment on WBP_GadgetCutom_M2_Div_C_ExecuteUbergraph_WBP_GadgetCutom_M2_Div");
-static_assert(sizeof(WBP_GadgetCutom_M2_Div_C_ExecuteUbergraph_WBP_GadgetCutom_M2_Div) == 0x000008, "Wrong size on WBP_GadgetCutom_M2_Div_C_ExecuteUbergraph_WBP_GadgetCutom_M2_Div");
-static_assert(offsetof(WBP_GadgetCutom_M2_Div_C_ExecuteUbergraph_WBP_GadgetCutom_M2_Div, EntryPoint) == 0x000000, "Member 'WBP_GadgetCutom_M2_Div_C_ExecuteUbergraph_WBP_GadgetCutom_M2_Div::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCutom_M2_Div_C_ExecuteUbergraph_WBP_GadgetCutom_M2_Div, K2Node_Event_IsDesignTime) == 0x000004, "Member 'WBP_GadgetCutom_M2_Div_C_ExecuteUbergraph_WBP_GadgetCutom_M2_Div::K2Node_Event_IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCutom_M2_Div_C_ExecuteUbergraph_WBP_GadgetCutom_M2_Div;
 
 // Function WBP_GadgetCutom_M2_Div.WBP_GadgetCutom_M2_Div_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -36,9 +33,7 @@ struct WBP_GadgetCutom_M2_Div_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCutom_M2_Div_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_GadgetCutom_M2_Div_C_PreConstruct");
-static_assert(sizeof(WBP_GadgetCutom_M2_Div_C_PreConstruct) == 0x000001, "Wrong size on WBP_GadgetCutom_M2_Div_C_PreConstruct");
-static_assert(offsetof(WBP_GadgetCutom_M2_Div_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_GadgetCutom_M2_Div_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCutom_M2_Div_C_PreConstruct;
 
 // Function WBP_GadgetCutom_M2_Div.WBP_GadgetCutom_M2_Div_C.Setup
 // 0x0068 (0x0068 - 0x0000)
@@ -61,19 +56,7 @@ public:
 	uint8                                         Pad_5D[0x3];                                       // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCutom_M2_Div_C_Setup) == 0x000008, "Wrong alignment on WBP_GadgetCutom_M2_Div_C_Setup");
-static_assert(sizeof(WBP_GadgetCutom_M2_Div_C_Setup) == 0x000068, "Wrong size on WBP_GadgetCutom_M2_Div_C_Setup");
-static_assert(offsetof(WBP_GadgetCutom_M2_Div_C_Setup, InWindowData) == 0x000000, "Member 'WBP_GadgetCutom_M2_Div_C_Setup::InWindowData' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCutom_M2_Div_C_Setup, bInFestaSpecialRule) == 0x000004, "Member 'WBP_GadgetCutom_M2_Div_C_Setup::bInFestaSpecialRule' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCutom_M2_Div_C_Setup, Temp_int_Array_Index_Variable) == 0x000008, "Member 'WBP_GadgetCutom_M2_Div_C_Setup::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCutom_M2_Div_C_Setup, K2Node_MakeArray_Array) == 0x000010, "Member 'WBP_GadgetCutom_M2_Div_C_Setup::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCutom_M2_Div_C_Setup, K2Node_MakeStruct_GadgetSelectWindowData) == 0x000020, "Member 'WBP_GadgetCutom_M2_Div_C_Setup::K2Node_MakeStruct_GadgetSelectWindowData' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCutom_M2_Div_C_Setup, Temp_int_Loop_Counter_Variable) == 0x000038, "Member 'WBP_GadgetCutom_M2_Div_C_Setup::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCutom_M2_Div_C_Setup, K2Node_MakeArray_Array_1) == 0x000040, "Member 'WBP_GadgetCutom_M2_Div_C_Setup::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCutom_M2_Div_C_Setup, CallFunc_Array_Get_Item) == 0x000050, "Member 'WBP_GadgetCutom_M2_Div_C_Setup::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCutom_M2_Div_C_Setup, CallFunc_Array_Length_ReturnValue) == 0x000058, "Member 'WBP_GadgetCutom_M2_Div_C_Setup::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCutom_M2_Div_C_Setup, CallFunc_Less_IntInt_ReturnValue) == 0x00005C, "Member 'WBP_GadgetCutom_M2_Div_C_Setup::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCutom_M2_Div_C_Setup, CallFunc_Add_IntInt_ReturnValue) == 0x000060, "Member 'WBP_GadgetCutom_M2_Div_C_Setup::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCutom_M2_Div_C_Setup;
 
 // Function WBP_GadgetCutom_M2_Div.WBP_GadgetCutom_M2_Div_C.GetCharaNameBoxes
 // 0x0020 (0x0020 - 0x0000)
@@ -83,10 +66,7 @@ public:
 	TArray<class UUnionRichTextBlock*>            OutCharaNameBoxes;                                 // 0x0000(0x0010)(Parm, OutParm, ContainsInstancedReference)
 	TArray<class UUnionRichTextBlock*>            K2Node_MakeArray_Array;                            // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(WBP_GadgetCutom_M2_Div_C_GetCharaNameBoxes) == 0x000008, "Wrong alignment on WBP_GadgetCutom_M2_Div_C_GetCharaNameBoxes");
-static_assert(sizeof(WBP_GadgetCutom_M2_Div_C_GetCharaNameBoxes) == 0x000020, "Wrong size on WBP_GadgetCutom_M2_Div_C_GetCharaNameBoxes");
-static_assert(offsetof(WBP_GadgetCutom_M2_Div_C_GetCharaNameBoxes, OutCharaNameBoxes) == 0x000000, "Member 'WBP_GadgetCutom_M2_Div_C_GetCharaNameBoxes::OutCharaNameBoxes' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCutom_M2_Div_C_GetCharaNameBoxes, K2Node_MakeArray_Array) == 0x000010, "Member 'WBP_GadgetCutom_M2_Div_C_GetCharaNameBoxes::K2Node_MakeArray_Array' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCutom_M2_Div_C_GetCharaNameBoxes;
 
 // Function WBP_GadgetCutom_M2_Div.WBP_GadgetCutom_M2_Div_C.GetDetailWindows
 // 0x0020 (0x0020 - 0x0000)
@@ -96,10 +76,7 @@ public:
 	TArray<class UGadgetDetailWindow*>            OutDetailWindows;                                  // 0x0000(0x0010)(Parm, OutParm, ContainsInstancedReference)
 	TArray<class UGadgetDetailWindow*>            K2Node_MakeArray_Array;                            // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(WBP_GadgetCutom_M2_Div_C_GetDetailWindows) == 0x000008, "Wrong alignment on WBP_GadgetCutom_M2_Div_C_GetDetailWindows");
-static_assert(sizeof(WBP_GadgetCutom_M2_Div_C_GetDetailWindows) == 0x000020, "Wrong size on WBP_GadgetCutom_M2_Div_C_GetDetailWindows");
-static_assert(offsetof(WBP_GadgetCutom_M2_Div_C_GetDetailWindows, OutDetailWindows) == 0x000000, "Member 'WBP_GadgetCutom_M2_Div_C_GetDetailWindows::OutDetailWindows' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCutom_M2_Div_C_GetDetailWindows, K2Node_MakeArray_Array) == 0x000010, "Member 'WBP_GadgetCutom_M2_Div_C_GetDetailWindows::K2Node_MakeArray_Array' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCutom_M2_Div_C_GetDetailWindows;
 
 // Function WBP_GadgetCutom_M2_Div.WBP_GadgetCutom_M2_Div_C.GetGadgetCustomWindows
 // 0x0020 (0x0020 - 0x0000)
@@ -109,10 +86,7 @@ public:
 	TArray<class UGadgetCustomWindow*>            OutGadgetCustomWindows;                            // 0x0000(0x0010)(Parm, OutParm, ContainsInstancedReference)
 	TArray<class UGadgetCustomWindow*>            K2Node_MakeArray_Array;                            // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(WBP_GadgetCutom_M2_Div_C_GetGadgetCustomWindows) == 0x000008, "Wrong alignment on WBP_GadgetCutom_M2_Div_C_GetGadgetCustomWindows");
-static_assert(sizeof(WBP_GadgetCutom_M2_Div_C_GetGadgetCustomWindows) == 0x000020, "Wrong size on WBP_GadgetCutom_M2_Div_C_GetGadgetCustomWindows");
-static_assert(offsetof(WBP_GadgetCutom_M2_Div_C_GetGadgetCustomWindows, OutGadgetCustomWindows) == 0x000000, "Member 'WBP_GadgetCutom_M2_Div_C_GetGadgetCustomWindows::OutGadgetCustomWindows' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCutom_M2_Div_C_GetGadgetCustomWindows, K2Node_MakeArray_Array) == 0x000010, "Member 'WBP_GadgetCutom_M2_Div_C_GetGadgetCustomWindows::K2Node_MakeArray_Array' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCutom_M2_Div_C_GetGadgetCustomWindows;
 
 // Function WBP_GadgetCutom_M2_Div.WBP_GadgetCutom_M2_Div_C.GetmachineParameterWindows
 // 0x0020 (0x0020 - 0x0000)
@@ -122,10 +96,7 @@ public:
 	TArray<class UCharaMachineParamWindow*>       OutMachineParameterWindows;                        // 0x0000(0x0010)(Parm, OutParm, ContainsInstancedReference)
 	TArray<class UCharaMachineParamWindow*>       K2Node_MakeArray_Array;                            // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(WBP_GadgetCutom_M2_Div_C_GetmachineParameterWindows) == 0x000008, "Wrong alignment on WBP_GadgetCutom_M2_Div_C_GetmachineParameterWindows");
-static_assert(sizeof(WBP_GadgetCutom_M2_Div_C_GetmachineParameterWindows) == 0x000020, "Wrong size on WBP_GadgetCutom_M2_Div_C_GetmachineParameterWindows");
-static_assert(offsetof(WBP_GadgetCutom_M2_Div_C_GetmachineParameterWindows, OutMachineParameterWindows) == 0x000000, "Member 'WBP_GadgetCutom_M2_Div_C_GetmachineParameterWindows::OutMachineParameterWindows' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCutom_M2_Div_C_GetmachineParameterWindows, K2Node_MakeArray_Array) == 0x000010, "Member 'WBP_GadgetCutom_M2_Div_C_GetmachineParameterWindows::K2Node_MakeArray_Array' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCutom_M2_Div_C_GetmachineParameterWindows;
 
 // Function WBP_GadgetCutom_M2_Div.WBP_GadgetCutom_M2_Div_C.GetPlateWindows
 // 0x0020 (0x0020 - 0x0000)
@@ -135,10 +106,7 @@ public:
 	TArray<class UGadgetPlateWindow*>             OutPlateWindows;                                   // 0x0000(0x0010)(Parm, OutParm, ContainsInstancedReference)
 	TArray<class UGadgetPlateWindow*>             K2Node_MakeArray_Array;                            // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(WBP_GadgetCutom_M2_Div_C_GetPlateWindows) == 0x000008, "Wrong alignment on WBP_GadgetCutom_M2_Div_C_GetPlateWindows");
-static_assert(sizeof(WBP_GadgetCutom_M2_Div_C_GetPlateWindows) == 0x000020, "Wrong size on WBP_GadgetCutom_M2_Div_C_GetPlateWindows");
-static_assert(offsetof(WBP_GadgetCutom_M2_Div_C_GetPlateWindows, OutPlateWindows) == 0x000000, "Member 'WBP_GadgetCutom_M2_Div_C_GetPlateWindows::OutPlateWindows' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCutom_M2_Div_C_GetPlateWindows, K2Node_MakeArray_Array) == 0x000010, "Member 'WBP_GadgetCutom_M2_Div_C_GetPlateWindows::K2Node_MakeArray_Array' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCutom_M2_Div_C_GetPlateWindows;
 
 // Function WBP_GadgetCutom_M2_Div.WBP_GadgetCutom_M2_Div_C.GetTicketBox
 // 0x0008 (0x0008 - 0x0000)
@@ -147,9 +115,7 @@ struct WBP_GadgetCutom_M2_Div_C_GetTicketBox final
 public:
 	class UCommonCountNumberWidget*               ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCutom_M2_Div_C_GetTicketBox) == 0x000008, "Wrong alignment on WBP_GadgetCutom_M2_Div_C_GetTicketBox");
-static_assert(sizeof(WBP_GadgetCutom_M2_Div_C_GetTicketBox) == 0x000008, "Wrong size on WBP_GadgetCutom_M2_Div_C_GetTicketBox");
-static_assert(offsetof(WBP_GadgetCutom_M2_Div_C_GetTicketBox, ReturnValue) == 0x000000, "Member 'WBP_GadgetCutom_M2_Div_C_GetTicketBox::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCutom_M2_Div_C_GetTicketBox;
 
 }
 

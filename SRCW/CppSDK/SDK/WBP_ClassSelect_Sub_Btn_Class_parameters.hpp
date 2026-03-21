@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UMG_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK::Params
@@ -66,47 +66,7 @@ public:
 	int32                                         K2Node_CustomEvent_MedalCount;                     // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_CustomEvent_MedalMax;                       // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class) == 0x000008, "Wrong alignment on WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class");
-static_assert(sizeof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class) == 0x0000E0, "Wrong size on WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, EntryPoint) == 0x000000, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, Temp_byte_Variable) == 0x000004, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, Temp_byte_Variable_1) == 0x000005, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, Temp_bool_Variable) == 0x000006, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, Temp_byte_Variable_2) == 0x000007, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, Temp_byte_Variable_3) == 0x000008, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, Temp_bool_Variable_1) == 0x000009, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, Temp_byte_Variable_4) == 0x00000A, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, Temp_byte_Variable_5) == 0x00000B, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, Temp_bool_Variable_2) == 0x00000C, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, Temp_byte_Variable_6) == 0x00000D, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::Temp_byte_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, Temp_byte_Variable_7) == 0x00000E, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::Temp_byte_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, Temp_byte_Variable_8) == 0x00000F, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::Temp_byte_Variable_8' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, K2Node_Select_Default) == 0x000010, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, K2Node_Select_Default_1) == 0x000011, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, K2Node_CreateDelegate_OutputDelegate) == 0x000014, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, K2Node_CreateDelegate_OutputDelegate_1) == 0x000024, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, K2Node_CreateDelegate_OutputDelegate_2) == 0x000034, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, Temp_bool_Variable_3) == 0x000044, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, K2Node_Select_Default_2) == 0x000045, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, K2Node_CustomEvent_bLock) == 0x000046, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::K2Node_CustomEvent_bLock' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, K2Node_Event_InComplete) == 0x000047, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::K2Node_Event_InComplete' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, K2Node_CustomEvent_Current) == 0x000048, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::K2Node_CustomEvent_Current' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, K2Node_CustomEvent_Max) == 0x00004C, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::K2Node_CustomEvent_Max' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, K2Node_Select_Default_3) == 0x000050, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, K2Node_Event_InMenuSpeedClass) == 0x000051, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::K2Node_Event_InMenuSpeedClass' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000054, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, K2Node_CustomEvent_Button_2) == 0x000058, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::K2Node_CustomEvent_Button_2' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, K2Node_CustomEvent_Button_1) == 0x000060, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::K2Node_CustomEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, CallFunc_MakeLiteralText_ReturnValue) == 0x000068, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, K2Node_Event_IsDesignTime) == 0x000078, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, CallFunc_MakeLiteralText_ReturnValue_1) == 0x000080, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, CallFunc_MakeLiteralText_ReturnValue_2) == 0x000090, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::CallFunc_MakeLiteralText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, CallFunc_MakeLiteralText_ReturnValue_3) == 0x0000A0, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::CallFunc_MakeLiteralText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, CallFunc_MakeLiteralText_ReturnValue_4) == 0x0000B0, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::CallFunc_MakeLiteralText_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, K2Node_CustomEvent_Button) == 0x0000C0, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, K2Node_Select_Default_4) == 0x0000C8, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, K2Node_CustomEvent_MedalCount) == 0x0000D8, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::K2Node_CustomEvent_MedalCount' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class, K2Node_CustomEvent_MedalMax) == 0x0000DC, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class::K2Node_CustomEvent_MedalMax' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ClassSelect_Sub_Btn_Class_C_ExecuteUbergraph_WBP_ClassSelect_Sub_Btn_Class;
 
 // Function WBP_ClassSelect_Sub_Btn_Class.WBP_ClassSelect_Sub_Btn_Class_C.OnDecidedEvent_Event
 // 0x0008 (0x0008 - 0x0000)
@@ -115,9 +75,7 @@ struct WBP_ClassSelect_Sub_Btn_Class_C_OnDecidedEvent_Event final
 public:
 	class UUnionUIButtonBaseCore*                 Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ClassSelect_Sub_Btn_Class_C_OnDecidedEvent_Event) == 0x000008, "Wrong alignment on WBP_ClassSelect_Sub_Btn_Class_C_OnDecidedEvent_Event");
-static_assert(sizeof(WBP_ClassSelect_Sub_Btn_Class_C_OnDecidedEvent_Event) == 0x000008, "Wrong size on WBP_ClassSelect_Sub_Btn_Class_C_OnDecidedEvent_Event");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_OnDecidedEvent_Event, Button) == 0x000000, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_OnDecidedEvent_Event::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ClassSelect_Sub_Btn_Class_C_OnDecidedEvent_Event;
 
 // Function WBP_ClassSelect_Sub_Btn_Class.WBP_ClassSelect_Sub_Btn_Class_C.OnDeselectedEvent_Event
 // 0x0008 (0x0008 - 0x0000)
@@ -126,9 +84,7 @@ struct WBP_ClassSelect_Sub_Btn_Class_C_OnDeselectedEvent_Event final
 public:
 	class UUnionUIButtonBaseCore*                 Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ClassSelect_Sub_Btn_Class_C_OnDeselectedEvent_Event) == 0x000008, "Wrong alignment on WBP_ClassSelect_Sub_Btn_Class_C_OnDeselectedEvent_Event");
-static_assert(sizeof(WBP_ClassSelect_Sub_Btn_Class_C_OnDeselectedEvent_Event) == 0x000008, "Wrong size on WBP_ClassSelect_Sub_Btn_Class_C_OnDeselectedEvent_Event");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_OnDeselectedEvent_Event, Button) == 0x000000, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_OnDeselectedEvent_Event::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ClassSelect_Sub_Btn_Class_C_OnDeselectedEvent_Event;
 
 // Function WBP_ClassSelect_Sub_Btn_Class.WBP_ClassSelect_Sub_Btn_Class_C.OnSelectedEvent_Event
 // 0x0008 (0x0008 - 0x0000)
@@ -137,9 +93,7 @@ struct WBP_ClassSelect_Sub_Btn_Class_C_OnSelectedEvent_Event final
 public:
 	class UUnionUIButtonBaseCore*                 Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ClassSelect_Sub_Btn_Class_C_OnSelectedEvent_Event) == 0x000008, "Wrong alignment on WBP_ClassSelect_Sub_Btn_Class_C_OnSelectedEvent_Event");
-static_assert(sizeof(WBP_ClassSelect_Sub_Btn_Class_C_OnSelectedEvent_Event) == 0x000008, "Wrong size on WBP_ClassSelect_Sub_Btn_Class_C_OnSelectedEvent_Event");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_OnSelectedEvent_Event, Button) == 0x000000, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_OnSelectedEvent_Event::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ClassSelect_Sub_Btn_Class_C_OnSelectedEvent_Event;
 
 // Function WBP_ClassSelect_Sub_Btn_Class.WBP_ClassSelect_Sub_Btn_Class_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -148,9 +102,7 @@ struct WBP_ClassSelect_Sub_Btn_Class_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ClassSelect_Sub_Btn_Class_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_ClassSelect_Sub_Btn_Class_C_PreConstruct");
-static_assert(sizeof(WBP_ClassSelect_Sub_Btn_Class_C_PreConstruct) == 0x000001, "Wrong size on WBP_ClassSelect_Sub_Btn_Class_C_PreConstruct");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ClassSelect_Sub_Btn_Class_C_PreConstruct;
 
 // Function WBP_ClassSelect_Sub_Btn_Class.WBP_ClassSelect_Sub_Btn_Class_C.SetComplete
 // 0x0001 (0x0001 - 0x0000)
@@ -159,9 +111,7 @@ struct WBP_ClassSelect_Sub_Btn_Class_C_SetComplete final
 public:
 	bool                                          InComplete;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ClassSelect_Sub_Btn_Class_C_SetComplete) == 0x000001, "Wrong alignment on WBP_ClassSelect_Sub_Btn_Class_C_SetComplete");
-static_assert(sizeof(WBP_ClassSelect_Sub_Btn_Class_C_SetComplete) == 0x000001, "Wrong size on WBP_ClassSelect_Sub_Btn_Class_C_SetComplete");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_SetComplete, InComplete) == 0x000000, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_SetComplete::InComplete' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ClassSelect_Sub_Btn_Class_C_SetComplete;
 
 // Function WBP_ClassSelect_Sub_Btn_Class.WBP_ClassSelect_Sub_Btn_Class_C.SetCompleteCount
 // 0x0008 (0x0008 - 0x0000)
@@ -171,10 +121,7 @@ public:
 	int32                                         Current;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Max;                                               // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ClassSelect_Sub_Btn_Class_C_SetCompleteCount) == 0x000004, "Wrong alignment on WBP_ClassSelect_Sub_Btn_Class_C_SetCompleteCount");
-static_assert(sizeof(WBP_ClassSelect_Sub_Btn_Class_C_SetCompleteCount) == 0x000008, "Wrong size on WBP_ClassSelect_Sub_Btn_Class_C_SetCompleteCount");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_SetCompleteCount, Current) == 0x000000, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_SetCompleteCount::Current' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_SetCompleteCount, Max) == 0x000004, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_SetCompleteCount::Max' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ClassSelect_Sub_Btn_Class_C_SetCompleteCount;
 
 // Function WBP_ClassSelect_Sub_Btn_Class.WBP_ClassSelect_Sub_Btn_Class_C.SetLock
 // 0x0001 (0x0001 - 0x0000)
@@ -183,9 +130,7 @@ struct WBP_ClassSelect_Sub_Btn_Class_C_SetLock final
 public:
 	bool                                          bLock;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ClassSelect_Sub_Btn_Class_C_SetLock) == 0x000001, "Wrong alignment on WBP_ClassSelect_Sub_Btn_Class_C_SetLock");
-static_assert(sizeof(WBP_ClassSelect_Sub_Btn_Class_C_SetLock) == 0x000001, "Wrong size on WBP_ClassSelect_Sub_Btn_Class_C_SetLock");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_SetLock, bLock) == 0x000000, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_SetLock::bLock' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ClassSelect_Sub_Btn_Class_C_SetLock;
 
 // Function WBP_ClassSelect_Sub_Btn_Class.WBP_ClassSelect_Sub_Btn_Class_C.SetMenuSpeedClass
 // 0x0001 (0x0001 - 0x0000)
@@ -194,9 +139,7 @@ struct WBP_ClassSelect_Sub_Btn_Class_C_SetMenuSpeedClass final
 public:
 	EMenuSpeedClassId                             InMenuSpeedClass;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ClassSelect_Sub_Btn_Class_C_SetMenuSpeedClass) == 0x000001, "Wrong alignment on WBP_ClassSelect_Sub_Btn_Class_C_SetMenuSpeedClass");
-static_assert(sizeof(WBP_ClassSelect_Sub_Btn_Class_C_SetMenuSpeedClass) == 0x000001, "Wrong size on WBP_ClassSelect_Sub_Btn_Class_C_SetMenuSpeedClass");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_SetMenuSpeedClass, InMenuSpeedClass) == 0x000000, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_SetMenuSpeedClass::InMenuSpeedClass' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ClassSelect_Sub_Btn_Class_C_SetMenuSpeedClass;
 
 // Function WBP_ClassSelect_Sub_Btn_Class.WBP_ClassSelect_Sub_Btn_Class_C.SetTimeTrialMedalCount
 // 0x0008 (0x0008 - 0x0000)
@@ -206,10 +149,7 @@ public:
 	int32                                         MedalCount;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         MedalMax;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ClassSelect_Sub_Btn_Class_C_SetTimeTrialMedalCount) == 0x000004, "Wrong alignment on WBP_ClassSelect_Sub_Btn_Class_C_SetTimeTrialMedalCount");
-static_assert(sizeof(WBP_ClassSelect_Sub_Btn_Class_C_SetTimeTrialMedalCount) == 0x000008, "Wrong size on WBP_ClassSelect_Sub_Btn_Class_C_SetTimeTrialMedalCount");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_SetTimeTrialMedalCount, MedalCount) == 0x000000, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_SetTimeTrialMedalCount::MedalCount' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_Btn_Class_C_SetTimeTrialMedalCount, MedalMax) == 0x000004, "Member 'WBP_ClassSelect_Sub_Btn_Class_C_SetTimeTrialMedalCount::MedalMax' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ClassSelect_Sub_Btn_Class_C_SetTimeTrialMedalCount;
 
 }
 

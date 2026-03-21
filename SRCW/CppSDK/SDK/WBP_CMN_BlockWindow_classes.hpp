@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -115,28 +115,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_BlockWindow_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_BlockWindow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_BlockWindow_C")
 	}
 	static class UWBP_CMN_BlockWindow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_BlockWindow_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_BlockWindow_C) == 0x000008, "Wrong alignment on UWBP_CMN_BlockWindow_C");
-static_assert(sizeof(UWBP_CMN_BlockWindow_C) == 0x000570, "Wrong size on UWBP_CMN_BlockWindow_C");
-static_assert(offsetof(UWBP_CMN_BlockWindow_C, UberGraphFrame) == 0x000508, "Member 'UWBP_CMN_BlockWindow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_BlockWindow_C, Out) == 0x000510, "Member 'UWBP_CMN_BlockWindow_C::Out' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_BlockWindow_C, InLoop) == 0x000518, "Member 'UWBP_CMN_BlockWindow_C::InLoop' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_BlockWindow_C, base) == 0x000520, "Member 'UWBP_CMN_BlockWindow_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_BlockWindow_C, WBP_CMN_MainMenu_Btn_01) == 0x000528, "Member 'UWBP_CMN_BlockWindow_C::WBP_CMN_MainMenu_Btn_01' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_BlockWindow_C, WBP_CMN_MainMenu_Btn_02) == 0x000530, "Member 'UWBP_CMN_BlockWindow_C::WBP_CMN_MainMenu_Btn_02' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_BlockWindow_C, WBP_CMN_MainMenu_Btn_03) == 0x000538, "Member 'UWBP_CMN_BlockWindow_C::WBP_CMN_MainMenu_Btn_03' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_BlockWindow_C, WBP_CMN_MainMenu_Btn_04) == 0x000540, "Member 'UWBP_CMN_BlockWindow_C::WBP_CMN_MainMenu_Btn_04' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_BlockWindow_C, OnBlockWindowClosedEvent) == 0x000548, "Member 'UWBP_CMN_BlockWindow_C::OnBlockWindowClosedEvent' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_BlockWindow_C, DecisionCheckPopUp) == 0x000558, "Member 'UWBP_CMN_BlockWindow_C::DecisionCheckPopUp' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_BlockWindow_C, MessageBar) == 0x000560, "Member 'UWBP_CMN_BlockWindow_C::MessageBar' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_BlockWindow_C, bIsShowPopupAnimation) == 0x000568, "Member 'UWBP_CMN_BlockWindow_C::bIsShowPopupAnimation' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_BlockWindow_C, bIsBlocked) == 0x000569, "Member 'UWBP_CMN_BlockWindow_C::bIsBlocked' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_BlockWindow_C;
 
 }
 

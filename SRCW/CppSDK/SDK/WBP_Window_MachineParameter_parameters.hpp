@@ -26,11 +26,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Window_MachineParameter_C_ExecuteUbergraph_WBP_Window_MachineParameter) == 0x000008, "Wrong alignment on WBP_Window_MachineParameter_C_ExecuteUbergraph_WBP_Window_MachineParameter");
-static_assert(sizeof(WBP_Window_MachineParameter_C_ExecuteUbergraph_WBP_Window_MachineParameter) == 0x000018, "Wrong size on WBP_Window_MachineParameter_C_ExecuteUbergraph_WBP_Window_MachineParameter");
-static_assert(offsetof(WBP_Window_MachineParameter_C_ExecuteUbergraph_WBP_Window_MachineParameter, EntryPoint) == 0x000000, "Member 'WBP_Window_MachineParameter_C_ExecuteUbergraph_WBP_Window_MachineParameter::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Window_MachineParameter_C_ExecuteUbergraph_WBP_Window_MachineParameter, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_Window_MachineParameter_C_ExecuteUbergraph_WBP_Window_MachineParameter::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Window_MachineParameter_C_ExecuteUbergraph_WBP_Window_MachineParameter, K2Node_Event_IsDesignTime) == 0x000010, "Member 'WBP_Window_MachineParameter_C_ExecuteUbergraph_WBP_Window_MachineParameter::K2Node_Event_IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Window_MachineParameter_C_ExecuteUbergraph_WBP_Window_MachineParameter;
 
 // Function WBP_Window_MachineParameter.WBP_Window_MachineParameter_C.OnPlayAnimIn
 // 0x0008 (0x0008 - 0x0000)
@@ -39,9 +35,7 @@ struct WBP_Window_MachineParameter_C_OnPlayAnimIn final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Window_MachineParameter_C_OnPlayAnimIn) == 0x000008, "Wrong alignment on WBP_Window_MachineParameter_C_OnPlayAnimIn");
-static_assert(sizeof(WBP_Window_MachineParameter_C_OnPlayAnimIn) == 0x000008, "Wrong size on WBP_Window_MachineParameter_C_OnPlayAnimIn");
-static_assert(offsetof(WBP_Window_MachineParameter_C_OnPlayAnimIn, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_Window_MachineParameter_C_OnPlayAnimIn::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Window_MachineParameter_C_OnPlayAnimIn;
 
 // Function WBP_Window_MachineParameter.WBP_Window_MachineParameter_C.OnPlayAnimLoop
 // 0x0008 (0x0008 - 0x0000)
@@ -50,9 +44,7 @@ struct WBP_Window_MachineParameter_C_OnPlayAnimLoop final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Window_MachineParameter_C_OnPlayAnimLoop) == 0x000008, "Wrong alignment on WBP_Window_MachineParameter_C_OnPlayAnimLoop");
-static_assert(sizeof(WBP_Window_MachineParameter_C_OnPlayAnimLoop) == 0x000008, "Wrong size on WBP_Window_MachineParameter_C_OnPlayAnimLoop");
-static_assert(offsetof(WBP_Window_MachineParameter_C_OnPlayAnimLoop, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_Window_MachineParameter_C_OnPlayAnimLoop::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Window_MachineParameter_C_OnPlayAnimLoop;
 
 // Function WBP_Window_MachineParameter.WBP_Window_MachineParameter_C.OnPlayAnimOut
 // 0x0008 (0x0008 - 0x0000)
@@ -61,9 +53,7 @@ struct WBP_Window_MachineParameter_C_OnPlayAnimOut final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Window_MachineParameter_C_OnPlayAnimOut) == 0x000008, "Wrong alignment on WBP_Window_MachineParameter_C_OnPlayAnimOut");
-static_assert(sizeof(WBP_Window_MachineParameter_C_OnPlayAnimOut) == 0x000008, "Wrong size on WBP_Window_MachineParameter_C_OnPlayAnimOut");
-static_assert(offsetof(WBP_Window_MachineParameter_C_OnPlayAnimOut, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_Window_MachineParameter_C_OnPlayAnimOut::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Window_MachineParameter_C_OnPlayAnimOut;
 
 // Function WBP_Window_MachineParameter.WBP_Window_MachineParameter_C.OnPlaySE
 // 0x0004 (0x0004 - 0x0000)
@@ -72,9 +62,7 @@ struct WBP_Window_MachineParameter_C_OnPlaySE final
 public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0000(0x0004)()
 };
-static_assert(alignof(WBP_Window_MachineParameter_C_OnPlaySE) == 0x000004, "Wrong alignment on WBP_Window_MachineParameter_C_OnPlaySE");
-static_assert(sizeof(WBP_Window_MachineParameter_C_OnPlaySE) == 0x000004, "Wrong size on WBP_Window_MachineParameter_C_OnPlaySE");
-static_assert(offsetof(WBP_Window_MachineParameter_C_OnPlaySE, CallFunc_SoundPlay_ReturnValue) == 0x000000, "Member 'WBP_Window_MachineParameter_C_OnPlaySE::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Window_MachineParameter_C_OnPlaySE;
 
 // Function WBP_Window_MachineParameter.WBP_Window_MachineParameter_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -83,9 +71,7 @@ struct WBP_Window_MachineParameter_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Window_MachineParameter_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_Window_MachineParameter_C_PreConstruct");
-static_assert(sizeof(WBP_Window_MachineParameter_C_PreConstruct) == 0x000001, "Wrong size on WBP_Window_MachineParameter_C_PreConstruct");
-static_assert(offsetof(WBP_Window_MachineParameter_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_Window_MachineParameter_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Window_MachineParameter_C_PreConstruct;
 
 }
 

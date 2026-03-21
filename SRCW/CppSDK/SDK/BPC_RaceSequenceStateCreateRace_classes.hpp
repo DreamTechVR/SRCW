@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
+#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
 #include "UnionUI_structs.hpp"
-#include "UNION_classes.hpp"
 
 
 namespace SDK
@@ -41,19 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_RaceSequenceStateCreateRace_C">();
+		BP_STATIC_CLASS_IMPL("BPC_RaceSequenceStateCreateRace_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_RaceSequenceStateCreateRace_C")
 	}
 	static class UBPC_RaceSequenceStateCreateRace_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_RaceSequenceStateCreateRace_C>();
 	}
 };
-static_assert(alignof(UBPC_RaceSequenceStateCreateRace_C) == 0x000008, "Wrong alignment on UBPC_RaceSequenceStateCreateRace_C");
-static_assert(sizeof(UBPC_RaceSequenceStateCreateRace_C) == 0x000130, "Wrong size on UBPC_RaceSequenceStateCreateRace_C");
-static_assert(offsetof(UBPC_RaceSequenceStateCreateRace_C, UberGraphFrame) == 0x000110, "Member 'UBPC_RaceSequenceStateCreateRace_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateCreateRace_C, bDebugForcePlayIntroduceCourse_old) == 0x000118, "Member 'UBPC_RaceSequenceStateCreateRace_C::bDebugForcePlayIntroduceCourse_old' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateCreateRace_C, MinimumLoadTime) == 0x000120, "Member 'UBPC_RaceSequenceStateCreateRace_C::MinimumLoadTime' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateCreateRace_C, bIsNextEntryRacer) == 0x000128, "Member 'UBPC_RaceSequenceStateCreateRace_C::bIsNextEntryRacer' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_RaceSequenceStateCreateRace_C;
 
 }
 

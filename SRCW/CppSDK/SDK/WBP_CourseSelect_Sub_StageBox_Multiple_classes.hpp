@@ -65,30 +65,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CourseSelect_Sub_StageBox_Multiple_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CourseSelect_Sub_StageBox_Multiple_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CourseSelect_Sub_StageBox_Multiple_C")
 	}
 	static class UWBP_CourseSelect_Sub_StageBox_Multiple_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CourseSelect_Sub_StageBox_Multiple_C>();
 	}
 };
-static_assert(alignof(UWBP_CourseSelect_Sub_StageBox_Multiple_C) == 0x000008, "Wrong alignment on UWBP_CourseSelect_Sub_StageBox_Multiple_C");
-static_assert(sizeof(UWBP_CourseSelect_Sub_StageBox_Multiple_C) == 0x000550, "Wrong size on UWBP_CourseSelect_Sub_StageBox_Multiple_C");
-static_assert(offsetof(UWBP_CourseSelect_Sub_StageBox_Multiple_C, UberGraphFrame) == 0x0003D8, "Member 'UWBP_CourseSelect_Sub_StageBox_Multiple_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_StageBox_Multiple_C, WBP_CourseSelect_Sub_Thumbnail_01) == 0x0003E0, "Member 'UWBP_CourseSelect_Sub_StageBox_Multiple_C::WBP_CourseSelect_Sub_Thumbnail_01' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_StageBox_Multiple_C, WBP_CourseSelect_Sub_Thumbnail_02) == 0x0003E8, "Member 'UWBP_CourseSelect_Sub_StageBox_Multiple_C::WBP_CourseSelect_Sub_Thumbnail_02' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_StageBox_Multiple_C, WBP_CourseSelect_Sub_Thumbnail_03) == 0x0003F0, "Member 'UWBP_CourseSelect_Sub_StageBox_Multiple_C::WBP_CourseSelect_Sub_Thumbnail_03' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_StageBox_Multiple_C, Panel_Index) == 0x0003F8, "Member 'UWBP_CourseSelect_Sub_StageBox_Multiple_C::Panel_Index' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_StageBox_Multiple_C, CourseWidgetArr) == 0x000400, "Member 'UWBP_CourseSelect_Sub_StageBox_Multiple_C::CourseWidgetArr' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_StageBox_Multiple_C, FocusIndex) == 0x000410, "Member 'UWBP_CourseSelect_Sub_StageBox_Multiple_C::FocusIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_StageBox_Multiple_C, ButtonsPanel) == 0x000418, "Member 'UWBP_CourseSelect_Sub_StageBox_Multiple_C::ButtonsPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_StageBox_Multiple_C, ValidStageId) == 0x000420, "Member 'UWBP_CourseSelect_Sub_StageBox_Multiple_C::ValidStageId' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_StageBox_Multiple_C, CourseCompleteRate) == 0x000470, "Member 'UWBP_CourseSelect_Sub_StageBox_Multiple_C::CourseCompleteRate' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_StageBox_Multiple_C, Stage_Id_Tmb) == 0x0004C0, "Member 'UWBP_CourseSelect_Sub_StageBox_Multiple_C::Stage_Id_Tmb' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_StageBox_Multiple_C, OnFocusThumbnail) == 0x000510, "Member 'UWBP_CourseSelect_Sub_StageBox_Multiple_C::OnFocusThumbnail' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_StageBox_Multiple_C, OnDecide) == 0x000520, "Member 'UWBP_CourseSelect_Sub_StageBox_Multiple_C::OnDecide' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_StageBox_Multiple_C, OnCancel) == 0x000530, "Member 'UWBP_CourseSelect_Sub_StageBox_Multiple_C::OnCancel' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_StageBox_Multiple_C, OnNextPanelFocus) == 0x000540, "Member 'UWBP_CourseSelect_Sub_StageBox_Multiple_C::OnNextPanelFocus' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CourseSelect_Sub_StageBox_Multiple_C;
 
 }
 

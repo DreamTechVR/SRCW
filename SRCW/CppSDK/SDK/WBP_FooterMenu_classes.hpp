@@ -10,8 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
+#include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -45,16 +46,22 @@ public:
 	void BndEvt__WBP_FooterMenu_MouseInteraction_OK_K2Node_ComponentBoundEvent_5_OnButtonHoverEvent__DelegateSignature();
 	void BndEvt__WBP_FooterMenu_MouseInteraction_Sub_0_K2Node_ComponentBoundEvent_0_OnButtonPressedEvent__DelegateSignature();
 	void BndEvt__WBP_FooterMenu_MouseInteraction_Sub_0_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature();
+	void BndEvt__WBP_FooterMenu_MouseInteraction_Sub_0_K2Node_ComponentBoundEvent_4_OnButtonReleasedEvent__DelegateSignature();
 	void BndEvt__WBP_FooterMenu_MouseInteraction_Sub_1_K2Node_ComponentBoundEvent_2_OnButtonPressedEvent__DelegateSignature();
+	void BndEvt__WBP_FooterMenu_MouseInteraction_Sub_1_K2Node_ComponentBoundEvent_5_OnButtonReleasedEvent__DelegateSignature();
 	void BndEvt__WBP_FooterMenu_MouseInteraction_Sub_1_K2Node_ComponentBoundEvent_9_OnButtonHoverEvent__DelegateSignature();
 	void BndEvt__WBP_FooterMenu_MouseInteraction_Sub_2_K2Node_ComponentBoundEvent_10_OnButtonPressedEvent__DelegateSignature();
 	void BndEvt__WBP_FooterMenu_MouseInteraction_Sub_2_K2Node_ComponentBoundEvent_11_OnButtonHoverEvent__DelegateSignature();
+	void BndEvt__WBP_FooterMenu_MouseInteraction_Sub_2_K2Node_ComponentBoundEvent_6_OnButtonReleasedEvent__DelegateSignature();
 	void BndEvt__WBP_FooterMenu_MouseInteraction_Sub_3_K2Node_ComponentBoundEvent_12_OnButtonPressedEvent__DelegateSignature();
 	void BndEvt__WBP_FooterMenu_MouseInteraction_Sub_3_K2Node_ComponentBoundEvent_13_OnButtonHoverEvent__DelegateSignature();
+	void BndEvt__WBP_FooterMenu_MouseInteraction_Sub_3_K2Node_ComponentBoundEvent_7_OnButtonReleasedEvent__DelegateSignature();
 	void BndEvt__WBP_FooterMenu_MouseInteraction_Sub_4_K2Node_ComponentBoundEvent_14_OnButtonPressedEvent__DelegateSignature();
 	void BndEvt__WBP_FooterMenu_MouseInteraction_Sub_4_K2Node_ComponentBoundEvent_15_OnButtonHoverEvent__DelegateSignature();
+	void BndEvt__WBP_FooterMenu_MouseInteraction_Sub_4_K2Node_ComponentBoundEvent_8_OnButtonReleasedEvent__DelegateSignature();
 	void BndEvt__WBP_FooterMenu_MouseInteraction_Sub_5_K2Node_ComponentBoundEvent_16_OnButtonPressedEvent__DelegateSignature();
 	void BndEvt__WBP_FooterMenu_MouseInteraction_Sub_5_K2Node_ComponentBoundEvent_17_OnButtonHoverEvent__DelegateSignature();
+	void BndEvt__WBP_FooterMenu_MouseInteraction_Sub_5_K2Node_ComponentBoundEvent_18_OnButtonReleasedEvent__DelegateSignature();
 	void Construct();
 	void ExecuteUbergraph_WBP_FooterMenu(int32 EntryPoint);
 	void Hide();
@@ -67,28 +74,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_FooterMenu_C">();
+		BP_STATIC_CLASS_IMPL("WBP_FooterMenu_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_FooterMenu_C")
 	}
 	static class UWBP_FooterMenu_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_FooterMenu_C>();
 	}
 };
-static_assert(alignof(UWBP_FooterMenu_C) == 0x000008, "Wrong alignment on UWBP_FooterMenu_C");
-static_assert(sizeof(UWBP_FooterMenu_C) == 0x0003D8, "Wrong size on UWBP_FooterMenu_C");
-static_assert(offsetof(UWBP_FooterMenu_C, UberGraphFrame) == 0x000370, "Member 'UWBP_FooterMenu_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_FooterMenu_C, FooterMenu_Out) == 0x000378, "Member 'UWBP_FooterMenu_C::FooterMenu_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_FooterMenu_C, FooterMenu_Loop) == 0x000380, "Member 'UWBP_FooterMenu_C::FooterMenu_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_FooterMenu_C, FooterMenu_In) == 0x000388, "Member 'UWBP_FooterMenu_C::FooterMenu_In' has a wrong offset!");
-static_assert(offsetof(UWBP_FooterMenu_C, MouseInteraction_Cancel) == 0x000390, "Member 'UWBP_FooterMenu_C::MouseInteraction_Cancel' has a wrong offset!");
-static_assert(offsetof(UWBP_FooterMenu_C, MouseInteraction_OK) == 0x000398, "Member 'UWBP_FooterMenu_C::MouseInteraction_OK' has a wrong offset!");
-static_assert(offsetof(UWBP_FooterMenu_C, MouseInteraction_Sub_0) == 0x0003A0, "Member 'UWBP_FooterMenu_C::MouseInteraction_Sub_0' has a wrong offset!");
-static_assert(offsetof(UWBP_FooterMenu_C, MouseInteraction_Sub_1) == 0x0003A8, "Member 'UWBP_FooterMenu_C::MouseInteraction_Sub_1' has a wrong offset!");
-static_assert(offsetof(UWBP_FooterMenu_C, MouseInteraction_Sub_2) == 0x0003B0, "Member 'UWBP_FooterMenu_C::MouseInteraction_Sub_2' has a wrong offset!");
-static_assert(offsetof(UWBP_FooterMenu_C, MouseInteraction_Sub_3) == 0x0003B8, "Member 'UWBP_FooterMenu_C::MouseInteraction_Sub_3' has a wrong offset!");
-static_assert(offsetof(UWBP_FooterMenu_C, MouseInteraction_Sub_4) == 0x0003C0, "Member 'UWBP_FooterMenu_C::MouseInteraction_Sub_4' has a wrong offset!");
-static_assert(offsetof(UWBP_FooterMenu_C, MouseInteraction_Sub_5) == 0x0003C8, "Member 'UWBP_FooterMenu_C::MouseInteraction_Sub_5' has a wrong offset!");
-static_assert(offsetof(UWBP_FooterMenu_C, Showing) == 0x0003D0, "Member 'UWBP_FooterMenu_C::Showing' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_FooterMenu_C;
 
 }
 

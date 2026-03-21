@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "ST_GarageData_structs.hpp"
-#include "UNION_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -33,14 +33,7 @@ public:
 	class UMachineStickerSlotIcon*                CallFunc_Array_Get_Item_1;                         // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MachineCustomizeStickerSlotSelectState_C_SetIsStickerClearSEEnable) == 0x000008, "Wrong alignment on BPC_MachineCustomizeStickerSlotSelectState_C_SetIsStickerClearSEEnable");
-static_assert(sizeof(BPC_MachineCustomizeStickerSlotSelectState_C_SetIsStickerClearSEEnable) == 0x000028, "Wrong size on BPC_MachineCustomizeStickerSlotSelectState_C_SetIsStickerClearSEEnable");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetIsStickerClearSEEnable, SlotIndex) == 0x000000, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetIsStickerClearSEEnable::SlotIndex' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetIsStickerClearSEEnable, IsEnable) == 0x000004, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetIsStickerClearSEEnable::IsEnable' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetIsStickerClearSEEnable, CallFunc_Subtract_IntInt_ReturnValue) == 0x000008, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetIsStickerClearSEEnable::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetIsStickerClearSEEnable, CallFunc_Array_Get_Item) == 0x000010, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetIsStickerClearSEEnable::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetIsStickerClearSEEnable, CallFunc_Array_Get_Item_1) == 0x000018, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetIsStickerClearSEEnable::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetIsStickerClearSEEnable, CallFunc_Greater_IntInt_ReturnValue) == 0x000020, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetIsStickerClearSEEnable::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeStickerSlotSelectState_C_SetIsStickerClearSEEnable;
 
 // Function BPC_MachineCustomizeStickerSlotSelectState.BPC_MachineCustomizeStickerSlotSelectState_C.SetStickerClearFooterVisibility
 // 0x0098 (0x0098 - 0x0000)
@@ -59,17 +52,7 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0092(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0093(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MachineCustomizeStickerSlotSelectState_C_SetStickerClearFooterVisibility) == 0x000008, "Wrong alignment on BPC_MachineCustomizeStickerSlotSelectState_C_SetStickerClearFooterVisibility");
-static_assert(sizeof(BPC_MachineCustomizeStickerSlotSelectState_C_SetStickerClearFooterVisibility) == 0x000098, "Wrong size on BPC_MachineCustomizeStickerSlotSelectState_C_SetStickerClearFooterVisibility");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetStickerClearFooterVisibility, SlotIndex) == 0x000000, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetStickerClearFooterVisibility::SlotIndex' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetStickerClearFooterVisibility, IsRear) == 0x000004, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetStickerClearFooterVisibility::IsRear' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetStickerClearFooterVisibility, CallFunc_GetSelectedMachineCustomizeData_ReturnValue) == 0x000008, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetStickerClearFooterVisibility::CallFunc_GetSelectedMachineCustomizeData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetStickerClearFooterVisibility, CallFunc_Subtract_IntInt_ReturnValue) == 0x000080, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetStickerClearFooterVisibility::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetStickerClearFooterVisibility, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000088, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetStickerClearFooterVisibility::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetStickerClearFooterVisibility, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000090, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetStickerClearFooterVisibility::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetStickerClearFooterVisibility, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000091, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetStickerClearFooterVisibility::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetStickerClearFooterVisibility, CallFunc_Not_PreBool_ReturnValue) == 0x000092, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetStickerClearFooterVisibility::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetStickerClearFooterVisibility, CallFunc_Not_PreBool_ReturnValue_1) == 0x000093, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetStickerClearFooterVisibility::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeStickerSlotSelectState_C_SetStickerClearFooterVisibility;
 
 // Function BPC_MachineCustomizeStickerSlotSelectState.BPC_MachineCustomizeStickerSlotSelectState_C.StickerSlot_OnFaceTopEvent
 // 0x0358 (0x0358 - 0x0000)
@@ -108,33 +91,7 @@ public:
 	struct FUserMachineCustomizeData              K2Node_SetFieldsInStruct_StructOut_2;              // 0x0268(0x0078)()
 	struct FUserMachineCustomizeData              K2Node_SetFieldsInStruct_StructOut_3;              // 0x02E0(0x0078)()
 };
-static_assert(alignof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent) == 0x000008, "Wrong alignment on BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent");
-static_assert(sizeof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent) == 0x000358, "Wrong size on BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent, Button) == 0x000000, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent::Button' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent, TempUserStickerCustomizeData) == 0x000008, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent::TempUserStickerCustomizeData' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent, K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Sticker_Top_Icon) == 0x000028, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent::K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Sticker_Top_Icon' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent, K2Node_MakeStruct_UserStickerCustomizeData) == 0x000038, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent::K2Node_MakeStruct_UserStickerCustomizeData' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent, K2Node_SetFieldsInStruct_StructOut) == 0x000058, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent::K2Node_SetFieldsInStruct_StructOut' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent, CallFunc_Greater_IntInt_ReturnValue) == 0x000078, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent, CallFunc_Subtract_IntInt_ReturnValue) == 0x00007C, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000080, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent, CallFunc_NotEqual_IntInt_ReturnValue_1) == 0x000081, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent::CallFunc_NotEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent, K2Node_MakeStruct_UserStickerCustomizeData_1) == 0x000088, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent::K2Node_MakeStruct_UserStickerCustomizeData_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent, K2Node_SetFieldsInStruct_StructOut_1) == 0x0000A8, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent::K2Node_SetFieldsInStruct_StructOut_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent, CallFunc_GetSelectedMachineCustomizeData_ReturnValue) == 0x0000C8, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent::CallFunc_GetSelectedMachineCustomizeData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent, CallFunc_GetSelectedMachineId_ReturnValue) == 0x000140, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent::CallFunc_GetSelectedMachineId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent, CallFunc_GetSelectedMachineId_ReturnValue_1) == 0x000141, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent::CallFunc_GetSelectedMachineId_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent, CallFunc_GetRacer_ReturnValue) == 0x000148, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent::CallFunc_GetRacer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent, CallFunc_GetRacer_ReturnValue_1) == 0x000150, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent::CallFunc_GetRacer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent, K2Node_DynamicCast_AsBP_Menu_Racer_Preview) == 0x000158, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent::K2Node_DynamicCast_AsBP_Menu_Racer_Preview' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent, K2Node_DynamicCast_bSuccess_1) == 0x000160, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent, K2Node_DynamicCast_AsBP_Menu_Racer_Preview_1) == 0x000168, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent::K2Node_DynamicCast_AsBP_Menu_Racer_Preview_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent, K2Node_DynamicCast_bSuccess_2) == 0x000170, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent, CallFunc_Get_Customize_Data_OutCustomizeData) == 0x000178, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent::CallFunc_Get_Customize_Data_OutCustomizeData' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent, CallFunc_Get_Customize_Data_OutCustomizeData_1) == 0x0001F0, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent::CallFunc_Get_Customize_Data_OutCustomizeData_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent, K2Node_SetFieldsInStruct_StructOut_2) == 0x000268, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent::K2Node_SetFieldsInStruct_StructOut_2' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent, K2Node_SetFieldsInStruct_StructOut_3) == 0x0002E0, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent::K2Node_SetFieldsInStruct_StructOut_3' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFaceTopEvent;
 
 // Function BPC_MachineCustomizeStickerSlotSelectState.BPC_MachineCustomizeStickerSlotSelectState_C.StickerSlot_OnDecision
 // 0x0100 (0x0100 - 0x0000)
@@ -161,23 +118,7 @@ public:
 	class UTurntableComponent*                    CallFunc_GetTurntableComponent_ReturnValue_1;      // 0x00F0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision) == 0x000008, "Wrong alignment on BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision");
-static_assert(sizeof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision) == 0x000100, "Wrong size on BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision, Button) == 0x000000, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision::Button' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision, CallFunc_MakeLiteralByte_ReturnValue) == 0x000008, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision, CallFunc_Conv_ByteToInt_ReturnValue) == 0x00000C, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision, CallFunc_IsValid_ReturnValue_1) == 0x000011, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision, CallFunc_BooleanOR_ReturnValue) == 0x000012, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision, K2Node_DynamicCast_AsBP_Machine_Customize_Sequence) == 0x000018, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision::K2Node_DynamicCast_AsBP_Machine_Customize_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision, CallFunc_GetGarageData_OutGarageData) == 0x000028, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision::CallFunc_GetGarageData_OutGarageData' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision, K2Node_DynamicCast_AsBP_Machine_Customize_Sequence_1) == 0x000080, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision::K2Node_DynamicCast_AsBP_Machine_Customize_Sequence_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision, K2Node_DynamicCast_bSuccess_1) == 0x000088, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision, CallFunc_GetTurntableComponent_ReturnValue) == 0x000090, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision::CallFunc_GetTurntableComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision, CallFunc_GetGarageData_OutGarageData_1) == 0x000098, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision::CallFunc_GetGarageData_OutGarageData_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision, CallFunc_GetTurntableComponent_ReturnValue_1) == 0x0000F0, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision::CallFunc_GetTurntableComponent_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision, CallFunc_Greater_IntInt_ReturnValue) == 0x0000F8, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnDecision;
 
 // Function BPC_MachineCustomizeStickerSlotSelectState.BPC_MachineCustomizeStickerSlotSelectState_C.StickerSlot_OnFocus
 // 0x0018 (0x0018 - 0x0000)
@@ -189,12 +130,7 @@ public:
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFocus) == 0x000008, "Wrong alignment on BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFocus");
-static_assert(sizeof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFocus) == 0x000018, "Wrong size on BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFocus");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFocus, Button) == 0x000000, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFocus::Button' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFocus, PanelIndex) == 0x000008, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFocus::PanelIndex' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFocus, ButtonIndex) == 0x00000C, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFocus::ButtonIndex' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFocus, CallFunc_Greater_IntInt_ReturnValue) == 0x000010, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFocus::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeStickerSlotSelectState_C_StickerSlot_OnFocus;
 
 // Function BPC_MachineCustomizeStickerSlotSelectState.BPC_MachineCustomizeStickerSlotSelectState_C.SetupSlot
 // 0x0138 (0x0138 - 0x0000)
@@ -227,28 +163,7 @@ public:
 	uint8                                         Pad_12D[0x3];                                      // 0x012D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot) == 0x000008, "Wrong alignment on BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot");
-static_assert(sizeof(BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot) == 0x000138, "Wrong size on BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot, UIData) == 0x000000, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot::UIData' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot, Stickers) == 0x000010, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot::Stickers' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot, UserStickerData) == 0x000020, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot::UserStickerData' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot, Temp_int_Array_Index_Variable) == 0x000034, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot, CallFunc_Array_Get_Item) == 0x000038, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot, CallFunc_GetMachineSurfaceNameById_OutMachineSurfaceName) == 0x0000C0, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot::CallFunc_GetMachineSurfaceNameById_OutMachineSurfaceName' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot, CallFunc_GetMachineColorById_OutMachineColor) == 0x0000D0, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot::CallFunc_GetMachineColorById_OutMachineColor' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot, CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue) == 0x0000E0, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot::CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot, CallFunc_NotEqual_NameName_ReturnValue) == 0x0000E8, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot::CallFunc_NotEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot, K2Node_DynamicCast_As_____2D) == 0x0000F0, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot, K2Node_DynamicCast_bSuccess) == 0x0000F8, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot, CallFunc_Array_Get_Item_1) == 0x000100, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot, CallFunc_IsValid_ReturnValue) == 0x000108, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot, K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Sticker_Top_Icon) == 0x000110, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot::K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Sticker_Top_Icon' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot, K2Node_DynamicCast_bSuccess_1) == 0x000118, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000120, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot, Temp_int_Loop_Counter_Variable) == 0x000128, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot, CallFunc_Less_IntInt_ReturnValue) == 0x00012C, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot, CallFunc_Add_IntInt_ReturnValue) == 0x000130, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeStickerSlotSelectState_C_SetupSlot;
 
 // Function BPC_MachineCustomizeStickerSlotSelectState.BPC_MachineCustomizeStickerSlotSelectState_C.SetRearMaterial
 // 0x00D8 (0x00D8 - 0x0000)
@@ -266,16 +181,7 @@ public:
 	struct FMachineMaterialData                   CallFunc_Map_Find_Value;                           // 0x0028(0x00A8)()
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MachineCustomizeStickerSlotSelectState_C_SetRearMaterial) == 0x000008, "Wrong alignment on BPC_MachineCustomizeStickerSlotSelectState_C_SetRearMaterial");
-static_assert(sizeof(BPC_MachineCustomizeStickerSlotSelectState_C_SetRearMaterial) == 0x0000D8, "Wrong size on BPC_MachineCustomizeStickerSlotSelectState_C_SetRearMaterial");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetRearMaterial, Texture) == 0x000000, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetRearMaterial::Texture' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetRearMaterial, Temp_byte_Variable) == 0x000008, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetRearMaterial::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetRearMaterial, CallFunc_GetRacer_ReturnValue) == 0x000010, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetRearMaterial::CallFunc_GetRacer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetRearMaterial, K2Node_DynamicCast_AsBP_Menu_Racer_Preview) == 0x000018, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetRearMaterial::K2Node_DynamicCast_AsBP_Menu_Racer_Preview' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetRearMaterial, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetRearMaterial::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetRearMaterial, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000021, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetRearMaterial::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetRearMaterial, CallFunc_Map_Find_Value) == 0x000028, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetRearMaterial::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetRearMaterial, CallFunc_Map_Find_ReturnValue) == 0x0000D0, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetRearMaterial::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeStickerSlotSelectState_C_SetRearMaterial;
 
 // Function BPC_MachineCustomizeStickerSlotSelectState.BPC_MachineCustomizeStickerSlotSelectState_C.SetFrontMaterial
 // 0x00D8 (0x00D8 - 0x0000)
@@ -293,16 +199,7 @@ public:
 	struct FMachineMaterialData                   CallFunc_Map_Find_Value;                           // 0x0028(0x00A8)()
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MachineCustomizeStickerSlotSelectState_C_SetFrontMaterial) == 0x000008, "Wrong alignment on BPC_MachineCustomizeStickerSlotSelectState_C_SetFrontMaterial");
-static_assert(sizeof(BPC_MachineCustomizeStickerSlotSelectState_C_SetFrontMaterial) == 0x0000D8, "Wrong size on BPC_MachineCustomizeStickerSlotSelectState_C_SetFrontMaterial");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetFrontMaterial, Texture) == 0x000000, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetFrontMaterial::Texture' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetFrontMaterial, Temp_byte_Variable) == 0x000008, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetFrontMaterial::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetFrontMaterial, CallFunc_GetRacer_ReturnValue) == 0x000010, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetFrontMaterial::CallFunc_GetRacer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetFrontMaterial, K2Node_DynamicCast_AsBP_Menu_Racer_Preview) == 0x000018, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetFrontMaterial::K2Node_DynamicCast_AsBP_Menu_Racer_Preview' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetFrontMaterial, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetFrontMaterial::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetFrontMaterial, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000021, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetFrontMaterial::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetFrontMaterial, CallFunc_Map_Find_Value) == 0x000028, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetFrontMaterial::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetFrontMaterial, CallFunc_Map_Find_ReturnValue) == 0x0000D0, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetFrontMaterial::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeStickerSlotSelectState_C_SetFrontMaterial;
 
 // Function BPC_MachineCustomizeStickerSlotSelectState.BPC_MachineCustomizeStickerSlotSelectState_C.OnSetupPage
 // 0x00C0 (0x00C0 - 0x0000)
@@ -317,14 +214,7 @@ public:
 	TArray<struct FStickerUIData>                 CallFunc_GetMachinePartsStickerUIDataList_OutStickerUIDataList_1; // 0x0038(0x0010)(ReferenceParm)
 	struct FUserMachineCustomizeData              CallFunc_GetSelectedMachineCustomizeData_ReturnValue; // 0x0048(0x0078)()
 };
-static_assert(alignof(BPC_MachineCustomizeStickerSlotSelectState_C_OnSetupPage) == 0x000008, "Wrong alignment on BPC_MachineCustomizeStickerSlotSelectState_C_OnSetupPage");
-static_assert(sizeof(BPC_MachineCustomizeStickerSlotSelectState_C_OnSetupPage) == 0x0000C0, "Wrong size on BPC_MachineCustomizeStickerSlotSelectState_C_OnSetupPage");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_OnSetupPage, FrontStickerUIData) == 0x000000, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_OnSetupPage::FrontStickerUIData' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_OnSetupPage, RearStickerUIData) == 0x000010, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_OnSetupPage::RearStickerUIData' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_OnSetupPage, CallFunc_GetSelectedMachineId_ReturnValue) == 0x000020, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_OnSetupPage::CallFunc_GetSelectedMachineId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_OnSetupPage, CallFunc_GetMachinePartsStickerUIDataList_OutStickerUIDataList) == 0x000028, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_OnSetupPage::CallFunc_GetMachinePartsStickerUIDataList_OutStickerUIDataList' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_OnSetupPage, CallFunc_GetMachinePartsStickerUIDataList_OutStickerUIDataList_1) == 0x000038, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_OnSetupPage::CallFunc_GetMachinePartsStickerUIDataList_OutStickerUIDataList_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_OnSetupPage, CallFunc_GetSelectedMachineCustomizeData_ReturnValue) == 0x000048, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_OnSetupPage::CallFunc_GetSelectedMachineCustomizeData_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeStickerSlotSelectState_C_OnSetupPage;
 
 // Function BPC_MachineCustomizeStickerSlotSelectState.BPC_MachineCustomizeStickerSlotSelectState_C.OnSetup
 // 0x0028 (0x0028 - 0x0000)
@@ -337,13 +227,7 @@ public:
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UMachineStickerSlotIcon*                CallFunc_Array_Get_Item_1;                         // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MachineCustomizeStickerSlotSelectState_C_OnSetup) == 0x000008, "Wrong alignment on BPC_MachineCustomizeStickerSlotSelectState_C_OnSetup");
-static_assert(sizeof(BPC_MachineCustomizeStickerSlotSelectState_C_OnSetup) == 0x000028, "Wrong size on BPC_MachineCustomizeStickerSlotSelectState_C_OnSetup");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_OnSetup, CallFunc_Array_Get_Item) == 0x000000, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_OnSetup::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_OnSetup, CallFunc_GetMachineCustomTop_ReturnValue) == 0x000008, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_OnSetup::CallFunc_GetMachineCustomTop_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_OnSetup, CallFunc_GetMachineInfoWidget_ReturnValue) == 0x000010, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_OnSetup::CallFunc_GetMachineInfoWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_OnSetup, CallFunc_GetPlayerController_ReturnValue) == 0x000018, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_OnSetup::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_OnSetup, CallFunc_Array_Get_Item_1) == 0x000020, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_OnSetup::CallFunc_Array_Get_Item_1' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeStickerSlotSelectState_C_OnSetup;
 
 // Function BPC_MachineCustomizeStickerSlotSelectState.BPC_MachineCustomizeStickerSlotSelectState_C.SetProperties
 // 0x0098 (0x0098 - 0x0000)
@@ -362,17 +246,7 @@ public:
 	class UWBP_MachineCustom_Sub_StickerTop_C*    K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Sticker_Top; // 0x0088(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MachineCustomizeStickerSlotSelectState_C_SetProperties) == 0x000008, "Wrong alignment on BPC_MachineCustomizeStickerSlotSelectState_C_SetProperties");
-static_assert(sizeof(BPC_MachineCustomizeStickerSlotSelectState_C_SetProperties) == 0x000098, "Wrong size on BPC_MachineCustomizeStickerSlotSelectState_C_SetProperties");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetProperties, CallFunc_GetOwnerStateMachine_ReturnValue) == 0x000000, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetProperties::CallFunc_GetOwnerStateMachine_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetProperties, K2Node_DynamicCast_AsMachine_Customize_Sequence) == 0x000008, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetProperties::K2Node_DynamicCast_AsMachine_Customize_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetProperties, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetProperties::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetProperties, K2Node_DynamicCast_AsBP_Machine_Customize_Sequence) == 0x000018, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetProperties::K2Node_DynamicCast_AsBP_Machine_Customize_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetProperties, K2Node_DynamicCast_bSuccess_1) == 0x000020, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetProperties::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetProperties, CallFunc_GetGarageData_OutGarageData) == 0x000028, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetProperties::CallFunc_GetGarageData_OutGarageData' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetProperties, CallFunc_GetStickerTopPage_ReturnValue) == 0x000080, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetProperties::CallFunc_GetStickerTopPage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetProperties, K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Sticker_Top) == 0x000088, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetProperties::K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Sticker_Top' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_SetProperties, K2Node_DynamicCast_bSuccess_2) == 0x000090, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_SetProperties::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeStickerSlotSelectState_C_SetProperties;
 
 // Function BPC_MachineCustomizeStickerSlotSelectState.BPC_MachineCustomizeStickerSlotSelectState_C.ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState
 // 0x00B8 (0x00B8 - 0x0000)
@@ -406,29 +280,7 @@ public:
 	TDelegate<void(EMachineCustomizeTabID InTabID)> K2Node_CreateDelegate_OutputDelegate_5;          // 0x00A0(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UMachineCustomTab*                      CallFunc_GetTab_ReturnValue_1;                     // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState) == 0x000008, "Wrong alignment on BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState");
-static_assert(sizeof(BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState) == 0x0000B8, "Wrong size on BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState, EntryPoint) == 0x000000, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState, CallFunc_GetTab_ReturnValue) == 0x000008, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState::CallFunc_GetTab_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState, Temp_int_Loop_Counter_Variable) == 0x000010, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState, CallFunc_Add_IntInt_ReturnValue) == 0x000014, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState, Temp_int_Array_Index_Variable) == 0x000018, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState, Temp_int_Array_Index_Variable_1) == 0x00001C, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState, K2Node_CreateDelegate_OutputDelegate) == 0x000020, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState, K2Node_CreateDelegate_OutputDelegate_1) == 0x000030, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState, Temp_int_Loop_Counter_Variable_1) == 0x000040, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState, CallFunc_Array_Get_Item) == 0x000048, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState, CallFunc_Array_Length_ReturnValue) == 0x000050, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState, CallFunc_Add_IntInt_ReturnValue_1) == 0x000054, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState, CallFunc_Less_IntInt_ReturnValue) == 0x000058, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState, K2Node_CreateDelegate_OutputDelegate_2) == 0x00005C, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState, K2Node_CreateDelegate_OutputDelegate_3) == 0x00006C, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState, K2Node_CreateDelegate_OutputDelegate_4) == 0x00007C, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState, CallFunc_Array_Get_Item_1) == 0x000090, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState, CallFunc_Array_Length_ReturnValue_1) == 0x000098, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState, CallFunc_Less_IntInt_ReturnValue_1) == 0x00009C, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState, K2Node_CreateDelegate_OutputDelegate_5) == 0x0000A0, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState, CallFunc_GetTab_ReturnValue_1) == 0x0000B0, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState::CallFunc_GetTab_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeStickerSlotSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeStickerSlotSelectState;
 
 // Function BPC_MachineCustomizeStickerSlotSelectState.BPC_MachineCustomizeStickerSlotSelectState_C.GetCamera
 // 0x0078 (0x0078 - 0x0000)
@@ -442,13 +294,7 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FST_GarageData                         CallFunc_GetGarageData_OutGarageData;              // 0x0020(0x0058)(ZeroConstructor, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MachineCustomizeStickerSlotSelectState_C_GetCamera) == 0x000008, "Wrong alignment on BPC_MachineCustomizeStickerSlotSelectState_C_GetCamera");
-static_assert(sizeof(BPC_MachineCustomizeStickerSlotSelectState_C_GetCamera) == 0x000078, "Wrong size on BPC_MachineCustomizeStickerSlotSelectState_C_GetCamera");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_GetCamera, ReturnValue) == 0x000000, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_GetCamera::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_GetCamera, CallFunc_GetOwnerStateMachine_ReturnValue) == 0x000008, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_GetCamera::CallFunc_GetOwnerStateMachine_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_GetCamera, K2Node_DynamicCast_AsBP_Machine_Customize_Sequence) == 0x000010, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_GetCamera::K2Node_DynamicCast_AsBP_Machine_Customize_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_GetCamera, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_GetCamera::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeStickerSlotSelectState_C_GetCamera, CallFunc_GetGarageData_OutGarageData) == 0x000020, "Member 'BPC_MachineCustomizeStickerSlotSelectState_C_GetCamera::CallFunc_GetGarageData_OutGarageData' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeStickerSlotSelectState_C_GetCamera;
 
 }
 

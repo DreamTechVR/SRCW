@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "UMG_structs.hpp"
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
-#include "UnionLib_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
+#include "UnionUI_structs.hpp"
+#include "UMG_structs.hpp"
+#include "UnionLib_structs.hpp"
 
 
 namespace SDK
@@ -127,51 +127,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_SelectCourse_C">();
+		BP_STATIC_CLASS_IMPL("BPC_SelectCourse_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_SelectCourse_C")
 	}
 	static class UBPC_SelectCourse_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_SelectCourse_C>();
 	}
 };
-static_assert(alignof(UBPC_SelectCourse_C) == 0x000008, "Wrong alignment on UBPC_SelectCourse_C");
-static_assert(sizeof(UBPC_SelectCourse_C) == 0x0003C0, "Wrong size on UBPC_SelectCourse_C");
-static_assert(offsetof(UBPC_SelectCourse_C, UberGraphFrame) == 0x000248, "Member 'UBPC_SelectCourse_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, CourseSelectWidgetClassRef) == 0x000250, "Member 'UBPC_SelectCourse_C::CourseSelectWidgetClassRef' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, LastRegisterd) == 0x000278, "Member 'UBPC_SelectCourse_C::LastRegisterd' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, AnotherStageLotteryWheel) == 0x000280, "Member 'UBPC_SelectCourse_C::AnotherStageLotteryWheel' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, SubInputReciever) == 0x000288, "Member 'UBPC_SelectCourse_C::SubInputReciever' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, bRightShoulderPressed) == 0x000290, "Member 'UBPC_SelectCourse_C::bRightShoulderPressed' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, bLeftShoulderPressed) == 0x000291, "Member 'UBPC_SelectCourse_C::bLeftShoulderPressed' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, CurrentDebugLevel) == 0x000294, "Member 'UBPC_SelectCourse_C::CurrentDebugLevel' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, Level_Persent) == 0x000298, "Member 'UBPC_SelectCourse_C::Level_Persent' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, Footer) == 0x0002E8, "Member 'UBPC_SelectCourse_C::Footer' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, NewVar_0) == 0x0002F0, "Member 'UBPC_SelectCourse_C::NewVar_0' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, bStartPressed) == 0x000300, "Member 'UBPC_SelectCourse_C::bStartPressed' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, TimeTrialSubModeSelect) == 0x000308, "Member 'UBPC_SelectCourse_C::TimeTrialSubModeSelect' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, RivalCutinWidgetClass) == 0x000310, "Member 'UBPC_SelectCourse_C::RivalCutinWidgetClass' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, RivalCutinWidget) == 0x000338, "Member 'UBPC_SelectCourse_C::RivalCutinWidget' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, Selected) == 0x000340, "Member 'UBPC_SelectCourse_C::Selected' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, BlankIconHidden) == 0x000344, "Member 'UBPC_SelectCourse_C::BlankIconHidden' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, bRivalChoice) == 0x000348, "Member 'UBPC_SelectCourse_C::bRivalChoice' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, RivalDriverId_Normal) == 0x000349, "Member 'UBPC_SelectCourse_C::RivalDriverId_Normal' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, RivalDriverId_HighLevel) == 0x00034A, "Member 'UBPC_SelectCourse_C::RivalDriverId_HighLevel' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, ReadySequenceActor) == 0x000350, "Member 'UBPC_SelectCourse_C::ReadySequenceActor' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, TipsWindow) == 0x000358, "Member 'UBPC_SelectCourse_C::TipsWindow' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, OpenTipsId) == 0x000360, "Member 'UBPC_SelectCourse_C::OpenTipsId' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, LastRegisterdSubMenus) == 0x000368, "Member 'UBPC_SelectCourse_C::LastRegisterdSubMenus' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, GotoClassSelect) == 0x000378, "Member 'UBPC_SelectCourse_C::GotoClassSelect' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, WaitClassSelect) == 0x000379, "Member 'UBPC_SelectCourse_C::WaitClassSelect' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, CourseLotCache) == 0x00037A, "Member 'UBPC_SelectCourse_C::CourseLotCache' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, bIsOpenReadyTips) == 0x00037B, "Member 'UBPC_SelectCourse_C::bIsOpenReadyTips' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, bIsOpenGroupRaceTips) == 0x00037C, "Member 'UBPC_SelectCourse_C::bIsOpenGroupRaceTips' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, bIsPreloadedMainStage) == 0x00037D, "Member 'UBPC_SelectCourse_C::bIsPreloadedMainStage' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, CourseSelectPrevVisibility) == 0x00037E, "Member 'UBPC_SelectCourse_C::CourseSelectPrevVisibility' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, CantFindStage) == 0x00037F, "Member 'UBPC_SelectCourse_C::CantFindStage' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, IncompleteCollaboGPVictoryPopupTitleText) == 0x000380, "Member 'UBPC_SelectCourse_C::IncompleteCollaboGPVictoryPopupTitleText' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, IncompleteCollaboGPVictoryPopupMessageText) == 0x000390, "Member 'UBPC_SelectCourse_C::IncompleteCollaboGPVictoryPopupMessageText' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, IncompleteCollaboGPSelectedPopupTitleText) == 0x0003A0, "Member 'UBPC_SelectCourse_C::IncompleteCollaboGPSelectedPopupTitleText' has a wrong offset!");
-static_assert(offsetof(UBPC_SelectCourse_C, IncompleteCollaboGPSelectedPopupMessageText) == 0x0003B0, "Member 'UBPC_SelectCourse_C::IncompleteCollaboGPSelectedPopupMessageText' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_SelectCourse_C;
 
 }
 

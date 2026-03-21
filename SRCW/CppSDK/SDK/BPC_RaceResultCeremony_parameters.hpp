@@ -26,13 +26,7 @@ public:
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceResultCeremony_C_ExecuteUbergraph_BPC_RaceResultCeremony) == 0x000008, "Wrong alignment on BPC_RaceResultCeremony_C_ExecuteUbergraph_BPC_RaceResultCeremony");
-static_assert(sizeof(BPC_RaceResultCeremony_C_ExecuteUbergraph_BPC_RaceResultCeremony) == 0x000018, "Wrong size on BPC_RaceResultCeremony_C_ExecuteUbergraph_BPC_RaceResultCeremony");
-static_assert(offsetof(BPC_RaceResultCeremony_C_ExecuteUbergraph_BPC_RaceResultCeremony, EntryPoint) == 0x000000, "Member 'BPC_RaceResultCeremony_C_ExecuteUbergraph_BPC_RaceResultCeremony::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultCeremony_C_ExecuteUbergraph_BPC_RaceResultCeremony, K2Node_Event_InDeltaTime) == 0x000004, "Member 'BPC_RaceResultCeremony_C_ExecuteUbergraph_BPC_RaceResultCeremony::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultCeremony_C_ExecuteUbergraph_BPC_RaceResultCeremony, CallFunc_GetOwnerStateMachine_ReturnValue) == 0x000008, "Member 'BPC_RaceResultCeremony_C_ExecuteUbergraph_BPC_RaceResultCeremony::CallFunc_GetOwnerStateMachine_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultCeremony_C_ExecuteUbergraph_BPC_RaceResultCeremony, CallFunc_MakeLiteralByte_ReturnValue) == 0x000010, "Member 'BPC_RaceResultCeremony_C_ExecuteUbergraph_BPC_RaceResultCeremony::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultCeremony_C_ExecuteUbergraph_BPC_RaceResultCeremony, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000014, "Member 'BPC_RaceResultCeremony_C_ExecuteUbergraph_BPC_RaceResultCeremony::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceResultCeremony_C_ExecuteUbergraph_BPC_RaceResultCeremony;
 
 // Function BPC_RaceResultCeremony.BPC_RaceResultCeremony_C.OnUpdateState
 // 0x0004 (0x0004 - 0x0000)
@@ -41,9 +35,7 @@ struct BPC_RaceResultCeremony_C_OnUpdateState final
 public:
 	float                                         InDeltaTime;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceResultCeremony_C_OnUpdateState) == 0x000004, "Wrong alignment on BPC_RaceResultCeremony_C_OnUpdateState");
-static_assert(sizeof(BPC_RaceResultCeremony_C_OnUpdateState) == 0x000004, "Wrong size on BPC_RaceResultCeremony_C_OnUpdateState");
-static_assert(offsetof(BPC_RaceResultCeremony_C_OnUpdateState, InDeltaTime) == 0x000000, "Member 'BPC_RaceResultCeremony_C_OnUpdateState::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceResultCeremony_C_OnUpdateState;
 
 }
 

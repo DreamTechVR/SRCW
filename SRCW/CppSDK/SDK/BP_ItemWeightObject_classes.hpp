@@ -23,15 +23,18 @@ class ABP_ItemWeightObject_C final : public AItemWeightObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ItemWeightObject_C">();
+		BP_STATIC_CLASS_IMPL("BP_ItemWeightObject_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ItemWeightObject_C")
 	}
 	static class ABP_ItemWeightObject_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ItemWeightObject_C>();
 	}
 };
-static_assert(alignof(ABP_ItemWeightObject_C) == 0x000010, "Wrong alignment on ABP_ItemWeightObject_C");
-static_assert(sizeof(ABP_ItemWeightObject_C) == 0x000680, "Wrong size on ABP_ItemWeightObject_C");
+DUMPER7_ASSERTS_ABP_ItemWeightObject_C;
 
 }
 

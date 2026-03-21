@@ -79,6 +79,27 @@ void UBPC_RaceSequenceStateResult_C::GetTargetWidget(class UClass** WidgetBluepr
 }
 
 
+// Function BPC_RaceSequenceStateResult.BPC_RaceSequenceStateResult_C.GetTimeTrialAddTicket
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32*                                  AddTickets                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBPC_RaceSequenceStateResult_C::GetTimeTrialAddTicket(int32* AddTickets)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_RaceSequenceStateResult_C", "GetTimeTrialAddTicket");
+
+	Params::BPC_RaceSequenceStateResult_C_GetTimeTrialAddTicket Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (AddTickets != nullptr)
+		*AddTickets = Parms.AddTickets;
+}
+
+
 // Function BPC_RaceSequenceStateResult.BPC_RaceSequenceStateResult_C.NextEndMenu_TimerEvent
 // (BlueprintCallable, BlueprintEvent)
 
@@ -192,6 +213,20 @@ void UBPC_RaceSequenceStateResult_C::SetRewardAchievement()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BPC_RaceSequenceStateResult_C", "SetRewardAchievement");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BPC_RaceSequenceStateResult.BPC_RaceSequenceStateResult_C.TimeTrialSaveDonpaTicket
+// (Event, Public, BlueprintEvent)
+
+void UBPC_RaceSequenceStateResult_C::TimeTrialSaveDonpaTicket()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_RaceSequenceStateResult_C", "TimeTrialSaveDonpaTicket");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -57,35 +57,7 @@ public:
 	TDelegate<void(EUINavigation Navigation)>     K2Node_CreateDelegate_OutputDelegate_3;            // 0x0130(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(EUINavigation Navigation)>     K2Node_CreateDelegate_OutputDelegate_4;            // 0x0140(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor) == 0x000008, "Wrong alignment on WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor");
-static_assert(sizeof(WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor) == 0x000150, "Wrong size on WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor, EntryPoint) == 0x000000, "Member 'WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000004, "Member 'WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor, CallFunc_SoundPlay_ReturnValue) == 0x000008, "Member 'WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor, K2Node_MakeArray_Array) == 0x000010, "Member 'WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor, K2Node_Event_InFocusEvent_2) == 0x000020, "Member 'WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor::K2Node_Event_InFocusEvent_2' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor, K2Node_Event_InFocusEvent_1) == 0x000028, "Member 'WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor::K2Node_Event_InFocusEvent_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor, K2Node_CustomEvent_Button) == 0x000030, "Member 'WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor, CallFunc_GetObjectName_ReturnValue) == 0x000038, "Member 'WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor::CallFunc_GetObjectName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor, CallFunc_GetOwningPlayer_ReturnValue) == 0x000048, "Member 'WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor, CallFunc_Conv_StringToText_ReturnValue) == 0x000050, "Member 'WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000060, "Member 'WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor, K2Node_DynamicCast_bSuccess) == 0x000068, "Member 'WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor, K2Node_MakeStruct_FormatArgumentData) == 0x000070, "Member 'WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor, K2Node_MakeArray_Array_1) == 0x0000B8, "Member 'WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor, CallFunc_Format_ReturnValue) == 0x0000C8, "Member 'WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor, K2Node_CreateDelegate_OutputDelegate) == 0x0000D8, "Member 'WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor, CallFunc_SoundPlay_ReturnValue_1) == 0x0000E8, "Member 'WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor, CallFunc_NotEqual_ByteByte_ReturnValue_1) == 0x0000EC, "Member 'WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor::CallFunc_NotEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor, CallFunc_GetOwningPlayer_ReturnValue_1) == 0x0000F0, "Member 'WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor::CallFunc_GetOwningPlayer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor, K2Node_DynamicCast_AsApp_Player_Controller_1) == 0x0000F8, "Member 'WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor::K2Node_DynamicCast_AsApp_Player_Controller_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor, K2Node_DynamicCast_bSuccess_1) == 0x000100, "Member 'WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor, K2Node_Event_InFocusEvent) == 0x000104, "Member 'WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor::K2Node_Event_InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor, K2Node_Event_InPlayerControllerIndex) == 0x00010C, "Member 'WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor::K2Node_Event_InPlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor, K2Node_CreateDelegate_OutputDelegate_1) == 0x000110, "Member 'WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor, K2Node_CreateDelegate_OutputDelegate_2) == 0x000120, "Member 'WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor, K2Node_CreateDelegate_OutputDelegate_3) == 0x000130, "Member 'WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor, K2Node_CreateDelegate_OutputDelegate_4) == 0x000140, "Member 'WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_Cursor_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Cursor;
 
 // Function WBP_GadgetCustom_Sub_Cursor.WBP_GadgetCustom_Sub_Cursor_C.Navigation Down
 // 0x0010 (0x0010 - 0x0000)
@@ -96,10 +68,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_Cursor_C_Navigation_Down) == 0x000008, "Wrong alignment on WBP_GadgetCustom_Sub_Cursor_C_Navigation_Down");
-static_assert(sizeof(WBP_GadgetCustom_Sub_Cursor_C_Navigation_Down) == 0x000010, "Wrong size on WBP_GadgetCustom_Sub_Cursor_C_Navigation_Down");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_Navigation_Down, Navigation_0) == 0x000000, "Member 'WBP_GadgetCustom_Sub_Cursor_C_Navigation_Down::Navigation_0' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_Navigation_Down, ReturnValue) == 0x000008, "Member 'WBP_GadgetCustom_Sub_Cursor_C_Navigation_Down::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_Cursor_C_Navigation_Down;
 
 // Function WBP_GadgetCustom_Sub_Cursor.WBP_GadgetCustom_Sub_Cursor_C.Navigation Right
 // 0x0010 (0x0010 - 0x0000)
@@ -110,10 +79,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_Cursor_C_Navigation_Right) == 0x000008, "Wrong alignment on WBP_GadgetCustom_Sub_Cursor_C_Navigation_Right");
-static_assert(sizeof(WBP_GadgetCustom_Sub_Cursor_C_Navigation_Right) == 0x000010, "Wrong size on WBP_GadgetCustom_Sub_Cursor_C_Navigation_Right");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_Navigation_Right, Navigation_0) == 0x000000, "Member 'WBP_GadgetCustom_Sub_Cursor_C_Navigation_Right::Navigation_0' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_Navigation_Right, ReturnValue) == 0x000008, "Member 'WBP_GadgetCustom_Sub_Cursor_C_Navigation_Right::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_Cursor_C_Navigation_Right;
 
 // Function WBP_GadgetCustom_Sub_Cursor.WBP_GadgetCustom_Sub_Cursor_C.Navigation Up
 // 0x0010 (0x0010 - 0x0000)
@@ -124,10 +90,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_Cursor_C_Navigation_Up) == 0x000008, "Wrong alignment on WBP_GadgetCustom_Sub_Cursor_C_Navigation_Up");
-static_assert(sizeof(WBP_GadgetCustom_Sub_Cursor_C_Navigation_Up) == 0x000010, "Wrong size on WBP_GadgetCustom_Sub_Cursor_C_Navigation_Up");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_Navigation_Up, Navigation_0) == 0x000000, "Member 'WBP_GadgetCustom_Sub_Cursor_C_Navigation_Up::Navigation_0' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_Navigation_Up, ReturnValue) == 0x000008, "Member 'WBP_GadgetCustom_Sub_Cursor_C_Navigation_Up::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_Cursor_C_Navigation_Up;
 
 // Function WBP_GadgetCustom_Sub_Cursor.WBP_GadgetCustom_Sub_Cursor_C.NavigationLeft
 // 0x0010 (0x0010 - 0x0000)
@@ -138,10 +101,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_Cursor_C_NavigationLeft) == 0x000008, "Wrong alignment on WBP_GadgetCustom_Sub_Cursor_C_NavigationLeft");
-static_assert(sizeof(WBP_GadgetCustom_Sub_Cursor_C_NavigationLeft) == 0x000010, "Wrong size on WBP_GadgetCustom_Sub_Cursor_C_NavigationLeft");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_NavigationLeft, Navigation_0) == 0x000000, "Member 'WBP_GadgetCustom_Sub_Cursor_C_NavigationLeft::Navigation_0' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_NavigationLeft, ReturnValue) == 0x000008, "Member 'WBP_GadgetCustom_Sub_Cursor_C_NavigationLeft::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_Cursor_C_NavigationLeft;
 
 // Function WBP_GadgetCustom_Sub_Cursor.WBP_GadgetCustom_Sub_Cursor_C.OnAddedToFocusPath
 // 0x0008 (0x0008 - 0x0000)
@@ -150,9 +110,7 @@ struct WBP_GadgetCustom_Sub_Cursor_C_OnAddedToFocusPath final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_Cursor_C_OnAddedToFocusPath) == 0x000004, "Wrong alignment on WBP_GadgetCustom_Sub_Cursor_C_OnAddedToFocusPath");
-static_assert(sizeof(WBP_GadgetCustom_Sub_Cursor_C_OnAddedToFocusPath) == 0x000008, "Wrong size on WBP_GadgetCustom_Sub_Cursor_C_OnAddedToFocusPath");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_OnAddedToFocusPath, InFocusEvent) == 0x000000, "Member 'WBP_GadgetCustom_Sub_Cursor_C_OnAddedToFocusPath::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_Cursor_C_OnAddedToFocusPath;
 
 // Function WBP_GadgetCustom_Sub_Cursor.WBP_GadgetCustom_Sub_Cursor_C.OnFocus_Impl
 // 0x0008 (0x0008 - 0x0000)
@@ -161,9 +119,7 @@ struct WBP_GadgetCustom_Sub_Cursor_C_OnFocus_Impl final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_Cursor_C_OnFocus_Impl) == 0x000008, "Wrong alignment on WBP_GadgetCustom_Sub_Cursor_C_OnFocus_Impl");
-static_assert(sizeof(WBP_GadgetCustom_Sub_Cursor_C_OnFocus_Impl) == 0x000008, "Wrong size on WBP_GadgetCustom_Sub_Cursor_C_OnFocus_Impl");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_OnFocus_Impl, Button) == 0x000000, "Member 'WBP_GadgetCustom_Sub_Cursor_C_OnFocus_Impl::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_Cursor_C_OnFocus_Impl;
 
 // Function WBP_GadgetCustom_Sub_Cursor.WBP_GadgetCustom_Sub_Cursor_C.OnFocusLost
 // 0x0008 (0x0008 - 0x0000)
@@ -172,9 +128,7 @@ struct WBP_GadgetCustom_Sub_Cursor_C_OnFocusLost final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_Cursor_C_OnFocusLost) == 0x000004, "Wrong alignment on WBP_GadgetCustom_Sub_Cursor_C_OnFocusLost");
-static_assert(sizeof(WBP_GadgetCustom_Sub_Cursor_C_OnFocusLost) == 0x000008, "Wrong size on WBP_GadgetCustom_Sub_Cursor_C_OnFocusLost");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_OnFocusLost, InFocusEvent) == 0x000000, "Member 'WBP_GadgetCustom_Sub_Cursor_C_OnFocusLost::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_Cursor_C_OnFocusLost;
 
 // Function WBP_GadgetCustom_Sub_Cursor.WBP_GadgetCustom_Sub_Cursor_C.OnFocusReceived
 // 0x01B8 (0x01B8 - 0x0000)
@@ -188,13 +142,7 @@ public:
 	uint8                                         Pad_FC[0x4];                                       // 0x00FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x0100(0x00B8)()
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_Cursor_C_OnFocusReceived) == 0x000008, "Wrong alignment on WBP_GadgetCustom_Sub_Cursor_C_OnFocusReceived");
-static_assert(sizeof(WBP_GadgetCustom_Sub_Cursor_C_OnFocusReceived) == 0x0001B8, "Wrong size on WBP_GadgetCustom_Sub_Cursor_C_OnFocusReceived");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'WBP_GadgetCustom_Sub_Cursor_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'WBP_GadgetCustom_Sub_Cursor_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'WBP_GadgetCustom_Sub_Cursor_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_OnFocusReceived, CallFunc_GetUserIndexByFocusEvent_ReturnValue) == 0x0000F8, "Member 'WBP_GadgetCustom_Sub_Cursor_C_OnFocusReceived::CallFunc_GetUserIndexByFocusEvent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_OnFocusReceived, K2Node_MakeStruct_EventReply) == 0x000100, "Member 'WBP_GadgetCustom_Sub_Cursor_C_OnFocusReceived::K2Node_MakeStruct_EventReply' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_Cursor_C_OnFocusReceived;
 
 // Function WBP_GadgetCustom_Sub_Cursor.WBP_GadgetCustom_Sub_Cursor_C.OnMouseButtonDown
 // 0x02A8 (0x02A8 - 0x0000)
@@ -211,17 +159,7 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0288(0x0010)(ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0298(0x0010)()
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_Cursor_C_OnMouseButtonDown) == 0x000008, "Wrong alignment on WBP_GadgetCustom_Sub_Cursor_C_OnMouseButtonDown");
-static_assert(sizeof(WBP_GadgetCustom_Sub_Cursor_C_OnMouseButtonDown) == 0x0002A8, "Wrong size on WBP_GadgetCustom_Sub_Cursor_C_OnMouseButtonDown");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_OnMouseButtonDown, MyGeometry) == 0x000000, "Member 'WBP_GadgetCustom_Sub_Cursor_C_OnMouseButtonDown::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_OnMouseButtonDown, MouseEvent) == 0x000038, "Member 'WBP_GadgetCustom_Sub_Cursor_C_OnMouseButtonDown::MouseEvent' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_OnMouseButtonDown, ReturnValue) == 0x0000B0, "Member 'WBP_GadgetCustom_Sub_Cursor_C_OnMouseButtonDown::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_OnMouseButtonDown, K2Node_MakeStruct_EventReply) == 0x000168, "Member 'WBP_GadgetCustom_Sub_Cursor_C_OnMouseButtonDown::K2Node_MakeStruct_EventReply' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_OnMouseButtonDown, CallFunc_GetObjectName_ReturnValue) == 0x000220, "Member 'WBP_GadgetCustom_Sub_Cursor_C_OnMouseButtonDown::CallFunc_GetObjectName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_OnMouseButtonDown, CallFunc_Conv_StringToText_ReturnValue) == 0x000230, "Member 'WBP_GadgetCustom_Sub_Cursor_C_OnMouseButtonDown::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_OnMouseButtonDown, K2Node_MakeStruct_FormatArgumentData) == 0x000240, "Member 'WBP_GadgetCustom_Sub_Cursor_C_OnMouseButtonDown::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_OnMouseButtonDown, K2Node_MakeArray_Array) == 0x000288, "Member 'WBP_GadgetCustom_Sub_Cursor_C_OnMouseButtonDown::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_OnMouseButtonDown, CallFunc_Format_ReturnValue) == 0x000298, "Member 'WBP_GadgetCustom_Sub_Cursor_C_OnMouseButtonDown::CallFunc_Format_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_Cursor_C_OnMouseButtonDown;
 
 // Function WBP_GadgetCustom_Sub_Cursor.WBP_GadgetCustom_Sub_Cursor_C.OnRemovedFromFocusPath
 // 0x0008 (0x0008 - 0x0000)
@@ -230,9 +168,7 @@ struct WBP_GadgetCustom_Sub_Cursor_C_OnRemovedFromFocusPath final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_Cursor_C_OnRemovedFromFocusPath) == 0x000004, "Wrong alignment on WBP_GadgetCustom_Sub_Cursor_C_OnRemovedFromFocusPath");
-static_assert(sizeof(WBP_GadgetCustom_Sub_Cursor_C_OnRemovedFromFocusPath) == 0x000008, "Wrong size on WBP_GadgetCustom_Sub_Cursor_C_OnRemovedFromFocusPath");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_OnRemovedFromFocusPath, InFocusEvent) == 0x000000, "Member 'WBP_GadgetCustom_Sub_Cursor_C_OnRemovedFromFocusPath::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_Cursor_C_OnRemovedFromFocusPath;
 
 // Function WBP_GadgetCustom_Sub_Cursor.WBP_GadgetCustom_Sub_Cursor_C.SetPlayerControllerIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -241,9 +177,7 @@ struct WBP_GadgetCustom_Sub_Cursor_C_SetPlayerControllerIndex final
 public:
 	int32                                         InPlayerControllerIndex;                           // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_Cursor_C_SetPlayerControllerIndex) == 0x000004, "Wrong alignment on WBP_GadgetCustom_Sub_Cursor_C_SetPlayerControllerIndex");
-static_assert(sizeof(WBP_GadgetCustom_Sub_Cursor_C_SetPlayerControllerIndex) == 0x000004, "Wrong size on WBP_GadgetCustom_Sub_Cursor_C_SetPlayerControllerIndex");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Cursor_C_SetPlayerControllerIndex, InPlayerControllerIndex) == 0x000000, "Member 'WBP_GadgetCustom_Sub_Cursor_C_SetPlayerControllerIndex::InPlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_Cursor_C_SetPlayerControllerIndex;
 
 }
 

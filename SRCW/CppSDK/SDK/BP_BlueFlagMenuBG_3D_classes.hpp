@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -115,31 +115,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_BlueFlagMenuBG_3D_C">();
+		BP_STATIC_CLASS_IMPL("BP_BlueFlagMenuBG_3D_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_BlueFlagMenuBG_3D_C")
 	}
 	static class ABP_BlueFlagMenuBG_3D_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_BlueFlagMenuBG_3D_C>();
 	}
 };
-static_assert(alignof(ABP_BlueFlagMenuBG_3D_C) == 0x000010, "Wrong alignment on ABP_BlueFlagMenuBG_3D_C");
-static_assert(sizeof(ABP_BlueFlagMenuBG_3D_C) == 0x000370, "Wrong size on ABP_BlueFlagMenuBG_3D_C");
-static_assert(offsetof(ABP_BlueFlagMenuBG_3D_C, UberGraphFrame) == 0x000290, "Member 'ABP_BlueFlagMenuBG_3D_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_BlueFlagMenuBG_3D_C, Party_White) == 0x000298, "Member 'ABP_BlueFlagMenuBG_3D_C::Party_White' has a wrong offset!");
-static_assert(offsetof(ABP_BlueFlagMenuBG_3D_C, Widget) == 0x0002A0, "Member 'ABP_BlueFlagMenuBG_3D_C::Widget' has a wrong offset!");
-static_assert(offsetof(ABP_BlueFlagMenuBG_3D_C, Root) == 0x0002A8, "Member 'ABP_BlueFlagMenuBG_3D_C::Root' has a wrong offset!");
-static_assert(offsetof(ABP_BlueFlagMenuBG_3D_C, Scene) == 0x0002B0, "Member 'ABP_BlueFlagMenuBG_3D_C::Scene' has a wrong offset!");
-static_assert(offsetof(ABP_BlueFlagMenuBG_3D_C, Rotate_0_To_1_E1B4524D4CCEC6A980940EBB86C28D57) == 0x0002B8, "Member 'ABP_BlueFlagMenuBG_3D_C::Rotate_0_To_1_E1B4524D4CCEC6A980940EBB86C28D57' has a wrong offset!");
-static_assert(offsetof(ABP_BlueFlagMenuBG_3D_C, Rotate__Direction_E1B4524D4CCEC6A980940EBB86C28D57) == 0x0002BC, "Member 'ABP_BlueFlagMenuBG_3D_C::Rotate__Direction_E1B4524D4CCEC6A980940EBB86C28D57' has a wrong offset!");
-static_assert(offsetof(ABP_BlueFlagMenuBG_3D_C, Rotate) == 0x0002C0, "Member 'ABP_BlueFlagMenuBG_3D_C::Rotate' has a wrong offset!");
-static_assert(offsetof(ABP_BlueFlagMenuBG_3D_C, RotateTimeline_Forward_8402B0744364A266E6E5668CF30B699F) == 0x0002C8, "Member 'ABP_BlueFlagMenuBG_3D_C::RotateTimeline_Forward_8402B0744364A266E6E5668CF30B699F' has a wrong offset!");
-static_assert(offsetof(ABP_BlueFlagMenuBG_3D_C, RotateTimeline_Rotate_8402B0744364A266E6E5668CF30B699F) == 0x0002CC, "Member 'ABP_BlueFlagMenuBG_3D_C::RotateTimeline_Rotate_8402B0744364A266E6E5668CF30B699F' has a wrong offset!");
-static_assert(offsetof(ABP_BlueFlagMenuBG_3D_C, RotateTimeline__Direction_8402B0744364A266E6E5668CF30B699F) == 0x0002D0, "Member 'ABP_BlueFlagMenuBG_3D_C::RotateTimeline__Direction_8402B0744364A266E6E5668CF30B699F' has a wrong offset!");
-static_assert(offsetof(ABP_BlueFlagMenuBG_3D_C, RotateTimeline) == 0x0002D8, "Member 'ABP_BlueFlagMenuBG_3D_C::RotateTimeline' has a wrong offset!");
-static_assert(offsetof(ABP_BlueFlagMenuBG_3D_C, As_WBP_Top_Menu) == 0x0002E0, "Member 'ABP_BlueFlagMenuBG_3D_C::As_WBP_Top_Menu' has a wrong offset!");
-static_assert(offsetof(ABP_BlueFlagMenuBG_3D_C, NewVar_0) == 0x0002E8, "Member 'ABP_BlueFlagMenuBG_3D_C::NewVar_0' has a wrong offset!");
-static_assert(offsetof(ABP_BlueFlagMenuBG_3D_C, InitTrans) == 0x000300, "Member 'ABP_BlueFlagMenuBG_3D_C::InitTrans' has a wrong offset!");
-static_assert(offsetof(ABP_BlueFlagMenuBG_3D_C, bUpdate) == 0x000360, "Member 'ABP_BlueFlagMenuBG_3D_C::bUpdate' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_BlueFlagMenuBG_3D_C;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -50,28 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_HeaderMenu_Sub_NewsBtn_C">();
+		BP_STATIC_CLASS_IMPL("WBP_HeaderMenu_Sub_NewsBtn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_HeaderMenu_Sub_NewsBtn_C")
 	}
 	static class UWBP_HeaderMenu_Sub_NewsBtn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_HeaderMenu_Sub_NewsBtn_C>();
 	}
 };
-static_assert(alignof(UWBP_HeaderMenu_Sub_NewsBtn_C) == 0x000008, "Wrong alignment on UWBP_HeaderMenu_Sub_NewsBtn_C");
-static_assert(sizeof(UWBP_HeaderMenu_Sub_NewsBtn_C) == 0x0004F8, "Wrong size on UWBP_HeaderMenu_Sub_NewsBtn_C");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_NewsBtn_C, UberGraphFrame) == 0x000488, "Member 'UWBP_HeaderMenu_Sub_NewsBtn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_NewsBtn_C, BtnBase) == 0x000490, "Member 'UWBP_HeaderMenu_Sub_NewsBtn_C::BtnBase' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_NewsBtn_C, DSP_Icon_New) == 0x000498, "Member 'UWBP_HeaderMenu_Sub_NewsBtn_C::DSP_Icon_New' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_NewsBtn_C, MouseInteractionBtn) == 0x0004A0, "Member 'UWBP_HeaderMenu_Sub_NewsBtn_C::MouseInteractionBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_NewsBtn_C, SizeBox_25) == 0x0004A8, "Member 'UWBP_HeaderMenu_Sub_NewsBtn_C::SizeBox_25' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_NewsBtn_C, TXT_News) == 0x0004B0, "Member 'UWBP_HeaderMenu_Sub_NewsBtn_C::TXT_News' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_NewsBtn_C, WBP_FooterMenu_Sub_ControllerBtn) == 0x0004B8, "Member 'UWBP_HeaderMenu_Sub_NewsBtn_C::WBP_FooterMenu_Sub_ControllerBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_NewsBtn_C, WBP_FooterMenu_Sub_ControllerCross) == 0x0004C0, "Member 'UWBP_HeaderMenu_Sub_NewsBtn_C::WBP_FooterMenu_Sub_ControllerCross' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_NewsBtn_C, WBP_FooterMenu_Sub_Key) == 0x0004C8, "Member 'UWBP_HeaderMenu_Sub_NewsBtn_C::WBP_FooterMenu_Sub_Key' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_NewsBtn_C, WBP_FooterMenu_Sub_KeyCross) == 0x0004D0, "Member 'UWBP_HeaderMenu_Sub_NewsBtn_C::WBP_FooterMenu_Sub_KeyCross' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_NewsBtn_C, WidgetSwitcher_Pict) == 0x0004D8, "Member 'UWBP_HeaderMenu_Sub_NewsBtn_C::WidgetSwitcher_Pict' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_NewsBtn_C, IsTitleMenu) == 0x0004E0, "Member 'UWBP_HeaderMenu_Sub_NewsBtn_C::IsTitleMenu' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_NewsBtn_C, OnMouseClick) == 0x0004E8, "Member 'UWBP_HeaderMenu_Sub_NewsBtn_C::OnMouseClick' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_HeaderMenu_Sub_NewsBtn_C;
 
 }
 

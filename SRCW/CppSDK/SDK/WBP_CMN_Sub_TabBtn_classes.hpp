@@ -43,23 +43,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_Sub_TabBtn_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_Sub_TabBtn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_Sub_TabBtn_C")
 	}
 	static class UWBP_CMN_Sub_TabBtn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_Sub_TabBtn_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_Sub_TabBtn_C) == 0x000008, "Wrong alignment on UWBP_CMN_Sub_TabBtn_C");
-static_assert(sizeof(UWBP_CMN_Sub_TabBtn_C) == 0x0004C0, "Wrong size on UWBP_CMN_Sub_TabBtn_C");
-static_assert(offsetof(UWBP_CMN_Sub_TabBtn_C, UberGraphFrame) == 0x000480, "Member 'UWBP_CMN_Sub_TabBtn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_TabBtn_C, Tab_NonActive_Loop) == 0x000488, "Member 'UWBP_CMN_Sub_TabBtn_C::Tab_NonActive_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_TabBtn_C, Tab_Select_Loop) == 0x000490, "Member 'UWBP_CMN_Sub_TabBtn_C::Tab_Select_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_TabBtn_C, Tab_Active_Loop) == 0x000498, "Member 'UWBP_CMN_Sub_TabBtn_C::Tab_Active_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_TabBtn_C, PAT_BtnBase) == 0x0004A0, "Member 'UWBP_CMN_Sub_TabBtn_C::PAT_BtnBase' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_TabBtn_C, PAT_TabPict) == 0x0004A8, "Member 'UWBP_CMN_Sub_TabBtn_C::PAT_TabPict' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_TabBtn_C, TXT_CategoryName) == 0x0004B0, "Member 'UWBP_CMN_Sub_TabBtn_C::TXT_CategoryName' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_TabBtn_C, Selectable) == 0x0004B8, "Member 'UWBP_CMN_Sub_TabBtn_C::Selectable' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_Sub_TabBtn_C;
 
 }
 

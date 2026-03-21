@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UnionRun_structs.hpp"
+#include "Engine_structs.hpp"
 #include "EMachineSelectMode_structs.hpp"
-#include "UnionUI_classes.hpp"
 #include "UMG_structs.hpp"
+#include "UnionUI_classes.hpp"
 
 
 namespace SDK
@@ -91,35 +91,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MachineSelect_Sub_TypeBox_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MachineSelect_Sub_TypeBox_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MachineSelect_Sub_TypeBox_C")
 	}
 	static class UWBP_MachineSelect_Sub_TypeBox_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MachineSelect_Sub_TypeBox_C>();
 	}
 };
-static_assert(alignof(UWBP_MachineSelect_Sub_TypeBox_C) == 0x000008, "Wrong alignment on UWBP_MachineSelect_Sub_TypeBox_C");
-static_assert(sizeof(UWBP_MachineSelect_Sub_TypeBox_C) == 0x000610, "Wrong size on UWBP_MachineSelect_Sub_TypeBox_C");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeBox_C, UberGraphFrame) == 0x000570, "Member 'UWBP_MachineSelect_Sub_TypeBox_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeBox_C, ScrollAnim) == 0x000578, "Member 'UWBP_MachineSelect_Sub_TypeBox_C::ScrollAnim' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeBox_C, TypeBox_Right_to_Left) == 0x000580, "Member 'UWBP_MachineSelect_Sub_TypeBox_C::TypeBox_Right_to_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeBox_C, TypeBox_Left_to_Right) == 0x000588, "Member 'UWBP_MachineSelect_Sub_TypeBox_C::TypeBox_Left_to_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeBox_C, TypeBox_Loop) == 0x000590, "Member 'UWBP_MachineSelect_Sub_TypeBox_C::TypeBox_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeBox_C, MLC_CursorBG) == 0x000598, "Member 'UWBP_MachineSelect_Sub_TypeBox_C::MLC_CursorBG' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeBox_C, MLC_TypeColor) == 0x0005A0, "Member 'UWBP_MachineSelect_Sub_TypeBox_C::MLC_TypeColor' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeBox_C, UnionScroll) == 0x0005A8, "Member 'UWBP_MachineSelect_Sub_TypeBox_C::UnionScroll' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeBox_C, WBP_MachineSelect_Sub_MachineBtn_01) == 0x0005B0, "Member 'UWBP_MachineSelect_Sub_TypeBox_C::WBP_MachineSelect_Sub_MachineBtn_01' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeBox_C, WBP_MachineSelect_Sub_MachineBtn_02) == 0x0005B8, "Member 'UWBP_MachineSelect_Sub_TypeBox_C::WBP_MachineSelect_Sub_MachineBtn_02' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeBox_C, WBP_MachineSelect_Sub_MachineBtn_03) == 0x0005C0, "Member 'UWBP_MachineSelect_Sub_TypeBox_C::WBP_MachineSelect_Sub_MachineBtn_03' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeBox_C, WBP_MachineSelect_Sub_MachineBtn_04) == 0x0005C8, "Member 'UWBP_MachineSelect_Sub_TypeBox_C::WBP_MachineSelect_Sub_MachineBtn_04' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeBox_C, WBP_MachineSelect_Sub_MachineBtn_05) == 0x0005D0, "Member 'UWBP_MachineSelect_Sub_TypeBox_C::WBP_MachineSelect_Sub_MachineBtn_05' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeBox_C, WBP_MachineSelect_Sub_MachineBtn_06) == 0x0005D8, "Member 'UWBP_MachineSelect_Sub_TypeBox_C::WBP_MachineSelect_Sub_MachineBtn_06' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeBox_C, WBP_MachineSelect_Sub_MachineBtn_07) == 0x0005E0, "Member 'UWBP_MachineSelect_Sub_TypeBox_C::WBP_MachineSelect_Sub_MachineBtn_07' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeBox_C, PlayerNumberIndex) == 0x0005E8, "Member 'UWBP_MachineSelect_Sub_TypeBox_C::PlayerNumberIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeBox_C, machineType) == 0x0005EC, "Member 'UWBP_MachineSelect_Sub_TypeBox_C::machineType' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeBox_C, MachineIds) == 0x0005F0, "Member 'UWBP_MachineSelect_Sub_TypeBox_C::MachineIds' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeBox_C, Mode) == 0x000600, "Member 'UWBP_MachineSelect_Sub_TypeBox_C::Mode' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeBox_C, ResourcePreloader) == 0x000608, "Member 'UWBP_MachineSelect_Sub_TypeBox_C::ResourcePreloader' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MachineSelect_Sub_TypeBox_C;
 
 }
 

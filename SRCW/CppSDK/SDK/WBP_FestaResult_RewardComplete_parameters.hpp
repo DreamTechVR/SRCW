@@ -42,24 +42,7 @@ public:
 	uint8                                         Pad_1B9[0x7];                                      // 0x01B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                CallFunc_LoadAsset_Blocking_ReturnValue;           // 0x01C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete) == 0x000008, "Wrong alignment on WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete");
-static_assert(sizeof(WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete) == 0x0001C8, "Wrong size on WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete");
-static_assert(offsetof(WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete, EntryPoint) == 0x000000, "Member 'WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete, CallFunc_GetFestaIdUtil_ReturnValue) == 0x000004, "Member 'WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete::CallFunc_GetFestaIdUtil_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete, K2Node_CustomEvent_DriverID) == 0x000008, "Member 'WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete::K2Node_CustomEvent_DriverID' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete, CallFunc_SoundPlay_ReturnValue) == 0x00000C, "Member 'WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete, CallFunc_PlayAnimation_ReturnValue) == 0x000010, "Member 'WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000018, "Member 'WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete, CallFunc_PlayAnimation_ReturnValue_1) == 0x000020, "Member 'WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete, K2Node_DynamicCast_AsFesta_UIData_Asset) == 0x000028, "Member 'WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete::K2Node_DynamicCast_AsFesta_UIData_Asset' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete, CallFunc_GetFestaUIData_bFoundData) == 0x000031, "Member 'WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete::CallFunc_GetFestaUIData_bFoundData' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete, CallFunc_GetFestaUIData_FestaUIData) == 0x000038, "Member 'WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete::CallFunc_GetFestaUIData_FestaUIData' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete, CallFunc_IsValidSoftObjectReference_ReturnValue) == 0x0001A0, "Member 'WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete::CallFunc_IsValidSoftObjectReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete, CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue) == 0x0001A8, "Member 'WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete::CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete, K2Node_DynamicCast_As_____2D) == 0x0001B0, "Member 'WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete, K2Node_DynamicCast_bSuccess_1) == 0x0001B8, "Member 'WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x0001C0, "Member 'WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FestaResult_RewardComplete_C_ExecuteUbergraph_WBP_FestaResult_RewardComplete;
 
 // Function WBP_FestaResult_RewardComplete.WBP_FestaResult_RewardComplete_C.Open
 // 0x0001 (0x0001 - 0x0000)
@@ -68,9 +51,7 @@ struct WBP_FestaResult_RewardComplete_C_Open final
 public:
 	EDriverId                                     DriverId;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FestaResult_RewardComplete_C_Open) == 0x000001, "Wrong alignment on WBP_FestaResult_RewardComplete_C_Open");
-static_assert(sizeof(WBP_FestaResult_RewardComplete_C_Open) == 0x000001, "Wrong size on WBP_FestaResult_RewardComplete_C_Open");
-static_assert(offsetof(WBP_FestaResult_RewardComplete_C_Open, DriverId) == 0x000000, "Member 'WBP_FestaResult_RewardComplete_C_Open::DriverId' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FestaResult_RewardComplete_C_Open;
 
 }
 

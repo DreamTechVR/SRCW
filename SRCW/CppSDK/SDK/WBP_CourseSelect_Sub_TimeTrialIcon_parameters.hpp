@@ -28,14 +28,7 @@ public:
 	bool                                          K2Node_CustomEvent_Lock;                           // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_Sub_TimeTrialIcon_C_ExecuteUbergraph_WBP_CourseSelect_Sub_TimeTrialIcon) == 0x000004, "Wrong alignment on WBP_CourseSelect_Sub_TimeTrialIcon_C_ExecuteUbergraph_WBP_CourseSelect_Sub_TimeTrialIcon");
-static_assert(sizeof(WBP_CourseSelect_Sub_TimeTrialIcon_C_ExecuteUbergraph_WBP_CourseSelect_Sub_TimeTrialIcon) == 0x00000C, "Wrong size on WBP_CourseSelect_Sub_TimeTrialIcon_C_ExecuteUbergraph_WBP_CourseSelect_Sub_TimeTrialIcon");
-static_assert(offsetof(WBP_CourseSelect_Sub_TimeTrialIcon_C_ExecuteUbergraph_WBP_CourseSelect_Sub_TimeTrialIcon, EntryPoint) == 0x000000, "Member 'WBP_CourseSelect_Sub_TimeTrialIcon_C_ExecuteUbergraph_WBP_CourseSelect_Sub_TimeTrialIcon::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_TimeTrialIcon_C_ExecuteUbergraph_WBP_CourseSelect_Sub_TimeTrialIcon, Temp_bool_Variable) == 0x000004, "Member 'WBP_CourseSelect_Sub_TimeTrialIcon_C_ExecuteUbergraph_WBP_CourseSelect_Sub_TimeTrialIcon::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_TimeTrialIcon_C_ExecuteUbergraph_WBP_CourseSelect_Sub_TimeTrialIcon, Temp_byte_Variable) == 0x000005, "Member 'WBP_CourseSelect_Sub_TimeTrialIcon_C_ExecuteUbergraph_WBP_CourseSelect_Sub_TimeTrialIcon::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_TimeTrialIcon_C_ExecuteUbergraph_WBP_CourseSelect_Sub_TimeTrialIcon, Temp_byte_Variable_1) == 0x000006, "Member 'WBP_CourseSelect_Sub_TimeTrialIcon_C_ExecuteUbergraph_WBP_CourseSelect_Sub_TimeTrialIcon::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_TimeTrialIcon_C_ExecuteUbergraph_WBP_CourseSelect_Sub_TimeTrialIcon, K2Node_CustomEvent_Lock) == 0x000007, "Member 'WBP_CourseSelect_Sub_TimeTrialIcon_C_ExecuteUbergraph_WBP_CourseSelect_Sub_TimeTrialIcon::K2Node_CustomEvent_Lock' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_TimeTrialIcon_C_ExecuteUbergraph_WBP_CourseSelect_Sub_TimeTrialIcon, K2Node_Select_Default) == 0x000008, "Member 'WBP_CourseSelect_Sub_TimeTrialIcon_C_ExecuteUbergraph_WBP_CourseSelect_Sub_TimeTrialIcon::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_Sub_TimeTrialIcon_C_ExecuteUbergraph_WBP_CourseSelect_Sub_TimeTrialIcon;
 
 // Function WBP_CourseSelect_Sub_TimeTrialIcon.WBP_CourseSelect_Sub_TimeTrialIcon_C.SetLockButton
 // 0x0001 (0x0001 - 0x0000)
@@ -44,9 +37,7 @@ struct WBP_CourseSelect_Sub_TimeTrialIcon_C_SetLockButton final
 public:
 	bool                                          Lock_0;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_Sub_TimeTrialIcon_C_SetLockButton) == 0x000001, "Wrong alignment on WBP_CourseSelect_Sub_TimeTrialIcon_C_SetLockButton");
-static_assert(sizeof(WBP_CourseSelect_Sub_TimeTrialIcon_C_SetLockButton) == 0x000001, "Wrong size on WBP_CourseSelect_Sub_TimeTrialIcon_C_SetLockButton");
-static_assert(offsetof(WBP_CourseSelect_Sub_TimeTrialIcon_C_SetLockButton, Lock_0) == 0x000000, "Member 'WBP_CourseSelect_Sub_TimeTrialIcon_C_SetLockButton::Lock_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_Sub_TimeTrialIcon_C_SetLockButton;
 
 }
 

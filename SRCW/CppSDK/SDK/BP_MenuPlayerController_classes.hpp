@@ -20,19 +20,19 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_MenuPlayerController.BP_MenuPlayerController_C
-// 0x0030 (0x0A68 - 0x0A38)
+// 0x0030 (0x0A60 - 0x0A30)
 class ABP_MenuPlayerController_C final : public AMenuPlayerController
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A38(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	TArray<struct FKey>                           Array_Element_Key;                                 // 0x0A40(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class UInputAction*>                   Array_Element_Action;                              // 0x0A50(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          KeyBoardF9Pressed;                                 // 0x0A60(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          KeyBoardShiftPressed;                              // 0x0A61(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          KeyBoardCtrlPressed;                               // 0x0A62(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ButtonLeftThumbstickPressed;                       // 0x0A63(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ButtonRightThumbstickPressed;                      // 0x0A64(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ButtonRightTriggerPressed;                         // 0x0A65(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A30(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	TArray<struct FKey>                           Array_Element_Key;                                 // 0x0A38(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class UInputAction*>                   Array_Element_Action;                              // 0x0A48(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          KeyBoardF9Pressed;                                 // 0x0A58(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          KeyBoardShiftPressed;                              // 0x0A59(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          KeyBoardCtrlPressed;                               // 0x0A5A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ButtonLeftThumbstickPressed;                       // 0x0A5B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ButtonRightThumbstickPressed;                      // 0x0A5C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ButtonRightTriggerPressed;                         // 0x0A5D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BP_MenuPlayerController(int32 EntryPoint);
@@ -62,24 +62,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_MenuPlayerController_C">();
+		BP_STATIC_CLASS_IMPL("BP_MenuPlayerController_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_MenuPlayerController_C")
 	}
 	static class ABP_MenuPlayerController_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_MenuPlayerController_C>();
 	}
 };
-static_assert(alignof(ABP_MenuPlayerController_C) == 0x000008, "Wrong alignment on ABP_MenuPlayerController_C");
-static_assert(sizeof(ABP_MenuPlayerController_C) == 0x000A68, "Wrong size on ABP_MenuPlayerController_C");
-static_assert(offsetof(ABP_MenuPlayerController_C, UberGraphFrame) == 0x000A38, "Member 'ABP_MenuPlayerController_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_MenuPlayerController_C, Array_Element_Key) == 0x000A40, "Member 'ABP_MenuPlayerController_C::Array_Element_Key' has a wrong offset!");
-static_assert(offsetof(ABP_MenuPlayerController_C, Array_Element_Action) == 0x000A50, "Member 'ABP_MenuPlayerController_C::Array_Element_Action' has a wrong offset!");
-static_assert(offsetof(ABP_MenuPlayerController_C, KeyBoardF9Pressed) == 0x000A60, "Member 'ABP_MenuPlayerController_C::KeyBoardF9Pressed' has a wrong offset!");
-static_assert(offsetof(ABP_MenuPlayerController_C, KeyBoardShiftPressed) == 0x000A61, "Member 'ABP_MenuPlayerController_C::KeyBoardShiftPressed' has a wrong offset!");
-static_assert(offsetof(ABP_MenuPlayerController_C, KeyBoardCtrlPressed) == 0x000A62, "Member 'ABP_MenuPlayerController_C::KeyBoardCtrlPressed' has a wrong offset!");
-static_assert(offsetof(ABP_MenuPlayerController_C, ButtonLeftThumbstickPressed) == 0x000A63, "Member 'ABP_MenuPlayerController_C::ButtonLeftThumbstickPressed' has a wrong offset!");
-static_assert(offsetof(ABP_MenuPlayerController_C, ButtonRightThumbstickPressed) == 0x000A64, "Member 'ABP_MenuPlayerController_C::ButtonRightThumbstickPressed' has a wrong offset!");
-static_assert(offsetof(ABP_MenuPlayerController_C, ButtonRightTriggerPressed) == 0x000A65, "Member 'ABP_MenuPlayerController_C::ButtonRightTriggerPressed' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_MenuPlayerController_C;
 
 }
 

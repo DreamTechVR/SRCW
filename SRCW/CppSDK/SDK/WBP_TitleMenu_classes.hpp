@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_TitleMenu.WBP_TitleMenu_C
-// 0x0180 (0x0580 - 0x0400)
+// 0x0188 (0x0588 - 0x0400)
 class UWBP_TitleMenu_C final : public UTitleScene
 {
 public:
@@ -38,36 +38,37 @@ public:
 	class UImage*                                 KeyVisual;                                         // 0x0458(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             MatchingText;                                      // 0x0460(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             Message_Text;                                      // 0x0468(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 PopText_base;                                      // 0x0470(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 PopText_base_Shadow;                               // 0x0478(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               QR;                                                // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 QR_Main;                                           // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 QR_Ont;                                            // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 QR_Trial;                                          // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USafeZone*                              SafeZone_0;                                        // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             ServerNameString;                                  // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 TitleLOGO;                                         // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionRichTextBlock*                    TXT_Account;                                       // 0x04B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionRichTextBlock*                    TXT_Manual;                                        // 0x04C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionRichTextBlock*                    TXT_SEGA;                                          // 0x04C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionRichTextBlock*                    TXT_Version;                                       // 0x04D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionRichTextBlock*                    TXT_VersionText;                                   // 0x04D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             VersionText;                                       // 0x04E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_HeaderMenu_Sub_NewsBtn_C*          WBP_HeaderMenu_Sub_NewsBtn;                        // 0x04E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_HeaderMenu_Sub_NewsBtn_C*          WBP_HeaderMenu_Sub_PC_EndBtn;                      // 0x04F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_TitleMenu_Sub_2nd_C*               WBP_TitleMenu_Sub_2nd;                             // 0x04F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_TitleMenu_Sub_Btn_C*               WBP_TitleMenu_Sub_Btn;                             // 0x0500(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        WidgetSwitcher_QR;                                 // 0x0508(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Window;                                            // 0x0510(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void()>              NextSequenceEventDispatcher;                       // 0x0518(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TArray<class FText>                           TracelRingSettingErrorMessages;                    // 0x0528(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          LocalBothOpen;                                     // 0x0538(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          LocalBothClose;                                    // 0x0539(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          DisableSubBtnAnimation;                            // 0x053A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_53B[0x5];                                      // 0x053B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_TitleMenu_Sub_Btn_C*               ActivePressButtonWidget;                           // 0x0540(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class FString                                 In_String;                                         // 0x0548(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	TSoftObjectPtr<class UTexture2D>              Soft_Texture;                                      // 0x0558(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash)
+	class UTextBlock*                             PlatformText;                                      // 0x0470(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 PopText_base;                                      // 0x0478(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 PopText_base_Shadow;                               // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               QR;                                                // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 QR_Main;                                           // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 QR_Ont;                                            // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 QR_Trial;                                          // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USafeZone*                              SafeZone_0;                                        // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             ServerNameString;                                  // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 TitleLOGO;                                         // 0x04B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_Account;                                       // 0x04C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_Manual;                                        // 0x04C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_SEGA;                                          // 0x04D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_Version;                                       // 0x04D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_VersionText;                                   // 0x04E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             VersionText;                                       // 0x04E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_HeaderMenu_Sub_NewsBtn_C*          WBP_HeaderMenu_Sub_NewsBtn;                        // 0x04F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_HeaderMenu_Sub_NewsBtn_C*          WBP_HeaderMenu_Sub_PC_EndBtn;                      // 0x04F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_TitleMenu_Sub_2nd_C*               WBP_TitleMenu_Sub_2nd;                             // 0x0500(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_TitleMenu_Sub_Btn_C*               WBP_TitleMenu_Sub_Btn;                             // 0x0508(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        WidgetSwitcher_QR;                                 // 0x0510(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Window;                                            // 0x0518(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TMulticastInlineDelegate<void()>              NextSequenceEventDispatcher;                       // 0x0520(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TArray<class FText>                           TracelRingSettingErrorMessages;                    // 0x0530(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          LocalBothOpen;                                     // 0x0540(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          LocalBothClose;                                    // 0x0541(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          DisableSubBtnAnimation;                            // 0x0542(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_543[0x5];                                      // 0x0543(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_TitleMenu_Sub_Btn_C*               ActivePressButtonWidget;                           // 0x0548(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FString                                 In_String;                                         // 0x0550(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	TSoftObjectPtr<class UTexture2D>              Soft_Texture;                                      // 0x0560(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash)
 
 public:
 	void AppearPressIcon();
@@ -145,58 +146,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_TitleMenu_C">();
+		BP_STATIC_CLASS_IMPL("WBP_TitleMenu_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_TitleMenu_C")
 	}
 	static class UWBP_TitleMenu_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_TitleMenu_C>();
 	}
 };
-static_assert(alignof(UWBP_TitleMenu_C) == 0x000008, "Wrong alignment on UWBP_TitleMenu_C");
-static_assert(sizeof(UWBP_TitleMenu_C) == 0x000580, "Wrong size on UWBP_TitleMenu_C");
-static_assert(offsetof(UWBP_TitleMenu_C, UberGraphFrame) == 0x000400, "Member 'UWBP_TitleMenu_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, Title_Loop) == 0x000408, "Member 'UWBP_TitleMenu_C::Title_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, Title_In) == 0x000410, "Member 'UWBP_TitleMenu_C::Title_In' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, Message) == 0x000418, "Member 'UWBP_TitleMenu_C::Message' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, Arrow) == 0x000420, "Member 'UWBP_TitleMenu_C::Arrow' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, Arrow_Shadow) == 0x000428, "Member 'UWBP_TitleMenu_C::Arrow_Shadow' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, BG_Black) == 0x000430, "Member 'UWBP_TitleMenu_C::BG_Black' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, CRMUserIdString) == 0x000438, "Member 'UWBP_TitleMenu_C::CRMUserIdString' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, DSP_VersionText) == 0x000440, "Member 'UWBP_TitleMenu_C::DSP_VersionText' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, DSP_WBP_TopMenu_Sub_ShopInfo) == 0x000448, "Member 'UWBP_TitleMenu_C::DSP_WBP_TopMenu_Sub_ShopInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, EOSRelayControlText) == 0x000450, "Member 'UWBP_TitleMenu_C::EOSRelayControlText' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, KeyVisual) == 0x000458, "Member 'UWBP_TitleMenu_C::KeyVisual' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, MatchingText) == 0x000460, "Member 'UWBP_TitleMenu_C::MatchingText' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, Message_Text) == 0x000468, "Member 'UWBP_TitleMenu_C::Message_Text' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, PopText_base) == 0x000470, "Member 'UWBP_TitleMenu_C::PopText_base' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, PopText_base_Shadow) == 0x000478, "Member 'UWBP_TitleMenu_C::PopText_base_Shadow' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, QR) == 0x000480, "Member 'UWBP_TitleMenu_C::QR' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, QR_Main) == 0x000488, "Member 'UWBP_TitleMenu_C::QR_Main' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, QR_Ont) == 0x000490, "Member 'UWBP_TitleMenu_C::QR_Ont' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, QR_Trial) == 0x000498, "Member 'UWBP_TitleMenu_C::QR_Trial' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, SafeZone_0) == 0x0004A0, "Member 'UWBP_TitleMenu_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, ServerNameString) == 0x0004A8, "Member 'UWBP_TitleMenu_C::ServerNameString' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, TitleLOGO) == 0x0004B0, "Member 'UWBP_TitleMenu_C::TitleLOGO' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, TXT_Account) == 0x0004B8, "Member 'UWBP_TitleMenu_C::TXT_Account' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, TXT_Manual) == 0x0004C0, "Member 'UWBP_TitleMenu_C::TXT_Manual' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, TXT_SEGA) == 0x0004C8, "Member 'UWBP_TitleMenu_C::TXT_SEGA' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, TXT_Version) == 0x0004D0, "Member 'UWBP_TitleMenu_C::TXT_Version' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, TXT_VersionText) == 0x0004D8, "Member 'UWBP_TitleMenu_C::TXT_VersionText' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, VersionText) == 0x0004E0, "Member 'UWBP_TitleMenu_C::VersionText' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, WBP_HeaderMenu_Sub_NewsBtn) == 0x0004E8, "Member 'UWBP_TitleMenu_C::WBP_HeaderMenu_Sub_NewsBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, WBP_HeaderMenu_Sub_PC_EndBtn) == 0x0004F0, "Member 'UWBP_TitleMenu_C::WBP_HeaderMenu_Sub_PC_EndBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, WBP_TitleMenu_Sub_2nd) == 0x0004F8, "Member 'UWBP_TitleMenu_C::WBP_TitleMenu_Sub_2nd' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, WBP_TitleMenu_Sub_Btn) == 0x000500, "Member 'UWBP_TitleMenu_C::WBP_TitleMenu_Sub_Btn' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, WidgetSwitcher_QR) == 0x000508, "Member 'UWBP_TitleMenu_C::WidgetSwitcher_QR' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, Window) == 0x000510, "Member 'UWBP_TitleMenu_C::Window' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, NextSequenceEventDispatcher) == 0x000518, "Member 'UWBP_TitleMenu_C::NextSequenceEventDispatcher' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, TracelRingSettingErrorMessages) == 0x000528, "Member 'UWBP_TitleMenu_C::TracelRingSettingErrorMessages' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, LocalBothOpen) == 0x000538, "Member 'UWBP_TitleMenu_C::LocalBothOpen' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, LocalBothClose) == 0x000539, "Member 'UWBP_TitleMenu_C::LocalBothClose' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, DisableSubBtnAnimation) == 0x00053A, "Member 'UWBP_TitleMenu_C::DisableSubBtnAnimation' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, ActivePressButtonWidget) == 0x000540, "Member 'UWBP_TitleMenu_C::ActivePressButtonWidget' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, In_String) == 0x000548, "Member 'UWBP_TitleMenu_C::In_String' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_C, Soft_Texture) == 0x000558, "Member 'UWBP_TitleMenu_C::Soft_Texture' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_TitleMenu_C;
 
 }
 

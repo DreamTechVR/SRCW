@@ -29,13 +29,7 @@ public:
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TimeTrial_Sub_Online_C_DoCustomNavigation) == 0x000008, "Wrong alignment on WBP_TimeTrial_Sub_Online_C_DoCustomNavigation");
-static_assert(sizeof(WBP_TimeTrial_Sub_Online_C_DoCustomNavigation) == 0x000018, "Wrong size on WBP_TimeTrial_Sub_Online_C_DoCustomNavigation");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_DoCustomNavigation, Navigation_0) == 0x000000, "Member 'WBP_TimeTrial_Sub_Online_C_DoCustomNavigation::Navigation_0' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_DoCustomNavigation, ReturnValue) == 0x000008, "Member 'WBP_TimeTrial_Sub_Online_C_DoCustomNavigation::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_DoCustomNavigation, CallFunc_IsXbox_ReturnValue) == 0x000010, "Member 'WBP_TimeTrial_Sub_Online_C_DoCustomNavigation::CallFunc_IsXbox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_DoCustomNavigation, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000011, "Member 'WBP_TimeTrial_Sub_Online_C_DoCustomNavigation::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_DoCustomNavigation, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000012, "Member 'WBP_TimeTrial_Sub_Online_C_DoCustomNavigation::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_Sub_Online_C_DoCustomNavigation;
 
 // Function WBP_TimeTrial_Sub_Online.WBP_TimeTrial_Sub_Online_C.DoCustomNavigation_0
 // 0x0018 (0x0018 - 0x0000)
@@ -49,13 +43,7 @@ public:
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TimeTrial_Sub_Online_C_DoCustomNavigation_0) == 0x000008, "Wrong alignment on WBP_TimeTrial_Sub_Online_C_DoCustomNavigation_0");
-static_assert(sizeof(WBP_TimeTrial_Sub_Online_C_DoCustomNavigation_0) == 0x000018, "Wrong size on WBP_TimeTrial_Sub_Online_C_DoCustomNavigation_0");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_DoCustomNavigation_0, Navigation_0) == 0x000000, "Member 'WBP_TimeTrial_Sub_Online_C_DoCustomNavigation_0::Navigation_0' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_DoCustomNavigation_0, ReturnValue) == 0x000008, "Member 'WBP_TimeTrial_Sub_Online_C_DoCustomNavigation_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_DoCustomNavigation_0, CallFunc_IsXbox_ReturnValue) == 0x000010, "Member 'WBP_TimeTrial_Sub_Online_C_DoCustomNavigation_0::CallFunc_IsXbox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_DoCustomNavigation_0, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000011, "Member 'WBP_TimeTrial_Sub_Online_C_DoCustomNavigation_0::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_DoCustomNavigation_0, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000012, "Member 'WBP_TimeTrial_Sub_Online_C_DoCustomNavigation_0::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_Sub_Online_C_DoCustomNavigation_0;
 
 // Function WBP_TimeTrial_Sub_Online.WBP_TimeTrial_Sub_Online_C.ExecuteUbergraph_WBP_TimeTrial_Sub_Online
 // 0x0028 (0x0028 - 0x0000)
@@ -70,13 +58,7 @@ public:
 	class UUnionUIButtonBase*                     CallFunc_GetLastFocusedButton_ReturnValue;         // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_InFocus;                        // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TimeTrial_Sub_Online_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online) == 0x000008, "Wrong alignment on WBP_TimeTrial_Sub_Online_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online");
-static_assert(sizeof(WBP_TimeTrial_Sub_Online_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online) == 0x000028, "Wrong size on WBP_TimeTrial_Sub_Online_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online, EntryPoint) == 0x000000, "Member 'WBP_TimeTrial_Sub_Online_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'WBP_TimeTrial_Sub_Online_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online, CallFunc_GetLastFocusedButton_OutLastFocusedButtonIndex) == 0x000010, "Member 'WBP_TimeTrial_Sub_Online_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online::CallFunc_GetLastFocusedButton_OutLastFocusedButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online, CallFunc_GetLastFocusedButton_ReturnValue) == 0x000018, "Member 'WBP_TimeTrial_Sub_Online_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online::CallFunc_GetLastFocusedButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online, K2Node_CustomEvent_InFocus) == 0x000020, "Member 'WBP_TimeTrial_Sub_Online_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online::K2Node_CustomEvent_InFocus' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_Sub_Online_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online;
 
 // Function WBP_TimeTrial_Sub_Online.WBP_TimeTrial_Sub_Online_C.OnFirstFocus
 // 0x0008 (0x0008 - 0x0000)
@@ -85,9 +67,7 @@ struct WBP_TimeTrial_Sub_Online_C_OnFirstFocus final
 public:
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TimeTrial_Sub_Online_C_OnFirstFocus) == 0x000008, "Wrong alignment on WBP_TimeTrial_Sub_Online_C_OnFirstFocus");
-static_assert(sizeof(WBP_TimeTrial_Sub_Online_C_OnFirstFocus) == 0x000008, "Wrong size on WBP_TimeTrial_Sub_Online_C_OnFirstFocus");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_OnFirstFocus, CallFunc_GetOwningPlayer_ReturnValue) == 0x000000, "Member 'WBP_TimeTrial_Sub_Online_C_OnFirstFocus::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_Sub_Online_C_OnFirstFocus;
 
 // Function WBP_TimeTrial_Sub_Online.WBP_TimeTrial_Sub_Online_C.SetIsFocusable
 // 0x0001 (0x0001 - 0x0000)
@@ -96,9 +76,7 @@ struct WBP_TimeTrial_Sub_Online_C_SetIsFocusable final
 public:
 	bool                                          InFocus;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TimeTrial_Sub_Online_C_SetIsFocusable) == 0x000001, "Wrong alignment on WBP_TimeTrial_Sub_Online_C_SetIsFocusable");
-static_assert(sizeof(WBP_TimeTrial_Sub_Online_C_SetIsFocusable) == 0x000001, "Wrong size on WBP_TimeTrial_Sub_Online_C_SetIsFocusable");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_SetIsFocusable, InFocus) == 0x000000, "Member 'WBP_TimeTrial_Sub_Online_C_SetIsFocusable::InFocus' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_Sub_Online_C_SetIsFocusable;
 
 // Function WBP_TimeTrial_Sub_Online.WBP_TimeTrial_Sub_Online_C.Setup Online Panel
 // 0x0198 (0x0198 - 0x0000)
@@ -166,54 +144,7 @@ public:
 	TArray<class UUnionUIButtonBase*>             K2Node_MakeArray_Array_1;                          // 0x0180(0x0010)(ReferenceParm, ContainsInstancedReference)
 	class UUnionUIButtonsPanel*                   CallFunc_SetupButtonsPanel_ReturnValue;            // 0x0190(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel) == 0x000008, "Wrong alignment on WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel");
-static_assert(sizeof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel) == 0x000198, "Wrong size on WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, InStageId) == 0x000000, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::InStageId' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, TimeTrialRaceData) == 0x000008, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::TimeTrialRaceData' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, InPlatform) == 0x000058, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::InPlatform' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, InUserName) == 0x000060, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::InUserName' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, InHonorId) == 0x000070, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::InHonorId' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, SetGadgetPresetData) == 0x000078, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::SetGadgetPresetData' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_IsXbox_ReturnValue) == 0x000088, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_IsXbox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, Temp_int_Loop_Counter_Variable) == 0x00008C, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, Temp_int_Array_Index_Variable) == 0x000090, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_Add_IntInt_ReturnValue) == 0x000094, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, Temp_int_Loop_Counter_Variable_1) == 0x000098, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_Add_IntInt_ReturnValue_1) == 0x00009C, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, Temp_int_Array_Index_Variable_1) == 0x0000A0, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_Add_IntInt_ReturnValue_2) == 0x0000A4, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_IsXbox_ReturnValue_1) == 0x0000A8, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_IsXbox_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_Array_Get_Item) == 0x0000AC, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_Array_Length_ReturnValue) == 0x0000B4, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_Less_IntInt_ReturnValue) == 0x0000B8, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, K2Node_MakeStruct_UserGadgetData) == 0x0000BC, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::K2Node_MakeStruct_UserGadgetData' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_ForceGetIsGadgetReleased_ReturnValue) == 0x0000C4, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_ForceGetIsGadgetReleased_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000C5, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x0000C6, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_MakeLiteralText_ReturnValue) == 0x0000C8, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_MakeLiteralText_ReturnValue_1) == 0x0000D8, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_GetDynamicMaterial_ReturnValue) == 0x0000E8, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_MakeLiteralText_ReturnValue_2) == 0x0000F0, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_MakeLiteralText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_IsLineGuideDisable_ReturnValue) == 0x000100, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_IsLineGuideDisable_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_Not_PreBool_ReturnValue) == 0x000101, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x000108, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_IsGhostMachineDisable_ReturnValue) == 0x000110, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_IsGhostMachineDisable_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_Not_PreBool_ReturnValue_1) == 0x000111, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_ConvertClockCountToLapTimeText_ReturnValue) == 0x000118, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_ConvertClockCountToLapTimeText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, Temp_int_Variable) == 0x000128, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, Temp_bool_Variable) == 0x00012C, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, K2Node_Select_Default) == 0x000130, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, K2Node_Select_Default_1) == 0x000134, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_ConvertClockCountToLapTimeText_ReturnValue_1) == 0x000140, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_ConvertClockCountToLapTimeText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_Array_Add_ReturnValue) == 0x000150, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, K2Node_MakeArray_Array) == 0x000158, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_Array_Get_Item_1) == 0x000168, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_Array_Length_ReturnValue_1) == 0x000170, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_Less_IntInt_ReturnValue_1) == 0x000174, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_MakeLiteralBool_ReturnValue) == 0x000175, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_MakeLiteralBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_MakeLiteralInt_ReturnValue) == 0x000178, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, K2Node_MakeArray_Array_1) == 0x000180, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_SetupButtonsPanel_ReturnValue) == 0x000190, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_SetupButtonsPanel_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel;
 
 }
 

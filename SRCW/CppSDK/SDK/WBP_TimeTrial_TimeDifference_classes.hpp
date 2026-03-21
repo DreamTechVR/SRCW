@@ -37,21 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_TimeTrial_TimeDifference_C">();
+		BP_STATIC_CLASS_IMPL("WBP_TimeTrial_TimeDifference_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_TimeTrial_TimeDifference_C")
 	}
 	static class UWBP_TimeTrial_TimeDifference_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_TimeTrial_TimeDifference_C>();
 	}
 };
-static_assert(alignof(UWBP_TimeTrial_TimeDifference_C) == 0x000008, "Wrong alignment on UWBP_TimeTrial_TimeDifference_C");
-static_assert(sizeof(UWBP_TimeTrial_TimeDifference_C) == 0x000310, "Wrong size on UWBP_TimeTrial_TimeDifference_C");
-static_assert(offsetof(UWBP_TimeTrial_TimeDifference_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_TimeTrial_TimeDifference_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_TimeDifference_C, Style_Tie) == 0x0002E8, "Member 'UWBP_TimeTrial_TimeDifference_C::Style_Tie' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_TimeDifference_C, Style_Down) == 0x0002F0, "Member 'UWBP_TimeTrial_TimeDifference_C::Style_Down' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_TimeDifference_C, Style_Up) == 0x0002F8, "Member 'UWBP_TimeTrial_TimeDifference_C::Style_Up' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_TimeDifference_C, Border_Color) == 0x000300, "Member 'UWBP_TimeTrial_TimeDifference_C::Border_Color' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_TimeDifference_C, TXT_Time) == 0x000308, "Member 'UWBP_TimeTrial_TimeDifference_C::TXT_Time' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_TimeTrial_TimeDifference_C;
 
 }
 

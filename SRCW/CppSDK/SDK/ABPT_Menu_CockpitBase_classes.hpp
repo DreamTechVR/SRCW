@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -37,22 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABPT_Menu_CockpitBase_C">();
+		BP_STATIC_CLASS_IMPL("ABPT_Menu_CockpitBase_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABPT_Menu_CockpitBase_C")
 	}
 	static class UABPT_Menu_CockpitBase_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UABPT_Menu_CockpitBase_C>();
 	}
 };
-static_assert(alignof(UABPT_Menu_CockpitBase_C) == 0x000010, "Wrong alignment on UABPT_Menu_CockpitBase_C");
-static_assert(sizeof(UABPT_Menu_CockpitBase_C) == 0x000650, "Wrong size on UABPT_Menu_CockpitBase_C");
-static_assert(offsetof(UABPT_Menu_CockpitBase_C, UberGraphFrame) == 0x0004E0, "Member 'UABPT_Menu_CockpitBase_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UABPT_Menu_CockpitBase_C, AnimBlueprintExtension_PropertyAccess) == 0x0004E8, "Member 'UABPT_Menu_CockpitBase_C::AnimBlueprintExtension_PropertyAccess' has a wrong offset!");
-static_assert(offsetof(UABPT_Menu_CockpitBase_C, AnimBlueprintExtension_Base) == 0x0004F0, "Member 'UABPT_Menu_CockpitBase_C::AnimBlueprintExtension_Base' has a wrong offset!");
-static_assert(offsetof(UABPT_Menu_CockpitBase_C, AnimGraphNode_Root) == 0x0004F8, "Member 'UABPT_Menu_CockpitBase_C::AnimGraphNode_Root' has a wrong offset!");
-static_assert(offsetof(UABPT_Menu_CockpitBase_C, AnimGraphNode_SequencePlayer) == 0x000518, "Member 'UABPT_Menu_CockpitBase_C::AnimGraphNode_SequencePlayer' has a wrong offset!");
-static_assert(offsetof(UABPT_Menu_CockpitBase_C, AnimGraphNode_StateResult) == 0x000560, "Member 'UABPT_Menu_CockpitBase_C::AnimGraphNode_StateResult' has a wrong offset!");
-static_assert(offsetof(UABPT_Menu_CockpitBase_C, AnimGraphNode_StateMachine) == 0x000580, "Member 'UABPT_Menu_CockpitBase_C::AnimGraphNode_StateMachine' has a wrong offset!");
+DUMPER7_ASSERTS_UABPT_Menu_CockpitBase_C;
 
 }
 

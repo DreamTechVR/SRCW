@@ -44,22 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Sub_FriendList_MyStatus_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Sub_FriendList_MyStatus_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Sub_FriendList_MyStatus_C")
 	}
 	static class UWBP_Sub_FriendList_MyStatus_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Sub_FriendList_MyStatus_C>();
 	}
 };
-static_assert(alignof(UWBP_Sub_FriendList_MyStatus_C) == 0x000008, "Wrong alignment on UWBP_Sub_FriendList_MyStatus_C");
-static_assert(sizeof(UWBP_Sub_FriendList_MyStatus_C) == 0x000318, "Wrong size on UWBP_Sub_FriendList_MyStatus_C");
-static_assert(offsetof(UWBP_Sub_FriendList_MyStatus_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Sub_FriendList_MyStatus_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Sub_FriendList_MyStatus_C, base) == 0x0002E8, "Member 'UWBP_Sub_FriendList_MyStatus_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_Sub_FriendList_MyStatus_C, PAT_PlatformIcon) == 0x0002F0, "Member 'UWBP_Sub_FriendList_MyStatus_C::PAT_PlatformIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Sub_FriendList_MyStatus_C, PlayerIdBase) == 0x0002F8, "Member 'UWBP_Sub_FriendList_MyStatus_C::PlayerIdBase' has a wrong offset!");
-static_assert(offsetof(UWBP_Sub_FriendList_MyStatus_C, TXT_PlayerId) == 0x000300, "Member 'UWBP_Sub_FriendList_MyStatus_C::TXT_PlayerId' has a wrong offset!");
-static_assert(offsetof(UWBP_Sub_FriendList_MyStatus_C, TXT_PlayerName) == 0x000308, "Member 'UWBP_Sub_FriendList_MyStatus_C::TXT_PlayerName' has a wrong offset!");
-static_assert(offsetof(UWBP_Sub_FriendList_MyStatus_C, WBP_Friend_UserIcon) == 0x000310, "Member 'UWBP_Sub_FriendList_MyStatus_C::WBP_Friend_UserIcon' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Sub_FriendList_MyStatus_C;
 
 }
 

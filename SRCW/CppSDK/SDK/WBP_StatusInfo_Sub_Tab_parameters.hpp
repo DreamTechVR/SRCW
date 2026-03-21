@@ -23,9 +23,7 @@ struct WBP_StatusInfo_Sub_Tab_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Tab final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_Sub_Tab_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Tab) == 0x000004, "Wrong alignment on WBP_StatusInfo_Sub_Tab_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Tab");
-static_assert(sizeof(WBP_StatusInfo_Sub_Tab_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Tab) == 0x000004, "Wrong size on WBP_StatusInfo_Sub_Tab_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Tab");
-static_assert(offsetof(WBP_StatusInfo_Sub_Tab_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Tab, EntryPoint) == 0x000000, "Member 'WBP_StatusInfo_Sub_Tab_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Tab::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_Sub_Tab_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Tab;
 
 // Function WBP_StatusInfo_Sub_Tab.WBP_StatusInfo_Sub_Tab_C.SetSelected
 // 0x000C (0x000C - 0x0000)
@@ -40,15 +38,7 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_4;          // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_5;          // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_Sub_Tab_C_SetSelected) == 0x000004, "Wrong alignment on WBP_StatusInfo_Sub_Tab_C_SetSelected");
-static_assert(sizeof(WBP_StatusInfo_Sub_Tab_C_SetSelected) == 0x00000C, "Wrong size on WBP_StatusInfo_Sub_Tab_C_SetSelected");
-static_assert(offsetof(WBP_StatusInfo_Sub_Tab_C_SetSelected, Index_0) == 0x000000, "Member 'WBP_StatusInfo_Sub_Tab_C_SetSelected::Index_0' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Tab_C_SetSelected, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000004, "Member 'WBP_StatusInfo_Sub_Tab_C_SetSelected::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Tab_C_SetSelected, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000005, "Member 'WBP_StatusInfo_Sub_Tab_C_SetSelected::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Tab_C_SetSelected, CallFunc_EqualEqual_IntInt_ReturnValue_2) == 0x000006, "Member 'WBP_StatusInfo_Sub_Tab_C_SetSelected::CallFunc_EqualEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Tab_C_SetSelected, CallFunc_EqualEqual_IntInt_ReturnValue_3) == 0x000007, "Member 'WBP_StatusInfo_Sub_Tab_C_SetSelected::CallFunc_EqualEqual_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Tab_C_SetSelected, CallFunc_EqualEqual_IntInt_ReturnValue_4) == 0x000008, "Member 'WBP_StatusInfo_Sub_Tab_C_SetSelected::CallFunc_EqualEqual_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Tab_C_SetSelected, CallFunc_EqualEqual_IntInt_ReturnValue_5) == 0x000009, "Member 'WBP_StatusInfo_Sub_Tab_C_SetSelected::CallFunc_EqualEqual_IntInt_ReturnValue_5' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_Sub_Tab_C_SetSelected;
 
 // Function WBP_StatusInfo_Sub_Tab.WBP_StatusInfo_Sub_Tab_C.SetupTab
 // 0x0090 (0x0090 - 0x0000)
@@ -78,26 +68,7 @@ public:
 	double                                        K2Node_Select_Default;                             // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWBP_StatusInfo_Sub_MainTabBtn_C*       K2Node_Select_Default_1;                           // 0x0088(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_Sub_Tab_C_SetupTab) == 0x000008, "Wrong alignment on WBP_StatusInfo_Sub_Tab_C_SetupTab");
-static_assert(sizeof(WBP_StatusInfo_Sub_Tab_C_SetupTab) == 0x000090, "Wrong size on WBP_StatusInfo_Sub_Tab_C_SetupTab");
-static_assert(offsetof(WBP_StatusInfo_Sub_Tab_C_SetupTab, TabIndex) == 0x000000, "Member 'WBP_StatusInfo_Sub_Tab_C_SetupTab::TabIndex' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Tab_C_SetupTab, Category) == 0x000004, "Member 'WBP_StatusInfo_Sub_Tab_C_SetupTab::Category' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Tab_C_SetupTab, Text) == 0x000008, "Member 'WBP_StatusInfo_Sub_Tab_C_SetupTab::Text' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Tab_C_SetupTab, Temp_real_Variable) == 0x000018, "Member 'WBP_StatusInfo_Sub_Tab_C_SetupTab::Temp_real_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Tab_C_SetupTab, K2Node_SwitchEnum_CmpSuccess) == 0x000020, "Member 'WBP_StatusInfo_Sub_Tab_C_SetupTab::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Tab_C_SetupTab, Temp_real_Variable_1) == 0x000028, "Member 'WBP_StatusInfo_Sub_Tab_C_SetupTab::Temp_real_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Tab_C_SetupTab, Temp_real_Variable_2) == 0x000030, "Member 'WBP_StatusInfo_Sub_Tab_C_SetupTab::Temp_real_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Tab_C_SetupTab, Temp_real_Variable_3) == 0x000038, "Member 'WBP_StatusInfo_Sub_Tab_C_SetupTab::Temp_real_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Tab_C_SetupTab, Temp_real_Variable_4) == 0x000040, "Member 'WBP_StatusInfo_Sub_Tab_C_SetupTab::Temp_real_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Tab_C_SetupTab, Temp_real_Variable_5) == 0x000048, "Member 'WBP_StatusInfo_Sub_Tab_C_SetupTab::Temp_real_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Tab_C_SetupTab, Temp_real_Variable_6) == 0x000050, "Member 'WBP_StatusInfo_Sub_Tab_C_SetupTab::Temp_real_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Tab_C_SetupTab, Temp_int_Variable) == 0x000058, "Member 'WBP_StatusInfo_Sub_Tab_C_SetupTab::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Tab_C_SetupTab, Temp_real_Variable_7) == 0x000060, "Member 'WBP_StatusInfo_Sub_Tab_C_SetupTab::Temp_real_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Tab_C_SetupTab, Temp_real_Variable_8) == 0x000068, "Member 'WBP_StatusInfo_Sub_Tab_C_SetupTab::Temp_real_Variable_8' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Tab_C_SetupTab, Temp_real_Variable_9) == 0x000070, "Member 'WBP_StatusInfo_Sub_Tab_C_SetupTab::Temp_real_Variable_9' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Tab_C_SetupTab, Temp_byte_Variable) == 0x000078, "Member 'WBP_StatusInfo_Sub_Tab_C_SetupTab::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Tab_C_SetupTab, K2Node_Select_Default) == 0x000080, "Member 'WBP_StatusInfo_Sub_Tab_C_SetupTab::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Tab_C_SetupTab, K2Node_Select_Default_1) == 0x000088, "Member 'WBP_StatusInfo_Sub_Tab_C_SetupTab::K2Node_Select_Default_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_Sub_Tab_C_SetupTab;
 
 }
 

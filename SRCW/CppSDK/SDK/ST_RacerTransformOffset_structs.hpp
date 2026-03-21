@@ -26,10 +26,7 @@ public:
 	uint8                                         Pad_1[0xF];                                        // 0x0001(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             Offset_7_5C52CC4540264EB55597EBAA3DA3A192;         // 0x0010(0x0060)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FST_RacerTransformOffset) == 0x000010, "Wrong alignment on FST_RacerTransformOffset");
-static_assert(sizeof(FST_RacerTransformOffset) == 0x000070, "Wrong size on FST_RacerTransformOffset");
-static_assert(offsetof(FST_RacerTransformOffset, MachineID_2_EDC1768C46E630F903B79DA3044CC693) == 0x000000, "Member 'FST_RacerTransformOffset::MachineID_2_EDC1768C46E630F903B79DA3044CC693' has a wrong offset!");
-static_assert(offsetof(FST_RacerTransformOffset, Offset_7_5C52CC4540264EB55597EBAA3DA3A192) == 0x000010, "Member 'FST_RacerTransformOffset::Offset_7_5C52CC4540264EB55597EBAA3DA3A192' has a wrong offset!");
+DUMPER7_ASSERTS_FST_RacerTransformOffset;
 
 }
 

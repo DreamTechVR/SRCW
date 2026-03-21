@@ -23,9 +23,7 @@ struct WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Decision final
 public:
 	class UUnionUIButtonBase*                     InButton;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Decision) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Decision");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Decision) == 0x000008, "Wrong size on WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Decision");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Decision, InButton) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Decision::InButton' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Decision;
 
 // Function WBP_MachineCustom_Sub_CustomPaint_Liquid.WBP_MachineCustom_Sub_CustomPaint_Liquid_C.Focus
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +32,7 @@ struct WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Focus final
 public:
 	class UUnionUIButtonBase*                     InButton;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Focus) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Focus");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Focus) == 0x000008, "Wrong size on WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Focus");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Focus, InButton) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Focus::InButton' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Focus;
 
 // Function WBP_MachineCustom_Sub_CustomPaint_Liquid.WBP_MachineCustom_Sub_CustomPaint_Liquid_C.SetCursorVisible
 // 0x0038 (0x0038 - 0x0000)
@@ -54,16 +50,7 @@ public:
 	class UWBP_MachineCustom_Sub_CustomPaint_LiquidLine_C* CallFunc_Array_Get_Item;                  // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_SetCursorVisible) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CustomPaint_Liquid_C_SetCursorVisible");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_SetCursorVisible) == 0x000038, "Wrong size on WBP_MachineCustom_Sub_CustomPaint_Liquid_C_SetCursorVisible");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_SetCursorVisible, bInIsVisible) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_SetCursorVisible::bInIsVisible' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_SetCursorVisible, Temp_int_Array_Index_Variable) == 0x000004, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_SetCursorVisible::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_SetCursorVisible, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_SetCursorVisible::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_SetCursorVisible, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_SetCursorVisible::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_SetCursorVisible, CallFunc_GetItems_OutItems) == 0x000010, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_SetCursorVisible::CallFunc_GetItems_OutItems' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_SetCursorVisible, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_SetCursorVisible::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_SetCursorVisible, CallFunc_Array_Get_Item) == 0x000028, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_SetCursorVisible::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_SetCursorVisible, CallFunc_Less_IntInt_ReturnValue) == 0x000030, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_SetCursorVisible::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomPaint_Liquid_C_SetCursorVisible;
 
 // Function WBP_MachineCustom_Sub_CustomPaint_Liquid.WBP_MachineCustom_Sub_CustomPaint_Liquid_C.Setup
 // 0x0178 (0x0178 - 0x0000)
@@ -94,28 +81,7 @@ public:
 	class UWidget*                                K2Node_Select_Default;                             // 0x0168(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup) == 0x000178, "Wrong size on WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup, InPlayerController) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup::InPlayerController' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup, InUIDataGroup) == 0x000008, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup::InUIDataGroup' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup, ItemDataList) == 0x0000E0, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup::ItemDataList' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup, Temp_bool_Variable) == 0x0000F0, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup, Temp_int_Array_Index_Variable) == 0x0000F4, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup, Temp_int_Loop_Counter_Variable) == 0x0000F8, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup, CallFunc_Add_IntInt_ReturnValue) == 0x0000FC, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup, K2Node_CreateDelegate_OutputDelegate) == 0x000100, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup, K2Node_CreateDelegate_OutputDelegate_1) == 0x000110, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup, CallFunc_GetItems_OutItems) == 0x000120, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup::CallFunc_GetItems_OutItems' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup, CallFunc_Array_Get_Item) == 0x000130, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup, CallFunc_Array_Length_ReturnValue) == 0x000138, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup, CallFunc_Less_IntInt_ReturnValue) == 0x00013C, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000140, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000148, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup, K2Node_MakeArray_Array) == 0x000150, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup, CallFunc_BooleanOR_ReturnValue) == 0x000160, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup, CallFunc_BooleanOR_ReturnValue_1) == 0x000161, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup, K2Node_Select_Default) == 0x000168, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000170, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomPaint_Liquid_C_Setup;
 
 // Function WBP_MachineCustom_Sub_CustomPaint_Liquid.WBP_MachineCustom_Sub_CustomPaint_Liquid_C.GetEnabledItems
 // 0x00A0 (0x00A0 - 0x0000)
@@ -139,21 +105,7 @@ public:
 	uint8                                         Pad_5D[0x3];                                       // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FMachineColorAreaUIData                CallFunc_GetItemData_UIData;                       // 0x0060(0x0040)()
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetEnabledItems) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetEnabledItems");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetEnabledItems) == 0x0000A0, "Wrong size on WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetEnabledItems");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetEnabledItems, OutItems) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetEnabledItems::OutItems' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetEnabledItems, list) == 0x000010, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetEnabledItems::list' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetEnabledItems, Temp_int_Array_Index_Variable) == 0x000020, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetEnabledItems::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetEnabledItems, Temp_int_Loop_Counter_Variable) == 0x000024, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetEnabledItems::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetEnabledItems, CallFunc_Add_IntInt_ReturnValue) == 0x000028, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetEnabledItems::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetEnabledItems, CallFunc_GetAllChildren_ReturnValue) == 0x000030, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetEnabledItems::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetEnabledItems, CallFunc_Array_Get_Item) == 0x000040, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetEnabledItems::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetEnabledItems, K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Custom_Paint_Liquid_Line) == 0x000048, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetEnabledItems::K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Custom_Paint_Liquid_Line' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetEnabledItems, K2Node_DynamicCast_bSuccess) == 0x000050, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetEnabledItems::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetEnabledItems, CallFunc_Array_Length_ReturnValue) == 0x000054, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetEnabledItems::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetEnabledItems, CallFunc_Array_Add_ReturnValue) == 0x000058, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetEnabledItems::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetEnabledItems, CallFunc_Less_IntInt_ReturnValue) == 0x00005C, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetEnabledItems::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetEnabledItems, CallFunc_GetItemData_UIData) == 0x000060, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetEnabledItems::CallFunc_GetItemData_UIData' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetEnabledItems;
 
 // Function WBP_MachineCustom_Sub_CustomPaint_Liquid.WBP_MachineCustom_Sub_CustomPaint_Liquid_C.GetItems
 // 0x0068 (0x0068 - 0x0000)
@@ -177,20 +129,7 @@ public:
 	uint8                                         Pad_61[0x3];                                       // 0x0061(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetItems) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetItems");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetItems) == 0x000068, "Wrong size on WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetItems");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetItems, OutItems) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetItems::OutItems' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetItems, list) == 0x000010, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetItems::list' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetItems, Temp_int_Array_Index_Variable) == 0x000020, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetItems::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetItems, Temp_int_Loop_Counter_Variable) == 0x000024, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetItems::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetItems, CallFunc_Add_IntInt_ReturnValue) == 0x000028, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetItems::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetItems, CallFunc_GetAllChildren_ReturnValue) == 0x000030, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetItems::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetItems, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetItems::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetItems, CallFunc_Array_Get_Item) == 0x000048, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetItems::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetItems, CallFunc_Less_IntInt_ReturnValue) == 0x000050, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetItems::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetItems, K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Custom_Paint_Liquid_Line) == 0x000058, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetItems::K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Custom_Paint_Liquid_Line' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetItems, K2Node_DynamicCast_bSuccess) == 0x000060, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetItems::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetItems, CallFunc_Array_Add_ReturnValue) == 0x000064, "Member 'WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetItems::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomPaint_Liquid_C_GetItems;
 
 }
 

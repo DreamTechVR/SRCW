@@ -21,9 +21,7 @@ struct WBP_System_Title_Communication_C_InvisibleText final
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_System_Title_Communication_C_InvisibleText) == 0x000001, "Wrong alignment on WBP_System_Title_Communication_C_InvisibleText");
-static_assert(sizeof(WBP_System_Title_Communication_C_InvisibleText) == 0x000001, "Wrong size on WBP_System_Title_Communication_C_InvisibleText");
-static_assert(offsetof(WBP_System_Title_Communication_C_InvisibleText, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'WBP_System_Title_Communication_C_InvisibleText::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_System_Title_Communication_C_InvisibleText;
 
 // Function WBP_System_Title_Communication.WBP_System_Title_Communication_C.PlayLoadAnimation
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct WBP_System_Title_Communication_C_PlayLoadAnimation final
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_System_Title_Communication_C_PlayLoadAnimation) == 0x000001, "Wrong alignment on WBP_System_Title_Communication_C_PlayLoadAnimation");
-static_assert(sizeof(WBP_System_Title_Communication_C_PlayLoadAnimation) == 0x000001, "Wrong size on WBP_System_Title_Communication_C_PlayLoadAnimation");
-static_assert(offsetof(WBP_System_Title_Communication_C_PlayLoadAnimation, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'WBP_System_Title_Communication_C_PlayLoadAnimation::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_System_Title_Communication_C_PlayLoadAnimation;
 
 // Function WBP_System_Title_Communication.WBP_System_Title_Communication_C.SetText
 // 0x0018 (0x0018 - 0x0000)
@@ -44,10 +40,7 @@ public:
 	class FText                                   InText;                                            // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_System_Title_Communication_C_SetText) == 0x000008, "Wrong alignment on WBP_System_Title_Communication_C_SetText");
-static_assert(sizeof(WBP_System_Title_Communication_C_SetText) == 0x000018, "Wrong size on WBP_System_Title_Communication_C_SetText");
-static_assert(offsetof(WBP_System_Title_Communication_C_SetText, InText) == 0x000000, "Member 'WBP_System_Title_Communication_C_SetText::InText' has a wrong offset!");
-static_assert(offsetof(WBP_System_Title_Communication_C_SetText, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'WBP_System_Title_Communication_C_SetText::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_System_Title_Communication_C_SetText;
 
 }
 

@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPFL_ResultReward_C">();
+		BP_STATIC_CLASS_IMPL("BPFL_ResultReward_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPFL_ResultReward_C")
 	}
 	static class UBPFL_ResultReward_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPFL_ResultReward_C>();
 	}
 };
-static_assert(alignof(UBPFL_ResultReward_C) == 0x000008, "Wrong alignment on UBPFL_ResultReward_C");
-static_assert(sizeof(UBPFL_ResultReward_C) == 0x000028, "Wrong size on UBPFL_ResultReward_C");
+DUMPER7_ASSERTS_UBPFL_ResultReward_C;
 
 }
 

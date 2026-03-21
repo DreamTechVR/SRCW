@@ -23,15 +23,18 @@ class UBPC_LobbyFestaHolder_C final : public ULobbyHolderBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_LobbyFestaHolder_C">();
+		BP_STATIC_CLASS_IMPL("BPC_LobbyFestaHolder_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_LobbyFestaHolder_C")
 	}
 	static class UBPC_LobbyFestaHolder_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_LobbyFestaHolder_C>();
 	}
 };
-static_assert(alignof(UBPC_LobbyFestaHolder_C) == 0x000008, "Wrong alignment on UBPC_LobbyFestaHolder_C");
-static_assert(sizeof(UBPC_LobbyFestaHolder_C) == 0x000100, "Wrong size on UBPC_LobbyFestaHolder_C");
+DUMPER7_ASSERTS_UBPC_LobbyFestaHolder_C;
 
 }
 

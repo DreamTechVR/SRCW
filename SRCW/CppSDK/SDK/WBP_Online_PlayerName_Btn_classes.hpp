@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -108,60 +108,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Online_PlayerName_Btn_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Online_PlayerName_Btn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Online_PlayerName_Btn_C")
 	}
 	static class UWBP_Online_PlayerName_Btn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Online_PlayerName_Btn_C>();
 	}
 };
-static_assert(alignof(UWBP_Online_PlayerName_Btn_C) == 0x000008, "Wrong alignment on UWBP_Online_PlayerName_Btn_C");
-static_assert(sizeof(UWBP_Online_PlayerName_Btn_C) == 0x000678, "Wrong size on UWBP_Online_PlayerName_Btn_C");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, UberGraphFrame) == 0x0004F0, "Member 'UWBP_Online_PlayerName_Btn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, Btn_SelectOther_Loop) == 0x0004F8, "Member 'UWBP_Online_PlayerName_Btn_C::Btn_SelectOther_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, Btn_ActiveOther_Loop) == 0x000500, "Member 'UWBP_Online_PlayerName_Btn_C::Btn_ActiveOther_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, Btn_SelectOwner_Loop) == 0x000508, "Member 'UWBP_Online_PlayerName_Btn_C::Btn_SelectOwner_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, Btn_ActiveOwner_Loop) == 0x000510, "Member 'UWBP_Online_PlayerName_Btn_C::Btn_ActiveOwner_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, Base_Nice) == 0x000518, "Member 'UWBP_Online_PlayerName_Btn_C::Base_Nice' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, Base_Waiting_Other) == 0x000520, "Member 'UWBP_Online_PlayerName_Btn_C::Base_Waiting_Other' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, Base_Waiting_Owner) == 0x000528, "Member 'UWBP_Online_PlayerName_Btn_C::Base_Waiting_Owner' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, Btn_OtherBase_Select) == 0x000530, "Member 'UWBP_Online_PlayerName_Btn_C::Btn_OtherBase_Select' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, Btn_OwnerBase) == 0x000538, "Member 'UWBP_Online_PlayerName_Btn_C::Btn_OwnerBase' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, Cursor_AddFriend) == 0x000540, "Member 'UWBP_Online_PlayerName_Btn_C::Cursor_AddFriend' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, Cursor_PlayerName_Other) == 0x000548, "Member 'UWBP_Online_PlayerName_Btn_C::Cursor_PlayerName_Other' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, Cursor_PlayerName_Owner) == 0x000550, "Member 'UWBP_Online_PlayerName_Btn_C::Cursor_PlayerName_Owner' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, DSP_RivalIcon_Other) == 0x000558, "Member 'UWBP_Online_PlayerName_Btn_C::DSP_RivalIcon_Other' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, DSP_WS_Status_Icon_Other) == 0x000560, "Member 'UWBP_Online_PlayerName_Btn_C::DSP_WS_Status_Icon_Other' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, DSP_WS_Status_Icon_Owner) == 0x000568, "Member 'UWBP_Online_PlayerName_Btn_C::DSP_WS_Status_Icon_Owner' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, Icon_Nice) == 0x000570, "Member 'UWBP_Online_PlayerName_Btn_C::Icon_Nice' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, MouseInteraction) == 0x000578, "Member 'UWBP_Online_PlayerName_Btn_C::MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, MouseInteraction_OtherCar) == 0x000580, "Member 'UWBP_Online_PlayerName_Btn_C::MouseInteraction_OtherCar' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, MouseInteraction_OwnCar) == 0x000588, "Member 'UWBP_Online_PlayerName_Btn_C::MouseInteraction_OwnCar' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, Nice) == 0x000590, "Member 'UWBP_Online_PlayerName_Btn_C::Nice' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, OK_Other) == 0x000598, "Member 'UWBP_Online_PlayerName_Btn_C::OK_Other' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, OK_Owner) == 0x0005A0, "Member 'UWBP_Online_PlayerName_Btn_C::OK_Owner' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, OtherName_Cursor) == 0x0005A8, "Member 'UWBP_Online_PlayerName_Btn_C::OtherName_Cursor' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, OwnerName_Cursor) == 0x0005B0, "Member 'UWBP_Online_PlayerName_Btn_C::OwnerName_Cursor' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, PAT_Icon_Block) == 0x0005B8, "Member 'UWBP_Online_PlayerName_Btn_C::PAT_Icon_Block' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, PAT_PlatformIcon_Other) == 0x0005C0, "Member 'UWBP_Online_PlayerName_Btn_C::PAT_PlatformIcon_Other' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, PAT_PlatformIcon_Owner) == 0x0005C8, "Member 'UWBP_Online_PlayerName_Btn_C::PAT_PlatformIcon_Owner' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, PulsMark) == 0x0005D0, "Member 'UWBP_Online_PlayerName_Btn_C::PulsMark' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, PulsMark_Line_01) == 0x0005D8, "Member 'UWBP_Online_PlayerName_Btn_C::PulsMark_Line_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, PulsMark_Line_02) == 0x0005E0, "Member 'UWBP_Online_PlayerName_Btn_C::PulsMark_Line_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, PulsMark_Ring) == 0x0005E8, "Member 'UWBP_Online_PlayerName_Btn_C::PulsMark_Ring' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, TXT_Nice_Num) == 0x0005F0, "Member 'UWBP_Online_PlayerName_Btn_C::TXT_Nice_Num' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, TXT_OtherName) == 0x0005F8, "Member 'UWBP_Online_PlayerName_Btn_C::TXT_OtherName' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, TXT_OwnerName) == 0x000600, "Member 'UWBP_Online_PlayerName_Btn_C::TXT_OwnerName' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, TXT_YOU_Only) == 0x000608, "Member 'UWBP_Online_PlayerName_Btn_C::TXT_YOU_Only' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, TXT_YOU_Owner) == 0x000610, "Member 'UWBP_Online_PlayerName_Btn_C::TXT_YOU_Owner' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, Waiting_dot_Other) == 0x000618, "Member 'UWBP_Online_PlayerName_Btn_C::Waiting_dot_Other' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, Waiting_dot_Owner) == 0x000620, "Member 'UWBP_Online_PlayerName_Btn_C::Waiting_dot_Owner' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, WidgetSwitcher) == 0x000628, "Member 'UWBP_Online_PlayerName_Btn_C::WidgetSwitcher' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, WS_OtherBase_Active) == 0x000630, "Member 'UWBP_Online_PlayerName_Btn_C::WS_OtherBase_Active' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, OnFaceButtonLeftPressedEvent) == 0x000638, "Member 'UWBP_Online_PlayerName_Btn_C::OnFaceButtonLeftPressedEvent' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, OnFaceButtonTopPressedEvent) == 0x000648, "Member 'UWBP_Online_PlayerName_Btn_C::OnFaceButtonTopPressedEvent' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, OnRightStickButtonPressedEvent) == 0x000658, "Member 'UWBP_Online_PlayerName_Btn_C::OnRightStickButtonPressedEvent' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerName_Btn_C, OnLeftStickButtonPressedEvent) == 0x000668, "Member 'UWBP_Online_PlayerName_Btn_C::OnLeftStickButtonPressedEvent' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Online_PlayerName_Btn_C;
 
 }
 

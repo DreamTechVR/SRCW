@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -39,21 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_ControllerBtn_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_ControllerBtn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_ControllerBtn_C")
 	}
 	static class UWBP_CMN_ControllerBtn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_ControllerBtn_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_ControllerBtn_C) == 0x000008, "Wrong alignment on UWBP_CMN_ControllerBtn_C");
-static_assert(sizeof(UWBP_CMN_ControllerBtn_C) == 0x000368, "Wrong size on UWBP_CMN_ControllerBtn_C");
-static_assert(offsetof(UWBP_CMN_ControllerBtn_C, UberGraphFrame) == 0x000338, "Member 'UWBP_CMN_ControllerBtn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ControllerBtn_C, base) == 0x000340, "Member 'UWBP_CMN_ControllerBtn_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ControllerBtn_C, Base_Black) == 0x000348, "Member 'UWBP_CMN_ControllerBtn_C::Base_Black' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ControllerBtn_C, DSP_LongPressBtn) == 0x000350, "Member 'UWBP_CMN_ControllerBtn_C::DSP_LongPressBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ControllerBtn_C, Gauge) == 0x000358, "Member 'UWBP_CMN_ControllerBtn_C::Gauge' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ControllerBtn_C, NewVar) == 0x000360, "Member 'UWBP_CMN_ControllerBtn_C::NewVar' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_ControllerBtn_C;
 
 }
 

@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_ItemWarpRingObject.BP_ItemWarpRingObject_C
-// 0x0000 (0x07A0 - 0x07A0)
+// 0x0000 (0x0810 - 0x0810)
 class ABP_ItemWarpRingObject_C final : public AItemWarpRingObject
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ItemWarpRingObject_C">();
+		BP_STATIC_CLASS_IMPL("BP_ItemWarpRingObject_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ItemWarpRingObject_C")
 	}
 	static class ABP_ItemWarpRingObject_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ItemWarpRingObject_C>();
 	}
 };
-static_assert(alignof(ABP_ItemWarpRingObject_C) == 0x000010, "Wrong alignment on ABP_ItemWarpRingObject_C");
-static_assert(sizeof(ABP_ItemWarpRingObject_C) == 0x0007A0, "Wrong size on ABP_ItemWarpRingObject_C");
+DUMPER7_ASSERTS_ABP_ItemWarpRingObject_C;
 
 }
 

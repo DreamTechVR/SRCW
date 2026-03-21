@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -43,25 +43,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Ready_Sub_CharaWindow_P2P4_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Ready_Sub_CharaWindow_P2P4_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Ready_Sub_CharaWindow_P2P4_C")
 	}
 	static class UWBP_Ready_Sub_CharaWindow_P2P4_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Ready_Sub_CharaWindow_P2P4_C>();
 	}
 };
-static_assert(alignof(UWBP_Ready_Sub_CharaWindow_P2P4_C) == 0x000008, "Wrong alignment on UWBP_Ready_Sub_CharaWindow_P2P4_C");
-static_assert(sizeof(UWBP_Ready_Sub_CharaWindow_P2P4_C) == 0x000348, "Wrong size on UWBP_Ready_Sub_CharaWindow_P2P4_C");
-static_assert(offsetof(UWBP_Ready_Sub_CharaWindow_P2P4_C, UberGraphFrame) == 0x0002F0, "Member 'UWBP_Ready_Sub_CharaWindow_P2P4_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_CharaWindow_P2P4_C, OK_InLoop) == 0x0002F8, "Member 'UWBP_Ready_Sub_CharaWindow_P2P4_C::OK_InLoop' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_CharaWindow_P2P4_C, Default_Loop) == 0x000300, "Member 'UWBP_Ready_Sub_CharaWindow_P2P4_C::Default_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_CharaWindow_P2P4_C, Chara_Base) == 0x000308, "Member 'UWBP_Ready_Sub_CharaWindow_P2P4_C::Chara_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_CharaWindow_P2P4_C, Chara_NameBase) == 0x000310, "Member 'UWBP_Ready_Sub_CharaWindow_P2P4_C::Chara_NameBase' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_CharaWindow_P2P4_C, Check) == 0x000318, "Member 'UWBP_Ready_Sub_CharaWindow_P2P4_C::Check' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_CharaWindow_P2P4_C, DMY_CharaCutIn_P2P4) == 0x000320, "Member 'UWBP_Ready_Sub_CharaWindow_P2P4_C::DMY_CharaCutIn_P2P4' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_CharaWindow_P2P4_C, TXT_CharaName_P2P4) == 0x000328, "Member 'UWBP_Ready_Sub_CharaWindow_P2P4_C::TXT_CharaName_P2P4' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_CharaWindow_P2P4_C, WBP_FontScroll_CharaName_P2P4) == 0x000330, "Member 'UWBP_Ready_Sub_CharaWindow_P2P4_C::WBP_FontScroll_CharaName_P2P4' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_CharaWindow_P2P4_C, CharaName) == 0x000338, "Member 'UWBP_Ready_Sub_CharaWindow_P2P4_C::CharaName' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Ready_Sub_CharaWindow_P2P4_C;
 
 }
 

@@ -51,31 +51,7 @@ public:
 	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x00C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound) == 0x000008, "Wrong alignment on WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound");
-static_assert(sizeof(WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound) == 0x0000C8, "Wrong size on WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound, EntryPoint) == 0x000000, "Member 'WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x000028, "Member 'WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound, CallFunc_LoadAsset_Blocking_ReturnValue_1) == 0x000030, "Member 'WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound::CallFunc_LoadAsset_Blocking_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound, K2Node_DynamicCast_As_____2D) == 0x000038, "Member 'WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound, K2Node_DynamicCast_bSuccess) == 0x000040, "Member 'WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound, K2Node_DynamicCast_As_____2D_1) == 0x000048, "Member 'WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound::K2Node_DynamicCast_As_____2D_1' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound, K2Node_DynamicCast_bSuccess_1) == 0x000050, "Member 'WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound, CallFunc_LoadAsset_Blocking_ReturnValue_2) == 0x000058, "Member 'WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound::CallFunc_LoadAsset_Blocking_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound, K2Node_DynamicCast_As_____2D_2) == 0x000060, "Member 'WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound::K2Node_DynamicCast_As_____2D_2' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound, K2Node_DynamicCast_bSuccess_2) == 0x000068, "Member 'WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound, K2Node_Event_IsDesignTime) == 0x000069, "Member 'WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound, K2Node_MakeArray_Array) == 0x000070, "Member 'WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound, CallFunc_PlayAnimation_ReturnValue) == 0x000080, "Member 'WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound, CallFunc_PlayAnimation_ReturnValue_1) == 0x000088, "Member 'WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound, CallFunc_LoadAsset_Blocking_ReturnValue_3) == 0x000090, "Member 'WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound::CallFunc_LoadAsset_Blocking_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound, K2Node_CreateDelegate_OutputDelegate_2) == 0x000098, "Member 'WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound, K2Node_DynamicCast_As_____2D_3) == 0x0000A8, "Member 'WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound::K2Node_DynamicCast_As_____2D_3' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound, K2Node_DynamicCast_bSuccess_3) == 0x0000B0, "Member 'WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound, CallFunc_PauseAnimation_ReturnValue) == 0x0000B4, "Member 'WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound::CallFunc_PauseAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound, CallFunc_GetAnimationCurrentTime_ReturnValue) == 0x0000B8, "Member 'WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound::CallFunc_GetAnimationCurrentTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound, CallFunc_PlayAnimation_ReturnValue_2) == 0x0000C0, "Member 'WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_RaceBefore_FinalRound_C_ExecuteUbergraph_WBP_RaceBefore_FinalRound;
 
 // Function WBP_RaceBefore_FinalRound.WBP_RaceBefore_FinalRound_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -84,9 +60,7 @@ struct WBP_RaceBefore_FinalRound_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_RaceBefore_FinalRound_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_RaceBefore_FinalRound_C_PreConstruct");
-static_assert(sizeof(WBP_RaceBefore_FinalRound_C_PreConstruct) == 0x000001, "Wrong size on WBP_RaceBefore_FinalRound_C_PreConstruct");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_RaceBefore_FinalRound_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_RaceBefore_FinalRound_C_PreConstruct;
 
 // Function WBP_RaceBefore_FinalRound.WBP_RaceBefore_FinalRound_C.Set Open Tips Window
 // 0x0001 (0x0001 - 0x0000)
@@ -95,9 +69,7 @@ struct WBP_RaceBefore_FinalRound_C_Set_Open_Tips_Window final
 public:
 	bool                                          InOpenWindow;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_RaceBefore_FinalRound_C_Set_Open_Tips_Window) == 0x000001, "Wrong alignment on WBP_RaceBefore_FinalRound_C_Set_Open_Tips_Window");
-static_assert(sizeof(WBP_RaceBefore_FinalRound_C_Set_Open_Tips_Window) == 0x000001, "Wrong size on WBP_RaceBefore_FinalRound_C_Set_Open_Tips_Window");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_Set_Open_Tips_Window, InOpenWindow) == 0x000000, "Member 'WBP_RaceBefore_FinalRound_C_Set_Open_Tips_Window::InOpenWindow' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_RaceBefore_FinalRound_C_Set_Open_Tips_Window;
 
 // Function WBP_RaceBefore_FinalRound.WBP_RaceBefore_FinalRound_C.SetGrandPrixIcon
 // 0x0010 (0x0010 - 0x0000)
@@ -108,10 +80,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_RaceBefore_FinalRound_C_SetGrandPrixIcon) == 0x000008, "Wrong alignment on WBP_RaceBefore_FinalRound_C_SetGrandPrixIcon");
-static_assert(sizeof(WBP_RaceBefore_FinalRound_C_SetGrandPrixIcon) == 0x000010, "Wrong size on WBP_RaceBefore_FinalRound_C_SetGrandPrixIcon");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_SetGrandPrixIcon, InGrandprixId) == 0x000000, "Member 'WBP_RaceBefore_FinalRound_C_SetGrandPrixIcon::InGrandprixId' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_SetGrandPrixIcon, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_RaceBefore_FinalRound_C_SetGrandPrixIcon::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_RaceBefore_FinalRound_C_SetGrandPrixIcon;
 
 // Function WBP_RaceBefore_FinalRound.WBP_RaceBefore_FinalRound_C.SetMedleyText
 // 0x0010 (0x0010 - 0x0000)
@@ -120,9 +89,7 @@ struct WBP_RaceBefore_FinalRound_C_SetMedleyText final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_RaceBefore_FinalRound_C_SetMedleyText) == 0x000008, "Wrong alignment on WBP_RaceBefore_FinalRound_C_SetMedleyText");
-static_assert(sizeof(WBP_RaceBefore_FinalRound_C_SetMedleyText) == 0x000010, "Wrong size on WBP_RaceBefore_FinalRound_C_SetMedleyText");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_SetMedleyText, InText) == 0x000000, "Member 'WBP_RaceBefore_FinalRound_C_SetMedleyText::InText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_RaceBefore_FinalRound_C_SetMedleyText;
 
 // Function WBP_RaceBefore_FinalRound.WBP_RaceBefore_FinalRound_C.SetTextures
 // 0x0040 (0x0040 - 0x0000)
@@ -142,17 +109,7 @@ public:
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UImage*                                 CallFunc_Array_Get_Item_1;                         // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_RaceBefore_FinalRound_C_SetTextures) == 0x000008, "Wrong alignment on WBP_RaceBefore_FinalRound_C_SetTextures");
-static_assert(sizeof(WBP_RaceBefore_FinalRound_C_SetTextures) == 0x000040, "Wrong size on WBP_RaceBefore_FinalRound_C_SetTextures");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_SetTextures, Textures) == 0x000000, "Member 'WBP_RaceBefore_FinalRound_C_SetTextures::Textures' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_SetTextures, CallFunc_Array_Length_ReturnValue) == 0x000010, "Member 'WBP_RaceBefore_FinalRound_C_SetTextures::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_SetTextures, Temp_int_Array_Index_Variable) == 0x000014, "Member 'WBP_RaceBefore_FinalRound_C_SetTextures::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_SetTextures, Temp_int_Loop_Counter_Variable) == 0x000018, "Member 'WBP_RaceBefore_FinalRound_C_SetTextures::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_SetTextures, CallFunc_Array_Get_Item) == 0x000020, "Member 'WBP_RaceBefore_FinalRound_C_SetTextures::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_SetTextures, CallFunc_Less_IntInt_ReturnValue) == 0x000028, "Member 'WBP_RaceBefore_FinalRound_C_SetTextures::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_SetTextures, CallFunc_Add_IntInt_ReturnValue) == 0x00002C, "Member 'WBP_RaceBefore_FinalRound_C_SetTextures::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_SetTextures, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000030, "Member 'WBP_RaceBefore_FinalRound_C_SetTextures::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FinalRound_C_SetTextures, CallFunc_Array_Get_Item_1) == 0x000038, "Member 'WBP_RaceBefore_FinalRound_C_SetTextures::CallFunc_Array_Get_Item_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_RaceBefore_FinalRound_C_SetTextures;
 
 }
 

@@ -42,25 +42,7 @@ public:
 	int32                                         K2Node_Select_Default;                             // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_Select_Default_1;                           // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn) == 0x000008, "Wrong alignment on WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn");
-static_assert(sizeof(WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn) == 0x000040, "Wrong size on WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn");
-static_assert(offsetof(WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn, EntryPoint) == 0x000000, "Member 'WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn, CallFunc_MakeLiteralByte_ReturnValue) == 0x000004, "Member 'WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn, Temp_int_Variable) == 0x000008, "Member 'WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn, CallFunc_Conv_ByteToInt_ReturnValue) == 0x00000C, "Member 'WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn, K2Node_DynamicCast_AsWBP_Footer_Menu_Sub_Controller_Btn) == 0x000010, "Member 'WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn::K2Node_DynamicCast_AsWBP_Footer_Menu_Sub_Controller_Btn' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn, CallFunc_MakeLiteralByte_ReturnValue_1) == 0x000019, "Member 'WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn::CallFunc_MakeLiteralByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn, CallFunc_MakeLiteralByte_ReturnValue_2) == 0x00001A, "Member 'WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn::CallFunc_MakeLiteralByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x00001C, "Member 'WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn, CallFunc_Conv_ByteToInt_ReturnValue_2) == 0x000020, "Member 'WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn::CallFunc_Conv_ByteToInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn, CallFunc_MakeLiteralByte_ReturnValue_3) == 0x000024, "Member 'WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn::CallFunc_MakeLiteralByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn, Temp_int_Variable_1) == 0x000028, "Member 'WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn, CallFunc_Conv_ByteToInt_ReturnValue_3) == 0x00002C, "Member 'WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn::CallFunc_Conv_ByteToInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn, K2Node_CustomEvent_SwitherIndex) == 0x000030, "Member 'WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn::K2Node_CustomEvent_SwitherIndex' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn, K2Node_CustomEvent_ButtonIndex) == 0x000034, "Member 'WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn::K2Node_CustomEvent_ButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn, K2Node_Select_Default) == 0x000038, "Member 'WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn, K2Node_Select_Default_1) == 0x00003C, "Member 'WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn::K2Node_Select_Default_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_ControllerBtn_C_ExecuteUbergraph_WBP_CMN_ControllerBtn;
 
 // Function WBP_CMN_ControllerBtn.WBP_CMN_ControllerBtn_C.SetIcon
 // 0x0008 (0x0008 - 0x0000)
@@ -70,10 +52,7 @@ public:
 	int32                                         SwitherIndex;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_ControllerBtn_C_SetIcon) == 0x000004, "Wrong alignment on WBP_CMN_ControllerBtn_C_SetIcon");
-static_assert(sizeof(WBP_CMN_ControllerBtn_C_SetIcon) == 0x000008, "Wrong size on WBP_CMN_ControllerBtn_C_SetIcon");
-static_assert(offsetof(WBP_CMN_ControllerBtn_C_SetIcon, SwitherIndex) == 0x000000, "Member 'WBP_CMN_ControllerBtn_C_SetIcon::SwitherIndex' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ControllerBtn_C_SetIcon, ButtonIndex) == 0x000004, "Member 'WBP_CMN_ControllerBtn_C_SetIcon::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_ControllerBtn_C_SetIcon;
 
 // Function WBP_CMN_ControllerBtn.WBP_CMN_ControllerBtn_C.SetMeterParam
 // 0x0028 (0x0028 - 0x0000)
@@ -92,17 +71,7 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Conv_DoubleToInt64_InDouble_ImplicitCast; // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_ControllerBtn_C_SetMeterParam) == 0x000008, "Wrong alignment on WBP_CMN_ControllerBtn_C_SetMeterParam");
-static_assert(sizeof(WBP_CMN_ControllerBtn_C_SetMeterParam) == 0x000028, "Wrong size on WBP_CMN_ControllerBtn_C_SetMeterParam");
-static_assert(offsetof(WBP_CMN_ControllerBtn_C_SetMeterParam, Value) == 0x000000, "Member 'WBP_CMN_ControllerBtn_C_SetMeterParam::Value' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ControllerBtn_C_SetMeterParam, Temp_bool_Variable) == 0x000004, "Member 'WBP_CMN_ControllerBtn_C_SetMeterParam::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ControllerBtn_C_SetMeterParam, CallFunc_Conv_DoubleToInt64_ReturnValue) == 0x000008, "Member 'WBP_CMN_ControllerBtn_C_SetMeterParam::CallFunc_Conv_DoubleToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ControllerBtn_C_SetMeterParam, Temp_byte_Variable) == 0x000010, "Member 'WBP_CMN_ControllerBtn_C_SetMeterParam::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ControllerBtn_C_SetMeterParam, CallFunc_Greater_Int64Int64_ReturnValue) == 0x000011, "Member 'WBP_CMN_ControllerBtn_C_SetMeterParam::CallFunc_Greater_Int64Int64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ControllerBtn_C_SetMeterParam, Temp_byte_Variable_1) == 0x000012, "Member 'WBP_CMN_ControllerBtn_C_SetMeterParam::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ControllerBtn_C_SetMeterParam, K2Node_Select_Default) == 0x000013, "Member 'WBP_CMN_ControllerBtn_C_SetMeterParam::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ControllerBtn_C_SetMeterParam, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000018, "Member 'WBP_CMN_ControllerBtn_C_SetMeterParam::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_ControllerBtn_C_SetMeterParam, CallFunc_Conv_DoubleToInt64_InDouble_ImplicitCast) == 0x000020, "Member 'WBP_CMN_ControllerBtn_C_SetMeterParam::CallFunc_Conv_DoubleToInt64_InDouble_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_ControllerBtn_C_SetMeterParam;
 
 }
 

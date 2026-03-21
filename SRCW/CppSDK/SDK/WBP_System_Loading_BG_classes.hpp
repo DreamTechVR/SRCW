@@ -12,8 +12,8 @@
 
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UMG_classes.hpp"
 #include "UnionUI_structs.hpp"
+#include "UMG_classes.hpp"
 
 
 namespace SDK
@@ -76,40 +76,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_System_Loading_BG_C">();
+		BP_STATIC_CLASS_IMPL("WBP_System_Loading_BG_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_System_Loading_BG_C")
 	}
 	static class UWBP_System_Loading_BG_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_System_Loading_BG_C>();
 	}
 };
-static_assert(alignof(UWBP_System_Loading_BG_C) == 0x000008, "Wrong alignment on UWBP_System_Loading_BG_C");
-static_assert(sizeof(UWBP_System_Loading_BG_C) == 0x0003E0, "Wrong size on UWBP_System_Loading_BG_C");
-static_assert(offsetof(UWBP_System_Loading_BG_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_System_Loading_BG_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_BG_C, Loading_BG_Out) == 0x0002E8, "Member 'UWBP_System_Loading_BG_C::Loading_BG_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_BG_C, Loading_BG_Loop) == 0x0002F0, "Member 'UWBP_System_Loading_BG_C::Loading_BG_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_BG_C, Loading_BG_In) == 0x0002F8, "Member 'UWBP_System_Loading_BG_C::Loading_BG_In' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_BG_C, CanvasPanel_0) == 0x000300, "Member 'UWBP_System_Loading_BG_C::CanvasPanel_0' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_BG_C, DMY_System_BG) == 0x000308, "Member 'UWBP_System_Loading_BG_C::DMY_System_BG' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_BG_C, DSP_Cover) == 0x000310, "Member 'UWBP_System_Loading_BG_C::DSP_Cover' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_BG_C, DSP_Info) == 0x000318, "Member 'UWBP_System_Loading_BG_C::DSP_Info' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_BG_C, RetainerBox_Mask) == 0x000320, "Member 'UWBP_System_Loading_BG_C::RetainerBox_Mask' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_BG_C, WBP_CMN_BG_FinalRound) == 0x000328, "Member 'UWBP_System_Loading_BG_C::WBP_CMN_BG_FinalRound' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_BG_C, WBP_CMN_Sub_SpeedClassInfo) == 0x000330, "Member 'UWBP_System_Loading_BG_C::WBP_CMN_Sub_SpeedClassInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_BG_C, WBP_GroupResult) == 0x000338, "Member 'UWBP_System_Loading_BG_C::WBP_GroupResult' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_BG_C, WBP_Result_Sub_RankingTable_GP_Line) == 0x000340, "Member 'UWBP_System_Loading_BG_C::WBP_Result_Sub_RankingTable_GP_Line' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_BG_C, WBP_System_Loading) == 0x000348, "Member 'UWBP_System_Loading_BG_C::WBP_System_Loading' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_BG_C, WBP_System_Sub_Loading_StageIcon) == 0x000350, "Member 'UWBP_System_Loading_BG_C::WBP_System_Sub_Loading_StageIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_BG_C, WidgetSwitcher) == 0x000358, "Member 'UWBP_System_Loading_BG_C::WidgetSwitcher' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_BG_C, Course_BG) == 0x000360, "Member 'UWBP_System_Loading_BG_C::Course_BG' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_BG_C, Course_Icon) == 0x000388, "Member 'UWBP_System_Loading_BG_C::Course_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_BG_C, bBGLoaded) == 0x0003B0, "Member 'UWBP_System_Loading_BG_C::bBGLoaded' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_BG_C, bIconLoaded) == 0x0003B1, "Member 'UWBP_System_Loading_BG_C::bIconLoaded' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_BG_C, HintPopupWindow) == 0x0003B8, "Member 'UWBP_System_Loading_BG_C::HintPopupWindow' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_BG_C, RankView) == 0x0003C0, "Member 'UWBP_System_Loading_BG_C::RankView' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_BG_C, AfterFade) == 0x0003C1, "Member 'UWBP_System_Loading_BG_C::AfterFade' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_BG_C, CharaIcons) == 0x0003C8, "Member 'UWBP_System_Loading_BG_C::CharaIcons' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_BG_C, Tmp) == 0x0003D8, "Member 'UWBP_System_Loading_BG_C::Tmp' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_System_Loading_BG_C;
 
 }
 

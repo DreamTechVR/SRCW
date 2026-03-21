@@ -43,31 +43,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_RaceBefore_MessageInfo_C">();
+		BP_STATIC_CLASS_IMPL("WBP_RaceBefore_MessageInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_RaceBefore_MessageInfo_C")
 	}
 	static class UWBP_RaceBefore_MessageInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_RaceBefore_MessageInfo_C>();
 	}
 };
-static_assert(alignof(UWBP_RaceBefore_MessageInfo_C) == 0x000008, "Wrong alignment on UWBP_RaceBefore_MessageInfo_C");
-static_assert(sizeof(UWBP_RaceBefore_MessageInfo_C) == 0x000390, "Wrong size on UWBP_RaceBefore_MessageInfo_C");
-static_assert(offsetof(UWBP_RaceBefore_MessageInfo_C, Base_01) == 0x000320, "Member 'UWBP_RaceBefore_MessageInfo_C::Base_01' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_MessageInfo_C, Base_02) == 0x000328, "Member 'UWBP_RaceBefore_MessageInfo_C::Base_02' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_MessageInfo_C, BG_Black) == 0x000330, "Member 'UWBP_RaceBefore_MessageInfo_C::BG_Black' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_MessageInfo_C, Center) == 0x000338, "Member 'UWBP_RaceBefore_MessageInfo_C::Center' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_MessageInfo_C, GroupRuleRoot) == 0x000340, "Member 'UWBP_RaceBefore_MessageInfo_C::GroupRuleRoot' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_MessageInfo_C, Line_01) == 0x000348, "Member 'UWBP_RaceBefore_MessageInfo_C::Line_01' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_MessageInfo_C, Line_02) == 0x000350, "Member 'UWBP_RaceBefore_MessageInfo_C::Line_02' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_MessageInfo_C, RaceFlag) == 0x000358, "Member 'UWBP_RaceBefore_MessageInfo_C::RaceFlag' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_MessageInfo_C, Side_01) == 0x000360, "Member 'UWBP_RaceBefore_MessageInfo_C::Side_01' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_MessageInfo_C, Side_02) == 0x000368, "Member 'UWBP_RaceBefore_MessageInfo_C::Side_02' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_MessageInfo_C, TXT_Title) == 0x000370, "Member 'UWBP_RaceBefore_MessageInfo_C::TXT_Title' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_MessageInfo_C, bIsTickLock) == 0x000378, "Member 'UWBP_RaceBefore_MessageInfo_C::bIsTickLock' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_MessageInfo_C, bEnableFixedGadget) == 0x000379, "Member 'UWBP_RaceBefore_MessageInfo_C::bEnableFixedGadget' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_MessageInfo_C, CurrentAnimation) == 0x000380, "Member 'UWBP_RaceBefore_MessageInfo_C::CurrentAnimation' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_MessageInfo_C, bIsSelfRemove) == 0x000388, "Member 'UWBP_RaceBefore_MessageInfo_C::bIsSelfRemove' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_MessageInfo_C, TestIndex) == 0x00038C, "Member 'UWBP_RaceBefore_MessageInfo_C::TestIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_RaceBefore_MessageInfo_C;
 
 }
 

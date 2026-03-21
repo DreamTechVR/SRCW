@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -25,10 +25,7 @@ public:
 	struct FPoseLink                              HoverboardPose;                                    // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              HoverboardControlRogLayer_0;                       // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(DriverAnimLayerInterface_C_HoverboardControlRogLayer) == 0x000008, "Wrong alignment on DriverAnimLayerInterface_C_HoverboardControlRogLayer");
-static_assert(sizeof(DriverAnimLayerInterface_C_HoverboardControlRogLayer) == 0x000020, "Wrong size on DriverAnimLayerInterface_C_HoverboardControlRogLayer");
-static_assert(offsetof(DriverAnimLayerInterface_C_HoverboardControlRogLayer, HoverboardPose) == 0x000000, "Member 'DriverAnimLayerInterface_C_HoverboardControlRogLayer::HoverboardPose' has a wrong offset!");
-static_assert(offsetof(DriverAnimLayerInterface_C_HoverboardControlRogLayer, HoverboardControlRogLayer_0) == 0x000010, "Member 'DriverAnimLayerInterface_C_HoverboardControlRogLayer::HoverboardControlRogLayer_0' has a wrong offset!");
+DUMPER7_ASSERTS_DriverAnimLayerInterface_C_HoverboardControlRogLayer;
 
 // Function DriverAnimLayerInterface.DriverAnimLayerInterface_C.HoverboardItemHoldBlendLeft
 // 0x0030 (0x0030 - 0x0000)
@@ -39,11 +36,7 @@ public:
 	struct FPoseLink                              LeftHoldPose;                                      // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              HoverboardItemHoldBlendLeft_0;                     // 0x0020(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(DriverAnimLayerInterface_C_HoverboardItemHoldBlendLeft) == 0x000008, "Wrong alignment on DriverAnimLayerInterface_C_HoverboardItemHoldBlendLeft");
-static_assert(sizeof(DriverAnimLayerInterface_C_HoverboardItemHoldBlendLeft) == 0x000030, "Wrong size on DriverAnimLayerInterface_C_HoverboardItemHoldBlendLeft");
-static_assert(offsetof(DriverAnimLayerInterface_C_HoverboardItemHoldBlendLeft, BasePose) == 0x000000, "Member 'DriverAnimLayerInterface_C_HoverboardItemHoldBlendLeft::BasePose' has a wrong offset!");
-static_assert(offsetof(DriverAnimLayerInterface_C_HoverboardItemHoldBlendLeft, LeftHoldPose) == 0x000010, "Member 'DriverAnimLayerInterface_C_HoverboardItemHoldBlendLeft::LeftHoldPose' has a wrong offset!");
-static_assert(offsetof(DriverAnimLayerInterface_C_HoverboardItemHoldBlendLeft, HoverboardItemHoldBlendLeft_0) == 0x000020, "Member 'DriverAnimLayerInterface_C_HoverboardItemHoldBlendLeft::HoverboardItemHoldBlendLeft_0' has a wrong offset!");
+DUMPER7_ASSERTS_DriverAnimLayerInterface_C_HoverboardItemHoldBlendLeft;
 
 // Function DriverAnimLayerInterface.DriverAnimLayerInterface_C.HoverboardItemHoldBlendRight
 // 0x0030 (0x0030 - 0x0000)
@@ -54,11 +47,7 @@ public:
 	struct FPoseLink                              RightHoldPose;                                     // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              HoverboardItemHoldBlendRight_0;                    // 0x0020(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(DriverAnimLayerInterface_C_HoverboardItemHoldBlendRight) == 0x000008, "Wrong alignment on DriverAnimLayerInterface_C_HoverboardItemHoldBlendRight");
-static_assert(sizeof(DriverAnimLayerInterface_C_HoverboardItemHoldBlendRight) == 0x000030, "Wrong size on DriverAnimLayerInterface_C_HoverboardItemHoldBlendRight");
-static_assert(offsetof(DriverAnimLayerInterface_C_HoverboardItemHoldBlendRight, BasePose) == 0x000000, "Member 'DriverAnimLayerInterface_C_HoverboardItemHoldBlendRight::BasePose' has a wrong offset!");
-static_assert(offsetof(DriverAnimLayerInterface_C_HoverboardItemHoldBlendRight, RightHoldPose) == 0x000010, "Member 'DriverAnimLayerInterface_C_HoverboardItemHoldBlendRight::RightHoldPose' has a wrong offset!");
-static_assert(offsetof(DriverAnimLayerInterface_C_HoverboardItemHoldBlendRight, HoverboardItemHoldBlendRight_0) == 0x000020, "Member 'DriverAnimLayerInterface_C_HoverboardItemHoldBlendRight::HoverboardItemHoldBlendRight_0' has a wrong offset!");
+DUMPER7_ASSERTS_DriverAnimLayerInterface_C_HoverboardItemHoldBlendRight;
 
 // Function DriverAnimLayerInterface.DriverAnimLayerInterface_C.KawaiiPhysicsLayer
 // 0x0020 (0x0020 - 0x0000)
@@ -68,10 +57,7 @@ public:
 	struct FPoseLink                              InPose;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              KawaiiPhysicsLayer_0;                              // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(DriverAnimLayerInterface_C_KawaiiPhysicsLayer) == 0x000008, "Wrong alignment on DriverAnimLayerInterface_C_KawaiiPhysicsLayer");
-static_assert(sizeof(DriverAnimLayerInterface_C_KawaiiPhysicsLayer) == 0x000020, "Wrong size on DriverAnimLayerInterface_C_KawaiiPhysicsLayer");
-static_assert(offsetof(DriverAnimLayerInterface_C_KawaiiPhysicsLayer, InPose) == 0x000000, "Member 'DriverAnimLayerInterface_C_KawaiiPhysicsLayer::InPose' has a wrong offset!");
-static_assert(offsetof(DriverAnimLayerInterface_C_KawaiiPhysicsLayer, KawaiiPhysicsLayer_0) == 0x000010, "Member 'DriverAnimLayerInterface_C_KawaiiPhysicsLayer::KawaiiPhysicsLayer_0' has a wrong offset!");
+DUMPER7_ASSERTS_DriverAnimLayerInterface_C_KawaiiPhysicsLayer;
 
 // Function DriverAnimLayerInterface.DriverAnimLayerInterface_C.MachineItemHoldBlendLeft
 // 0x0030 (0x0030 - 0x0000)
@@ -82,11 +68,7 @@ public:
 	struct FPoseLink                              LeftHoldPose;                                      // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              MachineItemHoldBlendLeft_0;                        // 0x0020(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(DriverAnimLayerInterface_C_MachineItemHoldBlendLeft) == 0x000008, "Wrong alignment on DriverAnimLayerInterface_C_MachineItemHoldBlendLeft");
-static_assert(sizeof(DriverAnimLayerInterface_C_MachineItemHoldBlendLeft) == 0x000030, "Wrong size on DriverAnimLayerInterface_C_MachineItemHoldBlendLeft");
-static_assert(offsetof(DriverAnimLayerInterface_C_MachineItemHoldBlendLeft, BasePose) == 0x000000, "Member 'DriverAnimLayerInterface_C_MachineItemHoldBlendLeft::BasePose' has a wrong offset!");
-static_assert(offsetof(DriverAnimLayerInterface_C_MachineItemHoldBlendLeft, LeftHoldPose) == 0x000010, "Member 'DriverAnimLayerInterface_C_MachineItemHoldBlendLeft::LeftHoldPose' has a wrong offset!");
-static_assert(offsetof(DriverAnimLayerInterface_C_MachineItemHoldBlendLeft, MachineItemHoldBlendLeft_0) == 0x000020, "Member 'DriverAnimLayerInterface_C_MachineItemHoldBlendLeft::MachineItemHoldBlendLeft_0' has a wrong offset!");
+DUMPER7_ASSERTS_DriverAnimLayerInterface_C_MachineItemHoldBlendLeft;
 
 // Function DriverAnimLayerInterface.DriverAnimLayerInterface_C.MachineItemHoldBlendRight
 // 0x0030 (0x0030 - 0x0000)
@@ -97,11 +79,7 @@ public:
 	struct FPoseLink                              LeftHoldPose;                                      // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              MachineItemHoldBlendRight_0;                       // 0x0020(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(DriverAnimLayerInterface_C_MachineItemHoldBlendRight) == 0x000008, "Wrong alignment on DriverAnimLayerInterface_C_MachineItemHoldBlendRight");
-static_assert(sizeof(DriverAnimLayerInterface_C_MachineItemHoldBlendRight) == 0x000030, "Wrong size on DriverAnimLayerInterface_C_MachineItemHoldBlendRight");
-static_assert(offsetof(DriverAnimLayerInterface_C_MachineItemHoldBlendRight, BasePose) == 0x000000, "Member 'DriverAnimLayerInterface_C_MachineItemHoldBlendRight::BasePose' has a wrong offset!");
-static_assert(offsetof(DriverAnimLayerInterface_C_MachineItemHoldBlendRight, LeftHoldPose) == 0x000010, "Member 'DriverAnimLayerInterface_C_MachineItemHoldBlendRight::LeftHoldPose' has a wrong offset!");
-static_assert(offsetof(DriverAnimLayerInterface_C_MachineItemHoldBlendRight, MachineItemHoldBlendRight_0) == 0x000020, "Member 'DriverAnimLayerInterface_C_MachineItemHoldBlendRight::MachineItemHoldBlendRight_0' has a wrong offset!");
+DUMPER7_ASSERTS_DriverAnimLayerInterface_C_MachineItemHoldBlendRight;
 
 // Function DriverAnimLayerInterface.DriverAnimLayerInterface_C.MenuFacialOverride
 // 0x0048 (0x0048 - 0x0000)
@@ -115,13 +93,7 @@ public:
 	struct FPoseLink                              MenuOverrideFace;                                  // 0x0028(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              MenuFacialOverride_0;                              // 0x0038(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(DriverAnimLayerInterface_C_MenuFacialOverride) == 0x000008, "Wrong alignment on DriverAnimLayerInterface_C_MenuFacialOverride");
-static_assert(sizeof(DriverAnimLayerInterface_C_MenuFacialOverride) == 0x000048, "Wrong size on DriverAnimLayerInterface_C_MenuFacialOverride");
-static_assert(offsetof(DriverAnimLayerInterface_C_MenuFacialOverride, MenuFinalPose) == 0x000000, "Member 'DriverAnimLayerInterface_C_MenuFacialOverride::MenuFinalPose' has a wrong offset!");
-static_assert(offsetof(DriverAnimLayerInterface_C_MenuFacialOverride, InPlayingMontage) == 0x000010, "Member 'DriverAnimLayerInterface_C_MenuFacialOverride::InPlayingMontage' has a wrong offset!");
-static_assert(offsetof(DriverAnimLayerInterface_C_MenuFacialOverride, MenuDefaltFace) == 0x000018, "Member 'DriverAnimLayerInterface_C_MenuFacialOverride::MenuDefaltFace' has a wrong offset!");
-static_assert(offsetof(DriverAnimLayerInterface_C_MenuFacialOverride, MenuOverrideFace) == 0x000028, "Member 'DriverAnimLayerInterface_C_MenuFacialOverride::MenuOverrideFace' has a wrong offset!");
-static_assert(offsetof(DriverAnimLayerInterface_C_MenuFacialOverride, MenuFacialOverride_0) == 0x000038, "Member 'DriverAnimLayerInterface_C_MenuFacialOverride::MenuFacialOverride_0' has a wrong offset!");
+DUMPER7_ASSERTS_DriverAnimLayerInterface_C_MenuFacialOverride;
 
 // Function DriverAnimLayerInterface.DriverAnimLayerInterface_C.ScaleFaceLayer
 // 0x0028 (0x0028 - 0x0000)
@@ -135,13 +107,7 @@ public:
 	uint8                                         Pad_13[0x5];                                       // 0x0013(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPoseLink                              ScaleFaceLayer_0;                                  // 0x0018(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(DriverAnimLayerInterface_C_ScaleFaceLayer) == 0x000008, "Wrong alignment on DriverAnimLayerInterface_C_ScaleFaceLayer");
-static_assert(sizeof(DriverAnimLayerInterface_C_ScaleFaceLayer) == 0x000028, "Wrong size on DriverAnimLayerInterface_C_ScaleFaceLayer");
-static_assert(offsetof(DriverAnimLayerInterface_C_ScaleFaceLayer, InFaceOverride) == 0x000000, "Member 'DriverAnimLayerInterface_C_ScaleFaceLayer::InFaceOverride' has a wrong offset!");
-static_assert(offsetof(DriverAnimLayerInterface_C_ScaleFaceLayer, bPlayMontage) == 0x000010, "Member 'DriverAnimLayerInterface_C_ScaleFaceLayer::bPlayMontage' has a wrong offset!");
-static_assert(offsetof(DriverAnimLayerInterface_C_ScaleFaceLayer, InStateMachineFaceType) == 0x000011, "Member 'DriverAnimLayerInterface_C_ScaleFaceLayer::InStateMachineFaceType' has a wrong offset!");
-static_assert(offsetof(DriverAnimLayerInterface_C_ScaleFaceLayer, InMontageFaceType) == 0x000012, "Member 'DriverAnimLayerInterface_C_ScaleFaceLayer::InMontageFaceType' has a wrong offset!");
-static_assert(offsetof(DriverAnimLayerInterface_C_ScaleFaceLayer, ScaleFaceLayer_0) == 0x000018, "Member 'DriverAnimLayerInterface_C_ScaleFaceLayer::ScaleFaceLayer_0' has a wrong offset!");
+DUMPER7_ASSERTS_DriverAnimLayerInterface_C_ScaleFaceLayer;
 
 }
 

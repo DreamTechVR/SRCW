@@ -23,9 +23,7 @@ struct WBP_CMN_TextBalloon_C_SetPositionOffset final
 public:
 	struct FVector2D                              Translation;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_TextBalloon_C_SetPositionOffset) == 0x000008, "Wrong alignment on WBP_CMN_TextBalloon_C_SetPositionOffset");
-static_assert(sizeof(WBP_CMN_TextBalloon_C_SetPositionOffset) == 0x000010, "Wrong size on WBP_CMN_TextBalloon_C_SetPositionOffset");
-static_assert(offsetof(WBP_CMN_TextBalloon_C_SetPositionOffset, Translation) == 0x000000, "Member 'WBP_CMN_TextBalloon_C_SetPositionOffset::Translation' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_TextBalloon_C_SetPositionOffset;
 
 }
 

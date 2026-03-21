@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -50,30 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_RaceResultSequence_C">();
+		BP_STATIC_CLASS_IMPL("BP_RaceResultSequence_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_RaceResultSequence_C")
 	}
 	static class ABP_RaceResultSequence_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_RaceResultSequence_C>();
 	}
 };
-static_assert(alignof(ABP_RaceResultSequence_C) == 0x000008, "Wrong alignment on ABP_RaceResultSequence_C");
-static_assert(sizeof(ABP_RaceResultSequence_C) == 0x000400, "Wrong size on ABP_RaceResultSequence_C");
-static_assert(offsetof(ABP_RaceResultSequence_C, UberGraphFrame) == 0x000380, "Member 'ABP_RaceResultSequence_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_RaceResultSequence_C, BPC_RaceResultGhostSave) == 0x000388, "Member 'ABP_RaceResultSequence_C::BPC_RaceResultGhostSave' has a wrong offset!");
-static_assert(offsetof(ABP_RaceResultSequence_C, BPC_RaceResultRivalTeamResult) == 0x000390, "Member 'ABP_RaceResultSequence_C::BPC_RaceResultRivalTeamResult' has a wrong offset!");
-static_assert(offsetof(ABP_RaceResultSequence_C, BPC_RaceResultParty) == 0x000398, "Member 'ABP_RaceResultSequence_C::BPC_RaceResultParty' has a wrong offset!");
-static_assert(offsetof(ABP_RaceResultSequence_C, BPC_RaceResultNetwork) == 0x0003A0, "Member 'ABP_RaceResultSequence_C::BPC_RaceResultNetwork' has a wrong offset!");
-static_assert(offsetof(ABP_RaceResultSequence_C, BPC_RaceResultSave) == 0x0003A8, "Member 'ABP_RaceResultSequence_C::BPC_RaceResultSave' has a wrong offset!");
-static_assert(offsetof(ABP_RaceResultSequence_C, BPC_RaceResultCeremony) == 0x0003B0, "Member 'ABP_RaceResultSequence_C::BPC_RaceResultCeremony' has a wrong offset!");
-static_assert(offsetof(ABP_RaceResultSequence_C, BPC_RaceResultRateRank) == 0x0003B8, "Member 'ABP_RaceResultSequence_C::BPC_RaceResultRateRank' has a wrong offset!");
-static_assert(offsetof(ABP_RaceResultSequence_C, BPC_RaceResultReward) == 0x0003C0, "Member 'ABP_RaceResultSequence_C::BPC_RaceResultReward' has a wrong offset!");
-static_assert(offsetof(ABP_RaceResultSequence_C, BPC_RaceResultStats) == 0x0003C8, "Member 'ABP_RaceResultSequence_C::BPC_RaceResultStats' has a wrong offset!");
-static_assert(offsetof(ABP_RaceResultSequence_C, RacePlayerController) == 0x0003D0, "Member 'ABP_RaceResultSequence_C::RacePlayerController' has a wrong offset!");
-static_assert(offsetof(ABP_RaceResultSequence_C, ResultWidget) == 0x0003D8, "Member 'ABP_RaceResultSequence_C::ResultWidget' has a wrong offset!");
-static_assert(offsetof(ABP_RaceResultSequence_C, OnEnd) == 0x0003E0, "Member 'ABP_RaceResultSequence_C::OnEnd' has a wrong offset!");
-static_assert(offsetof(ABP_RaceResultSequence_C, StandingsManager) == 0x0003F0, "Member 'ABP_RaceResultSequence_C::StandingsManager' has a wrong offset!");
-static_assert(offsetof(ABP_RaceResultSequence_C, OwnerSeq) == 0x0003F8, "Member 'ABP_RaceResultSequence_C::OwnerSeq' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_RaceResultSequence_C;
 
 }
 

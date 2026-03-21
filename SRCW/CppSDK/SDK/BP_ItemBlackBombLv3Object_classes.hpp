@@ -23,15 +23,18 @@ class ABP_ItemBlackBombLv3Object_C final : public AItemBlackBombLv3Object
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ItemBlackBombLv3Object_C">();
+		BP_STATIC_CLASS_IMPL("BP_ItemBlackBombLv3Object_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ItemBlackBombLv3Object_C")
 	}
 	static class ABP_ItemBlackBombLv3Object_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ItemBlackBombLv3Object_C>();
 	}
 };
-static_assert(alignof(ABP_ItemBlackBombLv3Object_C) == 0x000010, "Wrong alignment on ABP_ItemBlackBombLv3Object_C");
-static_assert(sizeof(ABP_ItemBlackBombLv3Object_C) == 0x0009C0, "Wrong size on ABP_ItemBlackBombLv3Object_C");
+DUMPER7_ASSERTS_ABP_ItemBlackBombLv3Object_C;
 
 }
 

@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "UnionUI_structs.hpp"
-#include "UnionLib_structs.hpp"
-#include "UNION_structs.hpp"
+#include "UnionRun_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "UNION_structs.hpp"
+#include "UnionUI_structs.hpp"
 #include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "UnionRun_structs.hpp"
+#include "UnionLib_structs.hpp"
 
 
 namespace SDK::Params
@@ -38,15 +38,7 @@ public:
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ACameraActor*                           CallFunc_GetCameraActor_ReturnValue;               // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_AttachMainCamera) == 0x000008, "Wrong alignment on BP_TopMenuSequence_C_AttachMainCamera");
-static_assert(sizeof(BP_TopMenuSequence_C_AttachMainCamera) == 0x000040, "Wrong size on BP_TopMenuSequence_C_AttachMainCamera");
-static_assert(offsetof(BP_TopMenuSequence_C_AttachMainCamera, CallFunc_GetPlayerController_ReturnValue) == 0x000000, "Member 'BP_TopMenuSequence_C_AttachMainCamera::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_AttachMainCamera, CallFunc_GetStreamingLevel_ReturnValue) == 0x000008, "Member 'BP_TopMenuSequence_C_AttachMainCamera::CallFunc_GetStreamingLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_AttachMainCamera, CallFunc_GetLevelScriptActor_ReturnValue) == 0x000010, "Member 'BP_TopMenuSequence_C_AttachMainCamera::CallFunc_GetLevelScriptActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_AttachMainCamera, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'BP_TopMenuSequence_C_AttachMainCamera::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_AttachMainCamera, K2Node_DynamicCast_AsMenu_Lobby_Level_Interface) == 0x000020, "Member 'BP_TopMenuSequence_C_AttachMainCamera::K2Node_DynamicCast_AsMenu_Lobby_Level_Interface' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_AttachMainCamera, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'BP_TopMenuSequence_C_AttachMainCamera::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_AttachMainCamera, CallFunc_GetCameraActor_ReturnValue) == 0x000038, "Member 'BP_TopMenuSequence_C_AttachMainCamera::CallFunc_GetCameraActor_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_AttachMainCamera;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.BackFromNoticePopup
 // 0x0001 (0x0001 - 0x0000)
@@ -55,9 +47,7 @@ struct BP_TopMenuSequence_C_BackFromNoticePopup final
 public:
 	ETopMenuSequenceState                         ReturnState;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_BackFromNoticePopup) == 0x000001, "Wrong alignment on BP_TopMenuSequence_C_BackFromNoticePopup");
-static_assert(sizeof(BP_TopMenuSequence_C_BackFromNoticePopup) == 0x000001, "Wrong size on BP_TopMenuSequence_C_BackFromNoticePopup");
-static_assert(offsetof(BP_TopMenuSequence_C_BackFromNoticePopup, ReturnState) == 0x000000, "Member 'BP_TopMenuSequence_C_BackFromNoticePopup::ReturnState' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_BackFromNoticePopup;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.BndEvt__BP_TopMenuSequence_BPC_Etcetera_K2Node_ComponentBoundEvent_0_OnChangeStateDelegate__DelegateSignature
 // 0x0001 (0x0001 - 0x0000)
@@ -66,9 +56,7 @@ struct BP_TopMenuSequence_C_BndEvt__BP_TopMenuSequence_BPC_Etcetera_K2Node_Compo
 public:
 	EMenuSequenceSubState                         State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_BndEvt__BP_TopMenuSequence_BPC_Etcetera_K2Node_ComponentBoundEvent_0_OnChangeStateDelegate__DelegateSignature) == 0x000001, "Wrong alignment on BP_TopMenuSequence_C_BndEvt__BP_TopMenuSequence_BPC_Etcetera_K2Node_ComponentBoundEvent_0_OnChangeStateDelegate__DelegateSignature");
-static_assert(sizeof(BP_TopMenuSequence_C_BndEvt__BP_TopMenuSequence_BPC_Etcetera_K2Node_ComponentBoundEvent_0_OnChangeStateDelegate__DelegateSignature) == 0x000001, "Wrong size on BP_TopMenuSequence_C_BndEvt__BP_TopMenuSequence_BPC_Etcetera_K2Node_ComponentBoundEvent_0_OnChangeStateDelegate__DelegateSignature");
-static_assert(offsetof(BP_TopMenuSequence_C_BndEvt__BP_TopMenuSequence_BPC_Etcetera_K2Node_ComponentBoundEvent_0_OnChangeStateDelegate__DelegateSignature, State) == 0x000000, "Member 'BP_TopMenuSequence_C_BndEvt__BP_TopMenuSequence_BPC_Etcetera_K2Node_ComponentBoundEvent_0_OnChangeStateDelegate__DelegateSignature::State' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_BndEvt__BP_TopMenuSequence_BPC_Etcetera_K2Node_ComponentBoundEvent_0_OnChangeStateDelegate__DelegateSignature;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.BndEvt__BP_TopMenuSequence_BPC_FriendList_K2Node_ComponentBoundEvent_0_OnChangeStateDelegate__DelegateSignature
 // 0x0001 (0x0001 - 0x0000)
@@ -77,9 +65,7 @@ struct BP_TopMenuSequence_C_BndEvt__BP_TopMenuSequence_BPC_FriendList_K2Node_Com
 public:
 	EMenuSequenceSubState                         State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_BndEvt__BP_TopMenuSequence_BPC_FriendList_K2Node_ComponentBoundEvent_0_OnChangeStateDelegate__DelegateSignature) == 0x000001, "Wrong alignment on BP_TopMenuSequence_C_BndEvt__BP_TopMenuSequence_BPC_FriendList_K2Node_ComponentBoundEvent_0_OnChangeStateDelegate__DelegateSignature");
-static_assert(sizeof(BP_TopMenuSequence_C_BndEvt__BP_TopMenuSequence_BPC_FriendList_K2Node_ComponentBoundEvent_0_OnChangeStateDelegate__DelegateSignature) == 0x000001, "Wrong size on BP_TopMenuSequence_C_BndEvt__BP_TopMenuSequence_BPC_FriendList_K2Node_ComponentBoundEvent_0_OnChangeStateDelegate__DelegateSignature");
-static_assert(offsetof(BP_TopMenuSequence_C_BndEvt__BP_TopMenuSequence_BPC_FriendList_K2Node_ComponentBoundEvent_0_OnChangeStateDelegate__DelegateSignature, State) == 0x000000, "Member 'BP_TopMenuSequence_C_BndEvt__BP_TopMenuSequence_BPC_FriendList_K2Node_ComponentBoundEvent_0_OnChangeStateDelegate__DelegateSignature::State' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_BndEvt__BP_TopMenuSequence_BPC_FriendList_K2Node_ComponentBoundEvent_0_OnChangeStateDelegate__DelegateSignature;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.CallDodonpaEvent
 // 0x000C (0x000C - 0x0000)
@@ -90,11 +76,7 @@ public:
 	EGrandPrixEventFlag                           SaveDataFlagId;                                    // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EMenuSequenceBGM                              BGM_ID;                                            // 0x0009(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_CallDodonpaEvent) == 0x000004, "Wrong alignment on BP_TopMenuSequence_C_CallDodonpaEvent");
-static_assert(sizeof(BP_TopMenuSequence_C_CallDodonpaEvent) == 0x00000C, "Wrong size on BP_TopMenuSequence_C_CallDodonpaEvent");
-static_assert(offsetof(BP_TopMenuSequence_C_CallDodonpaEvent, EventName) == 0x000000, "Member 'BP_TopMenuSequence_C_CallDodonpaEvent::EventName' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_CallDodonpaEvent, SaveDataFlagId) == 0x000008, "Member 'BP_TopMenuSequence_C_CallDodonpaEvent::SaveDataFlagId' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_CallDodonpaEvent, BGM_ID) == 0x000009, "Member 'BP_TopMenuSequence_C_CallDodonpaEvent::BGM_ID' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_CallDodonpaEvent;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.CreateMenuRacer
 // 0x0240 (0x0240 - 0x0000)
@@ -135,35 +117,7 @@ public:
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0234(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_CreateMenuRacer) == 0x000010, "Wrong alignment on BP_TopMenuSequence_C_CreateMenuRacer");
-static_assert(sizeof(BP_TopMenuSequence_C_CreateMenuRacer) == 0x000240, "Wrong size on BP_TopMenuSequence_C_CreateMenuRacer");
-static_assert(offsetof(BP_TopMenuSequence_C_CreateMenuRacer, DriverId) == 0x000000, "Member 'BP_TopMenuSequence_C_CreateMenuRacer::DriverId' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_CreateMenuRacer, MachineId) == 0x000001, "Member 'BP_TopMenuSequence_C_CreateMenuRacer::MachineId' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_CreateMenuRacer, Racer) == 0x000008, "Member 'BP_TopMenuSequence_C_CreateMenuRacer::Racer' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_CreateMenuRacer, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000010, "Member 'BP_TopMenuSequence_C_CreateMenuRacer::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_CreateMenuRacer, CallFunc_GetMachineCustomizeDataById_OutUserMachineCustomizeData) == 0x000018, "Member 'BP_TopMenuSequence_C_CreateMenuRacer::CallFunc_GetMachineCustomizeDataById_OutUserMachineCustomizeData' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_CreateMenuRacer, Temp_int_Variable) == 0x000090, "Member 'BP_TopMenuSequence_C_CreateMenuRacer::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_CreateMenuRacer, K2Node_DynamicCast_AsBP_Menu_Racer_Lobby) == 0x000098, "Member 'BP_TopMenuSequence_C_CreateMenuRacer::K2Node_DynamicCast_AsBP_Menu_Racer_Lobby' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_CreateMenuRacer, K2Node_DynamicCast_bSuccess) == 0x0000A0, "Member 'BP_TopMenuSequence_C_CreateMenuRacer::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_CreateMenuRacer, CallFunc_Array_Get_Item) == 0x0000B0, "Member 'BP_TopMenuSequence_C_CreateMenuRacer::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_CreateMenuRacer, CallFunc_K2_SetActorTransform_SweepHitResult) == 0x000110, "Member 'BP_TopMenuSequence_C_CreateMenuRacer::CallFunc_K2_SetActorTransform_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_CreateMenuRacer, CallFunc_K2_SetActorTransform_ReturnValue) == 0x000208, "Member 'BP_TopMenuSequence_C_CreateMenuRacer::CallFunc_K2_SetActorTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_CreateMenuRacer, CallFunc_GetSelectedDriverId_OutId) == 0x000209, "Member 'BP_TopMenuSequence_C_CreateMenuRacer::CallFunc_GetSelectedDriverId_OutId' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_CreateMenuRacer, CallFunc_GetSelectedDriverId_OutExecsPin) == 0x00020A, "Member 'BP_TopMenuSequence_C_CreateMenuRacer::CallFunc_GetSelectedDriverId_OutExecsPin' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_CreateMenuRacer, CallFunc_GetSelectedMachineID_OutId) == 0x00020C, "Member 'BP_TopMenuSequence_C_CreateMenuRacer::CallFunc_GetSelectedMachineID_OutId' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_CreateMenuRacer, CallFunc_GetSelectedMachineID_OutExecsPin) == 0x000210, "Member 'BP_TopMenuSequence_C_CreateMenuRacer::CallFunc_GetSelectedMachineID_OutExecsPin' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_CreateMenuRacer, K2Node_SwitchEnum_CmpSuccess) == 0x000211, "Member 'BP_TopMenuSequence_C_CreateMenuRacer::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_CreateMenuRacer, K2Node_SwitchEnum_CmpSuccess_1) == 0x000212, "Member 'BP_TopMenuSequence_C_CreateMenuRacer::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_CreateMenuRacer, CallFunc_Conv_IntToByte_ReturnValue) == 0x000213, "Member 'BP_TopMenuSequence_C_CreateMenuRacer::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_CreateMenuRacer, CallFunc_GetValidValue_ReturnValue) == 0x000214, "Member 'BP_TopMenuSequence_C_CreateMenuRacer::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_CreateMenuRacer, CallFunc_CreateMenuRacer_ReturnValue) == 0x000218, "Member 'BP_TopMenuSequence_C_CreateMenuRacer::CallFunc_CreateMenuRacer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_CreateMenuRacer, CallFunc_GetMenuRacer_ReturnValue) == 0x000220, "Member 'BP_TopMenuSequence_C_CreateMenuRacer::CallFunc_GetMenuRacer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_CreateMenuRacer, CallFunc_IsValid_ReturnValue) == 0x000228, "Member 'BP_TopMenuSequence_C_CreateMenuRacer::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_CreateMenuRacer, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000229, "Member 'BP_TopMenuSequence_C_CreateMenuRacer::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_CreateMenuRacer, CallFunc_Add_IntInt_ReturnValue) == 0x00022C, "Member 'BP_TopMenuSequence_C_CreateMenuRacer::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_CreateMenuRacer, CallFunc_GetSelectedPlayerCount_ReturnValue) == 0x000230, "Member 'BP_TopMenuSequence_C_CreateMenuRacer::CallFunc_GetSelectedPlayerCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_CreateMenuRacer, CallFunc_Subtract_IntInt_ReturnValue) == 0x000234, "Member 'BP_TopMenuSequence_C_CreateMenuRacer::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_CreateMenuRacer, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000238, "Member 'BP_TopMenuSequence_C_CreateMenuRacer::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_CreateMenuRacer;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.CreateTipsWindow
 // 0x0001 (0x0001 - 0x0000)
@@ -172,9 +126,7 @@ struct BP_TopMenuSequence_C_CreateTipsWindow final
 public:
 	EHintId                                       InHintId;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_CreateTipsWindow) == 0x000001, "Wrong alignment on BP_TopMenuSequence_C_CreateTipsWindow");
-static_assert(sizeof(BP_TopMenuSequence_C_CreateTipsWindow) == 0x000001, "Wrong size on BP_TopMenuSequence_C_CreateTipsWindow");
-static_assert(offsetof(BP_TopMenuSequence_C_CreateTipsWindow, InHintId) == 0x000000, "Member 'BP_TopMenuSequence_C_CreateTipsWindow::InHintId' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_CreateTipsWindow;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.DecisionStoreEvent
 // 0x0001 (0x0001 - 0x0000)
@@ -183,9 +135,7 @@ struct BP_TopMenuSequence_C_DecisionStoreEvent final
 public:
 	bool                                          IsAccept;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_DecisionStoreEvent) == 0x000001, "Wrong alignment on BP_TopMenuSequence_C_DecisionStoreEvent");
-static_assert(sizeof(BP_TopMenuSequence_C_DecisionStoreEvent) == 0x000001, "Wrong size on BP_TopMenuSequence_C_DecisionStoreEvent");
-static_assert(offsetof(BP_TopMenuSequence_C_DecisionStoreEvent, IsAccept) == 0x000000, "Member 'BP_TopMenuSequence_C_DecisionStoreEvent::IsAccept' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_DecisionStoreEvent;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.ExecuteUbergraph_BP_TopMenuSequence
 // 0x0E90 (0x0E90 - 0x0000)
@@ -830,529 +780,7 @@ public:
 	ECommonMenuButtonType                         K2Node_CustomEvent_ButtonType;                     // 0x0E80(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess_6;                    // 0x0E81(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence) == 0x000010, "Wrong alignment on BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence");
-static_assert(sizeof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence) == 0x000E90, "Wrong size on BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, EntryPoint) == 0x000000, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsReservedGameModeSelectOfTopMenu_ReturnValue) == 0x000014, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsReservedGameModeSelectOfTopMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Not_PreBool_ReturnValue) == 0x000015, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsReservedRaceparkCleardDodonpaEvent_ReturnValue) == 0x000016, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsReservedRaceparkCleardDodonpaEvent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Not_PreBool_ReturnValue_1) == 0x000017, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsReservedRaceparkCleardDodonpaEvent_ReturnValue_1) == 0x000018, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsReservedRaceparkCleardDodonpaEvent_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Not_PreBool_ReturnValue_2) == 0x000019, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_1) == 0x00001C, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_2) == 0x00002C, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_3) == 0x00003C, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_4) == 0x00004C, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsStartedStreamingInstall_ReturnValue) == 0x00005C, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsStartedStreamingInstall_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetHintId_ReturnValue) == 0x00005D, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetHintId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsSkipSelectPlayNumMilestoneVersion_ReturnValue) == 0x00005E, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsSkipSelectPlayNumMilestoneVersion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_5) == 0x000060, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_6) == 0x000070, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetPlayerController_ReturnValue) == 0x000080, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_CheckDodonpaEventCondition_ReturnValue) == 0x000088, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_CheckDodonpaEventCondition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_7) == 0x00008C, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_class_Variable) == 0x0000A0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_class_Variable' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetLastSelectedRaceMenu_ReturnValue) == 0x0000A8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetLastSelectedRaceMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000A9, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x0000AA, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_Button_9) == 0x0000B0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_Button_9' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_PanelIndex_5) == 0x0000B8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_PanelIndex_5' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_ButtonIndex_8) == 0x0000BC, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_ButtonIndex_8' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_Button_8) == 0x0000C0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_Button_8' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_PanelIndex_4) == 0x0000C8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_PanelIndex_4' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_ButtonIndex_7) == 0x0000CC, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_ButtonIndex_7' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_Loaded) == 0x0000D0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_Loaded' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Add_IntInt_ReturnValue) == 0x0000D8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_SelectPlayerNumApplet_ReturnValue) == 0x0000DC, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_SelectPlayerNumApplet_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_AsTop_Menu_Player_Num_Button) == 0x0000E0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_AsTop_Menu_Player_Num_Button' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_bSuccess) == 0x0000E8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_softclass_Variable) == 0x0000F0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_softclass_Variable' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_8) == 0x000118, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_8' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_9) == 0x000128, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_9' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_softclass_Variable_1) == 0x000138, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_softclass_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetSelectedPlayerCount_ReturnValue) == 0x000160, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetSelectedPlayerCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_softclass_Variable_2) == 0x000168, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_softclass_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x000190, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_softclass_Variable_3) == 0x000198, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_softclass_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Not_PreBool_ReturnValue_3) == 0x0001C0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Not_PreBool_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_CheckDodonpaEventCondition_ReturnValue_1) == 0x0001C1, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_CheckDodonpaEventCondition_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_10) == 0x0001C4, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_10' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_11) == 0x0001D4, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_11' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_softclass_Variable_4) == 0x0001E8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_softclass_Variable_4' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_EqualEqual_ByteByte_ReturnValue_3) == 0x000210, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_EqualEqual_ByteByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsStartedStreamingInstall_ReturnValue_1) == 0x000211, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsStartedStreamingInstall_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_BooleanAND_ReturnValue) == 0x000212, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_CheckDodonpaEventCondition_ReturnValue_2) == 0x000213, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_CheckDodonpaEventCondition_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_12) == 0x000214, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_12' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_State_6) == 0x000224, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_State_6' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_InHintId) == 0x000225, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_InHintId' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_13) == 0x000228, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_13' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_14) == 0x000238, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_14' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_Event_IsAccept) == 0x000248, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_Event_IsAccept' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_FadeDirection_9) == 0x000249, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_FadeDirection_9' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_State_7) == 0x00024A, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_State_7' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetHintRequestArray_ReturnValue) == 0x000250, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetHintRequestArray_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_15) == 0x000260, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_15' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Array_Length_ReturnValue) == 0x000270, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Greater_IntInt_ReturnValue) == 0x000274, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetAppPlayerController_ReturnValue) == 0x000278, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetAppPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue) == 0x000280, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_FadeDirection_8) == 0x000281, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_FadeDirection_8' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetTipsHintId_OutTipsHintId) == 0x000282, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetTipsHintId_OutTipsHintId' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000283, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_Button_7) == 0x000288, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_Button_7' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_PanelIndex_3) == 0x000290, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_PanelIndex_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_ButtonIndex_6) == 0x000294, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_ButtonIndex_6' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_Button_6) == 0x000298, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_Button_6' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_PanelIndex_2) == 0x0002A0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_PanelIndex_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_ButtonIndex_5) == 0x0002A4, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_ButtonIndex_5' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_int_Variable) == 0x0002A8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_AsTop_Menu_Game_Mode_Button) == 0x0002B0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_AsTop_Menu_Game_Mode_Button' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_bSuccess_1) == 0x0002B8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_Select_Default) == 0x0002C0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_AsCommon_Menu_Button_Base) == 0x0002E8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_AsCommon_Menu_Button_Base' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_bSuccess_2) == 0x0002F0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_MakeArray_Array) == 0x0002F8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_MakeArray_Array_1) == 0x000308, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_MakeArray_Array_2) == 0x000318, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_MakeArray_Array_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_CheckDodonpaEventCondition_ReturnValue_3) == 0x000328, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_CheckDodonpaEventCondition_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_1) == 0x000329, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_16) == 0x00032C, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_16' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_2) == 0x00033C, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_17) == 0x000340, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_17' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetSelectedTopMenuPlayMode_ReturnValue) == 0x000350, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetSelectedTopMenuPlayMode_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetLastSelectedRaceMenu_ReturnValue_1) == 0x000351, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetLastSelectedRaceMenu_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_EqualEqual_ByteByte_ReturnValue_4) == 0x000352, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_EqualEqual_ByteByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_EqualEqual_ByteByte_ReturnValue_5) == 0x000353, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_EqualEqual_ByteByte_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_EqualEqual_ByteByte_ReturnValue_6) == 0x000354, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_EqualEqual_ByteByte_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_Status) == 0x000355, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_Status' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_BooleanAND_ReturnValue_1) == 0x000356, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_byte_Variable) == 0x000357, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_bool_Variable) == 0x000358, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_byte_Variable_1) == 0x000359, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_bool_Variable_1) == 0x00035A, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000360, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x000368, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_3) == 0x000370, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000378, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsEnableTopMenuStorePopupAutoMilestoneVersion_ReturnValue) == 0x000380, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsEnableTopMenuStorePopupAutoMilestoneVersion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_1) == 0x000388, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetExecuteStorePopupAutoOnce_ReturnValue) == 0x000390, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetExecuteStorePopupAutoOnce_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Not_PreBool_ReturnValue_4) == 0x000391, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Not_PreBool_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetExecuteStorePopupAutoRequest_ReturnValue) == 0x000392, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetExecuteStorePopupAutoRequest_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_int_Variable_1) == 0x000394, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_BooleanAND_ReturnValue_2) == 0x000398, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_BooleanAND_ReturnValue_3) == 0x000399, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_int_Variable_2) == 0x00039C, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_2) == 0x0003A0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_SwitchEnum_CmpSuccess) == 0x0003A8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_int_Variable_3) == 0x0003AC, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_MakeStruct_LobbyId) == 0x0003B0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_MakeStruct_LobbyId' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_int_Variable_4) == 0x0003C0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_int_Variable_5) == 0x0003C4, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_int_Variable_5' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_18) == 0x0003C8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_18' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_19) == 0x0003D8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_19' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_int_Variable_6) == 0x0003E8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_int_Variable_6' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_20) == 0x0003EC, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_20' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_FadeDirection_7) == 0x0003FC, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_FadeDirection_7' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_int_Variable_7) == 0x000400, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_int_Variable_7' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_int_Variable_8) == 0x000404, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_int_Variable_8' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Add_IntInt_ReturnValue_1) == 0x000408, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_int_Variable_9) == 0x00040C, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_int_Variable_9' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_byte_Variable_2) == 0x000410, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_Select_Default_1) == 0x000414, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_2) == 0x000418, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_3) == 0x000420, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsLastFadeDirectionOut_ReturnValue) == 0x000428, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsLastFadeDirectionOut_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_4) == 0x000430, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsLastFadeDirectionOut_ReturnValue_1) == 0x000438, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsLastFadeDirectionOut_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_4) == 0x000439, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetLastFocusedButton_OutLastFocusedButtonIndex) == 0x00043C, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetLastFocusedButton_OutLastFocusedButtonIndex' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetLastFocusedButton_ReturnValue) == 0x000440, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetLastFocusedButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_5) == 0x000448, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_AsTop_Menu_Play_Mode_Button) == 0x000450, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_AsTop_Menu_Play_Mode_Button' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_bSuccess_3) == 0x000458, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsOpenFriendListInOfflineSequence_ReturnValue) == 0x000459, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsOpenFriendListInOfflineSequence_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_6) == 0x000460, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_7) == 0x000468, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_21) == 0x000470, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_21' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_22) == 0x000480, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_22' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_byte_Variable_3) == 0x000490, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_NotEqual_ByteByte_ReturnValue_1) == 0x000491, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_NotEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_NotEqual_ByteByte_ReturnValue_2) == 0x000492, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_NotEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_BooleanAND_ReturnValue_4) == 0x000493, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_BooleanAND_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_SwitchEnum_CmpSuccess_1) == 0x000494, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_byte_Variable_4) == 0x000495, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_5) == 0x000496, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetLastFocusedButton_OutLastFocusedButtonIndex_1) == 0x000498, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetLastFocusedButton_OutLastFocusedButtonIndex_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetLastFocusedButton_ReturnValue_1) == 0x0004A0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetLastFocusedButton_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_bool_Variable_2) == 0x0004A8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_AsTop_Menu_Play_Mode_Button_1) == 0x0004B0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_AsTop_Menu_Play_Mode_Button_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_bSuccess_4) == 0x0004B8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_Button_5) == 0x0004C0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_Button_5' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_PanelIndex_1) == 0x0004C8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_PanelIndex_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_ButtonIndex_4) == 0x0004CC, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_ButtonIndex_4' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_AsTop_Menu_Play_Mode_Button_2) == 0x0004D0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_AsTop_Menu_Play_Mode_Button_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_bSuccess_5) == 0x0004D8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_6) == 0x0004D9, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_Button_4) == 0x0004E0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_Button_4' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_PanelIndex) == 0x0004E8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_PanelIndex' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_ButtonIndex_3) == 0x0004EC, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_ButtonIndex_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_AsCommon_Menu_Button_Base_1) == 0x0004F0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_AsCommon_Menu_Button_Base_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_bSuccess_6) == 0x0004F8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_bSuccess_6' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_AsTop_Menu_Play_Mode_Button_3) == 0x000500, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_AsTop_Menu_Play_Mode_Button_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_bSuccess_7) == 0x000508, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_bSuccess_7' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_7) == 0x000509, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_Event_InState) == 0x00050A, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_Event_InState' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_Event_PrevState) == 0x00050B, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_Event_PrevState' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_8) == 0x00050C, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetAppPlayerController_ReturnValue_1) == 0x000510, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetAppPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_9) == 0x000518, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetCurrentTopMenuState_ReturnValue) == 0x000519, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetCurrentTopMenuState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_EqualEqual_ByteByte_ReturnValue_7) == 0x00051A, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_EqualEqual_ByteByte_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_3) == 0x000520, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_4) == 0x000528, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_23) == 0x000530, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_23' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_24) == 0x000540, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_24' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_25) == 0x000550, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_25' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_10) == 0x000560, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_FadeDirection_6) == 0x000561, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_FadeDirection_6' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetUserSelectedDriverId_ReturnValue) == 0x000562, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetUserSelectedDriverId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetUserSelectedMachineId_ReturnValue) == 0x000563, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetUserSelectedMachineId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_MakeLiteralInt_ReturnValue) == 0x000564, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000568, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_SetSelectedDriverId_OutExecsPin) == 0x00056C, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_SetSelectedDriverId_OutExecsPin' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_SetSelectedMachineID_OutExecsPin) == 0x00056D, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_SetSelectedMachineID_OutExecsPin' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_SwitchEnum_CmpSuccess_2) == 0x00056E, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_SwitchEnum_CmpSuccess_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_SwitchEnum_CmpSuccess_3) == 0x00056F, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_SwitchEnum_CmpSuccess_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetLastSelectedRaceMenu_ReturnValue_2) == 0x000570, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetLastSelectedRaceMenu_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_MakeLiteralInt_ReturnValue_1) == 0x000574, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_MakeLiteralInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_ChooseRivalTeam_ReturnValue) == 0x000578, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_ChooseRivalTeam_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_26) == 0x00057C, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_26' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_MakeLiteralByte_ReturnValue) == 0x00058C, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_MakeLiteralByte_ReturnValue_1) == 0x00058D, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_MakeLiteralByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x000590, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Conv_ByteToInt_ReturnValue_2) == 0x000594, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Conv_ByteToInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_5) == 0x000598, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_11) == 0x0005A0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetUserSelectedMachineId_ReturnValue_1) == 0x0005A1, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetUserSelectedMachineId_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetCarStatusType_ReturnValue) == 0x0005A2, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetCarStatusType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_SetSelectedMachineType_OutExecsPin) == 0x0005A3, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_SetSelectedMachineType_OutExecsPin' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetPlatform_ReturnValue) == 0x0005A4, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetPlatform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_SwitchEnum_CmpSuccess_4) == 0x0005A5, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_SwitchEnum_CmpSuccess_4' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_6) == 0x0005A8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetAllMenuRacers_ReturnValue) == 0x0005B0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetAllMenuRacers_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Array_LastIndex_ReturnValue) == 0x0005C0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_AsWBP_Top_Menu) == 0x0005C8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_AsWBP_Top_Menu' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_bSuccess_8) == 0x0005D0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_bSuccess_8' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0005D1, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0005D2, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_7) == 0x0005D8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_8) == 0x0005E0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_12) == 0x0005E8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsInViewport_ReturnValue) == 0x0005E9, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsInViewport_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Not_PreBool_ReturnValue_5) == 0x0005EA, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Not_PreBool_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_9) == 0x0005F0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_10) == 0x0005F8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetAllMenuRacers_ReturnValue_1) == 0x000600, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetAllMenuRacers_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_11) == 0x000610, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Array_LastIndex_ReturnValue_1) == 0x000618, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Array_LastIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetAllMenuRacers_ReturnValue_2) == 0x000620, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetAllMenuRacers_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_12) == 0x000630, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Array_LastIndex_ReturnValue_2) == 0x000638, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Array_LastIndex_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetPlayerName_PlayerName) == 0x000640, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetPlayerName_PlayerName' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_MakeStruct_PlayerNameContext) == 0x000650, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_MakeStruct_PlayerNameContext' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_13) == 0x000670, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_int_Variable_10) == 0x000678, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_int_Variable_10' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetAllMenuRacers_ReturnValue_3) == 0x000680, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetAllMenuRacers_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Array_Get_Item) == 0x000690, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Array_LastIndex_ReturnValue_3) == 0x000698, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Array_LastIndex_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x00069C, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Add_IntInt_ReturnValue_2) == 0x0006A0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_27) == 0x0006A4, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_27' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_14) == 0x0006B8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_15) == 0x0006C0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetAllMenuRacers_ReturnValue_4) == 0x0006C8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetAllMenuRacers_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetAllMenuRacers_ReturnValue_5) == 0x0006D8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetAllMenuRacers_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Array_Get_Item_1) == 0x0006E8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Array_Get_Item_2) == 0x0006F0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_13) == 0x0006F8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_14) == 0x0006F9, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_15) == 0x0006FA, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsPlayerNumButtonAnimationPlaying_PlayingAnimation) == 0x0006FB, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsPlayerNumButtonAnimationPlaying_PlayingAnimation' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Not_PreBool_ReturnValue_6) == 0x0006FC, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Not_PreBool_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_28) == 0x000700, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_28' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_8) == 0x000710, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_16) == 0x000718, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsShowAppRestartErrorWindow_ReturnValue) == 0x000720, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsShowAppRestartErrorWindow_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_9) == 0x000728, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_10) == 0x000730, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_11) == 0x000738, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsLastFadeDirectionIn_ReturnValue) == 0x000740, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsLastFadeDirectionIn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_12) == 0x000748, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_HasInviteRequest_ReturnValue) == 0x000750, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_HasInviteRequest_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_29) == 0x000754, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_29' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetLastSelectedRaceMenu_ReturnValue_3) == 0x000764, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetLastSelectedRaceMenu_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_17) == 0x000768, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_17' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_EqualEqual_ByteByte_ReturnValue_8) == 0x000770, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_EqualEqual_ByteByte_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetAlreadyLoadNeedSubLevel_bIsAlreadyLoad) == 0x000771, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetAlreadyLoadNeedSubLevel_bIsAlreadyLoad' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetAlreadyLoadNeedSubLevel_ReturnValue) == 0x000778, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetAlreadyLoadNeedSubLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_EqualEqual_ByteByte_ReturnValue_9) == 0x000780, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_EqualEqual_ByteByte_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetLevelScriptActor_ReturnValue) == 0x000788, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetLevelScriptActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_BooleanOR_ReturnValue) == 0x000790, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_AsMenu_Lobby_Level_Interface) == 0x000798, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_AsMenu_Lobby_Level_Interface' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_bSuccess_9) == 0x0007A8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_bSuccess_9' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_16) == 0x0007A9, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetDodonpaActor_ReturnValue) == 0x0007B0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetDodonpaActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_13) == 0x0007B8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_18) == 0x0007C0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_18' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_17) == 0x0007C8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_17' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_LoadLevelTopMenu_ReturnValue) == 0x0007D0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_LoadLevelTopMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_ReadyBeforeLoadLevelTopMenu_ReturnValue) == 0x0007D8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_ReadyBeforeLoadLevelTopMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetAlreadyLoadNeedSubLevel_bIsAlreadyLoad_1) == 0x0007DC, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetAlreadyLoadNeedSubLevel_bIsAlreadyLoad_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetAlreadyLoadNeedSubLevel_ReturnValue_1) == 0x0007E0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetAlreadyLoadNeedSubLevel_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_18) == 0x0007E8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_18' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsNeedUnloadAnyTopMenuLevel_ReturnValue) == 0x0007E9, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsNeedUnloadAnyTopMenuLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_19) == 0x0007F0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_19' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_PlayAnimation_ReturnValue) == 0x0007F8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_20) == 0x000800, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_20' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetSelectedPlayerCount_ReturnValue_1) == 0x000808, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetSelectedPlayerCount_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_State_5) == 0x00080C, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_State_5' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_14) == 0x000810, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_21) == 0x000818, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_21' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_FadeDirection_5) == 0x000820, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_FadeDirection_5' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsReservedRaceparkCleardDodonpaEvent_ReturnValue_2) == 0x000821, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsReservedRaceparkCleardDodonpaEvent_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsReservedRaceparkCleardDodonpaEvent_ReturnValue_3) == 0x000822, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsReservedRaceparkCleardDodonpaEvent_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_BooleanOR_ReturnValue_1) == 0x000823, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Not_PreBool_ReturnValue_7) == 0x000824, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Not_PreBool_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_30) == 0x000828, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_30' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_22) == 0x000838, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_22' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_15) == 0x000840, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_19) == 0x000848, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_19' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_AsWBP_Header_Menu) == 0x000850, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_AsWBP_Header_Menu' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_bSuccess_10) == 0x000858, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_bSuccess_10' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_CheckDodonpaEventCondition_ReturnValue_4) == 0x000859, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_CheckDodonpaEventCondition_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_20) == 0x00085A, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_20' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_23) == 0x000860, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_23' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_31) == 0x000868, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_31' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_int_Variable_11) == 0x000878, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_int_Variable_11' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetMenuRacer_ReturnValue) == 0x000880, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetMenuRacer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_AsMenu_Racer_Lobby) == 0x000888, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_AsMenu_Racer_Lobby' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_bSuccess_11) == 0x000890, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_bSuccess_11' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_LessEqual_IntInt_ReturnValue_2) == 0x000891, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_LessEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Add_IntInt_ReturnValue_3) == 0x000894, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsStartedStreamingInstall_ReturnValue_2) == 0x000898, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsStartedStreamingInstall_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_MakeLiteralText_ReturnValue) == 0x0008A0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_MakeLiteralText_ReturnValue_1) == 0x0008B0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_CreateLoggedinErrorPopupWindow_ReturnValue) == 0x0008C0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_CreateLoggedinErrorPopupWindow_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_24) == 0x0008C8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_24' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_MakeLiteralByte_ReturnValue_2) == 0x0008D0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_MakeLiteralByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_21) == 0x0008D1, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_21' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_NotEqual_ByteByte_ReturnValue_3) == 0x0008D2, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_NotEqual_ByteByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_AsWBP_Header_Menu_1) == 0x0008D8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_AsWBP_Header_Menu_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_bSuccess_12) == 0x0008E0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_bSuccess_12' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_ReturnState) == 0x0008E1, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_ReturnState' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetCurrentState_ReturnValue) == 0x0008E4, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetCurrentState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Conv_IntToByte_ReturnValue) == 0x0008E8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetValidValue_ReturnValue) == 0x0008E9, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_Event_Button) == 0x0008F0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_Event_Button' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_Event_PanelIndex) == 0x0008F8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_Event_PanelIndex' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_Event_ButtonIndex) == 0x0008FC, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_Event_ButtonIndex' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_CheckLoggedinForDisplayNews_ReturnValue) == 0x000900, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_CheckLoggedinForDisplayNews_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_MakeLiteralText_ReturnValue_2) == 0x000908, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_MakeLiteralText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_MakeLiteralText_ReturnValue_3) == 0x000918, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_MakeLiteralText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_CreateLoggedinErrorPopupWindow_ReturnValue_1) == 0x000928, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_CreateLoggedinErrorPopupWindow_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_25) == 0x000930, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_25' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetCurrentTopMenuLevelName_ReturnValue) == 0x000938, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetCurrentTopMenuLevelName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_22) == 0x000940, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_22' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetSelectedPlayerCount_ReturnValue_2) == 0x000944, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetSelectedPlayerCount_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_23) == 0x000948, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_23' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000949, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_CheckDodonpaEventCondition_ReturnValue_5) == 0x00094A, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_CheckDodonpaEventCondition_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_24) == 0x00094B, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_24' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_25) == 0x00094C, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_25' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Not_PreBool_ReturnValue_8) == 0x00094D, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Not_PreBool_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Not_PreBool_ReturnValue_9) == 0x00094E, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Not_PreBool_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_32) == 0x000950, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_32' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_Event_Object_3) == 0x000960, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_Event_Object_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsEnableNews_ReturnValue) == 0x000968, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsEnableNews_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetCurrentTopMenuState_ReturnValue_1) == 0x000969, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetCurrentTopMenuState_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsEnableTopMenuStoreMilestoneVersion_ReturnValue) == 0x00096A, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsEnableTopMenuStoreMilestoneVersion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsDisableTopMenuNewsMilestoneVersion_ReturnValue) == 0x00096B, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsDisableTopMenuNewsMilestoneVersion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_26) == 0x000970, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_26' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_26) == 0x000978, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_26' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_27) == 0x000979, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_27' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_28) == 0x00097A, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_28' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_MakeLiteralByte_ReturnValue_3) == 0x00097B, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_MakeLiteralByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetCurrentTopMenuState_ReturnValue_2) == 0x00097C, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetCurrentTopMenuState_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Conv_ByteToInt_ReturnValue_3) == 0x000980, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Conv_ByteToInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_27) == 0x000988, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_27' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_29) == 0x000990, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_29' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetAppPlayerController_ReturnValue_2) == 0x000998, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetAppPlayerController_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_28) == 0x0009A0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_28' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetRegisteredMenu_ReturnValue) == 0x0009A8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetRegisteredMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_AsUnion_UIButton_Base) == 0x0009B0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_AsUnion_UIButton_Base' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_bSuccess_13) == 0x0009B8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_bSuccess_13' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_30) == 0x0009B9, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_30' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_16) == 0x0009C0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_byte_Variable_5) == 0x0009C8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_byte_Variable_6) == 0x0009C9, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_byte_Variable_6' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_InEnable) == 0x0009CA, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_InEnable' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_33) == 0x0009CC, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_33' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_byte_Variable_7) == 0x0009DC, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_byte_Variable_7' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_byte_Variable_8) == 0x0009DD, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_byte_Variable_8' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_byte_Variable_9) == 0x0009DE, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_byte_Variable_9' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_byte_Variable_10) == 0x0009DF, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_byte_Variable_10' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_Select_Default_2) == 0x0009E0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_SwitchEnum_CmpSuccess_5) == 0x0009E1, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_SwitchEnum_CmpSuccess_5' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_Button_3) == 0x0009E8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_Button_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_ButtonIndex_2) == 0x0009F0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_ButtonIndex_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_EqualEqual_IntInt_ReturnValue_2) == 0x0009F4, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_EqualEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_int_Variable_12) == 0x0009F8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_int_Variable_12' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_29) == 0x000A00, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_29' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetMenuRacer_ReturnValue_1) == 0x000A08, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetMenuRacer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_AsMenu_Racer_Lobby_1) == 0x000A10, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_AsMenu_Racer_Lobby_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_bSuccess_14) == 0x000A18, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_bSuccess_14' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_31) == 0x000A19, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_31' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsInViewport_ReturnValue_1) == 0x000A1A, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsInViewport_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Not_PreBool_ReturnValue_10) == 0x000A1B, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Not_PreBool_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_LessEqual_IntInt_ReturnValue_3) == 0x000A1C, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_LessEqual_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Add_IntInt_ReturnValue_4) == 0x000A20, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_17) == 0x000A28, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_17' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_32) == 0x000A30, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_32' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_18) == 0x000A38, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_18' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_30) == 0x000A40, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_30' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_33) == 0x000A48, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_33' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_MakeLiteralByte_ReturnValue_4) == 0x000A49, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_MakeLiteralByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_31) == 0x000A50, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_31' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_19) == 0x000A58, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_19' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Conv_ByteToInt_ReturnValue_4) == 0x000A60, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Conv_ByteToInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_MakeLiteralByte_ReturnValue_5) == 0x000A64, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_MakeLiteralByte_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_MakeLiteralByte_ReturnValue_6) == 0x000A65, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_MakeLiteralByte_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Conv_ByteToInt_ReturnValue_5) == 0x000A68, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Conv_ByteToInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Conv_ByteToInt_ReturnValue_6) == 0x000A6C, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Conv_ByteToInt_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_byte_Variable_11) == 0x000A70, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_byte_Variable_11' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_20) == 0x000A78, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_20' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_34) == 0x000A80, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_34' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_34) == 0x000A90, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_34' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_35) == 0x000A94, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_35' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_36) == 0x000AA4, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_36' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_37) == 0x000AB4, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_37' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_bool_Variable_3) == 0x000AC4, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_Select_Default_3) == 0x000AC5, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetUserNiceCount_ReturnValue) == 0x000AC8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetUserNiceCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_32) == 0x000AD0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_32' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_35) == 0x000AD8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_35' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_36) == 0x000AD9, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_36' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsInViewport_ReturnValue_2) == 0x000ADA, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsInViewport_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsInViewport_ReturnValue_3) == 0x000ADB, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsInViewport_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Not_PreBool_ReturnValue_11) == 0x000ADC, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Not_PreBool_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_Event_Object_2) == 0x000AE0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_Event_Object_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_37) == 0x000AE8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_37' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_MakeTransform_ReturnValue) == 0x000AF0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000B50, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_33) == 0x000B58, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_33' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_FinishSpawningActor_ReturnValue) == 0x000B60, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_Index) == 0x000B68, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_Index' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_State_4) == 0x000B6C, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_State_4' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_EqualEqual_IntInt_ReturnValue_3) == 0x000B6D, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_EqualEqual_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetMenuRacer_ReturnValue_2) == 0x000B70, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetMenuRacer_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_AsMenu_Racer_Lobby_2) == 0x000B78, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_AsMenu_Racer_Lobby_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_bSuccess_15) == 0x000B80, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_bSuccess_15' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_Button_2) == 0x000B88, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_Button_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_ButtonIndex_1) == 0x000B90, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_ButtonIndex_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetProfileData_ReturnValue) == 0x000B98, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetProfileData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_38) == 0x000C98, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_38' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetMenuRacer_ReturnValue_3) == 0x000CA0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetMenuRacer_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_AsMenu_Racer_Lobby_3) == 0x000CA8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_AsMenu_Racer_Lobby_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_bSuccess_16) == 0x000CB0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_bSuccess_16' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_BreakTransform_Location) == 0x000CB8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_BreakTransform_Location' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_BreakTransform_Rotation) == 0x000CD0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_BreakTransform_Rotation' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_BreakTransform_Scale) == 0x000CE8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_BreakTransform_Scale' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_Event_Object_1) == 0x000D00, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_Event_Object_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_byte_Variable_12) == 0x000D08, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_byte_Variable_12' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsSkipDodonpaEventMilestoneVersion_ReturnValue) == 0x000D09, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsSkipDodonpaEventMilestoneVersion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_Select_Default_4) == 0x000D10, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_MakeLiteralInt_ReturnValue_2) == 0x000D20, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_MakeLiteralInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetCurrentTopMenuState_ReturnValue_3) == 0x000D24, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetCurrentTopMenuState_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetMenuRacer_ReturnValue_4) == 0x000D28, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetMenuRacer_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_AsBP_Menu_Racer_Lobby) == 0x000D30, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_AsBP_Menu_Racer_Lobby' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_DynamicCast_bSuccess_17) == 0x000D38, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_DynamicCast_bSuccess_17' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_39) == 0x000D39, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_39' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_21) == 0x000D40, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_21' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_22) == 0x000D48, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_22' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetCurrentTopMenuState_ReturnValue_4) == 0x000D50, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetCurrentTopMenuState_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_40) == 0x000D51, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_40' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_EqualEqual_ByteByte_ReturnValue_10) == 0x000D52, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_EqualEqual_ByteByte_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_EqualEqual_ByteByte_ReturnValue_11) == 0x000D53, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_EqualEqual_ByteByte_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_EqualEqual_ByteByte_ReturnValue_12) == 0x000D54, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_EqualEqual_ByteByte_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_BooleanOR_ReturnValue_2) == 0x000D55, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Not_PreBool_ReturnValue_12) == 0x000D56, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Not_PreBool_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_BooleanAND_ReturnValue_5) == 0x000D57, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_BooleanAND_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_EqualEqual_ByteByte_ReturnValue_13) == 0x000D58, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_EqualEqual_ByteByte_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_Event_Object) == 0x000D60, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_Event_Object' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_Button_1) == 0x000D68, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_ButtonIndex) == 0x000D70, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_ButtonIndex' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_23) == 0x000D78, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_23' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_MakeLiteralByte_ReturnValue_7) == 0x000D80, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_MakeLiteralByte_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_41) == 0x000D81, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_41' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Conv_ByteToInt_ReturnValue_7) == 0x000D84, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Conv_ByteToInt_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_24) == 0x000D88, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_24' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_38) == 0x000D90, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_38' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_byte_Variable_13) == 0x000DA0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_byte_Variable_13' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_byte_Variable_14) == 0x000DA1, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_byte_Variable_14' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_EqualEqual_ByteByte_ReturnValue_14) == 0x000DA2, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_EqualEqual_ByteByte_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_EqualEqual_ByteByte_ReturnValue_15) == 0x000DA3, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_EqualEqual_ByteByte_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_Select_Default_5) == 0x000DA4, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_Select_Default_5' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_FadeDirection_4) == 0x000DA5, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_FadeDirection_4' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_MakeLiteralByte_ReturnValue_8) == 0x000DA6, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_MakeLiteralByte_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_FadeDirection_3) == 0x000DA7, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_FadeDirection_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_State_3) == 0x000DA8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_State_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_MakeLiteralByte_ReturnValue_9) == 0x000DA9, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_MakeLiteralByte_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_Select_Default_6) == 0x000DAA, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_Select_Default_6' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_34) == 0x000DB0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_34' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_EqualEqual_ByteByte_ReturnValue_16) == 0x000DB8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_EqualEqual_ByteByte_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_25) == 0x000DC0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_25' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetWorldSubsystem_ReturnValue_35) == 0x000DC8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetWorldSubsystem_ReturnValue_35' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_39) == 0x000DD0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_39' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_FadeDirection_2) == 0x000DE0, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_FadeDirection_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_40) == 0x000DE4, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_40' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_EqualEqual_ByteByte_ReturnValue_17) == 0x000DF4, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_EqualEqual_ByteByte_ReturnValue_17' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_42) == 0x000DF5, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_42' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_41) == 0x000DF8, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_41' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_42) == 0x000E08, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_42' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_Create_ReturnValue) == 0x000E18, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_byte_Variable_15) == 0x000E20, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_byte_Variable_15' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsInViewport_ReturnValue_4) == 0x000E21, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsInViewport_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_ComponentBoundEvent_State_1) == 0x000E22, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_ComponentBoundEvent_State_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_bool_Variable_4) == 0x000E23, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_bool_Variable_4' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_Select_Default_7) == 0x000E24, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_Select_Default_7' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_43) == 0x000E25, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_43' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_FadeDirection_1) == 0x000E26, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_FadeDirection_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_CheckDodonpaEventCondition_ReturnValue_6) == 0x000E27, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_CheckDodonpaEventCondition_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetCurrentTopMenuState_ReturnValue_5) == 0x000E28, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetCurrentTopMenuState_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_GetAppPlayerController_ReturnValue_3) == 0x000E30, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_GetAppPlayerController_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_44) == 0x000E38, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_44' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, Temp_bool_Variable_5) == 0x000E39, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::Temp_bool_Variable_5' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_FadeDirection) == 0x000E3A, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_FadeDirection' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_Select_Default_8) == 0x000E40, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_Select_Default_8' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_CreatePlayAnimationProxyObject_Result) == 0x000E48, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_CreatePlayAnimationProxyObject_Result' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_CreatePlayAnimationProxyObject_ReturnValue) == 0x000E50, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_CreatePlayAnimationProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsValid_ReturnValue_45) == 0x000E58, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsValid_ReturnValue_45' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsTipsHint_OutTipsFlag) == 0x000E59, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsTipsHint_OutTipsFlag' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsTipsHint_OutTipsFlag_1) == 0x000E5A, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsTipsHint_OutTipsFlag_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, CallFunc_IsSkipDodonpaEventMilestoneVersion_ReturnValue_1) == 0x000E5B, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::CallFunc_IsSkipDodonpaEventMilestoneVersion_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CreateDelegate_OutputDelegate_43) == 0x000E5C, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CreateDelegate_OutputDelegate_43' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_State_2) == 0x000E6C, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_State_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_State_1) == 0x000E6D, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_State_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_Select_Default_9) == 0x000E6E, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_Select_Default_9' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_ComponentBoundEvent_State) == 0x000E6F, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_ComponentBoundEvent_State' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_State) == 0x000E70, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_State' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_Select_Default_10) == 0x000E71, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_Select_Default_10' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_Button) == 0x000E78, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_CustomEvent_ButtonType) == 0x000E80, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_CustomEvent_ButtonType' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence, K2Node_SwitchEnum_CmpSuccess_6) == 0x000E81, "Member 'BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence::K2Node_SwitchEnum_CmpSuccess_6' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_ExecuteUbergraph_BP_TopMenuSequence;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.FadeStraightToSelectPlayMode
 // 0x0001 (0x0001 - 0x0000)
@@ -1361,9 +789,7 @@ struct BP_TopMenuSequence_C_FadeStraightToSelectPlayMode final
 public:
 	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_FadeStraightToSelectPlayMode) == 0x000001, "Wrong alignment on BP_TopMenuSequence_C_FadeStraightToSelectPlayMode");
-static_assert(sizeof(BP_TopMenuSequence_C_FadeStraightToSelectPlayMode) == 0x000001, "Wrong size on BP_TopMenuSequence_C_FadeStraightToSelectPlayMode");
-static_assert(offsetof(BP_TopMenuSequence_C_FadeStraightToSelectPlayMode, FadeDirection) == 0x000000, "Member 'BP_TopMenuSequence_C_FadeStraightToSelectPlayMode::FadeDirection' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_FadeStraightToSelectPlayMode;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.FinishedFadeToCharaMachineSelect
 // 0x0001 (0x0001 - 0x0000)
@@ -1372,9 +798,7 @@ struct BP_TopMenuSequence_C_FinishedFadeToCharaMachineSelect final
 public:
 	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_FinishedFadeToCharaMachineSelect) == 0x000001, "Wrong alignment on BP_TopMenuSequence_C_FinishedFadeToCharaMachineSelect");
-static_assert(sizeof(BP_TopMenuSequence_C_FinishedFadeToCharaMachineSelect) == 0x000001, "Wrong size on BP_TopMenuSequence_C_FinishedFadeToCharaMachineSelect");
-static_assert(offsetof(BP_TopMenuSequence_C_FinishedFadeToCharaMachineSelect, FadeDirection) == 0x000000, "Member 'BP_TopMenuSequence_C_FinishedFadeToCharaMachineSelect::FadeDirection' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_FinishedFadeToCharaMachineSelect;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.FinishedFadeToGadgetCustom
 // 0x0001 (0x0001 - 0x0000)
@@ -1383,9 +807,7 @@ struct BP_TopMenuSequence_C_FinishedFadeToGadgetCustom final
 public:
 	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_FinishedFadeToGadgetCustom) == 0x000001, "Wrong alignment on BP_TopMenuSequence_C_FinishedFadeToGadgetCustom");
-static_assert(sizeof(BP_TopMenuSequence_C_FinishedFadeToGadgetCustom) == 0x000001, "Wrong size on BP_TopMenuSequence_C_FinishedFadeToGadgetCustom");
-static_assert(offsetof(BP_TopMenuSequence_C_FinishedFadeToGadgetCustom, FadeDirection) == 0x000000, "Member 'BP_TopMenuSequence_C_FinishedFadeToGadgetCustom::FadeDirection' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_FinishedFadeToGadgetCustom;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.FinishedFadeToGarage
 // 0x0001 (0x0001 - 0x0000)
@@ -1394,9 +816,7 @@ struct BP_TopMenuSequence_C_FinishedFadeToGarage final
 public:
 	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_FinishedFadeToGarage) == 0x000001, "Wrong alignment on BP_TopMenuSequence_C_FinishedFadeToGarage");
-static_assert(sizeof(BP_TopMenuSequence_C_FinishedFadeToGarage) == 0x000001, "Wrong size on BP_TopMenuSequence_C_FinishedFadeToGarage");
-static_assert(offsetof(BP_TopMenuSequence_C_FinishedFadeToGarage, FadeDirection) == 0x000000, "Member 'BP_TopMenuSequence_C_FinishedFadeToGarage::FadeDirection' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_FinishedFadeToGarage;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.FinishedFadeToGarageAndCharaMachineSelectCommonProcess
 // 0x0018 (0x0018 - 0x0000)
@@ -1410,13 +830,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_FinishedFadeToGarageAndCharaMachineSelectCommonProcess) == 0x000008, "Wrong alignment on BP_TopMenuSequence_C_FinishedFadeToGarageAndCharaMachineSelectCommonProcess");
-static_assert(sizeof(BP_TopMenuSequence_C_FinishedFadeToGarageAndCharaMachineSelectCommonProcess) == 0x000018, "Wrong size on BP_TopMenuSequence_C_FinishedFadeToGarageAndCharaMachineSelectCommonProcess");
-static_assert(offsetof(BP_TopMenuSequence_C_FinishedFadeToGarageAndCharaMachineSelectCommonProcess, InState) == 0x000000, "Member 'BP_TopMenuSequence_C_FinishedFadeToGarageAndCharaMachineSelectCommonProcess::InState' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_FinishedFadeToGarageAndCharaMachineSelectCommonProcess, PrevState) == 0x000001, "Member 'BP_TopMenuSequence_C_FinishedFadeToGarageAndCharaMachineSelectCommonProcess::PrevState' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_FinishedFadeToGarageAndCharaMachineSelectCommonProcess, CallFunc_GetAppPlayerController_ReturnValue) == 0x000008, "Member 'BP_TopMenuSequence_C_FinishedFadeToGarageAndCharaMachineSelectCommonProcess::CallFunc_GetAppPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_FinishedFadeToGarageAndCharaMachineSelectCommonProcess, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'BP_TopMenuSequence_C_FinishedFadeToGarageAndCharaMachineSelectCommonProcess::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_FinishedFadeToGarageAndCharaMachineSelectCommonProcess, CallFunc_IsValid_ReturnValue_1) == 0x000011, "Member 'BP_TopMenuSequence_C_FinishedFadeToGarageAndCharaMachineSelectCommonProcess::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_FinishedFadeToGarageAndCharaMachineSelectCommonProcess;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.FinishiedFadeToSelectedGameMode
 // 0x0001 (0x0001 - 0x0000)
@@ -1425,9 +839,7 @@ struct BP_TopMenuSequence_C_FinishiedFadeToSelectedGameMode final
 public:
 	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_FinishiedFadeToSelectedGameMode) == 0x000001, "Wrong alignment on BP_TopMenuSequence_C_FinishiedFadeToSelectedGameMode");
-static_assert(sizeof(BP_TopMenuSequence_C_FinishiedFadeToSelectedGameMode) == 0x000001, "Wrong size on BP_TopMenuSequence_C_FinishiedFadeToSelectedGameMode");
-static_assert(offsetof(BP_TopMenuSequence_C_FinishiedFadeToSelectedGameMode, FadeDirection) == 0x000000, "Member 'BP_TopMenuSequence_C_FinishiedFadeToSelectedGameMode::FadeDirection' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_FinishiedFadeToSelectedGameMode;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.ForceTransitionPartyRace
 // 0x0001 (0x0001 - 0x0000)
@@ -1436,9 +848,7 @@ struct BP_TopMenuSequence_C_ForceTransitionPartyRace final
 public:
 	EMenuSequenceSubState                         State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_ForceTransitionPartyRace) == 0x000001, "Wrong alignment on BP_TopMenuSequence_C_ForceTransitionPartyRace");
-static_assert(sizeof(BP_TopMenuSequence_C_ForceTransitionPartyRace) == 0x000001, "Wrong size on BP_TopMenuSequence_C_ForceTransitionPartyRace");
-static_assert(offsetof(BP_TopMenuSequence_C_ForceTransitionPartyRace, State) == 0x000000, "Member 'BP_TopMenuSequence_C_ForceTransitionPartyRace::State' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_ForceTransitionPartyRace;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.GetOwnerMenuSequence
 // 0x0010 (0x0010 - 0x0000)
@@ -1448,10 +858,7 @@ public:
 	class UObject*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_GetParentActor_ReturnValue;               // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_GetOwnerMenuSequence) == 0x000008, "Wrong alignment on BP_TopMenuSequence_C_GetOwnerMenuSequence");
-static_assert(sizeof(BP_TopMenuSequence_C_GetOwnerMenuSequence) == 0x000010, "Wrong size on BP_TopMenuSequence_C_GetOwnerMenuSequence");
-static_assert(offsetof(BP_TopMenuSequence_C_GetOwnerMenuSequence, ReturnValue) == 0x000000, "Member 'BP_TopMenuSequence_C_GetOwnerMenuSequence::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_GetOwnerMenuSequence, CallFunc_GetParentActor_ReturnValue) == 0x000008, "Member 'BP_TopMenuSequence_C_GetOwnerMenuSequence::CallFunc_GetParentActor_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_GetOwnerMenuSequence;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.GetPlayerName
 // 0x0050 (0x0050 - 0x0000)
@@ -1466,14 +873,7 @@ public:
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_SelectString_ReturnValue;                 // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_GetPlayerName) == 0x000008, "Wrong alignment on BP_TopMenuSequence_C_GetPlayerName");
-static_assert(sizeof(BP_TopMenuSequence_C_GetPlayerName) == 0x000050, "Wrong size on BP_TopMenuSequence_C_GetPlayerName");
-static_assert(offsetof(BP_TopMenuSequence_C_GetPlayerName, playerName) == 0x000000, "Member 'BP_TopMenuSequence_C_GetPlayerName::playerName' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_GetPlayerName, CallFunc_GetComputerNameString_ReturnValue) == 0x000010, "Member 'BP_TopMenuSequence_C_GetPlayerName::CallFunc_GetComputerNameString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_GetPlayerName, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000020, "Member 'BP_TopMenuSequence_C_GetPlayerName::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_GetPlayerName, CallFunc_GetLoggedInPlayerNickname_ReturnValue) == 0x000028, "Member 'BP_TopMenuSequence_C_GetPlayerName::CallFunc_GetLoggedInPlayerNickname_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_GetPlayerName, CallFunc_IsEmpty_ReturnValue) == 0x000038, "Member 'BP_TopMenuSequence_C_GetPlayerName::CallFunc_IsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_GetPlayerName, CallFunc_SelectString_ReturnValue) == 0x000040, "Member 'BP_TopMenuSequence_C_GetPlayerName::CallFunc_SelectString_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_GetPlayerName;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.GetTipsHintId
 // 0x0020 (0x0020 - 0x0000)
@@ -1487,25 +887,13 @@ public:
 	bool                                          CallFunc_IsGrandPrixEndingCleared_ReturnValue;     // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsGrandPrixEndingCleared_ReturnValue_1;   // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsShowAddGadgetTips_bOutShowTips_1;       // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7[0x1];                                        // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_IsShowAddGadgetTips_bOutShowTips_2;       // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<EHintId>                               CallFunc_GetHintRequestArray_ReturnValue;          // 0x0008(0x0010)(ReferenceParm)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsGrandPrixLeast1Play_ReturnValue;        // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_GetTipsHintId) == 0x000008, "Wrong alignment on BP_TopMenuSequence_C_GetTipsHintId");
-static_assert(sizeof(BP_TopMenuSequence_C_GetTipsHintId) == 0x000020, "Wrong size on BP_TopMenuSequence_C_GetTipsHintId");
-static_assert(offsetof(BP_TopMenuSequence_C_GetTipsHintId, OutTipsHintId) == 0x000000, "Member 'BP_TopMenuSequence_C_GetTipsHintId::OutTipsHintId' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_GetTipsHintId, ShowTips11043_PlateRank) == 0x000001, "Member 'BP_TopMenuSequence_C_GetTipsHintId::ShowTips11043_PlateRank' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_GetTipsHintId, CallFunc_IsReadHint_ReturnValue) == 0x000002, "Member 'BP_TopMenuSequence_C_GetTipsHintId::CallFunc_IsReadHint_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_GetTipsHintId, CallFunc_IsShowAddGadgetTips_bOutShowTips) == 0x000003, "Member 'BP_TopMenuSequence_C_GetTipsHintId::CallFunc_IsShowAddGadgetTips_bOutShowTips' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_GetTipsHintId, CallFunc_IsGrandPrixEndingCleared_ReturnValue) == 0x000004, "Member 'BP_TopMenuSequence_C_GetTipsHintId::CallFunc_IsGrandPrixEndingCleared_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_GetTipsHintId, CallFunc_IsGrandPrixEndingCleared_ReturnValue_1) == 0x000005, "Member 'BP_TopMenuSequence_C_GetTipsHintId::CallFunc_IsGrandPrixEndingCleared_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_GetTipsHintId, CallFunc_IsShowAddGadgetTips_bOutShowTips_1) == 0x000006, "Member 'BP_TopMenuSequence_C_GetTipsHintId::CallFunc_IsShowAddGadgetTips_bOutShowTips_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_GetTipsHintId, CallFunc_GetHintRequestArray_ReturnValue) == 0x000008, "Member 'BP_TopMenuSequence_C_GetTipsHintId::CallFunc_GetHintRequestArray_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_GetTipsHintId, CallFunc_Array_Length_ReturnValue) == 0x000018, "Member 'BP_TopMenuSequence_C_GetTipsHintId::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_GetTipsHintId, CallFunc_Greater_IntInt_ReturnValue) == 0x00001C, "Member 'BP_TopMenuSequence_C_GetTipsHintId::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_GetTipsHintId, CallFunc_IsGrandPrixLeast1Play_ReturnValue) == 0x00001D, "Member 'BP_TopMenuSequence_C_GetTipsHintId::CallFunc_IsGrandPrixLeast1Play_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_GetTipsHintId;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.IsShowAddGadgetTips
 // 0x0014 (0x0014 - 0x0000)
@@ -1523,17 +911,7 @@ public:
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_IsShowAddGadgetTips) == 0x000004, "Wrong alignment on BP_TopMenuSequence_C_IsShowAddGadgetTips");
-static_assert(sizeof(BP_TopMenuSequence_C_IsShowAddGadgetTips) == 0x000014, "Wrong size on BP_TopMenuSequence_C_IsShowAddGadgetTips");
-static_assert(offsetof(BP_TopMenuSequence_C_IsShowAddGadgetTips, InGadgetPlateRank) == 0x000000, "Member 'BP_TopMenuSequence_C_IsShowAddGadgetTips::InGadgetPlateRank' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_IsShowAddGadgetTips, InVersionNum) == 0x000001, "Member 'BP_TopMenuSequence_C_IsShowAddGadgetTips::InVersionNum' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_IsShowAddGadgetTips, bOutShowTips) == 0x000002, "Member 'BP_TopMenuSequence_C_IsShowAddGadgetTips::bOutShowTips' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_IsShowAddGadgetTips, CallFunc_IsReachedTargetVersion_ReturnValue) == 0x000003, "Member 'BP_TopMenuSequence_C_IsShowAddGadgetTips::CallFunc_IsReachedTargetVersion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_IsShowAddGadgetTips, CallFunc_GetGadgetPlateIdFromTotalRaceCount_ReturnValue) == 0x000004, "Member 'BP_TopMenuSequence_C_IsShowAddGadgetTips::CallFunc_GetGadgetPlateIdFromTotalRaceCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_IsShowAddGadgetTips, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000008, "Member 'BP_TopMenuSequence_C_IsShowAddGadgetTips::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_IsShowAddGadgetTips, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x00000C, "Member 'BP_TopMenuSequence_C_IsShowAddGadgetTips::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_IsShowAddGadgetTips, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000010, "Member 'BP_TopMenuSequence_C_IsShowAddGadgetTips::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_IsShowAddGadgetTips, CallFunc_BooleanAND_ReturnValue) == 0x000011, "Member 'BP_TopMenuSequence_C_IsShowAddGadgetTips::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_IsShowAddGadgetTips;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.IsTipsHint
 // 0x000A (0x000A - 0x0000)
@@ -1551,18 +929,7 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_IsTipsHint) == 0x000001, "Wrong alignment on BP_TopMenuSequence_C_IsTipsHint");
-static_assert(sizeof(BP_TopMenuSequence_C_IsTipsHint) == 0x00000A, "Wrong size on BP_TopMenuSequence_C_IsTipsHint");
-static_assert(offsetof(BP_TopMenuSequence_C_IsTipsHint, OutTipsFlag) == 0x000000, "Member 'BP_TopMenuSequence_C_IsTipsHint::OutTipsFlag' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_IsTipsHint, CallFunc_IsReadHint_ReturnValue) == 0x000001, "Member 'BP_TopMenuSequence_C_IsTipsHint::CallFunc_IsReadHint_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_IsTipsHint, CallFunc_IsReadHint_ReturnValue_1) == 0x000002, "Member 'BP_TopMenuSequence_C_IsTipsHint::CallFunc_IsReadHint_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_IsTipsHint, CallFunc_Not_PreBool_ReturnValue) == 0x000003, "Member 'BP_TopMenuSequence_C_IsTipsHint::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_IsTipsHint, CallFunc_BooleanAND_ReturnValue) == 0x000004, "Member 'BP_TopMenuSequence_C_IsTipsHint::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_IsTipsHint, CallFunc_IsReadHint_ReturnValue_2) == 0x000005, "Member 'BP_TopMenuSequence_C_IsTipsHint::CallFunc_IsReadHint_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_IsTipsHint, CallFunc_IsGrandPrixLeast1Play_ReturnValue) == 0x000006, "Member 'BP_TopMenuSequence_C_IsTipsHint::CallFunc_IsGrandPrixLeast1Play_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_IsTipsHint, CallFunc_Not_PreBool_ReturnValue_1) == 0x000007, "Member 'BP_TopMenuSequence_C_IsTipsHint::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_IsTipsHint, CallFunc_BooleanAND_ReturnValue_1) == 0x000008, "Member 'BP_TopMenuSequence_C_IsTipsHint::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_IsTipsHint, CallFunc_BooleanOR_ReturnValue) == 0x000009, "Member 'BP_TopMenuSequence_C_IsTipsHint::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_IsTipsHint;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.OnCancelCharaMachine
 // 0x0001 (0x0001 - 0x0000)
@@ -1571,9 +938,7 @@ struct BP_TopMenuSequence_C_OnCancelCharaMachine final
 public:
 	EMenuSequenceSubState                         State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_OnCancelCharaMachine) == 0x000001, "Wrong alignment on BP_TopMenuSequence_C_OnCancelCharaMachine");
-static_assert(sizeof(BP_TopMenuSequence_C_OnCancelCharaMachine) == 0x000001, "Wrong size on BP_TopMenuSequence_C_OnCancelCharaMachine");
-static_assert(offsetof(BP_TopMenuSequence_C_OnCancelCharaMachine, State) == 0x000000, "Member 'BP_TopMenuSequence_C_OnCancelCharaMachine::State' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_OnCancelCharaMachine;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.OnCancelCharaMachineFade
 // 0x0001 (0x0001 - 0x0000)
@@ -1582,9 +947,7 @@ struct BP_TopMenuSequence_C_OnCancelCharaMachineFade final
 public:
 	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_OnCancelCharaMachineFade) == 0x000001, "Wrong alignment on BP_TopMenuSequence_C_OnCancelCharaMachineFade");
-static_assert(sizeof(BP_TopMenuSequence_C_OnCancelCharaMachineFade) == 0x000001, "Wrong size on BP_TopMenuSequence_C_OnCancelCharaMachineFade");
-static_assert(offsetof(BP_TopMenuSequence_C_OnCancelCharaMachineFade, FadeDirection) == 0x000000, "Member 'BP_TopMenuSequence_C_OnCancelCharaMachineFade::FadeDirection' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_OnCancelCharaMachineFade;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.OnCancelGadgetCustomize
 // 0x0001 (0x0001 - 0x0000)
@@ -1593,9 +956,7 @@ struct BP_TopMenuSequence_C_OnCancelGadgetCustomize final
 public:
 	EMenuSequenceSubState                         State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_OnCancelGadgetCustomize) == 0x000001, "Wrong alignment on BP_TopMenuSequence_C_OnCancelGadgetCustomize");
-static_assert(sizeof(BP_TopMenuSequence_C_OnCancelGadgetCustomize) == 0x000001, "Wrong size on BP_TopMenuSequence_C_OnCancelGadgetCustomize");
-static_assert(offsetof(BP_TopMenuSequence_C_OnCancelGadgetCustomize, State) == 0x000000, "Member 'BP_TopMenuSequence_C_OnCancelGadgetCustomize::State' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_OnCancelGadgetCustomize;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.OnCancelGameMode
 // 0x0010 (0x0010 - 0x0000)
@@ -1606,11 +967,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_OnCancelGameMode) == 0x000008, "Wrong alignment on BP_TopMenuSequence_C_OnCancelGameMode");
-static_assert(sizeof(BP_TopMenuSequence_C_OnCancelGameMode) == 0x000010, "Wrong size on BP_TopMenuSequence_C_OnCancelGameMode");
-static_assert(offsetof(BP_TopMenuSequence_C_OnCancelGameMode, Button) == 0x000000, "Member 'BP_TopMenuSequence_C_OnCancelGameMode::Button' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_OnCancelGameMode, PanelIndex) == 0x000008, "Member 'BP_TopMenuSequence_C_OnCancelGameMode::PanelIndex' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_OnCancelGameMode, ButtonIndex) == 0x00000C, "Member 'BP_TopMenuSequence_C_OnCancelGameMode::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_OnCancelGameMode;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.OnCancelGarage
 // 0x0001 (0x0001 - 0x0000)
@@ -1619,9 +976,7 @@ struct BP_TopMenuSequence_C_OnCancelGarage final
 public:
 	EMenuSequenceSubState                         State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_OnCancelGarage) == 0x000001, "Wrong alignment on BP_TopMenuSequence_C_OnCancelGarage");
-static_assert(sizeof(BP_TopMenuSequence_C_OnCancelGarage) == 0x000001, "Wrong size on BP_TopMenuSequence_C_OnCancelGarage");
-static_assert(offsetof(BP_TopMenuSequence_C_OnCancelGarage, State) == 0x000000, "Member 'BP_TopMenuSequence_C_OnCancelGarage::State' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_OnCancelGarage;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.OnCancelLobbyPlayerList
 // 0x0010 (0x0010 - 0x0000)
@@ -1631,10 +986,7 @@ public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_OnCancelLobbyPlayerList) == 0x000008, "Wrong alignment on BP_TopMenuSequence_C_OnCancelLobbyPlayerList");
-static_assert(sizeof(BP_TopMenuSequence_C_OnCancelLobbyPlayerList) == 0x000010, "Wrong size on BP_TopMenuSequence_C_OnCancelLobbyPlayerList");
-static_assert(offsetof(BP_TopMenuSequence_C_OnCancelLobbyPlayerList, Button) == 0x000000, "Member 'BP_TopMenuSequence_C_OnCancelLobbyPlayerList::Button' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_OnCancelLobbyPlayerList, ButtonIndex) == 0x000008, "Member 'BP_TopMenuSequence_C_OnCancelLobbyPlayerList::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_OnCancelLobbyPlayerList;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.OnCancelPlayerNum
 // 0x0010 (0x0010 - 0x0000)
@@ -1645,11 +997,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_OnCancelPlayerNum) == 0x000008, "Wrong alignment on BP_TopMenuSequence_C_OnCancelPlayerNum");
-static_assert(sizeof(BP_TopMenuSequence_C_OnCancelPlayerNum) == 0x000010, "Wrong size on BP_TopMenuSequence_C_OnCancelPlayerNum");
-static_assert(offsetof(BP_TopMenuSequence_C_OnCancelPlayerNum, Button) == 0x000000, "Member 'BP_TopMenuSequence_C_OnCancelPlayerNum::Button' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_OnCancelPlayerNum, PanelIndex) == 0x000008, "Member 'BP_TopMenuSequence_C_OnCancelPlayerNum::PanelIndex' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_OnCancelPlayerNum, ButtonIndex) == 0x00000C, "Member 'BP_TopMenuSequence_C_OnCancelPlayerNum::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_OnCancelPlayerNum;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.OnCancelPlayMode
 // 0x0010 (0x0010 - 0x0000)
@@ -1660,11 +1008,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_OnCancelPlayMode) == 0x000008, "Wrong alignment on BP_TopMenuSequence_C_OnCancelPlayMode");
-static_assert(sizeof(BP_TopMenuSequence_C_OnCancelPlayMode) == 0x000010, "Wrong size on BP_TopMenuSequence_C_OnCancelPlayMode");
-static_assert(offsetof(BP_TopMenuSequence_C_OnCancelPlayMode, Button) == 0x000000, "Member 'BP_TopMenuSequence_C_OnCancelPlayMode::Button' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_OnCancelPlayMode, PanelIndex) == 0x000008, "Member 'BP_TopMenuSequence_C_OnCancelPlayMode::PanelIndex' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_OnCancelPlayMode, ButtonIndex) == 0x00000C, "Member 'BP_TopMenuSequence_C_OnCancelPlayMode::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_OnCancelPlayMode;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.OnChangedPlayerList
 // 0x0004 (0x0004 - 0x0000)
@@ -1673,9 +1017,7 @@ struct BP_TopMenuSequence_C_OnChangedPlayerList final
 public:
 	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_OnChangedPlayerList) == 0x000004, "Wrong alignment on BP_TopMenuSequence_C_OnChangedPlayerList");
-static_assert(sizeof(BP_TopMenuSequence_C_OnChangedPlayerList) == 0x000004, "Wrong size on BP_TopMenuSequence_C_OnChangedPlayerList");
-static_assert(offsetof(BP_TopMenuSequence_C_OnChangedPlayerList, Index_0) == 0x000000, "Member 'BP_TopMenuSequence_C_OnChangedPlayerList::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_OnChangedPlayerList;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.OnDecisionCharaMachineFade
 // 0x0001 (0x0001 - 0x0000)
@@ -1684,9 +1026,7 @@ struct BP_TopMenuSequence_C_OnDecisionCharaMachineFade final
 public:
 	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_OnDecisionCharaMachineFade) == 0x000001, "Wrong alignment on BP_TopMenuSequence_C_OnDecisionCharaMachineFade");
-static_assert(sizeof(BP_TopMenuSequence_C_OnDecisionCharaMachineFade) == 0x000001, "Wrong size on BP_TopMenuSequence_C_OnDecisionCharaMachineFade");
-static_assert(offsetof(BP_TopMenuSequence_C_OnDecisionCharaMachineFade, FadeDirection) == 0x000000, "Member 'BP_TopMenuSequence_C_OnDecisionCharaMachineFade::FadeDirection' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_OnDecisionCharaMachineFade;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.OnDecisionGameMode
 // 0x0010 (0x0010 - 0x0000)
@@ -1697,11 +1037,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_OnDecisionGameMode) == 0x000008, "Wrong alignment on BP_TopMenuSequence_C_OnDecisionGameMode");
-static_assert(sizeof(BP_TopMenuSequence_C_OnDecisionGameMode) == 0x000010, "Wrong size on BP_TopMenuSequence_C_OnDecisionGameMode");
-static_assert(offsetof(BP_TopMenuSequence_C_OnDecisionGameMode, Button) == 0x000000, "Member 'BP_TopMenuSequence_C_OnDecisionGameMode::Button' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_OnDecisionGameMode, PanelIndex) == 0x000008, "Member 'BP_TopMenuSequence_C_OnDecisionGameMode::PanelIndex' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_OnDecisionGameMode, ButtonIndex) == 0x00000C, "Member 'BP_TopMenuSequence_C_OnDecisionGameMode::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_OnDecisionGameMode;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.OnDecisionLobbyPlayerList
 // 0x0010 (0x0010 - 0x0000)
@@ -1711,10 +1047,7 @@ public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_OnDecisionLobbyPlayerList) == 0x000008, "Wrong alignment on BP_TopMenuSequence_C_OnDecisionLobbyPlayerList");
-static_assert(sizeof(BP_TopMenuSequence_C_OnDecisionLobbyPlayerList) == 0x000010, "Wrong size on BP_TopMenuSequence_C_OnDecisionLobbyPlayerList");
-static_assert(offsetof(BP_TopMenuSequence_C_OnDecisionLobbyPlayerList, Button) == 0x000000, "Member 'BP_TopMenuSequence_C_OnDecisionLobbyPlayerList::Button' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_OnDecisionLobbyPlayerList, ButtonIndex) == 0x000008, "Member 'BP_TopMenuSequence_C_OnDecisionLobbyPlayerList::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_OnDecisionLobbyPlayerList;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.OnDecisionPlayerNum
 // 0x0010 (0x0010 - 0x0000)
@@ -1725,11 +1058,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_OnDecisionPlayerNum) == 0x000008, "Wrong alignment on BP_TopMenuSequence_C_OnDecisionPlayerNum");
-static_assert(sizeof(BP_TopMenuSequence_C_OnDecisionPlayerNum) == 0x000010, "Wrong size on BP_TopMenuSequence_C_OnDecisionPlayerNum");
-static_assert(offsetof(BP_TopMenuSequence_C_OnDecisionPlayerNum, Button) == 0x000000, "Member 'BP_TopMenuSequence_C_OnDecisionPlayerNum::Button' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_OnDecisionPlayerNum, PanelIndex) == 0x000008, "Member 'BP_TopMenuSequence_C_OnDecisionPlayerNum::PanelIndex' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_OnDecisionPlayerNum, ButtonIndex) == 0x00000C, "Member 'BP_TopMenuSequence_C_OnDecisionPlayerNum::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_OnDecisionPlayerNum;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.OnDecisionPlayMode
 // 0x0010 (0x0010 - 0x0000)
@@ -1740,11 +1069,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_OnDecisionPlayMode) == 0x000008, "Wrong alignment on BP_TopMenuSequence_C_OnDecisionPlayMode");
-static_assert(sizeof(BP_TopMenuSequence_C_OnDecisionPlayMode) == 0x000010, "Wrong size on BP_TopMenuSequence_C_OnDecisionPlayMode");
-static_assert(offsetof(BP_TopMenuSequence_C_OnDecisionPlayMode, Button) == 0x000000, "Member 'BP_TopMenuSequence_C_OnDecisionPlayMode::Button' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_OnDecisionPlayMode, PanelIndex) == 0x000008, "Member 'BP_TopMenuSequence_C_OnDecisionPlayMode::PanelIndex' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_OnDecisionPlayMode, ButtonIndex) == 0x00000C, "Member 'BP_TopMenuSequence_C_OnDecisionPlayMode::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_OnDecisionPlayMode;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.OnDecisionSubMenu
 // 0x0010 (0x0010 - 0x0000)
@@ -1754,10 +1079,7 @@ public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	ECommonMenuButtonType                         ButtonType;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_OnDecisionSubMenu) == 0x000008, "Wrong alignment on BP_TopMenuSequence_C_OnDecisionSubMenu");
-static_assert(sizeof(BP_TopMenuSequence_C_OnDecisionSubMenu) == 0x000010, "Wrong size on BP_TopMenuSequence_C_OnDecisionSubMenu");
-static_assert(offsetof(BP_TopMenuSequence_C_OnDecisionSubMenu, Button) == 0x000000, "Member 'BP_TopMenuSequence_C_OnDecisionSubMenu::Button' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_OnDecisionSubMenu, ButtonType) == 0x000008, "Member 'BP_TopMenuSequence_C_OnDecisionSubMenu::ButtonType' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_OnDecisionSubMenu;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.OnDodonpaEventEnd_DecisionGameMode
 // 0x0001 (0x0001 - 0x0000)
@@ -1766,9 +1088,7 @@ struct BP_TopMenuSequence_C_OnDodonpaEventEnd_DecisionGameMode final
 public:
 	EMenuSequenceSubState                         State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_OnDodonpaEventEnd_DecisionGameMode) == 0x000001, "Wrong alignment on BP_TopMenuSequence_C_OnDodonpaEventEnd_DecisionGameMode");
-static_assert(sizeof(BP_TopMenuSequence_C_OnDodonpaEventEnd_DecisionGameMode) == 0x000001, "Wrong size on BP_TopMenuSequence_C_OnDodonpaEventEnd_DecisionGameMode");
-static_assert(offsetof(BP_TopMenuSequence_C_OnDodonpaEventEnd_DecisionGameMode, State) == 0x000000, "Member 'BP_TopMenuSequence_C_OnDodonpaEventEnd_DecisionGameMode::State' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_OnDodonpaEventEnd_DecisionGameMode;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.OnDodonpaEventEnd_Fever
 // 0x0001 (0x0001 - 0x0000)
@@ -1777,9 +1097,7 @@ struct BP_TopMenuSequence_C_OnDodonpaEventEnd_Fever final
 public:
 	EMenuSequenceSubState                         State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_OnDodonpaEventEnd_Fever) == 0x000001, "Wrong alignment on BP_TopMenuSequence_C_OnDodonpaEventEnd_Fever");
-static_assert(sizeof(BP_TopMenuSequence_C_OnDodonpaEventEnd_Fever) == 0x000001, "Wrong size on BP_TopMenuSequence_C_OnDodonpaEventEnd_Fever");
-static_assert(offsetof(BP_TopMenuSequence_C_OnDodonpaEventEnd_Fever, State) == 0x000000, "Member 'BP_TopMenuSequence_C_OnDodonpaEventEnd_Fever::State' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_OnDodonpaEventEnd_Fever;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.OnDodonpaEventEnd_GadgetCustom
 // 0x0001 (0x0001 - 0x0000)
@@ -1788,9 +1106,7 @@ struct BP_TopMenuSequence_C_OnDodonpaEventEnd_GadgetCustom final
 public:
 	EMenuSequenceSubState                         State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_OnDodonpaEventEnd_GadgetCustom) == 0x000001, "Wrong alignment on BP_TopMenuSequence_C_OnDodonpaEventEnd_GadgetCustom");
-static_assert(sizeof(BP_TopMenuSequence_C_OnDodonpaEventEnd_GadgetCustom) == 0x000001, "Wrong size on BP_TopMenuSequence_C_OnDodonpaEventEnd_GadgetCustom");
-static_assert(offsetof(BP_TopMenuSequence_C_OnDodonpaEventEnd_GadgetCustom, State) == 0x000000, "Member 'BP_TopMenuSequence_C_OnDodonpaEventEnd_GadgetCustom::State' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_OnDodonpaEventEnd_GadgetCustom;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.OnErrorPopupWindowClose
 // 0x0010 (0x0010 - 0x0000)
@@ -1801,11 +1117,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_OnErrorPopupWindowClose) == 0x000008, "Wrong alignment on BP_TopMenuSequence_C_OnErrorPopupWindowClose");
-static_assert(sizeof(BP_TopMenuSequence_C_OnErrorPopupWindowClose) == 0x000010, "Wrong size on BP_TopMenuSequence_C_OnErrorPopupWindowClose");
-static_assert(offsetof(BP_TopMenuSequence_C_OnErrorPopupWindowClose, Button) == 0x000000, "Member 'BP_TopMenuSequence_C_OnErrorPopupWindowClose::Button' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_OnErrorPopupWindowClose, PanelIndex) == 0x000008, "Member 'BP_TopMenuSequence_C_OnErrorPopupWindowClose::PanelIndex' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_OnErrorPopupWindowClose, ButtonIndex) == 0x00000C, "Member 'BP_TopMenuSequence_C_OnErrorPopupWindowClose::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_OnErrorPopupWindowClose;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.OnExitPlayerProfileEvent
 // 0x0001 (0x0001 - 0x0000)
@@ -1814,9 +1126,7 @@ struct BP_TopMenuSequence_C_OnExitPlayerProfileEvent final
 public:
 	EMenuSequenceSubState                         State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_OnExitPlayerProfileEvent) == 0x000001, "Wrong alignment on BP_TopMenuSequence_C_OnExitPlayerProfileEvent");
-static_assert(sizeof(BP_TopMenuSequence_C_OnExitPlayerProfileEvent) == 0x000001, "Wrong size on BP_TopMenuSequence_C_OnExitPlayerProfileEvent");
-static_assert(offsetof(BP_TopMenuSequence_C_OnExitPlayerProfileEvent, State) == 0x000000, "Member 'BP_TopMenuSequence_C_OnExitPlayerProfileEvent::State' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_OnExitPlayerProfileEvent;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.OnFaceButtonLeftPressedTopMenu
 // 0x0008 (0x0008 - 0x0000)
@@ -1825,9 +1135,7 @@ struct BP_TopMenuSequence_C_OnFaceButtonLeftPressedTopMenu final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_OnFaceButtonLeftPressedTopMenu) == 0x000008, "Wrong alignment on BP_TopMenuSequence_C_OnFaceButtonLeftPressedTopMenu");
-static_assert(sizeof(BP_TopMenuSequence_C_OnFaceButtonLeftPressedTopMenu) == 0x000008, "Wrong size on BP_TopMenuSequence_C_OnFaceButtonLeftPressedTopMenu");
-static_assert(offsetof(BP_TopMenuSequence_C_OnFaceButtonLeftPressedTopMenu, Object) == 0x000000, "Member 'BP_TopMenuSequence_C_OnFaceButtonLeftPressedTopMenu::Object' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_OnFaceButtonLeftPressedTopMenu;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.OnFaceButtonTopPressedTopMenu
 // 0x0008 (0x0008 - 0x0000)
@@ -1836,9 +1144,7 @@ struct BP_TopMenuSequence_C_OnFaceButtonTopPressedTopMenu final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_OnFaceButtonTopPressedTopMenu) == 0x000008, "Wrong alignment on BP_TopMenuSequence_C_OnFaceButtonTopPressedTopMenu");
-static_assert(sizeof(BP_TopMenuSequence_C_OnFaceButtonTopPressedTopMenu) == 0x000008, "Wrong size on BP_TopMenuSequence_C_OnFaceButtonTopPressedTopMenu");
-static_assert(offsetof(BP_TopMenuSequence_C_OnFaceButtonTopPressedTopMenu, Object) == 0x000000, "Member 'BP_TopMenuSequence_C_OnFaceButtonTopPressedTopMenu::Object' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_OnFaceButtonTopPressedTopMenu;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.OnFadeOutEnd_DodonpaEvent_Fever_EventEnd
 // 0x0001 (0x0001 - 0x0000)
@@ -1847,9 +1153,7 @@ struct BP_TopMenuSequence_C_OnFadeOutEnd_DodonpaEvent_Fever_EventEnd final
 public:
 	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_OnFadeOutEnd_DodonpaEvent_Fever_EventEnd) == 0x000001, "Wrong alignment on BP_TopMenuSequence_C_OnFadeOutEnd_DodonpaEvent_Fever_EventEnd");
-static_assert(sizeof(BP_TopMenuSequence_C_OnFadeOutEnd_DodonpaEvent_Fever_EventEnd) == 0x000001, "Wrong size on BP_TopMenuSequence_C_OnFadeOutEnd_DodonpaEvent_Fever_EventEnd");
-static_assert(offsetof(BP_TopMenuSequence_C_OnFadeOutEnd_DodonpaEvent_Fever_EventEnd, FadeDirection) == 0x000000, "Member 'BP_TopMenuSequence_C_OnFadeOutEnd_DodonpaEvent_Fever_EventEnd::FadeDirection' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_OnFadeOutEnd_DodonpaEvent_Fever_EventEnd;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.OnFInishedPlayModeFade
 // 0x0001 (0x0001 - 0x0000)
@@ -1858,9 +1162,7 @@ struct BP_TopMenuSequence_C_OnFInishedPlayModeFade final
 public:
 	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_OnFInishedPlayModeFade) == 0x000001, "Wrong alignment on BP_TopMenuSequence_C_OnFInishedPlayModeFade");
-static_assert(sizeof(BP_TopMenuSequence_C_OnFInishedPlayModeFade) == 0x000001, "Wrong size on BP_TopMenuSequence_C_OnFInishedPlayModeFade");
-static_assert(offsetof(BP_TopMenuSequence_C_OnFInishedPlayModeFade, FadeDirection) == 0x000000, "Member 'BP_TopMenuSequence_C_OnFInishedPlayModeFade::FadeDirection' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_OnFInishedPlayModeFade;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.OninitializeFade
 // 0x0001 (0x0001 - 0x0000)
@@ -1869,9 +1171,7 @@ struct BP_TopMenuSequence_C_OninitializeFade final
 public:
 	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_OninitializeFade) == 0x000001, "Wrong alignment on BP_TopMenuSequence_C_OninitializeFade");
-static_assert(sizeof(BP_TopMenuSequence_C_OninitializeFade) == 0x000001, "Wrong size on BP_TopMenuSequence_C_OninitializeFade");
-static_assert(offsetof(BP_TopMenuSequence_C_OninitializeFade, FadeDirection) == 0x000000, "Member 'BP_TopMenuSequence_C_OninitializeFade::FadeDirection' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_OninitializeFade;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.OnLeftStickButtonPressedTopMenu
 // 0x0008 (0x0008 - 0x0000)
@@ -1880,9 +1180,7 @@ struct BP_TopMenuSequence_C_OnLeftStickButtonPressedTopMenu final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_OnLeftStickButtonPressedTopMenu) == 0x000008, "Wrong alignment on BP_TopMenuSequence_C_OnLeftStickButtonPressedTopMenu");
-static_assert(sizeof(BP_TopMenuSequence_C_OnLeftStickButtonPressedTopMenu) == 0x000008, "Wrong size on BP_TopMenuSequence_C_OnLeftStickButtonPressedTopMenu");
-static_assert(offsetof(BP_TopMenuSequence_C_OnLeftStickButtonPressedTopMenu, Object) == 0x000000, "Member 'BP_TopMenuSequence_C_OnLeftStickButtonPressedTopMenu::Object' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_OnLeftStickButtonPressedTopMenu;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.OnLoaded_F67FC50A4BBAE2D99FD85C924F046C5D
 // 0x0008 (0x0008 - 0x0000)
@@ -1891,9 +1189,7 @@ struct BP_TopMenuSequence_C_OnLoaded_F67FC50A4BBAE2D99FD85C924F046C5D final
 public:
 	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_OnLoaded_F67FC50A4BBAE2D99FD85C924F046C5D) == 0x000008, "Wrong alignment on BP_TopMenuSequence_C_OnLoaded_F67FC50A4BBAE2D99FD85C924F046C5D");
-static_assert(sizeof(BP_TopMenuSequence_C_OnLoaded_F67FC50A4BBAE2D99FD85C924F046C5D) == 0x000008, "Wrong size on BP_TopMenuSequence_C_OnLoaded_F67FC50A4BBAE2D99FD85C924F046C5D");
-static_assert(offsetof(BP_TopMenuSequence_C_OnLoaded_F67FC50A4BBAE2D99FD85C924F046C5D, Loaded) == 0x000000, "Member 'BP_TopMenuSequence_C_OnLoaded_F67FC50A4BBAE2D99FD85C924F046C5D::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_OnLoaded_F67FC50A4BBAE2D99FD85C924F046C5D;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.OnSpecialPressedTopMenu
 // 0x0008 (0x0008 - 0x0000)
@@ -1902,9 +1198,7 @@ struct BP_TopMenuSequence_C_OnSpecialPressedTopMenu final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_OnSpecialPressedTopMenu) == 0x000008, "Wrong alignment on BP_TopMenuSequence_C_OnSpecialPressedTopMenu");
-static_assert(sizeof(BP_TopMenuSequence_C_OnSpecialPressedTopMenu) == 0x000008, "Wrong size on BP_TopMenuSequence_C_OnSpecialPressedTopMenu");
-static_assert(offsetof(BP_TopMenuSequence_C_OnSpecialPressedTopMenu, Object) == 0x000000, "Member 'BP_TopMenuSequence_C_OnSpecialPressedTopMenu::Object' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_OnSpecialPressedTopMenu;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.OnTipsSaveComplete
 // 0x0001 (0x0001 - 0x0000)
@@ -1913,9 +1207,7 @@ struct BP_TopMenuSequence_C_OnTipsSaveComplete final
 public:
 	ESaveDataStatus                               Status;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_OnTipsSaveComplete) == 0x000001, "Wrong alignment on BP_TopMenuSequence_C_OnTipsSaveComplete");
-static_assert(sizeof(BP_TopMenuSequence_C_OnTipsSaveComplete) == 0x000001, "Wrong size on BP_TopMenuSequence_C_OnTipsSaveComplete");
-static_assert(offsetof(BP_TopMenuSequence_C_OnTipsSaveComplete, Status) == 0x000000, "Member 'BP_TopMenuSequence_C_OnTipsSaveComplete::Status' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_OnTipsSaveComplete;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.PlayInAnimationManage
 // 0x0008 (0x0008 - 0x0000)
@@ -1931,16 +1223,7 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_PlayInAnimationManage) == 0x000001, "Wrong alignment on BP_TopMenuSequence_C_PlayInAnimationManage");
-static_assert(sizeof(BP_TopMenuSequence_C_PlayInAnimationManage) == 0x000008, "Wrong size on BP_TopMenuSequence_C_PlayInAnimationManage");
-static_assert(offsetof(BP_TopMenuSequence_C_PlayInAnimationManage, InState) == 0x000000, "Member 'BP_TopMenuSequence_C_PlayInAnimationManage::InState' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_PlayInAnimationManage, PrevState) == 0x000001, "Member 'BP_TopMenuSequence_C_PlayInAnimationManage::PrevState' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_PlayInAnimationManage, K2Node_SwitchEnum_CmpSuccess) == 0x000002, "Member 'BP_TopMenuSequence_C_PlayInAnimationManage::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_PlayInAnimationManage, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000003, "Member 'BP_TopMenuSequence_C_PlayInAnimationManage::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_PlayInAnimationManage, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000004, "Member 'BP_TopMenuSequence_C_PlayInAnimationManage::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_PlayInAnimationManage, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x000005, "Member 'BP_TopMenuSequence_C_PlayInAnimationManage::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_PlayInAnimationManage, CallFunc_BooleanOR_ReturnValue) == 0x000006, "Member 'BP_TopMenuSequence_C_PlayInAnimationManage::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_PlayInAnimationManage, CallFunc_BooleanOR_ReturnValue_1) == 0x000007, "Member 'BP_TopMenuSequence_C_PlayInAnimationManage::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_PlayInAnimationManage;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.RefreshMenuRacers
 // 0x01B0 (0x01B0 - 0x0000)
@@ -1964,21 +1247,7 @@ public:
 	struct FHitResult                             CallFunc_K2_SetActorTransform_SweepHitResult;      // 0x00A8(0x00F8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_K2_SetActorTransform_ReturnValue;         // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_RefreshMenuRacers) == 0x000010, "Wrong alignment on BP_TopMenuSequence_C_RefreshMenuRacers");
-static_assert(sizeof(BP_TopMenuSequence_C_RefreshMenuRacers) == 0x0001B0, "Wrong size on BP_TopMenuSequence_C_RefreshMenuRacers");
-static_assert(offsetof(BP_TopMenuSequence_C_RefreshMenuRacers, Temp_int_Loop_Counter_Variable) == 0x000000, "Member 'BP_TopMenuSequence_C_RefreshMenuRacers::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_RefreshMenuRacers, Temp_int_Array_Index_Variable) == 0x000004, "Member 'BP_TopMenuSequence_C_RefreshMenuRacers::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_RefreshMenuRacers, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'BP_TopMenuSequence_C_RefreshMenuRacers::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_RefreshMenuRacers, CallFunc_GetSelectedPlayerCount_ReturnValue) == 0x00000C, "Member 'BP_TopMenuSequence_C_RefreshMenuRacers::CallFunc_GetSelectedPlayerCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_RefreshMenuRacers, CallFunc_Array_Get_Item) == 0x000010, "Member 'BP_TopMenuSequence_C_RefreshMenuRacers::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_RefreshMenuRacers, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000070, "Member 'BP_TopMenuSequence_C_RefreshMenuRacers::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_RefreshMenuRacers, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000078, "Member 'BP_TopMenuSequence_C_RefreshMenuRacers::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_RefreshMenuRacers, CallFunc_GetAllMenuRacers_ReturnValue) == 0x000080, "Member 'BP_TopMenuSequence_C_RefreshMenuRacers::CallFunc_GetAllMenuRacers_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_RefreshMenuRacers, CallFunc_Array_Length_ReturnValue) == 0x000090, "Member 'BP_TopMenuSequence_C_RefreshMenuRacers::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_RefreshMenuRacers, CallFunc_Array_Get_Item_1) == 0x000098, "Member 'BP_TopMenuSequence_C_RefreshMenuRacers::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_RefreshMenuRacers, CallFunc_Less_IntInt_ReturnValue) == 0x0000A0, "Member 'BP_TopMenuSequence_C_RefreshMenuRacers::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_RefreshMenuRacers, CallFunc_K2_SetActorTransform_SweepHitResult) == 0x0000A8, "Member 'BP_TopMenuSequence_C_RefreshMenuRacers::CallFunc_K2_SetActorTransform_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_RefreshMenuRacers, CallFunc_K2_SetActorTransform_ReturnValue) == 0x0001A0, "Member 'BP_TopMenuSequence_C_RefreshMenuRacers::CallFunc_K2_SetActorTransform_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_RefreshMenuRacers;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.Set FooterVisible by in State
 // 0x0050 (0x0050 - 0x0000)
@@ -2004,22 +1273,7 @@ public:
 	bool                                          CallFunc_ChangeZOrder_ReturnValue;                 // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x004D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_Set_FooterVisible_by_in_State) == 0x000008, "Wrong alignment on BP_TopMenuSequence_C_Set_FooterVisible_by_in_State");
-static_assert(sizeof(BP_TopMenuSequence_C_Set_FooterVisible_by_in_State) == 0x000050, "Wrong size on BP_TopMenuSequence_C_Set_FooterVisible_by_in_State");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_FooterVisible_by_in_State, In_State) == 0x000000, "Member 'BP_TopMenuSequence_C_Set_FooterVisible_by_in_State::In_State' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_FooterVisible_by_in_State, Footer) == 0x000008, "Member 'BP_TopMenuSequence_C_Set_FooterVisible_by_in_State::Footer' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_FooterVisible_by_in_State, LobbyRacer) == 0x000010, "Member 'BP_TopMenuSequence_C_Set_FooterVisible_by_in_State::LobbyRacer' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_FooterVisible_by_in_State, CallFunc_GetSelectedPlayerCount_ReturnValue) == 0x000018, "Member 'BP_TopMenuSequence_C_Set_FooterVisible_by_in_State::CallFunc_GetSelectedPlayerCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_FooterVisible_by_in_State, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000020, "Member 'BP_TopMenuSequence_C_Set_FooterVisible_by_in_State::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_FooterVisible_by_in_State, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000028, "Member 'BP_TopMenuSequence_C_Set_FooterVisible_by_in_State::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_FooterVisible_by_in_State, CallFunc_IsValid_ReturnValue) == 0x000029, "Member 'BP_TopMenuSequence_C_Set_FooterVisible_by_in_State::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_FooterVisible_by_in_State, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue) == 0x000030, "Member 'BP_TopMenuSequence_C_Set_FooterVisible_by_in_State::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_FooterVisible_by_in_State, CallFunc_IsInViewport_ReturnValue) == 0x000040, "Member 'BP_TopMenuSequence_C_Set_FooterVisible_by_in_State::CallFunc_IsInViewport_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_FooterVisible_by_in_State, CallFunc_MakeLiteralByte_ReturnValue) == 0x000041, "Member 'BP_TopMenuSequence_C_Set_FooterVisible_by_in_State::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_FooterVisible_by_in_State, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000044, "Member 'BP_TopMenuSequence_C_Set_FooterVisible_by_in_State::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_FooterVisible_by_in_State, CallFunc_Add_IntInt_ReturnValue) == 0x000048, "Member 'BP_TopMenuSequence_C_Set_FooterVisible_by_in_State::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_FooterVisible_by_in_State, CallFunc_ChangeZOrder_ReturnValue) == 0x00004C, "Member 'BP_TopMenuSequence_C_Set_FooterVisible_by_in_State::CallFunc_ChangeZOrder_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_FooterVisible_by_in_State, K2Node_SwitchEnum_CmpSuccess) == 0x00004D, "Member 'BP_TopMenuSequence_C_Set_FooterVisible_by_in_State::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_Set_FooterVisible_by_in_State;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.Set Next Top Menu SequenceState Function
 // 0x00C0 (0x00C0 - 0x0000)
@@ -2046,24 +1300,7 @@ public:
 	class UMenuSoundSubsystem*                    CallFunc_GetWorldSubsystem_ReturnValue_2;          // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function) == 0x000008, "Wrong alignment on BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function");
-static_assert(sizeof(BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function) == 0x0000C0, "Wrong size on BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function, InState) == 0x000000, "Member 'BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function::InState' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function, PrevState) == 0x000001, "Member 'BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function::PrevState' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function, CallFunc_IsChangedSettingVoiceLanguage_ReturnValue) == 0x000002, "Member 'BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function::CallFunc_IsChangedSettingVoiceLanguage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000003, "Member 'BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function, CallFunc_NotEqual_ByteByte_ReturnValue_1) == 0x000004, "Member 'BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function::CallFunc_NotEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue) == 0x000008, "Member 'BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function, CallFunc_Conv_StringToText_ReturnValue) == 0x000018, "Member 'BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function, K2Node_SwitchEnum_CmpSuccess) == 0x000028, "Member 'BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function, K2Node_MakeStruct_FormatArgumentData) == 0x000030, "Member 'BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function, K2Node_MakeArray_Array) == 0x000078, "Member 'BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function, CallFunc_Format_ReturnValue) == 0x000088, "Member 'BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function, CallFunc_IsValid_ReturnValue) == 0x000098, "Member 'BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function, CallFunc_GetWorldSubsystem_ReturnValue) == 0x0000A0, "Member 'BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function, CallFunc_GetWorldSubsystem_ReturnValue_1) == 0x0000A8, "Member 'BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function::CallFunc_GetWorldSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function, CallFunc_GetWorldSubsystem_ReturnValue_2) == 0x0000B0, "Member 'BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function::CallFunc_GetWorldSubsystem_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function, CallFunc_IsValid_ReturnValue_1) == 0x0000B8, "Member 'BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_Set_Next_Top_Menu_SequenceState_Function;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.Set SubLevelVisible by in State
 // 0x0078 (0x0078 - 0x0000)
@@ -2097,30 +1334,7 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0072(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State) == 0x000008, "Wrong alignment on BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State");
-static_assert(sizeof(BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State) == 0x000078, "Wrong size on BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State, In_State) == 0x000000, "Member 'BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State::In_State' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State, Footer) == 0x000008, "Member 'BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State::Footer' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State, LobbyRacer) == 0x000010, "Member 'BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State::LobbyRacer' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State, Temp_bool_Variable) == 0x000018, "Member 'BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State, Temp_bool_Variable_1) == 0x000019, "Member 'BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State, Temp_bool_Variable_2) == 0x00001A, "Member 'BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State, K2Node_SwitchEnum_CmpSuccess) == 0x00001B, "Member 'BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State, Temp_bool_Variable_3) == 0x00001C, "Member 'BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State, CallFunc_GetStreamingLevel_ReturnValue) == 0x000020, "Member 'BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State::CallFunc_GetStreamingLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State, Temp_bool_Variable_4) == 0x000028, "Member 'BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State::Temp_bool_Variable_4' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State, CallFunc_GetLevelScriptActor_ReturnValue) == 0x000030, "Member 'BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State::CallFunc_GetLevelScriptActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State, K2Node_DynamicCast_AsMenu_Lighting_Level_Interface) == 0x000038, "Member 'BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State::K2Node_DynamicCast_AsMenu_Lighting_Level_Interface' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State, CallFunc_IsValid_ReturnValue) == 0x000049, "Member 'BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State, Temp_byte_Variable) == 0x00004A, "Member 'BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State, K2Node_Select_Default) == 0x00004B, "Member 'BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State, CallFunc_GetStreamingLevel_ReturnValue_1) == 0x000050, "Member 'BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State::CallFunc_GetStreamingLevel_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State, CallFunc_GetLevelScriptActor_ReturnValue_1) == 0x000058, "Member 'BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State::CallFunc_GetLevelScriptActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State, K2Node_DynamicCast_AsMenu_Lighting_Level_Interface_1) == 0x000060, "Member 'BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State::K2Node_DynamicCast_AsMenu_Lighting_Level_Interface_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State, K2Node_DynamicCast_bSuccess_1) == 0x000070, "Member 'BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State, CallFunc_Not_PreBool_ReturnValue) == 0x000071, "Member 'BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State, CallFunc_IsValid_ReturnValue_1) == 0x000072, "Member 'BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_Set_SubLevelVisible_by_in_State;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.Set Top UIVisivility
 // 0x0038 (0x0038 - 0x0000)
@@ -2150,26 +1364,7 @@ public:
 	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_2;             // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_ChangeZOrder_ReturnValue_2;               // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_Set_Top_UIVisivility) == 0x000008, "Wrong alignment on BP_TopMenuSequence_C_Set_Top_UIVisivility");
-static_assert(sizeof(BP_TopMenuSequence_C_Set_Top_UIVisivility) == 0x000038, "Wrong size on BP_TopMenuSequence_C_Set_Top_UIVisivility");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Top_UIVisivility, Visibility) == 0x000000, "Member 'BP_TopMenuSequence_C_Set_Top_UIVisivility::Visibility' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Top_UIVisivility, SetTopMenu) == 0x000001, "Member 'BP_TopMenuSequence_C_Set_Top_UIVisivility::SetTopMenu' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Top_UIVisivility, SetSubMenu) == 0x000002, "Member 'BP_TopMenuSequence_C_Set_Top_UIVisivility::SetSubMenu' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Top_UIVisivility, SetHeader) == 0x000003, "Member 'BP_TopMenuSequence_C_Set_Top_UIVisivility::SetHeader' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Top_UIVisivility, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000008, "Member 'BP_TopMenuSequence_C_Set_Top_UIVisivility::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Top_UIVisivility, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'BP_TopMenuSequence_C_Set_Top_UIVisivility::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Top_UIVisivility, CallFunc_IsValid_ReturnValue_1) == 0x000011, "Member 'BP_TopMenuSequence_C_Set_Top_UIVisivility::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Top_UIVisivility, CallFunc_GetWorldSubsystem_ReturnValue_1) == 0x000018, "Member 'BP_TopMenuSequence_C_Set_Top_UIVisivility::CallFunc_GetWorldSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Top_UIVisivility, CallFunc_IsValid_ReturnValue_2) == 0x000020, "Member 'BP_TopMenuSequence_C_Set_Top_UIVisivility::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Top_UIVisivility, CallFunc_MakeLiteralByte_ReturnValue) == 0x000021, "Member 'BP_TopMenuSequence_C_Set_Top_UIVisivility::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Top_UIVisivility, CallFunc_MakeLiteralByte_ReturnValue_1) == 0x000022, "Member 'BP_TopMenuSequence_C_Set_Top_UIVisivility::CallFunc_MakeLiteralByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Top_UIVisivility, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000024, "Member 'BP_TopMenuSequence_C_Set_Top_UIVisivility::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Top_UIVisivility, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x000028, "Member 'BP_TopMenuSequence_C_Set_Top_UIVisivility::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Top_UIVisivility, CallFunc_ChangeZOrder_ReturnValue) == 0x00002C, "Member 'BP_TopMenuSequence_C_Set_Top_UIVisivility::CallFunc_ChangeZOrder_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Top_UIVisivility, CallFunc_ChangeZOrder_ReturnValue_1) == 0x00002D, "Member 'BP_TopMenuSequence_C_Set_Top_UIVisivility::CallFunc_ChangeZOrder_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Top_UIVisivility, CallFunc_MakeLiteralByte_ReturnValue_2) == 0x00002E, "Member 'BP_TopMenuSequence_C_Set_Top_UIVisivility::CallFunc_MakeLiteralByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Top_UIVisivility, CallFunc_Conv_ByteToInt_ReturnValue_2) == 0x000030, "Member 'BP_TopMenuSequence_C_Set_Top_UIVisivility::CallFunc_Conv_ByteToInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_Top_UIVisivility, CallFunc_ChangeZOrder_ReturnValue_2) == 0x000034, "Member 'BP_TopMenuSequence_C_Set_Top_UIVisivility::CallFunc_ChangeZOrder_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_Set_Top_UIVisivility;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.Set UIVisible by in State
 // 0x0028 (0x0028 - 0x0000)
@@ -2195,24 +1390,7 @@ public:
 	bool                                          CallFunc_IsEnableTopMenuStoreMilestoneVersion_ReturnValue; // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_Set_UIVisible_by_in_State) == 0x000008, "Wrong alignment on BP_TopMenuSequence_C_Set_UIVisible_by_in_State");
-static_assert(sizeof(BP_TopMenuSequence_C_Set_UIVisible_by_in_State) == 0x000028, "Wrong size on BP_TopMenuSequence_C_Set_UIVisible_by_in_State");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_UIVisible_by_in_State, In_State) == 0x000000, "Member 'BP_TopMenuSequence_C_Set_UIVisible_by_in_State::In_State' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_UIVisible_by_in_State, LobbyRacer) == 0x000008, "Member 'BP_TopMenuSequence_C_Set_UIVisible_by_in_State::LobbyRacer' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_UIVisible_by_in_State, Temp_byte_Variable) == 0x000010, "Member 'BP_TopMenuSequence_C_Set_UIVisible_by_in_State::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_UIVisible_by_in_State, CallFunc_IsOpenMenuByConditions_ReturnValue) == 0x000011, "Member 'BP_TopMenuSequence_C_Set_UIVisible_by_in_State::CallFunc_IsOpenMenuByConditions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_UIVisible_by_in_State, Temp_byte_Variable_1) == 0x000012, "Member 'BP_TopMenuSequence_C_Set_UIVisible_by_in_State::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_UIVisible_by_in_State, CallFunc_GetSelectedPlayerCount_ReturnValue) == 0x000014, "Member 'BP_TopMenuSequence_C_Set_UIVisible_by_in_State::CallFunc_GetSelectedPlayerCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_UIVisible_by_in_State, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000018, "Member 'BP_TopMenuSequence_C_Set_UIVisible_by_in_State::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_UIVisible_by_in_State, Temp_bool_Variable) == 0x000019, "Member 'BP_TopMenuSequence_C_Set_UIVisible_by_in_State::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_UIVisible_by_in_State, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00001A, "Member 'BP_TopMenuSequence_C_Set_UIVisible_by_in_State::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_UIVisible_by_in_State, K2Node_SwitchEnum_CmpSuccess) == 0x00001B, "Member 'BP_TopMenuSequence_C_Set_UIVisible_by_in_State::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_UIVisible_by_in_State, CallFunc_BooleanAND_ReturnValue) == 0x00001C, "Member 'BP_TopMenuSequence_C_Set_UIVisible_by_in_State::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_UIVisible_by_in_State, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x00001D, "Member 'BP_TopMenuSequence_C_Set_UIVisible_by_in_State::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_UIVisible_by_in_State, CallFunc_BooleanOR_ReturnValue) == 0x00001E, "Member 'BP_TopMenuSequence_C_Set_UIVisible_by_in_State::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_UIVisible_by_in_State, K2Node_SwitchEnum_CmpSuccess_1) == 0x00001F, "Member 'BP_TopMenuSequence_C_Set_UIVisible_by_in_State::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_UIVisible_by_in_State, CallFunc_IsEnableTopMenuStoreMilestoneVersion_ReturnValue) == 0x000020, "Member 'BP_TopMenuSequence_C_Set_UIVisible_by_in_State::CallFunc_IsEnableTopMenuStoreMilestoneVersion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_Set_UIVisible_by_in_State, K2Node_Select_Default) == 0x000021, "Member 'BP_TopMenuSequence_C_Set_UIVisible_by_in_State::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_Set_UIVisible_by_in_State;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.SetHintRequestIfUnread
 // 0x0002 (0x0002 - 0x0000)
@@ -2222,10 +1400,7 @@ public:
 	EHintId                                       InputPin;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsReadHint_ReturnValue;                   // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_SetHintRequestIfUnread) == 0x000001, "Wrong alignment on BP_TopMenuSequence_C_SetHintRequestIfUnread");
-static_assert(sizeof(BP_TopMenuSequence_C_SetHintRequestIfUnread) == 0x000002, "Wrong size on BP_TopMenuSequence_C_SetHintRequestIfUnread");
-static_assert(offsetof(BP_TopMenuSequence_C_SetHintRequestIfUnread, InputPin) == 0x000000, "Member 'BP_TopMenuSequence_C_SetHintRequestIfUnread::InputPin' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetHintRequestIfUnread, CallFunc_IsReadHint_ReturnValue) == 0x000001, "Member 'BP_TopMenuSequence_C_SetHintRequestIfUnread::CallFunc_IsReadHint_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_SetHintRequestIfUnread;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.SetklaxonEnableByInState
 // 0x0048 (0x0048 - 0x0000)
@@ -2246,17 +1421,7 @@ public:
 	class ABP_MenuRacerLobby_C*                   K2Node_DynamicCast_AsBP_Menu_Racer_Lobby;          // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_SetklaxonEnableByInState) == 0x000008, "Wrong alignment on BP_TopMenuSequence_C_SetklaxonEnableByInState");
-static_assert(sizeof(BP_TopMenuSequence_C_SetklaxonEnableByInState) == 0x000048, "Wrong size on BP_TopMenuSequence_C_SetklaxonEnableByInState");
-static_assert(offsetof(BP_TopMenuSequence_C_SetklaxonEnableByInState, In_State) == 0x000000, "Member 'BP_TopMenuSequence_C_SetklaxonEnableByInState::In_State' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetklaxonEnableByInState, LobbyRacer) == 0x000008, "Member 'BP_TopMenuSequence_C_SetklaxonEnableByInState::LobbyRacer' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetklaxonEnableByInState, K2Node_SwitchEnum_CmpSuccess) == 0x000010, "Member 'BP_TopMenuSequence_C_SetklaxonEnableByInState::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetklaxonEnableByInState, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000018, "Member 'BP_TopMenuSequence_C_SetklaxonEnableByInState::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetklaxonEnableByInState, CallFunc_MakeLiteralInt_ReturnValue) == 0x000020, "Member 'BP_TopMenuSequence_C_SetklaxonEnableByInState::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetklaxonEnableByInState, CallFunc_GetMenuRacer_ReturnValue) == 0x000028, "Member 'BP_TopMenuSequence_C_SetklaxonEnableByInState::CallFunc_GetMenuRacer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetklaxonEnableByInState, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'BP_TopMenuSequence_C_SetklaxonEnableByInState::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetklaxonEnableByInState, K2Node_DynamicCast_AsBP_Menu_Racer_Lobby) == 0x000038, "Member 'BP_TopMenuSequence_C_SetklaxonEnableByInState::K2Node_DynamicCast_AsBP_Menu_Racer_Lobby' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetklaxonEnableByInState, K2Node_DynamicCast_bSuccess) == 0x000040, "Member 'BP_TopMenuSequence_C_SetklaxonEnableByInState::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_SetklaxonEnableByInState;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.SetMenuDirectionKeyEnable
 // 0x0020 (0x0020 - 0x0000)
@@ -2269,12 +1434,7 @@ public:
 	class AMenuPlayerController*                  K2Node_DynamicCast_AsMenu_Player_Controller;       // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_SetMenuDirectionKeyEnable) == 0x000008, "Wrong alignment on BP_TopMenuSequence_C_SetMenuDirectionKeyEnable");
-static_assert(sizeof(BP_TopMenuSequence_C_SetMenuDirectionKeyEnable) == 0x000020, "Wrong size on BP_TopMenuSequence_C_SetMenuDirectionKeyEnable");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMenuDirectionKeyEnable, bEnableDirection) == 0x000000, "Member 'BP_TopMenuSequence_C_SetMenuDirectionKeyEnable::bEnableDirection' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMenuDirectionKeyEnable, CallFunc_GetPlayerController_ReturnValue) == 0x000008, "Member 'BP_TopMenuSequence_C_SetMenuDirectionKeyEnable::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMenuDirectionKeyEnable, K2Node_DynamicCast_AsMenu_Player_Controller) == 0x000010, "Member 'BP_TopMenuSequence_C_SetMenuDirectionKeyEnable::K2Node_DynamicCast_AsMenu_Player_Controller' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMenuDirectionKeyEnable, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'BP_TopMenuSequence_C_SetMenuDirectionKeyEnable::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_SetMenuDirectionKeyEnable;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.SetMenuRacerEffect
 // 0x0010 (0x0010 - 0x0000)
@@ -2284,10 +1444,7 @@ public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_SetMenuRacerEffect) == 0x000008, "Wrong alignment on BP_TopMenuSequence_C_SetMenuRacerEffect");
-static_assert(sizeof(BP_TopMenuSequence_C_SetMenuRacerEffect) == 0x000010, "Wrong size on BP_TopMenuSequence_C_SetMenuRacerEffect");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMenuRacerEffect, Button) == 0x000000, "Member 'BP_TopMenuSequence_C_SetMenuRacerEffect::Button' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMenuRacerEffect, ButtonIndex) == 0x000008, "Member 'BP_TopMenuSequence_C_SetMenuRacerEffect::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_SetMenuRacerEffect;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.SetMenuRacerEffectAll
 // 0x0001 (0x0001 - 0x0000)
@@ -2296,9 +1453,7 @@ struct BP_TopMenuSequence_C_SetMenuRacerEffectAll final
 public:
 	bool                                          InEnable;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_SetMenuRacerEffectAll) == 0x000001, "Wrong alignment on BP_TopMenuSequence_C_SetMenuRacerEffectAll");
-static_assert(sizeof(BP_TopMenuSequence_C_SetMenuRacerEffectAll) == 0x000001, "Wrong size on BP_TopMenuSequence_C_SetMenuRacerEffectAll");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMenuRacerEffectAll, InEnable) == 0x000000, "Member 'BP_TopMenuSequence_C_SetMenuRacerEffectAll::InEnable' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_SetMenuRacerEffectAll;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.SetMouseInteraction by in State
 // 0x0100 (0x0100 - 0x0000)
@@ -2355,44 +1510,7 @@ public:
 	uint8                                         Pad_F5[0x3];                                       // 0x00F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State) == 0x000008, "Wrong alignment on BP_TopMenuSequence_C_SetMouseInteraction_by_in_State");
-static_assert(sizeof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State) == 0x000100, "Wrong size on BP_TopMenuSequence_C_SetMouseInteraction_by_in_State");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, In_State) == 0x000000, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::In_State' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, LobbyRacer) == 0x000008, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::LobbyRacer' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000010, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, K2Node_SwitchEnum_CmpSuccess) == 0x000018, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, Temp_int_Array_Index_Variable) == 0x00001C, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, K2Node_DynamicCast_AsWBP_CMN_Sub_Menu) == 0x000028, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::K2Node_DynamicCast_AsWBP_CMN_Sub_Menu' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, Temp_int_Loop_Counter_Variable) == 0x000034, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, CallFunc_Add_IntInt_ReturnValue) == 0x000038, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, CallFunc_GetSubMenuButtons_ReturnValue) == 0x000040, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::CallFunc_GetSubMenuButtons_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, CallFunc_Array_Length_ReturnValue) == 0x000050, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, Temp_int_Array_Index_Variable_1) == 0x000054, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, CallFunc_GetWorldSubsystem_ReturnValue_1) == 0x000058, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::CallFunc_GetWorldSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, CallFunc_IsValid_ReturnValue_1) == 0x000060, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, K2Node_DynamicCast_AsWBP_CMN_Sub_Menu_1) == 0x000068, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::K2Node_DynamicCast_AsWBP_CMN_Sub_Menu_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, K2Node_DynamicCast_bSuccess_1) == 0x000070, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, CallFunc_GetSubMenuButtons_ReturnValue_1) == 0x000078, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::CallFunc_GetSubMenuButtons_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, CallFunc_GetWorldSubsystem_ReturnValue_2) == 0x000088, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::CallFunc_GetWorldSubsystem_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, CallFunc_Array_Get_Item) == 0x000090, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, CallFunc_IsValid_ReturnValue_2) == 0x000098, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, K2Node_DynamicCast_AsWBP_CMN_Sub_Menu_2) == 0x0000A0, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::K2Node_DynamicCast_AsWBP_CMN_Sub_Menu_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, K2Node_DynamicCast_bSuccess_2) == 0x0000A8, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, CallFunc_Array_Length_ReturnValue_1) == 0x0000AC, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, CallFunc_GetSubMenuButtons_ReturnValue_2) == 0x0000B0, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::CallFunc_GetSubMenuButtons_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, CallFunc_Less_IntInt_ReturnValue) == 0x0000C0, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, CallFunc_Array_Get_Item_1) == 0x0000C8, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, CallFunc_Array_Length_ReturnValue_2) == 0x0000D0, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, Temp_int_Loop_Counter_Variable_1) == 0x0000D4, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, Temp_int_Array_Index_Variable_2) == 0x0000D8, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, CallFunc_Array_Get_Item_2) == 0x0000E0, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000E8, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000EC, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, Temp_int_Loop_Counter_Variable_2) == 0x0000F0, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, CallFunc_Less_IntInt_ReturnValue_2) == 0x0000F4, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetMouseInteraction_by_in_State, CallFunc_Add_IntInt_ReturnValue_2) == 0x0000F8, "Member 'BP_TopMenuSequence_C_SetMouseInteraction_by_in_State::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_SetMouseInteraction_by_in_State;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.SetNextTopMenuSequenceState
 // 0x0002 (0x0002 - 0x0000)
@@ -2402,10 +1520,7 @@ public:
 	ETopMenuSequenceState                         InState;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETopMenuSequenceState                         PrevState;                                         // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_SetNextTopMenuSequenceState) == 0x000001, "Wrong alignment on BP_TopMenuSequence_C_SetNextTopMenuSequenceState");
-static_assert(sizeof(BP_TopMenuSequence_C_SetNextTopMenuSequenceState) == 0x000002, "Wrong size on BP_TopMenuSequence_C_SetNextTopMenuSequenceState");
-static_assert(offsetof(BP_TopMenuSequence_C_SetNextTopMenuSequenceState, InState) == 0x000000, "Member 'BP_TopMenuSequence_C_SetNextTopMenuSequenceState::InState' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetNextTopMenuSequenceState, PrevState) == 0x000001, "Member 'BP_TopMenuSequence_C_SetNextTopMenuSequenceState::PrevState' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_SetNextTopMenuSequenceState;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.SetStoreUIVisibility
 // 0x0028 (0x0028 - 0x0000)
@@ -2423,16 +1538,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_ChangeZOrder_ReturnValue;                 // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_SetStoreUIVisibility) == 0x000008, "Wrong alignment on BP_TopMenuSequence_C_SetStoreUIVisibility");
-static_assert(sizeof(BP_TopMenuSequence_C_SetStoreUIVisibility) == 0x000028, "Wrong size on BP_TopMenuSequence_C_SetStoreUIVisibility");
-static_assert(offsetof(BP_TopMenuSequence_C_SetStoreUIVisibility, Visibility) == 0x000000, "Member 'BP_TopMenuSequence_C_SetStoreUIVisibility::Visibility' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetStoreUIVisibility, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000008, "Member 'BP_TopMenuSequence_C_SetStoreUIVisibility::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetStoreUIVisibility, CallFunc_MakeLiteralByte_ReturnValue) == 0x000010, "Member 'BP_TopMenuSequence_C_SetStoreUIVisibility::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetStoreUIVisibility, CallFunc_IsValid_ReturnValue) == 0x000011, "Member 'BP_TopMenuSequence_C_SetStoreUIVisibility::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetStoreUIVisibility, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000014, "Member 'BP_TopMenuSequence_C_SetStoreUIVisibility::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetStoreUIVisibility, K2Node_DynamicCast_AsWBP_Header_Menu) == 0x000018, "Member 'BP_TopMenuSequence_C_SetStoreUIVisibility::K2Node_DynamicCast_AsWBP_Header_Menu' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetStoreUIVisibility, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'BP_TopMenuSequence_C_SetStoreUIVisibility::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetStoreUIVisibility, CallFunc_ChangeZOrder_ReturnValue) == 0x000021, "Member 'BP_TopMenuSequence_C_SetStoreUIVisibility::CallFunc_ChangeZOrder_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_SetStoreUIVisibility;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.SetupSubLevel
 // 0x0050 (0x0050 - 0x0000)
@@ -2450,16 +1556,7 @@ public:
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ACameraActor*                           CallFunc_GetCameraActor_ReturnValue;               // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_SetupSubLevel) == 0x000008, "Wrong alignment on BP_TopMenuSequence_C_SetupSubLevel");
-static_assert(sizeof(BP_TopMenuSequence_C_SetupSubLevel) == 0x000050, "Wrong size on BP_TopMenuSequence_C_SetupSubLevel");
-static_assert(offsetof(BP_TopMenuSequence_C_SetupSubLevel, SubLevel) == 0x000000, "Member 'BP_TopMenuSequence_C_SetupSubLevel::SubLevel' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetupSubLevel, CallFunc_GetLevelScriptActor_ReturnValue) == 0x000008, "Member 'BP_TopMenuSequence_C_SetupSubLevel::CallFunc_GetLevelScriptActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetupSubLevel, K2Node_DynamicCast_AsMenu_Lighting_Level_Interface) == 0x000010, "Member 'BP_TopMenuSequence_C_SetupSubLevel::K2Node_DynamicCast_AsMenu_Lighting_Level_Interface' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetupSubLevel, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'BP_TopMenuSequence_C_SetupSubLevel::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetupSubLevel, CallFunc_GetLevelScriptActor_ReturnValue_1) == 0x000028, "Member 'BP_TopMenuSequence_C_SetupSubLevel::CallFunc_GetLevelScriptActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetupSubLevel, K2Node_DynamicCast_AsMenu_Lobby_Level_Interface) == 0x000030, "Member 'BP_TopMenuSequence_C_SetupSubLevel::K2Node_DynamicCast_AsMenu_Lobby_Level_Interface' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetupSubLevel, K2Node_DynamicCast_bSuccess_1) == 0x000040, "Member 'BP_TopMenuSequence_C_SetupSubLevel::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_SetupSubLevel, CallFunc_GetCameraActor_ReturnValue) == 0x000048, "Member 'BP_TopMenuSequence_C_SetupSubLevel::CallFunc_GetCameraActor_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_SetupSubLevel;
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.UpdateTimeTable
 // 0x0048 (0x0048 - 0x0000)
@@ -2482,20 +1579,7 @@ public:
 	class UWBP_HeaderMenu_C*                      K2Node_DynamicCast_AsWBP_Header_Menu;              // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TopMenuSequence_C_UpdateTimeTable) == 0x000008, "Wrong alignment on BP_TopMenuSequence_C_UpdateTimeTable");
-static_assert(sizeof(BP_TopMenuSequence_C_UpdateTimeTable) == 0x000048, "Wrong size on BP_TopMenuSequence_C_UpdateTimeTable");
-static_assert(offsetof(BP_TopMenuSequence_C_UpdateTimeTable, CallFunc_IsEligibleToParticipateLegendCompe_ReturnValue) == 0x000000, "Member 'BP_TopMenuSequence_C_UpdateTimeTable::CallFunc_IsEligibleToParticipateLegendCompe_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_UpdateTimeTable, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000008, "Member 'BP_TopMenuSequence_C_UpdateTimeTable::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_UpdateTimeTable, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x000010, "Member 'BP_TopMenuSequence_C_UpdateTimeTable::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_UpdateTimeTable, CallFunc_CheckFestaStartDateTime_ReturnValue) == 0x000018, "Member 'BP_TopMenuSequence_C_UpdateTimeTable::CallFunc_CheckFestaStartDateTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_UpdateTimeTable, CallFunc_CheckFestaRankingCalcDateTime_ReturnValue) == 0x000019, "Member 'BP_TopMenuSequence_C_UpdateTimeTable::CallFunc_CheckFestaRankingCalcDateTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_UpdateTimeTable, CallFunc_GetGameInstanceSubsystem_ReturnValue_2) == 0x000020, "Member 'BP_TopMenuSequence_C_UpdateTimeTable::CallFunc_GetGameInstanceSubsystem_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_UpdateTimeTable, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000028, "Member 'BP_TopMenuSequence_C_UpdateTimeTable::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_UpdateTimeTable, CallFunc_CheckLegendCompeStartDateTime_ReturnValue) == 0x000030, "Member 'BP_TopMenuSequence_C_UpdateTimeTable::CallFunc_CheckLegendCompeStartDateTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_UpdateTimeTable, CallFunc_BooleanAND_ReturnValue) == 0x000031, "Member 'BP_TopMenuSequence_C_UpdateTimeTable::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_UpdateTimeTable, CallFunc_IsValid_ReturnValue) == 0x000032, "Member 'BP_TopMenuSequence_C_UpdateTimeTable::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_UpdateTimeTable, K2Node_DynamicCast_AsWBP_Header_Menu) == 0x000038, "Member 'BP_TopMenuSequence_C_UpdateTimeTable::K2Node_DynamicCast_AsWBP_Header_Menu' has a wrong offset!");
-static_assert(offsetof(BP_TopMenuSequence_C_UpdateTimeTable, K2Node_DynamicCast_bSuccess) == 0x000040, "Member 'BP_TopMenuSequence_C_UpdateTimeTable::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TopMenuSequence_C_UpdateTimeTable;
 
 }
 

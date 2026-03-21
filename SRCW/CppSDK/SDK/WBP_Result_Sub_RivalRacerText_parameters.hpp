@@ -23,10 +23,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_Sub_RivalRacerText_C_ExecuteUbergraph_WBP_Result_Sub_RivalRacerText) == 0x000008, "Wrong alignment on WBP_Result_Sub_RivalRacerText_C_ExecuteUbergraph_WBP_Result_Sub_RivalRacerText");
-static_assert(sizeof(WBP_Result_Sub_RivalRacerText_C_ExecuteUbergraph_WBP_Result_Sub_RivalRacerText) == 0x000010, "Wrong size on WBP_Result_Sub_RivalRacerText_C_ExecuteUbergraph_WBP_Result_Sub_RivalRacerText");
-static_assert(offsetof(WBP_Result_Sub_RivalRacerText_C_ExecuteUbergraph_WBP_Result_Sub_RivalRacerText, EntryPoint) == 0x000000, "Member 'WBP_Result_Sub_RivalRacerText_C_ExecuteUbergraph_WBP_Result_Sub_RivalRacerText::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_RivalRacerText_C_ExecuteUbergraph_WBP_Result_Sub_RivalRacerText, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_Result_Sub_RivalRacerText_C_ExecuteUbergraph_WBP_Result_Sub_RivalRacerText::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_Sub_RivalRacerText_C_ExecuteUbergraph_WBP_Result_Sub_RivalRacerText;
 
 }
 

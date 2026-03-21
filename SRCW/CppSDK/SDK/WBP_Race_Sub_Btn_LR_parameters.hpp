@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UnionRun_structs.hpp"
 #include "InputCore_structs.hpp"
+#include "UnionRun_structs.hpp"
 
 
 namespace SDK::Params
@@ -48,29 +48,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Greater_DoubleDouble_A_ImplicitCast;      // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR) == 0x000008, "Wrong alignment on WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR");
-static_assert(sizeof(WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR) == 0x000078, "Wrong size on WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR, EntryPoint) == 0x000000, "Member 'WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR, K2Node_Event_InValue_9) == 0x000004, "Member 'WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR::K2Node_Event_InValue_9' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR, K2Node_Event_InValue_8) == 0x000008, "Member 'WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR::K2Node_Event_InValue_8' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR, K2Node_Event_InValue_7) == 0x00000C, "Member 'WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR::K2Node_Event_InValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR, K2Node_Event_InValue_6) == 0x000010, "Member 'WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR::K2Node_Event_InValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR, K2Node_Event_InValue_5) == 0x000014, "Member 'WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR::K2Node_Event_InValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR, K2Node_Event_InValue_4) == 0x000018, "Member 'WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR::K2Node_Event_InValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR, K2Node_Event_InValue_3) == 0x00001C, "Member 'WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR::K2Node_Event_InValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR, K2Node_Event_InValue_2) == 0x000020, "Member 'WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR::K2Node_Event_InValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR, K2Node_Event_InValue_1) == 0x000024, "Member 'WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR::K2Node_Event_InValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR, K2Node_Event_InValue) == 0x000028, "Member 'WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR::K2Node_Event_InValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000030, "Member 'WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR, CallFunc_Greater_DoubleDouble_ReturnValue) == 0x000038, "Member 'WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR::CallFunc_Greater_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000039, "Member 'WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR, CallFunc_PlayAnimation_ReturnValue) == 0x000040, "Member 'WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR, CallFunc_IsAnimationPlaying_ReturnValue_1) == 0x000048, "Member 'WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR::CallFunc_IsAnimationPlaying_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x000050, "Member 'WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR, CallFunc_IsAnimationPlaying_ReturnValue_2) == 0x000058, "Member 'WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR::CallFunc_IsAnimationPlaying_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR, CallFunc_PlayAnimation_ReturnValue_1) == 0x000060, "Member 'WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR, CallFunc_PlayAnimation_ReturnValue_2) == 0x000068, "Member 'WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR, CallFunc_Greater_DoubleDouble_A_ImplicitCast) == 0x000070, "Member 'WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR::CallFunc_Greater_DoubleDouble_A_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_Sub_Btn_LR_C_ExecuteUbergraph_WBP_Race_Sub_Btn_LR;
 
 // Function WBP_Race_Sub_Btn_LR.WBP_Race_Sub_Btn_LR_C.OnAccelInput
 // 0x0004 (0x0004 - 0x0000)
@@ -79,9 +57,7 @@ struct WBP_Race_Sub_Btn_LR_C_OnAccelInput final
 public:
 	float                                         InValue;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_Sub_Btn_LR_C_OnAccelInput) == 0x000004, "Wrong alignment on WBP_Race_Sub_Btn_LR_C_OnAccelInput");
-static_assert(sizeof(WBP_Race_Sub_Btn_LR_C_OnAccelInput) == 0x000004, "Wrong size on WBP_Race_Sub_Btn_LR_C_OnAccelInput");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_OnAccelInput, InValue) == 0x000000, "Member 'WBP_Race_Sub_Btn_LR_C_OnAccelInput::InValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_Sub_Btn_LR_C_OnAccelInput;
 
 // Function WBP_Race_Sub_Btn_LR.WBP_Race_Sub_Btn_LR_C.OnBrakeInput
 // 0x0004 (0x0004 - 0x0000)
@@ -90,9 +66,7 @@ struct WBP_Race_Sub_Btn_LR_C_OnBrakeInput final
 public:
 	float                                         InValue;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_Sub_Btn_LR_C_OnBrakeInput) == 0x000004, "Wrong alignment on WBP_Race_Sub_Btn_LR_C_OnBrakeInput");
-static_assert(sizeof(WBP_Race_Sub_Btn_LR_C_OnBrakeInput) == 0x000004, "Wrong size on WBP_Race_Sub_Btn_LR_C_OnBrakeInput");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_OnBrakeInput, InValue) == 0x000000, "Member 'WBP_Race_Sub_Btn_LR_C_OnBrakeInput::InValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_Sub_Btn_LR_C_OnBrakeInput;
 
 // Function WBP_Race_Sub_Btn_LR.WBP_Race_Sub_Btn_LR_C.OnPitchInput
 // 0x0004 (0x0004 - 0x0000)
@@ -101,9 +75,7 @@ struct WBP_Race_Sub_Btn_LR_C_OnPitchInput final
 public:
 	float                                         InValue;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_Sub_Btn_LR_C_OnPitchInput) == 0x000004, "Wrong alignment on WBP_Race_Sub_Btn_LR_C_OnPitchInput");
-static_assert(sizeof(WBP_Race_Sub_Btn_LR_C_OnPitchInput) == 0x000004, "Wrong size on WBP_Race_Sub_Btn_LR_C_OnPitchInput");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_OnPitchInput, InValue) == 0x000000, "Member 'WBP_Race_Sub_Btn_LR_C_OnPitchInput::InValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_Sub_Btn_LR_C_OnPitchInput;
 
 // Function WBP_Race_Sub_Btn_LR.WBP_Race_Sub_Btn_LR_C.OnSlimeCancelXInput
 // 0x0004 (0x0004 - 0x0000)
@@ -112,9 +84,7 @@ struct WBP_Race_Sub_Btn_LR_C_OnSlimeCancelXInput final
 public:
 	float                                         InValue;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_Sub_Btn_LR_C_OnSlimeCancelXInput) == 0x000004, "Wrong alignment on WBP_Race_Sub_Btn_LR_C_OnSlimeCancelXInput");
-static_assert(sizeof(WBP_Race_Sub_Btn_LR_C_OnSlimeCancelXInput) == 0x000004, "Wrong size on WBP_Race_Sub_Btn_LR_C_OnSlimeCancelXInput");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_OnSlimeCancelXInput, InValue) == 0x000000, "Member 'WBP_Race_Sub_Btn_LR_C_OnSlimeCancelXInput::InValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_Sub_Btn_LR_C_OnSlimeCancelXInput;
 
 // Function WBP_Race_Sub_Btn_LR.WBP_Race_Sub_Btn_LR_C.OnSlimeCancelYInput
 // 0x0004 (0x0004 - 0x0000)
@@ -123,9 +93,7 @@ struct WBP_Race_Sub_Btn_LR_C_OnSlimeCancelYInput final
 public:
 	float                                         InValue;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_Sub_Btn_LR_C_OnSlimeCancelYInput) == 0x000004, "Wrong alignment on WBP_Race_Sub_Btn_LR_C_OnSlimeCancelYInput");
-static_assert(sizeof(WBP_Race_Sub_Btn_LR_C_OnSlimeCancelYInput) == 0x000004, "Wrong size on WBP_Race_Sub_Btn_LR_C_OnSlimeCancelYInput");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_OnSlimeCancelYInput, InValue) == 0x000000, "Member 'WBP_Race_Sub_Btn_LR_C_OnSlimeCancelYInput::InValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_Sub_Btn_LR_C_OnSlimeCancelYInput;
 
 // Function WBP_Race_Sub_Btn_LR.WBP_Race_Sub_Btn_LR_C.OnSteerInput
 // 0x0004 (0x0004 - 0x0000)
@@ -134,9 +102,7 @@ struct WBP_Race_Sub_Btn_LR_C_OnSteerInput final
 public:
 	float                                         InValue;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_Sub_Btn_LR_C_OnSteerInput) == 0x000004, "Wrong alignment on WBP_Race_Sub_Btn_LR_C_OnSteerInput");
-static_assert(sizeof(WBP_Race_Sub_Btn_LR_C_OnSteerInput) == 0x000004, "Wrong size on WBP_Race_Sub_Btn_LR_C_OnSteerInput");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_OnSteerInput, InValue) == 0x000000, "Member 'WBP_Race_Sub_Btn_LR_C_OnSteerInput::InValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_Sub_Btn_LR_C_OnSteerInput;
 
 // Function WBP_Race_Sub_Btn_LR.WBP_Race_Sub_Btn_LR_C.OnTrickX2Input
 // 0x0004 (0x0004 - 0x0000)
@@ -145,9 +111,7 @@ struct WBP_Race_Sub_Btn_LR_C_OnTrickX2Input final
 public:
 	float                                         InValue;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_Sub_Btn_LR_C_OnTrickX2Input) == 0x000004, "Wrong alignment on WBP_Race_Sub_Btn_LR_C_OnTrickX2Input");
-static_assert(sizeof(WBP_Race_Sub_Btn_LR_C_OnTrickX2Input) == 0x000004, "Wrong size on WBP_Race_Sub_Btn_LR_C_OnTrickX2Input");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_OnTrickX2Input, InValue) == 0x000000, "Member 'WBP_Race_Sub_Btn_LR_C_OnTrickX2Input::InValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_Sub_Btn_LR_C_OnTrickX2Input;
 
 // Function WBP_Race_Sub_Btn_LR.WBP_Race_Sub_Btn_LR_C.OnTrickXInput
 // 0x0004 (0x0004 - 0x0000)
@@ -156,9 +120,7 @@ struct WBP_Race_Sub_Btn_LR_C_OnTrickXInput final
 public:
 	float                                         InValue;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_Sub_Btn_LR_C_OnTrickXInput) == 0x000004, "Wrong alignment on WBP_Race_Sub_Btn_LR_C_OnTrickXInput");
-static_assert(sizeof(WBP_Race_Sub_Btn_LR_C_OnTrickXInput) == 0x000004, "Wrong size on WBP_Race_Sub_Btn_LR_C_OnTrickXInput");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_OnTrickXInput, InValue) == 0x000000, "Member 'WBP_Race_Sub_Btn_LR_C_OnTrickXInput::InValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_Sub_Btn_LR_C_OnTrickXInput;
 
 // Function WBP_Race_Sub_Btn_LR.WBP_Race_Sub_Btn_LR_C.OnTrickY2Input
 // 0x0004 (0x0004 - 0x0000)
@@ -167,9 +129,7 @@ struct WBP_Race_Sub_Btn_LR_C_OnTrickY2Input final
 public:
 	float                                         InValue;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_Sub_Btn_LR_C_OnTrickY2Input) == 0x000004, "Wrong alignment on WBP_Race_Sub_Btn_LR_C_OnTrickY2Input");
-static_assert(sizeof(WBP_Race_Sub_Btn_LR_C_OnTrickY2Input) == 0x000004, "Wrong size on WBP_Race_Sub_Btn_LR_C_OnTrickY2Input");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_OnTrickY2Input, InValue) == 0x000000, "Member 'WBP_Race_Sub_Btn_LR_C_OnTrickY2Input::InValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_Sub_Btn_LR_C_OnTrickY2Input;
 
 // Function WBP_Race_Sub_Btn_LR.WBP_Race_Sub_Btn_LR_C.OnTrickYInput
 // 0x0004 (0x0004 - 0x0000)
@@ -178,9 +138,7 @@ struct WBP_Race_Sub_Btn_LR_C_OnTrickYInput final
 public:
 	float                                         InValue;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_Sub_Btn_LR_C_OnTrickYInput) == 0x000004, "Wrong alignment on WBP_Race_Sub_Btn_LR_C_OnTrickYInput");
-static_assert(sizeof(WBP_Race_Sub_Btn_LR_C_OnTrickYInput) == 0x000004, "Wrong size on WBP_Race_Sub_Btn_LR_C_OnTrickYInput");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_OnTrickYInput, InValue) == 0x000000, "Member 'WBP_Race_Sub_Btn_LR_C_OnTrickYInput::InValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_Sub_Btn_LR_C_OnTrickYInput;
 
 // Function WBP_Race_Sub_Btn_LR.WBP_Race_Sub_Btn_LR_C.SetBtnText
 // 0x0080 (0x0080 - 0x0000)
@@ -194,13 +152,7 @@ public:
 	struct FBtnGuidePlatformText                  CallFunc_GetDataTableRowFromName_OutRow;           // 0x0010(0x0068)()
 	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_Sub_Btn_LR_C_SetBtnText) == 0x000008, "Wrong alignment on WBP_Race_Sub_Btn_LR_C_SetBtnText");
-static_assert(sizeof(WBP_Race_Sub_Btn_LR_C_SetBtnText) == 0x000080, "Wrong size on WBP_Race_Sub_Btn_LR_C_SetBtnText");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_SetBtnText, PlayerControllerIndex) == 0x000000, "Member 'WBP_Race_Sub_Btn_LR_C_SetBtnText::PlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_SetBtnText, CallFunc_GetControllerType_ReturnValue) == 0x000004, "Member 'WBP_Race_Sub_Btn_LR_C_SetBtnText::CallFunc_GetControllerType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_SetBtnText, CallFunc_GetEnumeratorName_ReturnValue) == 0x000008, "Member 'WBP_Race_Sub_Btn_LR_C_SetBtnText::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_SetBtnText, CallFunc_GetDataTableRowFromName_OutRow) == 0x000010, "Member 'WBP_Race_Sub_Btn_LR_C_SetBtnText::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_SetBtnText, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000078, "Member 'WBP_Race_Sub_Btn_LR_C_SetBtnText::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_Sub_Btn_LR_C_SetBtnText;
 
 // Function WBP_Race_Sub_Btn_LR.WBP_Race_Sub_Btn_LR_C.SetKey
 // 0x0040 (0x0040 - 0x0000)
@@ -219,18 +171,7 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_2;         // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_3;         // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_Sub_Btn_LR_C_SetKey) == 0x000008, "Wrong alignment on WBP_Race_Sub_Btn_LR_C_SetKey");
-static_assert(sizeof(WBP_Race_Sub_Btn_LR_C_SetKey) == 0x000040, "Wrong size on WBP_Race_Sub_Btn_LR_C_SetKey");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_SetKey, NewKey) == 0x000000, "Member 'WBP_Race_Sub_Btn_LR_C_SetKey::NewKey' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_SetKey, Success) == 0x000018, "Member 'WBP_Race_Sub_Btn_LR_C_SetKey::Success' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_SetKey, CallFunc_EqualEqual_KeyKey_ReturnValue) == 0x000019, "Member 'WBP_Race_Sub_Btn_LR_C_SetKey::CallFunc_EqualEqual_KeyKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_SetKey, CallFunc_EqualEqual_KeyKey_ReturnValue_1) == 0x00001A, "Member 'WBP_Race_Sub_Btn_LR_C_SetKey::CallFunc_EqualEqual_KeyKey_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_SetKey, CallFunc_EqualEqual_KeyKey_ReturnValue_2) == 0x00001B, "Member 'WBP_Race_Sub_Btn_LR_C_SetKey::CallFunc_EqualEqual_KeyKey_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_SetKey, CallFunc_EqualEqual_KeyKey_ReturnValue_3) == 0x00001C, "Member 'WBP_Race_Sub_Btn_LR_C_SetKey::CallFunc_EqualEqual_KeyKey_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_SetKey, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000020, "Member 'WBP_Race_Sub_Btn_LR_C_SetKey::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_SetKey, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x000028, "Member 'WBP_Race_Sub_Btn_LR_C_SetKey::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_SetKey, CallFunc_GetDynamicMaterial_ReturnValue_2) == 0x000030, "Member 'WBP_Race_Sub_Btn_LR_C_SetKey::CallFunc_GetDynamicMaterial_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_SetKey, CallFunc_GetDynamicMaterial_ReturnValue_3) == 0x000038, "Member 'WBP_Race_Sub_Btn_LR_C_SetKey::CallFunc_GetDynamicMaterial_ReturnValue_3' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_Sub_Btn_LR_C_SetKey;
 
 }
 

@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "ST_StickerPresetPageData_structs.hpp"
-#include "UMG_structs.hpp"
-#include "ST_StickerPresetPageItemData_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
+#include "ST_StickerPresetPageData_structs.hpp"
+#include "ST_StickerPresetPageItemData_structs.hpp"
+#include "UMG_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK
@@ -99,42 +99,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MachineCustom_Sub_StickerSelect_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MachineCustom_Sub_StickerSelect_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MachineCustom_Sub_StickerSelect_C")
 	}
 	static class UWBP_MachineCustom_Sub_StickerSelect_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MachineCustom_Sub_StickerSelect_C>();
 	}
 };
-static_assert(alignof(UWBP_MachineCustom_Sub_StickerSelect_C) == 0x000008, "Wrong alignment on UWBP_MachineCustom_Sub_StickerSelect_C");
-static_assert(sizeof(UWBP_MachineCustom_Sub_StickerSelect_C) == 0x0004E0, "Wrong size on UWBP_MachineCustom_Sub_StickerSelect_C");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerSelect_C, UberGraphFrame) == 0x0003F8, "Member 'UWBP_MachineCustom_Sub_StickerSelect_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerSelect_C, PresetWindow_Loop) == 0x000400, "Member 'UWBP_MachineCustom_Sub_StickerSelect_C::PresetWindow_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerSelect_C, PresetWindow_Left_In) == 0x000408, "Member 'UWBP_MachineCustom_Sub_StickerSelect_C::PresetWindow_Left_In' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerSelect_C, PresetWindow_Right_In) == 0x000410, "Member 'UWBP_MachineCustom_Sub_StickerSelect_C::PresetWindow_Right_In' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerSelect_C, CPStickerPreset) == 0x000418, "Member 'UWBP_MachineCustom_Sub_StickerSelect_C::CPStickerPreset' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerSelect_C, RetainerBox_0) == 0x000420, "Member 'UWBP_MachineCustom_Sub_StickerSelect_C::RetainerBox_0' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerSelect_C, WBP_CMN_LR_Arrow_L) == 0x000428, "Member 'UWBP_MachineCustom_Sub_StickerSelect_C::WBP_CMN_LR_Arrow_L' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerSelect_C, WBP_CMN_LR_Arrow_R) == 0x000430, "Member 'UWBP_MachineCustom_Sub_StickerSelect_C::WBP_CMN_LR_Arrow_R' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerSelect_C, WBP_CMN_ScrollSnapPoint) == 0x000438, "Member 'UWBP_MachineCustom_Sub_StickerSelect_C::WBP_CMN_ScrollSnapPoint' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerSelect_C, WBP_MachineCustom_Sub_Sticker_PresetWindow_01) == 0x000440, "Member 'UWBP_MachineCustom_Sub_StickerSelect_C::WBP_MachineCustom_Sub_Sticker_PresetWindow_01' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerSelect_C, WBP_MachineCustom_Sub_Sticker_PresetWindow_02) == 0x000448, "Member 'UWBP_MachineCustom_Sub_StickerSelect_C::WBP_MachineCustom_Sub_Sticker_PresetWindow_02' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerSelect_C, WBP_MachineCustom_Sub_Sticker_PresetWindow_03) == 0x000450, "Member 'UWBP_MachineCustom_Sub_StickerSelect_C::WBP_MachineCustom_Sub_Sticker_PresetWindow_03' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerSelect_C, Pages) == 0x000458, "Member 'UWBP_MachineCustom_Sub_StickerSelect_C::Pages' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerSelect_C, PageDataList) == 0x000468, "Member 'UWBP_MachineCustom_Sub_StickerSelect_C::PageDataList' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerSelect_C, ItemNumPerPage) == 0x000478, "Member 'UWBP_MachineCustom_Sub_StickerSelect_C::ItemNumPerPage' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerSelect_C, ItemNumInRow) == 0x00047C, "Member 'UWBP_MachineCustom_Sub_StickerSelect_C::ItemNumInRow' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerSelect_C, PageDataIndex) == 0x000480, "Member 'UWBP_MachineCustom_Sub_StickerSelect_C::PageDataIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerSelect_C, LastItemIndex) == 0x000484, "Member 'UWBP_MachineCustom_Sub_StickerSelect_C::LastItemIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerSelect_C, PrevPageDataIndex) == 0x000488, "Member 'UWBP_MachineCustom_Sub_StickerSelect_C::PrevPageDataIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerSelect_C, OnCancel) == 0x000490, "Member 'UWBP_MachineCustom_Sub_StickerSelect_C::OnCancel' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerSelect_C, OnItemSelected) == 0x0004A0, "Member 'UWBP_MachineCustom_Sub_StickerSelect_C::OnItemSelected' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerSelect_C, OnItemFocused) == 0x0004B0, "Member 'UWBP_MachineCustom_Sub_StickerSelect_C::OnItemFocused' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerSelect_C, PrevRowIndex) == 0x0004C0, "Member 'UWBP_MachineCustom_Sub_StickerSelect_C::PrevRowIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerSelect_C, NextRowIndex) == 0x0004C4, "Member 'UWBP_MachineCustom_Sub_StickerSelect_C::NextRowIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerSelect_C, bCanNextPage) == 0x0004C8, "Member 'UWBP_MachineCustom_Sub_StickerSelect_C::bCanNextPage' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerSelect_C, bCanPrevPage) == 0x0004C9, "Member 'UWBP_MachineCustom_Sub_StickerSelect_C::bCanPrevPage' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerSelect_C, OnPurchaseAnimFinished) == 0x0004D0, "Member 'UWBP_MachineCustom_Sub_StickerSelect_C::OnPurchaseAnimFinished' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MachineCustom_Sub_StickerSelect_C;
 
 }
 

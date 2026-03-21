@@ -49,31 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_RaceBefore_VoltageMaxInfo_C">();
+		BP_STATIC_CLASS_IMPL("WBP_RaceBefore_VoltageMaxInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_RaceBefore_VoltageMaxInfo_C")
 	}
 	static class UWBP_RaceBefore_VoltageMaxInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_RaceBefore_VoltageMaxInfo_C>();
 	}
 };
-static_assert(alignof(UWBP_RaceBefore_VoltageMaxInfo_C) == 0x000008, "Wrong alignment on UWBP_RaceBefore_VoltageMaxInfo_C");
-static_assert(sizeof(UWBP_RaceBefore_VoltageMaxInfo_C) == 0x000368, "Wrong size on UWBP_RaceBefore_VoltageMaxInfo_C");
-static_assert(offsetof(UWBP_RaceBefore_VoltageMaxInfo_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_RaceBefore_VoltageMaxInfo_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_VoltageMaxInfo_C, Info_Out) == 0x0002E8, "Member 'UWBP_RaceBefore_VoltageMaxInfo_C::Info_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_VoltageMaxInfo_C, Info_InLoop) == 0x0002F0, "Member 'UWBP_RaceBefore_VoltageMaxInfo_C::Info_InLoop' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_VoltageMaxInfo_C, base) == 0x0002F8, "Member 'UWBP_RaceBefore_VoltageMaxInfo_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_VoltageMaxInfo_C, BG_Black) == 0x000300, "Member 'UWBP_RaceBefore_VoltageMaxInfo_C::BG_Black' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_VoltageMaxInfo_C, DSP_Eff_02) == 0x000308, "Member 'UWBP_RaceBefore_VoltageMaxInfo_C::DSP_Eff_02' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_VoltageMaxInfo_C, DSP_TXT_AddPoint_03) == 0x000310, "Member 'UWBP_RaceBefore_VoltageMaxInfo_C::DSP_TXT_AddPoint_03' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_VoltageMaxInfo_C, DSP_x2Base_01) == 0x000318, "Member 'UWBP_RaceBefore_VoltageMaxInfo_C::DSP_x2Base_01' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_VoltageMaxInfo_C, DSP_x2Base_02) == 0x000320, "Member 'UWBP_RaceBefore_VoltageMaxInfo_C::DSP_x2Base_02' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_VoltageMaxInfo_C, Eff_01) == 0x000328, "Member 'UWBP_RaceBefore_VoltageMaxInfo_C::Eff_01' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_VoltageMaxInfo_C, Panel) == 0x000330, "Member 'UWBP_RaceBefore_VoltageMaxInfo_C::Panel' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_VoltageMaxInfo_C, RaceFlag) == 0x000338, "Member 'UWBP_RaceBefore_VoltageMaxInfo_C::RaceFlag' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_VoltageMaxInfo_C, TXT_PointUpChance) == 0x000340, "Member 'UWBP_RaceBefore_VoltageMaxInfo_C::TXT_PointUpChance' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_VoltageMaxInfo_C, TXT_TextDetail) == 0x000348, "Member 'UWBP_RaceBefore_VoltageMaxInfo_C::TXT_TextDetail' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_VoltageMaxInfo_C, bIsTickLock) == 0x000350, "Member 'UWBP_RaceBefore_VoltageMaxInfo_C::bIsTickLock' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_VoltageMaxInfo_C, OutAnimFinishedEvent) == 0x000358, "Member 'UWBP_RaceBefore_VoltageMaxInfo_C::OutAnimFinishedEvent' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_RaceBefore_VoltageMaxInfo_C;
 
 }
 

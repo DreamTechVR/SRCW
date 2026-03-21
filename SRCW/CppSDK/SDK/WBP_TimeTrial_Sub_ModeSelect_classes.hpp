@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -48,26 +48,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_TimeTrial_Sub_ModeSelect_C">();
+		BP_STATIC_CLASS_IMPL("WBP_TimeTrial_Sub_ModeSelect_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_TimeTrial_Sub_ModeSelect_C")
 	}
 	static class UWBP_TimeTrial_Sub_ModeSelect_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_TimeTrial_Sub_ModeSelect_C>();
 	}
 };
-static_assert(alignof(UWBP_TimeTrial_Sub_ModeSelect_C) == 0x000008, "Wrong alignment on UWBP_TimeTrial_Sub_ModeSelect_C");
-static_assert(sizeof(UWBP_TimeTrial_Sub_ModeSelect_C) == 0x000498, "Wrong size on UWBP_TimeTrial_Sub_ModeSelect_C");
-static_assert(offsetof(UWBP_TimeTrial_Sub_ModeSelect_C, UberGraphFrame) == 0x000440, "Member 'UWBP_TimeTrial_Sub_ModeSelect_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_ModeSelect_C, TimeTrial_ModeSelect_Out) == 0x000448, "Member 'UWBP_TimeTrial_Sub_ModeSelect_C::TimeTrial_ModeSelect_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_ModeSelect_C, TimeTrial_ModeSelect_Loop) == 0x000450, "Member 'UWBP_TimeTrial_Sub_ModeSelect_C::TimeTrial_ModeSelect_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_ModeSelect_C, TimeTrial_ModeSelect_In) == 0x000458, "Member 'UWBP_TimeTrial_Sub_ModeSelect_C::TimeTrial_ModeSelect_In' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_ModeSelect_C, FooterShortCut) == 0x000460, "Member 'UWBP_TimeTrial_Sub_ModeSelect_C::FooterShortCut' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_ModeSelect_C, MouseInteraction) == 0x000468, "Member 'UWBP_TimeTrial_Sub_ModeSelect_C::MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_ModeSelect_C, PAT_WBP_FooterShortCut) == 0x000470, "Member 'UWBP_TimeTrial_Sub_ModeSelect_C::PAT_WBP_FooterShortCut' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_ModeSelect_C, WBP_TestTimeTrial_Sub_BtnPlay_Offline) == 0x000478, "Member 'UWBP_TimeTrial_Sub_ModeSelect_C::WBP_TestTimeTrial_Sub_BtnPlay_Offline' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_ModeSelect_C, WBP_TestTimeTrial_Sub_BtnPlay_Online) == 0x000480, "Member 'UWBP_TimeTrial_Sub_ModeSelect_C::WBP_TestTimeTrial_Sub_BtnPlay_Online' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_ModeSelect_C, WBP_TimeTrial_Sub_Header_StageName) == 0x000488, "Member 'UWBP_TimeTrial_Sub_ModeSelect_C::WBP_TimeTrial_Sub_Header_StageName' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_ModeSelect_C, ButtonsPanel) == 0x000490, "Member 'UWBP_TimeTrial_Sub_ModeSelect_C::ButtonsPanel' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_TimeTrial_Sub_ModeSelect_C;
 
 }
 

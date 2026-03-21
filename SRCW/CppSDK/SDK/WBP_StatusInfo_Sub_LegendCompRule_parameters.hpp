@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "UNION_structs.hpp"
 
 
 namespace SDK::Params
@@ -26,10 +26,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLegendCompeIrregularRuleInfoDispData  K2Node_Event_InDispData;                           // 0x0008(0x0038)(ConstParm)
 };
-static_assert(alignof(WBP_StatusInfo_Sub_LegendCompRule_C_ExecuteUbergraph_WBP_StatusInfo_Sub_LegendCompRule) == 0x000008, "Wrong alignment on WBP_StatusInfo_Sub_LegendCompRule_C_ExecuteUbergraph_WBP_StatusInfo_Sub_LegendCompRule");
-static_assert(sizeof(WBP_StatusInfo_Sub_LegendCompRule_C_ExecuteUbergraph_WBP_StatusInfo_Sub_LegendCompRule) == 0x000040, "Wrong size on WBP_StatusInfo_Sub_LegendCompRule_C_ExecuteUbergraph_WBP_StatusInfo_Sub_LegendCompRule");
-static_assert(offsetof(WBP_StatusInfo_Sub_LegendCompRule_C_ExecuteUbergraph_WBP_StatusInfo_Sub_LegendCompRule, EntryPoint) == 0x000000, "Member 'WBP_StatusInfo_Sub_LegendCompRule_C_ExecuteUbergraph_WBP_StatusInfo_Sub_LegendCompRule::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_LegendCompRule_C_ExecuteUbergraph_WBP_StatusInfo_Sub_LegendCompRule, K2Node_Event_InDispData) == 0x000008, "Member 'WBP_StatusInfo_Sub_LegendCompRule_C_ExecuteUbergraph_WBP_StatusInfo_Sub_LegendCompRule::K2Node_Event_InDispData' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_Sub_LegendCompRule_C_ExecuteUbergraph_WBP_StatusInfo_Sub_LegendCompRule;
 
 // Function WBP_StatusInfo_Sub_LegendCompRule.WBP_StatusInfo_Sub_LegendCompRule_C.SetDispData
 // 0x0038 (0x0038 - 0x0000)
@@ -38,9 +35,7 @@ struct WBP_StatusInfo_Sub_LegendCompRule_C_SetDispData final
 public:
 	struct FLegendCompeIrregularRuleInfoDispData  InDispData;                                        // 0x0000(0x0038)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_StatusInfo_Sub_LegendCompRule_C_SetDispData) == 0x000008, "Wrong alignment on WBP_StatusInfo_Sub_LegendCompRule_C_SetDispData");
-static_assert(sizeof(WBP_StatusInfo_Sub_LegendCompRule_C_SetDispData) == 0x000038, "Wrong size on WBP_StatusInfo_Sub_LegendCompRule_C_SetDispData");
-static_assert(offsetof(WBP_StatusInfo_Sub_LegendCompRule_C_SetDispData, InDispData) == 0x000000, "Member 'WBP_StatusInfo_Sub_LegendCompRule_C_SetDispData::InDispData' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_Sub_LegendCompRule_C_SetDispData;
 
 // Function WBP_StatusInfo_Sub_LegendCompRule.WBP_StatusInfo_Sub_LegendCompRule_C.SetExGadgetDetail
 // 0x0108 (0x0108 - 0x0000)
@@ -56,15 +51,7 @@ public:
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0101(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsGadgetKitFromGadgetId_ReturnValue;      // 0x0102(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_Sub_LegendCompRule_C_SetExGadgetDetail) == 0x000008, "Wrong alignment on WBP_StatusInfo_Sub_LegendCompRule_C_SetExGadgetDetail");
-static_assert(sizeof(WBP_StatusInfo_Sub_LegendCompRule_C_SetExGadgetDetail) == 0x000108, "Wrong size on WBP_StatusInfo_Sub_LegendCompRule_C_SetExGadgetDetail");
-static_assert(offsetof(WBP_StatusInfo_Sub_LegendCompRule_C_SetExGadgetDetail, DispData_0) == 0x000000, "Member 'WBP_StatusInfo_Sub_LegendCompRule_C_SetExGadgetDetail::DispData_0' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_LegendCompRule_C_SetExGadgetDetail, ExGadget) == 0x000038, "Member 'WBP_StatusInfo_Sub_LegendCompRule_C_SetExGadgetDetail::ExGadget' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_LegendCompRule_C_SetExGadgetDetail, CallFunc_Array_Get_Item) == 0x000039, "Member 'WBP_StatusInfo_Sub_LegendCompRule_C_SetExGadgetDetail::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_LegendCompRule_C_SetExGadgetDetail, CallFunc_GetGadgetData_OutGadgetData) == 0x000040, "Member 'WBP_StatusInfo_Sub_LegendCompRule_C_SetExGadgetDetail::CallFunc_GetGadgetData_OutGadgetData' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_LegendCompRule_C_SetExGadgetDetail, CallFunc_GetGadgetData_ReturnValue) == 0x000100, "Member 'WBP_StatusInfo_Sub_LegendCompRule_C_SetExGadgetDetail::CallFunc_GetGadgetData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_LegendCompRule_C_SetExGadgetDetail, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000101, "Member 'WBP_StatusInfo_Sub_LegendCompRule_C_SetExGadgetDetail::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_LegendCompRule_C_SetExGadgetDetail, CallFunc_IsGadgetKitFromGadgetId_ReturnValue) == 0x000102, "Member 'WBP_StatusInfo_Sub_LegendCompRule_C_SetExGadgetDetail::CallFunc_IsGadgetKitFromGadgetId_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_Sub_LegendCompRule_C_SetExGadgetDetail;
 
 // Function WBP_StatusInfo_Sub_LegendCompRule.WBP_StatusInfo_Sub_LegendCompRule_C.SetIrregularRuleGadgetInfo
 // 0x0050 (0x0050 - 0x0000)
@@ -81,15 +68,7 @@ public:
 	int32                                         Temp_int_Variable_2;                               // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_Select_Default;                             // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_Sub_LegendCompRule_C_SetIrregularRuleGadgetInfo) == 0x000008, "Wrong alignment on WBP_StatusInfo_Sub_LegendCompRule_C_SetIrregularRuleGadgetInfo");
-static_assert(sizeof(WBP_StatusInfo_Sub_LegendCompRule_C_SetIrregularRuleGadgetInfo) == 0x000050, "Wrong size on WBP_StatusInfo_Sub_LegendCompRule_C_SetIrregularRuleGadgetInfo");
-static_assert(offsetof(WBP_StatusInfo_Sub_LegendCompRule_C_SetIrregularRuleGadgetInfo, DispData_0) == 0x000000, "Member 'WBP_StatusInfo_Sub_LegendCompRule_C_SetIrregularRuleGadgetInfo::DispData_0' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_LegendCompRule_C_SetIrregularRuleGadgetInfo, Temp_byte_Variable) == 0x000038, "Member 'WBP_StatusInfo_Sub_LegendCompRule_C_SetIrregularRuleGadgetInfo::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_LegendCompRule_C_SetIrregularRuleGadgetInfo, Temp_int_Variable) == 0x00003C, "Member 'WBP_StatusInfo_Sub_LegendCompRule_C_SetIrregularRuleGadgetInfo::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_LegendCompRule_C_SetIrregularRuleGadgetInfo, K2Node_SwitchEnum_CmpSuccess) == 0x000040, "Member 'WBP_StatusInfo_Sub_LegendCompRule_C_SetIrregularRuleGadgetInfo::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_LegendCompRule_C_SetIrregularRuleGadgetInfo, Temp_int_Variable_1) == 0x000044, "Member 'WBP_StatusInfo_Sub_LegendCompRule_C_SetIrregularRuleGadgetInfo::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_LegendCompRule_C_SetIrregularRuleGadgetInfo, Temp_int_Variable_2) == 0x000048, "Member 'WBP_StatusInfo_Sub_LegendCompRule_C_SetIrregularRuleGadgetInfo::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_LegendCompRule_C_SetIrregularRuleGadgetInfo, K2Node_Select_Default) == 0x00004C, "Member 'WBP_StatusInfo_Sub_LegendCompRule_C_SetIrregularRuleGadgetInfo::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_Sub_LegendCompRule_C_SetIrregularRuleGadgetInfo;
 
 // Function WBP_StatusInfo_Sub_LegendCompRule.WBP_StatusInfo_Sub_LegendCompRule_C.SetIrregularRuleTitleAndDetail
 // 0x0060 (0x0060 - 0x0000)
@@ -102,12 +81,7 @@ public:
 	class FText                                   Temp_text_Variable;                                // 0x0040(0x0010)()
 	class FText                                   K2Node_Select_Default;                             // 0x0050(0x0010)()
 };
-static_assert(alignof(WBP_StatusInfo_Sub_LegendCompRule_C_SetIrregularRuleTitleAndDetail) == 0x000008, "Wrong alignment on WBP_StatusInfo_Sub_LegendCompRule_C_SetIrregularRuleTitleAndDetail");
-static_assert(sizeof(WBP_StatusInfo_Sub_LegendCompRule_C_SetIrregularRuleTitleAndDetail) == 0x000060, "Wrong size on WBP_StatusInfo_Sub_LegendCompRule_C_SetIrregularRuleTitleAndDetail");
-static_assert(offsetof(WBP_StatusInfo_Sub_LegendCompRule_C_SetIrregularRuleTitleAndDetail, LegendCompeIrregularRuleInfoDispData) == 0x000000, "Member 'WBP_StatusInfo_Sub_LegendCompRule_C_SetIrregularRuleTitleAndDetail::LegendCompeIrregularRuleInfoDispData' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_LegendCompRule_C_SetIrregularRuleTitleAndDetail, Temp_byte_Variable) == 0x000038, "Member 'WBP_StatusInfo_Sub_LegendCompRule_C_SetIrregularRuleTitleAndDetail::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_LegendCompRule_C_SetIrregularRuleTitleAndDetail, Temp_text_Variable) == 0x000040, "Member 'WBP_StatusInfo_Sub_LegendCompRule_C_SetIrregularRuleTitleAndDetail::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_LegendCompRule_C_SetIrregularRuleTitleAndDetail, K2Node_Select_Default) == 0x000050, "Member 'WBP_StatusInfo_Sub_LegendCompRule_C_SetIrregularRuleTitleAndDetail::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_Sub_LegendCompRule_C_SetIrregularRuleTitleAndDetail;
 
 // Function WBP_StatusInfo_Sub_LegendCompRule.WBP_StatusInfo_Sub_LegendCompRule_C.SetNgGadgetDetail
 // 0x0080 (0x0080 - 0x0000)
@@ -127,18 +101,7 @@ public:
 	class UWBP_StatusInfo_Sub_NGGadjet_C*         CallFunc_Array_Get_Item;                           // 0x0070(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_Sub_LegendCompRule_C_SetNgGadgetDetail) == 0x000008, "Wrong alignment on WBP_StatusInfo_Sub_LegendCompRule_C_SetNgGadgetDetail");
-static_assert(sizeof(WBP_StatusInfo_Sub_LegendCompRule_C_SetNgGadgetDetail) == 0x000080, "Wrong size on WBP_StatusInfo_Sub_LegendCompRule_C_SetNgGadgetDetail");
-static_assert(offsetof(WBP_StatusInfo_Sub_LegendCompRule_C_SetNgGadgetDetail, DispData_0) == 0x000000, "Member 'WBP_StatusInfo_Sub_LegendCompRule_C_SetNgGadgetDetail::DispData_0' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_LegendCompRule_C_SetNgGadgetDetail, Temp_int_Array_Index_Variable) == 0x000038, "Member 'WBP_StatusInfo_Sub_LegendCompRule_C_SetNgGadgetDetail::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_LegendCompRule_C_SetNgGadgetDetail, Temp_int_Loop_Counter_Variable) == 0x00003C, "Member 'WBP_StatusInfo_Sub_LegendCompRule_C_SetNgGadgetDetail::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_LegendCompRule_C_SetNgGadgetDetail, CallFunc_GetNgGadgetDispTextByWidgetIndex_ReturnValue) == 0x000040, "Member 'WBP_StatusInfo_Sub_LegendCompRule_C_SetNgGadgetDetail::CallFunc_GetNgGadgetDispTextByWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_LegendCompRule_C_SetNgGadgetDetail, CallFunc_TextIsEmpty_ReturnValue) == 0x000050, "Member 'WBP_StatusInfo_Sub_LegendCompRule_C_SetNgGadgetDetail::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_LegendCompRule_C_SetNgGadgetDetail, CallFunc_Add_IntInt_ReturnValue) == 0x000054, "Member 'WBP_StatusInfo_Sub_LegendCompRule_C_SetNgGadgetDetail::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_LegendCompRule_C_SetNgGadgetDetail, K2Node_MakeArray_Array) == 0x000058, "Member 'WBP_StatusInfo_Sub_LegendCompRule_C_SetNgGadgetDetail::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_LegendCompRule_C_SetNgGadgetDetail, CallFunc_Array_Length_ReturnValue) == 0x000068, "Member 'WBP_StatusInfo_Sub_LegendCompRule_C_SetNgGadgetDetail::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_LegendCompRule_C_SetNgGadgetDetail, CallFunc_Array_Get_Item) == 0x000070, "Member 'WBP_StatusInfo_Sub_LegendCompRule_C_SetNgGadgetDetail::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_LegendCompRule_C_SetNgGadgetDetail, CallFunc_Less_IntInt_ReturnValue) == 0x000078, "Member 'WBP_StatusInfo_Sub_LegendCompRule_C_SetNgGadgetDetail::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_Sub_LegendCompRule_C_SetNgGadgetDetail;
 
 }
 

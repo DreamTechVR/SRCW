@@ -44,25 +44,7 @@ public:
 	class FText                                   K2Node_Select_Default;                             // 0x00C8(0x0010)(ConstParm)
 	class FText                                   K2Node_Select_Default_1;                           // 0x00D8(0x0010)(ConstParm)
 };
-static_assert(alignof(WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose) == 0x000008, "Wrong alignment on WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose");
-static_assert(sizeof(WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose) == 0x0000E8, "Wrong size on WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose");
-static_assert(offsetof(WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose, EntryPoint) == 0x000000, "Member 'WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose, CallFunc_MakeLiteralText_ReturnValue) == 0x000008, "Member 'WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose, Temp_byte_Variable) == 0x000018, "Member 'WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose, Temp_text_Variable) == 0x000020, "Member 'WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose, Temp_text_Variable_1) == 0x000030, "Member 'WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose::Temp_text_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose, Temp_text_Variable_2) == 0x000040, "Member 'WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose::Temp_text_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose, Temp_byte_Variable_1) == 0x000050, "Member 'WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose, Temp_text_Variable_3) == 0x000058, "Member 'WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose::Temp_text_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose, K2Node_CustomEvent_WinLoseID_1) == 0x000068, "Member 'WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose::K2Node_CustomEvent_WinLoseID_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose, CallFunc_MakeLiteralText_ReturnValue_1) == 0x000070, "Member 'WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose, CallFunc_MakeLiteralText_ReturnValue_2) == 0x000080, "Member 'WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose::CallFunc_MakeLiteralText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose, K2Node_CustomEvent_WinLoseID) == 0x000090, "Member 'WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose::K2Node_CustomEvent_WinLoseID' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose, CallFunc_MakeLiteralText_ReturnValue_3) == 0x000098, "Member 'WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose::CallFunc_MakeLiteralText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose, CallFunc_MakeLiteralText_ReturnValue_4) == 0x0000A8, "Member 'WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose::CallFunc_MakeLiteralText_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose, CallFunc_MakeLiteralText_ReturnValue_5) == 0x0000B8, "Member 'WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose::CallFunc_MakeLiteralText_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose, K2Node_Select_Default) == 0x0000C8, "Member 'WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose, K2Node_Select_Default_1) == 0x0000D8, "Member 'WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose::K2Node_Select_Default_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_Sub_WinLose_C_ExecuteUbergraph_WBP_TimeTrial_Sub_WinLose;
 
 // Function WBP_TimeTrial_Sub_WinLose.WBP_TimeTrial_Sub_WinLose_C.SetLoseText
 // 0x0001 (0x0001 - 0x0000)
@@ -71,9 +53,7 @@ struct WBP_TimeTrial_Sub_WinLose_C_SetLoseText final
 public:
 	ETimeTrialWinLoseDispId                       WinLoseID;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TimeTrial_Sub_WinLose_C_SetLoseText) == 0x000001, "Wrong alignment on WBP_TimeTrial_Sub_WinLose_C_SetLoseText");
-static_assert(sizeof(WBP_TimeTrial_Sub_WinLose_C_SetLoseText) == 0x000001, "Wrong size on WBP_TimeTrial_Sub_WinLose_C_SetLoseText");
-static_assert(offsetof(WBP_TimeTrial_Sub_WinLose_C_SetLoseText, WinLoseID) == 0x000000, "Member 'WBP_TimeTrial_Sub_WinLose_C_SetLoseText::WinLoseID' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_Sub_WinLose_C_SetLoseText;
 
 // Function WBP_TimeTrial_Sub_WinLose.WBP_TimeTrial_Sub_WinLose_C.SetWinText
 // 0x0001 (0x0001 - 0x0000)
@@ -82,9 +62,7 @@ struct WBP_TimeTrial_Sub_WinLose_C_SetWinText final
 public:
 	ETimeTrialWinLoseDispId                       WinLoseID;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TimeTrial_Sub_WinLose_C_SetWinText) == 0x000001, "Wrong alignment on WBP_TimeTrial_Sub_WinLose_C_SetWinText");
-static_assert(sizeof(WBP_TimeTrial_Sub_WinLose_C_SetWinText) == 0x000001, "Wrong size on WBP_TimeTrial_Sub_WinLose_C_SetWinText");
-static_assert(offsetof(WBP_TimeTrial_Sub_WinLose_C_SetWinText, WinLoseID) == 0x000000, "Member 'WBP_TimeTrial_Sub_WinLose_C_SetWinText::WinLoseID' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_Sub_WinLose_C_SetWinText;
 
 }
 

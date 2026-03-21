@@ -31,16 +31,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_RaceBefore_VoltageMaxInfo_C_ExecuteUbergraph_WBP_RaceBefore_VoltageMaxInfo) == 0x000008, "Wrong alignment on WBP_RaceBefore_VoltageMaxInfo_C_ExecuteUbergraph_WBP_RaceBefore_VoltageMaxInfo");
-static_assert(sizeof(WBP_RaceBefore_VoltageMaxInfo_C_ExecuteUbergraph_WBP_RaceBefore_VoltageMaxInfo) == 0x000078, "Wrong size on WBP_RaceBefore_VoltageMaxInfo_C_ExecuteUbergraph_WBP_RaceBefore_VoltageMaxInfo");
-static_assert(offsetof(WBP_RaceBefore_VoltageMaxInfo_C_ExecuteUbergraph_WBP_RaceBefore_VoltageMaxInfo, EntryPoint) == 0x000000, "Member 'WBP_RaceBefore_VoltageMaxInfo_C_ExecuteUbergraph_WBP_RaceBefore_VoltageMaxInfo::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_VoltageMaxInfo_C_ExecuteUbergraph_WBP_RaceBefore_VoltageMaxInfo, CallFunc_GetFestaChanceUpRatio_ReturnValue) == 0x000004, "Member 'WBP_RaceBefore_VoltageMaxInfo_C_ExecuteUbergraph_WBP_RaceBefore_VoltageMaxInfo::CallFunc_GetFestaChanceUpRatio_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_VoltageMaxInfo_C_ExecuteUbergraph_WBP_RaceBefore_VoltageMaxInfo, CallFunc_GetFestaChanceUpRatioText_ReturnValue) == 0x000008, "Member 'WBP_RaceBefore_VoltageMaxInfo_C_ExecuteUbergraph_WBP_RaceBefore_VoltageMaxInfo::CallFunc_GetFestaChanceUpRatioText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_VoltageMaxInfo_C_ExecuteUbergraph_WBP_RaceBefore_VoltageMaxInfo, K2Node_CreateDelegate_OutputDelegate) == 0x000018, "Member 'WBP_RaceBefore_VoltageMaxInfo_C_ExecuteUbergraph_WBP_RaceBefore_VoltageMaxInfo::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_VoltageMaxInfo_C_ExecuteUbergraph_WBP_RaceBefore_VoltageMaxInfo, K2Node_Event_MyGeometry) == 0x000028, "Member 'WBP_RaceBefore_VoltageMaxInfo_C_ExecuteUbergraph_WBP_RaceBefore_VoltageMaxInfo::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_VoltageMaxInfo_C_ExecuteUbergraph_WBP_RaceBefore_VoltageMaxInfo, K2Node_Event_InDeltaTime) == 0x000060, "Member 'WBP_RaceBefore_VoltageMaxInfo_C_ExecuteUbergraph_WBP_RaceBefore_VoltageMaxInfo::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_VoltageMaxInfo_C_ExecuteUbergraph_WBP_RaceBefore_VoltageMaxInfo, CallFunc_PlayAnimation_ReturnValue) == 0x000068, "Member 'WBP_RaceBefore_VoltageMaxInfo_C_ExecuteUbergraph_WBP_RaceBefore_VoltageMaxInfo::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_VoltageMaxInfo_C_ExecuteUbergraph_WBP_RaceBefore_VoltageMaxInfo, CallFunc_PlayAnimation_ReturnValue_1) == 0x000070, "Member 'WBP_RaceBefore_VoltageMaxInfo_C_ExecuteUbergraph_WBP_RaceBefore_VoltageMaxInfo::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_RaceBefore_VoltageMaxInfo_C_ExecuteUbergraph_WBP_RaceBefore_VoltageMaxInfo;
 
 // Function WBP_RaceBefore_VoltageMaxInfo.WBP_RaceBefore_VoltageMaxInfo_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -50,10 +41,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_RaceBefore_VoltageMaxInfo_C_Tick) == 0x000004, "Wrong alignment on WBP_RaceBefore_VoltageMaxInfo_C_Tick");
-static_assert(sizeof(WBP_RaceBefore_VoltageMaxInfo_C_Tick) == 0x00003C, "Wrong size on WBP_RaceBefore_VoltageMaxInfo_C_Tick");
-static_assert(offsetof(WBP_RaceBefore_VoltageMaxInfo_C_Tick, MyGeometry) == 0x000000, "Member 'WBP_RaceBefore_VoltageMaxInfo_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_VoltageMaxInfo_C_Tick, InDeltaTime) == 0x000038, "Member 'WBP_RaceBefore_VoltageMaxInfo_C_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_RaceBefore_VoltageMaxInfo_C_Tick;
 
 }
 

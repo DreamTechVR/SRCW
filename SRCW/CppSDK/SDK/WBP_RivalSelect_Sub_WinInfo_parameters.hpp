@@ -21,9 +21,7 @@ struct WBP_RivalSelect_Sub_WinInfo_C_ExecuteUbergraph_WBP_RivalSelect_Sub_WinInf
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_RivalSelect_Sub_WinInfo_C_ExecuteUbergraph_WBP_RivalSelect_Sub_WinInfo) == 0x000004, "Wrong alignment on WBP_RivalSelect_Sub_WinInfo_C_ExecuteUbergraph_WBP_RivalSelect_Sub_WinInfo");
-static_assert(sizeof(WBP_RivalSelect_Sub_WinInfo_C_ExecuteUbergraph_WBP_RivalSelect_Sub_WinInfo) == 0x000004, "Wrong size on WBP_RivalSelect_Sub_WinInfo_C_ExecuteUbergraph_WBP_RivalSelect_Sub_WinInfo");
-static_assert(offsetof(WBP_RivalSelect_Sub_WinInfo_C_ExecuteUbergraph_WBP_RivalSelect_Sub_WinInfo, EntryPoint) == 0x000000, "Member 'WBP_RivalSelect_Sub_WinInfo_C_ExecuteUbergraph_WBP_RivalSelect_Sub_WinInfo::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_RivalSelect_Sub_WinInfo_C_ExecuteUbergraph_WBP_RivalSelect_Sub_WinInfo;
 
 }
 

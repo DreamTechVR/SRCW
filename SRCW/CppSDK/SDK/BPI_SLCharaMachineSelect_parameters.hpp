@@ -23,9 +23,7 @@ struct BPI_SLCharaMachineSelect_C_GetCameraActor final
 public:
 	class AActor*                                 CameraActor;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPI_SLCharaMachineSelect_C_GetCameraActor) == 0x000008, "Wrong alignment on BPI_SLCharaMachineSelect_C_GetCameraActor");
-static_assert(sizeof(BPI_SLCharaMachineSelect_C_GetCameraActor) == 0x000008, "Wrong size on BPI_SLCharaMachineSelect_C_GetCameraActor");
-static_assert(offsetof(BPI_SLCharaMachineSelect_C_GetCameraActor, CameraActor) == 0x000000, "Member 'BPI_SLCharaMachineSelect_C_GetCameraActor::CameraActor' has a wrong offset!");
+DUMPER7_ASSERTS_BPI_SLCharaMachineSelect_C_GetCameraActor;
 
 // Function BPI_SLCharaMachineSelect.BPI_SLCharaMachineSelect_C.GetRacerTransform
 // 0x0070 (0x0070 - 0x0000)
@@ -39,13 +37,7 @@ public:
 	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             Transform;                                         // 0x0010(0x0060)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPI_SLCharaMachineSelect_C_GetRacerTransform) == 0x000010, "Wrong alignment on BPI_SLCharaMachineSelect_C_GetRacerTransform");
-static_assert(sizeof(BPI_SLCharaMachineSelect_C_GetRacerTransform) == 0x000070, "Wrong size on BPI_SLCharaMachineSelect_C_GetRacerTransform");
-static_assert(offsetof(BPI_SLCharaMachineSelect_C_GetRacerTransform, PlayerIndex) == 0x000000, "Member 'BPI_SLCharaMachineSelect_C_GetRacerTransform::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(BPI_SLCharaMachineSelect_C_GetRacerTransform, PlayerCount) == 0x000004, "Member 'BPI_SLCharaMachineSelect_C_GetRacerTransform::PlayerCount' has a wrong offset!");
-static_assert(offsetof(BPI_SLCharaMachineSelect_C_GetRacerTransform, bCharaSelect) == 0x000008, "Member 'BPI_SLCharaMachineSelect_C_GetRacerTransform::bCharaSelect' has a wrong offset!");
-static_assert(offsetof(BPI_SLCharaMachineSelect_C_GetRacerTransform, bOption) == 0x000009, "Member 'BPI_SLCharaMachineSelect_C_GetRacerTransform::bOption' has a wrong offset!");
-static_assert(offsetof(BPI_SLCharaMachineSelect_C_GetRacerTransform, Transform) == 0x000010, "Member 'BPI_SLCharaMachineSelect_C_GetRacerTransform::Transform' has a wrong offset!");
+DUMPER7_ASSERTS_BPI_SLCharaMachineSelect_C_GetRacerTransform;
 
 // Function BPI_SLCharaMachineSelect.BPI_SLCharaMachineSelect_C.StartMoveCameraTransformAndParam
 // 0x0002 (0x0002 - 0x0000)
@@ -55,10 +47,7 @@ public:
 	bool                                          bCharaSelect;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bNoLerp;                                           // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPI_SLCharaMachineSelect_C_StartMoveCameraTransformAndParam) == 0x000001, "Wrong alignment on BPI_SLCharaMachineSelect_C_StartMoveCameraTransformAndParam");
-static_assert(sizeof(BPI_SLCharaMachineSelect_C_StartMoveCameraTransformAndParam) == 0x000002, "Wrong size on BPI_SLCharaMachineSelect_C_StartMoveCameraTransformAndParam");
-static_assert(offsetof(BPI_SLCharaMachineSelect_C_StartMoveCameraTransformAndParam, bCharaSelect) == 0x000000, "Member 'BPI_SLCharaMachineSelect_C_StartMoveCameraTransformAndParam::bCharaSelect' has a wrong offset!");
-static_assert(offsetof(BPI_SLCharaMachineSelect_C_StartMoveCameraTransformAndParam, bNoLerp) == 0x000001, "Member 'BPI_SLCharaMachineSelect_C_StartMoveCameraTransformAndParam::bNoLerp' has a wrong offset!");
+DUMPER7_ASSERTS_BPI_SLCharaMachineSelect_C_StartMoveCameraTransformAndParam;
 
 }
 

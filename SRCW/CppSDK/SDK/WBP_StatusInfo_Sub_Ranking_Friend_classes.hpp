@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -72,47 +72,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_StatusInfo_Sub_Ranking_Friend_C">();
+		BP_STATIC_CLASS_IMPL("WBP_StatusInfo_Sub_Ranking_Friend_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_StatusInfo_Sub_Ranking_Friend_C")
 	}
 	static class UWBP_StatusInfo_Sub_Ranking_Friend_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_StatusInfo_Sub_Ranking_Friend_C>();
 	}
 };
-static_assert(alignof(UWBP_StatusInfo_Sub_Ranking_Friend_C) == 0x000008, "Wrong alignment on UWBP_StatusInfo_Sub_Ranking_Friend_C");
-static_assert(sizeof(UWBP_StatusInfo_Sub_Ranking_Friend_C) == 0x0004D0, "Wrong size on UWBP_StatusInfo_Sub_Ranking_Friend_C");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Ranking_Friend_C, UberGraphFrame) == 0x0003C8, "Member 'UWBP_StatusInfo_Sub_Ranking_Friend_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Ranking_Friend_C, base) == 0x0003D0, "Member 'UWBP_StatusInfo_Sub_Ranking_Friend_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Ranking_Friend_C, base_1) == 0x0003D8, "Member 'UWBP_StatusInfo_Sub_Ranking_Friend_C::base_1' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Ranking_Friend_C, base_2) == 0x0003E0, "Member 'UWBP_StatusInfo_Sub_Ranking_Friend_C::base_2' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Ranking_Friend_C, Base_old) == 0x0003E8, "Member 'UWBP_StatusInfo_Sub_Ranking_Friend_C::Base_old' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Ranking_Friend_C, BG_UV_01) == 0x0003F0, "Member 'UWBP_StatusInfo_Sub_Ranking_Friend_C::BG_UV_01' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Ranking_Friend_C, BG_UV_02) == 0x0003F8, "Member 'UWBP_StatusInfo_Sub_Ranking_Friend_C::BG_UV_02' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Ranking_Friend_C, BG_UV_Arc) == 0x000400, "Member 'UWBP_StatusInfo_Sub_Ranking_Friend_C::BG_UV_Arc' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Ranking_Friend_C, BtnBase) == 0x000408, "Member 'UWBP_StatusInfo_Sub_Ranking_Friend_C::BtnBase' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Ranking_Friend_C, MouseInteraction) == 0x000410, "Member 'UWBP_StatusInfo_Sub_Ranking_Friend_C::MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Ranking_Friend_C, Overlay_0) == 0x000418, "Member 'UWBP_StatusInfo_Sub_Ranking_Friend_C::Overlay_0' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Ranking_Friend_C, RaceFlag_Left) == 0x000420, "Member 'UWBP_StatusInfo_Sub_Ranking_Friend_C::RaceFlag_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Ranking_Friend_C, RaceFlag_Right) == 0x000428, "Member 'UWBP_StatusInfo_Sub_Ranking_Friend_C::RaceFlag_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Ranking_Friend_C, TXT_ErrorText) == 0x000430, "Member 'UWBP_StatusInfo_Sub_Ranking_Friend_C::TXT_ErrorText' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Ranking_Friend_C, TXT_OtherDetaDay_old) == 0x000438, "Member 'UWBP_StatusInfo_Sub_Ranking_Friend_C::TXT_OtherDetaDay_old' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Ranking_Friend_C, TXT_Platform) == 0x000440, "Member 'UWBP_StatusInfo_Sub_Ranking_Friend_C::TXT_Platform' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Ranking_Friend_C, TXT_RankingName) == 0x000448, "Member 'UWBP_StatusInfo_Sub_Ranking_Friend_C::TXT_RankingName' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Ranking_Friend_C, WBP_CMN_ControllerBtn) == 0x000450, "Member 'UWBP_StatusInfo_Sub_Ranking_Friend_C::WBP_CMN_ControllerBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Ranking_Friend_C, WBP_StatusInfo_Sub_RankingTable_10) == 0x000458, "Member 'UWBP_StatusInfo_Sub_Ranking_Friend_C::WBP_StatusInfo_Sub_RankingTable_10' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Ranking_Friend_C, WBP_StatusInfo_Sub_RankingTable_11) == 0x000460, "Member 'UWBP_StatusInfo_Sub_Ranking_Friend_C::WBP_StatusInfo_Sub_RankingTable_11' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Ranking_Friend_C, WBP_StatusInfo_Sub_RankingTable_12) == 0x000468, "Member 'UWBP_StatusInfo_Sub_Ranking_Friend_C::WBP_StatusInfo_Sub_RankingTable_12' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Ranking_Friend_C, WBP_StatusInfo_Sub_RankingTable_01) == 0x000470, "Member 'UWBP_StatusInfo_Sub_Ranking_Friend_C::WBP_StatusInfo_Sub_RankingTable_01' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Ranking_Friend_C, WBP_StatusInfo_Sub_RankingTable_02) == 0x000478, "Member 'UWBP_StatusInfo_Sub_Ranking_Friend_C::WBP_StatusInfo_Sub_RankingTable_02' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Ranking_Friend_C, WBP_StatusInfo_Sub_RankingTable_03) == 0x000480, "Member 'UWBP_StatusInfo_Sub_Ranking_Friend_C::WBP_StatusInfo_Sub_RankingTable_03' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Ranking_Friend_C, WBP_StatusInfo_Sub_RankingTable_04) == 0x000488, "Member 'UWBP_StatusInfo_Sub_Ranking_Friend_C::WBP_StatusInfo_Sub_RankingTable_04' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Ranking_Friend_C, WBP_StatusInfo_Sub_RankingTable_05) == 0x000490, "Member 'UWBP_StatusInfo_Sub_Ranking_Friend_C::WBP_StatusInfo_Sub_RankingTable_05' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Ranking_Friend_C, WBP_StatusInfo_Sub_RankingTable_06) == 0x000498, "Member 'UWBP_StatusInfo_Sub_Ranking_Friend_C::WBP_StatusInfo_Sub_RankingTable_06' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Ranking_Friend_C, WBP_StatusInfo_Sub_RankingTable_07) == 0x0004A0, "Member 'UWBP_StatusInfo_Sub_Ranking_Friend_C::WBP_StatusInfo_Sub_RankingTable_07' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Ranking_Friend_C, WBP_StatusInfo_Sub_RankingTable_08) == 0x0004A8, "Member 'UWBP_StatusInfo_Sub_Ranking_Friend_C::WBP_StatusInfo_Sub_RankingTable_08' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Ranking_Friend_C, WBP_StatusInfo_Sub_RankingTable_09) == 0x0004B0, "Member 'UWBP_StatusInfo_Sub_Ranking_Friend_C::WBP_StatusInfo_Sub_RankingTable_09' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Ranking_Friend_C, WBP_System_Sub_LoadingSonic) == 0x0004B8, "Member 'UWBP_StatusInfo_Sub_Ranking_Friend_C::WBP_System_Sub_LoadingSonic' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Ranking_Friend_C, FriendRankClickDispatcher) == 0x0004C0, "Member 'UWBP_StatusInfo_Sub_Ranking_Friend_C::FriendRankClickDispatcher' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_StatusInfo_Sub_Ranking_Friend_C;
 
 }
 

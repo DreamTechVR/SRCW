@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -35,17 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_TimeTrialReplayLoadState_C">();
+		BP_STATIC_CLASS_IMPL("BPC_TimeTrialReplayLoadState_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_TimeTrialReplayLoadState_C")
 	}
 	static class UBPC_TimeTrialReplayLoadState_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_TimeTrialReplayLoadState_C>();
 	}
 };
-static_assert(alignof(UBPC_TimeTrialReplayLoadState_C) == 0x000008, "Wrong alignment on UBPC_TimeTrialReplayLoadState_C");
-static_assert(sizeof(UBPC_TimeTrialReplayLoadState_C) == 0x000138, "Wrong size on UBPC_TimeTrialReplayLoadState_C");
-static_assert(offsetof(UBPC_TimeTrialReplayLoadState_C, UberGraphFrame) == 0x000128, "Member 'UBPC_TimeTrialReplayLoadState_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialReplayLoadState_C, TimeTrialSequence) == 0x000130, "Member 'UBPC_TimeTrialReplayLoadState_C::TimeTrialSequence' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_TimeTrialReplayLoadState_C;
 
 }
 

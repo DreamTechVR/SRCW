@@ -23,9 +23,7 @@ struct WBP_RaceBefore_Sub_BasicRoundInfo_C_SetGrandPrix final
 public:
 	EGrandPrixId                                  newParam;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_RaceBefore_Sub_BasicRoundInfo_C_SetGrandPrix) == 0x000001, "Wrong alignment on WBP_RaceBefore_Sub_BasicRoundInfo_C_SetGrandPrix");
-static_assert(sizeof(WBP_RaceBefore_Sub_BasicRoundInfo_C_SetGrandPrix) == 0x000001, "Wrong size on WBP_RaceBefore_Sub_BasicRoundInfo_C_SetGrandPrix");
-static_assert(offsetof(WBP_RaceBefore_Sub_BasicRoundInfo_C_SetGrandPrix, newParam) == 0x000000, "Member 'WBP_RaceBefore_Sub_BasicRoundInfo_C_SetGrandPrix::newParam' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_RaceBefore_Sub_BasicRoundInfo_C_SetGrandPrix;
 
 // Function WBP_RaceBefore_Sub_BasicRoundInfo.WBP_RaceBefore_Sub_BasicRoundInfo_C.SetRoundAndStageName
 // 0x0020 (0x0020 - 0x0000)
@@ -35,10 +33,7 @@ public:
 	class FText                                   InRoundName;                                       // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	class FText                                   InStageName;                                       // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_RaceBefore_Sub_BasicRoundInfo_C_SetRoundAndStageName) == 0x000008, "Wrong alignment on WBP_RaceBefore_Sub_BasicRoundInfo_C_SetRoundAndStageName");
-static_assert(sizeof(WBP_RaceBefore_Sub_BasicRoundInfo_C_SetRoundAndStageName) == 0x000020, "Wrong size on WBP_RaceBefore_Sub_BasicRoundInfo_C_SetRoundAndStageName");
-static_assert(offsetof(WBP_RaceBefore_Sub_BasicRoundInfo_C_SetRoundAndStageName, InRoundName) == 0x000000, "Member 'WBP_RaceBefore_Sub_BasicRoundInfo_C_SetRoundAndStageName::InRoundName' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_Sub_BasicRoundInfo_C_SetRoundAndStageName, InStageName) == 0x000010, "Member 'WBP_RaceBefore_Sub_BasicRoundInfo_C_SetRoundAndStageName::InStageName' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_RaceBefore_Sub_BasicRoundInfo_C_SetRoundAndStageName;
 
 // Function WBP_RaceBefore_Sub_BasicRoundInfo.WBP_RaceBefore_Sub_BasicRoundInfo_C.SetStageIconTexture
 // 0x0010 (0x0010 - 0x0000)
@@ -48,10 +43,7 @@ public:
 	class UTexture2D*                             Texture;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_RaceBefore_Sub_BasicRoundInfo_C_SetStageIconTexture) == 0x000008, "Wrong alignment on WBP_RaceBefore_Sub_BasicRoundInfo_C_SetStageIconTexture");
-static_assert(sizeof(WBP_RaceBefore_Sub_BasicRoundInfo_C_SetStageIconTexture) == 0x000010, "Wrong size on WBP_RaceBefore_Sub_BasicRoundInfo_C_SetStageIconTexture");
-static_assert(offsetof(WBP_RaceBefore_Sub_BasicRoundInfo_C_SetStageIconTexture, Texture) == 0x000000, "Member 'WBP_RaceBefore_Sub_BasicRoundInfo_C_SetStageIconTexture::Texture' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_Sub_BasicRoundInfo_C_SetStageIconTexture, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'WBP_RaceBefore_Sub_BasicRoundInfo_C_SetStageIconTexture::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_RaceBefore_Sub_BasicRoundInfo_C_SetStageIconTexture;
 
 }
 

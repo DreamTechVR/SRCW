@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -37,19 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_RaceResultReward_C">();
+		BP_STATIC_CLASS_IMPL("BPC_RaceResultReward_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_RaceResultReward_C")
 	}
 	static class UBPC_RaceResultReward_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_RaceResultReward_C>();
 	}
 };
-static_assert(alignof(UBPC_RaceResultReward_C) == 0x000008, "Wrong alignment on UBPC_RaceResultReward_C");
-static_assert(sizeof(UBPC_RaceResultReward_C) == 0x000128, "Wrong size on UBPC_RaceResultReward_C");
-static_assert(offsetof(UBPC_RaceResultReward_C, UberGraphFrame) == 0x000108, "Member 'UBPC_RaceResultReward_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceResultReward_C, OwnerSeq) == 0x000110, "Member 'UBPC_RaceResultReward_C::OwnerSeq' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceResultReward_C, FestaResultFlow) == 0x000118, "Member 'UBPC_RaceResultReward_C::FestaResultFlow' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceResultReward_C, NomalInited) == 0x000120, "Member 'UBPC_RaceResultReward_C::NomalInited' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_RaceResultReward_C;
 
 }
 

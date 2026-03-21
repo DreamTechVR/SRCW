@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_RecoveryRing_Exit_C">();
+		BP_STATIC_CLASS_IMPL("BP_RecoveryRing_Exit_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_RecoveryRing_Exit_C")
 	}
 	static class ABP_RecoveryRing_Exit_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_RecoveryRing_Exit_C>();
 	}
 };
-static_assert(alignof(ABP_RecoveryRing_Exit_C) == 0x000008, "Wrong alignment on ABP_RecoveryRing_Exit_C");
-static_assert(sizeof(ABP_RecoveryRing_Exit_C) == 0x0002E0, "Wrong size on ABP_RecoveryRing_Exit_C");
-static_assert(offsetof(ABP_RecoveryRing_Exit_C, UberGraphFrame) == 0x0002D8, "Member 'ABP_RecoveryRing_Exit_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_RecoveryRing_Exit_C;
 
 }
 

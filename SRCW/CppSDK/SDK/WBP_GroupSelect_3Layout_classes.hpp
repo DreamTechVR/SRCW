@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK
@@ -95,57 +95,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GroupSelect_3Layout_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GroupSelect_3Layout_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GroupSelect_3Layout_C")
 	}
 	static class UWBP_GroupSelect_3Layout_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GroupSelect_3Layout_C>();
 	}
 };
-static_assert(alignof(UWBP_GroupSelect_3Layout_C) == 0x000008, "Wrong alignment on UWBP_GroupSelect_3Layout_C");
-static_assert(sizeof(UWBP_GroupSelect_3Layout_C) == 0x0005F0, "Wrong size on UWBP_GroupSelect_3Layout_C");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, UberGraphFrame) == 0x000488, "Member 'UWBP_GroupSelect_3Layout_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, Out) == 0x000490, "Member 'UWBP_GroupSelect_3Layout_C::Out' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, Loop) == 0x000498, "Member 'UWBP_GroupSelect_3Layout_C::Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, In) == 0x0004A0, "Member 'UWBP_GroupSelect_3Layout_C::In' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, Base_Blue) == 0x0004A8, "Member 'UWBP_GroupSelect_3Layout_C::Base_Blue' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, Base_Red) == 0x0004B0, "Member 'UWBP_GroupSelect_3Layout_C::Base_Red' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, Base_Yellow) == 0x0004B8, "Member 'UWBP_GroupSelect_3Layout_C::Base_Yellow' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, BG) == 0x0004C0, "Member 'UWBP_GroupSelect_3Layout_C::BG' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, BG_Black) == 0x0004C8, "Member 'UWBP_GroupSelect_3Layout_C::BG_Black' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, Icon_Blue) == 0x0004D0, "Member 'UWBP_GroupSelect_3Layout_C::Icon_Blue' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, Icon_Red) == 0x0004D8, "Member 'UWBP_GroupSelect_3Layout_C::Icon_Red' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, Icon_Yellow) == 0x0004E0, "Member 'UWBP_GroupSelect_3Layout_C::Icon_Yellow' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, NonActive_Base_Blue) == 0x0004E8, "Member 'UWBP_GroupSelect_3Layout_C::NonActive_Base_Blue' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, NonActive_Base_Random) == 0x0004F0, "Member 'UWBP_GroupSelect_3Layout_C::NonActive_Base_Random' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, NonActive_Base_Red) == 0x0004F8, "Member 'UWBP_GroupSelect_3Layout_C::NonActive_Base_Red' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, OutOfContentButton_80) == 0x000500, "Member 'UWBP_GroupSelect_3Layout_C::OutOfContentButton_80' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, SafeZone) == 0x000508, "Member 'UWBP_GroupSelect_3Layout_C::SafeZone' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, Team1MouseInteraction) == 0x000510, "Member 'UWBP_GroupSelect_3Layout_C::Team1MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, Team2MouseInteraction) == 0x000518, "Member 'UWBP_GroupSelect_3Layout_C::Team2MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, Team3MouseInteraction) == 0x000520, "Member 'UWBP_GroupSelect_3Layout_C::Team3MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, WBP_GroupSelect_Sub_Table_Line_10) == 0x000528, "Member 'UWBP_GroupSelect_3Layout_C::WBP_GroupSelect_Sub_Table_Line_10' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, WBP_GroupSelect_Sub_Table_Line_11) == 0x000530, "Member 'UWBP_GroupSelect_3Layout_C::WBP_GroupSelect_Sub_Table_Line_11' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, WBP_GroupSelect_Sub_Table_Line_12) == 0x000538, "Member 'UWBP_GroupSelect_3Layout_C::WBP_GroupSelect_Sub_Table_Line_12' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, WBP_GroupSelect_Sub_Table_Line_01) == 0x000540, "Member 'UWBP_GroupSelect_3Layout_C::WBP_GroupSelect_Sub_Table_Line_01' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, WBP_GroupSelect_Sub_Table_Line_02) == 0x000548, "Member 'UWBP_GroupSelect_3Layout_C::WBP_GroupSelect_Sub_Table_Line_02' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, WBP_GroupSelect_Sub_Table_Line_03) == 0x000550, "Member 'UWBP_GroupSelect_3Layout_C::WBP_GroupSelect_Sub_Table_Line_03' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, WBP_GroupSelect_Sub_Table_Line_04) == 0x000558, "Member 'UWBP_GroupSelect_3Layout_C::WBP_GroupSelect_Sub_Table_Line_04' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, WBP_GroupSelect_Sub_Table_Line_05) == 0x000560, "Member 'UWBP_GroupSelect_3Layout_C::WBP_GroupSelect_Sub_Table_Line_05' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, WBP_GroupSelect_Sub_Table_Line_06) == 0x000568, "Member 'UWBP_GroupSelect_3Layout_C::WBP_GroupSelect_Sub_Table_Line_06' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, WBP_GroupSelect_Sub_Table_Line_07) == 0x000570, "Member 'UWBP_GroupSelect_3Layout_C::WBP_GroupSelect_Sub_Table_Line_07' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, WBP_GroupSelect_Sub_Table_Line_08) == 0x000578, "Member 'UWBP_GroupSelect_3Layout_C::WBP_GroupSelect_Sub_Table_Line_08' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, WBP_GroupSelect_Sub_Table_Line_09) == 0x000580, "Member 'UWBP_GroupSelect_3Layout_C::WBP_GroupSelect_Sub_Table_Line_09' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, UIEnd) == 0x000588, "Member 'UWBP_GroupSelect_3Layout_C::UIEnd' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, bIsWait) == 0x000598, "Member 'UWBP_GroupSelect_3Layout_C::bIsWait' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, PlayCon2) == 0x0005A0, "Member 'UWBP_GroupSelect_3Layout_C::PlayCon2' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, PlayCon3) == 0x0005A8, "Member 'UWBP_GroupSelect_3Layout_C::PlayCon3' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, PlayCon4) == 0x0005B0, "Member 'UWBP_GroupSelect_3Layout_C::PlayCon4' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, PlayerControllers) == 0x0005B8, "Member 'UWBP_GroupSelect_3Layout_C::PlayerControllers' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, CurrentPlayerCnt) == 0x0005C8, "Member 'UWBP_GroupSelect_3Layout_C::CurrentPlayerCnt' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, WatchPlateAnimationTimerHandle) == 0x0005D0, "Member 'UWBP_GroupSelect_3Layout_C::WatchPlateAnimationTimerHandle' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, AllMoveFinish) == 0x0005D8, "Member 'UWBP_GroupSelect_3Layout_C::AllMoveFinish' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_3Layout_C, bIsStillMoving) == 0x0005E8, "Member 'UWBP_GroupSelect_3Layout_C::bIsStillMoving' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GroupSelect_3Layout_C;
 
 }
 

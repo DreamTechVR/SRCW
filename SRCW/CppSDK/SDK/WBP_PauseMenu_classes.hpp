@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
-#include "UnionUI_classes.hpp"
+#include "UnionSystem_structs.hpp"
 #include "UnionRun_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
+#include "UnionUI_classes.hpp"
 
 
 namespace SDK
@@ -134,68 +134,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_PauseMenu_C">();
+		BP_STATIC_CLASS_IMPL("WBP_PauseMenu_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_PauseMenu_C")
 	}
 	static class UWBP_PauseMenu_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_PauseMenu_C>();
 	}
 };
-static_assert(alignof(UWBP_PauseMenu_C) == 0x000008, "Wrong alignment on UWBP_PauseMenu_C");
-static_assert(sizeof(UWBP_PauseMenu_C) == 0x0005A0, "Wrong size on UWBP_PauseMenu_C");
-static_assert(offsetof(UWBP_PauseMenu_C, UberGraphFrame) == 0x0003D8, "Member 'UWBP_PauseMenu_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, PauseMenu_Out) == 0x0003E0, "Member 'UWBP_PauseMenu_C::PauseMenu_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, PauseMenu_Loop) == 0x0003E8, "Member 'UWBP_PauseMenu_C::PauseMenu_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, PauseMenu_In) == 0x0003F0, "Member 'UWBP_PauseMenu_C::PauseMenu_In' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, HorizontalBox_RSR) == 0x0003F8, "Member 'UWBP_PauseMenu_C::HorizontalBox_RSR' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, Line) == 0x000400, "Member 'UWBP_PauseMenu_C::Line' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, OutOfContentButton) == 0x000408, "Member 'UWBP_PauseMenu_C::OutOfContentButton' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, Overlay_Option_Btn_03_P1) == 0x000410, "Member 'UWBP_PauseMenu_C::Overlay_Option_Btn_03_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, Overlay_Option_Btn_03_P2) == 0x000418, "Member 'UWBP_PauseMenu_C::Overlay_Option_Btn_03_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, Overlay_Option_Btn_03_P3) == 0x000420, "Member 'UWBP_PauseMenu_C::Overlay_Option_Btn_03_P3' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, Overlay_Option_Btn_03_P4) == 0x000428, "Member 'UWBP_PauseMenu_C::Overlay_Option_Btn_03_P4' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, TXT_ClassName) == 0x000430, "Member 'UWBP_PauseMenu_C::TXT_ClassName' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, VBButton) == 0x000438, "Member 'UWBP_PauseMenu_C::VBButton' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, WBP_CMN_PlayerNumber_Big) == 0x000440, "Member 'UWBP_PauseMenu_C::WBP_CMN_PlayerNumber_Big' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, WBP_CMN_PlayerNumber_Big_1P) == 0x000448, "Member 'UWBP_PauseMenu_C::WBP_CMN_PlayerNumber_Big_1P' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, WBP_CMN_PlayerNumber_Big_P2) == 0x000450, "Member 'UWBP_PauseMenu_C::WBP_CMN_PlayerNumber_Big_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, WBP_CMN_PlayerNumber_Big_P3) == 0x000458, "Member 'UWBP_PauseMenu_C::WBP_CMN_PlayerNumber_Big_P3' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, WBP_CMN_PlayerNumber_Big_P4) == 0x000460, "Member 'UWBP_PauseMenu_C::WBP_CMN_PlayerNumber_Big_P4' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, WBP_FooterMenu) == 0x000468, "Member 'UWBP_PauseMenu_C::WBP_FooterMenu' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, WBP_GadgetCustom_Sub_GadgetPlate_P1) == 0x000470, "Member 'UWBP_PauseMenu_C::WBP_GadgetCustom_Sub_GadgetPlate_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, WBP_GadgetCustom_Sub_GadgetPlate_P2) == 0x000478, "Member 'UWBP_PauseMenu_C::WBP_GadgetCustom_Sub_GadgetPlate_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, WBP_GadgetCustom_Sub_GadgetPlate_P3) == 0x000480, "Member 'UWBP_PauseMenu_C::WBP_GadgetCustom_Sub_GadgetPlate_P3' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, WBP_GadgetCustom_Sub_GadgetPlate_P4) == 0x000488, "Member 'UWBP_PauseMenu_C::WBP_GadgetCustom_Sub_GadgetPlate_P4' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, WBP_GadgetCustom_Sub_SkillPlate_P1) == 0x000490, "Member 'UWBP_PauseMenu_C::WBP_GadgetCustom_Sub_SkillPlate_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, WBP_GadgetCustom_Sub_SkillPlate_P2) == 0x000498, "Member 'UWBP_PauseMenu_C::WBP_GadgetCustom_Sub_SkillPlate_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, WBP_GadgetCustom_Sub_SkillPlate_P3) == 0x0004A0, "Member 'UWBP_PauseMenu_C::WBP_GadgetCustom_Sub_SkillPlate_P3' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, WBP_GadgetCustom_Sub_SkillPlate_P4) == 0x0004A8, "Member 'UWBP_PauseMenu_C::WBP_GadgetCustom_Sub_SkillPlate_P4' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, WBP_PauseMenu_Sub_Option_Btn_03_P1) == 0x0004B0, "Member 'UWBP_PauseMenu_C::WBP_PauseMenu_Sub_Option_Btn_03_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, WBP_PauseMenu_Sub_Option_Btn_03_P2) == 0x0004B8, "Member 'UWBP_PauseMenu_C::WBP_PauseMenu_Sub_Option_Btn_03_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, WBP_PauseMenu_Sub_Option_Btn_03_P3) == 0x0004C0, "Member 'UWBP_PauseMenu_C::WBP_PauseMenu_Sub_Option_Btn_03_P3' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, WBP_PauseMenu_Sub_Option_Btn_03_P4) == 0x0004C8, "Member 'UWBP_PauseMenu_C::WBP_PauseMenu_Sub_Option_Btn_03_P4' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, WBP_Result_Sub_RSR_01) == 0x0004D0, "Member 'UWBP_PauseMenu_C::WBP_Result_Sub_RSR_01' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, WBP_Result_Sub_RSR_02) == 0x0004D8, "Member 'UWBP_PauseMenu_C::WBP_Result_Sub_RSR_02' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, WBP_Result_Sub_RSR_03) == 0x0004E0, "Member 'UWBP_PauseMenu_C::WBP_Result_Sub_RSR_03' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, WBP_Result_Sub_RSR_04) == 0x0004E8, "Member 'UWBP_PauseMenu_C::WBP_Result_Sub_RSR_04' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, WBP_Result_Sub_RSR_05) == 0x0004F0, "Member 'UWBP_PauseMenu_C::WBP_Result_Sub_RSR_05' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, WidgetSwitcher_P1) == 0x0004F8, "Member 'UWBP_PauseMenu_C::WidgetSwitcher_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, WidgetSwitcher_P2) == 0x000500, "Member 'UWBP_PauseMenu_C::WidgetSwitcher_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, WidgetSwitcher_P3) == 0x000508, "Member 'UWBP_PauseMenu_C::WidgetSwitcher_P3' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, WidgetSwitcher_P4) == 0x000510, "Member 'UWBP_PauseMenu_C::WidgetSwitcher_P4' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, WS_Icon_Active) == 0x000518, "Member 'UWBP_PauseMenu_C::WS_Icon_Active' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, Owner_Player_Index) == 0x000520, "Member 'UWBP_PauseMenu_C::Owner_Player_Index' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, MenuButtonsPanel) == 0x000528, "Member 'UWBP_PauseMenu_C::MenuButtonsPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, ForceCancelPauseEvent) == 0x000530, "Member 'UWBP_PauseMenu_C::ForceCancelPauseEvent' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, Player_Count) == 0x000540, "Member 'UWBP_PauseMenu_C::Player_Count' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, GadgetPlateArr) == 0x000548, "Member 'UWBP_PauseMenu_C::GadgetPlateArr' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, SkillPlateArr) == 0x000558, "Member 'UWBP_PauseMenu_C::SkillPlateArr' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, PrevBtnWidget) == 0x000568, "Member 'UWBP_PauseMenu_C::PrevBtnWidget' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, OptionHandleAssistArr) == 0x000570, "Member 'UWBP_PauseMenu_C::OptionHandleAssistArr' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, IsDisableFocus) == 0x000580, "Member 'UWBP_PauseMenu_C::IsDisableFocus' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, bIsInputBlocked) == 0x000581, "Member 'UWBP_PauseMenu_C::bIsInputBlocked' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, PauseMenuSequence) == 0x000588, "Member 'UWBP_PauseMenu_C::PauseMenuSequence' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, OnClickedOption) == 0x000590, "Member 'UWBP_PauseMenu_C::OnClickedOption' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_PauseMenu_C;
 
 }
 

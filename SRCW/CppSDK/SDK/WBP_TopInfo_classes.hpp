@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -145,44 +145,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_TopInfo_C">();
+		BP_STATIC_CLASS_IMPL("WBP_TopInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_TopInfo_C")
 	}
 	static class UWBP_TopInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_TopInfo_C>();
 	}
 };
-static_assert(alignof(UWBP_TopInfo_C) == 0x000008, "Wrong alignment on UWBP_TopInfo_C");
-static_assert(sizeof(UWBP_TopInfo_C) == 0x000430, "Wrong size on UWBP_TopInfo_C");
-static_assert(offsetof(UWBP_TopInfo_C, UberGraphFrame) == 0x000330, "Member 'UWBP_TopInfo_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, Page_Right_Scroll) == 0x000338, "Member 'UWBP_TopInfo_C::Page_Right_Scroll' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, Page_Left_Scroll) == 0x000340, "Member 'UWBP_TopInfo_C::Page_Left_Scroll' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, Page_Out) == 0x000348, "Member 'UWBP_TopInfo_C::Page_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, Page_Loop) == 0x000350, "Member 'UWBP_TopInfo_C::Page_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, Page_In) == 0x000358, "Member 'UWBP_TopInfo_C::Page_In' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, Arrow_01) == 0x000360, "Member 'UWBP_TopInfo_C::Arrow_01' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, Arrow_02) == 0x000368, "Member 'UWBP_TopInfo_C::Arrow_02' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, Arrow_03) == 0x000370, "Member 'UWBP_TopInfo_C::Arrow_03' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, Arrow_04) == 0x000378, "Member 'UWBP_TopInfo_C::Arrow_04' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, Black_BG) == 0x000380, "Member 'UWBP_TopInfo_C::Black_BG' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, DSP_Overlay_Arrow) == 0x000388, "Member 'UWBP_TopInfo_C::DSP_Overlay_Arrow' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, MouseInteraction_Back) == 0x000390, "Member 'UWBP_TopInfo_C::MouseInteraction_Back' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, MouseInteraction_Left) == 0x000398, "Member 'UWBP_TopInfo_C::MouseInteraction_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, MouseInteraction_Right) == 0x0003A0, "Member 'UWBP_TopInfo_C::MouseInteraction_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, WBP_TopInfo_Sub_Category) == 0x0003A8, "Member 'UWBP_TopInfo_C::WBP_TopInfo_Sub_Category' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, WBP_TopInfo_Sub_Category_L) == 0x0003B0, "Member 'UWBP_TopInfo_C::WBP_TopInfo_Sub_Category_L' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, WBP_TopInfo_Sub_Category_L_Scroll) == 0x0003B8, "Member 'UWBP_TopInfo_C::WBP_TopInfo_Sub_Category_L_Scroll' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, WBP_TopInfo_Sub_Category_R) == 0x0003C0, "Member 'UWBP_TopInfo_C::WBP_TopInfo_Sub_Category_R' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, WBP_TopInfo_Sub_Category_R_Scroll) == 0x0003C8, "Member 'UWBP_TopInfo_C::WBP_TopInfo_Sub_Category_R_Scroll' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, OnClosed_NextFestaInfo) == 0x0003D0, "Member 'UWBP_TopInfo_C::OnClosed_NextFestaInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, OnClosed_NextPFStore) == 0x0003E0, "Member 'UWBP_TopInfo_C::OnClosed_NextPFStore' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, OnClosed_NoDetail) == 0x0003F0, "Member 'UWBP_TopInfo_C::OnClosed_NoDetail' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, IsAccept) == 0x000400, "Member 'UWBP_TopInfo_C::IsAccept' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, bInAnimEnd) == 0x000401, "Member 'UWBP_TopInfo_C::bInAnimEnd' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, bPlayingPageChangeAnim) == 0x000402, "Member 'UWBP_TopInfo_C::bPlayingPageChangeAnim' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, OnClosed_NextLegendCompeInfo) == 0x000408, "Member 'UWBP_TopInfo_C::OnClosed_NextLegendCompeInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, OnClosed_NextWorldMatchInfo) == 0x000418, "Member 'UWBP_TopInfo_C::OnClosed_NextWorldMatchInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, IsDLCButtonEnable) == 0x000428, "Member 'UWBP_TopInfo_C::IsDLCButtonEnable' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_TopInfo_C;
 
 }
 

@@ -28,15 +28,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_02_C_StartAnimation) == 0x000008, "Wrong alignment on WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_02_C_StartAnimation");
-static_assert(sizeof(WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_02_C_StartAnimation) == 0x000030, "Wrong size on WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_02_C_StartAnimation");
-static_assert(offsetof(WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_02_C_StartAnimation, Normal) == 0x000000, "Member 'WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_02_C_StartAnimation::Normal' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_02_C_StartAnimation, Special) == 0x000001, "Member 'WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_02_C_StartAnimation::Special' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_02_C_StartAnimation, End) == 0x000002, "Member 'WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_02_C_StartAnimation::End' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_02_C_StartAnimation, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_02_C_StartAnimation::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_02_C_StartAnimation, CallFunc_MakeLiteralText_ReturnValue) == 0x000010, "Member 'WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_02_C_StartAnimation::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_02_C_StartAnimation, CallFunc_PlayAnimation_ReturnValue_1) == 0x000020, "Member 'WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_02_C_StartAnimation::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_02_C_StartAnimation, CallFunc_PlayAnimation_ReturnValue_2) == 0x000028, "Member 'WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_02_C_StartAnimation::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_02_C_StartAnimation;
 
 }
 

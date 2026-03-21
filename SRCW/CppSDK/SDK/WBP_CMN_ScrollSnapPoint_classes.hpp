@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -53,38 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_ScrollSnapPoint_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_ScrollSnapPoint_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_ScrollSnapPoint_C")
 	}
 	static class UWBP_CMN_ScrollSnapPoint_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_ScrollSnapPoint_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_ScrollSnapPoint_C) == 0x000008, "Wrong alignment on UWBP_CMN_ScrollSnapPoint_C");
-static_assert(sizeof(UWBP_CMN_ScrollSnapPoint_C) == 0x0003C0, "Wrong size on UWBP_CMN_ScrollSnapPoint_C");
-static_assert(offsetof(UWBP_CMN_ScrollSnapPoint_C, UberGraphFrame) == 0x000308, "Member 'UWBP_CMN_ScrollSnapPoint_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ScrollSnapPoint_C, HorizontalBox) == 0x000310, "Member 'UWBP_CMN_ScrollSnapPoint_C::HorizontalBox' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ScrollSnapPoint_C, PAT_ScrollSnapPoint_10) == 0x000318, "Member 'UWBP_CMN_ScrollSnapPoint_C::PAT_ScrollSnapPoint_10' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ScrollSnapPoint_C, PAT_ScrollSnapPoint_11) == 0x000320, "Member 'UWBP_CMN_ScrollSnapPoint_C::PAT_ScrollSnapPoint_11' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ScrollSnapPoint_C, PAT_ScrollSnapPoint_12) == 0x000328, "Member 'UWBP_CMN_ScrollSnapPoint_C::PAT_ScrollSnapPoint_12' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ScrollSnapPoint_C, PAT_ScrollSnapPoint_13) == 0x000330, "Member 'UWBP_CMN_ScrollSnapPoint_C::PAT_ScrollSnapPoint_13' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ScrollSnapPoint_C, PAT_ScrollSnapPoint_14) == 0x000338, "Member 'UWBP_CMN_ScrollSnapPoint_C::PAT_ScrollSnapPoint_14' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ScrollSnapPoint_C, PAT_ScrollSnapPoint_15) == 0x000340, "Member 'UWBP_CMN_ScrollSnapPoint_C::PAT_ScrollSnapPoint_15' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ScrollSnapPoint_C, PAT_ScrollSnapPoint_16) == 0x000348, "Member 'UWBP_CMN_ScrollSnapPoint_C::PAT_ScrollSnapPoint_16' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ScrollSnapPoint_C, PAT_ScrollSnapPoint_17) == 0x000350, "Member 'UWBP_CMN_ScrollSnapPoint_C::PAT_ScrollSnapPoint_17' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ScrollSnapPoint_C, PAT_ScrollSnapPoint_18) == 0x000358, "Member 'UWBP_CMN_ScrollSnapPoint_C::PAT_ScrollSnapPoint_18' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ScrollSnapPoint_C, PAT_ScrollSnapPoint_19) == 0x000360, "Member 'UWBP_CMN_ScrollSnapPoint_C::PAT_ScrollSnapPoint_19' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ScrollSnapPoint_C, PAT_ScrollSnapPoint_20) == 0x000368, "Member 'UWBP_CMN_ScrollSnapPoint_C::PAT_ScrollSnapPoint_20' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ScrollSnapPoint_C, PAT_ScrollSnapPoint_21) == 0x000370, "Member 'UWBP_CMN_ScrollSnapPoint_C::PAT_ScrollSnapPoint_21' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ScrollSnapPoint_C, PAT_ScrollSnapPoint_01) == 0x000378, "Member 'UWBP_CMN_ScrollSnapPoint_C::PAT_ScrollSnapPoint_01' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ScrollSnapPoint_C, PAT_ScrollSnapPoint_02) == 0x000380, "Member 'UWBP_CMN_ScrollSnapPoint_C::PAT_ScrollSnapPoint_02' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ScrollSnapPoint_C, PAT_ScrollSnapPoint_03) == 0x000388, "Member 'UWBP_CMN_ScrollSnapPoint_C::PAT_ScrollSnapPoint_03' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ScrollSnapPoint_C, PAT_ScrollSnapPoint_04) == 0x000390, "Member 'UWBP_CMN_ScrollSnapPoint_C::PAT_ScrollSnapPoint_04' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ScrollSnapPoint_C, PAT_ScrollSnapPoint_05) == 0x000398, "Member 'UWBP_CMN_ScrollSnapPoint_C::PAT_ScrollSnapPoint_05' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ScrollSnapPoint_C, PAT_ScrollSnapPoint_06) == 0x0003A0, "Member 'UWBP_CMN_ScrollSnapPoint_C::PAT_ScrollSnapPoint_06' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ScrollSnapPoint_C, PAT_ScrollSnapPoint_07) == 0x0003A8, "Member 'UWBP_CMN_ScrollSnapPoint_C::PAT_ScrollSnapPoint_07' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ScrollSnapPoint_C, PAT_ScrollSnapPoint_08) == 0x0003B0, "Member 'UWBP_CMN_ScrollSnapPoint_C::PAT_ScrollSnapPoint_08' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ScrollSnapPoint_C, PAT_ScrollSnapPoint_09) == 0x0003B8, "Member 'UWBP_CMN_ScrollSnapPoint_C::PAT_ScrollSnapPoint_09' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_ScrollSnapPoint_C;
 
 }
 

@@ -45,23 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_RaceBefore_BasicRound_C">();
+		BP_STATIC_CLASS_IMPL("WBP_RaceBefore_BasicRound_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_RaceBefore_BasicRound_C")
 	}
 	static class UWBP_RaceBefore_BasicRound_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_RaceBefore_BasicRound_C>();
 	}
 };
-static_assert(alignof(UWBP_RaceBefore_BasicRound_C) == 0x000008, "Wrong alignment on UWBP_RaceBefore_BasicRound_C");
-static_assert(sizeof(UWBP_RaceBefore_BasicRound_C) == 0x000348, "Wrong size on UWBP_RaceBefore_BasicRound_C");
-static_assert(offsetof(UWBP_RaceBefore_BasicRound_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_RaceBefore_BasicRound_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_BasicRound_C, RaceBefore_Out) == 0x0002E8, "Member 'UWBP_RaceBefore_BasicRound_C::RaceBefore_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_BasicRound_C, RaceBefore_InLoop) == 0x0002F0, "Member 'UWBP_RaceBefore_BasicRound_C::RaceBefore_InLoop' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_BasicRound_C, Line) == 0x0002F8, "Member 'UWBP_RaceBefore_BasicRound_C::Line' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_BasicRound_C, WBP_CMN_Sub_SpeedClassInfo) == 0x000300, "Member 'UWBP_RaceBefore_BasicRound_C::WBP_CMN_Sub_SpeedClassInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_BasicRound_C, WBP_RaceBefore_Sub_BasicRoundInfo) == 0x000308, "Member 'UWBP_RaceBefore_BasicRound_C::WBP_RaceBefore_Sub_BasicRoundInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_BasicRound_C, OnRemoved) == 0x000310, "Member 'UWBP_RaceBefore_BasicRound_C::OnRemoved' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_BasicRound_C, PanelDebugTexture) == 0x000320, "Member 'UWBP_RaceBefore_BasicRound_C::PanelDebugTexture' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_RaceBefore_BasicRound_C;
 
 }
 

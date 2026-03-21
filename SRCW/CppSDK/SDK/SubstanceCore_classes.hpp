@@ -68,25 +68,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SubstanceGraphInstance">();
+		STATIC_CLASS_IMPL("SubstanceGraphInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SubstanceGraphInstance")
 	}
 	static class USubstanceGraphInstance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USubstanceGraphInstance>();
 	}
 };
-static_assert(alignof(USubstanceGraphInstance) == 0x000008, "Wrong alignment on USubstanceGraphInstance");
-static_assert(sizeof(USubstanceGraphInstance) == 0x000198, "Wrong size on USubstanceGraphInstance");
-static_assert(offsetof(USubstanceGraphInstance, PackageURL) == 0x000038, "Member 'USubstanceGraphInstance::PackageURL' has a wrong offset!");
-static_assert(offsetof(USubstanceGraphInstance, ParentFactory) == 0x000048, "Member 'USubstanceGraphInstance::ParentFactory' has a wrong offset!");
-static_assert(offsetof(USubstanceGraphInstance, ImageSources) == 0x000050, "Member 'USubstanceGraphInstance::ImageSources' has a wrong offset!");
-static_assert(offsetof(USubstanceGraphInstance, CreatedMaterial) == 0x0000A0, "Member 'USubstanceGraphInstance::CreatedMaterial' has a wrong offset!");
-static_assert(offsetof(USubstanceGraphInstance, Presets) == 0x0000A8, "Member 'USubstanceGraphInstance::Presets' has a wrong offset!");
-static_assert(offsetof(USubstanceGraphInstance, ConstantCreatedMaterial) == 0x0000C8, "Member 'USubstanceGraphInstance::ConstantCreatedMaterial' has a wrong offset!");
-static_assert(offsetof(USubstanceGraphInstance, DynamicCreatedMaterial) == 0x0000D0, "Member 'USubstanceGraphInstance::DynamicCreatedMaterial' has a wrong offset!");
-static_assert(offsetof(USubstanceGraphInstance, OutputTextureLinkData) == 0x0000D8, "Member 'USubstanceGraphInstance::OutputTextureLinkData' has a wrong offset!");
-static_assert(offsetof(USubstanceGraphInstance, OutputInstances) == 0x000128, "Member 'USubstanceGraphInstance::OutputInstances' has a wrong offset!");
-static_assert(offsetof(USubstanceGraphInstance, bIsFrozen) == 0x000178, "Member 'USubstanceGraphInstance::bIsFrozen' has a wrong offset!");
+DUMPER7_ASSERTS_USubstanceGraphInstance;
 
 // Class SubstanceCore.SubstanceInstanceFactory
 // 0x0070 (0x0098 - 0x0028)
@@ -109,20 +102,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SubstanceInstanceFactory">();
+		STATIC_CLASS_IMPL("SubstanceInstanceFactory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SubstanceInstanceFactory")
 	}
 	static class USubstanceInstanceFactory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USubstanceInstanceFactory>();
 	}
 };
-static_assert(alignof(USubstanceInstanceFactory) == 0x000008, "Wrong alignment on USubstanceInstanceFactory");
-static_assert(sizeof(USubstanceInstanceFactory) == 0x000098, "Wrong size on USubstanceInstanceFactory");
-static_assert(offsetof(USubstanceInstanceFactory, mGraphInstances) == 0x000028, "Member 'USubstanceInstanceFactory::mGraphInstances' has a wrong offset!");
-static_assert(offsetof(USubstanceInstanceFactory, RelativeSourceFilePath) == 0x000060, "Member 'USubstanceInstanceFactory::RelativeSourceFilePath' has a wrong offset!");
-static_assert(offsetof(USubstanceInstanceFactory, AbsoluteSourceFilePath) == 0x000070, "Member 'USubstanceInstanceFactory::AbsoluteSourceFilePath' has a wrong offset!");
-static_assert(offsetof(USubstanceInstanceFactory, SourceFileTimestamp) == 0x000080, "Member 'USubstanceInstanceFactory::SourceFileTimestamp' has a wrong offset!");
-static_assert(offsetof(USubstanceInstanceFactory, GenerationMode) == 0x000090, "Member 'USubstanceInstanceFactory::GenerationMode' has a wrong offset!");
+DUMPER7_ASSERTS_USubstanceInstanceFactory;
 
 // Class SubstanceCore.SubstanceOutputData
 // 0x0030 (0x0058 - 0x0028)
@@ -137,19 +128,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SubstanceOutputData">();
+		STATIC_CLASS_IMPL("SubstanceOutputData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SubstanceOutputData")
 	}
 	static class USubstanceOutputData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USubstanceOutputData>();
 	}
 };
-static_assert(alignof(USubstanceOutputData) == 0x000008, "Wrong alignment on USubstanceOutputData");
-static_assert(sizeof(USubstanceOutputData) == 0x000058, "Wrong size on USubstanceOutputData");
-static_assert(offsetof(USubstanceOutputData, ConnectedObject) == 0x000028, "Member 'USubstanceOutputData::ConnectedObject' has a wrong offset!");
-static_assert(offsetof(USubstanceOutputData, ParamInfo) == 0x000030, "Member 'USubstanceOutputData::ParamInfo' has a wrong offset!");
-static_assert(offsetof(USubstanceOutputData, ParentInstance) == 0x000040, "Member 'USubstanceOutputData::ParentInstance' has a wrong offset!");
-static_assert(offsetof(USubstanceOutputData, CacheGuid) == 0x000048, "Member 'USubstanceOutputData::CacheGuid' has a wrong offset!");
+DUMPER7_ASSERTS_USubstanceOutputData;
 
 // Class SubstanceCore.SubstanceSettings
 // 0x0040 (0x0068 - 0x0028)
@@ -169,23 +159,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SubstanceSettings">();
+		STATIC_CLASS_IMPL("SubstanceSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SubstanceSettings")
 	}
 	static class USubstanceSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USubstanceSettings>();
 	}
 };
-static_assert(alignof(USubstanceSettings) == 0x000008, "Wrong alignment on USubstanceSettings");
-static_assert(sizeof(USubstanceSettings) == 0x000068, "Wrong size on USubstanceSettings");
-static_assert(offsetof(USubstanceSettings, MemoryBudgetMb) == 0x000028, "Member 'USubstanceSettings::MemoryBudgetMb' has a wrong offset!");
-static_assert(offsetof(USubstanceSettings, CPUCores) == 0x00002C, "Member 'USubstanceSettings::CPUCores' has a wrong offset!");
-static_assert(offsetof(USubstanceSettings, AsyncLoadMipClip) == 0x000030, "Member 'USubstanceSettings::AsyncLoadMipClip' has a wrong offset!");
-static_assert(offsetof(USubstanceSettings, MaxAsyncSubstancesRenderedPerFrame) == 0x000034, "Member 'USubstanceSettings::MaxAsyncSubstancesRenderedPerFrame' has a wrong offset!");
-static_assert(offsetof(USubstanceSettings, SubstanceEngine) == 0x000038, "Member 'USubstanceSettings::SubstanceEngine' has a wrong offset!");
-static_assert(offsetof(USubstanceSettings, DefaultSubstanceOutputSizeX) == 0x000039, "Member 'USubstanceSettings::DefaultSubstanceOutputSizeX' has a wrong offset!");
-static_assert(offsetof(USubstanceSettings, DefaultSubstanceOutputSizeY) == 0x00003A, "Member 'USubstanceSettings::DefaultSubstanceOutputSizeY' has a wrong offset!");
-static_assert(offsetof(USubstanceSettings, DefaultTemplateMaterial) == 0x000040, "Member 'USubstanceSettings::DefaultTemplateMaterial' has a wrong offset!");
+DUMPER7_ASSERTS_USubstanceSettings;
 
 // Class SubstanceCore.SubstanceTexture2D
 // 0x0058 (0x01A0 - 0x0148)
@@ -202,19 +187,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SubstanceTexture2D">();
+		STATIC_CLASS_IMPL("SubstanceTexture2D")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SubstanceTexture2D")
 	}
 	static class USubstanceTexture2D* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USubstanceTexture2D>();
 	}
 };
-static_assert(alignof(USubstanceTexture2D) == 0x000008, "Wrong alignment on USubstanceTexture2D");
-static_assert(sizeof(USubstanceTexture2D) == 0x0001A0, "Wrong size on USubstanceTexture2D");
-static_assert(offsetof(USubstanceTexture2D, ParentInstance) == 0x000178, "Member 'USubstanceTexture2D::ParentInstance' has a wrong offset!");
-static_assert(offsetof(USubstanceTexture2D, AddressX) == 0x000180, "Member 'USubstanceTexture2D::AddressX' has a wrong offset!");
-static_assert(offsetof(USubstanceTexture2D, AddressY) == 0x000181, "Member 'USubstanceTexture2D::AddressY' has a wrong offset!");
-static_assert(offsetof(USubstanceTexture2D, bCooked) == 0x000182, "Member 'USubstanceTexture2D::bCooked' has a wrong offset!");
+DUMPER7_ASSERTS_USubstanceTexture2D;
 
 // Class SubstanceCore.SubstanceUtility
 // 0x0000 (0x0028 - 0x0028)
@@ -243,15 +227,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SubstanceUtility">();
+		STATIC_CLASS_IMPL("SubstanceUtility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SubstanceUtility")
 	}
 	static class USubstanceUtility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USubstanceUtility>();
 	}
 };
-static_assert(alignof(USubstanceUtility) == 0x000008, "Wrong alignment on USubstanceUtility");
-static_assert(sizeof(USubstanceUtility) == 0x000028, "Wrong size on USubstanceUtility");
+DUMPER7_ASSERTS_USubstanceUtility;
 
 }
 

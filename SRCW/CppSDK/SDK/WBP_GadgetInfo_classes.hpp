@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "UNION_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
-#include "UNION_structs.hpp"
 
 
 namespace SDK
@@ -53,33 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GadgetInfo_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GadgetInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GadgetInfo_C")
 	}
 	static class UWBP_GadgetInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GadgetInfo_C>();
 	}
 };
-static_assert(alignof(UWBP_GadgetInfo_C) == 0x000008, "Wrong alignment on UWBP_GadgetInfo_C");
-static_assert(sizeof(UWBP_GadgetInfo_C) == 0x000370, "Wrong size on UWBP_GadgetInfo_C");
-static_assert(offsetof(UWBP_GadgetInfo_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_GadgetInfo_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetInfo_C, Aten) == 0x0002E8, "Member 'UWBP_GadgetInfo_C::Aten' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetInfo_C, BG) == 0x0002F0, "Member 'UWBP_GadgetInfo_C::BG' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetInfo_C, Blink) == 0x0002F8, "Member 'UWBP_GadgetInfo_C::Blink' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetInfo_C, BlueBase) == 0x000300, "Member 'UWBP_GadgetInfo_C::BlueBase' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetInfo_C, Border_Footer) == 0x000308, "Member 'UWBP_GadgetInfo_C::Border_Footer' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetInfo_C, gadget) == 0x000310, "Member 'UWBP_GadgetInfo_C::gadget' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetInfo_C, TXT_Footer) == 0x000318, "Member 'UWBP_GadgetInfo_C::TXT_Footer' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetInfo_C, TXT_GadgetDetail) == 0x000320, "Member 'UWBP_GadgetInfo_C::TXT_GadgetDetail' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetInfo_C, TXT_Title) == 0x000328, "Member 'UWBP_GadgetInfo_C::TXT_Title' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetInfo_C, UVScroll_01) == 0x000330, "Member 'UWBP_GadgetInfo_C::UVScroll_01' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetInfo_C, UVScroll_02) == 0x000338, "Member 'UWBP_GadgetInfo_C::UVScroll_02' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetInfo_C, UVScroll_03) == 0x000340, "Member 'UWBP_GadgetInfo_C::UVScroll_03' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetInfo_C, UVScroll_04) == 0x000348, "Member 'UWBP_GadgetInfo_C::UVScroll_04' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetInfo_C, WBP_GadgetInfo_Sub_Category_Festa) == 0x000350, "Member 'UWBP_GadgetInfo_C::WBP_GadgetInfo_Sub_Category_Festa' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetInfo_C, WBP_GadgetInfo_Sub_Category_LegendCompe) == 0x000358, "Member 'UWBP_GadgetInfo_C::WBP_GadgetInfo_Sub_Category_LegendCompe' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetInfo_C, WBP_GadgetInfo_Sub_Category_RankMatch) == 0x000360, "Member 'UWBP_GadgetInfo_C::WBP_GadgetInfo_Sub_Category_RankMatch' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetInfo_C, WhiteBase) == 0x000368, "Member 'UWBP_GadgetInfo_C::WhiteBase' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GadgetInfo_C;
 
 }
 

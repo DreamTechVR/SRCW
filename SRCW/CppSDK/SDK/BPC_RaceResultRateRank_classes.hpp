@@ -10,9 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -32,22 +31,23 @@ public:
 	void ExecuteUbergraph_BPC_RaceResultRateRank(int32 EntryPoint);
 	void OnInitState();
 	void OnUpdateState(float InDeltaTime);
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_RaceResultRateRank_C">();
+		BP_STATIC_CLASS_IMPL("BPC_RaceResultRateRank_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_RaceResultRateRank_C")
 	}
 	static class UBPC_RaceResultRateRank_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_RaceResultRateRank_C>();
 	}
 };
-static_assert(alignof(UBPC_RaceResultRateRank_C) == 0x000008, "Wrong alignment on UBPC_RaceResultRateRank_C");
-static_assert(sizeof(UBPC_RaceResultRateRank_C) == 0x000120, "Wrong size on UBPC_RaceResultRateRank_C");
-static_assert(offsetof(UBPC_RaceResultRateRank_C, UberGraphFrame) == 0x000108, "Member 'UBPC_RaceResultRateRank_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceResultRateRank_C, OwnerSeq) == 0x000110, "Member 'UBPC_RaceResultRateRank_C::OwnerSeq' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceResultRateRank_C, ResultRate) == 0x000118, "Member 'UBPC_RaceResultRateRank_C::ResultRate' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_RaceResultRateRank_C;
 
 }
 

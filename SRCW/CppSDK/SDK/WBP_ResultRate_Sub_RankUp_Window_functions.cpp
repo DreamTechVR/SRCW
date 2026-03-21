@@ -17,22 +17,8 @@
 namespace SDK
 {
 
-// Function WBP_ResultRate_Sub_RankUp_Window.WBP_ResultRate_Sub_RankUp_Window_C.BndEvt__WBP_ResultRate_Sub_RankUp_Window_Button_Screen_K2Node_ComponentBoundEvent_0_OnButtonPressedEvent__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_ResultRate_Sub_RankUp_Window_C::BndEvt__WBP_ResultRate_Sub_RankUp_Window_Button_Screen_K2Node_ComponentBoundEvent_0_OnButtonPressedEvent__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResultRate_Sub_RankUp_Window_C", "BndEvt__WBP_ResultRate_Sub_RankUp_Window_Button_Screen_K2Node_ComponentBoundEvent_0_OnButtonPressedEvent__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_ResultRate_Sub_RankUp_Window.WBP_ResultRate_Sub_RankUp_Window_C.ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window
-// (Final, UbergraphFunction, HasDefaults)
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -51,37 +37,73 @@ void UWBP_ResultRate_Sub_RankUp_Window_C::ExecuteUbergraph_WBP_ResultRate_Sub_Ra
 }
 
 
-// Function WBP_ResultRate_Sub_RankUp_Window.WBP_ResultRate_Sub_RankUp_Window_C.Open
+// Function WBP_ResultRate_Sub_RankUp_Window.WBP_ResultRate_Sub_RankUp_Window_C.Finished_308CC6E943A1662919706AB0D6941D3F
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_ResultRate_Sub_RankUp_Window_C::Open()
+void UWBP_ResultRate_Sub_RankUp_Window_C::Finished_308CC6E943A1662919706AB0D6941D3F()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResultRate_Sub_RankUp_Window_C", "Open");
+		Func = Class->GetFunction("WBP_ResultRate_Sub_RankUp_Window_C", "Finished_308CC6E943A1662919706AB0D6941D3F");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ResultRate_Sub_RankUp_Window.WBP_ResultRate_Sub_RankUp_Window_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_ResultRate_Sub_RankUp_Window.WBP_ResultRate_Sub_RankUp_Window_C.PlayInAnimation
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_ResultRate_Sub_RankUp_Window_C::PreConstruct(bool IsDesignTime)
+void UWBP_ResultRate_Sub_RankUp_Window_C::PlayInAnimation()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResultRate_Sub_RankUp_Window_C", "PreConstruct");
+		Func = Class->GetFunction("WBP_ResultRate_Sub_RankUp_Window_C", "PlayInAnimation");
 
-	Params::WBP_ResultRate_Sub_RankUp_Window_C_PreConstruct Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.IsDesignTime = IsDesignTime;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function WBP_ResultRate_Sub_RankUp_Window.WBP_ResultRate_Sub_RankUp_Window_C.PlayOutAnimation
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ResultRate_Sub_RankUp_Window_C::PlayOutAnimation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResultRate_Sub_RankUp_Window_C", "PlayOutAnimation");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ResultRate_Sub_RankUp_Window.WBP_ResultRate_Sub_RankUp_Window_C.RateRankUpVoice
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_ResultRate_Sub_RankUp_Window_C::RateRankUpVoice()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResultRate_Sub_RankUp_Window_C", "RateRankUpVoice");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ResultRate_Sub_RankUp_Window.WBP_ResultRate_Sub_RankUp_Window_C.SequenceEvent__ENTRYPOINTWBP_ResultRate_Sub_RankUp_Window
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ResultRate_Sub_RankUp_Window_C::SequenceEvent__ENTRYPOINTWBP_ResultRate_Sub_RankUp_Window()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResultRate_Sub_RankUp_Window_C", "SequenceEvent__ENTRYPOINTWBP_ResultRate_Sub_RankUp_Window");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -107,45 +129,23 @@ void UWBP_ResultRate_Sub_RankUp_Window_C::Set_Rank_Move_Impl(ERateRank NowRank_i
 }
 
 
-// Function WBP_ResultRate_Sub_RankUp_Window.WBP_ResultRate_Sub_RankUp_Window_C.SetRank2
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_ResultRate_Sub_RankUp_Window.WBP_ResultRate_Sub_RankUp_Window_C.SetupRankUpInfo
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// ERateRank                               NowRank_0                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ERateRank                               NextParam                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   PrevRank                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   LatestRank                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ResultRate_Sub_RankUp_Window_C::SetRank2(ERateRank NowRank_0, ERateRank NextParam)
+void UWBP_ResultRate_Sub_RankUp_Window_C::SetupRankUpInfo(int32 PrevRank, int32 LatestRank)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResultRate_Sub_RankUp_Window_C", "SetRank2");
+		Func = Class->GetFunction("WBP_ResultRate_Sub_RankUp_Window_C", "SetupRankUpInfo");
 
-	Params::WBP_ResultRate_Sub_RankUp_Window_C_SetRank2 Parms{};
+	Params::WBP_ResultRate_Sub_RankUp_Window_C_SetupRankUpInfo Parms{};
 
-	Parms.NowRank_0 = NowRank_0;
-	Parms.NextParam = NextParam;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ResultRate_Sub_RankUp_Window.WBP_ResultRate_Sub_RankUp_Window_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ResultRate_Sub_RankUp_Window_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResultRate_Sub_RankUp_Window_C", "Tick");
-
-	Params::WBP_ResultRate_Sub_RankUp_Window_C_Tick Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
+	Parms.PrevRank = PrevRank;
+	Parms.LatestRank = LatestRank;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

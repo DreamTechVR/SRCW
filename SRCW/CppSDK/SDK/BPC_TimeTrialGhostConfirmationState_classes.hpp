@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -71,23 +71,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_TimeTrialGhostConfirmationState_C">();
+		BP_STATIC_CLASS_IMPL("BPC_TimeTrialGhostConfirmationState_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_TimeTrialGhostConfirmationState_C")
 	}
 	static class UBPC_TimeTrialGhostConfirmationState_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_TimeTrialGhostConfirmationState_C>();
 	}
 };
-static_assert(alignof(UBPC_TimeTrialGhostConfirmationState_C) == 0x000008, "Wrong alignment on UBPC_TimeTrialGhostConfirmationState_C");
-static_assert(sizeof(UBPC_TimeTrialGhostConfirmationState_C) == 0x000208, "Wrong size on UBPC_TimeTrialGhostConfirmationState_C");
-static_assert(offsetof(UBPC_TimeTrialGhostConfirmationState_C, UberGraphFrame) == 0x0001D0, "Member 'UBPC_TimeTrialGhostConfirmationState_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialGhostConfirmationState_C, TimeTrialSequence) == 0x0001D8, "Member 'UBPC_TimeTrialGhostConfirmationState_C::TimeTrialSequence' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialGhostConfirmationState_C, OnlineReadyWidget) == 0x0001E0, "Member 'UBPC_TimeTrialGhostConfirmationState_C::OnlineReadyWidget' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialGhostConfirmationState_C, OfflineReadyWidget) == 0x0001E8, "Member 'UBPC_TimeTrialGhostConfirmationState_C::OfflineReadyWidget' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialGhostConfirmationState_C, SubInputReciever) == 0x0001F0, "Member 'UBPC_TimeTrialGhostConfirmationState_C::SubInputReciever' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialGhostConfirmationState_C, PopupWindow) == 0x0001F8, "Member 'UBPC_TimeTrialGhostConfirmationState_C::PopupWindow' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialGhostConfirmationState_C, Is_Ghost_Valid) == 0x000200, "Member 'UBPC_TimeTrialGhostConfirmationState_C::Is_Ghost_Valid' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialGhostConfirmationState_C, EnableInput) == 0x000201, "Member 'UBPC_TimeTrialGhostConfirmationState_C::EnableInput' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_TimeTrialGhostConfirmationState_C;
 
 }
 

@@ -22,10 +22,7 @@ public:
 	class UHintPopupWindow*                       ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWBP_Popup_Window_Hint_C*               CallFunc_Create_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RivalSelectState_C_CreateTipsWindow) == 0x000008, "Wrong alignment on BPC_RivalSelectState_C_CreateTipsWindow");
-static_assert(sizeof(BPC_RivalSelectState_C_CreateTipsWindow) == 0x000010, "Wrong size on BPC_RivalSelectState_C_CreateTipsWindow");
-static_assert(offsetof(BPC_RivalSelectState_C_CreateTipsWindow, ReturnValue) == 0x000000, "Member 'BPC_RivalSelectState_C_CreateTipsWindow::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RivalSelectState_C_CreateTipsWindow, CallFunc_Create_ReturnValue) == 0x000008, "Member 'BPC_RivalSelectState_C_CreateTipsWindow::CallFunc_Create_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RivalSelectState_C_CreateTipsWindow;
 
 // Function BPC_RivalSelectState.BPC_RivalSelectState_C.ExecuteUbergraph_BPC_RivalSelectState
 // 0x0018 (0x0018 - 0x0000)
@@ -37,11 +34,7 @@ public:
 	class UMenuWorldSubsystem*                    CallFunc_GetWorldSubsystem_ReturnValue;            // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RivalSelectState_C_ExecuteUbergraph_BPC_RivalSelectState) == 0x000008, "Wrong alignment on BPC_RivalSelectState_C_ExecuteUbergraph_BPC_RivalSelectState");
-static_assert(sizeof(BPC_RivalSelectState_C_ExecuteUbergraph_BPC_RivalSelectState) == 0x000018, "Wrong size on BPC_RivalSelectState_C_ExecuteUbergraph_BPC_RivalSelectState");
-static_assert(offsetof(BPC_RivalSelectState_C_ExecuteUbergraph_BPC_RivalSelectState, EntryPoint) == 0x000000, "Member 'BPC_RivalSelectState_C_ExecuteUbergraph_BPC_RivalSelectState::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BPC_RivalSelectState_C_ExecuteUbergraph_BPC_RivalSelectState, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000008, "Member 'BPC_RivalSelectState_C_ExecuteUbergraph_BPC_RivalSelectState::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RivalSelectState_C_ExecuteUbergraph_BPC_RivalSelectState, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'BPC_RivalSelectState_C_ExecuteUbergraph_BPC_RivalSelectState::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RivalSelectState_C_ExecuteUbergraph_BPC_RivalSelectState;
 
 }
 

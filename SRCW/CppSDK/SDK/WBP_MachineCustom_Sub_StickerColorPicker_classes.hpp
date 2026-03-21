@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "EColorDetailWindowMode_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "ST_ColorDetailWindowColorItemData_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UnionUI_classes.hpp"
+#include "ST_ColorDetailWindowColorItemData_structs.hpp"
+#include "EColorDetailWindowMode_structs.hpp"
 
 
 namespace SDK
@@ -143,117 +143,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MachineCustom_Sub_StickerColorPicker_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MachineCustom_Sub_StickerColorPicker_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MachineCustom_Sub_StickerColorPicker_C")
 	}
 	static class UWBP_MachineCustom_Sub_StickerColorPicker_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MachineCustom_Sub_StickerColorPicker_C>();
 	}
 };
-static_assert(alignof(UWBP_MachineCustom_Sub_StickerColorPicker_C) == 0x000008, "Wrong alignment on UWBP_MachineCustom_Sub_StickerColorPicker_C");
-static_assert(sizeof(UWBP_MachineCustom_Sub_StickerColorPicker_C) == 0x0007F8, "Wrong size on UWBP_MachineCustom_Sub_StickerColorPicker_C");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, UberGraphFrame) == 0x0003D8, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, Out) == 0x0003E0, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::Out' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, Loop) == 0x0003E8, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, In) == 0x0003F0, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::In' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, BaseWindow) == 0x0003F8, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::BaseWindow' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, Line_01) == 0x000400, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::Line_01' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, Line_02) == 0x000408, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::Line_02' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, TXT_Color) == 0x000410, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::TXT_Color' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, TXT_Texture) == 0x000418, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::TXT_Texture' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_10) == 0x000420, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_10' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_11) == 0x000428, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_11' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_12) == 0x000430, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_12' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_13) == 0x000438, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_13' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_14) == 0x000440, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_14' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_15) == 0x000448, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_15' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_16) == 0x000450, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_16' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_17) == 0x000458, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_17' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_18) == 0x000460, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_18' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_19) == 0x000468, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_19' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_20) == 0x000470, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_20' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_21) == 0x000478, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_21' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_22) == 0x000480, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_22' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_23) == 0x000488, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_23' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_24) == 0x000490, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_24' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_25) == 0x000498, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_25' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_26) == 0x0004A0, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_26' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_27) == 0x0004A8, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_27' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_28) == 0x0004B0, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_28' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_29) == 0x0004B8, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_29' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_30) == 0x0004C0, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_30' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_31) == 0x0004C8, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_31' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_32) == 0x0004D0, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_32' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_33) == 0x0004D8, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_33' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_34) == 0x0004E0, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_34' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_35) == 0x0004E8, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_35' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_36) == 0x0004F0, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_36' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_37) == 0x0004F8, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_37' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_38) == 0x000500, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_38' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_39) == 0x000508, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_39' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_40) == 0x000510, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_40' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_41) == 0x000518, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_41' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_42) == 0x000520, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_42' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_43) == 0x000528, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_43' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_44) == 0x000530, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_44' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_45) == 0x000538, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_45' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_46) == 0x000540, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_46' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_47) == 0x000548, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_47' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_48) == 0x000550, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_48' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_49) == 0x000558, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_49' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_50) == 0x000560, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_50' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_51) == 0x000568, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_51' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_52) == 0x000570, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_52' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_53) == 0x000578, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_53' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_54) == 0x000580, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_54' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_55) == 0x000588, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_55' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_56) == 0x000590, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_56' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_57) == 0x000598, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_57' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_58) == 0x0005A0, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_58' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_59) == 0x0005A8, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_59' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_60) == 0x0005B0, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_60' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_61) == 0x0005B8, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_61' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_62) == 0x0005C0, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_62' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_63) == 0x0005C8, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_63' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_64) == 0x0005D0, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_64' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_65) == 0x0005D8, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_65' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_66) == 0x0005E0, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_66' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_67) == 0x0005E8, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_67' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_68) == 0x0005F0, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_68' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_69) == 0x0005F8, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_69' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_70) == 0x000600, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_70' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_71) == 0x000608, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_71' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_72) == 0x000610, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_72' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_73) == 0x000618, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_73' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_74) == 0x000620, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_74' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_75) == 0x000628, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_75' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_76) == 0x000630, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_76' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_77) == 0x000638, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_77' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_78) == 0x000640, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_78' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_79) == 0x000648, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_79' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_80) == 0x000650, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_80' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_01) == 0x000658, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_01' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_02) == 0x000660, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_02' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_03) == 0x000668, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_03' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_04) == 0x000670, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_04' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_05) == 0x000678, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_05' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_06) == 0x000680, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_06' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_07) == 0x000688, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_07' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_08) == 0x000690, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_08' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_09) == 0x000698, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_09' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WBP_MachineCustom_Sub_ColorPicker_Texture) == 0x0006A0, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WBP_MachineCustom_Sub_ColorPicker_Texture' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WrapBox_0) == 0x0006A8, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WrapBox_0' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, IsWindowOpen) == 0x0006B0, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::IsWindowOpen' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, ColorItemNumMap) == 0x0006B8, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::ColorItemNumMap' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, InnerSlotPaddingMap) == 0x000708, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::InnerSlotPaddingMap' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, WrapBoxPositionMap) == 0x000758, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::WrapBoxPositionMap' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, GridNavigationBuilder) == 0x0007A8, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::GridNavigationBuilder' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, ColorItems) == 0x0007B0, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::ColorItems' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, OnColorItemFocused) == 0x0007C0, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::OnColorItemFocused' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, ColorItemNumPerRow) == 0x0007D0, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::ColorItemNumPerRow' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, LastColumnIndex) == 0x0007D4, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::LastColumnIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, OnColorItemSelected) == 0x0007D8, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::OnColorItemSelected' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerColorPicker_C, OnCancel) == 0x0007E8, "Member 'UWBP_MachineCustom_Sub_StickerColorPicker_C::OnCancel' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MachineCustom_Sub_StickerColorPicker_C;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
+#include "UnionSystem_structs.hpp"
 #include "UMG_classes.hpp"
 
 
@@ -56,36 +56,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ResultRate_Sub_RankUp_Pyramid_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ResultRate_Sub_RankUp_Pyramid_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ResultRate_Sub_RankUp_Pyramid_C")
 	}
 	static class UWBP_ResultRate_Sub_RankUp_Pyramid_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ResultRate_Sub_RankUp_Pyramid_C>();
 	}
 };
-static_assert(alignof(UWBP_ResultRate_Sub_RankUp_Pyramid_C) == 0x000008, "Wrong alignment on UWBP_ResultRate_Sub_RankUp_Pyramid_C");
-static_assert(sizeof(UWBP_ResultRate_Sub_RankUp_Pyramid_C) == 0x000370, "Wrong size on UWBP_ResultRate_Sub_RankUp_Pyramid_C");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankUp_Pyramid_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_ResultRate_Sub_RankUp_Pyramid_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankUp_Pyramid_C, PRM_Cursor) == 0x0002E8, "Member 'UWBP_ResultRate_Sub_RankUp_Pyramid_C::PRM_Cursor' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankUp_Pyramid_C, RankPyramid_Base) == 0x0002F0, "Member 'UWBP_ResultRate_Sub_RankUp_Pyramid_C::RankPyramid_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankUp_Pyramid_C, RateGaugeArrow_01) == 0x0002F8, "Member 'UWBP_ResultRate_Sub_RankUp_Pyramid_C::RateGaugeArrow_01' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankUp_Pyramid_C, RateGaugeArrow_02) == 0x000300, "Member 'UWBP_ResultRate_Sub_RankUp_Pyramid_C::RateGaugeArrow_02' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankUp_Pyramid_C, RateGaugeArrow_03) == 0x000308, "Member 'UWBP_ResultRate_Sub_RankUp_Pyramid_C::RateGaugeArrow_03' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankUp_Pyramid_C, TXT_Rank_A) == 0x000310, "Member 'UWBP_ResultRate_Sub_RankUp_Pyramid_C::TXT_Rank_A' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankUp_Pyramid_C, TXT_Rank_B) == 0x000318, "Member 'UWBP_ResultRate_Sub_RankUp_Pyramid_C::TXT_Rank_B' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankUp_Pyramid_C, TXT_Rank_C) == 0x000320, "Member 'UWBP_ResultRate_Sub_RankUp_Pyramid_C::TXT_Rank_C' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankUp_Pyramid_C, TXT_Rank_D) == 0x000328, "Member 'UWBP_ResultRate_Sub_RankUp_Pyramid_C::TXT_Rank_D' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankUp_Pyramid_C, TXT_Rank_E) == 0x000330, "Member 'UWBP_ResultRate_Sub_RankUp_Pyramid_C::TXT_Rank_E' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankUp_Pyramid_C, TXT_Rank_LEGEND) == 0x000338, "Member 'UWBP_ResultRate_Sub_RankUp_Pyramid_C::TXT_Rank_LEGEND' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankUp_Pyramid_C, WBP_ResultRate_Sub_RankIcon) == 0x000340, "Member 'UWBP_ResultRate_Sub_RankUp_Pyramid_C::WBP_ResultRate_Sub_RankIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankUp_Pyramid_C, NowRank) == 0x000348, "Member 'UWBP_ResultRate_Sub_RankUp_Pyramid_C::NowRank' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankUp_Pyramid_C, NextRank) == 0x000349, "Member 'UWBP_ResultRate_Sub_RankUp_Pyramid_C::NextRank' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankUp_Pyramid_C, bIsAnimate) == 0x00034A, "Member 'UWBP_ResultRate_Sub_RankUp_Pyramid_C::bIsAnimate' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankUp_Pyramid_C, NowPosition) == 0x000350, "Member 'UWBP_ResultRate_Sub_RankUp_Pyramid_C::NowPosition' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankUp_Pyramid_C, bIsPass) == 0x000358, "Member 'UWBP_ResultRate_Sub_RankUp_Pyramid_C::bIsPass' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankUp_Pyramid_C, bIsLoop) == 0x000359, "Member 'UWBP_ResultRate_Sub_RankUp_Pyramid_C::bIsLoop' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankUp_Pyramid_C, AddPosition) == 0x000360, "Member 'UWBP_ResultRate_Sub_RankUp_Pyramid_C::AddPosition' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankUp_Pyramid_C, EndPosition) == 0x000368, "Member 'UWBP_ResultRate_Sub_RankUp_Pyramid_C::EndPosition' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ResultRate_Sub_RankUp_Pyramid_C;
 
 }
 

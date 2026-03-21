@@ -29,13 +29,7 @@ public:
 	class UTexture2D*                             K2Node_DynamicCast_As_____2D;                      // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TitleMenu_Sub_2nd_C_ExecuteUbergraph_WBP_TitleMenu_Sub_2nd) == 0x000008, "Wrong alignment on WBP_TitleMenu_Sub_2nd_C_ExecuteUbergraph_WBP_TitleMenu_Sub_2nd");
-static_assert(sizeof(WBP_TitleMenu_Sub_2nd_C_ExecuteUbergraph_WBP_TitleMenu_Sub_2nd) == 0x000028, "Wrong size on WBP_TitleMenu_Sub_2nd_C_ExecuteUbergraph_WBP_TitleMenu_Sub_2nd");
-static_assert(offsetof(WBP_TitleMenu_Sub_2nd_C_ExecuteUbergraph_WBP_TitleMenu_Sub_2nd, EntryPoint) == 0x000000, "Member 'WBP_TitleMenu_Sub_2nd_C_ExecuteUbergraph_WBP_TitleMenu_Sub_2nd::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_TitleMenu_Sub_2nd_C_ExecuteUbergraph_WBP_TitleMenu_Sub_2nd, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x000008, "Member 'WBP_TitleMenu_Sub_2nd_C_ExecuteUbergraph_WBP_TitleMenu_Sub_2nd::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TitleMenu_Sub_2nd_C_ExecuteUbergraph_WBP_TitleMenu_Sub_2nd, K2Node_Event_IsDesignTime) == 0x000010, "Member 'WBP_TitleMenu_Sub_2nd_C_ExecuteUbergraph_WBP_TitleMenu_Sub_2nd::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_TitleMenu_Sub_2nd_C_ExecuteUbergraph_WBP_TitleMenu_Sub_2nd, K2Node_DynamicCast_As_____2D) == 0x000018, "Member 'WBP_TitleMenu_Sub_2nd_C_ExecuteUbergraph_WBP_TitleMenu_Sub_2nd::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(WBP_TitleMenu_Sub_2nd_C_ExecuteUbergraph_WBP_TitleMenu_Sub_2nd, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'WBP_TitleMenu_Sub_2nd_C_ExecuteUbergraph_WBP_TitleMenu_Sub_2nd::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TitleMenu_Sub_2nd_C_ExecuteUbergraph_WBP_TitleMenu_Sub_2nd;
 
 // Function WBP_TitleMenu_Sub_2nd.WBP_TitleMenu_Sub_2nd_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -44,9 +38,7 @@ struct WBP_TitleMenu_Sub_2nd_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TitleMenu_Sub_2nd_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_TitleMenu_Sub_2nd_C_PreConstruct");
-static_assert(sizeof(WBP_TitleMenu_Sub_2nd_C_PreConstruct) == 0x000001, "Wrong size on WBP_TitleMenu_Sub_2nd_C_PreConstruct");
-static_assert(offsetof(WBP_TitleMenu_Sub_2nd_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_TitleMenu_Sub_2nd_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TitleMenu_Sub_2nd_C_PreConstruct;
 
 // Function WBP_TitleMenu_Sub_2nd.WBP_TitleMenu_Sub_2nd_C.SetLogoVisibility
 // 0x0001 (0x0001 - 0x0000)
@@ -55,9 +47,7 @@ struct WBP_TitleMenu_Sub_2nd_C_SetLogoVisibility final
 public:
 	ESlateVisibility                              InVisibility;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TitleMenu_Sub_2nd_C_SetLogoVisibility) == 0x000001, "Wrong alignment on WBP_TitleMenu_Sub_2nd_C_SetLogoVisibility");
-static_assert(sizeof(WBP_TitleMenu_Sub_2nd_C_SetLogoVisibility) == 0x000001, "Wrong size on WBP_TitleMenu_Sub_2nd_C_SetLogoVisibility");
-static_assert(offsetof(WBP_TitleMenu_Sub_2nd_C_SetLogoVisibility, InVisibility) == 0x000000, "Member 'WBP_TitleMenu_Sub_2nd_C_SetLogoVisibility::InVisibility' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TitleMenu_Sub_2nd_C_SetLogoVisibility;
 
 // Function WBP_TitleMenu_Sub_2nd.WBP_TitleMenu_Sub_2nd_C.SetTitleLogoTexture
 // 0x0008 (0x0008 - 0x0000)
@@ -66,9 +56,7 @@ struct WBP_TitleMenu_Sub_2nd_C_SetTitleLogoTexture final
 public:
 	class UTexture2D*                             Texture;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TitleMenu_Sub_2nd_C_SetTitleLogoTexture) == 0x000008, "Wrong alignment on WBP_TitleMenu_Sub_2nd_C_SetTitleLogoTexture");
-static_assert(sizeof(WBP_TitleMenu_Sub_2nd_C_SetTitleLogoTexture) == 0x000008, "Wrong size on WBP_TitleMenu_Sub_2nd_C_SetTitleLogoTexture");
-static_assert(offsetof(WBP_TitleMenu_Sub_2nd_C_SetTitleLogoTexture, Texture) == 0x000000, "Member 'WBP_TitleMenu_Sub_2nd_C_SetTitleLogoTexture::Texture' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TitleMenu_Sub_2nd_C_SetTitleLogoTexture;
 
 }
 

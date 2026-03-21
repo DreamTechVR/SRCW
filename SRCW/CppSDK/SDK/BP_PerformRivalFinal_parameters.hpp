@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
+#include "UnionSystem_structs.hpp"
 #include "MovieScene_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
@@ -40,20 +40,7 @@ public:
 	EGameModeId                                   CallFunc_GetSelectedGameModeId_ReturnValue;        // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_PerformRivalFinal_C_ApplyRivalLevel) == 0x000008, "Wrong alignment on BP_PerformRivalFinal_C_ApplyRivalLevel");
-static_assert(sizeof(BP_PerformRivalFinal_C_ApplyRivalLevel) == 0x000048, "Wrong size on BP_PerformRivalFinal_C_ApplyRivalLevel");
-static_assert(offsetof(BP_PerformRivalFinal_C_ApplyRivalLevel, CallFunc_GetRaceRivalBaseLevel_ReturnValue) == 0x000000, "Member 'BP_PerformRivalFinal_C_ApplyRivalLevel::CallFunc_GetRaceRivalBaseLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ApplyRivalLevel, CallFunc_GetMaxRivalTeamLevel_ReturnValue) == 0x000010, "Member 'BP_PerformRivalFinal_C_ApplyRivalLevel::CallFunc_GetMaxRivalTeamLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ApplyRivalLevel, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000014, "Member 'BP_PerformRivalFinal_C_ApplyRivalLevel::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ApplyRivalLevel, CallFunc_GetRaceRivalLevel_ReturnValue) == 0x000018, "Member 'BP_PerformRivalFinal_C_ApplyRivalLevel::CallFunc_GetRaceRivalLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ApplyRivalLevel, CallFunc_GetMenuDataBaseRivalLevel_ReturnValue) == 0x000028, "Member 'BP_PerformRivalFinal_C_ApplyRivalLevel::CallFunc_GetMenuDataBaseRivalLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ApplyRivalLevel, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x00002C, "Member 'BP_PerformRivalFinal_C_ApplyRivalLevel::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ApplyRivalLevel, CallFunc_Conv_ByteToInt_ReturnValue_2) == 0x000030, "Member 'BP_PerformRivalFinal_C_ApplyRivalLevel::CallFunc_Conv_ByteToInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ApplyRivalLevel, CallFunc_GetSelectedRivalTeamId_ReturnValue) == 0x000034, "Member 'BP_PerformRivalFinal_C_ApplyRivalLevel::CallFunc_GetSelectedRivalTeamId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ApplyRivalLevel, CallFunc_GetAdjustedRivalTeamLevelByID_ReturnValue) == 0x000038, "Member 'BP_PerformRivalFinal_C_ApplyRivalLevel::CallFunc_GetAdjustedRivalTeamLevelByID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ApplyRivalLevel, CallFunc_GetMaxRivalTeamLevel_ReturnValue_1) == 0x00003C, "Member 'BP_PerformRivalFinal_C_ApplyRivalLevel::CallFunc_GetMaxRivalTeamLevel_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ApplyRivalLevel, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x000040, "Member 'BP_PerformRivalFinal_C_ApplyRivalLevel::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ApplyRivalLevel, K2Node_SwitchEnum_CmpSuccess) == 0x000041, "Member 'BP_PerformRivalFinal_C_ApplyRivalLevel::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BP_PerformRivalFinal_C_ApplyRivalLevel;
 
 // Function BP_PerformRivalFinal.BP_PerformRivalFinal_C.CreateScene
 // 0x05F0 (0x05F0 - 0x0000)
@@ -126,61 +113,7 @@ public:
 	class ALevelSequenceActor*                    CallFunc_CreateLevelSequencePlayer_OutActor_1;     // 0x05E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ULevelSequencePlayer*                   CallFunc_CreateLevelSequencePlayer_ReturnValue_1;  // 0x05E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_PerformRivalFinal_C_CreateScene) == 0x000008, "Wrong alignment on BP_PerformRivalFinal_C_CreateScene");
-static_assert(sizeof(BP_PerformRivalFinal_C_CreateScene) == 0x0005F0, "Wrong size on BP_PerformRivalFinal_C_CreateScene");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, In_Player) == 0x000000, "Member 'BP_PerformRivalFinal_C_CreateScene::In_Player' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, In_Rival) == 0x000008, "Member 'BP_PerformRivalFinal_C_CreateScene::In_Rival' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, In_RivalIndex) == 0x000010, "Member 'BP_PerformRivalFinal_C_CreateScene::In_RivalIndex' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, CommonSetting) == 0x000014, "Member 'BP_PerformRivalFinal_C_CreateScene::CommonSetting' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, Temp_bool_Variable) == 0x00003C, "Member 'BP_PerformRivalFinal_C_CreateScene::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, Temp_byte_Variable) == 0x00003D, "Member 'BP_PerformRivalFinal_C_CreateScene::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, K2Node_MakeArray_Array) == 0x000040, "Member 'BP_PerformRivalFinal_C_CreateScene::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, CallFunc_Format_ReturnValue) == 0x000050, "Member 'BP_PerformRivalFinal_C_CreateScene::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, CallFunc_Create_ReturnValue) == 0x000060, "Member 'BP_PerformRivalFinal_C_CreateScene::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, CallFunc_GetCurrentRivalOutcome_ReturnValue) == 0x000068, "Member 'BP_PerformRivalFinal_C_CreateScene::CallFunc_GetCurrentRivalOutcome_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, CallFunc_MakeLiteralText_ReturnValue) == 0x000070, "Member 'BP_PerformRivalFinal_C_CreateScene::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, CallFunc_GetSelectedRivalTeamId_ReturnValue) == 0x000080, "Member 'BP_PerformRivalFinal_C_CreateScene::CallFunc_GetSelectedRivalTeamId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, CallFunc_IsPartyRaceRivalExists_ReturnValue) == 0x000081, "Member 'BP_PerformRivalFinal_C_CreateScene::CallFunc_IsPartyRaceRivalExists_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, CallFunc_GetRivalTeamName_ReturnValue) == 0x000088, "Member 'BP_PerformRivalFinal_C_CreateScene::CallFunc_GetRivalTeamName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, CallFunc_GetRacerName_OutRacerName) == 0x000098, "Member 'BP_PerformRivalFinal_C_CreateScene::CallFunc_GetRacerName_OutRacerName' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, CallFunc_GetEnumeratorName_ReturnValue) == 0x0000A8, "Member 'BP_PerformRivalFinal_C_CreateScene::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, CallFunc_TextIsEmpty_ReturnValue) == 0x0000B0, "Member 'BP_PerformRivalFinal_C_CreateScene::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, CallFunc_GetDataTableRowFromName_OutRow) == 0x0000B8, "Member 'BP_PerformRivalFinal_C_CreateScene::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000448, "Member 'BP_PerformRivalFinal_C_CreateScene::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, K2Node_Select_Default) == 0x000450, "Member 'BP_PerformRivalFinal_C_CreateScene::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, Temp_bool_Variable_1) == 0x000460, "Member 'BP_PerformRivalFinal_C_CreateScene::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, CallFunc_Conv_SoftObjRefToSoftObjPath_ReturnValue) == 0x000468, "Member 'BP_PerformRivalFinal_C_CreateScene::CallFunc_Conv_SoftObjRefToSoftObjPath_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, CallFunc_BreakSoftObjectPath_PathString) == 0x000488, "Member 'BP_PerformRivalFinal_C_CreateScene::CallFunc_BreakSoftObjectPath_PathString' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, K2Node_Select_Default_1) == 0x000498, "Member 'BP_PerformRivalFinal_C_CreateScene::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, CallFunc_Conv_StringToName_ReturnValue) == 0x0004A8, "Member 'BP_PerformRivalFinal_C_CreateScene::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, Temp_byte_Variable_1) == 0x0004B0, "Member 'BP_PerformRivalFinal_C_CreateScene::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, Temp_byte_Variable_2) == 0x0004B1, "Member 'BP_PerformRivalFinal_C_CreateScene::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, Temp_byte_Variable_3) == 0x0004B2, "Member 'BP_PerformRivalFinal_C_CreateScene::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, K2Node_Select_Default_2) == 0x0004B3, "Member 'BP_PerformRivalFinal_C_CreateScene::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0004B4, "Member 'BP_PerformRivalFinal_C_CreateScene::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, CallFunc_GetLipSyncAnimationPath_ReturnValue) == 0x0004B8, "Member 'BP_PerformRivalFinal_C_CreateScene::CallFunc_GetLipSyncAnimationPath_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, CallFunc_Conv_SoftObjPathToSoftObjRef_ReturnValue) == 0x0004D8, "Member 'BP_PerformRivalFinal_C_CreateScene::CallFunc_Conv_SoftObjPathToSoftObjRef_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x000500, "Member 'BP_PerformRivalFinal_C_CreateScene::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, CallFunc_GetLevelSequenceReference_Out_Asset) == 0x000508, "Member 'BP_PerformRivalFinal_C_CreateScene::CallFunc_GetLevelSequenceReference_Out_Asset' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, K2Node_DynamicCast_As____________) == 0x000530, "Member 'BP_PerformRivalFinal_C_CreateScene::K2Node_DynamicCast_As____________' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, K2Node_DynamicCast_bSuccess) == 0x000538, "Member 'BP_PerformRivalFinal_C_CreateScene::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, CallFunc_LoadAsset_Blocking_ReturnValue_1) == 0x000540, "Member 'BP_PerformRivalFinal_C_CreateScene::CallFunc_LoadAsset_Blocking_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, K2Node_DynamicCast_As________) == 0x000548, "Member 'BP_PerformRivalFinal_C_CreateScene::K2Node_DynamicCast_As________' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, K2Node_DynamicCast_bSuccess_1) == 0x000550, "Member 'BP_PerformRivalFinal_C_CreateScene::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, CallFunc_Conv_SoftObjRefToSoftObjPath_ReturnValue_1) == 0x000558, "Member 'BP_PerformRivalFinal_C_CreateScene::CallFunc_Conv_SoftObjRefToSoftObjPath_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, CallFunc_GetLoadedObject_ReturnValue) == 0x000578, "Member 'BP_PerformRivalFinal_C_CreateScene::CallFunc_GetLoadedObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, CallFunc_GetLoadedObject_ReturnValue_1) == 0x000580, "Member 'BP_PerformRivalFinal_C_CreateScene::CallFunc_GetLoadedObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, K2Node_DynamicCast_As_____________1) == 0x000588, "Member 'BP_PerformRivalFinal_C_CreateScene::K2Node_DynamicCast_As_____________1' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, K2Node_DynamicCast_bSuccess_2) == 0x000590, "Member 'BP_PerformRivalFinal_C_CreateScene::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, K2Node_DynamicCast_As_________1) == 0x000598, "Member 'BP_PerformRivalFinal_C_CreateScene::K2Node_DynamicCast_As_________1' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, K2Node_DynamicCast_bSuccess_3) == 0x0005A0, "Member 'BP_PerformRivalFinal_C_CreateScene::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, CallFunc_IsValid_ReturnValue) == 0x0005A1, "Member 'BP_PerformRivalFinal_C_CreateScene::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, CallFunc_IsValid_ReturnValue_1) == 0x0005A2, "Member 'BP_PerformRivalFinal_C_CreateScene::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, K2Node_MakeStruct_MovieSceneSequencePlaybackSettings) == 0x0005A4, "Member 'BP_PerformRivalFinal_C_CreateScene::K2Node_MakeStruct_MovieSceneSequencePlaybackSettings' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, CallFunc_CreateLevelSequencePlayer_OutActor) == 0x0005D0, "Member 'BP_PerformRivalFinal_C_CreateScene::CallFunc_CreateLevelSequencePlayer_OutActor' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, CallFunc_CreateLevelSequencePlayer_ReturnValue) == 0x0005D8, "Member 'BP_PerformRivalFinal_C_CreateScene::CallFunc_CreateLevelSequencePlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, CallFunc_CreateLevelSequencePlayer_OutActor_1) == 0x0005E0, "Member 'BP_PerformRivalFinal_C_CreateScene::CallFunc_CreateLevelSequencePlayer_OutActor_1' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_CreateScene, CallFunc_CreateLevelSequencePlayer_ReturnValue_1) == 0x0005E8, "Member 'BP_PerformRivalFinal_C_CreateScene::CallFunc_CreateLevelSequencePlayer_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_PerformRivalFinal_C_CreateScene;
 
 // Function BP_PerformRivalFinal.BP_PerformRivalFinal_C.ExecuteUbergraph_BP_PerformRivalFinal
 // 0x00B8 (0x00B8 - 0x0000)
@@ -222,35 +155,7 @@ public:
 	class FText                                   K2Node_Select_Default;                             // 0x00A0(0x0010)()
 	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal) == 0x000008, "Wrong alignment on BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal");
-static_assert(sizeof(BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal) == 0x0000B8, "Wrong size on BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal");
-static_assert(offsetof(BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal, EntryPoint) == 0x000000, "Member 'BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal, CallFunc_Create_ReturnValue) == 0x000008, "Member 'BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal, CallFunc_IsValid_ReturnValue_1) == 0x000011, "Member 'BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal, CallFunc_IsValid_ReturnValue_2) == 0x000012, "Member 'BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal, K2Node_CreateDelegate_OutputDelegate) == 0x000014, "Member 'BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal, Temp_bool_Variable) == 0x000024, "Member 'BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal, Temp_text_Variable) == 0x000028, "Member 'BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal, Temp_bool_Has_Been_Initd_Variable) == 0x000038, "Member 'BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal, Temp_bool_IsClosed_Variable) == 0x000039, "Member 'BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal, K2Node_Event_EndPlayReason) == 0x00003A, "Member 'BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal::K2Node_Event_EndPlayReason' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal, CallFunc_PlayAnimation_ReturnValue) == 0x000040, "Member 'BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal, K2Node_CreateDelegate_OutputDelegate_1) == 0x000048, "Member 'BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal, K2Node_CreateDelegate_OutputDelegate_2) == 0x000058, "Member 'BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal, CallFunc_BooleanAND_ReturnValue) == 0x000068, "Member 'BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal, CallFunc_IsValid_ReturnValue_3) == 0x000069, "Member 'BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal, CallFunc_GetCurrentRivalOutcome_ReturnValue) == 0x00006A, "Member 'BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal::CallFunc_GetCurrentRivalOutcome_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal, CallFunc_GetCurrentRivalOutcome_ReturnValue_1) == 0x00006B, "Member 'BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal::CallFunc_GetCurrentRivalOutcome_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal, CallFunc_GetMessageFromTable_Out_Text) == 0x000070, "Member 'BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal::CallFunc_GetMessageFromTable_Out_Text' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal, CallFunc_GetRivalTypesRacerIndex_ReturnValue) == 0x000080, "Member 'BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal::CallFunc_GetRivalTypesRacerIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal, CallFunc_GetSelectedStageIds_ReturnValue) == 0x000088, "Member 'BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal::CallFunc_GetSelectedStageIds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal, CallFunc_ApplySettingsCineCameraAll_OutResult) == 0x000098, "Member 'BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal::CallFunc_ApplySettingsCineCameraAll_OutResult' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal, CallFunc_GetCurrentRivalOutcome_ReturnValue_2) == 0x000099, "Member 'BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal::CallFunc_GetCurrentRivalOutcome_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal, CallFunc_GetRivalInteractionType_ReturnValue) == 0x00009A, "Member 'BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal::CallFunc_GetRivalInteractionType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal, CallFunc_IsVisibleSubtitle_bVisible) == 0x00009B, "Member 'BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal::CallFunc_IsVisibleSubtitle_bVisible' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal, K2Node_Select_Default) == 0x0000A0, "Member 'BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal, CallFunc_Delay_Duration_ImplicitCast) == 0x0000B0, "Member 'BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal::CallFunc_Delay_Duration_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_BP_PerformRivalFinal_C_ExecuteUbergraph_BP_PerformRivalFinal;
 
 // Function BP_PerformRivalFinal.BP_PerformRivalFinal_C.GetLevelSequenceReference
 // 0x0498 (0x0498 - 0x0000)
@@ -290,33 +195,7 @@ public:
 	uint8                                         Pad_469[0x7];                                      // 0x0469(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class ULevelSequence>          K2Node_Select_Default_2;                           // 0x0470(0x0028)(HasGetValueTypeHash)
 };
-static_assert(alignof(BP_PerformRivalFinal_C_GetLevelSequenceReference) == 0x000008, "Wrong alignment on BP_PerformRivalFinal_C_GetLevelSequenceReference");
-static_assert(sizeof(BP_PerformRivalFinal_C_GetLevelSequenceReference) == 0x000498, "Wrong size on BP_PerformRivalFinal_C_GetLevelSequenceReference");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetLevelSequenceReference, In_DriverId) == 0x000000, "Member 'BP_PerformRivalFinal_C_GetLevelSequenceReference::In_DriverId' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetLevelSequenceReference, In_IsHover) == 0x000001, "Member 'BP_PerformRivalFinal_C_GetLevelSequenceReference::In_IsHover' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetLevelSequenceReference, In_PlayerId) == 0x000002, "Member 'BP_PerformRivalFinal_C_GetLevelSequenceReference::In_PlayerId' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetLevelSequenceReference, Out_Asset) == 0x000008, "Member 'BP_PerformRivalFinal_C_GetLevelSequenceReference::Out_Asset' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetLevelSequenceReference, Scenes) == 0x000030, "Member 'BP_PerformRivalFinal_C_GetLevelSequenceReference::Scenes' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetLevelSequenceReference, Index_0) == 0x000040, "Member 'BP_PerformRivalFinal_C_GetLevelSequenceReference::Index_0' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetLevelSequenceReference, Temp_int_Variable) == 0x000044, "Member 'BP_PerformRivalFinal_C_GetLevelSequenceReference::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetLevelSequenceReference, CallFunc_GetEnumeratorName_ReturnValue) == 0x000048, "Member 'BP_PerformRivalFinal_C_GetLevelSequenceReference::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetLevelSequenceReference, CallFunc_GetDataTableRowFromName_OutRow) == 0x000050, "Member 'BP_PerformRivalFinal_C_GetLevelSequenceReference::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetLevelSequenceReference, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x0003E0, "Member 'BP_PerformRivalFinal_C_GetLevelSequenceReference::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetLevelSequenceReference, Temp_int_Variable_1) == 0x0003E4, "Member 'BP_PerformRivalFinal_C_GetLevelSequenceReference::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetLevelSequenceReference, Temp_int_Variable_2) == 0x0003E8, "Member 'BP_PerformRivalFinal_C_GetLevelSequenceReference::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetLevelSequenceReference, Temp_bool_Variable) == 0x0003EC, "Member 'BP_PerformRivalFinal_C_GetLevelSequenceReference::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetLevelSequenceReference, Temp_bool_Variable_1) == 0x0003ED, "Member 'BP_PerformRivalFinal_C_GetLevelSequenceReference::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetLevelSequenceReference, Temp_int_Variable_3) == 0x0003F0, "Member 'BP_PerformRivalFinal_C_GetLevelSequenceReference::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetLevelSequenceReference, CallFunc_GetCurrentRivalOutcome_ReturnValue) == 0x0003F4, "Member 'BP_PerformRivalFinal_C_GetLevelSequenceReference::CallFunc_GetCurrentRivalOutcome_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetLevelSequenceReference, CallFunc_GetRivalInteractionType_ReturnValue) == 0x0003F5, "Member 'BP_PerformRivalFinal_C_GetLevelSequenceReference::CallFunc_GetRivalInteractionType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetLevelSequenceReference, Temp_int_Variable_4) == 0x0003F8, "Member 'BP_PerformRivalFinal_C_GetLevelSequenceReference::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetLevelSequenceReference, CallFunc_Array_Get_Item) == 0x000400, "Member 'BP_PerformRivalFinal_C_GetLevelSequenceReference::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetLevelSequenceReference, Temp_byte_Variable) == 0x000428, "Member 'BP_PerformRivalFinal_C_GetLevelSequenceReference::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetLevelSequenceReference, K2Node_Select_Default) == 0x00042C, "Member 'BP_PerformRivalFinal_C_GetLevelSequenceReference::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetLevelSequenceReference, K2Node_Select_Default_1) == 0x000430, "Member 'BP_PerformRivalFinal_C_GetLevelSequenceReference::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetLevelSequenceReference, CallFunc_Array_Get_Item_1) == 0x000440, "Member 'BP_PerformRivalFinal_C_GetLevelSequenceReference::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetLevelSequenceReference, CallFunc_IsValidSoftObjectReference_ReturnValue) == 0x000468, "Member 'BP_PerformRivalFinal_C_GetLevelSequenceReference::CallFunc_IsValidSoftObjectReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetLevelSequenceReference, K2Node_Select_Default_2) == 0x000470, "Member 'BP_PerformRivalFinal_C_GetLevelSequenceReference::K2Node_Select_Default_2' has a wrong offset!");
+DUMPER7_ASSERTS_BP_PerformRivalFinal_C_GetLevelSequenceReference;
 
 // Function BP_PerformRivalFinal.BP_PerformRivalFinal_C.IsVisibleSubtitle
 // 0x0010 (0x0010 - 0x0000)
@@ -330,14 +209,7 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_PerformRivalFinal_C_IsVisibleSubtitle) == 0x000008, "Wrong alignment on BP_PerformRivalFinal_C_IsVisibleSubtitle");
-static_assert(sizeof(BP_PerformRivalFinal_C_IsVisibleSubtitle) == 0x000010, "Wrong size on BP_PerformRivalFinal_C_IsVisibleSubtitle");
-static_assert(offsetof(BP_PerformRivalFinal_C_IsVisibleSubtitle, InDriver) == 0x000000, "Member 'BP_PerformRivalFinal_C_IsVisibleSubtitle::InDriver' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_IsVisibleSubtitle, bVisible) == 0x000008, "Member 'BP_PerformRivalFinal_C_IsVisibleSubtitle::bVisible' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_IsVisibleSubtitle, CallFunc_GetCaptionVisibility_ReturnValue) == 0x000009, "Member 'BP_PerformRivalFinal_C_IsVisibleSubtitle::CallFunc_GetCaptionVisibility_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_IsVisibleSubtitle, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x00000A, "Member 'BP_PerformRivalFinal_C_IsVisibleSubtitle::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_IsVisibleSubtitle, CallFunc_Not_PreBool_ReturnValue) == 0x00000B, "Member 'BP_PerformRivalFinal_C_IsVisibleSubtitle::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_IsVisibleSubtitle, CallFunc_BooleanAND_ReturnValue) == 0x00000C, "Member 'BP_PerformRivalFinal_C_IsVisibleSubtitle::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_PerformRivalFinal_C_IsVisibleSubtitle;
 
 // Function BP_PerformRivalFinal.BP_PerformRivalFinal_C.PlayScene
 // 0x0028 (0x0028 - 0x0000)
@@ -349,12 +221,7 @@ public:
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_PerformRivalFinal_C_PlayScene) == 0x000008, "Wrong alignment on BP_PerformRivalFinal_C_PlayScene");
-static_assert(sizeof(BP_PerformRivalFinal_C_PlayScene) == 0x000028, "Wrong size on BP_PerformRivalFinal_C_PlayScene");
-static_assert(offsetof(BP_PerformRivalFinal_C_PlayScene, In_RivalRoot) == 0x000000, "Member 'BP_PerformRivalFinal_C_PlayScene::In_RivalRoot' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_PlayScene, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'BP_PerformRivalFinal_C_PlayScene::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_PlayScene, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000018, "Member 'BP_PerformRivalFinal_C_PlayScene::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_PlayScene, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'BP_PerformRivalFinal_C_PlayScene::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_PerformRivalFinal_C_PlayScene;
 
 // Function BP_PerformRivalFinal.BP_PerformRivalFinal_C.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -363,9 +230,7 @@ struct BP_PerformRivalFinal_C_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_PerformRivalFinal_C_ReceiveEndPlay) == 0x000001, "Wrong alignment on BP_PerformRivalFinal_C_ReceiveEndPlay");
-static_assert(sizeof(BP_PerformRivalFinal_C_ReceiveEndPlay) == 0x000001, "Wrong size on BP_PerformRivalFinal_C_ReceiveEndPlay");
-static_assert(offsetof(BP_PerformRivalFinal_C_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'BP_PerformRivalFinal_C_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_BP_PerformRivalFinal_C_ReceiveEndPlay;
 
 // Function BP_PerformRivalFinal.BP_PerformRivalFinal_C.SetSubtitle
 // 0x0010 (0x0010 - 0x0000)
@@ -374,9 +239,7 @@ struct BP_PerformRivalFinal_C_SetSubtitle final
 public:
 	class FText                                   In_Subtitle;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(BP_PerformRivalFinal_C_SetSubtitle) == 0x000008, "Wrong alignment on BP_PerformRivalFinal_C_SetSubtitle");
-static_assert(sizeof(BP_PerformRivalFinal_C_SetSubtitle) == 0x000010, "Wrong size on BP_PerformRivalFinal_C_SetSubtitle");
-static_assert(offsetof(BP_PerformRivalFinal_C_SetSubtitle, In_Subtitle) == 0x000000, "Member 'BP_PerformRivalFinal_C_SetSubtitle::In_Subtitle' has a wrong offset!");
+DUMPER7_ASSERTS_BP_PerformRivalFinal_C_SetSubtitle;
 
 // Function BP_PerformRivalFinal.BP_PerformRivalFinal_C.GetMessageFromTable
 // 0x04D8 (0x04D8 - 0x0000)
@@ -408,28 +271,7 @@ public:
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x04B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_TextFromStringTable_ReturnValue;          // 0x04C8(0x0010)()
 };
-static_assert(alignof(BP_PerformRivalFinal_C_GetMessageFromTable) == 0x000008, "Wrong alignment on BP_PerformRivalFinal_C_GetMessageFromTable");
-static_assert(sizeof(BP_PerformRivalFinal_C_GetMessageFromTable) == 0x0004D8, "Wrong size on BP_PerformRivalFinal_C_GetMessageFromTable");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetMessageFromTable, In_RivalDriverId) == 0x000000, "Member 'BP_PerformRivalFinal_C_GetMessageFromTable::In_RivalDriverId' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetMessageFromTable, In_RivalOutcome) == 0x000001, "Member 'BP_PerformRivalFinal_C_GetMessageFromTable::In_RivalOutcome' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetMessageFromTable, Out_Text) == 0x000008, "Member 'BP_PerformRivalFinal_C_GetMessageFromTable::Out_Text' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetMessageFromTable, RivalShortName) == 0x000018, "Member 'BP_PerformRivalFinal_C_GetMessageFromTable::RivalShortName' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetMessageFromTable, Temp_name_Variable) == 0x000020, "Member 'BP_PerformRivalFinal_C_GetMessageFromTable::Temp_name_Variable' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetMessageFromTable, Temp_name_Variable_1) == 0x000028, "Member 'BP_PerformRivalFinal_C_GetMessageFromTable::Temp_name_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetMessageFromTable, Temp_name_Variable_2) == 0x000030, "Member 'BP_PerformRivalFinal_C_GetMessageFromTable::Temp_name_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetMessageFromTable, CallFunc_Conv_NameToText_ReturnValue) == 0x000038, "Member 'BP_PerformRivalFinal_C_GetMessageFromTable::CallFunc_Conv_NameToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetMessageFromTable, K2Node_MakeStruct_FormatArgumentData) == 0x000048, "Member 'BP_PerformRivalFinal_C_GetMessageFromTable::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetMessageFromTable, CallFunc_GetEnumeratorName_ReturnValue) == 0x000090, "Member 'BP_PerformRivalFinal_C_GetMessageFromTable::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetMessageFromTable, Temp_byte_Variable) == 0x000098, "Member 'BP_PerformRivalFinal_C_GetMessageFromTable::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetMessageFromTable, CallFunc_GetDataTableRowFromName_OutRow) == 0x0000A0, "Member 'BP_PerformRivalFinal_C_GetMessageFromTable::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetMessageFromTable, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000430, "Member 'BP_PerformRivalFinal_C_GetMessageFromTable::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetMessageFromTable, K2Node_Select_Default) == 0x000434, "Member 'BP_PerformRivalFinal_C_GetMessageFromTable::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetMessageFromTable, CallFunc_Conv_NameToText_ReturnValue_1) == 0x000440, "Member 'BP_PerformRivalFinal_C_GetMessageFromTable::CallFunc_Conv_NameToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetMessageFromTable, K2Node_MakeStruct_FormatArgumentData_1) == 0x000450, "Member 'BP_PerformRivalFinal_C_GetMessageFromTable::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetMessageFromTable, K2Node_MakeArray_Array) == 0x000498, "Member 'BP_PerformRivalFinal_C_GetMessageFromTable::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetMessageFromTable, CallFunc_Format_ReturnValue) == 0x0004A8, "Member 'BP_PerformRivalFinal_C_GetMessageFromTable::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetMessageFromTable, CallFunc_Conv_TextToString_ReturnValue) == 0x0004B8, "Member 'BP_PerformRivalFinal_C_GetMessageFromTable::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PerformRivalFinal_C_GetMessageFromTable, CallFunc_TextFromStringTable_ReturnValue) == 0x0004C8, "Member 'BP_PerformRivalFinal_C_GetMessageFromTable::CallFunc_TextFromStringTable_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_PerformRivalFinal_C_GetMessageFromTable;
 
 }
 

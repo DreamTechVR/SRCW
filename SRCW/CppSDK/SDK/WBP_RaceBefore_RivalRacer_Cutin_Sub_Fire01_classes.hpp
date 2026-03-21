@@ -35,25 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_RaceBefore_RivalRacer_Cutin_Sub_Fire01_C">();
+		BP_STATIC_CLASS_IMPL("WBP_RaceBefore_RivalRacer_Cutin_Sub_Fire01_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_RaceBefore_RivalRacer_Cutin_Sub_Fire01_C")
 	}
 	static class UWBP_RaceBefore_RivalRacer_Cutin_Sub_Fire01_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_RaceBefore_RivalRacer_Cutin_Sub_Fire01_C>();
 	}
 };
-static_assert(alignof(UWBP_RaceBefore_RivalRacer_Cutin_Sub_Fire01_C) == 0x000008, "Wrong alignment on UWBP_RaceBefore_RivalRacer_Cutin_Sub_Fire01_C");
-static_assert(sizeof(UWBP_RaceBefore_RivalRacer_Cutin_Sub_Fire01_C) == 0x000330, "Wrong size on UWBP_RaceBefore_RivalRacer_Cutin_Sub_Fire01_C");
-static_assert(offsetof(UWBP_RaceBefore_RivalRacer_Cutin_Sub_Fire01_C, Fire01_01) == 0x0002E0, "Member 'UWBP_RaceBefore_RivalRacer_Cutin_Sub_Fire01_C::Fire01_01' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RivalRacer_Cutin_Sub_Fire01_C, Fire01_02) == 0x0002E8, "Member 'UWBP_RaceBefore_RivalRacer_Cutin_Sub_Fire01_C::Fire01_02' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RivalRacer_Cutin_Sub_Fire01_C, Fire02_01_01) == 0x0002F0, "Member 'UWBP_RaceBefore_RivalRacer_Cutin_Sub_Fire01_C::Fire02_01_01' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RivalRacer_Cutin_Sub_Fire01_C, Fire02_01_02) == 0x0002F8, "Member 'UWBP_RaceBefore_RivalRacer_Cutin_Sub_Fire01_C::Fire02_01_02' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RivalRacer_Cutin_Sub_Fire01_C, Fire02_02) == 0x000300, "Member 'UWBP_RaceBefore_RivalRacer_Cutin_Sub_Fire01_C::Fire02_02' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RivalRacer_Cutin_Sub_Fire01_C, Fire03_01_01) == 0x000308, "Member 'UWBP_RaceBefore_RivalRacer_Cutin_Sub_Fire01_C::Fire03_01_01' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RivalRacer_Cutin_Sub_Fire01_C, Fire03_01_02) == 0x000310, "Member 'UWBP_RaceBefore_RivalRacer_Cutin_Sub_Fire01_C::Fire03_01_02' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RivalRacer_Cutin_Sub_Fire01_C, Sparks_01) == 0x000318, "Member 'UWBP_RaceBefore_RivalRacer_Cutin_Sub_Fire01_C::Sparks_01' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RivalRacer_Cutin_Sub_Fire01_C, Sparks_02) == 0x000320, "Member 'UWBP_RaceBefore_RivalRacer_Cutin_Sub_Fire01_C::Sparks_02' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RivalRacer_Cutin_Sub_Fire01_C, Sparks_03) == 0x000328, "Member 'UWBP_RaceBefore_RivalRacer_Cutin_Sub_Fire01_C::Sparks_03' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_RaceBefore_RivalRacer_Cutin_Sub_Fire01_C;
 
 }
 

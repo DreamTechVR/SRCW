@@ -152,119 +152,7 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue_5;                 // 0x0926(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0927(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController) == 0x000008, "Wrong alignment on BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController");
-static_assert(sizeof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController) == 0x000928, "Wrong size on BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, EntryPoint) == 0x000000, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_GetSystemFocusedWidgetName_ReturnValue) == 0x000004, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_GetSystemFocusedWidgetName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_Conv_NameToText_ReturnValue) == 0x000010, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_Conv_NameToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000020, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_MakeStruct_FormatArgumentData) == 0x000028, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_GetSequenceSubType_ReturnValue) == 0x000070, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_GetSequenceSubType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_GetSequenceMainType_ReturnValue) == 0x000071, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_GetSequenceMainType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_GetEnumeratorName_ReturnValue) == 0x000074, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_GetEnumeratorName_ReturnValue_1) == 0x00007C, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_GetEnumeratorName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_Conv_NameToText_ReturnValue_1) == 0x000088, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_Conv_NameToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_Conv_NameToText_ReturnValue_2) == 0x000098, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_Conv_NameToText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_MakeStruct_FormatArgumentData_1) == 0x0000A8, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_MakeStruct_FormatArgumentData_2) == 0x0000F0, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000138, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x00013C, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_Multiply_IntInt_ReturnValue) == 0x000140, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_Multiply_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_InputDebugKeyEvent_Key_11) == 0x000148, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_InputDebugKeyEvent_Key_11' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_InputDebugKeyEvent_ActionValue_11) == 0x000160, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_InputDebugKeyEvent_ActionValue_11' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_Add_IntInt_ReturnValue) == 0x000180, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_InputDebugKeyEvent_Key_10) == 0x000188, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_InputDebugKeyEvent_Key_10' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_InputDebugKeyEvent_ActionValue_10) == 0x0001A0, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_InputDebugKeyEvent_ActionValue_10' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_Conv_IntToInt64_ReturnValue) == 0x0001C0, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, Temp_struct_Variable) == 0x0001C8, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_MakeStruct_FormatArgumentData_3) == 0x0001E8, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_MakeStruct_FormatArgumentData_3' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_MakeArray_Array) == 0x000230, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_Format_ReturnValue) == 0x000240, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, Temp_struct_Variable_1) == 0x000250, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_InputDebugKeyEvent_Key_9) == 0x000268, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_InputDebugKeyEvent_Key_9' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_InputDebugKeyEvent_ActionValue_9) == 0x000280, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_InputDebugKeyEvent_ActionValue_9' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_InputDebugKeyEvent_Key_8) == 0x0002A0, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_InputDebugKeyEvent_Key_8' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_InputDebugKeyEvent_ActionValue_8) == 0x0002B8, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_InputDebugKeyEvent_ActionValue_8' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, Temp_struct_Variable_2) == 0x0002D8, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::Temp_struct_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, Temp_struct_Variable_3) == 0x0002F8, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::Temp_struct_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_InputDebugKeyEvent_Key_7) == 0x000310, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_InputDebugKeyEvent_Key_7' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_InputDebugKeyEvent_ActionValue_7) == 0x000328, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_InputDebugKeyEvent_ActionValue_7' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_InputDebugKeyEvent_Key_6) == 0x000348, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_InputDebugKeyEvent_Key_6' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_InputDebugKeyEvent_ActionValue_6) == 0x000360, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_InputDebugKeyEvent_ActionValue_6' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, Temp_struct_Variable_4) == 0x000380, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::Temp_struct_Variable_4' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, Temp_struct_Variable_5) == 0x0003A0, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::Temp_struct_Variable_5' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_InputDebugKeyEvent_Key_5) == 0x0003B8, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_InputDebugKeyEvent_Key_5' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_InputDebugKeyEvent_ActionValue_5) == 0x0003D0, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_InputDebugKeyEvent_ActionValue_5' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_InputDebugKeyEvent_Key_4) == 0x0003F0, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_InputDebugKeyEvent_Key_4' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_InputDebugKeyEvent_ActionValue_4) == 0x000408, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_InputDebugKeyEvent_ActionValue_4' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, Temp_struct_Variable_6) == 0x000428, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::Temp_struct_Variable_6' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, Temp_struct_Variable_7) == 0x000448, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::Temp_struct_Variable_7' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_InputDebugKeyEvent_Key_3) == 0x000460, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_InputDebugKeyEvent_Key_3' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_InputDebugKeyEvent_ActionValue_3) == 0x000478, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_InputDebugKeyEvent_ActionValue_3' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_InputDebugKeyEvent_Key_2) == 0x000498, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_InputDebugKeyEvent_Key_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_InputDebugKeyEvent_ActionValue_2) == 0x0004B0, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_InputDebugKeyEvent_ActionValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, Temp_struct_Variable_8) == 0x0004D0, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::Temp_struct_Variable_8' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, Temp_struct_Variable_9) == 0x0004F0, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::Temp_struct_Variable_9' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_InputDebugKeyEvent_Key_1) == 0x000508, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_InputDebugKeyEvent_Key_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_InputDebugKeyEvent_ActionValue_1) == 0x000520, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_InputDebugKeyEvent_ActionValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_InputDebugKeyEvent_Key) == 0x000540, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_InputDebugKeyEvent_Key' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_InputDebugKeyEvent_ActionValue) == 0x000558, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_InputDebugKeyEvent_ActionValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, Temp_struct_Variable_10) == 0x000578, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::Temp_struct_Variable_10' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, Temp_struct_Variable_11) == 0x000598, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::Temp_struct_Variable_11' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_Event_BeforeType) == 0x0005B0, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_Event_BeforeType' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_Event_AfterType) == 0x0005B1, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_Event_AfterType' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_Event_InPointerEvent) == 0x0005B8, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_Event_InPointerEvent' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue) == 0x000630, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_1) == 0x000640, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_Conv_StringToText_ReturnValue) == 0x000650, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_Conv_StringToText_ReturnValue_1) == 0x000660, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_MakeStruct_FormatArgumentData_4) == 0x000670, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_MakeStruct_FormatArgumentData_4' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_MakeStruct_FormatArgumentData_5) == 0x0006B8, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_MakeStruct_FormatArgumentData_5' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_GetRegisteredMenu_ReturnValue) == 0x000700, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_GetRegisteredMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_MakeArray_Array_1) == 0x000708, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_DynamicCast_AsUnion_UIButton_Base) == 0x000718, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_DynamicCast_AsUnion_UIButton_Base' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_DynamicCast_bSuccess) == 0x000720, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_Format_ReturnValue_1) == 0x000728, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_Event_DeltaSeconds) == 0x000738, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_GetLastHoveredObject_ReturnValue) == 0x000740, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_GetLastHoveredObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_IsValid_ReturnValue) == 0x000748, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_GetObjectName_ReturnValue) == 0x000750, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_GetObjectName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_IsPlayInEditor_ReturnValue) == 0x000760, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_IsPlayInEditor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_SelectString_ReturnValue) == 0x000768, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_SelectString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_Conv_StringToText_ReturnValue_2) == 0x000778, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_Conv_StringToText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_GetAllWidgetsOfClass_FoundWidgets) == 0x000788, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_GetAllWidgetsOfClass_FoundWidgets' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_MakeStruct_FormatArgumentData_6) == 0x000798, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_MakeStruct_FormatArgumentData_6' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_Array_Length_ReturnValue) == 0x0007E0, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_GetRegisteredMenu_ReturnValue_1) == 0x0007E8, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_GetRegisteredMenu_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_GetCurrentInputType_ReturnValue) == 0x0007F0, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_IsValid_ReturnValue_1) == 0x0007F1, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_2) == 0x0007F8, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_GetObjectName_ReturnValue_1) == 0x000808, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_GetObjectName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_Conv_StringToText_ReturnValue_3) == 0x000818, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_Conv_StringToText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_SelectString_ReturnValue_1) == 0x000828, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_SelectString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_MakeStruct_FormatArgumentData_7) == 0x000838, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_MakeStruct_FormatArgumentData_7' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_Conv_StringToText_ReturnValue_4) == 0x000880, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_Conv_StringToText_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_IsShippingBuild_ReturnValue) == 0x000890, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_IsShippingBuild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_MakeStruct_FormatArgumentData_8) == 0x000898, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_MakeStruct_FormatArgumentData_8' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_MakeArray_Array_2) == 0x0008E0, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_MakeArray_Array_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, Temp_int_Array_Index_Variable) == 0x0008F0, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_Format_ReturnValue_2) == 0x0008F8, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_Format_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_Array_Get_Item) == 0x000908, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, K2Node_CustomEvent_KeyType) == 0x000910, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::K2Node_CustomEvent_KeyType' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_IsShippingBuild_ReturnValue_1) == 0x000911, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_IsShippingBuild_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_BooleanAND_ReturnValue) == 0x000912, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_BooleanAND_ReturnValue_1) == 0x000913, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_BT_IsLibraryInitialized_ReturnValue) == 0x000914, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_BT_IsLibraryInitialized_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_BT_IsLibraryInitialized_ReturnValue_1) == 0x000915, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_BT_IsLibraryInitialized_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_IsShippingBuild_ReturnValue_2) == 0x000916, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_IsShippingBuild_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_BooleanAND_ReturnValue_2) == 0x000917, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, Temp_int_Loop_Counter_Variable) == 0x000918, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_Less_IntInt_ReturnValue) == 0x00091C, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_Add_IntInt_ReturnValue_1) == 0x000920, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_BooleanAND_ReturnValue_3) == 0x000924, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_BooleanAND_ReturnValue_4) == 0x000925, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_BooleanAND_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_BooleanAND_ReturnValue_5) == 0x000926, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_BooleanAND_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController, CallFunc_BooleanOR_ReturnValue) == 0x000927, "Member 'BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuPlayerController_C_ExecuteUbergraph_BP_MenuPlayerController;
 
 // Function BP_MenuPlayerController.BP_MenuPlayerController_C.InpActEvt_F9_K2Node_InputDebugKeyEvent_4
 // 0x0038 (0x0038 - 0x0000)
@@ -274,10 +162,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FInputActionValue                      ActionValue;                                       // 0x0018(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_MenuPlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_4) == 0x000008, "Wrong alignment on BP_MenuPlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_4");
-static_assert(sizeof(BP_MenuPlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_4) == 0x000038, "Wrong size on BP_MenuPlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_4");
-static_assert(offsetof(BP_MenuPlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_4, Key) == 0x000000, "Member 'BP_MenuPlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_4::Key' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_4, ActionValue) == 0x000018, "Member 'BP_MenuPlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_4::ActionValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuPlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_4;
 
 // Function BP_MenuPlayerController.BP_MenuPlayerController_C.InpActEvt_F9_K2Node_InputDebugKeyEvent_5
 // 0x0038 (0x0038 - 0x0000)
@@ -287,10 +172,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FInputActionValue                      ActionValue;                                       // 0x0018(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_MenuPlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_5) == 0x000008, "Wrong alignment on BP_MenuPlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_5");
-static_assert(sizeof(BP_MenuPlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_5) == 0x000038, "Wrong size on BP_MenuPlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_5");
-static_assert(offsetof(BP_MenuPlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_5, Key) == 0x000000, "Member 'BP_MenuPlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_5::Key' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_5, ActionValue) == 0x000018, "Member 'BP_MenuPlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_5::ActionValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuPlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_5;
 
 // Function BP_MenuPlayerController.BP_MenuPlayerController_C.InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_10
 // 0x0038 (0x0038 - 0x0000)
@@ -300,10 +182,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FInputActionValue                      ActionValue;                                       // 0x0018(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_MenuPlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_10) == 0x000008, "Wrong alignment on BP_MenuPlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_10");
-static_assert(sizeof(BP_MenuPlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_10) == 0x000038, "Wrong size on BP_MenuPlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_10");
-static_assert(offsetof(BP_MenuPlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_10, Key) == 0x000000, "Member 'BP_MenuPlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_10::Key' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_10, ActionValue) == 0x000018, "Member 'BP_MenuPlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_10::ActionValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuPlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_10;
 
 // Function BP_MenuPlayerController.BP_MenuPlayerController_C.InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_11
 // 0x0038 (0x0038 - 0x0000)
@@ -313,10 +192,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FInputActionValue                      ActionValue;                                       // 0x0018(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_MenuPlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_11) == 0x000008, "Wrong alignment on BP_MenuPlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_11");
-static_assert(sizeof(BP_MenuPlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_11) == 0x000038, "Wrong size on BP_MenuPlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_11");
-static_assert(offsetof(BP_MenuPlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_11, Key) == 0x000000, "Member 'BP_MenuPlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_11::Key' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_11, ActionValue) == 0x000018, "Member 'BP_MenuPlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_11::ActionValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuPlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_11;
 
 // Function BP_MenuPlayerController.BP_MenuPlayerController_C.InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_8
 // 0x0038 (0x0038 - 0x0000)
@@ -326,10 +202,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FInputActionValue                      ActionValue;                                       // 0x0018(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_MenuPlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_8) == 0x000008, "Wrong alignment on BP_MenuPlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_8");
-static_assert(sizeof(BP_MenuPlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_8) == 0x000038, "Wrong size on BP_MenuPlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_8");
-static_assert(offsetof(BP_MenuPlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_8, Key) == 0x000000, "Member 'BP_MenuPlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_8::Key' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_8, ActionValue) == 0x000018, "Member 'BP_MenuPlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_8::ActionValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuPlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_8;
 
 // Function BP_MenuPlayerController.BP_MenuPlayerController_C.InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_9
 // 0x0038 (0x0038 - 0x0000)
@@ -339,10 +212,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FInputActionValue                      ActionValue;                                       // 0x0018(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_MenuPlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_9) == 0x000008, "Wrong alignment on BP_MenuPlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_9");
-static_assert(sizeof(BP_MenuPlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_9) == 0x000038, "Wrong size on BP_MenuPlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_9");
-static_assert(offsetof(BP_MenuPlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_9, Key) == 0x000000, "Member 'BP_MenuPlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_9::Key' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_9, ActionValue) == 0x000018, "Member 'BP_MenuPlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_9::ActionValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuPlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_9;
 
 // Function BP_MenuPlayerController.BP_MenuPlayerController_C.InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_6
 // 0x0038 (0x0038 - 0x0000)
@@ -352,10 +222,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FInputActionValue                      ActionValue;                                       // 0x0018(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_MenuPlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_6) == 0x000008, "Wrong alignment on BP_MenuPlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_6");
-static_assert(sizeof(BP_MenuPlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_6) == 0x000038, "Wrong size on BP_MenuPlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_6");
-static_assert(offsetof(BP_MenuPlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_6, Key) == 0x000000, "Member 'BP_MenuPlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_6::Key' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_6, ActionValue) == 0x000018, "Member 'BP_MenuPlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_6::ActionValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuPlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_6;
 
 // Function BP_MenuPlayerController.BP_MenuPlayerController_C.InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_7
 // 0x0038 (0x0038 - 0x0000)
@@ -365,10 +232,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FInputActionValue                      ActionValue;                                       // 0x0018(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_MenuPlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_7) == 0x000008, "Wrong alignment on BP_MenuPlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_7");
-static_assert(sizeof(BP_MenuPlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_7) == 0x000038, "Wrong size on BP_MenuPlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_7");
-static_assert(offsetof(BP_MenuPlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_7, Key) == 0x000000, "Member 'BP_MenuPlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_7::Key' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_7, ActionValue) == 0x000018, "Member 'BP_MenuPlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_7::ActionValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuPlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_7;
 
 // Function BP_MenuPlayerController.BP_MenuPlayerController_C.InpActEvt_LeftControl_K2Node_InputDebugKeyEvent_0
 // 0x0038 (0x0038 - 0x0000)
@@ -378,10 +242,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FInputActionValue                      ActionValue;                                       // 0x0018(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_MenuPlayerController_C_InpActEvt_LeftControl_K2Node_InputDebugKeyEvent_0) == 0x000008, "Wrong alignment on BP_MenuPlayerController_C_InpActEvt_LeftControl_K2Node_InputDebugKeyEvent_0");
-static_assert(sizeof(BP_MenuPlayerController_C_InpActEvt_LeftControl_K2Node_InputDebugKeyEvent_0) == 0x000038, "Wrong size on BP_MenuPlayerController_C_InpActEvt_LeftControl_K2Node_InputDebugKeyEvent_0");
-static_assert(offsetof(BP_MenuPlayerController_C_InpActEvt_LeftControl_K2Node_InputDebugKeyEvent_0, Key) == 0x000000, "Member 'BP_MenuPlayerController_C_InpActEvt_LeftControl_K2Node_InputDebugKeyEvent_0::Key' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_InpActEvt_LeftControl_K2Node_InputDebugKeyEvent_0, ActionValue) == 0x000018, "Member 'BP_MenuPlayerController_C_InpActEvt_LeftControl_K2Node_InputDebugKeyEvent_0::ActionValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuPlayerController_C_InpActEvt_LeftControl_K2Node_InputDebugKeyEvent_0;
 
 // Function BP_MenuPlayerController.BP_MenuPlayerController_C.InpActEvt_LeftControl_K2Node_InputDebugKeyEvent_1
 // 0x0038 (0x0038 - 0x0000)
@@ -391,10 +252,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FInputActionValue                      ActionValue;                                       // 0x0018(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_MenuPlayerController_C_InpActEvt_LeftControl_K2Node_InputDebugKeyEvent_1) == 0x000008, "Wrong alignment on BP_MenuPlayerController_C_InpActEvt_LeftControl_K2Node_InputDebugKeyEvent_1");
-static_assert(sizeof(BP_MenuPlayerController_C_InpActEvt_LeftControl_K2Node_InputDebugKeyEvent_1) == 0x000038, "Wrong size on BP_MenuPlayerController_C_InpActEvt_LeftControl_K2Node_InputDebugKeyEvent_1");
-static_assert(offsetof(BP_MenuPlayerController_C_InpActEvt_LeftControl_K2Node_InputDebugKeyEvent_1, Key) == 0x000000, "Member 'BP_MenuPlayerController_C_InpActEvt_LeftControl_K2Node_InputDebugKeyEvent_1::Key' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_InpActEvt_LeftControl_K2Node_InputDebugKeyEvent_1, ActionValue) == 0x000018, "Member 'BP_MenuPlayerController_C_InpActEvt_LeftControl_K2Node_InputDebugKeyEvent_1::ActionValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuPlayerController_C_InpActEvt_LeftControl_K2Node_InputDebugKeyEvent_1;
 
 // Function BP_MenuPlayerController.BP_MenuPlayerController_C.InpActEvt_LeftShift_K2Node_InputDebugKeyEvent_2
 // 0x0038 (0x0038 - 0x0000)
@@ -404,10 +262,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FInputActionValue                      ActionValue;                                       // 0x0018(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_MenuPlayerController_C_InpActEvt_LeftShift_K2Node_InputDebugKeyEvent_2) == 0x000008, "Wrong alignment on BP_MenuPlayerController_C_InpActEvt_LeftShift_K2Node_InputDebugKeyEvent_2");
-static_assert(sizeof(BP_MenuPlayerController_C_InpActEvt_LeftShift_K2Node_InputDebugKeyEvent_2) == 0x000038, "Wrong size on BP_MenuPlayerController_C_InpActEvt_LeftShift_K2Node_InputDebugKeyEvent_2");
-static_assert(offsetof(BP_MenuPlayerController_C_InpActEvt_LeftShift_K2Node_InputDebugKeyEvent_2, Key) == 0x000000, "Member 'BP_MenuPlayerController_C_InpActEvt_LeftShift_K2Node_InputDebugKeyEvent_2::Key' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_InpActEvt_LeftShift_K2Node_InputDebugKeyEvent_2, ActionValue) == 0x000018, "Member 'BP_MenuPlayerController_C_InpActEvt_LeftShift_K2Node_InputDebugKeyEvent_2::ActionValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuPlayerController_C_InpActEvt_LeftShift_K2Node_InputDebugKeyEvent_2;
 
 // Function BP_MenuPlayerController.BP_MenuPlayerController_C.InpActEvt_LeftShift_K2Node_InputDebugKeyEvent_3
 // 0x0038 (0x0038 - 0x0000)
@@ -417,10 +272,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FInputActionValue                      ActionValue;                                       // 0x0018(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_MenuPlayerController_C_InpActEvt_LeftShift_K2Node_InputDebugKeyEvent_3) == 0x000008, "Wrong alignment on BP_MenuPlayerController_C_InpActEvt_LeftShift_K2Node_InputDebugKeyEvent_3");
-static_assert(sizeof(BP_MenuPlayerController_C_InpActEvt_LeftShift_K2Node_InputDebugKeyEvent_3) == 0x000038, "Wrong size on BP_MenuPlayerController_C_InpActEvt_LeftShift_K2Node_InputDebugKeyEvent_3");
-static_assert(offsetof(BP_MenuPlayerController_C_InpActEvt_LeftShift_K2Node_InputDebugKeyEvent_3, Key) == 0x000000, "Member 'BP_MenuPlayerController_C_InpActEvt_LeftShift_K2Node_InputDebugKeyEvent_3::Key' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_InpActEvt_LeftShift_K2Node_InputDebugKeyEvent_3, ActionValue) == 0x000018, "Member 'BP_MenuPlayerController_C_InpActEvt_LeftShift_K2Node_InputDebugKeyEvent_3::ActionValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuPlayerController_C_InpActEvt_LeftShift_K2Node_InputDebugKeyEvent_3;
 
 // Function BP_MenuPlayerController.BP_MenuPlayerController_C.KE_DebugInput
 // 0x0001 (0x0001 - 0x0000)
@@ -429,9 +281,7 @@ struct BP_MenuPlayerController_C_KE_DebugInput final
 public:
 	EMenuInputKey                                 KeyType;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuPlayerController_C_KE_DebugInput) == 0x000001, "Wrong alignment on BP_MenuPlayerController_C_KE_DebugInput");
-static_assert(sizeof(BP_MenuPlayerController_C_KE_DebugInput) == 0x000001, "Wrong size on BP_MenuPlayerController_C_KE_DebugInput");
-static_assert(offsetof(BP_MenuPlayerController_C_KE_DebugInput, KeyType) == 0x000000, "Member 'BP_MenuPlayerController_C_KE_DebugInput::KeyType' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuPlayerController_C_KE_DebugInput;
 
 // Function BP_MenuPlayerController.BP_MenuPlayerController_C.OnChangeControllerInputType
 // 0x0002 (0x0002 - 0x0000)
@@ -441,10 +291,7 @@ public:
 	EAppControllerInputType                       BeforeType;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EAppControllerInputType                       AfterType;                                         // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuPlayerController_C_OnChangeControllerInputType) == 0x000001, "Wrong alignment on BP_MenuPlayerController_C_OnChangeControllerInputType");
-static_assert(sizeof(BP_MenuPlayerController_C_OnChangeControllerInputType) == 0x000002, "Wrong size on BP_MenuPlayerController_C_OnChangeControllerInputType");
-static_assert(offsetof(BP_MenuPlayerController_C_OnChangeControllerInputType, BeforeType) == 0x000000, "Member 'BP_MenuPlayerController_C_OnChangeControllerInputType::BeforeType' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_OnChangeControllerInputType, AfterType) == 0x000001, "Member 'BP_MenuPlayerController_C_OnChangeControllerInputType::AfterType' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuPlayerController_C_OnChangeControllerInputType;
 
 // Function BP_MenuPlayerController.BP_MenuPlayerController_C.OnMousePointerEventBP
 // 0x0078 (0x0078 - 0x0000)
@@ -453,9 +300,7 @@ struct BP_MenuPlayerController_C_OnMousePointerEventBP final
 public:
 	struct FPointerEvent                          InPointerEvent;                                    // 0x0000(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(BP_MenuPlayerController_C_OnMousePointerEventBP) == 0x000008, "Wrong alignment on BP_MenuPlayerController_C_OnMousePointerEventBP");
-static_assert(sizeof(BP_MenuPlayerController_C_OnMousePointerEventBP) == 0x000078, "Wrong size on BP_MenuPlayerController_C_OnMousePointerEventBP");
-static_assert(offsetof(BP_MenuPlayerController_C_OnMousePointerEventBP, InPointerEvent) == 0x000000, "Member 'BP_MenuPlayerController_C_OnMousePointerEventBP::InPointerEvent' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuPlayerController_C_OnMousePointerEventBP;
 
 // Function BP_MenuPlayerController.BP_MenuPlayerController_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -464,9 +309,7 @@ struct BP_MenuPlayerController_C_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuPlayerController_C_ReceiveTick) == 0x000004, "Wrong alignment on BP_MenuPlayerController_C_ReceiveTick");
-static_assert(sizeof(BP_MenuPlayerController_C_ReceiveTick) == 0x000004, "Wrong size on BP_MenuPlayerController_C_ReceiveTick");
-static_assert(offsetof(BP_MenuPlayerController_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'BP_MenuPlayerController_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuPlayerController_C_ReceiveTick;
 
 // Function BP_MenuPlayerController.BP_MenuPlayerController_C.IsFadeClear
 // 0x0018 (0x0018 - 0x0000)
@@ -480,13 +323,7 @@ public:
 	bool                                          CallFunc_IsPlayingFade_ReturnValue;                // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuPlayerController_C_IsFadeClear) == 0x000008, "Wrong alignment on BP_MenuPlayerController_C_IsFadeClear");
-static_assert(sizeof(BP_MenuPlayerController_C_IsFadeClear) == 0x000018, "Wrong size on BP_MenuPlayerController_C_IsFadeClear");
-static_assert(offsetof(BP_MenuPlayerController_C_IsFadeClear, ReturnValue) == 0x000000, "Member 'BP_MenuPlayerController_C_IsFadeClear::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_IsFadeClear, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000008, "Member 'BP_MenuPlayerController_C_IsFadeClear::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_IsFadeClear, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'BP_MenuPlayerController_C_IsFadeClear::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_IsFadeClear, CallFunc_IsPlayingFade_ReturnValue) == 0x000011, "Member 'BP_MenuPlayerController_C_IsFadeClear::CallFunc_IsPlayingFade_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_IsFadeClear, CallFunc_Not_PreBool_ReturnValue) == 0x000012, "Member 'BP_MenuPlayerController_C_IsFadeClear::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuPlayerController_C_IsFadeClear;
 
 // Function BP_MenuPlayerController.BP_MenuPlayerController_C.OnIsMenuInputEnabled
 // 0x0002 (0x0002 - 0x0000)
@@ -496,10 +333,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsFadeClear_ReturnValue;                  // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuPlayerController_C_OnIsMenuInputEnabled) == 0x000001, "Wrong alignment on BP_MenuPlayerController_C_OnIsMenuInputEnabled");
-static_assert(sizeof(BP_MenuPlayerController_C_OnIsMenuInputEnabled) == 0x000002, "Wrong size on BP_MenuPlayerController_C_OnIsMenuInputEnabled");
-static_assert(offsetof(BP_MenuPlayerController_C_OnIsMenuInputEnabled, ReturnValue) == 0x000000, "Member 'BP_MenuPlayerController_C_OnIsMenuInputEnabled::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_OnIsMenuInputEnabled, CallFunc_IsFadeClear_ReturnValue) == 0x000001, "Member 'BP_MenuPlayerController_C_OnIsMenuInputEnabled::CallFunc_IsFadeClear_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuPlayerController_C_OnIsMenuInputEnabled;
 
 // Function BP_MenuPlayerController.BP_MenuPlayerController_C.OnIsSubMenuInputEnabled
 // 0x0002 (0x0002 - 0x0000)
@@ -509,10 +343,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsFadeClear_ReturnValue;                  // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuPlayerController_C_OnIsSubMenuInputEnabled) == 0x000001, "Wrong alignment on BP_MenuPlayerController_C_OnIsSubMenuInputEnabled");
-static_assert(sizeof(BP_MenuPlayerController_C_OnIsSubMenuInputEnabled) == 0x000002, "Wrong size on BP_MenuPlayerController_C_OnIsSubMenuInputEnabled");
-static_assert(offsetof(BP_MenuPlayerController_C_OnIsSubMenuInputEnabled, ReturnValue) == 0x000000, "Member 'BP_MenuPlayerController_C_OnIsSubMenuInputEnabled::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuPlayerController_C_OnIsSubMenuInputEnabled, CallFunc_IsFadeClear_ReturnValue) == 0x000001, "Member 'BP_MenuPlayerController_C_OnIsSubMenuInputEnabled::CallFunc_IsFadeClear_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuPlayerController_C_OnIsSubMenuInputEnabled;
 
 }
 

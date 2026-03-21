@@ -36,19 +36,7 @@ public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0044(0x0004)()
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0048(0x0010)()
 };
-static_assert(alignof(WBP_TitleMenu_Sub_Btn_C_ExecuteUbergraph_WBP_TitleMenu_Sub_Btn) == 0x000008, "Wrong alignment on WBP_TitleMenu_Sub_Btn_C_ExecuteUbergraph_WBP_TitleMenu_Sub_Btn");
-static_assert(sizeof(WBP_TitleMenu_Sub_Btn_C_ExecuteUbergraph_WBP_TitleMenu_Sub_Btn) == 0x000058, "Wrong size on WBP_TitleMenu_Sub_Btn_C_ExecuteUbergraph_WBP_TitleMenu_Sub_Btn");
-static_assert(offsetof(WBP_TitleMenu_Sub_Btn_C_ExecuteUbergraph_WBP_TitleMenu_Sub_Btn, EntryPoint) == 0x000000, "Member 'WBP_TitleMenu_Sub_Btn_C_ExecuteUbergraph_WBP_TitleMenu_Sub_Btn::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_TitleMenu_Sub_Btn_C_ExecuteUbergraph_WBP_TitleMenu_Sub_Btn, CallFunc_GetSoundHandle_ReturnValue) == 0x000004, "Member 'WBP_TitleMenu_Sub_Btn_C_ExecuteUbergraph_WBP_TitleMenu_Sub_Btn::CallFunc_GetSoundHandle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TitleMenu_Sub_Btn_C_ExecuteUbergraph_WBP_TitleMenu_Sub_Btn, CallFunc_Stop_ReturnValue) == 0x000008, "Member 'WBP_TitleMenu_Sub_Btn_C_ExecuteUbergraph_WBP_TitleMenu_Sub_Btn::CallFunc_Stop_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TitleMenu_Sub_Btn_C_ExecuteUbergraph_WBP_TitleMenu_Sub_Btn, K2Node_CreateDelegate_OutputDelegate) == 0x00000C, "Member 'WBP_TitleMenu_Sub_Btn_C_ExecuteUbergraph_WBP_TitleMenu_Sub_Btn::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_TitleMenu_Sub_Btn_C_ExecuteUbergraph_WBP_TitleMenu_Sub_Btn, CallFunc_PlayAnimation_ReturnValue) == 0x000020, "Member 'WBP_TitleMenu_Sub_Btn_C_ExecuteUbergraph_WBP_TitleMenu_Sub_Btn::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TitleMenu_Sub_Btn_C_ExecuteUbergraph_WBP_TitleMenu_Sub_Btn, CallFunc_PlayAnimation_ReturnValue_1) == 0x000028, "Member 'WBP_TitleMenu_Sub_Btn_C_ExecuteUbergraph_WBP_TitleMenu_Sub_Btn::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TitleMenu_Sub_Btn_C_ExecuteUbergraph_WBP_TitleMenu_Sub_Btn, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000030, "Member 'WBP_TitleMenu_Sub_Btn_C_ExecuteUbergraph_WBP_TitleMenu_Sub_Btn::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TitleMenu_Sub_Btn_C_ExecuteUbergraph_WBP_TitleMenu_Sub_Btn, CallFunc_PlayAnimation_ReturnValue_2) == 0x000038, "Member 'WBP_TitleMenu_Sub_Btn_C_ExecuteUbergraph_WBP_TitleMenu_Sub_Btn::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_TitleMenu_Sub_Btn_C_ExecuteUbergraph_WBP_TitleMenu_Sub_Btn, K2Node_CustomEvent_InNeed) == 0x000040, "Member 'WBP_TitleMenu_Sub_Btn_C_ExecuteUbergraph_WBP_TitleMenu_Sub_Btn::K2Node_CustomEvent_InNeed' has a wrong offset!");
-static_assert(offsetof(WBP_TitleMenu_Sub_Btn_C_ExecuteUbergraph_WBP_TitleMenu_Sub_Btn, CallFunc_SoundPlay_ReturnValue) == 0x000044, "Member 'WBP_TitleMenu_Sub_Btn_C_ExecuteUbergraph_WBP_TitleMenu_Sub_Btn::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TitleMenu_Sub_Btn_C_ExecuteUbergraph_WBP_TitleMenu_Sub_Btn, CallFunc_MakeLiteralText_ReturnValue) == 0x000048, "Member 'WBP_TitleMenu_Sub_Btn_C_ExecuteUbergraph_WBP_TitleMenu_Sub_Btn::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TitleMenu_Sub_Btn_C_ExecuteUbergraph_WBP_TitleMenu_Sub_Btn;
 
 // Function WBP_TitleMenu_Sub_Btn.WBP_TitleMenu_Sub_Btn_C.SetNeedInAnim
 // 0x0001 (0x0001 - 0x0000)
@@ -57,9 +45,7 @@ struct WBP_TitleMenu_Sub_Btn_C_SetNeedInAnim final
 public:
 	bool                                          InNeed;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TitleMenu_Sub_Btn_C_SetNeedInAnim) == 0x000001, "Wrong alignment on WBP_TitleMenu_Sub_Btn_C_SetNeedInAnim");
-static_assert(sizeof(WBP_TitleMenu_Sub_Btn_C_SetNeedInAnim) == 0x000001, "Wrong size on WBP_TitleMenu_Sub_Btn_C_SetNeedInAnim");
-static_assert(offsetof(WBP_TitleMenu_Sub_Btn_C_SetNeedInAnim, InNeed) == 0x000000, "Member 'WBP_TitleMenu_Sub_Btn_C_SetNeedInAnim::InNeed' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TitleMenu_Sub_Btn_C_SetNeedInAnim;
 
 }
 

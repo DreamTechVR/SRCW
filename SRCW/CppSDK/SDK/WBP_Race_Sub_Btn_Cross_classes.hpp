@@ -70,26 +70,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_Sub_Btn_Cross_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_Sub_Btn_Cross_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_Sub_Btn_Cross_C")
 	}
 	static class UWBP_Race_Sub_Btn_Cross_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_Sub_Btn_Cross_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_Sub_Btn_Cross_C) == 0x000008, "Wrong alignment on UWBP_Race_Sub_Btn_Cross_C");
-static_assert(sizeof(UWBP_Race_Sub_Btn_Cross_C) == 0x000340, "Wrong size on UWBP_Race_Sub_Btn_Cross_C");
-static_assert(offsetof(UWBP_Race_Sub_Btn_Cross_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Race_Sub_Btn_Cross_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_Btn_Cross_C, Btn_Push_Loop) == 0x0002E8, "Member 'UWBP_Race_Sub_Btn_Cross_C::Btn_Push_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_Btn_Cross_C, Btn_Active) == 0x0002F0, "Member 'UWBP_Race_Sub_Btn_Cross_C::Btn_Active' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_Btn_Cross_C, Btn_Cross) == 0x0002F8, "Member 'UWBP_Race_Sub_Btn_Cross_C::Btn_Cross' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_Btn_Cross_C, PAT_Bottom) == 0x000300, "Member 'UWBP_Race_Sub_Btn_Cross_C::PAT_Bottom' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_Btn_Cross_C, PAT_Left) == 0x000308, "Member 'UWBP_Race_Sub_Btn_Cross_C::PAT_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_Btn_Cross_C, PAT_Right) == 0x000310, "Member 'UWBP_Race_Sub_Btn_Cross_C::PAT_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_Btn_Cross_C, PAT_Up) == 0x000318, "Member 'UWBP_Race_Sub_Btn_Cross_C::PAT_Up' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_Btn_Cross_C, ButtonIndex) == 0x000320, "Member 'UWBP_Race_Sub_Btn_Cross_C::ButtonIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_Btn_Cross_C, RightCrossButtons) == 0x000328, "Member 'UWBP_Race_Sub_Btn_Cross_C::RightCrossButtons' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_Btn_Cross_C, CurrentAnim) == 0x000338, "Member 'UWBP_Race_Sub_Btn_Cross_C::CurrentAnim' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_Sub_Btn_Cross_C;
 
 }
 

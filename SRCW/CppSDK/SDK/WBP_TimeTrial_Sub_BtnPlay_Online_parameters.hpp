@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "UMG_structs.hpp"
 #include "UnionUI_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "UMG_structs.hpp"
 
 
 namespace SDK::Params
@@ -29,12 +29,7 @@ public:
 	struct FFocusEvent                            K2Node_Event_InFocusEvent_1;                       // 0x0010(0x0008)(NoDestructor)
 	struct FFocusEvent                            K2Node_Event_InFocusEvent;                         // 0x0018(0x0008)(NoDestructor)
 };
-static_assert(alignof(WBP_TimeTrial_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TimeTrial_Sub_BtnPlay_Online) == 0x000008, "Wrong alignment on WBP_TimeTrial_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TimeTrial_Sub_BtnPlay_Online");
-static_assert(sizeof(WBP_TimeTrial_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TimeTrial_Sub_BtnPlay_Online) == 0x000020, "Wrong size on WBP_TimeTrial_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TimeTrial_Sub_BtnPlay_Online");
-static_assert(offsetof(WBP_TimeTrial_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TimeTrial_Sub_BtnPlay_Online, EntryPoint) == 0x000000, "Member 'WBP_TimeTrial_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TimeTrial_Sub_BtnPlay_Online::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TimeTrial_Sub_BtnPlay_Online, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_TimeTrial_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TimeTrial_Sub_BtnPlay_Online::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TimeTrial_Sub_BtnPlay_Online, K2Node_Event_InFocusEvent_1) == 0x000010, "Member 'WBP_TimeTrial_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TimeTrial_Sub_BtnPlay_Online::K2Node_Event_InFocusEvent_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TimeTrial_Sub_BtnPlay_Online, K2Node_Event_InFocusEvent) == 0x000018, "Member 'WBP_TimeTrial_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TimeTrial_Sub_BtnPlay_Online::K2Node_Event_InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TimeTrial_Sub_BtnPlay_Online;
 
 // Function WBP_TimeTrial_Sub_BtnPlay_Online.WBP_TimeTrial_Sub_BtnPlay_Online_C.OnFocusLost
 // 0x0008 (0x0008 - 0x0000)
@@ -43,9 +38,7 @@ struct WBP_TimeTrial_Sub_BtnPlay_Online_C_OnFocusLost final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_TimeTrial_Sub_BtnPlay_Online_C_OnFocusLost) == 0x000004, "Wrong alignment on WBP_TimeTrial_Sub_BtnPlay_Online_C_OnFocusLost");
-static_assert(sizeof(WBP_TimeTrial_Sub_BtnPlay_Online_C_OnFocusLost) == 0x000008, "Wrong size on WBP_TimeTrial_Sub_BtnPlay_Online_C_OnFocusLost");
-static_assert(offsetof(WBP_TimeTrial_Sub_BtnPlay_Online_C_OnFocusLost, InFocusEvent) == 0x000000, "Member 'WBP_TimeTrial_Sub_BtnPlay_Online_C_OnFocusLost::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_Sub_BtnPlay_Online_C_OnFocusLost;
 
 // Function WBP_TimeTrial_Sub_BtnPlay_Online.WBP_TimeTrial_Sub_BtnPlay_Online_C.OnFocusLostImpl
 // 0x0008 (0x0008 - 0x0000)
@@ -54,9 +47,7 @@ struct WBP_TimeTrial_Sub_BtnPlay_Online_C_OnFocusLostImpl final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_TimeTrial_Sub_BtnPlay_Online_C_OnFocusLostImpl) == 0x000004, "Wrong alignment on WBP_TimeTrial_Sub_BtnPlay_Online_C_OnFocusLostImpl");
-static_assert(sizeof(WBP_TimeTrial_Sub_BtnPlay_Online_C_OnFocusLostImpl) == 0x000008, "Wrong size on WBP_TimeTrial_Sub_BtnPlay_Online_C_OnFocusLostImpl");
-static_assert(offsetof(WBP_TimeTrial_Sub_BtnPlay_Online_C_OnFocusLostImpl, InFocusEvent) == 0x000000, "Member 'WBP_TimeTrial_Sub_BtnPlay_Online_C_OnFocusLostImpl::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_Sub_BtnPlay_Online_C_OnFocusLostImpl;
 
 // Function WBP_TimeTrial_Sub_BtnPlay_Online.WBP_TimeTrial_Sub_BtnPlay_Online_C.OnFocusReceived
 // 0x0268 (0x0268 - 0x0000)
@@ -69,13 +60,7 @@ public:
 	struct FEventReply                            CallFunc_OnFocusReceived_ReturnValue;              // 0x00F8(0x00B8)()
 	struct FEventReply                            CallFunc_OnFocusReceivedImpl_ReturnValue;          // 0x01B0(0x00B8)()
 };
-static_assert(alignof(WBP_TimeTrial_Sub_BtnPlay_Online_C_OnFocusReceived) == 0x000008, "Wrong alignment on WBP_TimeTrial_Sub_BtnPlay_Online_C_OnFocusReceived");
-static_assert(sizeof(WBP_TimeTrial_Sub_BtnPlay_Online_C_OnFocusReceived) == 0x000268, "Wrong size on WBP_TimeTrial_Sub_BtnPlay_Online_C_OnFocusReceived");
-static_assert(offsetof(WBP_TimeTrial_Sub_BtnPlay_Online_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'WBP_TimeTrial_Sub_BtnPlay_Online_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_BtnPlay_Online_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'WBP_TimeTrial_Sub_BtnPlay_Online_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_BtnPlay_Online_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'WBP_TimeTrial_Sub_BtnPlay_Online_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_BtnPlay_Online_C_OnFocusReceived, CallFunc_OnFocusReceived_ReturnValue) == 0x0000F8, "Member 'WBP_TimeTrial_Sub_BtnPlay_Online_C_OnFocusReceived::CallFunc_OnFocusReceived_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_BtnPlay_Online_C_OnFocusReceived, CallFunc_OnFocusReceivedImpl_ReturnValue) == 0x0001B0, "Member 'WBP_TimeTrial_Sub_BtnPlay_Online_C_OnFocusReceived::CallFunc_OnFocusReceivedImpl_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_Sub_BtnPlay_Online_C_OnFocusReceived;
 
 // Function WBP_TimeTrial_Sub_BtnPlay_Online.WBP_TimeTrial_Sub_BtnPlay_Online_C.SetLock
 // 0x0020 (0x0020 - 0x0000)
@@ -94,17 +79,7 @@ public:
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TimeTrial_Sub_BtnPlay_Online_C_SetLock) == 0x000008, "Wrong alignment on WBP_TimeTrial_Sub_BtnPlay_Online_C_SetLock");
-static_assert(sizeof(WBP_TimeTrial_Sub_BtnPlay_Online_C_SetLock) == 0x000020, "Wrong size on WBP_TimeTrial_Sub_BtnPlay_Online_C_SetLock");
-static_assert(offsetof(WBP_TimeTrial_Sub_BtnPlay_Online_C_SetLock, Locking) == 0x000000, "Member 'WBP_TimeTrial_Sub_BtnPlay_Online_C_SetLock::Locking' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_BtnPlay_Online_C_SetLock, Temp_bool_Variable) == 0x000001, "Member 'WBP_TimeTrial_Sub_BtnPlay_Online_C_SetLock::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_BtnPlay_Online_C_SetLock, Temp_bool_Variable_1) == 0x000002, "Member 'WBP_TimeTrial_Sub_BtnPlay_Online_C_SetLock::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_BtnPlay_Online_C_SetLock, Temp_byte_Variable) == 0x000003, "Member 'WBP_TimeTrial_Sub_BtnPlay_Online_C_SetLock::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_BtnPlay_Online_C_SetLock, Temp_byte_Variable_1) == 0x000004, "Member 'WBP_TimeTrial_Sub_BtnPlay_Online_C_SetLock::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_BtnPlay_Online_C_SetLock, CallFunc_Not_PreBool_ReturnValue) == 0x000005, "Member 'WBP_TimeTrial_Sub_BtnPlay_Online_C_SetLock::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_BtnPlay_Online_C_SetLock, K2Node_Select_Default) == 0x000008, "Member 'WBP_TimeTrial_Sub_BtnPlay_Online_C_SetLock::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_BtnPlay_Online_C_SetLock, K2Node_Select_Default_1) == 0x000010, "Member 'WBP_TimeTrial_Sub_BtnPlay_Online_C_SetLock::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_BtnPlay_Online_C_SetLock, CallFunc_PlayAnimation_ReturnValue) == 0x000018, "Member 'WBP_TimeTrial_Sub_BtnPlay_Online_C_SetLock::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_Sub_BtnPlay_Online_C_SetLock;
 
 }
 

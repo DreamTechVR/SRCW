@@ -37,19 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABP_ItemDarkChaoHero_C">();
+		BP_STATIC_CLASS_IMPL("ABP_ItemDarkChaoHero_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABP_ItemDarkChaoHero_C")
 	}
 	static class UABP_ItemDarkChaoHero_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UABP_ItemDarkChaoHero_C>();
 	}
 };
-static_assert(alignof(UABP_ItemDarkChaoHero_C) == 0x000010, "Wrong alignment on UABP_ItemDarkChaoHero_C");
-static_assert(sizeof(UABP_ItemDarkChaoHero_C) == 0x0003B0, "Wrong size on UABP_ItemDarkChaoHero_C");
-static_assert(offsetof(UABP_ItemDarkChaoHero_C, UberGraphFrame) == 0x000370, "Member 'UABP_ItemDarkChaoHero_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChaoHero_C, AnimBlueprintExtension_PropertyAccess) == 0x000378, "Member 'UABP_ItemDarkChaoHero_C::AnimBlueprintExtension_PropertyAccess' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChaoHero_C, AnimBlueprintExtension_Base) == 0x000380, "Member 'UABP_ItemDarkChaoHero_C::AnimBlueprintExtension_Base' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChaoHero_C, AnimGraphNode_Root) == 0x000388, "Member 'UABP_ItemDarkChaoHero_C::AnimGraphNode_Root' has a wrong offset!");
+DUMPER7_ASSERTS_UABP_ItemDarkChaoHero_C;
 
 }
 

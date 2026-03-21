@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -41,23 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_SubMenu_List_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_SubMenu_List_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_SubMenu_List_C")
 	}
 	static class UWBP_CMN_SubMenu_List_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_SubMenu_List_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_SubMenu_List_C) == 0x000008, "Wrong alignment on UWBP_CMN_SubMenu_List_C");
-static_assert(sizeof(UWBP_CMN_SubMenu_List_C) == 0x000338, "Wrong size on UWBP_CMN_SubMenu_List_C");
-static_assert(offsetof(UWBP_CMN_SubMenu_List_C, UberGraphFrame) == 0x0002F0, "Member 'UWBP_CMN_SubMenu_List_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_SubMenu_List_C, VerticalBox_BtnPlay) == 0x0002F8, "Member 'UWBP_CMN_SubMenu_List_C::VerticalBox_BtnPlay' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_SubMenu_List_C, WBP_CMN_SubMenu_MenuBtn_CharaMachine) == 0x000300, "Member 'UWBP_CMN_SubMenu_List_C::WBP_CMN_SubMenu_MenuBtn_CharaMachine' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_SubMenu_List_C, WBP_CMN_SubMenu_MenuBtn_Etcetera) == 0x000308, "Member 'UWBP_CMN_SubMenu_List_C::WBP_CMN_SubMenu_MenuBtn_Etcetera' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_SubMenu_List_C, WBP_CMN_SubMenu_MenuBtn_FriendList) == 0x000310, "Member 'UWBP_CMN_SubMenu_List_C::WBP_CMN_SubMenu_MenuBtn_FriendList' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_SubMenu_List_C, WBP_CMN_SubMenu_MenuBtn_Gadget) == 0x000318, "Member 'UWBP_CMN_SubMenu_List_C::WBP_CMN_SubMenu_MenuBtn_Gadget' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_SubMenu_List_C, WBP_CMN_SubMenu_MenuBtn_Garage) == 0x000320, "Member 'UWBP_CMN_SubMenu_List_C::WBP_CMN_SubMenu_MenuBtn_Garage' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_SubMenu_List_C, Buttons) == 0x000328, "Member 'UWBP_CMN_SubMenu_List_C::Buttons' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_SubMenu_List_C;
 
 }
 

@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
-#include "UNION_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "UnionSystem_structs.hpp"
+#include "UNION_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -101,71 +101,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_HUD_Sub_GadgetIcon_Simple_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_HUD_Sub_GadgetIcon_Simple_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_HUD_Sub_GadgetIcon_Simple_C")
 	}
 	static class UWBP_Race_HUD_Sub_GadgetIcon_Simple_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_HUD_Sub_GadgetIcon_Simple_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C) == 0x000008, "Wrong alignment on UWBP_Race_HUD_Sub_GadgetIcon_Simple_C");
-static_assert(sizeof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C) == 0x0004F0, "Wrong size on UWBP_Race_HUD_Sub_GadgetIcon_Simple_C");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, Base_Btm) == 0x0002E8, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::Base_Btm' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, Base_Btm_EX) == 0x0002F0, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::Base_Btm_EX' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, Base_Top) == 0x0002F8, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::Base_Top' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, CanvasPanel_EX) == 0x000300, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::CanvasPanel_EX' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DMY_GadgetIcon_01_Btm_Center) == 0x000308, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DMY_GadgetIcon_01_Btm_Center' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DMY_GadgetIcon_01_Btm_Left) == 0x000310, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DMY_GadgetIcon_01_Btm_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DMY_GadgetIcon_01_Btm_Right) == 0x000318, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DMY_GadgetIcon_01_Btm_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DMY_GadgetIcon_01_EX_Center) == 0x000320, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DMY_GadgetIcon_01_EX_Center' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DMY_GadgetIcon_01_EX_Left) == 0x000328, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DMY_GadgetIcon_01_EX_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DMY_GadgetIcon_01_EX_Right) == 0x000330, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DMY_GadgetIcon_01_EX_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DMY_GadgetIcon_01_Top_Center) == 0x000338, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DMY_GadgetIcon_01_Top_Center' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DMY_GadgetIcon_01_Top_Left) == 0x000340, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DMY_GadgetIcon_01_Top_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DMY_GadgetIcon_01_Top_Right) == 0x000348, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DMY_GadgetIcon_01_Top_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DMY_GadgetIcon_02_Btm_Left) == 0x000350, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DMY_GadgetIcon_02_Btm_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DMY_GadgetIcon_02_Btm_Right) == 0x000358, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DMY_GadgetIcon_02_Btm_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DMY_GadgetIcon_02_EX_Left) == 0x000360, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DMY_GadgetIcon_02_EX_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DMY_GadgetIcon_02_EX_Right) == 0x000368, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DMY_GadgetIcon_02_EX_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DMY_GadgetIcon_02_Top_Left) == 0x000370, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DMY_GadgetIcon_02_Top_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DMY_GadgetIcon_02_Top_Right) == 0x000378, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DMY_GadgetIcon_02_Top_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DMY_GadgetIcon_03_Btm) == 0x000380, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DMY_GadgetIcon_03_Btm' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DMY_GadgetIcon_03_EX) == 0x000388, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DMY_GadgetIcon_03_EX' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DMY_GadgetIcon_03_Top) == 0x000390, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DMY_GadgetIcon_03_Top' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DSP_NG_01_Btm_Center) == 0x000398, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DSP_NG_01_Btm_Center' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DSP_NG_01_Btm_Left) == 0x0003A0, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DSP_NG_01_Btm_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DSP_NG_01_Btm_Right) == 0x0003A8, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DSP_NG_01_Btm_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DSP_NG_01_Top_Center) == 0x0003B0, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DSP_NG_01_Top_Center' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DSP_NG_01_Top_Left) == 0x0003B8, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DSP_NG_01_Top_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DSP_NG_01_Top_Right) == 0x0003C0, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DSP_NG_01_Top_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DSP_NG_02_Btm_Left) == 0x0003C8, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DSP_NG_02_Btm_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DSP_NG_02_Btm_Right) == 0x0003D0, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DSP_NG_02_Btm_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DSP_NG_02_Top_Left) == 0x0003D8, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DSP_NG_02_Top_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DSP_NG_02_Top_Right) == 0x0003E0, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DSP_NG_02_Top_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DSP_NG_03_Btm) == 0x0003E8, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DSP_NG_03_Btm' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DSP_NG_03_Top) == 0x0003F0, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DSP_NG_03_Top' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DSP_PAT_Cost_01_Btm_Center) == 0x0003F8, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DSP_PAT_Cost_01_Btm_Center' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DSP_PAT_Cost_01_Btm_Left) == 0x000400, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DSP_PAT_Cost_01_Btm_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DSP_PAT_Cost_01_Btm_Right) == 0x000408, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DSP_PAT_Cost_01_Btm_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DSP_PAT_Cost_01_EX_Center) == 0x000410, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DSP_PAT_Cost_01_EX_Center' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DSP_PAT_Cost_01_EX_Left) == 0x000418, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DSP_PAT_Cost_01_EX_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DSP_PAT_Cost_01_EX_Right) == 0x000420, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DSP_PAT_Cost_01_EX_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DSP_PAT_Cost_01_Top_Center) == 0x000428, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DSP_PAT_Cost_01_Top_Center' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DSP_PAT_Cost_01_Top_Left) == 0x000430, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DSP_PAT_Cost_01_Top_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DSP_PAT_Cost_01_Top_Right) == 0x000438, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DSP_PAT_Cost_01_Top_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DSP_PAT_Cost_02_Btm_Left) == 0x000440, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DSP_PAT_Cost_02_Btm_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DSP_PAT_Cost_02_Btm_Right) == 0x000448, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DSP_PAT_Cost_02_Btm_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DSP_PAT_Cost_02_EX_Left) == 0x000450, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DSP_PAT_Cost_02_EX_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DSP_PAT_Cost_02_EX_Right) == 0x000458, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DSP_PAT_Cost_02_EX_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DSP_PAT_Cost_02_Top_Left) == 0x000460, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DSP_PAT_Cost_02_Top_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DSP_PAT_Cost_02_Top_Right) == 0x000468, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DSP_PAT_Cost_02_Top_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DSP_PAT_Cost_03_Btm) == 0x000470, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DSP_PAT_Cost_03_Btm' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DSP_PAT_Cost_03_EX) == 0x000478, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DSP_PAT_Cost_03_EX' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DSP_PAT_Cost_03_Top) == 0x000480, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DSP_PAT_Cost_03_Top' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, PlateRankID) == 0x000488, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::PlateRankID' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, Cost01Arr) == 0x000490, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::Cost01Arr' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_GadgetIcon_Simple_C, DisplayMap) == 0x0004A0, "Member 'UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::DisplayMap' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_HUD_Sub_GadgetIcon_Simple_C;
 
 }
 

@@ -29,14 +29,7 @@ public:
 	int32                                         Temp_int_Variable_2;                               // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_Select_Default;                             // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_RaceBefore_RivalRacer_Sub_RivalRacerInfo_C_SetRivalType) == 0x000004, "Wrong alignment on WBP_RaceBefore_RivalRacer_Sub_RivalRacerInfo_C_SetRivalType");
-static_assert(sizeof(WBP_RaceBefore_RivalRacer_Sub_RivalRacerInfo_C_SetRivalType) == 0x000014, "Wrong size on WBP_RaceBefore_RivalRacer_Sub_RivalRacerInfo_C_SetRivalType");
-static_assert(offsetof(WBP_RaceBefore_RivalRacer_Sub_RivalRacerInfo_C_SetRivalType, In_RivalType) == 0x000000, "Member 'WBP_RaceBefore_RivalRacer_Sub_RivalRacerInfo_C_SetRivalType::In_RivalType' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_RivalRacer_Sub_RivalRacerInfo_C_SetRivalType, Temp_byte_Variable) == 0x000001, "Member 'WBP_RaceBefore_RivalRacer_Sub_RivalRacerInfo_C_SetRivalType::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_RivalRacer_Sub_RivalRacerInfo_C_SetRivalType, Temp_int_Variable) == 0x000004, "Member 'WBP_RaceBefore_RivalRacer_Sub_RivalRacerInfo_C_SetRivalType::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_RivalRacer_Sub_RivalRacerInfo_C_SetRivalType, Temp_int_Variable_1) == 0x000008, "Member 'WBP_RaceBefore_RivalRacer_Sub_RivalRacerInfo_C_SetRivalType::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_RivalRacer_Sub_RivalRacerInfo_C_SetRivalType, Temp_int_Variable_2) == 0x00000C, "Member 'WBP_RaceBefore_RivalRacer_Sub_RivalRacerInfo_C_SetRivalType::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_RivalRacer_Sub_RivalRacerInfo_C_SetRivalType, K2Node_Select_Default) == 0x000010, "Member 'WBP_RaceBefore_RivalRacer_Sub_RivalRacerInfo_C_SetRivalType::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_RaceBefore_RivalRacer_Sub_RivalRacerInfo_C_SetRivalType;
 
 // Function WBP_RaceBefore_RivalRacer_Sub_RivalRacerInfo.WBP_RaceBefore_RivalRacer_Sub_RivalRacerInfo_C.SetText
 // 0x0010 (0x0010 - 0x0000)
@@ -45,9 +38,7 @@ struct WBP_RaceBefore_RivalRacer_Sub_RivalRacerInfo_C_SetText final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_RaceBefore_RivalRacer_Sub_RivalRacerInfo_C_SetText) == 0x000008, "Wrong alignment on WBP_RaceBefore_RivalRacer_Sub_RivalRacerInfo_C_SetText");
-static_assert(sizeof(WBP_RaceBefore_RivalRacer_Sub_RivalRacerInfo_C_SetText) == 0x000010, "Wrong size on WBP_RaceBefore_RivalRacer_Sub_RivalRacerInfo_C_SetText");
-static_assert(offsetof(WBP_RaceBefore_RivalRacer_Sub_RivalRacerInfo_C_SetText, InText) == 0x000000, "Member 'WBP_RaceBefore_RivalRacer_Sub_RivalRacerInfo_C_SetText::InText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_RaceBefore_RivalRacer_Sub_RivalRacerInfo_C_SetText;
 
 }
 

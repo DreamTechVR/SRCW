@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
+#include "UnionSystem_structs.hpp"
 
 
 namespace SDK
@@ -56,22 +56,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_HoldItemSKM_C">();
+		BP_STATIC_CLASS_IMPL("BP_HoldItemSKM_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_HoldItemSKM_C")
 	}
 	static class ABP_HoldItemSKM_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_HoldItemSKM_C>();
 	}
 };
-static_assert(alignof(ABP_HoldItemSKM_C) == 0x000008, "Wrong alignment on ABP_HoldItemSKM_C");
-static_assert(sizeof(ABP_HoldItemSKM_C) == 0x000390, "Wrong size on ABP_HoldItemSKM_C");
-static_assert(offsetof(ABP_HoldItemSKM_C, UberGraphFrame) == 0x0002C0, "Member 'ABP_HoldItemSKM_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_HoldItemSKM_C, UnionSkeletalMesh) == 0x0002C8, "Member 'ABP_HoldItemSKM_C::UnionSkeletalMesh' has a wrong offset!");
-static_assert(offsetof(ABP_HoldItemSKM_C, SkeletalMeshs) == 0x0002D0, "Member 'ABP_HoldItemSKM_C::SkeletalMeshs' has a wrong offset!");
-static_assert(offsetof(ABP_HoldItemSKM_C, AnimInstances) == 0x000320, "Member 'ABP_HoldItemSKM_C::AnimInstances' has a wrong offset!");
-static_assert(offsetof(ABP_HoldItemSKM_C, bIsPreGenerated) == 0x000370, "Member 'ABP_HoldItemSKM_C::bIsPreGenerated' has a wrong offset!");
-static_assert(offsetof(ABP_HoldItemSKM_C, HoldItemParam) == 0x000374, "Member 'ABP_HoldItemSKM_C::HoldItemParam' has a wrong offset!");
-static_assert(offsetof(ABP_HoldItemSKM_C, RareItemEffect) == 0x000388, "Member 'ABP_HoldItemSKM_C::RareItemEffect' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_HoldItemSKM_C;
 
 }
 

@@ -38,22 +38,7 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0128(0x0010)(ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0138(0x0010)()
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Time_C_SetLapTimeInfo) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Time_C_SetLapTimeInfo");
-static_assert(sizeof(WBP_Race_HUD_Sub_Time_C_SetLapTimeInfo) == 0x000148, "Wrong size on WBP_Race_HUD_Sub_Time_C_SetLapTimeInfo");
-static_assert(offsetof(WBP_Race_HUD_Sub_Time_C_SetLapTimeInfo, Minutes) == 0x000000, "Member 'WBP_Race_HUD_Sub_Time_C_SetLapTimeInfo::Minutes' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Time_C_SetLapTimeInfo, Seconds) == 0x000004, "Member 'WBP_Race_HUD_Sub_Time_C_SetLapTimeInfo::Seconds' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Time_C_SetLapTimeInfo, MilliSec) == 0x000008, "Member 'WBP_Race_HUD_Sub_Time_C_SetLapTimeInfo::MilliSec' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Time_C_SetLapTimeInfo, CallFunc_Clamp_ReturnValue) == 0x00000C, "Member 'WBP_Race_HUD_Sub_Time_C_SetLapTimeInfo::CallFunc_Clamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Time_C_SetLapTimeInfo, CallFunc_Clamp_ReturnValue_1) == 0x000010, "Member 'WBP_Race_HUD_Sub_Time_C_SetLapTimeInfo::CallFunc_Clamp_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Time_C_SetLapTimeInfo, CallFunc_Conv_IntToText_ReturnValue) == 0x000018, "Member 'WBP_Race_HUD_Sub_Time_C_SetLapTimeInfo::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Time_C_SetLapTimeInfo, CallFunc_Conv_IntToText_ReturnValue_1) == 0x000028, "Member 'WBP_Race_HUD_Sub_Time_C_SetLapTimeInfo::CallFunc_Conv_IntToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Time_C_SetLapTimeInfo, K2Node_MakeStruct_FormatArgumentData) == 0x000038, "Member 'WBP_Race_HUD_Sub_Time_C_SetLapTimeInfo::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Time_C_SetLapTimeInfo, K2Node_MakeStruct_FormatArgumentData_1) == 0x000080, "Member 'WBP_Race_HUD_Sub_Time_C_SetLapTimeInfo::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Time_C_SetLapTimeInfo, CallFunc_Clamp_ReturnValue_2) == 0x0000C8, "Member 'WBP_Race_HUD_Sub_Time_C_SetLapTimeInfo::CallFunc_Clamp_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Time_C_SetLapTimeInfo, CallFunc_Conv_IntToText_ReturnValue_2) == 0x0000D0, "Member 'WBP_Race_HUD_Sub_Time_C_SetLapTimeInfo::CallFunc_Conv_IntToText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Time_C_SetLapTimeInfo, K2Node_MakeStruct_FormatArgumentData_2) == 0x0000E0, "Member 'WBP_Race_HUD_Sub_Time_C_SetLapTimeInfo::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Time_C_SetLapTimeInfo, K2Node_MakeArray_Array) == 0x000128, "Member 'WBP_Race_HUD_Sub_Time_C_SetLapTimeInfo::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Time_C_SetLapTimeInfo, CallFunc_Format_ReturnValue) == 0x000138, "Member 'WBP_Race_HUD_Sub_Time_C_SetLapTimeInfo::CallFunc_Format_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Time_C_SetLapTimeInfo;
 
 // Function WBP_Race_HUD_Sub_Time.WBP_Race_HUD_Sub_Time_C.SetSecondsTime
 // 0x0168 (0x0168 - 0x0000)
@@ -80,25 +65,7 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0148(0x0010)(ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0158(0x0010)()
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Time_C_SetSecondsTime) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Time_C_SetSecondsTime");
-static_assert(sizeof(WBP_Race_HUD_Sub_Time_C_SetSecondsTime) == 0x000168, "Wrong size on WBP_Race_HUD_Sub_Time_C_SetSecondsTime");
-static_assert(offsetof(WBP_Race_HUD_Sub_Time_C_SetSecondsTime, Value) == 0x000000, "Member 'WBP_Race_HUD_Sub_Time_C_SetSecondsTime::Value' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Time_C_SetSecondsTime, CallFunc_FClamp_ReturnValue) == 0x000008, "Member 'WBP_Race_HUD_Sub_Time_C_SetSecondsTime::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Time_C_SetSecondsTime, CallFunc_Percent_FloatFloat_ReturnValue) == 0x000010, "Member 'WBP_Race_HUD_Sub_Time_C_SetSecondsTime::CallFunc_Percent_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Time_C_SetSecondsTime, CallFunc_FFloor_ReturnValue) == 0x000018, "Member 'WBP_Race_HUD_Sub_Time_C_SetSecondsTime::CallFunc_FFloor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Time_C_SetSecondsTime, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000020, "Member 'WBP_Race_HUD_Sub_Time_C_SetSecondsTime::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Time_C_SetSecondsTime, CallFunc_Percent_IntInt_ReturnValue) == 0x000028, "Member 'WBP_Race_HUD_Sub_Time_C_SetSecondsTime::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Time_C_SetSecondsTime, CallFunc_FTrunc_ReturnValue) == 0x00002C, "Member 'WBP_Race_HUD_Sub_Time_C_SetSecondsTime::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Time_C_SetSecondsTime, CallFunc_Conv_IntToText_ReturnValue) == 0x000030, "Member 'WBP_Race_HUD_Sub_Time_C_SetSecondsTime::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Time_C_SetSecondsTime, CallFunc_Conv_IntToText_ReturnValue_1) == 0x000040, "Member 'WBP_Race_HUD_Sub_Time_C_SetSecondsTime::CallFunc_Conv_IntToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Time_C_SetSecondsTime, K2Node_MakeStruct_FormatArgumentData) == 0x000050, "Member 'WBP_Race_HUD_Sub_Time_C_SetSecondsTime::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Time_C_SetSecondsTime, K2Node_MakeStruct_FormatArgumentData_1) == 0x000098, "Member 'WBP_Race_HUD_Sub_Time_C_SetSecondsTime::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Time_C_SetSecondsTime, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x0000E0, "Member 'WBP_Race_HUD_Sub_Time_C_SetSecondsTime::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Time_C_SetSecondsTime, CallFunc_FFloor_ReturnValue_1) == 0x0000E8, "Member 'WBP_Race_HUD_Sub_Time_C_SetSecondsTime::CallFunc_FFloor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Time_C_SetSecondsTime, CallFunc_Conv_IntToText_ReturnValue_2) == 0x0000F0, "Member 'WBP_Race_HUD_Sub_Time_C_SetSecondsTime::CallFunc_Conv_IntToText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Time_C_SetSecondsTime, K2Node_MakeStruct_FormatArgumentData_2) == 0x000100, "Member 'WBP_Race_HUD_Sub_Time_C_SetSecondsTime::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Time_C_SetSecondsTime, K2Node_MakeArray_Array) == 0x000148, "Member 'WBP_Race_HUD_Sub_Time_C_SetSecondsTime::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Time_C_SetSecondsTime, CallFunc_Format_ReturnValue) == 0x000158, "Member 'WBP_Race_HUD_Sub_Time_C_SetSecondsTime::CallFunc_Format_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Time_C_SetSecondsTime;
 
 }
 

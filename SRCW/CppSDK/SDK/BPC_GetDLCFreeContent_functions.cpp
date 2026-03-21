@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function BPC_GetDLCFreeContent.BPC_GetDLCFreeContent_C.CreateSilentSkipFooter
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UBPC_GetDLCFreeContent_C::CreateSilentSkipFooter()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_GetDLCFreeContent_C", "CreateSilentSkipFooter");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BPC_GetDLCFreeContent.BPC_GetDLCFreeContent_C.DLCFlow_End
 // (BlueprintCallable, BlueprintEvent)
 
@@ -329,6 +343,20 @@ void UBPC_GetDLCFreeContent_C::OnInitState()
 }
 
 
+// Function BPC_GetDLCFreeContent.BPC_GetDLCFreeContent_C.OnSkip
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UBPC_GetDLCFreeContent_C::OnSkip()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_GetDLCFreeContent_C", "OnSkip");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BPC_GetDLCFreeContent.BPC_GetDLCFreeContent_C.OpenRewardWindow
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -371,23 +399,31 @@ void UBPC_GetDLCFreeContent_C::OpenUnlockCharacter()
 }
 
 
-// Function BPC_GetDLCFreeContent.BPC_GetDLCFreeContent_C.Set Footer Visibility
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsVisible                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BPC_GetDLCFreeContent.BPC_GetDLCFreeContent_C.SkipDLC_UnlockCharacter
+// (BlueprintCallable, BlueprintEvent)
 
-void UBPC_GetDLCFreeContent_C::Set_Footer_Visibility(bool IsVisible)
+void UBPC_GetDLCFreeContent_C::SkipDLC_UnlockCharacter()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BPC_GetDLCFreeContent_C", "Set Footer Visibility");
+		Func = Class->GetFunction("BPC_GetDLCFreeContent_C", "SkipDLC_UnlockCharacter");
 
-	Params::BPC_GetDLCFreeContent_C_Set_Footer_Visibility Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.IsVisible = IsVisible;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function BPC_GetDLCFreeContent.BPC_GetDLCFreeContent_C.SKIPFreeContent_UnlockCharacter
+// (BlueprintCallable, BlueprintEvent)
+
+void UBPC_GetDLCFreeContent_C::SKIPFreeContent_UnlockCharacter()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_GetDLCFreeContent_C", "SKIPFreeContent_UnlockCharacter");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

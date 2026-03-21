@@ -25,11 +25,7 @@ public:
 	bool                                          CallFunc_IsEnableMouseClick_ReturnValue;           // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bIsGamePad;                           // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PauseMenu_Sub_Option_Btn_03_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_03) == 0x000004, "Wrong alignment on WBP_PauseMenu_Sub_Option_Btn_03_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_03");
-static_assert(sizeof(WBP_PauseMenu_Sub_Option_Btn_03_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_03) == 0x000008, "Wrong size on WBP_PauseMenu_Sub_Option_Btn_03_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_03");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_03, EntryPoint) == 0x000000, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_03::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_03, CallFunc_IsEnableMouseClick_ReturnValue) == 0x000004, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_03::CallFunc_IsEnableMouseClick_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_03, K2Node_Event_bIsGamePad) == 0x000005, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_03::K2Node_Event_bIsGamePad' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PauseMenu_Sub_Option_Btn_03_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_03;
 
 // Function WBP_PauseMenu_Sub_Option_Btn_03.WBP_PauseMenu_Sub_Option_Btn_03_C.PlayOnOffAnimation
 // 0x0020 (0x0020 - 0x0000)
@@ -45,14 +41,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PauseMenu_Sub_Option_Btn_03_C_PlayOnOffAnimation) == 0x000008, "Wrong alignment on WBP_PauseMenu_Sub_Option_Btn_03_C_PlayOnOffAnimation");
-static_assert(sizeof(WBP_PauseMenu_Sub_Option_Btn_03_C_PlayOnOffAnimation) == 0x000020, "Wrong size on WBP_PauseMenu_Sub_Option_Btn_03_C_PlayOnOffAnimation");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_PlayOnOffAnimation, bIsOn) == 0x000000, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_PlayOnOffAnimation::bIsOn' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_PlayOnOffAnimation, SeEnabled) == 0x000001, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_PlayOnOffAnimation::SeEnabled' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_PlayOnOffAnimation, CallFunc_SoundPlay_ReturnValue) == 0x000004, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_PlayOnOffAnimation::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_PlayOnOffAnimation, CallFunc_SetPanSplit_ReturnValue) == 0x000008, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_PlayOnOffAnimation::CallFunc_SetPanSplit_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_PlayOnOffAnimation, CallFunc_PlayAnimation_ReturnValue) == 0x000010, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_PlayOnOffAnimation::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_PlayOnOffAnimation, CallFunc_PlayAnimation_ReturnValue_1) == 0x000018, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_PlayOnOffAnimation::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PauseMenu_Sub_Option_Btn_03_C_PlayOnOffAnimation;
 
 // Function WBP_PauseMenu_Sub_Option_Btn_03.WBP_PauseMenu_Sub_Option_Btn_03_C.PlaySeOnOff
 // 0x0024 (0x0024 - 0x0000)
@@ -74,21 +63,7 @@ public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x001C(0x0004)()
 	struct FSoundHandle                           CallFunc_SetPanSplit_ReturnValue;                  // 0x0020(0x0004)()
 };
-static_assert(alignof(WBP_PauseMenu_Sub_Option_Btn_03_C_PlaySeOnOff) == 0x000004, "Wrong alignment on WBP_PauseMenu_Sub_Option_Btn_03_C_PlaySeOnOff");
-static_assert(sizeof(WBP_PauseMenu_Sub_Option_Btn_03_C_PlaySeOnOff) == 0x000024, "Wrong size on WBP_PauseMenu_Sub_Option_Btn_03_C_PlaySeOnOff");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_PlaySeOnOff, PlayerCount) == 0x000000, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_PlaySeOnOff::PlayerCount' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_PlaySeOnOff, PlayerIndex) == 0x000004, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_PlaySeOnOff::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_PlaySeOnOff, PanSetOpt) == 0x000008, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_PlaySeOnOff::PanSetOpt' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_PlaySeOnOff, Temp_int_Variable) == 0x00000C, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_PlaySeOnOff::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_PlaySeOnOff, CallFunc_Percent_IntInt_ReturnValue) == 0x000010, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_PlaySeOnOff::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_PlaySeOnOff, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000014, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_PlaySeOnOff::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_PlaySeOnOff, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000015, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_PlaySeOnOff::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_PlaySeOnOff, Temp_byte_Variable) == 0x000016, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_PlaySeOnOff::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_PlaySeOnOff, Temp_byte_Variable_1) == 0x000017, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_PlaySeOnOff::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_PlaySeOnOff, Temp_byte_Variable_2) == 0x000018, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_PlaySeOnOff::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_PlaySeOnOff, K2Node_Select_Default) == 0x000019, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_PlaySeOnOff::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_PlaySeOnOff, CallFunc_SoundPlay_ReturnValue) == 0x00001C, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_PlaySeOnOff::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_PlaySeOnOff, CallFunc_SetPanSplit_ReturnValue) == 0x000020, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_PlaySeOnOff::CallFunc_SetPanSplit_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PauseMenu_Sub_Option_Btn_03_C_PlaySeOnOff;
 
 // Function WBP_PauseMenu_Sub_Option_Btn_03.WBP_PauseMenu_Sub_Option_Btn_03_C.SetControlerButtonIndex
 // 0x0001 (0x0001 - 0x0000)
@@ -97,9 +72,7 @@ struct WBP_PauseMenu_Sub_Option_Btn_03_C_SetControlerButtonIndex final
 public:
 	EControllerButtonTextureIndex                 In_Controller_Button_Index;                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PauseMenu_Sub_Option_Btn_03_C_SetControlerButtonIndex) == 0x000001, "Wrong alignment on WBP_PauseMenu_Sub_Option_Btn_03_C_SetControlerButtonIndex");
-static_assert(sizeof(WBP_PauseMenu_Sub_Option_Btn_03_C_SetControlerButtonIndex) == 0x000001, "Wrong size on WBP_PauseMenu_Sub_Option_Btn_03_C_SetControlerButtonIndex");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_SetControlerButtonIndex, In_Controller_Button_Index) == 0x000000, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_SetControlerButtonIndex::In_Controller_Button_Index' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PauseMenu_Sub_Option_Btn_03_C_SetControlerButtonIndex;
 
 // Function WBP_PauseMenu_Sub_Option_Btn_03.WBP_PauseMenu_Sub_Option_Btn_03_C.SetIcon
 // 0x0018 (0x0018 - 0x0000)
@@ -110,11 +83,7 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PauseMenu_Sub_Option_Btn_03_C_SetIcon) == 0x000008, "Wrong alignment on WBP_PauseMenu_Sub_Option_Btn_03_C_SetIcon");
-static_assert(sizeof(WBP_PauseMenu_Sub_Option_Btn_03_C_SetIcon) == 0x000018, "Wrong size on WBP_PauseMenu_Sub_Option_Btn_03_C_SetIcon");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_SetIcon, Index_0) == 0x000000, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_SetIcon::Index_0' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_SetIcon, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_SetIcon::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_SetIcon, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000010, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_SetIcon::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PauseMenu_Sub_Option_Btn_03_C_SetIcon;
 
 // Function WBP_PauseMenu_Sub_Option_Btn_03.WBP_PauseMenu_Sub_Option_Btn_03_C.SetInputVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -123,9 +92,7 @@ struct WBP_PauseMenu_Sub_Option_Btn_03_C_SetInputVisible final
 public:
 	bool                                          bIsVisible;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PauseMenu_Sub_Option_Btn_03_C_SetInputVisible) == 0x000001, "Wrong alignment on WBP_PauseMenu_Sub_Option_Btn_03_C_SetInputVisible");
-static_assert(sizeof(WBP_PauseMenu_Sub_Option_Btn_03_C_SetInputVisible) == 0x000001, "Wrong size on WBP_PauseMenu_Sub_Option_Btn_03_C_SetInputVisible");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_SetInputVisible, bIsVisible) == 0x000000, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_SetInputVisible::bIsVisible' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PauseMenu_Sub_Option_Btn_03_C_SetInputVisible;
 
 // Function WBP_PauseMenu_Sub_Option_Btn_03.WBP_PauseMenu_Sub_Option_Btn_03_C.SetIsGamePadButton
 // 0x0001 (0x0001 - 0x0000)
@@ -134,9 +101,7 @@ struct WBP_PauseMenu_Sub_Option_Btn_03_C_SetIsGamePadButton final
 public:
 	bool                                          bIsGamePad;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PauseMenu_Sub_Option_Btn_03_C_SetIsGamePadButton) == 0x000001, "Wrong alignment on WBP_PauseMenu_Sub_Option_Btn_03_C_SetIsGamePadButton");
-static_assert(sizeof(WBP_PauseMenu_Sub_Option_Btn_03_C_SetIsGamePadButton) == 0x000001, "Wrong size on WBP_PauseMenu_Sub_Option_Btn_03_C_SetIsGamePadButton");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_SetIsGamePadButton, bIsGamePad) == 0x000000, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_SetIsGamePadButton::bIsGamePad' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PauseMenu_Sub_Option_Btn_03_C_SetIsGamePadButton;
 
 // Function WBP_PauseMenu_Sub_Option_Btn_03.WBP_PauseMenu_Sub_Option_Btn_03_C.SetOnOffNoSE
 // 0x0018 (0x0018 - 0x0000)
@@ -148,11 +113,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PauseMenu_Sub_Option_Btn_03_C_SetOnOffNoSE) == 0x000008, "Wrong alignment on WBP_PauseMenu_Sub_Option_Btn_03_C_SetOnOffNoSE");
-static_assert(sizeof(WBP_PauseMenu_Sub_Option_Btn_03_C_SetOnOffNoSE) == 0x000018, "Wrong size on WBP_PauseMenu_Sub_Option_Btn_03_C_SetOnOffNoSE");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_SetOnOffNoSE, IsOn) == 0x000000, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_SetOnOffNoSE::IsOn' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_SetOnOffNoSE, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_SetOnOffNoSE::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_SetOnOffNoSE, CallFunc_PlayAnimation_ReturnValue_1) == 0x000010, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_SetOnOffNoSE::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PauseMenu_Sub_Option_Btn_03_C_SetOnOffNoSE;
 
 // Function WBP_PauseMenu_Sub_Option_Btn_03.WBP_PauseMenu_Sub_Option_Btn_03_C.SetText
 // 0x0010 (0x0010 - 0x0000)
@@ -161,9 +122,7 @@ struct WBP_PauseMenu_Sub_Option_Btn_03_C_SetText final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_PauseMenu_Sub_Option_Btn_03_C_SetText) == 0x000008, "Wrong alignment on WBP_PauseMenu_Sub_Option_Btn_03_C_SetText");
-static_assert(sizeof(WBP_PauseMenu_Sub_Option_Btn_03_C_SetText) == 0x000010, "Wrong size on WBP_PauseMenu_Sub_Option_Btn_03_C_SetText");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_SetText, InText) == 0x000000, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_SetText::InText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PauseMenu_Sub_Option_Btn_03_C_SetText;
 
 }
 

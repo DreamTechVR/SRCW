@@ -36,18 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ClassSelect_Sub_CpuLevel_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ClassSelect_Sub_CpuLevel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ClassSelect_Sub_CpuLevel_C")
 	}
 	static class UWBP_ClassSelect_Sub_CpuLevel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ClassSelect_Sub_CpuLevel_C>();
 	}
 };
-static_assert(alignof(UWBP_ClassSelect_Sub_CpuLevel_C) == 0x000008, "Wrong alignment on UWBP_ClassSelect_Sub_CpuLevel_C");
-static_assert(sizeof(UWBP_ClassSelect_Sub_CpuLevel_C) == 0x0002F8, "Wrong size on UWBP_ClassSelect_Sub_CpuLevel_C");
-static_assert(offsetof(UWBP_ClassSelect_Sub_CpuLevel_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_ClassSelect_Sub_CpuLevel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_Sub_CpuLevel_C, PAT_CpuLevel) == 0x0002E8, "Member 'UWBP_ClassSelect_Sub_CpuLevel_C::PAT_CpuLevel' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_Sub_CpuLevel_C, PAT_PlatformIcon) == 0x0002F0, "Member 'UWBP_ClassSelect_Sub_CpuLevel_C::PAT_PlatformIcon' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ClassSelect_Sub_CpuLevel_C;
 
 }
 

@@ -27,17 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_RaceBefore_RivalRacer_TopEffects_Parts_C">();
+		BP_STATIC_CLASS_IMPL("WBP_RaceBefore_RivalRacer_TopEffects_Parts_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_RaceBefore_RivalRacer_TopEffects_Parts_C")
 	}
 	static class UWBP_RaceBefore_RivalRacer_TopEffects_Parts_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_RaceBefore_RivalRacer_TopEffects_Parts_C>();
 	}
 };
-static_assert(alignof(UWBP_RaceBefore_RivalRacer_TopEffects_Parts_C) == 0x000008, "Wrong alignment on UWBP_RaceBefore_RivalRacer_TopEffects_Parts_C");
-static_assert(sizeof(UWBP_RaceBefore_RivalRacer_TopEffects_Parts_C) == 0x0002F0, "Wrong size on UWBP_RaceBefore_RivalRacer_TopEffects_Parts_C");
-static_assert(offsetof(UWBP_RaceBefore_RivalRacer_TopEffects_Parts_C, FireTop_01) == 0x0002E0, "Member 'UWBP_RaceBefore_RivalRacer_TopEffects_Parts_C::FireTop_01' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RivalRacer_TopEffects_Parts_C, FireTop_02) == 0x0002E8, "Member 'UWBP_RaceBefore_RivalRacer_TopEffects_Parts_C::FireTop_02' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_RaceBefore_RivalRacer_TopEffects_Parts_C;
 
 }
 

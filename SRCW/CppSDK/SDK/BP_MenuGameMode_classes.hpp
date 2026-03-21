@@ -23,15 +23,18 @@ class ABP_MenuGameMode_C final : public ABP_UnionGameModeBase_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_MenuGameMode_C">();
+		BP_STATIC_CLASS_IMPL("BP_MenuGameMode_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_MenuGameMode_C")
 	}
 	static class ABP_MenuGameMode_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_MenuGameMode_C>();
 	}
 };
-static_assert(alignof(ABP_MenuGameMode_C) == 0x000008, "Wrong alignment on ABP_MenuGameMode_C");
-static_assert(sizeof(ABP_MenuGameMode_C) == 0x000338, "Wrong size on ABP_MenuGameMode_C");
+DUMPER7_ASSERTS_ABP_MenuGameMode_C;
 
 }
 

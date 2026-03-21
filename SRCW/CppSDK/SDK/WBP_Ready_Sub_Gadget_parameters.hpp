@@ -35,20 +35,7 @@ public:
 	EGadgetId                                     CallFunc_Array_Get_Item;                           // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Ready_Sub_Gadget_C_ExecuteUbergraph_WBP_Ready_Sub_Gadget) == 0x000008, "Wrong alignment on WBP_Ready_Sub_Gadget_C_ExecuteUbergraph_WBP_Ready_Sub_Gadget");
-static_assert(sizeof(WBP_Ready_Sub_Gadget_C_ExecuteUbergraph_WBP_Ready_Sub_Gadget) == 0x000060, "Wrong size on WBP_Ready_Sub_Gadget_C_ExecuteUbergraph_WBP_Ready_Sub_Gadget");
-static_assert(offsetof(WBP_Ready_Sub_Gadget_C_ExecuteUbergraph_WBP_Ready_Sub_Gadget, EntryPoint) == 0x000000, "Member 'WBP_Ready_Sub_Gadget_C_ExecuteUbergraph_WBP_Ready_Sub_Gadget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_Gadget_C_ExecuteUbergraph_WBP_Ready_Sub_Gadget, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_Ready_Sub_Gadget_C_ExecuteUbergraph_WBP_Ready_Sub_Gadget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_Gadget_C_ExecuteUbergraph_WBP_Ready_Sub_Gadget, K2Node_CustomEvent_PlayerIndex) == 0x000014, "Member 'WBP_Ready_Sub_Gadget_C_ExecuteUbergraph_WBP_Ready_Sub_Gadget::K2Node_CustomEvent_PlayerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_Gadget_C_ExecuteUbergraph_WBP_Ready_Sub_Gadget, K2Node_CustomEvent_SlotState) == 0x000018, "Member 'WBP_Ready_Sub_Gadget_C_ExecuteUbergraph_WBP_Ready_Sub_Gadget::K2Node_CustomEvent_SlotState' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_Gadget_C_ExecuteUbergraph_WBP_Ready_Sub_Gadget, K2Node_CustomEvent_SlotIndex) == 0x00001C, "Member 'WBP_Ready_Sub_Gadget_C_ExecuteUbergraph_WBP_Ready_Sub_Gadget::K2Node_CustomEvent_SlotIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_Gadget_C_ExecuteUbergraph_WBP_Ready_Sub_Gadget, K2Node_CustomEvent_bIsHidden) == 0x000020, "Member 'WBP_Ready_Sub_Gadget_C_ExecuteUbergraph_WBP_Ready_Sub_Gadget::K2Node_CustomEvent_bIsHidden' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_Gadget_C_ExecuteUbergraph_WBP_Ready_Sub_Gadget, CallFunc_PlayAnimation_ReturnValue) == 0x000028, "Member 'WBP_Ready_Sub_Gadget_C_ExecuteUbergraph_WBP_Ready_Sub_Gadget::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_Gadget_C_ExecuteUbergraph_WBP_Ready_Sub_Gadget, CallFunc_PlayAnimationReverse_ReturnValue) == 0x000030, "Member 'WBP_Ready_Sub_Gadget_C_ExecuteUbergraph_WBP_Ready_Sub_Gadget::CallFunc_PlayAnimationReverse_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_Gadget_C_ExecuteUbergraph_WBP_Ready_Sub_Gadget, K2Node_CreateDelegate_OutputDelegate_1) == 0x000038, "Member 'WBP_Ready_Sub_Gadget_C_ExecuteUbergraph_WBP_Ready_Sub_Gadget::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_Gadget_C_ExecuteUbergraph_WBP_Ready_Sub_Gadget, CallFunc_GetGadgetIds_OutGadgetIds) == 0x000048, "Member 'WBP_Ready_Sub_Gadget_C_ExecuteUbergraph_WBP_Ready_Sub_Gadget::CallFunc_GetGadgetIds_OutGadgetIds' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_Gadget_C_ExecuteUbergraph_WBP_Ready_Sub_Gadget, CallFunc_Array_Get_Item) == 0x000058, "Member 'WBP_Ready_Sub_Gadget_C_ExecuteUbergraph_WBP_Ready_Sub_Gadget::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_Gadget_C_ExecuteUbergraph_WBP_Ready_Sub_Gadget, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000059, "Member 'WBP_Ready_Sub_Gadget_C_ExecuteUbergraph_WBP_Ready_Sub_Gadget::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Ready_Sub_Gadget_C_ExecuteUbergraph_WBP_Ready_Sub_Gadget;
 
 // Function WBP_Ready_Sub_Gadget.WBP_Ready_Sub_Gadget_C.HiddenCaptionEvent
 // 0x0001 (0x0001 - 0x0000)
@@ -57,9 +44,7 @@ struct WBP_Ready_Sub_Gadget_C_HiddenCaptionEvent final
 public:
 	bool                                          bIsHidden;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Ready_Sub_Gadget_C_HiddenCaptionEvent) == 0x000001, "Wrong alignment on WBP_Ready_Sub_Gadget_C_HiddenCaptionEvent");
-static_assert(sizeof(WBP_Ready_Sub_Gadget_C_HiddenCaptionEvent) == 0x000001, "Wrong size on WBP_Ready_Sub_Gadget_C_HiddenCaptionEvent");
-static_assert(offsetof(WBP_Ready_Sub_Gadget_C_HiddenCaptionEvent, bIsHidden) == 0x000000, "Member 'WBP_Ready_Sub_Gadget_C_HiddenCaptionEvent::bIsHidden' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Ready_Sub_Gadget_C_HiddenCaptionEvent;
 
 // Function WBP_Ready_Sub_Gadget.WBP_Ready_Sub_Gadget_C.SetGadgetCaptionEvent
 // 0x000C (0x000C - 0x0000)
@@ -70,11 +55,7 @@ public:
 	int32                                         SlotState;                                         // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         SlotIndex;                                         // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Ready_Sub_Gadget_C_SetGadgetCaptionEvent) == 0x000004, "Wrong alignment on WBP_Ready_Sub_Gadget_C_SetGadgetCaptionEvent");
-static_assert(sizeof(WBP_Ready_Sub_Gadget_C_SetGadgetCaptionEvent) == 0x00000C, "Wrong size on WBP_Ready_Sub_Gadget_C_SetGadgetCaptionEvent");
-static_assert(offsetof(WBP_Ready_Sub_Gadget_C_SetGadgetCaptionEvent, PlayerIndex_0) == 0x000000, "Member 'WBP_Ready_Sub_Gadget_C_SetGadgetCaptionEvent::PlayerIndex_0' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_Gadget_C_SetGadgetCaptionEvent, SlotState) == 0x000004, "Member 'WBP_Ready_Sub_Gadget_C_SetGadgetCaptionEvent::SlotState' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_Gadget_C_SetGadgetCaptionEvent, SlotIndex) == 0x000008, "Member 'WBP_Ready_Sub_Gadget_C_SetGadgetCaptionEvent::SlotIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Ready_Sub_Gadget_C_SetGadgetCaptionEvent;
 
 // Function WBP_Ready_Sub_Gadget.WBP_Ready_Sub_Gadget_C.UpdateGadgetDetail
 // 0x0020 (0x0020 - 0x0000)
@@ -86,11 +67,7 @@ public:
 	TArray<EGadgetId>                             CallFunc_GetGadgetIds_OutGadgetIds;                // 0x0008(0x0010)(ReferenceParm)
 	EGadgetId                                     CallFunc_Array_Get_Item;                           // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Ready_Sub_Gadget_C_UpdateGadgetDetail) == 0x000008, "Wrong alignment on WBP_Ready_Sub_Gadget_C_UpdateGadgetDetail");
-static_assert(sizeof(WBP_Ready_Sub_Gadget_C_UpdateGadgetDetail) == 0x000020, "Wrong size on WBP_Ready_Sub_Gadget_C_UpdateGadgetDetail");
-static_assert(offsetof(WBP_Ready_Sub_Gadget_C_UpdateGadgetDetail, InGadgetId) == 0x000000, "Member 'WBP_Ready_Sub_Gadget_C_UpdateGadgetDetail::InGadgetId' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_Gadget_C_UpdateGadgetDetail, CallFunc_GetGadgetIds_OutGadgetIds) == 0x000008, "Member 'WBP_Ready_Sub_Gadget_C_UpdateGadgetDetail::CallFunc_GetGadgetIds_OutGadgetIds' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_Gadget_C_UpdateGadgetDetail, CallFunc_Array_Get_Item) == 0x000018, "Member 'WBP_Ready_Sub_Gadget_C_UpdateGadgetDetail::CallFunc_Array_Get_Item' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Ready_Sub_Gadget_C_UpdateGadgetDetail;
 
 }
 

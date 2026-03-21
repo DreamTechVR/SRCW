@@ -25,11 +25,7 @@ public:
 	struct FLinearColor                           Color_5_A285A57B4D2407A8C0F37A9236C7AAD4;          // 0x0004(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIsSelected_8_37E13B5447B15B595C91798EE679A743;    // 0x0014(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FST_ColorDetailWindowColorItemData) == 0x000004, "Wrong alignment on FST_ColorDetailWindowColorItemData");
-static_assert(sizeof(FST_ColorDetailWindowColorItemData) == 0x000018, "Wrong size on FST_ColorDetailWindowColorItemData");
-static_assert(offsetof(FST_ColorDetailWindowColorItemData, MachineColorId_2_04BACC6D4319C1ACAB04F6B0BF0335DD) == 0x000000, "Member 'FST_ColorDetailWindowColorItemData::MachineColorId_2_04BACC6D4319C1ACAB04F6B0BF0335DD' has a wrong offset!");
-static_assert(offsetof(FST_ColorDetailWindowColorItemData, Color_5_A285A57B4D2407A8C0F37A9236C7AAD4) == 0x000004, "Member 'FST_ColorDetailWindowColorItemData::Color_5_A285A57B4D2407A8C0F37A9236C7AAD4' has a wrong offset!");
-static_assert(offsetof(FST_ColorDetailWindowColorItemData, bIsSelected_8_37E13B5447B15B595C91798EE679A743) == 0x000014, "Member 'FST_ColorDetailWindowColorItemData::bIsSelected_8_37E13B5447B15B595C91798EE679A743' has a wrong offset!");
+DUMPER7_ASSERTS_FST_ColorDetailWindowColorItemData;
 
 }
 

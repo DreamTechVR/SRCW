@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_classes.hpp"
 
 
@@ -34,6 +34,7 @@ public:
 
 public:
 	void ActiveMedal();
+	void Construct();
 	void ExecuteUbergraph_WBP_TimeTrial_MedalIcon_02(int32 EntryPoint);
 	void SelectMedal();
 	void SetupRankMedal(ETimeTrialClearRankId InTimeTrialClearRankId);
@@ -41,22 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_TimeTrial_MedalIcon_02_C">();
+		BP_STATIC_CLASS_IMPL("WBP_TimeTrial_MedalIcon_02_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_TimeTrial_MedalIcon_02_C")
 	}
 	static class UWBP_TimeTrial_MedalIcon_02_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_TimeTrial_MedalIcon_02_C>();
 	}
 };
-static_assert(alignof(UWBP_TimeTrial_MedalIcon_02_C) == 0x000008, "Wrong alignment on UWBP_TimeTrial_MedalIcon_02_C");
-static_assert(sizeof(UWBP_TimeTrial_MedalIcon_02_C) == 0x000318, "Wrong size on UWBP_TimeTrial_MedalIcon_02_C");
-static_assert(offsetof(UWBP_TimeTrial_MedalIcon_02_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_TimeTrial_MedalIcon_02_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_MedalIcon_02_C, DSP_BlinkIcon) == 0x0002E8, "Member 'UWBP_TimeTrial_MedalIcon_02_C::DSP_BlinkIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_MedalIcon_02_C, DSP_MedalIcon) == 0x0002F0, "Member 'UWBP_TimeTrial_MedalIcon_02_C::DSP_MedalIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_MedalIcon_02_C, PAT_Achievement_TimeAttack) == 0x0002F8, "Member 'UWBP_TimeTrial_MedalIcon_02_C::PAT_Achievement_TimeAttack' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_MedalIcon_02_C, PAT_Eff_Achievement_TimeAttack) == 0x000300, "Member 'UWBP_TimeTrial_MedalIcon_02_C::PAT_Eff_Achievement_TimeAttack' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_MedalIcon_02_C, TimeTrialClearRankId) == 0x000308, "Member 'UWBP_TimeTrial_MedalIcon_02_C::TimeTrialClearRankId' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_MedalIcon_02_C, MedalIconMipLevel) == 0x000310, "Member 'UWBP_TimeTrial_MedalIcon_02_C::MedalIconMipLevel' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_TimeTrial_MedalIcon_02_C;
 
 }
 

@@ -65,43 +65,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C")
 	}
 	static class UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C>();
 	}
 };
-static_assert(alignof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C) == 0x000008, "Wrong alignment on UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C");
-static_assert(sizeof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C) == 0x0003C8, "Wrong size on UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C, Guide_Out) == 0x0002E8, "Member 'UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C::Guide_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C, Guide_Select_Loop) == 0x0002F0, "Member 'UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C::Guide_Select_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C, Guide_Active_Loop) == 0x0002F8, "Member 'UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C::Guide_Active_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C, Guide_In) == 0x000300, "Member 'UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C::Guide_In' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C, base) == 0x000308, "Member 'UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C, Base_Black) == 0x000310, "Member 'UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C::Base_Black' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C, BaseIcon) == 0x000318, "Member 'UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C::BaseIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C, NameLine_01) == 0x000320, "Member 'UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C::NameLine_01' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C, NameLine_02) == 0x000328, "Member 'UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C::NameLine_02' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C, NameLine_03) == 0x000330, "Member 'UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C::NameLine_03' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C, TXT_CAMERA) == 0x000338, "Member 'UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C::TXT_CAMERA' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C, TXT_OTHER) == 0x000340, "Member 'UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C::TXT_OTHER' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C, TXT_Sticker) == 0x000348, "Member 'UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C::TXT_Sticker' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C, WBP_CMN_ControllerBtn) == 0x000350, "Member 'UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C::WBP_CMN_ControllerBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C, WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_10) == 0x000358, "Member 'UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C::WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_10' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C, WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_01) == 0x000360, "Member 'UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C::WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_01' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C, WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_02) == 0x000368, "Member 'UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C::WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_02' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C, WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_03) == 0x000370, "Member 'UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C::WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_03' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C, WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_04) == 0x000378, "Member 'UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C::WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_04' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C, WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_05) == 0x000380, "Member 'UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C::WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_05' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C, WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_06) == 0x000388, "Member 'UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C::WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_06' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C, WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_07) == 0x000390, "Member 'UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C::WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_07' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C, WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_08) == 0x000398, "Member 'UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C::WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_08' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C, WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_09) == 0x0003A0, "Member 'UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C::WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_09' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C, IsGuideOpen) == 0x0003A8, "Member 'UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C::IsGuideOpen' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C, PFTexture) == 0x0003B0, "Member 'UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C::PFTexture' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C, Buttons) == 0x0003B8, "Member 'UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C::Buttons' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MachineCustom_Sub_CustomSticker_OperationGuide_C;
 
 }
 

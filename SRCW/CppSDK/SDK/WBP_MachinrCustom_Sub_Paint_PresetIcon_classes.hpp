@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "ST_ColorPresetSelectPageItemData_structs.hpp"
-#include "UnionUI_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
+#include "UnionUI_classes.hpp"
+#include "ST_ColorPresetSelectPageItemData_structs.hpp"
 
 
 namespace SDK
@@ -86,35 +86,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MachinrCustom_Sub_Paint_PresetIcon_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MachinrCustom_Sub_Paint_PresetIcon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MachinrCustom_Sub_Paint_PresetIcon_C")
 	}
 	static class UWBP_MachinrCustom_Sub_Paint_PresetIcon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MachinrCustom_Sub_Paint_PresetIcon_C>();
 	}
 };
-static_assert(alignof(UWBP_MachinrCustom_Sub_Paint_PresetIcon_C) == 0x000008, "Wrong alignment on UWBP_MachinrCustom_Sub_Paint_PresetIcon_C");
-static_assert(sizeof(UWBP_MachinrCustom_Sub_Paint_PresetIcon_C) == 0x000580, "Wrong size on UWBP_MachinrCustom_Sub_Paint_PresetIcon_C");
-static_assert(offsetof(UWBP_MachinrCustom_Sub_Paint_PresetIcon_C, UberGraphFrame) == 0x000480, "Member 'UWBP_MachinrCustom_Sub_Paint_PresetIcon_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_MachinrCustom_Sub_Paint_PresetIcon_C, DMY_CharaIcon) == 0x000488, "Member 'UWBP_MachinrCustom_Sub_Paint_PresetIcon_C::DMY_CharaIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_MachinrCustom_Sub_Paint_PresetIcon_C, DSP_Icon_New) == 0x000490, "Member 'UWBP_MachinrCustom_Sub_Paint_PresetIcon_C::DSP_Icon_New' has a wrong offset!");
-static_assert(offsetof(UWBP_MachinrCustom_Sub_Paint_PresetIcon_C, DSP_PaintIcon_Cursor) == 0x000498, "Member 'UWBP_MachinrCustom_Sub_Paint_PresetIcon_C::DSP_PaintIcon_Cursor' has a wrong offset!");
-static_assert(offsetof(UWBP_MachinrCustom_Sub_Paint_PresetIcon_C, DSP_Set_Icon) == 0x0004A0, "Member 'UWBP_MachinrCustom_Sub_Paint_PresetIcon_C::DSP_Set_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_MachinrCustom_Sub_Paint_PresetIcon_C, MLC_Base) == 0x0004A8, "Member 'UWBP_MachinrCustom_Sub_Paint_PresetIcon_C::MLC_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_MachinrCustom_Sub_Paint_PresetIcon_C, MLC_PresetIcon) == 0x0004B0, "Member 'UWBP_MachinrCustom_Sub_Paint_PresetIcon_C::MLC_PresetIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_MachinrCustom_Sub_Paint_PresetIcon_C, MLC_PresetIcon_Custom) == 0x0004B8, "Member 'UWBP_MachinrCustom_Sub_Paint_PresetIcon_C::MLC_PresetIcon_Custom' has a wrong offset!");
-static_assert(offsetof(UWBP_MachinrCustom_Sub_Paint_PresetIcon_C, MouseInteraction) == 0x0004C0, "Member 'UWBP_MachinrCustom_Sub_Paint_PresetIcon_C::MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_MachinrCustom_Sub_Paint_PresetIcon_C, WBP_CMN_TextBalloon) == 0x0004C8, "Member 'UWBP_MachinrCustom_Sub_Paint_PresetIcon_C::WBP_CMN_TextBalloon' has a wrong offset!");
-static_assert(offsetof(UWBP_MachinrCustom_Sub_Paint_PresetIcon_C, WidgetSwitcher_PresetIcon) == 0x0004D0, "Member 'UWBP_MachinrCustom_Sub_Paint_PresetIcon_C::WidgetSwitcher_PresetIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_MachinrCustom_Sub_Paint_PresetIcon_C, SetColor_Index) == 0x0004D8, "Member 'UWBP_MachinrCustom_Sub_Paint_PresetIcon_C::SetColor_Index' has a wrong offset!");
-static_assert(offsetof(UWBP_MachinrCustom_Sub_Paint_PresetIcon_C, BalloonPatternIndex) == 0x0004DC, "Member 'UWBP_MachinrCustom_Sub_Paint_PresetIcon_C::BalloonPatternIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_MachinrCustom_Sub_Paint_PresetIcon_C, BalloonPosition) == 0x0004E0, "Member 'UWBP_MachinrCustom_Sub_Paint_PresetIcon_C::BalloonPosition' has a wrong offset!");
-static_assert(offsetof(UWBP_MachinrCustom_Sub_Paint_PresetIcon_C, ItemData) == 0x0004F0, "Member 'UWBP_MachinrCustom_Sub_Paint_PresetIcon_C::ItemData' has a wrong offset!");
-static_assert(offsetof(UWBP_MachinrCustom_Sub_Paint_PresetIcon_C, BaseColorOnDefault) == 0x000548, "Member 'UWBP_MachinrCustom_Sub_Paint_PresetIcon_C::BaseColorOnDefault' has a wrong offset!");
-static_assert(offsetof(UWBP_MachinrCustom_Sub_Paint_PresetIcon_C, BaseColorOnCustom) == 0x000558, "Member 'UWBP_MachinrCustom_Sub_Paint_PresetIcon_C::BaseColorOnCustom' has a wrong offset!");
-static_assert(offsetof(UWBP_MachinrCustom_Sub_Paint_PresetIcon_C, BaseColorOnSelected) == 0x000568, "Member 'UWBP_MachinrCustom_Sub_Paint_PresetIcon_C::BaseColorOnSelected' has a wrong offset!");
-static_assert(offsetof(UWBP_MachinrCustom_Sub_Paint_PresetIcon_C, PlayerIndex) == 0x000578, "Member 'UWBP_MachinrCustom_Sub_Paint_PresetIcon_C::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_MachinrCustom_Sub_Paint_PresetIcon_C, bIsEnableShoulder) == 0x00057C, "Member 'UWBP_MachinrCustom_Sub_Paint_PresetIcon_C::bIsEnableShoulder' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MachinrCustom_Sub_Paint_PresetIcon_C;
 
 }
 

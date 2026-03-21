@@ -10,18 +10,18 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C
-// 0x0098 (0x0588 - 0x04F0)
+// 0x00A8 (0x0598 - 0x04F0)
 class UWBP_Friend_Sub_LobbyInvitation_C final : public UFriendListContentsWidget
 {
 public:
@@ -41,6 +41,7 @@ public:
 	TArray<class UWBP_Friend_Sub_PlayerPlate_Small_C*> ScrollBoxWidgetArray;                         // 0x0558(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	class FText                                   CreateShotLobyyIdText;                             // 0x0568(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                   DisplayShortLobbyIdText;                           // 0x0578(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                   OutNumberInputText;                                // 0x0588(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void AddListItemWidgetByListItemIndex(int32 InListItemIndex);
@@ -90,30 +91,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Friend_Sub_LobbyInvitation_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Friend_Sub_LobbyInvitation_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Friend_Sub_LobbyInvitation_C")
 	}
 	static class UWBP_Friend_Sub_LobbyInvitation_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Friend_Sub_LobbyInvitation_C>();
 	}
 };
-static_assert(alignof(UWBP_Friend_Sub_LobbyInvitation_C) == 0x000008, "Wrong alignment on UWBP_Friend_Sub_LobbyInvitation_C");
-static_assert(sizeof(UWBP_Friend_Sub_LobbyInvitation_C) == 0x000588, "Wrong size on UWBP_Friend_Sub_LobbyInvitation_C");
-static_assert(offsetof(UWBP_Friend_Sub_LobbyInvitation_C, UberGraphFrame) == 0x0004F0, "Member 'UWBP_Friend_Sub_LobbyInvitation_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_LobbyInvitation_C, DSP_WBP_Friend_Sub_MyLobbyId_InfoText) == 0x0004F8, "Member 'UWBP_Friend_Sub_LobbyInvitation_C::DSP_WBP_Friend_Sub_MyLobbyId_InfoText' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_LobbyInvitation_C, MyLobbyIdBase) == 0x000500, "Member 'UWBP_Friend_Sub_LobbyInvitation_C::MyLobbyIdBase' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_LobbyInvitation_C, MyLobbyIdBase_1) == 0x000508, "Member 'UWBP_Friend_Sub_LobbyInvitation_C::MyLobbyIdBase_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_LobbyInvitation_C, ScrollBox_0) == 0x000510, "Member 'UWBP_Friend_Sub_LobbyInvitation_C::ScrollBox_0' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_LobbyInvitation_C, TXT_MyLobbyId) == 0x000518, "Member 'UWBP_Friend_Sub_LobbyInvitation_C::TXT_MyLobbyId' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_LobbyInvitation_C, WBP_Friend_SubMenu_Btn_01) == 0x000520, "Member 'UWBP_Friend_Sub_LobbyInvitation_C::WBP_Friend_SubMenu_Btn_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_LobbyInvitation_C, WBP_Friend_SubMenu_Btn_02) == 0x000528, "Member 'UWBP_Friend_Sub_LobbyInvitation_C::WBP_Friend_SubMenu_Btn_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_LobbyInvitation_C, ItemWidgetArray) == 0x000530, "Member 'UWBP_Friend_Sub_LobbyInvitation_C::ItemWidgetArray' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_LobbyInvitation_C, NumberInputWidget) == 0x000540, "Member 'UWBP_Friend_Sub_LobbyInvitation_C::NumberInputWidget' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_LobbyInvitation_C, AttentionCommandType) == 0x000548, "Member 'UWBP_Friend_Sub_LobbyInvitation_C::AttentionCommandType' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_LobbyInvitation_C, PopupWindow) == 0x000550, "Member 'UWBP_Friend_Sub_LobbyInvitation_C::PopupWindow' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_LobbyInvitation_C, ScrollBoxWidgetArray) == 0x000558, "Member 'UWBP_Friend_Sub_LobbyInvitation_C::ScrollBoxWidgetArray' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_LobbyInvitation_C, CreateShotLobyyIdText) == 0x000568, "Member 'UWBP_Friend_Sub_LobbyInvitation_C::CreateShotLobyyIdText' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_LobbyInvitation_C, DisplayShortLobbyIdText) == 0x000578, "Member 'UWBP_Friend_Sub_LobbyInvitation_C::DisplayShortLobbyIdText' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Friend_Sub_LobbyInvitation_C;
 
 }
 

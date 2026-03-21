@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -45,27 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_HUD_Sub_TimeTrial_TimeDiff_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_HUD_Sub_TimeTrial_TimeDiff_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_HUD_Sub_TimeTrial_TimeDiff_C")
 	}
 	static class UWBP_Race_HUD_Sub_TimeTrial_TimeDiff_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_HUD_Sub_TimeTrial_TimeDiff_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_HUD_Sub_TimeTrial_TimeDiff_C) == 0x000008, "Wrong alignment on UWBP_Race_HUD_Sub_TimeTrial_TimeDiff_C");
-static_assert(sizeof(UWBP_Race_HUD_Sub_TimeTrial_TimeDiff_C) == 0x000378, "Wrong size on UWBP_Race_HUD_Sub_TimeTrial_TimeDiff_C");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TimeTrial_TimeDiff_C, UberGraphFrame) == 0x000318, "Member 'UWBP_Race_HUD_Sub_TimeTrial_TimeDiff_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TimeTrial_TimeDiff_C, Out) == 0x000320, "Member 'UWBP_Race_HUD_Sub_TimeTrial_TimeDiff_C::Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TimeTrial_TimeDiff_C, In) == 0x000328, "Member 'UWBP_Race_HUD_Sub_TimeTrial_TimeDiff_C::In' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TimeTrial_TimeDiff_C, base) == 0x000330, "Member 'UWBP_Race_HUD_Sub_TimeTrial_TimeDiff_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TimeTrial_TimeDiff_C, Border_0) == 0x000338, "Member 'UWBP_Race_HUD_Sub_TimeTrial_TimeDiff_C::Border_0' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TimeTrial_TimeDiff_C, NUM_0000001) == 0x000340, "Member 'UWBP_Race_HUD_Sub_TimeTrial_TimeDiff_C::NUM_0000001' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TimeTrial_TimeDiff_C, NUM_0000010) == 0x000348, "Member 'UWBP_Race_HUD_Sub_TimeTrial_TimeDiff_C::NUM_0000010' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TimeTrial_TimeDiff_C, NUM_0000100) == 0x000350, "Member 'UWBP_Race_HUD_Sub_TimeTrial_TimeDiff_C::NUM_0000100' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TimeTrial_TimeDiff_C, NUM_0001000) == 0x000358, "Member 'UWBP_Race_HUD_Sub_TimeTrial_TimeDiff_C::NUM_0001000' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TimeTrial_TimeDiff_C, NUM_0010000) == 0x000360, "Member 'UWBP_Race_HUD_Sub_TimeTrial_TimeDiff_C::NUM_0010000' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TimeTrial_TimeDiff_C, NUM_0100000) == 0x000368, "Member 'UWBP_Race_HUD_Sub_TimeTrial_TimeDiff_C::NUM_0100000' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TimeTrial_TimeDiff_C, TXT_Sign) == 0x000370, "Member 'UWBP_Race_HUD_Sub_TimeTrial_TimeDiff_C::TXT_Sign' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_HUD_Sub_TimeTrial_TimeDiff_C;
 
 }
 

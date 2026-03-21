@@ -23,15 +23,18 @@ class UWBP_MachineCustom_CMN_Window_C final : public UMachineCustomCommonWindow
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MachineCustom_CMN_Window_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MachineCustom_CMN_Window_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MachineCustom_CMN_Window_C")
 	}
 	static class UWBP_MachineCustom_CMN_Window_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MachineCustom_CMN_Window_C>();
 	}
 };
-static_assert(alignof(UWBP_MachineCustom_CMN_Window_C) == 0x000008, "Wrong alignment on UWBP_MachineCustom_CMN_Window_C");
-static_assert(sizeof(UWBP_MachineCustom_CMN_Window_C) == 0x000328, "Wrong size on UWBP_MachineCustom_CMN_Window_C");
+DUMPER7_ASSERTS_UWBP_MachineCustom_CMN_Window_C;
 
 }
 

@@ -26,10 +26,7 @@ public:
 	uint8                                         Pad_1[0xF];                                        // 0x0001(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             Transform_5_DDFB234B412995D35D473799A951E42F;      // 0x0010(0x0060)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FST_FestaResultSceneData) == 0x000010, "Wrong alignment on FST_FestaResultSceneData");
-static_assert(sizeof(FST_FestaResultSceneData) == 0x000070, "Wrong size on FST_FestaResultSceneData");
-static_assert(offsetof(FST_FestaResultSceneData, StageId_2_E90235EB407520A2095B30988BE6D421) == 0x000000, "Member 'FST_FestaResultSceneData::StageId_2_E90235EB407520A2095B30988BE6D421' has a wrong offset!");
-static_assert(offsetof(FST_FestaResultSceneData, Transform_5_DDFB234B412995D35D473799A951E42F) == 0x000010, "Member 'FST_FestaResultSceneData::Transform_5_DDFB234B412995D35D473799A951E42F' has a wrong offset!");
+DUMPER7_ASSERTS_FST_FestaResultSceneData;
 
 }
 

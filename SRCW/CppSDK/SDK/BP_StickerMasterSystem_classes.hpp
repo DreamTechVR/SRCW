@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "CoreUObject_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "ST_StickerMachineData_structs.hpp"
-#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -163,69 +163,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_StickerMasterSystem_C">();
+		BP_STATIC_CLASS_IMPL("BP_StickerMasterSystem_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_StickerMasterSystem_C")
 	}
 	static class ABP_StickerMasterSystem_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_StickerMasterSystem_C>();
 	}
 };
-static_assert(alignof(ABP_StickerMasterSystem_C) == 0x000008, "Wrong alignment on ABP_StickerMasterSystem_C");
-static_assert(sizeof(ABP_StickerMasterSystem_C) == 0x000480, "Wrong size on ABP_StickerMasterSystem_C");
-static_assert(offsetof(ABP_StickerMasterSystem_C, UberGraphFrame) == 0x000290, "Member 'ABP_StickerMasterSystem_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, DefaultSceneRoot) == 0x000298, "Member 'ABP_StickerMasterSystem_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, Turntable) == 0x0002A0, "Member 'ABP_StickerMasterSystem_C::Turntable' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, RenderTargetPlane) == 0x0002A8, "Member 'ABP_StickerMasterSystem_C::RenderTargetPlane' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, Frames) == 0x0002B0, "Member 'ABP_StickerMasterSystem_C::Frames' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, Stickers) == 0x0002C0, "Member 'ABP_StickerMasterSystem_C::Stickers' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, StickerCamera) == 0x0002D0, "Member 'ABP_StickerMasterSystem_C::StickerCamera' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, BoxScale) == 0x0002D8, "Member 'ABP_StickerMasterSystem_C::BoxScale' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, ControlledSticker) == 0x0002E0, "Member 'ABP_StickerMasterSystem_C::ControlledSticker' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, ConrolledStickerIndex) == 0x0002E8, "Member 'ABP_StickerMasterSystem_C::ConrolledStickerIndex' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, TranslationSpeed) == 0x0002F0, "Member 'ABP_StickerMasterSystem_C::TranslationSpeed' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, AxisInputThreshold) == 0x0002F8, "Member 'ABP_StickerMasterSystem_C::AxisInputThreshold' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, Rotation) == 0x000300, "Member 'ABP_StickerMasterSystem_C::Rotation' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, RotationSpeed) == 0x000308, "Member 'ABP_StickerMasterSystem_C::RotationSpeed' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, ScaleSpeed) == 0x000310, "Member 'ABP_StickerMasterSystem_C::ScaleSpeed' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, UvPreviewMid) == 0x000318, "Member 'ABP_StickerMasterSystem_C::UvPreviewMid' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, Widget) == 0x000320, "Member 'ABP_StickerMasterSystem_C::Widget' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, MachineData) == 0x000328, "Member 'ABP_StickerMasterSystem_C::MachineData' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, RenderTargetMid) == 0x000390, "Member 'ABP_StickerMasterSystem_C::RenderTargetMid' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, GarageCamera) == 0x000398, "Member 'ABP_StickerMasterSystem_C::GarageCamera' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, InputReceiver) == 0x0003A0, "Member 'ABP_StickerMasterSystem_C::InputReceiver' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, StickerSystem) == 0x0003A8, "Member 'ABP_StickerMasterSystem_C::StickerSystem' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, X_Pressed_Flag) == 0x0003B0, "Member 'ABP_StickerMasterSystem_C::X_Pressed_Flag' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, Y_Pressed_Flag) == 0x0003B1, "Member 'ABP_StickerMasterSystem_C::Y_Pressed_Flag' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, X_TimerActive) == 0x0003B2, "Member 'ABP_StickerMasterSystem_C::X_TimerActive' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, Y_TimerActive) == 0x0003B3, "Member 'ABP_StickerMasterSystem_C::Y_TimerActive' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, XY_IsTriggered) == 0x0003B4, "Member 'ABP_StickerMasterSystem_C::XY_IsTriggered' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, IsInitialize) == 0x0003B5, "Member 'ABP_StickerMasterSystem_C::IsInitialize' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, MoveValue) == 0x0003B8, "Member 'ABP_StickerMasterSystem_C::MoveValue' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, MCSequence) == 0x0003C8, "Member 'ABP_StickerMasterSystem_C::MCSequence' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, ColorPickAndGuideWidget) == 0x0003D0, "Member 'ABP_StickerMasterSystem_C::ColorPickAndGuideWidget' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, CurrentSlotIndex) == 0x0003D8, "Member 'ABP_StickerMasterSystem_C::CurrentSlotIndex' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, CurrentControlledStickerId) == 0x0003DC, "Member 'ABP_StickerMasterSystem_C::CurrentControlledStickerId' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, EditStickerData) == 0x0003E0, "Member 'ABP_StickerMasterSystem_C::EditStickerData' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, StickerGroup) == 0x000400, "Member 'ABP_StickerMasterSystem_C::StickerGroup' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, IsEditRear) == 0x000408, "Member 'ABP_StickerMasterSystem_C::IsEditRear' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, CurrentControlledStickerColorId) == 0x00040C, "Member 'ABP_StickerMasterSystem_C::CurrentControlledStickerColorId' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, CurrentControlledStickerSurfaceId) == 0x000410, "Member 'ABP_StickerMasterSystem_C::CurrentControlledStickerSurfaceId' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, DummyWidget) == 0x000418, "Member 'ABP_StickerMasterSystem_C::DummyWidget' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, OnColorPickerStateChanged) == 0x000420, "Member 'ABP_StickerMasterSystem_C::OnColorPickerStateChanged' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, IsRangeWarningOpen) == 0x000430, "Member 'ABP_StickerMasterSystem_C::IsRangeWarningOpen' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, SoundHandle_Move) == 0x000434, "Member 'ABP_StickerMasterSystem_C::SoundHandle_Move' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, SoundHandle_ZoomIn) == 0x000438, "Member 'ABP_StickerMasterSystem_C::SoundHandle_ZoomIn' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, SoundHandle_ZoomOut) == 0x00043C, "Member 'ABP_StickerMasterSystem_C::SoundHandle_ZoomOut' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, SoundHandle_ZoomSuit) == 0x000440, "Member 'ABP_StickerMasterSystem_C::SoundHandle_ZoomSuit' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, XTimerHandle) == 0x000448, "Member 'ABP_StickerMasterSystem_C::XTimerHandle' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, YTimerHandle) == 0x000450, "Member 'ABP_StickerMasterSystem_C::YTimerHandle' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, Debug_UVPreviewRotate) == 0x000458, "Member 'ABP_StickerMasterSystem_C::Debug_UVPreviewRotate' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, Debug_StickerInfo) == 0x000459, "Member 'ABP_StickerMasterSystem_C::Debug_StickerInfo' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, Debug_UVPreviewFrameRotate) == 0x00045A, "Member 'ABP_StickerMasterSystem_C::Debug_UVPreviewFrameRotate' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, MenuButtonInputReceiver) == 0x000460, "Member 'ABP_StickerMasterSystem_C::MenuButtonInputReceiver' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, LS_Pressed_Flag) == 0x000468, "Member 'ABP_StickerMasterSystem_C::LS_Pressed_Flag' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, RS_Pressed_Flag) == 0x000469, "Member 'ABP_StickerMasterSystem_C::RS_Pressed_Flag' has a wrong offset!");
-static_assert(offsetof(ABP_StickerMasterSystem_C, StickerMove_Keyboard_Flag) == 0x000470, "Member 'ABP_StickerMasterSystem_C::StickerMove_Keyboard_Flag' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_StickerMasterSystem_C;
 
 }
 

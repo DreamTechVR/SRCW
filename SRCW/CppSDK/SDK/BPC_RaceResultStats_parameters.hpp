@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "CoreUObject_structs.hpp"
 #include "UnionRun_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
-#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
@@ -100,70 +100,7 @@ public:
 	uint8                                         Pad_179[0x3];                                      // 0x0179(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast;    // 0x017C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats) == 0x000010, "Wrong alignment on BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats");
-static_assert(sizeof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats) == 0x000180, "Wrong size on BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, EntryPoint) == 0x000000, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_MakeLiteralDouble_ReturnValue) == 0x000008, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_MakeLiteralDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, Temp_byte_Variable) == 0x000010, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000018, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_GetPrivateLobbyContextByClass_ReturnValue) == 0x000020, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_GetPrivateLobbyContextByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_MakeLiteralByte_ReturnValue) == 0x000028, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_IsLobbyHostLocalMember_ReturnValue) == 0x000029, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_IsLobbyHostLocalMember_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_MakeLiteralByte_ReturnValue_1) == 0x00002A, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_MakeLiteralByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_Conv_ByteToInt_ReturnValue) == 0x00002C, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x000031, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, K2Node_SwitchEnum_CmpSuccess) == 0x000032, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_GetRaceSettingGrouping_ReturnValue) == 0x000033, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_GetRaceSettingGrouping_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, K2Node_SwitchEnum_CmpSuccess_1) == 0x000034, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, K2Node_Event_InDeltaTime) == 0x000038, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, K2Node_CustomEvent_Object) == 0x000040, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::K2Node_CustomEvent_Object' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, K2Node_CustomEvent_FinishedResultStateId) == 0x000048, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::K2Node_CustomEvent_FinishedResultStateId' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_SoundPlay_ReturnValue) == 0x00004C, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_MakeTransform_ReturnValue) == 0x000050, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0000B0, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_FinishSpawningActor_ReturnValue) == 0x0000B8, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_IsValid_ReturnValue_1) == 0x0000C0, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_GetRaceLoadTestMode_ReturnValue) == 0x0000C1, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_GetRaceLoadTestMode_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000C2, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, K2Node_CreateDelegate_OutputDelegate) == 0x0000C4, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_Create_ReturnValue) == 0x0000D8, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_IsPredictTestEnabled_ReturnValue) == 0x0000E0, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_IsPredictTestEnabled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_IsShippingBuild_ReturnValue) == 0x0000E1, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_IsShippingBuild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_GetBoolFromConfig_ConfigValue) == 0x0000E2, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_GetBoolFromConfig_ConfigValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_GetBoolFromConfig_ReturnValue) == 0x0000E3, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_GetBoolFromConfig_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_IsPartyRaceRivalExists_ReturnValue) == 0x0000E4, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_IsPartyRaceRivalExists_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_BooleanAND_ReturnValue) == 0x0000E5, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_IsGroupRace_ReturnValue) == 0x0000E6, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_IsGroupRace_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_GetSelectedGameModeId_ReturnValue_1) == 0x0000E7, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_GetSelectedGameModeId_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x0000E8, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, K2Node_Select_Default) == 0x0000F0, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_CreatePlayAnimationProxyObject_Result) == 0x0000F8, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_CreatePlayAnimationProxyObject_Result' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_CreatePlayAnimationProxyObject_ReturnValue) == 0x000100, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_CreatePlayAnimationProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_IsValid_ReturnValue_2) == 0x000108, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, K2Node_SwitchEnum_CmpSuccess_2) == 0x000109, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::K2Node_SwitchEnum_CmpSuccess_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_NotEqual_ByteByte_ReturnValue_1) == 0x00010A, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_NotEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_MakeLiteralByte_ReturnValue_2) == 0x00010B, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_MakeLiteralByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_MakeLiteralByte_ReturnValue_3) == 0x00010C, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_MakeLiteralByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x000110, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_Conv_ByteToInt_ReturnValue_2) == 0x000114, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_Conv_ByteToInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_GetSelectedGameModeId_ReturnValue_2) == 0x000118, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_GetSelectedGameModeId_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000119, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, K2Node_SwitchEnum_CmpSuccess_3) == 0x00011A, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::K2Node_SwitchEnum_CmpSuccess_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_GetTimeTrialLastResultId_ReturnValue) == 0x00011B, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_GetTimeTrialLastResultId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, K2Node_CreateDelegate_OutputDelegate_1) == 0x00011C, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_IsValid_ReturnValue_3) == 0x00012C, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_IsInViewport_ReturnValue) == 0x00012D, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_IsInViewport_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_GetOwnerStateMachine_ReturnValue) == 0x000130, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_GetOwnerStateMachine_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_MakeLiteralByte_ReturnValue_4) == 0x000138, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_MakeLiteralByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, K2Node_DynamicCast_AsBP_Race_Result_Sequence) == 0x000140, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::K2Node_DynamicCast_AsBP_Race_Result_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, K2Node_DynamicCast_bSuccess) == 0x000148, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_Conv_ByteToInt_ReturnValue_3) == 0x00014C, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_Conv_ByteToInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, K2Node_CreateDelegate_OutputDelegate_2) == 0x000150, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, K2Node_CreateDelegate_OutputDelegate_3) == 0x000160, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000170, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_K2_IsTimerActiveHandle_ReturnValue) == 0x000178, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_K2_IsTimerActiveHandle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats, CallFunc_K2_SetTimerDelegate_Time_ImplicitCast) == 0x00017C, "Member 'BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats::CallFunc_K2_SetTimerDelegate_Time_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceResultStats_C_ExecuteUbergraph_BPC_RaceResultStats;
 
 // Function BPC_RaceResultStats.BPC_RaceResultStats_C.OnAcceptKeyPressedEvent_Event
 // 0x0008 (0x0008 - 0x0000)
@@ -172,9 +109,7 @@ struct BPC_RaceResultStats_C_OnAcceptKeyPressedEvent_Event final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceResultStats_C_OnAcceptKeyPressedEvent_Event) == 0x000008, "Wrong alignment on BPC_RaceResultStats_C_OnAcceptKeyPressedEvent_Event");
-static_assert(sizeof(BPC_RaceResultStats_C_OnAcceptKeyPressedEvent_Event) == 0x000008, "Wrong size on BPC_RaceResultStats_C_OnAcceptKeyPressedEvent_Event");
-static_assert(offsetof(BPC_RaceResultStats_C_OnAcceptKeyPressedEvent_Event, Object) == 0x000000, "Member 'BPC_RaceResultStats_C_OnAcceptKeyPressedEvent_Event::Object' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceResultStats_C_OnAcceptKeyPressedEvent_Event;
 
 // Function BPC_RaceResultStats.BPC_RaceResultStats_C.OnFinishedResultAnim
 // 0x0004 (0x0004 - 0x0000)
@@ -183,9 +118,7 @@ struct BPC_RaceResultStats_C_OnFinishedResultAnim final
 public:
 	int32                                         FinishedResultStateId;                             // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceResultStats_C_OnFinishedResultAnim) == 0x000004, "Wrong alignment on BPC_RaceResultStats_C_OnFinishedResultAnim");
-static_assert(sizeof(BPC_RaceResultStats_C_OnFinishedResultAnim) == 0x000004, "Wrong size on BPC_RaceResultStats_C_OnFinishedResultAnim");
-static_assert(offsetof(BPC_RaceResultStats_C_OnFinishedResultAnim, FinishedResultStateId) == 0x000000, "Member 'BPC_RaceResultStats_C_OnFinishedResultAnim::FinishedResultStateId' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceResultStats_C_OnFinishedResultAnim;
 
 // Function BPC_RaceResultStats.BPC_RaceResultStats_C.OnUpdateState
 // 0x0004 (0x0004 - 0x0000)
@@ -194,9 +127,7 @@ struct BPC_RaceResultStats_C_OnUpdateState final
 public:
 	float                                         InDeltaTime;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceResultStats_C_OnUpdateState) == 0x000004, "Wrong alignment on BPC_RaceResultStats_C_OnUpdateState");
-static_assert(sizeof(BPC_RaceResultStats_C_OnUpdateState) == 0x000004, "Wrong size on BPC_RaceResultStats_C_OnUpdateState");
-static_assert(offsetof(BPC_RaceResultStats_C_OnUpdateState, InDeltaTime) == 0x000000, "Member 'BPC_RaceResultStats_C_OnUpdateState::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceResultStats_C_OnUpdateState;
 
 }
 

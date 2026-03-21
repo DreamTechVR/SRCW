@@ -78,70 +78,7 @@ public:
 	struct FAnimNodeExposedValueHandler           AnimGraphNode_LinkedInputPose;                     // 0x0658(0x0008)()
 	struct FAnimNodeExposedValueHandler_PropertyAccess AnimGraphNode_Root;                           // 0x0660(0x0030)()
 };
-static_assert(alignof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData) == 0x000008, "Wrong alignment on ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData");
-static_assert(sizeof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData) == 0x000690, "Wrong size on ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, __NameProperty_125) == 0x000004, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::__NameProperty_125' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, __NameProperty_126) == 0x00000C, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::__NameProperty_126' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, __NameProperty_127) == 0x000014, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::__NameProperty_127' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, __NameProperty_128) == 0x00001C, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::__NameProperty_128' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, __NameProperty_129) == 0x000024, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::__NameProperty_129' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, __NameProperty_130) == 0x00002C, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::__NameProperty_130' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, __NameProperty_131) == 0x000034, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::__NameProperty_131' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, __NameProperty_132) == 0x00003C, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::__NameProperty_132' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, __NameProperty_133) == 0x000044, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::__NameProperty_133' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, __StructProperty_134) == 0x000050, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::__StructProperty_134' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, __NameProperty_135) == 0x000070, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::__NameProperty_135' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, __NameProperty_136) == 0x000078, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::__NameProperty_136' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimBlueprintExtension_PropertyAccess) == 0x000080, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimBlueprintExtension_PropertyAccess' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimBlueprintExtension_Base) == 0x000100, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimBlueprintExtension_Base' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_Root_8) == 0x000140, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_Root_8' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_LinkedInputPose_13) == 0x000170, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_LinkedInputPose_13' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_LinkedInputPose_12) == 0x000178, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_LinkedInputPose_12' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_LinkedInputPose_11) == 0x000180, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_LinkedInputPose_11' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_Root_7) == 0x000188, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_Root_7' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_LinkedInputPose_10) == 0x0001B8, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_LinkedInputPose_10' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_LocalToComponentSpace) == 0x0001C0, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_LocalToComponentSpace' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_KawaiiPhysics_13) == 0x0001F0, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_KawaiiPhysics_13' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_ComponentToLocalSpace) == 0x000220, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_ComponentToLocalSpace' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_KawaiiPhysics_12) == 0x000250, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_KawaiiPhysics_12' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_KawaiiPhysics_11) == 0x000280, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_KawaiiPhysics_11' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_KawaiiPhysics_10) == 0x0002B0, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_KawaiiPhysics_10' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_KawaiiPhysics_9) == 0x0002E0, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_KawaiiPhysics_9' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_KawaiiPhysics_8) == 0x000310, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_KawaiiPhysics_8' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_KawaiiPhysics_7) == 0x000340, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_KawaiiPhysics_7' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_KawaiiPhysics_6) == 0x000370, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_KawaiiPhysics_6' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_KawaiiPhysics_5) == 0x0003A0, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_KawaiiPhysics_5' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_KawaiiPhysics_4) == 0x0003D0, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_KawaiiPhysics_4' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_KawaiiPhysics_3) == 0x000400, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_KawaiiPhysics_3' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_KawaiiPhysics_2) == 0x000430, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_KawaiiPhysics_2' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_KawaiiPhysics_1) == 0x000460, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_KawaiiPhysics_1' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_KawaiiPhysics) == 0x000490, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_KawaiiPhysics' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_Root_6) == 0x0004C0, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_Root_6' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_LinkedInputPose_9) == 0x0004F0, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_LinkedInputPose_9' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_ControlRig) == 0x0004F8, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_ControlRig' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_Root_5) == 0x000528, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_Root_5' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_LinkedInputPose_8) == 0x000558, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_LinkedInputPose_8' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_Root_4) == 0x000560, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_Root_4' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_LinkedInputPose_7) == 0x000590, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_LinkedInputPose_7' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_LinkedInputPose_6) == 0x000598, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_LinkedInputPose_6' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_Root_3) == 0x0005A0, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_Root_3' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_LinkedInputPose_5) == 0x0005D0, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_LinkedInputPose_5' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_LinkedInputPose_4) == 0x0005D8, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_LinkedInputPose_4' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_Root_2) == 0x0005E0, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_Root_2' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_LinkedInputPose_3) == 0x000610, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_LinkedInputPose_3' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_LinkedInputPose_2) == 0x000618, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_LinkedInputPose_2' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_Root_1) == 0x000620, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_Root_1' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_LinkedInputPose_1) == 0x000650, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_LinkedInputPose_1' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_LinkedInputPose) == 0x000658, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_LinkedInputPose' has a wrong offset!");
-static_assert(offsetof(ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData, AnimGraphNode_Root) == 0x000660, "Member 'ABP_Sage_Physics::FAnimBlueprintGeneratedConstantData::AnimGraphNode_Root' has a wrong offset!");
-
-// ScriptStruct ABP_Sage_Physics.ABP_Sage_Physics_C.AnimBlueprintGeneratedMutableData
-// 0x0000 (0x0001 - 0x0001)
-struct ABP_Sage_Physics::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
-{
-};
-static_assert(alignof(ABP_Sage_Physics::FAnimBlueprintGeneratedMutableData) == 0x000001, "Wrong alignment on ABP_Sage_Physics::FAnimBlueprintGeneratedMutableData");
-static_assert(sizeof(ABP_Sage_Physics::FAnimBlueprintGeneratedMutableData) == 0x000001, "Wrong size on ABP_Sage_Physics::FAnimBlueprintGeneratedMutableData");
+DUMPER7_ASSERTS_ABP_Sage_Physics__FAnimBlueprintGeneratedConstantData;
 
 }
 

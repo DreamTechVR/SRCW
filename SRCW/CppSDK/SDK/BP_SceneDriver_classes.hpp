@@ -11,21 +11,21 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SceneDriver.BP_SceneDriver_C
-// 0x0038 (0x0528 - 0x04F0)
+// 0x0038 (0x0548 - 0x0510)
 class ABP_SceneDriver_C final : public ASceneDriver
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UGFurComponent*                         GFur;                                              // 0x04F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	TSoftClassPtr<class UClass>                   TargetAnimBP;                                      // 0x0500(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0510(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UGFurComponent*                         GFur;                                              // 0x0518(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	TSoftClassPtr<class UClass>                   TargetAnimBP;                                      // 0x0520(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BP_SceneDriver(int32 EntryPoint);
@@ -41,18 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_SceneDriver_C">();
+		BP_STATIC_CLASS_IMPL("BP_SceneDriver_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_SceneDriver_C")
 	}
 	static class ABP_SceneDriver_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_SceneDriver_C>();
 	}
 };
-static_assert(alignof(ABP_SceneDriver_C) == 0x000008, "Wrong alignment on ABP_SceneDriver_C");
-static_assert(sizeof(ABP_SceneDriver_C) == 0x000528, "Wrong size on ABP_SceneDriver_C");
-static_assert(offsetof(ABP_SceneDriver_C, UberGraphFrame) == 0x0004F0, "Member 'ABP_SceneDriver_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_SceneDriver_C, GFur) == 0x0004F8, "Member 'ABP_SceneDriver_C::GFur' has a wrong offset!");
-static_assert(offsetof(ABP_SceneDriver_C, TargetAnimBP) == 0x000500, "Member 'ABP_SceneDriver_C::TargetAnimBP' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_SceneDriver_C;
 
 }
 

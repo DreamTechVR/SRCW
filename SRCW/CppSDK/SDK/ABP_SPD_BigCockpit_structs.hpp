@@ -21,8 +21,7 @@ namespace SDK
 struct ABP_SPD_BigCockpit::FAnimBlueprintGeneratedConstantData final : public ABPT_CockpitBase::FAnimBlueprintGeneratedConstantData
 {
 };
-static_assert(alignof(ABP_SPD_BigCockpit::FAnimBlueprintGeneratedConstantData) == 0x000008, "Wrong alignment on ABP_SPD_BigCockpit::FAnimBlueprintGeneratedConstantData");
-static_assert(sizeof(ABP_SPD_BigCockpit::FAnimBlueprintGeneratedConstantData) == 0x001E48, "Wrong size on ABP_SPD_BigCockpit::FAnimBlueprintGeneratedConstantData");
+DUMPER7_ASSERTS_ABP_SPD_BigCockpit__FAnimBlueprintGeneratedConstantData;
 
 }
 

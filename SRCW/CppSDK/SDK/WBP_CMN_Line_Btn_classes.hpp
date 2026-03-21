@@ -52,24 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_Line_Btn_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_Line_Btn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_Line_Btn_C")
 	}
 	static class UWBP_CMN_Line_Btn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_Line_Btn_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_Line_Btn_C) == 0x000008, "Wrong alignment on UWBP_CMN_Line_Btn_C");
-static_assert(sizeof(UWBP_CMN_Line_Btn_C) == 0x0004C0, "Wrong size on UWBP_CMN_Line_Btn_C");
-static_assert(offsetof(UWBP_CMN_Line_Btn_C, UberGraphFrame) == 0x000480, "Member 'UWBP_CMN_Line_Btn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Line_Btn_C, Btn_None_Loop) == 0x000488, "Member 'UWBP_CMN_Line_Btn_C::Btn_None_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Line_Btn_C, Btn_Select_Loop) == 0x000490, "Member 'UWBP_CMN_Line_Btn_C::Btn_Select_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Line_Btn_C, Btn_Active_Loop) == 0x000498, "Member 'UWBP_CMN_Line_Btn_C::Btn_Active_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Line_Btn_C, Btn_Cursor) == 0x0004A0, "Member 'UWBP_CMN_Line_Btn_C::Btn_Cursor' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Line_Btn_C, BtnBase) == 0x0004A8, "Member 'UWBP_CMN_Line_Btn_C::BtnBase' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Line_Btn_C, RaceFlagWave) == 0x0004B0, "Member 'UWBP_CMN_Line_Btn_C::RaceFlagWave' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Line_Btn_C, bIsActive) == 0x0004B8, "Member 'UWBP_CMN_Line_Btn_C::bIsActive' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Line_Btn_C, bUnselectableAnimation) == 0x0004B9, "Member 'UWBP_CMN_Line_Btn_C::bUnselectableAnimation' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_Line_Btn_C;
 
 }
 

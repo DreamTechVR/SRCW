@@ -41,24 +41,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn) == 0x000008, "Wrong alignment on WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn");
-static_assert(sizeof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn) == 0x000070, "Wrong size on WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn, EntryPoint) == 0x000000, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn, CallFunc_GetPlayerController_ReturnValue) == 0x000020, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000030, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn, CallFunc_GetRegisteredSubMenu_ReturnValue) == 0x000040, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn::CallFunc_GetRegisteredSubMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn, CallFunc_GetRegisteredMenu_ReturnValue) == 0x000050, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn::CallFunc_GetRegisteredMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn, CallFunc_Array_Get_Item) == 0x000058, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn, CallFunc_IsValid_ReturnValue_1) == 0x000060, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn, CallFunc_IsValid_ReturnValue_2) == 0x000061, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn, CallFunc_Array_Length_ReturnValue) == 0x000064, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn, CallFunc_Less_IntInt_ReturnValue) == 0x000068, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn;
 
 // Function WBP_HeaderMenu_Sub_NewsBtn.WBP_HeaderMenu_Sub_NewsBtn_C.FireButtonEvent
 // 0x0148 (0x0148 - 0x0000)
@@ -114,41 +97,7 @@ public:
 	int32                                         CallFunc_MakeLiteralInt_ReturnValue_4;             // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_MakeLiteralInt_ReturnValue_5;             // 0x0144(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent) == 0x000008, "Wrong alignment on WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent");
-static_assert(sizeof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent) == 0x000148, "Wrong size on WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, Object) == 0x000000, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::Object' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, CallFunc_MakeLiteralInt_ReturnValue) == 0x000008, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_AsMenu_Input_Recieve_Interface) == 0x000010, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_AsMenu_Input_Recieve_Interface' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_1) == 0x000028, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_1' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_bSuccess_1) == 0x000038, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_2) == 0x000040, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_2' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_bSuccess_2) == 0x000050, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_3) == 0x000058, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_3' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_bSuccess_3) == 0x000068, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_4) == 0x000070, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_4' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_bSuccess_4) == 0x000080, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_5) == 0x000088, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_5' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_bSuccess_5) == 0x000098, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_6) == 0x0000A0, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_6' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_bSuccess_6) == 0x0000B0, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_bSuccess_6' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_7) == 0x0000B8, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_7' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_bSuccess_7) == 0x0000C8, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_bSuccess_7' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_8) == 0x0000D0, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_8' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_bSuccess_8) == 0x0000E0, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_bSuccess_8' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_9) == 0x0000E8, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_9' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_bSuccess_9) == 0x0000F8, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_bSuccess_9' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_10) == 0x000100, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_10' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_bSuccess_10) == 0x000110, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_bSuccess_10' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_11) == 0x000118, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_11' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_bSuccess_11) == 0x000128, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_bSuccess_11' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, CallFunc_MakeLiteralInt_ReturnValue_1) == 0x00012C, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::CallFunc_MakeLiteralInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, CallFunc_IsValid_ReturnValue) == 0x000130, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, CallFunc_MakeLiteralInt_ReturnValue_2) == 0x000134, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::CallFunc_MakeLiteralInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_SwitchEnum_CmpSuccess) == 0x000138, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, CallFunc_MakeLiteralInt_ReturnValue_3) == 0x00013C, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::CallFunc_MakeLiteralInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, CallFunc_MakeLiteralInt_ReturnValue_4) == 0x000140, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::CallFunc_MakeLiteralInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, CallFunc_MakeLiteralInt_ReturnValue_5) == 0x000144, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::CallFunc_MakeLiteralInt_ReturnValue_5' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent;
 
 // Function WBP_HeaderMenu_Sub_NewsBtn.WBP_HeaderMenu_Sub_NewsBtn_C.PressButtonAnimation
 // 0x0008 (0x0008 - 0x0000)
@@ -158,10 +107,7 @@ public:
 	int32                                         CallFunc_GetActiveWidgetIndex_ReturnValue;         // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeaderMenu_Sub_NewsBtn_C_PressButtonAnimation) == 0x000004, "Wrong alignment on WBP_HeaderMenu_Sub_NewsBtn_C_PressButtonAnimation");
-static_assert(sizeof(WBP_HeaderMenu_Sub_NewsBtn_C_PressButtonAnimation) == 0x000008, "Wrong size on WBP_HeaderMenu_Sub_NewsBtn_C_PressButtonAnimation");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_PressButtonAnimation, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000000, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_PressButtonAnimation::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_PressButtonAnimation, K2Node_SwitchInteger_CmpSuccess) == 0x000004, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_PressButtonAnimation::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeaderMenu_Sub_NewsBtn_C_PressButtonAnimation;
 
 // Function WBP_HeaderMenu_Sub_NewsBtn.WBP_HeaderMenu_Sub_NewsBtn_C.Set Icon Visibility
 // 0x0001 (0x0001 - 0x0000)
@@ -170,9 +116,7 @@ struct WBP_HeaderMenu_Sub_NewsBtn_C_Set_Icon_Visibility final
 public:
 	ESlateVisibility                              Visibility_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeaderMenu_Sub_NewsBtn_C_Set_Icon_Visibility) == 0x000001, "Wrong alignment on WBP_HeaderMenu_Sub_NewsBtn_C_Set_Icon_Visibility");
-static_assert(sizeof(WBP_HeaderMenu_Sub_NewsBtn_C_Set_Icon_Visibility) == 0x000001, "Wrong size on WBP_HeaderMenu_Sub_NewsBtn_C_Set_Icon_Visibility");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_Set_Icon_Visibility, Visibility_0) == 0x000000, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_Set_Icon_Visibility::Visibility_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeaderMenu_Sub_NewsBtn_C_Set_Icon_Visibility;
 
 // Function WBP_HeaderMenu_Sub_NewsBtn.WBP_HeaderMenu_Sub_NewsBtn_C.SetText
 // 0x0010 (0x0010 - 0x0000)
@@ -181,9 +125,7 @@ struct WBP_HeaderMenu_Sub_NewsBtn_C_SetText final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_HeaderMenu_Sub_NewsBtn_C_SetText) == 0x000008, "Wrong alignment on WBP_HeaderMenu_Sub_NewsBtn_C_SetText");
-static_assert(sizeof(WBP_HeaderMenu_Sub_NewsBtn_C_SetText) == 0x000010, "Wrong size on WBP_HeaderMenu_Sub_NewsBtn_C_SetText");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_SetText, InText) == 0x000000, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_SetText::InText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeaderMenu_Sub_NewsBtn_C_SetText;
 
 }
 

@@ -21,8 +21,7 @@ namespace SDK
 struct ABP_HoldTripleHomingPunch::FAnimBlueprintGeneratedConstantData final : public ABPT_HoldItem::FAnimBlueprintGeneratedConstantData
 {
 };
-static_assert(alignof(ABP_HoldTripleHomingPunch::FAnimBlueprintGeneratedConstantData) == 0x000008, "Wrong alignment on ABP_HoldTripleHomingPunch::FAnimBlueprintGeneratedConstantData");
-static_assert(sizeof(ABP_HoldTripleHomingPunch::FAnimBlueprintGeneratedConstantData) == 0x000D30, "Wrong size on ABP_HoldTripleHomingPunch::FAnimBlueprintGeneratedConstantData");
+DUMPER7_ASSERTS_ABP_HoldTripleHomingPunch__FAnimBlueprintGeneratedConstantData;
 
 }
 

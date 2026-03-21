@@ -13,9 +13,9 @@
 #include "CoreUObject_structs.hpp"
 #include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
+#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "UnionLib_structs.hpp"
-#include "UNION_structs.hpp"
 
 
 namespace SDK::Params
@@ -37,16 +37,7 @@ public:
 	class ACameraActor*                           CallFunc_GetCameraActor_ReturnValue;               // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_OnlineSequence_C_AttachMainCamera) == 0x000008, "Wrong alignment on BP_OnlineSequence_C_AttachMainCamera");
-static_assert(sizeof(BP_OnlineSequence_C_AttachMainCamera) == 0x000048, "Wrong size on BP_OnlineSequence_C_AttachMainCamera");
-static_assert(offsetof(BP_OnlineSequence_C_AttachMainCamera, CallFunc_GetMapLevelStreaming_MapLevelStreaming) == 0x000000, "Member 'BP_OnlineSequence_C_AttachMainCamera::CallFunc_GetMapLevelStreaming_MapLevelStreaming' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_AttachMainCamera, CallFunc_GetPlayerController_ReturnValue) == 0x000008, "Member 'BP_OnlineSequence_C_AttachMainCamera::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_AttachMainCamera, CallFunc_GetLevelScriptActor_ReturnValue) == 0x000010, "Member 'BP_OnlineSequence_C_AttachMainCamera::CallFunc_GetLevelScriptActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_AttachMainCamera, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'BP_OnlineSequence_C_AttachMainCamera::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_AttachMainCamera, K2Node_DynamicCast_AsMenu_Lobby_Level_Interface) == 0x000020, "Member 'BP_OnlineSequence_C_AttachMainCamera::K2Node_DynamicCast_AsMenu_Lobby_Level_Interface' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_AttachMainCamera, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'BP_OnlineSequence_C_AttachMainCamera::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_AttachMainCamera, CallFunc_GetCameraActor_ReturnValue) == 0x000038, "Member 'BP_OnlineSequence_C_AttachMainCamera::CallFunc_GetCameraActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_AttachMainCamera, CallFunc_IsValid_ReturnValue_1) == 0x000040, "Member 'BP_OnlineSequence_C_AttachMainCamera::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_OnlineSequence_C_AttachMainCamera;
 
 // Function BP_OnlineSequence.BP_OnlineSequence_C.CallDodonpaEvent
 // 0x000C (0x000C - 0x0000)
@@ -57,11 +48,7 @@ public:
 	EGrandPrixEventFlag                           SaveDataFlagId;                                    // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EMenuSequenceBGM                              BGM_ID;                                            // 0x0009(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_OnlineSequence_C_CallDodonpaEvent) == 0x000004, "Wrong alignment on BP_OnlineSequence_C_CallDodonpaEvent");
-static_assert(sizeof(BP_OnlineSequence_C_CallDodonpaEvent) == 0x00000C, "Wrong size on BP_OnlineSequence_C_CallDodonpaEvent");
-static_assert(offsetof(BP_OnlineSequence_C_CallDodonpaEvent, EventName) == 0x000000, "Member 'BP_OnlineSequence_C_CallDodonpaEvent::EventName' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_CallDodonpaEvent, SaveDataFlagId) == 0x000008, "Member 'BP_OnlineSequence_C_CallDodonpaEvent::SaveDataFlagId' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_CallDodonpaEvent, BGM_ID) == 0x000009, "Member 'BP_OnlineSequence_C_CallDodonpaEvent::BGM_ID' has a wrong offset!");
+DUMPER7_ASSERTS_BP_OnlineSequence_C_CallDodonpaEvent;
 
 // Function BP_OnlineSequence.BP_OnlineSequence_C.Check Cross Play if Required
 // 0x00A0 (0x00A0 - 0x0000)
@@ -78,15 +65,7 @@ public:
 	TDelegate<void(bool IsConfirmed)>             K2Node_CreateDelegate_OutputDelegate;              // 0x0084(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0094(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_OnlineSequence_C_Check_Cross_Play_if_Required) == 0x000010, "Wrong alignment on BP_OnlineSequence_C_Check_Cross_Play_if_Required");
-static_assert(sizeof(BP_OnlineSequence_C_Check_Cross_Play_if_Required) == 0x0000A0, "Wrong size on BP_OnlineSequence_C_Check_Cross_Play_if_Required");
-static_assert(offsetof(BP_OnlineSequence_C_Check_Cross_Play_if_Required, IsCheckRequired) == 0x000000, "Member 'BP_OnlineSequence_C_Check_Cross_Play_if_Required::IsCheckRequired' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_Check_Cross_Play_if_Required, CallFunc_MakeTransform_ReturnValue) == 0x000010, "Member 'BP_OnlineSequence_C_Check_Cross_Play_if_Required::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_Check_Cross_Play_if_Required, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000070, "Member 'BP_OnlineSequence_C_Check_Cross_Play_if_Required::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_Check_Cross_Play_if_Required, CallFunc_FinishSpawningActor_ReturnValue) == 0x000078, "Member 'BP_OnlineSequence_C_Check_Cross_Play_if_Required::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_Check_Cross_Play_if_Required, CallFunc_CheckCrossPlay_ReturnValue) == 0x000080, "Member 'BP_OnlineSequence_C_Check_Cross_Play_if_Required::CallFunc_CheckCrossPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_Check_Cross_Play_if_Required, K2Node_CreateDelegate_OutputDelegate) == 0x000084, "Member 'BP_OnlineSequence_C_Check_Cross_Play_if_Required::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_Check_Cross_Play_if_Required, CallFunc_IsValid_ReturnValue) == 0x000094, "Member 'BP_OnlineSequence_C_Check_Cross_Play_if_Required::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_OnlineSequence_C_Check_Cross_Play_if_Required;
 
 // Function BP_OnlineSequence.BP_OnlineSequence_C.ExecuteUbergraph_BP_OnlineSequence
 // 0x04F0 (0x04F0 - 0x0000)
@@ -302,178 +281,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue_16;                   // 0x04E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsNeedUnloadAnyTopMenuLevel_ReturnValue_3; // 0x04E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence) == 0x000010, "Wrong alignment on BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence");
-static_assert(sizeof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence) == 0x0004F0, "Wrong size on BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, EntryPoint) == 0x000000, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_MakeLiteralByte_ReturnValue) == 0x000004, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_CustomEvent_State) == 0x000005, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_CustomEvent_State' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_CheckDodonpaEventCondition_ReturnValue) == 0x000006, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_CheckDodonpaEventCondition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000018, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_CustomEvent_IsSuccess) == 0x000020, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_CustomEvent_IsSuccess' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_CustomEvent_IsEnableOnlinePlay) == 0x000021, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_CustomEvent_IsEnableOnlinePlay' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_CustomEvent_IsRequestedSequenceBlock) == 0x000022, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_CustomEvent_IsRequestedSequenceBlock' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_BooleanAND_ReturnValue) == 0x000023, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_IsValid_ReturnValue) == 0x000024, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetWorldSubsystem_ReturnValue_1) == 0x000028, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetWorldSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetWorldSubsystem_ReturnValue_2) == 0x000030, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetWorldSubsystem_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetPFLobbyInviteAccepted_ReturnValue) == 0x000038, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetPFLobbyInviteAccepted_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetWorldSubsystem_ReturnValue_3) == 0x000040, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetWorldSubsystem_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetWorldSubsystem_ReturnValue_4) == 0x000048, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetWorldSubsystem_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetPFLobbyInviteAccepted_ReturnValue_1) == 0x000050, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetPFLobbyInviteAccepted_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_LoadLevelTopMenu_ReturnValue) == 0x000058, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_LoadLevelTopMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetLevelScriptActor_ReturnValue) == 0x000060, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetLevelScriptActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetAlreadyLoadNeedSubLevel_bIsAlreadyLoad) == 0x000068, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetAlreadyLoadNeedSubLevel_bIsAlreadyLoad' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetAlreadyLoadNeedSubLevel_ReturnValue) == 0x000070, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetAlreadyLoadNeedSubLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_DynamicCast_AsMenu_Lobby_Level_Interface) == 0x000078, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_DynamicCast_AsMenu_Lobby_Level_Interface' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_DynamicCast_bSuccess) == 0x000088, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetLevelScriptActor_ReturnValue_1) == 0x000090, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetLevelScriptActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetCameraActor_ReturnValue) == 0x000098, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetCameraActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_DynamicCast_AsMenu_Lobby_Level_Interface_1) == 0x0000A0, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_DynamicCast_AsMenu_Lobby_Level_Interface_1' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_DynamicCast_bSuccess_1) == 0x0000B0, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetCameraActor_ReturnValue_1) == 0x0000B8, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetCameraActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_IsValid_ReturnValue_1) == 0x0000C0, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_IsNeedUnloadAnyTopMenuLevel_ReturnValue) == 0x0000C1, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_IsNeedUnloadAnyTopMenuLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_IsValid_ReturnValue_2) == 0x0000C2, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_CreateDelegate_OutputDelegate_1) == 0x0000C4, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetWorldSubsystem_ReturnValue_5) == 0x0000D8, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetWorldSubsystem_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_CustomEvent_IsConfirmed) == 0x0000E0, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_CustomEvent_IsConfirmed' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_Check_Cross_Play_if_Required_IsCheckRequired) == 0x0000E1, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_Check_Cross_Play_if_Required_IsCheckRequired' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x0000E8, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_HasInviteOnly_ReturnValue) == 0x0000F0, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_HasInviteOnly_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_IsValid_ReturnValue_3) == 0x0000F1, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_IsSkipDodonpaEventMilestoneVersion_ReturnValue) == 0x0000F2, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_IsSkipDodonpaEventMilestoneVersion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetWorldSubsystem_ReturnValue_6) == 0x0000F8, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetWorldSubsystem_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x000100, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_IsValid_ReturnValue_4) == 0x000108, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_IsDebugMode_ReturnValue) == 0x000109, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_IsDebugMode_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_2) == 0x000110, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_3) == 0x000118, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_IsValid_ReturnValue_5) == 0x000120, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_IsDebugMode_ReturnValue_1) == 0x000121, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_IsDebugMode_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetPlayerController_ReturnValue) == 0x000128, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_IsValid_ReturnValue_6) == 0x000130, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_IsValid_ReturnValue_7) == 0x000131, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_IsValid_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_DynamicCast_AsMenu_Popup_Window_Interface) == 0x000138, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_DynamicCast_AsMenu_Popup_Window_Interface' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_DynamicCast_bSuccess_2) == 0x000148, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_CreateDelegate_OutputDelegate_2) == 0x00014C, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_1) == 0x000160, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_1' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_DynamicCast_bSuccess_3) == 0x000170, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_2) == 0x000178, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_2' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_DynamicCast_bSuccess_4) == 0x000188, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_3) == 0x000190, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_3' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_DynamicCast_bSuccess_5) == 0x0001A0, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetPlayerController_ReturnValue_1) == 0x0001A8, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_IsValid_ReturnValue_8) == 0x0001B0, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_IsValid_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_IsValid_ReturnValue_9) == 0x0001B1, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_IsValid_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_4) == 0x0001B8, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_CheckRaceCycleFlag_ReturnValue) == 0x0001C0, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_CheckRaceCycleFlag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_CreatePopupWindow_ReturnValue) == 0x0001C8, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_CreatePopupWindow_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetWorldSubsystem_ReturnValue_7) == 0x0001D0, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetWorldSubsystem_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_LoadLevelTopMenu_ReturnValue_1) == 0x0001D8, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_LoadLevelTopMenu_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_IsValid_ReturnValue_10) == 0x0001E0, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_IsValid_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetAlreadyLoadNeedSubLevel_bIsAlreadyLoad_1) == 0x0001E1, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetAlreadyLoadNeedSubLevel_bIsAlreadyLoad_1' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetAlreadyLoadNeedSubLevel_ReturnValue_1) == 0x0001E8, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetAlreadyLoadNeedSubLevel_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_IsValid_ReturnValue_11) == 0x0001F0, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_IsValid_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_IsNeedUnloadAnyTopMenuLevel_ReturnValue_1) == 0x0001F1, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_IsNeedUnloadAnyTopMenuLevel_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x0001F2, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0001F3, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x0001F4, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_IsComeBackFromRace_ReturnValue) == 0x0001F5, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_IsComeBackFromRace_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_BooleanOR_ReturnValue) == 0x0001F6, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_IsBackToTopMenu_ReturnValue) == 0x0001F7, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_IsBackToTopMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_IsValid_ReturnValue_12) == 0x0001F8, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_IsValid_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_MakeLiteralBool_ReturnValue) == 0x0001F9, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_MakeLiteralBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_MakeLiteralInt_ReturnValue) == 0x0001FC, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetUserSelectedMachineId_ReturnValue) == 0x000200, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetUserSelectedMachineId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetUserSelectedDriverId_ReturnValue) == 0x000201, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetUserSelectedDriverId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000204, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_SetSelectedDriverId_OutExecsPin) == 0x000208, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_SetSelectedDriverId_OutExecsPin' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_SetSelectedMachineID_OutExecsPin) == 0x000209, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_SetSelectedMachineID_OutExecsPin' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_SwitchEnum_CmpSuccess) == 0x00020A, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_SwitchEnum_CmpSuccess_1) == 0x00020B, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetWorldSubsystem_ReturnValue_8) == 0x000210, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetWorldSubsystem_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_MakeLiteralInt_ReturnValue_1) == 0x000218, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_MakeLiteralInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetSelectedDriverId_OutId) == 0x00021C, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetSelectedDriverId_OutId' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetSelectedDriverId_OutExecsPin) == 0x00021D, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetSelectedDriverId_OutExecsPin' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_IsValid_ReturnValue_13) == 0x00021E, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_IsValid_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_SwitchEnum_CmpSuccess_2) == 0x00021F, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_SwitchEnum_CmpSuccess_2' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetSelectedMachineID_OutId) == 0x000220, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetSelectedMachineID_OutId' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetSelectedMachineID_OutExecsPin) == 0x000224, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetSelectedMachineID_OutExecsPin' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_SwitchEnum_CmpSuccess_3) == 0x000225, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_SwitchEnum_CmpSuccess_3' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_Conv_IntToByte_ReturnValue) == 0x000226, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetValidValue_ReturnValue) == 0x000227, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetMachineCustomizeDataById_OutUserMachineCustomizeData) == 0x000228, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetMachineCustomizeDataById_OutUserMachineCustomizeData' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetParentActor_ReturnValue) == 0x0002A0, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetParentActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_Event_InState) == 0x0002A8, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_Event_InState' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_Event_PrevState) == 0x0002A9, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_Event_PrevState' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_DynamicCast_AsBP_Menu_Sequence) == 0x0002B0, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_DynamicCast_AsBP_Menu_Sequence' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_DynamicCast_bSuccess_6) == 0x0002B8, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_DynamicCast_bSuccess_6' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue) == 0x0002C0, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_Conv_StringToText_ReturnValue) == 0x0002D0, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_MakeStruct_FormatArgumentData) == 0x0002E0, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_MakeArray_Array) == 0x000328, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_Format_ReturnValue) == 0x000338, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_MakeTransform_ReturnValue) == 0x000350, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0003B0, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_FinishSpawningActor_ReturnValue) == 0x0003B8, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_SetSelectedDriverId_OutExecsPin_1) == 0x0003C0, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_SetSelectedDriverId_OutExecsPin_1' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetSelectedDriverId_OutId_1) == 0x0003C1, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetSelectedDriverId_OutId_1' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetSelectedDriverId_OutExecsPin_1) == 0x0003C2, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetSelectedDriverId_OutExecsPin_1' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_SwitchEnum_CmpSuccess_4) == 0x0003C3, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_SwitchEnum_CmpSuccess_4' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_SwitchEnum_CmpSuccess_5) == 0x0003C4, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_SwitchEnum_CmpSuccess_5' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_IsDriverSuper_ReturnValue) == 0x0003C5, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_IsDriverSuper_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetPlayerController_ReturnValue_2) == 0x0003C8, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetPlayerController_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetWorldSubsystem_ReturnValue_9) == 0x0003D0, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetWorldSubsystem_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetWorldSubsystem_ReturnValue_10) == 0x0003D8, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetWorldSubsystem_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_5) == 0x0003E0, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_CreateMenuRacer_ReturnValue) == 0x0003E8, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_CreateMenuRacer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_IsDodonpaForceStart_ReturnValue) == 0x0003F0, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_IsDodonpaForceStart_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_DynamicCast_AsBP_Menu_Racer_Lobby) == 0x0003F8, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_DynamicCast_AsBP_Menu_Racer_Lobby' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_DynamicCast_bSuccess_7) == 0x000400, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_DynamicCast_bSuccess_7' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_MakeLiteralText_ReturnValue) == 0x000408, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_MakeLiteralText_ReturnValue_1) == 0x000418, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_CustomEvent_Button) == 0x000428, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_CustomEvent_PanelIndex) == 0x000430, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_CustomEvent_PanelIndex' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K2Node_CustomEvent_ButtonIndex) == 0x000434, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::K2Node_CustomEvent_ButtonIndex' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_6) == 0x000438, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_CheckLegendCompeStartDateTime_ReturnValue) == 0x000440, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_CheckLegendCompeStartDateTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_BooleanAND_ReturnValue_1) == 0x000441, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_BooleanOR_ReturnValue_1) == 0x000442, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetCurrentOnlineState_ReturnValue) == 0x000443, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetCurrentOnlineState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_7) == 0x000448, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_8) == 0x000450, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetPrivateLobbyContext_ReturnValue) == 0x000458, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetPrivateLobbyContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetMemberCount_ReturnValue) == 0x000460, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetMemberCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_IsJoining_ReturnValue) == 0x000464, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_IsJoining_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000465, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_Not_PreBool_ReturnValue) == 0x000466, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_IsValid_ReturnValue_14) == 0x000467, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_IsValid_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_BooleanAND_ReturnValue_2) == 0x000468, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetWorldSubsystem_ReturnValue_11) == 0x000470, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetWorldSubsystem_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetSelectedGameModeId_ReturnValue_1) == 0x000478, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetSelectedGameModeId_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x000479, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x00047A, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_EqualEqual_ByteByte_ReturnValue_3) == 0x00047B, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_EqualEqual_ByteByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_BooleanOR_ReturnValue_2) == 0x00047C, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetWorldSubsystem_ReturnValue_12) == 0x000480, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetWorldSubsystem_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_Not_PreBool_ReturnValue_1) == 0x000488, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetSelectedMenuSpeedClassId_ReturnValue) == 0x000489, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetSelectedMenuSpeedClassId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_MakeLiteralInt_ReturnValue_2) == 0x00048C, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_MakeLiteralInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetWorldSubsystem_ReturnValue_13) == 0x000490, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetWorldSubsystem_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetPlayerController_ReturnValue_3) == 0x000498, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetPlayerController_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_LoadLevelTopMenu_ReturnValue_2) == 0x0004A0, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_LoadLevelTopMenu_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_SetPlayer_ReturnValue) == 0x0004A8, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_SetPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetAlreadyLoadNeedSubLevel_bIsAlreadyLoad_2) == 0x0004B0, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetAlreadyLoadNeedSubLevel_bIsAlreadyLoad_2' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetAlreadyLoadNeedSubLevel_ReturnValue_2) == 0x0004B8, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetAlreadyLoadNeedSubLevel_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_IsValid_ReturnValue_15) == 0x0004C0, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_IsValid_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_IsNeedUnloadAnyTopMenuLevel_ReturnValue_2) == 0x0004C1, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_IsNeedUnloadAnyTopMenuLevel_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetWorldSubsystem_ReturnValue_14) == 0x0004C8, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetWorldSubsystem_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_LoadLevelTopMenu_ReturnValue_3) == 0x0004D0, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_LoadLevelTopMenu_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetAlreadyLoadNeedSubLevel_bIsAlreadyLoad_3) == 0x0004D8, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetAlreadyLoadNeedSubLevel_bIsAlreadyLoad_3' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetAlreadyLoadNeedSubLevel_ReturnValue_3) == 0x0004E0, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetAlreadyLoadNeedSubLevel_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_IsValid_ReturnValue_16) == 0x0004E8, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_IsValid_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_IsNeedUnloadAnyTopMenuLevel_ReturnValue_3) == 0x0004E9, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_IsNeedUnloadAnyTopMenuLevel_ReturnValue_3' has a wrong offset!");
+DUMPER7_ASSERTS_BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence;
 
 // Function BP_OnlineSequence.BP_OnlineSequence_C.GetFooter
 // 0x0018 (0x0018 - 0x0000)
@@ -484,11 +292,7 @@ public:
 	class UMenuWorldSubsystem*                    CallFunc_GetWorldSubsystem_ReturnValue;            // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_OnlineSequence_C_GetFooter) == 0x000008, "Wrong alignment on BP_OnlineSequence_C_GetFooter");
-static_assert(sizeof(BP_OnlineSequence_C_GetFooter) == 0x000018, "Wrong size on BP_OnlineSequence_C_GetFooter");
-static_assert(offsetof(BP_OnlineSequence_C_GetFooter, ReturnValue) == 0x000000, "Member 'BP_OnlineSequence_C_GetFooter::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_GetFooter, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000008, "Member 'BP_OnlineSequence_C_GetFooter::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_GetFooter, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'BP_OnlineSequence_C_GetFooter::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_OnlineSequence_C_GetFooter;
 
 // Function BP_OnlineSequence.BP_OnlineSequence_C.GetOwnerMenuSequence
 // 0x0008 (0x0008 - 0x0000)
@@ -497,9 +301,7 @@ struct BP_OnlineSequence_C_GetOwnerMenuSequence final
 public:
 	class UObject*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_OnlineSequence_C_GetOwnerMenuSequence) == 0x000008, "Wrong alignment on BP_OnlineSequence_C_GetOwnerMenuSequence");
-static_assert(sizeof(BP_OnlineSequence_C_GetOwnerMenuSequence) == 0x000008, "Wrong size on BP_OnlineSequence_C_GetOwnerMenuSequence");
-static_assert(offsetof(BP_OnlineSequence_C_GetOwnerMenuSequence, ReturnValue) == 0x000000, "Member 'BP_OnlineSequence_C_GetOwnerMenuSequence::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_OnlineSequence_C_GetOwnerMenuSequence;
 
 // Function BP_OnlineSequence.BP_OnlineSequence_C.OnCrossPlayCheckUserConfirmed
 // 0x0001 (0x0001 - 0x0000)
@@ -508,9 +310,7 @@ struct BP_OnlineSequence_C_OnCrossPlayCheckUserConfirmed final
 public:
 	bool                                          IsConfirmed;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_OnlineSequence_C_OnCrossPlayCheckUserConfirmed) == 0x000001, "Wrong alignment on BP_OnlineSequence_C_OnCrossPlayCheckUserConfirmed");
-static_assert(sizeof(BP_OnlineSequence_C_OnCrossPlayCheckUserConfirmed) == 0x000001, "Wrong size on BP_OnlineSequence_C_OnCrossPlayCheckUserConfirmed");
-static_assert(offsetof(BP_OnlineSequence_C_OnCrossPlayCheckUserConfirmed, IsConfirmed) == 0x000000, "Member 'BP_OnlineSequence_C_OnCrossPlayCheckUserConfirmed::IsConfirmed' has a wrong offset!");
+DUMPER7_ASSERTS_BP_OnlineSequence_C_OnCrossPlayCheckUserConfirmed;
 
 // Function BP_OnlineSequence.BP_OnlineSequence_C.OnEndDodonpaEvent_LegendCompeIntro
 // 0x0001 (0x0001 - 0x0000)
@@ -519,9 +319,7 @@ struct BP_OnlineSequence_C_OnEndDodonpaEvent_LegendCompeIntro final
 public:
 	EMenuSequenceSubState                         State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_OnlineSequence_C_OnEndDodonpaEvent_LegendCompeIntro) == 0x000001, "Wrong alignment on BP_OnlineSequence_C_OnEndDodonpaEvent_LegendCompeIntro");
-static_assert(sizeof(BP_OnlineSequence_C_OnEndDodonpaEvent_LegendCompeIntro) == 0x000001, "Wrong size on BP_OnlineSequence_C_OnEndDodonpaEvent_LegendCompeIntro");
-static_assert(offsetof(BP_OnlineSequence_C_OnEndDodonpaEvent_LegendCompeIntro, State) == 0x000000, "Member 'BP_OnlineSequence_C_OnEndDodonpaEvent_LegendCompeIntro::State' has a wrong offset!");
+DUMPER7_ASSERTS_BP_OnlineSequence_C_OnEndDodonpaEvent_LegendCompeIntro;
 
 // Function BP_OnlineSequence.BP_OnlineSequence_C.OnLoginResult_Event
 // 0x0003 (0x0003 - 0x0000)
@@ -532,11 +330,7 @@ public:
 	bool                                          IsEnableOnlinePlay;                                // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsRequestedSequenceBlock;                          // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_OnlineSequence_C_OnLoginResult_Event) == 0x000001, "Wrong alignment on BP_OnlineSequence_C_OnLoginResult_Event");
-static_assert(sizeof(BP_OnlineSequence_C_OnLoginResult_Event) == 0x000003, "Wrong size on BP_OnlineSequence_C_OnLoginResult_Event");
-static_assert(offsetof(BP_OnlineSequence_C_OnLoginResult_Event, IsSuccess) == 0x000000, "Member 'BP_OnlineSequence_C_OnLoginResult_Event::IsSuccess' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_OnLoginResult_Event, IsEnableOnlinePlay) == 0x000001, "Member 'BP_OnlineSequence_C_OnLoginResult_Event::IsEnableOnlinePlay' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_OnLoginResult_Event, IsRequestedSequenceBlock) == 0x000002, "Member 'BP_OnlineSequence_C_OnLoginResult_Event::IsRequestedSequenceBlock' has a wrong offset!");
+DUMPER7_ASSERTS_BP_OnlineSequence_C_OnLoginResult_Event;
 
 // Function BP_OnlineSequence.BP_OnlineSequence_C.OnPopupOK
 // 0x0010 (0x0010 - 0x0000)
@@ -547,11 +341,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_OnlineSequence_C_OnPopupOK) == 0x000008, "Wrong alignment on BP_OnlineSequence_C_OnPopupOK");
-static_assert(sizeof(BP_OnlineSequence_C_OnPopupOK) == 0x000010, "Wrong size on BP_OnlineSequence_C_OnPopupOK");
-static_assert(offsetof(BP_OnlineSequence_C_OnPopupOK, Button) == 0x000000, "Member 'BP_OnlineSequence_C_OnPopupOK::Button' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_OnPopupOK, PanelIndex) == 0x000008, "Member 'BP_OnlineSequence_C_OnPopupOK::PanelIndex' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_OnPopupOK, ButtonIndex) == 0x00000C, "Member 'BP_OnlineSequence_C_OnPopupOK::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BP_OnlineSequence_C_OnPopupOK;
 
 // Function BP_OnlineSequence.BP_OnlineSequence_C.RemoveOnlineTopWidget
 // 0x0010 (0x0010 - 0x0000)
@@ -561,10 +351,7 @@ public:
 	class UMenuWorldSubsystem*                    CallFunc_GetWorldSubsystem_ReturnValue;            // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_OnlineSequence_C_RemoveOnlineTopWidget) == 0x000008, "Wrong alignment on BP_OnlineSequence_C_RemoveOnlineTopWidget");
-static_assert(sizeof(BP_OnlineSequence_C_RemoveOnlineTopWidget) == 0x000010, "Wrong size on BP_OnlineSequence_C_RemoveOnlineTopWidget");
-static_assert(offsetof(BP_OnlineSequence_C_RemoveOnlineTopWidget, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000000, "Member 'BP_OnlineSequence_C_RemoveOnlineTopWidget::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_RemoveOnlineTopWidget, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'BP_OnlineSequence_C_RemoveOnlineTopWidget::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_OnlineSequence_C_RemoveOnlineTopWidget;
 
 // Function BP_OnlineSequence.BP_OnlineSequence_C.SetNextOnlineSequenceState
 // 0x0002 (0x0002 - 0x0000)
@@ -574,10 +361,7 @@ public:
 	EOnlineSequenceState                          InState;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EOnlineSequenceState                          PrevState;                                         // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_OnlineSequence_C_SetNextOnlineSequenceState) == 0x000001, "Wrong alignment on BP_OnlineSequence_C_SetNextOnlineSequenceState");
-static_assert(sizeof(BP_OnlineSequence_C_SetNextOnlineSequenceState) == 0x000002, "Wrong size on BP_OnlineSequence_C_SetNextOnlineSequenceState");
-static_assert(offsetof(BP_OnlineSequence_C_SetNextOnlineSequenceState, InState) == 0x000000, "Member 'BP_OnlineSequence_C_SetNextOnlineSequenceState::InState' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_SetNextOnlineSequenceState, PrevState) == 0x000001, "Member 'BP_OnlineSequence_C_SetNextOnlineSequenceState::PrevState' has a wrong offset!");
+DUMPER7_ASSERTS_BP_OnlineSequence_C_SetNextOnlineSequenceState;
 
 // Function BP_OnlineSequence.BP_OnlineSequence_C.SetSubMenuVisibility
 // 0x0018 (0x0018 - 0x0000)
@@ -590,12 +374,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_OnlineSequence_C_SetSubMenuVisibility) == 0x000008, "Wrong alignment on BP_OnlineSequence_C_SetSubMenuVisibility");
-static_assert(sizeof(BP_OnlineSequence_C_SetSubMenuVisibility) == 0x000018, "Wrong size on BP_OnlineSequence_C_SetSubMenuVisibility");
-static_assert(offsetof(BP_OnlineSequence_C_SetSubMenuVisibility, Visibility) == 0x000000, "Member 'BP_OnlineSequence_C_SetSubMenuVisibility::Visibility' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_SetSubMenuVisibility, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000008, "Member 'BP_OnlineSequence_C_SetSubMenuVisibility::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_SetSubMenuVisibility, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'BP_OnlineSequence_C_SetSubMenuVisibility::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_SetSubMenuVisibility, CallFunc_IsValid_ReturnValue_1) == 0x000011, "Member 'BP_OnlineSequence_C_SetSubMenuVisibility::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_OnlineSequence_C_SetSubMenuVisibility;
 
 // Function BP_OnlineSequence.BP_OnlineSequence_C.SetupCamera
 // 0x0048 (0x0048 - 0x0000)
@@ -613,16 +392,7 @@ public:
 	class ACameraActor*                           CallFunc_GetCameraActor_ReturnValue;               // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_OnlineSequence_C_SetupCamera) == 0x000008, "Wrong alignment on BP_OnlineSequence_C_SetupCamera");
-static_assert(sizeof(BP_OnlineSequence_C_SetupCamera) == 0x000048, "Wrong size on BP_OnlineSequence_C_SetupCamera");
-static_assert(offsetof(BP_OnlineSequence_C_SetupCamera, SubLevel) == 0x000000, "Member 'BP_OnlineSequence_C_SetupCamera::SubLevel' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_SetupCamera, CallFunc_GetPlayerController_ReturnValue) == 0x000008, "Member 'BP_OnlineSequence_C_SetupCamera::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_SetupCamera, CallFunc_GetLevelScriptActor_ReturnValue) == 0x000010, "Member 'BP_OnlineSequence_C_SetupCamera::CallFunc_GetLevelScriptActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_SetupCamera, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'BP_OnlineSequence_C_SetupCamera::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_SetupCamera, K2Node_DynamicCast_AsMenu_Lobby_Level_Interface) == 0x000020, "Member 'BP_OnlineSequence_C_SetupCamera::K2Node_DynamicCast_AsMenu_Lobby_Level_Interface' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_SetupCamera, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'BP_OnlineSequence_C_SetupCamera::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_SetupCamera, CallFunc_GetCameraActor_ReturnValue) == 0x000038, "Member 'BP_OnlineSequence_C_SetupCamera::CallFunc_GetCameraActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_SetupCamera, CallFunc_IsValid_ReturnValue_1) == 0x000040, "Member 'BP_OnlineSequence_C_SetupCamera::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_OnlineSequence_C_SetupCamera;
 
 // Function BP_OnlineSequence.BP_OnlineSequence_C.UpdateCurrentTopMenuLevelName
 // 0x0010 (0x0010 - 0x0000)
@@ -632,10 +402,7 @@ public:
 	class UMenuWorldSubsystem*                    CallFunc_GetWorldSubsystem_ReturnValue;            // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_OnlineSequence_C_UpdateCurrentTopMenuLevelName) == 0x000008, "Wrong alignment on BP_OnlineSequence_C_UpdateCurrentTopMenuLevelName");
-static_assert(sizeof(BP_OnlineSequence_C_UpdateCurrentTopMenuLevelName) == 0x000010, "Wrong size on BP_OnlineSequence_C_UpdateCurrentTopMenuLevelName");
-static_assert(offsetof(BP_OnlineSequence_C_UpdateCurrentTopMenuLevelName, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000000, "Member 'BP_OnlineSequence_C_UpdateCurrentTopMenuLevelName::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_UpdateCurrentTopMenuLevelName, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'BP_OnlineSequence_C_UpdateCurrentTopMenuLevelName::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_OnlineSequence_C_UpdateCurrentTopMenuLevelName;
 
 }
 

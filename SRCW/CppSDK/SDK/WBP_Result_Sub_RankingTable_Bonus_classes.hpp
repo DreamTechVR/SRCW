@@ -46,29 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Result_Sub_RankingTable_Bonus_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Result_Sub_RankingTable_Bonus_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Result_Sub_RankingTable_Bonus_C")
 	}
 	static class UWBP_Result_Sub_RankingTable_Bonus_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Result_Sub_RankingTable_Bonus_C>();
 	}
 };
-static_assert(alignof(UWBP_Result_Sub_RankingTable_Bonus_C) == 0x000008, "Wrong alignment on UWBP_Result_Sub_RankingTable_Bonus_C");
-static_assert(sizeof(UWBP_Result_Sub_RankingTable_Bonus_C) == 0x000350, "Wrong size on UWBP_Result_Sub_RankingTable_Bonus_C");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_Bonus_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Result_Sub_RankingTable_Bonus_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_Bonus_C, Bonus_Out) == 0x0002E8, "Member 'UWBP_Result_Sub_RankingTable_Bonus_C::Bonus_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_Bonus_C, Bonus_Loop) == 0x0002F0, "Member 'UWBP_Result_Sub_RankingTable_Bonus_C::Bonus_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_Bonus_C, Bonus_In) == 0x0002F8, "Member 'UWBP_Result_Sub_RankingTable_Bonus_C::Bonus_In' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_Bonus_C, base) == 0x000300, "Member 'UWBP_Result_Sub_RankingTable_Bonus_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_Bonus_C, base_1) == 0x000308, "Member 'UWBP_Result_Sub_RankingTable_Bonus_C::base_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_Bonus_C, Eff_01) == 0x000310, "Member 'UWBP_Result_Sub_RankingTable_Bonus_C::Eff_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_Bonus_C, Eff_02) == 0x000318, "Member 'UWBP_Result_Sub_RankingTable_Bonus_C::Eff_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_Bonus_C, Line) == 0x000320, "Member 'UWBP_Result_Sub_RankingTable_Bonus_C::Line' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_Bonus_C, Line_1) == 0x000328, "Member 'UWBP_Result_Sub_RankingTable_Bonus_C::Line_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_Bonus_C, TXT_Bonus) == 0x000330, "Member 'UWBP_Result_Sub_RankingTable_Bonus_C::TXT_Bonus' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_Bonus_C, TXT_BonusNum) == 0x000338, "Member 'UWBP_Result_Sub_RankingTable_Bonus_C::TXT_BonusNum' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_Bonus_C, TXT_MVP) == 0x000340, "Member 'UWBP_Result_Sub_RankingTable_Bonus_C::TXT_MVP' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_Bonus_C, WidgetSwitcher_0) == 0x000348, "Member 'UWBP_Result_Sub_RankingTable_Bonus_C::WidgetSwitcher_0' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Result_Sub_RankingTable_Bonus_C;
 
 }
 

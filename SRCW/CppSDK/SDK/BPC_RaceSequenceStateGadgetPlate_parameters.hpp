@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "UNION_structs.hpp"
 #include "UnionUI_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "UNION_structs.hpp"
 #include "Engine_structs.hpp"
 
 
@@ -65,39 +65,7 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x00B4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate");
-static_assert(sizeof(BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate) == 0x0000C8, "Wrong size on BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate");
-static_assert(offsetof(BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate, EntryPoint) == 0x000000, "Member 'BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate, CallFunc_MakeLiteralByte_ReturnValue) == 0x000004, "Member 'BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000008, "Member 'BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate, CallFunc_IsValid_ReturnValue) == 0x00000C, "Member 'BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate, CallFunc_GetChildStateMachine_ReturnValue) == 0x000010, "Member 'BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate::CallFunc_GetChildStateMachine_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate, CallFunc_IsValid_ReturnValue_1) == 0x000018, "Member 'BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate, K2Node_DynamicCast_AsBP_Race_Gadget_Plate_Sequence) == 0x000020, "Member 'BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate::K2Node_DynamicCast_AsBP_Race_Gadget_Plate_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate, CallFunc_SetNextRaceSequenceState_ReturnValue) == 0x000029, "Member 'BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate::CallFunc_SetNextRaceSequenceState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate, CallFunc_GetGadgetFromState_ReturnValue) == 0x00002A, "Member 'BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate::CallFunc_GetGadgetFromState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate, K2Node_CustomEvent_FadeDirection) == 0x00002B, "Member 'BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate::K2Node_CustomEvent_FadeDirection' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate, K2Node_SwitchEnum_CmpSuccess) == 0x00002C, "Member 'BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate, CallFunc_SetNextRaceSequenceState_ReturnValue_1) == 0x00002D, "Member 'BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate::CallFunc_SetNextRaceSequenceState_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate, CallFunc_GetPlayerController_ReturnValue) == 0x000030, "Member 'BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate, CallFunc_SetNextRaceSequenceState_ReturnValue_2) == 0x000038, "Member 'BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate::CallFunc_SetNextRaceSequenceState_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate, K2Node_DynamicCast_AsRace_Player_Controller) == 0x000040, "Member 'BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate::K2Node_DynamicCast_AsRace_Player_Controller' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate, K2Node_DynamicCast_bSuccess_1) == 0x000048, "Member 'BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate, CallFunc_GetReservedGrandPrixEnding_ReturnValue) == 0x000049, "Member 'BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate::CallFunc_GetReservedGrandPrixEnding_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00004A, "Member 'BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate, K2Node_CreateDelegate_OutputDelegate) == 0x00004C, "Member 'BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate, CallFunc_SetNextRaceSequenceState_ReturnValue_3) == 0x00005C, "Member 'BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate::CallFunc_SetNextRaceSequenceState_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate, CallFunc_GetPlayerController_ReturnValue_1) == 0x000060, "Member 'BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000068, "Member 'BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate, CallFunc_Create_ReturnValue) == 0x000070, "Member 'BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate, CallFunc_GetPlayerTotalRaceCount_ReturnValue) == 0x000078, "Member 'BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate::CallFunc_GetPlayerTotalRaceCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate, CallFunc_GetGadgetPlateId_ReturnValue) == 0x00007C, "Member 'BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate::CallFunc_GetGadgetPlateId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate, CallFunc_GetGadgetPlateData_OutGadgetPlateData) == 0x000080, "Member 'BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate::CallFunc_GetGadgetPlateData_OutGadgetPlateData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate, K2Node_Event_EndPlayReason) == 0x0000B0, "Member 'BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate::K2Node_Event_EndPlayReason' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate, CallFunc_IsMaxLevelGadgetPlateId_ReturnValue) == 0x0000B1, "Member 'BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate::CallFunc_IsMaxLevelGadgetPlateId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate, K2Node_CreateDelegate_OutputDelegate_1) == 0x0000B4, "Member 'BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate, CallFunc_Not_PreBool_ReturnValue) == 0x0000C4, "Member 'BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateGadgetPlate_C_ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate;
 
 // Function BPC_RaceSequenceStateGadgetPlate.BPC_RaceSequenceStateGadgetPlate_C.OnExitFade
 // 0x0001 (0x0001 - 0x0000)
@@ -106,9 +74,7 @@ struct BPC_RaceSequenceStateGadgetPlate_C_OnExitFade final
 public:
 	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateGadgetPlate_C_OnExitFade) == 0x000001, "Wrong alignment on BPC_RaceSequenceStateGadgetPlate_C_OnExitFade");
-static_assert(sizeof(BPC_RaceSequenceStateGadgetPlate_C_OnExitFade) == 0x000001, "Wrong size on BPC_RaceSequenceStateGadgetPlate_C_OnExitFade");
-static_assert(offsetof(BPC_RaceSequenceStateGadgetPlate_C_OnExitFade, FadeDirection) == 0x000000, "Member 'BPC_RaceSequenceStateGadgetPlate_C_OnExitFade::FadeDirection' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateGadgetPlate_C_OnExitFade;
 
 // Function BPC_RaceSequenceStateGadgetPlate.BPC_RaceSequenceStateGadgetPlate_C.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -117,9 +83,7 @@ struct BPC_RaceSequenceStateGadgetPlate_C_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateGadgetPlate_C_ReceiveEndPlay) == 0x000001, "Wrong alignment on BPC_RaceSequenceStateGadgetPlate_C_ReceiveEndPlay");
-static_assert(sizeof(BPC_RaceSequenceStateGadgetPlate_C_ReceiveEndPlay) == 0x000001, "Wrong size on BPC_RaceSequenceStateGadgetPlate_C_ReceiveEndPlay");
-static_assert(offsetof(BPC_RaceSequenceStateGadgetPlate_C_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'BPC_RaceSequenceStateGadgetPlate_C_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateGadgetPlate_C_ReceiveEndPlay;
 
 }
 

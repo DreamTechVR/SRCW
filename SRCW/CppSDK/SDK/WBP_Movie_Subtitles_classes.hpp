@@ -40,23 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Movie_Subtitles_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Movie_Subtitles_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Movie_Subtitles_C")
 	}
 	static class UWBP_Movie_Subtitles_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Movie_Subtitles_C>();
 	}
 };
-static_assert(alignof(UWBP_Movie_Subtitles_C) == 0x000008, "Wrong alignment on UWBP_Movie_Subtitles_C");
-static_assert(sizeof(UWBP_Movie_Subtitles_C) == 0x000340, "Wrong size on UWBP_Movie_Subtitles_C");
-static_assert(offsetof(UWBP_Movie_Subtitles_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Movie_Subtitles_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Movie_Subtitles_C, DSP_WBP_CMN_RivalLevel) == 0x0002E8, "Member 'UWBP_Movie_Subtitles_C::DSP_WBP_CMN_RivalLevel' has a wrong offset!");
-static_assert(offsetof(UWBP_Movie_Subtitles_C, DSP_WBP_Movie_Subtitles_Sub_WinLose) == 0x0002F0, "Member 'UWBP_Movie_Subtitles_C::DSP_WBP_Movie_Subtitles_Sub_WinLose' has a wrong offset!");
-static_assert(offsetof(UWBP_Movie_Subtitles_C, DSP_WBP_RivalRacer_Sub_RivalRacerInfo) == 0x0002F8, "Member 'UWBP_Movie_Subtitles_C::DSP_WBP_RivalRacer_Sub_RivalRacerInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_Movie_Subtitles_C, Panel) == 0x000300, "Member 'UWBP_Movie_Subtitles_C::Panel' has a wrong offset!");
-static_assert(offsetof(UWBP_Movie_Subtitles_C, SafeZone) == 0x000308, "Member 'UWBP_Movie_Subtitles_C::SafeZone' has a wrong offset!");
-static_assert(offsetof(UWBP_Movie_Subtitles_C, TXT_Subtitles) == 0x000310, "Member 'UWBP_Movie_Subtitles_C::TXT_Subtitles' has a wrong offset!");
-static_assert(offsetof(UWBP_Movie_Subtitles_C, PanelDebugTexture) == 0x000318, "Member 'UWBP_Movie_Subtitles_C::PanelDebugTexture' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Movie_Subtitles_C;
 
 }
 

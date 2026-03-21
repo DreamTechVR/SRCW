@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Chara_ShopLabel_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Chara_ShopLabel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Chara_ShopLabel_C")
 	}
 	static class UWBP_Chara_ShopLabel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Chara_ShopLabel_C>();
 	}
 };
-static_assert(alignof(UWBP_Chara_ShopLabel_C) == 0x000008, "Wrong alignment on UWBP_Chara_ShopLabel_C");
-static_assert(sizeof(UWBP_Chara_ShopLabel_C) == 0x000310, "Wrong size on UWBP_Chara_ShopLabel_C");
-static_assert(offsetof(UWBP_Chara_ShopLabel_C, TXT_ItemCount_Num) == 0x000308, "Member 'UWBP_Chara_ShopLabel_C::TXT_ItemCount_Num' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Chara_ShopLabel_C;
 
 }
 

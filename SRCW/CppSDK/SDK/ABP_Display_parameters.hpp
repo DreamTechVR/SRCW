@@ -23,9 +23,7 @@ struct ABP_Display_C_AnimGraph final
 public:
 	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(ABP_Display_C_AnimGraph) == 0x000008, "Wrong alignment on ABP_Display_C_AnimGraph");
-static_assert(sizeof(ABP_Display_C_AnimGraph) == 0x000010, "Wrong size on ABP_Display_C_AnimGraph");
-static_assert(offsetof(ABP_Display_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'ABP_Display_C_AnimGraph::AnimGraph_0' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_Display_C_AnimGraph;
 
 // Function ABP_Display.ABP_Display_C.ExecuteUbergraph_ABP_Display
 // 0x0018 (0x0018 - 0x0000)
@@ -41,14 +39,7 @@ public:
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_LessEqual_DoubleDouble_A_ImplicitCast;    // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ABP_Display_C_ExecuteUbergraph_ABP_Display) == 0x000008, "Wrong alignment on ABP_Display_C_ExecuteUbergraph_ABP_Display");
-static_assert(sizeof(ABP_Display_C_ExecuteUbergraph_ABP_Display) == 0x000018, "Wrong size on ABP_Display_C_ExecuteUbergraph_ABP_Display");
-static_assert(offsetof(ABP_Display_C_ExecuteUbergraph_ABP_Display, EntryPoint) == 0x000000, "Member 'ABP_Display_C_ExecuteUbergraph_ABP_Display::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ABP_Display_C_ExecuteUbergraph_ABP_Display, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000004, "Member 'ABP_Display_C_ExecuteUbergraph_ABP_Display::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_Display_C_ExecuteUbergraph_ABP_Display, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000005, "Member 'ABP_Display_C_ExecuteUbergraph_ABP_Display::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABP_Display_C_ExecuteUbergraph_ABP_Display, CallFunc_GetRelevantAnimTimeRemaining_ReturnValue) == 0x000008, "Member 'ABP_Display_C_ExecuteUbergraph_ABP_Display::CallFunc_GetRelevantAnimTimeRemaining_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_Display_C_ExecuteUbergraph_ABP_Display, CallFunc_LessEqual_DoubleDouble_ReturnValue) == 0x00000C, "Member 'ABP_Display_C_ExecuteUbergraph_ABP_Display::CallFunc_LessEqual_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_Display_C_ExecuteUbergraph_ABP_Display, CallFunc_LessEqual_DoubleDouble_A_ImplicitCast) == 0x000010, "Member 'ABP_Display_C_ExecuteUbergraph_ABP_Display::CallFunc_LessEqual_DoubleDouble_A_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_Display_C_ExecuteUbergraph_ABP_Display;
 
 }
 

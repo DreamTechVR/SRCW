@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
 #include "UnionUI_structs.hpp"
-#include "UNION_classes.hpp"
 
 
 namespace SDK
@@ -49,24 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_TopMenu_Sub_BtnPlay_Wireless_C">();
+		BP_STATIC_CLASS_IMPL("WBP_TopMenu_Sub_BtnPlay_Wireless_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_TopMenu_Sub_BtnPlay_Wireless_C")
 	}
 	static class UWBP_TopMenu_Sub_BtnPlay_Wireless_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_TopMenu_Sub_BtnPlay_Wireless_C>();
 	}
 };
-static_assert(alignof(UWBP_TopMenu_Sub_BtnPlay_Wireless_C) == 0x000008, "Wrong alignment on UWBP_TopMenu_Sub_BtnPlay_Wireless_C");
-static_assert(sizeof(UWBP_TopMenu_Sub_BtnPlay_Wireless_C) == 0x000530, "Wrong size on UWBP_TopMenu_Sub_BtnPlay_Wireless_C");
-static_assert(offsetof(UWBP_TopMenu_Sub_BtnPlay_Wireless_C, UberGraphFrame) == 0x0004E8, "Member 'UWBP_TopMenu_Sub_BtnPlay_Wireless_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Sub_BtnPlay_Wireless_C, Btn_NonActive_Loop) == 0x0004F0, "Member 'UWBP_TopMenu_Sub_BtnPlay_Wireless_C::Btn_NonActive_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Sub_BtnPlay_Wireless_C, Arrow_Left_02) == 0x0004F8, "Member 'UWBP_TopMenu_Sub_BtnPlay_Wireless_C::Arrow_Left_02' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Sub_BtnPlay_Wireless_C, Arrow_Right_02) == 0x000500, "Member 'UWBP_TopMenu_Sub_BtnPlay_Wireless_C::Arrow_Right_02' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Sub_BtnPlay_Wireless_C, BtnCursor) == 0x000508, "Member 'UWBP_TopMenu_Sub_BtnPlay_Wireless_C::BtnCursor' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Sub_BtnPlay_Wireless_C, Icon) == 0x000510, "Member 'UWBP_TopMenu_Sub_BtnPlay_Wireless_C::Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Sub_BtnPlay_Wireless_C, PAT_BtnBase) == 0x000518, "Member 'UWBP_TopMenu_Sub_BtnPlay_Wireless_C::PAT_BtnBase' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Sub_BtnPlay_Wireless_C, RaceFlagWave) == 0x000520, "Member 'UWBP_TopMenu_Sub_BtnPlay_Wireless_C::RaceFlagWave' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Sub_BtnPlay_Wireless_C, TXT_WirelessBtn) == 0x000528, "Member 'UWBP_TopMenu_Sub_BtnPlay_Wireless_C::TXT_WirelessBtn' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_TopMenu_Sub_BtnPlay_Wireless_C;
 
 }
 

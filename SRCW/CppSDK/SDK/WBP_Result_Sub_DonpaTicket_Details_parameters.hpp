@@ -65,44 +65,7 @@ public:
 	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Array_Get_Item;                           // 0x00D0(0x0010)()
 };
-static_assert(alignof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details) == 0x000008, "Wrong alignment on WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details");
-static_assert(sizeof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details) == 0x0000E0, "Wrong size on WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, EntryPoint) == 0x000000, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, Temp_real_Variable) == 0x000004, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::Temp_real_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, K2Node_CreateDelegate_OutputDelegate_1) == 0x000018, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, Temp_bool_Variable) == 0x000028, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, Temp_byte_Variable) == 0x000029, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, Temp_byte_Variable_1) == 0x00002A, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, Temp_bool_Variable_1) == 0x00002B, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, Temp_object_Variable) == 0x000030, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, Temp_object_Variable_1) == 0x000038, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, K2Node_Event_IsDesignTime) == 0x000040, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, K2Node_CustomEvent_Rank) == 0x000044, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::K2Node_CustomEvent_Rank' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, K2Node_SwitchInteger_CmpSuccess) == 0x000048, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, K2Node_CustomEvent_Star) == 0x000049, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::K2Node_CustomEvent_Star' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, K2Node_CustomEvent_Text) == 0x000050, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::K2Node_CustomEvent_Text' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, K2Node_SwitchEnum_CmpSuccess) == 0x000060, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, K2Node_CustomEvent_Num) == 0x000064, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::K2Node_CustomEvent_Num' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, CallFunc_Conv_IntToText_ReturnValue) == 0x000068, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, K2Node_CustomEvent_Index_1) == 0x000078, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::K2Node_CustomEvent_Index_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, K2Node_CustomEvent_Index) == 0x00007C, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::K2Node_CustomEvent_Index' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, CallFunc_GetSelectedPlayerCount_ReturnValue) == 0x000080, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::CallFunc_GetSelectedPlayerCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, Temp_real_Variable_1) == 0x000084, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::Temp_real_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000088, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, K2Node_Select_Default) == 0x000089, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x00008A, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x00008B, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, Temp_bool_Variable_2) == 0x00008C, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, K2Node_Select_Default_1) == 0x000090, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, CallFunc_SoundPlay_ReturnValue) == 0x000098, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, K2Node_Select_Default_2) == 0x00009C, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, CallFunc_SetPanSplit_ReturnValue) == 0x0000A0, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::CallFunc_SetPanSplit_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, CallFunc_CreatePlayAnimationProxyObject_Result) == 0x0000A8, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::CallFunc_CreatePlayAnimationProxyObject_Result' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, CallFunc_CreatePlayAnimationProxyObject_ReturnValue) == 0x0000B0, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::CallFunc_CreatePlayAnimationProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, K2Node_MakeArray_Array) == 0x0000B8, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, CallFunc_IsValid_ReturnValue) == 0x0000C8, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details, CallFunc_Array_Get_Item) == 0x0000D0, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details::CallFunc_Array_Get_Item' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_Sub_DonpaTicket_Details_C_ExecuteUbergraph_WBP_Result_Sub_DonpaTicket_Details;
 
 // Function WBP_Result_Sub_DonpaTicket_Details.WBP_Result_Sub_DonpaTicket_Details_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -111,9 +74,7 @@ struct WBP_Result_Sub_DonpaTicket_Details_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_Sub_DonpaTicket_Details_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_Result_Sub_DonpaTicket_Details_C_PreConstruct");
-static_assert(sizeof(WBP_Result_Sub_DonpaTicket_Details_C_PreConstruct) == 0x000001, "Wrong size on WBP_Result_Sub_DonpaTicket_Details_C_PreConstruct");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_Sub_DonpaTicket_Details_C_PreConstruct;
 
 // Function WBP_Result_Sub_DonpaTicket_Details.WBP_Result_Sub_DonpaTicket_Details_C.SetDonpaTicketNum
 // 0x0004 (0x0004 - 0x0000)
@@ -122,9 +83,7 @@ struct WBP_Result_Sub_DonpaTicket_Details_C_SetDonpaTicketNum final
 public:
 	int32                                         Num;                                               // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_Sub_DonpaTicket_Details_C_SetDonpaTicketNum) == 0x000004, "Wrong alignment on WBP_Result_Sub_DonpaTicket_Details_C_SetDonpaTicketNum");
-static_assert(sizeof(WBP_Result_Sub_DonpaTicket_Details_C_SetDonpaTicketNum) == 0x000004, "Wrong size on WBP_Result_Sub_DonpaTicket_Details_C_SetDonpaTicketNum");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_SetDonpaTicketNum, Num) == 0x000000, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_SetDonpaTicketNum::Num' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_Sub_DonpaTicket_Details_C_SetDonpaTicketNum;
 
 // Function WBP_Result_Sub_DonpaTicket_Details.WBP_Result_Sub_DonpaTicket_Details_C.SetHonor
 // 0x0018 (0x0018 - 0x0000)
@@ -135,10 +94,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Text;                                              // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_Result_Sub_DonpaTicket_Details_C_SetHonor) == 0x000008, "Wrong alignment on WBP_Result_Sub_DonpaTicket_Details_C_SetHonor");
-static_assert(sizeof(WBP_Result_Sub_DonpaTicket_Details_C_SetHonor) == 0x000018, "Wrong size on WBP_Result_Sub_DonpaTicket_Details_C_SetHonor");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_SetHonor, Star) == 0x000000, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_SetHonor::Star' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_SetHonor, Text) == 0x000008, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_SetHonor::Text' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_Sub_DonpaTicket_Details_C_SetHonor;
 
 // Function WBP_Result_Sub_DonpaTicket_Details.WBP_Result_Sub_DonpaTicket_Details_C.SetOtherRSR
 // 0x0004 (0x0004 - 0x0000)
@@ -147,9 +103,7 @@ struct WBP_Result_Sub_DonpaTicket_Details_C_SetOtherRSR final
 public:
 	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_Sub_DonpaTicket_Details_C_SetOtherRSR) == 0x000004, "Wrong alignment on WBP_Result_Sub_DonpaTicket_Details_C_SetOtherRSR");
-static_assert(sizeof(WBP_Result_Sub_DonpaTicket_Details_C_SetOtherRSR) == 0x000004, "Wrong size on WBP_Result_Sub_DonpaTicket_Details_C_SetOtherRSR");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_SetOtherRSR, Index_0) == 0x000000, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_SetOtherRSR::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_Sub_DonpaTicket_Details_C_SetOtherRSR;
 
 // Function WBP_Result_Sub_DonpaTicket_Details.WBP_Result_Sub_DonpaTicket_Details_C.SetRank
 // 0x0004 (0x0004 - 0x0000)
@@ -158,9 +112,7 @@ struct WBP_Result_Sub_DonpaTicket_Details_C_SetRank final
 public:
 	int32                                         Rank;                                              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_Sub_DonpaTicket_Details_C_SetRank) == 0x000004, "Wrong alignment on WBP_Result_Sub_DonpaTicket_Details_C_SetRank");
-static_assert(sizeof(WBP_Result_Sub_DonpaTicket_Details_C_SetRank) == 0x000004, "Wrong size on WBP_Result_Sub_DonpaTicket_Details_C_SetRank");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_SetRank, Rank) == 0x000000, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_SetRank::Rank' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_Sub_DonpaTicket_Details_C_SetRank;
 
 // Function WBP_Result_Sub_DonpaTicket_Details.WBP_Result_Sub_DonpaTicket_Details_C.SkipAnimationSub
 // 0x0004 (0x0004 - 0x0000)
@@ -169,9 +121,7 @@ struct WBP_Result_Sub_DonpaTicket_Details_C_SkipAnimationSub final
 public:
 	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_Sub_DonpaTicket_Details_C_SkipAnimationSub) == 0x000004, "Wrong alignment on WBP_Result_Sub_DonpaTicket_Details_C_SkipAnimationSub");
-static_assert(sizeof(WBP_Result_Sub_DonpaTicket_Details_C_SkipAnimationSub) == 0x000004, "Wrong size on WBP_Result_Sub_DonpaTicket_Details_C_SkipAnimationSub");
-static_assert(offsetof(WBP_Result_Sub_DonpaTicket_Details_C_SkipAnimationSub, Index_0) == 0x000000, "Member 'WBP_Result_Sub_DonpaTicket_Details_C_SkipAnimationSub::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_Sub_DonpaTicket_Details_C_SkipAnimationSub;
 
 }
 

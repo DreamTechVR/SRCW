@@ -23,15 +23,18 @@ class ABP_StickerRenderPlane_C final : public AStaticMeshActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_StickerRenderPlane_C">();
+		BP_STATIC_CLASS_IMPL("BP_StickerRenderPlane_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_StickerRenderPlane_C")
 	}
 	static class ABP_StickerRenderPlane_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_StickerRenderPlane_C>();
 	}
 };
-static_assert(alignof(ABP_StickerRenderPlane_C) == 0x000008, "Wrong alignment on ABP_StickerRenderPlane_C");
-static_assert(sizeof(ABP_StickerRenderPlane_C) == 0x0002A0, "Wrong size on ABP_StickerRenderPlane_C");
+DUMPER7_ASSERTS_ABP_StickerRenderPlane_C;
 
 }
 

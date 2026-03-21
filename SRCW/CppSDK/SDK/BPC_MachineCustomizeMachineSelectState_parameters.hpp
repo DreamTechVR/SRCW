@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "UnionRun_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "ST_GarageData_structs.hpp"
-#include "UnionRun_structs.hpp"
 #include "UnionLib_structs.hpp"
 
 
@@ -30,12 +30,7 @@ public:
 	class ABP_MenuRacerPreview_C*                 K2Node_DynamicCast_AsBP_Menu_Racer_Preview;        // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MachineCustomizeMachineSelectState_C_SetRacerCustomizeData) == 0x000008, "Wrong alignment on BPC_MachineCustomizeMachineSelectState_C_SetRacerCustomizeData");
-static_assert(sizeof(BPC_MachineCustomizeMachineSelectState_C_SetRacerCustomizeData) == 0x000090, "Wrong size on BPC_MachineCustomizeMachineSelectState_C_SetRacerCustomizeData");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_SetRacerCustomizeData, InCustomizeData) == 0x000000, "Member 'BPC_MachineCustomizeMachineSelectState_C_SetRacerCustomizeData::InCustomizeData' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_SetRacerCustomizeData, CallFunc_GetRacer_ReturnValue) == 0x000078, "Member 'BPC_MachineCustomizeMachineSelectState_C_SetRacerCustomizeData::CallFunc_GetRacer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_SetRacerCustomizeData, K2Node_DynamicCast_AsBP_Menu_Racer_Preview) == 0x000080, "Member 'BPC_MachineCustomizeMachineSelectState_C_SetRacerCustomizeData::K2Node_DynamicCast_AsBP_Menu_Racer_Preview' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_SetRacerCustomizeData, K2Node_DynamicCast_bSuccess) == 0x000088, "Member 'BPC_MachineCustomizeMachineSelectState_C_SetRacerCustomizeData::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeMachineSelectState_C_SetRacerCustomizeData;
 
 // Function BPC_MachineCustomizeMachineSelectState.BPC_MachineCustomizeMachineSelectState_C.UpdateGarageData
 // 0x00C8 (0x00C8 - 0x0000)
@@ -49,13 +44,7 @@ public:
 	struct FST_GarageData                         K2Node_SetFieldsInStruct_StructOut;                // 0x0068(0x0058)(ZeroConstructor, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MachineCustomizeMachineSelectState_C_UpdateGarageData) == 0x000008, "Wrong alignment on BPC_MachineCustomizeMachineSelectState_C_UpdateGarageData");
-static_assert(sizeof(BPC_MachineCustomizeMachineSelectState_C_UpdateGarageData) == 0x0000C8, "Wrong size on BPC_MachineCustomizeMachineSelectState_C_UpdateGarageData");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_UpdateGarageData, K2Node_DynamicCast_AsBP_Machine_Customize_Sequence) == 0x000000, "Member 'BPC_MachineCustomizeMachineSelectState_C_UpdateGarageData::K2Node_DynamicCast_AsBP_Machine_Customize_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_UpdateGarageData, K2Node_DynamicCast_bSuccess) == 0x000008, "Member 'BPC_MachineCustomizeMachineSelectState_C_UpdateGarageData::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_UpdateGarageData, CallFunc_GetGarageData_OutGarageData) == 0x000010, "Member 'BPC_MachineCustomizeMachineSelectState_C_UpdateGarageData::CallFunc_GetGarageData_OutGarageData' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_UpdateGarageData, K2Node_SetFieldsInStruct_StructOut) == 0x000068, "Member 'BPC_MachineCustomizeMachineSelectState_C_UpdateGarageData::K2Node_SetFieldsInStruct_StructOut' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_UpdateGarageData, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000C0, "Member 'BPC_MachineCustomizeMachineSelectState_C_UpdateGarageData::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeMachineSelectState_C_UpdateGarageData;
 
 // Function BPC_MachineCustomizeMachineSelectState.BPC_MachineCustomizeMachineSelectState_C.SetRacerHidden
 // 0x0020 (0x0020 - 0x0000)
@@ -69,13 +58,7 @@ public:
 	class ABP_MenuRacerPreview_C*                 K2Node_DynamicCast_AsBP_Menu_Racer_Preview;        // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MachineCustomizeMachineSelectState_C_SetRacerHidden) == 0x000008, "Wrong alignment on BPC_MachineCustomizeMachineSelectState_C_SetRacerHidden");
-static_assert(sizeof(BPC_MachineCustomizeMachineSelectState_C_SetRacerHidden) == 0x000020, "Wrong size on BPC_MachineCustomizeMachineSelectState_C_SetRacerHidden");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_SetRacerHidden, IsHidden) == 0x000000, "Member 'BPC_MachineCustomizeMachineSelectState_C_SetRacerHidden::IsHidden' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_SetRacerHidden, CallFunc_Not_PreBool_ReturnValue) == 0x000001, "Member 'BPC_MachineCustomizeMachineSelectState_C_SetRacerHidden::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_SetRacerHidden, CallFunc_GetRacer_ReturnValue) == 0x000008, "Member 'BPC_MachineCustomizeMachineSelectState_C_SetRacerHidden::CallFunc_GetRacer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_SetRacerHidden, K2Node_DynamicCast_AsBP_Menu_Racer_Preview) == 0x000010, "Member 'BPC_MachineCustomizeMachineSelectState_C_SetRacerHidden::K2Node_DynamicCast_AsBP_Menu_Racer_Preview' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_SetRacerHidden, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'BPC_MachineCustomizeMachineSelectState_C_SetRacerHidden::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeMachineSelectState_C_SetRacerHidden;
 
 // Function BPC_MachineCustomizeMachineSelectState.BPC_MachineCustomizeMachineSelectState_C.UpdateRacer
 // 0x0080 (0x0080 - 0x0000)
@@ -86,10 +69,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FUserMachineCustomizeData              CallFunc_GetMachineCustomizeDataById_ReturnValue;  // 0x0008(0x0078)()
 };
-static_assert(alignof(BPC_MachineCustomizeMachineSelectState_C_UpdateRacer) == 0x000008, "Wrong alignment on BPC_MachineCustomizeMachineSelectState_C_UpdateRacer");
-static_assert(sizeof(BPC_MachineCustomizeMachineSelectState_C_UpdateRacer) == 0x000080, "Wrong size on BPC_MachineCustomizeMachineSelectState_C_UpdateRacer");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_UpdateRacer, InMachineID) == 0x000000, "Member 'BPC_MachineCustomizeMachineSelectState_C_UpdateRacer::InMachineID' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_UpdateRacer, CallFunc_GetMachineCustomizeDataById_ReturnValue) == 0x000008, "Member 'BPC_MachineCustomizeMachineSelectState_C_UpdateRacer::CallFunc_GetMachineCustomizeDataById_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeMachineSelectState_C_UpdateRacer;
 
 // Function BPC_MachineCustomizeMachineSelectState.BPC_MachineCustomizeMachineSelectState_C.OnSetup
 // 0x0001 (0x0001 - 0x0000)
@@ -98,9 +78,7 @@ struct BPC_MachineCustomizeMachineSelectState_C_OnSetup final
 public:
 	bool                                          CallFunc_IsOpenFirstGarageTipsWindow_bEnableOpenWindow; // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MachineCustomizeMachineSelectState_C_OnSetup) == 0x000001, "Wrong alignment on BPC_MachineCustomizeMachineSelectState_C_OnSetup");
-static_assert(sizeof(BPC_MachineCustomizeMachineSelectState_C_OnSetup) == 0x000001, "Wrong size on BPC_MachineCustomizeMachineSelectState_C_OnSetup");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_OnSetup, CallFunc_IsOpenFirstGarageTipsWindow_bEnableOpenWindow) == 0x000000, "Member 'BPC_MachineCustomizeMachineSelectState_C_OnSetup::CallFunc_IsOpenFirstGarageTipsWindow_bEnableOpenWindow' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeMachineSelectState_C_OnSetup;
 
 // Function BPC_MachineCustomizeMachineSelectState.BPC_MachineCustomizeMachineSelectState_C.SetProperties
 // 0x0018 (0x0018 - 0x0000)
@@ -111,11 +89,7 @@ public:
 	class AMachineCustomizeSequence*              K2Node_DynamicCast_AsMachine_Customize_Sequence;   // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MachineCustomizeMachineSelectState_C_SetProperties) == 0x000008, "Wrong alignment on BPC_MachineCustomizeMachineSelectState_C_SetProperties");
-static_assert(sizeof(BPC_MachineCustomizeMachineSelectState_C_SetProperties) == 0x000018, "Wrong size on BPC_MachineCustomizeMachineSelectState_C_SetProperties");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_SetProperties, CallFunc_GetOwnerStateMachine_ReturnValue) == 0x000000, "Member 'BPC_MachineCustomizeMachineSelectState_C_SetProperties::CallFunc_GetOwnerStateMachine_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_SetProperties, K2Node_DynamicCast_AsMachine_Customize_Sequence) == 0x000008, "Member 'BPC_MachineCustomizeMachineSelectState_C_SetProperties::K2Node_DynamicCast_AsMachine_Customize_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_SetProperties, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'BPC_MachineCustomizeMachineSelectState_C_SetProperties::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeMachineSelectState_C_SetProperties;
 
 // Function BPC_MachineCustomizeMachineSelectState.BPC_MachineCustomizeMachineSelectState_C.EventTipsWindow_CloseEndDelegate
 // 0x0020 (0x0020 - 0x0000)
@@ -127,12 +101,7 @@ public:
 	class USaveDataManageSubsystem*               CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MachineCustomizeMachineSelectState_C_EventTipsWindow_CloseEndDelegate) == 0x000008, "Wrong alignment on BPC_MachineCustomizeMachineSelectState_C_EventTipsWindow_CloseEndDelegate");
-static_assert(sizeof(BPC_MachineCustomizeMachineSelectState_C_EventTipsWindow_CloseEndDelegate) == 0x000020, "Wrong size on BPC_MachineCustomizeMachineSelectState_C_EventTipsWindow_CloseEndDelegate");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_EventTipsWindow_CloseEndDelegate, CallFunc_GetMachineCustomTop_ReturnValue) == 0x000000, "Member 'BPC_MachineCustomizeMachineSelectState_C_EventTipsWindow_CloseEndDelegate::CallFunc_GetMachineCustomTop_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_EventTipsWindow_CloseEndDelegate, CallFunc_GetMachineTypeSelectWindow_ReturnValue) == 0x000008, "Member 'BPC_MachineCustomizeMachineSelectState_C_EventTipsWindow_CloseEndDelegate::CallFunc_GetMachineTypeSelectWindow_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_EventTipsWindow_CloseEndDelegate, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000010, "Member 'BPC_MachineCustomizeMachineSelectState_C_EventTipsWindow_CloseEndDelegate::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_EventTipsWindow_CloseEndDelegate, CallFunc_GetPlayerController_ReturnValue) == 0x000018, "Member 'BPC_MachineCustomizeMachineSelectState_C_EventTipsWindow_CloseEndDelegate::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeMachineSelectState_C_EventTipsWindow_CloseEndDelegate;
 
 // Function BPC_MachineCustomizeMachineSelectState.BPC_MachineCustomizeMachineSelectState_C.EventPartsSelectWindow_OnMachineTypeScrollEndEvent
 // 0x0118 (0x0118 - 0x0000)
@@ -149,16 +118,7 @@ public:
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0108(0x0008)(NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast;    // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeScrollEndEvent) == 0x000008, "Wrong alignment on BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeScrollEndEvent");
-static_assert(sizeof(BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeScrollEndEvent) == 0x000118, "Wrong size on BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeScrollEndEvent");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeScrollEndEvent, SelectedPlayerControllerIndex) == 0x000000, "Member 'BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeScrollEndEvent::SelectedPlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeScrollEndEvent, SelectedMachineType) == 0x000004, "Member 'BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeScrollEndEvent::SelectedMachineType' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeScrollEndEvent, SelectedBaseMachineId) == 0x000005, "Member 'BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeScrollEndEvent::SelectedBaseMachineId' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeScrollEndEvent, CallFunc_GetMachineCustomizeDataById_ReturnValue) == 0x000008, "Member 'BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeScrollEndEvent::CallFunc_GetMachineCustomizeDataById_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeScrollEndEvent, CallFunc_GetMachineCustomizeDataById_ReturnValue_1) == 0x000080, "Member 'BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeScrollEndEvent::CallFunc_GetMachineCustomizeDataById_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeScrollEndEvent, K2Node_CreateDelegate_OutputDelegate) == 0x0000F8, "Member 'BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeScrollEndEvent::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeScrollEndEvent, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000108, "Member 'BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeScrollEndEvent::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeScrollEndEvent, CallFunc_K2_SetTimerDelegate_Time_ImplicitCast) == 0x000110, "Member 'BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeScrollEndEvent::CallFunc_K2_SetTimerDelegate_Time_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeScrollEndEvent;
 
 // Function BPC_MachineCustomizeMachineSelectState.BPC_MachineCustomizeMachineSelectState_C.EventPartsSelectWindow_OnMachineTypeCancelEvent
 // 0x0004 (0x0004 - 0x0000)
@@ -167,9 +127,7 @@ struct BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachine
 public:
 	int32                                         SelectedPlayerControllerIndex;                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeCancelEvent) == 0x000004, "Wrong alignment on BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeCancelEvent");
-static_assert(sizeof(BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeCancelEvent) == 0x000004, "Wrong size on BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeCancelEvent");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeCancelEvent, SelectedPlayerControllerIndex) == 0x000000, "Member 'BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeCancelEvent::SelectedPlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeCancelEvent;
 
 // Function BPC_MachineCustomizeMachineSelectState.BPC_MachineCustomizeMachineSelectState_C.EventPartsSelectWindow_OnMachineTypeDecideEvent
 // 0x0268 (0x0268 - 0x0000)
@@ -200,26 +158,7 @@ public:
 	struct FUserMachineCustomizeData              CallFunc_GetSelectedMachineCustomizeData_ReturnValue_2; // 0x0178(0x0078)()
 	struct FUserMachineCustomizeData              K2Node_SetFieldsInStruct_StructOut;                // 0x01F0(0x0078)()
 };
-static_assert(alignof(BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent) == 0x000008, "Wrong alignment on BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent");
-static_assert(sizeof(BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent) == 0x000268, "Wrong size on BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent, SelectedPlayerControllerIndex) == 0x000000, "Member 'BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent::SelectedPlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent, SelectedMachineType) == 0x000004, "Member 'BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent::SelectedMachineType' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent, SelectedBaseMachineId) == 0x000005, "Member 'BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent::SelectedBaseMachineId' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000008, "Member 'BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent, K2Node_DynamicCast_AsBP_Machine_Customize_Sequence) == 0x000010, "Member 'BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent::K2Node_DynamicCast_AsBP_Machine_Customize_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent, CallFunc_SoundPlay_ReturnValue) == 0x00001C, "Member 'BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent, CallFunc_GetGarageData_OutGarageData) == 0x000020, "Member 'BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent::CallFunc_GetGarageData_OutGarageData' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent, CallFunc_SetSelectedMachineID_OutExecsPin) == 0x000078, "Member 'BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent::CallFunc_SetSelectedMachineID_OutExecsPin' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent, CallFunc_SetSelectedMachineType_OutExecsPin) == 0x000079, "Member 'BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent::CallFunc_SetSelectedMachineType_OutExecsPin' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent, K2Node_SwitchEnum_CmpSuccess) == 0x00007A, "Member 'BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent, K2Node_SwitchEnum_CmpSuccess_1) == 0x00007B, "Member 'BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent, CallFunc_MakeLiteralByte_ReturnValue) == 0x00007C, "Member 'BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x000080, "Member 'BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent, CallFunc_GetSelectedMachineCustomizeData_ReturnValue) == 0x000088, "Member 'BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent::CallFunc_GetSelectedMachineCustomizeData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent, CallFunc_GetSelectedMachineCustomizeData_ReturnValue_1) == 0x000100, "Member 'BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent::CallFunc_GetSelectedMachineCustomizeData_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent, CallFunc_GetSelectedMachineCustomizeData_ReturnValue_2) == 0x000178, "Member 'BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent::CallFunc_GetSelectedMachineCustomizeData_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent, K2Node_SetFieldsInStruct_StructOut) == 0x0001F0, "Member 'BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent::K2Node_SetFieldsInStruct_StructOut' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeMachineSelectState_C_EventPartsSelectWindow_OnMachineTypeDecideEvent;
 
 // Function BPC_MachineCustomizeMachineSelectState.BPC_MachineCustomizeMachineSelectState_C.ShowTipsWindow
 // 0x0038 (0x0038 - 0x0000)
@@ -235,14 +174,7 @@ public:
 	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0024(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MachineCustomizeMachineSelectState_C_ShowTipsWindow) == 0x000008, "Wrong alignment on BPC_MachineCustomizeMachineSelectState_C_ShowTipsWindow");
-static_assert(sizeof(BPC_MachineCustomizeMachineSelectState_C_ShowTipsWindow) == 0x000038, "Wrong size on BPC_MachineCustomizeMachineSelectState_C_ShowTipsWindow");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_ShowTipsWindow, InHintId) == 0x000000, "Member 'BPC_MachineCustomizeMachineSelectState_C_ShowTipsWindow::InHintId' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_ShowTipsWindow, CallFunc_Create_ReturnValue) == 0x000008, "Member 'BPC_MachineCustomizeMachineSelectState_C_ShowTipsWindow::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_ShowTipsWindow, CallFunc_MakeLiteralByte_ReturnValue) == 0x000010, "Member 'BPC_MachineCustomizeMachineSelectState_C_ShowTipsWindow::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_ShowTipsWindow, CallFunc_GetPlayerController_ReturnValue) == 0x000018, "Member 'BPC_MachineCustomizeMachineSelectState_C_ShowTipsWindow::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_ShowTipsWindow, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000020, "Member 'BPC_MachineCustomizeMachineSelectState_C_ShowTipsWindow::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_ShowTipsWindow, K2Node_CreateDelegate_OutputDelegate) == 0x000024, "Member 'BPC_MachineCustomizeMachineSelectState_C_ShowTipsWindow::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeMachineSelectState_C_ShowTipsWindow;
 
 // Function BPC_MachineCustomizeMachineSelectState.BPC_MachineCustomizeMachineSelectState_C.BindMachineTypeSelectWindow
 // 0x0008 (0x0008 - 0x0000)
@@ -251,9 +183,7 @@ struct BPC_MachineCustomizeMachineSelectState_C_BindMachineTypeSelectWindow fina
 public:
 	class UMachineTypeScrollControl*              InMachineTypeSelectWindow;                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MachineCustomizeMachineSelectState_C_BindMachineTypeSelectWindow) == 0x000008, "Wrong alignment on BPC_MachineCustomizeMachineSelectState_C_BindMachineTypeSelectWindow");
-static_assert(sizeof(BPC_MachineCustomizeMachineSelectState_C_BindMachineTypeSelectWindow) == 0x000008, "Wrong size on BPC_MachineCustomizeMachineSelectState_C_BindMachineTypeSelectWindow");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_BindMachineTypeSelectWindow, InMachineTypeSelectWindow) == 0x000000, "Member 'BPC_MachineCustomizeMachineSelectState_C_BindMachineTypeSelectWindow::InMachineTypeSelectWindow' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeMachineSelectState_C_BindMachineTypeSelectWindow;
 
 // Function BPC_MachineCustomizeMachineSelectState.BPC_MachineCustomizeMachineSelectState_C.UnbindMachineTypeSelectWindow
 // 0x0008 (0x0008 - 0x0000)
@@ -262,9 +192,7 @@ struct BPC_MachineCustomizeMachineSelectState_C_UnbindMachineTypeSelectWindow fi
 public:
 	class UMachineTypeScrollControl*              InMachineTypeSelectWindow;                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MachineCustomizeMachineSelectState_C_UnbindMachineTypeSelectWindow) == 0x000008, "Wrong alignment on BPC_MachineCustomizeMachineSelectState_C_UnbindMachineTypeSelectWindow");
-static_assert(sizeof(BPC_MachineCustomizeMachineSelectState_C_UnbindMachineTypeSelectWindow) == 0x000008, "Wrong size on BPC_MachineCustomizeMachineSelectState_C_UnbindMachineTypeSelectWindow");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_UnbindMachineTypeSelectWindow, InMachineTypeSelectWindow) == 0x000000, "Member 'BPC_MachineCustomizeMachineSelectState_C_UnbindMachineTypeSelectWindow::InMachineTypeSelectWindow' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeMachineSelectState_C_UnbindMachineTypeSelectWindow;
 
 // Function BPC_MachineCustomizeMachineSelectState.BPC_MachineCustomizeMachineSelectState_C.ExecuteUbergraph_BPC_MachineCustomizeMachineSelectState
 // 0x0080 (0x0080 - 0x0000)
@@ -284,19 +212,7 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_4;            // 0x0068(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0078(0x0008)(NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MachineCustomizeMachineSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeMachineSelectState) == 0x000008, "Wrong alignment on BPC_MachineCustomizeMachineSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeMachineSelectState");
-static_assert(sizeof(BPC_MachineCustomizeMachineSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeMachineSelectState) == 0x000080, "Wrong size on BPC_MachineCustomizeMachineSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeMachineSelectState");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeMachineSelectState, EntryPoint) == 0x000000, "Member 'BPC_MachineCustomizeMachineSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeMachineSelectState::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeMachineSelectState, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000008, "Member 'BPC_MachineCustomizeMachineSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeMachineSelectState::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeMachineSelectState, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'BPC_MachineCustomizeMachineSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeMachineSelectState::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeMachineSelectState, K2Node_Event_InMachineTypeSelectWindow_1) == 0x000020, "Member 'BPC_MachineCustomizeMachineSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeMachineSelectState::K2Node_Event_InMachineTypeSelectWindow_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeMachineSelectState, K2Node_Event_InMachineTypeSelectWindow) == 0x000028, "Member 'BPC_MachineCustomizeMachineSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeMachineSelectState::K2Node_Event_InMachineTypeSelectWindow' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeMachineSelectState, K2Node_CreateDelegate_OutputDelegate_1) == 0x000030, "Member 'BPC_MachineCustomizeMachineSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeMachineSelectState::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeMachineSelectState, K2Node_CreateDelegate_OutputDelegate_2) == 0x000040, "Member 'BPC_MachineCustomizeMachineSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeMachineSelectState::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeMachineSelectState, K2Node_CreateDelegate_OutputDelegate_3) == 0x000050, "Member 'BPC_MachineCustomizeMachineSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeMachineSelectState::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeMachineSelectState, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x000060, "Member 'BPC_MachineCustomizeMachineSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeMachineSelectState::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeMachineSelectState, K2Node_CreateDelegate_OutputDelegate_4) == 0x000068, "Member 'BPC_MachineCustomizeMachineSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeMachineSelectState::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeMachineSelectState, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000078, "Member 'BPC_MachineCustomizeMachineSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeMachineSelectState::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeMachineSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeMachineSelectState;
 
 // Function BPC_MachineCustomizeMachineSelectState.BPC_MachineCustomizeMachineSelectState_C.GetCamera
 // 0x0078 (0x0078 - 0x0000)
@@ -310,13 +226,7 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FST_GarageData                         CallFunc_GetGarageData_OutGarageData;              // 0x0020(0x0058)(ZeroConstructor, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MachineCustomizeMachineSelectState_C_GetCamera) == 0x000008, "Wrong alignment on BPC_MachineCustomizeMachineSelectState_C_GetCamera");
-static_assert(sizeof(BPC_MachineCustomizeMachineSelectState_C_GetCamera) == 0x000078, "Wrong size on BPC_MachineCustomizeMachineSelectState_C_GetCamera");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_GetCamera, ReturnValue) == 0x000000, "Member 'BPC_MachineCustomizeMachineSelectState_C_GetCamera::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_GetCamera, CallFunc_GetOwnerStateMachine_ReturnValue) == 0x000008, "Member 'BPC_MachineCustomizeMachineSelectState_C_GetCamera::CallFunc_GetOwnerStateMachine_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_GetCamera, K2Node_DynamicCast_AsBP_Machine_Customize_Sequence) == 0x000010, "Member 'BPC_MachineCustomizeMachineSelectState_C_GetCamera::K2Node_DynamicCast_AsBP_Machine_Customize_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_GetCamera, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'BPC_MachineCustomizeMachineSelectState_C_GetCamera::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_GetCamera, CallFunc_GetGarageData_OutGarageData) == 0x000020, "Member 'BPC_MachineCustomizeMachineSelectState_C_GetCamera::CallFunc_GetGarageData_OutGarageData' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeMachineSelectState_C_GetCamera;
 
 // Function BPC_MachineCustomizeMachineSelectState.BPC_MachineCustomizeMachineSelectState_C.IsOpenFirstGarageTipsWindow
 // 0x0010 (0x0010 - 0x0000)
@@ -334,17 +244,7 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MachineCustomizeMachineSelectState_C_IsOpenFirstGarageTipsWindow) == 0x000004, "Wrong alignment on BPC_MachineCustomizeMachineSelectState_C_IsOpenFirstGarageTipsWindow");
-static_assert(sizeof(BPC_MachineCustomizeMachineSelectState_C_IsOpenFirstGarageTipsWindow) == 0x000010, "Wrong size on BPC_MachineCustomizeMachineSelectState_C_IsOpenFirstGarageTipsWindow");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_IsOpenFirstGarageTipsWindow, bEnableOpenWindow) == 0x000000, "Member 'BPC_MachineCustomizeMachineSelectState_C_IsOpenFirstGarageTipsWindow::bEnableOpenWindow' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_IsOpenFirstGarageTipsWindow, CallFunc_GetSelectedPlayerCount_ReturnValue) == 0x000004, "Member 'BPC_MachineCustomizeMachineSelectState_C_IsOpenFirstGarageTipsWindow::CallFunc_GetSelectedPlayerCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_IsOpenFirstGarageTipsWindow, CallFunc_GetIsOnlineGameMode_ReturnValue) == 0x000008, "Member 'BPC_MachineCustomizeMachineSelectState_C_IsOpenFirstGarageTipsWindow::CallFunc_GetIsOnlineGameMode_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_IsOpenFirstGarageTipsWindow, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000009, "Member 'BPC_MachineCustomizeMachineSelectState_C_IsOpenFirstGarageTipsWindow::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_IsOpenFirstGarageTipsWindow, CallFunc_Not_PreBool_ReturnValue) == 0x00000A, "Member 'BPC_MachineCustomizeMachineSelectState_C_IsOpenFirstGarageTipsWindow::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_IsOpenFirstGarageTipsWindow, CallFunc_IsReadHint_ReturnValue) == 0x00000B, "Member 'BPC_MachineCustomizeMachineSelectState_C_IsOpenFirstGarageTipsWindow::CallFunc_IsReadHint_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_IsOpenFirstGarageTipsWindow, CallFunc_Not_PreBool_ReturnValue_1) == 0x00000C, "Member 'BPC_MachineCustomizeMachineSelectState_C_IsOpenFirstGarageTipsWindow::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_IsOpenFirstGarageTipsWindow, CallFunc_BooleanAND_ReturnValue) == 0x00000D, "Member 'BPC_MachineCustomizeMachineSelectState_C_IsOpenFirstGarageTipsWindow::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeMachineSelectState_C_IsOpenFirstGarageTipsWindow, CallFunc_BooleanAND_ReturnValue_1) == 0x00000E, "Member 'BPC_MachineCustomizeMachineSelectState_C_IsOpenFirstGarageTipsWindow::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeMachineSelectState_C_IsOpenFirstGarageTipsWindow;
 
 }
 

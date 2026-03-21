@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -44,23 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Friend_MatchingInfo_Small_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Friend_MatchingInfo_Small_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Friend_MatchingInfo_Small_C")
 	}
 	static class UWBP_Friend_MatchingInfo_Small_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Friend_MatchingInfo_Small_C>();
 	}
 };
-static_assert(alignof(UWBP_Friend_MatchingInfo_Small_C) == 0x000008, "Wrong alignment on UWBP_Friend_MatchingInfo_Small_C");
-static_assert(sizeof(UWBP_Friend_MatchingInfo_Small_C) == 0x000340, "Wrong size on UWBP_Friend_MatchingInfo_Small_C");
-static_assert(offsetof(UWBP_Friend_MatchingInfo_Small_C, UberGraphFrame) == 0x000300, "Member 'UWBP_Friend_MatchingInfo_Small_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_MatchingInfo_Small_C, MatchingInfo_Small_Out) == 0x000308, "Member 'UWBP_Friend_MatchingInfo_Small_C::MatchingInfo_Small_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_MatchingInfo_Small_C, MatchingInfo_Small_Loop) == 0x000310, "Member 'UWBP_Friend_MatchingInfo_Small_C::MatchingInfo_Small_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_MatchingInfo_Small_C, MatchingInfo_Small_In) == 0x000318, "Member 'UWBP_Friend_MatchingInfo_Small_C::MatchingInfo_Small_In' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_MatchingInfo_Small_C, Base_Finish) == 0x000320, "Member 'UWBP_Friend_MatchingInfo_Small_C::Base_Finish' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_MatchingInfo_Small_C, BaseShadow_Finish) == 0x000328, "Member 'UWBP_Friend_MatchingInfo_Small_C::BaseShadow_Finish' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_MatchingInfo_Small_C, Overlay_All) == 0x000330, "Member 'UWBP_Friend_MatchingInfo_Small_C::Overlay_All' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_MatchingInfo_Small_C, TXT_Info) == 0x000338, "Member 'UWBP_Friend_MatchingInfo_Small_C::TXT_Info' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Friend_MatchingInfo_Small_C;
 
 }
 

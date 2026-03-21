@@ -21,9 +21,7 @@ struct BPI_TopMenuScene_C_GetDodonpaEventSceneCamera final
 public:
 	class ACameraActor*                           newParam;                                          // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPI_TopMenuScene_C_GetDodonpaEventSceneCamera) == 0x000008, "Wrong alignment on BPI_TopMenuScene_C_GetDodonpaEventSceneCamera");
-static_assert(sizeof(BPI_TopMenuScene_C_GetDodonpaEventSceneCamera) == 0x000008, "Wrong size on BPI_TopMenuScene_C_GetDodonpaEventSceneCamera");
-static_assert(offsetof(BPI_TopMenuScene_C_GetDodonpaEventSceneCamera, newParam) == 0x000000, "Member 'BPI_TopMenuScene_C_GetDodonpaEventSceneCamera::newParam' has a wrong offset!");
+DUMPER7_ASSERTS_BPI_TopMenuScene_C_GetDodonpaEventSceneCamera;
 
 // Function BPI_TopMenuScene.BPI_TopMenuScene_C.GetPartyRaceSceneCamera
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct BPI_TopMenuScene_C_GetPartyRaceSceneCamera final
 public:
 	class ACameraActor*                           OutCamera;                                         // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPI_TopMenuScene_C_GetPartyRaceSceneCamera) == 0x000008, "Wrong alignment on BPI_TopMenuScene_C_GetPartyRaceSceneCamera");
-static_assert(sizeof(BPI_TopMenuScene_C_GetPartyRaceSceneCamera) == 0x000008, "Wrong size on BPI_TopMenuScene_C_GetPartyRaceSceneCamera");
-static_assert(offsetof(BPI_TopMenuScene_C_GetPartyRaceSceneCamera, OutCamera) == 0x000000, "Member 'BPI_TopMenuScene_C_GetPartyRaceSceneCamera::OutCamera' has a wrong offset!");
+DUMPER7_ASSERTS_BPI_TopMenuScene_C_GetPartyRaceSceneCamera;
 
 }
 

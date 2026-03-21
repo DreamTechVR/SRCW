@@ -27,17 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_TimeTrial_Sub_Offline_Ghost_C">();
+		BP_STATIC_CLASS_IMPL("WBP_TimeTrial_Sub_Offline_Ghost_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_TimeTrial_Sub_Offline_Ghost_C")
 	}
 	static class UWBP_TimeTrial_Sub_Offline_Ghost_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_TimeTrial_Sub_Offline_Ghost_C>();
 	}
 };
-static_assert(alignof(UWBP_TimeTrial_Sub_Offline_Ghost_C) == 0x000008, "Wrong alignment on UWBP_TimeTrial_Sub_Offline_Ghost_C");
-static_assert(sizeof(UWBP_TimeTrial_Sub_Offline_Ghost_C) == 0x0002F0, "Wrong size on UWBP_TimeTrial_Sub_Offline_Ghost_C");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Offline_Ghost_C, DMY_MyCharactor) == 0x0002E0, "Member 'UWBP_TimeTrial_Sub_Offline_Ghost_C::DMY_MyCharactor' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Offline_Ghost_C, DMY_MyMachine) == 0x0002E8, "Member 'UWBP_TimeTrial_Sub_Offline_Ghost_C::DMY_MyMachine' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_TimeTrial_Sub_Offline_Ghost_C;
 
 }
 

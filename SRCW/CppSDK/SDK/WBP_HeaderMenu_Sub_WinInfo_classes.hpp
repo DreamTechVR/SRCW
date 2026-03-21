@@ -38,21 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_HeaderMenu_Sub_WinInfo_C">();
+		BP_STATIC_CLASS_IMPL("WBP_HeaderMenu_Sub_WinInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_HeaderMenu_Sub_WinInfo_C")
 	}
 	static class UWBP_HeaderMenu_Sub_WinInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_HeaderMenu_Sub_WinInfo_C>();
 	}
 };
-static_assert(alignof(UWBP_HeaderMenu_Sub_WinInfo_C) == 0x000008, "Wrong alignment on UWBP_HeaderMenu_Sub_WinInfo_C");
-static_assert(sizeof(UWBP_HeaderMenu_Sub_WinInfo_C) == 0x000310, "Wrong size on UWBP_HeaderMenu_Sub_WinInfo_C");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_WinInfo_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_HeaderMenu_Sub_WinInfo_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_WinInfo_C, WinInfo_Out) == 0x0002E8, "Member 'UWBP_HeaderMenu_Sub_WinInfo_C::WinInfo_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_WinInfo_C, WinInfo_Loop) == 0x0002F0, "Member 'UWBP_HeaderMenu_Sub_WinInfo_C::WinInfo_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_WinInfo_C, WinInfo_In) == 0x0002F8, "Member 'UWBP_HeaderMenu_Sub_WinInfo_C::WinInfo_In' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_WinInfo_C, base) == 0x000300, "Member 'UWBP_HeaderMenu_Sub_WinInfo_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_WinInfo_C, TXT_WinInfo) == 0x000308, "Member 'UWBP_HeaderMenu_Sub_WinInfo_C::TXT_WinInfo' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_HeaderMenu_Sub_WinInfo_C;
 
 }
 

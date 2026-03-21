@@ -23,9 +23,7 @@ struct BP_NpcStaticActor_C_DamageSpinStart final
 public:
 	float                                         Direction;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_NpcStaticActor_C_DamageSpinStart) == 0x000004, "Wrong alignment on BP_NpcStaticActor_C_DamageSpinStart");
-static_assert(sizeof(BP_NpcStaticActor_C_DamageSpinStart) == 0x000004, "Wrong size on BP_NpcStaticActor_C_DamageSpinStart");
-static_assert(offsetof(BP_NpcStaticActor_C_DamageSpinStart, Direction) == 0x000000, "Member 'BP_NpcStaticActor_C_DamageSpinStart::Direction' has a wrong offset!");
+DUMPER7_ASSERTS_BP_NpcStaticActor_C_DamageSpinStart;
 
 // Function BP_NpcStaticActor.BP_NpcStaticActor_C.ExecuteUbergraph_BP_NpcStaticActor
 // 0x0018 (0x0018 - 0x0000)
@@ -41,14 +39,7 @@ public:
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Greater_DoubleDouble_A_ImplicitCast;      // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_NpcStaticActor_C_ExecuteUbergraph_BP_NpcStaticActor) == 0x000008, "Wrong alignment on BP_NpcStaticActor_C_ExecuteUbergraph_BP_NpcStaticActor");
-static_assert(sizeof(BP_NpcStaticActor_C_ExecuteUbergraph_BP_NpcStaticActor) == 0x000018, "Wrong size on BP_NpcStaticActor_C_ExecuteUbergraph_BP_NpcStaticActor");
-static_assert(offsetof(BP_NpcStaticActor_C_ExecuteUbergraph_BP_NpcStaticActor, EntryPoint) == 0x000000, "Member 'BP_NpcStaticActor_C_ExecuteUbergraph_BP_NpcStaticActor::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_NpcStaticActor_C_ExecuteUbergraph_BP_NpcStaticActor, K2Node_CustomEvent_Direction) == 0x000004, "Member 'BP_NpcStaticActor_C_ExecuteUbergraph_BP_NpcStaticActor::K2Node_CustomEvent_Direction' has a wrong offset!");
-static_assert(offsetof(BP_NpcStaticActor_C_ExecuteUbergraph_BP_NpcStaticActor, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000005, "Member 'BP_NpcStaticActor_C_ExecuteUbergraph_BP_NpcStaticActor::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_NpcStaticActor_C_ExecuteUbergraph_BP_NpcStaticActor, K2Node_Event_Direction) == 0x000008, "Member 'BP_NpcStaticActor_C_ExecuteUbergraph_BP_NpcStaticActor::K2Node_Event_Direction' has a wrong offset!");
-static_assert(offsetof(BP_NpcStaticActor_C_ExecuteUbergraph_BP_NpcStaticActor, CallFunc_Greater_DoubleDouble_ReturnValue) == 0x00000C, "Member 'BP_NpcStaticActor_C_ExecuteUbergraph_BP_NpcStaticActor::CallFunc_Greater_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_NpcStaticActor_C_ExecuteUbergraph_BP_NpcStaticActor, CallFunc_Greater_DoubleDouble_A_ImplicitCast) == 0x000010, "Member 'BP_NpcStaticActor_C_ExecuteUbergraph_BP_NpcStaticActor::CallFunc_Greater_DoubleDouble_A_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_BP_NpcStaticActor_C_ExecuteUbergraph_BP_NpcStaticActor;
 
 // Function BP_NpcStaticActor.BP_NpcStaticActor_C.StartSpinAgain
 // 0x0001 (0x0001 - 0x0000)
@@ -57,9 +48,7 @@ struct BP_NpcStaticActor_C_StartSpinAgain final
 public:
 	ETimelineDirection                            Direction;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_NpcStaticActor_C_StartSpinAgain) == 0x000001, "Wrong alignment on BP_NpcStaticActor_C_StartSpinAgain");
-static_assert(sizeof(BP_NpcStaticActor_C_StartSpinAgain) == 0x000001, "Wrong size on BP_NpcStaticActor_C_StartSpinAgain");
-static_assert(offsetof(BP_NpcStaticActor_C_StartSpinAgain, Direction) == 0x000000, "Member 'BP_NpcStaticActor_C_StartSpinAgain::Direction' has a wrong offset!");
+DUMPER7_ASSERTS_BP_NpcStaticActor_C_StartSpinAgain;
 
 }
 

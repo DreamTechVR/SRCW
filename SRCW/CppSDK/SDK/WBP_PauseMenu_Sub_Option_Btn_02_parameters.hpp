@@ -41,29 +41,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FText                                   K2Node_Select_Default_2;                           // 0x00A0(0x0010)()
 };
-static_assert(alignof(WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02) == 0x000008, "Wrong alignment on WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02");
-static_assert(sizeof(WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02) == 0x0000B0, "Wrong size on WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02, EntryPoint) == 0x000000, "Member 'WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02, Temp_int_Variable) == 0x000004, "Member 'WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02, Temp_text_Variable) == 0x000008, "Member 'WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02, Temp_text_Variable_1) == 0x000018, "Member 'WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02::Temp_text_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02, Temp_text_Variable_2) == 0x000028, "Member 'WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02::Temp_text_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02, Temp_text_Variable_3) == 0x000038, "Member 'WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02::Temp_text_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02, Temp_text_Variable_4) == 0x000048, "Member 'WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02::Temp_text_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02, Temp_text_Variable_5) == 0x000058, "Member 'WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02::Temp_text_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02, Temp_int_Variable_1) == 0x000068, "Member 'WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02, Temp_int_Variable_2) == 0x00006C, "Member 'WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02, Temp_int_Variable_3) == 0x000070, "Member 'WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02, Temp_int_Variable_4) == 0x000074, "Member 'WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02, Temp_int_Variable_5) == 0x000078, "Member 'WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02::Temp_int_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02, K2Node_Select_Default) == 0x00007C, "Member 'WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02, Temp_int_Variable_6) == 0x000080, "Member 'WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02::Temp_int_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02, Temp_int_Variable_7) == 0x000084, "Member 'WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02::Temp_int_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02, Temp_int_Variable_8) == 0x000088, "Member 'WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02::Temp_int_Variable_8' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02, K2Node_Select_Default_1) == 0x00008C, "Member 'WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02, CallFunc_PlayAnimation_ReturnValue) == 0x000090, "Member 'WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02, CallFunc_PlayAnimation_ReturnValue_1) == 0x000098, "Member 'WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02, K2Node_Select_Default_2) == 0x0000A0, "Member 'WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02::K2Node_Select_Default_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PauseMenu_Sub_Option_Btn_02_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_02;
 
 // Function WBP_PauseMenu_Sub_Option_Btn_02.WBP_PauseMenu_Sub_Option_Btn_02_C.GetFooter
 // 0x0008 (0x0008 - 0x0000)
@@ -72,9 +50,7 @@ struct WBP_PauseMenu_Sub_Option_Btn_02_C_GetFooter final
 public:
 	class UObject*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PauseMenu_Sub_Option_Btn_02_C_GetFooter) == 0x000008, "Wrong alignment on WBP_PauseMenu_Sub_Option_Btn_02_C_GetFooter");
-static_assert(sizeof(WBP_PauseMenu_Sub_Option_Btn_02_C_GetFooter) == 0x000008, "Wrong size on WBP_PauseMenu_Sub_Option_Btn_02_C_GetFooter");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_02_C_GetFooter, ReturnValue) == 0x000000, "Member 'WBP_PauseMenu_Sub_Option_Btn_02_C_GetFooter::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PauseMenu_Sub_Option_Btn_02_C_GetFooter;
 
 // Function WBP_PauseMenu_Sub_Option_Btn_02.WBP_PauseMenu_Sub_Option_Btn_02_C.GetOwnerMenuSequence
 // 0x0008 (0x0008 - 0x0000)
@@ -83,9 +59,7 @@ struct WBP_PauseMenu_Sub_Option_Btn_02_C_GetOwnerMenuSequence final
 public:
 	class UObject*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PauseMenu_Sub_Option_Btn_02_C_GetOwnerMenuSequence) == 0x000008, "Wrong alignment on WBP_PauseMenu_Sub_Option_Btn_02_C_GetOwnerMenuSequence");
-static_assert(sizeof(WBP_PauseMenu_Sub_Option_Btn_02_C_GetOwnerMenuSequence) == 0x000008, "Wrong size on WBP_PauseMenu_Sub_Option_Btn_02_C_GetOwnerMenuSequence");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_02_C_GetOwnerMenuSequence, ReturnValue) == 0x000000, "Member 'WBP_PauseMenu_Sub_Option_Btn_02_C_GetOwnerMenuSequence::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PauseMenu_Sub_Option_Btn_02_C_GetOwnerMenuSequence;
 
 // Function WBP_PauseMenu_Sub_Option_Btn_02.WBP_PauseMenu_Sub_Option_Btn_02_C.SetToggle
 // 0x0001 (0x0001 - 0x0000)
@@ -94,9 +68,7 @@ struct WBP_PauseMenu_Sub_Option_Btn_02_C_SetToggle final
 public:
 	bool                                          on;                                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PauseMenu_Sub_Option_Btn_02_C_SetToggle) == 0x000001, "Wrong alignment on WBP_PauseMenu_Sub_Option_Btn_02_C_SetToggle");
-static_assert(sizeof(WBP_PauseMenu_Sub_Option_Btn_02_C_SetToggle) == 0x000001, "Wrong size on WBP_PauseMenu_Sub_Option_Btn_02_C_SetToggle");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_02_C_SetToggle, on) == 0x000000, "Member 'WBP_PauseMenu_Sub_Option_Btn_02_C_SetToggle::on' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PauseMenu_Sub_Option_Btn_02_C_SetToggle;
 
 }
 

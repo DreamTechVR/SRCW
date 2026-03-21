@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "UnionRun_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
-#include "UnionRun_structs.hpp"
 
 
 namespace SDK::Params
@@ -68,41 +68,7 @@ public:
 	class UTexture2D*                             CallFunc_Map_Find_Value;                           // 0x0310(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0318(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate) == 0x000008, "Wrong alignment on WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate");
-static_assert(sizeof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate) == 0x000320, "Wrong size on WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate, RivalTeamId) == 0x000000, "Member 'WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate::RivalTeamId' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate, OutGadgetIconSoftTextures) == 0x000008, "Member 'WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate::OutGadgetIconSoftTextures' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate, GadgetIconSoftTextures) == 0x000018, "Member 'WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate::GadgetIconSoftTextures' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate, RivalGadgetArray) == 0x000028, "Member 'WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate::RivalGadgetArray' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate, GadgetData) == 0x000038, "Member 'WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate::GadgetData' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate, NextGadgetIndex) == 0x0000F8, "Member 'WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate::NextGadgetIndex' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate, CallFunc_GetEnumeratorName_ReturnValue) == 0x0000FC, "Member 'WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate, CallFunc_GetDataTableRowFromName_OutRow) == 0x000108, "Member 'WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000120, "Member 'WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate, CallFunc_GetEnumeratorName_ReturnValue_1) == 0x000124, "Member 'WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate::CallFunc_GetEnumeratorName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate, CallFunc_GetDataTableRowFromName_OutRow_1) == 0x000130, "Member 'WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate::CallFunc_GetDataTableRowFromName_OutRow_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate, CallFunc_GetDataTableRowFromName_ReturnValue_1) == 0x0001F0, "Member 'WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate::CallFunc_GetDataTableRowFromName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate, K2Node_MakeArray_Array) == 0x0001F8, "Member 'WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate, CallFunc_Array_Length_ReturnValue) == 0x000208, "Member 'WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate, Temp_int_Loop_Counter_Variable) == 0x00020C, "Member 'WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate, Temp_int_Array_Index_Variable) == 0x000210, "Member 'WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate, CallFunc_Less_IntInt_ReturnValue) == 0x000214, "Member 'WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate, CallFunc_Array_Get_Item) == 0x000215, "Member 'WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate, CallFunc_GetEnumeratorName_ReturnValue_2) == 0x000218, "Member 'WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate::CallFunc_GetEnumeratorName_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate, CallFunc_Less_IntInt_ReturnValue_1) == 0x000220, "Member 'WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate, CallFunc_GetDataTableRowFromName_OutRow_2) == 0x000228, "Member 'WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate::CallFunc_GetDataTableRowFromName_OutRow_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate, CallFunc_GetDataTableRowFromName_ReturnValue_2) == 0x0002E8, "Member 'WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate::CallFunc_GetDataTableRowFromName_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate, CallFunc_Add_IntInt_ReturnValue) == 0x0002EC, "Member 'WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate, CallFunc_Array_AddUnique_ReturnValue) == 0x0002F0, "Member 'WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate, CallFunc_Array_AddUnique_ReturnValue_1) == 0x0002F4, "Member 'WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate::CallFunc_Array_AddUnique_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate, CallFunc_Add_IntInt_ReturnValue_1) == 0x0002F8, "Member 'WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0002FC, "Member 'WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0002FD, "Member 'WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate, CallFunc_Add_IntInt_ReturnValue_2) == 0x000300, "Member 'WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x000304, "Member 'WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate, CallFunc_Clamp_ReturnValue) == 0x000308, "Member 'WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate::CallFunc_Clamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate, CallFunc_Map_Find_Value) == 0x000310, "Member 'WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate, CallFunc_Map_Find_ReturnValue) == 0x000318, "Member 'WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C_Set_UpGadgetPlate;
 
 }
 

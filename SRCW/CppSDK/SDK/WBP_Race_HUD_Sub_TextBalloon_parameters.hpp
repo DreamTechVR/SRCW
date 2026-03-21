@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "UnionRun_structs.hpp"
-#include "UnionSystem_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "UNION_structs.hpp"
+#include "UnionSystem_structs.hpp"
+#include "UnionRun_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
@@ -89,57 +89,7 @@ public:
 	uint8                                         Pad_589[0x3];                                      // 0x0589(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x058C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon");
-static_assert(sizeof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon) == 0x000590, "Wrong size on WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, EntryPoint) == 0x000000, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, Temp_struct_Variable) == 0x000004, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, CallFunc_GetEnumeratorName_ReturnValue) == 0x000014, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, CallFunc_GetDataTableRowFromName_OutRow) == 0x000020, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x0003B0, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, Temp_struct_Variable_1) == 0x0003B4, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, Temp_struct_Variable_2) == 0x0003C4, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::Temp_struct_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue) == 0x0003D8, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, K2Node_DynamicCast_As_____2D) == 0x0003E0, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, K2Node_DynamicCast_bSuccess) == 0x0003E8, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue_1) == 0x0003F0, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, Temp_struct_Variable_3) == 0x0003F8, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::Temp_struct_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, K2Node_DynamicCast_As_____2D_1) == 0x000408, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::K2Node_DynamicCast_As_____2D_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, K2Node_DynamicCast_bSuccess_1) == 0x000410, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, Temp_struct_Variable_4) == 0x000414, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::Temp_struct_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, Temp_struct_Variable_5) == 0x000424, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::Temp_struct_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, Temp_struct_Variable_6) == 0x000434, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::Temp_struct_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, Temp_struct_Variable_7) == 0x000444, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::Temp_struct_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, Temp_byte_Variable) == 0x000454, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, Temp_int_Variable) == 0x000458, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, Temp_int_Variable_1) == 0x00045C, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, Temp_int_Variable_2) == 0x000460, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, Temp_int_Variable_3) == 0x000464, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, Temp_int_Variable_4) == 0x000468, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, Temp_byte_Variable_1) == 0x00046C, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, Temp_int_Variable_5) == 0x000470, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::Temp_int_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, Temp_int_Variable_6) == 0x000474, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::Temp_int_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, Temp_int_Variable_7) == 0x000478, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::Temp_int_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, Temp_int_Variable_8) == 0x00047C, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::Temp_int_Variable_8' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, Temp_int_Variable_9) == 0x000480, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::Temp_int_Variable_9' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, Temp_bool_Variable) == 0x000484, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, Temp_byte_Variable_2) == 0x000485, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000488, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, K2Node_CustomEvent_DriverID) == 0x000490, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::K2Node_CustomEvent_DriverID' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, K2Node_CustomEvent_SerifUIData) == 0x000498, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::K2Node_CustomEvent_SerifUIData' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, CallFunc_GetIsCharacterReleased_ReturnValue) == 0x000538, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::CallFunc_GetIsCharacterReleased_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, K2Node_SwitchEnum_CmpSuccess) == 0x000539, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, K2Node_Select_Default) == 0x00053A, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, K2Node_Select_Default_1) == 0x00053C, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, K2Node_SwitchEnum_CmpSuccess_1) == 0x000540, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, K2Node_Select_Default_2) == 0x000544, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, K2Node_Event_IsDesignTime) == 0x000548, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, Temp_struct_Variable_8) == 0x00054C, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::Temp_struct_Variable_8' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x000560, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, Temp_int_Variable_10) == 0x000568, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::Temp_int_Variable_10' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, K2Node_Select_Default_3) == 0x00056C, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, CallFunc_GetDynamicMaterial_ReturnValue_2) == 0x000580, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::CallFunc_GetDynamicMaterial_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, CallFunc_GetIsRivalSkinExistsGameMode_ReturnValue) == 0x000588, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::CallFunc_GetIsRivalSkinExistsGameMode_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x00058C, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_TextBalloon_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TextBalloon;
 
 // Function WBP_Race_HUD_Sub_TextBalloon.WBP_Race_HUD_Sub_TextBalloon_C.Open_Impl
 // 0x0020 (0x0020 - 0x0000)
@@ -152,12 +102,7 @@ public:
 	int32                                         DriverId;                                          // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_TextBalloon_C_Open_Impl) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_TextBalloon_C_Open_Impl");
-static_assert(sizeof(WBP_Race_HUD_Sub_TextBalloon_C_Open_Impl) == 0x000020, "Wrong size on WBP_Race_HUD_Sub_TextBalloon_C_Open_Impl");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_Open_Impl, WindowId) == 0x000000, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_Open_Impl::WindowId' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_Open_Impl, Text) == 0x000008, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_Open_Impl::Text' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_Open_Impl, DriverId) == 0x000018, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_Open_Impl::DriverId' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_Open_Impl, K2Node_SwitchEnum_CmpSuccess) == 0x00001C, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_Open_Impl::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_TextBalloon_C_Open_Impl;
 
 // Function WBP_Race_HUD_Sub_TextBalloon.WBP_Race_HUD_Sub_TextBalloon_C.OpenEx
 // 0x00A0 (0x00A0 - 0x0000)
@@ -166,9 +111,7 @@ struct WBP_Race_HUD_Sub_TextBalloon_C_OpenEx final
 public:
 	struct FRacerReactionVoice                    SerifUIData;                                       // 0x0000(0x00A0)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_TextBalloon_C_OpenEx) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_TextBalloon_C_OpenEx");
-static_assert(sizeof(WBP_Race_HUD_Sub_TextBalloon_C_OpenEx) == 0x0000A0, "Wrong size on WBP_Race_HUD_Sub_TextBalloon_C_OpenEx");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_OpenEx, SerifUIData) == 0x000000, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_OpenEx::SerifUIData' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_TextBalloon_C_OpenEx;
 
 // Function WBP_Race_HUD_Sub_TextBalloon.WBP_Race_HUD_Sub_TextBalloon_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -177,9 +120,7 @@ struct WBP_Race_HUD_Sub_TextBalloon_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_TextBalloon_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_Race_HUD_Sub_TextBalloon_C_PreConstruct");
-static_assert(sizeof(WBP_Race_HUD_Sub_TextBalloon_C_PreConstruct) == 0x000001, "Wrong size on WBP_Race_HUD_Sub_TextBalloon_C_PreConstruct");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_TextBalloon_C_PreConstruct;
 
 // Function WBP_Race_HUD_Sub_TextBalloon.WBP_Race_HUD_Sub_TextBalloon_C.UpdateCrown
 // 0x0001 (0x0001 - 0x0000)
@@ -188,9 +129,7 @@ struct WBP_Race_HUD_Sub_TextBalloon_C_UpdateCrown final
 public:
 	EDriverId                                     DriverId;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_TextBalloon_C_UpdateCrown) == 0x000001, "Wrong alignment on WBP_Race_HUD_Sub_TextBalloon_C_UpdateCrown");
-static_assert(sizeof(WBP_Race_HUD_Sub_TextBalloon_C_UpdateCrown) == 0x000001, "Wrong size on WBP_Race_HUD_Sub_TextBalloon_C_UpdateCrown");
-static_assert(offsetof(WBP_Race_HUD_Sub_TextBalloon_C_UpdateCrown, DriverId) == 0x000000, "Member 'WBP_Race_HUD_Sub_TextBalloon_C_UpdateCrown::DriverId' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_TextBalloon_C_UpdateCrown;
 
 }
 

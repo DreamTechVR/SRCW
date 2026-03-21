@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
+#include "UnionSystem_structs.hpp"
 
 
 namespace SDK::Params
@@ -24,9 +24,7 @@ struct BPC_FriendList_C_CREATEDELEGATE_PROXYFUNCTION_0 final
 public:
 	struct FLobbyId                               TargetLobbyId;                                     // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(BPC_FriendList_C_CREATEDELEGATE_PROXYFUNCTION_0) == 0x000008, "Wrong alignment on BPC_FriendList_C_CREATEDELEGATE_PROXYFUNCTION_0");
-static_assert(sizeof(BPC_FriendList_C_CREATEDELEGATE_PROXYFUNCTION_0) == 0x000010, "Wrong size on BPC_FriendList_C_CREATEDELEGATE_PROXYFUNCTION_0");
-static_assert(offsetof(BPC_FriendList_C_CREATEDELEGATE_PROXYFUNCTION_0, TargetLobbyId) == 0x000000, "Member 'BPC_FriendList_C_CREATEDELEGATE_PROXYFUNCTION_0::TargetLobbyId' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_FriendList_C_CREATEDELEGATE_PROXYFUNCTION_0;
 
 // Function BPC_FriendList.BPC_FriendList_C.ExecuteUbergraph_BPC_FriendList
 // 0x0450 (0x0450 - 0x0000)
@@ -160,104 +158,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess_9;                     // 0x0448(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFriendListSetupParameterData          K2Node_MakeStruct_FriendListSetupParameterData;    // 0x0449(0x0005)(NoDestructor)
 };
-static_assert(alignof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList) == 0x000008, "Wrong alignment on BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList");
-static_assert(sizeof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList) == 0x000450, "Wrong size on BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, EntryPoint) == 0x000000, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_GetAppPlayerController_ReturnValue) == 0x000008, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_GetAppPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_CustomEvent_TargetUserId) == 0x000010, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_CustomEvent_TargetUserId' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_CreateDelegate_OutputDelegate) == 0x000024, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_GetOwnerSequence_ReturnValue) == 0x000038, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_GetOwnerSequence_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_DynamicCast_AsBP_Top_Menu_Sequence) == 0x000040, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_DynamicCast_AsBP_Top_Menu_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_GetOwnerMenuSequence_self_CastInput) == 0x000050, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_GetOwnerMenuSequence_self_CastInput' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_GetOwnerMenuSequence_ReturnValue) == 0x000060, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_GetOwnerMenuSequence_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_DynamicCast_AsBP_Menu_Sequence) == 0x000068, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_DynamicCast_AsBP_Menu_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_DynamicCast_bSuccess_1) == 0x000070, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000078, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_CustomEvent_Successful_1) == 0x000080, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_CustomEvent_Successful_1' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_IsValid_ReturnValue_1) == 0x000081, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_CreateDelegate_OutputDelegate_1) == 0x000084, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_IsValid_ReturnValue_2) == 0x000094, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_CustomEvent_bInSuccess) == 0x000095, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_CustomEvent_bInSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_CustomEvent_InResult) == 0x000098, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_CustomEvent_InResult' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_IsValid_ReturnValue_3) == 0x000100, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_CustomEvent_InLobbyJoinInfo) == 0x000108, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_CustomEvent_InLobbyJoinInfo' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_CreateDelegate_OutputDelegate_2) == 0x000110, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_GetPlayerController_ReturnValue) == 0x000120, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_CustomEvent_InZOrder) == 0x000128, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_CustomEvent_InZOrder' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_Event_InState) == 0x00012C, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_Event_InState' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_CustomEvent_ShortLobbyId) == 0x000130, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_CustomEvent_ShortLobbyId' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_CreateDelegate_OutputDelegate_3) == 0x000140, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_IsEmpty_ReturnValue) == 0x000150, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_IsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_CreateDelegate_OutputDelegate_4) == 0x000154, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_Not_PreBool_ReturnValue) == 0x000164, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_CreateDelegate_OutputDelegate_5) == 0x000168, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_CustomEvent_TargetShortLobbyId) == 0x000178, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_CustomEvent_TargetShortLobbyId' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000188, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x000190, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_GetPrivateLobbyContext_ReturnValue) == 0x000198, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_GetPrivateLobbyContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_GetPrivateLobbyContext_ReturnValue_1) == 0x0001A0, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_GetPrivateLobbyContext_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_DynamicCast_AsBP_Squad_Context) == 0x0001A8, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_DynamicCast_AsBP_Squad_Context' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_DynamicCast_bSuccess_2) == 0x0001B0, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_DynamicCast_AsBP_Squad_Context_1) == 0x0001B8, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_DynamicCast_AsBP_Squad_Context_1' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_DynamicCast_bSuccess_3) == 0x0001C0, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_IsJoining_ReturnValue) == 0x0001C1, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_IsJoining_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_CustomEvent_Successful) == 0x0001C2, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_CustomEvent_Successful' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_CustomEvent_SearchResult) == 0x0001C8, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_CustomEvent_SearchResult' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_GetGameInstanceSubsystem_ReturnValue_2) == 0x000240, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_GetGameInstanceSubsystem_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_MakeLiteralByte_ReturnValue) == 0x000248, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_GetPublicLobbyContext_ReturnValue) == 0x000250, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_GetPublicLobbyContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_DynamicCast_AsFriend_Match_Lobby_Context) == 0x000258, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_DynamicCast_AsFriend_Match_Lobby_Context' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_DynamicCast_bSuccess_4) == 0x000260, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000264, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_IsJoining_ReturnValue_1) == 0x000268, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_IsJoining_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_CustomEvent_InLobbyId) == 0x000270, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_CustomEvent_InLobbyId' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_CreateDelegate_OutputDelegate_6) == 0x000280, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_IsValid_ReturnValue_4) == 0x000290, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_CreateDelegate_OutputDelegate_7) == 0x000294, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_CreateDelegate_OutputDelegate_8) == 0x0002A4, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_CreateDelegate_OutputDelegate_8' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_CustomEvent_InLobbyContext) == 0x0002B8, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_CustomEvent_InLobbyContext' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_CustomEvent_bInSuccessful) == 0x0002C0, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_CustomEvent_bInSuccessful' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_CustomEvent_InSearchLobbyResult) == 0x0002C8, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_CustomEvent_InSearchLobbyResult' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_IsValid_ReturnValue_5) == 0x000340, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_Array_IsNotEmpty_ReturnValue) == 0x000341, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_Array_IsNotEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_GetLobbyTypeByLobbyId_OutLobbyType) == 0x000348, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_GetLobbyTypeByLobbyId_OutLobbyType' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_GetLobbyTypeByLobbyId_ReturnValue) == 0x000350, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_GetLobbyTypeByLobbyId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_GetHostUserIdStringByLobbyId_OutHostUserId) == 0x000358, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_GetHostUserIdStringByLobbyId_OutHostUserId' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_GetHostUserIdStringByLobbyId_ReturnValue) == 0x000368, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_GetHostUserIdStringByLobbyId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_Conv_Int64ToByte_ReturnValue) == 0x000369, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_Conv_Int64ToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_GetValidValue_ReturnValue) == 0x00036A, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_IsValid_ReturnValue_6) == 0x00036B, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_IsValid_ReturnValue_7) == 0x00036C, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_IsValid_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_CreateDelegate_OutputDelegate_9) == 0x000370, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_CreateDelegate_OutputDelegate_9' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_IsValid_ReturnValue_8) == 0x000380, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_IsValid_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_CreateDelegate_OutputDelegate_10) == 0x000384, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_CreateDelegate_OutputDelegate_10' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_IsValid_ReturnValue_9) == 0x000394, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_IsValid_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_GetOwnerSequence_ReturnValue_1) == 0x000398, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_GetOwnerSequence_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_GetPlayerController_ReturnValue_1) == 0x0003A0, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_DynamicCast_AsLobby_Friend_Match_Sequence_2) == 0x0003A8, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_DynamicCast_AsLobby_Friend_Match_Sequence_2' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_DynamicCast_bSuccess_5) == 0x0003B0, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_Create_ReturnValue) == 0x0003B8, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_DynamicCast_AsLobby_Squad_Sequence_2) == 0x0003C0, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_DynamicCast_AsLobby_Squad_Sequence_2' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_DynamicCast_bSuccess_6) == 0x0003C8, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_DynamicCast_bSuccess_6' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_GetOwnerSequence_ReturnValue_2) == 0x0003D0, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_GetOwnerSequence_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_GetParentActor_ReturnValue) == 0x0003D8, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_GetParentActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_Not_PreBool_ReturnValue_1) == 0x0003E0, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_DynamicCast_AsBP_Online_Sequence) == 0x0003E8, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_DynamicCast_AsBP_Online_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_DynamicCast_bSuccess_7) == 0x0003F0, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_DynamicCast_bSuccess_7' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_GetOwnerMenuSequence_self_CastInput_1) == 0x0003F8, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_GetOwnerMenuSequence_self_CastInput_1' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_GetOwnerMenuSequence_ReturnValue_1) == 0x000408, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_GetOwnerMenuSequence_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_CreateDelegate_OutputDelegate_11) == 0x000410, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_CreateDelegate_OutputDelegate_11' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_DynamicCast_AsBP_Menu_Sequence_1) == 0x000420, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_DynamicCast_AsBP_Menu_Sequence_1' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_DynamicCast_bSuccess_8) == 0x000428, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_DynamicCast_bSuccess_8' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_UnregisterMainMenu_ReturnValue) == 0x000429, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_UnregisterMainMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_IsValid_ReturnValue_10) == 0x00042A, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_IsValid_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_GetPlayerController_ReturnValue_2) == 0x000430, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_GetPlayerController_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_IsValid_ReturnValue_11) == 0x000438, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_IsValid_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000440, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_DynamicCast_bSuccess_9) == 0x000448, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_DynamicCast_bSuccess_9' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_MakeStruct_FriendListSetupParameterData) == 0x000449, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_MakeStruct_FriendListSetupParameterData' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList;
 
 // Function BPC_FriendList.BPC_FriendList_C.OnAppNetSendInvitationComplete
 // 0x0070 (0x0070 - 0x0000)
@@ -268,10 +169,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLobbyOperationResult                  InResult;                                          // 0x0008(0x0068)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(BPC_FriendList_C_OnAppNetSendInvitationComplete) == 0x000008, "Wrong alignment on BPC_FriendList_C_OnAppNetSendInvitationComplete");
-static_assert(sizeof(BPC_FriendList_C_OnAppNetSendInvitationComplete) == 0x000070, "Wrong size on BPC_FriendList_C_OnAppNetSendInvitationComplete");
-static_assert(offsetof(BPC_FriendList_C_OnAppNetSendInvitationComplete, bInSuccess) == 0x000000, "Member 'BPC_FriendList_C_OnAppNetSendInvitationComplete::bInSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_OnAppNetSendInvitationComplete, InResult) == 0x000008, "Member 'BPC_FriendList_C_OnAppNetSendInvitationComplete::InResult' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_FriendList_C_OnAppNetSendInvitationComplete;
 
 // Function BPC_FriendList.BPC_FriendList_C.OnCreateShortLobbyId
 // 0x0010 (0x0010 - 0x0000)
@@ -280,9 +178,7 @@ struct BPC_FriendList_C_OnCreateShortLobbyId final
 public:
 	class FString                                 ShortLobbyId;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_FriendList_C_OnCreateShortLobbyId) == 0x000008, "Wrong alignment on BPC_FriendList_C_OnCreateShortLobbyId");
-static_assert(sizeof(BPC_FriendList_C_OnCreateShortLobbyId) == 0x000010, "Wrong size on BPC_FriendList_C_OnCreateShortLobbyId");
-static_assert(offsetof(BPC_FriendList_C_OnCreateShortLobbyId, ShortLobbyId) == 0x000000, "Member 'BPC_FriendList_C_OnCreateShortLobbyId::ShortLobbyId' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_FriendList_C_OnCreateShortLobbyId;
 
 // Function BPC_FriendList.BPC_FriendList_C.OnCreateSquadComplete
 // 0x0001 (0x0001 - 0x0000)
@@ -291,9 +187,7 @@ struct BPC_FriendList_C_OnCreateSquadComplete final
 public:
 	bool                                          Successful;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_FriendList_C_OnCreateSquadComplete) == 0x000001, "Wrong alignment on BPC_FriendList_C_OnCreateSquadComplete");
-static_assert(sizeof(BPC_FriendList_C_OnCreateSquadComplete) == 0x000001, "Wrong size on BPC_FriendList_C_OnCreateSquadComplete");
-static_assert(offsetof(BPC_FriendList_C_OnCreateSquadComplete, Successful) == 0x000000, "Member 'BPC_FriendList_C_OnCreateSquadComplete::Successful' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_FriendList_C_OnCreateSquadComplete;
 
 // Function BPC_FriendList.BPC_FriendList_C.OnFriendListLobbyIdSearchDecide
 // 0x0010 (0x0010 - 0x0000)
@@ -302,9 +196,7 @@ struct BPC_FriendList_C_OnFriendListLobbyIdSearchDecide final
 public:
 	class FString                                 TargetShortLobbyId;                                // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_FriendList_C_OnFriendListLobbyIdSearchDecide) == 0x000008, "Wrong alignment on BPC_FriendList_C_OnFriendListLobbyIdSearchDecide");
-static_assert(sizeof(BPC_FriendList_C_OnFriendListLobbyIdSearchDecide) == 0x000010, "Wrong size on BPC_FriendList_C_OnFriendListLobbyIdSearchDecide");
-static_assert(offsetof(BPC_FriendList_C_OnFriendListLobbyIdSearchDecide, TargetShortLobbyId) == 0x000000, "Member 'BPC_FriendList_C_OnFriendListLobbyIdSearchDecide::TargetShortLobbyId' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_FriendList_C_OnFriendListLobbyIdSearchDecide;
 
 // Function BPC_FriendList.BPC_FriendList_C.OnFriendListLobbyInvitationAccept
 // 0x0008 (0x0008 - 0x0000)
@@ -313,9 +205,7 @@ struct BPC_FriendList_C_OnFriendListLobbyInvitationAccept final
 public:
 	class ULobbyJoinInfo*                         InLobbyJoinInfo;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_FriendList_C_OnFriendListLobbyInvitationAccept) == 0x000008, "Wrong alignment on BPC_FriendList_C_OnFriendListLobbyInvitationAccept");
-static_assert(sizeof(BPC_FriendList_C_OnFriendListLobbyInvitationAccept) == 0x000008, "Wrong size on BPC_FriendList_C_OnFriendListLobbyInvitationAccept");
-static_assert(offsetof(BPC_FriendList_C_OnFriendListLobbyInvitationAccept, InLobbyJoinInfo) == 0x000000, "Member 'BPC_FriendList_C_OnFriendListLobbyInvitationAccept::InLobbyJoinInfo' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_FriendList_C_OnFriendListLobbyInvitationAccept;
 
 // Function BPC_FriendList.BPC_FriendList_C.OnFriendListLobbyInvitationDecide
 // 0x0010 (0x0010 - 0x0000)
@@ -324,9 +214,7 @@ struct BPC_FriendList_C_OnFriendListLobbyInvitationDecide final
 public:
 	class FString                                 TargetUserId;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_FriendList_C_OnFriendListLobbyInvitationDecide) == 0x000008, "Wrong alignment on BPC_FriendList_C_OnFriendListLobbyInvitationDecide");
-static_assert(sizeof(BPC_FriendList_C_OnFriendListLobbyInvitationDecide) == 0x000010, "Wrong size on BPC_FriendList_C_OnFriendListLobbyInvitationDecide");
-static_assert(offsetof(BPC_FriendList_C_OnFriendListLobbyInvitationDecide, TargetUserId) == 0x000000, "Member 'BPC_FriendList_C_OnFriendListLobbyInvitationDecide::TargetUserId' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_FriendList_C_OnFriendListLobbyInvitationDecide;
 
 // Function BPC_FriendList.BPC_FriendList_C.OnJoinLobbyByLobbyIdSearch
 // 0x0010 (0x0010 - 0x0000)
@@ -335,9 +223,7 @@ struct BPC_FriendList_C_OnJoinLobbyByLobbyIdSearch final
 public:
 	struct FLobbyId                               InLobbyId;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(BPC_FriendList_C_OnJoinLobbyByLobbyIdSearch) == 0x000008, "Wrong alignment on BPC_FriendList_C_OnJoinLobbyByLobbyIdSearch");
-static_assert(sizeof(BPC_FriendList_C_OnJoinLobbyByLobbyIdSearch) == 0x000010, "Wrong size on BPC_FriendList_C_OnJoinLobbyByLobbyIdSearch");
-static_assert(offsetof(BPC_FriendList_C_OnJoinLobbyByLobbyIdSearch, InLobbyId) == 0x000000, "Member 'BPC_FriendList_C_OnJoinLobbyByLobbyIdSearch::InLobbyId' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_FriendList_C_OnJoinLobbyByLobbyIdSearch;
 
 // Function BPC_FriendList.BPC_FriendList_C.OnSearchSquadComplete
 // 0x0080 (0x0080 - 0x0000)
@@ -348,10 +234,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSearchLobbyResult                     SearchResult;                                      // 0x0008(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(BPC_FriendList_C_OnSearchSquadComplete) == 0x000008, "Wrong alignment on BPC_FriendList_C_OnSearchSquadComplete");
-static_assert(sizeof(BPC_FriendList_C_OnSearchSquadComplete) == 0x000080, "Wrong size on BPC_FriendList_C_OnSearchSquadComplete");
-static_assert(offsetof(BPC_FriendList_C_OnSearchSquadComplete, Successful) == 0x000000, "Member 'BPC_FriendList_C_OnSearchSquadComplete::Successful' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_OnSearchSquadComplete, SearchResult) == 0x000008, "Member 'BPC_FriendList_C_OnSearchSquadComplete::SearchResult' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_FriendList_C_OnSearchSquadComplete;
 
 // Function BPC_FriendList.BPC_FriendList_C.SetFriendListLobbyIdSearchResult
 // 0x0088 (0x0088 - 0x0000)
@@ -363,11 +246,7 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSearchLobbyResult                     InSearchLobbyResult;                               // 0x0010(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(BPC_FriendList_C_SetFriendListLobbyIdSearchResult) == 0x000008, "Wrong alignment on BPC_FriendList_C_SetFriendListLobbyIdSearchResult");
-static_assert(sizeof(BPC_FriendList_C_SetFriendListLobbyIdSearchResult) == 0x000088, "Wrong size on BPC_FriendList_C_SetFriendListLobbyIdSearchResult");
-static_assert(offsetof(BPC_FriendList_C_SetFriendListLobbyIdSearchResult, InLobbyContext) == 0x000000, "Member 'BPC_FriendList_C_SetFriendListLobbyIdSearchResult::InLobbyContext' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_SetFriendListLobbyIdSearchResult, bInSuccessful) == 0x000008, "Member 'BPC_FriendList_C_SetFriendListLobbyIdSearchResult::bInSuccessful' has a wrong offset!");
-static_assert(offsetof(BPC_FriendList_C_SetFriendListLobbyIdSearchResult, InSearchLobbyResult) == 0x000010, "Member 'BPC_FriendList_C_SetFriendListLobbyIdSearchResult::InSearchLobbyResult' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_FriendList_C_SetFriendListLobbyIdSearchResult;
 
 // Function BPC_FriendList.BPC_FriendList_C.SetNextMenuSequenceSubState
 // 0x0001 (0x0001 - 0x0000)
@@ -376,9 +255,7 @@ struct BPC_FriendList_C_SetNextMenuSequenceSubState final
 public:
 	EMenuSequenceSubState                         InState;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_FriendList_C_SetNextMenuSequenceSubState) == 0x000001, "Wrong alignment on BPC_FriendList_C_SetNextMenuSequenceSubState");
-static_assert(sizeof(BPC_FriendList_C_SetNextMenuSequenceSubState) == 0x000001, "Wrong size on BPC_FriendList_C_SetNextMenuSequenceSubState");
-static_assert(offsetof(BPC_FriendList_C_SetNextMenuSequenceSubState, InState) == 0x000000, "Member 'BPC_FriendList_C_SetNextMenuSequenceSubState::InState' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_FriendList_C_SetNextMenuSequenceSubState;
 
 // Function BPC_FriendList.BPC_FriendList_C.SetupFriendListWidget
 // 0x0004 (0x0004 - 0x0000)
@@ -387,9 +264,7 @@ struct BPC_FriendList_C_SetupFriendListWidget final
 public:
 	int32                                         InZOrder;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_FriendList_C_SetupFriendListWidget) == 0x000004, "Wrong alignment on BPC_FriendList_C_SetupFriendListWidget");
-static_assert(sizeof(BPC_FriendList_C_SetupFriendListWidget) == 0x000004, "Wrong size on BPC_FriendList_C_SetupFriendListWidget");
-static_assert(offsetof(BPC_FriendList_C_SetupFriendListWidget, InZOrder) == 0x000000, "Member 'BPC_FriendList_C_SetupFriendListWidget::InZOrder' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_FriendList_C_SetupFriendListWidget;
 
 }
 

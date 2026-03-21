@@ -23,10 +23,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UImage*>                         K2Node_MakeArray_Array;                            // 0x0008(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_TimeTrial_LAP_Time_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_LAP_Time) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_TimeTrial_LAP_Time_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_LAP_Time");
-static_assert(sizeof(WBP_Race_HUD_Sub_TimeTrial_LAP_Time_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_LAP_Time) == 0x000018, "Wrong size on WBP_Race_HUD_Sub_TimeTrial_LAP_Time_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_LAP_Time");
-static_assert(offsetof(WBP_Race_HUD_Sub_TimeTrial_LAP_Time_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_LAP_Time, EntryPoint) == 0x000000, "Member 'WBP_Race_HUD_Sub_TimeTrial_LAP_Time_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_LAP_Time::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TimeTrial_LAP_Time_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_LAP_Time, K2Node_MakeArray_Array) == 0x000008, "Member 'WBP_Race_HUD_Sub_TimeTrial_LAP_Time_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_LAP_Time::K2Node_MakeArray_Array' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_TimeTrial_LAP_Time_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_LAP_Time;
 
 // Function WBP_Race_HUD_Sub_TimeTrial_LAP_Time.WBP_Race_HUD_Sub_TimeTrial_LAP_Time_C.SetLapNum
 // 0x0048 (0x0048 - 0x0000)
@@ -40,14 +37,7 @@ public:
 	class FText                                   Temp_text_Variable_2;                              // 0x0028(0x0010)()
 	class FText                                   K2Node_Select_Default;                             // 0x0038(0x0010)()
 };
-static_assert(alignof(WBP_Race_HUD_Sub_TimeTrial_LAP_Time_C_SetLapNum) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_TimeTrial_LAP_Time_C_SetLapNum");
-static_assert(sizeof(WBP_Race_HUD_Sub_TimeTrial_LAP_Time_C_SetLapNum) == 0x000048, "Wrong size on WBP_Race_HUD_Sub_TimeTrial_LAP_Time_C_SetLapNum");
-static_assert(offsetof(WBP_Race_HUD_Sub_TimeTrial_LAP_Time_C_SetLapNum, LapNum) == 0x000000, "Member 'WBP_Race_HUD_Sub_TimeTrial_LAP_Time_C_SetLapNum::LapNum' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TimeTrial_LAP_Time_C_SetLapNum, Temp_int_Variable) == 0x000004, "Member 'WBP_Race_HUD_Sub_TimeTrial_LAP_Time_C_SetLapNum::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TimeTrial_LAP_Time_C_SetLapNum, Temp_text_Variable) == 0x000008, "Member 'WBP_Race_HUD_Sub_TimeTrial_LAP_Time_C_SetLapNum::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TimeTrial_LAP_Time_C_SetLapNum, Temp_text_Variable_1) == 0x000018, "Member 'WBP_Race_HUD_Sub_TimeTrial_LAP_Time_C_SetLapNum::Temp_text_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TimeTrial_LAP_Time_C_SetLapNum, Temp_text_Variable_2) == 0x000028, "Member 'WBP_Race_HUD_Sub_TimeTrial_LAP_Time_C_SetLapNum::Temp_text_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TimeTrial_LAP_Time_C_SetLapNum, K2Node_Select_Default) == 0x000038, "Member 'WBP_Race_HUD_Sub_TimeTrial_LAP_Time_C_SetLapNum::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_TimeTrial_LAP_Time_C_SetLapNum;
 
 }
 

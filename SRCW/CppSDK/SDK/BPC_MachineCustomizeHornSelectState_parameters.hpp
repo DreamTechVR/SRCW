@@ -28,12 +28,7 @@ public:
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MachineCustomizeHornSelectState_C_CreateRewardDialog) == 0x000008, "Wrong alignment on BPC_MachineCustomizeHornSelectState_C_CreateRewardDialog");
-static_assert(sizeof(BPC_MachineCustomizeHornSelectState_C_CreateRewardDialog) == 0x000018, "Wrong size on BPC_MachineCustomizeHornSelectState_C_CreateRewardDialog");
-static_assert(offsetof(BPC_MachineCustomizeHornSelectState_C_CreateRewardDialog, ReturnValue) == 0x000000, "Member 'BPC_MachineCustomizeHornSelectState_C_CreateRewardDialog::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeHornSelectState_C_CreateRewardDialog, CallFunc_Create_ReturnValue) == 0x000008, "Member 'BPC_MachineCustomizeHornSelectState_C_CreateRewardDialog::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeHornSelectState_C_CreateRewardDialog, CallFunc_MakeLiteralByte_ReturnValue) == 0x000010, "Member 'BPC_MachineCustomizeHornSelectState_C_CreateRewardDialog::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeHornSelectState_C_CreateRewardDialog, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000014, "Member 'BPC_MachineCustomizeHornSelectState_C_CreateRewardDialog::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeHornSelectState_C_CreateRewardDialog;
 
 // Function BPC_MachineCustomizeHornSelectState.BPC_MachineCustomizeHornSelectState_C.PlaySoundImpossible
 // 0x0004 (0x0004 - 0x0000)
@@ -42,9 +37,7 @@ struct BPC_MachineCustomizeHornSelectState_C_PlaySoundImpossible final
 public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0000(0x0004)()
 };
-static_assert(alignof(BPC_MachineCustomizeHornSelectState_C_PlaySoundImpossible) == 0x000004, "Wrong alignment on BPC_MachineCustomizeHornSelectState_C_PlaySoundImpossible");
-static_assert(sizeof(BPC_MachineCustomizeHornSelectState_C_PlaySoundImpossible) == 0x000004, "Wrong size on BPC_MachineCustomizeHornSelectState_C_PlaySoundImpossible");
-static_assert(offsetof(BPC_MachineCustomizeHornSelectState_C_PlaySoundImpossible, CallFunc_SoundPlay_ReturnValue) == 0x000000, "Member 'BPC_MachineCustomizeHornSelectState_C_PlaySoundImpossible::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeHornSelectState_C_PlaySoundImpossible;
 
 // Function BPC_MachineCustomizeHornSelectState.BPC_MachineCustomizeHornSelectState_C.PlaySoundPossible
 // 0x0004 (0x0004 - 0x0000)
@@ -53,9 +46,7 @@ struct BPC_MachineCustomizeHornSelectState_C_PlaySoundPossible final
 public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0000(0x0004)()
 };
-static_assert(alignof(BPC_MachineCustomizeHornSelectState_C_PlaySoundPossible) == 0x000004, "Wrong alignment on BPC_MachineCustomizeHornSelectState_C_PlaySoundPossible");
-static_assert(sizeof(BPC_MachineCustomizeHornSelectState_C_PlaySoundPossible) == 0x000004, "Wrong size on BPC_MachineCustomizeHornSelectState_C_PlaySoundPossible");
-static_assert(offsetof(BPC_MachineCustomizeHornSelectState_C_PlaySoundPossible, CallFunc_SoundPlay_ReturnValue) == 0x000000, "Member 'BPC_MachineCustomizeHornSelectState_C_PlaySoundPossible::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeHornSelectState_C_PlaySoundPossible;
 
 // Function BPC_MachineCustomizeHornSelectState.BPC_MachineCustomizeHornSelectState_C.GetCamera
 // 0x0078 (0x0078 - 0x0000)
@@ -69,13 +60,7 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FST_GarageData                         CallFunc_GetGarageData_OutGarageData;              // 0x0020(0x0058)(ZeroConstructor, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MachineCustomizeHornSelectState_C_GetCamera) == 0x000008, "Wrong alignment on BPC_MachineCustomizeHornSelectState_C_GetCamera");
-static_assert(sizeof(BPC_MachineCustomizeHornSelectState_C_GetCamera) == 0x000078, "Wrong size on BPC_MachineCustomizeHornSelectState_C_GetCamera");
-static_assert(offsetof(BPC_MachineCustomizeHornSelectState_C_GetCamera, ReturnValue) == 0x000000, "Member 'BPC_MachineCustomizeHornSelectState_C_GetCamera::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeHornSelectState_C_GetCamera, CallFunc_GetOwnerStateMachine_ReturnValue) == 0x000008, "Member 'BPC_MachineCustomizeHornSelectState_C_GetCamera::CallFunc_GetOwnerStateMachine_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeHornSelectState_C_GetCamera, K2Node_DynamicCast_AsBP_Machine_Customize_Sequence) == 0x000010, "Member 'BPC_MachineCustomizeHornSelectState_C_GetCamera::K2Node_DynamicCast_AsBP_Machine_Customize_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeHornSelectState_C_GetCamera, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'BPC_MachineCustomizeHornSelectState_C_GetCamera::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeHornSelectState_C_GetCamera, CallFunc_GetGarageData_OutGarageData) == 0x000020, "Member 'BPC_MachineCustomizeHornSelectState_C_GetCamera::CallFunc_GetGarageData_OutGarageData' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeHornSelectState_C_GetCamera;
 
 // Function BPC_MachineCustomizeHornSelectState.BPC_MachineCustomizeHornSelectState_C.GetHornComponent
 // 0x0028 (0x0028 - 0x0000)
@@ -89,13 +74,7 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMenuRacerBase*                         CallFunc_GetRacer_ReturnValue;                     // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MachineCustomizeHornSelectState_C_GetHornComponent) == 0x000008, "Wrong alignment on BPC_MachineCustomizeHornSelectState_C_GetHornComponent");
-static_assert(sizeof(BPC_MachineCustomizeHornSelectState_C_GetHornComponent) == 0x000028, "Wrong size on BPC_MachineCustomizeHornSelectState_C_GetHornComponent");
-static_assert(offsetof(BPC_MachineCustomizeHornSelectState_C_GetHornComponent, ReturnValue) == 0x000000, "Member 'BPC_MachineCustomizeHornSelectState_C_GetHornComponent::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeHornSelectState_C_GetHornComponent, CallFunc_GetOwnerStateMachine_ReturnValue) == 0x000008, "Member 'BPC_MachineCustomizeHornSelectState_C_GetHornComponent::CallFunc_GetOwnerStateMachine_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeHornSelectState_C_GetHornComponent, K2Node_DynamicCast_AsMachine_Customize_Sequence) == 0x000010, "Member 'BPC_MachineCustomizeHornSelectState_C_GetHornComponent::K2Node_DynamicCast_AsMachine_Customize_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeHornSelectState_C_GetHornComponent, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'BPC_MachineCustomizeHornSelectState_C_GetHornComponent::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeHornSelectState_C_GetHornComponent, CallFunc_GetRacer_ReturnValue) == 0x000020, "Member 'BPC_MachineCustomizeHornSelectState_C_GetHornComponent::CallFunc_GetRacer_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeHornSelectState_C_GetHornComponent;
 
 }
 

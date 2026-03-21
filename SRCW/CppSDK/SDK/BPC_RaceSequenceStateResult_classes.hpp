@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -36,6 +36,7 @@ public:
 	void ExecuteUbergraph_BPC_RaceSequenceStateResult(int32 EntryPoint);
 	void GetAddTicket(int32* AddTickets);
 	void GetTargetWidget(class UClass** WidgetBlueprint);
+	void GetTimeTrialAddTicket(int32* AddTickets);
 	void NextEndMenu_TimerEvent();
 	void OnEnd();
 	void OnInitState();
@@ -44,26 +45,23 @@ public:
 	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
 	void SaveDonpaTicket();
 	void SetRewardAchievement();
+	void TimeTrialSaveDonpaTicket();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_RaceSequenceStateResult_C">();
+		BP_STATIC_CLASS_IMPL("BPC_RaceSequenceStateResult_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_RaceSequenceStateResult_C")
 	}
 	static class UBPC_RaceSequenceStateResult_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_RaceSequenceStateResult_C>();
 	}
 };
-static_assert(alignof(UBPC_RaceSequenceStateResult_C) == 0x000008, "Wrong alignment on UBPC_RaceSequenceStateResult_C");
-static_assert(sizeof(UBPC_RaceSequenceStateResult_C) == 0x000160, "Wrong size on UBPC_RaceSequenceStateResult_C");
-static_assert(offsetof(UBPC_RaceSequenceStateResult_C, UberGraphFrame) == 0x000128, "Member 'UBPC_RaceSequenceStateResult_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateResult_C, ResultSequence) == 0x000130, "Member 'UBPC_RaceSequenceStateResult_C::ResultSequence' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateResult_C, Owner_BP) == 0x000138, "Member 'UBPC_RaceSequenceStateResult_C::Owner_BP' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateResult_C, RewardAchievementManager) == 0x000140, "Member 'UBPC_RaceSequenceStateResult_C::RewardAchievementManager' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateResult_C, RusultWidget) == 0x000148, "Member 'UBPC_RaceSequenceStateResult_C::RusultWidget' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateResult_C, GroupResultWidget) == 0x000150, "Member 'UBPC_RaceSequenceStateResult_C::GroupResultWidget' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateResult_C, ResultGadgetPlateWidget) == 0x000158, "Member 'UBPC_RaceSequenceStateResult_C::ResultGadgetPlateWidget' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_RaceSequenceStateResult_C;
 
 }
 

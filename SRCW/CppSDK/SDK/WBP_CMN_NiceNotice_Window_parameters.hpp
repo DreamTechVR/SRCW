@@ -33,17 +33,7 @@ public:
 	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_NiceNotice_Window_C_AddChallengeClearNotice) == 0x000008, "Wrong alignment on WBP_CMN_NiceNotice_Window_C_AddChallengeClearNotice");
-static_assert(sizeof(WBP_CMN_NiceNotice_Window_C_AddChallengeClearNotice) == 0x000048, "Wrong size on WBP_CMN_NiceNotice_Window_C_AddChallengeClearNotice");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_AddChallengeClearNotice, InParam) == 0x000000, "Member 'WBP_CMN_NiceNotice_Window_C_AddChallengeClearNotice::InParam' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_AddChallengeClearNotice, bIsLocal_Add) == 0x000010, "Member 'WBP_CMN_NiceNotice_Window_C_AddChallengeClearNotice::bIsLocal_Add' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_AddChallengeClearNotice, Temp_int_Array_Index_Variable) == 0x000014, "Member 'WBP_CMN_NiceNotice_Window_C_AddChallengeClearNotice::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_AddChallengeClearNotice, CallFunc_Array_Length_ReturnValue) == 0x000018, "Member 'WBP_CMN_NiceNotice_Window_C_AddChallengeClearNotice::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_AddChallengeClearNotice, Temp_int_Loop_Counter_Variable) == 0x00001C, "Member 'WBP_CMN_NiceNotice_Window_C_AddChallengeClearNotice::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_AddChallengeClearNotice, CallFunc_GetAllChildren_ReturnValue) == 0x000020, "Member 'WBP_CMN_NiceNotice_Window_C_AddChallengeClearNotice::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_AddChallengeClearNotice, CallFunc_Less_IntInt_ReturnValue) == 0x000030, "Member 'WBP_CMN_NiceNotice_Window_C_AddChallengeClearNotice::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_AddChallengeClearNotice, CallFunc_Array_Get_Item) == 0x000038, "Member 'WBP_CMN_NiceNotice_Window_C_AddChallengeClearNotice::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_AddChallengeClearNotice, CallFunc_Add_IntInt_ReturnValue) == 0x000040, "Member 'WBP_CMN_NiceNotice_Window_C_AddChallengeClearNotice::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_NiceNotice_Window_C_AddChallengeClearNotice;
 
 // Function WBP_CMN_NiceNotice_Window.WBP_CMN_NiceNotice_Window_C.AddNiceNotice
 // 0x0078 (0x0078 - 0x0000)
@@ -76,27 +66,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_NiceNotice_Window_C_AddNiceNotice) == 0x000008, "Wrong alignment on WBP_CMN_NiceNotice_Window_C_AddNiceNotice");
-static_assert(sizeof(WBP_CMN_NiceNotice_Window_C_AddNiceNotice) == 0x000078, "Wrong size on WBP_CMN_NiceNotice_Window_C_AddNiceNotice");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_AddNiceNotice, InName) == 0x000000, "Member 'WBP_CMN_NiceNotice_Window_C_AddNiceNotice::InName' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_AddNiceNotice, InPlatformType) == 0x000010, "Member 'WBP_CMN_NiceNotice_Window_C_AddNiceNotice::InPlatformType' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_AddNiceNotice, bIsLocal_Add) == 0x000011, "Member 'WBP_CMN_NiceNotice_Window_C_AddNiceNotice::bIsLocal_Add' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_AddNiceNotice, Temp_bool_True_if_break_was_hit_Variable) == 0x000012, "Member 'WBP_CMN_NiceNotice_Window_C_AddNiceNotice::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_AddNiceNotice, Temp_int_Array_Index_Variable) == 0x000014, "Member 'WBP_CMN_NiceNotice_Window_C_AddNiceNotice::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_AddNiceNotice, CallFunc_Not_PreBool_ReturnValue) == 0x000018, "Member 'WBP_CMN_NiceNotice_Window_C_AddNiceNotice::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_AddNiceNotice, Temp_int_Loop_Counter_Variable) == 0x00001C, "Member 'WBP_CMN_NiceNotice_Window_C_AddNiceNotice::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_AddNiceNotice, CallFunc_Add_IntInt_ReturnValue) == 0x000020, "Member 'WBP_CMN_NiceNotice_Window_C_AddNiceNotice::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_AddNiceNotice, CallFunc_Array_Add_ReturnValue) == 0x000024, "Member 'WBP_CMN_NiceNotice_Window_C_AddNiceNotice::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_AddNiceNotice, CallFunc_Array_Add_ReturnValue_1) == 0x000028, "Member 'WBP_CMN_NiceNotice_Window_C_AddNiceNotice::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_AddNiceNotice, CallFunc_GetAllChildren_ReturnValue) == 0x000030, "Member 'WBP_CMN_NiceNotice_Window_C_AddNiceNotice::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_AddNiceNotice, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'WBP_CMN_NiceNotice_Window_C_AddNiceNotice::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_AddNiceNotice, CallFunc_Array_Get_Item) == 0x000048, "Member 'WBP_CMN_NiceNotice_Window_C_AddNiceNotice::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_AddNiceNotice, CallFunc_Less_IntInt_ReturnValue) == 0x000050, "Member 'WBP_CMN_NiceNotice_Window_C_AddNiceNotice::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_AddNiceNotice, CallFunc_BooleanAND_ReturnValue) == 0x000051, "Member 'WBP_CMN_NiceNotice_Window_C_AddNiceNotice::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_AddNiceNotice, K2Node_DynamicCast_AsWBP_CMN_Nice_Notice) == 0x000058, "Member 'WBP_CMN_NiceNotice_Window_C_AddNiceNotice::K2Node_DynamicCast_AsWBP_CMN_Nice_Notice' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_AddNiceNotice, K2Node_DynamicCast_bSuccess) == 0x000060, "Member 'WBP_CMN_NiceNotice_Window_C_AddNiceNotice::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_AddNiceNotice, CallFunc_PlayAnimation_ReturnValue) == 0x000068, "Member 'WBP_CMN_NiceNotice_Window_C_AddNiceNotice::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_AddNiceNotice, CallFunc_IsVisible_ReturnValue) == 0x000070, "Member 'WBP_CMN_NiceNotice_Window_C_AddNiceNotice::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_NiceNotice_Window_C_AddNiceNotice;
 
 // Function WBP_CMN_NiceNotice_Window.WBP_CMN_NiceNotice_Window_C.ExecuteUbergraph_WBP_CMN_NiceNotice_Window
 // 0x0150 (0x0150 - 0x0000)
@@ -166,58 +136,7 @@ public:
 	uint8                                         Pad_142[0x6];                                      // 0x0142(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_1;                   // 0x0148(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window) == 0x000008, "Wrong alignment on WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window");
-static_assert(sizeof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window) == 0x000150, "Wrong size on WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, EntryPoint) == 0x000000, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, Temp_int_Array_Index_Variable) == 0x000004, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_GetAllChildren_ReturnValue) == 0x000008, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_Array_Length_ReturnValue) == 0x000018, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, Temp_int_Loop_Counter_Variable) == 0x00001C, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, Temp_int_Loop_Counter_Variable_1) == 0x000020, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_Add_IntInt_ReturnValue) == 0x000024, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_Add_IntInt_ReturnValue_1) == 0x000028, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, Temp_int_Loop_Counter_Variable_2) == 0x00002C, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_Add_IntInt_ReturnValue_2) == 0x000030, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, Temp_int_Array_Index_Variable_1) == 0x000034, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, Temp_int_Array_Index_Variable_2) == 0x000038, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, Temp_int_Loop_Counter_Variable_3) == 0x00003C, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::Temp_int_Loop_Counter_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_Less_IntInt_ReturnValue) == 0x000040, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_Add_IntInt_ReturnValue_3) == 0x000044, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, Temp_int_Array_Index_Variable_3) == 0x000048, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::Temp_int_Array_Index_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_Array_Get_Item) == 0x000050, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, K2Node_DynamicCast_AsWBP_CMN_Nice_Notice) == 0x000058, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::K2Node_DynamicCast_AsWBP_CMN_Nice_Notice' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, K2Node_DynamicCast_bSuccess) == 0x000060, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_IsVisible_ReturnValue) == 0x000061, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, K2Node_CustomEvent_Widget) == 0x000068, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::K2Node_CustomEvent_Widget' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_GetAllChildren_ReturnValue_1) == 0x000070, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_GetAllChildren_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_Array_Get_Item_1) == 0x000080, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_Array_Length_ReturnValue_1) == 0x000088, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, K2Node_DynamicCast_AsWBP_CMN_Nice_Notice_1) == 0x000090, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::K2Node_DynamicCast_AsWBP_CMN_Nice_Notice_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, K2Node_DynamicCast_bSuccess_1) == 0x000098, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_Less_IntInt_ReturnValue_1) == 0x000099, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_GetAllChildren_ReturnValue_2) == 0x0000A0, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_GetAllChildren_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_Array_Find_ReturnValue) == 0x0000B0, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_Array_Get_Item_2) == 0x0000B8, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_AddChild_ReturnValue) == 0x0000C0, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_RemoveChild_ReturnValue) == 0x0000C8, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_RemoveChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_Array_Get_Item_3) == 0x0000D0, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, K2Node_CreateDelegate_OutputDelegate) == 0x0000E0, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_Array_Length_ReturnValue_2) == 0x0000F0, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_Greater_IntInt_ReturnValue) == 0x0000F4, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_Array_Get_Item_4) == 0x0000F5, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_GetAllChildren_ReturnValue_3) == 0x0000F8, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_GetAllChildren_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_Array_Get_Item_5) == 0x000108, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_Array_Get_Item_5' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_Array_Get_Item_6) == 0x000110, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_Array_Get_Item_6' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_Array_Add_ReturnValue) == 0x000118, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_IsVisible_ReturnValue_1) == 0x00011C, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_IsVisible_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_Array_Length_ReturnValue_3) == 0x000120, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_Less_IntInt_ReturnValue_2) == 0x000124, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_Array_Length_ReturnValue_4) == 0x000128, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_Array_Length_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_Less_IntInt_ReturnValue_3) == 0x00012C, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_GetAllChildren_ReturnValue_4) == 0x000130, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_GetAllChildren_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_Array_Contains_ReturnValue) == 0x000140, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_RemoveChild_ReturnValue_1) == 0x000141, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_RemoveChild_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window, CallFunc_AddChild_ReturnValue_1) == 0x000148, "Member 'WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window::CallFunc_AddChild_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_NiceNotice_Window_C_ExecuteUbergraph_WBP_CMN_NiceNotice_Window;
 
 // Function WBP_CMN_NiceNotice_Window.WBP_CMN_NiceNotice_Window_C.OnOutAnimEnd
 // 0x0008 (0x0008 - 0x0000)
@@ -226,9 +145,7 @@ struct WBP_CMN_NiceNotice_Window_C_OnOutAnimEnd final
 public:
 	class UWBP_CMN_NiceNotice_C*                  Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_NiceNotice_Window_C_OnOutAnimEnd) == 0x000008, "Wrong alignment on WBP_CMN_NiceNotice_Window_C_OnOutAnimEnd");
-static_assert(sizeof(WBP_CMN_NiceNotice_Window_C_OnOutAnimEnd) == 0x000008, "Wrong size on WBP_CMN_NiceNotice_Window_C_OnOutAnimEnd");
-static_assert(offsetof(WBP_CMN_NiceNotice_Window_C_OnOutAnimEnd, Widget) == 0x000000, "Member 'WBP_CMN_NiceNotice_Window_C_OnOutAnimEnd::Widget' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_NiceNotice_Window_C_OnOutAnimEnd;
 
 }
 

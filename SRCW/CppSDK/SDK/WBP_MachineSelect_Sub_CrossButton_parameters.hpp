@@ -33,15 +33,7 @@ public:
 	TDelegate<void(EUINavigation Navigation)>     K2Node_CreateDelegate_OutputDelegate_2;            // 0x0028(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(EUINavigation Navigation)>     K2Node_CreateDelegate_OutputDelegate_3;            // 0x0038(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_CrossButton_C_ExecuteUbergraph_WBP_MachineSelect_Sub_CrossButton) == 0x000004, "Wrong alignment on WBP_MachineSelect_Sub_CrossButton_C_ExecuteUbergraph_WBP_MachineSelect_Sub_CrossButton");
-static_assert(sizeof(WBP_MachineSelect_Sub_CrossButton_C_ExecuteUbergraph_WBP_MachineSelect_Sub_CrossButton) == 0x000048, "Wrong size on WBP_MachineSelect_Sub_CrossButton_C_ExecuteUbergraph_WBP_MachineSelect_Sub_CrossButton");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_ExecuteUbergraph_WBP_MachineSelect_Sub_CrossButton, EntryPoint) == 0x000000, "Member 'WBP_MachineSelect_Sub_CrossButton_C_ExecuteUbergraph_WBP_MachineSelect_Sub_CrossButton::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_ExecuteUbergraph_WBP_MachineSelect_Sub_CrossButton, CallFunc_IsEnableInput_Enable) == 0x000004, "Member 'WBP_MachineSelect_Sub_CrossButton_C_ExecuteUbergraph_WBP_MachineSelect_Sub_CrossButton::CallFunc_IsEnableInput_Enable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_ExecuteUbergraph_WBP_MachineSelect_Sub_CrossButton, CallFunc_IsPlayInEditor_ReturnValue) == 0x000005, "Member 'WBP_MachineSelect_Sub_CrossButton_C_ExecuteUbergraph_WBP_MachineSelect_Sub_CrossButton::CallFunc_IsPlayInEditor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_ExecuteUbergraph_WBP_MachineSelect_Sub_CrossButton, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'WBP_MachineSelect_Sub_CrossButton_C_ExecuteUbergraph_WBP_MachineSelect_Sub_CrossButton::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_ExecuteUbergraph_WBP_MachineSelect_Sub_CrossButton, K2Node_CreateDelegate_OutputDelegate_1) == 0x000018, "Member 'WBP_MachineSelect_Sub_CrossButton_C_ExecuteUbergraph_WBP_MachineSelect_Sub_CrossButton::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_ExecuteUbergraph_WBP_MachineSelect_Sub_CrossButton, K2Node_CreateDelegate_OutputDelegate_2) == 0x000028, "Member 'WBP_MachineSelect_Sub_CrossButton_C_ExecuteUbergraph_WBP_MachineSelect_Sub_CrossButton::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_ExecuteUbergraph_WBP_MachineSelect_Sub_CrossButton, K2Node_CreateDelegate_OutputDelegate_3) == 0x000038, "Member 'WBP_MachineSelect_Sub_CrossButton_C_ExecuteUbergraph_WBP_MachineSelect_Sub_CrossButton::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_CrossButton_C_ExecuteUbergraph_WBP_MachineSelect_Sub_CrossButton;
 
 // Function WBP_MachineSelect_Sub_CrossButton.WBP_MachineSelect_Sub_CrossButton_C.NavigationDown
 // 0x0018 (0x0018 - 0x0000)
@@ -53,11 +45,7 @@ public:
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsEnableInput_Enable;                     // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_CrossButton_C_NavigationDown) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_CrossButton_C_NavigationDown");
-static_assert(sizeof(WBP_MachineSelect_Sub_CrossButton_C_NavigationDown) == 0x000018, "Wrong size on WBP_MachineSelect_Sub_CrossButton_C_NavigationDown");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_NavigationDown, Navigation_0) == 0x000000, "Member 'WBP_MachineSelect_Sub_CrossButton_C_NavigationDown::Navigation_0' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_NavigationDown, ReturnValue) == 0x000008, "Member 'WBP_MachineSelect_Sub_CrossButton_C_NavigationDown::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_NavigationDown, CallFunc_IsEnableInput_Enable) == 0x000010, "Member 'WBP_MachineSelect_Sub_CrossButton_C_NavigationDown::CallFunc_IsEnableInput_Enable' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_CrossButton_C_NavigationDown;
 
 // Function WBP_MachineSelect_Sub_CrossButton.WBP_MachineSelect_Sub_CrossButton_C.NavigationLeft
 // 0x0018 (0x0018 - 0x0000)
@@ -69,11 +57,7 @@ public:
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsEnableInput_Enable;                     // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_CrossButton_C_NavigationLeft) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_CrossButton_C_NavigationLeft");
-static_assert(sizeof(WBP_MachineSelect_Sub_CrossButton_C_NavigationLeft) == 0x000018, "Wrong size on WBP_MachineSelect_Sub_CrossButton_C_NavigationLeft");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_NavigationLeft, Navigation_0) == 0x000000, "Member 'WBP_MachineSelect_Sub_CrossButton_C_NavigationLeft::Navigation_0' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_NavigationLeft, ReturnValue) == 0x000008, "Member 'WBP_MachineSelect_Sub_CrossButton_C_NavigationLeft::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_NavigationLeft, CallFunc_IsEnableInput_Enable) == 0x000010, "Member 'WBP_MachineSelect_Sub_CrossButton_C_NavigationLeft::CallFunc_IsEnableInput_Enable' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_CrossButton_C_NavigationLeft;
 
 // Function WBP_MachineSelect_Sub_CrossButton.WBP_MachineSelect_Sub_CrossButton_C.NavigationRight
 // 0x0018 (0x0018 - 0x0000)
@@ -85,11 +69,7 @@ public:
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsEnableInput_Enable;                     // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_CrossButton_C_NavigationRight) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_CrossButton_C_NavigationRight");
-static_assert(sizeof(WBP_MachineSelect_Sub_CrossButton_C_NavigationRight) == 0x000018, "Wrong size on WBP_MachineSelect_Sub_CrossButton_C_NavigationRight");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_NavigationRight, Navigation_0) == 0x000000, "Member 'WBP_MachineSelect_Sub_CrossButton_C_NavigationRight::Navigation_0' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_NavigationRight, ReturnValue) == 0x000008, "Member 'WBP_MachineSelect_Sub_CrossButton_C_NavigationRight::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_NavigationRight, CallFunc_IsEnableInput_Enable) == 0x000010, "Member 'WBP_MachineSelect_Sub_CrossButton_C_NavigationRight::CallFunc_IsEnableInput_Enable' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_CrossButton_C_NavigationRight;
 
 // Function WBP_MachineSelect_Sub_CrossButton.WBP_MachineSelect_Sub_CrossButton_C.NavigationUp
 // 0x0018 (0x0018 - 0x0000)
@@ -101,11 +81,7 @@ public:
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsEnableInput_Enable;                     // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_CrossButton_C_NavigationUp) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_CrossButton_C_NavigationUp");
-static_assert(sizeof(WBP_MachineSelect_Sub_CrossButton_C_NavigationUp) == 0x000018, "Wrong size on WBP_MachineSelect_Sub_CrossButton_C_NavigationUp");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_NavigationUp, Navigation_0) == 0x000000, "Member 'WBP_MachineSelect_Sub_CrossButton_C_NavigationUp::Navigation_0' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_NavigationUp, ReturnValue) == 0x000008, "Member 'WBP_MachineSelect_Sub_CrossButton_C_NavigationUp::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_NavigationUp, CallFunc_IsEnableInput_Enable) == 0x000010, "Member 'WBP_MachineSelect_Sub_CrossButton_C_NavigationUp::CallFunc_IsEnableInput_Enable' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_CrossButton_C_NavigationUp;
 
 // Function WBP_MachineSelect_Sub_CrossButton.WBP_MachineSelect_Sub_CrossButton_C.OnFocus_Impl
 // 0x0028 (0x0028 - 0x0000)
@@ -119,13 +95,7 @@ public:
 	class AAppPlayerController*                   K2Node_DynamicCast_AsApp_Player_Controller;        // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_CrossButton_C_OnFocus_Impl) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_CrossButton_C_OnFocus_Impl");
-static_assert(sizeof(WBP_MachineSelect_Sub_CrossButton_C_OnFocus_Impl) == 0x000028, "Wrong size on WBP_MachineSelect_Sub_CrossButton_C_OnFocus_Impl");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_OnFocus_Impl, Button) == 0x000000, "Member 'WBP_MachineSelect_Sub_CrossButton_C_OnFocus_Impl::Button' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_OnFocus_Impl, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'WBP_MachineSelect_Sub_CrossButton_C_OnFocus_Impl::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_OnFocus_Impl, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000010, "Member 'WBP_MachineSelect_Sub_CrossButton_C_OnFocus_Impl::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_OnFocus_Impl, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000018, "Member 'WBP_MachineSelect_Sub_CrossButton_C_OnFocus_Impl::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_OnFocus_Impl, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'WBP_MachineSelect_Sub_CrossButton_C_OnFocus_Impl::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_CrossButton_C_OnFocus_Impl;
 
 // Function WBP_MachineSelect_Sub_CrossButton.WBP_MachineSelect_Sub_CrossButton_C.OnFocusLost
 // 0x0020 (0x0020 - 0x0000)
@@ -138,13 +108,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_UnregisterMainMenu_ReturnValue;           // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_CrossButton_C_OnFocusLost) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_CrossButton_C_OnFocusLost");
-static_assert(sizeof(WBP_MachineSelect_Sub_CrossButton_C_OnFocusLost) == 0x000020, "Wrong size on WBP_MachineSelect_Sub_CrossButton_C_OnFocusLost");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_OnFocusLost, InFocusEvent) == 0x000000, "Member 'WBP_MachineSelect_Sub_CrossButton_C_OnFocusLost::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_OnFocusLost, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'WBP_MachineSelect_Sub_CrossButton_C_OnFocusLost::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_OnFocusLost, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000010, "Member 'WBP_MachineSelect_Sub_CrossButton_C_OnFocusLost::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_OnFocusLost, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'WBP_MachineSelect_Sub_CrossButton_C_OnFocusLost::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_OnFocusLost, CallFunc_UnregisterMainMenu_ReturnValue) == 0x000019, "Member 'WBP_MachineSelect_Sub_CrossButton_C_OnFocusLost::CallFunc_UnregisterMainMenu_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_CrossButton_C_OnFocusLost;
 
 // Function WBP_MachineSelect_Sub_CrossButton.WBP_MachineSelect_Sub_CrossButton_C.OnFocusReceived
 // 0x01B8 (0x01B8 - 0x0000)
@@ -157,13 +121,7 @@ public:
 	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x00F8(0x00B8)()
 	int32                                         CallFunc_GetUserIndexByFocusEvent_ReturnValue;     // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_CrossButton_C_OnFocusReceived) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_CrossButton_C_OnFocusReceived");
-static_assert(sizeof(WBP_MachineSelect_Sub_CrossButton_C_OnFocusReceived) == 0x0001B8, "Wrong size on WBP_MachineSelect_Sub_CrossButton_C_OnFocusReceived");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'WBP_MachineSelect_Sub_CrossButton_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'WBP_MachineSelect_Sub_CrossButton_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'WBP_MachineSelect_Sub_CrossButton_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_OnFocusReceived, K2Node_MakeStruct_EventReply) == 0x0000F8, "Member 'WBP_MachineSelect_Sub_CrossButton_C_OnFocusReceived::K2Node_MakeStruct_EventReply' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_OnFocusReceived, CallFunc_GetUserIndexByFocusEvent_ReturnValue) == 0x0001B0, "Member 'WBP_MachineSelect_Sub_CrossButton_C_OnFocusReceived::CallFunc_GetUserIndexByFocusEvent_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_CrossButton_C_OnFocusReceived;
 
 // Function WBP_MachineSelect_Sub_CrossButton.WBP_MachineSelect_Sub_CrossButton_C.PlaySEError
 // 0x0004 (0x0004 - 0x0000)
@@ -172,9 +130,7 @@ struct WBP_MachineSelect_Sub_CrossButton_C_PlaySEError final
 public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0000(0x0004)()
 };
-static_assert(alignof(WBP_MachineSelect_Sub_CrossButton_C_PlaySEError) == 0x000004, "Wrong alignment on WBP_MachineSelect_Sub_CrossButton_C_PlaySEError");
-static_assert(sizeof(WBP_MachineSelect_Sub_CrossButton_C_PlaySEError) == 0x000004, "Wrong size on WBP_MachineSelect_Sub_CrossButton_C_PlaySEError");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_PlaySEError, CallFunc_SoundPlay_ReturnValue) == 0x000000, "Member 'WBP_MachineSelect_Sub_CrossButton_C_PlaySEError::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_CrossButton_C_PlaySEError;
 
 // Function WBP_MachineSelect_Sub_CrossButton.WBP_MachineSelect_Sub_CrossButton_C.PlaySESelect
 // 0x0004 (0x0004 - 0x0000)
@@ -183,9 +139,7 @@ struct WBP_MachineSelect_Sub_CrossButton_C_PlaySESelect final
 public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0000(0x0004)()
 };
-static_assert(alignof(WBP_MachineSelect_Sub_CrossButton_C_PlaySESelect) == 0x000004, "Wrong alignment on WBP_MachineSelect_Sub_CrossButton_C_PlaySESelect");
-static_assert(sizeof(WBP_MachineSelect_Sub_CrossButton_C_PlaySESelect) == 0x000004, "Wrong size on WBP_MachineSelect_Sub_CrossButton_C_PlaySESelect");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_PlaySESelect, CallFunc_SoundPlay_ReturnValue) == 0x000000, "Member 'WBP_MachineSelect_Sub_CrossButton_C_PlaySESelect::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_CrossButton_C_PlaySESelect;
 
 // Function WBP_MachineSelect_Sub_CrossButton.WBP_MachineSelect_Sub_CrossButton_C.SetEnableInput
 // 0x0001 (0x0001 - 0x0000)
@@ -194,9 +148,7 @@ struct WBP_MachineSelect_Sub_CrossButton_C_SetEnableInput final
 public:
 	bool                                          IsEnable;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_CrossButton_C_SetEnableInput) == 0x000001, "Wrong alignment on WBP_MachineSelect_Sub_CrossButton_C_SetEnableInput");
-static_assert(sizeof(WBP_MachineSelect_Sub_CrossButton_C_SetEnableInput) == 0x000001, "Wrong size on WBP_MachineSelect_Sub_CrossButton_C_SetEnableInput");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_SetEnableInput, IsEnable) == 0x000000, "Member 'WBP_MachineSelect_Sub_CrossButton_C_SetEnableInput::IsEnable' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_CrossButton_C_SetEnableInput;
 
 // Function WBP_MachineSelect_Sub_CrossButton.WBP_MachineSelect_Sub_CrossButton_C.SetPlayerControllerIndex
 // 0x0060 (0x0060 - 0x0000)
@@ -212,16 +164,7 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_Select_Default;                             // 0x0050(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_CrossButton_C_SetPlayerControllerIndex) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_CrossButton_C_SetPlayerControllerIndex");
-static_assert(sizeof(WBP_MachineSelect_Sub_CrossButton_C_SetPlayerControllerIndex) == 0x000060, "Wrong size on WBP_MachineSelect_Sub_CrossButton_C_SetPlayerControllerIndex");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_SetPlayerControllerIndex, InPlayerControllerIndex) == 0x000000, "Member 'WBP_MachineSelect_Sub_CrossButton_C_SetPlayerControllerIndex::InPlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_SetPlayerControllerIndex, Temp_int_Variable) == 0x000004, "Member 'WBP_MachineSelect_Sub_CrossButton_C_SetPlayerControllerIndex::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_SetPlayerControllerIndex, Temp_struct_Variable) == 0x000008, "Member 'WBP_MachineSelect_Sub_CrossButton_C_SetPlayerControllerIndex::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_SetPlayerControllerIndex, Temp_struct_Variable_1) == 0x000018, "Member 'WBP_MachineSelect_Sub_CrossButton_C_SetPlayerControllerIndex::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_SetPlayerControllerIndex, Temp_struct_Variable_2) == 0x000028, "Member 'WBP_MachineSelect_Sub_CrossButton_C_SetPlayerControllerIndex::Temp_struct_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_SetPlayerControllerIndex, Temp_struct_Variable_3) == 0x000038, "Member 'WBP_MachineSelect_Sub_CrossButton_C_SetPlayerControllerIndex::Temp_struct_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_SetPlayerControllerIndex, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000048, "Member 'WBP_MachineSelect_Sub_CrossButton_C_SetPlayerControllerIndex::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_SetPlayerControllerIndex, K2Node_Select_Default) == 0x000050, "Member 'WBP_MachineSelect_Sub_CrossButton_C_SetPlayerControllerIndex::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_CrossButton_C_SetPlayerControllerIndex;
 
 // Function WBP_MachineSelect_Sub_CrossButton.WBP_MachineSelect_Sub_CrossButton_C.IsEnableInput
 // 0x0001 (0x0001 - 0x0000)
@@ -230,9 +173,7 @@ struct WBP_MachineSelect_Sub_CrossButton_C_IsEnableInput final
 public:
 	bool                                          Enable;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_CrossButton_C_IsEnableInput) == 0x000001, "Wrong alignment on WBP_MachineSelect_Sub_CrossButton_C_IsEnableInput");
-static_assert(sizeof(WBP_MachineSelect_Sub_CrossButton_C_IsEnableInput) == 0x000001, "Wrong size on WBP_MachineSelect_Sub_CrossButton_C_IsEnableInput");
-static_assert(offsetof(WBP_MachineSelect_Sub_CrossButton_C_IsEnableInput, Enable) == 0x000000, "Member 'WBP_MachineSelect_Sub_CrossButton_C_IsEnableInput::Enable' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_CrossButton_C_IsEnableInput;
 
 }
 

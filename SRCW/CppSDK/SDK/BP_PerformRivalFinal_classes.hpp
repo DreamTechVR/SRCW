@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -63,32 +63,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_PerformRivalFinal_C">();
+		BP_STATIC_CLASS_IMPL("BP_PerformRivalFinal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_PerformRivalFinal_C")
 	}
 	static class ABP_PerformRivalFinal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_PerformRivalFinal_C>();
 	}
 };
-static_assert(alignof(ABP_PerformRivalFinal_C) == 0x000008, "Wrong alignment on ABP_PerformRivalFinal_C");
-static_assert(sizeof(ABP_PerformRivalFinal_C) == 0x000328, "Wrong size on ABP_PerformRivalFinal_C");
-static_assert(offsetof(ABP_PerformRivalFinal_C, UberGraphFrame) == 0x0002A0, "Member 'ABP_PerformRivalFinal_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFinal_C, RivalLevelSequenceActor) == 0x0002A8, "Member 'ABP_PerformRivalFinal_C::RivalLevelSequenceActor' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFinal_C, RivalLevelSequencePlayer) == 0x0002B0, "Member 'ABP_PerformRivalFinal_C::RivalLevelSequencePlayer' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFinal_C, PlaySceneEvent) == 0x0002B8, "Member 'ABP_PerformRivalFinal_C::PlaySceneEvent' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFinal_C, PlayerDriver) == 0x0002C8, "Member 'ABP_PerformRivalFinal_C::PlayerDriver' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFinal_C, RivalDriver) == 0x0002D0, "Member 'ABP_PerformRivalFinal_C::RivalDriver' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFinal_C, OnFinishedPlay) == 0x0002D8, "Member 'ABP_PerformRivalFinal_C::OnFinishedPlay' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFinal_C, IntroductionUI) == 0x0002E8, "Member 'ABP_PerformRivalFinal_C::IntroductionUI' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFinal_C, StartSE) == 0x0002F0, "Member 'ABP_PerformRivalFinal_C::StartSE' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFinal_C, SubtitleUI) == 0x0002F8, "Member 'ABP_PerformRivalFinal_C::SubtitleUI' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFinal_C, bIsFinishedScene) == 0x000300, "Member 'ABP_PerformRivalFinal_C::bIsFinishedScene' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFinal_C, bIsFinishedVoice) == 0x000301, "Member 'ABP_PerformRivalFinal_C::bIsFinishedVoice' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFinal_C, RivalStringTableId) == 0x000304, "Member 'ABP_PerformRivalFinal_C::RivalStringTableId' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFinal_C, RivalRacerIndex) == 0x00030C, "Member 'ABP_PerformRivalFinal_C::RivalRacerIndex' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFinal_C, VoiceDelayAfterPlayback) == 0x000310, "Member 'ABP_PerformRivalFinal_C::VoiceDelayAfterPlayback' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFinal_C, LipSyncMotions) == 0x000318, "Member 'ABP_PerformRivalFinal_C::LipSyncMotions' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFinal_C, OwnerSequence) == 0x000320, "Member 'ABP_PerformRivalFinal_C::OwnerSequence' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_PerformRivalFinal_C;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "UnionSystem_structs.hpp"
 
 
 namespace SDK::Params
@@ -78,51 +78,7 @@ public:
 	ESpeedClassId                                 CallFunc_GetSelectedClassId_ReturnValue_1;         // 0x01E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EStageId                                      CallFunc_GetSelectedStageId_Selected_Stage_Id_Single_1; // 0x01EA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload) == 0x000010, "Wrong alignment on BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload");
-static_assert(sizeof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload) == 0x0001F0, "Wrong size on BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, EntryPoint) == 0x000000, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, CallFunc_MakeLiteralByte_ReturnValue) == 0x000004, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, CallFunc_IsValid_ReturnValue) == 0x000005, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000008, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000010, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x000018, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, CallFunc_CreatePopupWindow_ReturnValue) == 0x000020, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::CallFunc_CreatePopupWindow_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, CallFunc_MakeTransform_ReturnValue) == 0x000030, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, CallFunc_MakeLiteralText_ReturnValue) == 0x000090, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0000A0, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, CallFunc_MakeLiteralText_ReturnValue_1) == 0x0000A8, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, CallFunc_FinishSpawningActor_ReturnValue) == 0x0000B8, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, CallFunc_MakeLiteralText_ReturnValue_2) == 0x0000C0, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::CallFunc_MakeLiteralText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, K2Node_MakeArray_Array) == 0x0000D0, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, CallFunc_GetPlayerController_ReturnValue) == 0x0000E0, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, CallFunc_IsValid_ReturnValue_1) == 0x0000E8, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, K2Node_DynamicCast_AsMenu_Popup_Window_Interface) == 0x0000F0, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::K2Node_DynamicCast_AsMenu_Popup_Window_Interface' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, K2Node_DynamicCast_bSuccess) == 0x000100, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_1) == 0x000108, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_1' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, K2Node_DynamicCast_bSuccess_1) == 0x000118, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_2) == 0x000120, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_2' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, K2Node_DynamicCast_bSuccess_2) == 0x000130, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_3) == 0x000138, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_3' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, K2Node_DynamicCast_bSuccess_3) == 0x000148, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_4) == 0x000150, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_4' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, K2Node_DynamicCast_bSuccess_4) == 0x000160, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, CallFunc_MakeLiteralText_ReturnValue_3) == 0x000168, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::CallFunc_MakeLiteralText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, K2Node_CreateDelegate_OutputDelegate) == 0x000178, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, K2Node_CustomEvent_Button) == 0x000188, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, K2Node_CustomEvent_PanelIndex) == 0x000190, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::K2Node_CustomEvent_PanelIndex' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, K2Node_CustomEvent_ButtonIndex) == 0x000194, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::K2Node_CustomEvent_ButtonIndex' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000198, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, K2Node_CreateDelegate_OutputDelegate_1) == 0x00019C, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, K2Node_CreateDelegate_OutputDelegate_2) == 0x0001AC, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, CallFunc_GetSelectedClassId_ReturnValue) == 0x0001BC, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::CallFunc_GetSelectedClassId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, CallFunc_GetOwnerSequence_ReturnValue) == 0x0001C0, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::CallFunc_GetOwnerSequence_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, K2Node_DynamicCast_AsBP_Time_Trial_Sequence) == 0x0001C8, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::K2Node_DynamicCast_AsBP_Time_Trial_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, K2Node_DynamicCast_bSuccess_5) == 0x0001D0, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, CallFunc_GetSelectedStageId_Selected_Stage_Id_Single) == 0x0001D1, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::CallFunc_GetSelectedStageId_Selected_Stage_Id_Single' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, K2Node_DynamicCast_AsMenu_Sequence_UIInterface) == 0x0001D8, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::K2Node_DynamicCast_AsMenu_Sequence_UIInterface' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, K2Node_DynamicCast_bSuccess_6) == 0x0001E8, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::K2Node_DynamicCast_bSuccess_6' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, CallFunc_GetSelectedClassId_ReturnValue_1) == 0x0001E9, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::CallFunc_GetSelectedClassId_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload, CallFunc_GetSelectedStageId_Selected_Stage_Id_Single_1) == 0x0001EA, "Member 'BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload::CallFunc_GetSelectedStageId_Selected_Stage_Id_Single_1' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GhostUpload_C_ExecuteUbergraph_BPC_GhostUpload;
 
 // Function BPC_GhostUpload.BPC_GhostUpload_C.UploadConfirmationOnDecide_Event
 // 0x0010 (0x0010 - 0x0000)
@@ -133,11 +89,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GhostUpload_C_UploadConfirmationOnDecide_Event) == 0x000008, "Wrong alignment on BPC_GhostUpload_C_UploadConfirmationOnDecide_Event");
-static_assert(sizeof(BPC_GhostUpload_C_UploadConfirmationOnDecide_Event) == 0x000010, "Wrong size on BPC_GhostUpload_C_UploadConfirmationOnDecide_Event");
-static_assert(offsetof(BPC_GhostUpload_C_UploadConfirmationOnDecide_Event, Button) == 0x000000, "Member 'BPC_GhostUpload_C_UploadConfirmationOnDecide_Event::Button' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_UploadConfirmationOnDecide_Event, PanelIndex) == 0x000008, "Member 'BPC_GhostUpload_C_UploadConfirmationOnDecide_Event::PanelIndex' has a wrong offset!");
-static_assert(offsetof(BPC_GhostUpload_C_UploadConfirmationOnDecide_Event, ButtonIndex) == 0x00000C, "Member 'BPC_GhostUpload_C_UploadConfirmationOnDecide_Event::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GhostUpload_C_UploadConfirmationOnDecide_Event;
 
 }
 

@@ -10,42 +10,44 @@
 
 #include "Basic.hpp"
 
+#include "UMG_structs.hpp"
+
 
 namespace SDK::Params
 {
 
 // Function WBP_ResultLegend_Sub_NUM.WBP_ResultLegend_Sub_NUM_C.SetRateNumber
-// 0x0048 (0x0048 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct WBP_ResultLegend_Sub_NUM_C_SetRateNumber final
 {
 public:
 	int32                                         InRate;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Local_Rate;                                        // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Divide_IntInt_ReturnValue;                // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UImage*>                         K2Node_MakeArray_Array;                            // 0x0020(0x0010)(ReferenceParm, ContainsInstancedReference)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UImage*                                 CallFunc_Array_Get_Item;                           // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x001F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Divide_IntInt_ReturnValue;                // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UImage*>                         K2Node_MakeArray_Array;                            // 0x0030(0x0010)(ReferenceParm, ContainsInstancedReference)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UImage*                                 CallFunc_Array_Get_Item;                           // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ResultLegend_Sub_NUM_C_SetRateNumber) == 0x000008, "Wrong alignment on WBP_ResultLegend_Sub_NUM_C_SetRateNumber");
-static_assert(sizeof(WBP_ResultLegend_Sub_NUM_C_SetRateNumber) == 0x000048, "Wrong size on WBP_ResultLegend_Sub_NUM_C_SetRateNumber");
-static_assert(offsetof(WBP_ResultLegend_Sub_NUM_C_SetRateNumber, InRate) == 0x000000, "Member 'WBP_ResultLegend_Sub_NUM_C_SetRateNumber::InRate' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_NUM_C_SetRateNumber, Local_Rate) == 0x000004, "Member 'WBP_ResultLegend_Sub_NUM_C_SetRateNumber::Local_Rate' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_NUM_C_SetRateNumber, Temp_int_Array_Index_Variable) == 0x000008, "Member 'WBP_ResultLegend_Sub_NUM_C_SetRateNumber::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_NUM_C_SetRateNumber, Temp_int_Loop_Counter_Variable) == 0x00000C, "Member 'WBP_ResultLegend_Sub_NUM_C_SetRateNumber::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_NUM_C_SetRateNumber, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'WBP_ResultLegend_Sub_NUM_C_SetRateNumber::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_NUM_C_SetRateNumber, CallFunc_Divide_IntInt_ReturnValue) == 0x000014, "Member 'WBP_ResultLegend_Sub_NUM_C_SetRateNumber::CallFunc_Divide_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_NUM_C_SetRateNumber, CallFunc_Percent_IntInt_ReturnValue) == 0x000018, "Member 'WBP_ResultLegend_Sub_NUM_C_SetRateNumber::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_NUM_C_SetRateNumber, K2Node_MakeArray_Array) == 0x000020, "Member 'WBP_ResultLegend_Sub_NUM_C_SetRateNumber::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_NUM_C_SetRateNumber, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'WBP_ResultLegend_Sub_NUM_C_SetRateNumber::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_NUM_C_SetRateNumber, CallFunc_Array_Get_Item) == 0x000038, "Member 'WBP_ResultLegend_Sub_NUM_C_SetRateNumber::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_NUM_C_SetRateNumber, CallFunc_Less_IntInt_ReturnValue) == 0x000040, "Member 'WBP_ResultLegend_Sub_NUM_C_SetRateNumber::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ResultLegend_Sub_NUM_C_SetRateNumber;
 
 // Function WBP_ResultLegend_Sub_NUM.WBP_ResultLegend_Sub_NUM_C.SetRateOnce
 // 0x0030 (0x0030 - 0x0000)
@@ -60,14 +62,26 @@ public:
 	double                                        CallFunc_FClamp_ReturnValue;                       // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ResultLegend_Sub_NUM_C_SetRateOnce) == 0x000008, "Wrong alignment on WBP_ResultLegend_Sub_NUM_C_SetRateOnce");
-static_assert(sizeof(WBP_ResultLegend_Sub_NUM_C_SetRateOnce) == 0x000030, "Wrong size on WBP_ResultLegend_Sub_NUM_C_SetRateOnce");
-static_assert(offsetof(WBP_ResultLegend_Sub_NUM_C_SetRateOnce, InRate) == 0x000000, "Member 'WBP_ResultLegend_Sub_NUM_C_SetRateOnce::InRate' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_NUM_C_SetRateOnce, InRateGradeTexture) == 0x000008, "Member 'WBP_ResultLegend_Sub_NUM_C_SetRateOnce::InRateGradeTexture' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_NUM_C_SetRateOnce, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000010, "Member 'WBP_ResultLegend_Sub_NUM_C_SetRateOnce::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_NUM_C_SetRateOnce, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000018, "Member 'WBP_ResultLegend_Sub_NUM_C_SetRateOnce::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_NUM_C_SetRateOnce, CallFunc_FClamp_ReturnValue) == 0x000020, "Member 'WBP_ResultLegend_Sub_NUM_C_SetRateOnce::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_NUM_C_SetRateOnce, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000028, "Member 'WBP_ResultLegend_Sub_NUM_C_SetRateOnce::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ResultLegend_Sub_NUM_C_SetRateOnce;
+
+// Function WBP_ResultLegend_Sub_NUM.WBP_ResultLegend_Sub_NUM_C.SetRateVisibilityForBackground
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_ResultLegend_Sub_NUM_C_SetRateVisibilityForBackground final
+{
+public:
+	int32                                         InRate;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ResultLegend_Sub_NUM_C_SetRateVisibilityForBackground;
 
 }
 

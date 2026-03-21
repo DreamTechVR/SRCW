@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "UNION_structs.hpp"
+#include "UMG_structs.hpp"
 #include "UnionUI_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
-#include "UMG_structs.hpp"
 
 
 namespace SDK::Params
@@ -149,108 +149,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_8;              // 0x01E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess_4;                    // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn) == 0x000008, "Wrong alignment on WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn");
-static_assert(sizeof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn) == 0x0001F8, "Wrong size on WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, EntryPoint) == 0x000000, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_IsValid_ReturnValue) == 0x000014, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_IsValid_ReturnValue_1) == 0x000015, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, K2Node_CreateDelegate_OutputDelegate_1) == 0x000018, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000028, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_IsValid_ReturnValue_2) == 0x000029, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x00002A, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, K2Node_CreateDelegate_OutputDelegate_2) == 0x00002C, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x00003C, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_EqualEqual_ByteByte_ReturnValue_3) == 0x00003D, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_EqualEqual_ByteByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, K2Node_CreateDelegate_OutputDelegate_3) == 0x000040, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_PlayAnimation_ReturnValue) == 0x000050, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, Temp_byte_Variable) == 0x000058, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_PlayAnimation_ReturnValue_1) == 0x000060, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, Temp_byte_Variable_1) == 0x000068, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_PlayAnimation_ReturnValue_2) == 0x000070, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_PlayAnimation_ReturnValue_3) == 0x000078, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_GetIconIdAsInteger_ReturnValue) == 0x000080, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_GetIconIdAsInteger_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_GetText_ReturnValue) == 0x000088, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_GetText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, K2Node_Event_InFocusEvent_1) == 0x000098, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::K2Node_Event_InFocusEvent_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_SoundPlay_ReturnValue) == 0x0000A0, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, K2Node_Event_InFocusEvent) == 0x0000A4, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::K2Node_Event_InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_EqualEqual_ByteByte_ReturnValue_4) == 0x0000AC, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_EqualEqual_ByteByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_GetOwningPlayer_ReturnValue) == 0x0000B0, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, K2Node_DynamicCast_AsApp_Player_Controller) == 0x0000B8, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, K2Node_DynamicCast_bSuccess) == 0x0000C0, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, K2Node_SwitchEnum_CmpSuccess) == 0x0000C1, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_SoundPlay_ReturnValue_1) == 0x0000C4, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_SoundPlay_ReturnValue_2) == 0x0000C8, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_SoundPlay_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_GetOwningPlayer_ReturnValue_1) == 0x0000D0, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_GetOwningPlayer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, K2Node_DynamicCast_AsApp_Player_Controller_1) == 0x0000D8, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::K2Node_DynamicCast_AsApp_Player_Controller_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, K2Node_DynamicCast_bSuccess_1) == 0x0000E0, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_UnregisterMainMenu_ReturnValue) == 0x0000E1, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_UnregisterMainMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, Temp_byte_Variable_2) == 0x0000E2, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_IsValid_ReturnValue_3) == 0x0000E3, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_GetChangeableButtonState_ReturnValue) == 0x0000E4, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_GetChangeableButtonState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_GetContentId_ReturnValue) == 0x0000E5, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_GetContentId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, K2Node_SwitchEnum_CmpSuccess_1) == 0x0000E6, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_GetDonpaTicket_ReturnValue) == 0x0000E8, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_GetDonpaTicket_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_GetNeedsDonpaTicketForRaceRetry_ReturnValue) == 0x0000EC, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_GetNeedsDonpaTicketForRaceRetry_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_Conv_ByteToInt_ReturnValue) == 0x0000F0, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, K2Node_Event_bVisible) == 0x0000F4, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::K2Node_Event_bVisible' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_Less_IntInt_ReturnValue) == 0x0000F5, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_Conv_IntToText_ReturnValue) == 0x0000F8, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_GetInGameGettingRewards_ReturnValue) == 0x000108, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_GetInGameGettingRewards_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_GetInGameGettingRewards_ReturnValue_1) == 0x000118, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_GetInGameGettingRewards_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_Array_Contains_ReturnValue) == 0x000128, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_Array_Contains_ReturnValue_1) == 0x000129, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_Array_Contains_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_Array_Contains_ReturnValue_2) == 0x00012A, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_Array_Contains_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_GetGadgetPlateRankUp_ReturnValue) == 0x00012B, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_GetGadgetPlateRankUp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_GetDonpaTicket_ReturnValue_1) == 0x00012C, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_GetDonpaTicket_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_GetNeedsDonpaTicketForRaceRetry_ReturnValue_1) == 0x000130, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_GetNeedsDonpaTicketForRaceRetry_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x000134, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_Greater_IntInt_ReturnValue) == 0x000138, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, Temp_byte_Variable_3) == 0x000139, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_Array_Contains_ReturnValue_3) == 0x00013A, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_Array_Contains_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_SoundPlay_ReturnValue_3) == 0x00013C, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_SoundPlay_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_UnregisterMainMenu_ReturnValue_1) == 0x000140, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_UnregisterMainMenu_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, Temp_byte_Variable_4) == 0x000141, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_Array_Contains_ReturnValue_4) == 0x000142, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_Array_Contains_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_GetOwningPlayer_ReturnValue_2) == 0x000148, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_GetOwningPlayer_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, Temp_byte_Variable_5) == 0x000150, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, K2Node_DynamicCast_AsApp_Player_Controller_2) == 0x000158, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::K2Node_DynamicCast_AsApp_Player_Controller_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, K2Node_DynamicCast_bSuccess_2) == 0x000160, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_Array_Contains_ReturnValue_5) == 0x000161, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_Array_Contains_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, K2Node_Event_IsDesignTime) == 0x000162, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, Temp_byte_Variable_6) == 0x000163, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::Temp_byte_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, Temp_byte_Variable_7) == 0x000164, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::Temp_byte_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_Array_Contains_ReturnValue_6) == 0x000165, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_Array_Contains_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_Array_Contains_ReturnValue_7) == 0x000166, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_Array_Contains_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_BooleanOR_ReturnValue) == 0x000167, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_BooleanOR_ReturnValue_1) == 0x000168, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_BooleanOR_ReturnValue_2) == 0x000169, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_BooleanOR_ReturnValue_3) == 0x00016A, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_BooleanOR_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_BooleanOR_ReturnValue_4) == 0x00016B, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_BooleanOR_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_BooleanOR_ReturnValue_5) == 0x00016C, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_BooleanOR_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, K2Node_SwitchEnum_CmpSuccess_2) == 0x00016D, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::K2Node_SwitchEnum_CmpSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_BooleanOR_ReturnValue_6) == 0x00016E, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_BooleanOR_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_GetOwningPlayer_ReturnValue_3) == 0x000170, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_GetOwningPlayer_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, K2Node_DynamicCast_AsApp_Player_Controller_3) == 0x000178, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::K2Node_DynamicCast_AsApp_Player_Controller_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, K2Node_DynamicCast_bSuccess_3) == 0x000180, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_PlayAnimation_ReturnValue_4) == 0x000188, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_PlayAnimation_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, Temp_byte_Variable_8) == 0x000190, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::Temp_byte_Variable_8' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_GetChangeableButtonState_ReturnValue_1) == 0x000191, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_GetChangeableButtonState_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, Temp_byte_Variable_9) == 0x000192, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::Temp_byte_Variable_9' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_PlayAnimation_ReturnValue_5) == 0x000198, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_PlayAnimation_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, Temp_bool_Variable) == 0x0001A0, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, K2Node_Select_Default) == 0x0001A1, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, K2Node_SwitchEnum_CmpSuccess_3) == 0x0001A2, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::K2Node_SwitchEnum_CmpSuccess_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, K2Node_CreateDelegate_OutputDelegate_4) == 0x0001A4, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_CreatePlayAnimationProxyObject_Result) == 0x0001B8, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_CreatePlayAnimationProxyObject_Result' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_CreatePlayAnimationProxyObject_ReturnValue) == 0x0001C0, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_CreatePlayAnimationProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_IsValid_ReturnValue_4) == 0x0001C8, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_IsValid_ReturnValue_5) == 0x0001C9, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_PlayAnimation_ReturnValue_6) == 0x0001D0, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_PlayAnimation_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_PlayAnimation_ReturnValue_7) == 0x0001D8, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_PlayAnimation_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_IsValid_ReturnValue_6) == 0x0001E0, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, CallFunc_PlayAnimation_ReturnValue_8) == 0x0001E8, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::CallFunc_PlayAnimation_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn, K2Node_SwitchEnum_CmpSuccess_4) == 0x0001F0, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn::K2Node_SwitchEnum_CmpSuccess_4' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_RaceMenu_Sub_Btn_C_ExecuteUbergraph_WBP_CMN_RaceMenu_Sub_Btn;
 
 // Function WBP_CMN_RaceMenu_Sub_Btn.WBP_CMN_RaceMenu_Sub_Btn_C.OnFocusBegin
 // 0x0008 (0x0008 - 0x0000)
@@ -259,9 +158,7 @@ struct WBP_CMN_RaceMenu_Sub_Btn_C_OnFocusBegin final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(WBP_CMN_RaceMenu_Sub_Btn_C_OnFocusBegin) == 0x000004, "Wrong alignment on WBP_CMN_RaceMenu_Sub_Btn_C_OnFocusBegin");
-static_assert(sizeof(WBP_CMN_RaceMenu_Sub_Btn_C_OnFocusBegin) == 0x000008, "Wrong size on WBP_CMN_RaceMenu_Sub_Btn_C_OnFocusBegin");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_OnFocusBegin, InFocusEvent) == 0x000000, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_OnFocusBegin::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_RaceMenu_Sub_Btn_C_OnFocusBegin;
 
 // Function WBP_CMN_RaceMenu_Sub_Btn.WBP_CMN_RaceMenu_Sub_Btn_C.OnFocusEnd
 // 0x0008 (0x0008 - 0x0000)
@@ -270,9 +167,7 @@ struct WBP_CMN_RaceMenu_Sub_Btn_C_OnFocusEnd final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(WBP_CMN_RaceMenu_Sub_Btn_C_OnFocusEnd) == 0x000004, "Wrong alignment on WBP_CMN_RaceMenu_Sub_Btn_C_OnFocusEnd");
-static_assert(sizeof(WBP_CMN_RaceMenu_Sub_Btn_C_OnFocusEnd) == 0x000008, "Wrong size on WBP_CMN_RaceMenu_Sub_Btn_C_OnFocusEnd");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_OnFocusEnd, InFocusEvent) == 0x000000, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_OnFocusEnd::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_RaceMenu_Sub_Btn_C_OnFocusEnd;
 
 // Function WBP_CMN_RaceMenu_Sub_Btn.WBP_CMN_RaceMenu_Sub_Btn_C.PlayOutAnim
 // 0x0020 (0x0020 - 0x0000)
@@ -287,13 +182,7 @@ public:
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidgetAnimation*                       K2Node_Select_Default;                             // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_RaceMenu_Sub_Btn_C_PlayOutAnim) == 0x000008, "Wrong alignment on WBP_CMN_RaceMenu_Sub_Btn_C_PlayOutAnim");
-static_assert(sizeof(WBP_CMN_RaceMenu_Sub_Btn_C_PlayOutAnim) == 0x000020, "Wrong size on WBP_CMN_RaceMenu_Sub_Btn_C_PlayOutAnim");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_PlayOutAnim, Temp_byte_Variable) == 0x000000, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_PlayOutAnim::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_PlayOutAnim, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000001, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_PlayOutAnim::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_PlayOutAnim, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_PlayOutAnim::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_PlayOutAnim, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_PlayOutAnim::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_PlayOutAnim, K2Node_Select_Default) == 0x000018, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_PlayOutAnim::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_RaceMenu_Sub_Btn_C_PlayOutAnim;
 
 // Function WBP_CMN_RaceMenu_Sub_Btn.WBP_CMN_RaceMenu_Sub_Btn_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -302,9 +191,7 @@ struct WBP_CMN_RaceMenu_Sub_Btn_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_RaceMenu_Sub_Btn_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_CMN_RaceMenu_Sub_Btn_C_PreConstruct");
-static_assert(sizeof(WBP_CMN_RaceMenu_Sub_Btn_C_PreConstruct) == 0x000001, "Wrong size on WBP_CMN_RaceMenu_Sub_Btn_C_PreConstruct");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_RaceMenu_Sub_Btn_C_PreConstruct;
 
 // Function WBP_CMN_RaceMenu_Sub_Btn.WBP_CMN_RaceMenu_Sub_Btn_C.SetAccept
 // 0x0028 (0x0028 - 0x0000)
@@ -321,15 +208,7 @@ public:
 	class UWBP_CMN_RaceMenu_Sub_Btn_C*            CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_RaceMenu_Sub_Btn_C_SetAccept) == 0x000008, "Wrong alignment on WBP_CMN_RaceMenu_Sub_Btn_C_SetAccept");
-static_assert(sizeof(WBP_CMN_RaceMenu_Sub_Btn_C_SetAccept) == 0x000028, "Wrong size on WBP_CMN_RaceMenu_Sub_Btn_C_SetAccept");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_SetAccept, Is) == 0x000000, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_SetAccept::Is' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_SetAccept, Temp_int_Array_Index_Variable) == 0x000004, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_SetAccept::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_SetAccept, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_SetAccept::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_SetAccept, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_SetAccept::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_SetAccept, CallFunc_Array_Length_ReturnValue) == 0x000010, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_SetAccept::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_SetAccept, CallFunc_Array_Get_Item) == 0x000018, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_SetAccept::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_SetAccept, CallFunc_Less_IntInt_ReturnValue) == 0x000020, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_SetAccept::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_RaceMenu_Sub_Btn_C_SetAccept;
 
 // Function WBP_CMN_RaceMenu_Sub_Btn.WBP_CMN_RaceMenu_Sub_Btn_C.SetAcceptKeyIgnored
 // 0x0001 (0x0001 - 0x0000)
@@ -338,9 +217,7 @@ struct WBP_CMN_RaceMenu_Sub_Btn_C_SetAcceptKeyIgnored final
 public:
 	bool                                          Value;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_RaceMenu_Sub_Btn_C_SetAcceptKeyIgnored) == 0x000001, "Wrong alignment on WBP_CMN_RaceMenu_Sub_Btn_C_SetAcceptKeyIgnored");
-static_assert(sizeof(WBP_CMN_RaceMenu_Sub_Btn_C_SetAcceptKeyIgnored) == 0x000001, "Wrong size on WBP_CMN_RaceMenu_Sub_Btn_C_SetAcceptKeyIgnored");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_SetAcceptKeyIgnored, Value) == 0x000000, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_SetAcceptKeyIgnored::Value' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_RaceMenu_Sub_Btn_C_SetAcceptKeyIgnored;
 
 // Function WBP_CMN_RaceMenu_Sub_Btn.WBP_CMN_RaceMenu_Sub_Btn_C.SetBtnColorIndex
 // 0x0020 (0x0020 - 0x0000)
@@ -353,12 +230,7 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_RaceMenu_Sub_Btn_C_SetBtnColorIndex) == 0x000008, "Wrong alignment on WBP_CMN_RaceMenu_Sub_Btn_C_SetBtnColorIndex");
-static_assert(sizeof(WBP_CMN_RaceMenu_Sub_Btn_C_SetBtnColorIndex) == 0x000020, "Wrong size on WBP_CMN_RaceMenu_Sub_Btn_C_SetBtnColorIndex");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_SetBtnColorIndex, InIndex) == 0x000000, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_SetBtnColorIndex::InIndex' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_SetBtnColorIndex, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000008, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_SetBtnColorIndex::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_SetBtnColorIndex, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000010, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_SetBtnColorIndex::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_SetBtnColorIndex, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000018, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_SetBtnColorIndex::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_RaceMenu_Sub_Btn_C_SetBtnColorIndex;
 
 // Function WBP_CMN_RaceMenu_Sub_Btn.WBP_CMN_RaceMenu_Sub_Btn_C.SetBtnPictIndex
 // 0x0020 (0x0020 - 0x0000)
@@ -371,12 +243,7 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_RaceMenu_Sub_Btn_C_SetBtnPictIndex) == 0x000008, "Wrong alignment on WBP_CMN_RaceMenu_Sub_Btn_C_SetBtnPictIndex");
-static_assert(sizeof(WBP_CMN_RaceMenu_Sub_Btn_C_SetBtnPictIndex) == 0x000020, "Wrong size on WBP_CMN_RaceMenu_Sub_Btn_C_SetBtnPictIndex");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_SetBtnPictIndex, InEndMenuBtnPictIndex) == 0x000000, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_SetBtnPictIndex::InEndMenuBtnPictIndex' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_SetBtnPictIndex, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000008, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_SetBtnPictIndex::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_SetBtnPictIndex, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000010, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_SetBtnPictIndex::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_SetBtnPictIndex, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000018, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_SetBtnPictIndex::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_RaceMenu_Sub_Btn_C_SetBtnPictIndex;
 
 // Function WBP_CMN_RaceMenu_Sub_Btn.WBP_CMN_RaceMenu_Sub_Btn_C.SetButtonText
 // 0x0010 (0x0010 - 0x0000)
@@ -385,9 +252,7 @@ struct WBP_CMN_RaceMenu_Sub_Btn_C_SetButtonText final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_CMN_RaceMenu_Sub_Btn_C_SetButtonText) == 0x000008, "Wrong alignment on WBP_CMN_RaceMenu_Sub_Btn_C_SetButtonText");
-static_assert(sizeof(WBP_CMN_RaceMenu_Sub_Btn_C_SetButtonText) == 0x000010, "Wrong size on WBP_CMN_RaceMenu_Sub_Btn_C_SetButtonText");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_SetButtonText, InText) == 0x000000, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_SetButtonText::InText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_RaceMenu_Sub_Btn_C_SetButtonText;
 
 // Function WBP_CMN_RaceMenu_Sub_Btn.WBP_CMN_RaceMenu_Sub_Btn_C.SetNewIconVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -396,9 +261,7 @@ struct WBP_CMN_RaceMenu_Sub_Btn_C_SetNewIconVisible final
 public:
 	bool                                          bVisible;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_RaceMenu_Sub_Btn_C_SetNewIconVisible) == 0x000001, "Wrong alignment on WBP_CMN_RaceMenu_Sub_Btn_C_SetNewIconVisible");
-static_assert(sizeof(WBP_CMN_RaceMenu_Sub_Btn_C_SetNewIconVisible) == 0x000001, "Wrong size on WBP_CMN_RaceMenu_Sub_Btn_C_SetNewIconVisible");
-static_assert(offsetof(WBP_CMN_RaceMenu_Sub_Btn_C_SetNewIconVisible, bVisible) == 0x000000, "Member 'WBP_CMN_RaceMenu_Sub_Btn_C_SetNewIconVisible::bVisible' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_RaceMenu_Sub_Btn_C_SetNewIconVisible;
 
 }
 

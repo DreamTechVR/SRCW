@@ -50,32 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Friend_Sub_FairPlayGauge_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Friend_Sub_FairPlayGauge_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Friend_Sub_FairPlayGauge_C")
 	}
 	static class UWBP_Friend_Sub_FairPlayGauge_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Friend_Sub_FairPlayGauge_C>();
 	}
 };
-static_assert(alignof(UWBP_Friend_Sub_FairPlayGauge_C) == 0x000008, "Wrong alignment on UWBP_Friend_Sub_FairPlayGauge_C");
-static_assert(sizeof(UWBP_Friend_Sub_FairPlayGauge_C) == 0x000390, "Wrong size on UWBP_Friend_Sub_FairPlayGauge_C");
-static_assert(offsetof(UWBP_Friend_Sub_FairPlayGauge_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Friend_Sub_FairPlayGauge_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_FairPlayGauge_C, base) == 0x0002E8, "Member 'UWBP_Friend_Sub_FairPlayGauge_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_FairPlayGauge_C, Frame) == 0x0002F0, "Member 'UWBP_Friend_Sub_FairPlayGauge_C::Frame' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_FairPlayGauge_C, MarkBlue) == 0x0002F8, "Member 'UWBP_Friend_Sub_FairPlayGauge_C::MarkBlue' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_FairPlayGauge_C, MarkRed_Base) == 0x000300, "Member 'UWBP_Friend_Sub_FairPlayGauge_C::MarkRed_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_FairPlayGauge_C, MarkRed_Blink) == 0x000308, "Member 'UWBP_Friend_Sub_FairPlayGauge_C::MarkRed_Blink' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_FairPlayGauge_C, MarkYellow_Base) == 0x000310, "Member 'UWBP_Friend_Sub_FairPlayGauge_C::MarkYellow_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_FairPlayGauge_C, MarkYellow_Blink) == 0x000318, "Member 'UWBP_Friend_Sub_FairPlayGauge_C::MarkYellow_Blink' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_FairPlayGauge_C, MLC_BarGauge) == 0x000320, "Member 'UWBP_Friend_Sub_FairPlayGauge_C::MLC_BarGauge' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_FairPlayGauge_C, TXT_NumPoint) == 0x000328, "Member 'UWBP_Friend_Sub_FairPlayGauge_C::TXT_NumPoint' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_FairPlayGauge_C, TXT_NumPoint_Now) == 0x000330, "Member 'UWBP_Friend_Sub_FairPlayGauge_C::TXT_NumPoint_Now' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_FairPlayGauge_C, WidgetSwitcher_Mark) == 0x000338, "Member 'UWBP_Friend_Sub_FairPlayGauge_C::WidgetSwitcher_Mark' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_FairPlayGauge_C, NumberSeparator) == 0x000340, "Member 'UWBP_Friend_Sub_FairPlayGauge_C::NumberSeparator' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_FairPlayGauge_C, GaugeColorBlue) == 0x000350, "Member 'UWBP_Friend_Sub_FairPlayGauge_C::GaugeColorBlue' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_FairPlayGauge_C, GaugeColorYellow) == 0x000360, "Member 'UWBP_Friend_Sub_FairPlayGauge_C::GaugeColorYellow' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_FairPlayGauge_C, GaugeColorRed) == 0x000370, "Member 'UWBP_Friend_Sub_FairPlayGauge_C::GaugeColorRed' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_FairPlayGauge_C, ColorBorderPoint) == 0x000380, "Member 'UWBP_Friend_Sub_FairPlayGauge_C::ColorBorderPoint' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Friend_Sub_FairPlayGauge_C;
 
 }
 

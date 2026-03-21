@@ -21,8 +21,7 @@ namespace SDK
 struct ABP_Blaze_Driver::FAnimBlueprintGeneratedConstantData final : public ABPT_Driver::FAnimBlueprintGeneratedConstantData
 {
 };
-static_assert(alignof(ABP_Blaze_Driver::FAnimBlueprintGeneratedConstantData) == 0x000008, "Wrong alignment on ABP_Blaze_Driver::FAnimBlueprintGeneratedConstantData");
-static_assert(sizeof(ABP_Blaze_Driver::FAnimBlueprintGeneratedConstantData) == 0x002D10, "Wrong size on ABP_Blaze_Driver::FAnimBlueprintGeneratedConstantData");
+DUMPER7_ASSERTS_ABP_Blaze_Driver__FAnimBlueprintGeneratedConstantData;
 
 }
 

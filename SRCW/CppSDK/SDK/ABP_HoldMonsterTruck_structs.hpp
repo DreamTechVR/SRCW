@@ -55,45 +55,7 @@ public:
 	struct FAnimNodeExposedValueHandler_PropertyAccess AnimGraphNode_StateResult;                    // 0x02E0(0x0030)()
 	struct FAnimNodeExposedValueHandler_PropertyAccess AnimGraphNode_StateMachine;                   // 0x0310(0x0030)()
 };
-static_assert(alignof(ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData) == 0x000008, "Wrong alignment on ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData");
-static_assert(sizeof(ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData) == 0x000340, "Wrong size on ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData");
-static_assert(offsetof(ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData, __NameProperty_55) == 0x000004, "Member 'ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData::__NameProperty_55' has a wrong offset!");
-static_assert(offsetof(ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData, __NameProperty_56) == 0x00000C, "Member 'ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData::__NameProperty_56' has a wrong offset!");
-static_assert(offsetof(ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData, __IntProperty_57) == 0x000014, "Member 'ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData::__IntProperty_57' has a wrong offset!");
-static_assert(offsetof(ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData, __BoolProperty_58) == 0x000018, "Member 'ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData::__BoolProperty_58' has a wrong offset!");
-static_assert(offsetof(ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData, __NameProperty_59) == 0x00001C, "Member 'ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData::__NameProperty_59' has a wrong offset!");
-static_assert(offsetof(ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData, __IntProperty_60) == 0x000024, "Member 'ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData::__IntProperty_60' has a wrong offset!");
-static_assert(offsetof(ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData, __FloatProperty_61) == 0x000028, "Member 'ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData::__FloatProperty_61' has a wrong offset!");
-static_assert(offsetof(ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData, __StructProperty_62) == 0x00002C, "Member 'ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData::__StructProperty_62' has a wrong offset!");
-static_assert(offsetof(ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData, __FloatProperty_63) == 0x000058, "Member 'ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData::__FloatProperty_63' has a wrong offset!");
-static_assert(offsetof(ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData, __BoolProperty_64) == 0x00005C, "Member 'ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData::__BoolProperty_64' has a wrong offset!");
-static_assert(offsetof(ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData, __EnumProperty_65) == 0x00005D, "Member 'ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData::__EnumProperty_65' has a wrong offset!");
-static_assert(offsetof(ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData, __ByteProperty_66) == 0x00005E, "Member 'ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData::__ByteProperty_66' has a wrong offset!");
-static_assert(offsetof(ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData, __NameProperty_67) == 0x000060, "Member 'ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData::__NameProperty_67' has a wrong offset!");
-static_assert(offsetof(ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData, __NameProperty_68) == 0x000068, "Member 'ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData::__NameProperty_68' has a wrong offset!");
-static_assert(offsetof(ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData, __NameProperty_69) == 0x000070, "Member 'ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData::__NameProperty_69' has a wrong offset!");
-static_assert(offsetof(ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData, __IntProperty_70) == 0x000078, "Member 'ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData::__IntProperty_70' has a wrong offset!");
-static_assert(offsetof(ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData, __StructProperty_71) == 0x000080, "Member 'ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData::__StructProperty_71' has a wrong offset!");
-static_assert(offsetof(ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData, AnimBlueprintExtension_PropertyAccess) == 0x0000A0, "Member 'ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData::AnimBlueprintExtension_PropertyAccess' has a wrong offset!");
-static_assert(offsetof(ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData, AnimBlueprintExtension_Base) == 0x000120, "Member 'ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData::AnimBlueprintExtension_Base' has a wrong offset!");
-static_assert(offsetof(ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData, AnimGraphNode_Root) == 0x000160, "Member 'ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData::AnimGraphNode_Root' has a wrong offset!");
-static_assert(offsetof(ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData, AnimGraphNode_TransitionResult_2) == 0x000190, "Member 'ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData::AnimGraphNode_TransitionResult_2' has a wrong offset!");
-static_assert(offsetof(ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData, AnimGraphNode_TransitionResult_1) == 0x0001C0, "Member 'ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData::AnimGraphNode_TransitionResult_1' has a wrong offset!");
-static_assert(offsetof(ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData, AnimGraphNode_TransitionResult) == 0x0001F0, "Member 'ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData::AnimGraphNode_TransitionResult' has a wrong offset!");
-static_assert(offsetof(ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData, AnimGraphNode_StateResult_2) == 0x000220, "Member 'ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData::AnimGraphNode_StateResult_2' has a wrong offset!");
-static_assert(offsetof(ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData, AnimGraphNode_SequencePlayer_1) == 0x000250, "Member 'ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData::AnimGraphNode_SequencePlayer_1' has a wrong offset!");
-static_assert(offsetof(ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData, AnimGraphNode_StateResult_1) == 0x000280, "Member 'ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData::AnimGraphNode_StateResult_1' has a wrong offset!");
-static_assert(offsetof(ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData, AnimGraphNode_SequencePlayer) == 0x0002B0, "Member 'ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData::AnimGraphNode_SequencePlayer' has a wrong offset!");
-static_assert(offsetof(ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData, AnimGraphNode_StateResult) == 0x0002E0, "Member 'ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData::AnimGraphNode_StateResult' has a wrong offset!");
-static_assert(offsetof(ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData, AnimGraphNode_StateMachine) == 0x000310, "Member 'ABP_HoldMonsterTruck::FAnimBlueprintGeneratedConstantData::AnimGraphNode_StateMachine' has a wrong offset!");
-
-// ScriptStruct ABP_HoldMonsterTruck.ABP_HoldMonsterTruck_C.AnimBlueprintGeneratedMutableData
-// 0x0000 (0x0001 - 0x0001)
-struct ABP_HoldMonsterTruck::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
-{
-};
-static_assert(alignof(ABP_HoldMonsterTruck::FAnimBlueprintGeneratedMutableData) == 0x000001, "Wrong alignment on ABP_HoldMonsterTruck::FAnimBlueprintGeneratedMutableData");
-static_assert(sizeof(ABP_HoldMonsterTruck::FAnimBlueprintGeneratedMutableData) == 0x000001, "Wrong size on ABP_HoldMonsterTruck::FAnimBlueprintGeneratedMutableData");
+DUMPER7_ASSERTS_ABP_HoldMonsterTruck__FAnimBlueprintGeneratedConstantData;
 
 }
 

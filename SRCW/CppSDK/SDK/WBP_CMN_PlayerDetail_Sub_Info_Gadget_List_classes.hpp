@@ -39,22 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C")
 	}
 	static class UWBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C) == 0x000008, "Wrong alignment on UWBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C");
-static_assert(sizeof(UWBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C) == 0x000318, "Wrong size on UWBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C, Base_Empty) == 0x0002E0, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C::Base_Empty' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C, Base_Frame) == 0x0002E8, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C::Base_Frame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C, Base_Lock) == 0x0002F0, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C::Base_Lock' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C, Base_On) == 0x0002F8, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C::Base_On' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C, WBP_FontScroll_GadgetName) == 0x000300, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C::WBP_FontScroll_GadgetName' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C, WBP_GadgetIcon) == 0x000308, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C::WBP_GadgetIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C, WS_List) == 0x000310, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C::WS_List' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C;
 
 }
 

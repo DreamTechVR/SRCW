@@ -38,15 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TraceUtilLibrary">();
+		STATIC_CLASS_IMPL("TraceUtilLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TraceUtilLibrary")
 	}
 	static class UTraceUtilLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTraceUtilLibrary>();
 	}
 };
-static_assert(alignof(UTraceUtilLibrary) == 0x000008, "Wrong alignment on UTraceUtilLibrary");
-static_assert(sizeof(UTraceUtilLibrary) == 0x000028, "Wrong size on UTraceUtilLibrary");
+DUMPER7_ASSERTS_UTraceUtilLibrary;
 
 }
 

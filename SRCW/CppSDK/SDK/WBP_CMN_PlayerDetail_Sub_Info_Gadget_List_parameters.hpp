@@ -28,12 +28,7 @@ public:
 	struct FGadgetData                            CallFunc_GetGadgetData_OutGadgetData;              // 0x0008(0x00C0)()
 	bool                                          CallFunc_GetGadgetData_ReturnValue;                // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C_SetGadgetData) == 0x000008, "Wrong alignment on WBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C_SetGadgetData");
-static_assert(sizeof(WBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C_SetGadgetData) == 0x0000D0, "Wrong size on WBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C_SetGadgetData");
-static_assert(offsetof(WBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C_SetGadgetData, InGadgetId) == 0x000000, "Member 'WBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C_SetGadgetData::InGadgetId' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C_SetGadgetData, bIsDisable) == 0x000001, "Member 'WBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C_SetGadgetData::bIsDisable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C_SetGadgetData, CallFunc_GetGadgetData_OutGadgetData) == 0x000008, "Member 'WBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C_SetGadgetData::CallFunc_GetGadgetData_OutGadgetData' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C_SetGadgetData, CallFunc_GetGadgetData_ReturnValue) == 0x0000C8, "Member 'WBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C_SetGadgetData::CallFunc_GetGadgetData_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C_SetGadgetData;
 
 }
 

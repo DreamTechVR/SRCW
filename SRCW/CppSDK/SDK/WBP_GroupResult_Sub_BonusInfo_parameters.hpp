@@ -28,14 +28,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GroupResult_Sub_BonusInfo_C_ExecuteUbergraph_WBP_GroupResult_Sub_BonusInfo) == 0x000008, "Wrong alignment on WBP_GroupResult_Sub_BonusInfo_C_ExecuteUbergraph_WBP_GroupResult_Sub_BonusInfo");
-static_assert(sizeof(WBP_GroupResult_Sub_BonusInfo_C_ExecuteUbergraph_WBP_GroupResult_Sub_BonusInfo) == 0x000038, "Wrong size on WBP_GroupResult_Sub_BonusInfo_C_ExecuteUbergraph_WBP_GroupResult_Sub_BonusInfo");
-static_assert(offsetof(WBP_GroupResult_Sub_BonusInfo_C_ExecuteUbergraph_WBP_GroupResult_Sub_BonusInfo, EntryPoint) == 0x000000, "Member 'WBP_GroupResult_Sub_BonusInfo_C_ExecuteUbergraph_WBP_GroupResult_Sub_BonusInfo::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_GroupResult_Sub_BonusInfo_C_ExecuteUbergraph_WBP_GroupResult_Sub_BonusInfo, CallFunc_SoundPlay_ReturnValue) == 0x000004, "Member 'WBP_GroupResult_Sub_BonusInfo_C_ExecuteUbergraph_WBP_GroupResult_Sub_BonusInfo::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupResult_Sub_BonusInfo_C_ExecuteUbergraph_WBP_GroupResult_Sub_BonusInfo, K2Node_CustomEvent_Title) == 0x000008, "Member 'WBP_GroupResult_Sub_BonusInfo_C_ExecuteUbergraph_WBP_GroupResult_Sub_BonusInfo::K2Node_CustomEvent_Title' has a wrong offset!");
-static_assert(offsetof(WBP_GroupResult_Sub_BonusInfo_C_ExecuteUbergraph_WBP_GroupResult_Sub_BonusInfo, K2Node_CustomEvent_Detail) == 0x000018, "Member 'WBP_GroupResult_Sub_BonusInfo_C_ExecuteUbergraph_WBP_GroupResult_Sub_BonusInfo::K2Node_CustomEvent_Detail' has a wrong offset!");
-static_assert(offsetof(WBP_GroupResult_Sub_BonusInfo_C_ExecuteUbergraph_WBP_GroupResult_Sub_BonusInfo, CallFunc_PlayAnimation_ReturnValue) == 0x000028, "Member 'WBP_GroupResult_Sub_BonusInfo_C_ExecuteUbergraph_WBP_GroupResult_Sub_BonusInfo::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupResult_Sub_BonusInfo_C_ExecuteUbergraph_WBP_GroupResult_Sub_BonusInfo, CallFunc_PlayAnimation_ReturnValue_1) == 0x000030, "Member 'WBP_GroupResult_Sub_BonusInfo_C_ExecuteUbergraph_WBP_GroupResult_Sub_BonusInfo::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GroupResult_Sub_BonusInfo_C_ExecuteUbergraph_WBP_GroupResult_Sub_BonusInfo;
 
 // Function WBP_GroupResult_Sub_BonusInfo.WBP_GroupResult_Sub_BonusInfo_C.Open
 // 0x0020 (0x0020 - 0x0000)
@@ -45,10 +38,7 @@ public:
 	class FText                                   Title;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 	class FText                                   Detail;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_GroupResult_Sub_BonusInfo_C_Open) == 0x000008, "Wrong alignment on WBP_GroupResult_Sub_BonusInfo_C_Open");
-static_assert(sizeof(WBP_GroupResult_Sub_BonusInfo_C_Open) == 0x000020, "Wrong size on WBP_GroupResult_Sub_BonusInfo_C_Open");
-static_assert(offsetof(WBP_GroupResult_Sub_BonusInfo_C_Open, Title) == 0x000000, "Member 'WBP_GroupResult_Sub_BonusInfo_C_Open::Title' has a wrong offset!");
-static_assert(offsetof(WBP_GroupResult_Sub_BonusInfo_C_Open, Detail) == 0x000010, "Member 'WBP_GroupResult_Sub_BonusInfo_C_Open::Detail' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GroupResult_Sub_BonusInfo_C_Open;
 
 }
 

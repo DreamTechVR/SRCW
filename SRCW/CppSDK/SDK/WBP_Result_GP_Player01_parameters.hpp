@@ -80,53 +80,7 @@ public:
 	double                                        CallFunc_GreaterEqual_DoubleDouble_A_ImplicitCast; // 0x01A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Greater_DoubleDouble_B_ImplicitCast;      // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01) == 0x000008, "Wrong alignment on WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01");
-static_assert(sizeof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01) == 0x0001B0, "Wrong size on WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, EntryPoint) == 0x000000, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, K2Node_CustomEvent_FinishedResultStateId) == 0x000024, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::K2Node_CustomEvent_FinishedResultStateId' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, K2Node_Event_MyGeometry) == 0x000028, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, K2Node_Event_InDeltaTime) == 0x000060, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, K2Node_Event_IsDesignTime) == 0x000064, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, K2Node_Event_RacerCount) == 0x000068, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::K2Node_Event_RacerCount' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, K2Node_CustomEvent_InRateRank) == 0x00006C, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::K2Node_CustomEvent_InRateRank' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, K2Node_MakeStruct_RewardGetWindowParam) == 0x000070, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::K2Node_MakeStruct_RewardGetWindowParam' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, CallFunc_MakeLiteralText_ReturnValue) == 0x000080, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, CallFunc_MakeLiteralText_ReturnValue_1) == 0x000090, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, CallFunc_MakeLiteralText_ReturnValue_2) == 0x0000A0, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::CallFunc_MakeLiteralText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, CallFunc_SpawnObject_ReturnValue) == 0x0000B0, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, CallFunc_GetPlayerController_ReturnValue) == 0x0000B8, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, CallFunc_MakeLiteralByte_ReturnValue) == 0x0000C0, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, CallFunc_Conv_ByteToInt_ReturnValue) == 0x0000C4, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0000C8, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, CallFunc_IsTipsState_result) == 0x0000C9, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::CallFunc_IsTipsState_result' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, K2Node_CreateDelegate_OutputDelegate_2) == 0x0000CC, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, CallFunc_IsRewardDispComplete_bIsComplete) == 0x0000DC, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::CallFunc_IsRewardDispComplete_bIsComplete' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, K2Node_CreateDelegate_OutputDelegate_3) == 0x0000E0, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, CallFunc_IsValidSoftObjectReference_ReturnValue) == 0x0000F0, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::CallFunc_IsValidSoftObjectReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, CallFunc_Add_DoubleDouble_ReturnValue) == 0x0000F8, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x000100, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, K2Node_DynamicCast_As_____2D) == 0x000108, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, K2Node_DynamicCast_bSuccess) == 0x000110, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue) == 0x000118, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, CallFunc_IsRewardDispComplete_bIsComplete_1) == 0x000128, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::CallFunc_IsRewardDispComplete_bIsComplete_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, CallFunc_GetResultRankingForcePressedTime_ReturnValue) == 0x00012C, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::CallFunc_GetResultRankingForcePressedTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, CallFunc_Create_ReturnValue) == 0x000130, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, CallFunc_Greater_DoubleDouble_ReturnValue) == 0x000138, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::CallFunc_Greater_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, CallFunc_GreaterEqual_DoubleDouble_ReturnValue) == 0x000139, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::CallFunc_GreaterEqual_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, CallFunc_MakeLiteralByte_ReturnValue_1) == 0x00013A, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::CallFunc_MakeLiteralByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, K2Node_CustomEvent_Object) == 0x000140, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::K2Node_CustomEvent_Object' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x000148, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, K2Node_MakeStruct_RewardGetWindowParam_1) == 0x00014C, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::K2Node_MakeStruct_RewardGetWindowParam_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, CallFunc_GetOwningPlayer_ReturnValue) == 0x000160, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, K2Node_MakeArray_Array) == 0x000168, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000178, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, K2Node_DynamicCast_bSuccess_1) == 0x000180, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, K2Node_CreateDelegate_OutputDelegate_4) == 0x000184, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, CallFunc_Add_DoubleDouble_A_ImplicitCast) == 0x000198, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::CallFunc_Add_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, CallFunc_GreaterEqual_DoubleDouble_A_ImplicitCast) == 0x0001A0, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::CallFunc_GreaterEqual_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01, CallFunc_Greater_DoubleDouble_B_ImplicitCast) == 0x0001A8, "Member 'WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01::CallFunc_Greater_DoubleDouble_B_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_GP_Player01_C_ExecuteUbergraph_WBP_Result_GP_Player01;
 
 // Function WBP_Result_GP_Player01.WBP_Result_GP_Player01_C.GetResultLinesPanel
 // 0x0008 (0x0008 - 0x0000)
@@ -135,9 +89,7 @@ struct WBP_Result_GP_Player01_C_GetResultLinesPanel final
 public:
 	class UUnionRaceUIResultPanel*                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_GP_Player01_C_GetResultLinesPanel) == 0x000008, "Wrong alignment on WBP_Result_GP_Player01_C_GetResultLinesPanel");
-static_assert(sizeof(WBP_Result_GP_Player01_C_GetResultLinesPanel) == 0x000008, "Wrong size on WBP_Result_GP_Player01_C_GetResultLinesPanel");
-static_assert(offsetof(WBP_Result_GP_Player01_C_GetResultLinesPanel, ReturnValue) == 0x000000, "Member 'WBP_Result_GP_Player01_C_GetResultLinesPanel::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_GP_Player01_C_GetResultLinesPanel;
 
 // Function WBP_Result_GP_Player01.WBP_Result_GP_Player01_C.IsPartyRaceMissionExists
 // 0x0001 (0x0001 - 0x0000)
@@ -146,9 +98,7 @@ struct WBP_Result_GP_Player01_C_IsPartyRaceMissionExists final
 public:
 	bool                                          Exists;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_GP_Player01_C_IsPartyRaceMissionExists) == 0x000001, "Wrong alignment on WBP_Result_GP_Player01_C_IsPartyRaceMissionExists");
-static_assert(sizeof(WBP_Result_GP_Player01_C_IsPartyRaceMissionExists) == 0x000001, "Wrong size on WBP_Result_GP_Player01_C_IsPartyRaceMissionExists");
-static_assert(offsetof(WBP_Result_GP_Player01_C_IsPartyRaceMissionExists, Exists) == 0x000000, "Member 'WBP_Result_GP_Player01_C_IsPartyRaceMissionExists::Exists' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_GP_Player01_C_IsPartyRaceMissionExists;
 
 // Function WBP_Result_GP_Player01.WBP_Result_GP_Player01_C.OnAcceptButton
 // 0x0008 (0x0008 - 0x0000)
@@ -157,9 +107,7 @@ struct WBP_Result_GP_Player01_C_OnAcceptButton final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_GP_Player01_C_OnAcceptButton) == 0x000008, "Wrong alignment on WBP_Result_GP_Player01_C_OnAcceptButton");
-static_assert(sizeof(WBP_Result_GP_Player01_C_OnAcceptButton) == 0x000008, "Wrong size on WBP_Result_GP_Player01_C_OnAcceptButton");
-static_assert(offsetof(WBP_Result_GP_Player01_C_OnAcceptButton, Object) == 0x000000, "Member 'WBP_Result_GP_Player01_C_OnAcceptButton::Object' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_GP_Player01_C_OnAcceptButton;
 
 // Function WBP_Result_GP_Player01.WBP_Result_GP_Player01_C.OnFinishedResultAnim
 // 0x0004 (0x0004 - 0x0000)
@@ -168,9 +116,7 @@ struct WBP_Result_GP_Player01_C_OnFinishedResultAnim final
 public:
 	int32                                         FinishedResultStateId;                             // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_GP_Player01_C_OnFinishedResultAnim) == 0x000004, "Wrong alignment on WBP_Result_GP_Player01_C_OnFinishedResultAnim");
-static_assert(sizeof(WBP_Result_GP_Player01_C_OnFinishedResultAnim) == 0x000004, "Wrong size on WBP_Result_GP_Player01_C_OnFinishedResultAnim");
-static_assert(offsetof(WBP_Result_GP_Player01_C_OnFinishedResultAnim, FinishedResultStateId) == 0x000000, "Member 'WBP_Result_GP_Player01_C_OnFinishedResultAnim::FinishedResultStateId' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_GP_Player01_C_OnFinishedResultAnim;
 
 // Function WBP_Result_GP_Player01.WBP_Result_GP_Player01_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -179,9 +125,7 @@ struct WBP_Result_GP_Player01_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_GP_Player01_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_Result_GP_Player01_C_PreConstruct");
-static_assert(sizeof(WBP_Result_GP_Player01_C_PreConstruct) == 0x000001, "Wrong size on WBP_Result_GP_Player01_C_PreConstruct");
-static_assert(offsetof(WBP_Result_GP_Player01_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_Result_GP_Player01_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_GP_Player01_C_PreConstruct;
 
 // Function WBP_Result_GP_Player01.WBP_Result_GP_Player01_C.Remove Input Revieve Obj
 // 0x0020 (0x0020 - 0x0000)
@@ -195,13 +139,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_UnregisterSingleSubMenu_ReturnValue;      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_GP_Player01_C_Remove_Input_Revieve_Obj) == 0x000008, "Wrong alignment on WBP_Result_GP_Player01_C_Remove_Input_Revieve_Obj");
-static_assert(sizeof(WBP_Result_GP_Player01_C_Remove_Input_Revieve_Obj) == 0x000020, "Wrong size on WBP_Result_GP_Player01_C_Remove_Input_Revieve_Obj");
-static_assert(offsetof(WBP_Result_GP_Player01_C_Remove_Input_Revieve_Obj, CallFunc_GetOwningPlayer_ReturnValue) == 0x000000, "Member 'WBP_Result_GP_Player01_C_Remove_Input_Revieve_Obj::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_Remove_Input_Revieve_Obj, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'WBP_Result_GP_Player01_C_Remove_Input_Revieve_Obj::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_Remove_Input_Revieve_Obj, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000010, "Member 'WBP_Result_GP_Player01_C_Remove_Input_Revieve_Obj::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_Remove_Input_Revieve_Obj, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'WBP_Result_GP_Player01_C_Remove_Input_Revieve_Obj::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_Remove_Input_Revieve_Obj, CallFunc_UnregisterSingleSubMenu_ReturnValue) == 0x000019, "Member 'WBP_Result_GP_Player01_C_Remove_Input_Revieve_Obj::CallFunc_UnregisterSingleSubMenu_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_GP_Player01_C_Remove_Input_Revieve_Obj;
 
 // Function WBP_Result_GP_Player01.WBP_Result_GP_Player01_C.SetLinesPanelRacerCount
 // 0x0004 (0x0004 - 0x0000)
@@ -210,9 +148,7 @@ struct WBP_Result_GP_Player01_C_SetLinesPanelRacerCount final
 public:
 	int32                                         RacerCount;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_GP_Player01_C_SetLinesPanelRacerCount) == 0x000004, "Wrong alignment on WBP_Result_GP_Player01_C_SetLinesPanelRacerCount");
-static_assert(sizeof(WBP_Result_GP_Player01_C_SetLinesPanelRacerCount) == 0x000004, "Wrong size on WBP_Result_GP_Player01_C_SetLinesPanelRacerCount");
-static_assert(offsetof(WBP_Result_GP_Player01_C_SetLinesPanelRacerCount, RacerCount) == 0x000000, "Member 'WBP_Result_GP_Player01_C_SetLinesPanelRacerCount::RacerCount' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_GP_Player01_C_SetLinesPanelRacerCount;
 
 // Function WBP_Result_GP_Player01.WBP_Result_GP_Player01_C.SetRankUpRewardGetWindow
 // 0x0001 (0x0001 - 0x0000)
@@ -221,9 +157,7 @@ struct WBP_Result_GP_Player01_C_SetRankUpRewardGetWindow final
 public:
 	uint8                                         InRateRank;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_GP_Player01_C_SetRankUpRewardGetWindow) == 0x000001, "Wrong alignment on WBP_Result_GP_Player01_C_SetRankUpRewardGetWindow");
-static_assert(sizeof(WBP_Result_GP_Player01_C_SetRankUpRewardGetWindow) == 0x000001, "Wrong size on WBP_Result_GP_Player01_C_SetRankUpRewardGetWindow");
-static_assert(offsetof(WBP_Result_GP_Player01_C_SetRankUpRewardGetWindow, InRateRank) == 0x000000, "Member 'WBP_Result_GP_Player01_C_SetRankUpRewardGetWindow::InRateRank' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_GP_Player01_C_SetRankUpRewardGetWindow;
 
 // Function WBP_Result_GP_Player01.WBP_Result_GP_Player01_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -233,10 +167,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_GP_Player01_C_Tick) == 0x000004, "Wrong alignment on WBP_Result_GP_Player01_C_Tick");
-static_assert(sizeof(WBP_Result_GP_Player01_C_Tick) == 0x00003C, "Wrong size on WBP_Result_GP_Player01_C_Tick");
-static_assert(offsetof(WBP_Result_GP_Player01_C_Tick, MyGeometry) == 0x000000, "Member 'WBP_Result_GP_Player01_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_Result_GP_Player01_C_Tick, InDeltaTime) == 0x000038, "Member 'WBP_Result_GP_Player01_C_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_GP_Player01_C_Tick;
 
 }
 

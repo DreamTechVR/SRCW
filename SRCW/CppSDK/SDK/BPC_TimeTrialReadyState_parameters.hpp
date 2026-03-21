@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "UNION_structs.hpp"
 
 
 namespace SDK::Params
@@ -60,36 +60,7 @@ public:
 	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UReadyWindowCharacterIcon*              CallFunc_Array_Get_Item;                           // 0x0100(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState) == 0x000008, "Wrong alignment on BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState");
-static_assert(sizeof(BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState) == 0x000108, "Wrong size on BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState");
-static_assert(offsetof(BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState, EntryPoint) == 0x000000, "Member 'BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000008, "Member 'BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState, CallFunc_IsValid_ReturnValue_1) == 0x000011, "Member 'BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState, CallFunc_IsValid_ReturnValue_2) == 0x000012, "Member 'BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState, CallFunc_GetOwnerSequence_ReturnValue) == 0x000018, "Member 'BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState::CallFunc_GetOwnerSequence_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState, K2Node_DynamicCast_AsBP_Time_Trial_Sequence) == 0x000020, "Member 'BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState::K2Node_DynamicCast_AsBP_Time_Trial_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState, CallFunc_GetReadyWindowCharacterIcons_OutReadyWindowCharacterIcons) == 0x000030, "Member 'BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState::CallFunc_GetReadyWindowCharacterIcons_OutReadyWindowCharacterIcons' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState, CallFunc_SoundPlay_ReturnValue) == 0x000040, "Member 'BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState, CallFunc_GetPlayerController_ReturnValue) == 0x000048, "Member 'BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState, K2Node_DynamicCast_AsBP_Menu_Player_Controller) == 0x000050, "Member 'BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState::K2Node_DynamicCast_AsBP_Menu_Player_Controller' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState, K2Node_DynamicCast_bSuccess_1) == 0x000058, "Member 'BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState, CallFunc_GetPlayerController_ReturnValue_1) == 0x000060, "Member 'BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState, K2Node_DynamicCast_AsBP_Menu_Player_Controller_1) == 0x000068, "Member 'BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState::K2Node_DynamicCast_AsBP_Menu_Player_Controller_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState, K2Node_DynamicCast_bSuccess_2) == 0x000070, "Member 'BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState, K2Node_CreateDelegate_OutputDelegate) == 0x000074, "Member 'BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState, K2Node_CreateDelegate_OutputDelegate_1) == 0x000084, "Member 'BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState, CallFunc_GetBackMenuState_ReturnValue) == 0x000094, "Member 'BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState::CallFunc_GetBackMenuState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState, K2Node_CreateDelegate_OutputDelegate_2) == 0x000098, "Member 'BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState, CallFunc_SetNextSubMenuSequenceState_self_CastInput) == 0x0000A8, "Member 'BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState::CallFunc_SetNextSubMenuSequenceState_self_CastInput' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState, K2Node_CreateDelegate_OutputDelegate_3) == 0x0000B8, "Member 'BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState, CallFunc_GetOwnerSequence_ReturnValue_1) == 0x0000C8, "Member 'BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState::CallFunc_GetOwnerSequence_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState, K2Node_DynamicCast_AsMenu_Sequence_UIInterface) == 0x0000D0, "Member 'BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState::K2Node_DynamicCast_AsMenu_Sequence_UIInterface' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState, K2Node_DynamicCast_bSuccess_3) == 0x0000E0, "Member 'BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState, K2Node_DynamicCast_AsMenu_Sequence_UIInterface_1) == 0x0000E8, "Member 'BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState::K2Node_DynamicCast_AsMenu_Sequence_UIInterface_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState, K2Node_DynamicCast_bSuccess_4) == 0x0000F8, "Member 'BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState, CallFunc_Array_Get_Item) == 0x000100, "Member 'BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState::CallFunc_Array_Get_Item' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_TimeTrialReadyState_C_ExecuteUbergraph_BPC_TimeTrialReadyState;
 
 }
 

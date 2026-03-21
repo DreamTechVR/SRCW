@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK
@@ -43,17 +43,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_SubMenu_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_SubMenu_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_SubMenu_C")
 	}
 	static class UWBP_CMN_SubMenu_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_SubMenu_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_SubMenu_C) == 0x000008, "Wrong alignment on UWBP_CMN_SubMenu_C");
-static_assert(sizeof(UWBP_CMN_SubMenu_C) == 0x000420, "Wrong size on UWBP_CMN_SubMenu_C");
-static_assert(offsetof(UWBP_CMN_SubMenu_C, UberGraphFrame) == 0x000410, "Member 'UWBP_CMN_SubMenu_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_SubMenu_C, ButtonPanel) == 0x000418, "Member 'UWBP_CMN_SubMenu_C::ButtonPanel' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_SubMenu_C;
 
 }
 

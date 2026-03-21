@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
-#include "UnionLib_structs.hpp"
-#include "UNION_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "UnionSystem_structs.hpp"
+#include "UNION_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
+#include "UnionLib_structs.hpp"
 
 
 namespace SDK
@@ -70,7 +70,6 @@ public:
 	void AddPoint();
 	void CalcVisibleByRacerCount_Impl();
 	void Construct();
-	void Copy();
 	void CreateTipsWindow(EHintId InHintId);
 	void DebugRandomArrow();
 	void DebugValueStart();
@@ -121,7 +120,6 @@ public:
 	void SetResultStats(ERaceResultStats ResultStats);
 	void SetSpeedClassUIVisible(bool bVisible);
 	void StartLodingView();
-	void Wait();
 	void WBP_Result_Sub_RankingTable_GP_01_Event_0(class UWBP_Result_Sub_RankingTable_GP_02_C* WBP_Result_Sub_RankingTable_GP_01_0);
 	void WBP_Result_Sub_RankingTable_GP_02_Event_0(class UWBP_Result_Sub_RankingTable_GP_02_C* WBP_Result_Sub_RankingTable_GP_02_0);
 	void WBP_Result_Sub_RankingTable_GP_03_Event_0(class UWBP_Result_Sub_RankingTable_GP_02_C* WBP_Result_Sub_RankingTable_GP_03_0);
@@ -138,50 +136,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Result_Sub_RankingTable_GP_Line_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Result_Sub_RankingTable_GP_Line_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Result_Sub_RankingTable_GP_Line_C")
 	}
 	static class UWBP_Result_Sub_RankingTable_GP_Line_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Result_Sub_RankingTable_GP_Line_C>();
 	}
 };
-static_assert(alignof(UWBP_Result_Sub_RankingTable_GP_Line_C) == 0x000008, "Wrong alignment on UWBP_Result_Sub_RankingTable_GP_Line_C");
-static_assert(sizeof(UWBP_Result_Sub_RankingTable_GP_Line_C) == 0x0005A8, "Wrong size on UWBP_Result_Sub_RankingTable_GP_Line_C");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, UberGraphFrame) == 0x000470, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, Result_GP_Bonus_Loop) == 0x000478, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::Result_GP_Bonus_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, Result_GP_TotalPoint_AddMove) == 0x000480, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::Result_GP_TotalPoint_AddMove' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, Result_GP_TotalPoint_In) == 0x000488, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::Result_GP_TotalPoint_In' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, Result_GP_TotalPoint_Out) == 0x000490, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::Result_GP_TotalPoint_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, Result_GP_Loop) == 0x000498, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::Result_GP_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, Result_GP_In) == 0x0004A0, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::Result_GP_In' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, Panel) == 0x0004A8, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::Panel' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, VerticalBox_RankingTable) == 0x0004B0, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::VerticalBox_RankingTable' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, WBP_CMN_Sub_SpeedClassInfo) == 0x0004B8, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::WBP_CMN_Sub_SpeedClassInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, WBP_Result_Sub_RankingTable_GP_10) == 0x0004C0, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::WBP_Result_Sub_RankingTable_GP_10' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, WBP_Result_Sub_RankingTable_GP_11) == 0x0004C8, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::WBP_Result_Sub_RankingTable_GP_11' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, WBP_Result_Sub_RankingTable_GP_12) == 0x0004D0, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::WBP_Result_Sub_RankingTable_GP_12' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, WBP_Result_Sub_RankingTable_GP_01) == 0x0004D8, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::WBP_Result_Sub_RankingTable_GP_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, WBP_Result_Sub_RankingTable_GP_02) == 0x0004E0, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::WBP_Result_Sub_RankingTable_GP_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, WBP_Result_Sub_RankingTable_GP_03) == 0x0004E8, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::WBP_Result_Sub_RankingTable_GP_03' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, WBP_Result_Sub_RankingTable_GP_04) == 0x0004F0, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::WBP_Result_Sub_RankingTable_GP_04' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, WBP_Result_Sub_RankingTable_GP_05) == 0x0004F8, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::WBP_Result_Sub_RankingTable_GP_05' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, WBP_Result_Sub_RankingTable_GP_06) == 0x000500, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::WBP_Result_Sub_RankingTable_GP_06' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, WBP_Result_Sub_RankingTable_GP_07) == 0x000508, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::WBP_Result_Sub_RankingTable_GP_07' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, WBP_Result_Sub_RankingTable_GP_08) == 0x000510, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::WBP_Result_Sub_RankingTable_GP_08' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, WBP_Result_Sub_RankingTable_GP_09) == 0x000518, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::WBP_Result_Sub_RankingTable_GP_09' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, RacerCount) == 0x000520, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::RacerCount' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, OffsetTimePerRacer) == 0x000528, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::OffsetTimePerRacer' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, RaceResultPoint) == 0x000530, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::RaceResultPoint' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, NowResultState) == 0x000540, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::NowResultState' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, LastPlayAnim) == 0x000548, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::LastPlayAnim' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, bIsEnd) == 0x000550, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::bIsEnd' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, bIsRankMatchMode) == 0x000551, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::bIsRankMatchMode' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, bEnableSkip) == 0x000552, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::bEnableSkip' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, PanelDebugTexture) == 0x000558, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::PanelDebugTexture' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, AddCloseRewardEvent) == 0x000580, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::AddCloseRewardEvent' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, ResultDonpaTicket) == 0x000590, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::ResultDonpaTicket' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, TipsWindow) == 0x000598, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::TipsWindow' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RankingTable_GP_Line_C, FirstDonpaTicketTipsID) == 0x0005A0, "Member 'UWBP_Result_Sub_RankingTable_GP_Line_C::FirstDonpaTicketTipsID' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Result_Sub_RankingTable_GP_Line_C;
 
 }
 

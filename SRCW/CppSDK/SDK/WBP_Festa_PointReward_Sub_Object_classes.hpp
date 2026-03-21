@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -119,64 +119,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Festa_PointReward_Sub_Object_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Festa_PointReward_Sub_Object_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Festa_PointReward_Sub_Object_C")
 	}
 	static class UWBP_Festa_PointReward_Sub_Object_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Festa_PointReward_Sub_Object_C>();
 	}
 };
-static_assert(alignof(UWBP_Festa_PointReward_Sub_Object_C) == 0x000008, "Wrong alignment on UWBP_Festa_PointReward_Sub_Object_C");
-static_assert(sizeof(UWBP_Festa_PointReward_Sub_Object_C) == 0x000588, "Wrong size on UWBP_Festa_PointReward_Sub_Object_C");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, UberGraphFrame) == 0x000428, "Member 'UWBP_Festa_PointReward_Sub_Object_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, PointReward_Out) == 0x000430, "Member 'UWBP_Festa_PointReward_Sub_Object_C::PointReward_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, PointReward_Loop) == 0x000438, "Member 'UWBP_Festa_PointReward_Sub_Object_C::PointReward_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, PointReward_In) == 0x000440, "Member 'UWBP_Festa_PointReward_Sub_Object_C::PointReward_In' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, CanvasPanel_1) == 0x000448, "Member 'UWBP_Festa_PointReward_Sub_Object_C::CanvasPanel_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, Festa_Reward_Sub_ItemBtn_10) == 0x000450, "Member 'UWBP_Festa_PointReward_Sub_Object_C::Festa_Reward_Sub_ItemBtn_10' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, Festa_Reward_Sub_ItemBtn_11) == 0x000458, "Member 'UWBP_Festa_PointReward_Sub_Object_C::Festa_Reward_Sub_ItemBtn_11' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, Festa_Reward_Sub_ItemBtn_12) == 0x000460, "Member 'UWBP_Festa_PointReward_Sub_Object_C::Festa_Reward_Sub_ItemBtn_12' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, Festa_Reward_Sub_ItemBtn_13) == 0x000468, "Member 'UWBP_Festa_PointReward_Sub_Object_C::Festa_Reward_Sub_ItemBtn_13' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, Festa_Reward_Sub_ItemBtn_14) == 0x000470, "Member 'UWBP_Festa_PointReward_Sub_Object_C::Festa_Reward_Sub_ItemBtn_14' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, Festa_Reward_Sub_ItemBtn_15) == 0x000478, "Member 'UWBP_Festa_PointReward_Sub_Object_C::Festa_Reward_Sub_ItemBtn_15' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, Festa_Reward_Sub_ItemBtn_16) == 0x000480, "Member 'UWBP_Festa_PointReward_Sub_Object_C::Festa_Reward_Sub_ItemBtn_16' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, Festa_Reward_Sub_ItemBtn_17) == 0x000488, "Member 'UWBP_Festa_PointReward_Sub_Object_C::Festa_Reward_Sub_ItemBtn_17' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, Festa_Reward_Sub_ItemBtn_18) == 0x000490, "Member 'UWBP_Festa_PointReward_Sub_Object_C::Festa_Reward_Sub_ItemBtn_18' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, Festa_Reward_Sub_ItemBtn_19) == 0x000498, "Member 'UWBP_Festa_PointReward_Sub_Object_C::Festa_Reward_Sub_ItemBtn_19' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, Festa_Reward_Sub_ItemBtn_20) == 0x0004A0, "Member 'UWBP_Festa_PointReward_Sub_Object_C::Festa_Reward_Sub_ItemBtn_20' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, Festa_Reward_Sub_ItemBtn_21) == 0x0004A8, "Member 'UWBP_Festa_PointReward_Sub_Object_C::Festa_Reward_Sub_ItemBtn_21' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, Festa_Reward_Sub_ItemBtn_22) == 0x0004B0, "Member 'UWBP_Festa_PointReward_Sub_Object_C::Festa_Reward_Sub_ItemBtn_22' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, Festa_Reward_Sub_ItemBtn_23) == 0x0004B8, "Member 'UWBP_Festa_PointReward_Sub_Object_C::Festa_Reward_Sub_ItemBtn_23' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, Festa_Reward_Sub_ItemBtn_24) == 0x0004C0, "Member 'UWBP_Festa_PointReward_Sub_Object_C::Festa_Reward_Sub_ItemBtn_24' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, Festa_Reward_Sub_ItemBtn_25) == 0x0004C8, "Member 'UWBP_Festa_PointReward_Sub_Object_C::Festa_Reward_Sub_ItemBtn_25' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, Festa_Reward_Sub_ItemBtn_26) == 0x0004D0, "Member 'UWBP_Festa_PointReward_Sub_Object_C::Festa_Reward_Sub_ItemBtn_26' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, Festa_Reward_Sub_ItemBtn_27) == 0x0004D8, "Member 'UWBP_Festa_PointReward_Sub_Object_C::Festa_Reward_Sub_ItemBtn_27' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, Festa_Reward_Sub_ItemBtn_28) == 0x0004E0, "Member 'UWBP_Festa_PointReward_Sub_Object_C::Festa_Reward_Sub_ItemBtn_28' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, Festa_Reward_Sub_ItemBtn_29) == 0x0004E8, "Member 'UWBP_Festa_PointReward_Sub_Object_C::Festa_Reward_Sub_ItemBtn_29' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, Festa_Reward_Sub_ItemBtn_30) == 0x0004F0, "Member 'UWBP_Festa_PointReward_Sub_Object_C::Festa_Reward_Sub_ItemBtn_30' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, Festa_Reward_Sub_ItemBtn_01) == 0x0004F8, "Member 'UWBP_Festa_PointReward_Sub_Object_C::Festa_Reward_Sub_ItemBtn_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, Festa_Reward_Sub_ItemBtn_02) == 0x000500, "Member 'UWBP_Festa_PointReward_Sub_Object_C::Festa_Reward_Sub_ItemBtn_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, Festa_Reward_Sub_ItemBtn_03) == 0x000508, "Member 'UWBP_Festa_PointReward_Sub_Object_C::Festa_Reward_Sub_ItemBtn_03' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, Festa_Reward_Sub_ItemBtn_04) == 0x000510, "Member 'UWBP_Festa_PointReward_Sub_Object_C::Festa_Reward_Sub_ItemBtn_04' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, Festa_Reward_Sub_ItemBtn_05) == 0x000518, "Member 'UWBP_Festa_PointReward_Sub_Object_C::Festa_Reward_Sub_ItemBtn_05' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, Festa_Reward_Sub_ItemBtn_06) == 0x000520, "Member 'UWBP_Festa_PointReward_Sub_Object_C::Festa_Reward_Sub_ItemBtn_06' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, Festa_Reward_Sub_ItemBtn_07) == 0x000528, "Member 'UWBP_Festa_PointReward_Sub_Object_C::Festa_Reward_Sub_ItemBtn_07' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, Festa_Reward_Sub_ItemBtn_08) == 0x000530, "Member 'UWBP_Festa_PointReward_Sub_Object_C::Festa_Reward_Sub_ItemBtn_08' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, Festa_Reward_Sub_ItemBtn_09) == 0x000538, "Member 'UWBP_Festa_PointReward_Sub_Object_C::Festa_Reward_Sub_ItemBtn_09' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, Gage_Line) == 0x000540, "Member 'UWBP_Festa_PointReward_Sub_Object_C::Gage_Line' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, ScrollBox_PointReward) == 0x000548, "Member 'UWBP_Festa_PointReward_Sub_Object_C::ScrollBox_PointReward' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, ItemButtonArray) == 0x000550, "Member 'UWBP_Festa_PointReward_Sub_Object_C::ItemButtonArray' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, SelectItemIndex) == 0x000560, "Member 'UWBP_Festa_PointReward_Sub_Object_C::SelectItemIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, UseResultConstruct) == 0x000564, "Member 'UWBP_Festa_PointReward_Sub_Object_C::UseResultConstruct' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, SelectDataIndex) == 0x000568, "Member 'UWBP_Festa_PointReward_Sub_Object_C::SelectDataIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, LastGetDataIndex) == 0x00056C, "Member 'UWBP_Festa_PointReward_Sub_Object_C::LastGetDataIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, ViewTopDataIndex) == 0x000570, "Member 'UWBP_Festa_PointReward_Sub_Object_C::ViewTopDataIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, bIsForceDesableInput) == 0x000574, "Member 'UWBP_Festa_PointReward_Sub_Object_C::bIsForceDesableInput' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, bIsResult) == 0x000575, "Member 'UWBP_Festa_PointReward_Sub_Object_C::bIsResult' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, SelectRewardIndex) == 0x000578, "Member 'UWBP_Festa_PointReward_Sub_Object_C::SelectRewardIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, CenterItemIndex) == 0x00057C, "Member 'UWBP_Festa_PointReward_Sub_Object_C::CenterItemIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, LastViewItemIndex) == 0x000580, "Member 'UWBP_Festa_PointReward_Sub_Object_C::LastViewItemIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_Object_C, SelectViewIndex) == 0x000584, "Member 'UWBP_Festa_PointReward_Sub_Object_C::SelectViewIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Festa_PointReward_Sub_Object_C;
 
 }
 

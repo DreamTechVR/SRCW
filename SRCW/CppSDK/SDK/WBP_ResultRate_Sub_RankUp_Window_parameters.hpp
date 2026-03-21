@@ -11,62 +11,31 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function WBP_ResultRate_Sub_RankUp_Window.WBP_ResultRate_Sub_RankUp_Window_C.ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window
-// 0x0068 (0x0068 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ERateRank                                     K2Node_CustomEvent_NowRank;                        // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ERateRank                                     K2Node_CustomEvent_NextParam;                      // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_1;            // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetZOrder_ReturnValue;                    // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable;                                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0028(0x0038)(IsPlainOldData, NoDestructor)
-	float                                         K2Node_Event_InDeltaTime;                          // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result;    // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_Event_PrevRank;                             // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_LatestRank;                           // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_Conv_IntToByte_ReturnValue;               // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_Conv_IntToByte_ReturnValue_1;             // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x0026(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_GetValidValue_ReturnValue_1;              // 0x0027(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0028(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window) == 0x000008, "Wrong alignment on WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window");
-static_assert(sizeof(WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window) == 0x000068, "Wrong size on WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window, EntryPoint) == 0x000000, "Member 'WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window, CallFunc_MakeLiteralByte_ReturnValue) == 0x000004, "Member 'WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window, K2Node_CustomEvent_NowRank) == 0x000005, "Member 'WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window::K2Node_CustomEvent_NowRank' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window, K2Node_CustomEvent_NextParam) == 0x000006, "Member 'WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window::K2Node_CustomEvent_NextParam' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window, CallFunc_MakeLiteralByte_ReturnValue_1) == 0x000007, "Member 'WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window::CallFunc_MakeLiteralByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000008, "Member 'WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window, CallFunc_SetZOrder_ReturnValue) == 0x00000C, "Member 'WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window::CallFunc_SetZOrder_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window, CallFunc_PlayAnimation_ReturnValue) == 0x000010, "Member 'WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00001C, "Member 'WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window, Temp_int_Variable) == 0x000020, "Member 'WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window, K2Node_Event_IsDesignTime) == 0x000024, "Member 'WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window, K2Node_Event_MyGeometry) == 0x000028, "Member 'WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window, K2Node_Event_InDeltaTime) == 0x000060, "Member 'WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window::K2Node_Event_InDeltaTime' has a wrong offset!");
-
-// Function WBP_ResultRate_Sub_RankUp_Window.WBP_ResultRate_Sub_RankUp_Window_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_ResultRate_Sub_RankUp_Window_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ResultRate_Sub_RankUp_Window_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_ResultRate_Sub_RankUp_Window_C_PreConstruct");
-static_assert(sizeof(WBP_ResultRate_Sub_RankUp_Window_C_PreConstruct) == 0x000001, "Wrong size on WBP_ResultRate_Sub_RankUp_Window_C_PreConstruct");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Window_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_ResultRate_Sub_RankUp_Window_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ResultRate_Sub_RankUp_Window_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Window;
 
 // Function WBP_ResultRate_Sub_RankUp_Window.WBP_ResultRate_Sub_RankUp_Window_C.Set Rank Move Impl
 // 0x0010 (0x0010 - 0x0000)
@@ -79,38 +48,17 @@ public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0004(0x0004)()
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ResultRate_Sub_RankUp_Window_C_Set_Rank_Move_Impl) == 0x000008, "Wrong alignment on WBP_ResultRate_Sub_RankUp_Window_C_Set_Rank_Move_Impl");
-static_assert(sizeof(WBP_ResultRate_Sub_RankUp_Window_C_Set_Rank_Move_Impl) == 0x000010, "Wrong size on WBP_ResultRate_Sub_RankUp_Window_C_Set_Rank_Move_Impl");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Window_C_Set_Rank_Move_Impl, NowRank_in) == 0x000000, "Member 'WBP_ResultRate_Sub_RankUp_Window_C_Set_Rank_Move_Impl::NowRank_in' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Window_C_Set_Rank_Move_Impl, NextRank_in) == 0x000001, "Member 'WBP_ResultRate_Sub_RankUp_Window_C_Set_Rank_Move_Impl::NextRank_in' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Window_C_Set_Rank_Move_Impl, CallFunc_SoundPlay_ReturnValue) == 0x000004, "Member 'WBP_ResultRate_Sub_RankUp_Window_C_Set_Rank_Move_Impl::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Window_C_Set_Rank_Move_Impl, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_ResultRate_Sub_RankUp_Window_C_Set_Rank_Move_Impl::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ResultRate_Sub_RankUp_Window_C_Set_Rank_Move_Impl;
 
-// Function WBP_ResultRate_Sub_RankUp_Window.WBP_ResultRate_Sub_RankUp_Window_C.SetRank2
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_ResultRate_Sub_RankUp_Window_C_SetRank2 final
+// Function WBP_ResultRate_Sub_RankUp_Window.WBP_ResultRate_Sub_RankUp_Window_C.SetupRankUpInfo
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ResultRate_Sub_RankUp_Window_C_SetupRankUpInfo final
 {
 public:
-	ERateRank                                     NowRank_0;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ERateRank                                     NextParam;                                         // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         PrevRank;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         LatestRank;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ResultRate_Sub_RankUp_Window_C_SetRank2) == 0x000001, "Wrong alignment on WBP_ResultRate_Sub_RankUp_Window_C_SetRank2");
-static_assert(sizeof(WBP_ResultRate_Sub_RankUp_Window_C_SetRank2) == 0x000002, "Wrong size on WBP_ResultRate_Sub_RankUp_Window_C_SetRank2");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Window_C_SetRank2, NowRank_0) == 0x000000, "Member 'WBP_ResultRate_Sub_RankUp_Window_C_SetRank2::NowRank_0' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Window_C_SetRank2, NextParam) == 0x000001, "Member 'WBP_ResultRate_Sub_RankUp_Window_C_SetRank2::NextParam' has a wrong offset!");
-
-// Function WBP_ResultRate_Sub_RankUp_Window.WBP_ResultRate_Sub_RankUp_Window_C.Tick
-// 0x003C (0x003C - 0x0000)
-struct WBP_ResultRate_Sub_RankUp_Window_C_Tick final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ResultRate_Sub_RankUp_Window_C_Tick) == 0x000004, "Wrong alignment on WBP_ResultRate_Sub_RankUp_Window_C_Tick");
-static_assert(sizeof(WBP_ResultRate_Sub_RankUp_Window_C_Tick) == 0x00003C, "Wrong size on WBP_ResultRate_Sub_RankUp_Window_C_Tick");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Window_C_Tick, MyGeometry) == 0x000000, "Member 'WBP_ResultRate_Sub_RankUp_Window_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Window_C_Tick, InDeltaTime) == 0x000038, "Member 'WBP_ResultRate_Sub_RankUp_Window_C_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ResultRate_Sub_RankUp_Window_C_SetupRankUpInfo;
 
 }
 

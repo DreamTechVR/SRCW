@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UMG_classes.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK
@@ -56,23 +56,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MachinrCustom_Sub_Paint_PresetWindow_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MachinrCustom_Sub_Paint_PresetWindow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MachinrCustom_Sub_Paint_PresetWindow_C")
 	}
 	static class UWBP_MachinrCustom_Sub_Paint_PresetWindow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MachinrCustom_Sub_Paint_PresetWindow_C>();
 	}
 };
-static_assert(alignof(UWBP_MachinrCustom_Sub_Paint_PresetWindow_C) == 0x000008, "Wrong alignment on UWBP_MachinrCustom_Sub_Paint_PresetWindow_C");
-static_assert(sizeof(UWBP_MachinrCustom_Sub_Paint_PresetWindow_C) == 0x000330, "Wrong size on UWBP_MachinrCustom_Sub_Paint_PresetWindow_C");
-static_assert(offsetof(UWBP_MachinrCustom_Sub_Paint_PresetWindow_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_MachinrCustom_Sub_Paint_PresetWindow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_MachinrCustom_Sub_Paint_PresetWindow_C, WrapBox) == 0x0002E8, "Member 'UWBP_MachinrCustom_Sub_Paint_PresetWindow_C::WrapBox' has a wrong offset!");
-static_assert(offsetof(UWBP_MachinrCustom_Sub_Paint_PresetWindow_C, ButtonsPanel) == 0x0002F0, "Member 'UWBP_MachinrCustom_Sub_Paint_PresetWindow_C::ButtonsPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_MachinrCustom_Sub_Paint_PresetWindow_C, GridNavigationBuilder) == 0x0002F8, "Member 'UWBP_MachinrCustom_Sub_Paint_PresetWindow_C::GridNavigationBuilder' has a wrong offset!");
-static_assert(offsetof(UWBP_MachinrCustom_Sub_Paint_PresetWindow_C, ItemNumInRow) == 0x000300, "Member 'UWBP_MachinrCustom_Sub_Paint_PresetWindow_C::ItemNumInRow' has a wrong offset!");
-static_assert(offsetof(UWBP_MachinrCustom_Sub_Paint_PresetWindow_C, OnItemFocused) == 0x000308, "Member 'UWBP_MachinrCustom_Sub_Paint_PresetWindow_C::OnItemFocused' has a wrong offset!");
-static_assert(offsetof(UWBP_MachinrCustom_Sub_Paint_PresetWindow_C, OnSideNavigationCustom) == 0x000318, "Member 'UWBP_MachinrCustom_Sub_Paint_PresetWindow_C::OnSideNavigationCustom' has a wrong offset!");
-static_assert(offsetof(UWBP_MachinrCustom_Sub_Paint_PresetWindow_C, LastSelectedIndex) == 0x000328, "Member 'UWBP_MachinrCustom_Sub_Paint_PresetWindow_C::LastSelectedIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MachinrCustom_Sub_Paint_PresetWindow_C;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_RewardDialogAndSave_C">();
+		BP_STATIC_CLASS_IMPL("BP_RewardDialogAndSave_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_RewardDialogAndSave_C")
 	}
 	static class UBP_RewardDialogAndSave_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_RewardDialogAndSave_C>();
 	}
 };
-static_assert(alignof(UBP_RewardDialogAndSave_C) == 0x000008, "Wrong alignment on UBP_RewardDialogAndSave_C");
-static_assert(sizeof(UBP_RewardDialogAndSave_C) == 0x000070, "Wrong size on UBP_RewardDialogAndSave_C");
-static_assert(offsetof(UBP_RewardDialogAndSave_C, UberGraphFrame) == 0x000068, "Member 'UBP_RewardDialogAndSave_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_UBP_RewardDialogAndSave_C;
 
 }
 

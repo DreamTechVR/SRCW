@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "UNION_structs.hpp"
 #include "UnionRun_structs.hpp"
+#include "UNION_structs.hpp"
+#include "UnionSystem_structs.hpp"
 
 
 namespace SDK::Params
@@ -51,28 +51,7 @@ public:
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_3;                // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPFL_MachineSelect_C_CalcMachineTypeByMachineId) == 0x000008, "Wrong alignment on BPFL_MachineSelect_C_CalcMachineTypeByMachineId");
-static_assert(sizeof(BPFL_MachineSelect_C_CalcMachineTypeByMachineId) == 0x000048, "Wrong size on BPFL_MachineSelect_C_CalcMachineTypeByMachineId");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByMachineId, MachineId) == 0x000000, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByMachineId::MachineId' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByMachineId, __WorldContext) == 0x000008, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByMachineId::__WorldContext' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByMachineId, StatusType) == 0x000010, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByMachineId::StatusType' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByMachineId, LocalID) == 0x000014, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByMachineId::LocalID' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByMachineId, CallFunc_MakeLiteralByte_ReturnValue) == 0x000018, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByMachineId::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByMachineId, CallFunc_Conv_ByteToInt_ReturnValue) == 0x00001C, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByMachineId::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByMachineId, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x000020, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByMachineId::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByMachineId, CallFunc_MakeLiteralByte_ReturnValue_1) == 0x000024, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByMachineId::CallFunc_MakeLiteralByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByMachineId, CallFunc_Conv_ByteToInt_ReturnValue_2) == 0x000028, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByMachineId::CallFunc_Conv_ByteToInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByMachineId, CallFunc_MakeLiteralByte_ReturnValue_2) == 0x00002C, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByMachineId::CallFunc_MakeLiteralByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByMachineId, CallFunc_Conv_ByteToInt_ReturnValue_3) == 0x000030, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByMachineId::CallFunc_Conv_ByteToInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByMachineId, CallFunc_MakeLiteralByte_ReturnValue_3) == 0x000034, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByMachineId::CallFunc_MakeLiteralByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByMachineId, CallFunc_Less_IntInt_ReturnValue) == 0x000035, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByMachineId::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByMachineId, CallFunc_Conv_ByteToInt_ReturnValue_4) == 0x000038, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByMachineId::CallFunc_Conv_ByteToInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByMachineId, CallFunc_Less_IntInt_ReturnValue_1) == 0x00003C, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByMachineId::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByMachineId, CallFunc_MakeLiteralByte_ReturnValue_4) == 0x00003D, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByMachineId::CallFunc_MakeLiteralByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByMachineId, CallFunc_Less_IntInt_ReturnValue_2) == 0x00003E, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByMachineId::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByMachineId, CallFunc_Conv_ByteToInt_ReturnValue_5) == 0x000040, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByMachineId::CallFunc_Conv_ByteToInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByMachineId, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000044, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByMachineId::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByMachineId, CallFunc_Less_IntInt_ReturnValue_3) == 0x000045, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByMachineId::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_MachineSelect_C_CalcMachineTypeByMachineId;
 
 // Function BPFL_MachineSelect.BPFL_MachineSelect_C.CalcMachineTypeByRom1stMachineId
 // 0x0050 (0x0050 - 0x0000)
@@ -109,31 +88,7 @@ public:
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_4;                // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId) == 0x000008, "Wrong alignment on BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId");
-static_assert(sizeof(BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId) == 0x000050, "Wrong size on BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId, Rom1stMachineId) == 0x000000, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId::Rom1stMachineId' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId, __WorldContext) == 0x000008, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId::__WorldContext' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId, StatusType) == 0x000010, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId::StatusType' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId, LocalID) == 0x000014, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId::LocalID' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId, CallFunc_MakeLiteralByte_ReturnValue) == 0x000018, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId, CallFunc_Conv_ByteToInt_ReturnValue) == 0x00001C, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x000020, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId, CallFunc_MakeLiteralByte_ReturnValue_1) == 0x000024, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId::CallFunc_MakeLiteralByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId, CallFunc_MakeLiteralByte_ReturnValue_2) == 0x000025, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId::CallFunc_MakeLiteralByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId, CallFunc_Conv_ByteToInt_ReturnValue_2) == 0x000028, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId::CallFunc_Conv_ByteToInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId, CallFunc_Conv_ByteToInt_ReturnValue_3) == 0x00002C, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId::CallFunc_Conv_ByteToInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId, CallFunc_MakeLiteralByte_ReturnValue_3) == 0x000030, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId::CallFunc_MakeLiteralByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId, CallFunc_MakeLiteralByte_ReturnValue_4) == 0x000031, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId::CallFunc_MakeLiteralByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId, CallFunc_Conv_ByteToInt_ReturnValue_4) == 0x000034, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId::CallFunc_Conv_ByteToInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId, CallFunc_Conv_ByteToInt_ReturnValue_5) == 0x000038, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId::CallFunc_Conv_ByteToInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId, CallFunc_Less_IntInt_ReturnValue) == 0x00003C, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId, CallFunc_Less_IntInt_ReturnValue_1) == 0x00003D, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId, CallFunc_Less_IntInt_ReturnValue_2) == 0x00003E, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId, CallFunc_MakeLiteralByte_ReturnValue_5) == 0x00003F, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId::CallFunc_MakeLiteralByte_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId, CallFunc_Less_IntInt_ReturnValue_3) == 0x000040, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId, CallFunc_Conv_ByteToInt_ReturnValue_6) == 0x000044, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId::CallFunc_Conv_ByteToInt_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000048, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId, CallFunc_Less_IntInt_ReturnValue_4) == 0x000049, "Member 'BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId::CallFunc_Less_IntInt_ReturnValue_4' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_MachineSelect_C_CalcMachineTypeByRom1stMachineId;
 
 // Function BPFL_MachineSelect.BPFL_MachineSelect_C.CanSelectCharaAndHover
 // 0x0090 (0x0090 - 0x0000)
@@ -159,22 +114,7 @@ public:
 	TArray<EDriverId>                             K2Node_Select_Default;                             // 0x0078(0x0010)(ReferenceParm)
 	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPFL_MachineSelect_C_CanSelectCharaAndHover) == 0x000008, "Wrong alignment on BPFL_MachineSelect_C_CanSelectCharaAndHover");
-static_assert(sizeof(BPFL_MachineSelect_C_CanSelectCharaAndHover) == 0x000090, "Wrong size on BPFL_MachineSelect_C_CanSelectCharaAndHover");
-static_assert(offsetof(BPFL_MachineSelect_C_CanSelectCharaAndHover, InCheckDriverId) == 0x000000, "Member 'BPFL_MachineSelect_C_CanSelectCharaAndHover::InCheckDriverId' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CanSelectCharaAndHover, __WorldContext) == 0x000008, "Member 'BPFL_MachineSelect_C_CanSelectCharaAndHover::__WorldContext' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CanSelectCharaAndHover, bCanUse) == 0x000010, "Member 'BPFL_MachineSelect_C_CanSelectCharaAndHover::bCanUse' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CanSelectCharaAndHover, bDontUsedHover) == 0x000011, "Member 'BPFL_MachineSelect_C_CanSelectCharaAndHover::bDontUsedHover' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CanSelectCharaAndHover, DontUseHoverFullCheck) == 0x000018, "Member 'BPFL_MachineSelect_C_CanSelectCharaAndHover::DontUseHoverFullCheck' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CanSelectCharaAndHover, CanUseRomCheck) == 0x000028, "Member 'BPFL_MachineSelect_C_CanSelectCharaAndHover::CanUseRomCheck' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CanSelectCharaAndHover, DontUseHoverCheck) == 0x000038, "Member 'BPFL_MachineSelect_C_CanSelectCharaAndHover::DontUseHoverCheck' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CanSelectCharaAndHover, Temp_bool_Variable) == 0x000048, "Member 'BPFL_MachineSelect_C_CanSelectCharaAndHover::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CanSelectCharaAndHover, CallFunc_CanSelectChara_ReturnValue) == 0x000049, "Member 'BPFL_MachineSelect_C_CanSelectCharaAndHover::CallFunc_CanSelectChara_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CanSelectCharaAndHover, K2Node_MakeArray_Array) == 0x000050, "Member 'BPFL_MachineSelect_C_CanSelectCharaAndHover::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CanSelectCharaAndHover, K2Node_MakeArray_Array_1) == 0x000060, "Member 'BPFL_MachineSelect_C_CanSelectCharaAndHover::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CanSelectCharaAndHover, CallFunc_GetAppCharaOpenData_OutData) == 0x000070, "Member 'BPFL_MachineSelect_C_CanSelectCharaAndHover::CallFunc_GetAppCharaOpenData_OutData' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CanSelectCharaAndHover, K2Node_Select_Default) == 0x000078, "Member 'BPFL_MachineSelect_C_CanSelectCharaAndHover::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_CanSelectCharaAndHover, CallFunc_Array_Contains_ReturnValue) == 0x000088, "Member 'BPFL_MachineSelect_C_CanSelectCharaAndHover::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_MachineSelect_C_CanSelectCharaAndHover;
 
 // Function BPFL_MachineSelect.BPFL_MachineSelect_C.ConvertRom1stTypeIndexToMachineId
 // 0x0038 (0x0038 - 0x0000)
@@ -203,25 +143,7 @@ public:
 	uint8                                         CallFunc_Conv_IntToByte_ReturnValue;               // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId) == 0x000008, "Wrong alignment on BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId");
-static_assert(sizeof(BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId) == 0x000038, "Wrong size on BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId");
-static_assert(offsetof(BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId, machineType) == 0x000000, "Member 'BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId::machineType' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId, Index_0) == 0x000004, "Member 'BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId::Index_0' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId, TypeCount) == 0x000008, "Member 'BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId::TypeCount' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId, __WorldContext) == 0x000010, "Member 'BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId::__WorldContext' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId, MachineId) == 0x000018, "Member 'BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId::MachineId' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId, CallFunc_MakeLiteralByte_ReturnValue) == 0x000019, "Member 'BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId, CallFunc_Percent_IntInt_ReturnValue) == 0x00001C, "Member 'BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId, CallFunc_MakeLiteralByte_ReturnValue_1) == 0x000020, "Member 'BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId::CallFunc_MakeLiteralByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId, Temp_byte_Variable) == 0x000021, "Member 'BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId, CallFunc_MakeLiteralByte_ReturnValue_2) == 0x000022, "Member 'BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId::CallFunc_MakeLiteralByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId, CallFunc_MakeLiteralByte_ReturnValue_3) == 0x000023, "Member 'BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId::CallFunc_MakeLiteralByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId, CallFunc_MakeLiteralByte_ReturnValue_4) == 0x000024, "Member 'BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId::CallFunc_MakeLiteralByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId, K2Node_Select_Default) == 0x000025, "Member 'BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000028, "Member 'BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId, CallFunc_Add_IntInt_ReturnValue) == 0x00002C, "Member 'BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId, CallFunc_Conv_IntToByte_ReturnValue) == 0x000030, "Member 'BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId, CallFunc_GetValidValue_ReturnValue) == 0x000031, "Member 'BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_MachineSelect_C_ConvertRom1stTypeIndexToMachineId;
 
 // Function BPFL_MachineSelect.BPFL_MachineSelect_C.ConvertTypeIndexToMachineId
 // 0x0030 (0x0030 - 0x0000)
@@ -248,24 +170,7 @@ public:
 	uint8                                         CallFunc_Conv_IntToByte_ReturnValue;               // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPFL_MachineSelect_C_ConvertTypeIndexToMachineId) == 0x000008, "Wrong alignment on BPFL_MachineSelect_C_ConvertTypeIndexToMachineId");
-static_assert(sizeof(BPFL_MachineSelect_C_ConvertTypeIndexToMachineId) == 0x000030, "Wrong size on BPFL_MachineSelect_C_ConvertTypeIndexToMachineId");
-static_assert(offsetof(BPFL_MachineSelect_C_ConvertTypeIndexToMachineId, machineType) == 0x000000, "Member 'BPFL_MachineSelect_C_ConvertTypeIndexToMachineId::machineType' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_ConvertTypeIndexToMachineId, Index_0) == 0x000004, "Member 'BPFL_MachineSelect_C_ConvertTypeIndexToMachineId::Index_0' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_ConvertTypeIndexToMachineId, __WorldContext) == 0x000008, "Member 'BPFL_MachineSelect_C_ConvertTypeIndexToMachineId::__WorldContext' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_ConvertTypeIndexToMachineId, MachineId) == 0x000010, "Member 'BPFL_MachineSelect_C_ConvertTypeIndexToMachineId::MachineId' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_ConvertTypeIndexToMachineId, CallFunc_MakeLiteralByte_ReturnValue) == 0x000011, "Member 'BPFL_MachineSelect_C_ConvertTypeIndexToMachineId::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_ConvertTypeIndexToMachineId, CallFunc_Percent_IntInt_ReturnValue) == 0x000014, "Member 'BPFL_MachineSelect_C_ConvertTypeIndexToMachineId::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_ConvertTypeIndexToMachineId, CallFunc_MakeLiteralByte_ReturnValue_1) == 0x000018, "Member 'BPFL_MachineSelect_C_ConvertTypeIndexToMachineId::CallFunc_MakeLiteralByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_ConvertTypeIndexToMachineId, Temp_byte_Variable) == 0x000019, "Member 'BPFL_MachineSelect_C_ConvertTypeIndexToMachineId::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_ConvertTypeIndexToMachineId, CallFunc_MakeLiteralByte_ReturnValue_2) == 0x00001A, "Member 'BPFL_MachineSelect_C_ConvertTypeIndexToMachineId::CallFunc_MakeLiteralByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_ConvertTypeIndexToMachineId, CallFunc_MakeLiteralByte_ReturnValue_3) == 0x00001B, "Member 'BPFL_MachineSelect_C_ConvertTypeIndexToMachineId::CallFunc_MakeLiteralByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_ConvertTypeIndexToMachineId, CallFunc_MakeLiteralByte_ReturnValue_4) == 0x00001C, "Member 'BPFL_MachineSelect_C_ConvertTypeIndexToMachineId::CallFunc_MakeLiteralByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_ConvertTypeIndexToMachineId, K2Node_Select_Default) == 0x00001D, "Member 'BPFL_MachineSelect_C_ConvertTypeIndexToMachineId::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_ConvertTypeIndexToMachineId, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000020, "Member 'BPFL_MachineSelect_C_ConvertTypeIndexToMachineId::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_ConvertTypeIndexToMachineId, CallFunc_Add_IntInt_ReturnValue) == 0x000024, "Member 'BPFL_MachineSelect_C_ConvertTypeIndexToMachineId::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_ConvertTypeIndexToMachineId, CallFunc_Conv_IntToByte_ReturnValue) == 0x000028, "Member 'BPFL_MachineSelect_C_ConvertTypeIndexToMachineId::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_ConvertTypeIndexToMachineId, CallFunc_GetValidValue_ReturnValue) == 0x000029, "Member 'BPFL_MachineSelect_C_ConvertTypeIndexToMachineId::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_MachineSelect_C_ConvertTypeIndexToMachineId;
 
 // Function BPFL_MachineSelect.BPFL_MachineSelect_C.GetRom1stMachineCountPerType
 // 0x0030 (0x0030 - 0x0000)
@@ -285,18 +190,7 @@ public:
 	int32                                         Temp_int_Variable_4;                               // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_Select_Default;                             // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPFL_MachineSelect_C_GetRom1stMachineCountPerType) == 0x000008, "Wrong alignment on BPFL_MachineSelect_C_GetRom1stMachineCountPerType");
-static_assert(sizeof(BPFL_MachineSelect_C_GetRom1stMachineCountPerType) == 0x000030, "Wrong size on BPFL_MachineSelect_C_GetRom1stMachineCountPerType");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineCountPerType, StatusType) == 0x000000, "Member 'BPFL_MachineSelect_C_GetRom1stMachineCountPerType::StatusType' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineCountPerType, __WorldContext) == 0x000008, "Member 'BPFL_MachineSelect_C_GetRom1stMachineCountPerType::__WorldContext' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineCountPerType, Count) == 0x000010, "Member 'BPFL_MachineSelect_C_GetRom1stMachineCountPerType::Count' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineCountPerType, Temp_byte_Variable) == 0x000014, "Member 'BPFL_MachineSelect_C_GetRom1stMachineCountPerType::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineCountPerType, Temp_int_Variable) == 0x000018, "Member 'BPFL_MachineSelect_C_GetRom1stMachineCountPerType::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineCountPerType, Temp_int_Variable_1) == 0x00001C, "Member 'BPFL_MachineSelect_C_GetRom1stMachineCountPerType::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineCountPerType, Temp_int_Variable_2) == 0x000020, "Member 'BPFL_MachineSelect_C_GetRom1stMachineCountPerType::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineCountPerType, Temp_int_Variable_3) == 0x000024, "Member 'BPFL_MachineSelect_C_GetRom1stMachineCountPerType::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineCountPerType, Temp_int_Variable_4) == 0x000028, "Member 'BPFL_MachineSelect_C_GetRom1stMachineCountPerType::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineCountPerType, K2Node_Select_Default) == 0x00002C, "Member 'BPFL_MachineSelect_C_GetRom1stMachineCountPerType::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_MachineSelect_C_GetRom1stMachineCountPerType;
 
 // Function BPFL_MachineSelect.BPFL_MachineSelect_C.GetRom1stMachineIdByMachineId
 // 0x0150 (0x0150 - 0x0000)
@@ -386,89 +280,7 @@ public:
 	int32                                         Temp_int_Variable_75;                              // 0x0144(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_Select_Default;                             // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId) == 0x000008, "Wrong alignment on BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId");
-static_assert(sizeof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId) == 0x000150, "Wrong size on BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, InMachineID) == 0x000000, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::InMachineID' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, __WorldContext) == 0x000008, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::__WorldContext' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, OnestMAchineIndex) == 0x000010, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::OnestMAchineIndex' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable) == 0x000014, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000018, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_1) == 0x00001C, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_2) == 0x000020, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_3) == 0x000024, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_4) == 0x000028, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_5) == 0x00002C, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_5' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_6) == 0x000030, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_6' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_7) == 0x000034, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_7' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_8) == 0x000038, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_8' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_9) == 0x00003C, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_9' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_10) == 0x000040, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_10' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_11) == 0x000044, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_11' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_12) == 0x000048, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_12' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_13) == 0x00004C, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_13' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_14) == 0x000050, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_14' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_15) == 0x000054, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_15' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_16) == 0x000058, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_16' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_17) == 0x00005C, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_17' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_18) == 0x000060, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_18' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_19) == 0x000064, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_19' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_20) == 0x000068, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_20' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_21) == 0x00006C, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_21' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_22) == 0x000070, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_22' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_23) == 0x000074, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_23' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_24) == 0x000078, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_24' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_25) == 0x00007C, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_25' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_26) == 0x000080, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_26' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_27) == 0x000084, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_27' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_28) == 0x000088, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_28' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_29) == 0x00008C, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_29' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_30) == 0x000090, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_30' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_31) == 0x000094, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_31' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_32) == 0x000098, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_32' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_33) == 0x00009C, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_33' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_34) == 0x0000A0, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_34' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_35) == 0x0000A4, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_35' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_36) == 0x0000A8, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_36' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_37) == 0x0000AC, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_37' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_38) == 0x0000B0, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_38' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_39) == 0x0000B4, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_39' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_40) == 0x0000B8, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_40' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_41) == 0x0000BC, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_41' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_42) == 0x0000C0, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_42' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_43) == 0x0000C4, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_43' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_44) == 0x0000C8, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_44' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_45) == 0x0000CC, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_45' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_46) == 0x0000D0, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_46' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_47) == 0x0000D4, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_47' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_48) == 0x0000D8, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_48' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_49) == 0x0000DC, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_49' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_50) == 0x0000E0, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_50' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_51) == 0x0000E4, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_51' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_52) == 0x0000E8, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_52' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_53) == 0x0000EC, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_53' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_54) == 0x0000F0, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_54' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_55) == 0x0000F4, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_55' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_56) == 0x0000F8, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_56' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_57) == 0x0000FC, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_57' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_58) == 0x000100, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_58' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_59) == 0x000104, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_59' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_60) == 0x000108, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_60' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_61) == 0x00010C, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_61' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_62) == 0x000110, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_62' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_63) == 0x000114, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_63' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_64) == 0x000118, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_64' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_65) == 0x00011C, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_65' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_66) == 0x000120, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_66' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_67) == 0x000124, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_67' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_68) == 0x000128, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_68' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_69) == 0x00012C, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_69' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_70) == 0x000130, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_70' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_71) == 0x000134, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_71' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_72) == 0x000138, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_72' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_73) == 0x00013C, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_73' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_74) == 0x000140, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_74' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, Temp_int_Variable_75) == 0x000144, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::Temp_int_Variable_75' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId, K2Node_Select_Default) == 0x000148, "Member 'BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_MachineSelect_C_GetRom1stMachineIdByMachineId;
 
 // Function BPFL_MachineSelect.BPFL_MachineSelect_C.GetRom1stMachineName
 // 0x0218 (0x0218 - 0x0000)
@@ -513,43 +325,7 @@ public:
 	class FText                                   Temp_text_Variable_29;                             // 0x01F8(0x0010)()
 	class FText                                   K2Node_Select_Default;                             // 0x0208(0x0010)()
 };
-static_assert(alignof(BPFL_MachineSelect_C_GetRom1stMachineName) == 0x000008, "Wrong alignment on BPFL_MachineSelect_C_GetRom1stMachineName");
-static_assert(sizeof(BPFL_MachineSelect_C_GetRom1stMachineName) == 0x000218, "Wrong size on BPFL_MachineSelect_C_GetRom1stMachineName");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, Rom1stIndex) == 0x000000, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::Rom1stIndex' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, __WorldContext) == 0x000008, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::__WorldContext' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, MachineNameText) == 0x000010, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::MachineNameText' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, Temp_int_Variable) == 0x000020, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, Temp_text_Variable) == 0x000028, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, Temp_text_Variable_1) == 0x000038, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::Temp_text_Variable_1' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, Temp_text_Variable_2) == 0x000048, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::Temp_text_Variable_2' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, Temp_text_Variable_3) == 0x000058, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::Temp_text_Variable_3' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, Temp_text_Variable_4) == 0x000068, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::Temp_text_Variable_4' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, Temp_text_Variable_5) == 0x000078, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::Temp_text_Variable_5' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, Temp_text_Variable_6) == 0x000088, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::Temp_text_Variable_6' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, Temp_text_Variable_7) == 0x000098, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::Temp_text_Variable_7' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, Temp_text_Variable_8) == 0x0000A8, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::Temp_text_Variable_8' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, Temp_text_Variable_9) == 0x0000B8, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::Temp_text_Variable_9' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, Temp_text_Variable_10) == 0x0000C8, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::Temp_text_Variable_10' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, Temp_text_Variable_11) == 0x0000D8, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::Temp_text_Variable_11' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, Temp_text_Variable_12) == 0x0000E8, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::Temp_text_Variable_12' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, Temp_text_Variable_13) == 0x0000F8, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::Temp_text_Variable_13' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, Temp_text_Variable_14) == 0x000108, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::Temp_text_Variable_14' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, Temp_text_Variable_15) == 0x000118, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::Temp_text_Variable_15' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, Temp_text_Variable_16) == 0x000128, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::Temp_text_Variable_16' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, Temp_text_Variable_17) == 0x000138, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::Temp_text_Variable_17' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, Temp_text_Variable_18) == 0x000148, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::Temp_text_Variable_18' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, Temp_text_Variable_19) == 0x000158, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::Temp_text_Variable_19' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, Temp_text_Variable_20) == 0x000168, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::Temp_text_Variable_20' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, Temp_text_Variable_21) == 0x000178, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::Temp_text_Variable_21' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, Temp_text_Variable_22) == 0x000188, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::Temp_text_Variable_22' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, Temp_text_Variable_23) == 0x000198, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::Temp_text_Variable_23' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, Temp_text_Variable_24) == 0x0001A8, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::Temp_text_Variable_24' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, Temp_text_Variable_25) == 0x0001B8, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::Temp_text_Variable_25' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, Temp_text_Variable_26) == 0x0001C8, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::Temp_text_Variable_26' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, Temp_text_Variable_27) == 0x0001D8, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::Temp_text_Variable_27' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, Temp_text_Variable_28) == 0x0001E8, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::Temp_text_Variable_28' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, Temp_text_Variable_29) == 0x0001F8, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::Temp_text_Variable_29' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetRom1stMachineName, K2Node_Select_Default) == 0x000208, "Member 'BPFL_MachineSelect_C_GetRom1stMachineName::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_MachineSelect_C_GetRom1stMachineName;
 
 // Function BPFL_MachineSelect.BPFL_MachineSelect_C.GetTypeIndexFromRom1stId
 // 0x0098 (0x0098 - 0x0000)
@@ -593,43 +369,7 @@ public:
 	int32                                         Temp_int_Variable_30;                              // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_Select_Default;                             // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId) == 0x000008, "Wrong alignment on BPFL_MachineSelect_C_GetTypeIndexFromRom1stId");
-static_assert(sizeof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId) == 0x000098, "Wrong size on BPFL_MachineSelect_C_GetTypeIndexFromRom1stId");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, Rom1stId) == 0x000000, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::Rom1stId' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, __WorldContext) == 0x000008, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::__WorldContext' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, TypeIndex) == 0x000010, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::TypeIndex' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, Temp_int_Variable) == 0x000014, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, Temp_int_Variable_1) == 0x000018, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, Temp_int_Variable_2) == 0x00001C, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, Temp_int_Variable_3) == 0x000020, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, Temp_int_Variable_4) == 0x000024, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, Temp_int_Variable_5) == 0x000028, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::Temp_int_Variable_5' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, Temp_int_Variable_6) == 0x00002C, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::Temp_int_Variable_6' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, Temp_int_Variable_7) == 0x000030, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::Temp_int_Variable_7' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, Temp_int_Variable_8) == 0x000034, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::Temp_int_Variable_8' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, Temp_int_Variable_9) == 0x000038, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::Temp_int_Variable_9' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, Temp_int_Variable_10) == 0x00003C, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::Temp_int_Variable_10' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, Temp_int_Variable_11) == 0x000040, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::Temp_int_Variable_11' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, Temp_int_Variable_12) == 0x000044, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::Temp_int_Variable_12' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, Temp_int_Variable_13) == 0x000048, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::Temp_int_Variable_13' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, Temp_int_Variable_14) == 0x00004C, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::Temp_int_Variable_14' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, Temp_int_Variable_15) == 0x000050, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::Temp_int_Variable_15' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, Temp_int_Variable_16) == 0x000054, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::Temp_int_Variable_16' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, Temp_int_Variable_17) == 0x000058, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::Temp_int_Variable_17' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, Temp_int_Variable_18) == 0x00005C, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::Temp_int_Variable_18' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, Temp_int_Variable_19) == 0x000060, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::Temp_int_Variable_19' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, Temp_int_Variable_20) == 0x000064, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::Temp_int_Variable_20' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, Temp_int_Variable_21) == 0x000068, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::Temp_int_Variable_21' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, Temp_int_Variable_22) == 0x00006C, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::Temp_int_Variable_22' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, Temp_int_Variable_23) == 0x000070, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::Temp_int_Variable_23' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, Temp_int_Variable_24) == 0x000074, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::Temp_int_Variable_24' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, Temp_int_Variable_25) == 0x000078, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::Temp_int_Variable_25' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, Temp_int_Variable_26) == 0x00007C, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::Temp_int_Variable_26' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, Temp_int_Variable_27) == 0x000080, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::Temp_int_Variable_27' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, Temp_int_Variable_28) == 0x000084, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::Temp_int_Variable_28' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, Temp_int_Variable_29) == 0x000088, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::Temp_int_Variable_29' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, Temp_int_Variable_30) == 0x00008C, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::Temp_int_Variable_30' has a wrong offset!");
-static_assert(offsetof(BPFL_MachineSelect_C_GetTypeIndexFromRom1stId, K2Node_Select_Default) == 0x000090, "Member 'BPFL_MachineSelect_C_GetTypeIndexFromRom1stId::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_MachineSelect_C_GetTypeIndexFromRom1stId;
 
 }
 

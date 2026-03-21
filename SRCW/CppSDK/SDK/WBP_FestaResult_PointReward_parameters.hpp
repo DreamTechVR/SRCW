@@ -11,12 +11,12 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "UnionSystem_structs.hpp"
-#include "UnionUI_structs.hpp"
-#include "UNION_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "ST_FestaResultSceneData_structs.hpp"
 #include "UnionRun_structs.hpp"
+#include "UNION_structs.hpp"
+#include "UnionSystem_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "UnionUI_structs.hpp"
+#include "ST_FestaResultSceneData_structs.hpp"
 #include "MovieScene_structs.hpp"
 
 
@@ -34,12 +34,7 @@ public:
 	int32                                         PositionIndex;                                     // 0x007C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         RacerIndex;                                        // 0x0080(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FestaResult_PointReward_C_CreateMachine) == 0x000008, "Wrong alignment on WBP_FestaResult_PointReward_C_CreateMachine");
-static_assert(sizeof(WBP_FestaResult_PointReward_C_CreateMachine) == 0x000088, "Wrong size on WBP_FestaResult_PointReward_C_CreateMachine");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_CreateMachine, CustomizeData) == 0x000000, "Member 'WBP_FestaResult_PointReward_C_CreateMachine::CustomizeData' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_CreateMachine, MachineId) == 0x000078, "Member 'WBP_FestaResult_PointReward_C_CreateMachine::MachineId' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_CreateMachine, PositionIndex) == 0x00007C, "Member 'WBP_FestaResult_PointReward_C_CreateMachine::PositionIndex' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_CreateMachine, RacerIndex) == 0x000080, "Member 'WBP_FestaResult_PointReward_C_CreateMachine::RacerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FestaResult_PointReward_C_CreateMachine;
 
 // Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.CreateRacerModel
 // 0x0008 (0x0008 - 0x0000)
@@ -49,13 +44,10 @@ public:
 	int32                                         RacerIndex;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         PositionIndex;                                     // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FestaResult_PointReward_C_CreateRacerModel) == 0x000004, "Wrong alignment on WBP_FestaResult_PointReward_C_CreateRacerModel");
-static_assert(sizeof(WBP_FestaResult_PointReward_C_CreateRacerModel) == 0x000008, "Wrong size on WBP_FestaResult_PointReward_C_CreateRacerModel");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_CreateRacerModel, RacerIndex) == 0x000000, "Member 'WBP_FestaResult_PointReward_C_CreateRacerModel::RacerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_CreateRacerModel, PositionIndex) == 0x000004, "Member 'WBP_FestaResult_PointReward_C_CreateRacerModel::PositionIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FestaResult_PointReward_C_CreateRacerModel;
 
 // Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.ExecuteUbergraph_WBP_FestaResult_PointReward
-// 0x2220 (0x2220 - 0x0000)
+// 0x2260 (0x2260 - 0x0000)
 struct WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward final
 {
 public:
@@ -111,689 +103,360 @@ public:
 	uint8                                         Pad_1D5[0x3];                                      // 0x01D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x01D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable_2;                               // 0x01DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FAppRaceConfigData                     CallFunc_GetAppRaceConfigData_OutData;             // 0x01E0(0x0500)()
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_1;           // 0x06E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EMachineId                                    CallFunc_GetEMachineId_ReturnValue;                // 0x06E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue_1; // 0x06E2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6E3[0x5];                                      // 0x06E3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                CallFunc_LoadAsset_Blocking_ReturnValue_1;         // 0x06E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             K2Node_DynamicCast_As_____2D_1;                    // 0x06F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x06F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsHoverboardMachineId_ReturnValue;        // 0x06F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6FA[0x2];                                      // 0x06FA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x06FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x0700(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue_1;        // 0x0704(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_705[0x3];                                      // 0x0705(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUserMachineCustomizeData              K2Node_CustomEvent_CustomizeData;                  // 0x0708(0x0078)()
-	EMachineId                                    K2Node_CustomEvent_MachineID;                      // 0x0780(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_781[0x3];                                      // 0x0781(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_CustomEvent_PositionIndex;                  // 0x0784(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_RacerIndex;                     // 0x0788(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EDriverId                                     CallFunc_GetDriverIdByRacerIndex_ReturnValue;      // 0x078C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_78D[0x3];                                      // 0x078D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDriverData                            CallFunc_GetDriverData_OutDriverData;              // 0x0790(0x0390)()
-	ECarStatusType                                CallFunc_GetCarStatusType_ReturnValue;             // 0x0B20(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsHoverboardMachineId_ReturnValue_1;      // 0x0B21(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0B22(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B23[0x1];                                      // 0x0B23(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0B24(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFestaRacerContribution                CallFunc_Array_Get_Item;                           // 0x0B28(0x0014)(NoDestructor)
-	EDriverId                                     CallFunc_GetFestaDriverId_impl_DriverId_1;         // 0x0B3C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B3D[0x3];                                      // 0x0B3D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class ABP_SceneDriver_C*                      CallFunc_Array_Get_Item_1;                         // 0x0B40(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_GetEnumeratorName_ReturnValue;            // 0x0B48(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0B50(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B54[0x4];                                      // 0x0B54(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDriverData                            CallFunc_GetDataTableRowFromName_OutRow;           // 0x0B58(0x0390)()
-	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0EE8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_EE9[0x7];                                      // 0x0EE9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_NameToString_ReturnValue;            // 0x0EF0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Is_List_Exist_Driver_Id_bIsExist;         // 0x0F00(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F01[0x7];                                      // 0x0F01(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                CallFunc_LoadAsset_Blocking_ReturnValue_2;         // 0x0F08(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMesh*                          K2Node_DynamicCast_As_________;                    // 0x0F10(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0F18(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F19[0x7];                                      // 0x0F19(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ABP_SceneDriver_C*                      CallFunc_Array_Get_Item_2;                         // 0x0F20(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x0F28(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class APawn*                                  CallFunc_GetPlayerPawn_ReturnValue;                // 0x0F30(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FFestaResultRewardInfo                 CallFunc_GetFestaResultRewardInfo_OutInfo;         // 0x0F38(0x0038)()
-	class AVehicleInRacePawn*                     K2Node_DynamicCast_AsVehicle_in_Race_Pawn;         // 0x0F70(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0F78(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F79[0x3];                                      // 0x0F79(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_5;                 // 0x0F7C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_6;                 // 0x0F80(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Multiply_IntInt_ReturnValue;              // 0x0F84(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_7;                 // 0x0F88(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0F8C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0F90(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F91[0x7];                                      // 0x0F91(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0F98(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_3;              // 0x0FA0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0FA8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_3;                               // 0x0FAC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0FB0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_2;           // 0x0FB4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0FB5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_FB6[0x2];                                      // 0x0FB6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_8;                 // 0x0FB8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Is_Load_Ok_bIsLoadOk;                     // 0x0FBC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_FBD[0x3];                                      // 0x0FBD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_CustomEvent_TicketAdd;                      // 0x0FC0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetUpdatePoint_OutIconWindowX;            // 0x0FC4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetUpdatePoint_OutGagePosi;               // 0x0FC8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetUpdatePoint_OutGetRewardIndex;         // 0x0FCC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UNetMasterDataManageSubsystem*          CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0FD0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue_2;        // 0x0FD8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_FD9[0x3];                                      // 0x0FD9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_9;                 // 0x0FDC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRewardGetWindowParam                  CallFunc_SaveFestaRewardItemData_OutRewardGetWindowParam; // 0x0FE0(0x0010)(NoDestructor)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0FF0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_FF1[0x7];                                      // 0x0FF1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x0FF8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue; // 0x1008(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	TArray<struct FRewardGetWindowParam>          K2Node_MakeArray_Array_1;                          // 0x1018(0x0010)(ConstParm, ReferenceParm)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x1028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x1038(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x1048(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x1058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_bIsGetReward;                   // 0x1059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_105A[0x2];                                     // 0x105A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x105C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFestaRacerContribution                CallFunc_Array_Get_Item_3;                         // 0x1060(0x0014)(NoDestructor)
-	int32                                         Temp_int_Variable_4;                               // 0x1074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_1;            // 0x1078(0x0010)()
-	double                                        K2Node_CustomEvent_PosX;                           // 0x1088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x1090(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_GetPosition_ReturnValue;                  // 0x1098(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector2D_X;                          // 0x10A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector2D_Y;                          // 0x10B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x10B8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x10C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_10C9[0x7];                                     // 0x10C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x10D0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_10E8[0x8];                                     // 0x10E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue_1;              // 0x10F0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable_2;                            // 0x1150(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select_Default;                             // 0x1160(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_Array_Get_Item_4;                         // 0x1170(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x11D0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x11E8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x1200(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_ComposeRotators_ReturnValue;              // 0x1218(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x1230(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UChildActorComponent*>           K2Node_MakeArray_Array_2;                          // 0x1248(0x0010)(ReferenceParm, ContainsInstancedReference)
-	struct FHitResult                             CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult; // 0x1258(0x00F8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         CallFunc_Array_Length_ReturnValue_3;               // 0x1350(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1354[0x4];                                     // 0x1354(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_BreakTransform_Location_1;                // 0x1358(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation_1;                // 0x1370(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale_1;                   // 0x1388(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x13A0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ACameraActor*                           CallFunc_SetupViewBg_ReturnValue;                  // 0x1400(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FMovieSceneSequencePlaybackSettings    K2Node_MakeStruct_MovieSceneSequencePlaybackSettings; // 0x1408(0x0028)(NoDestructor)
-	TArray<class AActor*>                         K2Node_MakeArray_Array_3;                          // 0x1430(0x0010)(ConstParm, ReferenceParm)
-	EStageId                                      CallFunc_GetResultPlayingStageId_OutStageId;       // 0x1440(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1441[0xF];                                     // 0x1441(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_GetResultPlayingStageId_OutTransform;     // 0x1450(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_5;                               // 0x14B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14B4[0x4];                                     // 0x14B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_BreakTransform_Location_2;                // 0x14B8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation_2;                // 0x14D0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale_2;                   // 0x14E8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_3;           // 0x1500(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1501[0x7];                                     // 0x1501(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x1508(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_FestResultBG_C*                     CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x1510(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetPlayerRacerIndex_ReturnValue_1;        // 0x1518(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetGroupIndex_ReturnValue;                // 0x151C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FColor                                 CallFunc_GetFestaMainColor_ReturnValue;            // 0x1520(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1524[0x4];                                     // 0x1524(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UMaterialInterface*>             CallFunc_GetMaterials_ReturnValue;                 // 0x1528(0x0010)(ReferenceParm)
-	class UMaterialInterface*                     CallFunc_Array_Get_Item_5;                         // 0x1538(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Conv_ColorToLinearColor_ReturnValue;      // 0x1540(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x1550(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x1558(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x155C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_155D[0x3];                                     // 0x155D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_10;                // 0x1560(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetPlayerRacerIndex_ReturnValue_2;        // 0x1564(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetPlayerRacerIndex_ReturnValue_3;        // 0x1568(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetGroupIndex_ReturnValue_1;              // 0x156C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetGroupIndex_ReturnValue_2;              // 0x1570(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EMachineColorPresetId                         CallFunc_GetGroupMachineColorPresetId_ReturnValue; // 0x1574(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EMachineColorPresetId                         CallFunc_GetGroupMachineColorPresetId_ReturnValue_1; // 0x1575(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1576[0x2];                                     // 0x1576(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable_6;                               // 0x1578(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSoundHandle                           CallFunc_Stop_ReturnValue_1;                       // 0x157C(0x0004)()
-	int32                                         CallFunc_Add_IntInt_ReturnValue_11;                // 0x1580(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSoundHandle                           CallFunc_Stop_ReturnValue_2;                       // 0x1584(0x0004)()
-	struct FSoundHandle                           CallFunc_Stop_ReturnValue_3;                       // 0x1588(0x0004)()
-	struct FSoundHandle                           CallFunc_Stop_ReturnValue_4;                       // 0x158C(0x0004)()
-	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x1590(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x1594(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x1598(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1599[0x7];                                     // 0x1599(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UChildActorComponent*                   CallFunc_Array_Get_Item_6;                         // 0x15A0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_15A8[0x8];                                     // 0x15A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue_1;     // 0x15B0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue_2;                  // 0x1610(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_12;                // 0x1614(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UObject*>                        CallFunc_LoadSceneDriverAnimationAssets_LoadAssets; // 0x1618(0x0010)(ReferenceParm)
-	class FString                                 CallFunc_Conv_IntToString_ReturnValue_1;           // 0x1628(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Conv_StringToName_ReturnValue_1;          // 0x1638(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue_3;                  // 0x1640(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_2;                  // 0x1644(0x0004)()
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_4;              // 0x1648(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_7;                               // 0x1650(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_4;           // 0x1654(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1655[0x3];                                     // 0x1655(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_13;                // 0x1658(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_165C[0x4];                                     // 0x165C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAppRaceConfigData                     CallFunc_GetAppRaceConfigData_OutData_1;           // 0x1660(0x0500)()
-	float                                         Temp_real_Variable;                                // 0x1B60(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Temp_real_Variable_1;                              // 0x1B64(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsHoverboardMachineId_ReturnValue_2;      // 0x1B68(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1B69[0x7];                                     // 0x1B69(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_5;              // 0x1B70(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_3;                  // 0x1B78(0x0004)()
-	bool                                          CallFunc_ApplySettingsCineCameraAll_OutResult;     // 0x1B7C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsPaused_ReturnValue;                     // 0x1B7D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x1B7E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1B7F[0x1];                                     // 0x1B7F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable_8;                               // 0x1B80(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_5;           // 0x1B84(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x1B85(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1B86[0x2];                                     // 0x1B86(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetFestaChanceUpRatioText_ReturnValue;    // 0x1B88(0x0010)()
-	TDelegate<void(EUnionUIFadeDirection FadeDirection)> K2Node_CreateDelegate_OutputDelegate;       // 0x1B98(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x1BA8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x1BB8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1BB9[0x7];                                     // 0x1BB9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_ItemGet_Display_C*                 CallFunc_Create_ReturnValue;                       // 0x1BC0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	ERewardType                                   K2Node_CustomEvent_Type;                           // 0x1BC8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1BC9[0x3];                                     // 0x1BC9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_CustomEvent_ItemId;                         // 0x1BCC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable;                                // 0x1BD0(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRewardGetWindowParam                  K2Node_MakeStruct_RewardGetWindowParam;            // 0x1BD8(0x0010)(NoDestructor)
-	TArray<struct FRewardGetWindowParam>          K2Node_MakeArray_Array_4;                          // 0x1BE8(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_2;            // 0x1BF8(0x0010)()
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue_1;        // 0x1C08(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_3;            // 0x1C10(0x0010)()
-	class FName                                   CallFunc_GetEnumeratorName_ReturnValue_1;          // 0x1C20(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C28[0x8];                                     // 0x1C28(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FST_FestaResultSceneData               CallFunc_GetDataTableRowFromName_OutRow_1;         // 0x1C30(0x0070)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue_1;    // 0x1CA0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1CA1[0x7];                                     // 0x1CA1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UNetMasterDataManageSubsystem*          CallFunc_GetGameInstanceSubsystem_ReturnValue_1;   // 0x1CA8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EDriverId                                     CallFunc_GetFestaCollaboDriverId_OutDriverId;      // 0x1CB0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1CB1[0x7];                                     // 0x1CB1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_BreakTransform_Location_3;                // 0x1CB8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation_3;                // 0x1CD0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale_3;                   // 0x1CE8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x1D00(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D18[0x8];                                     // 0x1D18(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue_2;              // 0x1D20(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSoundHandle                           CallFunc_Stop_ReturnValue_5;                       // 0x1D80(0x0004)()
-	EDriverPose                                   Temp_byte_Variable;                                // 0x1D84(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D85[0x3];                                     // 0x1D85(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable_9;                               // 0x1D88(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_6;           // 0x1D8C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D8D[0x3];                                     // 0x1D8D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue_4;               // 0x1D90(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_3;                // 0x1D94(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue_3;        // 0x1D95(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EDriverPose                                   Temp_byte_Variable_1;                              // 0x1D96(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D97[0x1];                                     // 0x1D97(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Select_Default_1;                           // 0x1D98(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x1D9C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_14;                // 0x1DA0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_1;                              // 0x1DA4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EDriverPose                                   K2Node_Select_Default_2;                           // 0x1DA5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1DA6[0x2];                                     // 0x1DA6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class UStickerBakeManagerSubsystem*           CallFunc_GetGameInstanceSubsystem_ReturnValue_2;   // 0x1DA8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Multiply_IntInt_ReturnValue_1;            // 0x1DB0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1DB4[0x4];                                     // 0x1DB4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture*                               CallFunc_GetRearStickerTextureFromRacerIndex_ReturnValue; // 0x1DB8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_15;                // 0x1DC0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1DC4[0x4];                                     // 0x1DC4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture*                               CallFunc_GetFrontStickerTextureFromRacerIndex_ReturnValue; // 0x1DC8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UTexture*                               CallFunc_GetRearStickerTextureFromRacerIndex_ReturnValue_1; // 0x1DD0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UTexture*                               CallFunc_GetFrontStickerTextureFromRacerIndex_ReturnValue_1; // 0x1DD8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue_4;        // 0x1DE0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EUnionUIFadeDirection                         K2Node_CustomEvent_FadeDirection;                  // 0x1DE1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1DE2[0x6];                                     // 0x1DE2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     CallFunc_GetMaterial_ReturnValue;                  // 0x1DE8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Conv_ColorToLinearColor_ReturnValue_1;    // 0x1DF0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue_1; // 0x1E00(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ULevelSequence*                         Temp_object_Variable;                              // 0x1E08(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ERewardType                                   CallFunc_GetFestaStreakReward_OutRewardType;       // 0x1E10(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1E11[0x3];                                     // 0x1E11(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetFestaStreakReward_OutRewardId;         // 0x1E14(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ULevelSequence*                         Temp_object_Variable_1;                            // 0x1E18(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x1E20(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1E21[0x3];                                     // 0x1E21(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetRacerCount_ReturnValue;                // 0x1E24(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x1E28(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1E2C[0x4];                                     // 0x1E2C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ULevelSequence*                         Temp_object_Variable_2;                            // 0x1E30(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_7;           // 0x1E38(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1E39[0x7];                                     // 0x1E39(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionRacers*                           CallFunc_GetUnionRacers_ReturnValue;               // 0x1E40(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ULevelSequence*                         Temp_object_Variable_3;                            // 0x1E48(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUnionRacer*                            CallFunc_GetRacer_ReturnValue;                     // 0x1E50(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_10;                              // 0x1E58(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1E5C[0x4];                                     // 0x1E5C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AVehicleInRacePawn*                     K2Node_DynamicCast_AsVehicle_in_Race_Pawn_1;       // 0x1E60(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x1E68(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1E69[0x7];                                     // 0x1E69(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ULevelSequence*                         K2Node_Select_Default_3;                           // 0x1E70(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ALevelSequenceActor*                    CallFunc_CreateLevelSequencePlayer_OutActor;       // 0x1E78(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ULevelSequencePlayer*                   CallFunc_CreateLevelSequencePlayer_ReturnValue;    // 0x1E80(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue_4;                  // 0x1E88(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsUserHasPrivilege_ReturnValue;           // 0x1E8C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1E8D[0x3];                                     // 0x1E8D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	const class ABP_HoverboardBaseActor_C*        Temp_object_Variable_4;                            // 0x1E90(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUnionUITransitionManager*              CallFunc_GetGameInstanceSubsystem_ReturnValue_3;   // 0x1E98(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USoundAtomCue*                          Temp_object_Variable_5;                            // 0x1EA0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsUserHasPrivilege_ReturnValue_1;         // 0x1EA8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1EA9[0x3];                                     // 0x1EA9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetPlayerRacerIndex_ReturnValue_4;        // 0x1EAC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundAtomCue*                          Temp_object_Variable_6;                            // 0x1EB0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x1EB8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x1EB9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1EBA[0x2];                                     // 0x1EBA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetPlayerRacerIndex_ReturnValue_5;        // 0x1EBC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x1EC0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1EC1[0x7];                                     // 0x1EC1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USoundAtomCue*                          Temp_object_Variable_7;                            // 0x1EC8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x1ED0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1ED1[0x7];                                     // 0x1ED1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USoundAtomCue*                          Temp_object_Variable_8;                            // 0x1ED8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_11;                              // 0x1EE0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1EE4[0x4];                                     // 0x1EE4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USoundAtomCue*                          K2Node_Select_Default_4;                           // 0x1EE8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_2;            // 0x1EF0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_4;                  // 0x1EF4(0x0004)()
-	int32                                         Temp_int_Variable_12;                              // 0x1EF8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x1EFC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1F0C[0x4];                                     // 0x1F0C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_ItemGet_Display_C*                 CallFunc_Create_ReturnValue_1;                     // 0x1F10(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_3;            // 0x1F18(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1F1C[0x4];                                     // 0x1F1C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Result_DonpaTicket_C*              CallFunc_Create_ReturnValue_2;                     // 0x1F20(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_4;            // 0x1F28(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1F2C[0x4];                                     // 0x1F2C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_5;                          // 0x1F30(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x1F40(0x0010)()
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_6;                          // 0x1F50(0x0010)(ReferenceParm)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_7;                          // 0x1F60(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue_2;                     // 0x1F70(0x0010)()
-	class FText                                   CallFunc_Format_ReturnValue_3;                     // 0x1F80(0x0010)()
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_5;            // 0x1F90(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_13;                              // 0x1F94(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   K2Node_Select_Default_5;                           // 0x1F98(0x0010)(ConstParm)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_6;            // 0x1FA8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1FAC[0x4];                                     // 0x1FAC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue_3;              // 0x1FB0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UNetMasterDataManageSubsystem*          CallFunc_GetGameInstanceSubsystem_ReturnValue_4;   // 0x2010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2; // 0x2018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FFestaPointRewardUIData>        CallFunc_GetPointRewardArray_outRewardDataArray;   // 0x2020(0x0010)(ReferenceParm)
-	bool                                          CallFunc_GetPointRewardArray_ReturnValue;          // 0x2030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2031[0x7];                                     // 0x2031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ABP_HoverboardBaseActor_C*              CallFunc_FinishSpawningActor_ReturnValue_2;        // 0x2038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_5;               // 0x2040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x2044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2045[0x3];                                     // 0x2045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_IntToString_ReturnValue_2;           // 0x2048(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_3;              // 0x2058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	TArray<struct FFestaPointRewardUIData>        CallFunc_GetFestaResultPointRewardArray_OutRewardDataArray; // 0x2068(0x0010)(ReferenceParm)
-	int32                                         CallFunc_GetFestaResultPointRewardArray_OutIndexOffset; // 0x2078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_207C[0x4];                                     // 0x207C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FFestaPointRewardUIData>        CallFunc_GetFestaResultPointRewardArray_OutStreakRewardArray; // 0x2080(0x0010)(ReferenceParm)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue_4;              // 0x2090(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3; // 0x20F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_MachineActor_C*                     CallFunc_FinishSpawningActor_ReturnValue_3;        // 0x20F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult_1; // 0x2100(0x00F8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_K2_AttachToComponent_ReturnValue_1;       // 0x21F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21F9[0x3];                                     // 0x21F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable_14;                              // 0x21FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_7;            // 0x2200(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_8;            // 0x2204(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetItemWindowPos_PosX_ImplicitCast;       // 0x2208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetGagePosition_IconPosi_ImplicitCast;    // 0x2210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FAppRaceConfigData                     CallFunc_GetAppRaceConfigData_OutData;             // 0x01E0(0x0520)()
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_1;           // 0x0700(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EMachineId                                    CallFunc_GetEMachineId_ReturnValue;                // 0x0701(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue_1; // 0x0702(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_703[0x5];                                      // 0x0703(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                CallFunc_LoadAsset_Blocking_ReturnValue_1;         // 0x0708(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             K2Node_DynamicCast_As_____2D_1;                    // 0x0710(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0718(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsHoverboardMachineId_ReturnValue;        // 0x0719(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_71A[0x2];                                      // 0x071A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x071C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x0720(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue_1;        // 0x0724(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_725[0x3];                                      // 0x0725(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUserMachineCustomizeData              K2Node_CustomEvent_CustomizeData;                  // 0x0728(0x0078)()
+	EMachineId                                    K2Node_CustomEvent_MachineID;                      // 0x07A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7A1[0x3];                                      // 0x07A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_CustomEvent_PositionIndex;                  // 0x07A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_RacerIndex;                     // 0x07A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EDriverId                                     CallFunc_GetDriverIdByRacerIndex_ReturnValue;      // 0x07AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7AD[0x3];                                      // 0x07AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDriverData                            CallFunc_GetDriverData_OutDriverData;              // 0x07B0(0x0390)()
+	ECarStatusType                                CallFunc_GetCarStatusType_ReturnValue;             // 0x0B40(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsHoverboardMachineId_ReturnValue_1;      // 0x0B41(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0B42(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B43[0x1];                                      // 0x0B43(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0B44(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFestaRacerContribution                CallFunc_Array_Get_Item;                           // 0x0B48(0x0014)(NoDestructor)
+	EDriverId                                     CallFunc_GetFestaDriverId_impl_DriverId_1;         // 0x0B5C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B5D[0x3];                                      // 0x0B5D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_SceneDriver_C*                      CallFunc_Array_Get_Item_1;                         // 0x0B60(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetEnumeratorName_ReturnValue;            // 0x0B68(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0B70(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B74[0x4];                                      // 0x0B74(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDriverData                            CallFunc_GetDataTableRowFromName_OutRow;           // 0x0B78(0x0390)()
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0F08(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F09[0x7];                                      // 0x0F09(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_NameToString_ReturnValue;            // 0x0F10(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Is_List_Exist_Driver_Id_bIsExist;         // 0x0F20(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F21[0x7];                                      // 0x0F21(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                CallFunc_LoadAsset_Blocking_ReturnValue_2;         // 0x0F28(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMesh*                          K2Node_DynamicCast_As_________;                    // 0x0F30(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0F38(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F39[0x7];                                      // 0x0F39(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_SceneDriver_C*                      CallFunc_Array_Get_Item_2;                         // 0x0F40(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x0F48(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  CallFunc_GetPlayerPawn_ReturnValue;                // 0x0F50(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FFestaResultRewardInfo                 CallFunc_GetFestaResultRewardInfo_OutInfo;         // 0x0F58(0x0038)()
+	class AVehicleInRacePawn*                     K2Node_DynamicCast_AsVehicle_in_Race_Pawn;         // 0x0F90(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0F98(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F99[0x3];                                      // 0x0F99(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_5;                 // 0x0F9C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_6;                 // 0x0FA0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Multiply_IntInt_ReturnValue;              // 0x0FA4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_7;                 // 0x0FA8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0FAC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0FB0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_FB1[0x7];                                      // 0x0FB1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0FB8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_3;              // 0x0FC0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0FC8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_3;                               // 0x0FCC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0FD0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_2;           // 0x0FD4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0FD5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_FD6[0x2];                                      // 0x0FD6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_8;                 // 0x0FD8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Is_Load_Ok_bIsLoadOk;                     // 0x0FDC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_FDD[0x3];                                      // 0x0FDD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_CustomEvent_TicketAdd;                      // 0x0FE0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetUpdatePoint_OutIconWindowX;            // 0x0FE4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetUpdatePoint_OutGagePosi;               // 0x0FE8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetUpdatePoint_OutGetRewardIndex;         // 0x0FEC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UNetMasterDataManageSubsystem*          CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0FF0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue_2;        // 0x0FF8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_FF9[0x3];                                      // 0x0FF9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_9;                 // 0x0FFC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRewardGetWindowParam                  CallFunc_SaveFestaRewardItemData_OutRewardGetWindowParam; // 0x1000(0x0010)(NoDestructor)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x1010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1011[0x7];                                     // 0x1011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x1018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue; // 0x1028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	TArray<struct FRewardGetWindowParam>          K2Node_MakeArray_Array_1;                          // 0x1038(0x0010)(ConstParm, ReferenceParm)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x1048(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x1058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x1068(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x1078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_bIsGetReward;                   // 0x1079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_107A[0x2];                                     // 0x107A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x107C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFestaRacerContribution                CallFunc_Array_Get_Item_3;                         // 0x1080(0x0014)(NoDestructor)
+	int32                                         Temp_int_Variable_4;                               // 0x1094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_1;            // 0x1098(0x0010)()
+	double                                        K2Node_CustomEvent_PosX;                           // 0x10A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x10B0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_GetPosition_ReturnValue;                  // 0x10B8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector2D_X;                          // 0x10C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector2D_Y;                          // 0x10D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x10D8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x10E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_10E9[0x7];                                     // 0x10E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x10F0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1108[0x8];                                     // 0x1108(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue_1;              // 0x1110(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable_2;                            // 0x1170(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select_Default;                             // 0x1180(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_Array_Get_Item_4;                         // 0x1190(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x11F0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x1208(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x1220(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_ComposeRotators_ReturnValue;              // 0x1238(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x1250(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UChildActorComponent*>           K2Node_MakeArray_Array_2;                          // 0x1268(0x0010)(ReferenceParm, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult; // 0x1278(0x00F8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	int32                                         CallFunc_Array_Length_ReturnValue_3;               // 0x1370(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1374[0x4];                                     // 0x1374(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_BreakTransform_Location_1;                // 0x1378(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation_1;                // 0x1390(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale_1;                   // 0x13A8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x13C0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ACameraActor*                           CallFunc_SetupViewBg_ReturnValue;                  // 0x1420(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FMovieSceneSequencePlaybackSettings    K2Node_MakeStruct_MovieSceneSequencePlaybackSettings; // 0x1428(0x0028)(NoDestructor)
+	TArray<class AActor*>                         K2Node_MakeArray_Array_3;                          // 0x1450(0x0010)(ConstParm, ReferenceParm)
+	EStageId                                      CallFunc_GetResultPlayingStageId_OutStageId;       // 0x1460(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1461[0xF];                                     // 0x1461(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_GetResultPlayingStageId_OutTransform;     // 0x1470(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_5;                               // 0x14D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14D4[0x4];                                     // 0x14D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_BreakTransform_Location_2;                // 0x14D8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation_2;                // 0x14F0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale_2;                   // 0x1508(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_3;           // 0x1520(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1521[0x7];                                     // 0x1521(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x1528(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_FestResultBG_C*                     CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x1530(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetPlayerRacerIndex_ReturnValue_1;        // 0x1538(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetGroupIndex_ReturnValue;                // 0x153C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FColor                                 CallFunc_GetFestaMainColor_ReturnValue;            // 0x1540(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1544[0x4];                                     // 0x1544(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UMaterialInterface*>             CallFunc_GetMaterials_ReturnValue;                 // 0x1548(0x0010)(ReferenceParm)
+	class UMaterialInterface*                     CallFunc_Array_Get_Item_5;                         // 0x1558(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Conv_ColorToLinearColor_ReturnValue;      // 0x1560(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x1570(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x1578(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x157C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_157D[0x3];                                     // 0x157D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_10;                // 0x1580(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetPlayerRacerIndex_ReturnValue_2;        // 0x1584(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetPlayerRacerIndex_ReturnValue_3;        // 0x1588(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetGroupIndex_ReturnValue_1;              // 0x158C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetGroupIndex_ReturnValue_2;              // 0x1590(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EMachineColorPresetId                         CallFunc_GetGroupMachineColorPresetId_ReturnValue; // 0x1594(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EMachineColorPresetId                         CallFunc_GetGroupMachineColorPresetId_ReturnValue_1; // 0x1595(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1596[0x2];                                     // 0x1596(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable_6;                               // 0x1598(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSoundHandle                           CallFunc_Stop_ReturnValue_1;                       // 0x159C(0x0004)()
+	int32                                         CallFunc_Add_IntInt_ReturnValue_11;                // 0x15A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSoundHandle                           CallFunc_Stop_ReturnValue_2;                       // 0x15A4(0x0004)()
+	struct FSoundHandle                           CallFunc_Stop_ReturnValue_3;                       // 0x15A8(0x0004)()
+	struct FSoundHandle                           CallFunc_Stop_ReturnValue_4;                       // 0x15AC(0x0004)()
+	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x15B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x15B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x15B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_15B9[0x7];                                     // 0x15B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UChildActorComponent*                   CallFunc_Array_Get_Item_6;                         // 0x15C0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_15C8[0x8];                                     // 0x15C8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue_1;     // 0x15D0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue_2;                  // 0x1630(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_12;                // 0x1634(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UObject*>                        CallFunc_LoadSceneDriverAnimationAssets_LoadAssets; // 0x1638(0x0010)(ReferenceParm)
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue_1;           // 0x1648(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Conv_StringToName_ReturnValue_1;          // 0x1658(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue_3;                  // 0x1660(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_2;                  // 0x1664(0x0004)()
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_4;              // 0x1668(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_7;                               // 0x1670(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_4;           // 0x1674(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1675[0x3];                                     // 0x1675(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_13;                // 0x1678(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_167C[0x4];                                     // 0x167C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FAppRaceConfigData                     CallFunc_GetAppRaceConfigData_OutData_1;           // 0x1680(0x0520)()
+	float                                         Temp_real_Variable;                                // 0x1BA0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Temp_real_Variable_1;                              // 0x1BA4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsHoverboardMachineId_ReturnValue_2;      // 0x1BA8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1BA9[0x7];                                     // 0x1BA9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_5;              // 0x1BB0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_3;                  // 0x1BB8(0x0004)()
+	bool                                          CallFunc_ApplySettingsCineCameraAll_OutResult;     // 0x1BBC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsPaused_ReturnValue;                     // 0x1BBD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x1BBE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1BBF[0x1];                                     // 0x1BBF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable_8;                               // 0x1BC0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_5;           // 0x1BC4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x1BC5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1BC6[0x2];                                     // 0x1BC6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetFestaChanceUpRatioText_ReturnValue;    // 0x1BC8(0x0010)()
+	TDelegate<void(EUnionUIFadeDirection FadeDirection)> K2Node_CreateDelegate_OutputDelegate;       // 0x1BD8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x1BE8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x1BF8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1BF9[0x7];                                     // 0x1BF9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_ItemGet_Display_C*                 CallFunc_Create_ReturnValue;                       // 0x1C00(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	ERewardType                                   K2Node_CustomEvent_Type;                           // 0x1C08(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C09[0x3];                                     // 0x1C09(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_CustomEvent_ItemId;                         // 0x1C0C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Temp_name_Variable;                                // 0x1C10(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRewardGetWindowParam                  K2Node_MakeStruct_RewardGetWindowParam;            // 0x1C18(0x0010)(NoDestructor)
+	TArray<struct FRewardGetWindowParam>          K2Node_MakeArray_Array_4;                          // 0x1C28(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_2;            // 0x1C38(0x0010)()
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue_1;        // 0x1C48(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_3;            // 0x1C50(0x0010)()
+	class FName                                   CallFunc_GetEnumeratorName_ReturnValue_1;          // 0x1C60(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C68[0x8];                                     // 0x1C68(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FST_FestaResultSceneData               CallFunc_GetDataTableRowFromName_OutRow_1;         // 0x1C70(0x0070)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue_1;    // 0x1CE0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1CE1[0x7];                                     // 0x1CE1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UNetMasterDataManageSubsystem*          CallFunc_GetGameInstanceSubsystem_ReturnValue_1;   // 0x1CE8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EDriverId                                     CallFunc_GetFestaCollaboDriverId_OutDriverId;      // 0x1CF0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1CF1[0x7];                                     // 0x1CF1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_BreakTransform_Location_3;                // 0x1CF8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation_3;                // 0x1D10(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale_3;                   // 0x1D28(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x1D40(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D58[0x8];                                     // 0x1D58(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue_2;              // 0x1D60(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSoundHandle                           CallFunc_Stop_ReturnValue_5;                       // 0x1DC0(0x0004)()
+	EDriverPose                                   Temp_byte_Variable;                                // 0x1DC4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1DC5[0x3];                                     // 0x1DC5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable_9;                               // 0x1DC8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_6;           // 0x1DCC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1DCD[0x3];                                     // 0x1DCD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue_4;               // 0x1DD0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_3;                // 0x1DD4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue_3;        // 0x1DD5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EDriverPose                                   Temp_byte_Variable_1;                              // 0x1DD6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1DD7[0x1];                                     // 0x1DD7(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Select_Default_1;                           // 0x1DD8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x1DDC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_14;                // 0x1DE0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x1DE4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EDriverPose                                   K2Node_Select_Default_2;                           // 0x1DE5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1DE6[0x2];                                     // 0x1DE6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class UStickerBakeManagerSubsystem*           CallFunc_GetGameInstanceSubsystem_ReturnValue_2;   // 0x1DE8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Multiply_IntInt_ReturnValue_1;            // 0x1DF0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1DF4[0x4];                                     // 0x1DF4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture*                               CallFunc_GetRearStickerTextureFromRacerIndex_ReturnValue; // 0x1DF8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_15;                // 0x1E00(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E04[0x4];                                     // 0x1E04(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture*                               CallFunc_GetFrontStickerTextureFromRacerIndex_ReturnValue; // 0x1E08(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UTexture*                               CallFunc_GetRearStickerTextureFromRacerIndex_ReturnValue_1; // 0x1E10(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UTexture*                               CallFunc_GetFrontStickerTextureFromRacerIndex_ReturnValue_1; // 0x1E18(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue_4;        // 0x1E20(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUnionUIFadeDirection                         K2Node_CustomEvent_FadeDirection;                  // 0x1E21(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E22[0x6];                                     // 0x1E22(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInterface*                     CallFunc_GetMaterial_ReturnValue;                  // 0x1E28(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Conv_ColorToLinearColor_ReturnValue_1;    // 0x1E30(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue_1; // 0x1E40(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ULevelSequence*                         Temp_object_Variable;                              // 0x1E48(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ERewardType                                   CallFunc_GetFestaStreakReward_OutRewardType;       // 0x1E50(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E51[0x3];                                     // 0x1E51(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetFestaStreakReward_OutRewardId;         // 0x1E54(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ULevelSequence*                         Temp_object_Variable_1;                            // 0x1E58(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x1E60(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E61[0x3];                                     // 0x1E61(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetRacerCount_ReturnValue;                // 0x1E64(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x1E68(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E6C[0x4];                                     // 0x1E6C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ULevelSequence*                         Temp_object_Variable_2;                            // 0x1E70(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_7;           // 0x1E78(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E79[0x7];                                     // 0x1E79(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionRacers*                           CallFunc_GetUnionRacers_ReturnValue;               // 0x1E80(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ULevelSequence*                         Temp_object_Variable_3;                            // 0x1E88(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUnionRacer*                            CallFunc_GetRacer_ReturnValue;                     // 0x1E90(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_10;                              // 0x1E98(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E9C[0x4];                                     // 0x1E9C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AVehicleInRacePawn*                     K2Node_DynamicCast_AsVehicle_in_Race_Pawn_1;       // 0x1EA0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x1EA8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1EA9[0x7];                                     // 0x1EA9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ULevelSequence*                         K2Node_Select_Default_3;                           // 0x1EB0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ALevelSequenceActor*                    CallFunc_CreateLevelSequencePlayer_OutActor;       // 0x1EB8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ULevelSequencePlayer*                   CallFunc_CreateLevelSequencePlayer_ReturnValue;    // 0x1EC0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue_4;                  // 0x1EC8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsUserHasPrivilege_ReturnValue;           // 0x1ECC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1ECD[0x3];                                     // 0x1ECD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	const class ABP_HoverboardBaseActor_C*        Temp_object_Variable_4;                            // 0x1ED0(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUnionUITransitionManager*              CallFunc_GetGameInstanceSubsystem_ReturnValue_3;   // 0x1ED8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USoundAtomCue*                          Temp_object_Variable_5;                            // 0x1EE0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsUserHasPrivilege_ReturnValue_1;         // 0x1EE8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1EE9[0x3];                                     // 0x1EE9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetPlayerRacerIndex_ReturnValue_4;        // 0x1EEC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundAtomCue*                          Temp_object_Variable_6;                            // 0x1EF0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x1EF8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x1EF9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1EFA[0x2];                                     // 0x1EFA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetPlayerRacerIndex_ReturnValue_5;        // 0x1EFC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x1F00(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1F01[0x7];                                     // 0x1F01(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USoundAtomCue*                          Temp_object_Variable_7;                            // 0x1F08(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x1F10(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1F11[0x7];                                     // 0x1F11(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USoundAtomCue*                          Temp_object_Variable_8;                            // 0x1F18(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_11;                              // 0x1F20(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1F24[0x4];                                     // 0x1F24(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USoundAtomCue*                          K2Node_Select_Default_4;                           // 0x1F28(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue_2;            // 0x1F30(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_4;                  // 0x1F34(0x0004)()
+	int32                                         Temp_int_Variable_12;                              // 0x1F38(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x1F3C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1F4C[0x4];                                     // 0x1F4C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_ItemGet_Display_C*                 CallFunc_Create_ReturnValue_1;                     // 0x1F50(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue_3;            // 0x1F58(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1F5C[0x4];                                     // 0x1F5C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Result_DonpaTicket_C*              CallFunc_Create_ReturnValue_2;                     // 0x1F60(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue_4;            // 0x1F68(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1F6C[0x4];                                     // 0x1F6C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_5;                          // 0x1F70(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x1F80(0x0010)()
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_6;                          // 0x1F90(0x0010)(ReferenceParm)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_7;                          // 0x1FA0(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue_2;                     // 0x1FB0(0x0010)()
+	class FText                                   CallFunc_Format_ReturnValue_3;                     // 0x1FC0(0x0010)()
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue_5;            // 0x1FD0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_13;                              // 0x1FD4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   K2Node_Select_Default_5;                           // 0x1FD8(0x0010)(ConstParm)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue_6;            // 0x1FE8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1FEC[0x4];                                     // 0x1FEC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue_3;              // 0x1FF0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UNetMasterDataManageSubsystem*          CallFunc_GetGameInstanceSubsystem_ReturnValue_4;   // 0x2050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2; // 0x2058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FFestaPointRewardUIData>        CallFunc_GetPointRewardArray_outRewardDataArray;   // 0x2060(0x0010)(ReferenceParm)
+	bool                                          CallFunc_GetPointRewardArray_ReturnValue;          // 0x2070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2071[0x7];                                     // 0x2071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_HoverboardBaseActor_C*              CallFunc_FinishSpawningActor_ReturnValue_2;        // 0x2078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_5;               // 0x2080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x2084(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2085[0x3];                                     // 0x2085(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue_2;           // 0x2088(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_3;              // 0x2098(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	TArray<struct FFestaPointRewardUIData>        CallFunc_GetFestaResultPointRewardArray_OutRewardDataArray; // 0x20A8(0x0010)(ReferenceParm)
+	int32                                         CallFunc_GetFestaResultPointRewardArray_OutIndexOffset; // 0x20B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_20BC[0x4];                                     // 0x20BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FFestaPointRewardUIData>        CallFunc_GetFestaResultPointRewardArray_OutStreakRewardArray; // 0x20C0(0x0010)(ReferenceParm)
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue_4;              // 0x20D0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3; // 0x2130(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_MachineActor_C*                     CallFunc_FinishSpawningActor_ReturnValue_3;        // 0x2138(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult_1; // 0x2140(0x00F8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_K2_AttachToComponent_ReturnValue_1;       // 0x2238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2239[0x3];                                     // 0x2239(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable_14;                              // 0x223C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue_7;            // 0x2240(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue_8;            // 0x2244(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetItemWindowPos_PosX_ImplicitCast;       // 0x2248(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetGagePosition_IconPosi_ImplicitCast;    // 0x2250(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward) == 0x000010, "Wrong alignment on WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward");
-static_assert(sizeof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward) == 0x002220, "Wrong size on WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, EntryPoint) == 0x000000, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_MakeLiteralByte_ReturnValue) == 0x000004, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetPlayerController_ReturnValue) == 0x000008, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_PlayAnimation_ReturnValue) == 0x000010, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_SoundPlay_ReturnValue) == 0x000018, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Stop_ReturnValue) == 0x00001C, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Stop_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_SoundPlay_ReturnValue_1) == 0x000020, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_struct_Variable) == 0x000024, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_int_Variable) == 0x000034, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_CustomEvent_ColorIndex) == 0x000038, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_CustomEvent_ColorIndex' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000040, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_MakeLiteralText_ReturnValue) == 0x000048, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_PlayAnimation_ReturnValue_1) == 0x000058, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_struct_Variable_1) == 0x000060, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_int_Variable_1) == 0x000070, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000074, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_CustomEvent_RacerIndex_1) == 0x000078, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_CustomEvent_RacerIndex_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_CustomEvent_PositionIndex_1) == 0x00007C, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_CustomEvent_PositionIndex_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_MakeTransform_ReturnValue) == 0x000080, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetFestaDriverId_impl_DriverId) == 0x0000E0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetFestaDriverId_impl_DriverId' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0000E8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_IsValidSoftObjectReference_ReturnValue) == 0x0000F0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_IsValidSoftObjectReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x0000F8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_DynamicCast_As_____2D) == 0x000100, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_DynamicCast_bSuccess) == 0x000108, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_FinishSpawningActor_ReturnValue) == 0x000110, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Array_Add_ReturnValue) == 0x000118, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetPlayerRacerIndex_ReturnValue) == 0x00011C, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetPlayerRacerIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Add_IntInt_ReturnValue) == 0x000120, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetRacerContributionList_OutFestaRacerContribution) == 0x000128, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetRacerContributionList_OutFestaRacerContribution' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000138, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_MakeStruct_FormatArgumentData) == 0x000140, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_MakeArray_Array) == 0x000188, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Array_Length_ReturnValue) == 0x000198, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Format_ReturnValue) == 0x0001A0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Conv_TextToString_ReturnValue) == 0x0001B0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Conv_StringToName_ReturnValue) == 0x0001C0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Array_Length_ReturnValue_1) == 0x0001C8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Array_Length_ReturnValue_2) == 0x0001CC, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Add_IntInt_ReturnValue_1) == 0x0001D0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x0001D4, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Add_IntInt_ReturnValue_2) == 0x0001D8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_int_Variable_2) == 0x0001DC, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetAppRaceConfigData_OutData) == 0x0001E0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetAppRaceConfigData_OutData' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x0006E0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetEMachineId_ReturnValue) == 0x0006E1, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetEMachineId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_IsValidSoftObjectReference_ReturnValue_1) == 0x0006E2, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_IsValidSoftObjectReference_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_LoadAsset_Blocking_ReturnValue_1) == 0x0006E8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_LoadAsset_Blocking_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_DynamicCast_As_____2D_1) == 0x0006F0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_DynamicCast_As_____2D_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_DynamicCast_bSuccess_1) == 0x0006F8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_IsHoverboardMachineId_ReturnValue) == 0x0006F9, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_IsHoverboardMachineId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Add_IntInt_ReturnValue_3) == 0x0006FC, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Add_IntInt_ReturnValue_4) == 0x000700, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GreaterEqual_IntInt_ReturnValue_1) == 0x000704, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GreaterEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_CustomEvent_CustomizeData) == 0x000708, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_CustomEvent_CustomizeData' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_CustomEvent_MachineID) == 0x000780, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_CustomEvent_MachineID' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_CustomEvent_PositionIndex) == 0x000784, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_CustomEvent_PositionIndex' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_CustomEvent_RacerIndex) == 0x000788, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_CustomEvent_RacerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetDriverIdByRacerIndex_ReturnValue) == 0x00078C, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetDriverIdByRacerIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetDriverData_OutDriverData) == 0x000790, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetDriverData_OutDriverData' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetCarStatusType_ReturnValue) == 0x000B20, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetCarStatusType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_IsHoverboardMachineId_ReturnValue_1) == 0x000B21, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_IsHoverboardMachineId_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Not_PreBool_ReturnValue) == 0x000B22, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_int_Array_Index_Variable) == 0x000B24, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Array_Get_Item) == 0x000B28, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetFestaDriverId_impl_DriverId_1) == 0x000B3C, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetFestaDriverId_impl_DriverId_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Array_Get_Item_1) == 0x000B40, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetEnumeratorName_ReturnValue) == 0x000B48, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000B50, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetDataTableRowFromName_OutRow) == 0x000B58, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000EE8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Conv_NameToString_ReturnValue) == 0x000EF0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Conv_NameToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Is_List_Exist_Driver_Id_bIsExist) == 0x000F00, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Is_List_Exist_Driver_Id_bIsExist' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_LoadAsset_Blocking_ReturnValue_2) == 0x000F08, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_LoadAsset_Blocking_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_DynamicCast_As_________) == 0x000F10, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_DynamicCast_As_________' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_DynamicCast_bSuccess_2) == 0x000F18, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Array_Get_Item_2) == 0x000F20, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_K2_GetRootComponent_ReturnValue) == 0x000F28, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetPlayerPawn_ReturnValue) == 0x000F30, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetPlayerPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetFestaResultRewardInfo_OutInfo) == 0x000F38, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetFestaResultRewardInfo_OutInfo' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_DynamicCast_AsVehicle_in_Race_Pawn) == 0x000F70, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_DynamicCast_AsVehicle_in_Race_Pawn' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_DynamicCast_bSuccess_3) == 0x000F78, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Add_IntInt_ReturnValue_5) == 0x000F7C, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Add_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Add_IntInt_ReturnValue_6) == 0x000F80, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Add_IntInt_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Multiply_IntInt_ReturnValue) == 0x000F84, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Multiply_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Add_IntInt_ReturnValue_7) == 0x000F88, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Add_IntInt_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Subtract_IntInt_ReturnValue) == 0x000F8C, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_SwitchInteger_CmpSuccess) == 0x000F90, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_PlayAnimation_ReturnValue_2) == 0x000F98, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_PlayAnimation_ReturnValue_3) == 0x000FA0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Array_Add_ReturnValue_1) == 0x000FA8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_int_Variable_3) == 0x000FAC, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_int_Loop_Counter_Variable) == 0x000FB0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_LessEqual_IntInt_ReturnValue_2) == 0x000FB4, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_LessEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Less_IntInt_ReturnValue) == 0x000FB5, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Add_IntInt_ReturnValue_8) == 0x000FB8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Add_IntInt_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Is_Load_Ok_bIsLoadOk) == 0x000FBC, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Is_Load_Ok_bIsLoadOk' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_CustomEvent_TicketAdd) == 0x000FC0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_CustomEvent_TicketAdd' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetUpdatePoint_OutIconWindowX) == 0x000FC4, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetUpdatePoint_OutIconWindowX' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetUpdatePoint_OutGagePosi) == 0x000FC8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetUpdatePoint_OutGagePosi' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetUpdatePoint_OutGetRewardIndex) == 0x000FCC, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetUpdatePoint_OutGetRewardIndex' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000FD0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GreaterEqual_IntInt_ReturnValue_2) == 0x000FD8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GreaterEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Add_IntInt_ReturnValue_9) == 0x000FDC, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Add_IntInt_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_SaveFestaRewardItemData_OutRewardGetWindowParam) == 0x000FE0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_SaveFestaRewardItemData_OutRewardGetWindowParam' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000FF0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Conv_IntToString_ReturnValue) == 0x000FF8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue) == 0x001008, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_MakeArray_Array_1) == 0x001018, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Concat_StrStr_ReturnValue) == 0x001028, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Concat_StrStr_ReturnValue_1) == 0x001038, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Concat_StrStr_ReturnValue_2) == 0x001048, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x001058, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_CustomEvent_bIsGetReward) == 0x001059, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_CustomEvent_bIsGetReward' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_int_Array_Index_Variable_1) == 0x00105C, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Array_Get_Item_3) == 0x001060, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_int_Variable_4) == 0x001074, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_MakeLiteralText_ReturnValue_1) == 0x001078, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_CustomEvent_PosX) == 0x001088, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_CustomEvent_PosX' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_SlotAsCanvasSlot_ReturnValue) == 0x001090, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_SlotAsCanvasSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetPosition_ReturnValue) == 0x001098, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetPosition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_BreakVector2D_X) == 0x0010A8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_BreakVector2D_Y) == 0x0010B0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_MakeVector2D_ReturnValue) == 0x0010B8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_Event_IsDesignTime) == 0x0010C8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_MakeVector_ReturnValue) == 0x0010D0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_MakeTransform_ReturnValue_1) == 0x0010F0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_struct_Variable_2) == 0x001150, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_struct_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_Select_Default) == 0x001160, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Array_Get_Item_4) == 0x001170, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_BreakTransform_Location) == 0x0011D0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_BreakTransform_Location' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_BreakTransform_Rotation) == 0x0011E8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_BreakTransform_Rotation' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_BreakTransform_Scale) == 0x001200, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_BreakTransform_Scale' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_ComposeRotators_ReturnValue) == 0x001218, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_ComposeRotators_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Add_VectorVector_ReturnValue) == 0x001230, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_MakeArray_Array_2) == 0x001248, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_MakeArray_Array_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult) == 0x001258, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Array_Length_ReturnValue_3) == 0x001350, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_BreakTransform_Location_1) == 0x001358, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_BreakTransform_Location_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_BreakTransform_Rotation_1) == 0x001370, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_BreakTransform_Rotation_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_BreakTransform_Scale_1) == 0x001388, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_BreakTransform_Scale_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_K2_GetComponentToWorld_ReturnValue) == 0x0013A0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_K2_GetComponentToWorld_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_SetupViewBg_ReturnValue) == 0x001400, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_SetupViewBg_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_MakeStruct_MovieSceneSequencePlaybackSettings) == 0x001408, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_MakeStruct_MovieSceneSequencePlaybackSettings' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_MakeArray_Array_3) == 0x001430, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_MakeArray_Array_3' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetResultPlayingStageId_OutStageId) == 0x001440, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetResultPlayingStageId_OutStageId' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetResultPlayingStageId_OutTransform) == 0x001450, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetResultPlayingStageId_OutTransform' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_int_Variable_5) == 0x0014B0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_int_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_BreakTransform_Location_2) == 0x0014B8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_BreakTransform_Location_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_BreakTransform_Rotation_2) == 0x0014D0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_BreakTransform_Rotation_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_BreakTransform_Scale_2) == 0x0014E8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_BreakTransform_Scale_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_LessEqual_IntInt_ReturnValue_3) == 0x001500, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_LessEqual_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x001508, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x001510, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetPlayerRacerIndex_ReturnValue_1) == 0x001518, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetPlayerRacerIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetGroupIndex_ReturnValue) == 0x00151C, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetGroupIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetFestaMainColor_ReturnValue) == 0x001520, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetFestaMainColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetMaterials_ReturnValue) == 0x001528, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetMaterials_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Array_Get_Item_5) == 0x001538, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Array_Get_Item_5' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Conv_ColorToLinearColor_ReturnValue) == 0x001540, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Conv_ColorToLinearColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x001550, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_int_Loop_Counter_Variable_1) == 0x001558, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Less_IntInt_ReturnValue_1) == 0x00155C, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Add_IntInt_ReturnValue_10) == 0x001560, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Add_IntInt_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetPlayerRacerIndex_ReturnValue_2) == 0x001564, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetPlayerRacerIndex_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetPlayerRacerIndex_ReturnValue_3) == 0x001568, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetPlayerRacerIndex_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetGroupIndex_ReturnValue_1) == 0x00156C, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetGroupIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetGroupIndex_ReturnValue_2) == 0x001570, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetGroupIndex_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetGroupMachineColorPresetId_ReturnValue) == 0x001574, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetGroupMachineColorPresetId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetGroupMachineColorPresetId_ReturnValue_1) == 0x001575, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetGroupMachineColorPresetId_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_int_Variable_6) == 0x001578, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_int_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Stop_ReturnValue_1) == 0x00157C, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Stop_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Add_IntInt_ReturnValue_11) == 0x001580, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Add_IntInt_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Stop_ReturnValue_2) == 0x001584, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Stop_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Stop_ReturnValue_3) == 0x001588, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Stop_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Stop_ReturnValue_4) == 0x00158C, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Stop_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_int_Loop_Counter_Variable_2) == 0x001590, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_int_Array_Index_Variable_2) == 0x001594, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Less_IntInt_ReturnValue_2) == 0x001598, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Array_Get_Item_6) == 0x0015A0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Array_Get_Item_6' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_K2_GetComponentToWorld_ReturnValue_1) == 0x0015B0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_K2_GetComponentToWorld_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Array_Add_ReturnValue_2) == 0x001610, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Array_Add_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Add_IntInt_ReturnValue_12) == 0x001614, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Add_IntInt_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_LoadSceneDriverAnimationAssets_LoadAssets) == 0x001618, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_LoadSceneDriverAnimationAssets_LoadAssets' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Conv_IntToString_ReturnValue_1) == 0x001628, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Conv_IntToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Conv_StringToName_ReturnValue_1) == 0x001638, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Conv_StringToName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Array_Add_ReturnValue_3) == 0x001640, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Array_Add_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_SoundPlay_ReturnValue_2) == 0x001644, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_SoundPlay_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_PlayAnimation_ReturnValue_4) == 0x001648, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_PlayAnimation_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_int_Variable_7) == 0x001650, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_int_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_LessEqual_IntInt_ReturnValue_4) == 0x001654, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_LessEqual_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Add_IntInt_ReturnValue_13) == 0x001658, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Add_IntInt_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetAppRaceConfigData_OutData_1) == 0x001660, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetAppRaceConfigData_OutData_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_real_Variable) == 0x001B60, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_real_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_real_Variable_1) == 0x001B64, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_real_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_IsHoverboardMachineId_ReturnValue_2) == 0x001B68, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_IsHoverboardMachineId_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_PlayAnimation_ReturnValue_5) == 0x001B70, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_PlayAnimation_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_SoundPlay_ReturnValue_3) == 0x001B78, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_SoundPlay_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_ApplySettingsCineCameraAll_OutResult) == 0x001B7C, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_ApplySettingsCineCameraAll_OutResult' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_IsPaused_ReturnValue) == 0x001B7D, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_IsPaused_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_bool_Variable) == 0x001B7E, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_int_Variable_8) == 0x001B80, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_int_Variable_8' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_LessEqual_IntInt_ReturnValue_5) == 0x001B84, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_LessEqual_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Greater_IntInt_ReturnValue) == 0x001B85, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetFestaChanceUpRatioText_ReturnValue) == 0x001B88, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetFestaChanceUpRatioText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_CreateDelegate_OutputDelegate) == 0x001B98, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_CreateDelegate_OutputDelegate_1) == 0x001BA8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Greater_IntInt_ReturnValue_1) == 0x001BB8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Create_ReturnValue) == 0x001BC0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_CustomEvent_Type) == 0x001BC8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_CustomEvent_Type' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_CustomEvent_ItemId) == 0x001BCC, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_CustomEvent_ItemId' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_name_Variable) == 0x001BD0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_name_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_MakeStruct_RewardGetWindowParam) == 0x001BD8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_MakeStruct_RewardGetWindowParam' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_MakeArray_Array_4) == 0x001BE8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_MakeArray_Array_4' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_MakeLiteralText_ReturnValue_2) == 0x001BF8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_MakeLiteralText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetPlayerController_ReturnValue_1) == 0x001C08, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_MakeLiteralText_ReturnValue_3) == 0x001C10, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_MakeLiteralText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetEnumeratorName_ReturnValue_1) == 0x001C20, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetEnumeratorName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetDataTableRowFromName_OutRow_1) == 0x001C30, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetDataTableRowFromName_OutRow_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetDataTableRowFromName_ReturnValue_1) == 0x001CA0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetDataTableRowFromName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x001CA8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetFestaCollaboDriverId_OutDriverId) == 0x001CB0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetFestaCollaboDriverId_OutDriverId' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_BreakTransform_Location_3) == 0x001CB8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_BreakTransform_Location_3' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_BreakTransform_Rotation_3) == 0x001CD0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_BreakTransform_Rotation_3' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_BreakTransform_Scale_3) == 0x001CE8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_BreakTransform_Scale_3' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Add_VectorVector_ReturnValue_1) == 0x001D00, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_MakeTransform_ReturnValue_2) == 0x001D20, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_MakeTransform_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Stop_ReturnValue_5) == 0x001D80, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Stop_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_byte_Variable) == 0x001D84, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_int_Variable_9) == 0x001D88, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_int_Variable_9' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_LessEqual_IntInt_ReturnValue_6) == 0x001D8C, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_LessEqual_IntInt_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Array_Length_ReturnValue_4) == 0x001D90, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Array_Length_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Less_IntInt_ReturnValue_3) == 0x001D94, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GreaterEqual_IntInt_ReturnValue_3) == 0x001D95, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GreaterEqual_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_byte_Variable_1) == 0x001D96, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_Select_Default_1) == 0x001D98, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_SelectInt_ReturnValue) == 0x001D9C, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Add_IntInt_ReturnValue_14) == 0x001DA0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Add_IntInt_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_bool_Variable_1) == 0x001DA4, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_Select_Default_2) == 0x001DA5, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetGameInstanceSubsystem_ReturnValue_2) == 0x001DA8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetGameInstanceSubsystem_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Multiply_IntInt_ReturnValue_1) == 0x001DB0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Multiply_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetRearStickerTextureFromRacerIndex_ReturnValue) == 0x001DB8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetRearStickerTextureFromRacerIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Add_IntInt_ReturnValue_15) == 0x001DC0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Add_IntInt_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetFrontStickerTextureFromRacerIndex_ReturnValue) == 0x001DC8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetFrontStickerTextureFromRacerIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetRearStickerTextureFromRacerIndex_ReturnValue_1) == 0x001DD0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetRearStickerTextureFromRacerIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetFrontStickerTextureFromRacerIndex_ReturnValue_1) == 0x001DD8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetFrontStickerTextureFromRacerIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GreaterEqual_IntInt_ReturnValue_4) == 0x001DE0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GreaterEqual_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_CustomEvent_FadeDirection) == 0x001DE1, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_CustomEvent_FadeDirection' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetMaterial_ReturnValue) == 0x001DE8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Conv_ColorToLinearColor_ReturnValue_1) == 0x001DF0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Conv_ColorToLinearColor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_CreateDynamicMaterialInstance_ReturnValue_1) == 0x001E00, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_CreateDynamicMaterialInstance_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_object_Variable) == 0x001E08, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetFestaStreakReward_OutRewardType) == 0x001E10, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetFestaStreakReward_OutRewardType' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetFestaStreakReward_OutRewardId) == 0x001E14, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetFestaStreakReward_OutRewardId' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_object_Variable_1) == 0x001E18, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x001E20, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetRacerCount_ReturnValue) == 0x001E24, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetRacerCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x001E28, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_object_Variable_2) == 0x001E30, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_LessEqual_IntInt_ReturnValue_7) == 0x001E38, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_LessEqual_IntInt_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetUnionRacers_ReturnValue) == 0x001E40, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetUnionRacers_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_object_Variable_3) == 0x001E48, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_object_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetRacer_ReturnValue) == 0x001E50, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetRacer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_int_Variable_10) == 0x001E58, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_int_Variable_10' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_DynamicCast_AsVehicle_in_Race_Pawn_1) == 0x001E60, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_DynamicCast_AsVehicle_in_Race_Pawn_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_DynamicCast_bSuccess_4) == 0x001E68, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_Select_Default_3) == 0x001E70, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_CreateLevelSequencePlayer_OutActor) == 0x001E78, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_CreateLevelSequencePlayer_OutActor' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_CreateLevelSequencePlayer_ReturnValue) == 0x001E80, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_CreateLevelSequencePlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Array_Add_ReturnValue_4) == 0x001E88, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Array_Add_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_IsUserHasPrivilege_ReturnValue) == 0x001E8C, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_IsUserHasPrivilege_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_object_Variable_4) == 0x001E90, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_object_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetGameInstanceSubsystem_ReturnValue_3) == 0x001E98, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetGameInstanceSubsystem_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_object_Variable_5) == 0x001EA0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_object_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_IsUserHasPrivilege_ReturnValue_1) == 0x001EA8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_IsUserHasPrivilege_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetPlayerRacerIndex_ReturnValue_4) == 0x001EAC, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetPlayerRacerIndex_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_object_Variable_6) == 0x001EB0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_object_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x001EB8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_BooleanOR_ReturnValue) == 0x001EB9, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetPlayerRacerIndex_ReturnValue_5) == 0x001EBC, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetPlayerRacerIndex_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x001EC0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_object_Variable_7) == 0x001EC8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_object_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_BooleanOR_ReturnValue_1) == 0x001ED0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_object_Variable_8) == 0x001ED8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_object_Variable_8' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_int_Variable_11) == 0x001EE0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_int_Variable_11' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_Select_Default_4) == 0x001EE8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Subtract_IntInt_ReturnValue_2) == 0x001EF0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Subtract_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_SoundPlay_ReturnValue_4) == 0x001EF4, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_SoundPlay_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_int_Variable_12) == 0x001EF8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_int_Variable_12' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_CreateDelegate_OutputDelegate_2) == 0x001EFC, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Create_ReturnValue_1) == 0x001F10, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Create_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Subtract_IntInt_ReturnValue_3) == 0x001F18, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Subtract_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Create_ReturnValue_2) == 0x001F20, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Create_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Subtract_IntInt_ReturnValue_4) == 0x001F28, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Subtract_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_MakeArray_Array_5) == 0x001F30, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_MakeArray_Array_5' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Format_ReturnValue_1) == 0x001F40, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_MakeArray_Array_6) == 0x001F50, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_MakeArray_Array_6' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_MakeArray_Array_7) == 0x001F60, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_MakeArray_Array_7' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Format_ReturnValue_2) == 0x001F70, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Format_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Format_ReturnValue_3) == 0x001F80, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Format_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Subtract_IntInt_ReturnValue_5) == 0x001F90, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Subtract_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_int_Variable_13) == 0x001F94, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_int_Variable_13' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, K2Node_Select_Default_5) == 0x001F98, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::K2Node_Select_Default_5' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Subtract_IntInt_ReturnValue_6) == 0x001FA8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Subtract_IntInt_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_MakeTransform_ReturnValue_3) == 0x001FB0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_MakeTransform_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetGameInstanceSubsystem_ReturnValue_4) == 0x002010, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetGameInstanceSubsystem_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2) == 0x002018, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetPointRewardArray_outRewardDataArray) == 0x002020, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetPointRewardArray_outRewardDataArray' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetPointRewardArray_ReturnValue) == 0x002030, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetPointRewardArray_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_FinishSpawningActor_ReturnValue_2) == 0x002038, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_FinishSpawningActor_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Array_Length_ReturnValue_5) == 0x002040, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Array_Length_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_K2_AttachToComponent_ReturnValue) == 0x002044, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Conv_IntToString_ReturnValue_2) == 0x002048, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Conv_IntToString_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Concat_StrStr_ReturnValue_3) == 0x002058, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetFestaResultPointRewardArray_OutRewardDataArray) == 0x002068, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetFestaResultPointRewardArray_OutRewardDataArray' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetFestaResultPointRewardArray_OutIndexOffset) == 0x002078, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetFestaResultPointRewardArray_OutIndexOffset' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_GetFestaResultPointRewardArray_OutStreakRewardArray) == 0x002080, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_GetFestaResultPointRewardArray_OutStreakRewardArray' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_MakeTransform_ReturnValue_4) == 0x002090, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_MakeTransform_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3) == 0x0020F0, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_FinishSpawningActor_ReturnValue_3) == 0x0020F8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_FinishSpawningActor_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult_1) == 0x002100, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_K2_AttachToComponent_ReturnValue_1) == 0x0021F8, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_K2_AttachToComponent_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, Temp_int_Variable_14) == 0x0021FC, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::Temp_int_Variable_14' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Subtract_IntInt_ReturnValue_7) == 0x002200, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Subtract_IntInt_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_Subtract_IntInt_ReturnValue_8) == 0x002204, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_Subtract_IntInt_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_SetItemWindowPos_PosX_ImplicitCast) == 0x002208, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_SetItemWindowPos_PosX_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward, CallFunc_SetGagePosition_IconPosi_ImplicitCast) == 0x002210, "Member 'WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward::CallFunc_SetGagePosition_IconPosi_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FestaResult_PointReward_C_ExecuteUbergraph_WBP_FestaResult_PointReward;
 
 // Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.GetFestaDriverId_impl
 // 0x0008 (0x0008 - 0x0000)
@@ -804,14 +467,10 @@ public:
 	EDriverId                                     DriverId;                                          // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EDriverId                                     CallFunc_GetDriverIdByRacerIndex_ReturnValue;      // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FestaResult_PointReward_C_GetFestaDriverId_impl) == 0x000004, "Wrong alignment on WBP_FestaResult_PointReward_C_GetFestaDriverId_impl");
-static_assert(sizeof(WBP_FestaResult_PointReward_C_GetFestaDriverId_impl) == 0x000008, "Wrong size on WBP_FestaResult_PointReward_C_GetFestaDriverId_impl");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_GetFestaDriverId_impl, RacerIndex) == 0x000000, "Member 'WBP_FestaResult_PointReward_C_GetFestaDriverId_impl::RacerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_GetFestaDriverId_impl, DriverId) == 0x000004, "Member 'WBP_FestaResult_PointReward_C_GetFestaDriverId_impl::DriverId' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_GetFestaDriverId_impl, CallFunc_GetDriverIdByRacerIndex_ReturnValue) == 0x000005, "Member 'WBP_FestaResult_PointReward_C_GetFestaDriverId_impl::CallFunc_GetDriverIdByRacerIndex_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FestaResult_PointReward_C_GetFestaDriverId_impl;
 
 // Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.GetResultPlayingStageId
-// 0x0630 (0x0630 - 0x0000)
+// 0x0650 (0x0650 - 0x0000)
 struct WBP_FestaResult_PointReward_C_GetResultPlayingStageId final
 {
 public:
@@ -825,35 +484,18 @@ public:
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x008C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_8D[0x3];                                       // 0x008D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FTransform>                     K2Node_MakeArray_Array;                            // 0x0090(0x0010)(ReferenceParm)
-	struct FAppRaceConfigData                     CallFunc_GetAppRaceConfigData_OutData;             // 0x00A0(0x0500)()
-	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue; // 0x05A0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FAppRaceStageSetting                   CallFunc_Array_Get_Item;                           // 0x05B0(0x0004)(NoDestructor)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x05B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x05B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x05BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5BD[0x3];                                      // 0x05BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Max_ReturnValue;                          // 0x05C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5C4[0xC];                                      // 0x05C4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_Array_Get_Item_1;                         // 0x05D0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FAppRaceConfigData                     CallFunc_GetAppRaceConfigData_OutData;             // 0x00A0(0x0520)()
+	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue; // 0x05C0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FAppRaceStageSetting                   CallFunc_Array_Get_Item;                           // 0x05D0(0x0004)(NoDestructor)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x05D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x05D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x05DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5DD[0x3];                                      // 0x05DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Max_ReturnValue;                          // 0x05E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5E4[0xC];                                      // 0x05E4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_Array_Get_Item_1;                         // 0x05F0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FestaResult_PointReward_C_GetResultPlayingStageId) == 0x000010, "Wrong alignment on WBP_FestaResult_PointReward_C_GetResultPlayingStageId");
-static_assert(sizeof(WBP_FestaResult_PointReward_C_GetResultPlayingStageId) == 0x000630, "Wrong size on WBP_FestaResult_PointReward_C_GetResultPlayingStageId");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_GetResultPlayingStageId, OutStageId) == 0x000000, "Member 'WBP_FestaResult_PointReward_C_GetResultPlayingStageId::OutStageId' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_GetResultPlayingStageId, OutTransform) == 0x000010, "Member 'WBP_FestaResult_PointReward_C_GetResultPlayingStageId::OutTransform' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_GetResultPlayingStageId, Transform) == 0x000070, "Member 'WBP_FestaResult_PointReward_C_GetResultPlayingStageId::Transform' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_GetResultPlayingStageId, Temp_int_Array_Index_Variable) == 0x000080, "Member 'WBP_FestaResult_PointReward_C_GetResultPlayingStageId::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_GetResultPlayingStageId, Temp_int_Loop_Counter_Variable) == 0x000084, "Member 'WBP_FestaResult_PointReward_C_GetResultPlayingStageId::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_GetResultPlayingStageId, CallFunc_Subtract_IntInt_ReturnValue) == 0x000088, "Member 'WBP_FestaResult_PointReward_C_GetResultPlayingStageId::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_GetResultPlayingStageId, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00008C, "Member 'WBP_FestaResult_PointReward_C_GetResultPlayingStageId::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_GetResultPlayingStageId, K2Node_MakeArray_Array) == 0x000090, "Member 'WBP_FestaResult_PointReward_C_GetResultPlayingStageId::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_GetResultPlayingStageId, CallFunc_GetAppRaceConfigData_OutData) == 0x0000A0, "Member 'WBP_FestaResult_PointReward_C_GetResultPlayingStageId::CallFunc_GetAppRaceConfigData_OutData' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_GetResultPlayingStageId, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue) == 0x0005A0, "Member 'WBP_FestaResult_PointReward_C_GetResultPlayingStageId::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_GetResultPlayingStageId, CallFunc_Array_Get_Item) == 0x0005B0, "Member 'WBP_FestaResult_PointReward_C_GetResultPlayingStageId::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_GetResultPlayingStageId, CallFunc_Array_Length_ReturnValue) == 0x0005B4, "Member 'WBP_FestaResult_PointReward_C_GetResultPlayingStageId::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_GetResultPlayingStageId, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x0005B8, "Member 'WBP_FestaResult_PointReward_C_GetResultPlayingStageId::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_GetResultPlayingStageId, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0005BC, "Member 'WBP_FestaResult_PointReward_C_GetResultPlayingStageId::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_GetResultPlayingStageId, CallFunc_Max_ReturnValue) == 0x0005C0, "Member 'WBP_FestaResult_PointReward_C_GetResultPlayingStageId::CallFunc_Max_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_GetResultPlayingStageId, CallFunc_Array_Get_Item_1) == 0x0005D0, "Member 'WBP_FestaResult_PointReward_C_GetResultPlayingStageId::CallFunc_Array_Get_Item_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FestaResult_PointReward_C_GetResultPlayingStageId;
 
 // Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.Is List Exist Driver Id
 // 0x0034 (0x0034 - 0x0000)
@@ -876,20 +518,7 @@ public:
 	uint8                                         Pad_2F[0x1];                                       // 0x002F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FestaResult_PointReward_C_Is_List_Exist_Driver_Id) == 0x000004, "Wrong alignment on WBP_FestaResult_PointReward_C_Is_List_Exist_Driver_Id");
-static_assert(sizeof(WBP_FestaResult_PointReward_C_Is_List_Exist_Driver_Id) == 0x000034, "Wrong size on WBP_FestaResult_PointReward_C_Is_List_Exist_Driver_Id");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_Is_List_Exist_Driver_Id, Index_0) == 0x000000, "Member 'WBP_FestaResult_PointReward_C_Is_List_Exist_Driver_Id::Index_0' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_Is_List_Exist_Driver_Id, DriverId) == 0x000004, "Member 'WBP_FestaResult_PointReward_C_Is_List_Exist_Driver_Id::DriverId' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_Is_List_Exist_Driver_Id, bIsExist_0) == 0x000005, "Member 'WBP_FestaResult_PointReward_C_Is_List_Exist_Driver_Id::bIsExist_0' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_Is_List_Exist_Driver_Id, Temp_int_Array_Index_Variable) == 0x000008, "Member 'WBP_FestaResult_PointReward_C_Is_List_Exist_Driver_Id::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_Is_List_Exist_Driver_Id, CallFunc_Less_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_FestaResult_PointReward_C_Is_List_Exist_Driver_Id::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_Is_List_Exist_Driver_Id, Temp_int_Loop_Counter_Variable) == 0x000010, "Member 'WBP_FestaResult_PointReward_C_Is_List_Exist_Driver_Id::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_Is_List_Exist_Driver_Id, CallFunc_Array_Get_Item) == 0x000014, "Member 'WBP_FestaResult_PointReward_C_Is_List_Exist_Driver_Id::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_Is_List_Exist_Driver_Id, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'WBP_FestaResult_PointReward_C_Is_List_Exist_Driver_Id::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_Is_List_Exist_Driver_Id, CallFunc_Less_IntInt_ReturnValue_1) == 0x00002C, "Member 'WBP_FestaResult_PointReward_C_Is_List_Exist_Driver_Id::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_Is_List_Exist_Driver_Id, CallFunc_GetFestaDriverId_impl_DriverId) == 0x00002D, "Member 'WBP_FestaResult_PointReward_C_Is_List_Exist_Driver_Id::CallFunc_GetFestaDriverId_impl_DriverId' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_Is_List_Exist_Driver_Id, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00002E, "Member 'WBP_FestaResult_PointReward_C_Is_List_Exist_Driver_Id::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_Is_List_Exist_Driver_Id, CallFunc_Add_IntInt_ReturnValue) == 0x000030, "Member 'WBP_FestaResult_PointReward_C_Is_List_Exist_Driver_Id::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FestaResult_PointReward_C_Is_List_Exist_Driver_Id;
 
 // Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.Is Load Ok
 // 0x0050 (0x0050 - 0x0000)
@@ -915,23 +544,7 @@ public:
 	class USkeletalMesh*                          CallFunc_Array_Get_Item_1;                         // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FestaResult_PointReward_C_Is_Load_Ok) == 0x000008, "Wrong alignment on WBP_FestaResult_PointReward_C_Is_Load_Ok");
-static_assert(sizeof(WBP_FestaResult_PointReward_C_Is_Load_Ok) == 0x000050, "Wrong size on WBP_FestaResult_PointReward_C_Is_Load_Ok");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_Is_Load_Ok, bIsLoadOk) == 0x000000, "Member 'WBP_FestaResult_PointReward_C_Is_Load_Ok::bIsLoadOk' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_Is_Load_Ok, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'WBP_FestaResult_PointReward_C_Is_Load_Ok::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_Is_Load_Ok, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'WBP_FestaResult_PointReward_C_Is_Load_Ok::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_Is_Load_Ok, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'WBP_FestaResult_PointReward_C_Is_Load_Ok::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_Is_Load_Ok, CallFunc_Add_IntInt_ReturnValue_1) == 0x000010, "Member 'WBP_FestaResult_PointReward_C_Is_Load_Ok::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_Is_Load_Ok, Temp_int_Variable) == 0x000014, "Member 'WBP_FestaResult_PointReward_C_Is_Load_Ok::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_Is_Load_Ok, CallFunc_Array_Length_ReturnValue) == 0x000018, "Member 'WBP_FestaResult_PointReward_C_Is_Load_Ok::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_Is_Load_Ok, CallFunc_Array_Get_Item) == 0x00001C, "Member 'WBP_FestaResult_PointReward_C_Is_Load_Ok::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_Is_Load_Ok, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000030, "Member 'WBP_FestaResult_PointReward_C_Is_Load_Ok::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_Is_Load_Ok, CallFunc_GetFestaDriverId_impl_DriverId) == 0x000031, "Member 'WBP_FestaResult_PointReward_C_Is_Load_Ok::CallFunc_GetFestaDriverId_impl_DriverId' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_Is_Load_Ok, CallFunc_Array_Length_ReturnValue_1) == 0x000034, "Member 'WBP_FestaResult_PointReward_C_Is_Load_Ok::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_Is_Load_Ok, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000038, "Member 'WBP_FestaResult_PointReward_C_Is_Load_Ok::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_Is_Load_Ok, CallFunc_Less_IntInt_ReturnValue) == 0x00003C, "Member 'WBP_FestaResult_PointReward_C_Is_Load_Ok::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_Is_Load_Ok, CallFunc_Array_Get_Item_1) == 0x000040, "Member 'WBP_FestaResult_PointReward_C_Is_Load_Ok::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_Is_Load_Ok, CallFunc_IsValid_ReturnValue) == 0x000048, "Member 'WBP_FestaResult_PointReward_C_Is_Load_Ok::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FestaResult_PointReward_C_Is_Load_Ok;
 
 // Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.OnFinishedFade
 // 0x0001 (0x0001 - 0x0000)
@@ -940,9 +553,7 @@ struct WBP_FestaResult_PointReward_C_OnFinishedFade final
 public:
 	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FestaResult_PointReward_C_OnFinishedFade) == 0x000001, "Wrong alignment on WBP_FestaResult_PointReward_C_OnFinishedFade");
-static_assert(sizeof(WBP_FestaResult_PointReward_C_OnFinishedFade) == 0x000001, "Wrong size on WBP_FestaResult_PointReward_C_OnFinishedFade");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_OnFinishedFade, FadeDirection) == 0x000000, "Member 'WBP_FestaResult_PointReward_C_OnFinishedFade::FadeDirection' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FestaResult_PointReward_C_OnFinishedFade;
 
 // Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -951,9 +562,7 @@ struct WBP_FestaResult_PointReward_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FestaResult_PointReward_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_FestaResult_PointReward_C_PreConstruct");
-static_assert(sizeof(WBP_FestaResult_PointReward_C_PreConstruct) == 0x000001, "Wrong size on WBP_FestaResult_PointReward_C_PreConstruct");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_FestaResult_PointReward_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FestaResult_PointReward_C_PreConstruct;
 
 // Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.SetDonpaTicketGetWindow
 // 0x0004 (0x0004 - 0x0000)
@@ -962,9 +571,7 @@ struct WBP_FestaResult_PointReward_C_SetDonpaTicketGetWindow final
 public:
 	int32                                         TicketAdd;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FestaResult_PointReward_C_SetDonpaTicketGetWindow) == 0x000004, "Wrong alignment on WBP_FestaResult_PointReward_C_SetDonpaTicketGetWindow");
-static_assert(sizeof(WBP_FestaResult_PointReward_C_SetDonpaTicketGetWindow) == 0x000004, "Wrong size on WBP_FestaResult_PointReward_C_SetDonpaTicketGetWindow");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_SetDonpaTicketGetWindow, TicketAdd) == 0x000000, "Member 'WBP_FestaResult_PointReward_C_SetDonpaTicketGetWindow::TicketAdd' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FestaResult_PointReward_C_SetDonpaTicketGetWindow;
 
 // Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.SetItemWindowPos
 // 0x0008 (0x0008 - 0x0000)
@@ -973,9 +580,7 @@ struct WBP_FestaResult_PointReward_C_SetItemWindowPos final
 public:
 	double                                        posX;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FestaResult_PointReward_C_SetItemWindowPos) == 0x000008, "Wrong alignment on WBP_FestaResult_PointReward_C_SetItemWindowPos");
-static_assert(sizeof(WBP_FestaResult_PointReward_C_SetItemWindowPos) == 0x000008, "Wrong size on WBP_FestaResult_PointReward_C_SetItemWindowPos");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_SetItemWindowPos, posX) == 0x000000, "Member 'WBP_FestaResult_PointReward_C_SetItemWindowPos::posX' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FestaResult_PointReward_C_SetItemWindowPos;
 
 // Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.SetPartyColorIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -984,9 +589,7 @@ struct WBP_FestaResult_PointReward_C_SetPartyColorIndex final
 public:
 	int32                                         ColorIndex;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FestaResult_PointReward_C_SetPartyColorIndex) == 0x000004, "Wrong alignment on WBP_FestaResult_PointReward_C_SetPartyColorIndex");
-static_assert(sizeof(WBP_FestaResult_PointReward_C_SetPartyColorIndex) == 0x000004, "Wrong size on WBP_FestaResult_PointReward_C_SetPartyColorIndex");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_SetPartyColorIndex, ColorIndex) == 0x000000, "Member 'WBP_FestaResult_PointReward_C_SetPartyColorIndex::ColorIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FestaResult_PointReward_C_SetPartyColorIndex;
 
 // Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.SetStreakRewardGetWindow
 // 0x0008 (0x0008 - 0x0000)
@@ -997,10 +600,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ItemId;                                            // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FestaResult_PointReward_C_SetStreakRewardGetWindow) == 0x000004, "Wrong alignment on WBP_FestaResult_PointReward_C_SetStreakRewardGetWindow");
-static_assert(sizeof(WBP_FestaResult_PointReward_C_SetStreakRewardGetWindow) == 0x000008, "Wrong size on WBP_FestaResult_PointReward_C_SetStreakRewardGetWindow");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_SetStreakRewardGetWindow, Type) == 0x000000, "Member 'WBP_FestaResult_PointReward_C_SetStreakRewardGetWindow::Type' has a wrong offset!");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_SetStreakRewardGetWindow, ItemId) == 0x000004, "Member 'WBP_FestaResult_PointReward_C_SetStreakRewardGetWindow::ItemId' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FestaResult_PointReward_C_SetStreakRewardGetWindow;
 
 // Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.UpdateItemWindow
 // 0x0001 (0x0001 - 0x0000)
@@ -1009,9 +609,7 @@ struct WBP_FestaResult_PointReward_C_UpdateItemWindow final
 public:
 	bool                                          bIsGetReward;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FestaResult_PointReward_C_UpdateItemWindow) == 0x000001, "Wrong alignment on WBP_FestaResult_PointReward_C_UpdateItemWindow");
-static_assert(sizeof(WBP_FestaResult_PointReward_C_UpdateItemWindow) == 0x000001, "Wrong size on WBP_FestaResult_PointReward_C_UpdateItemWindow");
-static_assert(offsetof(WBP_FestaResult_PointReward_C_UpdateItemWindow, bIsGetReward) == 0x000000, "Member 'WBP_FestaResult_PointReward_C_UpdateItemWindow::bIsGetReward' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FestaResult_PointReward_C_UpdateItemWindow;
 
 }
 

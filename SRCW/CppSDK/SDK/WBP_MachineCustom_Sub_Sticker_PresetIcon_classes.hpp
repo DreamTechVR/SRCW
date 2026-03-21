@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
-#include "UMG_structs.hpp"
 #include "ST_StickerPresetPageItemData_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "UNION_classes.hpp"
+#include "UMG_structs.hpp"
 #include "EStickerPresetSelectPageItemType_structs.hpp"
 
 
@@ -22,7 +22,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_MachineCustom_Sub_Sticker_PresetIcon.WBP_MachineCustom_Sub_Sticker_PresetIcon_C
-// 0x00C0 (0x05D0 - 0x0510)
+// 0x0100 (0x0610 - 0x0510)
 class UWBP_MachineCustom_Sub_Sticker_PresetIcon_C final : public UMachineStickerSelectPresetIcon
 {
 public:
@@ -36,10 +36,10 @@ public:
 	class UUnionUITextBlock*                      TXT_ItemCount_Num;                                 // 0x0548(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	int32                                         SetColorIndex;                                     // 0x0550(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	uint8                                         Pad_554[0x4];                                      // 0x0554(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FST_StickerPresetPageItemData          ItemData;                                          // 0x0558(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	TArray<struct FLinearColor>                   TextColors;                                        // 0x05A8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMulticastInlineDelegate<void()>              OnPurchaseAnimFinished;                            // 0x05B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	int32                                         PlayerIndex;                                       // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FST_StickerPresetPageItemData          ItemData;                                          // 0x0558(0x0090)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	TArray<struct FLinearColor>                   TextColors;                                        // 0x05E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMulticastInlineDelegate<void()>              OnPurchaseAnimFinished;                            // 0x05F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	int32                                         PlayerIndex;                                       // 0x0608(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void Construct();
@@ -78,28 +78,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MachineCustom_Sub_Sticker_PresetIcon_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MachineCustom_Sub_Sticker_PresetIcon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MachineCustom_Sub_Sticker_PresetIcon_C")
 	}
 	static class UWBP_MachineCustom_Sub_Sticker_PresetIcon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MachineCustom_Sub_Sticker_PresetIcon_C>();
 	}
 };
-static_assert(alignof(UWBP_MachineCustom_Sub_Sticker_PresetIcon_C) == 0x000008, "Wrong alignment on UWBP_MachineCustom_Sub_Sticker_PresetIcon_C");
-static_assert(sizeof(UWBP_MachineCustom_Sub_Sticker_PresetIcon_C) == 0x0005D0, "Wrong size on UWBP_MachineCustom_Sub_Sticker_PresetIcon_C");
-static_assert(offsetof(UWBP_MachineCustom_Sub_Sticker_PresetIcon_C, UberGraphFrame) == 0x000510, "Member 'UWBP_MachineCustom_Sub_Sticker_PresetIcon_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_Sticker_PresetIcon_C, Default_Loop) == 0x000518, "Member 'UWBP_MachineCustom_Sub_Sticker_PresetIcon_C::Default_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_Sticker_PresetIcon_C, UnLock_Inout) == 0x000520, "Member 'UWBP_MachineCustom_Sub_Sticker_PresetIcon_C::UnLock_Inout' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_Sticker_PresetIcon_C, DSP_EX_Icon) == 0x000528, "Member 'UWBP_MachineCustom_Sub_Sticker_PresetIcon_C::DSP_EX_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_Sticker_PresetIcon_C, DSP_Lock) == 0x000530, "Member 'UWBP_MachineCustom_Sub_Sticker_PresetIcon_C::DSP_Lock' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_Sticker_PresetIcon_C, DSP_Ticket) == 0x000538, "Member 'UWBP_MachineCustom_Sub_Sticker_PresetIcon_C::DSP_Ticket' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_Sticker_PresetIcon_C, MouseInteraction) == 0x000540, "Member 'UWBP_MachineCustom_Sub_Sticker_PresetIcon_C::MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_Sticker_PresetIcon_C, TXT_ItemCount_Num) == 0x000548, "Member 'UWBP_MachineCustom_Sub_Sticker_PresetIcon_C::TXT_ItemCount_Num' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_Sticker_PresetIcon_C, SetColorIndex) == 0x000550, "Member 'UWBP_MachineCustom_Sub_Sticker_PresetIcon_C::SetColorIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_Sticker_PresetIcon_C, ItemData) == 0x000558, "Member 'UWBP_MachineCustom_Sub_Sticker_PresetIcon_C::ItemData' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_Sticker_PresetIcon_C, TextColors) == 0x0005A8, "Member 'UWBP_MachineCustom_Sub_Sticker_PresetIcon_C::TextColors' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_Sticker_PresetIcon_C, OnPurchaseAnimFinished) == 0x0005B8, "Member 'UWBP_MachineCustom_Sub_Sticker_PresetIcon_C::OnPurchaseAnimFinished' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_Sticker_PresetIcon_C, PlayerIndex) == 0x0005C8, "Member 'UWBP_MachineCustom_Sub_Sticker_PresetIcon_C::PlayerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MachineCustom_Sub_Sticker_PresetIcon_C;
 
 }
 

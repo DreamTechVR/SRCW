@@ -23,11 +23,7 @@ public:
 	int32                                         InSizeY;                                           // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_HexagonCursor_C_SetShape) == 0x000004, "Wrong alignment on WBP_GadgetCustom_Sub_HexagonCursor_C_SetShape");
-static_assert(sizeof(WBP_GadgetCustom_Sub_HexagonCursor_C_SetShape) == 0x00000C, "Wrong size on WBP_GadgetCustom_Sub_HexagonCursor_C_SetShape");
-static_assert(offsetof(WBP_GadgetCustom_Sub_HexagonCursor_C_SetShape, InSizeX) == 0x000000, "Member 'WBP_GadgetCustom_Sub_HexagonCursor_C_SetShape::InSizeX' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_HexagonCursor_C_SetShape, InSizeY) == 0x000004, "Member 'WBP_GadgetCustom_Sub_HexagonCursor_C_SetShape::InSizeY' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_HexagonCursor_C_SetShape, CallFunc_Subtract_IntInt_ReturnValue) == 0x000008, "Member 'WBP_GadgetCustom_Sub_HexagonCursor_C_SetShape::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_HexagonCursor_C_SetShape;
 
 }
 

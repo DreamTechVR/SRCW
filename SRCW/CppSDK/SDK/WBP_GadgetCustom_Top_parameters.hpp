@@ -29,14 +29,7 @@ public:
 	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Top_C_ExecuteUbergraph_WBP_GadgetCustom_Top) == 0x000008, "Wrong alignment on WBP_GadgetCustom_Top_C_ExecuteUbergraph_WBP_GadgetCustom_Top");
-static_assert(sizeof(WBP_GadgetCustom_Top_C_ExecuteUbergraph_WBP_GadgetCustom_Top) == 0x000020, "Wrong size on WBP_GadgetCustom_Top_C_ExecuteUbergraph_WBP_GadgetCustom_Top");
-static_assert(offsetof(WBP_GadgetCustom_Top_C_ExecuteUbergraph_WBP_GadgetCustom_Top, EntryPoint) == 0x000000, "Member 'WBP_GadgetCustom_Top_C_ExecuteUbergraph_WBP_GadgetCustom_Top::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Top_C_ExecuteUbergraph_WBP_GadgetCustom_Top, K2Node_Event_InPlayerControllerIndex) == 0x000004, "Member 'WBP_GadgetCustom_Top_C_ExecuteUbergraph_WBP_GadgetCustom_Top::K2Node_Event_InPlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Top_C_ExecuteUbergraph_WBP_GadgetCustom_Top, K2Node_Event_bPlateWindowHigher) == 0x000008, "Member 'WBP_GadgetCustom_Top_C_ExecuteUbergraph_WBP_GadgetCustom_Top::K2Node_Event_bPlateWindowHigher' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Top_C_ExecuteUbergraph_WBP_GadgetCustom_Top, CallFunc_SlotAsCanvasSlot_ReturnValue) == 0x000010, "Member 'WBP_GadgetCustom_Top_C_ExecuteUbergraph_WBP_GadgetCustom_Top::CallFunc_SlotAsCanvasSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Top_C_ExecuteUbergraph_WBP_GadgetCustom_Top, CallFunc_SelectInt_ReturnValue) == 0x000018, "Member 'WBP_GadgetCustom_Top_C_ExecuteUbergraph_WBP_GadgetCustom_Top::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Top_C_ExecuteUbergraph_WBP_GadgetCustom_Top, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00001C, "Member 'WBP_GadgetCustom_Top_C_ExecuteUbergraph_WBP_GadgetCustom_Top::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Top_C_ExecuteUbergraph_WBP_GadgetCustom_Top;
 
 // Function WBP_GadgetCustom_Top.WBP_GadgetCustom_Top_C.SetPlateWindowZorderHigherThanSelectWindow
 // 0x0008 (0x0008 - 0x0000)
@@ -46,10 +39,7 @@ public:
 	int32                                         InPlayerControllerIndex;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bPlateWindowHigher;                                // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Top_C_SetPlateWindowZorderHigherThanSelectWindow) == 0x000004, "Wrong alignment on WBP_GadgetCustom_Top_C_SetPlateWindowZorderHigherThanSelectWindow");
-static_assert(sizeof(WBP_GadgetCustom_Top_C_SetPlateWindowZorderHigherThanSelectWindow) == 0x000008, "Wrong size on WBP_GadgetCustom_Top_C_SetPlateWindowZorderHigherThanSelectWindow");
-static_assert(offsetof(WBP_GadgetCustom_Top_C_SetPlateWindowZorderHigherThanSelectWindow, InPlayerControllerIndex) == 0x000000, "Member 'WBP_GadgetCustom_Top_C_SetPlateWindowZorderHigherThanSelectWindow::InPlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Top_C_SetPlateWindowZorderHigherThanSelectWindow, bPlateWindowHigher) == 0x000004, "Member 'WBP_GadgetCustom_Top_C_SetPlateWindowZorderHigherThanSelectWindow::bPlateWindowHigher' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Top_C_SetPlateWindowZorderHigherThanSelectWindow;
 
 // Function WBP_GadgetCustom_Top.WBP_GadgetCustom_Top_C.Setup
 // 0x0038 (0x0038 - 0x0000)
@@ -64,13 +54,7 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGadgetSelectWindowData                K2Node_MakeStruct_GadgetSelectWindowData;          // 0x0020(0x0018)()
 };
-static_assert(alignof(WBP_GadgetCustom_Top_C_Setup) == 0x000008, "Wrong alignment on WBP_GadgetCustom_Top_C_Setup");
-static_assert(sizeof(WBP_GadgetCustom_Top_C_Setup) == 0x000038, "Wrong size on WBP_GadgetCustom_Top_C_Setup");
-static_assert(offsetof(WBP_GadgetCustom_Top_C_Setup, InWindowData) == 0x000000, "Member 'WBP_GadgetCustom_Top_C_Setup::InWindowData' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Top_C_Setup, bInFestaSpecialRule) == 0x000004, "Member 'WBP_GadgetCustom_Top_C_Setup::bInFestaSpecialRule' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Top_C_Setup, K2Node_MakeArray_Array) == 0x000008, "Member 'WBP_GadgetCustom_Top_C_Setup::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Top_C_Setup, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'WBP_GadgetCustom_Top_C_Setup::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Top_C_Setup, K2Node_MakeStruct_GadgetSelectWindowData) == 0x000020, "Member 'WBP_GadgetCustom_Top_C_Setup::K2Node_MakeStruct_GadgetSelectWindowData' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Top_C_Setup;
 
 // Function WBP_GadgetCustom_Top.WBP_GadgetCustom_Top_C.GetCharaNameBoxes
 // 0x0020 (0x0020 - 0x0000)
@@ -80,10 +64,7 @@ public:
 	TArray<class UUnionRichTextBlock*>            OutCharaNameBoxes;                                 // 0x0000(0x0010)(Parm, OutParm, ContainsInstancedReference)
 	TArray<class UUnionRichTextBlock*>            K2Node_MakeArray_Array;                            // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(WBP_GadgetCustom_Top_C_GetCharaNameBoxes) == 0x000008, "Wrong alignment on WBP_GadgetCustom_Top_C_GetCharaNameBoxes");
-static_assert(sizeof(WBP_GadgetCustom_Top_C_GetCharaNameBoxes) == 0x000020, "Wrong size on WBP_GadgetCustom_Top_C_GetCharaNameBoxes");
-static_assert(offsetof(WBP_GadgetCustom_Top_C_GetCharaNameBoxes, OutCharaNameBoxes) == 0x000000, "Member 'WBP_GadgetCustom_Top_C_GetCharaNameBoxes::OutCharaNameBoxes' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Top_C_GetCharaNameBoxes, K2Node_MakeArray_Array) == 0x000010, "Member 'WBP_GadgetCustom_Top_C_GetCharaNameBoxes::K2Node_MakeArray_Array' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Top_C_GetCharaNameBoxes;
 
 // Function WBP_GadgetCustom_Top.WBP_GadgetCustom_Top_C.GetDetailWindows
 // 0x0020 (0x0020 - 0x0000)
@@ -93,10 +74,7 @@ public:
 	TArray<class UGadgetDetailWindow*>            OutDetailWindows;                                  // 0x0000(0x0010)(Parm, OutParm, ContainsInstancedReference)
 	TArray<class UGadgetDetailWindow*>            K2Node_MakeArray_Array;                            // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(WBP_GadgetCustom_Top_C_GetDetailWindows) == 0x000008, "Wrong alignment on WBP_GadgetCustom_Top_C_GetDetailWindows");
-static_assert(sizeof(WBP_GadgetCustom_Top_C_GetDetailWindows) == 0x000020, "Wrong size on WBP_GadgetCustom_Top_C_GetDetailWindows");
-static_assert(offsetof(WBP_GadgetCustom_Top_C_GetDetailWindows, OutDetailWindows) == 0x000000, "Member 'WBP_GadgetCustom_Top_C_GetDetailWindows::OutDetailWindows' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Top_C_GetDetailWindows, K2Node_MakeArray_Array) == 0x000010, "Member 'WBP_GadgetCustom_Top_C_GetDetailWindows::K2Node_MakeArray_Array' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Top_C_GetDetailWindows;
 
 // Function WBP_GadgetCustom_Top.WBP_GadgetCustom_Top_C.GetGadgetCustomWindows
 // 0x0020 (0x0020 - 0x0000)
@@ -106,10 +84,7 @@ public:
 	TArray<class UGadgetCustomWindow*>            OutGadgetCustomWindows;                            // 0x0000(0x0010)(Parm, OutParm, ContainsInstancedReference)
 	TArray<class UGadgetCustomWindow*>            K2Node_MakeArray_Array;                            // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(WBP_GadgetCustom_Top_C_GetGadgetCustomWindows) == 0x000008, "Wrong alignment on WBP_GadgetCustom_Top_C_GetGadgetCustomWindows");
-static_assert(sizeof(WBP_GadgetCustom_Top_C_GetGadgetCustomWindows) == 0x000020, "Wrong size on WBP_GadgetCustom_Top_C_GetGadgetCustomWindows");
-static_assert(offsetof(WBP_GadgetCustom_Top_C_GetGadgetCustomWindows, OutGadgetCustomWindows) == 0x000000, "Member 'WBP_GadgetCustom_Top_C_GetGadgetCustomWindows::OutGadgetCustomWindows' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Top_C_GetGadgetCustomWindows, K2Node_MakeArray_Array) == 0x000010, "Member 'WBP_GadgetCustom_Top_C_GetGadgetCustomWindows::K2Node_MakeArray_Array' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Top_C_GetGadgetCustomWindows;
 
 // Function WBP_GadgetCustom_Top.WBP_GadgetCustom_Top_C.GetmachineParameterWindows
 // 0x0020 (0x0020 - 0x0000)
@@ -119,10 +94,7 @@ public:
 	TArray<class UCharaMachineParamWindow*>       OutMachineParameterWindows;                        // 0x0000(0x0010)(Parm, OutParm, ContainsInstancedReference)
 	TArray<class UCharaMachineParamWindow*>       K2Node_MakeArray_Array;                            // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(WBP_GadgetCustom_Top_C_GetmachineParameterWindows) == 0x000008, "Wrong alignment on WBP_GadgetCustom_Top_C_GetmachineParameterWindows");
-static_assert(sizeof(WBP_GadgetCustom_Top_C_GetmachineParameterWindows) == 0x000020, "Wrong size on WBP_GadgetCustom_Top_C_GetmachineParameterWindows");
-static_assert(offsetof(WBP_GadgetCustom_Top_C_GetmachineParameterWindows, OutMachineParameterWindows) == 0x000000, "Member 'WBP_GadgetCustom_Top_C_GetmachineParameterWindows::OutMachineParameterWindows' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Top_C_GetmachineParameterWindows, K2Node_MakeArray_Array) == 0x000010, "Member 'WBP_GadgetCustom_Top_C_GetmachineParameterWindows::K2Node_MakeArray_Array' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Top_C_GetmachineParameterWindows;
 
 // Function WBP_GadgetCustom_Top.WBP_GadgetCustom_Top_C.GetPlateWindows
 // 0x0020 (0x0020 - 0x0000)
@@ -132,10 +104,7 @@ public:
 	TArray<class UGadgetPlateWindow*>             OutPlateWindows;                                   // 0x0000(0x0010)(Parm, OutParm, ContainsInstancedReference)
 	TArray<class UGadgetPlateWindow*>             K2Node_MakeArray_Array;                            // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(WBP_GadgetCustom_Top_C_GetPlateWindows) == 0x000008, "Wrong alignment on WBP_GadgetCustom_Top_C_GetPlateWindows");
-static_assert(sizeof(WBP_GadgetCustom_Top_C_GetPlateWindows) == 0x000020, "Wrong size on WBP_GadgetCustom_Top_C_GetPlateWindows");
-static_assert(offsetof(WBP_GadgetCustom_Top_C_GetPlateWindows, OutPlateWindows) == 0x000000, "Member 'WBP_GadgetCustom_Top_C_GetPlateWindows::OutPlateWindows' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Top_C_GetPlateWindows, K2Node_MakeArray_Array) == 0x000010, "Member 'WBP_GadgetCustom_Top_C_GetPlateWindows::K2Node_MakeArray_Array' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Top_C_GetPlateWindows;
 
 // Function WBP_GadgetCustom_Top.WBP_GadgetCustom_Top_C.GetTicketBox
 // 0x0010 (0x0010 - 0x0000)
@@ -145,10 +114,7 @@ public:
 	class UCommonCountNumberWidget*               ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWBP_CMN_GadgetCount_C*                 CallFunc_GetGadgetCountWidget_OutGadgetCountWidget; // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Top_C_GetTicketBox) == 0x000008, "Wrong alignment on WBP_GadgetCustom_Top_C_GetTicketBox");
-static_assert(sizeof(WBP_GadgetCustom_Top_C_GetTicketBox) == 0x000010, "Wrong size on WBP_GadgetCustom_Top_C_GetTicketBox");
-static_assert(offsetof(WBP_GadgetCustom_Top_C_GetTicketBox, ReturnValue) == 0x000000, "Member 'WBP_GadgetCustom_Top_C_GetTicketBox::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Top_C_GetTicketBox, CallFunc_GetGadgetCountWidget_OutGadgetCountWidget) == 0x000008, "Member 'WBP_GadgetCustom_Top_C_GetTicketBox::CallFunc_GetGadgetCountWidget_OutGadgetCountWidget' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Top_C_GetTicketBox;
 
 }
 

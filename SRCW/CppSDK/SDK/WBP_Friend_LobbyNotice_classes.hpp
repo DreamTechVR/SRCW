@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -59,23 +59,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Friend_LobbyNotice_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Friend_LobbyNotice_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Friend_LobbyNotice_C")
 	}
 	static class UWBP_Friend_LobbyNotice_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Friend_LobbyNotice_C>();
 	}
 };
-static_assert(alignof(UWBP_Friend_LobbyNotice_C) == 0x000008, "Wrong alignment on UWBP_Friend_LobbyNotice_C");
-static_assert(sizeof(UWBP_Friend_LobbyNotice_C) == 0x000620, "Wrong size on UWBP_Friend_LobbyNotice_C");
-static_assert(offsetof(UWBP_Friend_LobbyNotice_C, UberGraphFrame) == 0x0005E0, "Member 'UWBP_Friend_LobbyNotice_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_LobbyNotice_C, LobbyNotice_Out) == 0x0005E8, "Member 'UWBP_Friend_LobbyNotice_C::LobbyNotice_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_LobbyNotice_C, LobbyNotice_Loop) == 0x0005F0, "Member 'UWBP_Friend_LobbyNotice_C::LobbyNotice_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_LobbyNotice_C, LobbyNotice_In) == 0x0005F8, "Member 'UWBP_Friend_LobbyNotice_C::LobbyNotice_In' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_LobbyNotice_C, WBP_Sub_Friend_LobbyNotice) == 0x000600, "Member 'UWBP_Friend_LobbyNotice_C::WBP_Sub_Friend_LobbyNotice' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_LobbyNotice_C, WBP_Sub_Friend_LobbyNoticePlate_Guide) == 0x000608, "Member 'UWBP_Friend_LobbyNotice_C::WBP_Sub_Friend_LobbyNoticePlate_Guide' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_LobbyNotice_C, WidgetSwitcher_0) == 0x000610, "Member 'UWBP_Friend_LobbyNotice_C::WidgetSwitcher_0' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_LobbyNotice_C, MenuInputReceiveObject) == 0x000618, "Member 'UWBP_Friend_LobbyNotice_C::MenuInputReceiveObject' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Friend_LobbyNotice_C;
 
 }
 

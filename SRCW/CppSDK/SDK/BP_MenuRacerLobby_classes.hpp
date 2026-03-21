@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
+#include "UnionRun_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
 #include "ST_RacerDataForPreview_structs.hpp"
-#include "UnionRun_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -89,6 +89,8 @@ public:
 	void PlayDriverStampVoice(int32 InButtonIndex);
 	void PlayVoice(const EDriverVoiceId InDriverVoiceId, const ESoundPan InSoundPan);
 	void Polling_Set_Sticker(class UStickerBakerHandle* StickerBakerHandle, bool* IsCompleteSetSticker);
+	void PrintFrontStickerLog(class UStickerBakerHandle* ターゲット);
+	void PrintRearStickerLog(class UStickerBakerHandle* ターゲット);
 	void ReceiveBeginPlay();
 	void ReceiveDestroyed();
 	void ReceiveTick(float DeltaSeconds);
@@ -114,54 +116,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_MenuRacerLobby_C">();
+		BP_STATIC_CLASS_IMPL("BP_MenuRacerLobby_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_MenuRacerLobby_C")
 	}
 	static class ABP_MenuRacerLobby_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_MenuRacerLobby_C>();
 	}
 };
-static_assert(alignof(ABP_MenuRacerLobby_C) == 0x000008, "Wrong alignment on ABP_MenuRacerLobby_C");
-static_assert(sizeof(ABP_MenuRacerLobby_C) == 0x000888, "Wrong size on ABP_MenuRacerLobby_C");
-static_assert(offsetof(ABP_MenuRacerLobby_C, UberGraphFrame) == 0x000380, "Member 'ABP_MenuRacerLobby_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, MachineAuraEffect) == 0x000388, "Member 'ABP_MenuRacerLobby_C::MachineAuraEffect' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, DefaultSceneRoot) == 0x000390, "Member 'ABP_MenuRacerLobby_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, RacerData) == 0x000398, "Member 'ABP_MenuRacerLobby_C::RacerData' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, MachineActor) == 0x0003A8, "Member 'ABP_MenuRacerLobby_C::MachineActor' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, HoverboardActor) == 0x0003B0, "Member 'ABP_MenuRacerLobby_C::HoverboardActor' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, DriverPawn) == 0x0003B8, "Member 'ABP_MenuRacerLobby_C::DriverPawn' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, RotationSpeed) == 0x0003C0, "Member 'ABP_MenuRacerLobby_C::RotationSpeed' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, RotationVelocity) == 0x0003C8, "Member 'ABP_MenuRacerLobby_C::RotationVelocity' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, EngineSound_Front) == 0x0003D0, "Member 'ABP_MenuRacerLobby_C::EngineSound_Front' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, EngineSound_Rear) == 0x0003D8, "Member 'ABP_MenuRacerLobby_C::EngineSound_Rear' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, DriverComponent) == 0x0003E0, "Member 'ABP_MenuRacerLobby_C::DriverComponent' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, Lod) == 0x0003E8, "Member 'ABP_MenuRacerLobby_C::Lod' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, MachineComponet) == 0x0003F0, "Member 'ABP_MenuRacerLobby_C::MachineComponet' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, HoverboardComponet) == 0x0003F8, "Member 'ABP_MenuRacerLobby_C::HoverboardComponet' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, IsJustSpawnedMachineActor) == 0x000400, "Member 'ABP_MenuRacerLobby_C::IsJustSpawnedMachineActor' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, IsJustSpawnedHoverboardActor) == 0x000401, "Member 'ABP_MenuRacerLobby_C::IsJustSpawnedHoverboardActor' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, HornEffectComponent) == 0x000408, "Member 'ABP_MenuRacerLobby_C::HornEffectComponent' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, RoomEntryAnimTimer) == 0x000410, "Member 'ABP_MenuRacerLobby_C::RoomEntryAnimTimer' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, RoomEntryTimerCnt) == 0x000418, "Member 'ABP_MenuRacerLobby_C::RoomEntryTimerCnt' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, ActorDefaultLocate) == 0x000420, "Member 'ABP_MenuRacerLobby_C::ActorDefaultLocate' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, RingComponent) == 0x000438, "Member 'ABP_MenuRacerLobby_C::RingComponent' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, ActiveActor) == 0x000440, "Member 'ABP_MenuRacerLobby_C::ActiveActor' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, HornEffect) == 0x000448, "Member 'ABP_MenuRacerLobby_C::HornEffect' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, HornSE) == 0x000450, "Member 'ABP_MenuRacerLobby_C::HornSE' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, bHoverboard) == 0x000458, "Member 'ABP_MenuRacerLobby_C::bHoverboard' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, ChangeMachineType) == 0x000459, "Member 'ABP_MenuRacerLobby_C::ChangeMachineType' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, StatusType) == 0x00045A, "Member 'ABP_MenuRacerLobby_C::StatusType' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, OnAttachedEnd) == 0x000460, "Member 'ABP_MenuRacerLobby_C::OnAttachedEnd' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, CrownActor) == 0x000470, "Member 'ABP_MenuRacerLobby_C::CrownActor' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, FrontStickerBakerHandle) == 0x000478, "Member 'ABP_MenuRacerLobby_C::FrontStickerBakerHandle' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, RearStickerBakerHandle) == 0x000480, "Member 'ABP_MenuRacerLobby_C::RearStickerBakerHandle' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, CurrentDriverData) == 0x000488, "Member 'ABP_MenuRacerLobby_C::CurrentDriverData' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, AuraEffectComponent) == 0x000818, "Member 'ABP_MenuRacerLobby_C::AuraEffectComponent' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, CrownData) == 0x000820, "Member 'ABP_MenuRacerLobby_C::CrownData' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, AuraId) == 0x000880, "Member 'ABP_MenuRacerLobby_C::AuraId' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, CarStatusType) == 0x000881, "Member 'ABP_MenuRacerLobby_C::CarStatusType' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, OverRideMachineColor) == 0x000882, "Member 'ABP_MenuRacerLobby_C::OverRideMachineColor' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerLobby_C, bIsOverRideMachineColor) == 0x000883, "Member 'ABP_MenuRacerLobby_C::bIsOverRideMachineColor' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_MenuRacerLobby_C;
 
 }
 

@@ -62,45 +62,7 @@ public:
 	struct FAnimNodeExposedValueHandler_PropertyAccess AnimGraphNode_StateResult;                    // 0x0408(0x0030)()
 	struct FAnimNodeExposedValueHandler_PropertyAccess AnimGraphNode_StateMachine;                   // 0x0438(0x0030)()
 };
-static_assert(alignof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData) == 0x000008, "Wrong alignment on ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData");
-static_assert(sizeof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData) == 0x000468, "Wrong size on ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, __NameProperty_97) == 0x000004, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::__NameProperty_97' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, __NameProperty_98) == 0x00000C, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::__NameProperty_98' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, __IntProperty_99) == 0x000014, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::__IntProperty_99' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, __NameProperty_100) == 0x000018, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::__NameProperty_100' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, __IntProperty_101) == 0x000020, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::__IntProperty_101' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, __StructProperty_102) == 0x000024, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::__StructProperty_102' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, __NameProperty_103) == 0x000050, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::__NameProperty_103' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, __IntProperty_104) == 0x000058, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::__IntProperty_104' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, __BoolProperty_105) == 0x00005C, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::__BoolProperty_105' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, __FloatProperty_106) == 0x000060, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::__FloatProperty_106' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, __FloatProperty_107) == 0x000064, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::__FloatProperty_107' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, __BoolProperty_108) == 0x000068, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::__BoolProperty_108' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, __EnumProperty_109) == 0x000069, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::__EnumProperty_109' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, __ByteProperty_110) == 0x00006A, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::__ByteProperty_110' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, __NameProperty_111) == 0x00006C, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::__NameProperty_111' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, __NameProperty_112) == 0x000074, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::__NameProperty_112' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, __NameProperty_113) == 0x00007C, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::__NameProperty_113' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, __IntProperty_114) == 0x000084, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::__IntProperty_114' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, __StructProperty_115) == 0x000088, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::__StructProperty_115' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, AnimBlueprintExtension_PropertyAccess) == 0x0000A8, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::AnimBlueprintExtension_PropertyAccess' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, AnimBlueprintExtension_Base) == 0x000128, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::AnimBlueprintExtension_Base' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, AnimGraphNode_Root) == 0x000168, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::AnimGraphNode_Root' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, AnimGraphNode_TransitionResult_5) == 0x000198, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::AnimGraphNode_TransitionResult_5' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, AnimGraphNode_TransitionResult_4) == 0x0001C8, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::AnimGraphNode_TransitionResult_4' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, AnimGraphNode_TransitionResult_3) == 0x0001F8, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::AnimGraphNode_TransitionResult_3' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, AnimGraphNode_TransitionResult_2) == 0x000228, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::AnimGraphNode_TransitionResult_2' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, AnimGraphNode_TransitionResult_1) == 0x000258, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::AnimGraphNode_TransitionResult_1' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, AnimGraphNode_TransitionResult) == 0x000288, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::AnimGraphNode_TransitionResult' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, AnimGraphNode_SequencePlayer_2) == 0x0002B8, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::AnimGraphNode_SequencePlayer_2' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, AnimGraphNode_StateResult_3) == 0x0002E8, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::AnimGraphNode_StateResult_3' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, AnimGraphNode_SequencePlayer_1) == 0x000318, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::AnimGraphNode_SequencePlayer_1' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, AnimGraphNode_StateResult_2) == 0x000348, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::AnimGraphNode_StateResult_2' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, AnimGraphNode_SequencePlayer) == 0x000378, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::AnimGraphNode_SequencePlayer' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, AnimGraphNode_StateResult_1) == 0x0003A8, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::AnimGraphNode_StateResult_1' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, AnimGraphNode_BlendSpacePlayer) == 0x0003D8, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::AnimGraphNode_BlendSpacePlayer' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, AnimGraphNode_StateResult) == 0x000408, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::AnimGraphNode_StateResult' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData, AnimGraphNode_StateMachine) == 0x000438, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedConstantData::AnimGraphNode_StateMachine' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_ItemDarkChaoPerformance__FAnimBlueprintGeneratedConstantData;
 
 // ScriptStruct ABP_ItemDarkChaoPerformance.ABP_ItemDarkChaoPerformance_C.AnimBlueprintGeneratedMutableData
 // 0x0007 (0x0008 - 0x0001)
@@ -110,9 +72,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         __FloatProperty;                                   // 0x0004(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedMutableData) == 0x000004, "Wrong alignment on ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedMutableData");
-static_assert(sizeof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedMutableData) == 0x000008, "Wrong size on ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedMutableData");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedMutableData, __FloatProperty) == 0x000004, "Member 'ABP_ItemDarkChaoPerformance::FAnimBlueprintGeneratedMutableData::__FloatProperty' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_ItemDarkChaoPerformance__FAnimBlueprintGeneratedMutableData;
 
 }
 

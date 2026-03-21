@@ -10,18 +10,18 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C
-// 0x0048 (0x0538 - 0x04F0)
+// 0x0058 (0x0548 - 0x04F0)
 class UWBP_Friend_Sub_AddFriend_C final : public UFriendListContentsWidget
 {
 public:
@@ -32,6 +32,7 @@ public:
 	class UFriendListNumberInputWidget*           NumberInputWidget;                                 // 0x0518(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	TArray<class UWBP_Friend_Sub_PlayerPlate_Small_C*> ScrollBoxWidgetArray;                         // 0x0520(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	class UUnionUIButtonBase*                     CurrentDecidedButton;                              // 0x0530(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FText                                   OutNumberInputText;                                // 0x0538(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	class UFriendListNumberInputWidget* GetNumberInputWidget();
@@ -67,22 +68,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Friend_Sub_AddFriend_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Friend_Sub_AddFriend_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Friend_Sub_AddFriend_C")
 	}
 	static class UWBP_Friend_Sub_AddFriend_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Friend_Sub_AddFriend_C>();
 	}
 };
-static_assert(alignof(UWBP_Friend_Sub_AddFriend_C) == 0x000008, "Wrong alignment on UWBP_Friend_Sub_AddFriend_C");
-static_assert(sizeof(UWBP_Friend_Sub_AddFriend_C) == 0x000538, "Wrong size on UWBP_Friend_Sub_AddFriend_C");
-static_assert(offsetof(UWBP_Friend_Sub_AddFriend_C, UberGraphFrame) == 0x0004F0, "Member 'UWBP_Friend_Sub_AddFriend_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_AddFriend_C, ScrollBox_0) == 0x0004F8, "Member 'UWBP_Friend_Sub_AddFriend_C::ScrollBox_0' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_AddFriend_C, WBP_Friend_SubMenu_Btn) == 0x000500, "Member 'UWBP_Friend_Sub_AddFriend_C::WBP_Friend_SubMenu_Btn' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_AddFriend_C, ItemWidgetArray) == 0x000508, "Member 'UWBP_Friend_Sub_AddFriend_C::ItemWidgetArray' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_AddFriend_C, NumberInputWidget) == 0x000518, "Member 'UWBP_Friend_Sub_AddFriend_C::NumberInputWidget' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_AddFriend_C, ScrollBoxWidgetArray) == 0x000520, "Member 'UWBP_Friend_Sub_AddFriend_C::ScrollBoxWidgetArray' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_AddFriend_C, CurrentDecidedButton) == 0x000530, "Member 'UWBP_Friend_Sub_AddFriend_C::CurrentDecidedButton' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Friend_Sub_AddFriend_C;
 
 }
 

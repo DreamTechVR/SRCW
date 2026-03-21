@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -50,31 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CourseSelect_Sub_TimeTrialIcon_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CourseSelect_Sub_TimeTrialIcon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CourseSelect_Sub_TimeTrialIcon_C")
 	}
 	static class UWBP_CourseSelect_Sub_TimeTrialIcon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CourseSelect_Sub_TimeTrialIcon_C>();
 	}
 };
-static_assert(alignof(UWBP_CourseSelect_Sub_TimeTrialIcon_C) == 0x000008, "Wrong alignment on UWBP_CourseSelect_Sub_TimeTrialIcon_C");
-static_assert(sizeof(UWBP_CourseSelect_Sub_TimeTrialIcon_C) == 0x0006D8, "Wrong size on UWBP_CourseSelect_Sub_TimeTrialIcon_C");
-static_assert(offsetof(UWBP_CourseSelect_Sub_TimeTrialIcon_C, UberGraphFrame) == 0x000658, "Member 'UWBP_CourseSelect_Sub_TimeTrialIcon_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_TimeTrialIcon_C, Arrow) == 0x000660, "Member 'UWBP_CourseSelect_Sub_TimeTrialIcon_C::Arrow' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_TimeTrialIcon_C, Black_LockCover) == 0x000668, "Member 'UWBP_CourseSelect_Sub_TimeTrialIcon_C::Black_LockCover' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_TimeTrialIcon_C, Coursor_Icon_Eff) == 0x000670, "Member 'UWBP_CourseSelect_Sub_TimeTrialIcon_C::Coursor_Icon_Eff' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_TimeTrialIcon_C, Coursor_Icon_Eff2) == 0x000678, "Member 'UWBP_CourseSelect_Sub_TimeTrialIcon_C::Coursor_Icon_Eff2' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_TimeTrialIcon_C, Coursor_Icon_Eff_Core) == 0x000680, "Member 'UWBP_CourseSelect_Sub_TimeTrialIcon_C::Coursor_Icon_Eff_Core' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_TimeTrialIcon_C, Coursor_Icon_Eff_Core2) == 0x000688, "Member 'UWBP_CourseSelect_Sub_TimeTrialIcon_C::Coursor_Icon_Eff_Core2' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_TimeTrialIcon_C, Coursor_Icon_LightGlare) == 0x000690, "Member 'UWBP_CourseSelect_Sub_TimeTrialIcon_C::Coursor_Icon_LightGlare' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_TimeTrialIcon_C, Cursor_CourseSelect) == 0x000698, "Member 'UWBP_CourseSelect_Sub_TimeTrialIcon_C::Cursor_CourseSelect' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_TimeTrialIcon_C, DSP_LockCover) == 0x0006A0, "Member 'UWBP_CourseSelect_Sub_TimeTrialIcon_C::DSP_LockCover' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_TimeTrialIcon_C, Lock) == 0x0006A8, "Member 'UWBP_CourseSelect_Sub_TimeTrialIcon_C::Lock' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_TimeTrialIcon_C, MouseInteraction) == 0x0006B0, "Member 'UWBP_CourseSelect_Sub_TimeTrialIcon_C::MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_TimeTrialIcon_C, Overlay_Eff_Set) == 0x0006B8, "Member 'UWBP_CourseSelect_Sub_TimeTrialIcon_C::Overlay_Eff_Set' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_TimeTrialIcon_C, PopText_base) == 0x0006C0, "Member 'UWBP_CourseSelect_Sub_TimeTrialIcon_C::PopText_base' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_TimeTrialIcon_C, TimeTrialIcon) == 0x0006C8, "Member 'UWBP_CourseSelect_Sub_TimeTrialIcon_C::TimeTrialIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_TimeTrialIcon_C, TXT_InfoText) == 0x0006D0, "Member 'UWBP_CourseSelect_Sub_TimeTrialIcon_C::TXT_InfoText' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CourseSelect_Sub_TimeTrialIcon_C;
 
 }
 

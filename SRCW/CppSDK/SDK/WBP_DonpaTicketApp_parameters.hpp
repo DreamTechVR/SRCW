@@ -25,12 +25,7 @@ public:
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_1;    // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_DonpaTicketApp_C_ExecuteUbergraph_WBP_DonpaTicketApp) == 0x000008, "Wrong alignment on WBP_DonpaTicketApp_C_ExecuteUbergraph_WBP_DonpaTicketApp");
-static_assert(sizeof(WBP_DonpaTicketApp_C_ExecuteUbergraph_WBP_DonpaTicketApp) == 0x000018, "Wrong size on WBP_DonpaTicketApp_C_ExecuteUbergraph_WBP_DonpaTicketApp");
-static_assert(offsetof(WBP_DonpaTicketApp_C_ExecuteUbergraph_WBP_DonpaTicketApp, EntryPoint) == 0x000000, "Member 'WBP_DonpaTicketApp_C_ExecuteUbergraph_WBP_DonpaTicketApp::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_DonpaTicketApp_C_ExecuteUbergraph_WBP_DonpaTicketApp, K2Node_Event_Animation) == 0x000008, "Member 'WBP_DonpaTicketApp_C_ExecuteUbergraph_WBP_DonpaTicketApp::K2Node_Event_Animation' has a wrong offset!");
-static_assert(offsetof(WBP_DonpaTicketApp_C_ExecuteUbergraph_WBP_DonpaTicketApp, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000010, "Member 'WBP_DonpaTicketApp_C_ExecuteUbergraph_WBP_DonpaTicketApp::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DonpaTicketApp_C_ExecuteUbergraph_WBP_DonpaTicketApp, CallFunc_EqualEqual_ObjectObject_ReturnValue_1) == 0x000011, "Member 'WBP_DonpaTicketApp_C_ExecuteUbergraph_WBP_DonpaTicketApp::CallFunc_EqualEqual_ObjectObject_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_DonpaTicketApp_C_ExecuteUbergraph_WBP_DonpaTicketApp;
 
 // Function WBP_DonpaTicketApp.WBP_DonpaTicketApp_C.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -39,9 +34,7 @@ struct WBP_DonpaTicketApp_C_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_DonpaTicketApp_C_OnAnimationFinished) == 0x000008, "Wrong alignment on WBP_DonpaTicketApp_C_OnAnimationFinished");
-static_assert(sizeof(WBP_DonpaTicketApp_C_OnAnimationFinished) == 0x000008, "Wrong size on WBP_DonpaTicketApp_C_OnAnimationFinished");
-static_assert(offsetof(WBP_DonpaTicketApp_C_OnAnimationFinished, Animation) == 0x000000, "Member 'WBP_DonpaTicketApp_C_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_DonpaTicketApp_C_OnAnimationFinished;
 
 // Function WBP_DonpaTicketApp.WBP_DonpaTicketApp_C.PlayAnimationIn
 // 0x0008 (0x0008 - 0x0000)
@@ -50,9 +43,7 @@ struct WBP_DonpaTicketApp_C_PlayAnimationIn final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_DonpaTicketApp_C_PlayAnimationIn) == 0x000008, "Wrong alignment on WBP_DonpaTicketApp_C_PlayAnimationIn");
-static_assert(sizeof(WBP_DonpaTicketApp_C_PlayAnimationIn) == 0x000008, "Wrong size on WBP_DonpaTicketApp_C_PlayAnimationIn");
-static_assert(offsetof(WBP_DonpaTicketApp_C_PlayAnimationIn, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_DonpaTicketApp_C_PlayAnimationIn::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_DonpaTicketApp_C_PlayAnimationIn;
 
 // Function WBP_DonpaTicketApp.WBP_DonpaTicketApp_C.PlayAnimationLoop
 // 0x0008 (0x0008 - 0x0000)
@@ -61,9 +52,7 @@ struct WBP_DonpaTicketApp_C_PlayAnimationLoop final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_DonpaTicketApp_C_PlayAnimationLoop) == 0x000008, "Wrong alignment on WBP_DonpaTicketApp_C_PlayAnimationLoop");
-static_assert(sizeof(WBP_DonpaTicketApp_C_PlayAnimationLoop) == 0x000008, "Wrong size on WBP_DonpaTicketApp_C_PlayAnimationLoop");
-static_assert(offsetof(WBP_DonpaTicketApp_C_PlayAnimationLoop, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_DonpaTicketApp_C_PlayAnimationLoop::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_DonpaTicketApp_C_PlayAnimationLoop;
 
 // Function WBP_DonpaTicketApp.WBP_DonpaTicketApp_C.PlayAnimationOut
 // 0x0008 (0x0008 - 0x0000)
@@ -72,9 +61,7 @@ struct WBP_DonpaTicketApp_C_PlayAnimationOut final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_DonpaTicketApp_C_PlayAnimationOut) == 0x000008, "Wrong alignment on WBP_DonpaTicketApp_C_PlayAnimationOut");
-static_assert(sizeof(WBP_DonpaTicketApp_C_PlayAnimationOut) == 0x000008, "Wrong size on WBP_DonpaTicketApp_C_PlayAnimationOut");
-static_assert(offsetof(WBP_DonpaTicketApp_C_PlayAnimationOut, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_DonpaTicketApp_C_PlayAnimationOut::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_DonpaTicketApp_C_PlayAnimationOut;
 
 }
 

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "UNION_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UNION_classes.hpp"
 
 
 namespace SDK
@@ -51,25 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_PauseMenu_Sub_Option_Btn_03_C">();
+		BP_STATIC_CLASS_IMPL("WBP_PauseMenu_Sub_Option_Btn_03_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_PauseMenu_Sub_Option_Btn_03_C")
 	}
 	static class UWBP_PauseMenu_Sub_Option_Btn_03_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_PauseMenu_Sub_Option_Btn_03_C>();
 	}
 };
-static_assert(alignof(UWBP_PauseMenu_Sub_Option_Btn_03_C) == 0x000008, "Wrong alignment on UWBP_PauseMenu_Sub_Option_Btn_03_C");
-static_assert(sizeof(UWBP_PauseMenu_Sub_Option_Btn_03_C) == 0x000338, "Wrong size on UWBP_PauseMenu_Sub_Option_Btn_03_C");
-static_assert(offsetof(UWBP_PauseMenu_Sub_Option_Btn_03_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_PauseMenu_Sub_Option_Btn_03_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_Sub_Option_Btn_03_C, OFF_Loop) == 0x0002E8, "Member 'UWBP_PauseMenu_Sub_Option_Btn_03_C::OFF_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_Sub_Option_Btn_03_C, ON_Loop) == 0x0002F0, "Member 'UWBP_PauseMenu_Sub_Option_Btn_03_C::ON_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_Sub_Option_Btn_03_C, Base_Btn) == 0x0002F8, "Member 'UWBP_PauseMenu_Sub_Option_Btn_03_C::Base_Btn' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_Sub_Option_Btn_03_C, MouseInteraction) == 0x000300, "Member 'UWBP_PauseMenu_Sub_Option_Btn_03_C::MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_Sub_Option_Btn_03_C, PAT_OptionPict) == 0x000308, "Member 'UWBP_PauseMenu_Sub_Option_Btn_03_C::PAT_OptionPict' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_Sub_Option_Btn_03_C, TXT_OptionType) == 0x000310, "Member 'UWBP_PauseMenu_Sub_Option_Btn_03_C::TXT_OptionType' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_Sub_Option_Btn_03_C, WBP_CMN_ControllerBtn) == 0x000318, "Member 'UWBP_PauseMenu_Sub_Option_Btn_03_C::WBP_CMN_ControllerBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_Sub_Option_Btn_03_C, Controller_Button_Index) == 0x000320, "Member 'UWBP_PauseMenu_Sub_Option_Btn_03_C::Controller_Button_Index' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_Sub_Option_Btn_03_C, OnClicked) == 0x000328, "Member 'UWBP_PauseMenu_Sub_Option_Btn_03_C::OnClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_PauseMenu_Sub_Option_Btn_03_C;
 
 }
 

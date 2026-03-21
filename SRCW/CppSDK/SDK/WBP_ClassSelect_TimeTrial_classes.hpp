@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -57,32 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ClassSelect_TimeTrial_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ClassSelect_TimeTrial_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ClassSelect_TimeTrial_C")
 	}
 	static class UWBP_ClassSelect_TimeTrial_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ClassSelect_TimeTrial_C>();
 	}
 };
-static_assert(alignof(UWBP_ClassSelect_TimeTrial_C) == 0x000008, "Wrong alignment on UWBP_ClassSelect_TimeTrial_C");
-static_assert(sizeof(UWBP_ClassSelect_TimeTrial_C) == 0x0004B8, "Wrong size on UWBP_ClassSelect_TimeTrial_C");
-static_assert(offsetof(UWBP_ClassSelect_TimeTrial_C, UberGraphFrame) == 0x000420, "Member 'UWBP_ClassSelect_TimeTrial_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_TimeTrial_C, Base_Normal) == 0x000428, "Member 'UWBP_ClassSelect_TimeTrial_C::Base_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_TimeTrial_C, Filter) == 0x000430, "Member 'UWBP_ClassSelect_TimeTrial_C::Filter' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_TimeTrial_C, Line_Title) == 0x000438, "Member 'UWBP_ClassSelect_TimeTrial_C::Line_Title' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_TimeTrial_C, PAT_Achievement_TimeAttack) == 0x000440, "Member 'UWBP_ClassSelect_TimeTrial_C::PAT_Achievement_TimeAttack' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_TimeTrial_C, PAT_Eff_Achievement_TimeAttack) == 0x000448, "Member 'UWBP_ClassSelect_TimeTrial_C::PAT_Eff_Achievement_TimeAttack' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_TimeTrial_C, Plate) == 0x000450, "Member 'UWBP_ClassSelect_TimeTrial_C::Plate' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_TimeTrial_C, TXT_Detail) == 0x000458, "Member 'UWBP_ClassSelect_TimeTrial_C::TXT_Detail' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_TimeTrial_C, TXT_Num_Count_Normal) == 0x000460, "Member 'UWBP_ClassSelect_TimeTrial_C::TXT_Num_Count_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_TimeTrial_C, TXT_Num_Medal_Count_Normal) == 0x000468, "Member 'UWBP_ClassSelect_TimeTrial_C::TXT_Num_Medal_Count_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_TimeTrial_C, TXT_Title) == 0x000470, "Member 'UWBP_ClassSelect_TimeTrial_C::TXT_Title' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_TimeTrial_C, WBP_ClassSelect_Sub_Btn_Class_01) == 0x000478, "Member 'UWBP_ClassSelect_TimeTrial_C::WBP_ClassSelect_Sub_Btn_Class_01' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_TimeTrial_C, WBP_ClassSelect_Sub_Btn_Class_02) == 0x000480, "Member 'UWBP_ClassSelect_TimeTrial_C::WBP_ClassSelect_Sub_Btn_Class_02' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_TimeTrial_C, ClassMedalMax) == 0x000488, "Member 'UWBP_ClassSelect_TimeTrial_C::ClassMedalMax' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_TimeTrial_C, ClassButtonPanel) == 0x000490, "Member 'UWBP_ClassSelect_TimeTrial_C::ClassButtonPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_TimeTrial_C, OnInFinished) == 0x000498, "Member 'UWBP_ClassSelect_TimeTrial_C::OnInFinished' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_TimeTrial_C, OnOutFinished) == 0x0004A8, "Member 'UWBP_ClassSelect_TimeTrial_C::OnOutFinished' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ClassSelect_TimeTrial_C;
 
 }
 

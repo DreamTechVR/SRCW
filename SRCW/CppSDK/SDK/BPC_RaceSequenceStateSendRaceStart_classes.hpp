@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "UNION_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UNION_classes.hpp"
 
 
 namespace SDK
@@ -66,26 +66,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_RaceSequenceStateSendRaceStart_C">();
+		BP_STATIC_CLASS_IMPL("BPC_RaceSequenceStateSendRaceStart_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_RaceSequenceStateSendRaceStart_C")
 	}
 	static class UBPC_RaceSequenceStateSendRaceStart_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_RaceSequenceStateSendRaceStart_C>();
 	}
 };
-static_assert(alignof(UBPC_RaceSequenceStateSendRaceStart_C) == 0x000008, "Wrong alignment on UBPC_RaceSequenceStateSendRaceStart_C");
-static_assert(sizeof(UBPC_RaceSequenceStateSendRaceStart_C) == 0x000170, "Wrong size on UBPC_RaceSequenceStateSendRaceStart_C");
-static_assert(offsetof(UBPC_RaceSequenceStateSendRaceStart_C, UberGraphFrame) == 0x000120, "Member 'UBPC_RaceSequenceStateSendRaceStart_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateSendRaceStart_C, RequestHandle) == 0x000128, "Member 'UBPC_RaceSequenceStateSendRaceStart_C::RequestHandle' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateSendRaceStart_C, Entry_User_Ids) == 0x000130, "Member 'UBPC_RaceSequenceStateSendRaceStart_C::Entry_User_Ids' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateSendRaceStart_C, Entry_Race_Id) == 0x000140, "Member 'UBPC_RaceSequenceStateSendRaceStart_C::Entry_Race_Id' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateSendRaceStart_C, IsLobbyHost) == 0x000150, "Member 'UBPC_RaceSequenceStateSendRaceStart_C::IsLobbyHost' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateSendRaceStart_C, BonusChanceType) == 0x000154, "Member 'UBPC_RaceSequenceStateSendRaceStart_C::BonusChanceType' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateSendRaceStart_C, BonusChanceParam) == 0x000158, "Member 'UBPC_RaceSequenceStateSendRaceStart_C::BonusChanceParam' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateSendRaceStart_C, IsRaceHost) == 0x00015C, "Member 'UBPC_RaceSequenceStateSendRaceStart_C::IsRaceHost' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateSendRaceStart_C, MainSequenceType) == 0x00015D, "Member 'UBPC_RaceSequenceStateSendRaceStart_C::MainSequenceType' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateSendRaceStart_C, SubSequenceType) == 0x00015E, "Member 'UBPC_RaceSequenceStateSendRaceStart_C::SubSequenceType' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateSendRaceStart_C, Entry_Online_User_Ids) == 0x000160, "Member 'UBPC_RaceSequenceStateSendRaceStart_C::Entry_Online_User_Ids' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_RaceSequenceStateSendRaceStart_C;
 
 }
 

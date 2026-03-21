@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -52,22 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_PartyRace_Sub_OptionBtn_C">();
+		BP_STATIC_CLASS_IMPL("WBP_PartyRace_Sub_OptionBtn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_PartyRace_Sub_OptionBtn_C")
 	}
 	static class UWBP_PartyRace_Sub_OptionBtn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_PartyRace_Sub_OptionBtn_C>();
 	}
 };
-static_assert(alignof(UWBP_PartyRace_Sub_OptionBtn_C) == 0x000008, "Wrong alignment on UWBP_PartyRace_Sub_OptionBtn_C");
-static_assert(sizeof(UWBP_PartyRace_Sub_OptionBtn_C) == 0x0004E0, "Wrong size on UWBP_PartyRace_Sub_OptionBtn_C");
-static_assert(offsetof(UWBP_PartyRace_Sub_OptionBtn_C, UberGraphFrame) == 0x0004A8, "Member 'UWBP_PartyRace_Sub_OptionBtn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_OptionBtn_C, MouseInteraction) == 0x0004B0, "Member 'UWBP_PartyRace_Sub_OptionBtn_C::MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_OptionBtn_C, PartyRace_Cursor) == 0x0004B8, "Member 'UWBP_PartyRace_Sub_OptionBtn_C::PartyRace_Cursor' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_OptionBtn_C, PAT_BtmIcon_DELETE) == 0x0004C0, "Member 'UWBP_PartyRace_Sub_OptionBtn_C::PAT_BtmIcon_DELETE' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_OptionBtn_C, PAT_BtnColor) == 0x0004C8, "Member 'UWBP_PartyRace_Sub_OptionBtn_C::PAT_BtnColor' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_OptionBtn_C, TXT_BtnName) == 0x0004D0, "Member 'UWBP_PartyRace_Sub_OptionBtn_C::TXT_BtnName' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_OptionBtn_C, bDecided) == 0x0004D8, "Member 'UWBP_PartyRace_Sub_OptionBtn_C::bDecided' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_PartyRace_Sub_OptionBtn_C;
 
 }
 

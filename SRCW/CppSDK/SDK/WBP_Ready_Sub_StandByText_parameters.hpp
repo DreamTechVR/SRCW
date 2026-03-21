@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -50,31 +50,7 @@ public:
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00D8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	double                                        CallFunc_Multiply_DoubleDouble_A_ImplicitCast;     // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText) == 0x000008, "Wrong alignment on WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText");
-static_assert(sizeof(WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText) == 0x0000F0, "Wrong size on WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText, EntryPoint) == 0x000000, "Member 'WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText, Temp_int_Array_Index_Variable) == 0x000008, "Member 'WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000010, "Member 'WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000018, "Member 'WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText, CallFunc_Conv_IntToDouble_ReturnValue_1) == 0x000020, "Member 'WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText::CallFunc_Conv_IntToDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText, CallFunc_Multiply_DoubleDouble_ReturnValue_1) == 0x000028, "Member 'WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText::CallFunc_Multiply_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000030, "Member 'WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText, CallFunc_DegSin_ReturnValue) == 0x000038, "Member 'WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText::CallFunc_DegSin_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText, K2Node_Event_MyGeometry) == 0x000040, "Member 'WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText, K2Node_Event_InDeltaTime) == 0x000078, "Member 'WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText, CallFunc_Multiply_DoubleDouble_ReturnValue_2) == 0x000080, "Member 'WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText::CallFunc_Multiply_DoubleDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText, CallFunc_MakeVector2D_ReturnValue) == 0x000088, "Member 'WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText, CallFunc_Array_Get_Item) == 0x000098, "Member 'WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText, CallFunc_Multiply_DoubleDouble_ReturnValue_3) == 0x0000A0, "Member 'WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText::CallFunc_Multiply_DoubleDouble_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText, CallFunc_Add_DoubleDouble_ReturnValue_1) == 0x0000A8, "Member 'WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText::CallFunc_Add_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText, CallFunc_Array_Length_ReturnValue) == 0x0000B0, "Member 'WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText, CallFunc_Percent_FloatFloat_ReturnValue) == 0x0000B8, "Member 'WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText::CallFunc_Percent_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText, CallFunc_Less_IntInt_ReturnValue) == 0x0000C0, "Member 'WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText, CallFunc_GetText_ReturnValue) == 0x0000C8, "Member 'WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText::CallFunc_GetText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText, CallFunc_Conv_TextToString_ReturnValue) == 0x0000D8, "Member 'WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText, CallFunc_Multiply_DoubleDouble_A_ImplicitCast) == 0x0000E8, "Member 'WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText::CallFunc_Multiply_DoubleDouble_A_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Ready_Sub_StandByText_C_ExecuteUbergraph_WBP_Ready_Sub_StandByText;
 
 // Function WBP_Ready_Sub_StandByText.WBP_Ready_Sub_StandByText_C.SetUp Wave
 // 0x0120 (0x0120 - 0x0000)
@@ -100,24 +76,7 @@ public:
 	class UHorizontalBoxSlot*                     CallFunc_AddChildToHorizontalBox_ReturnValue;      // 0x0110(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Ready_Sub_StandByText_C_SetUp_Wave) == 0x000008, "Wrong alignment on WBP_Ready_Sub_StandByText_C_SetUp_Wave");
-static_assert(sizeof(WBP_Ready_Sub_StandByText_C_SetUp_Wave) == 0x000120, "Wrong size on WBP_Ready_Sub_StandByText_C_SetUp_Wave");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_SetUp_Wave, String_input) == 0x000000, "Member 'WBP_Ready_Sub_StandByText_C_SetUp_Wave::String_input' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_SetUp_Wave, LocalTempFont) == 0x000010, "Member 'WBP_Ready_Sub_StandByText_C_SetUp_Wave::LocalTempFont' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_SetUp_Wave, LocalTmpStr) == 0x000070, "Member 'WBP_Ready_Sub_StandByText_C_SetUp_Wave::LocalTmpStr' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_SetUp_Wave, LocalTempLen) == 0x000080, "Member 'WBP_Ready_Sub_StandByText_C_SetUp_Wave::LocalTempLen' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_SetUp_Wave, K2Node_MakeStruct_WidgetTransform) == 0x000088, "Member 'WBP_Ready_Sub_StandByText_C_SetUp_Wave::K2Node_MakeStruct_WidgetTransform' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_SetUp_Wave, Temp_int_Variable) == 0x0000C0, "Member 'WBP_Ready_Sub_StandByText_C_SetUp_Wave::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_SetUp_Wave, CallFunc_Len_ReturnValue) == 0x0000C4, "Member 'WBP_Ready_Sub_StandByText_C_SetUp_Wave::CallFunc_Len_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_SetUp_Wave, CallFunc_Add_IntInt_ReturnValue) == 0x0000C8, "Member 'WBP_Ready_Sub_StandByText_C_SetUp_Wave::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_SetUp_Wave, CallFunc_Subtract_IntInt_ReturnValue) == 0x0000CC, "Member 'WBP_Ready_Sub_StandByText_C_SetUp_Wave::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_SetUp_Wave, CallFunc_Mid_ReturnValue) == 0x0000D0, "Member 'WBP_Ready_Sub_StandByText_C_SetUp_Wave::CallFunc_Mid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_SetUp_Wave, CallFunc_Conv_StringToText_ReturnValue) == 0x0000E0, "Member 'WBP_Ready_Sub_StandByText_C_SetUp_Wave::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_SetUp_Wave, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0000F0, "Member 'WBP_Ready_Sub_StandByText_C_SetUp_Wave::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_SetUp_Wave, K2Node_MakeStruct_SlateColor) == 0x0000F4, "Member 'WBP_Ready_Sub_StandByText_C_SetUp_Wave::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_SetUp_Wave, CallFunc_SpawnObject_ReturnValue) == 0x000108, "Member 'WBP_Ready_Sub_StandByText_C_SetUp_Wave::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_SetUp_Wave, CallFunc_AddChildToHorizontalBox_ReturnValue) == 0x000110, "Member 'WBP_Ready_Sub_StandByText_C_SetUp_Wave::CallFunc_AddChildToHorizontalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_SetUp_Wave, CallFunc_Array_Add_ReturnValue) == 0x000118, "Member 'WBP_Ready_Sub_StandByText_C_SetUp_Wave::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Ready_Sub_StandByText_C_SetUp_Wave;
 
 // Function WBP_Ready_Sub_StandByText.WBP_Ready_Sub_StandByText_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -127,10 +86,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Ready_Sub_StandByText_C_Tick) == 0x000004, "Wrong alignment on WBP_Ready_Sub_StandByText_C_Tick");
-static_assert(sizeof(WBP_Ready_Sub_StandByText_C_Tick) == 0x00003C, "Wrong size on WBP_Ready_Sub_StandByText_C_Tick");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_Tick, MyGeometry) == 0x000000, "Member 'WBP_Ready_Sub_StandByText_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_StandByText_C_Tick, InDeltaTime) == 0x000038, "Member 'WBP_Ready_Sub_StandByText_C_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Ready_Sub_StandByText_C_Tick;
 
 }
 

@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "UNION_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -32,12 +32,7 @@ public:
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                K2Node_Select_Default;                             // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_Option_Finalconfirm_C_CalcFocusToSetting3Menu) == 0x000008, "Wrong alignment on WBP_PartyRace_Sub_Option_Finalconfirm_C_CalcFocusToSetting3Menu");
-static_assert(sizeof(WBP_PartyRace_Sub_Option_Finalconfirm_C_CalcFocusToSetting3Menu) == 0x000020, "Wrong size on WBP_PartyRace_Sub_Option_Finalconfirm_C_CalcFocusToSetting3Menu");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_CalcFocusToSetting3Menu, Navigation_0) == 0x000000, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_CalcFocusToSetting3Menu::Navigation_0' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_CalcFocusToSetting3Menu, ReturnValue) == 0x000008, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_CalcFocusToSetting3Menu::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_CalcFocusToSetting3Menu, Temp_byte_Variable) == 0x000010, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_CalcFocusToSetting3Menu::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_CalcFocusToSetting3Menu, K2Node_Select_Default) == 0x000018, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_CalcFocusToSetting3Menu::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_Option_Finalconfirm_C_CalcFocusToSetting3Menu;
 
 // Function WBP_PartyRace_Sub_Option_Finalconfirm.WBP_PartyRace_Sub_Option_Finalconfirm_C.CustomEvent
 // 0x0010 (0x0010 - 0x0000)
@@ -47,10 +42,7 @@ public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_Option_Finalconfirm_C_CustomEvent) == 0x000008, "Wrong alignment on WBP_PartyRace_Sub_Option_Finalconfirm_C_CustomEvent");
-static_assert(sizeof(WBP_PartyRace_Sub_Option_Finalconfirm_C_CustomEvent) == 0x000010, "Wrong size on WBP_PartyRace_Sub_Option_Finalconfirm_C_CustomEvent");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_CustomEvent, Button) == 0x000000, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_CustomEvent::Button' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_CustomEvent, ButtonIndex) == 0x000008, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_CustomEvent::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_Option_Finalconfirm_C_CustomEvent;
 
 // Function WBP_PartyRace_Sub_Option_Finalconfirm.WBP_PartyRace_Sub_Option_Finalconfirm_C.DoCustomNavigation
 // 0x0001 (0x0001 - 0x0000)
@@ -59,9 +51,7 @@ struct WBP_PartyRace_Sub_Option_Finalconfirm_C_DoCustomNavigation final
 public:
 	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_Option_Finalconfirm_C_DoCustomNavigation) == 0x000001, "Wrong alignment on WBP_PartyRace_Sub_Option_Finalconfirm_C_DoCustomNavigation");
-static_assert(sizeof(WBP_PartyRace_Sub_Option_Finalconfirm_C_DoCustomNavigation) == 0x000001, "Wrong size on WBP_PartyRace_Sub_Option_Finalconfirm_C_DoCustomNavigation");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_DoCustomNavigation, Navigation_0) == 0x000000, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_DoCustomNavigation::Navigation_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_Option_Finalconfirm_C_DoCustomNavigation;
 
 // Function WBP_PartyRace_Sub_Option_Finalconfirm.WBP_PartyRace_Sub_Option_Finalconfirm_C.ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm
 // 0x0158 (0x0158 - 0x0000)
@@ -121,49 +111,7 @@ public:
 	class UUnionUIButtonsPanel*                   CallFunc_SpawnObject_ReturnValue;                  // 0x0148(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue_3;          // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm) == 0x000008, "Wrong alignment on WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm");
-static_assert(sizeof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm) == 0x000158, "Wrong size on WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, EntryPoint) == 0x000000, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, CallFunc_SoundPlay_ReturnValue) == 0x000004, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, CallFunc_SoundPlay_ReturnValue_1) == 0x000008, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, K2Node_CreateDelegate_OutputDelegate) == 0x00000C, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, CallFunc_SoundPlay_ReturnValue_2) == 0x00001C, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::CallFunc_SoundPlay_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, K2Node_CreateDelegate_OutputDelegate_1) == 0x000020, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, CallFunc_MakeLiteralByte_ReturnValue) == 0x000030, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000031, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, CallFunc_Array_Length_ReturnValue) == 0x000034, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, K2Node_CustomEvent_Button_5) == 0x000038, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::K2Node_CustomEvent_Button_5' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, K2Node_CustomEvent_Button_4) == 0x000040, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::K2Node_CustomEvent_Button_4' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, Temp_int_Variable) == 0x000048, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, K2Node_CustomEvent_Button_3) == 0x000050, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::K2Node_CustomEvent_Button_3' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, K2Node_CustomEvent_ButtonIndex) == 0x000058, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::K2Node_CustomEvent_ButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, K2Node_CreateDelegate_OutputDelegate_2) == 0x00005C, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, CallFunc_NotEqual_IntInt_ReturnValue) == 0x00006C, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, CallFunc_LessEqual_IntInt_ReturnValue) == 0x00006D, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, Temp_int_Loop_Counter_Variable) == 0x000070, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, K2Node_Select_Default) == 0x000078, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, CallFunc_Less_IntInt_ReturnValue) == 0x000080, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, CallFunc_Add_IntInt_ReturnValue) == 0x000084, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, CallFunc_SoundPlay_ReturnValue_3) == 0x000088, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::CallFunc_SoundPlay_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, K2Node_CustomEvent_Button_2) == 0x000090, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::K2Node_CustomEvent_Button_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, K2Node_CreateDelegate_OutputDelegate_3) == 0x000098, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, K2Node_CreateDelegate_OutputDelegate_4) == 0x0000A8, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, CallFunc_MakeLiteralByte_ReturnValue_1) == 0x0000B8, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::CallFunc_MakeLiteralByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, CallFunc_NotEqual_ByteByte_ReturnValue_1) == 0x0000B9, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::CallFunc_NotEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, K2Node_CustomEvent_Button_1) == 0x0000C0, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::K2Node_CustomEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, Temp_int_Array_Index_Variable) == 0x0000C8, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, CallFunc_Array_Get_Item) == 0x0000D0, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, K2Node_Event_InText) == 0x0000D8, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::K2Node_Event_InText' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, CallFunc_MakeLiteralByte_ReturnValue_2) == 0x0000E8, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::CallFunc_MakeLiteralByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, K2Node_MakeArray_Array) == 0x0000F0, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, CallFunc_NotEqual_ByteByte_ReturnValue_2) == 0x000100, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::CallFunc_NotEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, K2Node_CustomEvent_Button) == 0x000108, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, K2Node_CreateDelegate_OutputDelegate_5) == 0x000110, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, K2Node_CreateDelegate_OutputDelegate_6) == 0x000120, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, CallFunc_MakeLiteralText_ReturnValue) == 0x000130, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, CallFunc_MakeLiteralByte_ReturnValue_3) == 0x000140, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::CallFunc_MakeLiteralByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, CallFunc_SpawnObject_ReturnValue) == 0x000148, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm, CallFunc_NotEqual_ByteByte_ReturnValue_3) == 0x000150, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm::CallFunc_NotEqual_ByteByte_ReturnValue_3' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_Option_Finalconfirm_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Finalconfirm;
 
 // Function WBP_PartyRace_Sub_Option_Finalconfirm.WBP_PartyRace_Sub_Option_Finalconfirm_C.OnFocusCourseSwitch
 // 0x0008 (0x0008 - 0x0000)
@@ -172,9 +120,7 @@ struct WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusCourseSwitch final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusCourseSwitch) == 0x000008, "Wrong alignment on WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusCourseSwitch");
-static_assert(sizeof(WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusCourseSwitch) == 0x000008, "Wrong size on WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusCourseSwitch");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusCourseSwitch, Button) == 0x000000, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusCourseSwitch::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusCourseSwitch;
 
 // Function WBP_PartyRace_Sub_Option_Finalconfirm.WBP_PartyRace_Sub_Option_Finalconfirm_C.OnFocusEvent_Event
 // 0x0008 (0x0008 - 0x0000)
@@ -183,9 +129,7 @@ struct WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusEvent_Event final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusEvent_Event) == 0x000008, "Wrong alignment on WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusEvent_Event");
-static_assert(sizeof(WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusEvent_Event) == 0x000008, "Wrong size on WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusEvent_Event");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusEvent_Event, Button) == 0x000000, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusEvent_Event::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusEvent_Event;
 
 // Function WBP_PartyRace_Sub_Option_Finalconfirm.WBP_PartyRace_Sub_Option_Finalconfirm_C.OnFocusItemSwitch
 // 0x0008 (0x0008 - 0x0000)
@@ -194,9 +138,7 @@ struct WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusItemSwitch final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusItemSwitch) == 0x000008, "Wrong alignment on WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusItemSwitch");
-static_assert(sizeof(WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusItemSwitch) == 0x000008, "Wrong size on WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusItemSwitch");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusItemSwitch, Button) == 0x000000, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusItemSwitch::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusItemSwitch;
 
 // Function WBP_PartyRace_Sub_Option_Finalconfirm.WBP_PartyRace_Sub_Option_Finalconfirm_C.OnFocusRaceSetting
 // 0x0008 (0x0008 - 0x0000)
@@ -205,9 +147,7 @@ struct WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusRaceSetting final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusRaceSetting) == 0x000008, "Wrong alignment on WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusRaceSetting");
-static_assert(sizeof(WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusRaceSetting) == 0x000008, "Wrong size on WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusRaceSetting");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusRaceSetting, Button) == 0x000000, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusRaceSetting::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusRaceSetting;
 
 // Function WBP_PartyRace_Sub_Option_Finalconfirm.WBP_PartyRace_Sub_Option_Finalconfirm_C.OnFocusReceived
 // 0x01E0 (0x01E0 - 0x0000)
@@ -228,19 +168,7 @@ public:
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue_1;        // 0x0120(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x0128(0x00B8)()
 };
-static_assert(alignof(WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusReceived) == 0x000008, "Wrong alignment on WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusReceived");
-static_assert(sizeof(WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusReceived) == 0x0001E0, "Wrong size on WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusReceived");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusReceived, CallFunc_IsValid_ReturnValue) == 0x0000F8, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusReceived::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusReceived, CallFunc_GetLastFocusedButton_OutLastFocusedButtonIndex) == 0x0000FC, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusReceived::CallFunc_GetLastFocusedButton_OutLastFocusedButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusReceived, CallFunc_GetLastFocusedButton_ReturnValue) == 0x000100, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusReceived::CallFunc_GetLastFocusedButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusReceived, CallFunc_IsValid_ReturnValue_1) == 0x000108, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusReceived::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusReceived, CallFunc_Array_Get_Item) == 0x000110, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusReceived::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusReceived, CallFunc_GetPlayerController_ReturnValue) == 0x000118, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusReceived::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusReceived, CallFunc_GetPlayerController_ReturnValue_1) == 0x000120, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusReceived::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusReceived, K2Node_MakeStruct_EventReply) == 0x000128, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusReceived::K2Node_MakeStruct_EventReply' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_Option_Finalconfirm_C_OnFocusReceived;
 
 // Function WBP_PartyRace_Sub_Option_Finalconfirm.WBP_PartyRace_Sub_Option_Finalconfirm_C.OnOkFocus
 // 0x0008 (0x0008 - 0x0000)
@@ -249,9 +177,7 @@ struct WBP_PartyRace_Sub_Option_Finalconfirm_C_OnOkFocus final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_Option_Finalconfirm_C_OnOkFocus) == 0x000008, "Wrong alignment on WBP_PartyRace_Sub_Option_Finalconfirm_C_OnOkFocus");
-static_assert(sizeof(WBP_PartyRace_Sub_Option_Finalconfirm_C_OnOkFocus) == 0x000008, "Wrong size on WBP_PartyRace_Sub_Option_Finalconfirm_C_OnOkFocus");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_OnOkFocus, Button) == 0x000000, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_OnOkFocus::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_Option_Finalconfirm_C_OnOkFocus;
 
 // Function WBP_PartyRace_Sub_Option_Finalconfirm.WBP_PartyRace_Sub_Option_Finalconfirm_C.SetPresetName
 // 0x0010 (0x0010 - 0x0000)
@@ -260,9 +186,7 @@ struct WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetName final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetName) == 0x000008, "Wrong alignment on WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetName");
-static_assert(sizeof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetName) == 0x000010, "Wrong size on WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetName");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetName, InText) == 0x000000, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetName::InText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetName;
 
 // Function WBP_PartyRace_Sub_Option_Finalconfirm.WBP_PartyRace_Sub_Option_Finalconfirm_C.SetPresetSettingValue
 // 0x0050 (0x0050 - 0x0000)
@@ -271,9 +195,7 @@ struct WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetSettingValue final
 public:
 	TMap<EPartyRacePreset, struct FPartyRacePresetSetting> PresetName_Value_0;                       // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetSettingValue) == 0x000008, "Wrong alignment on WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetSettingValue");
-static_assert(sizeof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetSettingValue) == 0x000050, "Wrong size on WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetSettingValue");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetSettingValue, PresetName_Value_0) == 0x000000, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetSettingValue::PresetName_Value_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetSettingValue;
 
 // Function WBP_PartyRace_Sub_Option_Finalconfirm.WBP_PartyRace_Sub_Option_Finalconfirm_C.SetPresetType
 // 0x0120 (0x0120 - 0x0000)
@@ -308,32 +230,7 @@ public:
 	struct FPartyRacePresetSetting                CallFunc_Map_Find_Value;                           // 0x0060(0x00B8)()
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType) == 0x000008, "Wrong alignment on WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType");
-static_assert(sizeof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType) == 0x000120, "Wrong size on WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType, InPreset) == 0x000000, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType::InPreset' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType, Temp_byte_Variable) == 0x000001, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType, Temp_real_Variable) == 0x000004, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType::Temp_real_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType, Temp_real_Variable_1) == 0x000008, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType::Temp_real_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType, Temp_real_Variable_2) == 0x00000C, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType::Temp_real_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType, Temp_real_Variable_3) == 0x000010, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType::Temp_real_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType, Temp_real_Variable_4) == 0x000014, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType::Temp_real_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType, Temp_real_Variable_5) == 0x000018, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType::Temp_real_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType, Temp_real_Variable_6) == 0x00001C, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType::Temp_real_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType, Temp_real_Variable_7) == 0x000020, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType::Temp_real_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType, Temp_real_Variable_8) == 0x000024, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType::Temp_real_Variable_8' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType, Temp_real_Variable_9) == 0x000028, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType::Temp_real_Variable_9' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType, Temp_real_Variable_10) == 0x00002C, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType::Temp_real_Variable_10' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType, Temp_real_Variable_11) == 0x000030, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType::Temp_real_Variable_11' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType, Temp_real_Variable_12) == 0x000034, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType::Temp_real_Variable_12' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType, Temp_real_Variable_13) == 0x000038, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType::Temp_real_Variable_13' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType, Temp_real_Variable_14) == 0x00003C, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType::Temp_real_Variable_14' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType, Temp_real_Variable_15) == 0x000040, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType::Temp_real_Variable_15' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType, Temp_real_Variable_16) == 0x000044, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType::Temp_real_Variable_16' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType, Temp_real_Variable_17) == 0x000048, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType::Temp_real_Variable_17' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000050, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType, K2Node_Select_Default) == 0x000058, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType, CallFunc_Map_Find_Value) == 0x000060, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType, CallFunc_Map_Find_ReturnValue) == 0x000118, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_Option_Finalconfirm_C_SetPresetType;
 
 // Function WBP_PartyRace_Sub_Option_Finalconfirm.WBP_PartyRace_Sub_Option_Finalconfirm_C.SetRomMode
 // 0x0034 (0x0034 - 0x0000)
@@ -347,13 +244,7 @@ public:
 	struct FLinearColor                           CallFunc_MakeColor_ReturnValue_1;                  // 0x0014(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_MakeColor_ReturnValue_2;                  // 0x0024(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetRomMode) == 0x000004, "Wrong alignment on WBP_PartyRace_Sub_Option_Finalconfirm_C_SetRomMode");
-static_assert(sizeof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetRomMode) == 0x000034, "Wrong size on WBP_PartyRace_Sub_Option_Finalconfirm_C_SetRomMode");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetRomMode, Default) == 0x000000, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetRomMode::Default' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetRomMode, CallFunc_IsItemSwitchSettingMenuEnable_ReturnValue) == 0x000001, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetRomMode::CallFunc_IsItemSwitchSettingMenuEnable_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetRomMode, CallFunc_MakeColor_ReturnValue) == 0x000004, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetRomMode::CallFunc_MakeColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetRomMode, CallFunc_MakeColor_ReturnValue_1) == 0x000014, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetRomMode::CallFunc_MakeColor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetRomMode, CallFunc_MakeColor_ReturnValue_2) == 0x000024, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetRomMode::CallFunc_MakeColor_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_Option_Finalconfirm_C_SetRomMode;
 
 // Function WBP_PartyRace_Sub_Option_Finalconfirm.WBP_PartyRace_Sub_Option_Finalconfirm_C.SetSpeedClassSelect
 // 0x0008 (0x0008 - 0x0000)
@@ -365,12 +256,7 @@ public:
 	uint8                                         CallFunc_Conv_IntToByte_ReturnValue_1;             // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetSpeedClassSelect) == 0x000004, "Wrong alignment on WBP_PartyRace_Sub_Option_Finalconfirm_C_SetSpeedClassSelect");
-static_assert(sizeof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetSpeedClassSelect) == 0x000008, "Wrong size on WBP_PartyRace_Sub_Option_Finalconfirm_C_SetSpeedClassSelect");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetSpeedClassSelect, Index_0) == 0x000000, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetSpeedClassSelect::Index_0' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetSpeedClassSelect, CallFunc_Conv_IntToByte_ReturnValue) == 0x000004, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetSpeedClassSelect::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetSpeedClassSelect, CallFunc_Conv_IntToByte_ReturnValue_1) == 0x000005, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetSpeedClassSelect::CallFunc_Conv_IntToByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_SetSpeedClassSelect, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000006, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_SetSpeedClassSelect::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_Option_Finalconfirm_C_SetSpeedClassSelect;
 
 // Function WBP_PartyRace_Sub_Option_Finalconfirm.WBP_PartyRace_Sub_Option_Finalconfirm_C.ToFocusOKNavigationEvent
 // 0x0010 (0x0010 - 0x0000)
@@ -381,10 +267,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ToFocusOKNavigationEvent) == 0x000008, "Wrong alignment on WBP_PartyRace_Sub_Option_Finalconfirm_C_ToFocusOKNavigationEvent");
-static_assert(sizeof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ToFocusOKNavigationEvent) == 0x000010, "Wrong size on WBP_PartyRace_Sub_Option_Finalconfirm_C_ToFocusOKNavigationEvent");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ToFocusOKNavigationEvent, Navigation_0) == 0x000000, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ToFocusOKNavigationEvent::Navigation_0' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_ToFocusOKNavigationEvent, ReturnValue) == 0x000008, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_ToFocusOKNavigationEvent::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_Option_Finalconfirm_C_ToFocusOKNavigationEvent;
 
 // Function WBP_PartyRace_Sub_Option_Finalconfirm.WBP_PartyRace_Sub_Option_Finalconfirm_C.UpFromItemSwitch
 // 0x0010 (0x0010 - 0x0000)
@@ -395,10 +278,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_Option_Finalconfirm_C_UpFromItemSwitch) == 0x000008, "Wrong alignment on WBP_PartyRace_Sub_Option_Finalconfirm_C_UpFromItemSwitch");
-static_assert(sizeof(WBP_PartyRace_Sub_Option_Finalconfirm_C_UpFromItemSwitch) == 0x000010, "Wrong size on WBP_PartyRace_Sub_Option_Finalconfirm_C_UpFromItemSwitch");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_UpFromItemSwitch, Navigation_0) == 0x000000, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_UpFromItemSwitch::Navigation_0' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Finalconfirm_C_UpFromItemSwitch, ReturnValue) == 0x000008, "Member 'WBP_PartyRace_Sub_Option_Finalconfirm_C_UpFromItemSwitch::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_Option_Finalconfirm_C_UpFromItemSwitch;
 
 }
 

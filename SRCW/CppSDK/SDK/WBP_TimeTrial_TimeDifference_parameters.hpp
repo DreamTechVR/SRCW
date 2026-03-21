@@ -35,20 +35,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TimeTrial_TimeDifference_C_ExecuteUbergraph_WBP_TimeTrial_TimeDifference) == 0x000008, "Wrong alignment on WBP_TimeTrial_TimeDifference_C_ExecuteUbergraph_WBP_TimeTrial_TimeDifference");
-static_assert(sizeof(WBP_TimeTrial_TimeDifference_C_ExecuteUbergraph_WBP_TimeTrial_TimeDifference) == 0x000090, "Wrong size on WBP_TimeTrial_TimeDifference_C_ExecuteUbergraph_WBP_TimeTrial_TimeDifference");
-static_assert(offsetof(WBP_TimeTrial_TimeDifference_C_ExecuteUbergraph_WBP_TimeTrial_TimeDifference, EntryPoint) == 0x000000, "Member 'WBP_TimeTrial_TimeDifference_C_ExecuteUbergraph_WBP_TimeTrial_TimeDifference::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_TimeDifference_C_ExecuteUbergraph_WBP_TimeTrial_TimeDifference, K2Node_CustomEvent_TimeText) == 0x000008, "Member 'WBP_TimeTrial_TimeDifference_C_ExecuteUbergraph_WBP_TimeTrial_TimeDifference::K2Node_CustomEvent_TimeText' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_TimeDifference_C_ExecuteUbergraph_WBP_TimeTrial_TimeDifference, K2Node_CustomEvent_bIsUpTime) == 0x000018, "Member 'WBP_TimeTrial_TimeDifference_C_ExecuteUbergraph_WBP_TimeTrial_TimeDifference::K2Node_CustomEvent_bIsUpTime' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_TimeDifference_C_ExecuteUbergraph_WBP_TimeTrial_TimeDifference, CallFunc_SelectString_ReturnValue) == 0x000020, "Member 'WBP_TimeTrial_TimeDifference_C_ExecuteUbergraph_WBP_TimeTrial_TimeDifference::CallFunc_SelectString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_TimeDifference_C_ExecuteUbergraph_WBP_TimeTrial_TimeDifference, CallFunc_Conv_TextToString_ReturnValue) == 0x000030, "Member 'WBP_TimeTrial_TimeDifference_C_ExecuteUbergraph_WBP_TimeTrial_TimeDifference::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_TimeDifference_C_ExecuteUbergraph_WBP_TimeTrial_TimeDifference, CallFunc_Concat_StrStr_ReturnValue) == 0x000040, "Member 'WBP_TimeTrial_TimeDifference_C_ExecuteUbergraph_WBP_TimeTrial_TimeDifference::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_TimeDifference_C_ExecuteUbergraph_WBP_TimeTrial_TimeDifference, CallFunc_Conv_StringToText_ReturnValue) == 0x000050, "Member 'WBP_TimeTrial_TimeDifference_C_ExecuteUbergraph_WBP_TimeTrial_TimeDifference::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_TimeDifference_C_ExecuteUbergraph_WBP_TimeTrial_TimeDifference, Temp_bool_Variable) == 0x000060, "Member 'WBP_TimeTrial_TimeDifference_C_ExecuteUbergraph_WBP_TimeTrial_TimeDifference::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_TimeDifference_C_ExecuteUbergraph_WBP_TimeTrial_TimeDifference, CallFunc_ConvertClockCountToLapTimeText_ReturnValue) == 0x000068, "Member 'WBP_TimeTrial_TimeDifference_C_ExecuteUbergraph_WBP_TimeTrial_TimeDifference::CallFunc_ConvertClockCountToLapTimeText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_TimeDifference_C_ExecuteUbergraph_WBP_TimeTrial_TimeDifference, K2Node_Select_Default) == 0x000078, "Member 'WBP_TimeTrial_TimeDifference_C_ExecuteUbergraph_WBP_TimeTrial_TimeDifference::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_TimeDifference_C_ExecuteUbergraph_WBP_TimeTrial_TimeDifference, CallFunc_PlayAnimation_ReturnValue) == 0x000080, "Member 'WBP_TimeTrial_TimeDifference_C_ExecuteUbergraph_WBP_TimeTrial_TimeDifference::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_TimeDifference_C_ExecuteUbergraph_WBP_TimeTrial_TimeDifference, CallFunc_PlayAnimation_ReturnValue_1) == 0x000088, "Member 'WBP_TimeTrial_TimeDifference_C_ExecuteUbergraph_WBP_TimeTrial_TimeDifference::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_TimeDifference_C_ExecuteUbergraph_WBP_TimeTrial_TimeDifference;
 
 // Function WBP_TimeTrial_TimeDifference.WBP_TimeTrial_TimeDifference_C.SetDifferenceTime
 // 0x0018 (0x0018 - 0x0000)
@@ -58,10 +45,7 @@ public:
 	class FText                                   TimeText;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 	bool                                          bIsUpTime;                                         // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TimeTrial_TimeDifference_C_SetDifferenceTime) == 0x000008, "Wrong alignment on WBP_TimeTrial_TimeDifference_C_SetDifferenceTime");
-static_assert(sizeof(WBP_TimeTrial_TimeDifference_C_SetDifferenceTime) == 0x000018, "Wrong size on WBP_TimeTrial_TimeDifference_C_SetDifferenceTime");
-static_assert(offsetof(WBP_TimeTrial_TimeDifference_C_SetDifferenceTime, TimeText) == 0x000000, "Member 'WBP_TimeTrial_TimeDifference_C_SetDifferenceTime::TimeText' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_TimeDifference_C_SetDifferenceTime, bIsUpTime) == 0x000010, "Member 'WBP_TimeTrial_TimeDifference_C_SetDifferenceTime::bIsUpTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_TimeDifference_C_SetDifferenceTime;
 
 }
 

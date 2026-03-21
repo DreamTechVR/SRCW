@@ -24,10 +24,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_Sub_GadgetCustom_C_ExecuteUbergraph_WBP_CMN_Sub_GadgetCustom) == 0x000004, "Wrong alignment on WBP_CMN_Sub_GadgetCustom_C_ExecuteUbergraph_WBP_CMN_Sub_GadgetCustom");
-static_assert(sizeof(WBP_CMN_Sub_GadgetCustom_C_ExecuteUbergraph_WBP_CMN_Sub_GadgetCustom) == 0x000008, "Wrong size on WBP_CMN_Sub_GadgetCustom_C_ExecuteUbergraph_WBP_CMN_Sub_GadgetCustom");
-static_assert(offsetof(WBP_CMN_Sub_GadgetCustom_C_ExecuteUbergraph_WBP_CMN_Sub_GadgetCustom, EntryPoint) == 0x000000, "Member 'WBP_CMN_Sub_GadgetCustom_C_ExecuteUbergraph_WBP_CMN_Sub_GadgetCustom::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_GadgetCustom_C_ExecuteUbergraph_WBP_CMN_Sub_GadgetCustom, K2Node_Event_IsDesignTime) == 0x000004, "Member 'WBP_CMN_Sub_GadgetCustom_C_ExecuteUbergraph_WBP_CMN_Sub_GadgetCustom::K2Node_Event_IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Sub_GadgetCustom_C_ExecuteUbergraph_WBP_CMN_Sub_GadgetCustom;
 
 // Function WBP_CMN_Sub_GadgetCustom.WBP_CMN_Sub_GadgetCustom_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -36,9 +33,7 @@ struct WBP_CMN_Sub_GadgetCustom_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_Sub_GadgetCustom_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_CMN_Sub_GadgetCustom_C_PreConstruct");
-static_assert(sizeof(WBP_CMN_Sub_GadgetCustom_C_PreConstruct) == 0x000001, "Wrong size on WBP_CMN_Sub_GadgetCustom_C_PreConstruct");
-static_assert(offsetof(WBP_CMN_Sub_GadgetCustom_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_CMN_Sub_GadgetCustom_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Sub_GadgetCustom_C_PreConstruct;
 
 // Function WBP_CMN_Sub_GadgetCustom.WBP_CMN_Sub_GadgetCustom_C.UpdateClass
 // 0x0088 (0x0088 - 0x0000)
@@ -61,20 +56,7 @@ public:
 	class FText                                   K2Node_Select_Default;                             // 0x0070(0x0010)(ConstParm)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_Sub_GadgetCustom_C_UpdateClass) == 0x000008, "Wrong alignment on WBP_CMN_Sub_GadgetCustom_C_UpdateClass");
-static_assert(sizeof(WBP_CMN_Sub_GadgetCustom_C_UpdateClass) == 0x000088, "Wrong size on WBP_CMN_Sub_GadgetCustom_C_UpdateClass");
-static_assert(offsetof(WBP_CMN_Sub_GadgetCustom_C_UpdateClass, Temp_byte_Variable) == 0x000000, "Member 'WBP_CMN_Sub_GadgetCustom_C_UpdateClass::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_GadgetCustom_C_UpdateClass, CallFunc_MakeLiteralText_ReturnValue) == 0x000008, "Member 'WBP_CMN_Sub_GadgetCustom_C_UpdateClass::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_GadgetCustom_C_UpdateClass, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'WBP_CMN_Sub_GadgetCustom_C_UpdateClass::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_GadgetCustom_C_UpdateClass, CallFunc_MakeLiteralText_ReturnValue_1) == 0x000020, "Member 'WBP_CMN_Sub_GadgetCustom_C_UpdateClass::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_GadgetCustom_C_UpdateClass, CallFunc_MakeLiteralText_ReturnValue_2) == 0x000030, "Member 'WBP_CMN_Sub_GadgetCustom_C_UpdateClass::CallFunc_MakeLiteralText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_GadgetCustom_C_UpdateClass, CallFunc_MakeLiteralText_ReturnValue_3) == 0x000040, "Member 'WBP_CMN_Sub_GadgetCustom_C_UpdateClass::CallFunc_MakeLiteralText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_GadgetCustom_C_UpdateClass, CallFunc_GetSelectedMenuSpeedClassId_ReturnValue) == 0x000050, "Member 'WBP_CMN_Sub_GadgetCustom_C_UpdateClass::CallFunc_GetSelectedMenuSpeedClassId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_GadgetCustom_C_UpdateClass, CallFunc_GetSelectedMenuSpeedClassId_ReturnValue_1) == 0x000051, "Member 'WBP_CMN_Sub_GadgetCustom_C_UpdateClass::CallFunc_GetSelectedMenuSpeedClassId_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_GadgetCustom_C_UpdateClass, CallFunc_Conv_ByteToDouble_ReturnValue) == 0x000058, "Member 'WBP_CMN_Sub_GadgetCustom_C_UpdateClass::CallFunc_Conv_ByteToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_GadgetCustom_C_UpdateClass, CallFunc_MakeLiteralText_ReturnValue_4) == 0x000060, "Member 'WBP_CMN_Sub_GadgetCustom_C_UpdateClass::CallFunc_MakeLiteralText_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_GadgetCustom_C_UpdateClass, K2Node_Select_Default) == 0x000070, "Member 'WBP_CMN_Sub_GadgetCustom_C_UpdateClass::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_GadgetCustom_C_UpdateClass, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000080, "Member 'WBP_CMN_Sub_GadgetCustom_C_UpdateClass::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Sub_GadgetCustom_C_UpdateClass;
 
 }
 

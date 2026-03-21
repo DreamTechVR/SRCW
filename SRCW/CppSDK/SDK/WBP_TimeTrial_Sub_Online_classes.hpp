@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
+#include "UnionSystem_structs.hpp"
 #include "UnionUI_classes.hpp"
 #include "SlateCore_structs.hpp"
 
@@ -59,37 +59,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_TimeTrial_Sub_Online_C">();
+		BP_STATIC_CLASS_IMPL("WBP_TimeTrial_Sub_Online_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_TimeTrial_Sub_Online_C")
 	}
 	static class UWBP_TimeTrial_Sub_Online_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_TimeTrial_Sub_Online_C>();
 	}
 };
-static_assert(alignof(UWBP_TimeTrial_Sub_Online_C) == 0x000008, "Wrong alignment on UWBP_TimeTrial_Sub_Online_C");
-static_assert(sizeof(UWBP_TimeTrial_Sub_Online_C) == 0x000488, "Wrong size on UWBP_TimeTrial_Sub_Online_C");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Online_C, UberGraphFrame) == 0x0003D8, "Member 'UWBP_TimeTrial_Sub_Online_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Online_C, TimeTrial_Online_Out) == 0x0003E0, "Member 'UWBP_TimeTrial_Sub_Online_C::TimeTrial_Online_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Online_C, TimeTrial_Onine_Loop) == 0x0003E8, "Member 'UWBP_TimeTrial_Sub_Online_C::TimeTrial_Onine_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Online_C, TimeTrial_Online_In) == 0x0003F0, "Member 'UWBP_TimeTrial_Sub_Online_C::TimeTrial_Online_In' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Online_C, base) == 0x0003F8, "Member 'UWBP_TimeTrial_Sub_Online_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Online_C, SafeZone_TimeTrial) == 0x000400, "Member 'UWBP_TimeTrial_Sub_Online_C::SafeZone_TimeTrial' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Online_C, WBP_CMN_SubMenu_Btn_GamerCard) == 0x000408, "Member 'UWBP_TimeTrial_Sub_Online_C::WBP_CMN_SubMenu_Btn_GamerCard' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Online_C, WBP_PauseMenu_Sub_Option_Btn_03_01) == 0x000410, "Member 'UWBP_TimeTrial_Sub_Online_C::WBP_PauseMenu_Sub_Option_Btn_03_01' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Online_C, WBP_PauseMenu_Sub_Option_Btn_03_02) == 0x000418, "Member 'UWBP_TimeTrial_Sub_Online_C::WBP_PauseMenu_Sub_Option_Btn_03_02' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Online_C, WBP_Popup_Sub_Btn_Standard_01) == 0x000420, "Member 'UWBP_TimeTrial_Sub_Online_C::WBP_Popup_Sub_Btn_Standard_01' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Online_C, WBP_Popup_Sub_Btn_Standard_02) == 0x000428, "Member 'UWBP_TimeTrial_Sub_Online_C::WBP_Popup_Sub_Btn_Standard_02' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Online_C, WBP_Race_HUD_Sub_GadgetIcon_Simple) == 0x000430, "Member 'UWBP_TimeTrial_Sub_Online_C::WBP_Race_HUD_Sub_GadgetIcon_Simple' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Online_C, WBP_Ready_Sub_StandByText) == 0x000438, "Member 'UWBP_TimeTrial_Sub_Online_C::WBP_Ready_Sub_StandByText' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Online_C, WBP_TimeTrial_Sub_Header_StageName) == 0x000440, "Member 'UWBP_TimeTrial_Sub_Online_C::WBP_TimeTrial_Sub_Header_StageName' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Online_C, WBP_TimeTrial_Sub_Lap) == 0x000448, "Member 'UWBP_TimeTrial_Sub_Online_C::WBP_TimeTrial_Sub_Lap' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Online_C, WBP_TimeTrial_Sub_Lap_1) == 0x000450, "Member 'UWBP_TimeTrial_Sub_Online_C::WBP_TimeTrial_Sub_Lap_1' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Online_C, WBP_TimeTrial_Sub_Lap_2) == 0x000458, "Member 'UWBP_TimeTrial_Sub_Online_C::WBP_TimeTrial_Sub_Lap_2' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Online_C, WBP_TimeTrial_Sub_Machine) == 0x000460, "Member 'UWBP_TimeTrial_Sub_Online_C::WBP_TimeTrial_Sub_Machine' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Online_C, WBP_TimeTrial_Sub_Online_Ghost) == 0x000468, "Member 'UWBP_TimeTrial_Sub_Online_C::WBP_TimeTrial_Sub_Online_Ghost' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Online_C, WBP_TimeTrial_Sub_Time) == 0x000470, "Member 'UWBP_TimeTrial_Sub_Online_C::WBP_TimeTrial_Sub_Time' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Online_C, ButtonsPanel) == 0x000478, "Member 'UWBP_TimeTrial_Sub_Online_C::ButtonsPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Online_C, CrossplayPlatform) == 0x000480, "Member 'UWBP_TimeTrial_Sub_Online_C::CrossplayPlatform' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_TimeTrial_Sub_Online_C;
 
 }
 

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
+#include "UnionSystem_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -107,60 +107,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_PartyRace_Sub_Option_Btn_Window_C">();
+		BP_STATIC_CLASS_IMPL("WBP_PartyRace_Sub_Option_Btn_Window_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_PartyRace_Sub_Option_Btn_Window_C")
 	}
 	static class UWBP_PartyRace_Sub_Option_Btn_Window_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_PartyRace_Sub_Option_Btn_Window_C>();
 	}
 };
-static_assert(alignof(UWBP_PartyRace_Sub_Option_Btn_Window_C) == 0x000008, "Wrong alignment on UWBP_PartyRace_Sub_Option_Btn_Window_C");
-static_assert(sizeof(UWBP_PartyRace_Sub_Option_Btn_Window_C) == 0x0007B8, "Wrong size on UWBP_PartyRace_Sub_Option_Btn_Window_C");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, UberGraphFrame) == 0x000648, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, Btn_Window_Out) == 0x000650, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::Btn_Window_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, Btn_Window_Loop) == 0x000658, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::Btn_Window_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, Btn_Window_In) == 0x000660, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::Btn_Window_In' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, BG) == 0x000668, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::BG' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, BG_Window) == 0x000670, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::BG_Window' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, OutOfContentButton_80) == 0x000678, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::OutOfContentButton_80' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, RaceFlag_Left) == 0x000680, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::RaceFlag_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, RaceFlag_Right) == 0x000688, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::RaceFlag_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, SafeZone) == 0x000690, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::SafeZone' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, ScrollBox_0) == 0x000698, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::ScrollBox_0' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, SpaceLine) == 0x0006A0, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::SpaceLine' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, WBP_PartyRace_Sub_Option_Btn_OK) == 0x0006A8, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::WBP_PartyRace_Sub_Option_Btn_OK' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, WBP_PartyRace_Sub_Option_Line_10) == 0x0006B0, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::WBP_PartyRace_Sub_Option_Line_10' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, WBP_PartyRace_Sub_Option_Line_11) == 0x0006B8, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::WBP_PartyRace_Sub_Option_Line_11' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, WBP_PartyRace_Sub_Option_Line_12) == 0x0006C0, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::WBP_PartyRace_Sub_Option_Line_12' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, WBP_PartyRace_Sub_Option_Line_13) == 0x0006C8, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::WBP_PartyRace_Sub_Option_Line_13' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, WBP_PartyRace_Sub_Option_Line_14) == 0x0006D0, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::WBP_PartyRace_Sub_Option_Line_14' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, WBP_PartyRace_Sub_Option_Line_15) == 0x0006D8, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::WBP_PartyRace_Sub_Option_Line_15' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, WBP_PartyRace_Sub_Option_Line_16) == 0x0006E0, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::WBP_PartyRace_Sub_Option_Line_16' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, WBP_PartyRace_Sub_Option_Line_17) == 0x0006E8, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::WBP_PartyRace_Sub_Option_Line_17' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, WBP_PartyRace_Sub_Option_Line_18) == 0x0006F0, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::WBP_PartyRace_Sub_Option_Line_18' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, WBP_PartyRace_Sub_Option_Line_01) == 0x0006F8, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::WBP_PartyRace_Sub_Option_Line_01' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, WBP_PartyRace_Sub_Option_Line_02) == 0x000700, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::WBP_PartyRace_Sub_Option_Line_02' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, WBP_PartyRace_Sub_Option_Line_03) == 0x000708, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::WBP_PartyRace_Sub_Option_Line_03' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, WBP_PartyRace_Sub_Option_Line_04) == 0x000710, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::WBP_PartyRace_Sub_Option_Line_04' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, WBP_PartyRace_Sub_Option_Line_05) == 0x000718, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::WBP_PartyRace_Sub_Option_Line_05' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, WBP_PartyRace_Sub_Option_Line_06) == 0x000720, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::WBP_PartyRace_Sub_Option_Line_06' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, WBP_PartyRace_Sub_Option_Line_07) == 0x000728, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::WBP_PartyRace_Sub_Option_Line_07' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, WBP_PartyRace_Sub_Option_Line_08) == 0x000730, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::WBP_PartyRace_Sub_Option_Line_08' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, WBP_PartyRace_Sub_Option_Line_09) == 0x000738, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::WBP_PartyRace_Sub_Option_Line_09' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, LastPanelIndex) == 0x000740, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::LastPanelIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, MatchRuleRef) == 0x000748, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::MatchRuleRef' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, MatchRuleNextRef) == 0x000750, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::MatchRuleNextRef' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, NowSettingPanelIndex) == 0x000758, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::NowSettingPanelIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, PrevSetingPanelIndex) == 0x000759, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::PrevSetingPanelIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, VarInt) == 0x00075C, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::VarInt' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, OnCloseEvent) == 0x000760, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::OnCloseEvent' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, IsGuest) == 0x000770, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::IsGuest' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, IgnoreIndexArray) == 0x000778, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::IgnoreIndexArray' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, LastSelectedButton) == 0x000788, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::LastSelectedButton' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, QuitConfirmWidget) == 0x000790, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::QuitConfirmWidget' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, IsEnd) == 0x000798, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::IsEnd' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, IgnoreComIndexArray) == 0x0007A0, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::IgnoreComIndexArray' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Btn_Window_C, IsButtonPressed) == 0x0007B0, "Member 'UWBP_PartyRace_Sub_Option_Btn_Window_C::IsButtonPressed' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_PartyRace_Sub_Option_Btn_Window_C;
 
 }
 

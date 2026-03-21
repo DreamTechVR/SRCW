@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "UNION_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UNION_classes.hpp"
 
 
 namespace SDK
@@ -58,32 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_EventEndInfo_Sub_Details_C">();
+		BP_STATIC_CLASS_IMPL("WBP_EventEndInfo_Sub_Details_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_EventEndInfo_Sub_Details_C")
 	}
 	static class UWBP_EventEndInfo_Sub_Details_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_EventEndInfo_Sub_Details_C>();
 	}
 };
-static_assert(alignof(UWBP_EventEndInfo_Sub_Details_C) == 0x000008, "Wrong alignment on UWBP_EventEndInfo_Sub_Details_C");
-static_assert(sizeof(UWBP_EventEndInfo_Sub_Details_C) == 0x0003D0, "Wrong size on UWBP_EventEndInfo_Sub_Details_C");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, UberGraphFrame) == 0x000350, "Member 'UWBP_EventEndInfo_Sub_Details_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, Ranking_In) == 0x000358, "Member 'UWBP_EventEndInfo_Sub_Details_C::Ranking_In' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, Base_FestaPoint_01) == 0x000360, "Member 'UWBP_EventEndInfo_Sub_Details_C::Base_FestaPoint_01' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, Base_FestaPoint_02) == 0x000368, "Member 'UWBP_EventEndInfo_Sub_Details_C::Base_FestaPoint_02' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, EventEnd_BG) == 0x000370, "Member 'UWBP_EventEndInfo_Sub_Details_C::EventEnd_BG' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, FestaPointIcon) == 0x000378, "Member 'UWBP_EventEndInfo_Sub_Details_C::FestaPointIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, Line_FestaPoint) == 0x000380, "Member 'UWBP_EventEndInfo_Sub_Details_C::Line_FestaPoint' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, Overlay_FestaCoin) == 0x000388, "Member 'UWBP_EventEndInfo_Sub_Details_C::Overlay_FestaCoin' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, TXT_FestaPoint) == 0x000390, "Member 'UWBP_EventEndInfo_Sub_Details_C::TXT_FestaPoint' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, TXT_Festapointsaward) == 0x000398, "Member 'UWBP_EventEndInfo_Sub_Details_C::TXT_Festapointsaward' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, WBP_EventEndInfo_Sub_Ranking) == 0x0003A0, "Member 'UWBP_EventEndInfo_Sub_Details_C::WBP_EventEndInfo_Sub_Ranking' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, OriginalPoint) == 0x0003A8, "Member 'UWBP_EventEndInfo_Sub_Details_C::OriginalPoint' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, PointAnimTimeLength) == 0x0003B0, "Member 'UWBP_EventEndInfo_Sub_Details_C::PointAnimTimeLength' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, PointAnimTime) == 0x0003B8, "Member 'UWBP_EventEndInfo_Sub_Details_C::PointAnimTime' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, IsPointDisplayAnimating) == 0x0003C0, "Member 'UWBP_EventEndInfo_Sub_Details_C::IsPointDisplayAnimating' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, PointCountSE) == 0x0003C4, "Member 'UWBP_EventEndInfo_Sub_Details_C::PointCountSE' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, BasePoint) == 0x0003C8, "Member 'UWBP_EventEndInfo_Sub_Details_C::BasePoint' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_EventEndInfo_Sub_Details_C;
 
 }
 

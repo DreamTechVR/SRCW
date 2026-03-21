@@ -23,9 +23,7 @@ struct WBP_PartyRace_RivalTeamSelect_C_BindSelectIcon final
 public:
 	class URivalTeamSelectIconWidget*             InSelectIcon;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_RivalTeamSelect_C_BindSelectIcon) == 0x000008, "Wrong alignment on WBP_PartyRace_RivalTeamSelect_C_BindSelectIcon");
-static_assert(sizeof(WBP_PartyRace_RivalTeamSelect_C_BindSelectIcon) == 0x000008, "Wrong size on WBP_PartyRace_RivalTeamSelect_C_BindSelectIcon");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_BindSelectIcon, InSelectIcon) == 0x000000, "Member 'WBP_PartyRace_RivalTeamSelect_C_BindSelectIcon::InSelectIcon' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_RivalTeamSelect_C_BindSelectIcon;
 
 // Function WBP_PartyRace_RivalTeamSelect.WBP_PartyRace_RivalTeamSelect_C.ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect
 // 0x01F0 (0x01F0 - 0x0000)
@@ -121,81 +119,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue_3;               // 0x01E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_3;                // 0x01EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect) == 0x000008, "Wrong alignment on WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect");
-static_assert(sizeof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect) == 0x0001F0, "Wrong size on WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, EntryPoint) == 0x000000, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, Temp_int_Array_Index_Variable) == 0x000004, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, K2Node_Event_InSelectIcon_1) == 0x000008, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::K2Node_Event_InSelectIcon_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, K2Node_Event_InSelectIcon) == 0x000010, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::K2Node_Event_InSelectIcon' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, K2Node_CustomEvent_Button_1) == 0x000018, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::K2Node_CustomEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, K2Node_CustomEvent_Button) == 0x000020, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, K2Node_DynamicCast_AsRival_Team_Select_Icon_Widget) == 0x000028, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::K2Node_DynamicCast_AsRival_Team_Select_Icon_Widget' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, K2Node_DynamicCast_AsWBP_Party_Race_Sub_Rival_Team_Icon) == 0x000038, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::K2Node_DynamicCast_AsWBP_Party_Race_Sub_Rival_Team_Icon' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, K2Node_DynamicCast_bSuccess_1) == 0x000040, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_GetTeamID_ReturnValue) == 0x000041, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_GetTeamID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_IsLock_ReturnValue) == 0x000042, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_IsLock_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, Temp_int_Loop_Counter_Variable) == 0x000044, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_Add_IntInt_ReturnValue) == 0x000048, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, K2Node_CreateDelegate_OutputDelegate) == 0x00004C, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, K2Node_CreateDelegate_OutputDelegate_1) == 0x00005C, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, K2Node_CreateDelegate_OutputDelegate_2) == 0x00006C, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, K2Node_CreateDelegate_OutputDelegate_3) == 0x00007C, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, Temp_int_Array_Index_Variable_1) == 0x00008C, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_Set_UpGadgetPlate_OutGadgetIconSoftTextures) == 0x000090, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_Set_UpGadgetPlate_OutGadgetIconSoftTextures' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, K2Node_CreateDelegate_OutputDelegate_4) == 0x0000A0, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, Temp_int_Array_Index_Variable_2) == 0x0000B0, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_NotEqual_ObjectObject_ReturnValue) == 0x0000B4, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_NotEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_GetPlayerController_ReturnValue) == 0x0000B8, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, K2Node_DynamicCast_AsBP_Menu_Player_Controller) == 0x0000C0, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::K2Node_DynamicCast_AsBP_Menu_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, K2Node_DynamicCast_bSuccess_2) == 0x0000C8, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, K2Node_CustomEvent_BeforeType) == 0x0000C9, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::K2Node_CustomEvent_BeforeType' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, K2Node_CustomEvent_AfterType) == 0x0000CA, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::K2Node_CustomEvent_AfterType' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, Temp_int_Loop_Counter_Variable_1) == 0x0000CC, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000D0, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, Temp_int_Loop_Counter_Variable_2) == 0x0000D4, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_GetPlayerController_ReturnValue_1) == 0x0000D8, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, K2Node_DynamicCast_AsBP_Menu_Player_Controller_1) == 0x0000E0, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::K2Node_DynamicCast_AsBP_Menu_Player_Controller_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, K2Node_DynamicCast_bSuccess_3) == 0x0000E8, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_Add_IntInt_ReturnValue_2) == 0x0000EC, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, Temp_int_Array_Index_Variable_3) == 0x0000F0, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::Temp_int_Array_Index_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, K2Node_Event_Animation) == 0x0000F8, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::K2Node_Event_Animation' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000100, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_EqualEqual_ObjectObject_ReturnValue_1) == 0x000101, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_EqualEqual_ObjectObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, K2Node_Event_IsDesignTime) == 0x000102, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_IsReadHint_ReturnValue) == 0x000103, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_IsReadHint_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, K2Node_CreateDelegate_OutputDelegate_5) == 0x000104, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_Not_PreBool_ReturnValue) == 0x000114, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_GetPlayerController_ReturnValue_2) == 0x000118, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_GetPlayerController_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, Temp_int_Loop_Counter_Variable_3) == 0x000120, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::Temp_int_Loop_Counter_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_Array_Get_Item) == 0x000128, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_Array_Length_ReturnValue) == 0x000130, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_Add_IntInt_ReturnValue_3) == 0x000134, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_Less_IntInt_ReturnValue) == 0x000138, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_GetAppPlayerController_ReturnValue) == 0x000140, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_GetAppPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_Array_Get_Item_1) == 0x000148, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_Array_Length_ReturnValue_1) == 0x000150, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000158, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_Less_IntInt_ReturnValue_1) == 0x000160, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_GetAppPlayerController_ReturnValue_1) == 0x000168, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_GetAppPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_GetAppPlayerController_ReturnValue_2) == 0x000170, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_GetAppPlayerController_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_GetRegisteredSubMenu_ReturnValue) == 0x000178, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_GetRegisteredSubMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_MakeLiteralByte_ReturnValue) == 0x000188, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_Conv_ByteToInt_ReturnValue) == 0x00018C, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_GetAppPlayerController_ReturnValue_3) == 0x000190, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_GetAppPlayerController_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x000198, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000199, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_BooleanAND_ReturnValue) == 0x00019A, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, K2Node_CreateDelegate_OutputDelegate_6) == 0x00019C, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, K2Node_MakeArray_Array) == 0x0001B0, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_Array_Get_Item_2) == 0x0001C0, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_Array_Length_ReturnValue_2) == 0x0001C8, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_Less_IntInt_ReturnValue_2) == 0x0001CC, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, K2Node_CustomEvent_caller) == 0x0001D0, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::K2Node_CustomEvent_caller' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_Create_ReturnValue) == 0x0001D8, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_Array_Get_Item_3) == 0x0001E0, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_Array_Length_ReturnValue_3) == 0x0001E8, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect, CallFunc_Less_IntInt_ReturnValue_3) == 0x0001EC, "Member 'WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_RivalTeamSelect_C_ExecuteUbergraph_WBP_PartyRace_RivalTeamSelect;
 
 // Function WBP_PartyRace_RivalTeamSelect.WBP_PartyRace_RivalTeamSelect_C.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -204,9 +128,7 @@ struct WBP_PartyRace_RivalTeamSelect_C_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_RivalTeamSelect_C_OnAnimationFinished) == 0x000008, "Wrong alignment on WBP_PartyRace_RivalTeamSelect_C_OnAnimationFinished");
-static_assert(sizeof(WBP_PartyRace_RivalTeamSelect_C_OnAnimationFinished) == 0x000008, "Wrong size on WBP_PartyRace_RivalTeamSelect_C_OnAnimationFinished");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_OnAnimationFinished, Animation) == 0x000000, "Member 'WBP_PartyRace_RivalTeamSelect_C_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_RivalTeamSelect_C_OnAnimationFinished;
 
 // Function WBP_PartyRace_RivalTeamSelect.WBP_PartyRace_RivalTeamSelect_C.OnCancelEvent
 // 0x0008 (0x0008 - 0x0000)
@@ -215,9 +137,7 @@ struct WBP_PartyRace_RivalTeamSelect_C_OnCancelEvent final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_RivalTeamSelect_C_OnCancelEvent) == 0x000008, "Wrong alignment on WBP_PartyRace_RivalTeamSelect_C_OnCancelEvent");
-static_assert(sizeof(WBP_PartyRace_RivalTeamSelect_C_OnCancelEvent) == 0x000008, "Wrong size on WBP_PartyRace_RivalTeamSelect_C_OnCancelEvent");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_OnCancelEvent, Button) == 0x000000, "Member 'WBP_PartyRace_RivalTeamSelect_C_OnCancelEvent::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_RivalTeamSelect_C_OnCancelEvent;
 
 // Function WBP_PartyRace_RivalTeamSelect.WBP_PartyRace_RivalTeamSelect_C.OnChangeControllerInputTypeEvent_Event
 // 0x0002 (0x0002 - 0x0000)
@@ -227,10 +147,7 @@ public:
 	EAppControllerInputType                       BeforeType;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EAppControllerInputType                       AfterType;                                         // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_RivalTeamSelect_C_OnChangeControllerInputTypeEvent_Event) == 0x000001, "Wrong alignment on WBP_PartyRace_RivalTeamSelect_C_OnChangeControllerInputTypeEvent_Event");
-static_assert(sizeof(WBP_PartyRace_RivalTeamSelect_C_OnChangeControllerInputTypeEvent_Event) == 0x000002, "Wrong size on WBP_PartyRace_RivalTeamSelect_C_OnChangeControllerInputTypeEvent_Event");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_OnChangeControllerInputTypeEvent_Event, BeforeType) == 0x000000, "Member 'WBP_PartyRace_RivalTeamSelect_C_OnChangeControllerInputTypeEvent_Event::BeforeType' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_OnChangeControllerInputTypeEvent_Event, AfterType) == 0x000001, "Member 'WBP_PartyRace_RivalTeamSelect_C_OnChangeControllerInputTypeEvent_Event::AfterType' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_RivalTeamSelect_C_OnChangeControllerInputTypeEvent_Event;
 
 // Function WBP_PartyRace_RivalTeamSelect.WBP_PartyRace_RivalTeamSelect_C.OnFocusEvent
 // 0x0008 (0x0008 - 0x0000)
@@ -239,9 +156,7 @@ struct WBP_PartyRace_RivalTeamSelect_C_OnFocusEvent final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_RivalTeamSelect_C_OnFocusEvent) == 0x000008, "Wrong alignment on WBP_PartyRace_RivalTeamSelect_C_OnFocusEvent");
-static_assert(sizeof(WBP_PartyRace_RivalTeamSelect_C_OnFocusEvent) == 0x000008, "Wrong size on WBP_PartyRace_RivalTeamSelect_C_OnFocusEvent");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_OnFocusEvent, Button) == 0x000000, "Member 'WBP_PartyRace_RivalTeamSelect_C_OnFocusEvent::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_RivalTeamSelect_C_OnFocusEvent;
 
 // Function WBP_PartyRace_RivalTeamSelect.WBP_PartyRace_RivalTeamSelect_C.PlayAnimationIn
 // 0x0030 (0x0030 - 0x0000)
@@ -257,14 +172,7 @@ public:
 	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_RivalTeamSelect_C_PlayAnimationIn) == 0x000008, "Wrong alignment on WBP_PartyRace_RivalTeamSelect_C_PlayAnimationIn");
-static_assert(sizeof(WBP_PartyRace_RivalTeamSelect_C_PlayAnimationIn) == 0x000030, "Wrong size on WBP_PartyRace_RivalTeamSelect_C_PlayAnimationIn");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_PlayAnimationIn, CallFunc_IsLock_ReturnValue) == 0x000000, "Member 'WBP_PartyRace_RivalTeamSelect_C_PlayAnimationIn::CallFunc_IsLock_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_PlayAnimationIn, CallFunc_Set_UpGadgetPlate_OutGadgetIconSoftTextures) == 0x000008, "Member 'WBP_PartyRace_RivalTeamSelect_C_PlayAnimationIn::CallFunc_Set_UpGadgetPlate_OutGadgetIconSoftTextures' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_PlayAnimationIn, CallFunc_GetSelectedRivalTeamId_ReturnValue) == 0x000018, "Member 'WBP_PartyRace_RivalTeamSelect_C_PlayAnimationIn::CallFunc_GetSelectedRivalTeamId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_PlayAnimationIn, CallFunc_PlayAnimation_ReturnValue) == 0x000020, "Member 'WBP_PartyRace_RivalTeamSelect_C_PlayAnimationIn::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_PlayAnimationIn, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000028, "Member 'WBP_PartyRace_RivalTeamSelect_C_PlayAnimationIn::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_PlayAnimationIn, CallFunc_Not_PreBool_ReturnValue) == 0x000029, "Member 'WBP_PartyRace_RivalTeamSelect_C_PlayAnimationIn::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_RivalTeamSelect_C_PlayAnimationIn;
 
 // Function WBP_PartyRace_RivalTeamSelect.WBP_PartyRace_RivalTeamSelect_C.PlayAnimationLoop
 // 0x0010 (0x0010 - 0x0000)
@@ -275,11 +183,7 @@ public:
 	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_RivalTeamSelect_C_PlayAnimationLoop) == 0x000008, "Wrong alignment on WBP_PartyRace_RivalTeamSelect_C_PlayAnimationLoop");
-static_assert(sizeof(WBP_PartyRace_RivalTeamSelect_C_PlayAnimationLoop) == 0x000010, "Wrong size on WBP_PartyRace_RivalTeamSelect_C_PlayAnimationLoop");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_PlayAnimationLoop, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_PartyRace_RivalTeamSelect_C_PlayAnimationLoop::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_PlayAnimationLoop, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000008, "Member 'WBP_PartyRace_RivalTeamSelect_C_PlayAnimationLoop::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_PlayAnimationLoop, CallFunc_Not_PreBool_ReturnValue) == 0x000009, "Member 'WBP_PartyRace_RivalTeamSelect_C_PlayAnimationLoop::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_RivalTeamSelect_C_PlayAnimationLoop;
 
 // Function WBP_PartyRace_RivalTeamSelect.WBP_PartyRace_RivalTeamSelect_C.PlayAnimationOut
 // 0x0018 (0x0018 - 0x0000)
@@ -292,12 +196,7 @@ public:
 	bool                                          CallFunc_IsAnimationPlaying_ReturnValue_1;         // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_RivalTeamSelect_C_PlayAnimationOut) == 0x000008, "Wrong alignment on WBP_PartyRace_RivalTeamSelect_C_PlayAnimationOut");
-static_assert(sizeof(WBP_PartyRace_RivalTeamSelect_C_PlayAnimationOut) == 0x000018, "Wrong size on WBP_PartyRace_RivalTeamSelect_C_PlayAnimationOut");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_PlayAnimationOut, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000000, "Member 'WBP_PartyRace_RivalTeamSelect_C_PlayAnimationOut::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_PlayAnimationOut, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_PartyRace_RivalTeamSelect_C_PlayAnimationOut::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_PlayAnimationOut, CallFunc_IsAnimationPlaying_ReturnValue_1) == 0x000010, "Member 'WBP_PartyRace_RivalTeamSelect_C_PlayAnimationOut::CallFunc_IsAnimationPlaying_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_PlayAnimationOut, CallFunc_Not_PreBool_ReturnValue) == 0x000011, "Member 'WBP_PartyRace_RivalTeamSelect_C_PlayAnimationOut::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_RivalTeamSelect_C_PlayAnimationOut;
 
 // Function WBP_PartyRace_RivalTeamSelect.WBP_PartyRace_RivalTeamSelect_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -306,9 +205,7 @@ struct WBP_PartyRace_RivalTeamSelect_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_RivalTeamSelect_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_PartyRace_RivalTeamSelect_C_PreConstruct");
-static_assert(sizeof(WBP_PartyRace_RivalTeamSelect_C_PreConstruct) == 0x000001, "Wrong size on WBP_PartyRace_RivalTeamSelect_C_PreConstruct");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_PartyRace_RivalTeamSelect_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_RivalTeamSelect_C_PreConstruct;
 
 // Function WBP_PartyRace_RivalTeamSelect.WBP_PartyRace_RivalTeamSelect_C.SetLatestFocusedButton
 // 0x0008 (0x0008 - 0x0000)
@@ -317,9 +214,7 @@ struct WBP_PartyRace_RivalTeamSelect_C_SetLatestFocusedButton final
 public:
 	class UWBP_PartyRace_Sub_RivalTeamIcon_C*     caller;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_RivalTeamSelect_C_SetLatestFocusedButton) == 0x000008, "Wrong alignment on WBP_PartyRace_RivalTeamSelect_C_SetLatestFocusedButton");
-static_assert(sizeof(WBP_PartyRace_RivalTeamSelect_C_SetLatestFocusedButton) == 0x000008, "Wrong size on WBP_PartyRace_RivalTeamSelect_C_SetLatestFocusedButton");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_SetLatestFocusedButton, caller) == 0x000000, "Member 'WBP_PartyRace_RivalTeamSelect_C_SetLatestFocusedButton::caller' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_RivalTeamSelect_C_SetLatestFocusedButton;
 
 // Function WBP_PartyRace_RivalTeamSelect.WBP_PartyRace_RivalTeamSelect_C.UnbindSelectIcon
 // 0x0008 (0x0008 - 0x0000)
@@ -328,9 +223,7 @@ struct WBP_PartyRace_RivalTeamSelect_C_UnbindSelectIcon final
 public:
 	class URivalTeamSelectIconWidget*             InSelectIcon;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_RivalTeamSelect_C_UnbindSelectIcon) == 0x000008, "Wrong alignment on WBP_PartyRace_RivalTeamSelect_C_UnbindSelectIcon");
-static_assert(sizeof(WBP_PartyRace_RivalTeamSelect_C_UnbindSelectIcon) == 0x000008, "Wrong size on WBP_PartyRace_RivalTeamSelect_C_UnbindSelectIcon");
-static_assert(offsetof(WBP_PartyRace_RivalTeamSelect_C_UnbindSelectIcon, InSelectIcon) == 0x000000, "Member 'WBP_PartyRace_RivalTeamSelect_C_UnbindSelectIcon::InSelectIcon' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_RivalTeamSelect_C_UnbindSelectIcon;
 
 }
 

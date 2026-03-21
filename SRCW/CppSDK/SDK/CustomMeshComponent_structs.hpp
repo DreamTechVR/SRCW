@@ -25,11 +25,7 @@ public:
 	struct FVector                                Vertex1;                                           // 0x0018(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                Vertex2;                                           // 0x0030(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCustomMeshTriangle) == 0x000008, "Wrong alignment on FCustomMeshTriangle");
-static_assert(sizeof(FCustomMeshTriangle) == 0x000048, "Wrong size on FCustomMeshTriangle");
-static_assert(offsetof(FCustomMeshTriangle, Vertex0) == 0x000000, "Member 'FCustomMeshTriangle::Vertex0' has a wrong offset!");
-static_assert(offsetof(FCustomMeshTriangle, Vertex1) == 0x000018, "Member 'FCustomMeshTriangle::Vertex1' has a wrong offset!");
-static_assert(offsetof(FCustomMeshTriangle, Vertex2) == 0x000030, "Member 'FCustomMeshTriangle::Vertex2' has a wrong offset!");
+DUMPER7_ASSERTS_FCustomMeshTriangle;
 
 }
 

@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
-#include "UNION_classes.hpp"
 #include "UnionRun_structs.hpp"
+#include "UnionSystem_structs.hpp"
+#include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -39,20 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SL_MachineIconCapture_C">();
+		BP_STATIC_CLASS_IMPL("SL_MachineIconCapture_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SL_MachineIconCapture_C")
 	}
 	static class ASL_MachineIconCapture_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASL_MachineIconCapture_C>();
 	}
 };
-static_assert(alignof(ASL_MachineIconCapture_C) == 0x000008, "Wrong alignment on ASL_MachineIconCapture_C");
-static_assert(sizeof(ASL_MachineIconCapture_C) == 0x0002D0, "Wrong size on ASL_MachineIconCapture_C");
-static_assert(offsetof(ASL_MachineIconCapture_C, UberGraphFrame) == 0x0002A8, "Member 'ASL_MachineIconCapture_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ASL_MachineIconCapture_C, RenderTextureColor) == 0x0002B0, "Member 'ASL_MachineIconCapture_C::RenderTextureColor' has a wrong offset!");
-static_assert(offsetof(ASL_MachineIconCapture_C, RenderTextureAlpha) == 0x0002B8, "Member 'ASL_MachineIconCapture_C::RenderTextureAlpha' has a wrong offset!");
-static_assert(offsetof(ASL_MachineIconCapture_C, BP_MenuRacerPreview_C_1_ExecuteUbergraph_SL_MachineIconCapture_RefProperty) == 0x0002C0, "Member 'ASL_MachineIconCapture_C::BP_MenuRacerPreview_C_1_ExecuteUbergraph_SL_MachineIconCapture_RefProperty' has a wrong offset!");
-static_assert(offsetof(ASL_MachineIconCapture_C, SceneCapture2D_1_ExecuteUbergraph_SL_MachineIconCapture_RefProperty) == 0x0002C8, "Member 'ASL_MachineIconCapture_C::SceneCapture2D_1_ExecuteUbergraph_SL_MachineIconCapture_RefProperty' has a wrong offset!");
+DUMPER7_ASSERTS_ASL_MachineIconCapture_C;
 
 }
 

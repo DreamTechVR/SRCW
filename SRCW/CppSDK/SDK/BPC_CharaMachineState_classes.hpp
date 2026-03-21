@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
-#include "UnionLib_structs.hpp"
-#include "UnionUI_structs.hpp"
-#include "UNION_classes.hpp"
 #include "UnionRun_structs.hpp"
+#include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
+#include "UnionUI_structs.hpp"
+#include "UnionLib_structs.hpp"
 
 
 namespace SDK
@@ -62,21 +62,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_CharaMachineState_C">();
+		BP_STATIC_CLASS_IMPL("BPC_CharaMachineState_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_CharaMachineState_C")
 	}
 	static class UBPC_CharaMachineState_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_CharaMachineState_C>();
 	}
 };
-static_assert(alignof(UBPC_CharaMachineState_C) == 0x000008, "Wrong alignment on UBPC_CharaMachineState_C");
-static_assert(sizeof(UBPC_CharaMachineState_C) == 0x000178, "Wrong size on UBPC_CharaMachineState_C");
-static_assert(offsetof(UBPC_CharaMachineState_C, UberGraphFrame) == 0x000140, "Member 'UBPC_CharaMachineState_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_CharaMachineState_C, OnExitEvent) == 0x000148, "Member 'UBPC_CharaMachineState_C::OnExitEvent' has a wrong offset!");
-static_assert(offsetof(UBPC_CharaMachineState_C, bIsMessageBarVisible) == 0x000158, "Member 'UBPC_CharaMachineState_C::bIsMessageBarVisible' has a wrong offset!");
-static_assert(offsetof(UBPC_CharaMachineState_C, MessageBar) == 0x000160, "Member 'UBPC_CharaMachineState_C::MessageBar' has a wrong offset!");
-static_assert(offsetof(UBPC_CharaMachineState_C, TimeOutHandle) == 0x000168, "Member 'UBPC_CharaMachineState_C::TimeOutHandle' has a wrong offset!");
-static_assert(offsetof(UBPC_CharaMachineState_C, LastClass) == 0x000170, "Member 'UBPC_CharaMachineState_C::LastClass' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_CharaMachineState_C;
 
 }
 

@@ -44,26 +44,7 @@ public:
 	uint8                                         Pad_7A[0x6];                                       // 0x007A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select_Default;                             // 0x0080(0x0010)(ConstParm)
 };
-static_assert(alignof(WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo) == 0x000008, "Wrong alignment on WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo");
-static_assert(sizeof(WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo) == 0x000090, "Wrong size on WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo");
-static_assert(offsetof(WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo, EntryPoint) == 0x000000, "Member 'WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x000004, "Member 'WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo, K2Node_SwitchEnum_CmpSuccess) == 0x000005, "Member 'WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo, CallFunc_MakeLiteralText_ReturnValue) == 0x000008, "Member 'WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo, CallFunc_MakeLiteralText_ReturnValue_1) == 0x000018, "Member 'WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo, CallFunc_MakeLiteralText_ReturnValue_2) == 0x000028, "Member 'WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo::CallFunc_MakeLiteralText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo, CallFunc_MakeLiteralText_ReturnValue_3) == 0x000038, "Member 'WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo::CallFunc_MakeLiteralText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo, CallFunc_MakeLiteralText_ReturnValue_4) == 0x000048, "Member 'WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo::CallFunc_MakeLiteralText_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo, CallFunc_MakeLiteralText_ReturnValue_5) == 0x000058, "Member 'WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo::CallFunc_MakeLiteralText_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo, CallFunc_GetIsOnlineGameMode_ReturnValue) == 0x000068, "Member 'WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo::CallFunc_GetIsOnlineGameMode_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo, CallFunc_IsEnableGlobalInvalidation_ReturnValue) == 0x000069, "Member 'WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo::CallFunc_IsEnableGlobalInvalidation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo, K2Node_CustomEvent_SpeedClassId) == 0x00006A, "Member 'WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo::K2Node_CustomEvent_SpeedClassId' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo, CallFunc_Conv_ByteToInt_ReturnValue) == 0x00006C, "Member 'WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo, CallFunc_MakeLiteralByte_ReturnValue) == 0x000070, "Member 'WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x000074, "Member 'WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo, CallFunc_IsEnableGlobalInvalidation_ReturnValue_1) == 0x000078, "Member 'WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo::CallFunc_IsEnableGlobalInvalidation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo, Temp_byte_Variable) == 0x000079, "Member 'WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo, K2Node_Select_Default) == 0x000080, "Member 'WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Sub_SpeedClassInfo_C_ExecuteUbergraph_WBP_CMN_Sub_SpeedClassInfo;
 
 // Function WBP_CMN_Sub_SpeedClassInfo.WBP_CMN_Sub_SpeedClassInfo_C.SetMenuSpeedClassId
 // 0x0001 (0x0001 - 0x0000)
@@ -72,9 +53,7 @@ struct WBP_CMN_Sub_SpeedClassInfo_C_SetMenuSpeedClassId final
 public:
 	EMenuSpeedClassId                             SpeedClassId;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_Sub_SpeedClassInfo_C_SetMenuSpeedClassId) == 0x000001, "Wrong alignment on WBP_CMN_Sub_SpeedClassInfo_C_SetMenuSpeedClassId");
-static_assert(sizeof(WBP_CMN_Sub_SpeedClassInfo_C_SetMenuSpeedClassId) == 0x000001, "Wrong size on WBP_CMN_Sub_SpeedClassInfo_C_SetMenuSpeedClassId");
-static_assert(offsetof(WBP_CMN_Sub_SpeedClassInfo_C_SetMenuSpeedClassId, SpeedClassId) == 0x000000, "Member 'WBP_CMN_Sub_SpeedClassInfo_C_SetMenuSpeedClassId::SpeedClassId' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Sub_SpeedClassInfo_C_SetMenuSpeedClassId;
 
 }
 

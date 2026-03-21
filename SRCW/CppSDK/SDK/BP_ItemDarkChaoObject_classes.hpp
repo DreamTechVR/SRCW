@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ItemDarkChaoObject_C">();
+		BP_STATIC_CLASS_IMPL("BP_ItemDarkChaoObject_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ItemDarkChaoObject_C")
 	}
 	static class ABP_ItemDarkChaoObject_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ItemDarkChaoObject_C>();
 	}
 };
-static_assert(alignof(ABP_ItemDarkChaoObject_C) == 0x000010, "Wrong alignment on ABP_ItemDarkChaoObject_C");
-static_assert(sizeof(ABP_ItemDarkChaoObject_C) == 0x000800, "Wrong size on ABP_ItemDarkChaoObject_C");
-static_assert(offsetof(ABP_ItemDarkChaoObject_C, Debug) == 0x0007F0, "Member 'ABP_ItemDarkChaoObject_C::Debug' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_ItemDarkChaoObject_C;
 
 }
 

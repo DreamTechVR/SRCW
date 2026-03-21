@@ -28,13 +28,7 @@ public:
 	struct FSoundHandle                           CallFunc_SoundBuildPlayer_ReturnValue;             // 0x000C(0x0004)()
 	struct FSoundHandle                           CallFunc_SetPanSplit_ReturnValue;                  // 0x0010(0x0004)()
 };
-static_assert(alignof(BP_ItemHomingPunchObject_C_ExecuteUbergraph_BP_ItemHomingPunchObject) == 0x000004, "Wrong alignment on BP_ItemHomingPunchObject_C_ExecuteUbergraph_BP_ItemHomingPunchObject");
-static_assert(sizeof(BP_ItemHomingPunchObject_C_ExecuteUbergraph_BP_ItemHomingPunchObject) == 0x000014, "Wrong size on BP_ItemHomingPunchObject_C_ExecuteUbergraph_BP_ItemHomingPunchObject");
-static_assert(offsetof(BP_ItemHomingPunchObject_C_ExecuteUbergraph_BP_ItemHomingPunchObject, EntryPoint) == 0x000000, "Member 'BP_ItemHomingPunchObject_C_ExecuteUbergraph_BP_ItemHomingPunchObject::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_ItemHomingPunchObject_C_ExecuteUbergraph_BP_ItemHomingPunchObject, CallFunc_SoundPlay_ReturnValue) == 0x000004, "Member 'BP_ItemHomingPunchObject_C_ExecuteUbergraph_BP_ItemHomingPunchObject::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ItemHomingPunchObject_C_ExecuteUbergraph_BP_ItemHomingPunchObject, K2Node_Event_SoundPan) == 0x000008, "Member 'BP_ItemHomingPunchObject_C_ExecuteUbergraph_BP_ItemHomingPunchObject::K2Node_Event_SoundPan' has a wrong offset!");
-static_assert(offsetof(BP_ItemHomingPunchObject_C_ExecuteUbergraph_BP_ItemHomingPunchObject, CallFunc_SoundBuildPlayer_ReturnValue) == 0x00000C, "Member 'BP_ItemHomingPunchObject_C_ExecuteUbergraph_BP_ItemHomingPunchObject::CallFunc_SoundBuildPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ItemHomingPunchObject_C_ExecuteUbergraph_BP_ItemHomingPunchObject, CallFunc_SetPanSplit_ReturnValue) == 0x000010, "Member 'BP_ItemHomingPunchObject_C_ExecuteUbergraph_BP_ItemHomingPunchObject::CallFunc_SetPanSplit_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_ItemHomingPunchObject_C_ExecuteUbergraph_BP_ItemHomingPunchObject;
 
 // Function BP_ItemHomingPunchObject.BP_ItemHomingPunchObject_C.OnPlayDamegeSound
 // 0x0001 (0x0001 - 0x0000)
@@ -43,9 +37,7 @@ struct BP_ItemHomingPunchObject_C_OnPlayDamegeSound final
 public:
 	ESoundPan                                     SoundPan;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_ItemHomingPunchObject_C_OnPlayDamegeSound) == 0x000001, "Wrong alignment on BP_ItemHomingPunchObject_C_OnPlayDamegeSound");
-static_assert(sizeof(BP_ItemHomingPunchObject_C_OnPlayDamegeSound) == 0x000001, "Wrong size on BP_ItemHomingPunchObject_C_OnPlayDamegeSound");
-static_assert(offsetof(BP_ItemHomingPunchObject_C_OnPlayDamegeSound, SoundPan) == 0x000000, "Member 'BP_ItemHomingPunchObject_C_OnPlayDamegeSound::SoundPan' has a wrong offset!");
+DUMPER7_ASSERTS_BP_ItemHomingPunchObject_C_OnPlayDamegeSound;
 
 }
 

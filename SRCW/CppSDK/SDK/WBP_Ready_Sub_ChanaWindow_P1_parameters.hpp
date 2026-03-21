@@ -28,14 +28,7 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	const class UTexture2D*                       K2Node_Event_InTexture;                            // 0x0028(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Ready_Sub_ChanaWindow_P1_C_ExecuteUbergraph_WBP_Ready_Sub_ChanaWindow_P1) == 0x000008, "Wrong alignment on WBP_Ready_Sub_ChanaWindow_P1_C_ExecuteUbergraph_WBP_Ready_Sub_ChanaWindow_P1");
-static_assert(sizeof(WBP_Ready_Sub_ChanaWindow_P1_C_ExecuteUbergraph_WBP_Ready_Sub_ChanaWindow_P1) == 0x000030, "Wrong size on WBP_Ready_Sub_ChanaWindow_P1_C_ExecuteUbergraph_WBP_Ready_Sub_ChanaWindow_P1");
-static_assert(offsetof(WBP_Ready_Sub_ChanaWindow_P1_C_ExecuteUbergraph_WBP_Ready_Sub_ChanaWindow_P1, EntryPoint) == 0x000000, "Member 'WBP_Ready_Sub_ChanaWindow_P1_C_ExecuteUbergraph_WBP_Ready_Sub_ChanaWindow_P1::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_ChanaWindow_P1_C_ExecuteUbergraph_WBP_Ready_Sub_ChanaWindow_P1, K2Node_Event_InName) == 0x000008, "Member 'WBP_Ready_Sub_ChanaWindow_P1_C_ExecuteUbergraph_WBP_Ready_Sub_ChanaWindow_P1::K2Node_Event_InName' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_ChanaWindow_P1_C_ExecuteUbergraph_WBP_Ready_Sub_ChanaWindow_P1, K2Node_Event_bIsCheck) == 0x000018, "Member 'WBP_Ready_Sub_ChanaWindow_P1_C_ExecuteUbergraph_WBP_Ready_Sub_ChanaWindow_P1::K2Node_Event_bIsCheck' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_ChanaWindow_P1_C_ExecuteUbergraph_WBP_Ready_Sub_ChanaWindow_P1, CallFunc_IsValid_ReturnValue) == 0x000019, "Member 'WBP_Ready_Sub_ChanaWindow_P1_C_ExecuteUbergraph_WBP_Ready_Sub_ChanaWindow_P1::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_ChanaWindow_P1_C_ExecuteUbergraph_WBP_Ready_Sub_ChanaWindow_P1, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000020, "Member 'WBP_Ready_Sub_ChanaWindow_P1_C_ExecuteUbergraph_WBP_Ready_Sub_ChanaWindow_P1::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_ChanaWindow_P1_C_ExecuteUbergraph_WBP_Ready_Sub_ChanaWindow_P1, K2Node_Event_InTexture) == 0x000028, "Member 'WBP_Ready_Sub_ChanaWindow_P1_C_ExecuteUbergraph_WBP_Ready_Sub_ChanaWindow_P1::K2Node_Event_InTexture' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Ready_Sub_ChanaWindow_P1_C_ExecuteUbergraph_WBP_Ready_Sub_ChanaWindow_P1;
 
 // Function WBP_Ready_Sub_ChanaWindow_P1.WBP_Ready_Sub_ChanaWindow_P1_C.SetCharacterIconCheckMark
 // 0x0001 (0x0001 - 0x0000)
@@ -44,9 +37,7 @@ struct WBP_Ready_Sub_ChanaWindow_P1_C_SetCharacterIconCheckMark final
 public:
 	bool                                          bIsCheck;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Ready_Sub_ChanaWindow_P1_C_SetCharacterIconCheckMark) == 0x000001, "Wrong alignment on WBP_Ready_Sub_ChanaWindow_P1_C_SetCharacterIconCheckMark");
-static_assert(sizeof(WBP_Ready_Sub_ChanaWindow_P1_C_SetCharacterIconCheckMark) == 0x000001, "Wrong size on WBP_Ready_Sub_ChanaWindow_P1_C_SetCharacterIconCheckMark");
-static_assert(offsetof(WBP_Ready_Sub_ChanaWindow_P1_C_SetCharacterIconCheckMark, bIsCheck) == 0x000000, "Member 'WBP_Ready_Sub_ChanaWindow_P1_C_SetCharacterIconCheckMark::bIsCheck' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Ready_Sub_ChanaWindow_P1_C_SetCharacterIconCheckMark;
 
 // Function WBP_Ready_Sub_ChanaWindow_P1.WBP_Ready_Sub_ChanaWindow_P1_C.SetCharacterIconTextureObj
 // 0x0008 (0x0008 - 0x0000)
@@ -55,9 +46,7 @@ struct WBP_Ready_Sub_ChanaWindow_P1_C_SetCharacterIconTextureObj final
 public:
 	const class UTexture2D*                       InTexture;                                         // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Ready_Sub_ChanaWindow_P1_C_SetCharacterIconTextureObj) == 0x000008, "Wrong alignment on WBP_Ready_Sub_ChanaWindow_P1_C_SetCharacterIconTextureObj");
-static_assert(sizeof(WBP_Ready_Sub_ChanaWindow_P1_C_SetCharacterIconTextureObj) == 0x000008, "Wrong size on WBP_Ready_Sub_ChanaWindow_P1_C_SetCharacterIconTextureObj");
-static_assert(offsetof(WBP_Ready_Sub_ChanaWindow_P1_C_SetCharacterIconTextureObj, InTexture) == 0x000000, "Member 'WBP_Ready_Sub_ChanaWindow_P1_C_SetCharacterIconTextureObj::InTexture' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Ready_Sub_ChanaWindow_P1_C_SetCharacterIconTextureObj;
 
 // Function WBP_Ready_Sub_ChanaWindow_P1.WBP_Ready_Sub_ChanaWindow_P1_C.SetCharacterName
 // 0x0010 (0x0010 - 0x0000)
@@ -66,9 +55,7 @@ struct WBP_Ready_Sub_ChanaWindow_P1_C_SetCharacterName final
 public:
 	class FText                                   InName;                                            // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_Ready_Sub_ChanaWindow_P1_C_SetCharacterName) == 0x000008, "Wrong alignment on WBP_Ready_Sub_ChanaWindow_P1_C_SetCharacterName");
-static_assert(sizeof(WBP_Ready_Sub_ChanaWindow_P1_C_SetCharacterName) == 0x000010, "Wrong size on WBP_Ready_Sub_ChanaWindow_P1_C_SetCharacterName");
-static_assert(offsetof(WBP_Ready_Sub_ChanaWindow_P1_C_SetCharacterName, InName) == 0x000000, "Member 'WBP_Ready_Sub_ChanaWindow_P1_C_SetCharacterName::InName' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Ready_Sub_ChanaWindow_P1_C_SetCharacterName;
 
 }
 

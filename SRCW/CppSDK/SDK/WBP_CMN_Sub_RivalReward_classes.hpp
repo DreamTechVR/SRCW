@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -42,26 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_Sub_RivalReward_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_Sub_RivalReward_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_Sub_RivalReward_C")
 	}
 	static class UWBP_CMN_Sub_RivalReward_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_Sub_RivalReward_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_Sub_RivalReward_C) == 0x000008, "Wrong alignment on UWBP_CMN_Sub_RivalReward_C");
-static_assert(sizeof(UWBP_CMN_Sub_RivalReward_C) == 0x000390, "Wrong size on UWBP_CMN_Sub_RivalReward_C");
-static_assert(offsetof(UWBP_CMN_Sub_RivalReward_C, UberGraphFrame) == 0x000338, "Member 'UWBP_CMN_Sub_RivalReward_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_RivalReward_C, base) == 0x000340, "Member 'UWBP_CMN_Sub_RivalReward_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_RivalReward_C, DSP_PAT_Achievement_TimeAttack) == 0x000348, "Member 'UWBP_CMN_Sub_RivalReward_C::DSP_PAT_Achievement_TimeAttack' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_RivalReward_C, PAT_Eff_Achievement_TimeAttack) == 0x000350, "Member 'UWBP_CMN_Sub_RivalReward_C::PAT_Eff_Achievement_TimeAttack' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_RivalReward_C, TXT_Num_Count_1) == 0x000358, "Member 'UWBP_CMN_Sub_RivalReward_C::TXT_Num_Count_1' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_RivalReward_C, TXT_Num_Get_Count_1) == 0x000360, "Member 'UWBP_CMN_Sub_RivalReward_C::TXT_Num_Get_Count_1' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_RivalReward_C, TXT_REWARD) == 0x000368, "Member 'UWBP_CMN_Sub_RivalReward_C::TXT_REWARD' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_RivalReward_C, TXT_WIN) == 0x000370, "Member 'UWBP_CMN_Sub_RivalReward_C::TXT_WIN' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_RivalReward_C, WBP_CMN_ItemIcon) == 0x000378, "Member 'UWBP_CMN_Sub_RivalReward_C::WBP_CMN_ItemIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_RivalReward_C, WidgetSwitcher_0) == 0x000380, "Member 'UWBP_CMN_Sub_RivalReward_C::WidgetSwitcher_0' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_RivalReward_C, MedalIconMipLevel) == 0x000388, "Member 'UWBP_CMN_Sub_RivalReward_C::MedalIconMipLevel' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_Sub_RivalReward_C;
 
 }
 

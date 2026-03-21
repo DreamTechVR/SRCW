@@ -44,24 +44,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue_2;       // 0x00B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue_3;       // 0x00C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking) == 0x000008, "Wrong alignment on WBP_EventEndInfo_Sub_Ranking_C_SetRanking");
-static_assert(sizeof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking) == 0x0000C8, "Wrong size on WBP_EventEndInfo_Sub_Ranking_C_SetRanking");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, Ranking) == 0x000000, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::Ranking' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, Temp_byte_Variable) == 0x000004, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000008, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, K2Node_MakeStruct_FormatArgumentData) == 0x000010, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, K2Node_SwitchInteger_CmpSuccess) == 0x000058, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, K2Node_MakeArray_Array) == 0x000060, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, Temp_byte_Variable_1) == 0x000070, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, CallFunc_Format_ReturnValue) == 0x000078, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000088, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, CallFunc_MakeLiteralText_ReturnValue) == 0x000090, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, Temp_bool_Variable) == 0x0000A0, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, K2Node_Select_Default) == 0x0000A1, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, CallFunc_PlayAnimationForward_ReturnValue) == 0x0000A8, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, CallFunc_PlayAnimationForward_ReturnValue_1) == 0x0000B0, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::CallFunc_PlayAnimationForward_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, CallFunc_PlayAnimationForward_ReturnValue_2) == 0x0000B8, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::CallFunc_PlayAnimationForward_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, CallFunc_PlayAnimationForward_ReturnValue_3) == 0x0000C0, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::CallFunc_PlayAnimationForward_ReturnValue_3' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_EventEndInfo_Sub_Ranking_C_SetRanking;
 
 }
 

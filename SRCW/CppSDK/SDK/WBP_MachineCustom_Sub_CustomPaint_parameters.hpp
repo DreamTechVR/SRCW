@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
+#include "UnionSystem_structs.hpp"
 
 
 namespace SDK::Params
@@ -24,9 +24,7 @@ struct WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomP
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_CMN_SubMenu_Btn_K2Node_ComponentBoundEvent_4_OnUnionButtonEvent__DelegateSignature) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_CMN_SubMenu_Btn_K2Node_ComponentBoundEvent_4_OnUnionButtonEvent__DelegateSignature");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_CMN_SubMenu_Btn_K2Node_ComponentBoundEvent_4_OnUnionButtonEvent__DelegateSignature) == 0x000008, "Wrong size on WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_CMN_SubMenu_Btn_K2Node_ComponentBoundEvent_4_OnUnionButtonEvent__DelegateSignature");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_CMN_SubMenu_Btn_K2Node_ComponentBoundEvent_4_OnUnionButtonEvent__DelegateSignature, Button) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_CMN_SubMenu_Btn_K2Node_ComponentBoundEvent_4_OnUnionButtonEvent__DelegateSignature::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_CMN_SubMenu_Btn_K2Node_ComponentBoundEvent_4_OnUnionButtonEvent__DelegateSignature;
 
 // Function WBP_MachineCustom_Sub_CustomPaint.WBP_MachineCustom_Sub_CustomPaint_C.BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_CMN_SubMenu_Btn_K2Node_ComponentBoundEvent_9_OnUnionButtonEvent__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -35,9 +33,7 @@ struct WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomP
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_CMN_SubMenu_Btn_K2Node_ComponentBoundEvent_9_OnUnionButtonEvent__DelegateSignature) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_CMN_SubMenu_Btn_K2Node_ComponentBoundEvent_9_OnUnionButtonEvent__DelegateSignature");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_CMN_SubMenu_Btn_K2Node_ComponentBoundEvent_9_OnUnionButtonEvent__DelegateSignature) == 0x000008, "Wrong size on WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_CMN_SubMenu_Btn_K2Node_ComponentBoundEvent_9_OnUnionButtonEvent__DelegateSignature");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_CMN_SubMenu_Btn_K2Node_ComponentBoundEvent_9_OnUnionButtonEvent__DelegateSignature, Button) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_CMN_SubMenu_Btn_K2Node_ComponentBoundEvent_9_OnUnionButtonEvent__DelegateSignature::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_CMN_SubMenu_Btn_K2Node_ComponentBoundEvent_9_OnUnionButtonEvent__DelegateSignature;
 
 // Function WBP_MachineCustom_Sub_CustomPaint.WBP_MachineCustom_Sub_CustomPaint_C.BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Glow_K2Node_ComponentBoundEvent_0_OnUnionButtonEvent__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -46,9 +42,7 @@ struct WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomP
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Glow_K2Node_ComponentBoundEvent_0_OnUnionButtonEvent__DelegateSignature) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Glow_K2Node_ComponentBoundEvent_0_OnUnionButtonEvent__DelegateSignature");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Glow_K2Node_ComponentBoundEvent_0_OnUnionButtonEvent__DelegateSignature) == 0x000008, "Wrong size on WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Glow_K2Node_ComponentBoundEvent_0_OnUnionButtonEvent__DelegateSignature");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Glow_K2Node_ComponentBoundEvent_0_OnUnionButtonEvent__DelegateSignature, Button) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Glow_K2Node_ComponentBoundEvent_0_OnUnionButtonEvent__DelegateSignature::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Glow_K2Node_ComponentBoundEvent_0_OnUnionButtonEvent__DelegateSignature;
 
 // Function WBP_MachineCustom_Sub_CustomPaint.WBP_MachineCustom_Sub_CustomPaint_C.BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Glow_K2Node_ComponentBoundEvent_3_OnUnionButtonEvent__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -57,9 +51,7 @@ struct WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomP
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Glow_K2Node_ComponentBoundEvent_3_OnUnionButtonEvent__DelegateSignature) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Glow_K2Node_ComponentBoundEvent_3_OnUnionButtonEvent__DelegateSignature");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Glow_K2Node_ComponentBoundEvent_3_OnUnionButtonEvent__DelegateSignature) == 0x000008, "Wrong size on WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Glow_K2Node_ComponentBoundEvent_3_OnUnionButtonEvent__DelegateSignature");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Glow_K2Node_ComponentBoundEvent_3_OnUnionButtonEvent__DelegateSignature, Button) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Glow_K2Node_ComponentBoundEvent_3_OnUnionButtonEvent__DelegateSignature::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Glow_K2Node_ComponentBoundEvent_3_OnUnionButtonEvent__DelegateSignature;
 
 // Function WBP_MachineCustom_Sub_CustomPaint.WBP_MachineCustom_Sub_CustomPaint_C.BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Body_K2Node_ComponentBoundEvent_1_OnFocus__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -68,9 +60,7 @@ struct WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomP
 public:
 	class UUnionUIButtonBase*                     InButton;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Body_K2Node_ComponentBoundEvent_1_OnFocus__DelegateSignature) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Body_K2Node_ComponentBoundEvent_1_OnFocus__DelegateSignature");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Body_K2Node_ComponentBoundEvent_1_OnFocus__DelegateSignature) == 0x000008, "Wrong size on WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Body_K2Node_ComponentBoundEvent_1_OnFocus__DelegateSignature");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Body_K2Node_ComponentBoundEvent_1_OnFocus__DelegateSignature, InButton) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Body_K2Node_ComponentBoundEvent_1_OnFocus__DelegateSignature::InButton' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Body_K2Node_ComponentBoundEvent_1_OnFocus__DelegateSignature;
 
 // Function WBP_MachineCustom_Sub_CustomPaint.WBP_MachineCustom_Sub_CustomPaint_C.BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Body_K2Node_ComponentBoundEvent_5_OnDecision__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -79,9 +69,7 @@ struct WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomP
 public:
 	class UUnionUIButtonBase*                     InButton;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Body_K2Node_ComponentBoundEvent_5_OnDecision__DelegateSignature) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Body_K2Node_ComponentBoundEvent_5_OnDecision__DelegateSignature");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Body_K2Node_ComponentBoundEvent_5_OnDecision__DelegateSignature) == 0x000008, "Wrong size on WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Body_K2Node_ComponentBoundEvent_5_OnDecision__DelegateSignature");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Body_K2Node_ComponentBoundEvent_5_OnDecision__DelegateSignature, InButton) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Body_K2Node_ComponentBoundEvent_5_OnDecision__DelegateSignature::InButton' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Body_K2Node_ComponentBoundEvent_5_OnDecision__DelegateSignature;
 
 // Function WBP_MachineCustom_Sub_CustomPaint.WBP_MachineCustom_Sub_CustomPaint_C.BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Cockpit_K2Node_ComponentBoundEvent_7_OnDecision__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -90,9 +78,7 @@ struct WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomP
 public:
 	class UUnionUIButtonBase*                     InButton;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Cockpit_K2Node_ComponentBoundEvent_7_OnDecision__DelegateSignature) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Cockpit_K2Node_ComponentBoundEvent_7_OnDecision__DelegateSignature");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Cockpit_K2Node_ComponentBoundEvent_7_OnDecision__DelegateSignature) == 0x000008, "Wrong size on WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Cockpit_K2Node_ComponentBoundEvent_7_OnDecision__DelegateSignature");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Cockpit_K2Node_ComponentBoundEvent_7_OnDecision__DelegateSignature, InButton) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Cockpit_K2Node_ComponentBoundEvent_7_OnDecision__DelegateSignature::InButton' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Cockpit_K2Node_ComponentBoundEvent_7_OnDecision__DelegateSignature;
 
 // Function WBP_MachineCustom_Sub_CustomPaint.WBP_MachineCustom_Sub_CustomPaint_C.BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Cockpit_K2Node_ComponentBoundEvent_8_OnFocus__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -101,9 +87,7 @@ struct WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomP
 public:
 	class UUnionUIButtonBase*                     InButton;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Cockpit_K2Node_ComponentBoundEvent_8_OnFocus__DelegateSignature) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Cockpit_K2Node_ComponentBoundEvent_8_OnFocus__DelegateSignature");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Cockpit_K2Node_ComponentBoundEvent_8_OnFocus__DelegateSignature) == 0x000008, "Wrong size on WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Cockpit_K2Node_ComponentBoundEvent_8_OnFocus__DelegateSignature");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Cockpit_K2Node_ComponentBoundEvent_8_OnFocus__DelegateSignature, InButton) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Cockpit_K2Node_ComponentBoundEvent_8_OnFocus__DelegateSignature::InButton' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Cockpit_K2Node_ComponentBoundEvent_8_OnFocus__DelegateSignature;
 
 // Function WBP_MachineCustom_Sub_CustomPaint.WBP_MachineCustom_Sub_CustomPaint_C.BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Wheel_K2Node_ComponentBoundEvent_2_OnFocus__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -112,9 +96,7 @@ struct WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomP
 public:
 	class UUnionUIButtonBase*                     InButton;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Wheel_K2Node_ComponentBoundEvent_2_OnFocus__DelegateSignature) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Wheel_K2Node_ComponentBoundEvent_2_OnFocus__DelegateSignature");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Wheel_K2Node_ComponentBoundEvent_2_OnFocus__DelegateSignature) == 0x000008, "Wrong size on WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Wheel_K2Node_ComponentBoundEvent_2_OnFocus__DelegateSignature");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Wheel_K2Node_ComponentBoundEvent_2_OnFocus__DelegateSignature, InButton) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Wheel_K2Node_ComponentBoundEvent_2_OnFocus__DelegateSignature::InButton' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Wheel_K2Node_ComponentBoundEvent_2_OnFocus__DelegateSignature;
 
 // Function WBP_MachineCustom_Sub_CustomPaint.WBP_MachineCustom_Sub_CustomPaint_C.BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Wheel_K2Node_ComponentBoundEvent_6_OnDecision__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -123,9 +105,7 @@ struct WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomP
 public:
 	class UUnionUIButtonBase*                     InButton;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Wheel_K2Node_ComponentBoundEvent_6_OnDecision__DelegateSignature) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Wheel_K2Node_ComponentBoundEvent_6_OnDecision__DelegateSignature");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Wheel_K2Node_ComponentBoundEvent_6_OnDecision__DelegateSignature) == 0x000008, "Wrong size on WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Wheel_K2Node_ComponentBoundEvent_6_OnDecision__DelegateSignature");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Wheel_K2Node_ComponentBoundEvent_6_OnDecision__DelegateSignature, InButton) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Wheel_K2Node_ComponentBoundEvent_6_OnDecision__DelegateSignature::InButton' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomPaint_C_BndEvt__WBP_MachineCustom_Sub_CustomPaint_WBP_MachineCustom_Sub_CustomPaint_Liquid_Wheel_K2Node_ComponentBoundEvent_6_OnDecision__DelegateSignature;
 
 // Function WBP_MachineCustom_Sub_CustomPaint.WBP_MachineCustom_Sub_CustomPaint_C.Cancel
 // 0x0010 (0x0010 - 0x0000)
@@ -136,11 +116,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomPaint_C_Cancel) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CustomPaint_C_Cancel");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomPaint_C_Cancel) == 0x000010, "Wrong size on WBP_MachineCustom_Sub_CustomPaint_C_Cancel");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Cancel, Button) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Cancel::Button' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Cancel, PanelIndex) == 0x000008, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Cancel::PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Cancel, ButtonIndex) == 0x00000C, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Cancel::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomPaint_C_Cancel;
 
 // Function WBP_MachineCustom_Sub_CustomPaint.WBP_MachineCustom_Sub_CustomPaint_C.Decision
 // 0x00A8 (0x00A8 - 0x0000)
@@ -157,15 +133,7 @@ public:
 	struct FMachineColorAreaUIData                CallFunc_GetItemData_OutUIData;                    // 0x0028(0x0040)()
 	struct FMachineColorAreaUIData                CallFunc_GetItemData_UIData;                       // 0x0068(0x0040)()
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomPaint_C_Decision) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CustomPaint_C_Decision");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomPaint_C_Decision) == 0x0000A8, "Wrong size on WBP_MachineCustom_Sub_CustomPaint_C_Decision");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Decision, Button) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Decision::Button' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Decision, K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Custom_Paint_Glow) == 0x000008, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Decision::K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Custom_Paint_Glow' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Decision, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Decision::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Decision, K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Custom_Paint_Liquid_Line) == 0x000018, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Decision::K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Custom_Paint_Liquid_Line' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Decision, K2Node_DynamicCast_bSuccess_1) == 0x000020, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Decision::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Decision, CallFunc_GetItemData_OutUIData) == 0x000028, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Decision::CallFunc_GetItemData_OutUIData' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Decision, CallFunc_GetItemData_UIData) == 0x000068, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Decision::CallFunc_GetItemData_UIData' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomPaint_C_Decision;
 
 // Function WBP_MachineCustom_Sub_CustomPaint.WBP_MachineCustom_Sub_CustomPaint_C.ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint
 // 0x0090 (0x0090 - 0x0000)
@@ -195,27 +163,7 @@ public:
 	uint8                                         Pad_85[0x3];                                       // 0x0085(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUnionUIButtonBase*                     K2Node_ComponentBoundEvent_Button_3;               // 0x0088(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint) == 0x000090, "Wrong size on WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint, EntryPoint) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint, K2Node_ComponentBoundEvent_Button_2) == 0x000018, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint::K2Node_ComponentBoundEvent_Button_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint, K2Node_ComponentBoundEvent_InButton_5) == 0x000020, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint::K2Node_ComponentBoundEvent_InButton_5' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint, K2Node_ComponentBoundEvent_InButton_4) == 0x000028, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint::K2Node_ComponentBoundEvent_InButton_4' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint, K2Node_ComponentBoundEvent_InButton_3) == 0x000030, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint::K2Node_ComponentBoundEvent_InButton_3' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint, K2Node_ComponentBoundEvent_Button_1) == 0x000038, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint, K2Node_ComponentBoundEvent_InButton_2) == 0x000040, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint::K2Node_ComponentBoundEvent_InButton_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint, K2Node_ComponentBoundEvent_InButton_1) == 0x000048, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint::K2Node_ComponentBoundEvent_InButton_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint, K2Node_ComponentBoundEvent_InButton) == 0x000050, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint::K2Node_ComponentBoundEvent_InButton' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint, K2Node_ComponentBoundEvent_Button) == 0x000058, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint, CallFunc_CreateButtonsPanel_ReturnValue) == 0x000060, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint::CallFunc_CreateButtonsPanel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint, CallFunc_SpawnObject_ReturnValue) == 0x000068, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint, CallFunc_MakeLiteralInt_ReturnValue) == 0x000070, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint, CallFunc_MakeLiteralBool_ReturnValue) == 0x000074, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint::CallFunc_MakeLiteralBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint, CallFunc_CreateButtonsPanel_ReturnValue_1) == 0x000078, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint::CallFunc_CreateButtonsPanel_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint, CallFunc_MakeLiteralInt_ReturnValue_1) == 0x000080, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint::CallFunc_MakeLiteralInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint, CallFunc_MakeLiteralBool_ReturnValue_1) == 0x000084, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint::CallFunc_MakeLiteralBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint, K2Node_ComponentBoundEvent_Button_3) == 0x000088, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint::K2Node_ComponentBoundEvent_Button_3' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint;
 
 // Function WBP_MachineCustom_Sub_CustomPaint.WBP_MachineCustom_Sub_CustomPaint_C.Focus
 // 0x0098 (0x0098 - 0x0000)
@@ -250,28 +198,7 @@ public:
 	class UWBP_MachineCustom_Sub_CustomPaint_Liquid_C* K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Custom_Paint_Liquid; // 0x0088(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_5;                     // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomPaint_C_Focus) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CustomPaint_C_Focus");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomPaint_C_Focus) == 0x000098, "Wrong size on WBP_MachineCustom_Sub_CustomPaint_C_Focus");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Focus, InButton) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Focus::InButton' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Focus, K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Custom_Paint_Liquid_Line) == 0x000008, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Focus::K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Custom_Paint_Liquid_Line' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Focus, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Focus::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Focus, K2Node_DynamicCast_AsWBP_CMN_Sub_Menu_Btn) == 0x000018, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Focus::K2Node_DynamicCast_AsWBP_CMN_Sub_Menu_Btn' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Focus, K2Node_DynamicCast_bSuccess_1) == 0x000020, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Focus::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Focus, K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Custom_Paint_Glow) == 0x000028, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Focus::K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Custom_Paint_Glow' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Focus, K2Node_DynamicCast_bSuccess_2) == 0x000030, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Focus::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Focus, Temp_int_Array_Index_Variable) == 0x000034, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Focus::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Focus, Temp_int_Loop_Counter_Variable) == 0x000038, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Focus::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Focus, CallFunc_Add_IntInt_ReturnValue) == 0x00003C, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Focus::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Focus, CallFunc_GetAllChildren_ReturnValue) == 0x000040, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Focus::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Focus, CallFunc_Array_Length_ReturnValue) == 0x000050, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Focus::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Focus, CallFunc_Array_Get_Item) == 0x000058, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Focus::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Focus, CallFunc_Less_IntInt_ReturnValue) == 0x000060, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Focus::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Focus, K2Node_DynamicCast_AsWBP_CMN_Sub_Menu_Btn_1) == 0x000068, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Focus::K2Node_DynamicCast_AsWBP_CMN_Sub_Menu_Btn_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Focus, K2Node_DynamicCast_bSuccess_3) == 0x000070, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Focus::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Focus, K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Custom_Paint_Glow_1) == 0x000078, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Focus::K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Custom_Paint_Glow_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Focus, K2Node_DynamicCast_bSuccess_4) == 0x000080, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Focus::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Focus, K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Custom_Paint_Liquid) == 0x000088, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Focus::K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Custom_Paint_Liquid' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Focus, K2Node_DynamicCast_bSuccess_5) == 0x000090, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Focus::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomPaint_C_Focus;
 
 // Function WBP_MachineCustom_Sub_CustomPaint.WBP_MachineCustom_Sub_CustomPaint_C.PlaySECancel
 // 0x0004 (0x0004 - 0x0000)
@@ -280,9 +207,7 @@ struct WBP_MachineCustom_Sub_CustomPaint_C_PlaySECancel final
 public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0000(0x0004)()
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomPaint_C_PlaySECancel) == 0x000004, "Wrong alignment on WBP_MachineCustom_Sub_CustomPaint_C_PlaySECancel");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomPaint_C_PlaySECancel) == 0x000004, "Wrong size on WBP_MachineCustom_Sub_CustomPaint_C_PlaySECancel");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_PlaySECancel, CallFunc_SoundPlay_ReturnValue) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_PlaySECancel::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomPaint_C_PlaySECancel;
 
 // Function WBP_MachineCustom_Sub_CustomPaint.WBP_MachineCustom_Sub_CustomPaint_C.PlaySEDecision
 // 0x0004 (0x0004 - 0x0000)
@@ -291,9 +216,7 @@ struct WBP_MachineCustom_Sub_CustomPaint_C_PlaySEDecision final
 public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0000(0x0004)()
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomPaint_C_PlaySEDecision) == 0x000004, "Wrong alignment on WBP_MachineCustom_Sub_CustomPaint_C_PlaySEDecision");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomPaint_C_PlaySEDecision) == 0x000004, "Wrong size on WBP_MachineCustom_Sub_CustomPaint_C_PlaySEDecision");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_PlaySEDecision, CallFunc_SoundPlay_ReturnValue) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_PlaySEDecision::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomPaint_C_PlaySEDecision;
 
 // Function WBP_MachineCustom_Sub_CustomPaint.WBP_MachineCustom_Sub_CustomPaint_C.PlaySEFocus
 // 0x0004 (0x0004 - 0x0000)
@@ -302,9 +225,7 @@ struct WBP_MachineCustom_Sub_CustomPaint_C_PlaySEFocus final
 public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0000(0x0004)()
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomPaint_C_PlaySEFocus) == 0x000004, "Wrong alignment on WBP_MachineCustom_Sub_CustomPaint_C_PlaySEFocus");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomPaint_C_PlaySEFocus) == 0x000004, "Wrong size on WBP_MachineCustom_Sub_CustomPaint_C_PlaySEFocus");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_PlaySEFocus, CallFunc_SoundPlay_ReturnValue) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_PlaySEFocus::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomPaint_C_PlaySEFocus;
 
 // Function WBP_MachineCustom_Sub_CustomPaint.WBP_MachineCustom_Sub_CustomPaint_C.SetInitialFocus
 // 0x0090 (0x0090 - 0x0000)
@@ -330,24 +251,7 @@ public:
 	class UWBP_MachineCustom_Sub_CustomPaint_LiquidLine_C* CallFunc_Array_Get_Item_7;                // 0x0080(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWBP_MachineCustom_Sub_CustomPaint_LiquidLine_C* CallFunc_Array_Get_Item_8;                // 0x0088(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus) == 0x000090, "Wrong size on WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus, InPlayerController) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus::InPlayerController' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus, InColorAreaId) == 0x000008, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus::InColorAreaId' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus, bInDefault) == 0x000009, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus::bInDefault' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus, CallFunc_GetItems_OutItems) == 0x000010, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus::CallFunc_GetItems_OutItems' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus, CallFunc_Array_Get_Item) == 0x000020, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus, CallFunc_Array_Get_Item_1) == 0x000028, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus, CallFunc_Array_Get_Item_2) == 0x000030, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus, CallFunc_GetItems_OutItems_1) == 0x000038, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus::CallFunc_GetItems_OutItems_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus, CallFunc_Array_Get_Item_3) == 0x000048, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus, CallFunc_Array_Get_Item_4) == 0x000050, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus, CallFunc_Array_Get_Item_5) == 0x000058, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus::CallFunc_Array_Get_Item_5' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus, CallFunc_GetItems_OutItems_2) == 0x000060, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus::CallFunc_GetItems_OutItems_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus, K2Node_SwitchEnum_CmpSuccess) == 0x000070, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus, CallFunc_Array_Get_Item_6) == 0x000078, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus::CallFunc_Array_Get_Item_6' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus, CallFunc_Array_Get_Item_7) == 0x000080, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus::CallFunc_Array_Get_Item_7' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus, CallFunc_Array_Get_Item_8) == 0x000088, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus::CallFunc_Array_Get_Item_8' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomPaint_C_SetInitialFocus;
 
 // Function WBP_MachineCustom_Sub_CustomPaint.WBP_MachineCustom_Sub_CustomPaint_C.Setup
 // 0x0658 (0x0658 - 0x0000)
@@ -381,30 +285,7 @@ public:
 	uint8                                         Pad_651[0x3];                                      // 0x0651(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0654(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomPaint_C_Setup) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CustomPaint_C_Setup");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomPaint_C_Setup) == 0x000658, "Wrong size on WBP_MachineCustom_Sub_CustomPaint_C_Setup");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Setup, InPlayerController) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Setup::InPlayerController' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Setup, InUIData) == 0x000008, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Setup::InUIData' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Setup, Boxes) == 0x0002D0, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Setup::Boxes' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Setup, UIData) == 0x0002E0, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Setup::UIData' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Setup, PlayerController) == 0x0005A8, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Setup::PlayerController' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Setup, Temp_int_Loop_Counter_Variable) == 0x0005B0, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Setup::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Setup, CallFunc_Add_IntInt_ReturnValue) == 0x0005B4, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Setup::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Setup, Temp_int_Array_Index_Variable) == 0x0005B8, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Setup::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Setup, CallFunc_Multiply_IntInt_ReturnValue) == 0x0005BC, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Setup::CallFunc_Multiply_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Setup, CallFunc_Array_Get_Item) == 0x0005C0, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Setup::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Setup, CallFunc_Array_Length_ReturnValue) == 0x0005C8, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Setup::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Setup, CallFunc_GetEnabledItems_OutItems) == 0x0005D0, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Setup::CallFunc_GetEnabledItems_OutItems' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Setup, CallFunc_Less_IntInt_ReturnValue) == 0x0005E0, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Setup::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Setup, CallFunc_Array_Length_ReturnValue_1) == 0x0005E4, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Setup::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Setup, K2Node_MakeArray_Array) == 0x0005E8, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Setup::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Setup, CallFunc_GetItemData_OutUIData) == 0x0005F8, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Setup::CallFunc_GetItemData_OutUIData' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Setup, Temp_int_Array_Index_Variable_1) == 0x000638, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Setup::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Setup, CallFunc_Array_Get_Item_1) == 0x000640, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Setup::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Setup, CallFunc_Add_IntInt_ReturnValue_1) == 0x000648, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Setup::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Setup, Temp_int_Loop_Counter_Variable_1) == 0x00064C, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Setup::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Setup, CallFunc_Less_IntInt_ReturnValue_1) == 0x000650, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Setup::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_C_Setup, CallFunc_Add_IntInt_ReturnValue_2) == 0x000654, "Member 'WBP_MachineCustom_Sub_CustomPaint_C_Setup::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomPaint_C_Setup;
 
 }
 

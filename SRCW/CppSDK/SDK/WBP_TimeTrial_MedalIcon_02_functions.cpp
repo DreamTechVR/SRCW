@@ -31,6 +31,20 @@ void UWBP_TimeTrial_MedalIcon_02_C::ActiveMedal()
 }
 
 
+// Function WBP_TimeTrial_MedalIcon_02.WBP_TimeTrial_MedalIcon_02_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_TimeTrial_MedalIcon_02_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_TimeTrial_MedalIcon_02_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_TimeTrial_MedalIcon_02.WBP_TimeTrial_MedalIcon_02_C.ExecuteUbergraph_WBP_TimeTrial_MedalIcon_02
 // (Final, UbergraphFunction)
 // Parameters:

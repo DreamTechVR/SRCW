@@ -30,15 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_MachineCustomizeAuraSelectState_C">();
+		BP_STATIC_CLASS_IMPL("BPC_MachineCustomizeAuraSelectState_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_MachineCustomizeAuraSelectState_C")
 	}
 	static class UBPC_MachineCustomizeAuraSelectState_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_MachineCustomizeAuraSelectState_C>();
 	}
 };
-static_assert(alignof(UBPC_MachineCustomizeAuraSelectState_C) == 0x000008, "Wrong alignment on UBPC_MachineCustomizeAuraSelectState_C");
-static_assert(sizeof(UBPC_MachineCustomizeAuraSelectState_C) == 0x000148, "Wrong size on UBPC_MachineCustomizeAuraSelectState_C");
+DUMPER7_ASSERTS_UBPC_MachineCustomizeAuraSelectState_C;
 
 }
 

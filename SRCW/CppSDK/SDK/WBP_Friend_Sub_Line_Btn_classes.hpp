@@ -12,9 +12,9 @@
 
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
+#include "UMG_structs.hpp"
 #include "UnionUI_structs.hpp"
 #include "UnionUI_classes.hpp"
-#include "UMG_structs.hpp"
 
 
 namespace SDK
@@ -59,22 +59,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Friend_Sub_Line_Btn_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Friend_Sub_Line_Btn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Friend_Sub_Line_Btn_C")
 	}
 	static class UWBP_Friend_Sub_Line_Btn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Friend_Sub_Line_Btn_C>();
 	}
 };
-static_assert(alignof(UWBP_Friend_Sub_Line_Btn_C) == 0x000008, "Wrong alignment on UWBP_Friend_Sub_Line_Btn_C");
-static_assert(sizeof(UWBP_Friend_Sub_Line_Btn_C) == 0x0004B0, "Wrong size on UWBP_Friend_Sub_Line_Btn_C");
-static_assert(offsetof(UWBP_Friend_Sub_Line_Btn_C, UberGraphFrame) == 0x000480, "Member 'UWBP_Friend_Sub_Line_Btn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_Line_Btn_C, DSP_Cursor_Texture) == 0x000488, "Member 'UWBP_Friend_Sub_Line_Btn_C::DSP_Cursor_Texture' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_Line_Btn_C, MouseInteraction) == 0x000490, "Member 'UWBP_Friend_Sub_Line_Btn_C::MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_Line_Btn_C, TXT_CustomPaint) == 0x000498, "Member 'UWBP_Friend_Sub_Line_Btn_C::TXT_CustomPaint' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_Line_Btn_C, WBP_CMN_Line_Btn) == 0x0004A0, "Member 'UWBP_Friend_Sub_Line_Btn_C::WBP_CMN_Line_Btn' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_Line_Btn_C, MouseDown) == 0x0004A8, "Member 'UWBP_Friend_Sub_Line_Btn_C::MouseDown' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_Line_Btn_C, bAcceptExecuteReady) == 0x0004A9, "Member 'UWBP_Friend_Sub_Line_Btn_C::bAcceptExecuteReady' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Friend_Sub_Line_Btn_C;
 
 }
 

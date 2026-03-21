@@ -30,13 +30,7 @@ public:
 	EAppControllerInputType                       CallFunc_CalcCurrentDeviceButtonTexture_ReturnValue; // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerBtn_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerBtn) == 0x000008, "Wrong alignment on WBP_FooterMenu_Sub_ControllerBtn_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerBtn");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerBtn_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerBtn) == 0x000020, "Wrong size on WBP_FooterMenu_Sub_ControllerBtn_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerBtn");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerBtn_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerBtn, EntryPoint) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerBtn_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerBtn::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerBtn_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerBtn, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000008, "Member 'WBP_FooterMenu_Sub_ControllerBtn_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerBtn::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerBtn_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerBtn, CallFunc_CalcCurrentDeviceButtonTexture_OutTexure) == 0x000010, "Member 'WBP_FooterMenu_Sub_ControllerBtn_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerBtn::CallFunc_CalcCurrentDeviceButtonTexture_OutTexure' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerBtn_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerBtn, CallFunc_CalcCurrentDeviceButtonTexture_ReturnValue) == 0x000018, "Member 'WBP_FooterMenu_Sub_ControllerBtn_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerBtn::CallFunc_CalcCurrentDeviceButtonTexture_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerBtn_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerBtn, CallFunc_IsValid_ReturnValue) == 0x000019, "Member 'WBP_FooterMenu_Sub_ControllerBtn_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerBtn::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerBtn_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerBtn;
 
 // Function WBP_FooterMenu_Sub_ControllerBtn.WBP_FooterMenu_Sub_ControllerBtn_C.OnMouseButtonDown
 // 0x0220 (0x0220 - 0x0000)
@@ -48,12 +42,7 @@ public:
 	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x00B8)(Parm, OutParm, ReturnParm)
 	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x0168(0x00B8)()
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerBtn_C_OnMouseButtonDown) == 0x000008, "Wrong alignment on WBP_FooterMenu_Sub_ControllerBtn_C_OnMouseButtonDown");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerBtn_C_OnMouseButtonDown) == 0x000220, "Wrong size on WBP_FooterMenu_Sub_ControllerBtn_C_OnMouseButtonDown");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerBtn_C_OnMouseButtonDown, MyGeometry) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerBtn_C_OnMouseButtonDown::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerBtn_C_OnMouseButtonDown, MouseEvent) == 0x000038, "Member 'WBP_FooterMenu_Sub_ControllerBtn_C_OnMouseButtonDown::MouseEvent' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerBtn_C_OnMouseButtonDown, ReturnValue) == 0x0000B0, "Member 'WBP_FooterMenu_Sub_ControllerBtn_C_OnMouseButtonDown::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerBtn_C_OnMouseButtonDown, K2Node_MakeStruct_EventReply) == 0x000168, "Member 'WBP_FooterMenu_Sub_ControllerBtn_C_OnMouseButtonDown::K2Node_MakeStruct_EventReply' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerBtn_C_OnMouseButtonDown;
 
 // Function WBP_FooterMenu_Sub_ControllerBtn.WBP_FooterMenu_Sub_ControllerBtn_C.SetButtonImageIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -62,9 +51,7 @@ struct WBP_FooterMenu_Sub_ControllerBtn_C_SetButtonImageIndex final
 public:
 	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerBtn_C_SetButtonImageIndex) == 0x000004, "Wrong alignment on WBP_FooterMenu_Sub_ControllerBtn_C_SetButtonImageIndex");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerBtn_C_SetButtonImageIndex) == 0x000004, "Wrong size on WBP_FooterMenu_Sub_ControllerBtn_C_SetButtonImageIndex");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerBtn_C_SetButtonImageIndex, Index_0) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerBtn_C_SetButtonImageIndex::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerBtn_C_SetButtonImageIndex;
 
 }
 

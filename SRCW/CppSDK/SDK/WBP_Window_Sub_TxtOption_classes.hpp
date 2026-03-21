@@ -12,9 +12,9 @@
 
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
+#include "UMG_structs.hpp"
 #include "UnionUI_structs.hpp"
 #include "UnionUI_classes.hpp"
-#include "UMG_structs.hpp"
 
 
 namespace SDK
@@ -73,29 +73,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Window_Sub_TxtOption_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Window_Sub_TxtOption_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Window_Sub_TxtOption_C")
 	}
 	static class UWBP_Window_Sub_TxtOption_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Window_Sub_TxtOption_C>();
 	}
 };
-static_assert(alignof(UWBP_Window_Sub_TxtOption_C) == 0x000008, "Wrong alignment on UWBP_Window_Sub_TxtOption_C");
-static_assert(sizeof(UWBP_Window_Sub_TxtOption_C) == 0x0004E8, "Wrong size on UWBP_Window_Sub_TxtOption_C");
-static_assert(offsetof(UWBP_Window_Sub_TxtOption_C, UberGraphFrame) == 0x000480, "Member 'UWBP_Window_Sub_TxtOption_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Window_Sub_TxtOption_C, Select_Loop) == 0x000488, "Member 'UWBP_Window_Sub_TxtOption_C::Select_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Window_Sub_TxtOption_C, Active_Loop) == 0x000490, "Member 'UWBP_Window_Sub_TxtOption_C::Active_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Window_Sub_TxtOption_C, base) == 0x000498, "Member 'UWBP_Window_Sub_TxtOption_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_Window_Sub_TxtOption_C, Base_Shadow) == 0x0004A0, "Member 'UWBP_Window_Sub_TxtOption_C::Base_Shadow' has a wrong offset!");
-static_assert(offsetof(UWBP_Window_Sub_TxtOption_C, Btn_Cursor) == 0x0004A8, "Member 'UWBP_Window_Sub_TxtOption_C::Btn_Cursor' has a wrong offset!");
-static_assert(offsetof(UWBP_Window_Sub_TxtOption_C, DSP_Cursor_Texture) == 0x0004B0, "Member 'UWBP_Window_Sub_TxtOption_C::DSP_Cursor_Texture' has a wrong offset!");
-static_assert(offsetof(UWBP_Window_Sub_TxtOption_C, DSP_TXT_OptionType_Detail) == 0x0004B8, "Member 'UWBP_Window_Sub_TxtOption_C::DSP_TXT_OptionType_Detail' has a wrong offset!");
-static_assert(offsetof(UWBP_Window_Sub_TxtOption_C, MouseInteraction) == 0x0004C0, "Member 'UWBP_Window_Sub_TxtOption_C::MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_Window_Sub_TxtOption_C, PAT_OptionToggleBtn) == 0x0004C8, "Member 'UWBP_Window_Sub_TxtOption_C::PAT_OptionToggleBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_Window_Sub_TxtOption_C, RaceFlagWave) == 0x0004D0, "Member 'UWBP_Window_Sub_TxtOption_C::RaceFlagWave' has a wrong offset!");
-static_assert(offsetof(UWBP_Window_Sub_TxtOption_C, TXT_OptionType_Title) == 0x0004D8, "Member 'UWBP_Window_Sub_TxtOption_C::TXT_OptionType_Title' has a wrong offset!");
-static_assert(offsetof(UWBP_Window_Sub_TxtOption_C, MouseDown) == 0x0004E0, "Member 'UWBP_Window_Sub_TxtOption_C::MouseDown' has a wrong offset!");
-static_assert(offsetof(UWBP_Window_Sub_TxtOption_C, bPlayDecisionSe) == 0x0004E1, "Member 'UWBP_Window_Sub_TxtOption_C::bPlayDecisionSe' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Window_Sub_TxtOption_C;
 
 }
 

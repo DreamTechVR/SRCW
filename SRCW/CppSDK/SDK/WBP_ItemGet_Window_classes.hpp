@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "UnionRun_structs.hpp"
+#include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UnionRun_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -135,60 +135,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ItemGet_Window_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ItemGet_Window_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ItemGet_Window_C")
 	}
 	static class UWBP_ItemGet_Window_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ItemGet_Window_C>();
 	}
 };
-static_assert(alignof(UWBP_ItemGet_Window_C) == 0x000008, "Wrong alignment on UWBP_ItemGet_Window_C");
-static_assert(sizeof(UWBP_ItemGet_Window_C) == 0x0005B8, "Wrong size on UWBP_ItemGet_Window_C");
-static_assert(offsetof(UWBP_ItemGet_Window_C, UberGraphFrame) == 0x0003A8, "Member 'UWBP_ItemGet_Window_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, ItemGet_WindowInfo_Out) == 0x0003B0, "Member 'UWBP_ItemGet_Window_C::ItemGet_WindowInfo_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, ItemGet_WindowInfo_Loop) == 0x0003B8, "Member 'UWBP_ItemGet_Window_C::ItemGet_WindowInfo_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, ItemGet_WindowInfo_In) == 0x0003C0, "Member 'UWBP_ItemGet_Window_C::ItemGet_WindowInfo_In' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, ItemGet_WindowInfo_Start_In) == 0x0003C8, "Member 'UWBP_ItemGet_Window_C::ItemGet_WindowInfo_Start_In' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, ItemGet_WindowBase_Out) == 0x0003D0, "Member 'UWBP_ItemGet_Window_C::ItemGet_WindowBase_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, ItemGet_WindowBase_Loop) == 0x0003D8, "Member 'UWBP_ItemGet_Window_C::ItemGet_WindowBase_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, ItemGet_WindowBase_In) == 0x0003E0, "Member 'UWBP_ItemGet_Window_C::ItemGet_WindowBase_In' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, CanvasPanel_20) == 0x0003E8, "Member 'UWBP_ItemGet_Window_C::CanvasPanel_20' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, DMY_Chara) == 0x0003F0, "Member 'UWBP_ItemGet_Window_C::DMY_Chara' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, DMY_HornTmb) == 0x0003F8, "Member 'UWBP_ItemGet_Window_C::DMY_HornTmb' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, DMY_StickerImage_Default) == 0x000400, "Member 'UWBP_ItemGet_Window_C::DMY_StickerImage_Default' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, DMY_StickerImage_Material_Default) == 0x000408, "Member 'UWBP_ItemGet_Window_C::DMY_StickerImage_Material_Default' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, DMY_StickerImage_Material_NX) == 0x000410, "Member 'UWBP_ItemGet_Window_C::DMY_StickerImage_Material_NX' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, DSP_NameLine) == 0x000418, "Member 'UWBP_ItemGet_Window_C::DSP_NameLine' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, DSP_PAT_MachineTypeIcon) == 0x000420, "Member 'UWBP_ItemGet_Window_C::DSP_PAT_MachineTypeIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, DSP_RivalRacerIcon) == 0x000428, "Member 'UWBP_ItemGet_Window_C::DSP_RivalRacerIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, DSP_WBP_RivalSelect_Sub_Effects_Fire_01) == 0x000430, "Member 'UWBP_ItemGet_Window_C::DSP_WBP_RivalSelect_Sub_Effects_Fire_01' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, DSP_WBP_RivalSelect_Sub_Effects_Fire_02) == 0x000438, "Member 'UWBP_ItemGet_Window_C::DSP_WBP_RivalSelect_Sub_Effects_Fire_02' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, ItemGet_CharaSkin) == 0x000440, "Member 'UWBP_ItemGet_Window_C::ItemGet_CharaSkin' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, ItemGet_HonorTitle) == 0x000448, "Member 'UWBP_ItemGet_Window_C::ItemGet_HonorTitle' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, ItemGet_HornTmb) == 0x000450, "Member 'UWBP_ItemGet_Window_C::ItemGet_HornTmb' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, ItemGet_Sticker) == 0x000458, "Member 'UWBP_ItemGet_Window_C::ItemGet_Sticker' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, ItemIcom_Eff_01) == 0x000460, "Member 'UWBP_ItemGet_Window_C::ItemIcom_Eff_01' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, ItemIcom_Eff_02) == 0x000468, "Member 'UWBP_ItemGet_Window_C::ItemIcom_Eff_02' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, MouseInteraction) == 0x000470, "Member 'UWBP_ItemGet_Window_C::MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, StickerImage_Default) == 0x000478, "Member 'UWBP_ItemGet_Window_C::StickerImage_Default' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, StickerImage_NX) == 0x000480, "Member 'UWBP_ItemGet_Window_C::StickerImage_NX' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, UnknownGadget) == 0x000488, "Member 'UWBP_ItemGet_Window_C::UnknownGadget' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, WBP_GadgetCustom_Sub_GadgetPlate) == 0x000490, "Member 'UWBP_ItemGet_Window_C::WBP_GadgetCustom_Sub_GadgetPlate' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, WBP_HonorTitle_Plate) == 0x000498, "Member 'UWBP_ItemGet_Window_C::WBP_HonorTitle_Plate' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, WidgetSwitcher_Reward) == 0x0004A0, "Member 'UWBP_ItemGet_Window_C::WidgetSwitcher_Reward' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, DisplayIndex) == 0x0004A8, "Member 'UWBP_ItemGet_Window_C::DisplayIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, DisplayNum) == 0x0004AC, "Member 'UWBP_ItemGet_Window_C::DisplayNum' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, DisplayParam) == 0x0004B0, "Member 'UWBP_ItemGet_Window_C::DisplayParam' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, ItemIconTexture) == 0x0004C0, "Member 'UWBP_ItemGet_Window_C::ItemIconTexture' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, ItemCountLayoutWidget) == 0x0004C8, "Member 'UWBP_ItemGet_Window_C::ItemCountLayoutWidget' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, WindowZOrder) == 0x0004D0, "Member 'UWBP_ItemGet_Window_C::WindowZOrder' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, TitleDefaultFontSize) == 0x0004D4, "Member 'UWBP_ItemGet_Window_C::TitleDefaultFontSize' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, bStartedOne) == 0x0004D8, "Member 'UWBP_ItemGet_Window_C::bStartedOne' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, bRivalReward) == 0x0004D9, "Member 'UWBP_ItemGet_Window_C::bRivalReward' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, ForceCount) == 0x0004E0, "Member 'UWBP_ItemGet_Window_C::ForceCount' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, TargetTexture) == 0x0004E8, "Member 'UWBP_ItemGet_Window_C::TargetTexture' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, Reward_Type) == 0x0004F0, "Member 'UWBP_ItemGet_Window_C::Reward_Type' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_Window_C, TempGadgetData) == 0x0004F8, "Member 'UWBP_ItemGet_Window_C::TempGadgetData' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ItemGet_Window_C;
 
 }
 

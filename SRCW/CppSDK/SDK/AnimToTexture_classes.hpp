@@ -47,28 +47,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnimToTextureDataAsset">();
+		STATIC_CLASS_IMPL("AnimToTextureDataAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimToTextureDataAsset")
 	}
 	static class UAnimToTextureDataAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimToTextureDataAsset>();
 	}
 };
-static_assert(alignof(UAnimToTextureDataAsset) == 0x000010, "Wrong alignment on UAnimToTextureDataAsset");
-static_assert(sizeof(UAnimToTextureDataAsset) == 0x0000E0, "Wrong size on UAnimToTextureDataAsset");
-static_assert(offsetof(UAnimToTextureDataAsset, UVChannel) == 0x000030, "Member 'UAnimToTextureDataAsset::UVChannel' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, Mode) == 0x000034, "Member 'UAnimToTextureDataAsset::Mode' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, AttachToSocket) == 0x000038, "Member 'UAnimToTextureDataAsset::AttachToSocket' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, SampleRate) == 0x000040, "Member 'UAnimToTextureDataAsset::SampleRate' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, NumFrames) == 0x000044, "Member 'UAnimToTextureDataAsset::NumFrames' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, VertexRowsPerFrame) == 0x000048, "Member 'UAnimToTextureDataAsset::VertexRowsPerFrame' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, VertexMinBBox) == 0x000050, "Member 'UAnimToTextureDataAsset::VertexMinBBox' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, VertexSizeBBox) == 0x000068, "Member 'UAnimToTextureDataAsset::VertexSizeBBox' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, BoneWeightRowsPerFrame) == 0x000080, "Member 'UAnimToTextureDataAsset::BoneWeightRowsPerFrame' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, BoneRowsPerFrame) == 0x000084, "Member 'UAnimToTextureDataAsset::BoneRowsPerFrame' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, BoneMinBBox) == 0x000090, "Member 'UAnimToTextureDataAsset::BoneMinBBox' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, BoneSizeBBox) == 0x0000B0, "Member 'UAnimToTextureDataAsset::BoneSizeBBox' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, Animations) == 0x0000D0, "Member 'UAnimToTextureDataAsset::Animations' has a wrong offset!");
+DUMPER7_ASSERTS_UAnimToTextureDataAsset;
 
 // Class AnimToTexture.AnimToTextureInstancePlaybackLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -86,22 +76,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnimToTextureInstancePlaybackLibrary">();
+		STATIC_CLASS_IMPL("AnimToTextureInstancePlaybackLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimToTextureInstancePlaybackLibrary")
 	}
 	static class UAnimToTextureInstancePlaybackLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimToTextureInstancePlaybackLibrary>();
 	}
 };
-static_assert(alignof(UAnimToTextureInstancePlaybackLibrary) == 0x000008, "Wrong alignment on UAnimToTextureInstancePlaybackLibrary");
-static_assert(sizeof(UAnimToTextureInstancePlaybackLibrary) == 0x000028, "Wrong size on UAnimToTextureInstancePlaybackLibrary");
+DUMPER7_ASSERTS_UAnimToTextureInstancePlaybackLibrary;
 
 // Class AnimToTexture.VATMeshComponent
 // 0x0010 (0x05F0 - 0x05E0)
 class UVATMeshComponent : public UStaticMeshComponent
 {
 public:
-	class UAnimToTextureDataAsset*                AnimToTextureDataAsset;                            // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimToTextureDataAsset*                AnimToTextureDataAsset;                            // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 	int32                                         AnimationIndex;                                    // 0x05E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         TimeStartOffset;                                   // 0x05E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         TimeStartRange;                                    // 0x05E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -118,20 +111,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"VATMeshComponent">();
+		STATIC_CLASS_IMPL("VATMeshComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VATMeshComponent")
 	}
 	static class UVATMeshComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UVATMeshComponent>();
 	}
 };
-static_assert(alignof(UVATMeshComponent) == 0x000010, "Wrong alignment on UVATMeshComponent");
-static_assert(sizeof(UVATMeshComponent) == 0x0005F0, "Wrong size on UVATMeshComponent");
-static_assert(offsetof(UVATMeshComponent, AnimToTextureDataAsset) == 0x0005D8, "Member 'UVATMeshComponent::AnimToTextureDataAsset' has a wrong offset!");
-static_assert(offsetof(UVATMeshComponent, AnimationIndex) == 0x0005E0, "Member 'UVATMeshComponent::AnimationIndex' has a wrong offset!");
-static_assert(offsetof(UVATMeshComponent, TimeStartOffset) == 0x0005E4, "Member 'UVATMeshComponent::TimeStartOffset' has a wrong offset!");
-static_assert(offsetof(UVATMeshComponent, TimeStartRange) == 0x0005E8, "Member 'UVATMeshComponent::TimeStartRange' has a wrong offset!");
-static_assert(offsetof(UVATMeshComponent, RandomTimeStartOffset) == 0x0005EC, "Member 'UVATMeshComponent::RandomTimeStartOffset' has a wrong offset!");
+DUMPER7_ASSERTS_UVATMeshComponent;
 
 }
 

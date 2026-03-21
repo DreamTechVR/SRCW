@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "UNION_classes.hpp"
 
 
 namespace SDK
@@ -45,22 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ChampionCrown_C">();
+		BP_STATIC_CLASS_IMPL("BP_ChampionCrown_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ChampionCrown_C")
 	}
 	static class ABP_ChampionCrown_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ChampionCrown_C>();
 	}
 };
-static_assert(alignof(ABP_ChampionCrown_C) == 0x000008, "Wrong alignment on ABP_ChampionCrown_C");
-static_assert(sizeof(ABP_ChampionCrown_C) == 0x0002D0, "Wrong size on ABP_ChampionCrown_C");
-static_assert(offsetof(ABP_ChampionCrown_C, UberGraphFrame) == 0x000290, "Member 'ABP_ChampionCrown_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_ChampionCrown_C, SM_Crown) == 0x000298, "Member 'ABP_ChampionCrown_C::SM_Crown' has a wrong offset!");
-static_assert(offsetof(ABP_ChampionCrown_C, DefaultSceneRoot) == 0x0002A0, "Member 'ABP_ChampionCrown_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABP_ChampionCrown_C, _________Track_0_BBDB4AAB4A4742DEAD8562BF6ED05D41) == 0x0002A8, "Member 'ABP_ChampionCrown_C::_________Track_0_BBDB4AAB4A4742DEAD8562BF6ED05D41' has a wrong offset!");
-static_assert(offsetof(ABP_ChampionCrown_C, ________Direction_BBDB4AAB4A4742DEAD8562BF6ED05D41) == 0x0002AC, "Member 'ABP_ChampionCrown_C::________Direction_BBDB4AAB4A4742DEAD8562BF6ED05D41' has a wrong offset!");
-static_assert(offsetof(ABP_ChampionCrown_C, タイムライン) == 0x0002B0, "Member 'ABP_ChampionCrown_C::タイムライン' has a wrong offset!");
-static_assert(offsetof(ABP_ChampionCrown_C, CrownScale) == 0x0002B8, "Member 'ABP_ChampionCrown_C::CrownScale' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_ChampionCrown_C;
 
 }
 

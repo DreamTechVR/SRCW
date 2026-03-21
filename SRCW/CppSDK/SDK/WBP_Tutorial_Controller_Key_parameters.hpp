@@ -81,53 +81,7 @@ public:
 	ETutorialAction                               K2Node_Select_Default_6;                           // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETutorialAction                               K2Node_Select_Default_7;                           // 0x00B5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key) == 0x000008, "Wrong alignment on WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key");
-static_assert(sizeof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key) == 0x0000B8, "Wrong size on WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, EntryPoint) == 0x000000, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, Temp_int_Variable) == 0x000004, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, Temp_byte_Variable) == 0x000008, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, Temp_byte_Variable_1) == 0x000009, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, Temp_int_Variable_1) == 0x00000C, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, Temp_byte_Variable_2) == 0x000010, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, Temp_byte_Variable_3) == 0x000011, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, Temp_bool_Variable) == 0x000012, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, Temp_int_Variable_2) == 0x000014, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, Temp_bool_Variable_1) == 0x000018, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, Temp_byte_Variable_4) == 0x000019, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, Temp_byte_Variable_5) == 0x00001A, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, Temp_bool_Variable_2) == 0x00001B, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, Temp_byte_Variable_6) == 0x00001C, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::Temp_byte_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, Temp_byte_Variable_7) == 0x00001D, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::Temp_byte_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, Temp_int_Variable_3) == 0x000020, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, CallFunc_GetPlayerController_ReturnValue) == 0x000028, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000030, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, CallFunc_MakeLiteralName_ReturnValue) == 0x00003C, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::CallFunc_MakeLiteralName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, CallFunc_MakeLiteralName_ReturnValue_1) == 0x000044, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::CallFunc_MakeLiteralName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00004C, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x00004D, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, Temp_int_Variable_4) == 0x000050, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x000054, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, Temp_int_Variable_5) == 0x000058, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::Temp_int_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, Temp_int_Variable_6) == 0x00005C, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::Temp_int_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, CallFunc_IsInverseFlyModeUpDown_ReturnValue) == 0x000060, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::CallFunc_IsInverseFlyModeUpDown_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, K2Node_Event_InIndex_1) == 0x000064, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::K2Node_Event_InIndex_1' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, K2Node_SwitchInteger_CmpSuccess) == 0x000068, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, K2Node_Event_InIndex) == 0x00006C, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::K2Node_Event_InIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, K2Node_Select_Default) == 0x000070, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, K2Node_Select_Default_1) == 0x000078, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, K2Node_Select_Default_2) == 0x00007C, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, K2Node_Select_Default_3) == 0x00007D, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, K2Node_Select_Default_4) == 0x000080, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, CallFunc_InRange_IntInt_ReturnValue) == 0x000088, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::CallFunc_InRange_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, K2Node_Select_Default_5) == 0x00008C, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::K2Node_Select_Default_5' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, CallFunc_GetRaceConfigKey_ReturnValue) == 0x000098, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::CallFunc_GetRaceConfigKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, CallFunc_InRange_IntInt_ReturnValue_1) == 0x0000B0, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::CallFunc_InRange_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, K2Node_SwitchInteger_CmpSuccess_1) == 0x0000B1, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::K2Node_SwitchInteger_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, CallFunc_IsInverseFlyModeUpDown_ReturnValue_1) == 0x0000B2, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::CallFunc_IsInverseFlyModeUpDown_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, CallFunc_IsInverseFlyModeUpDown_ReturnValue_2) == 0x0000B3, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::CallFunc_IsInverseFlyModeUpDown_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, K2Node_Select_Default_6) == 0x0000B4, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::K2Node_Select_Default_6' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key, K2Node_Select_Default_7) == 0x0000B5, "Member 'WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key::K2Node_Select_Default_7' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Tutorial_Controller_Key_C_ExecuteUbergraph_WBP_Tutorial_Controller_Key;
 
 // Function WBP_Tutorial_Controller_Key.WBP_Tutorial_Controller_Key_C.GetKeyWidgets
 // 0x00A0 (0x00A0 - 0x0000)
@@ -148,19 +102,7 @@ public:
 	TArray<class UWBP_Race_Sub_Btn_Key_C*>        K2Node_MakeArray_Array_3;                          // 0x0080(0x0010)(ReferenceParm, ContainsInstancedReference)
 	TArray<class UWBP_Race_Sub_Btn_Key_C*>        K2Node_Select_Default;                             // 0x0090(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(WBP_Tutorial_Controller_Key_C_GetKeyWidgets) == 0x000008, "Wrong alignment on WBP_Tutorial_Controller_Key_C_GetKeyWidgets");
-static_assert(sizeof(WBP_Tutorial_Controller_Key_C_GetKeyWidgets) == 0x0000A0, "Wrong size on WBP_Tutorial_Controller_Key_C_GetKeyWidgets");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_GetKeyWidgets, tutorialAction) == 0x000000, "Member 'WBP_Tutorial_Controller_Key_C_GetKeyWidgets::tutorialAction' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_GetKeyWidgets, KeyWidgets) == 0x000008, "Member 'WBP_Tutorial_Controller_Key_C_GetKeyWidgets::KeyWidgets' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_GetKeyWidgets, Temp_byte_Variable) == 0x000018, "Member 'WBP_Tutorial_Controller_Key_C_GetKeyWidgets::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_GetKeyWidgets, Temp_object_Variable) == 0x000020, "Member 'WBP_Tutorial_Controller_Key_C_GetKeyWidgets::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_GetKeyWidgets, Temp_object_Variable_1) == 0x000030, "Member 'WBP_Tutorial_Controller_Key_C_GetKeyWidgets::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_GetKeyWidgets, Temp_object_Variable_2) == 0x000040, "Member 'WBP_Tutorial_Controller_Key_C_GetKeyWidgets::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_GetKeyWidgets, K2Node_MakeArray_Array) == 0x000050, "Member 'WBP_Tutorial_Controller_Key_C_GetKeyWidgets::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_GetKeyWidgets, K2Node_MakeArray_Array_1) == 0x000060, "Member 'WBP_Tutorial_Controller_Key_C_GetKeyWidgets::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_GetKeyWidgets, K2Node_MakeArray_Array_2) == 0x000070, "Member 'WBP_Tutorial_Controller_Key_C_GetKeyWidgets::K2Node_MakeArray_Array_2' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_GetKeyWidgets, K2Node_MakeArray_Array_3) == 0x000080, "Member 'WBP_Tutorial_Controller_Key_C_GetKeyWidgets::K2Node_MakeArray_Array_3' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_GetKeyWidgets, K2Node_Select_Default) == 0x000090, "Member 'WBP_Tutorial_Controller_Key_C_GetKeyWidgets::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Tutorial_Controller_Key_C_GetKeyWidgets;
 
 // Function WBP_Tutorial_Controller_Key.WBP_Tutorial_Controller_Key_C.SetHintAction
 // 0x0001 (0x0001 - 0x0000)
@@ -169,9 +111,7 @@ struct WBP_Tutorial_Controller_Key_C_SetHintAction final
 public:
 	EHintId                                       HintId;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Tutorial_Controller_Key_C_SetHintAction) == 0x000001, "Wrong alignment on WBP_Tutorial_Controller_Key_C_SetHintAction");
-static_assert(sizeof(WBP_Tutorial_Controller_Key_C_SetHintAction) == 0x000001, "Wrong size on WBP_Tutorial_Controller_Key_C_SetHintAction");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_SetHintAction, HintId) == 0x000000, "Member 'WBP_Tutorial_Controller_Key_C_SetHintAction::HintId' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Tutorial_Controller_Key_C_SetHintAction;
 
 // Function WBP_Tutorial_Controller_Key.WBP_Tutorial_Controller_Key_C.SetTutorialAction
 // 0x0078 (0x0078 - 0x0000)
@@ -197,23 +137,7 @@ public:
 	class UWidget*                                K2Node_Select_Default;                             // 0x0068(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Tutorial_Controller_Key_C_SetTutorialAction) == 0x000008, "Wrong alignment on WBP_Tutorial_Controller_Key_C_SetTutorialAction");
-static_assert(sizeof(WBP_Tutorial_Controller_Key_C_SetTutorialAction) == 0x000078, "Wrong size on WBP_Tutorial_Controller_Key_C_SetTutorialAction");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_SetTutorialAction, tutorialAction) == 0x000000, "Member 'WBP_Tutorial_Controller_Key_C_SetTutorialAction::tutorialAction' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_SetTutorialAction, Temp_object_Variable) == 0x000008, "Member 'WBP_Tutorial_Controller_Key_C_SetTutorialAction::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_SetTutorialAction, Temp_object_Variable_1) == 0x000010, "Member 'WBP_Tutorial_Controller_Key_C_SetTutorialAction::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_SetTutorialAction, Temp_object_Variable_2) == 0x000018, "Member 'WBP_Tutorial_Controller_Key_C_SetTutorialAction::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_SetTutorialAction, Temp_int_Array_Index_Variable) == 0x000020, "Member 'WBP_Tutorial_Controller_Key_C_SetTutorialAction::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_SetTutorialAction, Temp_int_Loop_Counter_Variable) == 0x000024, "Member 'WBP_Tutorial_Controller_Key_C_SetTutorialAction::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_SetTutorialAction, CallFunc_Add_IntInt_ReturnValue) == 0x000028, "Member 'WBP_Tutorial_Controller_Key_C_SetTutorialAction::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_SetTutorialAction, Temp_byte_Variable) == 0x00002C, "Member 'WBP_Tutorial_Controller_Key_C_SetTutorialAction::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_SetTutorialAction, CallFunc_GetTutorialKey_ReturnValue) == 0x000030, "Member 'WBP_Tutorial_Controller_Key_C_SetTutorialAction::CallFunc_GetTutorialKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_SetTutorialAction, CallFunc_GetKeyWidgets_KeyWidgets) == 0x000048, "Member 'WBP_Tutorial_Controller_Key_C_SetTutorialAction::CallFunc_GetKeyWidgets_KeyWidgets' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_SetTutorialAction, CallFunc_Array_Get_Item) == 0x000058, "Member 'WBP_Tutorial_Controller_Key_C_SetTutorialAction::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_SetTutorialAction, CallFunc_Array_Length_ReturnValue) == 0x000060, "Member 'WBP_Tutorial_Controller_Key_C_SetTutorialAction::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_SetTutorialAction, CallFunc_Less_IntInt_ReturnValue) == 0x000064, "Member 'WBP_Tutorial_Controller_Key_C_SetTutorialAction::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_SetTutorialAction, K2Node_Select_Default) == 0x000068, "Member 'WBP_Tutorial_Controller_Key_C_SetTutorialAction::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_SetTutorialAction, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000070, "Member 'WBP_Tutorial_Controller_Key_C_SetTutorialAction::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Tutorial_Controller_Key_C_SetTutorialAction;
 
 // Function WBP_Tutorial_Controller_Key.WBP_Tutorial_Controller_Key_C.UpdateHintIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -222,9 +146,7 @@ struct WBP_Tutorial_Controller_Key_C_UpdateHintIndex final
 public:
 	int32                                         InIndex;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Tutorial_Controller_Key_C_UpdateHintIndex) == 0x000004, "Wrong alignment on WBP_Tutorial_Controller_Key_C_UpdateHintIndex");
-static_assert(sizeof(WBP_Tutorial_Controller_Key_C_UpdateHintIndex) == 0x000004, "Wrong size on WBP_Tutorial_Controller_Key_C_UpdateHintIndex");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_UpdateHintIndex, InIndex) == 0x000000, "Member 'WBP_Tutorial_Controller_Key_C_UpdateHintIndex::InIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Tutorial_Controller_Key_C_UpdateHintIndex;
 
 // Function WBP_Tutorial_Controller_Key.WBP_Tutorial_Controller_Key_C.UpdateTutorialIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -233,9 +155,7 @@ struct WBP_Tutorial_Controller_Key_C_UpdateTutorialIndex final
 public:
 	int32                                         InIndex;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Tutorial_Controller_Key_C_UpdateTutorialIndex) == 0x000004, "Wrong alignment on WBP_Tutorial_Controller_Key_C_UpdateTutorialIndex");
-static_assert(sizeof(WBP_Tutorial_Controller_Key_C_UpdateTutorialIndex) == 0x000004, "Wrong size on WBP_Tutorial_Controller_Key_C_UpdateTutorialIndex");
-static_assert(offsetof(WBP_Tutorial_Controller_Key_C_UpdateTutorialIndex, InIndex) == 0x000000, "Member 'WBP_Tutorial_Controller_Key_C_UpdateTutorialIndex::InIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Tutorial_Controller_Key_C_UpdateTutorialIndex;
 
 }
 

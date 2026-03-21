@@ -28,13 +28,7 @@ public:
 	class UMaterialInterface*                     CallFunc_GetBrushResourceAsMaterial_ReturnValue_1; // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue_1; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_Sub_MainTabBtn_C_ExecuteUbergraph_WBP_StatusInfo_Sub_MainTabBtn) == 0x000008, "Wrong alignment on WBP_StatusInfo_Sub_MainTabBtn_C_ExecuteUbergraph_WBP_StatusInfo_Sub_MainTabBtn");
-static_assert(sizeof(WBP_StatusInfo_Sub_MainTabBtn_C_ExecuteUbergraph_WBP_StatusInfo_Sub_MainTabBtn) == 0x000028, "Wrong size on WBP_StatusInfo_Sub_MainTabBtn_C_ExecuteUbergraph_WBP_StatusInfo_Sub_MainTabBtn");
-static_assert(offsetof(WBP_StatusInfo_Sub_MainTabBtn_C_ExecuteUbergraph_WBP_StatusInfo_Sub_MainTabBtn, EntryPoint) == 0x000000, "Member 'WBP_StatusInfo_Sub_MainTabBtn_C_ExecuteUbergraph_WBP_StatusInfo_Sub_MainTabBtn::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_MainTabBtn_C_ExecuteUbergraph_WBP_StatusInfo_Sub_MainTabBtn, CallFunc_GetBrushResourceAsMaterial_ReturnValue) == 0x000008, "Member 'WBP_StatusInfo_Sub_MainTabBtn_C_ExecuteUbergraph_WBP_StatusInfo_Sub_MainTabBtn::CallFunc_GetBrushResourceAsMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_MainTabBtn_C_ExecuteUbergraph_WBP_StatusInfo_Sub_MainTabBtn, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000010, "Member 'WBP_StatusInfo_Sub_MainTabBtn_C_ExecuteUbergraph_WBP_StatusInfo_Sub_MainTabBtn::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_MainTabBtn_C_ExecuteUbergraph_WBP_StatusInfo_Sub_MainTabBtn, CallFunc_GetBrushResourceAsMaterial_ReturnValue_1) == 0x000018, "Member 'WBP_StatusInfo_Sub_MainTabBtn_C_ExecuteUbergraph_WBP_StatusInfo_Sub_MainTabBtn::CallFunc_GetBrushResourceAsMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_MainTabBtn_C_ExecuteUbergraph_WBP_StatusInfo_Sub_MainTabBtn, CallFunc_CreateDynamicMaterialInstance_ReturnValue_1) == 0x000020, "Member 'WBP_StatusInfo_Sub_MainTabBtn_C_ExecuteUbergraph_WBP_StatusInfo_Sub_MainTabBtn::CallFunc_CreateDynamicMaterialInstance_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_Sub_MainTabBtn_C_ExecuteUbergraph_WBP_StatusInfo_Sub_MainTabBtn;
 
 // Function WBP_StatusInfo_Sub_MainTabBtn.WBP_StatusInfo_Sub_MainTabBtn_C.SetMainImageIndex
 // 0x0010 (0x0010 - 0x0000)
@@ -44,10 +38,7 @@ public:
 	double                                        ImageIndex;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_Sub_MainTabBtn_C_SetMainImageIndex) == 0x000008, "Wrong alignment on WBP_StatusInfo_Sub_MainTabBtn_C_SetMainImageIndex");
-static_assert(sizeof(WBP_StatusInfo_Sub_MainTabBtn_C_SetMainImageIndex) == 0x000010, "Wrong size on WBP_StatusInfo_Sub_MainTabBtn_C_SetMainImageIndex");
-static_assert(offsetof(WBP_StatusInfo_Sub_MainTabBtn_C_SetMainImageIndex, ImageIndex) == 0x000000, "Member 'WBP_StatusInfo_Sub_MainTabBtn_C_SetMainImageIndex::ImageIndex' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_MainTabBtn_C_SetMainImageIndex, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000008, "Member 'WBP_StatusInfo_Sub_MainTabBtn_C_SetMainImageIndex::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_Sub_MainTabBtn_C_SetMainImageIndex;
 
 // Function WBP_StatusInfo_Sub_MainTabBtn.WBP_StatusInfo_Sub_MainTabBtn_C.SetNewIcon
 // 0x0005 (0x0005 - 0x0000)
@@ -60,13 +51,7 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_Sub_MainTabBtn_C_SetNewIcon) == 0x000001, "Wrong alignment on WBP_StatusInfo_Sub_MainTabBtn_C_SetNewIcon");
-static_assert(sizeof(WBP_StatusInfo_Sub_MainTabBtn_C_SetNewIcon) == 0x000005, "Wrong size on WBP_StatusInfo_Sub_MainTabBtn_C_SetNewIcon");
-static_assert(offsetof(WBP_StatusInfo_Sub_MainTabBtn_C_SetNewIcon, IsNew) == 0x000000, "Member 'WBP_StatusInfo_Sub_MainTabBtn_C_SetNewIcon::IsNew' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_MainTabBtn_C_SetNewIcon, Temp_bool_Variable) == 0x000001, "Member 'WBP_StatusInfo_Sub_MainTabBtn_C_SetNewIcon::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_MainTabBtn_C_SetNewIcon, Temp_byte_Variable) == 0x000002, "Member 'WBP_StatusInfo_Sub_MainTabBtn_C_SetNewIcon::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_MainTabBtn_C_SetNewIcon, Temp_byte_Variable_1) == 0x000003, "Member 'WBP_StatusInfo_Sub_MainTabBtn_C_SetNewIcon::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_MainTabBtn_C_SetNewIcon, K2Node_Select_Default) == 0x000004, "Member 'WBP_StatusInfo_Sub_MainTabBtn_C_SetNewIcon::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_Sub_MainTabBtn_C_SetNewIcon;
 
 // Function WBP_StatusInfo_Sub_MainTabBtn.WBP_StatusInfo_Sub_MainTabBtn_C.SetRankingImageIndex
 // 0x0010 (0x0010 - 0x0000)
@@ -76,10 +61,7 @@ public:
 	double                                        ImageIndex;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_Sub_MainTabBtn_C_SetRankingImageIndex) == 0x000008, "Wrong alignment on WBP_StatusInfo_Sub_MainTabBtn_C_SetRankingImageIndex");
-static_assert(sizeof(WBP_StatusInfo_Sub_MainTabBtn_C_SetRankingImageIndex) == 0x000010, "Wrong size on WBP_StatusInfo_Sub_MainTabBtn_C_SetRankingImageIndex");
-static_assert(offsetof(WBP_StatusInfo_Sub_MainTabBtn_C_SetRankingImageIndex, ImageIndex) == 0x000000, "Member 'WBP_StatusInfo_Sub_MainTabBtn_C_SetRankingImageIndex::ImageIndex' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_MainTabBtn_C_SetRankingImageIndex, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000008, "Member 'WBP_StatusInfo_Sub_MainTabBtn_C_SetRankingImageIndex::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_Sub_MainTabBtn_C_SetRankingImageIndex;
 
 // Function WBP_StatusInfo_Sub_MainTabBtn.WBP_StatusInfo_Sub_MainTabBtn_C.SetRankingImageVisibility
 // 0x0001 (0x0001 - 0x0000)
@@ -88,9 +70,7 @@ struct WBP_StatusInfo_Sub_MainTabBtn_C_SetRankingImageVisibility final
 public:
 	ESlateVisibility                              Visibility_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_Sub_MainTabBtn_C_SetRankingImageVisibility) == 0x000001, "Wrong alignment on WBP_StatusInfo_Sub_MainTabBtn_C_SetRankingImageVisibility");
-static_assert(sizeof(WBP_StatusInfo_Sub_MainTabBtn_C_SetRankingImageVisibility) == 0x000001, "Wrong size on WBP_StatusInfo_Sub_MainTabBtn_C_SetRankingImageVisibility");
-static_assert(offsetof(WBP_StatusInfo_Sub_MainTabBtn_C_SetRankingImageVisibility, Visibility_0) == 0x000000, "Member 'WBP_StatusInfo_Sub_MainTabBtn_C_SetRankingImageVisibility::Visibility_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_Sub_MainTabBtn_C_SetRankingImageVisibility;
 
 // Function WBP_StatusInfo_Sub_MainTabBtn.WBP_StatusInfo_Sub_MainTabBtn_C.SetSelected
 // 0x0018 (0x0018 - 0x0000)
@@ -104,13 +84,7 @@ public:
 	class UWidgetAnimation*                       K2Node_Select_Default;                             // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_Sub_MainTabBtn_C_SetSelected) == 0x000008, "Wrong alignment on WBP_StatusInfo_Sub_MainTabBtn_C_SetSelected");
-static_assert(sizeof(WBP_StatusInfo_Sub_MainTabBtn_C_SetSelected) == 0x000018, "Wrong size on WBP_StatusInfo_Sub_MainTabBtn_C_SetSelected");
-static_assert(offsetof(WBP_StatusInfo_Sub_MainTabBtn_C_SetSelected, Select_0) == 0x000000, "Member 'WBP_StatusInfo_Sub_MainTabBtn_C_SetSelected::Select_0' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_MainTabBtn_C_SetSelected, Temp_bool_Variable) == 0x000001, "Member 'WBP_StatusInfo_Sub_MainTabBtn_C_SetSelected::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_MainTabBtn_C_SetSelected, CallFunc_SelectInt_ReturnValue) == 0x000004, "Member 'WBP_StatusInfo_Sub_MainTabBtn_C_SetSelected::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_MainTabBtn_C_SetSelected, K2Node_Select_Default) == 0x000008, "Member 'WBP_StatusInfo_Sub_MainTabBtn_C_SetSelected::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_MainTabBtn_C_SetSelected, CallFunc_PlayAnimation_ReturnValue) == 0x000010, "Member 'WBP_StatusInfo_Sub_MainTabBtn_C_SetSelected::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_Sub_MainTabBtn_C_SetSelected;
 
 // Function WBP_StatusInfo_Sub_MainTabBtn.WBP_StatusInfo_Sub_MainTabBtn_C.SetTabText
 // 0x0020 (0x0020 - 0x0000)
@@ -120,10 +94,7 @@ public:
 	class FText                                   Text;                                              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 	class FText                                   CallFunc_GetTerminologyTextByText_ReturnValue;     // 0x0010(0x0010)()
 };
-static_assert(alignof(WBP_StatusInfo_Sub_MainTabBtn_C_SetTabText) == 0x000008, "Wrong alignment on WBP_StatusInfo_Sub_MainTabBtn_C_SetTabText");
-static_assert(sizeof(WBP_StatusInfo_Sub_MainTabBtn_C_SetTabText) == 0x000020, "Wrong size on WBP_StatusInfo_Sub_MainTabBtn_C_SetTabText");
-static_assert(offsetof(WBP_StatusInfo_Sub_MainTabBtn_C_SetTabText, Text) == 0x000000, "Member 'WBP_StatusInfo_Sub_MainTabBtn_C_SetTabText::Text' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_MainTabBtn_C_SetTabText, CallFunc_GetTerminologyTextByText_ReturnValue) == 0x000010, "Member 'WBP_StatusInfo_Sub_MainTabBtn_C_SetTabText::CallFunc_GetTerminologyTextByText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_Sub_MainTabBtn_C_SetTabText;
 
 }
 

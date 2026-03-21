@@ -51,27 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_System_Sub_LoadingSonic_C">();
+		BP_STATIC_CLASS_IMPL("WBP_System_Sub_LoadingSonic_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_System_Sub_LoadingSonic_C")
 	}
 	static class UWBP_System_Sub_LoadingSonic_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_System_Sub_LoadingSonic_C>();
 	}
 };
-static_assert(alignof(UWBP_System_Sub_LoadingSonic_C) == 0x000008, "Wrong alignment on UWBP_System_Sub_LoadingSonic_C");
-static_assert(sizeof(UWBP_System_Sub_LoadingSonic_C) == 0x000348, "Wrong size on UWBP_System_Sub_LoadingSonic_C");
-static_assert(offsetof(UWBP_System_Sub_LoadingSonic_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_System_Sub_LoadingSonic_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Sub_LoadingSonic_C, SonicCar_Out) == 0x0002E8, "Member 'UWBP_System_Sub_LoadingSonic_C::SonicCar_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Sub_LoadingSonic_C, SonicCar_Loop) == 0x0002F0, "Member 'UWBP_System_Sub_LoadingSonic_C::SonicCar_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Sub_LoadingSonic_C, Car) == 0x0002F8, "Member 'UWBP_System_Sub_LoadingSonic_C::Car' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Sub_LoadingSonic_C, Panel) == 0x000300, "Member 'UWBP_System_Sub_LoadingSonic_C::Panel' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Sub_LoadingSonic_C, PAT_sonic) == 0x000308, "Member 'UWBP_System_Sub_LoadingSonic_C::PAT_sonic' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Sub_LoadingSonic_C, Throbber_dot) == 0x000310, "Member 'UWBP_System_Sub_LoadingSonic_C::Throbber_dot' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Sub_LoadingSonic_C, TXT_End) == 0x000318, "Member 'UWBP_System_Sub_LoadingSonic_C::TXT_End' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Sub_LoadingSonic_C, TXT_Loading) == 0x000320, "Member 'UWBP_System_Sub_LoadingSonic_C::TXT_Loading' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Sub_LoadingSonic_C, Wheel_Front) == 0x000328, "Member 'UWBP_System_Sub_LoadingSonic_C::Wheel_Front' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Sub_LoadingSonic_C, Wheel_Rear) == 0x000330, "Member 'UWBP_System_Sub_LoadingSonic_C::Wheel_Rear' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Sub_LoadingSonic_C, OnOutAnimFinished) == 0x000338, "Member 'UWBP_System_Sub_LoadingSonic_C::OnOutAnimFinished' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_System_Sub_LoadingSonic_C;
 
 }
 

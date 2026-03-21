@@ -34,24 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_RivalSelect_Sub_NextRival_C">();
+		BP_STATIC_CLASS_IMPL("WBP_RivalSelect_Sub_NextRival_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_RivalSelect_Sub_NextRival_C")
 	}
 	static class UWBP_RivalSelect_Sub_NextRival_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_RivalSelect_Sub_NextRival_C>();
 	}
 };
-static_assert(alignof(UWBP_RivalSelect_Sub_NextRival_C) == 0x000008, "Wrong alignment on UWBP_RivalSelect_Sub_NextRival_C");
-static_assert(sizeof(UWBP_RivalSelect_Sub_NextRival_C) == 0x000380, "Wrong size on UWBP_RivalSelect_Sub_NextRival_C");
-static_assert(offsetof(UWBP_RivalSelect_Sub_NextRival_C, Base_Next) == 0x000338, "Member 'UWBP_RivalSelect_Sub_NextRival_C::Base_Next' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_Sub_NextRival_C, Base_Rival) == 0x000340, "Member 'UWBP_RivalSelect_Sub_NextRival_C::Base_Rival' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_Sub_NextRival_C, Effects_Fire_High) == 0x000348, "Member 'UWBP_RivalSelect_Sub_NextRival_C::Effects_Fire_High' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_Sub_NextRival_C, Effects_Fire_Normal) == 0x000350, "Member 'UWBP_RivalSelect_Sub_NextRival_C::Effects_Fire_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_Sub_NextRival_C, Effects_Grow) == 0x000358, "Member 'UWBP_RivalSelect_Sub_NextRival_C::Effects_Grow' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_Sub_NextRival_C, RivalIcon_High) == 0x000360, "Member 'UWBP_RivalSelect_Sub_NextRival_C::RivalIcon_High' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_Sub_NextRival_C, RivalIcon_Normal) == 0x000368, "Member 'UWBP_RivalSelect_Sub_NextRival_C::RivalIcon_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_Sub_NextRival_C, TXT_Next) == 0x000370, "Member 'UWBP_RivalSelect_Sub_NextRival_C::TXT_Next' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_Sub_NextRival_C, TXT_Rival) == 0x000378, "Member 'UWBP_RivalSelect_Sub_NextRival_C::TXT_Rival' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_RivalSelect_Sub_NextRival_C;
 
 }
 

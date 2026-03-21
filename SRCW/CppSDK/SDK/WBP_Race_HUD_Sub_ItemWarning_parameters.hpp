@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UnionRun_structs.hpp"
 #include "UNION_structs.hpp"
+#include "UnionRun_structs.hpp"
 
 
 namespace SDK::Params
@@ -51,31 +51,7 @@ public:
 	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast;          // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning");
-static_assert(sizeof(WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning) == 0x000140, "Wrong size on WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning, EntryPoint) == 0x000000, "Member 'WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning, Temp_int_Array_Index_Variable) == 0x000014, "Member 'WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning, Temp_int_Loop_Counter_Variable) == 0x000018, "Member 'WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning, CallFunc_Add_IntInt_ReturnValue) == 0x00001C, "Member 'WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000020, "Member 'WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning, CallFunc_PlayAnimation_ReturnValue) == 0x000028, "Member 'WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000030, "Member 'WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning, CallFunc_GetDataTableRowNames_OutRowNames) == 0x000038, "Member 'WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning::CallFunc_GetDataTableRowNames_OutRowNames' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning, CallFunc_Array_Get_Item) == 0x000048, "Member 'WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000050, "Member 'WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning, CallFunc_GetDataTableRowFromName_OutRow) == 0x000058, "Member 'WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x0000F0, "Member 'WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning, CallFunc_Array_Length_ReturnValue) == 0x0000F4, "Member 'WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x0000F8, "Member 'WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning, CallFunc_Less_IntInt_ReturnValue) == 0x000100, "Member 'WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning, K2Node_DynamicCast_As_____2D) == 0x000108, "Member 'WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning, K2Node_DynamicCast_bSuccess) == 0x000110, "Member 'WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x000118, "Member 'WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning, CallFunc_K2_GetScalarParameterValue_ReturnValue) == 0x000120, "Member 'WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning::CallFunc_K2_GetScalarParameterValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000128, "Member 'WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning, CallFunc_Add_DoubleDouble_A_ImplicitCast) == 0x000130, "Member 'WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning::CallFunc_Add_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000138, "Member 'WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_ItemWarning_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemWarning;
 
 // Function WBP_Race_HUD_Sub_ItemWarning.WBP_Race_HUD_Sub_ItemWarning_C.SetAttackTypeAndId_BP
 // 0x0003 (0x0003 - 0x0000)
@@ -86,11 +62,7 @@ public:
 	uint8                                         ID;                                                // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_ItemWarning_C_SetAttackTypeAndId_BP) == 0x000001, "Wrong alignment on WBP_Race_HUD_Sub_ItemWarning_C_SetAttackTypeAndId_BP");
-static_assert(sizeof(WBP_Race_HUD_Sub_ItemWarning_C_SetAttackTypeAndId_BP) == 0x000003, "Wrong size on WBP_Race_HUD_Sub_ItemWarning_C_SetAttackTypeAndId_BP");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemWarning_C_SetAttackTypeAndId_BP, AttackType) == 0x000000, "Member 'WBP_Race_HUD_Sub_ItemWarning_C_SetAttackTypeAndId_BP::AttackType' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemWarning_C_SetAttackTypeAndId_BP, ID) == 0x000001, "Member 'WBP_Race_HUD_Sub_ItemWarning_C_SetAttackTypeAndId_BP::ID' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemWarning_C_SetAttackTypeAndId_BP, CallFunc_GetValidValue_ReturnValue) == 0x000002, "Member 'WBP_Race_HUD_Sub_ItemWarning_C_SetAttackTypeAndId_BP::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_ItemWarning_C_SetAttackTypeAndId_BP;
 
 // Function WBP_Race_HUD_Sub_ItemWarning.WBP_Race_HUD_Sub_ItemWarning_C.SetItemId_BP
 // 0x0008 (0x0008 - 0x0000)
@@ -100,10 +72,7 @@ public:
 	int32                                         ItemIndex;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         LocalItemTextureIndex;                             // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_ItemWarning_C_SetItemId_BP) == 0x000004, "Wrong alignment on WBP_Race_HUD_Sub_ItemWarning_C_SetItemId_BP");
-static_assert(sizeof(WBP_Race_HUD_Sub_ItemWarning_C_SetItemId_BP) == 0x000008, "Wrong size on WBP_Race_HUD_Sub_ItemWarning_C_SetItemId_BP");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemWarning_C_SetItemId_BP, ItemIndex) == 0x000000, "Member 'WBP_Race_HUD_Sub_ItemWarning_C_SetItemId_BP::ItemIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemWarning_C_SetItemId_BP, LocalItemTextureIndex) == 0x000004, "Member 'WBP_Race_HUD_Sub_ItemWarning_C_SetItemId_BP::LocalItemTextureIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_ItemWarning_C_SetItemId_BP;
 
 }
 

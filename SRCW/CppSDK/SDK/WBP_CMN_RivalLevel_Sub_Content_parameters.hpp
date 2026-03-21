@@ -22,10 +22,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_CustomEvent_InIndex;                        // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_RivalLevel_Sub_Content_C_ExecuteUbergraph_WBP_CMN_RivalLevel_Sub_Content) == 0x000004, "Wrong alignment on WBP_CMN_RivalLevel_Sub_Content_C_ExecuteUbergraph_WBP_CMN_RivalLevel_Sub_Content");
-static_assert(sizeof(WBP_CMN_RivalLevel_Sub_Content_C_ExecuteUbergraph_WBP_CMN_RivalLevel_Sub_Content) == 0x000008, "Wrong size on WBP_CMN_RivalLevel_Sub_Content_C_ExecuteUbergraph_WBP_CMN_RivalLevel_Sub_Content");
-static_assert(offsetof(WBP_CMN_RivalLevel_Sub_Content_C_ExecuteUbergraph_WBP_CMN_RivalLevel_Sub_Content, EntryPoint) == 0x000000, "Member 'WBP_CMN_RivalLevel_Sub_Content_C_ExecuteUbergraph_WBP_CMN_RivalLevel_Sub_Content::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RivalLevel_Sub_Content_C_ExecuteUbergraph_WBP_CMN_RivalLevel_Sub_Content, K2Node_CustomEvent_InIndex) == 0x000004, "Member 'WBP_CMN_RivalLevel_Sub_Content_C_ExecuteUbergraph_WBP_CMN_RivalLevel_Sub_Content::K2Node_CustomEvent_InIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_RivalLevel_Sub_Content_C_ExecuteUbergraph_WBP_CMN_RivalLevel_Sub_Content;
 
 // Function WBP_CMN_RivalLevel_Sub_Content.WBP_CMN_RivalLevel_Sub_Content_C.SequenceEventPlayAnimIcon
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +31,7 @@ struct WBP_CMN_RivalLevel_Sub_Content_C_SequenceEventPlayAnimIcon final
 public:
 	int32                                         InIndex;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_RivalLevel_Sub_Content_C_SequenceEventPlayAnimIcon) == 0x000004, "Wrong alignment on WBP_CMN_RivalLevel_Sub_Content_C_SequenceEventPlayAnimIcon");
-static_assert(sizeof(WBP_CMN_RivalLevel_Sub_Content_C_SequenceEventPlayAnimIcon) == 0x000004, "Wrong size on WBP_CMN_RivalLevel_Sub_Content_C_SequenceEventPlayAnimIcon");
-static_assert(offsetof(WBP_CMN_RivalLevel_Sub_Content_C_SequenceEventPlayAnimIcon, InIndex) == 0x000000, "Member 'WBP_CMN_RivalLevel_Sub_Content_C_SequenceEventPlayAnimIcon::InIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_RivalLevel_Sub_Content_C_SequenceEventPlayAnimIcon;
 
 }
 

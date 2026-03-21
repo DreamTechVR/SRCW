@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
@@ -66,31 +66,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ItemSwitch_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ItemSwitch_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ItemSwitch_C")
 	}
 	static class UWBP_ItemSwitch_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ItemSwitch_C>();
 	}
 };
-static_assert(alignof(UWBP_ItemSwitch_C) == 0x000008, "Wrong alignment on UWBP_ItemSwitch_C");
-static_assert(sizeof(UWBP_ItemSwitch_C) == 0x0003B0, "Wrong size on UWBP_ItemSwitch_C");
-static_assert(offsetof(UWBP_ItemSwitch_C, UberGraphFrame) == 0x000320, "Member 'UWBP_ItemSwitch_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_C, ItemSwitch_Out) == 0x000328, "Member 'UWBP_ItemSwitch_C::ItemSwitch_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_C, ItemSwitch_Loop) == 0x000330, "Member 'UWBP_ItemSwitch_C::ItemSwitch_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_C, ItemSwitch_In) == 0x000338, "Member 'UWBP_ItemSwitch_C::ItemSwitch_In' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_C, BG_Black) == 0x000340, "Member 'UWBP_ItemSwitch_C::BG_Black' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_C, OutOfContentButton_80) == 0x000348, "Member 'UWBP_ItemSwitch_C::OutOfContentButton_80' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_C, Panel) == 0x000350, "Member 'UWBP_ItemSwitch_C::Panel' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_C, SafeZone_93) == 0x000358, "Member 'UWBP_ItemSwitch_C::SafeZone_93' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_C, WBP_CMN_BG_01) == 0x000360, "Member 'UWBP_ItemSwitch_C::WBP_CMN_BG_01' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_C, WBP_ItemSwitch_Sub_Detail) == 0x000368, "Member 'UWBP_ItemSwitch_C::WBP_ItemSwitch_Sub_Detail' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_C, WBP_ItemSwitch_Sub_Window) == 0x000370, "Member 'UWBP_ItemSwitch_C::WBP_ItemSwitch_Sub_Window' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_C, WBP_PartyRace_Sub_Option_Btn_OK) == 0x000378, "Member 'UWBP_ItemSwitch_C::WBP_PartyRace_Sub_Option_Btn_OK' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_C, OnClosed) == 0x000380, "Member 'UWBP_ItemSwitch_C::OnClosed' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_C, QuitConfirmWidget) == 0x000390, "Member 'UWBP_ItemSwitch_C::QuitConfirmWidget' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_C, IsEnd) == 0x000398, "Member 'UWBP_ItemSwitch_C::IsEnd' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_C, OnCancel) == 0x0003A0, "Member 'UWBP_ItemSwitch_C::OnCancel' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ItemSwitch_C;
 
 }
 

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "UNION_structs.hpp"
 #include "UnionRun_structs.hpp"
+#include "UNION_structs.hpp"
+#include "UnionSystem_structs.hpp"
 
 
 namespace SDK::Params
@@ -65,45 +65,7 @@ public:
 	uint8                                         Pad_205[0x3];                                      // 0x0205(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0208(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine) == 0x000008, "Wrong alignment on WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine");
-static_assert(sizeof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine) == 0x000210, "Wrong size on WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, EntryPoint) == 0x000000, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, Temp_byte_Variable) == 0x000004, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, Temp_bool_Variable) == 0x000005, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, Temp_byte_Variable_1) == 0x000006, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, Temp_byte_Variable_2) == 0x000007, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, Temp_text_Variable) == 0x000008, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, K2Node_CustomEvent_InFrontPart) == 0x000018, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::K2Node_CustomEvent_InFrontPart' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, K2Node_CustomEvent_InRearPart) == 0x000019, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::K2Node_CustomEvent_InRearPart' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, K2Node_CustomEvent_InTirePart) == 0x00001A, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::K2Node_CustomEvent_InTirePart' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, CallFunc_ForceGetIsMachineReleased_ReturnValue) == 0x00001B, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::CallFunc_ForceGetIsMachineReleased_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, CallFunc_ForceGetIsMachineReleased_ReturnValue_1) == 0x00001C, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::CallFunc_ForceGetIsMachineReleased_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, CallFunc_ForceGetIsMachineReleased_ReturnValue_2) == 0x00001D, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::CallFunc_ForceGetIsMachineReleased_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, CallFunc_GetCarStatusType_ReturnValue) == 0x00001E, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::CallFunc_GetCarStatusType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, K2Node_Select_Default) == 0x00001F, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, Temp_text_Variable_1) == 0x000020, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::Temp_text_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, Temp_text_Variable_2) == 0x000030, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::Temp_text_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000040, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000048, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, K2Node_CustomEvent______) == 0x000050, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::K2Node_CustomEvent______' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, K2Node_CustomEvent_InMachineId) == 0x000058, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::K2Node_CustomEvent_InMachineId' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, K2Node_CustomEvent_Selection) == 0x000059, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::K2Node_CustomEvent_Selection' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, K2Node_SwitchEnum_CmpSuccess) == 0x00005A, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, CallFunc_LoadTirePartsById_OutTirePartsUIData) == 0x000060, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::CallFunc_LoadTirePartsById_OutTirePartsUIData' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, CallFunc_LoadFrontPartsById_OutFrontPartsUIData) == 0x0000B8, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::CallFunc_LoadFrontPartsById_OutFrontPartsUIData' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, CallFunc_LoadRearPartsById_OutRearPartsUIData) == 0x000110, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::CallFunc_LoadRearPartsById_OutRearPartsUIData' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, Temp_text_Variable_3) == 0x000168, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::Temp_text_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, K2Node_Select_Default_1) == 0x000178, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, Temp_text_Variable_4) == 0x0001D0, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::Temp_text_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, Temp_byte_Variable_3) == 0x0001E0, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, CallFunc_Conv_ByteToDouble_ReturnValue) == 0x0001E8, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::CallFunc_Conv_ByteToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, K2Node_Select_Default_2) == 0x0001F0, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, Temp_bool_Variable_1) == 0x000200, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, Temp_byte_Variable_4) == 0x000201, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, K2Node_Select_Default_3) == 0x000202, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, Temp_bool_Variable_2) == 0x000203, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, K2Node_Select_Default_4) == 0x000204, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000208, "Member 'WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_Sub_Machine_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Machine;
 
 // Function WBP_TimeTrial_Sub_Machine.WBP_TimeTrial_Sub_Machine_C.SetIconTexture
 // 0x0010 (0x0010 - 0x0000)
@@ -114,11 +76,7 @@ public:
 	EMachineId                                    InMachineID;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EMachinePartsType                             Selection;                                         // 0x0009(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TimeTrial_Sub_Machine_C_SetIconTexture) == 0x000008, "Wrong alignment on WBP_TimeTrial_Sub_Machine_C_SetIconTexture");
-static_assert(sizeof(WBP_TimeTrial_Sub_Machine_C_SetIconTexture) == 0x000010, "Wrong size on WBP_TimeTrial_Sub_Machine_C_SetIconTexture");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_SetIconTexture, ターゲット) == 0x000000, "Member 'WBP_TimeTrial_Sub_Machine_C_SetIconTexture::ターゲット' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_SetIconTexture, InMachineID) == 0x000008, "Member 'WBP_TimeTrial_Sub_Machine_C_SetIconTexture::InMachineID' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_SetIconTexture, Selection) == 0x000009, "Member 'WBP_TimeTrial_Sub_Machine_C_SetIconTexture::Selection' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_Sub_Machine_C_SetIconTexture;
 
 // Function WBP_TimeTrial_Sub_Machine.WBP_TimeTrial_Sub_Machine_C.SetupMachineView
 // 0x0003 (0x0003 - 0x0000)
@@ -129,11 +87,7 @@ public:
 	EMachineId                                    InRearPart;                                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EMachineId                                    InTirePart;                                        // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TimeTrial_Sub_Machine_C_SetupMachineView) == 0x000001, "Wrong alignment on WBP_TimeTrial_Sub_Machine_C_SetupMachineView");
-static_assert(sizeof(WBP_TimeTrial_Sub_Machine_C_SetupMachineView) == 0x000003, "Wrong size on WBP_TimeTrial_Sub_Machine_C_SetupMachineView");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_SetupMachineView, InFrontPart) == 0x000000, "Member 'WBP_TimeTrial_Sub_Machine_C_SetupMachineView::InFrontPart' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_SetupMachineView, InRearPart) == 0x000001, "Member 'WBP_TimeTrial_Sub_Machine_C_SetupMachineView::InRearPart' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Machine_C_SetupMachineView, InTirePart) == 0x000002, "Member 'WBP_TimeTrial_Sub_Machine_C_SetupMachineView::InTirePart' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_Sub_Machine_C_SetupMachineView;
 
 }
 

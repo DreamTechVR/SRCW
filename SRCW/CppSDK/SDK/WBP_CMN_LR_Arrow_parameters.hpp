@@ -26,12 +26,7 @@ public:
 	bool                                          CallFunc_IsEnableMouseClick_ReturnValue;           // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsEnableMouseClick_ReturnValue_1;         // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_LR_Arrow_C_ExecuteUbergraph_WBP_CMN_LR_Arrow) == 0x000004, "Wrong alignment on WBP_CMN_LR_Arrow_C_ExecuteUbergraph_WBP_CMN_LR_Arrow");
-static_assert(sizeof(WBP_CMN_LR_Arrow_C_ExecuteUbergraph_WBP_CMN_LR_Arrow) == 0x000008, "Wrong size on WBP_CMN_LR_Arrow_C_ExecuteUbergraph_WBP_CMN_LR_Arrow");
-static_assert(offsetof(WBP_CMN_LR_Arrow_C_ExecuteUbergraph_WBP_CMN_LR_Arrow, EntryPoint) == 0x000000, "Member 'WBP_CMN_LR_Arrow_C_ExecuteUbergraph_WBP_CMN_LR_Arrow::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_LR_Arrow_C_ExecuteUbergraph_WBP_CMN_LR_Arrow, K2Node_Event_IsDesignTime) == 0x000004, "Member 'WBP_CMN_LR_Arrow_C_ExecuteUbergraph_WBP_CMN_LR_Arrow::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_LR_Arrow_C_ExecuteUbergraph_WBP_CMN_LR_Arrow, CallFunc_IsEnableMouseClick_ReturnValue) == 0x000005, "Member 'WBP_CMN_LR_Arrow_C_ExecuteUbergraph_WBP_CMN_LR_Arrow::CallFunc_IsEnableMouseClick_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_LR_Arrow_C_ExecuteUbergraph_WBP_CMN_LR_Arrow, CallFunc_IsEnableMouseClick_ReturnValue_1) == 0x000006, "Member 'WBP_CMN_LR_Arrow_C_ExecuteUbergraph_WBP_CMN_LR_Arrow::CallFunc_IsEnableMouseClick_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_LR_Arrow_C_ExecuteUbergraph_WBP_CMN_LR_Arrow;
 
 // Function WBP_CMN_LR_Arrow.WBP_CMN_LR_Arrow_C.PlayAnimationLeftIn
 // 0x0008 (0x0008 - 0x0000)
@@ -40,9 +35,7 @@ struct WBP_CMN_LR_Arrow_C_PlayAnimationLeftIn final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_LR_Arrow_C_PlayAnimationLeftIn) == 0x000008, "Wrong alignment on WBP_CMN_LR_Arrow_C_PlayAnimationLeftIn");
-static_assert(sizeof(WBP_CMN_LR_Arrow_C_PlayAnimationLeftIn) == 0x000008, "Wrong size on WBP_CMN_LR_Arrow_C_PlayAnimationLeftIn");
-static_assert(offsetof(WBP_CMN_LR_Arrow_C_PlayAnimationLeftIn, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_CMN_LR_Arrow_C_PlayAnimationLeftIn::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_LR_Arrow_C_PlayAnimationLeftIn;
 
 // Function WBP_CMN_LR_Arrow.WBP_CMN_LR_Arrow_C.PlayAnimationRightIn
 // 0x0008 (0x0008 - 0x0000)
@@ -51,9 +44,7 @@ struct WBP_CMN_LR_Arrow_C_PlayAnimationRightIn final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_LR_Arrow_C_PlayAnimationRightIn) == 0x000008, "Wrong alignment on WBP_CMN_LR_Arrow_C_PlayAnimationRightIn");
-static_assert(sizeof(WBP_CMN_LR_Arrow_C_PlayAnimationRightIn) == 0x000008, "Wrong size on WBP_CMN_LR_Arrow_C_PlayAnimationRightIn");
-static_assert(offsetof(WBP_CMN_LR_Arrow_C_PlayAnimationRightIn, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_CMN_LR_Arrow_C_PlayAnimationRightIn::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_LR_Arrow_C_PlayAnimationRightIn;
 
 // Function WBP_CMN_LR_Arrow.WBP_CMN_LR_Arrow_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -62,9 +53,7 @@ struct WBP_CMN_LR_Arrow_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_LR_Arrow_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_CMN_LR_Arrow_C_PreConstruct");
-static_assert(sizeof(WBP_CMN_LR_Arrow_C_PreConstruct) == 0x000001, "Wrong size on WBP_CMN_LR_Arrow_C_PreConstruct");
-static_assert(offsetof(WBP_CMN_LR_Arrow_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_CMN_LR_Arrow_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_LR_Arrow_C_PreConstruct;
 
 // Function WBP_CMN_LR_Arrow.WBP_CMN_LR_Arrow_C.SetIsGamepadKey
 // 0x0001 (0x0001 - 0x0000)
@@ -73,9 +62,7 @@ struct WBP_CMN_LR_Arrow_C_SetIsGamepadKey final
 public:
 	bool                                          Is_Game_Pad_Key;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_LR_Arrow_C_SetIsGamepadKey) == 0x000001, "Wrong alignment on WBP_CMN_LR_Arrow_C_SetIsGamepadKey");
-static_assert(sizeof(WBP_CMN_LR_Arrow_C_SetIsGamepadKey) == 0x000001, "Wrong size on WBP_CMN_LR_Arrow_C_SetIsGamepadKey");
-static_assert(offsetof(WBP_CMN_LR_Arrow_C_SetIsGamepadKey, Is_Game_Pad_Key) == 0x000000, "Member 'WBP_CMN_LR_Arrow_C_SetIsGamepadKey::Is_Game_Pad_Key' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_LR_Arrow_C_SetIsGamepadKey;
 
 // Function WBP_CMN_LR_Arrow.WBP_CMN_LR_Arrow_C.SetVisibleButton
 // 0x0009 (0x0009 - 0x0000)
@@ -92,17 +79,7 @@ public:
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_LR_Arrow_C_SetVisibleButton) == 0x000001, "Wrong alignment on WBP_CMN_LR_Arrow_C_SetVisibleButton");
-static_assert(sizeof(WBP_CMN_LR_Arrow_C_SetVisibleButton) == 0x000009, "Wrong size on WBP_CMN_LR_Arrow_C_SetVisibleButton");
-static_assert(offsetof(WBP_CMN_LR_Arrow_C_SetVisibleButton, IsVisibility) == 0x000000, "Member 'WBP_CMN_LR_Arrow_C_SetVisibleButton::IsVisibility' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_LR_Arrow_C_SetVisibleButton, Temp_bool_Variable) == 0x000001, "Member 'WBP_CMN_LR_Arrow_C_SetVisibleButton::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_LR_Arrow_C_SetVisibleButton, Temp_byte_Variable) == 0x000002, "Member 'WBP_CMN_LR_Arrow_C_SetVisibleButton::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_LR_Arrow_C_SetVisibleButton, Temp_byte_Variable_1) == 0x000003, "Member 'WBP_CMN_LR_Arrow_C_SetVisibleButton::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_LR_Arrow_C_SetVisibleButton, Temp_bool_Variable_1) == 0x000004, "Member 'WBP_CMN_LR_Arrow_C_SetVisibleButton::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_LR_Arrow_C_SetVisibleButton, Temp_byte_Variable_2) == 0x000005, "Member 'WBP_CMN_LR_Arrow_C_SetVisibleButton::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_LR_Arrow_C_SetVisibleButton, Temp_byte_Variable_3) == 0x000006, "Member 'WBP_CMN_LR_Arrow_C_SetVisibleButton::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_LR_Arrow_C_SetVisibleButton, K2Node_Select_Default) == 0x000007, "Member 'WBP_CMN_LR_Arrow_C_SetVisibleButton::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_LR_Arrow_C_SetVisibleButton, K2Node_Select_Default_1) == 0x000008, "Member 'WBP_CMN_LR_Arrow_C_SetVisibleButton::K2Node_Select_Default_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_LR_Arrow_C_SetVisibleButton;
 
 // Function WBP_CMN_LR_Arrow.WBP_CMN_LR_Arrow_C.IsVisibleButton
 // 0x0001 (0x0001 - 0x0000)
@@ -111,9 +88,7 @@ struct WBP_CMN_LR_Arrow_C_IsVisibleButton final
 public:
 	bool                                          ButtonVisibility_0;                                // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_LR_Arrow_C_IsVisibleButton) == 0x000001, "Wrong alignment on WBP_CMN_LR_Arrow_C_IsVisibleButton");
-static_assert(sizeof(WBP_CMN_LR_Arrow_C_IsVisibleButton) == 0x000001, "Wrong size on WBP_CMN_LR_Arrow_C_IsVisibleButton");
-static_assert(offsetof(WBP_CMN_LR_Arrow_C_IsVisibleButton, ButtonVisibility_0) == 0x000000, "Member 'WBP_CMN_LR_Arrow_C_IsVisibleButton::ButtonVisibility_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_LR_Arrow_C_IsVisibleButton;
 
 }
 

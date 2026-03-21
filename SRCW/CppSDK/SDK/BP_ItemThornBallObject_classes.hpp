@@ -11,20 +11,20 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_ItemThornBallObject.BP_ItemThornBallObject_C
-// 0x0010 (0x0720 - 0x0710)
+// 0x0010 (0x0740 - 0x0730)
 class ABP_ItemThornBallObject_C final : public AItemThornBallObject
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0710(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UNiagaraComponent*                      Niagara;                                           // 0x0718(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0730(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UNiagaraComponent*                      Niagara;                                           // 0x0738(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BP_ItemThornBallObject(int32 EntryPoint);
@@ -38,17 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ItemThornBallObject_C">();
+		BP_STATIC_CLASS_IMPL("BP_ItemThornBallObject_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ItemThornBallObject_C")
 	}
 	static class ABP_ItemThornBallObject_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ItemThornBallObject_C>();
 	}
 };
-static_assert(alignof(ABP_ItemThornBallObject_C) == 0x000010, "Wrong alignment on ABP_ItemThornBallObject_C");
-static_assert(sizeof(ABP_ItemThornBallObject_C) == 0x000720, "Wrong size on ABP_ItemThornBallObject_C");
-static_assert(offsetof(ABP_ItemThornBallObject_C, UberGraphFrame) == 0x000710, "Member 'ABP_ItemThornBallObject_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_ItemThornBallObject_C, Niagara) == 0x000718, "Member 'ABP_ItemThornBallObject_C::Niagara' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_ItemThornBallObject_C;
 
 }
 

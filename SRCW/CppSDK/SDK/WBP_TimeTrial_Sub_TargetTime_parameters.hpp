@@ -29,14 +29,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FText                                   K2Node_CustomEvent_InTimeText;                     // 0x0020(0x0010)()
 };
-static_assert(alignof(WBP_TimeTrial_Sub_TargetTime_C_ExecuteUbergraph_WBP_TimeTrial_Sub_TargetTime) == 0x000008, "Wrong alignment on WBP_TimeTrial_Sub_TargetTime_C_ExecuteUbergraph_WBP_TimeTrial_Sub_TargetTime");
-static_assert(sizeof(WBP_TimeTrial_Sub_TargetTime_C_ExecuteUbergraph_WBP_TimeTrial_Sub_TargetTime) == 0x000030, "Wrong size on WBP_TimeTrial_Sub_TargetTime_C_ExecuteUbergraph_WBP_TimeTrial_Sub_TargetTime");
-static_assert(offsetof(WBP_TimeTrial_Sub_TargetTime_C_ExecuteUbergraph_WBP_TimeTrial_Sub_TargetTime, EntryPoint) == 0x000000, "Member 'WBP_TimeTrial_Sub_TargetTime_C_ExecuteUbergraph_WBP_TimeTrial_Sub_TargetTime::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_TargetTime_C_ExecuteUbergraph_WBP_TimeTrial_Sub_TargetTime, CallFunc_GetTimeTrialLastResultId_ReturnValue) == 0x000004, "Member 'WBP_TimeTrial_Sub_TargetTime_C_ExecuteUbergraph_WBP_TimeTrial_Sub_TargetTime::CallFunc_GetTimeTrialLastResultId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_TargetTime_C_ExecuteUbergraph_WBP_TimeTrial_Sub_TargetTime, K2Node_SwitchEnum_CmpSuccess) == 0x000005, "Member 'WBP_TimeTrial_Sub_TargetTime_C_ExecuteUbergraph_WBP_TimeTrial_Sub_TargetTime::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_TargetTime_C_ExecuteUbergraph_WBP_TimeTrial_Sub_TargetTime, K2Node_CustomEvent_TimeText) == 0x000008, "Member 'WBP_TimeTrial_Sub_TargetTime_C_ExecuteUbergraph_WBP_TimeTrial_Sub_TargetTime::K2Node_CustomEvent_TimeText' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_TargetTime_C_ExecuteUbergraph_WBP_TimeTrial_Sub_TargetTime, CallFunc_PlayAnimation_ReturnValue) == 0x000018, "Member 'WBP_TimeTrial_Sub_TargetTime_C_ExecuteUbergraph_WBP_TimeTrial_Sub_TargetTime::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_TargetTime_C_ExecuteUbergraph_WBP_TimeTrial_Sub_TargetTime, K2Node_CustomEvent_InTimeText) == 0x000020, "Member 'WBP_TimeTrial_Sub_TargetTime_C_ExecuteUbergraph_WBP_TimeTrial_Sub_TargetTime::K2Node_CustomEvent_InTimeText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_Sub_TargetTime_C_ExecuteUbergraph_WBP_TimeTrial_Sub_TargetTime;
 
 // Function WBP_TimeTrial_Sub_TargetTime.WBP_TimeTrial_Sub_TargetTime_C.SetTotalLapTime
 // 0x0010 (0x0010 - 0x0000)
@@ -45,9 +38,7 @@ struct WBP_TimeTrial_Sub_TargetTime_C_SetTotalLapTime final
 public:
 	class FText                                   TimeText;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_TimeTrial_Sub_TargetTime_C_SetTotalLapTime) == 0x000008, "Wrong alignment on WBP_TimeTrial_Sub_TargetTime_C_SetTotalLapTime");
-static_assert(sizeof(WBP_TimeTrial_Sub_TargetTime_C_SetTotalLapTime) == 0x000010, "Wrong size on WBP_TimeTrial_Sub_TargetTime_C_SetTotalLapTime");
-static_assert(offsetof(WBP_TimeTrial_Sub_TargetTime_C_SetTotalLapTime, TimeText) == 0x000000, "Member 'WBP_TimeTrial_Sub_TargetTime_C_SetTotalLapTime::TimeText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_Sub_TargetTime_C_SetTotalLapTime;
 
 // Function WBP_TimeTrial_Sub_TargetTime.WBP_TimeTrial_Sub_TargetTime_C.SetupReadyWindow
 // 0x0010 (0x0010 - 0x0000)
@@ -56,9 +47,7 @@ struct WBP_TimeTrial_Sub_TargetTime_C_SetupReadyWindow final
 public:
 	class FText                                   InTimeText;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_TimeTrial_Sub_TargetTime_C_SetupReadyWindow) == 0x000008, "Wrong alignment on WBP_TimeTrial_Sub_TargetTime_C_SetupReadyWindow");
-static_assert(sizeof(WBP_TimeTrial_Sub_TargetTime_C_SetupReadyWindow) == 0x000010, "Wrong size on WBP_TimeTrial_Sub_TargetTime_C_SetupReadyWindow");
-static_assert(offsetof(WBP_TimeTrial_Sub_TargetTime_C_SetupReadyWindow, InTimeText) == 0x000000, "Member 'WBP_TimeTrial_Sub_TargetTime_C_SetupReadyWindow::InTimeText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_Sub_TargetTime_C_SetupReadyWindow;
 
 }
 

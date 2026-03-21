@@ -35,25 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_RivalSelect_Sub_Effects_Fire_HighLevel_C">();
+		BP_STATIC_CLASS_IMPL("WBP_RivalSelect_Sub_Effects_Fire_HighLevel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_RivalSelect_Sub_Effects_Fire_HighLevel_C")
 	}
 	static class UWBP_RivalSelect_Sub_Effects_Fire_HighLevel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_RivalSelect_Sub_Effects_Fire_HighLevel_C>();
 	}
 };
-static_assert(alignof(UWBP_RivalSelect_Sub_Effects_Fire_HighLevel_C) == 0x000008, "Wrong alignment on UWBP_RivalSelect_Sub_Effects_Fire_HighLevel_C");
-static_assert(sizeof(UWBP_RivalSelect_Sub_Effects_Fire_HighLevel_C) == 0x000330, "Wrong size on UWBP_RivalSelect_Sub_Effects_Fire_HighLevel_C");
-static_assert(offsetof(UWBP_RivalSelect_Sub_Effects_Fire_HighLevel_C, Fire01_01) == 0x0002E0, "Member 'UWBP_RivalSelect_Sub_Effects_Fire_HighLevel_C::Fire01_01' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_Sub_Effects_Fire_HighLevel_C, Fire01_02) == 0x0002E8, "Member 'UWBP_RivalSelect_Sub_Effects_Fire_HighLevel_C::Fire01_02' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_Sub_Effects_Fire_HighLevel_C, Fire02_01) == 0x0002F0, "Member 'UWBP_RivalSelect_Sub_Effects_Fire_HighLevel_C::Fire02_01' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_Sub_Effects_Fire_HighLevel_C, Fire02_02) == 0x0002F8, "Member 'UWBP_RivalSelect_Sub_Effects_Fire_HighLevel_C::Fire02_02' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_Sub_Effects_Fire_HighLevel_C, Fire02_03) == 0x000300, "Member 'UWBP_RivalSelect_Sub_Effects_Fire_HighLevel_C::Fire02_03' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_Sub_Effects_Fire_HighLevel_C, Fire03_01) == 0x000308, "Member 'UWBP_RivalSelect_Sub_Effects_Fire_HighLevel_C::Fire03_01' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_Sub_Effects_Fire_HighLevel_C, Fire03_02) == 0x000310, "Member 'UWBP_RivalSelect_Sub_Effects_Fire_HighLevel_C::Fire03_02' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_Sub_Effects_Fire_HighLevel_C, Sparks_01) == 0x000318, "Member 'UWBP_RivalSelect_Sub_Effects_Fire_HighLevel_C::Sparks_01' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_Sub_Effects_Fire_HighLevel_C, Sparks_02) == 0x000320, "Member 'UWBP_RivalSelect_Sub_Effects_Fire_HighLevel_C::Sparks_02' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_Sub_Effects_Fire_HighLevel_C, Sparks_03) == 0x000328, "Member 'UWBP_RivalSelect_Sub_Effects_Fire_HighLevel_C::Sparks_03' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_RivalSelect_Sub_Effects_Fire_HighLevel_C;
 
 }
 

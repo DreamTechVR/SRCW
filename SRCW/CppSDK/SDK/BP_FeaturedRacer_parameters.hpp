@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "UnionLib_structs.hpp"
-#include "UNION_structs.hpp"
 #include "Engine_structs.hpp"
+#include "UNION_structs.hpp"
+#include "UnionLib_structs.hpp"
 
 
 namespace SDK::Params
@@ -27,11 +27,7 @@ public:
 	bool                                          CallFunc_IsInViewport_ReturnValue;                 // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EEndPlayReason                                K2Node_Event_EndPlayReason;                        // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_FeaturedRacer_C_ExecuteUbergraph_BP_FeaturedRacer) == 0x000004, "Wrong alignment on BP_FeaturedRacer_C_ExecuteUbergraph_BP_FeaturedRacer");
-static_assert(sizeof(BP_FeaturedRacer_C_ExecuteUbergraph_BP_FeaturedRacer) == 0x000008, "Wrong size on BP_FeaturedRacer_C_ExecuteUbergraph_BP_FeaturedRacer");
-static_assert(offsetof(BP_FeaturedRacer_C_ExecuteUbergraph_BP_FeaturedRacer, EntryPoint) == 0x000000, "Member 'BP_FeaturedRacer_C_ExecuteUbergraph_BP_FeaturedRacer::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_FeaturedRacer_C_ExecuteUbergraph_BP_FeaturedRacer, CallFunc_IsInViewport_ReturnValue) == 0x000004, "Member 'BP_FeaturedRacer_C_ExecuteUbergraph_BP_FeaturedRacer::CallFunc_IsInViewport_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FeaturedRacer_C_ExecuteUbergraph_BP_FeaturedRacer, K2Node_Event_EndPlayReason) == 0x000005, "Member 'BP_FeaturedRacer_C_ExecuteUbergraph_BP_FeaturedRacer::K2Node_Event_EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_BP_FeaturedRacer_C_ExecuteUbergraph_BP_FeaturedRacer;
 
 // Function BP_FeaturedRacer.BP_FeaturedRacer_C.Play
 // 0x0228 (0x0228 - 0x0000)
@@ -60,25 +56,7 @@ public:
 	class FText                                   K2Node_Select_Default;                             // 0x0210(0x0010)(ConstParm)
 	class UWBP_RaceBefore_FeaturedRacer_C*        CallFunc_Create_ReturnValue;                       // 0x0220(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_FeaturedRacer_C_Play) == 0x000008, "Wrong alignment on BP_FeaturedRacer_C_Play");
-static_assert(sizeof(BP_FeaturedRacer_C_Play) == 0x000228, "Wrong size on BP_FeaturedRacer_C_Play");
-static_assert(offsetof(BP_FeaturedRacer_C_Play, In_SceneDriver) == 0x000000, "Member 'BP_FeaturedRacer_C_Play::In_SceneDriver' has a wrong offset!");
-static_assert(offsetof(BP_FeaturedRacer_C_Play, In_RacerIndex) == 0x000008, "Member 'BP_FeaturedRacer_C_Play::In_RacerIndex' has a wrong offset!");
-static_assert(offsetof(BP_FeaturedRacer_C_Play, CallFunc_GetSequencePlayer_ReturnValue) == 0x000010, "Member 'BP_FeaturedRacer_C_Play::CallFunc_GetSequencePlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FeaturedRacer_C_Play, CallFunc_GetAppRaceRacerConfigData_OutData) == 0x000018, "Member 'BP_FeaturedRacer_C_Play::CallFunc_GetAppRaceRacerConfigData_OutData' has a wrong offset!");
-static_assert(offsetof(BP_FeaturedRacer_C_Play, CallFunc_GetAppRaceRacerConfigData_OutExecsPin) == 0x0001A0, "Member 'BP_FeaturedRacer_C_Play::CallFunc_GetAppRaceRacerConfigData_OutExecsPin' has a wrong offset!");
-static_assert(offsetof(BP_FeaturedRacer_C_Play, K2Node_SwitchEnum_CmpSuccess) == 0x0001A1, "Member 'BP_FeaturedRacer_C_Play::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BP_FeaturedRacer_C_Play, CallFunc_GetMachineName_OutMachineName) == 0x0001A8, "Member 'BP_FeaturedRacer_C_Play::CallFunc_GetMachineName_OutMachineName' has a wrong offset!");
-static_assert(offsetof(BP_FeaturedRacer_C_Play, Temp_bool_Variable) == 0x0001B8, "Member 'BP_FeaturedRacer_C_Play::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_FeaturedRacer_C_Play, CallFunc_GetRacerName_OutRacerName) == 0x0001C0, "Member 'BP_FeaturedRacer_C_Play::CallFunc_GetRacerName_OutRacerName' has a wrong offset!");
-static_assert(offsetof(BP_FeaturedRacer_C_Play, CallFunc_TextIsEmpty_ReturnValue) == 0x0001D0, "Member 'BP_FeaturedRacer_C_Play::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FeaturedRacer_C_Play, CallFunc_PlayAnimation_ReturnValue) == 0x0001D8, "Member 'BP_FeaturedRacer_C_Play::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FeaturedRacer_C_Play, K2Node_MakeArray_Array) == 0x0001E0, "Member 'BP_FeaturedRacer_C_Play::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_FeaturedRacer_C_Play, CallFunc_SpawnSound2D_ReturnValue) == 0x0001F0, "Member 'BP_FeaturedRacer_C_Play::CallFunc_SpawnSound2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FeaturedRacer_C_Play, CallFunc_Format_ReturnValue) == 0x0001F8, "Member 'BP_FeaturedRacer_C_Play::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FeaturedRacer_C_Play, CallFunc_GetPlayerController_ReturnValue) == 0x000208, "Member 'BP_FeaturedRacer_C_Play::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FeaturedRacer_C_Play, K2Node_Select_Default) == 0x000210, "Member 'BP_FeaturedRacer_C_Play::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_FeaturedRacer_C_Play, CallFunc_Create_ReturnValue) == 0x000220, "Member 'BP_FeaturedRacer_C_Play::CallFunc_Create_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_FeaturedRacer_C_Play;
 
 // Function BP_FeaturedRacer.BP_FeaturedRacer_C.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -87,9 +65,7 @@ struct BP_FeaturedRacer_C_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_FeaturedRacer_C_ReceiveEndPlay) == 0x000001, "Wrong alignment on BP_FeaturedRacer_C_ReceiveEndPlay");
-static_assert(sizeof(BP_FeaturedRacer_C_ReceiveEndPlay) == 0x000001, "Wrong size on BP_FeaturedRacer_C_ReceiveEndPlay");
-static_assert(offsetof(BP_FeaturedRacer_C_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'BP_FeaturedRacer_C_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_BP_FeaturedRacer_C_ReceiveEndPlay;
 
 }
 

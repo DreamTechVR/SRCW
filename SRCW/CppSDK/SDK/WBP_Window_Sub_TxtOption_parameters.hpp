@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "SlateCore_structs.hpp"
+#include "UnionUI_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UnionSystem_structs.hpp"
-#include "UnionUI_structs.hpp"
 
 
 namespace SDK::Params
@@ -27,10 +27,7 @@ public:
 	class UWidgetAnimation*                       InStopAnimation;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimation*                       InPlayAnimation;                                   // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Window_Sub_TxtOption_C_ChangePlayAnimation) == 0x000008, "Wrong alignment on WBP_Window_Sub_TxtOption_C_ChangePlayAnimation");
-static_assert(sizeof(WBP_Window_Sub_TxtOption_C_ChangePlayAnimation) == 0x000010, "Wrong size on WBP_Window_Sub_TxtOption_C_ChangePlayAnimation");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ChangePlayAnimation, InStopAnimation) == 0x000000, "Member 'WBP_Window_Sub_TxtOption_C_ChangePlayAnimation::InStopAnimation' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ChangePlayAnimation, InPlayAnimation) == 0x000008, "Member 'WBP_Window_Sub_TxtOption_C_ChangePlayAnimation::InPlayAnimation' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Window_Sub_TxtOption_C_ChangePlayAnimation;
 
 // Function WBP_Window_Sub_TxtOption.WBP_Window_Sub_TxtOption_C.Check Release Response InputType
 // 0x0028 (0x0028 - 0x0000)
@@ -47,15 +44,7 @@ public:
 	EAppControllerInputType                       CallFunc_GetCurrentInputType_ReturnValue;          // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Window_Sub_TxtOption_C_Check_Release_Response_InputType) == 0x000008, "Wrong alignment on WBP_Window_Sub_TxtOption_C_Check_Release_Response_InputType");
-static_assert(sizeof(WBP_Window_Sub_TxtOption_C_Check_Release_Response_InputType) == 0x000028, "Wrong size on WBP_Window_Sub_TxtOption_C_Check_Release_Response_InputType");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_Check_Release_Response_InputType, bOutReleaseResponseInput) == 0x000000, "Member 'WBP_Window_Sub_TxtOption_C_Check_Release_Response_InputType::bOutReleaseResponseInput' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_Check_Release_Response_InputType, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'WBP_Window_Sub_TxtOption_C_Check_Release_Response_InputType::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_Check_Release_Response_InputType, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'WBP_Window_Sub_TxtOption_C_Check_Release_Response_InputType::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_Check_Release_Response_InputType, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000018, "Member 'WBP_Window_Sub_TxtOption_C_Check_Release_Response_InputType::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_Check_Release_Response_InputType, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'WBP_Window_Sub_TxtOption_C_Check_Release_Response_InputType::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_Check_Release_Response_InputType, CallFunc_GetCurrentInputType_ReturnValue) == 0x000021, "Member 'WBP_Window_Sub_TxtOption_C_Check_Release_Response_InputType::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_Check_Release_Response_InputType, K2Node_SwitchEnum_CmpSuccess) == 0x000022, "Member 'WBP_Window_Sub_TxtOption_C_Check_Release_Response_InputType::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Window_Sub_TxtOption_C_Check_Release_Response_InputType;
 
 // Function WBP_Window_Sub_TxtOption.WBP_Window_Sub_TxtOption_C.ExecuteUbergraph_WBP_Window_Sub_TxtOption
 // 0x0158 (0x0158 - 0x0000)
@@ -163,91 +152,7 @@ public:
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue_1;        // 0x0148(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption) == 0x000008, "Wrong alignment on WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption");
-static_assert(sizeof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption) == 0x000158, "Wrong size on WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, EntryPoint) == 0x000000, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, Temp_byte_Variable) == 0x000004, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, Temp_byte_Variable_1) == 0x000005, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, Temp_bool_Variable) == 0x000006, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, Temp_byte_Variable_2) == 0x000007, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, Temp_byte_Variable_3) == 0x000008, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, Temp_bool_Variable_1) == 0x000009, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, Temp_byte_Variable_4) == 0x00000A, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, Temp_byte_Variable_5) == 0x00000B, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, Temp_bool_IsClosed_Variable) == 0x00000C, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, Temp_byte_Variable_6) == 0x00000D, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::Temp_byte_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable) == 0x00000E, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable_1) == 0x00000F, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, Temp_bool_Has_Been_Initd_Variable) == 0x000010, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, Temp_bool_Has_Been_Initd_Variable_1) == 0x000011, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::Temp_bool_Has_Been_Initd_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_SwitchEnum_CmpSuccess) == 0x000012, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, CallFunc_SoundPlay_ReturnValue) == 0x000014, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, Temp_bool_Variable_2) == 0x000018, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_CustomEvent_InText_1) == 0x000020, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_CustomEvent_InText_1' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_CustomEvent_bInVisible_3) == 0x000030, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_CustomEvent_bInVisible_3' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_CustomEvent_bInEnable_2) == 0x000031, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_CustomEvent_bInEnable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, Temp_byte_Variable_7) == 0x000032, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::Temp_byte_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_CustomEvent_InStopAnimation) == 0x000038, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_CustomEvent_InStopAnimation' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_CustomEvent_InPlayAnimation) == 0x000040, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_CustomEvent_InPlayAnimation' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, Temp_byte_Variable_8) == 0x000048, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::Temp_byte_Variable_8' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, CallFunc_PlayAnimation_ReturnValue) == 0x000050, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, Temp_bool_Variable_3) == 0x000058, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000059, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, Temp_byte_Variable_9) == 0x00005A, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::Temp_byte_Variable_9' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, Temp_byte_Variable_10) == 0x00005B, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::Temp_byte_Variable_10' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_CustomEvent_bInVisible_2) == 0x00005C, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_CustomEvent_bInVisible_2' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_CustomEvent_bInEnable_1) == 0x00005D, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_CustomEvent_bInEnable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_CustomEvent_InButtonFocusType) == 0x00005E, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_CustomEvent_InButtonFocusType' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_CustomEvent_bInEnable) == 0x00005F, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_CustomEvent_bInEnable' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_CustomEvent_InText) == 0x000060, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_CustomEvent_InText' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_CustomEvent_bInVisible_1) == 0x000070, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_CustomEvent_bInVisible_1' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_Select_Default) == 0x000071, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, Temp_bool_Variable_4) == 0x000072, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::Temp_bool_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_CustomEvent_bInState) == 0x000073, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_CustomEvent_bInState' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_Select_Default_1) == 0x000074, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, CallFunc_SelectFloat_ReturnValue) == 0x000078, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, Temp_bool_Variable_5) == 0x000080, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::Temp_bool_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000088, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_Select_Default_2) == 0x000090, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_CustomEvent_bInVisible) == 0x000098, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_CustomEvent_bInVisible' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_Select_Default_3) == 0x000099, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_Event_InFocusEvent_2) == 0x00009C, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_Event_InFocusEvent_2' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_CustomEvent_Button) == 0x0000A8, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_Event_InFocusEvent_1) == 0x0000B0, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_Event_InFocusEvent_1' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, CallFunc_HasAnyUserFocus_ReturnValue) == 0x0000B8, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::CallFunc_HasAnyUserFocus_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, CallFunc_GetUserIndexByFocusEvent_ReturnValue) == 0x0000BC, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::CallFunc_GetUserIndexByFocusEvent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, CallFunc_GetPlayerController_ReturnValue) == 0x0000C0, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_Event_InFocusEvent) == 0x0000C8, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_Event_InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, CallFunc_GetOwningPlayer_ReturnValue) == 0x0000D0, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, Temp_bool_Variable_6) == 0x0000D8, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::Temp_bool_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_DynamicCast_AsApp_Player_Controller) == 0x0000E0, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_DynamicCast_bSuccess) == 0x0000E8, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, Temp_bool_IsClosed_Variable_1) == 0x0000E9, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::Temp_bool_IsClosed_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_SwitchEnum_CmpSuccess_1) == 0x0000EA, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, CallFunc_GetOwningPlayer_ReturnValue_1) == 0x0000F0, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::CallFunc_GetOwningPlayer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_DynamicCast_AsApp_Player_Controller_1) == 0x0000F8, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_DynamicCast_AsApp_Player_Controller_1' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_DynamicCast_bSuccess_1) == 0x000100, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000101, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, Temp_bool_Variable_7) == 0x000102, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::Temp_bool_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_Select_Default_4) == 0x000108, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, CallFunc_SoundPlay_ReturnValue_1) == 0x000110, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, CallFunc_Check_Release_Response_InputType_bOutReleaseResponseInput) == 0x000114, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::CallFunc_Check_Release_Response_InputType_bOutReleaseResponseInput' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, CallFunc_Check_Release_Response_InputType_bOutReleaseResponseInput_1) == 0x000115, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::CallFunc_Check_Release_Response_InputType_bOutReleaseResponseInput_1' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, CallFunc_GetOwningPlayer_ReturnValue_2) == 0x000118, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::CallFunc_GetOwningPlayer_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, CallFunc_HasAnyUserFocus_ReturnValue_1) == 0x000120, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::CallFunc_HasAnyUserFocus_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_DynamicCast_AsApp_Player_Controller_2) == 0x000128, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_DynamicCast_AsApp_Player_Controller_2' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_DynamicCast_bSuccess_2) == 0x000130, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, CallFunc_SoundPlay_ReturnValue_2) == 0x000134, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::CallFunc_SoundPlay_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, Temp_byte_Variable_11) == 0x000138, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::Temp_byte_Variable_11' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, CallFunc_SoundPlay_ReturnValue_3) == 0x00013C, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::CallFunc_SoundPlay_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_Select_Default_5) == 0x000140, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_Select_Default_5' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_CustomEvent_bInPlayFocusSound) == 0x000141, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_CustomEvent_bInPlayFocusSound' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_Select_Default_6) == 0x000142, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_Select_Default_6' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, K2Node_Select_Default_7) == 0x000143, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::K2Node_Select_Default_7' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, CallFunc_UnregisterMainMenu_ReturnValue) == 0x000144, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::CallFunc_UnregisterMainMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, CallFunc_UnregisterMainMenu_ReturnValue_1) == 0x000145, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::CallFunc_UnregisterMainMenu_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, CallFunc_GetPlayerController_ReturnValue_1) == 0x000148, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000150, "Member 'WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Window_Sub_TxtOption_C_ExecuteUbergraph_WBP_Window_Sub_TxtOption;
 
 // Function WBP_Window_Sub_TxtOption.WBP_Window_Sub_TxtOption_C.OnAddedToFocusPath
 // 0x0008 (0x0008 - 0x0000)
@@ -256,9 +161,7 @@ struct WBP_Window_Sub_TxtOption_C_OnAddedToFocusPath final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_Window_Sub_TxtOption_C_OnAddedToFocusPath) == 0x000004, "Wrong alignment on WBP_Window_Sub_TxtOption_C_OnAddedToFocusPath");
-static_assert(sizeof(WBP_Window_Sub_TxtOption_C_OnAddedToFocusPath) == 0x000008, "Wrong size on WBP_Window_Sub_TxtOption_C_OnAddedToFocusPath");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_OnAddedToFocusPath, InFocusEvent) == 0x000000, "Member 'WBP_Window_Sub_TxtOption_C_OnAddedToFocusPath::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Window_Sub_TxtOption_C_OnAddedToFocusPath;
 
 // Function WBP_Window_Sub_TxtOption.WBP_Window_Sub_TxtOption_C.OnFocusImpl
 // 0x0008 (0x0008 - 0x0000)
@@ -267,9 +170,7 @@ struct WBP_Window_Sub_TxtOption_C_OnFocusImpl final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Window_Sub_TxtOption_C_OnFocusImpl) == 0x000008, "Wrong alignment on WBP_Window_Sub_TxtOption_C_OnFocusImpl");
-static_assert(sizeof(WBP_Window_Sub_TxtOption_C_OnFocusImpl) == 0x000008, "Wrong size on WBP_Window_Sub_TxtOption_C_OnFocusImpl");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_OnFocusImpl, Button) == 0x000000, "Member 'WBP_Window_Sub_TxtOption_C_OnFocusImpl::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Window_Sub_TxtOption_C_OnFocusImpl;
 
 // Function WBP_Window_Sub_TxtOption.WBP_Window_Sub_TxtOption_C.OnFocusLost
 // 0x0008 (0x0008 - 0x0000)
@@ -278,9 +179,7 @@ struct WBP_Window_Sub_TxtOption_C_OnFocusLost final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_Window_Sub_TxtOption_C_OnFocusLost) == 0x000004, "Wrong alignment on WBP_Window_Sub_TxtOption_C_OnFocusLost");
-static_assert(sizeof(WBP_Window_Sub_TxtOption_C_OnFocusLost) == 0x000008, "Wrong size on WBP_Window_Sub_TxtOption_C_OnFocusLost");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_OnFocusLost, InFocusEvent) == 0x000000, "Member 'WBP_Window_Sub_TxtOption_C_OnFocusLost::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Window_Sub_TxtOption_C_OnFocusLost;
 
 // Function WBP_Window_Sub_TxtOption.WBP_Window_Sub_TxtOption_C.OnFocusReceived
 // 0x01B0 (0x01B0 - 0x0000)
@@ -292,12 +191,7 @@ public:
 	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
 	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x00F8(0x00B8)()
 };
-static_assert(alignof(WBP_Window_Sub_TxtOption_C_OnFocusReceived) == 0x000008, "Wrong alignment on WBP_Window_Sub_TxtOption_C_OnFocusReceived");
-static_assert(sizeof(WBP_Window_Sub_TxtOption_C_OnFocusReceived) == 0x0001B0, "Wrong size on WBP_Window_Sub_TxtOption_C_OnFocusReceived");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'WBP_Window_Sub_TxtOption_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'WBP_Window_Sub_TxtOption_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'WBP_Window_Sub_TxtOption_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_OnFocusReceived, K2Node_MakeStruct_EventReply) == 0x0000F8, "Member 'WBP_Window_Sub_TxtOption_C_OnFocusReceived::K2Node_MakeStruct_EventReply' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Window_Sub_TxtOption_C_OnFocusReceived;
 
 // Function WBP_Window_Sub_TxtOption.WBP_Window_Sub_TxtOption_C.OnRemovedFromFocusPath
 // 0x0008 (0x0008 - 0x0000)
@@ -306,9 +200,7 @@ struct WBP_Window_Sub_TxtOption_C_OnRemovedFromFocusPath final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_Window_Sub_TxtOption_C_OnRemovedFromFocusPath) == 0x000004, "Wrong alignment on WBP_Window_Sub_TxtOption_C_OnRemovedFromFocusPath");
-static_assert(sizeof(WBP_Window_Sub_TxtOption_C_OnRemovedFromFocusPath) == 0x000008, "Wrong size on WBP_Window_Sub_TxtOption_C_OnRemovedFromFocusPath");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_OnRemovedFromFocusPath, InFocusEvent) == 0x000000, "Member 'WBP_Window_Sub_TxtOption_C_OnRemovedFromFocusPath::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Window_Sub_TxtOption_C_OnRemovedFromFocusPath;
 
 // Function WBP_Window_Sub_TxtOption.WBP_Window_Sub_TxtOption_C.SetButtonExplainText
 // 0x0010 (0x0010 - 0x0000)
@@ -317,9 +209,7 @@ struct WBP_Window_Sub_TxtOption_C_SetButtonExplainText final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_Window_Sub_TxtOption_C_SetButtonExplainText) == 0x000008, "Wrong alignment on WBP_Window_Sub_TxtOption_C_SetButtonExplainText");
-static_assert(sizeof(WBP_Window_Sub_TxtOption_C_SetButtonExplainText) == 0x000010, "Wrong size on WBP_Window_Sub_TxtOption_C_SetButtonExplainText");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_SetButtonExplainText, InText) == 0x000000, "Member 'WBP_Window_Sub_TxtOption_C_SetButtonExplainText::InText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Window_Sub_TxtOption_C_SetButtonExplainText;
 
 // Function WBP_Window_Sub_TxtOption.WBP_Window_Sub_TxtOption_C.SetButtonExplainTextVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -328,9 +218,7 @@ struct WBP_Window_Sub_TxtOption_C_SetButtonExplainTextVisible final
 public:
 	bool                                          bInVisible;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Window_Sub_TxtOption_C_SetButtonExplainTextVisible) == 0x000001, "Wrong alignment on WBP_Window_Sub_TxtOption_C_SetButtonExplainTextVisible");
-static_assert(sizeof(WBP_Window_Sub_TxtOption_C_SetButtonExplainTextVisible) == 0x000001, "Wrong size on WBP_Window_Sub_TxtOption_C_SetButtonExplainTextVisible");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_SetButtonExplainTextVisible, bInVisible) == 0x000000, "Member 'WBP_Window_Sub_TxtOption_C_SetButtonExplainTextVisible::bInVisible' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Window_Sub_TxtOption_C_SetButtonExplainTextVisible;
 
 // Function WBP_Window_Sub_TxtOption.WBP_Window_Sub_TxtOption_C.SetButtonFocusType
 // 0x0001 (0x0001 - 0x0000)
@@ -339,9 +227,7 @@ struct WBP_Window_Sub_TxtOption_C_SetButtonFocusType final
 public:
 	EButtonFocusType                              InButtonFocusType;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Window_Sub_TxtOption_C_SetButtonFocusType) == 0x000001, "Wrong alignment on WBP_Window_Sub_TxtOption_C_SetButtonFocusType");
-static_assert(sizeof(WBP_Window_Sub_TxtOption_C_SetButtonFocusType) == 0x000001, "Wrong size on WBP_Window_Sub_TxtOption_C_SetButtonFocusType");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_SetButtonFocusType, InButtonFocusType) == 0x000000, "Member 'WBP_Window_Sub_TxtOption_C_SetButtonFocusType::InButtonFocusType' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Window_Sub_TxtOption_C_SetButtonFocusType;
 
 // Function WBP_Window_Sub_TxtOption.WBP_Window_Sub_TxtOption_C.SetButtonText
 // 0x0010 (0x0010 - 0x0000)
@@ -350,9 +236,7 @@ struct WBP_Window_Sub_TxtOption_C_SetButtonText final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_Window_Sub_TxtOption_C_SetButtonText) == 0x000008, "Wrong alignment on WBP_Window_Sub_TxtOption_C_SetButtonText");
-static_assert(sizeof(WBP_Window_Sub_TxtOption_C_SetButtonText) == 0x000010, "Wrong size on WBP_Window_Sub_TxtOption_C_SetButtonText");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_SetButtonText, InText) == 0x000000, "Member 'WBP_Window_Sub_TxtOption_C_SetButtonText::InText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Window_Sub_TxtOption_C_SetButtonText;
 
 // Function WBP_Window_Sub_TxtOption.WBP_Window_Sub_TxtOption_C.SetCursorTextureVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -361,9 +245,7 @@ struct WBP_Window_Sub_TxtOption_C_SetCursorTextureVisible final
 public:
 	bool                                          bInVisible;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Window_Sub_TxtOption_C_SetCursorTextureVisible) == 0x000001, "Wrong alignment on WBP_Window_Sub_TxtOption_C_SetCursorTextureVisible");
-static_assert(sizeof(WBP_Window_Sub_TxtOption_C_SetCursorTextureVisible) == 0x000001, "Wrong size on WBP_Window_Sub_TxtOption_C_SetCursorTextureVisible");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_SetCursorTextureVisible, bInVisible) == 0x000000, "Member 'WBP_Window_Sub_TxtOption_C_SetCursorTextureVisible::bInVisible' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Window_Sub_TxtOption_C_SetCursorTextureVisible;
 
 // Function WBP_Window_Sub_TxtOption.WBP_Window_Sub_TxtOption_C.SetFocusAnimation
 // 0x0001 (0x0001 - 0x0000)
@@ -372,9 +254,7 @@ struct WBP_Window_Sub_TxtOption_C_SetFocusAnimation final
 public:
 	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Window_Sub_TxtOption_C_SetFocusAnimation) == 0x000001, "Wrong alignment on WBP_Window_Sub_TxtOption_C_SetFocusAnimation");
-static_assert(sizeof(WBP_Window_Sub_TxtOption_C_SetFocusAnimation) == 0x000001, "Wrong size on WBP_Window_Sub_TxtOption_C_SetFocusAnimation");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_SetFocusAnimation, bInEnable) == 0x000000, "Member 'WBP_Window_Sub_TxtOption_C_SetFocusAnimation::bInEnable' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Window_Sub_TxtOption_C_SetFocusAnimation;
 
 // Function WBP_Window_Sub_TxtOption.WBP_Window_Sub_TxtOption_C.SetFocusEnable
 // 0x0001 (0x0001 - 0x0000)
@@ -383,9 +263,7 @@ struct WBP_Window_Sub_TxtOption_C_SetFocusEnable final
 public:
 	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Window_Sub_TxtOption_C_SetFocusEnable) == 0x000001, "Wrong alignment on WBP_Window_Sub_TxtOption_C_SetFocusEnable");
-static_assert(sizeof(WBP_Window_Sub_TxtOption_C_SetFocusEnable) == 0x000001, "Wrong size on WBP_Window_Sub_TxtOption_C_SetFocusEnable");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_SetFocusEnable, bInEnable) == 0x000000, "Member 'WBP_Window_Sub_TxtOption_C_SetFocusEnable::bInEnable' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Window_Sub_TxtOption_C_SetFocusEnable;
 
 // Function WBP_Window_Sub_TxtOption.WBP_Window_Sub_TxtOption_C.SetMouseInteractionVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -394,9 +272,7 @@ struct WBP_Window_Sub_TxtOption_C_SetMouseInteractionVisible final
 public:
 	bool                                          bInVisible;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Window_Sub_TxtOption_C_SetMouseInteractionVisible) == 0x000001, "Wrong alignment on WBP_Window_Sub_TxtOption_C_SetMouseInteractionVisible");
-static_assert(sizeof(WBP_Window_Sub_TxtOption_C_SetMouseInteractionVisible) == 0x000001, "Wrong size on WBP_Window_Sub_TxtOption_C_SetMouseInteractionVisible");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_SetMouseInteractionVisible, bInVisible) == 0x000000, "Member 'WBP_Window_Sub_TxtOption_C_SetMouseInteractionVisible::bInVisible' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Window_Sub_TxtOption_C_SetMouseInteractionVisible;
 
 // Function WBP_Window_Sub_TxtOption.WBP_Window_Sub_TxtOption_C.SetPlayDecisionSe
 // 0x0001 (0x0001 - 0x0000)
@@ -405,9 +281,7 @@ struct WBP_Window_Sub_TxtOption_C_SetPlayDecisionSe final
 public:
 	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Window_Sub_TxtOption_C_SetPlayDecisionSe) == 0x000001, "Wrong alignment on WBP_Window_Sub_TxtOption_C_SetPlayDecisionSe");
-static_assert(sizeof(WBP_Window_Sub_TxtOption_C_SetPlayDecisionSe) == 0x000001, "Wrong size on WBP_Window_Sub_TxtOption_C_SetPlayDecisionSe");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_SetPlayDecisionSe, bInEnable) == 0x000000, "Member 'WBP_Window_Sub_TxtOption_C_SetPlayDecisionSe::bInEnable' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Window_Sub_TxtOption_C_SetPlayDecisionSe;
 
 // Function WBP_Window_Sub_TxtOption.WBP_Window_Sub_TxtOption_C.SetToggleButtonState
 // 0x0001 (0x0001 - 0x0000)
@@ -416,9 +290,7 @@ struct WBP_Window_Sub_TxtOption_C_SetToggleButtonState final
 public:
 	bool                                          bInState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Window_Sub_TxtOption_C_SetToggleButtonState) == 0x000001, "Wrong alignment on WBP_Window_Sub_TxtOption_C_SetToggleButtonState");
-static_assert(sizeof(WBP_Window_Sub_TxtOption_C_SetToggleButtonState) == 0x000001, "Wrong size on WBP_Window_Sub_TxtOption_C_SetToggleButtonState");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_SetToggleButtonState, bInState) == 0x000000, "Member 'WBP_Window_Sub_TxtOption_C_SetToggleButtonState::bInState' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Window_Sub_TxtOption_C_SetToggleButtonState;
 
 // Function WBP_Window_Sub_TxtOption.WBP_Window_Sub_TxtOption_C.SetToggleButtonVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -427,9 +299,7 @@ struct WBP_Window_Sub_TxtOption_C_SetToggleButtonVisible final
 public:
 	bool                                          bInVisible;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Window_Sub_TxtOption_C_SetToggleButtonVisible) == 0x000001, "Wrong alignment on WBP_Window_Sub_TxtOption_C_SetToggleButtonVisible");
-static_assert(sizeof(WBP_Window_Sub_TxtOption_C_SetToggleButtonVisible) == 0x000001, "Wrong size on WBP_Window_Sub_TxtOption_C_SetToggleButtonVisible");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_SetToggleButtonVisible, bInVisible) == 0x000000, "Member 'WBP_Window_Sub_TxtOption_C_SetToggleButtonVisible::bInVisible' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Window_Sub_TxtOption_C_SetToggleButtonVisible;
 
 // Function WBP_Window_Sub_TxtOption.WBP_Window_Sub_TxtOption_C.SetWidgetFocus
 // 0x0001 (0x0001 - 0x0000)
@@ -438,9 +308,7 @@ struct WBP_Window_Sub_TxtOption_C_SetWidgetFocus final
 public:
 	bool                                          bInPlayFocusSound;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Window_Sub_TxtOption_C_SetWidgetFocus) == 0x000001, "Wrong alignment on WBP_Window_Sub_TxtOption_C_SetWidgetFocus");
-static_assert(sizeof(WBP_Window_Sub_TxtOption_C_SetWidgetFocus) == 0x000001, "Wrong size on WBP_Window_Sub_TxtOption_C_SetWidgetFocus");
-static_assert(offsetof(WBP_Window_Sub_TxtOption_C_SetWidgetFocus, bInPlayFocusSound) == 0x000000, "Member 'WBP_Window_Sub_TxtOption_C_SetWidgetFocus::bInPlayFocusSound' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Window_Sub_TxtOption_C_SetWidgetFocus;
 
 }
 

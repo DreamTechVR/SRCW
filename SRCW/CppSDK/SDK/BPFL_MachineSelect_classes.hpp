@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "UnionRun_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_classes.hpp"
-#include "UnionRun_structs.hpp"
 
 
 namespace SDK
@@ -36,15 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPFL_MachineSelect_C">();
+		BP_STATIC_CLASS_IMPL("BPFL_MachineSelect_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPFL_MachineSelect_C")
 	}
 	static class UBPFL_MachineSelect_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPFL_MachineSelect_C>();
 	}
 };
-static_assert(alignof(UBPFL_MachineSelect_C) == 0x000008, "Wrong alignment on UBPFL_MachineSelect_C");
-static_assert(sizeof(UBPFL_MachineSelect_C) == 0x000028, "Wrong size on UBPFL_MachineSelect_C");
+DUMPER7_ASSERTS_UBPFL_MachineSelect_C;
 
 }
 

@@ -321,20 +321,6 @@ void ABP_MenuDriverPawn_C::PlayFaceOverrideMontage(EMenuDriverAnimationStateId I
 }
 
 
-// Function BP_MenuDriverPawn.BP_MenuDriverPawn_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_MenuDriverPawn_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MenuDriverPawn_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_MenuDriverPawn.BP_MenuDriverPawn_C.SetAnimationBoneSetting
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:

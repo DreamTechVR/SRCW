@@ -36,19 +36,7 @@ public:
 	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         IndexOffset_62_7E1B13864529C22CB5D5B59D952A774C;   // 0x005C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FST_HoldItemVATData) == 0x000008, "Wrong alignment on FST_HoldItemVATData");
-static_assert(sizeof(FST_HoldItemVATData) == 0x000060, "Wrong size on FST_HoldItemVATData");
-static_assert(offsetof(FST_HoldItemVATData, Id_5_A3FA2BF04CA06A93A21092B4D0D70D59) == 0x000000, "Member 'FST_HoldItemVATData::Id_5_A3FA2BF04CA06A93A21092B4D0D70D59' has a wrong offset!");
-static_assert(offsetof(FST_HoldItemVATData, DataAsset_16_F6E1098F4F7E371B6E983C9F178B723B) == 0x000008, "Member 'FST_HoldItemVATData::DataAsset_16_F6E1098F4F7E371B6E983C9F178B723B' has a wrong offset!");
-static_assert(offsetof(FST_HoldItemVATData, StaticMesh_26_3698DB4645F3E3089CCF3AB1505C0E24) == 0x000010, "Member 'FST_HoldItemVATData::StaticMesh_26_3698DB4645F3E3089CCF3AB1505C0E24' has a wrong offset!");
-static_assert(offsetof(FST_HoldItemVATData, Materials_68_6D5DFE8146AE3C0A613FCBB1DA1FB596) == 0x000018, "Member 'FST_HoldItemVATData::Materials_68_6D5DFE8146AE3C0A613FCBB1DA1FB596' has a wrong offset!");
-static_assert(offsetof(FST_HoldItemVATData, AnimFrameInToLoop_23_E7AD2F964C53C1EED76FF69BD69CFE09) == 0x000028, "Member 'FST_HoldItemVATData::AnimFrameInToLoop_23_E7AD2F964C53C1EED76FF69BD69CFE09' has a wrong offset!");
-static_assert(offsetof(FST_HoldItemVATData, AnimFrameLoopToOut_25_388ECB3B4B32647D350315A84E76E96E) == 0x00002C, "Member 'FST_HoldItemVATData::AnimFrameLoopToOut_25_388ECB3B4B32647D350315A84E76E96E' has a wrong offset!");
-static_assert(offsetof(FST_HoldItemVATData, AnimStartIndex_38_1333A2B54B1625A38701C8977B97E75F) == 0x000030, "Member 'FST_HoldItemVATData::AnimStartIndex_38_1333A2B54B1625A38701C8977B97E75F' has a wrong offset!");
-static_assert(offsetof(FST_HoldItemVATData, NumFrames_53_4102872E4265AE45968FA98EA45A315D) == 0x000038, "Member 'FST_HoldItemVATData::NumFrames_53_4102872E4265AE45968FA98EA45A315D' has a wrong offset!");
-static_assert(offsetof(FST_HoldItemVATData, bAnimLoops_57_BF217F714CF40366EB9A2C8368D90FA8) == 0x000048, "Member 'FST_HoldItemVATData::bAnimLoops_57_BF217F714CF40366EB9A2C8368D90FA8' has a wrong offset!");
-static_assert(offsetof(FST_HoldItemVATData, bUseOutAnim_59_A63FAB524FC415CB019CB9BE94D038EC) == 0x000058, "Member 'FST_HoldItemVATData::bUseOutAnim_59_A63FAB524FC415CB019CB9BE94D038EC' has a wrong offset!");
-static_assert(offsetof(FST_HoldItemVATData, IndexOffset_62_7E1B13864529C22CB5D5B59D952A774C) == 0x00005C, "Member 'FST_HoldItemVATData::IndexOffset_62_7E1B13864529C22CB5D5B59D952A774C' has a wrong offset!");
+DUMPER7_ASSERTS_FST_HoldItemVATData;
 
 }
 

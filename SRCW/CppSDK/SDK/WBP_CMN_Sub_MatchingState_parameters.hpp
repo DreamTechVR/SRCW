@@ -30,14 +30,7 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_Sub_MatchingState_C_ChangeMatchingAnim) == 0x000008, "Wrong alignment on WBP_CMN_Sub_MatchingState_C_ChangeMatchingAnim");
-static_assert(sizeof(WBP_CMN_Sub_MatchingState_C_ChangeMatchingAnim) == 0x000010, "Wrong size on WBP_CMN_Sub_MatchingState_C_ChangeMatchingAnim");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_ChangeMatchingAnim, bIsStartMatching) == 0x000000, "Member 'WBP_CMN_Sub_MatchingState_C_ChangeMatchingAnim::bIsStartMatching' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_ChangeMatchingAnim, Temp_bool_Variable) == 0x000001, "Member 'WBP_CMN_Sub_MatchingState_C_ChangeMatchingAnim::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_ChangeMatchingAnim, Temp_byte_Variable) == 0x000002, "Member 'WBP_CMN_Sub_MatchingState_C_ChangeMatchingAnim::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_ChangeMatchingAnim, Temp_byte_Variable_1) == 0x000003, "Member 'WBP_CMN_Sub_MatchingState_C_ChangeMatchingAnim::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_ChangeMatchingAnim, K2Node_Select_Default) == 0x000004, "Member 'WBP_CMN_Sub_MatchingState_C_ChangeMatchingAnim::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_ChangeMatchingAnim, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_CMN_Sub_MatchingState_C_ChangeMatchingAnim::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Sub_MatchingState_C_ChangeMatchingAnim;
 
 // Function WBP_CMN_Sub_MatchingState.WBP_CMN_Sub_MatchingState_C.ExecuteUbergraph_WBP_CMN_Sub_MatchingState
 // 0x0078 (0x0078 - 0x0000)
@@ -71,29 +64,7 @@ public:
 	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_3;              // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState) == 0x000008, "Wrong alignment on WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState");
-static_assert(sizeof(WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState) == 0x000078, "Wrong size on WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState, EntryPoint) == 0x000000, "Member 'WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState, Temp_bool_Variable) == 0x000004, "Member 'WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState, Temp_bool_Variable_1) == 0x000005, "Member 'WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState, Temp_bool_Variable_2) == 0x000006, "Member 'WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState, K2Node_Event_Animation) == 0x000008, "Member 'WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState::K2Node_Event_Animation' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000010, "Member 'WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState, CallFunc_IsAnyAnimationPlaying_ReturnValue) == 0x000011, "Member 'WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState::CallFunc_IsAnyAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState, CallFunc_IsAnyAnimationPlaying_ReturnValue_1) == 0x000012, "Member 'WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState::CallFunc_IsAnyAnimationPlaying_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState, CallFunc_EqualEqual_ObjectObject_ReturnValue_1) == 0x000013, "Member 'WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState::CallFunc_EqualEqual_ObjectObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState, CallFunc_PlayAnimation_ReturnValue) == 0x000018, "Member 'WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState, K2Node_Select_Default) == 0x000020, "Member 'WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState, K2Node_Select_Default_1) == 0x000028, "Member 'WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState, CallFunc_PlayAnimation_ReturnValue_1) == 0x000030, "Member 'WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState, K2Node_Event_bIsInAnim) == 0x000038, "Member 'WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState::K2Node_Event_bIsInAnim' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState, K2Node_MakeArray_Array) == 0x000040, "Member 'WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState, K2Node_Event_bIsMulti) == 0x000050, "Member 'WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState::K2Node_Event_bIsMulti' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState, K2Node_Event_InOnlineGameMode) == 0x000051, "Member 'WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState::K2Node_Event_InOnlineGameMode' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState, K2Node_Select_Default_2) == 0x000058, "Member 'WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState, CallFunc_PlayAnimation_ReturnValue_2) == 0x000060, "Member 'WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState, K2Node_Event_bPlayLoopRemind) == 0x000068, "Member 'WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState::K2Node_Event_bPlayLoopRemind' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState, CallFunc_PlayAnimation_ReturnValue_3) == 0x000070, "Member 'WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Sub_MatchingState_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState;
 
 // Function WBP_CMN_Sub_MatchingState.WBP_CMN_Sub_MatchingState_C.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -102,9 +73,7 @@ struct WBP_CMN_Sub_MatchingState_C_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_Sub_MatchingState_C_OnAnimationFinished) == 0x000008, "Wrong alignment on WBP_CMN_Sub_MatchingState_C_OnAnimationFinished");
-static_assert(sizeof(WBP_CMN_Sub_MatchingState_C_OnAnimationFinished) == 0x000008, "Wrong size on WBP_CMN_Sub_MatchingState_C_OnAnimationFinished");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_OnAnimationFinished, Animation) == 0x000000, "Member 'WBP_CMN_Sub_MatchingState_C_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Sub_MatchingState_C_OnAnimationFinished;
 
 // Function WBP_CMN_Sub_MatchingState.WBP_CMN_Sub_MatchingState_C.PlayInOutAnimation
 // 0x0001 (0x0001 - 0x0000)
@@ -113,9 +82,7 @@ struct WBP_CMN_Sub_MatchingState_C_PlayInOutAnimation final
 public:
 	bool                                          bIsInAnim;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_Sub_MatchingState_C_PlayInOutAnimation) == 0x000001, "Wrong alignment on WBP_CMN_Sub_MatchingState_C_PlayInOutAnimation");
-static_assert(sizeof(WBP_CMN_Sub_MatchingState_C_PlayInOutAnimation) == 0x000001, "Wrong size on WBP_CMN_Sub_MatchingState_C_PlayInOutAnimation");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_PlayInOutAnimation, bIsInAnim) == 0x000000, "Member 'WBP_CMN_Sub_MatchingState_C_PlayInOutAnimation::bIsInAnim' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Sub_MatchingState_C_PlayInOutAnimation;
 
 // Function WBP_CMN_Sub_MatchingState.WBP_CMN_Sub_MatchingState_C.PlayLoopRemindAnim
 // 0x0001 (0x0001 - 0x0000)
@@ -124,9 +91,7 @@ struct WBP_CMN_Sub_MatchingState_C_PlayLoopRemindAnim final
 public:
 	bool                                          bPlayLoopRemind;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_Sub_MatchingState_C_PlayLoopRemindAnim) == 0x000001, "Wrong alignment on WBP_CMN_Sub_MatchingState_C_PlayLoopRemindAnim");
-static_assert(sizeof(WBP_CMN_Sub_MatchingState_C_PlayLoopRemindAnim) == 0x000001, "Wrong size on WBP_CMN_Sub_MatchingState_C_PlayLoopRemindAnim");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_PlayLoopRemindAnim, bPlayLoopRemind) == 0x000000, "Member 'WBP_CMN_Sub_MatchingState_C_PlayLoopRemindAnim::bPlayLoopRemind' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Sub_MatchingState_C_PlayLoopRemindAnim;
 
 // Function WBP_CMN_Sub_MatchingState.WBP_CMN_Sub_MatchingState_C.RemindLoopAnim
 // 0x0010 (0x0010 - 0x0000)
@@ -136,10 +101,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_Sub_MatchingState_C_RemindLoopAnim) == 0x000008, "Wrong alignment on WBP_CMN_Sub_MatchingState_C_RemindLoopAnim");
-static_assert(sizeof(WBP_CMN_Sub_MatchingState_C_RemindLoopAnim) == 0x000010, "Wrong size on WBP_CMN_Sub_MatchingState_C_RemindLoopAnim");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_RemindLoopAnim, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_CMN_Sub_MatchingState_C_RemindLoopAnim::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_RemindLoopAnim, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000008, "Member 'WBP_CMN_Sub_MatchingState_C_RemindLoopAnim::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Sub_MatchingState_C_RemindLoopAnim;
 
 // Function WBP_CMN_Sub_MatchingState.WBP_CMN_Sub_MatchingState_C.SetHeaderText
 // 0x0058 (0x0058 - 0x0000)
@@ -156,16 +118,7 @@ public:
 	class FText                                   CallFunc_SelectText_ReturnValue_3;                 // 0x0038(0x0010)()
 	class FText                                   CallFunc_SelectText_ReturnValue_4;                 // 0x0048(0x0010)()
 };
-static_assert(alignof(WBP_CMN_Sub_MatchingState_C_SetHeaderText) == 0x000008, "Wrong alignment on WBP_CMN_Sub_MatchingState_C_SetHeaderText");
-static_assert(sizeof(WBP_CMN_Sub_MatchingState_C_SetHeaderText) == 0x000058, "Wrong size on WBP_CMN_Sub_MatchingState_C_SetHeaderText");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_SetHeaderText, bIsWait) == 0x000000, "Member 'WBP_CMN_Sub_MatchingState_C_SetHeaderText::bIsWait' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_SetHeaderText, bIsHost) == 0x000001, "Member 'WBP_CMN_Sub_MatchingState_C_SetHeaderText::bIsHost' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_SetHeaderText, bIsReady) == 0x000002, "Member 'WBP_CMN_Sub_MatchingState_C_SetHeaderText::bIsReady' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_SetHeaderText, CallFunc_SelectText_ReturnValue) == 0x000008, "Member 'WBP_CMN_Sub_MatchingState_C_SetHeaderText::CallFunc_SelectText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_SetHeaderText, CallFunc_SelectText_ReturnValue_1) == 0x000018, "Member 'WBP_CMN_Sub_MatchingState_C_SetHeaderText::CallFunc_SelectText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_SetHeaderText, CallFunc_SelectText_ReturnValue_2) == 0x000028, "Member 'WBP_CMN_Sub_MatchingState_C_SetHeaderText::CallFunc_SelectText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_SetHeaderText, CallFunc_SelectText_ReturnValue_3) == 0x000038, "Member 'WBP_CMN_Sub_MatchingState_C_SetHeaderText::CallFunc_SelectText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_SetHeaderText, CallFunc_SelectText_ReturnValue_4) == 0x000048, "Member 'WBP_CMN_Sub_MatchingState_C_SetHeaderText::CallFunc_SelectText_ReturnValue_4' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Sub_MatchingState_C_SetHeaderText;
 
 // Function WBP_CMN_Sub_MatchingState.WBP_CMN_Sub_MatchingState_C.SetOnlineGameMode
 // 0x0018 (0x0018 - 0x0000)
@@ -184,18 +137,7 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_Sub_MatchingState_C_SetOnlineGameMode) == 0x000008, "Wrong alignment on WBP_CMN_Sub_MatchingState_C_SetOnlineGameMode");
-static_assert(sizeof(WBP_CMN_Sub_MatchingState_C_SetOnlineGameMode) == 0x000018, "Wrong size on WBP_CMN_Sub_MatchingState_C_SetOnlineGameMode");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_SetOnlineGameMode, InOnlineGameMode) == 0x000000, "Member 'WBP_CMN_Sub_MatchingState_C_SetOnlineGameMode::InOnlineGameMode' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_SetOnlineGameMode, bIsMulti) == 0x000001, "Member 'WBP_CMN_Sub_MatchingState_C_SetOnlineGameMode::bIsMulti' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_SetOnlineGameMode, Temp_bool_Variable) == 0x000002, "Member 'WBP_CMN_Sub_MatchingState_C_SetOnlineGameMode::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_SetOnlineGameMode, Temp_byte_Variable) == 0x000003, "Member 'WBP_CMN_Sub_MatchingState_C_SetOnlineGameMode::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_SetOnlineGameMode, Temp_byte_Variable_1) == 0x000004, "Member 'WBP_CMN_Sub_MatchingState_C_SetOnlineGameMode::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_SetOnlineGameMode, K2Node_Select_Default) == 0x000005, "Member 'WBP_CMN_Sub_MatchingState_C_SetOnlineGameMode::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_SetOnlineGameMode, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_CMN_Sub_MatchingState_C_SetOnlineGameMode::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_SetOnlineGameMode, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000010, "Member 'WBP_CMN_Sub_MatchingState_C_SetOnlineGameMode::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_SetOnlineGameMode, CallFunc_Not_PreBool_ReturnValue) == 0x000011, "Member 'WBP_CMN_Sub_MatchingState_C_SetOnlineGameMode::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_SetOnlineGameMode, CallFunc_BooleanAND_ReturnValue) == 0x000012, "Member 'WBP_CMN_Sub_MatchingState_C_SetOnlineGameMode::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Sub_MatchingState_C_SetOnlineGameMode;
 
 // Function WBP_CMN_Sub_MatchingState.WBP_CMN_Sub_MatchingState_C.SetOnlineGameModeIcon
 // 0x0002 (0x0002 - 0x0000)
@@ -205,10 +147,7 @@ public:
 	bool                                          bIsMulti;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EOnlineGameMode                               InOnlineGameMode;                                  // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_Sub_MatchingState_C_SetOnlineGameModeIcon) == 0x000001, "Wrong alignment on WBP_CMN_Sub_MatchingState_C_SetOnlineGameModeIcon");
-static_assert(sizeof(WBP_CMN_Sub_MatchingState_C_SetOnlineGameModeIcon) == 0x000002, "Wrong size on WBP_CMN_Sub_MatchingState_C_SetOnlineGameModeIcon");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_SetOnlineGameModeIcon, bIsMulti) == 0x000000, "Member 'WBP_CMN_Sub_MatchingState_C_SetOnlineGameModeIcon::bIsMulti' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_C_SetOnlineGameModeIcon, InOnlineGameMode) == 0x000001, "Member 'WBP_CMN_Sub_MatchingState_C_SetOnlineGameModeIcon::InOnlineGameMode' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Sub_MatchingState_C_SetOnlineGameModeIcon;
 
 }
 

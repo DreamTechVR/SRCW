@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MariaEpicIdentitySequence">();
+		STATIC_CLASS_IMPL("MariaEpicIdentitySequence")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MariaEpicIdentitySequence")
 	}
 	static class UMariaEpicIdentitySequence* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMariaEpicIdentitySequence>();
 	}
 };
-static_assert(alignof(UMariaEpicIdentitySequence) == 0x000008, "Wrong alignment on UMariaEpicIdentitySequence");
-static_assert(sizeof(UMariaEpicIdentitySequence) == 0x000050, "Wrong size on UMariaEpicIdentitySequence");
-static_assert(offsetof(UMariaEpicIdentitySequence, Completed) == 0x000030, "Member 'UMariaEpicIdentitySequence::Completed' has a wrong offset!");
+DUMPER7_ASSERTS_UMariaEpicIdentitySequence;
 
 // Class mariaUploadPlugin.MariaInitializeAuthSequence
 // 0x0050 (0x0080 - 0x0030)
@@ -58,17 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MariaInitializeAuthSequence">();
+		STATIC_CLASS_IMPL("MariaInitializeAuthSequence")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MariaInitializeAuthSequence")
 	}
 	static class UMariaInitializeAuthSequence* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMariaInitializeAuthSequence>();
 	}
 };
-static_assert(alignof(UMariaInitializeAuthSequence) == 0x000008, "Wrong alignment on UMariaInitializeAuthSequence");
-static_assert(sizeof(UMariaInitializeAuthSequence) == 0x000080, "Wrong size on UMariaInitializeAuthSequence");
-static_assert(offsetof(UMariaInitializeAuthSequence, CanStartLogging) == 0x000030, "Member 'UMariaInitializeAuthSequence::CanStartLogging' has a wrong offset!");
-static_assert(offsetof(UMariaInitializeAuthSequence, Completed) == 0x000040, "Member 'UMariaInitializeAuthSequence::Completed' has a wrong offset!");
+DUMPER7_ASSERTS_UMariaInitializeAuthSequence;
 
 // Class mariaUploadPlugin.MariaSteamEncryptedAppTicketSequence
 // 0x0058 (0x0088 - 0x0030)
@@ -84,16 +87,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MariaSteamEncryptedAppTicketSequence">();
+		STATIC_CLASS_IMPL("MariaSteamEncryptedAppTicketSequence")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MariaSteamEncryptedAppTicketSequence")
 	}
 	static class UMariaSteamEncryptedAppTicketSequence* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMariaSteamEncryptedAppTicketSequence>();
 	}
 };
-static_assert(alignof(UMariaSteamEncryptedAppTicketSequence) == 0x000008, "Wrong alignment on UMariaSteamEncryptedAppTicketSequence");
-static_assert(sizeof(UMariaSteamEncryptedAppTicketSequence) == 0x000088, "Wrong size on UMariaSteamEncryptedAppTicketSequence");
-static_assert(offsetof(UMariaSteamEncryptedAppTicketSequence, Completed) == 0x000030, "Member 'UMariaSteamEncryptedAppTicketSequence::Completed' has a wrong offset!");
+DUMPER7_ASSERTS_UMariaSteamEncryptedAppTicketSequence;
 
 // Class mariaUploadPlugin.MariaSwitchNetworkRequestSequence
 // 0x0010 (0x0040 - 0x0030)
@@ -108,16 +113,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MariaSwitchNetworkRequestSequence">();
+		STATIC_CLASS_IMPL("MariaSwitchNetworkRequestSequence")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MariaSwitchNetworkRequestSequence")
 	}
 	static class UMariaSwitchNetworkRequestSequence* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMariaSwitchNetworkRequestSequence>();
 	}
 };
-static_assert(alignof(UMariaSwitchNetworkRequestSequence) == 0x000008, "Wrong alignment on UMariaSwitchNetworkRequestSequence");
-static_assert(sizeof(UMariaSwitchNetworkRequestSequence) == 0x000040, "Wrong size on UMariaSwitchNetworkRequestSequence");
-static_assert(offsetof(UMariaSwitchNetworkRequestSequence, Completed) == 0x000030, "Member 'UMariaSwitchNetworkRequestSequence::Completed' has a wrong offset!");
+DUMPER7_ASSERTS_UMariaSwitchNetworkRequestSequence;
 
 // Class mariaUploadPlugin.MariaTableRowLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -131,15 +138,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MariaTableRowLibrary">();
+		STATIC_CLASS_IMPL("MariaTableRowLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MariaTableRowLibrary")
 	}
 	static class UMariaTableRowLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMariaTableRowLibrary>();
 	}
 };
-static_assert(alignof(UMariaTableRowLibrary) == 0x000008, "Wrong alignment on UMariaTableRowLibrary");
-static_assert(sizeof(UMariaTableRowLibrary) == 0x000028, "Wrong size on UMariaTableRowLibrary");
+DUMPER7_ASSERTS_UMariaTableRowLibrary;
 
 // Class mariaUploadPlugin.MariaUpload
 // 0x0000 (0x0028 - 0x0028)
@@ -263,15 +273,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MariaUpload">();
+		STATIC_CLASS_IMPL("MariaUpload")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MariaUpload")
 	}
 	static class UMariaUpload* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMariaUpload>();
 	}
 };
-static_assert(alignof(UMariaUpload) == 0x000008, "Wrong alignment on UMariaUpload");
-static_assert(sizeof(UMariaUpload) == 0x000028, "Wrong size on UMariaUpload");
+DUMPER7_ASSERTS_UMariaUpload;
 
 }
 

@@ -28,13 +28,7 @@ public:
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue_1;            // 0x0028(0x0010)()
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue_2;            // 0x0038(0x0010)()
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamGroup_Rank) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamGroup_Rank");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamGroup_Rank) == 0x000048, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamGroup_Rank");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamGroup_Rank, EntryPoint) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamGroup_Rank::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamGroup_Rank, CallFunc_MakeLiteralText_ReturnValue) == 0x000008, "Member 'WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamGroup_Rank::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamGroup_Rank, K2Node_MakeArray_Array) == 0x000018, "Member 'WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamGroup_Rank::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamGroup_Rank, CallFunc_MakeLiteralText_ReturnValue_1) == 0x000028, "Member 'WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamGroup_Rank::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamGroup_Rank, CallFunc_MakeLiteralText_ReturnValue_2) == 0x000038, "Member 'WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamGroup_Rank::CallFunc_MakeLiteralText_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamGroup_Rank;
 
 // Function WBP_Race_HUD_Sub_Festa_TeamGroup_Rank.WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C.SetBaseColor
 // 0x0010 (0x0010 - 0x0000)
@@ -43,9 +37,7 @@ struct WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C_SetBaseColor final
 public:
 	struct FLinearColor                           NewColor;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C_SetBaseColor) == 0x000004, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C_SetBaseColor");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C_SetBaseColor) == 0x000010, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C_SetBaseColor");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C_SetBaseColor, NewColor) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C_SetBaseColor::NewColor' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C_SetBaseColor;
 
 // Function WBP_Race_HUD_Sub_Festa_TeamGroup_Rank.WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C.SetTeamRank
 // 0x0008 (0x0008 - 0x0000)
@@ -55,10 +47,7 @@ public:
 	int32                                         TeamRank;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C_SetTeamRank) == 0x000004, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C_SetTeamRank");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C_SetTeamRank) == 0x000008, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C_SetTeamRank");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C_SetTeamRank, TeamRank) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C_SetTeamRank::TeamRank' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C_SetTeamRank, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000004, "Member 'WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C_SetTeamRank::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C_SetTeamRank;
 
 }
 

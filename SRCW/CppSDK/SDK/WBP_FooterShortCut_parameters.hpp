@@ -24,10 +24,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsEnableMouseClick_ReturnValue;           // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterShortCut_C_ExecuteUbergraph_WBP_FooterShortCut) == 0x000004, "Wrong alignment on WBP_FooterShortCut_C_ExecuteUbergraph_WBP_FooterShortCut");
-static_assert(sizeof(WBP_FooterShortCut_C_ExecuteUbergraph_WBP_FooterShortCut) == 0x000008, "Wrong size on WBP_FooterShortCut_C_ExecuteUbergraph_WBP_FooterShortCut");
-static_assert(offsetof(WBP_FooterShortCut_C_ExecuteUbergraph_WBP_FooterShortCut, EntryPoint) == 0x000000, "Member 'WBP_FooterShortCut_C_ExecuteUbergraph_WBP_FooterShortCut::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_FooterShortCut_C_ExecuteUbergraph_WBP_FooterShortCut, CallFunc_IsEnableMouseClick_ReturnValue) == 0x000004, "Member 'WBP_FooterShortCut_C_ExecuteUbergraph_WBP_FooterShortCut::CallFunc_IsEnableMouseClick_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterShortCut_C_ExecuteUbergraph_WBP_FooterShortCut;
 
 // Function WBP_FooterShortCut.WBP_FooterShortCut_C.SetTextMainType
 // 0x0040 (0x0040 - 0x0000)
@@ -41,13 +38,7 @@ public:
 	struct FCommonMenuFooterTextData              CallFunc_GetDataTableRowFromName_OutRow;           // 0x0018(0x0020)()
 	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterShortCut_C_SetTextMainType) == 0x000008, "Wrong alignment on WBP_FooterShortCut_C_SetTextMainType");
-static_assert(sizeof(WBP_FooterShortCut_C_SetTextMainType) == 0x000040, "Wrong size on WBP_FooterShortCut_C_SetTextMainType");
-static_assert(offsetof(WBP_FooterShortCut_C_SetTextMainType, InType) == 0x000000, "Member 'WBP_FooterShortCut_C_SetTextMainType::InType' has a wrong offset!");
-static_assert(offsetof(WBP_FooterShortCut_C_SetTextMainType, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000008, "Member 'WBP_FooterShortCut_C_SetTextMainType::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FooterShortCut_C_SetTextMainType, CallFunc_GetEnumeratorName_ReturnValue) == 0x000010, "Member 'WBP_FooterShortCut_C_SetTextMainType::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FooterShortCut_C_SetTextMainType, CallFunc_GetDataTableRowFromName_OutRow) == 0x000018, "Member 'WBP_FooterShortCut_C_SetTextMainType::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_FooterShortCut_C_SetTextMainType, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000038, "Member 'WBP_FooterShortCut_C_SetTextMainType::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterShortCut_C_SetTextMainType;
 
 // Function WBP_FooterShortCut.WBP_FooterShortCut_C.SetTextSubType
 // 0x0040 (0x0040 - 0x0000)
@@ -61,13 +52,7 @@ public:
 	struct FCommonMenuFooterTextData              CallFunc_GetDataTableRowFromName_OutRow;           // 0x0018(0x0020)()
 	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterShortCut_C_SetTextSubType) == 0x000008, "Wrong alignment on WBP_FooterShortCut_C_SetTextSubType");
-static_assert(sizeof(WBP_FooterShortCut_C_SetTextSubType) == 0x000040, "Wrong size on WBP_FooterShortCut_C_SetTextSubType");
-static_assert(offsetof(WBP_FooterShortCut_C_SetTextSubType, InType) == 0x000000, "Member 'WBP_FooterShortCut_C_SetTextSubType::InType' has a wrong offset!");
-static_assert(offsetof(WBP_FooterShortCut_C_SetTextSubType, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000008, "Member 'WBP_FooterShortCut_C_SetTextSubType::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FooterShortCut_C_SetTextSubType, CallFunc_GetEnumeratorName_ReturnValue) == 0x000010, "Member 'WBP_FooterShortCut_C_SetTextSubType::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FooterShortCut_C_SetTextSubType, CallFunc_GetDataTableRowFromName_OutRow) == 0x000018, "Member 'WBP_FooterShortCut_C_SetTextSubType::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_FooterShortCut_C_SetTextSubType, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000038, "Member 'WBP_FooterShortCut_C_SetTextSubType::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterShortCut_C_SetTextSubType;
 
 }
 

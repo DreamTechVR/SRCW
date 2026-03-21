@@ -39,24 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_System_Title_Communication_C">();
+		BP_STATIC_CLASS_IMPL("WBP_System_Title_Communication_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_System_Title_Communication_C")
 	}
 	static class UWBP_System_Title_Communication_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_System_Title_Communication_C>();
 	}
 };
-static_assert(alignof(UWBP_System_Title_Communication_C) == 0x000008, "Wrong alignment on UWBP_System_Title_Communication_C");
-static_assert(sizeof(UWBP_System_Title_Communication_C) == 0x000328, "Wrong size on UWBP_System_Title_Communication_C");
-static_assert(offsetof(UWBP_System_Title_Communication_C, BG_Circle) == 0x0002E0, "Member 'UWBP_System_Title_Communication_C::BG_Circle' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Title_Communication_C, BG_UV_01) == 0x0002E8, "Member 'UWBP_System_Title_Communication_C::BG_UV_01' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Title_Communication_C, BG_UV_02) == 0x0002F0, "Member 'UWBP_System_Title_Communication_C::BG_UV_02' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Title_Communication_C, BG_UV_Arc) == 0x0002F8, "Member 'UWBP_System_Title_Communication_C::BG_UV_Arc' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Title_Communication_C, BG_UV_BG) == 0x000300, "Member 'UWBP_System_Title_Communication_C::BG_UV_BG' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Title_Communication_C, CanvasPanel) == 0x000308, "Member 'UWBP_System_Title_Communication_C::CanvasPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Title_Communication_C, Outline) == 0x000310, "Member 'UWBP_System_Title_Communication_C::Outline' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Title_Communication_C, SafeZone_System) == 0x000318, "Member 'UWBP_System_Title_Communication_C::SafeZone_System' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Title_Communication_C, WBP_System_Sub_LoadingSonic) == 0x000320, "Member 'UWBP_System_Title_Communication_C::WBP_System_Sub_LoadingSonic' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_System_Title_Communication_C;
 
 }
 

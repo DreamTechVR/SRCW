@@ -43,26 +43,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_Nice_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_Nice_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_Nice_C")
 	}
 	static class UWBP_CMN_Nice_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_Nice_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_Nice_C) == 0x000008, "Wrong alignment on UWBP_CMN_Nice_C");
-static_assert(sizeof(UWBP_CMN_Nice_C) == 0x000340, "Wrong size on UWBP_CMN_Nice_C");
-static_assert(offsetof(UWBP_CMN_Nice_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_CMN_Nice_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Nice_C, Nice_Select_Out) == 0x0002E8, "Member 'UWBP_CMN_Nice_C::Nice_Select_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Nice_C, Nice_Active_Loop) == 0x0002F0, "Member 'UWBP_CMN_Nice_C::Nice_Active_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Nice_C, Arrow) == 0x0002F8, "Member 'UWBP_CMN_Nice_C::Arrow' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Nice_C, MouseInteractionNice) == 0x000300, "Member 'UWBP_CMN_Nice_C::MouseInteractionNice' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Nice_C, Nice) == 0x000308, "Member 'UWBP_CMN_Nice_C::Nice' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Nice_C, Nice_Anime) == 0x000310, "Member 'UWBP_CMN_Nice_C::Nice_Anime' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Nice_C, Nice_Eff) == 0x000318, "Member 'UWBP_CMN_Nice_C::Nice_Eff' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Nice_C, WBP_CMN_ControllerBtn) == 0x000320, "Member 'UWBP_CMN_Nice_C::WBP_CMN_ControllerBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Nice_C, Window) == 0x000328, "Member 'UWBP_CMN_Nice_C::Window' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Nice_C, OnNicePressed) == 0x000330, "Member 'UWBP_CMN_Nice_C::OnNicePressed' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_Nice_C;
 
 }
 

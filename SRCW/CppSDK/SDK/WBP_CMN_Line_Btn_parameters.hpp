@@ -41,22 +41,7 @@ public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_3;                  // 0x0078(0x0004)()
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_4;                  // 0x007C(0x0004)()
 };
-static_assert(alignof(WBP_CMN_Line_Btn_C_ExecuteUbergraph_WBP_CMN_Line_Btn) == 0x000008, "Wrong alignment on WBP_CMN_Line_Btn_C_ExecuteUbergraph_WBP_CMN_Line_Btn");
-static_assert(sizeof(WBP_CMN_Line_Btn_C_ExecuteUbergraph_WBP_CMN_Line_Btn) == 0x000080, "Wrong size on WBP_CMN_Line_Btn_C_ExecuteUbergraph_WBP_CMN_Line_Btn");
-static_assert(offsetof(WBP_CMN_Line_Btn_C_ExecuteUbergraph_WBP_CMN_Line_Btn, EntryPoint) == 0x000000, "Member 'WBP_CMN_Line_Btn_C_ExecuteUbergraph_WBP_CMN_Line_Btn::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Line_Btn_C_ExecuteUbergraph_WBP_CMN_Line_Btn, K2Node_CustomEvent_bInEnable) == 0x000004, "Member 'WBP_CMN_Line_Btn_C_ExecuteUbergraph_WBP_CMN_Line_Btn::K2Node_CustomEvent_bInEnable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Line_Btn_C_ExecuteUbergraph_WBP_CMN_Line_Btn, K2Node_CustomEvent_MyGeometry) == 0x000008, "Member 'WBP_CMN_Line_Btn_C_ExecuteUbergraph_WBP_CMN_Line_Btn::K2Node_CustomEvent_MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Line_Btn_C_ExecuteUbergraph_WBP_CMN_Line_Btn, K2Node_CustomEvent_InFocusEvent) == 0x000040, "Member 'WBP_CMN_Line_Btn_C_ExecuteUbergraph_WBP_CMN_Line_Btn::K2Node_CustomEvent_InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Line_Btn_C_ExecuteUbergraph_WBP_CMN_Line_Btn, CallFunc_GetUserIndexByFocusEvent_ReturnValue) == 0x000048, "Member 'WBP_CMN_Line_Btn_C_ExecuteUbergraph_WBP_CMN_Line_Btn::CallFunc_GetUserIndexByFocusEvent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Line_Btn_C_ExecuteUbergraph_WBP_CMN_Line_Btn, CallFunc_GetPlayerController_ReturnValue) == 0x000050, "Member 'WBP_CMN_Line_Btn_C_ExecuteUbergraph_WBP_CMN_Line_Btn::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Line_Btn_C_ExecuteUbergraph_WBP_CMN_Line_Btn, K2Node_DynamicCast_AsMenu_Player_Controller) == 0x000058, "Member 'WBP_CMN_Line_Btn_C_ExecuteUbergraph_WBP_CMN_Line_Btn::K2Node_DynamicCast_AsMenu_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Line_Btn_C_ExecuteUbergraph_WBP_CMN_Line_Btn, K2Node_DynamicCast_bSuccess) == 0x000060, "Member 'WBP_CMN_Line_Btn_C_ExecuteUbergraph_WBP_CMN_Line_Btn::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Line_Btn_C_ExecuteUbergraph_WBP_CMN_Line_Btn, CallFunc_SoundPlay_ReturnValue) == 0x000064, "Member 'WBP_CMN_Line_Btn_C_ExecuteUbergraph_WBP_CMN_Line_Btn::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Line_Btn_C_ExecuteUbergraph_WBP_CMN_Line_Btn, K2Node_Event_InFocusEvent) == 0x000068, "Member 'WBP_CMN_Line_Btn_C_ExecuteUbergraph_WBP_CMN_Line_Btn::K2Node_Event_InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Line_Btn_C_ExecuteUbergraph_WBP_CMN_Line_Btn, CallFunc_SoundPlay_ReturnValue_1) == 0x000070, "Member 'WBP_CMN_Line_Btn_C_ExecuteUbergraph_WBP_CMN_Line_Btn::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Line_Btn_C_ExecuteUbergraph_WBP_CMN_Line_Btn, CallFunc_SoundPlay_ReturnValue_2) == 0x000074, "Member 'WBP_CMN_Line_Btn_C_ExecuteUbergraph_WBP_CMN_Line_Btn::CallFunc_SoundPlay_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Line_Btn_C_ExecuteUbergraph_WBP_CMN_Line_Btn, CallFunc_SoundPlay_ReturnValue_3) == 0x000078, "Member 'WBP_CMN_Line_Btn_C_ExecuteUbergraph_WBP_CMN_Line_Btn::CallFunc_SoundPlay_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Line_Btn_C_ExecuteUbergraph_WBP_CMN_Line_Btn, CallFunc_SoundPlay_ReturnValue_4) == 0x00007C, "Member 'WBP_CMN_Line_Btn_C_ExecuteUbergraph_WBP_CMN_Line_Btn::CallFunc_SoundPlay_ReturnValue_4' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Line_Btn_C_ExecuteUbergraph_WBP_CMN_Line_Btn;
 
 // Function WBP_CMN_Line_Btn.WBP_CMN_Line_Btn_C.OnFocusLost
 // 0x0008 (0x0008 - 0x0000)
@@ -65,9 +50,7 @@ struct WBP_CMN_Line_Btn_C_OnFocusLost final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_CMN_Line_Btn_C_OnFocusLost) == 0x000004, "Wrong alignment on WBP_CMN_Line_Btn_C_OnFocusLost");
-static_assert(sizeof(WBP_CMN_Line_Btn_C_OnFocusLost) == 0x000008, "Wrong size on WBP_CMN_Line_Btn_C_OnFocusLost");
-static_assert(offsetof(WBP_CMN_Line_Btn_C_OnFocusLost, InFocusEvent) == 0x000000, "Member 'WBP_CMN_Line_Btn_C_OnFocusLost::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Line_Btn_C_OnFocusLost;
 
 // Function WBP_CMN_Line_Btn.WBP_CMN_Line_Btn_C.OnFocusReceived
 // 0x01B0 (0x01B0 - 0x0000)
@@ -79,12 +62,7 @@ public:
 	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
 	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x00F8(0x00B8)()
 };
-static_assert(alignof(WBP_CMN_Line_Btn_C_OnFocusReceived) == 0x000008, "Wrong alignment on WBP_CMN_Line_Btn_C_OnFocusReceived");
-static_assert(sizeof(WBP_CMN_Line_Btn_C_OnFocusReceived) == 0x0001B0, "Wrong size on WBP_CMN_Line_Btn_C_OnFocusReceived");
-static_assert(offsetof(WBP_CMN_Line_Btn_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'WBP_CMN_Line_Btn_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Line_Btn_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'WBP_CMN_Line_Btn_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Line_Btn_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'WBP_CMN_Line_Btn_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Line_Btn_C_OnFocusReceived, K2Node_MakeStruct_EventReply) == 0x0000F8, "Member 'WBP_CMN_Line_Btn_C_OnFocusReceived::K2Node_MakeStruct_EventReply' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Line_Btn_C_OnFocusReceived;
 
 // Function WBP_CMN_Line_Btn.WBP_CMN_Line_Btn_C.OnFocusReceivedInternal
 // 0x0040 (0x0040 - 0x0000)
@@ -94,10 +72,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_CMN_Line_Btn_C_OnFocusReceivedInternal) == 0x000004, "Wrong alignment on WBP_CMN_Line_Btn_C_OnFocusReceivedInternal");
-static_assert(sizeof(WBP_CMN_Line_Btn_C_OnFocusReceivedInternal) == 0x000040, "Wrong size on WBP_CMN_Line_Btn_C_OnFocusReceivedInternal");
-static_assert(offsetof(WBP_CMN_Line_Btn_C_OnFocusReceivedInternal, MyGeometry) == 0x000000, "Member 'WBP_CMN_Line_Btn_C_OnFocusReceivedInternal::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Line_Btn_C_OnFocusReceivedInternal, InFocusEvent) == 0x000038, "Member 'WBP_CMN_Line_Btn_C_OnFocusReceivedInternal::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Line_Btn_C_OnFocusReceivedInternal;
 
 // Function WBP_CMN_Line_Btn.WBP_CMN_Line_Btn_C.SetActive
 // 0x0020 (0x0020 - 0x0000)
@@ -114,16 +89,7 @@ public:
 	class UWidgetAnimation*                       K2Node_Select_Default_1;                           // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_Line_Btn_C_SetActive) == 0x000008, "Wrong alignment on WBP_CMN_Line_Btn_C_SetActive");
-static_assert(sizeof(WBP_CMN_Line_Btn_C_SetActive) == 0x000020, "Wrong size on WBP_CMN_Line_Btn_C_SetActive");
-static_assert(offsetof(WBP_CMN_Line_Btn_C_SetActive, bInIsActive) == 0x000000, "Member 'WBP_CMN_Line_Btn_C_SetActive::bInIsActive' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Line_Btn_C_SetActive, Temp_bool_Variable) == 0x000001, "Member 'WBP_CMN_Line_Btn_C_SetActive::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Line_Btn_C_SetActive, Temp_bool_Variable_1) == 0x000002, "Member 'WBP_CMN_Line_Btn_C_SetActive::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Line_Btn_C_SetActive, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000003, "Member 'WBP_CMN_Line_Btn_C_SetActive::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Line_Btn_C_SetActive, CallFunc_BooleanAND_ReturnValue) == 0x000004, "Member 'WBP_CMN_Line_Btn_C_SetActive::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Line_Btn_C_SetActive, K2Node_Select_Default) == 0x000008, "Member 'WBP_CMN_Line_Btn_C_SetActive::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Line_Btn_C_SetActive, K2Node_Select_Default_1) == 0x000010, "Member 'WBP_CMN_Line_Btn_C_SetActive::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Line_Btn_C_SetActive, CallFunc_PlayAnimation_ReturnValue) == 0x000018, "Member 'WBP_CMN_Line_Btn_C_SetActive::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Line_Btn_C_SetActive;
 
 // Function WBP_CMN_Line_Btn.WBP_CMN_Line_Btn_C.SetUnselectableAnimationEnable
 // 0x0001 (0x0001 - 0x0000)
@@ -132,9 +98,7 @@ struct WBP_CMN_Line_Btn_C_SetUnselectableAnimationEnable final
 public:
 	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_Line_Btn_C_SetUnselectableAnimationEnable) == 0x000001, "Wrong alignment on WBP_CMN_Line_Btn_C_SetUnselectableAnimationEnable");
-static_assert(sizeof(WBP_CMN_Line_Btn_C_SetUnselectableAnimationEnable) == 0x000001, "Wrong size on WBP_CMN_Line_Btn_C_SetUnselectableAnimationEnable");
-static_assert(offsetof(WBP_CMN_Line_Btn_C_SetUnselectableAnimationEnable, bInEnable) == 0x000000, "Member 'WBP_CMN_Line_Btn_C_SetUnselectableAnimationEnable::bInEnable' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Line_Btn_C_SetUnselectableAnimationEnable;
 
 }
 

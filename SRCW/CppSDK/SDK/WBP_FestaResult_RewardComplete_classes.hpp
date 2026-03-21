@@ -37,20 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_FestaResult_RewardComplete_C">();
+		BP_STATIC_CLASS_IMPL("WBP_FestaResult_RewardComplete_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_FestaResult_RewardComplete_C")
 	}
 	static class UWBP_FestaResult_RewardComplete_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_FestaResult_RewardComplete_C>();
 	}
 };
-static_assert(alignof(UWBP_FestaResult_RewardComplete_C) == 0x000008, "Wrong alignment on UWBP_FestaResult_RewardComplete_C");
-static_assert(sizeof(UWBP_FestaResult_RewardComplete_C) == 0x000308, "Wrong size on UWBP_FestaResult_RewardComplete_C");
-static_assert(offsetof(UWBP_FestaResult_RewardComplete_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_FestaResult_RewardComplete_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_RewardComplete_C, Out) == 0x0002E8, "Member 'UWBP_FestaResult_RewardComplete_C::Out' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_RewardComplete_C, InLoop) == 0x0002F0, "Member 'UWBP_FestaResult_RewardComplete_C::InLoop' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_RewardComplete_C, base) == 0x0002F8, "Member 'UWBP_FestaResult_RewardComplete_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_RewardComplete_C, DMY_CharaCut) == 0x000300, "Member 'UWBP_FestaResult_RewardComplete_C::DMY_CharaCut' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_FestaResult_RewardComplete_C;
 
 }
 

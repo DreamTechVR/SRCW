@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
-#include "UnionRun_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "UNION_classes.hpp"
+#include "UnionSystem_structs.hpp"
+#include "UnionRun_structs.hpp"
+#include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -49,24 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MachineResourceElement_C">();
+		BP_STATIC_CLASS_IMPL("MachineResourceElement_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MachineResourceElement_C")
 	}
 	static class UMachineResourceElement_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMachineResourceElement_C>();
 	}
 };
-static_assert(alignof(UMachineResourceElement_C) == 0x000008, "Wrong alignment on UMachineResourceElement_C");
-static_assert(sizeof(UMachineResourceElement_C) == 0x0000B0, "Wrong size on UMachineResourceElement_C");
-static_assert(offsetof(UMachineResourceElement_C, UberGraphFrame) == 0x000060, "Member 'UMachineResourceElement_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMachineResourceElement_C, FrontParts) == 0x000068, "Member 'UMachineResourceElement_C::FrontParts' has a wrong offset!");
-static_assert(offsetof(UMachineResourceElement_C, RearParts) == 0x000070, "Member 'UMachineResourceElement_C::RearParts' has a wrong offset!");
-static_assert(offsetof(UMachineResourceElement_C, TireParts) == 0x000078, "Member 'UMachineResourceElement_C::TireParts' has a wrong offset!");
-static_assert(offsetof(UMachineResourceElement_C, SideMesh) == 0x000080, "Member 'UMachineResourceElement_C::SideMesh' has a wrong offset!");
-static_assert(offsetof(UMachineResourceElement_C, PlayerNo) == 0x000088, "Member 'UMachineResourceElement_C::PlayerNo' has a wrong offset!");
-static_assert(offsetof(UMachineResourceElement_C, CarStatusType) == 0x00008C, "Member 'UMachineResourceElement_C::CarStatusType' has a wrong offset!");
-static_assert(offsetof(UMachineResourceElement_C, MachineId) == 0x00008D, "Member 'UMachineResourceElement_C::MachineId' has a wrong offset!");
-static_assert(offsetof(UMachineResourceElement_C, PartsPath) == 0x000090, "Member 'UMachineResourceElement_C::PartsPath' has a wrong offset!");
+DUMPER7_ASSERTS_UMachineResourceElement_C;
 
 }
 

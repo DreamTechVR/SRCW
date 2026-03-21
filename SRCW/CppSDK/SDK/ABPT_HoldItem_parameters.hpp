@@ -23,9 +23,7 @@ struct ABPT_HoldItem_C_AnimGraph final
 public:
 	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(ABPT_HoldItem_C_AnimGraph) == 0x000008, "Wrong alignment on ABPT_HoldItem_C_AnimGraph");
-static_assert(sizeof(ABPT_HoldItem_C_AnimGraph) == 0x000010, "Wrong size on ABPT_HoldItem_C_AnimGraph");
-static_assert(offsetof(ABPT_HoldItem_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'ABPT_HoldItem_C_AnimGraph::AnimGraph_0' has a wrong offset!");
+DUMPER7_ASSERTS_ABPT_HoldItem_C_AnimGraph;
 
 // Function ABPT_HoldItem.ABPT_HoldItem_C.ExecuteUbergraph_ABPT_HoldItem
 // 0x00D0 (0x00D0 - 0x0000)
@@ -150,118 +148,7 @@ public:
 	double                                        CallFunc_LessEqual_DoubleDouble_A_ImplicitCast_4;  // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_LessEqual_DoubleDouble_A_ImplicitCast_5;  // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem) == 0x000008, "Wrong alignment on ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem");
-static_assert(sizeof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem) == 0x0000D0, "Wrong size on ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, EntryPoint) == 0x000000, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_GetBlendTime_NewParam) == 0x000008, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_GetBlendTime_NewParam' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_GetRelevantAnimTimeRemaining_ReturnValue) == 0x000010, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_GetRelevantAnimTimeRemaining_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsUsed_ReturnValue) == 0x000014, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsUsed_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_LessEqual_DoubleDouble_ReturnValue) == 0x000015, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_LessEqual_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_Not_PreBool_ReturnValue) == 0x000016, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsValidOutState_Out_Valid) == 0x000017, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsValidOutState_Out_Valid' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_BooleanAND_ReturnValue) == 0x000018, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsValidOutState_Out_Valid_1) == 0x000019, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsValidOutState_Out_Valid_1' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsUsed_ReturnValue_1) == 0x00001A, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsUsed_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_Not_PreBool_ReturnValue_1) == 0x00001B, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_BooleanOR_ReturnValue) == 0x00001C, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsValidOutState_Out_Valid_2) == 0x00001D, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsValidOutState_Out_Valid_2' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsUsed_ReturnValue_2) == 0x00001E, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsUsed_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_Not_PreBool_ReturnValue_2) == 0x00001F, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsUsed_ReturnValue_3) == 0x000020, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsUsed_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_BooleanAND_ReturnValue_1) == 0x000021, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsValidUseState_Out_Valid) == 0x000022, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsValidUseState_Out_Valid' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_BooleanAND_ReturnValue_2) == 0x000023, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsValidUseState_Out_Valid_1) == 0x000024, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsValidUseState_Out_Valid_1' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsUsed_ReturnValue_4) == 0x000025, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsUsed_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_BooleanOR_ReturnValue_1) == 0x000026, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_GetRelevantAnimTimeRemainingFraction_ReturnValue) == 0x000028, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_GetRelevantAnimTimeRemainingFraction_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsSkipInState_Out_Valid) == 0x00002C, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsSkipInState_Out_Valid' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_LessEqual_DoubleDouble_ReturnValue_1) == 0x00002D, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_LessEqual_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsUsed_ReturnValue_5) == 0x00002E, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsUsed_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_BooleanOR_ReturnValue_2) == 0x00002F, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsValidUseState_Out_Valid_2) == 0x000030, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsValidUseState_Out_Valid_2' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_BooleanAND_ReturnValue_3) == 0x000031, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsValidUseState_Out_Valid_3) == 0x000032, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsValidUseState_Out_Valid_3' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_BooleanOR_ReturnValue_3) == 0x000033, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_BooleanOR_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsValidOutState_Out_Valid_3) == 0x000034, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsValidOutState_Out_Valid_3' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_Not_PreBool_ReturnValue_3) == 0x000035, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_Not_PreBool_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsUsed_ReturnValue_6) == 0x000036, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsUsed_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_BooleanAND_ReturnValue_4) == 0x000037, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_BooleanAND_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsUsed_ReturnValue_7) == 0x000038, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsUsed_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_GetRelevantAnimTimeRemaining_ReturnValue_1) == 0x00003C, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_GetRelevantAnimTimeRemaining_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_Not_PreBool_ReturnValue_4) == 0x000040, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_Not_PreBool_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_LessEqual_DoubleDouble_ReturnValue_2) == 0x000041, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_LessEqual_DoubleDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsValidOutState_Out_Valid_4) == 0x000042, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsValidOutState_Out_Valid_4' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsValidOutState_Out_Valid_5) == 0x000043, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsValidOutState_Out_Valid_5' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_BooleanAND_ReturnValue_5) == 0x000044, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_BooleanAND_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_Not_PreBool_ReturnValue_5) == 0x000045, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_Not_PreBool_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsUsed_ReturnValue_8) == 0x000046, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsUsed_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_BooleanOR_ReturnValue_4) == 0x000047, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_BooleanOR_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsValidOutState_Out_Valid_6) == 0x000048, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsValidOutState_Out_Valid_6' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsUsed_ReturnValue_9) == 0x000049, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsUsed_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_Not_PreBool_ReturnValue_6) == 0x00004A, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_Not_PreBool_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_BooleanAND_ReturnValue_6) == 0x00004B, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_BooleanAND_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsUsed_ReturnValue_10) == 0x00004C, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsUsed_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsValidUseState_Out_Valid_4) == 0x00004D, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsValidUseState_Out_Valid_4' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsValidUseState_Out_Valid_5) == 0x00004E, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsValidUseState_Out_Valid_5' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_BooleanAND_ReturnValue_7) == 0x00004F, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_BooleanAND_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsUsed_ReturnValue_11) == 0x000050, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsUsed_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_BooleanOR_ReturnValue_5) == 0x000051, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_BooleanOR_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_GetRelevantAnimTimeRemainingFraction_ReturnValue_1) == 0x000054, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_GetRelevantAnimTimeRemainingFraction_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsSkipInState_Out_Valid_1) == 0x000058, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsSkipInState_Out_Valid_1' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_LessEqual_DoubleDouble_ReturnValue_3) == 0x000059, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_LessEqual_DoubleDouble_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_BooleanOR_ReturnValue_6) == 0x00005A, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_BooleanOR_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsUsed_ReturnValue_12) == 0x00005B, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsUsed_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsValidUseState_Out_Valid_6) == 0x00005C, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsValidUseState_Out_Valid_6' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsValidUseState_Out_Valid_7) == 0x00005D, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsValidUseState_Out_Valid_7' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_BooleanAND_ReturnValue_8) == 0x00005E, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_BooleanAND_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsValidOutState_Out_Valid_7) == 0x00005F, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsValidOutState_Out_Valid_7' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_BooleanOR_ReturnValue_7) == 0x000060, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_BooleanOR_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_Not_PreBool_ReturnValue_7) == 0x000061, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_Not_PreBool_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsUsed_ReturnValue_13) == 0x000062, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsUsed_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_BooleanAND_ReturnValue_9) == 0x000063, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_BooleanAND_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsUsed_ReturnValue_14) == 0x000064, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsUsed_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_GetRelevantAnimTimeRemaining_ReturnValue_2) == 0x000068, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_GetRelevantAnimTimeRemaining_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_Not_PreBool_ReturnValue_8) == 0x00006C, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_Not_PreBool_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_LessEqual_DoubleDouble_ReturnValue_4) == 0x00006D, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_LessEqual_DoubleDouble_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsValidOutState_Out_Valid_8) == 0x00006E, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsValidOutState_Out_Valid_8' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsValidOutState_Out_Valid_9) == 0x00006F, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsValidOutState_Out_Valid_9' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_BooleanAND_ReturnValue_10) == 0x000070, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_BooleanAND_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_Not_PreBool_ReturnValue_9) == 0x000071, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_Not_PreBool_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsUsed_ReturnValue_15) == 0x000072, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsUsed_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_BooleanOR_ReturnValue_8) == 0x000073, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_BooleanOR_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsValidOutState_Out_Valid_10) == 0x000074, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsValidOutState_Out_Valid_10' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsUsed_ReturnValue_16) == 0x000075, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsUsed_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_Not_PreBool_ReturnValue_10) == 0x000076, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_Not_PreBool_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsUsed_ReturnValue_17) == 0x000077, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsUsed_ReturnValue_17' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_BooleanAND_ReturnValue_11) == 0x000078, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_BooleanAND_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsValidUseState_Out_Valid_8) == 0x000079, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsValidUseState_Out_Valid_8' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_BooleanAND_ReturnValue_12) == 0x00007A, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_BooleanAND_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsValidUseState_Out_Valid_9) == 0x00007B, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsValidUseState_Out_Valid_9' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_BooleanOR_ReturnValue_9) == 0x00007C, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_BooleanOR_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsUsed_ReturnValue_18) == 0x00007D, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsUsed_ReturnValue_18' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_GetRelevantAnimTimeRemainingFraction_ReturnValue_2) == 0x000080, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_GetRelevantAnimTimeRemainingFraction_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsSkipInState_Out_Valid_2) == 0x000084, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsSkipInState_Out_Valid_2' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_LessEqual_DoubleDouble_ReturnValue_5) == 0x000085, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_LessEqual_DoubleDouble_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsUsed_ReturnValue_19) == 0x000086, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsUsed_ReturnValue_19' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_BooleanOR_ReturnValue_10) == 0x000087, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_BooleanOR_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsValidUseState_Out_Valid_10) == 0x000088, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsValidUseState_Out_Valid_10' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_BooleanAND_ReturnValue_13) == 0x000089, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_BooleanAND_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsValidUseState_Out_Valid_11) == 0x00008A, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsValidUseState_Out_Valid_11' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsValidOutState_Out_Valid_11) == 0x00008B, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsValidOutState_Out_Valid_11' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_BooleanOR_ReturnValue_11) == 0x00008C, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_BooleanOR_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_Not_PreBool_ReturnValue_11) == 0x00008D, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_Not_PreBool_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_IsUsed_ReturnValue_20) == 0x00008E, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_IsUsed_ReturnValue_20' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_BooleanAND_ReturnValue_14) == 0x00008F, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_BooleanAND_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_Array_Set_Item_ImplicitCast) == 0x000090, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_Array_Set_Item_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_Array_Set_Item_ImplicitCast_1) == 0x000094, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_Array_Set_Item_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_Array_Set_Item_ImplicitCast_2) == 0x000098, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_Array_Set_Item_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_LessEqual_DoubleDouble_A_ImplicitCast) == 0x0000A0, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_LessEqual_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_LessEqual_DoubleDouble_A_ImplicitCast_1) == 0x0000A8, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_LessEqual_DoubleDouble_A_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_LessEqual_DoubleDouble_A_ImplicitCast_2) == 0x0000B0, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_LessEqual_DoubleDouble_A_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_LessEqual_DoubleDouble_A_ImplicitCast_3) == 0x0000B8, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_LessEqual_DoubleDouble_A_ImplicitCast_3' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_LessEqual_DoubleDouble_A_ImplicitCast_4) == 0x0000C0, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_LessEqual_DoubleDouble_A_ImplicitCast_4' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem, CallFunc_LessEqual_DoubleDouble_A_ImplicitCast_5) == 0x0000C8, "Member 'ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem::CallFunc_LessEqual_DoubleDouble_A_ImplicitCast_5' has a wrong offset!");
+DUMPER7_ASSERTS_ABPT_HoldItem_C_ExecuteUbergraph_ABPT_HoldItem;
 
 // Function ABPT_HoldItem.ABPT_HoldItem_C.IsSkipInState
 // 0x0008 (0x0008 - 0x0000)
@@ -271,10 +158,7 @@ public:
 	int32                                         In_RemainingUses;                                  // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Out_Valid;                                         // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ABPT_HoldItem_C_IsSkipInState) == 0x000004, "Wrong alignment on ABPT_HoldItem_C_IsSkipInState");
-static_assert(sizeof(ABPT_HoldItem_C_IsSkipInState) == 0x000008, "Wrong size on ABPT_HoldItem_C_IsSkipInState");
-static_assert(offsetof(ABPT_HoldItem_C_IsSkipInState, In_RemainingUses) == 0x000000, "Member 'ABPT_HoldItem_C_IsSkipInState::In_RemainingUses' has a wrong offset!");
-static_assert(offsetof(ABPT_HoldItem_C_IsSkipInState, Out_Valid) == 0x000004, "Member 'ABPT_HoldItem_C_IsSkipInState::Out_Valid' has a wrong offset!");
+DUMPER7_ASSERTS_ABPT_HoldItem_C_IsSkipInState;
 
 // Function ABPT_HoldItem.ABPT_HoldItem_C.GetBlendTime
 // 0x0008 (0x0008 - 0x0000)
@@ -283,9 +167,7 @@ struct ABPT_HoldItem_C_GetBlendTime final
 public:
 	double                                        newParam;                                          // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ABPT_HoldItem_C_GetBlendTime) == 0x000008, "Wrong alignment on ABPT_HoldItem_C_GetBlendTime");
-static_assert(sizeof(ABPT_HoldItem_C_GetBlendTime) == 0x000008, "Wrong size on ABPT_HoldItem_C_GetBlendTime");
-static_assert(offsetof(ABPT_HoldItem_C_GetBlendTime, newParam) == 0x000000, "Member 'ABPT_HoldItem_C_GetBlendTime::newParam' has a wrong offset!");
+DUMPER7_ASSERTS_ABPT_HoldItem_C_GetBlendTime;
 
 // Function ABPT_HoldItem.ABPT_HoldItem_C.IsValidOutState
 // 0x0001 (0x0001 - 0x0000)
@@ -294,9 +176,7 @@ struct ABPT_HoldItem_C_IsValidOutState final
 public:
 	bool                                          Out_Valid;                                         // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ABPT_HoldItem_C_IsValidOutState) == 0x000001, "Wrong alignment on ABPT_HoldItem_C_IsValidOutState");
-static_assert(sizeof(ABPT_HoldItem_C_IsValidOutState) == 0x000001, "Wrong size on ABPT_HoldItem_C_IsValidOutState");
-static_assert(offsetof(ABPT_HoldItem_C_IsValidOutState, Out_Valid) == 0x000000, "Member 'ABPT_HoldItem_C_IsValidOutState::Out_Valid' has a wrong offset!");
+DUMPER7_ASSERTS_ABPT_HoldItem_C_IsValidOutState;
 
 // Function ABPT_HoldItem.ABPT_HoldItem_C.IsValidUseState
 // 0x0001 (0x0001 - 0x0000)
@@ -305,9 +185,7 @@ struct ABPT_HoldItem_C_IsValidUseState final
 public:
 	bool                                          Out_Valid;                                         // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ABPT_HoldItem_C_IsValidUseState) == 0x000001, "Wrong alignment on ABPT_HoldItem_C_IsValidUseState");
-static_assert(sizeof(ABPT_HoldItem_C_IsValidUseState) == 0x000001, "Wrong size on ABPT_HoldItem_C_IsValidUseState");
-static_assert(offsetof(ABPT_HoldItem_C_IsValidUseState, Out_Valid) == 0x000000, "Member 'ABPT_HoldItem_C_IsValidUseState::Out_Valid' has a wrong offset!");
+DUMPER7_ASSERTS_ABPT_HoldItem_C_IsValidUseState;
 
 }
 

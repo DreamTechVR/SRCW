@@ -28,13 +28,7 @@ public:
 	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C_SetIcon) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C_SetIcon");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C_SetIcon) == 0x000020, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C_SetIcon");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C_SetIcon, newParam) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C_SetIcon::newParam' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C_SetIcon, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000004, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C_SetIcon::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C_SetIcon, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C_SetIcon::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C_SetIcon, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000010, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C_SetIcon::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C_SetIcon, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000018, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C_SetIcon::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C_SetIcon;
 
 // Function WBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo.WBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C.SetRank
 // 0x0004 (0x0004 - 0x0000)
@@ -43,9 +37,7 @@ struct WBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C_SetRank final
 public:
 	int32                                         NewRank;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C_SetRank) == 0x000004, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C_SetRank");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C_SetRank) == 0x000004, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C_SetRank");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C_SetRank, NewRank) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C_SetRank::NewRank' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C_SetRank;
 
 }
 

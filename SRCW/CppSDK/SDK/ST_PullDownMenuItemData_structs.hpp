@@ -24,11 +24,7 @@ public:
 	class FText                                   Text_5_9A74A6584070C2ED4855C99D592CE151;           // 0x0008(0x0010)(Edit, BlueprintVisible)
 	bool                                          bIsSelected_11_A71780774037533004966A8108DA4A41;   // 0x0018(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FST_PullDownMenuItemData) == 0x000008, "Wrong alignment on FST_PullDownMenuItemData");
-static_assert(sizeof(FST_PullDownMenuItemData) == 0x000020, "Wrong size on FST_PullDownMenuItemData");
-static_assert(offsetof(FST_PullDownMenuItemData, Id_2_1CE7CEF44580534C0BA8D9B5C21D5D37) == 0x000000, "Member 'FST_PullDownMenuItemData::Id_2_1CE7CEF44580534C0BA8D9B5C21D5D37' has a wrong offset!");
-static_assert(offsetof(FST_PullDownMenuItemData, Text_5_9A74A6584070C2ED4855C99D592CE151) == 0x000008, "Member 'FST_PullDownMenuItemData::Text_5_9A74A6584070C2ED4855C99D592CE151' has a wrong offset!");
-static_assert(offsetof(FST_PullDownMenuItemData, bIsSelected_11_A71780774037533004966A8108DA4A41) == 0x000018, "Member 'FST_PullDownMenuItemData::bIsSelected_11_A71780774037533004966A8108DA4A41' has a wrong offset!");
+DUMPER7_ASSERTS_FST_PullDownMenuItemData;
 
 }
 

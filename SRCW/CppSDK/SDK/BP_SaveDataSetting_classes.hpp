@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -45,18 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_SaveDataSetting_C">();
+		BP_STATIC_CLASS_IMPL("BP_SaveDataSetting_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_SaveDataSetting_C")
 	}
 	static class ABP_SaveDataSetting_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_SaveDataSetting_C>();
 	}
 };
-static_assert(alignof(ABP_SaveDataSetting_C) == 0x000008, "Wrong alignment on ABP_SaveDataSetting_C");
-static_assert(sizeof(ABP_SaveDataSetting_C) == 0x000328, "Wrong size on ABP_SaveDataSetting_C");
-static_assert(offsetof(ABP_SaveDataSetting_C, UberGraphFrame) == 0x000308, "Member 'ABP_SaveDataSetting_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_SaveDataSetting_C, DefaultSceneRoot) == 0x000310, "Member 'ABP_SaveDataSetting_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABP_SaveDataSetting_C, OnFinished) == 0x000318, "Member 'ABP_SaveDataSetting_C::OnFinished' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_SaveDataSetting_C;
 
 }
 

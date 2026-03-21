@@ -56,32 +56,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_HUD_Sub_Rank_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_HUD_Sub_Rank_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_HUD_Sub_Rank_C")
 	}
 	static class UWBP_Race_HUD_Sub_Rank_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_HUD_Sub_Rank_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_HUD_Sub_Rank_C) == 0x000008, "Wrong alignment on UWBP_Race_HUD_Sub_Rank_C");
-static_assert(sizeof(UWBP_Race_HUD_Sub_Rank_C) == 0x0003C8, "Wrong size on UWBP_Race_HUD_Sub_Rank_C");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Rank_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Race_HUD_Sub_Rank_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Rank_C, Rank_Out) == 0x0002E8, "Member 'UWBP_Race_HUD_Sub_Rank_C::Rank_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Rank_C, Rank_Change) == 0x0002F0, "Member 'UWBP_Race_HUD_Sub_Rank_C::Rank_Change' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Rank_C, Rank_in) == 0x0002F8, "Member 'UWBP_Race_HUD_Sub_Rank_C::Rank_in' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Rank_C, Rank_Loop) == 0x000300, "Member 'UWBP_Race_HUD_Sub_Rank_C::Rank_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Rank_C, Twond) == 0x000308, "Member 'UWBP_Race_HUD_Sub_Rank_C::Twond' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Rank_C, Threerd) == 0x000310, "Member 'UWBP_Race_HUD_Sub_Rank_C::Threerd' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Rank_C, PAT_4_12th) == 0x000318, "Member 'UWBP_Race_HUD_Sub_Rank_C::PAT_4_12th' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Rank_C, WBP_Race_HUD_Sub_Rank1) == 0x000320, "Member 'UWBP_Race_HUD_Sub_Rank_C::WBP_Race_HUD_Sub_Rank1' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Rank_C, WidgetSwitcher_Rank) == 0x000328, "Member 'UWBP_Race_HUD_Sub_Rank_C::WidgetSwitcher_Rank' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Rank_C, MI_4_12) == 0x000330, "Member 'UWBP_Race_HUD_Sub_Rank_C::MI_4_12' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Rank_C, RankIndex) == 0x000338, "Member 'UWBP_Race_HUD_Sub_Rank_C::RankIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Rank_C, RankOtherDataTable) == 0x000340, "Member 'UWBP_Race_HUD_Sub_Rank_C::RankOtherDataTable' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Rank_C, MI_3rd) == 0x000368, "Member 'UWBP_Race_HUD_Sub_Rank_C::MI_3rd' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Rank_C, MI_2nd) == 0x000370, "Member 'UWBP_Race_HUD_Sub_Rank_C::MI_2nd' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Rank_C, Rank3rdDataTable) == 0x000378, "Member 'UWBP_Race_HUD_Sub_Rank_C::Rank3rdDataTable' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Rank_C, Rank2ndDataTable) == 0x0003A0, "Member 'UWBP_Race_HUD_Sub_Rank_C::Rank2ndDataTable' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_HUD_Sub_Rank_C;
 
 }
 

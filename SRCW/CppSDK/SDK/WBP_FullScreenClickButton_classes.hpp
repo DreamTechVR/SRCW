@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_classes.hpp"
 
 
@@ -41,22 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_FullScreenClickButton_C">();
+		BP_STATIC_CLASS_IMPL("WBP_FullScreenClickButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_FullScreenClickButton_C")
 	}
 	static class UWBP_FullScreenClickButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_FullScreenClickButton_C>();
 	}
 };
-static_assert(alignof(UWBP_FullScreenClickButton_C) == 0x000008, "Wrong alignment on UWBP_FullScreenClickButton_C");
-static_assert(sizeof(UWBP_FullScreenClickButton_C) == 0x000320, "Wrong size on UWBP_FullScreenClickButton_C");
-static_assert(offsetof(UWBP_FullScreenClickButton_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_FullScreenClickButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_FullScreenClickButton_C, MouseInteraction) == 0x0002E8, "Member 'UWBP_FullScreenClickButton_C::MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_FullScreenClickButton_C, IsDragging) == 0x0002F0, "Member 'UWBP_FullScreenClickButton_C::IsDragging' has a wrong offset!");
-static_assert(offsetof(UWBP_FullScreenClickButton_C, DragMouseLocation) == 0x0002F8, "Member 'UWBP_FullScreenClickButton_C::DragMouseLocation' has a wrong offset!");
-static_assert(offsetof(UWBP_FullScreenClickButton_C, MaxDragValue) == 0x000308, "Member 'UWBP_FullScreenClickButton_C::MaxDragValue' has a wrong offset!");
-static_assert(offsetof(UWBP_FullScreenClickButton_C, MinDragValue) == 0x000310, "Member 'UWBP_FullScreenClickButton_C::MinDragValue' has a wrong offset!");
-static_assert(offsetof(UWBP_FullScreenClickButton_C, WhenPressedWidget) == 0x000318, "Member 'UWBP_FullScreenClickButton_C::WhenPressedWidget' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_FullScreenClickButton_C;
 
 }
 

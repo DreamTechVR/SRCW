@@ -29,40 +29,25 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue_2;       // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue_3;       // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_Sub_RaceRuleTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRuleTable) == 0x000008, "Wrong alignment on WBP_StatusInfo_Sub_RaceRuleTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRuleTable");
-static_assert(sizeof(WBP_StatusInfo_Sub_RaceRuleTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRuleTable) == 0x000028, "Wrong size on WBP_StatusInfo_Sub_RaceRuleTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRuleTable");
-static_assert(offsetof(WBP_StatusInfo_Sub_RaceRuleTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRuleTable, EntryPoint) == 0x000000, "Member 'WBP_StatusInfo_Sub_RaceRuleTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRuleTable::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_RaceRuleTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRuleTable, CallFunc_PlayAnimationForward_ReturnValue) == 0x000008, "Member 'WBP_StatusInfo_Sub_RaceRuleTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRuleTable::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_RaceRuleTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRuleTable, CallFunc_PlayAnimationForward_ReturnValue_1) == 0x000010, "Member 'WBP_StatusInfo_Sub_RaceRuleTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRuleTable::CallFunc_PlayAnimationForward_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_RaceRuleTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRuleTable, CallFunc_PlayAnimationForward_ReturnValue_2) == 0x000018, "Member 'WBP_StatusInfo_Sub_RaceRuleTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRuleTable::CallFunc_PlayAnimationForward_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_RaceRuleTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRuleTable, CallFunc_PlayAnimationForward_ReturnValue_3) == 0x000020, "Member 'WBP_StatusInfo_Sub_RaceRuleTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRuleTable::CallFunc_PlayAnimationForward_ReturnValue_3' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_Sub_RaceRuleTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRuleTable;
 
 // Function WBP_StatusInfo_Sub_RaceRuleTable.WBP_StatusInfo_Sub_RaceRuleTable_C.SetRule
-// 0x0098 (0x0098 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct WBP_StatusInfo_Sub_RaceRuleTable_C_SetRule final
 {
 public:
-	struct FFestaRuleInfomation                   FestaRuleInfo;                                     // 0x0000(0x0058)(BlueprintVisible, BlueprintReadOnly, Parm)
-	bool                                          IsDefault;                                         // 0x0058(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         SpecialNo;                                         // 0x005C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Array_Get_Item;                           // 0x0060(0x0010)()
-	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_75[0x3];                                       // 0x0075(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Array_Get_Item_1;                         // 0x0078(0x0010)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0088(0x0010)()
+	struct FFestaRuleInfomation                   FestaRuleInfo;                                     // 0x0000(0x0068)(BlueprintVisible, BlueprintReadOnly, Parm)
+	bool                                          IsDefault;                                         // 0x0068(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         SpecialNo;                                         // 0x006C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Array_Get_Item;                           // 0x0070(0x0010)()
+	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0084(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_85[0x3];                                       // 0x0085(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Array_Get_Item_1;                         // 0x0088(0x0010)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0098(0x0010)()
 };
-static_assert(alignof(WBP_StatusInfo_Sub_RaceRuleTable_C_SetRule) == 0x000008, "Wrong alignment on WBP_StatusInfo_Sub_RaceRuleTable_C_SetRule");
-static_assert(sizeof(WBP_StatusInfo_Sub_RaceRuleTable_C_SetRule) == 0x000098, "Wrong size on WBP_StatusInfo_Sub_RaceRuleTable_C_SetRule");
-static_assert(offsetof(WBP_StatusInfo_Sub_RaceRuleTable_C_SetRule, FestaRuleInfo) == 0x000000, "Member 'WBP_StatusInfo_Sub_RaceRuleTable_C_SetRule::FestaRuleInfo' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_RaceRuleTable_C_SetRule, IsDefault) == 0x000058, "Member 'WBP_StatusInfo_Sub_RaceRuleTable_C_SetRule::IsDefault' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_RaceRuleTable_C_SetRule, SpecialNo) == 0x00005C, "Member 'WBP_StatusInfo_Sub_RaceRuleTable_C_SetRule::SpecialNo' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_RaceRuleTable_C_SetRule, CallFunc_Array_Get_Item) == 0x000060, "Member 'WBP_StatusInfo_Sub_RaceRuleTable_C_SetRule::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_RaceRuleTable_C_SetRule, CallFunc_Array_LastIndex_ReturnValue) == 0x000070, "Member 'WBP_StatusInfo_Sub_RaceRuleTable_C_SetRule::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_RaceRuleTable_C_SetRule, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000074, "Member 'WBP_StatusInfo_Sub_RaceRuleTable_C_SetRule::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_RaceRuleTable_C_SetRule, CallFunc_Array_Get_Item_1) == 0x000078, "Member 'WBP_StatusInfo_Sub_RaceRuleTable_C_SetRule::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_RaceRuleTable_C_SetRule, CallFunc_MakeLiteralText_ReturnValue) == 0x000088, "Member 'WBP_StatusInfo_Sub_RaceRuleTable_C_SetRule::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_Sub_RaceRuleTable_C_SetRule;
 
 // Function WBP_StatusInfo_Sub_RaceRuleTable.WBP_StatusInfo_Sub_RaceRuleTable_C.SetSelect
 // 0x0005 (0x0005 - 0x0000)
@@ -75,13 +60,7 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_Sub_RaceRuleTable_C_SetSelect) == 0x000001, "Wrong alignment on WBP_StatusInfo_Sub_RaceRuleTable_C_SetSelect");
-static_assert(sizeof(WBP_StatusInfo_Sub_RaceRuleTable_C_SetSelect) == 0x000005, "Wrong size on WBP_StatusInfo_Sub_RaceRuleTable_C_SetSelect");
-static_assert(offsetof(WBP_StatusInfo_Sub_RaceRuleTable_C_SetSelect, ToSelect) == 0x000000, "Member 'WBP_StatusInfo_Sub_RaceRuleTable_C_SetSelect::ToSelect' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_RaceRuleTable_C_SetSelect, Temp_bool_Variable) == 0x000001, "Member 'WBP_StatusInfo_Sub_RaceRuleTable_C_SetSelect::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_RaceRuleTable_C_SetSelect, Temp_byte_Variable) == 0x000002, "Member 'WBP_StatusInfo_Sub_RaceRuleTable_C_SetSelect::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_RaceRuleTable_C_SetSelect, Temp_byte_Variable_1) == 0x000003, "Member 'WBP_StatusInfo_Sub_RaceRuleTable_C_SetSelect::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_RaceRuleTable_C_SetSelect, K2Node_Select_Default) == 0x000004, "Member 'WBP_StatusInfo_Sub_RaceRuleTable_C_SetSelect::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_Sub_RaceRuleTable_C_SetSelect;
 
 }
 

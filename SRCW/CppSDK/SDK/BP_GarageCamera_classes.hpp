@@ -23,15 +23,18 @@ class ABP_GarageCamera_C final : public AGarageCamera
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_GarageCamera_C">();
+		BP_STATIC_CLASS_IMPL("BP_GarageCamera_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_GarageCamera_C")
 	}
 	static class ABP_GarageCamera_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_GarageCamera_C>();
 	}
 };
-static_assert(alignof(ABP_GarageCamera_C) == 0x000008, "Wrong alignment on ABP_GarageCamera_C");
-static_assert(sizeof(ABP_GarageCamera_C) == 0x0002A0, "Wrong size on ABP_GarageCamera_C");
+DUMPER7_ASSERTS_ABP_GarageCamera_C;
 
 }
 

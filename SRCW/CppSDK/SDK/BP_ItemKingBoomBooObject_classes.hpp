@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "UnionSystem_structs.hpp"
 
 
 namespace SDK
@@ -27,16 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ItemKingBoomBooObject_C">();
+		BP_STATIC_CLASS_IMPL("BP_ItemKingBoomBooObject_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ItemKingBoomBooObject_C")
 	}
 	static class ABP_ItemKingBoomBooObject_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ItemKingBoomBooObject_C>();
 	}
 };
-static_assert(alignof(ABP_ItemKingBoomBooObject_C) == 0x000010, "Wrong alignment on ABP_ItemKingBoomBooObject_C");
-static_assert(sizeof(ABP_ItemKingBoomBooObject_C) == 0x000A00, "Wrong size on ABP_ItemKingBoomBooObject_C");
-static_assert(offsetof(ABP_ItemKingBoomBooObject_C, MoveSoundHandle) == 0x0009F0, "Member 'ABP_ItemKingBoomBooObject_C::MoveSoundHandle' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_ItemKingBoomBooObject_C;
 
 }
 

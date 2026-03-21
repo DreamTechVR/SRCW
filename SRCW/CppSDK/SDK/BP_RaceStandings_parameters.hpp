@@ -66,43 +66,7 @@ public:
 	uint8                                         Pad_9A[0x6];                                       // 0x009A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                K2Node_Select_Default_1;                           // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings) == 0x000008, "Wrong alignment on BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings");
-static_assert(sizeof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings) == 0x0000A8, "Wrong size on BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, EntryPoint) == 0x000000, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, CallFunc_UseTotalStandings_Use) == 0x000004, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::CallFunc_UseTotalStandings_Use' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, CallFunc_IsValid_ReturnValue) == 0x000005, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, CallFunc_GetSelectedPlayerCount_ReturnValue) == 0x000008, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::CallFunc_GetSelectedPlayerCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, K2Node_DynamicCast_AsWBP_Result_GP_Player_01) == 0x000010, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::K2Node_DynamicCast_AsWBP_Result_GP_Player_01' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, CallFunc_Greater_IntInt_ReturnValue) == 0x000019, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, K2Node_DynamicCast_AsWBP_Result_GP_Player_0204) == 0x000020, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::K2Node_DynamicCast_AsWBP_Result_GP_Player_0204' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, K2Node_DynamicCast_bSuccess_1) == 0x000028, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, CallFunc_UseTotalStandings_Use_1) == 0x000029, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::CallFunc_UseTotalStandings_Use_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, CallFunc_GetRacerCount_ReturnValue) == 0x00002C, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::CallFunc_GetRacerCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, CallFunc_GetRacerCount_ReturnValue_1) == 0x000030, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::CallFunc_GetRacerCount_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, K2Node_CreateDelegate_OutputDelegate) == 0x000034, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x000044, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000045, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, CallFunc_IsValid_ReturnValue_1) == 0x000046, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, CallFunc_GetSelectedGameModeId_ReturnValue_1) == 0x000047, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::CallFunc_GetSelectedGameModeId_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, CallFunc_GetSelectedGameModeId_ReturnValue_2) == 0x000048, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::CallFunc_GetSelectedGameModeId_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000049, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, CallFunc_NotEqual_ByteByte_ReturnValue_1) == 0x00004A, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::CallFunc_NotEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, CallFunc_GetSelectedGameModeId_ReturnValue_3) == 0x00004B, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::CallFunc_GetSelectedGameModeId_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x00004C, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, K2Node_DynamicCast_AsWBP_Time_Trial_Sub_Result) == 0x000050, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::K2Node_DynamicCast_AsWBP_Time_Trial_Sub_Result' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, K2Node_DynamicCast_bSuccess_2) == 0x000058, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, CallFunc_GetPlayerController_ReturnValue) == 0x000060, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, K2Node_DynamicCast_AsRace_Player_Controller) == 0x000068, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::K2Node_DynamicCast_AsRace_Player_Controller' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, K2Node_DynamicCast_bSuccess_3) == 0x000070, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, Temp_bool_Variable) == 0x000071, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, CallFunc_GetWidgetCache_RusultWidget) == 0x000078, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::CallFunc_GetWidgetCache_RusultWidget' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, K2Node_DynamicCast_AsUnion_Race_UIResult_Scene) == 0x000080, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::K2Node_DynamicCast_AsUnion_Race_UIResult_Scene' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, K2Node_DynamicCast_bSuccess_4) == 0x000088, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, K2Node_Select_Default) == 0x000090, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, CallFunc_UnregisterMainMenu_ReturnValue) == 0x000098, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::CallFunc_UnregisterMainMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, Temp_bool_Variable_1) == 0x000099, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings, K2Node_Select_Default_1) == 0x0000A0, "Member 'BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings::K2Node_Select_Default_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RaceStandings_C_ExecuteUbergraph_BP_RaceStandings;
 
 // Function BP_RaceStandings.BP_RaceStandings_C.GetTargetWidget
 // 0x0050 (0x0050 - 0x0000)
@@ -126,21 +90,7 @@ public:
 	class UClass*                                 K2Node_Select_Default;                             // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 K2Node_Select_Default_1;                           // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_RaceStandings_C_GetTargetWidget) == 0x000008, "Wrong alignment on BP_RaceStandings_C_GetTargetWidget");
-static_assert(sizeof(BP_RaceStandings_C_GetTargetWidget) == 0x000050, "Wrong size on BP_RaceStandings_C_GetTargetWidget");
-static_assert(offsetof(BP_RaceStandings_C_GetTargetWidget, WidgetBlueprint) == 0x000000, "Member 'BP_RaceStandings_C_GetTargetWidget::WidgetBlueprint' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_GetTargetWidget, Widget) == 0x000008, "Member 'BP_RaceStandings_C_GetTargetWidget::Widget' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_GetTargetWidget, Temp_bool_Variable) == 0x000010, "Member 'BP_RaceStandings_C_GetTargetWidget::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_GetTargetWidget, Temp_class_Variable) == 0x000018, "Member 'BP_RaceStandings_C_GetTargetWidget::Temp_class_Variable' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_GetTargetWidget, Temp_bool_Variable_1) == 0x000020, "Member 'BP_RaceStandings_C_GetTargetWidget::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_GetTargetWidget, Temp_class_Variable_1) == 0x000028, "Member 'BP_RaceStandings_C_GetTargetWidget::Temp_class_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_GetTargetWidget, Temp_class_Variable_2) == 0x000030, "Member 'BP_RaceStandings_C_GetTargetWidget::Temp_class_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_GetTargetWidget, CallFunc_GetSelectedPlayerCount_ReturnValue) == 0x000038, "Member 'BP_RaceStandings_C_GetTargetWidget::CallFunc_GetSelectedPlayerCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_GetTargetWidget, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x00003C, "Member 'BP_RaceStandings_C_GetTargetWidget::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_GetTargetWidget, CallFunc_Greater_IntInt_ReturnValue) == 0x00003D, "Member 'BP_RaceStandings_C_GetTargetWidget::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_GetTargetWidget, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00003E, "Member 'BP_RaceStandings_C_GetTargetWidget::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_GetTargetWidget, K2Node_Select_Default) == 0x000040, "Member 'BP_RaceStandings_C_GetTargetWidget::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_GetTargetWidget, K2Node_Select_Default_1) == 0x000048, "Member 'BP_RaceStandings_C_GetTargetWidget::K2Node_Select_Default_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RaceStandings_C_GetTargetWidget;
 
 // Function BP_RaceStandings.BP_RaceStandings_C.GetWidgetCache
 // 0x0018 (0x0018 - 0x0000)
@@ -151,11 +101,7 @@ public:
 	class ABP_RaceSequence_C*                     CallFunc_GetActorOfClass_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UBPC_RaceSequenceStateResult_C*         CallFunc_GetComponentByClass_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_RaceStandings_C_GetWidgetCache) == 0x000008, "Wrong alignment on BP_RaceStandings_C_GetWidgetCache");
-static_assert(sizeof(BP_RaceStandings_C_GetWidgetCache) == 0x000018, "Wrong size on BP_RaceStandings_C_GetWidgetCache");
-static_assert(offsetof(BP_RaceStandings_C_GetWidgetCache, RusultWidget) == 0x000000, "Member 'BP_RaceStandings_C_GetWidgetCache::RusultWidget' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_GetWidgetCache, CallFunc_GetActorOfClass_ReturnValue) == 0x000008, "Member 'BP_RaceStandings_C_GetWidgetCache::CallFunc_GetActorOfClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_GetWidgetCache, CallFunc_GetComponentByClass_ReturnValue) == 0x000010, "Member 'BP_RaceStandings_C_GetWidgetCache::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RaceStandings_C_GetWidgetCache;
 
 // Function BP_RaceStandings.BP_RaceStandings_C.UseTotalStandings
 // 0x000F (0x000F - 0x0000)
@@ -178,23 +124,7 @@ public:
 	EGameModeId                                   CallFunc_GetSelectedGameModeId_ReturnValue;        // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Select_Default;                             // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_RaceStandings_C_UseTotalStandings) == 0x000001, "Wrong alignment on BP_RaceStandings_C_UseTotalStandings");
-static_assert(sizeof(BP_RaceStandings_C_UseTotalStandings) == 0x00000F, "Wrong size on BP_RaceStandings_C_UseTotalStandings");
-static_assert(offsetof(BP_RaceStandings_C_UseTotalStandings, Use) == 0x000000, "Member 'BP_RaceStandings_C_UseTotalStandings::Use' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_UseTotalStandings, Temp_byte_Variable) == 0x000001, "Member 'BP_RaceStandings_C_UseTotalStandings::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_UseTotalStandings, Temp_bool_Variable) == 0x000002, "Member 'BP_RaceStandings_C_UseTotalStandings::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_UseTotalStandings, Temp_bool_Variable_1) == 0x000003, "Member 'BP_RaceStandings_C_UseTotalStandings::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_UseTotalStandings, Temp_bool_Variable_2) == 0x000004, "Member 'BP_RaceStandings_C_UseTotalStandings::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_UseTotalStandings, Temp_bool_Variable_3) == 0x000005, "Member 'BP_RaceStandings_C_UseTotalStandings::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_UseTotalStandings, Temp_bool_Variable_4) == 0x000006, "Member 'BP_RaceStandings_C_UseTotalStandings::Temp_bool_Variable_4' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_UseTotalStandings, Temp_bool_Variable_5) == 0x000007, "Member 'BP_RaceStandings_C_UseTotalStandings::Temp_bool_Variable_5' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_UseTotalStandings, Temp_bool_Variable_6) == 0x000008, "Member 'BP_RaceStandings_C_UseTotalStandings::Temp_bool_Variable_6' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_UseTotalStandings, Temp_bool_Variable_7) == 0x000009, "Member 'BP_RaceStandings_C_UseTotalStandings::Temp_bool_Variable_7' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_UseTotalStandings, Temp_bool_Variable_8) == 0x00000A, "Member 'BP_RaceStandings_C_UseTotalStandings::Temp_bool_Variable_8' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_UseTotalStandings, Temp_bool_Variable_9) == 0x00000B, "Member 'BP_RaceStandings_C_UseTotalStandings::Temp_bool_Variable_9' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_UseTotalStandings, Temp_bool_Variable_10) == 0x00000C, "Member 'BP_RaceStandings_C_UseTotalStandings::Temp_bool_Variable_10' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_UseTotalStandings, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x00000D, "Member 'BP_RaceStandings_C_UseTotalStandings::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceStandings_C_UseTotalStandings, K2Node_Select_Default) == 0x00000E, "Member 'BP_RaceStandings_C_UseTotalStandings::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RaceStandings_C_UseTotalStandings;
 
 }
 

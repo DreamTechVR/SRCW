@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -120,35 +120,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_EventEndInfo_CMN_window_C">();
+		BP_STATIC_CLASS_IMPL("WBP_EventEndInfo_CMN_window_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_EventEndInfo_CMN_window_C")
 	}
 	static class UWBP_EventEndInfo_CMN_window_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_EventEndInfo_CMN_window_C>();
 	}
 };
-static_assert(alignof(UWBP_EventEndInfo_CMN_window_C) == 0x000008, "Wrong alignment on UWBP_EventEndInfo_CMN_window_C");
-static_assert(sizeof(UWBP_EventEndInfo_CMN_window_C) == 0x000378, "Wrong size on UWBP_EventEndInfo_CMN_window_C");
-static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_EventEndInfo_CMN_window_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, Out) == 0x0002E8, "Member 'UWBP_EventEndInfo_CMN_window_C::Out' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, Loop) == 0x0002F0, "Member 'UWBP_EventEndInfo_CMN_window_C::Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, In) == 0x0002F8, "Member 'UWBP_EventEndInfo_CMN_window_C::In' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, Base_Footer) == 0x000300, "Member 'UWBP_EventEndInfo_CMN_window_C::Base_Footer' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, Base_Header) == 0x000308, "Member 'UWBP_EventEndInfo_CMN_window_C::Base_Header' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, BaseWindow) == 0x000310, "Member 'UWBP_EventEndInfo_CMN_window_C::BaseWindow' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, BG_Black) == 0x000318, "Member 'UWBP_EventEndInfo_CMN_window_C::BG_Black' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, EndInfoSwitcher) == 0x000320, "Member 'UWBP_EventEndInfo_CMN_window_C::EndInfoSwitcher' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, TXT_Event_Period) == 0x000328, "Member 'UWBP_EventEndInfo_CMN_window_C::TXT_Event_Period' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, TXT_Title_Detail) == 0x000330, "Member 'UWBP_EventEndInfo_CMN_window_C::TXT_Title_Detail' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, WBP_EventEndInfo_Sub_Details) == 0x000338, "Member 'UWBP_EventEndInfo_CMN_window_C::WBP_EventEndInfo_Sub_Details' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, WBP_EventEndInfo_Sub_Details_Legend) == 0x000340, "Member 'UWBP_EventEndInfo_CMN_window_C::WBP_EventEndInfo_Sub_Details_Legend' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, WBP_FooterMenu_Sub_CommonBtn) == 0x000348, "Member 'UWBP_EventEndInfo_CMN_window_C::WBP_FooterMenu_Sub_CommonBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, OnFinishedEvent) == 0x000350, "Member 'UWBP_EventEndInfo_CMN_window_C::OnFinishedEvent' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, Ranking) == 0x000360, "Member 'UWBP_EventEndInfo_CMN_window_C::Ranking' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, Point) == 0x000364, "Member 'UWBP_EventEndInfo_CMN_window_C::Point' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, Active_Event_End_Info_Widget) == 0x000368, "Member 'UWBP_EventEndInfo_CMN_window_C::Active_Event_End_Info_Widget' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, EventType) == 0x000370, "Member 'UWBP_EventEndInfo_CMN_window_C::EventType' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, SeasonNumber) == 0x000374, "Member 'UWBP_EventEndInfo_CMN_window_C::SeasonNumber' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_EventEndInfo_CMN_window_C;
 
 }
 

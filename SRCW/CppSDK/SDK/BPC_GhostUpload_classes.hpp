@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -44,22 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_GhostUpload_C">();
+		BP_STATIC_CLASS_IMPL("BPC_GhostUpload_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_GhostUpload_C")
 	}
 	static class UBPC_GhostUpload_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_GhostUpload_C>();
 	}
 };
-static_assert(alignof(UBPC_GhostUpload_C) == 0x000008, "Wrong alignment on UBPC_GhostUpload_C");
-static_assert(sizeof(UBPC_GhostUpload_C) == 0x0001B8, "Wrong size on UBPC_GhostUpload_C");
-static_assert(offsetof(UBPC_GhostUpload_C, UberGraphFrame) == 0x000188, "Member 'UBPC_GhostUpload_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_GhostUpload_C, PopupWindow) == 0x000190, "Member 'UBPC_GhostUpload_C::PopupWindow' has a wrong offset!");
-static_assert(offsetof(UBPC_GhostUpload_C, UploadIndex) == 0x000198, "Member 'UBPC_GhostUpload_C::UploadIndex' has a wrong offset!");
-static_assert(offsetof(UBPC_GhostUpload_C, bIsUploadCancel) == 0x00019C, "Member 'UBPC_GhostUpload_C::bIsUploadCancel' has a wrong offset!");
-static_assert(offsetof(UBPC_GhostUpload_C, LoadingWidget) == 0x0001A0, "Member 'UBPC_GhostUpload_C::LoadingWidget' has a wrong offset!");
-static_assert(offsetof(UBPC_GhostUpload_C, GhostResultUploadActor) == 0x0001A8, "Member 'UBPC_GhostUpload_C::GhostResultUploadActor' has a wrong offset!");
-static_assert(offsetof(UBPC_GhostUpload_C, OwnerTimeTrialSequence) == 0x0001B0, "Member 'UBPC_GhostUpload_C::OwnerTimeTrialSequence' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_GhostUpload_C;
 
 }
 

@@ -41,24 +41,7 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0068(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetCountWaitByMaxEndTime_InMaxEndTime_ImplicitCast; // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow) == 0x000008, "Wrong alignment on WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow");
-static_assert(sizeof(WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow) == 0x000080, "Wrong size on WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow");
-static_assert(offsetof(WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow, EntryPoint) == 0x000000, "Member 'WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow, CallFunc_GetDonpaTicketMax_ReturnValue) == 0x000004, "Member 'WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow::CallFunc_GetDonpaTicketMax_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow, CallFunc_GetAnimationOut_ReturnValue) == 0x000008, "Member 'WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow::CallFunc_GetAnimationOut_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow, CallFunc_GetAnimationIn_ReturnValue) == 0x000010, "Member 'WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow::CallFunc_GetAnimationIn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow, K2Node_CustomEvent_InStartNumber) == 0x000018, "Member 'WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow::K2Node_CustomEvent_InStartNumber' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow, K2Node_CustomEvent_InEndNumber) == 0x00001C, "Member 'WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow::K2Node_CustomEvent_InEndNumber' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow, K2Node_CustomEvent_InIconType) == 0x000020, "Member 'WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow::K2Node_CustomEvent_InIconType' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow, K2Node_CustomEvent_InIconTexture) == 0x000028, "Member 'WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow::K2Node_CustomEvent_InIconTexture' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow, K2Node_CustomEvent_bInCountEndOut) == 0x000030, "Member 'WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow::K2Node_CustomEvent_bInCountEndOut' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow, K2Node_CustomEvent_InMaxEndTime) == 0x000038, "Member 'WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow::K2Node_CustomEvent_InMaxEndTime' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow, CallFunc_IsValid_ReturnValue) == 0x000040, "Member 'WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow, CallFunc_Clamp_ReturnValue) == 0x000044, "Member 'WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow::CallFunc_Clamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow, K2Node_CreateDelegate_OutputDelegate) == 0x000048, "Member 'WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow, K2Node_CreateDelegate_OutputDelegate_1) == 0x000058, "Member 'WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow, K2Node_CreateDelegate_OutputDelegate_2) == 0x000068, "Member 'WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow, CallFunc_SetCountWaitByMaxEndTime_InMaxEndTime_ImplicitCast) == 0x000078, "Member 'WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow::CallFunc_SetCountWaitByMaxEndTime_InMaxEndTime_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_GadgetCountFullWindow_C_ExecuteUbergraph_WBP_CMN_GadgetCountFullWindow;
 
 // Function WBP_CMN_GadgetCountFullWindow.WBP_CMN_GadgetCountFullWindow_C.GetGadgetCountWidget
 // 0x0008 (0x0008 - 0x0000)
@@ -67,9 +50,7 @@ struct WBP_CMN_GadgetCountFullWindow_C_GetGadgetCountWidget final
 public:
 	class UWBP_CMN_GadgetCount_C*                 OutGadgetCountWidget;                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_GadgetCountFullWindow_C_GetGadgetCountWidget) == 0x000008, "Wrong alignment on WBP_CMN_GadgetCountFullWindow_C_GetGadgetCountWidget");
-static_assert(sizeof(WBP_CMN_GadgetCountFullWindow_C_GetGadgetCountWidget) == 0x000008, "Wrong size on WBP_CMN_GadgetCountFullWindow_C_GetGadgetCountWidget");
-static_assert(offsetof(WBP_CMN_GadgetCountFullWindow_C_GetGadgetCountWidget, OutGadgetCountWidget) == 0x000000, "Member 'WBP_CMN_GadgetCountFullWindow_C_GetGadgetCountWidget::OutGadgetCountWidget' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_GadgetCountFullWindow_C_GetGadgetCountWidget;
 
 // Function WBP_CMN_GadgetCountFullWindow.WBP_CMN_GadgetCountFullWindow_C.SetupItemCountWidget
 // 0x0028 (0x0028 - 0x0000)
@@ -85,14 +66,7 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        InMaxEndTime;                                      // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_GadgetCountFullWindow_C_SetupItemCountWidget) == 0x000008, "Wrong alignment on WBP_CMN_GadgetCountFullWindow_C_SetupItemCountWidget");
-static_assert(sizeof(WBP_CMN_GadgetCountFullWindow_C_SetupItemCountWidget) == 0x000028, "Wrong size on WBP_CMN_GadgetCountFullWindow_C_SetupItemCountWidget");
-static_assert(offsetof(WBP_CMN_GadgetCountFullWindow_C_SetupItemCountWidget, InStartNumber) == 0x000000, "Member 'WBP_CMN_GadgetCountFullWindow_C_SetupItemCountWidget::InStartNumber' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_GadgetCountFullWindow_C_SetupItemCountWidget, InEndNumber) == 0x000004, "Member 'WBP_CMN_GadgetCountFullWindow_C_SetupItemCountWidget::InEndNumber' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_GadgetCountFullWindow_C_SetupItemCountWidget, InIconType) == 0x000008, "Member 'WBP_CMN_GadgetCountFullWindow_C_SetupItemCountWidget::InIconType' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_GadgetCountFullWindow_C_SetupItemCountWidget, InIconTexture) == 0x000010, "Member 'WBP_CMN_GadgetCountFullWindow_C_SetupItemCountWidget::InIconTexture' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_GadgetCountFullWindow_C_SetupItemCountWidget, bInCountEndOut) == 0x000018, "Member 'WBP_CMN_GadgetCountFullWindow_C_SetupItemCountWidget::bInCountEndOut' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_GadgetCountFullWindow_C_SetupItemCountWidget, InMaxEndTime) == 0x000020, "Member 'WBP_CMN_GadgetCountFullWindow_C_SetupItemCountWidget::InMaxEndTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_GadgetCountFullWindow_C_SetupItemCountWidget;
 
 }
 

@@ -26,12 +26,7 @@ public:
 	ESlateVisibility                              K2Node_CustomEvent_InVisibility;                   // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FontScroll_C_ExecuteUbergraph_WBP_FontScroll) == 0x000004, "Wrong alignment on WBP_FontScroll_C_ExecuteUbergraph_WBP_FontScroll");
-static_assert(sizeof(WBP_FontScroll_C_ExecuteUbergraph_WBP_FontScroll) == 0x000018, "Wrong size on WBP_FontScroll_C_ExecuteUbergraph_WBP_FontScroll");
-static_assert(offsetof(WBP_FontScroll_C_ExecuteUbergraph_WBP_FontScroll, EntryPoint) == 0x000000, "Member 'WBP_FontScroll_C_ExecuteUbergraph_WBP_FontScroll::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_FontScroll_C_ExecuteUbergraph_WBP_FontScroll, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_FontScroll_C_ExecuteUbergraph_WBP_FontScroll::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_FontScroll_C_ExecuteUbergraph_WBP_FontScroll, K2Node_CustomEvent_InVisibility) == 0x000014, "Member 'WBP_FontScroll_C_ExecuteUbergraph_WBP_FontScroll::K2Node_CustomEvent_InVisibility' has a wrong offset!");
-static_assert(offsetof(WBP_FontScroll_C_ExecuteUbergraph_WBP_FontScroll, K2Node_SwitchEnum_CmpSuccess) == 0x000015, "Member 'WBP_FontScroll_C_ExecuteUbergraph_WBP_FontScroll::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FontScroll_C_ExecuteUbergraph_WBP_FontScroll;
 
 // Function WBP_FontScroll.WBP_FontScroll_C.VisibilityChangedEvent
 // 0x0001 (0x0001 - 0x0000)
@@ -40,9 +35,7 @@ struct WBP_FontScroll_C_VisibilityChangedEvent final
 public:
 	ESlateVisibility                              InVisibility;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FontScroll_C_VisibilityChangedEvent) == 0x000001, "Wrong alignment on WBP_FontScroll_C_VisibilityChangedEvent");
-static_assert(sizeof(WBP_FontScroll_C_VisibilityChangedEvent) == 0x000001, "Wrong size on WBP_FontScroll_C_VisibilityChangedEvent");
-static_assert(offsetof(WBP_FontScroll_C_VisibilityChangedEvent, InVisibility) == 0x000000, "Member 'WBP_FontScroll_C_VisibilityChangedEvent::InVisibility' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FontScroll_C_VisibilityChangedEvent;
 
 }
 

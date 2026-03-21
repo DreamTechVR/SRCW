@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -41,21 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_HUD_Sub_RuleCount_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_HUD_Sub_RuleCount_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_HUD_Sub_RuleCount_C")
 	}
 	static class UWBP_Race_HUD_Sub_RuleCount_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_HUD_Sub_RuleCount_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_HUD_Sub_RuleCount_C) == 0x000008, "Wrong alignment on UWBP_Race_HUD_Sub_RuleCount_C");
-static_assert(sizeof(UWBP_Race_HUD_Sub_RuleCount_C) == 0x000328, "Wrong size on UWBP_Race_HUD_Sub_RuleCount_C");
-static_assert(offsetof(UWBP_Race_HUD_Sub_RuleCount_C, UberGraphFrame) == 0x0002F0, "Member 'UWBP_Race_HUD_Sub_RuleCount_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_RuleCount_C, base) == 0x0002F8, "Member 'UWBP_Race_HUD_Sub_RuleCount_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_RuleCount_C, DSP_RuleIcon) == 0x000300, "Member 'UWBP_Race_HUD_Sub_RuleCount_C::DSP_RuleIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_RuleCount_C, NUM_Count) == 0x000308, "Member 'UWBP_Race_HUD_Sub_RuleCount_C::NUM_Count' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_RuleCount_C, TXT_CountName) == 0x000310, "Member 'UWBP_Race_HUD_Sub_RuleCount_C::TXT_CountName' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_RuleCount_C, In_Text) == 0x000318, "Member 'UWBP_Race_HUD_Sub_RuleCount_C::In_Text' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_HUD_Sub_RuleCount_C;
 
 }
 

@@ -161,45 +161,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Popup_Window_Error_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Popup_Window_Error_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Popup_Window_Error_C")
 	}
 	static class UWBP_Popup_Window_Error_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Popup_Window_Error_C>();
 	}
 };
-static_assert(alignof(UWBP_Popup_Window_Error_C) == 0x000008, "Wrong alignment on UWBP_Popup_Window_Error_C");
-static_assert(sizeof(UWBP_Popup_Window_Error_C) == 0x0004C8, "Wrong size on UWBP_Popup_Window_Error_C");
-static_assert(offsetof(UWBP_Popup_Window_Error_C, UberGraphFrame) == 0x0003F0, "Member 'UWBP_Popup_Window_Error_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Error_C, Popup_Error_Out) == 0x0003F8, "Member 'UWBP_Popup_Window_Error_C::Popup_Error_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Error_C, Popup_Error_Loop) == 0x000400, "Member 'UWBP_Popup_Window_Error_C::Popup_Error_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Error_C, Popup_Error_In) == 0x000408, "Member 'UWBP_Popup_Window_Error_C::Popup_Error_In' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Error_C, AttentionImage) == 0x000410, "Member 'UWBP_Popup_Window_Error_C::AttentionImage' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Error_C, Header_Red) == 0x000418, "Member 'UWBP_Popup_Window_Error_C::Header_Red' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Error_C, MouseInteraction) == 0x000420, "Member 'UWBP_Popup_Window_Error_C::MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Error_C, OutOfContentButton) == 0x000428, "Member 'UWBP_Popup_Window_Error_C::OutOfContentButton' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Error_C, OutOfContentButton_80) == 0x000430, "Member 'UWBP_Popup_Window_Error_C::OutOfContentButton_80' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Error_C, Panel) == 0x000438, "Member 'UWBP_Popup_Window_Error_C::Panel' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Error_C, RetainerBox) == 0x000440, "Member 'UWBP_Popup_Window_Error_C::RetainerBox' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Error_C, RetainerBox_0) == 0x000448, "Member 'UWBP_Popup_Window_Error_C::RetainerBox_0' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Error_C, TXT_MainTitle_Attention) == 0x000450, "Member 'UWBP_Popup_Window_Error_C::TXT_MainTitle_Attention' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Error_C, UV_Scroll_L_01) == 0x000458, "Member 'UWBP_Popup_Window_Error_C::UV_Scroll_L_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Error_C, UV_Scroll_L_02) == 0x000460, "Member 'UWBP_Popup_Window_Error_C::UV_Scroll_L_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Error_C, UV_Scroll_R_01) == 0x000468, "Member 'UWBP_Popup_Window_Error_C::UV_Scroll_R_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Error_C, UV_Scroll_R_02) == 0x000470, "Member 'UWBP_Popup_Window_Error_C::UV_Scroll_R_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Error_C, WBP_FooterMenu_Sub_CommonBtn) == 0x000478, "Member 'UWBP_Popup_Window_Error_C::WBP_FooterMenu_Sub_CommonBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Error_C, WBP_Popup_Info) == 0x000480, "Member 'UWBP_Popup_Window_Error_C::WBP_Popup_Info' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Error_C, WindowBase) == 0x000488, "Member 'UWBP_Popup_Window_Error_C::WindowBase' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Error_C, WindowType) == 0x000490, "Member 'UWBP_Popup_Window_Error_C::WindowType' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Error_C, ButtonType) == 0x000491, "Member 'UWBP_Popup_Window_Error_C::ButtonType' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Error_C, DecideButtonIndex) == 0x000494, "Member 'UWBP_Popup_Window_Error_C::DecideButtonIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Error_C, InitialFocusButtonIndex) == 0x000498, "Member 'UWBP_Popup_Window_Error_C::InitialFocusButtonIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Error_C, ButtonControlState) == 0x00049C, "Member 'UWBP_Popup_Window_Error_C::ButtonControlState' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Error_C, ButtonControlTimer) == 0x0004A0, "Member 'UWBP_Popup_Window_Error_C::ButtonControlTimer' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Error_C, ButtonControlDelayTime) == 0x0004A8, "Member 'UWBP_Popup_Window_Error_C::ButtonControlDelayTime' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Error_C, IsFinishInitialize) == 0x0004B0, "Member 'UWBP_Popup_Window_Error_C::IsFinishInitialize' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Error_C, FinishInitializeTimer) == 0x0004B8, "Member 'UWBP_Popup_Window_Error_C::FinishInitializeTimer' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Error_C, WaitFinishInitializeTime) == 0x0004C0, "Member 'UWBP_Popup_Window_Error_C::WaitFinishInitializeTime' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Popup_Window_Error_C;
 
 }
 

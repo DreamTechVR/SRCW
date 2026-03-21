@@ -26,11 +26,7 @@ public:
 	EAppBlueprintLogVerbosity                     Verbosity;                                         // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AppScreenLogBPF_AppLogString) == 0x000008, "Wrong alignment on AppScreenLogBPF_AppLogString");
-static_assert(sizeof(AppScreenLogBPF_AppLogString) == 0x000020, "Wrong size on AppScreenLogBPF_AppLogString");
-static_assert(offsetof(AppScreenLogBPF_AppLogString, WorldContextObject) == 0x000000, "Member 'AppScreenLogBPF_AppLogString::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(AppScreenLogBPF_AppLogString, Message) == 0x000008, "Member 'AppScreenLogBPF_AppLogString::Message' has a wrong offset!");
-static_assert(offsetof(AppScreenLogBPF_AppLogString, Verbosity) == 0x000018, "Member 'AppScreenLogBPF_AppLogString::Verbosity' has a wrong offset!");
+DUMPER7_ASSERTS_AppScreenLogBPF_AppLogString;
 
 // Function UnionLib.AppScreenLogBPF.AppLogStringStrong
 // 0x0020 (0x0020 - 0x0000)
@@ -42,11 +38,7 @@ public:
 	EAppBlueprintLogVerbosity                     Verbosity;                                         // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AppScreenLogBPF_AppLogStringStrong) == 0x000008, "Wrong alignment on AppScreenLogBPF_AppLogStringStrong");
-static_assert(sizeof(AppScreenLogBPF_AppLogStringStrong) == 0x000020, "Wrong size on AppScreenLogBPF_AppLogStringStrong");
-static_assert(offsetof(AppScreenLogBPF_AppLogStringStrong, WorldContextObject) == 0x000000, "Member 'AppScreenLogBPF_AppLogStringStrong::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(AppScreenLogBPF_AppLogStringStrong, Message) == 0x000008, "Member 'AppScreenLogBPF_AppLogStringStrong::Message' has a wrong offset!");
-static_assert(offsetof(AppScreenLogBPF_AppLogStringStrong, Verbosity) == 0x000018, "Member 'AppScreenLogBPF_AppLogStringStrong::Verbosity' has a wrong offset!");
+DUMPER7_ASSERTS_AppScreenLogBPF_AppLogStringStrong;
 
 // Function UnionLib.AppScreenLogBPF.AppLogText
 // 0x0020 (0x0020 - 0x0000)
@@ -58,11 +50,7 @@ public:
 	EAppBlueprintLogVerbosity                     Verbosity;                                         // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AppScreenLogBPF_AppLogText) == 0x000008, "Wrong alignment on AppScreenLogBPF_AppLogText");
-static_assert(sizeof(AppScreenLogBPF_AppLogText) == 0x000020, "Wrong size on AppScreenLogBPF_AppLogText");
-static_assert(offsetof(AppScreenLogBPF_AppLogText, WorldContextObject) == 0x000000, "Member 'AppScreenLogBPF_AppLogText::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(AppScreenLogBPF_AppLogText, Message) == 0x000008, "Member 'AppScreenLogBPF_AppLogText::Message' has a wrong offset!");
-static_assert(offsetof(AppScreenLogBPF_AppLogText, Verbosity) == 0x000018, "Member 'AppScreenLogBPF_AppLogText::Verbosity' has a wrong offset!");
+DUMPER7_ASSERTS_AppScreenLogBPF_AppLogText;
 
 // Function UnionLib.AppScreenLogBPF.AppLogTextStrong
 // 0x0020 (0x0020 - 0x0000)
@@ -74,11 +62,7 @@ public:
 	EAppBlueprintLogVerbosity                     Verbosity;                                         // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AppScreenLogBPF_AppLogTextStrong) == 0x000008, "Wrong alignment on AppScreenLogBPF_AppLogTextStrong");
-static_assert(sizeof(AppScreenLogBPF_AppLogTextStrong) == 0x000020, "Wrong size on AppScreenLogBPF_AppLogTextStrong");
-static_assert(offsetof(AppScreenLogBPF_AppLogTextStrong, WorldContextObject) == 0x000000, "Member 'AppScreenLogBPF_AppLogTextStrong::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(AppScreenLogBPF_AppLogTextStrong, Message) == 0x000008, "Member 'AppScreenLogBPF_AppLogTextStrong::Message' has a wrong offset!");
-static_assert(offsetof(AppScreenLogBPF_AppLogTextStrong, Verbosity) == 0x000018, "Member 'AppScreenLogBPF_AppLogTextStrong::Verbosity' has a wrong offset!");
+DUMPER7_ASSERTS_AppScreenLogBPF_AppLogTextStrong;
 
 // Function UnionLib.BPFL_Config.GetBoolFromConfig
 // 0x0038 (0x0038 - 0x0000)
@@ -93,14 +77,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0032(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_33[0x5];                                       // 0x0033(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BPFL_Config_GetBoolFromConfig) == 0x000008, "Wrong alignment on BPFL_Config_GetBoolFromConfig");
-static_assert(sizeof(BPFL_Config_GetBoolFromConfig) == 0x000038, "Wrong size on BPFL_Config_GetBoolFromConfig");
-static_assert(offsetof(BPFL_Config_GetBoolFromConfig, Filename) == 0x000000, "Member 'BPFL_Config_GetBoolFromConfig::Filename' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetBoolFromConfig, Section) == 0x000010, "Member 'BPFL_Config_GetBoolFromConfig::Section' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetBoolFromConfig, Key) == 0x000020, "Member 'BPFL_Config_GetBoolFromConfig::Key' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetBoolFromConfig, ConfigValue) == 0x000030, "Member 'BPFL_Config_GetBoolFromConfig::ConfigValue' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetBoolFromConfig, CacheClear) == 0x000031, "Member 'BPFL_Config_GetBoolFromConfig::CacheClear' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetBoolFromConfig, ReturnValue) == 0x000032, "Member 'BPFL_Config_GetBoolFromConfig::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_Config_GetBoolFromConfig;
 
 // Function UnionLib.BPFL_Config.GetBoolFromConfigGameIni
 // 0x0028 (0x0028 - 0x0000)
@@ -113,12 +90,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0021(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BPFL_Config_GetBoolFromConfigGameIni) == 0x000008, "Wrong alignment on BPFL_Config_GetBoolFromConfigGameIni");
-static_assert(sizeof(BPFL_Config_GetBoolFromConfigGameIni) == 0x000028, "Wrong size on BPFL_Config_GetBoolFromConfigGameIni");
-static_assert(offsetof(BPFL_Config_GetBoolFromConfigGameIni, Section) == 0x000000, "Member 'BPFL_Config_GetBoolFromConfigGameIni::Section' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetBoolFromConfigGameIni, Key) == 0x000010, "Member 'BPFL_Config_GetBoolFromConfigGameIni::Key' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetBoolFromConfigGameIni, ConfigValue) == 0x000020, "Member 'BPFL_Config_GetBoolFromConfigGameIni::ConfigValue' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetBoolFromConfigGameIni, ReturnValue) == 0x000021, "Member 'BPFL_Config_GetBoolFromConfigGameIni::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_Config_GetBoolFromConfigGameIni;
 
 // Function UnionLib.BPFL_Config.GetFloatFromConfig
 // 0x0038 (0x0038 - 0x0000)
@@ -132,13 +104,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0034(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BPFL_Config_GetFloatFromConfig) == 0x000008, "Wrong alignment on BPFL_Config_GetFloatFromConfig");
-static_assert(sizeof(BPFL_Config_GetFloatFromConfig) == 0x000038, "Wrong size on BPFL_Config_GetFloatFromConfig");
-static_assert(offsetof(BPFL_Config_GetFloatFromConfig, Filename) == 0x000000, "Member 'BPFL_Config_GetFloatFromConfig::Filename' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetFloatFromConfig, Section) == 0x000010, "Member 'BPFL_Config_GetFloatFromConfig::Section' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetFloatFromConfig, Key) == 0x000020, "Member 'BPFL_Config_GetFloatFromConfig::Key' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetFloatFromConfig, ConfigValue) == 0x000030, "Member 'BPFL_Config_GetFloatFromConfig::ConfigValue' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetFloatFromConfig, ReturnValue) == 0x000034, "Member 'BPFL_Config_GetFloatFromConfig::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_Config_GetFloatFromConfig;
 
 // Function UnionLib.BPFL_Config.GetFloatFromConfigGameIni
 // 0x0028 (0x0028 - 0x0000)
@@ -151,12 +117,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0024(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BPFL_Config_GetFloatFromConfigGameIni) == 0x000008, "Wrong alignment on BPFL_Config_GetFloatFromConfigGameIni");
-static_assert(sizeof(BPFL_Config_GetFloatFromConfigGameIni) == 0x000028, "Wrong size on BPFL_Config_GetFloatFromConfigGameIni");
-static_assert(offsetof(BPFL_Config_GetFloatFromConfigGameIni, Section) == 0x000000, "Member 'BPFL_Config_GetFloatFromConfigGameIni::Section' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetFloatFromConfigGameIni, Key) == 0x000010, "Member 'BPFL_Config_GetFloatFromConfigGameIni::Key' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetFloatFromConfigGameIni, ConfigValue) == 0x000020, "Member 'BPFL_Config_GetFloatFromConfigGameIni::ConfigValue' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetFloatFromConfigGameIni, ReturnValue) == 0x000024, "Member 'BPFL_Config_GetFloatFromConfigGameIni::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_Config_GetFloatFromConfigGameIni;
 
 // Function UnionLib.BPFL_Config.GetIntFromConfig
 // 0x0038 (0x0038 - 0x0000)
@@ -171,14 +132,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0035(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_36[0x2];                                       // 0x0036(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BPFL_Config_GetIntFromConfig) == 0x000008, "Wrong alignment on BPFL_Config_GetIntFromConfig");
-static_assert(sizeof(BPFL_Config_GetIntFromConfig) == 0x000038, "Wrong size on BPFL_Config_GetIntFromConfig");
-static_assert(offsetof(BPFL_Config_GetIntFromConfig, Filename) == 0x000000, "Member 'BPFL_Config_GetIntFromConfig::Filename' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetIntFromConfig, Section) == 0x000010, "Member 'BPFL_Config_GetIntFromConfig::Section' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetIntFromConfig, Key) == 0x000020, "Member 'BPFL_Config_GetIntFromConfig::Key' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetIntFromConfig, ConfigValue) == 0x000030, "Member 'BPFL_Config_GetIntFromConfig::ConfigValue' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetIntFromConfig, CacheClear) == 0x000034, "Member 'BPFL_Config_GetIntFromConfig::CacheClear' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetIntFromConfig, ReturnValue) == 0x000035, "Member 'BPFL_Config_GetIntFromConfig::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_Config_GetIntFromConfig;
 
 // Function UnionLib.BPFL_Config.GetIntFromConfigGameIni
 // 0x0028 (0x0028 - 0x0000)
@@ -191,12 +145,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0024(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BPFL_Config_GetIntFromConfigGameIni) == 0x000008, "Wrong alignment on BPFL_Config_GetIntFromConfigGameIni");
-static_assert(sizeof(BPFL_Config_GetIntFromConfigGameIni) == 0x000028, "Wrong size on BPFL_Config_GetIntFromConfigGameIni");
-static_assert(offsetof(BPFL_Config_GetIntFromConfigGameIni, Section) == 0x000000, "Member 'BPFL_Config_GetIntFromConfigGameIni::Section' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetIntFromConfigGameIni, Key) == 0x000010, "Member 'BPFL_Config_GetIntFromConfigGameIni::Key' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetIntFromConfigGameIni, ConfigValue) == 0x000020, "Member 'BPFL_Config_GetIntFromConfigGameIni::ConfigValue' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetIntFromConfigGameIni, ReturnValue) == 0x000024, "Member 'BPFL_Config_GetIntFromConfigGameIni::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_Config_GetIntFromConfigGameIni;
 
 // Function UnionLib.BPFL_Config.GetStringArrayFromConfig
 // 0x0048 (0x0048 - 0x0000)
@@ -210,13 +159,7 @@ public:
 	int32                                         ReturnValue;                                       // 0x0040(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BPFL_Config_GetStringArrayFromConfig) == 0x000008, "Wrong alignment on BPFL_Config_GetStringArrayFromConfig");
-static_assert(sizeof(BPFL_Config_GetStringArrayFromConfig) == 0x000048, "Wrong size on BPFL_Config_GetStringArrayFromConfig");
-static_assert(offsetof(BPFL_Config_GetStringArrayFromConfig, Filename) == 0x000000, "Member 'BPFL_Config_GetStringArrayFromConfig::Filename' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetStringArrayFromConfig, Section) == 0x000010, "Member 'BPFL_Config_GetStringArrayFromConfig::Section' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetStringArrayFromConfig, Key) == 0x000020, "Member 'BPFL_Config_GetStringArrayFromConfig::Key' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetStringArrayFromConfig, ConfigValue) == 0x000030, "Member 'BPFL_Config_GetStringArrayFromConfig::ConfigValue' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetStringArrayFromConfig, ReturnValue) == 0x000040, "Member 'BPFL_Config_GetStringArrayFromConfig::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_Config_GetStringArrayFromConfig;
 
 // Function UnionLib.BPFL_Config.GetStringArrayFromConfigGameIni
 // 0x0038 (0x0038 - 0x0000)
@@ -229,12 +172,7 @@ public:
 	int32                                         ReturnValue;                                       // 0x0030(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BPFL_Config_GetStringArrayFromConfigGameIni) == 0x000008, "Wrong alignment on BPFL_Config_GetStringArrayFromConfigGameIni");
-static_assert(sizeof(BPFL_Config_GetStringArrayFromConfigGameIni) == 0x000038, "Wrong size on BPFL_Config_GetStringArrayFromConfigGameIni");
-static_assert(offsetof(BPFL_Config_GetStringArrayFromConfigGameIni, Section) == 0x000000, "Member 'BPFL_Config_GetStringArrayFromConfigGameIni::Section' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetStringArrayFromConfigGameIni, Key) == 0x000010, "Member 'BPFL_Config_GetStringArrayFromConfigGameIni::Key' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetStringArrayFromConfigGameIni, ConfigValue) == 0x000020, "Member 'BPFL_Config_GetStringArrayFromConfigGameIni::ConfigValue' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetStringArrayFromConfigGameIni, ReturnValue) == 0x000030, "Member 'BPFL_Config_GetStringArrayFromConfigGameIni::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_Config_GetStringArrayFromConfigGameIni;
 
 // Function UnionLib.BPFL_Config.GetStringFromConfig
 // 0x0048 (0x0048 - 0x0000)
@@ -248,13 +186,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BPFL_Config_GetStringFromConfig) == 0x000008, "Wrong alignment on BPFL_Config_GetStringFromConfig");
-static_assert(sizeof(BPFL_Config_GetStringFromConfig) == 0x000048, "Wrong size on BPFL_Config_GetStringFromConfig");
-static_assert(offsetof(BPFL_Config_GetStringFromConfig, Filename) == 0x000000, "Member 'BPFL_Config_GetStringFromConfig::Filename' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetStringFromConfig, Section) == 0x000010, "Member 'BPFL_Config_GetStringFromConfig::Section' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetStringFromConfig, Key) == 0x000020, "Member 'BPFL_Config_GetStringFromConfig::Key' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetStringFromConfig, ConfigValue) == 0x000030, "Member 'BPFL_Config_GetStringFromConfig::ConfigValue' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetStringFromConfig, ReturnValue) == 0x000040, "Member 'BPFL_Config_GetStringFromConfig::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_Config_GetStringFromConfig;
 
 // Function UnionLib.BPFL_Config.GetStringFromConfigGameIni
 // 0x0038 (0x0038 - 0x0000)
@@ -267,12 +199,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BPFL_Config_GetStringFromConfigGameIni) == 0x000008, "Wrong alignment on BPFL_Config_GetStringFromConfigGameIni");
-static_assert(sizeof(BPFL_Config_GetStringFromConfigGameIni) == 0x000038, "Wrong size on BPFL_Config_GetStringFromConfigGameIni");
-static_assert(offsetof(BPFL_Config_GetStringFromConfigGameIni, Section) == 0x000000, "Member 'BPFL_Config_GetStringFromConfigGameIni::Section' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetStringFromConfigGameIni, Key) == 0x000010, "Member 'BPFL_Config_GetStringFromConfigGameIni::Key' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetStringFromConfigGameIni, ConfigValue) == 0x000020, "Member 'BPFL_Config_GetStringFromConfigGameIni::ConfigValue' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetStringFromConfigGameIni, ReturnValue) == 0x000030, "Member 'BPFL_Config_GetStringFromConfigGameIni::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_Config_GetStringFromConfigGameIni;
 
 // Function UnionLib.BPFL_Config.GetTextFromConfig
 // 0x0048 (0x0048 - 0x0000)
@@ -287,14 +214,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0041(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_42[0x6];                                       // 0x0042(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BPFL_Config_GetTextFromConfig) == 0x000008, "Wrong alignment on BPFL_Config_GetTextFromConfig");
-static_assert(sizeof(BPFL_Config_GetTextFromConfig) == 0x000048, "Wrong size on BPFL_Config_GetTextFromConfig");
-static_assert(offsetof(BPFL_Config_GetTextFromConfig, Filename) == 0x000000, "Member 'BPFL_Config_GetTextFromConfig::Filename' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetTextFromConfig, Section) == 0x000010, "Member 'BPFL_Config_GetTextFromConfig::Section' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetTextFromConfig, Key) == 0x000020, "Member 'BPFL_Config_GetTextFromConfig::Key' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetTextFromConfig, ConfigValue) == 0x000030, "Member 'BPFL_Config_GetTextFromConfig::ConfigValue' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetTextFromConfig, CacheClear) == 0x000040, "Member 'BPFL_Config_GetTextFromConfig::CacheClear' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetTextFromConfig, ReturnValue) == 0x000041, "Member 'BPFL_Config_GetTextFromConfig::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_Config_GetTextFromConfig;
 
 // Function UnionLib.BPFL_Config.GetTextFromConfigGameIni
 // 0x0038 (0x0038 - 0x0000)
@@ -307,12 +227,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BPFL_Config_GetTextFromConfigGameIni) == 0x000008, "Wrong alignment on BPFL_Config_GetTextFromConfigGameIni");
-static_assert(sizeof(BPFL_Config_GetTextFromConfigGameIni) == 0x000038, "Wrong size on BPFL_Config_GetTextFromConfigGameIni");
-static_assert(offsetof(BPFL_Config_GetTextFromConfigGameIni, Section) == 0x000000, "Member 'BPFL_Config_GetTextFromConfigGameIni::Section' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetTextFromConfigGameIni, Key) == 0x000010, "Member 'BPFL_Config_GetTextFromConfigGameIni::Key' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetTextFromConfigGameIni, ConfigValue) == 0x000020, "Member 'BPFL_Config_GetTextFromConfigGameIni::ConfigValue' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_GetTextFromConfigGameIni, ReturnValue) == 0x000030, "Member 'BPFL_Config_GetTextFromConfigGameIni::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_Config_GetTextFromConfigGameIni;
 
 // Function UnionLib.BPFL_Config.SetBoolToConfig
 // 0x0038 (0x0038 - 0x0000)
@@ -325,12 +240,7 @@ public:
 	bool                                          ConfigValue;                                       // 0x0030(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BPFL_Config_SetBoolToConfig) == 0x000008, "Wrong alignment on BPFL_Config_SetBoolToConfig");
-static_assert(sizeof(BPFL_Config_SetBoolToConfig) == 0x000038, "Wrong size on BPFL_Config_SetBoolToConfig");
-static_assert(offsetof(BPFL_Config_SetBoolToConfig, Filename) == 0x000000, "Member 'BPFL_Config_SetBoolToConfig::Filename' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_SetBoolToConfig, Section) == 0x000010, "Member 'BPFL_Config_SetBoolToConfig::Section' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_SetBoolToConfig, Key) == 0x000020, "Member 'BPFL_Config_SetBoolToConfig::Key' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_SetBoolToConfig, ConfigValue) == 0x000030, "Member 'BPFL_Config_SetBoolToConfig::ConfigValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_Config_SetBoolToConfig;
 
 // Function UnionLib.BPFL_Config.SetFloatToConfig
 // 0x0038 (0x0038 - 0x0000)
@@ -343,12 +253,7 @@ public:
 	float                                         ConfigValue;                                       // 0x0030(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BPFL_Config_SetFloatToConfig) == 0x000008, "Wrong alignment on BPFL_Config_SetFloatToConfig");
-static_assert(sizeof(BPFL_Config_SetFloatToConfig) == 0x000038, "Wrong size on BPFL_Config_SetFloatToConfig");
-static_assert(offsetof(BPFL_Config_SetFloatToConfig, Filename) == 0x000000, "Member 'BPFL_Config_SetFloatToConfig::Filename' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_SetFloatToConfig, Section) == 0x000010, "Member 'BPFL_Config_SetFloatToConfig::Section' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_SetFloatToConfig, Key) == 0x000020, "Member 'BPFL_Config_SetFloatToConfig::Key' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_SetFloatToConfig, ConfigValue) == 0x000030, "Member 'BPFL_Config_SetFloatToConfig::ConfigValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_Config_SetFloatToConfig;
 
 // Function UnionLib.BPFL_Config.SetIntToConfig
 // 0x0038 (0x0038 - 0x0000)
@@ -361,12 +266,7 @@ public:
 	int32                                         ConfigValue;                                       // 0x0030(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BPFL_Config_SetIntToConfig) == 0x000008, "Wrong alignment on BPFL_Config_SetIntToConfig");
-static_assert(sizeof(BPFL_Config_SetIntToConfig) == 0x000038, "Wrong size on BPFL_Config_SetIntToConfig");
-static_assert(offsetof(BPFL_Config_SetIntToConfig, Filename) == 0x000000, "Member 'BPFL_Config_SetIntToConfig::Filename' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_SetIntToConfig, Section) == 0x000010, "Member 'BPFL_Config_SetIntToConfig::Section' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_SetIntToConfig, Key) == 0x000020, "Member 'BPFL_Config_SetIntToConfig::Key' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_SetIntToConfig, ConfigValue) == 0x000030, "Member 'BPFL_Config_SetIntToConfig::ConfigValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_Config_SetIntToConfig;
 
 // Function UnionLib.BPFL_Config.SetStringToConfig
 // 0x0040 (0x0040 - 0x0000)
@@ -378,12 +278,7 @@ public:
 	class FString                                 Key;                                               // 0x0020(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ConfigValue;                                       // 0x0030(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BPFL_Config_SetStringToConfig) == 0x000008, "Wrong alignment on BPFL_Config_SetStringToConfig");
-static_assert(sizeof(BPFL_Config_SetStringToConfig) == 0x000040, "Wrong size on BPFL_Config_SetStringToConfig");
-static_assert(offsetof(BPFL_Config_SetStringToConfig, Filename) == 0x000000, "Member 'BPFL_Config_SetStringToConfig::Filename' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_SetStringToConfig, Section) == 0x000010, "Member 'BPFL_Config_SetStringToConfig::Section' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_SetStringToConfig, Key) == 0x000020, "Member 'BPFL_Config_SetStringToConfig::Key' has a wrong offset!");
-static_assert(offsetof(BPFL_Config_SetStringToConfig, ConfigValue) == 0x000030, "Member 'BPFL_Config_SetStringToConfig::ConfigValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_Config_SetStringToConfig;
 
 // Function UnionLib.HierarchicalStateMachine.AddStateInfo
 // 0x0070 (0x0070 - 0x0000)
@@ -394,10 +289,7 @@ public:
 	int32                                         ReturnValue;                                       // 0x0068(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(HierarchicalStateMachine_AddStateInfo) == 0x000008, "Wrong alignment on HierarchicalStateMachine_AddStateInfo");
-static_assert(sizeof(HierarchicalStateMachine_AddStateInfo) == 0x000070, "Wrong size on HierarchicalStateMachine_AddStateInfo");
-static_assert(offsetof(HierarchicalStateMachine_AddStateInfo, InStateInfo) == 0x000000, "Member 'HierarchicalStateMachine_AddStateInfo::InStateInfo' has a wrong offset!");
-static_assert(offsetof(HierarchicalStateMachine_AddStateInfo, ReturnValue) == 0x000068, "Member 'HierarchicalStateMachine_AddStateInfo::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachine_AddStateInfo;
 
 // Function UnionLib.HierarchicalStateMachine.OnUpdate
 // 0x0004 (0x0004 - 0x0000)
@@ -406,9 +298,7 @@ struct HierarchicalStateMachine_OnUpdate final
 public:
 	float                                         InDeltaTime;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachine_OnUpdate) == 0x000004, "Wrong alignment on HierarchicalStateMachine_OnUpdate");
-static_assert(sizeof(HierarchicalStateMachine_OnUpdate) == 0x000004, "Wrong size on HierarchicalStateMachine_OnUpdate");
-static_assert(offsetof(HierarchicalStateMachine_OnUpdate, InDeltaTime) == 0x000000, "Member 'HierarchicalStateMachine_OnUpdate::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachine_OnUpdate;
 
 // Function UnionLib.HierarchicalStateMachine.RegisterStateInfo
 // 0x0078 (0x0078 - 0x0000)
@@ -421,11 +311,7 @@ public:
 	int32                                         ReturnValue;                                       // 0x0070(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(HierarchicalStateMachine_RegisterStateInfo) == 0x000008, "Wrong alignment on HierarchicalStateMachine_RegisterStateInfo");
-static_assert(sizeof(HierarchicalStateMachine_RegisterStateInfo) == 0x000078, "Wrong size on HierarchicalStateMachine_RegisterStateInfo");
-static_assert(offsetof(HierarchicalStateMachine_RegisterStateInfo, InState) == 0x000000, "Member 'HierarchicalStateMachine_RegisterStateInfo::InState' has a wrong offset!");
-static_assert(offsetof(HierarchicalStateMachine_RegisterStateInfo, InStateInfo) == 0x000008, "Member 'HierarchicalStateMachine_RegisterStateInfo::InStateInfo' has a wrong offset!");
-static_assert(offsetof(HierarchicalStateMachine_RegisterStateInfo, ReturnValue) == 0x000070, "Member 'HierarchicalStateMachine_RegisterStateInfo::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachine_RegisterStateInfo;
 
 // Function UnionLib.HierarchicalStateMachine.RegisterStateInfoMap
 // 0x0050 (0x0050 - 0x0000)
@@ -434,9 +320,7 @@ struct HierarchicalStateMachine_RegisterStateInfoMap final
 public:
 	TMap<int32, struct FHierarchicalStateMachineStateInfo> InStateInfoMap;                           // 0x0000(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachine_RegisterStateInfoMap) == 0x000008, "Wrong alignment on HierarchicalStateMachine_RegisterStateInfoMap");
-static_assert(sizeof(HierarchicalStateMachine_RegisterStateInfoMap) == 0x000050, "Wrong size on HierarchicalStateMachine_RegisterStateInfoMap");
-static_assert(offsetof(HierarchicalStateMachine_RegisterStateInfoMap, InStateInfoMap) == 0x000000, "Member 'HierarchicalStateMachine_RegisterStateInfoMap::InStateInfoMap' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachine_RegisterStateInfoMap;
 
 // Function UnionLib.HierarchicalStateMachine.SetExitCode
 // 0x0004 (0x0004 - 0x0000)
@@ -445,9 +329,7 @@ struct HierarchicalStateMachine_SetExitCode final
 public:
 	int32                                         InExitCode;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachine_SetExitCode) == 0x000004, "Wrong alignment on HierarchicalStateMachine_SetExitCode");
-static_assert(sizeof(HierarchicalStateMachine_SetExitCode) == 0x000004, "Wrong size on HierarchicalStateMachine_SetExitCode");
-static_assert(offsetof(HierarchicalStateMachine_SetExitCode, InExitCode) == 0x000000, "Member 'HierarchicalStateMachine_SetExitCode::InExitCode' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachine_SetExitCode;
 
 // Function UnionLib.HierarchicalStateMachine.SetNextState
 // 0x0004 (0x0004 - 0x0000)
@@ -456,9 +338,7 @@ struct HierarchicalStateMachine_SetNextState final
 public:
 	int32                                         InNextState;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachine_SetNextState) == 0x000004, "Wrong alignment on HierarchicalStateMachine_SetNextState");
-static_assert(sizeof(HierarchicalStateMachine_SetNextState) == 0x000004, "Wrong size on HierarchicalStateMachine_SetNextState");
-static_assert(offsetof(HierarchicalStateMachine_SetNextState, InNextState) == 0x000000, "Member 'HierarchicalStateMachine_SetNextState::InNextState' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachine_SetNextState;
 
 // Function UnionLib.HierarchicalStateMachine.SetNextStateUsingName
 // 0x000C (0x000C - 0x0000)
@@ -469,10 +349,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(HierarchicalStateMachine_SetNextStateUsingName) == 0x000004, "Wrong alignment on HierarchicalStateMachine_SetNextStateUsingName");
-static_assert(sizeof(HierarchicalStateMachine_SetNextStateUsingName) == 0x00000C, "Wrong size on HierarchicalStateMachine_SetNextStateUsingName");
-static_assert(offsetof(HierarchicalStateMachine_SetNextStateUsingName, InNextStateName) == 0x000000, "Member 'HierarchicalStateMachine_SetNextStateUsingName::InNextStateName' has a wrong offset!");
-static_assert(offsetof(HierarchicalStateMachine_SetNextStateUsingName, ReturnValue) == 0x000008, "Member 'HierarchicalStateMachine_SetNextStateUsingName::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachine_SetNextStateUsingName;
 
 // Function UnionLib.HierarchicalStateMachine.BuildHierarchicalStateMachineNames
 // 0x0010 (0x0010 - 0x0000)
@@ -481,9 +358,7 @@ struct HierarchicalStateMachine_BuildHierarchicalStateMachineNames final
 public:
 	TArray<class FString>                         OutStringArray;                                    // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachine_BuildHierarchicalStateMachineNames) == 0x000008, "Wrong alignment on HierarchicalStateMachine_BuildHierarchicalStateMachineNames");
-static_assert(sizeof(HierarchicalStateMachine_BuildHierarchicalStateMachineNames) == 0x000010, "Wrong size on HierarchicalStateMachine_BuildHierarchicalStateMachineNames");
-static_assert(offsetof(HierarchicalStateMachine_BuildHierarchicalStateMachineNames, OutStringArray) == 0x000000, "Member 'HierarchicalStateMachine_BuildHierarchicalStateMachineNames::OutStringArray' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachine_BuildHierarchicalStateMachineNames;
 
 // Function UnionLib.HierarchicalStateMachine.GetChildStateMachine
 // 0x0008 (0x0008 - 0x0000)
@@ -492,9 +367,7 @@ struct HierarchicalStateMachine_GetChildStateMachine final
 public:
 	class AHierarchicalStateMachine*              ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachine_GetChildStateMachine) == 0x000008, "Wrong alignment on HierarchicalStateMachine_GetChildStateMachine");
-static_assert(sizeof(HierarchicalStateMachine_GetChildStateMachine) == 0x000008, "Wrong size on HierarchicalStateMachine_GetChildStateMachine");
-static_assert(offsetof(HierarchicalStateMachine_GetChildStateMachine, ReturnValue) == 0x000000, "Member 'HierarchicalStateMachine_GetChildStateMachine::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachine_GetChildStateMachine;
 
 // Function UnionLib.HierarchicalStateMachine.GetCurrentState
 // 0x0004 (0x0004 - 0x0000)
@@ -503,9 +376,7 @@ struct HierarchicalStateMachine_GetCurrentState final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachine_GetCurrentState) == 0x000004, "Wrong alignment on HierarchicalStateMachine_GetCurrentState");
-static_assert(sizeof(HierarchicalStateMachine_GetCurrentState) == 0x000004, "Wrong size on HierarchicalStateMachine_GetCurrentState");
-static_assert(offsetof(HierarchicalStateMachine_GetCurrentState, ReturnValue) == 0x000000, "Member 'HierarchicalStateMachine_GetCurrentState::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachine_GetCurrentState;
 
 // Function UnionLib.HierarchicalStateMachine.GetCurrentStateFrame
 // 0x0004 (0x0004 - 0x0000)
@@ -514,9 +385,7 @@ struct HierarchicalStateMachine_GetCurrentStateFrame final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachine_GetCurrentStateFrame) == 0x000004, "Wrong alignment on HierarchicalStateMachine_GetCurrentStateFrame");
-static_assert(sizeof(HierarchicalStateMachine_GetCurrentStateFrame) == 0x000004, "Wrong size on HierarchicalStateMachine_GetCurrentStateFrame");
-static_assert(offsetof(HierarchicalStateMachine_GetCurrentStateFrame, ReturnValue) == 0x000000, "Member 'HierarchicalStateMachine_GetCurrentStateFrame::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachine_GetCurrentStateFrame;
 
 // Function UnionLib.HierarchicalStateMachine.GetCurrentStateName
 // 0x0008 (0x0008 - 0x0000)
@@ -525,9 +394,7 @@ struct HierarchicalStateMachine_GetCurrentStateName final
 public:
 	class FName                                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachine_GetCurrentStateName) == 0x000004, "Wrong alignment on HierarchicalStateMachine_GetCurrentStateName");
-static_assert(sizeof(HierarchicalStateMachine_GetCurrentStateName) == 0x000008, "Wrong size on HierarchicalStateMachine_GetCurrentStateName");
-static_assert(offsetof(HierarchicalStateMachine_GetCurrentStateName, ReturnValue) == 0x000000, "Member 'HierarchicalStateMachine_GetCurrentStateName::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachine_GetCurrentStateName;
 
 // Function UnionLib.HierarchicalStateMachine.GetCurrentStateNameAsString
 // 0x0010 (0x0010 - 0x0000)
@@ -536,9 +403,7 @@ struct HierarchicalStateMachine_GetCurrentStateNameAsString final
 public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachine_GetCurrentStateNameAsString) == 0x000008, "Wrong alignment on HierarchicalStateMachine_GetCurrentStateNameAsString");
-static_assert(sizeof(HierarchicalStateMachine_GetCurrentStateNameAsString) == 0x000010, "Wrong size on HierarchicalStateMachine_GetCurrentStateNameAsString");
-static_assert(offsetof(HierarchicalStateMachine_GetCurrentStateNameAsString, ReturnValue) == 0x000000, "Member 'HierarchicalStateMachine_GetCurrentStateNameAsString::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachine_GetCurrentStateNameAsString;
 
 // Function UnionLib.HierarchicalStateMachine.GetCurrentStateTime
 // 0x0004 (0x0004 - 0x0000)
@@ -547,9 +412,7 @@ struct HierarchicalStateMachine_GetCurrentStateTime final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachine_GetCurrentStateTime) == 0x000004, "Wrong alignment on HierarchicalStateMachine_GetCurrentStateTime");
-static_assert(sizeof(HierarchicalStateMachine_GetCurrentStateTime) == 0x000004, "Wrong size on HierarchicalStateMachine_GetCurrentStateTime");
-static_assert(offsetof(HierarchicalStateMachine_GetCurrentStateTime, ReturnValue) == 0x000000, "Member 'HierarchicalStateMachine_GetCurrentStateTime::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachine_GetCurrentStateTime;
 
 // Function UnionLib.HierarchicalStateMachine.GetExitCode
 // 0x0004 (0x0004 - 0x0000)
@@ -558,9 +421,7 @@ struct HierarchicalStateMachine_GetExitCode final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachine_GetExitCode) == 0x000004, "Wrong alignment on HierarchicalStateMachine_GetExitCode");
-static_assert(sizeof(HierarchicalStateMachine_GetExitCode) == 0x000004, "Wrong size on HierarchicalStateMachine_GetExitCode");
-static_assert(offsetof(HierarchicalStateMachine_GetExitCode, ReturnValue) == 0x000000, "Member 'HierarchicalStateMachine_GetExitCode::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachine_GetExitCode;
 
 // Function UnionLib.HierarchicalStateMachine.GetNextState
 // 0x0004 (0x0004 - 0x0000)
@@ -569,9 +430,7 @@ struct HierarchicalStateMachine_GetNextState final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachine_GetNextState) == 0x000004, "Wrong alignment on HierarchicalStateMachine_GetNextState");
-static_assert(sizeof(HierarchicalStateMachine_GetNextState) == 0x000004, "Wrong size on HierarchicalStateMachine_GetNextState");
-static_assert(offsetof(HierarchicalStateMachine_GetNextState, ReturnValue) == 0x000000, "Member 'HierarchicalStateMachine_GetNextState::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachine_GetNextState;
 
 // Function UnionLib.HierarchicalStateMachine.GetStateCount
 // 0x0004 (0x0004 - 0x0000)
@@ -580,9 +439,7 @@ struct HierarchicalStateMachine_GetStateCount final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachine_GetStateCount) == 0x000004, "Wrong alignment on HierarchicalStateMachine_GetStateCount");
-static_assert(sizeof(HierarchicalStateMachine_GetStateCount) == 0x000004, "Wrong size on HierarchicalStateMachine_GetStateCount");
-static_assert(offsetof(HierarchicalStateMachine_GetStateCount, ReturnValue) == 0x000000, "Member 'HierarchicalStateMachine_GetStateCount::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachine_GetStateCount;
 
 // Function UnionLib.HierarchicalStateMachine.GetStateMachineNameAsString
 // 0x0010 (0x0010 - 0x0000)
@@ -591,9 +448,7 @@ struct HierarchicalStateMachine_GetStateMachineNameAsString final
 public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachine_GetStateMachineNameAsString) == 0x000008, "Wrong alignment on HierarchicalStateMachine_GetStateMachineNameAsString");
-static_assert(sizeof(HierarchicalStateMachine_GetStateMachineNameAsString) == 0x000010, "Wrong size on HierarchicalStateMachine_GetStateMachineNameAsString");
-static_assert(offsetof(HierarchicalStateMachine_GetStateMachineNameAsString, ReturnValue) == 0x000000, "Member 'HierarchicalStateMachine_GetStateMachineNameAsString::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachine_GetStateMachineNameAsString;
 
 // Function UnionLib.HierarchicalStateMachine.GetStateName
 // 0x000C (0x000C - 0x0000)
@@ -603,10 +458,7 @@ public:
 	int32                                         InState;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   ReturnValue;                                       // 0x0004(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachine_GetStateName) == 0x000004, "Wrong alignment on HierarchicalStateMachine_GetStateName");
-static_assert(sizeof(HierarchicalStateMachine_GetStateName) == 0x00000C, "Wrong size on HierarchicalStateMachine_GetStateName");
-static_assert(offsetof(HierarchicalStateMachine_GetStateName, InState) == 0x000000, "Member 'HierarchicalStateMachine_GetStateName::InState' has a wrong offset!");
-static_assert(offsetof(HierarchicalStateMachine_GetStateName, ReturnValue) == 0x000004, "Member 'HierarchicalStateMachine_GetStateName::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachine_GetStateName;
 
 // Function UnionLib.HierarchicalStateMachine.GetStateNameAsString
 // 0x0018 (0x0018 - 0x0000)
@@ -617,10 +469,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachine_GetStateNameAsString) == 0x000008, "Wrong alignment on HierarchicalStateMachine_GetStateNameAsString");
-static_assert(sizeof(HierarchicalStateMachine_GetStateNameAsString) == 0x000018, "Wrong size on HierarchicalStateMachine_GetStateNameAsString");
-static_assert(offsetof(HierarchicalStateMachine_GetStateNameAsString, InState) == 0x000000, "Member 'HierarchicalStateMachine_GetStateNameAsString::InState' has a wrong offset!");
-static_assert(offsetof(HierarchicalStateMachine_GetStateNameAsString, ReturnValue) == 0x000008, "Member 'HierarchicalStateMachine_GetStateNameAsString::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachine_GetStateNameAsString;
 
 // Function UnionLib.HierarchicalStateMachine.IsFinalized
 // 0x0001 (0x0001 - 0x0000)
@@ -629,9 +478,7 @@ struct HierarchicalStateMachine_IsFinalized final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachine_IsFinalized) == 0x000001, "Wrong alignment on HierarchicalStateMachine_IsFinalized");
-static_assert(sizeof(HierarchicalStateMachine_IsFinalized) == 0x000001, "Wrong size on HierarchicalStateMachine_IsFinalized");
-static_assert(offsetof(HierarchicalStateMachine_IsFinalized, ReturnValue) == 0x000000, "Member 'HierarchicalStateMachine_IsFinalized::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachine_IsFinalized;
 
 // Function UnionLib.HierarchicalStateMachine.IsInitialized
 // 0x0001 (0x0001 - 0x0000)
@@ -640,9 +487,7 @@ struct HierarchicalStateMachine_IsInitialized final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachine_IsInitialized) == 0x000001, "Wrong alignment on HierarchicalStateMachine_IsInitialized");
-static_assert(sizeof(HierarchicalStateMachine_IsInitialized) == 0x000001, "Wrong size on HierarchicalStateMachine_IsInitialized");
-static_assert(offsetof(HierarchicalStateMachine_IsInitialized, ReturnValue) == 0x000000, "Member 'HierarchicalStateMachine_IsInitialized::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachine_IsInitialized;
 
 // Function UnionLib.HierarchicalStateMachine.IsRunning
 // 0x0001 (0x0001 - 0x0000)
@@ -651,9 +496,7 @@ struct HierarchicalStateMachine_IsRunning final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachine_IsRunning) == 0x000001, "Wrong alignment on HierarchicalStateMachine_IsRunning");
-static_assert(sizeof(HierarchicalStateMachine_IsRunning) == 0x000001, "Wrong size on HierarchicalStateMachine_IsRunning");
-static_assert(offsetof(HierarchicalStateMachine_IsRunning, ReturnValue) == 0x000000, "Member 'HierarchicalStateMachine_IsRunning::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachine_IsRunning;
 
 // Function UnionLib.HierarchicalStateMachineHolder.GetRootStateMachine
 // 0x0008 (0x0008 - 0x0000)
@@ -662,9 +505,7 @@ struct HierarchicalStateMachineHolder_GetRootStateMachine final
 public:
 	class AHierarchicalStateMachine*              ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachineHolder_GetRootStateMachine) == 0x000008, "Wrong alignment on HierarchicalStateMachineHolder_GetRootStateMachine");
-static_assert(sizeof(HierarchicalStateMachineHolder_GetRootStateMachine) == 0x000008, "Wrong size on HierarchicalStateMachineHolder_GetRootStateMachine");
-static_assert(offsetof(HierarchicalStateMachineHolder_GetRootStateMachine, ReturnValue) == 0x000000, "Member 'HierarchicalStateMachineHolder_GetRootStateMachine::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachineHolder_GetRootStateMachine;
 
 // Function UnionLib.HierarchicalStateMachineHolder.IsStateMachineActive
 // 0x0001 (0x0001 - 0x0000)
@@ -673,9 +514,7 @@ struct HierarchicalStateMachineHolder_IsStateMachineActive final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachineHolder_IsStateMachineActive) == 0x000001, "Wrong alignment on HierarchicalStateMachineHolder_IsStateMachineActive");
-static_assert(sizeof(HierarchicalStateMachineHolder_IsStateMachineActive) == 0x000001, "Wrong size on HierarchicalStateMachineHolder_IsStateMachineActive");
-static_assert(offsetof(HierarchicalStateMachineHolder_IsStateMachineActive, ReturnValue) == 0x000000, "Member 'HierarchicalStateMachineHolder_IsStateMachineActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachineHolder_IsStateMachineActive;
 
 // Function UnionLib.HierarchicalStateMachineStateComponent.GetNeedInitFadeOut
 // 0x0001 (0x0001 - 0x0000)
@@ -684,9 +523,7 @@ struct HierarchicalStateMachineStateComponent_GetNeedInitFadeOut final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachineStateComponent_GetNeedInitFadeOut) == 0x000001, "Wrong alignment on HierarchicalStateMachineStateComponent_GetNeedInitFadeOut");
-static_assert(sizeof(HierarchicalStateMachineStateComponent_GetNeedInitFadeOut) == 0x000001, "Wrong size on HierarchicalStateMachineStateComponent_GetNeedInitFadeOut");
-static_assert(offsetof(HierarchicalStateMachineStateComponent_GetNeedInitFadeOut, ReturnValue) == 0x000000, "Member 'HierarchicalStateMachineStateComponent_GetNeedInitFadeOut::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachineStateComponent_GetNeedInitFadeOut;
 
 // Function UnionLib.HierarchicalStateMachineStateComponent.OnUpdateState
 // 0x0004 (0x0004 - 0x0000)
@@ -695,9 +532,7 @@ struct HierarchicalStateMachineStateComponent_OnUpdateState final
 public:
 	float                                         InDeltaTime;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachineStateComponent_OnUpdateState) == 0x000004, "Wrong alignment on HierarchicalStateMachineStateComponent_OnUpdateState");
-static_assert(sizeof(HierarchicalStateMachineStateComponent_OnUpdateState) == 0x000004, "Wrong size on HierarchicalStateMachineStateComponent_OnUpdateState");
-static_assert(offsetof(HierarchicalStateMachineStateComponent_OnUpdateState, InDeltaTime) == 0x000000, "Member 'HierarchicalStateMachineStateComponent_OnUpdateState::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachineStateComponent_OnUpdateState;
 
 // Function UnionLib.HierarchicalStateMachineStateComponent.RegisterState
 // 0x000C (0x000C - 0x0000)
@@ -707,10 +542,7 @@ public:
 	int32                                         InOverrideState;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   InOverrideStateName;                               // 0x0004(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachineStateComponent_RegisterState) == 0x000004, "Wrong alignment on HierarchicalStateMachineStateComponent_RegisterState");
-static_assert(sizeof(HierarchicalStateMachineStateComponent_RegisterState) == 0x00000C, "Wrong size on HierarchicalStateMachineStateComponent_RegisterState");
-static_assert(offsetof(HierarchicalStateMachineStateComponent_RegisterState, InOverrideState) == 0x000000, "Member 'HierarchicalStateMachineStateComponent_RegisterState::InOverrideState' has a wrong offset!");
-static_assert(offsetof(HierarchicalStateMachineStateComponent_RegisterState, InOverrideStateName) == 0x000004, "Member 'HierarchicalStateMachineStateComponent_RegisterState::InOverrideStateName' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachineStateComponent_RegisterState;
 
 // Function UnionLib.HierarchicalStateMachineStateComponent.SetExitCode
 // 0x0004 (0x0004 - 0x0000)
@@ -719,9 +551,7 @@ struct HierarchicalStateMachineStateComponent_SetExitCode final
 public:
 	int32                                         InExitCode;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachineStateComponent_SetExitCode) == 0x000004, "Wrong alignment on HierarchicalStateMachineStateComponent_SetExitCode");
-static_assert(sizeof(HierarchicalStateMachineStateComponent_SetExitCode) == 0x000004, "Wrong size on HierarchicalStateMachineStateComponent_SetExitCode");
-static_assert(offsetof(HierarchicalStateMachineStateComponent_SetExitCode, InExitCode) == 0x000000, "Member 'HierarchicalStateMachineStateComponent_SetExitCode::InExitCode' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachineStateComponent_SetExitCode;
 
 // Function UnionLib.HierarchicalStateMachineStateComponent.SetNeedInitFadeOut
 // 0x0001 (0x0001 - 0x0000)
@@ -730,9 +560,7 @@ struct HierarchicalStateMachineStateComponent_SetNeedInitFadeOut final
 public:
 	bool                                          InNeed;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachineStateComponent_SetNeedInitFadeOut) == 0x000001, "Wrong alignment on HierarchicalStateMachineStateComponent_SetNeedInitFadeOut");
-static_assert(sizeof(HierarchicalStateMachineStateComponent_SetNeedInitFadeOut) == 0x000001, "Wrong size on HierarchicalStateMachineStateComponent_SetNeedInitFadeOut");
-static_assert(offsetof(HierarchicalStateMachineStateComponent_SetNeedInitFadeOut, InNeed) == 0x000000, "Member 'HierarchicalStateMachineStateComponent_SetNeedInitFadeOut::InNeed' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachineStateComponent_SetNeedInitFadeOut;
 
 // Function UnionLib.HierarchicalStateMachineStateComponent.SetNextState
 // 0x0004 (0x0004 - 0x0000)
@@ -741,9 +569,7 @@ struct HierarchicalStateMachineStateComponent_SetNextState final
 public:
 	int32                                         InNextState;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachineStateComponent_SetNextState) == 0x000004, "Wrong alignment on HierarchicalStateMachineStateComponent_SetNextState");
-static_assert(sizeof(HierarchicalStateMachineStateComponent_SetNextState) == 0x000004, "Wrong size on HierarchicalStateMachineStateComponent_SetNextState");
-static_assert(offsetof(HierarchicalStateMachineStateComponent_SetNextState, InNextState) == 0x000000, "Member 'HierarchicalStateMachineStateComponent_SetNextState::InNextState' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachineStateComponent_SetNextState;
 
 // Function UnionLib.HierarchicalStateMachineStateComponent.GetChildStateMachine
 // 0x0008 (0x0008 - 0x0000)
@@ -752,9 +578,7 @@ struct HierarchicalStateMachineStateComponent_GetChildStateMachine final
 public:
 	class AHierarchicalStateMachine*              ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachineStateComponent_GetChildStateMachine) == 0x000008, "Wrong alignment on HierarchicalStateMachineStateComponent_GetChildStateMachine");
-static_assert(sizeof(HierarchicalStateMachineStateComponent_GetChildStateMachine) == 0x000008, "Wrong size on HierarchicalStateMachineStateComponent_GetChildStateMachine");
-static_assert(offsetof(HierarchicalStateMachineStateComponent_GetChildStateMachine, ReturnValue) == 0x000000, "Member 'HierarchicalStateMachineStateComponent_GetChildStateMachine::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachineStateComponent_GetChildStateMachine;
 
 // Function UnionLib.HierarchicalStateMachineStateComponent.GetCurrentStateFrame
 // 0x0004 (0x0004 - 0x0000)
@@ -763,9 +587,7 @@ struct HierarchicalStateMachineStateComponent_GetCurrentStateFrame final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachineStateComponent_GetCurrentStateFrame) == 0x000004, "Wrong alignment on HierarchicalStateMachineStateComponent_GetCurrentStateFrame");
-static_assert(sizeof(HierarchicalStateMachineStateComponent_GetCurrentStateFrame) == 0x000004, "Wrong size on HierarchicalStateMachineStateComponent_GetCurrentStateFrame");
-static_assert(offsetof(HierarchicalStateMachineStateComponent_GetCurrentStateFrame, ReturnValue) == 0x000000, "Member 'HierarchicalStateMachineStateComponent_GetCurrentStateFrame::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachineStateComponent_GetCurrentStateFrame;
 
 // Function UnionLib.HierarchicalStateMachineStateComponent.GetCurrentStateTime
 // 0x0004 (0x0004 - 0x0000)
@@ -774,9 +596,7 @@ struct HierarchicalStateMachineStateComponent_GetCurrentStateTime final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachineStateComponent_GetCurrentStateTime) == 0x000004, "Wrong alignment on HierarchicalStateMachineStateComponent_GetCurrentStateTime");
-static_assert(sizeof(HierarchicalStateMachineStateComponent_GetCurrentStateTime) == 0x000004, "Wrong size on HierarchicalStateMachineStateComponent_GetCurrentStateTime");
-static_assert(offsetof(HierarchicalStateMachineStateComponent_GetCurrentStateTime, ReturnValue) == 0x000000, "Member 'HierarchicalStateMachineStateComponent_GetCurrentStateTime::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachineStateComponent_GetCurrentStateTime;
 
 // Function UnionLib.HierarchicalStateMachineStateComponent.GetDefaultState
 // 0x0004 (0x0004 - 0x0000)
@@ -785,9 +605,7 @@ struct HierarchicalStateMachineStateComponent_GetDefaultState final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachineStateComponent_GetDefaultState) == 0x000004, "Wrong alignment on HierarchicalStateMachineStateComponent_GetDefaultState");
-static_assert(sizeof(HierarchicalStateMachineStateComponent_GetDefaultState) == 0x000004, "Wrong size on HierarchicalStateMachineStateComponent_GetDefaultState");
-static_assert(offsetof(HierarchicalStateMachineStateComponent_GetDefaultState, ReturnValue) == 0x000000, "Member 'HierarchicalStateMachineStateComponent_GetDefaultState::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachineStateComponent_GetDefaultState;
 
 // Function UnionLib.HierarchicalStateMachineStateComponent.GetNextState
 // 0x0004 (0x0004 - 0x0000)
@@ -796,9 +614,7 @@ struct HierarchicalStateMachineStateComponent_GetNextState final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachineStateComponent_GetNextState) == 0x000004, "Wrong alignment on HierarchicalStateMachineStateComponent_GetNextState");
-static_assert(sizeof(HierarchicalStateMachineStateComponent_GetNextState) == 0x000004, "Wrong size on HierarchicalStateMachineStateComponent_GetNextState");
-static_assert(offsetof(HierarchicalStateMachineStateComponent_GetNextState, ReturnValue) == 0x000000, "Member 'HierarchicalStateMachineStateComponent_GetNextState::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachineStateComponent_GetNextState;
 
 // Function UnionLib.HierarchicalStateMachineStateComponent.GetOwnerStateMachine
 // 0x0008 (0x0008 - 0x0000)
@@ -807,9 +623,7 @@ struct HierarchicalStateMachineStateComponent_GetOwnerStateMachine final
 public:
 	class AHierarchicalStateMachine*              ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachineStateComponent_GetOwnerStateMachine) == 0x000008, "Wrong alignment on HierarchicalStateMachineStateComponent_GetOwnerStateMachine");
-static_assert(sizeof(HierarchicalStateMachineStateComponent_GetOwnerStateMachine) == 0x000008, "Wrong size on HierarchicalStateMachineStateComponent_GetOwnerStateMachine");
-static_assert(offsetof(HierarchicalStateMachineStateComponent_GetOwnerStateMachine, ReturnValue) == 0x000000, "Member 'HierarchicalStateMachineStateComponent_GetOwnerStateMachine::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachineStateComponent_GetOwnerStateMachine;
 
 // Function UnionLib.HierarchicalStateMachineStateComponent.GetState
 // 0x0004 (0x0004 - 0x0000)
@@ -818,9 +632,7 @@ struct HierarchicalStateMachineStateComponent_GetState final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachineStateComponent_GetState) == 0x000004, "Wrong alignment on HierarchicalStateMachineStateComponent_GetState");
-static_assert(sizeof(HierarchicalStateMachineStateComponent_GetState) == 0x000004, "Wrong size on HierarchicalStateMachineStateComponent_GetState");
-static_assert(offsetof(HierarchicalStateMachineStateComponent_GetState, ReturnValue) == 0x000000, "Member 'HierarchicalStateMachineStateComponent_GetState::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachineStateComponent_GetState;
 
 // Function UnionLib.HierarchicalStateMachineStateComponent.GetStateCount
 // 0x0004 (0x0004 - 0x0000)
@@ -829,9 +641,7 @@ struct HierarchicalStateMachineStateComponent_GetStateCount final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachineStateComponent_GetStateCount) == 0x000004, "Wrong alignment on HierarchicalStateMachineStateComponent_GetStateCount");
-static_assert(sizeof(HierarchicalStateMachineStateComponent_GetStateCount) == 0x000004, "Wrong size on HierarchicalStateMachineStateComponent_GetStateCount");
-static_assert(offsetof(HierarchicalStateMachineStateComponent_GetStateCount, ReturnValue) == 0x000000, "Member 'HierarchicalStateMachineStateComponent_GetStateCount::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachineStateComponent_GetStateCount;
 
 // Function UnionLib.HierarchicalStateMachineStateComponent.GetStateName
 // 0x0008 (0x0008 - 0x0000)
@@ -840,9 +650,7 @@ struct HierarchicalStateMachineStateComponent_GetStateName final
 public:
 	class FName                                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachineStateComponent_GetStateName) == 0x000004, "Wrong alignment on HierarchicalStateMachineStateComponent_GetStateName");
-static_assert(sizeof(HierarchicalStateMachineStateComponent_GetStateName) == 0x000008, "Wrong size on HierarchicalStateMachineStateComponent_GetStateName");
-static_assert(offsetof(HierarchicalStateMachineStateComponent_GetStateName, ReturnValue) == 0x000000, "Member 'HierarchicalStateMachineStateComponent_GetStateName::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachineStateComponent_GetStateName;
 
 // Function UnionLib.HierarchicalStateMachineStateComponent.GetStateNameAsString
 // 0x0010 (0x0010 - 0x0000)
@@ -851,9 +659,7 @@ struct HierarchicalStateMachineStateComponent_GetStateNameAsString final
 public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HierarchicalStateMachineStateComponent_GetStateNameAsString) == 0x000008, "Wrong alignment on HierarchicalStateMachineStateComponent_GetStateNameAsString");
-static_assert(sizeof(HierarchicalStateMachineStateComponent_GetStateNameAsString) == 0x000010, "Wrong size on HierarchicalStateMachineStateComponent_GetStateNameAsString");
-static_assert(offsetof(HierarchicalStateMachineStateComponent_GetStateNameAsString, ReturnValue) == 0x000000, "Member 'HierarchicalStateMachineStateComponent_GetStateNameAsString::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_HierarchicalStateMachineStateComponent_GetStateNameAsString;
 
 // Function UnionLib.UnionDebugDrawLineSubsystem.Draw
 // 0x0010 (0x0010 - 0x0000)
@@ -863,10 +669,7 @@ public:
 	class UCanvas*                                InCanvas;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class APlayerController*                      InPC;                                              // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionDebugDrawLineSubsystem_Draw) == 0x000008, "Wrong alignment on UnionDebugDrawLineSubsystem_Draw");
-static_assert(sizeof(UnionDebugDrawLineSubsystem_Draw) == 0x000010, "Wrong size on UnionDebugDrawLineSubsystem_Draw");
-static_assert(offsetof(UnionDebugDrawLineSubsystem_Draw, InCanvas) == 0x000000, "Member 'UnionDebugDrawLineSubsystem_Draw::InCanvas' has a wrong offset!");
-static_assert(offsetof(UnionDebugDrawLineSubsystem_Draw, InPC) == 0x000008, "Member 'UnionDebugDrawLineSubsystem_Draw::InPC' has a wrong offset!");
+DUMPER7_ASSERTS_UnionDebugDrawLineSubsystem_Draw;
 
 // Function UnionLib.UnionDebugDrawLineSubsystem.SetDebugVisibleFlag
 // 0x0001 (0x0001 - 0x0000)
@@ -875,9 +678,7 @@ struct UnionDebugDrawLineSubsystem_SetDebugVisibleFlag final
 public:
 	bool                                          bVisible;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionDebugDrawLineSubsystem_SetDebugVisibleFlag) == 0x000001, "Wrong alignment on UnionDebugDrawLineSubsystem_SetDebugVisibleFlag");
-static_assert(sizeof(UnionDebugDrawLineSubsystem_SetDebugVisibleFlag) == 0x000001, "Wrong size on UnionDebugDrawLineSubsystem_SetDebugVisibleFlag");
-static_assert(offsetof(UnionDebugDrawLineSubsystem_SetDebugVisibleFlag, bVisible) == 0x000000, "Member 'UnionDebugDrawLineSubsystem_SetDebugVisibleFlag::bVisible' has a wrong offset!");
+DUMPER7_ASSERTS_UnionDebugDrawLineSubsystem_SetDebugVisibleFlag;
 
 }
 

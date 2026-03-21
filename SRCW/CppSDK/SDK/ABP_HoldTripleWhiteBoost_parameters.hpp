@@ -21,9 +21,7 @@ struct ABP_HoldTripleWhiteBoost_C_GetBlendTime final
 public:
 	double                                        newParam;                                          // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ABP_HoldTripleWhiteBoost_C_GetBlendTime) == 0x000008, "Wrong alignment on ABP_HoldTripleWhiteBoost_C_GetBlendTime");
-static_assert(sizeof(ABP_HoldTripleWhiteBoost_C_GetBlendTime) == 0x000008, "Wrong size on ABP_HoldTripleWhiteBoost_C_GetBlendTime");
-static_assert(offsetof(ABP_HoldTripleWhiteBoost_C_GetBlendTime, newParam) == 0x000000, "Member 'ABP_HoldTripleWhiteBoost_C_GetBlendTime::newParam' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_HoldTripleWhiteBoost_C_GetBlendTime;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
+#include "UnionSystem_structs.hpp"
 #include "UnionUI_structs.hpp"
 
 
@@ -27,81 +27,55 @@ public:
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_DodonpaEventState_C_AttachDodonpaCamera) == 0x000008, "Wrong alignment on BPC_DodonpaEventState_C_AttachDodonpaCamera");
-static_assert(sizeof(BPC_DodonpaEventState_C_AttachDodonpaCamera) == 0x000018, "Wrong size on BPC_DodonpaEventState_C_AttachDodonpaCamera");
-static_assert(offsetof(BPC_DodonpaEventState_C_AttachDodonpaCamera, CallFunc_GetDodonpaEventCamera_Camera) == 0x000000, "Member 'BPC_DodonpaEventState_C_AttachDodonpaCamera::CallFunc_GetDodonpaEventCamera_Camera' has a wrong offset!");
-static_assert(offsetof(BPC_DodonpaEventState_C_AttachDodonpaCamera, CallFunc_GetPlayerController_ReturnValue) == 0x000008, "Member 'BPC_DodonpaEventState_C_AttachDodonpaCamera::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_DodonpaEventState_C_AttachDodonpaCamera, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'BPC_DodonpaEventState_C_AttachDodonpaCamera::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_DodonpaEventState_C_AttachDodonpaCamera;
 
 // Function BPC_DodonpaEventState.BPC_DodonpaEventState_C.ExecuteUbergraph_BPC_DodonpaEventState
-// 0x00B8 (0x00B8 - 0x0000)
+// 0x00C8 (0x00C8 - 0x0000)
 struct BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USaveDataManageSubsystem*               CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable; // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_13[0x1];                                       // 0x0013(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Event_InDeltaTime;                          // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsEventComplete_IsComplete;               // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESaveDataStatus                               K2Node_CustomEvent_Status;                         // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UForceNextSequenceManagerSubsytem*      CallFunc_GetWorldSubsystem_ReturnValue;            // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Event_InDeltaTime;                          // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsEventComplete_IsComplete;               // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESaveDataStatus                               K2Node_CustomEvent_Status;                         // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F[0x1];                                        // 0x000F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class UForceNextSequenceManagerSubsytem*      CallFunc_GetWorldSubsystem_ReturnValue;            // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(ESaveDataStatus Status)>       K2Node_CreateDelegate_OutputDelegate;              // 0x0018(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UForceNextSequenceManagerSubsytem*      CallFunc_GetWorldSubsystem_ReturnValue_1;          // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UMenuSoundSubsystem*                    CallFunc_GetWorldSubsystem_ReturnValue_2;          // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUnionUITransitionManager*              CallFunc_GetGameInstanceSubsystem_ReturnValue_1;   // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(ESaveDataStatus Status)>       K2Node_CreateDelegate_OutputDelegate;              // 0x0040(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUnionUITransitionManager*              CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUnionUITransitionManager*              CallFunc_GetGameInstanceSubsystem_ReturnValue_1;   // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Call_Dodonpa_Event_IsSucceeded;           // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUnionUIFadeDirection                         K2Node_CustomEvent_FadeDirection_2;                // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUnionUIFadeDirection                         K2Node_CustomEvent_FadeDirection_1;                // 0x004A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4B[0x5];                                       // 0x004B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUnionUITransitionManager*              CallFunc_GetGameInstanceSubsystem_ReturnValue_2;   // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUnionUITransitionManager*              CallFunc_GetGameInstanceSubsystem_ReturnValue_3;   // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EUnionUIFadeDirection FadeDirection)> K2Node_CreateDelegate_OutputDelegate_1;     // 0x0060(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EUnionUIFadeDirection                         K2Node_CustomEvent_FadeDirection_2;                // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EUnionUIFadeDirection                         K2Node_CustomEvent_FadeDirection_1;                // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0072(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EUnionUIFadeDirection                         K2Node_CustomEvent_FadeDirection;                  // 0x0073(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   K2Node_Event_InCallEventName;                      // 0x0074(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGrandPrixEventFlag                           K2Node_Event_InSaveDataFlagId;                     // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EMenuSequenceBGM                              K2Node_Event_InBGMId;                              // 0x007D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7E[0x2];                                       // 0x007E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EUnionUIFadeDirection FadeDirection)> K2Node_CreateDelegate_OutputDelegate_2;     // 0x0080(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EUnionUIFadeDirection FadeDirection)> K2Node_CreateDelegate_OutputDelegate_3;     // 0x0090(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsDestroyedDodonpaEvent_IsDestroyed;      // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionUITransitionManager*              CallFunc_GetGameInstanceSubsystem_ReturnValue_4;   // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsLastFadeDirectionIn_ReturnValue;        // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUnionUIFadeDirection                         K2Node_CustomEvent_FadeDirection;                  // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable; // 0x005A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5B[0x1];                                       // 0x005B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   K2Node_Event_InCallEventName;                      // 0x005C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGrandPrixEventFlag                           K2Node_Event_InSaveDataFlagId;                     // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EMenuSequenceBGM                              K2Node_Event_InBGMId;                              // 0x0065(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_66[0x2];                                       // 0x0066(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(EUnionUIFadeDirection FadeDirection)> K2Node_CreateDelegate_OutputDelegate_1;     // 0x0068(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsDestroyedDodonpaEvent_IsDestroyed;      // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_79[0x3];                                       // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(EUnionUIFadeDirection FadeDirection)> K2Node_CreateDelegate_OutputDelegate_2;     // 0x007C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EUnionUIFadeDirection FadeDirection)> K2Node_CreateDelegate_OutputDelegate_3;     // 0x008C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ULevelStreaming*                        CallFunc_GetStreamingLevel_ReturnValue;            // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsLevelLoaded_ReturnValue;                // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionUITransitionManager*              CallFunc_GetGameInstanceSubsystem_ReturnValue_3;   // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsLastFadeDirectionIn_ReturnValue;        // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USaveDataManageSubsystem*               CallFunc_GetGameInstanceSubsystem_ReturnValue_4;   // 0x00C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState) == 0x000008, "Wrong alignment on BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState");
-static_assert(sizeof(BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState) == 0x0000B8, "Wrong size on BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState");
-static_assert(offsetof(BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState, EntryPoint) == 0x000000, "Member 'BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000008, "Member 'BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState, Temp_bool_Has_Been_Initd_Variable) == 0x000010, "Member 'BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState, Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable) == 0x000011, "Member 'BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState::Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState, Temp_bool_IsClosed_Variable) == 0x000012, "Member 'BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState, K2Node_Event_InDeltaTime) == 0x000014, "Member 'BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState, CallFunc_IsEventComplete_IsComplete) == 0x000018, "Member 'BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState::CallFunc_IsEventComplete_IsComplete' has a wrong offset!");
-static_assert(offsetof(BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState, K2Node_CustomEvent_Status) == 0x000019, "Member 'BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState::K2Node_CustomEvent_Status' has a wrong offset!");
-static_assert(offsetof(BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000020, "Member 'BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState, CallFunc_GetWorldSubsystem_ReturnValue_1) == 0x000028, "Member 'BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState::CallFunc_GetWorldSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState, CallFunc_GetWorldSubsystem_ReturnValue_2) == 0x000030, "Member 'BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState::CallFunc_GetWorldSubsystem_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x000038, "Member 'BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState, K2Node_CreateDelegate_OutputDelegate) == 0x000040, "Member 'BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState, CallFunc_GetGameInstanceSubsystem_ReturnValue_2) == 0x000050, "Member 'BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState::CallFunc_GetGameInstanceSubsystem_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState, CallFunc_GetGameInstanceSubsystem_ReturnValue_3) == 0x000058, "Member 'BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState::CallFunc_GetGameInstanceSubsystem_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState, K2Node_CreateDelegate_OutputDelegate_1) == 0x000060, "Member 'BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState, K2Node_CustomEvent_FadeDirection_2) == 0x000070, "Member 'BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState::K2Node_CustomEvent_FadeDirection_2' has a wrong offset!");
-static_assert(offsetof(BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState, K2Node_CustomEvent_FadeDirection_1) == 0x000071, "Member 'BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState::K2Node_CustomEvent_FadeDirection_1' has a wrong offset!");
-static_assert(offsetof(BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000072, "Member 'BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState, K2Node_CustomEvent_FadeDirection) == 0x000073, "Member 'BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState::K2Node_CustomEvent_FadeDirection' has a wrong offset!");
-static_assert(offsetof(BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState, K2Node_Event_InCallEventName) == 0x000074, "Member 'BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState::K2Node_Event_InCallEventName' has a wrong offset!");
-static_assert(offsetof(BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState, K2Node_Event_InSaveDataFlagId) == 0x00007C, "Member 'BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState::K2Node_Event_InSaveDataFlagId' has a wrong offset!");
-static_assert(offsetof(BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState, K2Node_Event_InBGMId) == 0x00007D, "Member 'BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState::K2Node_Event_InBGMId' has a wrong offset!");
-static_assert(offsetof(BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState, K2Node_CreateDelegate_OutputDelegate_2) == 0x000080, "Member 'BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState, K2Node_CreateDelegate_OutputDelegate_3) == 0x000090, "Member 'BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState, CallFunc_IsDestroyedDodonpaEvent_IsDestroyed) == 0x0000A0, "Member 'BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState::CallFunc_IsDestroyedDodonpaEvent_IsDestroyed' has a wrong offset!");
-static_assert(offsetof(BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState, CallFunc_GetGameInstanceSubsystem_ReturnValue_4) == 0x0000A8, "Member 'BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState::CallFunc_GetGameInstanceSubsystem_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState, CallFunc_IsLastFadeDirectionIn_ReturnValue) == 0x0000B0, "Member 'BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState::CallFunc_IsLastFadeDirectionIn_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_DodonpaEventState_C_ExecuteUbergraph_BPC_DodonpaEventState;
 
 // Function BPC_DodonpaEventState.BPC_DodonpaEventState_C.OnFinished_EventInFadeEnd
 // 0x0001 (0x0001 - 0x0000)
@@ -110,9 +84,7 @@ struct BPC_DodonpaEventState_C_OnFinished_EventInFadeEnd final
 public:
 	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_DodonpaEventState_C_OnFinished_EventInFadeEnd) == 0x000001, "Wrong alignment on BPC_DodonpaEventState_C_OnFinished_EventInFadeEnd");
-static_assert(sizeof(BPC_DodonpaEventState_C_OnFinished_EventInFadeEnd) == 0x000001, "Wrong size on BPC_DodonpaEventState_C_OnFinished_EventInFadeEnd");
-static_assert(offsetof(BPC_DodonpaEventState_C_OnFinished_EventInFadeEnd, FadeDirection) == 0x000000, "Member 'BPC_DodonpaEventState_C_OnFinished_EventInFadeEnd::FadeDirection' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_DodonpaEventState_C_OnFinished_EventInFadeEnd;
 
 // Function BPC_DodonpaEventState.BPC_DodonpaEventState_C.OnFinished_EventInFadeStart
 // 0x0001 (0x0001 - 0x0000)
@@ -121,9 +93,7 @@ struct BPC_DodonpaEventState_C_OnFinished_EventInFadeStart final
 public:
 	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_DodonpaEventState_C_OnFinished_EventInFadeStart) == 0x000001, "Wrong alignment on BPC_DodonpaEventState_C_OnFinished_EventInFadeStart");
-static_assert(sizeof(BPC_DodonpaEventState_C_OnFinished_EventInFadeStart) == 0x000001, "Wrong size on BPC_DodonpaEventState_C_OnFinished_EventInFadeStart");
-static_assert(offsetof(BPC_DodonpaEventState_C_OnFinished_EventInFadeStart, FadeDirection) == 0x000000, "Member 'BPC_DodonpaEventState_C_OnFinished_EventInFadeStart::FadeDirection' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_DodonpaEventState_C_OnFinished_EventInFadeStart;
 
 // Function BPC_DodonpaEventState.BPC_DodonpaEventState_C.OnFinished_EventOutFadeStart
 // 0x0001 (0x0001 - 0x0000)
@@ -132,9 +102,7 @@ struct BPC_DodonpaEventState_C_OnFinished_EventOutFadeStart final
 public:
 	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_DodonpaEventState_C_OnFinished_EventOutFadeStart) == 0x000001, "Wrong alignment on BPC_DodonpaEventState_C_OnFinished_EventOutFadeStart");
-static_assert(sizeof(BPC_DodonpaEventState_C_OnFinished_EventOutFadeStart) == 0x000001, "Wrong size on BPC_DodonpaEventState_C_OnFinished_EventOutFadeStart");
-static_assert(offsetof(BPC_DodonpaEventState_C_OnFinished_EventOutFadeStart, FadeDirection) == 0x000000, "Member 'BPC_DodonpaEventState_C_OnFinished_EventOutFadeStart::FadeDirection' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_DodonpaEventState_C_OnFinished_EventOutFadeStart;
 
 // Function BPC_DodonpaEventState.BPC_DodonpaEventState_C.OnSaveComplete
 // 0x0001 (0x0001 - 0x0000)
@@ -143,9 +111,7 @@ struct BPC_DodonpaEventState_C_OnSaveComplete final
 public:
 	ESaveDataStatus                               Status;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_DodonpaEventState_C_OnSaveComplete) == 0x000001, "Wrong alignment on BPC_DodonpaEventState_C_OnSaveComplete");
-static_assert(sizeof(BPC_DodonpaEventState_C_OnSaveComplete) == 0x000001, "Wrong size on BPC_DodonpaEventState_C_OnSaveComplete");
-static_assert(offsetof(BPC_DodonpaEventState_C_OnSaveComplete, Status) == 0x000000, "Member 'BPC_DodonpaEventState_C_OnSaveComplete::Status' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_DodonpaEventState_C_OnSaveComplete;
 
 // Function BPC_DodonpaEventState.BPC_DodonpaEventState_C.OnUpdateState
 // 0x0004 (0x0004 - 0x0000)
@@ -154,9 +120,7 @@ struct BPC_DodonpaEventState_C_OnUpdateState final
 public:
 	float                                         InDeltaTime;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_DodonpaEventState_C_OnUpdateState) == 0x000004, "Wrong alignment on BPC_DodonpaEventState_C_OnUpdateState");
-static_assert(sizeof(BPC_DodonpaEventState_C_OnUpdateState) == 0x000004, "Wrong size on BPC_DodonpaEventState_C_OnUpdateState");
-static_assert(offsetof(BPC_DodonpaEventState_C_OnUpdateState, InDeltaTime) == 0x000000, "Member 'BPC_DodonpaEventState_C_OnUpdateState::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_DodonpaEventState_C_OnUpdateState;
 
 // Function BPC_DodonpaEventState.BPC_DodonpaEventState_C.Set DodonpaEventFooter
 // 0x0010 (0x0010 - 0x0000)
@@ -166,10 +130,7 @@ public:
 	class UMenuWorldSubsystem*                    CallFunc_GetWorldSubsystem_ReturnValue;            // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_DodonpaEventState_C_Set_DodonpaEventFooter) == 0x000008, "Wrong alignment on BPC_DodonpaEventState_C_Set_DodonpaEventFooter");
-static_assert(sizeof(BPC_DodonpaEventState_C_Set_DodonpaEventFooter) == 0x000010, "Wrong size on BPC_DodonpaEventState_C_Set_DodonpaEventFooter");
-static_assert(offsetof(BPC_DodonpaEventState_C_Set_DodonpaEventFooter, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000000, "Member 'BPC_DodonpaEventState_C_Set_DodonpaEventFooter::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_DodonpaEventState_C_Set_DodonpaEventFooter, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'BPC_DodonpaEventState_C_Set_DodonpaEventFooter::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_DodonpaEventState_C_Set_DodonpaEventFooter;
 
 // Function BPC_DodonpaEventState.BPC_DodonpaEventState_C.SetDodonpaEventStatus
 // 0x000C (0x000C - 0x0000)
@@ -180,11 +141,7 @@ public:
 	EGrandPrixEventFlag                           InSaveDataFlagId;                                  // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EMenuSequenceBGM                              InBGMId;                                           // 0x0009(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_DodonpaEventState_C_SetDodonpaEventStatus) == 0x000004, "Wrong alignment on BPC_DodonpaEventState_C_SetDodonpaEventStatus");
-static_assert(sizeof(BPC_DodonpaEventState_C_SetDodonpaEventStatus) == 0x00000C, "Wrong size on BPC_DodonpaEventState_C_SetDodonpaEventStatus");
-static_assert(offsetof(BPC_DodonpaEventState_C_SetDodonpaEventStatus, InCallEventName) == 0x000000, "Member 'BPC_DodonpaEventState_C_SetDodonpaEventStatus::InCallEventName' has a wrong offset!");
-static_assert(offsetof(BPC_DodonpaEventState_C_SetDodonpaEventStatus, InSaveDataFlagId) == 0x000008, "Member 'BPC_DodonpaEventState_C_SetDodonpaEventStatus::InSaveDataFlagId' has a wrong offset!");
-static_assert(offsetof(BPC_DodonpaEventState_C_SetDodonpaEventStatus, InBGMId) == 0x000009, "Member 'BPC_DodonpaEventState_C_SetDodonpaEventStatus::InBGMId' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_DodonpaEventState_C_SetDodonpaEventStatus;
 
 }
 

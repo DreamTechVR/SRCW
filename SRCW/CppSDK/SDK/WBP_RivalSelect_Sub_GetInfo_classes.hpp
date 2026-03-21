@@ -30,20 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_RivalSelect_Sub_GetInfo_C">();
+		BP_STATIC_CLASS_IMPL("WBP_RivalSelect_Sub_GetInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_RivalSelect_Sub_GetInfo_C")
 	}
 	static class UWBP_RivalSelect_Sub_GetInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_RivalSelect_Sub_GetInfo_C>();
 	}
 };
-static_assert(alignof(UWBP_RivalSelect_Sub_GetInfo_C) == 0x000008, "Wrong alignment on UWBP_RivalSelect_Sub_GetInfo_C");
-static_assert(sizeof(UWBP_RivalSelect_Sub_GetInfo_C) == 0x000328, "Wrong size on UWBP_RivalSelect_Sub_GetInfo_C");
-static_assert(offsetof(UWBP_RivalSelect_Sub_GetInfo_C, Base_Class) == 0x000300, "Member 'UWBP_RivalSelect_Sub_GetInfo_C::Base_Class' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_Sub_GetInfo_C, Base_GetInfo) == 0x000308, "Member 'UWBP_RivalSelect_Sub_GetInfo_C::Base_GetInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_Sub_GetInfo_C, TXT_Class) == 0x000310, "Member 'UWBP_RivalSelect_Sub_GetInfo_C::TXT_Class' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_Sub_GetInfo_C, TXT_GetInfo) == 0x000318, "Member 'UWBP_RivalSelect_Sub_GetInfo_C::TXT_GetInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_Sub_GetInfo_C, WBP_CMN_ItemIcon) == 0x000320, "Member 'UWBP_RivalSelect_Sub_GetInfo_C::WBP_CMN_ItemIcon' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_RivalSelect_Sub_GetInfo_C;
 
 }
 

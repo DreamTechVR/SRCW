@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ItemCyanLaserCamera_Moving_C">();
+		BP_STATIC_CLASS_IMPL("BP_ItemCyanLaserCamera_Moving_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ItemCyanLaserCamera_Moving_C")
 	}
 	static class ABP_ItemCyanLaserCamera_Moving_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ItemCyanLaserCamera_Moving_C>();
 	}
 };
-static_assert(alignof(ABP_ItemCyanLaserCamera_Moving_C) == 0x000010, "Wrong alignment on ABP_ItemCyanLaserCamera_Moving_C");
-static_assert(sizeof(ABP_ItemCyanLaserCamera_Moving_C) == 0x000420, "Wrong size on ABP_ItemCyanLaserCamera_Moving_C");
-static_assert(offsetof(ABP_ItemCyanLaserCamera_Moving_C, DebugRootAnchor) == 0x000410, "Member 'ABP_ItemCyanLaserCamera_Moving_C::DebugRootAnchor' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_ItemCyanLaserCamera_Moving_C;
 
 }
 

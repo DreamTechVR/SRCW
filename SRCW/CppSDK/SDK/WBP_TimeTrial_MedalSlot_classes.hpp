@@ -39,21 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_TimeTrial_MedalSlot_C">();
+		BP_STATIC_CLASS_IMPL("WBP_TimeTrial_MedalSlot_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_TimeTrial_MedalSlot_C")
 	}
 	static class UWBP_TimeTrial_MedalSlot_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_TimeTrial_MedalSlot_C>();
 	}
 };
-static_assert(alignof(UWBP_TimeTrial_MedalSlot_C) == 0x000008, "Wrong alignment on UWBP_TimeTrial_MedalSlot_C");
-static_assert(sizeof(UWBP_TimeTrial_MedalSlot_C) == 0x000318, "Wrong size on UWBP_TimeTrial_MedalSlot_C");
-static_assert(offsetof(UWBP_TimeTrial_MedalSlot_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_TimeTrial_MedalSlot_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_MedalSlot_C, base) == 0x0002E8, "Member 'UWBP_TimeTrial_MedalSlot_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_MedalSlot_C, WBP_TimeTrial_MedalIcon_Center) == 0x0002F0, "Member 'UWBP_TimeTrial_MedalSlot_C::WBP_TimeTrial_MedalIcon_Center' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_MedalSlot_C, WBP_TimeTrial_MedalIcon_left) == 0x0002F8, "Member 'UWBP_TimeTrial_MedalSlot_C::WBP_TimeTrial_MedalIcon_left' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_MedalSlot_C, WBP_TimeTrial_MedalIcon_Right) == 0x000300, "Member 'UWBP_TimeTrial_MedalSlot_C::WBP_TimeTrial_MedalIcon_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_MedalSlot_C, MedalIconArray) == 0x000308, "Member 'UWBP_TimeTrial_MedalSlot_C::MedalIconArray' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_TimeTrial_MedalSlot_C;
 
 }
 

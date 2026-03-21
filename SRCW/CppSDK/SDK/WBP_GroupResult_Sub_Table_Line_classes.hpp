@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -46,25 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GroupResult_Sub_Table_Line_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GroupResult_Sub_Table_Line_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GroupResult_Sub_Table_Line_C")
 	}
 	static class UWBP_GroupResult_Sub_Table_Line_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GroupResult_Sub_Table_Line_C>();
 	}
 };
-static_assert(alignof(UWBP_GroupResult_Sub_Table_Line_C) == 0x000008, "Wrong alignment on UWBP_GroupResult_Sub_Table_Line_C");
-static_assert(sizeof(UWBP_GroupResult_Sub_Table_Line_C) == 0x0004C8, "Wrong size on UWBP_GroupResult_Sub_Table_Line_C");
-static_assert(offsetof(UWBP_GroupResult_Sub_Table_Line_C, UberGraphFrame) == 0x000470, "Member 'UWBP_GroupResult_Sub_Table_Line_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_Table_Line_C, Result_Loop) == 0x000478, "Member 'UWBP_GroupResult_Sub_Table_Line_C::Result_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_Table_Line_C, Result_In) == 0x000480, "Member 'UWBP_GroupResult_Sub_Table_Line_C::Result_In' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_Table_Line_C, WBP_Result_Sub_RankingTable_01) == 0x000488, "Member 'UWBP_GroupResult_Sub_Table_Line_C::WBP_Result_Sub_RankingTable_01' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_Table_Line_C, WBP_Result_Sub_RankingTable_02) == 0x000490, "Member 'UWBP_GroupResult_Sub_Table_Line_C::WBP_Result_Sub_RankingTable_02' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_Table_Line_C, WBP_Result_Sub_RankingTable_03) == 0x000498, "Member 'UWBP_GroupResult_Sub_Table_Line_C::WBP_Result_Sub_RankingTable_03' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_Table_Line_C, WBP_Result_Sub_RankingTable_04) == 0x0004A0, "Member 'UWBP_GroupResult_Sub_Table_Line_C::WBP_Result_Sub_RankingTable_04' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_Table_Line_C, WBP_Result_Sub_RankingTable_05) == 0x0004A8, "Member 'UWBP_GroupResult_Sub_Table_Line_C::WBP_Result_Sub_RankingTable_05' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_Table_Line_C, WBP_Result_Sub_RankingTable_06) == 0x0004B0, "Member 'UWBP_GroupResult_Sub_Table_Line_C::WBP_Result_Sub_RankingTable_06' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_Table_Line_C, SubTableList) == 0x0004B8, "Member 'UWBP_GroupResult_Sub_Table_Line_C::SubTableList' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GroupResult_Sub_Table_Line_C;
 
 }
 

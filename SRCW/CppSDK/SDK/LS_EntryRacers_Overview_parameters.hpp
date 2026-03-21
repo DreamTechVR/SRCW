@@ -45,25 +45,7 @@ public:
 	uint8                                         Pad_89[0x3];                                       // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_PlayAnimationByAsset_Position_ImplicitCast; // 0x008C(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP) == 0x000008, "Wrong alignment on LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP");
-static_assert(sizeof(LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP) == 0x000090, "Wrong size on LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP, EntryPoint) == 0x000000, "Member 'LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP, K2Node_CustomEvent_In_RacerActor) == 0x000008, "Member 'LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP::K2Node_CustomEvent_In_RacerActor' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP, K2Node_CustomEvent_In_Index) == 0x000010, "Member 'LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP::K2Node_CustomEvent_In_Index' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP, K2Node_DynamicCast_AsVehicle_in_Race_Pawn) == 0x000018, "Member 'LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP::K2Node_DynamicCast_AsVehicle_in_Race_Pawn' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP, CallFunc_GetDriverPose_ReturnValue) == 0x000021, "Member 'LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP::CallFunc_GetDriverPose_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP, CallFunc_GetActiveVehicle_ReturnValue) == 0x000028, "Member 'LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP::CallFunc_GetActiveVehicle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP, CallFunc_GetSceneDriverAnimationAsset_Anim) == 0x000030, "Member 'LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP::CallFunc_GetSceneDriverAnimationAsset_Anim' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP, CallFunc_GetSceneDriverAnimationAsset_Time) == 0x000058, "Member 'LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP::CallFunc_GetSceneDriverAnimationAsset_Time' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP, CallFunc_GetSceneDriverAnimationAsset_bSkipFacialBlend) == 0x000060, "Member 'LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP::CallFunc_GetSceneDriverAnimationAsset_bSkipFacialBlend' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP, CallFunc_IsValid_ReturnValue) == 0x000061, "Member 'LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP, CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue) == 0x000068, "Member 'LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP::CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP, K2Node_DynamicCast_AsAnim________) == 0x000070, "Member 'LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP::K2Node_DynamicCast_AsAnim________' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP, K2Node_DynamicCast_bSuccess_1) == 0x000078, "Member 'LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP, K2Node_CustomEvent_BP_SceneDriver_0) == 0x000080, "Member 'LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP::K2Node_CustomEvent_BP_SceneDriver_0' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP, CallFunc_PlayAnimationByAsset_ReturnValue) == 0x000088, "Member 'LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP::CallFunc_PlayAnimationByAsset_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP, CallFunc_PlayAnimationByAsset_Position_ImplicitCast) == 0x00008C, "Member 'LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP::CallFunc_PlayAnimationByAsset_Position_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_LS_EntryRacers_Overview_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_Overview_DirectorBP;
 
 // Function LS_EntryRacers_Overview.LS_EntryRacers_Overview_DirectorBP_C.OnEnterRacer
 // 0x0010 (0x0010 - 0x0000)
@@ -73,10 +55,7 @@ public:
 	class AActor*                                 In_RacerActor;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         In_Index;                                          // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LS_EntryRacers_Overview_DirectorBP_C_OnEnterRacer) == 0x000008, "Wrong alignment on LS_EntryRacers_Overview_DirectorBP_C_OnEnterRacer");
-static_assert(sizeof(LS_EntryRacers_Overview_DirectorBP_C_OnEnterRacer) == 0x000010, "Wrong size on LS_EntryRacers_Overview_DirectorBP_C_OnEnterRacer");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_OnEnterRacer, In_RacerActor) == 0x000000, "Member 'LS_EntryRacers_Overview_DirectorBP_C_OnEnterRacer::In_RacerActor' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_OnEnterRacer, In_Index) == 0x000008, "Member 'LS_EntryRacers_Overview_DirectorBP_C_OnEnterRacer::In_Index' has a wrong offset!");
+DUMPER7_ASSERTS_LS_EntryRacers_Overview_DirectorBP_C_OnEnterRacer;
 
 // Function LS_EntryRacers_Overview.LS_EntryRacers_Overview_DirectorBP_C.OnPlayAnimation
 // 0x0008 (0x0008 - 0x0000)
@@ -85,9 +64,7 @@ struct LS_EntryRacers_Overview_DirectorBP_C_OnPlayAnimation final
 public:
 	class ABP_SceneDriver_C*                      BP_SceneDriver_0;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LS_EntryRacers_Overview_DirectorBP_C_OnPlayAnimation) == 0x000008, "Wrong alignment on LS_EntryRacers_Overview_DirectorBP_C_OnPlayAnimation");
-static_assert(sizeof(LS_EntryRacers_Overview_DirectorBP_C_OnPlayAnimation) == 0x000008, "Wrong size on LS_EntryRacers_Overview_DirectorBP_C_OnPlayAnimation");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_OnPlayAnimation, BP_SceneDriver_0) == 0x000000, "Member 'LS_EntryRacers_Overview_DirectorBP_C_OnPlayAnimation::BP_SceneDriver_0' has a wrong offset!");
+DUMPER7_ASSERTS_LS_EntryRacers_Overview_DirectorBP_C_OnPlayAnimation;
 
 // Function LS_EntryRacers_Overview.LS_EntryRacers_Overview_DirectorBP_C.SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP
 // 0x0008 (0x0008 - 0x0000)
@@ -96,9 +73,7 @@ struct LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRac
 public:
 	class AActor*                                 In_RacerActor;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP) == 0x000008, "Wrong alignment on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP");
-static_assert(sizeof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP) == 0x000008, "Wrong size on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP, In_RacerActor) == 0x000000, "Member 'LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP::In_RacerActor' has a wrong offset!");
+DUMPER7_ASSERTS_LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP;
 
 // Function LS_EntryRacers_Overview.LS_EntryRacers_Overview_DirectorBP_C.SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_0
 // 0x0008 (0x0008 - 0x0000)
@@ -107,9 +82,7 @@ struct LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRac
 public:
 	class AActor*                                 In_RacerActor;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_0) == 0x000008, "Wrong alignment on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_0");
-static_assert(sizeof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_0) == 0x000008, "Wrong size on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_0");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_0, In_RacerActor) == 0x000000, "Member 'LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_0::In_RacerActor' has a wrong offset!");
+DUMPER7_ASSERTS_LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_0;
 
 // Function LS_EntryRacers_Overview.LS_EntryRacers_Overview_DirectorBP_C.SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_1
 // 0x0008 (0x0008 - 0x0000)
@@ -118,9 +91,7 @@ struct LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRac
 public:
 	class AActor*                                 In_RacerActor;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_1) == 0x000008, "Wrong alignment on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_1");
-static_assert(sizeof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_1) == 0x000008, "Wrong size on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_1");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_1, In_RacerActor) == 0x000000, "Member 'LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_1::In_RacerActor' has a wrong offset!");
+DUMPER7_ASSERTS_LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_1;
 
 // Function LS_EntryRacers_Overview.LS_EntryRacers_Overview_DirectorBP_C.SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_10
 // 0x0008 (0x0008 - 0x0000)
@@ -129,9 +100,7 @@ struct LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRac
 public:
 	class ABP_SceneDriver_C*                      BP_SceneDriver_0;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_10) == 0x000008, "Wrong alignment on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_10");
-static_assert(sizeof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_10) == 0x000008, "Wrong size on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_10");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_10, BP_SceneDriver_0) == 0x000000, "Member 'LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_10::BP_SceneDriver_0' has a wrong offset!");
+DUMPER7_ASSERTS_LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_10;
 
 // Function LS_EntryRacers_Overview.LS_EntryRacers_Overview_DirectorBP_C.SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_12
 // 0x0008 (0x0008 - 0x0000)
@@ -140,9 +109,7 @@ struct LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRac
 public:
 	class ABP_SceneDriver_C*                      BP_SceneDriver_0;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_12) == 0x000008, "Wrong alignment on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_12");
-static_assert(sizeof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_12) == 0x000008, "Wrong size on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_12");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_12, BP_SceneDriver_0) == 0x000000, "Member 'LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_12::BP_SceneDriver_0' has a wrong offset!");
+DUMPER7_ASSERTS_LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_12;
 
 // Function LS_EntryRacers_Overview.LS_EntryRacers_Overview_DirectorBP_C.SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_13
 // 0x0008 (0x0008 - 0x0000)
@@ -151,9 +118,7 @@ struct LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRac
 public:
 	class ABP_SceneDriver_C*                      BP_SceneDriver_0;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_13) == 0x000008, "Wrong alignment on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_13");
-static_assert(sizeof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_13) == 0x000008, "Wrong size on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_13");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_13, BP_SceneDriver_0) == 0x000000, "Member 'LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_13::BP_SceneDriver_0' has a wrong offset!");
+DUMPER7_ASSERTS_LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_13;
 
 // Function LS_EntryRacers_Overview.LS_EntryRacers_Overview_DirectorBP_C.SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_14
 // 0x0008 (0x0008 - 0x0000)
@@ -162,9 +127,7 @@ struct LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRac
 public:
 	class ABP_SceneDriver_C*                      BP_SceneDriver_0;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_14) == 0x000008, "Wrong alignment on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_14");
-static_assert(sizeof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_14) == 0x000008, "Wrong size on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_14");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_14, BP_SceneDriver_0) == 0x000000, "Member 'LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_14::BP_SceneDriver_0' has a wrong offset!");
+DUMPER7_ASSERTS_LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_14;
 
 // Function LS_EntryRacers_Overview.LS_EntryRacers_Overview_DirectorBP_C.SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_15
 // 0x0008 (0x0008 - 0x0000)
@@ -173,9 +136,7 @@ struct LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRac
 public:
 	class ABP_SceneDriver_C*                      BP_SceneDriver_0;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_15) == 0x000008, "Wrong alignment on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_15");
-static_assert(sizeof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_15) == 0x000008, "Wrong size on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_15");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_15, BP_SceneDriver_0) == 0x000000, "Member 'LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_15::BP_SceneDriver_0' has a wrong offset!");
+DUMPER7_ASSERTS_LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_15;
 
 // Function LS_EntryRacers_Overview.LS_EntryRacers_Overview_DirectorBP_C.SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_16
 // 0x0008 (0x0008 - 0x0000)
@@ -184,9 +145,7 @@ struct LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRac
 public:
 	class ABP_SceneDriver_C*                      BP_SceneDriver_0;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_16) == 0x000008, "Wrong alignment on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_16");
-static_assert(sizeof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_16) == 0x000008, "Wrong size on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_16");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_16, BP_SceneDriver_0) == 0x000000, "Member 'LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_16::BP_SceneDriver_0' has a wrong offset!");
+DUMPER7_ASSERTS_LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_16;
 
 // Function LS_EntryRacers_Overview.LS_EntryRacers_Overview_DirectorBP_C.SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_17
 // 0x0008 (0x0008 - 0x0000)
@@ -195,9 +154,7 @@ struct LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRac
 public:
 	class ABP_SceneDriver_C*                      BP_SceneDriver_0;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_17) == 0x000008, "Wrong alignment on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_17");
-static_assert(sizeof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_17) == 0x000008, "Wrong size on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_17");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_17, BP_SceneDriver_0) == 0x000000, "Member 'LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_17::BP_SceneDriver_0' has a wrong offset!");
+DUMPER7_ASSERTS_LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_17;
 
 // Function LS_EntryRacers_Overview.LS_EntryRacers_Overview_DirectorBP_C.SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_18
 // 0x0008 (0x0008 - 0x0000)
@@ -206,9 +163,7 @@ struct LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRac
 public:
 	class ABP_SceneDriver_C*                      BP_SceneDriver_0;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_18) == 0x000008, "Wrong alignment on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_18");
-static_assert(sizeof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_18) == 0x000008, "Wrong size on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_18");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_18, BP_SceneDriver_0) == 0x000000, "Member 'LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_18::BP_SceneDriver_0' has a wrong offset!");
+DUMPER7_ASSERTS_LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_18;
 
 // Function LS_EntryRacers_Overview.LS_EntryRacers_Overview_DirectorBP_C.SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_19
 // 0x0008 (0x0008 - 0x0000)
@@ -217,9 +172,7 @@ struct LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRac
 public:
 	class ABP_SceneDriver_C*                      BP_SceneDriver_0;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_19) == 0x000008, "Wrong alignment on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_19");
-static_assert(sizeof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_19) == 0x000008, "Wrong size on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_19");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_19, BP_SceneDriver_0) == 0x000000, "Member 'LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_19::BP_SceneDriver_0' has a wrong offset!");
+DUMPER7_ASSERTS_LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_19;
 
 // Function LS_EntryRacers_Overview.LS_EntryRacers_Overview_DirectorBP_C.SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_2
 // 0x0008 (0x0008 - 0x0000)
@@ -228,9 +181,7 @@ struct LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRac
 public:
 	class AActor*                                 In_RacerActor;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_2) == 0x000008, "Wrong alignment on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_2");
-static_assert(sizeof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_2) == 0x000008, "Wrong size on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_2");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_2, In_RacerActor) == 0x000000, "Member 'LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_2::In_RacerActor' has a wrong offset!");
+DUMPER7_ASSERTS_LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_2;
 
 // Function LS_EntryRacers_Overview.LS_EntryRacers_Overview_DirectorBP_C.SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_20
 // 0x0008 (0x0008 - 0x0000)
@@ -239,9 +190,7 @@ struct LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRac
 public:
 	class ABP_SceneDriver_C*                      BP_SceneDriver_0;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_20) == 0x000008, "Wrong alignment on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_20");
-static_assert(sizeof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_20) == 0x000008, "Wrong size on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_20");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_20, BP_SceneDriver_0) == 0x000000, "Member 'LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_20::BP_SceneDriver_0' has a wrong offset!");
+DUMPER7_ASSERTS_LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_20;
 
 // Function LS_EntryRacers_Overview.LS_EntryRacers_Overview_DirectorBP_C.SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_21
 // 0x0008 (0x0008 - 0x0000)
@@ -250,9 +199,7 @@ struct LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRac
 public:
 	class ABP_SceneDriver_C*                      BP_SceneDriver_0;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_21) == 0x000008, "Wrong alignment on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_21");
-static_assert(sizeof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_21) == 0x000008, "Wrong size on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_21");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_21, BP_SceneDriver_0) == 0x000000, "Member 'LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_21::BP_SceneDriver_0' has a wrong offset!");
+DUMPER7_ASSERTS_LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_21;
 
 // Function LS_EntryRacers_Overview.LS_EntryRacers_Overview_DirectorBP_C.SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_22
 // 0x0008 (0x0008 - 0x0000)
@@ -261,9 +208,7 @@ struct LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRac
 public:
 	class ABP_SceneDriver_C*                      BP_SceneDriver_0;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_22) == 0x000008, "Wrong alignment on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_22");
-static_assert(sizeof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_22) == 0x000008, "Wrong size on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_22");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_22, BP_SceneDriver_0) == 0x000000, "Member 'LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_22::BP_SceneDriver_0' has a wrong offset!");
+DUMPER7_ASSERTS_LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_22;
 
 // Function LS_EntryRacers_Overview.LS_EntryRacers_Overview_DirectorBP_C.SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_3
 // 0x0008 (0x0008 - 0x0000)
@@ -272,9 +217,7 @@ struct LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRac
 public:
 	class AActor*                                 In_RacerActor;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_3) == 0x000008, "Wrong alignment on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_3");
-static_assert(sizeof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_3) == 0x000008, "Wrong size on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_3");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_3, In_RacerActor) == 0x000000, "Member 'LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_3::In_RacerActor' has a wrong offset!");
+DUMPER7_ASSERTS_LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_3;
 
 // Function LS_EntryRacers_Overview.LS_EntryRacers_Overview_DirectorBP_C.SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_4
 // 0x0008 (0x0008 - 0x0000)
@@ -283,9 +226,7 @@ struct LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRac
 public:
 	class AActor*                                 In_RacerActor;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_4) == 0x000008, "Wrong alignment on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_4");
-static_assert(sizeof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_4) == 0x000008, "Wrong size on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_4");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_4, In_RacerActor) == 0x000000, "Member 'LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_4::In_RacerActor' has a wrong offset!");
+DUMPER7_ASSERTS_LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_4;
 
 // Function LS_EntryRacers_Overview.LS_EntryRacers_Overview_DirectorBP_C.SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_5
 // 0x0008 (0x0008 - 0x0000)
@@ -294,9 +235,7 @@ struct LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRac
 public:
 	class AActor*                                 In_RacerActor;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_5) == 0x000008, "Wrong alignment on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_5");
-static_assert(sizeof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_5) == 0x000008, "Wrong size on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_5");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_5, In_RacerActor) == 0x000000, "Member 'LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_5::In_RacerActor' has a wrong offset!");
+DUMPER7_ASSERTS_LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_5;
 
 // Function LS_EntryRacers_Overview.LS_EntryRacers_Overview_DirectorBP_C.SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_6
 // 0x0008 (0x0008 - 0x0000)
@@ -305,9 +244,7 @@ struct LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRac
 public:
 	class AActor*                                 In_RacerActor;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_6) == 0x000008, "Wrong alignment on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_6");
-static_assert(sizeof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_6) == 0x000008, "Wrong size on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_6");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_6, In_RacerActor) == 0x000000, "Member 'LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_6::In_RacerActor' has a wrong offset!");
+DUMPER7_ASSERTS_LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_6;
 
 // Function LS_EntryRacers_Overview.LS_EntryRacers_Overview_DirectorBP_C.SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_7
 // 0x0008 (0x0008 - 0x0000)
@@ -316,9 +253,7 @@ struct LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRac
 public:
 	class AActor*                                 In_RacerActor;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_7) == 0x000008, "Wrong alignment on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_7");
-static_assert(sizeof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_7) == 0x000008, "Wrong size on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_7");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_7, In_RacerActor) == 0x000000, "Member 'LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_7::In_RacerActor' has a wrong offset!");
+DUMPER7_ASSERTS_LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_7;
 
 // Function LS_EntryRacers_Overview.LS_EntryRacers_Overview_DirectorBP_C.SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_8
 // 0x0008 (0x0008 - 0x0000)
@@ -327,9 +262,7 @@ struct LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRac
 public:
 	class AActor*                                 In_RacerActor;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_8) == 0x000008, "Wrong alignment on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_8");
-static_assert(sizeof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_8) == 0x000008, "Wrong size on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_8");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_8, In_RacerActor) == 0x000000, "Member 'LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_8::In_RacerActor' has a wrong offset!");
+DUMPER7_ASSERTS_LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_8;
 
 // Function LS_EntryRacers_Overview.LS_EntryRacers_Overview_DirectorBP_C.SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_9
 // 0x0008 (0x0008 - 0x0000)
@@ -338,9 +271,7 @@ struct LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRac
 public:
 	class AActor*                                 In_RacerActor;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_9) == 0x000008, "Wrong alignment on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_9");
-static_assert(sizeof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_9) == 0x000008, "Wrong size on LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_9");
-static_assert(offsetof(LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_9, In_RacerActor) == 0x000000, "Member 'LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_9::In_RacerActor' has a wrong offset!");
+DUMPER7_ASSERTS_LS_EntryRacers_Overview_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_Overview_DirectorBP_9;
 
 }
 

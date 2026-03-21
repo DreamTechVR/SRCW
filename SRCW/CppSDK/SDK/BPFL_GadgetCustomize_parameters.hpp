@@ -48,27 +48,7 @@ public:
 	uint8                                         Pad_1F9[0x3];                                      // 0x01F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x01FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds) == 0x000008, "Wrong alignment on BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds");
-static_assert(sizeof(BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds) == 0x000200, "Wrong size on BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds, __WorldContext) == 0x000000, "Member 'BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds::__WorldContext' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds, OutDisabledGadgetIds) == 0x000008, "Member 'BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds::OutDisabledGadgetIds' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds, TempGadgetData) == 0x000018, "Member 'BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds::TempGadgetData' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds, OutGadgetIds) == 0x0000D8, "Member 'BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds::OutGadgetIds' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x0000E8, "Member 'BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds, Temp_int_Array_Index_Variable) == 0x0000F0, "Member 'BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds, CallFunc_IsValid_ReturnValue) == 0x0000F4, "Member 'BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds, CallFunc_IsValid_ReturnValue_1) == 0x0000F5, "Member 'BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds, CallFunc_GetDataTableRowNames_OutRowNames) == 0x0000F8, "Member 'BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds::CallFunc_GetDataTableRowNames_OutRowNames' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds, Temp_int_Loop_Counter_Variable) == 0x000108, "Member 'BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds, CallFunc_Array_Get_Item) == 0x00010C, "Member 'BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds, CallFunc_GetDataTableRowFromName_OutRow) == 0x000118, "Member 'BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x0001D8, "Member 'BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds, CallFunc_Add_IntInt_ReturnValue) == 0x0001DC, "Member 'BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds, CallFunc_Array_Length_ReturnValue) == 0x0001E0, "Member 'BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds, CallFunc_Less_IntInt_ReturnValue) == 0x0001E4, "Member 'BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds, K2Node_MakeArray_Array) == 0x0001E8, "Member 'BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds, CallFunc_Not_PreBool_ReturnValue) == 0x0001F8, "Member 'BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds, CallFunc_Array_Add_ReturnValue) == 0x0001FC, "Member 'BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_GadgetCustomize_C_GetGadgetDataTableDisabledGadgetIds;
 
 // Function BPFL_GadgetCustomize.BPFL_GadgetCustomize_C.GetGadgetDetailData
 // 0x01A8 (0x01A8 - 0x0000)
@@ -96,26 +76,7 @@ public:
 	struct FGadgetData                            CallFunc_GetGadgetData_OutGadgetData;              // 0x00E0(0x00C0)()
 	bool                                          CallFunc_GetGadgetData_ReturnValue;                // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPFL_GadgetCustomize_C_GetGadgetDetailData) == 0x000008, "Wrong alignment on BPFL_GadgetCustomize_C_GetGadgetDetailData");
-static_assert(sizeof(BPFL_GadgetCustomize_C_GetGadgetDetailData) == 0x0001A8, "Wrong size on BPFL_GadgetCustomize_C_GetGadgetDetailData");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDetailData, InSlotState) == 0x000000, "Member 'BPFL_GadgetCustomize_C_GetGadgetDetailData::InSlotState' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDetailData, InSlotIndex) == 0x000004, "Member 'BPFL_GadgetCustomize_C_GetGadgetDetailData::InSlotIndex' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDetailData, __WorldContext) == 0x000008, "Member 'BPFL_GadgetCustomize_C_GetGadgetDetailData::__WorldContext' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDetailData, OutThumbnailTexture) == 0x000010, "Member 'BPFL_GadgetCustomize_C_GetGadgetDetailData::OutThumbnailTexture' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDetailData, OutExplanation) == 0x000038, "Member 'BPFL_GadgetCustomize_C_GetGadgetDetailData::OutExplanation' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDetailData, CallFunc_MakeLiteralText_ReturnValue) == 0x000048, "Member 'BPFL_GadgetCustomize_C_GetGadgetDetailData::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDetailData, CallFunc_GetGadgetSlotStateLocked_ReturnValue) == 0x000058, "Member 'BPFL_GadgetCustomize_C_GetGadgetDetailData::CallFunc_GetGadgetSlotStateLocked_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDetailData, CallFunc_GetRemainingRaceNumToGadgetPlate_ReturnValue) == 0x00005C, "Member 'BPFL_GadgetCustomize_C_GetGadgetDetailData::CallFunc_GetRemainingRaceNumToGadgetPlate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDetailData, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000060, "Member 'BPFL_GadgetCustomize_C_GetGadgetDetailData::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDetailData, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000068, "Member 'BPFL_GadgetCustomize_C_GetGadgetDetailData::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDetailData, K2Node_MakeStruct_FormatArgumentData) == 0x000070, "Member 'BPFL_GadgetCustomize_C_GetGadgetDetailData::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDetailData, K2Node_MakeArray_Array) == 0x0000B8, "Member 'BPFL_GadgetCustomize_C_GetGadgetDetailData::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDetailData, CallFunc_Format_ReturnValue) == 0x0000C8, "Member 'BPFL_GadgetCustomize_C_GetGadgetDetailData::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDetailData, CallFunc_Conv_IntToByte_ReturnValue) == 0x0000D8, "Member 'BPFL_GadgetCustomize_C_GetGadgetDetailData::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDetailData, CallFunc_GetValidValue_ReturnValue) == 0x0000D9, "Member 'BPFL_GadgetCustomize_C_GetGadgetDetailData::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDetailData, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x0000DA, "Member 'BPFL_GadgetCustomize_C_GetGadgetDetailData::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDetailData, CallFunc_GetGadgetData_OutGadgetData) == 0x0000E0, "Member 'BPFL_GadgetCustomize_C_GetGadgetDetailData::CallFunc_GetGadgetData_OutGadgetData' has a wrong offset!");
-static_assert(offsetof(BPFL_GadgetCustomize_C_GetGadgetDetailData, CallFunc_GetGadgetData_ReturnValue) == 0x0001A0, "Member 'BPFL_GadgetCustomize_C_GetGadgetDetailData::CallFunc_GetGadgetData_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_GadgetCustomize_C_GetGadgetDetailData;
 
 }
 

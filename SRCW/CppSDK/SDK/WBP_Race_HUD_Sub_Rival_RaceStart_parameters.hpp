@@ -21,9 +21,7 @@ struct WBP_Race_HUD_Sub_Rival_RaceStart_C_SetName final
 public:
 	class FText                                   CharacterName;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Rival_RaceStart_C_SetName) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Rival_RaceStart_C_SetName");
-static_assert(sizeof(WBP_Race_HUD_Sub_Rival_RaceStart_C_SetName) == 0x000010, "Wrong size on WBP_Race_HUD_Sub_Rival_RaceStart_C_SetName");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rival_RaceStart_C_SetName, CharacterName) == 0x000000, "Member 'WBP_Race_HUD_Sub_Rival_RaceStart_C_SetName::CharacterName' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Rival_RaceStart_C_SetName;
 
 // Function WBP_Race_HUD_Sub_Rival_RaceStart.WBP_Race_HUD_Sub_Rival_RaceStart_C.SetRank
 // 0x0018 (0x0018 - 0x0000)
@@ -34,10 +32,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0010)()
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Rival_RaceStart_C_SetRank) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Rival_RaceStart_C_SetRank");
-static_assert(sizeof(WBP_Race_HUD_Sub_Rival_RaceStart_C_SetRank) == 0x000018, "Wrong size on WBP_Race_HUD_Sub_Rival_RaceStart_C_SetRank");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rival_RaceStart_C_SetRank, Rank) == 0x000000, "Member 'WBP_Race_HUD_Sub_Rival_RaceStart_C_SetRank::Rank' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rival_RaceStart_C_SetRank, CallFunc_Conv_IntToText_ReturnValue) == 0x000008, "Member 'WBP_Race_HUD_Sub_Rival_RaceStart_C_SetRank::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Rival_RaceStart_C_SetRank;
 
 // Function WBP_Race_HUD_Sub_Rival_RaceStart.WBP_Race_HUD_Sub_Rival_RaceStart_C.SetRival
 // 0x0001 (0x0001 - 0x0000)
@@ -46,9 +41,7 @@ struct WBP_Race_HUD_Sub_Rival_RaceStart_C_SetRival final
 public:
 	bool                                          IsPower;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Rival_RaceStart_C_SetRival) == 0x000001, "Wrong alignment on WBP_Race_HUD_Sub_Rival_RaceStart_C_SetRival");
-static_assert(sizeof(WBP_Race_HUD_Sub_Rival_RaceStart_C_SetRival) == 0x000001, "Wrong size on WBP_Race_HUD_Sub_Rival_RaceStart_C_SetRival");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rival_RaceStart_C_SetRival, IsPower) == 0x000000, "Member 'WBP_Race_HUD_Sub_Rival_RaceStart_C_SetRival::IsPower' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Rival_RaceStart_C_SetRival;
 
 }
 

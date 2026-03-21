@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
+#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
 #include "UnionUI_structs.hpp"
-#include "UNION_classes.hpp"
 
 
 namespace SDK
@@ -89,34 +89,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Popup_DonpaTicket_Use_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Popup_DonpaTicket_Use_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Popup_DonpaTicket_Use_C")
 	}
 	static class UWBP_Popup_DonpaTicket_Use_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Popup_DonpaTicket_Use_C>();
 	}
 };
-static_assert(alignof(UWBP_Popup_DonpaTicket_Use_C) == 0x000008, "Wrong alignment on UWBP_Popup_DonpaTicket_Use_C");
-static_assert(sizeof(UWBP_Popup_DonpaTicket_Use_C) == 0x000490, "Wrong size on UWBP_Popup_DonpaTicket_Use_C");
-static_assert(offsetof(UWBP_Popup_DonpaTicket_Use_C, UberGraphFrame) == 0x0003F8, "Member 'UWBP_Popup_DonpaTicket_Use_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_DonpaTicket_Use_C, Popup_Loop) == 0x000400, "Member 'UWBP_Popup_DonpaTicket_Use_C::Popup_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_DonpaTicket_Use_C, Popup_Out) == 0x000408, "Member 'UWBP_Popup_DonpaTicket_Use_C::Popup_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_DonpaTicket_Use_C, Popup_In) == 0x000410, "Member 'UWBP_Popup_DonpaTicket_Use_C::Popup_In' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_DonpaTicket_Use_C, Image_Base) == 0x000418, "Member 'UWBP_Popup_DonpaTicket_Use_C::Image_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_DonpaTicket_Use_C, OutOfContentButton_80) == 0x000420, "Member 'UWBP_Popup_DonpaTicket_Use_C::OutOfContentButton_80' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_DonpaTicket_Use_C, SafeZone_0) == 0x000428, "Member 'UWBP_Popup_DonpaTicket_Use_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_DonpaTicket_Use_C, TXT_Info) == 0x000430, "Member 'UWBP_Popup_DonpaTicket_Use_C::TXT_Info' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_DonpaTicket_Use_C, WBP_DonpaTicketApp_Sub_TicketNumber_) == 0x000438, "Member 'UWBP_Popup_DonpaTicket_Use_C::WBP_DonpaTicketApp_Sub_TicketNumber_' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_DonpaTicket_Use_C, WBP_Popup_Sub_Btn_Standard_01) == 0x000440, "Member 'UWBP_Popup_DonpaTicket_Use_C::WBP_Popup_Sub_Btn_Standard_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_DonpaTicket_Use_C, WBP_Popup_Sub_Btn_Standard_02) == 0x000448, "Member 'UWBP_Popup_DonpaTicket_Use_C::WBP_Popup_Sub_Btn_Standard_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_DonpaTicket_Use_C, WindowBase) == 0x000450, "Member 'UWBP_Popup_DonpaTicket_Use_C::WindowBase' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_DonpaTicket_Use_C, InitialFocusButtonIndex) == 0x000458, "Member 'UWBP_Popup_DonpaTicket_Use_C::InitialFocusButtonIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_DonpaTicket_Use_C, ButtonControlState) == 0x00045C, "Member 'UWBP_Popup_DonpaTicket_Use_C::ButtonControlState' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_DonpaTicket_Use_C, Array) == 0x000460, "Member 'UWBP_Popup_DonpaTicket_Use_C::Array' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_DonpaTicket_Use_C, DecideButtonIndex) == 0x000470, "Member 'UWBP_Popup_DonpaTicket_Use_C::DecideButtonIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_DonpaTicket_Use_C, ButtonControlTimer) == 0x000478, "Member 'UWBP_Popup_DonpaTicket_Use_C::ButtonControlTimer' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_DonpaTicket_Use_C, ButtonControlDelayTime) == 0x000480, "Member 'UWBP_Popup_DonpaTicket_Use_C::ButtonControlDelayTime' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_DonpaTicket_Use_C, OwnerControllerIndex) == 0x000488, "Member 'UWBP_Popup_DonpaTicket_Use_C::OwnerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Popup_DonpaTicket_Use_C;
 
 }
 

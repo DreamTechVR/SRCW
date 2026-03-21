@@ -451,7 +451,7 @@ void UWBP_MachineCustom_Sub_StickerSelect_C::SetInitialFocus(class APlayerContro
 
 
 // Function WBP_MachineCustom_Sub_StickerSelect.WBP_MachineCustom_Sub_StickerSelect_C.SetPageItems
-// (Public, BlueprintCallable, BlueprintEvent)
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   InPageDataIndex                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   InPageIndex                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

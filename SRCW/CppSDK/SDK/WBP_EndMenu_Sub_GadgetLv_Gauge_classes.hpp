@@ -36,21 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_EndMenu_Sub_GadgetLv_Gauge_C">();
+		BP_STATIC_CLASS_IMPL("WBP_EndMenu_Sub_GadgetLv_Gauge_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_EndMenu_Sub_GadgetLv_Gauge_C")
 	}
 	static class UWBP_EndMenu_Sub_GadgetLv_Gauge_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_EndMenu_Sub_GadgetLv_Gauge_C>();
 	}
 };
-static_assert(alignof(UWBP_EndMenu_Sub_GadgetLv_Gauge_C) == 0x000008, "Wrong alignment on UWBP_EndMenu_Sub_GadgetLv_Gauge_C");
-static_assert(sizeof(UWBP_EndMenu_Sub_GadgetLv_Gauge_C) == 0x000310, "Wrong size on UWBP_EndMenu_Sub_GadgetLv_Gauge_C");
-static_assert(offsetof(UWBP_EndMenu_Sub_GadgetLv_Gauge_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_EndMenu_Sub_GadgetLv_Gauge_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_Sub_GadgetLv_Gauge_C, Gauge_Active) == 0x0002E8, "Member 'UWBP_EndMenu_Sub_GadgetLv_Gauge_C::Gauge_Active' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_Sub_GadgetLv_Gauge_C, Gauge_Base) == 0x0002F0, "Member 'UWBP_EndMenu_Sub_GadgetLv_Gauge_C::Gauge_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_Sub_GadgetLv_Gauge_C, RetainerBox_0) == 0x0002F8, "Member 'UWBP_EndMenu_Sub_GadgetLv_Gauge_C::RetainerBox_0' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_Sub_GadgetLv_Gauge_C, TXT_NumPoint) == 0x000300, "Member 'UWBP_EndMenu_Sub_GadgetLv_Gauge_C::TXT_NumPoint' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_Sub_GadgetLv_Gauge_C, TXT_NumPoint_Get) == 0x000308, "Member 'UWBP_EndMenu_Sub_GadgetLv_Gauge_C::TXT_NumPoint_Get' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_EndMenu_Sub_GadgetLv_Gauge_C;
 
 }
 

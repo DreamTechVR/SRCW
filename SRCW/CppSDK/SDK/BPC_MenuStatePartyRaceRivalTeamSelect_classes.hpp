@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -57,24 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_MenuStatePartyRaceRivalTeamSelect_C">();
+		BP_STATIC_CLASS_IMPL("BPC_MenuStatePartyRaceRivalTeamSelect_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_MenuStatePartyRaceRivalTeamSelect_C")
 	}
 	static class UBPC_MenuStatePartyRaceRivalTeamSelect_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_MenuStatePartyRaceRivalTeamSelect_C>();
 	}
 };
-static_assert(alignof(UBPC_MenuStatePartyRaceRivalTeamSelect_C) == 0x000008, "Wrong alignment on UBPC_MenuStatePartyRaceRivalTeamSelect_C");
-static_assert(sizeof(UBPC_MenuStatePartyRaceRivalTeamSelect_C) == 0x000188, "Wrong size on UBPC_MenuStatePartyRaceRivalTeamSelect_C");
-static_assert(offsetof(UBPC_MenuStatePartyRaceRivalTeamSelect_C, UberGraphFrame) == 0x000130, "Member 'UBPC_MenuStatePartyRaceRivalTeamSelect_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceRivalTeamSelect_C, SubInputReceiver) == 0x000138, "Member 'UBPC_MenuStatePartyRaceRivalTeamSelect_C::SubInputReceiver' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceRivalTeamSelect_C, bIsLockLevelChange) == 0x000140, "Member 'UBPC_MenuStatePartyRaceRivalTeamSelect_C::bIsLockLevelChange' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceRivalTeamSelect_C, LevelChangeCoolTime) == 0x000144, "Member 'UBPC_MenuStatePartyRaceRivalTeamSelect_C::LevelChangeCoolTime' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceRivalTeamSelect_C, LevelChangeCoolTimeAfterChangeRival) == 0x000148, "Member 'UBPC_MenuStatePartyRaceRivalTeamSelect_C::LevelChangeCoolTimeAfterChangeRival' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceRivalTeamSelect_C, OldRivalLevelAdjust) == 0x000150, "Member 'UBPC_MenuStatePartyRaceRivalTeamSelect_C::OldRivalLevelAdjust' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceRivalTeamSelect_C, SoundBlueFire) == 0x000158, "Member 'UBPC_MenuStatePartyRaceRivalTeamSelect_C::SoundBlueFire' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceRivalTeamSelect_C, SoundRedFire) == 0x000168, "Member 'UBPC_MenuStatePartyRaceRivalTeamSelect_C::SoundRedFire' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceRivalTeamSelect_C, SoundEraseFire) == 0x000178, "Member 'UBPC_MenuStatePartyRaceRivalTeamSelect_C::SoundEraseFire' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_MenuStatePartyRaceRivalTeamSelect_C;
 
 }
 

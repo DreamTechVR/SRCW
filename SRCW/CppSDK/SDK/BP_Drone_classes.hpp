@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -53,28 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Drone_C">();
+		BP_STATIC_CLASS_IMPL("BP_Drone_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Drone_C")
 	}
 	static class ABP_Drone_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Drone_C>();
 	}
 };
-static_assert(alignof(ABP_Drone_C) == 0x000010, "Wrong alignment on ABP_Drone_C");
-static_assert(sizeof(ABP_Drone_C) == 0x000430, "Wrong size on ABP_Drone_C");
-static_assert(offsetof(ABP_Drone_C, UberGraphFrame) == 0x0003E0, "Member 'ABP_Drone_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_Drone_C, IdleMove_Curve_DroneIdle_22058D284A4524C5F98EB4986F794A3E) == 0x0003E8, "Member 'ABP_Drone_C::IdleMove_Curve_DroneIdle_22058D284A4524C5F98EB4986F794A3E' has a wrong offset!");
-static_assert(offsetof(ABP_Drone_C, IdleMove_PosYRatio_22058D284A4524C5F98EB4986F794A3E) == 0x0003EC, "Member 'ABP_Drone_C::IdleMove_PosYRatio_22058D284A4524C5F98EB4986F794A3E' has a wrong offset!");
-static_assert(offsetof(ABP_Drone_C, IdleMove__Direction_22058D284A4524C5F98EB4986F794A3E) == 0x0003F0, "Member 'ABP_Drone_C::IdleMove__Direction_22058D284A4524C5F98EB4986F794A3E' has a wrong offset!");
-static_assert(offsetof(ABP_Drone_C, IdleMove) == 0x0003F8, "Member 'ABP_Drone_C::IdleMove' has a wrong offset!");
-static_assert(offsetof(ABP_Drone_C, DroneInOut_Rotation_6FFD93554112DE5A9819B4B3F957D58D) == 0x000400, "Member 'ABP_Drone_C::DroneInOut_Rotation_6FFD93554112DE5A9819B4B3F957D58D' has a wrong offset!");
-static_assert(offsetof(ABP_Drone_C, DroneInOut_Curve_DroneInOutRot_6FFD93554112DE5A9819B4B3F957D58D) == 0x000404, "Member 'ABP_Drone_C::DroneInOut_Curve_DroneInOutRot_6FFD93554112DE5A9819B4B3F957D58D' has a wrong offset!");
-static_assert(offsetof(ABP_Drone_C, DroneInOut_Curve_DroneInOutRot_6FFD93554112DE5A9819B4B3F957D58D_0) == 0x000408, "Member 'ABP_Drone_C::DroneInOut_Curve_DroneInOutRot_6FFD93554112DE5A9819B4B3F957D58D_0' has a wrong offset!");
-static_assert(offsetof(ABP_Drone_C, DroneInOut_Curve_DroneInOutRot_6FFD93554112DE5A9819B4B3F957D58D_1) == 0x00040C, "Member 'ABP_Drone_C::DroneInOut_Curve_DroneInOutRot_6FFD93554112DE5A9819B4B3F957D58D_1' has a wrong offset!");
-static_assert(offsetof(ABP_Drone_C, DroneInOut_Curve_DroneInOut_6FFD93554112DE5A9819B4B3F957D58D) == 0x000410, "Member 'ABP_Drone_C::DroneInOut_Curve_DroneInOut_6FFD93554112DE5A9819B4B3F957D58D' has a wrong offset!");
-static_assert(offsetof(ABP_Drone_C, DroneInOut_Position_6FFD93554112DE5A9819B4B3F957D58D) == 0x000414, "Member 'ABP_Drone_C::DroneInOut_Position_6FFD93554112DE5A9819B4B3F957D58D' has a wrong offset!");
-static_assert(offsetof(ABP_Drone_C, DroneInOut__Direction_6FFD93554112DE5A9819B4B3F957D58D) == 0x000418, "Member 'ABP_Drone_C::DroneInOut__Direction_6FFD93554112DE5A9819B4B3F957D58D' has a wrong offset!");
-static_assert(offsetof(ABP_Drone_C, DroneInOut) == 0x000420, "Member 'ABP_Drone_C::DroneInOut' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_Drone_C;
 
 }
 

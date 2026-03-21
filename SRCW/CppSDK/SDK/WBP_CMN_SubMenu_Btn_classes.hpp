@@ -27,17 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_SubMenu_Btn_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_SubMenu_Btn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_SubMenu_Btn_C")
 	}
 	static class UWBP_CMN_SubMenu_Btn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_SubMenu_Btn_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_SubMenu_Btn_C) == 0x000008, "Wrong alignment on UWBP_CMN_SubMenu_Btn_C");
-static_assert(sizeof(UWBP_CMN_SubMenu_Btn_C) == 0x0004F0, "Wrong size on UWBP_CMN_SubMenu_Btn_C");
-static_assert(offsetof(UWBP_CMN_SubMenu_Btn_C, Btn_Cursor) == 0x0004E0, "Member 'UWBP_CMN_SubMenu_Btn_C::Btn_Cursor' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_SubMenu_Btn_C, WidgetSwitcher_BtnBase) == 0x0004E8, "Member 'UWBP_CMN_SubMenu_Btn_C::WidgetSwitcher_BtnBase' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_SubMenu_Btn_C;
 
 }
 

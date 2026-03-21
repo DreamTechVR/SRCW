@@ -21,9 +21,9 @@ namespace SDK
 class UWBP_GrandPrixTips_Monitor_Irregular_C final : public UDodonpaEventDisplayWidget
 {
 public:
-	class UWidgetAnimation*                       Zero4_In;                                          // 0x02E0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Zero4_in;                                          // 0x02E0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Zero3_in;                                          // 0x02E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Zero0_In;                                          // 0x02F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Zero0_in;                                          // 0x02F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UImage*                                 CircleSpread;                                      // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 FlareEff;                                          // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 IrregularEmblem;                                   // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -39,29 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GrandPrixTips_Monitor_Irregular_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GrandPrixTips_Monitor_Irregular_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GrandPrixTips_Monitor_Irregular_C")
 	}
 	static class UWBP_GrandPrixTips_Monitor_Irregular_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GrandPrixTips_Monitor_Irregular_C>();
 	}
 };
-static_assert(alignof(UWBP_GrandPrixTips_Monitor_Irregular_C) == 0x000008, "Wrong alignment on UWBP_GrandPrixTips_Monitor_Irregular_C");
-static_assert(sizeof(UWBP_GrandPrixTips_Monitor_Irregular_C) == 0x000350, "Wrong size on UWBP_GrandPrixTips_Monitor_Irregular_C");
-static_assert(offsetof(UWBP_GrandPrixTips_Monitor_Irregular_C, Zero4_In) == 0x0002E0, "Member 'UWBP_GrandPrixTips_Monitor_Irregular_C::Zero4_In' has a wrong offset!");
-static_assert(offsetof(UWBP_GrandPrixTips_Monitor_Irregular_C, Zero3_in) == 0x0002E8, "Member 'UWBP_GrandPrixTips_Monitor_Irregular_C::Zero3_in' has a wrong offset!");
-static_assert(offsetof(UWBP_GrandPrixTips_Monitor_Irregular_C, Zero0_In) == 0x0002F0, "Member 'UWBP_GrandPrixTips_Monitor_Irregular_C::Zero0_In' has a wrong offset!");
-static_assert(offsetof(UWBP_GrandPrixTips_Monitor_Irregular_C, CircleSpread) == 0x0002F8, "Member 'UWBP_GrandPrixTips_Monitor_Irregular_C::CircleSpread' has a wrong offset!");
-static_assert(offsetof(UWBP_GrandPrixTips_Monitor_Irregular_C, FlareEff) == 0x000300, "Member 'UWBP_GrandPrixTips_Monitor_Irregular_C::FlareEff' has a wrong offset!");
-static_assert(offsetof(UWBP_GrandPrixTips_Monitor_Irregular_C, IrregularEmblem) == 0x000308, "Member 'UWBP_GrandPrixTips_Monitor_Irregular_C::IrregularEmblem' has a wrong offset!");
-static_assert(offsetof(UWBP_GrandPrixTips_Monitor_Irregular_C, MF_GateQuestion) == 0x000310, "Member 'UWBP_GrandPrixTips_Monitor_Irregular_C::MF_GateQuestion' has a wrong offset!");
-static_assert(offsetof(UWBP_GrandPrixTips_Monitor_Irregular_C, Monitor_Tuning) == 0x000318, "Member 'UWBP_GrandPrixTips_Monitor_Irregular_C::Monitor_Tuning' has a wrong offset!");
-static_assert(offsetof(UWBP_GrandPrixTips_Monitor_Irregular_C, RingEff_Light) == 0x000320, "Member 'UWBP_GrandPrixTips_Monitor_Irregular_C::RingEff_Light' has a wrong offset!");
-static_assert(offsetof(UWBP_GrandPrixTips_Monitor_Irregular_C, Title_Base) == 0x000328, "Member 'UWBP_GrandPrixTips_Monitor_Irregular_C::Title_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_GrandPrixTips_Monitor_Irregular_C, TXT_Title) == 0x000330, "Member 'UWBP_GrandPrixTips_Monitor_Irregular_C::TXT_Title' has a wrong offset!");
-static_assert(offsetof(UWBP_GrandPrixTips_Monitor_Irregular_C, WBP_GrandPrixTips_Monitor_StandBy) == 0x000338, "Member 'UWBP_GrandPrixTips_Monitor_Irregular_C::WBP_GrandPrixTips_Monitor_StandBy' has a wrong offset!");
-static_assert(offsetof(UWBP_GrandPrixTips_Monitor_Irregular_C, WBP_GrandPrixTips_Sub_BG_Green) == 0x000340, "Member 'UWBP_GrandPrixTips_Monitor_Irregular_C::WBP_GrandPrixTips_Sub_BG_Green' has a wrong offset!");
-static_assert(offsetof(UWBP_GrandPrixTips_Monitor_Irregular_C, WBP_Race_HUD_Sub_Irregular) == 0x000348, "Member 'UWBP_GrandPrixTips_Monitor_Irregular_C::WBP_Race_HUD_Sub_Irregular' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GrandPrixTips_Monitor_Irregular_C;
 
 }
 

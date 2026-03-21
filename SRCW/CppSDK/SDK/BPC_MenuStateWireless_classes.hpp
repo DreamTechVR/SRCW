@@ -23,15 +23,18 @@ class UBPC_MenuStateWireless_C final : public UMenuSequenceStateBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_MenuStateWireless_C">();
+		BP_STATIC_CLASS_IMPL("BPC_MenuStateWireless_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_MenuStateWireless_C")
 	}
 	static class UBPC_MenuStateWireless_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_MenuStateWireless_C>();
 	}
 };
-static_assert(alignof(UBPC_MenuStateWireless_C) == 0x000008, "Wrong alignment on UBPC_MenuStateWireless_C");
-static_assert(sizeof(UBPC_MenuStateWireless_C) == 0x000138, "Wrong size on UBPC_MenuStateWireless_C");
+DUMPER7_ASSERTS_UBPC_MenuStateWireless_C;
 
 }
 

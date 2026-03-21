@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "SlateCore_structs.hpp"
+#include "UnionUI_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UnionSystem_structs.hpp"
-#include "UnionUI_structs.hpp"
 
 
 namespace SDK::Params
@@ -84,54 +84,7 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0139(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu) == 0x000008, "Wrong alignment on WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu");
-static_assert(sizeof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu) == 0x000140, "Wrong size on WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, EntryPoint) == 0x000000, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, CallFunc_GetSubMenuButtons_ReturnValue) == 0x000008, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::CallFunc_GetSubMenuButtons_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, Temp_int_Loop_Counter_Variable_1) == 0x00001C, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, K2Node_DynamicCast_AsWBP_CMN_Sub_Menu_List) == 0x000020, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::K2Node_DynamicCast_AsWBP_CMN_Sub_Menu_List' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, CallFunc_Add_IntInt_ReturnValue_1) == 0x00002C, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, Temp_int_Array_Index_Variable) == 0x000030, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, K2Node_Event_InButtonArr) == 0x000038, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::K2Node_Event_InButtonArr' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, CallFunc_MakeLiteralInt_ReturnValue) == 0x000048, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, CallFunc_MakeLiteralBool_ReturnValue) == 0x00004C, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::CallFunc_MakeLiteralBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, K2Node_CreateDelegate_OutputDelegate) == 0x000050, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, CallFunc_SetupButtonsPanel_ReturnValue) == 0x000060, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::CallFunc_SetupButtonsPanel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, K2Node_CreateDelegate_OutputDelegate_1) == 0x000068, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, Temp_int_Array_Index_Variable_1) == 0x000078, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, K2Node_CustomEvent_Button_2) == 0x000080, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::K2Node_CustomEvent_Button_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, K2Node_CustomEvent_ButtonIndex_2) == 0x000088, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::K2Node_CustomEvent_ButtonIndex_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, K2Node_CustomEvent_Button_1) == 0x000090, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::K2Node_CustomEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, K2Node_CustomEvent_ButtonIndex_1) == 0x000098, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::K2Node_CustomEvent_ButtonIndex_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, K2Node_CustomEvent_Button) == 0x0000A0, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, K2Node_CustomEvent_ButtonIndex) == 0x0000A8, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::K2Node_CustomEvent_ButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, K2Node_CustomEvent_Dir) == 0x0000AC, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::K2Node_CustomEvent_Dir' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, K2Node_CustomEvent_InVisibility) == 0x0000AD, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::K2Node_CustomEvent_InVisibility' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, K2Node_DynamicCast_AsWBP_CMN_Sub_Menu_List_1) == 0x0000B0, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::K2Node_DynamicCast_AsWBP_CMN_Sub_Menu_List_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, K2Node_DynamicCast_bSuccess_1) == 0x0000B8, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000B9, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, CallFunc_IsDisableFriendlistMilestoneVersion_ReturnValue) == 0x0000BA, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::CallFunc_IsDisableFriendlistMilestoneVersion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, K2Node_CreateDelegate_OutputDelegate_2) == 0x0000BC, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, CallFunc_MakeLiteralByte_ReturnValue) == 0x0000CC, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, CallFunc_GetSubMenuButtons_ReturnValue_1) == 0x0000D0, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::CallFunc_GetSubMenuButtons_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, CallFunc_Array_Get_Item) == 0x0000E0, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, CallFunc_Conv_ByteToInt_ReturnValue) == 0x0000E8, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, CallFunc_ChangeZOrder_ReturnValue) == 0x0000EC, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::CallFunc_ChangeZOrder_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, CallFunc_PlayAnimation_ReturnValue) == 0x0000F0, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, CallFunc_Array_Length_ReturnValue) == 0x0000F8, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, CallFunc_Less_IntInt_ReturnValue) == 0x0000FC, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, CallFunc_GetSubMenuButtons_ReturnValue_2) == 0x000100, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::CallFunc_GetSubMenuButtons_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000110, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, CallFunc_Array_Get_Item_1) == 0x000118, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, CallFunc_GetLoginComplete_ReturnValue) == 0x000120, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::CallFunc_GetLoginComplete_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, K2Node_DynamicCast_AsWBP_CMN_Sub_Menu_Menu_Btn) == 0x000128, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::K2Node_DynamicCast_AsWBP_CMN_Sub_Menu_Menu_Btn' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, K2Node_DynamicCast_bSuccess_2) == 0x000130, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, CallFunc_Array_Length_ReturnValue_1) == 0x000134, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, CallFunc_Less_IntInt_ReturnValue_1) == 0x000138, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu, CallFunc_IsValid_ReturnValue) == 0x000139, "Member 'WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_SubMenu_C_ExecuteUbergraph_WBP_CMN_SubMenu;
 
 // Function WBP_CMN_SubMenu.WBP_CMN_SubMenu_C.InitializeCommonMenuSubMenu
 // 0x0010 (0x0010 - 0x0000)
@@ -140,9 +93,7 @@ struct WBP_CMN_SubMenu_C_InitializeCommonMenuSubMenu final
 public:
 	TArray<ECommonMenuButtonType>                 InButtonArr;                                       // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_CMN_SubMenu_C_InitializeCommonMenuSubMenu) == 0x000008, "Wrong alignment on WBP_CMN_SubMenu_C_InitializeCommonMenuSubMenu");
-static_assert(sizeof(WBP_CMN_SubMenu_C_InitializeCommonMenuSubMenu) == 0x000010, "Wrong size on WBP_CMN_SubMenu_C_InitializeCommonMenuSubMenu");
-static_assert(offsetof(WBP_CMN_SubMenu_C_InitializeCommonMenuSubMenu, InButtonArr) == 0x000000, "Member 'WBP_CMN_SubMenu_C_InitializeCommonMenuSubMenu::InButtonArr' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_SubMenu_C_InitializeCommonMenuSubMenu;
 
 // Function WBP_CMN_SubMenu.WBP_CMN_SubMenu_C.Judge Sub Menu Close
 // 0x0005 (0x0005 - 0x0000)
@@ -155,13 +106,7 @@ public:
 	bool                                          CallFunc_IsOpenMenuByConditions_ReturnValue_3;     // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsOpenMenuByConditions_ReturnValue_4;     // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_SubMenu_C_Judge_Sub_Menu_Close) == 0x000001, "Wrong alignment on WBP_CMN_SubMenu_C_Judge_Sub_Menu_Close");
-static_assert(sizeof(WBP_CMN_SubMenu_C_Judge_Sub_Menu_Close) == 0x000005, "Wrong size on WBP_CMN_SubMenu_C_Judge_Sub_Menu_Close");
-static_assert(offsetof(WBP_CMN_SubMenu_C_Judge_Sub_Menu_Close, CallFunc_IsOpenMenuByConditions_ReturnValue) == 0x000000, "Member 'WBP_CMN_SubMenu_C_Judge_Sub_Menu_Close::CallFunc_IsOpenMenuByConditions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_Judge_Sub_Menu_Close, CallFunc_IsOpenMenuByConditions_ReturnValue_1) == 0x000001, "Member 'WBP_CMN_SubMenu_C_Judge_Sub_Menu_Close::CallFunc_IsOpenMenuByConditions_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_Judge_Sub_Menu_Close, CallFunc_IsOpenMenuByConditions_ReturnValue_2) == 0x000002, "Member 'WBP_CMN_SubMenu_C_Judge_Sub_Menu_Close::CallFunc_IsOpenMenuByConditions_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_Judge_Sub_Menu_Close, CallFunc_IsOpenMenuByConditions_ReturnValue_3) == 0x000003, "Member 'WBP_CMN_SubMenu_C_Judge_Sub_Menu_Close::CallFunc_IsOpenMenuByConditions_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_Judge_Sub_Menu_Close, CallFunc_IsOpenMenuByConditions_ReturnValue_4) == 0x000004, "Member 'WBP_CMN_SubMenu_C_Judge_Sub_Menu_Close::CallFunc_IsOpenMenuByConditions_ReturnValue_4' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_SubMenu_C_Judge_Sub_Menu_Close;
 
 // Function WBP_CMN_SubMenu.WBP_CMN_SubMenu_C.OnCancelButton
 // 0x0010 (0x0010 - 0x0000)
@@ -171,10 +116,7 @@ public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_SubMenu_C_OnCancelButton) == 0x000008, "Wrong alignment on WBP_CMN_SubMenu_C_OnCancelButton");
-static_assert(sizeof(WBP_CMN_SubMenu_C_OnCancelButton) == 0x000010, "Wrong size on WBP_CMN_SubMenu_C_OnCancelButton");
-static_assert(offsetof(WBP_CMN_SubMenu_C_OnCancelButton, Button) == 0x000000, "Member 'WBP_CMN_SubMenu_C_OnCancelButton::Button' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_OnCancelButton, ButtonIndex) == 0x000008, "Member 'WBP_CMN_SubMenu_C_OnCancelButton::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_SubMenu_C_OnCancelButton;
 
 // Function WBP_CMN_SubMenu.WBP_CMN_SubMenu_C.OnDecisionButton
 // 0x0010 (0x0010 - 0x0000)
@@ -184,10 +126,7 @@ public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_SubMenu_C_OnDecisionButton) == 0x000008, "Wrong alignment on WBP_CMN_SubMenu_C_OnDecisionButton");
-static_assert(sizeof(WBP_CMN_SubMenu_C_OnDecisionButton) == 0x000010, "Wrong size on WBP_CMN_SubMenu_C_OnDecisionButton");
-static_assert(offsetof(WBP_CMN_SubMenu_C_OnDecisionButton, Button) == 0x000000, "Member 'WBP_CMN_SubMenu_C_OnDecisionButton::Button' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_OnDecisionButton, ButtonIndex) == 0x000008, "Member 'WBP_CMN_SubMenu_C_OnDecisionButton::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_SubMenu_C_OnDecisionButton;
 
 // Function WBP_CMN_SubMenu.WBP_CMN_SubMenu_C.OnDIrectionButton
 // 0x0010 (0x0010 - 0x0000)
@@ -198,11 +137,7 @@ public:
 	int32                                         ButtonIndex;                                       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EUnionUIControlDir                            Dir;                                               // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_SubMenu_C_OnDIrectionButton) == 0x000008, "Wrong alignment on WBP_CMN_SubMenu_C_OnDIrectionButton");
-static_assert(sizeof(WBP_CMN_SubMenu_C_OnDIrectionButton) == 0x000010, "Wrong size on WBP_CMN_SubMenu_C_OnDIrectionButton");
-static_assert(offsetof(WBP_CMN_SubMenu_C_OnDIrectionButton, Button) == 0x000000, "Member 'WBP_CMN_SubMenu_C_OnDIrectionButton::Button' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_OnDIrectionButton, ButtonIndex) == 0x000008, "Member 'WBP_CMN_SubMenu_C_OnDIrectionButton::ButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_OnDIrectionButton, Dir) == 0x00000C, "Member 'WBP_CMN_SubMenu_C_OnDIrectionButton::Dir' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_SubMenu_C_OnDIrectionButton;
 
 // Function WBP_CMN_SubMenu.WBP_CMN_SubMenu_C.OnFocusReceived
 // 0x01D0 (0x01D0 - 0x0000)
@@ -221,17 +156,7 @@ public:
 	uint8                                         Pad_111[0x7];                                      // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x0118(0x00B8)()
 };
-static_assert(alignof(WBP_CMN_SubMenu_C_OnFocusReceived) == 0x000008, "Wrong alignment on WBP_CMN_SubMenu_C_OnFocusReceived");
-static_assert(sizeof(WBP_CMN_SubMenu_C_OnFocusReceived) == 0x0001D0, "Wrong size on WBP_CMN_SubMenu_C_OnFocusReceived");
-static_assert(offsetof(WBP_CMN_SubMenu_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'WBP_CMN_SubMenu_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'WBP_CMN_SubMenu_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'WBP_CMN_SubMenu_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_OnFocusReceived, CallFunc_GetPlayerController_ReturnValue) == 0x0000F8, "Member 'WBP_CMN_SubMenu_C_OnFocusReceived::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_OnFocusReceived, CallFunc_IsValid_ReturnValue) == 0x000100, "Member 'WBP_CMN_SubMenu_C_OnFocusReceived::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_OnFocusReceived, CallFunc_GetLastFocusedButton_OutLastFocusedButtonIndex) == 0x000104, "Member 'WBP_CMN_SubMenu_C_OnFocusReceived::CallFunc_GetLastFocusedButton_OutLastFocusedButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_OnFocusReceived, CallFunc_GetLastFocusedButton_ReturnValue) == 0x000108, "Member 'WBP_CMN_SubMenu_C_OnFocusReceived::CallFunc_GetLastFocusedButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_OnFocusReceived, CallFunc_IsValid_ReturnValue_1) == 0x000110, "Member 'WBP_CMN_SubMenu_C_OnFocusReceived::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_C_OnFocusReceived, K2Node_MakeStruct_EventReply) == 0x000118, "Member 'WBP_CMN_SubMenu_C_OnFocusReceived::K2Node_MakeStruct_EventReply' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_SubMenu_C_OnFocusReceived;
 
 // Function WBP_CMN_SubMenu.WBP_CMN_SubMenu_C.OnVisibilityChangedEvent
 // 0x0001 (0x0001 - 0x0000)
@@ -240,9 +165,7 @@ struct WBP_CMN_SubMenu_C_OnVisibilityChangedEvent final
 public:
 	ESlateVisibility                              InVisibility;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_SubMenu_C_OnVisibilityChangedEvent) == 0x000001, "Wrong alignment on WBP_CMN_SubMenu_C_OnVisibilityChangedEvent");
-static_assert(sizeof(WBP_CMN_SubMenu_C_OnVisibilityChangedEvent) == 0x000001, "Wrong size on WBP_CMN_SubMenu_C_OnVisibilityChangedEvent");
-static_assert(offsetof(WBP_CMN_SubMenu_C_OnVisibilityChangedEvent, InVisibility) == 0x000000, "Member 'WBP_CMN_SubMenu_C_OnVisibilityChangedEvent::InVisibility' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_SubMenu_C_OnVisibilityChangedEvent;
 
 }
 

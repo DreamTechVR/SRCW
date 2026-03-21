@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ChallengeNotice_Window_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ChallengeNotice_Window_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ChallengeNotice_Window_C")
 	}
 	static class UWBP_ChallengeNotice_Window_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ChallengeNotice_Window_C>();
 	}
 };
-static_assert(alignof(UWBP_ChallengeNotice_Window_C) == 0x000008, "Wrong alignment on UWBP_ChallengeNotice_Window_C");
-static_assert(sizeof(UWBP_ChallengeNotice_Window_C) == 0x0002F0, "Wrong size on UWBP_ChallengeNotice_Window_C");
-static_assert(offsetof(UWBP_ChallengeNotice_Window_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_ChallengeNotice_Window_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_ChallengeNotice_Window_C, WrapBox_0) == 0x0002E8, "Member 'UWBP_ChallengeNotice_Window_C::WrapBox_0' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ChallengeNotice_Window_C;
 
 }
 

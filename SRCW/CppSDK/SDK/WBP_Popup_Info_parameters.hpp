@@ -47,30 +47,7 @@ public:
 	int32                                         CallFunc_MakeLiteralInt_ReturnValue;               // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info) == 0x000008, "Wrong alignment on WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info");
-static_assert(sizeof(WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info) == 0x0000C0, "Wrong size on WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info");
-static_assert(offsetof(WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info, EntryPoint) == 0x000000, "Member 'WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info, K2Node_CustomEvent_InText_1) == 0x000008, "Member 'WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info::K2Node_CustomEvent_InText_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info, CallFunc_GetTerminologyTextByText_ReturnValue) == 0x000018, "Member 'WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info::CallFunc_GetTerminologyTextByText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info, K2Node_CustomEvent_InText) == 0x000028, "Member 'WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info::K2Node_CustomEvent_InText' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info, CallFunc_GetTerminologyTextByText_ReturnValue_1) == 0x000038, "Member 'WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info::CallFunc_GetTerminologyTextByText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info, K2Node_CustomEvent_InTextArray) == 0x000048, "Member 'WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info::K2Node_CustomEvent_InTextArray' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info, CallFunc_Array_Length_ReturnValue) == 0x000058, "Member 'WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info, K2Node_CustomEvent_InTexture2D) == 0x000060, "Member 'WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info::K2Node_CustomEvent_InTexture2D' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info, K2Node_CustomEvent_InIndex) == 0x000068, "Member 'WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info::K2Node_CustomEvent_InIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info, K2Node_Event_IsDesignTime) == 0x00006C, "Member 'WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info, K2Node_MakeArray_Array) == 0x000070, "Member 'WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info, Temp_int_Loop_Counter_Variable) == 0x000080, "Member 'WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info, Temp_int_Array_Index_Variable) == 0x000084, "Member 'WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info, CallFunc_Less_IntInt_ReturnValue) == 0x000088, "Member 'WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info, CallFunc_Array_Get_Item) == 0x000090, "Member 'WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info, K2Node_SwitchInteger_CmpSuccess) == 0x0000A0, "Member 'WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info, CallFunc_Add_IntInt_ReturnValue) == 0x0000A4, "Member 'WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info, K2Node_CustomEvent_Btn01IconIndex) == 0x0000A8, "Member 'WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info::K2Node_CustomEvent_Btn01IconIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info, K2Node_CustomEvent_Btn02IconIndex) == 0x0000AC, "Member 'WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info::K2Node_CustomEvent_Btn02IconIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x0000B0, "Member 'WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info, CallFunc_MakeLiteralInt_ReturnValue) == 0x0000B4, "Member 'WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0000B8, "Member 'WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Info_C_ExecuteUbergraph_WBP_Popup_Info;
 
 // Function WBP_Popup_Info.WBP_Popup_Info_C.GetButton
 // 0x0040 (0x0040 - 0x0000)
@@ -90,19 +67,7 @@ public:
 	int32                                         CallFunc_GetActiveWidgetIndex_ReturnValue;         // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Info_C_GetButton) == 0x000008, "Wrong alignment on WBP_Popup_Info_C_GetButton");
-static_assert(sizeof(WBP_Popup_Info_C_GetButton) == 0x000040, "Wrong size on WBP_Popup_Info_C_GetButton");
-static_assert(offsetof(WBP_Popup_Info_C_GetButton, ButtonIndex) == 0x000000, "Member 'WBP_Popup_Info_C_GetButton::ButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Info_C_GetButton, Button) == 0x000008, "Member 'WBP_Popup_Info_C_GetButton::Button' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Info_C_GetButton, BtnIndex) == 0x000010, "Member 'WBP_Popup_Info_C_GetButton::BtnIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Info_C_GetButton, Temp_int_Variable) == 0x000014, "Member 'WBP_Popup_Info_C_GetButton::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Info_C_GetButton, Temp_int_Variable_1) == 0x000018, "Member 'WBP_Popup_Info_C_GetButton::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Info_C_GetButton, Temp_int_Variable_2) == 0x00001C, "Member 'WBP_Popup_Info_C_GetButton::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Info_C_GetButton, K2Node_Select_Default) == 0x000020, "Member 'WBP_Popup_Info_C_GetButton::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Info_C_GetButton, K2Node_Select_Default_1) == 0x000028, "Member 'WBP_Popup_Info_C_GetButton::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Info_C_GetButton, K2Node_Select_Default_2) == 0x000030, "Member 'WBP_Popup_Info_C_GetButton::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Info_C_GetButton, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000038, "Member 'WBP_Popup_Info_C_GetButton::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Info_C_GetButton, K2Node_SwitchInteger_CmpSuccess) == 0x00003C, "Member 'WBP_Popup_Info_C_GetButton::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Info_C_GetButton;
 
 // Function WBP_Popup_Info.WBP_Popup_Info_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -111,9 +76,7 @@ struct WBP_Popup_Info_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Info_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_Popup_Info_C_PreConstruct");
-static_assert(sizeof(WBP_Popup_Info_C_PreConstruct) == 0x000001, "Wrong size on WBP_Popup_Info_C_PreConstruct");
-static_assert(offsetof(WBP_Popup_Info_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_Popup_Info_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Info_C_PreConstruct;
 
 // Function WBP_Popup_Info.WBP_Popup_Info_C.SetButtonText
 // 0x0010 (0x0010 - 0x0000)
@@ -122,9 +85,7 @@ struct WBP_Popup_Info_C_SetButtonText final
 public:
 	TArray<class FText>                           InTextArray;                                       // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_Popup_Info_C_SetButtonText) == 0x000008, "Wrong alignment on WBP_Popup_Info_C_SetButtonText");
-static_assert(sizeof(WBP_Popup_Info_C_SetButtonText) == 0x000010, "Wrong size on WBP_Popup_Info_C_SetButtonText");
-static_assert(offsetof(WBP_Popup_Info_C_SetButtonText, InTextArray) == 0x000000, "Member 'WBP_Popup_Info_C_SetButtonText::InTextArray' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Info_C_SetButtonText;
 
 // Function WBP_Popup_Info.WBP_Popup_Info_C.SetImageButtonSelectText
 // 0x0010 (0x0010 - 0x0000)
@@ -133,9 +94,7 @@ struct WBP_Popup_Info_C_SetImageButtonSelectText final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_Popup_Info_C_SetImageButtonSelectText) == 0x000008, "Wrong alignment on WBP_Popup_Info_C_SetImageButtonSelectText");
-static_assert(sizeof(WBP_Popup_Info_C_SetImageButtonSelectText) == 0x000010, "Wrong size on WBP_Popup_Info_C_SetImageButtonSelectText");
-static_assert(offsetof(WBP_Popup_Info_C_SetImageButtonSelectText, InText) == 0x000000, "Member 'WBP_Popup_Info_C_SetImageButtonSelectText::InText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Info_C_SetImageButtonSelectText;
 
 // Function WBP_Popup_Info.WBP_Popup_Info_C.SetImageTexture
 // 0x0008 (0x0008 - 0x0000)
@@ -144,9 +103,7 @@ struct WBP_Popup_Info_C_SetImageTexture final
 public:
 	class UTexture2D*                             InTexture2D;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Info_C_SetImageTexture) == 0x000008, "Wrong alignment on WBP_Popup_Info_C_SetImageTexture");
-static_assert(sizeof(WBP_Popup_Info_C_SetImageTexture) == 0x000008, "Wrong size on WBP_Popup_Info_C_SetImageTexture");
-static_assert(offsetof(WBP_Popup_Info_C_SetImageTexture, InTexture2D) == 0x000000, "Member 'WBP_Popup_Info_C_SetImageTexture::InTexture2D' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Info_C_SetImageTexture;
 
 // Function WBP_Popup_Info.WBP_Popup_Info_C.SetMainMenuButtonIconIndex
 // 0x0008 (0x0008 - 0x0000)
@@ -156,10 +113,7 @@ public:
 	int32                                         Btn01IconIndex;                                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Btn02IconIndex;                                    // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Info_C_SetMainMenuButtonIconIndex) == 0x000004, "Wrong alignment on WBP_Popup_Info_C_SetMainMenuButtonIconIndex");
-static_assert(sizeof(WBP_Popup_Info_C_SetMainMenuButtonIconIndex) == 0x000008, "Wrong size on WBP_Popup_Info_C_SetMainMenuButtonIconIndex");
-static_assert(offsetof(WBP_Popup_Info_C_SetMainMenuButtonIconIndex, Btn01IconIndex) == 0x000000, "Member 'WBP_Popup_Info_C_SetMainMenuButtonIconIndex::Btn01IconIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Info_C_SetMainMenuButtonIconIndex, Btn02IconIndex) == 0x000004, "Member 'WBP_Popup_Info_C_SetMainMenuButtonIconIndex::Btn02IconIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Info_C_SetMainMenuButtonIconIndex;
 
 // Function WBP_Popup_Info.WBP_Popup_Info_C.SetMessageText
 // 0x0010 (0x0010 - 0x0000)
@@ -168,9 +122,7 @@ struct WBP_Popup_Info_C_SetMessageText final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_Popup_Info_C_SetMessageText) == 0x000008, "Wrong alignment on WBP_Popup_Info_C_SetMessageText");
-static_assert(sizeof(WBP_Popup_Info_C_SetMessageText) == 0x000010, "Wrong size on WBP_Popup_Info_C_SetMessageText");
-static_assert(offsetof(WBP_Popup_Info_C_SetMessageText, InText) == 0x000000, "Member 'WBP_Popup_Info_C_SetMessageText::InText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Info_C_SetMessageText;
 
 // Function WBP_Popup_Info.WBP_Popup_Info_C.SwitchInfoDisplay
 // 0x0004 (0x0004 - 0x0000)
@@ -179,9 +131,7 @@ struct WBP_Popup_Info_C_SwitchInfoDisplay final
 public:
 	int32                                         InIndex;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Info_C_SwitchInfoDisplay) == 0x000004, "Wrong alignment on WBP_Popup_Info_C_SwitchInfoDisplay");
-static_assert(sizeof(WBP_Popup_Info_C_SwitchInfoDisplay) == 0x000004, "Wrong size on WBP_Popup_Info_C_SwitchInfoDisplay");
-static_assert(offsetof(WBP_Popup_Info_C_SwitchInfoDisplay, InIndex) == 0x000000, "Member 'WBP_Popup_Info_C_SwitchInfoDisplay::InIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Info_C_SwitchInfoDisplay;
 
 }
 

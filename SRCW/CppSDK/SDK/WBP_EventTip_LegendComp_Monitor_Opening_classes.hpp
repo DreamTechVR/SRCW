@@ -22,7 +22,7 @@ class UWBP_EventTip_LegendComp_Monitor_Opening_C final : public UDodonpaEventDis
 {
 public:
 	class UWidgetAnimation*                       Zero1_In;                                          // 0x02E0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Zero0_In;                                          // 0x02E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Zero0_in;                                          // 0x02E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UImage*                                 BG;                                                // 0x02F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 CircleSpread;                                      // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Eff_10;                                            // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -58,45 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_EventTip_LegendComp_Monitor_Opening_C">();
+		BP_STATIC_CLASS_IMPL("WBP_EventTip_LegendComp_Monitor_Opening_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_EventTip_LegendComp_Monitor_Opening_C")
 	}
 	static class UWBP_EventTip_LegendComp_Monitor_Opening_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_EventTip_LegendComp_Monitor_Opening_C>();
 	}
 };
-static_assert(alignof(UWBP_EventTip_LegendComp_Monitor_Opening_C) == 0x000008, "Wrong alignment on UWBP_EventTip_LegendComp_Monitor_Opening_C");
-static_assert(sizeof(UWBP_EventTip_LegendComp_Monitor_Opening_C) == 0x0003D0, "Wrong size on UWBP_EventTip_LegendComp_Monitor_Opening_C");
-static_assert(offsetof(UWBP_EventTip_LegendComp_Monitor_Opening_C, Zero1_In) == 0x0002E0, "Member 'UWBP_EventTip_LegendComp_Monitor_Opening_C::Zero1_In' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_LegendComp_Monitor_Opening_C, Zero0_In) == 0x0002E8, "Member 'UWBP_EventTip_LegendComp_Monitor_Opening_C::Zero0_In' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_LegendComp_Monitor_Opening_C, BG) == 0x0002F0, "Member 'UWBP_EventTip_LegendComp_Monitor_Opening_C::BG' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_LegendComp_Monitor_Opening_C, CircleSpread) == 0x0002F8, "Member 'UWBP_EventTip_LegendComp_Monitor_Opening_C::CircleSpread' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_LegendComp_Monitor_Opening_C, Eff_10) == 0x000300, "Member 'UWBP_EventTip_LegendComp_Monitor_Opening_C::Eff_10' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_LegendComp_Monitor_Opening_C, Eff_00) == 0x000308, "Member 'UWBP_EventTip_LegendComp_Monitor_Opening_C::Eff_00' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_LegendComp_Monitor_Opening_C, Eff_01) == 0x000310, "Member 'UWBP_EventTip_LegendComp_Monitor_Opening_C::Eff_01' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_LegendComp_Monitor_Opening_C, Eff_02) == 0x000318, "Member 'UWBP_EventTip_LegendComp_Monitor_Opening_C::Eff_02' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_LegendComp_Monitor_Opening_C, Eff_03) == 0x000320, "Member 'UWBP_EventTip_LegendComp_Monitor_Opening_C::Eff_03' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_LegendComp_Monitor_Opening_C, Eff_04) == 0x000328, "Member 'UWBP_EventTip_LegendComp_Monitor_Opening_C::Eff_04' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_LegendComp_Monitor_Opening_C, Eff_05) == 0x000330, "Member 'UWBP_EventTip_LegendComp_Monitor_Opening_C::Eff_05' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_LegendComp_Monitor_Opening_C, Eff_08) == 0x000338, "Member 'UWBP_EventTip_LegendComp_Monitor_Opening_C::Eff_08' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_LegendComp_Monitor_Opening_C, Eff_09) == 0x000340, "Member 'UWBP_EventTip_LegendComp_Monitor_Opening_C::Eff_09' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_LegendComp_Monitor_Opening_C, FlareEff) == 0x000348, "Member 'UWBP_EventTip_LegendComp_Monitor_Opening_C::FlareEff' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_LegendComp_Monitor_Opening_C, LegendCompetition) == 0x000350, "Member 'UWBP_EventTip_LegendComp_Monitor_Opening_C::LegendCompetition' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_LegendComp_Monitor_Opening_C, Monitor_Tuning) == 0x000358, "Member 'UWBP_EventTip_LegendComp_Monitor_Opening_C::Monitor_Tuning' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_LegendComp_Monitor_Opening_C, Title_Base) == 0x000360, "Member 'UWBP_EventTip_LegendComp_Monitor_Opening_C::Title_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_LegendComp_Monitor_Opening_C, TXT_Title) == 0x000368, "Member 'UWBP_EventTip_LegendComp_Monitor_Opening_C::TXT_Title' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_LegendComp_Monitor_Opening_C, WBP_GrandPrixTips_Monitor_StandBy) == 0x000370, "Member 'UWBP_EventTip_LegendComp_Monitor_Opening_C::WBP_GrandPrixTips_Monitor_StandBy' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_LegendComp_Monitor_Opening_C, Icon_0) == 0x000378, "Member 'UWBP_EventTip_LegendComp_Monitor_Opening_C::Icon_0' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_LegendComp_Monitor_Opening_C, Icon_1) == 0x000380, "Member 'UWBP_EventTip_LegendComp_Monitor_Opening_C::Icon_1' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_LegendComp_Monitor_Opening_C, Icon_2) == 0x000388, "Member 'UWBP_EventTip_LegendComp_Monitor_Opening_C::Icon_2' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_LegendComp_Monitor_Opening_C, Icon_3) == 0x000390, "Member 'UWBP_EventTip_LegendComp_Monitor_Opening_C::Icon_3' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_LegendComp_Monitor_Opening_C, Icon_4) == 0x000398, "Member 'UWBP_EventTip_LegendComp_Monitor_Opening_C::Icon_4' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_LegendComp_Monitor_Opening_C, Icon_5) == 0x0003A0, "Member 'UWBP_EventTip_LegendComp_Monitor_Opening_C::Icon_5' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_LegendComp_Monitor_Opening_C, Icon_6) == 0x0003A8, "Member 'UWBP_EventTip_LegendComp_Monitor_Opening_C::Icon_6' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_LegendComp_Monitor_Opening_C, Icon_7) == 0x0003B0, "Member 'UWBP_EventTip_LegendComp_Monitor_Opening_C::Icon_7' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_LegendComp_Monitor_Opening_C, Icon_8) == 0x0003B8, "Member 'UWBP_EventTip_LegendComp_Monitor_Opening_C::Icon_8' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_LegendComp_Monitor_Opening_C, Icon_9) == 0x0003C0, "Member 'UWBP_EventTip_LegendComp_Monitor_Opening_C::Icon_9' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_LegendComp_Monitor_Opening_C, Icon_10) == 0x0003C8, "Member 'UWBP_EventTip_LegendComp_Monitor_Opening_C::Icon_10' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_EventTip_LegendComp_Monitor_Opening_C;
 
 }
 

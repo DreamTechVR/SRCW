@@ -35,22 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ClassSelect_Sub_Complete_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ClassSelect_Sub_Complete_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ClassSelect_Sub_Complete_C")
 	}
 	static class UWBP_ClassSelect_Sub_Complete_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ClassSelect_Sub_Complete_C>();
 	}
 };
-static_assert(alignof(UWBP_ClassSelect_Sub_Complete_C) == 0x000008, "Wrong alignment on UWBP_ClassSelect_Sub_Complete_C");
-static_assert(sizeof(UWBP_ClassSelect_Sub_Complete_C) == 0x000318, "Wrong size on UWBP_ClassSelect_Sub_Complete_C");
-static_assert(offsetof(UWBP_ClassSelect_Sub_Complete_C, Icon) == 0x0002E0, "Member 'UWBP_ClassSelect_Sub_Complete_C::Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_Sub_Complete_C, Icon_Comp) == 0x0002E8, "Member 'UWBP_ClassSelect_Sub_Complete_C::Icon_Comp' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_Sub_Complete_C, Plate) == 0x0002F0, "Member 'UWBP_ClassSelect_Sub_Complete_C::Plate' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_Sub_Complete_C, TXT_CLEAR) == 0x0002F8, "Member 'UWBP_ClassSelect_Sub_Complete_C::TXT_CLEAR' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_Sub_Complete_C, TXT_Get_Num) == 0x000300, "Member 'UWBP_ClassSelect_Sub_Complete_C::TXT_Get_Num' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_Sub_Complete_C, TXT_Total_Num) == 0x000308, "Member 'UWBP_ClassSelect_Sub_Complete_C::TXT_Total_Num' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_Sub_Complete_C, WS_Complete) == 0x000310, "Member 'UWBP_ClassSelect_Sub_Complete_C::WS_Complete' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ClassSelect_Sub_Complete_C;
 
 }
 

@@ -23,15 +23,18 @@ class ABP_ItemWeightPerformance_C final : public AItemWeightPerformance
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ItemWeightPerformance_C">();
+		BP_STATIC_CLASS_IMPL("BP_ItemWeightPerformance_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ItemWeightPerformance_C")
 	}
 	static class ABP_ItemWeightPerformance_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ItemWeightPerformance_C>();
 	}
 };
-static_assert(alignof(ABP_ItemWeightPerformance_C) == 0x000008, "Wrong alignment on ABP_ItemWeightPerformance_C");
-static_assert(sizeof(ABP_ItemWeightPerformance_C) == 0x0005B8, "Wrong size on ABP_ItemWeightPerformance_C");
+DUMPER7_ASSERTS_ABP_ItemWeightPerformance_C;
 
 }
 

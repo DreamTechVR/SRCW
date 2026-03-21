@@ -21,8 +21,7 @@ namespace SDK
 struct ABP_HoldDarkChao::FAnimBlueprintGeneratedConstantData final : public ABPT_HoldItem::FAnimBlueprintGeneratedConstantData
 {
 };
-static_assert(alignof(ABP_HoldDarkChao::FAnimBlueprintGeneratedConstantData) == 0x000008, "Wrong alignment on ABP_HoldDarkChao::FAnimBlueprintGeneratedConstantData");
-static_assert(sizeof(ABP_HoldDarkChao::FAnimBlueprintGeneratedConstantData) == 0x000D30, "Wrong size on ABP_HoldDarkChao::FAnimBlueprintGeneratedConstantData");
+DUMPER7_ASSERTS_ABP_HoldDarkChao__FAnimBlueprintGeneratedConstantData;
 
 }
 

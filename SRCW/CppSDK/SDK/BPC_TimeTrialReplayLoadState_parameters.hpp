@@ -38,20 +38,7 @@ public:
 	class ABP_TimeTrialSequence_C*                K2Node_DynamicCast_AsBP_Time_Trial_Sequence_1;     // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_TimeTrialReplayLoadState_C_ExecuteUbergraph_BPC_TimeTrialReplayLoadState) == 0x000008, "Wrong alignment on BPC_TimeTrialReplayLoadState_C_ExecuteUbergraph_BPC_TimeTrialReplayLoadState");
-static_assert(sizeof(BPC_TimeTrialReplayLoadState_C_ExecuteUbergraph_BPC_TimeTrialReplayLoadState) == 0x000048, "Wrong size on BPC_TimeTrialReplayLoadState_C_ExecuteUbergraph_BPC_TimeTrialReplayLoadState");
-static_assert(offsetof(BPC_TimeTrialReplayLoadState_C_ExecuteUbergraph_BPC_TimeTrialReplayLoadState, EntryPoint) == 0x000000, "Member 'BPC_TimeTrialReplayLoadState_C_ExecuteUbergraph_BPC_TimeTrialReplayLoadState::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReplayLoadState_C_ExecuteUbergraph_BPC_TimeTrialReplayLoadState, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'BPC_TimeTrialReplayLoadState_C_ExecuteUbergraph_BPC_TimeTrialReplayLoadState::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReplayLoadState_C_ExecuteUbergraph_BPC_TimeTrialReplayLoadState, CallFunc_IsValid_ReturnValue_1) == 0x000005, "Member 'BPC_TimeTrialReplayLoadState_C_ExecuteUbergraph_BPC_TimeTrialReplayLoadState::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReplayLoadState_C_ExecuteUbergraph_BPC_TimeTrialReplayLoadState, CallFunc_GetSelectedStageId_Selected_Stage_Id_Single) == 0x000006, "Member 'BPC_TimeTrialReplayLoadState_C_ExecuteUbergraph_BPC_TimeTrialReplayLoadState::CallFunc_GetSelectedStageId_Selected_Stage_Id_Single' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReplayLoadState_C_ExecuteUbergraph_BPC_TimeTrialReplayLoadState, CallFunc_GetOwnerSequence_ReturnValue) == 0x000008, "Member 'BPC_TimeTrialReplayLoadState_C_ExecuteUbergraph_BPC_TimeTrialReplayLoadState::CallFunc_GetOwnerSequence_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReplayLoadState_C_ExecuteUbergraph_BPC_TimeTrialReplayLoadState, K2Node_Event_InDeltaTime) == 0x000010, "Member 'BPC_TimeTrialReplayLoadState_C_ExecuteUbergraph_BPC_TimeTrialReplayLoadState::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReplayLoadState_C_ExecuteUbergraph_BPC_TimeTrialReplayLoadState, K2Node_DynamicCast_AsBP_Time_Trial_Sequence) == 0x000018, "Member 'BPC_TimeTrialReplayLoadState_C_ExecuteUbergraph_BPC_TimeTrialReplayLoadState::K2Node_DynamicCast_AsBP_Time_Trial_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReplayLoadState_C_ExecuteUbergraph_BPC_TimeTrialReplayLoadState, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'BPC_TimeTrialReplayLoadState_C_ExecuteUbergraph_BPC_TimeTrialReplayLoadState::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReplayLoadState_C_ExecuteUbergraph_BPC_TimeTrialReplayLoadState, CallFunc_GetOwnerSequence_ReturnValue_1) == 0x000028, "Member 'BPC_TimeTrialReplayLoadState_C_ExecuteUbergraph_BPC_TimeTrialReplayLoadState::CallFunc_GetOwnerSequence_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReplayLoadState_C_ExecuteUbergraph_BPC_TimeTrialReplayLoadState, CallFunc_IsReplayDataLoad_ReturnValue) == 0x000030, "Member 'BPC_TimeTrialReplayLoadState_C_ExecuteUbergraph_BPC_TimeTrialReplayLoadState::CallFunc_IsReplayDataLoad_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReplayLoadState_C_ExecuteUbergraph_BPC_TimeTrialReplayLoadState, K2Node_DynamicCast_AsBP_Time_Trial_Sequence_1) == 0x000038, "Member 'BPC_TimeTrialReplayLoadState_C_ExecuteUbergraph_BPC_TimeTrialReplayLoadState::K2Node_DynamicCast_AsBP_Time_Trial_Sequence_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialReplayLoadState_C_ExecuteUbergraph_BPC_TimeTrialReplayLoadState, K2Node_DynamicCast_bSuccess_1) == 0x000040, "Member 'BPC_TimeTrialReplayLoadState_C_ExecuteUbergraph_BPC_TimeTrialReplayLoadState::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_TimeTrialReplayLoadState_C_ExecuteUbergraph_BPC_TimeTrialReplayLoadState;
 
 // Function BPC_TimeTrialReplayLoadState.BPC_TimeTrialReplayLoadState_C.OnUpdateState
 // 0x0004 (0x0004 - 0x0000)
@@ -60,9 +47,7 @@ struct BPC_TimeTrialReplayLoadState_C_OnUpdateState final
 public:
 	float                                         InDeltaTime;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_TimeTrialReplayLoadState_C_OnUpdateState) == 0x000004, "Wrong alignment on BPC_TimeTrialReplayLoadState_C_OnUpdateState");
-static_assert(sizeof(BPC_TimeTrialReplayLoadState_C_OnUpdateState) == 0x000004, "Wrong size on BPC_TimeTrialReplayLoadState_C_OnUpdateState");
-static_assert(offsetof(BPC_TimeTrialReplayLoadState_C_OnUpdateState, InDeltaTime) == 0x000000, "Member 'BPC_TimeTrialReplayLoadState_C_OnUpdateState::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_TimeTrialReplayLoadState_C_OnUpdateState;
 
 }
 

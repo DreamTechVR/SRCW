@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
@@ -27,11 +27,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<class UWBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C*> K2Node_MakeArray_Array;  // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomSticker_OperationGuide) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomSticker_OperationGuide");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomSticker_OperationGuide) == 0x000020, "Wrong size on WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomSticker_OperationGuide");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomSticker_OperationGuide, EntryPoint) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomSticker_OperationGuide::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomSticker_OperationGuide, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomSticker_OperationGuide::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomSticker_OperationGuide, K2Node_MakeArray_Array) == 0x000010, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomSticker_OperationGuide::K2Node_MakeArray_Array' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomSticker_OperationGuide;
 
 // Function WBP_MachineCustom_Sub_CustomSticker_OperationGuide.WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C.PlayGuideIn
 // 0x0008 (0x0008 - 0x0000)
@@ -40,9 +36,7 @@ struct WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_PlayGuideIn final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_PlayGuideIn) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_PlayGuideIn");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_PlayGuideIn) == 0x000008, "Wrong size on WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_PlayGuideIn");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_PlayGuideIn, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_PlayGuideIn::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_PlayGuideIn;
 
 // Function WBP_MachineCustom_Sub_CustomSticker_OperationGuide.WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C.PlayGuideOut
 // 0x0008 (0x0008 - 0x0000)
@@ -51,9 +45,7 @@ struct WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_PlayGuideOut final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_PlayGuideOut) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_PlayGuideOut");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_PlayGuideOut) == 0x000008, "Wrong size on WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_PlayGuideOut");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_PlayGuideOut, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_PlayGuideOut::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_PlayGuideOut;
 
 // Function WBP_MachineCustom_Sub_CustomSticker_OperationGuide.WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C.SetButtonInfo
 // 0x0040 (0x0040 - 0x0000)
@@ -68,14 +60,7 @@ public:
 	TArray<int32>                                 SwitchIndex;                                       // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	TArray<int32>                                 ButtonIndex;                                       // 0x0030(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetButtonInfo) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetButtonInfo");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetButtonInfo) == 0x000040, "Wrong size on WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetButtonInfo");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetButtonInfo, GuideButton) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetButtonInfo::GuideButton' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetButtonInfo, ButtonText) == 0x000008, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetButtonInfo::ButtonText' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetButtonInfo, bIsRequirePlusButton) == 0x000018, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetButtonInfo::bIsRequirePlusButton' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetButtonInfo, bIsSimultaneously) == 0x000019, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetButtonInfo::bIsSimultaneously' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetButtonInfo, SwitchIndex) == 0x000020, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetButtonInfo::SwitchIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetButtonInfo, ButtonIndex) == 0x000030, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetButtonInfo::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetButtonInfo;
 
 // Function WBP_MachineCustom_Sub_CustomSticker_OperationGuide.WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C.SetGuideColor
 // 0x0040 (0x0040 - 0x0000)
@@ -87,12 +72,7 @@ public:
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0018(0x0014)()
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x002C(0x0014)()
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetGuideColor) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetGuideColor");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetGuideColor) == 0x000040, "Wrong size on WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetGuideColor");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetGuideColor, Guide) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetGuideColor::Guide' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetGuideColor, Color) == 0x000008, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetGuideColor::Color' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetGuideColor, K2Node_MakeStruct_SlateColor) == 0x000018, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetGuideColor::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetGuideColor, K2Node_MakeStruct_SlateColor_1) == 0x00002C, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetGuideColor::K2Node_MakeStruct_SlateColor_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetGuideColor;
 
 // Function WBP_MachineCustom_Sub_CustomSticker_OperationGuide.WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C.SetProhibitControll
 // 0x0024 (0x0024 - 0x0000)
@@ -104,11 +84,7 @@ public:
 	struct FLinearColor                           ActiveColor;                                       // 0x0004(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           DeActiveColor;                                     // 0x0014(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetProhibitControll) == 0x000004, "Wrong alignment on WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetProhibitControll");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetProhibitControll) == 0x000024, "Wrong size on WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetProhibitControll");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetProhibitControll, IsFulldesign) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetProhibitControll::IsFulldesign' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetProhibitControll, ActiveColor) == 0x000004, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetProhibitControll::ActiveColor' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetProhibitControll, DeActiveColor) == 0x000014, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetProhibitControll::DeActiveColor' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetProhibitControll;
 
 // Function WBP_MachineCustom_Sub_CustomSticker_OperationGuide.WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C.SetupGuidelineButton
 // 0x01B0 (0x01B0 - 0x0000)
@@ -178,56 +154,7 @@ public:
 	TArray<int32>                                 K2Node_MakeArray_Array_18;                         // 0x0190(0x0010)(ReferenceParm)
 	TArray<int32>                                 K2Node_MakeArray_Array_19;                         // 0x01A0(0x0010)(ReferenceParm)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton) == 0x0001B0, "Wrong size on WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, CallFunc_MakeLiteralByte_ReturnValue) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, CallFunc_MakeLiteralByte_ReturnValue_1) == 0x000001, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::CallFunc_MakeLiteralByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000004, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x000008, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, K2Node_MakeArray_Array) == 0x000010, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, K2Node_MakeArray_Array_1) == 0x000020, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, CallFunc_MakeLiteralByte_ReturnValue_2) == 0x000030, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::CallFunc_MakeLiteralByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, CallFunc_MakeLiteralByte_ReturnValue_3) == 0x000031, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::CallFunc_MakeLiteralByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, CallFunc_Conv_ByteToInt_ReturnValue_2) == 0x000034, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::CallFunc_Conv_ByteToInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, CallFunc_Conv_ByteToInt_ReturnValue_3) == 0x000038, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::CallFunc_Conv_ByteToInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, CallFunc_MakeLiteralByte_ReturnValue_4) == 0x00003C, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::CallFunc_MakeLiteralByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, K2Node_MakeArray_Array_2) == 0x000040, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::K2Node_MakeArray_Array_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, CallFunc_MakeLiteralByte_ReturnValue_5) == 0x000050, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::CallFunc_MakeLiteralByte_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, CallFunc_Conv_ByteToInt_ReturnValue_4) == 0x000054, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::CallFunc_Conv_ByteToInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, CallFunc_MakeLiteralByte_ReturnValue_6) == 0x000058, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::CallFunc_MakeLiteralByte_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, CallFunc_Conv_ByteToInt_ReturnValue_5) == 0x00005C, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::CallFunc_Conv_ByteToInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, K2Node_MakeArray_Array_3) == 0x000060, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::K2Node_MakeArray_Array_3' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, CallFunc_Conv_ByteToInt_ReturnValue_6) == 0x000070, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::CallFunc_Conv_ByteToInt_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, CallFunc_MakeLiteralByte_ReturnValue_7) == 0x000074, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::CallFunc_MakeLiteralByte_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, K2Node_MakeArray_Array_4) == 0x000078, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::K2Node_MakeArray_Array_4' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, CallFunc_MakeLiteralByte_ReturnValue_8) == 0x000088, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::CallFunc_MakeLiteralByte_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, CallFunc_Conv_ByteToInt_ReturnValue_7) == 0x00008C, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::CallFunc_Conv_ByteToInt_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, K2Node_MakeArray_Array_5) == 0x000090, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::K2Node_MakeArray_Array_5' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, CallFunc_Conv_ByteToInt_ReturnValue_8) == 0x0000A0, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::CallFunc_Conv_ByteToInt_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, CallFunc_MakeLiteralByte_ReturnValue_9) == 0x0000A4, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::CallFunc_MakeLiteralByte_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, K2Node_MakeArray_Array_6) == 0x0000A8, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::K2Node_MakeArray_Array_6' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, CallFunc_MakeLiteralByte_ReturnValue_10) == 0x0000B8, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::CallFunc_MakeLiteralByte_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, CallFunc_Conv_ByteToInt_ReturnValue_9) == 0x0000BC, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::CallFunc_Conv_ByteToInt_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, CallFunc_MakeLiteralByte_ReturnValue_11) == 0x0000C0, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::CallFunc_MakeLiteralByte_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, CallFunc_Conv_ByteToInt_ReturnValue_10) == 0x0000C4, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::CallFunc_Conv_ByteToInt_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, K2Node_MakeArray_Array_7) == 0x0000C8, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::K2Node_MakeArray_Array_7' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, CallFunc_Conv_ByteToInt_ReturnValue_11) == 0x0000D8, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::CallFunc_Conv_ByteToInt_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, CallFunc_MakeLiteralByte_ReturnValue_12) == 0x0000DC, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::CallFunc_MakeLiteralByte_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, K2Node_MakeArray_Array_8) == 0x0000E0, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::K2Node_MakeArray_Array_8' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, CallFunc_MakeLiteralByte_ReturnValue_13) == 0x0000F0, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::CallFunc_MakeLiteralByte_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, CallFunc_Conv_ByteToInt_ReturnValue_12) == 0x0000F4, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::CallFunc_Conv_ByteToInt_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, CallFunc_Conv_ByteToInt_ReturnValue_13) == 0x0000F8, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::CallFunc_Conv_ByteToInt_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, K2Node_MakeArray_Array_9) == 0x000100, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::K2Node_MakeArray_Array_9' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, K2Node_MakeArray_Array_10) == 0x000110, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::K2Node_MakeArray_Array_10' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, K2Node_MakeArray_Array_11) == 0x000120, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::K2Node_MakeArray_Array_11' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, K2Node_MakeArray_Array_12) == 0x000130, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::K2Node_MakeArray_Array_12' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, K2Node_MakeArray_Array_13) == 0x000140, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::K2Node_MakeArray_Array_13' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, K2Node_MakeArray_Array_14) == 0x000150, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::K2Node_MakeArray_Array_14' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, K2Node_MakeArray_Array_15) == 0x000160, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::K2Node_MakeArray_Array_15' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, K2Node_MakeArray_Array_16) == 0x000170, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::K2Node_MakeArray_Array_16' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, K2Node_MakeArray_Array_17) == 0x000180, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::K2Node_MakeArray_Array_17' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, K2Node_MakeArray_Array_18) == 0x000190, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::K2Node_MakeArray_Array_18' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton, K2Node_MakeArray_Array_19) == 0x0001A0, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton::K2Node_MakeArray_Array_19' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomSticker_OperationGuide_C_SetupGuidelineButton;
 
 }
 

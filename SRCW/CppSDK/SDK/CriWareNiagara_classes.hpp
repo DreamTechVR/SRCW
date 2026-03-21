@@ -35,23 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceAtomPlayer">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceAtomPlayer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceAtomPlayer")
 	}
 	static class UNiagaraDataInterfaceAtomPlayer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceAtomPlayer>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceAtomPlayer) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceAtomPlayer");
-static_assert(sizeof(UNiagaraDataInterfaceAtomPlayer) == 0x000070, "Wrong size on UNiagaraDataInterfaceAtomPlayer");
-static_assert(offsetof(UNiagaraDataInterfaceAtomPlayer, SoundToPlay) == 0x000038, "Member 'UNiagaraDataInterfaceAtomPlayer::SoundToPlay' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceAtomPlayer, Attenuation) == 0x000040, "Member 'UNiagaraDataInterfaceAtomPlayer::Attenuation' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceAtomPlayer, Concurrency) == 0x000048, "Member 'UNiagaraDataInterfaceAtomPlayer::Concurrency' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceAtomPlayer, ParameterNames) == 0x000050, "Member 'UNiagaraDataInterfaceAtomPlayer::ParameterNames' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceAtomPlayer, bLimitPlaysPerTick) == 0x000060, "Member 'UNiagaraDataInterfaceAtomPlayer::bLimitPlaysPerTick' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceAtomPlayer, MaxPlaysPerTick) == 0x000064, "Member 'UNiagaraDataInterfaceAtomPlayer::MaxPlaysPerTick' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceAtomPlayer, bStopWhenComponentIsDestroyed) == 0x000068, "Member 'UNiagaraDataInterfaceAtomPlayer::bStopWhenComponentIsDestroyed' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceAtomPlayer, bAllowLoopingOneShotSounds) == 0x000069, "Member 'UNiagaraDataInterfaceAtomPlayer::bAllowLoopingOneShotSounds' has a wrong offset!");
+DUMPER7_ASSERTS_UNiagaraDataInterfaceAtomPlayer;
 
 }
 

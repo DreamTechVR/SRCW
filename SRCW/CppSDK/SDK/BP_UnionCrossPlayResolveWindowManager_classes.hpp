@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -33,17 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_UnionCrossPlayResolveWindowManager_C">();
+		BP_STATIC_CLASS_IMPL("BP_UnionCrossPlayResolveWindowManager_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_UnionCrossPlayResolveWindowManager_C")
 	}
 	static class ABP_UnionCrossPlayResolveWindowManager_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_UnionCrossPlayResolveWindowManager_C>();
 	}
 };
-static_assert(alignof(ABP_UnionCrossPlayResolveWindowManager_C) == 0x000008, "Wrong alignment on ABP_UnionCrossPlayResolveWindowManager_C");
-static_assert(sizeof(ABP_UnionCrossPlayResolveWindowManager_C) == 0x000310, "Wrong size on ABP_UnionCrossPlayResolveWindowManager_C");
-static_assert(offsetof(ABP_UnionCrossPlayResolveWindowManager_C, UberGraphFrame) == 0x000300, "Member 'ABP_UnionCrossPlayResolveWindowManager_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_UnionCrossPlayResolveWindowManager_C, DefaultSceneRoot) == 0x000308, "Member 'ABP_UnionCrossPlayResolveWindowManager_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_UnionCrossPlayResolveWindowManager_C;
 
 }
 

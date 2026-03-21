@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -46,24 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_HUD_Sub_Festa_TeamGroup_P1_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_HUD_Sub_Festa_TeamGroup_P1_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_HUD_Sub_Festa_TeamGroup_P1_C")
 	}
 	static class UWBP_Race_HUD_Sub_Festa_TeamGroup_P1_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_HUD_Sub_Festa_TeamGroup_P1_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_HUD_Sub_Festa_TeamGroup_P1_C) == 0x000008, "Wrong alignment on UWBP_Race_HUD_Sub_Festa_TeamGroup_P1_C");
-static_assert(sizeof(UWBP_Race_HUD_Sub_Festa_TeamGroup_P1_C) == 0x000340, "Wrong size on UWBP_Race_HUD_Sub_Festa_TeamGroup_P1_C");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamGroup_P1_C, UberGraphFrame) == 0x0002F0, "Member 'UWBP_Race_HUD_Sub_Festa_TeamGroup_P1_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamGroup_P1_C, WBP_Race_HUD_Sub_Festa_TeamGroup_01) == 0x0002F8, "Member 'UWBP_Race_HUD_Sub_Festa_TeamGroup_P1_C::WBP_Race_HUD_Sub_Festa_TeamGroup_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamGroup_P1_C, WBP_Race_HUD_Sub_Festa_TeamGroup_02) == 0x000300, "Member 'UWBP_Race_HUD_Sub_Festa_TeamGroup_P1_C::WBP_Race_HUD_Sub_Festa_TeamGroup_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamGroup_P1_C, WBP_Race_HUD_Sub_Festa_TeamGroup_03) == 0x000308, "Member 'UWBP_Race_HUD_Sub_Festa_TeamGroup_P1_C::WBP_Race_HUD_Sub_Festa_TeamGroup_03' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamGroup_P1_C, WBP_Race_HUD_Sub_Festa_TeamGroup_04) == 0x000310, "Member 'UWBP_Race_HUD_Sub_Festa_TeamGroup_P1_C::WBP_Race_HUD_Sub_Festa_TeamGroup_04' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamGroup_P1_C, WBP_Race_HUD_Sub_Festa_TeamGroup_05) == 0x000318, "Member 'UWBP_Race_HUD_Sub_Festa_TeamGroup_P1_C::WBP_Race_HUD_Sub_Festa_TeamGroup_05' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamGroup_P1_C, WBP_Race_HUD_Sub_Festa_TeamGroup_06) == 0x000320, "Member 'UWBP_Race_HUD_Sub_Festa_TeamGroup_P1_C::WBP_Race_HUD_Sub_Festa_TeamGroup_06' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamGroup_P1_C, WBP_Race_HUD_Sub_Festa_TeamGroup_Rank) == 0x000328, "Member 'UWBP_Race_HUD_Sub_Festa_TeamGroup_P1_C::WBP_Race_HUD_Sub_Festa_TeamGroup_Rank' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamGroup_P1_C, TeamGroupArr) == 0x000330, "Member 'UWBP_Race_HUD_Sub_Festa_TeamGroup_P1_C::TeamGroupArr' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_HUD_Sub_Festa_TeamGroup_P1_C;
 
 }
 

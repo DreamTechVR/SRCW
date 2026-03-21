@@ -23,15 +23,18 @@ class UBPC_GadgetCustomize2InitState_C final : public UGadgetCustomize2InitState
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_GadgetCustomize2InitState_C">();
+		BP_STATIC_CLASS_IMPL("BPC_GadgetCustomize2InitState_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_GadgetCustomize2InitState_C")
 	}
 	static class UBPC_GadgetCustomize2InitState_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_GadgetCustomize2InitState_C>();
 	}
 };
-static_assert(alignof(UBPC_GadgetCustomize2InitState_C) == 0x000008, "Wrong alignment on UBPC_GadgetCustomize2InitState_C");
-static_assert(sizeof(UBPC_GadgetCustomize2InitState_C) == 0x0000F8, "Wrong size on UBPC_GadgetCustomize2InitState_C");
+DUMPER7_ASSERTS_UBPC_GadgetCustomize2InitState_C;
 
 }
 

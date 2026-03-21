@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -64,39 +64,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_HUD_Sub_Boost_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_HUD_Sub_Boost_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_HUD_Sub_Boost_C")
 	}
 	static class UWBP_Race_HUD_Sub_Boost_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_HUD_Sub_Boost_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_HUD_Sub_Boost_C) == 0x000008, "Wrong alignment on UWBP_Race_HUD_Sub_Boost_C");
-static_assert(sizeof(UWBP_Race_HUD_Sub_Boost_C) == 0x000430, "Wrong size on UWBP_Race_HUD_Sub_Boost_C");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Boost_C, UberGraphFrame) == 0x000378, "Member 'UWBP_Race_HUD_Sub_Boost_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Boost_C, Level0_inLoop) == 0x000380, "Member 'UWBP_Race_HUD_Sub_Boost_C::Level0_inLoop' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Boost_C, Irregular_inLoop) == 0x000388, "Member 'UWBP_Race_HUD_Sub_Boost_C::Irregular_inLoop' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Boost_C, Just_InOut) == 0x000390, "Member 'UWBP_Race_HUD_Sub_Boost_C::Just_InOut' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Boost_C, BoostNum_Inout) == 0x000398, "Member 'UWBP_Race_HUD_Sub_Boost_C::BoostNum_Inout' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Boost_C, base) == 0x0003A0, "Member 'UWBP_Race_HUD_Sub_Boost_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Boost_C, DSP_Boost_01) == 0x0003A8, "Member 'UWBP_Race_HUD_Sub_Boost_C::DSP_Boost_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Boost_C, DSP_Boost_02) == 0x0003B0, "Member 'UWBP_Race_HUD_Sub_Boost_C::DSP_Boost_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Boost_C, DSP_Boost_03) == 0x0003B8, "Member 'UWBP_Race_HUD_Sub_Boost_C::DSP_Boost_03' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Boost_C, DSP_Boost_04) == 0x0003C0, "Member 'UWBP_Race_HUD_Sub_Boost_C::DSP_Boost_04' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Boost_C, DSP_Eff_JustDrift) == 0x0003C8, "Member 'UWBP_Race_HUD_Sub_Boost_C::DSP_Eff_JustDrift' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Boost_C, DSP_PAT_BoostNum) == 0x0003D0, "Member 'UWBP_Race_HUD_Sub_Boost_C::DSP_PAT_BoostNum' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Boost_C, Eff_Add_01) == 0x0003D8, "Member 'UWBP_Race_HUD_Sub_Boost_C::Eff_Add_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Boost_C, Eff_Add_02) == 0x0003E0, "Member 'UWBP_Race_HUD_Sub_Boost_C::Eff_Add_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Boost_C, Eff_Irregular) == 0x0003E8, "Member 'UWBP_Race_HUD_Sub_Boost_C::Eff_Irregular' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Boost_C, Eff_Just_03) == 0x0003F0, "Member 'UWBP_Race_HUD_Sub_Boost_C::Eff_Just_03' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Boost_C, MeterCover) == 0x0003F8, "Member 'UWBP_Race_HUD_Sub_Boost_C::MeterCover' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Boost_C, WBP_Race_HUD_Sub_Irregular) == 0x000400, "Member 'UWBP_Race_HUD_Sub_Boost_C::WBP_Race_HUD_Sub_Irregular' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Boost_C, BoostLevel) == 0x000408, "Member 'UWBP_Race_HUD_Sub_Boost_C::BoostLevel' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Boost_C, OnBoost) == 0x000410, "Member 'UWBP_Race_HUD_Sub_Boost_C::OnBoost' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Boost_C, ChargeLevel) == 0x000420, "Member 'UWBP_Race_HUD_Sub_Boost_C::ChargeLevel' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Boost_C, PrevChargeLevel) == 0x000424, "Member 'UWBP_Race_HUD_Sub_Boost_C::PrevChargeLevel' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Boost_C, PlayerIndex) == 0x000428, "Member 'UWBP_Race_HUD_Sub_Boost_C::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Boost_C, IsSinglePlayer) == 0x00042C, "Member 'UWBP_Race_HUD_Sub_Boost_C::IsSinglePlayer' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_HUD_Sub_Boost_C;
 
 }
 

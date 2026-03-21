@@ -30,20 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_System_Sub_AutoSave_C">();
+		BP_STATIC_CLASS_IMPL("WBP_System_Sub_AutoSave_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_System_Sub_AutoSave_C")
 	}
 	static class UWBP_System_Sub_AutoSave_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_System_Sub_AutoSave_C>();
 	}
 };
-static_assert(alignof(UWBP_System_Sub_AutoSave_C) == 0x000008, "Wrong alignment on UWBP_System_Sub_AutoSave_C");
-static_assert(sizeof(UWBP_System_Sub_AutoSave_C) == 0x000308, "Wrong size on UWBP_System_Sub_AutoSave_C");
-static_assert(offsetof(UWBP_System_Sub_AutoSave_C, RingBase) == 0x0002E0, "Member 'UWBP_System_Sub_AutoSave_C::RingBase' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Sub_AutoSave_C, RingEff) == 0x0002E8, "Member 'UWBP_System_Sub_AutoSave_C::RingEff' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Sub_AutoSave_C, RingEff_Add) == 0x0002F0, "Member 'UWBP_System_Sub_AutoSave_C::RingEff_Add' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Sub_AutoSave_C, RingEff_Light) == 0x0002F8, "Member 'UWBP_System_Sub_AutoSave_C::RingEff_Light' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Sub_AutoSave_C, TXT_AutoSave) == 0x000300, "Member 'UWBP_System_Sub_AutoSave_C::TXT_AutoSave' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_System_Sub_AutoSave_C;
 
 }
 

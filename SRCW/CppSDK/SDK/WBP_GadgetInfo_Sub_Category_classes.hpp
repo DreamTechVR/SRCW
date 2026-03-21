@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "UNION_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
-#include "UNION_structs.hpp"
 
 
 namespace SDK
@@ -50,29 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GadgetInfo_Sub_Category_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GadgetInfo_Sub_Category_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GadgetInfo_Sub_Category_C")
 	}
 	static class UWBP_GadgetInfo_Sub_Category_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GadgetInfo_Sub_Category_C>();
 	}
 };
-static_assert(alignof(UWBP_GadgetInfo_Sub_Category_C) == 0x000008, "Wrong alignment on UWBP_GadgetInfo_Sub_Category_C");
-static_assert(sizeof(UWBP_GadgetInfo_Sub_Category_C) == 0x000358, "Wrong size on UWBP_GadgetInfo_Sub_Category_C");
-static_assert(offsetof(UWBP_GadgetInfo_Sub_Category_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_GadgetInfo_Sub_Category_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetInfo_Sub_Category_C, BG_Header) == 0x0002E8, "Member 'UWBP_GadgetInfo_Sub_Category_C::BG_Header' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetInfo_Sub_Category_C, NGPowerMark) == 0x0002F0, "Member 'UWBP_GadgetInfo_Sub_Category_C::NGPowerMark' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetInfo_Sub_Category_C, PAT_Header) == 0x0002F8, "Member 'UWBP_GadgetInfo_Sub_Category_C::PAT_Header' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetInfo_Sub_Category_C, TXT_Ellipses) == 0x000300, "Member 'UWBP_GadgetInfo_Sub_Category_C::TXT_Ellipses' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetInfo_Sub_Category_C, TXT_Title) == 0x000308, "Member 'UWBP_GadgetInfo_Sub_Category_C::TXT_Title' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetInfo_Sub_Category_C, WBP_GadgetIcon_Cost01_Icon_01) == 0x000310, "Member 'UWBP_GadgetInfo_Sub_Category_C::WBP_GadgetIcon_Cost01_Icon_01' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetInfo_Sub_Category_C, WBP_GadgetIcon_Cost01_Icon_02) == 0x000318, "Member 'UWBP_GadgetInfo_Sub_Category_C::WBP_GadgetIcon_Cost01_Icon_02' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetInfo_Sub_Category_C, WBP_GadgetIcon_Cost01_Icon_03) == 0x000320, "Member 'UWBP_GadgetInfo_Sub_Category_C::WBP_GadgetIcon_Cost01_Icon_03' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetInfo_Sub_Category_C, WBP_GadgetIcon_Cost01_Icon_04) == 0x000328, "Member 'UWBP_GadgetInfo_Sub_Category_C::WBP_GadgetIcon_Cost01_Icon_04' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetInfo_Sub_Category_C, WBP_GadgetIcon_Cost01_Icon_05) == 0x000330, "Member 'UWBP_GadgetInfo_Sub_Category_C::WBP_GadgetIcon_Cost01_Icon_05' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetInfo_Sub_Category_C, WBP_GadgetIcon_Cost01_Icon_06) == 0x000338, "Member 'UWBP_GadgetInfo_Sub_Category_C::WBP_GadgetIcon_Cost01_Icon_06' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetInfo_Sub_Category_C, IconList) == 0x000340, "Member 'UWBP_GadgetInfo_Sub_Category_C::IconList' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetInfo_Sub_Category_C, OverList) == 0x000350, "Member 'UWBP_GadgetInfo_Sub_Category_C::OverList' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GadgetInfo_Sub_Category_C;
 
 }
 

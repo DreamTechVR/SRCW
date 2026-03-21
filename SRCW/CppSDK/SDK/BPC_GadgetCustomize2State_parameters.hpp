@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "UnionUI_structs.hpp"
-#include "UNION_structs.hpp"
 #include "Engine_structs.hpp"
+#include "UNION_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK::Params
@@ -48,27 +48,7 @@ public:
 	class UUnionUITransitionManager*              CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(EUnionUIFadeDirection FadeDirection)> K2Node_CreateDelegate_OutputDelegate_2;     // 0x0070(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State) == 0x000008, "Wrong alignment on BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State");
-static_assert(sizeof(BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State) == 0x000080, "Wrong size on BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State");
-static_assert(offsetof(BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State, EntryPoint) == 0x000000, "Member 'BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State, CallFunc_GetSelectedPlayerCount_ReturnValue) == 0x000004, "Member 'BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State::CallFunc_GetSelectedPlayerCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State, CallFunc_GetChildStateMachine_ReturnValue) == 0x000008, "Member 'BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State::CallFunc_GetChildStateMachine_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State, K2Node_DynamicCast_AsBP_Gadget_Customize_2Sequence) == 0x000010, "Member 'BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State::K2Node_DynamicCast_AsBP_Gadget_Customize_2Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State, K2Node_CreateDelegate_OutputDelegate) == 0x00001C, "Member 'BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State, K2Node_CustomEvent_bIsSelectedPlateDataChanged) == 0x00002C, "Member 'BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State::K2Node_CustomEvent_bIsSelectedPlateDataChanged' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State, K2Node_Event_InTimeOutTime) == 0x000030, "Member 'BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State::K2Node_Event_InTimeOutTime' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State, K2Node_CreateDelegate_OutputDelegate_1) == 0x000034, "Member 'BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000048, "Member 'BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State, CallFunc_K2_IsValidTimerHandle_ReturnValue) == 0x000050, "Member 'BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State::CallFunc_K2_IsValidTimerHandle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State, K2Node_Event_bInIsVisible) == 0x000051, "Member 'BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State::K2Node_Event_bInIsVisible' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State, CallFunc_K2_IsValidTimerHandle_ReturnValue_1) == 0x000052, "Member 'BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State::CallFunc_K2_IsValidTimerHandle_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State, CallFunc_GetAppPlayerController_ReturnValue) == 0x000058, "Member 'BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State::CallFunc_GetAppPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State, K2Node_CustomEvent_FadeDirection) == 0x000060, "Member 'BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State::K2Node_CustomEvent_FadeDirection' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State, K2Node_Event_InSelectMode) == 0x000061, "Member 'BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State::K2Node_Event_InSelectMode' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State, K2Node_Event_InPlayerNum) == 0x000064, "Member 'BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State::K2Node_Event_InPlayerNum' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000068, "Member 'BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State, K2Node_CreateDelegate_OutputDelegate_2) == 0x000070, "Member 'BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2State_C_ExecuteUbergraph_BPC_GadgetCustomize2State;
 
 // Function BPC_GadgetCustomize2State.BPC_GadgetCustomize2State_C.Finished_SequenceStart_FadeOut
 // 0x0001 (0x0001 - 0x0000)
@@ -77,9 +57,7 @@ struct BPC_GadgetCustomize2State_C_Finished_SequenceStart_FadeOut final
 public:
 	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2State_C_Finished_SequenceStart_FadeOut) == 0x000001, "Wrong alignment on BPC_GadgetCustomize2State_C_Finished_SequenceStart_FadeOut");
-static_assert(sizeof(BPC_GadgetCustomize2State_C_Finished_SequenceStart_FadeOut) == 0x000001, "Wrong size on BPC_GadgetCustomize2State_C_Finished_SequenceStart_FadeOut");
-static_assert(offsetof(BPC_GadgetCustomize2State_C_Finished_SequenceStart_FadeOut, FadeDirection) == 0x000000, "Member 'BPC_GadgetCustomize2State_C_Finished_SequenceStart_FadeOut::FadeDirection' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2State_C_Finished_SequenceStart_FadeOut;
 
 // Function BPC_GadgetCustomize2State.BPC_GadgetCustomize2State_C.MatchingTimeOut
 // 0x0004 (0x0004 - 0x0000)
@@ -88,9 +66,7 @@ struct BPC_GadgetCustomize2State_C_MatchingTimeOut final
 public:
 	float                                         InTimeOutTime;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2State_C_MatchingTimeOut) == 0x000004, "Wrong alignment on BPC_GadgetCustomize2State_C_MatchingTimeOut");
-static_assert(sizeof(BPC_GadgetCustomize2State_C_MatchingTimeOut) == 0x000004, "Wrong size on BPC_GadgetCustomize2State_C_MatchingTimeOut");
-static_assert(offsetof(BPC_GadgetCustomize2State_C_MatchingTimeOut, InTimeOutTime) == 0x000000, "Member 'BPC_GadgetCustomize2State_C_MatchingTimeOut::InTimeOutTime' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2State_C_MatchingTimeOut;
 
 // Function BPC_GadgetCustomize2State.BPC_GadgetCustomize2State_C.Sequence_OnBackEvent
 // 0x0001 (0x0001 - 0x0000)
@@ -99,9 +75,7 @@ struct BPC_GadgetCustomize2State_C_Sequence_OnBackEvent final
 public:
 	bool                                          bIsSelectedPlateDataChanged_0;                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2State_C_Sequence_OnBackEvent) == 0x000001, "Wrong alignment on BPC_GadgetCustomize2State_C_Sequence_OnBackEvent");
-static_assert(sizeof(BPC_GadgetCustomize2State_C_Sequence_OnBackEvent) == 0x000001, "Wrong size on BPC_GadgetCustomize2State_C_Sequence_OnBackEvent");
-static_assert(offsetof(BPC_GadgetCustomize2State_C_Sequence_OnBackEvent, bIsSelectedPlateDataChanged_0) == 0x000000, "Member 'BPC_GadgetCustomize2State_C_Sequence_OnBackEvent::bIsSelectedPlateDataChanged_0' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2State_C_Sequence_OnBackEvent;
 
 // Function BPC_GadgetCustomize2State.BPC_GadgetCustomize2State_C.SetMessageBarVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -110,9 +84,7 @@ struct BPC_GadgetCustomize2State_C_SetMessageBarVisible final
 public:
 	bool                                          bInIsVisible;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2State_C_SetMessageBarVisible) == 0x000001, "Wrong alignment on BPC_GadgetCustomize2State_C_SetMessageBarVisible");
-static_assert(sizeof(BPC_GadgetCustomize2State_C_SetMessageBarVisible) == 0x000001, "Wrong size on BPC_GadgetCustomize2State_C_SetMessageBarVisible");
-static_assert(offsetof(BPC_GadgetCustomize2State_C_SetMessageBarVisible, bInIsVisible) == 0x000000, "Member 'BPC_GadgetCustomize2State_C_SetMessageBarVisible::bInIsVisible' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2State_C_SetMessageBarVisible;
 
 // Function BPC_GadgetCustomize2State.BPC_GadgetCustomize2State_C.SetPlayerNum
 // 0x0004 (0x0004 - 0x0000)
@@ -121,9 +93,7 @@ struct BPC_GadgetCustomize2State_C_SetPlayerNum final
 public:
 	int32                                         InPlayerNum;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2State_C_SetPlayerNum) == 0x000004, "Wrong alignment on BPC_GadgetCustomize2State_C_SetPlayerNum");
-static_assert(sizeof(BPC_GadgetCustomize2State_C_SetPlayerNum) == 0x000004, "Wrong size on BPC_GadgetCustomize2State_C_SetPlayerNum");
-static_assert(offsetof(BPC_GadgetCustomize2State_C_SetPlayerNum, InPlayerNum) == 0x000000, "Member 'BPC_GadgetCustomize2State_C_SetPlayerNum::InPlayerNum' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2State_C_SetPlayerNum;
 
 // Function BPC_GadgetCustomize2State.BPC_GadgetCustomize2State_C.SetSelectMode
 // 0x0001 (0x0001 - 0x0000)
@@ -132,9 +102,7 @@ struct BPC_GadgetCustomize2State_C_SetSelectMode final
 public:
 	EGadgetCustomizeSelectMode                    InSelectMode;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2State_C_SetSelectMode) == 0x000001, "Wrong alignment on BPC_GadgetCustomize2State_C_SetSelectMode");
-static_assert(sizeof(BPC_GadgetCustomize2State_C_SetSelectMode) == 0x000001, "Wrong size on BPC_GadgetCustomize2State_C_SetSelectMode");
-static_assert(offsetof(BPC_GadgetCustomize2State_C_SetSelectMode, InSelectMode) == 0x000000, "Member 'BPC_GadgetCustomize2State_C_SetSelectMode::InSelectMode' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2State_C_SetSelectMode;
 
 // Function BPC_GadgetCustomize2State.BPC_GadgetCustomize2State_C.IsSelectedPlateDataChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -143,9 +111,7 @@ struct BPC_GadgetCustomize2State_C_IsSelectedPlateDataChanged final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2State_C_IsSelectedPlateDataChanged) == 0x000001, "Wrong alignment on BPC_GadgetCustomize2State_C_IsSelectedPlateDataChanged");
-static_assert(sizeof(BPC_GadgetCustomize2State_C_IsSelectedPlateDataChanged) == 0x000001, "Wrong size on BPC_GadgetCustomize2State_C_IsSelectedPlateDataChanged");
-static_assert(offsetof(BPC_GadgetCustomize2State_C_IsSelectedPlateDataChanged, ReturnValue) == 0x000000, "Member 'BPC_GadgetCustomize2State_C_IsSelectedPlateDataChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2State_C_IsSelectedPlateDataChanged;
 
 }
 

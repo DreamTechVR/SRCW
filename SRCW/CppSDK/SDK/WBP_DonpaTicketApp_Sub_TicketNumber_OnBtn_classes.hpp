@@ -36,20 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C">();
+		BP_STATIC_CLASS_IMPL("WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C")
 	}
 	static class UWBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C>();
 	}
 };
-static_assert(alignof(UWBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C) == 0x000008, "Wrong alignment on UWBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C");
-static_assert(sizeof(UWBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C) == 0x000308, "Wrong size on UWBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C");
-static_assert(offsetof(UWBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C, Text_NG) == 0x0002E8, "Member 'UWBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C::Text_NG' has a wrong offset!");
-static_assert(offsetof(UWBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C, Text_Nomal) == 0x0002F0, "Member 'UWBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C::Text_Nomal' has a wrong offset!");
-static_assert(offsetof(UWBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C, TXT_Num_DonpaTicket01) == 0x0002F8, "Member 'UWBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C::TXT_Num_DonpaTicket01' has a wrong offset!");
-static_assert(offsetof(UWBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C, TXT_Num_DonpaTicket01_1) == 0x000300, "Member 'UWBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C::TXT_Num_DonpaTicket01_1' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_DonpaTicketApp_Sub_TicketNumber_OnBtn_C;
 
 }
 

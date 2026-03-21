@@ -47,28 +47,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_TitleMenu_Sub_Btn_C">();
+		BP_STATIC_CLASS_IMPL("WBP_TitleMenu_Sub_Btn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_TitleMenu_Sub_Btn_C")
 	}
 	static class UWBP_TitleMenu_Sub_Btn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_TitleMenu_Sub_Btn_C>();
 	}
 };
-static_assert(alignof(UWBP_TitleMenu_Sub_Btn_C) == 0x000008, "Wrong alignment on UWBP_TitleMenu_Sub_Btn_C");
-static_assert(sizeof(UWBP_TitleMenu_Sub_Btn_C) == 0x000348, "Wrong size on UWBP_TitleMenu_Sub_Btn_C");
-static_assert(offsetof(UWBP_TitleMenu_Sub_Btn_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_TitleMenu_Sub_Btn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_Sub_Btn_C, Push_In) == 0x0002E8, "Member 'UWBP_TitleMenu_Sub_Btn_C::Push_In' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_Sub_Btn_C, Push_Out) == 0x0002F0, "Member 'UWBP_TitleMenu_Sub_Btn_C::Push_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_Sub_Btn_C, Active_Loop) == 0x0002F8, "Member 'UWBP_TitleMenu_Sub_Btn_C::Active_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_Sub_Btn_C, base) == 0x000300, "Member 'UWBP_TitleMenu_Sub_Btn_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_Sub_Btn_C, Base_Bottom) == 0x000308, "Member 'UWBP_TitleMenu_Sub_Btn_C::Base_Bottom' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_Sub_Btn_C, Base_Top) == 0x000310, "Member 'UWBP_TitleMenu_Sub_Btn_C::Base_Top' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_Sub_Btn_C, Eff_Spread) == 0x000318, "Member 'UWBP_TitleMenu_Sub_Btn_C::Eff_Spread' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_Sub_Btn_C, Overlay_PressInfo) == 0x000320, "Member 'UWBP_TitleMenu_Sub_Btn_C::Overlay_PressInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_Sub_Btn_C, RaceFlag) == 0x000328, "Member 'UWBP_TitleMenu_Sub_Btn_C::RaceFlag' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_Sub_Btn_C, TXT_Press) == 0x000330, "Member 'UWBP_TitleMenu_Sub_Btn_C::TXT_Press' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_Sub_Btn_C, WBP_CMN_ControllerBtn) == 0x000338, "Member 'UWBP_TitleMenu_Sub_Btn_C::WBP_CMN_ControllerBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_Sub_Btn_C, NeedBeginAnim) == 0x000340, "Member 'UWBP_TitleMenu_Sub_Btn_C::NeedBeginAnim' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_TitleMenu_Sub_Btn_C;
 
 }
 

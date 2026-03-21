@@ -23,15 +23,18 @@ class UBPC_RaceResultSave_C final : public URaceResultSequenceStateSave
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_RaceResultSave_C">();
+		BP_STATIC_CLASS_IMPL("BPC_RaceResultSave_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_RaceResultSave_C")
 	}
 	static class UBPC_RaceResultSave_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_RaceResultSave_C>();
 	}
 };
-static_assert(alignof(UBPC_RaceResultSave_C) == 0x000008, "Wrong alignment on UBPC_RaceResultSave_C");
-static_assert(sizeof(UBPC_RaceResultSave_C) == 0x000108, "Wrong size on UBPC_RaceResultSave_C");
+DUMPER7_ASSERTS_UBPC_RaceResultSave_C;
 
 }
 

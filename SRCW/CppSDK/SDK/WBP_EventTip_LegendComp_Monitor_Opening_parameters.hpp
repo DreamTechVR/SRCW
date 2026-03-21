@@ -27,14 +27,7 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_EventTip_LegendComp_Monitor_Opening_C_SetMaterialIndexParam) == 0x000008, "Wrong alignment on WBP_EventTip_LegendComp_Monitor_Opening_C_SetMaterialIndexParam");
-static_assert(sizeof(WBP_EventTip_LegendComp_Monitor_Opening_C_SetMaterialIndexParam) == 0x000030, "Wrong size on WBP_EventTip_LegendComp_Monitor_Opening_C_SetMaterialIndexParam");
-static_assert(offsetof(WBP_EventTip_LegendComp_Monitor_Opening_C_SetMaterialIndexParam, Image) == 0x000000, "Member 'WBP_EventTip_LegendComp_Monitor_Opening_C_SetMaterialIndexParam::Image' has a wrong offset!");
-static_assert(offsetof(WBP_EventTip_LegendComp_Monitor_Opening_C_SetMaterialIndexParam, Value) == 0x000008, "Member 'WBP_EventTip_LegendComp_Monitor_Opening_C_SetMaterialIndexParam::Value' has a wrong offset!");
-static_assert(offsetof(WBP_EventTip_LegendComp_Monitor_Opening_C_SetMaterialIndexParam, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000010, "Member 'WBP_EventTip_LegendComp_Monitor_Opening_C_SetMaterialIndexParam::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventTip_LegendComp_Monitor_Opening_C_SetMaterialIndexParam, CallFunc_GetBrushResourceAsMaterial_ReturnValue) == 0x000018, "Member 'WBP_EventTip_LegendComp_Monitor_Opening_C_SetMaterialIndexParam::CallFunc_GetBrushResourceAsMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventTip_LegendComp_Monitor_Opening_C_SetMaterialIndexParam, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000020, "Member 'WBP_EventTip_LegendComp_Monitor_Opening_C_SetMaterialIndexParam::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventTip_LegendComp_Monitor_Opening_C_SetMaterialIndexParam, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000028, "Member 'WBP_EventTip_LegendComp_Monitor_Opening_C_SetMaterialIndexParam::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_EventTip_LegendComp_Monitor_Opening_C_SetMaterialIndexParam;
 
 }
 

@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
+#include "UnionSystem_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK
@@ -69,34 +69,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ItemSwitch_Sub_ItemIcon_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ItemSwitch_Sub_ItemIcon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ItemSwitch_Sub_ItemIcon_C")
 	}
 	static class UWBP_ItemSwitch_Sub_ItemIcon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ItemSwitch_Sub_ItemIcon_C>();
 	}
 };
-static_assert(alignof(UWBP_ItemSwitch_Sub_ItemIcon_C) == 0x000008, "Wrong alignment on UWBP_ItemSwitch_Sub_ItemIcon_C");
-static_assert(sizeof(UWBP_ItemSwitch_Sub_ItemIcon_C) == 0x0005C8, "Wrong size on UWBP_ItemSwitch_Sub_ItemIcon_C");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_ItemIcon_C, UberGraphFrame) == 0x000530, "Member 'UWBP_ItemSwitch_Sub_ItemIcon_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_ItemIcon_C, DSP_Cursor_ItemsSwitch) == 0x000538, "Member 'UWBP_ItemSwitch_Sub_ItemIcon_C::DSP_Cursor_ItemsSwitch' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_ItemIcon_C, ItemSwitchIcon_Base_All) == 0x000540, "Member 'UWBP_ItemSwitch_Sub_ItemIcon_C::ItemSwitchIcon_Base_All' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_ItemIcon_C, ItemSwitchIcon_Base_Blue) == 0x000548, "Member 'UWBP_ItemSwitch_Sub_ItemIcon_C::ItemSwitchIcon_Base_Blue' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_ItemIcon_C, ItemSwitchIcon_Base_BlueYellow) == 0x000550, "Member 'UWBP_ItemSwitch_Sub_ItemIcon_C::ItemSwitchIcon_Base_BlueYellow' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_ItemIcon_C, ItemSwitchIcon_Base_Both) == 0x000558, "Member 'UWBP_ItemSwitch_Sub_ItemIcon_C::ItemSwitchIcon_Base_Both' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_ItemIcon_C, ItemSwitchIcon_Base_NonActive) == 0x000560, "Member 'UWBP_ItemSwitch_Sub_ItemIcon_C::ItemSwitchIcon_Base_NonActive' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_ItemIcon_C, ItemSwitchIcon_Base_Red) == 0x000568, "Member 'UWBP_ItemSwitch_Sub_ItemIcon_C::ItemSwitchIcon_Base_Red' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_ItemIcon_C, ItemSwitchIcon_Base_RedYellow) == 0x000570, "Member 'UWBP_ItemSwitch_Sub_ItemIcon_C::ItemSwitchIcon_Base_RedYellow' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_ItemIcon_C, ItemSwitchIcon_Base_Yellow) == 0x000578, "Member 'UWBP_ItemSwitch_Sub_ItemIcon_C::ItemSwitchIcon_Base_Yellow' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_ItemIcon_C, MouseInteraction) == 0x000580, "Member 'UWBP_ItemSwitch_Sub_ItemIcon_C::MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_ItemIcon_C, PAT_ItemSwitchIcon_01) == 0x000588, "Member 'UWBP_ItemSwitch_Sub_ItemIcon_C::PAT_ItemSwitchIcon_01' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_ItemIcon_C, RingNum_100) == 0x000590, "Member 'UWBP_ItemSwitch_Sub_ItemIcon_C::RingNum_100' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_ItemIcon_C, ROMText) == 0x000598, "Member 'UWBP_ItemSwitch_Sub_ItemIcon_C::ROMText' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_ItemIcon_C, WidgetSwitcher_0) == 0x0005A0, "Member 'UWBP_ItemSwitch_Sub_ItemIcon_C::WidgetSwitcher_0' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_ItemIcon_C, NewVar_0) == 0x0005A8, "Member 'UWBP_ItemSwitch_Sub_ItemIcon_C::NewVar_0' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_ItemIcon_C, NewVar) == 0x0005B0, "Member 'UWBP_ItemSwitch_Sub_ItemIcon_C::NewVar' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_ItemIcon_C, IsGuest) == 0x0005C0, "Member 'UWBP_ItemSwitch_Sub_ItemIcon_C::IsGuest' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_ItemIcon_C, IsHint) == 0x0005C1, "Member 'UWBP_ItemSwitch_Sub_ItemIcon_C::IsHint' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ItemSwitch_Sub_ItemIcon_C;
 
 }
 

@@ -53,29 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_HeaderMenu_Sub_Btn_C">();
+		BP_STATIC_CLASS_IMPL("WBP_HeaderMenu_Sub_Btn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_HeaderMenu_Sub_Btn_C")
 	}
 	static class UWBP_HeaderMenu_Sub_Btn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_HeaderMenu_Sub_Btn_C>();
 	}
 };
-static_assert(alignof(UWBP_HeaderMenu_Sub_Btn_C) == 0x000008, "Wrong alignment on UWBP_HeaderMenu_Sub_Btn_C");
-static_assert(sizeof(UWBP_HeaderMenu_Sub_Btn_C) == 0x0004F8, "Wrong size on UWBP_HeaderMenu_Sub_Btn_C");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Btn_C, UberGraphFrame) == 0x000480, "Member 'UWBP_HeaderMenu_Sub_Btn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Btn_C, Non_Active_Loop) == 0x000488, "Member 'UWBP_HeaderMenu_Sub_Btn_C::Non_Active_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Btn_C, Active_Loop) == 0x000490, "Member 'UWBP_HeaderMenu_Sub_Btn_C::Active_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Btn_C, BtnBase) == 0x000498, "Member 'UWBP_HeaderMenu_Sub_Btn_C::BtnBase' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Btn_C, MouseInteractionBtn) == 0x0004A0, "Member 'UWBP_HeaderMenu_Sub_Btn_C::MouseInteractionBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Btn_C, PAT_ControllerBtn) == 0x0004A8, "Member 'UWBP_HeaderMenu_Sub_Btn_C::PAT_ControllerBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Btn_C, TXT_Wait) == 0x0004B0, "Member 'UWBP_HeaderMenu_Sub_Btn_C::TXT_Wait' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Btn_C, WBP_FooterMenu_Sub_ControllerBtn) == 0x0004B8, "Member 'UWBP_HeaderMenu_Sub_Btn_C::WBP_FooterMenu_Sub_ControllerBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Btn_C, WBP_FooterMenu_Sub_ControllerCross) == 0x0004C0, "Member 'UWBP_HeaderMenu_Sub_Btn_C::WBP_FooterMenu_Sub_ControllerCross' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Btn_C, WBP_FooterMenu_Sub_Key) == 0x0004C8, "Member 'UWBP_HeaderMenu_Sub_Btn_C::WBP_FooterMenu_Sub_Key' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Btn_C, WBP_FooterMenu_Sub_KeyCross) == 0x0004D0, "Member 'UWBP_HeaderMenu_Sub_Btn_C::WBP_FooterMenu_Sub_KeyCross' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Btn_C, WidgetSwitcher_Pict) == 0x0004D8, "Member 'UWBP_HeaderMenu_Sub_Btn_C::WidgetSwitcher_Pict' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Btn_C, IsWait) == 0x0004E0, "Member 'UWBP_HeaderMenu_Sub_Btn_C::IsWait' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Btn_C, OnStampMouseClicked) == 0x0004E8, "Member 'UWBP_HeaderMenu_Sub_Btn_C::OnStampMouseClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_HeaderMenu_Sub_Btn_C;
 
 }
 

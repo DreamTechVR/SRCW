@@ -63,40 +63,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABP_ItemVioletVoid_C">();
+		BP_STATIC_CLASS_IMPL("ABP_ItemVioletVoid_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABP_ItemVioletVoid_C")
 	}
 	static class UABP_ItemVioletVoid_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UABP_ItemVioletVoid_C>();
 	}
 };
-static_assert(alignof(UABP_ItemVioletVoid_C) == 0x000010, "Wrong alignment on UABP_ItemVioletVoid_C");
-static_assert(sizeof(UABP_ItemVioletVoid_C) == 0x0006F0, "Wrong size on UABP_ItemVioletVoid_C");
-static_assert(offsetof(UABP_ItemVioletVoid_C, UberGraphFrame) == 0x000370, "Member 'UABP_ItemVioletVoid_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UABP_ItemVioletVoid_C, __AnimBlueprintMutables) == 0x000378, "Member 'UABP_ItemVioletVoid_C::__AnimBlueprintMutables' has a wrong offset!");
-static_assert(offsetof(UABP_ItemVioletVoid_C, AnimBlueprintExtension_PropertyAccess) == 0x000388, "Member 'UABP_ItemVioletVoid_C::AnimBlueprintExtension_PropertyAccess' has a wrong offset!");
-static_assert(offsetof(UABP_ItemVioletVoid_C, AnimBlueprintExtension_Base) == 0x000390, "Member 'UABP_ItemVioletVoid_C::AnimBlueprintExtension_Base' has a wrong offset!");
-static_assert(offsetof(UABP_ItemVioletVoid_C, AnimGraphNode_Root) == 0x000398, "Member 'UABP_ItemVioletVoid_C::AnimGraphNode_Root' has a wrong offset!");
-static_assert(offsetof(UABP_ItemVioletVoid_C, AnimGraphNode_TransitionResult_3) == 0x0003B8, "Member 'UABP_ItemVioletVoid_C::AnimGraphNode_TransitionResult_3' has a wrong offset!");
-static_assert(offsetof(UABP_ItemVioletVoid_C, AnimGraphNode_TransitionResult_2) == 0x0003E0, "Member 'UABP_ItemVioletVoid_C::AnimGraphNode_TransitionResult_2' has a wrong offset!");
-static_assert(offsetof(UABP_ItemVioletVoid_C, AnimGraphNode_TransitionResult_1) == 0x000408, "Member 'UABP_ItemVioletVoid_C::AnimGraphNode_TransitionResult_1' has a wrong offset!");
-static_assert(offsetof(UABP_ItemVioletVoid_C, AnimGraphNode_TransitionResult) == 0x000430, "Member 'UABP_ItemVioletVoid_C::AnimGraphNode_TransitionResult' has a wrong offset!");
-static_assert(offsetof(UABP_ItemVioletVoid_C, AnimGraphNode_SequencePlayer_3) == 0x000458, "Member 'UABP_ItemVioletVoid_C::AnimGraphNode_SequencePlayer_3' has a wrong offset!");
-static_assert(offsetof(UABP_ItemVioletVoid_C, AnimGraphNode_StateResult_3) == 0x0004A0, "Member 'UABP_ItemVioletVoid_C::AnimGraphNode_StateResult_3' has a wrong offset!");
-static_assert(offsetof(UABP_ItemVioletVoid_C, AnimGraphNode_SequencePlayer_2) == 0x0004C0, "Member 'UABP_ItemVioletVoid_C::AnimGraphNode_SequencePlayer_2' has a wrong offset!");
-static_assert(offsetof(UABP_ItemVioletVoid_C, AnimGraphNode_StateResult_2) == 0x000508, "Member 'UABP_ItemVioletVoid_C::AnimGraphNode_StateResult_2' has a wrong offset!");
-static_assert(offsetof(UABP_ItemVioletVoid_C, AnimGraphNode_SequencePlayer_1) == 0x000528, "Member 'UABP_ItemVioletVoid_C::AnimGraphNode_SequencePlayer_1' has a wrong offset!");
-static_assert(offsetof(UABP_ItemVioletVoid_C, AnimGraphNode_StateResult_1) == 0x000570, "Member 'UABP_ItemVioletVoid_C::AnimGraphNode_StateResult_1' has a wrong offset!");
-static_assert(offsetof(UABP_ItemVioletVoid_C, AnimGraphNode_SequencePlayer) == 0x000590, "Member 'UABP_ItemVioletVoid_C::AnimGraphNode_SequencePlayer' has a wrong offset!");
-static_assert(offsetof(UABP_ItemVioletVoid_C, AnimGraphNode_StateResult) == 0x0005D8, "Member 'UABP_ItemVioletVoid_C::AnimGraphNode_StateResult' has a wrong offset!");
-static_assert(offsetof(UABP_ItemVioletVoid_C, AnimGraphNode_StateMachine) == 0x0005F8, "Member 'UABP_ItemVioletVoid_C::AnimGraphNode_StateMachine' has a wrong offset!");
-static_assert(offsetof(UABP_ItemVioletVoid_C, AppearPlaySpeed) == 0x0006C0, "Member 'UABP_ItemVioletVoid_C::AppearPlaySpeed' has a wrong offset!");
-static_assert(offsetof(UABP_ItemVioletVoid_C, DisappearPlaySpeed) == 0x0006C8, "Member 'UABP_ItemVioletVoid_C::DisappearPlaySpeed' has a wrong offset!");
-static_assert(offsetof(UABP_ItemVioletVoid_C, EatingPlaySpeed) == 0x0006D0, "Member 'UABP_ItemVioletVoid_C::EatingPlaySpeed' has a wrong offset!");
-static_assert(offsetof(UABP_ItemVioletVoid_C, Appearance) == 0x0006D8, "Member 'UABP_ItemVioletVoid_C::Appearance' has a wrong offset!");
-static_assert(offsetof(UABP_ItemVioletVoid_C, IsInSleep) == 0x0006D9, "Member 'UABP_ItemVioletVoid_C::IsInSleep' has a wrong offset!");
-static_assert(offsetof(UABP_ItemVioletVoid_C, IsEating) == 0x0006DA, "Member 'UABP_ItemVioletVoid_C::IsEating' has a wrong offset!");
-static_assert(offsetof(UABP_ItemVioletVoid_C, PlaySE_2D) == 0x0006E0, "Member 'UABP_ItemVioletVoid_C::PlaySE_2D' has a wrong offset!");
+DUMPER7_ASSERTS_UABP_ItemVioletVoid_C;
 
 }
 

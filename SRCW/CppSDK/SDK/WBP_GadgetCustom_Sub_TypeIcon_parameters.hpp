@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "UNION_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "UNION_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
 
@@ -27,9 +27,7 @@ struct WBP_GadgetCustom_Sub_TypeIcon_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Typ
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_TypeIcon_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeIcon) == 0x000004, "Wrong alignment on WBP_GadgetCustom_Sub_TypeIcon_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeIcon");
-static_assert(sizeof(WBP_GadgetCustom_Sub_TypeIcon_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeIcon) == 0x000004, "Wrong size on WBP_GadgetCustom_Sub_TypeIcon_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeIcon");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeIcon_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeIcon, EntryPoint) == 0x000000, "Member 'WBP_GadgetCustom_Sub_TypeIcon_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeIcon::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_TypeIcon_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeIcon;
 
 // Function WBP_GadgetCustom_Sub_TypeIcon.WBP_GadgetCustom_Sub_TypeIcon_C.GetIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -38,9 +36,7 @@ struct WBP_GadgetCustom_Sub_TypeIcon_C_GetIndex final
 public:
 	int32                                         Output_Get;                                        // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_TypeIcon_C_GetIndex) == 0x000004, "Wrong alignment on WBP_GadgetCustom_Sub_TypeIcon_C_GetIndex");
-static_assert(sizeof(WBP_GadgetCustom_Sub_TypeIcon_C_GetIndex) == 0x000004, "Wrong size on WBP_GadgetCustom_Sub_TypeIcon_C_GetIndex");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeIcon_C_GetIndex, Output_Get) == 0x000000, "Member 'WBP_GadgetCustom_Sub_TypeIcon_C_GetIndex::Output_Get' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_TypeIcon_C_GetIndex;
 
 // Function WBP_GadgetCustom_Sub_TypeIcon.WBP_GadgetCustom_Sub_TypeIcon_C.OnFocusReceived
 // 0x01B0 (0x01B0 - 0x0000)
@@ -52,12 +48,7 @@ public:
 	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
 	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x00F8(0x00B8)()
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_TypeIcon_C_OnFocusReceived) == 0x000008, "Wrong alignment on WBP_GadgetCustom_Sub_TypeIcon_C_OnFocusReceived");
-static_assert(sizeof(WBP_GadgetCustom_Sub_TypeIcon_C_OnFocusReceived) == 0x0001B0, "Wrong size on WBP_GadgetCustom_Sub_TypeIcon_C_OnFocusReceived");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeIcon_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'WBP_GadgetCustom_Sub_TypeIcon_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeIcon_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'WBP_GadgetCustom_Sub_TypeIcon_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeIcon_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'WBP_GadgetCustom_Sub_TypeIcon_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeIcon_C_OnFocusReceived, K2Node_MakeStruct_EventReply) == 0x0000F8, "Member 'WBP_GadgetCustom_Sub_TypeIcon_C_OnFocusReceived::K2Node_MakeStruct_EventReply' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_TypeIcon_C_OnFocusReceived;
 
 // Function WBP_GadgetCustom_Sub_TypeIcon.WBP_GadgetCustom_Sub_TypeIcon_C.PlayPurchaseAnim
 // 0x0078 (0x0078 - 0x0000)
@@ -70,13 +61,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0068(0x0010)()
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_TypeIcon_C_PlayPurchaseAnim) == 0x000008, "Wrong alignment on WBP_GadgetCustom_Sub_TypeIcon_C_PlayPurchaseAnim");
-static_assert(sizeof(WBP_GadgetCustom_Sub_TypeIcon_C_PlayPurchaseAnim) == 0x000078, "Wrong size on WBP_GadgetCustom_Sub_TypeIcon_C_PlayPurchaseAnim");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeIcon_C_PlayPurchaseAnim, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000000, "Member 'WBP_GadgetCustom_Sub_TypeIcon_C_PlayPurchaseAnim::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeIcon_C_PlayPurchaseAnim, K2Node_MakeStruct_FormatArgumentData) == 0x000008, "Member 'WBP_GadgetCustom_Sub_TypeIcon_C_PlayPurchaseAnim::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeIcon_C_PlayPurchaseAnim, K2Node_MakeArray_Array) == 0x000050, "Member 'WBP_GadgetCustom_Sub_TypeIcon_C_PlayPurchaseAnim::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeIcon_C_PlayPurchaseAnim, CallFunc_PlayAnimation_ReturnValue) == 0x000060, "Member 'WBP_GadgetCustom_Sub_TypeIcon_C_PlayPurchaseAnim::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeIcon_C_PlayPurchaseAnim, CallFunc_Format_ReturnValue) == 0x000068, "Member 'WBP_GadgetCustom_Sub_TypeIcon_C_PlayPurchaseAnim::CallFunc_Format_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_TypeIcon_C_PlayPurchaseAnim;
 
 // Function WBP_GadgetCustom_Sub_TypeIcon.WBP_GadgetCustom_Sub_TypeIcon_C.SetGadgetCategory
 // 0x0058 (0x0058 - 0x0000)
@@ -87,10 +72,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGadgetCustomCategoryColor             FindVal;                                           // 0x0008(0x0050)(Edit, BlueprintVisible)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_TypeIcon_C_SetGadgetCategory) == 0x000008, "Wrong alignment on WBP_GadgetCustom_Sub_TypeIcon_C_SetGadgetCategory");
-static_assert(sizeof(WBP_GadgetCustom_Sub_TypeIcon_C_SetGadgetCategory) == 0x000058, "Wrong size on WBP_GadgetCustom_Sub_TypeIcon_C_SetGadgetCategory");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeIcon_C_SetGadgetCategory, InGadgetCategory) == 0x000000, "Member 'WBP_GadgetCustom_Sub_TypeIcon_C_SetGadgetCategory::InGadgetCategory' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeIcon_C_SetGadgetCategory, FindVal) == 0x000008, "Member 'WBP_GadgetCustom_Sub_TypeIcon_C_SetGadgetCategory::FindVal' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_TypeIcon_C_SetGadgetCategory;
 
 // Function WBP_GadgetCustom_Sub_TypeIcon.WBP_GadgetCustom_Sub_TypeIcon_C.SetGadgetState
 // 0x0001 (0x0001 - 0x0000)
@@ -99,9 +81,7 @@ struct WBP_GadgetCustom_Sub_TypeIcon_C_SetGadgetState final
 public:
 	EGadgetState                                  InGadgetState;                                     // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_TypeIcon_C_SetGadgetState) == 0x000001, "Wrong alignment on WBP_GadgetCustom_Sub_TypeIcon_C_SetGadgetState");
-static_assert(sizeof(WBP_GadgetCustom_Sub_TypeIcon_C_SetGadgetState) == 0x000001, "Wrong size on WBP_GadgetCustom_Sub_TypeIcon_C_SetGadgetState");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeIcon_C_SetGadgetState, InGadgetState) == 0x000000, "Member 'WBP_GadgetCustom_Sub_TypeIcon_C_SetGadgetState::InGadgetState' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_TypeIcon_C_SetGadgetState;
 
 // Function WBP_GadgetCustom_Sub_TypeIcon.WBP_GadgetCustom_Sub_TypeIcon_C.SetPlayerNum
 // 0x0004 (0x0004 - 0x0000)
@@ -110,9 +90,7 @@ struct WBP_GadgetCustom_Sub_TypeIcon_C_SetPlayerNum final
 public:
 	int32                                         InPlayerNum;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_TypeIcon_C_SetPlayerNum) == 0x000004, "Wrong alignment on WBP_GadgetCustom_Sub_TypeIcon_C_SetPlayerNum");
-static_assert(sizeof(WBP_GadgetCustom_Sub_TypeIcon_C_SetPlayerNum) == 0x000004, "Wrong size on WBP_GadgetCustom_Sub_TypeIcon_C_SetPlayerNum");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeIcon_C_SetPlayerNum, InPlayerNum) == 0x000000, "Member 'WBP_GadgetCustom_Sub_TypeIcon_C_SetPlayerNum::InPlayerNum' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_TypeIcon_C_SetPlayerNum;
 
 // Function WBP_GadgetCustom_Sub_TypeIcon.WBP_GadgetCustom_Sub_TypeIcon_C.SetupAsLocked
 // 0x0001 (0x0001 - 0x0000)
@@ -121,9 +99,7 @@ struct WBP_GadgetCustom_Sub_TypeIcon_C_SetupAsLocked final
 public:
 	EGadgetId                                     InGadgetId;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_TypeIcon_C_SetupAsLocked) == 0x000001, "Wrong alignment on WBP_GadgetCustom_Sub_TypeIcon_C_SetupAsLocked");
-static_assert(sizeof(WBP_GadgetCustom_Sub_TypeIcon_C_SetupAsLocked) == 0x000001, "Wrong size on WBP_GadgetCustom_Sub_TypeIcon_C_SetupAsLocked");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeIcon_C_SetupAsLocked, InGadgetId) == 0x000000, "Member 'WBP_GadgetCustom_Sub_TypeIcon_C_SetupAsLocked::InGadgetId' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_TypeIcon_C_SetupAsLocked;
 
 // Function WBP_GadgetCustom_Sub_TypeIcon.WBP_GadgetCustom_Sub_TypeIcon_C.SetupAsUnpurchased
 // 0x00D0 (0x00D0 - 0x0000)
@@ -136,12 +112,7 @@ public:
 	struct FGadgetData                            CallFunc_GetGadgetData_OutGadgetData;              // 0x0008(0x00C0)()
 	bool                                          CallFunc_GetGadgetData_ReturnValue;                // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_TypeIcon_C_SetupAsUnpurchased) == 0x000008, "Wrong alignment on WBP_GadgetCustom_Sub_TypeIcon_C_SetupAsUnpurchased");
-static_assert(sizeof(WBP_GadgetCustom_Sub_TypeIcon_C_SetupAsUnpurchased) == 0x0000D0, "Wrong size on WBP_GadgetCustom_Sub_TypeIcon_C_SetupAsUnpurchased");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeIcon_C_SetupAsUnpurchased, InGadgetId) == 0x000000, "Member 'WBP_GadgetCustom_Sub_TypeIcon_C_SetupAsUnpurchased::InGadgetId' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeIcon_C_SetupAsUnpurchased, bCanPurchase) == 0x000001, "Member 'WBP_GadgetCustom_Sub_TypeIcon_C_SetupAsUnpurchased::bCanPurchase' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeIcon_C_SetupAsUnpurchased, CallFunc_GetGadgetData_OutGadgetData) == 0x000008, "Member 'WBP_GadgetCustom_Sub_TypeIcon_C_SetupAsUnpurchased::CallFunc_GetGadgetData_OutGadgetData' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeIcon_C_SetupAsUnpurchased, CallFunc_GetGadgetData_ReturnValue) == 0x0000C8, "Member 'WBP_GadgetCustom_Sub_TypeIcon_C_SetupAsUnpurchased::CallFunc_GetGadgetData_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_TypeIcon_C_SetupAsUnpurchased;
 
 // Function WBP_GadgetCustom_Sub_TypeIcon.WBP_GadgetCustom_Sub_TypeIcon_C.SetupByUIData
 // 0x0014 (0x0014 - 0x0000)
@@ -151,10 +122,7 @@ public:
 	struct FGadgetUIData2                         InUIData;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_TypeIcon_C_SetupByUIData) == 0x000004, "Wrong alignment on WBP_GadgetCustom_Sub_TypeIcon_C_SetupByUIData");
-static_assert(sizeof(WBP_GadgetCustom_Sub_TypeIcon_C_SetupByUIData) == 0x000014, "Wrong size on WBP_GadgetCustom_Sub_TypeIcon_C_SetupByUIData");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeIcon_C_SetupByUIData, InUIData) == 0x000000, "Member 'WBP_GadgetCustom_Sub_TypeIcon_C_SetupByUIData::InUIData' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeIcon_C_SetupByUIData, K2Node_SwitchEnum_CmpSuccess) == 0x000010, "Member 'WBP_GadgetCustom_Sub_TypeIcon_C_SetupByUIData::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_TypeIcon_C_SetupByUIData;
 
 }
 

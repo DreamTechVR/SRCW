@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UMG_structs.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -61,38 +61,7 @@ public:
 	class UWBP_GadgetInfo_Sub_Category_C*         K2Node_Select_Default_3;                           // 0x00A8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo) == 0x000008, "Wrong alignment on WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo");
-static_assert(sizeof(WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo) == 0x0000B8, "Wrong size on WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo");
-static_assert(offsetof(WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo, EntryPoint) == 0x000000, "Member 'WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo, Temp_byte_Variable) == 0x000004, "Member 'WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo, Temp_byte_Variable_1) == 0x000005, "Member 'WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo, K2Node_MakeArray_Array) == 0x000008, "Member 'WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo, CallFunc_Format_ReturnValue) == 0x000018, "Member 'WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo, Temp_int_Variable) == 0x000028, "Member 'WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo, K2Node_MakeArray_Array_1) == 0x000030, "Member 'WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo, Temp_bool_Variable) == 0x000040, "Member 'WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo, CallFunc_Format_ReturnValue_1) == 0x000048, "Member 'WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo, Temp_byte_Variable_2) == 0x000058, "Member 'WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo, Temp_byte_Variable_3) == 0x000059, "Member 'WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo, K2Node_CustomEvent_EventInfomation) == 0x00005A, "Member 'WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo::K2Node_CustomEvent_EventInfomation' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo, K2Node_CustomEvent_GadgetIds) == 0x000060, "Member 'WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo::K2Node_CustomEvent_GadgetIds' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo, CallFunc_Array_IsEmpty_ReturnValue) == 0x000070, "Member 'WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo::CallFunc_Array_IsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo, K2Node_Select_Default) == 0x000071, "Member 'WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo, Temp_byte_Variable_4) == 0x000072, "Member 'WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo, CallFunc_IsListOver_IsOver) == 0x000073, "Member 'WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo::CallFunc_IsListOver_IsOver' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo, CallFunc_IsListOver_IsOver_1) == 0x000074, "Member 'WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo::CallFunc_IsListOver_IsOver_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo, Temp_bool_Variable_1) == 0x000075, "Member 'WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo, CallFunc_IsListOver_IsOver_2) == 0x000076, "Member 'WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo::CallFunc_IsListOver_IsOver_2' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo, CallFunc_BooleanOR_ReturnValue) == 0x000077, "Member 'WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo, K2Node_Event_IsDesignTime) == 0x000078, "Member 'WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo, CallFunc_BooleanOR_ReturnValue_1) == 0x000079, "Member 'WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo, K2Node_CustomEvent_TextIndex) == 0x00007C, "Member 'WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo::K2Node_CustomEvent_TextIndex' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo, K2Node_Select_Default_1) == 0x000080, "Member 'WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo, K2Node_Select_Default_2) == 0x000088, "Member 'WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo, CallFunc_TextIsEmpty_ReturnValue) == 0x000098, "Member 'WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo, Temp_object_Variable) == 0x0000A0, "Member 'WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo, K2Node_Select_Default_3) == 0x0000A8, "Member 'WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo, CallFunc_IsValid_ReturnValue) == 0x0000B0, "Member 'WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetInfo_C_ExecuteUbergraph_WBP_GadgetInfo;
 
 // Function WBP_GadgetInfo.WBP_GadgetInfo_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -101,9 +70,7 @@ struct WBP_GadgetInfo_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetInfo_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_GadgetInfo_C_PreConstruct");
-static_assert(sizeof(WBP_GadgetInfo_C_PreConstruct) == 0x000001, "Wrong size on WBP_GadgetInfo_C_PreConstruct");
-static_assert(offsetof(WBP_GadgetInfo_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_GadgetInfo_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetInfo_C_PreConstruct;
 
 // Function WBP_GadgetInfo.WBP_GadgetInfo_C.SetDetailText
 // 0x0004 (0x0004 - 0x0000)
@@ -112,9 +79,7 @@ struct WBP_GadgetInfo_C_SetDetailText final
 public:
 	int32                                         TextIndex;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetInfo_C_SetDetailText) == 0x000004, "Wrong alignment on WBP_GadgetInfo_C_SetDetailText");
-static_assert(sizeof(WBP_GadgetInfo_C_SetDetailText) == 0x000004, "Wrong size on WBP_GadgetInfo_C_SetDetailText");
-static_assert(offsetof(WBP_GadgetInfo_C_SetDetailText, TextIndex) == 0x000000, "Member 'WBP_GadgetInfo_C_SetDetailText::TextIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetInfo_C_SetDetailText;
 
 // Function WBP_GadgetInfo.WBP_GadgetInfo_C.SetGudgetInfo
 // 0x0018 (0x0018 - 0x0000)
@@ -125,10 +90,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<int32>                                 GadgetIds;                                         // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_GadgetInfo_C_SetGudgetInfo) == 0x000008, "Wrong alignment on WBP_GadgetInfo_C_SetGudgetInfo");
-static_assert(sizeof(WBP_GadgetInfo_C_SetGudgetInfo) == 0x000018, "Wrong size on WBP_GadgetInfo_C_SetGudgetInfo");
-static_assert(offsetof(WBP_GadgetInfo_C_SetGudgetInfo, EventInfomation) == 0x000000, "Member 'WBP_GadgetInfo_C_SetGudgetInfo::EventInfomation' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_C_SetGudgetInfo, GadgetIds) == 0x000008, "Member 'WBP_GadgetInfo_C_SetGudgetInfo::GadgetIds' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetInfo_C_SetGudgetInfo;
 
 }
 

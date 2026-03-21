@@ -23,15 +23,18 @@ class ABP_ItemRocketPunchObject_C final : public AItemRocketPunchObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ItemRocketPunchObject_C">();
+		BP_STATIC_CLASS_IMPL("BP_ItemRocketPunchObject_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ItemRocketPunchObject_C")
 	}
 	static class ABP_ItemRocketPunchObject_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ItemRocketPunchObject_C>();
 	}
 };
-static_assert(alignof(ABP_ItemRocketPunchObject_C) == 0x000010, "Wrong alignment on ABP_ItemRocketPunchObject_C");
-static_assert(sizeof(ABP_ItemRocketPunchObject_C) == 0x000890, "Wrong size on ABP_ItemRocketPunchObject_C");
+DUMPER7_ASSERTS_ABP_ItemRocketPunchObject_C;
 
 }
 

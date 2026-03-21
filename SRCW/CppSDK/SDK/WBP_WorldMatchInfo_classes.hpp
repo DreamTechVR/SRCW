@@ -52,33 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_WorldMatchInfo_C">();
+		BP_STATIC_CLASS_IMPL("WBP_WorldMatchInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_WorldMatchInfo_C")
 	}
 	static class UWBP_WorldMatchInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_WorldMatchInfo_C>();
 	}
 };
-static_assert(alignof(UWBP_WorldMatchInfo_C) == 0x000008, "Wrong alignment on UWBP_WorldMatchInfo_C");
-static_assert(sizeof(UWBP_WorldMatchInfo_C) == 0x000370, "Wrong size on UWBP_WorldMatchInfo_C");
-static_assert(offsetof(UWBP_WorldMatchInfo_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_WorldMatchInfo_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_WorldMatchInfo_C, Bar_Rank) == 0x0002E8, "Member 'UWBP_WorldMatchInfo_C::Bar_Rank' has a wrong offset!");
-static_assert(offsetof(UWBP_WorldMatchInfo_C, base) == 0x0002F0, "Member 'UWBP_WorldMatchInfo_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_WorldMatchInfo_C, BlueBase) == 0x0002F8, "Member 'UWBP_WorldMatchInfo_C::BlueBase' has a wrong offset!");
-static_assert(offsetof(UWBP_WorldMatchInfo_C, Overlay_0) == 0x000300, "Member 'UWBP_WorldMatchInfo_C::Overlay_0' has a wrong offset!");
-static_assert(offsetof(UWBP_WorldMatchInfo_C, TXT_Next) == 0x000308, "Member 'UWBP_WorldMatchInfo_C::TXT_Next' has a wrong offset!");
-static_assert(offsetof(UWBP_WorldMatchInfo_C, TXT_Num) == 0x000310, "Member 'UWBP_WorldMatchInfo_C::TXT_Num' has a wrong offset!");
-static_assert(offsetof(UWBP_WorldMatchInfo_C, TXT_Rating) == 0x000318, "Member 'UWBP_WorldMatchInfo_C::TXT_Rating' has a wrong offset!");
-static_assert(offsetof(UWBP_WorldMatchInfo_C, TXT_Title) == 0x000320, "Member 'UWBP_WorldMatchInfo_C::TXT_Title' has a wrong offset!");
-static_assert(offsetof(UWBP_WorldMatchInfo_C, UVScroll_01) == 0x000328, "Member 'UWBP_WorldMatchInfo_C::UVScroll_01' has a wrong offset!");
-static_assert(offsetof(UWBP_WorldMatchInfo_C, UVScroll_02) == 0x000330, "Member 'UWBP_WorldMatchInfo_C::UVScroll_02' has a wrong offset!");
-static_assert(offsetof(UWBP_WorldMatchInfo_C, UVScroll_03) == 0x000338, "Member 'UWBP_WorldMatchInfo_C::UVScroll_03' has a wrong offset!");
-static_assert(offsetof(UWBP_WorldMatchInfo_C, UVScroll_04) == 0x000340, "Member 'UWBP_WorldMatchInfo_C::UVScroll_04' has a wrong offset!");
-static_assert(offsetof(UWBP_WorldMatchInfo_C, WBP_CMN_Sub_RankNum) == 0x000348, "Member 'UWBP_WorldMatchInfo_C::WBP_CMN_Sub_RankNum' has a wrong offset!");
-static_assert(offsetof(UWBP_WorldMatchInfo_C, WBP_Popup_Sub_Btn_Standard) == 0x000350, "Member 'UWBP_WorldMatchInfo_C::WBP_Popup_Sub_Btn_Standard' has a wrong offset!");
-static_assert(offsetof(UWBP_WorldMatchInfo_C, WBP_ResultRate_Sub_RankIcon) == 0x000358, "Member 'UWBP_WorldMatchInfo_C::WBP_ResultRate_Sub_RankIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_WorldMatchInfo_C, WhiteBase) == 0x000360, "Member 'UWBP_WorldMatchInfo_C::WhiteBase' has a wrong offset!");
-static_assert(offsetof(UWBP_WorldMatchInfo_C, WorldMatchInfo) == 0x000368, "Member 'UWBP_WorldMatchInfo_C::WorldMatchInfo' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_WorldMatchInfo_C;
 
 }
 

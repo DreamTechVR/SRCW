@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -52,30 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_TimeTrial_Sub_BtnPlay_Offline_C">();
+		BP_STATIC_CLASS_IMPL("WBP_TimeTrial_Sub_BtnPlay_Offline_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_TimeTrial_Sub_BtnPlay_Offline_C")
 	}
 	static class UWBP_TimeTrial_Sub_BtnPlay_Offline_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_TimeTrial_Sub_BtnPlay_Offline_C>();
 	}
 };
-static_assert(alignof(UWBP_TimeTrial_Sub_BtnPlay_Offline_C) == 0x000008, "Wrong alignment on UWBP_TimeTrial_Sub_BtnPlay_Offline_C");
-static_assert(sizeof(UWBP_TimeTrial_Sub_BtnPlay_Offline_C) == 0x000560, "Wrong size on UWBP_TimeTrial_Sub_BtnPlay_Offline_C");
-static_assert(offsetof(UWBP_TimeTrial_Sub_BtnPlay_Offline_C, UberGraphFrame) == 0x0004E8, "Member 'UWBP_TimeTrial_Sub_BtnPlay_Offline_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_BtnPlay_Offline_C, Btn_Active_Out) == 0x0004F0, "Member 'UWBP_TimeTrial_Sub_BtnPlay_Offline_C::Btn_Active_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_BtnPlay_Offline_C, Btn_NonActive_Loop) == 0x0004F8, "Member 'UWBP_TimeTrial_Sub_BtnPlay_Offline_C::Btn_NonActive_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_BtnPlay_Offline_C, Arrow_Left_02) == 0x000500, "Member 'UWBP_TimeTrial_Sub_BtnPlay_Offline_C::Arrow_Left_02' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_BtnPlay_Offline_C, Arrow_Right_02) == 0x000508, "Member 'UWBP_TimeTrial_Sub_BtnPlay_Offline_C::Arrow_Right_02' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_BtnPlay_Offline_C, Corsor) == 0x000510, "Member 'UWBP_TimeTrial_Sub_BtnPlay_Offline_C::Corsor' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_BtnPlay_Offline_C, DMY_Charactor) == 0x000518, "Member 'UWBP_TimeTrial_Sub_BtnPlay_Offline_C::DMY_Charactor' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_BtnPlay_Offline_C, DMY_Image_IconRank) == 0x000520, "Member 'UWBP_TimeTrial_Sub_BtnPlay_Offline_C::DMY_Image_IconRank' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_BtnPlay_Offline_C, DMY_Machine) == 0x000528, "Member 'UWBP_TimeTrial_Sub_BtnPlay_Offline_C::DMY_Machine' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_BtnPlay_Offline_C, DSP_Ghost) == 0x000530, "Member 'UWBP_TimeTrial_Sub_BtnPlay_Offline_C::DSP_Ghost' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_BtnPlay_Offline_C, MouseInteraction) == 0x000538, "Member 'UWBP_TimeTrial_Sub_BtnPlay_Offline_C::MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_BtnPlay_Offline_C, RaceFlagWave) == 0x000540, "Member 'UWBP_TimeTrial_Sub_BtnPlay_Offline_C::RaceFlagWave' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_BtnPlay_Offline_C, TXT_BtnTitle) == 0x000548, "Member 'UWBP_TimeTrial_Sub_BtnPlay_Offline_C::TXT_BtnTitle' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_BtnPlay_Offline_C, TXT_Time) == 0x000550, "Member 'UWBP_TimeTrial_Sub_BtnPlay_Offline_C::TXT_Time' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_BtnPlay_Offline_C, TXT_TimeLabel) == 0x000558, "Member 'UWBP_TimeTrial_Sub_BtnPlay_Offline_C::TXT_TimeLabel' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_TimeTrial_Sub_BtnPlay_Offline_C;
 
 }
 

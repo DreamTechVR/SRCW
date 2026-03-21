@@ -21,9 +21,7 @@ struct WBP_MachineCustom_Sub_CurrentWindow_C_ExecuteUbergraph_WBP_MachineCustom_
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CurrentWindow_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CurrentWindow) == 0x000004, "Wrong alignment on WBP_MachineCustom_Sub_CurrentWindow_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CurrentWindow");
-static_assert(sizeof(WBP_MachineCustom_Sub_CurrentWindow_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CurrentWindow) == 0x000004, "Wrong size on WBP_MachineCustom_Sub_CurrentWindow_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CurrentWindow");
-static_assert(offsetof(WBP_MachineCustom_Sub_CurrentWindow_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CurrentWindow, EntryPoint) == 0x000000, "Member 'WBP_MachineCustom_Sub_CurrentWindow_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CurrentWindow::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CurrentWindow_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CurrentWindow;
 
 // Function WBP_MachineCustom_Sub_CurrentWindow.WBP_MachineCustom_Sub_CurrentWindow_C.PlayAnimIn
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct WBP_MachineCustom_Sub_CurrentWindow_C_PlayAnimIn final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CurrentWindow_C_PlayAnimIn) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CurrentWindow_C_PlayAnimIn");
-static_assert(sizeof(WBP_MachineCustom_Sub_CurrentWindow_C_PlayAnimIn) == 0x000008, "Wrong size on WBP_MachineCustom_Sub_CurrentWindow_C_PlayAnimIn");
-static_assert(offsetof(WBP_MachineCustom_Sub_CurrentWindow_C_PlayAnimIn, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_MachineCustom_Sub_CurrentWindow_C_PlayAnimIn::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CurrentWindow_C_PlayAnimIn;
 
 // Function WBP_MachineCustom_Sub_CurrentWindow.WBP_MachineCustom_Sub_CurrentWindow_C.PlayAnimLoop
 // 0x0008 (0x0008 - 0x0000)
@@ -43,9 +39,7 @@ struct WBP_MachineCustom_Sub_CurrentWindow_C_PlayAnimLoop final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CurrentWindow_C_PlayAnimLoop) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CurrentWindow_C_PlayAnimLoop");
-static_assert(sizeof(WBP_MachineCustom_Sub_CurrentWindow_C_PlayAnimLoop) == 0x000008, "Wrong size on WBP_MachineCustom_Sub_CurrentWindow_C_PlayAnimLoop");
-static_assert(offsetof(WBP_MachineCustom_Sub_CurrentWindow_C_PlayAnimLoop, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_MachineCustom_Sub_CurrentWindow_C_PlayAnimLoop::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CurrentWindow_C_PlayAnimLoop;
 
 // Function WBP_MachineCustom_Sub_CurrentWindow.WBP_MachineCustom_Sub_CurrentWindow_C.PlayAnimOut
 // 0x0008 (0x0008 - 0x0000)
@@ -54,9 +48,7 @@ struct WBP_MachineCustom_Sub_CurrentWindow_C_PlayAnimOut final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CurrentWindow_C_PlayAnimOut) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CurrentWindow_C_PlayAnimOut");
-static_assert(sizeof(WBP_MachineCustom_Sub_CurrentWindow_C_PlayAnimOut) == 0x000008, "Wrong size on WBP_MachineCustom_Sub_CurrentWindow_C_PlayAnimOut");
-static_assert(offsetof(WBP_MachineCustom_Sub_CurrentWindow_C_PlayAnimOut, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_MachineCustom_Sub_CurrentWindow_C_PlayAnimOut::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CurrentWindow_C_PlayAnimOut;
 
 }
 

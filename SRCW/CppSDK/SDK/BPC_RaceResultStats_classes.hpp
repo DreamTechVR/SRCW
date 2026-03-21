@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "UnionRun_structs.hpp"
+#include "UNION_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UNION_classes.hpp"
-#include "UnionRun_structs.hpp"
 
 
 namespace SDK
@@ -48,20 +48,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_RaceResultStats_C">();
+		BP_STATIC_CLASS_IMPL("BPC_RaceResultStats_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_RaceResultStats_C")
 	}
 	static class UBPC_RaceResultStats_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_RaceResultStats_C>();
 	}
 };
-static_assert(alignof(UBPC_RaceResultStats_C) == 0x000008, "Wrong alignment on UBPC_RaceResultStats_C");
-static_assert(sizeof(UBPC_RaceResultStats_C) == 0x000130, "Wrong size on UBPC_RaceResultStats_C");
-static_assert(offsetof(UBPC_RaceResultStats_C, UberGraphFrame) == 0x000108, "Member 'UBPC_RaceResultStats_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceResultStats_C, OwnerSeq) == 0x000110, "Member 'UBPC_RaceResultStats_C::OwnerSeq' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceResultStats_C, TimeTrialWinLoseWidget) == 0x000118, "Member 'UBPC_RaceResultStats_C::TimeTrialWinLoseWidget' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceResultStats_C, TimeTrialWinLoseEnum) == 0x000120, "Member 'UBPC_RaceResultStats_C::TimeTrialWinLoseEnum' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceResultStats_C, UnloadEventHandle) == 0x000128, "Member 'UBPC_RaceResultStats_C::UnloadEventHandle' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_RaceResultStats_C;
 
 }
 

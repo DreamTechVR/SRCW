@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "UMG_classes.hpp"
 #include "UNION_structs.hpp"
+#include "Engine_structs.hpp"
+#include "UMG_classes.hpp"
 
 
 namespace SDK
@@ -47,29 +47,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Sub_Friend_LobbyNoticePlate_Guide_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Sub_Friend_LobbyNoticePlate_Guide_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Sub_Friend_LobbyNoticePlate_Guide_C")
 	}
 	static class UWBP_Sub_Friend_LobbyNoticePlate_Guide_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Sub_Friend_LobbyNoticePlate_Guide_C>();
 	}
 };
-static_assert(alignof(UWBP_Sub_Friend_LobbyNoticePlate_Guide_C) == 0x000008, "Wrong alignment on UWBP_Sub_Friend_LobbyNoticePlate_Guide_C");
-static_assert(sizeof(UWBP_Sub_Friend_LobbyNoticePlate_Guide_C) == 0x000388, "Wrong size on UWBP_Sub_Friend_LobbyNoticePlate_Guide_C");
-static_assert(offsetof(UWBP_Sub_Friend_LobbyNoticePlate_Guide_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Sub_Friend_LobbyNoticePlate_Guide_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Sub_Friend_LobbyNoticePlate_Guide_C, Animation_Loop) == 0x0002E8, "Member 'UWBP_Sub_Friend_LobbyNoticePlate_Guide_C::Animation_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Sub_Friend_LobbyNoticePlate_Guide_C, Animation_In) == 0x0002F0, "Member 'UWBP_Sub_Friend_LobbyNoticePlate_Guide_C::Animation_In' has a wrong offset!");
-static_assert(offsetof(UWBP_Sub_Friend_LobbyNoticePlate_Guide_C, base) == 0x0002F8, "Member 'UWBP_Sub_Friend_LobbyNoticePlate_Guide_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_Sub_Friend_LobbyNoticePlate_Guide_C, DSP_NG_Mark) == 0x000300, "Member 'UWBP_Sub_Friend_LobbyNoticePlate_Guide_C::DSP_NG_Mark' has a wrong offset!");
-static_assert(offsetof(UWBP_Sub_Friend_LobbyNoticePlate_Guide_C, Light_01) == 0x000308, "Member 'UWBP_Sub_Friend_LobbyNoticePlate_Guide_C::Light_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Sub_Friend_LobbyNoticePlate_Guide_C, LobbyInvitation) == 0x000310, "Member 'UWBP_Sub_Friend_LobbyNoticePlate_Guide_C::LobbyInvitation' has a wrong offset!");
-static_assert(offsetof(UWBP_Sub_Friend_LobbyNoticePlate_Guide_C, TXT_Guidance) == 0x000318, "Member 'UWBP_Sub_Friend_LobbyNoticePlate_Guide_C::TXT_Guidance' has a wrong offset!");
-static_assert(offsetof(UWBP_Sub_Friend_LobbyNoticePlate_Guide_C, NotAvailableCheckFriendVB) == 0x000320, "Member 'UWBP_Sub_Friend_LobbyNoticePlate_Guide_C::NotAvailableCheckFriendVB' has a wrong offset!");
-static_assert(offsetof(UWBP_Sub_Friend_LobbyNoticePlate_Guide_C, PlatformNotAvailableVB) == 0x000330, "Member 'UWBP_Sub_Friend_LobbyNoticePlate_Guide_C::PlatformNotAvailableVB' has a wrong offset!");
-static_assert(offsetof(UWBP_Sub_Friend_LobbyNoticePlate_Guide_C, StreamingInstallNotAvailableVB) == 0x000340, "Member 'UWBP_Sub_Friend_LobbyNoticePlate_Guide_C::StreamingInstallNotAvailableVB' has a wrong offset!");
-static_assert(offsetof(UWBP_Sub_Friend_LobbyNoticePlate_Guide_C, OnlineNotAvailableVB) == 0x000350, "Member 'UWBP_Sub_Friend_LobbyNoticePlate_Guide_C::OnlineNotAvailableVB' has a wrong offset!");
-static_assert(offsetof(UWBP_Sub_Friend_LobbyNoticePlate_Guide_C, NotAvailableColor) == 0x000360, "Member 'UWBP_Sub_Friend_LobbyNoticePlate_Guide_C::NotAvailableColor' has a wrong offset!");
-static_assert(offsetof(UWBP_Sub_Friend_LobbyNoticePlate_Guide_C, PlatformNotAvailableColor) == 0x000374, "Member 'UWBP_Sub_Friend_LobbyNoticePlate_Guide_C::PlatformNotAvailableColor' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Sub_Friend_LobbyNoticePlate_Guide_C;
 
 }
 

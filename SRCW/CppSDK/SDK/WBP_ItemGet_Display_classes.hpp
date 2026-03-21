@@ -23,15 +23,18 @@ class UWBP_ItemGet_Display_C final : public URewardGetDisplay
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ItemGet_Display_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ItemGet_Display_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ItemGet_Display_C")
 	}
 	static class UWBP_ItemGet_Display_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ItemGet_Display_C>();
 	}
 };
-static_assert(alignof(UWBP_ItemGet_Display_C) == 0x000008, "Wrong alignment on UWBP_ItemGet_Display_C");
-static_assert(sizeof(UWBP_ItemGet_Display_C) == 0x000350, "Wrong size on UWBP_ItemGet_Display_C");
+DUMPER7_ASSERTS_UWBP_ItemGet_Display_C;
 
 }
 

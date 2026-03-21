@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -77,33 +77,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_PartyRace_Sub_Option_SettingBtn_C">();
+		BP_STATIC_CLASS_IMPL("WBP_PartyRace_Sub_Option_SettingBtn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_PartyRace_Sub_Option_SettingBtn_C")
 	}
 	static class UWBP_PartyRace_Sub_Option_SettingBtn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_PartyRace_Sub_Option_SettingBtn_C>();
 	}
 };
-static_assert(alignof(UWBP_PartyRace_Sub_Option_SettingBtn_C) == 0x000008, "Wrong alignment on UWBP_PartyRace_Sub_Option_SettingBtn_C");
-static_assert(sizeof(UWBP_PartyRace_Sub_Option_SettingBtn_C) == 0x000570, "Wrong size on UWBP_PartyRace_Sub_Option_SettingBtn_C");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_SettingBtn_C, UberGraphFrame) == 0x0004D0, "Member 'UWBP_PartyRace_Sub_Option_SettingBtn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_SettingBtn_C, Btn_Active) == 0x0004D8, "Member 'UWBP_PartyRace_Sub_Option_SettingBtn_C::Btn_Active' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_SettingBtn_C, Btn_Arrow_Left) == 0x0004E0, "Member 'UWBP_PartyRace_Sub_Option_SettingBtn_C::Btn_Arrow_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_SettingBtn_C, Btn_Arrow_Right) == 0x0004E8, "Member 'UWBP_PartyRace_Sub_Option_SettingBtn_C::Btn_Arrow_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_SettingBtn_C, Btn_Cursor) == 0x0004F0, "Member 'UWBP_PartyRace_Sub_Option_SettingBtn_C::Btn_Cursor' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_SettingBtn_C, Btn_Ignore) == 0x0004F8, "Member 'UWBP_PartyRace_Sub_Option_SettingBtn_C::Btn_Ignore' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_SettingBtn_C, Btn_NonActive) == 0x000500, "Member 'UWBP_PartyRace_Sub_Option_SettingBtn_C::Btn_NonActive' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_SettingBtn_C, Btn_Select) == 0x000508, "Member 'UWBP_PartyRace_Sub_Option_SettingBtn_C::Btn_Select' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_SettingBtn_C, Delete_PAT_BtnBase) == 0x000510, "Member 'UWBP_PartyRace_Sub_Option_SettingBtn_C::Delete_PAT_BtnBase' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_SettingBtn_C, DSP_Set_Icon) == 0x000518, "Member 'UWBP_PartyRace_Sub_Option_SettingBtn_C::DSP_Set_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_SettingBtn_C, RaceFlagWave) == 0x000520, "Member 'UWBP_PartyRace_Sub_Option_SettingBtn_C::RaceFlagWave' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_SettingBtn_C, UnionUIButton_49) == 0x000528, "Member 'UWBP_PartyRace_Sub_Option_SettingBtn_C::UnionUIButton_49' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_SettingBtn_C, WBP_FontScroll_OptionBtn) == 0x000530, "Member 'UWBP_PartyRace_Sub_Option_SettingBtn_C::WBP_FontScroll_OptionBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_SettingBtn_C, WidgetSwitcher_Btn) == 0x000538, "Member 'UWBP_PartyRace_Sub_Option_SettingBtn_C::WidgetSwitcher_Btn' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_SettingBtn_C, OnCancelKeyDownEvent) == 0x000540, "Member 'UWBP_PartyRace_Sub_Option_SettingBtn_C::OnCancelKeyDownEvent' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_SettingBtn_C, OnOkKeyDownEvent) == 0x000550, "Member 'UWBP_PartyRace_Sub_Option_SettingBtn_C::OnOkKeyDownEvent' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_SettingBtn_C, IsSelected) == 0x000560, "Member 'UWBP_PartyRace_Sub_Option_SettingBtn_C::IsSelected' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_SettingBtn_C, Parent) == 0x000568, "Member 'UWBP_PartyRace_Sub_Option_SettingBtn_C::Parent' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_PartyRace_Sub_Option_SettingBtn_C;
 
 }
 

@@ -35,19 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DELETE_WBP_PauseMenu_Sub_Header_C">();
+		BP_STATIC_CLASS_IMPL("DELETE_WBP_PauseMenu_Sub_Header_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DELETE_WBP_PauseMenu_Sub_Header_C")
 	}
 	static class UDELETE_WBP_PauseMenu_Sub_Header_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDELETE_WBP_PauseMenu_Sub_Header_C>();
 	}
 };
-static_assert(alignof(UDELETE_WBP_PauseMenu_Sub_Header_C) == 0x000008, "Wrong alignment on UDELETE_WBP_PauseMenu_Sub_Header_C");
-static_assert(sizeof(UDELETE_WBP_PauseMenu_Sub_Header_C) == 0x000300, "Wrong size on UDELETE_WBP_PauseMenu_Sub_Header_C");
-static_assert(offsetof(UDELETE_WBP_PauseMenu_Sub_Header_C, UberGraphFrame) == 0x0002E0, "Member 'UDELETE_WBP_PauseMenu_Sub_Header_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UDELETE_WBP_PauseMenu_Sub_Header_C, base) == 0x0002E8, "Member 'UDELETE_WBP_PauseMenu_Sub_Header_C::base' has a wrong offset!");
-static_assert(offsetof(UDELETE_WBP_PauseMenu_Sub_Header_C, TXT_Pause) == 0x0002F0, "Member 'UDELETE_WBP_PauseMenu_Sub_Header_C::TXT_Pause' has a wrong offset!");
-static_assert(offsetof(UDELETE_WBP_PauseMenu_Sub_Header_C, WBP_CMN_PlayerNumber) == 0x0002F8, "Member 'UDELETE_WBP_PauseMenu_Sub_Header_C::WBP_CMN_PlayerNumber' has a wrong offset!");
+DUMPER7_ASSERTS_UDELETE_WBP_PauseMenu_Sub_Header_C;
 
 }
 

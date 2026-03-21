@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABP_HoldWispDrill_C">();
+		BP_STATIC_CLASS_IMPL("ABP_HoldWispDrill_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABP_HoldWispDrill_C")
 	}
 	static class UABP_HoldWispDrill_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UABP_HoldWispDrill_C>();
 	}
 };
-static_assert(alignof(UABP_HoldWispDrill_C) == 0x000010, "Wrong alignment on UABP_HoldWispDrill_C");
-static_assert(sizeof(UABP_HoldWispDrill_C) == 0x001130, "Wrong size on UABP_HoldWispDrill_C");
+DUMPER7_ASSERTS_UABP_HoldWispDrill_C;
 
 }
 

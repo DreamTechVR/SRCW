@@ -65,44 +65,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_PlayerDetail_Sub_Info_Machine_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_PlayerDetail_Sub_Info_Machine_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_PlayerDetail_Sub_Info_Machine_C")
 	}
 	static class UWBP_CMN_PlayerDetail_Sub_Info_Machine_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_PlayerDetail_Sub_Info_Machine_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_PlayerDetail_Sub_Info_Machine_C) == 0x000008, "Wrong alignment on UWBP_CMN_PlayerDetail_Sub_Info_Machine_C");
-static_assert(sizeof(UWBP_CMN_PlayerDetail_Sub_Info_Machine_C) == 0x0003C8, "Wrong size on UWBP_CMN_PlayerDetail_Sub_Info_Machine_C");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Machine_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Machine_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Machine_C, Base_BG_01) == 0x0002E8, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Machine_C::Base_BG_01' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Machine_C, Base_BG_02) == 0x0002F0, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Machine_C::Base_BG_02' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Machine_C, Base_BG_03) == 0x0002F8, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Machine_C::Base_BG_03' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Machine_C, Base_BG_04) == 0x000300, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Machine_C::Base_BG_04' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Machine_C, Base_Chara) == 0x000308, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Machine_C::Base_Chara' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Machine_C, Base_Front) == 0x000310, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Machine_C::Base_Front' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Machine_C, Base_rear) == 0x000318, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Machine_C::Base_rear' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Machine_C, Base_Wheel) == 0x000320, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Machine_C::Base_Wheel' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Machine_C, Base_Wheel_Off) == 0x000328, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Machine_C::Base_Wheel_Off' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Machine_C, DMY_CharaFaceIcon) == 0x000330, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Machine_C::DMY_CharaFaceIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Machine_C, DMY_PartsIcon_Front) == 0x000338, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Machine_C::DMY_PartsIcon_Front' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Machine_C, DMY_PartsIcon_Rear) == 0x000340, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Machine_C::DMY_PartsIcon_Rear' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Machine_C, DMY_PartsIcon_Wheel) == 0x000348, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Machine_C::DMY_PartsIcon_Wheel' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Machine_C, NameLine_Wheel_Off) == 0x000350, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Machine_C::NameLine_Wheel_Off' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Machine_C, PAT_Icon_Type_Chara) == 0x000358, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Machine_C::PAT_Icon_Type_Chara' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Machine_C, PAT_Icon_Type_Front) == 0x000360, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Machine_C::PAT_Icon_Type_Front' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Machine_C, PAT_Icon_Type_Rear) == 0x000368, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Machine_C::PAT_Icon_Type_Rear' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Machine_C, PAT_Icon_Type_Wheel) == 0x000370, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Machine_C::PAT_Icon_Type_Wheel' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Machine_C, TXT_Name_Chara) == 0x000378, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Machine_C::TXT_Name_Chara' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Machine_C, TXT_Name_Front) == 0x000380, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Machine_C::TXT_Name_Front' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Machine_C, TXT_Name_Rear) == 0x000388, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Machine_C::TXT_Name_Rear' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Machine_C, TXT_Name_Wheel) == 0x000390, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Machine_C::TXT_Name_Wheel' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Machine_C, WBP_Window_Sub_Parameter_01) == 0x000398, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Machine_C::WBP_Window_Sub_Parameter_01' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Machine_C, WBP_Window_Sub_Parameter_02) == 0x0003A0, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Machine_C::WBP_Window_Sub_Parameter_02' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Machine_C, WBP_Window_Sub_Parameter_03) == 0x0003A8, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Machine_C::WBP_Window_Sub_Parameter_03' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Machine_C, WBP_Window_Sub_Parameter_04) == 0x0003B0, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Machine_C::WBP_Window_Sub_Parameter_04' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Machine_C, WBP_Window_Sub_Parameter_05) == 0x0003B8, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Machine_C::WBP_Window_Sub_Parameter_05' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Machine_C, WS_Wheel) == 0x0003C0, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Machine_C::WS_Wheel' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_PlayerDetail_Sub_Info_Machine_C;
 
 }
 

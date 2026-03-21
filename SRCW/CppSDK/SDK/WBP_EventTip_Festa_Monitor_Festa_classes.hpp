@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -25,7 +25,7 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02E0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Zero2_In;                                          // 0x02E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Zero1_In;                                          // 0x02F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Zero0_In;                                          // 0x02F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Zero0_in;                                          // 0x02F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UImage*                                 BG;                                                // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 BG_Black;                                          // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 DashPanel;                                         // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -60,45 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_EventTip_Festa_Monitor_Festa_C">();
+		BP_STATIC_CLASS_IMPL("WBP_EventTip_Festa_Monitor_Festa_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_EventTip_Festa_Monitor_Festa_C")
 	}
 	static class UWBP_EventTip_Festa_Monitor_Festa_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_EventTip_Festa_Monitor_Festa_C>();
 	}
 };
-static_assert(alignof(UWBP_EventTip_Festa_Monitor_Festa_C) == 0x000008, "Wrong alignment on UWBP_EventTip_Festa_Monitor_Festa_C");
-static_assert(sizeof(UWBP_EventTip_Festa_Monitor_Festa_C) == 0x0003D0, "Wrong size on UWBP_EventTip_Festa_Monitor_Festa_C");
-static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, Zero2_In) == 0x0002E8, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::Zero2_In' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, Zero1_In) == 0x0002F0, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::Zero1_In' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, Zero0_In) == 0x0002F8, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::Zero0_In' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, BG) == 0x000300, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::BG' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, BG_Black) == 0x000308, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::BG_Black' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, DashPanel) == 0x000310, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::DashPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, DashPanel_1) == 0x000318, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::DashPanel_1' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, DMY_FestaInfo) == 0x000320, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::DMY_FestaInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, Eff) == 0x000328, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::Eff' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, Eff_00) == 0x000330, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::Eff_00' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, Eff_02) == 0x000338, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::Eff_02' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, Eff_04) == 0x000340, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::Eff_04' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, Eff_06) == 0x000348, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::Eff_06' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, Eff_07) == 0x000350, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::Eff_07' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, Eff_08) == 0x000358, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::Eff_08' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, Emblem) == 0x000360, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::Emblem' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, Image_Gradation) == 0x000368, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::Image_Gradation' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, JumpTrick) == 0x000370, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::JumpTrick' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, JumpTrick_1) == 0x000378, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::JumpTrick_1' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, Monitor_Tuning) == 0x000380, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::Monitor_Tuning' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, ringget) == 0x000388, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::ringget' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, ringget_1) == 0x000390, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::ringget_1' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, RocketPunch) == 0x000398, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::RocketPunch' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, RocketPunch_1) == 0x0003A0, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::RocketPunch_1' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, Title_Base) == 0x0003A8, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::Title_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, TouchDash) == 0x0003B0, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::TouchDash' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, TouchDash_1) == 0x0003B8, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::TouchDash_1' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, TXT_Title) == 0x0003C0, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::TXT_Title' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, WBP_GrandPrixTips_Monitor_StandBy) == 0x0003C8, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::WBP_GrandPrixTips_Monitor_StandBy' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_EventTip_Festa_Monitor_Festa_C;
 
 }
 

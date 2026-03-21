@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
+#include "UnionUI_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -78,30 +78,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GroupSelect_Sub_Table_Line_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GroupSelect_Sub_Table_Line_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GroupSelect_Sub_Table_Line_C")
 	}
 	static class UWBP_GroupSelect_Sub_Table_Line_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GroupSelect_Sub_Table_Line_C>();
 	}
 };
-static_assert(alignof(UWBP_GroupSelect_Sub_Table_Line_C) == 0x000008, "Wrong alignment on UWBP_GroupSelect_Sub_Table_Line_C");
-static_assert(sizeof(UWBP_GroupSelect_Sub_Table_Line_C) == 0x0005A0, "Wrong size on UWBP_GroupSelect_Sub_Table_Line_C");
-static_assert(offsetof(UWBP_GroupSelect_Sub_Table_Line_C, UberGraphFrame) == 0x000530, "Member 'UWBP_GroupSelect_Sub_Table_Line_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_Sub_Table_Line_C, DSP_Aroww_Bottom) == 0x000538, "Member 'UWBP_GroupSelect_Sub_Table_Line_C::DSP_Aroww_Bottom' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_Sub_Table_Line_C, DSP_Aroww_Left) == 0x000540, "Member 'UWBP_GroupSelect_Sub_Table_Line_C::DSP_Aroww_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_Sub_Table_Line_C, DSP_Aroww_Right) == 0x000548, "Member 'UWBP_GroupSelect_Sub_Table_Line_C::DSP_Aroww_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_Sub_Table_Line_C, DSP_Aroww_Top) == 0x000550, "Member 'UWBP_GroupSelect_Sub_Table_Line_C::DSP_Aroww_Top' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_Sub_Table_Line_C, DSP_Cursor) == 0x000558, "Member 'UWBP_GroupSelect_Sub_Table_Line_C::DSP_Cursor' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_Sub_Table_Line_C, MouseInteractionBottom) == 0x000560, "Member 'UWBP_GroupSelect_Sub_Table_Line_C::MouseInteractionBottom' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_Sub_Table_Line_C, MouseInteractionFocus) == 0x000568, "Member 'UWBP_GroupSelect_Sub_Table_Line_C::MouseInteractionFocus' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_Sub_Table_Line_C, MouseInteractionLeft) == 0x000570, "Member 'UWBP_GroupSelect_Sub_Table_Line_C::MouseInteractionLeft' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_Sub_Table_Line_C, MouseInteractionRight) == 0x000578, "Member 'UWBP_GroupSelect_Sub_Table_Line_C::MouseInteractionRight' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_Sub_Table_Line_C, MouseInteractionTop) == 0x000580, "Member 'UWBP_GroupSelect_Sub_Table_Line_C::MouseInteractionTop' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_Sub_Table_Line_C, WBP_GroupSelect_Sub_Table) == 0x000588, "Member 'UWBP_GroupSelect_Sub_Table_Line_C::WBP_GroupSelect_Sub_Table' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_Sub_Table_Line_C, Count) == 0x000590, "Member 'UWBP_GroupSelect_Sub_Table_Line_C::Count' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_Sub_Table_Line_C, bPadX_Pressed) == 0x000594, "Member 'UWBP_GroupSelect_Sub_Table_Line_C::bPadX_Pressed' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_Sub_Table_Line_C, GroupSelectParentWidget) == 0x000598, "Member 'UWBP_GroupSelect_Sub_Table_Line_C::GroupSelectParentWidget' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GroupSelect_Sub_Table_Line_C;
 
 }
 

@@ -27,17 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_FX_WarpRing_C">();
+		BP_STATIC_CLASS_IMPL("BP_FX_WarpRing_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_FX_WarpRing_C")
 	}
 	static class ABP_FX_WarpRing_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_FX_WarpRing_C>();
 	}
 };
-static_assert(alignof(ABP_FX_WarpRing_C) == 0x000008, "Wrong alignment on ABP_FX_WarpRing_C");
-static_assert(sizeof(ABP_FX_WarpRing_C) == 0x0002A0, "Wrong size on ABP_FX_WarpRing_C");
-static_assert(offsetof(ABP_FX_WarpRing_C, Ring_SM) == 0x000290, "Member 'ABP_FX_WarpRing_C::Ring_SM' has a wrong offset!");
-static_assert(offsetof(ABP_FX_WarpRing_C, Scene) == 0x000298, "Member 'ABP_FX_WarpRing_C::Scene' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_FX_WarpRing_C;
 
 }
 

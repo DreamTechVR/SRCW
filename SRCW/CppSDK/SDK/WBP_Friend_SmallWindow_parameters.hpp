@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "SlateCore_structs.hpp"
-#include "UMG_structs.hpp"
 #include "UnionUI_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK::Params
@@ -83,58 +83,7 @@ public:
 	bool                                          CallFunc_Array_Get_Item_6;                         // 0x0109(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EButtonFocusType                              K2Node_Select_Default;                             // 0x010A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow) == 0x000008, "Wrong alignment on WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow");
-static_assert(sizeof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow) == 0x000110, "Wrong size on WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, EntryPoint) == 0x000000, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, Temp_int_Array_Index_Variable) == 0x000004, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, Temp_int_Array_Index_Variable_1) == 0x000010, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, K2Node_CustomEvent_InButtonText_1) == 0x000018, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::K2Node_CustomEvent_InButtonText_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, K2Node_CustomEvent_bInButtonSelectable) == 0x000028, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::K2Node_CustomEvent_bInButtonSelectable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, CallFunc_CreateButtonsPanel_ReturnValue) == 0x000038, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::CallFunc_CreateButtonsPanel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, CallFunc_MakeLiteralBool_ReturnValue) == 0x000044, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::CallFunc_MakeLiteralBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, CallFunc_MakeLiteralInt_ReturnValue) == 0x000048, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, Temp_int_Loop_Counter_Variable_1) == 0x00004C, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, CallFunc_Add_IntInt_ReturnValue_1) == 0x000050, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, K2Node_CustomEvent_InButtonNum) == 0x000054, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::K2Node_CustomEvent_InButtonNum' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, K2Node_CustomEvent_InButtonText) == 0x000058, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::K2Node_CustomEvent_InButtonText' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, K2Node_MakeArray_Array) == 0x000068, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, CallFunc_Array_Get_Item) == 0x000078, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, CallFunc_Array_Length_ReturnValue_1) == 0x000088, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, CallFunc_Array_Length_ReturnValue_2) == 0x00008C, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, CallFunc_Less_IntInt_ReturnValue) == 0x000090, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, CallFunc_Array_IsNotEmpty_ReturnValue) == 0x000091, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::CallFunc_Array_IsNotEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, Temp_int_Array_Index_Variable_2) == 0x000094, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, CallFunc_Array_Get_Item_1) == 0x000098, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, CallFunc_Array_IsValidIndex_ReturnValue) == 0x0000A0, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, Temp_int_Loop_Counter_Variable_2) == 0x0000A4, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, CallFunc_Array_Get_Item_2) == 0x0000A8, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, CallFunc_Array_Length_ReturnValue_3) == 0x0000B0, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000B4, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, CallFunc_Add_IntInt_ReturnValue_2) == 0x0000B8, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, CallFunc_Array_IsNotEmpty_ReturnValue_1) == 0x0000BC, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::CallFunc_Array_IsNotEmpty_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, K2Node_CustomEvent_InButtonIndex) == 0x0000C0, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::K2Node_CustomEvent_InButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, Temp_int_Loop_Counter_Variable_3) == 0x0000C4, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::Temp_int_Loop_Counter_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, K2Node_CustomEvent_bInSelectable) == 0x0000C8, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::K2Node_CustomEvent_bInSelectable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, CallFunc_Array_Get_Item_3) == 0x0000D8, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, CallFunc_Array_Length_ReturnValue_4) == 0x0000DC, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::CallFunc_Array_Length_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, CallFunc_Array_IsNotEmpty_ReturnValue_2) == 0x0000E0, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::CallFunc_Array_IsNotEmpty_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, CallFunc_Less_IntInt_ReturnValue_2) == 0x0000E1, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, CallFunc_Less_IntInt_ReturnValue_3) == 0x0000E2, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, CallFunc_Add_IntInt_ReturnValue_3) == 0x0000E4, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, Temp_int_Array_Index_Variable_3) == 0x0000E8, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::Temp_int_Array_Index_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, CallFunc_Array_Get_Item_4) == 0x0000F0, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, CallFunc_Array_Get_Item_5) == 0x0000F8, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::CallFunc_Array_Get_Item_5' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, CallFunc_Array_Add_ReturnValue) == 0x000100, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, CallFunc_Array_IsValidIndex_ReturnValue_1) == 0x000104, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::CallFunc_Array_IsValidIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, CallFunc_Less_IntInt_ReturnValue_4) == 0x000105, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::CallFunc_Less_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, Temp_byte_Variable) == 0x000106, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, Temp_byte_Variable_1) == 0x000107, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, Temp_bool_Variable) == 0x000108, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, CallFunc_Array_Get_Item_6) == 0x000109, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::CallFunc_Array_Get_Item_6' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow, K2Node_Select_Default) == 0x00010A, "Member 'WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_SmallWindow_C_ExecuteUbergraph_WBP_Friend_SmallWindow;
 
 // Function WBP_Friend_SmallWindow.WBP_Friend_SmallWindow_C.InitializeButtons
 // 0x0004 (0x0004 - 0x0000)
@@ -143,9 +92,7 @@ struct WBP_Friend_SmallWindow_C_InitializeButtons final
 public:
 	int32                                         InButtonNum;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_SmallWindow_C_InitializeButtons) == 0x000004, "Wrong alignment on WBP_Friend_SmallWindow_C_InitializeButtons");
-static_assert(sizeof(WBP_Friend_SmallWindow_C_InitializeButtons) == 0x000004, "Wrong size on WBP_Friend_SmallWindow_C_InitializeButtons");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_InitializeButtons, InButtonNum) == 0x000000, "Member 'WBP_Friend_SmallWindow_C_InitializeButtons::InButtonNum' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_SmallWindow_C_InitializeButtons;
 
 // Function WBP_Friend_SmallWindow.WBP_Friend_SmallWindow_C.OnFocusReceived
 // 0x01C8 (0x01C8 - 0x0000)
@@ -161,15 +108,7 @@ public:
 	class UWBP_Friend_Sub_Line_Btn_C*             CallFunc_Array_Get_Item;                           // 0x01B8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_SmallWindow_C_OnFocusReceived) == 0x000008, "Wrong alignment on WBP_Friend_SmallWindow_C_OnFocusReceived");
-static_assert(sizeof(WBP_Friend_SmallWindow_C_OnFocusReceived) == 0x0001C8, "Wrong size on WBP_Friend_SmallWindow_C_OnFocusReceived");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'WBP_Friend_SmallWindow_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'WBP_Friend_SmallWindow_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'WBP_Friend_SmallWindow_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_OnFocusReceived, K2Node_MakeStruct_EventReply) == 0x0000F8, "Member 'WBP_Friend_SmallWindow_C_OnFocusReceived::K2Node_MakeStruct_EventReply' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_OnFocusReceived, CallFunc_Array_IsNotEmpty_ReturnValue) == 0x0001B0, "Member 'WBP_Friend_SmallWindow_C_OnFocusReceived::CallFunc_Array_IsNotEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_OnFocusReceived, CallFunc_Array_Get_Item) == 0x0001B8, "Member 'WBP_Friend_SmallWindow_C_OnFocusReceived::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_OnFocusReceived, CallFunc_Array_IsValidIndex_ReturnValue) == 0x0001C0, "Member 'WBP_Friend_SmallWindow_C_OnFocusReceived::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_SmallWindow_C_OnFocusReceived;
 
 // Function WBP_Friend_SmallWindow.WBP_Friend_SmallWindow_C.Set Button Navigation
 // 0x0058 (0x0058 - 0x0000)
@@ -200,28 +139,7 @@ public:
 	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Percent_IntInt_ReturnValue_1;             // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_SmallWindow_C_Set_Button_Navigation) == 0x000008, "Wrong alignment on WBP_Friend_SmallWindow_C_Set_Button_Navigation");
-static_assert(sizeof(WBP_Friend_SmallWindow_C_Set_Button_Navigation) == 0x000058, "Wrong size on WBP_Friend_SmallWindow_C_Set_Button_Navigation");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_Set_Button_Navigation, LocalPrevIndex) == 0x000000, "Member 'WBP_Friend_SmallWindow_C_Set_Button_Navigation::LocalPrevIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_Set_Button_Navigation, LocalNextIndex) == 0x000004, "Member 'WBP_Friend_SmallWindow_C_Set_Button_Navigation::LocalNextIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_Set_Button_Navigation, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'WBP_Friend_SmallWindow_C_Set_Button_Navigation::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_Set_Button_Navigation, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_Friend_SmallWindow_C_Set_Button_Navigation::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_Set_Button_Navigation, Temp_int_Array_Index_Variable) == 0x000010, "Member 'WBP_Friend_SmallWindow_C_Set_Button_Navigation::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_Set_Button_Navigation, CallFunc_Subtract_IntInt_ReturnValue) == 0x000014, "Member 'WBP_Friend_SmallWindow_C_Set_Button_Navigation::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_Set_Button_Navigation, CallFunc_Array_Get_Item) == 0x000018, "Member 'WBP_Friend_SmallWindow_C_Set_Button_Navigation::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_Set_Button_Navigation, CallFunc_Add_IntInt_ReturnValue_1) == 0x000020, "Member 'WBP_Friend_SmallWindow_C_Set_Button_Navigation::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_Set_Button_Navigation, Temp_bool_True_if_break_was_hit_Variable) == 0x000024, "Member 'WBP_Friend_SmallWindow_C_Set_Button_Navigation::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_Set_Button_Navigation, CallFunc_Not_PreBool_ReturnValue) == 0x000025, "Member 'WBP_Friend_SmallWindow_C_Set_Button_Navigation::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_Set_Button_Navigation, CallFunc_Array_Get_Item_1) == 0x000028, "Member 'WBP_Friend_SmallWindow_C_Set_Button_Navigation::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_Set_Button_Navigation, CallFunc_Array_Get_Item_2) == 0x000030, "Member 'WBP_Friend_SmallWindow_C_Set_Button_Navigation::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_Set_Button_Navigation, CallFunc_Array_Length_ReturnValue) == 0x000038, "Member 'WBP_Friend_SmallWindow_C_Set_Button_Navigation::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_Set_Button_Navigation, CallFunc_Less_IntInt_ReturnValue) == 0x00003C, "Member 'WBP_Friend_SmallWindow_C_Set_Button_Navigation::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_Set_Button_Navigation, CallFunc_BooleanAND_ReturnValue) == 0x00003D, "Member 'WBP_Friend_SmallWindow_C_Set_Button_Navigation::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_Set_Button_Navigation, CallFunc_Array_Length_ReturnValue_1) == 0x000040, "Member 'WBP_Friend_SmallWindow_C_Set_Button_Navigation::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_Set_Button_Navigation, CallFunc_Array_IsNotEmpty_ReturnValue) == 0x000044, "Member 'WBP_Friend_SmallWindow_C_Set_Button_Navigation::CallFunc_Array_IsNotEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_Set_Button_Navigation, CallFunc_Add_IntInt_ReturnValue_2) == 0x000048, "Member 'WBP_Friend_SmallWindow_C_Set_Button_Navigation::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_Set_Button_Navigation, CallFunc_Percent_IntInt_ReturnValue) == 0x00004C, "Member 'WBP_Friend_SmallWindow_C_Set_Button_Navigation::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_Set_Button_Navigation, CallFunc_Percent_IntInt_ReturnValue_1) == 0x000050, "Member 'WBP_Friend_SmallWindow_C_Set_Button_Navigation::CallFunc_Percent_IntInt_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_SmallWindow_C_Set_Button_Navigation;
 
 // Function WBP_Friend_SmallWindow.WBP_Friend_SmallWindow_C.SetButtonSelectable
 // 0x0010 (0x0010 - 0x0000)
@@ -230,9 +148,7 @@ struct WBP_Friend_SmallWindow_C_SetButtonSelectable final
 public:
 	TArray<bool>                                  bInSelectable;                                     // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_Friend_SmallWindow_C_SetButtonSelectable) == 0x000008, "Wrong alignment on WBP_Friend_SmallWindow_C_SetButtonSelectable");
-static_assert(sizeof(WBP_Friend_SmallWindow_C_SetButtonSelectable) == 0x000010, "Wrong size on WBP_Friend_SmallWindow_C_SetButtonSelectable");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_SetButtonSelectable, bInSelectable) == 0x000000, "Member 'WBP_Friend_SmallWindow_C_SetButtonSelectable::bInSelectable' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_SmallWindow_C_SetButtonSelectable;
 
 // Function WBP_Friend_SmallWindow.WBP_Friend_SmallWindow_C.SetButtonText
 // 0x0010 (0x0010 - 0x0000)
@@ -241,9 +157,7 @@ struct WBP_Friend_SmallWindow_C_SetButtonText final
 public:
 	TArray<class FText>                           InButtonText;                                      // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_Friend_SmallWindow_C_SetButtonText) == 0x000008, "Wrong alignment on WBP_Friend_SmallWindow_C_SetButtonText");
-static_assert(sizeof(WBP_Friend_SmallWindow_C_SetButtonText) == 0x000010, "Wrong size on WBP_Friend_SmallWindow_C_SetButtonText");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_SetButtonText, InButtonText) == 0x000000, "Member 'WBP_Friend_SmallWindow_C_SetButtonText::InButtonText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_SmallWindow_C_SetButtonText;
 
 // Function WBP_Friend_SmallWindow.WBP_Friend_SmallWindow_C.SetFocusButtonIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -252,9 +166,7 @@ struct WBP_Friend_SmallWindow_C_SetFocusButtonIndex final
 public:
 	int32                                         InButtonIndex;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_SmallWindow_C_SetFocusButtonIndex) == 0x000004, "Wrong alignment on WBP_Friend_SmallWindow_C_SetFocusButtonIndex");
-static_assert(sizeof(WBP_Friend_SmallWindow_C_SetFocusButtonIndex) == 0x000004, "Wrong size on WBP_Friend_SmallWindow_C_SetFocusButtonIndex");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_SetFocusButtonIndex, InButtonIndex) == 0x000000, "Member 'WBP_Friend_SmallWindow_C_SetFocusButtonIndex::InButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_SmallWindow_C_SetFocusButtonIndex;
 
 // Function WBP_Friend_SmallWindow.WBP_Friend_SmallWindow_C.Setup
 // 0x0020 (0x0020 - 0x0000)
@@ -264,10 +176,7 @@ public:
 	TArray<class FText>                           InButtonText;                                      // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	TArray<bool>                                  bInButtonSelectable;                               // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_Friend_SmallWindow_C_Setup) == 0x000008, "Wrong alignment on WBP_Friend_SmallWindow_C_Setup");
-static_assert(sizeof(WBP_Friend_SmallWindow_C_Setup) == 0x000020, "Wrong size on WBP_Friend_SmallWindow_C_Setup");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_Setup, InButtonText) == 0x000000, "Member 'WBP_Friend_SmallWindow_C_Setup::InButtonText' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_SmallWindow_C_Setup, bInButtonSelectable) == 0x000010, "Member 'WBP_Friend_SmallWindow_C_Setup::bInButtonSelectable' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_SmallWindow_C_Setup;
 
 }
 

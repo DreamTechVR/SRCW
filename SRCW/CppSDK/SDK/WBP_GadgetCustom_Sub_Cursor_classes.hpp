@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
@@ -51,19 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GadgetCustom_Sub_Cursor_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GadgetCustom_Sub_Cursor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GadgetCustom_Sub_Cursor_C")
 	}
 	static class UWBP_GadgetCustom_Sub_Cursor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GadgetCustom_Sub_Cursor_C>();
 	}
 };
-static_assert(alignof(UWBP_GadgetCustom_Sub_Cursor_C) == 0x000008, "Wrong alignment on UWBP_GadgetCustom_Sub_Cursor_C");
-static_assert(sizeof(UWBP_GadgetCustom_Sub_Cursor_C) == 0x0004D8, "Wrong size on UWBP_GadgetCustom_Sub_Cursor_C");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_Cursor_C, UberGraphFrame) == 0x0004A8, "Member 'UWBP_GadgetCustom_Sub_Cursor_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_Cursor_C, Cursor_Image) == 0x0004B0, "Member 'UWBP_GadgetCustom_Sub_Cursor_C::Cursor_Image' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_Cursor_C, OnTriggerFocus) == 0x0004B8, "Member 'UWBP_GadgetCustom_Sub_Cursor_C::OnTriggerFocus' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_Cursor_C, OnPadFaceLeft) == 0x0004C8, "Member 'UWBP_GadgetCustom_Sub_Cursor_C::OnPadFaceLeft' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GadgetCustom_Sub_Cursor_C;
 
 }
 

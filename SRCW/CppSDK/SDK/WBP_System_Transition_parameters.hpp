@@ -58,36 +58,7 @@ public:
 	class UWidgetAnimation*                       K2Node_Select_Default_5;                           // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimation*                       K2Node_Select_Default_6;                           // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition) == 0x000008, "Wrong alignment on WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition");
-static_assert(sizeof(WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition) == 0x0000A8, "Wrong size on WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition");
-static_assert(offsetof(WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition, EntryPoint) == 0x000000, "Member 'WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition, Temp_byte_Variable) == 0x000010, "Member 'WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition, CallFunc_PlayAnimation_ReturnValue_1) == 0x000018, "Member 'WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition, K2Node_CreateDelegate_OutputDelegate) == 0x000020, "Member 'WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition, Temp_byte_Variable_1) == 0x000030, "Member 'WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition, Temp_byte_Variable_2) == 0x000031, "Member 'WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition, K2Node_CreateDelegate_OutputDelegate_1) == 0x000034, "Member 'WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition, Temp_byte_Variable_3) == 0x000044, "Member 'WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition, K2Node_Select_Default) == 0x000048, "Member 'WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition, Temp_bool_IsClosed_Variable) == 0x000050, "Member 'WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition, Temp_bool_Has_Been_Initd_Variable) == 0x000051, "Member 'WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition, K2Node_Event_FadeColor_1) == 0x000052, "Member 'WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition::K2Node_Event_FadeColor_1' has a wrong offset!");
-static_assert(offsetof(WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition, K2Node_Event_FadeDirection) == 0x000053, "Member 'WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition::K2Node_Event_FadeDirection' has a wrong offset!");
-static_assert(offsetof(WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition, K2Node_Event_FadeColor) == 0x000054, "Member 'WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition::K2Node_Event_FadeColor' has a wrong offset!");
-static_assert(offsetof(WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition, Temp_byte_Variable_4) == 0x000055, "Member 'WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition, K2Node_Select_Default_1) == 0x000058, "Member 'WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition, K2Node_SwitchEnum_CmpSuccess) == 0x000060, "Member 'WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition, CallFunc_IsValid_ReturnValue_1) == 0x000061, "Member 'WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition, K2Node_Select_Default_2) == 0x000068, "Member 'WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition, Temp_byte_Variable_5) == 0x000070, "Member 'WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition, K2Node_Select_Default_3) == 0x000078, "Member 'WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition, K2Node_Select_Default_4) == 0x000080, "Member 'WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition, CallFunc_PlayAnimation_ReturnValue_2) == 0x000088, "Member 'WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition, Temp_byte_Variable_6) == 0x000090, "Member 'WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition::Temp_byte_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition, K2Node_Select_Default_5) == 0x000098, "Member 'WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition::K2Node_Select_Default_5' has a wrong offset!");
-static_assert(offsetof(WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition, K2Node_Select_Default_6) == 0x0000A0, "Member 'WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition::K2Node_Select_Default_6' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_System_Transition_C_ExecuteUbergraph_WBP_System_Transition;
 
 // Function WBP_System_Transition.WBP_System_Transition_C.StartFade
 // 0x0002 (0x0002 - 0x0000)
@@ -97,10 +68,7 @@ public:
 	EUnionUIFadeColor                             FadeColor;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_System_Transition_C_StartFade) == 0x000001, "Wrong alignment on WBP_System_Transition_C_StartFade");
-static_assert(sizeof(WBP_System_Transition_C_StartFade) == 0x000002, "Wrong size on WBP_System_Transition_C_StartFade");
-static_assert(offsetof(WBP_System_Transition_C_StartFade, FadeColor) == 0x000000, "Member 'WBP_System_Transition_C_StartFade::FadeColor' has a wrong offset!");
-static_assert(offsetof(WBP_System_Transition_C_StartFade, FadeDirection) == 0x000001, "Member 'WBP_System_Transition_C_StartFade::FadeDirection' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_System_Transition_C_StartFade;
 
 // Function WBP_System_Transition.WBP_System_Transition_C.StartLoopFade
 // 0x0001 (0x0001 - 0x0000)
@@ -109,9 +77,7 @@ struct WBP_System_Transition_C_StartLoopFade final
 public:
 	EUnionUIFadeColor                             FadeColor;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_System_Transition_C_StartLoopFade) == 0x000001, "Wrong alignment on WBP_System_Transition_C_StartLoopFade");
-static_assert(sizeof(WBP_System_Transition_C_StartLoopFade) == 0x000001, "Wrong size on WBP_System_Transition_C_StartLoopFade");
-static_assert(offsetof(WBP_System_Transition_C_StartLoopFade, FadeColor) == 0x000000, "Member 'WBP_System_Transition_C_StartLoopFade::FadeColor' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_System_Transition_C_StartLoopFade;
 
 }
 

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -57,18 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_MenuStatePartyRaceCustomizeRule_C">();
+		BP_STATIC_CLASS_IMPL("BPC_MenuStatePartyRaceCustomizeRule_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_MenuStatePartyRaceCustomizeRule_C")
 	}
 	static class UBPC_MenuStatePartyRaceCustomizeRule_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_MenuStatePartyRaceCustomizeRule_C>();
 	}
 };
-static_assert(alignof(UBPC_MenuStatePartyRaceCustomizeRule_C) == 0x000008, "Wrong alignment on UBPC_MenuStatePartyRaceCustomizeRule_C");
-static_assert(sizeof(UBPC_MenuStatePartyRaceCustomizeRule_C) == 0x000280, "Wrong size on UBPC_MenuStatePartyRaceCustomizeRule_C");
-static_assert(offsetof(UBPC_MenuStatePartyRaceCustomizeRule_C, UberGraphFrame) == 0x000268, "Member 'UBPC_MenuStatePartyRaceCustomizeRule_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceCustomizeRule_C, ReadyWidget) == 0x000270, "Member 'UBPC_MenuStatePartyRaceCustomizeRule_C::ReadyWidget' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceCustomizeRule_C, Footer) == 0x000278, "Member 'UBPC_MenuStatePartyRaceCustomizeRule_C::Footer' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_MenuStatePartyRaceCustomizeRule_C;
 
 }
 

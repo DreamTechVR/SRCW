@@ -24,9 +24,7 @@ struct WBP_Race_HUD_Sub_BasicOperation_C_DispOnRaceActionTutorial final
 public:
 	ETutorialAction                               tutorialAction;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_BasicOperation_C_DispOnRaceActionTutorial) == 0x000001, "Wrong alignment on WBP_Race_HUD_Sub_BasicOperation_C_DispOnRaceActionTutorial");
-static_assert(sizeof(WBP_Race_HUD_Sub_BasicOperation_C_DispOnRaceActionTutorial) == 0x000001, "Wrong size on WBP_Race_HUD_Sub_BasicOperation_C_DispOnRaceActionTutorial");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_DispOnRaceActionTutorial, tutorialAction) == 0x000000, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_DispOnRaceActionTutorial::tutorialAction' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_BasicOperation_C_DispOnRaceActionTutorial;
 
 // Function WBP_Race_HUD_Sub_BasicOperation.WBP_Race_HUD_Sub_BasicOperation_C.ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation
 // 0x0098 (0x0098 - 0x0000)
@@ -66,32 +64,7 @@ public:
 	class FText                                   CallFunc_GetTextByRaceAction_Text;                 // 0x0080(0x0010)()
 	bool                                          CallFunc_IsKeyboard_ReturnValue;                   // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation");
-static_assert(sizeof(WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation) == 0x000098, "Wrong size on WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation, EntryPoint) == 0x000000, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation, K2Node_CustomEvent_TutorialActon) == 0x000004, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation::K2Node_CustomEvent_TutorialActon' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation, K2Node_CustomEvent_TutorialAction) == 0x000010, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation::K2Node_CustomEvent_TutorialAction' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000011, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation, K2Node_CreateDelegate_OutputDelegate) == 0x000014, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation, CallFunc_CreatePlayAnimationProxyObject_Result) == 0x000028, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation::CallFunc_CreatePlayAnimationProxyObject_Result' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation, CallFunc_CreatePlayAnimationProxyObject_ReturnValue) == 0x000030, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation::CallFunc_CreatePlayAnimationProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation, CallFunc_IsValid_ReturnValue) == 0x000038, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000039, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation, CallFunc_CreatePlayAnimationProxyObject_Result_1) == 0x000040, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation::CallFunc_CreatePlayAnimationProxyObject_Result_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation, CallFunc_CreatePlayAnimationProxyObject_ReturnValue_1) == 0x000048, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation::CallFunc_CreatePlayAnimationProxyObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation, CallFunc_IsValid_ReturnValue_1) == 0x000050, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation, CallFunc_Array_Contains_ReturnValue) == 0x000051, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation, CallFunc_Array_AddUnique_ReturnValue) == 0x000054, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation, CallFunc_Array_Contains_ReturnValue_1) == 0x000058, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation::CallFunc_Array_Contains_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation, K2Node_CreateDelegate_OutputDelegate_1) == 0x00005C, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation, CallFunc_Not_PreBool_ReturnValue) == 0x00006C, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation, CallFunc_BooleanAND_ReturnValue) == 0x00006D, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation, CallFunc_SoundPlay_ReturnValue) == 0x000070, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation, CallFunc_SoundPlay_ReturnValue_1) == 0x000074, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000078, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation, CallFunc_GetTextByRaceAction_Text) == 0x000080, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation::CallFunc_GetTextByRaceAction_Text' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation, CallFunc_IsKeyboard_ReturnValue) == 0x000090, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation::CallFunc_IsKeyboard_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_BasicOperation_C_ExecuteUbergraph_WBP_Race_HUD_Sub_BasicOperation;
 
 // Function WBP_Race_HUD_Sub_BasicOperation.WBP_Race_HUD_Sub_BasicOperation_C.GetTextByRaceAction
 // 0x00D0 (0x00D0 - 0x0000)
@@ -115,22 +88,7 @@ public:
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue_4;            // 0x00B0(0x0010)()
 	class FText                                   K2Node_Select_Default;                             // 0x00C0(0x0010)()
 };
-static_assert(alignof(WBP_Race_HUD_Sub_BasicOperation_C_GetTextByRaceAction) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_BasicOperation_C_GetTextByRaceAction");
-static_assert(sizeof(WBP_Race_HUD_Sub_BasicOperation_C_GetTextByRaceAction) == 0x0000D0, "Wrong size on WBP_Race_HUD_Sub_BasicOperation_C_GetTextByRaceAction");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_GetTextByRaceAction, RaceActionTutorial) == 0x000000, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_GetTextByRaceAction::RaceActionTutorial' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_GetTextByRaceAction, Text) == 0x000008, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_GetTextByRaceAction::Text' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_GetTextByRaceAction, Temp_byte_Variable) == 0x000018, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_GetTextByRaceAction::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_GetTextByRaceAction, Temp_text_Variable) == 0x000020, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_GetTextByRaceAction::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_GetTextByRaceAction, Temp_text_Variable_1) == 0x000030, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_GetTextByRaceAction::Temp_text_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_GetTextByRaceAction, Temp_text_Variable_2) == 0x000040, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_GetTextByRaceAction::Temp_text_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_GetTextByRaceAction, Temp_text_Variable_3) == 0x000050, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_GetTextByRaceAction::Temp_text_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_GetTextByRaceAction, Temp_text_Variable_4) == 0x000060, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_GetTextByRaceAction::Temp_text_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_GetTextByRaceAction, CallFunc_MakeLiteralText_ReturnValue) == 0x000070, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_GetTextByRaceAction::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_GetTextByRaceAction, CallFunc_MakeLiteralText_ReturnValue_1) == 0x000080, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_GetTextByRaceAction::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_GetTextByRaceAction, CallFunc_MakeLiteralText_ReturnValue_2) == 0x000090, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_GetTextByRaceAction::CallFunc_MakeLiteralText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_GetTextByRaceAction, CallFunc_MakeLiteralText_ReturnValue_3) == 0x0000A0, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_GetTextByRaceAction::CallFunc_MakeLiteralText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_GetTextByRaceAction, CallFunc_MakeLiteralText_ReturnValue_4) == 0x0000B0, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_GetTextByRaceAction::CallFunc_MakeLiteralText_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_GetTextByRaceAction, K2Node_Select_Default) == 0x0000C0, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_GetTextByRaceAction::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_BasicOperation_C_GetTextByRaceAction;
 
 // Function WBP_Race_HUD_Sub_BasicOperation.WBP_Race_HUD_Sub_BasicOperation_C.RaceActionTutorialSuccess
 // 0x0001 (0x0001 - 0x0000)
@@ -139,9 +97,7 @@ struct WBP_Race_HUD_Sub_BasicOperation_C_RaceActionTutorialSuccess final
 public:
 	ETutorialAction                               TutorialActon;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_BasicOperation_C_RaceActionTutorialSuccess) == 0x000001, "Wrong alignment on WBP_Race_HUD_Sub_BasicOperation_C_RaceActionTutorialSuccess");
-static_assert(sizeof(WBP_Race_HUD_Sub_BasicOperation_C_RaceActionTutorialSuccess) == 0x000001, "Wrong size on WBP_Race_HUD_Sub_BasicOperation_C_RaceActionTutorialSuccess");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_RaceActionTutorialSuccess, TutorialActon) == 0x000000, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_RaceActionTutorialSuccess::TutorialActon' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_BasicOperation_C_RaceActionTutorialSuccess;
 
 // Function WBP_Race_HUD_Sub_BasicOperation.WBP_Race_HUD_Sub_BasicOperation_C.SetControllerVisibility
 // 0x000C (0x000C - 0x0000)
@@ -156,14 +112,7 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_BasicOperation_C_SetControllerVisibility) == 0x000004, "Wrong alignment on WBP_Race_HUD_Sub_BasicOperation_C_SetControllerVisibility");
-static_assert(sizeof(WBP_Race_HUD_Sub_BasicOperation_C_SetControllerVisibility) == 0x00000C, "Wrong size on WBP_Race_HUD_Sub_BasicOperation_C_SetControllerVisibility");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_SetControllerVisibility, bVisible) == 0x000000, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_SetControllerVisibility::bVisible' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_SetControllerVisibility, ActiveIndex) == 0x000004, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_SetControllerVisibility::ActiveIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_SetControllerVisibility, Temp_bool_Variable) == 0x000008, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_SetControllerVisibility::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_SetControllerVisibility, Temp_byte_Variable) == 0x000009, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_SetControllerVisibility::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_SetControllerVisibility, Temp_byte_Variable_1) == 0x00000A, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_SetControllerVisibility::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperation_C_SetControllerVisibility, K2Node_Select_Default) == 0x00000B, "Member 'WBP_Race_HUD_Sub_BasicOperation_C_SetControllerVisibility::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_BasicOperation_C_SetControllerVisibility;
 
 }
 

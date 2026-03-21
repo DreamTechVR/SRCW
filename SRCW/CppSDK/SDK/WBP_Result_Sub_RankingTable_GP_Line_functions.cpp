@@ -73,20 +73,6 @@ void UWBP_Result_Sub_RankingTable_GP_Line_C::Construct()
 }
 
 
-// Function WBP_Result_Sub_RankingTable_GP_Line.WBP_Result_Sub_RankingTable_GP_Line_C.Copy
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Result_Sub_RankingTable_GP_Line_C::Copy()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Result_Sub_RankingTable_GP_Line_C", "Copy");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_Result_Sub_RankingTable_GP_Line.WBP_Result_Sub_RankingTable_GP_Line_C.CreateTipsWindow
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -909,20 +895,6 @@ void UWBP_Result_Sub_RankingTable_GP_Line_C::StartLodingView()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_Result_Sub_RankingTable_GP_Line_C", "StartLodingView");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Result_Sub_RankingTable_GP_Line.WBP_Result_Sub_RankingTable_GP_Line_C.Wait
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Result_Sub_RankingTable_GP_Line_C::Wait()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Result_Sub_RankingTable_GP_Line_C", "Wait");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

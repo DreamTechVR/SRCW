@@ -21,9 +21,7 @@ struct BP_Turntable_C_ExecuteUbergraph_BP_Turntable final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Turntable_C_ExecuteUbergraph_BP_Turntable) == 0x000004, "Wrong alignment on BP_Turntable_C_ExecuteUbergraph_BP_Turntable");
-static_assert(sizeof(BP_Turntable_C_ExecuteUbergraph_BP_Turntable) == 0x000004, "Wrong size on BP_Turntable_C_ExecuteUbergraph_BP_Turntable");
-static_assert(offsetof(BP_Turntable_C_ExecuteUbergraph_BP_Turntable, EntryPoint) == 0x000000, "Member 'BP_Turntable_C_ExecuteUbergraph_BP_Turntable::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_BP_Turntable_C_ExecuteUbergraph_BP_Turntable;
 
 }
 

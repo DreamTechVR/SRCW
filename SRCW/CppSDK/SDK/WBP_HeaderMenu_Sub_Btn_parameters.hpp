@@ -27,12 +27,7 @@ public:
 	class UWidgetAnimation*                       K2Node_Select_Default;                             // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeaderMenu_Sub_Btn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_Btn) == 0x000008, "Wrong alignment on WBP_HeaderMenu_Sub_Btn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_Btn");
-static_assert(sizeof(WBP_HeaderMenu_Sub_Btn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_Btn) == 0x000018, "Wrong size on WBP_HeaderMenu_Sub_Btn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_Btn");
-static_assert(offsetof(WBP_HeaderMenu_Sub_Btn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_Btn, EntryPoint) == 0x000000, "Member 'WBP_HeaderMenu_Sub_Btn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_Btn::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_Btn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_Btn, Temp_bool_Variable) == 0x000004, "Member 'WBP_HeaderMenu_Sub_Btn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_Btn::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_Btn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_Btn, K2Node_Select_Default) == 0x000008, "Member 'WBP_HeaderMenu_Sub_Btn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_Btn::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_Btn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_Btn, CallFunc_PlayAnimation_ReturnValue) == 0x000010, "Member 'WBP_HeaderMenu_Sub_Btn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_Btn::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeaderMenu_Sub_Btn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_Btn;
 
 // Function WBP_HeaderMenu_Sub_Btn.WBP_HeaderMenu_Sub_Btn_C.SetButtonTypeEmote
 // 0x0008 (0x0008 - 0x0000)
@@ -44,11 +39,7 @@ public:
 	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeaderMenu_Sub_Btn_C_SetButtonTypeEmote) == 0x000004, "Wrong alignment on WBP_HeaderMenu_Sub_Btn_C_SetButtonTypeEmote");
-static_assert(sizeof(WBP_HeaderMenu_Sub_Btn_C_SetButtonTypeEmote) == 0x000008, "Wrong size on WBP_HeaderMenu_Sub_Btn_C_SetButtonTypeEmote");
-static_assert(offsetof(WBP_HeaderMenu_Sub_Btn_C_SetButtonTypeEmote, CallFunc_MakeLiteralByte_ReturnValue) == 0x000000, "Member 'WBP_HeaderMenu_Sub_Btn_C_SetButtonTypeEmote::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_Btn_C_SetButtonTypeEmote, CallFunc_IsValid_ReturnValue) == 0x000001, "Member 'WBP_HeaderMenu_Sub_Btn_C_SetButtonTypeEmote::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_Btn_C_SetButtonTypeEmote, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000004, "Member 'WBP_HeaderMenu_Sub_Btn_C_SetButtonTypeEmote::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeaderMenu_Sub_Btn_C_SetButtonTypeEmote;
 
 // Function WBP_HeaderMenu_Sub_Btn.WBP_HeaderMenu_Sub_Btn_C.SetIconControllerBtn
 // 0x0008 (0x0008 - 0x0000)
@@ -58,10 +49,7 @@ public:
 	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeaderMenu_Sub_Btn_C_SetIconControllerBtn) == 0x000004, "Wrong alignment on WBP_HeaderMenu_Sub_Btn_C_SetIconControllerBtn");
-static_assert(sizeof(WBP_HeaderMenu_Sub_Btn_C_SetIconControllerBtn) == 0x000008, "Wrong size on WBP_HeaderMenu_Sub_Btn_C_SetIconControllerBtn");
-static_assert(offsetof(WBP_HeaderMenu_Sub_Btn_C_SetIconControllerBtn, Index_0) == 0x000000, "Member 'WBP_HeaderMenu_Sub_Btn_C_SetIconControllerBtn::Index_0' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_Btn_C_SetIconControllerBtn, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'WBP_HeaderMenu_Sub_Btn_C_SetIconControllerBtn::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeaderMenu_Sub_Btn_C_SetIconControllerBtn;
 
 // Function WBP_HeaderMenu_Sub_Btn.WBP_HeaderMenu_Sub_Btn_C.SetLeftIcon
 // 0x0028 (0x0028 - 0x0000)
@@ -83,18 +71,7 @@ public:
 	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_Select_Default;                             // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeaderMenu_Sub_Btn_C_SetLeftIcon) == 0x000004, "Wrong alignment on WBP_HeaderMenu_Sub_Btn_C_SetLeftIcon");
-static_assert(sizeof(WBP_HeaderMenu_Sub_Btn_C_SetLeftIcon) == 0x000028, "Wrong size on WBP_HeaderMenu_Sub_Btn_C_SetLeftIcon");
-static_assert(offsetof(WBP_HeaderMenu_Sub_Btn_C_SetLeftIcon, Type) == 0x000000, "Member 'WBP_HeaderMenu_Sub_Btn_C_SetLeftIcon::Type' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_Btn_C_SetLeftIcon, Index_0) == 0x000004, "Member 'WBP_HeaderMenu_Sub_Btn_C_SetLeftIcon::Index_0' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_Btn_C_SetLeftIcon, Temp_int_Variable) == 0x000008, "Member 'WBP_HeaderMenu_Sub_Btn_C_SetLeftIcon::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_Btn_C_SetLeftIcon, K2Node_SwitchEnum_CmpSuccess) == 0x00000C, "Member 'WBP_HeaderMenu_Sub_Btn_C_SetLeftIcon::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_Btn_C_SetLeftIcon, Temp_int_Variable_1) == 0x000010, "Member 'WBP_HeaderMenu_Sub_Btn_C_SetLeftIcon::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_Btn_C_SetLeftIcon, Temp_int_Variable_2) == 0x000014, "Member 'WBP_HeaderMenu_Sub_Btn_C_SetLeftIcon::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_Btn_C_SetLeftIcon, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'WBP_HeaderMenu_Sub_Btn_C_SetLeftIcon::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_Btn_C_SetLeftIcon, Temp_int_Variable_3) == 0x00001C, "Member 'WBP_HeaderMenu_Sub_Btn_C_SetLeftIcon::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_Btn_C_SetLeftIcon, Temp_byte_Variable) == 0x000020, "Member 'WBP_HeaderMenu_Sub_Btn_C_SetLeftIcon::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_Btn_C_SetLeftIcon, K2Node_Select_Default) == 0x000024, "Member 'WBP_HeaderMenu_Sub_Btn_C_SetLeftIcon::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeaderMenu_Sub_Btn_C_SetLeftIcon;
 
 // Function WBP_HeaderMenu_Sub_Btn.WBP_HeaderMenu_Sub_Btn_C.SetRightIcon
 // 0x0028 (0x0028 - 0x0000)
@@ -109,13 +86,7 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeaderMenu_Sub_Btn_C_SetRightIcon) == 0x000008, "Wrong alignment on WBP_HeaderMenu_Sub_Btn_C_SetRightIcon");
-static_assert(sizeof(WBP_HeaderMenu_Sub_Btn_C_SetRightIcon) == 0x000028, "Wrong size on WBP_HeaderMenu_Sub_Btn_C_SetRightIcon");
-static_assert(offsetof(WBP_HeaderMenu_Sub_Btn_C_SetRightIcon, Index_0) == 0x000000, "Member 'WBP_HeaderMenu_Sub_Btn_C_SetRightIcon::Index_0' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_Btn_C_SetRightIcon, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000008, "Member 'WBP_HeaderMenu_Sub_Btn_C_SetRightIcon::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_Btn_C_SetRightIcon, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'WBP_HeaderMenu_Sub_Btn_C_SetRightIcon::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_Btn_C_SetRightIcon, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000018, "Member 'WBP_HeaderMenu_Sub_Btn_C_SetRightIcon::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_Btn_C_SetRightIcon, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000020, "Member 'WBP_HeaderMenu_Sub_Btn_C_SetRightIcon::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeaderMenu_Sub_Btn_C_SetRightIcon;
 
 }
 

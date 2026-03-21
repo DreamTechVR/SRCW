@@ -81,26 +81,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DELETE_WBP_PauseMenu_Sub_Option_Top_Btn_C">();
+		BP_STATIC_CLASS_IMPL("DELETE_WBP_PauseMenu_Sub_Option_Top_Btn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DELETE_WBP_PauseMenu_Sub_Option_Top_Btn_C")
 	}
 	static class UDELETE_WBP_PauseMenu_Sub_Option_Top_Btn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDELETE_WBP_PauseMenu_Sub_Option_Top_Btn_C>();
 	}
 };
-static_assert(alignof(UDELETE_WBP_PauseMenu_Sub_Option_Top_Btn_C) == 0x000008, "Wrong alignment on UDELETE_WBP_PauseMenu_Sub_Option_Top_Btn_C");
-static_assert(sizeof(UDELETE_WBP_PauseMenu_Sub_Option_Top_Btn_C) == 0x0004D8, "Wrong size on UDELETE_WBP_PauseMenu_Sub_Option_Top_Btn_C");
-static_assert(offsetof(UDELETE_WBP_PauseMenu_Sub_Option_Top_Btn_C, UberGraphFrame) == 0x000480, "Member 'UDELETE_WBP_PauseMenu_Sub_Option_Top_Btn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UDELETE_WBP_PauseMenu_Sub_Option_Top_Btn_C, Btn_Active_to_NonActive) == 0x000488, "Member 'UDELETE_WBP_PauseMenu_Sub_Option_Top_Btn_C::Btn_Active_to_NonActive' has a wrong offset!");
-static_assert(offsetof(UDELETE_WBP_PauseMenu_Sub_Option_Top_Btn_C, Btn_NonActive_to_Active) == 0x000490, "Member 'UDELETE_WBP_PauseMenu_Sub_Option_Top_Btn_C::Btn_NonActive_to_Active' has a wrong offset!");
-static_assert(offsetof(UDELETE_WBP_PauseMenu_Sub_Option_Top_Btn_C, Btn_Select_Loop) == 0x000498, "Member 'UDELETE_WBP_PauseMenu_Sub_Option_Top_Btn_C::Btn_Select_Loop' has a wrong offset!");
-static_assert(offsetof(UDELETE_WBP_PauseMenu_Sub_Option_Top_Btn_C, Btn_Active_Loop) == 0x0004A0, "Member 'UDELETE_WBP_PauseMenu_Sub_Option_Top_Btn_C::Btn_Active_Loop' has a wrong offset!");
-static_assert(offsetof(UDELETE_WBP_PauseMenu_Sub_Option_Top_Btn_C, Btn_NonActive_Loop) == 0x0004A8, "Member 'UDELETE_WBP_PauseMenu_Sub_Option_Top_Btn_C::Btn_NonActive_Loop' has a wrong offset!");
-static_assert(offsetof(UDELETE_WBP_PauseMenu_Sub_Option_Top_Btn_C, BG_Black) == 0x0004B0, "Member 'UDELETE_WBP_PauseMenu_Sub_Option_Top_Btn_C::BG_Black' has a wrong offset!");
-static_assert(offsetof(UDELETE_WBP_PauseMenu_Sub_Option_Top_Btn_C, SelectSE) == 0x0004B8, "Member 'UDELETE_WBP_PauseMenu_Sub_Option_Top_Btn_C::SelectSE' has a wrong offset!");
-static_assert(offsetof(UDELETE_WBP_PauseMenu_Sub_Option_Top_Btn_C, IsSelected) == 0x0004C0, "Member 'UDELETE_WBP_PauseMenu_Sub_Option_Top_Btn_C::IsSelected' has a wrong offset!");
-static_assert(offsetof(UDELETE_WBP_PauseMenu_Sub_Option_Top_Btn_C, DecideSE) == 0x0004C8, "Member 'UDELETE_WBP_PauseMenu_Sub_Option_Top_Btn_C::DecideSE' has a wrong offset!");
-static_assert(offsetof(UDELETE_WBP_PauseMenu_Sub_Option_Top_Btn_C, CancelSE) == 0x0004D0, "Member 'UDELETE_WBP_PauseMenu_Sub_Option_Top_Btn_C::CancelSE' has a wrong offset!");
+DUMPER7_ASSERTS_UDELETE_WBP_PauseMenu_Sub_Option_Top_Btn_C;
 
 }
 

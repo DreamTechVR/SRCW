@@ -23,15 +23,18 @@ class UCR_Driver_Hoverboard_Vector_C final : public UControlRig
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CR_Driver_Hoverboard_Vector_C">();
+		BP_STATIC_CLASS_IMPL("CR_Driver_Hoverboard_Vector_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CR_Driver_Hoverboard_Vector_C")
 	}
 	static class UCR_Driver_Hoverboard_Vector_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCR_Driver_Hoverboard_Vector_C>();
 	}
 };
-static_assert(alignof(UCR_Driver_Hoverboard_Vector_C) == 0x000008, "Wrong alignment on UCR_Driver_Hoverboard_Vector_C");
-static_assert(sizeof(UCR_Driver_Hoverboard_Vector_C) == 0x000AA8, "Wrong size on UCR_Driver_Hoverboard_Vector_C");
+DUMPER7_ASSERTS_UCR_Driver_Hoverboard_Vector_C;
 
 }
 

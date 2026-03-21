@@ -23,9 +23,7 @@ struct BP_SaveDataSetting_C_AppDataResultDelegate_Event final
 public:
 	bool                                          bSuccess;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SaveDataSetting_C_AppDataResultDelegate_Event) == 0x000001, "Wrong alignment on BP_SaveDataSetting_C_AppDataResultDelegate_Event");
-static_assert(sizeof(BP_SaveDataSetting_C_AppDataResultDelegate_Event) == 0x000001, "Wrong size on BP_SaveDataSetting_C_AppDataResultDelegate_Event");
-static_assert(offsetof(BP_SaveDataSetting_C_AppDataResultDelegate_Event, bSuccess) == 0x000000, "Member 'BP_SaveDataSetting_C_AppDataResultDelegate_Event::bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BP_SaveDataSetting_C_AppDataResultDelegate_Event;
 
 // Function BP_SaveDataSetting.BP_SaveDataSetting_C.ConfigDataResultDelegate_Event
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +32,7 @@ struct BP_SaveDataSetting_C_ConfigDataResultDelegate_Event final
 public:
 	bool                                          bSuccess;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SaveDataSetting_C_ConfigDataResultDelegate_Event) == 0x000001, "Wrong alignment on BP_SaveDataSetting_C_ConfigDataResultDelegate_Event");
-static_assert(sizeof(BP_SaveDataSetting_C_ConfigDataResultDelegate_Event) == 0x000001, "Wrong size on BP_SaveDataSetting_C_ConfigDataResultDelegate_Event");
-static_assert(offsetof(BP_SaveDataSetting_C_ConfigDataResultDelegate_Event, bSuccess) == 0x000000, "Member 'BP_SaveDataSetting_C_ConfigDataResultDelegate_Event::bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BP_SaveDataSetting_C_ConfigDataResultDelegate_Event;
 
 // Function BP_SaveDataSetting.BP_SaveDataSetting_C.ExecuteUbergraph_BP_SaveDataSetting
 // 0x0064 (0x0064 - 0x0000)
@@ -64,26 +60,7 @@ public:
 	bool                                          K2Node_CustomEvent_bSuccess;                       // 0x0053(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(bool bSuccess)>                K2Node_CreateDelegate_OutputDelegate_4;            // 0x0054(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting) == 0x000004, "Wrong alignment on BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting");
-static_assert(sizeof(BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting) == 0x000064, "Wrong size on BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting");
-static_assert(offsetof(BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting, EntryPoint) == 0x000000, "Member 'BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting, K2Node_CustomEvent_bSuccess_4) == 0x000024, "Member 'BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting::K2Node_CustomEvent_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting, CallFunc_InitPlayLogData_ReturnValue) == 0x000025, "Member 'BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting::CallFunc_InitPlayLogData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting, K2Node_CustomEvent_bSuccess_3) == 0x000026, "Member 'BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting::K2Node_CustomEvent_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting, K2Node_CreateDelegate_OutputDelegate_2) == 0x000028, "Member 'BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting, CallFunc_InitAppData_ReturnValue) == 0x000038, "Member 'BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting::CallFunc_InitAppData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting, K2Node_CustomEvent_bSuccess_2) == 0x000039, "Member 'BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting::K2Node_CustomEvent_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting, CallFunc_InitConfigData_ReturnValue) == 0x00003A, "Member 'BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting::CallFunc_InitConfigData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting, K2Node_CustomEvent_bSuccess_1) == 0x00003B, "Member 'BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting::K2Node_CustomEvent_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting, CallFunc_InitReplayData_ReturnValue) == 0x00003C, "Member 'BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting::CallFunc_InitReplayData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting, K2Node_CreateDelegate_OutputDelegate_3) == 0x000040, "Member 'BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting, CallFunc_DeleteInvalidSaveData_bOutQuitGame) == 0x000050, "Member 'BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting::CallFunc_DeleteInvalidSaveData_bOutQuitGame' has a wrong offset!");
-static_assert(offsetof(BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting, K2Node_Event_EndPlayReason) == 0x000051, "Member 'BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting::K2Node_Event_EndPlayReason' has a wrong offset!");
-static_assert(offsetof(BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting, CallFunc_InitNetData_ReturnValue) == 0x000052, "Member 'BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting::CallFunc_InitNetData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting, K2Node_CustomEvent_bSuccess) == 0x000053, "Member 'BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting::K2Node_CustomEvent_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting, K2Node_CreateDelegate_OutputDelegate_4) == 0x000054, "Member 'BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
+DUMPER7_ASSERTS_BP_SaveDataSetting_C_ExecuteUbergraph_BP_SaveDataSetting;
 
 // Function BP_SaveDataSetting.BP_SaveDataSetting_C.NetDataResultDelegate_Event
 // 0x0001 (0x0001 - 0x0000)
@@ -92,9 +69,7 @@ struct BP_SaveDataSetting_C_NetDataResultDelegate_Event final
 public:
 	bool                                          bSuccess;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SaveDataSetting_C_NetDataResultDelegate_Event) == 0x000001, "Wrong alignment on BP_SaveDataSetting_C_NetDataResultDelegate_Event");
-static_assert(sizeof(BP_SaveDataSetting_C_NetDataResultDelegate_Event) == 0x000001, "Wrong size on BP_SaveDataSetting_C_NetDataResultDelegate_Event");
-static_assert(offsetof(BP_SaveDataSetting_C_NetDataResultDelegate_Event, bSuccess) == 0x000000, "Member 'BP_SaveDataSetting_C_NetDataResultDelegate_Event::bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BP_SaveDataSetting_C_NetDataResultDelegate_Event;
 
 // Function BP_SaveDataSetting.BP_SaveDataSetting_C.PlayLogDataResultDelegate_Event
 // 0x0001 (0x0001 - 0x0000)
@@ -103,9 +78,7 @@ struct BP_SaveDataSetting_C_PlayLogDataResultDelegate_Event final
 public:
 	bool                                          bSuccess;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SaveDataSetting_C_PlayLogDataResultDelegate_Event) == 0x000001, "Wrong alignment on BP_SaveDataSetting_C_PlayLogDataResultDelegate_Event");
-static_assert(sizeof(BP_SaveDataSetting_C_PlayLogDataResultDelegate_Event) == 0x000001, "Wrong size on BP_SaveDataSetting_C_PlayLogDataResultDelegate_Event");
-static_assert(offsetof(BP_SaveDataSetting_C_PlayLogDataResultDelegate_Event, bSuccess) == 0x000000, "Member 'BP_SaveDataSetting_C_PlayLogDataResultDelegate_Event::bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BP_SaveDataSetting_C_PlayLogDataResultDelegate_Event;
 
 // Function BP_SaveDataSetting.BP_SaveDataSetting_C.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -114,9 +87,7 @@ struct BP_SaveDataSetting_C_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SaveDataSetting_C_ReceiveEndPlay) == 0x000001, "Wrong alignment on BP_SaveDataSetting_C_ReceiveEndPlay");
-static_assert(sizeof(BP_SaveDataSetting_C_ReceiveEndPlay) == 0x000001, "Wrong size on BP_SaveDataSetting_C_ReceiveEndPlay");
-static_assert(offsetof(BP_SaveDataSetting_C_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'BP_SaveDataSetting_C_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_BP_SaveDataSetting_C_ReceiveEndPlay;
 
 // Function BP_SaveDataSetting.BP_SaveDataSetting_C.ReplayDataResultDelegate_Event
 // 0x0001 (0x0001 - 0x0000)
@@ -125,9 +96,7 @@ struct BP_SaveDataSetting_C_ReplayDataResultDelegate_Event final
 public:
 	bool                                          bSuccess;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SaveDataSetting_C_ReplayDataResultDelegate_Event) == 0x000001, "Wrong alignment on BP_SaveDataSetting_C_ReplayDataResultDelegate_Event");
-static_assert(sizeof(BP_SaveDataSetting_C_ReplayDataResultDelegate_Event) == 0x000001, "Wrong size on BP_SaveDataSetting_C_ReplayDataResultDelegate_Event");
-static_assert(offsetof(BP_SaveDataSetting_C_ReplayDataResultDelegate_Event, bSuccess) == 0x000000, "Member 'BP_SaveDataSetting_C_ReplayDataResultDelegate_Event::bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BP_SaveDataSetting_C_ReplayDataResultDelegate_Event;
 
 }
 

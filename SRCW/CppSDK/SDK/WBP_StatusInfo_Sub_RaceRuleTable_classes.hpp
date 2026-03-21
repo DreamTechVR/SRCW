@@ -56,35 +56,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_StatusInfo_Sub_RaceRuleTable_C">();
+		BP_STATIC_CLASS_IMPL("WBP_StatusInfo_Sub_RaceRuleTable_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_StatusInfo_Sub_RaceRuleTable_C")
 	}
 	static class UWBP_StatusInfo_Sub_RaceRuleTable_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_StatusInfo_Sub_RaceRuleTable_C>();
 	}
 };
-static_assert(alignof(UWBP_StatusInfo_Sub_RaceRuleTable_C) == 0x000008, "Wrong alignment on UWBP_StatusInfo_Sub_RaceRuleTable_C");
-static_assert(sizeof(UWBP_StatusInfo_Sub_RaceRuleTable_C) == 0x000388, "Wrong size on UWBP_StatusInfo_Sub_RaceRuleTable_C");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRuleTable_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_StatusInfo_Sub_RaceRuleTable_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRuleTable_C, Select_SP_Loop) == 0x0002E8, "Member 'UWBP_StatusInfo_Sub_RaceRuleTable_C::Select_SP_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRuleTable_C, Select_Loop) == 0x0002F0, "Member 'UWBP_StatusInfo_Sub_RaceRuleTable_C::Select_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRuleTable_C, Active_SP_Loop) == 0x0002F8, "Member 'UWBP_StatusInfo_Sub_RaceRuleTable_C::Active_SP_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRuleTable_C, Active_Loop) == 0x000300, "Member 'UWBP_StatusInfo_Sub_RaceRuleTable_C::Active_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRuleTable_C, base) == 0x000308, "Member 'UWBP_StatusInfo_Sub_RaceRuleTable_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRuleTable_C, Base_SP) == 0x000310, "Member 'UWBP_StatusInfo_Sub_RaceRuleTable_C::Base_SP' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRuleTable_C, Base_SP_1) == 0x000318, "Member 'UWBP_StatusInfo_Sub_RaceRuleTable_C::Base_SP_1' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRuleTable_C, Blink_Cursor) == 0x000320, "Member 'UWBP_StatusInfo_Sub_RaceRuleTable_C::Blink_Cursor' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRuleTable_C, Cursor_01) == 0x000328, "Member 'UWBP_StatusInfo_Sub_RaceRuleTable_C::Cursor_01' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRuleTable_C, DMY_RaceRuleIcon) == 0x000330, "Member 'UWBP_StatusInfo_Sub_RaceRuleTable_C::DMY_RaceRuleIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRuleTable_C, Line_01) == 0x000338, "Member 'UWBP_StatusInfo_Sub_RaceRuleTable_C::Line_01' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRuleTable_C, Line_02) == 0x000340, "Member 'UWBP_StatusInfo_Sub_RaceRuleTable_C::Line_02' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRuleTable_C, MouseInteraction) == 0x000348, "Member 'UWBP_StatusInfo_Sub_RaceRuleTable_C::MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRuleTable_C, RaceFlag) == 0x000350, "Member 'UWBP_StatusInfo_Sub_RaceRuleTable_C::RaceFlag' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRuleTable_C, TXT_RuleName) == 0x000358, "Member 'UWBP_StatusInfo_Sub_RaceRuleTable_C::TXT_RuleName' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRuleTable_C, TXT_SP_Rule) == 0x000360, "Member 'UWBP_StatusInfo_Sub_RaceRuleTable_C::TXT_SP_Rule' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRuleTable_C, WidgetSwitcher_0) == 0x000368, "Member 'UWBP_StatusInfo_Sub_RaceRuleTable_C::WidgetSwitcher_0' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRuleTable_C, Is_Special) == 0x000370, "Member 'UWBP_StatusInfo_Sub_RaceRuleTable_C::Is_Special' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRuleTable_C, SpecialRuleTextArray) == 0x000378, "Member 'UWBP_StatusInfo_Sub_RaceRuleTable_C::SpecialRuleTextArray' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_StatusInfo_Sub_RaceRuleTable_C;
 
 }
 

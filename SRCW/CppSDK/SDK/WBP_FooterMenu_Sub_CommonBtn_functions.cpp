@@ -65,6 +65,20 @@ void UWBP_FooterMenu_Sub_CommonBtn_C::OnAcceptKeyPressed()
 }
 
 
+// Function WBP_FooterMenu_Sub_CommonBtn.WBP_FooterMenu_Sub_CommonBtn_C.OnAcceptKeyReleased
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_FooterMenu_Sub_CommonBtn_C::OnAcceptKeyReleased()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FooterMenu_Sub_CommonBtn_C", "OnAcceptKeyReleased");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_FooterMenu_Sub_CommonBtn.WBP_FooterMenu_Sub_CommonBtn_C.OnBackKeyPressed
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 
@@ -79,6 +93,40 @@ void UWBP_FooterMenu_Sub_CommonBtn_C::OnBackKeyPressed()
 }
 
 
+// Function WBP_FooterMenu_Sub_CommonBtn.WBP_FooterMenu_Sub_CommonBtn_C.OnBackKeyReleased
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_FooterMenu_Sub_CommonBtn_C::OnBackKeyReleased()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FooterMenu_Sub_CommonBtn_C", "OnBackKeyReleased");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_FooterMenu_Sub_CommonBtn.WBP_FooterMenu_Sub_CommonBtn_C.OnChangeInputRegistration
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESlateVisibility                        InVisibility                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_FooterMenu_Sub_CommonBtn_C::OnChangeInputRegistration(ESlateVisibility InVisibility)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FooterMenu_Sub_CommonBtn_C", "OnChangeInputRegistration");
+
+	Params::WBP_FooterMenu_Sub_CommonBtn_C_OnChangeInputRegistration Parms{};
+
+	Parms.InVisibility = InVisibility;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_FooterMenu_Sub_CommonBtn.WBP_FooterMenu_Sub_CommonBtn_C.OnFaceButtonLeftPressed
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 
@@ -88,6 +136,20 @@ void UWBP_FooterMenu_Sub_CommonBtn_C::OnFaceButtonLeftPressed()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_FooterMenu_Sub_CommonBtn_C", "OnFaceButtonLeftPressed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_FooterMenu_Sub_CommonBtn.WBP_FooterMenu_Sub_CommonBtn_C.OnFaceButtonLeftReleased
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_FooterMenu_Sub_CommonBtn_C::OnFaceButtonLeftReleased()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FooterMenu_Sub_CommonBtn_C", "OnFaceButtonLeftReleased");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -107,6 +169,20 @@ void UWBP_FooterMenu_Sub_CommonBtn_C::OnFaceButtonTopPressed()
 }
 
 
+// Function WBP_FooterMenu_Sub_CommonBtn.WBP_FooterMenu_Sub_CommonBtn_C.OnFaceButtonTopReleased
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_FooterMenu_Sub_CommonBtn_C::OnFaceButtonTopReleased()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FooterMenu_Sub_CommonBtn_C", "OnFaceButtonTopReleased");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_FooterMenu_Sub_CommonBtn.WBP_FooterMenu_Sub_CommonBtn_C.OnLeftShoulderPressed
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 
@@ -116,6 +192,20 @@ void UWBP_FooterMenu_Sub_CommonBtn_C::OnLeftShoulderPressed()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_FooterMenu_Sub_CommonBtn_C", "OnLeftShoulderPressed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_FooterMenu_Sub_CommonBtn.WBP_FooterMenu_Sub_CommonBtn_C.OnLeftShoulderReleased
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_FooterMenu_Sub_CommonBtn_C::OnLeftShoulderReleased()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FooterMenu_Sub_CommonBtn_C", "OnLeftShoulderReleased");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -135,23 +225,17 @@ void UWBP_FooterMenu_Sub_CommonBtn_C::OnRightShoulderPressed()
 }
 
 
-// Function WBP_FooterMenu_Sub_CommonBtn.WBP_FooterMenu_Sub_CommonBtn_C.OnVisibilityChanged_イベント
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESlateVisibility                        InVisibility                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_FooterMenu_Sub_CommonBtn.WBP_FooterMenu_Sub_CommonBtn_C.OnRightShoulderReleased
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_FooterMenu_Sub_CommonBtn_C::OnVisibilityChanged_イベント(ESlateVisibility InVisibility)
+void UWBP_FooterMenu_Sub_CommonBtn_C::OnRightShoulderReleased()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_FooterMenu_Sub_CommonBtn_C", "OnVisibilityChanged_イベント");
+		Func = Class->GetFunction("WBP_FooterMenu_Sub_CommonBtn_C", "OnRightShoulderReleased");
 
-	Params::WBP_FooterMenu_Sub_CommonBtn_C_OnVisibilityChanged_イベント Parms{};
-
-	Parms.InVisibility = InVisibility;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -195,28 +279,6 @@ void UWBP_FooterMenu_Sub_CommonBtn_C::SetIconGauge(float InGaugeParam)
 }
 
 
-// Function WBP_FooterMenu_Sub_CommonBtn.WBP_FooterMenu_Sub_CommonBtn_C.SetIconType
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   InButtonIconIndex                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EUIButtonIconType                       InButtonIconType                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_FooterMenu_Sub_CommonBtn_C::SetIconType(int32 InButtonIconIndex, EUIButtonIconType InButtonIconType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_FooterMenu_Sub_CommonBtn_C", "SetIconType");
-
-	Params::WBP_FooterMenu_Sub_CommonBtn_C_SetIconType Parms{};
-
-	Parms.InButtonIconIndex = InButtonIconIndex;
-	Parms.InButtonIconType = InButtonIconType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_FooterMenu_Sub_CommonBtn.WBP_FooterMenu_Sub_CommonBtn_C.SetText
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -234,6 +296,20 @@ void UWBP_FooterMenu_Sub_CommonBtn_C::SetText(const class FText& InText)
 	Parms.InText = std::move(InText);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_FooterMenu_Sub_CommonBtn.WBP_FooterMenu_Sub_CommonBtn_C.SetupButtonIcon
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_FooterMenu_Sub_CommonBtn_C::SetupButtonIcon()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FooterMenu_Sub_CommonBtn_C", "SetupButtonIcon");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABP_HoldCyanLaser_C">();
+		BP_STATIC_CLASS_IMPL("ABP_HoldCyanLaser_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABP_HoldCyanLaser_C")
 	}
 	static class UABP_HoldCyanLaser_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UABP_HoldCyanLaser_C>();
 	}
 };
-static_assert(alignof(UABP_HoldCyanLaser_C) == 0x000010, "Wrong alignment on UABP_HoldCyanLaser_C");
-static_assert(sizeof(UABP_HoldCyanLaser_C) == 0x001130, "Wrong size on UABP_HoldCyanLaser_C");
+DUMPER7_ASSERTS_UABP_HoldCyanLaser_C;
 
 }
 

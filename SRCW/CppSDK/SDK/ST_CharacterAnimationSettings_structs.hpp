@@ -29,14 +29,7 @@ public:
 	double                                        HoverStartTime_25_B9A3712648B0BA971226DA970AA9188B; // 0x0060(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bSkipFacialBlend_39_46CFBE514746F516D7BA32A20EC78483; // 0x0068(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FST_CharacterAnimationSettings) == 0x000008, "Wrong alignment on FST_CharacterAnimationSettings");
-static_assert(sizeof(FST_CharacterAnimationSettings) == 0x000070, "Wrong size on FST_CharacterAnimationSettings");
-static_assert(offsetof(FST_CharacterAnimationSettings, DriverId_2_D4A2F53B42762011D6F2279E00236464) == 0x000000, "Member 'FST_CharacterAnimationSettings::DriverId_2_D4A2F53B42762011D6F2279E00236464' has a wrong offset!");
-static_assert(offsetof(FST_CharacterAnimationSettings, CarAnimation_32_08E9B0DA4E948150C9C4C6B017AD86BC) == 0x000008, "Member 'FST_CharacterAnimationSettings::CarAnimation_32_08E9B0DA4E948150C9C4C6B017AD86BC' has a wrong offset!");
-static_assert(offsetof(FST_CharacterAnimationSettings, CarStartTime_26_5704474B46CEB17685705C8B4524813B) == 0x000030, "Member 'FST_CharacterAnimationSettings::CarStartTime_26_5704474B46CEB17685705C8B4524813B' has a wrong offset!");
-static_assert(offsetof(FST_CharacterAnimationSettings, HoverAnimation_34_B632D96847D78E7B46F3E9BF86EB2345) == 0x000038, "Member 'FST_CharacterAnimationSettings::HoverAnimation_34_B632D96847D78E7B46F3E9BF86EB2345' has a wrong offset!");
-static_assert(offsetof(FST_CharacterAnimationSettings, HoverStartTime_25_B9A3712648B0BA971226DA970AA9188B) == 0x000060, "Member 'FST_CharacterAnimationSettings::HoverStartTime_25_B9A3712648B0BA971226DA970AA9188B' has a wrong offset!");
-static_assert(offsetof(FST_CharacterAnimationSettings, bSkipFacialBlend_39_46CFBE514746F516D7BA32A20EC78483) == 0x000068, "Member 'FST_CharacterAnimationSettings::bSkipFacialBlend_39_46CFBE514746F516D7BA32A20EC78483' has a wrong offset!");
+DUMPER7_ASSERTS_FST_CharacterAnimationSettings;
 
 }
 

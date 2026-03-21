@@ -23,15 +23,18 @@ class UABP_HoldOmochao_C final : public UABPT_HoldItem_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABP_HoldOmochao_C">();
+		BP_STATIC_CLASS_IMPL("ABP_HoldOmochao_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABP_HoldOmochao_C")
 	}
 	static class UABP_HoldOmochao_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UABP_HoldOmochao_C>();
 	}
 };
-static_assert(alignof(UABP_HoldOmochao_C) == 0x000010, "Wrong alignment on UABP_HoldOmochao_C");
-static_assert(sizeof(UABP_HoldOmochao_C) == 0x001130, "Wrong size on UABP_HoldOmochao_C");
+DUMPER7_ASSERTS_UABP_HoldOmochao_C;
 
 }
 

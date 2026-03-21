@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -62,36 +62,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GadgetCutom_M2_Div_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GadgetCutom_M2_Div_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GadgetCutom_M2_Div_C")
 	}
 	static class UWBP_GadgetCutom_M2_Div_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GadgetCutom_M2_Div_C>();
 	}
 };
-static_assert(alignof(UWBP_GadgetCutom_M2_Div_C) == 0x000008, "Wrong alignment on UWBP_GadgetCutom_M2_Div_C");
-static_assert(sizeof(UWBP_GadgetCutom_M2_Div_C) == 0x000390, "Wrong size on UWBP_GadgetCutom_M2_Div_C");
-static_assert(offsetof(UWBP_GadgetCutom_M2_Div_C, UberGraphFrame) == 0x0002E8, "Member 'UWBP_GadgetCutom_M2_Div_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCutom_M2_Div_C, M2_Out) == 0x0002F0, "Member 'UWBP_GadgetCutom_M2_Div_C::M2_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCutom_M2_Div_C, M2_Loop) == 0x0002F8, "Member 'UWBP_GadgetCutom_M2_Div_C::M2_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCutom_M2_Div_C, M2_In) == 0x000300, "Member 'UWBP_GadgetCutom_M2_Div_C::M2_In' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCutom_M2_Div_C, Name_Line_1) == 0x000308, "Member 'UWBP_GadgetCutom_M2_Div_C::Name_Line_1' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCutom_M2_Div_C, Name_Line_P1) == 0x000310, "Member 'UWBP_GadgetCutom_M2_Div_C::Name_Line_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCutom_M2_Div_C, SafeZone) == 0x000318, "Member 'UWBP_GadgetCutom_M2_Div_C::SafeZone' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCutom_M2_Div_C, TXT_CharaName) == 0x000320, "Member 'UWBP_GadgetCutom_M2_Div_C::TXT_CharaName' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCutom_M2_Div_C, TXT_CharaName_P2) == 0x000328, "Member 'UWBP_GadgetCutom_M2_Div_C::TXT_CharaName_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCutom_M2_Div_C, WBP_CMN_GadgetCount) == 0x000330, "Member 'UWBP_GadgetCutom_M2_Div_C::WBP_CMN_GadgetCount' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCutom_M2_Div_C, WBP_CMN_PlayerNumber_P1) == 0x000338, "Member 'UWBP_GadgetCutom_M2_Div_C::WBP_CMN_PlayerNumber_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCutom_M2_Div_C, WBP_CMN_PlayerNumber_P2) == 0x000340, "Member 'UWBP_GadgetCutom_M2_Div_C::WBP_CMN_PlayerNumber_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCutom_M2_Div_C, WBP_GadgetCustom_Sub_GadgetPlate_P1) == 0x000348, "Member 'UWBP_GadgetCutom_M2_Div_C::WBP_GadgetCustom_Sub_GadgetPlate_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCutom_M2_Div_C, WBP_GadgetCustom_Sub_GadgetPlate_P2) == 0x000350, "Member 'UWBP_GadgetCutom_M2_Div_C::WBP_GadgetCustom_Sub_GadgetPlate_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCutom_M2_Div_C, WBP_GadgetCustom_Sub_SkillPlate_P1) == 0x000358, "Member 'UWBP_GadgetCutom_M2_Div_C::WBP_GadgetCustom_Sub_SkillPlate_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCutom_M2_Div_C, WBP_GadgetCustom_Sub_SkillPlate_P2) == 0x000360, "Member 'UWBP_GadgetCutom_M2_Div_C::WBP_GadgetCustom_Sub_SkillPlate_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCutom_M2_Div_C, WBP_GadgetCustom_Window_P1) == 0x000368, "Member 'UWBP_GadgetCutom_M2_Div_C::WBP_GadgetCustom_Window_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCutom_M2_Div_C, WBP_GadgetCustom_Window_P2) == 0x000370, "Member 'UWBP_GadgetCutom_M2_Div_C::WBP_GadgetCustom_Window_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCutom_M2_Div_C, WBP_SelectBG_M2) == 0x000378, "Member 'UWBP_GadgetCutom_M2_Div_C::WBP_SelectBG_M2' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCutom_M2_Div_C, WBP_Window_MachineParameter_P1) == 0x000380, "Member 'UWBP_GadgetCutom_M2_Div_C::WBP_Window_MachineParameter_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCutom_M2_Div_C, WBP_Window_MachineParameter_P2) == 0x000388, "Member 'UWBP_GadgetCutom_M2_Div_C::WBP_Window_MachineParameter_P2' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GadgetCutom_M2_Div_C;
 
 }
 

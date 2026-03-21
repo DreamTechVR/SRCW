@@ -22,10 +22,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn) == 0x000004, "Wrong alignment on WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn) == 0x000008, "Wrong size on WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn, EntryPoint) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn, K2Node_Event_IsDesignTime) == 0x000004, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn::K2Node_Event_IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn;
 
 // Function WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn.WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +31,7 @@ struct WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_PreConstruct fina
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_PreConstruct");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_PreConstruct) == 0x000001, "Wrong size on WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_PreConstruct");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_PreConstruct;
 
 // Function WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn.WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C.SetButton
 // 0x0028 (0x0028 - 0x0000)
@@ -49,12 +44,7 @@ public:
 	TArray<int32>                                 SwitchIndex;                                       // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	TArray<int32>                                 ButtonIndex;                                       // 0x0018(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_SetButton) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_SetButton");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_SetButton) == 0x000028, "Wrong size on WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_SetButton");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_SetButton, bRequirePlusButton) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_SetButton::bRequirePlusButton' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_SetButton, bIsSimultaneously) == 0x000001, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_SetButton::bIsSimultaneously' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_SetButton, SwitchIndex) == 0x000008, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_SetButton::SwitchIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_SetButton, ButtonIndex) == 0x000018, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_SetButton::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_SetButton;
 
 // Function WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn.WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C.SetButtonText
 // 0x0010 (0x0010 - 0x0000)
@@ -63,9 +53,7 @@ struct WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_SetButtonText fin
 public:
 	class FText                                   InText;                                            // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_SetButtonText) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_SetButtonText");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_SetButtonText) == 0x000010, "Wrong size on WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_SetButtonText");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_SetButtonText, InText) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_SetButtonText::InText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C_SetButtonText;
 
 }
 

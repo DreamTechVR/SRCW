@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_RivalSelect_Sub_CharaCutIn_C">();
+		BP_STATIC_CLASS_IMPL("WBP_RivalSelect_Sub_CharaCutIn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_RivalSelect_Sub_CharaCutIn_C")
 	}
 	static class UWBP_RivalSelect_Sub_CharaCutIn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_RivalSelect_Sub_CharaCutIn_C>();
 	}
 };
-static_assert(alignof(UWBP_RivalSelect_Sub_CharaCutIn_C) == 0x000008, "Wrong alignment on UWBP_RivalSelect_Sub_CharaCutIn_C");
-static_assert(sizeof(UWBP_RivalSelect_Sub_CharaCutIn_C) == 0x000300, "Wrong size on UWBP_RivalSelect_Sub_CharaCutIn_C");
-static_assert(offsetof(UWBP_RivalSelect_Sub_CharaCutIn_C, CharaCutIn) == 0x0002F8, "Member 'UWBP_RivalSelect_Sub_CharaCutIn_C::CharaCutIn' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_RivalSelect_Sub_CharaCutIn_C;
 
 }
 

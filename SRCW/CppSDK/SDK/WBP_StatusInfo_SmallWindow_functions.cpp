@@ -114,7 +114,7 @@ void UWBP_StatusInfo_SmallWindow_C::SetupGadget(int32 rewardId)
 
 
 // Function WBP_StatusInfo_SmallWindow.WBP_StatusInfo_SmallWindow_C.SetupGadgetIcon
-// (Private, BlueprintCallable, BlueprintEvent)
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   gadgetId                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

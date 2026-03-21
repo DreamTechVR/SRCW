@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -41,19 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MachineCustom_Sub_ListTable_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MachineCustom_Sub_ListTable_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MachineCustom_Sub_ListTable_C")
 	}
 	static class UWBP_MachineCustom_Sub_ListTable_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MachineCustom_Sub_ListTable_C>();
 	}
 };
-static_assert(alignof(UWBP_MachineCustom_Sub_ListTable_C) == 0x000008, "Wrong alignment on UWBP_MachineCustom_Sub_ListTable_C");
-static_assert(sizeof(UWBP_MachineCustom_Sub_ListTable_C) == 0x000558, "Wrong size on UWBP_MachineCustom_Sub_ListTable_C");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ListTable_C, UberGraphFrame) == 0x000538, "Member 'UWBP_MachineCustom_Sub_ListTable_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ListTable_C, Select_Loop) == 0x000540, "Member 'UWBP_MachineCustom_Sub_ListTable_C::Select_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ListTable_C, Active_Loop) == 0x000548, "Member 'UWBP_MachineCustom_Sub_ListTable_C::Active_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ListTable_C, Playback) == 0x000550, "Member 'UWBP_MachineCustom_Sub_ListTable_C::Playback' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MachineCustom_Sub_ListTable_C;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UNION_structs.hpp"
 #include "Engine_structs.hpp"
+#include "UNION_structs.hpp"
 
 
 namespace SDK::Params
@@ -118,87 +118,7 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_6;            // 0x0300(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast;    // 0x0310(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info) == 0x000008, "Wrong alignment on WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info");
-static_assert(sizeof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info) == 0x000318, "Wrong size on WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, EntryPoint) == 0x000000, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, K2Node_CustomEvent_InMenuType) == 0x000004, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::K2Node_CustomEvent_InMenuType' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_PlayAnimation_ReturnValue) == 0x000018, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, K2Node_CreateDelegate_OutputDelegate_1) == 0x000020, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, K2Node_CreateDelegate_OutputDelegate_2) == 0x000030, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_MakeLiteralDouble_ReturnValue) == 0x000040, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_MakeLiteralDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000048, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_MakeLiteralText_ReturnValue) == 0x000050, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, K2Node_CustomEvent_InRate) == 0x000060, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::K2Node_CustomEvent_InRate' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_Conv_DoubleToInt64_ReturnValue) == 0x000068, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_Conv_DoubleToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_Conv_Int64ToString_ReturnValue) == 0x000070, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_Conv_Int64ToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, K2Node_CustomEvent_InText) == 0x000080, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::K2Node_CustomEvent_InText' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_Concat_StrStr_ReturnValue) == 0x000090, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_Conv_StringToText_ReturnValue) == 0x0000A0, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, K2Node_CustomEvent_SwitcherIndex_1) == 0x0000B0, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::K2Node_CustomEvent_SwitcherIndex_1' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, K2Node_CustomEvent_SwitcherIndex) == 0x0000B4, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::K2Node_CustomEvent_SwitcherIndex' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, K2Node_CustomEvent_ButtonIndex_1) == 0x0000B8, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::K2Node_CustomEvent_ButtonIndex_1' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_GetButton_Button) == 0x0000C0, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_GetButton_Button' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_PlayAnimation_ReturnValue_1) == 0x0000C8, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, K2Node_DynamicCast_AsPrivate_Match_Button) == 0x0000D0, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::K2Node_DynamicCast_AsPrivate_Match_Button' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, K2Node_DynamicCast_bSuccess) == 0x0000D8, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_PlayAnimation_ReturnValue_2) == 0x0000E0, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_PlayAnimation_ReturnValue_3) == 0x0000E8, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_PlayAnimation_ReturnValue_4) == 0x0000F0, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_PlayAnimation_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, K2Node_CustomEvent_InTextArray) == 0x0000F8, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::K2Node_CustomEvent_InTextArray' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, K2Node_MakeArray_Array) == 0x000108, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000118, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, K2Node_SwitchInteger_CmpSuccess) == 0x00011C, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, K2Node_CustomEvent_IconIndex) == 0x000120, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::K2Node_CustomEvent_IconIndex' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, K2Node_CustomEvent_ButtonIndex) == 0x000124, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::K2Node_CustomEvent_ButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, K2Node_SwitchInteger_CmpSuccess_1) == 0x000128, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::K2Node_SwitchInteger_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, K2Node_MakeArray_Array_1) == 0x000130, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_GetActiveWidgetButton_Button) == 0x000140, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_GetActiveWidgetButton_Button' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_IsValid_ReturnValue) == 0x000148, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_GetOwningPlayer_ReturnValue) == 0x000150, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000158, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, K2Node_DynamicCast_bSuccess_1) == 0x000160, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, K2Node_CustomEvent_UploadCount) == 0x000164, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::K2Node_CustomEvent_UploadCount' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, K2Node_CustomEvent_MaxCount_1) == 0x000168, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::K2Node_CustomEvent_MaxCount_1' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, K2Node_Event_IsDesignTime) == 0x00016C, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_Conv_IntToString_ReturnValue) == 0x000170, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_Conv_IntToString_ReturnValue_1) == 0x000180, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_Conv_IntToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, K2Node_CustomEvent_MaxCount) == 0x000190, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::K2Node_CustomEvent_MaxCount' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000198, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_Conv_IntToString_ReturnValue_2) == 0x0001A8, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_Conv_IntToString_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_Concat_StrStr_ReturnValue_2) == 0x0001B8, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, K2Node_CustomEvent_bJoin_1) == 0x0001C8, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::K2Node_CustomEvent_bJoin_1' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_Conv_StringToText_ReturnValue_1) == 0x0001D0, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_GetActiveWidgetIndex_ReturnValue_1) == 0x0001E0, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_GetActiveWidgetIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, K2Node_CreateDelegate_OutputDelegate_3) == 0x0001E4, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_MakeLiteralInt_ReturnValue) == 0x0001F4, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0001F8, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, K2Node_CreateDelegate_OutputDelegate_4) == 0x0001FC, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_MakeLiteralText_ReturnValue_1) == 0x000210, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_MakeLiteralText_ReturnValue_2) == 0x000220, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_MakeLiteralText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, K2Node_CustomEvent_bJoin) == 0x000230, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::K2Node_CustomEvent_bJoin' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_MakeLiteralInt_ReturnValue_1) == 0x000234, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_MakeLiteralInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_GetActiveWidgetIndex_ReturnValue_2) == 0x000238, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_GetActiveWidgetIndex_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, Temp_bool_Variable) == 0x00023C, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x00023D, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_MakeLiteralText_ReturnValue_3) == 0x000240, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_MakeLiteralText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_MakeLiteralText_ReturnValue_4) == 0x000250, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_MakeLiteralText_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, K2Node_Select_Default) == 0x000260, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_PlayAnimation_ReturnValue_5) == 0x000270, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_PlayAnimation_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, Temp_bool_Variable_1) == 0x000278, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, K2Node_Select_Default_1) == 0x000280, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_CreatePlayAnimationProxyObject_Result) == 0x000290, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_CreatePlayAnimationProxyObject_Result' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_CreatePlayAnimationProxyObject_ReturnValue) == 0x000298, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_CreatePlayAnimationProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_IsValid_ReturnValue_1) == 0x0002A0, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, K2Node_CustomEvent_PrivateMatchPopup) == 0x0002A8, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::K2Node_CustomEvent_PrivateMatchPopup' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_PlayAnimation_ReturnValue_6) == 0x0002B0, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_PlayAnimation_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_Concat_StrStr_ReturnValue_3) == 0x0002B8, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_Concat_StrStr_ReturnValue_4) == 0x0002C8, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_Concat_StrStr_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_Conv_StringToText_ReturnValue_2) == 0x0002D8, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_Conv_StringToText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, K2Node_CreateDelegate_OutputDelegate_5) == 0x0002E8, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_PlayAnimation_ReturnValue_7) == 0x0002F8, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_PlayAnimation_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, K2Node_CreateDelegate_OutputDelegate_6) == 0x000300, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info, CallFunc_K2_SetTimerDelegate_Time_ImplicitCast) == 0x000310, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info::CallFunc_K2_SetTimerDelegate_Time_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PrivateMatch_Popup_Sub_Info_C_ExecuteUbergraph_WBP_PrivateMatch_Popup_Sub_Info;
 
 // Function WBP_PrivateMatch_Popup_Sub_Info.WBP_PrivateMatch_Popup_Sub_Info_C.GetActiveWidgetButton
 // 0x0020 (0x0020 - 0x0000)
@@ -212,13 +132,7 @@ public:
 	int32                                         CallFunc_GetActiveWidgetIndex_ReturnValue;         // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUnionUIButtonBase*                     CallFunc_GetButton_Button;                         // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PrivateMatch_Popup_Sub_Info_C_GetActiveWidgetButton) == 0x000008, "Wrong alignment on WBP_PrivateMatch_Popup_Sub_Info_C_GetActiveWidgetButton");
-static_assert(sizeof(WBP_PrivateMatch_Popup_Sub_Info_C_GetActiveWidgetButton) == 0x000020, "Wrong size on WBP_PrivateMatch_Popup_Sub_Info_C_GetActiveWidgetButton");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_GetActiveWidgetButton, ButtonIndex) == 0x000000, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_GetActiveWidgetButton::ButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_GetActiveWidgetButton, Button) == 0x000008, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_GetActiveWidgetButton::Button' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_GetActiveWidgetButton, BtnIndex) == 0x000010, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_GetActiveWidgetButton::BtnIndex' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_GetActiveWidgetButton, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000014, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_GetActiveWidgetButton::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_GetActiveWidgetButton, CallFunc_GetButton_Button) == 0x000018, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_GetActiveWidgetButton::CallFunc_GetButton_Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PrivateMatch_Popup_Sub_Info_C_GetActiveWidgetButton;
 
 // Function WBP_PrivateMatch_Popup_Sub_Info.WBP_PrivateMatch_Popup_Sub_Info_C.GetActiveWidgetButtons
 // 0x0050 (0x0050 - 0x0000)
@@ -234,14 +148,7 @@ public:
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UUnionUIButtonBase*>             K2Node_Select_Default;                             // 0x0040(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(WBP_PrivateMatch_Popup_Sub_Info_C_GetActiveWidgetButtons) == 0x000008, "Wrong alignment on WBP_PrivateMatch_Popup_Sub_Info_C_GetActiveWidgetButtons");
-static_assert(sizeof(WBP_PrivateMatch_Popup_Sub_Info_C_GetActiveWidgetButtons) == 0x000050, "Wrong size on WBP_PrivateMatch_Popup_Sub_Info_C_GetActiveWidgetButtons");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_GetActiveWidgetButtons, Buttons) == 0x000000, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_GetActiveWidgetButtons::Buttons' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_GetActiveWidgetButtons, Temp_int_Variable) == 0x000010, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_GetActiveWidgetButtons::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_GetActiveWidgetButtons, K2Node_MakeArray_Array) == 0x000018, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_GetActiveWidgetButtons::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_GetActiveWidgetButtons, K2Node_MakeArray_Array_1) == 0x000028, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_GetActiveWidgetButtons::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_GetActiveWidgetButtons, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000038, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_GetActiveWidgetButtons::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_GetActiveWidgetButtons, K2Node_Select_Default) == 0x000040, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_GetActiveWidgetButtons::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PrivateMatch_Popup_Sub_Info_C_GetActiveWidgetButtons;
 
 // Function WBP_PrivateMatch_Popup_Sub_Info.WBP_PrivateMatch_Popup_Sub_Info_C.GetButton
 // 0x0028 (0x0028 - 0x0000)
@@ -258,16 +165,7 @@ public:
 	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_PrivateMatch_Popup_Sub_LobbyBtn_C* K2Node_Select_Default;                             // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PrivateMatch_Popup_Sub_Info_C_GetButton) == 0x000008, "Wrong alignment on WBP_PrivateMatch_Popup_Sub_Info_C_GetButton");
-static_assert(sizeof(WBP_PrivateMatch_Popup_Sub_Info_C_GetButton) == 0x000028, "Wrong size on WBP_PrivateMatch_Popup_Sub_Info_C_GetButton");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_GetButton, SwitcherIndex) == 0x000000, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_GetButton::SwitcherIndex' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_GetButton, ButtonIndex) == 0x000004, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_GetButton::ButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_GetButton, Button) == 0x000008, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_GetButton::Button' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_GetButton, BtnIndex) == 0x000010, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_GetButton::BtnIndex' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_GetButton, Temp_int_Variable) == 0x000014, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_GetButton::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_GetButton, K2Node_SwitchInteger_CmpSuccess) == 0x000018, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_GetButton::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_GetButton, K2Node_SwitchInteger_CmpSuccess_1) == 0x000019, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_GetButton::K2Node_SwitchInteger_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_GetButton, K2Node_Select_Default) == 0x000020, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_GetButton::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PrivateMatch_Popup_Sub_Info_C_GetButton;
 
 // Function WBP_PrivateMatch_Popup_Sub_Info.WBP_PrivateMatch_Popup_Sub_Info_C.InitialActiveWidget
 // 0x0078 (0x0078 - 0x0000)
@@ -286,18 +184,7 @@ public:
 	TArray<class FText>                           K2Node_MakeArray_Array;                            // 0x0058(0x0010)(ConstParm, ReferenceParm)
 	TArray<class FText>                           K2Node_MakeArray_Array_1;                          // 0x0068(0x0010)(ConstParm, ReferenceParm)
 };
-static_assert(alignof(WBP_PrivateMatch_Popup_Sub_Info_C_InitialActiveWidget) == 0x000008, "Wrong alignment on WBP_PrivateMatch_Popup_Sub_Info_C_InitialActiveWidget");
-static_assert(sizeof(WBP_PrivateMatch_Popup_Sub_Info_C_InitialActiveWidget) == 0x000078, "Wrong size on WBP_PrivateMatch_Popup_Sub_Info_C_InitialActiveWidget");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_InitialActiveWidget, Selection) == 0x000000, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_InitialActiveWidget::Selection' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_InitialActiveWidget, Temp_byte_Variable) == 0x000004, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_InitialActiveWidget::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_InitialActiveWidget, K2Node_SwitchInteger_CmpSuccess) == 0x000005, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_InitialActiveWidget::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_InitialActiveWidget, Temp_text_Variable) == 0x000008, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_InitialActiveWidget::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_InitialActiveWidget, CallFunc_MakeLiteralText_ReturnValue) == 0x000018, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_InitialActiveWidget::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_InitialActiveWidget, CallFunc_MakeLiteralText_ReturnValue_1) == 0x000028, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_InitialActiveWidget::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_InitialActiveWidget, K2Node_Select_Default) == 0x000038, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_InitialActiveWidget::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_InitialActiveWidget, CallFunc_MakeLiteralText_ReturnValue_2) == 0x000048, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_InitialActiveWidget::CallFunc_MakeLiteralText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_InitialActiveWidget, K2Node_MakeArray_Array) == 0x000058, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_InitialActiveWidget::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_InitialActiveWidget, K2Node_MakeArray_Array_1) == 0x000068, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_InitialActiveWidget::K2Node_MakeArray_Array_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PrivateMatch_Popup_Sub_Info_C_InitialActiveWidget;
 
 // Function WBP_PrivateMatch_Popup_Sub_Info.WBP_PrivateMatch_Popup_Sub_Info_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -306,9 +193,7 @@ struct WBP_PrivateMatch_Popup_Sub_Info_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PrivateMatch_Popup_Sub_Info_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_PrivateMatch_Popup_Sub_Info_C_PreConstruct");
-static_assert(sizeof(WBP_PrivateMatch_Popup_Sub_Info_C_PreConstruct) == 0x000001, "Wrong size on WBP_PrivateMatch_Popup_Sub_Info_C_PreConstruct");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PrivateMatch_Popup_Sub_Info_C_PreConstruct;
 
 // Function WBP_PrivateMatch_Popup_Sub_Info.WBP_PrivateMatch_Popup_Sub_Info_C.SetActiveWidgetButtonText
 // 0x0060 (0x0060 - 0x0000)
@@ -328,18 +213,7 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrivateMatchButton*                    CallFunc_Array_Get_Item_1;                         // 0x0058(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PrivateMatch_Popup_Sub_Info_C_SetActiveWidgetButtonText) == 0x000008, "Wrong alignment on WBP_PrivateMatch_Popup_Sub_Info_C_SetActiveWidgetButtonText");
-static_assert(sizeof(WBP_PrivateMatch_Popup_Sub_Info_C_SetActiveWidgetButtonText) == 0x000060, "Wrong size on WBP_PrivateMatch_Popup_Sub_Info_C_SetActiveWidgetButtonText");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_SetActiveWidgetButtonText, Array) == 0x000000, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_SetActiveWidgetButtonText::Array' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_SetActiveWidgetButtonText, Buttons) == 0x000010, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_SetActiveWidgetButtonText::Buttons' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_SetActiveWidgetButtonText, BtnArray) == 0x000020, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_SetActiveWidgetButtonText::BtnArray' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_SetActiveWidgetButtonText, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_SetActiveWidgetButtonText::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_SetActiveWidgetButtonText, Temp_int_Array_Index_Variable) == 0x000034, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_SetActiveWidgetButtonText::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_SetActiveWidgetButtonText, Temp_int_Loop_Counter_Variable) == 0x000038, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_SetActiveWidgetButtonText::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_SetActiveWidgetButtonText, CallFunc_Array_Get_Item) == 0x000040, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_SetActiveWidgetButtonText::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_SetActiveWidgetButtonText, CallFunc_Less_IntInt_ReturnValue) == 0x000050, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_SetActiveWidgetButtonText::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_SetActiveWidgetButtonText, CallFunc_Add_IntInt_ReturnValue) == 0x000054, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_SetActiveWidgetButtonText::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_SetActiveWidgetButtonText, CallFunc_Array_Get_Item_1) == 0x000058, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_SetActiveWidgetButtonText::CallFunc_Array_Get_Item_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PrivateMatch_Popup_Sub_Info_C_SetActiveWidgetButtonText;
 
 // Function WBP_PrivateMatch_Popup_Sub_Info.WBP_PrivateMatch_Popup_Sub_Info_C.SetButtonGrayOut
 // 0x0008 (0x0008 - 0x0000)
@@ -349,10 +223,7 @@ public:
 	int32                                         SwitcherIndex;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PrivateMatch_Popup_Sub_Info_C_SetButtonGrayOut) == 0x000004, "Wrong alignment on WBP_PrivateMatch_Popup_Sub_Info_C_SetButtonGrayOut");
-static_assert(sizeof(WBP_PrivateMatch_Popup_Sub_Info_C_SetButtonGrayOut) == 0x000008, "Wrong size on WBP_PrivateMatch_Popup_Sub_Info_C_SetButtonGrayOut");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_SetButtonGrayOut, SwitcherIndex) == 0x000000, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_SetButtonGrayOut::SwitcherIndex' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_SetButtonGrayOut, ButtonIndex) == 0x000004, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_SetButtonGrayOut::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PrivateMatch_Popup_Sub_Info_C_SetButtonGrayOut;
 
 // Function WBP_PrivateMatch_Popup_Sub_Info.WBP_PrivateMatch_Popup_Sub_Info_C.SetButtonIcon
 // 0x0008 (0x0008 - 0x0000)
@@ -362,10 +233,7 @@ public:
 	int32                                         IconIndex;                                         // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PrivateMatch_Popup_Sub_Info_C_SetButtonIcon) == 0x000004, "Wrong alignment on WBP_PrivateMatch_Popup_Sub_Info_C_SetButtonIcon");
-static_assert(sizeof(WBP_PrivateMatch_Popup_Sub_Info_C_SetButtonIcon) == 0x000008, "Wrong size on WBP_PrivateMatch_Popup_Sub_Info_C_SetButtonIcon");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_SetButtonIcon, IconIndex) == 0x000000, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_SetButtonIcon::IconIndex' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_SetButtonIcon, ButtonIndex) == 0x000004, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_SetButtonIcon::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PrivateMatch_Popup_Sub_Info_C_SetButtonIcon;
 
 // Function WBP_PrivateMatch_Popup_Sub_Info.WBP_PrivateMatch_Popup_Sub_Info_C.SetButtonsText
 // 0x0010 (0x0010 - 0x0000)
@@ -374,9 +242,7 @@ struct WBP_PrivateMatch_Popup_Sub_Info_C_SetButtonsText final
 public:
 	TArray<class FText>                           InTextArray;                                       // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_PrivateMatch_Popup_Sub_Info_C_SetButtonsText) == 0x000008, "Wrong alignment on WBP_PrivateMatch_Popup_Sub_Info_C_SetButtonsText");
-static_assert(sizeof(WBP_PrivateMatch_Popup_Sub_Info_C_SetButtonsText) == 0x000010, "Wrong size on WBP_PrivateMatch_Popup_Sub_Info_C_SetButtonsText");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_SetButtonsText, InTextArray) == 0x000000, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_SetButtonsText::InTextArray' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PrivateMatch_Popup_Sub_Info_C_SetButtonsText;
 
 // Function WBP_PrivateMatch_Popup_Sub_Info.WBP_PrivateMatch_Popup_Sub_Info_C.SetLoadingText
 // 0x0010 (0x0010 - 0x0000)
@@ -385,9 +251,7 @@ struct WBP_PrivateMatch_Popup_Sub_Info_C_SetLoadingText final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_PrivateMatch_Popup_Sub_Info_C_SetLoadingText) == 0x000008, "Wrong alignment on WBP_PrivateMatch_Popup_Sub_Info_C_SetLoadingText");
-static_assert(sizeof(WBP_PrivateMatch_Popup_Sub_Info_C_SetLoadingText) == 0x000010, "Wrong size on WBP_PrivateMatch_Popup_Sub_Info_C_SetLoadingText");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_SetLoadingText, InText) == 0x000000, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_SetLoadingText::InText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PrivateMatch_Popup_Sub_Info_C_SetLoadingText;
 
 // Function WBP_PrivateMatch_Popup_Sub_Info.WBP_PrivateMatch_Popup_Sub_Info_C.SetOpenShowMenuType
 // 0x0001 (0x0001 - 0x0000)
@@ -396,9 +260,7 @@ struct WBP_PrivateMatch_Popup_Sub_Info_C_SetOpenShowMenuType final
 public:
 	EPrivateMatchShowMenuType                     InMenuType;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PrivateMatch_Popup_Sub_Info_C_SetOpenShowMenuType) == 0x000001, "Wrong alignment on WBP_PrivateMatch_Popup_Sub_Info_C_SetOpenShowMenuType");
-static_assert(sizeof(WBP_PrivateMatch_Popup_Sub_Info_C_SetOpenShowMenuType) == 0x000001, "Wrong size on WBP_PrivateMatch_Popup_Sub_Info_C_SetOpenShowMenuType");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_SetOpenShowMenuType, InMenuType) == 0x000000, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_SetOpenShowMenuType::InMenuType' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PrivateMatch_Popup_Sub_Info_C_SetOpenShowMenuType;
 
 // Function WBP_PrivateMatch_Popup_Sub_Info.WBP_PrivateMatch_Popup_Sub_Info_C.SetParentPopupWidget
 // 0x0008 (0x0008 - 0x0000)
@@ -407,9 +269,7 @@ struct WBP_PrivateMatch_Popup_Sub_Info_C_SetParentPopupWidget final
 public:
 	class UPrivateMatchPopup*                     PrivateMatchPopup;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PrivateMatch_Popup_Sub_Info_C_SetParentPopupWidget) == 0x000008, "Wrong alignment on WBP_PrivateMatch_Popup_Sub_Info_C_SetParentPopupWidget");
-static_assert(sizeof(WBP_PrivateMatch_Popup_Sub_Info_C_SetParentPopupWidget) == 0x000008, "Wrong size on WBP_PrivateMatch_Popup_Sub_Info_C_SetParentPopupWidget");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_SetParentPopupWidget, PrivateMatchPopup) == 0x000000, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_SetParentPopupWidget::PrivateMatchPopup' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PrivateMatch_Popup_Sub_Info_C_SetParentPopupWidget;
 
 // Function WBP_PrivateMatch_Popup_Sub_Info.WBP_PrivateMatch_Popup_Sub_Info_C.SetupCompletedInfo
 // 0x0001 (0x0001 - 0x0000)
@@ -418,9 +278,7 @@ struct WBP_PrivateMatch_Popup_Sub_Info_C_SetupCompletedInfo final
 public:
 	bool                                          bJoin_0;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PrivateMatch_Popup_Sub_Info_C_SetupCompletedInfo) == 0x000001, "Wrong alignment on WBP_PrivateMatch_Popup_Sub_Info_C_SetupCompletedInfo");
-static_assert(sizeof(WBP_PrivateMatch_Popup_Sub_Info_C_SetupCompletedInfo) == 0x000001, "Wrong size on WBP_PrivateMatch_Popup_Sub_Info_C_SetupCompletedInfo");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_SetupCompletedInfo, bJoin_0) == 0x000000, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_SetupCompletedInfo::bJoin_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PrivateMatch_Popup_Sub_Info_C_SetupCompletedInfo;
 
 // Function WBP_PrivateMatch_Popup_Sub_Info.WBP_PrivateMatch_Popup_Sub_Info_C.SetUploadCount
 // 0x0008 (0x0008 - 0x0000)
@@ -430,10 +288,7 @@ public:
 	int32                                         UploadCount;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         MaxCount;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PrivateMatch_Popup_Sub_Info_C_SetUploadCount) == 0x000004, "Wrong alignment on WBP_PrivateMatch_Popup_Sub_Info_C_SetUploadCount");
-static_assert(sizeof(WBP_PrivateMatch_Popup_Sub_Info_C_SetUploadCount) == 0x000008, "Wrong size on WBP_PrivateMatch_Popup_Sub_Info_C_SetUploadCount");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_SetUploadCount, UploadCount) == 0x000000, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_SetUploadCount::UploadCount' has a wrong offset!");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_SetUploadCount, MaxCount) == 0x000004, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_SetUploadCount::MaxCount' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PrivateMatch_Popup_Sub_Info_C_SetUploadCount;
 
 // Function WBP_PrivateMatch_Popup_Sub_Info.WBP_PrivateMatch_Popup_Sub_Info_C.SetUploadPercentage
 // 0x0008 (0x0008 - 0x0000)
@@ -442,9 +297,7 @@ struct WBP_PrivateMatch_Popup_Sub_Info_C_SetUploadPercentage final
 public:
 	double                                        InRate;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PrivateMatch_Popup_Sub_Info_C_SetUploadPercentage) == 0x000008, "Wrong alignment on WBP_PrivateMatch_Popup_Sub_Info_C_SetUploadPercentage");
-static_assert(sizeof(WBP_PrivateMatch_Popup_Sub_Info_C_SetUploadPercentage) == 0x000008, "Wrong size on WBP_PrivateMatch_Popup_Sub_Info_C_SetUploadPercentage");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_SetUploadPercentage, InRate) == 0x000000, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_SetUploadPercentage::InRate' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PrivateMatch_Popup_Sub_Info_C_SetUploadPercentage;
 
 // Function WBP_PrivateMatch_Popup_Sub_Info.WBP_PrivateMatch_Popup_Sub_Info_C.SetupWaitingInfo
 // 0x0001 (0x0001 - 0x0000)
@@ -453,9 +306,7 @@ struct WBP_PrivateMatch_Popup_Sub_Info_C_SetupWaitingInfo final
 public:
 	bool                                          bJoin_0;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PrivateMatch_Popup_Sub_Info_C_SetupWaitingInfo) == 0x000001, "Wrong alignment on WBP_PrivateMatch_Popup_Sub_Info_C_SetupWaitingInfo");
-static_assert(sizeof(WBP_PrivateMatch_Popup_Sub_Info_C_SetupWaitingInfo) == 0x000001, "Wrong size on WBP_PrivateMatch_Popup_Sub_Info_C_SetupWaitingInfo");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_SetupWaitingInfo, bJoin_0) == 0x000000, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_SetupWaitingInfo::bJoin_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PrivateMatch_Popup_Sub_Info_C_SetupWaitingInfo;
 
 // Function WBP_PrivateMatch_Popup_Sub_Info.WBP_PrivateMatch_Popup_Sub_Info_C.SetWidgetSwitcherIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -464,9 +315,7 @@ struct WBP_PrivateMatch_Popup_Sub_Info_C_SetWidgetSwitcherIndex final
 public:
 	int32                                         SwitcherIndex;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PrivateMatch_Popup_Sub_Info_C_SetWidgetSwitcherIndex) == 0x000004, "Wrong alignment on WBP_PrivateMatch_Popup_Sub_Info_C_SetWidgetSwitcherIndex");
-static_assert(sizeof(WBP_PrivateMatch_Popup_Sub_Info_C_SetWidgetSwitcherIndex) == 0x000004, "Wrong size on WBP_PrivateMatch_Popup_Sub_Info_C_SetWidgetSwitcherIndex");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_SetWidgetSwitcherIndex, SwitcherIndex) == 0x000000, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_SetWidgetSwitcherIndex::SwitcherIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PrivateMatch_Popup_Sub_Info_C_SetWidgetSwitcherIndex;
 
 // Function WBP_PrivateMatch_Popup_Sub_Info.WBP_PrivateMatch_Popup_Sub_Info_C.StartGhostUploadAll
 // 0x0004 (0x0004 - 0x0000)
@@ -475,9 +324,7 @@ struct WBP_PrivateMatch_Popup_Sub_Info_C_StartGhostUploadAll final
 public:
 	int32                                         MaxCount;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PrivateMatch_Popup_Sub_Info_C_StartGhostUploadAll) == 0x000004, "Wrong alignment on WBP_PrivateMatch_Popup_Sub_Info_C_StartGhostUploadAll");
-static_assert(sizeof(WBP_PrivateMatch_Popup_Sub_Info_C_StartGhostUploadAll) == 0x000004, "Wrong size on WBP_PrivateMatch_Popup_Sub_Info_C_StartGhostUploadAll");
-static_assert(offsetof(WBP_PrivateMatch_Popup_Sub_Info_C_StartGhostUploadAll, MaxCount) == 0x000000, "Member 'WBP_PrivateMatch_Popup_Sub_Info_C_StartGhostUploadAll::MaxCount' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PrivateMatch_Popup_Sub_Info_C_StartGhostUploadAll;
 
 }
 

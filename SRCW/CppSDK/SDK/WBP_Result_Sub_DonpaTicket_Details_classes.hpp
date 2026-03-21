@@ -87,60 +87,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Result_Sub_DonpaTicket_Details_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Result_Sub_DonpaTicket_Details_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Result_Sub_DonpaTicket_Details_C")
 	}
 	static class UWBP_Result_Sub_DonpaTicket_Details_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Result_Sub_DonpaTicket_Details_C>();
 	}
 };
-static_assert(alignof(UWBP_Result_Sub_DonpaTicket_Details_C) == 0x000008, "Wrong alignment on UWBP_Result_Sub_DonpaTicket_Details_C");
-static_assert(sizeof(UWBP_Result_Sub_DonpaTicket_Details_C) == 0x000458, "Wrong size on UWBP_Result_Sub_DonpaTicket_Details_C");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, Ticket_InLoop) == 0x0002E8, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::Ticket_InLoop' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, InLoop) == 0x0002F0, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::InLoop' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, base) == 0x0002F8, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, Base_Grow) == 0x000300, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::Base_Grow' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, CanvasPanel_4) == 0x000308, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::CanvasPanel_4' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, DonpaTicket) == 0x000310, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::DonpaTicket' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, DonpaTicket_Effect) == 0x000318, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::DonpaTicket_Effect' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, DSP_Honer_Effect) == 0x000320, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::DSP_Honer_Effect' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, PAT_HonerBase) == 0x000328, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::PAT_HonerBase' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, RSR_Effect) == 0x000330, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::RSR_Effect' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, RSR_Effect_01) == 0x000338, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::RSR_Effect_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, RSR_Effect_01_2) == 0x000340, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::RSR_Effect_01_2' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, RSR_Effect_01B_2) == 0x000348, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::RSR_Effect_01B_2' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, RSR_Effect_01C_2) == 0x000350, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::RSR_Effect_01C_2' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, RSR_Effect_01D_2) == 0x000358, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::RSR_Effect_01D_2' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, RSR_Effect_02) == 0x000360, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::RSR_Effect_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, RSR_Effect_02_2) == 0x000368, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::RSR_Effect_02_2' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, RSR_Effect_02B) == 0x000370, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::RSR_Effect_02B' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, RSR_Effect_02B_2) == 0x000378, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::RSR_Effect_02B_2' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, RSR_Effect_03) == 0x000380, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::RSR_Effect_03' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, RSR_Effect_03_2) == 0x000388, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::RSR_Effect_03_2' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, RSR_Effect_03B) == 0x000390, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::RSR_Effect_03B' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, RSR_Effect_03B_2) == 0x000398, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::RSR_Effect_03B_2' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, RSR_Effect_03C_2) == 0x0003A0, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::RSR_Effect_03C_2' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, RSR_Effect_03ｃ) == 0x0003A8, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::RSR_Effect_03ｃ' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, RSR_Effect_04) == 0x0003B0, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::RSR_Effect_04' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, RSR_Effect_04_2) == 0x0003B8, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::RSR_Effect_04_2' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, RSR_Effect_04B) == 0x0003C0, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::RSR_Effect_04B' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, RSR_Effect_04B_2) == 0x0003C8, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::RSR_Effect_04B_2' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, Star_01) == 0x0003D0, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::Star_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, Star_02) == 0x0003D8, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::Star_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, Star_03) == 0x0003E0, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::Star_03' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, TicketBase) == 0x0003E8, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::TicketBase' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, TXT_1st) == 0x0003F0, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::TXT_1st' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, TXT_2nd) == 0x0003F8, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::TXT_2nd' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, TXT_3rd) == 0x000400, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::TXT_3rd' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, TXT_Num_DonpaTicket) == 0x000408, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::TXT_Num_DonpaTicket' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, TXT_Num_th) == 0x000410, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::TXT_Num_th' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, WBP_FontScroll_Reward_Name) == 0x000418, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::WBP_FontScroll_Reward_Name' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, WBP_Result_Sub_RSR_5rings) == 0x000420, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::WBP_Result_Sub_RSR_5rings' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, WidgetSwitcher_BonusText) == 0x000428, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::WidgetSwitcher_BonusText' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, IsAnmSkip) == 0x000430, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::IsAnmSkip' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, TicketInLoopAnimFinishEvent) == 0x000438, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::TicketInLoopAnimFinishEvent' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_DonpaTicket_Details_C, RankTextList) == 0x000448, "Member 'UWBP_Result_Sub_DonpaTicket_Details_C::RankTextList' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Result_Sub_DonpaTicket_Details_C;
 
 }
 

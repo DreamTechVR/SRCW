@@ -21,9 +21,7 @@ struct BP_KingBoomBooProjectile_C_ExecuteUbergraph_BP_KingBoomBooProjectile fina
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_KingBoomBooProjectile_C_ExecuteUbergraph_BP_KingBoomBooProjectile) == 0x000004, "Wrong alignment on BP_KingBoomBooProjectile_C_ExecuteUbergraph_BP_KingBoomBooProjectile");
-static_assert(sizeof(BP_KingBoomBooProjectile_C_ExecuteUbergraph_BP_KingBoomBooProjectile) == 0x000004, "Wrong size on BP_KingBoomBooProjectile_C_ExecuteUbergraph_BP_KingBoomBooProjectile");
-static_assert(offsetof(BP_KingBoomBooProjectile_C_ExecuteUbergraph_BP_KingBoomBooProjectile, EntryPoint) == 0x000000, "Member 'BP_KingBoomBooProjectile_C_ExecuteUbergraph_BP_KingBoomBooProjectile::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_BP_KingBoomBooProjectile_C_ExecuteUbergraph_BP_KingBoomBooProjectile;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CriWareRuntime_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "CriWareRuntime_structs.hpp"
 #include "MovieScene_structs.hpp"
 
 
@@ -65,40 +65,7 @@ public:
 	uint8                                         Pad_1F1[0x3];                                      // 0x01F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_PlayAnimationByAsset_Position_ImplicitCast; // 0x01F4(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP) == 0x000008, "Wrong alignment on LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP");
-static_assert(sizeof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP) == 0x0001F8, "Wrong size on LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP, EntryPoint) == 0x000000, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP, K2Node_CustomEvent_In_RacerActor) == 0x000010, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP::K2Node_CustomEvent_In_RacerActor' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP, K2Node_CustomEvent_In_Index) == 0x000018, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP::K2Node_CustomEvent_In_Index' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP, K2Node_DynamicCast_AsVehicle_in_Race_Pawn) == 0x000020, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP::K2Node_DynamicCast_AsVehicle_in_Race_Pawn' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP, CallFunc_GetActiveVehicle_ReturnValue) == 0x000030, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP::CallFunc_GetActiveVehicle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP, K2Node_MakeStruct_AtomComponentParams) == 0x000038, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP::K2Node_MakeStruct_AtomComponentParams' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP, CallFunc_SpawnAtomSound2D_ReturnValue) == 0x0000A8, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP::CallFunc_SpawnAtomSound2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP, CallFunc_IsValid_ReturnValue) == 0x0000B0, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP, K2Node_MakeStruct_AtomComponentParams_1) == 0x0000B8, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP::K2Node_MakeStruct_AtomComponentParams_1' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP, CallFunc_SpawnAtomSound2D_ReturnValue_1) == 0x000128, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP::CallFunc_SpawnAtomSound2D_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP, CallFunc_GetDriverPose_ReturnValue) == 0x000130, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP::CallFunc_GetDriverPose_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP, CallFunc_GetSceneDriverAnimationAsset_Anim) == 0x000138, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP::CallFunc_GetSceneDriverAnimationAsset_Anim' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP, CallFunc_GetSceneDriverAnimationAsset_Time) == 0x000160, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP::CallFunc_GetSceneDriverAnimationAsset_Time' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP, CallFunc_GetSceneDriverAnimationAsset_bSkipFacialBlend) == 0x000168, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP::CallFunc_GetSceneDriverAnimationAsset_bSkipFacialBlend' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP, CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue) == 0x000170, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP::CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP, CallFunc_GetSequence_ReturnValue) == 0x000178, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP::CallFunc_GetSequence_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP, K2Node_DynamicCast_AsAnim________) == 0x000180, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP::K2Node_DynamicCast_AsAnim________' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP, K2Node_DynamicCast_bSuccess_1) == 0x000188, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP, CallFunc_GetBindings_ReturnValue) == 0x000190, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP::CallFunc_GetBindings_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP, CallFunc_PlayAnimationByAsset_ReturnValue) == 0x0001A0, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP::CallFunc_PlayAnimationByAsset_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP, CallFunc_Array_Get_Item) == 0x0001A8, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP, CallFunc_Array_Length_ReturnValue) == 0x0001C0, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP, CallFunc_GetBindingID_ReturnValue) == 0x0001C4, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP::CallFunc_GetBindingID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP, CallFunc_Less_IntInt_ReturnValue) == 0x0001DC, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP, CallFunc_GetBoundActor_ReturnValue) == 0x0001E0, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP::CallFunc_GetBoundActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP, K2Node_DynamicCast_AsScene_Driver) == 0x0001E8, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP::K2Node_DynamicCast_AsScene_Driver' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP, K2Node_DynamicCast_bSuccess_2) == 0x0001F0, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP, CallFunc_PlayAnimationByAsset_Position_ImplicitCast) == 0x0001F4, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP::CallFunc_PlayAnimationByAsset_Position_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_LS_EntryRacers_FirstRacer_DirectorBP_C_ExecuteUbergraph_LS_EntryRacers_FirstRacer_DirectorBP;
 
 // Function LS_EntryRacers_FirstRacer.LS_EntryRacers_FirstRacer_DirectorBP_C.OnEnterRacer
 // 0x0010 (0x0010 - 0x0000)
@@ -108,10 +75,7 @@ public:
 	class AActor*                                 In_RacerActor;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         In_Index;                                          // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LS_EntryRacers_FirstRacer_DirectorBP_C_OnEnterRacer) == 0x000008, "Wrong alignment on LS_EntryRacers_FirstRacer_DirectorBP_C_OnEnterRacer");
-static_assert(sizeof(LS_EntryRacers_FirstRacer_DirectorBP_C_OnEnterRacer) == 0x000010, "Wrong size on LS_EntryRacers_FirstRacer_DirectorBP_C_OnEnterRacer");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_OnEnterRacer, In_RacerActor) == 0x000000, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_OnEnterRacer::In_RacerActor' has a wrong offset!");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_OnEnterRacer, In_Index) == 0x000008, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_OnEnterRacer::In_Index' has a wrong offset!");
+DUMPER7_ASSERTS_LS_EntryRacers_FirstRacer_DirectorBP_C_OnEnterRacer;
 
 // Function LS_EntryRacers_FirstRacer.LS_EntryRacers_FirstRacer_DirectorBP_C.SequenceEvent__ENTRYPOINTLS_EntryRacers_FirstRacer_DirectorBP
 // 0x0008 (0x0008 - 0x0000)
@@ -120,9 +84,7 @@ struct LS_EntryRacers_FirstRacer_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryR
 public:
 	class AActor*                                 In_RacerActor;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LS_EntryRacers_FirstRacer_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_FirstRacer_DirectorBP) == 0x000008, "Wrong alignment on LS_EntryRacers_FirstRacer_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_FirstRacer_DirectorBP");
-static_assert(sizeof(LS_EntryRacers_FirstRacer_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_FirstRacer_DirectorBP) == 0x000008, "Wrong size on LS_EntryRacers_FirstRacer_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_FirstRacer_DirectorBP");
-static_assert(offsetof(LS_EntryRacers_FirstRacer_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_FirstRacer_DirectorBP, In_RacerActor) == 0x000000, "Member 'LS_EntryRacers_FirstRacer_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_FirstRacer_DirectorBP::In_RacerActor' has a wrong offset!");
+DUMPER7_ASSERTS_LS_EntryRacers_FirstRacer_DirectorBP_C_SequenceEvent__ENTRYPOINTLS_EntryRacers_FirstRacer_DirectorBP;
 
 }
 

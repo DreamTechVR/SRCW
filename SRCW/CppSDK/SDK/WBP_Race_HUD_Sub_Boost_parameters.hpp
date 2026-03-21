@@ -30,14 +30,7 @@ public:
 	bool                                          CallFunc_IsFastSecondCharge_ReturnValue;           // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsFastFirstCharge_ReturnValue;            // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Boost_C_CheckGadget) == 0x000004, "Wrong alignment on WBP_Race_HUD_Sub_Boost_C_CheckGadget");
-static_assert(sizeof(WBP_Race_HUD_Sub_Boost_C_CheckGadget) == 0x000010, "Wrong size on WBP_Race_HUD_Sub_Boost_C_CheckGadget");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_CheckGadget, PlayerIndex_0) == 0x000000, "Member 'WBP_Race_HUD_Sub_Boost_C_CheckGadget::PlayerIndex_0' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_CheckGadget, isSingle) == 0x000004, "Member 'WBP_Race_HUD_Sub_Boost_C_CheckGadget::isSingle' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_CheckGadget, CallFunc_GetRacerIndexByPlayerID_ReturnValue) == 0x000008, "Member 'WBP_Race_HUD_Sub_Boost_C_CheckGadget::CallFunc_GetRacerIndexByPlayerID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_CheckGadget, CallFunc_IsFastThirdCharge_ReturnValue) == 0x00000C, "Member 'WBP_Race_HUD_Sub_Boost_C_CheckGadget::CallFunc_IsFastThirdCharge_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_CheckGadget, CallFunc_IsFastSecondCharge_ReturnValue) == 0x00000D, "Member 'WBP_Race_HUD_Sub_Boost_C_CheckGadget::CallFunc_IsFastSecondCharge_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_CheckGadget, CallFunc_IsFastFirstCharge_ReturnValue) == 0x00000E, "Member 'WBP_Race_HUD_Sub_Boost_C_CheckGadget::CallFunc_IsFastFirstCharge_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Boost_C_CheckGadget;
 
 // Function WBP_Race_HUD_Sub_Boost.WBP_Race_HUD_Sub_Boost_C.ExecuteUbergraph_WBP_Race_HUD_Sub_Boost
 // 0x0030 (0x0030 - 0x0000)
@@ -52,13 +45,7 @@ public:
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UImage*>                         K2Node_MakeArray_Array;                            // 0x0020(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Boost_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Boost) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Boost_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Boost");
-static_assert(sizeof(WBP_Race_HUD_Sub_Boost_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Boost) == 0x000030, "Wrong size on WBP_Race_HUD_Sub_Boost_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Boost");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Boost, EntryPoint) == 0x000000, "Member 'WBP_Race_HUD_Sub_Boost_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Boost::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Boost, K2Node_Event_IsDesignTime) == 0x000004, "Member 'WBP_Race_HUD_Sub_Boost_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Boost::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Boost, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'WBP_Race_HUD_Sub_Boost_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Boost::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Boost, CallFunc_GetEndTime_ReturnValue) == 0x000018, "Member 'WBP_Race_HUD_Sub_Boost_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Boost::CallFunc_GetEndTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Boost, K2Node_MakeArray_Array) == 0x000020, "Member 'WBP_Race_HUD_Sub_Boost_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Boost::K2Node_MakeArray_Array' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Boost_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Boost;
 
 // Function WBP_Race_HUD_Sub_Boost.WBP_Race_HUD_Sub_Boost_C.PlayJustBoostAnimation
 // 0x0030 (0x0030 - 0x0000)
@@ -79,18 +66,7 @@ public:
 	struct FSoundHandle                           CallFunc_SetPanSplit_ReturnValue_1;                // 0x0028(0x0004)()
 	struct FSoundHandle                           CallFunc_SetPanSplit_ReturnValue_2;                // 0x002C(0x0004)()
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Boost_C_PlayJustBoostAnimation) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Boost_C_PlayJustBoostAnimation");
-static_assert(sizeof(WBP_Race_HUD_Sub_Boost_C_PlayJustBoostAnimation) == 0x000030, "Wrong size on WBP_Race_HUD_Sub_Boost_C_PlayJustBoostAnimation");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_PlayJustBoostAnimation, Level) == 0x000000, "Member 'WBP_Race_HUD_Sub_Boost_C_PlayJustBoostAnimation::Level' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_PlayJustBoostAnimation, CallFunc_IsViewGhostReplay_ReturnValue) == 0x000004, "Member 'WBP_Race_HUD_Sub_Boost_C_PlayJustBoostAnimation::CallFunc_IsViewGhostReplay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_PlayJustBoostAnimation, CallFunc_GetEndTime_ReturnValue) == 0x000008, "Member 'WBP_Race_HUD_Sub_Boost_C_PlayJustBoostAnimation::CallFunc_GetEndTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_PlayJustBoostAnimation, CallFunc_Percent_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_Race_HUD_Sub_Boost_C_PlayJustBoostAnimation::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_PlayJustBoostAnimation, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000010, "Member 'WBP_Race_HUD_Sub_Boost_C_PlayJustBoostAnimation::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_PlayJustBoostAnimation, CallFunc_SoundPlay_ReturnValue) == 0x000014, "Member 'WBP_Race_HUD_Sub_Boost_C_PlayJustBoostAnimation::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_PlayJustBoostAnimation, CallFunc_SetPanSplit_ReturnValue) == 0x000018, "Member 'WBP_Race_HUD_Sub_Boost_C_PlayJustBoostAnimation::CallFunc_SetPanSplit_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_PlayJustBoostAnimation, CallFunc_PlayAnimation_ReturnValue) == 0x000020, "Member 'WBP_Race_HUD_Sub_Boost_C_PlayJustBoostAnimation::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_PlayJustBoostAnimation, CallFunc_SetPanSplit_ReturnValue_1) == 0x000028, "Member 'WBP_Race_HUD_Sub_Boost_C_PlayJustBoostAnimation::CallFunc_SetPanSplit_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_PlayJustBoostAnimation, CallFunc_SetPanSplit_ReturnValue_2) == 0x00002C, "Member 'WBP_Race_HUD_Sub_Boost_C_PlayJustBoostAnimation::CallFunc_SetPanSplit_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Boost_C_PlayJustBoostAnimation;
 
 // Function WBP_Race_HUD_Sub_Boost.WBP_Race_HUD_Sub_Boost_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -99,9 +75,7 @@ struct WBP_Race_HUD_Sub_Boost_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Boost_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_Race_HUD_Sub_Boost_C_PreConstruct");
-static_assert(sizeof(WBP_Race_HUD_Sub_Boost_C_PreConstruct) == 0x000001, "Wrong size on WBP_Race_HUD_Sub_Boost_C_PreConstruct");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_Race_HUD_Sub_Boost_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Boost_C_PreConstruct;
 
 // Function WBP_Race_HUD_Sub_Boost.WBP_Race_HUD_Sub_Boost_C.SetChargeInfo
 // 0x00B0 (0x00B0 - 0x0000)
@@ -154,43 +128,7 @@ public:
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_1; // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Boost_C_SetChargeInfo");
-static_assert(sizeof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo) == 0x0000B0, "Wrong size on WBP_Race_HUD_Sub_Boost_C_SetChargeInfo");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, ChargeLevel_0) == 0x000000, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::ChargeLevel_0' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, ChargeRate) == 0x000008, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::ChargeRate' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, Temp_int_Array_Index_Variable) == 0x000010, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000018, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, CallFunc_Not_PreBool_ReturnValue) == 0x000020, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000021, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, Temp_byte_Variable) == 0x000022, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000023, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, CallFunc_BooleanAND_ReturnValue) == 0x000024, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, CallFunc_PlayAnimation_ReturnValue) == 0x000028, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, Temp_byte_Variable_1) == 0x000030, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, CallFunc_BooleanOR_ReturnValue) == 0x000031, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000032, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, CallFunc_NotEqual_IntInt_ReturnValue_1) == 0x000033, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::CallFunc_NotEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, CallFunc_BooleanAND_ReturnValue_1) == 0x000034, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, CallFunc_PlayAnimation_ReturnValue_1) == 0x000038, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, Temp_bool_Variable) == 0x000040, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, CallFunc_Subtract_IntInt_ReturnValue) == 0x000044, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000048, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, CallFunc_Greater_IntInt_ReturnValue) == 0x000050, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, CallFunc_Greater_IntInt_ReturnValue_1) == 0x000051, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, K2Node_Select_Default) == 0x000052, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, CallFunc_Less_IntInt_ReturnValue) == 0x000053, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, CallFunc_PlayAnimation_ReturnValue_2) == 0x000058, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, CallFunc_Greater_IntInt_ReturnValue_2) == 0x000060, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::CallFunc_Greater_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, Temp_int_Loop_Counter_Variable) == 0x000064, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, CallFunc_Add_IntInt_ReturnValue) == 0x000068, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000070, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, K2Node_MakeArray_Array) == 0x000078, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, CallFunc_Array_Length_ReturnValue) == 0x000088, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, CallFunc_Array_Get_Item) == 0x000090, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, CallFunc_Less_IntInt_ReturnValue_1) == 0x000098, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x0000A0, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x0000A8, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetChargeInfo, CallFunc_SetScalarParameterValue_Value_ImplicitCast_1) == 0x0000AC, "Member 'WBP_Race_HUD_Sub_Boost_C_SetChargeInfo::CallFunc_SetScalarParameterValue_Value_ImplicitCast_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Boost_C_SetChargeInfo;
 
 // Function WBP_Race_HUD_Sub_Boost.WBP_Race_HUD_Sub_Boost_C.SetHUDVisivle
 // 0x0006 (0x0006 - 0x0000)
@@ -204,14 +142,7 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Boost_C_SetHUDVisivle) == 0x000001, "Wrong alignment on WBP_Race_HUD_Sub_Boost_C_SetHUDVisivle");
-static_assert(sizeof(WBP_Race_HUD_Sub_Boost_C_SetHUDVisivle) == 0x000006, "Wrong size on WBP_Race_HUD_Sub_Boost_C_SetHUDVisivle");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetHUDVisivle, Visible) == 0x000000, "Member 'WBP_Race_HUD_Sub_Boost_C_SetHUDVisivle::Visible' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetHUDVisivle, Temp_byte_Variable) == 0x000001, "Member 'WBP_Race_HUD_Sub_Boost_C_SetHUDVisivle::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetHUDVisivle, Temp_byte_Variable_1) == 0x000002, "Member 'WBP_Race_HUD_Sub_Boost_C_SetHUDVisivle::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetHUDVisivle, CallFunc_BooleanOR_ReturnValue) == 0x000003, "Member 'WBP_Race_HUD_Sub_Boost_C_SetHUDVisivle::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetHUDVisivle, Temp_bool_Variable) == 0x000004, "Member 'WBP_Race_HUD_Sub_Boost_C_SetHUDVisivle::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetHUDVisivle, K2Node_Select_Default) == 0x000005, "Member 'WBP_Race_HUD_Sub_Boost_C_SetHUDVisivle::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Boost_C_SetHUDVisivle;
 
 // Function WBP_Race_HUD_Sub_Boost.WBP_Race_HUD_Sub_Boost_C.SetQuickDriftCharge
 // 0x0020 (0x0020 - 0x0000)
@@ -225,12 +156,7 @@ public:
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Boost_C_SetQuickDriftCharge) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Boost_C_SetQuickDriftCharge");
-static_assert(sizeof(WBP_Race_HUD_Sub_Boost_C_SetQuickDriftCharge) == 0x000020, "Wrong size on WBP_Race_HUD_Sub_Boost_C_SetQuickDriftCharge");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetQuickDriftCharge, IsFever) == 0x000000, "Member 'WBP_Race_HUD_Sub_Boost_C_SetQuickDriftCharge::IsFever' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetQuickDriftCharge, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_Race_HUD_Sub_Boost_C_SetQuickDriftCharge::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetQuickDriftCharge, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000010, "Member 'WBP_Race_HUD_Sub_Boost_C_SetQuickDriftCharge::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Boost_C_SetQuickDriftCharge, CallFunc_PlayAnimation_ReturnValue_1) == 0x000018, "Member 'WBP_Race_HUD_Sub_Boost_C_SetQuickDriftCharge::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Boost_C_SetQuickDriftCharge;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -76,53 +76,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CourseSwitch_ThumbWindow_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CourseSwitch_ThumbWindow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CourseSwitch_ThumbWindow_C")
 	}
 	static class UWBP_CourseSwitch_ThumbWindow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CourseSwitch_ThumbWindow_C>();
 	}
 };
-static_assert(alignof(UWBP_CourseSwitch_ThumbWindow_C) == 0x000008, "Wrong alignment on UWBP_CourseSwitch_ThumbWindow_C");
-static_assert(sizeof(UWBP_CourseSwitch_ThumbWindow_C) == 0x000550, "Wrong size on UWBP_CourseSwitch_ThumbWindow_C");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, UberGraphFrame) == 0x000420, "Member 'UWBP_CourseSwitch_ThumbWindow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CMN_Sub_Tab) == 0x000428, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CMN_Sub_Tab' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CMN_SubMenu_Btn_AllOff) == 0x000430, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CMN_SubMenu_Btn_AllOff' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CMN_SubMenu_Btn_AllOn) == 0x000438, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CMN_SubMenu_Btn_AllOn' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CourseSwitch_Sub_CourseIcon_10) == 0x000440, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CourseSwitch_Sub_CourseIcon_10' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CourseSwitch_Sub_CourseIcon_11) == 0x000448, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CourseSwitch_Sub_CourseIcon_11' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CourseSwitch_Sub_CourseIcon_12) == 0x000450, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CourseSwitch_Sub_CourseIcon_12' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CourseSwitch_Sub_CourseIcon_13) == 0x000458, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CourseSwitch_Sub_CourseIcon_13' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CourseSwitch_Sub_CourseIcon_14) == 0x000460, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CourseSwitch_Sub_CourseIcon_14' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CourseSwitch_Sub_CourseIcon_15) == 0x000468, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CourseSwitch_Sub_CourseIcon_15' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CourseSwitch_Sub_CourseIcon_16) == 0x000470, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CourseSwitch_Sub_CourseIcon_16' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CourseSwitch_Sub_CourseIcon_17) == 0x000478, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CourseSwitch_Sub_CourseIcon_17' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CourseSwitch_Sub_CourseIcon_18) == 0x000480, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CourseSwitch_Sub_CourseIcon_18' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CourseSwitch_Sub_CourseIcon_19) == 0x000488, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CourseSwitch_Sub_CourseIcon_19' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CourseSwitch_Sub_CourseIcon_20) == 0x000490, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CourseSwitch_Sub_CourseIcon_20' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CourseSwitch_Sub_CourseIcon_21) == 0x000498, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CourseSwitch_Sub_CourseIcon_21' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CourseSwitch_Sub_CourseIcon_22) == 0x0004A0, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CourseSwitch_Sub_CourseIcon_22' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CourseSwitch_Sub_CourseIcon_23) == 0x0004A8, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CourseSwitch_Sub_CourseIcon_23' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CourseSwitch_Sub_CourseIcon_24) == 0x0004B0, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CourseSwitch_Sub_CourseIcon_24' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CourseSwitch_Sub_CourseIcon_25) == 0x0004B8, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CourseSwitch_Sub_CourseIcon_25' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CourseSwitch_Sub_CourseIcon_26) == 0x0004C0, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CourseSwitch_Sub_CourseIcon_26' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CourseSwitch_Sub_CourseIcon_27) == 0x0004C8, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CourseSwitch_Sub_CourseIcon_27' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CourseSwitch_Sub_CourseIcon_28) == 0x0004D0, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CourseSwitch_Sub_CourseIcon_28' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CourseSwitch_Sub_CourseIcon_29) == 0x0004D8, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CourseSwitch_Sub_CourseIcon_29' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CourseSwitch_Sub_CourseIcon_30) == 0x0004E0, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CourseSwitch_Sub_CourseIcon_30' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CourseSwitch_Sub_CourseIcon_31) == 0x0004E8, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CourseSwitch_Sub_CourseIcon_31' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CourseSwitch_Sub_CourseIcon_32) == 0x0004F0, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CourseSwitch_Sub_CourseIcon_32' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CourseSwitch_Sub_CourseIcon_01) == 0x0004F8, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CourseSwitch_Sub_CourseIcon_01' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CourseSwitch_Sub_CourseIcon_02) == 0x000500, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CourseSwitch_Sub_CourseIcon_02' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CourseSwitch_Sub_CourseIcon_03) == 0x000508, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CourseSwitch_Sub_CourseIcon_03' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CourseSwitch_Sub_CourseIcon_04) == 0x000510, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CourseSwitch_Sub_CourseIcon_04' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CourseSwitch_Sub_CourseIcon_05) == 0x000518, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CourseSwitch_Sub_CourseIcon_05' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CourseSwitch_Sub_CourseIcon_06) == 0x000520, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CourseSwitch_Sub_CourseIcon_06' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CourseSwitch_Sub_CourseIcon_07) == 0x000528, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CourseSwitch_Sub_CourseIcon_07' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CourseSwitch_Sub_CourseIcon_08) == 0x000530, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CourseSwitch_Sub_CourseIcon_08' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, WBP_CourseSwitch_Sub_CourseIcon_09) == 0x000538, "Member 'UWBP_CourseSwitch_ThumbWindow_C::WBP_CourseSwitch_Sub_CourseIcon_09' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, Window_base) == 0x000540, "Member 'UWBP_CourseSwitch_ThumbWindow_C::Window_base' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_ThumbWindow_C, IsGuest) == 0x000548, "Member 'UWBP_CourseSwitch_ThumbWindow_C::IsGuest' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CourseSwitch_ThumbWindow_C;
 
 }
 

@@ -23,15 +23,18 @@ class ABP_NpcSkeletalActor_C final : public ASimpleNPCSkeletalActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_NpcSkeletalActor_C">();
+		BP_STATIC_CLASS_IMPL("BP_NpcSkeletalActor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_NpcSkeletalActor_C")
 	}
 	static class ABP_NpcSkeletalActor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_NpcSkeletalActor_C>();
 	}
 };
-static_assert(alignof(ABP_NpcSkeletalActor_C) == 0x000008, "Wrong alignment on ABP_NpcSkeletalActor_C");
-static_assert(sizeof(ABP_NpcSkeletalActor_C) == 0x0005E0, "Wrong size on ABP_NpcSkeletalActor_C");
+DUMPER7_ASSERTS_ABP_NpcSkeletalActor_C;
 
 }
 

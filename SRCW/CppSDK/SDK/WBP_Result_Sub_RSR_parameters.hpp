@@ -41,26 +41,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsAnimationPlaying_ReturnValue_2;         // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR) == 0x000008, "Wrong alignment on WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR");
-static_assert(sizeof(WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR) == 0x000068, "Wrong size on WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR");
-static_assert(offsetof(WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR, EntryPoint) == 0x000000, "Member 'WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000005, "Member 'WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR, CallFunc_PlayAnimation_ReturnValue_1) == 0x000010, "Member 'WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR, CallFunc_IsValid_ReturnValue_1) == 0x000018, "Member 'WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR, CallFunc_IsAnimationPlaying_ReturnValue_1) == 0x000019, "Member 'WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR::CallFunc_IsAnimationPlaying_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR, K2Node_CreateDelegate_OutputDelegate) == 0x00001C, "Member 'WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR, K2Node_Event_bPickUp) == 0x00002C, "Member 'WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR::K2Node_Event_bPickUp' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR, K2Node_SwitchEnum_CmpSuccess) == 0x00002D, "Member 'WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR, K2Node_SwitchEnum_CmpSuccess_1) == 0x00002E, "Member 'WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR, CallFunc_PlayAnimation_ReturnValue_2) == 0x000030, "Member 'WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR, CallFunc_PlayAnimation_ReturnValue_3) == 0x000038, "Member 'WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR, CallFunc_PlayAnimation_ReturnValue_4) == 0x000040, "Member 'WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR::CallFunc_PlayAnimation_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR, K2Node_CreateDelegate_OutputDelegate_1) == 0x000048, "Member 'WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR, CallFunc_PlayAnimation_ReturnValue_5) == 0x000058, "Member 'WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR::CallFunc_PlayAnimation_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR, CallFunc_IsValid_ReturnValue_2) == 0x000060, "Member 'WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR, CallFunc_IsAnimationPlaying_ReturnValue_2) == 0x000061, "Member 'WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR::CallFunc_IsAnimationPlaying_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_Sub_RSR_C_ExecuteUbergraph_WBP_Result_Sub_RSR;
 
 // Function WBP_Result_Sub_RSR.WBP_Result_Sub_RSR_C.InitRing
 // 0x0001 (0x0001 - 0x0000)
@@ -69,9 +50,7 @@ struct WBP_Result_Sub_RSR_C_InitRing final
 public:
 	bool                                          bPickUp;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_Sub_RSR_C_InitRing) == 0x000001, "Wrong alignment on WBP_Result_Sub_RSR_C_InitRing");
-static_assert(sizeof(WBP_Result_Sub_RSR_C_InitRing) == 0x000001, "Wrong size on WBP_Result_Sub_RSR_C_InitRing");
-static_assert(offsetof(WBP_Result_Sub_RSR_C_InitRing, bPickUp) == 0x000000, "Member 'WBP_Result_Sub_RSR_C_InitRing::bPickUp' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_Sub_RSR_C_InitRing;
 
 // Function WBP_Result_Sub_RSR.WBP_Result_Sub_RSR_C.Play Level Up Impl
 // 0x0008 (0x0008 - 0x0000)
@@ -80,9 +59,7 @@ struct WBP_Result_Sub_RSR_C_Play_Level_Up_Impl final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_Sub_RSR_C_Play_Level_Up_Impl) == 0x000008, "Wrong alignment on WBP_Result_Sub_RSR_C_Play_Level_Up_Impl");
-static_assert(sizeof(WBP_Result_Sub_RSR_C_Play_Level_Up_Impl) == 0x000008, "Wrong size on WBP_Result_Sub_RSR_C_Play_Level_Up_Impl");
-static_assert(offsetof(WBP_Result_Sub_RSR_C_Play_Level_Up_Impl, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_Result_Sub_RSR_C_Play_Level_Up_Impl::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_Sub_RSR_C_Play_Level_Up_Impl;
 
 // Function WBP_Result_Sub_RSR.WBP_Result_Sub_RSR_C.PlayBonusGetImpl
 // 0x0008 (0x0008 - 0x0000)
@@ -91,9 +68,7 @@ struct WBP_Result_Sub_RSR_C_PlayBonusGetImpl final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_Sub_RSR_C_PlayBonusGetImpl) == 0x000008, "Wrong alignment on WBP_Result_Sub_RSR_C_PlayBonusGetImpl");
-static_assert(sizeof(WBP_Result_Sub_RSR_C_PlayBonusGetImpl) == 0x000008, "Wrong size on WBP_Result_Sub_RSR_C_PlayBonusGetImpl");
-static_assert(offsetof(WBP_Result_Sub_RSR_C_PlayBonusGetImpl, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_Result_Sub_RSR_C_PlayBonusGetImpl::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_Sub_RSR_C_PlayBonusGetImpl;
 
 }
 

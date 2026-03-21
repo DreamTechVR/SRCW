@@ -17,23 +17,29 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_StatusInfo_Sub_Honor.WBP_StatusInfo_Sub_Honor_C
-// 0x0068 (0x0348 - 0x02E0)
+// 0x0098 (0x0378 - 0x02E0)
 class UWBP_StatusInfo_Sub_Honor_C final : public UUserWidget
 {
 public:
 	class UImage*                                 base;                                              // 0x02E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Base02;                                            // 0x02E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Base02_1;                                          // 0x02F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Base_02;                                           // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Base_02_line;                                      // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 RaceFlag_Left;                                     // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 RaceFlag_Right;                                    // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionRichTextBlock*                    TXT_HeaderRank;                                    // 0x0318(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_StatusInfo_Sub_HonorTable_01_C*    WBP_StatusInfo_Sub_HonorTable_01;                  // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_StatusInfo_Sub_HonorTable_01_C*    WBP_StatusInfo_Sub_HonorTable_01_34;               // 0x0328(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_StatusInfo_Sub_HonorTable_01_C*    WBP_StatusInfo_Sub_HonorTable_01_60;               // 0x0330(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_StatusInfo_Sub_HonorTable_01_C*    WBP_StatusInfo_Sub_HonorTable_01_122;              // 0x0338(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_StatusInfo_Sub_HonorTable_02_C*    WBP_StatusInfo_Sub_HonorTable_02;                  // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 base_2;                                            // 0x02E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Base02;                                            // 0x02F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Base02_1;                                          // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Base_02;                                           // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Base_02_line;                                      // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 BG_UV_01;                                          // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 BG_UV_02;                                          // 0x0318(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 BG_UV_Arc;                                         // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 RaceFlag_Left;                                     // 0x0328(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 RaceFlag_Right;                                    // 0x0330(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_HeaderRank;                                    // 0x0338(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_StatusInfo_Sub_HonorTable_01_C*    WBP_StatusInfo_Sub_HonorTable_01;                  // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_StatusInfo_Sub_HonorTable_01_C*    WBP_StatusInfo_Sub_HonorTable_01_34;               // 0x0348(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_StatusInfo_Sub_HonorTable_01_C*    WBP_StatusInfo_Sub_HonorTable_01_60;               // 0x0350(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_StatusInfo_Sub_HonorTable_01_C*    WBP_StatusInfo_Sub_HonorTable_01_122;              // 0x0358(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_StatusInfo_Sub_HonorTable_02_C*    WBP_StatusInfo_Sub_HonorTable_02;                  // 0x0360(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_System_Sub_LoadingSonic_C*         WBP_System_Sub_LoadingSonic;                       // 0x0368(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        WidgetSwitcher_HonorInfo;                          // 0x0370(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void SetupRankingReward(int32 Index_0, int32 HonorId, int32 BottomRank);
@@ -42,28 +48,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_StatusInfo_Sub_Honor_C">();
+		BP_STATIC_CLASS_IMPL("WBP_StatusInfo_Sub_Honor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_StatusInfo_Sub_Honor_C")
 	}
 	static class UWBP_StatusInfo_Sub_Honor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_StatusInfo_Sub_Honor_C>();
 	}
 };
-static_assert(alignof(UWBP_StatusInfo_Sub_Honor_C) == 0x000008, "Wrong alignment on UWBP_StatusInfo_Sub_Honor_C");
-static_assert(sizeof(UWBP_StatusInfo_Sub_Honor_C) == 0x000348, "Wrong size on UWBP_StatusInfo_Sub_Honor_C");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Honor_C, base) == 0x0002E0, "Member 'UWBP_StatusInfo_Sub_Honor_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Honor_C, Base02) == 0x0002E8, "Member 'UWBP_StatusInfo_Sub_Honor_C::Base02' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Honor_C, Base02_1) == 0x0002F0, "Member 'UWBP_StatusInfo_Sub_Honor_C::Base02_1' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Honor_C, Base_02) == 0x0002F8, "Member 'UWBP_StatusInfo_Sub_Honor_C::Base_02' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Honor_C, Base_02_line) == 0x000300, "Member 'UWBP_StatusInfo_Sub_Honor_C::Base_02_line' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Honor_C, RaceFlag_Left) == 0x000308, "Member 'UWBP_StatusInfo_Sub_Honor_C::RaceFlag_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Honor_C, RaceFlag_Right) == 0x000310, "Member 'UWBP_StatusInfo_Sub_Honor_C::RaceFlag_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Honor_C, TXT_HeaderRank) == 0x000318, "Member 'UWBP_StatusInfo_Sub_Honor_C::TXT_HeaderRank' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Honor_C, WBP_StatusInfo_Sub_HonorTable_01) == 0x000320, "Member 'UWBP_StatusInfo_Sub_Honor_C::WBP_StatusInfo_Sub_HonorTable_01' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Honor_C, WBP_StatusInfo_Sub_HonorTable_01_34) == 0x000328, "Member 'UWBP_StatusInfo_Sub_Honor_C::WBP_StatusInfo_Sub_HonorTable_01_34' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Honor_C, WBP_StatusInfo_Sub_HonorTable_01_60) == 0x000330, "Member 'UWBP_StatusInfo_Sub_Honor_C::WBP_StatusInfo_Sub_HonorTable_01_60' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Honor_C, WBP_StatusInfo_Sub_HonorTable_01_122) == 0x000338, "Member 'UWBP_StatusInfo_Sub_Honor_C::WBP_StatusInfo_Sub_HonorTable_01_122' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Honor_C, WBP_StatusInfo_Sub_HonorTable_02) == 0x000340, "Member 'UWBP_StatusInfo_Sub_Honor_C::WBP_StatusInfo_Sub_HonorTable_02' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_StatusInfo_Sub_Honor_C;
 
 }
 

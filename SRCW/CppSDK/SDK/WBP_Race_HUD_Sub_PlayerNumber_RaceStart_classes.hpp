@@ -42,24 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_HUD_Sub_PlayerNumber_RaceStart_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_HUD_Sub_PlayerNumber_RaceStart_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_HUD_Sub_PlayerNumber_RaceStart_C")
 	}
 	static class UWBP_Race_HUD_Sub_PlayerNumber_RaceStart_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_HUD_Sub_PlayerNumber_RaceStart_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_HUD_Sub_PlayerNumber_RaceStart_C) == 0x000008, "Wrong alignment on UWBP_Race_HUD_Sub_PlayerNumber_RaceStart_C");
-static_assert(sizeof(UWBP_Race_HUD_Sub_PlayerNumber_RaceStart_C) == 0x000328, "Wrong size on UWBP_Race_HUD_Sub_PlayerNumber_RaceStart_C");
-static_assert(offsetof(UWBP_Race_HUD_Sub_PlayerNumber_RaceStart_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Race_HUD_Sub_PlayerNumber_RaceStart_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_PlayerNumber_RaceStart_C, PlayerNumber_RaceStart_InOut) == 0x0002E8, "Member 'UWBP_Race_HUD_Sub_PlayerNumber_RaceStart_C::PlayerNumber_RaceStart_InOut' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_PlayerNumber_RaceStart_C, Arrow) == 0x0002F0, "Member 'UWBP_Race_HUD_Sub_PlayerNumber_RaceStart_C::Arrow' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_PlayerNumber_RaceStart_C, CanvasPanel_PlayerNumber_RaceStart) == 0x0002F8, "Member 'UWBP_Race_HUD_Sub_PlayerNumber_RaceStart_C::CanvasPanel_PlayerNumber_RaceStart' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_PlayerNumber_RaceStart_C, MLC_ColorBase) == 0x000300, "Member 'UWBP_Race_HUD_Sub_PlayerNumber_RaceStart_C::MLC_ColorBase' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_PlayerNumber_RaceStart_C, TXT_PlayerNumber) == 0x000308, "Member 'UWBP_Race_HUD_Sub_PlayerNumber_RaceStart_C::TXT_PlayerNumber' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_PlayerNumber_RaceStart_C, WhiteOutline) == 0x000310, "Member 'UWBP_Race_HUD_Sub_PlayerNumber_RaceStart_C::WhiteOutline' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_PlayerNumber_RaceStart_C, M_PlayerNumber) == 0x000318, "Member 'UWBP_Race_HUD_Sub_PlayerNumber_RaceStart_C::M_PlayerNumber' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_PlayerNumber_RaceStart_C, PlayerNumberIndex) == 0x000320, "Member 'UWBP_Race_HUD_Sub_PlayerNumber_RaceStart_C::PlayerNumberIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_HUD_Sub_PlayerNumber_RaceStart_C;
 
 }
 

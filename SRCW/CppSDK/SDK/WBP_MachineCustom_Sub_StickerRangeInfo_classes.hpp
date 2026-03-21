@@ -32,22 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MachineCustom_Sub_StickerRangeInfo_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MachineCustom_Sub_StickerRangeInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MachineCustom_Sub_StickerRangeInfo_C")
 	}
 	static class UWBP_MachineCustom_Sub_StickerRangeInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MachineCustom_Sub_StickerRangeInfo_C>();
 	}
 };
-static_assert(alignof(UWBP_MachineCustom_Sub_StickerRangeInfo_C) == 0x000008, "Wrong alignment on UWBP_MachineCustom_Sub_StickerRangeInfo_C");
-static_assert(sizeof(UWBP_MachineCustom_Sub_StickerRangeInfo_C) == 0x000318, "Wrong size on UWBP_MachineCustom_Sub_StickerRangeInfo_C");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerRangeInfo_C, info_Init) == 0x0002E0, "Member 'UWBP_MachineCustom_Sub_StickerRangeInfo_C::info_Init' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerRangeInfo_C, Info_Out) == 0x0002E8, "Member 'UWBP_MachineCustom_Sub_StickerRangeInfo_C::Info_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerRangeInfo_C, Info_Loop) == 0x0002F0, "Member 'UWBP_MachineCustom_Sub_StickerRangeInfo_C::Info_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerRangeInfo_C, Info_In) == 0x0002F8, "Member 'UWBP_MachineCustom_Sub_StickerRangeInfo_C::Info_In' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerRangeInfo_C, base) == 0x000300, "Member 'UWBP_MachineCustom_Sub_StickerRangeInfo_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerRangeInfo_C, ExitInfo_Pict) == 0x000308, "Member 'UWBP_MachineCustom_Sub_StickerRangeInfo_C::ExitInfo_Pict' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerRangeInfo_C, TXT_Info) == 0x000310, "Member 'UWBP_MachineCustom_Sub_StickerRangeInfo_C::TXT_Info' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MachineCustom_Sub_StickerRangeInfo_C;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "UNION_structs.hpp"
 
 
 namespace SDK::Params
@@ -25,10 +25,7 @@ public:
 	EPartyRaceCourseSwitchTag                     Tag;                                               // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPartyRaceCourseSwitchBtnType                 NowBtnType;                                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSwitch_C_ChangeTagImpl) == 0x000001, "Wrong alignment on WBP_CourseSwitch_C_ChangeTagImpl");
-static_assert(sizeof(WBP_CourseSwitch_C_ChangeTagImpl) == 0x000002, "Wrong size on WBP_CourseSwitch_C_ChangeTagImpl");
-static_assert(offsetof(WBP_CourseSwitch_C_ChangeTagImpl, Tag) == 0x000000, "Member 'WBP_CourseSwitch_C_ChangeTagImpl::Tag' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ChangeTagImpl, NowBtnType) == 0x000001, "Member 'WBP_CourseSwitch_C_ChangeTagImpl::NowBtnType' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSwitch_C_ChangeTagImpl;
 
 // Function WBP_CourseSwitch.WBP_CourseSwitch_C.ChangeTagImplEvent
 // 0x0001 (0x0001 - 0x0000)
@@ -37,9 +34,7 @@ struct WBP_CourseSwitch_C_ChangeTagImplEvent final
 public:
 	EPartyRaceCourseSwitchTag                     Tag;                                               // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSwitch_C_ChangeTagImplEvent) == 0x000001, "Wrong alignment on WBP_CourseSwitch_C_ChangeTagImplEvent");
-static_assert(sizeof(WBP_CourseSwitch_C_ChangeTagImplEvent) == 0x000001, "Wrong size on WBP_CourseSwitch_C_ChangeTagImplEvent");
-static_assert(offsetof(WBP_CourseSwitch_C_ChangeTagImplEvent, Tag) == 0x000000, "Member 'WBP_CourseSwitch_C_ChangeTagImplEvent::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSwitch_C_ChangeTagImplEvent;
 
 // Function WBP_CourseSwitch.WBP_CourseSwitch_C.CheckIsGuest
 // 0x0001 (0x0001 - 0x0000)
@@ -48,9 +43,7 @@ struct WBP_CourseSwitch_C_CheckIsGuest final
 public:
 	bool                                          IsGuest_0;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSwitch_C_CheckIsGuest) == 0x000001, "Wrong alignment on WBP_CourseSwitch_C_CheckIsGuest");
-static_assert(sizeof(WBP_CourseSwitch_C_CheckIsGuest) == 0x000001, "Wrong size on WBP_CourseSwitch_C_CheckIsGuest");
-static_assert(offsetof(WBP_CourseSwitch_C_CheckIsGuest, IsGuest_0) == 0x000000, "Member 'WBP_CourseSwitch_C_CheckIsGuest::IsGuest_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSwitch_C_CheckIsGuest;
 
 // Function WBP_CourseSwitch.WBP_CourseSwitch_C.ExecuteUbergraph_WBP_CourseSwitch
 // 0x03B0 (0x03B0 - 0x0000)
@@ -197,120 +190,7 @@ public:
 	bool                                          K2Node_SwitchEnum_CmpSuccess_2;                    // 0x03A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x03AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch) == 0x000008, "Wrong alignment on WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch");
-static_assert(sizeof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch) == 0x0003B0, "Wrong size on WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, EntryPoint) == 0x000000, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_Event_IsDesignTime) == 0x000014, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_CustomEvent_Button_6) == 0x000018, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_CustomEvent_Button_6' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, Temp_bool_IsClosed_Variable) == 0x000020, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_Array_Length_ReturnValue) == 0x000024, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_CustomEvent_IsCancel) == 0x000028, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_CustomEvent_IsCancel' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_CustomEvent_Button_5) == 0x000030, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_CustomEvent_Button_5' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_CustomEvent_Tag) == 0x000038, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_CustomEvent_Tag' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_CustomEvent_NowBtnType) == 0x000039, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_CustomEvent_NowBtnType' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_SwitchEnum_CmpSuccess) == 0x00003A, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_CustomEvent_Button_4) == 0x000040, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_CustomEvent_Button_4' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_CustomEvent_Button_3) == 0x000048, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_CustomEvent_Button_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_CustomEvent_Table) == 0x000050, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_CustomEvent_Table' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_SetDecisionLastSelect_ReturnValue) == 0x000130, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_SetDecisionLastSelect_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_SoundPlay_ReturnValue) == 0x000134, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_CustomEvent_Button_2) == 0x000138, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_CustomEvent_Button_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_CustomEvent_PanelIndex) == 0x000140, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_CustomEvent_PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_CustomEvent_ButtonIndex) == 0x000144, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_CustomEvent_ButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, Temp_bool_Has_Been_Initd_Variable) == 0x000148, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_SwitchInteger_CmpSuccess) == 0x000149, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_MakeLiteralText_ReturnValue) == 0x000150, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_CreateDelegate_OutputDelegate_1) == 0x000160, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_MakeLiteralText_ReturnValue_1) == 0x000170, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_MakeLiteralText_ReturnValue_2) == 0x000180, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_MakeLiteralText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_MakeLiteralText_ReturnValue_3) == 0x000190, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_MakeLiteralText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_SoundPlay_ReturnValue_1) == 0x0001A0, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_MakeArray_Array) == 0x0001A8, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_GetCursorIndex_ReturnValue) == 0x0001B8, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_GetCursorIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_SoundPlay_ReturnValue_2) == 0x0001BC, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_SoundPlay_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable) == 0x0001C0, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x0001C1, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_CreateDelegate_OutputDelegate_2) == 0x0001C4, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, Temp_int_Array_Index_Variable) == 0x0001D4, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_Array_Get_Item) == 0x0001D8, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_IsValid_ReturnValue) == 0x0001E0, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_IsInViewport_ReturnValue) == 0x0001E1, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_IsInViewport_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_CreateDelegate_OutputDelegate_3) == 0x0001E4, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_IsValid_ReturnValue_1) == 0x0001F4, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_IsValid_ReturnValue_2) == 0x0001F5, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_IsAnimationPlaying_ReturnValue) == 0x0001F6, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_Not_PreBool_ReturnValue) == 0x0001F7, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_Event_IsGuest) == 0x0001F8, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_Event_IsGuest' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, Temp_int_Loop_Counter_Variable) == 0x0001FC, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_Less_IntInt_ReturnValue) == 0x000200, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_Add_IntInt_ReturnValue) == 0x000204, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_CheckIsSameSetting_ReturnValue) == 0x000208, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_CheckIsSameSetting_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_CreateDelegate_OutputDelegate_4) == 0x00020C, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_Not_PreBool_ReturnValue_1) == 0x00021C, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_SoundPlay_ReturnValue_3) == 0x000220, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_SoundPlay_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_GetCursorIndex_ReturnValue_1) == 0x000224, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_GetCursorIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_GetCourseIcon_ReturnValue) == 0x000228, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_GetCourseIcon_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_CheckIsSameSetting_ReturnValue_1) == 0x000230, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_CheckIsSameSetting_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_Not_PreBool_ReturnValue_2) == 0x000231, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_Not_PreBool_ReturnValue_3) == 0x000232, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_Not_PreBool_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_BooleanAND_ReturnValue) == 0x000233, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_IsAnimationPlaying_ReturnValue_1) == 0x000234, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_IsAnimationPlaying_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_Not_PreBool_ReturnValue_4) == 0x000235, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_Not_PreBool_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_Not_PreBool_ReturnValue_5) == 0x000236, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_Not_PreBool_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_BooleanAND_ReturnValue_1) == 0x000237, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_CreatePlayAnimationProxyObject_Result) == 0x000238, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_CreatePlayAnimationProxyObject_Result' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_CreatePlayAnimationProxyObject_ReturnValue) == 0x000240, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_CreatePlayAnimationProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_IsValid_ReturnValue_3) == 0x000248, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_CreateDelegate_OutputDelegate_5) == 0x00024C, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_CreatePlayAnimationProxyObject_Result_1) == 0x000260, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_CreatePlayAnimationProxyObject_Result_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_CreatePlayAnimationProxyObject_ReturnValue_1) == 0x000268, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_CreatePlayAnimationProxyObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_IsValid_ReturnValue_4) == 0x000270, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_GetOwningPlayer_ReturnValue) == 0x000278, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_CreateDelegate_OutputDelegate_6) == 0x000280, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_CustomEvent_Button_1) == 0x000290, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_CustomEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_SoundPlay_ReturnValue_4) == 0x000298, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_SoundPlay_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_GetOwningPlayer_ReturnValue_1) == 0x0002A0, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_GetOwningPlayer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_HasAnyUserFocus_ReturnValue) == 0x0002A8, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_HasAnyUserFocus_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_DynamicCast_AsApp_Player_Controller) == 0x0002B0, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_DynamicCast_bSuccess) == 0x0002B8, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_CreateDelegate_OutputDelegate_7) == 0x0002BC, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_Not_PreBool_ReturnValue_6) == 0x0002CC, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_Not_PreBool_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_MakeLiteralByte_ReturnValue) == 0x0002CD, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_UnregisterMainMenu_ReturnValue) == 0x0002CE, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_UnregisterMainMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_CreateDelegate_OutputDelegate_8) == 0x0002D0, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_CreateDelegate_OutputDelegate_8' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_Conv_ByteToInt_ReturnValue) == 0x0002E0, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_CustomEvent_Button) == 0x0002E8, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_GetCursorIndex_ReturnValue_2) == 0x0002F0, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_GetCursorIndex_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_SoundPlay_ReturnValue_5) == 0x0002F4, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_SoundPlay_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_Not_PreBool_ReturnValue_7) == 0x0002F8, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_Not_PreBool_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_Not_PreBool_ReturnValue_8) == 0x0002F9, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_Not_PreBool_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_IsAnimationPlaying_ReturnValue_2) == 0x0002FA, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_IsAnimationPlaying_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_DynamicCast_AsMenu_Popup_Window_Interface) == 0x000300, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_DynamicCast_AsMenu_Popup_Window_Interface' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_DynamicCast_bSuccess_1) == 0x000310, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_Not_PreBool_ReturnValue_9) == 0x000311, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_Not_PreBool_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_1) == 0x000318, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_DynamicCast_bSuccess_2) == 0x000328, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_2) == 0x000330, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_DynamicCast_bSuccess_3) == 0x000340, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_3) == 0x000348, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_DynamicCast_bSuccess_4) == 0x000358, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_4) == 0x000360, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_4' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_DynamicCast_bSuccess_5) == 0x000370, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_Not_PreBool_ReturnValue_10) == 0x000371, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_Not_PreBool_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_IsValid_ReturnValue_5) == 0x000372, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_BooleanAND_ReturnValue_2) == 0x000373, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_Not_PreBool_ReturnValue_11) == 0x000374, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_Not_PreBool_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_Event_Tag) == 0x000375, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_Event_Tag' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_BooleanAND_ReturnValue_3) == 0x000376, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_SpawnObject_ReturnValue) == 0x000378, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000380, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_CreatePopupWindow_ReturnValue) == 0x000388, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_CreatePopupWindow_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_GetPlayerController_ReturnValue) == 0x000390, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_CreateDelegate_OutputDelegate_9) == 0x000398, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_CreateDelegate_OutputDelegate_9' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_SwitchEnum_CmpSuccess_1) == 0x0003A8, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, K2Node_SwitchEnum_CmpSuccess_2) == 0x0003A9, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::K2Node_SwitchEnum_CmpSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch, CallFunc_NotEqual_IntInt_ReturnValue) == 0x0003AA, "Member 'WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSwitch_C_ExecuteUbergraph_WBP_CourseSwitch;
 
 // Function WBP_CourseSwitch.WBP_CourseSwitch_C.FadeInOutAnim
 // 0x00F8 (0x00F8 - 0x0000)
@@ -323,12 +203,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x00E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x00F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSwitch_C_FadeInOutAnim) == 0x000008, "Wrong alignment on WBP_CourseSwitch_C_FadeInOutAnim");
-static_assert(sizeof(WBP_CourseSwitch_C_FadeInOutAnim) == 0x0000F8, "Wrong size on WBP_CourseSwitch_C_FadeInOutAnim");
-static_assert(offsetof(WBP_CourseSwitch_C_FadeInOutAnim, IsOut) == 0x000000, "Member 'WBP_CourseSwitch_C_FadeInOutAnim::IsOut' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_FadeInOutAnim, CallFunc_GetDataTable_ReturnValue) == 0x000008, "Member 'WBP_CourseSwitch_C_FadeInOutAnim::CallFunc_GetDataTable_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_FadeInOutAnim, CallFunc_PlayAnimation_ReturnValue) == 0x0000E8, "Member 'WBP_CourseSwitch_C_FadeInOutAnim::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_FadeInOutAnim, CallFunc_PlayAnimation_ReturnValue_1) == 0x0000F0, "Member 'WBP_CourseSwitch_C_FadeInOutAnim::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSwitch_C_FadeInOutAnim;
 
 // Function WBP_CourseSwitch.WBP_CourseSwitch_C.OnCancelEvent_Event
 // 0x0008 (0x0008 - 0x0000)
@@ -337,9 +212,7 @@ struct WBP_CourseSwitch_C_OnCancelEvent_Event final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSwitch_C_OnCancelEvent_Event) == 0x000008, "Wrong alignment on WBP_CourseSwitch_C_OnCancelEvent_Event");
-static_assert(sizeof(WBP_CourseSwitch_C_OnCancelEvent_Event) == 0x000008, "Wrong size on WBP_CourseSwitch_C_OnCancelEvent_Event");
-static_assert(offsetof(WBP_CourseSwitch_C_OnCancelEvent_Event, Button) == 0x000000, "Member 'WBP_CourseSwitch_C_OnCancelEvent_Event::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSwitch_C_OnCancelEvent_Event;
 
 // Function WBP_CourseSwitch.WBP_CourseSwitch_C.OnCourseIconCancelEvent
 // 0x0008 (0x0008 - 0x0000)
@@ -348,9 +221,7 @@ struct WBP_CourseSwitch_C_OnCourseIconCancelEvent final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSwitch_C_OnCourseIconCancelEvent) == 0x000008, "Wrong alignment on WBP_CourseSwitch_C_OnCourseIconCancelEvent");
-static_assert(sizeof(WBP_CourseSwitch_C_OnCourseIconCancelEvent) == 0x000008, "Wrong size on WBP_CourseSwitch_C_OnCourseIconCancelEvent");
-static_assert(offsetof(WBP_CourseSwitch_C_OnCourseIconCancelEvent, Button) == 0x000000, "Member 'WBP_CourseSwitch_C_OnCourseIconCancelEvent::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSwitch_C_OnCourseIconCancelEvent;
 
 // Function WBP_CourseSwitch.WBP_CourseSwitch_C.OnCourseiconDecision
 // 0x0008 (0x0008 - 0x0000)
@@ -359,9 +230,7 @@ struct WBP_CourseSwitch_C_OnCourseiconDecision final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSwitch_C_OnCourseiconDecision) == 0x000008, "Wrong alignment on WBP_CourseSwitch_C_OnCourseiconDecision");
-static_assert(sizeof(WBP_CourseSwitch_C_OnCourseiconDecision) == 0x000008, "Wrong size on WBP_CourseSwitch_C_OnCourseiconDecision");
-static_assert(offsetof(WBP_CourseSwitch_C_OnCourseiconDecision, Button) == 0x000000, "Member 'WBP_CourseSwitch_C_OnCourseiconDecision::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSwitch_C_OnCourseiconDecision;
 
 // Function WBP_CourseSwitch.WBP_CourseSwitch_C.OnCourseSwitchClose
 // 0x0001 (0x0001 - 0x0000)
@@ -370,9 +239,7 @@ struct WBP_CourseSwitch_C_OnCourseSwitchClose final
 public:
 	bool                                          IsCancel;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSwitch_C_OnCourseSwitchClose) == 0x000001, "Wrong alignment on WBP_CourseSwitch_C_OnCourseSwitchClose");
-static_assert(sizeof(WBP_CourseSwitch_C_OnCourseSwitchClose) == 0x000001, "Wrong size on WBP_CourseSwitch_C_OnCourseSwitchClose");
-static_assert(offsetof(WBP_CourseSwitch_C_OnCourseSwitchClose, IsCancel) == 0x000000, "Member 'WBP_CourseSwitch_C_OnCourseSwitchClose::IsCancel' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSwitch_C_OnCourseSwitchClose;
 
 // Function WBP_CourseSwitch.WBP_CourseSwitch_C.OnDecisionEvent_Event
 // 0x0008 (0x0008 - 0x0000)
@@ -381,9 +248,7 @@ struct WBP_CourseSwitch_C_OnDecisionEvent_Event final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSwitch_C_OnDecisionEvent_Event) == 0x000008, "Wrong alignment on WBP_CourseSwitch_C_OnDecisionEvent_Event");
-static_assert(sizeof(WBP_CourseSwitch_C_OnDecisionEvent_Event) == 0x000008, "Wrong size on WBP_CourseSwitch_C_OnDecisionEvent_Event");
-static_assert(offsetof(WBP_CourseSwitch_C_OnDecisionEvent_Event, Button) == 0x000000, "Member 'WBP_CourseSwitch_C_OnDecisionEvent_Event::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSwitch_C_OnDecisionEvent_Event;
 
 // Function WBP_CourseSwitch.WBP_CourseSwitch_C.OnTagChangeLeft
 // 0x0008 (0x0008 - 0x0000)
@@ -392,9 +257,7 @@ struct WBP_CourseSwitch_C_OnTagChangeLeft final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSwitch_C_OnTagChangeLeft) == 0x000008, "Wrong alignment on WBP_CourseSwitch_C_OnTagChangeLeft");
-static_assert(sizeof(WBP_CourseSwitch_C_OnTagChangeLeft) == 0x000008, "Wrong size on WBP_CourseSwitch_C_OnTagChangeLeft");
-static_assert(offsetof(WBP_CourseSwitch_C_OnTagChangeLeft, Button) == 0x000000, "Member 'WBP_CourseSwitch_C_OnTagChangeLeft::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSwitch_C_OnTagChangeLeft;
 
 // Function WBP_CourseSwitch.WBP_CourseSwitch_C.OnTagChangeRight
 // 0x0008 (0x0008 - 0x0000)
@@ -403,9 +266,7 @@ struct WBP_CourseSwitch_C_OnTagChangeRight final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSwitch_C_OnTagChangeRight) == 0x000008, "Wrong alignment on WBP_CourseSwitch_C_OnTagChangeRight");
-static_assert(sizeof(WBP_CourseSwitch_C_OnTagChangeRight) == 0x000008, "Wrong size on WBP_CourseSwitch_C_OnTagChangeRight");
-static_assert(offsetof(WBP_CourseSwitch_C_OnTagChangeRight, Button) == 0x000000, "Member 'WBP_CourseSwitch_C_OnTagChangeRight::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSwitch_C_OnTagChangeRight;
 
 // Function WBP_CourseSwitch.WBP_CourseSwitch_C.OnUISceneDecisionEvent_Impl
 // 0x0010 (0x0010 - 0x0000)
@@ -416,11 +277,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSwitch_C_OnUISceneDecisionEvent_Impl) == 0x000008, "Wrong alignment on WBP_CourseSwitch_C_OnUISceneDecisionEvent_Impl");
-static_assert(sizeof(WBP_CourseSwitch_C_OnUISceneDecisionEvent_Impl) == 0x000010, "Wrong size on WBP_CourseSwitch_C_OnUISceneDecisionEvent_Impl");
-static_assert(offsetof(WBP_CourseSwitch_C_OnUISceneDecisionEvent_Impl, Button) == 0x000000, "Member 'WBP_CourseSwitch_C_OnUISceneDecisionEvent_Impl::Button' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_OnUISceneDecisionEvent_Impl, PanelIndex) == 0x000008, "Member 'WBP_CourseSwitch_C_OnUISceneDecisionEvent_Impl::PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_C_OnUISceneDecisionEvent_Impl, ButtonIndex) == 0x00000C, "Member 'WBP_CourseSwitch_C_OnUISceneDecisionEvent_Impl::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSwitch_C_OnUISceneDecisionEvent_Impl;
 
 // Function WBP_CourseSwitch.WBP_CourseSwitch_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -429,9 +286,7 @@ struct WBP_CourseSwitch_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSwitch_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_CourseSwitch_C_PreConstruct");
-static_assert(sizeof(WBP_CourseSwitch_C_PreConstruct) == 0x000001, "Wrong size on WBP_CourseSwitch_C_PreConstruct");
-static_assert(offsetof(WBP_CourseSwitch_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_CourseSwitch_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSwitch_C_PreConstruct;
 
 // Function WBP_CourseSwitch.WBP_CourseSwitch_C.UpdateDetail
 // 0x00E0 (0x00E0 - 0x0000)
@@ -440,9 +295,7 @@ struct WBP_CourseSwitch_C_UpdateDetail final
 public:
 	struct FStageDataAssetTableRow                Table;                                             // 0x0000(0x00E0)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_CourseSwitch_C_UpdateDetail) == 0x000008, "Wrong alignment on WBP_CourseSwitch_C_UpdateDetail");
-static_assert(sizeof(WBP_CourseSwitch_C_UpdateDetail) == 0x0000E0, "Wrong size on WBP_CourseSwitch_C_UpdateDetail");
-static_assert(offsetof(WBP_CourseSwitch_C_UpdateDetail, Table) == 0x000000, "Member 'WBP_CourseSwitch_C_UpdateDetail::Table' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSwitch_C_UpdateDetail;
 
 }
 

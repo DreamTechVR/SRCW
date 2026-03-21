@@ -33,17 +33,7 @@ public:
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetTerminologyTextByText_ReturnValue;     // 0x0028(0x0010)()
 };
-static_assert(alignof(WBP_Sub_Friend_LobbyNoticePlate_Guide_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate_Guide) == 0x000008, "Wrong alignment on WBP_Sub_Friend_LobbyNoticePlate_Guide_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate_Guide");
-static_assert(sizeof(WBP_Sub_Friend_LobbyNoticePlate_Guide_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate_Guide) == 0x000038, "Wrong size on WBP_Sub_Friend_LobbyNoticePlate_Guide_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate_Guide");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_Guide_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate_Guide, EntryPoint) == 0x000000, "Member 'WBP_Sub_Friend_LobbyNoticePlate_Guide_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate_Guide::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_Guide_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate_Guide, K2Node_CustomEvent_CurrentNotAvailable) == 0x000004, "Member 'WBP_Sub_Friend_LobbyNoticePlate_Guide_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate_Guide::K2Node_CustomEvent_CurrentNotAvailable' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_Guide_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate_Guide, K2Node_Event_IsDesignTime) == 0x000005, "Member 'WBP_Sub_Friend_LobbyNoticePlate_Guide_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate_Guide::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_Guide_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate_Guide, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000006, "Member 'WBP_Sub_Friend_LobbyNoticePlate_Guide_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate_Guide::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_Guide_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate_Guide, K2Node_SwitchEnum_CmpSuccess) == 0x000007, "Member 'WBP_Sub_Friend_LobbyNoticePlate_Guide_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate_Guide::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_Guide_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate_Guide, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000008, "Member 'WBP_Sub_Friend_LobbyNoticePlate_Guide_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate_Guide::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_Guide_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate_Guide, CallFunc_Array_Get_Item) == 0x000010, "Member 'WBP_Sub_Friend_LobbyNoticePlate_Guide_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate_Guide::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_Guide_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate_Guide, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000020, "Member 'WBP_Sub_Friend_LobbyNoticePlate_Guide_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate_Guide::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_Guide_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate_Guide, CallFunc_GetTerminologyTextByText_ReturnValue) == 0x000028, "Member 'WBP_Sub_Friend_LobbyNoticePlate_Guide_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate_Guide::CallFunc_GetTerminologyTextByText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Sub_Friend_LobbyNoticePlate_Guide_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate_Guide;
 
 // Function WBP_Sub_Friend_LobbyNoticePlate_Guide.WBP_Sub_Friend_LobbyNoticePlate_Guide_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -52,9 +42,7 @@ struct WBP_Sub_Friend_LobbyNoticePlate_Guide_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Sub_Friend_LobbyNoticePlate_Guide_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_Sub_Friend_LobbyNoticePlate_Guide_C_PreConstruct");
-static_assert(sizeof(WBP_Sub_Friend_LobbyNoticePlate_Guide_C_PreConstruct) == 0x000001, "Wrong size on WBP_Sub_Friend_LobbyNoticePlate_Guide_C_PreConstruct");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_Guide_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_Sub_Friend_LobbyNoticePlate_Guide_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Sub_Friend_LobbyNoticePlate_Guide_C_PreConstruct;
 
 // Function WBP_Sub_Friend_LobbyNoticePlate_Guide.WBP_Sub_Friend_LobbyNoticePlate_Guide_C.SetupNotAvailable
 // 0x0001 (0x0001 - 0x0000)
@@ -63,9 +51,7 @@ struct WBP_Sub_Friend_LobbyNoticePlate_Guide_C_SetupNotAvailable final
 public:
 	ELobbyInvitationSequenceType                  CurrentNotAvailable;                               // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Sub_Friend_LobbyNoticePlate_Guide_C_SetupNotAvailable) == 0x000001, "Wrong alignment on WBP_Sub_Friend_LobbyNoticePlate_Guide_C_SetupNotAvailable");
-static_assert(sizeof(WBP_Sub_Friend_LobbyNoticePlate_Guide_C_SetupNotAvailable) == 0x000001, "Wrong size on WBP_Sub_Friend_LobbyNoticePlate_Guide_C_SetupNotAvailable");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_Guide_C_SetupNotAvailable, CurrentNotAvailable) == 0x000000, "Member 'WBP_Sub_Friend_LobbyNoticePlate_Guide_C_SetupNotAvailable::CurrentNotAvailable' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Sub_Friend_LobbyNoticePlate_Guide_C_SetupNotAvailable;
 
 }
 

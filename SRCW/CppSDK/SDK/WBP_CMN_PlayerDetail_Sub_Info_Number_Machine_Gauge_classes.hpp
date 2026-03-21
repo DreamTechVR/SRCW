@@ -51,33 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C")
 	}
 	static class UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C) == 0x000008, "Wrong alignment on UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C");
-static_assert(sizeof(UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C) == 0x000378, "Wrong size on UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C, PRM_Cursor) == 0x0002E8, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C::PRM_Cursor' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C, base) == 0x0002F0, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C, Gauge_Acceleration) == 0x0002F8, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C::Gauge_Acceleration' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C, Gauge_Dash) == 0x000300, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C::Gauge_Dash' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C, Gauge_Handling) == 0x000308, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C::Gauge_Handling' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C, Gauge_Power) == 0x000310, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C::Gauge_Power' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C, Gauge_Speed) == 0x000318, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C::Gauge_Speed' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C, Icon_Dot) == 0x000320, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C::Icon_Dot' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C, Icon_Dot_Outline) == 0x000328, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C::Icon_Dot_Outline' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C, Line) == 0x000330, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C::Line' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C, Panel) == 0x000338, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C::Panel' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C, PAT_Type_Icon) == 0x000340, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C::PAT_Type_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C, TXT_Num) == 0x000348, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C::TXT_Num' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C, TXT_TypeName) == 0x000350, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C::TXT_TypeName' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C, WS_Gauge_Type) == 0x000358, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C::WS_Gauge_Type' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C, MachineGaugeType) == 0x000360, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C::MachineGaugeType' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C, MachineTypeName) == 0x000368, "Member 'UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C::MachineTypeName' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C;
 
 }
 

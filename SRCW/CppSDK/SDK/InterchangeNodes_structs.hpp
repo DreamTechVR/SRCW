@@ -97,10 +97,7 @@ public:
 	EInterchangeAnimationPayLoadType              Type;                                              // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FInterchangeAnimationPayLoadKey) == 0x000008, "Wrong alignment on FInterchangeAnimationPayLoadKey");
-static_assert(sizeof(FInterchangeAnimationPayLoadKey) == 0x000018, "Wrong size on FInterchangeAnimationPayLoadKey");
-static_assert(offsetof(FInterchangeAnimationPayLoadKey, UniqueID) == 0x000000, "Member 'FInterchangeAnimationPayLoadKey::UniqueID' has a wrong offset!");
-static_assert(offsetof(FInterchangeAnimationPayLoadKey, Type) == 0x000010, "Member 'FInterchangeAnimationPayLoadKey::Type' has a wrong offset!");
+DUMPER7_ASSERTS_FInterchangeAnimationPayLoadKey;
 
 // ScriptStruct InterchangeNodes.InterchangeMeshPayLoadKey
 // 0x0018 (0x0018 - 0x0000)
@@ -111,10 +108,7 @@ public:
 	EInterchangeMeshPayLoadType                   Type;                                              // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FInterchangeMeshPayLoadKey) == 0x000008, "Wrong alignment on FInterchangeMeshPayLoadKey");
-static_assert(sizeof(FInterchangeMeshPayLoadKey) == 0x000018, "Wrong size on FInterchangeMeshPayLoadKey");
-static_assert(offsetof(FInterchangeMeshPayLoadKey, UniqueID) == 0x000000, "Member 'FInterchangeMeshPayLoadKey::UniqueID' has a wrong offset!");
-static_assert(offsetof(FInterchangeMeshPayLoadKey, Type) == 0x000010, "Member 'FInterchangeMeshPayLoadKey::Type' has a wrong offset!");
+DUMPER7_ASSERTS_FInterchangeMeshPayLoadKey;
 
 }
 

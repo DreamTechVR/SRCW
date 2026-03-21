@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "UnionUI_structs.hpp"
-#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "UNION_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK::Params
@@ -25,9 +25,7 @@ struct BP_GrandPrixSequence_C_BndEvt__BP_GrandPrixSequence_BPC_CharaMachineState
 public:
 	EMenuSequenceSubState                         State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_GrandPrixSequence_C_BndEvt__BP_GrandPrixSequence_BPC_CharaMachineState_K2Node_ComponentBoundEvent_4_OnBackStateDelegate__DelegateSignature) == 0x000001, "Wrong alignment on BP_GrandPrixSequence_C_BndEvt__BP_GrandPrixSequence_BPC_CharaMachineState_K2Node_ComponentBoundEvent_4_OnBackStateDelegate__DelegateSignature");
-static_assert(sizeof(BP_GrandPrixSequence_C_BndEvt__BP_GrandPrixSequence_BPC_CharaMachineState_K2Node_ComponentBoundEvent_4_OnBackStateDelegate__DelegateSignature) == 0x000001, "Wrong size on BP_GrandPrixSequence_C_BndEvt__BP_GrandPrixSequence_BPC_CharaMachineState_K2Node_ComponentBoundEvent_4_OnBackStateDelegate__DelegateSignature");
-static_assert(offsetof(BP_GrandPrixSequence_C_BndEvt__BP_GrandPrixSequence_BPC_CharaMachineState_K2Node_ComponentBoundEvent_4_OnBackStateDelegate__DelegateSignature, State) == 0x000000, "Member 'BP_GrandPrixSequence_C_BndEvt__BP_GrandPrixSequence_BPC_CharaMachineState_K2Node_ComponentBoundEvent_4_OnBackStateDelegate__DelegateSignature::State' has a wrong offset!");
+DUMPER7_ASSERTS_BP_GrandPrixSequence_C_BndEvt__BP_GrandPrixSequence_BPC_CharaMachineState_K2Node_ComponentBoundEvent_4_OnBackStateDelegate__DelegateSignature;
 
 // Function BP_GrandPrixSequence.BP_GrandPrixSequence_C.BndEvt__BP_GrandPrixSequence_BPC_MenuSubStateSelectClass_K2Node_ComponentBoundEvent_1_OnBackStateDelegate__DelegateSignature
 // 0x0001 (0x0001 - 0x0000)
@@ -36,9 +34,7 @@ struct BP_GrandPrixSequence_C_BndEvt__BP_GrandPrixSequence_BPC_MenuSubStateSelec
 public:
 	EMenuSequenceSubState                         State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_GrandPrixSequence_C_BndEvt__BP_GrandPrixSequence_BPC_MenuSubStateSelectClass_K2Node_ComponentBoundEvent_1_OnBackStateDelegate__DelegateSignature) == 0x000001, "Wrong alignment on BP_GrandPrixSequence_C_BndEvt__BP_GrandPrixSequence_BPC_MenuSubStateSelectClass_K2Node_ComponentBoundEvent_1_OnBackStateDelegate__DelegateSignature");
-static_assert(sizeof(BP_GrandPrixSequence_C_BndEvt__BP_GrandPrixSequence_BPC_MenuSubStateSelectClass_K2Node_ComponentBoundEvent_1_OnBackStateDelegate__DelegateSignature) == 0x000001, "Wrong size on BP_GrandPrixSequence_C_BndEvt__BP_GrandPrixSequence_BPC_MenuSubStateSelectClass_K2Node_ComponentBoundEvent_1_OnBackStateDelegate__DelegateSignature");
-static_assert(offsetof(BP_GrandPrixSequence_C_BndEvt__BP_GrandPrixSequence_BPC_MenuSubStateSelectClass_K2Node_ComponentBoundEvent_1_OnBackStateDelegate__DelegateSignature, State) == 0x000000, "Member 'BP_GrandPrixSequence_C_BndEvt__BP_GrandPrixSequence_BPC_MenuSubStateSelectClass_K2Node_ComponentBoundEvent_1_OnBackStateDelegate__DelegateSignature::State' has a wrong offset!");
+DUMPER7_ASSERTS_BP_GrandPrixSequence_C_BndEvt__BP_GrandPrixSequence_BPC_MenuSubStateSelectClass_K2Node_ComponentBoundEvent_1_OnBackStateDelegate__DelegateSignature;
 
 // Function BP_GrandPrixSequence.BP_GrandPrixSequence_C.DestroyPlayer
 // 0x0028 (0x0028 - 0x0000)
@@ -53,14 +49,7 @@ public:
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue_2;        // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_GrandPrixSequence_C_DestroyPlayer) == 0x000008, "Wrong alignment on BP_GrandPrixSequence_C_DestroyPlayer");
-static_assert(sizeof(BP_GrandPrixSequence_C_DestroyPlayer) == 0x000028, "Wrong size on BP_GrandPrixSequence_C_DestroyPlayer");
-static_assert(offsetof(BP_GrandPrixSequence_C_DestroyPlayer, CallFunc_GetPlayerController_ReturnValue) == 0x000000, "Member 'BP_GrandPrixSequence_C_DestroyPlayer::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_DestroyPlayer, CallFunc_GetPlayerController_ReturnValue_1) == 0x000008, "Member 'BP_GrandPrixSequence_C_DestroyPlayer::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_DestroyPlayer, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'BP_GrandPrixSequence_C_DestroyPlayer::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_DestroyPlayer, CallFunc_IsValid_ReturnValue_1) == 0x000011, "Member 'BP_GrandPrixSequence_C_DestroyPlayer::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_DestroyPlayer, CallFunc_GetPlayerController_ReturnValue_2) == 0x000018, "Member 'BP_GrandPrixSequence_C_DestroyPlayer::CallFunc_GetPlayerController_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_DestroyPlayer, CallFunc_IsValid_ReturnValue_2) == 0x000020, "Member 'BP_GrandPrixSequence_C_DestroyPlayer::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_BP_GrandPrixSequence_C_DestroyPlayer;
 
 // Function BP_GrandPrixSequence.BP_GrandPrixSequence_C.ExecuteUbergraph_BP_GrandPrixSequence
 // 0x0168 (0x0168 - 0x0000)
@@ -138,62 +127,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x0161(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence) == 0x000008, "Wrong alignment on BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence");
-static_assert(sizeof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence) == 0x000168, "Wrong size on BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, EntryPoint) == 0x000000, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, CallFunc_SoundPlay_ReturnValue) == 0x000008, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, CallFunc_GetNextState_ReturnValue) == 0x00000C, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::CallFunc_GetNextState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, CallFunc_IsValid_ReturnValue_1) == 0x000010, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000011, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, K2Node_DynamicCast_AsWBP_Course_Select) == 0x000018, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::K2Node_DynamicCast_AsWBP_Course_Select' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, K2Node_CustomEvent_State_1) == 0x000021, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::K2Node_CustomEvent_State_1' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, CallFunc_GetParentActor_ReturnValue) == 0x000028, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::CallFunc_GetParentActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, K2Node_DynamicCast_AsBP_Menu_Sequence) == 0x000030, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::K2Node_DynamicCast_AsBP_Menu_Sequence' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, K2Node_DynamicCast_bSuccess_1) == 0x000038, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, K2Node_CreateDelegate_OutputDelegate) == 0x00003C, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000050, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, K2Node_CreateDelegate_OutputDelegate_1) == 0x000058, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, CallFunc_GetComCharaMachineLottery_ReturnValue) == 0x000068, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::CallFunc_GetComCharaMachineLottery_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, CallFunc_Lottery_ReturnValue) == 0x000070, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::CallFunc_Lottery_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, K2Node_CreateDelegate_OutputDelegate_2) == 0x000080, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, K2Node_Event_InDeltaTime) == 0x000090, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, K2Node_ComponentBoundEvent_State_1) == 0x000094, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::K2Node_ComponentBoundEvent_State_1' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, K2Node_ComponentBoundEvent_State) == 0x000095, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::K2Node_ComponentBoundEvent_State' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, CallFunc_SetNextMenuSequenceState_self_CastInput) == 0x000098, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::CallFunc_SetNextMenuSequenceState_self_CastInput' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, CallFunc_IsValid_ReturnValue_2) == 0x0000A8, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, K2Node_CreateDelegate_OutputDelegate_3) == 0x0000AC, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, K2Node_Event_InState) == 0x0000BC, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::K2Node_Event_InState' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, K2Node_Event_PrevSequence) == 0x0000C0, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::K2Node_Event_PrevSequence' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000C8, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, CallFunc_GetNextState_ReturnValue_1) == 0x0000CC, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::CallFunc_GetNextState_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x0000D0, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x0000D8, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, CallFunc_GetNextState_ReturnValue_2) == 0x0000E0, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::CallFunc_GetNextState_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x0000E8, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, CallFunc_EqualEqual_IntInt_ReturnValue_2) == 0x0000F0, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::CallFunc_EqualEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, K2Node_CreateDelegate_OutputDelegate_4) == 0x0000F4, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, K2Node_CustomEvent_State) == 0x000104, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::K2Node_CustomEvent_State' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, CallFunc_GetSelectedPlayerCount_ReturnValue) == 0x000108, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::CallFunc_GetSelectedPlayerCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x000110, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, K2Node_DynamicCast_AsGrand_Prix_Common_Data) == 0x000118, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::K2Node_DynamicCast_AsGrand_Prix_Common_Data' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, K2Node_DynamicCast_bSuccess_2) == 0x000120, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, CallFunc_GetGrandPrixLastFocusedMenuSpeedClassId_ReturnValue) == 0x000121, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::CallFunc_GetGrandPrixLastFocusedMenuSpeedClassId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, CallFunc_GetGrandPrixLastFocusedMenuSpeedClassId_ReturnValue_1) == 0x000122, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::CallFunc_GetGrandPrixLastFocusedMenuSpeedClassId_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, CallFunc_IsComeBackFromRace_ReturnValue) == 0x000123, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::CallFunc_IsComeBackFromRace_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000124, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, CallFunc_BooleanAND_ReturnValue) == 0x000125, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x000126, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000127, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, CallFunc_NotEqual_ObjectObject_ReturnValue) == 0x000128, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::CallFunc_NotEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, K2Node_CustomEvent_FadeDirection) == 0x000129, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::K2Node_CustomEvent_FadeDirection' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_2) == 0x000130, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, K2Node_CreateDelegate_OutputDelegate_5) == 0x000138, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, CallFunc_IsStartedStreamingInstall_ReturnValue) == 0x000148, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::CallFunc_IsStartedStreamingInstall_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, CallFunc_SetNextMenuSequenceState_self_CastInput_1) == 0x000150, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::CallFunc_SetNextMenuSequenceState_self_CastInput_1' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, CallFunc_IsValid_ReturnValue_3) == 0x000160, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence, CallFunc_IsValid_ReturnValue_4) == 0x000161, "Member 'BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
+DUMPER7_ASSERTS_BP_GrandPrixSequence_C_ExecuteUbergraph_BP_GrandPrixSequence;
 
 // Function BP_GrandPrixSequence.BP_GrandPrixSequence_C.FadeFinished
 // 0x0001 (0x0001 - 0x0000)
@@ -202,9 +136,7 @@ struct BP_GrandPrixSequence_C_FadeFinished final
 public:
 	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_GrandPrixSequence_C_FadeFinished) == 0x000001, "Wrong alignment on BP_GrandPrixSequence_C_FadeFinished");
-static_assert(sizeof(BP_GrandPrixSequence_C_FadeFinished) == 0x000001, "Wrong size on BP_GrandPrixSequence_C_FadeFinished");
-static_assert(offsetof(BP_GrandPrixSequence_C_FadeFinished, FadeDirection) == 0x000000, "Member 'BP_GrandPrixSequence_C_FadeFinished::FadeDirection' has a wrong offset!");
+DUMPER7_ASSERTS_BP_GrandPrixSequence_C_FadeFinished;
 
 // Function BP_GrandPrixSequence.BP_GrandPrixSequence_C.GetFooter
 // 0x0008 (0x0008 - 0x0000)
@@ -213,9 +145,7 @@ struct BP_GrandPrixSequence_C_GetFooter final
 public:
 	class UObject*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_GrandPrixSequence_C_GetFooter) == 0x000008, "Wrong alignment on BP_GrandPrixSequence_C_GetFooter");
-static_assert(sizeof(BP_GrandPrixSequence_C_GetFooter) == 0x000008, "Wrong size on BP_GrandPrixSequence_C_GetFooter");
-static_assert(offsetof(BP_GrandPrixSequence_C_GetFooter, ReturnValue) == 0x000000, "Member 'BP_GrandPrixSequence_C_GetFooter::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_GrandPrixSequence_C_GetFooter;
 
 // Function BP_GrandPrixSequence.BP_GrandPrixSequence_C.GetLastStateIsClassSelect
 // 0x0001 (0x0001 - 0x0000)
@@ -224,9 +154,7 @@ struct BP_GrandPrixSequence_C_GetLastStateIsClassSelect final
 public:
 	bool                                          LClassSelect_0;                                    // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_GrandPrixSequence_C_GetLastStateIsClassSelect) == 0x000001, "Wrong alignment on BP_GrandPrixSequence_C_GetLastStateIsClassSelect");
-static_assert(sizeof(BP_GrandPrixSequence_C_GetLastStateIsClassSelect) == 0x000001, "Wrong size on BP_GrandPrixSequence_C_GetLastStateIsClassSelect");
-static_assert(offsetof(BP_GrandPrixSequence_C_GetLastStateIsClassSelect, LClassSelect_0) == 0x000000, "Member 'BP_GrandPrixSequence_C_GetLastStateIsClassSelect::LClassSelect_0' has a wrong offset!");
+DUMPER7_ASSERTS_BP_GrandPrixSequence_C_GetLastStateIsClassSelect;
 
 // Function BP_GrandPrixSequence.BP_GrandPrixSequence_C.GetOwnerMenuSequence
 // 0x0008 (0x0008 - 0x0000)
@@ -235,9 +163,7 @@ struct BP_GrandPrixSequence_C_GetOwnerMenuSequence final
 public:
 	class UObject*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_GrandPrixSequence_C_GetOwnerMenuSequence) == 0x000008, "Wrong alignment on BP_GrandPrixSequence_C_GetOwnerMenuSequence");
-static_assert(sizeof(BP_GrandPrixSequence_C_GetOwnerMenuSequence) == 0x000008, "Wrong size on BP_GrandPrixSequence_C_GetOwnerMenuSequence");
-static_assert(offsetof(BP_GrandPrixSequence_C_GetOwnerMenuSequence, ReturnValue) == 0x000000, "Member 'BP_GrandPrixSequence_C_GetOwnerMenuSequence::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_GrandPrixSequence_C_GetOwnerMenuSequence;
 
 // Function BP_GrandPrixSequence.BP_GrandPrixSequence_C.OnBackFromGadgetCustomize
 // 0x0001 (0x0001 - 0x0000)
@@ -246,9 +172,7 @@ struct BP_GrandPrixSequence_C_OnBackFromGadgetCustomize final
 public:
 	EMenuSequenceSubState                         State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_GrandPrixSequence_C_OnBackFromGadgetCustomize) == 0x000001, "Wrong alignment on BP_GrandPrixSequence_C_OnBackFromGadgetCustomize");
-static_assert(sizeof(BP_GrandPrixSequence_C_OnBackFromGadgetCustomize) == 0x000001, "Wrong size on BP_GrandPrixSequence_C_OnBackFromGadgetCustomize");
-static_assert(offsetof(BP_GrandPrixSequence_C_OnBackFromGadgetCustomize, State) == 0x000000, "Member 'BP_GrandPrixSequence_C_OnBackFromGadgetCustomize::State' has a wrong offset!");
+DUMPER7_ASSERTS_BP_GrandPrixSequence_C_OnBackFromGadgetCustomize;
 
 // Function BP_GrandPrixSequence.BP_GrandPrixSequence_C.OnUpdate
 // 0x0004 (0x0004 - 0x0000)
@@ -257,9 +181,7 @@ struct BP_GrandPrixSequence_C_OnUpdate final
 public:
 	float                                         InDeltaTime;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_GrandPrixSequence_C_OnUpdate) == 0x000004, "Wrong alignment on BP_GrandPrixSequence_C_OnUpdate");
-static_assert(sizeof(BP_GrandPrixSequence_C_OnUpdate) == 0x000004, "Wrong size on BP_GrandPrixSequence_C_OnUpdate");
-static_assert(offsetof(BP_GrandPrixSequence_C_OnUpdate, InDeltaTime) == 0x000000, "Member 'BP_GrandPrixSequence_C_OnUpdate::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_BP_GrandPrixSequence_C_OnUpdate;
 
 // Function BP_GrandPrixSequence.BP_GrandPrixSequence_C.RivalSelect_OnExit
 // 0x0001 (0x0001 - 0x0000)
@@ -268,9 +190,7 @@ struct BP_GrandPrixSequence_C_RivalSelect_OnExit final
 public:
 	EMenuSequenceSubState                         State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_GrandPrixSequence_C_RivalSelect_OnExit) == 0x000001, "Wrong alignment on BP_GrandPrixSequence_C_RivalSelect_OnExit");
-static_assert(sizeof(BP_GrandPrixSequence_C_RivalSelect_OnExit) == 0x000001, "Wrong size on BP_GrandPrixSequence_C_RivalSelect_OnExit");
-static_assert(offsetof(BP_GrandPrixSequence_C_RivalSelect_OnExit, State) == 0x000000, "Member 'BP_GrandPrixSequence_C_RivalSelect_OnExit::State' has a wrong offset!");
+DUMPER7_ASSERTS_BP_GrandPrixSequence_C_RivalSelect_OnExit;
 
 // Function BP_GrandPrixSequence.BP_GrandPrixSequence_C.SetNextSubMenuSequenceState
 // 0x0010 (0x0010 - 0x0000)
@@ -281,10 +201,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                PrevSequence;                                      // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_GrandPrixSequence_C_SetNextSubMenuSequenceState) == 0x000008, "Wrong alignment on BP_GrandPrixSequence_C_SetNextSubMenuSequenceState");
-static_assert(sizeof(BP_GrandPrixSequence_C_SetNextSubMenuSequenceState) == 0x000010, "Wrong size on BP_GrandPrixSequence_C_SetNextSubMenuSequenceState");
-static_assert(offsetof(BP_GrandPrixSequence_C_SetNextSubMenuSequenceState, InState) == 0x000000, "Member 'BP_GrandPrixSequence_C_SetNextSubMenuSequenceState::InState' has a wrong offset!");
-static_assert(offsetof(BP_GrandPrixSequence_C_SetNextSubMenuSequenceState, PrevSequence) == 0x000008, "Member 'BP_GrandPrixSequence_C_SetNextSubMenuSequenceState::PrevSequence' has a wrong offset!");
+DUMPER7_ASSERTS_BP_GrandPrixSequence_C_SetNextSubMenuSequenceState;
 
 }
 

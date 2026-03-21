@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_PSSaveDataUpgrade_C">();
+		BP_STATIC_CLASS_IMPL("BP_PSSaveDataUpgrade_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_PSSaveDataUpgrade_C")
 	}
 	static class ABP_PSSaveDataUpgrade_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_PSSaveDataUpgrade_C>();
 	}
 };
-static_assert(alignof(ABP_PSSaveDataUpgrade_C) == 0x000008, "Wrong alignment on ABP_PSSaveDataUpgrade_C");
-static_assert(sizeof(ABP_PSSaveDataUpgrade_C) == 0x0002F8, "Wrong size on ABP_PSSaveDataUpgrade_C");
-static_assert(offsetof(ABP_PSSaveDataUpgrade_C, DefaultSceneRoot) == 0x0002F0, "Member 'ABP_PSSaveDataUpgrade_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_PSSaveDataUpgrade_C;
 
 }
 

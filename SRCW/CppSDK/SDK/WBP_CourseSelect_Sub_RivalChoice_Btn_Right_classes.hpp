@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
@@ -76,48 +76,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CourseSelect_Sub_RivalChoice_Btn_Right_C")
 	}
 	static class UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C>();
 	}
 };
-static_assert(alignof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C) == 0x000008, "Wrong alignment on UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C");
-static_assert(sizeof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C) == 0x0005B8, "Wrong size on UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C");
-static_assert(offsetof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C, UberGraphFrame) == 0x0004B0, "Member 'UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C, Btn_Active_to_Select) == 0x0004B8, "Member 'UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C::Btn_Active_to_Select' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C, Btn_Select_to_Active) == 0x0004C0, "Member 'UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C::Btn_Select_to_Active' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C, Btn_Active_Out) == 0x0004C8, "Member 'UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C::Btn_Active_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C, Btn_Active_Loop) == 0x0004D0, "Member 'UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C::Btn_Active_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C, Btn_Active_In) == 0x0004D8, "Member 'UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C::Btn_Active_In' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C, Btn_Select_Out) == 0x0004E0, "Member 'UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C::Btn_Select_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C, Btn_Select_Loop) == 0x0004E8, "Member 'UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C::Btn_Select_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C, Btn_Select_In) == 0x0004F0, "Member 'UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C::Btn_Select_In' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C, Active_Cover) == 0x0004F8, "Member 'UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C::Active_Cover' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C, Arrow) == 0x000500, "Member 'UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C::Arrow' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C, Base_Text_Chara) == 0x000508, "Member 'UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C::Base_Text_Chara' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C, BG) == 0x000510, "Member 'UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C::BG' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C, ChoiceButton) == 0x000518, "Member 'UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C::ChoiceButton' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C, Fire_Back) == 0x000520, "Member 'UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C::Fire_Back' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C, FireSpark_Bottom) == 0x000528, "Member 'UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C::FireSpark_Bottom' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C, FireSpark_Left) == 0x000530, "Member 'UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C::FireSpark_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C, FireSpark_Right) == 0x000538, "Member 'UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C::FireSpark_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C, Grow) == 0x000540, "Member 'UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C::Grow' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C, Grow_Back) == 0x000548, "Member 'UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C::Grow_Back' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C, Grow_In_Inside) == 0x000550, "Member 'UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C::Grow_In_Inside' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C, Line_Grow_01) == 0x000558, "Member 'UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C::Line_Grow_01' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C, Line_Grow_02) == 0x000560, "Member 'UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C::Line_Grow_02' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C, Line_Grow_03) == 0x000568, "Member 'UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C::Line_Grow_03' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C, Line_Grow_04) == 0x000570, "Member 'UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C::Line_Grow_04' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C, Line_Main_01) == 0x000578, "Member 'UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C::Line_Main_01' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C, Line_Main_02) == 0x000580, "Member 'UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C::Line_Main_02' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C, PAT_CharaCut) == 0x000588, "Member 'UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C::PAT_CharaCut' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C, TXT_Chara) == 0x000590, "Member 'UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C::TXT_Chara' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C, WBP_CMN_RivalLevel) == 0x000598, "Member 'UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C::WBP_CMN_RivalLevel' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C, WBP_RivalSelect_Sub_Effects_Fire) == 0x0005A0, "Member 'UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C::WBP_RivalSelect_Sub_Effects_Fire' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C, WBP_RivalSelect_Sub_Effects_Fire_HighLevel) == 0x0005A8, "Member 'UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C::WBP_RivalSelect_Sub_Effects_Fire_HighLevel' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C, RivalChooseButton) == 0x0005B0, "Member 'UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C::RivalChooseButton' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CourseSelect_Sub_RivalChoice_Btn_Right_C;
 
 }
 

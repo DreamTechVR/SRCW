@@ -23,15 +23,18 @@ class UBPC_RaceSequenceStateSetupAssets_C final : public URaceSequenceStateSetup
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_RaceSequenceStateSetupAssets_C">();
+		BP_STATIC_CLASS_IMPL("BPC_RaceSequenceStateSetupAssets_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_RaceSequenceStateSetupAssets_C")
 	}
 	static class UBPC_RaceSequenceStateSetupAssets_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_RaceSequenceStateSetupAssets_C>();
 	}
 };
-static_assert(alignof(UBPC_RaceSequenceStateSetupAssets_C) == 0x000008, "Wrong alignment on UBPC_RaceSequenceStateSetupAssets_C");
-static_assert(sizeof(UBPC_RaceSequenceStateSetupAssets_C) == 0x000138, "Wrong size on UBPC_RaceSequenceStateSetupAssets_C");
+DUMPER7_ASSERTS_UBPC_RaceSequenceStateSetupAssets_C;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -38,22 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_HUD_Sub_LAP_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_HUD_Sub_LAP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_HUD_Sub_LAP_C")
 	}
 	static class UWBP_Race_HUD_Sub_LAP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_HUD_Sub_LAP_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_HUD_Sub_LAP_C) == 0x000008, "Wrong alignment on UWBP_Race_HUD_Sub_LAP_C");
-static_assert(sizeof(UWBP_Race_HUD_Sub_LAP_C) == 0x000348, "Wrong size on UWBP_Race_HUD_Sub_LAP_C");
-static_assert(offsetof(UWBP_Race_HUD_Sub_LAP_C, UberGraphFrame) == 0x000310, "Member 'UWBP_Race_HUD_Sub_LAP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_LAP_C, flag) == 0x000318, "Member 'UWBP_Race_HUD_Sub_LAP_C::flag' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_LAP_C, LAP_Base) == 0x000320, "Member 'UWBP_Race_HUD_Sub_LAP_C::LAP_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_LAP_C, LapCountRT) == 0x000328, "Member 'UWBP_Race_HUD_Sub_LAP_C::LapCountRT' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_LAP_C, NUM_Tex_Denominator) == 0x000330, "Member 'UWBP_Race_HUD_Sub_LAP_C::NUM_Tex_Denominator' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_LAP_C, NUM_Tex_Numerator) == 0x000338, "Member 'UWBP_Race_HUD_Sub_LAP_C::NUM_Tex_Numerator' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_LAP_C, Slash) == 0x000340, "Member 'UWBP_Race_HUD_Sub_LAP_C::Slash' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_HUD_Sub_LAP_C;
 
 }
 

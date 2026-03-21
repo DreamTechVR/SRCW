@@ -33,17 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AC_Cubot_C">();
+		BP_STATIC_CLASS_IMPL("AC_Cubot_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AC_Cubot_C")
 	}
 	static class AAC_Cubot_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAC_Cubot_C>();
 	}
 };
-static_assert(alignof(AAC_Cubot_C) == 0x000008, "Wrong alignment on AAC_Cubot_C");
-static_assert(sizeof(AAC_Cubot_C) == 0x000320, "Wrong size on AAC_Cubot_C");
-static_assert(offsetof(AAC_Cubot_C, UberGraphFrame_AC_Cubot_C) == 0x000310, "Member 'AAC_Cubot_C::UberGraphFrame_AC_Cubot_C' has a wrong offset!");
-static_assert(offsetof(AAC_Cubot_C, SkeletalMesh) == 0x000318, "Member 'AAC_Cubot_C::SkeletalMesh' has a wrong offset!");
+DUMPER7_ASSERTS_AAC_Cubot_C;
 
 }
 

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -49,24 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_GadgetCustomize2Sequence_C">();
+		BP_STATIC_CLASS_IMPL("BP_GadgetCustomize2Sequence_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_GadgetCustomize2Sequence_C")
 	}
 	static class ABP_GadgetCustomize2Sequence_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_GadgetCustomize2Sequence_C>();
 	}
 };
-static_assert(alignof(ABP_GadgetCustomize2Sequence_C) == 0x000008, "Wrong alignment on ABP_GadgetCustomize2Sequence_C");
-static_assert(sizeof(ABP_GadgetCustomize2Sequence_C) == 0x0003E8, "Wrong size on ABP_GadgetCustomize2Sequence_C");
-static_assert(offsetof(ABP_GadgetCustomize2Sequence_C, UberGraphFrame) == 0x000378, "Member 'ABP_GadgetCustomize2Sequence_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_GadgetCustomize2Sequence_C, BPC_GadgetCustomize2InitState) == 0x000380, "Member 'ABP_GadgetCustomize2Sequence_C::BPC_GadgetCustomize2InitState' has a wrong offset!");
-static_assert(offsetof(ABP_GadgetCustomize2Sequence_C, BPC_GadgetCustomize2SelectState) == 0x000388, "Member 'ABP_GadgetCustomize2Sequence_C::BPC_GadgetCustomize2SelectState' has a wrong offset!");
-static_assert(offsetof(ABP_GadgetCustomize2Sequence_C, PlayerNum) == 0x000390, "Member 'ABP_GadgetCustomize2Sequence_C::PlayerNum' has a wrong offset!");
-static_assert(offsetof(ABP_GadgetCustomize2Sequence_C, SelectMode) == 0x000394, "Member 'ABP_GadgetCustomize2Sequence_C::SelectMode' has a wrong offset!");
-static_assert(offsetof(ABP_GadgetCustomize2Sequence_C, bIsMessageBarVisible) == 0x000395, "Member 'ABP_GadgetCustomize2Sequence_C::bIsMessageBarVisible' has a wrong offset!");
-static_assert(offsetof(ABP_GadgetCustomize2Sequence_C, bIsDirty) == 0x000396, "Member 'ABP_GadgetCustomize2Sequence_C::bIsDirty' has a wrong offset!");
-static_assert(offsetof(ABP_GadgetCustomize2Sequence_C, PrevSelectedGadgetPlateData) == 0x000398, "Member 'ABP_GadgetCustomize2Sequence_C::PrevSelectedGadgetPlateData' has a wrong offset!");
-static_assert(offsetof(ABP_GadgetCustomize2Sequence_C, CurrentSelectedGadgetPlateData) == 0x0003C0, "Member 'ABP_GadgetCustomize2Sequence_C::CurrentSelectedGadgetPlateData' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_GadgetCustomize2Sequence_C;
 
 }
 

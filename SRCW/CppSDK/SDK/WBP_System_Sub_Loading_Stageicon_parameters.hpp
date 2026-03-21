@@ -21,9 +21,7 @@ struct WBP_System_Sub_Loading_StageIcon_C_SetTexture final
 public:
 	class UTexture2D*                             InTexture;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_System_Sub_Loading_StageIcon_C_SetTexture) == 0x000008, "Wrong alignment on WBP_System_Sub_Loading_StageIcon_C_SetTexture");
-static_assert(sizeof(WBP_System_Sub_Loading_StageIcon_C_SetTexture) == 0x000008, "Wrong size on WBP_System_Sub_Loading_StageIcon_C_SetTexture");
-static_assert(offsetof(WBP_System_Sub_Loading_StageIcon_C_SetTexture, InTexture) == 0x000000, "Member 'WBP_System_Sub_Loading_StageIcon_C_SetTexture::InTexture' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_System_Sub_Loading_StageIcon_C_SetTexture;
 
 }
 

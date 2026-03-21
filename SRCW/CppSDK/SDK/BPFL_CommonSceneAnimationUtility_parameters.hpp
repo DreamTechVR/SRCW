@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
 #include "ST_CharacterAnimationSettings_structs.hpp"
+#include "UnionSystem_structs.hpp"
 
 
 namespace SDK::Params
@@ -37,19 +37,7 @@ public:
 	struct FST_CharacterAnimationSettings         CallFunc_GetDataTableRowFromName_OutRow;           // 0x0058(0x0070)(HasGetValueTypeHash)
 	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPFL_CommonSceneAnimationUtility_C_GetSceneDriverAnimationAsset) == 0x000008, "Wrong alignment on BPFL_CommonSceneAnimationUtility_C_GetSceneDriverAnimationAsset");
-static_assert(sizeof(BPFL_CommonSceneAnimationUtility_C_GetSceneDriverAnimationAsset) == 0x0000D0, "Wrong size on BPFL_CommonSceneAnimationUtility_C_GetSceneDriverAnimationAsset");
-static_assert(offsetof(BPFL_CommonSceneAnimationUtility_C_GetSceneDriverAnimationAsset, In_DriverId) == 0x000000, "Member 'BPFL_CommonSceneAnimationUtility_C_GetSceneDriverAnimationAsset::In_DriverId' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonSceneAnimationUtility_C_GetSceneDriverAnimationAsset, In_Pose) == 0x000001, "Member 'BPFL_CommonSceneAnimationUtility_C_GetSceneDriverAnimationAsset::In_Pose' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonSceneAnimationUtility_C_GetSceneDriverAnimationAsset, DataTable) == 0x000008, "Member 'BPFL_CommonSceneAnimationUtility_C_GetSceneDriverAnimationAsset::DataTable' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonSceneAnimationUtility_C_GetSceneDriverAnimationAsset, __WorldContext) == 0x000010, "Member 'BPFL_CommonSceneAnimationUtility_C_GetSceneDriverAnimationAsset::__WorldContext' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonSceneAnimationUtility_C_GetSceneDriverAnimationAsset, Anim) == 0x000018, "Member 'BPFL_CommonSceneAnimationUtility_C_GetSceneDriverAnimationAsset::Anim' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonSceneAnimationUtility_C_GetSceneDriverAnimationAsset, Time) == 0x000040, "Member 'BPFL_CommonSceneAnimationUtility_C_GetSceneDriverAnimationAsset::Time' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonSceneAnimationUtility_C_GetSceneDriverAnimationAsset, bSkipFacialBlend) == 0x000048, "Member 'BPFL_CommonSceneAnimationUtility_C_GetSceneDriverAnimationAsset::bSkipFacialBlend' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonSceneAnimationUtility_C_GetSceneDriverAnimationAsset, CallFunc_GetEnumeratorName_ReturnValue) == 0x00004C, "Member 'BPFL_CommonSceneAnimationUtility_C_GetSceneDriverAnimationAsset::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonSceneAnimationUtility_C_GetSceneDriverAnimationAsset, K2Node_SwitchEnum_CmpSuccess) == 0x000054, "Member 'BPFL_CommonSceneAnimationUtility_C_GetSceneDriverAnimationAsset::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonSceneAnimationUtility_C_GetSceneDriverAnimationAsset, CallFunc_GetDataTableRowFromName_OutRow) == 0x000058, "Member 'BPFL_CommonSceneAnimationUtility_C_GetSceneDriverAnimationAsset::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonSceneAnimationUtility_C_GetSceneDriverAnimationAsset, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x0000C8, "Member 'BPFL_CommonSceneAnimationUtility_C_GetSceneDriverAnimationAsset::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_CommonSceneAnimationUtility_C_GetSceneDriverAnimationAsset;
 
 // Function BPFL_CommonSceneAnimationUtility.BPFL_CommonSceneAnimationUtility_C.LoadSceneDriverAnimationAssets
 // 0x00A8 (0x00A8 - 0x0000)
@@ -78,26 +66,7 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets) == 0x000008, "Wrong alignment on BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets");
-static_assert(sizeof(BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets) == 0x0000A8, "Wrong size on BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets");
-static_assert(offsetof(BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets, In_SceneDrivers) == 0x000000, "Member 'BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets::In_SceneDrivers' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets, DataTable) == 0x000010, "Member 'BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets::DataTable' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets, __WorldContext) == 0x000018, "Member 'BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets::__WorldContext' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets, LoadAssets) == 0x000020, "Member 'BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets::LoadAssets' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets, ReturnValue) == 0x000030, "Member 'BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets, Temp_int_Array_Index_Variable) == 0x000040, "Member 'BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets, CallFunc_Array_Length_ReturnValue) == 0x000044, "Member 'BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets, CallFunc_Array_Get_Item) == 0x000048, "Member 'BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets, CallFunc_GetDriverPose_ReturnValue) == 0x000050, "Member 'BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets::CallFunc_GetDriverPose_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets, Temp_int_Loop_Counter_Variable) == 0x000054, "Member 'BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets, CallFunc_GetSceneDriverAnimationAsset_Anim) == 0x000058, "Member 'BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets::CallFunc_GetSceneDriverAnimationAsset_Anim' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets, CallFunc_GetSceneDriverAnimationAsset_Time) == 0x000080, "Member 'BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets::CallFunc_GetSceneDriverAnimationAsset_Time' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets, CallFunc_GetSceneDriverAnimationAsset_bSkipFacialBlend) == 0x000088, "Member 'BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets::CallFunc_GetSceneDriverAnimationAsset_bSkipFacialBlend' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x000090, "Member 'BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets, CallFunc_IsValidSoftObjectReference_ReturnValue) == 0x000098, "Member 'BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets::CallFunc_IsValidSoftObjectReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets, CallFunc_Less_IntInt_ReturnValue) == 0x000099, "Member 'BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets, CallFunc_Add_IntInt_ReturnValue) == 0x00009C, "Member 'BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets, CallFunc_Array_Add_ReturnValue) == 0x0000A0, "Member 'BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_CommonSceneAnimationUtility_C_LoadSceneDriverAnimationAssets;
 
 }
 

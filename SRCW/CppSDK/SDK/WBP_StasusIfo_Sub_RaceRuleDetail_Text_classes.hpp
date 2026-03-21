@@ -29,19 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_StasusIfo_Sub_RaceRuleDetail_Text_C">();
+		BP_STATIC_CLASS_IMPL("WBP_StasusIfo_Sub_RaceRuleDetail_Text_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_StasusIfo_Sub_RaceRuleDetail_Text_C")
 	}
 	static class UWBP_StasusIfo_Sub_RaceRuleDetail_Text_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_StasusIfo_Sub_RaceRuleDetail_Text_C>();
 	}
 };
-static_assert(alignof(UWBP_StasusIfo_Sub_RaceRuleDetail_Text_C) == 0x000008, "Wrong alignment on UWBP_StasusIfo_Sub_RaceRuleDetail_Text_C");
-static_assert(sizeof(UWBP_StasusIfo_Sub_RaceRuleDetail_Text_C) == 0x000300, "Wrong size on UWBP_StasusIfo_Sub_RaceRuleDetail_Text_C");
-static_assert(offsetof(UWBP_StasusIfo_Sub_RaceRuleDetail_Text_C, Base_02) == 0x0002E0, "Member 'UWBP_StasusIfo_Sub_RaceRuleDetail_Text_C::Base_02' has a wrong offset!");
-static_assert(offsetof(UWBP_StasusIfo_Sub_RaceRuleDetail_Text_C, TitleBase_02) == 0x0002E8, "Member 'UWBP_StasusIfo_Sub_RaceRuleDetail_Text_C::TitleBase_02' has a wrong offset!");
-static_assert(offsetof(UWBP_StasusIfo_Sub_RaceRuleDetail_Text_C, TXT_Title) == 0x0002F0, "Member 'UWBP_StasusIfo_Sub_RaceRuleDetail_Text_C::TXT_Title' has a wrong offset!");
-static_assert(offsetof(UWBP_StasusIfo_Sub_RaceRuleDetail_Text_C, TXT_Title_Detail) == 0x0002F8, "Member 'UWBP_StasusIfo_Sub_RaceRuleDetail_Text_C::TXT_Title_Detail' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_StasusIfo_Sub_RaceRuleDetail_Text_C;
 
 }
 

@@ -33,18 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C")
 	}
 	static class UWBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C) == 0x000008, "Wrong alignment on UWBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C");
-static_assert(sizeof(UWBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C) == 0x0002F8, "Wrong size on UWBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C, Base_Chara) == 0x0002E0, "Member 'UWBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C::Base_Chara' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C, DMY_CharaIcon) == 0x0002E8, "Member 'UWBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C::DMY_CharaIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C, WBP_Race_HUD_Sub_Rank) == 0x0002F0, "Member 'UWBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C::WBP_Race_HUD_Sub_Rank' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_HUD_Sub_Festa_TeamHUD_CharaInfo_C;
 
 }
 

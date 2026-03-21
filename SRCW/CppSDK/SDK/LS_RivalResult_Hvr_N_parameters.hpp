@@ -27,13 +27,7 @@ public:
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LS_RivalResult_Hvr_N_DirectorBP_C_ExecuteUbergraph_LS_RivalResult_Hvr_N_DirectorBP) == 0x000008, "Wrong alignment on LS_RivalResult_Hvr_N_DirectorBP_C_ExecuteUbergraph_LS_RivalResult_Hvr_N_DirectorBP");
-static_assert(sizeof(LS_RivalResult_Hvr_N_DirectorBP_C_ExecuteUbergraph_LS_RivalResult_Hvr_N_DirectorBP) == 0x000020, "Wrong size on LS_RivalResult_Hvr_N_DirectorBP_C_ExecuteUbergraph_LS_RivalResult_Hvr_N_DirectorBP");
-static_assert(offsetof(LS_RivalResult_Hvr_N_DirectorBP_C_ExecuteUbergraph_LS_RivalResult_Hvr_N_DirectorBP, EntryPoint) == 0x000000, "Member 'LS_RivalResult_Hvr_N_DirectorBP_C_ExecuteUbergraph_LS_RivalResult_Hvr_N_DirectorBP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(LS_RivalResult_Hvr_N_DirectorBP_C_ExecuteUbergraph_LS_RivalResult_Hvr_N_DirectorBP, CallFunc_Create_ReturnValue) == 0x000008, "Member 'LS_RivalResult_Hvr_N_DirectorBP_C_ExecuteUbergraph_LS_RivalResult_Hvr_N_DirectorBP::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LS_RivalResult_Hvr_N_DirectorBP_C_ExecuteUbergraph_LS_RivalResult_Hvr_N_DirectorBP, Temp_bool_Has_Been_Initd_Variable) == 0x000010, "Member 'LS_RivalResult_Hvr_N_DirectorBP_C_ExecuteUbergraph_LS_RivalResult_Hvr_N_DirectorBP::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(LS_RivalResult_Hvr_N_DirectorBP_C_ExecuteUbergraph_LS_RivalResult_Hvr_N_DirectorBP, Temp_bool_IsClosed_Variable) == 0x000011, "Member 'LS_RivalResult_Hvr_N_DirectorBP_C_ExecuteUbergraph_LS_RivalResult_Hvr_N_DirectorBP::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(LS_RivalResult_Hvr_N_DirectorBP_C_ExecuteUbergraph_LS_RivalResult_Hvr_N_DirectorBP, CallFunc_PlayAnimation_ReturnValue) == 0x000018, "Member 'LS_RivalResult_Hvr_N_DirectorBP_C_ExecuteUbergraph_LS_RivalResult_Hvr_N_DirectorBP::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LS_RivalResult_Hvr_N_DirectorBP_C_ExecuteUbergraph_LS_RivalResult_Hvr_N_DirectorBP;
 
 }
 

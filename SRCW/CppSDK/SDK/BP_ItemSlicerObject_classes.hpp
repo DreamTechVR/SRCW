@@ -23,15 +23,18 @@ class ABP_ItemSlicerObject_C final : public AItemSlicerObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ItemSlicerObject_C">();
+		BP_STATIC_CLASS_IMPL("BP_ItemSlicerObject_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ItemSlicerObject_C")
 	}
 	static class ABP_ItemSlicerObject_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ItemSlicerObject_C>();
 	}
 };
-static_assert(alignof(ABP_ItemSlicerObject_C) == 0x000010, "Wrong alignment on ABP_ItemSlicerObject_C");
-static_assert(sizeof(ABP_ItemSlicerObject_C) == 0x000640, "Wrong size on ABP_ItemSlicerObject_C");
+DUMPER7_ASSERTS_ABP_ItemSlicerObject_C;
 
 }
 

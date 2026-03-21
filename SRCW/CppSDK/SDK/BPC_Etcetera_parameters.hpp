@@ -30,16 +30,7 @@ public:
 	float                                         K2Node_Event_InDeltaTime;                          // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAppSequenceLogManagerSubsystem*        CallFunc_GetGameInstanceSubsystem_ReturnValue_1;   // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_Etcetera_C_ExecuteUbergraph_BPC_Etcetera) == 0x000008, "Wrong alignment on BPC_Etcetera_C_ExecuteUbergraph_BPC_Etcetera");
-static_assert(sizeof(BPC_Etcetera_C_ExecuteUbergraph_BPC_Etcetera) == 0x000040, "Wrong size on BPC_Etcetera_C_ExecuteUbergraph_BPC_Etcetera");
-static_assert(offsetof(BPC_Etcetera_C_ExecuteUbergraph_BPC_Etcetera, EntryPoint) == 0x000000, "Member 'BPC_Etcetera_C_ExecuteUbergraph_BPC_Etcetera::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BPC_Etcetera_C_ExecuteUbergraph_BPC_Etcetera, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000008, "Member 'BPC_Etcetera_C_ExecuteUbergraph_BPC_Etcetera::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_Etcetera_C_ExecuteUbergraph_BPC_Etcetera, CallFunc_GetChildStateMachine_ReturnValue) == 0x000010, "Member 'BPC_Etcetera_C_ExecuteUbergraph_BPC_Etcetera::CallFunc_GetChildStateMachine_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_Etcetera_C_ExecuteUbergraph_BPC_Etcetera, K2Node_CreateDelegate_OutputDelegate) == 0x000018, "Member 'BPC_Etcetera_C_ExecuteUbergraph_BPC_Etcetera::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BPC_Etcetera_C_ExecuteUbergraph_BPC_Etcetera, K2Node_DynamicCast_AsEtcetera_Sequence) == 0x000028, "Member 'BPC_Etcetera_C_ExecuteUbergraph_BPC_Etcetera::K2Node_DynamicCast_AsEtcetera_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_Etcetera_C_ExecuteUbergraph_BPC_Etcetera, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'BPC_Etcetera_C_ExecuteUbergraph_BPC_Etcetera::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_Etcetera_C_ExecuteUbergraph_BPC_Etcetera, K2Node_Event_InDeltaTime) == 0x000034, "Member 'BPC_Etcetera_C_ExecuteUbergraph_BPC_Etcetera::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(BPC_Etcetera_C_ExecuteUbergraph_BPC_Etcetera, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x000038, "Member 'BPC_Etcetera_C_ExecuteUbergraph_BPC_Etcetera::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_Etcetera_C_ExecuteUbergraph_BPC_Etcetera;
 
 // Function BPC_Etcetera.BPC_Etcetera_C.OnUpdateState
 // 0x0004 (0x0004 - 0x0000)
@@ -48,9 +39,7 @@ struct BPC_Etcetera_C_OnUpdateState final
 public:
 	float                                         InDeltaTime;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_Etcetera_C_OnUpdateState) == 0x000004, "Wrong alignment on BPC_Etcetera_C_OnUpdateState");
-static_assert(sizeof(BPC_Etcetera_C_OnUpdateState) == 0x000004, "Wrong size on BPC_Etcetera_C_OnUpdateState");
-static_assert(offsetof(BPC_Etcetera_C_OnUpdateState, InDeltaTime) == 0x000000, "Member 'BPC_Etcetera_C_OnUpdateState::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_Etcetera_C_OnUpdateState;
 
 }
 

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -71,35 +71,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CourseSwitch_Sub_CourseIcon_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CourseSwitch_Sub_CourseIcon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CourseSwitch_Sub_CourseIcon_C")
 	}
 	static class UWBP_CourseSwitch_Sub_CourseIcon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CourseSwitch_Sub_CourseIcon_C>();
 	}
 };
-static_assert(alignof(UWBP_CourseSwitch_Sub_CourseIcon_C) == 0x000008, "Wrong alignment on UWBP_CourseSwitch_Sub_CourseIcon_C");
-static_assert(sizeof(UWBP_CourseSwitch_Sub_CourseIcon_C) == 0x000530, "Wrong size on UWBP_CourseSwitch_Sub_CourseIcon_C");
-static_assert(offsetof(UWBP_CourseSwitch_Sub_CourseIcon_C, UberGraphFrame) == 0x000498, "Member 'UWBP_CourseSwitch_Sub_CourseIcon_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_Sub_CourseIcon_C, Select_Loop) == 0x0004A0, "Member 'UWBP_CourseSwitch_Sub_CourseIcon_C::Select_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_Sub_CourseIcon_C, Active_Loop) == 0x0004A8, "Member 'UWBP_CourseSwitch_Sub_CourseIcon_C::Active_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_Sub_CourseIcon_C, CourseThumbnail) == 0x0004B0, "Member 'UWBP_CourseSwitch_Sub_CourseIcon_C::CourseThumbnail' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_Sub_CourseIcon_C, CourseThumbnail_Base) == 0x0004B8, "Member 'UWBP_CourseSwitch_Sub_CourseIcon_C::CourseThumbnail_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_Sub_CourseIcon_C, Cursor_ItemsSwitch) == 0x0004C0, "Member 'UWBP_CourseSwitch_Sub_CourseIcon_C::Cursor_ItemsSwitch' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_Sub_CourseIcon_C, Cursor_Select) == 0x0004C8, "Member 'UWBP_CourseSwitch_Sub_CourseIcon_C::Cursor_Select' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_Sub_CourseIcon_C, DSP_NewIconWave) == 0x0004D0, "Member 'UWBP_CourseSwitch_Sub_CourseIcon_C::DSP_NewIconWave' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_Sub_CourseIcon_C, Lock_Icon) == 0x0004D8, "Member 'UWBP_CourseSwitch_Sub_CourseIcon_C::Lock_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_Sub_CourseIcon_C, MouseInteraction) == 0x0004E0, "Member 'UWBP_CourseSwitch_Sub_CourseIcon_C::MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_Sub_CourseIcon_C, Off_Cover) == 0x0004E8, "Member 'UWBP_CourseSwitch_Sub_CourseIcon_C::Off_Cover' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_Sub_CourseIcon_C, Off_Cover_DLC) == 0x0004F0, "Member 'UWBP_CourseSwitch_Sub_CourseIcon_C::Off_Cover_DLC' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_Sub_CourseIcon_C, Off_Cover_Lock) == 0x0004F8, "Member 'UWBP_CourseSwitch_Sub_CourseIcon_C::Off_Cover_Lock' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_Sub_CourseIcon_C, On_Cover) == 0x000500, "Member 'UWBP_CourseSwitch_Sub_CourseIcon_C::On_Cover' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_Sub_CourseIcon_C, TXT_DLC) == 0x000508, "Member 'UWBP_CourseSwitch_Sub_CourseIcon_C::TXT_DLC' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_Sub_CourseIcon_C, WidgetSwitcher) == 0x000510, "Member 'UWBP_CourseSwitch_Sub_CourseIcon_C::WidgetSwitcher' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_Sub_CourseIcon_C, bIsFocus) == 0x000518, "Member 'UWBP_CourseSwitch_Sub_CourseIcon_C::bIsFocus' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_Sub_CourseIcon_C, ターゲット) == 0x000520, "Member 'UWBP_CourseSwitch_Sub_CourseIcon_C::ターゲット' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_Sub_CourseIcon_C, SoundOffCount) == 0x000528, "Member 'UWBP_CourseSwitch_Sub_CourseIcon_C::SoundOffCount' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_Sub_CourseIcon_C, IsGuest) == 0x00052C, "Member 'UWBP_CourseSwitch_Sub_CourseIcon_C::IsGuest' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CourseSwitch_Sub_CourseIcon_C;
 
 }
 

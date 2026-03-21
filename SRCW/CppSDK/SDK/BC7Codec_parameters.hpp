@@ -27,14 +27,7 @@ public:
 	float                                         AlphaWeight;                                       // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UBC7EncoderAsyncExecution*              ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BC7EncoderAsyncExecution_EncodeBC7) == 0x000008, "Wrong alignment on BC7EncoderAsyncExecution_EncodeBC7");
-static_assert(sizeof(BC7EncoderAsyncExecution_EncodeBC7) == 0x000020, "Wrong size on BC7EncoderAsyncExecution_EncodeBC7");
-static_assert(offsetof(BC7EncoderAsyncExecution_EncodeBC7, WorldContextObject) == 0x000000, "Member 'BC7EncoderAsyncExecution_EncodeBC7::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(BC7EncoderAsyncExecution_EncodeBC7, Texture2D) == 0x000008, "Member 'BC7EncoderAsyncExecution_EncodeBC7::Texture2D' has a wrong offset!");
-static_assert(offsetof(BC7EncoderAsyncExecution_EncodeBC7, GenMips) == 0x000010, "Member 'BC7EncoderAsyncExecution_EncodeBC7::GenMips' has a wrong offset!");
-static_assert(offsetof(BC7EncoderAsyncExecution_EncodeBC7, SRGB) == 0x000011, "Member 'BC7EncoderAsyncExecution_EncodeBC7::SRGB' has a wrong offset!");
-static_assert(offsetof(BC7EncoderAsyncExecution_EncodeBC7, AlphaWeight) == 0x000014, "Member 'BC7EncoderAsyncExecution_EncodeBC7::AlphaWeight' has a wrong offset!");
-static_assert(offsetof(BC7EncoderAsyncExecution_EncodeBC7, ReturnValue) == 0x000018, "Member 'BC7EncoderAsyncExecution_EncodeBC7::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BC7EncoderAsyncExecution_EncodeBC7;
 
 }
 

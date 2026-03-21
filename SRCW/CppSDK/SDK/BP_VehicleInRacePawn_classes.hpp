@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -88,38 +88,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_VehicleInRacePawn_C">();
+		BP_STATIC_CLASS_IMPL("BP_VehicleInRacePawn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_VehicleInRacePawn_C")
 	}
 	static class ABP_VehicleInRacePawn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_VehicleInRacePawn_C>();
 	}
 };
-static_assert(alignof(ABP_VehicleInRacePawn_C) == 0x000010, "Wrong alignment on ABP_VehicleInRacePawn_C");
-static_assert(sizeof(ABP_VehicleInRacePawn_C) == 0x000E00, "Wrong size on ABP_VehicleInRacePawn_C");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, UberGraphFrame) == 0x0009E0, "Member 'ABP_VehicleInRacePawn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Rainbow_ColorRainbow_398F110E4888851C953321BB9EF69A76) == 0x0009E8, "Member 'ABP_VehicleInRacePawn_C::Timeline_Rainbow_ColorRainbow_398F110E4888851C953321BB9EF69A76' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Rainbow__Direction_398F110E4888851C953321BB9EF69A76) == 0x0009F8, "Member 'ABP_VehicleInRacePawn_C::Timeline_Rainbow__Direction_398F110E4888851C953321BB9EF69A76' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Rainbow) == 0x000A00, "Member 'ABP_VehicleInRacePawn_C::Timeline_Rainbow' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_CountDown_ItemCountDown_D7F13C784585628358525B8BFBB668C8) == 0x000A08, "Member 'ABP_VehicleInRacePawn_C::Timeline_CountDown_ItemCountDown_D7F13C784585628358525B8BFBB668C8' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_CountDown__Direction_D7F13C784585628358525B8BFBB668C8) == 0x000A0C, "Member 'ABP_VehicleInRacePawn_C::Timeline_CountDown__Direction_D7F13C784585628358525B8BFBB668C8' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_CountDown) == 0x000A10, "Member 'ABP_VehicleInRacePawn_C::Timeline_CountDown' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Damage_Spin_In_Intensity_Damage_Intensity_E780DC2640C5BFB6924AA5B5B7E94652) == 0x000A18, "Member 'ABP_VehicleInRacePawn_C::Timeline_Damage_Spin_In_Intensity_Damage_Intensity_E780DC2640C5BFB6924AA5B5B7E94652' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Damage_Spin_In_Intensity__Direction_E780DC2640C5BFB6924AA5B5B7E94652) == 0x000A1C, "Member 'ABP_VehicleInRacePawn_C::Timeline_Damage_Spin_In_Intensity__Direction_E780DC2640C5BFB6924AA5B5B7E94652' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Damage_Spin_In_Intensity) == 0x000A20, "Member 'ABP_VehicleInRacePawn_C::Timeline_Damage_Spin_In_Intensity' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Damage_In_Intensity_Damage_Intensity_1B12843C4C159894D1354B91D4B84FDE) == 0x000A28, "Member 'ABP_VehicleInRacePawn_C::Timeline_Damage_In_Intensity_Damage_Intensity_1B12843C4C159894D1354B91D4B84FDE' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Damage_In_Intensity__Direction_1B12843C4C159894D1354B91D4B84FDE) == 0x000A2C, "Member 'ABP_VehicleInRacePawn_C::Timeline_Damage_In_Intensity__Direction_1B12843C4C159894D1354B91D4B84FDE' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Damage_In_Intensity) == 0x000A30, "Member 'ABP_VehicleInRacePawn_C::Timeline_Damage_In_Intensity' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_FadeOut_Ink_FadeOut_Ink_51D33DC14B71B11189DA0ABA0855515F) == 0x000A38, "Member 'ABP_VehicleInRacePawn_C::Timeline_FadeOut_Ink_FadeOut_Ink_51D33DC14B71B11189DA0ABA0855515F' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_FadeOut_Ink__Direction_51D33DC14B71B11189DA0ABA0855515F) == 0x000A3C, "Member 'ABP_VehicleInRacePawn_C::Timeline_FadeOut_Ink__Direction_51D33DC14B71B11189DA0ABA0855515F' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_FadeOut_Ink) == 0x000A40, "Member 'ABP_VehicleInRacePawn_C::Timeline_FadeOut_Ink' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Drift_In_Intensity_Drift_Intensity_C3149F7E457D97BFB172D1BF2190F343) == 0x000A48, "Member 'ABP_VehicleInRacePawn_C::Timeline_Drift_In_Intensity_Drift_Intensity_C3149F7E457D97BFB172D1BF2190F343' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Drift_In_Intensity__Direction_C3149F7E457D97BFB172D1BF2190F343) == 0x000A4C, "Member 'ABP_VehicleInRacePawn_C::Timeline_Drift_In_Intensity__Direction_C3149F7E457D97BFB172D1BF2190F343' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Drift_In_Intensity) == 0x000A50, "Member 'ABP_VehicleInRacePawn_C::Timeline_Drift_In_Intensity' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Scale_Down_ScaleRate_F78E34F74DA4B82C40D04B9705E5A57B) == 0x000A58, "Member 'ABP_VehicleInRacePawn_C::Timeline_Scale_Down_ScaleRate_F78E34F74DA4B82C40D04B9705E5A57B' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Scale_Down__Direction_F78E34F74DA4B82C40D04B9705E5A57B) == 0x000A5C, "Member 'ABP_VehicleInRacePawn_C::Timeline_Scale_Down__Direction_F78E34F74DA4B82C40D04B9705E5A57B' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Scale_Down) == 0x000A60, "Member 'ABP_VehicleInRacePawn_C::Timeline_Scale_Down' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, DriverData) == 0x000A68, "Member 'ABP_VehicleInRacePawn_C::DriverData' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_VehicleInRacePawn_C;
 
 }
 

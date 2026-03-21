@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "UNION_structs.hpp"
+#include "UNION_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UnionUI_structs.hpp"
-#include "UNION_structs.hpp"
-#include "UNION_classes.hpp"
 
 
 namespace SDK
@@ -64,25 +64,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_TimeTrialClassSelectSubState_C">();
+		BP_STATIC_CLASS_IMPL("BPC_TimeTrialClassSelectSubState_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_TimeTrialClassSelectSubState_C")
 	}
 	static class UBPC_TimeTrialClassSelectSubState_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_TimeTrialClassSelectSubState_C>();
 	}
 };
-static_assert(alignof(UBPC_TimeTrialClassSelectSubState_C) == 0x000008, "Wrong alignment on UBPC_TimeTrialClassSelectSubState_C");
-static_assert(sizeof(UBPC_TimeTrialClassSelectSubState_C) == 0x0001B8, "Wrong size on UBPC_TimeTrialClassSelectSubState_C");
-static_assert(offsetof(UBPC_TimeTrialClassSelectSubState_C, UberGraphFrame) == 0x000128, "Member 'UBPC_TimeTrialClassSelectSubState_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialClassSelectSubState_C, OwnerTimeTrialSequence) == 0x000130, "Member 'UBPC_TimeTrialClassSelectSubState_C::OwnerTimeTrialSequence' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialClassSelectSubState_C, Course_Select_Widget_Class_Ref) == 0x000138, "Member 'UBPC_TimeTrialClassSelectSubState_C::Course_Select_Widget_Class_Ref' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialClassSelectSubState_C, CourseSelectWidget) == 0x000160, "Member 'UBPC_TimeTrialClassSelectSubState_C::CourseSelectWidget' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialClassSelectSubState_C, SelectClassWidget) == 0x000168, "Member 'UBPC_TimeTrialClassSelectSubState_C::SelectClassWidget' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialClassSelectSubState_C, SelectClassWidgetClassRef) == 0x000170, "Member 'UBPC_TimeTrialClassSelectSubState_C::SelectClassWidgetClassRef' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialClassSelectSubState_C, SubInputReciever) == 0x000198, "Member 'UBPC_TimeTrialClassSelectSubState_C::SubInputReciever' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialClassSelectSubState_C, bFirstFocus) == 0x0001A0, "Member 'UBPC_TimeTrialClassSelectSubState_C::bFirstFocus' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialClassSelectSubState_C, TipsWindow) == 0x0001A8, "Member 'UBPC_TimeTrialClassSelectSubState_C::TipsWindow' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialClassSelectSubState_C, OpenTipsId) == 0x0001B0, "Member 'UBPC_TimeTrialClassSelectSubState_C::OpenTipsId' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_TimeTrialClassSelectSubState_C;
 
 }
 

@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK
@@ -51,23 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_GadgetCustomize2State_C">();
+		BP_STATIC_CLASS_IMPL("BPC_GadgetCustomize2State_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_GadgetCustomize2State_C")
 	}
 	static class UBPC_GadgetCustomize2State_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_GadgetCustomize2State_C>();
 	}
 };
-static_assert(alignof(UBPC_GadgetCustomize2State_C) == 0x000008, "Wrong alignment on UBPC_GadgetCustomize2State_C");
-static_assert(sizeof(UBPC_GadgetCustomize2State_C) == 0x000150, "Wrong size on UBPC_GadgetCustomize2State_C");
-static_assert(offsetof(UBPC_GadgetCustomize2State_C, UberGraphFrame) == 0x000128, "Member 'UBPC_GadgetCustomize2State_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_GadgetCustomize2State_C, PlayerNum) == 0x000130, "Member 'UBPC_GadgetCustomize2State_C::PlayerNum' has a wrong offset!");
-static_assert(offsetof(UBPC_GadgetCustomize2State_C, SelectMode) == 0x000134, "Member 'UBPC_GadgetCustomize2State_C::SelectMode' has a wrong offset!");
-static_assert(offsetof(UBPC_GadgetCustomize2State_C, Sequence) == 0x000138, "Member 'UBPC_GadgetCustomize2State_C::Sequence' has a wrong offset!");
-static_assert(offsetof(UBPC_GadgetCustomize2State_C, TimerHandle) == 0x000140, "Member 'UBPC_GadgetCustomize2State_C::TimerHandle' has a wrong offset!");
-static_assert(offsetof(UBPC_GadgetCustomize2State_C, bIsMessageBarVisible) == 0x000148, "Member 'UBPC_GadgetCustomize2State_C::bIsMessageBarVisible' has a wrong offset!");
-static_assert(offsetof(UBPC_GadgetCustomize2State_C, bIsSelectedPlateDataChanged) == 0x000149, "Member 'UBPC_GadgetCustomize2State_C::bIsSelectedPlateDataChanged' has a wrong offset!");
-static_assert(offsetof(UBPC_GadgetCustomize2State_C, bIsExit) == 0x00014A, "Member 'UBPC_GadgetCustomize2State_C::bIsExit' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_GadgetCustomize2State_C;
 
 }
 

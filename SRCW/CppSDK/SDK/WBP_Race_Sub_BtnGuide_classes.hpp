@@ -12,9 +12,10 @@
 
 #include "UnionSystem_structs.hpp"
 #include "InputCore_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UnionRun_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "Engine_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK
@@ -107,68 +108,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_Sub_BtnGuide_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_Sub_BtnGuide_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_Sub_BtnGuide_C")
 	}
 	static class UWBP_Race_Sub_BtnGuide_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_Sub_BtnGuide_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_Sub_BtnGuide_C) == 0x000008, "Wrong alignment on UWBP_Race_Sub_BtnGuide_C");
-static_assert(sizeof(UWBP_Race_Sub_BtnGuide_C) == 0x0004B0, "Wrong size on UWBP_Race_Sub_BtnGuide_C");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Race_Sub_BtnGuide_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Btn_StickRoll_Loop) == 0x0002E8, "Member 'UWBP_Race_Sub_BtnGuide_C::Btn_StickRoll_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Btn_Out) == 0x0002F0, "Member 'UWBP_Race_Sub_BtnGuide_C::Btn_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Btn_Loop) == 0x0002F8, "Member 'UWBP_Race_Sub_BtnGuide_C::Btn_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Btn_In) == 0x000300, "Member 'UWBP_Race_Sub_BtnGuide_C::Btn_In' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Arrow_Down) == 0x000308, "Member 'UWBP_Race_Sub_BtnGuide_C::Arrow_Down' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Arrow_Push) == 0x000310, "Member 'UWBP_Race_Sub_BtnGuide_C::Arrow_Push' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Arrow_Roll) == 0x000318, "Member 'UWBP_Race_Sub_BtnGuide_C::Arrow_Roll' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Arrow_Up) == 0x000320, "Member 'UWBP_Race_Sub_BtnGuide_C::Arrow_Up' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, base) == 0x000328, "Member 'UWBP_Race_Sub_BtnGuide_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Btn_Cross) == 0x000330, "Member 'UWBP_Race_Sub_BtnGuide_C::Btn_Cross' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Btn_Key) == 0x000338, "Member 'UWBP_Race_Sub_BtnGuide_C::Btn_Key' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Btn_LR) == 0x000340, "Member 'UWBP_Race_Sub_BtnGuide_C::Btn_LR' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Btn_Mouse) == 0x000348, "Member 'UWBP_Race_Sub_BtnGuide_C::Btn_Mouse' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Btn_Option_01) == 0x000350, "Member 'UWBP_Race_Sub_BtnGuide_C::Btn_Option_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Btn_Option_02) == 0x000358, "Member 'UWBP_Race_Sub_BtnGuide_C::Btn_Option_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Btn_Stick) == 0x000360, "Member 'UWBP_Race_Sub_BtnGuide_C::Btn_Stick' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Fever) == 0x000368, "Member 'UWBP_Race_Sub_BtnGuide_C::Fever' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Fever_Option_01) == 0x000370, "Member 'UWBP_Race_Sub_BtnGuide_C::Fever_Option_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Fever_Option_02) == 0x000378, "Member 'UWBP_Race_Sub_BtnGuide_C::Fever_Option_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Fever_TSR) == 0x000380, "Member 'UWBP_Race_Sub_BtnGuide_C::Fever_TSR' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, PAT_Bottom) == 0x000388, "Member 'UWBP_Race_Sub_BtnGuide_C::PAT_Bottom' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, PAT_Key) == 0x000390, "Member 'UWBP_Race_Sub_BtnGuide_C::PAT_Key' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, PAT_Left) == 0x000398, "Member 'UWBP_Race_Sub_BtnGuide_C::PAT_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, PAT_LR) == 0x0003A0, "Member 'UWBP_Race_Sub_BtnGuide_C::PAT_LR' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, PAT_Mouse) == 0x0003A8, "Member 'UWBP_Race_Sub_BtnGuide_C::PAT_Mouse' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, PAT_Option_01) == 0x0003B0, "Member 'UWBP_Race_Sub_BtnGuide_C::PAT_Option_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, PAT_Option_01_Pict) == 0x0003B8, "Member 'UWBP_Race_Sub_BtnGuide_C::PAT_Option_01_Pict' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, PAT_Option_02) == 0x0003C0, "Member 'UWBP_Race_Sub_BtnGuide_C::PAT_Option_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, PAT_Option_02_Pict) == 0x0003C8, "Member 'UWBP_Race_Sub_BtnGuide_C::PAT_Option_02_Pict' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, PAT_Right) == 0x0003D0, "Member 'UWBP_Race_Sub_BtnGuide_C::PAT_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, PAT_Up) == 0x0003D8, "Member 'UWBP_Race_Sub_BtnGuide_C::PAT_Up' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Stick) == 0x0003E0, "Member 'UWBP_Race_Sub_BtnGuide_C::Stick' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, TXT_Key) == 0x0003E8, "Member 'UWBP_Race_Sub_BtnGuide_C::TXT_Key' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, TXT_LR) == 0x0003F0, "Member 'UWBP_Race_Sub_BtnGuide_C::TXT_LR' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, TXT_Stick) == 0x0003F8, "Member 'UWBP_Race_Sub_BtnGuide_C::TXT_Stick' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, WidgetSwitcher_Arrow) == 0x000400, "Member 'UWBP_Race_Sub_BtnGuide_C::WidgetSwitcher_Arrow' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, WidgetSwitcher_Btn) == 0x000408, "Member 'UWBP_Race_Sub_BtnGuide_C::WidgetSwitcher_Btn' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, IsDispOnUseItem) == 0x000410, "Member 'UWBP_Race_Sub_BtnGuide_C::IsDispOnUseItem' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, IsInAnimUseItem) == 0x000411, "Member 'UWBP_Race_Sub_BtnGuide_C::IsInAnimUseItem' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, IsDispOnFlightGuide) == 0x000412, "Member 'UWBP_Race_Sub_BtnGuide_C::IsDispOnFlightGuide' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Text_L1) == 0x000418, "Member 'UWBP_Race_Sub_BtnGuide_C::Text_L1' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Text_R1) == 0x000428, "Member 'UWBP_Race_Sub_BtnGuide_C::Text_R1' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Text_LStick) == 0x000438, "Member 'UWBP_Race_Sub_BtnGuide_C::Text_LStick' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Text_RStick) == 0x000448, "Member 'UWBP_Race_Sub_BtnGuide_C::Text_RStick' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, SteerKeyIndex) == 0x000458, "Member 'UWBP_Race_Sub_BtnGuide_C::SteerKeyIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, PlayerControllerIndex) == 0x00045C, "Member 'UWBP_Race_Sub_BtnGuide_C::PlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, ChangeKeyEventTimerHandle) == 0x000460, "Member 'UWBP_Race_Sub_BtnGuide_C::ChangeKeyEventTimerHandle' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, IsEventKeyboard) == 0x000468, "Member 'UWBP_Race_Sub_BtnGuide_C::IsEventKeyboard' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Text_L2) == 0x000470, "Member 'UWBP_Race_Sub_BtnGuide_C::Text_L2' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Text_R2) == 0x000480, "Member 'UWBP_Race_Sub_BtnGuide_C::Text_R2' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, BtnGuideBtn) == 0x000490, "Member 'UWBP_Race_Sub_BtnGuide_C::BtnGuideBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, BtnGuideBtnType) == 0x0004A8, "Member 'UWBP_Race_Sub_BtnGuide_C::BtnGuideBtnType' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_Sub_BtnGuide_C;
 
 }
 

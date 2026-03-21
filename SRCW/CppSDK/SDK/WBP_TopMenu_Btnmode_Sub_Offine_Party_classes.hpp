@@ -40,24 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_TopMenu_Btnmode_Sub_Offine_Party_C">();
+		BP_STATIC_CLASS_IMPL("WBP_TopMenu_Btnmode_Sub_Offine_Party_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_TopMenu_Btnmode_Sub_Offine_Party_C")
 	}
 	static class UWBP_TopMenu_Btnmode_Sub_Offine_Party_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_TopMenu_Btnmode_Sub_Offine_Party_C>();
 	}
 };
-static_assert(alignof(UWBP_TopMenu_Btnmode_Sub_Offine_Party_C) == 0x000008, "Wrong alignment on UWBP_TopMenu_Btnmode_Sub_Offine_Party_C");
-static_assert(sizeof(UWBP_TopMenu_Btnmode_Sub_Offine_Party_C) == 0x000328, "Wrong size on UWBP_TopMenu_Btnmode_Sub_Offine_Party_C");
-static_assert(offsetof(UWBP_TopMenu_Btnmode_Sub_Offine_Party_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_TopMenu_Btnmode_Sub_Offine_Party_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Btnmode_Sub_Offine_Party_C, Btn_Loop) == 0x0002E8, "Member 'UWBP_TopMenu_Btnmode_Sub_Offine_Party_C::Btn_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Btnmode_Sub_Offine_Party_C, base) == 0x0002F0, "Member 'UWBP_TopMenu_Btnmode_Sub_Offine_Party_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Btnmode_Sub_Offine_Party_C, Btn_image) == 0x0002F8, "Member 'UWBP_TopMenu_Btnmode_Sub_Offine_Party_C::Btn_image' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Btnmode_Sub_Offine_Party_C, DSP_WinInfo) == 0x000300, "Member 'UWBP_TopMenu_Btnmode_Sub_Offine_Party_C::DSP_WinInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Btnmode_Sub_Offine_Party_C, Panel) == 0x000308, "Member 'UWBP_TopMenu_Btnmode_Sub_Offine_Party_C::Panel' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Btnmode_Sub_Offine_Party_C, TXT_Num_Count) == 0x000310, "Member 'UWBP_TopMenu_Btnmode_Sub_Offine_Party_C::TXT_Num_Count' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Btnmode_Sub_Offine_Party_C, TXT_Num_Win_Count) == 0x000318, "Member 'UWBP_TopMenu_Btnmode_Sub_Offine_Party_C::TXT_Num_Win_Count' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Btnmode_Sub_Offine_Party_C, TXT_WIN) == 0x000320, "Member 'UWBP_TopMenu_Btnmode_Sub_Offine_Party_C::TXT_WIN' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_TopMenu_Btnmode_Sub_Offine_Party_C;
 
 }
 

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -50,24 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MachineCustom_Sub_Tab_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MachineCustom_Sub_Tab_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MachineCustom_Sub_Tab_C")
 	}
 	static class UWBP_MachineCustom_Sub_Tab_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MachineCustom_Sub_Tab_C>();
 	}
 };
-static_assert(alignof(UWBP_MachineCustom_Sub_Tab_C) == 0x000008, "Wrong alignment on UWBP_MachineCustom_Sub_Tab_C");
-static_assert(sizeof(UWBP_MachineCustom_Sub_Tab_C) == 0x000360, "Wrong size on UWBP_MachineCustom_Sub_Tab_C");
-static_assert(offsetof(UWBP_MachineCustom_Sub_Tab_C, UberGraphFrame) == 0x000318, "Member 'UWBP_MachineCustom_Sub_Tab_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_Tab_C, WBP_FooterMenu_Sub_ControllerBtn_L) == 0x000320, "Member 'UWBP_MachineCustom_Sub_Tab_C::WBP_FooterMenu_Sub_ControllerBtn_L' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_Tab_C, WBP_FooterMenu_Sub_ControllerBtn_R) == 0x000328, "Member 'UWBP_MachineCustom_Sub_Tab_C::WBP_FooterMenu_Sub_ControllerBtn_R' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_Tab_C, WBP_MachineCustom_Sub_Tab_01) == 0x000330, "Member 'UWBP_MachineCustom_Sub_Tab_C::WBP_MachineCustom_Sub_Tab_01' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_Tab_C, WBP_MachineCustom_Sub_Tab_02) == 0x000338, "Member 'UWBP_MachineCustom_Sub_Tab_C::WBP_MachineCustom_Sub_Tab_02' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_Tab_C, WBP_MachineCustom_Sub_Tab_03) == 0x000340, "Member 'UWBP_MachineCustom_Sub_Tab_C::WBP_MachineCustom_Sub_Tab_03' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_Tab_C, WBP_MachineCustom_Sub_Tab_04) == 0x000348, "Member 'UWBP_MachineCustom_Sub_Tab_C::WBP_MachineCustom_Sub_Tab_04' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_Tab_C, WBP_MachineCustom_Sub_Tab_05) == 0x000350, "Member 'UWBP_MachineCustom_Sub_Tab_C::WBP_MachineCustom_Sub_Tab_05' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_Tab_C, WBP_MachineCustom_Sub_Tab_06) == 0x000358, "Member 'UWBP_MachineCustom_Sub_Tab_C::WBP_MachineCustom_Sub_Tab_06' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MachineCustom_Sub_Tab_C;
 
 }
 

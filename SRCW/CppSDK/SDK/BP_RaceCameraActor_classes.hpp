@@ -27,16 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_RaceCameraActor_C">();
+		BP_STATIC_CLASS_IMPL("BP_RaceCameraActor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_RaceCameraActor_C")
 	}
 	static class ABP_RaceCameraActor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_RaceCameraActor_C>();
 	}
 };
-static_assert(alignof(ABP_RaceCameraActor_C) == 0x000008, "Wrong alignment on ABP_RaceCameraActor_C");
-static_assert(sizeof(ABP_RaceCameraActor_C) == 0x0003D0, "Wrong size on ABP_RaceCameraActor_C");
-static_assert(offsetof(ABP_RaceCameraActor_C, Debug_LookOffset) == 0x0003B8, "Member 'ABP_RaceCameraActor_C::Debug_LookOffset' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_RaceCameraActor_C;
 
 }
 

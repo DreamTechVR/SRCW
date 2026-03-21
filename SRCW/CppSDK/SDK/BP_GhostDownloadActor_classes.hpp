@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "UnionSystem_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -59,28 +59,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_GhostDownloadActor_C">();
+		BP_STATIC_CLASS_IMPL("BP_GhostDownloadActor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_GhostDownloadActor_C")
 	}
 	static class ABP_GhostDownloadActor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_GhostDownloadActor_C>();
 	}
 };
-static_assert(alignof(ABP_GhostDownloadActor_C) == 0x000008, "Wrong alignment on ABP_GhostDownloadActor_C");
-static_assert(sizeof(ABP_GhostDownloadActor_C) == 0x000408, "Wrong size on ABP_GhostDownloadActor_C");
-static_assert(offsetof(ABP_GhostDownloadActor_C, UberGraphFrame) == 0x000388, "Member 'ABP_GhostDownloadActor_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_GhostDownloadActor_C, DefaultSceneRoot) == 0x000390, "Member 'ABP_GhostDownloadActor_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABP_GhostDownloadActor_C, OnFinishEvent) == 0x000398, "Member 'ABP_GhostDownloadActor_C::OnFinishEvent' has a wrong offset!");
-static_assert(offsetof(ABP_GhostDownloadActor_C, PopupWindow) == 0x0003A8, "Member 'ABP_GhostDownloadActor_C::PopupWindow' has a wrong offset!");
-static_assert(offsetof(ABP_GhostDownloadActor_C, DownloadingWidget) == 0x0003B0, "Member 'ABP_GhostDownloadActor_C::DownloadingWidget' has a wrong offset!");
-static_assert(offsetof(ABP_GhostDownloadActor_C, SubInputReciever) == 0x0003B8, "Member 'ABP_GhostDownloadActor_C::SubInputReciever' has a wrong offset!");
-static_assert(offsetof(ABP_GhostDownloadActor_C, CountTime) == 0x0003C0, "Member 'ABP_GhostDownloadActor_C::CountTime' has a wrong offset!");
-static_assert(offsetof(ABP_GhostDownloadActor_C, CancelEntryTime) == 0x0003C8, "Member 'ABP_GhostDownloadActor_C::CancelEntryTime' has a wrong offset!");
-static_assert(offsetof(ABP_GhostDownloadActor_C, CurrentUserId) == 0x0003D0, "Member 'ABP_GhostDownloadActor_C::CurrentUserId' has a wrong offset!");
-static_assert(offsetof(ABP_GhostDownloadActor_C, CurrentSpeedClass) == 0x0003E0, "Member 'ABP_GhostDownloadActor_C::CurrentSpeedClass' has a wrong offset!");
-static_assert(offsetof(ABP_GhostDownloadActor_C, CurrentStageId) == 0x0003E1, "Member 'ABP_GhostDownloadActor_C::CurrentStageId' has a wrong offset!");
-static_assert(offsetof(ABP_GhostDownloadActor_C, CurrentDateTime) == 0x0003E8, "Member 'ABP_GhostDownloadActor_C::CurrentDateTime' has a wrong offset!");
-static_assert(offsetof(ABP_GhostDownloadActor_C, CurrentRankingName) == 0x0003F8, "Member 'ABP_GhostDownloadActor_C::CurrentRankingName' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_GhostDownloadActor_C;
 
 }
 

@@ -53,39 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_EventEndInfo_Sub_Ranking_C">();
+		BP_STATIC_CLASS_IMPL("WBP_EventEndInfo_Sub_Ranking_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_EventEndInfo_Sub_Ranking_C")
 	}
 	static class UWBP_EventEndInfo_Sub_Ranking_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_EventEndInfo_Sub_Ranking_C>();
 	}
 };
-static_assert(alignof(UWBP_EventEndInfo_Sub_Ranking_C) == 0x000008, "Wrong alignment on UWBP_EventEndInfo_Sub_Ranking_C");
-static_assert(sizeof(UWBP_EventEndInfo_Sub_Ranking_C) == 0x0003A0, "Wrong size on UWBP_EventEndInfo_Sub_Ranking_C");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Ranking_C, Switch_Other) == 0x0002E0, "Member 'UWBP_EventEndInfo_Sub_Ranking_C::Switch_Other' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Ranking_C, Switch_3rd) == 0x0002E8, "Member 'UWBP_EventEndInfo_Sub_Ranking_C::Switch_3rd' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Ranking_C, Switch_2nd) == 0x0002F0, "Member 'UWBP_EventEndInfo_Sub_Ranking_C::Switch_2nd' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Ranking_C, Switch_1st) == 0x0002F8, "Member 'UWBP_EventEndInfo_Sub_Ranking_C::Switch_1st' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Ranking_C, Base_Ranking) == 0x000300, "Member 'UWBP_EventEndInfo_Sub_Ranking_C::Base_Ranking' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Ranking_C, Effect01) == 0x000308, "Member 'UWBP_EventEndInfo_Sub_Ranking_C::Effect01' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Ranking_C, Effect01_2) == 0x000310, "Member 'UWBP_EventEndInfo_Sub_Ranking_C::Effect01_2' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Ranking_C, Effect02) == 0x000318, "Member 'UWBP_EventEndInfo_Sub_Ranking_C::Effect02' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Ranking_C, Effect02_1) == 0x000320, "Member 'UWBP_EventEndInfo_Sub_Ranking_C::Effect02_1' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Ranking_C, Effect03) == 0x000328, "Member 'UWBP_EventEndInfo_Sub_Ranking_C::Effect03' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Ranking_C, Effect04) == 0x000330, "Member 'UWBP_EventEndInfo_Sub_Ranking_C::Effect04' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Ranking_C, Effect_Base_01) == 0x000338, "Member 'UWBP_EventEndInfo_Sub_Ranking_C::Effect_Base_01' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Ranking_C, Effect_Base_02) == 0x000340, "Member 'UWBP_EventEndInfo_Sub_Ranking_C::Effect_Base_02' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Ranking_C, LaurelTree) == 0x000348, "Member 'UWBP_EventEndInfo_Sub_Ranking_C::LaurelTree' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Ranking_C, LaurelTree_Addtive) == 0x000350, "Member 'UWBP_EventEndInfo_Sub_Ranking_C::LaurelTree_Addtive' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Ranking_C, Line_Ranking) == 0x000358, "Member 'UWBP_EventEndInfo_Sub_Ranking_C::Line_Ranking' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Ranking_C, PAT_RankingBase) == 0x000360, "Member 'UWBP_EventEndInfo_Sub_Ranking_C::PAT_RankingBase' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Ranking_C, TXT_Rank_1st) == 0x000368, "Member 'UWBP_EventEndInfo_Sub_Ranking_C::TXT_Rank_1st' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Ranking_C, TXT_Rank_2nd) == 0x000370, "Member 'UWBP_EventEndInfo_Sub_Ranking_C::TXT_Rank_2nd' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Ranking_C, TXT_Rank_3rd) == 0x000378, "Member 'UWBP_EventEndInfo_Sub_Ranking_C::TXT_Rank_3rd' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Ranking_C, TXT_Rank_Other) == 0x000380, "Member 'UWBP_EventEndInfo_Sub_Ranking_C::TXT_Rank_Other' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Ranking_C, TXT_Ranking) == 0x000388, "Member 'UWBP_EventEndInfo_Sub_Ranking_C::TXT_Ranking' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Ranking_C, WidgetSwitcher_Rank) == 0x000390, "Member 'UWBP_EventEndInfo_Sub_Ranking_C::WidgetSwitcher_Rank' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Ranking_C, PraiseSeCue) == 0x000398, "Member 'UWBP_EventEndInfo_Sub_Ranking_C::PraiseSeCue' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_EventEndInfo_Sub_Ranking_C;
 
 }
 

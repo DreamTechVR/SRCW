@@ -51,30 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_Sub_BoxBtn_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_Sub_BoxBtn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_Sub_BoxBtn_C")
 	}
 	static class UWBP_CMN_Sub_BoxBtn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_Sub_BoxBtn_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_Sub_BoxBtn_C) == 0x000008, "Wrong alignment on UWBP_CMN_Sub_BoxBtn_C");
-static_assert(sizeof(UWBP_CMN_Sub_BoxBtn_C) == 0x0006C8, "Wrong size on UWBP_CMN_Sub_BoxBtn_C");
-static_assert(offsetof(UWBP_CMN_Sub_BoxBtn_C, UberGraphFrame) == 0x000648, "Member 'UWBP_CMN_Sub_BoxBtn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_BoxBtn_C, Btn_Release) == 0x000650, "Member 'UWBP_CMN_Sub_BoxBtn_C::Btn_Release' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_BoxBtn_C, Btn_Select) == 0x000658, "Member 'UWBP_CMN_Sub_BoxBtn_C::Btn_Select' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_BoxBtn_C, Btn_Select_Out) == 0x000660, "Member 'UWBP_CMN_Sub_BoxBtn_C::Btn_Select_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_BoxBtn_C, Btn_Active_Out) == 0x000668, "Member 'UWBP_CMN_Sub_BoxBtn_C::Btn_Active_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_BoxBtn_C, Btn_Cursor) == 0x000670, "Member 'UWBP_CMN_Sub_BoxBtn_C::Btn_Cursor' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_BoxBtn_C, DSP_Cursor_Texture) == 0x000678, "Member 'UWBP_CMN_Sub_BoxBtn_C::DSP_Cursor_Texture' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_BoxBtn_C, MouseInteraction) == 0x000680, "Member 'UWBP_CMN_Sub_BoxBtn_C::MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_BoxBtn_C, PAT_BtnBase) == 0x000688, "Member 'UWBP_CMN_Sub_BoxBtn_C::PAT_BtnBase' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_BoxBtn_C, RaceFlag) == 0x000690, "Member 'UWBP_CMN_Sub_BoxBtn_C::RaceFlag' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_BoxBtn_C, RaceFlag_Active) == 0x000698, "Member 'UWBP_CMN_Sub_BoxBtn_C::RaceFlag_Active' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_BoxBtn_C, TXT_Btn) == 0x0006A0, "Member 'UWBP_CMN_Sub_BoxBtn_C::TXT_Btn' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_BoxBtn_C, WBP_CMN_ControllerBtn) == 0x0006A8, "Member 'UWBP_CMN_Sub_BoxBtn_C::WBP_CMN_ControllerBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_BoxBtn_C, bIsReady) == 0x0006B0, "Member 'UWBP_CMN_Sub_BoxBtn_C::bIsReady' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_BoxBtn_C, OnMouseAcceptPressed) == 0x0006B8, "Member 'UWBP_CMN_Sub_BoxBtn_C::OnMouseAcceptPressed' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_Sub_BoxBtn_C;
 
 }
 

@@ -25,10 +25,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   InfoText_5_45E13FA44C04994BB252958C6A81A0BA;       // 0x0008(0x0010)(Edit, BlueprintVisible)
 };
-static_assert(alignof(FST_ItemDisable) == 0x000008, "Wrong alignment on FST_ItemDisable");
-static_assert(sizeof(FST_ItemDisable) == 0x000018, "Wrong size on FST_ItemDisable");
-static_assert(offsetof(FST_ItemDisable, ItemId_2_102FF17242EB843D609E53AA04CF9201) == 0x000000, "Member 'FST_ItemDisable::ItemId_2_102FF17242EB843D609E53AA04CF9201' has a wrong offset!");
-static_assert(offsetof(FST_ItemDisable, InfoText_5_45E13FA44C04994BB252958C6A81A0BA) == 0x000008, "Member 'FST_ItemDisable::InfoText_5_45E13FA44C04994BB252958C6A81A0BA' has a wrong offset!");
+DUMPER7_ASSERTS_FST_ItemDisable;
 
 }
 

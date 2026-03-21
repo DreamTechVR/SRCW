@@ -41,25 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_FestaInfo_C">();
+		BP_STATIC_CLASS_IMPL("WBP_FestaInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_FestaInfo_C")
 	}
 	static class UWBP_FestaInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_FestaInfo_C>();
 	}
 };
-static_assert(alignof(UWBP_FestaInfo_C) == 0x000008, "Wrong alignment on UWBP_FestaInfo_C");
-static_assert(sizeof(UWBP_FestaInfo_C) == 0x000330, "Wrong size on UWBP_FestaInfo_C");
-static_assert(offsetof(UWBP_FestaInfo_C, BlueBase) == 0x0002E0, "Member 'UWBP_FestaInfo_C::BlueBase' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaInfo_C, DMY_EventInfo) == 0x0002E8, "Member 'UWBP_FestaInfo_C::DMY_EventInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaInfo_C, TXT_Day) == 0x0002F0, "Member 'UWBP_FestaInfo_C::TXT_Day' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaInfo_C, TXT_Title) == 0x0002F8, "Member 'UWBP_FestaInfo_C::TXT_Title' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaInfo_C, UVScroll_01) == 0x000300, "Member 'UWBP_FestaInfo_C::UVScroll_01' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaInfo_C, UVScroll_02) == 0x000308, "Member 'UWBP_FestaInfo_C::UVScroll_02' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaInfo_C, UVScroll_03) == 0x000310, "Member 'UWBP_FestaInfo_C::UVScroll_03' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaInfo_C, UVScroll_04) == 0x000318, "Member 'UWBP_FestaInfo_C::UVScroll_04' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaInfo_C, WBP_TopInfo_Sub_HeldPop) == 0x000320, "Member 'UWBP_FestaInfo_C::WBP_TopInfo_Sub_HeldPop' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaInfo_C, WhiteBase) == 0x000328, "Member 'UWBP_FestaInfo_C::WhiteBase' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_FestaInfo_C;
 
 }
 

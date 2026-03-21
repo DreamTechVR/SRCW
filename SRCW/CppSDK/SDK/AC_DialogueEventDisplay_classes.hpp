@@ -52,28 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AC_DialogueEventDisplay_C">();
+		BP_STATIC_CLASS_IMPL("AC_DialogueEventDisplay_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AC_DialogueEventDisplay_C")
 	}
 	static class AAC_DialogueEventDisplay_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAC_DialogueEventDisplay_C>();
 	}
 };
-static_assert(alignof(AAC_DialogueEventDisplay_C) == 0x000008, "Wrong alignment on AAC_DialogueEventDisplay_C");
-static_assert(sizeof(AAC_DialogueEventDisplay_C) == 0x000308, "Wrong size on AAC_DialogueEventDisplay_C");
-static_assert(offsetof(AAC_DialogueEventDisplay_C, UberGraphFrame) == 0x000290, "Member 'AAC_DialogueEventDisplay_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AAC_DialogueEventDisplay_C, DisplayWidgetComponent) == 0x000298, "Member 'AAC_DialogueEventDisplay_C::DisplayWidgetComponent' has a wrong offset!");
-static_assert(offsetof(AAC_DialogueEventDisplay_C, SkeltalMesh) == 0x0002A0, "Member 'AAC_DialogueEventDisplay_C::SkeltalMesh' has a wrong offset!");
-static_assert(offsetof(AAC_DialogueEventDisplay_C, Scene) == 0x0002A8, "Member 'AAC_DialogueEventDisplay_C::Scene' has a wrong offset!");
-static_assert(offsetof(AAC_DialogueEventDisplay_C, StaticMesh_MonitorFrame) == 0x0002B0, "Member 'AAC_DialogueEventDisplay_C::StaticMesh_MonitorFrame' has a wrong offset!");
-static_assert(offsetof(AAC_DialogueEventDisplay_C, Static_Mesh) == 0x0002B8, "Member 'AAC_DialogueEventDisplay_C::Static_Mesh' has a wrong offset!");
-static_assert(offsetof(AAC_DialogueEventDisplay_C, Widget) == 0x0002C0, "Member 'AAC_DialogueEventDisplay_C::Widget' has a wrong offset!");
-static_assert(offsetof(AAC_DialogueEventDisplay_C, IsFirstCalledAnim) == 0x0002C8, "Member 'AAC_DialogueEventDisplay_C::IsFirstCalledAnim' has a wrong offset!");
-static_assert(offsetof(AAC_DialogueEventDisplay_C, OnAnimationEnd) == 0x0002D0, "Member 'AAC_DialogueEventDisplay_C::OnAnimationEnd' has a wrong offset!");
-static_assert(offsetof(AAC_DialogueEventDisplay_C, OnCommandWaitEnd) == 0x0002E0, "Member 'AAC_DialogueEventDisplay_C::OnCommandWaitEnd' has a wrong offset!");
-static_assert(offsetof(AAC_DialogueEventDisplay_C, AnimBP) == 0x0002F0, "Member 'AAC_DialogueEventDisplay_C::AnimBP' has a wrong offset!");
-static_assert(offsetof(AAC_DialogueEventDisplay_C, WidgetClass_Festa) == 0x0002F8, "Member 'AAC_DialogueEventDisplay_C::WidgetClass_Festa' has a wrong offset!");
-static_assert(offsetof(AAC_DialogueEventDisplay_C, CurrentAnim) == 0x000300, "Member 'AAC_DialogueEventDisplay_C::CurrentAnim' has a wrong offset!");
+DUMPER7_ASSERTS_AAC_DialogueEventDisplay_C;
 
 }
 

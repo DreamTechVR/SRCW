@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -37,18 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_EventInfoManageActor_C">();
+		BP_STATIC_CLASS_IMPL("BP_EventInfoManageActor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_EventInfoManageActor_C")
 	}
 	static class ABP_EventInfoManageActor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_EventInfoManageActor_C>();
 	}
 };
-static_assert(alignof(ABP_EventInfoManageActor_C) == 0x000008, "Wrong alignment on ABP_EventInfoManageActor_C");
-static_assert(sizeof(ABP_EventInfoManageActor_C) == 0x0002D8, "Wrong size on ABP_EventInfoManageActor_C");
-static_assert(offsetof(ABP_EventInfoManageActor_C, UberGraphFrame) == 0x0002B8, "Member 'ABP_EventInfoManageActor_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_EventInfoManageActor_C, DefaultSceneRoot) == 0x0002C0, "Member 'ABP_EventInfoManageActor_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABP_EventInfoManageActor_C, CloseEvent) == 0x0002C8, "Member 'ABP_EventInfoManageActor_C::CloseEvent' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_EventInfoManageActor_C;
 
 }
 

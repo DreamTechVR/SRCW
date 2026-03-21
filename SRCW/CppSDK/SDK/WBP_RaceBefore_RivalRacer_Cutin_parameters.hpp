@@ -29,13 +29,7 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class UMaterial>               CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue; // 0x0020(0x0028)(UObjectWrapper, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_RaceBefore_RivalRacer_Cutin_C_ExecuteUbergraph_WBP_RaceBefore_RivalRacer_Cutin) == 0x000008, "Wrong alignment on WBP_RaceBefore_RivalRacer_Cutin_C_ExecuteUbergraph_WBP_RaceBefore_RivalRacer_Cutin");
-static_assert(sizeof(WBP_RaceBefore_RivalRacer_Cutin_C_ExecuteUbergraph_WBP_RaceBefore_RivalRacer_Cutin) == 0x000048, "Wrong size on WBP_RaceBefore_RivalRacer_Cutin_C_ExecuteUbergraph_WBP_RaceBefore_RivalRacer_Cutin");
-static_assert(offsetof(WBP_RaceBefore_RivalRacer_Cutin_C_ExecuteUbergraph_WBP_RaceBefore_RivalRacer_Cutin, EntryPoint) == 0x000000, "Member 'WBP_RaceBefore_RivalRacer_Cutin_C_ExecuteUbergraph_WBP_RaceBefore_RivalRacer_Cutin::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_RivalRacer_Cutin_C_ExecuteUbergraph_WBP_RaceBefore_RivalRacer_Cutin, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x000008, "Member 'WBP_RaceBefore_RivalRacer_Cutin_C_ExecuteUbergraph_WBP_RaceBefore_RivalRacer_Cutin::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_RivalRacer_Cutin_C_ExecuteUbergraph_WBP_RaceBefore_RivalRacer_Cutin, K2Node_DynamicCast_As_____) == 0x000010, "Member 'WBP_RaceBefore_RivalRacer_Cutin_C_ExecuteUbergraph_WBP_RaceBefore_RivalRacer_Cutin::K2Node_DynamicCast_As_____' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_RivalRacer_Cutin_C_ExecuteUbergraph_WBP_RaceBefore_RivalRacer_Cutin, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'WBP_RaceBefore_RivalRacer_Cutin_C_ExecuteUbergraph_WBP_RaceBefore_RivalRacer_Cutin::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_RivalRacer_Cutin_C_ExecuteUbergraph_WBP_RaceBefore_RivalRacer_Cutin, CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue) == 0x000020, "Member 'WBP_RaceBefore_RivalRacer_Cutin_C_ExecuteUbergraph_WBP_RaceBefore_RivalRacer_Cutin::CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_RaceBefore_RivalRacer_Cutin_C_ExecuteUbergraph_WBP_RaceBefore_RivalRacer_Cutin;
 
 // Function WBP_RaceBefore_RivalRacer_Cutin.WBP_RaceBefore_RivalRacer_Cutin_C.SetRivalType
 // 0x0002 (0x0002 - 0x0000)
@@ -45,10 +39,7 @@ public:
 	ERivalType                                    In_RivalType;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_RaceBefore_RivalRacer_Cutin_C_SetRivalType) == 0x000001, "Wrong alignment on WBP_RaceBefore_RivalRacer_Cutin_C_SetRivalType");
-static_assert(sizeof(WBP_RaceBefore_RivalRacer_Cutin_C_SetRivalType) == 0x000002, "Wrong size on WBP_RaceBefore_RivalRacer_Cutin_C_SetRivalType");
-static_assert(offsetof(WBP_RaceBefore_RivalRacer_Cutin_C_SetRivalType, In_RivalType) == 0x000000, "Member 'WBP_RaceBefore_RivalRacer_Cutin_C_SetRivalType::In_RivalType' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_RivalRacer_Cutin_C_SetRivalType, K2Node_SwitchEnum_CmpSuccess) == 0x000001, "Member 'WBP_RaceBefore_RivalRacer_Cutin_C_SetRivalType::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_RaceBefore_RivalRacer_Cutin_C_SetRivalType;
 
 }
 

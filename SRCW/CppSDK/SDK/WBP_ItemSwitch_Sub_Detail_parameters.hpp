@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
+#include "UnionSystem_structs.hpp"
 
 
 namespace SDK::Params
@@ -37,19 +37,7 @@ public:
 	uint8                                         Pad_CB[0x1];                                       // 0x00CB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate;              // 0x00CC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemSwitch_Sub_Detail_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_Detail) == 0x000008, "Wrong alignment on WBP_ItemSwitch_Sub_Detail_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_Detail");
-static_assert(sizeof(WBP_ItemSwitch_Sub_Detail_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_Detail) == 0x0000E0, "Wrong size on WBP_ItemSwitch_Sub_Detail_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_Detail");
-static_assert(offsetof(WBP_ItemSwitch_Sub_Detail_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_Detail, EntryPoint) == 0x000000, "Member 'WBP_ItemSwitch_Sub_Detail_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_Detail::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_Detail_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_Detail, K2Node_CustomEvent_Loaded) == 0x000008, "Member 'WBP_ItemSwitch_Sub_Detail_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_Detail::K2Node_CustomEvent_Loaded' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_Detail_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_Detail, CallFunc_GetEnumeratorName_ReturnValue) == 0x000010, "Member 'WBP_ItemSwitch_Sub_Detail_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_Detail::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_Detail_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_Detail, Temp_object_Variable) == 0x000018, "Member 'WBP_ItemSwitch_Sub_Detail_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_Detail::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_Detail_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_Detail, CallFunc_GetDataTableRowFromName_OutRow) == 0x000020, "Member 'WBP_ItemSwitch_Sub_Detail_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_Detail::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_Detail_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_Detail, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x0000B8, "Member 'WBP_ItemSwitch_Sub_Detail_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_Detail::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_Detail_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_Detail, K2Node_DynamicCast_As_____2D) == 0x0000C0, "Member 'WBP_ItemSwitch_Sub_Detail_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_Detail::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_Detail_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_Detail, K2Node_DynamicCast_bSuccess) == 0x0000C8, "Member 'WBP_ItemSwitch_Sub_Detail_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_Detail::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_Detail_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_Detail, K2Node_Event_IsDesignTime) == 0x0000C9, "Member 'WBP_ItemSwitch_Sub_Detail_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_Detail::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_Detail_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_Detail, K2Node_Event_InItem) == 0x0000CA, "Member 'WBP_ItemSwitch_Sub_Detail_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_Detail::K2Node_Event_InItem' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_Detail_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_Detail, K2Node_CreateDelegate_OutputDelegate) == 0x0000CC, "Member 'WBP_ItemSwitch_Sub_Detail_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_Detail::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemSwitch_Sub_Detail_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_Detail;
 
 // Function WBP_ItemSwitch_Sub_Detail.WBP_ItemSwitch_Sub_Detail_C.OnLoaded_CFE0274244ED98A836395491DD52B753
 // 0x0008 (0x0008 - 0x0000)
@@ -58,9 +46,7 @@ struct WBP_ItemSwitch_Sub_Detail_C_OnLoaded_CFE0274244ED98A836395491DD52B753 fin
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemSwitch_Sub_Detail_C_OnLoaded_CFE0274244ED98A836395491DD52B753) == 0x000008, "Wrong alignment on WBP_ItemSwitch_Sub_Detail_C_OnLoaded_CFE0274244ED98A836395491DD52B753");
-static_assert(sizeof(WBP_ItemSwitch_Sub_Detail_C_OnLoaded_CFE0274244ED98A836395491DD52B753) == 0x000008, "Wrong size on WBP_ItemSwitch_Sub_Detail_C_OnLoaded_CFE0274244ED98A836395491DD52B753");
-static_assert(offsetof(WBP_ItemSwitch_Sub_Detail_C_OnLoaded_CFE0274244ED98A836395491DD52B753, Loaded) == 0x000000, "Member 'WBP_ItemSwitch_Sub_Detail_C_OnLoaded_CFE0274244ED98A836395491DD52B753::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemSwitch_Sub_Detail_C_OnLoaded_CFE0274244ED98A836395491DD52B753;
 
 // Function WBP_ItemSwitch_Sub_Detail.WBP_ItemSwitch_Sub_Detail_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -69,9 +55,7 @@ struct WBP_ItemSwitch_Sub_Detail_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemSwitch_Sub_Detail_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_ItemSwitch_Sub_Detail_C_PreConstruct");
-static_assert(sizeof(WBP_ItemSwitch_Sub_Detail_C_PreConstruct) == 0x000001, "Wrong size on WBP_ItemSwitch_Sub_Detail_C_PreConstruct");
-static_assert(offsetof(WBP_ItemSwitch_Sub_Detail_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_ItemSwitch_Sub_Detail_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemSwitch_Sub_Detail_C_PreConstruct;
 
 // Function WBP_ItemSwitch_Sub_Detail.WBP_ItemSwitch_Sub_Detail_C.UpdateItem
 // 0x0001 (0x0001 - 0x0000)
@@ -80,9 +64,7 @@ struct WBP_ItemSwitch_Sub_Detail_C_UpdateItem final
 public:
 	EItemId                                       InItem;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemSwitch_Sub_Detail_C_UpdateItem) == 0x000001, "Wrong alignment on WBP_ItemSwitch_Sub_Detail_C_UpdateItem");
-static_assert(sizeof(WBP_ItemSwitch_Sub_Detail_C_UpdateItem) == 0x000001, "Wrong size on WBP_ItemSwitch_Sub_Detail_C_UpdateItem");
-static_assert(offsetof(WBP_ItemSwitch_Sub_Detail_C_UpdateItem, InItem) == 0x000000, "Member 'WBP_ItemSwitch_Sub_Detail_C_UpdateItem::InItem' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemSwitch_Sub_Detail_C_UpdateItem;
 
 }
 

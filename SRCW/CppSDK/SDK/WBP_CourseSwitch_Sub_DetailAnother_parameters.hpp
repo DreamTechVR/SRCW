@@ -29,13 +29,7 @@ public:
 	uint8                                         Pad_EA[0x6];                                       // 0x00EA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_CustomEvent_Text;                           // 0x00F0(0x0010)()
 };
-static_assert(alignof(WBP_CourseSwitch_Sub_DetailAnother_C_ExecuteUbergraph_WBP_CourseSwitch_Sub_DetailAnother) == 0x000008, "Wrong alignment on WBP_CourseSwitch_Sub_DetailAnother_C_ExecuteUbergraph_WBP_CourseSwitch_Sub_DetailAnother");
-static_assert(sizeof(WBP_CourseSwitch_Sub_DetailAnother_C_ExecuteUbergraph_WBP_CourseSwitch_Sub_DetailAnother) == 0x000100, "Wrong size on WBP_CourseSwitch_Sub_DetailAnother_C_ExecuteUbergraph_WBP_CourseSwitch_Sub_DetailAnother");
-static_assert(offsetof(WBP_CourseSwitch_Sub_DetailAnother_C_ExecuteUbergraph_WBP_CourseSwitch_Sub_DetailAnother, EntryPoint) == 0x000000, "Member 'WBP_CourseSwitch_Sub_DetailAnother_C_ExecuteUbergraph_WBP_CourseSwitch_Sub_DetailAnother::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_Sub_DetailAnother_C_ExecuteUbergraph_WBP_CourseSwitch_Sub_DetailAnother, K2Node_CustomEvent_Table) == 0x000008, "Member 'WBP_CourseSwitch_Sub_DetailAnother_C_ExecuteUbergraph_WBP_CourseSwitch_Sub_DetailAnother::K2Node_CustomEvent_Table' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_Sub_DetailAnother_C_ExecuteUbergraph_WBP_CourseSwitch_Sub_DetailAnother, CallFunc_IsValidSoftObjectReference_ReturnValue) == 0x0000E8, "Member 'WBP_CourseSwitch_Sub_DetailAnother_C_ExecuteUbergraph_WBP_CourseSwitch_Sub_DetailAnother::CallFunc_IsValidSoftObjectReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_Sub_DetailAnother_C_ExecuteUbergraph_WBP_CourseSwitch_Sub_DetailAnother, CallFunc_IsValidSoftObjectReference_ReturnValue_1) == 0x0000E9, "Member 'WBP_CourseSwitch_Sub_DetailAnother_C_ExecuteUbergraph_WBP_CourseSwitch_Sub_DetailAnother::CallFunc_IsValidSoftObjectReference_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_Sub_DetailAnother_C_ExecuteUbergraph_WBP_CourseSwitch_Sub_DetailAnother, K2Node_CustomEvent_Text) == 0x0000F0, "Member 'WBP_CourseSwitch_Sub_DetailAnother_C_ExecuteUbergraph_WBP_CourseSwitch_Sub_DetailAnother::K2Node_CustomEvent_Text' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSwitch_Sub_DetailAnother_C_ExecuteUbergraph_WBP_CourseSwitch_Sub_DetailAnother;
 
 // Function WBP_CourseSwitch_Sub_DetailAnother.WBP_CourseSwitch_Sub_DetailAnother_C.SetCourseName
 // 0x0010 (0x0010 - 0x0000)
@@ -44,9 +38,7 @@ struct WBP_CourseSwitch_Sub_DetailAnother_C_SetCourseName final
 public:
 	class FText                                   Text;                                              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_CourseSwitch_Sub_DetailAnother_C_SetCourseName) == 0x000008, "Wrong alignment on WBP_CourseSwitch_Sub_DetailAnother_C_SetCourseName");
-static_assert(sizeof(WBP_CourseSwitch_Sub_DetailAnother_C_SetCourseName) == 0x000010, "Wrong size on WBP_CourseSwitch_Sub_DetailAnother_C_SetCourseName");
-static_assert(offsetof(WBP_CourseSwitch_Sub_DetailAnother_C_SetCourseName, Text) == 0x000000, "Member 'WBP_CourseSwitch_Sub_DetailAnother_C_SetCourseName::Text' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSwitch_Sub_DetailAnother_C_SetCourseName;
 
 // Function WBP_CourseSwitch_Sub_DetailAnother.WBP_CourseSwitch_Sub_DetailAnother_C.Update
 // 0x00E0 (0x00E0 - 0x0000)
@@ -55,9 +47,7 @@ struct WBP_CourseSwitch_Sub_DetailAnother_C_Update final
 public:
 	struct FStageDataAssetTableRow                Table;                                             // 0x0000(0x00E0)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_CourseSwitch_Sub_DetailAnother_C_Update) == 0x000008, "Wrong alignment on WBP_CourseSwitch_Sub_DetailAnother_C_Update");
-static_assert(sizeof(WBP_CourseSwitch_Sub_DetailAnother_C_Update) == 0x0000E0, "Wrong size on WBP_CourseSwitch_Sub_DetailAnother_C_Update");
-static_assert(offsetof(WBP_CourseSwitch_Sub_DetailAnother_C_Update, Table) == 0x000000, "Member 'WBP_CourseSwitch_Sub_DetailAnother_C_Update::Table' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSwitch_Sub_DetailAnother_C_Update;
 
 }
 

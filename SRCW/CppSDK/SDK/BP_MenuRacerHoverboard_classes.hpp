@@ -23,15 +23,18 @@ class ABP_MenuRacerHoverboard_C final : public AMenuRacerHoverboard
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_MenuRacerHoverboard_C">();
+		BP_STATIC_CLASS_IMPL("BP_MenuRacerHoverboard_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_MenuRacerHoverboard_C")
 	}
 	static class ABP_MenuRacerHoverboard_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_MenuRacerHoverboard_C>();
 	}
 };
-static_assert(alignof(ABP_MenuRacerHoverboard_C) == 0x000008, "Wrong alignment on ABP_MenuRacerHoverboard_C");
-static_assert(sizeof(ABP_MenuRacerHoverboard_C) == 0x000790, "Wrong size on ABP_MenuRacerHoverboard_C");
+DUMPER7_ASSERTS_ABP_MenuRacerHoverboard_C;
 
 }
 

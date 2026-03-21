@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "UNION_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UnionUI_structs.hpp"
-#include "UNION_classes.hpp"
 
 
 namespace SDK
@@ -51,23 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_PartyRace_Sub_PresetBtn_C">();
+		BP_STATIC_CLASS_IMPL("WBP_PartyRace_Sub_PresetBtn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_PartyRace_Sub_PresetBtn_C")
 	}
 	static class UWBP_PartyRace_Sub_PresetBtn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_PartyRace_Sub_PresetBtn_C>();
 	}
 };
-static_assert(alignof(UWBP_PartyRace_Sub_PresetBtn_C) == 0x000008, "Wrong alignment on UWBP_PartyRace_Sub_PresetBtn_C");
-static_assert(sizeof(UWBP_PartyRace_Sub_PresetBtn_C) == 0x0006F0, "Wrong size on UWBP_PartyRace_Sub_PresetBtn_C");
-static_assert(offsetof(UWBP_PartyRace_Sub_PresetBtn_C, UberGraphFrame) == 0x000668, "Member 'UWBP_PartyRace_Sub_PresetBtn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_PresetBtn_C, DSP_Active_LockCover) == 0x000670, "Member 'UWBP_PartyRace_Sub_PresetBtn_C::DSP_Active_LockCover' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_PresetBtn_C, DSP_Select_LockCover) == 0x000678, "Member 'UWBP_PartyRace_Sub_PresetBtn_C::DSP_Select_LockCover' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_PresetBtn_C, PresetIcon) == 0x000680, "Member 'UWBP_PartyRace_Sub_PresetBtn_C::PresetIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_PresetBtn_C, TXT_PresetDetail) == 0x000688, "Member 'UWBP_PartyRace_Sub_PresetBtn_C::TXT_PresetDetail' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_PresetBtn_C, TXT_PresetName) == 0x000690, "Member 'UWBP_PartyRace_Sub_PresetBtn_C::TXT_PresetName' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_PresetBtn_C, WBP_FontScroll_PresetName) == 0x000698, "Member 'UWBP_PartyRace_Sub_PresetBtn_C::WBP_FontScroll_PresetName' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_PresetBtn_C, PresetName_Value) == 0x0006A0, "Member 'UWBP_PartyRace_Sub_PresetBtn_C::PresetName_Value' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_PartyRace_Sub_PresetBtn_C;
 
 }
 

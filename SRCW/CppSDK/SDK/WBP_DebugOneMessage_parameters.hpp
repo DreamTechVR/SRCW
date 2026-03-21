@@ -37,20 +37,7 @@ public:
 	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue_1;               // 0x0070(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_Add_Vector2DVector2D_ReturnValue;         // 0x0080(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_DebugOneMessage_C_ExecuteUbergraph_WBP_DebugOneMessage) == 0x000008, "Wrong alignment on WBP_DebugOneMessage_C_ExecuteUbergraph_WBP_DebugOneMessage");
-static_assert(sizeof(WBP_DebugOneMessage_C_ExecuteUbergraph_WBP_DebugOneMessage) == 0x000090, "Wrong size on WBP_DebugOneMessage_C_ExecuteUbergraph_WBP_DebugOneMessage");
-static_assert(offsetof(WBP_DebugOneMessage_C_ExecuteUbergraph_WBP_DebugOneMessage, EntryPoint) == 0x000000, "Member 'WBP_DebugOneMessage_C_ExecuteUbergraph_WBP_DebugOneMessage::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_DebugOneMessage_C_ExecuteUbergraph_WBP_DebugOneMessage, CallFunc_MakeVector2D_ReturnValue) == 0x000008, "Member 'WBP_DebugOneMessage_C_ExecuteUbergraph_WBP_DebugOneMessage::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugOneMessage_C_ExecuteUbergraph_WBP_DebugOneMessage, CallFunc_Conv_TextToString_ReturnValue) == 0x000018, "Member 'WBP_DebugOneMessage_C_ExecuteUbergraph_WBP_DebugOneMessage::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugOneMessage_C_ExecuteUbergraph_WBP_DebugOneMessage, CallFunc_PlayAnimation_ReturnValue) == 0x000028, "Member 'WBP_DebugOneMessage_C_ExecuteUbergraph_WBP_DebugOneMessage::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugOneMessage_C_ExecuteUbergraph_WBP_DebugOneMessage, CallFunc_IsShippingBuild_ReturnValue) == 0x000030, "Member 'WBP_DebugOneMessage_C_ExecuteUbergraph_WBP_DebugOneMessage::CallFunc_IsShippingBuild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugOneMessage_C_ExecuteUbergraph_WBP_DebugOneMessage, CallFunc_SlotAsCanvasSlot_ReturnValue) == 0x000038, "Member 'WBP_DebugOneMessage_C_ExecuteUbergraph_WBP_DebugOneMessage::CallFunc_SlotAsCanvasSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugOneMessage_C_ExecuteUbergraph_WBP_DebugOneMessage, K2Node_CreateDelegate_OutputDelegate) == 0x000040, "Member 'WBP_DebugOneMessage_C_ExecuteUbergraph_WBP_DebugOneMessage::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_DebugOneMessage_C_ExecuteUbergraph_WBP_DebugOneMessage, CallFunc_GetPosition_ReturnValue) == 0x000050, "Member 'WBP_DebugOneMessage_C_ExecuteUbergraph_WBP_DebugOneMessage::CallFunc_GetPosition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugOneMessage_C_ExecuteUbergraph_WBP_DebugOneMessage, CallFunc_Multiply_IntInt_ReturnValue) == 0x000060, "Member 'WBP_DebugOneMessage_C_ExecuteUbergraph_WBP_DebugOneMessage::CallFunc_Multiply_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugOneMessage_C_ExecuteUbergraph_WBP_DebugOneMessage, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000068, "Member 'WBP_DebugOneMessage_C_ExecuteUbergraph_WBP_DebugOneMessage::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugOneMessage_C_ExecuteUbergraph_WBP_DebugOneMessage, CallFunc_MakeVector2D_ReturnValue_1) == 0x000070, "Member 'WBP_DebugOneMessage_C_ExecuteUbergraph_WBP_DebugOneMessage::CallFunc_MakeVector2D_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_DebugOneMessage_C_ExecuteUbergraph_WBP_DebugOneMessage, CallFunc_Add_Vector2DVector2D_ReturnValue) == 0x000080, "Member 'WBP_DebugOneMessage_C_ExecuteUbergraph_WBP_DebugOneMessage::CallFunc_Add_Vector2DVector2D_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_DebugOneMessage_C_ExecuteUbergraph_WBP_DebugOneMessage;
 
 }
 

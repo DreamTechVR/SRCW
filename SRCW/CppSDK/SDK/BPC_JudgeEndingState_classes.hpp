@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_JudgeEndingState_C">();
+		BP_STATIC_CLASS_IMPL("BPC_JudgeEndingState_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_JudgeEndingState_C")
 	}
 	static class UBPC_JudgeEndingState_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_JudgeEndingState_C>();
 	}
 };
-static_assert(alignof(UBPC_JudgeEndingState_C) == 0x000008, "Wrong alignment on UBPC_JudgeEndingState_C");
-static_assert(sizeof(UBPC_JudgeEndingState_C) == 0x000118, "Wrong size on UBPC_JudgeEndingState_C");
-static_assert(offsetof(UBPC_JudgeEndingState_C, UberGraphFrame) == 0x000110, "Member 'UBPC_JudgeEndingState_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_JudgeEndingState_C;
 
 }
 

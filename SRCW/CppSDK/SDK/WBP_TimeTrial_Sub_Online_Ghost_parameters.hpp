@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
+#include "UnionSystem_structs.hpp"
 
 
 namespace SDK::Params
@@ -52,31 +52,7 @@ public:
 	uint8                                         Pad_409[0x3];                                      // 0x0409(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x040C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost) == 0x000008, "Wrong alignment on WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost");
-static_assert(sizeof(WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost) == 0x000410, "Wrong size on WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost, EntryPoint) == 0x000000, "Member 'WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost, CallFunc_GetClampUserNameLength_ReturnValue) == 0x000004, "Member 'WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost::CallFunc_GetClampUserNameLength_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost, Temp_int_Variable) == 0x000008, "Member 'WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost, K2Node_CustomEvent_InDriverId) == 0x00000C, "Member 'WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost::K2Node_CustomEvent_InDriverId' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost, K2Node_CustomEvent_InPlatform) == 0x00000D, "Member 'WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost::K2Node_CustomEvent_InPlatform' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost, K2Node_CustomEvent_InUserName) == 0x000010, "Member 'WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost::K2Node_CustomEvent_InUserName' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost, K2Node_CustomEvent_InHonorId) == 0x000020, "Member 'WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost::K2Node_CustomEvent_InHonorId' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost, CallFunc_ForceGetIsHonorTitleReleased_ReturnValue) == 0x000024, "Member 'WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost::CallFunc_ForceGetIsHonorTitleReleased_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost, CallFunc_TruncateTextWithEllipsis_ReturnValue) == 0x000028, "Member 'WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost::CallFunc_TruncateTextWithEllipsis_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost, CallFunc_Conv_ByteToDouble_ReturnValue) == 0x000038, "Member 'WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost::CallFunc_Conv_ByteToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost, CallFunc_ForceGetIsCharacterReleased_ReturnValue) == 0x000040, "Member 'WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost::CallFunc_ForceGetIsCharacterReleased_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000048, "Member 'WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x000050, "Member 'WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost, Temp_bool_Variable) == 0x000058, "Member 'WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost, Temp_byte_Variable) == 0x000059, "Member 'WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost, K2Node_Select_Default) == 0x00005C, "Member 'WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost, Temp_bool_Variable_1) == 0x000060, "Member 'WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost, K2Node_Select_Default_1) == 0x000061, "Member 'WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost, CallFunc_GetDriverData_OutDriverData) == 0x000068, "Member 'WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost::CallFunc_GetDriverData_OutDriverData' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost, CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue) == 0x0003F8, "Member 'WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost::CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost, K2Node_DynamicCast_As_____2D) == 0x000400, "Member 'WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost, K2Node_DynamicCast_bSuccess) == 0x000408, "Member 'WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x00040C, "Member 'WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost;
 
 // Function WBP_TimeTrial_Sub_Online_Ghost.WBP_TimeTrial_Sub_Online_Ghost_C.SetupGhost
 // 0x0020 (0x0020 - 0x0000)
@@ -89,12 +65,7 @@ public:
 	class FText                                   InUserName;                                        // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	int32                                         InHonorId;                                         // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TimeTrial_Sub_Online_Ghost_C_SetupGhost) == 0x000008, "Wrong alignment on WBP_TimeTrial_Sub_Online_Ghost_C_SetupGhost");
-static_assert(sizeof(WBP_TimeTrial_Sub_Online_Ghost_C_SetupGhost) == 0x000020, "Wrong size on WBP_TimeTrial_Sub_Online_Ghost_C_SetupGhost");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_Ghost_C_SetupGhost, InDriverId) == 0x000000, "Member 'WBP_TimeTrial_Sub_Online_Ghost_C_SetupGhost::InDriverId' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_Ghost_C_SetupGhost, InPlatform) == 0x000001, "Member 'WBP_TimeTrial_Sub_Online_Ghost_C_SetupGhost::InPlatform' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_Ghost_C_SetupGhost, InUserName) == 0x000008, "Member 'WBP_TimeTrial_Sub_Online_Ghost_C_SetupGhost::InUserName' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_Ghost_C_SetupGhost, InHonorId) == 0x000018, "Member 'WBP_TimeTrial_Sub_Online_Ghost_C_SetupGhost::InHonorId' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_Sub_Online_Ghost_C_SetupGhost;
 
 }
 

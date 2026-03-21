@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "EMachineCustomizeWindowId_structs.hpp"
 #include "UMG_structs.hpp"
+#include "EMachineCustomizeWindowId_structs.hpp"
 
 
 namespace SDK::Params
@@ -24,9 +24,7 @@ struct WBP_MachineCustom_Top_C_ExecuteUbergraph_WBP_MachineCustom_Top final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Top_C_ExecuteUbergraph_WBP_MachineCustom_Top) == 0x000004, "Wrong alignment on WBP_MachineCustom_Top_C_ExecuteUbergraph_WBP_MachineCustom_Top");
-static_assert(sizeof(WBP_MachineCustom_Top_C_ExecuteUbergraph_WBP_MachineCustom_Top) == 0x000004, "Wrong size on WBP_MachineCustom_Top_C_ExecuteUbergraph_WBP_MachineCustom_Top");
-static_assert(offsetof(WBP_MachineCustom_Top_C_ExecuteUbergraph_WBP_MachineCustom_Top, EntryPoint) == 0x000000, "Member 'WBP_MachineCustom_Top_C_ExecuteUbergraph_WBP_MachineCustom_Top::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Top_C_ExecuteUbergraph_WBP_MachineCustom_Top;
 
 // Function WBP_MachineCustom_Top.WBP_MachineCustom_Top_C.GetParamWindow
 // 0x0008 (0x0008 - 0x0000)
@@ -35,9 +33,7 @@ struct WBP_MachineCustom_Top_C_GetParamWindow final
 public:
 	class UCharaMachineParamWindow*               OutParamWindow;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Top_C_GetParamWindow) == 0x000008, "Wrong alignment on WBP_MachineCustom_Top_C_GetParamWindow");
-static_assert(sizeof(WBP_MachineCustom_Top_C_GetParamWindow) == 0x000008, "Wrong size on WBP_MachineCustom_Top_C_GetParamWindow");
-static_assert(offsetof(WBP_MachineCustom_Top_C_GetParamWindow, OutParamWindow) == 0x000000, "Member 'WBP_MachineCustom_Top_C_GetParamWindow::OutParamWindow' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Top_C_GetParamWindow;
 
 // Function WBP_MachineCustom_Top.WBP_MachineCustom_Top_C.SetupMachineCustomizeTabWindow
 // 0x0001 (0x0001 - 0x0000)
@@ -46,9 +42,7 @@ struct WBP_MachineCustom_Top_C_SetupMachineCustomizeTabWindow final
 public:
 	bool                                          IsShowDonpaTicket;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Top_C_SetupMachineCustomizeTabWindow) == 0x000001, "Wrong alignment on WBP_MachineCustom_Top_C_SetupMachineCustomizeTabWindow");
-static_assert(sizeof(WBP_MachineCustom_Top_C_SetupMachineCustomizeTabWindow) == 0x000001, "Wrong size on WBP_MachineCustom_Top_C_SetupMachineCustomizeTabWindow");
-static_assert(offsetof(WBP_MachineCustom_Top_C_SetupMachineCustomizeTabWindow, IsShowDonpaTicket) == 0x000000, "Member 'WBP_MachineCustom_Top_C_SetupMachineCustomizeTabWindow::IsShowDonpaTicket' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Top_C_SetupMachineCustomizeTabWindow;
 
 // Function WBP_MachineCustom_Top.WBP_MachineCustom_Top_C.SetVisibleDonpaTicket
 // 0x0005 (0x0005 - 0x0000)
@@ -61,13 +55,7 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Top_C_SetVisibleDonpaTicket) == 0x000001, "Wrong alignment on WBP_MachineCustom_Top_C_SetVisibleDonpaTicket");
-static_assert(sizeof(WBP_MachineCustom_Top_C_SetVisibleDonpaTicket) == 0x000005, "Wrong size on WBP_MachineCustom_Top_C_SetVisibleDonpaTicket");
-static_assert(offsetof(WBP_MachineCustom_Top_C_SetVisibleDonpaTicket, IsVisible_0) == 0x000000, "Member 'WBP_MachineCustom_Top_C_SetVisibleDonpaTicket::IsVisible_0' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Top_C_SetVisibleDonpaTicket, Temp_bool_Variable) == 0x000001, "Member 'WBP_MachineCustom_Top_C_SetVisibleDonpaTicket::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Top_C_SetVisibleDonpaTicket, Temp_byte_Variable) == 0x000002, "Member 'WBP_MachineCustom_Top_C_SetVisibleDonpaTicket::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Top_C_SetVisibleDonpaTicket, Temp_byte_Variable_1) == 0x000003, "Member 'WBP_MachineCustom_Top_C_SetVisibleDonpaTicket::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Top_C_SetVisibleDonpaTicket, K2Node_Select_Default) == 0x000004, "Member 'WBP_MachineCustom_Top_C_SetVisibleDonpaTicket::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Top_C_SetVisibleDonpaTicket;
 
 // Function WBP_MachineCustom_Top.WBP_MachineCustom_Top_C.SetWindowGroupVisible
 // 0x0005 (0x0005 - 0x0000)
@@ -80,13 +68,7 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Top_C_SetWindowGroupVisible) == 0x000001, "Wrong alignment on WBP_MachineCustom_Top_C_SetWindowGroupVisible");
-static_assert(sizeof(WBP_MachineCustom_Top_C_SetWindowGroupVisible) == 0x000005, "Wrong size on WBP_MachineCustom_Top_C_SetWindowGroupVisible");
-static_assert(offsetof(WBP_MachineCustom_Top_C_SetWindowGroupVisible, bInIsVisible) == 0x000000, "Member 'WBP_MachineCustom_Top_C_SetWindowGroupVisible::bInIsVisible' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Top_C_SetWindowGroupVisible, Temp_bool_Variable) == 0x000001, "Member 'WBP_MachineCustom_Top_C_SetWindowGroupVisible::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Top_C_SetWindowGroupVisible, Temp_byte_Variable) == 0x000002, "Member 'WBP_MachineCustom_Top_C_SetWindowGroupVisible::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Top_C_SetWindowGroupVisible, Temp_byte_Variable_1) == 0x000003, "Member 'WBP_MachineCustom_Top_C_SetWindowGroupVisible::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Top_C_SetWindowGroupVisible, K2Node_Select_Default) == 0x000004, "Member 'WBP_MachineCustom_Top_C_SetWindowGroupVisible::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Top_C_SetWindowGroupVisible;
 
 // Function WBP_MachineCustom_Top.WBP_MachineCustom_Top_C.SwitchWindow
 // 0x0010 (0x0010 - 0x0000)
@@ -100,13 +82,7 @@ public:
 	int32                                         Temp_int_Variable_1;                               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_Select_Default;                             // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Top_C_SwitchWindow) == 0x000004, "Wrong alignment on WBP_MachineCustom_Top_C_SwitchWindow");
-static_assert(sizeof(WBP_MachineCustom_Top_C_SwitchWindow) == 0x000010, "Wrong size on WBP_MachineCustom_Top_C_SwitchWindow");
-static_assert(offsetof(WBP_MachineCustom_Top_C_SwitchWindow, InWindowId) == 0x000000, "Member 'WBP_MachineCustom_Top_C_SwitchWindow::InWindowId' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Top_C_SwitchWindow, Temp_byte_Variable) == 0x000001, "Member 'WBP_MachineCustom_Top_C_SwitchWindow::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Top_C_SwitchWindow, Temp_int_Variable) == 0x000004, "Member 'WBP_MachineCustom_Top_C_SwitchWindow::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Top_C_SwitchWindow, Temp_int_Variable_1) == 0x000008, "Member 'WBP_MachineCustom_Top_C_SwitchWindow::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Top_C_SwitchWindow, K2Node_Select_Default) == 0x00000C, "Member 'WBP_MachineCustom_Top_C_SwitchWindow::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Top_C_SwitchWindow;
 
 // Function WBP_MachineCustom_Top.WBP_MachineCustom_Top_C.UpdateDonpaTicket
 // 0x0004 (0x0004 - 0x0000)
@@ -115,9 +91,7 @@ struct WBP_MachineCustom_Top_C_UpdateDonpaTicket final
 public:
 	int32                                         CallFunc_GetDonpaTicket_ReturnValue;               // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Top_C_UpdateDonpaTicket) == 0x000004, "Wrong alignment on WBP_MachineCustom_Top_C_UpdateDonpaTicket");
-static_assert(sizeof(WBP_MachineCustom_Top_C_UpdateDonpaTicket) == 0x000004, "Wrong size on WBP_MachineCustom_Top_C_UpdateDonpaTicket");
-static_assert(offsetof(WBP_MachineCustom_Top_C_UpdateDonpaTicket, CallFunc_GetDonpaTicket_ReturnValue) == 0x000000, "Member 'WBP_MachineCustom_Top_C_UpdateDonpaTicket::CallFunc_GetDonpaTicket_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Top_C_UpdateDonpaTicket;
 
 // Function WBP_MachineCustom_Top.WBP_MachineCustom_Top_C.GetMachineCustomCommonWindow
 // 0x0008 (0x0008 - 0x0000)
@@ -126,9 +100,7 @@ struct WBP_MachineCustom_Top_C_GetMachineCustomCommonWindow final
 public:
 	class UMachineCustomCommonWindow*             ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Top_C_GetMachineCustomCommonWindow) == 0x000008, "Wrong alignment on WBP_MachineCustom_Top_C_GetMachineCustomCommonWindow");
-static_assert(sizeof(WBP_MachineCustom_Top_C_GetMachineCustomCommonWindow) == 0x000008, "Wrong size on WBP_MachineCustom_Top_C_GetMachineCustomCommonWindow");
-static_assert(offsetof(WBP_MachineCustom_Top_C_GetMachineCustomCommonWindow, ReturnValue) == 0x000000, "Member 'WBP_MachineCustom_Top_C_GetMachineCustomCommonWindow::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Top_C_GetMachineCustomCommonWindow;
 
 }
 

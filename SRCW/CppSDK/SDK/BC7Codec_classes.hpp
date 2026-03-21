@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BC7EncoderAsyncExecution">();
+		STATIC_CLASS_IMPL("BC7EncoderAsyncExecution")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BC7EncoderAsyncExecution")
 	}
 	static class UBC7EncoderAsyncExecution* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBC7EncoderAsyncExecution>();
 	}
 };
-static_assert(alignof(UBC7EncoderAsyncExecution) == 0x000008, "Wrong alignment on UBC7EncoderAsyncExecution");
-static_assert(sizeof(UBC7EncoderAsyncExecution) == 0x000050, "Wrong size on UBC7EncoderAsyncExecution");
-static_assert(offsetof(UBC7EncoderAsyncExecution, OnCompleted_) == 0x000040, "Member 'UBC7EncoderAsyncExecution::OnCompleted_' has a wrong offset!");
+DUMPER7_ASSERTS_UBC7EncoderAsyncExecution;
 
 }
 

@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
-#include "EColorPresetSelectPageItemType_structs.hpp"
-#include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
+#include "UnionSystem_structs.hpp"
+#include "EColorPresetSelectPageItemType_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -38,18 +38,7 @@ public:
 	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             IconTexture_33_D478A85A43450684899CD5A6B0756E7E;   // 0x0050(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FST_ColorPresetSelectPageItemData) == 0x000008, "Wrong alignment on FST_ColorPresetSelectPageItemData");
-static_assert(sizeof(FST_ColorPresetSelectPageItemData) == 0x000058, "Wrong size on FST_ColorPresetSelectPageItemData");
-static_assert(offsetof(FST_ColorPresetSelectPageItemData, Type_30_ADBC9E1E4BDA6ADF32CFA991DC89F4AA) == 0x000000, "Member 'FST_ColorPresetSelectPageItemData::Type_30_ADBC9E1E4BDA6ADF32CFA991DC89F4AA' has a wrong offset!");
-static_assert(offsetof(FST_ColorPresetSelectPageItemData, ColorPresetId_27_87CD493B4E8F27A46AAC3DB178E4E3CC) == 0x000001, "Member 'FST_ColorPresetSelectPageItemData::ColorPresetId_27_87CD493B4E8F27A46AAC3DB178E4E3CC' has a wrong offset!");
-static_assert(offsetof(FST_ColorPresetSelectPageItemData, ColorPresetType_36_CE0F3FBC459DC3A32306E58874D6E7EF) == 0x000002, "Member 'FST_ColorPresetSelectPageItemData::ColorPresetType_36_CE0F3FBC459DC3A32306E58874D6E7EF' has a wrong offset!");
-static_assert(offsetof(FST_ColorPresetSelectPageItemData, Name_6_EEDCC8894F9967925F900E8018211235) == 0x000008, "Member 'FST_ColorPresetSelectPageItemData::Name_6_EEDCC8894F9967925F900E8018211235' has a wrong offset!");
-static_assert(offsetof(FST_ColorPresetSelectPageItemData, bIsSelected_12_62AD398442AFE835409849A7DC2606B6) == 0x000018, "Member 'FST_ColorPresetSelectPageItemData::bIsSelected_12_62AD398442AFE835409849A7DC2606B6' has a wrong offset!");
-static_assert(offsetof(FST_ColorPresetSelectPageItemData, bIsNew_13_5CFDE5A2494EF599D0706E8607A62F1E) == 0x000019, "Member 'FST_ColorPresetSelectPageItemData::bIsNew_13_5CFDE5A2494EF599D0706E8607A62F1E' has a wrong offset!");
-static_assert(offsetof(FST_ColorPresetSelectPageItemData, Color_0_19_EBF7DECE427B3A3DE4B0ADB72A68D2F6) == 0x00001C, "Member 'FST_ColorPresetSelectPageItemData::Color_0_19_EBF7DECE427B3A3DE4B0ADB72A68D2F6' has a wrong offset!");
-static_assert(offsetof(FST_ColorPresetSelectPageItemData, Color_1_22_A7DB2FB549D8895EFB2C8894EFF23B3E) == 0x00002C, "Member 'FST_ColorPresetSelectPageItemData::Color_1_22_A7DB2FB549D8895EFB2C8894EFF23B3E' has a wrong offset!");
-static_assert(offsetof(FST_ColorPresetSelectPageItemData, Color_2_23_A1DF37FA4DDE6437CB9CC19A59BA5FE1) == 0x00003C, "Member 'FST_ColorPresetSelectPageItemData::Color_2_23_A1DF37FA4DDE6437CB9CC19A59BA5FE1' has a wrong offset!");
-static_assert(offsetof(FST_ColorPresetSelectPageItemData, IconTexture_33_D478A85A43450684899CD5A6B0756E7E) == 0x000050, "Member 'FST_ColorPresetSelectPageItemData::IconTexture_33_D478A85A43450684899CD5A6B0756E7E' has a wrong offset!");
+DUMPER7_ASSERTS_FST_ColorPresetSelectPageItemData;
 
 }
 

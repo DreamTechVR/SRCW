@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ST_PullDownMenuData_structs.hpp"
 #include "Engine_structs.hpp"
+#include "ST_PullDownMenuData_structs.hpp"
 #include "ST_PullDownMenuItemData_structs.hpp"
 #include "UnionUI_classes.hpp"
 
@@ -77,38 +77,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_PullDownMenu_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_PullDownMenu_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_PullDownMenu_C")
 	}
 	static class UWBP_CMN_PullDownMenu_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_PullDownMenu_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_PullDownMenu_C) == 0x000008, "Wrong alignment on UWBP_CMN_PullDownMenu_C");
-static_assert(sizeof(UWBP_CMN_PullDownMenu_C) == 0x000560, "Wrong size on UWBP_CMN_PullDownMenu_C");
-static_assert(offsetof(UWBP_CMN_PullDownMenu_C, UberGraphFrame) == 0x000480, "Member 'UWBP_CMN_PullDownMenu_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PullDownMenu_C, PullDown_Out) == 0x000488, "Member 'UWBP_CMN_PullDownMenu_C::PullDown_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PullDownMenu_C, PullDown_Down_to_Up) == 0x000490, "Member 'UWBP_CMN_PullDownMenu_C::PullDown_Down_to_Up' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PullDownMenu_C, PullDown_Up_to_Down) == 0x000498, "Member 'UWBP_CMN_PullDownMenu_C::PullDown_Up_to_Down' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PullDownMenu_C, PullDown_Loop) == 0x0004A0, "Member 'UWBP_CMN_PullDownMenu_C::PullDown_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PullDownMenu_C, PullDown_In) == 0x0004A8, "Member 'UWBP_CMN_PullDownMenu_C::PullDown_In' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PullDownMenu_C, WBP_CMN_Line_Btn) == 0x0004B0, "Member 'UWBP_CMN_PullDownMenu_C::WBP_CMN_Line_Btn' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PullDownMenu_C, WBP_CMN_Sub_PullDownMenu_Text_01) == 0x0004B8, "Member 'UWBP_CMN_PullDownMenu_C::WBP_CMN_Sub_PullDownMenu_Text_01' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PullDownMenu_C, WBP_CMN_Sub_PullDownMenu_Text_02) == 0x0004C0, "Member 'UWBP_CMN_PullDownMenu_C::WBP_CMN_Sub_PullDownMenu_Text_02' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PullDownMenu_C, WBP_CMN_Sub_PullDownMenu_Text_03) == 0x0004C8, "Member 'UWBP_CMN_PullDownMenu_C::WBP_CMN_Sub_PullDownMenu_Text_03' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PullDownMenu_C, WBP_CMN_Sub_PullDownMenu_Text_04) == 0x0004D0, "Member 'UWBP_CMN_PullDownMenu_C::WBP_CMN_Sub_PullDownMenu_Text_04' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PullDownMenu_C, WBP_CMN_Sub_PullDownMenu_Text_05) == 0x0004D8, "Member 'UWBP_CMN_PullDownMenu_C::WBP_CMN_Sub_PullDownMenu_Text_05' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PullDownMenu_C, WBP_CMN_Sub_PullDownMenu_Text_06) == 0x0004E0, "Member 'UWBP_CMN_PullDownMenu_C::WBP_CMN_Sub_PullDownMenu_Text_06' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PullDownMenu_C, WBP_CMN_Sub_PullDownMenu_Text_07) == 0x0004E8, "Member 'UWBP_CMN_PullDownMenu_C::WBP_CMN_Sub_PullDownMenu_Text_07' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PullDownMenu_C, Items) == 0x0004F0, "Member 'UWBP_CMN_PullDownMenu_C::Items' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PullDownMenu_C, MenuData) == 0x000500, "Member 'UWBP_CMN_PullDownMenu_C::MenuData' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PullDownMenu_C, FocusedItemDataIndex) == 0x000510, "Member 'UWBP_CMN_PullDownMenu_C::FocusedItemDataIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PullDownMenu_C, OnItemFocused) == 0x000518, "Member 'UWBP_CMN_PullDownMenu_C::OnItemFocused' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PullDownMenu_C, OnItemSelected) == 0x000528, "Member 'UWBP_CMN_PullDownMenu_C::OnItemSelected' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PullDownMenu_C, OnCancel) == 0x000538, "Member 'UWBP_CMN_PullDownMenu_C::OnCancel' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PullDownMenu_C, bIsScrolling) == 0x000548, "Member 'UWBP_CMN_PullDownMenu_C::bIsScrolling' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PullDownMenu_C, bIsAccept) == 0x000549, "Member 'UWBP_CMN_PullDownMenu_C::bIsAccept' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PullDownMenu_C, OnClose) == 0x000550, "Member 'UWBP_CMN_PullDownMenu_C::OnClose' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_PullDownMenu_C;
 
 }
 

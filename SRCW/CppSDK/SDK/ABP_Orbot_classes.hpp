@@ -23,15 +23,18 @@ class UABP_Orbot_C final : public UABP_DialogueCharacter_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABP_Orbot_C">();
+		BP_STATIC_CLASS_IMPL("ABP_Orbot_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABP_Orbot_C")
 	}
 	static class UABP_Orbot_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UABP_Orbot_C>();
 	}
 };
-static_assert(alignof(UABP_Orbot_C) == 0x000010, "Wrong alignment on UABP_Orbot_C");
-static_assert(sizeof(UABP_Orbot_C) == 0x0009D0, "Wrong size on UABP_Orbot_C");
+DUMPER7_ASSERTS_UABP_Orbot_C;
 
 }
 

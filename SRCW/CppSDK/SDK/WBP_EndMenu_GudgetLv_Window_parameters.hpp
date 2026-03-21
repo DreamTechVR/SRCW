@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
+#include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
@@ -30,13 +30,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_EndMenu_GudgetLv_Window_C_BindFullScreenMouseClick) == 0x000008, "Wrong alignment on WBP_EndMenu_GudgetLv_Window_C_BindFullScreenMouseClick");
-static_assert(sizeof(WBP_EndMenu_GudgetLv_Window_C_BindFullScreenMouseClick) == 0x000028, "Wrong size on WBP_EndMenu_GudgetLv_Window_C_BindFullScreenMouseClick");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_BindFullScreenMouseClick, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'WBP_EndMenu_GudgetLv_Window_C_BindFullScreenMouseClick::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_BindFullScreenMouseClick, CallFunc_GetPlayerController_ReturnValue) == 0x000010, "Member 'WBP_EndMenu_GudgetLv_Window_C_BindFullScreenMouseClick::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_BindFullScreenMouseClick, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000018, "Member 'WBP_EndMenu_GudgetLv_Window_C_BindFullScreenMouseClick::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_BindFullScreenMouseClick, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'WBP_EndMenu_GudgetLv_Window_C_BindFullScreenMouseClick::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_BindFullScreenMouseClick, CallFunc_IsValid_ReturnValue) == 0x000021, "Member 'WBP_EndMenu_GudgetLv_Window_C_BindFullScreenMouseClick::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_EndMenu_GudgetLv_Window_C_BindFullScreenMouseClick;
 
 // Function WBP_EndMenu_GudgetLv_Window.WBP_EndMenu_GudgetLv_Window_C.ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window
 // 0x0130 (0x0130 - 0x0000)
@@ -83,41 +77,7 @@ public:
 	double                                        CallFunc_GreaterEqual_DoubleDouble_A_ImplicitCast_1; // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_GreaterEqual_DoubleDouble_B_ImplicitCast_2; // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window) == 0x000008, "Wrong alignment on WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window");
-static_assert(sizeof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window) == 0x000130, "Wrong size on WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window, EntryPoint) == 0x000000, "Member 'WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window, K2Node_Event_MyGeometry) == 0x000004, "Member 'WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window, K2Node_Event_InDeltaTime) == 0x00003C, "Member 'WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window, K2Node_CreateDelegate_OutputDelegate) == 0x000040, "Member 'WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window, CallFunc_CreatePlayAnimationProxyObject_Result) == 0x000050, "Member 'WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window::CallFunc_CreatePlayAnimationProxyObject_Result' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window, CallFunc_CreatePlayAnimationProxyObject_ReturnValue) == 0x000058, "Member 'WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window::CallFunc_CreatePlayAnimationProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window, CallFunc_PlayAnimation_ReturnValue) == 0x000060, "Member 'WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window, CallFunc_IsValid_ReturnValue) == 0x000068, "Member 'WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window, CallFunc_CreatePlayAnimationProxyObject_Result_1) == 0x000070, "Member 'WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window::CallFunc_CreatePlayAnimationProxyObject_Result_1' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window, CallFunc_CreatePlayAnimationProxyObject_ReturnValue_1) == 0x000078, "Member 'WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window::CallFunc_CreatePlayAnimationProxyObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window, CallFunc_IsValid_ReturnValue_1) == 0x000080, "Member 'WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000088, "Member 'WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window, CallFunc_GreaterEqual_DoubleDouble_ReturnValue) == 0x000090, "Member 'WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window::CallFunc_GreaterEqual_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window, CallFunc_GreaterEqual_DoubleDouble_ReturnValue_1) == 0x000091, "Member 'WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window::CallFunc_GreaterEqual_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window, CallFunc_SoundPlay_ReturnValue) == 0x000094, "Member 'WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window, CallFunc_Stop_ReturnValue) == 0x000098, "Member 'WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window::CallFunc_Stop_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window, CallFunc_Add_DoubleDouble_ReturnValue_1) == 0x0000A0, "Member 'WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window::CallFunc_Add_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window, K2Node_CreateDelegate_OutputDelegate_1) == 0x0000A8, "Member 'WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window, CallFunc_GetResultNormalForcePressedTime_ReturnValue) == 0x0000B8, "Member 'WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window::CallFunc_GetResultNormalForcePressedTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window, CallFunc_GreaterEqual_DoubleDouble_ReturnValue_2) == 0x0000BC, "Member 'WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window::CallFunc_GreaterEqual_DoubleDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window, CallFunc_GreaterEqual_DoubleDouble_ReturnValue_3) == 0x0000BD, "Member 'WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window::CallFunc_GreaterEqual_DoubleDouble_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window, CallFunc_MakeLiteralText_ReturnValue) == 0x0000C0, "Member 'WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window, CallFunc_SoundPlay_ReturnValue_1) == 0x0000D0, "Member 'WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window, CallFunc_MakeLiteralText_ReturnValue_1) == 0x0000D8, "Member 'WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window, CallFunc_Add_DoubleDouble_B_ImplicitCast) == 0x0000E8, "Member 'WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window::CallFunc_Add_DoubleDouble_B_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window, CallFunc_Add_DoubleDouble_A_ImplicitCast) == 0x0000F0, "Member 'WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window::CallFunc_Add_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window, CallFunc_Add_DoubleDouble_B_ImplicitCast_1) == 0x0000F8, "Member 'WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window::CallFunc_Add_DoubleDouble_B_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window, CallFunc_SetGauge_Next_ImplicitCast) == 0x000100, "Member 'WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window::CallFunc_SetGauge_Next_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window, CallFunc_GreaterEqual_DoubleDouble_B_ImplicitCast) == 0x000108, "Member 'WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window::CallFunc_GreaterEqual_DoubleDouble_B_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window, CallFunc_GreaterEqual_DoubleDouble_A_ImplicitCast) == 0x000110, "Member 'WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window::CallFunc_GreaterEqual_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window, CallFunc_GreaterEqual_DoubleDouble_B_ImplicitCast_1) == 0x000118, "Member 'WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window::CallFunc_GreaterEqual_DoubleDouble_B_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window, CallFunc_GreaterEqual_DoubleDouble_A_ImplicitCast_1) == 0x000120, "Member 'WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window::CallFunc_GreaterEqual_DoubleDouble_A_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window, CallFunc_GreaterEqual_DoubleDouble_B_ImplicitCast_2) == 0x000128, "Member 'WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window::CallFunc_GreaterEqual_DoubleDouble_B_ImplicitCast_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_EndMenu_GudgetLv_Window_C_ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window;
 
 // Function WBP_EndMenu_GudgetLv_Window.WBP_EndMenu_GudgetLv_Window_C.ResetGadgetRankGauge
 // 0x0020 (0x0020 - 0x0000)
@@ -131,13 +91,7 @@ public:
 	double                                        CallFunc_SetGauge_Now_ImplicitCast;                // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_SetGauge_Next_ImplicitCast;               // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_EndMenu_GudgetLv_Window_C_ResetGadgetRankGauge) == 0x000008, "Wrong alignment on WBP_EndMenu_GudgetLv_Window_C_ResetGadgetRankGauge");
-static_assert(sizeof(WBP_EndMenu_GudgetLv_Window_C_ResetGadgetRankGauge) == 0x000020, "Wrong size on WBP_EndMenu_GudgetLv_Window_C_ResetGadgetRankGauge");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ResetGadgetRankGauge, InGaugeBase) == 0x000000, "Member 'WBP_EndMenu_GudgetLv_Window_C_ResetGadgetRankGauge::InGaugeBase' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ResetGadgetRankGauge, InGaugeAddFixed) == 0x000004, "Member 'WBP_EndMenu_GudgetLv_Window_C_ResetGadgetRankGauge::InGaugeAddFixed' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ResetGadgetRankGauge, InGaugeNext) == 0x000008, "Member 'WBP_EndMenu_GudgetLv_Window_C_ResetGadgetRankGauge::InGaugeNext' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ResetGadgetRankGauge, CallFunc_SetGauge_Now_ImplicitCast) == 0x000010, "Member 'WBP_EndMenu_GudgetLv_Window_C_ResetGadgetRankGauge::CallFunc_SetGauge_Now_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_ResetGadgetRankGauge, CallFunc_SetGauge_Next_ImplicitCast) == 0x000018, "Member 'WBP_EndMenu_GudgetLv_Window_C_ResetGadgetRankGauge::CallFunc_SetGauge_Next_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_EndMenu_GudgetLv_Window_C_ResetGadgetRankGauge;
 
 // Function WBP_EndMenu_GudgetLv_Window.WBP_EndMenu_GudgetLv_Window_C.Set Gadget Plate Empty from Plate Id
 // 0x0028 (0x0028 - 0x0000)
@@ -153,15 +107,7 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0008(0x0010)(ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0018(0x0010)()
 };
-static_assert(alignof(WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Plate_Id) == 0x000008, "Wrong alignment on WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Plate_Id");
-static_assert(sizeof(WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Plate_Id) == 0x000028, "Wrong size on WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Plate_Id");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Plate_Id, InTotalRaceCount) == 0x000000, "Member 'WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Plate_Id::InTotalRaceCount' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Plate_Id, InRunkUp) == 0x000001, "Member 'WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Plate_Id::InRunkUp' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Plate_Id, InLevelUp) == 0x000002, "Member 'WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Plate_Id::InLevelUp' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Plate_Id, TempGadgetId) == 0x000003, "Member 'WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Plate_Id::TempGadgetId' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Plate_Id, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Plate_Id::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Plate_Id, K2Node_MakeArray_Array) == 0x000008, "Member 'WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Plate_Id::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Plate_Id, CallFunc_Format_ReturnValue) == 0x000018, "Member 'WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Plate_Id::CallFunc_Format_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Plate_Id;
 
 // Function WBP_EndMenu_GudgetLv_Window.WBP_EndMenu_GudgetLv_Window_C.Set Gadget Plate Empty from Race Count
 // 0x0030 (0x0030 - 0x0000)
@@ -178,16 +124,7 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0010(0x0010)(ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0020(0x0010)()
 };
-static_assert(alignof(WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Race_Count) == 0x000008, "Wrong alignment on WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Race_Count");
-static_assert(sizeof(WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Race_Count) == 0x000030, "Wrong size on WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Race_Count");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Race_Count, InTotalRaceCount) == 0x000000, "Member 'WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Race_Count::InTotalRaceCount' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Race_Count, InRunkUp) == 0x000004, "Member 'WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Race_Count::InRunkUp' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Race_Count, InLevelUp) == 0x000005, "Member 'WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Race_Count::InLevelUp' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Race_Count, TempGadgetId) == 0x000006, "Member 'WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Race_Count::TempGadgetId' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Race_Count, CallFunc_GetGadgetPlateId_ReturnValue) == 0x000007, "Member 'WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Race_Count::CallFunc_GetGadgetPlateId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Race_Count, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Race_Count::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Race_Count, K2Node_MakeArray_Array) == 0x000010, "Member 'WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Race_Count::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Race_Count, CallFunc_Format_ReturnValue) == 0x000020, "Member 'WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Race_Count::CallFunc_Format_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_EndMenu_GudgetLv_Window_C_Set_Gadget_Plate_Empty_from_Race_Count;
 
 // Function WBP_EndMenu_GudgetLv_Window.WBP_EndMenu_GudgetLv_Window_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -197,10 +134,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_EndMenu_GudgetLv_Window_C_Tick) == 0x000004, "Wrong alignment on WBP_EndMenu_GudgetLv_Window_C_Tick");
-static_assert(sizeof(WBP_EndMenu_GudgetLv_Window_C_Tick) == 0x00003C, "Wrong size on WBP_EndMenu_GudgetLv_Window_C_Tick");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_Tick, MyGeometry) == 0x000000, "Member 'WBP_EndMenu_GudgetLv_Window_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_Tick, InDeltaTime) == 0x000038, "Member 'WBP_EndMenu_GudgetLv_Window_C_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_EndMenu_GudgetLv_Window_C_Tick;
 
 // Function WBP_EndMenu_GudgetLv_Window.WBP_EndMenu_GudgetLv_Window_C.UnbindFullScreenMouseClick
 // 0x0028 (0x0028 - 0x0000)
@@ -213,13 +147,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_EndMenu_GudgetLv_Window_C_UnbindFullScreenMouseClick) == 0x000008, "Wrong alignment on WBP_EndMenu_GudgetLv_Window_C_UnbindFullScreenMouseClick");
-static_assert(sizeof(WBP_EndMenu_GudgetLv_Window_C_UnbindFullScreenMouseClick) == 0x000028, "Wrong size on WBP_EndMenu_GudgetLv_Window_C_UnbindFullScreenMouseClick");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_UnbindFullScreenMouseClick, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'WBP_EndMenu_GudgetLv_Window_C_UnbindFullScreenMouseClick::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_UnbindFullScreenMouseClick, CallFunc_GetPlayerController_ReturnValue) == 0x000010, "Member 'WBP_EndMenu_GudgetLv_Window_C_UnbindFullScreenMouseClick::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_UnbindFullScreenMouseClick, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000018, "Member 'WBP_EndMenu_GudgetLv_Window_C_UnbindFullScreenMouseClick::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_UnbindFullScreenMouseClick, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'WBP_EndMenu_GudgetLv_Window_C_UnbindFullScreenMouseClick::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_GudgetLv_Window_C_UnbindFullScreenMouseClick, CallFunc_IsValid_ReturnValue) == 0x000021, "Member 'WBP_EndMenu_GudgetLv_Window_C_UnbindFullScreenMouseClick::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_EndMenu_GudgetLv_Window_C_UnbindFullScreenMouseClick;
 
 }
 

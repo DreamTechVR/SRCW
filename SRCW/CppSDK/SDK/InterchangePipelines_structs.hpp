@@ -70,11 +70,9 @@ enum class EInterchangeMaterialSearchLocation : uint8
 struct FInterchangeLodSceneNodeContainer final
 {
 public:
-	TArray<class UInterchangeSceneNode*>          SceneNodes;                                        // 0x0000(0x0010)(Edit, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
+	TArray<class UInterchangeSceneNode*>          SceneNodes;                                        // 0x0000(0x0010)(Edit, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
 };
-static_assert(alignof(FInterchangeLodSceneNodeContainer) == 0x000008, "Wrong alignment on FInterchangeLodSceneNodeContainer");
-static_assert(sizeof(FInterchangeLodSceneNodeContainer) == 0x000010, "Wrong size on FInterchangeLodSceneNodeContainer");
-static_assert(offsetof(FInterchangeLodSceneNodeContainer, SceneNodes) == 0x000000, "Member 'FInterchangeLodSceneNodeContainer::SceneNodes' has a wrong offset!");
+DUMPER7_ASSERTS_FInterchangeLodSceneNodeContainer;
 
 // ScriptStruct InterchangePipelines.InterchangeMeshInstance
 // 0x0080 (0x0080 - 0x0000)
@@ -82,7 +80,7 @@ struct FInterchangeMeshInstance final
 {
 public:
 	class FString                                 MeshInstanceUid;                                   // 0x0000(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInterchangeSceneNode*                  LodGroupNode;                                      // 0x0010(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInterchangeSceneNode*                  LodGroupNode;                                      // 0x0010(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 	bool                                          bReferenceSkinnedMesh;                             // 0x0018(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bReferenceMorphTarget;                             // 0x0019(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bHasMorphTargets;                                  // 0x001A(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -90,15 +88,7 @@ public:
 	TMap<int32, struct FInterchangeLodSceneNodeContainer> SceneNodePerLodIndex;                      // 0x0020(0x0050)(Edit, NativeAccessSpecifierPublic)
 	TArray<class FString>                         ReferencingMeshGeometryUids;                       // 0x0070(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FInterchangeMeshInstance) == 0x000008, "Wrong alignment on FInterchangeMeshInstance");
-static_assert(sizeof(FInterchangeMeshInstance) == 0x000080, "Wrong size on FInterchangeMeshInstance");
-static_assert(offsetof(FInterchangeMeshInstance, MeshInstanceUid) == 0x000000, "Member 'FInterchangeMeshInstance::MeshInstanceUid' has a wrong offset!");
-static_assert(offsetof(FInterchangeMeshInstance, LodGroupNode) == 0x000010, "Member 'FInterchangeMeshInstance::LodGroupNode' has a wrong offset!");
-static_assert(offsetof(FInterchangeMeshInstance, bReferenceSkinnedMesh) == 0x000018, "Member 'FInterchangeMeshInstance::bReferenceSkinnedMesh' has a wrong offset!");
-static_assert(offsetof(FInterchangeMeshInstance, bReferenceMorphTarget) == 0x000019, "Member 'FInterchangeMeshInstance::bReferenceMorphTarget' has a wrong offset!");
-static_assert(offsetof(FInterchangeMeshInstance, bHasMorphTargets) == 0x00001A, "Member 'FInterchangeMeshInstance::bHasMorphTargets' has a wrong offset!");
-static_assert(offsetof(FInterchangeMeshInstance, SceneNodePerLodIndex) == 0x000020, "Member 'FInterchangeMeshInstance::SceneNodePerLodIndex' has a wrong offset!");
-static_assert(offsetof(FInterchangeMeshInstance, ReferencingMeshGeometryUids) == 0x000070, "Member 'FInterchangeMeshInstance::ReferencingMeshGeometryUids' has a wrong offset!");
+DUMPER7_ASSERTS_FInterchangeMeshInstance;
 
 // ScriptStruct InterchangePipelines.InterchangeMeshGeometry
 // 0x0038 (0x0038 - 0x0000)
@@ -106,16 +96,11 @@ struct FInterchangeMeshGeometry final
 {
 public:
 	class FString                                 MeshUid;                                           // 0x0000(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInterchangeMeshNode*                   MeshNode;                                          // 0x0010(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInterchangeMeshNode*                   MeshNode;                                          // 0x0010(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 	TArray<class FString>                         ReferencingMeshInstanceUids;                       // 0x0018(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<class FString>                         AttachedSocketUids;                                // 0x0028(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FInterchangeMeshGeometry) == 0x000008, "Wrong alignment on FInterchangeMeshGeometry");
-static_assert(sizeof(FInterchangeMeshGeometry) == 0x000038, "Wrong size on FInterchangeMeshGeometry");
-static_assert(offsetof(FInterchangeMeshGeometry, MeshUid) == 0x000000, "Member 'FInterchangeMeshGeometry::MeshUid' has a wrong offset!");
-static_assert(offsetof(FInterchangeMeshGeometry, MeshNode) == 0x000010, "Member 'FInterchangeMeshGeometry::MeshNode' has a wrong offset!");
-static_assert(offsetof(FInterchangeMeshGeometry, ReferencingMeshInstanceUids) == 0x000018, "Member 'FInterchangeMeshGeometry::ReferencingMeshInstanceUids' has a wrong offset!");
-static_assert(offsetof(FInterchangeMeshGeometry, AttachedSocketUids) == 0x000028, "Member 'FInterchangeMeshGeometry::AttachedSocketUids' has a wrong offset!");
+DUMPER7_ASSERTS_FInterchangeMeshGeometry;
 
 // ScriptStruct InterchangePipelines.InterchangePipelineMeshesUtilitiesContext
 // 0x0005 (0x0005 - 0x0000)
@@ -128,13 +113,7 @@ public:
 	bool                                          bImportMeshesInBoneHierarchy;                      // 0x0003(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bQueryGeometryOnlyIfNoInstance;                    // 0x0004(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FInterchangePipelineMeshesUtilitiesContext) == 0x000001, "Wrong alignment on FInterchangePipelineMeshesUtilitiesContext");
-static_assert(sizeof(FInterchangePipelineMeshesUtilitiesContext) == 0x000005, "Wrong size on FInterchangePipelineMeshesUtilitiesContext");
-static_assert(offsetof(FInterchangePipelineMeshesUtilitiesContext, bConvertStaticMeshToSkeletalMesh) == 0x000000, "Member 'FInterchangePipelineMeshesUtilitiesContext::bConvertStaticMeshToSkeletalMesh' has a wrong offset!");
-static_assert(offsetof(FInterchangePipelineMeshesUtilitiesContext, bConvertSkeletalMeshToStaticMesh) == 0x000001, "Member 'FInterchangePipelineMeshesUtilitiesContext::bConvertSkeletalMeshToStaticMesh' has a wrong offset!");
-static_assert(offsetof(FInterchangePipelineMeshesUtilitiesContext, bConvertStaticsWithMorphTargetsToSkeletals) == 0x000002, "Member 'FInterchangePipelineMeshesUtilitiesContext::bConvertStaticsWithMorphTargetsToSkeletals' has a wrong offset!");
-static_assert(offsetof(FInterchangePipelineMeshesUtilitiesContext, bImportMeshesInBoneHierarchy) == 0x000003, "Member 'FInterchangePipelineMeshesUtilitiesContext::bImportMeshesInBoneHierarchy' has a wrong offset!");
-static_assert(offsetof(FInterchangePipelineMeshesUtilitiesContext, bQueryGeometryOnlyIfNoInstance) == 0x000004, "Member 'FInterchangePipelineMeshesUtilitiesContext::bQueryGeometryOnlyIfNoInstance' has a wrong offset!");
+DUMPER7_ASSERTS_FInterchangePipelineMeshesUtilitiesContext;
 
 }
 

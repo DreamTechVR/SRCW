@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PL_Menu_C">();
+		BP_STATIC_CLASS_IMPL("PL_Menu_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PL_Menu_C")
 	}
 	static class APL_Menu_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APL_Menu_C>();
 	}
 };
-static_assert(alignof(APL_Menu_C) == 0x000008, "Wrong alignment on APL_Menu_C");
-static_assert(sizeof(APL_Menu_C) == 0x0002A0, "Wrong size on APL_Menu_C");
-static_assert(offsetof(APL_Menu_C, UberGraphFrame) == 0x000298, "Member 'APL_Menu_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_APL_Menu_C;
 
 }
 

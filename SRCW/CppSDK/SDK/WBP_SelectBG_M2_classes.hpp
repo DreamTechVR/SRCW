@@ -37,27 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_SelectBG_M2_C">();
+		BP_STATIC_CLASS_IMPL("WBP_SelectBG_M2_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_SelectBG_M2_C")
 	}
 	static class UWBP_SelectBG_M2_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_SelectBG_M2_C>();
 	}
 };
-static_assert(alignof(UWBP_SelectBG_M2_C) == 0x000008, "Wrong alignment on UWBP_SelectBG_M2_C");
-static_assert(sizeof(UWBP_SelectBG_M2_C) == 0x000340, "Wrong size on UWBP_SelectBG_M2_C");
-static_assert(offsetof(UWBP_SelectBG_M2_C, FooterBtnCover) == 0x0002E0, "Member 'UWBP_SelectBG_M2_C::FooterBtnCover' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectBG_M2_C, G_Left) == 0x0002E8, "Member 'UWBP_SelectBG_M2_C::G_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectBG_M2_C, G_Right) == 0x0002F0, "Member 'UWBP_SelectBG_M2_C::G_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectBG_M2_C, RaceFlag_Left) == 0x0002F8, "Member 'UWBP_SelectBG_M2_C::RaceFlag_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectBG_M2_C, RaceFlag_Right) == 0x000300, "Member 'UWBP_SelectBG_M2_C::RaceFlag_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectBG_M2_C, WhiteLine) == 0x000308, "Member 'UWBP_SelectBG_M2_C::WhiteLine' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectBG_M2_C, YellowLine_Left) == 0x000310, "Member 'UWBP_SelectBG_M2_C::YellowLine_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectBG_M2_C, YellowLine_Left_1) == 0x000318, "Member 'UWBP_SelectBG_M2_C::YellowLine_Left_1' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectBG_M2_C, YellowLine_Left_2) == 0x000320, "Member 'UWBP_SelectBG_M2_C::YellowLine_Left_2' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectBG_M2_C, YellowLine_Right) == 0x000328, "Member 'UWBP_SelectBG_M2_C::YellowLine_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectBG_M2_C, YellowLine_Right_1) == 0x000330, "Member 'UWBP_SelectBG_M2_C::YellowLine_Right_1' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectBG_M2_C, YellowLine_Right_2) == 0x000338, "Member 'UWBP_SelectBG_M2_C::YellowLine_Right_2' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_SelectBG_M2_C;
 
 }
 

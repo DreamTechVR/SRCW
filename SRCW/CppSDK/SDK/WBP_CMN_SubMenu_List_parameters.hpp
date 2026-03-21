@@ -41,26 +41,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List) == 0x000008, "Wrong alignment on WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List");
-static_assert(sizeof(WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List) == 0x000068, "Wrong size on WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List");
-static_assert(offsetof(WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List, EntryPoint) == 0x000000, "Member 'WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List, Temp_int_Array_Index_Variable_1) == 0x000010, "Member 'WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List, Temp_int_Loop_Counter_Variable_1) == 0x000014, "Member 'WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List, CallFunc_GetAllChildren_ReturnValue) == 0x000018, "Member 'WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List, CallFunc_Array_Get_Item) == 0x000028, "Member 'WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List, K2Node_DynamicCast_AsCommon_Menu_Sub_Menu_Button) == 0x000038, "Member 'WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List::K2Node_DynamicCast_AsCommon_Menu_Sub_Menu_Button' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List, K2Node_DynamicCast_bSuccess) == 0x000040, "Member 'WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List, CallFunc_Less_IntInt_ReturnValue) == 0x000041, "Member 'WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List, CallFunc_Add_IntInt_ReturnValue_1) == 0x000044, "Member 'WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List, CallFunc_Array_Get_Item_1) == 0x000048, "Member 'WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List, CallFunc_Array_Length_ReturnValue_1) == 0x000050, "Member 'WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List, CallFunc_Less_IntInt_ReturnValue_1) == 0x000054, "Member 'WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List, CallFunc_PlayAnimation_ReturnValue) == 0x000058, "Member 'WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List, CallFunc_Array_Add_ReturnValue) == 0x000060, "Member 'WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_SubMenu_List_C_ExecuteUbergraph_WBP_CMN_SubMenu_List;
 
 // Function WBP_CMN_SubMenu_List.WBP_CMN_SubMenu_List_C.GetButtons
 // 0x0010 (0x0010 - 0x0000)
@@ -69,9 +50,7 @@ struct WBP_CMN_SubMenu_List_C_GetButtons final
 public:
 	TArray<class UCommonMenuSubMenuButton*>       Buttons_0;                                         // 0x0000(0x0010)(Parm, OutParm, ContainsInstancedReference)
 };
-static_assert(alignof(WBP_CMN_SubMenu_List_C_GetButtons) == 0x000008, "Wrong alignment on WBP_CMN_SubMenu_List_C_GetButtons");
-static_assert(sizeof(WBP_CMN_SubMenu_List_C_GetButtons) == 0x000010, "Wrong size on WBP_CMN_SubMenu_List_C_GetButtons");
-static_assert(offsetof(WBP_CMN_SubMenu_List_C_GetButtons, Buttons_0) == 0x000000, "Member 'WBP_CMN_SubMenu_List_C_GetButtons::Buttons_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_SubMenu_List_C_GetButtons;
 
 }
 

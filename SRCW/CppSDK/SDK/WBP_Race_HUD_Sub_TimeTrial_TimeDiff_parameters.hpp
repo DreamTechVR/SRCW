@@ -27,14 +27,7 @@ public:
 	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue; // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_TimeTrial_TimeDiff_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_TimeDiff) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_TimeTrial_TimeDiff_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_TimeDiff");
-static_assert(sizeof(WBP_Race_HUD_Sub_TimeTrial_TimeDiff_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_TimeDiff) == 0x000040, "Wrong size on WBP_Race_HUD_Sub_TimeTrial_TimeDiff_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_TimeDiff");
-static_assert(offsetof(WBP_Race_HUD_Sub_TimeTrial_TimeDiff_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_TimeDiff, EntryPoint) == 0x000000, "Member 'WBP_Race_HUD_Sub_TimeTrial_TimeDiff_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_TimeDiff::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TimeTrial_TimeDiff_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_TimeDiff, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_Race_HUD_Sub_TimeTrial_TimeDiff_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_TimeDiff::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TimeTrial_TimeDiff_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_TimeDiff, K2Node_MakeArray_Array) == 0x000018, "Member 'WBP_Race_HUD_Sub_TimeTrial_TimeDiff_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_TimeDiff::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TimeTrial_TimeDiff_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_TimeDiff, CallFunc_CreatePlayAnimationProxyObject_Result) == 0x000028, "Member 'WBP_Race_HUD_Sub_TimeTrial_TimeDiff_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_TimeDiff::CallFunc_CreatePlayAnimationProxyObject_Result' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TimeTrial_TimeDiff_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_TimeDiff, CallFunc_CreatePlayAnimationProxyObject_ReturnValue) == 0x000030, "Member 'WBP_Race_HUD_Sub_TimeTrial_TimeDiff_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_TimeDiff::CallFunc_CreatePlayAnimationProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TimeTrial_TimeDiff_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_TimeDiff, CallFunc_IsValid_ReturnValue) == 0x000038, "Member 'WBP_Race_HUD_Sub_TimeTrial_TimeDiff_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_TimeDiff::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_TimeTrial_TimeDiff_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_TimeDiff;
 
 // Function WBP_Race_HUD_Sub_TimeTrial_TimeDiff.WBP_Race_HUD_Sub_TimeTrial_TimeDiff_C.Open
 // 0x0008 (0x0008 - 0x0000)
@@ -43,9 +36,7 @@ struct WBP_Race_HUD_Sub_TimeTrial_TimeDiff_C_Open final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_TimeTrial_TimeDiff_C_Open) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_TimeTrial_TimeDiff_C_Open");
-static_assert(sizeof(WBP_Race_HUD_Sub_TimeTrial_TimeDiff_C_Open) == 0x000008, "Wrong size on WBP_Race_HUD_Sub_TimeTrial_TimeDiff_C_Open");
-static_assert(offsetof(WBP_Race_HUD_Sub_TimeTrial_TimeDiff_C_Open, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_Race_HUD_Sub_TimeTrial_TimeDiff_C_Open::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_TimeTrial_TimeDiff_C_Open;
 
 }
 

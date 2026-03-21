@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "UnionUI_structs.hpp"
+#include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK
@@ -84,37 +84,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_TimeTrialSequence_C">();
+		BP_STATIC_CLASS_IMPL("BP_TimeTrialSequence_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_TimeTrialSequence_C")
 	}
 	static class ABP_TimeTrialSequence_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_TimeTrialSequence_C>();
 	}
 };
-static_assert(alignof(ABP_TimeTrialSequence_C) == 0x000008, "Wrong alignment on ABP_TimeTrialSequence_C");
-static_assert(sizeof(ABP_TimeTrialSequence_C) == 0x0004F8, "Wrong size on ABP_TimeTrialSequence_C");
-static_assert(offsetof(ABP_TimeTrialSequence_C, UberGraphFrame) == 0x0003D0, "Member 'ABP_TimeTrialSequence_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_TimeTrialSequence_C, BPC_TimeTrialReplayLoadState) == 0x0003D8, "Member 'ABP_TimeTrialSequence_C::BPC_TimeTrialReplayLoadState' has a wrong offset!");
-static_assert(offsetof(ABP_TimeTrialSequence_C, BPC_TimeTrialReadyState) == 0x0003E0, "Member 'ABP_TimeTrialSequence_C::BPC_TimeTrialReadyState' has a wrong offset!");
-static_assert(offsetof(ABP_TimeTrialSequence_C, BPC_TimeTrialGhostConfirmationState) == 0x0003E8, "Member 'ABP_TimeTrialSequence_C::BPC_TimeTrialGhostConfirmationState' has a wrong offset!");
-static_assert(offsetof(ABP_TimeTrialSequence_C, BPC_TimeTrialLoginState) == 0x0003F0, "Member 'ABP_TimeTrialSequence_C::BPC_TimeTrialLoginState' has a wrong offset!");
-static_assert(offsetof(ABP_TimeTrialSequence_C, BPC_GhostUpload) == 0x0003F8, "Member 'ABP_TimeTrialSequence_C::BPC_GhostUpload' has a wrong offset!");
-static_assert(offsetof(ABP_TimeTrialSequence_C, BPC_GadgetCustomize2State) == 0x000400, "Member 'ABP_TimeTrialSequence_C::BPC_GadgetCustomize2State' has a wrong offset!");
-static_assert(offsetof(ABP_TimeTrialSequence_C, BPC_TimeTrialClassSelectSubState) == 0x000408, "Member 'ABP_TimeTrialSequence_C::BPC_TimeTrialClassSelectSubState' has a wrong offset!");
-static_assert(offsetof(ABP_TimeTrialSequence_C, BPC_TimeTrialSelectCourse) == 0x000410, "Member 'ABP_TimeTrialSequence_C::BPC_TimeTrialSelectCourse' has a wrong offset!");
-static_assert(offsetof(ABP_TimeTrialSequence_C, BPC_TimeTrialRanking) == 0x000418, "Member 'ABP_TimeTrialSequence_C::BPC_TimeTrialRanking' has a wrong offset!");
-static_assert(offsetof(ABP_TimeTrialSequence_C, BPC_GhostSelect) == 0x000420, "Member 'ABP_TimeTrialSequence_C::BPC_GhostSelect' has a wrong offset!");
-static_assert(offsetof(ABP_TimeTrialSequence_C, BPC_CharaMachineState) == 0x000428, "Member 'ABP_TimeTrialSequence_C::BPC_CharaMachineState' has a wrong offset!");
-static_assert(offsetof(ABP_TimeTrialSequence_C, MenuSequence) == 0x000430, "Member 'ABP_TimeTrialSequence_C::MenuSequence' has a wrong offset!");
-static_assert(offsetof(ABP_TimeTrialSequence_C, Footer) == 0x000438, "Member 'ABP_TimeTrialSequence_C::Footer' has a wrong offset!");
-static_assert(offsetof(ABP_TimeTrialSequence_C, bLClassSelect) == 0x000440, "Member 'ABP_TimeTrialSequence_C::bLClassSelect' has a wrong offset!");
-static_assert(offsetof(ABP_TimeTrialSequence_C, ReadySequenceActor) == 0x000448, "Member 'ABP_TimeTrialSequence_C::ReadySequenceActor' has a wrong offset!");
-static_assert(offsetof(ABP_TimeTrialSequence_C, SubInputReciever) == 0x000450, "Member 'ABP_TimeTrialSequence_C::SubInputReciever' has a wrong offset!");
-static_assert(offsetof(ABP_TimeTrialSequence_C, CurrentGhostSelectModeId) == 0x000458, "Member 'ABP_TimeTrialSequence_C::CurrentGhostSelectModeId' has a wrong offset!");
-static_assert(offsetof(ABP_TimeTrialSequence_C, PopupWindow) == 0x000460, "Member 'ABP_TimeTrialSequence_C::PopupWindow' has a wrong offset!");
-static_assert(offsetof(ABP_TimeTrialSequence_C, RankingLineData) == 0x000468, "Member 'ABP_TimeTrialSequence_C::RankingLineData' has a wrong offset!");
-static_assert(offsetof(ABP_TimeTrialSequence_C, TimeTrialRaceData) == 0x0004A0, "Member 'ABP_TimeTrialSequence_C::TimeTrialRaceData' has a wrong offset!");
-static_assert(offsetof(ABP_TimeTrialSequence_C, SelectedStageId) == 0x0004F0, "Member 'ABP_TimeTrialSequence_C::SelectedStageId' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_TimeTrialSequence_C;
 
 }
 

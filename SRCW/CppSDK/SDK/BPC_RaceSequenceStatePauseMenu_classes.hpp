@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -38,19 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_RaceSequenceStatePauseMenu_C">();
+		BP_STATIC_CLASS_IMPL("BPC_RaceSequenceStatePauseMenu_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_RaceSequenceStatePauseMenu_C")
 	}
 	static class UBPC_RaceSequenceStatePauseMenu_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_RaceSequenceStatePauseMenu_C>();
 	}
 };
-static_assert(alignof(UBPC_RaceSequenceStatePauseMenu_C) == 0x000008, "Wrong alignment on UBPC_RaceSequenceStatePauseMenu_C");
-static_assert(sizeof(UBPC_RaceSequenceStatePauseMenu_C) == 0x000138, "Wrong size on UBPC_RaceSequenceStatePauseMenu_C");
-static_assert(offsetof(UBPC_RaceSequenceStatePauseMenu_C, UberGraphFrame) == 0x000118, "Member 'UBPC_RaceSequenceStatePauseMenu_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStatePauseMenu_C, PauseSequence) == 0x000120, "Member 'UBPC_RaceSequenceStatePauseMenu_C::PauseSequence' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStatePauseMenu_C, PauseMenuWdiget) == 0x000128, "Member 'UBPC_RaceSequenceStatePauseMenu_C::PauseMenuWdiget' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStatePauseMenu_C, IsCreated) == 0x000130, "Member 'UBPC_RaceSequenceStatePauseMenu_C::IsCreated' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_RaceSequenceStatePauseMenu_C;
 
 }
 

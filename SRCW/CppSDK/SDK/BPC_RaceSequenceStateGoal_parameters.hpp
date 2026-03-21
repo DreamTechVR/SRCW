@@ -21,9 +21,7 @@ struct BPC_RaceSequenceStateGoal_C_ExecuteUbergraph_BPC_RaceSequenceStateGoal fi
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateGoal_C_ExecuteUbergraph_BPC_RaceSequenceStateGoal) == 0x000004, "Wrong alignment on BPC_RaceSequenceStateGoal_C_ExecuteUbergraph_BPC_RaceSequenceStateGoal");
-static_assert(sizeof(BPC_RaceSequenceStateGoal_C_ExecuteUbergraph_BPC_RaceSequenceStateGoal) == 0x000004, "Wrong size on BPC_RaceSequenceStateGoal_C_ExecuteUbergraph_BPC_RaceSequenceStateGoal");
-static_assert(offsetof(BPC_RaceSequenceStateGoal_C_ExecuteUbergraph_BPC_RaceSequenceStateGoal, EntryPoint) == 0x000000, "Member 'BPC_RaceSequenceStateGoal_C_ExecuteUbergraph_BPC_RaceSequenceStateGoal::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateGoal_C_ExecuteUbergraph_BPC_RaceSequenceStateGoal;
 
 }
 

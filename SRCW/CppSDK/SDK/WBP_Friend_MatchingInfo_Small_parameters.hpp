@@ -29,16 +29,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_MatchingInfo_Small_C_ExecuteUbergraph_WBP_Friend_MatchingInfo_Small) == 0x000008, "Wrong alignment on WBP_Friend_MatchingInfo_Small_C_ExecuteUbergraph_WBP_Friend_MatchingInfo_Small");
-static_assert(sizeof(WBP_Friend_MatchingInfo_Small_C_ExecuteUbergraph_WBP_Friend_MatchingInfo_Small) == 0x000060, "Wrong size on WBP_Friend_MatchingInfo_Small_C_ExecuteUbergraph_WBP_Friend_MatchingInfo_Small");
-static_assert(offsetof(WBP_Friend_MatchingInfo_Small_C_ExecuteUbergraph_WBP_Friend_MatchingInfo_Small, EntryPoint) == 0x000000, "Member 'WBP_Friend_MatchingInfo_Small_C_ExecuteUbergraph_WBP_Friend_MatchingInfo_Small::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_MatchingInfo_Small_C_ExecuteUbergraph_WBP_Friend_MatchingInfo_Small, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_Friend_MatchingInfo_Small_C_ExecuteUbergraph_WBP_Friend_MatchingInfo_Small::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_MatchingInfo_Small_C_ExecuteUbergraph_WBP_Friend_MatchingInfo_Small, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'WBP_Friend_MatchingInfo_Small_C_ExecuteUbergraph_WBP_Friend_MatchingInfo_Small::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_MatchingInfo_Small_C_ExecuteUbergraph_WBP_Friend_MatchingInfo_Small, K2Node_Event_InMessageText) == 0x000028, "Member 'WBP_Friend_MatchingInfo_Small_C_ExecuteUbergraph_WBP_Friend_MatchingInfo_Small::K2Node_Event_InMessageText' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_MatchingInfo_Small_C_ExecuteUbergraph_WBP_Friend_MatchingInfo_Small, CallFunc_GetTerminologyTextByText_ReturnValue) == 0x000038, "Member 'WBP_Friend_MatchingInfo_Small_C_ExecuteUbergraph_WBP_Friend_MatchingInfo_Small::CallFunc_GetTerminologyTextByText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_MatchingInfo_Small_C_ExecuteUbergraph_WBP_Friend_MatchingInfo_Small, CallFunc_PlayAnimation_ReturnValue) == 0x000048, "Member 'WBP_Friend_MatchingInfo_Small_C_ExecuteUbergraph_WBP_Friend_MatchingInfo_Small::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_MatchingInfo_Small_C_ExecuteUbergraph_WBP_Friend_MatchingInfo_Small, CallFunc_PlayAnimation_ReturnValue_1) == 0x000050, "Member 'WBP_Friend_MatchingInfo_Small_C_ExecuteUbergraph_WBP_Friend_MatchingInfo_Small::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_MatchingInfo_Small_C_ExecuteUbergraph_WBP_Friend_MatchingInfo_Small, CallFunc_PlayAnimation_ReturnValue_2) == 0x000058, "Member 'WBP_Friend_MatchingInfo_Small_C_ExecuteUbergraph_WBP_Friend_MatchingInfo_Small::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_MatchingInfo_Small_C_ExecuteUbergraph_WBP_Friend_MatchingInfo_Small;
 
 // Function WBP_Friend_MatchingInfo_Small.WBP_Friend_MatchingInfo_Small_C.SetMessageText
 // 0x0010 (0x0010 - 0x0000)
@@ -47,9 +38,7 @@ struct WBP_Friend_MatchingInfo_Small_C_SetMessageText final
 public:
 	class FText                                   InMessageText;                                     // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_Friend_MatchingInfo_Small_C_SetMessageText) == 0x000008, "Wrong alignment on WBP_Friend_MatchingInfo_Small_C_SetMessageText");
-static_assert(sizeof(WBP_Friend_MatchingInfo_Small_C_SetMessageText) == 0x000010, "Wrong size on WBP_Friend_MatchingInfo_Small_C_SetMessageText");
-static_assert(offsetof(WBP_Friend_MatchingInfo_Small_C_SetMessageText, InMessageText) == 0x000000, "Member 'WBP_Friend_MatchingInfo_Small_C_SetMessageText::InMessageText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_MatchingInfo_Small_C_SetMessageText;
 
 }
 

@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -206,54 +206,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_StatusInfo_CMN_Window_C">();
+		BP_STATIC_CLASS_IMPL("WBP_StatusInfo_CMN_Window_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_StatusInfo_CMN_Window_C")
 	}
 	static class UWBP_StatusInfo_CMN_Window_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_StatusInfo_CMN_Window_C>();
 	}
 };
-static_assert(alignof(UWBP_StatusInfo_CMN_Window_C) == 0x000008, "Wrong alignment on UWBP_StatusInfo_CMN_Window_C");
-static_assert(sizeof(UWBP_StatusInfo_CMN_Window_C) == 0x000570, "Wrong size on UWBP_StatusInfo_CMN_Window_C");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, UberGraphFrame) == 0x000458, "Member 'UWBP_StatusInfo_CMN_Window_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, StatusInfo_Right_In) == 0x000460, "Member 'UWBP_StatusInfo_CMN_Window_C::StatusInfo_Right_In' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, StatusInfo_Left_In) == 0x000468, "Member 'UWBP_StatusInfo_CMN_Window_C::StatusInfo_Left_In' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, StatusInfo_Out) == 0x000470, "Member 'UWBP_StatusInfo_CMN_Window_C::StatusInfo_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, StatusInfo_Loop) == 0x000478, "Member 'UWBP_StatusInfo_CMN_Window_C::StatusInfo_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, StatusInfo_In) == 0x000480, "Member 'UWBP_StatusInfo_CMN_Window_C::StatusInfo_In' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, Arrow_03) == 0x000488, "Member 'UWBP_StatusInfo_CMN_Window_C::Arrow_03' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, Arrow_04) == 0x000490, "Member 'UWBP_StatusInfo_CMN_Window_C::Arrow_04' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, BaseWindow) == 0x000498, "Member 'UWBP_StatusInfo_CMN_Window_C::BaseWindow' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, BG_Black) == 0x0004A0, "Member 'UWBP_StatusInfo_CMN_Window_C::BG_Black' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, DSP_Overlay_Arrow) == 0x0004A8, "Member 'UWBP_StatusInfo_CMN_Window_C::DSP_Overlay_Arrow' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, FooterBase) == 0x0004B0, "Member 'UWBP_StatusInfo_CMN_Window_C::FooterBase' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, HeaderBase) == 0x0004B8, "Member 'UWBP_StatusInfo_CMN_Window_C::HeaderBase' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, LeftArrowMouseInteraction) == 0x0004C0, "Member 'UWBP_StatusInfo_CMN_Window_C::LeftArrowMouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, MouseInteraction_FooterAccept) == 0x0004C8, "Member 'UWBP_StatusInfo_CMN_Window_C::MouseInteraction_FooterAccept' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, MouseInteraction_FooterBack) == 0x0004D0, "Member 'UWBP_StatusInfo_CMN_Window_C::MouseInteraction_FooterBack' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, Overlay_Footer) == 0x0004D8, "Member 'UWBP_StatusInfo_CMN_Window_C::Overlay_Footer' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, Overlay_FooterAccept) == 0x0004E0, "Member 'UWBP_StatusInfo_CMN_Window_C::Overlay_FooterAccept' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, RightArrowMouseInteraction) == 0x0004E8, "Member 'UWBP_StatusInfo_CMN_Window_C::RightArrowMouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, SafeZone) == 0x0004F0, "Member 'UWBP_StatusInfo_CMN_Window_C::SafeZone' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, TXT_Event_Period) == 0x0004F8, "Member 'UWBP_StatusInfo_CMN_Window_C::TXT_Event_Period' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, TXT_Title_Detail) == 0x000500, "Member 'UWBP_StatusInfo_CMN_Window_C::TXT_Title_Detail' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, TXT_Title_LegendRound) == 0x000508, "Member 'UWBP_StatusInfo_CMN_Window_C::TXT_Title_LegendRound' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, WBP_FooterMenu_Sub_CommonBtn_01) == 0x000510, "Member 'UWBP_StatusInfo_CMN_Window_C::WBP_FooterMenu_Sub_CommonBtn_01' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, WBP_FooterMenu_Sub_CommonBtn_02) == 0x000518, "Member 'UWBP_StatusInfo_CMN_Window_C::WBP_FooterMenu_Sub_CommonBtn_02' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, WBP_StatusInfo_Sub_Tab) == 0x000520, "Member 'UWBP_StatusInfo_CMN_Window_C::WBP_StatusInfo_Sub_Tab' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, WidgetSwitcher_InfoWindow) == 0x000528, "Member 'UWBP_StatusInfo_CMN_Window_C::WidgetSwitcher_InfoWindow' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, CloseEventDispatcher) == 0x000530, "Member 'UWBP_StatusInfo_CMN_Window_C::CloseEventDispatcher' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, IsOpenRankingPlayerDetail) == 0x000540, "Member 'UWBP_StatusInfo_CMN_Window_C::IsOpenRankingPlayerDetail' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, IsOpenRuleDetail) == 0x000541, "Member 'UWBP_StatusInfo_CMN_Window_C::IsOpenRuleDetail' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, IsOpenPointRewardDetail) == 0x000542, "Member 'UWBP_StatusInfo_CMN_Window_C::IsOpenPointRewardDetail' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, SpecialRuleCounter) == 0x000544, "Member 'UWBP_StatusInfo_CMN_Window_C::SpecialRuleCounter' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, MouseInputRewardTargetIndex) == 0x000548, "Member 'UWBP_StatusInfo_CMN_Window_C::MouseInputRewardTargetIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, IsMouseInputRewardMove) == 0x00054C, "Member 'UWBP_StatusInfo_CMN_Window_C::IsMouseInputRewardMove' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, UpKeyTimerHandle) == 0x000550, "Member 'UWBP_StatusInfo_CMN_Window_C::UpKeyTimerHandle' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, DownKeyTimerHandle) == 0x000558, "Member 'UWBP_StatusInfo_CMN_Window_C::DownKeyTimerHandle' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, WhenFocusingLastOrFirstLineKeyTime) == 0x000560, "Member 'UWBP_StatusInfo_CMN_Window_C::WhenFocusingLastOrFirstLineKeyTime' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, NormalKeyTime) == 0x000564, "Member 'UWBP_StatusInfo_CMN_Window_C::NormalKeyTime' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, bActionExecuteReady) == 0x000568, "Member 'UWBP_StatusInfo_CMN_Window_C::bActionExecuteReady' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_StatusInfo_CMN_Window_C;
 
 }
 

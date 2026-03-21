@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -61,35 +61,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_NiceNotice_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_NiceNotice_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_NiceNotice_C")
 	}
 	static class UWBP_CMN_NiceNotice_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_NiceNotice_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_NiceNotice_C) == 0x000008, "Wrong alignment on UWBP_CMN_NiceNotice_C");
-static_assert(sizeof(UWBP_CMN_NiceNotice_C) == 0x000380, "Wrong size on UWBP_CMN_NiceNotice_C");
-static_assert(offsetof(UWBP_CMN_NiceNotice_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_CMN_NiceNotice_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_NiceNotice_C, Nice_Notice_Hidden) == 0x0002E8, "Member 'UWBP_CMN_NiceNotice_C::Nice_Notice_Hidden' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_NiceNotice_C, Nice_Notice_Out) == 0x0002F0, "Member 'UWBP_CMN_NiceNotice_C::Nice_Notice_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_NiceNotice_C, Nice_Notice_Loop) == 0x0002F8, "Member 'UWBP_CMN_NiceNotice_C::Nice_Notice_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_NiceNotice_C, Nice_Notice_In) == 0x000300, "Member 'UWBP_CMN_NiceNotice_C::Nice_Notice_In' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_NiceNotice_C, Challenge_NoticeBase) == 0x000308, "Member 'UWBP_CMN_NiceNotice_C::Challenge_NoticeBase' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_NiceNotice_C, Nice_NoticeBase) == 0x000310, "Member 'UWBP_CMN_NiceNotice_C::Nice_NoticeBase' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_NiceNotice_C, Overlay_0) == 0x000318, "Member 'UWBP_CMN_NiceNotice_C::Overlay_0' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_NiceNotice_C, Overlay_Challenge) == 0x000320, "Member 'UWBP_CMN_NiceNotice_C::Overlay_Challenge' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_NiceNotice_C, Overlay_Nice) == 0x000328, "Member 'UWBP_CMN_NiceNotice_C::Overlay_Nice' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_NiceNotice_C, PAT_ChallengeIcon) == 0x000330, "Member 'UWBP_CMN_NiceNotice_C::PAT_ChallengeIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_NiceNotice_C, PAT_PlatformIcon) == 0x000338, "Member 'UWBP_CMN_NiceNotice_C::PAT_PlatformIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_NiceNotice_C, TXT_ChallengeName) == 0x000340, "Member 'UWBP_CMN_NiceNotice_C::TXT_ChallengeName' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_NiceNotice_C, TXT_PlayerName) == 0x000348, "Member 'UWBP_CMN_NiceNotice_C::TXT_PlayerName' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_NiceNotice_C, WBP_FontScroll_ChallengeName) == 0x000350, "Member 'UWBP_CMN_NiceNotice_C::WBP_FontScroll_ChallengeName' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_NiceNotice_C, WS_Notice) == 0x000358, "Member 'UWBP_CMN_NiceNotice_C::WS_Notice' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_NiceNotice_C, OnOutAnimEnd) == 0x000360, "Member 'UWBP_CMN_NiceNotice_C::OnOutAnimEnd' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_NiceNotice_C, NiceNoticeLiteral) == 0x000370, "Member 'UWBP_CMN_NiceNotice_C::NiceNoticeLiteral' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_NiceNotice_C, bIsChallengeClear) == 0x000374, "Member 'UWBP_CMN_NiceNotice_C::bIsChallengeClear' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_NiceNotice_C, OwnerWarpBox) == 0x000378, "Member 'UWBP_CMN_NiceNotice_C::OwnerWarpBox' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_NiceNotice_C;
 
 }
 

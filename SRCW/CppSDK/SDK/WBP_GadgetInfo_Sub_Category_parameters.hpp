@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UMG_structs.hpp"
-#include "UNION_structs.hpp"
 #include "Engine_structs.hpp"
+#include "UNION_structs.hpp"
 
 
 namespace SDK::Params
@@ -48,28 +48,7 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<class UWBP_GadgetIcon_Cost01_Icon_C*>  K2Node_MakeArray_Array_3;                          // 0x00B8(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category) == 0x000008, "Wrong alignment on WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category");
-static_assert(sizeof(WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category) == 0x0000C8, "Wrong size on WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category, EntryPoint) == 0x000000, "Member 'WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category, K2Node_Event_IsDesignTime) == 0x000004, "Member 'WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category, Temp_text_Variable) == 0x000008, "Member 'WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category, K2Node_MakeArray_Array) == 0x000018, "Member 'WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category, CallFunc_Format_ReturnValue) == 0x000028, "Member 'WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category, K2Node_MakeArray_Array_1) == 0x000038, "Member 'WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category, Temp_byte_Variable) == 0x000048, "Member 'WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category, CallFunc_Format_ReturnValue_1) == 0x000050, "Member 'WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category, Temp_real_Variable) == 0x000060, "Member 'WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category::Temp_real_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category, Temp_real_Variable_1) == 0x000064, "Member 'WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category::Temp_real_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category, Temp_real_Variable_2) == 0x000068, "Member 'WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category::Temp_real_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category, Temp_real_Variable_3) == 0x00006C, "Member 'WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category::Temp_real_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category, Temp_byte_Variable_1) == 0x000070, "Member 'WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category, K2Node_CustomEvent_EventInfomation) == 0x000071, "Member 'WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category::K2Node_CustomEvent_EventInfomation' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category, K2Node_MakeArray_Array_2) == 0x000078, "Member 'WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category::K2Node_MakeArray_Array_2' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category, CallFunc_Format_ReturnValue_2) == 0x000088, "Member 'WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category::CallFunc_Format_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category, K2Node_Select_Default) == 0x000098, "Member 'WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category, K2Node_Select_Default_1) == 0x0000A8, "Member 'WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category, CallFunc_GetDynamicMaterial_ReturnValue) == 0x0000B0, "Member 'WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category, K2Node_MakeArray_Array_3) == 0x0000B8, "Member 'WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category::K2Node_MakeArray_Array_3' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetInfo_Sub_Category_C_ExecuteUbergraph_WBP_GadgetInfo_Sub_Category;
 
 // Function WBP_GadgetInfo_Sub_Category.WBP_GadgetInfo_Sub_Category_C.IsListOver
 // 0x0001 (0x0001 - 0x0000)
@@ -78,9 +57,7 @@ struct WBP_GadgetInfo_Sub_Category_C_IsListOver final
 public:
 	bool                                          IsOver;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetInfo_Sub_Category_C_IsListOver) == 0x000001, "Wrong alignment on WBP_GadgetInfo_Sub_Category_C_IsListOver");
-static_assert(sizeof(WBP_GadgetInfo_Sub_Category_C_IsListOver) == 0x000001, "Wrong size on WBP_GadgetInfo_Sub_Category_C_IsListOver");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_IsListOver, IsOver) == 0x000000, "Member 'WBP_GadgetInfo_Sub_Category_C_IsListOver::IsOver' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetInfo_Sub_Category_C_IsListOver;
 
 // Function WBP_GadgetInfo_Sub_Category.WBP_GadgetInfo_Sub_Category_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -89,9 +66,7 @@ struct WBP_GadgetInfo_Sub_Category_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetInfo_Sub_Category_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_GadgetInfo_Sub_Category_C_PreConstruct");
-static_assert(sizeof(WBP_GadgetInfo_Sub_Category_C_PreConstruct) == 0x000001, "Wrong size on WBP_GadgetInfo_Sub_Category_C_PreConstruct");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_GadgetInfo_Sub_Category_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetInfo_Sub_Category_C_PreConstruct;
 
 // Function WBP_GadgetInfo_Sub_Category.WBP_GadgetInfo_Sub_Category_C.SetIconList
 // 0x0060 (0x0060 - 0x0000)
@@ -121,27 +96,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetInfo_Sub_Category_C_SetIconList) == 0x000008, "Wrong alignment on WBP_GadgetInfo_Sub_Category_C_SetIconList");
-static_assert(sizeof(WBP_GadgetInfo_Sub_Category_C_SetIconList) == 0x000060, "Wrong size on WBP_GadgetInfo_Sub_Category_C_SetIconList");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_SetIconList, GadgetIds) == 0x000000, "Member 'WBP_GadgetInfo_Sub_Category_C_SetIconList::GadgetIds' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_SetIconList, L_GadgetIds) == 0x000010, "Member 'WBP_GadgetInfo_Sub_Category_C_SetIconList::L_GadgetIds' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_SetIconList, Temp_int_Array_Index_Variable) == 0x000020, "Member 'WBP_GadgetInfo_Sub_Category_C_SetIconList::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_SetIconList, Temp_byte_Variable) == 0x000024, "Member 'WBP_GadgetInfo_Sub_Category_C_SetIconList::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_SetIconList, Temp_byte_Variable_1) == 0x000025, "Member 'WBP_GadgetInfo_Sub_Category_C_SetIconList::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_SetIconList, CallFunc_Array_Get_Item) == 0x000028, "Member 'WBP_GadgetInfo_Sub_Category_C_SetIconList::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_SetIconList, Temp_bool_Variable) == 0x00002C, "Member 'WBP_GadgetInfo_Sub_Category_C_SetIconList::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_SetIconList, CallFunc_Conv_IntToByte_ReturnValue) == 0x00002D, "Member 'WBP_GadgetInfo_Sub_Category_C_SetIconList::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_SetIconList, CallFunc_GetValidValue_ReturnValue) == 0x00002E, "Member 'WBP_GadgetInfo_Sub_Category_C_SetIconList::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_SetIconList, K2Node_Select_Default) == 0x00002F, "Member 'WBP_GadgetInfo_Sub_Category_C_SetIconList::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_SetIconList, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000030, "Member 'WBP_GadgetInfo_Sub_Category_C_SetIconList::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_SetIconList, CallFunc_Array_Get_Item_1) == 0x000038, "Member 'WBP_GadgetInfo_Sub_Category_C_SetIconList::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_SetIconList, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'WBP_GadgetInfo_Sub_Category_C_SetIconList::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_SetIconList, Temp_int_Loop_Counter_Variable) == 0x000044, "Member 'WBP_GadgetInfo_Sub_Category_C_SetIconList::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_SetIconList, CallFunc_Array_Length_ReturnValue_1) == 0x000048, "Member 'WBP_GadgetInfo_Sub_Category_C_SetIconList::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_SetIconList, CallFunc_Less_IntInt_ReturnValue) == 0x00004C, "Member 'WBP_GadgetInfo_Sub_Category_C_SetIconList::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_SetIconList, CallFunc_Add_IntInt_ReturnValue) == 0x000050, "Member 'WBP_GadgetInfo_Sub_Category_C_SetIconList::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_SetIconList, CallFunc_Array_Length_ReturnValue_2) == 0x000054, "Member 'WBP_GadgetInfo_Sub_Category_C_SetIconList::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_SetIconList, CallFunc_Greater_IntInt_ReturnValue) == 0x000058, "Member 'WBP_GadgetInfo_Sub_Category_C_SetIconList::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetInfo_Sub_Category_C_SetIconList;
 
 // Function WBP_GadgetInfo_Sub_Category.WBP_GadgetInfo_Sub_Category_C.SetModeStyle
 // 0x0001 (0x0001 - 0x0000)
@@ -150,9 +105,7 @@ struct WBP_GadgetInfo_Sub_Category_C_SetModeStyle final
 public:
 	EEventInfomationType                          EventInfomation;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetInfo_Sub_Category_C_SetModeStyle) == 0x000001, "Wrong alignment on WBP_GadgetInfo_Sub_Category_C_SetModeStyle");
-static_assert(sizeof(WBP_GadgetInfo_Sub_Category_C_SetModeStyle) == 0x000001, "Wrong size on WBP_GadgetInfo_Sub_Category_C_SetModeStyle");
-static_assert(offsetof(WBP_GadgetInfo_Sub_Category_C_SetModeStyle, EventInfomation) == 0x000000, "Member 'WBP_GadgetInfo_Sub_Category_C_SetModeStyle::EventInfomation' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetInfo_Sub_Category_C_SetModeStyle;
 
 }
 

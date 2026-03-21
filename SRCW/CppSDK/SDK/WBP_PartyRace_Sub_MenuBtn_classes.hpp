@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -69,27 +69,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_PartyRace_Sub_MenuBtn_C">();
+		BP_STATIC_CLASS_IMPL("WBP_PartyRace_Sub_MenuBtn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_PartyRace_Sub_MenuBtn_C")
 	}
 	static class UWBP_PartyRace_Sub_MenuBtn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_PartyRace_Sub_MenuBtn_C>();
 	}
 };
-static_assert(alignof(UWBP_PartyRace_Sub_MenuBtn_C) == 0x000008, "Wrong alignment on UWBP_PartyRace_Sub_MenuBtn_C");
-static_assert(sizeof(UWBP_PartyRace_Sub_MenuBtn_C) == 0x000548, "Wrong size on UWBP_PartyRace_Sub_MenuBtn_C");
-static_assert(offsetof(UWBP_PartyRace_Sub_MenuBtn_C, UberGraphFrame) == 0x0004D8, "Member 'UWBP_PartyRace_Sub_MenuBtn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_MenuBtn_C, Btn_Arrow_Left) == 0x0004E0, "Member 'UWBP_PartyRace_Sub_MenuBtn_C::Btn_Arrow_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_MenuBtn_C, Btn_Arrow_Right) == 0x0004E8, "Member 'UWBP_PartyRace_Sub_MenuBtn_C::Btn_Arrow_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_MenuBtn_C, Image_GrayTop) == 0x0004F0, "Member 'UWBP_PartyRace_Sub_MenuBtn_C::Image_GrayTop' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_MenuBtn_C, MouseFocusButton) == 0x0004F8, "Member 'UWBP_PartyRace_Sub_MenuBtn_C::MouseFocusButton' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_MenuBtn_C, Overlay_1) == 0x000500, "Member 'UWBP_PartyRace_Sub_MenuBtn_C::Overlay_1' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_MenuBtn_C, PartyRace_Cursor) == 0x000508, "Member 'UWBP_PartyRace_Sub_MenuBtn_C::PartyRace_Cursor' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_MenuBtn_C, PAT_BtnPict) == 0x000510, "Member 'UWBP_PartyRace_Sub_MenuBtn_C::PAT_BtnPict' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_MenuBtn_C, AnimationTime) == 0x000518, "Member 'UWBP_PartyRace_Sub_MenuBtn_C::AnimationTime' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_MenuBtn_C, bDecided) == 0x000520, "Member 'UWBP_PartyRace_Sub_MenuBtn_C::bDecided' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_MenuBtn_C, OnPresetInfoButtonPressed) == 0x000528, "Member 'UWBP_PartyRace_Sub_MenuBtn_C::OnPresetInfoButtonPressed' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_MenuBtn_C, OnStartCustomButtonPressed) == 0x000538, "Member 'UWBP_PartyRace_Sub_MenuBtn_C::OnStartCustomButtonPressed' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_PartyRace_Sub_MenuBtn_C;
 
 }
 

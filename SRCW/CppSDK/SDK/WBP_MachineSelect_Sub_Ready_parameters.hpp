@@ -24,9 +24,7 @@ struct WBP_MachineSelect_Sub_Ready_C_ClearText final
 public:
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0000(0x0010)()
 };
-static_assert(alignof(WBP_MachineSelect_Sub_Ready_C_ClearText) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_Ready_C_ClearText");
-static_assert(sizeof(WBP_MachineSelect_Sub_Ready_C_ClearText) == 0x000010, "Wrong size on WBP_MachineSelect_Sub_Ready_C_ClearText");
-static_assert(offsetof(WBP_MachineSelect_Sub_Ready_C_ClearText, CallFunc_MakeLiteralText_ReturnValue) == 0x000000, "Member 'WBP_MachineSelect_Sub_Ready_C_ClearText::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_Ready_C_ClearText;
 
 // Function WBP_MachineSelect_Sub_Ready.WBP_MachineSelect_Sub_Ready_C.ExecuteUbergraph_WBP_MachineSelect_Sub_Ready
 // 0x0078 (0x0078 - 0x0000)
@@ -54,24 +52,7 @@ public:
 	bool                                          CallFunc_K2_IsTimerActiveHandle_ReturnValue;       // 0x0073(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready");
-static_assert(sizeof(WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready) == 0x000078, "Wrong size on WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready");
-static_assert(offsetof(WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready, EntryPoint) == 0x000000, "Member 'WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready, Temp_int_Variable) == 0x000004, "Member 'WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000008, "Member 'WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready, K2Node_CreateDelegate_OutputDelegate) == 0x00000C, "Member 'WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000020, "Member 'WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready, CallFunc_Conv_TextToString_ReturnValue) == 0x000028, "Member 'WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready, CallFunc_Add_IntInt_ReturnValue) == 0x000038, "Member 'WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready, CallFunc_Left_ReturnValue) == 0x000040, "Member 'WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready::CallFunc_Left_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready, CallFunc_Conv_StringToText_ReturnValue) == 0x000050, "Member 'WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready, CallFunc_Len_ReturnValue) == 0x000060, "Member 'WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready::CallFunc_Len_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready, K2Node_Event_Animation) == 0x000068, "Member 'WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready::K2Node_Event_Animation' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000070, "Member 'WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000071, "Member 'WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready, CallFunc_EqualEqual_ObjectObject_ReturnValue_1) == 0x000072, "Member 'WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready::CallFunc_EqualEqual_ObjectObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready, CallFunc_K2_IsTimerActiveHandle_ReturnValue) == 0x000073, "Member 'WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready::CallFunc_K2_IsTimerActiveHandle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000074, "Member 'WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_Ready_C_ExecuteUbergraph_WBP_MachineSelect_Sub_Ready;
 
 // Function WBP_MachineSelect_Sub_Ready.WBP_MachineSelect_Sub_Ready_C.FireSceneAnim
 // 0x0018 (0x0018 - 0x0000)
@@ -86,15 +67,7 @@ public:
 	class UWidgetAnimation*                       K2Node_Select_Default;                             // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_Ready_C_FireSceneAnim) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_Ready_C_FireSceneAnim");
-static_assert(sizeof(WBP_MachineSelect_Sub_Ready_C_FireSceneAnim) == 0x000018, "Wrong size on WBP_MachineSelect_Sub_Ready_C_FireSceneAnim");
-static_assert(offsetof(WBP_MachineSelect_Sub_Ready_C_FireSceneAnim, AnimType) == 0x000000, "Member 'WBP_MachineSelect_Sub_Ready_C_FireSceneAnim::AnimType' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_Ready_C_FireSceneAnim, Temp_byte_Variable) == 0x000001, "Member 'WBP_MachineSelect_Sub_Ready_C_FireSceneAnim::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_Ready_C_FireSceneAnim, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000002, "Member 'WBP_MachineSelect_Sub_Ready_C_FireSceneAnim::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_Ready_C_FireSceneAnim, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000003, "Member 'WBP_MachineSelect_Sub_Ready_C_FireSceneAnim::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_Ready_C_FireSceneAnim, CallFunc_SelectInt_ReturnValue) == 0x000004, "Member 'WBP_MachineSelect_Sub_Ready_C_FireSceneAnim::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_Ready_C_FireSceneAnim, K2Node_Select_Default) == 0x000008, "Member 'WBP_MachineSelect_Sub_Ready_C_FireSceneAnim::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_Ready_C_FireSceneAnim, CallFunc_PlayAnimation_ReturnValue) == 0x000010, "Member 'WBP_MachineSelect_Sub_Ready_C_FireSceneAnim::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_Ready_C_FireSceneAnim;
 
 // Function WBP_MachineSelect_Sub_Ready.WBP_MachineSelect_Sub_Ready_C.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -103,9 +76,7 @@ struct WBP_MachineSelect_Sub_Ready_C_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_Ready_C_OnAnimationFinished) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_Ready_C_OnAnimationFinished");
-static_assert(sizeof(WBP_MachineSelect_Sub_Ready_C_OnAnimationFinished) == 0x000008, "Wrong size on WBP_MachineSelect_Sub_Ready_C_OnAnimationFinished");
-static_assert(offsetof(WBP_MachineSelect_Sub_Ready_C_OnAnimationFinished, Animation) == 0x000000, "Member 'WBP_MachineSelect_Sub_Ready_C_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_Ready_C_OnAnimationFinished;
 
 // Function WBP_MachineSelect_Sub_Ready.WBP_MachineSelect_Sub_Ready_C.SetAnimationText
 // 0x0020 (0x0020 - 0x0000)
@@ -115,10 +86,7 @@ public:
 	class FText                                   ReadyText_0;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_Ready_C_SetAnimationText) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_Ready_C_SetAnimationText");
-static_assert(sizeof(WBP_MachineSelect_Sub_Ready_C_SetAnimationText) == 0x000020, "Wrong size on WBP_MachineSelect_Sub_Ready_C_SetAnimationText");
-static_assert(offsetof(WBP_MachineSelect_Sub_Ready_C_SetAnimationText, ReadyText_0) == 0x000000, "Member 'WBP_MachineSelect_Sub_Ready_C_SetAnimationText::ReadyText_0' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_Ready_C_SetAnimationText, CallFunc_Conv_TextToString_ReturnValue) == 0x000010, "Member 'WBP_MachineSelect_Sub_Ready_C_SetAnimationText::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_Ready_C_SetAnimationText;
 
 // Function WBP_MachineSelect_Sub_Ready.WBP_MachineSelect_Sub_Ready_C.TextReady
 // 0x0020 (0x0020 - 0x0000)
@@ -128,10 +96,7 @@ public:
 	class FString                                 Text;                                              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0010(0x0010)()
 };
-static_assert(alignof(WBP_MachineSelect_Sub_Ready_C_TextReady) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_Ready_C_TextReady");
-static_assert(sizeof(WBP_MachineSelect_Sub_Ready_C_TextReady) == 0x000020, "Wrong size on WBP_MachineSelect_Sub_Ready_C_TextReady");
-static_assert(offsetof(WBP_MachineSelect_Sub_Ready_C_TextReady, Text) == 0x000000, "Member 'WBP_MachineSelect_Sub_Ready_C_TextReady::Text' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_Ready_C_TextReady, CallFunc_Conv_StringToText_ReturnValue) == 0x000010, "Member 'WBP_MachineSelect_Sub_Ready_C_TextReady::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_Ready_C_TextReady;
 
 }
 

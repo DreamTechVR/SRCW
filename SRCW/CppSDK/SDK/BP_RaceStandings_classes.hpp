@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -45,19 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_RaceStandings_C">();
+		BP_STATIC_CLASS_IMPL("BP_RaceStandings_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_RaceStandings_C")
 	}
 	static class ABP_RaceStandings_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_RaceStandings_C>();
 	}
 };
-static_assert(alignof(ABP_RaceStandings_C) == 0x000008, "Wrong alignment on ABP_RaceStandings_C");
-static_assert(sizeof(ABP_RaceStandings_C) == 0x0002C0, "Wrong size on ABP_RaceStandings_C");
-static_assert(offsetof(ABP_RaceStandings_C, UberGraphFrame) == 0x000298, "Member 'ABP_RaceStandings_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_RaceStandings_C, DefaultSceneRoot) == 0x0002A0, "Member 'ABP_RaceStandings_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABP_RaceStandings_C, Race_Player_Controller) == 0x0002A8, "Member 'ABP_RaceStandings_C::Race_Player_Controller' has a wrong offset!");
-static_assert(offsetof(ABP_RaceStandings_C, OnEndOfDisplay) == 0x0002B0, "Member 'ABP_RaceStandings_C::OnEndOfDisplay' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_RaceStandings_C;
 
 }
 

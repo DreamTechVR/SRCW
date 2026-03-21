@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
+#include "UnionRun_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "UnionRun_structs.hpp"
+#include "Engine_structs.hpp"
+#include "UnionSystem_structs.hpp"
 
 
 namespace SDK
@@ -69,29 +69,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_DriverPawn_C">();
+		BP_STATIC_CLASS_IMPL("BP_DriverPawn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_DriverPawn_C")
 	}
 	static class ABP_DriverPawn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_DriverPawn_C>();
 	}
 };
-static_assert(alignof(ABP_DriverPawn_C) == 0x000008, "Wrong alignment on ABP_DriverPawn_C");
-static_assert(sizeof(ABP_DriverPawn_C) == 0x000968, "Wrong size on ABP_DriverPawn_C");
-static_assert(offsetof(ABP_DriverPawn_C, UberGraphFrame) == 0x000550, "Member 'ABP_DriverPawn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_DriverPawn_C, GFur) == 0x000558, "Member 'ABP_DriverPawn_C::GFur' has a wrong offset!");
-static_assert(offsetof(ABP_DriverPawn_C, SteeringWheel) == 0x000560, "Member 'ABP_DriverPawn_C::SteeringWheel' has a wrong offset!");
-static_assert(offsetof(ABP_DriverPawn_C, SkeletalMesh) == 0x000568, "Member 'ABP_DriverPawn_C::SkeletalMesh' has a wrong offset!");
-static_assert(offsetof(ABP_DriverPawn_C, DefaultSceneRoot) == 0x000570, "Member 'ABP_DriverPawn_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABP_DriverPawn_C, DriverId) == 0x000578, "Member 'ABP_DriverPawn_C::DriverId' has a wrong offset!");
-static_assert(offsetof(ABP_DriverPawn_C, OnActivateItem) == 0x000580, "Member 'ABP_DriverPawn_C::OnActivateItem' has a wrong offset!");
-static_assert(offsetof(ABP_DriverPawn_C, DriverAnimInstance) == 0x000590, "Member 'ABP_DriverPawn_C::DriverAnimInstance' has a wrong offset!");
-static_assert(offsetof(ABP_DriverPawn_C, HoldItemParam) == 0x000598, "Member 'ABP_DriverPawn_C::HoldItemParam' has a wrong offset!");
-static_assert(offsetof(ABP_DriverPawn_C, OnBindItem) == 0x0005A8, "Member 'ABP_DriverPawn_C::OnBindItem' has a wrong offset!");
-static_assert(offsetof(ABP_DriverPawn_C, bHoverboard) == 0x0005B8, "Member 'ABP_DriverPawn_C::bHoverboard' has a wrong offset!");
-static_assert(offsetof(ABP_DriverPawn_C, DriverData) == 0x0005C0, "Member 'ABP_DriverPawn_C::DriverData' has a wrong offset!");
-static_assert(offsetof(ABP_DriverPawn_C, bUseRivalSkin) == 0x000950, "Member 'ABP_DriverPawn_C::bUseRivalSkin' has a wrong offset!");
-static_assert(offsetof(ABP_DriverPawn_C, RefSteeringWheelMesh) == 0x000958, "Member 'ABP_DriverPawn_C::RefSteeringWheelMesh' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_DriverPawn_C;
 
 }
 

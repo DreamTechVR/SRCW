@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "UMG_structs.hpp"
 #include "UnionUI_structs.hpp"
 #include "UnionUI_classes.hpp"
-#include "UMG_structs.hpp"
 
 
 namespace SDK
@@ -68,34 +68,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_MainMenu_Btn_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_MainMenu_Btn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_MainMenu_Btn_C")
 	}
 	static class UWBP_CMN_MainMenu_Btn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_MainMenu_Btn_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_MainMenu_Btn_C) == 0x000008, "Wrong alignment on UWBP_CMN_MainMenu_Btn_C");
-static_assert(sizeof(UWBP_CMN_MainMenu_Btn_C) == 0x000510, "Wrong size on UWBP_CMN_MainMenu_Btn_C");
-static_assert(offsetof(UWBP_CMN_MainMenu_Btn_C, UberGraphFrame) == 0x000480, "Member 'UWBP_CMN_MainMenu_Btn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_MainMenu_Btn_C, Btn_Select_CancelBack) == 0x000488, "Member 'UWBP_CMN_MainMenu_Btn_C::Btn_Select_CancelBack' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_MainMenu_Btn_C, Btn_Active_Out) == 0x000490, "Member 'UWBP_CMN_MainMenu_Btn_C::Btn_Active_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_MainMenu_Btn_C, Btn_Select_Out) == 0x000498, "Member 'UWBP_CMN_MainMenu_Btn_C::Btn_Select_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_MainMenu_Btn_C, Btn_Select_to_Active) == 0x0004A0, "Member 'UWBP_CMN_MainMenu_Btn_C::Btn_Select_to_Active' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_MainMenu_Btn_C, Btn_Active_to_Select) == 0x0004A8, "Member 'UWBP_CMN_MainMenu_Btn_C::Btn_Active_to_Select' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_MainMenu_Btn_C, Btn_Select_Loop) == 0x0004B0, "Member 'UWBP_CMN_MainMenu_Btn_C::Btn_Select_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_MainMenu_Btn_C, Btn_Active_Loop) == 0x0004B8, "Member 'UWBP_CMN_MainMenu_Btn_C::Btn_Active_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_MainMenu_Btn_C, BtnBase) == 0x0004C0, "Member 'UWBP_CMN_MainMenu_Btn_C::BtnBase' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_MainMenu_Btn_C, DSP_NonActiveCover) == 0x0004C8, "Member 'UWBP_CMN_MainMenu_Btn_C::DSP_NonActiveCover' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_MainMenu_Btn_C, MainMenu_Cursor) == 0x0004D0, "Member 'UWBP_CMN_MainMenu_Btn_C::MainMenu_Cursor' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_MainMenu_Btn_C, MouseInteraction) == 0x0004D8, "Member 'UWBP_CMN_MainMenu_Btn_C::MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_MainMenu_Btn_C, PAT_BtnPict) == 0x0004E0, "Member 'UWBP_CMN_MainMenu_Btn_C::PAT_BtnPict' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_MainMenu_Btn_C, RaceFlag) == 0x0004E8, "Member 'UWBP_CMN_MainMenu_Btn_C::RaceFlag' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_MainMenu_Btn_C, TXT_Btn) == 0x0004F0, "Member 'UWBP_CMN_MainMenu_Btn_C::TXT_Btn' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_MainMenu_Btn_C, OnDecisionAnimFinished) == 0x0004F8, "Member 'UWBP_CMN_MainMenu_Btn_C::OnDecisionAnimFinished' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_MainMenu_Btn_C, bIsPlayDecideSE) == 0x000508, "Member 'UWBP_CMN_MainMenu_Btn_C::bIsPlayDecideSE' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_MainMenu_Btn_C, bActionExecuteOnReleaseMode) == 0x000509, "Member 'UWBP_CMN_MainMenu_Btn_C::bActionExecuteOnReleaseMode' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_MainMenu_Btn_C, bActionExecuteReady) == 0x00050A, "Member 'UWBP_CMN_MainMenu_Btn_C::bActionExecuteReady' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_MainMenu_Btn_C;
 
 }
 

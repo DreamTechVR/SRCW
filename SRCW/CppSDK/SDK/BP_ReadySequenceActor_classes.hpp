@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "UNION_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UnionLib_structs.hpp"
-#include "UNION_classes.hpp"
 #include "UMG_structs.hpp"
+#include "UnionLib_structs.hpp"
 
 
 namespace SDK
@@ -116,38 +116,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ReadySequenceActor_C">();
+		BP_STATIC_CLASS_IMPL("BP_ReadySequenceActor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ReadySequenceActor_C")
 	}
 	static class ABP_ReadySequenceActor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ReadySequenceActor_C>();
 	}
 };
-static_assert(alignof(ABP_ReadySequenceActor_C) == 0x000008, "Wrong alignment on ABP_ReadySequenceActor_C");
-static_assert(sizeof(ABP_ReadySequenceActor_C) == 0x0003D8, "Wrong size on ABP_ReadySequenceActor_C");
-static_assert(offsetof(ABP_ReadySequenceActor_C, UberGraphFrame) == 0x000290, "Member 'ABP_ReadySequenceActor_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_ReadySequenceActor_C, DefaultSceneRoot) == 0x000298, "Member 'ABP_ReadySequenceActor_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABP_ReadySequenceActor_C, ReadyWindow) == 0x0002A0, "Member 'ABP_ReadySequenceActor_C::ReadyWindow' has a wrong offset!");
-static_assert(offsetof(ABP_ReadySequenceActor_C, MenuInputRecieveObject) == 0x0002A8, "Member 'ABP_ReadySequenceActor_C::MenuInputRecieveObject' has a wrong offset!");
-static_assert(offsetof(ABP_ReadySequenceActor_C, Player_Num) == 0x0002B0, "Member 'ABP_ReadySequenceActor_C::Player_Num' has a wrong offset!");
-static_assert(offsetof(ABP_ReadySequenceActor_C, bISReadyFlags) == 0x0002B8, "Member 'ABP_ReadySequenceActor_C::bISReadyFlags' has a wrong offset!");
-static_assert(offsetof(ABP_ReadySequenceActor_C, Gadget_Plate_Windows) == 0x0002C8, "Member 'ABP_ReadySequenceActor_C::Gadget_Plate_Windows' has a wrong offset!");
-static_assert(offsetof(ABP_ReadySequenceActor_C, Ready_Options) == 0x0002D8, "Member 'ABP_ReadySequenceActor_C::Ready_Options' has a wrong offset!");
-static_assert(offsetof(ABP_ReadySequenceActor_C, ReadyWindows) == 0x0002E8, "Member 'ABP_ReadySequenceActor_C::ReadyWindows' has a wrong offset!");
-static_assert(offsetof(ABP_ReadySequenceActor_C, ReadyEndEvent) == 0x0002F8, "Member 'ABP_ReadySequenceActor_C::ReadyEndEvent' has a wrong offset!");
-static_assert(offsetof(ABP_ReadySequenceActor_C, CancelInputEvent) == 0x000308, "Member 'ABP_ReadySequenceActor_C::CancelInputEvent' has a wrong offset!");
-static_assert(offsetof(ABP_ReadySequenceActor_C, bIsGadgetSelected) == 0x000318, "Member 'ABP_ReadySequenceActor_C::bIsGadgetSelected' has a wrong offset!");
-static_assert(offsetof(ABP_ReadySequenceActor_C, PopupWindow) == 0x000320, "Member 'ABP_ReadySequenceActor_C::PopupWindow' has a wrong offset!");
-static_assert(offsetof(ABP_ReadySequenceActor_C, Footer) == 0x000328, "Member 'ABP_ReadySequenceActor_C::Footer' has a wrong offset!");
-static_assert(offsetof(ABP_ReadySequenceActor_C, Chara_Machine_Param_Windows) == 0x000330, "Member 'ABP_ReadySequenceActor_C::Chara_Machine_Param_Windows' has a wrong offset!");
-static_assert(offsetof(ABP_ReadySequenceActor_C, GadgetParamVisibleMap) == 0x000340, "Member 'ABP_ReadySequenceActor_C::GadgetParamVisibleMap' has a wrong offset!");
-static_assert(offsetof(ABP_ReadySequenceActor_C, bIsInGame) == 0x000390, "Member 'ABP_ReadySequenceActor_C::bIsInGame' has a wrong offset!");
-static_assert(offsetof(ABP_ReadySequenceActor_C, bSkipGoFlag) == 0x000391, "Member 'ABP_ReadySequenceActor_C::bSkipGoFlag' has a wrong offset!");
-static_assert(offsetof(ABP_ReadySequenceActor_C, BackupPresetSettings) == 0x000398, "Member 'ABP_ReadySequenceActor_C::BackupPresetSettings' has a wrong offset!");
-static_assert(offsetof(ABP_ReadySequenceActor_C, BackupAssistData) == 0x0003A8, "Member 'ABP_ReadySequenceActor_C::BackupAssistData' has a wrong offset!");
-static_assert(offsetof(ABP_ReadySequenceActor_C, WaitFlag) == 0x0003B8, "Member 'ABP_ReadySequenceActor_C::WaitFlag' has a wrong offset!");
-static_assert(offsetof(ABP_ReadySequenceActor_C, ReadyWindowArr) == 0x0003C0, "Member 'ABP_ReadySequenceActor_C::ReadyWindowArr' has a wrong offset!");
-static_assert(offsetof(ABP_ReadySequenceActor_C, InvalidChangeSaveFlag) == 0x0003D0, "Member 'ABP_ReadySequenceActor_C::InvalidChangeSaveFlag' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_ReadySequenceActor_C;
 
 }
 

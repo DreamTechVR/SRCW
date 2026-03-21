@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
-#include "UnionLib_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
+#include "UnionSystem_structs.hpp"
+#include "UnionUI_structs.hpp"
 #include "UMG_structs.hpp"
+#include "UnionLib_structs.hpp"
 
 
 namespace SDK
@@ -129,45 +129,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_MenuStatePartyRaceSelectPreset_C">();
+		BP_STATIC_CLASS_IMPL("BPC_MenuStatePartyRaceSelectPreset_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_MenuStatePartyRaceSelectPreset_C")
 	}
 	static class UBPC_MenuStatePartyRaceSelectPreset_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_MenuStatePartyRaceSelectPreset_C>();
 	}
 };
-static_assert(alignof(UBPC_MenuStatePartyRaceSelectPreset_C) == 0x000008, "Wrong alignment on UBPC_MenuStatePartyRaceSelectPreset_C");
-static_assert(sizeof(UBPC_MenuStatePartyRaceSelectPreset_C) == 0x0003C8, "Wrong size on UBPC_MenuStatePartyRaceSelectPreset_C");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectPreset_C, UberGraphFrame) == 0x000198, "Member 'UBPC_MenuStatePartyRaceSelectPreset_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectPreset_C, OnCancelPresetSelect) == 0x0001A0, "Member 'UBPC_MenuStatePartyRaceSelectPreset_C::OnCancelPresetSelect' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectPreset_C, ItemSwitch) == 0x0001B0, "Member 'UBPC_MenuStatePartyRaceSelectPreset_C::ItemSwitch' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectPreset_C, LastChara) == 0x0001B8, "Member 'UBPC_MenuStatePartyRaceSelectPreset_C::LastChara' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectPreset_C, bTalking) == 0x0001C0, "Member 'UBPC_MenuStatePartyRaceSelectPreset_C::bTalking' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectPreset_C, SubInputReceiver) == 0x0001C8, "Member 'UBPC_MenuStatePartyRaceSelectPreset_C::SubInputReceiver' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectPreset_C, bRightShoulderPressed) == 0x0001D0, "Member 'UBPC_MenuStatePartyRaceSelectPreset_C::bRightShoulderPressed' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectPreset_C, bLeftShoulderPressed) == 0x0001D1, "Member 'UBPC_MenuStatePartyRaceSelectPreset_C::bLeftShoulderPressed' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectPreset_C, CurrentDebugLevel) == 0x0001D4, "Member 'UBPC_MenuStatePartyRaceSelectPreset_C::CurrentDebugLevel' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectPreset_C, Target) == 0x0001D8, "Member 'UBPC_MenuStatePartyRaceSelectPreset_C::Target' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectPreset_C, LastSelectedPreset) == 0x0001E0, "Member 'UBPC_MenuStatePartyRaceSelectPreset_C::LastSelectedPreset' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectPreset_C, Enable_Item) == 0x0001E8, "Member 'UBPC_MenuStatePartyRaceSelectPreset_C::Enable_Item' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectPreset_C, NewVar) == 0x0001F8, "Member 'UBPC_MenuStatePartyRaceSelectPreset_C::NewVar' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectPreset_C, PresetSettings) == 0x000248, "Member 'UBPC_MenuStatePartyRaceSelectPreset_C::PresetSettings' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectPreset_C, LastSelectPresetSettings) == 0x000298, "Member 'UBPC_MenuStatePartyRaceSelectPreset_C::LastSelectPresetSettings' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectPreset_C, ReadyWidget) == 0x000350, "Member 'UBPC_MenuStatePartyRaceSelectPreset_C::ReadyWidget' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectPreset_C, bFading) == 0x000358, "Member 'UBPC_MenuStatePartyRaceSelectPreset_C::bFading' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectPreset_C, RivalCutinWidget) == 0x000360, "Member 'UBPC_MenuStatePartyRaceSelectPreset_C::RivalCutinWidget' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectPreset_C, RivalChanged) == 0x000368, "Member 'UBPC_MenuStatePartyRaceSelectPreset_C::RivalChanged' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectPreset_C, OnSelectedGadgetCustom) == 0x000370, "Member 'UBPC_MenuStatePartyRaceSelectPreset_C::OnSelectedGadgetCustom' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectPreset_C, RivalRewardWindow) == 0x000380, "Member 'UBPC_MenuStatePartyRaceSelectPreset_C::RivalRewardWindow' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectPreset_C, RivalCutinLoadStepCount) == 0x000388, "Member 'UBPC_MenuStatePartyRaceSelectPreset_C::RivalCutinLoadStepCount' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectPreset_C, RivalCutinInputReceiver) == 0x000390, "Member 'UBPC_MenuStatePartyRaceSelectPreset_C::RivalCutinInputReceiver' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectPreset_C, OnPlayOutFinished) == 0x000398, "Member 'UBPC_MenuStatePartyRaceSelectPreset_C::OnPlayOutFinished' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectPreset_C, bIsInteractRivalONOFF) == 0x0003A8, "Member 'UBPC_MenuStatePartyRaceSelectPreset_C::bIsInteractRivalONOFF' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectPreset_C, NoPlayFireAnim) == 0x0003A9, "Member 'UBPC_MenuStatePartyRaceSelectPreset_C::NoPlayFireAnim' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectPreset_C, ChangeLevel) == 0x0003AA, "Member 'UBPC_MenuStatePartyRaceSelectPreset_C::ChangeLevel' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectPreset_C, PopupWindow) == 0x0003B0, "Member 'UBPC_MenuStatePartyRaceSelectPreset_C::PopupWindow' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectPreset_C, TipsWindow) == 0x0003B8, "Member 'UBPC_MenuStatePartyRaceSelectPreset_C::TipsWindow' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectPreset_C, InHintId) == 0x0003C0, "Member 'UBPC_MenuStatePartyRaceSelectPreset_C::InHintId' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_MenuStatePartyRaceSelectPreset_C;
 
 }
 

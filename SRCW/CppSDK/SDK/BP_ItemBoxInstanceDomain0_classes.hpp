@@ -23,15 +23,18 @@ class ABP_ItemBoxInstanceDomain0_C final : public AItemBoxInstanceObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ItemBoxInstanceDomain0_C">();
+		BP_STATIC_CLASS_IMPL("BP_ItemBoxInstanceDomain0_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ItemBoxInstanceDomain0_C")
 	}
 	static class ABP_ItemBoxInstanceDomain0_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ItemBoxInstanceDomain0_C>();
 	}
 };
-static_assert(alignof(ABP_ItemBoxInstanceDomain0_C) == 0x000010, "Wrong alignment on ABP_ItemBoxInstanceDomain0_C");
-static_assert(sizeof(ABP_ItemBoxInstanceDomain0_C) == 0x000470, "Wrong size on ABP_ItemBoxInstanceDomain0_C");
+DUMPER7_ASSERTS_ABP_ItemBoxInstanceDomain0_C;
 
 }
 

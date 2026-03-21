@@ -52,44 +52,7 @@ public:
 	struct FAnimNodeExposedValueHandler_PropertyAccess AnimGraphNode_StateResult;                    // 0x02D8(0x0030)()
 	struct FAnimNodeExposedValueHandler_PropertyAccess AnimGraphNode_StateMachine;                   // 0x0308(0x0030)()
 };
-static_assert(alignof(ABP_SummonRing::FAnimBlueprintGeneratedConstantData) == 0x000008, "Wrong alignment on ABP_SummonRing::FAnimBlueprintGeneratedConstantData");
-static_assert(sizeof(ABP_SummonRing::FAnimBlueprintGeneratedConstantData) == 0x000338, "Wrong size on ABP_SummonRing::FAnimBlueprintGeneratedConstantData");
-static_assert(offsetof(ABP_SummonRing::FAnimBlueprintGeneratedConstantData, __NameProperty_66) == 0x000004, "Member 'ABP_SummonRing::FAnimBlueprintGeneratedConstantData::__NameProperty_66' has a wrong offset!");
-static_assert(offsetof(ABP_SummonRing::FAnimBlueprintGeneratedConstantData, __NameProperty_67) == 0x00000C, "Member 'ABP_SummonRing::FAnimBlueprintGeneratedConstantData::__NameProperty_67' has a wrong offset!");
-static_assert(offsetof(ABP_SummonRing::FAnimBlueprintGeneratedConstantData, __IntProperty_68) == 0x000014, "Member 'ABP_SummonRing::FAnimBlueprintGeneratedConstantData::__IntProperty_68' has a wrong offset!");
-static_assert(offsetof(ABP_SummonRing::FAnimBlueprintGeneratedConstantData, __NameProperty_69) == 0x000018, "Member 'ABP_SummonRing::FAnimBlueprintGeneratedConstantData::__NameProperty_69' has a wrong offset!");
-static_assert(offsetof(ABP_SummonRing::FAnimBlueprintGeneratedConstantData, __IntProperty_70) == 0x000020, "Member 'ABP_SummonRing::FAnimBlueprintGeneratedConstantData::__IntProperty_70' has a wrong offset!");
-static_assert(offsetof(ABP_SummonRing::FAnimBlueprintGeneratedConstantData, __StructProperty_71) == 0x000024, "Member 'ABP_SummonRing::FAnimBlueprintGeneratedConstantData::__StructProperty_71' has a wrong offset!");
-static_assert(offsetof(ABP_SummonRing::FAnimBlueprintGeneratedConstantData, __FloatProperty_72) == 0x000050, "Member 'ABP_SummonRing::FAnimBlueprintGeneratedConstantData::__FloatProperty_72' has a wrong offset!");
-static_assert(offsetof(ABP_SummonRing::FAnimBlueprintGeneratedConstantData, __FloatProperty_73) == 0x000054, "Member 'ABP_SummonRing::FAnimBlueprintGeneratedConstantData::__FloatProperty_73' has a wrong offset!");
-static_assert(offsetof(ABP_SummonRing::FAnimBlueprintGeneratedConstantData, __BoolProperty_74) == 0x000058, "Member 'ABP_SummonRing::FAnimBlueprintGeneratedConstantData::__BoolProperty_74' has a wrong offset!");
-static_assert(offsetof(ABP_SummonRing::FAnimBlueprintGeneratedConstantData, __EnumProperty_75) == 0x000059, "Member 'ABP_SummonRing::FAnimBlueprintGeneratedConstantData::__EnumProperty_75' has a wrong offset!");
-static_assert(offsetof(ABP_SummonRing::FAnimBlueprintGeneratedConstantData, __ByteProperty_76) == 0x00005A, "Member 'ABP_SummonRing::FAnimBlueprintGeneratedConstantData::__ByteProperty_76' has a wrong offset!");
-static_assert(offsetof(ABP_SummonRing::FAnimBlueprintGeneratedConstantData, __NameProperty_77) == 0x00005C, "Member 'ABP_SummonRing::FAnimBlueprintGeneratedConstantData::__NameProperty_77' has a wrong offset!");
-static_assert(offsetof(ABP_SummonRing::FAnimBlueprintGeneratedConstantData, __NameProperty_78) == 0x000064, "Member 'ABP_SummonRing::FAnimBlueprintGeneratedConstantData::__NameProperty_78' has a wrong offset!");
-static_assert(offsetof(ABP_SummonRing::FAnimBlueprintGeneratedConstantData, __NameProperty_79) == 0x00006C, "Member 'ABP_SummonRing::FAnimBlueprintGeneratedConstantData::__NameProperty_79' has a wrong offset!");
-static_assert(offsetof(ABP_SummonRing::FAnimBlueprintGeneratedConstantData, __IntProperty_80) == 0x000074, "Member 'ABP_SummonRing::FAnimBlueprintGeneratedConstantData::__IntProperty_80' has a wrong offset!");
-static_assert(offsetof(ABP_SummonRing::FAnimBlueprintGeneratedConstantData, __StructProperty_81) == 0x000078, "Member 'ABP_SummonRing::FAnimBlueprintGeneratedConstantData::__StructProperty_81' has a wrong offset!");
-static_assert(offsetof(ABP_SummonRing::FAnimBlueprintGeneratedConstantData, AnimBlueprintExtension_PropertyAccess) == 0x000098, "Member 'ABP_SummonRing::FAnimBlueprintGeneratedConstantData::AnimBlueprintExtension_PropertyAccess' has a wrong offset!");
-static_assert(offsetof(ABP_SummonRing::FAnimBlueprintGeneratedConstantData, AnimBlueprintExtension_Base) == 0x000118, "Member 'ABP_SummonRing::FAnimBlueprintGeneratedConstantData::AnimBlueprintExtension_Base' has a wrong offset!");
-static_assert(offsetof(ABP_SummonRing::FAnimBlueprintGeneratedConstantData, AnimGraphNode_Root) == 0x000158, "Member 'ABP_SummonRing::FAnimBlueprintGeneratedConstantData::AnimGraphNode_Root' has a wrong offset!");
-static_assert(offsetof(ABP_SummonRing::FAnimBlueprintGeneratedConstantData, AnimGraphNode_TransitionResult_1) == 0x000188, "Member 'ABP_SummonRing::FAnimBlueprintGeneratedConstantData::AnimGraphNode_TransitionResult_1' has a wrong offset!");
-static_assert(offsetof(ABP_SummonRing::FAnimBlueprintGeneratedConstantData, AnimGraphNode_TransitionResult) == 0x0001B8, "Member 'ABP_SummonRing::FAnimBlueprintGeneratedConstantData::AnimGraphNode_TransitionResult' has a wrong offset!");
-static_assert(offsetof(ABP_SummonRing::FAnimBlueprintGeneratedConstantData, AnimGraphNode_SequencePlayer_2) == 0x0001E8, "Member 'ABP_SummonRing::FAnimBlueprintGeneratedConstantData::AnimGraphNode_SequencePlayer_2' has a wrong offset!");
-static_assert(offsetof(ABP_SummonRing::FAnimBlueprintGeneratedConstantData, AnimGraphNode_StateResult_2) == 0x000218, "Member 'ABP_SummonRing::FAnimBlueprintGeneratedConstantData::AnimGraphNode_StateResult_2' has a wrong offset!");
-static_assert(offsetof(ABP_SummonRing::FAnimBlueprintGeneratedConstantData, AnimGraphNode_SequencePlayer_1) == 0x000248, "Member 'ABP_SummonRing::FAnimBlueprintGeneratedConstantData::AnimGraphNode_SequencePlayer_1' has a wrong offset!");
-static_assert(offsetof(ABP_SummonRing::FAnimBlueprintGeneratedConstantData, AnimGraphNode_StateResult_1) == 0x000278, "Member 'ABP_SummonRing::FAnimBlueprintGeneratedConstantData::AnimGraphNode_StateResult_1' has a wrong offset!");
-static_assert(offsetof(ABP_SummonRing::FAnimBlueprintGeneratedConstantData, AnimGraphNode_SequencePlayer) == 0x0002A8, "Member 'ABP_SummonRing::FAnimBlueprintGeneratedConstantData::AnimGraphNode_SequencePlayer' has a wrong offset!");
-static_assert(offsetof(ABP_SummonRing::FAnimBlueprintGeneratedConstantData, AnimGraphNode_StateResult) == 0x0002D8, "Member 'ABP_SummonRing::FAnimBlueprintGeneratedConstantData::AnimGraphNode_StateResult' has a wrong offset!");
-static_assert(offsetof(ABP_SummonRing::FAnimBlueprintGeneratedConstantData, AnimGraphNode_StateMachine) == 0x000308, "Member 'ABP_SummonRing::FAnimBlueprintGeneratedConstantData::AnimGraphNode_StateMachine' has a wrong offset!");
-
-// ScriptStruct ABP_SummonRing.ABP_SummonRing_C.AnimBlueprintGeneratedMutableData
-// 0x0000 (0x0001 - 0x0001)
-struct ABP_SummonRing::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
-{
-};
-static_assert(alignof(ABP_SummonRing::FAnimBlueprintGeneratedMutableData) == 0x000001, "Wrong alignment on ABP_SummonRing::FAnimBlueprintGeneratedMutableData");
-static_assert(sizeof(ABP_SummonRing::FAnimBlueprintGeneratedMutableData) == 0x000001, "Wrong size on ABP_SummonRing::FAnimBlueprintGeneratedMutableData");
+DUMPER7_ASSERTS_ABP_SummonRing__FAnimBlueprintGeneratedConstantData;
 
 }
 

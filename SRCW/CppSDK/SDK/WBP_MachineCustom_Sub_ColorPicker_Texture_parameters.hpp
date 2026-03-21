@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ST_ColorDetailWindowSurfaceItemData_structs.hpp"
 #include "UMG_structs.hpp"
+#include "ST_ColorDetailWindowSurfaceItemData_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "UnionSystem_structs.hpp"
 
@@ -76,53 +76,7 @@ public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_4;                  // 0x01A8(0x0004)()
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_5;                  // 0x01AC(0x0004)()
 };
-static_assert(alignof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture");
-static_assert(sizeof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture) == 0x0001B0, "Wrong size on WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, EntryPoint) == 0x000000, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, Temp_int_Array_Index_Variable) == 0x000004, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, Temp_int_Loop_Counter_Variable) == 0x000018, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, CallFunc_Add_IntInt_ReturnValue) == 0x00001C, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, Temp_int_Array_Index_Variable_1) == 0x000020, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, K2Node_CustomEvent_MyGeometry) == 0x000024, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::K2Node_CustomEvent_MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, K2Node_CustomEvent_InFocusEvent) == 0x00005C, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::K2Node_CustomEvent_InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, CallFunc_GetUserIndexByFocusEvent_ReturnValue) == 0x000064, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::CallFunc_GetUserIndexByFocusEvent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, K2Node_Event_InFocusEvent) == 0x000068, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::K2Node_Event_InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, CallFunc_GetPlayerController_ReturnValue) == 0x000070, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, K2Node_DynamicCast_AsMenu_Player_Controller) == 0x000078, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::K2Node_DynamicCast_AsMenu_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, K2Node_DynamicCast_bSuccess) == 0x000080, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, CallFunc_CreatePlayAnimationProxyObject_Result) == 0x000088, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::CallFunc_CreatePlayAnimationProxyObject_Result' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, CallFunc_CreatePlayAnimationProxyObject_ReturnValue) == 0x000090, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::CallFunc_CreatePlayAnimationProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, CallFunc_CreatePlayAnimationProxyObject_Result_1) == 0x000098, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::CallFunc_CreatePlayAnimationProxyObject_Result_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, CallFunc_CreatePlayAnimationProxyObject_ReturnValue_1) == 0x0000A0, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::CallFunc_CreatePlayAnimationProxyObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, CallFunc_IsValid_ReturnValue) == 0x0000A8, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, CallFunc_IsValid_ReturnValue_1) == 0x0000A9, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, CallFunc_Subtract_IntInt_ReturnValue) == 0x0000AC, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, CallFunc_LoopIndex_OutIndex) == 0x0000B0, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::CallFunc_LoopIndex_OutIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, K2Node_MakeArray_Array) == 0x0000B8, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000C8, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, CallFunc_LoopIndex_OutIndex_1) == 0x0000CC, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::CallFunc_LoopIndex_OutIndex_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, CallFunc_PlayAnimation_ReturnValue) == 0x0000D0, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, CallFunc_SoundPlay_ReturnValue) == 0x0000D8, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, CallFunc_SoundPlay_ReturnValue_1) == 0x0000DC, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, CallFunc_PlayAnimation_ReturnValue_1) == 0x0000E0, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, CallFunc_PlayAnimation_ReturnValue_2) == 0x0000E8, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, Temp_int_Loop_Counter_Variable_1) == 0x0000F0, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, CallFunc_Array_Get_Item) == 0x0000F8, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, K2Node_SetFieldsInStruct_StructOut) == 0x000118, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::K2Node_SetFieldsInStruct_StructOut' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, CallFunc_Add_IntInt_ReturnValue_2) == 0x000138, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, CallFunc_Array_Length_ReturnValue) == 0x00013C, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, CallFunc_Less_IntInt_ReturnValue) == 0x000140, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, CallFunc_Array_Get_Item_1) == 0x000148, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, CallFunc_Array_Length_ReturnValue_1) == 0x000168, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, CallFunc_Less_IntInt_ReturnValue_1) == 0x00016C, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00016D, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, K2Node_SetFieldsInStruct_StructOut_1) == 0x000170, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::K2Node_SetFieldsInStruct_StructOut_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, K2Node_CreateDelegate_OutputDelegate_1) == 0x000190, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, CallFunc_SoundPlay_ReturnValue_2) == 0x0001A0, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::CallFunc_SoundPlay_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, CallFunc_SoundPlay_ReturnValue_3) == 0x0001A4, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::CallFunc_SoundPlay_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, CallFunc_SoundPlay_ReturnValue_4) == 0x0001A8, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::CallFunc_SoundPlay_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture, CallFunc_SoundPlay_ReturnValue_5) == 0x0001AC, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture::CallFunc_SoundPlay_ReturnValue_5' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_ColorPicker_Texture_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_Texture;
 
 // Function WBP_MachineCustom_Sub_ColorPicker_Texture.WBP_MachineCustom_Sub_ColorPicker_Texture_C.LoopIndex
 // 0x0030 (0x0030 - 0x0000)
@@ -144,20 +98,7 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_LoopIndex) == 0x000004, "Wrong alignment on WBP_MachineCustom_Sub_ColorPicker_Texture_C_LoopIndex");
-static_assert(sizeof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_LoopIndex) == 0x000030, "Wrong size on WBP_MachineCustom_Sub_ColorPicker_Texture_C_LoopIndex");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_LoopIndex, InIndex) == 0x000000, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_LoopIndex::InIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_LoopIndex, OutIndex) == 0x000004, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_LoopIndex::OutIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_LoopIndex, TempIndex) == 0x000008, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_LoopIndex::TempIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_LoopIndex, CallFunc_Array_Length_ReturnValue) == 0x00000C, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_LoopIndex::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_LoopIndex, CallFunc_Array_Length_ReturnValue_1) == 0x000010, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_LoopIndex::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_LoopIndex, CallFunc_Array_Length_ReturnValue_2) == 0x000014, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_LoopIndex::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_LoopIndex, CallFunc_Array_Length_ReturnValue_3) == 0x000018, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_LoopIndex::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_LoopIndex, CallFunc_LessEqual_IntInt_ReturnValue) == 0x00001C, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_LoopIndex::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_LoopIndex, CallFunc_Subtract_IntInt_ReturnValue) == 0x000020, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_LoopIndex::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_LoopIndex, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000024, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_LoopIndex::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_LoopIndex, CallFunc_Add_IntInt_ReturnValue) == 0x000028, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_LoopIndex::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_LoopIndex, CallFunc_Less_IntInt_ReturnValue) == 0x00002C, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_LoopIndex::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_ColorPicker_Texture_C_LoopIndex;
 
 // Function WBP_MachineCustom_Sub_ColorPicker_Texture.WBP_MachineCustom_Sub_ColorPicker_Texture_C.OnFocusLost
 // 0x0008 (0x0008 - 0x0000)
@@ -166,9 +107,7 @@ struct WBP_MachineCustom_Sub_ColorPicker_Texture_C_OnFocusLost final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_OnFocusLost) == 0x000004, "Wrong alignment on WBP_MachineCustom_Sub_ColorPicker_Texture_C_OnFocusLost");
-static_assert(sizeof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_OnFocusLost) == 0x000008, "Wrong size on WBP_MachineCustom_Sub_ColorPicker_Texture_C_OnFocusLost");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_OnFocusLost, InFocusEvent) == 0x000000, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_OnFocusLost::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_ColorPicker_Texture_C_OnFocusLost;
 
 // Function WBP_MachineCustom_Sub_ColorPicker_Texture.WBP_MachineCustom_Sub_ColorPicker_Texture_C.OnFocusReceived
 // 0x01B0 (0x01B0 - 0x0000)
@@ -180,12 +119,7 @@ public:
 	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
 	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x00F8(0x00B8)()
 };
-static_assert(alignof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_OnFocusReceived) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_ColorPicker_Texture_C_OnFocusReceived");
-static_assert(sizeof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_OnFocusReceived) == 0x0001B0, "Wrong size on WBP_MachineCustom_Sub_ColorPicker_Texture_C_OnFocusReceived");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_OnFocusReceived, K2Node_MakeStruct_EventReply) == 0x0000F8, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_OnFocusReceived::K2Node_MakeStruct_EventReply' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_ColorPicker_Texture_C_OnFocusReceived;
 
 // Function WBP_MachineCustom_Sub_ColorPicker_Texture.WBP_MachineCustom_Sub_ColorPicker_Texture_C.OnFocusReceived_Impl
 // 0x0040 (0x0040 - 0x0000)
@@ -195,10 +129,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_OnFocusReceived_Impl) == 0x000004, "Wrong alignment on WBP_MachineCustom_Sub_ColorPicker_Texture_C_OnFocusReceived_Impl");
-static_assert(sizeof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_OnFocusReceived_Impl) == 0x000040, "Wrong size on WBP_MachineCustom_Sub_ColorPicker_Texture_C_OnFocusReceived_Impl");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_OnFocusReceived_Impl, MyGeometry) == 0x000000, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_OnFocusReceived_Impl::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_OnFocusReceived_Impl, InFocusEvent) == 0x000038, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_OnFocusReceived_Impl::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_ColorPicker_Texture_C_OnFocusReceived_Impl;
 
 // Function WBP_MachineCustom_Sub_ColorPicker_Texture.WBP_MachineCustom_Sub_ColorPicker_Texture_C.SetCursorVisible
 // 0x0005 (0x0005 - 0x0000)
@@ -211,13 +142,7 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_SetCursorVisible) == 0x000001, "Wrong alignment on WBP_MachineCustom_Sub_ColorPicker_Texture_C_SetCursorVisible");
-static_assert(sizeof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_SetCursorVisible) == 0x000005, "Wrong size on WBP_MachineCustom_Sub_ColorPicker_Texture_C_SetCursorVisible");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_SetCursorVisible, bInIsVisible) == 0x000000, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_SetCursorVisible::bInIsVisible' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_SetCursorVisible, Temp_bool_Variable) == 0x000001, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_SetCursorVisible::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_SetCursorVisible, Temp_byte_Variable) == 0x000002, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_SetCursorVisible::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_SetCursorVisible, Temp_byte_Variable_1) == 0x000003, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_SetCursorVisible::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_SetCursorVisible, K2Node_Select_Default) == 0x000004, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_SetCursorVisible::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_ColorPicker_Texture_C_SetCursorVisible;
 
 // Function WBP_MachineCustom_Sub_ColorPicker_Texture.WBP_MachineCustom_Sub_ColorPicker_Texture_C.Setup
 // 0x0048 (0x0048 - 0x0000)
@@ -236,18 +161,7 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_Setup) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_ColorPicker_Texture_C_Setup");
-static_assert(sizeof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_Setup) == 0x000048, "Wrong size on WBP_MachineCustom_Sub_ColorPicker_Texture_C_Setup");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_Setup, InItemDataList) == 0x000000, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_Setup::InItemDataList' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_Setup, Temp_bool_True_if_break_was_hit_Variable) == 0x000010, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_Setup::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_Setup, CallFunc_Not_PreBool_ReturnValue) == 0x000011, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_Setup::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_Setup, Temp_int_Array_Index_Variable) == 0x000014, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_Setup::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_Setup, Temp_int_Loop_Counter_Variable) == 0x000018, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_Setup::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_Setup, CallFunc_Add_IntInt_ReturnValue) == 0x00001C, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_Setup::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_Setup, CallFunc_Array_Get_Item) == 0x000020, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_Setup::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_Setup, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_Setup::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_Setup, CallFunc_Less_IntInt_ReturnValue) == 0x000044, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_Setup::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_Setup, CallFunc_BooleanAND_ReturnValue) == 0x000045, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_Setup::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_ColorPicker_Texture_C_Setup;
 
 // Function WBP_MachineCustom_Sub_ColorPicker_Texture.WBP_MachineCustom_Sub_ColorPicker_Texture_C.UpdateItems
 // 0x0030 (0x0030 - 0x0000)
@@ -265,18 +179,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_UpdateItems) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_ColorPicker_Texture_C_UpdateItems");
-static_assert(sizeof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_UpdateItems) == 0x000030, "Wrong size on WBP_MachineCustom_Sub_ColorPicker_Texture_C_UpdateItems");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_UpdateItems, TempIndex) == 0x000000, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_UpdateItems::TempIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_UpdateItems, Temp_int_Array_Index_Variable) == 0x000004, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_UpdateItems::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_UpdateItems, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_UpdateItems::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_UpdateItems, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_UpdateItems::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_UpdateItems, CallFunc_Add_IntInt_ReturnValue_1) == 0x000010, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_UpdateItems::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_UpdateItems, CallFunc_Add_IntInt_ReturnValue_2) == 0x000014, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_UpdateItems::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_UpdateItems, CallFunc_Array_Get_Item) == 0x000018, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_UpdateItems::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_UpdateItems, CallFunc_LoopIndex_OutIndex) == 0x000020, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_UpdateItems::CallFunc_LoopIndex_OutIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_UpdateItems, CallFunc_Array_Length_ReturnValue) == 0x000024, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_UpdateItems::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_Texture_C_UpdateItems, CallFunc_Less_IntInt_ReturnValue) == 0x000028, "Member 'WBP_MachineCustom_Sub_ColorPicker_Texture_C_UpdateItems::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_ColorPicker_Texture_C_UpdateItems;
 
 }
 

@@ -21,9 +21,7 @@ struct WBP_PartyRace_Sub_RivalCutin_C_ExecuteUbergraph_WBP_PartyRace_Sub_RivalCu
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_RivalCutin_C_ExecuteUbergraph_WBP_PartyRace_Sub_RivalCutin) == 0x000004, "Wrong alignment on WBP_PartyRace_Sub_RivalCutin_C_ExecuteUbergraph_WBP_PartyRace_Sub_RivalCutin");
-static_assert(sizeof(WBP_PartyRace_Sub_RivalCutin_C_ExecuteUbergraph_WBP_PartyRace_Sub_RivalCutin) == 0x000004, "Wrong size on WBP_PartyRace_Sub_RivalCutin_C_ExecuteUbergraph_WBP_PartyRace_Sub_RivalCutin");
-static_assert(offsetof(WBP_PartyRace_Sub_RivalCutin_C_ExecuteUbergraph_WBP_PartyRace_Sub_RivalCutin, EntryPoint) == 0x000000, "Member 'WBP_PartyRace_Sub_RivalCutin_C_ExecuteUbergraph_WBP_PartyRace_Sub_RivalCutin::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_RivalCutin_C_ExecuteUbergraph_WBP_PartyRace_Sub_RivalCutin;
 
 }
 

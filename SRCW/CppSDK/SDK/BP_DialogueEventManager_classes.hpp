@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -85,30 +85,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_DialogueEventManager_C">();
+		BP_STATIC_CLASS_IMPL("BP_DialogueEventManager_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_DialogueEventManager_C")
 	}
 	static class ABP_DialogueEventManager_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_DialogueEventManager_C>();
 	}
 };
-static_assert(alignof(ABP_DialogueEventManager_C) == 0x000008, "Wrong alignment on ABP_DialogueEventManager_C");
-static_assert(sizeof(ABP_DialogueEventManager_C) == 0x000368, "Wrong size on ABP_DialogueEventManager_C");
-static_assert(offsetof(ABP_DialogueEventManager_C, UberGraphFrame) == 0x0002D0, "Member 'ABP_DialogueEventManager_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueEventManager_C, DefaultSceneRoot) == 0x0002D8, "Member 'ABP_DialogueEventManager_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueEventManager_C, MessageWindow) == 0x0002E0, "Member 'ABP_DialogueEventManager_C::MessageWindow' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueEventManager_C, LeftCharacter) == 0x0002E8, "Member 'ABP_DialogueEventManager_C::LeftCharacter' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueEventManager_C, RightCharacter) == 0x0002F0, "Member 'ABP_DialogueEventManager_C::RightCharacter' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueEventManager_C, EventBG) == 0x0002F8, "Member 'ABP_DialogueEventManager_C::EventBG' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueEventManager_C, OnCompleteInitialize) == 0x000300, "Member 'ABP_DialogueEventManager_C::OnCompleteInitialize' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueEventManager_C, OnCompleteDestroy) == 0x000310, "Member 'ABP_DialogueEventManager_C::OnCompleteDestroy' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueEventManager_C, OnCompleteCommand) == 0x000320, "Member 'ABP_DialogueEventManager_C::OnCompleteCommand' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueEventManager_C, CommandTarget) == 0x000330, "Member 'ABP_DialogueEventManager_C::CommandTarget' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueEventManager_C, BillboardImage) == 0x000338, "Member 'ABP_DialogueEventManager_C::BillboardImage' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueEventManager_C, RewardAchievementType) == 0x000340, "Member 'ABP_DialogueEventManager_C::RewardAchievementType' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueEventManager_C, InputRecieveObject) == 0x000348, "Member 'ABP_DialogueEventManager_C::InputRecieveObject' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueEventManager_C, CharacterNameDataTable) == 0x000350, "Member 'ABP_DialogueEventManager_C::CharacterNameDataTable' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueEventManager_C, FestaName) == 0x000358, "Member 'ABP_DialogueEventManager_C::FestaName' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_DialogueEventManager_C;
 
 }
 

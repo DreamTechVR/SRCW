@@ -25,10 +25,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<double>                                K2Node_MakeArray_Array;                            // 0x0008(0x0010)(ReferenceParm)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_SpeedNum_C_ExecuteUbergraph_WBP_Race_HUD_Sub_SpeedNum) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_SpeedNum_C_ExecuteUbergraph_WBP_Race_HUD_Sub_SpeedNum");
-static_assert(sizeof(WBP_Race_HUD_Sub_SpeedNum_C_ExecuteUbergraph_WBP_Race_HUD_Sub_SpeedNum) == 0x000018, "Wrong size on WBP_Race_HUD_Sub_SpeedNum_C_ExecuteUbergraph_WBP_Race_HUD_Sub_SpeedNum");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_ExecuteUbergraph_WBP_Race_HUD_Sub_SpeedNum, EntryPoint) == 0x000000, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_ExecuteUbergraph_WBP_Race_HUD_Sub_SpeedNum::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_ExecuteUbergraph_WBP_Race_HUD_Sub_SpeedNum, K2Node_MakeArray_Array) == 0x000008, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_ExecuteUbergraph_WBP_Race_HUD_Sub_SpeedNum::K2Node_MakeArray_Array' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_SpeedNum_C_ExecuteUbergraph_WBP_Race_HUD_Sub_SpeedNum;
 
 // Function WBP_Race_HUD_Sub_SpeedNum.WBP_Race_HUD_Sub_SpeedNum_C.PauseSound
 // 0x0030 (0x0030 - 0x0000)
@@ -52,21 +49,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_SpeedNum_C_PauseSound) == 0x000004, "Wrong alignment on WBP_Race_HUD_Sub_SpeedNum_C_PauseSound");
-static_assert(sizeof(WBP_Race_HUD_Sub_SpeedNum_C_PauseSound) == 0x000030, "Wrong size on WBP_Race_HUD_Sub_SpeedNum_C_PauseSound");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_PauseSound, IsPause) == 0x000000, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_PauseSound::IsPause' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_PauseSound, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_PauseSound::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_PauseSound, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_PauseSound::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_PauseSound, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_PauseSound::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_PauseSound, CallFunc_SoundPlay_ReturnValue) == 0x000010, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_PauseSound::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_PauseSound, CallFunc_Array_Get_Item) == 0x000014, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_PauseSound::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_PauseSound, CallFunc_SetPanSplit_ReturnValue) == 0x000018, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_PauseSound::CallFunc_SetPanSplit_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_PauseSound, CallFunc_IsPlaying_ReturnValue) == 0x00001C, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_PauseSound::CallFunc_IsPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_PauseSound, CallFunc_Array_Get_Item_1) == 0x00001D, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_PauseSound::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_PauseSound, CallFunc_Stop_ReturnValue) == 0x000020, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_PauseSound::CallFunc_Stop_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_PauseSound, CallFunc_IsPlaying_ReturnValue_1) == 0x000024, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_PauseSound::CallFunc_IsPlaying_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_PauseSound, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_PauseSound::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_PauseSound, CallFunc_Less_IntInt_ReturnValue) == 0x00002C, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_PauseSound::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_SpeedNum_C_PauseSound;
 
 // Function WBP_Race_HUD_Sub_SpeedNum.WBP_Race_HUD_Sub_SpeedNum_C.SetIntNum
 // 0x0028 (0x0028 - 0x0000)
@@ -80,13 +63,7 @@ public:
 	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_SpeedNum_C_SetIntNum) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_SpeedNum_C_SetIntNum");
-static_assert(sizeof(WBP_Race_HUD_Sub_SpeedNum_C_SetIntNum) == 0x000028, "Wrong size on WBP_Race_HUD_Sub_SpeedNum_C_SetIntNum");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_SetIntNum, Image) == 0x000000, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_SetIntNum::Image' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_SetIntNum, Num) == 0x000008, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_SetIntNum::Num' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_SetIntNum, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000010, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_SetIntNum::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_SetIntNum, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000018, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_SetIntNum::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_SetIntNum, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000020, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_SetIntNum::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_SpeedNum_C_SetIntNum;
 
 // Function WBP_Race_HUD_Sub_SpeedNum.WBP_Race_HUD_Sub_SpeedNum_C.SetRingNum
 // 0x0008 (0x0008 - 0x0000)
@@ -96,10 +73,7 @@ public:
 	int32                                         RingNum;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_SpeedNum_C_SetRingNum) == 0x000004, "Wrong alignment on WBP_Race_HUD_Sub_SpeedNum_C_SetRingNum");
-static_assert(sizeof(WBP_Race_HUD_Sub_SpeedNum_C_SetRingNum) == 0x000008, "Wrong size on WBP_Race_HUD_Sub_SpeedNum_C_SetRingNum");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_SetRingNum, RingNum) == 0x000000, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_SetRingNum::RingNum' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_SetRingNum, CallFunc_Less_IntInt_ReturnValue) == 0x000004, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_SetRingNum::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_SpeedNum_C_SetRingNum;
 
 // Function WBP_Race_HUD_Sub_SpeedNum.WBP_Race_HUD_Sub_SpeedNum_C.SetSpeedKMPH
 // 0x001C (0x001C - 0x0000)
@@ -114,15 +88,7 @@ public:
 	int32                                         CallFunc_Percent_IntInt_ReturnValue_2;             // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Divide_IntInt_ReturnValue_2;              // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedKMPH) == 0x000004, "Wrong alignment on WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedKMPH");
-static_assert(sizeof(WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedKMPH) == 0x00001C, "Wrong size on WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedKMPH");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedKMPH, SpeedKMPH) == 0x000000, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedKMPH::SpeedKMPH' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedKMPH, CallFunc_Percent_IntInt_ReturnValue) == 0x000004, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedKMPH::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedKMPH, CallFunc_Percent_IntInt_ReturnValue_1) == 0x000008, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedKMPH::CallFunc_Percent_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedKMPH, CallFunc_Divide_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedKMPH::CallFunc_Divide_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedKMPH, CallFunc_Divide_IntInt_ReturnValue_1) == 0x000010, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedKMPH::CallFunc_Divide_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedKMPH, CallFunc_Percent_IntInt_ReturnValue_2) == 0x000014, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedKMPH::CallFunc_Percent_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedKMPH, CallFunc_Divide_IntInt_ReturnValue_2) == 0x000018, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedKMPH::CallFunc_Divide_IntInt_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedKMPH;
 
 // Function WBP_Race_HUD_Sub_SpeedNum.WBP_Race_HUD_Sub_SpeedNum_C.SetSpeedScale
 // 0x0030 (0x0030 - 0x0000)
@@ -139,16 +105,7 @@ public:
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedScale) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedScale");
-static_assert(sizeof(WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedScale) == 0x000030, "Wrong size on WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedScale");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedScale, Speed) == 0x000000, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedScale::Speed' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedScale, newParam) == 0x000004, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedScale::newParam' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedScale, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000008, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedScale::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedScale, CallFunc_GetSelectedMenuSpeedClassId_ReturnValue) == 0x000010, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedScale::CallFunc_GetSelectedMenuSpeedClassId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedScale, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000014, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedScale::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedScale, CallFunc_Array_Get_Item) == 0x000018, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedScale::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedScale, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000020, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedScale::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedScale, CallFunc_FTrunc_ReturnValue) == 0x000028, "Member 'WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedScale::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_SpeedNum_C_SetSpeedScale;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
+#include "UnionSystem_structs.hpp"
 
 
 namespace SDK::Params
@@ -42,24 +42,7 @@ public:
 	uint8                                         Pad_3E6[0x2];                                      // 0x03E6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x03E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver) == 0x000008, "Wrong alignment on BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver");
-static_assert(sizeof(BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver) == 0x0003F0, "Wrong size on BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver");
-static_assert(offsetof(BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver, EntryPoint) == 0x000000, "Member 'BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000004, "Member 'BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver, Temp_int_Array_Index_Variable) == 0x000008, "Member 'BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver, Temp_int_Loop_Counter_Variable) == 0x00000C, "Member 'BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver, CallFunc_GetEnumeratorName_ReturnValue) == 0x000010, "Member 'BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver, CallFunc_GetDataTableRowFromName_OutRow) == 0x000018, "Member 'BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x0003A8, "Member 'BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver, CallFunc_Add_IntInt_ReturnValue) == 0x0003AC, "Member 'BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver, CallFunc_LoadClassAsset_Blocking_ReturnValue) == 0x0003B0, "Member 'BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver::CallFunc_LoadClassAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver, CallFunc_GetRivalMesh_ReturnValue) == 0x0003B8, "Member 'BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver::CallFunc_GetRivalMesh_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver, CallFunc_GetMaterials_ReturnValue) == 0x0003C0, "Member 'BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver::CallFunc_GetMaterials_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver, K2Node_CreateDelegate_OutputDelegate) == 0x0003D0, "Member 'BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver, CallFunc_Array_Length_ReturnValue) == 0x0003E0, "Member 'BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver, CallFunc_Less_IntInt_ReturnValue) == 0x0003E4, "Member 'BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x0003E5, "Member 'BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver, K2Node_Event_DeltaSeconds) == 0x0003E8, "Member 'BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver::K2Node_Event_DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver;
 
 // Function BP_SceneDriver.BP_SceneDriver_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -68,9 +51,7 @@ struct BP_SceneDriver_C_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SceneDriver_C_ReceiveTick) == 0x000004, "Wrong alignment on BP_SceneDriver_C_ReceiveTick");
-static_assert(sizeof(BP_SceneDriver_C_ReceiveTick) == 0x000004, "Wrong size on BP_SceneDriver_C_ReceiveTick");
-static_assert(offsetof(BP_SceneDriver_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'BP_SceneDriver_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_BP_SceneDriver_C_ReceiveTick;
 
 // Function BP_SceneDriver.BP_SceneDriver_C.SetEnableGFur
 // 0x0001 (0x0001 - 0x0000)
@@ -79,9 +60,7 @@ struct BP_SceneDriver_C_SetEnableGFur final
 public:
 	bool                                          Enable;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SceneDriver_C_SetEnableGFur) == 0x000001, "Wrong alignment on BP_SceneDriver_C_SetEnableGFur");
-static_assert(sizeof(BP_SceneDriver_C_SetEnableGFur) == 0x000001, "Wrong size on BP_SceneDriver_C_SetEnableGFur");
-static_assert(offsetof(BP_SceneDriver_C_SetEnableGFur, Enable) == 0x000000, "Member 'BP_SceneDriver_C_SetEnableGFur::Enable' has a wrong offset!");
+DUMPER7_ASSERTS_BP_SceneDriver_C_SetEnableGFur;
 
 // Function BP_SceneDriver.BP_SceneDriver_C.SetupCharacterById
 // 0x0018 (0x0018 - 0x0000)
@@ -98,16 +77,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Select_Default;                             // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SceneDriver_C_SetupCharacterById) == 0x000008, "Wrong alignment on BP_SceneDriver_C_SetupCharacterById");
-static_assert(sizeof(BP_SceneDriver_C_SetupCharacterById) == 0x000018, "Wrong size on BP_SceneDriver_C_SetupCharacterById");
-static_assert(offsetof(BP_SceneDriver_C_SetupCharacterById, In_DriverId) == 0x000000, "Member 'BP_SceneDriver_C_SetupCharacterById::In_DriverId' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_SetupCharacterById, Temp_bool_Variable) == 0x000001, "Member 'BP_SceneDriver_C_SetupCharacterById::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_SetupCharacterById, K2Node_SwitchEnum_CmpSuccess) == 0x000002, "Member 'BP_SceneDriver_C_SetupCharacterById::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_SetupCharacterById, Temp_bool_Variable_1) == 0x000003, "Member 'BP_SceneDriver_C_SetupCharacterById::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_SetupCharacterById, CallFunc_GetGameSettings_ReturnValue) == 0x000008, "Member 'BP_SceneDriver_C_SetupCharacterById::CallFunc_GetGameSettings_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_SetupCharacterById, CallFunc_GetGFurEnable_ReturnValue) == 0x000010, "Member 'BP_SceneDriver_C_SetupCharacterById::CallFunc_GetGFurEnable_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_SetupCharacterById, CallFunc_IsValid_ReturnValue) == 0x000011, "Member 'BP_SceneDriver_C_SetupCharacterById::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_SetupCharacterById, K2Node_Select_Default) == 0x000012, "Member 'BP_SceneDriver_C_SetupCharacterById::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_BP_SceneDriver_C_SetupCharacterById;
 
 // Function BP_SceneDriver.BP_SceneDriver_C.UserConstructionScript
 // 0x0001 (0x0001 - 0x0000)
@@ -116,9 +86,7 @@ struct BP_SceneDriver_C_UserConstructionScript final
 public:
 	bool                                          CallFunc_IsPlayInEditor_ReturnValue;               // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SceneDriver_C_UserConstructionScript) == 0x000001, "Wrong alignment on BP_SceneDriver_C_UserConstructionScript");
-static_assert(sizeof(BP_SceneDriver_C_UserConstructionScript) == 0x000001, "Wrong size on BP_SceneDriver_C_UserConstructionScript");
-static_assert(offsetof(BP_SceneDriver_C_UserConstructionScript, CallFunc_IsPlayInEditor_ReturnValue) == 0x000000, "Member 'BP_SceneDriver_C_UserConstructionScript::CallFunc_IsPlayInEditor_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_SceneDriver_C_UserConstructionScript;
 
 // Function BP_SceneDriver.BP_SceneDriver_C.GetRivalMesh
 // 0x0E68 (0x0E68 - 0x0000)
@@ -225,105 +193,7 @@ public:
 	class USkeletalMesh*                          K2Node_DynamicCast_As_________;                    // 0x0E58(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0E60(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SceneDriver_C_GetRivalMesh) == 0x000008, "Wrong alignment on BP_SceneDriver_C_GetRivalMesh");
-static_assert(sizeof(BP_SceneDriver_C_GetRivalMesh) == 0x000E68, "Wrong size on BP_SceneDriver_C_GetRivalMesh");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, In_DriverId) == 0x000000, "Member 'BP_SceneDriver_C_GetRivalMesh::In_DriverId' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, ReturnValue) == 0x000008, "Member 'BP_SceneDriver_C_GetRivalMesh::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_byte_Variable) == 0x000010, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable) == 0x000018, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_1) == 0x000040, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_2) == 0x000068, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_3) == 0x000090, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_4) == 0x0000B8, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_4' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_5) == 0x0000E0, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_5' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_6) == 0x000108, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_6' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_7) == 0x000130, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_7' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_8) == 0x000158, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_8' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_9) == 0x000180, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_9' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_10) == 0x0001A8, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_10' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_11) == 0x0001D0, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_11' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_12) == 0x0001F8, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_12' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_13) == 0x000220, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_13' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_14) == 0x000248, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_14' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_15) == 0x000270, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_15' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_16) == 0x000298, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_16' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_17) == 0x0002C0, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_17' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_18) == 0x0002E8, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_18' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_19) == 0x000310, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_19' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_20) == 0x000338, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_20' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_21) == 0x000360, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_21' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_22) == 0x000388, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_22' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_23) == 0x0003B0, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_23' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_24) == 0x0003D8, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_24' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_25) == 0x000400, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_25' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_26) == 0x000428, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_26' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_27) == 0x000450, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_27' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_28) == 0x000478, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_28' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_29) == 0x0004A0, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_29' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_30) == 0x0004C8, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_30' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_31) == 0x0004F0, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_31' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_32) == 0x000518, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_32' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_33) == 0x000540, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_33' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_34) == 0x000568, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_34' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_35) == 0x000590, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_35' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_36) == 0x0005B8, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_36' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_37) == 0x0005E0, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_37' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_38) == 0x000608, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_38' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_39) == 0x000630, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_39' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_40) == 0x000658, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_40' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_41) == 0x000680, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_41' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_42) == 0x0006A8, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_42' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_43) == 0x0006D0, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_43' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_44) == 0x0006F8, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_44' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_45) == 0x000720, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_45' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_46) == 0x000748, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_46' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_47) == 0x000770, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_47' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_48) == 0x000798, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_48' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_49) == 0x0007C0, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_49' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_50) == 0x0007E8, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_50' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_51) == 0x000810, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_51' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_52) == 0x000838, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_52' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_53) == 0x000860, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_53' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_54) == 0x000888, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_54' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_55) == 0x0008B0, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_55' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_56) == 0x0008D8, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_56' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_57) == 0x000900, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_57' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_58) == 0x000928, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_58' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_59) == 0x000950, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_59' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_60) == 0x000978, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_60' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_61) == 0x0009A0, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_61' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_62) == 0x0009C8, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_62' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_63) == 0x0009F0, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_63' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_64) == 0x000A18, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_64' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_65) == 0x000A40, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_65' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_66) == 0x000A68, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_66' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_67) == 0x000A90, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_67' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_68) == 0x000AB8, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_68' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_69) == 0x000AE0, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_69' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_70) == 0x000B08, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_70' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_71) == 0x000B30, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_71' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_72) == 0x000B58, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_72' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_73) == 0x000B80, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_73' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_74) == 0x000BA8, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_74' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_75) == 0x000BD0, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_75' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_76) == 0x000BF8, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_76' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_77) == 0x000C20, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_77' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_78) == 0x000C48, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_78' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_79) == 0x000C70, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_79' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_80) == 0x000C98, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_80' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_81) == 0x000CC0, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_81' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_82) == 0x000CE8, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_82' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_83) == 0x000D10, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_83' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_84) == 0x000D38, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_84' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_85) == 0x000D60, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_85' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_86) == 0x000D88, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_86' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_87) == 0x000DB0, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_87' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_88) == 0x000DD8, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_88' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, Temp_softobject_Variable_89) == 0x000E00, "Member 'BP_SceneDriver_C_GetRivalMesh::Temp_softobject_Variable_89' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, K2Node_Select_Default) == 0x000E28, "Member 'BP_SceneDriver_C_GetRivalMesh::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x000E50, "Member 'BP_SceneDriver_C_GetRivalMesh::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, K2Node_DynamicCast_As_________) == 0x000E58, "Member 'BP_SceneDriver_C_GetRivalMesh::K2Node_DynamicCast_As_________' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_GetRivalMesh, K2Node_DynamicCast_bSuccess) == 0x000E60, "Member 'BP_SceneDriver_C_GetRivalMesh::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BP_SceneDriver_C_GetRivalMesh;
 
 }
 

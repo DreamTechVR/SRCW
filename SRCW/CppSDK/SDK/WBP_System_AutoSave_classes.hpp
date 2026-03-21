@@ -44,22 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_System_AutoSave_C">();
+		BP_STATIC_CLASS_IMPL("WBP_System_AutoSave_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_System_AutoSave_C")
 	}
 	static class UWBP_System_AutoSave_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_System_AutoSave_C>();
 	}
 };
-static_assert(alignof(UWBP_System_AutoSave_C) == 0x000008, "Wrong alignment on UWBP_System_AutoSave_C");
-static_assert(sizeof(UWBP_System_AutoSave_C) == 0x000318, "Wrong size on UWBP_System_AutoSave_C");
-static_assert(offsetof(UWBP_System_AutoSave_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_System_AutoSave_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_System_AutoSave_C, AutoSave_Out) == 0x0002E8, "Member 'UWBP_System_AutoSave_C::AutoSave_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_System_AutoSave_C, AutoSave_Loop) == 0x0002F0, "Member 'UWBP_System_AutoSave_C::AutoSave_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_System_AutoSave_C, AutoSave_In) == 0x0002F8, "Member 'UWBP_System_AutoSave_C::AutoSave_In' has a wrong offset!");
-static_assert(offsetof(UWBP_System_AutoSave_C, WBP_System_Sub_AutoSave) == 0x000300, "Member 'UWBP_System_AutoSave_C::WBP_System_Sub_AutoSave' has a wrong offset!");
-static_assert(offsetof(UWBP_System_AutoSave_C, StartDateTime) == 0x000308, "Member 'UWBP_System_AutoSave_C::StartDateTime' has a wrong offset!");
-static_assert(offsetof(UWBP_System_AutoSave_C, LoopTime) == 0x000310, "Member 'UWBP_System_AutoSave_C::LoopTime' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_System_AutoSave_C;
 
 }
 

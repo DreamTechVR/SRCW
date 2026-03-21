@@ -155,120 +155,7 @@ public:
 	bool                                          CallFunc_IsShippingBuild_ReturnValue_8;            // 0x07A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsShippingBuild_ReturnValue_9;            // 0x07AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController) == 0x000008, "Wrong alignment on BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController");
-static_assert(sizeof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController) == 0x0007B0, "Wrong size on BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, EntryPoint) == 0x000000, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_Key_14) == 0x000008, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_Key_14' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_ActionValue_14) == 0x000020, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_ActionValue_14' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, Temp_struct_Variable) == 0x000040, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, Temp_struct_Variable_1) == 0x000060, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_Key_13) == 0x000078, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_Key_13' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_ActionValue_13) == 0x000090, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_ActionValue_13' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_Key_12) == 0x0000B0, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_Key_12' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_ActionValue_12) == 0x0000C8, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_ActionValue_12' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, Temp_struct_Variable_2) == 0x0000E8, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::Temp_struct_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, Temp_struct_Variable_3) == 0x000108, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::Temp_struct_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_Key_11) == 0x000120, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_Key_11' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_ActionValue_11) == 0x000138, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_ActionValue_11' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_Key_10) == 0x000158, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_Key_10' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_ActionValue_10) == 0x000170, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_ActionValue_10' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, Temp_struct_Variable_4) == 0x000190, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::Temp_struct_Variable_4' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, Temp_struct_Variable_5) == 0x0001B0, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::Temp_struct_Variable_5' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_Key_9) == 0x0001C8, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_Key_9' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_ActionValue_9) == 0x0001E0, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_ActionValue_9' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_Key_8) == 0x000200, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_Key_8' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_ActionValue_8) == 0x000218, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_ActionValue_8' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_Key_7) == 0x000238, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_Key_7' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_ActionValue_7) == 0x000250, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_ActionValue_7' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_Key_6) == 0x000270, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_Key_6' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_ActionValue_6) == 0x000288, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_ActionValue_6' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_Key_5) == 0x0002A8, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_Key_5' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_ActionValue_5) == 0x0002C0, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_ActionValue_5' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_Key_4) == 0x0002E0, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_Key_4' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_ActionValue_4) == 0x0002F8, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_ActionValue_4' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_Key_3) == 0x000318, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_Key_3' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_ActionValue_3) == 0x000330, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_ActionValue_3' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_Key_2) == 0x000350, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_Key_2' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_ActionValue_2) == 0x000368, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_ActionValue_2' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_Key_1) == 0x000388, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_Key_1' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_ActionValue_1) == 0x0003A0, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_ActionValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_Key) == 0x0003C0, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_Key' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_ActionValue) == 0x0003D8, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_ActionValue' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_IsShippingBuild_ReturnValue) == 0x0003F8, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_IsShippingBuild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_Key_15) == 0x000400, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_Key_15' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_ActionValue_15) == 0x000418, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_ActionValue_15' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, Temp_bool_Variable) == 0x000438, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_Not_PreBool_ReturnValue) == 0x000439, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, Temp_struct_Variable_6) == 0x000440, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::Temp_struct_Variable_6' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, Temp_bool_Variable_1) == 0x000458, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_Key_18) == 0x000460, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_Key_18' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_ActionValue_18) == 0x000478, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_ActionValue_18' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_Not_PreBool_ReturnValue_1) == 0x000498, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_GetMaxRaceCount_ReturnValue) == 0x00049C, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_GetMaxRaceCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_Event_EndPlayReason) == 0x0004A0, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_Event_EndPlayReason' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_IsShippingBuild_ReturnValue_1) == 0x0004A1, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_IsShippingBuild_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_GetMaxRaceCount_ReturnValue_1) == 0x0004A4, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_GetMaxRaceCount_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_Greater_IntInt_ReturnValue) == 0x0004A8, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, Temp_struct_Variable_7) == 0x0004B0, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::Temp_struct_Variable_7' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_GetMaxRaceCount_ReturnValue_2) == 0x0004D0, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_GetMaxRaceCount_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_Key_16) == 0x0004D8, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_Key_16' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_ActionValue_16) == 0x0004F0, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_ActionValue_16' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_Subtract_IntInt_ReturnValue) == 0x000510, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_IsPlayInEditor_ReturnValue) == 0x000514, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_IsPlayInEditor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_GetLastHoveredObject_ReturnValue) == 0x000518, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_GetLastHoveredObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_IsValid_ReturnValue) == 0x000520, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_GetObjectName_ReturnValue) == 0x000528, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_GetObjectName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_GetRegisteredMenu_ReturnValue) == 0x000538, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_GetRegisteredMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_SelectString_ReturnValue) == 0x000540, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_SelectString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_IsValid_ReturnValue_1) == 0x000550, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_Conv_StringToText_ReturnValue) == 0x000558, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_GetObjectName_ReturnValue_1) == 0x000568, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_GetObjectName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_MakeStruct_FormatArgumentData) == 0x000578, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_SelectString_ReturnValue_1) == 0x0005C0, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_SelectString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_GetCurrentInputType_ReturnValue) == 0x0005D0, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_Conv_StringToText_ReturnValue_1) == 0x0005D8, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue) == 0x0005E8, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_MakeStruct_FormatArgumentData_1) == 0x0005F8, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_Conv_StringToText_ReturnValue_2) == 0x000640, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_Conv_StringToText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_GetSubMode_ReturnValue) == 0x000650, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_GetSubMode_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_MakeStruct_FormatArgumentData_2) == 0x000658, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_SwitchEnum_CmpSuccess) == 0x0006A0, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_MakeArray_Array) == 0x0006A8, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_Format_ReturnValue) == 0x0006B8, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_BooleanAND_ReturnValue) == 0x0006C8, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_Key_17) == 0x0006D0, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_Key_17' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_ActionValue_17) == 0x0006E8, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_ActionValue_17' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_BooleanAND_ReturnValue_1) == 0x000708, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_BT_IsLibraryInitialized_ReturnValue) == 0x000709, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_BT_IsLibraryInitialized_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_BT_IsLibraryInitialized_ReturnValue_1) == 0x00070A, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_BT_IsLibraryInitialized_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, Temp_bool_Variable_2) == 0x00070B, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_BooleanAND_ReturnValue_2) == 0x00070C, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_Not_PreBool_ReturnValue_2) == 0x00070D, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_Not_PreBool_ReturnValue_3) == 0x00070E, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_Not_PreBool_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_Key_19) == 0x000710, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_Key_19' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_ActionValue_19) == 0x000728, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_ActionValue_19' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, Temp_bool_Variable_3) == 0x000748, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, Temp_bool_Variable_4) == 0x000749, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::Temp_bool_Variable_4' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_Not_PreBool_ReturnValue_4) == 0x00074A, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_Not_PreBool_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_Not_PreBool_ReturnValue_5) == 0x00074B, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_Not_PreBool_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_Not_PreBool_ReturnValue_6) == 0x00074C, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_Not_PreBool_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_Key_20) == 0x000750, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_Key_20' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, K2Node_InputDebugKeyEvent_ActionValue_20) == 0x000768, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::K2Node_InputDebugKeyEvent_ActionValue_20' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, Temp_bool_Variable_5) == 0x000788, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::Temp_bool_Variable_5' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_Not_PreBool_ReturnValue_7) == 0x000789, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_Not_PreBool_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_IsShippingBuild_ReturnValue_2) == 0x00078A, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_IsShippingBuild_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_IsShippingBuild_ReturnValue_3) == 0x00078B, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_IsShippingBuild_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_IsShippingBuild_ReturnValue_4) == 0x00078C, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_IsShippingBuild_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_IsShippingBuild_ReturnValue_5) == 0x00078D, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_IsShippingBuild_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_IsShippingBuild_ReturnValue_6) == 0x00078E, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_IsShippingBuild_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_BooleanAND_ReturnValue_3) == 0x00078F, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_BooleanAND_ReturnValue_4) == 0x000790, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_BooleanAND_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_BooleanAND_ReturnValue_5) == 0x000791, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_BooleanAND_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000798, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x0007A0, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_IsShippingBuild_ReturnValue_7) == 0x0007A8, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_IsShippingBuild_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_IsShippingBuild_ReturnValue_8) == 0x0007A9, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_IsShippingBuild_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController, CallFunc_IsShippingBuild_ReturnValue_9) == 0x0007AA, "Member 'BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController::CallFunc_IsShippingBuild_ReturnValue_9' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RacePlayerController_C_ExecuteUbergraph_BP_RacePlayerController;
 
 // Function BP_RacePlayerController.BP_RacePlayerController_C.InpActEvt_Alt_G_K2Node_InputDebugKeyEvent_0
 // 0x0038 (0x0038 - 0x0000)
@@ -278,10 +165,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FInputActionValue                      ActionValue;                                       // 0x0018(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_RacePlayerController_C_InpActEvt_Alt_G_K2Node_InputDebugKeyEvent_0) == 0x000008, "Wrong alignment on BP_RacePlayerController_C_InpActEvt_Alt_G_K2Node_InputDebugKeyEvent_0");
-static_assert(sizeof(BP_RacePlayerController_C_InpActEvt_Alt_G_K2Node_InputDebugKeyEvent_0) == 0x000038, "Wrong size on BP_RacePlayerController_C_InpActEvt_Alt_G_K2Node_InputDebugKeyEvent_0");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_Alt_G_K2Node_InputDebugKeyEvent_0, Key) == 0x000000, "Member 'BP_RacePlayerController_C_InpActEvt_Alt_G_K2Node_InputDebugKeyEvent_0::Key' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_Alt_G_K2Node_InputDebugKeyEvent_0, ActionValue) == 0x000018, "Member 'BP_RacePlayerController_C_InpActEvt_Alt_G_K2Node_InputDebugKeyEvent_0::ActionValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RacePlayerController_C_InpActEvt_Alt_G_K2Node_InputDebugKeyEvent_0;
 
 // Function BP_RacePlayerController.BP_RacePlayerController_C.InpActEvt_B_K2Node_InputDebugKeyEvent_5
 // 0x0038 (0x0038 - 0x0000)
@@ -291,10 +175,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FInputActionValue                      ActionValue;                                       // 0x0018(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_RacePlayerController_C_InpActEvt_B_K2Node_InputDebugKeyEvent_5) == 0x000008, "Wrong alignment on BP_RacePlayerController_C_InpActEvt_B_K2Node_InputDebugKeyEvent_5");
-static_assert(sizeof(BP_RacePlayerController_C_InpActEvt_B_K2Node_InputDebugKeyEvent_5) == 0x000038, "Wrong size on BP_RacePlayerController_C_InpActEvt_B_K2Node_InputDebugKeyEvent_5");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_B_K2Node_InputDebugKeyEvent_5, Key) == 0x000000, "Member 'BP_RacePlayerController_C_InpActEvt_B_K2Node_InputDebugKeyEvent_5::Key' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_B_K2Node_InputDebugKeyEvent_5, ActionValue) == 0x000018, "Member 'BP_RacePlayerController_C_InpActEvt_B_K2Node_InputDebugKeyEvent_5::ActionValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RacePlayerController_C_InpActEvt_B_K2Node_InputDebugKeyEvent_5;
 
 // Function BP_RacePlayerController.BP_RacePlayerController_C.InpActEvt_Ctrl_G_K2Node_InputDebugKeyEvent_1
 // 0x0038 (0x0038 - 0x0000)
@@ -304,10 +185,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FInputActionValue                      ActionValue;                                       // 0x0018(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_RacePlayerController_C_InpActEvt_Ctrl_G_K2Node_InputDebugKeyEvent_1) == 0x000008, "Wrong alignment on BP_RacePlayerController_C_InpActEvt_Ctrl_G_K2Node_InputDebugKeyEvent_1");
-static_assert(sizeof(BP_RacePlayerController_C_InpActEvt_Ctrl_G_K2Node_InputDebugKeyEvent_1) == 0x000038, "Wrong size on BP_RacePlayerController_C_InpActEvt_Ctrl_G_K2Node_InputDebugKeyEvent_1");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_Ctrl_G_K2Node_InputDebugKeyEvent_1, Key) == 0x000000, "Member 'BP_RacePlayerController_C_InpActEvt_Ctrl_G_K2Node_InputDebugKeyEvent_1::Key' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_Ctrl_G_K2Node_InputDebugKeyEvent_1, ActionValue) == 0x000018, "Member 'BP_RacePlayerController_C_InpActEvt_Ctrl_G_K2Node_InputDebugKeyEvent_1::ActionValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RacePlayerController_C_InpActEvt_Ctrl_G_K2Node_InputDebugKeyEvent_1;
 
 // Function BP_RacePlayerController.BP_RacePlayerController_C.InpActEvt_F9_K2Node_InputDebugKeyEvent_10
 // 0x0038 (0x0038 - 0x0000)
@@ -317,10 +195,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FInputActionValue                      ActionValue;                                       // 0x0018(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_RacePlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_10) == 0x000008, "Wrong alignment on BP_RacePlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_10");
-static_assert(sizeof(BP_RacePlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_10) == 0x000038, "Wrong size on BP_RacePlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_10");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_10, Key) == 0x000000, "Member 'BP_RacePlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_10::Key' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_10, ActionValue) == 0x000018, "Member 'BP_RacePlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_10::ActionValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RacePlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_10;
 
 // Function BP_RacePlayerController.BP_RacePlayerController_C.InpActEvt_F9_K2Node_InputDebugKeyEvent_11
 // 0x0038 (0x0038 - 0x0000)
@@ -330,10 +205,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FInputActionValue                      ActionValue;                                       // 0x0018(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_RacePlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_11) == 0x000008, "Wrong alignment on BP_RacePlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_11");
-static_assert(sizeof(BP_RacePlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_11) == 0x000038, "Wrong size on BP_RacePlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_11");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_11, Key) == 0x000000, "Member 'BP_RacePlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_11::Key' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_11, ActionValue) == 0x000018, "Member 'BP_RacePlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_11::ActionValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RacePlayerController_C_InpActEvt_F9_K2Node_InputDebugKeyEvent_11;
 
 // Function BP_RacePlayerController.BP_RacePlayerController_C.InpActEvt_F_K2Node_InputDebugKeyEvent_3
 // 0x0038 (0x0038 - 0x0000)
@@ -343,10 +215,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FInputActionValue                      ActionValue;                                       // 0x0018(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_RacePlayerController_C_InpActEvt_F_K2Node_InputDebugKeyEvent_3) == 0x000008, "Wrong alignment on BP_RacePlayerController_C_InpActEvt_F_K2Node_InputDebugKeyEvent_3");
-static_assert(sizeof(BP_RacePlayerController_C_InpActEvt_F_K2Node_InputDebugKeyEvent_3) == 0x000038, "Wrong size on BP_RacePlayerController_C_InpActEvt_F_K2Node_InputDebugKeyEvent_3");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_F_K2Node_InputDebugKeyEvent_3, Key) == 0x000000, "Member 'BP_RacePlayerController_C_InpActEvt_F_K2Node_InputDebugKeyEvent_3::Key' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_F_K2Node_InputDebugKeyEvent_3, ActionValue) == 0x000018, "Member 'BP_RacePlayerController_C_InpActEvt_F_K2Node_InputDebugKeyEvent_3::ActionValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RacePlayerController_C_InpActEvt_F_K2Node_InputDebugKeyEvent_3;
 
 // Function BP_RacePlayerController.BP_RacePlayerController_C.InpActEvt_G_K2Node_InputDebugKeyEvent_20
 // 0x0038 (0x0038 - 0x0000)
@@ -356,10 +225,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FInputActionValue                      ActionValue;                                       // 0x0018(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_RacePlayerController_C_InpActEvt_G_K2Node_InputDebugKeyEvent_20) == 0x000008, "Wrong alignment on BP_RacePlayerController_C_InpActEvt_G_K2Node_InputDebugKeyEvent_20");
-static_assert(sizeof(BP_RacePlayerController_C_InpActEvt_G_K2Node_InputDebugKeyEvent_20) == 0x000038, "Wrong size on BP_RacePlayerController_C_InpActEvt_G_K2Node_InputDebugKeyEvent_20");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_G_K2Node_InputDebugKeyEvent_20, Key) == 0x000000, "Member 'BP_RacePlayerController_C_InpActEvt_G_K2Node_InputDebugKeyEvent_20::Key' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_G_K2Node_InputDebugKeyEvent_20, ActionValue) == 0x000018, "Member 'BP_RacePlayerController_C_InpActEvt_G_K2Node_InputDebugKeyEvent_20::ActionValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RacePlayerController_C_InpActEvt_G_K2Node_InputDebugKeyEvent_20;
 
 // Function BP_RacePlayerController.BP_RacePlayerController_C.InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_16
 // 0x0038 (0x0038 - 0x0000)
@@ -369,10 +235,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FInputActionValue                      ActionValue;                                       // 0x0018(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_RacePlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_16) == 0x000008, "Wrong alignment on BP_RacePlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_16");
-static_assert(sizeof(BP_RacePlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_16) == 0x000038, "Wrong size on BP_RacePlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_16");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_16, Key) == 0x000000, "Member 'BP_RacePlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_16::Key' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_16, ActionValue) == 0x000018, "Member 'BP_RacePlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_16::ActionValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RacePlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_16;
 
 // Function BP_RacePlayerController.BP_RacePlayerController_C.InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_17
 // 0x0038 (0x0038 - 0x0000)
@@ -382,10 +245,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FInputActionValue                      ActionValue;                                       // 0x0018(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_RacePlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_17) == 0x000008, "Wrong alignment on BP_RacePlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_17");
-static_assert(sizeof(BP_RacePlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_17) == 0x000038, "Wrong size on BP_RacePlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_17");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_17, Key) == 0x000000, "Member 'BP_RacePlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_17::Key' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_17, ActionValue) == 0x000018, "Member 'BP_RacePlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_17::ActionValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RacePlayerController_C_InpActEvt_Gamepad_LeftThumbstick_K2Node_InputDebugKeyEvent_17;
 
 // Function BP_RacePlayerController.BP_RacePlayerController_C.InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_14
 // 0x0038 (0x0038 - 0x0000)
@@ -395,10 +255,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FInputActionValue                      ActionValue;                                       // 0x0018(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_RacePlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_14) == 0x000008, "Wrong alignment on BP_RacePlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_14");
-static_assert(sizeof(BP_RacePlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_14) == 0x000038, "Wrong size on BP_RacePlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_14");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_14, Key) == 0x000000, "Member 'BP_RacePlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_14::Key' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_14, ActionValue) == 0x000018, "Member 'BP_RacePlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_14::ActionValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RacePlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_14;
 
 // Function BP_RacePlayerController.BP_RacePlayerController_C.InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_15
 // 0x0038 (0x0038 - 0x0000)
@@ -408,10 +265,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FInputActionValue                      ActionValue;                                       // 0x0018(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_RacePlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_15) == 0x000008, "Wrong alignment on BP_RacePlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_15");
-static_assert(sizeof(BP_RacePlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_15) == 0x000038, "Wrong size on BP_RacePlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_15");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_15, Key) == 0x000000, "Member 'BP_RacePlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_15::Key' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_15, ActionValue) == 0x000018, "Member 'BP_RacePlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_15::ActionValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RacePlayerController_C_InpActEvt_Gamepad_RightThumbstick_K2Node_InputDebugKeyEvent_15;
 
 // Function BP_RacePlayerController.BP_RacePlayerController_C.InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_12
 // 0x0038 (0x0038 - 0x0000)
@@ -421,10 +275,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FInputActionValue                      ActionValue;                                       // 0x0018(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_RacePlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_12) == 0x000008, "Wrong alignment on BP_RacePlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_12");
-static_assert(sizeof(BP_RacePlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_12) == 0x000038, "Wrong size on BP_RacePlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_12");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_12, Key) == 0x000000, "Member 'BP_RacePlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_12::Key' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_12, ActionValue) == 0x000018, "Member 'BP_RacePlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_12::ActionValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RacePlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_12;
 
 // Function BP_RacePlayerController.BP_RacePlayerController_C.InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_13
 // 0x0038 (0x0038 - 0x0000)
@@ -434,10 +285,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FInputActionValue                      ActionValue;                                       // 0x0018(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_RacePlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_13) == 0x000008, "Wrong alignment on BP_RacePlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_13");
-static_assert(sizeof(BP_RacePlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_13) == 0x000038, "Wrong size on BP_RacePlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_13");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_13, Key) == 0x000000, "Member 'BP_RacePlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_13::Key' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_13, ActionValue) == 0x000018, "Member 'BP_RacePlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_13::ActionValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RacePlayerController_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputDebugKeyEvent_13;
 
 // Function BP_RacePlayerController.BP_RacePlayerController_C.InpActEvt_LeftControl_K2Node_InputDebugKeyEvent_8
 // 0x0038 (0x0038 - 0x0000)
@@ -447,10 +295,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FInputActionValue                      ActionValue;                                       // 0x0018(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_RacePlayerController_C_InpActEvt_LeftControl_K2Node_InputDebugKeyEvent_8) == 0x000008, "Wrong alignment on BP_RacePlayerController_C_InpActEvt_LeftControl_K2Node_InputDebugKeyEvent_8");
-static_assert(sizeof(BP_RacePlayerController_C_InpActEvt_LeftControl_K2Node_InputDebugKeyEvent_8) == 0x000038, "Wrong size on BP_RacePlayerController_C_InpActEvt_LeftControl_K2Node_InputDebugKeyEvent_8");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_LeftControl_K2Node_InputDebugKeyEvent_8, Key) == 0x000000, "Member 'BP_RacePlayerController_C_InpActEvt_LeftControl_K2Node_InputDebugKeyEvent_8::Key' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_LeftControl_K2Node_InputDebugKeyEvent_8, ActionValue) == 0x000018, "Member 'BP_RacePlayerController_C_InpActEvt_LeftControl_K2Node_InputDebugKeyEvent_8::ActionValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RacePlayerController_C_InpActEvt_LeftControl_K2Node_InputDebugKeyEvent_8;
 
 // Function BP_RacePlayerController.BP_RacePlayerController_C.InpActEvt_LeftShift_K2Node_InputDebugKeyEvent_9
 // 0x0038 (0x0038 - 0x0000)
@@ -460,10 +305,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FInputActionValue                      ActionValue;                                       // 0x0018(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_RacePlayerController_C_InpActEvt_LeftShift_K2Node_InputDebugKeyEvent_9) == 0x000008, "Wrong alignment on BP_RacePlayerController_C_InpActEvt_LeftShift_K2Node_InputDebugKeyEvent_9");
-static_assert(sizeof(BP_RacePlayerController_C_InpActEvt_LeftShift_K2Node_InputDebugKeyEvent_9) == 0x000038, "Wrong size on BP_RacePlayerController_C_InpActEvt_LeftShift_K2Node_InputDebugKeyEvent_9");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_LeftShift_K2Node_InputDebugKeyEvent_9, Key) == 0x000000, "Member 'BP_RacePlayerController_C_InpActEvt_LeftShift_K2Node_InputDebugKeyEvent_9::Key' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_LeftShift_K2Node_InputDebugKeyEvent_9, ActionValue) == 0x000018, "Member 'BP_RacePlayerController_C_InpActEvt_LeftShift_K2Node_InputDebugKeyEvent_9::ActionValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RacePlayerController_C_InpActEvt_LeftShift_K2Node_InputDebugKeyEvent_9;
 
 // Function BP_RacePlayerController.BP_RacePlayerController_C.InpActEvt_M_K2Node_InputDebugKeyEvent_7
 // 0x0038 (0x0038 - 0x0000)
@@ -473,10 +315,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FInputActionValue                      ActionValue;                                       // 0x0018(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_RacePlayerController_C_InpActEvt_M_K2Node_InputDebugKeyEvent_7) == 0x000008, "Wrong alignment on BP_RacePlayerController_C_InpActEvt_M_K2Node_InputDebugKeyEvent_7");
-static_assert(sizeof(BP_RacePlayerController_C_InpActEvt_M_K2Node_InputDebugKeyEvent_7) == 0x000038, "Wrong size on BP_RacePlayerController_C_InpActEvt_M_K2Node_InputDebugKeyEvent_7");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_M_K2Node_InputDebugKeyEvent_7, Key) == 0x000000, "Member 'BP_RacePlayerController_C_InpActEvt_M_K2Node_InputDebugKeyEvent_7::Key' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_M_K2Node_InputDebugKeyEvent_7, ActionValue) == 0x000018, "Member 'BP_RacePlayerController_C_InpActEvt_M_K2Node_InputDebugKeyEvent_7::ActionValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RacePlayerController_C_InpActEvt_M_K2Node_InputDebugKeyEvent_7;
 
 // Function BP_RacePlayerController.BP_RacePlayerController_C.InpActEvt_N_K2Node_InputDebugKeyEvent_6
 // 0x0038 (0x0038 - 0x0000)
@@ -486,10 +325,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FInputActionValue                      ActionValue;                                       // 0x0018(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_RacePlayerController_C_InpActEvt_N_K2Node_InputDebugKeyEvent_6) == 0x000008, "Wrong alignment on BP_RacePlayerController_C_InpActEvt_N_K2Node_InputDebugKeyEvent_6");
-static_assert(sizeof(BP_RacePlayerController_C_InpActEvt_N_K2Node_InputDebugKeyEvent_6) == 0x000038, "Wrong size on BP_RacePlayerController_C_InpActEvt_N_K2Node_InputDebugKeyEvent_6");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_N_K2Node_InputDebugKeyEvent_6, Key) == 0x000000, "Member 'BP_RacePlayerController_C_InpActEvt_N_K2Node_InputDebugKeyEvent_6::Key' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_N_K2Node_InputDebugKeyEvent_6, ActionValue) == 0x000018, "Member 'BP_RacePlayerController_C_InpActEvt_N_K2Node_InputDebugKeyEvent_6::ActionValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RacePlayerController_C_InpActEvt_N_K2Node_InputDebugKeyEvent_6;
 
 // Function BP_RacePlayerController.BP_RacePlayerController_C.InpActEvt_P_K2Node_InputDebugKeyEvent_19
 // 0x0038 (0x0038 - 0x0000)
@@ -499,10 +335,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FInputActionValue                      ActionValue;                                       // 0x0018(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_RacePlayerController_C_InpActEvt_P_K2Node_InputDebugKeyEvent_19) == 0x000008, "Wrong alignment on BP_RacePlayerController_C_InpActEvt_P_K2Node_InputDebugKeyEvent_19");
-static_assert(sizeof(BP_RacePlayerController_C_InpActEvt_P_K2Node_InputDebugKeyEvent_19) == 0x000038, "Wrong size on BP_RacePlayerController_C_InpActEvt_P_K2Node_InputDebugKeyEvent_19");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_P_K2Node_InputDebugKeyEvent_19, Key) == 0x000000, "Member 'BP_RacePlayerController_C_InpActEvt_P_K2Node_InputDebugKeyEvent_19::Key' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_P_K2Node_InputDebugKeyEvent_19, ActionValue) == 0x000018, "Member 'BP_RacePlayerController_C_InpActEvt_P_K2Node_InputDebugKeyEvent_19::ActionValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RacePlayerController_C_InpActEvt_P_K2Node_InputDebugKeyEvent_19;
 
 // Function BP_RacePlayerController.BP_RacePlayerController_C.InpActEvt_Period_K2Node_InputDebugKeyEvent_18
 // 0x0038 (0x0038 - 0x0000)
@@ -512,10 +345,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FInputActionValue                      ActionValue;                                       // 0x0018(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_RacePlayerController_C_InpActEvt_Period_K2Node_InputDebugKeyEvent_18) == 0x000008, "Wrong alignment on BP_RacePlayerController_C_InpActEvt_Period_K2Node_InputDebugKeyEvent_18");
-static_assert(sizeof(BP_RacePlayerController_C_InpActEvt_Period_K2Node_InputDebugKeyEvent_18) == 0x000038, "Wrong size on BP_RacePlayerController_C_InpActEvt_Period_K2Node_InputDebugKeyEvent_18");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_Period_K2Node_InputDebugKeyEvent_18, Key) == 0x000000, "Member 'BP_RacePlayerController_C_InpActEvt_Period_K2Node_InputDebugKeyEvent_18::Key' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_Period_K2Node_InputDebugKeyEvent_18, ActionValue) == 0x000018, "Member 'BP_RacePlayerController_C_InpActEvt_Period_K2Node_InputDebugKeyEvent_18::ActionValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RacePlayerController_C_InpActEvt_Period_K2Node_InputDebugKeyEvent_18;
 
 // Function BP_RacePlayerController.BP_RacePlayerController_C.InpActEvt_Shift_G_K2Node_InputDebugKeyEvent_2
 // 0x0038 (0x0038 - 0x0000)
@@ -525,10 +355,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FInputActionValue                      ActionValue;                                       // 0x0018(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_RacePlayerController_C_InpActEvt_Shift_G_K2Node_InputDebugKeyEvent_2) == 0x000008, "Wrong alignment on BP_RacePlayerController_C_InpActEvt_Shift_G_K2Node_InputDebugKeyEvent_2");
-static_assert(sizeof(BP_RacePlayerController_C_InpActEvt_Shift_G_K2Node_InputDebugKeyEvent_2) == 0x000038, "Wrong size on BP_RacePlayerController_C_InpActEvt_Shift_G_K2Node_InputDebugKeyEvent_2");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_Shift_G_K2Node_InputDebugKeyEvent_2, Key) == 0x000000, "Member 'BP_RacePlayerController_C_InpActEvt_Shift_G_K2Node_InputDebugKeyEvent_2::Key' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_Shift_G_K2Node_InputDebugKeyEvent_2, ActionValue) == 0x000018, "Member 'BP_RacePlayerController_C_InpActEvt_Shift_G_K2Node_InputDebugKeyEvent_2::ActionValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RacePlayerController_C_InpActEvt_Shift_G_K2Node_InputDebugKeyEvent_2;
 
 // Function BP_RacePlayerController.BP_RacePlayerController_C.InpActEvt_Six_K2Node_InputDebugKeyEvent_4
 // 0x0038 (0x0038 - 0x0000)
@@ -538,10 +365,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FInputActionValue                      ActionValue;                                       // 0x0018(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(BP_RacePlayerController_C_InpActEvt_Six_K2Node_InputDebugKeyEvent_4) == 0x000008, "Wrong alignment on BP_RacePlayerController_C_InpActEvt_Six_K2Node_InputDebugKeyEvent_4");
-static_assert(sizeof(BP_RacePlayerController_C_InpActEvt_Six_K2Node_InputDebugKeyEvent_4) == 0x000038, "Wrong size on BP_RacePlayerController_C_InpActEvt_Six_K2Node_InputDebugKeyEvent_4");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_Six_K2Node_InputDebugKeyEvent_4, Key) == 0x000000, "Member 'BP_RacePlayerController_C_InpActEvt_Six_K2Node_InputDebugKeyEvent_4::Key' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_InpActEvt_Six_K2Node_InputDebugKeyEvent_4, ActionValue) == 0x000018, "Member 'BP_RacePlayerController_C_InpActEvt_Six_K2Node_InputDebugKeyEvent_4::ActionValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RacePlayerController_C_InpActEvt_Six_K2Node_InputDebugKeyEvent_4;
 
 // Function BP_RacePlayerController.BP_RacePlayerController_C.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -550,9 +374,7 @@ struct BP_RacePlayerController_C_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_RacePlayerController_C_ReceiveEndPlay) == 0x000001, "Wrong alignment on BP_RacePlayerController_C_ReceiveEndPlay");
-static_assert(sizeof(BP_RacePlayerController_C_ReceiveEndPlay) == 0x000001, "Wrong size on BP_RacePlayerController_C_ReceiveEndPlay");
-static_assert(offsetof(BP_RacePlayerController_C_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'BP_RacePlayerController_C_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RacePlayerController_C_ReceiveEndPlay;
 
 // Function BP_RacePlayerController.BP_RacePlayerController_C.IsFadeClear
 // 0x0018 (0x0018 - 0x0000)
@@ -566,13 +388,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_RacePlayerController_C_IsFadeClear) == 0x000008, "Wrong alignment on BP_RacePlayerController_C_IsFadeClear");
-static_assert(sizeof(BP_RacePlayerController_C_IsFadeClear) == 0x000018, "Wrong size on BP_RacePlayerController_C_IsFadeClear");
-static_assert(offsetof(BP_RacePlayerController_C_IsFadeClear, ReturnValue) == 0x000000, "Member 'BP_RacePlayerController_C_IsFadeClear::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_IsFadeClear, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000008, "Member 'BP_RacePlayerController_C_IsFadeClear::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_IsFadeClear, CallFunc_IsPlayingFade_ReturnValue) == 0x000010, "Member 'BP_RacePlayerController_C_IsFadeClear::CallFunc_IsPlayingFade_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_IsFadeClear, CallFunc_IsValid_ReturnValue) == 0x000011, "Member 'BP_RacePlayerController_C_IsFadeClear::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_IsFadeClear, CallFunc_Not_PreBool_ReturnValue) == 0x000012, "Member 'BP_RacePlayerController_C_IsFadeClear::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RacePlayerController_C_IsFadeClear;
 
 // Function BP_RacePlayerController.BP_RacePlayerController_C.OnIsMenuInputEnabled
 // 0x0002 (0x0002 - 0x0000)
@@ -582,10 +398,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsFadeClear_ReturnValue;                  // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_RacePlayerController_C_OnIsMenuInputEnabled) == 0x000001, "Wrong alignment on BP_RacePlayerController_C_OnIsMenuInputEnabled");
-static_assert(sizeof(BP_RacePlayerController_C_OnIsMenuInputEnabled) == 0x000002, "Wrong size on BP_RacePlayerController_C_OnIsMenuInputEnabled");
-static_assert(offsetof(BP_RacePlayerController_C_OnIsMenuInputEnabled, ReturnValue) == 0x000000, "Member 'BP_RacePlayerController_C_OnIsMenuInputEnabled::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_OnIsMenuInputEnabled, CallFunc_IsFadeClear_ReturnValue) == 0x000001, "Member 'BP_RacePlayerController_C_OnIsMenuInputEnabled::CallFunc_IsFadeClear_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RacePlayerController_C_OnIsMenuInputEnabled;
 
 // Function BP_RacePlayerController.BP_RacePlayerController_C.OnIsSubMenuInputEnabled
 // 0x0002 (0x0002 - 0x0000)
@@ -595,10 +408,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsFadeClear_ReturnValue;                  // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_RacePlayerController_C_OnIsSubMenuInputEnabled) == 0x000001, "Wrong alignment on BP_RacePlayerController_C_OnIsSubMenuInputEnabled");
-static_assert(sizeof(BP_RacePlayerController_C_OnIsSubMenuInputEnabled) == 0x000002, "Wrong size on BP_RacePlayerController_C_OnIsSubMenuInputEnabled");
-static_assert(offsetof(BP_RacePlayerController_C_OnIsSubMenuInputEnabled, ReturnValue) == 0x000000, "Member 'BP_RacePlayerController_C_OnIsSubMenuInputEnabled::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RacePlayerController_C_OnIsSubMenuInputEnabled, CallFunc_IsFadeClear_ReturnValue) == 0x000001, "Member 'BP_RacePlayerController_C_OnIsSubMenuInputEnabled::CallFunc_IsFadeClear_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RacePlayerController_C_OnIsSubMenuInputEnabled;
 
 }
 

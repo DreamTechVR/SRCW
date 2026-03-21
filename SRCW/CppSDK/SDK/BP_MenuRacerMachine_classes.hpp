@@ -23,15 +23,18 @@ class ABP_MenuRacerMachine_C final : public AMenuRacerMachine
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_MenuRacerMachine_C">();
+		BP_STATIC_CLASS_IMPL("BP_MenuRacerMachine_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_MenuRacerMachine_C")
 	}
 	static class ABP_MenuRacerMachine_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_MenuRacerMachine_C>();
 	}
 };
-static_assert(alignof(ABP_MenuRacerMachine_C) == 0x000008, "Wrong alignment on ABP_MenuRacerMachine_C");
-static_assert(sizeof(ABP_MenuRacerMachine_C) == 0x000500, "Wrong size on ABP_MenuRacerMachine_C");
+DUMPER7_ASSERTS_ABP_MenuRacerMachine_C;
 
 }
 

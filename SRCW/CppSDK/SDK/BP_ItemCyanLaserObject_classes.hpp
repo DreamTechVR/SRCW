@@ -23,15 +23,18 @@ class ABP_ItemCyanLaserObject_C final : public AItemCyanLaserObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ItemCyanLaserObject_C">();
+		BP_STATIC_CLASS_IMPL("BP_ItemCyanLaserObject_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ItemCyanLaserObject_C")
 	}
 	static class ABP_ItemCyanLaserObject_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ItemCyanLaserObject_C>();
 	}
 };
-static_assert(alignof(ABP_ItemCyanLaserObject_C) == 0x000010, "Wrong alignment on ABP_ItemCyanLaserObject_C");
-static_assert(sizeof(ABP_ItemCyanLaserObject_C) == 0x000810, "Wrong size on ABP_ItemCyanLaserObject_C");
+DUMPER7_ASSERTS_ABP_ItemCyanLaserObject_C;
 
 }
 

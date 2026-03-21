@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "UNION_structs.hpp"
-#include "ST_GarageData_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "UNION_structs.hpp"
+#include "ST_GarageData_structs.hpp"
 
 
 namespace SDK::Params
@@ -40,21 +40,7 @@ public:
 	uint8                                         Pad_381[0x7];                                      // 0x0381(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FST_GarageData                         CallFunc_GetGarageData_OutGarageData_6;            // 0x0388(0x0058)(ZeroConstructor, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GarageMenuTopState_C_UpdateRacer) == 0x000008, "Wrong alignment on BPC_GarageMenuTopState_C_UpdateRacer");
-static_assert(sizeof(BPC_GarageMenuTopState_C_UpdateRacer) == 0x0003E0, "Wrong size on BPC_GarageMenuTopState_C_UpdateRacer");
-static_assert(offsetof(BPC_GarageMenuTopState_C_UpdateRacer, InChildSequenceId) == 0x000000, "Member 'BPC_GarageMenuTopState_C_UpdateRacer::InChildSequenceId' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_UpdateRacer, K2Node_SwitchEnum_CmpSuccess) == 0x000001, "Member 'BPC_GarageMenuTopState_C_UpdateRacer::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_UpdateRacer, CallFunc_GetGarageData_OutGarageData) == 0x000008, "Member 'BPC_GarageMenuTopState_C_UpdateRacer::CallFunc_GetGarageData_OutGarageData' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_UpdateRacer, CallFunc_GetGarageData_OutGarageData_1) == 0x000060, "Member 'BPC_GarageMenuTopState_C_UpdateRacer::CallFunc_GetGarageData_OutGarageData_1' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_UpdateRacer, CallFunc_GetMachineCustomizeDataById_OutUserMachineCustomizeData) == 0x0000B8, "Member 'BPC_GarageMenuTopState_C_UpdateRacer::CallFunc_GetMachineCustomizeDataById_OutUserMachineCustomizeData' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_UpdateRacer, CallFunc_GetGarageData_OutGarageData_2) == 0x000130, "Member 'BPC_GarageMenuTopState_C_UpdateRacer::CallFunc_GetGarageData_OutGarageData_2' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_UpdateRacer, CallFunc_GetGarageData_OutGarageData_3) == 0x000188, "Member 'BPC_GarageMenuTopState_C_UpdateRacer::CallFunc_GetGarageData_OutGarageData_3' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_UpdateRacer, CallFunc_GetGarageData_OutGarageData_4) == 0x0001E0, "Member 'BPC_GarageMenuTopState_C_UpdateRacer::CallFunc_GetGarageData_OutGarageData_4' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_UpdateRacer, CallFunc_GetGarageData_OutGarageData_5) == 0x000238, "Member 'BPC_GarageMenuTopState_C_UpdateRacer::CallFunc_GetGarageData_OutGarageData_5' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_UpdateRacer, CallFunc_GetMachineCustomizeDataById_OutUserMachineCustomizeData_1) == 0x000290, "Member 'BPC_GarageMenuTopState_C_UpdateRacer::CallFunc_GetMachineCustomizeDataById_OutUserMachineCustomizeData_1' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_UpdateRacer, CallFunc_GetMachineCustomizeDataById_OutUserMachineCustomizeData_2) == 0x000308, "Member 'BPC_GarageMenuTopState_C_UpdateRacer::CallFunc_GetMachineCustomizeDataById_OutUserMachineCustomizeData_2' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_UpdateRacer, CallFunc_Not_PreBool_ReturnValue) == 0x000380, "Member 'BPC_GarageMenuTopState_C_UpdateRacer::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_UpdateRacer, CallFunc_GetGarageData_OutGarageData_6) == 0x000388, "Member 'BPC_GarageMenuTopState_C_UpdateRacer::CallFunc_GetGarageData_OutGarageData_6' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GarageMenuTopState_C_UpdateRacer;
 
 // Function BPC_GarageMenuTopState.BPC_GarageMenuTopState_C.GadgetCustomizeSequence_OnTurntableControlStateChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -63,9 +49,7 @@ struct BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnTurntableControlStateC
 public:
 	bool                                          bInIsControllable;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnTurntableControlStateChanged) == 0x000001, "Wrong alignment on BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnTurntableControlStateChanged");
-static_assert(sizeof(BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnTurntableControlStateChanged) == 0x000001, "Wrong size on BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnTurntableControlStateChanged");
-static_assert(offsetof(BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnTurntableControlStateChanged, bInIsControllable) == 0x000000, "Member 'BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnTurntableControlStateChanged::bInIsControllable' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnTurntableControlStateChanged;
 
 // Function BPC_GarageMenuTopState.BPC_GarageMenuTopState_C.GadgetCustomizeSequence_OnParamWindowControlStateChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -74,9 +58,7 @@ struct BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnParamWindowControlStat
 public:
 	bool                                          bInIsControllable;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnParamWindowControlStateChanged) == 0x000001, "Wrong alignment on BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnParamWindowControlStateChanged");
-static_assert(sizeof(BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnParamWindowControlStateChanged) == 0x000001, "Wrong size on BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnParamWindowControlStateChanged");
-static_assert(offsetof(BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnParamWindowControlStateChanged, bInIsControllable) == 0x000000, "Member 'BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnParamWindowControlStateChanged::bInIsControllable' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnParamWindowControlStateChanged;
 
 // Function BPC_GarageMenuTopState.BPC_GarageMenuTopState_C.TopWidget_OnDecisionAnimFinished
 // 0x0001 (0x0001 - 0x0000)
@@ -85,9 +67,7 @@ struct BPC_GarageMenuTopState_C_TopWidget_OnDecisionAnimFinished final
 public:
 	EGarageChildSequenceId                        InChildSequenceId;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GarageMenuTopState_C_TopWidget_OnDecisionAnimFinished) == 0x000001, "Wrong alignment on BPC_GarageMenuTopState_C_TopWidget_OnDecisionAnimFinished");
-static_assert(sizeof(BPC_GarageMenuTopState_C_TopWidget_OnDecisionAnimFinished) == 0x000001, "Wrong size on BPC_GarageMenuTopState_C_TopWidget_OnDecisionAnimFinished");
-static_assert(offsetof(BPC_GarageMenuTopState_C_TopWidget_OnDecisionAnimFinished, InChildSequenceId) == 0x000000, "Member 'BPC_GarageMenuTopState_C_TopWidget_OnDecisionAnimFinished::InChildSequenceId' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GarageMenuTopState_C_TopWidget_OnDecisionAnimFinished;
 
 // Function BPC_GarageMenuTopState.BPC_GarageMenuTopState_C.TopWidget_OnFocus
 // 0x0001 (0x0001 - 0x0000)
@@ -96,9 +76,7 @@ struct BPC_GarageMenuTopState_C_TopWidget_OnFocus final
 public:
 	EGarageChildSequenceId                        InChildSequenceId;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GarageMenuTopState_C_TopWidget_OnFocus) == 0x000001, "Wrong alignment on BPC_GarageMenuTopState_C_TopWidget_OnFocus");
-static_assert(sizeof(BPC_GarageMenuTopState_C_TopWidget_OnFocus) == 0x000001, "Wrong size on BPC_GarageMenuTopState_C_TopWidget_OnFocus");
-static_assert(offsetof(BPC_GarageMenuTopState_C_TopWidget_OnFocus, InChildSequenceId) == 0x000000, "Member 'BPC_GarageMenuTopState_C_TopWidget_OnFocus::InChildSequenceId' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GarageMenuTopState_C_TopWidget_OnFocus;
 
 // Function BPC_GarageMenuTopState.BPC_GarageMenuTopState_C.MachineCustomizeSequence_OnMachineFocused
 // 0x0001 (0x0001 - 0x0000)
@@ -107,9 +85,7 @@ struct BPC_GarageMenuTopState_C_MachineCustomizeSequence_OnMachineFocused final
 public:
 	EMachineId                                    InMachineID;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GarageMenuTopState_C_MachineCustomizeSequence_OnMachineFocused) == 0x000001, "Wrong alignment on BPC_GarageMenuTopState_C_MachineCustomizeSequence_OnMachineFocused");
-static_assert(sizeof(BPC_GarageMenuTopState_C_MachineCustomizeSequence_OnMachineFocused) == 0x000001, "Wrong size on BPC_GarageMenuTopState_C_MachineCustomizeSequence_OnMachineFocused");
-static_assert(offsetof(BPC_GarageMenuTopState_C_MachineCustomizeSequence_OnMachineFocused, InMachineID) == 0x000000, "Member 'BPC_GarageMenuTopState_C_MachineCustomizeSequence_OnMachineFocused::InMachineID' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GarageMenuTopState_C_MachineCustomizeSequence_OnMachineFocused;
 
 // Function BPC_GarageMenuTopState.BPC_GarageMenuTopState_C.GadgetCustomizeSequence_OnMachinePartsFocused
 // 0x0002 (0x0002 - 0x0000)
@@ -119,10 +95,7 @@ public:
 	EMachineId                                    InMachineID;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EMachinePartsType                             InMachinePartsType;                                // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnMachinePartsFocused) == 0x000001, "Wrong alignment on BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnMachinePartsFocused");
-static_assert(sizeof(BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnMachinePartsFocused) == 0x000002, "Wrong size on BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnMachinePartsFocused");
-static_assert(offsetof(BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnMachinePartsFocused, InMachineID) == 0x000000, "Member 'BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnMachinePartsFocused::InMachineID' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnMachinePartsFocused, InMachinePartsType) == 0x000001, "Member 'BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnMachinePartsFocused::InMachinePartsType' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnMachinePartsFocused;
 
 // Function BPC_GarageMenuTopState.BPC_GarageMenuTopState_C.MachineCustomizeSequence_OnShortcutCustomizeStarted
 // 0x0002 (0x0002 - 0x0000)
@@ -132,10 +105,7 @@ public:
 	EMachineId                                    InMachineID;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EMachinePartsType                             InMachinePartsType;                                // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GarageMenuTopState_C_MachineCustomizeSequence_OnShortcutCustomizeStarted) == 0x000001, "Wrong alignment on BPC_GarageMenuTopState_C_MachineCustomizeSequence_OnShortcutCustomizeStarted");
-static_assert(sizeof(BPC_GarageMenuTopState_C_MachineCustomizeSequence_OnShortcutCustomizeStarted) == 0x000002, "Wrong size on BPC_GarageMenuTopState_C_MachineCustomizeSequence_OnShortcutCustomizeStarted");
-static_assert(offsetof(BPC_GarageMenuTopState_C_MachineCustomizeSequence_OnShortcutCustomizeStarted, InMachineID) == 0x000000, "Member 'BPC_GarageMenuTopState_C_MachineCustomizeSequence_OnShortcutCustomizeStarted::InMachineID' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_MachineCustomizeSequence_OnShortcutCustomizeStarted, InMachinePartsType) == 0x000001, "Member 'BPC_GarageMenuTopState_C_MachineCustomizeSequence_OnShortcutCustomizeStarted::InMachinePartsType' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GarageMenuTopState_C_MachineCustomizeSequence_OnShortcutCustomizeStarted;
 
 // Function BPC_GarageMenuTopState.BPC_GarageMenuTopState_C.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -144,9 +114,7 @@ struct BPC_GarageMenuTopState_C_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GarageMenuTopState_C_ReceiveEndPlay) == 0x000001, "Wrong alignment on BPC_GarageMenuTopState_C_ReceiveEndPlay");
-static_assert(sizeof(BPC_GarageMenuTopState_C_ReceiveEndPlay) == 0x000001, "Wrong size on BPC_GarageMenuTopState_C_ReceiveEndPlay");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'BPC_GarageMenuTopState_C_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GarageMenuTopState_C_ReceiveEndPlay;
 
 // Function BPC_GarageMenuTopState.BPC_GarageMenuTopState_C.ExecuteUbergraph_BPC_GarageMenuTopState
 // 0x05A8 (0x05A8 - 0x0000)
@@ -221,61 +189,7 @@ public:
 	uint8                                         Pad_5A1[0x3];                                      // 0x05A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_2;             // 0x05A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState) == 0x000008, "Wrong alignment on BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState");
-static_assert(sizeof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState) == 0x0005A8, "Wrong size on BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, EntryPoint) == 0x000000, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, CallFunc_GetGarageData_OutGarageData) == 0x000028, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::CallFunc_GetGarageData_OutGarageData' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, K2Node_SetFieldsInStruct_StructOut) == 0x000080, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::K2Node_SetFieldsInStruct_StructOut' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, CallFunc_GetChildStateMachine_ReturnValue) == 0x0000D8, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::CallFunc_GetChildStateMachine_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, K2Node_DynamicCast_AsBP_Machine_Customize_Sequence) == 0x0000E0, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::K2Node_DynamicCast_AsBP_Machine_Customize_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, K2Node_DynamicCast_bSuccess) == 0x0000E8, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, CallFunc_GetAppPlayerController_OutAppPlayerController) == 0x0000F0, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::CallFunc_GetAppPlayerController_OutAppPlayerController' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, K2Node_CustomEvent_bInIsControllable_1) == 0x0000F8, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::K2Node_CustomEvent_bInIsControllable_1' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, K2Node_CustomEvent_bInIsControllable) == 0x0000F9, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::K2Node_CustomEvent_bInIsControllable' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, K2Node_CustomEvent_InChildSequenceId_1) == 0x0000FA, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::K2Node_CustomEvent_InChildSequenceId_1' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, K2Node_CustomEvent_InChildSequenceId) == 0x0000FB, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::K2Node_CustomEvent_InChildSequenceId' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, K2Node_SwitchEnum_CmpSuccess) == 0x0000FC, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, K2Node_CustomEvent_InMachineId_2) == 0x0000FD, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::K2Node_CustomEvent_InMachineId_2' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, CallFunc_GetGarageData_OutGarageData_1) == 0x000100, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::CallFunc_GetGarageData_OutGarageData_1' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, K2Node_CustomEvent_InMachineId_1) == 0x000158, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::K2Node_CustomEvent_InMachineId_1' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, K2Node_CustomEvent_InMachinePartsType_1) == 0x000159, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::K2Node_CustomEvent_InMachinePartsType_1' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, CallFunc_GetGarageData_OutGarageData_2) == 0x000160, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::CallFunc_GetGarageData_OutGarageData_2' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, K2Node_SetFieldsInStruct_StructOut_1) == 0x0001B8, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::K2Node_SetFieldsInStruct_StructOut_1' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, CallFunc_GetGarageData_OutGarageData_3) == 0x000210, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::CallFunc_GetGarageData_OutGarageData_3' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, K2Node_SetFieldsInStruct_StructOut_2) == 0x000268, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::K2Node_SetFieldsInStruct_StructOut_2' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, K2Node_CustomEvent_InMachineId) == 0x0002C0, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::K2Node_CustomEvent_InMachineId' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, K2Node_CustomEvent_InMachinePartsType) == 0x0002C1, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::K2Node_CustomEvent_InMachinePartsType' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, CallFunc_GetGarageData_OutGarageData_4) == 0x0002C8, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::CallFunc_GetGarageData_OutGarageData_4' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, K2Node_SetFieldsInStruct_StructOut_3) == 0x000320, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::K2Node_SetFieldsInStruct_StructOut_3' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, CallFunc_GetGarageData_OutGarageData_5) == 0x000378, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::CallFunc_GetGarageData_OutGarageData_5' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, K2Node_SetFieldsInStruct_StructOut_4) == 0x0003D0, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::K2Node_SetFieldsInStruct_StructOut_4' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, K2Node_Event_EndPlayReason) == 0x000428, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::K2Node_Event_EndPlayReason' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, CallFunc_GetGarageData_OutGarageData_6) == 0x000430, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::CallFunc_GetGarageData_OutGarageData_6' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, CallFunc_GetChildStateMachine_ReturnValue_1) == 0x000488, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::CallFunc_GetChildStateMachine_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, CallFunc_PlayAnim_ReturnValue) == 0x000490, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::CallFunc_PlayAnim_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, K2Node_DynamicCast_AsBP_Machine_Customize_Sequence_1) == 0x000498, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::K2Node_DynamicCast_AsBP_Machine_Customize_Sequence_1' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, K2Node_DynamicCast_bSuccess_1) == 0x0004A0, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, K2Node_CreateDelegate_OutputDelegate_2) == 0x0004A4, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, CallFunc_GetGarageData_OutGarageData_7) == 0x0004B8, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::CallFunc_GetGarageData_OutGarageData_7' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, K2Node_CreateDelegate_OutputDelegate_3) == 0x000510, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, K2Node_CreateDelegate_OutputDelegate_4) == 0x000520, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, K2Node_CreateDelegate_OutputDelegate_5) == 0x000530, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, K2Node_CreateDelegate_OutputDelegate_6) == 0x000540, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, K2Node_CreateDelegate_OutputDelegate_7) == 0x000550, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, CallFunc_Create_ReturnValue) == 0x000560, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000568, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, CallFunc_IsValid_ReturnValue) == 0x000570, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, CallFunc_GetOwnerStateMachine_ReturnValue) == 0x000578, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::CallFunc_GetOwnerStateMachine_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, CallFunc_MakeLiteralByte_ReturnValue) == 0x000580, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, K2Node_DynamicCast_AsBP_Garage_Sequence) == 0x000588, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::K2Node_DynamicCast_AsBP_Garage_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, K2Node_DynamicCast_bSuccess_2) == 0x000590, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000594, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, CallFunc_MakeLiteralByte_ReturnValue_1) == 0x000598, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::CallFunc_MakeLiteralByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x00059C, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, CallFunc_MakeLiteralByte_ReturnValue_2) == 0x0005A0, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::CallFunc_MakeLiteralByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState, CallFunc_Conv_ByteToInt_ReturnValue_2) == 0x0005A4, "Member 'BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState::CallFunc_Conv_ByteToInt_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState;
 
 }
 

@@ -10,29 +10,32 @@
 
 #include "Basic.hpp"
 
-#include "UnionUI_structs.hpp"
+#include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BPC_GetDLCFreeContent.BPC_GetDLCFreeContent_C
-// 0x0040 (0x0188 - 0x0148)
+// 0x0050 (0x01A0 - 0x0150)
 class UBPC_GetDLCFreeContent_C final : public UGetFreeContentState
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0148(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWBP_ItemGet_Window_C*                  RewardGetWindow;                                   // 0x0150(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FRewardGetWindowParam>          Reward_Array;                                      // 0x0158(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<EDriverId>                             CharacterList;                                     // 0x0168(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UWBP_AddCharacterInfo_C*                UnlockCharacterWidget;                             // 0x0178(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CharacterListIndex;                                // 0x0180(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0150(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWBP_ItemGet_Window_C*                  RewardGetWindow;                                   // 0x0158(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FRewardGetWindowParam>          Reward_Array;                                      // 0x0160(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<EDriverId>                             CharacterList;                                     // 0x0170(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UWBP_AddCharacterInfo_C*                UnlockCharacterWidget;                             // 0x0180(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CharacterListIndex;                                // 0x0188(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_18C[0x4];                                      // 0x018C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              OnSkipEvent;                                       // 0x0190(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
+	void CreateSilentSkipFooter();
 	void DLCFlow_End();
 	void DLCFlow_RewardDialog();
 	void DLCFlow_Start();
@@ -54,28 +57,27 @@ public:
 	void OnExitState();
 	void OnFinishedFade(EUnionUIFadeDirection FadeDirection);
 	void OnInitState();
+	void OnSkip();
 	void OpenRewardWindow(TArray<struct FRewardGetWindowParam>& rewardList, const class FText& Title, class UWBP_ItemGet_Window_C** newParam);
 	void OpenUnlockCharacter();
-	void Set_Footer_Visibility(bool IsVisible);
+	void SkipDLC_UnlockCharacter();
+	void SKIPFreeContent_UnlockCharacter();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_GetDLCFreeContent_C">();
+		BP_STATIC_CLASS_IMPL("BPC_GetDLCFreeContent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_GetDLCFreeContent_C")
 	}
 	static class UBPC_GetDLCFreeContent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_GetDLCFreeContent_C>();
 	}
 };
-static_assert(alignof(UBPC_GetDLCFreeContent_C) == 0x000008, "Wrong alignment on UBPC_GetDLCFreeContent_C");
-static_assert(sizeof(UBPC_GetDLCFreeContent_C) == 0x000188, "Wrong size on UBPC_GetDLCFreeContent_C");
-static_assert(offsetof(UBPC_GetDLCFreeContent_C, UberGraphFrame) == 0x000148, "Member 'UBPC_GetDLCFreeContent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_GetDLCFreeContent_C, RewardGetWindow) == 0x000150, "Member 'UBPC_GetDLCFreeContent_C::RewardGetWindow' has a wrong offset!");
-static_assert(offsetof(UBPC_GetDLCFreeContent_C, Reward_Array) == 0x000158, "Member 'UBPC_GetDLCFreeContent_C::Reward_Array' has a wrong offset!");
-static_assert(offsetof(UBPC_GetDLCFreeContent_C, CharacterList) == 0x000168, "Member 'UBPC_GetDLCFreeContent_C::CharacterList' has a wrong offset!");
-static_assert(offsetof(UBPC_GetDLCFreeContent_C, UnlockCharacterWidget) == 0x000178, "Member 'UBPC_GetDLCFreeContent_C::UnlockCharacterWidget' has a wrong offset!");
-static_assert(offsetof(UBPC_GetDLCFreeContent_C, CharacterListIndex) == 0x000180, "Member 'UBPC_GetDLCFreeContent_C::CharacterListIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_GetDLCFreeContent_C;
 
 }
 

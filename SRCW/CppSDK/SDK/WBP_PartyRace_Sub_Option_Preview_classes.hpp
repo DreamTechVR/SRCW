@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
+#include "UnionSystem_structs.hpp"
 
 
 namespace SDK
@@ -42,22 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_PartyRace_Sub_Option_Preview_C">();
+		BP_STATIC_CLASS_IMPL("WBP_PartyRace_Sub_Option_Preview_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_PartyRace_Sub_Option_Preview_C")
 	}
 	static class UWBP_PartyRace_Sub_Option_Preview_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_PartyRace_Sub_Option_Preview_C>();
 	}
 };
-static_assert(alignof(UWBP_PartyRace_Sub_Option_Preview_C) == 0x000008, "Wrong alignment on UWBP_PartyRace_Sub_Option_Preview_C");
-static_assert(sizeof(UWBP_PartyRace_Sub_Option_Preview_C) == 0x000390, "Wrong size on UWBP_PartyRace_Sub_Option_Preview_C");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Preview_C, UberGraphFrame) == 0x000308, "Member 'UWBP_PartyRace_Sub_Option_Preview_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Preview_C, Detail_Base) == 0x000310, "Member 'UWBP_PartyRace_Sub_Option_Preview_C::Detail_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Preview_C, Title_Base) == 0x000318, "Member 'UWBP_PartyRace_Sub_Option_Preview_C::Title_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Preview_C, TXT_Mode_Detail) == 0x000320, "Member 'UWBP_PartyRace_Sub_Option_Preview_C::TXT_Mode_Detail' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Preview_C, TXT_Mode_Name) == 0x000328, "Member 'UWBP_PartyRace_Sub_Option_Preview_C::TXT_Mode_Name' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Preview_C, SettingLineIndex) == 0x000330, "Member 'UWBP_PartyRace_Sub_Option_Preview_C::SettingLineIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Preview_C, Out_Row) == 0x000338, "Member 'UWBP_PartyRace_Sub_Option_Preview_C::Out_Row' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_PartyRace_Sub_Option_Preview_C;
 
 }
 

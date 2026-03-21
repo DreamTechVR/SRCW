@@ -62,41 +62,7 @@ public:
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x00B8(0x0010)()
 	class UCommonMenuFooterButton*                CallFunc_GetButton_ReturnValue;                    // 0x00C8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect) == 0x000008, "Wrong alignment on WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect");
-static_assert(sizeof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect) == 0x0000D0, "Wrong size on WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect, EntryPoint) == 0x000000, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect, Temp_bool_Variable) == 0x000014, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect, Temp_byte_Variable) == 0x000015, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect, Temp_byte_Variable_1) == 0x000016, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect, CallFunc_IsExclusionGhostUpDownloadEventMilestoneVersion_ReturnValue) == 0x000017, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect::CallFunc_IsExclusionGhostUpDownloadEventMilestoneVersion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect, CallFunc_Not_PreBool_ReturnValue) == 0x000018, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect, CallFunc_CreatePlayAnimationProxyObject_Result) == 0x000020, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect::CallFunc_CreatePlayAnimationProxyObject_Result' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect, CallFunc_CreatePlayAnimationProxyObject_ReturnValue) == 0x000028, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect::CallFunc_CreatePlayAnimationProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect, CallFunc_PlayAnimation_ReturnValue) == 0x000030, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect, CallFunc_IsValid_ReturnValue) == 0x000038, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect, CallFunc_MakeLiteralInt_ReturnValue) == 0x00003C, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect, CallFunc_CreatePlayAnimationProxyObject_Result_1) == 0x000040, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect::CallFunc_CreatePlayAnimationProxyObject_Result_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect, CallFunc_CreatePlayAnimationProxyObject_ReturnValue_1) == 0x000048, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect::CallFunc_CreatePlayAnimationProxyObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect, CallFunc_MakeLiteralBool_ReturnValue) == 0x000050, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect::CallFunc_MakeLiteralBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect, CallFunc_IsValid_ReturnValue_1) == 0x000051, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect, CallFunc_GetOwningPlayer_ReturnValue) == 0x000058, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect, K2Node_MakeArray_Array) == 0x000060, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect, CallFunc_SetupButtonsPanel_ReturnValue) == 0x000070, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect::CallFunc_SetupButtonsPanel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect, CallFunc_GetLastFocusedButton_OutLastFocusedButtonIndex) == 0x000078, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect::CallFunc_GetLastFocusedButton_OutLastFocusedButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect, CallFunc_GetLastFocusedButton_ReturnValue) == 0x000080, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect::CallFunc_GetLastFocusedButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect, CallFunc_PlayAnimation_ReturnValue_1) == 0x000088, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect, CallFunc_PlayAnimation_ReturnValue_2) == 0x000090, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect, K2Node_Select_Default) == 0x000098, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect, K2Node_Event_InStageId) == 0x000099, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect::K2Node_Event_InStageId' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect, K2Node_CreateDelegate_OutputDelegate_1) == 0x00009C, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect, K2Node_CustomEvent_bIsEnable) == 0x0000AC, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect::K2Node_CustomEvent_bIsEnable' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect, CallFunc_IsUserHasNetworkRankingPrivilege_ReturnValue) == 0x0000AD, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect::CallFunc_IsUserHasNetworkRankingPrivilege_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect, CallFunc_Not_PreBool_ReturnValue_1) == 0x0000AE, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect, CallFunc_IsDisableTimeTrialMilestoneVersion_ReturnValue) == 0x0000AF, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect::CallFunc_IsDisableTimeTrialMilestoneVersion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect, CallFunc_BooleanAND_ReturnValue) == 0x0000B0, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect, CallFunc_MakeLiteralText_ReturnValue) == 0x0000B8, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect, CallFunc_GetButton_ReturnValue) == 0x0000C8, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect::CallFunc_GetButton_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_Sub_ModeSelect_C_ExecuteUbergraph_WBP_TimeTrial_Sub_ModeSelect;
 
 // Function WBP_TimeTrial_Sub_ModeSelect.WBP_TimeTrial_Sub_ModeSelect_C.SetFooterVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -105,9 +71,7 @@ struct WBP_TimeTrial_Sub_ModeSelect_C_SetFooterVisible final
 public:
 	bool                                          bIsEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TimeTrial_Sub_ModeSelect_C_SetFooterVisible) == 0x000001, "Wrong alignment on WBP_TimeTrial_Sub_ModeSelect_C_SetFooterVisible");
-static_assert(sizeof(WBP_TimeTrial_Sub_ModeSelect_C_SetFooterVisible) == 0x000001, "Wrong size on WBP_TimeTrial_Sub_ModeSelect_C_SetFooterVisible");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_SetFooterVisible, bIsEnable) == 0x000000, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_SetFooterVisible::bIsEnable' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_Sub_ModeSelect_C_SetFooterVisible;
 
 // Function WBP_TimeTrial_Sub_ModeSelect.WBP_TimeTrial_Sub_ModeSelect_C.SubModeSetup
 // 0x0001 (0x0001 - 0x0000)
@@ -116,9 +80,7 @@ struct WBP_TimeTrial_Sub_ModeSelect_C_SubModeSetup final
 public:
 	EStageId                                      InStageId;                                         // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TimeTrial_Sub_ModeSelect_C_SubModeSetup) == 0x000001, "Wrong alignment on WBP_TimeTrial_Sub_ModeSelect_C_SubModeSetup");
-static_assert(sizeof(WBP_TimeTrial_Sub_ModeSelect_C_SubModeSetup) == 0x000001, "Wrong size on WBP_TimeTrial_Sub_ModeSelect_C_SubModeSetup");
-static_assert(offsetof(WBP_TimeTrial_Sub_ModeSelect_C_SubModeSetup, InStageId) == 0x000000, "Member 'WBP_TimeTrial_Sub_ModeSelect_C_SubModeSetup::InStageId' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_Sub_ModeSelect_C_SubModeSetup;
 
 }
 

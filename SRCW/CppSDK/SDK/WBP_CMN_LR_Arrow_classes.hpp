@@ -53,28 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_LR_Arrow_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_LR_Arrow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_LR_Arrow_C")
 	}
 	static class UWBP_CMN_LR_Arrow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_LR_Arrow_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_LR_Arrow_C) == 0x000008, "Wrong alignment on UWBP_CMN_LR_Arrow_C");
-static_assert(sizeof(UWBP_CMN_LR_Arrow_C) == 0x000348, "Wrong size on UWBP_CMN_LR_Arrow_C");
-static_assert(offsetof(UWBP_CMN_LR_Arrow_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_CMN_LR_Arrow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_LR_Arrow_C, Right_In) == 0x0002E8, "Member 'UWBP_CMN_LR_Arrow_C::Right_In' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_LR_Arrow_C, Left_In) == 0x0002F0, "Member 'UWBP_CMN_LR_Arrow_C::Left_In' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_LR_Arrow_C, Loop) == 0x0002F8, "Member 'UWBP_CMN_LR_Arrow_C::Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_LR_Arrow_C, ButtonL) == 0x000300, "Member 'UWBP_CMN_LR_Arrow_C::ButtonL' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_LR_Arrow_C, ButtonR) == 0x000308, "Member 'UWBP_CMN_LR_Arrow_C::ButtonR' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_LR_Arrow_C, WBP_FooterMenu_Sub_ControllerBtn_L) == 0x000310, "Member 'UWBP_CMN_LR_Arrow_C::WBP_FooterMenu_Sub_ControllerBtn_L' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_LR_Arrow_C, WBP_FooterMenu_Sub_ControllerBtn_R) == 0x000318, "Member 'UWBP_CMN_LR_Arrow_C::WBP_FooterMenu_Sub_ControllerBtn_R' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_LR_Arrow_C, WidgetSwitcher_LR_Arrow) == 0x000320, "Member 'UWBP_CMN_LR_Arrow_C::WidgetSwitcher_LR_Arrow' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_LR_Arrow_C, ArrowIndex) == 0x000328, "Member 'UWBP_CMN_LR_Arrow_C::ArrowIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_LR_Arrow_C, OnClicked) == 0x000330, "Member 'UWBP_CMN_LR_Arrow_C::OnClicked' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_LR_Arrow_C, ButtonIndex) == 0x000340, "Member 'UWBP_CMN_LR_Arrow_C::ButtonIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_LR_Arrow_C, ButtonVisibility) == 0x000344, "Member 'UWBP_CMN_LR_Arrow_C::ButtonVisibility' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_LR_Arrow_C;
 
 }
 

@@ -21,8 +21,7 @@ namespace SDK
 struct ABP_HoldVioletVoid::FAnimBlueprintGeneratedConstantData final : public ABPT_HoldItem::FAnimBlueprintGeneratedConstantData
 {
 };
-static_assert(alignof(ABP_HoldVioletVoid::FAnimBlueprintGeneratedConstantData) == 0x000008, "Wrong alignment on ABP_HoldVioletVoid::FAnimBlueprintGeneratedConstantData");
-static_assert(sizeof(ABP_HoldVioletVoid::FAnimBlueprintGeneratedConstantData) == 0x000D30, "Wrong size on ABP_HoldVioletVoid::FAnimBlueprintGeneratedConstantData");
+DUMPER7_ASSERTS_ABP_HoldVioletVoid__FAnimBlueprintGeneratedConstantData;
 
 }
 

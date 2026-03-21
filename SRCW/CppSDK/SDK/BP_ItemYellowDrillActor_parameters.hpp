@@ -25,12 +25,7 @@ public:
 	class UNiagaraComponent*                      CallFunc_SpawnSystemAttached_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UNiagaraComponent*                      CallFunc_SpawnSystemAttached_ReturnValue_1;        // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_ItemYellowDrillActor_C_ExecuteUbergraph_BP_ItemYellowDrillActor) == 0x000008, "Wrong alignment on BP_ItemYellowDrillActor_C_ExecuteUbergraph_BP_ItemYellowDrillActor");
-static_assert(sizeof(BP_ItemYellowDrillActor_C_ExecuteUbergraph_BP_ItemYellowDrillActor) == 0x000018, "Wrong size on BP_ItemYellowDrillActor_C_ExecuteUbergraph_BP_ItemYellowDrillActor");
-static_assert(offsetof(BP_ItemYellowDrillActor_C_ExecuteUbergraph_BP_ItemYellowDrillActor, EntryPoint) == 0x000000, "Member 'BP_ItemYellowDrillActor_C_ExecuteUbergraph_BP_ItemYellowDrillActor::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_ItemYellowDrillActor_C_ExecuteUbergraph_BP_ItemYellowDrillActor, K2Node_Event_bIsPlay) == 0x000004, "Member 'BP_ItemYellowDrillActor_C_ExecuteUbergraph_BP_ItemYellowDrillActor::K2Node_Event_bIsPlay' has a wrong offset!");
-static_assert(offsetof(BP_ItemYellowDrillActor_C_ExecuteUbergraph_BP_ItemYellowDrillActor, CallFunc_SpawnSystemAttached_ReturnValue) == 0x000008, "Member 'BP_ItemYellowDrillActor_C_ExecuteUbergraph_BP_ItemYellowDrillActor::CallFunc_SpawnSystemAttached_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ItemYellowDrillActor_C_ExecuteUbergraph_BP_ItemYellowDrillActor, CallFunc_SpawnSystemAttached_ReturnValue_1) == 0x000010, "Member 'BP_ItemYellowDrillActor_C_ExecuteUbergraph_BP_ItemYellowDrillActor::CallFunc_SpawnSystemAttached_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_ItemYellowDrillActor_C_ExecuteUbergraph_BP_ItemYellowDrillActor;
 
 // Function BP_ItemYellowDrillActor.BP_ItemYellowDrillActor_C.OnCountDown
 // 0x0001 (0x0001 - 0x0000)
@@ -39,9 +34,7 @@ struct BP_ItemYellowDrillActor_C_OnCountDown final
 public:
 	bool                                          bIsPlay;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_ItemYellowDrillActor_C_OnCountDown) == 0x000001, "Wrong alignment on BP_ItemYellowDrillActor_C_OnCountDown");
-static_assert(sizeof(BP_ItemYellowDrillActor_C_OnCountDown) == 0x000001, "Wrong size on BP_ItemYellowDrillActor_C_OnCountDown");
-static_assert(offsetof(BP_ItemYellowDrillActor_C_OnCountDown, bIsPlay) == 0x000000, "Member 'BP_ItemYellowDrillActor_C_OnCountDown::bIsPlay' has a wrong offset!");
+DUMPER7_ASSERTS_BP_ItemYellowDrillActor_C_OnCountDown;
 
 }
 

@@ -43,25 +43,7 @@ public:
 	uint8                                         Pad_7E[0x2];                                       // 0x007E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance) == 0x000008, "Wrong alignment on BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance");
-static_assert(sizeof(BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance) == 0x000088, "Wrong size on BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance");
-static_assert(offsetof(BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance, EntryPoint) == 0x000000, "Member 'BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance, Temp_object_Variable) == 0x000008, "Member 'BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance, K2Node_DynamicCast_As_______) == 0x000010, "Member 'BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance::K2Node_DynamicCast_As_______' has a wrong offset!");
-static_assert(offsetof(BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance, CallFunc_GetDataTableRowNames_OutRowNames) == 0x000020, "Member 'BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance::CallFunc_GetDataTableRowNames_OutRowNames' has a wrong offset!");
-static_assert(offsetof(BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance, Temp_int_Array_Index_Variable) == 0x000030, "Member 'BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance, CallFunc_Array_Length_ReturnValue) == 0x000034, "Member 'BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance, CallFunc_Array_Get_Item) == 0x000038, "Member 'BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance, CallFunc_GetDataTableRowFromName_OutRow) == 0x000040, "Member 'BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000058, "Member 'BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance, K2Node_CreateDelegate_OutputDelegate) == 0x00005C, "Member 'BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance, CallFunc_Array_Add_ReturnValue) == 0x00006C, "Member 'BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance, K2Node_CustomEvent_Loaded) == 0x000070, "Member 'BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance::K2Node_CustomEvent_Loaded' has a wrong offset!");
-static_assert(offsetof(BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance, Temp_int_Loop_Counter_Variable) == 0x000078, "Member 'BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance, CallFunc_IsShippingBuild_ReturnValue) == 0x00007C, "Member 'BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance::CallFunc_IsShippingBuild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance, CallFunc_Less_IntInt_ReturnValue) == 0x00007D, "Member 'BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance, CallFunc_Add_IntInt_ReturnValue) == 0x000080, "Member 'BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_UnionGameInstance_C_ExecuteUbergraph_BP_UnionGameInstance;
 
 // Function BP_UnionGameInstance.BP_UnionGameInstance_C.OnLoaded_C798D8744866C6A781E1E5B0E4C53C75
 // 0x0008 (0x0008 - 0x0000)
@@ -70,9 +52,7 @@ struct BP_UnionGameInstance_C_OnLoaded_C798D8744866C6A781E1E5B0E4C53C75 final
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_UnionGameInstance_C_OnLoaded_C798D8744866C6A781E1E5B0E4C53C75) == 0x000008, "Wrong alignment on BP_UnionGameInstance_C_OnLoaded_C798D8744866C6A781E1E5B0E4C53C75");
-static_assert(sizeof(BP_UnionGameInstance_C_OnLoaded_C798D8744866C6A781E1E5B0E4C53C75) == 0x000008, "Wrong size on BP_UnionGameInstance_C_OnLoaded_C798D8744866C6A781E1E5B0E4C53C75");
-static_assert(offsetof(BP_UnionGameInstance_C_OnLoaded_C798D8744866C6A781E1E5B0E4C53C75, Loaded) == 0x000000, "Member 'BP_UnionGameInstance_C_OnLoaded_C798D8744866C6A781E1E5B0E4C53C75::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BP_UnionGameInstance_C_OnLoaded_C798D8744866C6A781E1E5B0E4C53C75;
 
 // Function BP_UnionGameInstance.BP_UnionGameInstance_C.GetVCSRevisionNumIF
 // 0x0008 (0x0008 - 0x0000)
@@ -82,10 +62,7 @@ public:
 	int32                                         RevisionNum;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetVCSRevisionNum_OutVCSRevisionNum;      // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_UnionGameInstance_C_GetVCSRevisionNumIF) == 0x000004, "Wrong alignment on BP_UnionGameInstance_C_GetVCSRevisionNumIF");
-static_assert(sizeof(BP_UnionGameInstance_C_GetVCSRevisionNumIF) == 0x000008, "Wrong size on BP_UnionGameInstance_C_GetVCSRevisionNumIF");
-static_assert(offsetof(BP_UnionGameInstance_C_GetVCSRevisionNumIF, RevisionNum) == 0x000000, "Member 'BP_UnionGameInstance_C_GetVCSRevisionNumIF::RevisionNum' has a wrong offset!");
-static_assert(offsetof(BP_UnionGameInstance_C_GetVCSRevisionNumIF, CallFunc_GetVCSRevisionNum_OutVCSRevisionNum) == 0x000004, "Member 'BP_UnionGameInstance_C_GetVCSRevisionNumIF::CallFunc_GetVCSRevisionNum_OutVCSRevisionNum' has a wrong offset!");
+DUMPER7_ASSERTS_BP_UnionGameInstance_C_GetVCSRevisionNumIF;
 
 // Function BP_UnionGameInstance.BP_UnionGameInstance_C.GetVCSRevisionStrIF
 // 0x0020 (0x0020 - 0x0000)
@@ -95,10 +72,7 @@ public:
 	class FString                                 VCSStr;                                            // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_GetVCSRevisionStr_OutVCSString;           // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_UnionGameInstance_C_GetVCSRevisionStrIF) == 0x000008, "Wrong alignment on BP_UnionGameInstance_C_GetVCSRevisionStrIF");
-static_assert(sizeof(BP_UnionGameInstance_C_GetVCSRevisionStrIF) == 0x000020, "Wrong size on BP_UnionGameInstance_C_GetVCSRevisionStrIF");
-static_assert(offsetof(BP_UnionGameInstance_C_GetVCSRevisionStrIF, VCSStr) == 0x000000, "Member 'BP_UnionGameInstance_C_GetVCSRevisionStrIF::VCSStr' has a wrong offset!");
-static_assert(offsetof(BP_UnionGameInstance_C_GetVCSRevisionStrIF, CallFunc_GetVCSRevisionStr_OutVCSString) == 0x000010, "Member 'BP_UnionGameInstance_C_GetVCSRevisionStrIF::CallFunc_GetVCSRevisionStr_OutVCSString' has a wrong offset!");
+DUMPER7_ASSERTS_BP_UnionGameInstance_C_GetVCSRevisionStrIF;
 
 }
 

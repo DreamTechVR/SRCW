@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -46,23 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_RaceSequenceStatePerformRival_C">();
+		BP_STATIC_CLASS_IMPL("BPC_RaceSequenceStatePerformRival_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_RaceSequenceStatePerformRival_C")
 	}
 	static class UBPC_RaceSequenceStatePerformRival_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_RaceSequenceStatePerformRival_C>();
 	}
 };
-static_assert(alignof(UBPC_RaceSequenceStatePerformRival_C) == 0x000008, "Wrong alignment on UBPC_RaceSequenceStatePerformRival_C");
-static_assert(sizeof(UBPC_RaceSequenceStatePerformRival_C) == 0x000168, "Wrong size on UBPC_RaceSequenceStatePerformRival_C");
-static_assert(offsetof(UBPC_RaceSequenceStatePerformRival_C, UberGraphFrame) == 0x000120, "Member 'UBPC_RaceSequenceStatePerformRival_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStatePerformRival_C, Out_Effects) == 0x000128, "Member 'UBPC_RaceSequenceStatePerformRival_C::Out_Effects' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStatePerformRival_C, PlayerParent) == 0x000138, "Member 'UBPC_RaceSequenceStatePerformRival_C::PlayerParent' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStatePerformRival_C, RivalParent) == 0x000140, "Member 'UBPC_RaceSequenceStatePerformRival_C::RivalParent' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStatePerformRival_C, BPPlayer) == 0x000148, "Member 'UBPC_RaceSequenceStatePerformRival_C::BPPlayer' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStatePerformRival_C, BPPlayerFinal) == 0x000150, "Member 'UBPC_RaceSequenceStatePerformRival_C::BPPlayerFinal' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStatePerformRival_C, DisabledSplitscreen) == 0x000158, "Member 'UBPC_RaceSequenceStatePerformRival_C::DisabledSplitscreen' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStatePerformRival_C, SkipDelaySeconds) == 0x000160, "Member 'UBPC_RaceSequenceStatePerformRival_C::SkipDelaySeconds' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_RaceSequenceStatePerformRival_C;
 
 }
 

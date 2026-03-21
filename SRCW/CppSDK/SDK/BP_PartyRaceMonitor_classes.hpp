@@ -42,25 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_PartyRaceMonitor_C">();
+		BP_STATIC_CLASS_IMPL("BP_PartyRaceMonitor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_PartyRaceMonitor_C")
 	}
 	static class ABP_PartyRaceMonitor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_PartyRaceMonitor_C>();
 	}
 };
-static_assert(alignof(ABP_PartyRaceMonitor_C) == 0x000008, "Wrong alignment on ABP_PartyRaceMonitor_C");
-static_assert(sizeof(ABP_PartyRaceMonitor_C) == 0x0002E0, "Wrong size on ABP_PartyRaceMonitor_C");
-static_assert(offsetof(ABP_PartyRaceMonitor_C, UberGraphFrame) == 0x000290, "Member 'ABP_PartyRaceMonitor_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_PartyRaceMonitor_C, TextRender) == 0x000298, "Member 'ABP_PartyRaceMonitor_C::TextRender' has a wrong offset!");
-static_assert(offsetof(ABP_PartyRaceMonitor_C, PresetNameHeader) == 0x0002A0, "Member 'ABP_PartyRaceMonitor_C::PresetNameHeader' has a wrong offset!");
-static_assert(offsetof(ABP_PartyRaceMonitor_C, ImageBK) == 0x0002A8, "Member 'ABP_PartyRaceMonitor_C::ImageBK' has a wrong offset!");
-static_assert(offsetof(ABP_PartyRaceMonitor_C, StaticMesh) == 0x0002B0, "Member 'ABP_PartyRaceMonitor_C::StaticMesh' has a wrong offset!");
-static_assert(offsetof(ABP_PartyRaceMonitor_C, ImagePanel) == 0x0002B8, "Member 'ABP_PartyRaceMonitor_C::ImagePanel' has a wrong offset!");
-static_assert(offsetof(ABP_PartyRaceMonitor_C, Scene) == 0x0002C0, "Member 'ABP_PartyRaceMonitor_C::Scene' has a wrong offset!");
-static_assert(offsetof(ABP_PartyRaceMonitor_C, DefaultSceneRoot) == 0x0002C8, "Member 'ABP_PartyRaceMonitor_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABP_PartyRaceMonitor_C, ImagePanelMat) == 0x0002D0, "Member 'ABP_PartyRaceMonitor_C::ImagePanelMat' has a wrong offset!");
-static_assert(offsetof(ABP_PartyRaceMonitor_C, HeaderPanelMat) == 0x0002D8, "Member 'ABP_PartyRaceMonitor_C::HeaderPanelMat' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_PartyRaceMonitor_C;
 
 }
 

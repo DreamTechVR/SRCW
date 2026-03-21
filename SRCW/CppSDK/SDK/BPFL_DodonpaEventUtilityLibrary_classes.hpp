@@ -21,7 +21,7 @@ namespace SDK
 class UBPFL_DodonpaEventUtilityLibrary_C final : public UBlueprintFunctionLibrary
 {
 public:
-	static void Call_Dodonpa_Event(class FName EventName, class UObject* __WorldContext);
+	static void Call_Dodonpa_Event(class FName EventName, class UObject* __WorldContext, bool* IsSucceeded);
 	static void DodonpaEventDestroy(class UObject* __WorldContext);
 	static void GetDodonpaEventCamera(class UObject* __WorldContext, class ACameraActor** Camera);
 	static void GetMapLevelStreaming(class UObject* __WorldContext, class ULevelStreaming** MapLevelStreaming);
@@ -31,15 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPFL_DodonpaEventUtilityLibrary_C">();
+		BP_STATIC_CLASS_IMPL("BPFL_DodonpaEventUtilityLibrary_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPFL_DodonpaEventUtilityLibrary_C")
 	}
 	static class UBPFL_DodonpaEventUtilityLibrary_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPFL_DodonpaEventUtilityLibrary_C>();
 	}
 };
-static_assert(alignof(UBPFL_DodonpaEventUtilityLibrary_C) == 0x000008, "Wrong alignment on UBPFL_DodonpaEventUtilityLibrary_C");
-static_assert(sizeof(UBPFL_DodonpaEventUtilityLibrary_C) == 0x000028, "Wrong size on UBPFL_DodonpaEventUtilityLibrary_C");
+DUMPER7_ASSERTS_UBPFL_DodonpaEventUtilityLibrary_C;
 
 }
 

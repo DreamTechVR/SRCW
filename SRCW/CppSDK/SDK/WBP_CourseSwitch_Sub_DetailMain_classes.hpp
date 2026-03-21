@@ -31,21 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CourseSwitch_Sub_DetailMain_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CourseSwitch_Sub_DetailMain_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CourseSwitch_Sub_DetailMain_C")
 	}
 	static class UWBP_CourseSwitch_Sub_DetailMain_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CourseSwitch_Sub_DetailMain_C>();
 	}
 };
-static_assert(alignof(UWBP_CourseSwitch_Sub_DetailMain_C) == 0x000008, "Wrong alignment on UWBP_CourseSwitch_Sub_DetailMain_C");
-static_assert(sizeof(UWBP_CourseSwitch_Sub_DetailMain_C) == 0x000310, "Wrong size on UWBP_CourseSwitch_Sub_DetailMain_C");
-static_assert(offsetof(UWBP_CourseSwitch_Sub_DetailMain_C, BG_Base) == 0x0002E0, "Member 'UWBP_CourseSwitch_Sub_DetailMain_C::BG_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_Sub_DetailMain_C, BG_UVScroll_01) == 0x0002E8, "Member 'UWBP_CourseSwitch_Sub_DetailMain_C::BG_UVScroll_01' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_Sub_DetailMain_C, BG_UVScroll_02) == 0x0002F0, "Member 'UWBP_CourseSwitch_Sub_DetailMain_C::BG_UVScroll_02' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_Sub_DetailMain_C, NameLine) == 0x0002F8, "Member 'UWBP_CourseSwitch_Sub_DetailMain_C::NameLine' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_Sub_DetailMain_C, TXT_CourseName) == 0x000300, "Member 'UWBP_CourseSwitch_Sub_DetailMain_C::TXT_CourseName' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_Sub_DetailMain_C, WBP_CourseSwitch_Sub_RingBase) == 0x000308, "Member 'UWBP_CourseSwitch_Sub_DetailMain_C::WBP_CourseSwitch_Sub_RingBase' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CourseSwitch_Sub_DetailMain_C;
 
 }
 

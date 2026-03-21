@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "E3DCaptureMenuType_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "E3DCaptureMenuType_structs.hpp"
 #include "UnionUI_classes.hpp"
 
 
@@ -43,22 +43,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_UI3DCaptureTo2D_C">();
+		BP_STATIC_CLASS_IMPL("BP_UI3DCaptureTo2D_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_UI3DCaptureTo2D_C")
 	}
 	static class ABP_UI3DCaptureTo2D_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_UI3DCaptureTo2D_C>();
 	}
 };
-static_assert(alignof(ABP_UI3DCaptureTo2D_C) == 0x000010, "Wrong alignment on ABP_UI3DCaptureTo2D_C");
-static_assert(sizeof(ABP_UI3DCaptureTo2D_C) == 0x0003D0, "Wrong size on ABP_UI3DCaptureTo2D_C");
-static_assert(offsetof(ABP_UI3DCaptureTo2D_C, UberGraphFrame) == 0x0002B0, "Member 'ABP_UI3DCaptureTo2D_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_UI3DCaptureTo2D_C, Camera) == 0x0002B8, "Member 'ABP_UI3DCaptureTo2D_C::Camera' has a wrong offset!");
-static_assert(offsetof(ABP_UI3DCaptureTo2D_C, In_Actor) == 0x0002C0, "Member 'ABP_UI3DCaptureTo2D_C::In_Actor' has a wrong offset!");
-static_assert(offsetof(ABP_UI3DCaptureTo2D_C, bDebug) == 0x0002C8, "Member 'ABP_UI3DCaptureTo2D_C::bDebug' has a wrong offset!");
-static_assert(offsetof(ABP_UI3DCaptureTo2D_C, TopMenuTransform) == 0x0002D0, "Member 'ABP_UI3DCaptureTo2D_C::TopMenuTransform' has a wrong offset!");
-static_assert(offsetof(ABP_UI3DCaptureTo2D_C, CaptureTransformMap) == 0x000330, "Member 'ABP_UI3DCaptureTo2D_C::CaptureTransformMap' has a wrong offset!");
-static_assert(offsetof(ABP_UI3DCaptureTo2D_C, SplitBaseCharaMachineTransformMap) == 0x000380, "Member 'ABP_UI3DCaptureTo2D_C::SplitBaseCharaMachineTransformMap' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_UI3DCaptureTo2D_C;
 
 }
 

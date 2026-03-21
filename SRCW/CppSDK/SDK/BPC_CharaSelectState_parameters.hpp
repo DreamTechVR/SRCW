@@ -36,18 +36,7 @@ public:
 	uint8                                         Pad_2F[0x1];                                       // 0x002F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_CharaSelectState_C_ExecuteUbergraph_BPC_CharaSelectState) == 0x000008, "Wrong alignment on BPC_CharaSelectState_C_ExecuteUbergraph_BPC_CharaSelectState");
-static_assert(sizeof(BPC_CharaSelectState_C_ExecuteUbergraph_BPC_CharaSelectState) == 0x000038, "Wrong size on BPC_CharaSelectState_C_ExecuteUbergraph_BPC_CharaSelectState");
-static_assert(offsetof(BPC_CharaSelectState_C_ExecuteUbergraph_BPC_CharaSelectState, EntryPoint) == 0x000000, "Member 'BPC_CharaSelectState_C_ExecuteUbergraph_BPC_CharaSelectState::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BPC_CharaSelectState_C_ExecuteUbergraph_BPC_CharaSelectState, CallFunc_GetSequence_ReturnValue) == 0x000008, "Member 'BPC_CharaSelectState_C_ExecuteUbergraph_BPC_CharaSelectState::CallFunc_GetSequence_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_CharaSelectState_C_ExecuteUbergraph_BPC_CharaSelectState, CallFunc_IsLevelLoaded_ReturnValue) == 0x000010, "Member 'BPC_CharaSelectState_C_ExecuteUbergraph_BPC_CharaSelectState::CallFunc_IsLevelLoaded_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_CharaSelectState_C_ExecuteUbergraph_BPC_CharaSelectState, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000018, "Member 'BPC_CharaSelectState_C_ExecuteUbergraph_BPC_CharaSelectState::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_CharaSelectState_C_ExecuteUbergraph_BPC_CharaSelectState, CallFunc_GetSequence_ReturnValue_1) == 0x000020, "Member 'BPC_CharaSelectState_C_ExecuteUbergraph_BPC_CharaSelectState::CallFunc_GetSequence_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_CharaSelectState_C_ExecuteUbergraph_BPC_CharaSelectState, CallFunc_MakeLiteralInt_ReturnValue) == 0x000028, "Member 'BPC_CharaSelectState_C_ExecuteUbergraph_BPC_CharaSelectState::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_CharaSelectState_C_ExecuteUbergraph_BPC_CharaSelectState, CallFunc_GetSelectedDriverId_OutId) == 0x00002C, "Member 'BPC_CharaSelectState_C_ExecuteUbergraph_BPC_CharaSelectState::CallFunc_GetSelectedDriverId_OutId' has a wrong offset!");
-static_assert(offsetof(BPC_CharaSelectState_C_ExecuteUbergraph_BPC_CharaSelectState, CallFunc_GetSelectedDriverId_OutExecsPin) == 0x00002D, "Member 'BPC_CharaSelectState_C_ExecuteUbergraph_BPC_CharaSelectState::CallFunc_GetSelectedDriverId_OutExecsPin' has a wrong offset!");
-static_assert(offsetof(BPC_CharaSelectState_C_ExecuteUbergraph_BPC_CharaSelectState, K2Node_SwitchEnum_CmpSuccess) == 0x00002E, "Member 'BPC_CharaSelectState_C_ExecuteUbergraph_BPC_CharaSelectState::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_CharaSelectState_C_ExecuteUbergraph_BPC_CharaSelectState, CallFunc_Delay_Duration_ImplicitCast) == 0x000030, "Member 'BPC_CharaSelectState_C_ExecuteUbergraph_BPC_CharaSelectState::CallFunc_Delay_Duration_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_CharaSelectState_C_ExecuteUbergraph_BPC_CharaSelectState;
 
 }
 

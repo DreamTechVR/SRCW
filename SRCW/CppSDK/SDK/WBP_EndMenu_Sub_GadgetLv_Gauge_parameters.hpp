@@ -37,24 +37,7 @@ public:
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0088(0x0010)()
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge) == 0x000008, "Wrong alignment on WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge");
-static_assert(sizeof(WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge) == 0x0000A0, "Wrong size on WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge");
-static_assert(offsetof(WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge, EntryPoint) == 0x000000, "Member 'WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge, K2Node_CustomEvent_Now) == 0x000008, "Member 'WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge::K2Node_CustomEvent_Now' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge, K2Node_CustomEvent_Next) == 0x000010, "Member 'WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge::K2Node_CustomEvent_Next' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge, K2Node_CustomEvent_Low) == 0x000018, "Member 'WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge::K2Node_CustomEvent_Low' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x000020, "Member 'WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000028, "Member 'WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge, CallFunc_FMin_ReturnValue) == 0x000030, "Member 'WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge::CallFunc_FMin_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge, CallFunc_Conv_DoubleToText_ReturnValue) == 0x000038, "Member 'WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge::CallFunc_Conv_DoubleToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge, CallFunc_Subtract_DoubleDouble_ReturnValue_1) == 0x000048, "Member 'WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge::CallFunc_Subtract_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000050, "Member 'WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x000058, "Member 'WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge, CallFunc_Conv_DoubleToInt64_ReturnValue) == 0x000060, "Member 'WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge::CallFunc_Conv_DoubleToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge, CallFunc_Conv_Int64ToString_ReturnValue) == 0x000068, "Member 'WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge::CallFunc_Conv_Int64ToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge, CallFunc_Concat_StrStr_ReturnValue) == 0x000078, "Member 'WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge, CallFunc_Conv_StringToText_ReturnValue) == 0x000088, "Member 'WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000098, "Member 'WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_EndMenu_Sub_GadgetLv_Gauge_C_ExecuteUbergraph_WBP_EndMenu_Sub_GadgetLv_Gauge;
 
 // Function WBP_EndMenu_Sub_GadgetLv_Gauge.WBP_EndMenu_Sub_GadgetLv_Gauge_C.SetGauge
 // 0x0018 (0x0018 - 0x0000)
@@ -65,11 +48,7 @@ public:
 	double                                        Next;                                              // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        Low;                                               // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_EndMenu_Sub_GadgetLv_Gauge_C_SetGauge) == 0x000008, "Wrong alignment on WBP_EndMenu_Sub_GadgetLv_Gauge_C_SetGauge");
-static_assert(sizeof(WBP_EndMenu_Sub_GadgetLv_Gauge_C_SetGauge) == 0x000018, "Wrong size on WBP_EndMenu_Sub_GadgetLv_Gauge_C_SetGauge");
-static_assert(offsetof(WBP_EndMenu_Sub_GadgetLv_Gauge_C_SetGauge, Now) == 0x000000, "Member 'WBP_EndMenu_Sub_GadgetLv_Gauge_C_SetGauge::Now' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_Sub_GadgetLv_Gauge_C_SetGauge, Next) == 0x000008, "Member 'WBP_EndMenu_Sub_GadgetLv_Gauge_C_SetGauge::Next' has a wrong offset!");
-static_assert(offsetof(WBP_EndMenu_Sub_GadgetLv_Gauge_C_SetGauge, Low) == 0x000010, "Member 'WBP_EndMenu_Sub_GadgetLv_Gauge_C_SetGauge::Low' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_EndMenu_Sub_GadgetLv_Gauge_C_SetGauge;
 
 }
 

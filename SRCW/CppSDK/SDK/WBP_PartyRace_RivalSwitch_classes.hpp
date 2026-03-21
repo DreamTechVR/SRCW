@@ -49,27 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_PartyRace_RivalSwitch_C">();
+		BP_STATIC_CLASS_IMPL("WBP_PartyRace_RivalSwitch_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_PartyRace_RivalSwitch_C")
 	}
 	static class UWBP_PartyRace_RivalSwitch_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_PartyRace_RivalSwitch_C>();
 	}
 };
-static_assert(alignof(UWBP_PartyRace_RivalSwitch_C) == 0x000008, "Wrong alignment on UWBP_PartyRace_RivalSwitch_C");
-static_assert(sizeof(UWBP_PartyRace_RivalSwitch_C) == 0x0006B0, "Wrong size on UWBP_PartyRace_RivalSwitch_C");
-static_assert(offsetof(UWBP_PartyRace_RivalSwitch_C, UberGraphFrame) == 0x000648, "Member 'UWBP_PartyRace_RivalSwitch_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalSwitch_C, RivalSeitch_Out) == 0x000650, "Member 'UWBP_PartyRace_RivalSwitch_C::RivalSeitch_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalSwitch_C, RivalSwitch_In) == 0x000658, "Member 'UWBP_PartyRace_RivalSwitch_C::RivalSwitch_In' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalSwitch_C, RivalSwitch_OFF_Loop) == 0x000660, "Member 'UWBP_PartyRace_RivalSwitch_C::RivalSwitch_OFF_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalSwitch_C, RivalSwitch_ON_Loop) == 0x000668, "Member 'UWBP_PartyRace_RivalSwitch_C::RivalSwitch_ON_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalSwitch_C, base) == 0x000670, "Member 'UWBP_PartyRace_RivalSwitch_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalSwitch_C, MouseInteraction) == 0x000678, "Member 'UWBP_PartyRace_RivalSwitch_C::MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalSwitch_C, PAT_ToggleBtn) == 0x000680, "Member 'UWBP_PartyRace_RivalSwitch_C::PAT_ToggleBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalSwitch_C, TXT_Title) == 0x000688, "Member 'UWBP_PartyRace_RivalSwitch_C::TXT_Title' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalSwitch_C, WBP_CMN_ControllerBtn) == 0x000690, "Member 'UWBP_PartyRace_RivalSwitch_C::WBP_CMN_ControllerBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalSwitch_C, IsInOrOut) == 0x000698, "Member 'UWBP_PartyRace_RivalSwitch_C::IsInOrOut' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalSwitch_C, MouseEventnotification) == 0x0006A0, "Member 'UWBP_PartyRace_RivalSwitch_C::MouseEventnotification' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_PartyRace_RivalSwitch_C;
 
 }
 

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "UnionRun_structs.hpp"
-#include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
+#include "UnionSystem_structs.hpp"
+#include "UnionRun_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -80,52 +80,7 @@ public:
 	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_3;            // 0x07C0(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsHoverboardMachineId_ReturnValue_1;      // 0x07D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement) == 0x000008, "Wrong alignment on MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement");
-static_assert(sizeof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement) == 0x0007D8, "Wrong size on MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, EntryPoint) == 0x000000, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, K2Node_CustomEvent_Loaded_2) == 0x000008, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::K2Node_CustomEvent_Loaded_2' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, CallFunc_Conv_SoftObjPathToSoftObjRef_ReturnValue) == 0x000010, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::CallFunc_Conv_SoftObjPathToSoftObjRef_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, Temp_object_Variable) == 0x000038, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, K2Node_DynamicCast_AsMachine_Parts_Data_Asset) == 0x000040, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::K2Node_DynamicCast_AsMachine_Parts_Data_Asset' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, K2Node_CustomEvent_Loaded_1) == 0x000050, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::K2Node_CustomEvent_Loaded_1' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, Temp_object_Variable_1) == 0x000058, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, K2Node_DynamicCast_AsMachine_Tire_Parts_Data_Asset) == 0x000060, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::K2Node_DynamicCast_AsMachine_Tire_Parts_Data_Asset' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, K2Node_DynamicCast_bSuccess_1) == 0x000068, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, K2Node_CustomEvent_Loaded) == 0x000070, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::K2Node_CustomEvent_Loaded' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, Temp_object_Variable_2) == 0x000078, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, K2Node_DynamicCast_As__________) == 0x000080, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::K2Node_DynamicCast_As__________' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, K2Node_DynamicCast_bSuccess_2) == 0x000088, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, CallFunc_IsLoading_ReturnValue) == 0x000089, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::CallFunc_IsLoading_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, CallFunc_GetMachineCustomizeDataById_OutUserMachineCustomizeData) == 0x000090, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::CallFunc_GetMachineCustomizeDataById_OutUserMachineCustomizeData' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, K2Node_CreateDelegate_OutputDelegate) == 0x000108, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, CallFunc_GetEnumeratorName_ReturnValue) == 0x000118, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, CallFunc_GetEnumeratorName_ReturnValue_1) == 0x000120, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::CallFunc_GetEnumeratorName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, CallFunc_GetCenterPartsPathByMachineId_OutPath) == 0x000128, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::CallFunc_GetCenterPartsPathByMachineId_OutPath' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, CallFunc_GetSidePartsPathByMachineId_OutPath) == 0x000148, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::CallFunc_GetSidePartsPathByMachineId_OutPath' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, CallFunc_GetEnumeratorName_ReturnValue_2) == 0x000168, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::CallFunc_GetEnumeratorName_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000170, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, CallFunc_GetDataTableRowFromName_OutRow) == 0x000178, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000370, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, K2Node_CreateDelegate_OutputDelegate_1) == 0x000374, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, CallFunc_GetDataTableRowFromName_OutRow_1) == 0x000388, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::CallFunc_GetDataTableRowFromName_OutRow_1' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, CallFunc_GetDataTableRowFromName_ReturnValue_1) == 0x000580, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::CallFunc_GetDataTableRowFromName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, CallFunc_GetDataTableRowFromName_OutRow_2) == 0x000588, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::CallFunc_GetDataTableRowFromName_OutRow_2' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, CallFunc_GetDataTableRowFromName_ReturnValue_2) == 0x000780, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::CallFunc_GetDataTableRowFromName_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, CallFunc_IsLoading_ReturnValue_1) == 0x000781, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::CallFunc_IsLoading_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, CallFunc_IsHoverboardMachineId_ReturnValue) == 0x000782, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::CallFunc_IsHoverboardMachineId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, Temp_object_Variable_3) == 0x000788, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::Temp_object_Variable_3' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, K2Node_DynamicCast_AsMachine_Parts_Data_Asset_1) == 0x000790, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::K2Node_DynamicCast_AsMachine_Parts_Data_Asset_1' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, K2Node_DynamicCast_bSuccess_3) == 0x000798, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, K2Node_CreateDelegate_OutputDelegate_2) == 0x00079C, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, CallFunc_IsLoading_ReturnValue_2) == 0x0007AC, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::CallFunc_IsLoading_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, CallFunc_IsLoading_ReturnValue_3) == 0x0007AD, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::CallFunc_IsLoading_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, K2Node_CustomEvent_PlayerNo) == 0x0007B0, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::K2Node_CustomEvent_PlayerNo' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, K2Node_CustomEvent_CarStatusType) == 0x0007B4, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::K2Node_CustomEvent_CarStatusType' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, K2Node_CustomEvent_MachineID) == 0x0007B5, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::K2Node_CustomEvent_MachineID' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, K2Node_CustomEvent_Loaded_3) == 0x0007B8, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::K2Node_CustomEvent_Loaded_3' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, K2Node_CreateDelegate_OutputDelegate_3) == 0x0007C0, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement, CallFunc_IsHoverboardMachineId_ReturnValue_1) == 0x0007D0, "Member 'MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement::CallFunc_IsHoverboardMachineId_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_MachineResourceElement_C_ExecuteUbergraph_MachineResourceElement;
 
 // Function MachineResourceElement.MachineResourceElement_C.Initialize
 // 0x0008 (0x0008 - 0x0000)
@@ -136,11 +91,7 @@ public:
 	ECarStatusType                                CarStatusType_0;                                   // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EMachineId                                    MachineId_0;                                       // 0x0005(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MachineResourceElement_C_Initialize) == 0x000004, "Wrong alignment on MachineResourceElement_C_Initialize");
-static_assert(sizeof(MachineResourceElement_C_Initialize) == 0x000008, "Wrong size on MachineResourceElement_C_Initialize");
-static_assert(offsetof(MachineResourceElement_C_Initialize, PlayerNo_0) == 0x000000, "Member 'MachineResourceElement_C_Initialize::PlayerNo_0' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_Initialize, CarStatusType_0) == 0x000004, "Member 'MachineResourceElement_C_Initialize::CarStatusType_0' has a wrong offset!");
-static_assert(offsetof(MachineResourceElement_C_Initialize, MachineId_0) == 0x000005, "Member 'MachineResourceElement_C_Initialize::MachineId_0' has a wrong offset!");
+DUMPER7_ASSERTS_MachineResourceElement_C_Initialize;
 
 // Function MachineResourceElement.MachineResourceElement_C.OnLoaded_7EC97FE04E6C0C687DDC7C8EAE6DB204
 // 0x0008 (0x0008 - 0x0000)
@@ -149,9 +100,7 @@ struct MachineResourceElement_C_OnLoaded_7EC97FE04E6C0C687DDC7C8EAE6DB204 final
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MachineResourceElement_C_OnLoaded_7EC97FE04E6C0C687DDC7C8EAE6DB204) == 0x000008, "Wrong alignment on MachineResourceElement_C_OnLoaded_7EC97FE04E6C0C687DDC7C8EAE6DB204");
-static_assert(sizeof(MachineResourceElement_C_OnLoaded_7EC97FE04E6C0C687DDC7C8EAE6DB204) == 0x000008, "Wrong size on MachineResourceElement_C_OnLoaded_7EC97FE04E6C0C687DDC7C8EAE6DB204");
-static_assert(offsetof(MachineResourceElement_C_OnLoaded_7EC97FE04E6C0C687DDC7C8EAE6DB204, Loaded) == 0x000000, "Member 'MachineResourceElement_C_OnLoaded_7EC97FE04E6C0C687DDC7C8EAE6DB204::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_MachineResourceElement_C_OnLoaded_7EC97FE04E6C0C687DDC7C8EAE6DB204;
 
 // Function MachineResourceElement.MachineResourceElement_C.OnLoaded_95CBE1C547B13B8B9D57678CC6841399
 // 0x0008 (0x0008 - 0x0000)
@@ -160,9 +109,7 @@ struct MachineResourceElement_C_OnLoaded_95CBE1C547B13B8B9D57678CC6841399 final
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MachineResourceElement_C_OnLoaded_95CBE1C547B13B8B9D57678CC6841399) == 0x000008, "Wrong alignment on MachineResourceElement_C_OnLoaded_95CBE1C547B13B8B9D57678CC6841399");
-static_assert(sizeof(MachineResourceElement_C_OnLoaded_95CBE1C547B13B8B9D57678CC6841399) == 0x000008, "Wrong size on MachineResourceElement_C_OnLoaded_95CBE1C547B13B8B9D57678CC6841399");
-static_assert(offsetof(MachineResourceElement_C_OnLoaded_95CBE1C547B13B8B9D57678CC6841399, Loaded) == 0x000000, "Member 'MachineResourceElement_C_OnLoaded_95CBE1C547B13B8B9D57678CC6841399::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_MachineResourceElement_C_OnLoaded_95CBE1C547B13B8B9D57678CC6841399;
 
 // Function MachineResourceElement.MachineResourceElement_C.OnLoaded_A4A9566F4CFB176F6C82718A086116EC
 // 0x0008 (0x0008 - 0x0000)
@@ -171,9 +118,7 @@ struct MachineResourceElement_C_OnLoaded_A4A9566F4CFB176F6C82718A086116EC final
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MachineResourceElement_C_OnLoaded_A4A9566F4CFB176F6C82718A086116EC) == 0x000008, "Wrong alignment on MachineResourceElement_C_OnLoaded_A4A9566F4CFB176F6C82718A086116EC");
-static_assert(sizeof(MachineResourceElement_C_OnLoaded_A4A9566F4CFB176F6C82718A086116EC) == 0x000008, "Wrong size on MachineResourceElement_C_OnLoaded_A4A9566F4CFB176F6C82718A086116EC");
-static_assert(offsetof(MachineResourceElement_C_OnLoaded_A4A9566F4CFB176F6C82718A086116EC, Loaded) == 0x000000, "Member 'MachineResourceElement_C_OnLoaded_A4A9566F4CFB176F6C82718A086116EC::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_MachineResourceElement_C_OnLoaded_A4A9566F4CFB176F6C82718A086116EC;
 
 // Function MachineResourceElement.MachineResourceElement_C.OnLoaded_F35FE6E84B36E7912B5397B1CD02FC96
 // 0x0008 (0x0008 - 0x0000)
@@ -182,9 +127,7 @@ struct MachineResourceElement_C_OnLoaded_F35FE6E84B36E7912B5397B1CD02FC96 final
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MachineResourceElement_C_OnLoaded_F35FE6E84B36E7912B5397B1CD02FC96) == 0x000008, "Wrong alignment on MachineResourceElement_C_OnLoaded_F35FE6E84B36E7912B5397B1CD02FC96");
-static_assert(sizeof(MachineResourceElement_C_OnLoaded_F35FE6E84B36E7912B5397B1CD02FC96) == 0x000008, "Wrong size on MachineResourceElement_C_OnLoaded_F35FE6E84B36E7912B5397B1CD02FC96");
-static_assert(offsetof(MachineResourceElement_C_OnLoaded_F35FE6E84B36E7912B5397B1CD02FC96, Loaded) == 0x000000, "Member 'MachineResourceElement_C_OnLoaded_F35FE6E84B36E7912B5397B1CD02FC96::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_MachineResourceElement_C_OnLoaded_F35FE6E84B36E7912B5397B1CD02FC96;
 
 }
 

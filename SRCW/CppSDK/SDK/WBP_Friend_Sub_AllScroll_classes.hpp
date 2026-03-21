@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK
@@ -69,22 +69,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Friend_Sub_AllScroll_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Friend_Sub_AllScroll_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Friend_Sub_AllScroll_C")
 	}
 	static class UWBP_Friend_Sub_AllScroll_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Friend_Sub_AllScroll_C>();
 	}
 };
-static_assert(alignof(UWBP_Friend_Sub_AllScroll_C) == 0x000008, "Wrong alignment on UWBP_Friend_Sub_AllScroll_C");
-static_assert(sizeof(UWBP_Friend_Sub_AllScroll_C) == 0x000540, "Wrong size on UWBP_Friend_Sub_AllScroll_C");
-static_assert(offsetof(UWBP_Friend_Sub_AllScroll_C, UberGraphFrame) == 0x0004F0, "Member 'UWBP_Friend_Sub_AllScroll_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_AllScroll_C, ScrollBox_0) == 0x0004F8, "Member 'UWBP_Friend_Sub_AllScroll_C::ScrollBox_0' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_AllScroll_C, ItemWidgetArray) == 0x000500, "Member 'UWBP_Friend_Sub_AllScroll_C::ItemWidgetArray' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_AllScroll_C, OnlineSettingItemWidgetArray) == 0x000510, "Member 'UWBP_Friend_Sub_AllScroll_C::OnlineSettingItemWidgetArray' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_AllScroll_C, ItemWidgetArraySelectIndex) == 0x000520, "Member 'UWBP_Friend_Sub_AllScroll_C::ItemWidgetArraySelectIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_AllScroll_C, ScrollBoxWidgetArray) == 0x000528, "Member 'UWBP_Friend_Sub_AllScroll_C::ScrollBoxWidgetArray' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_AllScroll_C, CurrentDecidedButton) == 0x000538, "Member 'UWBP_Friend_Sub_AllScroll_C::CurrentDecidedButton' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Friend_Sub_AllScroll_C;
 
 }
 

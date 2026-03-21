@@ -23,15 +23,18 @@ class ABP_ItemTimeBombObject_C final : public AItemTimeBombObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ItemTimeBombObject_C">();
+		BP_STATIC_CLASS_IMPL("BP_ItemTimeBombObject_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ItemTimeBombObject_C")
 	}
 	static class ABP_ItemTimeBombObject_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ItemTimeBombObject_C>();
 	}
 };
-static_assert(alignof(ABP_ItemTimeBombObject_C) == 0x000010, "Wrong alignment on ABP_ItemTimeBombObject_C");
-static_assert(sizeof(ABP_ItemTimeBombObject_C) == 0x0005C0, "Wrong size on ABP_ItemTimeBombObject_C");
+DUMPER7_ASSERTS_ABP_ItemTimeBombObject_C;
 
 }
 

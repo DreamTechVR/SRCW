@@ -37,27 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_BG_FinalRound_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_BG_FinalRound_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_BG_FinalRound_C")
 	}
 	static class UWBP_CMN_BG_FinalRound_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_BG_FinalRound_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_BG_FinalRound_C) == 0x000008, "Wrong alignment on UWBP_CMN_BG_FinalRound_C");
-static_assert(sizeof(UWBP_CMN_BG_FinalRound_C) == 0x000340, "Wrong size on UWBP_CMN_BG_FinalRound_C");
-static_assert(offsetof(UWBP_CMN_BG_FinalRound_C, BG_Black) == 0x0002E0, "Member 'UWBP_CMN_BG_FinalRound_C::BG_Black' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_BG_FinalRound_C, BG_Red) == 0x0002E8, "Member 'UWBP_CMN_BG_FinalRound_C::BG_Red' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_BG_FinalRound_C, FireSpark_Left) == 0x0002F0, "Member 'UWBP_CMN_BG_FinalRound_C::FireSpark_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_BG_FinalRound_C, FireSpark_Left_BG) == 0x0002F8, "Member 'UWBP_CMN_BG_FinalRound_C::FireSpark_Left_BG' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_BG_FinalRound_C, FireSpark_Right) == 0x000300, "Member 'UWBP_CMN_BG_FinalRound_C::FireSpark_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_BG_FinalRound_C, FireSpark_Right_BG) == 0x000308, "Member 'UWBP_CMN_BG_FinalRound_C::FireSpark_Right_BG' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_BG_FinalRound_C, Grow_Left) == 0x000310, "Member 'UWBP_CMN_BG_FinalRound_C::Grow_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_BG_FinalRound_C, Grow_Right) == 0x000318, "Member 'UWBP_CMN_BG_FinalRound_C::Grow_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_BG_FinalRound_C, RaceFlag_Left) == 0x000320, "Member 'UWBP_CMN_BG_FinalRound_C::RaceFlag_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_BG_FinalRound_C, RaceFlag_Right) == 0x000328, "Member 'UWBP_CMN_BG_FinalRound_C::RaceFlag_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_BG_FinalRound_C, WBP_RivalSelect_Sub_Effects_Fire_Left) == 0x000330, "Member 'UWBP_CMN_BG_FinalRound_C::WBP_RivalSelect_Sub_Effects_Fire_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_BG_FinalRound_C, WBP_RivalSelect_Sub_Effects_Fire_Right) == 0x000338, "Member 'UWBP_CMN_BG_FinalRound_C::WBP_RivalSelect_Sub_Effects_Fire_Right' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_BG_FinalRound_C;
 
 }
 

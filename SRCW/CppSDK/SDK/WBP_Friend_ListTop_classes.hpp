@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -81,25 +81,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Friend_ListTop_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Friend_ListTop_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Friend_ListTop_C")
 	}
 	static class UWBP_Friend_ListTop_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Friend_ListTop_C>();
 	}
 };
-static_assert(alignof(UWBP_Friend_ListTop_C) == 0x000008, "Wrong alignment on UWBP_Friend_ListTop_C");
-static_assert(sizeof(UWBP_Friend_ListTop_C) == 0x0003E8, "Wrong size on UWBP_Friend_ListTop_C");
-static_assert(offsetof(UWBP_Friend_ListTop_C, UberGraphFrame) == 0x000398, "Member 'UWBP_Friend_ListTop_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_ListTop_C, ListTop_Out) == 0x0003A0, "Member 'UWBP_Friend_ListTop_C::ListTop_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_ListTop_C, ListTop_Loop) == 0x0003A8, "Member 'UWBP_Friend_ListTop_C::ListTop_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_ListTop_C, ListTop_In) == 0x0003B0, "Member 'UWBP_Friend_ListTop_C::ListTop_In' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_ListTop_C, DSP_WBP_CMN_PlayerDetail) == 0x0003B8, "Member 'UWBP_Friend_ListTop_C::DSP_WBP_CMN_PlayerDetail' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_ListTop_C, DSP_WBP_Friend_FairPlayPointWindow) == 0x0003C0, "Member 'UWBP_Friend_ListTop_C::DSP_WBP_Friend_FairPlayPointWindow' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_ListTop_C, DSP_WBP_Friend_PlayerIconWindow) == 0x0003C8, "Member 'UWBP_Friend_ListTop_C::DSP_WBP_Friend_PlayerIconWindow' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_ListTop_C, SafeZone_FriendListTop) == 0x0003D0, "Member 'UWBP_Friend_ListTop_C::SafeZone_FriendListTop' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_ListTop_C, WBP_Friend_CMN_Window) == 0x0003D8, "Member 'UWBP_Friend_ListTop_C::WBP_Friend_CMN_Window' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_ListTop_C, bIsLobbySequence) == 0x0003E0, "Member 'UWBP_Friend_ListTop_C::bIsLobbySequence' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Friend_ListTop_C;
 
 }
 

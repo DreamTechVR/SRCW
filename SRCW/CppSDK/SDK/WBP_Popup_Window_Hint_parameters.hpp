@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
-#include "UnionUI_structs.hpp"
+#include "UnionSystem_structs.hpp"
 #include "UMG_structs.hpp"
+#include "UnionUI_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
@@ -28,9 +28,7 @@ struct WBP_Popup_Window_Hint_C_ChangeInputTypeIF final
 public:
 	EAppControllerInputType                       InNewControllerInputType;                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Hint_C_ChangeInputTypeIF) == 0x000001, "Wrong alignment on WBP_Popup_Window_Hint_C_ChangeInputTypeIF");
-static_assert(sizeof(WBP_Popup_Window_Hint_C_ChangeInputTypeIF) == 0x000001, "Wrong size on WBP_Popup_Window_Hint_C_ChangeInputTypeIF");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ChangeInputTypeIF, InNewControllerInputType) == 0x000000, "Member 'WBP_Popup_Window_Hint_C_ChangeInputTypeIF::InNewControllerInputType' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Hint_C_ChangeInputTypeIF;
 
 // Function WBP_Popup_Window_Hint.WBP_Popup_Window_Hint_C.ExecuteUbergraph_WBP_Popup_Window_Hint
 // 0x05E0 (0x05E0 - 0x0000)
@@ -257,184 +255,7 @@ public:
 	float                                         CallFunc_SetImageWidget_InAnimationInterval_ImplicitCast; // 0x05D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_MakeStruct_Size_ImplicitCast;               // 0x05DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint) == 0x000008, "Wrong alignment on WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint");
-static_assert(sizeof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint) == 0x0005E0, "Wrong size on WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, EntryPoint) == 0x000000, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, Temp_byte_Variable) == 0x000004, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_CustomEvent_bInLVisible) == 0x000005, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_CustomEvent_bInLVisible' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_CustomEvent_bInRVisible) == 0x000006, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_CustomEvent_bInRVisible' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_CustomEvent_bInIsTips) == 0x000007, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_CustomEvent_bInIsTips' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_CustomEvent_InHintId) == 0x000008, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_CustomEvent_InHintId' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_GetEnumeratorName_ReturnValue) == 0x00000C, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_PlayAnimation_ReturnValue) == 0x000018, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_GetDataTableRowFromName_OutRow) == 0x000020, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000090, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_Array_Length_ReturnValue) == 0x000094, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000098, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_Greater_IntInt_ReturnValue) == 0x000099, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_Event_InText_1) == 0x0000A0, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_Event_InText_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_Event_InText) == 0x0000B0, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_Event_InText' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_Event_InImageTexture) == 0x0000C0, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_Event_InImageTexture' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_IsValidSoftObjectReference_ReturnValue) == 0x0000E8, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_IsValidSoftObjectReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_CreateDelegate_OutputDelegate) == 0x0000EC, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_Event_InHintId) == 0x0000FC, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_Event_InHintId' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_Event_bInDecisionClose) == 0x0000FD, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_Event_bInDecisionClose' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_SoundPlay_ReturnValue) == 0x000100, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_Event_bInVisible_2) == 0x000104, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_Event_bInVisible_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_Event_bInVisible_1) == 0x000105, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_Event_bInVisible_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_CustomEvent_InUIButtonIconType) == 0x000106, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_CustomEvent_InUIButtonIconType' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_CustomEvent_InButtonIndex) == 0x000108, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_CustomEvent_InButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_CustomEvent_InTextArray) == 0x000110, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_CustomEvent_InTextArray' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000120, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_CustomEvent_InImageTextureArray) == 0x000128, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_CustomEvent_InImageTextureArray' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_Array_Get_Item) == 0x000138, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_Array_IsValidIndex_ReturnValue_1) == 0x000160, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_Array_IsValidIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, Temp_bool_Variable) == 0x000161, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_CreateDelegate_OutputDelegate_1) == 0x000164, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_CustomEvent_InCategory) == 0x000174, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_CustomEvent_InCategory' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_CustomEvent_InTipsIndex) == 0x000178, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_CustomEvent_InTipsIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x00017C, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_Greater_IntInt_ReturnValue_1) == 0x00017D, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x00017E, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, Temp_int_Array_Index_Variable) == 0x000180, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_Event_InPageNum) == 0x000184, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_Event_InPageNum' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_Event_InCurrentPageIndex) == 0x000188, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_Event_InCurrentPageIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, Temp_int_Array_Index_Variable_1) == 0x00018C, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_CustomEvent_InChangeValue) == 0x000190, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_CustomEvent_InChangeValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_Add_IntInt_ReturnValue) == 0x000194, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_Add_IntInt_ReturnValue_1) == 0x000198, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_Percent_IntInt_ReturnValue) == 0x00019C, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_IsMultiPage_bOutIsMultiPage) == 0x0001A0, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_IsMultiPage_bOutIsMultiPage' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_IsMultiPage_bOutIsMultiPage_1) == 0x0001A1, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_IsMultiPage_bOutIsMultiPage_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_IsMultiPage_bOutIsMultiPage_2) == 0x0001A2, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_IsMultiPage_bOutIsMultiPage_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_Event_InImageWidget) == 0x0001A8, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_Event_InImageWidget' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_Event_InAnimationInterval) == 0x0001D0, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_Event_InAnimationInterval' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_LoadClassAsset_Blocking_ReturnValue) == 0x0001D8, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_LoadClassAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_IsValidSoftClassReference_ReturnValue) == 0x0001E0, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_IsValidSoftClassReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_ClassDynamicCast_As__________) == 0x0001E8, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_ClassDynamicCast_As__________' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_ClassDynamicCast_bSuccess) == 0x0001F0, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, Temp_int_Loop_Counter_Variable) == 0x0001F4, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, Temp_byte_Variable_1) == 0x0001F8, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_Add_IntInt_ReturnValue_2) == 0x0001FC, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_Select_Default) == 0x000200, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_GetOwningPlayer_ReturnValue) == 0x000208, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_Create_ReturnValue) == 0x000210, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_CustomEvent_InImageTexture_1) == 0x000218, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_CustomEvent_InImageTexture_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_CustomEvent_InImageWidgetArray) == 0x000228, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_CustomEvent_InImageWidgetArray' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_CustomEvent_InAnimationInterval) == 0x000238, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_CustomEvent_InAnimationInterval' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_Array_Get_Item_1) == 0x000248, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_Array_IsValidIndex_ReturnValue_2) == 0x000270, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_Array_IsValidIndex_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_Array_IsValidIndex_ReturnValue_3) == 0x000271, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_Array_IsValidIndex_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_MakeStruct_SlateColor) == 0x000274, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_CreateDelegate_OutputDelegate_2) == 0x000288, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_MakeLiteralByte_ReturnValue) == 0x000298, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_MakeLiteralText_ReturnValue) == 0x0002A0, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_MakeStruct_FormatArgumentData) == 0x0002B0, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_Conv_ByteToInt_ReturnValue) == 0x0002F8, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_MakeArray_Array) == 0x000300, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_MakeLiteralByte_ReturnValue_1) == 0x000310, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_MakeLiteralByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, Temp_bool_Variable_1) == 0x000311, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x000314, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_Select_Default_1) == 0x000318, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_BooleanAND_ReturnValue) == 0x000319, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_Event_bInVisible) == 0x00031A, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_Event_bInVisible' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_SoundPlay_ReturnValue_1) == 0x00031C, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_CreateDelegate_OutputDelegate_3) == 0x000320, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_SoundPlay_ReturnValue_2) == 0x000330, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_SoundPlay_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000338, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_IsMultiPage_bOutIsMultiPage_3) == 0x000340, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_IsMultiPage_bOutIsMultiPage_3' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, Temp_byte_Variable_2) == 0x000341, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, Temp_byte_Variable_3) == 0x000342, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_MakeLiteralText_ReturnValue_1) == 0x000348, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_MakeArray_Array_1) == 0x000358, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, Temp_bool_Variable_2) == 0x000368, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue) == 0x000370, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_Concat_StrStr_ReturnValue) == 0x000380, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_Select_Default_2) == 0x000390, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_Event_IsDesignTime) == 0x000391, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_HasAnyChildren_ReturnValue) == 0x000392, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_HasAnyChildren_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, Temp_byte_Variable_4) == 0x000393, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, Temp_byte_Variable_5) == 0x000394, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, Temp_bool_Variable_3) == 0x000395, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, Temp_byte_Variable_6) == 0x000396, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::Temp_byte_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_Select_Default_3) == 0x000397, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_CustomEvent_InImageTexture) == 0x000398, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_CustomEvent_InImageTexture' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_CustomEvent_InImageWidget) == 0x0003A8, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_CustomEvent_InImageWidget' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_CustomEvent_InImageWidgetAnimationInterval) == 0x0003B8, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_CustomEvent_InImageWidgetAnimationInterval' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, Temp_byte_Variable_7) == 0x0003C8, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::Temp_byte_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_Array_IsEmpty_ReturnValue) == 0x0003C9, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_Array_IsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, Temp_bool_Variable_4) == 0x0003CA, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::Temp_bool_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, Temp_bool_Variable_5) == 0x0003CB, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::Temp_bool_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_Select_Default_4) == 0x0003CC, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_Select_Default_5) == 0x0003CD, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_Select_Default_5' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, Temp_byte_Variable_8) == 0x0003CE, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::Temp_byte_Variable_8' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_CustomEvent_InImageWidgetTexture) == 0x0003D0, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_CustomEvent_InImageWidgetTexture' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, Temp_byte_Variable_9) == 0x0003E0, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::Temp_byte_Variable_9' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_Array_Get_Item_2) == 0x0003E8, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x000410, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_IsValidSoftObjectReference_ReturnValue_1) == 0x000418, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_IsValidSoftObjectReference_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_DynamicCast_As_____2D) == 0x000420, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_DynamicCast_bSuccess) == 0x000428, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_Array_Length_ReturnValue_1) == 0x00042C, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_Array_IsNotEmpty_ReturnValue) == 0x000430, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_Array_IsNotEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_Less_IntInt_ReturnValue) == 0x000431, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, Temp_bool_Variable_6) == 0x000432, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::Temp_bool_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_Array_Add_ReturnValue) == 0x000434, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_Select_Default_6) == 0x000438, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_Select_Default_6' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, Temp_byte_Variable_10) == 0x000439, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::Temp_byte_Variable_10' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_Array_Get_Item_3) == 0x000440, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_Array_Length_ReturnValue_2) == 0x000448, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_IsValid_ReturnValue) == 0x00044C, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_Array_IsNotEmpty_ReturnValue_1) == 0x00044D, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_Array_IsNotEmpty_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, Temp_byte_Variable_11) == 0x00044E, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::Temp_byte_Variable_11' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, Temp_bool_Variable_7) == 0x00044F, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::Temp_bool_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_Select_Default_7) == 0x000450, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_Select_Default_7' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_AddChildToOverlay_ReturnValue) == 0x000458, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_AddChildToOverlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, Temp_object_Variable) == 0x000460, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_DynamicCast_As_____2D_1) == 0x000468, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_DynamicCast_As_____2D_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_DynamicCast_bSuccess_1) == 0x000470, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_MakeLiteralInt_ReturnValue) == 0x000474, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000478, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_MakeStruct_SlateFontInfo) == 0x000480, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_MakeStruct_SlateFontInfo' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_DynamicCast_AsHint_Sub) == 0x0004E0, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_DynamicCast_AsHint_Sub' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_DynamicCast_bSuccess_2) == 0x0004E8, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_IsValidControllerUI_ReturnValue) == 0x0004E9, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_IsValidControllerUI_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_CustomEvent_Loaded) == 0x0004F0, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_CustomEvent_Loaded' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_CreatePlayAnimationProxyObject_Result) == 0x0004F8, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_CreatePlayAnimationProxyObject_Result' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_CreatePlayAnimationProxyObject_ReturnValue) == 0x000500, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_CreatePlayAnimationProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, Temp_int_Loop_Counter_Variable_1) == 0x000508, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_Less_IntInt_ReturnValue_1) == 0x00050C, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_Add_IntInt_ReturnValue_3) == 0x000510, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_IsValid_ReturnValue_1) == 0x000514, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_PlayAnimation_ReturnValue_1) == 0x000518, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_SoundPlay_ReturnValue_3) == 0x000520, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_SoundPlay_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_GetPlayerController_ReturnValue) == 0x000528, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000530, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_DynamicCast_bSuccess_3) == 0x000538, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_IsValid_ReturnValue_2) == 0x000539, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_CustomEvent_enable) == 0x00053A, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_CustomEvent_enable' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_GetPlayerController_ReturnValue_1) == 0x000540, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_DynamicCast_AsApp_Player_Controller_1) == 0x000548, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_DynamicCast_AsApp_Player_Controller_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_DynamicCast_bSuccess_4) == 0x000550, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_CreateDelegate_OutputDelegate_4) == 0x000554, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_GetCurrentInputType_ReturnValue) == 0x000564, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_LoadAsset_Blocking_ReturnValue_1) == 0x000568, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_LoadAsset_Blocking_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_DynamicCast_As_____2D_2) == 0x000570, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_DynamicCast_As_____2D_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_DynamicCast_bSuccess_5) == 0x000578, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_GetPlayerController_ReturnValue_2) == 0x000580, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_GetPlayerController_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_DynamicCast_AsApp_Player_Controller_2) == 0x000588, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_DynamicCast_AsApp_Player_Controller_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_DynamicCast_bSuccess_6) == 0x000590, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_DynamicCast_bSuccess_6' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000591, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_IsValid_ReturnValue_3) == 0x000592, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000593, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_BooleanOR_ReturnValue) == 0x000594, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_Event_InNewControllerInputType) == 0x000595, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_Event_InNewControllerInputType' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_GetRaceButtonText_ReturnValue) == 0x000598, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_GetRaceButtonText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_Format_ReturnValue) == 0x0005A8, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_GetTerminologyTextByText_ReturnValue) == 0x0005B8, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_GetTerminologyTextByText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_SetPageImageTextureAndWidget_InImageWidgetAnimationInterval_ImplicitCast) == 0x0005C8, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_SetPageImageTextureAndWidget_InImageWidgetAnimationInterval_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, CallFunc_SetImageWidget_InAnimationInterval_ImplicitCast) == 0x0005D8, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::CallFunc_SetImageWidget_InAnimationInterval_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint, K2Node_MakeStruct_Size_ImplicitCast) == 0x0005DC, "Member 'WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint::K2Node_MakeStruct_Size_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Hint_C_ExecuteUbergraph_WBP_Popup_Window_Hint;
 
 // Function WBP_Popup_Window_Hint.WBP_Popup_Window_Hint_C.GetHintId
 // 0x0001 (0x0001 - 0x0000)
@@ -443,9 +264,7 @@ struct WBP_Popup_Window_Hint_C_GetHintId final
 public:
 	EHintId                                       ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Hint_C_GetHintId) == 0x000001, "Wrong alignment on WBP_Popup_Window_Hint_C_GetHintId");
-static_assert(sizeof(WBP_Popup_Window_Hint_C_GetHintId) == 0x000001, "Wrong size on WBP_Popup_Window_Hint_C_GetHintId");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_GetHintId, ReturnValue) == 0x000000, "Member 'WBP_Popup_Window_Hint_C_GetHintId::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Hint_C_GetHintId;
 
 // Function WBP_Popup_Window_Hint.WBP_Popup_Window_Hint_C.IsMultiPage
 // 0x0002 (0x0002 - 0x0000)
@@ -455,10 +274,7 @@ public:
 	bool                                          bOutIsMultiPage;                                   // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Hint_C_IsMultiPage) == 0x000001, "Wrong alignment on WBP_Popup_Window_Hint_C_IsMultiPage");
-static_assert(sizeof(WBP_Popup_Window_Hint_C_IsMultiPage) == 0x000002, "Wrong size on WBP_Popup_Window_Hint_C_IsMultiPage");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_IsMultiPage, bOutIsMultiPage) == 0x000000, "Member 'WBP_Popup_Window_Hint_C_IsMultiPage::bOutIsMultiPage' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_IsMultiPage, CallFunc_Greater_IntInt_ReturnValue) == 0x000001, "Member 'WBP_Popup_Window_Hint_C_IsMultiPage::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Hint_C_IsMultiPage;
 
 // Function WBP_Popup_Window_Hint.WBP_Popup_Window_Hint_C.LoadImageWidgetTexture
 // 0x0010 (0x0010 - 0x0000)
@@ -467,9 +283,7 @@ struct WBP_Popup_Window_Hint_C_LoadImageWidgetTexture final
 public:
 	TArray<TSoftObjectPtr<class UTexture2D>>      InImageWidgetTexture;                              // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_Popup_Window_Hint_C_LoadImageWidgetTexture) == 0x000008, "Wrong alignment on WBP_Popup_Window_Hint_C_LoadImageWidgetTexture");
-static_assert(sizeof(WBP_Popup_Window_Hint_C_LoadImageWidgetTexture) == 0x000010, "Wrong size on WBP_Popup_Window_Hint_C_LoadImageWidgetTexture");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_LoadImageWidgetTexture, InImageWidgetTexture) == 0x000000, "Member 'WBP_Popup_Window_Hint_C_LoadImageWidgetTexture::InImageWidgetTexture' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Hint_C_LoadImageWidgetTexture;
 
 // Function WBP_Popup_Window_Hint.WBP_Popup_Window_Hint_C.OnLoaded_6A2FCA554B5EA4E54410B982C2471768
 // 0x0008 (0x0008 - 0x0000)
@@ -478,9 +292,7 @@ struct WBP_Popup_Window_Hint_C_OnLoaded_6A2FCA554B5EA4E54410B982C2471768 final
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Hint_C_OnLoaded_6A2FCA554B5EA4E54410B982C2471768) == 0x000008, "Wrong alignment on WBP_Popup_Window_Hint_C_OnLoaded_6A2FCA554B5EA4E54410B982C2471768");
-static_assert(sizeof(WBP_Popup_Window_Hint_C_OnLoaded_6A2FCA554B5EA4E54410B982C2471768) == 0x000008, "Wrong size on WBP_Popup_Window_Hint_C_OnLoaded_6A2FCA554B5EA4E54410B982C2471768");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_OnLoaded_6A2FCA554B5EA4E54410B982C2471768, Loaded) == 0x000000, "Member 'WBP_Popup_Window_Hint_C_OnLoaded_6A2FCA554B5EA4E54410B982C2471768::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Hint_C_OnLoaded_6A2FCA554B5EA4E54410B982C2471768;
 
 // Function WBP_Popup_Window_Hint.WBP_Popup_Window_Hint_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -489,9 +301,7 @@ struct WBP_Popup_Window_Hint_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Hint_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_Popup_Window_Hint_C_PreConstruct");
-static_assert(sizeof(WBP_Popup_Window_Hint_C_PreConstruct) == 0x000001, "Wrong size on WBP_Popup_Window_Hint_C_PreConstruct");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_Popup_Window_Hint_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Hint_C_PreConstruct;
 
 // Function WBP_Popup_Window_Hint.WBP_Popup_Window_Hint_C.SetAutoEnableSubMenu
 // 0x0001 (0x0001 - 0x0000)
@@ -500,9 +310,7 @@ struct WBP_Popup_Window_Hint_C_SetAutoEnableSubMenu final
 public:
 	bool                                          Enable;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Hint_C_SetAutoEnableSubMenu) == 0x000001, "Wrong alignment on WBP_Popup_Window_Hint_C_SetAutoEnableSubMenu");
-static_assert(sizeof(WBP_Popup_Window_Hint_C_SetAutoEnableSubMenu) == 0x000001, "Wrong size on WBP_Popup_Window_Hint_C_SetAutoEnableSubMenu");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_SetAutoEnableSubMenu, Enable) == 0x000000, "Member 'WBP_Popup_Window_Hint_C_SetAutoEnableSubMenu::Enable' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Hint_C_SetAutoEnableSubMenu;
 
 // Function WBP_Popup_Window_Hint.WBP_Popup_Window_Hint_C.SetBackgroundVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -511,9 +319,7 @@ struct WBP_Popup_Window_Hint_C_SetBackgroundVisible final
 public:
 	bool                                          bInVisible;                                        // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Hint_C_SetBackgroundVisible) == 0x000001, "Wrong alignment on WBP_Popup_Window_Hint_C_SetBackgroundVisible");
-static_assert(sizeof(WBP_Popup_Window_Hint_C_SetBackgroundVisible) == 0x000001, "Wrong size on WBP_Popup_Window_Hint_C_SetBackgroundVisible");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_SetBackgroundVisible, bInVisible) == 0x000000, "Member 'WBP_Popup_Window_Hint_C_SetBackgroundVisible::bInVisible' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Hint_C_SetBackgroundVisible;
 
 // Function WBP_Popup_Window_Hint.WBP_Popup_Window_Hint_C.SetCharacterVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -522,9 +328,7 @@ struct WBP_Popup_Window_Hint_C_SetCharacterVisible final
 public:
 	bool                                          bInVisible;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Hint_C_SetCharacterVisible) == 0x000001, "Wrong alignment on WBP_Popup_Window_Hint_C_SetCharacterVisible");
-static_assert(sizeof(WBP_Popup_Window_Hint_C_SetCharacterVisible) == 0x000001, "Wrong size on WBP_Popup_Window_Hint_C_SetCharacterVisible");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_SetCharacterVisible, bInVisible) == 0x000000, "Member 'WBP_Popup_Window_Hint_C_SetCharacterVisible::bInVisible' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Hint_C_SetCharacterVisible;
 
 // Function WBP_Popup_Window_Hint.WBP_Popup_Window_Hint_C.SetCharacterVisibleByParameter
 // 0x0008 (0x0008 - 0x0000)
@@ -535,10 +339,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         InTipsIndex;                                       // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Hint_C_SetCharacterVisibleByParameter) == 0x000004, "Wrong alignment on WBP_Popup_Window_Hint_C_SetCharacterVisibleByParameter");
-static_assert(sizeof(WBP_Popup_Window_Hint_C_SetCharacterVisibleByParameter) == 0x000008, "Wrong size on WBP_Popup_Window_Hint_C_SetCharacterVisibleByParameter");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_SetCharacterVisibleByParameter, InCategory) == 0x000000, "Member 'WBP_Popup_Window_Hint_C_SetCharacterVisibleByParameter::InCategory' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_SetCharacterVisibleByParameter, InTipsIndex) == 0x000004, "Member 'WBP_Popup_Window_Hint_C_SetCharacterVisibleByParameter::InTipsIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Hint_C_SetCharacterVisibleByParameter;
 
 // Function WBP_Popup_Window_Hint.WBP_Popup_Window_Hint_C.SetExplanationText
 // 0x0010 (0x0010 - 0x0000)
@@ -547,9 +348,7 @@ struct WBP_Popup_Window_Hint_C_SetExplanationText final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_Popup_Window_Hint_C_SetExplanationText) == 0x000008, "Wrong alignment on WBP_Popup_Window_Hint_C_SetExplanationText");
-static_assert(sizeof(WBP_Popup_Window_Hint_C_SetExplanationText) == 0x000010, "Wrong size on WBP_Popup_Window_Hint_C_SetExplanationText");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_SetExplanationText, InText) == 0x000000, "Member 'WBP_Popup_Window_Hint_C_SetExplanationText::InText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Hint_C_SetExplanationText;
 
 // Function WBP_Popup_Window_Hint.WBP_Popup_Window_Hint_C.SetFooterParam
 // 0x0008 (0x0008 - 0x0000)
@@ -560,10 +359,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         InButtonIndex;                                     // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Hint_C_SetFooterParam) == 0x000004, "Wrong alignment on WBP_Popup_Window_Hint_C_SetFooterParam");
-static_assert(sizeof(WBP_Popup_Window_Hint_C_SetFooterParam) == 0x000008, "Wrong size on WBP_Popup_Window_Hint_C_SetFooterParam");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_SetFooterParam, InUIButtonIconType) == 0x000000, "Member 'WBP_Popup_Window_Hint_C_SetFooterParam::InUIButtonIconType' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_SetFooterParam, InButtonIndex) == 0x000004, "Member 'WBP_Popup_Window_Hint_C_SetFooterParam::InButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Hint_C_SetFooterParam;
 
 // Function WBP_Popup_Window_Hint.WBP_Popup_Window_Hint_C.SetFooterVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -572,9 +368,7 @@ struct WBP_Popup_Window_Hint_C_SetFooterVisible final
 public:
 	bool                                          bInVisible;                                        // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Hint_C_SetFooterVisible) == 0x000001, "Wrong alignment on WBP_Popup_Window_Hint_C_SetFooterVisible");
-static_assert(sizeof(WBP_Popup_Window_Hint_C_SetFooterVisible) == 0x000001, "Wrong size on WBP_Popup_Window_Hint_C_SetFooterVisible");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_SetFooterVisible, bInVisible) == 0x000000, "Member 'WBP_Popup_Window_Hint_C_SetFooterVisible::bInVisible' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Hint_C_SetFooterVisible;
 
 // Function WBP_Popup_Window_Hint.WBP_Popup_Window_Hint_C.SetImageTexture
 // 0x0028 (0x0028 - 0x0000)
@@ -583,9 +377,7 @@ struct WBP_Popup_Window_Hint_C_SetImageTexture final
 public:
 	TSoftObjectPtr<class UTexture2D>              InImageTexture;                                    // 0x0000(0x0028)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, UObjectWrapper, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Hint_C_SetImageTexture) == 0x000008, "Wrong alignment on WBP_Popup_Window_Hint_C_SetImageTexture");
-static_assert(sizeof(WBP_Popup_Window_Hint_C_SetImageTexture) == 0x000028, "Wrong size on WBP_Popup_Window_Hint_C_SetImageTexture");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_SetImageTexture, InImageTexture) == 0x000000, "Member 'WBP_Popup_Window_Hint_C_SetImageTexture::InImageTexture' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Hint_C_SetImageTexture;
 
 // Function WBP_Popup_Window_Hint.WBP_Popup_Window_Hint_C.SetImageWidget
 // 0x0030 (0x0030 - 0x0000)
@@ -595,10 +387,7 @@ public:
 	TSoftClassPtr<class UClass>                   InImageWidget;                                     // 0x0000(0x0028)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, UObjectWrapper, HasGetValueTypeHash)
 	float                                         InAnimationInterval;                               // 0x0028(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Hint_C_SetImageWidget) == 0x000008, "Wrong alignment on WBP_Popup_Window_Hint_C_SetImageWidget");
-static_assert(sizeof(WBP_Popup_Window_Hint_C_SetImageWidget) == 0x000030, "Wrong size on WBP_Popup_Window_Hint_C_SetImageWidget");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_SetImageWidget, InImageWidget) == 0x000000, "Member 'WBP_Popup_Window_Hint_C_SetImageWidget::InImageWidget' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_SetImageWidget, InAnimationInterval) == 0x000028, "Member 'WBP_Popup_Window_Hint_C_SetImageWidget::InAnimationInterval' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Hint_C_SetImageWidget;
 
 // Function WBP_Popup_Window_Hint.WBP_Popup_Window_Hint_C.SetLRArrowVisible
 // 0x0002 (0x0002 - 0x0000)
@@ -608,10 +397,7 @@ public:
 	bool                                          bInLVisible;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bInRVisible;                                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Hint_C_SetLRArrowVisible) == 0x000001, "Wrong alignment on WBP_Popup_Window_Hint_C_SetLRArrowVisible");
-static_assert(sizeof(WBP_Popup_Window_Hint_C_SetLRArrowVisible) == 0x000002, "Wrong size on WBP_Popup_Window_Hint_C_SetLRArrowVisible");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_SetLRArrowVisible, bInLVisible) == 0x000000, "Member 'WBP_Popup_Window_Hint_C_SetLRArrowVisible::bInLVisible' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_SetLRArrowVisible, bInRVisible) == 0x000001, "Member 'WBP_Popup_Window_Hint_C_SetLRArrowVisible::bInRVisible' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Hint_C_SetLRArrowVisible;
 
 // Function WBP_Popup_Window_Hint.WBP_Popup_Window_Hint_C.SetNextPageIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -620,9 +406,7 @@ struct WBP_Popup_Window_Hint_C_SetNextPageIndex final
 public:
 	int32                                         InChangeValue;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Hint_C_SetNextPageIndex) == 0x000004, "Wrong alignment on WBP_Popup_Window_Hint_C_SetNextPageIndex");
-static_assert(sizeof(WBP_Popup_Window_Hint_C_SetNextPageIndex) == 0x000004, "Wrong size on WBP_Popup_Window_Hint_C_SetNextPageIndex");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_SetNextPageIndex, InChangeValue) == 0x000000, "Member 'WBP_Popup_Window_Hint_C_SetNextPageIndex::InChangeValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Hint_C_SetNextPageIndex;
 
 // Function WBP_Popup_Window_Hint.WBP_Popup_Window_Hint_C.SetPageDisplay
 // 0x0008 (0x0008 - 0x0000)
@@ -632,10 +416,7 @@ public:
 	int32                                         InPageNum;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         InCurrentPageIndex;                                // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Hint_C_SetPageDisplay) == 0x000004, "Wrong alignment on WBP_Popup_Window_Hint_C_SetPageDisplay");
-static_assert(sizeof(WBP_Popup_Window_Hint_C_SetPageDisplay) == 0x000008, "Wrong size on WBP_Popup_Window_Hint_C_SetPageDisplay");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_SetPageDisplay, InPageNum) == 0x000000, "Member 'WBP_Popup_Window_Hint_C_SetPageDisplay::InPageNum' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_SetPageDisplay, InCurrentPageIndex) == 0x000004, "Member 'WBP_Popup_Window_Hint_C_SetPageDisplay::InCurrentPageIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Hint_C_SetPageDisplay;
 
 // Function WBP_Popup_Window_Hint.WBP_Popup_Window_Hint_C.SetPageExplanationText
 // 0x0010 (0x0010 - 0x0000)
@@ -644,9 +425,7 @@ struct WBP_Popup_Window_Hint_C_SetPageExplanationText final
 public:
 	TArray<class FText>                           InTextArray;                                       // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_Popup_Window_Hint_C_SetPageExplanationText) == 0x000008, "Wrong alignment on WBP_Popup_Window_Hint_C_SetPageExplanationText");
-static_assert(sizeof(WBP_Popup_Window_Hint_C_SetPageExplanationText) == 0x000010, "Wrong size on WBP_Popup_Window_Hint_C_SetPageExplanationText");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_SetPageExplanationText, InTextArray) == 0x000000, "Member 'WBP_Popup_Window_Hint_C_SetPageExplanationText::InTextArray' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Hint_C_SetPageExplanationText;
 
 // Function WBP_Popup_Window_Hint.WBP_Popup_Window_Hint_C.SetPageImageTexture
 // 0x0010 (0x0010 - 0x0000)
@@ -655,9 +434,7 @@ struct WBP_Popup_Window_Hint_C_SetPageImageTexture final
 public:
 	TArray<TSoftObjectPtr<class UTexture2D>>      InImageTextureArray;                               // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_Popup_Window_Hint_C_SetPageImageTexture) == 0x000008, "Wrong alignment on WBP_Popup_Window_Hint_C_SetPageImageTexture");
-static_assert(sizeof(WBP_Popup_Window_Hint_C_SetPageImageTexture) == 0x000010, "Wrong size on WBP_Popup_Window_Hint_C_SetPageImageTexture");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_SetPageImageTexture, InImageTextureArray) == 0x000000, "Member 'WBP_Popup_Window_Hint_C_SetPageImageTexture::InImageTextureArray' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Hint_C_SetPageImageTexture;
 
 // Function WBP_Popup_Window_Hint.WBP_Popup_Window_Hint_C.SetPageImageTextureAndWidget
 // 0x0030 (0x0030 - 0x0000)
@@ -668,11 +445,7 @@ public:
 	TArray<TSoftClassPtr<class UClass>>           InImageWidget;                                     // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	TArray<double>                                InImageWidgetAnimationInterval;                    // 0x0020(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_Popup_Window_Hint_C_SetPageImageTextureAndWidget) == 0x000008, "Wrong alignment on WBP_Popup_Window_Hint_C_SetPageImageTextureAndWidget");
-static_assert(sizeof(WBP_Popup_Window_Hint_C_SetPageImageTextureAndWidget) == 0x000030, "Wrong size on WBP_Popup_Window_Hint_C_SetPageImageTextureAndWidget");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_SetPageImageTextureAndWidget, InImageTexture) == 0x000000, "Member 'WBP_Popup_Window_Hint_C_SetPageImageTextureAndWidget::InImageTexture' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_SetPageImageTextureAndWidget, InImageWidget) == 0x000010, "Member 'WBP_Popup_Window_Hint_C_SetPageImageTextureAndWidget::InImageWidget' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_SetPageImageTextureAndWidget, InImageWidgetAnimationInterval) == 0x000020, "Member 'WBP_Popup_Window_Hint_C_SetPageImageTextureAndWidget::InImageWidgetAnimationInterval' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Hint_C_SetPageImageTextureAndWidget;
 
 // Function WBP_Popup_Window_Hint.WBP_Popup_Window_Hint_C.SetPageImageWidget
 // 0x0030 (0x0030 - 0x0000)
@@ -683,11 +456,7 @@ public:
 	TArray<TSoftClassPtr<class UClass>>           InImageWidgetArray;                                // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	TArray<double>                                InAnimationInterval;                               // 0x0020(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_Popup_Window_Hint_C_SetPageImageWidget) == 0x000008, "Wrong alignment on WBP_Popup_Window_Hint_C_SetPageImageWidget");
-static_assert(sizeof(WBP_Popup_Window_Hint_C_SetPageImageWidget) == 0x000030, "Wrong size on WBP_Popup_Window_Hint_C_SetPageImageWidget");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_SetPageImageWidget, InImageTexture) == 0x000000, "Member 'WBP_Popup_Window_Hint_C_SetPageImageWidget::InImageTexture' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_SetPageImageWidget, InImageWidgetArray) == 0x000010, "Member 'WBP_Popup_Window_Hint_C_SetPageImageWidget::InImageWidgetArray' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_SetPageImageWidget, InAnimationInterval) == 0x000020, "Member 'WBP_Popup_Window_Hint_C_SetPageImageWidget::InAnimationInterval' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Hint_C_SetPageImageWidget;
 
 // Function WBP_Popup_Window_Hint.WBP_Popup_Window_Hint_C.SetTitleText
 // 0x0010 (0x0010 - 0x0000)
@@ -696,9 +465,7 @@ struct WBP_Popup_Window_Hint_C_SetTitleText final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_Popup_Window_Hint_C_SetTitleText) == 0x000008, "Wrong alignment on WBP_Popup_Window_Hint_C_SetTitleText");
-static_assert(sizeof(WBP_Popup_Window_Hint_C_SetTitleText) == 0x000010, "Wrong size on WBP_Popup_Window_Hint_C_SetTitleText");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_SetTitleText, InText) == 0x000000, "Member 'WBP_Popup_Window_Hint_C_SetTitleText::InText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Hint_C_SetTitleText;
 
 // Function WBP_Popup_Window_Hint.WBP_Popup_Window_Hint_C.Setup
 // 0x0002 (0x0002 - 0x0000)
@@ -708,10 +475,7 @@ public:
 	EHintId                                       InHintId;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bInDecisionClose;                                  // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Hint_C_Setup) == 0x000001, "Wrong alignment on WBP_Popup_Window_Hint_C_Setup");
-static_assert(sizeof(WBP_Popup_Window_Hint_C_Setup) == 0x000002, "Wrong size on WBP_Popup_Window_Hint_C_Setup");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_Setup, InHintId) == 0x000000, "Member 'WBP_Popup_Window_Hint_C_Setup::InHintId' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_Setup, bInDecisionClose) == 0x000001, "Member 'WBP_Popup_Window_Hint_C_Setup::bInDecisionClose' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Hint_C_Setup;
 
 // Function WBP_Popup_Window_Hint.WBP_Popup_Window_Hint_C.UpdateDisplay
 // 0x0001 (0x0001 - 0x0000)
@@ -720,9 +484,7 @@ struct WBP_Popup_Window_Hint_C_UpdateDisplay final
 public:
 	EHintId                                       InHintId;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Hint_C_UpdateDisplay) == 0x000001, "Wrong alignment on WBP_Popup_Window_Hint_C_UpdateDisplay");
-static_assert(sizeof(WBP_Popup_Window_Hint_C_UpdateDisplay) == 0x000001, "Wrong size on WBP_Popup_Window_Hint_C_UpdateDisplay");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_UpdateDisplay, InHintId) == 0x000000, "Member 'WBP_Popup_Window_Hint_C_UpdateDisplay::InHintId' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Hint_C_UpdateDisplay;
 
 // Function WBP_Popup_Window_Hint.WBP_Popup_Window_Hint_C.UpdateFooter
 // 0x0001 (0x0001 - 0x0000)
@@ -731,9 +493,7 @@ struct WBP_Popup_Window_Hint_C_UpdateFooter final
 public:
 	bool                                          bInIsTips;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Hint_C_UpdateFooter) == 0x000001, "Wrong alignment on WBP_Popup_Window_Hint_C_UpdateFooter");
-static_assert(sizeof(WBP_Popup_Window_Hint_C_UpdateFooter) == 0x000001, "Wrong size on WBP_Popup_Window_Hint_C_UpdateFooter");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_UpdateFooter, bInIsTips) == 0x000000, "Member 'WBP_Popup_Window_Hint_C_UpdateFooter::bInIsTips' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Hint_C_UpdateFooter;
 
 // Function WBP_Popup_Window_Hint.WBP_Popup_Window_Hint_C.GetRegistPriority
 // 0x0001 (0x0001 - 0x0000)
@@ -742,9 +502,7 @@ struct WBP_Popup_Window_Hint_C_GetRegistPriority final
 public:
 	EMainMenuRegistPriority                       ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Hint_C_GetRegistPriority) == 0x000001, "Wrong alignment on WBP_Popup_Window_Hint_C_GetRegistPriority");
-static_assert(sizeof(WBP_Popup_Window_Hint_C_GetRegistPriority) == 0x000001, "Wrong size on WBP_Popup_Window_Hint_C_GetRegistPriority");
-static_assert(offsetof(WBP_Popup_Window_Hint_C_GetRegistPriority, ReturnValue) == 0x000000, "Member 'WBP_Popup_Window_Hint_C_GetRegistPriority::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Hint_C_GetRegistPriority;
 
 }
 

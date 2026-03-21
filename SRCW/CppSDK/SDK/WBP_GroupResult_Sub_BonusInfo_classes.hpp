@@ -41,25 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GroupResult_Sub_BonusInfo_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GroupResult_Sub_BonusInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GroupResult_Sub_BonusInfo_C")
 	}
 	static class UWBP_GroupResult_Sub_BonusInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GroupResult_Sub_BonusInfo_C>();
 	}
 };
-static_assert(alignof(UWBP_GroupResult_Sub_BonusInfo_C) == 0x000008, "Wrong alignment on UWBP_GroupResult_Sub_BonusInfo_C");
-static_assert(sizeof(UWBP_GroupResult_Sub_BonusInfo_C) == 0x000330, "Wrong size on UWBP_GroupResult_Sub_BonusInfo_C");
-static_assert(offsetof(UWBP_GroupResult_Sub_BonusInfo_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_GroupResult_Sub_BonusInfo_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_BonusInfo_C, BonusInfo_Out) == 0x0002E8, "Member 'UWBP_GroupResult_Sub_BonusInfo_C::BonusInfo_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_BonusInfo_C, BonusInfo_Loop) == 0x0002F0, "Member 'UWBP_GroupResult_Sub_BonusInfo_C::BonusInfo_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_BonusInfo_C, BonusInfo_In) == 0x0002F8, "Member 'UWBP_GroupResult_Sub_BonusInfo_C::BonusInfo_In' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_BonusInfo_C, BG) == 0x000300, "Member 'UWBP_GroupResult_Sub_BonusInfo_C::BG' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_BonusInfo_C, Bonus_Base) == 0x000308, "Member 'UWBP_GroupResult_Sub_BonusInfo_C::Bonus_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_BonusInfo_C, BonusDetail_Base) == 0x000310, "Member 'UWBP_GroupResult_Sub_BonusInfo_C::BonusDetail_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_BonusInfo_C, TXT_Bonus) == 0x000318, "Member 'UWBP_GroupResult_Sub_BonusInfo_C::TXT_Bonus' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_BonusInfo_C, TXT_BonusDetail) == 0x000320, "Member 'UWBP_GroupResult_Sub_BonusInfo_C::TXT_BonusDetail' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_BonusInfo_C, WBP_Result_Sub_BonusIcon) == 0x000328, "Member 'UWBP_GroupResult_Sub_BonusInfo_C::WBP_Result_Sub_BonusIcon' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GroupResult_Sub_BonusInfo_C;
 
 }
 

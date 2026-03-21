@@ -23,15 +23,18 @@ class ABP_PreRaceSequenceHolder_C final : public AHierarchicalStateMachineHolder
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_PreRaceSequenceHolder_C">();
+		BP_STATIC_CLASS_IMPL("BP_PreRaceSequenceHolder_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_PreRaceSequenceHolder_C")
 	}
 	static class ABP_PreRaceSequenceHolder_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_PreRaceSequenceHolder_C>();
 	}
 };
-static_assert(alignof(ABP_PreRaceSequenceHolder_C) == 0x000008, "Wrong alignment on ABP_PreRaceSequenceHolder_C");
-static_assert(sizeof(ABP_PreRaceSequenceHolder_C) == 0x0002D8, "Wrong size on ABP_PreRaceSequenceHolder_C");
+DUMPER7_ASSERTS_ABP_PreRaceSequenceHolder_C;
 
 }
 

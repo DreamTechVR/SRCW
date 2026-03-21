@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
+#include "UnionSystem_structs.hpp"
 
 
 namespace SDK::Params
@@ -57,34 +57,7 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x00D0(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail) == 0x000008, "Wrong alignment on WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail");
-static_assert(sizeof(WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail) == 0x0000E8, "Wrong size on WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail, EntryPoint) == 0x000000, "Member 'WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail, K2Node_Event_PlayerName) == 0x000018, "Member 'WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail::K2Node_Event_PlayerName' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail, K2Node_Event_HonorTitleId) == 0x000028, "Member 'WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail::K2Node_Event_HonorTitleId' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail, K2Node_Event_CrossplayPlatform) == 0x00002C, "Member 'WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail::K2Node_Event_CrossplayPlatform' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail, K2Node_Event_RankRate_1) == 0x000030, "Member 'WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail::K2Node_Event_RankRate_1' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail, CallFunc_Conv_ByteToDouble_ReturnValue) == 0x000038, "Member 'WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail::CallFunc_Conv_ByteToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail, CallFunc_GetRateToRank_ReturnValue) == 0x000040, "Member 'WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail::CallFunc_GetRateToRank_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail, CallFunc_ForceGetIsHonorTitleReleased_ReturnValue) == 0x000041, "Member 'WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail::CallFunc_ForceGetIsHonorTitleReleased_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000048, "Member 'WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail, CallFunc_IsValid_ReturnValue) == 0x000050, "Member 'WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail, CallFunc_PlayAnimationForward_ReturnValue) == 0x000058, "Member 'WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail, CallFunc_PlayAnimationForward_ReturnValue_1) == 0x000060, "Member 'WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail::CallFunc_PlayAnimationForward_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail, CallFunc_MakeLiteralText_ReturnValue) == 0x000068, "Member 'WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail, CallFunc_MakeLiteralText_ReturnValue_1) == 0x000078, "Member 'WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail, Temp_int_Variable) == 0x000088, "Member 'WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000090, "Member 'WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail, CallFunc_GetClampUserNameLength_ReturnValue) == 0x000098, "Member 'WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail::CallFunc_GetClampUserNameLength_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail, K2Node_Event_RankRate) == 0x00009C, "Member 'WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail::K2Node_Event_RankRate' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail, CallFunc_TruncateStringWithEllipsis_ReturnValue) == 0x0000A0, "Member 'WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail::CallFunc_TruncateStringWithEllipsis_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail, CallFunc_GetCurrentLegendCompeGrade_ReturnValue) == 0x0000B0, "Member 'WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail::CallFunc_GetCurrentLegendCompeGrade_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail, CallFunc_Conv_StringToText_ReturnValue) == 0x0000B8, "Member 'WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail, Temp_bool_Variable) == 0x0000C8, "Member 'WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail, K2Node_Select_Default) == 0x0000CC, "Member 'WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail, K2Node_CreateDelegate_OutputDelegate_1) == 0x0000D0, "Member 'WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x0000E0, "Member 'WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail;
 
 // Function WBP_StatusInfo_PlayerDetail.WBP_StatusInfo_PlayerDetail_C.GetDriverData
 // 0x03F0 (0x03F0 - 0x0000)
@@ -102,16 +75,7 @@ public:
 	struct FDriverData                            CallFunc_GetDataTableRowFromName_OutRow;           // 0x0058(0x0390)()
 	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x03E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_PlayerDetail_C_GetDriverData) == 0x000008, "Wrong alignment on WBP_StatusInfo_PlayerDetail_C_GetDriverData");
-static_assert(sizeof(WBP_StatusInfo_PlayerDetail_C_GetDriverData) == 0x0003F0, "Wrong size on WBP_StatusInfo_PlayerDetail_C_GetDriverData");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_GetDriverData, DriverId) == 0x000000, "Member 'WBP_StatusInfo_PlayerDetail_C_GetDriverData::DriverId' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_GetDriverData, DriverName) == 0x000008, "Member 'WBP_StatusInfo_PlayerDetail_C_GetDriverData::DriverName' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_GetDriverData, DriverType) == 0x000018, "Member 'WBP_StatusInfo_PlayerDetail_C_GetDriverData::DriverType' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_GetDriverData, IconTexture) == 0x000020, "Member 'WBP_StatusInfo_PlayerDetail_C_GetDriverData::IconTexture' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_GetDriverData, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000048, "Member 'WBP_StatusInfo_PlayerDetail_C_GetDriverData::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_GetDriverData, CallFunc_GetEnumeratorName_ReturnValue) == 0x000050, "Member 'WBP_StatusInfo_PlayerDetail_C_GetDriverData::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_GetDriverData, CallFunc_GetDataTableRowFromName_OutRow) == 0x000058, "Member 'WBP_StatusInfo_PlayerDetail_C_GetDriverData::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_GetDriverData, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x0003E8, "Member 'WBP_StatusInfo_PlayerDetail_C_GetDriverData::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_PlayerDetail_C_GetDriverData;
 
 // Function WBP_StatusInfo_PlayerDetail.WBP_StatusInfo_PlayerDetail_C.GetUserGadgetPresetData
 // 0x0038 (0x0038 - 0x0000)
@@ -121,10 +85,7 @@ public:
 	struct FGadgetPlateUIData                     GadgetPlateUIData_0;                               // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm)
 	TArray<struct FUserGadgetData>                GadgetDataList;                                    // 0x0028(0x0010)(Parm, OutParm)
 };
-static_assert(alignof(WBP_StatusInfo_PlayerDetail_C_GetUserGadgetPresetData) == 0x000008, "Wrong alignment on WBP_StatusInfo_PlayerDetail_C_GetUserGadgetPresetData");
-static_assert(sizeof(WBP_StatusInfo_PlayerDetail_C_GetUserGadgetPresetData) == 0x000038, "Wrong size on WBP_StatusInfo_PlayerDetail_C_GetUserGadgetPresetData");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_GetUserGadgetPresetData, GadgetPlateUIData_0) == 0x000000, "Member 'WBP_StatusInfo_PlayerDetail_C_GetUserGadgetPresetData::GadgetPlateUIData_0' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_GetUserGadgetPresetData, GadgetDataList) == 0x000028, "Member 'WBP_StatusInfo_PlayerDetail_C_GetUserGadgetPresetData::GadgetDataList' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_PlayerDetail_C_GetUserGadgetPresetData;
 
 // Function WBP_StatusInfo_PlayerDetail.WBP_StatusInfo_PlayerDetail_C.MakeUserPlateUIData
 // 0x0098 (0x0098 - 0x0000)
@@ -137,13 +98,7 @@ public:
 	struct FUserGadgetPresetData                  K2Node_MakeStruct_UserGadgetPresetData;            // 0x0060(0x0010)()
 	struct FGadgetPlateUIData                     K2Node_MakeStruct_GadgetPlateUIData;               // 0x0070(0x0028)()
 };
-static_assert(alignof(WBP_StatusInfo_PlayerDetail_C_MakeUserPlateUIData) == 0x000008, "Wrong alignment on WBP_StatusInfo_PlayerDetail_C_MakeUserPlateUIData");
-static_assert(sizeof(WBP_StatusInfo_PlayerDetail_C_MakeUserPlateUIData) == 0x000098, "Wrong size on WBP_StatusInfo_PlayerDetail_C_MakeUserPlateUIData");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_MakeUserPlateUIData, GadgetPlateUIData_0) == 0x000000, "Member 'WBP_StatusInfo_PlayerDetail_C_MakeUserPlateUIData::GadgetPlateUIData_0' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_MakeUserPlateUIData, GadgetDataList) == 0x000028, "Member 'WBP_StatusInfo_PlayerDetail_C_MakeUserPlateUIData::GadgetDataList' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_MakeUserPlateUIData, UsetGadgetPlateUIData) == 0x000038, "Member 'WBP_StatusInfo_PlayerDetail_C_MakeUserPlateUIData::UsetGadgetPlateUIData' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_MakeUserPlateUIData, K2Node_MakeStruct_UserGadgetPresetData) == 0x000060, "Member 'WBP_StatusInfo_PlayerDetail_C_MakeUserPlateUIData::K2Node_MakeStruct_UserGadgetPresetData' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_MakeUserPlateUIData, K2Node_MakeStruct_GadgetPlateUIData) == 0x000070, "Member 'WBP_StatusInfo_PlayerDetail_C_MakeUserPlateUIData::K2Node_MakeStruct_GadgetPlateUIData' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_PlayerDetail_C_MakeUserPlateUIData;
 
 // Function WBP_StatusInfo_PlayerDetail.WBP_StatusInfo_PlayerDetail_C.SetupDetailData
 // 0x00A0 (0x00A0 - 0x0000)
@@ -170,24 +125,7 @@ public:
 	struct FGadgetPlateUIData                     CallFunc_MakeUserPlateUIData_UsetGadgetPlateUIData; // 0x0068(0x0028)()
 	TArray<EGadgetId>                             Temp_byte_Variable;                                // 0x0090(0x0010)(ReferenceParm)
 };
-static_assert(alignof(WBP_StatusInfo_PlayerDetail_C_SetupDetailData) == 0x000008, "Wrong alignment on WBP_StatusInfo_PlayerDetail_C_SetupDetailData");
-static_assert(sizeof(WBP_StatusInfo_PlayerDetail_C_SetupDetailData) == 0x0000A0, "Wrong size on WBP_StatusInfo_PlayerDetail_C_SetupDetailData");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupDetailData, DriverId) == 0x000000, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupDetailData::DriverId' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupDetailData, CarPartsNote) == 0x000004, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupDetailData::CarPartsNote' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupDetailData, GadgetNote) == 0x000010, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupDetailData::GadgetNote' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupDetailData, CallFunc_Conv_IntToByte_ReturnValue) == 0x00002C, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupDetailData::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupDetailData, Temp_int_Array_Index_Variable) == 0x000030, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupDetailData::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupDetailData, CallFunc_GetValidValue_ReturnValue) == 0x000034, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupDetailData::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupDetailData, Temp_int_Loop_Counter_Variable) == 0x000038, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupDetailData::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupDetailData, CallFunc_Add_IntInt_ReturnValue) == 0x00003C, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupDetailData::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupDetailData, CallFunc_GetUserGadgetPresetData_GadgetDataList) == 0x000040, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupDetailData::CallFunc_GetUserGadgetPresetData_GadgetDataList' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupDetailData, CallFunc_Array_Get_Item) == 0x000050, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupDetailData::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupDetailData, CallFunc_Array_Add_ReturnValue) == 0x000058, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupDetailData::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupDetailData, CallFunc_Array_Length_ReturnValue) == 0x00005C, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupDetailData::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupDetailData, CallFunc_ForceGetIsGadgetReleased_ReturnValue) == 0x000060, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupDetailData::CallFunc_ForceGetIsGadgetReleased_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupDetailData, CallFunc_Less_IntInt_ReturnValue) == 0x000061, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupDetailData::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupDetailData, CallFunc_MakeUserPlateUIData_UsetGadgetPlateUIData) == 0x000068, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupDetailData::CallFunc_MakeUserPlateUIData_UsetGadgetPlateUIData' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupDetailData, Temp_byte_Variable) == 0x000090, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupDetailData::Temp_byte_Variable' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_PlayerDetail_C_SetupDetailData;
 
 // Function WBP_StatusInfo_PlayerDetail.WBP_StatusInfo_PlayerDetail_C.SetupLegendCompeIcon
 // 0x0004 (0x0004 - 0x0000)
@@ -196,9 +134,7 @@ struct WBP_StatusInfo_PlayerDetail_C_SetupLegendCompeIcon final
 public:
 	int32                                         RankRate;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_PlayerDetail_C_SetupLegendCompeIcon) == 0x000004, "Wrong alignment on WBP_StatusInfo_PlayerDetail_C_SetupLegendCompeIcon");
-static_assert(sizeof(WBP_StatusInfo_PlayerDetail_C_SetupLegendCompeIcon) == 0x000004, "Wrong size on WBP_StatusInfo_PlayerDetail_C_SetupLegendCompeIcon");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupLegendCompeIcon, RankRate) == 0x000000, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupLegendCompeIcon::RankRate' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_PlayerDetail_C_SetupLegendCompeIcon;
 
 // Function WBP_StatusInfo_PlayerDetail.WBP_StatusInfo_PlayerDetail_C.SetupMachineInfo
 // 0x0208 (0x0208 - 0x0000)
@@ -255,50 +191,7 @@ public:
 	TSoftObjectPtr<class UTexture2D>              CallFunc_GetDriverData_IconTexture;                // 0x0188(0x0028)(HasGetValueTypeHash)
 	struct FMachinePartsUIData                    CallFunc_LoadTirePartsById_OutTirePartsUIData;     // 0x01B0(0x0058)()
 };
-static_assert(alignof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo) == 0x000008, "Wrong alignment on WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo");
-static_assert(sizeof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo) == 0x000208, "Wrong size on WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, DriverId) == 0x000000, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::DriverId' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, RankingDataUserNoteCarParts) == 0x000004, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::RankingDataUserNoteCarParts' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, RankingDataUserNoteGadget) == 0x000010, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::RankingDataUserNoteGadget' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, SetMachineID) == 0x00002C, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::SetMachineID' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, SetDriverId) == 0x00002D, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::SetDriverId' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, Temp_bool_Variable) == 0x00002E, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, CallFunc_MakeGadgetPlateUIData_outGadgetPlateUIData) == 0x000030, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::CallFunc_MakeGadgetPlateUIData_outGadgetPlateUIData' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, CallFunc_Conv_IntToByte_ReturnValue) == 0x000058, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, CallFunc_Conv_IntToByte_ReturnValue_1) == 0x000059, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::CallFunc_Conv_IntToByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, CallFunc_GetValidValue_ReturnValue) == 0x00005A, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, CallFunc_GetValidValue_ReturnValue_1) == 0x00005B, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::CallFunc_GetValidValue_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, CallFunc_ForceGetIsMachineReleased_ReturnValue) == 0x00005C, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::CallFunc_ForceGetIsMachineReleased_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, CallFunc_ForceGetIsMachineReleased_ReturnValue_1) == 0x00005D, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::CallFunc_ForceGetIsMachineReleased_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, CallFunc_Conv_IntToByte_ReturnValue_2) == 0x00005E, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::CallFunc_Conv_IntToByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, CallFunc_ForceGetIsCharacterReleased_ReturnValue) == 0x00005F, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::CallFunc_ForceGetIsCharacterReleased_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, CallFunc_GetValidValue_ReturnValue_2) == 0x000060, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::CallFunc_GetValidValue_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, Temp_byte_Variable) == 0x000061, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, CallFunc_ForceGetIsMachineReleased_ReturnValue_2) == 0x000062, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::CallFunc_ForceGetIsMachineReleased_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, Temp_byte_Variable_1) == 0x000063, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, K2Node_Select_Default) == 0x000064, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, Temp_bool_Variable_1) == 0x000065, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, Temp_byte_Variable_2) == 0x000066, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, K2Node_Select_Default_1) == 0x000067, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, CallFunc_LoadFrontPartsById_OutFrontPartsUIData) == 0x000068, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::CallFunc_LoadFrontPartsById_OutFrontPartsUIData' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, Temp_bool_Variable_2) == 0x0000C0, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, CallFunc_Array_Get_Item) == 0x0000C4, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, K2Node_Select_Default_2) == 0x0000CC, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, CallFunc_IsHoverboardMachineId_ReturnValue) == 0x0000CD, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::CallFunc_IsHoverboardMachineId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, CallFunc_LoadRearPartsById_OutRearPartsUIData) == 0x0000D0, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::CallFunc_LoadRearPartsById_OutRearPartsUIData' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, CallFunc_Array_Get_Item_1) == 0x000128, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, CallFunc_Array_Get_Item_2) == 0x000130, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, CallFunc_Array_Get_Item_3) == 0x000138, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, CallFunc_Array_Get_Item_4) == 0x000140, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, CallFunc_Array_Get_Item_5) == 0x000148, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::CallFunc_Array_Get_Item_5' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, Temp_byte_Variable_3) == 0x000150, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, K2Node_MakeArray_Array) == 0x000158, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, Temp_bool_Variable_3) == 0x000168, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, K2Node_Select_Default_3) == 0x000169, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, CallFunc_GetDriverData_DriverName) == 0x000170, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::CallFunc_GetDriverData_DriverName' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, CallFunc_GetDriverData_DriverType) == 0x000180, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::CallFunc_GetDriverData_DriverType' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, CallFunc_GetDriverData_IconTexture) == 0x000188, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::CallFunc_GetDriverData_IconTexture' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo, CallFunc_LoadTirePartsById_OutTirePartsUIData) == 0x0001B0, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo::CallFunc_LoadTirePartsById_OutTirePartsUIData' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_PlayerDetail_C_SetupMachineInfo;
 
 // Function WBP_StatusInfo_PlayerDetail.WBP_StatusInfo_PlayerDetail_C.SetupPFButton
 // 0x0001 (0x0001 - 0x0000)
@@ -307,9 +200,7 @@ struct WBP_StatusInfo_PlayerDetail_C_SetupPFButton final
 public:
 	bool                                          IsVisible_0;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_PlayerDetail_C_SetupPFButton) == 0x000001, "Wrong alignment on WBP_StatusInfo_PlayerDetail_C_SetupPFButton");
-static_assert(sizeof(WBP_StatusInfo_PlayerDetail_C_SetupPFButton) == 0x000001, "Wrong size on WBP_StatusInfo_PlayerDetail_C_SetupPFButton");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupPFButton, IsVisible_0) == 0x000000, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupPFButton::IsVisible_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_PlayerDetail_C_SetupPFButton;
 
 // Function WBP_StatusInfo_PlayerDetail.WBP_StatusInfo_PlayerDetail_C.SetupPlayerData
 // 0x0018 (0x0018 - 0x0000)
@@ -320,11 +211,7 @@ public:
 	int32                                         HonorTitleId;                                      // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ECrossplayPlatform                            CrossplayPlatform;                                 // 0x0014(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_PlayerDetail_C_SetupPlayerData) == 0x000008, "Wrong alignment on WBP_StatusInfo_PlayerDetail_C_SetupPlayerData");
-static_assert(sizeof(WBP_StatusInfo_PlayerDetail_C_SetupPlayerData) == 0x000018, "Wrong size on WBP_StatusInfo_PlayerDetail_C_SetupPlayerData");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupPlayerData, playerName) == 0x000000, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupPlayerData::playerName' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupPlayerData, HonorTitleId) == 0x000010, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupPlayerData::HonorTitleId' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupPlayerData, CrossplayPlatform) == 0x000014, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupPlayerData::CrossplayPlatform' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_PlayerDetail_C_SetupPlayerData;
 
 // Function WBP_StatusInfo_PlayerDetail.WBP_StatusInfo_PlayerDetail_C.SetupRankIcon
 // 0x0004 (0x0004 - 0x0000)
@@ -333,9 +220,7 @@ struct WBP_StatusInfo_PlayerDetail_C_SetupRankIcon final
 public:
 	int32                                         RankRate;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_PlayerDetail_C_SetupRankIcon) == 0x000004, "Wrong alignment on WBP_StatusInfo_PlayerDetail_C_SetupRankIcon");
-static_assert(sizeof(WBP_StatusInfo_PlayerDetail_C_SetupRankIcon) == 0x000004, "Wrong size on WBP_StatusInfo_PlayerDetail_C_SetupRankIcon");
-static_assert(offsetof(WBP_StatusInfo_PlayerDetail_C_SetupRankIcon, RankRate) == 0x000000, "Member 'WBP_StatusInfo_PlayerDetail_C_SetupRankIcon::RankRate' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_PlayerDetail_C_SetupRankIcon;
 
 }
 

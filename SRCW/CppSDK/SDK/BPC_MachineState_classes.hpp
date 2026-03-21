@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
-#include "UnionRun_structs.hpp"
-#include "UnionLib_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "UnionRun_structs.hpp"
+#include "Engine_structs.hpp"
+#include "UnionLib_structs.hpp"
 
 
 namespace SDK
@@ -74,26 +74,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_MachineState_C">();
+		BP_STATIC_CLASS_IMPL("BPC_MachineState_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_MachineState_C")
 	}
 	static class UBPC_MachineState_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_MachineState_C>();
 	}
 };
-static_assert(alignof(UBPC_MachineState_C) == 0x000008, "Wrong alignment on UBPC_MachineState_C");
-static_assert(sizeof(UBPC_MachineState_C) == 0x0001F0, "Wrong size on UBPC_MachineState_C");
-static_assert(offsetof(UBPC_MachineState_C, UberGraphFrame) == 0x000160, "Member 'UBPC_MachineState_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_MachineState_C, MachineTypeScrollStart) == 0x000168, "Member 'UBPC_MachineState_C::MachineTypeScrollStart' has a wrong offset!");
-static_assert(offsetof(UBPC_MachineState_C, MachineTypeDecide) == 0x000178, "Member 'UBPC_MachineState_C::MachineTypeDecide' has a wrong offset!");
-static_assert(offsetof(UBPC_MachineState_C, TipsWindow) == 0x000188, "Member 'UBPC_MachineState_C::TipsWindow' has a wrong offset!");
-static_assert(offsetof(UBPC_MachineState_C, OnMachineSelectModeChanged) == 0x000190, "Member 'UBPC_MachineState_C::OnMachineSelectModeChanged' has a wrong offset!");
-static_assert(offsetof(UBPC_MachineState_C, OnMachinePartsFocus) == 0x0001A0, "Member 'UBPC_MachineState_C::OnMachinePartsFocus' has a wrong offset!");
-static_assert(offsetof(UBPC_MachineState_C, OnMachinePartsSelect) == 0x0001B0, "Member 'UBPC_MachineState_C::OnMachinePartsSelect' has a wrong offset!");
-static_assert(offsetof(UBPC_MachineState_C, LastMachineIds) == 0x0001C0, "Member 'UBPC_MachineState_C::LastMachineIds' has a wrong offset!");
-static_assert(offsetof(UBPC_MachineState_C, RemainingTimes) == 0x0001D0, "Member 'UBPC_MachineState_C::RemainingTimes' has a wrong offset!");
-static_assert(offsetof(UBPC_MachineState_C, RacerUpdateDelay) == 0x0001E0, "Member 'UBPC_MachineState_C::RacerUpdateDelay' has a wrong offset!");
-static_assert(offsetof(UBPC_MachineState_C, MachinePartsUpdateDelay) == 0x0001E8, "Member 'UBPC_MachineState_C::MachinePartsUpdateDelay' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_MachineState_C;
 
 }
 

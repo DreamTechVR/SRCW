@@ -21,8 +21,7 @@ namespace SDK
 struct ABP_HoldSlicer::FAnimBlueprintGeneratedConstantData final : public ABPT_HoldItem::FAnimBlueprintGeneratedConstantData
 {
 };
-static_assert(alignof(ABP_HoldSlicer::FAnimBlueprintGeneratedConstantData) == 0x000008, "Wrong alignment on ABP_HoldSlicer::FAnimBlueprintGeneratedConstantData");
-static_assert(sizeof(ABP_HoldSlicer::FAnimBlueprintGeneratedConstantData) == 0x000D30, "Wrong size on ABP_HoldSlicer::FAnimBlueprintGeneratedConstantData");
+DUMPER7_ASSERTS_ABP_HoldSlicer__FAnimBlueprintGeneratedConstantData;
 
 }
 

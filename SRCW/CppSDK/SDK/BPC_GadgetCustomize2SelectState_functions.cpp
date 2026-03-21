@@ -17,6 +17,61 @@
 namespace SDK
 {
 
+// Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.CreateGadgetPurchasePopup
+// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   OutSuccess                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBPC_GadgetCustomize2SelectState_C::CreateGadgetPurchasePopup(bool* OutSuccess)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_GadgetCustomize2SelectState_C", "CreateGadgetPurchasePopup");
+
+	Params::BPC_GadgetCustomize2SelectState_C_CreateGadgetPurchasePopup Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutSuccess != nullptr)
+		*OutSuccess = Parms.OutSuccess;
+}
+
+
+// Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.SetFocusToDummyAll
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void UBPC_GadgetCustomize2SelectState_C::SetFocusToDummyAll()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_GadgetCustomize2SelectState_C", "SetFocusToDummyAll");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.SetFocusToDummy
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const int32&                            InPlayerIndex_0                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBPC_GadgetCustomize2SelectState_C::SetFocusToDummy(const int32& InPlayerIndex_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_GadgetCustomize2SelectState_C", "SetFocusToDummy");
+
+	Params::BPC_GadgetCustomize2SelectState_C_SetFocusToDummy Parms{};
+
+	Parms.InPlayerIndex_0 = InPlayerIndex_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.PlaySoundGadgetAttachCancel
 // (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
@@ -611,40 +666,6 @@ void UBPC_GadgetCustomize2SelectState_C::SetAttachedGadgetIdsToWindow(int32 InPl
 		Func = Class->GetFunction("BPC_GadgetCustomize2SelectState_C", "SetAttachedGadgetIdsToWindow");
 
 	Params::BPC_GadgetCustomize2SelectState_C_SetAttachedGadgetIdsToWindow Parms{};
-
-	Parms.InPlayerIndex_0 = InPlayerIndex_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.SetFocusToDummyAll
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UBPC_GadgetCustomize2SelectState_C::SetFocusToDummyAll()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPC_GadgetCustomize2SelectState_C", "SetFocusToDummyAll");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.SetFocusToDummy
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   InPlayerIndex_0                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBPC_GadgetCustomize2SelectState_C::SetFocusToDummy(int32 InPlayerIndex_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPC_GadgetCustomize2SelectState_C", "SetFocusToDummy");
-
-	Params::BPC_GadgetCustomize2SelectState_C_SetFocusToDummy Parms{};
 
 	Parms.InPlayerIndex_0 = InPlayerIndex_0;
 

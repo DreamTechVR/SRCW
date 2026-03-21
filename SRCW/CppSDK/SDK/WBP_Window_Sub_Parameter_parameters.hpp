@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
 #include "UnionRun_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
@@ -38,20 +38,7 @@ public:
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0034(0x0014)()
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Window_Sub_Parameter_C_ExecuteUbergraph_WBP_Window_Sub_Parameter) == 0x000004, "Wrong alignment on WBP_Window_Sub_Parameter_C_ExecuteUbergraph_WBP_Window_Sub_Parameter");
-static_assert(sizeof(WBP_Window_Sub_Parameter_C_ExecuteUbergraph_WBP_Window_Sub_Parameter) == 0x00004C, "Wrong size on WBP_Window_Sub_Parameter_C_ExecuteUbergraph_WBP_Window_Sub_Parameter");
-static_assert(offsetof(WBP_Window_Sub_Parameter_C_ExecuteUbergraph_WBP_Window_Sub_Parameter, EntryPoint) == 0x000000, "Member 'WBP_Window_Sub_Parameter_C_ExecuteUbergraph_WBP_Window_Sub_Parameter::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_Parameter_C_ExecuteUbergraph_WBP_Window_Sub_Parameter, Temp_byte_Variable) == 0x000004, "Member 'WBP_Window_Sub_Parameter_C_ExecuteUbergraph_WBP_Window_Sub_Parameter::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_Parameter_C_ExecuteUbergraph_WBP_Window_Sub_Parameter, Temp_real_Variable) == 0x000008, "Member 'WBP_Window_Sub_Parameter_C_ExecuteUbergraph_WBP_Window_Sub_Parameter::Temp_real_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_Parameter_C_ExecuteUbergraph_WBP_Window_Sub_Parameter, Temp_real_Variable_1) == 0x00000C, "Member 'WBP_Window_Sub_Parameter_C_ExecuteUbergraph_WBP_Window_Sub_Parameter::Temp_real_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_Parameter_C_ExecuteUbergraph_WBP_Window_Sub_Parameter, Temp_real_Variable_2) == 0x000010, "Member 'WBP_Window_Sub_Parameter_C_ExecuteUbergraph_WBP_Window_Sub_Parameter::Temp_real_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_Parameter_C_ExecuteUbergraph_WBP_Window_Sub_Parameter, Temp_real_Variable_3) == 0x000014, "Member 'WBP_Window_Sub_Parameter_C_ExecuteUbergraph_WBP_Window_Sub_Parameter::Temp_real_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_Parameter_C_ExecuteUbergraph_WBP_Window_Sub_Parameter, Temp_real_Variable_4) == 0x000018, "Member 'WBP_Window_Sub_Parameter_C_ExecuteUbergraph_WBP_Window_Sub_Parameter::Temp_real_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_Parameter_C_ExecuteUbergraph_WBP_Window_Sub_Parameter, K2Node_Event_IsDesignTime) == 0x00001C, "Member 'WBP_Window_Sub_Parameter_C_ExecuteUbergraph_WBP_Window_Sub_Parameter::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_Parameter_C_ExecuteUbergraph_WBP_Window_Sub_Parameter, CallFunc_Array_Get_Item) == 0x000020, "Member 'WBP_Window_Sub_Parameter_C_ExecuteUbergraph_WBP_Window_Sub_Parameter::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_Parameter_C_ExecuteUbergraph_WBP_Window_Sub_Parameter, K2Node_Select_Default) == 0x000030, "Member 'WBP_Window_Sub_Parameter_C_ExecuteUbergraph_WBP_Window_Sub_Parameter::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_Parameter_C_ExecuteUbergraph_WBP_Window_Sub_Parameter, K2Node_MakeStruct_SlateColor) == 0x000034, "Member 'WBP_Window_Sub_Parameter_C_ExecuteUbergraph_WBP_Window_Sub_Parameter::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_Parameter_C_ExecuteUbergraph_WBP_Window_Sub_Parameter, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000048, "Member 'WBP_Window_Sub_Parameter_C_ExecuteUbergraph_WBP_Window_Sub_Parameter::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Window_Sub_Parameter_C_ExecuteUbergraph_WBP_Window_Sub_Parameter;
 
 // Function WBP_Window_Sub_Parameter.WBP_Window_Sub_Parameter_C.OnConstParamBarMaterials
 // 0x0028 (0x0028 - 0x0000)
@@ -64,13 +51,7 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_3;         // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_4;         // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Window_Sub_Parameter_C_OnConstParamBarMaterials) == 0x000008, "Wrong alignment on WBP_Window_Sub_Parameter_C_OnConstParamBarMaterials");
-static_assert(sizeof(WBP_Window_Sub_Parameter_C_OnConstParamBarMaterials) == 0x000028, "Wrong size on WBP_Window_Sub_Parameter_C_OnConstParamBarMaterials");
-static_assert(offsetof(WBP_Window_Sub_Parameter_C_OnConstParamBarMaterials, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000000, "Member 'WBP_Window_Sub_Parameter_C_OnConstParamBarMaterials::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_Parameter_C_OnConstParamBarMaterials, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x000008, "Member 'WBP_Window_Sub_Parameter_C_OnConstParamBarMaterials::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_Parameter_C_OnConstParamBarMaterials, CallFunc_GetDynamicMaterial_ReturnValue_2) == 0x000010, "Member 'WBP_Window_Sub_Parameter_C_OnConstParamBarMaterials::CallFunc_GetDynamicMaterial_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_Parameter_C_OnConstParamBarMaterials, CallFunc_GetDynamicMaterial_ReturnValue_3) == 0x000018, "Member 'WBP_Window_Sub_Parameter_C_OnConstParamBarMaterials::CallFunc_GetDynamicMaterial_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Window_Sub_Parameter_C_OnConstParamBarMaterials, CallFunc_GetDynamicMaterial_ReturnValue_4) == 0x000020, "Member 'WBP_Window_Sub_Parameter_C_OnConstParamBarMaterials::CallFunc_GetDynamicMaterial_ReturnValue_4' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Window_Sub_Parameter_C_OnConstParamBarMaterials;
 
 // Function WBP_Window_Sub_Parameter.WBP_Window_Sub_Parameter_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -79,9 +60,7 @@ struct WBP_Window_Sub_Parameter_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Window_Sub_Parameter_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_Window_Sub_Parameter_C_PreConstruct");
-static_assert(sizeof(WBP_Window_Sub_Parameter_C_PreConstruct) == 0x000001, "Wrong size on WBP_Window_Sub_Parameter_C_PreConstruct");
-static_assert(offsetof(WBP_Window_Sub_Parameter_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_Window_Sub_Parameter_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Window_Sub_Parameter_C_PreConstruct;
 
 }
 

@@ -84,5 +84,19 @@ void UBPC_RaceResultRateRank_C::OnUpdateState(float InDeltaTime)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
+
+// Function BPC_RaceResultRateRank.BPC_RaceResultRateRank_C.ReceiveBeginPlay
+// (Event, Public, BlueprintEvent)
+
+void UBPC_RaceResultRateRank_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_RaceResultRateRank_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
 }
 

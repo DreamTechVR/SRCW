@@ -43,24 +43,7 @@ public:
 	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_1;             // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin) == 0x000008, "Wrong alignment on WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin");
-static_assert(sizeof(WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin) == 0x000060, "Wrong size on WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin, EntryPoint) == 0x000000, "Member 'WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin, K2Node_Event_IsDesignTime) == 0x000005, "Member 'WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x000008, "Member 'WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin, K2Node_DynamicCast_As_____2D) == 0x000010, "Member 'WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin, K2Node_MakeArray_Array) == 0x000020, "Member 'WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin, CallFunc_Format_ReturnValue) == 0x000030, "Member 'WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin, CallFunc_MakeLiteralByte_ReturnValue) == 0x000040, "Member 'WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000044, "Member 'WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin, CallFunc_IsValid_ReturnValue_1) == 0x000048, "Member 'WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin, CallFunc_IsValid_ReturnValue_2) == 0x000049, "Member 'WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin, CallFunc_IsValid_ReturnValue_3) == 0x00004A, "Member 'WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin, CallFunc_Create_ReturnValue) == 0x000050, "Member 'WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin, CallFunc_GetMenuDataBaseRivalLevel_ReturnValue) == 0x000058, "Member 'WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin::CallFunc_GetMenuDataBaseRivalLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x00005C, "Member 'WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_Sub_RivalCutin_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalCutin;
 
 // Function WBP_CourseSelect_Sub_RivalCutin.WBP_CourseSelect_Sub_RivalCutin_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -69,9 +52,7 @@ struct WBP_CourseSelect_Sub_RivalCutin_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_Sub_RivalCutin_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_CourseSelect_Sub_RivalCutin_C_PreConstruct");
-static_assert(sizeof(WBP_CourseSelect_Sub_RivalCutin_C_PreConstruct) == 0x000001, "Wrong size on WBP_CourseSelect_Sub_RivalCutin_C_PreConstruct");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalCutin_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_CourseSelect_Sub_RivalCutin_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_Sub_RivalCutin_C_PreConstruct;
 
 }
 

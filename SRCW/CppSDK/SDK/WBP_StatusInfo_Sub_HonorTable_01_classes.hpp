@@ -43,23 +43,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_StatusInfo_Sub_HonorTable_01_C">();
+		BP_STATIC_CLASS_IMPL("WBP_StatusInfo_Sub_HonorTable_01_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_StatusInfo_Sub_HonorTable_01_C")
 	}
 	static class UWBP_StatusInfo_Sub_HonorTable_01_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_StatusInfo_Sub_HonorTable_01_C>();
 	}
 };
-static_assert(alignof(UWBP_StatusInfo_Sub_HonorTable_01_C) == 0x000008, "Wrong alignment on UWBP_StatusInfo_Sub_HonorTable_01_C");
-static_assert(sizeof(UWBP_StatusInfo_Sub_HonorTable_01_C) == 0x000320, "Wrong size on UWBP_StatusInfo_Sub_HonorTable_01_C");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorTable_01_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_StatusInfo_Sub_HonorTable_01_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorTable_01_C, Base_Legend) == 0x0002E8, "Member 'UWBP_StatusInfo_Sub_HonorTable_01_C::Base_Legend' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorTable_01_C, Base_WorldMatch) == 0x0002F0, "Member 'UWBP_StatusInfo_Sub_HonorTable_01_C::Base_WorldMatch' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorTable_01_C, DSP_Check) == 0x0002F8, "Member 'UWBP_StatusInfo_Sub_HonorTable_01_C::DSP_Check' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorTable_01_C, TXT_Header_Rank) == 0x000300, "Member 'UWBP_StatusInfo_Sub_HonorTable_01_C::TXT_Header_Rank' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorTable_01_C, WBP_HonorTitle_Plate) == 0x000308, "Member 'UWBP_StatusInfo_Sub_HonorTable_01_C::WBP_HonorTitle_Plate' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorTable_01_C, WidgetSwitcher_Base) == 0x000310, "Member 'UWBP_StatusInfo_Sub_HonorTable_01_C::WidgetSwitcher_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorTable_01_C, HeaderBackgroundIndex) == 0x000318, "Member 'UWBP_StatusInfo_Sub_HonorTable_01_C::HeaderBackgroundIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_StatusInfo_Sub_HonorTable_01_C;
 
 }
 

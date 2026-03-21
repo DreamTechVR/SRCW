@@ -28,13 +28,7 @@ public:
 	class FString                                 CallFunc_GetDisplayName_ReturnValue;               // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_GetNotifyName_ReturnValue;                // 0x0038(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayAtomCue_C_GetNotifyName) == 0x000008, "Wrong alignment on PlayAtomCue_C_GetNotifyName");
-static_assert(sizeof(PlayAtomCue_C_GetNotifyName) == 0x000048, "Wrong size on PlayAtomCue_C_GetNotifyName");
-static_assert(offsetof(PlayAtomCue_C_GetNotifyName, ReturnValue) == 0x000000, "Member 'PlayAtomCue_C_GetNotifyName::ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayAtomCue_C_GetNotifyName, NotifyName) == 0x000010, "Member 'PlayAtomCue_C_GetNotifyName::NotifyName' has a wrong offset!");
-static_assert(offsetof(PlayAtomCue_C_GetNotifyName, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'PlayAtomCue_C_GetNotifyName::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayAtomCue_C_GetNotifyName, CallFunc_GetDisplayName_ReturnValue) == 0x000028, "Member 'PlayAtomCue_C_GetNotifyName::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayAtomCue_C_GetNotifyName, CallFunc_GetNotifyName_ReturnValue) == 0x000038, "Member 'PlayAtomCue_C_GetNotifyName::CallFunc_GetNotifyName_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PlayAtomCue_C_GetNotifyName;
 
 // Function AnimNotify_PlayAtomCue.PlayAtomCue_C.Received_Notify
 // 0x0070 (0x0070 - 0x0000)
@@ -55,19 +49,7 @@ public:
 	float                                         CallFunc_PlaySoundForAnimNotify_PitchMultiplier_ImplicitCast_1; // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_PlaySoundForAnimNotify_VolumeMultiplier_ImplicitCast_1; // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayAtomCue_C_Received_Notify) == 0x000008, "Wrong alignment on PlayAtomCue_C_Received_Notify");
-static_assert(sizeof(PlayAtomCue_C_Received_Notify) == 0x000070, "Wrong size on PlayAtomCue_C_Received_Notify");
-static_assert(offsetof(PlayAtomCue_C_Received_Notify, MeshComp) == 0x000000, "Member 'PlayAtomCue_C_Received_Notify::MeshComp' has a wrong offset!");
-static_assert(offsetof(PlayAtomCue_C_Received_Notify, Animation) == 0x000008, "Member 'PlayAtomCue_C_Received_Notify::Animation' has a wrong offset!");
-static_assert(offsetof(PlayAtomCue_C_Received_Notify, EventReference) == 0x000010, "Member 'PlayAtomCue_C_Received_Notify::EventReference' has a wrong offset!");
-static_assert(offsetof(PlayAtomCue_C_Received_Notify, ReturnValue) == 0x000040, "Member 'PlayAtomCue_C_Received_Notify::ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayAtomCue_C_Received_Notify, CallFunc_PlaySoundForAnimNotify_ReturnValue) == 0x000048, "Member 'PlayAtomCue_C_Received_Notify::CallFunc_PlaySoundForAnimNotify_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayAtomCue_C_Received_Notify, CallFunc_PlaySoundForAnimNotify_ReturnValue_1) == 0x000050, "Member 'PlayAtomCue_C_Received_Notify::CallFunc_PlaySoundForAnimNotify_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayAtomCue_C_Received_Notify, CallFunc_IsValid_ReturnValue) == 0x000058, "Member 'PlayAtomCue_C_Received_Notify::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayAtomCue_C_Received_Notify, CallFunc_PlaySoundForAnimNotify_PitchMultiplier_ImplicitCast) == 0x00005C, "Member 'PlayAtomCue_C_Received_Notify::CallFunc_PlaySoundForAnimNotify_PitchMultiplier_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(PlayAtomCue_C_Received_Notify, CallFunc_PlaySoundForAnimNotify_VolumeMultiplier_ImplicitCast) == 0x000060, "Member 'PlayAtomCue_C_Received_Notify::CallFunc_PlaySoundForAnimNotify_VolumeMultiplier_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(PlayAtomCue_C_Received_Notify, CallFunc_PlaySoundForAnimNotify_PitchMultiplier_ImplicitCast_1) == 0x000064, "Member 'PlayAtomCue_C_Received_Notify::CallFunc_PlaySoundForAnimNotify_PitchMultiplier_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(PlayAtomCue_C_Received_Notify, CallFunc_PlaySoundForAnimNotify_VolumeMultiplier_ImplicitCast_1) == 0x000068, "Member 'PlayAtomCue_C_Received_Notify::CallFunc_PlaySoundForAnimNotify_VolumeMultiplier_ImplicitCast_1' has a wrong offset!");
+DUMPER7_ASSERTS_PlayAtomCue_C_Received_Notify;
 
 }
 

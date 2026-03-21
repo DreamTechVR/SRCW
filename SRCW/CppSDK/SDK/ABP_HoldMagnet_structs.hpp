@@ -21,8 +21,7 @@ namespace SDK
 struct ABP_HoldMagnet::FAnimBlueprintGeneratedConstantData final : public ABPT_HoldItem::FAnimBlueprintGeneratedConstantData
 {
 };
-static_assert(alignof(ABP_HoldMagnet::FAnimBlueprintGeneratedConstantData) == 0x000008, "Wrong alignment on ABP_HoldMagnet::FAnimBlueprintGeneratedConstantData");
-static_assert(sizeof(ABP_HoldMagnet::FAnimBlueprintGeneratedConstantData) == 0x000D30, "Wrong size on ABP_HoldMagnet::FAnimBlueprintGeneratedConstantData");
+DUMPER7_ASSERTS_ABP_HoldMagnet__FAnimBlueprintGeneratedConstantData;
 
 }
 

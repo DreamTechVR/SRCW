@@ -21,8 +21,7 @@ namespace SDK
 struct ABP_HoldRocketPunch::FAnimBlueprintGeneratedConstantData final : public ABPT_HoldItem::FAnimBlueprintGeneratedConstantData
 {
 };
-static_assert(alignof(ABP_HoldRocketPunch::FAnimBlueprintGeneratedConstantData) == 0x000008, "Wrong alignment on ABP_HoldRocketPunch::FAnimBlueprintGeneratedConstantData");
-static_assert(sizeof(ABP_HoldRocketPunch::FAnimBlueprintGeneratedConstantData) == 0x000D30, "Wrong size on ABP_HoldRocketPunch::FAnimBlueprintGeneratedConstantData");
+DUMPER7_ASSERTS_ABP_HoldRocketPunch__FAnimBlueprintGeneratedConstantData;
 
 }
 

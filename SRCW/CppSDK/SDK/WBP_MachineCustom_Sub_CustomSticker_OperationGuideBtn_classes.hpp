@@ -37,20 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C")
 	}
 	static class UWBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C>();
 	}
 };
-static_assert(alignof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C) == 0x000008, "Wrong alignment on UWBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C");
-static_assert(sizeof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C) == 0x000308, "Wrong size on UWBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C, TXT__) == 0x0002E8, "Member 'UWBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C::TXT__' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C, TXT_OperationName_01) == 0x0002F0, "Member 'UWBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C::TXT_OperationName_01' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C, WBP_CMN_ControllerBtn_01) == 0x0002F8, "Member 'UWBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C::WBP_CMN_ControllerBtn_01' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C, WBP_CMN_ControllerBtn＿02) == 0x000300, "Member 'UWBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C::WBP_CMN_ControllerBtn＿02' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MachineCustom_Sub_CustomSticker_OperationGuideBtn_C;
 
 }
 

@@ -23,10 +23,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             K2Node_Event_Texture;                              // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_EventTip_Festa_Monitor_Festa_C_ExecuteUbergraph_WBP_EventTip_Festa_Monitor_Festa) == 0x000008, "Wrong alignment on WBP_EventTip_Festa_Monitor_Festa_C_ExecuteUbergraph_WBP_EventTip_Festa_Monitor_Festa");
-static_assert(sizeof(WBP_EventTip_Festa_Monitor_Festa_C_ExecuteUbergraph_WBP_EventTip_Festa_Monitor_Festa) == 0x000010, "Wrong size on WBP_EventTip_Festa_Monitor_Festa_C_ExecuteUbergraph_WBP_EventTip_Festa_Monitor_Festa");
-static_assert(offsetof(WBP_EventTip_Festa_Monitor_Festa_C_ExecuteUbergraph_WBP_EventTip_Festa_Monitor_Festa, EntryPoint) == 0x000000, "Member 'WBP_EventTip_Festa_Monitor_Festa_C_ExecuteUbergraph_WBP_EventTip_Festa_Monitor_Festa::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_EventTip_Festa_Monitor_Festa_C_ExecuteUbergraph_WBP_EventTip_Festa_Monitor_Festa, K2Node_Event_Texture) == 0x000008, "Member 'WBP_EventTip_Festa_Monitor_Festa_C_ExecuteUbergraph_WBP_EventTip_Festa_Monitor_Festa::K2Node_Event_Texture' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_EventTip_Festa_Monitor_Festa_C_ExecuteUbergraph_WBP_EventTip_Festa_Monitor_Festa;
 
 // Function WBP_EventTip_Festa_Monitor_Festa.WBP_EventTip_Festa_Monitor_Festa_C.SetFestaInfoTexture
 // 0x0008 (0x0008 - 0x0000)
@@ -35,9 +32,7 @@ struct WBP_EventTip_Festa_Monitor_Festa_C_SetFestaInfoTexture final
 public:
 	class UTexture2D*                             Texture;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_EventTip_Festa_Monitor_Festa_C_SetFestaInfoTexture) == 0x000008, "Wrong alignment on WBP_EventTip_Festa_Monitor_Festa_C_SetFestaInfoTexture");
-static_assert(sizeof(WBP_EventTip_Festa_Monitor_Festa_C_SetFestaInfoTexture) == 0x000008, "Wrong size on WBP_EventTip_Festa_Monitor_Festa_C_SetFestaInfoTexture");
-static_assert(offsetof(WBP_EventTip_Festa_Monitor_Festa_C_SetFestaInfoTexture, Texture) == 0x000000, "Member 'WBP_EventTip_Festa_Monitor_Festa_C_SetFestaInfoTexture::Texture' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_EventTip_Festa_Monitor_Festa_C_SetFestaInfoTexture;
 
 }
 

@@ -21,9 +21,7 @@ struct WBP_Race_StartDash_Sub_CountDown_C_DelayStartAnim final
 public:
 	int32                                         Count;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_StartDash_Sub_CountDown_C_DelayStartAnim) == 0x000004, "Wrong alignment on WBP_Race_StartDash_Sub_CountDown_C_DelayStartAnim");
-static_assert(sizeof(WBP_Race_StartDash_Sub_CountDown_C_DelayStartAnim) == 0x000004, "Wrong size on WBP_Race_StartDash_Sub_CountDown_C_DelayStartAnim");
-static_assert(offsetof(WBP_Race_StartDash_Sub_CountDown_C_DelayStartAnim, Count) == 0x000000, "Member 'WBP_Race_StartDash_Sub_CountDown_C_DelayStartAnim::Count' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_StartDash_Sub_CountDown_C_DelayStartAnim;
 
 // Function WBP_Race_StartDash_Sub_CountDown.WBP_Race_StartDash_Sub_CountDown_C.ExecuteUbergraph_WBP_Race_StartDash_Sub_CountDown
 // 0x0048 (0x0048 - 0x0000)
@@ -45,21 +43,7 @@ public:
 	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_StartDash_Sub_CountDown_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_CountDown) == 0x000008, "Wrong alignment on WBP_Race_StartDash_Sub_CountDown_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_CountDown");
-static_assert(sizeof(WBP_Race_StartDash_Sub_CountDown_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_CountDown) == 0x000048, "Wrong size on WBP_Race_StartDash_Sub_CountDown_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_CountDown");
-static_assert(offsetof(WBP_Race_StartDash_Sub_CountDown_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_CountDown, EntryPoint) == 0x000000, "Member 'WBP_Race_StartDash_Sub_CountDown_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_CountDown::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_CountDown_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_CountDown, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_Race_StartDash_Sub_CountDown_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_CountDown::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_CountDown_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_CountDown, Temp_int_Variable) == 0x000010, "Member 'WBP_Race_StartDash_Sub_CountDown_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_CountDown::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_CountDown_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_CountDown, Temp_int_Variable_1) == 0x000014, "Member 'WBP_Race_StartDash_Sub_CountDown_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_CountDown::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_CountDown_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_CountDown, Temp_int_Variable_2) == 0x000018, "Member 'WBP_Race_StartDash_Sub_CountDown_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_CountDown::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_CountDown_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_CountDown, Temp_int_Variable_3) == 0x00001C, "Member 'WBP_Race_StartDash_Sub_CountDown_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_CountDown::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_CountDown_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_CountDown, Temp_int_Variable_4) == 0x000020, "Member 'WBP_Race_StartDash_Sub_CountDown_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_CountDown::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_CountDown_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_CountDown, K2Node_CustomEvent_Count) == 0x000024, "Member 'WBP_Race_StartDash_Sub_CountDown_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_CountDown::K2Node_CustomEvent_Count' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_CountDown_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_CountDown, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000028, "Member 'WBP_Race_StartDash_Sub_CountDown_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_CountDown::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_CountDown_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_CountDown, CallFunc_Clamp_ReturnValue) == 0x000030, "Member 'WBP_Race_StartDash_Sub_CountDown_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_CountDown::CallFunc_Clamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_CountDown_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_CountDown, K2Node_Select_Default) == 0x000034, "Member 'WBP_Race_StartDash_Sub_CountDown_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_CountDown::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_CountDown_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_CountDown, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000038, "Member 'WBP_Race_StartDash_Sub_CountDown_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_CountDown::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_CountDown_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_CountDown, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000040, "Member 'WBP_Race_StartDash_Sub_CountDown_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_CountDown::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_StartDash_Sub_CountDown_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_CountDown;
 
 // Function WBP_Race_StartDash_Sub_CountDown.WBP_Race_StartDash_Sub_CountDown_C.SetCountAndStartAnim
 // 0x0004 (0x0004 - 0x0000)
@@ -68,9 +52,7 @@ struct WBP_Race_StartDash_Sub_CountDown_C_SetCountAndStartAnim final
 public:
 	int32                                         Count;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_StartDash_Sub_CountDown_C_SetCountAndStartAnim) == 0x000004, "Wrong alignment on WBP_Race_StartDash_Sub_CountDown_C_SetCountAndStartAnim");
-static_assert(sizeof(WBP_Race_StartDash_Sub_CountDown_C_SetCountAndStartAnim) == 0x000004, "Wrong size on WBP_Race_StartDash_Sub_CountDown_C_SetCountAndStartAnim");
-static_assert(offsetof(WBP_Race_StartDash_Sub_CountDown_C_SetCountAndStartAnim, Count) == 0x000000, "Member 'WBP_Race_StartDash_Sub_CountDown_C_SetCountAndStartAnim::Count' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_StartDash_Sub_CountDown_C_SetCountAndStartAnim;
 
 }
 

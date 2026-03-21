@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -54,22 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_MenuStatePartyRaceSelectGroup_C">();
+		BP_STATIC_CLASS_IMPL("BPC_MenuStatePartyRaceSelectGroup_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_MenuStatePartyRaceSelectGroup_C")
 	}
 	static class UBPC_MenuStatePartyRaceSelectGroup_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_MenuStatePartyRaceSelectGroup_C>();
 	}
 };
-static_assert(alignof(UBPC_MenuStatePartyRaceSelectGroup_C) == 0x000008, "Wrong alignment on UBPC_MenuStatePartyRaceSelectGroup_C");
-static_assert(sizeof(UBPC_MenuStatePartyRaceSelectGroup_C) == 0x000248, "Wrong size on UBPC_MenuStatePartyRaceSelectGroup_C");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectGroup_C, UberGraphFrame) == 0x000208, "Member 'UBPC_MenuStatePartyRaceSelectGroup_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectGroup_C, GroupSelectList) == 0x000210, "Member 'UBPC_MenuStatePartyRaceSelectGroup_C::GroupSelectList' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectGroup_C, Footer) == 0x000220, "Member 'UBPC_MenuStatePartyRaceSelectGroup_C::Footer' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectGroup_C, ReadyWidget) == 0x000228, "Member 'UBPC_MenuStatePartyRaceSelectGroup_C::ReadyWidget' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectGroup_C, MessageBarTimerHandle) == 0x000230, "Member 'UBPC_MenuStatePartyRaceSelectGroup_C::MessageBarTimerHandle' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectGroup_C, MessageBarWidget) == 0x000238, "Member 'UBPC_MenuStatePartyRaceSelectGroup_C::MessageBarWidget' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectGroup_C, WatchPlateAnimationTimerHandle) == 0x000240, "Member 'UBPC_MenuStatePartyRaceSelectGroup_C::WatchPlateAnimationTimerHandle' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_MenuStatePartyRaceSelectGroup_C;
 
 }
 

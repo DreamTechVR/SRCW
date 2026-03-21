@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Turntable_C">();
+		BP_STATIC_CLASS_IMPL("BP_Turntable_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Turntable_C")
 	}
 	static class ABP_Turntable_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Turntable_C>();
 	}
 };
-static_assert(alignof(ABP_Turntable_C) == 0x000008, "Wrong alignment on ABP_Turntable_C");
-static_assert(sizeof(ABP_Turntable_C) == 0x0002A8, "Wrong size on ABP_Turntable_C");
-static_assert(offsetof(ABP_Turntable_C, UberGraphFrame) == 0x000298, "Member 'ABP_Turntable_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_Turntable_C, StaticMesh) == 0x0002A0, "Member 'ABP_Turntable_C::StaticMesh' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_Turntable_C;
 
 }
 

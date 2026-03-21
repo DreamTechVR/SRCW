@@ -39,22 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_HUD_Sub_Rank1_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_HUD_Sub_Rank1_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_HUD_Sub_Rank1_C")
 	}
 	static class UWBP_Race_HUD_Sub_Rank1_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_HUD_Sub_Rank1_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_HUD_Sub_Rank1_C) == 0x000008, "Wrong alignment on UWBP_Race_HUD_Sub_Rank1_C");
-static_assert(sizeof(UWBP_Race_HUD_Sub_Rank1_C) == 0x000338, "Wrong size on UWBP_Race_HUD_Sub_Rank1_C");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Rank1_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Race_HUD_Sub_Rank1_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Rank1_C, Onest) == 0x0002E8, "Member 'UWBP_Race_HUD_Sub_Rank1_C::Onest' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Rank1_C, Onest_Eff_Light_01) == 0x0002F0, "Member 'UWBP_Race_HUD_Sub_Rank1_C::Onest_Eff_Light_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Rank1_C, Onest_Eff_Light_02) == 0x0002F8, "Member 'UWBP_Race_HUD_Sub_Rank1_C::Onest_Eff_Light_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Rank1_C, Onest_Eff_Rainbow) == 0x000300, "Member 'UWBP_Race_HUD_Sub_Rank1_C::Onest_Eff_Rainbow' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Rank1_C, MI_1st) == 0x000308, "Member 'UWBP_Race_HUD_Sub_Rank1_C::MI_1st' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Rank1_C, Rank1stDataTable) == 0x000310, "Member 'UWBP_Race_HUD_Sub_Rank1_C::Rank1stDataTable' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_HUD_Sub_Rank1_C;
 
 }
 

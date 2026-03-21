@@ -12,8 +12,8 @@
 
 #include "SlateCore_structs.hpp"
 #include "UMG_classes.hpp"
-#include "RedpointEOSAuth_structs.hpp"
 #include "CoreUObject_classes.hpp"
+#include "RedpointEOSAuth_structs.hpp"
 
 
 namespace SDK
@@ -33,18 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EOSDefaultUserInterface_EnterDevicePinCode">();
+		STATIC_CLASS_IMPL("EOSDefaultUserInterface_EnterDevicePinCode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EOSDefaultUserInterface_EnterDevicePinCode")
 	}
 	static class UEOSDefaultUserInterface_EnterDevicePinCode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEOSDefaultUserInterface_EnterDevicePinCode>();
 	}
 };
-static_assert(alignof(UEOSDefaultUserInterface_EnterDevicePinCode) == 0x000010, "Wrong alignment on UEOSDefaultUserInterface_EnterDevicePinCode");
-static_assert(sizeof(UEOSDefaultUserInterface_EnterDevicePinCode) == 0x0007D0, "Wrong size on UEOSDefaultUserInterface_EnterDevicePinCode");
-static_assert(offsetof(UEOSDefaultUserInterface_EnterDevicePinCode, TitleFont) == 0x000700, "Member 'UEOSDefaultUserInterface_EnterDevicePinCode::TitleFont' has a wrong offset!");
-static_assert(offsetof(UEOSDefaultUserInterface_EnterDevicePinCode, RegularFont) == 0x000760, "Member 'UEOSDefaultUserInterface_EnterDevicePinCode::RegularFont' has a wrong offset!");
-static_assert(offsetof(UEOSDefaultUserInterface_EnterDevicePinCode, Context) == 0x0007C0, "Member 'UEOSDefaultUserInterface_EnterDevicePinCode::Context' has a wrong offset!");
+DUMPER7_ASSERTS_UEOSDefaultUserInterface_EnterDevicePinCode;
 
 // Class RedpointEOSAuth.EOSDefaultUserInterface_SignInOrCreateAccount
 // 0x04D0 (0x07B0 - 0x02E0)
@@ -60,18 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EOSDefaultUserInterface_SignInOrCreateAccount">();
+		STATIC_CLASS_IMPL("EOSDefaultUserInterface_SignInOrCreateAccount")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EOSDefaultUserInterface_SignInOrCreateAccount")
 	}
 	static class UEOSDefaultUserInterface_SignInOrCreateAccount* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEOSDefaultUserInterface_SignInOrCreateAccount>();
 	}
 };
-static_assert(alignof(UEOSDefaultUserInterface_SignInOrCreateAccount) == 0x000010, "Wrong alignment on UEOSDefaultUserInterface_SignInOrCreateAccount");
-static_assert(sizeof(UEOSDefaultUserInterface_SignInOrCreateAccount) == 0x0007B0, "Wrong size on UEOSDefaultUserInterface_SignInOrCreateAccount");
-static_assert(offsetof(UEOSDefaultUserInterface_SignInOrCreateAccount, TitleFont) == 0x0006E0, "Member 'UEOSDefaultUserInterface_SignInOrCreateAccount::TitleFont' has a wrong offset!");
-static_assert(offsetof(UEOSDefaultUserInterface_SignInOrCreateAccount, RegularFont) == 0x000740, "Member 'UEOSDefaultUserInterface_SignInOrCreateAccount::RegularFont' has a wrong offset!");
-static_assert(offsetof(UEOSDefaultUserInterface_SignInOrCreateAccount, Context) == 0x0007A0, "Member 'UEOSDefaultUserInterface_SignInOrCreateAccount::Context' has a wrong offset!");
+DUMPER7_ASSERTS_UEOSDefaultUserInterface_SignInOrCreateAccount;
 
 // Class RedpointEOSAuth.EOSUserInterface_EnterDevicePinCode
 // 0x0000 (0x0000 - 0x0000)
@@ -83,7 +83,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EOSUserInterface_EnterDevicePinCode">();
+		STATIC_CLASS_IMPL("EOSUserInterface_EnterDevicePinCode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EOSUserInterface_EnterDevicePinCode")
 	}
 	static class IEOSUserInterface_EnterDevicePinCode* GetDefaultObj()
 	{
@@ -99,8 +103,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IEOSUserInterface_EnterDevicePinCode) == 0x000001, "Wrong alignment on IEOSUserInterface_EnterDevicePinCode");
-static_assert(sizeof(IEOSUserInterface_EnterDevicePinCode) == 0x000001, "Wrong size on IEOSUserInterface_EnterDevicePinCode");
+DUMPER7_ASSERTS_IEOSUserInterface_EnterDevicePinCode;
 
 // Class RedpointEOSAuth.EOSUserInterface_EnterDevicePinCode_Context
 // 0x0010 (0x0038 - 0x0028)
@@ -115,15 +118,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EOSUserInterface_EnterDevicePinCode_Context">();
+		STATIC_CLASS_IMPL("EOSUserInterface_EnterDevicePinCode_Context")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EOSUserInterface_EnterDevicePinCode_Context")
 	}
 	static class UEOSUserInterface_EnterDevicePinCode_Context* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEOSUserInterface_EnterDevicePinCode_Context>();
 	}
 };
-static_assert(alignof(UEOSUserInterface_EnterDevicePinCode_Context) == 0x000008, "Wrong alignment on UEOSUserInterface_EnterDevicePinCode_Context");
-static_assert(sizeof(UEOSUserInterface_EnterDevicePinCode_Context) == 0x000038, "Wrong size on UEOSUserInterface_EnterDevicePinCode_Context");
+DUMPER7_ASSERTS_UEOSUserInterface_EnterDevicePinCode_Context;
 
 // Class RedpointEOSAuth.EOSUserInterface_SignInOrCreateAccount
 // 0x0000 (0x0000 - 0x0000)
@@ -135,7 +141,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EOSUserInterface_SignInOrCreateAccount">();
+		STATIC_CLASS_IMPL("EOSUserInterface_SignInOrCreateAccount")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EOSUserInterface_SignInOrCreateAccount")
 	}
 	static class IEOSUserInterface_SignInOrCreateAccount* GetDefaultObj()
 	{
@@ -151,8 +161,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IEOSUserInterface_SignInOrCreateAccount) == 0x000001, "Wrong alignment on IEOSUserInterface_SignInOrCreateAccount");
-static_assert(sizeof(IEOSUserInterface_SignInOrCreateAccount) == 0x000001, "Wrong size on IEOSUserInterface_SignInOrCreateAccount");
+DUMPER7_ASSERTS_IEOSUserInterface_SignInOrCreateAccount;
 
 // Class RedpointEOSAuth.EOSUserInterface_SignInOrCreateAccount_Context
 // 0x0010 (0x0038 - 0x0028)
@@ -167,15 +176,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EOSUserInterface_SignInOrCreateAccount_Context">();
+		STATIC_CLASS_IMPL("EOSUserInterface_SignInOrCreateAccount_Context")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EOSUserInterface_SignInOrCreateAccount_Context")
 	}
 	static class UEOSUserInterface_SignInOrCreateAccount_Context* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEOSUserInterface_SignInOrCreateAccount_Context>();
 	}
 };
-static_assert(alignof(UEOSUserInterface_SignInOrCreateAccount_Context) == 0x000008, "Wrong alignment on UEOSUserInterface_SignInOrCreateAccount_Context");
-static_assert(sizeof(UEOSUserInterface_SignInOrCreateAccount_Context) == 0x000038, "Wrong size on UEOSUserInterface_SignInOrCreateAccount_Context");
+DUMPER7_ASSERTS_UEOSUserInterface_SignInOrCreateAccount_Context;
 
 }
 

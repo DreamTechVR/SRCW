@@ -29,16 +29,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_3;              // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_4;              // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_Sub_RankingTable_Bonus_C_ExecuteUbergraph_WBP_Result_Sub_RankingTable_Bonus) == 0x000008, "Wrong alignment on WBP_Result_Sub_RankingTable_Bonus_C_ExecuteUbergraph_WBP_Result_Sub_RankingTable_Bonus");
-static_assert(sizeof(WBP_Result_Sub_RankingTable_Bonus_C_ExecuteUbergraph_WBP_Result_Sub_RankingTable_Bonus) == 0x000050, "Wrong size on WBP_Result_Sub_RankingTable_Bonus_C_ExecuteUbergraph_WBP_Result_Sub_RankingTable_Bonus");
-static_assert(offsetof(WBP_Result_Sub_RankingTable_Bonus_C_ExecuteUbergraph_WBP_Result_Sub_RankingTable_Bonus, EntryPoint) == 0x000000, "Member 'WBP_Result_Sub_RankingTable_Bonus_C_ExecuteUbergraph_WBP_Result_Sub_RankingTable_Bonus::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_RankingTable_Bonus_C_ExecuteUbergraph_WBP_Result_Sub_RankingTable_Bonus, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_Result_Sub_RankingTable_Bonus_C_ExecuteUbergraph_WBP_Result_Sub_RankingTable_Bonus::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_RankingTable_Bonus_C_ExecuteUbergraph_WBP_Result_Sub_RankingTable_Bonus, K2Node_CustomEvent_BonusText) == 0x000010, "Member 'WBP_Result_Sub_RankingTable_Bonus_C_ExecuteUbergraph_WBP_Result_Sub_RankingTable_Bonus::K2Node_CustomEvent_BonusText' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_RankingTable_Bonus_C_ExecuteUbergraph_WBP_Result_Sub_RankingTable_Bonus, K2Node_CustomEvent_BonusNumText) == 0x000020, "Member 'WBP_Result_Sub_RankingTable_Bonus_C_ExecuteUbergraph_WBP_Result_Sub_RankingTable_Bonus::K2Node_CustomEvent_BonusNumText' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_RankingTable_Bonus_C_ExecuteUbergraph_WBP_Result_Sub_RankingTable_Bonus, CallFunc_PlayAnimation_ReturnValue_1) == 0x000030, "Member 'WBP_Result_Sub_RankingTable_Bonus_C_ExecuteUbergraph_WBP_Result_Sub_RankingTable_Bonus::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_RankingTable_Bonus_C_ExecuteUbergraph_WBP_Result_Sub_RankingTable_Bonus, CallFunc_PlayAnimation_ReturnValue_2) == 0x000038, "Member 'WBP_Result_Sub_RankingTable_Bonus_C_ExecuteUbergraph_WBP_Result_Sub_RankingTable_Bonus::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_RankingTable_Bonus_C_ExecuteUbergraph_WBP_Result_Sub_RankingTable_Bonus, CallFunc_PlayAnimation_ReturnValue_3) == 0x000040, "Member 'WBP_Result_Sub_RankingTable_Bonus_C_ExecuteUbergraph_WBP_Result_Sub_RankingTable_Bonus::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_RankingTable_Bonus_C_ExecuteUbergraph_WBP_Result_Sub_RankingTable_Bonus, CallFunc_PlayAnimation_ReturnValue_4) == 0x000048, "Member 'WBP_Result_Sub_RankingTable_Bonus_C_ExecuteUbergraph_WBP_Result_Sub_RankingTable_Bonus::CallFunc_PlayAnimation_ReturnValue_4' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_Sub_RankingTable_Bonus_C_ExecuteUbergraph_WBP_Result_Sub_RankingTable_Bonus;
 
 // Function WBP_Result_Sub_RankingTable_Bonus.WBP_Result_Sub_RankingTable_Bonus_C.Open
 // 0x0020 (0x0020 - 0x0000)
@@ -48,10 +39,7 @@ public:
 	class FText                                   BonusText;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 	class FText                                   BonusNumText;                                      // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_Result_Sub_RankingTable_Bonus_C_Open) == 0x000008, "Wrong alignment on WBP_Result_Sub_RankingTable_Bonus_C_Open");
-static_assert(sizeof(WBP_Result_Sub_RankingTable_Bonus_C_Open) == 0x000020, "Wrong size on WBP_Result_Sub_RankingTable_Bonus_C_Open");
-static_assert(offsetof(WBP_Result_Sub_RankingTable_Bonus_C_Open, BonusText) == 0x000000, "Member 'WBP_Result_Sub_RankingTable_Bonus_C_Open::BonusText' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_RankingTable_Bonus_C_Open, BonusNumText) == 0x000010, "Member 'WBP_Result_Sub_RankingTable_Bonus_C_Open::BonusNumText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_Sub_RankingTable_Bonus_C_Open;
 
 }
 

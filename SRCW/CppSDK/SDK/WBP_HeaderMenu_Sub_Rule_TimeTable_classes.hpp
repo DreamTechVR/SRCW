@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -77,47 +77,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_HeaderMenu_Sub_Rule_TimeTable_C">();
+		BP_STATIC_CLASS_IMPL("WBP_HeaderMenu_Sub_Rule_TimeTable_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_HeaderMenu_Sub_Rule_TimeTable_C")
 	}
 	static class UWBP_HeaderMenu_Sub_Rule_TimeTable_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_HeaderMenu_Sub_Rule_TimeTable_C>();
 	}
 };
-static_assert(alignof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C) == 0x000008, "Wrong alignment on UWBP_HeaderMenu_Sub_Rule_TimeTable_C");
-static_assert(sizeof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C) == 0x000590, "Wrong size on UWBP_HeaderMenu_Sub_Rule_TimeTable_C");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, UberGraphFrame) == 0x000478, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, TimeTable_Out) == 0x000480, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::TimeTable_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, TimeTable_Loop) == 0x000488, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::TimeTable_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, TimeTable_In) == 0x000490, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::TimeTable_In' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, base) == 0x000498, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, Base_Close) == 0x0004A0, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::Base_Close' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, Base_Default) == 0x0004A8, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::Base_Default' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, Base_NG) == 0x0004B0, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::Base_NG' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, Base_Open) == 0x0004B8, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::Base_Open' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, DSP_Close) == 0x0004C0, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::DSP_Close' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, DSP_Open) == 0x0004C8, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::DSP_Open' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, DSP_WBP_CMN_ControllerBtn) == 0x0004D0, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::DSP_WBP_CMN_ControllerBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, DSP_WBP_CMN_ControllerBtn_Legend) == 0x0004D8, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::DSP_WBP_CMN_ControllerBtn_Legend' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, festa) == 0x0004E0, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::festa' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, GadgetIcon_NG) == 0x0004E8, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::GadgetIcon_NG' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, Header) == 0x0004F0, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::Header' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, Header_Legend) == 0x0004F8, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::Header_Legend' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, LEGEND) == 0x000500, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::LEGEND' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, MouseInteraction) == 0x000508, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, NG) == 0x000510, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::NG' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, Overlay_Base) == 0x000518, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::Overlay_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, TXT_End) == 0x000520, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::TXT_End' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, WBP_FontScroll_Header) == 0x000528, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::WBP_FontScroll_Header' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, WBP_FontScroll_Header_Legend) == 0x000530, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::WBP_FontScroll_Header_Legend' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, WBP_FontScroll_Legend_Rule_Default) == 0x000538, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::WBP_FontScroll_Legend_Rule_Default' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, WBP_FontScroll_Legend_Rule_EX) == 0x000540, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::WBP_FontScroll_Legend_Rule_EX' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, WBP_FontScroll_Legend_Rule_NG) == 0x000548, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::WBP_FontScroll_Legend_Rule_NG' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_01) == 0x000550, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_01' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_02) == 0x000558, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_02' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, TextRule) == 0x000560, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::TextRule' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, TextTime) == 0x000570, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::TextTime' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, RuleIcon) == 0x000580, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::RuleIcon' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_HeaderMenu_Sub_Rule_TimeTable_C;
 
 }
 

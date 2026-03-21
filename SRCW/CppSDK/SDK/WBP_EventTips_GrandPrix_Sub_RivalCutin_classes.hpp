@@ -38,28 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_EventTips_GrandPrix_Sub_RivalCutin_C">();
+		BP_STATIC_CLASS_IMPL("WBP_EventTips_GrandPrix_Sub_RivalCutin_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_EventTips_GrandPrix_Sub_RivalCutin_C")
 	}
 	static class UWBP_EventTips_GrandPrix_Sub_RivalCutin_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_EventTips_GrandPrix_Sub_RivalCutin_C>();
 	}
 };
-static_assert(alignof(UWBP_EventTips_GrandPrix_Sub_RivalCutin_C) == 0x000008, "Wrong alignment on UWBP_EventTips_GrandPrix_Sub_RivalCutin_C");
-static_assert(sizeof(UWBP_EventTips_GrandPrix_Sub_RivalCutin_C) == 0x000348, "Wrong size on UWBP_EventTips_GrandPrix_Sub_RivalCutin_C");
-static_assert(offsetof(UWBP_EventTips_GrandPrix_Sub_RivalCutin_C, CharaIcon) == 0x0002E0, "Member 'UWBP_EventTips_GrandPrix_Sub_RivalCutin_C::CharaIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTips_GrandPrix_Sub_RivalCutin_C, CharaIcon_Shadow) == 0x0002E8, "Member 'UWBP_EventTips_GrandPrix_Sub_RivalCutin_C::CharaIcon_Shadow' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTips_GrandPrix_Sub_RivalCutin_C, Cover) == 0x0002F0, "Member 'UWBP_EventTips_GrandPrix_Sub_RivalCutin_C::Cover' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTips_GrandPrix_Sub_RivalCutin_C, Grow_Back_01) == 0x0002F8, "Member 'UWBP_EventTips_GrandPrix_Sub_RivalCutin_C::Grow_Back_01' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTips_GrandPrix_Sub_RivalCutin_C, Grow_Front) == 0x000300, "Member 'UWBP_EventTips_GrandPrix_Sub_RivalCutin_C::Grow_Front' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTips_GrandPrix_Sub_RivalCutin_C, Line_01) == 0x000308, "Member 'UWBP_EventTips_GrandPrix_Sub_RivalCutin_C::Line_01' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTips_GrandPrix_Sub_RivalCutin_C, Line_02) == 0x000310, "Member 'UWBP_EventTips_GrandPrix_Sub_RivalCutin_C::Line_02' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTips_GrandPrix_Sub_RivalCutin_C, Line_03) == 0x000318, "Member 'UWBP_EventTips_GrandPrix_Sub_RivalCutin_C::Line_03' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTips_GrandPrix_Sub_RivalCutin_C, RivalIcon) == 0x000320, "Member 'UWBP_EventTips_GrandPrix_Sub_RivalCutin_C::RivalIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTips_GrandPrix_Sub_RivalCutin_C, Sparks_01) == 0x000328, "Member 'UWBP_EventTips_GrandPrix_Sub_RivalCutin_C::Sparks_01' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTips_GrandPrix_Sub_RivalCutin_C, Sparks_03) == 0x000330, "Member 'UWBP_EventTips_GrandPrix_Sub_RivalCutin_C::Sparks_03' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTips_GrandPrix_Sub_RivalCutin_C, WBP_RaceBefore_RivalRacer_TopEffects_Parts_12) == 0x000338, "Member 'UWBP_EventTips_GrandPrix_Sub_RivalCutin_C::WBP_RaceBefore_RivalRacer_TopEffects_Parts_12' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTips_GrandPrix_Sub_RivalCutin_C, WBP_RaceBefore_RivalRacer_TopEffects_Parts_13) == 0x000340, "Member 'UWBP_EventTips_GrandPrix_Sub_RivalCutin_C::WBP_RaceBefore_RivalRacer_TopEffects_Parts_13' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_EventTips_GrandPrix_Sub_RivalCutin_C;
 
 }
 

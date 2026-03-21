@@ -23,15 +23,18 @@ class UBPC_RaceSequenceStateDriverGetting_C final : public URaceSequenceStateDri
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_RaceSequenceStateDriverGetting_C">();
+		BP_STATIC_CLASS_IMPL("BPC_RaceSequenceStateDriverGetting_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_RaceSequenceStateDriverGetting_C")
 	}
 	static class UBPC_RaceSequenceStateDriverGetting_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_RaceSequenceStateDriverGetting_C>();
 	}
 };
-static_assert(alignof(UBPC_RaceSequenceStateDriverGetting_C) == 0x000008, "Wrong alignment on UBPC_RaceSequenceStateDriverGetting_C");
-static_assert(sizeof(UBPC_RaceSequenceStateDriverGetting_C) == 0x000158, "Wrong size on UBPC_RaceSequenceStateDriverGetting_C");
+DUMPER7_ASSERTS_UBPC_RaceSequenceStateDriverGetting_C;
 
 }
 

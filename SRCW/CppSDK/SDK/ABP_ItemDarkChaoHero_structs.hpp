@@ -29,22 +29,7 @@ public:
 	struct FAnimSubsystem_Base                    AnimBlueprintExtension_Base;                       // 0x00B8(0x0040)()
 	struct FAnimNodeExposedValueHandler_PropertyAccess AnimGraphNode_Root;                           // 0x00F8(0x0030)()
 };
-static_assert(alignof(ABP_ItemDarkChaoHero::FAnimBlueprintGeneratedConstantData) == 0x000008, "Wrong alignment on ABP_ItemDarkChaoHero::FAnimBlueprintGeneratedConstantData");
-static_assert(sizeof(ABP_ItemDarkChaoHero::FAnimBlueprintGeneratedConstantData) == 0x000128, "Wrong size on ABP_ItemDarkChaoHero::FAnimBlueprintGeneratedConstantData");
-static_assert(offsetof(ABP_ItemDarkChaoHero::FAnimBlueprintGeneratedConstantData, __StructProperty_1) == 0x000008, "Member 'ABP_ItemDarkChaoHero::FAnimBlueprintGeneratedConstantData::__StructProperty_1' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoHero::FAnimBlueprintGeneratedConstantData, __NameProperty_2) == 0x000028, "Member 'ABP_ItemDarkChaoHero::FAnimBlueprintGeneratedConstantData::__NameProperty_2' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoHero::FAnimBlueprintGeneratedConstantData, __NameProperty_3) == 0x000030, "Member 'ABP_ItemDarkChaoHero::FAnimBlueprintGeneratedConstantData::__NameProperty_3' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoHero::FAnimBlueprintGeneratedConstantData, AnimBlueprintExtension_PropertyAccess) == 0x000038, "Member 'ABP_ItemDarkChaoHero::FAnimBlueprintGeneratedConstantData::AnimBlueprintExtension_PropertyAccess' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoHero::FAnimBlueprintGeneratedConstantData, AnimBlueprintExtension_Base) == 0x0000B8, "Member 'ABP_ItemDarkChaoHero::FAnimBlueprintGeneratedConstantData::AnimBlueprintExtension_Base' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoHero::FAnimBlueprintGeneratedConstantData, AnimGraphNode_Root) == 0x0000F8, "Member 'ABP_ItemDarkChaoHero::FAnimBlueprintGeneratedConstantData::AnimGraphNode_Root' has a wrong offset!");
-
-// ScriptStruct ABP_ItemDarkChaoHero.ABP_ItemDarkChaoHero_C.AnimBlueprintGeneratedMutableData
-// 0x0000 (0x0001 - 0x0001)
-struct ABP_ItemDarkChaoHero::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
-{
-};
-static_assert(alignof(ABP_ItemDarkChaoHero::FAnimBlueprintGeneratedMutableData) == 0x000001, "Wrong alignment on ABP_ItemDarkChaoHero::FAnimBlueprintGeneratedMutableData");
-static_assert(sizeof(ABP_ItemDarkChaoHero::FAnimBlueprintGeneratedMutableData) == 0x000001, "Wrong size on ABP_ItemDarkChaoHero::FAnimBlueprintGeneratedMutableData");
+DUMPER7_ASSERTS_ABP_ItemDarkChaoHero__FAnimBlueprintGeneratedConstantData;
 
 }
 

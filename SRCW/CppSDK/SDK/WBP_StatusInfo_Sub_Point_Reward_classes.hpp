@@ -86,46 +86,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_StatusInfo_Sub_Point_Reward_C">();
+		BP_STATIC_CLASS_IMPL("WBP_StatusInfo_Sub_Point_Reward_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_StatusInfo_Sub_Point_Reward_C")
 	}
 	static class UWBP_StatusInfo_Sub_Point_Reward_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_StatusInfo_Sub_Point_Reward_C>();
 	}
 };
-static_assert(alignof(UWBP_StatusInfo_Sub_Point_Reward_C) == 0x000008, "Wrong alignment on UWBP_StatusInfo_Sub_Point_Reward_C");
-static_assert(sizeof(UWBP_StatusInfo_Sub_Point_Reward_C) == 0x0003F0, "Wrong size on UWBP_StatusInfo_Sub_Point_Reward_C");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Point_Reward_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_StatusInfo_Sub_Point_Reward_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Point_Reward_C, SmallWindow_Out) == 0x0002E8, "Member 'UWBP_StatusInfo_Sub_Point_Reward_C::SmallWindow_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Point_Reward_C, SmallWindow_Loop) == 0x0002F0, "Member 'UWBP_StatusInfo_Sub_Point_Reward_C::SmallWindow_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Point_Reward_C, SmallWindow_IN) == 0x0002F8, "Member 'UWBP_StatusInfo_Sub_Point_Reward_C::SmallWindow_IN' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Point_Reward_C, base) == 0x000300, "Member 'UWBP_StatusInfo_Sub_Point_Reward_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Point_Reward_C, DMY_EventReward) == 0x000308, "Member 'UWBP_StatusInfo_Sub_Point_Reward_C::DMY_EventReward' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Point_Reward_C, MouseInteraction_Item) == 0x000310, "Member 'UWBP_StatusInfo_Sub_Point_Reward_C::MouseInteraction_Item' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Point_Reward_C, MouseInteraction_Item_1) == 0x000318, "Member 'UWBP_StatusInfo_Sub_Point_Reward_C::MouseInteraction_Item_1' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Point_Reward_C, MouseInteraction_Item_2) == 0x000320, "Member 'UWBP_StatusInfo_Sub_Point_Reward_C::MouseInteraction_Item_2' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Point_Reward_C, MouseInteraction_Item_3) == 0x000328, "Member 'UWBP_StatusInfo_Sub_Point_Reward_C::MouseInteraction_Item_3' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Point_Reward_C, MouseInteraction_Item_4) == 0x000330, "Member 'UWBP_StatusInfo_Sub_Point_Reward_C::MouseInteraction_Item_4' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Point_Reward_C, MouseInteraction_Item_5) == 0x000338, "Member 'UWBP_StatusInfo_Sub_Point_Reward_C::MouseInteraction_Item_5' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Point_Reward_C, MouseInteraction_Item_6) == 0x000340, "Member 'UWBP_StatusInfo_Sub_Point_Reward_C::MouseInteraction_Item_6' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Point_Reward_C, MouseInteraction_Item_7) == 0x000348, "Member 'UWBP_StatusInfo_Sub_Point_Reward_C::MouseInteraction_Item_7' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Point_Reward_C, MouseInteraction_Item_8) == 0x000350, "Member 'UWBP_StatusInfo_Sub_Point_Reward_C::MouseInteraction_Item_8' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Point_Reward_C, Pict_Horn) == 0x000358, "Member 'UWBP_StatusInfo_Sub_Point_Reward_C::Pict_Horn' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Point_Reward_C, Pict_Sticker) == 0x000360, "Member 'UWBP_StatusInfo_Sub_Point_Reward_C::Pict_Sticker' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Point_Reward_C, Pict_Title) == 0x000368, "Member 'UWBP_StatusInfo_Sub_Point_Reward_C::Pict_Title' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Point_Reward_C, PointReward_Base) == 0x000370, "Member 'UWBP_StatusInfo_Sub_Point_Reward_C::PointReward_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Point_Reward_C, RaceFlag_Left) == 0x000378, "Member 'UWBP_StatusInfo_Sub_Point_Reward_C::RaceFlag_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Point_Reward_C, RaceFlag_Right) == 0x000380, "Member 'UWBP_StatusInfo_Sub_Point_Reward_C::RaceFlag_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Point_Reward_C, TXT_HonorTitle) == 0x000388, "Member 'UWBP_StatusInfo_Sub_Point_Reward_C::TXT_HonorTitle' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Point_Reward_C, TXT_Klaxon) == 0x000390, "Member 'UWBP_StatusInfo_Sub_Point_Reward_C::TXT_Klaxon' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Point_Reward_C, TXT_Sticker) == 0x000398, "Member 'UWBP_StatusInfo_Sub_Point_Reward_C::TXT_Sticker' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Point_Reward_C, WBP_Festa_PointReward_FestaPointTable) == 0x0003A0, "Member 'UWBP_StatusInfo_Sub_Point_Reward_C::WBP_Festa_PointReward_FestaPointTable' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Point_Reward_C, WBP_Festa_PointReward_Sub_Object) == 0x0003A8, "Member 'UWBP_StatusInfo_Sub_Point_Reward_C::WBP_Festa_PointReward_Sub_Object' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Point_Reward_C, WBP_HonorTitle_Plate) == 0x0003B0, "Member 'UWBP_StatusInfo_Sub_Point_Reward_C::WBP_HonorTitle_Plate' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Point_Reward_C, WBP_StatusInfo_SmallWindow) == 0x0003B8, "Member 'UWBP_StatusInfo_Sub_Point_Reward_C::WBP_StatusInfo_SmallWindow' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Point_Reward_C, OnMouseClicked) == 0x0003C0, "Member 'UWBP_StatusInfo_Sub_Point_Reward_C::OnMouseClicked' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Point_Reward_C, OnMouseHovered) == 0x0003D0, "Member 'UWBP_StatusInfo_Sub_Point_Reward_C::OnMouseHovered' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_Point_Reward_C, OnMouseUnhovered) == 0x0003E0, "Member 'UWBP_StatusInfo_Sub_Point_Reward_C::OnMouseUnhovered' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_StatusInfo_Sub_Point_Reward_C;
 
 }
 

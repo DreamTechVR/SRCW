@@ -27,12 +27,7 @@ public:
 	class AActor*                                 K2Node_CustomEvent_DestroyedActor;                 // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_EntryRival_C_ExecuteUbergraph_BP_EntryRival) == 0x000008, "Wrong alignment on BP_EntryRival_C_ExecuteUbergraph_BP_EntryRival");
-static_assert(sizeof(BP_EntryRival_C_ExecuteUbergraph_BP_EntryRival) == 0x000028, "Wrong size on BP_EntryRival_C_ExecuteUbergraph_BP_EntryRival");
-static_assert(offsetof(BP_EntryRival_C_ExecuteUbergraph_BP_EntryRival, EntryPoint) == 0x000000, "Member 'BP_EntryRival_C_ExecuteUbergraph_BP_EntryRival::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_EntryRival_C_ExecuteUbergraph_BP_EntryRival, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'BP_EntryRival_C_ExecuteUbergraph_BP_EntryRival::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_EntryRival_C_ExecuteUbergraph_BP_EntryRival, K2Node_CustomEvent_DestroyedActor) == 0x000018, "Member 'BP_EntryRival_C_ExecuteUbergraph_BP_EntryRival::K2Node_CustomEvent_DestroyedActor' has a wrong offset!");
-static_assert(offsetof(BP_EntryRival_C_ExecuteUbergraph_BP_EntryRival, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'BP_EntryRival_C_ExecuteUbergraph_BP_EntryRival::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_EntryRival_C_ExecuteUbergraph_BP_EntryRival;
 
 // Function BP_EntryRival.BP_EntryRival_C.OnDestroyed_Event
 // 0x0008 (0x0008 - 0x0000)
@@ -41,9 +36,7 @@ struct BP_EntryRival_C_OnDestroyed_Event final
 public:
 	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_EntryRival_C_OnDestroyed_Event) == 0x000008, "Wrong alignment on BP_EntryRival_C_OnDestroyed_Event");
-static_assert(sizeof(BP_EntryRival_C_OnDestroyed_Event) == 0x000008, "Wrong size on BP_EntryRival_C_OnDestroyed_Event");
-static_assert(offsetof(BP_EntryRival_C_OnDestroyed_Event, DestroyedActor) == 0x000000, "Member 'BP_EntryRival_C_OnDestroyed_Event::DestroyedActor' has a wrong offset!");
+DUMPER7_ASSERTS_BP_EntryRival_C_OnDestroyed_Event;
 
 // Function BP_EntryRival.BP_EntryRival_C.Play
 // 0x00B0 (0x00B0 - 0x0000)
@@ -63,18 +56,7 @@ public:
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_K2_AttachToActor_ReturnValue;             // 0x00A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_EntryRival_C_Play) == 0x000010, "Wrong alignment on BP_EntryRival_C_Play");
-static_assert(sizeof(BP_EntryRival_C_Play) == 0x0000B0, "Wrong size on BP_EntryRival_C_Play");
-static_assert(offsetof(BP_EntryRival_C_Play, In_Transform) == 0x000000, "Member 'BP_EntryRival_C_Play::In_Transform' has a wrong offset!");
-static_assert(offsetof(BP_EntryRival_C_Play, In_RacerIndex) == 0x000060, "Member 'BP_EntryRival_C_Play::In_RacerIndex' has a wrong offset!");
-static_assert(offsetof(BP_EntryRival_C_Play, CallFunc_GetSequencePlayer_ReturnValue) == 0x000068, "Member 'BP_EntryRival_C_Play::CallFunc_GetSequencePlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EntryRival_C_Play, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000070, "Member 'BP_EntryRival_C_Play::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EntryRival_C_Play, CallFunc_FinishSpawningActor_ReturnValue) == 0x000078, "Member 'BP_EntryRival_C_Play::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EntryRival_C_Play, CallFunc_GetAllActorsOfClassWithTag_OutActors) == 0x000080, "Member 'BP_EntryRival_C_Play::CallFunc_GetAllActorsOfClassWithTag_OutActors' has a wrong offset!");
-static_assert(offsetof(BP_EntryRival_C_Play, CallFunc_Array_Length_ReturnValue) == 0x000090, "Member 'BP_EntryRival_C_Play::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EntryRival_C_Play, CallFunc_Array_Get_Item) == 0x000098, "Member 'BP_EntryRival_C_Play::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_EntryRival_C_Play, CallFunc_Greater_IntInt_ReturnValue) == 0x0000A0, "Member 'BP_EntryRival_C_Play::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EntryRival_C_Play, CallFunc_K2_AttachToActor_ReturnValue) == 0x0000A1, "Member 'BP_EntryRival_C_Play::CallFunc_K2_AttachToActor_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_EntryRival_C_Play;
 
 }
 

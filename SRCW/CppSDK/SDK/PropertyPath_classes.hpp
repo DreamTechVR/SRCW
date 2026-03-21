@@ -36,7 +36,7 @@ public:
 	struct FPropertyPathTestStruct                Struct;                                            // 0x0050(0x0060)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 	struct FPropertyPathTestStruct                StructRef;                                         // 0x00B0(0x0060)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 	struct FPropertyPathTestStruct                StructConstRef;                                    // 0x0110(0x0060)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UPropertyPathTestObject*                InnerObject;                                       // 0x0170(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPropertyPathTestObject*                InnerObject;                                       // 0x0170(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 	uint8                                         Pad_178[0x8];                                      // 0x0178(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -53,27 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PropertyPathTestObject">();
+		STATIC_CLASS_IMPL("PropertyPathTestObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PropertyPathTestObject")
 	}
 	static class UPropertyPathTestObject* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPropertyPathTestObject>();
 	}
 };
-static_assert(alignof(UPropertyPathTestObject) == 0x000008, "Wrong alignment on UPropertyPathTestObject");
-static_assert(sizeof(UPropertyPathTestObject) == 0x000180, "Wrong size on UPropertyPathTestObject");
-static_assert(offsetof(UPropertyPathTestObject, Bool) == 0x000028, "Member 'UPropertyPathTestObject::Bool' has a wrong offset!");
-static_assert(offsetof(UPropertyPathTestObject, EnumOne) == 0x000029, "Member 'UPropertyPathTestObject::EnumOne' has a wrong offset!");
-static_assert(offsetof(UPropertyPathTestObject, EnumTwo) == 0x00002A, "Member 'UPropertyPathTestObject::EnumTwo' has a wrong offset!");
-static_assert(offsetof(UPropertyPathTestObject, EnumThree) == 0x00002B, "Member 'UPropertyPathTestObject::EnumThree' has a wrong offset!");
-static_assert(offsetof(UPropertyPathTestObject, EnumFour) == 0x00002C, "Member 'UPropertyPathTestObject::EnumFour' has a wrong offset!");
-static_assert(offsetof(UPropertyPathTestObject, Integer) == 0x000030, "Member 'UPropertyPathTestObject::Integer' has a wrong offset!");
-static_assert(offsetof(UPropertyPathTestObject, String) == 0x000038, "Member 'UPropertyPathTestObject::String' has a wrong offset!");
-static_assert(offsetof(UPropertyPathTestObject, float_0) == 0x000048, "Member 'UPropertyPathTestObject::float_0' has a wrong offset!");
-static_assert(offsetof(UPropertyPathTestObject, Struct) == 0x000050, "Member 'UPropertyPathTestObject::Struct' has a wrong offset!");
-static_assert(offsetof(UPropertyPathTestObject, StructRef) == 0x0000B0, "Member 'UPropertyPathTestObject::StructRef' has a wrong offset!");
-static_assert(offsetof(UPropertyPathTestObject, StructConstRef) == 0x000110, "Member 'UPropertyPathTestObject::StructConstRef' has a wrong offset!");
-static_assert(offsetof(UPropertyPathTestObject, InnerObject) == 0x000170, "Member 'UPropertyPathTestObject::InnerObject' has a wrong offset!");
+DUMPER7_ASSERTS_UPropertyPathTestObject;
 
 }
 

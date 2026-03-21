@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Advertise_Black_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Advertise_Black_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Advertise_Black_C")
 	}
 	static class UWBP_Advertise_Black_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Advertise_Black_C>();
 	}
 };
-static_assert(alignof(UWBP_Advertise_Black_C) == 0x000008, "Wrong alignment on UWBP_Advertise_Black_C");
-static_assert(sizeof(UWBP_Advertise_Black_C) == 0x0002F0, "Wrong size on UWBP_Advertise_Black_C");
-static_assert(offsetof(UWBP_Advertise_Black_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Advertise_Black_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_Black_C, BG_Black) == 0x0002E8, "Member 'UWBP_Advertise_Black_C::BG_Black' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Advertise_Black_C;
 
 }
 

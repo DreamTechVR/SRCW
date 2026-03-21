@@ -32,16 +32,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPFL_Widget_C_ChangeInputRegistrationOnVisibilityChanged) == 0x000008, "Wrong alignment on BPFL_Widget_C_ChangeInputRegistrationOnVisibilityChanged");
-static_assert(sizeof(BPFL_Widget_C_ChangeInputRegistrationOnVisibilityChanged) == 0x000028, "Wrong size on BPFL_Widget_C_ChangeInputRegistrationOnVisibilityChanged");
-static_assert(offsetof(BPFL_Widget_C_ChangeInputRegistrationOnVisibilityChanged, Target) == 0x000000, "Member 'BPFL_Widget_C_ChangeInputRegistrationOnVisibilityChanged::Target' has a wrong offset!");
-static_assert(offsetof(BPFL_Widget_C_ChangeInputRegistrationOnVisibilityChanged, Visibility) == 0x000008, "Member 'BPFL_Widget_C_ChangeInputRegistrationOnVisibilityChanged::Visibility' has a wrong offset!");
-static_assert(offsetof(BPFL_Widget_C_ChangeInputRegistrationOnVisibilityChanged, __WorldContext) == 0x000010, "Member 'BPFL_Widget_C_ChangeInputRegistrationOnVisibilityChanged::__WorldContext' has a wrong offset!");
-static_assert(offsetof(BPFL_Widget_C_ChangeInputRegistrationOnVisibilityChanged, CallFunc_GetAppPlayerController_ReturnValue) == 0x000018, "Member 'BPFL_Widget_C_ChangeInputRegistrationOnVisibilityChanged::CallFunc_GetAppPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_Widget_C_ChangeInputRegistrationOnVisibilityChanged, K2Node_SwitchEnum_CmpSuccess) == 0x000020, "Member 'BPFL_Widget_C_ChangeInputRegistrationOnVisibilityChanged::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BPFL_Widget_C_ChangeInputRegistrationOnVisibilityChanged, CallFunc_UnregisterSingleSubMenu_ReturnValue) == 0x000021, "Member 'BPFL_Widget_C_ChangeInputRegistrationOnVisibilityChanged::CallFunc_UnregisterSingleSubMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_Widget_C_ChangeInputRegistrationOnVisibilityChanged, CallFunc_IsValid_ReturnValue) == 0x000022, "Member 'BPFL_Widget_C_ChangeInputRegistrationOnVisibilityChanged::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_Widget_C_ChangeInputRegistrationOnVisibilityChanged, CallFunc_IsValid_ReturnValue_1) == 0x000023, "Member 'BPFL_Widget_C_ChangeInputRegistrationOnVisibilityChanged::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_Widget_C_ChangeInputRegistrationOnVisibilityChanged;
 
 // Function BPFL_Widget.BPFL_Widget_C.ReplacementPlatformIconTexture 
 // 0x0048 (0x0048 - 0x0000)
@@ -68,25 +59,7 @@ public:
 	class UTexture*                               K2Node_DynamicCast_As_____;                        // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPFL_Widget_C_ReplacementPlatformIconTexture_) == 0x000008, "Wrong alignment on BPFL_Widget_C_ReplacementPlatformIconTexture_");
-static_assert(sizeof(BPFL_Widget_C_ReplacementPlatformIconTexture_) == 0x000048, "Wrong size on BPFL_Widget_C_ReplacementPlatformIconTexture_");
-static_assert(offsetof(BPFL_Widget_C_ReplacementPlatformIconTexture_, InImage) == 0x000000, "Member 'BPFL_Widget_C_ReplacementPlatformIconTexture_::InImage' has a wrong offset!");
-static_assert(offsetof(BPFL_Widget_C_ReplacementPlatformIconTexture_, __WorldContext) == 0x000008, "Member 'BPFL_Widget_C_ReplacementPlatformIconTexture_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(BPFL_Widget_C_ReplacementPlatformIconTexture_, Temp_byte_Variable) == 0x000010, "Member 'BPFL_Widget_C_ReplacementPlatformIconTexture_::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BPFL_Widget_C_ReplacementPlatformIconTexture_, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000018, "Member 'BPFL_Widget_C_ReplacementPlatformIconTexture_::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_Widget_C_ReplacementPlatformIconTexture_, Temp_byte_Variable_1) == 0x000020, "Member 'BPFL_Widget_C_ReplacementPlatformIconTexture_::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(BPFL_Widget_C_ReplacementPlatformIconTexture_, Temp_byte_Variable_2) == 0x000021, "Member 'BPFL_Widget_C_ReplacementPlatformIconTexture_::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(BPFL_Widget_C_ReplacementPlatformIconTexture_, Temp_byte_Variable_3) == 0x000022, "Member 'BPFL_Widget_C_ReplacementPlatformIconTexture_::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(BPFL_Widget_C_ReplacementPlatformIconTexture_, Temp_byte_Variable_4) == 0x000023, "Member 'BPFL_Widget_C_ReplacementPlatformIconTexture_::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(BPFL_Widget_C_ReplacementPlatformIconTexture_, Temp_byte_Variable_5) == 0x000024, "Member 'BPFL_Widget_C_ReplacementPlatformIconTexture_::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(BPFL_Widget_C_ReplacementPlatformIconTexture_, Temp_byte_Variable_6) == 0x000025, "Member 'BPFL_Widget_C_ReplacementPlatformIconTexture_::Temp_byte_Variable_6' has a wrong offset!");
-static_assert(offsetof(BPFL_Widget_C_ReplacementPlatformIconTexture_, Temp_byte_Variable_7) == 0x000026, "Member 'BPFL_Widget_C_ReplacementPlatformIconTexture_::Temp_byte_Variable_7' has a wrong offset!");
-static_assert(offsetof(BPFL_Widget_C_ReplacementPlatformIconTexture_, Temp_byte_Variable_8) == 0x000027, "Member 'BPFL_Widget_C_ReplacementPlatformIconTexture_::Temp_byte_Variable_8' has a wrong offset!");
-static_assert(offsetof(BPFL_Widget_C_ReplacementPlatformIconTexture_, CallFunc_GetPlatform_ReturnValue) == 0x000028, "Member 'BPFL_Widget_C_ReplacementPlatformIconTexture_::CallFunc_GetPlatform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_Widget_C_ReplacementPlatformIconTexture_, K2Node_Select_Default) == 0x000029, "Member 'BPFL_Widget_C_ReplacementPlatformIconTexture_::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BPFL_Widget_C_ReplacementPlatformIconTexture_, CallFunc_GetPlatformIcon_ReturnValue) == 0x000030, "Member 'BPFL_Widget_C_ReplacementPlatformIconTexture_::CallFunc_GetPlatformIcon_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_Widget_C_ReplacementPlatformIconTexture_, K2Node_DynamicCast_As_____) == 0x000038, "Member 'BPFL_Widget_C_ReplacementPlatformIconTexture_::K2Node_DynamicCast_As_____' has a wrong offset!");
-static_assert(offsetof(BPFL_Widget_C_ReplacementPlatformIconTexture_, K2Node_DynamicCast_bSuccess) == 0x000040, "Member 'BPFL_Widget_C_ReplacementPlatformIconTexture_::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_Widget_C_ReplacementPlatformIconTexture_;
 
 }
 

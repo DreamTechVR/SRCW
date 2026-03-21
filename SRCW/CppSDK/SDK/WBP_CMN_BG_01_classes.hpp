@@ -31,21 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_BG_01_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_BG_01_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_BG_01_C")
 	}
 	static class UWBP_CMN_BG_01_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_BG_01_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_BG_01_C) == 0x000008, "Wrong alignment on UWBP_CMN_BG_01_C");
-static_assert(sizeof(UWBP_CMN_BG_01_C) == 0x000310, "Wrong size on UWBP_CMN_BG_01_C");
-static_assert(offsetof(UWBP_CMN_BG_01_C, BG_Out) == 0x0002E0, "Member 'UWBP_CMN_BG_01_C::BG_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_BG_01_C, BG_Loop) == 0x0002E8, "Member 'UWBP_CMN_BG_01_C::BG_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_BG_01_C, BG_In) == 0x0002F0, "Member 'UWBP_CMN_BG_01_C::BG_In' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_BG_01_C, BG_Blue) == 0x0002F8, "Member 'UWBP_CMN_BG_01_C::BG_Blue' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_BG_01_C, BG_Blue_Addtive) == 0x000300, "Member 'UWBP_CMN_BG_01_C::BG_Blue_Addtive' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_BG_01_C, YellowLine_Right_2) == 0x000308, "Member 'UWBP_CMN_BG_01_C::YellowLine_Right_2' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_BG_01_C;
 
 }
 

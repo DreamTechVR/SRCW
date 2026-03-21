@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ST_ColorDetailWindowSurfaceItemData_structs.hpp"
 #include "UMG_structs.hpp"
+#include "ST_ColorDetailWindowSurfaceItemData_structs.hpp"
 
 
 namespace SDK::Params
@@ -24,9 +24,7 @@ struct WBP_MachineCustom_Sub_ColorPicker_TextureText_C_ExecuteUbergraph_WBP_Mach
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_ColorPicker_TextureText_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_TextureText) == 0x000004, "Wrong alignment on WBP_MachineCustom_Sub_ColorPicker_TextureText_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_TextureText");
-static_assert(sizeof(WBP_MachineCustom_Sub_ColorPicker_TextureText_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_TextureText) == 0x000004, "Wrong size on WBP_MachineCustom_Sub_ColorPicker_TextureText_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_TextureText");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_TextureText_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_TextureText, EntryPoint) == 0x000000, "Member 'WBP_MachineCustom_Sub_ColorPicker_TextureText_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_TextureText::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_ColorPicker_TextureText_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ColorPicker_TextureText;
 
 // Function WBP_MachineCustom_Sub_ColorPicker_TextureText.WBP_MachineCustom_Sub_ColorPicker_TextureText_C.SetSelectIconVisible
 // 0x0005 (0x0005 - 0x0000)
@@ -39,13 +37,7 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_ColorPicker_TextureText_C_SetSelectIconVisible) == 0x000001, "Wrong alignment on WBP_MachineCustom_Sub_ColorPicker_TextureText_C_SetSelectIconVisible");
-static_assert(sizeof(WBP_MachineCustom_Sub_ColorPicker_TextureText_C_SetSelectIconVisible) == 0x000005, "Wrong size on WBP_MachineCustom_Sub_ColorPicker_TextureText_C_SetSelectIconVisible");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_TextureText_C_SetSelectIconVisible, bInIsVisible) == 0x000000, "Member 'WBP_MachineCustom_Sub_ColorPicker_TextureText_C_SetSelectIconVisible::bInIsVisible' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_TextureText_C_SetSelectIconVisible, Temp_bool_Variable) == 0x000001, "Member 'WBP_MachineCustom_Sub_ColorPicker_TextureText_C_SetSelectIconVisible::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_TextureText_C_SetSelectIconVisible, Temp_byte_Variable) == 0x000002, "Member 'WBP_MachineCustom_Sub_ColorPicker_TextureText_C_SetSelectIconVisible::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_TextureText_C_SetSelectIconVisible, Temp_byte_Variable_1) == 0x000003, "Member 'WBP_MachineCustom_Sub_ColorPicker_TextureText_C_SetSelectIconVisible::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_TextureText_C_SetSelectIconVisible, K2Node_Select_Default) == 0x000004, "Member 'WBP_MachineCustom_Sub_ColorPicker_TextureText_C_SetSelectIconVisible::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_ColorPicker_TextureText_C_SetSelectIconVisible;
 
 // Function WBP_MachineCustom_Sub_ColorPicker_TextureText.WBP_MachineCustom_Sub_ColorPicker_TextureText_C.SetSurfaceName
 // 0x0010 (0x0010 - 0x0000)
@@ -54,9 +46,7 @@ struct WBP_MachineCustom_Sub_ColorPicker_TextureText_C_SetSurfaceName final
 public:
 	class FText                                   InSurfaceName;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_ColorPicker_TextureText_C_SetSurfaceName) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_ColorPicker_TextureText_C_SetSurfaceName");
-static_assert(sizeof(WBP_MachineCustom_Sub_ColorPicker_TextureText_C_SetSurfaceName) == 0x000010, "Wrong size on WBP_MachineCustom_Sub_ColorPicker_TextureText_C_SetSurfaceName");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_TextureText_C_SetSurfaceName, InSurfaceName) == 0x000000, "Member 'WBP_MachineCustom_Sub_ColorPicker_TextureText_C_SetSurfaceName::InSurfaceName' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_ColorPicker_TextureText_C_SetSurfaceName;
 
 // Function WBP_MachineCustom_Sub_ColorPicker_TextureText.WBP_MachineCustom_Sub_ColorPicker_TextureText_C.Setup
 // 0x0020 (0x0020 - 0x0000)
@@ -65,9 +55,7 @@ struct WBP_MachineCustom_Sub_ColorPicker_TextureText_C_Setup final
 public:
 	struct FST_ColorDetailWindowSurfaceItemData   InItemData;                                        // 0x0000(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_ColorPicker_TextureText_C_Setup) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_ColorPicker_TextureText_C_Setup");
-static_assert(sizeof(WBP_MachineCustom_Sub_ColorPicker_TextureText_C_Setup) == 0x000020, "Wrong size on WBP_MachineCustom_Sub_ColorPicker_TextureText_C_Setup");
-static_assert(offsetof(WBP_MachineCustom_Sub_ColorPicker_TextureText_C_Setup, InItemData) == 0x000000, "Member 'WBP_MachineCustom_Sub_ColorPicker_TextureText_C_Setup::InItemData' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_ColorPicker_TextureText_C_Setup;
 
 }
 

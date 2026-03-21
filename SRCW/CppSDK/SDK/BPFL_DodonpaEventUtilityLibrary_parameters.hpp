@@ -17,52 +17,35 @@ namespace SDK::Params
 {
 
 // Function BPFL_DodonpaEventUtilityLibrary.BPFL_DodonpaEventUtilityLibrary_C.Call Dodonpa Event
-// 0x0158 (0x0158 - 0x0000)
+// 0x0160 (0x0160 - 0x0000)
 struct BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event final
 {
 public:
 	class FName                                   EventName;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_NameToText_ReturnValue;              // 0x0010(0x0010)()
-	class ULevelStreaming*                        CallFunc_GetStreamingLevel_ReturnValue;            // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0028(0x0048)(HasGetValueTypeHash)
-	class ALevelScriptActor*                      CallFunc_GetLevelScriptActor_ReturnValue;          // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0078(0x0010)(ReferenceParm)
-	TScriptInterface<class IDialogueEventInterface> K2Node_DynamicCast_AsDialogue_Event_Interface;   // 0x0088(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00A0(0x0010)()
-	bool                                          CallFunc_CallDialogueEvent_Success;                // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsLevelLoaded_ReturnValue;                // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_NameToText_ReturnValue_1;            // 0x00D0(0x0010)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x00E0(0x0048)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0128(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0138(0x0010)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue_1;          // 0x0148(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          IsSucceeded;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_NameToText_ReturnValue;              // 0x0018(0x0010)()
+	class ULevelStreaming*                        CallFunc_GetStreamingLevel_ReturnValue;            // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0030(0x0048)(HasGetValueTypeHash)
+	class ALevelScriptActor*                      CallFunc_GetLevelScriptActor_ReturnValue;          // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0080(0x0010)(ReferenceParm)
+	TScriptInterface<class IDialogueEventInterface> K2Node_DynamicCast_AsDialogue_Event_Interface;   // 0x0090(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00A8(0x0010)()
+	bool                                          CallFunc_CallDialogueEvent_Success;                // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00C0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsLevelLoaded_ReturnValue;                // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_NameToText_ReturnValue_1;            // 0x00D8(0x0010)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x00E8(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0130(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0140(0x0010)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue_1;          // 0x0150(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event) == 0x000008, "Wrong alignment on BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event");
-static_assert(sizeof(BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event) == 0x000158, "Wrong size on BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event, EventName) == 0x000000, "Member 'BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event::EventName' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event, __WorldContext) == 0x000008, "Member 'BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event::__WorldContext' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event, CallFunc_Conv_NameToText_ReturnValue) == 0x000010, "Member 'BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event::CallFunc_Conv_NameToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event, CallFunc_GetStreamingLevel_ReturnValue) == 0x000020, "Member 'BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event::CallFunc_GetStreamingLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event, K2Node_MakeStruct_FormatArgumentData) == 0x000028, "Member 'BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event, CallFunc_GetLevelScriptActor_ReturnValue) == 0x000070, "Member 'BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event::CallFunc_GetLevelScriptActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event, K2Node_MakeArray_Array) == 0x000078, "Member 'BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event, K2Node_DynamicCast_AsDialogue_Event_Interface) == 0x000088, "Member 'BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event::K2Node_DynamicCast_AsDialogue_Event_Interface' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event, K2Node_DynamicCast_bSuccess) == 0x000098, "Member 'BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event, CallFunc_Format_ReturnValue) == 0x0000A0, "Member 'BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event, CallFunc_CallDialogueEvent_Success) == 0x0000B0, "Member 'BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event::CallFunc_CallDialogueEvent_Success' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event, CallFunc_Conv_TextToString_ReturnValue) == 0x0000B8, "Member 'BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event, CallFunc_IsLevelLoaded_ReturnValue) == 0x0000C8, "Member 'BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event::CallFunc_IsLevelLoaded_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event, CallFunc_Conv_NameToText_ReturnValue_1) == 0x0000D0, "Member 'BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event::CallFunc_Conv_NameToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event, K2Node_MakeStruct_FormatArgumentData_1) == 0x0000E0, "Member 'BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event, K2Node_MakeArray_Array_1) == 0x000128, "Member 'BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event, CallFunc_Format_ReturnValue_1) == 0x000138, "Member 'BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event, CallFunc_Conv_TextToString_ReturnValue_1) == 0x000148, "Member 'BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event::CallFunc_Conv_TextToString_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_DodonpaEventUtilityLibrary_C_Call_Dodonpa_Event;
 
 // Function BPFL_DodonpaEventUtilityLibrary.BPFL_DodonpaEventUtilityLibrary_C.DodonpaEventDestroy
 // 0x0038 (0x0038 - 0x0000)
@@ -77,14 +60,7 @@ public:
 	TScriptInterface<class IDialogueEventInterface> K2Node_DynamicCast_AsDialogue_Event_Interface;   // 0x0020(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPFL_DodonpaEventUtilityLibrary_C_DodonpaEventDestroy) == 0x000008, "Wrong alignment on BPFL_DodonpaEventUtilityLibrary_C_DodonpaEventDestroy");
-static_assert(sizeof(BPFL_DodonpaEventUtilityLibrary_C_DodonpaEventDestroy) == 0x000038, "Wrong size on BPFL_DodonpaEventUtilityLibrary_C_DodonpaEventDestroy");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_DodonpaEventDestroy, __WorldContext) == 0x000000, "Member 'BPFL_DodonpaEventUtilityLibrary_C_DodonpaEventDestroy::__WorldContext' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_DodonpaEventDestroy, CallFunc_GetStreamingLevel_ReturnValue) == 0x000008, "Member 'BPFL_DodonpaEventUtilityLibrary_C_DodonpaEventDestroy::CallFunc_GetStreamingLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_DodonpaEventDestroy, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'BPFL_DodonpaEventUtilityLibrary_C_DodonpaEventDestroy::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_DodonpaEventDestroy, CallFunc_GetLevelScriptActor_ReturnValue) == 0x000018, "Member 'BPFL_DodonpaEventUtilityLibrary_C_DodonpaEventDestroy::CallFunc_GetLevelScriptActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_DodonpaEventDestroy, K2Node_DynamicCast_AsDialogue_Event_Interface) == 0x000020, "Member 'BPFL_DodonpaEventUtilityLibrary_C_DodonpaEventDestroy::K2Node_DynamicCast_AsDialogue_Event_Interface' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_DodonpaEventDestroy, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'BPFL_DodonpaEventUtilityLibrary_C_DodonpaEventDestroy::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_DodonpaEventUtilityLibrary_C_DodonpaEventDestroy;
 
 // Function BPFL_DodonpaEventUtilityLibrary.BPFL_DodonpaEventUtilityLibrary_C.GetDodonpaEventCamera
 // 0x0058 (0x0058 - 0x0000)
@@ -102,17 +78,7 @@ public:
 	class ACameraActor*                           CallFunc_GetDodonpaEventSceneCamera_NewParam;      // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPFL_DodonpaEventUtilityLibrary_C_GetDodonpaEventCamera) == 0x000008, "Wrong alignment on BPFL_DodonpaEventUtilityLibrary_C_GetDodonpaEventCamera");
-static_assert(sizeof(BPFL_DodonpaEventUtilityLibrary_C_GetDodonpaEventCamera) == 0x000058, "Wrong size on BPFL_DodonpaEventUtilityLibrary_C_GetDodonpaEventCamera");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_GetDodonpaEventCamera, __WorldContext) == 0x000000, "Member 'BPFL_DodonpaEventUtilityLibrary_C_GetDodonpaEventCamera::__WorldContext' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_GetDodonpaEventCamera, Camera) == 0x000008, "Member 'BPFL_DodonpaEventUtilityLibrary_C_GetDodonpaEventCamera::Camera' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_GetDodonpaEventCamera, CallFunc_MakeLiteralString_ReturnValue) == 0x000010, "Member 'BPFL_DodonpaEventUtilityLibrary_C_GetDodonpaEventCamera::CallFunc_MakeLiteralString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_GetDodonpaEventCamera, CallFunc_GetMapLevelStreaming_MapLevelStreaming) == 0x000020, "Member 'BPFL_DodonpaEventUtilityLibrary_C_GetDodonpaEventCamera::CallFunc_GetMapLevelStreaming_MapLevelStreaming' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_GetDodonpaEventCamera, CallFunc_GetLevelScriptActor_ReturnValue) == 0x000028, "Member 'BPFL_DodonpaEventUtilityLibrary_C_GetDodonpaEventCamera::CallFunc_GetLevelScriptActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_GetDodonpaEventCamera, K2Node_DynamicCast_AsBPI_Top_Menu_Scene) == 0x000030, "Member 'BPFL_DodonpaEventUtilityLibrary_C_GetDodonpaEventCamera::K2Node_DynamicCast_AsBPI_Top_Menu_Scene' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_GetDodonpaEventCamera, K2Node_DynamicCast_bSuccess) == 0x000040, "Member 'BPFL_DodonpaEventUtilityLibrary_C_GetDodonpaEventCamera::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_GetDodonpaEventCamera, CallFunc_GetDodonpaEventSceneCamera_NewParam) == 0x000048, "Member 'BPFL_DodonpaEventUtilityLibrary_C_GetDodonpaEventCamera::CallFunc_GetDodonpaEventSceneCamera_NewParam' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_GetDodonpaEventCamera, CallFunc_IsValid_ReturnValue) == 0x000050, "Member 'BPFL_DodonpaEventUtilityLibrary_C_GetDodonpaEventCamera::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_DodonpaEventUtilityLibrary_C_GetDodonpaEventCamera;
 
 // Function BPFL_DodonpaEventUtilityLibrary.BPFL_DodonpaEventUtilityLibrary_C.GetMapLevelStreaming
 // 0x0050 (0x0050 - 0x0000)
@@ -129,17 +95,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsLevelLoaded_ReturnValue;                // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPFL_DodonpaEventUtilityLibrary_C_GetMapLevelStreaming) == 0x000008, "Wrong alignment on BPFL_DodonpaEventUtilityLibrary_C_GetMapLevelStreaming");
-static_assert(sizeof(BPFL_DodonpaEventUtilityLibrary_C_GetMapLevelStreaming) == 0x000050, "Wrong size on BPFL_DodonpaEventUtilityLibrary_C_GetMapLevelStreaming");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_GetMapLevelStreaming, __WorldContext) == 0x000000, "Member 'BPFL_DodonpaEventUtilityLibrary_C_GetMapLevelStreaming::__WorldContext' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_GetMapLevelStreaming, MapLevelStreaming) == 0x000008, "Member 'BPFL_DodonpaEventUtilityLibrary_C_GetMapLevelStreaming::MapLevelStreaming' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_GetMapLevelStreaming, CallFunc_MakeLiteralString_ReturnValue) == 0x000010, "Member 'BPFL_DodonpaEventUtilityLibrary_C_GetMapLevelStreaming::CallFunc_MakeLiteralString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_GetMapLevelStreaming, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000020, "Member 'BPFL_DodonpaEventUtilityLibrary_C_GetMapLevelStreaming::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_GetMapLevelStreaming, CallFunc_GetCurrentTopMenuLevelName_ReturnValue) == 0x000028, "Member 'BPFL_DodonpaEventUtilityLibrary_C_GetMapLevelStreaming::CallFunc_GetCurrentTopMenuLevelName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_GetMapLevelStreaming, CallFunc_GetStreamingLevel_ReturnValue) == 0x000030, "Member 'BPFL_DodonpaEventUtilityLibrary_C_GetMapLevelStreaming::CallFunc_GetStreamingLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_GetMapLevelStreaming, CallFunc_MakeLiteralString_ReturnValue_1) == 0x000038, "Member 'BPFL_DodonpaEventUtilityLibrary_C_GetMapLevelStreaming::CallFunc_MakeLiteralString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_GetMapLevelStreaming, CallFunc_IsValid_ReturnValue) == 0x000048, "Member 'BPFL_DodonpaEventUtilityLibrary_C_GetMapLevelStreaming::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_GetMapLevelStreaming, CallFunc_IsLevelLoaded_ReturnValue) == 0x000049, "Member 'BPFL_DodonpaEventUtilityLibrary_C_GetMapLevelStreaming::CallFunc_IsLevelLoaded_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_DodonpaEventUtilityLibrary_C_GetMapLevelStreaming;
 
 // Function BPFL_DodonpaEventUtilityLibrary.BPFL_DodonpaEventUtilityLibrary_C.IsDestroyedDodonpaEvent
 // 0x0040 (0x0040 - 0x0000)
@@ -150,23 +106,14 @@ public:
 	bool                                          IsDestroyed;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ULevelStreaming*                        CallFunc_GetStreamingLevel_ReturnValue;            // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsLevelLoaded_ReturnValue;                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ALevelScriptActor*                      CallFunc_GetLevelScriptActor_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IDialogueEventInterface> K2Node_DynamicCast_AsDialogue_Event_Interface;   // 0x0028(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsDestroyed_ReturnValue;                  // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPFL_DodonpaEventUtilityLibrary_C_IsDestroyedDodonpaEvent) == 0x000008, "Wrong alignment on BPFL_DodonpaEventUtilityLibrary_C_IsDestroyedDodonpaEvent");
-static_assert(sizeof(BPFL_DodonpaEventUtilityLibrary_C_IsDestroyedDodonpaEvent) == 0x000040, "Wrong size on BPFL_DodonpaEventUtilityLibrary_C_IsDestroyedDodonpaEvent");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_IsDestroyedDodonpaEvent, __WorldContext) == 0x000000, "Member 'BPFL_DodonpaEventUtilityLibrary_C_IsDestroyedDodonpaEvent::__WorldContext' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_IsDestroyedDodonpaEvent, IsDestroyed) == 0x000008, "Member 'BPFL_DodonpaEventUtilityLibrary_C_IsDestroyedDodonpaEvent::IsDestroyed' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_IsDestroyedDodonpaEvent, CallFunc_GetStreamingLevel_ReturnValue) == 0x000010, "Member 'BPFL_DodonpaEventUtilityLibrary_C_IsDestroyedDodonpaEvent::CallFunc_GetStreamingLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_IsDestroyedDodonpaEvent, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'BPFL_DodonpaEventUtilityLibrary_C_IsDestroyedDodonpaEvent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_IsDestroyedDodonpaEvent, CallFunc_GetLevelScriptActor_ReturnValue) == 0x000020, "Member 'BPFL_DodonpaEventUtilityLibrary_C_IsDestroyedDodonpaEvent::CallFunc_GetLevelScriptActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_IsDestroyedDodonpaEvent, K2Node_DynamicCast_AsDialogue_Event_Interface) == 0x000028, "Member 'BPFL_DodonpaEventUtilityLibrary_C_IsDestroyedDodonpaEvent::K2Node_DynamicCast_AsDialogue_Event_Interface' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_IsDestroyedDodonpaEvent, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'BPFL_DodonpaEventUtilityLibrary_C_IsDestroyedDodonpaEvent::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_IsDestroyedDodonpaEvent, CallFunc_IsDestroyed_ReturnValue) == 0x000039, "Member 'BPFL_DodonpaEventUtilityLibrary_C_IsDestroyedDodonpaEvent::CallFunc_IsDestroyed_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_DodonpaEventUtilityLibrary_C_IsDestroyedDodonpaEvent;
 
 // Function BPFL_DodonpaEventUtilityLibrary.BPFL_DodonpaEventUtilityLibrary_C.IsEventComplete
 // 0x0068 (0x0068 - 0x0000)
@@ -190,20 +137,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsFirstStarted_Started;                   // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPFL_DodonpaEventUtilityLibrary_C_IsEventComplete) == 0x000008, "Wrong alignment on BPFL_DodonpaEventUtilityLibrary_C_IsEventComplete");
-static_assert(sizeof(BPFL_DodonpaEventUtilityLibrary_C_IsEventComplete) == 0x000068, "Wrong size on BPFL_DodonpaEventUtilityLibrary_C_IsEventComplete");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_IsEventComplete, __WorldContext) == 0x000000, "Member 'BPFL_DodonpaEventUtilityLibrary_C_IsEventComplete::__WorldContext' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_IsEventComplete, IsComplete) == 0x000008, "Member 'BPFL_DodonpaEventUtilityLibrary_C_IsEventComplete::IsComplete' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_IsEventComplete, CallFunc_GetStreamingLevel_ReturnValue) == 0x000010, "Member 'BPFL_DodonpaEventUtilityLibrary_C_IsEventComplete::CallFunc_GetStreamingLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_IsEventComplete, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'BPFL_DodonpaEventUtilityLibrary_C_IsEventComplete::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_IsEventComplete, CallFunc_GetLevelScriptActor_ReturnValue) == 0x000020, "Member 'BPFL_DodonpaEventUtilityLibrary_C_IsEventComplete::CallFunc_GetLevelScriptActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_IsEventComplete, K2Node_DynamicCast_AsDialogue_Event_Interface) == 0x000028, "Member 'BPFL_DodonpaEventUtilityLibrary_C_IsEventComplete::K2Node_DynamicCast_AsDialogue_Event_Interface' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_IsEventComplete, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'BPFL_DodonpaEventUtilityLibrary_C_IsEventComplete::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_IsEventComplete, CallFunc_GetLevelScriptActor_ReturnValue_1) == 0x000040, "Member 'BPFL_DodonpaEventUtilityLibrary_C_IsEventComplete::CallFunc_GetLevelScriptActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_IsEventComplete, CallFunc_IsComplete_Complete) == 0x000048, "Member 'BPFL_DodonpaEventUtilityLibrary_C_IsEventComplete::CallFunc_IsComplete_Complete' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_IsEventComplete, K2Node_DynamicCast_AsDialogue_Event_Interface_1) == 0x000050, "Member 'BPFL_DodonpaEventUtilityLibrary_C_IsEventComplete::K2Node_DynamicCast_AsDialogue_Event_Interface_1' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_IsEventComplete, K2Node_DynamicCast_bSuccess_1) == 0x000060, "Member 'BPFL_DodonpaEventUtilityLibrary_C_IsEventComplete::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BPFL_DodonpaEventUtilityLibrary_C_IsEventComplete, CallFunc_IsFirstStarted_Started) == 0x000061, "Member 'BPFL_DodonpaEventUtilityLibrary_C_IsEventComplete::CallFunc_IsFirstStarted_Started' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_DodonpaEventUtilityLibrary_C_IsEventComplete;
 
 }
 

@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UnionRun_structs.hpp"
+#include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -124,49 +124,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_MenuRacerPreview_C">();
+		BP_STATIC_CLASS_IMPL("BP_MenuRacerPreview_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_MenuRacerPreview_C")
 	}
 	static class ABP_MenuRacerPreview_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_MenuRacerPreview_C>();
 	}
 };
-static_assert(alignof(ABP_MenuRacerPreview_C) == 0x000010, "Wrong alignment on ABP_MenuRacerPreview_C");
-static_assert(sizeof(ABP_MenuRacerPreview_C) == 0x000920, "Wrong size on ABP_MenuRacerPreview_C");
-static_assert(offsetof(ABP_MenuRacerPreview_C, UberGraphFrame) == 0x000348, "Member 'ABP_MenuRacerPreview_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerPreview_C, MachineAuraEffect) == 0x000350, "Member 'ABP_MenuRacerPreview_C::MachineAuraEffect' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerPreview_C, DefaultSceneRoot) == 0x000358, "Member 'ABP_MenuRacerPreview_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerPreview_C, Timeline_CharaMachineSelectMove_7D321F024A8D71C42CAA159629A5EB74) == 0x000360, "Member 'ABP_MenuRacerPreview_C::Timeline_CharaMachineSelectMove_7D321F024A8D71C42CAA159629A5EB74' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerPreview_C, Timeline__Direction_7D321F024A8D71C42CAA159629A5EB74) == 0x000364, "Member 'ABP_MenuRacerPreview_C::Timeline__Direction_7D321F024A8D71C42CAA159629A5EB74' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerPreview_C, Timeline) == 0x000368, "Member 'ABP_MenuRacerPreview_C::Timeline' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerPreview_C, RotationSpeed) == 0x000370, "Member 'ABP_MenuRacerPreview_C::RotationSpeed' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerPreview_C, RotationVelocity) == 0x000378, "Member 'ABP_MenuRacerPreview_C::RotationVelocity' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerPreview_C, TransformForTopMenu) == 0x000380, "Member 'ABP_MenuRacerPreview_C::TransformForTopMenu' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerPreview_C, TransformMapForCharaMachineSelect) == 0x0003E0, "Member 'ABP_MenuRacerPreview_C::TransformMapForCharaMachineSelect' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerPreview_C, OLD_TransformForLobby) == 0x000430, "Member 'ABP_MenuRacerPreview_C::OLD_TransformForLobby' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerPreview_C, VehicleType) == 0x000440, "Member 'ABP_MenuRacerPreview_C::VehicleType' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerPreview_C, DriverComponent) == 0x000448, "Member 'ABP_MenuRacerPreview_C::DriverComponent' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerPreview_C, MachineComponet) == 0x000450, "Member 'ABP_MenuRacerPreview_C::MachineComponet' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerPreview_C, HoverboardComponet) == 0x000458, "Member 'ABP_MenuRacerPreview_C::HoverboardComponet' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerPreview_C, OldDriverComponent) == 0x000460, "Member 'ABP_MenuRacerPreview_C::OldDriverComponent' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerPreview_C, OldMachineComponet) == 0x000468, "Member 'ABP_MenuRacerPreview_C::OldMachineComponet' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerPreview_C, OldHoverboardComponet) == 0x000470, "Member 'ABP_MenuRacerPreview_C::OldHoverboardComponet' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerPreview_C, DriverActor) == 0x000478, "Member 'ABP_MenuRacerPreview_C::DriverActor' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerPreview_C, MachineActor) == 0x000480, "Member 'ABP_MenuRacerPreview_C::MachineActor' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerPreview_C, HoverboardActor) == 0x000488, "Member 'ABP_MenuRacerPreview_C::HoverboardActor' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerPreview_C, MenuRacerTimerHandle) == 0x000490, "Member 'ABP_MenuRacerPreview_C::MenuRacerTimerHandle' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerPreview_C, StartTransform) == 0x0004A0, "Member 'ABP_MenuRacerPreview_C::StartTransform' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerPreview_C, GoalTransForm) == 0x000500, "Member 'ABP_MenuRacerPreview_C::GoalTransForm' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerPreview_C, bIsCockpitAnimEnabled) == 0x000560, "Member 'ABP_MenuRacerPreview_C::bIsCockpitAnimEnabled' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerPreview_C, Rotation) == 0x000568, "Member 'ABP_MenuRacerPreview_C::Rotation' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerPreview_C, bLightingChannel0) == 0x000570, "Member 'ABP_MenuRacerPreview_C::bLightingChannel0' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerPreview_C, bLightingChannel1) == 0x000571, "Member 'ABP_MenuRacerPreview_C::bLightingChannel1' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerPreview_C, bLightingChannel2) == 0x000572, "Member 'ABP_MenuRacerPreview_C::bLightingChannel2' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerPreview_C, FrontStickerBakerHandle) == 0x000578, "Member 'ABP_MenuRacerPreview_C::FrontStickerBakerHandle' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerPreview_C, RearStickerBakerHandle) == 0x000580, "Member 'ABP_MenuRacerPreview_C::RearStickerBakerHandle' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerPreview_C, CurrentDriverData) == 0x000588, "Member 'ABP_MenuRacerPreview_C::CurrentDriverData' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerPreview_C, bAutoInitialSetup) == 0x000918, "Member 'ABP_MenuRacerPreview_C::bAutoInitialSetup' has a wrong offset!");
-static_assert(offsetof(ABP_MenuRacerPreview_C, IsForCapture) == 0x000919, "Member 'ABP_MenuRacerPreview_C::IsForCapture' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_MenuRacerPreview_C;
 
 }
 

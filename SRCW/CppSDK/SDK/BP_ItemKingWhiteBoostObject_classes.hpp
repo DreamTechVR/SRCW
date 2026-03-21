@@ -23,15 +23,18 @@ class ABP_ItemKingWhiteBoostObject_C final : public AItemKingWhiteBoostObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ItemKingWhiteBoostObject_C">();
+		BP_STATIC_CLASS_IMPL("BP_ItemKingWhiteBoostObject_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ItemKingWhiteBoostObject_C")
 	}
 	static class ABP_ItemKingWhiteBoostObject_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ItemKingWhiteBoostObject_C>();
 	}
 };
-static_assert(alignof(ABP_ItemKingWhiteBoostObject_C) == 0x000010, "Wrong alignment on ABP_ItemKingWhiteBoostObject_C");
-static_assert(sizeof(ABP_ItemKingWhiteBoostObject_C) == 0x0005D0, "Wrong size on ABP_ItemKingWhiteBoostObject_C");
+DUMPER7_ASSERTS_ABP_ItemKingWhiteBoostObject_C;
 
 }
 

@@ -34,18 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_TimeTrial_Sub_Header_StageName_C">();
+		BP_STATIC_CLASS_IMPL("WBP_TimeTrial_Sub_Header_StageName_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_TimeTrial_Sub_Header_StageName_C")
 	}
 	static class UWBP_TimeTrial_Sub_Header_StageName_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_TimeTrial_Sub_Header_StageName_C>();
 	}
 };
-static_assert(alignof(UWBP_TimeTrial_Sub_Header_StageName_C) == 0x000008, "Wrong alignment on UWBP_TimeTrial_Sub_Header_StageName_C");
-static_assert(sizeof(UWBP_TimeTrial_Sub_Header_StageName_C) == 0x0002F8, "Wrong size on UWBP_TimeTrial_Sub_Header_StageName_C");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Header_StageName_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_TimeTrial_Sub_Header_StageName_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Header_StageName_C, DMY_StageIcon) == 0x0002E8, "Member 'UWBP_TimeTrial_Sub_Header_StageName_C::DMY_StageIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Header_StageName_C, TXT_StageName) == 0x0002F0, "Member 'UWBP_TimeTrial_Sub_Header_StageName_C::TXT_StageName' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_TimeTrial_Sub_Header_StageName_C;
 
 }
 

@@ -21,9 +21,7 @@ struct WBP_ClassSelect_Sub_TimeTrial_Medal_C_ExecuteUbergraph_WBP_ClassSelect_Su
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ClassSelect_Sub_TimeTrial_Medal_C_ExecuteUbergraph_WBP_ClassSelect_Sub_TimeTrial_Medal) == 0x000004, "Wrong alignment on WBP_ClassSelect_Sub_TimeTrial_Medal_C_ExecuteUbergraph_WBP_ClassSelect_Sub_TimeTrial_Medal");
-static_assert(sizeof(WBP_ClassSelect_Sub_TimeTrial_Medal_C_ExecuteUbergraph_WBP_ClassSelect_Sub_TimeTrial_Medal) == 0x000004, "Wrong size on WBP_ClassSelect_Sub_TimeTrial_Medal_C_ExecuteUbergraph_WBP_ClassSelect_Sub_TimeTrial_Medal");
-static_assert(offsetof(WBP_ClassSelect_Sub_TimeTrial_Medal_C_ExecuteUbergraph_WBP_ClassSelect_Sub_TimeTrial_Medal, EntryPoint) == 0x000000, "Member 'WBP_ClassSelect_Sub_TimeTrial_Medal_C_ExecuteUbergraph_WBP_ClassSelect_Sub_TimeTrial_Medal::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ClassSelect_Sub_TimeTrial_Medal_C_ExecuteUbergraph_WBP_ClassSelect_Sub_TimeTrial_Medal;
 
 // Function WBP_ClassSelect_Sub_TimeTrial_Medal.WBP_ClassSelect_Sub_TimeTrial_Medal_C.SetTimeTrialMedalCount
 // 0x0028 (0x0028 - 0x0000)
@@ -35,12 +33,7 @@ public:
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0010)()
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue_1;             // 0x0018(0x0010)()
 };
-static_assert(alignof(WBP_ClassSelect_Sub_TimeTrial_Medal_C_SetTimeTrialMedalCount) == 0x000008, "Wrong alignment on WBP_ClassSelect_Sub_TimeTrial_Medal_C_SetTimeTrialMedalCount");
-static_assert(sizeof(WBP_ClassSelect_Sub_TimeTrial_Medal_C_SetTimeTrialMedalCount) == 0x000028, "Wrong size on WBP_ClassSelect_Sub_TimeTrial_Medal_C_SetTimeTrialMedalCount");
-static_assert(offsetof(WBP_ClassSelect_Sub_TimeTrial_Medal_C_SetTimeTrialMedalCount, MedalCount) == 0x000000, "Member 'WBP_ClassSelect_Sub_TimeTrial_Medal_C_SetTimeTrialMedalCount::MedalCount' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_TimeTrial_Medal_C_SetTimeTrialMedalCount, MedalMax) == 0x000004, "Member 'WBP_ClassSelect_Sub_TimeTrial_Medal_C_SetTimeTrialMedalCount::MedalMax' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_TimeTrial_Medal_C_SetTimeTrialMedalCount, CallFunc_Conv_IntToText_ReturnValue) == 0x000008, "Member 'WBP_ClassSelect_Sub_TimeTrial_Medal_C_SetTimeTrialMedalCount::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ClassSelect_Sub_TimeTrial_Medal_C_SetTimeTrialMedalCount, CallFunc_Conv_IntToText_ReturnValue_1) == 0x000018, "Member 'WBP_ClassSelect_Sub_TimeTrial_Medal_C_SetTimeTrialMedalCount::CallFunc_Conv_IntToText_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ClassSelect_Sub_TimeTrial_Medal_C_SetTimeTrialMedalCount;
 
 }
 

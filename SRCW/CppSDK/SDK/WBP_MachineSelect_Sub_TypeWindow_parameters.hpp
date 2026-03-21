@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "SlateCore_structs.hpp"
-#include "UnionRun_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UNION_structs.hpp"
+#include "UnionRun_structs.hpp"
+#include "UnionSystem_structs.hpp"
+#include "UnionUI_structs.hpp"
 #include "UMG_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
@@ -29,10 +29,7 @@ public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	EUnionUIControlDir                            Dir;                                               // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_BndEvt__WBP_MachineSelect_Sub_TypeWindow_MLC_Up_Button_K2Node_ComponentBoundEvent_0_OnUnionButtonDirectionEvent__DelegateSignature) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_BndEvt__WBP_MachineSelect_Sub_TypeWindow_MLC_Up_Button_K2Node_ComponentBoundEvent_0_OnUnionButtonDirectionEvent__DelegateSignature");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_BndEvt__WBP_MachineSelect_Sub_TypeWindow_MLC_Up_Button_K2Node_ComponentBoundEvent_0_OnUnionButtonDirectionEvent__DelegateSignature) == 0x000010, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_BndEvt__WBP_MachineSelect_Sub_TypeWindow_MLC_Up_Button_K2Node_ComponentBoundEvent_0_OnUnionButtonDirectionEvent__DelegateSignature");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_BndEvt__WBP_MachineSelect_Sub_TypeWindow_MLC_Up_Button_K2Node_ComponentBoundEvent_0_OnUnionButtonDirectionEvent__DelegateSignature, Button) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_BndEvt__WBP_MachineSelect_Sub_TypeWindow_MLC_Up_Button_K2Node_ComponentBoundEvent_0_OnUnionButtonDirectionEvent__DelegateSignature::Button' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_BndEvt__WBP_MachineSelect_Sub_TypeWindow_MLC_Up_Button_K2Node_ComponentBoundEvent_0_OnUnionButtonDirectionEvent__DelegateSignature, Dir) == 0x000008, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_BndEvt__WBP_MachineSelect_Sub_TypeWindow_MLC_Up_Button_K2Node_ComponentBoundEvent_0_OnUnionButtonDirectionEvent__DelegateSignature::Dir' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_BndEvt__WBP_MachineSelect_Sub_TypeWindow_MLC_Up_Button_K2Node_ComponentBoundEvent_0_OnUnionButtonDirectionEvent__DelegateSignature;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.BndEvt__WBP_MachineSelect_Sub_TypeWindow_MLC_Up_Button_K2Node_ComponentBoundEvent_1_OnUnionButtonEvent__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -41,9 +38,7 @@ struct WBP_MachineSelect_Sub_TypeWindow_C_BndEvt__WBP_MachineSelect_Sub_TypeWind
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_BndEvt__WBP_MachineSelect_Sub_TypeWindow_MLC_Up_Button_K2Node_ComponentBoundEvent_1_OnUnionButtonEvent__DelegateSignature) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_BndEvt__WBP_MachineSelect_Sub_TypeWindow_MLC_Up_Button_K2Node_ComponentBoundEvent_1_OnUnionButtonEvent__DelegateSignature");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_BndEvt__WBP_MachineSelect_Sub_TypeWindow_MLC_Up_Button_K2Node_ComponentBoundEvent_1_OnUnionButtonEvent__DelegateSignature) == 0x000008, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_BndEvt__WBP_MachineSelect_Sub_TypeWindow_MLC_Up_Button_K2Node_ComponentBoundEvent_1_OnUnionButtonEvent__DelegateSignature");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_BndEvt__WBP_MachineSelect_Sub_TypeWindow_MLC_Up_Button_K2Node_ComponentBoundEvent_1_OnUnionButtonEvent__DelegateSignature, Button) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_BndEvt__WBP_MachineSelect_Sub_TypeWindow_MLC_Up_Button_K2Node_ComponentBoundEvent_1_OnUnionButtonEvent__DelegateSignature::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_BndEvt__WBP_MachineSelect_Sub_TypeWindow_MLC_Up_Button_K2Node_ComponentBoundEvent_1_OnUnionButtonEvent__DelegateSignature;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.BndEvt__WBP_MachineSelect_Sub_TypeWindow_MLC_Up_Button_K2Node_ComponentBoundEvent_2_OnUnionButtonEvent__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -52,9 +47,7 @@ struct WBP_MachineSelect_Sub_TypeWindow_C_BndEvt__WBP_MachineSelect_Sub_TypeWind
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_BndEvt__WBP_MachineSelect_Sub_TypeWindow_MLC_Up_Button_K2Node_ComponentBoundEvent_2_OnUnionButtonEvent__DelegateSignature) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_BndEvt__WBP_MachineSelect_Sub_TypeWindow_MLC_Up_Button_K2Node_ComponentBoundEvent_2_OnUnionButtonEvent__DelegateSignature");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_BndEvt__WBP_MachineSelect_Sub_TypeWindow_MLC_Up_Button_K2Node_ComponentBoundEvent_2_OnUnionButtonEvent__DelegateSignature) == 0x000008, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_BndEvt__WBP_MachineSelect_Sub_TypeWindow_MLC_Up_Button_K2Node_ComponentBoundEvent_2_OnUnionButtonEvent__DelegateSignature");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_BndEvt__WBP_MachineSelect_Sub_TypeWindow_MLC_Up_Button_K2Node_ComponentBoundEvent_2_OnUnionButtonEvent__DelegateSignature, Button) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_BndEvt__WBP_MachineSelect_Sub_TypeWindow_MLC_Up_Button_K2Node_ComponentBoundEvent_2_OnUnionButtonEvent__DelegateSignature::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_BndEvt__WBP_MachineSelect_Sub_TypeWindow_MLC_Up_Button_K2Node_ComponentBoundEvent_2_OnUnionButtonEvent__DelegateSignature;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.CreateCrossButton
 // 0x0008 (0x0008 - 0x0000)
@@ -63,9 +56,7 @@ struct WBP_MachineSelect_Sub_TypeWindow_C_CreateCrossButton final
 public:
 	class UUnionUICrossButtons*                   CallFunc_SpawnObject_ReturnValue;                  // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_CreateCrossButton) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_CreateCrossButton");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_CreateCrossButton) == 0x000008, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_CreateCrossButton");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_CreateCrossButton, CallFunc_SpawnObject_ReturnValue) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_CreateCrossButton::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_CreateCrossButton;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow
 // 0x0088 (0x0088 - 0x0000)
@@ -106,33 +97,7 @@ public:
 	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x0078(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow) == 0x000088, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow, EntryPoint) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow, CallFunc_IsEnableMouseClick_ReturnValue) == 0x000004, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow::CallFunc_IsEnableMouseClick_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow, CallFunc_IsEnableMouseClick_ReturnValue_1) == 0x000005, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow::CallFunc_IsEnableMouseClick_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow, CallFunc_IsEnableMouseClick_ReturnValue_2) == 0x000006, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow::CallFunc_IsEnableMouseClick_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow, CallFunc_IsEnableMouseClick_ReturnValue_3) == 0x000007, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow::CallFunc_IsEnableMouseClick_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow, CallFunc_IsEnableMouseClick_ReturnValue_4) == 0x000008, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow::CallFunc_IsEnableMouseClick_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow, K2Node_ComponentBoundEvent_Button_2) == 0x000010, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow::K2Node_ComponentBoundEvent_Button_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow, K2Node_ComponentBoundEvent_Dir) == 0x000018, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow::K2Node_ComponentBoundEvent_Dir' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow, K2Node_ComponentBoundEvent_Button_1) == 0x000020, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow, K2Node_ComponentBoundEvent_Button) == 0x000028, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow, CallFunc_MakeLiteralInt_ReturnValue) == 0x000030, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000038, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow, CallFunc_GetCurrentCenterBoxInfo_IndexOnBox) == 0x000040, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow::CallFunc_GetCurrentCenterBoxInfo_IndexOnBox' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow, CallFunc_GetCurrentCenterBoxInfo_MachineType) == 0x000044, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow::CallFunc_GetCurrentCenterBoxInfo_MachineType' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow, CallFunc_GetCurrentCenterBoxInfo_CenterElementTypeIndex) == 0x000048, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow::CallFunc_GetCurrentCenterBoxInfo_CenterElementTypeIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow, CallFunc_GetCurrentCenterBoxInfo_MachineId) == 0x00004C, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow::CallFunc_GetCurrentCenterBoxInfo_MachineId' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow, CallFunc_GetCaptureCameraActorByPlayerControllerIndex_ReturnValue) == 0x000050, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow::CallFunc_GetCaptureCameraActorByPlayerControllerIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow, CallFunc_GetRom1stMachineCountPerType_Count) == 0x000058, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow::CallFunc_GetRom1stMachineCountPerType_Count' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow, K2Node_DynamicCast_AsBP_UI3DCapture_to_2D) == 0x000060, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow::K2Node_DynamicCast_AsBP_UI3DCapture_to_2D' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow, K2Node_DynamicCast_bSuccess) == 0x000068, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow, CallFunc_ConvertRom1stTypeIndexToMachineId_MachineId) == 0x000069, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow::CallFunc_ConvertRom1stTypeIndexToMachineId_MachineId' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow, K2Node_Event_IsDesignTime) == 0x00006A, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow, CallFunc_GetRom1stMachineIdByMachineId_1stMAchineIndex) == 0x00006C, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow::CallFunc_GetRom1stMachineIdByMachineId_1stMAchineIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow, CallFunc_Add_IntInt_ReturnValue) == 0x000070, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow, CallFunc_Conv_IntToString_ReturnValue) == 0x000078, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_TypeWindow;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.GetBoxInfo
 // 0x0040 (0x0040 - 0x0000)
@@ -156,21 +121,7 @@ public:
 	int32                                         CallFunc_GetCenter_Index;                          // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EMachineId                                    CallFunc_GetCenter_MachineId;                      // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_GetBoxInfo) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_GetBoxInfo");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_GetBoxInfo) == 0x000040, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_GetBoxInfo");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetBoxInfo, InIndex) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetBoxInfo::InIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetBoxInfo, IndexOnBox) == 0x000004, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetBoxInfo::IndexOnBox' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetBoxInfo, machineType) == 0x000008, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetBoxInfo::machineType' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetBoxInfo, CenterElementTypeIndex) == 0x00000C, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetBoxInfo::CenterElementTypeIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetBoxInfo, MachineId) == 0x000010, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetBoxInfo::MachineId' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetBoxInfo, CallFunc_GetCenterElementIndex_ReturnValue) == 0x000014, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetBoxInfo::CallFunc_GetCenterElementIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetBoxInfo, CallFunc_Array_Get_Item) == 0x000018, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetBoxInfo::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetBoxInfo, K2Node_DynamicCast_AsWBP_Machine_Select_Sub_Type_Box) == 0x000020, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetBoxInfo::K2Node_DynamicCast_AsWBP_Machine_Select_Sub_Type_Box' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetBoxInfo, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetBoxInfo::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetBoxInfo, CallFunc_GetMachineType_Machine_Type) == 0x000029, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetBoxInfo::CallFunc_GetMachineType_Machine_Type' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetBoxInfo, CallFunc_GetCenter_Output) == 0x000030, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetBoxInfo::CallFunc_GetCenter_Output' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetBoxInfo, CallFunc_GetCenter_Index) == 0x000038, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetBoxInfo::CallFunc_GetCenter_Index' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetBoxInfo, CallFunc_GetCenter_MachineId) == 0x00003C, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetBoxInfo::CallFunc_GetCenter_MachineId' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_GetBoxInfo;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.OnCancelBack
 // 0x0038 (0x0038 - 0x0000)
@@ -189,17 +140,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_OnCancelBack) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_OnCancelBack");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_OnCancelBack) == 0x000038, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_OnCancelBack");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnCancelBack, Temp_int_Array_Index_Variable) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnCancelBack::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnCancelBack, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnCancelBack::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnCancelBack, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnCancelBack::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnCancelBack, CallFunc_GetCenterTypeBox_TypeBox) == 0x000010, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnCancelBack::CallFunc_GetCenterTypeBox_TypeBox' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnCancelBack, CallFunc_Array_Get_Item) == 0x000018, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnCancelBack::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnCancelBack, K2Node_DynamicCast_AsWBP_Machine_Select_Sub_Type_Box) == 0x000020, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnCancelBack::K2Node_DynamicCast_AsWBP_Machine_Select_Sub_Type_Box' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnCancelBack, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnCancelBack::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnCancelBack, CallFunc_Array_Length_ReturnValue) == 0x00002C, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnCancelBack::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnCancelBack, CallFunc_Less_IntInt_ReturnValue) == 0x000030, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnCancelBack::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_OnCancelBack;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.OnDirectionLeftRight
 // 0x0030 (0x0030 - 0x0000)
@@ -219,18 +160,7 @@ public:
 	uint8                                         Pad_26[0x2];                                       // 0x0026(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_MachineSelect_Sub_TypeBox_C*       CallFunc_GetOtherCenterTypeBox_OutElement;         // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_OnDirectionLeftRight) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_OnDirectionLeftRight");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_OnDirectionLeftRight) == 0x000030, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_OnDirectionLeftRight");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnDirectionLeftRight, IsRight) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnDirectionLeftRight::IsRight' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnDirectionLeftRight, MachineId) == 0x000001, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnDirectionLeftRight::MachineId' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnDirectionLeftRight, machineType) == 0x000002, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnDirectionLeftRight::machineType' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnDirectionLeftRight, bIsRight) == 0x000003, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnDirectionLeftRight::bIsRight' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnDirectionLeftRight, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnDirectionLeftRight::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnDirectionLeftRight, CallFunc_GetCenterTypeBox_TypeBox) == 0x000018, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnDirectionLeftRight::CallFunc_GetCenterTypeBox_TypeBox' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnDirectionLeftRight, CallFunc_GetPlayerIndex_ReturnValue) == 0x000020, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnDirectionLeftRight::CallFunc_GetPlayerIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnDirectionLeftRight, CallFunc_GetMachineIdNext_MachineId) == 0x000024, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnDirectionLeftRight::CallFunc_GetMachineIdNext_MachineId' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnDirectionLeftRight, CallFunc_GetMachineType_Machine_Type) == 0x000025, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnDirectionLeftRight::CallFunc_GetMachineType_Machine_Type' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnDirectionLeftRight, CallFunc_GetOtherCenterTypeBox_OutElement) == 0x000028, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnDirectionLeftRight::CallFunc_GetOtherCenterTypeBox_OutElement' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_OnDirectionLeftRight;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.OnFinishedScrollAnimationBP
 // 0x0018 (0x0018 - 0x0000)
@@ -246,15 +176,7 @@ public:
 	EMachineId                                    CallFunc_GetMachineIdCurrent_MachineId;            // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ECarStatusType                                CallFunc_GetMachineType_Machine_Type;              // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_OnFinishedScrollAnimationBP) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_OnFinishedScrollAnimationBP");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_OnFinishedScrollAnimationBP) == 0x000018, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_OnFinishedScrollAnimationBP");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnFinishedScrollAnimationBP, MachineId) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnFinishedScrollAnimationBP::MachineId' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnFinishedScrollAnimationBP, machineType) == 0x000001, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnFinishedScrollAnimationBP::machineType' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnFinishedScrollAnimationBP, CallFunc_GetPlayerIndex_ReturnValue) == 0x000004, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnFinishedScrollAnimationBP::CallFunc_GetPlayerIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnFinishedScrollAnimationBP, CallFunc_GetCenterTypeBox_TypeBox) == 0x000008, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnFinishedScrollAnimationBP::CallFunc_GetCenterTypeBox_TypeBox' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnFinishedScrollAnimationBP, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnFinishedScrollAnimationBP::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnFinishedScrollAnimationBP, CallFunc_GetMachineIdCurrent_MachineId) == 0x000011, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnFinishedScrollAnimationBP::CallFunc_GetMachineIdCurrent_MachineId' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnFinishedScrollAnimationBP, CallFunc_GetMachineType_Machine_Type) == 0x000012, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnFinishedScrollAnimationBP::CallFunc_GetMachineType_Machine_Type' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_OnFinishedScrollAnimationBP;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.OnFocusLastSelected
 // 0x0030 (0x0030 - 0x0000)
@@ -275,18 +197,7 @@ public:
 	class UWBP_MachineSelect_Sub_TypeBox_C*       CallFunc_GetOtherCenterTypeBox_OutElement;         // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_OnFocusLastSelected) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_OnFocusLastSelected");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_OnFocusLastSelected) == 0x000030, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_OnFocusLastSelected");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnFocusLastSelected, InMachineType) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnFocusLastSelected::InMachineType' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnFocusLastSelected, InMachineID) == 0x000001, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnFocusLastSelected::InMachineID' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnFocusLastSelected, TmpMachineID) == 0x000002, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnFocusLastSelected::TmpMachineID' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnFocusLastSelected, TmpMachineType) == 0x000003, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnFocusLastSelected::TmpMachineType' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnFocusLastSelected, CallFunc_GetCenterTypeBox_TypeBox) == 0x000008, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnFocusLastSelected::CallFunc_GetCenterTypeBox_TypeBox' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnFocusLastSelected, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnFocusLastSelected::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnFocusLastSelected, CallFunc_GetSelectableMachineIndex_OutMachineIndex) == 0x000014, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnFocusLastSelected::CallFunc_GetSelectableMachineIndex_OutMachineIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnFocusLastSelected, CallFunc_GetSelectableMachineIndex_OutMachineIndex_1) == 0x000018, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnFocusLastSelected::CallFunc_GetSelectableMachineIndex_OutMachineIndex_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnFocusLastSelected, CallFunc_GetOtherCenterTypeBox_OutElement) == 0x000020, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnFocusLastSelected::CallFunc_GetOtherCenterTypeBox_OutElement' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnFocusLastSelected, CallFunc_IsValid_ReturnValue_1) == 0x000028, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnFocusLastSelected::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_OnFocusLastSelected;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.OnFocusReceived
 // 0x01C0 (0x01C0 - 0x0000)
@@ -301,14 +212,7 @@ public:
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x0108(0x00B8)()
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_OnFocusReceived) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_OnFocusReceived");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_OnFocusReceived) == 0x0001C0, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_OnFocusReceived");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnFocusReceived, CallFunc_GetPlayerIndex_ReturnValue) == 0x0000F8, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnFocusReceived::CallFunc_GetPlayerIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnFocusReceived, CallFunc_GetPlayerController_ReturnValue) == 0x000100, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnFocusReceived::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnFocusReceived, K2Node_MakeStruct_EventReply) == 0x000108, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnFocusReceived::K2Node_MakeStruct_EventReply' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_OnFocusReceived;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.OnTypeHorizontalScrollAnimationFinished
 // 0x0030 (0x0030 - 0x0000)
@@ -325,16 +229,7 @@ public:
 	EMachineId                                    CallFunc_GetMachineIdCurrent_MachineId;            // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ECarStatusType                                CallFunc_GetMachineType_Machine_Type;              // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_OnTypeHorizontalScrollAnimationFinished) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_OnTypeHorizontalScrollAnimationFinished");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_OnTypeHorizontalScrollAnimationFinished) == 0x000030, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_OnTypeHorizontalScrollAnimationFinished");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnTypeHorizontalScrollAnimationFinished, FinishedWidget) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnTypeHorizontalScrollAnimationFinished::FinishedWidget' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnTypeHorizontalScrollAnimationFinished, MachineId) == 0x000008, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnTypeHorizontalScrollAnimationFinished::MachineId' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnTypeHorizontalScrollAnimationFinished, machineType) == 0x000009, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnTypeHorizontalScrollAnimationFinished::machineType' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnTypeHorizontalScrollAnimationFinished, K2Node_CreateDelegate_OutputDelegate) == 0x00000C, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnTypeHorizontalScrollAnimationFinished::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnTypeHorizontalScrollAnimationFinished, CallFunc_GetPlayerIndex_ReturnValue) == 0x00001C, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnTypeHorizontalScrollAnimationFinished::CallFunc_GetPlayerIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnTypeHorizontalScrollAnimationFinished, CallFunc_GetCenterTypeBox_TypeBox) == 0x000020, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnTypeHorizontalScrollAnimationFinished::CallFunc_GetCenterTypeBox_TypeBox' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnTypeHorizontalScrollAnimationFinished, CallFunc_GetMachineIdCurrent_MachineId) == 0x000028, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnTypeHorizontalScrollAnimationFinished::CallFunc_GetMachineIdCurrent_MachineId' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_OnTypeHorizontalScrollAnimationFinished, CallFunc_GetMachineType_Machine_Type) == 0x000029, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_OnTypeHorizontalScrollAnimationFinished::CallFunc_GetMachineType_Machine_Type' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_OnTypeHorizontalScrollAnimationFinished;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.PlaySECancel
 // 0x0004 (0x0004 - 0x0000)
@@ -343,9 +238,7 @@ struct WBP_MachineSelect_Sub_TypeWindow_C_PlaySECancel final
 public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0000(0x0004)()
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_PlaySECancel) == 0x000004, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_PlaySECancel");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_PlaySECancel) == 0x000004, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_PlaySECancel");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_PlaySECancel, CallFunc_SoundPlay_ReturnValue) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_PlaySECancel::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_PlaySECancel;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.PlaySEError
 // 0x0004 (0x0004 - 0x0000)
@@ -354,9 +247,7 @@ struct WBP_MachineSelect_Sub_TypeWindow_C_PlaySEError final
 public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0000(0x0004)()
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_PlaySEError) == 0x000004, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_PlaySEError");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_PlaySEError) == 0x000004, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_PlaySEError");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_PlaySEError, CallFunc_SoundPlay_ReturnValue) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_PlaySEError::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_PlaySEError;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.PlaySESelect
 // 0x0004 (0x0004 - 0x0000)
@@ -365,9 +256,7 @@ struct WBP_MachineSelect_Sub_TypeWindow_C_PlaySESelect final
 public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0000(0x0004)()
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_PlaySESelect) == 0x000004, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_PlaySESelect");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_PlaySESelect) == 0x000004, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_PlaySESelect");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_PlaySESelect, CallFunc_SoundPlay_ReturnValue) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_PlaySESelect::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_PlaySESelect;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.PlayUISceneAnimation
 // 0x0050 (0x0050 - 0x0000)
@@ -395,25 +284,7 @@ public:
 	class UWidgetAnimation*                       K2Node_Select_Default_2;                           // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation) == 0x000050, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation, InAnimation) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation::InAnimation' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation, Temp_bool_Variable) == 0x000001, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation, K2Node_SwitchEnum_CmpSuccess) == 0x000002, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation, Temp_bool_Variable_1) == 0x000003, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation, Temp_bool_Variable_2) == 0x000004, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation, CallFunc_GetSelectedPlayerCount_ReturnValue) == 0x000008, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation::CallFunc_GetSelectedPlayerCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation, CallFunc_GetSelectedPlayerCount_ReturnValue_1) == 0x00000C, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation::CallFunc_GetSelectedPlayerCount_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000010, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000011, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation, K2Node_Select_Default) == 0x000018, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation, K2Node_Select_Default_1) == 0x000020, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation, CallFunc_PlayAnimation_ReturnValue) == 0x000028, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation, CallFunc_PlayAnimation_ReturnValue_1) == 0x000030, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation, CallFunc_GetSelectedPlayerCount_ReturnValue_2) == 0x000038, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation::CallFunc_GetSelectedPlayerCount_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation, CallFunc_EqualEqual_IntInt_ReturnValue_2) == 0x00003C, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation::CallFunc_EqualEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation, K2Node_Select_Default_2) == 0x000040, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation, CallFunc_PlayAnimation_ReturnValue_2) == 0x000048, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_PlayUISceneAnimation;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -422,9 +293,7 @@ struct WBP_MachineSelect_Sub_TypeWindow_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_PreConstruct");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_PreConstruct) == 0x000001, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_PreConstruct");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_PreConstruct;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.SetCenterCursorVisible
 // 0x0018 (0x0018 - 0x0000)
@@ -436,11 +305,7 @@ public:
 	class UWBP_MachineSelect_Sub_TypeBox_C*       CallFunc_GetCenterTypeBox_TypeBox;                 // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_SetCenterCursorVisible) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_SetCenterCursorVisible");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_SetCenterCursorVisible) == 0x000018, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_SetCenterCursorVisible");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetCenterCursorVisible, NewVisible) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetCenterCursorVisible::NewVisible' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetCenterCursorVisible, CallFunc_GetCenterTypeBox_TypeBox) == 0x000008, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetCenterCursorVisible::CallFunc_GetCenterTypeBox_TypeBox' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetCenterCursorVisible, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetCenterCursorVisible::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_SetCenterCursorVisible;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.SetCrossButtonPlayerIndex
 // 0x0038 (0x0038 - 0x0000)
@@ -459,17 +324,7 @@ public:
 	class UWBP_MachineSelect_Sub_CrossButton_C*   K2Node_DynamicCast_AsWBP_Machine_Select_Sub_Cross_Button; // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_SetCrossButtonPlayerIndex) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_SetCrossButtonPlayerIndex");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_SetCrossButtonPlayerIndex) == 0x000038, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_SetCrossButtonPlayerIndex");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetCrossButtonPlayerIndex, Temp_int_Array_Index_Variable) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetCrossButtonPlayerIndex::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetCrossButtonPlayerIndex, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetCrossButtonPlayerIndex::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetCrossButtonPlayerIndex, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetCrossButtonPlayerIndex::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetCrossButtonPlayerIndex, CallFunc_GetPlayerIndex_ReturnValue) == 0x00000C, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetCrossButtonPlayerIndex::CallFunc_GetPlayerIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetCrossButtonPlayerIndex, CallFunc_Array_Length_ReturnValue) == 0x000010, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetCrossButtonPlayerIndex::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetCrossButtonPlayerIndex, CallFunc_Array_Get_Item) == 0x000018, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetCrossButtonPlayerIndex::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetCrossButtonPlayerIndex, CallFunc_Less_IntInt_ReturnValue) == 0x000020, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetCrossButtonPlayerIndex::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetCrossButtonPlayerIndex, K2Node_DynamicCast_AsWBP_Machine_Select_Sub_Cross_Button) == 0x000028, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetCrossButtonPlayerIndex::K2Node_DynamicCast_AsWBP_Machine_Select_Sub_Cross_Button' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetCrossButtonPlayerIndex, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetCrossButtonPlayerIndex::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_SetCrossButtonPlayerIndex;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.SetElement
 // 0x0030 (0x0030 - 0x0000)
@@ -487,16 +342,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_SetElement) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_SetElement");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_SetElement) == 0x000030, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_SetElement");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetElement, Temp_int_Array_Index_Variable) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetElement::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetElement, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetElement::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetElement, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetElement::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetElement, CallFunc_Array_Get_Item) == 0x000010, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetElement::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetElement, CallFunc_Array_Length_ReturnValue) == 0x000018, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetElement::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetElement, K2Node_DynamicCast_AsWBP_Machine_Select_Sub_Type_Box) == 0x000020, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetElement::K2Node_DynamicCast_AsWBP_Machine_Select_Sub_Type_Box' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetElement, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetElement::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetElement, CallFunc_Less_IntInt_ReturnValue) == 0x000029, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetElement::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_SetElement;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.SetElementPlayerIndex
 // 0x0038 (0x0038 - 0x0000)
@@ -515,17 +361,7 @@ public:
 	class UWBP_MachineSelect_Sub_TypeBox_C*       K2Node_DynamicCast_AsWBP_Machine_Select_Sub_Type_Box; // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_SetElementPlayerIndex) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_SetElementPlayerIndex");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_SetElementPlayerIndex) == 0x000038, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_SetElementPlayerIndex");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetElementPlayerIndex, Temp_int_Array_Index_Variable) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetElementPlayerIndex::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetElementPlayerIndex, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetElementPlayerIndex::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetElementPlayerIndex, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetElementPlayerIndex::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetElementPlayerIndex, CallFunc_GetPlayerIndex_ReturnValue) == 0x00000C, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetElementPlayerIndex::CallFunc_GetPlayerIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetElementPlayerIndex, CallFunc_Array_Length_ReturnValue) == 0x000010, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetElementPlayerIndex::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetElementPlayerIndex, CallFunc_Array_Get_Item) == 0x000018, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetElementPlayerIndex::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetElementPlayerIndex, CallFunc_Less_IntInt_ReturnValue) == 0x000020, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetElementPlayerIndex::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetElementPlayerIndex, K2Node_DynamicCast_AsWBP_Machine_Select_Sub_Type_Box) == 0x000028, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetElementPlayerIndex::K2Node_DynamicCast_AsWBP_Machine_Select_Sub_Type_Box' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetElementPlayerIndex, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetElementPlayerIndex::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_SetElementPlayerIndex;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.SetEnableInputButton
 // 0x0001 (0x0001 - 0x0000)
@@ -534,9 +370,7 @@ struct WBP_MachineSelect_Sub_TypeWindow_C_SetEnableInputButton final
 public:
 	bool                                          IsEnable;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_SetEnableInputButton) == 0x000001, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_SetEnableInputButton");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_SetEnableInputButton) == 0x000001, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_SetEnableInputButton");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetEnableInputButton, IsEnable) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetEnableInputButton::IsEnable' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_SetEnableInputButton;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.SetupElement
 // 0x0018 (0x0018 - 0x0000)
@@ -547,10 +381,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UUserWidget*>                    K2Node_MakeArray_Array;                            // 0x0008(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_SetupElement) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_SetupElement");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_SetupElement) == 0x000018, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_SetupElement");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetupElement, CallFunc_Array_Length_ReturnValue) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetupElement::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetupElement, K2Node_MakeArray_Array) == 0x000008, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetupElement::K2Node_MakeArray_Array' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_SetupElement;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.SetupHeader
 // 0x0078 (0x0078 - 0x0000)
@@ -586,29 +417,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader) == 0x000078, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader, InMachineType) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader::InMachineType' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader, machineType) == 0x000001, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader::machineType' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader, CallFunc_IsGarageMode_ReturnValue) == 0x000010, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader::CallFunc_IsGarageMode_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader, CallFunc_Subtract_IntInt_ReturnValue) == 0x000014, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader, CallFunc_IsGarageMode_ReturnValue_1) == 0x000018, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader::CallFunc_IsGarageMode_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader, CallFunc_AddLoopMachineType_ReturnValue) == 0x000019, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader::CallFunc_AddLoopMachineType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader, Temp_int_Loop_Counter_Variable_1) == 0x00001C, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader, CallFunc_Add_IntInt_ReturnValue_1) == 0x000020, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader, K2Node_MakeArray_Array) == 0x000028, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader, CallFunc_Array_Length_ReturnValue) == 0x000038, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader, CallFunc_Less_IntInt_ReturnValue) == 0x00003C, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader, K2Node_MakeArray_Array_1) == 0x000040, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader, Temp_int_Array_Index_Variable_1) == 0x000050, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader, CallFunc_Array_Get_Item) == 0x000058, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader, CallFunc_Array_Get_Item_1) == 0x000060, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader, CallFunc_AddLoopMachineType_ReturnValue_1) == 0x000068, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader::CallFunc_AddLoopMachineType_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader, CallFunc_Array_Length_ReturnValue_1) == 0x00006C, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader, CallFunc_Less_IntInt_ReturnValue_1) == 0x000070, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_SetupHeader;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.SetupPresentElement
 // 0x0010 (0x0010 - 0x0000)
@@ -617,9 +426,7 @@ struct WBP_MachineSelect_Sub_TypeWindow_C_SetupPresentElement final
 public:
 	TArray<class UUserWidget*>                    K2Node_MakeArray_Array;                            // 0x0000(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_SetupPresentElement) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_SetupPresentElement");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_SetupPresentElement) == 0x000010, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_SetupPresentElement");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetupPresentElement, K2Node_MakeArray_Array) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetupPresentElement::K2Node_MakeArray_Array' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_SetupPresentElement;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.SetVisibleCrossButton
 // 0x0028 (0x0028 - 0x0000)
@@ -640,19 +447,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_SetVisibleCrossButton) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_SetVisibleCrossButton");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_SetVisibleCrossButton) == 0x000028, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_SetVisibleCrossButton");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetVisibleCrossButton, IsVisible_0) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetVisibleCrossButton::IsVisible_0' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetVisibleCrossButton, Temp_byte_Variable) == 0x000001, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetVisibleCrossButton::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetVisibleCrossButton, Temp_byte_Variable_1) == 0x000002, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetVisibleCrossButton::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetVisibleCrossButton, Temp_int_Array_Index_Variable) == 0x000004, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetVisibleCrossButton::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetVisibleCrossButton, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetVisibleCrossButton::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetVisibleCrossButton, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetVisibleCrossButton::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetVisibleCrossButton, Temp_bool_Variable) == 0x000010, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetVisibleCrossButton::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetVisibleCrossButton, K2Node_Select_Default) == 0x000011, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetVisibleCrossButton::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetVisibleCrossButton, CallFunc_Array_Get_Item) == 0x000018, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetVisibleCrossButton::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetVisibleCrossButton, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetVisibleCrossButton::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_SetVisibleCrossButton, CallFunc_Less_IntInt_ReturnValue) == 0x000024, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_SetVisibleCrossButton::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_SetVisibleCrossButton;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.UpdateIconTextures
 // 0x0030 (0x0030 - 0x0000)
@@ -669,16 +464,7 @@ public:
 	class UWBP_MachineSelect_Sub_TypeBox_C*       K2Node_DynamicCast_AsWBP_Machine_Select_Sub_Type_Box; // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateIconTextures) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_UpdateIconTextures");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateIconTextures) == 0x000030, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_UpdateIconTextures");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateIconTextures, Temp_int_Array_Index_Variable) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateIconTextures::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateIconTextures, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateIconTextures::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateIconTextures, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateIconTextures::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateIconTextures, CallFunc_Array_Length_ReturnValue) == 0x00000C, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateIconTextures::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateIconTextures, CallFunc_Array_Get_Item) == 0x000010, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateIconTextures::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateIconTextures, CallFunc_Less_IntInt_ReturnValue) == 0x000018, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateIconTextures::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateIconTextures, K2Node_DynamicCast_AsWBP_Machine_Select_Sub_Type_Box) == 0x000020, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateIconTextures::K2Node_DynamicCast_AsWBP_Machine_Select_Sub_Type_Box' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateIconTextures, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateIconTextures::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_UpdateIconTextures;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.UpdateMachineTypeColorWidth
 // 0x0038 (0x0038 - 0x0000)
@@ -697,17 +483,7 @@ public:
 	class UWBP_MachineSelect_Sub_TypeBox_C*       K2Node_DynamicCast_AsWBP_Machine_Select_Sub_Type_Box; // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateMachineTypeColorWidth) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_UpdateMachineTypeColorWidth");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateMachineTypeColorWidth) == 0x000038, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_UpdateMachineTypeColorWidth");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateMachineTypeColorWidth, Width) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateMachineTypeColorWidth::Width' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateMachineTypeColorWidth, Temp_int_Array_Index_Variable) == 0x000004, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateMachineTypeColorWidth::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateMachineTypeColorWidth, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateMachineTypeColorWidth::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateMachineTypeColorWidth, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateMachineTypeColorWidth::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateMachineTypeColorWidth, CallFunc_Array_Length_ReturnValue) == 0x000010, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateMachineTypeColorWidth::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateMachineTypeColorWidth, CallFunc_Array_Get_Item) == 0x000018, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateMachineTypeColorWidth::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateMachineTypeColorWidth, CallFunc_Less_IntInt_ReturnValue) == 0x000020, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateMachineTypeColorWidth::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateMachineTypeColorWidth, K2Node_DynamicCast_AsWBP_Machine_Select_Sub_Type_Box) == 0x000028, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateMachineTypeColorWidth::K2Node_DynamicCast_AsWBP_Machine_Select_Sub_Type_Box' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateMachineTypeColorWidth, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateMachineTypeColorWidth::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_UpdateMachineTypeColorWidth;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.UpdateScrollPointBox
 // 0x0048 (0x0048 - 0x0000)
@@ -737,27 +513,7 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EScrollPointBoxItemIconIndex                  K2Node_Select_Default;                             // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox) == 0x000048, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox, FocusedItemIndex) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox::FocusedItemIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox, MachineNum) == 0x000004, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox::MachineNum' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox, CenterElement) == 0x000008, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox::CenterElement' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox, Temp_byte_Variable) == 0x000010, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox, Temp_int_Variable) == 0x000014, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox, CallFunc_GetMachineNum_OutMachineNum) == 0x00001C, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox::CallFunc_GetMachineNum_OutMachineNum' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox, CallFunc_GetCurrentItemDisplayIndex_OutDisplayIndex) == 0x000020, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox::CallFunc_GetCurrentItemDisplayIndex_OutDisplayIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox, CallFunc_Subtract_IntInt_ReturnValue) == 0x000024, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox, CallFunc_Percent_IntInt_ReturnValue) == 0x000028, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox, CallFunc_LessEqual_IntInt_ReturnValue) == 0x00002C, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox, CallFunc_GetMachineId_OutMachineId) == 0x00002D, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox::CallFunc_GetMachineId_OutMachineId' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox, CallFunc_IsMachineNew_ReturnValue) == 0x00002E, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox::CallFunc_IsMachineNew_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox, CallFunc_GetPlayerIndex_ReturnValue) == 0x000030, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox::CallFunc_GetPlayerIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000034, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox, CallFunc_GetCenterTypeBox_TypeBox) == 0x000038, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox::CallFunc_GetCenterTypeBox_TypeBox' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox, Temp_byte_Variable_1) == 0x000040, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox, Temp_bool_Variable) == 0x000041, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox, K2Node_Select_Default) == 0x000042, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_UpdateScrollPointBox;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.GetCenterTypeBox
 // 0x0028 (0x0028 - 0x0000)
@@ -771,13 +527,7 @@ public:
 	class UWBP_MachineSelect_Sub_TypeBox_C*       K2Node_DynamicCast_AsWBP_Machine_Select_Sub_Type_Box; // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_GetCenterTypeBox) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_GetCenterTypeBox");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_GetCenterTypeBox) == 0x000028, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_GetCenterTypeBox");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetCenterTypeBox, TypeBox) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetCenterTypeBox::TypeBox' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetCenterTypeBox, CallFunc_GetCenterElementIndex_ReturnValue) == 0x000008, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetCenterTypeBox::CallFunc_GetCenterElementIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetCenterTypeBox, CallFunc_Array_Get_Item) == 0x000010, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetCenterTypeBox::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetCenterTypeBox, K2Node_DynamicCast_AsWBP_Machine_Select_Sub_Type_Box) == 0x000018, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetCenterTypeBox::K2Node_DynamicCast_AsWBP_Machine_Select_Sub_Type_Box' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetCenterTypeBox, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetCenterTypeBox::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_GetCenterTypeBox;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.GetOtherCenterTypeBox
 // 0x0060 (0x0060 - 0x0000)
@@ -805,24 +555,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Divide_IntInt_ReturnValue;                // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox) == 0x000060, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox, OutElement) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox::OutElement' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox, HalfNum) == 0x000008, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox::HalfNum' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox, CallFunc_GetCenterElementIndex_ReturnValue) == 0x00000C, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox::CallFunc_GetCenterElementIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox, CallFunc_GetCenterElementIndex_ReturnValue_1) == 0x000010, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox::CallFunc_GetCenterElementIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox, CallFunc_GetCenterElementIndex_ReturnValue_2) == 0x000014, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox::CallFunc_GetCenterElementIndex_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox, CallFunc_Subtract_IntInt_ReturnValue) == 0x000018, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox, CallFunc_Array_Get_Item) == 0x000020, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox, CallFunc_Add_IntInt_ReturnValue) == 0x000028, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox, K2Node_DynamicCast_AsWBP_Machine_Select_Sub_Type_Box) == 0x000030, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox::K2Node_DynamicCast_AsWBP_Machine_Select_Sub_Type_Box' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox, CallFunc_Array_Get_Item_1) == 0x000040, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox, K2Node_DynamicCast_AsWBP_Machine_Select_Sub_Type_Box_1) == 0x000048, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox::K2Node_DynamicCast_AsWBP_Machine_Select_Sub_Type_Box_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox, K2Node_DynamicCast_bSuccess_1) == 0x000050, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox, CallFunc_Less_IntInt_ReturnValue) == 0x000051, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox, CallFunc_Array_Length_ReturnValue) == 0x000054, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox, CallFunc_Divide_IntInt_ReturnValue) == 0x000058, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox::CallFunc_Divide_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_GetOtherCenterTypeBox;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.GetSelectableMachineIndex
 // 0x0014 (0x0014 - 0x0000)
@@ -839,15 +572,7 @@ public:
 	int32                                         CallFunc_GetPlayerIndex_ReturnValue;               // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetSelectableMachineIndex_ReturnValue;    // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_GetSelectableMachineIndex) == 0x000004, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_GetSelectableMachineIndex");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_GetSelectableMachineIndex) == 0x000014, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_GetSelectableMachineIndex");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetSelectableMachineIndex, InMachineType) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetSelectableMachineIndex::InMachineType' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetSelectableMachineIndex, InMachineID) == 0x000001, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetSelectableMachineIndex::InMachineID' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetSelectableMachineIndex, OutMachineIndex) == 0x000004, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetSelectableMachineIndex::OutMachineIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetSelectableMachineIndex, CallFunc_IsGarageMode_ReturnValue) == 0x000008, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetSelectableMachineIndex::CallFunc_IsGarageMode_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetSelectableMachineIndex, CallFunc_IsCharaMachineSelectMode_ReturnValue) == 0x000009, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetSelectableMachineIndex::CallFunc_IsCharaMachineSelectMode_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetSelectableMachineIndex, CallFunc_GetPlayerIndex_ReturnValue) == 0x00000C, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetSelectableMachineIndex::CallFunc_GetPlayerIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetSelectableMachineIndex, CallFunc_GetSelectableMachineIndex_ReturnValue) == 0x000010, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetSelectableMachineIndex::CallFunc_GetSelectableMachineIndex_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_GetSelectableMachineIndex;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.GetSelectMachineID
 // 0x0018 (0x0018 - 0x0000)
@@ -859,11 +584,7 @@ public:
 	class UWBP_MachineSelect_Sub_TypeBox_C*       CallFunc_GetCenterTypeBox_TypeBox;                 // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	EMachineId                                    CallFunc_GetMachineIdCurrent_MachineId;            // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_GetSelectMachineID) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_GetSelectMachineID");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_GetSelectMachineID) == 0x000018, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_GetSelectMachineID");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetSelectMachineID, ReturnValue) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetSelectMachineID::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetSelectMachineID, CallFunc_GetCenterTypeBox_TypeBox) == 0x000008, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetSelectMachineID::CallFunc_GetCenterTypeBox_TypeBox' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetSelectMachineID, CallFunc_GetMachineIdCurrent_MachineId) == 0x000010, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetSelectMachineID::CallFunc_GetMachineIdCurrent_MachineId' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_GetSelectMachineID;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.GetSelectMachineType
 // 0x0018 (0x0018 - 0x0000)
@@ -875,11 +596,7 @@ public:
 	class UWBP_MachineSelect_Sub_TypeBox_C*       CallFunc_GetCenterTypeBox_TypeBox;                 // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	ECarStatusType                                CallFunc_GetMachineType_Machine_Type;              // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_GetSelectMachineType) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_GetSelectMachineType");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_GetSelectMachineType) == 0x000018, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_GetSelectMachineType");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetSelectMachineType, ReturnValue) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetSelectMachineType::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetSelectMachineType, CallFunc_GetCenterTypeBox_TypeBox) == 0x000008, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetSelectMachineType::CallFunc_GetCenterTypeBox_TypeBox' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_GetSelectMachineType, CallFunc_GetMachineType_Machine_Type) == 0x000010, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_GetSelectMachineType::CallFunc_GetMachineType_Machine_Type' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_GetSelectMachineType;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.IsCharaMachineSelectMode
 // 0x0003 (0x0003 - 0x0000)
@@ -890,11 +607,7 @@ public:
 	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_IsCharaMachineSelectMode) == 0x000001, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_IsCharaMachineSelectMode");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_IsCharaMachineSelectMode) == 0x000003, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_IsCharaMachineSelectMode");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_IsCharaMachineSelectMode, ReturnValue) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_IsCharaMachineSelectMode::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_IsCharaMachineSelectMode, CallFunc_MakeLiteralByte_ReturnValue) == 0x000001, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_IsCharaMachineSelectMode::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_IsCharaMachineSelectMode, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000002, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_IsCharaMachineSelectMode::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_IsCharaMachineSelectMode;
 
 // Function WBP_MachineSelect_Sub_TypeWindow.WBP_MachineSelect_Sub_TypeWindow_C.IsGarageMode
 // 0x0003 (0x0003 - 0x0000)
@@ -905,11 +618,7 @@ public:
 	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_TypeWindow_C_IsGarageMode) == 0x000001, "Wrong alignment on WBP_MachineSelect_Sub_TypeWindow_C_IsGarageMode");
-static_assert(sizeof(WBP_MachineSelect_Sub_TypeWindow_C_IsGarageMode) == 0x000003, "Wrong size on WBP_MachineSelect_Sub_TypeWindow_C_IsGarageMode");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_IsGarageMode, ReturnValue) == 0x000000, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_IsGarageMode::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_IsGarageMode, CallFunc_MakeLiteralByte_ReturnValue) == 0x000001, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_IsGarageMode::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_TypeWindow_C_IsGarageMode, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000002, "Member 'WBP_MachineSelect_Sub_TypeWindow_C_IsGarageMode::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_TypeWindow_C_IsGarageMode;
 
 }
 

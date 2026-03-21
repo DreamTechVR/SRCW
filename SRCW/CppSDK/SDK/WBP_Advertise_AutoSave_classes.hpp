@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -40,22 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Advertise_AutoSave_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Advertise_AutoSave_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Advertise_AutoSave_C")
 	}
 	static class UWBP_Advertise_AutoSave_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Advertise_AutoSave_C>();
 	}
 };
-static_assert(alignof(UWBP_Advertise_AutoSave_C) == 0x000008, "Wrong alignment on UWBP_Advertise_AutoSave_C");
-static_assert(sizeof(UWBP_Advertise_AutoSave_C) == 0x000418, "Wrong size on UWBP_Advertise_AutoSave_C");
-static_assert(offsetof(UWBP_Advertise_AutoSave_C, UberGraphFrame) == 0x0003E0, "Member 'UWBP_Advertise_AutoSave_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_AutoSave_C, AutoSave_Out) == 0x0003E8, "Member 'UWBP_Advertise_AutoSave_C::AutoSave_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_AutoSave_C, AutoSave_Loop) == 0x0003F0, "Member 'UWBP_Advertise_AutoSave_C::AutoSave_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_AutoSave_C, AutoSave_In) == 0x0003F8, "Member 'UWBP_Advertise_AutoSave_C::AutoSave_In' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_AutoSave_C, TXT_AutoSave) == 0x000400, "Member 'UWBP_Advertise_AutoSave_C::TXT_AutoSave' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_AutoSave_C, WBP_System_Sub_AutoSave) == 0x000408, "Member 'UWBP_Advertise_AutoSave_C::WBP_System_Sub_AutoSave' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_AutoSave_C, YellowLine_Left) == 0x000410, "Member 'UWBP_Advertise_AutoSave_C::YellowLine_Left' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Advertise_AutoSave_C;
 
 }
 

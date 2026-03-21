@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -40,19 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Window_MachineParameter_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Window_MachineParameter_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Window_MachineParameter_C")
 	}
 	static class UWBP_Window_MachineParameter_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Window_MachineParameter_C>();
 	}
 };
-static_assert(alignof(UWBP_Window_MachineParameter_C) == 0x000008, "Wrong alignment on UWBP_Window_MachineParameter_C");
-static_assert(sizeof(UWBP_Window_MachineParameter_C) == 0x000408, "Wrong size on UWBP_Window_MachineParameter_C");
-static_assert(offsetof(UWBP_Window_MachineParameter_C, UberGraphFrame) == 0x0003E8, "Member 'UWBP_Window_MachineParameter_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Window_MachineParameter_C, Parameter_Out) == 0x0003F0, "Member 'UWBP_Window_MachineParameter_C::Parameter_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Window_MachineParameter_C, Parameter_Loop) == 0x0003F8, "Member 'UWBP_Window_MachineParameter_C::Parameter_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Window_MachineParameter_C, Parameter_In) == 0x000400, "Member 'UWBP_Window_MachineParameter_C::Parameter_In' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Window_MachineParameter_C;
 
 }
 

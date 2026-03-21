@@ -21,9 +21,7 @@ struct WBP_TopInfo_Sub_HeldPop_C_SetPopSwitcherIndex final
 public:
 	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TopInfo_Sub_HeldPop_C_SetPopSwitcherIndex) == 0x000004, "Wrong alignment on WBP_TopInfo_Sub_HeldPop_C_SetPopSwitcherIndex");
-static_assert(sizeof(WBP_TopInfo_Sub_HeldPop_C_SetPopSwitcherIndex) == 0x000004, "Wrong size on WBP_TopInfo_Sub_HeldPop_C_SetPopSwitcherIndex");
-static_assert(offsetof(WBP_TopInfo_Sub_HeldPop_C_SetPopSwitcherIndex, Index_0) == 0x000000, "Member 'WBP_TopInfo_Sub_HeldPop_C_SetPopSwitcherIndex::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TopInfo_Sub_HeldPop_C_SetPopSwitcherIndex;
 
 }
 

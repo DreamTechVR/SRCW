@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -55,22 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_MenuStatePartyRaceSelectClass_C">();
+		BP_STATIC_CLASS_IMPL("BPC_MenuStatePartyRaceSelectClass_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_MenuStatePartyRaceSelectClass_C")
 	}
 	static class UBPC_MenuStatePartyRaceSelectClass_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_MenuStatePartyRaceSelectClass_C>();
 	}
 };
-static_assert(alignof(UBPC_MenuStatePartyRaceSelectClass_C) == 0x000008, "Wrong alignment on UBPC_MenuStatePartyRaceSelectClass_C");
-static_assert(sizeof(UBPC_MenuStatePartyRaceSelectClass_C) == 0x000148, "Wrong size on UBPC_MenuStatePartyRaceSelectClass_C");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectClass_C, UberGraphFrame) == 0x000128, "Member 'UBPC_MenuStatePartyRaceSelectClass_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectClass_C, ClassSelectWidget) == 0x000130, "Member 'UBPC_MenuStatePartyRaceSelectClass_C::ClassSelectWidget' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectClass_C, InputEnabled) == 0x000138, "Member 'UBPC_MenuStatePartyRaceSelectClass_C::InputEnabled' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectClass_C, bRightShoulderPressed) == 0x000139, "Member 'UBPC_MenuStatePartyRaceSelectClass_C::bRightShoulderPressed' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectClass_C, bLeftShoulderPressed) == 0x00013A, "Member 'UBPC_MenuStatePartyRaceSelectClass_C::bLeftShoulderPressed' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectClass_C, bStartPressed) == 0x00013B, "Member 'UBPC_MenuStatePartyRaceSelectClass_C::bStartPressed' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStatePartyRaceSelectClass_C, SubInputReciever) == 0x000140, "Member 'UBPC_MenuStatePartyRaceSelectClass_C::SubInputReciever' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_MenuStatePartyRaceSelectClass_C;
 
 }
 

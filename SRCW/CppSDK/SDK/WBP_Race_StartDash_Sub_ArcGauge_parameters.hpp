@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "InputCore_structs.hpp"
 #include "UnionRun_structs.hpp"
+#include "InputCore_structs.hpp"
 
 
 namespace SDK::Params
@@ -46,28 +46,7 @@ public:
 	double                                        CallFunc_SetStartDashSettings_NG2_PIVOT_ImplicitCast; // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_SetStartDashSettings_NG2_RANGE_ImplicitCast; // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge) == 0x000008, "Wrong alignment on WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge");
-static_assert(sizeof(WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge) == 0x0000C8, "Wrong size on WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge, EntryPoint) == 0x000000, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge, K2Node_Event_ImageRef) == 0x000008, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge::K2Node_Event_ImageRef' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge, K2Node_Event_PivotRate) == 0x000010, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge::K2Node_Event_PivotRate' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge, K2Node_Event_GaugeRateRange) == 0x000014, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge::K2Node_Event_GaugeRateRange' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000018, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge, K2Node_Event_IsDesignTime) == 0x000020, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge, K2Node_Event_Key) == 0x000028, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge::K2Node_Event_Key' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge, K2Node_Event_PlayerIndex) == 0x000040, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge::K2Node_Event_PlayerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge, K2Node_Event_InStartDashParam) == 0x000044, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge::K2Node_Event_InStartDashParam' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge, K2Node_CustomEvent_IsGhostView) == 0x000074, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge::K2Node_CustomEvent_IsGhostView' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge, CallFunc_SetPivotAndRange_PivotParcent_ImplicitCast) == 0x000078, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge::CallFunc_SetPivotAndRange_PivotParcent_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge, CallFunc_SetPivotAndRange_ZeroToOne_ImplicitCast) == 0x000080, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge::CallFunc_SetPivotAndRange_ZeroToOne_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge, CallFunc_SetStartDashSettings_LV3_PIVOT_ImplicitCast) == 0x000088, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge::CallFunc_SetStartDashSettings_LV3_PIVOT_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge, CallFunc_SetStartDashSettings_LV3_RANGE_ImplicitCast) == 0x000090, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge::CallFunc_SetStartDashSettings_LV3_RANGE_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge, CallFunc_SetStartDashSettings_LV2_PIVOT_ImplicitCast) == 0x000098, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge::CallFunc_SetStartDashSettings_LV2_PIVOT_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge, CallFunc_SetStartDashSettings_LV2_RANGE_ImplicitCast) == 0x0000A0, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge::CallFunc_SetStartDashSettings_LV2_RANGE_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge, CallFunc_SetStartDashSettings_NG1_PIVOT_ImplicitCast) == 0x0000A8, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge::CallFunc_SetStartDashSettings_NG1_PIVOT_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge, CallFunc_SetStartDashSettings_NG1_RANGE_ImplicitCast) == 0x0000B0, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge::CallFunc_SetStartDashSettings_NG1_RANGE_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge, CallFunc_SetStartDashSettings_NG2_PIVOT_ImplicitCast) == 0x0000B8, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge::CallFunc_SetStartDashSettings_NG2_PIVOT_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge, CallFunc_SetStartDashSettings_NG2_RANGE_ImplicitCast) == 0x0000C0, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge::CallFunc_SetStartDashSettings_NG2_RANGE_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_StartDash_Sub_ArcGauge_C_ExecuteUbergraph_WBP_Race_StartDash_Sub_ArcGauge;
 
 // Function WBP_Race_StartDash_Sub_ArcGauge.WBP_Race_StartDash_Sub_ArcGauge_C.GetButtonWidget
 // 0x0008 (0x0008 - 0x0000)
@@ -76,9 +55,7 @@ struct WBP_Race_StartDash_Sub_ArcGauge_C_GetButtonWidget final
 public:
 	class UObject*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_StartDash_Sub_ArcGauge_C_GetButtonWidget) == 0x000008, "Wrong alignment on WBP_Race_StartDash_Sub_ArcGauge_C_GetButtonWidget");
-static_assert(sizeof(WBP_Race_StartDash_Sub_ArcGauge_C_GetButtonWidget) == 0x000008, "Wrong size on WBP_Race_StartDash_Sub_ArcGauge_C_GetButtonWidget");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_GetButtonWidget, ReturnValue) == 0x000000, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_GetButtonWidget::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_StartDash_Sub_ArcGauge_C_GetButtonWidget;
 
 // Function WBP_Race_StartDash_Sub_ArcGauge.WBP_Race_StartDash_Sub_ArcGauge_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -87,9 +64,7 @@ struct WBP_Race_StartDash_Sub_ArcGauge_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_StartDash_Sub_ArcGauge_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_Race_StartDash_Sub_ArcGauge_C_PreConstruct");
-static_assert(sizeof(WBP_Race_StartDash_Sub_ArcGauge_C_PreConstruct) == 0x000001, "Wrong size on WBP_Race_StartDash_Sub_ArcGauge_C_PreConstruct");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_StartDash_Sub_ArcGauge_C_PreConstruct;
 
 // Function WBP_Race_StartDash_Sub_ArcGauge.WBP_Race_StartDash_Sub_ArcGauge_C.SetDashInputKey
 // 0x0020 (0x0020 - 0x0000)
@@ -99,10 +74,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 	int32                                         PlayerIndex;                                       // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_StartDash_Sub_ArcGauge_C_SetDashInputKey) == 0x000008, "Wrong alignment on WBP_Race_StartDash_Sub_ArcGauge_C_SetDashInputKey");
-static_assert(sizeof(WBP_Race_StartDash_Sub_ArcGauge_C_SetDashInputKey) == 0x000020, "Wrong size on WBP_Race_StartDash_Sub_ArcGauge_C_SetDashInputKey");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetDashInputKey, Key) == 0x000000, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetDashInputKey::Key' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetDashInputKey, PlayerIndex) == 0x000018, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetDashInputKey::PlayerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_StartDash_Sub_ArcGauge_C_SetDashInputKey;
 
 // Function WBP_Race_StartDash_Sub_ArcGauge.WBP_Race_StartDash_Sub_ArcGauge_C.SetGaugePivotAndRange
 // 0x0010 (0x0010 - 0x0000)
@@ -113,11 +85,7 @@ public:
 	float                                         PivotRate;                                         // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         GaugeRateRange;                                    // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_StartDash_Sub_ArcGauge_C_SetGaugePivotAndRange) == 0x000008, "Wrong alignment on WBP_Race_StartDash_Sub_ArcGauge_C_SetGaugePivotAndRange");
-static_assert(sizeof(WBP_Race_StartDash_Sub_ArcGauge_C_SetGaugePivotAndRange) == 0x000010, "Wrong size on WBP_Race_StartDash_Sub_ArcGauge_C_SetGaugePivotAndRange");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetGaugePivotAndRange, ImageRef) == 0x000000, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetGaugePivotAndRange::ImageRef' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetGaugePivotAndRange, PivotRate) == 0x000008, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetGaugePivotAndRange::PivotRate' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetGaugePivotAndRange, GaugeRateRange) == 0x00000C, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetGaugePivotAndRange::GaugeRateRange' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_StartDash_Sub_ArcGauge_C_SetGaugePivotAndRange;
 
 // Function WBP_Race_StartDash_Sub_ArcGauge.WBP_Race_StartDash_Sub_ArcGauge_C.SetGhostViewMode
 // 0x0001 (0x0001 - 0x0000)
@@ -126,9 +94,7 @@ struct WBP_Race_StartDash_Sub_ArcGauge_C_SetGhostViewMode final
 public:
 	bool                                          IsGhostView;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_StartDash_Sub_ArcGauge_C_SetGhostViewMode) == 0x000001, "Wrong alignment on WBP_Race_StartDash_Sub_ArcGauge_C_SetGhostViewMode");
-static_assert(sizeof(WBP_Race_StartDash_Sub_ArcGauge_C_SetGhostViewMode) == 0x000001, "Wrong size on WBP_Race_StartDash_Sub_ArcGauge_C_SetGhostViewMode");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetGhostViewMode, IsGhostView) == 0x000000, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetGhostViewMode::IsGhostView' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_StartDash_Sub_ArcGauge_C_SetGhostViewMode;
 
 // Function WBP_Race_StartDash_Sub_ArcGauge.WBP_Race_StartDash_Sub_ArcGauge_C.SetKey
 // 0x0040 (0x0040 - 0x0000)
@@ -145,16 +111,7 @@ public:
 	bool                                          CallFunc_SetKey_Success;                           // 0x003B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_SetKey_Success_1;                         // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_StartDash_Sub_ArcGauge_C_SetKey) == 0x000008, "Wrong alignment on WBP_Race_StartDash_Sub_ArcGauge_C_SetKey");
-static_assert(sizeof(WBP_Race_StartDash_Sub_ArcGauge_C_SetKey) == 0x000040, "Wrong size on WBP_Race_StartDash_Sub_ArcGauge_C_SetKey");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetKey, NewKey) == 0x000000, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetKey::NewKey' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetKey, PlayerControllerIndex) == 0x000018, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetKey::PlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetKey, CallFunc_GetKeyAccel_ReturnValue) == 0x000020, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetKey::CallFunc_GetKeyAccel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetKey, CallFunc_IsPlayControlKeyboard_ReturnValue) == 0x000038, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetKey::CallFunc_IsPlayControlKeyboard_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetKey, CallFunc_Not_PreBool_ReturnValue) == 0x000039, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetKey::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetKey, CallFunc_SetKey_IsSuccess) == 0x00003A, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetKey::CallFunc_SetKey_IsSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetKey, CallFunc_SetKey_Success) == 0x00003B, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetKey::CallFunc_SetKey_Success' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetKey, CallFunc_SetKey_Success_1) == 0x00003C, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetKey::CallFunc_SetKey_Success_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_StartDash_Sub_ArcGauge_C_SetKey;
 
 // Function WBP_Race_StartDash_Sub_ArcGauge.WBP_Race_StartDash_Sub_ArcGauge_C.SetParcentMyGauge
 // 0x0030 (0x0030 - 0x0000)
@@ -169,15 +126,7 @@ public:
 	float                                         CallFunc_SetRenderTransformAngle_Angle_ImplicitCast; // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_StartDash_Sub_ArcGauge_C_SetParcentMyGauge) == 0x000008, "Wrong alignment on WBP_Race_StartDash_Sub_ArcGauge_C_SetParcentMyGauge");
-static_assert(sizeof(WBP_Race_StartDash_Sub_ArcGauge_C_SetParcentMyGauge) == 0x000030, "Wrong size on WBP_Race_StartDash_Sub_ArcGauge_C_SetParcentMyGauge");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetParcentMyGauge, ZeroToOne_Max1_5) == 0x000000, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetParcentMyGauge::ZeroToOne_Max1_5' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetParcentMyGauge, CallFunc_FClamp_ReturnValue) == 0x000008, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetParcentMyGauge::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetParcentMyGauge, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000010, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetParcentMyGauge::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetParcentMyGauge, CallFunc_FClamp_ReturnValue_1) == 0x000018, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetParcentMyGauge::CallFunc_FClamp_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetParcentMyGauge, CallFunc_Multiply_DoubleDouble_B_ImplicitCast) == 0x000020, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetParcentMyGauge::CallFunc_Multiply_DoubleDouble_B_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetParcentMyGauge, CallFunc_SetRenderTransformAngle_Angle_ImplicitCast) == 0x000028, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetParcentMyGauge::CallFunc_SetRenderTransformAngle_Angle_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetParcentMyGauge, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x00002C, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetParcentMyGauge::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_StartDash_Sub_ArcGauge_C_SetParcentMyGauge;
 
 // Function WBP_Race_StartDash_Sub_ArcGauge.WBP_Race_StartDash_Sub_ArcGauge_C.SetPivotAndRange
 // 0x0068 (0x0068 - 0x0000)
@@ -199,22 +148,7 @@ public:
 	float                                         CallFunc_SetRenderTransformAngle_Angle_ImplicitCast; // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_StartDash_Sub_ArcGauge_C_SetPivotAndRange) == 0x000008, "Wrong alignment on WBP_Race_StartDash_Sub_ArcGauge_C_SetPivotAndRange");
-static_assert(sizeof(WBP_Race_StartDash_Sub_ArcGauge_C_SetPivotAndRange) == 0x000068, "Wrong size on WBP_Race_StartDash_Sub_ArcGauge_C_SetPivotAndRange");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetPivotAndRange, ZeroToOne) == 0x000000, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetPivotAndRange::ZeroToOne' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetPivotAndRange, PivotParcent) == 0x000008, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetPivotAndRange::PivotParcent' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetPivotAndRange, Image) == 0x000010, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetPivotAndRange::Image' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetPivotAndRange, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000018, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetPivotAndRange::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetPivotAndRange, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x000020, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetPivotAndRange::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetPivotAndRange, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000028, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetPivotAndRange::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetPivotAndRange, CallFunc_Multiply_DoubleDouble_ReturnValue_1) == 0x000030, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetPivotAndRange::CallFunc_Multiply_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetPivotAndRange, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x000038, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetPivotAndRange::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetPivotAndRange, CallFunc_Multiply_DoubleDouble_ReturnValue_2) == 0x000040, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetPivotAndRange::CallFunc_Multiply_DoubleDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetPivotAndRange, CallFunc_Multiply_DoubleDouble_B_ImplicitCast) == 0x000048, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetPivotAndRange::CallFunc_Multiply_DoubleDouble_B_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetPivotAndRange, CallFunc_Multiply_DoubleDouble_B_ImplicitCast_1) == 0x000050, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetPivotAndRange::CallFunc_Multiply_DoubleDouble_B_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetPivotAndRange, CallFunc_Multiply_DoubleDouble_B_ImplicitCast_2) == 0x000058, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetPivotAndRange::CallFunc_Multiply_DoubleDouble_B_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetPivotAndRange, CallFunc_SetRenderTransformAngle_Angle_ImplicitCast) == 0x000060, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetPivotAndRange::CallFunc_SetRenderTransformAngle_Angle_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetPivotAndRange, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000064, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetPivotAndRange::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_StartDash_Sub_ArcGauge_C_SetPivotAndRange;
 
 // Function WBP_Race_StartDash_Sub_ArcGauge.WBP_Race_StartDash_Sub_ArcGauge_C.SetStartDashParamSetting
 // 0x0030 (0x0030 - 0x0000)
@@ -223,9 +157,7 @@ struct WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashParamSetting final
 public:
 	struct FUnionRaceStartDashParam               InStartDashParam;                                  // 0x0000(0x0030)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashParamSetting) == 0x000004, "Wrong alignment on WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashParamSetting");
-static_assert(sizeof(WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashParamSetting) == 0x000030, "Wrong size on WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashParamSetting");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashParamSetting, InStartDashParam) == 0x000000, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashParamSetting::InStartDashParam' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashParamSetting;
 
 // Function WBP_Race_StartDash_Sub_ArcGauge.WBP_Race_StartDash_Sub_ArcGauge_C.SetStartDashSettings
 // 0x0080 (0x0080 - 0x0000)
@@ -249,24 +181,7 @@ public:
 	double                                        CallFunc_Divide_DoubleDouble_ReturnValue_6;        // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Divide_DoubleDouble_ReturnValue_7;        // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings) == 0x000008, "Wrong alignment on WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings");
-static_assert(sizeof(WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings) == 0x000080, "Wrong size on WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings, LV3_PIVOT) == 0x000000, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings::LV3_PIVOT' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings, LV3_RANGE) == 0x000008, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings::LV3_RANGE' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings, LV2_PIVOT) == 0x000010, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings::LV2_PIVOT' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings, LV2_RANGE) == 0x000018, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings::LV2_RANGE' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings, NG1_PIVOT) == 0x000020, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings::NG1_PIVOT' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings, NG1_RANGE) == 0x000028, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings::NG1_RANGE' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings, NG2_PIVOT) == 0x000030, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings::NG2_PIVOT' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings, NG2_RANGE) == 0x000038, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings::NG2_RANGE' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x000040, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings, CallFunc_Divide_DoubleDouble_ReturnValue_1) == 0x000048, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings::CallFunc_Divide_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings, CallFunc_Divide_DoubleDouble_ReturnValue_2) == 0x000050, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings::CallFunc_Divide_DoubleDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings, CallFunc_Divide_DoubleDouble_ReturnValue_3) == 0x000058, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings::CallFunc_Divide_DoubleDouble_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings, CallFunc_Divide_DoubleDouble_ReturnValue_4) == 0x000060, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings::CallFunc_Divide_DoubleDouble_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings, CallFunc_Divide_DoubleDouble_ReturnValue_5) == 0x000068, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings::CallFunc_Divide_DoubleDouble_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings, CallFunc_Divide_DoubleDouble_ReturnValue_6) == 0x000070, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings::CallFunc_Divide_DoubleDouble_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings, CallFunc_Divide_DoubleDouble_ReturnValue_7) == 0x000078, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings::CallFunc_Divide_DoubleDouble_ReturnValue_7' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_StartDash_Sub_ArcGauge_C_SetStartDashSettings;
 
 }
 

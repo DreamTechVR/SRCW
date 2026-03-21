@@ -66,47 +66,7 @@ public:
 	int32                                         K2Node_Event_PlayerControllerIndex_1;              // 0x00E4(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_Event_PlayerControllerIndex;                // 0x00E8(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross) == 0x000008, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross) == 0x0000F0, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, EntryPoint) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_PlayerControllerIndex_27) == 0x000004, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_PlayerControllerIndex_27' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_PlayerControllerIndex_26) == 0x000008, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_PlayerControllerIndex_26' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_PlayerControllerIndex_25) == 0x00000C, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_PlayerControllerIndex_25' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_PlayerControllerIndex_24) == 0x000010, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_PlayerControllerIndex_24' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_PlayerControllerIndex_23) == 0x000014, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_PlayerControllerIndex_23' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_PlayerControllerIndex_22) == 0x000018, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_PlayerControllerIndex_22' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_PlayerControllerIndex_21) == 0x00001C, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_PlayerControllerIndex_21' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_PlayerControllerIndex_20) == 0x000020, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_PlayerControllerIndex_20' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_PlayerControllerIndex_19) == 0x000024, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_PlayerControllerIndex_19' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_PlayerControllerIndex_18) == 0x000028, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_PlayerControllerIndex_18' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_PlayerControllerIndex_17) == 0x00002C, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_PlayerControllerIndex_17' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_PlayerControllerIndex_16) == 0x000030, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_PlayerControllerIndex_16' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_Value_3) == 0x000038, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_Value_3' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_Value_2) == 0x000048, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_Value_2' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_PlayerControllerIndex_15) == 0x000058, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_PlayerControllerIndex_15' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_PlayerControllerIndex_14) == 0x00005C, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_PlayerControllerIndex_14' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_PlayerControllerIndex_13) == 0x000060, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_PlayerControllerIndex_13' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_PlayerControllerIndex_12) == 0x000064, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_PlayerControllerIndex_12' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_PlayerControllerIndex_11) == 0x000068, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_PlayerControllerIndex_11' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_PlayerControllerIndex_10) == 0x00006C, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_PlayerControllerIndex_10' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_PlayerControllerIndex_9) == 0x000070, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_PlayerControllerIndex_9' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_Value_1) == 0x000078, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_Value_1' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_Value) == 0x000088, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_Value' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_PlayerControllerIndex_8) == 0x000098, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_PlayerControllerIndex_8' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_PlayerControllerIndex_7) == 0x00009C, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_PlayerControllerIndex_7' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_PlayerControllerIndex_6) == 0x0000A0, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_PlayerControllerIndex_6' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_PlayerControllerIndex_5) == 0x0000A4, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_PlayerControllerIndex_5' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_PlayerControllerIndex_4) == 0x0000A8, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_PlayerControllerIndex_4' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_PlayerControllerIndex_3) == 0x0000AC, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_PlayerControllerIndex_3' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_PlayerControllerIndex_2) == 0x0000B0, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_PlayerControllerIndex_2' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_bOnce) == 0x0000B4, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_bOnce' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_IsDesignTime) == 0x0000B5, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_MakeArray_Array) == 0x0000B8, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, CallFunc_PlayAnimation_ReturnValue) == 0x0000C8, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_CreateDelegate_OutputDelegate) == 0x0000D0, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_CustomEvent_InVisibility) == 0x0000E0, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_CustomEvent_InVisibility' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_PlayerControllerIndex_1) == 0x0000E4, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_PlayerControllerIndex_1' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross, K2Node_Event_PlayerControllerIndex) == 0x0000E8, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross::K2Node_Event_PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_ExecuteUbergraph_WBP_FooterMenu_Sub_ControllerCross;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.OnAcceptKeyPressedWithPlayerId
 // 0x0004 (0x0004 - 0x0000)
@@ -115,9 +75,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_OnAcceptKeyPressedWithPlayerId final
 public:
 	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_OnAcceptKeyPressedWithPlayerId) == 0x000004, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_OnAcceptKeyPressedWithPlayerId");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_OnAcceptKeyPressedWithPlayerId) == 0x000004, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_OnAcceptKeyPressedWithPlayerId");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_OnAcceptKeyPressedWithPlayerId, PlayerControllerIndex) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_OnAcceptKeyPressedWithPlayerId::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_OnAcceptKeyPressedWithPlayerId;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.OnAcceptKeyReleasedWithPlayerId
 // 0x0004 (0x0004 - 0x0000)
@@ -126,9 +84,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_OnAcceptKeyReleasedWithPlayerId fina
 public:
 	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_OnAcceptKeyReleasedWithPlayerId) == 0x000004, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_OnAcceptKeyReleasedWithPlayerId");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_OnAcceptKeyReleasedWithPlayerId) == 0x000004, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_OnAcceptKeyReleasedWithPlayerId");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_OnAcceptKeyReleasedWithPlayerId, PlayerControllerIndex) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_OnAcceptKeyReleasedWithPlayerId::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_OnAcceptKeyReleasedWithPlayerId;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.OnBackKeyPressedWithPlayerId
 // 0x0004 (0x0004 - 0x0000)
@@ -137,9 +93,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_OnBackKeyPressedWithPlayerId final
 public:
 	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_OnBackKeyPressedWithPlayerId) == 0x000004, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_OnBackKeyPressedWithPlayerId");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_OnBackKeyPressedWithPlayerId) == 0x000004, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_OnBackKeyPressedWithPlayerId");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_OnBackKeyPressedWithPlayerId, PlayerControllerIndex) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_OnBackKeyPressedWithPlayerId::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_OnBackKeyPressedWithPlayerId;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.OnBackKeyReleasedWithPlayerId
 // 0x0004 (0x0004 - 0x0000)
@@ -148,9 +102,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_OnBackKeyReleasedWithPlayerId final
 public:
 	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_OnBackKeyReleasedWithPlayerId) == 0x000004, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_OnBackKeyReleasedWithPlayerId");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_OnBackKeyReleasedWithPlayerId) == 0x000004, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_OnBackKeyReleasedWithPlayerId");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_OnBackKeyReleasedWithPlayerId, PlayerControllerIndex) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_OnBackKeyReleasedWithPlayerId::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_OnBackKeyReleasedWithPlayerId;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.OnDownKeyPressedWithPlayerId
 // 0x0004 (0x0004 - 0x0000)
@@ -159,9 +111,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_OnDownKeyPressedWithPlayerId final
 public:
 	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_OnDownKeyPressedWithPlayerId) == 0x000004, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_OnDownKeyPressedWithPlayerId");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_OnDownKeyPressedWithPlayerId) == 0x000004, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_OnDownKeyPressedWithPlayerId");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_OnDownKeyPressedWithPlayerId, PlayerControllerIndex) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_OnDownKeyPressedWithPlayerId::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_OnDownKeyPressedWithPlayerId;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.OnDownKeyReleasedWithPlayerId
 // 0x0004 (0x0004 - 0x0000)
@@ -170,9 +120,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_OnDownKeyReleasedWithPlayerId final
 public:
 	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_OnDownKeyReleasedWithPlayerId) == 0x000004, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_OnDownKeyReleasedWithPlayerId");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_OnDownKeyReleasedWithPlayerId) == 0x000004, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_OnDownKeyReleasedWithPlayerId");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_OnDownKeyReleasedWithPlayerId, PlayerControllerIndex) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_OnDownKeyReleasedWithPlayerId::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_OnDownKeyReleasedWithPlayerId;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.OnFaceButtonLeftPressedWithPlayerId
 // 0x0004 (0x0004 - 0x0000)
@@ -181,9 +129,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_OnFaceButtonLeftPressedWithPlayerId 
 public:
 	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_OnFaceButtonLeftPressedWithPlayerId) == 0x000004, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_OnFaceButtonLeftPressedWithPlayerId");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_OnFaceButtonLeftPressedWithPlayerId) == 0x000004, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_OnFaceButtonLeftPressedWithPlayerId");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_OnFaceButtonLeftPressedWithPlayerId, PlayerControllerIndex) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_OnFaceButtonLeftPressedWithPlayerId::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_OnFaceButtonLeftPressedWithPlayerId;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.OnFaceButtonLeftReleasedWithPlayerId
 // 0x0004 (0x0004 - 0x0000)
@@ -192,9 +138,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_OnFaceButtonLeftReleasedWithPlayerId
 public:
 	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_OnFaceButtonLeftReleasedWithPlayerId) == 0x000004, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_OnFaceButtonLeftReleasedWithPlayerId");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_OnFaceButtonLeftReleasedWithPlayerId) == 0x000004, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_OnFaceButtonLeftReleasedWithPlayerId");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_OnFaceButtonLeftReleasedWithPlayerId, PlayerControllerIndex) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_OnFaceButtonLeftReleasedWithPlayerId::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_OnFaceButtonLeftReleasedWithPlayerId;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.OnFaceButtonTopPressedWithPlayerId
 // 0x0004 (0x0004 - 0x0000)
@@ -203,9 +147,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_OnFaceButtonTopPressedWithPlayerId f
 public:
 	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_OnFaceButtonTopPressedWithPlayerId) == 0x000004, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_OnFaceButtonTopPressedWithPlayerId");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_OnFaceButtonTopPressedWithPlayerId) == 0x000004, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_OnFaceButtonTopPressedWithPlayerId");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_OnFaceButtonTopPressedWithPlayerId, PlayerControllerIndex) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_OnFaceButtonTopPressedWithPlayerId::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_OnFaceButtonTopPressedWithPlayerId;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.OnFaceButtonTopReleasedWithPlayerId
 // 0x0004 (0x0004 - 0x0000)
@@ -214,9 +156,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_OnFaceButtonTopReleasedWithPlayerId 
 public:
 	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_OnFaceButtonTopReleasedWithPlayerId) == 0x000004, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_OnFaceButtonTopReleasedWithPlayerId");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_OnFaceButtonTopReleasedWithPlayerId) == 0x000004, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_OnFaceButtonTopReleasedWithPlayerId");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_OnFaceButtonTopReleasedWithPlayerId, PlayerControllerIndex) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_OnFaceButtonTopReleasedWithPlayerId::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_OnFaceButtonTopReleasedWithPlayerId;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.OnLeftKeyPressedWithPlayerId
 // 0x0004 (0x0004 - 0x0000)
@@ -225,9 +165,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_OnLeftKeyPressedWithPlayerId final
 public:
 	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_OnLeftKeyPressedWithPlayerId) == 0x000004, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_OnLeftKeyPressedWithPlayerId");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_OnLeftKeyPressedWithPlayerId) == 0x000004, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_OnLeftKeyPressedWithPlayerId");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_OnLeftKeyPressedWithPlayerId, PlayerControllerIndex) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_OnLeftKeyPressedWithPlayerId::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_OnLeftKeyPressedWithPlayerId;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.OnLeftKeyReleasedWithPlayerId
 // 0x0004 (0x0004 - 0x0000)
@@ -236,9 +174,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_OnLeftKeyReleasedWithPlayerId final
 public:
 	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_OnLeftKeyReleasedWithPlayerId) == 0x000004, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_OnLeftKeyReleasedWithPlayerId");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_OnLeftKeyReleasedWithPlayerId) == 0x000004, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_OnLeftKeyReleasedWithPlayerId");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_OnLeftKeyReleasedWithPlayerId, PlayerControllerIndex) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_OnLeftKeyReleasedWithPlayerId::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_OnLeftKeyReleasedWithPlayerId;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.OnLeftShoulderPressedWithPlayerId
 // 0x0004 (0x0004 - 0x0000)
@@ -247,9 +183,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_OnLeftShoulderPressedWithPlayerId fi
 public:
 	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_OnLeftShoulderPressedWithPlayerId) == 0x000004, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_OnLeftShoulderPressedWithPlayerId");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_OnLeftShoulderPressedWithPlayerId) == 0x000004, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_OnLeftShoulderPressedWithPlayerId");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_OnLeftShoulderPressedWithPlayerId, PlayerControllerIndex) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_OnLeftShoulderPressedWithPlayerId::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_OnLeftShoulderPressedWithPlayerId;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.OnLeftShoulderReleasedWithPlayerId
 // 0x0004 (0x0004 - 0x0000)
@@ -258,9 +192,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_OnLeftShoulderReleasedWithPlayerId f
 public:
 	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_OnLeftShoulderReleasedWithPlayerId) == 0x000004, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_OnLeftShoulderReleasedWithPlayerId");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_OnLeftShoulderReleasedWithPlayerId) == 0x000004, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_OnLeftShoulderReleasedWithPlayerId");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_OnLeftShoulderReleasedWithPlayerId, PlayerControllerIndex) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_OnLeftShoulderReleasedWithPlayerId::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_OnLeftShoulderReleasedWithPlayerId;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.OnLeftStickAxis
 // 0x0010 (0x0010 - 0x0000)
@@ -269,9 +201,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_OnLeftStickAxis final
 public:
 	struct FVector2D                              Value;                                             // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_OnLeftStickAxis) == 0x000008, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_OnLeftStickAxis");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_OnLeftStickAxis) == 0x000010, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_OnLeftStickAxis");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_OnLeftStickAxis, Value) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_OnLeftStickAxis::Value' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_OnLeftStickAxis;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.OnLeftStickAxisWithPlayerId
 // 0x0018 (0x0018 - 0x0000)
@@ -281,10 +211,7 @@ public:
 	struct FVector2D                              Value;                                             // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         PlayerControllerIndex;                             // 0x0010(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_OnLeftStickAxisWithPlayerId) == 0x000008, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_OnLeftStickAxisWithPlayerId");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_OnLeftStickAxisWithPlayerId) == 0x000018, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_OnLeftStickAxisWithPlayerId");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_OnLeftStickAxisWithPlayerId, Value) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_OnLeftStickAxisWithPlayerId::Value' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_OnLeftStickAxisWithPlayerId, PlayerControllerIndex) == 0x000010, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_OnLeftStickAxisWithPlayerId::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_OnLeftStickAxisWithPlayerId;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.OnLeftStickButtonPressedWithPlayerId
 // 0x0004 (0x0004 - 0x0000)
@@ -293,9 +220,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_OnLeftStickButtonPressedWithPlayerId
 public:
 	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_OnLeftStickButtonPressedWithPlayerId) == 0x000004, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_OnLeftStickButtonPressedWithPlayerId");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_OnLeftStickButtonPressedWithPlayerId) == 0x000004, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_OnLeftStickButtonPressedWithPlayerId");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_OnLeftStickButtonPressedWithPlayerId, PlayerControllerIndex) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_OnLeftStickButtonPressedWithPlayerId::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_OnLeftStickButtonPressedWithPlayerId;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.OnLeftStickButtonReleasedWithPlayerId
 // 0x0004 (0x0004 - 0x0000)
@@ -304,9 +229,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_OnLeftStickButtonReleasedWithPlayerI
 public:
 	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_OnLeftStickButtonReleasedWithPlayerId) == 0x000004, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_OnLeftStickButtonReleasedWithPlayerId");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_OnLeftStickButtonReleasedWithPlayerId) == 0x000004, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_OnLeftStickButtonReleasedWithPlayerId");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_OnLeftStickButtonReleasedWithPlayerId, PlayerControllerIndex) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_OnLeftStickButtonReleasedWithPlayerId::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_OnLeftStickButtonReleasedWithPlayerId;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.OnRightKeyPressedWithPlayerId
 // 0x0004 (0x0004 - 0x0000)
@@ -315,9 +238,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_OnRightKeyPressedWithPlayerId final
 public:
 	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_OnRightKeyPressedWithPlayerId) == 0x000004, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_OnRightKeyPressedWithPlayerId");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_OnRightKeyPressedWithPlayerId) == 0x000004, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_OnRightKeyPressedWithPlayerId");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_OnRightKeyPressedWithPlayerId, PlayerControllerIndex) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_OnRightKeyPressedWithPlayerId::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_OnRightKeyPressedWithPlayerId;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.OnRightKeyReleasedWithPlayerId
 // 0x0004 (0x0004 - 0x0000)
@@ -326,9 +247,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_OnRightKeyReleasedWithPlayerId final
 public:
 	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_OnRightKeyReleasedWithPlayerId) == 0x000004, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_OnRightKeyReleasedWithPlayerId");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_OnRightKeyReleasedWithPlayerId) == 0x000004, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_OnRightKeyReleasedWithPlayerId");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_OnRightKeyReleasedWithPlayerId, PlayerControllerIndex) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_OnRightKeyReleasedWithPlayerId::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_OnRightKeyReleasedWithPlayerId;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.OnRightShoulderPressedWithPlayerId
 // 0x0004 (0x0004 - 0x0000)
@@ -337,9 +256,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_OnRightShoulderPressedWithPlayerId f
 public:
 	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_OnRightShoulderPressedWithPlayerId) == 0x000004, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_OnRightShoulderPressedWithPlayerId");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_OnRightShoulderPressedWithPlayerId) == 0x000004, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_OnRightShoulderPressedWithPlayerId");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_OnRightShoulderPressedWithPlayerId, PlayerControllerIndex) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_OnRightShoulderPressedWithPlayerId::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_OnRightShoulderPressedWithPlayerId;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.OnRightShoulderReleasedWithPlayerId
 // 0x0004 (0x0004 - 0x0000)
@@ -348,9 +265,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_OnRightShoulderReleasedWithPlayerId 
 public:
 	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_OnRightShoulderReleasedWithPlayerId) == 0x000004, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_OnRightShoulderReleasedWithPlayerId");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_OnRightShoulderReleasedWithPlayerId) == 0x000004, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_OnRightShoulderReleasedWithPlayerId");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_OnRightShoulderReleasedWithPlayerId, PlayerControllerIndex) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_OnRightShoulderReleasedWithPlayerId::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_OnRightShoulderReleasedWithPlayerId;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.OnRightStickAxis
 // 0x0010 (0x0010 - 0x0000)
@@ -359,9 +274,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_OnRightStickAxis final
 public:
 	struct FVector2D                              Value;                                             // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_OnRightStickAxis) == 0x000008, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_OnRightStickAxis");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_OnRightStickAxis) == 0x000010, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_OnRightStickAxis");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_OnRightStickAxis, Value) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_OnRightStickAxis::Value' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_OnRightStickAxis;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.OnRightStickAxisWithPlayerId
 // 0x0018 (0x0018 - 0x0000)
@@ -371,10 +284,7 @@ public:
 	struct FVector2D                              Value;                                             // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         PlayerControllerIndex;                             // 0x0010(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_OnRightStickAxisWithPlayerId) == 0x000008, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_OnRightStickAxisWithPlayerId");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_OnRightStickAxisWithPlayerId) == 0x000018, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_OnRightStickAxisWithPlayerId");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_OnRightStickAxisWithPlayerId, Value) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_OnRightStickAxisWithPlayerId::Value' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_OnRightStickAxisWithPlayerId, PlayerControllerIndex) == 0x000010, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_OnRightStickAxisWithPlayerId::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_OnRightStickAxisWithPlayerId;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.OnRightStickButtonPressedWithPlayerId
 // 0x0004 (0x0004 - 0x0000)
@@ -383,9 +293,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_OnRightStickButtonPressedWithPlayerI
 public:
 	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_OnRightStickButtonPressedWithPlayerId) == 0x000004, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_OnRightStickButtonPressedWithPlayerId");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_OnRightStickButtonPressedWithPlayerId) == 0x000004, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_OnRightStickButtonPressedWithPlayerId");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_OnRightStickButtonPressedWithPlayerId, PlayerControllerIndex) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_OnRightStickButtonPressedWithPlayerId::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_OnRightStickButtonPressedWithPlayerId;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.OnRightStickButtonReleasedWithPlayerId
 // 0x0004 (0x0004 - 0x0000)
@@ -394,9 +302,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_OnRightStickButtonReleasedWithPlayer
 public:
 	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_OnRightStickButtonReleasedWithPlayerId) == 0x000004, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_OnRightStickButtonReleasedWithPlayerId");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_OnRightStickButtonReleasedWithPlayerId) == 0x000004, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_OnRightStickButtonReleasedWithPlayerId");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_OnRightStickButtonReleasedWithPlayerId, PlayerControllerIndex) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_OnRightStickButtonReleasedWithPlayerId::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_OnRightStickButtonReleasedWithPlayerId;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.OnSpecialPressedWithPlayerId
 // 0x0004 (0x0004 - 0x0000)
@@ -405,9 +311,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_OnSpecialPressedWithPlayerId final
 public:
 	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_OnSpecialPressedWithPlayerId) == 0x000004, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_OnSpecialPressedWithPlayerId");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_OnSpecialPressedWithPlayerId) == 0x000004, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_OnSpecialPressedWithPlayerId");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_OnSpecialPressedWithPlayerId, PlayerControllerIndex) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_OnSpecialPressedWithPlayerId::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_OnSpecialPressedWithPlayerId;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.OnSpecialReleasedWithPlayerId
 // 0x0004 (0x0004 - 0x0000)
@@ -416,9 +320,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_OnSpecialReleasedWithPlayerId final
 public:
 	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_OnSpecialReleasedWithPlayerId) == 0x000004, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_OnSpecialReleasedWithPlayerId");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_OnSpecialReleasedWithPlayerId) == 0x000004, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_OnSpecialReleasedWithPlayerId");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_OnSpecialReleasedWithPlayerId, PlayerControllerIndex) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_OnSpecialReleasedWithPlayerId::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_OnSpecialReleasedWithPlayerId;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.OnUpKeyPressedWithPlayerId
 // 0x0004 (0x0004 - 0x0000)
@@ -427,9 +329,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_OnUpKeyPressedWithPlayerId final
 public:
 	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_OnUpKeyPressedWithPlayerId) == 0x000004, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_OnUpKeyPressedWithPlayerId");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_OnUpKeyPressedWithPlayerId) == 0x000004, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_OnUpKeyPressedWithPlayerId");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_OnUpKeyPressedWithPlayerId, PlayerControllerIndex) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_OnUpKeyPressedWithPlayerId::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_OnUpKeyPressedWithPlayerId;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.OnUpKeyReleasedWithPlayerId
 // 0x0004 (0x0004 - 0x0000)
@@ -438,9 +338,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_OnUpKeyReleasedWithPlayerId final
 public:
 	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_OnUpKeyReleasedWithPlayerId) == 0x000004, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_OnUpKeyReleasedWithPlayerId");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_OnUpKeyReleasedWithPlayerId) == 0x000004, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_OnUpKeyReleasedWithPlayerId");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_OnUpKeyReleasedWithPlayerId, PlayerControllerIndex) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_OnUpKeyReleasedWithPlayerId::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_OnUpKeyReleasedWithPlayerId;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.OnVisibilityChanged_イベント
 // 0x0001 (0x0001 - 0x0000)
@@ -449,9 +347,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_OnVisibilityChanged_イベント fin
 public:
 	ESlateVisibility                              InVisibility;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_OnVisibilityChanged_イベント) == 0x000001, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_OnVisibilityChanged_イベント");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_OnVisibilityChanged_イベント) == 0x000001, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_OnVisibilityChanged_イベント");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_OnVisibilityChanged_イベント, InVisibility) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_OnVisibilityChanged_イベント::InVisibility' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_OnVisibilityChanged_イベント;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -460,9 +356,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_PreConstruct");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_PreConstruct) == 0x000001, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_PreConstruct");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_PreConstruct;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.PressButtonAnimation
 // 0x0008 (0x0008 - 0x0000)
@@ -471,9 +365,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_PressButtonAnimation final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_PressButtonAnimation) == 0x000008, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_PressButtonAnimation");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_PressButtonAnimation) == 0x000008, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_PressButtonAnimation");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_PressButtonAnimation, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_PressButtonAnimation::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_PressButtonAnimation;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.SetButtonImageIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -482,9 +374,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_SetButtonImageIndex final
 public:
 	int32                                         Param_Index_0;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_SetButtonImageIndex) == 0x000004, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_SetButtonImageIndex");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_SetButtonImageIndex) == 0x000004, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_SetButtonImageIndex");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_SetButtonImageIndex, Param_Index_0) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_SetButtonImageIndex::Param_Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_SetButtonImageIndex;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.SetText
 // 0x0010 (0x0010 - 0x0000)
@@ -493,9 +383,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_SetText final
 public:
 	class FText                                   Text_0;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_SetText) == 0x000008, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_SetText");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_SetText) == 0x000010, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_SetText");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_SetText, Text_0) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_SetText::Text_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_SetText;
 
 // Function WBP_FooterMenu_Sub_ControllerCross.WBP_FooterMenu_Sub_ControllerCross_C.SilentFocusReady
 // 0x0001 (0x0001 - 0x0000)
@@ -504,9 +392,7 @@ struct WBP_FooterMenu_Sub_ControllerCross_C_SilentFocusReady final
 public:
 	bool                                          bOnce;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_ControllerCross_C_SilentFocusReady) == 0x000001, "Wrong alignment on WBP_FooterMenu_Sub_ControllerCross_C_SilentFocusReady");
-static_assert(sizeof(WBP_FooterMenu_Sub_ControllerCross_C_SilentFocusReady) == 0x000001, "Wrong size on WBP_FooterMenu_Sub_ControllerCross_C_SilentFocusReady");
-static_assert(offsetof(WBP_FooterMenu_Sub_ControllerCross_C_SilentFocusReady, bOnce) == 0x000000, "Member 'WBP_FooterMenu_Sub_ControllerCross_C_SilentFocusReady::bOnce' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_ControllerCross_C_SilentFocusReady;
 
 }
 

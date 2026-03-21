@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -42,20 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_MonsterTruckActor_C">();
+		BP_STATIC_CLASS_IMPL("BP_MonsterTruckActor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_MonsterTruckActor_C")
 	}
 	static class ABP_MonsterTruckActor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_MonsterTruckActor_C>();
 	}
 };
-static_assert(alignof(ABP_MonsterTruckActor_C) == 0x000008, "Wrong alignment on ABP_MonsterTruckActor_C");
-static_assert(sizeof(ABP_MonsterTruckActor_C) == 0x000C60, "Wrong size on ABP_MonsterTruckActor_C");
-static_assert(offsetof(ABP_MonsterTruckActor_C, UberGraphFrame) == 0x000BF8, "Member 'ABP_MonsterTruckActor_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_MonsterTruckActor_C, Timeline_CountDown_CountDown_F5ABB8A74F83AC7C8C8844AA86BCD341) == 0x000C00, "Member 'ABP_MonsterTruckActor_C::Timeline_CountDown_CountDown_F5ABB8A74F83AC7C8C8844AA86BCD341' has a wrong offset!");
-static_assert(offsetof(ABP_MonsterTruckActor_C, Timeline_CountDown__Direction_F5ABB8A74F83AC7C8C8844AA86BCD341) == 0x000C04, "Member 'ABP_MonsterTruckActor_C::Timeline_CountDown__Direction_F5ABB8A74F83AC7C8C8844AA86BCD341' has a wrong offset!");
-static_assert(offsetof(ABP_MonsterTruckActor_C, Timeline_CountDown) == 0x000C08, "Member 'ABP_MonsterTruckActor_C::Timeline_CountDown' has a wrong offset!");
-static_assert(offsetof(ABP_MonsterTruckActor_C, MonsterTruckData) == 0x000C10, "Member 'ABP_MonsterTruckActor_C::MonsterTruckData' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_MonsterTruckActor_C;
 
 }
 

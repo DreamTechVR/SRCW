@@ -36,21 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_HUD_Sub_Rival_RaceStart_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_HUD_Sub_Rival_RaceStart_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_HUD_Sub_Rival_RaceStart_C")
 	}
 	static class UWBP_Race_HUD_Sub_Rival_RaceStart_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_HUD_Sub_Rival_RaceStart_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_HUD_Sub_Rival_RaceStart_C) == 0x000008, "Wrong alignment on UWBP_Race_HUD_Sub_Rival_RaceStart_C");
-static_assert(sizeof(UWBP_Race_HUD_Sub_Rival_RaceStart_C) == 0x000318, "Wrong size on UWBP_Race_HUD_Sub_Rival_RaceStart_C");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Rival_RaceStart_C, CharaHead_Rival) == 0x0002E8, "Member 'UWBP_Race_HUD_Sub_Rival_RaceStart_C::CharaHead_Rival' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Rival_RaceStart_C, RivalIcon) == 0x0002F0, "Member 'UWBP_Race_HUD_Sub_Rival_RaceStart_C::RivalIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Rival_RaceStart_C, RivalIcon_HighLevel) == 0x0002F8, "Member 'UWBP_Race_HUD_Sub_Rival_RaceStart_C::RivalIcon_HighLevel' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Rival_RaceStart_C, TXT_Rank) == 0x000300, "Member 'UWBP_Race_HUD_Sub_Rival_RaceStart_C::TXT_Rank' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Rival_RaceStart_C, TXT_RivalName) == 0x000308, "Member 'UWBP_Race_HUD_Sub_Rival_RaceStart_C::TXT_RivalName' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Rival_RaceStart_C, WidgetSwitcher_RivalIcon) == 0x000310, "Member 'UWBP_Race_HUD_Sub_Rival_RaceStart_C::WidgetSwitcher_RivalIcon' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_HUD_Sub_Rival_RaceStart_C;
 
 }
 

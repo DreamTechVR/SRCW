@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -42,27 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CharaSelect_Sub_RivalWinIcon_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CharaSelect_Sub_RivalWinIcon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CharaSelect_Sub_RivalWinIcon_C")
 	}
 	static class UWBP_CharaSelect_Sub_RivalWinIcon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CharaSelect_Sub_RivalWinIcon_C>();
 	}
 };
-static_assert(alignof(UWBP_CharaSelect_Sub_RivalWinIcon_C) == 0x000008, "Wrong alignment on UWBP_CharaSelect_Sub_RivalWinIcon_C");
-static_assert(sizeof(UWBP_CharaSelect_Sub_RivalWinIcon_C) == 0x000360, "Wrong size on UWBP_CharaSelect_Sub_RivalWinIcon_C");
-static_assert(offsetof(UWBP_CharaSelect_Sub_RivalWinIcon_C, UberGraphFrame) == 0x000300, "Member 'UWBP_CharaSelect_Sub_RivalWinIcon_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_RivalWinIcon_C, Icon_Max_Loop) == 0x000308, "Member 'UWBP_CharaSelect_Sub_RivalWinIcon_C::Icon_Max_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_RivalWinIcon_C, Icon_Max_In) == 0x000310, "Member 'UWBP_CharaSelect_Sub_RivalWinIcon_C::Icon_Max_In' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_RivalWinIcon_C, Icon_Easy_Loop) == 0x000318, "Member 'UWBP_CharaSelect_Sub_RivalWinIcon_C::Icon_Easy_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_RivalWinIcon_C, Icon_Easy_In) == 0x000320, "Member 'UWBP_CharaSelect_Sub_RivalWinIcon_C::Icon_Easy_In' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_RivalWinIcon_C, Eff_01) == 0x000328, "Member 'UWBP_CharaSelect_Sub_RivalWinIcon_C::Eff_01' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_RivalWinIcon_C, Eff_02) == 0x000330, "Member 'UWBP_CharaSelect_Sub_RivalWinIcon_C::Eff_02' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_RivalWinIcon_C, Eff_S_01) == 0x000338, "Member 'UWBP_CharaSelect_Sub_RivalWinIcon_C::Eff_S_01' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_RivalWinIcon_C, Eff_S_02) == 0x000340, "Member 'UWBP_CharaSelect_Sub_RivalWinIcon_C::Eff_S_02' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_RivalWinIcon_C, EffBase) == 0x000348, "Member 'UWBP_CharaSelect_Sub_RivalWinIcon_C::EffBase' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_RivalWinIcon_C, Icon_Easy) == 0x000350, "Member 'UWBP_CharaSelect_Sub_RivalWinIcon_C::Icon_Easy' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_RivalWinIcon_C, Icon_Max) == 0x000358, "Member 'UWBP_CharaSelect_Sub_RivalWinIcon_C::Icon_Max' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CharaSelect_Sub_RivalWinIcon_C;
 
 }
 

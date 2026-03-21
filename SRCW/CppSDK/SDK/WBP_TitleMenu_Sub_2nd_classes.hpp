@@ -38,20 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_TitleMenu_Sub_2nd_C">();
+		BP_STATIC_CLASS_IMPL("WBP_TitleMenu_Sub_2nd_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_TitleMenu_Sub_2nd_C")
 	}
 	static class UWBP_TitleMenu_Sub_2nd_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_TitleMenu_Sub_2nd_C>();
 	}
 };
-static_assert(alignof(UWBP_TitleMenu_Sub_2nd_C) == 0x000008, "Wrong alignment on UWBP_TitleMenu_Sub_2nd_C");
-static_assert(sizeof(UWBP_TitleMenu_Sub_2nd_C) == 0x000328, "Wrong size on UWBP_TitleMenu_Sub_2nd_C");
-static_assert(offsetof(UWBP_TitleMenu_Sub_2nd_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_TitleMenu_Sub_2nd_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_Sub_2nd_C, KeyVisual_2nd) == 0x0002E8, "Member 'UWBP_TitleMenu_Sub_2nd_C::KeyVisual_2nd' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_Sub_2nd_C, TitleLOGO) == 0x0002F0, "Member 'UWBP_TitleMenu_Sub_2nd_C::TitleLOGO' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_Sub_2nd_C, WBP_TitleMenu_Sub_Btn) == 0x0002F8, "Member 'UWBP_TitleMenu_Sub_2nd_C::WBP_TitleMenu_Sub_Btn' has a wrong offset!");
-static_assert(offsetof(UWBP_TitleMenu_Sub_2nd_C, Soft_Texture) == 0x000300, "Member 'UWBP_TitleMenu_Sub_2nd_C::Soft_Texture' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_TitleMenu_Sub_2nd_C;
 
 }
 

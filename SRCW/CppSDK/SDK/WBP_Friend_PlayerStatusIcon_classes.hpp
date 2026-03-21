@@ -38,23 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Friend_PlayerStatusIcon_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Friend_PlayerStatusIcon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Friend_PlayerStatusIcon_C")
 	}
 	static class UWBP_Friend_PlayerStatusIcon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Friend_PlayerStatusIcon_C>();
 	}
 };
-static_assert(alignof(UWBP_Friend_PlayerStatusIcon_C) == 0x000008, "Wrong alignment on UWBP_Friend_PlayerStatusIcon_C");
-static_assert(sizeof(UWBP_Friend_PlayerStatusIcon_C) == 0x000320, "Wrong size on UWBP_Friend_PlayerStatusIcon_C");
-static_assert(offsetof(UWBP_Friend_PlayerStatusIcon_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Friend_PlayerStatusIcon_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_PlayerStatusIcon_C, Icon_Blink_Loop) == 0x0002E8, "Member 'UWBP_Friend_PlayerStatusIcon_C::Icon_Blink_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_PlayerStatusIcon_C, Icon_Delete_Out) == 0x0002F0, "Member 'UWBP_Friend_PlayerStatusIcon_C::Icon_Delete_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_PlayerStatusIcon_C, Icon_Active_Loop) == 0x0002F8, "Member 'UWBP_Friend_PlayerStatusIcon_C::Icon_Active_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_PlayerStatusIcon_C, Icon_Select_Block_In) == 0x000300, "Member 'UWBP_Friend_PlayerStatusIcon_C::Icon_Select_Block_In' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_PlayerStatusIcon_C, Icon_Select_Favorite_In) == 0x000308, "Member 'UWBP_Friend_PlayerStatusIcon_C::Icon_Select_Favorite_In' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_PlayerStatusIcon_C, Light_01) == 0x000310, "Member 'UWBP_Friend_PlayerStatusIcon_C::Light_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_PlayerStatusIcon_C, PlayerStatusIcon) == 0x000318, "Member 'UWBP_Friend_PlayerStatusIcon_C::PlayerStatusIcon' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Friend_PlayerStatusIcon_C;
 
 }
 

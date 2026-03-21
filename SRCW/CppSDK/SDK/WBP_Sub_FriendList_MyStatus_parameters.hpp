@@ -50,29 +50,7 @@ public:
 	uint8                                         Pad_161[0x3];                                      // 0x0161(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0164(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus) == 0x000008, "Wrong alignment on WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus");
-static_assert(sizeof(WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus) == 0x000168, "Wrong size on WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus");
-static_assert(offsetof(WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus, EntryPoint) == 0x000000, "Member 'WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus, Temp_bool_Variable) == 0x000004, "Member 'WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus, Temp_byte_Variable) == 0x000005, "Member 'WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus, Temp_byte_Variable_1) == 0x000006, "Member 'WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus, K2Node_CustomEvent_InIconTexture) == 0x000008, "Member 'WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus::K2Node_CustomEvent_InIconTexture' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus, K2Node_CustomEvent_InBgColor) == 0x000030, "Member 'WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus::K2Node_CustomEvent_InBgColor' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus, K2Node_CustomEvent_InText) == 0x000040, "Member 'WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus::K2Node_CustomEvent_InText' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus, K2Node_CustomEvent_InPlayerId) == 0x000050, "Member 'WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus::K2Node_CustomEvent_InPlayerId' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus, CallFunc_ConvertPlayerIdStringForDisplay_OutPlayerIdForDisplay) == 0x000060, "Member 'WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus::CallFunc_ConvertPlayerIdStringForDisplay_OutPlayerIdForDisplay' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus, K2Node_CustomEvent_InPlatformType) == 0x000070, "Member 'WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus::K2Node_CustomEvent_InPlatformType' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus, CallFunc_Conv_StringToText_ReturnValue) == 0x000078, "Member 'WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus, CallFunc_Conv_ByteToDouble_ReturnValue) == 0x000088, "Member 'WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus::CallFunc_Conv_ByteToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus, K2Node_MakeStruct_FormatArgumentData) == 0x000090, "Member 'WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus, CallFunc_MakeLiteralText_ReturnValue) == 0x0000D8, "Member 'WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus, CallFunc_GetDynamicMaterial_ReturnValue) == 0x0000E8, "Member 'WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus, K2Node_MakeStruct_FormatArgumentData_1) == 0x0000F0, "Member 'WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus, K2Node_MakeArray_Array) == 0x000138, "Member 'WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus, K2Node_CustomEvent_bInVisible) == 0x000148, "Member 'WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus::K2Node_CustomEvent_bInVisible' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus, CallFunc_Format_ReturnValue) == 0x000150, "Member 'WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus, K2Node_Select_Default) == 0x000160, "Member 'WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000164, "Member 'WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Sub_FriendList_MyStatus_C_ExecuteUbergraph_WBP_Sub_FriendList_MyStatus;
 
 // Function WBP_Sub_FriendList_MyStatus.WBP_Sub_FriendList_MyStatus_C.SetPlatformIcon
 // 0x0001 (0x0001 - 0x0000)
@@ -81,9 +59,7 @@ struct WBP_Sub_FriendList_MyStatus_C_SetPlatformIcon final
 public:
 	ECrossplayPlatform                            InPlatformType;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Sub_FriendList_MyStatus_C_SetPlatformIcon) == 0x000001, "Wrong alignment on WBP_Sub_FriendList_MyStatus_C_SetPlatformIcon");
-static_assert(sizeof(WBP_Sub_FriendList_MyStatus_C_SetPlatformIcon) == 0x000001, "Wrong size on WBP_Sub_FriendList_MyStatus_C_SetPlatformIcon");
-static_assert(offsetof(WBP_Sub_FriendList_MyStatus_C_SetPlatformIcon, InPlatformType) == 0x000000, "Member 'WBP_Sub_FriendList_MyStatus_C_SetPlatformIcon::InPlatformType' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Sub_FriendList_MyStatus_C_SetPlatformIcon;
 
 // Function WBP_Sub_FriendList_MyStatus.WBP_Sub_FriendList_MyStatus_C.SetPlayerIcon
 // 0x0038 (0x0038 - 0x0000)
@@ -93,10 +69,7 @@ public:
 	TSoftObjectPtr<class UTexture2D>              InIconTexture;                                     // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FLinearColor                           InBgColor;                                         // 0x0028(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Sub_FriendList_MyStatus_C_SetPlayerIcon) == 0x000008, "Wrong alignment on WBP_Sub_FriendList_MyStatus_C_SetPlayerIcon");
-static_assert(sizeof(WBP_Sub_FriendList_MyStatus_C_SetPlayerIcon) == 0x000038, "Wrong size on WBP_Sub_FriendList_MyStatus_C_SetPlayerIcon");
-static_assert(offsetof(WBP_Sub_FriendList_MyStatus_C_SetPlayerIcon, InIconTexture) == 0x000000, "Member 'WBP_Sub_FriendList_MyStatus_C_SetPlayerIcon::InIconTexture' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_FriendList_MyStatus_C_SetPlayerIcon, InBgColor) == 0x000028, "Member 'WBP_Sub_FriendList_MyStatus_C_SetPlayerIcon::InBgColor' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Sub_FriendList_MyStatus_C_SetPlayerIcon;
 
 // Function WBP_Sub_FriendList_MyStatus.WBP_Sub_FriendList_MyStatus_C.SetPlayerIconVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -105,9 +78,7 @@ struct WBP_Sub_FriendList_MyStatus_C_SetPlayerIconVisible final
 public:
 	bool                                          bInVisible;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Sub_FriendList_MyStatus_C_SetPlayerIconVisible) == 0x000001, "Wrong alignment on WBP_Sub_FriendList_MyStatus_C_SetPlayerIconVisible");
-static_assert(sizeof(WBP_Sub_FriendList_MyStatus_C_SetPlayerIconVisible) == 0x000001, "Wrong size on WBP_Sub_FriendList_MyStatus_C_SetPlayerIconVisible");
-static_assert(offsetof(WBP_Sub_FriendList_MyStatus_C_SetPlayerIconVisible, bInVisible) == 0x000000, "Member 'WBP_Sub_FriendList_MyStatus_C_SetPlayerIconVisible::bInVisible' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Sub_FriendList_MyStatus_C_SetPlayerIconVisible;
 
 // Function WBP_Sub_FriendList_MyStatus.WBP_Sub_FriendList_MyStatus_C.SetPlayerIdText
 // 0x0010 (0x0010 - 0x0000)
@@ -116,9 +87,7 @@ struct WBP_Sub_FriendList_MyStatus_C_SetPlayerIdText final
 public:
 	class FString                                 InPlayerId;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Sub_FriendList_MyStatus_C_SetPlayerIdText) == 0x000008, "Wrong alignment on WBP_Sub_FriendList_MyStatus_C_SetPlayerIdText");
-static_assert(sizeof(WBP_Sub_FriendList_MyStatus_C_SetPlayerIdText) == 0x000010, "Wrong size on WBP_Sub_FriendList_MyStatus_C_SetPlayerIdText");
-static_assert(offsetof(WBP_Sub_FriendList_MyStatus_C_SetPlayerIdText, InPlayerId) == 0x000000, "Member 'WBP_Sub_FriendList_MyStatus_C_SetPlayerIdText::InPlayerId' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Sub_FriendList_MyStatus_C_SetPlayerIdText;
 
 // Function WBP_Sub_FriendList_MyStatus.WBP_Sub_FriendList_MyStatus_C.SetPlayerNameText
 // 0x0010 (0x0010 - 0x0000)
@@ -127,9 +96,7 @@ struct WBP_Sub_FriendList_MyStatus_C_SetPlayerNameText final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_Sub_FriendList_MyStatus_C_SetPlayerNameText) == 0x000008, "Wrong alignment on WBP_Sub_FriendList_MyStatus_C_SetPlayerNameText");
-static_assert(sizeof(WBP_Sub_FriendList_MyStatus_C_SetPlayerNameText) == 0x000010, "Wrong size on WBP_Sub_FriendList_MyStatus_C_SetPlayerNameText");
-static_assert(offsetof(WBP_Sub_FriendList_MyStatus_C_SetPlayerNameText, InText) == 0x000000, "Member 'WBP_Sub_FriendList_MyStatus_C_SetPlayerNameText::InText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Sub_FriendList_MyStatus_C_SetPlayerNameText;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -41,20 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_StatusInfo_Sub_RankingTable_C">();
+		BP_STATIC_CLASS_IMPL("WBP_StatusInfo_Sub_RankingTable_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_StatusInfo_Sub_RankingTable_C")
 	}
 	static class UWBP_StatusInfo_Sub_RankingTable_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_StatusInfo_Sub_RankingTable_C>();
 	}
 };
-static_assert(alignof(UWBP_StatusInfo_Sub_RankingTable_C) == 0x000008, "Wrong alignment on UWBP_StatusInfo_Sub_RankingTable_C");
-static_assert(sizeof(UWBP_StatusInfo_Sub_RankingTable_C) == 0x000568, "Wrong size on UWBP_StatusInfo_Sub_RankingTable_C");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RankingTable_C, UberGraphFrame) == 0x000540, "Member 'UWBP_StatusInfo_Sub_RankingTable_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RankingTable_C, base) == 0x000548, "Member 'UWBP_StatusInfo_Sub_RankingTable_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RankingTable_C, Base_Cursor) == 0x000550, "Member 'UWBP_StatusInfo_Sub_RankingTable_C::Base_Cursor' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RankingTable_C, Empty) == 0x000558, "Member 'UWBP_StatusInfo_Sub_RankingTable_C::Empty' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RankingTable_C, MouseInteraction) == 0x000560, "Member 'UWBP_StatusInfo_Sub_RankingTable_C::MouseInteraction' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_StatusInfo_Sub_RankingTable_C;
 
 }
 

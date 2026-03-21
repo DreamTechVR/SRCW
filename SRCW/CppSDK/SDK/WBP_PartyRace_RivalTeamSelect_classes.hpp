@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "UNION_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UNION_classes.hpp"
 
 
 namespace SDK
@@ -80,45 +80,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_PartyRace_RivalTeamSelect_C">();
+		BP_STATIC_CLASS_IMPL("WBP_PartyRace_RivalTeamSelect_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_PartyRace_RivalTeamSelect_C")
 	}
 	static class UWBP_PartyRace_RivalTeamSelect_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_PartyRace_RivalTeamSelect_C>();
 	}
 };
-static_assert(alignof(UWBP_PartyRace_RivalTeamSelect_C) == 0x000008, "Wrong alignment on UWBP_PartyRace_RivalTeamSelect_C");
-static_assert(sizeof(UWBP_PartyRace_RivalTeamSelect_C) == 0x0005D8, "Wrong size on UWBP_PartyRace_RivalTeamSelect_C");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_C, UberGraphFrame) == 0x0004D0, "Member 'UWBP_PartyRace_RivalTeamSelect_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_C, Out) == 0x0004D8, "Member 'UWBP_PartyRace_RivalTeamSelect_C::Out' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_C, Loop) == 0x0004E0, "Member 'UWBP_PartyRace_RivalTeamSelect_C::Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_C, In) == 0x0004E8, "Member 'UWBP_PartyRace_RivalTeamSelect_C::In' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_C, Button_Level_Down) == 0x0004F0, "Member 'UWBP_PartyRace_RivalTeamSelect_C::Button_Level_Down' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_C, Button_Level_Up) == 0x0004F8, "Member 'UWBP_PartyRace_RivalTeamSelect_C::Button_Level_Up' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_C, DSP_Overlay_Info) == 0x000500, "Member 'UWBP_PartyRace_RivalTeamSelect_C::DSP_Overlay_Info' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_C, Loading_Anim) == 0x000508, "Member 'UWBP_PartyRace_RivalTeamSelect_C::Loading_Anim' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_C, Loading_Anim_1) == 0x000510, "Member 'UWBP_PartyRace_RivalTeamSelect_C::Loading_Anim_1' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_C, Loading_Anim_2) == 0x000518, "Member 'UWBP_PartyRace_RivalTeamSelect_C::Loading_Anim_2' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_C, Plate_Info) == 0x000520, "Member 'UWBP_PartyRace_RivalTeamSelect_C::Plate_Info' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_C, Plate_RivalLevel) == 0x000528, "Member 'UWBP_PartyRace_RivalTeamSelect_C::Plate_RivalLevel' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_C, WBP_CMN_ControllerBtn_L) == 0x000530, "Member 'UWBP_PartyRace_RivalTeamSelect_C::WBP_CMN_ControllerBtn_L' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_C, WBP_CMN_ControllerBtn_R) == 0x000538, "Member 'UWBP_PartyRace_RivalTeamSelect_C::WBP_CMN_ControllerBtn_R' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_C, WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate) == 0x000540, "Member 'UWBP_PartyRace_RivalTeamSelect_C::WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_C, WBP_PartyRace_Sub_RivalTeamIcon_01) == 0x000548, "Member 'UWBP_PartyRace_RivalTeamSelect_C::WBP_PartyRace_Sub_RivalTeamIcon_01' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_C, WBP_PartyRace_Sub_RivalTeamIcon_02) == 0x000550, "Member 'UWBP_PartyRace_RivalTeamSelect_C::WBP_PartyRace_Sub_RivalTeamIcon_02' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_C, WBP_PartyRace_Sub_RivalTeamIcon_03) == 0x000558, "Member 'UWBP_PartyRace_RivalTeamSelect_C::WBP_PartyRace_Sub_RivalTeamIcon_03' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_C, WBP_PartyRace_Sub_RivalTeamIcon_04) == 0x000560, "Member 'UWBP_PartyRace_RivalTeamSelect_C::WBP_PartyRace_Sub_RivalTeamIcon_04' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_C, WBP_PartyRace_Sub_RivalTeamIcon_05) == 0x000568, "Member 'UWBP_PartyRace_RivalTeamSelect_C::WBP_PartyRace_Sub_RivalTeamIcon_05' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_C, WBP_PartyRace_Sub_RivalTeamIcon_06) == 0x000570, "Member 'UWBP_PartyRace_RivalTeamSelect_C::WBP_PartyRace_Sub_RivalTeamIcon_06' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_C, WBP_PartyRace_Sub_RivalTeamIcon_07) == 0x000578, "Member 'UWBP_PartyRace_RivalTeamSelect_C::WBP_PartyRace_Sub_RivalTeamIcon_07' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_C, WBP_PartyRace_Sub_RivalTeamIcon_08) == 0x000580, "Member 'UWBP_PartyRace_RivalTeamSelect_C::WBP_PartyRace_Sub_RivalTeamIcon_08' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_C, LastSelectTeamID) == 0x000588, "Member 'UWBP_PartyRace_RivalTeamSelect_C::LastSelectTeamID' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_C, FixAdjustLevelEvent) == 0x000590, "Member 'UWBP_PartyRace_RivalTeamSelect_C::FixAdjustLevelEvent' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_C, bIsPlayFirstFireInAnim) == 0x0005A0, "Member 'UWBP_PartyRace_RivalTeamSelect_C::bIsPlayFirstFireInAnim' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_C, TipsWindow) == 0x0005A8, "Member 'UWBP_PartyRace_RivalTeamSelect_C::TipsWindow' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_C, LastRegisterdSubMenus) == 0x0005B0, "Member 'UWBP_PartyRace_RivalTeamSelect_C::LastRegisterdSubMenus' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_C, WBP_Party_Race_Sub_Rival_Team_Icons) == 0x0005C0, "Member 'UWBP_PartyRace_RivalTeamSelect_C::WBP_Party_Race_Sub_Rival_Team_Icons' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_C, LatestFocusedButton) == 0x0005D0, "Member 'UWBP_PartyRace_RivalTeamSelect_C::LatestFocusedButton' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_PartyRace_RivalTeamSelect_C;
 
 }
 

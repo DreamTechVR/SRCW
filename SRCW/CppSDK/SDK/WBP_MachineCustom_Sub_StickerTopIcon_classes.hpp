@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "UNION_classes.hpp"
 
 
 namespace SDK
@@ -49,23 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MachineCustom_Sub_StickerTopIcon_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MachineCustom_Sub_StickerTopIcon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MachineCustom_Sub_StickerTopIcon_C")
 	}
 	static class UWBP_MachineCustom_Sub_StickerTopIcon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MachineCustom_Sub_StickerTopIcon_C>();
 	}
 };
-static_assert(alignof(UWBP_MachineCustom_Sub_StickerTopIcon_C) == 0x000008, "Wrong alignment on UWBP_MachineCustom_Sub_StickerTopIcon_C");
-static_assert(sizeof(UWBP_MachineCustom_Sub_StickerTopIcon_C) == 0x000558, "Wrong size on UWBP_MachineCustom_Sub_StickerTopIcon_C");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerTopIcon_C, UberGraphFrame) == 0x000510, "Member 'UWBP_MachineCustom_Sub_StickerTopIcon_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerTopIcon_C, BG) == 0x000518, "Member 'UWBP_MachineCustom_Sub_StickerTopIcon_C::BG' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerTopIcon_C, Border_0) == 0x000520, "Member 'UWBP_MachineCustom_Sub_StickerTopIcon_C::Border_0' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerTopIcon_C, DSP_EX_Icon) == 0x000528, "Member 'UWBP_MachineCustom_Sub_StickerTopIcon_C::DSP_EX_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerTopIcon_C, DSP_PlusMark) == 0x000530, "Member 'UWBP_MachineCustom_Sub_StickerTopIcon_C::DSP_PlusMark' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerTopIcon_C, TXT_MaterialName) == 0x000538, "Member 'UWBP_MachineCustom_Sub_StickerTopIcon_C::TXT_MaterialName' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerTopIcon_C, SetColorIndex) == 0x000540, "Member 'UWBP_MachineCustom_Sub_StickerTopIcon_C::SetColorIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerTopIcon_C, BaseColorOnDefault) == 0x000544, "Member 'UWBP_MachineCustom_Sub_StickerTopIcon_C::BaseColorOnDefault' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MachineCustom_Sub_StickerTopIcon_C;
 
 }
 

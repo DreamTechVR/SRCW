@@ -38,23 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_TopMenu_Btnmode_Sub_Offine_TimeAttack_C">();
+		BP_STATIC_CLASS_IMPL("WBP_TopMenu_Btnmode_Sub_Offine_TimeAttack_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_TopMenu_Btnmode_Sub_Offine_TimeAttack_C")
 	}
 	static class UWBP_TopMenu_Btnmode_Sub_Offine_TimeAttack_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_TopMenu_Btnmode_Sub_Offine_TimeAttack_C>();
 	}
 };
-static_assert(alignof(UWBP_TopMenu_Btnmode_Sub_Offine_TimeAttack_C) == 0x000008, "Wrong alignment on UWBP_TopMenu_Btnmode_Sub_Offine_TimeAttack_C");
-static_assert(sizeof(UWBP_TopMenu_Btnmode_Sub_Offine_TimeAttack_C) == 0x000320, "Wrong size on UWBP_TopMenu_Btnmode_Sub_Offine_TimeAttack_C");
-static_assert(offsetof(UWBP_TopMenu_Btnmode_Sub_Offine_TimeAttack_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_TopMenu_Btnmode_Sub_Offine_TimeAttack_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Btnmode_Sub_Offine_TimeAttack_C, Btn_Loop) == 0x0002E8, "Member 'UWBP_TopMenu_Btnmode_Sub_Offine_TimeAttack_C::Btn_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Btnmode_Sub_Offine_TimeAttack_C, Base_Normal) == 0x0002F0, "Member 'UWBP_TopMenu_Btnmode_Sub_Offine_TimeAttack_C::Base_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Btnmode_Sub_Offine_TimeAttack_C, Btn_image) == 0x0002F8, "Member 'UWBP_TopMenu_Btnmode_Sub_Offine_TimeAttack_C::Btn_image' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Btnmode_Sub_Offine_TimeAttack_C, Icon_Normal) == 0x000300, "Member 'UWBP_TopMenu_Btnmode_Sub_Offine_TimeAttack_C::Icon_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Btnmode_Sub_Offine_TimeAttack_C, TXT_Num_Count_Normal) == 0x000308, "Member 'UWBP_TopMenu_Btnmode_Sub_Offine_TimeAttack_C::TXT_Num_Count_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Btnmode_Sub_Offine_TimeAttack_C, TXT_Num_Medal_Count_Normal) == 0x000310, "Member 'UWBP_TopMenu_Btnmode_Sub_Offine_TimeAttack_C::TXT_Num_Medal_Count_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Btnmode_Sub_Offine_TimeAttack_C, TotalMedalCount) == 0x000318, "Member 'UWBP_TopMenu_Btnmode_Sub_Offine_TimeAttack_C::TotalMedalCount' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_TopMenu_Btnmode_Sub_Offine_TimeAttack_C;
 
 }
 

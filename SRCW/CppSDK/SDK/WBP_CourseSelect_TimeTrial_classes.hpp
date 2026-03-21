@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "UnionSystem_structs.hpp"
 #include "UNION_classes.hpp"
+#include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -136,84 +136,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CourseSelect_TimeTrial_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CourseSelect_TimeTrial_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CourseSelect_TimeTrial_C")
 	}
 	static class UWBP_CourseSelect_TimeTrial_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CourseSelect_TimeTrial_C>();
 	}
 };
-static_assert(alignof(UWBP_CourseSelect_TimeTrial_C) == 0x000008, "Wrong alignment on UWBP_CourseSelect_TimeTrial_C");
-static_assert(sizeof(UWBP_CourseSelect_TimeTrial_C) == 0x000820, "Wrong size on UWBP_CourseSelect_TimeTrial_C");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, UberGraphFrame) == 0x0004D8, "Member 'UWBP_CourseSelect_TimeTrial_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, Out) == 0x0004E0, "Member 'UWBP_CourseSelect_TimeTrial_C::Out' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, Loop) == 0x0004E8, "Member 'UWBP_CourseSelect_TimeTrial_C::Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, In) == 0x0004F0, "Member 'UWBP_CourseSelect_TimeTrial_C::In' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, base) == 0x0004F8, "Member 'UWBP_CourseSelect_TimeTrial_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, Black) == 0x000500, "Member 'UWBP_CourseSelect_TimeTrial_C::Black' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, BlackBase) == 0x000508, "Member 'UWBP_CourseSelect_TimeTrial_C::BlackBase' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, ClassSelectMouseButton) == 0x000510, "Member 'UWBP_CourseSelect_TimeTrial_C::ClassSelectMouseButton' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, ConnectLine) == 0x000518, "Member 'UWBP_CourseSelect_TimeTrial_C::ConnectLine' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, DSP_BackgroundBlur) == 0x000520, "Member 'UWBP_CourseSelect_TimeTrial_C::DSP_BackgroundBlur' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, DSP_Overlay_BG) == 0x000528, "Member 'UWBP_CourseSelect_TimeTrial_C::DSP_Overlay_BG' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, DSP_TimeTrial_TmbArrow) == 0x000530, "Member 'UWBP_CourseSelect_TimeTrial_C::DSP_TimeTrial_TmbArrow' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, DSP_TimeTrial_TmbBase) == 0x000538, "Member 'UWBP_CourseSelect_TimeTrial_C::DSP_TimeTrial_TmbBase' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, DSP_WBP_CMN_TextBalloon_10) == 0x000540, "Member 'UWBP_CourseSelect_TimeTrial_C::DSP_WBP_CMN_TextBalloon_10' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, DSP_WBP_CMN_TextBalloon_01) == 0x000548, "Member 'UWBP_CourseSelect_TimeTrial_C::DSP_WBP_CMN_TextBalloon_01' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, DSP_WBP_CMN_TextBalloon_02) == 0x000550, "Member 'UWBP_CourseSelect_TimeTrial_C::DSP_WBP_CMN_TextBalloon_02' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, DSP_WBP_CMN_TextBalloon_03) == 0x000558, "Member 'UWBP_CourseSelect_TimeTrial_C::DSP_WBP_CMN_TextBalloon_03' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, DSP_WBP_CMN_TextBalloon_04) == 0x000560, "Member 'UWBP_CourseSelect_TimeTrial_C::DSP_WBP_CMN_TextBalloon_04' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, DSP_WBP_CMN_TextBalloon_05) == 0x000568, "Member 'UWBP_CourseSelect_TimeTrial_C::DSP_WBP_CMN_TextBalloon_05' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, DSP_WBP_CMN_TextBalloon_06) == 0x000570, "Member 'UWBP_CourseSelect_TimeTrial_C::DSP_WBP_CMN_TextBalloon_06' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, DSP_WBP_CMN_TextBalloon_07) == 0x000578, "Member 'UWBP_CourseSelect_TimeTrial_C::DSP_WBP_CMN_TextBalloon_07' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, DSP_WBP_CMN_TextBalloon_08) == 0x000580, "Member 'UWBP_CourseSelect_TimeTrial_C::DSP_WBP_CMN_TextBalloon_08' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, DSP_WBP_CMN_TextBalloon_09) == 0x000588, "Member 'UWBP_CourseSelect_TimeTrial_C::DSP_WBP_CMN_TextBalloon_09' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, DSP_WBP_CMN_TextBalloon_CrossWorlds) == 0x000590, "Member 'UWBP_CourseSelect_TimeTrial_C::DSP_WBP_CMN_TextBalloon_CrossWorlds' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, Image) == 0x000598, "Member 'UWBP_CourseSelect_TimeTrial_C::Image' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, Image_1) == 0x0005A0, "Member 'UWBP_CourseSelect_TimeTrial_C::Image_1' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, Image_2) == 0x0005A8, "Member 'UWBP_CourseSelect_TimeTrial_C::Image_2' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, Image_87) == 0x0005B0, "Member 'UWBP_CourseSelect_TimeTrial_C::Image_87' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, MusicParts_01) == 0x0005B8, "Member 'UWBP_CourseSelect_TimeTrial_C::MusicParts_01' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, MusicParts_02) == 0x0005C0, "Member 'UWBP_CourseSelect_TimeTrial_C::MusicParts_02' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, MusicParts_03) == 0x0005C8, "Member 'UWBP_CourseSelect_TimeTrial_C::MusicParts_03' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, MusicParts_StaffNotation) == 0x0005D0, "Member 'UWBP_CourseSelect_TimeTrial_C::MusicParts_StaffNotation' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, MusicParts_StaffNotation_1) == 0x0005D8, "Member 'UWBP_CourseSelect_TimeTrial_C::MusicParts_StaffNotation_1' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, Outline) == 0x0005E0, "Member 'UWBP_CourseSelect_TimeTrial_C::Outline' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, Overlay_ClassBtn) == 0x0005E8, "Member 'UWBP_CourseSelect_TimeTrial_C::Overlay_ClassBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, RivalRewardPanel) == 0x0005F0, "Member 'UWBP_CourseSelect_TimeTrial_C::RivalRewardPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, SafeZone_CourseSelect) == 0x0005F8, "Member 'UWBP_CourseSelect_TimeTrial_C::SafeZone_CourseSelect' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, ThumbnailLeftMouseButton) == 0x000600, "Member 'UWBP_CourseSelect_TimeTrial_C::ThumbnailLeftMouseButton' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, ThumbnailRightMouseButton) == 0x000608, "Member 'UWBP_CourseSelect_TimeTrial_C::ThumbnailRightMouseButton' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, WBP_CMN_ControllerBtn) == 0x000610, "Member 'UWBP_CourseSelect_TimeTrial_C::WBP_CMN_ControllerBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, WBP_CMN_Sub_GadgetCustom) == 0x000618, "Member 'UWBP_CourseSelect_TimeTrial_C::WBP_CMN_Sub_GadgetCustom' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, WBP_CMN_Sub_RivalReward) == 0x000620, "Member 'UWBP_CourseSelect_TimeTrial_C::WBP_CMN_Sub_RivalReward' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, WBP_CMN_Sub_SpeedClassInfo) == 0x000628, "Member 'UWBP_CourseSelect_TimeTrial_C::WBP_CMN_Sub_SpeedClassInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, WBP_CourseSelect_Sub_CourseIcon_10) == 0x000630, "Member 'UWBP_CourseSelect_TimeTrial_C::WBP_CourseSelect_Sub_CourseIcon_10' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, WBP_CourseSelect_Sub_CourseIcon_01) == 0x000638, "Member 'UWBP_CourseSelect_TimeTrial_C::WBP_CourseSelect_Sub_CourseIcon_01' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, WBP_CourseSelect_Sub_CourseIcon_02) == 0x000640, "Member 'UWBP_CourseSelect_TimeTrial_C::WBP_CourseSelect_Sub_CourseIcon_02' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, WBP_CourseSelect_Sub_CourseIcon_03) == 0x000648, "Member 'UWBP_CourseSelect_TimeTrial_C::WBP_CourseSelect_Sub_CourseIcon_03' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, WBP_CourseSelect_Sub_CourseIcon_04) == 0x000650, "Member 'UWBP_CourseSelect_TimeTrial_C::WBP_CourseSelect_Sub_CourseIcon_04' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, WBP_CourseSelect_Sub_CourseIcon_05) == 0x000658, "Member 'UWBP_CourseSelect_TimeTrial_C::WBP_CourseSelect_Sub_CourseIcon_05' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, WBP_CourseSelect_Sub_CourseIcon_06) == 0x000660, "Member 'UWBP_CourseSelect_TimeTrial_C::WBP_CourseSelect_Sub_CourseIcon_06' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, WBP_CourseSelect_Sub_CourseIcon_07) == 0x000668, "Member 'UWBP_CourseSelect_TimeTrial_C::WBP_CourseSelect_Sub_CourseIcon_07' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, WBP_CourseSelect_Sub_CourseIcon_08) == 0x000670, "Member 'UWBP_CourseSelect_TimeTrial_C::WBP_CourseSelect_Sub_CourseIcon_08' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, WBP_CourseSelect_Sub_CourseIcon_09) == 0x000678, "Member 'UWBP_CourseSelect_TimeTrial_C::WBP_CourseSelect_Sub_CourseIcon_09' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, WBP_CourseSelect_Sub_CrossWorld) == 0x000680, "Member 'UWBP_CourseSelect_TimeTrial_C::WBP_CourseSelect_Sub_CrossWorld' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, WBP_CourseSelect_Sub_ThumbnailSelecter) == 0x000688, "Member 'UWBP_CourseSelect_TimeTrial_C::WBP_CourseSelect_Sub_ThumbnailSelecter' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, WBP_TimeTrial_BG) == 0x000690, "Member 'UWBP_CourseSelect_TimeTrial_C::WBP_TimeTrial_BG' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, LastFocusGrandprixButton) == 0x000698, "Member 'UWBP_CourseSelect_TimeTrial_C::LastFocusGrandprixButton' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, StageIdThumbnailImageMap) == 0x0006A0, "Member 'UWBP_CourseSelect_TimeTrial_C::StageIdThumbnailImageMap' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, StageIdIndex) == 0x0006F0, "Member 'UWBP_CourseSelect_TimeTrial_C::StageIdIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, bRandoming) == 0x0006F4, "Member 'UWBP_CourseSelect_TimeTrial_C::bRandoming' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, SubInputReceiver) == 0x0006F8, "Member 'UWBP_CourseSelect_TimeTrial_C::SubInputReceiver' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, GrandPrixSetting) == 0x000700, "Member 'UWBP_CourseSelect_TimeTrial_C::GrandPrixSetting' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, FirstStageId) == 0x000750, "Member 'UWBP_CourseSelect_TimeTrial_C::FirstStageId' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, CurrentThreshold) == 0x000758, "Member 'UWBP_CourseSelect_TimeTrial_C::CurrentThreshold' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, GrandPrixIdAndTextMap) == 0x000760, "Member 'UWBP_CourseSelect_TimeTrial_C::GrandPrixIdAndTextMap' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, CurrentSpeedClass) == 0x0007B0, "Member 'UWBP_CourseSelect_TimeTrial_C::CurrentSpeedClass' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, ClearRankIDs) == 0x0007B8, "Member 'UWBP_CourseSelect_TimeTrial_C::ClearRankIDs' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, StageVersionMap) == 0x0007C8, "Member 'UWBP_CourseSelect_TimeTrial_C::StageVersionMap' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, IsCanceling) == 0x000818, "Member 'UWBP_CourseSelect_TimeTrial_C::IsCanceling' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CourseSelect_TimeTrial_C;
 
 }
 

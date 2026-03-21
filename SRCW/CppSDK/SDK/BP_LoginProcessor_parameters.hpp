@@ -32,15 +32,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_LoginProcessor_C_CreateConnectingWindow) == 0x000008, "Wrong alignment on BP_LoginProcessor_C_CreateConnectingWindow");
-static_assert(sizeof(BP_LoginProcessor_C_CreateConnectingWindow) == 0x000040, "Wrong size on BP_LoginProcessor_C_CreateConnectingWindow");
-static_assert(offsetof(BP_LoginProcessor_C_CreateConnectingWindow, CallFunc_MakeLiteralByte_ReturnValue) == 0x000000, "Member 'BP_LoginProcessor_C_CreateConnectingWindow::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_LoginProcessor_C_CreateConnectingWindow, K2Node_MakeArray_Array) == 0x000008, "Member 'BP_LoginProcessor_C_CreateConnectingWindow::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_LoginProcessor_C_CreateConnectingWindow, CallFunc_Format_ReturnValue) == 0x000018, "Member 'BP_LoginProcessor_C_CreateConnectingWindow::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_LoginProcessor_C_CreateConnectingWindow, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000028, "Member 'BP_LoginProcessor_C_CreateConnectingWindow::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_LoginProcessor_C_CreateConnectingWindow, CallFunc_Create_ReturnValue) == 0x000030, "Member 'BP_LoginProcessor_C_CreateConnectingWindow::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_LoginProcessor_C_CreateConnectingWindow, CallFunc_IsValid_ReturnValue) == 0x000038, "Member 'BP_LoginProcessor_C_CreateConnectingWindow::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_LoginProcessor_C_CreateConnectingWindow, CallFunc_IsValid_ReturnValue_1) == 0x000039, "Member 'BP_LoginProcessor_C_CreateConnectingWindow::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_LoginProcessor_C_CreateConnectingWindow;
 
 // Function BP_LoginProcessor.BP_LoginProcessor_C.DestroyConnectingWindow
 // 0x0001 (0x0001 - 0x0000)
@@ -49,9 +41,7 @@ struct BP_LoginProcessor_C_DestroyConnectingWindow final
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_LoginProcessor_C_DestroyConnectingWindow) == 0x000001, "Wrong alignment on BP_LoginProcessor_C_DestroyConnectingWindow");
-static_assert(sizeof(BP_LoginProcessor_C_DestroyConnectingWindow) == 0x000001, "Wrong size on BP_LoginProcessor_C_DestroyConnectingWindow");
-static_assert(offsetof(BP_LoginProcessor_C_DestroyConnectingWindow, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'BP_LoginProcessor_C_DestroyConnectingWindow::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_LoginProcessor_C_DestroyConnectingWindow;
 
 // Function BP_LoginProcessor.BP_LoginProcessor_C.ExecuteUbergraph_BP_LoginProcessor
 // 0x01C0 (0x01C0 - 0x0000)
@@ -77,25 +67,7 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x01A0(0x0010)()
 	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x01B0(0x0010)()
 };
-static_assert(alignof(BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor) == 0x000008, "Wrong alignment on BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor");
-static_assert(sizeof(BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor) == 0x0001C0, "Wrong size on BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor");
-static_assert(offsetof(BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor, EntryPoint) == 0x000000, "Member 'BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor, K2Node_Event_DeltaSeconds) == 0x000004, "Member 'BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor, K2Node_Event_EndPlayReason) == 0x000008, "Member 'BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor::K2Node_Event_EndPlayReason' has a wrong offset!");
-static_assert(offsetof(BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor, K2Node_Event_FromDateTime) == 0x000010, "Member 'BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor::K2Node_Event_FromDateTime' has a wrong offset!");
-static_assert(offsetof(BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor, K2Node_Event_ToDateTime) == 0x000018, "Member 'BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor::K2Node_Event_ToDateTime' has a wrong offset!");
-static_assert(offsetof(BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor, CallFunc_MakeLiteralText_ReturnValue) == 0x000020, "Member 'BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor, CallFunc_MakeDateTimeText_ReturnValue) == 0x000030, "Member 'BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor::CallFunc_MakeDateTimeText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor, CallFunc_MakeDateTimeText_ReturnValue_1) == 0x000040, "Member 'BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor::CallFunc_MakeDateTimeText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor, K2Node_MakeStruct_FormatArgumentData) == 0x000050, "Member 'BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor, K2Node_MakeStruct_FormatArgumentData_1) == 0x000098, "Member 'BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor, K2Node_MakeStruct_FormatArgumentData_2) == 0x0000E0, "Member 'BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor, K2Node_MakeArray_Array) == 0x000128, "Member 'BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor, K2Node_MakeStruct_FormatArgumentData_3) == 0x000138, "Member 'BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor::K2Node_MakeStruct_FormatArgumentData_3' has a wrong offset!");
-static_assert(offsetof(BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor, CallFunc_MakeLiteralText_ReturnValue_1) == 0x000180, "Member 'BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor, K2Node_MakeArray_Array_1) == 0x000190, "Member 'BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor, CallFunc_Format_ReturnValue) == 0x0001A0, "Member 'BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor, CallFunc_Format_ReturnValue_1) == 0x0001B0, "Member 'BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor::CallFunc_Format_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_LoginProcessor_C_ExecuteUbergraph_BP_LoginProcessor;
 
 // Function BP_LoginProcessor.BP_LoginProcessor_C.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -104,9 +76,7 @@ struct BP_LoginProcessor_C_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_LoginProcessor_C_ReceiveEndPlay) == 0x000001, "Wrong alignment on BP_LoginProcessor_C_ReceiveEndPlay");
-static_assert(sizeof(BP_LoginProcessor_C_ReceiveEndPlay) == 0x000001, "Wrong size on BP_LoginProcessor_C_ReceiveEndPlay");
-static_assert(offsetof(BP_LoginProcessor_C_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'BP_LoginProcessor_C_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_BP_LoginProcessor_C_ReceiveEndPlay;
 
 // Function BP_LoginProcessor.BP_LoginProcessor_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -115,9 +85,7 @@ struct BP_LoginProcessor_C_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_LoginProcessor_C_ReceiveTick) == 0x000004, "Wrong alignment on BP_LoginProcessor_C_ReceiveTick");
-static_assert(sizeof(BP_LoginProcessor_C_ReceiveTick) == 0x000004, "Wrong size on BP_LoginProcessor_C_ReceiveTick");
-static_assert(offsetof(BP_LoginProcessor_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'BP_LoginProcessor_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_BP_LoginProcessor_C_ReceiveTick;
 
 // Function BP_LoginProcessor.BP_LoginProcessor_C.SetupWarningText
 // 0x0010 (0x0010 - 0x0000)
@@ -127,10 +95,7 @@ public:
 	struct FDateTime                              FromDateTime;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FDateTime                              ToDateTime;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_LoginProcessor_C_SetupWarningText) == 0x000008, "Wrong alignment on BP_LoginProcessor_C_SetupWarningText");
-static_assert(sizeof(BP_LoginProcessor_C_SetupWarningText) == 0x000010, "Wrong size on BP_LoginProcessor_C_SetupWarningText");
-static_assert(offsetof(BP_LoginProcessor_C_SetupWarningText, FromDateTime) == 0x000000, "Member 'BP_LoginProcessor_C_SetupWarningText::FromDateTime' has a wrong offset!");
-static_assert(offsetof(BP_LoginProcessor_C_SetupWarningText, ToDateTime) == 0x000008, "Member 'BP_LoginProcessor_C_SetupWarningText::ToDateTime' has a wrong offset!");
+DUMPER7_ASSERTS_BP_LoginProcessor_C_SetupWarningText;
 
 // Function BP_LoginProcessor.BP_LoginProcessor_C.UserConstructionScript
 // 0x0020 (0x0020 - 0x0000)
@@ -140,10 +105,7 @@ public:
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0000(0x0010)()
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue_1;            // 0x0010(0x0010)()
 };
-static_assert(alignof(BP_LoginProcessor_C_UserConstructionScript) == 0x000008, "Wrong alignment on BP_LoginProcessor_C_UserConstructionScript");
-static_assert(sizeof(BP_LoginProcessor_C_UserConstructionScript) == 0x000020, "Wrong size on BP_LoginProcessor_C_UserConstructionScript");
-static_assert(offsetof(BP_LoginProcessor_C_UserConstructionScript, CallFunc_MakeLiteralText_ReturnValue) == 0x000000, "Member 'BP_LoginProcessor_C_UserConstructionScript::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_LoginProcessor_C_UserConstructionScript, CallFunc_MakeLiteralText_ReturnValue_1) == 0x000010, "Member 'BP_LoginProcessor_C_UserConstructionScript::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_LoginProcessor_C_UserConstructionScript;
 
 }
 

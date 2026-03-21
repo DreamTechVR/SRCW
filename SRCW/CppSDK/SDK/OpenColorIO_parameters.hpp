@@ -29,13 +29,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(OpenColorIOBlueprintLibrary_ApplyColorSpaceTransform) == 0x000008, "Wrong alignment on OpenColorIOBlueprintLibrary_ApplyColorSpaceTransform");
-static_assert(sizeof(OpenColorIOBlueprintLibrary_ApplyColorSpaceTransform) == 0x0000B8, "Wrong size on OpenColorIOBlueprintLibrary_ApplyColorSpaceTransform");
-static_assert(offsetof(OpenColorIOBlueprintLibrary_ApplyColorSpaceTransform, WorldContextObject) == 0x000000, "Member 'OpenColorIOBlueprintLibrary_ApplyColorSpaceTransform::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(OpenColorIOBlueprintLibrary_ApplyColorSpaceTransform, ConversionSettings) == 0x000008, "Member 'OpenColorIOBlueprintLibrary_ApplyColorSpaceTransform::ConversionSettings' has a wrong offset!");
-static_assert(offsetof(OpenColorIOBlueprintLibrary_ApplyColorSpaceTransform, InputTexture) == 0x0000A0, "Member 'OpenColorIOBlueprintLibrary_ApplyColorSpaceTransform::InputTexture' has a wrong offset!");
-static_assert(offsetof(OpenColorIOBlueprintLibrary_ApplyColorSpaceTransform, OutputRenderTarget) == 0x0000A8, "Member 'OpenColorIOBlueprintLibrary_ApplyColorSpaceTransform::OutputRenderTarget' has a wrong offset!");
-static_assert(offsetof(OpenColorIOBlueprintLibrary_ApplyColorSpaceTransform, ReturnValue) == 0x0000B0, "Member 'OpenColorIOBlueprintLibrary_ApplyColorSpaceTransform::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OpenColorIOBlueprintLibrary_ApplyColorSpaceTransform;
 
 // Function OpenColorIO.OpenColorIOConfiguration.ReloadExistingColorspaces
 // 0x0001 (0x0001 - 0x0000)
@@ -44,9 +38,7 @@ struct OpenColorIOConfiguration_ReloadExistingColorspaces final
 public:
 	bool                                          bForce;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OpenColorIOConfiguration_ReloadExistingColorspaces) == 0x000001, "Wrong alignment on OpenColorIOConfiguration_ReloadExistingColorspaces");
-static_assert(sizeof(OpenColorIOConfiguration_ReloadExistingColorspaces) == 0x000001, "Wrong size on OpenColorIOConfiguration_ReloadExistingColorspaces");
-static_assert(offsetof(OpenColorIOConfiguration_ReloadExistingColorspaces, bForce) == 0x000000, "Member 'OpenColorIOConfiguration_ReloadExistingColorspaces::bForce' has a wrong offset!");
+DUMPER7_ASSERTS_OpenColorIOConfiguration_ReloadExistingColorspaces;
 
 // Function OpenColorIO.OpenColorIODisplayExtensionWrapper.CreateInGameOpenColorIODisplayExtension
 // 0x00A8 (0x00A8 - 0x0000)
@@ -56,10 +48,7 @@ public:
 	struct FOpenColorIODisplayConfiguration       InDisplayConfiguration;                            // 0x0000(0x00A0)(Parm, NativeAccessSpecifierPublic)
 	class UOpenColorIODisplayExtensionWrapper*    ReturnValue;                                       // 0x00A0(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OpenColorIODisplayExtensionWrapper_CreateInGameOpenColorIODisplayExtension) == 0x000008, "Wrong alignment on OpenColorIODisplayExtensionWrapper_CreateInGameOpenColorIODisplayExtension");
-static_assert(sizeof(OpenColorIODisplayExtensionWrapper_CreateInGameOpenColorIODisplayExtension) == 0x0000A8, "Wrong size on OpenColorIODisplayExtensionWrapper_CreateInGameOpenColorIODisplayExtension");
-static_assert(offsetof(OpenColorIODisplayExtensionWrapper_CreateInGameOpenColorIODisplayExtension, InDisplayConfiguration) == 0x000000, "Member 'OpenColorIODisplayExtensionWrapper_CreateInGameOpenColorIODisplayExtension::InDisplayConfiguration' has a wrong offset!");
-static_assert(offsetof(OpenColorIODisplayExtensionWrapper_CreateInGameOpenColorIODisplayExtension, ReturnValue) == 0x0000A0, "Member 'OpenColorIODisplayExtensionWrapper_CreateInGameOpenColorIODisplayExtension::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OpenColorIODisplayExtensionWrapper_CreateInGameOpenColorIODisplayExtension;
 
 // Function OpenColorIO.OpenColorIODisplayExtensionWrapper.CreateOpenColorIODisplayExtension
 // 0x0100 (0x0100 - 0x0000)
@@ -71,11 +60,7 @@ public:
 	class UOpenColorIODisplayExtensionWrapper*    ReturnValue;                                       // 0x00F0(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_F8[0x8];                                       // 0x00F8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(OpenColorIODisplayExtensionWrapper_CreateOpenColorIODisplayExtension) == 0x000010, "Wrong alignment on OpenColorIODisplayExtensionWrapper_CreateOpenColorIODisplayExtension");
-static_assert(sizeof(OpenColorIODisplayExtensionWrapper_CreateOpenColorIODisplayExtension) == 0x000100, "Wrong size on OpenColorIODisplayExtensionWrapper_CreateOpenColorIODisplayExtension");
-static_assert(offsetof(OpenColorIODisplayExtensionWrapper_CreateOpenColorIODisplayExtension, InDisplayConfiguration) == 0x000000, "Member 'OpenColorIODisplayExtensionWrapper_CreateOpenColorIODisplayExtension::InDisplayConfiguration' has a wrong offset!");
-static_assert(offsetof(OpenColorIODisplayExtensionWrapper_CreateOpenColorIODisplayExtension, IsActiveFunction) == 0x0000A0, "Member 'OpenColorIODisplayExtensionWrapper_CreateOpenColorIODisplayExtension::IsActiveFunction' has a wrong offset!");
-static_assert(offsetof(OpenColorIODisplayExtensionWrapper_CreateOpenColorIODisplayExtension, ReturnValue) == 0x0000F0, "Member 'OpenColorIODisplayExtensionWrapper_CreateOpenColorIODisplayExtension::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OpenColorIODisplayExtensionWrapper_CreateOpenColorIODisplayExtension;
 
 // Function OpenColorIO.OpenColorIODisplayExtensionWrapper.SetOpenColorIOConfiguration
 // 0x00A0 (0x00A0 - 0x0000)
@@ -84,9 +69,7 @@ struct OpenColorIODisplayExtensionWrapper_SetOpenColorIOConfiguration final
 public:
 	struct FOpenColorIODisplayConfiguration       InDisplayConfiguration;                            // 0x0000(0x00A0)(Parm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OpenColorIODisplayExtensionWrapper_SetOpenColorIOConfiguration) == 0x000008, "Wrong alignment on OpenColorIODisplayExtensionWrapper_SetOpenColorIOConfiguration");
-static_assert(sizeof(OpenColorIODisplayExtensionWrapper_SetOpenColorIOConfiguration) == 0x0000A0, "Wrong size on OpenColorIODisplayExtensionWrapper_SetOpenColorIOConfiguration");
-static_assert(offsetof(OpenColorIODisplayExtensionWrapper_SetOpenColorIOConfiguration, InDisplayConfiguration) == 0x000000, "Member 'OpenColorIODisplayExtensionWrapper_SetOpenColorIOConfiguration::InDisplayConfiguration' has a wrong offset!");
+DUMPER7_ASSERTS_OpenColorIODisplayExtensionWrapper_SetOpenColorIOConfiguration;
 
 // Function OpenColorIO.OpenColorIODisplayExtensionWrapper.SetSceneExtensionIsActiveFunction
 // 0x0050 (0x0050 - 0x0000)
@@ -95,9 +78,7 @@ struct OpenColorIODisplayExtensionWrapper_SetSceneExtensionIsActiveFunction fina
 public:
 	struct FSceneViewExtensionIsActiveFunctor     IsActiveFunction;                                  // 0x0000(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OpenColorIODisplayExtensionWrapper_SetSceneExtensionIsActiveFunction) == 0x000010, "Wrong alignment on OpenColorIODisplayExtensionWrapper_SetSceneExtensionIsActiveFunction");
-static_assert(sizeof(OpenColorIODisplayExtensionWrapper_SetSceneExtensionIsActiveFunction) == 0x000050, "Wrong size on OpenColorIODisplayExtensionWrapper_SetSceneExtensionIsActiveFunction");
-static_assert(offsetof(OpenColorIODisplayExtensionWrapper_SetSceneExtensionIsActiveFunction, IsActiveFunction) == 0x000000, "Member 'OpenColorIODisplayExtensionWrapper_SetSceneExtensionIsActiveFunction::IsActiveFunction' has a wrong offset!");
+DUMPER7_ASSERTS_OpenColorIODisplayExtensionWrapper_SetSceneExtensionIsActiveFunction;
 
 // Function OpenColorIO.OpenColorIODisplayExtensionWrapper.SetSceneExtensionIsActiveFunctions
 // 0x0010 (0x0010 - 0x0000)
@@ -106,9 +87,7 @@ struct OpenColorIODisplayExtensionWrapper_SetSceneExtensionIsActiveFunctions fin
 public:
 	TArray<struct FSceneViewExtensionIsActiveFunctor> IsActiveFunctions;                             // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OpenColorIODisplayExtensionWrapper_SetSceneExtensionIsActiveFunctions) == 0x000008, "Wrong alignment on OpenColorIODisplayExtensionWrapper_SetSceneExtensionIsActiveFunctions");
-static_assert(sizeof(OpenColorIODisplayExtensionWrapper_SetSceneExtensionIsActiveFunctions) == 0x000010, "Wrong size on OpenColorIODisplayExtensionWrapper_SetSceneExtensionIsActiveFunctions");
-static_assert(offsetof(OpenColorIODisplayExtensionWrapper_SetSceneExtensionIsActiveFunctions, IsActiveFunctions) == 0x000000, "Member 'OpenColorIODisplayExtensionWrapper_SetSceneExtensionIsActiveFunctions::IsActiveFunctions' has a wrong offset!");
+DUMPER7_ASSERTS_OpenColorIODisplayExtensionWrapper_SetSceneExtensionIsActiveFunctions;
 
 // Function OpenColorIO.OpenColorIODisplayExtensionWrapper.GetOpenColorIOConfiguration
 // 0x00A0 (0x00A0 - 0x0000)
@@ -117,9 +96,7 @@ struct OpenColorIODisplayExtensionWrapper_GetOpenColorIOConfiguration final
 public:
 	struct FOpenColorIODisplayConfiguration       ReturnValue;                                       // 0x0000(0x00A0)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OpenColorIODisplayExtensionWrapper_GetOpenColorIOConfiguration) == 0x000008, "Wrong alignment on OpenColorIODisplayExtensionWrapper_GetOpenColorIOConfiguration");
-static_assert(sizeof(OpenColorIODisplayExtensionWrapper_GetOpenColorIOConfiguration) == 0x0000A0, "Wrong size on OpenColorIODisplayExtensionWrapper_GetOpenColorIOConfiguration");
-static_assert(offsetof(OpenColorIODisplayExtensionWrapper_GetOpenColorIOConfiguration, ReturnValue) == 0x000000, "Member 'OpenColorIODisplayExtensionWrapper_GetOpenColorIOConfiguration::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OpenColorIODisplayExtensionWrapper_GetOpenColorIOConfiguration;
 
 }
 

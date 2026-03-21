@@ -42,24 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_DebugOneMessage_C">();
+		BP_STATIC_CLASS_IMPL("WBP_DebugOneMessage_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_DebugOneMessage_C")
 	}
 	static class UWBP_DebugOneMessage_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_DebugOneMessage_C>();
 	}
 };
-static_assert(alignof(UWBP_DebugOneMessage_C) == 0x000008, "Wrong alignment on UWBP_DebugOneMessage_C");
-static_assert(sizeof(UWBP_DebugOneMessage_C) == 0x000330, "Wrong size on UWBP_DebugOneMessage_C");
-static_assert(offsetof(UWBP_DebugOneMessage_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_DebugOneMessage_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugOneMessage_C, MessageAnim) == 0x0002E8, "Member 'UWBP_DebugOneMessage_C::MessageAnim' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugOneMessage_C, BKMessage) == 0x0002F0, "Member 'UWBP_DebugOneMessage_C::BKMessage' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugOneMessage_C, Image_48) == 0x0002F8, "Member 'UWBP_DebugOneMessage_C::Image_48' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugOneMessage_C, MessageCanvas) == 0x000300, "Member 'UWBP_DebugOneMessage_C::MessageCanvas' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugOneMessage_C, TextBlock_121) == 0x000308, "Member 'UWBP_DebugOneMessage_C::TextBlock_121' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugOneMessage_C, Message) == 0x000310, "Member 'UWBP_DebugOneMessage_C::Message' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugOneMessage_C, OffsetIndex) == 0x000320, "Member 'UWBP_DebugOneMessage_C::OffsetIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugOneMessage_C, FontScale) == 0x000328, "Member 'UWBP_DebugOneMessage_C::FontScale' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_DebugOneMessage_C;
 
 }
 

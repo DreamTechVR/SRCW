@@ -35,17 +35,7 @@ public:
 	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSearchLobbyResult                     K2Node_Event_Result;                               // 0x00C8(0x0078)(ConstParm)
 };
-static_assert(alignof(BP_SquadContext_C_ExecuteUbergraph_BP_SquadContext) == 0x000008, "Wrong alignment on BP_SquadContext_C_ExecuteUbergraph_BP_SquadContext");
-static_assert(sizeof(BP_SquadContext_C_ExecuteUbergraph_BP_SquadContext) == 0x000140, "Wrong size on BP_SquadContext_C_ExecuteUbergraph_BP_SquadContext");
-static_assert(offsetof(BP_SquadContext_C_ExecuteUbergraph_BP_SquadContext, EntryPoint) == 0x000000, "Member 'BP_SquadContext_C_ExecuteUbergraph_BP_SquadContext::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_SquadContext_C_ExecuteUbergraph_BP_SquadContext, K2Node_Event_bSuccessful) == 0x000004, "Member 'BP_SquadContext_C_ExecuteUbergraph_BP_SquadContext::K2Node_Event_bSuccessful' has a wrong offset!");
-static_assert(offsetof(BP_SquadContext_C_ExecuteUbergraph_BP_SquadContext, K2Node_Event_Error) == 0x000008, "Member 'BP_SquadContext_C_ExecuteUbergraph_BP_SquadContext::K2Node_Event_Error' has a wrong offset!");
-static_assert(offsetof(BP_SquadContext_C_ExecuteUbergraph_BP_SquadContext, K2Node_Event_bSuccessful_3) == 0x000040, "Member 'BP_SquadContext_C_ExecuteUbergraph_BP_SquadContext::K2Node_Event_bSuccessful_3' has a wrong offset!");
-static_assert(offsetof(BP_SquadContext_C_ExecuteUbergraph_BP_SquadContext, K2Node_Event_Error_2) == 0x000048, "Member 'BP_SquadContext_C_ExecuteUbergraph_BP_SquadContext::K2Node_Event_Error_2' has a wrong offset!");
-static_assert(offsetof(BP_SquadContext_C_ExecuteUbergraph_BP_SquadContext, K2Node_Event_bSuccessful_2) == 0x000080, "Member 'BP_SquadContext_C_ExecuteUbergraph_BP_SquadContext::K2Node_Event_bSuccessful_2' has a wrong offset!");
-static_assert(offsetof(BP_SquadContext_C_ExecuteUbergraph_BP_SquadContext, K2Node_Event_Error_1) == 0x000088, "Member 'BP_SquadContext_C_ExecuteUbergraph_BP_SquadContext::K2Node_Event_Error_1' has a wrong offset!");
-static_assert(offsetof(BP_SquadContext_C_ExecuteUbergraph_BP_SquadContext, K2Node_Event_bSuccessful_1) == 0x0000C0, "Member 'BP_SquadContext_C_ExecuteUbergraph_BP_SquadContext::K2Node_Event_bSuccessful_1' has a wrong offset!");
-static_assert(offsetof(BP_SquadContext_C_ExecuteUbergraph_BP_SquadContext, K2Node_Event_Result) == 0x0000C8, "Member 'BP_SquadContext_C_ExecuteUbergraph_BP_SquadContext::K2Node_Event_Result' has a wrong offset!");
+DUMPER7_ASSERTS_BP_SquadContext_C_ExecuteUbergraph_BP_SquadContext;
 
 // Function BP_SquadContext.BP_SquadContext_C.OnConnectLobbyCompletedInternal
 // 0x0040 (0x0040 - 0x0000)
@@ -56,10 +46,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FOnlineErrorBP                         Error;                                             // 0x0008(0x0038)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(BP_SquadContext_C_OnConnectLobbyCompletedInternal) == 0x000008, "Wrong alignment on BP_SquadContext_C_OnConnectLobbyCompletedInternal");
-static_assert(sizeof(BP_SquadContext_C_OnConnectLobbyCompletedInternal) == 0x000040, "Wrong size on BP_SquadContext_C_OnConnectLobbyCompletedInternal");
-static_assert(offsetof(BP_SquadContext_C_OnConnectLobbyCompletedInternal, bSuccessful) == 0x000000, "Member 'BP_SquadContext_C_OnConnectLobbyCompletedInternal::bSuccessful' has a wrong offset!");
-static_assert(offsetof(BP_SquadContext_C_OnConnectLobbyCompletedInternal, Error) == 0x000008, "Member 'BP_SquadContext_C_OnConnectLobbyCompletedInternal::Error' has a wrong offset!");
+DUMPER7_ASSERTS_BP_SquadContext_C_OnConnectLobbyCompletedInternal;
 
 // Function BP_SquadContext.BP_SquadContext_C.OnCreateLobbyCompletedInternal
 // 0x0040 (0x0040 - 0x0000)
@@ -70,10 +57,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FOnlineErrorBP                         Error;                                             // 0x0008(0x0038)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(BP_SquadContext_C_OnCreateLobbyCompletedInternal) == 0x000008, "Wrong alignment on BP_SquadContext_C_OnCreateLobbyCompletedInternal");
-static_assert(sizeof(BP_SquadContext_C_OnCreateLobbyCompletedInternal) == 0x000040, "Wrong size on BP_SquadContext_C_OnCreateLobbyCompletedInternal");
-static_assert(offsetof(BP_SquadContext_C_OnCreateLobbyCompletedInternal, bSuccessful) == 0x000000, "Member 'BP_SquadContext_C_OnCreateLobbyCompletedInternal::bSuccessful' has a wrong offset!");
-static_assert(offsetof(BP_SquadContext_C_OnCreateLobbyCompletedInternal, Error) == 0x000008, "Member 'BP_SquadContext_C_OnCreateLobbyCompletedInternal::Error' has a wrong offset!");
+DUMPER7_ASSERTS_BP_SquadContext_C_OnCreateLobbyCompletedInternal;
 
 // Function BP_SquadContext.BP_SquadContext_C.OnSearchLobbyCompletedInternal
 // 0x0080 (0x0080 - 0x0000)
@@ -84,10 +68,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSearchLobbyResult                     Result;                                            // 0x0008(0x0078)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(BP_SquadContext_C_OnSearchLobbyCompletedInternal) == 0x000008, "Wrong alignment on BP_SquadContext_C_OnSearchLobbyCompletedInternal");
-static_assert(sizeof(BP_SquadContext_C_OnSearchLobbyCompletedInternal) == 0x000080, "Wrong size on BP_SquadContext_C_OnSearchLobbyCompletedInternal");
-static_assert(offsetof(BP_SquadContext_C_OnSearchLobbyCompletedInternal, bSuccessful) == 0x000000, "Member 'BP_SquadContext_C_OnSearchLobbyCompletedInternal::bSuccessful' has a wrong offset!");
-static_assert(offsetof(BP_SquadContext_C_OnSearchLobbyCompletedInternal, Result) == 0x000008, "Member 'BP_SquadContext_C_OnSearchLobbyCompletedInternal::Result' has a wrong offset!");
+DUMPER7_ASSERTS_BP_SquadContext_C_OnSearchLobbyCompletedInternal;
 
 // Function BP_SquadContext.BP_SquadContext_C.OnSendInvitationCompletedInternal
 // 0x0040 (0x0040 - 0x0000)
@@ -98,10 +79,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FOnlineErrorBP                         Error;                                             // 0x0008(0x0038)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(BP_SquadContext_C_OnSendInvitationCompletedInternal) == 0x000008, "Wrong alignment on BP_SquadContext_C_OnSendInvitationCompletedInternal");
-static_assert(sizeof(BP_SquadContext_C_OnSendInvitationCompletedInternal) == 0x000040, "Wrong size on BP_SquadContext_C_OnSendInvitationCompletedInternal");
-static_assert(offsetof(BP_SquadContext_C_OnSendInvitationCompletedInternal, bSuccessful) == 0x000000, "Member 'BP_SquadContext_C_OnSendInvitationCompletedInternal::bSuccessful' has a wrong offset!");
-static_assert(offsetof(BP_SquadContext_C_OnSendInvitationCompletedInternal, Error) == 0x000008, "Member 'BP_SquadContext_C_OnSendInvitationCompletedInternal::Error' has a wrong offset!");
+DUMPER7_ASSERTS_BP_SquadContext_C_OnSendInvitationCompletedInternal;
 
 }
 

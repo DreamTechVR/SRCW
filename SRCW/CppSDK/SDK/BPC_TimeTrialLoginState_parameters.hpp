@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "UNION_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
@@ -24,9 +24,7 @@ struct BPC_TimeTrialLoginState_C_CreateErrorPopup final
 public:
 	class FText                                   MessegeText;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(BPC_TimeTrialLoginState_C_CreateErrorPopup) == 0x000008, "Wrong alignment on BPC_TimeTrialLoginState_C_CreateErrorPopup");
-static_assert(sizeof(BPC_TimeTrialLoginState_C_CreateErrorPopup) == 0x000010, "Wrong size on BPC_TimeTrialLoginState_C_CreateErrorPopup");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_CreateErrorPopup, MessegeText) == 0x000000, "Member 'BPC_TimeTrialLoginState_C_CreateErrorPopup::MessegeText' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_TimeTrialLoginState_C_CreateErrorPopup;
 
 // Function BPC_TimeTrialLoginState.BPC_TimeTrialLoginState_C.ExecuteUbergraph_BPC_TimeTrialLoginState
 // 0x0360 (0x0360 - 0x0000)
@@ -144,94 +142,7 @@ public:
 	uint8                                         Pad_352[0x2];                                      // 0x0352(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_1;             // 0x0354(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState) == 0x000010, "Wrong alignment on BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState");
-static_assert(sizeof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState) == 0x000360, "Wrong size on BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, EntryPoint) == 0x000000, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_IsNeedReLogin_ReturnValue) == 0x000004, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_IsNeedReLogin_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_Not_PreBool_ReturnValue) == 0x000005, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_IsValid_ReturnValue) == 0x000006, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_IsValid_ReturnValue_1) == 0x000007, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000008, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_IsGhostRequestFailed_ReturnValue) == 0x000010, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_IsGhostRequestFailed_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_Not_PreBool_ReturnValue_1) == 0x000011, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_CreateDelegate_OutputDelegate) == 0x000014, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_CustomEvent_IsSuccess) == 0x000024, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_CustomEvent_IsSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_CustomEvent_bIsEnableOnlinePlay) == 0x000025, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_CustomEvent_bIsEnableOnlinePlay' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_CustomEvent_IsRequestedSequenceBlock) == 0x000026, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_CustomEvent_IsRequestedSequenceBlock' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x000028, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_MakeLiteralText_ReturnValue) == 0x000030, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_CreatePopupWindow_ReturnValue) == 0x000040, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_CreatePopupWindow_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_MakeLiteralText_ReturnValue_1) == 0x000048, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_MakeLiteralText_ReturnValue_2) == 0x000058, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_MakeLiteralText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_GetGameInstanceSubsystem_ReturnValue_2) == 0x000068, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_GetGameInstanceSubsystem_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_MakeArray_Array) == 0x000070, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_CreatePopupWindow_ReturnValue_1) == 0x000080, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_CreatePopupWindow_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_GetPlayerController_ReturnValue) == 0x000088, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_MakeLiteralByte_ReturnValue) == 0x000090, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_DynamicCast_AsMenu_Popup_Window_Interface) == 0x000098, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_DynamicCast_AsMenu_Popup_Window_Interface' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_DynamicCast_bSuccess) == 0x0000A8, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_1) == 0x0000B0, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_DynamicCast_bSuccess_1) == 0x0000C0, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_Conv_ByteToInt_ReturnValue) == 0x0000C4, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_2) == 0x0000C8, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_2' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_DynamicCast_bSuccess_2) == 0x0000D8, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_3) == 0x0000E0, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_3' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_DynamicCast_bSuccess_3) == 0x0000F0, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_MakeLiteralText_ReturnValue_3) == 0x0000F8, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_MakeLiteralText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_CreateDelegate_OutputDelegate_1) == 0x000108, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_CustomEvent_Button_1) == 0x000118, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_CustomEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_CustomEvent_PanelIndex_1) == 0x000120, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_CustomEvent_PanelIndex_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_CustomEvent_ButtonIndex_1) == 0x000124, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_CustomEvent_ButtonIndex_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000128, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_CreateDelegate_OutputDelegate_2) == 0x00012C, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_CustomEvent_MessegeText) == 0x000140, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_CustomEvent_MessegeText' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_MakeLiteralText_ReturnValue_4) == 0x000150, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_MakeLiteralText_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_IsValid_ReturnValue_2) == 0x000160, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_MakeLiteralText_ReturnValue_5) == 0x000168, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_MakeLiteralText_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_MakeTransform_ReturnValue) == 0x000180, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_GetPlayerController_ReturnValue_1) == 0x0001E0, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0001E8, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_FinishSpawningActor_ReturnValue) == 0x0001F0, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_IsValid_ReturnValue_3) == 0x0001F8, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_CreateDelegate_OutputDelegate_3) == 0x0001FC, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_CustomEvent_Button) == 0x000210, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_CustomEvent_PanelIndex) == 0x000218, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_CustomEvent_PanelIndex' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_CustomEvent_ButtonIndex) == 0x00021C, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_CustomEvent_ButtonIndex' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_CreateDelegate_OutputDelegate_4) == 0x000220, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_4) == 0x000230, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_4' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_DynamicCast_bSuccess_4) == 0x000240, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_5) == 0x000248, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_5' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_DynamicCast_bSuccess_5) == 0x000258, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_6) == 0x000260, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_6' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_DynamicCast_bSuccess_6) == 0x000270, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_DynamicCast_bSuccess_6' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_7) == 0x000278, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_7' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_DynamicCast_bSuccess_7) == 0x000288, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_DynamicCast_bSuccess_7' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_8) == 0x000290, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_8' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_DynamicCast_bSuccess_8) == 0x0002A0, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_DynamicCast_bSuccess_8' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_GetOwnerSequence_ReturnValue) == 0x0002A8, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_GetOwnerSequence_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_DynamicCast_AsMenu_Sequence_UIInterface) == 0x0002B0, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_DynamicCast_AsMenu_Sequence_UIInterface' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_DynamicCast_bSuccess_9) == 0x0002C0, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_DynamicCast_bSuccess_9' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_GetNextMenuState_ReturnValue) == 0x0002C1, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_GetNextMenuState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_GetOwnerSequence_ReturnValue_1) == 0x0002C8, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_GetOwnerSequence_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_DynamicCast_AsMenu_Sequence_UIInterface_1) == 0x0002D0, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_DynamicCast_AsMenu_Sequence_UIInterface_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_DynamicCast_bSuccess_10) == 0x0002E0, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_DynamicCast_bSuccess_10' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_GetOwnerSequence_ReturnValue_2) == 0x0002E8, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_GetOwnerSequence_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_GetNextMenuState_ReturnValue_1) == 0x0002F0, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_GetNextMenuState_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_DynamicCast_AsMenu_Sequence_UIInterface_2) == 0x0002F8, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_DynamicCast_AsMenu_Sequence_UIInterface_2' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_DynamicCast_bSuccess_11) == 0x000308, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_DynamicCast_bSuccess_11' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_GetOwnerSequence_ReturnValue_3) == 0x000310, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_GetOwnerSequence_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_GetGameInstanceSubsystem_ReturnValue_3) == 0x000318, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_GetGameInstanceSubsystem_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_DynamicCast_AsMenu_Sequence_UIInterface_3) == 0x000320, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_DynamicCast_AsMenu_Sequence_UIInterface_3' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_DynamicCast_bSuccess_12) == 0x000330, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_DynamicCast_bSuccess_12' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_IsLoggedIn_ReturnValue) == 0x000331, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_IsLoggedIn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_BooleanAND_ReturnValue) == 0x000332, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_BooleanAND_ReturnValue_1) == 0x000333, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_MakeLiteralByte_ReturnValue_1) == 0x000334, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_MakeLiteralByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_GetOwnerSequence_ReturnValue_4) == 0x000338, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_GetOwnerSequence_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_DynamicCast_AsMenu_Sequence_UIInterface_4) == 0x000340, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_DynamicCast_AsMenu_Sequence_UIInterface_4' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, K2Node_DynamicCast_bSuccess_13) == 0x000350, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::K2Node_DynamicCast_bSuccess_13' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_MakeLiteralByte_ReturnValue_2) == 0x000351, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_MakeLiteralByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x000354, "Member 'BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_TimeTrialLoginState_C_ExecuteUbergraph_BPC_TimeTrialLoginState;
 
 // Function BPC_TimeTrialLoginState.BPC_TimeTrialLoginState_C.OnDecideError
 // 0x0010 (0x0010 - 0x0000)
@@ -242,11 +153,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_TimeTrialLoginState_C_OnDecideError) == 0x000008, "Wrong alignment on BPC_TimeTrialLoginState_C_OnDecideError");
-static_assert(sizeof(BPC_TimeTrialLoginState_C_OnDecideError) == 0x000010, "Wrong size on BPC_TimeTrialLoginState_C_OnDecideError");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_OnDecideError, Button) == 0x000000, "Member 'BPC_TimeTrialLoginState_C_OnDecideError::Button' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_OnDecideError, PanelIndex) == 0x000008, "Member 'BPC_TimeTrialLoginState_C_OnDecideError::PanelIndex' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_OnDecideError, ButtonIndex) == 0x00000C, "Member 'BPC_TimeTrialLoginState_C_OnDecideError::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_TimeTrialLoginState_C_OnDecideError;
 
 // Function BPC_TimeTrialLoginState.BPC_TimeTrialLoginState_C.OnLoginResult_Event
 // 0x0003 (0x0003 - 0x0000)
@@ -257,11 +164,7 @@ public:
 	bool                                          bIsEnableOnlinePlay;                               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsRequestedSequenceBlock;                          // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_TimeTrialLoginState_C_OnLoginResult_Event) == 0x000001, "Wrong alignment on BPC_TimeTrialLoginState_C_OnLoginResult_Event");
-static_assert(sizeof(BPC_TimeTrialLoginState_C_OnLoginResult_Event) == 0x000003, "Wrong size on BPC_TimeTrialLoginState_C_OnLoginResult_Event");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_OnLoginResult_Event, IsSuccess) == 0x000000, "Member 'BPC_TimeTrialLoginState_C_OnLoginResult_Event::IsSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_OnLoginResult_Event, bIsEnableOnlinePlay) == 0x000001, "Member 'BPC_TimeTrialLoginState_C_OnLoginResult_Event::bIsEnableOnlinePlay' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_OnLoginResult_Event, IsRequestedSequenceBlock) == 0x000002, "Member 'BPC_TimeTrialLoginState_C_OnLoginResult_Event::IsRequestedSequenceBlock' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_TimeTrialLoginState_C_OnLoginResult_Event;
 
 // Function BPC_TimeTrialLoginState.BPC_TimeTrialLoginState_C.TryLoginOnDecide_Event
 // 0x0010 (0x0010 - 0x0000)
@@ -272,11 +175,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_TimeTrialLoginState_C_TryLoginOnDecide_Event) == 0x000008, "Wrong alignment on BPC_TimeTrialLoginState_C_TryLoginOnDecide_Event");
-static_assert(sizeof(BPC_TimeTrialLoginState_C_TryLoginOnDecide_Event) == 0x000010, "Wrong size on BPC_TimeTrialLoginState_C_TryLoginOnDecide_Event");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_TryLoginOnDecide_Event, Button) == 0x000000, "Member 'BPC_TimeTrialLoginState_C_TryLoginOnDecide_Event::Button' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_TryLoginOnDecide_Event, PanelIndex) == 0x000008, "Member 'BPC_TimeTrialLoginState_C_TryLoginOnDecide_Event::PanelIndex' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialLoginState_C_TryLoginOnDecide_Event, ButtonIndex) == 0x00000C, "Member 'BPC_TimeTrialLoginState_C_TryLoginOnDecide_Event::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_TimeTrialLoginState_C_TryLoginOnDecide_Event;
 
 }
 

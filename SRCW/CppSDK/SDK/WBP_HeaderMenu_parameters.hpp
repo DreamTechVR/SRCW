@@ -12,8 +12,8 @@
 
 #include "UMG_structs.hpp"
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -28,11 +28,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeaderMenu_C_BndEvt__WBP_HeaderMenu_WBP_HeaderMenu_Sub_Rule_TimeTable_K2Node_ComponentBoundEvent_1_OnUISceneEvent__DelegateSignature) == 0x000008, "Wrong alignment on WBP_HeaderMenu_C_BndEvt__WBP_HeaderMenu_WBP_HeaderMenu_Sub_Rule_TimeTable_K2Node_ComponentBoundEvent_1_OnUISceneEvent__DelegateSignature");
-static_assert(sizeof(WBP_HeaderMenu_C_BndEvt__WBP_HeaderMenu_WBP_HeaderMenu_Sub_Rule_TimeTable_K2Node_ComponentBoundEvent_1_OnUISceneEvent__DelegateSignature) == 0x000010, "Wrong size on WBP_HeaderMenu_C_BndEvt__WBP_HeaderMenu_WBP_HeaderMenu_Sub_Rule_TimeTable_K2Node_ComponentBoundEvent_1_OnUISceneEvent__DelegateSignature");
-static_assert(offsetof(WBP_HeaderMenu_C_BndEvt__WBP_HeaderMenu_WBP_HeaderMenu_Sub_Rule_TimeTable_K2Node_ComponentBoundEvent_1_OnUISceneEvent__DelegateSignature, Button) == 0x000000, "Member 'WBP_HeaderMenu_C_BndEvt__WBP_HeaderMenu_WBP_HeaderMenu_Sub_Rule_TimeTable_K2Node_ComponentBoundEvent_1_OnUISceneEvent__DelegateSignature::Button' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_BndEvt__WBP_HeaderMenu_WBP_HeaderMenu_Sub_Rule_TimeTable_K2Node_ComponentBoundEvent_1_OnUISceneEvent__DelegateSignature, PanelIndex) == 0x000008, "Member 'WBP_HeaderMenu_C_BndEvt__WBP_HeaderMenu_WBP_HeaderMenu_Sub_Rule_TimeTable_K2Node_ComponentBoundEvent_1_OnUISceneEvent__DelegateSignature::PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_BndEvt__WBP_HeaderMenu_WBP_HeaderMenu_Sub_Rule_TimeTable_K2Node_ComponentBoundEvent_1_OnUISceneEvent__DelegateSignature, ButtonIndex) == 0x00000C, "Member 'WBP_HeaderMenu_C_BndEvt__WBP_HeaderMenu_WBP_HeaderMenu_Sub_Rule_TimeTable_K2Node_ComponentBoundEvent_1_OnUISceneEvent__DelegateSignature::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeaderMenu_C_BndEvt__WBP_HeaderMenu_WBP_HeaderMenu_Sub_Rule_TimeTable_K2Node_ComponentBoundEvent_1_OnUISceneEvent__DelegateSignature;
 
 // Function WBP_HeaderMenu.WBP_HeaderMenu_C.ExecuteUbergraph_WBP_HeaderMenu
 // 0x00F0 (0x00F0 - 0x0000)
@@ -94,48 +90,7 @@ public:
 	int32                                         K2Node_ComponentBoundEvent_PanelIndex;             // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_ComponentBoundEvent_ButtonIndex;            // 0x00EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu) == 0x000008, "Wrong alignment on WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu");
-static_assert(sizeof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu) == 0x0000F0, "Wrong size on WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, EntryPoint) == 0x000000, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, K2Node_Event_ButtonIndex_1) == 0x000008, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::K2Node_Event_ButtonIndex_1' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, K2Node_MakeArray_Array) == 0x000010, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, CallFunc_Array_LastIndex_ReturnValue) == 0x000020, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, CallFunc_Min_ReturnValue) == 0x000024, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::CallFunc_Min_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, K2Node_Event_ButtonIndex) == 0x000028, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::K2Node_Event_ButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, CallFunc_Array_Get_Item) == 0x000030, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, K2Node_DynamicCast_AsWBP_Header_Menu_Sub_Btn) == 0x000038, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::K2Node_DynamicCast_AsWBP_Header_Menu_Sub_Btn' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, K2Node_DynamicCast_bSuccess) == 0x000040, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, CallFunc_Array_LastIndex_ReturnValue_1) == 0x000044, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::CallFunc_Array_LastIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, CallFunc_Min_ReturnValue_1) == 0x000048, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::CallFunc_Min_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, CallFunc_Array_Get_Item_1) == 0x000050, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, K2Node_DynamicCast_AsWBP_Header_Menu_Sub_Btn_1) == 0x000058, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::K2Node_DynamicCast_AsWBP_Header_Menu_Sub_Btn_1' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, K2Node_DynamicCast_bSuccess_1) == 0x000060, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, K2Node_CreateDelegate_OutputDelegate) == 0x000064, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, K2Node_Event_InUserName) == 0x000078, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::K2Node_Event_InUserName' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, K2Node_Event_InHonorId) == 0x000088, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::K2Node_Event_InHonorId' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, K2Node_Event_InPlatformID) == 0x00008C, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::K2Node_Event_InPlatformID' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, K2Node_Event_InWinCounts_1) == 0x000090, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::K2Node_Event_InWinCounts_1' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, K2Node_Event_InRateRank) == 0x000094, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::K2Node_Event_InRateRank' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, K2Node_Event_InRankPercent) == 0x000098, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::K2Node_Event_InRankPercent' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, K2Node_Event_IsShowingLegendCompeIcon) == 0x00009C, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::K2Node_Event_IsShowingLegendCompeIcon' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, K2Node_Event_LegendGrade) == 0x00009D, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::K2Node_Event_LegendGrade' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, K2Node_Event_InLegendRate) == 0x0000A0, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::K2Node_Event_InLegendRate' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, K2Node_CustomEvent_SendUserName) == 0x0000A8, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::K2Node_CustomEvent_SendUserName' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, K2Node_CustomEvent_SendUserPlatform) == 0x0000B8, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::K2Node_CustomEvent_SendUserPlatform' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, CallFunc_GetConvertPlatform_ReturnValue) == 0x0000B9, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::CallFunc_GetConvertPlatform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, CallFunc_GetHonorTitleIndex_ReturnValue) == 0x0000BC, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::CallFunc_GetHonorTitleIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, CallFunc_MakeLiteralByte_ReturnValue) == 0x0000C0, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, CallFunc_IsValid_ReturnValue_1) == 0x0000C1, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, CallFunc_Conv_ByteToInt_ReturnValue) == 0x0000C4, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, K2Node_Event_InWinCounts) == 0x0000C8, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::K2Node_Event_InWinCounts' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, K2Node_CustomEvent_InVisibility) == 0x0000CC, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::K2Node_CustomEvent_InVisibility' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, K2Node_SwitchEnum_CmpSuccess) == 0x0000CD, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, CallFunc_IsInViewport_ReturnValue) == 0x0000CE, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::CallFunc_IsInViewport_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, K2Node_CreateDelegate_OutputDelegate_1) == 0x0000D0, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, K2Node_ComponentBoundEvent_Button) == 0x0000E0, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, K2Node_ComponentBoundEvent_PanelIndex) == 0x0000E8, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::K2Node_ComponentBoundEvent_PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu, K2Node_ComponentBoundEvent_ButtonIndex) == 0x0000EC, "Member 'WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu::K2Node_ComponentBoundEvent_ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeaderMenu_C_ExecuteUbergraph_WBP_HeaderMenu;
 
 // Function WBP_HeaderMenu.WBP_HeaderMenu_C.OnVisibilityChangedEvent
 // 0x0001 (0x0001 - 0x0000)
@@ -144,9 +99,7 @@ struct WBP_HeaderMenu_C_OnVisibilityChangedEvent final
 public:
 	ESlateVisibility                              InVisibility;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeaderMenu_C_OnVisibilityChangedEvent) == 0x000001, "Wrong alignment on WBP_HeaderMenu_C_OnVisibilityChangedEvent");
-static_assert(sizeof(WBP_HeaderMenu_C_OnVisibilityChangedEvent) == 0x000001, "Wrong size on WBP_HeaderMenu_C_OnVisibilityChangedEvent");
-static_assert(offsetof(WBP_HeaderMenu_C_OnVisibilityChangedEvent, InVisibility) == 0x000000, "Member 'WBP_HeaderMenu_C_OnVisibilityChangedEvent::InVisibility' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeaderMenu_C_OnVisibilityChangedEvent;
 
 // Function WBP_HeaderMenu.WBP_HeaderMenu_C.PlayButtonAnimationIdle
 // 0x0004 (0x0004 - 0x0000)
@@ -155,9 +108,7 @@ struct WBP_HeaderMenu_C_PlayButtonAnimationIdle final
 public:
 	int32                                         ButtonIndex;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeaderMenu_C_PlayButtonAnimationIdle) == 0x000004, "Wrong alignment on WBP_HeaderMenu_C_PlayButtonAnimationIdle");
-static_assert(sizeof(WBP_HeaderMenu_C_PlayButtonAnimationIdle) == 0x000004, "Wrong size on WBP_HeaderMenu_C_PlayButtonAnimationIdle");
-static_assert(offsetof(WBP_HeaderMenu_C_PlayButtonAnimationIdle, ButtonIndex) == 0x000000, "Member 'WBP_HeaderMenu_C_PlayButtonAnimationIdle::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeaderMenu_C_PlayButtonAnimationIdle;
 
 // Function WBP_HeaderMenu.WBP_HeaderMenu_C.PlayButtonAnimationWait
 // 0x0004 (0x0004 - 0x0000)
@@ -166,9 +117,7 @@ struct WBP_HeaderMenu_C_PlayButtonAnimationWait final
 public:
 	int32                                         ButtonIndex;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeaderMenu_C_PlayButtonAnimationWait) == 0x000004, "Wrong alignment on WBP_HeaderMenu_C_PlayButtonAnimationWait");
-static_assert(sizeof(WBP_HeaderMenu_C_PlayButtonAnimationWait) == 0x000004, "Wrong size on WBP_HeaderMenu_C_PlayButtonAnimationWait");
-static_assert(offsetof(WBP_HeaderMenu_C_PlayButtonAnimationWait, ButtonIndex) == 0x000000, "Member 'WBP_HeaderMenu_C_PlayButtonAnimationWait::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeaderMenu_C_PlayButtonAnimationWait;
 
 // Function WBP_HeaderMenu.WBP_HeaderMenu_C.Set Header User Win Counts
 // 0x0004 (0x0004 - 0x0000)
@@ -177,9 +126,7 @@ struct WBP_HeaderMenu_C_Set_Header_User_Win_Counts final
 public:
 	int32                                         InWinCounts;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeaderMenu_C_Set_Header_User_Win_Counts) == 0x000004, "Wrong alignment on WBP_HeaderMenu_C_Set_Header_User_Win_Counts");
-static_assert(sizeof(WBP_HeaderMenu_C_Set_Header_User_Win_Counts) == 0x000004, "Wrong size on WBP_HeaderMenu_C_Set_Header_User_Win_Counts");
-static_assert(offsetof(WBP_HeaderMenu_C_Set_Header_User_Win_Counts, InWinCounts) == 0x000000, "Member 'WBP_HeaderMenu_C_Set_Header_User_Win_Counts::InWinCounts' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeaderMenu_C_Set_Header_User_Win_Counts;
 
 // Function WBP_HeaderMenu.WBP_HeaderMenu_C.SetChallengeNotice
 // 0x0010 (0x0010 - 0x0000)
@@ -188,9 +135,7 @@ struct WBP_HeaderMenu_C_SetChallengeNotice final
 public:
 	TArray<struct FChallengeStruct>               InParam;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_HeaderMenu_C_SetChallengeNotice) == 0x000008, "Wrong alignment on WBP_HeaderMenu_C_SetChallengeNotice");
-static_assert(sizeof(WBP_HeaderMenu_C_SetChallengeNotice) == 0x000010, "Wrong size on WBP_HeaderMenu_C_SetChallengeNotice");
-static_assert(offsetof(WBP_HeaderMenu_C_SetChallengeNotice, InParam) == 0x000000, "Member 'WBP_HeaderMenu_C_SetChallengeNotice::InParam' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeaderMenu_C_SetChallengeNotice;
 
 // Function WBP_HeaderMenu.WBP_HeaderMenu_C.SetHeaderUserData
 // 0x0030 (0x0030 - 0x0000)
@@ -210,17 +155,7 @@ public:
 	uint8                                         Pad_26[0x2];                                       // 0x0026(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         InLegendRate;                                      // 0x0028(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeaderMenu_C_SetHeaderUserData) == 0x000008, "Wrong alignment on WBP_HeaderMenu_C_SetHeaderUserData");
-static_assert(sizeof(WBP_HeaderMenu_C_SetHeaderUserData) == 0x000030, "Wrong size on WBP_HeaderMenu_C_SetHeaderUserData");
-static_assert(offsetof(WBP_HeaderMenu_C_SetHeaderUserData, InUserName) == 0x000000, "Member 'WBP_HeaderMenu_C_SetHeaderUserData::InUserName' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_SetHeaderUserData, InHonorId) == 0x000010, "Member 'WBP_HeaderMenu_C_SetHeaderUserData::InHonorId' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_SetHeaderUserData, InPlatformId) == 0x000014, "Member 'WBP_HeaderMenu_C_SetHeaderUserData::InPlatformId' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_SetHeaderUserData, InWinCounts) == 0x000018, "Member 'WBP_HeaderMenu_C_SetHeaderUserData::InWinCounts' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_SetHeaderUserData, InRateRank) == 0x00001C, "Member 'WBP_HeaderMenu_C_SetHeaderUserData::InRateRank' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_SetHeaderUserData, InRankPercent) == 0x000020, "Member 'WBP_HeaderMenu_C_SetHeaderUserData::InRankPercent' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_SetHeaderUserData, IsShowingLegendCompeIcon) == 0x000024, "Member 'WBP_HeaderMenu_C_SetHeaderUserData::IsShowingLegendCompeIcon' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_SetHeaderUserData, LegendGrade) == 0x000025, "Member 'WBP_HeaderMenu_C_SetHeaderUserData::LegendGrade' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_SetHeaderUserData, InLegendRate) == 0x000028, "Member 'WBP_HeaderMenu_C_SetHeaderUserData::InLegendRate' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeaderMenu_C_SetHeaderUserData;
 
 // Function WBP_HeaderMenu.WBP_HeaderMenu_C.SetNiceNotice
 // 0x0018 (0x0018 - 0x0000)
@@ -230,10 +165,7 @@ public:
 	class FText                                   SendUserName;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 	EAppSupportedPlatform                         SendUserPlatform;                                  // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeaderMenu_C_SetNiceNotice) == 0x000008, "Wrong alignment on WBP_HeaderMenu_C_SetNiceNotice");
-static_assert(sizeof(WBP_HeaderMenu_C_SetNiceNotice) == 0x000018, "Wrong size on WBP_HeaderMenu_C_SetNiceNotice");
-static_assert(offsetof(WBP_HeaderMenu_C_SetNiceNotice, SendUserName) == 0x000000, "Member 'WBP_HeaderMenu_C_SetNiceNotice::SendUserName' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_SetNiceNotice, SendUserPlatform) == 0x000010, "Member 'WBP_HeaderMenu_C_SetNiceNotice::SendUserPlatform' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeaderMenu_C_SetNiceNotice;
 
 // Function WBP_HeaderMenu.WBP_HeaderMenu_C.SetOnlineGameMode
 // 0x0002 (0x0002 - 0x0000)
@@ -243,10 +175,7 @@ public:
 	EOnlineGameMode                               InOnlineGameMode;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIsMulti;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeaderMenu_C_SetOnlineGameMode) == 0x000001, "Wrong alignment on WBP_HeaderMenu_C_SetOnlineGameMode");
-static_assert(sizeof(WBP_HeaderMenu_C_SetOnlineGameMode) == 0x000002, "Wrong size on WBP_HeaderMenu_C_SetOnlineGameMode");
-static_assert(offsetof(WBP_HeaderMenu_C_SetOnlineGameMode, InOnlineGameMode) == 0x000000, "Member 'WBP_HeaderMenu_C_SetOnlineGameMode::InOnlineGameMode' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_SetOnlineGameMode, bIsMulti) == 0x000001, "Member 'WBP_HeaderMenu_C_SetOnlineGameMode::bIsMulti' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeaderMenu_C_SetOnlineGameMode;
 
 // Function WBP_HeaderMenu.WBP_HeaderMenu_C.SetVisibleLR
 // 0x0010 (0x0010 - 0x0000)
@@ -259,12 +188,7 @@ public:
 	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_HeaderMenu_Sub_Btn_C*              K2Node_Select_Default;                             // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeaderMenu_C_SetVisibleLR) == 0x000008, "Wrong alignment on WBP_HeaderMenu_C_SetVisibleLR");
-static_assert(sizeof(WBP_HeaderMenu_C_SetVisibleLR) == 0x000010, "Wrong size on WBP_HeaderMenu_C_SetVisibleLR");
-static_assert(offsetof(WBP_HeaderMenu_C_SetVisibleLR, bIsLButton) == 0x000000, "Member 'WBP_HeaderMenu_C_SetVisibleLR::bIsLButton' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_SetVisibleLR, Visibility_0) == 0x000001, "Member 'WBP_HeaderMenu_C_SetVisibleLR::Visibility_0' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_SetVisibleLR, Temp_bool_Variable) == 0x000002, "Member 'WBP_HeaderMenu_C_SetVisibleLR::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_SetVisibleLR, K2Node_Select_Default) == 0x000008, "Member 'WBP_HeaderMenu_C_SetVisibleLR::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeaderMenu_C_SetVisibleLR;
 
 // Function WBP_HeaderMenu.WBP_HeaderMenu_C.UpdateFestaWinCounts
 // 0x0004 (0x0004 - 0x0000)
@@ -273,9 +197,7 @@ struct WBP_HeaderMenu_C_UpdateFestaWinCounts final
 public:
 	int32                                         InWinCounts;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeaderMenu_C_UpdateFestaWinCounts) == 0x000004, "Wrong alignment on WBP_HeaderMenu_C_UpdateFestaWinCounts");
-static_assert(sizeof(WBP_HeaderMenu_C_UpdateFestaWinCounts) == 0x000004, "Wrong size on WBP_HeaderMenu_C_UpdateFestaWinCounts");
-static_assert(offsetof(WBP_HeaderMenu_C_UpdateFestaWinCounts, InWinCounts) == 0x000000, "Member 'WBP_HeaderMenu_C_UpdateFestaWinCounts::InWinCounts' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeaderMenu_C_UpdateFestaWinCounts;
 
 // Function WBP_HeaderMenu.WBP_HeaderMenu_C.UpdateHeaderUserData
 // 0x0018 (0x0018 - 0x0000)
@@ -285,10 +207,7 @@ public:
 	class FText                                   InUserName;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	int32                                         InHonorId;                                         // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeaderMenu_C_UpdateHeaderUserData) == 0x000008, "Wrong alignment on WBP_HeaderMenu_C_UpdateHeaderUserData");
-static_assert(sizeof(WBP_HeaderMenu_C_UpdateHeaderUserData) == 0x000018, "Wrong size on WBP_HeaderMenu_C_UpdateHeaderUserData");
-static_assert(offsetof(WBP_HeaderMenu_C_UpdateHeaderUserData, InUserName) == 0x000000, "Member 'WBP_HeaderMenu_C_UpdateHeaderUserData::InUserName' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_UpdateHeaderUserData, InHonorId) == 0x000010, "Member 'WBP_HeaderMenu_C_UpdateHeaderUserData::InHonorId' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeaderMenu_C_UpdateHeaderUserData;
 
 // Function WBP_HeaderMenu.WBP_HeaderMenu_C.UpdateVisibilityNewsBtn_NewIcon
 // 0x00E0 (0x00E0 - 0x0000)
@@ -322,30 +241,7 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00C0(0x0010)()
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00D0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon) == 0x000008, "Wrong alignment on WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon");
-static_assert(sizeof(WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon) == 0x0000E0, "Wrong size on WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon");
-static_assert(offsetof(WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon, Temp_bool_Variable) == 0x000000, "Member 'WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon, Temp_byte_Variable) == 0x000001, "Member 'WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon, Temp_byte_Variable_1) == 0x000002, "Member 'WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000008, "Member 'WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon, CallFunc_CheckRaceDisableGadgetNotice_ReturnValue) == 0x000010, "Member 'WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon::CallFunc_CheckRaceDisableGadgetNotice_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon, CallFunc_IsValid_ReturnValue) == 0x000011, "Member 'WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon, CallFunc_CheckFreeContentNotice_ReturnValue) == 0x000012, "Member 'WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon::CallFunc_CheckFreeContentNotice_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon, CallFunc_CheckDLCNotice_ReturnValue) == 0x000013, "Member 'WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon::CallFunc_CheckDLCNotice_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon, CallFunc_CheckFestaNotice_ReturnValue) == 0x000014, "Member 'WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon::CallFunc_CheckFestaNotice_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon, CallFunc_MakeLiteralString_ReturnValue) == 0x000018, "Member 'WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon::CallFunc_MakeLiteralString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon, CallFunc_BooleanOR_ReturnValue) == 0x000028, "Member 'WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon, CallFunc_MakeLiteralString_ReturnValue_1) == 0x000030, "Member 'WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon::CallFunc_MakeLiteralString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon, CallFunc_BooleanOR_ReturnValue_1) == 0x000040, "Member 'WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon, Temp_bool_Variable_1) == 0x000041, "Member 'WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon, CallFunc_BooleanOR_ReturnValue_2) == 0x000042, "Member 'WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon, K2Node_Select_Default) == 0x000043, "Member 'WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon, K2Node_Select_Default_1) == 0x000048, "Member 'WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon, CallFunc_Conv_StringToText_ReturnValue) == 0x000058, "Member 'WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon, K2Node_MakeStruct_FormatArgumentData) == 0x000068, "Member 'WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon, K2Node_MakeArray_Array) == 0x0000B0, "Member 'WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon, CallFunc_Format_ReturnValue) == 0x0000C0, "Member 'WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon, CallFunc_Conv_TextToString_ReturnValue) == 0x0000D0, "Member 'WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeaderMenu_C_UpdateVisibilityNewsBtn_NewIcon;
 
 }
 

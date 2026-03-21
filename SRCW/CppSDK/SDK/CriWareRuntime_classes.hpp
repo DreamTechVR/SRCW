@@ -30,15 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Atom3dRegionHandle">();
+		STATIC_CLASS_IMPL("Atom3dRegionHandle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Atom3dRegionHandle")
 	}
 	static class UAtom3dRegionHandle* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAtom3dRegionHandle>();
 	}
 };
-static_assert(alignof(UAtom3dRegionHandle) == 0x000008, "Wrong alignment on UAtom3dRegionHandle");
-static_assert(sizeof(UAtom3dRegionHandle) == 0x000030, "Wrong size on UAtom3dRegionHandle");
+DUMPER7_ASSERTS_UAtom3dRegionHandle;
 
 // Class CriWareRuntime.Atom3dRegion
 // 0x0020 (0x0048 - 0x0028)
@@ -55,16 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Atom3dRegion">();
+		STATIC_CLASS_IMPL("Atom3dRegion")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Atom3dRegion")
 	}
 	static class UAtom3dRegion* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAtom3dRegion>();
 	}
 };
-static_assert(alignof(UAtom3dRegion) == 0x000008, "Wrong alignment on UAtom3dRegion");
-static_assert(sizeof(UAtom3dRegion) == 0x000048, "Wrong size on UAtom3dRegion");
-static_assert(offsetof(UAtom3dRegion, Handle) == 0x000040, "Member 'UAtom3dRegion::Handle' has a wrong offset!");
+DUMPER7_ASSERTS_UAtom3dRegion;
 
 // Class CriWareRuntime.Atom3dSourceBaseComponent
 // 0x00A0 (0x02D0 - 0x0230)
@@ -97,7 +102,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Atom3dSourceBaseComponent">();
+		STATIC_CLASS_IMPL("Atom3dSourceBaseComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Atom3dSourceBaseComponent")
 	}
 	static class UAtom3dSourceBaseComponent* GetDefaultObj()
 	{
@@ -105,19 +114,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UAtom3dSourceBaseComponent) == 0x000010, "Wrong alignment on UAtom3dSourceBaseComponent");
-static_assert(sizeof(UAtom3dSourceBaseComponent) == 0x0002D0, "Wrong size on UAtom3dSourceBaseComponent");
-static_assert(offsetof(UAtom3dSourceBaseComponent, DefaultOutputVolumeScale) == 0x000230, "Member 'UAtom3dSourceBaseComponent::DefaultOutputVolumeScale' has a wrong offset!");
-static_assert(offsetof(UAtom3dSourceBaseComponent, DefaultRegion) == 0x000238, "Member 'UAtom3dSourceBaseComponent::DefaultRegion' has a wrong offset!");
-static_assert(offsetof(UAtom3dSourceBaseComponent, DefaultMinAttenuationDistance) == 0x000244, "Member 'UAtom3dSourceBaseComponent::DefaultMinAttenuationDistance' has a wrong offset!");
-static_assert(offsetof(UAtom3dSourceBaseComponent, DefaultMaxAttenuationDistance) == 0x000248, "Member 'UAtom3dSourceBaseComponent::DefaultMaxAttenuationDistance' has a wrong offset!");
-static_assert(offsetof(UAtom3dSourceBaseComponent, DefaultSourceRadius) == 0x000250, "Member 'UAtom3dSourceBaseComponent::DefaultSourceRadius' has a wrong offset!");
-static_assert(offsetof(UAtom3dSourceBaseComponent, DefaultInteriorDistance) == 0x000254, "Member 'UAtom3dSourceBaseComponent::DefaultInteriorDistance' has a wrong offset!");
-static_assert(offsetof(UAtom3dSourceBaseComponent, DefaultDistanceAisacControls) == 0x000258, "Member 'UAtom3dSourceBaseComponent::DefaultDistanceAisacControls' has a wrong offset!");
-static_assert(offsetof(UAtom3dSourceBaseComponent, DefaultOutputBasedAzimuthAngleAisacControls) == 0x000268, "Member 'UAtom3dSourceBaseComponent::DefaultOutputBasedAzimuthAngleAisacControls' has a wrong offset!");
-static_assert(offsetof(UAtom3dSourceBaseComponent, DefaultOutputBasedElevationAngleAisacControls) == 0x000278, "Member 'UAtom3dSourceBaseComponent::DefaultOutputBasedElevationAngleAisacControls' has a wrong offset!");
-static_assert(offsetof(UAtom3dSourceBaseComponent, DefaultListenerBasedAzimuthAngleAisacControls) == 0x000288, "Member 'UAtom3dSourceBaseComponent::DefaultListenerBasedAzimuthAngleAisacControls' has a wrong offset!");
-static_assert(offsetof(UAtom3dSourceBaseComponent, DefaultListenerBasedElevationAngleAisacControls) == 0x000298, "Member 'UAtom3dSourceBaseComponent::DefaultListenerBasedElevationAngleAisacControls' has a wrong offset!");
+DUMPER7_ASSERTS_UAtom3dSourceBaseComponent;
 
 // Class CriWareRuntime.Atom3dTransceiverComponent
 // 0x0020 (0x02F0 - 0x02D0)
@@ -135,19 +132,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Atom3dTransceiverComponent">();
+		STATIC_CLASS_IMPL("Atom3dTransceiverComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Atom3dTransceiverComponent")
 	}
 	static class UAtom3dTransceiverComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAtom3dTransceiverComponent>();
 	}
 };
-static_assert(alignof(UAtom3dTransceiverComponent) == 0x000010, "Wrong alignment on UAtom3dTransceiverComponent");
-static_assert(sizeof(UAtom3dTransceiverComponent) == 0x0002F0, "Wrong size on UAtom3dTransceiverComponent");
-static_assert(offsetof(UAtom3dTransceiverComponent, InputPoint) == 0x0002C8, "Member 'UAtom3dTransceiverComponent::InputPoint' has a wrong offset!");
-static_assert(offsetof(UAtom3dTransceiverComponent, DefaultGlobalAisacs) == 0x0002D0, "Member 'UAtom3dTransceiverComponent::DefaultGlobalAisacs' has a wrong offset!");
-static_assert(offsetof(UAtom3dTransceiverComponent, DefaultDirectAudioRadius) == 0x0002E4, "Member 'UAtom3dTransceiverComponent::DefaultDirectAudioRadius' has a wrong offset!");
-static_assert(offsetof(UAtom3dTransceiverComponent, DefaultCrossfadeDistance) == 0x0002E8, "Member 'UAtom3dTransceiverComponent::DefaultCrossfadeDistance' has a wrong offset!");
+DUMPER7_ASSERTS_UAtom3dTransceiverComponent;
 
 // Class CriWareRuntime.AtomAreaSoundVolume
 // 0x0040 (0x0308 - 0x02C8)
@@ -181,24 +177,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AtomAreaSoundVolume">();
+		STATIC_CLASS_IMPL("AtomAreaSoundVolume")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AtomAreaSoundVolume")
 	}
 	static class AAtomAreaSoundVolume* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAtomAreaSoundVolume>();
 	}
 };
-static_assert(alignof(AAtomAreaSoundVolume) == 0x000008, "Wrong alignment on AAtomAreaSoundVolume");
-static_assert(sizeof(AAtomAreaSoundVolume) == 0x000308, "Wrong size on AAtomAreaSoundVolume");
-static_assert(offsetof(AAtomAreaSoundVolume, Priority) == 0x0002C8, "Member 'AAtomAreaSoundVolume::Priority' has a wrong offset!");
-static_assert(offsetof(AAtomAreaSoundVolume, CollisionProfile) == 0x0002D0, "Member 'AAtomAreaSoundVolume::CollisionProfile' has a wrong offset!");
-static_assert(offsetof(AAtomAreaSoundVolume, SoundStopDistance) == 0x0002D8, "Member 'AAtomAreaSoundVolume::SoundStopDistance' has a wrong offset!");
-static_assert(offsetof(AAtomAreaSoundVolume, bIsEnableAtomCompoentPack) == 0x0002DC, "Member 'AAtomAreaSoundVolume::bIsEnableAtomCompoentPack' has a wrong offset!");
-static_assert(offsetof(AAtomAreaSoundVolume, bIsAutoPlaySound) == 0x0002DF, "Member 'AAtomAreaSoundVolume::bIsAutoPlaySound' has a wrong offset!");
-static_assert(offsetof(AAtomAreaSoundVolume, bIsDeterminationFromVolumeBoundaryPlane) == 0x0002E0, "Member 'AAtomAreaSoundVolume::bIsDeterminationFromVolumeBoundaryPlane' has a wrong offset!");
-static_assert(offsetof(AAtomAreaSoundVolume, bEnableRepeatPlayWhenSoundStop) == 0x0002E1, "Member 'AAtomAreaSoundVolume::bEnableRepeatPlayWhenSoundStop' has a wrong offset!");
-static_assert(offsetof(AAtomAreaSoundVolume, AtomComponents) == 0x0002E8, "Member 'AAtomAreaSoundVolume::AtomComponents' has a wrong offset!");
-static_assert(offsetof(AAtomAreaSoundVolume, Sounds) == 0x0002F8, "Member 'AAtomAreaSoundVolume::Sounds' has a wrong offset!");
+DUMPER7_ASSERTS_AAtomAreaSoundVolume;
 
 // Class CriWareRuntime.AtomProfileData
 // 0x0000 (0x0028 - 0x0028)
@@ -211,15 +201,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AtomProfileData">();
+		STATIC_CLASS_IMPL("AtomProfileData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AtomProfileData")
 	}
 	static class UAtomProfileData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAtomProfileData>();
 	}
 };
-static_assert(alignof(UAtomProfileData) == 0x000008, "Wrong alignment on UAtomProfileData");
-static_assert(sizeof(UAtomProfileData) == 0x000028, "Wrong size on UAtomProfileData");
+DUMPER7_ASSERTS_UAtomProfileData;
 
 // Class CriWareRuntime.AtomAsrRack
 // 0x0018 (0x0040 - 0x0028)
@@ -251,16 +244,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AtomAsrRack">();
+		STATIC_CLASS_IMPL("AtomAsrRack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AtomAsrRack")
 	}
 	static class UAtomAsrRack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAtomAsrRack>();
 	}
 };
-static_assert(alignof(UAtomAsrRack) == 0x000008, "Wrong alignment on UAtomAsrRack");
-static_assert(sizeof(UAtomAsrRack) == 0x000040, "Wrong size on UAtomAsrRack");
-static_assert(offsetof(UAtomAsrRack, RackId) == 0x000028, "Member 'UAtomAsrRack::RackId' has a wrong offset!");
+DUMPER7_ASSERTS_UAtomAsrRack;
 
 // Class CriWareRuntime.AtomEntranceVolume
 // 0x0020 (0x02E8 - 0x02C8)
@@ -283,17 +278,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AtomEntranceVolume">();
+		STATIC_CLASS_IMPL("AtomEntranceVolume")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AtomEntranceVolume")
 	}
 	static class AAtomEntranceVolume* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAtomEntranceVolume>();
 	}
 };
-static_assert(alignof(AAtomEntranceVolume) == 0x000008, "Wrong alignment on AAtomEntranceVolume");
-static_assert(sizeof(AAtomEntranceVolume) == 0x0002E8, "Wrong size on AAtomEntranceVolume");
-static_assert(offsetof(AAtomEntranceVolume, Priority) == 0x0002C8, "Member 'AAtomEntranceVolume::Priority' has a wrong offset!");
-static_assert(offsetof(AAtomEntranceVolume, NeighbourhoodAudioVolumeArray) == 0x0002D8, "Member 'AAtomEntranceVolume::NeighbourhoodAudioVolumeArray' has a wrong offset!");
+DUMPER7_ASSERTS_AAtomEntranceVolume;
 
 // Class CriWareRuntime.AtomComponentPool
 // 0x0040 (0x0068 - 0x0028)
@@ -306,16 +302,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AtomComponentPool">();
+		STATIC_CLASS_IMPL("AtomComponentPool")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AtomComponentPool")
 	}
 	static class UAtomComponentPool* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAtomComponentPool>();
 	}
 };
-static_assert(alignof(UAtomComponentPool) == 0x000008, "Wrong alignment on UAtomComponentPool");
-static_assert(sizeof(UAtomComponentPool) == 0x000068, "Wrong size on UAtomComponentPool");
-static_assert(offsetof(UAtomComponentPool, Pool) == 0x000028, "Member 'UAtomComponentPool::Pool' has a wrong offset!");
+DUMPER7_ASSERTS_UAtomComponentPool;
 
 // Class CriWareRuntime.AtomAudioVolume
 // 0x0088 (0x0350 - 0x02C8)
@@ -350,24 +348,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AtomAudioVolume">();
+		STATIC_CLASS_IMPL("AtomAudioVolume")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AtomAudioVolume")
 	}
 	static class AAtomAudioVolume* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAtomAudioVolume>();
 	}
 };
-static_assert(alignof(AAtomAudioVolume) == 0x000008, "Wrong alignment on AAtomAudioVolume");
-static_assert(sizeof(AAtomAudioVolume) == 0x000350, "Wrong size on AAtomAudioVolume");
-static_assert(offsetof(AAtomAudioVolume, Priority) == 0x0002C8, "Member 'AAtomAudioVolume::Priority' has a wrong offset!");
-static_assert(offsetof(AAtomAudioVolume, CollisionProfile) == 0x0002D0, "Member 'AAtomAudioVolume::CollisionProfile' has a wrong offset!");
-static_assert(offsetof(AAtomAudioVolume, bAutoSettingEntranceVolume) == 0x0002D8, "Member 'AAtomAudioVolume::bAutoSettingEntranceVolume' has a wrong offset!");
-static_assert(offsetof(AAtomAudioVolume, bAutoSettingNeighbourAudioVolumeToEntranceVolume) == 0x0002D9, "Member 'AAtomAudioVolume::bAutoSettingNeighbourAudioVolumeToEntranceVolume' has a wrong offset!");
-static_assert(offsetof(AAtomAudioVolume, AudioVolumeTags) == 0x0002E0, "Member 'AAtomAudioVolume::AudioVolumeTags' has a wrong offset!");
-static_assert(offsetof(AAtomAudioVolume, bOverrideAtomAudioVolume) == 0x0002F0, "Member 'AAtomAudioVolume::bOverrideAtomAudioVolume' has a wrong offset!");
-static_assert(offsetof(AAtomAudioVolume, AtomAudioVolumeSettings) == 0x0002F8, "Member 'AAtomAudioVolume::AtomAudioVolumeSettings' has a wrong offset!");
-static_assert(offsetof(AAtomAudioVolume, AtomAudioVolumeSettingsOverrides) == 0x000300, "Member 'AAtomAudioVolume::AtomAudioVolumeSettingsOverrides' has a wrong offset!");
-static_assert(offsetof(AAtomAudioVolume, EntranceVolumes) == 0x000340, "Member 'AAtomAudioVolume::EntranceVolumes' has a wrong offset!");
+DUMPER7_ASSERTS_AAtomAudioVolume;
 
 // Class CriWareRuntime.AtomAudioVolumeSettings
 // 0x0040 (0x0068 - 0x0028)
@@ -379,16 +371,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AtomAudioVolumeSettings">();
+		STATIC_CLASS_IMPL("AtomAudioVolumeSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AtomAudioVolumeSettings")
 	}
 	static class UAtomAudioVolumeSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAtomAudioVolumeSettings>();
 	}
 };
-static_assert(alignof(UAtomAudioVolumeSettings) == 0x000008, "Wrong alignment on UAtomAudioVolumeSettings");
-static_assert(sizeof(UAtomAudioVolumeSettings) == 0x000068, "Wrong size on UAtomAudioVolumeSettings");
-static_assert(offsetof(UAtomAudioVolumeSettings, AtomAudioVolumeParameters) == 0x000028, "Member 'UAtomAudioVolumeSettings::AtomAudioVolumeParameters' has a wrong offset!");
+DUMPER7_ASSERTS_UAtomAudioVolumeSettings;
 
 // Class CriWareRuntime.AtomBusSampler
 // 0x0048 (0x0070 - 0x0028)
@@ -418,17 +412,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AtomBusSampler">();
+		STATIC_CLASS_IMPL("AtomBusSampler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AtomBusSampler")
 	}
 	static class UAtomBusSampler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAtomBusSampler>();
 	}
 };
-static_assert(alignof(UAtomBusSampler) == 0x000008, "Wrong alignment on UAtomBusSampler");
-static_assert(sizeof(UAtomBusSampler) == 0x000070, "Wrong size on UAtomBusSampler");
-static_assert(offsetof(UAtomBusSampler, OnRecordingStarted) == 0x000028, "Member 'UAtomBusSampler::OnRecordingStarted' has a wrong offset!");
-static_assert(offsetof(UAtomBusSampler, OnRecordingFinished) == 0x000038, "Member 'UAtomBusSampler::OnRecordingFinished' has a wrong offset!");
+DUMPER7_ASSERTS_UAtomBusSampler;
 
 // Class CriWareRuntime.AtomCallback
 // 0x0000 (0x0000 - 0x0000)
@@ -437,7 +432,11 @@ class IAtomCallback final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AtomCallback">();
+		STATIC_CLASS_IMPL("AtomCallback")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AtomCallback")
 	}
 	static class IAtomCallback* GetDefaultObj()
 	{
@@ -453,12 +452,11 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IAtomCallback) == 0x000001, "Wrong alignment on IAtomCallback");
-static_assert(sizeof(IAtomCallback) == 0x000001, "Wrong size on IAtomCallback");
+DUMPER7_ASSERTS_IAtomCallback;
 
 // Class CriWareRuntime.AtomListenerFocusPoint
 // 0x0010 (0x0240 - 0x0230)
-class UAtomListenerFocusPoint final : public USceneComponent
+class UAtomListenerFocusPoint : public USceneComponent
 {
 public:
 	float                                         DistanceFocusLevel;                                // 0x0230(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -468,17 +466,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AtomListenerFocusPoint">();
+		STATIC_CLASS_IMPL("AtomListenerFocusPoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AtomListenerFocusPoint")
 	}
 	static class UAtomListenerFocusPoint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAtomListenerFocusPoint>();
 	}
 };
-static_assert(alignof(UAtomListenerFocusPoint) == 0x000010, "Wrong alignment on UAtomListenerFocusPoint");
-static_assert(sizeof(UAtomListenerFocusPoint) == 0x000240, "Wrong size on UAtomListenerFocusPoint");
-static_assert(offsetof(UAtomListenerFocusPoint, DistanceFocusLevel) == 0x000230, "Member 'UAtomListenerFocusPoint::DistanceFocusLevel' has a wrong offset!");
-static_assert(offsetof(UAtomListenerFocusPoint, DirectionFocusLevel) == 0x000234, "Member 'UAtomListenerFocusPoint::DirectionFocusLevel' has a wrong offset!");
+DUMPER7_ASSERTS_UAtomListenerFocusPoint;
 
 // Class CriWareRuntime.AtomCallbackManager
 // 0x0028 (0x0050 - 0x0028)
@@ -494,15 +493,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AtomCallbackManager">();
+		STATIC_CLASS_IMPL("AtomCallbackManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AtomCallbackManager")
 	}
 	static class UAtomCallbackManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAtomCallbackManager>();
 	}
 };
-static_assert(alignof(UAtomCallbackManager) == 0x000008, "Wrong alignment on UAtomCallbackManager");
-static_assert(sizeof(UAtomCallbackManager) == 0x000050, "Wrong size on UAtomCallbackManager");
+DUMPER7_ASSERTS_UAtomCallbackManager;
 
 // Class CriWareRuntime.AtomCategory
 // 0x0000 (0x0028 - 0x0028)
@@ -528,15 +530,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AtomCategory">();
+		STATIC_CLASS_IMPL("AtomCategory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AtomCategory")
 	}
 	static class UAtomCategory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAtomCategory>();
 	}
 };
-static_assert(alignof(UAtomCategory) == 0x000008, "Wrong alignment on UAtomCategory");
-static_assert(sizeof(UAtomCategory) == 0x000028, "Wrong size on UAtomCategory");
+DUMPER7_ASSERTS_UAtomCategory;
 
 // Class CriWareRuntime.AtomComponent
 // 0x10C0 (0x12F0 - 0x0230)
@@ -665,42 +670,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AtomComponent">();
+		STATIC_CLASS_IMPL("AtomComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AtomComponent")
 	}
 	static class UAtomComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAtomComponent>();
 	}
 };
-static_assert(alignof(UAtomComponent) == 0x000010, "Wrong alignment on UAtomComponent");
-static_assert(sizeof(UAtomComponent) == 0x0012F0, "Wrong size on UAtomComponent");
-static_assert(offsetof(UAtomComponent, Sound) == 0x000238, "Member 'UAtomComponent::Sound' has a wrong offset!");
-static_assert(offsetof(UAtomComponent, Region) == 0x000240, "Member 'UAtomComponent::Region' has a wrong offset!");
-static_assert(offsetof(UAtomComponent, DefaultVolume) == 0x00024C, "Member 'UAtomComponent::DefaultVolume' has a wrong offset!");
-static_assert(offsetof(UAtomComponent, bIsMovable) == 0x000251, "Member 'UAtomComponent::bIsMovable' has a wrong offset!");
-static_assert(offsetof(UAtomComponent, bCanStraddleAudioVolume) == 0x000252, "Member 'UAtomComponent::bCanStraddleAudioVolume' has a wrong offset!");
-static_assert(offsetof(UAtomComponent, bUseAudioVolume) == 0x000253, "Member 'UAtomComponent::bUseAudioVolume' has a wrong offset!");
-static_assert(offsetof(UAtomComponent, bUseAreaSoundVolume) == 0x000254, "Member 'UAtomComponent::bUseAreaSoundVolume' has a wrong offset!");
-static_assert(offsetof(UAtomComponent, SoundObject) == 0x000258, "Member 'UAtomComponent::SoundObject' has a wrong offset!");
-static_assert(offsetof(UAtomComponent, DefaultBlockIndex) == 0x000260, "Member 'UAtomComponent::DefaultBlockIndex' has a wrong offset!");
-static_assert(offsetof(UAtomComponent, DefaultAisacControl) == 0x000268, "Member 'UAtomComponent::DefaultAisacControl' has a wrong offset!");
-static_assert(offsetof(UAtomComponent, DefaultSelectorLabel) == 0x000278, "Member 'UAtomComponent::DefaultSelectorLabel' has a wrong offset!");
-static_assert(offsetof(UAtomComponent, bIsOverrideAisacControlSettingsWithVelocity) == 0x000288, "Member 'UAtomComponent::bIsOverrideAisacControlSettingsWithVelocity' has a wrong offset!");
-static_assert(offsetof(UAtomComponent, OverrideAisacControlSettingsWithVelocity) == 0x000290, "Member 'UAtomComponent::OverrideAisacControlSettingsWithVelocity' has a wrong offset!");
-static_assert(offsetof(UAtomComponent, LoopSetting) == 0x0002A0, "Member 'UAtomComponent::LoopSetting' has a wrong offset!");
-static_assert(offsetof(UAtomComponent, OnStatusChanged) == 0x0002A8, "Member 'UAtomComponent::OnStatusChanged' has a wrong offset!");
-static_assert(offsetof(UAtomComponent, OnAudioVolumeChanged) == 0x0002B8, "Member 'UAtomComponent::OnAudioVolumeChanged' has a wrong offset!");
-static_assert(offsetof(UAtomComponent, OnAudioFinished) == 0x0002C8, "Member 'UAtomComponent::OnAudioFinished' has a wrong offset!");
-static_assert(offsetof(UAtomComponent, OnAtomSoundCueBlockIndexChanged) == 0x0002D8, "Member 'UAtomComponent::OnAtomSoundCueBlockIndexChanged' has a wrong offset!");
-static_assert(offsetof(UAtomComponent, PlayWorld) == 0x0002E8, "Member 'UAtomComponent::PlayWorld' has a wrong offset!");
-static_assert(offsetof(UAtomComponent, GameViewport) == 0x0002F0, "Member 'UAtomComponent::GameViewport' has a wrong offset!");
-static_assert(offsetof(UAtomComponent, DefaultSoundObject) == 0x000320, "Member 'UAtomComponent::DefaultSoundObject' has a wrong offset!");
-static_assert(offsetof(UAtomComponent, AttenuationSettings) == 0x000330, "Member 'UAtomComponent::AttenuationSettings' has a wrong offset!");
-static_assert(offsetof(UAtomComponent, AttenuationOverrides) == 0x000338, "Member 'UAtomComponent::AttenuationOverrides' has a wrong offset!");
-static_assert(offsetof(UAtomComponent, CueSheet) == 0x001208, "Member 'UAtomComponent::CueSheet' has a wrong offset!");
-static_assert(offsetof(UAtomComponent, AppliedSoundObject) == 0x001220, "Member 'UAtomComponent::AppliedSoundObject' has a wrong offset!");
-static_assert(offsetof(UAtomComponent, OnAtomBeatSyncCallback) == 0x001248, "Member 'UAtomComponent::OnAtomBeatSyncCallback' has a wrong offset!");
-static_assert(offsetof(UAtomComponent, OnAtomSequenceCallback) == 0x001258, "Member 'UAtomComponent::OnAtomSequenceCallback' has a wrong offset!");
+DUMPER7_ASSERTS_UAtomComponent;
 
 // Class CriWareRuntime.AtomCueSheetLoaderComponent
 // 0x00B0 (0x02E0 - 0x0230)
@@ -725,20 +706,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AtomCueSheetLoaderComponent">();
+		STATIC_CLASS_IMPL("AtomCueSheetLoaderComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AtomCueSheetLoaderComponent")
 	}
 	static class UAtomCueSheetLoaderComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAtomCueSheetLoaderComponent>();
 	}
 };
-static_assert(alignof(UAtomCueSheetLoaderComponent) == 0x000010, "Wrong alignment on UAtomCueSheetLoaderComponent");
-static_assert(sizeof(UAtomCueSheetLoaderComponent) == 0x0002E0, "Wrong size on UAtomCueSheetLoaderComponent");
-static_assert(offsetof(UAtomCueSheetLoaderComponent, CueSheetReference) == 0x000230, "Member 'UAtomCueSheetLoaderComponent::CueSheetReference' has a wrong offset!");
-static_assert(offsetof(UAtomCueSheetLoaderComponent, BinderComponent) == 0x000250, "Member 'UAtomCueSheetLoaderComponent::BinderComponent' has a wrong offset!");
-static_assert(offsetof(UAtomCueSheetLoaderComponent, OnLoadCompleted) == 0x000258, "Member 'UAtomCueSheetLoaderComponent::OnLoadCompleted' has a wrong offset!");
-static_assert(offsetof(UAtomCueSheetLoaderComponent, OnLoadError) == 0x000268, "Member 'UAtomCueSheetLoaderComponent::OnLoadError' has a wrong offset!");
-static_assert(offsetof(UAtomCueSheetLoaderComponent, CueSheet) == 0x0002A8, "Member 'UAtomCueSheetLoaderComponent::CueSheet' has a wrong offset!");
+DUMPER7_ASSERTS_UAtomCueSheetLoaderComponent;
 
 // Class CriWareRuntime.AtomDeviceWatcher
 // 0x0028 (0x0050 - 0x0028)
@@ -755,16 +734,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AtomDeviceWatcher">();
+		STATIC_CLASS_IMPL("AtomDeviceWatcher")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AtomDeviceWatcher")
 	}
 	static class UAtomDeviceWatcher* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAtomDeviceWatcher>();
 	}
 };
-static_assert(alignof(UAtomDeviceWatcher) == 0x000008, "Wrong alignment on UAtomDeviceWatcher");
-static_assert(sizeof(UAtomDeviceWatcher) == 0x000050, "Wrong size on UAtomDeviceWatcher");
-static_assert(offsetof(UAtomDeviceWatcher, OnDeviceUpdated) == 0x000028, "Member 'UAtomDeviceWatcher::OnDeviceUpdated' has a wrong offset!");
+DUMPER7_ASSERTS_UAtomDeviceWatcher;
 
 // Class CriWareRuntime.AtomDisposer
 // 0x0010 (0x02A0 - 0x0290)
@@ -776,15 +757,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AtomDisposer">();
+		STATIC_CLASS_IMPL("AtomDisposer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AtomDisposer")
 	}
 	static class AAtomDisposer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAtomDisposer>();
 	}
 };
-static_assert(alignof(AAtomDisposer) == 0x000008, "Wrong alignment on AAtomDisposer");
-static_assert(sizeof(AAtomDisposer) == 0x0002A0, "Wrong size on AAtomDisposer");
+DUMPER7_ASSERTS_AAtomDisposer;
 
 // Class CriWareRuntime.AtomParameterComponent
 // 0x0010 (0x00B0 - 0x00A0)
@@ -797,17 +781,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AtomParameterComponent">();
+		STATIC_CLASS_IMPL("AtomParameterComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AtomParameterComponent")
 	}
 	static class UAtomParameterComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAtomParameterComponent>();
 	}
 };
-static_assert(alignof(UAtomParameterComponent) == 0x000008, "Wrong alignment on UAtomParameterComponent");
-static_assert(sizeof(UAtomParameterComponent) == 0x0000B0, "Wrong size on UAtomParameterComponent");
-static_assert(offsetof(UAtomParameterComponent, SoundObject) == 0x0000A0, "Member 'UAtomParameterComponent::SoundObject' has a wrong offset!");
-static_assert(offsetof(UAtomParameterComponent, Region) == 0x0000A8, "Member 'UAtomParameterComponent::Region' has a wrong offset!");
+DUMPER7_ASSERTS_UAtomParameterComponent;
 
 // Class CriWareRuntime.AtomSound
 // 0x0008 (0x0298 - 0x0290)
@@ -819,16 +804,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AtomSound">();
+		STATIC_CLASS_IMPL("AtomSound")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AtomSound")
 	}
 	static class AAtomSound* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAtomSound>();
 	}
 };
-static_assert(alignof(AAtomSound) == 0x000008, "Wrong alignment on AAtomSound");
-static_assert(sizeof(AAtomSound) == 0x000298, "Wrong size on AAtomSound");
-static_assert(offsetof(AAtomSound, AtomComponent) == 0x000290, "Member 'AAtomSound::AtomComponent' has a wrong offset!");
+DUMPER7_ASSERTS_AAtomSound;
 
 // Class CriWareRuntime.AtomSoundData
 // 0x0010 (0x02A0 - 0x0290)
@@ -841,16 +828,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AtomSoundData">();
+		STATIC_CLASS_IMPL("AtomSoundData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AtomSoundData")
 	}
 	static class AAtomSoundData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAtomSoundData>();
 	}
 };
-static_assert(alignof(AAtomSoundData) == 0x000008, "Wrong alignment on AAtomSoundData");
-static_assert(sizeof(AAtomSoundData) == 0x0002A0, "Wrong size on AAtomSoundData");
-static_assert(offsetof(AAtomSoundData, CueSheet) == 0x000290, "Member 'AAtomSoundData::CueSheet' has a wrong offset!");
+DUMPER7_ASSERTS_AAtomSoundData;
 
 // Class CriWareRuntime.AtomSoundObject
 // 0x0018 (0x0048 - 0x0030)
@@ -864,17 +853,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AtomSoundObject">();
+		STATIC_CLASS_IMPL("AtomSoundObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AtomSoundObject")
 	}
 	static class UAtomSoundObject* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAtomSoundObject>();
 	}
 };
-static_assert(alignof(UAtomSoundObject) == 0x000008, "Wrong alignment on UAtomSoundObject");
-static_assert(sizeof(UAtomSoundObject) == 0x000048, "Wrong size on UAtomSoundObject");
-static_assert(offsetof(UAtomSoundObject, EnableVoiceLimitScope) == 0x000030, "Member 'UAtomSoundObject::EnableVoiceLimitScope' has a wrong offset!");
-static_assert(offsetof(UAtomSoundObject, EnableCategoryCueLimitScope) == 0x000031, "Member 'UAtomSoundObject::EnableCategoryCueLimitScope' has a wrong offset!");
+DUMPER7_ASSERTS_UAtomSoundObject;
 
 // Class CriWareRuntime.AtomSpectrumAnalyzer
 // 0x0000 (0x0028 - 0x0028)
@@ -889,15 +879,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AtomSpectrumAnalyzer">();
+		STATIC_CLASS_IMPL("AtomSpectrumAnalyzer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AtomSpectrumAnalyzer")
 	}
 	static class UAtomSpectrumAnalyzer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAtomSpectrumAnalyzer>();
 	}
 };
-static_assert(alignof(UAtomSpectrumAnalyzer) == 0x000008, "Wrong alignment on UAtomSpectrumAnalyzer");
-static_assert(sizeof(UAtomSpectrumAnalyzer) == 0x000028, "Wrong size on UAtomSpectrumAnalyzer");
+DUMPER7_ASSERTS_UAtomSpectrumAnalyzer;
 
 // Class CriWareRuntime.AtomStatics
 // 0x0000 (0x0028 - 0x0028)
@@ -942,15 +935,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AtomStatics">();
+		STATIC_CLASS_IMPL("AtomStatics")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AtomStatics")
 	}
 	static class UAtomStatics* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAtomStatics>();
 	}
 };
-static_assert(alignof(UAtomStatics) == 0x000008, "Wrong alignment on UAtomStatics");
-static_assert(sizeof(UAtomStatics) == 0x000028, "Wrong size on UAtomStatics");
+DUMPER7_ASSERTS_UAtomStatics;
 
 // Class CriWareRuntime.AtomTriggerTableFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -962,15 +958,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AtomTriggerTableFunctionLibrary">();
+		STATIC_CLASS_IMPL("AtomTriggerTableFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AtomTriggerTableFunctionLibrary")
 	}
 	static class UAtomTriggerTableFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAtomTriggerTableFunctionLibrary>();
 	}
 };
-static_assert(alignof(UAtomTriggerTableFunctionLibrary) == 0x000008, "Wrong alignment on UAtomTriggerTableFunctionLibrary");
-static_assert(sizeof(UAtomTriggerTableFunctionLibrary) == 0x000028, "Wrong size on UAtomTriggerTableFunctionLibrary");
+DUMPER7_ASSERTS_UAtomTriggerTableFunctionLibrary;
 
 // Class CriWareRuntime.AtomUnrealSoundRenderer
 // 0x8050 (0x84C0 - 0x0470)
@@ -982,15 +981,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AtomUnrealSoundRenderer">();
+		STATIC_CLASS_IMPL("AtomUnrealSoundRenderer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AtomUnrealSoundRenderer")
 	}
 	static class UAtomUnrealSoundRenderer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAtomUnrealSoundRenderer>();
 	}
 };
-static_assert(alignof(UAtomUnrealSoundRenderer) == 0x000008, "Wrong alignment on UAtomUnrealSoundRenderer");
-static_assert(sizeof(UAtomUnrealSoundRenderer) == 0x0084C0, "Wrong size on UAtomUnrealSoundRenderer");
+DUMPER7_ASSERTS_UAtomUnrealSoundRenderer;
 
 // Class CriWareRuntime.AtomWavePlayer
 // 0x00F8 (0x0120 - 0x0028)
@@ -1030,19 +1032,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AtomWavePlayer">();
+		STATIC_CLASS_IMPL("AtomWavePlayer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AtomWavePlayer")
 	}
 	static class UAtomWavePlayer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAtomWavePlayer>();
 	}
 };
-static_assert(alignof(UAtomWavePlayer) == 0x000010, "Wrong alignment on UAtomWavePlayer");
-static_assert(sizeof(UAtomWavePlayer) == 0x000120, "Wrong size on UAtomWavePlayer");
-static_assert(offsetof(UAtomWavePlayer, OnWaveFinished) == 0x000040, "Member 'UAtomWavePlayer::OnWaveFinished' has a wrong offset!");
-static_assert(offsetof(UAtomWavePlayer, OnWavePlaybackPercent) == 0x000068, "Member 'UAtomWavePlayer::OnWavePlaybackPercent' has a wrong offset!");
-static_assert(offsetof(UAtomWavePlayer, SoundAtomCue) == 0x000090, "Member 'UAtomWavePlayer::SoundAtomCue' has a wrong offset!");
-static_assert(offsetof(UAtomWavePlayer, WaveInfo) == 0x000098, "Member 'UAtomWavePlayer::WaveInfo' has a wrong offset!");
+DUMPER7_ASSERTS_UAtomWavePlayer;
 
 // Class CriWareRuntime.CriFsBinderComponent
 // 0x0060 (0x0290 - 0x0230)
@@ -1062,18 +1063,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CriFsBinderComponent">();
+		STATIC_CLASS_IMPL("CriFsBinderComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CriFsBinderComponent")
 	}
 	static class UCriFsBinderComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCriFsBinderComponent>();
 	}
 };
-static_assert(alignof(UCriFsBinderComponent) == 0x000010, "Wrong alignment on UCriFsBinderComponent");
-static_assert(sizeof(UCriFsBinderComponent) == 0x000290, "Wrong size on UCriFsBinderComponent");
-static_assert(offsetof(UCriFsBinderComponent, FilePath) == 0x000230, "Member 'UCriFsBinderComponent::FilePath' has a wrong offset!");
-static_assert(offsetof(UCriFsBinderComponent, OnBindCompleted) == 0x000240, "Member 'UCriFsBinderComponent::OnBindCompleted' has a wrong offset!");
-static_assert(offsetof(UCriFsBinderComponent, OnBindError) == 0x000250, "Member 'UCriFsBinderComponent::OnBindError' has a wrong offset!");
+DUMPER7_ASSERTS_UCriFsBinderComponent;
 
 // Class CriWareRuntime.CriFsLoader
 // 0x0008 (0x0298 - 0x0290)
@@ -1085,16 +1086,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CriFsLoader">();
+		STATIC_CLASS_IMPL("CriFsLoader")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CriFsLoader")
 	}
 	static class ACriFsLoader* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACriFsLoader>();
 	}
 };
-static_assert(alignof(ACriFsLoader) == 0x000008, "Wrong alignment on ACriFsLoader");
-static_assert(sizeof(ACriFsLoader) == 0x000298, "Wrong size on ACriFsLoader");
-static_assert(offsetof(ACriFsLoader, LoaderComponent) == 0x000290, "Member 'ACriFsLoader::LoaderComponent' has a wrong offset!");
+DUMPER7_ASSERTS_ACriFsLoader;
 
 // Class CriWareRuntime.CriFsLoaderComponent
 // 0x0080 (0x02B0 - 0x0230)
@@ -1114,18 +1117,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CriFsLoaderComponent">();
+		STATIC_CLASS_IMPL("CriFsLoaderComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CriFsLoaderComponent")
 	}
 	static class UCriFsLoaderComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCriFsLoaderComponent>();
 	}
 };
-static_assert(alignof(UCriFsLoaderComponent) == 0x000010, "Wrong alignment on UCriFsLoaderComponent");
-static_assert(sizeof(UCriFsLoaderComponent) == 0x0002B0, "Wrong size on UCriFsLoaderComponent");
-static_assert(offsetof(UCriFsLoaderComponent, FilePath) == 0x000230, "Member 'UCriFsLoaderComponent::FilePath' has a wrong offset!");
-static_assert(offsetof(UCriFsLoaderComponent, OnLoadCompleted) == 0x000240, "Member 'UCriFsLoaderComponent::OnLoadCompleted' has a wrong offset!");
-static_assert(offsetof(UCriFsLoaderComponent, OnLoadError) == 0x000250, "Member 'UCriFsLoaderComponent::OnLoadError' has a wrong offset!");
+DUMPER7_ASSERTS_UCriFsLoaderComponent;
 
 // Class CriWareRuntime.CriWareError
 // 0x0028 (0x0050 - 0x0028)
@@ -1142,16 +1145,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CriWareError">();
+		STATIC_CLASS_IMPL("CriWareError")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CriWareError")
 	}
 	static class UCriWareError* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCriWareError>();
 	}
 };
-static_assert(alignof(UCriWareError) == 0x000010, "Wrong alignment on UCriWareError");
-static_assert(sizeof(UCriWareError) == 0x000050, "Wrong size on UCriWareError");
-static_assert(offsetof(UCriWareError, OnCriWareError) == 0x000030, "Member 'UCriWareError::OnCriWareError' has a wrong offset!");
+DUMPER7_ASSERTS_UCriWareError;
 
 // Class CriWareRuntime.CriWareFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -1166,15 +1171,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CriWareFunctionLibrary">();
+		STATIC_CLASS_IMPL("CriWareFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CriWareFunctionLibrary")
 	}
 	static class UCriWareFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCriWareFunctionLibrary>();
 	}
 };
-static_assert(alignof(UCriWareFunctionLibrary) == 0x000008, "Wrong alignment on UCriWareFunctionLibrary");
-static_assert(sizeof(UCriWareFunctionLibrary) == 0x000028, "Wrong size on UCriWareFunctionLibrary");
+DUMPER7_ASSERTS_UCriWareFunctionLibrary;
 
 // Class CriWareRuntime.CriWareInitializer
 // 0x0000 (0x0028 - 0x0028)
@@ -1183,15 +1191,18 @@ class UCriWareInitializer final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CriWareInitializer">();
+		STATIC_CLASS_IMPL("CriWareInitializer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CriWareInitializer")
 	}
 	static class UCriWareInitializer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCriWareInitializer>();
 	}
 };
-static_assert(alignof(UCriWareInitializer) == 0x000008, "Wrong alignment on UCriWareInitializer");
-static_assert(sizeof(UCriWareInitializer) == 0x000028, "Wrong size on UCriWareInitializer");
+DUMPER7_ASSERTS_UCriWareInitializer;
 
 // Class CriWareRuntime.CriWarePluginSettings
 // 0x0570 (0x0598 - 0x0028)
@@ -1401,121 +1412,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CriWarePluginSettings">();
+		STATIC_CLASS_IMPL("CriWarePluginSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CriWarePluginSettings")
 	}
 	static class UCriWarePluginSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCriWarePluginSettings>();
 	}
 };
-static_assert(alignof(UCriWarePluginSettings) == 0x000008, "Wrong alignment on UCriWarePluginSettings");
-static_assert(sizeof(UCriWarePluginSettings) == 0x000598, "Wrong size on UCriWarePluginSettings");
-static_assert(offsetof(UCriWarePluginSettings, bNoExistCriWareIni) == 0x000028, "Member 'UCriWarePluginSettings::bNoExistCriWareIni' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, bEditableCriWareAdxLipSyncSetting) == 0x000029, "Member 'UCriWarePluginSettings::bEditableCriWareAdxLipSyncSetting' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, NonAssetContentDir) == 0x000030, "Member 'UCriWarePluginSettings::NonAssetContentDir' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, ContentDir) == 0x000040, "Member 'UCriWarePluginSettings::ContentDir' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, NumBinders) == 0x000060, "Member 'UCriWarePluginSettings::NumBinders' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, MaxBinds) == 0x000068, "Member 'UCriWarePluginSettings::MaxBinds' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, NumLoaders) == 0x000070, "Member 'UCriWarePluginSettings::NumLoaders' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, MaxFiles) == 0x000078, "Member 'UCriWarePluginSettings::MaxFiles' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, MaxPath) == 0x000080, "Member 'UCriWarePluginSettings::MaxPath' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, OutputsLogFileSystem) == 0x000088, "Member 'UCriWarePluginSettings::OutputsLogFileSystem' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, PS4_FileAccessThreadAffinityMask) == 0x00008C, "Member 'UCriWarePluginSettings::PS4_FileAccessThreadAffinityMask' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, PS4_DataDecompressionThreadAffinityMask) == 0x000094, "Member 'UCriWarePluginSettings::PS4_DataDecompressionThreadAffinityMask' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, PS4_MemoryFileSystemThreadAffinityMask) == 0x00009C, "Member 'UCriWarePluginSettings::PS4_MemoryFileSystemThreadAffinityMask' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, PS4_FileAccessThreadPriority) == 0x0000A4, "Member 'UCriWarePluginSettings::PS4_FileAccessThreadPriority' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, PS4_DataDecompressionThreadPriority) == 0x0000AC, "Member 'UCriWarePluginSettings::PS4_DataDecompressionThreadPriority' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, PS4_MemoryFileSystemThreadPriority) == 0x0000B4, "Member 'UCriWarePluginSettings::PS4_MemoryFileSystemThreadPriority' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, AutomaticallyCreateCueAsset) == 0x0000BC, "Member 'UCriWarePluginSettings::AutomaticallyCreateCueAsset' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, UsesInGamePreview) == 0x0000BD, "Member 'UCriWarePluginSettings::UsesInGamePreview' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, OutputsLogAtom) == 0x0000BF, "Member 'UCriWarePluginSettings::OutputsLogAtom' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, AwbRootDirectory) == 0x0000C8, "Member 'UCriWarePluginSettings::AwbRootDirectory' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, AwbRoot) == 0x0000D8, "Member 'UCriWarePluginSettings::AwbRoot' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, MonitorCommunicationBufferSize) == 0x0000F8, "Member 'UCriWarePluginSettings::MonitorCommunicationBufferSize' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, MaxPitch) == 0x000100, "Member 'UCriWarePluginSettings::MaxPitch' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, AsrOutputChannels) == 0x000108, "Member 'UCriWarePluginSettings::AsrOutputChannels' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, MaxVirtualVoices) == 0x000110, "Member 'UCriWarePluginSettings::MaxVirtualVoices' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, NumStandardMemoryVoices) == 0x000118, "Member 'UCriWarePluginSettings::NumStandardMemoryVoices' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, StandardMemoryVoiceNumChannels) == 0x000120, "Member 'UCriWarePluginSettings::StandardMemoryVoiceNumChannels' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, StandardMemoryVoiceSamplingRate) == 0x000128, "Member 'UCriWarePluginSettings::StandardMemoryVoiceSamplingRate' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, NumStandardStreamingVoices) == 0x000130, "Member 'UCriWarePluginSettings::NumStandardStreamingVoices' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, StandardStreamingVoiceNumChannels) == 0x000138, "Member 'UCriWarePluginSettings::StandardStreamingVoiceNumChannels' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, StandardStreamingVoiceSamplingRate) == 0x000140, "Member 'UCriWarePluginSettings::StandardStreamingVoiceSamplingRate' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, PoolAtomComponent) == 0x000148, "Member 'UCriWarePluginSettings::PoolAtomComponent' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, AtomConfig) == 0x000150, "Member 'UCriWarePluginSettings::AtomConfig' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, AcfFileName) == 0x000190, "Member 'UCriWarePluginSettings::AcfFileName' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, AtomConfigDataTable) == 0x0001A0, "Member 'UCriWarePluginSettings::AtomConfigDataTable' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, AtomOutputPortDataTable) == 0x0001E0, "Member 'UCriWarePluginSettings::AtomOutputPortDataTable' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, DistanceFactor) == 0x000220, "Member 'UCriWarePluginSettings::DistanceFactor' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, SoundRendererTypeUI) == 0x000228, "Member 'UCriWarePluginSettings::SoundRendererTypeUI' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, SoundRendererType) == 0x00022C, "Member 'UCriWarePluginSettings::SoundRendererType' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, AsrRackConfigUI) == 0x000238, "Member 'UCriWarePluginSettings::AsrRackConfigUI' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, AsrRackConfig) == 0x000248, "Member 'UCriWarePluginSettings::AsrRackConfig' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, Hardware1) == 0x000268, "Member 'UCriWarePluginSettings::Hardware1' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, Hardware2) == 0x000278, "Member 'UCriWarePluginSettings::Hardware2' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, Hardware3) == 0x000288, "Member 'UCriWarePluginSettings::Hardware3' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, Hardware4) == 0x000298, "Member 'UCriWarePluginSettings::Hardware4' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, EconomicTickMarginDistance) == 0x0002A8, "Member 'UCriWarePluginSettings::EconomicTickMarginDistance' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, EconomicTickFrequency) == 0x0002B0, "Member 'UCriWarePluginSettings::EconomicTickFrequency' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, CullingMarginDistance) == 0x0002B8, "Member 'UCriWarePluginSettings::CullingMarginDistance' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, EnableDirectDbasConfig) == 0x0002C0, "Member 'UCriWarePluginSettings::EnableDirectDbasConfig' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, DbasIdentifier) == 0x0002C4, "Member 'UCriWarePluginSettings::DbasIdentifier' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, DbasMaxStreams) == 0x0002CC, "Member 'UCriWarePluginSettings::DbasMaxStreams' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, DbasMaxBps) == 0x0002D4, "Member 'UCriWarePluginSettings::DbasMaxBps' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, DbasMaxManaStreams) == 0x0002DC, "Member 'UCriWarePluginSettings::DbasMaxManaStreams' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, DbasMaxManaBps) == 0x0002E4, "Member 'UCriWarePluginSettings::DbasMaxManaBps' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, DbasNumSecurementBuffers) == 0x0002EC, "Member 'UCriWarePluginSettings::DbasNumSecurementBuffers' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, HcaMxVoiceSamplingRate) == 0x0002F4, "Member 'UCriWarePluginSettings::HcaMxVoiceSamplingRate' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, NumHcaMxMemoryVoices) == 0x0002FC, "Member 'UCriWarePluginSettings::NumHcaMxMemoryVoices' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, HcaMxMemoryVoiceNumChannels) == 0x000304, "Member 'UCriWarePluginSettings::HcaMxMemoryVoiceNumChannels' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, NumHcaMxStreamingVoices) == 0x00030C, "Member 'UCriWarePluginSettings::NumHcaMxStreamingVoices' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, HcaMxStreamingVoiceNumChannels) == 0x000314, "Member 'UCriWarePluginSettings::HcaMxStreamingVoiceNumChannels' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, WASAPI_IsExclusive) == 0x00031C, "Member 'UCriWarePluginSettings::WASAPI_IsExclusive' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, WASAPI_BitsPerSample) == 0x000320, "Member 'UCriWarePluginSettings::WASAPI_BitsPerSample' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, WASAPI_SamplingRate) == 0x000328, "Member 'UCriWarePluginSettings::WASAPI_SamplingRate' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, WASAPI_NumChannels) == 0x000330, "Member 'UCriWarePluginSettings::WASAPI_NumChannels' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, UseUnrealSoundRenderer) == 0x000338, "Member 'UCriWarePluginSettings::UseUnrealSoundRenderer' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, UseSonicSYNC) == 0x00033A, "Member 'UCriWarePluginSettings::UseSonicSYNC' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, EnableDualSenseOnWindows) == 0x00033C, "Member 'UCriWarePluginSettings::EnableDualSenseOnWindows' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, PS4_ServerThreadAffinityMask) == 0x000340, "Member 'UCriWarePluginSettings::PS4_ServerThreadAffinityMask' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, PS4_OutputThreadAffinityMask) == 0x000348, "Member 'UCriWarePluginSettings::PS4_OutputThreadAffinityMask' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, PS4_ServerThreadPriority) == 0x000350, "Member 'UCriWarePluginSettings::PS4_ServerThreadPriority' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, PS4_OutputThreadPriority) == 0x000358, "Member 'UCriWarePluginSettings::PS4_OutputThreadPriority' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, PS4_UseAudio3d) == 0x000360, "Member 'UCriWarePluginSettings::PS4_UseAudio3d' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, PS4_NumberOfAudio3dMemoryVoices) == 0x000364, "Member 'UCriWarePluginSettings::PS4_NumberOfAudio3dMemoryVoices' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, PS4_SamplingRateOfAudio3dMemoryVoices) == 0x00036C, "Member 'UCriWarePluginSettings::PS4_SamplingRateOfAudio3dMemoryVoices' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, PS4_NumberOfAudio3dStreamingVoices) == 0x000374, "Member 'UCriWarePluginSettings::PS4_NumberOfAudio3dStreamingVoices' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, PS4_SamplingRateOfAudio3dStreamingVoices) == 0x00037C, "Member 'UCriWarePluginSettings::PS4_SamplingRateOfAudio3dStreamingVoices' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, PS5_MaxChannelPorts) == 0x000384, "Member 'UCriWarePluginSettings::PS5_MaxChannelPorts' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, PS5_MaxObjectPorts) == 0x00038C, "Member 'UCriWarePluginSettings::PS5_MaxObjectPorts' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, Switch_NumOpusMemoryVoices) == 0x000394, "Member 'UCriWarePluginSettings::Switch_NumOpusMemoryVoices' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, Switch_OpusMemoryVoiceNumChannels) == 0x00039C, "Member 'UCriWarePluginSettings::Switch_OpusMemoryVoiceNumChannels' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, Switch_OpusMemoryVoiceSamplingRate) == 0x0003A4, "Member 'UCriWarePluginSettings::Switch_OpusMemoryVoiceSamplingRate' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, Switch_NumOpusStreamingVoices) == 0x0003AC, "Member 'UCriWarePluginSettings::Switch_NumOpusStreamingVoices' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, Switch_OpusStreamingVoiceNumChannels) == 0x0003B4, "Member 'UCriWarePluginSettings::Switch_OpusStreamingVoiceNumChannels' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, Switch_OpusStreamingVoiceSamplingRate) == 0x0003BC, "Member 'UCriWarePluginSettings::Switch_OpusStreamingVoiceSamplingRate' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, Kando_NumOpusMemoryVoices) == 0x0003C4, "Member 'UCriWarePluginSettings::Kando_NumOpusMemoryVoices' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, Kando_OpusMemoryVoiceNumChannels) == 0x0003CC, "Member 'UCriWarePluginSettings::Kando_OpusMemoryVoiceNumChannels' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, Kando_OpusMemoryVoiceSamplingRate) == 0x0003D4, "Member 'UCriWarePluginSettings::Kando_OpusMemoryVoiceSamplingRate' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, Kando_NumOpusStreamingVoices) == 0x0003DC, "Member 'UCriWarePluginSettings::Kando_NumOpusStreamingVoices' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, Kando_OpusStreamingVoiceNumChannels) == 0x0003E4, "Member 'UCriWarePluginSettings::Kando_OpusStreamingVoiceNumChannels' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, Kando_OpusStreamingVoiceSamplingRate) == 0x0003EC, "Member 'UCriWarePluginSettings::Kando_OpusStreamingVoiceSamplingRate' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, InitializeMana) == 0x0003F4, "Member 'UCriWarePluginSettings::InitializeMana' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, EnableDecodeSkip) == 0x0003F6, "Member 'UCriWarePluginSettings::EnableDecodeSkip' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, MaxDecoderHandles) == 0x0003F8, "Member 'UCriWarePluginSettings::MaxDecoderHandles' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, MaxManaBPS) == 0x000400, "Member 'UCriWarePluginSettings::MaxManaBPS' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, MaxManaStreams) == 0x000408, "Member 'UCriWarePluginSettings::MaxManaStreams' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, UseH264Decoder) == 0x000410, "Member 'UCriWarePluginSettings::UseH264Decoder' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, UseDecoderOutputBuffers) == 0x000412, "Member 'UCriWarePluginSettings::UseDecoderOutputBuffers' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, ForceSoftwareDecodingOnXboxOne) == 0x000414, "Member 'UCriWarePluginSettings::ForceSoftwareDecodingOnXboxOne' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, ForceSoftwareDecodingOnXboxSeries) == 0x000416, "Member 'UCriWarePluginSettings::ForceSoftwareDecodingOnXboxSeries' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, ForceDisableManaStreamerManager) == 0x000418, "Member 'UCriWarePluginSettings::ForceDisableManaStreamerManager' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, InitializeAdxLipSync) == 0x00041A, "Member 'UCriWarePluginSettings::InitializeAdxLipSync' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, MaxNumAnalyzerHandles) == 0x00041C, "Member 'UCriWarePluginSettings::MaxNumAnalyzerHandles' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, bUseManaStartupMovies) == 0x000424, "Member 'UCriWarePluginSettings::bUseManaStartupMovies' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, bWaitForMoviesToComplete) == 0x000425, "Member 'UCriWarePluginSettings::bWaitForMoviesToComplete' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, bMoviesAreSkippable) == 0x000426, "Member 'UCriWarePluginSettings::bMoviesAreSkippable' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, StartupMovies) == 0x000428, "Member 'UCriWarePluginSettings::StartupMovies' has a wrong offset!");
+DUMPER7_ASSERTS_UCriWarePluginSettings;
 
 // Class CriWareRuntime.ManaComponent
 // 0x0200 (0x02A0 - 0x00A0)
@@ -1613,41 +1521,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ManaComponent">();
+		STATIC_CLASS_IMPL("ManaComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ManaComponent")
 	}
 	static class UManaComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UManaComponent>();
 	}
 };
-static_assert(alignof(UManaComponent) == 0x000008, "Wrong alignment on UManaComponent");
-static_assert(sizeof(UManaComponent) == 0x0002A0, "Wrong size on UManaComponent");
-static_assert(offsetof(UManaComponent, Movie) == 0x0000A0, "Member 'UManaComponent::Movie' has a wrong offset!");
-static_assert(offsetof(UManaComponent, OnEventPoint) == 0x0000A8, "Member 'UManaComponent::OnEventPoint' has a wrong offset!");
-static_assert(offsetof(UManaComponent, OnSubtitleChanged) == 0x0000B8, "Member 'UManaComponent::OnSubtitleChanged' has a wrong offset!");
-static_assert(offsetof(UManaComponent, OnStatusChanged) == 0x0000C8, "Member 'UManaComponent::OnStatusChanged' has a wrong offset!");
-static_assert(offsetof(UManaComponent, OnMovieChanged) == 0x0000D8, "Member 'UManaComponent::OnMovieChanged' has a wrong offset!");
-static_assert(offsetof(UManaComponent, OnSeekCompleted) == 0x0000E8, "Member 'UManaComponent::OnSeekCompleted' has a wrong offset!");
-static_assert(offsetof(UManaComponent, OnTrackChanged) == 0x0000F8, "Member 'UManaComponent::OnTrackChanged' has a wrong offset!");
-static_assert(offsetof(UManaComponent, OnFrameOnTime) == 0x000108, "Member 'UManaComponent::OnFrameOnTime' has a wrong offset!");
-static_assert(offsetof(UManaComponent, OnPlayerDestroyed) == 0x000118, "Member 'UManaComponent::OnPlayerDestroyed' has a wrong offset!");
-static_assert(offsetof(UManaComponent, OnRequestData) == 0x000140, "Member 'UManaComponent::OnRequestData' has a wrong offset!");
-static_assert(offsetof(UManaComponent, Playlist) == 0x000190, "Member 'UManaComponent::Playlist' has a wrong offset!");
-static_assert(offsetof(UManaComponent, PlaylistIndex) == 0x000198, "Member 'UManaComponent::PlaylistIndex' has a wrong offset!");
-static_assert(offsetof(UManaComponent, bLoop) == 0x0001A0, "Member 'UManaComponent::bLoop' has a wrong offset!");
-static_assert(offsetof(UManaComponent, AlphaTrack) == 0x0001A4, "Member 'UManaComponent::AlphaTrack' has a wrong offset!");
-static_assert(offsetof(UManaComponent, AudioTrack) == 0x0001A8, "Member 'UManaComponent::AudioTrack' has a wrong offset!");
-static_assert(offsetof(UManaComponent, SubAudioTrack) == 0x0001AC, "Member 'UManaComponent::SubAudioTrack' has a wrong offset!");
-static_assert(offsetof(UManaComponent, ExtraAudioTrack) == 0x0001B0, "Member 'UManaComponent::ExtraAudioTrack' has a wrong offset!");
-static_assert(offsetof(UManaComponent, AudioCategoryName) == 0x0001B8, "Member 'UManaComponent::AudioCategoryName' has a wrong offset!");
-static_assert(offsetof(UManaComponent, SubAudioCategoryName) == 0x0001C8, "Member 'UManaComponent::SubAudioCategoryName' has a wrong offset!");
-static_assert(offsetof(UManaComponent, ExtraAudioCategoryName) == 0x0001D8, "Member 'UManaComponent::ExtraAudioCategoryName' has a wrong offset!");
-static_assert(offsetof(UManaComponent, bSubtitlesEnabled) == 0x0001E8, "Member 'UManaComponent::bSubtitlesEnabled' has a wrong offset!");
-static_assert(offsetof(UManaComponent, SubtitlesChannel) == 0x0001EC, "Member 'UManaComponent::SubtitlesChannel' has a wrong offset!");
-static_assert(offsetof(UManaComponent, SubtitlesEncoding) == 0x0001F0, "Member 'UManaComponent::SubtitlesEncoding' has a wrong offset!");
-static_assert(offsetof(UManaComponent, EndFrameAction) == 0x0001F1, "Member 'UManaComponent::EndFrameAction' has a wrong offset!");
-static_assert(offsetof(UManaComponent, PlaybackTimer) == 0x0001F2, "Member 'UManaComponent::PlaybackTimer' has a wrong offset!");
-static_assert(offsetof(UManaComponent, MaxFrameDrop) == 0x0001F3, "Member 'UManaComponent::MaxFrameDrop' has a wrong offset!");
+DUMPER7_ASSERTS_UManaComponent;
 
 // Class CriWareRuntime.ManaComponentTexture
 // 0x0058 (0x0188 - 0x0130)
@@ -1665,21 +1550,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ManaComponentTexture">();
+		STATIC_CLASS_IMPL("ManaComponentTexture")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ManaComponentTexture")
 	}
 	static class UManaComponentTexture* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UManaComponentTexture>();
 	}
 };
-static_assert(alignof(UManaComponentTexture) == 0x000008, "Wrong alignment on UManaComponentTexture");
-static_assert(sizeof(UManaComponentTexture) == 0x000188, "Wrong size on UManaComponentTexture");
-static_assert(offsetof(UManaComponentTexture, SizeX) == 0x000130, "Member 'UManaComponentTexture::SizeX' has a wrong offset!");
-static_assert(offsetof(UManaComponentTexture, SizeY) == 0x000134, "Member 'UManaComponentTexture::SizeY' has a wrong offset!");
-static_assert(offsetof(UManaComponentTexture, Format) == 0x000138, "Member 'UManaComponentTexture::Format' has a wrong offset!");
-static_assert(offsetof(UManaComponentTexture, ComponentType) == 0x000139, "Member 'UManaComponentTexture::ComponentType' has a wrong offset!");
-static_assert(offsetof(UManaComponentTexture, AddressX) == 0x00013A, "Member 'UManaComponentTexture::AddressX' has a wrong offset!");
-static_assert(offsetof(UManaComponentTexture, AddressY) == 0x00013B, "Member 'UManaComponentTexture::AddressY' has a wrong offset!");
+DUMPER7_ASSERTS_UManaComponentTexture;
 
 // Class CriWareRuntime.ManaSource
 // 0x0000 (0x0028 - 0x0028)
@@ -1688,15 +1570,18 @@ class UManaSource : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ManaSource">();
+		STATIC_CLASS_IMPL("ManaSource")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ManaSource")
 	}
 	static class UManaSource* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UManaSource>();
 	}
 };
-static_assert(alignof(UManaSource) == 0x000008, "Wrong alignment on UManaSource");
-static_assert(sizeof(UManaSource) == 0x000028, "Wrong size on UManaSource");
+DUMPER7_ASSERTS_UManaSource;
 
 // Class CriWareRuntime.ManaMovie
 // 0x0078 (0x00A0 - 0x0028)
@@ -1723,24 +1608,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ManaMovie">();
+		STATIC_CLASS_IMPL("ManaMovie")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ManaMovie")
 	}
 	static class UManaMovie* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UManaMovie>();
 	}
 };
-static_assert(alignof(UManaMovie) == 0x000008, "Wrong alignment on UManaMovie");
-static_assert(sizeof(UManaMovie) == 0x0000A0, "Wrong size on UManaMovie");
-static_assert(offsetof(UManaMovie, VideoTracks) == 0x000030, "Member 'UManaMovie::VideoTracks' has a wrong offset!");
-static_assert(offsetof(UManaMovie, AlphaTracks) == 0x000040, "Member 'UManaMovie::AlphaTracks' has a wrong offset!");
-static_assert(offsetof(UManaMovie, AudioTracks) == 0x000050, "Member 'UManaMovie::AudioTracks' has a wrong offset!");
-static_assert(offsetof(UManaMovie, EventPoints) == 0x000060, "Member 'UManaMovie::EventPoints' has a wrong offset!");
-static_assert(offsetof(UManaMovie, SubtitleTracks) == 0x000070, "Member 'UManaMovie::SubtitleTracks' has a wrong offset!");
-static_assert(offsetof(UManaMovie, NumSubtitleChannels) == 0x000080, "Member 'UManaMovie::NumSubtitleChannels' has a wrong offset!");
-static_assert(offsetof(UManaMovie, MaxSubtitleSize) == 0x000084, "Member 'UManaMovie::MaxSubtitleSize' has a wrong offset!");
-static_assert(offsetof(UManaMovie, MinBufferSize) == 0x000088, "Member 'UManaMovie::MinBufferSize' has a wrong offset!");
-static_assert(offsetof(UManaMovie, MaxChunkSize) == 0x00008C, "Member 'UManaMovie::MaxChunkSize' has a wrong offset!");
+DUMPER7_ASSERTS_UManaMovie;
 
 // Class CriWareRuntime.FileManaMovie
 // 0x0018 (0x00B8 - 0x00A0)
@@ -1757,17 +1636,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FileManaMovie">();
+		STATIC_CLASS_IMPL("FileManaMovie")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FileManaMovie")
 	}
 	static class UFileManaMovie* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFileManaMovie>();
 	}
 };
-static_assert(alignof(UFileManaMovie) == 0x000008, "Wrong alignment on UFileManaMovie");
-static_assert(sizeof(UFileManaMovie) == 0x0000B8, "Wrong size on UFileManaMovie");
-static_assert(offsetof(UFileManaMovie, bPrecacheFile) == 0x0000A0, "Member 'UFileManaMovie::bPrecacheFile' has a wrong offset!");
-static_assert(offsetof(UFileManaMovie, FilePath) == 0x0000A8, "Member 'UFileManaMovie::FilePath' has a wrong offset!");
+DUMPER7_ASSERTS_UFileManaMovie;
 
 // Class CriWareRuntime.DataManaMovie
 // 0x0008 (0x00A8 - 0x00A0)
@@ -1783,15 +1663,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DataManaMovie">();
+		STATIC_CLASS_IMPL("DataManaMovie")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DataManaMovie")
 	}
 	static class UDataManaMovie* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDataManaMovie>();
 	}
 };
-static_assert(alignof(UDataManaMovie) == 0x000008, "Wrong alignment on UDataManaMovie");
-static_assert(sizeof(UDataManaMovie) == 0x0000A8, "Wrong size on UDataManaMovie");
+DUMPER7_ASSERTS_UDataManaMovie;
 
 // Class CriWareRuntime.StreamManaMovie
 // 0x0010 (0x00B0 - 0x00A0)
@@ -1803,16 +1686,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"StreamManaMovie">();
+		STATIC_CLASS_IMPL("StreamManaMovie")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StreamManaMovie")
 	}
 	static class UStreamManaMovie* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStreamManaMovie>();
 	}
 };
-static_assert(alignof(UStreamManaMovie) == 0x000008, "Wrong alignment on UStreamManaMovie");
-static_assert(sizeof(UStreamManaMovie) == 0x0000B0, "Wrong size on UStreamManaMovie");
-static_assert(offsetof(UStreamManaMovie, StreamUrl) == 0x0000A0, "Member 'UStreamManaMovie::StreamUrl' has a wrong offset!");
+DUMPER7_ASSERTS_UStreamManaMovie;
 
 // Class CriWareRuntime.ManaPlayer
 // 0x0198 (0x01C0 - 0x0028)
@@ -1906,32 +1791,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ManaPlayer">();
+		STATIC_CLASS_IMPL("ManaPlayer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ManaPlayer")
 	}
 	static class UManaPlayer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UManaPlayer>();
 	}
 };
-static_assert(alignof(UManaPlayer) == 0x000010, "Wrong alignment on UManaPlayer");
-static_assert(sizeof(UManaPlayer) == 0x0001C0, "Wrong size on UManaPlayer");
-static_assert(offsetof(UManaPlayer, PlayOnOpen) == 0x000030, "Member 'UManaPlayer::PlayOnOpen' has a wrong offset!");
-static_assert(offsetof(UManaPlayer, MaxFrameDrop) == 0x000040, "Member 'UManaPlayer::MaxFrameDrop' has a wrong offset!");
-static_assert(offsetof(UManaPlayer, OnEndReached) == 0x000048, "Member 'UManaPlayer::OnEndReached' has a wrong offset!");
-static_assert(offsetof(UManaPlayer, OnMovieClosed) == 0x000058, "Member 'UManaPlayer::OnMovieClosed' has a wrong offset!");
-static_assert(offsetof(UManaPlayer, OnMovieOpened) == 0x000068, "Member 'UManaPlayer::OnMovieOpened' has a wrong offset!");
-static_assert(offsetof(UManaPlayer, OnMovieOpenFailed) == 0x000078, "Member 'UManaPlayer::OnMovieOpenFailed' has a wrong offset!");
-static_assert(offsetof(UManaPlayer, OnPlaybackResumed) == 0x000088, "Member 'UManaPlayer::OnPlaybackResumed' has a wrong offset!");
-static_assert(offsetof(UManaPlayer, OnPlaybackSuspended) == 0x000098, "Member 'UManaPlayer::OnPlaybackSuspended' has a wrong offset!");
-static_assert(offsetof(UManaPlayer, OnSeekCompleted) == 0x0000A8, "Member 'UManaPlayer::OnSeekCompleted' has a wrong offset!");
-static_assert(offsetof(UManaPlayer, OnTracksChanged) == 0x0000B8, "Member 'UManaPlayer::OnTracksChanged' has a wrong offset!");
-static_assert(offsetof(UManaPlayer, OnSubtitleChanged) == 0x0000C8, "Member 'UManaPlayer::OnSubtitleChanged' has a wrong offset!");
-static_assert(offsetof(UManaPlayer, OnEventPoint) == 0x0000D8, "Member 'UManaPlayer::OnEventPoint' has a wrong offset!");
-static_assert(offsetof(UManaPlayer, ManaTexture) == 0x0000E8, "Member 'UManaPlayer::ManaTexture' has a wrong offset!");
-static_assert(offsetof(UManaPlayer, ManaMovie) == 0x0000F0, "Member 'UManaPlayer::ManaMovie' has a wrong offset!");
-static_assert(offsetof(UManaPlayer, Playlist) == 0x0000F8, "Member 'UManaPlayer::Playlist' has a wrong offset!");
-static_assert(offsetof(UManaPlayer, PlaylistIndex) == 0x000100, "Member 'UManaPlayer::PlaylistIndex' has a wrong offset!");
-static_assert(offsetof(UManaPlayer, ManaComponent) == 0x000108, "Member 'UManaPlayer::ManaComponent' has a wrong offset!");
+DUMPER7_ASSERTS_UManaPlayer;
 
 // Class CriWareRuntime.ManaPlaylist
 // 0x0018 (0x0040 - 0x0028)
@@ -1961,19 +1832,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ManaPlaylist">();
+		STATIC_CLASS_IMPL("ManaPlaylist")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ManaPlaylist")
 	}
 	static class UManaPlaylist* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UManaPlaylist>();
 	}
 };
-static_assert(alignof(UManaPlaylist) == 0x000008, "Wrong alignment on UManaPlaylist");
-static_assert(sizeof(UManaPlaylist) == 0x000040, "Wrong size on UManaPlaylist");
-static_assert(offsetof(UManaPlaylist, Movies) == 0x000028, "Member 'UManaPlaylist::Movies' has a wrong offset!");
-static_assert(offsetof(UManaPlaylist, bIsAlpha) == 0x000038, "Member 'UManaPlaylist::bIsAlpha' has a wrong offset!");
-static_assert(offsetof(UManaPlaylist, bIsMixedTypes) == 0x000039, "Member 'UManaPlaylist::bIsMixedTypes' has a wrong offset!");
-static_assert(offsetof(UManaPlaylist, bIsSeamless) == 0x00003A, "Member 'UManaPlaylist::bIsSeamless' has a wrong offset!");
+DUMPER7_ASSERTS_UManaPlaylist;
 
 // Class CriWareRuntime.ManaSoundComponent
 // 0x00B0 (0x02E0 - 0x0230)
@@ -2009,26 +1879,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ManaSoundComponent">();
+		STATIC_CLASS_IMPL("ManaSoundComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ManaSoundComponent")
 	}
 	static class UManaSoundComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UManaSoundComponent>();
 	}
 };
-static_assert(alignof(UManaSoundComponent) == 0x000010, "Wrong alignment on UManaSoundComponent");
-static_assert(sizeof(UManaSoundComponent) == 0x0002E0, "Wrong size on UManaSoundComponent");
-static_assert(offsetof(UManaSoundComponent, VolumeMultiplier) == 0x000234, "Member 'UManaSoundComponent::VolumeMultiplier' has a wrong offset!");
-static_assert(offsetof(UManaSoundComponent, LowPassFilterFrequency) == 0x000238, "Member 'UManaSoundComponent::LowPassFilterFrequency' has a wrong offset!");
-static_assert(offsetof(UManaSoundComponent, PanSpread) == 0x00023C, "Member 'UManaSoundComponent::PanSpread' has a wrong offset!");
-static_assert(offsetof(UManaSoundComponent, MinAttenuationDistance) == 0x000240, "Member 'UManaSoundComponent::MinAttenuationDistance' has a wrong offset!");
-static_assert(offsetof(UManaSoundComponent, MaxAttenuationDistance) == 0x000244, "Member 'UManaSoundComponent::MaxAttenuationDistance' has a wrong offset!");
-static_assert(offsetof(UManaSoundComponent, AisacControls) == 0x000248, "Member 'UManaSoundComponent::AisacControls' has a wrong offset!");
-static_assert(offsetof(UManaSoundComponent, AttachedAisacs) == 0x000258, "Member 'UManaSoundComponent::AttachedAisacs' has a wrong offset!");
-static_assert(offsetof(UManaSoundComponent, AudioTrackCategory) == 0x000268, "Member 'UManaSoundComponent::AudioTrackCategory' has a wrong offset!");
-static_assert(offsetof(UManaSoundComponent, SubAudioTrackCategory) == 0x000278, "Member 'UManaSoundComponent::SubAudioTrackCategory' has a wrong offset!");
-static_assert(offsetof(UManaSoundComponent, ExtraAudioTrackCategory) == 0x000288, "Member 'UManaSoundComponent::ExtraAudioTrackCategory' has a wrong offset!");
-static_assert(offsetof(UManaSoundComponent, ManaPlayer) == 0x000298, "Member 'UManaSoundComponent::ManaPlayer' has a wrong offset!");
+DUMPER7_ASSERTS_UManaSoundComponent;
 
 // Class CriWareRuntime.ManaTexture
 // 0x00F8 (0x0228 - 0x0130)
@@ -2064,27 +1926,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ManaTexture">();
+		STATIC_CLASS_IMPL("ManaTexture")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ManaTexture")
 	}
 	static class UManaTexture* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UManaTexture>();
 	}
 };
-static_assert(alignof(UManaTexture) == 0x000008, "Wrong alignment on UManaTexture");
-static_assert(sizeof(UManaTexture) == 0x000228, "Wrong size on UManaTexture");
-static_assert(offsetof(UManaTexture, MovieSource) == 0x000138, "Member 'UManaTexture::MovieSource' has a wrong offset!");
-static_assert(offsetof(UManaTexture, MovieFilePath) == 0x000140, "Member 'UManaTexture::MovieFilePath' has a wrong offset!");
-static_assert(offsetof(UManaTexture, TargetGamma) == 0x000154, "Member 'UManaTexture::TargetGamma' has a wrong offset!");
-static_assert(offsetof(UManaTexture, AddressX) == 0x00015C, "Member 'UManaTexture::AddressX' has a wrong offset!");
-static_assert(offsetof(UManaTexture, AddressY) == 0x00015D, "Member 'UManaTexture::AddressY' has a wrong offset!");
-static_assert(offsetof(UManaTexture, ClearColor) == 0x000160, "Member 'UManaTexture::ClearColor' has a wrong offset!");
-static_assert(offsetof(UManaTexture, TargetDimensions) == 0x000174, "Member 'UManaTexture::TargetDimensions' has a wrong offset!");
-static_assert(offsetof(UManaTexture, OverrideFormat) == 0x00017C, "Member 'UManaTexture::OverrideFormat' has a wrong offset!");
-static_assert(offsetof(UManaTexture, OnTextureUpdated) == 0x000180, "Member 'UManaTexture::OnTextureUpdated' has a wrong offset!");
-static_assert(offsetof(UManaTexture, ComponentTextures) == 0x000190, "Member 'UManaTexture::ComponentTextures' has a wrong offset!");
-static_assert(offsetof(UManaTexture, AlphaComponentTextures) == 0x0001A0, "Member 'UManaTexture::AlphaComponentTextures' has a wrong offset!");
-static_assert(offsetof(UManaTexture, ManaPlayer) == 0x0001B0, "Member 'UManaTexture::ManaPlayer' has a wrong offset!");
+DUMPER7_ASSERTS_UManaTexture;
 
 // Class CriWareRuntime.MaterialExpressionManaColorSpaceConverter
 // 0x00D0 (0x0180 - 0x00B0)
@@ -2105,25 +1958,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialExpressionManaColorSpaceConverter">();
+		STATIC_CLASS_IMPL("MaterialExpressionManaColorSpaceConverter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialExpressionManaColorSpaceConverter")
 	}
 	static class UMaterialExpressionManaColorSpaceConverter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialExpressionManaColorSpaceConverter>();
 	}
 };
-static_assert(alignof(UMaterialExpressionManaColorSpaceConverter) == 0x000008, "Wrong alignment on UMaterialExpressionManaColorSpaceConverter");
-static_assert(sizeof(UMaterialExpressionManaColorSpaceConverter) == 0x000180, "Wrong size on UMaterialExpressionManaColorSpaceConverter");
-static_assert(offsetof(UMaterialExpressionManaColorSpaceConverter, Luma) == 0x0000B0, "Member 'UMaterialExpressionManaColorSpaceConverter::Luma' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionManaColorSpaceConverter, ChromaB) == 0x0000D8, "Member 'UMaterialExpressionManaColorSpaceConverter::ChromaB' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionManaColorSpaceConverter, ChromaR) == 0x000100, "Member 'UMaterialExpressionManaColorSpaceConverter::ChromaR' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionManaColorSpaceConverter, Alpha) == 0x000128, "Member 'UMaterialExpressionManaColorSpaceConverter::Alpha' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionManaColorSpaceConverter, Gamma) == 0x000150, "Member 'UMaterialExpressionManaColorSpaceConverter::Gamma' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionManaColorSpaceConverter, bH264) == 0x000178, "Member 'UMaterialExpressionManaColorSpaceConverter::bH264' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionManaColorSpaceConverter, MovieType) == 0x000179, "Member 'UMaterialExpressionManaColorSpaceConverter::MovieType' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionManaColorSpaceConverter, ColorSpace) == 0x00017A, "Member 'UMaterialExpressionManaColorSpaceConverter::ColorSpace' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionManaColorSpaceConverter, bUseGammaExponent) == 0x00017B, "Member 'UMaterialExpressionManaColorSpaceConverter::bUseGammaExponent' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionManaColorSpaceConverter, ConstGamma) == 0x00017C, "Member 'UMaterialExpressionManaColorSpaceConverter::ConstGamma' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialExpressionManaColorSpaceConverter;
 
 // Class CriWareRuntime.MaterialExpressionManaMovieFormatSwitch
 // 0x00D8 (0x0188 - 0x00B0)
@@ -2136,16 +1982,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialExpressionManaMovieFormatSwitch">();
+		STATIC_CLASS_IMPL("MaterialExpressionManaMovieFormatSwitch")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialExpressionManaMovieFormatSwitch")
 	}
 	static class UMaterialExpressionManaMovieFormatSwitch* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialExpressionManaMovieFormatSwitch>();
 	}
 };
-static_assert(alignof(UMaterialExpressionManaMovieFormatSwitch) == 0x000008, "Wrong alignment on UMaterialExpressionManaMovieFormatSwitch");
-static_assert(sizeof(UMaterialExpressionManaMovieFormatSwitch) == 0x000188, "Wrong size on UMaterialExpressionManaMovieFormatSwitch");
-static_assert(offsetof(UMaterialExpressionManaMovieFormatSwitch, Inputs) == 0x0000B0, "Member 'UMaterialExpressionManaMovieFormatSwitch::Inputs' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialExpressionManaMovieFormatSwitch;
 
 // Class CriWareRuntime.PlatformManaMovie
 // 0x0008 (0x00A8 - 0x00A0)
@@ -2157,16 +2005,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PlatformManaMovie">();
+		STATIC_CLASS_IMPL("PlatformManaMovie")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlatformManaMovie")
 	}
 	static class UPlatformManaMovie* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlatformManaMovie>();
 	}
 };
-static_assert(alignof(UPlatformManaMovie) == 0x000008, "Wrong alignment on UPlatformManaMovie");
-static_assert(sizeof(UPlatformManaMovie) == 0x0000A8, "Wrong size on UPlatformManaMovie");
-static_assert(offsetof(UPlatformManaMovie, ManaMovie) == 0x0000A0, "Member 'UPlatformManaMovie::ManaMovie' has a wrong offset!");
+DUMPER7_ASSERTS_UPlatformManaMovie;
 
 // Class CriWareRuntime.SoundAtomConfig
 // 0x0038 (0x0060 - 0x0028)
@@ -2182,16 +2032,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SoundAtomConfig">();
+		STATIC_CLASS_IMPL("SoundAtomConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SoundAtomConfig")
 	}
 	static class USoundAtomConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USoundAtomConfig>();
 	}
 };
-static_assert(alignof(USoundAtomConfig) == 0x000008, "Wrong alignment on USoundAtomConfig");
-static_assert(sizeof(USoundAtomConfig) == 0x000060, "Wrong size on USoundAtomConfig");
-static_assert(offsetof(USoundAtomConfig, AcfFilePath) == 0x000028, "Member 'USoundAtomConfig::AcfFilePath' has a wrong offset!");
+DUMPER7_ASSERTS_USoundAtomConfig;
 
 // Class CriWareRuntime.SoundAtomCue
 // 0x00B0 (0x00D8 - 0x0028)
@@ -2263,48 +2115,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SoundAtomCue">();
+		STATIC_CLASS_IMPL("SoundAtomCue")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SoundAtomCue")
 	}
 	static class USoundAtomCue* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USoundAtomCue>();
 	}
 };
-static_assert(alignof(USoundAtomCue) == 0x000008, "Wrong alignment on USoundAtomCue");
-static_assert(sizeof(USoundAtomCue) == 0x0000D8, "Wrong size on USoundAtomCue");
-static_assert(offsetof(USoundAtomCue, CueSheet) == 0x000028, "Member 'USoundAtomCue::CueSheet' has a wrong offset!");
-static_assert(offsetof(USoundAtomCue, CueName) == 0x000030, "Member 'USoundAtomCue::CueName' has a wrong offset!");
-static_assert(offsetof(USoundAtomCue, LoopSetting) == 0x000040, "Member 'USoundAtomCue::LoopSetting' has a wrong offset!");
-static_assert(offsetof(USoundAtomCue, bApplyAtomParameter) == 0x000041, "Member 'USoundAtomCue::bApplyAtomParameter' has a wrong offset!");
-static_assert(offsetof(USoundAtomCue, Duration) == 0x000044, "Member 'USoundAtomCue::Duration' has a wrong offset!");
-static_assert(offsetof(USoundAtomCue, FirstWaveDuration) == 0x000048, "Member 'USoundAtomCue::FirstWaveDuration' has a wrong offset!");
-static_assert(offsetof(USoundAtomCue, AttenuationSettings) == 0x000050, "Member 'USoundAtomCue::AttenuationSettings' has a wrong offset!");
-static_assert(offsetof(USoundAtomCue, bEnableAudioVolume) == 0x000058, "Member 'USoundAtomCue::bEnableAudioVolume' has a wrong offset!");
-static_assert(offsetof(USoundAtomCue, bIsMovable) == 0x000059, "Member 'USoundAtomCue::bIsMovable' has a wrong offset!");
-static_assert(offsetof(USoundAtomCue, bCanStraddleAudioVolume) == 0x00005A, "Member 'USoundAtomCue::bCanStraddleAudioVolume' has a wrong offset!");
-static_assert(offsetof(USoundAtomCue, bUseDistanceToEnableAudioVolume) == 0x00005B, "Member 'USoundAtomCue::bUseDistanceToEnableAudioVolume' has a wrong offset!");
-static_assert(offsetof(USoundAtomCue, MinDistanceToEnableAudioVolume) == 0x00005C, "Member 'USoundAtomCue::MinDistanceToEnableAudioVolume' has a wrong offset!");
-static_assert(offsetof(USoundAtomCue, bUseAreaSoundVolume) == 0x000060, "Member 'USoundAtomCue::bUseAreaSoundVolume' has a wrong offset!");
-static_assert(offsetof(USoundAtomCue, UpdateRateForFrame) == 0x000064, "Member 'USoundAtomCue::UpdateRateForFrame' has a wrong offset!");
-static_assert(offsetof(USoundAtomCue, Region) == 0x000068, "Member 'USoundAtomCue::Region' has a wrong offset!");
-static_assert(offsetof(USoundAtomCue, bIsEnableChangingAisacValueWithComponentVelocity) == 0x000070, "Member 'USoundAtomCue::bIsEnableChangingAisacValueWithComponentVelocity' has a wrong offset!");
-static_assert(offsetof(USoundAtomCue, AisacControlSettings) == 0x000078, "Member 'USoundAtomCue::AisacControlSettings' has a wrong offset!");
-static_assert(offsetof(USoundAtomCue, bEconomicTick) == 0x000088, "Member 'USoundAtomCue::bEconomicTick' has a wrong offset!");
-static_assert(offsetof(USoundAtomCue, bOverrideEconomicTickSettings) == 0x000089, "Member 'USoundAtomCue::bOverrideEconomicTickSettings' has a wrong offset!");
-static_assert(offsetof(USoundAtomCue, EconomicTickDistanceMargin) == 0x00008C, "Member 'USoundAtomCue::EconomicTickDistanceMargin' has a wrong offset!");
-static_assert(offsetof(USoundAtomCue, EconomicTickFrequency) == 0x000090, "Member 'USoundAtomCue::EconomicTickFrequency' has a wrong offset!");
-static_assert(offsetof(USoundAtomCue, bEnableDistanceCulling) == 0x000094, "Member 'USoundAtomCue::bEnableDistanceCulling' has a wrong offset!");
-static_assert(offsetof(USoundAtomCue, bOverrideCullSettings) == 0x000095, "Member 'USoundAtomCue::bOverrideCullSettings' has a wrong offset!");
-static_assert(offsetof(USoundAtomCue, CullDistanceMargin) == 0x000098, "Member 'USoundAtomCue::CullDistanceMargin' has a wrong offset!");
-static_assert(offsetof(USoundAtomCue, EconomicTickMarginDistance) == 0x00009C, "Member 'USoundAtomCue::EconomicTickMarginDistance' has a wrong offset!");
-static_assert(offsetof(USoundAtomCue, bLoopSettingByAtomCraft) == 0x0000A0, "Member 'USoundAtomCue::bLoopSettingByAtomCraft' has a wrong offset!");
-static_assert(offsetof(USoundAtomCue, bCullingSoundPlayingProcessByDistance) == 0x0000A1, "Member 'USoundAtomCue::bCullingSoundPlayingProcessByDistance' has a wrong offset!");
-static_assert(offsetof(USoundAtomCue, bUseLegacyCullingSettings) == 0x0000A2, "Member 'USoundAtomCue::bUseLegacyCullingSettings' has a wrong offset!");
-static_assert(offsetof(USoundAtomCue, MaxProcessDistance) == 0x0000A4, "Member 'USoundAtomCue::MaxProcessDistance' has a wrong offset!");
-static_assert(offsetof(USoundAtomCue, bOverrideCullingSettings) == 0x0000A8, "Member 'USoundAtomCue::bOverrideCullingSettings' has a wrong offset!");
-static_assert(offsetof(USoundAtomCue, CullingMarginDistance) == 0x0000AC, "Member 'USoundAtomCue::CullingMarginDistance' has a wrong offset!");
-static_assert(offsetof(USoundAtomCue, bLoop) == 0x0000B0, "Member 'USoundAtomCue::bLoop' has a wrong offset!");
-static_assert(offsetof(USoundAtomCue, DefaultAttenuation) == 0x0000B8, "Member 'USoundAtomCue::DefaultAttenuation' has a wrong offset!");
+DUMPER7_ASSERTS_USoundAtomCue;
 
 // Class CriWareRuntime.SoundAtomCueSheet
 // 0x0128 (0x0150 - 0x0028)
@@ -2350,23 +2172,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SoundAtomCueSheet">();
+		STATIC_CLASS_IMPL("SoundAtomCueSheet")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SoundAtomCueSheet")
 	}
 	static class USoundAtomCueSheet* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USoundAtomCueSheet>();
 	}
 };
-static_assert(alignof(USoundAtomCueSheet) == 0x000008, "Wrong alignment on USoundAtomCueSheet");
-static_assert(sizeof(USoundAtomCueSheet) == 0x000150, "Wrong size on USoundAtomCueSheet");
-static_assert(offsetof(USoundAtomCueSheet, AcbFilePath) == 0x000028, "Member 'USoundAtomCueSheet::AcbFilePath' has a wrong offset!");
-static_assert(offsetof(USoundAtomCueSheet, CueSheetName) == 0x000038, "Member 'USoundAtomCueSheet::CueSheetName' has a wrong offset!");
-static_assert(offsetof(USoundAtomCueSheet, NumSlots) == 0x000048, "Member 'USoundAtomCueSheet::NumSlots' has a wrong offset!");
-static_assert(offsetof(USoundAtomCueSheet, bOverrideAwbDirectory) == 0x00004C, "Member 'USoundAtomCueSheet::bOverrideAwbDirectory' has a wrong offset!");
-static_assert(offsetof(USoundAtomCueSheet, AwbDirectory) == 0x000050, "Member 'USoundAtomCueSheet::AwbDirectory' has a wrong offset!");
-static_assert(offsetof(USoundAtomCueSheet, AdditionalData) == 0x000060, "Member 'USoundAtomCueSheet::AdditionalData' has a wrong offset!");
-static_assert(offsetof(USoundAtomCueSheet, CueInfos) == 0x000068, "Member 'USoundAtomCueSheet::CueInfos' has a wrong offset!");
-static_assert(offsetof(USoundAtomCueSheet, OnLoadCompleted_BP) == 0x0000C0, "Member 'USoundAtomCueSheet::OnLoadCompleted_BP' has a wrong offset!");
+DUMPER7_ASSERTS_USoundAtomCueSheet;
 
 }
 

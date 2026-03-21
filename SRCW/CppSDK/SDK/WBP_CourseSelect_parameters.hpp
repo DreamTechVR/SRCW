@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UnionLib_structs.hpp"
-#include "UNION_structs.hpp"
 
 
 namespace SDK::Params
@@ -37,17 +37,7 @@ public:
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_CalcRandomStageIndexBP) == 0x000008, "Wrong alignment on WBP_CourseSelect_C_CalcRandomStageIndexBP");
-static_assert(sizeof(WBP_CourseSelect_C_CalcRandomStageIndexBP) == 0x000028, "Wrong size on WBP_CourseSelect_C_CalcRandomStageIndexBP");
-static_assert(offsetof(WBP_CourseSelect_C_CalcRandomStageIndexBP, GrandPrix) == 0x000000, "Member 'WBP_CourseSelect_C_CalcRandomStageIndexBP::GrandPrix' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_CalcRandomStageIndexBP, Index_0) == 0x000004, "Member 'WBP_CourseSelect_C_CalcRandomStageIndexBP::Index_0' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_CalcRandomStageIndexBP, CallFunc_RandomBool_ReturnValue) == 0x000008, "Member 'WBP_CourseSelect_C_CalcRandomStageIndexBP::CallFunc_RandomBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_CalcRandomStageIndexBP, CallFunc_GetLastFocusedButtonByPlayerIndex_OutLastFocusedButtonIndex) == 0x00000C, "Member 'WBP_CourseSelect_C_CalcRandomStageIndexBP::CallFunc_GetLastFocusedButtonByPlayerIndex_OutLastFocusedButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_CalcRandomStageIndexBP, CallFunc_GetLastFocusedButtonByPlayerIndex_ReturnValue) == 0x000010, "Member 'WBP_CourseSelect_C_CalcRandomStageIndexBP::CallFunc_GetLastFocusedButtonByPlayerIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_CalcRandomStageIndexBP, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'WBP_CourseSelect_C_CalcRandomStageIndexBP::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_CalcRandomStageIndexBP, CallFunc_Subtract_IntInt_ReturnValue) == 0x00001C, "Member 'WBP_CourseSelect_C_CalcRandomStageIndexBP::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_CalcRandomStageIndexBP, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000020, "Member 'WBP_CourseSelect_C_CalcRandomStageIndexBP::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_CalcRandomStageIndexBP, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000021, "Member 'WBP_CourseSelect_C_CalcRandomStageIndexBP::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_CalcRandomStageIndexBP;
 
 // Function WBP_CourseSelect.WBP_CourseSelect_C.DebugOpenGrandPrix
 // 0x0038 (0x0038 - 0x0000)
@@ -68,18 +58,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_DebugOpenGrandPrix) == 0x000008, "Wrong alignment on WBP_CourseSelect_C_DebugOpenGrandPrix");
-static_assert(sizeof(WBP_CourseSelect_C_DebugOpenGrandPrix) == 0x000038, "Wrong size on WBP_CourseSelect_C_DebugOpenGrandPrix");
-static_assert(offsetof(WBP_CourseSelect_C_DebugOpenGrandPrix, Temp_int_Array_Index_Variable) == 0x000000, "Member 'WBP_CourseSelect_C_DebugOpenGrandPrix::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_DebugOpenGrandPrix, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'WBP_CourseSelect_C_DebugOpenGrandPrix::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_DebugOpenGrandPrix, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'WBP_CourseSelect_C_DebugOpenGrandPrix::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_DebugOpenGrandPrix, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x00000C, "Member 'WBP_CourseSelect_C_DebugOpenGrandPrix::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_DebugOpenGrandPrix, CallFunc_Array_Get_Item) == 0x000010, "Member 'WBP_CourseSelect_C_DebugOpenGrandPrix::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_DebugOpenGrandPrix, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000018, "Member 'WBP_CourseSelect_C_DebugOpenGrandPrix::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_DebugOpenGrandPrix, K2Node_DynamicCast_AsWBP_Course_Select_Sub_Course_Icon) == 0x000020, "Member 'WBP_CourseSelect_C_DebugOpenGrandPrix::K2Node_DynamicCast_AsWBP_Course_Select_Sub_Course_Icon' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_DebugOpenGrandPrix, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'WBP_CourseSelect_C_DebugOpenGrandPrix::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_DebugOpenGrandPrix, CallFunc_Array_Length_ReturnValue) == 0x00002C, "Member 'WBP_CourseSelect_C_DebugOpenGrandPrix::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_DebugOpenGrandPrix, CallFunc_Less_IntInt_ReturnValue) == 0x000030, "Member 'WBP_CourseSelect_C_DebugOpenGrandPrix::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_DebugOpenGrandPrix;
 
 // Function WBP_CourseSelect.WBP_CourseSelect_C.DeselectSelectedEmblem
 // 0x0020 (0x0020 - 0x0000)
@@ -94,15 +73,7 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsSelected_ReturnValue;                   // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_DeselectSelectedEmblem) == 0x000008, "Wrong alignment on WBP_CourseSelect_C_DeselectSelectedEmblem");
-static_assert(sizeof(WBP_CourseSelect_C_DeselectSelectedEmblem) == 0x000020, "Wrong size on WBP_CourseSelect_C_DeselectSelectedEmblem");
-static_assert(offsetof(WBP_CourseSelect_C_DeselectSelectedEmblem, Temp_int_Array_Index_Variable) == 0x000000, "Member 'WBP_CourseSelect_C_DeselectSelectedEmblem::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_DeselectSelectedEmblem, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'WBP_CourseSelect_C_DeselectSelectedEmblem::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_DeselectSelectedEmblem, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'WBP_CourseSelect_C_DeselectSelectedEmblem::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_DeselectSelectedEmblem, CallFunc_Array_Length_ReturnValue) == 0x00000C, "Member 'WBP_CourseSelect_C_DeselectSelectedEmblem::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_DeselectSelectedEmblem, CallFunc_Array_Get_Item) == 0x000010, "Member 'WBP_CourseSelect_C_DeselectSelectedEmblem::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_DeselectSelectedEmblem, CallFunc_Less_IntInt_ReturnValue) == 0x000018, "Member 'WBP_CourseSelect_C_DeselectSelectedEmblem::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_DeselectSelectedEmblem, CallFunc_IsSelected_ReturnValue) == 0x000019, "Member 'WBP_CourseSelect_C_DeselectSelectedEmblem::CallFunc_IsSelected_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_DeselectSelectedEmblem;
 
 // Function WBP_CourseSelect.WBP_CourseSelect_C.DoFlirstGPIconNavigationLeft
 // 0x0020 (0x0020 - 0x0000)
@@ -117,13 +88,7 @@ public:
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                K2Node_Select_Default;                             // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_DoFlirstGPIconNavigationLeft) == 0x000008, "Wrong alignment on WBP_CourseSelect_C_DoFlirstGPIconNavigationLeft");
-static_assert(sizeof(WBP_CourseSelect_C_DoFlirstGPIconNavigationLeft) == 0x000020, "Wrong size on WBP_CourseSelect_C_DoFlirstGPIconNavigationLeft");
-static_assert(offsetof(WBP_CourseSelect_C_DoFlirstGPIconNavigationLeft, Navigation_0) == 0x000000, "Member 'WBP_CourseSelect_C_DoFlirstGPIconNavigationLeft::Navigation_0' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_DoFlirstGPIconNavigationLeft, ReturnValue) == 0x000008, "Member 'WBP_CourseSelect_C_DoFlirstGPIconNavigationLeft::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_DoFlirstGPIconNavigationLeft, Temp_bool_Variable) == 0x000010, "Member 'WBP_CourseSelect_C_DoFlirstGPIconNavigationLeft::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_DoFlirstGPIconNavigationLeft, CallFunc_IsTimeTrialEnabled_ReturnValue) == 0x000011, "Member 'WBP_CourseSelect_C_DoFlirstGPIconNavigationLeft::CallFunc_IsTimeTrialEnabled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_DoFlirstGPIconNavigationLeft, K2Node_Select_Default) == 0x000018, "Member 'WBP_CourseSelect_C_DoFlirstGPIconNavigationLeft::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_DoFlirstGPIconNavigationLeft;
 
 // Function WBP_CourseSelect.WBP_CourseSelect_C.ExecuteUbergraph_WBP_CourseSelect
 // 0x08E8 (0x08E8 - 0x0000)
@@ -559,348 +524,7 @@ public:
 	class UUnionUIButtonBaseCore*                 K2Node_CustomEvent_Button_1;                       // 0x08D8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class AAppPlayerController*                   CallFunc_GetAppPlayerController_ReturnValue_4;     // 0x08E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect) == 0x000008, "Wrong alignment on WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect");
-static_assert(sizeof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect) == 0x0008E8, "Wrong size on WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, EntryPoint) == 0x000000, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CustomEvent_Button) == 0x000008, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Array_Index_Variable) == 0x000010, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable) == 0x000014, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Loop_Counter_Variable) == 0x000018, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Loop_Counter_Variable_1) == 0x00001C, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Add_IntInt_ReturnValue) == 0x000020, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Add_IntInt_ReturnValue_1) == 0x000024, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Array_Index_Variable_1) == 0x000028, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Array_Index_Variable_2) == 0x00002C, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Loop_Counter_Variable_2) == 0x000030, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Add_IntInt_ReturnValue_2) == 0x000034, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetCurrentRaceCount_ReturnValue) == 0x000038, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetCurrentRaceCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetMaxRaceCount_ReturnValue) == 0x00003C, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetMaxRaceCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000040, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GreaterEqual_IntInt_ReturnValue_1) == 0x000041, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GreaterEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Array_Index_Variable_3) == 0x000044, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Array_Index_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_BooleanAND_ReturnValue) == 0x000048, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Not_PreBool_ReturnValue) == 0x000049, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_IsDisableGrandPrixMilestoneVersion_ReturnValue) == 0x00004A, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_IsDisableGrandPrixMilestoneVersion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_SpawnObject_ReturnValue) == 0x000050, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Length_ReturnValue) == 0x000058, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Array_Index_Variable_4) == 0x00005C, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Array_Index_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_IsDisableGrandPrixCourseMilestoneVersion_ReturnValue) == 0x000060, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_IsDisableGrandPrixCourseMilestoneVersion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Get_Item) == 0x000068, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_SwitchInteger_CmpSuccess) == 0x000070, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_IsDisableGrandPrixCourse2MilestoneVersion_ReturnValue) == 0x000071, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_IsDisableGrandPrixCourse2MilestoneVersion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Length_ReturnValue_1) == 0x000074, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CreateDelegate_OutputDelegate) == 0x000078, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Get_Item_1) == 0x000088, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_MakeLiteralText_ReturnValue) == 0x000090, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Array_Index_Variable_5) == 0x0000A0, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Array_Index_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_MakeLiteralText_ReturnValue_1) == 0x0000A8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0000B8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Get_Item_2) == 0x0000C0, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Get_Item_3) == 0x0000C8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_IsDisableGrandPrixCourse3MilestoneVersion_ReturnValue) == 0x0000D0, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_IsDisableGrandPrixCourse3MilestoneVersion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Length_ReturnValue_2) == 0x0000D4, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Array_Index_Variable_6) == 0x0000D8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Array_Index_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_MakeLiteralText_ReturnValue_2) == 0x0000E0, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_MakeLiteralText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_IsShippingBuild_ReturnValue) == 0x0000F0, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_IsShippingBuild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Loop_Counter_Variable_3) == 0x0000F4, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Loop_Counter_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Add_IntInt_ReturnValue_3) == 0x0000F8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Array_Index_Variable_7) == 0x0000FC, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Array_Index_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Loop_Counter_Variable_4) == 0x000100, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Loop_Counter_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Add_IntInt_ReturnValue_4) == 0x000104, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Loop_Counter_Variable_5) == 0x000108, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Loop_Counter_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Add_IntInt_ReturnValue_5) == 0x00010C, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Add_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Array_Index_Variable_8) == 0x000110, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Array_Index_Variable_8' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Array_Index_Variable_9) == 0x000114, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Array_Index_Variable_9' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Loop_Counter_Variable_6) == 0x000118, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Loop_Counter_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Add_IntInt_ReturnValue_6) == 0x00011C, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Add_IntInt_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Array_Index_Variable_10) == 0x000120, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Array_Index_Variable_10' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Loop_Counter_Variable_7) == 0x000124, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Loop_Counter_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Add_IntInt_ReturnValue_7) == 0x000128, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Add_IntInt_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Loop_Counter_Variable_8) == 0x00012C, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Loop_Counter_Variable_8' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Loop_Counter_Variable_9) == 0x000130, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Loop_Counter_Variable_9' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Add_IntInt_ReturnValue_8) == 0x000134, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Add_IntInt_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Add_IntInt_ReturnValue_9) == 0x000138, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Add_IntInt_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Loop_Counter_Variable_10) == 0x00013C, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Loop_Counter_Variable_10' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Add_IntInt_ReturnValue_10) == 0x000140, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Add_IntInt_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Array_Index_Variable_11) == 0x000144, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Array_Index_Variable_11' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Loop_Counter_Variable_11) == 0x000148, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Loop_Counter_Variable_11' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Less_IntInt_ReturnValue) == 0x00014C, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Add_IntInt_ReturnValue_11) == 0x000150, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Add_IntInt_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_IsDisableGrandPrixMilestoneVersion_ReturnValue_1) == 0x000154, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_IsDisableGrandPrixMilestoneVersion_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetRandomGrandprixBP_OutItem) == 0x000155, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetRandomGrandprixBP_OutItem' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_CalcRandomStageIndexBP_Index) == 0x000158, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_CalcRandomStageIndexBP_Index' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Map_Find_Value) == 0x000160, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Map_Find_ReturnValue) == 0x000168, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_FindGrandPrixStageId_ReturnValue) == 0x000169, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_FindGrandPrixStageId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_OnAcceptKeyPressed_self_CastInput) == 0x000170, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_OnAcceptKeyPressed_self_CastInput' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetPlayerController_ReturnValue) == 0x000180, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Loop_Counter_Variable_12) == 0x000188, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Loop_Counter_Variable_12' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Less_IntInt_ReturnValue_1) == 0x00018C, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Add_IntInt_ReturnValue_12) == 0x000190, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Add_IntInt_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x000194, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_CanUseStageByGameModeForCourseSelect_ReturnValue) == 0x000195, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_CanUseStageByGameModeForCourseSelect_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_SoundPlay_ReturnValue) == 0x000198, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_SoundPlay_ReturnValue_1) == 0x00019C, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CustomEvent_Button_7) == 0x0001A0, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CustomEvent_Button_7' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetPlayerController_ReturnValue_1) == 0x0001A8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_DynamicCast_AsApp_Player_Controller) == 0x0001B0, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_DynamicCast_bSuccess) == 0x0001B8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_IsValid_ReturnValue) == 0x0001B9, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Array_Index_Variable_12) == 0x0001BC, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Array_Index_Variable_12' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CustomEvent_Object_1) == 0x0001C0, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CustomEvent_Object_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CustomEvent_Object) == 0x0001C8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CustomEvent_Object' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_DynamicCast_AsCourse_Select_Sub_Category_Icon) == 0x0001D0, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_DynamicCast_AsCourse_Select_Sub_Category_Icon' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_DynamicCast_bSuccess_1) == 0x0001D8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_IsValid_ReturnValue_1) == 0x0001D9, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetPlayerController_ReturnValue_2) == 0x0001E0, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetPlayerController_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetSelectedGameModeId_ReturnValue_1) == 0x0001E8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetSelectedGameModeId_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_DynamicCast_AsApp_Player_Controller_1) == 0x0001F0, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_DynamicCast_AsApp_Player_Controller_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_DynamicCast_bSuccess_2) == 0x0001F8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0001F9, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetSelectedRaceParkPresetIsIndividual_ReturnValue) == 0x0001FA, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetSelectedRaceParkPresetIsIndividual_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_IsGrandPrixLeast1Play_ReturnValue) == 0x0001FB, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_IsGrandPrixLeast1Play_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetSelectedGameModeId_ReturnValue_2) == 0x0001FC, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetSelectedGameModeId_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Variable) == 0x000200, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000204, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000205, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_EqualEqual_IntInt_ReturnValue_2) == 0x000206, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_EqualEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Add_IntInt_ReturnValue_13) == 0x000208, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Add_IntInt_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetSelectedGameModeId_ReturnValue_3) == 0x00020C, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetSelectedGameModeId_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CreateDelegate_OutputDelegate_1) == 0x000210, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x000220, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_BooleanAND_ReturnValue_1) == 0x000221, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CreateDelegate_OutputDelegate_2) == 0x000224, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_BooleanOR_ReturnValue) == 0x000234, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CreateDelegate_OutputDelegate_3) == 0x000238, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Array_Index_Variable_13) == 0x000248, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Array_Index_Variable_13' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_UnregisterSingleSubMenu_ReturnValue) == 0x00024C, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_UnregisterSingleSubMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_SoundPlay_ReturnValue_2) == 0x000250, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_SoundPlay_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CreateDelegate_OutputDelegate_4) == 0x000254, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CreateDelegate_OutputDelegate_5) == 0x000264, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CustomEvent_Button_6) == 0x000278, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CustomEvent_Button_6' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CustomEvent_SelectedStageId) == 0x000280, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CustomEvent_SelectedStageId' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_IsStoreRequired_ReturnValue) == 0x000281, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_IsStoreRequired_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_SoundPlay_ReturnValue_3) == 0x000284, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_SoundPlay_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Loop_Counter_Variable_13) == 0x000288, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Loop_Counter_Variable_13' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CustomEvent_Button_5) == 0x000290, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CustomEvent_Button_5' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_DynamicCast_AsUnion_UIButton_Standard) == 0x000298, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_DynamicCast_AsUnion_UIButton_Standard' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_DynamicCast_bSuccess_3) == 0x0002A0, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Add_IntInt_ReturnValue_14) == 0x0002A4, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Add_IntInt_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CustomEvent_PanelIndex) == 0x0002A8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CustomEvent_PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CustomEvent_ButtonIndex) == 0x0002AC, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CustomEvent_ButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CustomEvent_StageId) == 0x0002B0, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CustomEvent_StageId' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CustomEvent_Index) == 0x0002B4, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CustomEvent_Index' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x0002B8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_PlayAnimation_ReturnValue) == 0x0002C0, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_Event_InGameModeId) == 0x0002C8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_Event_InGameModeId' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_EqualEqual_ByteByte_ReturnValue_3) == 0x0002C9, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_EqualEqual_ByteByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_EqualEqual_ByteByte_ReturnValue_4) == 0x0002CA, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_EqualEqual_ByteByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_EqualEqual_ByteByte_ReturnValue_5) == 0x0002CB, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_EqualEqual_ByteByte_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_EqualEqual_ByteByte_ReturnValue_6) == 0x0002CC, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_EqualEqual_ByteByte_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_EqualEqual_ByteByte_ReturnValue_7) == 0x0002CD, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_EqualEqual_ByteByte_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_BooleanOR_ReturnValue_1) == 0x0002CE, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_EqualEqual_ByteByte_ReturnValue_8) == 0x0002CF, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_EqualEqual_ByteByte_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_BooleanOR_ReturnValue_2) == 0x0002D0, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CustomEvent_Button_4) == 0x0002D8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CustomEvent_Button_4' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetSelectedGameModeId_ReturnValue_4) == 0x0002E0, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetSelectedGameModeId_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetDataTableRowNames_OutRowNames) == 0x0002E8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetDataTableRowNames_OutRowNames' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Get3pieceStageIds_StageCourseId) == 0x0002F8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Get3pieceStageIds_StageCourseId' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Get3pieceStageIds_StageCourseId1) == 0x0002F9, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Get3pieceStageIds_StageCourseId1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Get3pieceStageIds_StageCourseId2) == 0x0002FA, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Get3pieceStageIds_StageCourseId2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Length_ReturnValue_3) == 0x0002FC, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Map_Values_Values) == 0x000300, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Map_Values_Values' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Add_IntInt_ReturnValue_15) == 0x000310, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Add_IntInt_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Get_Item_4) == 0x000318, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000340, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x000348, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetPlayerController_ReturnValue_3) == 0x000350, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetPlayerController_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Get_Item_5) == 0x000358, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Get_Item_5' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Length_ReturnValue_4) == 0x000360, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Length_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Less_IntInt_ReturnValue_2) == 0x000364, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_IsStoreRequiredForGrandPrix_ReturnValue) == 0x000365, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_IsStoreRequiredForGrandPrix_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_IsGrandPrixOpened_ReturnValue) == 0x000366, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_IsGrandPrixOpened_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CustomEvent_Button_3) == 0x000368, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CustomEvent_Button_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Not_PreBool_ReturnValue_1) == 0x000370, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_DynamicCast_AsCourse_Select_Sub_Category_Icon_1) == 0x000378, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_DynamicCast_AsCourse_Select_Sub_Category_Icon_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_DynamicCast_bSuccess_4) == 0x000380, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Get_Item_6) == 0x000388, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Get_Item_6' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Length_ReturnValue_5) == 0x000390, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Length_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Less_IntInt_ReturnValue_3) == 0x000394, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Loop_Counter_Variable_14) == 0x000398, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Loop_Counter_Variable_14' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Add_IntInt_ReturnValue_16) == 0x00039C, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Add_IntInt_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_MakeArray_Array) == 0x0003A0, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CustomEvent_bEnable) == 0x0003B0, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CustomEvent_bEnable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Not_PreBool_ReturnValue_2) == 0x0003B1, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Update3Stage_Output_Get) == 0x0003B8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Update3Stage_Output_Get' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CreateDelegate_OutputDelegate_6) == 0x0003C8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CreateDelegate_OutputDelegate_7) == 0x0003D8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CreateDelegate_OutputDelegate_8) == 0x0003E8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CreateDelegate_OutputDelegate_8' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CreateDelegate_OutputDelegate_9) == 0x0003F8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CreateDelegate_OutputDelegate_9' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Array_Index_Variable_14) == 0x000408, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Array_Index_Variable_14' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Get_Item_7) == 0x000410, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Get_Item_7' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Get_Item_8) == 0x000418, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Get_Item_8' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000420, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetDataTableRowFromName_OutRow) == 0x000428, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000508, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_DynamicCast_AsWBP_Course_Select_Sub_Course_Icon) == 0x000510, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_DynamicCast_AsWBP_Course_Select_Sub_Course_Icon' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_DynamicCast_bSuccess_5) == 0x000518, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_PlayAnimation_ReturnValue_1) == 0x000520, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_IsValidSoftObjectReference_ReturnValue) == 0x000528, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_IsValidSoftObjectReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Length_ReturnValue_6) == 0x00052C, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Length_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Less_IntInt_ReturnValue_4) == 0x000530, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Less_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Length_ReturnValue_7) == 0x000534, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Length_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Less_IntInt_ReturnValue_5) == 0x000538, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Less_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetSelectedMenuSpeedClassId_ReturnValue) == 0x000539, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetSelectedMenuSpeedClassId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetProgressIdGrandPrixMenuSpeedClass_ReturnValue) == 0x00053A, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetProgressIdGrandPrixMenuSpeedClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetPlayerController_ReturnValue_4) == 0x000540, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetPlayerController_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_DynamicCast_AsWBP_Course_Select_Sub_Course_Icon_1) == 0x000548, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_DynamicCast_AsWBP_Course_Select_Sub_Course_Icon_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_DynamicCast_bSuccess_6) == 0x000550, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_DynamicCast_bSuccess_6' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_PlayAnimation_ReturnValue_2) == 0x000558, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_SoundPlay_ReturnValue_4) == 0x000560, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_SoundPlay_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Is_3Piece_Enable_Course_bEnableCourse) == 0x000564, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Is_3Piece_Enable_Course_bEnableCourse' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CreateDelegate_OutputDelegate_10) == 0x000568, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CreateDelegate_OutputDelegate_10' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CreateDelegate_OutputDelegate_11) == 0x000578, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CreateDelegate_OutputDelegate_11' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Array_Index_Variable_15) == 0x000588, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Array_Index_Variable_15' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Array_Index_Variable_16) == 0x00058C, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Array_Index_Variable_16' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Get_Item_9) == 0x000590, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Get_Item_9' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Loop_Counter_Variable_15) == 0x000598, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Loop_Counter_Variable_15' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CreateDelegate_OutputDelegate_12) == 0x00059C, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CreateDelegate_OutputDelegate_12' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Less_IntInt_ReturnValue_6) == 0x0005AC, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Less_IntInt_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Add_IntInt_ReturnValue_17) == 0x0005B0, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Add_IntInt_ReturnValue_17' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CreateDelegate_OutputDelegate_13) == 0x0005B4, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CreateDelegate_OutputDelegate_13' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CreateDelegate_OutputDelegate_14) == 0x0005C4, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CreateDelegate_OutputDelegate_14' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CreateDelegate_OutputDelegate_15) == 0x0005D4, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CreateDelegate_OutputDelegate_15' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Loop_Counter_Variable_16) == 0x0005E4, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Loop_Counter_Variable_16' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Add_IntInt_ReturnValue_18) == 0x0005E8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Add_IntInt_ReturnValue_18' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetAppPlayerController_ReturnValue) == 0x0005F0, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetAppPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Array_Index_Variable_17) == 0x0005F8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Array_Index_Variable_17' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Loop_Counter_Variable_17) == 0x0005FC, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Loop_Counter_Variable_17' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetSelectedGameModeId_ReturnValue_5) == 0x000600, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetSelectedGameModeId_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_EqualEqual_ByteByte_ReturnValue_9) == 0x000601, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_EqualEqual_ByteByte_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Add_IntInt_ReturnValue_19) == 0x000604, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Add_IntInt_ReturnValue_19' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_BooleanAND_ReturnValue_2) == 0x000608, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetSelectedGameModeId_ReturnValue_6) == 0x000609, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetSelectedGameModeId_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_EqualEqual_ByteByte_ReturnValue_10) == 0x00060A, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_EqualEqual_ByteByte_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Get_Item_10) == 0x000610, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Get_Item_10' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Length_ReturnValue_8) == 0x000618, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Length_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Less_IntInt_ReturnValue_7) == 0x00061C, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Less_IntInt_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Add_ReturnValue) == 0x000620, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Length_ReturnValue_9) == 0x000624, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Length_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_bool_Has_Been_Initd_Variable) == 0x000628, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Get_Item_11) == 0x000630, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Get_Item_11' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Length_ReturnValue_10) == 0x000638, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Length_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Less_IntInt_ReturnValue_8) == 0x00063C, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Less_IntInt_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Get_Item_12) == 0x000640, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Get_Item_12' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Length_ReturnValue_11) == 0x000648, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Length_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Less_IntInt_ReturnValue_9) == 0x00064C, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Less_IntInt_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CustomEvent_Button_2) == 0x000650, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CustomEvent_Button_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_SoundPlay_ReturnValue_5) == 0x000658, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_SoundPlay_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_bool_IsClosed_Variable) == 0x00065C, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Get_Item_13) == 0x000660, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Get_Item_13' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Length_ReturnValue_12) == 0x000668, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Length_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_IsTimeTrialEnabled_ReturnValue) == 0x00066C, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_IsTimeTrialEnabled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Less_IntInt_ReturnValue_10) == 0x00066D, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Less_IntInt_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_MakeArray_Array_1) == 0x000670, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Get_Item_14) == 0x000680, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Get_Item_14' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_LastIndex_ReturnValue) == 0x000688, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Get_Item_15) == 0x000690, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Get_Item_15' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000698, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Map_Find_Value_1) == 0x0006A0, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Map_Find_Value_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Map_Find_ReturnValue_1) == 0x0006F0, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Map_Find_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Get_Item_16) == 0x0006F8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Get_Item_16' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Length_ReturnValue_13) == 0x000700, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Length_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Less_IntInt_ReturnValue_11) == 0x000704, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Less_IntInt_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetMaxRaceCount_ReturnValue_1) == 0x000708, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetMaxRaceCount_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GreaterEqual_IntInt_ReturnValue_2) == 0x00070C, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GreaterEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_IsTimeTrialEnabled_ReturnValue_1) == 0x00070D, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_IsTimeTrialEnabled_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Get_Item_17) == 0x000710, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Get_Item_17' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Length_ReturnValue_14) == 0x000718, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Length_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Less_IntInt_ReturnValue_12) == 0x00071C, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Less_IntInt_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_IsGrandPrixSelectTimeTrialLinkFirst_ReturnValue) == 0x00071D, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_IsGrandPrixSelectTimeTrialLinkFirst_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_BooleanAND_ReturnValue_3) == 0x00071E, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetPlayerController_ReturnValue_5) == 0x000720, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetPlayerController_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetAppPlayerController_ReturnValue_1) == 0x000728, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetAppPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_SoundPlay_ReturnValue_6) == 0x000730, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_SoundPlay_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_Event_PlayerController) == 0x000738, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_Event_PlayerController' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_SoundPlay_ReturnValue_7) == 0x000740, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_SoundPlay_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetSelectedDriverId_OutId) == 0x000744, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetSelectedDriverId_OutId' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetSelectedDriverId_OutExecsPin) == 0x000745, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetSelectedDriverId_OutExecsPin' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_SwitchEnum_CmpSuccess) == 0x000746, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_IsDriverSuper_ReturnValue) == 0x000747, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_IsDriverSuper_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CreateDelegate_OutputDelegate_16) == 0x000748, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CreateDelegate_OutputDelegate_16' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetSelectedDriverId_OutId_1) == 0x000758, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetSelectedDriverId_OutId_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetSelectedDriverId_OutExecsPin_1) == 0x000759, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetSelectedDriverId_OutExecsPin_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_SoundPlay_ReturnValue_8) == 0x00075C, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_SoundPlay_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_SwitchEnum_CmpSuccess_1) == 0x000760, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_IsDriverSuper_ReturnValue_1) == 0x000761, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_IsDriverSuper_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Array_Index_Variable_18) == 0x000764, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Array_Index_Variable_18' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Get_Item_18) == 0x000768, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Get_Item_18' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetAppPlayerController_ReturnValue_2) == 0x000770, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetAppPlayerController_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Not_PreBool_ReturnValue_3) == 0x000778, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Not_PreBool_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Loop_Counter_Variable_18) == 0x00077C, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Loop_Counter_Variable_18' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Less_IntInt_ReturnValue_13) == 0x000780, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Less_IntInt_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Add_IntInt_ReturnValue_20) == 0x000784, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Add_IntInt_ReturnValue_20' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetCurrentRaceCount_ReturnValue_1) == 0x000788, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetCurrentRaceCount_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GreaterEqual_IntInt_ReturnValue_3) == 0x00078C, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GreaterEqual_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Get_Item_19) == 0x000790, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Get_Item_19' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_BooleanAND_ReturnValue_4) == 0x000798, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_BooleanAND_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Not_PreBool_ReturnValue_4) == 0x000799, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Not_PreBool_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Length_ReturnValue_15) == 0x00079C, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Length_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Less_IntInt_ReturnValue_14) == 0x0007A0, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Less_IntInt_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetPlayerController_ReturnValue_6) == 0x0007A8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetPlayerController_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetAppPlayerController_ReturnValue_3) == 0x0007B0, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetAppPlayerController_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Variable_1) == 0x0007B8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CreateDelegate_OutputDelegate_17) == 0x0007BC, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CreateDelegate_OutputDelegate_17' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Add_IntInt_ReturnValue_21) == 0x0007CC, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Add_IntInt_ReturnValue_21' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetSelectedGameModeId_ReturnValue_7) == 0x0007D0, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetSelectedGameModeId_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_PlayAnimation_ReturnValue_3) == 0x0007D8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_EqualEqual_ByteByte_ReturnValue_11) == 0x0007E0, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_EqualEqual_ByteByte_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Array_Index_Variable_19) == 0x0007E4, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Array_Index_Variable_19' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetStaySceneMonkeyTesting_ReturnValue) == 0x0007E8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetStaySceneMonkeyTesting_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Get_Item_20) == 0x0007F0, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Get_Item_20' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Not_PreBool_ReturnValue_5) == 0x0007F8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Not_PreBool_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Get_Item_21) == 0x000800, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Get_Item_21' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_SwitchInteger_CmpSuccess_1) == 0x000808, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_SwitchInteger_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CreateDelegate_OutputDelegate_18) == 0x00080C, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CreateDelegate_OutputDelegate_18' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Not_PreBool_ReturnValue_6) == 0x00081C, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Not_PreBool_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_IsStoreRequiredForGrandPrix_ReturnValue_1) == 0x00081D, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_IsStoreRequiredForGrandPrix_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_RequestStore_ReturnValue) == 0x00081E, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_RequestStore_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetSelectedGameModeId_ReturnValue_8) == 0x00081F, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetSelectedGameModeId_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_EqualEqual_ByteByte_ReturnValue_12) == 0x000820, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_EqualEqual_ByteByte_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetSelectedGameModeId_ReturnValue_9) == 0x000821, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetSelectedGameModeId_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_EqualEqual_ByteByte_ReturnValue_13) == 0x000822, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_EqualEqual_ByteByte_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_RequestStore_ReturnValue_1) == 0x000823, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_RequestStore_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_RequestStore_ReturnValue_2) == 0x000824, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_RequestStore_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_IsStoreRequiredForGrandPrix_ReturnValue_2) == 0x000825, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_IsStoreRequiredForGrandPrix_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CreateDelegate_OutputDelegate_19) == 0x000828, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CreateDelegate_OutputDelegate_19' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CreateDelegate_OutputDelegate_20) == 0x000838, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CreateDelegate_OutputDelegate_20' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Get_Item_22) == 0x000848, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Get_Item_22' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Length_ReturnValue_16) == 0x000850, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Length_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Less_IntInt_ReturnValue_15) == 0x000854, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Less_IntInt_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CreateDelegate_OutputDelegate_21) == 0x000858, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CreateDelegate_OutputDelegate_21' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_EqualEqual_ByteByte_ReturnValue_14) == 0x000868, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_EqualEqual_ByteByte_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_BooleanOR_ReturnValue_3) == 0x000869, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_BooleanOR_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Get_Item_23) == 0x000870, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Get_Item_23' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Get_Item_24) == 0x000878, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Get_Item_24' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Length_ReturnValue_17) == 0x000880, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Length_ReturnValue_17' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Length_ReturnValue_18) == 0x000884, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Length_ReturnValue_18' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Less_IntInt_ReturnValue_16) == 0x000888, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Less_IntInt_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Less_IntInt_ReturnValue_17) == 0x000889, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Less_IntInt_ReturnValue_17' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000890, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Get_Item_25) == 0x000898, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Get_Item_25' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Length_ReturnValue_19) == 0x0008A0, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Length_ReturnValue_19' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Less_IntInt_ReturnValue_18) == 0x0008A4, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Less_IntInt_ReturnValue_18' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Variable_2) == 0x0008A8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetWorldSubsystem_ReturnValue_1) == 0x0008B0, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetWorldSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_SoundPlay_ReturnValue_9) == 0x0008B8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_SoundPlay_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, Temp_int_Loop_Counter_Variable_19) == 0x0008BC, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::Temp_int_Loop_Counter_Variable_19' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Get_Item_26) == 0x0008C0, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Get_Item_26' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Array_Length_ReturnValue_20) == 0x0008C8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Array_Length_ReturnValue_20' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Less_IntInt_ReturnValue_19) == 0x0008CC, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Less_IntInt_ReturnValue_19' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Less_IntInt_ReturnValue_20) == 0x0008CD, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Less_IntInt_ReturnValue_20' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_Add_IntInt_ReturnValue_22) == 0x0008D0, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_Add_IntInt_ReturnValue_22' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, K2Node_CustomEvent_Button_1) == 0x0008D8, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::K2Node_CustomEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect, CallFunc_GetAppPlayerController_ReturnValue_4) == 0x0008E0, "Member 'WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect::CallFunc_GetAppPlayerController_ReturnValue_4' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_ExecuteUbergraph_WBP_CourseSelect;
 
 // Function WBP_CourseSelect.WBP_CourseSelect_C.GetRandomGrandprixBP
 // 0x0030 (0x0030 - 0x0000)
@@ -915,13 +539,7 @@ public:
 	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Random_OutIndex;                    // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_GetRandomGrandprixBP) == 0x000008, "Wrong alignment on WBP_CourseSelect_C_GetRandomGrandprixBP");
-static_assert(sizeof(WBP_CourseSelect_C_GetRandomGrandprixBP) == 0x000030, "Wrong size on WBP_CourseSelect_C_GetRandomGrandprixBP");
-static_assert(offsetof(WBP_CourseSelect_C_GetRandomGrandprixBP, OutItem) == 0x000000, "Member 'WBP_CourseSelect_C_GetRandomGrandprixBP::OutItem' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_GetRandomGrandprixBP, OpendGrandprixList) == 0x000008, "Member 'WBP_CourseSelect_C_GetRandomGrandprixBP::OpendGrandprixList' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_GetRandomGrandprixBP, CallFunc_CalcSelectableGrandPrixIds_ReturnValue) == 0x000018, "Member 'WBP_CourseSelect_C_GetRandomGrandprixBP::CallFunc_CalcSelectableGrandPrixIds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_GetRandomGrandprixBP, CallFunc_Array_Random_OutItem) == 0x000028, "Member 'WBP_CourseSelect_C_GetRandomGrandprixBP::CallFunc_Array_Random_OutItem' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_GetRandomGrandprixBP, CallFunc_Array_Random_OutIndex) == 0x00002C, "Member 'WBP_CourseSelect_C_GetRandomGrandprixBP::CallFunc_Array_Random_OutIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_GetRandomGrandprixBP;
 
 // Function WBP_CourseSelect.WBP_CourseSelect_C.Init
 // 0x0001 (0x0001 - 0x0000)
@@ -930,9 +548,7 @@ struct WBP_CourseSelect_C_Init final
 public:
 	EGameModeId                                   InGameModeId;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_Init) == 0x000001, "Wrong alignment on WBP_CourseSelect_C_Init");
-static_assert(sizeof(WBP_CourseSelect_C_Init) == 0x000001, "Wrong size on WBP_CourseSelect_C_Init");
-static_assert(offsetof(WBP_CourseSelect_C_Init, InGameModeId) == 0x000000, "Member 'WBP_CourseSelect_C_Init::InGameModeId' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_Init;
 
 // Function WBP_CourseSelect.WBP_CourseSelect_C.InitStageDef
 // 0x0088 (0x0088 - 0x0000)
@@ -951,17 +567,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_InitStageDef) == 0x000008, "Wrong alignment on WBP_CourseSelect_C_InitStageDef");
-static_assert(sizeof(WBP_CourseSelect_C_InitStageDef) == 0x000088, "Wrong size on WBP_CourseSelect_C_InitStageDef");
-static_assert(offsetof(WBP_CourseSelect_C_InitStageDef, Temp_int_Array_Index_Variable) == 0x000000, "Member 'WBP_CourseSelect_C_InitStageDef::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_InitStageDef, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'WBP_CourseSelect_C_InitStageDef::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_InitStageDef, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'WBP_CourseSelect_C_InitStageDef::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_InitStageDef, CallFunc_GetDataTableRowNames_OutRowNames) == 0x000010, "Member 'WBP_CourseSelect_C_InitStageDef::CallFunc_GetDataTableRowNames_OutRowNames' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_InitStageDef, CallFunc_Array_Get_Item) == 0x000020, "Member 'WBP_CourseSelect_C_InitStageDef::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_InitStageDef, CallFunc_GetDataTableRowFromName_OutRow) == 0x000028, "Member 'WBP_CourseSelect_C_InitStageDef::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_InitStageDef, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000078, "Member 'WBP_CourseSelect_C_InitStageDef::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_InitStageDef, CallFunc_Array_Length_ReturnValue) == 0x00007C, "Member 'WBP_CourseSelect_C_InitStageDef::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_InitStageDef, CallFunc_Less_IntInt_ReturnValue) == 0x000080, "Member 'WBP_CourseSelect_C_InitStageDef::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_InitStageDef;
 
 // Function WBP_CourseSelect.WBP_CourseSelect_C.IsTimeTrialEnabled
 // 0x0014 (0x0014 - 0x0000)
@@ -985,23 +591,7 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Select_Default;                             // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_IsTimeTrialEnabled) == 0x000004, "Wrong alignment on WBP_CourseSelect_C_IsTimeTrialEnabled");
-static_assert(sizeof(WBP_CourseSelect_C_IsTimeTrialEnabled) == 0x000014, "Wrong size on WBP_CourseSelect_C_IsTimeTrialEnabled");
-static_assert(offsetof(WBP_CourseSelect_C_IsTimeTrialEnabled, ReturnValue) == 0x000000, "Member 'WBP_CourseSelect_C_IsTimeTrialEnabled::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_IsTimeTrialEnabled, Temp_bool_Variable) == 0x000001, "Member 'WBP_CourseSelect_C_IsTimeTrialEnabled::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_IsTimeTrialEnabled, CallFunc_IsDisableSelectTimeTrialMilestoneVersion_ReturnValue) == 0x000002, "Member 'WBP_CourseSelect_C_IsTimeTrialEnabled::CallFunc_IsDisableSelectTimeTrialMilestoneVersion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_IsTimeTrialEnabled, CallFunc_IsStartedStreamingInstall_ReturnValue) == 0x000003, "Member 'WBP_CourseSelect_C_IsTimeTrialEnabled::CallFunc_IsStartedStreamingInstall_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_IsTimeTrialEnabled, CallFunc_IsGrandPrixLeast1Play_ReturnValue) == 0x000004, "Member 'WBP_CourseSelect_C_IsTimeTrialEnabled::CallFunc_IsGrandPrixLeast1Play_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_IsTimeTrialEnabled, CallFunc_Not_PreBool_ReturnValue) == 0x000005, "Member 'WBP_CourseSelect_C_IsTimeTrialEnabled::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_IsTimeTrialEnabled, CallFunc_GetSelectedPlayerCount_ReturnValue) == 0x000008, "Member 'WBP_CourseSelect_C_IsTimeTrialEnabled::CallFunc_GetSelectedPlayerCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_IsTimeTrialEnabled, Temp_bool_Variable_1) == 0x00000C, "Member 'WBP_CourseSelect_C_IsTimeTrialEnabled::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_IsTimeTrialEnabled, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00000D, "Member 'WBP_CourseSelect_C_IsTimeTrialEnabled::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_IsTimeTrialEnabled, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x00000E, "Member 'WBP_CourseSelect_C_IsTimeTrialEnabled::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_IsTimeTrialEnabled, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00000F, "Member 'WBP_CourseSelect_C_IsTimeTrialEnabled::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_IsTimeTrialEnabled, CallFunc_BooleanAND_ReturnValue) == 0x000010, "Member 'WBP_CourseSelect_C_IsTimeTrialEnabled::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_IsTimeTrialEnabled, CallFunc_BooleanAND_ReturnValue_1) == 0x000011, "Member 'WBP_CourseSelect_C_IsTimeTrialEnabled::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_IsTimeTrialEnabled, CallFunc_BooleanAND_ReturnValue_2) == 0x000012, "Member 'WBP_CourseSelect_C_IsTimeTrialEnabled::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_IsTimeTrialEnabled, K2Node_Select_Default) == 0x000013, "Member 'WBP_CourseSelect_C_IsTimeTrialEnabled::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_IsTimeTrialEnabled;
 
 // Function WBP_CourseSelect.WBP_CourseSelect_C.On3PieceStageIconFocusEvent_Event_0
 // 0x0008 (0x0008 - 0x0000)
@@ -1012,10 +602,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Index_0;                                           // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_On3PieceStageIconFocusEvent_Event_0) == 0x000004, "Wrong alignment on WBP_CourseSelect_C_On3PieceStageIconFocusEvent_Event_0");
-static_assert(sizeof(WBP_CourseSelect_C_On3PieceStageIconFocusEvent_Event_0) == 0x000008, "Wrong size on WBP_CourseSelect_C_On3PieceStageIconFocusEvent_Event_0");
-static_assert(offsetof(WBP_CourseSelect_C_On3PieceStageIconFocusEvent_Event_0, StageId) == 0x000000, "Member 'WBP_CourseSelect_C_On3PieceStageIconFocusEvent_Event_0::StageId' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_On3PieceStageIconFocusEvent_Event_0, Index_0) == 0x000004, "Member 'WBP_CourseSelect_C_On3PieceStageIconFocusEvent_Event_0::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_On3PieceStageIconFocusEvent_Event_0;
 
 // Function WBP_CourseSelect.WBP_CourseSelect_C.OnDecisionStageId
 // 0x0001 (0x0001 - 0x0000)
@@ -1024,9 +611,7 @@ struct WBP_CourseSelect_C_OnDecisionStageId final
 public:
 	EStageId                                      SelectedStageId;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_OnDecisionStageId) == 0x000001, "Wrong alignment on WBP_CourseSelect_C_OnDecisionStageId");
-static_assert(sizeof(WBP_CourseSelect_C_OnDecisionStageId) == 0x000001, "Wrong size on WBP_CourseSelect_C_OnDecisionStageId");
-static_assert(offsetof(WBP_CourseSelect_C_OnDecisionStageId, SelectedStageId) == 0x000000, "Member 'WBP_CourseSelect_C_OnDecisionStageId::SelectedStageId' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_OnDecisionStageId;
 
 // Function WBP_CourseSelect.WBP_CourseSelect_C.OnExitState
 // 0x0001 (0x0001 - 0x0000)
@@ -1035,9 +620,7 @@ struct WBP_CourseSelect_C_OnExitState final
 public:
 	bool                                          CallFunc_IsGrandPrixLeast1Play_ReturnValue;        // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_OnExitState) == 0x000001, "Wrong alignment on WBP_CourseSelect_C_OnExitState");
-static_assert(sizeof(WBP_CourseSelect_C_OnExitState) == 0x000001, "Wrong size on WBP_CourseSelect_C_OnExitState");
-static_assert(offsetof(WBP_CourseSelect_C_OnExitState, CallFunc_IsGrandPrixLeast1Play_ReturnValue) == 0x000000, "Member 'WBP_CourseSelect_C_OnExitState::CallFunc_IsGrandPrixLeast1Play_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_OnExitState;
 
 // Function WBP_CourseSelect.WBP_CourseSelect_C.OnFaceButtonLeftPressed
 // 0x0008 (0x0008 - 0x0000)
@@ -1046,9 +629,7 @@ struct WBP_CourseSelect_C_OnFaceButtonLeftPressed final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_OnFaceButtonLeftPressed) == 0x000008, "Wrong alignment on WBP_CourseSelect_C_OnFaceButtonLeftPressed");
-static_assert(sizeof(WBP_CourseSelect_C_OnFaceButtonLeftPressed) == 0x000008, "Wrong size on WBP_CourseSelect_C_OnFaceButtonLeftPressed");
-static_assert(offsetof(WBP_CourseSelect_C_OnFaceButtonLeftPressed, Object) == 0x000000, "Member 'WBP_CourseSelect_C_OnFaceButtonLeftPressed::Object' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_OnFaceButtonLeftPressed;
 
 // Function WBP_CourseSelect.WBP_CourseSelect_C.OnFaceButtonTopPressed
 // 0x0010 (0x0010 - 0x0000)
@@ -1063,15 +644,7 @@ public:
 	bool                                          CallFunc_ContainsStoreRequiredStage_ReturnValue;   // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsStoreRequiredForGrandPrix_ReturnValue;  // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_OnFaceButtonTopPressed) == 0x000008, "Wrong alignment on WBP_CourseSelect_C_OnFaceButtonTopPressed");
-static_assert(sizeof(WBP_CourseSelect_C_OnFaceButtonTopPressed) == 0x000010, "Wrong size on WBP_CourseSelect_C_OnFaceButtonTopPressed");
-static_assert(offsetof(WBP_CourseSelect_C_OnFaceButtonTopPressed, Object) == 0x000000, "Member 'WBP_CourseSelect_C_OnFaceButtonTopPressed::Object' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_OnFaceButtonTopPressed, L_ForGrandPrix) == 0x000008, "Member 'WBP_CourseSelect_C_OnFaceButtonTopPressed::L_ForGrandPrix' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_OnFaceButtonTopPressed, CallFunc_RequestStore_ReturnValue) == 0x000009, "Member 'WBP_CourseSelect_C_OnFaceButtonTopPressed::CallFunc_RequestStore_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_OnFaceButtonTopPressed, CallFunc_IsStoreRequired_ReturnValue) == 0x00000A, "Member 'WBP_CourseSelect_C_OnFaceButtonTopPressed::CallFunc_IsStoreRequired_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_OnFaceButtonTopPressed, CallFunc_RequestStore_ReturnValue_1) == 0x00000B, "Member 'WBP_CourseSelect_C_OnFaceButtonTopPressed::CallFunc_RequestStore_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_OnFaceButtonTopPressed, CallFunc_ContainsStoreRequiredStage_ReturnValue) == 0x00000C, "Member 'WBP_CourseSelect_C_OnFaceButtonTopPressed::CallFunc_ContainsStoreRequiredStage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_OnFaceButtonTopPressed, CallFunc_IsStoreRequiredForGrandPrix_ReturnValue) == 0x00000D, "Member 'WBP_CourseSelect_C_OnFaceButtonTopPressed::CallFunc_IsStoreRequiredForGrandPrix_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_OnFaceButtonTopPressed;
 
 // Function WBP_CourseSelect.WBP_CourseSelect_C.OnGadgetCustomClicked
 // 0x0008 (0x0008 - 0x0000)
@@ -1080,9 +653,7 @@ struct WBP_CourseSelect_C_OnGadgetCustomClicked final
 public:
 	class UUnionUIButtonBaseCore*                 Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_OnGadgetCustomClicked) == 0x000008, "Wrong alignment on WBP_CourseSelect_C_OnGadgetCustomClicked");
-static_assert(sizeof(WBP_CourseSelect_C_OnGadgetCustomClicked) == 0x000008, "Wrong size on WBP_CourseSelect_C_OnGadgetCustomClicked");
-static_assert(offsetof(WBP_CourseSelect_C_OnGadgetCustomClicked, Button) == 0x000000, "Member 'WBP_CourseSelect_C_OnGadgetCustomClicked::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_OnGadgetCustomClicked;
 
 // Function WBP_CourseSelect.WBP_CourseSelect_C.OnGPCancel
 // 0x0008 (0x0008 - 0x0000)
@@ -1091,9 +662,7 @@ struct WBP_CourseSelect_C_OnGPCancel final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_OnGPCancel) == 0x000008, "Wrong alignment on WBP_CourseSelect_C_OnGPCancel");
-static_assert(sizeof(WBP_CourseSelect_C_OnGPCancel) == 0x000008, "Wrong size on WBP_CourseSelect_C_OnGPCancel");
-static_assert(offsetof(WBP_CourseSelect_C_OnGPCancel, Button) == 0x000000, "Member 'WBP_CourseSelect_C_OnGPCancel::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_OnGPCancel;
 
 // Function WBP_CourseSelect.WBP_CourseSelect_C.OnGPDecision_CourseSelect
 // 0x0008 (0x0008 - 0x0000)
@@ -1102,9 +671,7 @@ struct WBP_CourseSelect_C_OnGPDecision_CourseSelect final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_OnGPDecision_CourseSelect) == 0x000008, "Wrong alignment on WBP_CourseSelect_C_OnGPDecision_CourseSelect");
-static_assert(sizeof(WBP_CourseSelect_C_OnGPDecision_CourseSelect) == 0x000008, "Wrong size on WBP_CourseSelect_C_OnGPDecision_CourseSelect");
-static_assert(offsetof(WBP_CourseSelect_C_OnGPDecision_CourseSelect, Button) == 0x000000, "Member 'WBP_CourseSelect_C_OnGPDecision_CourseSelect::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_OnGPDecision_CourseSelect;
 
 // Function WBP_CourseSelect.WBP_CourseSelect_C.OnGPDecision_GrandprixSelect
 // 0x0008 (0x0008 - 0x0000)
@@ -1113,9 +680,7 @@ struct WBP_CourseSelect_C_OnGPDecision_GrandprixSelect final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_OnGPDecision_GrandprixSelect) == 0x000008, "Wrong alignment on WBP_CourseSelect_C_OnGPDecision_GrandprixSelect");
-static_assert(sizeof(WBP_CourseSelect_C_OnGPDecision_GrandprixSelect) == 0x000008, "Wrong size on WBP_CourseSelect_C_OnGPDecision_GrandprixSelect");
-static_assert(offsetof(WBP_CourseSelect_C_OnGPDecision_GrandprixSelect, Button) == 0x000000, "Member 'WBP_CourseSelect_C_OnGPDecision_GrandprixSelect::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_OnGPDecision_GrandprixSelect;
 
 // Function WBP_CourseSelect.WBP_CourseSelect_C.OnGPDecision_TimeTrial
 // 0x0008 (0x0008 - 0x0000)
@@ -1124,9 +689,7 @@ struct WBP_CourseSelect_C_OnGPDecision_TimeTrial final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_OnGPDecision_TimeTrial) == 0x000008, "Wrong alignment on WBP_CourseSelect_C_OnGPDecision_TimeTrial");
-static_assert(sizeof(WBP_CourseSelect_C_OnGPDecision_TimeTrial) == 0x000008, "Wrong size on WBP_CourseSelect_C_OnGPDecision_TimeTrial");
-static_assert(offsetof(WBP_CourseSelect_C_OnGPDecision_TimeTrial, Button) == 0x000000, "Member 'WBP_CourseSelect_C_OnGPDecision_TimeTrial::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_OnGPDecision_TimeTrial;
 
 // Function WBP_CourseSelect.WBP_CourseSelect_C.OnGPFocusEvent_Event
 // 0x0008 (0x0008 - 0x0000)
@@ -1135,9 +698,7 @@ struct WBP_CourseSelect_C_OnGPFocusEvent_Event final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_OnGPFocusEvent_Event) == 0x000008, "Wrong alignment on WBP_CourseSelect_C_OnGPFocusEvent_Event");
-static_assert(sizeof(WBP_CourseSelect_C_OnGPFocusEvent_Event) == 0x000008, "Wrong size on WBP_CourseSelect_C_OnGPFocusEvent_Event");
-static_assert(offsetof(WBP_CourseSelect_C_OnGPFocusEvent_Event, Button) == 0x000000, "Member 'WBP_CourseSelect_C_OnGPFocusEvent_Event::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_OnGPFocusEvent_Event;
 
 // Function WBP_CourseSelect.WBP_CourseSelect_C.OnInitState
 // 0x0010 (0x0010 - 0x0000)
@@ -1149,12 +710,7 @@ public:
 	EGameModeId                                   CallFunc_GetSelectedGameModeId_ReturnValue;        // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_OnInitState) == 0x000008, "Wrong alignment on WBP_CourseSelect_C_OnInitState");
-static_assert(sizeof(WBP_CourseSelect_C_OnInitState) == 0x000010, "Wrong size on WBP_CourseSelect_C_OnInitState");
-static_assert(offsetof(WBP_CourseSelect_C_OnInitState, OwnerSequence) == 0x000000, "Member 'WBP_CourseSelect_C_OnInitState::OwnerSequence' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_OnInitState, CallFunc_IsGrandPrixLeast1Play_ReturnValue) == 0x000008, "Member 'WBP_CourseSelect_C_OnInitState::CallFunc_IsGrandPrixLeast1Play_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_OnInitState, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x000009, "Member 'WBP_CourseSelect_C_OnInitState::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_OnInitState, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00000A, "Member 'WBP_CourseSelect_C_OnInitState::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_OnInitState;
 
 // Function WBP_CourseSelect.WBP_CourseSelect_C.OnLeftShoulderPressed
 // 0x0008 (0x0008 - 0x0000)
@@ -1163,9 +719,7 @@ struct WBP_CourseSelect_C_OnLeftShoulderPressed final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_OnLeftShoulderPressed) == 0x000008, "Wrong alignment on WBP_CourseSelect_C_OnLeftShoulderPressed");
-static_assert(sizeof(WBP_CourseSelect_C_OnLeftShoulderPressed) == 0x000008, "Wrong size on WBP_CourseSelect_C_OnLeftShoulderPressed");
-static_assert(offsetof(WBP_CourseSelect_C_OnLeftShoulderPressed, Object) == 0x000000, "Member 'WBP_CourseSelect_C_OnLeftShoulderPressed::Object' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_OnLeftShoulderPressed;
 
 // Function WBP_CourseSelect.WBP_CourseSelect_C.OnRightShoulderEvent_Event
 // 0x0008 (0x0008 - 0x0000)
@@ -1174,9 +728,7 @@ struct WBP_CourseSelect_C_OnRightShoulderEvent_Event final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_OnRightShoulderEvent_Event) == 0x000008, "Wrong alignment on WBP_CourseSelect_C_OnRightShoulderEvent_Event");
-static_assert(sizeof(WBP_CourseSelect_C_OnRightShoulderEvent_Event) == 0x000008, "Wrong size on WBP_CourseSelect_C_OnRightShoulderEvent_Event");
-static_assert(offsetof(WBP_CourseSelect_C_OnRightShoulderEvent_Event, Button) == 0x000000, "Member 'WBP_CourseSelect_C_OnRightShoulderEvent_Event::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_OnRightShoulderEvent_Event;
 
 // Function WBP_CourseSelect.WBP_CourseSelect_C.OnRivalSelectClicked
 // 0x0008 (0x0008 - 0x0000)
@@ -1185,9 +737,7 @@ struct WBP_CourseSelect_C_OnRivalSelectClicked final
 public:
 	class UUnionUIButtonBaseCore*                 Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_OnRivalSelectClicked) == 0x000008, "Wrong alignment on WBP_CourseSelect_C_OnRivalSelectClicked");
-static_assert(sizeof(WBP_CourseSelect_C_OnRivalSelectClicked) == 0x000008, "Wrong size on WBP_CourseSelect_C_OnRivalSelectClicked");
-static_assert(offsetof(WBP_CourseSelect_C_OnRivalSelectClicked, Button) == 0x000000, "Member 'WBP_CourseSelect_C_OnRivalSelectClicked::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_OnRivalSelectClicked;
 
 // Function WBP_CourseSelect.WBP_CourseSelect_C.OnStageIconFocusEvent_Event_0
 // 0x0008 (0x0008 - 0x0000)
@@ -1197,10 +747,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_OnStageIconFocusEvent_Event_0) == 0x000004, "Wrong alignment on WBP_CourseSelect_C_OnStageIconFocusEvent_Event_0");
-static_assert(sizeof(WBP_CourseSelect_C_OnStageIconFocusEvent_Event_0) == 0x000008, "Wrong size on WBP_CourseSelect_C_OnStageIconFocusEvent_Event_0");
-static_assert(offsetof(WBP_CourseSelect_C_OnStageIconFocusEvent_Event_0, PanelIndex) == 0x000000, "Member 'WBP_CourseSelect_C_OnStageIconFocusEvent_Event_0::PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_OnStageIconFocusEvent_Event_0, ButtonIndex) == 0x000004, "Member 'WBP_CourseSelect_C_OnStageIconFocusEvent_Event_0::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_OnStageIconFocusEvent_Event_0;
 
 // Function WBP_CourseSelect.WBP_CourseSelect_C.OnStoreShortcutPressed
 // 0x0003 (0x0003 - 0x0000)
@@ -1211,11 +758,7 @@ public:
 	bool                                          CallFunc_IsStoreRequired_ReturnValue;              // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_RequestStore_ReturnValue;                 // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_OnStoreShortcutPressed) == 0x000001, "Wrong alignment on WBP_CourseSelect_C_OnStoreShortcutPressed");
-static_assert(sizeof(WBP_CourseSelect_C_OnStoreShortcutPressed) == 0x000003, "Wrong size on WBP_CourseSelect_C_OnStoreShortcutPressed");
-static_assert(offsetof(WBP_CourseSelect_C_OnStoreShortcutPressed, StageId) == 0x000000, "Member 'WBP_CourseSelect_C_OnStoreShortcutPressed::StageId' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_OnStoreShortcutPressed, CallFunc_IsStoreRequired_ReturnValue) == 0x000001, "Member 'WBP_CourseSelect_C_OnStoreShortcutPressed::CallFunc_IsStoreRequired_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_OnStoreShortcutPressed, CallFunc_RequestStore_ReturnValue) == 0x000002, "Member 'WBP_CourseSelect_C_OnStoreShortcutPressed::CallFunc_RequestStore_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_OnStoreShortcutPressed;
 
 // Function WBP_CourseSelect.WBP_CourseSelect_C.Set Control Button Opacity
 // 0x0010 (0x0010 - 0x0000)
@@ -1225,10 +768,7 @@ public:
 	double                                        Render_Opacity;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetRenderOpacity_InOpacity_ImplicitCast;  // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_Set_Control_Button_Opacity) == 0x000008, "Wrong alignment on WBP_CourseSelect_C_Set_Control_Button_Opacity");
-static_assert(sizeof(WBP_CourseSelect_C_Set_Control_Button_Opacity) == 0x000010, "Wrong size on WBP_CourseSelect_C_Set_Control_Button_Opacity");
-static_assert(offsetof(WBP_CourseSelect_C_Set_Control_Button_Opacity, Render_Opacity) == 0x000000, "Member 'WBP_CourseSelect_C_Set_Control_Button_Opacity::Render_Opacity' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_Set_Control_Button_Opacity, CallFunc_SetRenderOpacity_InOpacity_ImplicitCast) == 0x000008, "Member 'WBP_CourseSelect_C_Set_Control_Button_Opacity::CallFunc_SetRenderOpacity_InOpacity_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_Set_Control_Button_Opacity;
 
 // Function WBP_CourseSelect.WBP_CourseSelect_C.SetAndUpdateForceOpened
 // 0x0020 (0x0020 - 0x0000)
@@ -1239,11 +779,7 @@ public:
 	TArray<EStageId>                              CallFunc_Update3Stage_Output_Get;                  // 0x0008(0x0010)(ReferenceParm)
 	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_SetAndUpdateForceOpened) == 0x000008, "Wrong alignment on WBP_CourseSelect_C_SetAndUpdateForceOpened");
-static_assert(sizeof(WBP_CourseSelect_C_SetAndUpdateForceOpened) == 0x000020, "Wrong size on WBP_CourseSelect_C_SetAndUpdateForceOpened");
-static_assert(offsetof(WBP_CourseSelect_C_SetAndUpdateForceOpened, OpenThreshold) == 0x000000, "Member 'WBP_CourseSelect_C_SetAndUpdateForceOpened::OpenThreshold' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_SetAndUpdateForceOpened, CallFunc_Update3Stage_Output_Get) == 0x000008, "Member 'WBP_CourseSelect_C_SetAndUpdateForceOpened::CallFunc_Update3Stage_Output_Get' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_SetAndUpdateForceOpened, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000018, "Member 'WBP_CourseSelect_C_SetAndUpdateForceOpened::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_SetAndUpdateForceOpened;
 
 // Function WBP_CourseSelect.WBP_CourseSelect_C.SetEnableGPFocusSound
 // 0x0001 (0x0001 - 0x0000)
@@ -1252,9 +788,7 @@ struct WBP_CourseSelect_C_SetEnableGPFocusSound final
 public:
 	bool                                          bEnable;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_SetEnableGPFocusSound) == 0x000001, "Wrong alignment on WBP_CourseSelect_C_SetEnableGPFocusSound");
-static_assert(sizeof(WBP_CourseSelect_C_SetEnableGPFocusSound) == 0x000001, "Wrong size on WBP_CourseSelect_C_SetEnableGPFocusSound");
-static_assert(offsetof(WBP_CourseSelect_C_SetEnableGPFocusSound, bEnable) == 0x000000, "Member 'WBP_CourseSelect_C_SetEnableGPFocusSound::bEnable' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_SetEnableGPFocusSound;
 
 // Function WBP_CourseSelect.WBP_CourseSelect_C.SetFocusMenu
 // 0x0008 (0x0008 - 0x0000)
@@ -1263,9 +797,7 @@ struct WBP_CourseSelect_C_SetFocusMenu final
 public:
 	class APlayerController*                      PlayerController;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_SetFocusMenu) == 0x000008, "Wrong alignment on WBP_CourseSelect_C_SetFocusMenu");
-static_assert(sizeof(WBP_CourseSelect_C_SetFocusMenu) == 0x000008, "Wrong size on WBP_CourseSelect_C_SetFocusMenu");
-static_assert(offsetof(WBP_CourseSelect_C_SetFocusMenu, PlayerController) == 0x000000, "Member 'WBP_CourseSelect_C_SetFocusMenu::PlayerController' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_SetFocusMenu;
 
 // Function WBP_CourseSelect.WBP_CourseSelect_C.Update3Stage
 // 0x00F8 (0x00F8 - 0x0000)
@@ -1297,29 +829,7 @@ public:
 	struct FGrandPrixStages                       CallFunc_Map_Find_Value;                           // 0x00A0(0x0050)()
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_Update3Stage) == 0x000008, "Wrong alignment on WBP_CourseSelect_C_Update3Stage");
-static_assert(sizeof(WBP_CourseSelect_C_Update3Stage) == 0x0000F8, "Wrong size on WBP_CourseSelect_C_Update3Stage");
-static_assert(offsetof(WBP_CourseSelect_C_Update3Stage, GrandPrixId) == 0x000000, "Member 'WBP_CourseSelect_C_Update3Stage::GrandPrixId' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_Update3Stage, OpenThreshold) == 0x000008, "Member 'WBP_CourseSelect_C_Update3Stage::OpenThreshold' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_Update3Stage, Output_Get) == 0x000010, "Member 'WBP_CourseSelect_C_Update3Stage::Output_Get' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_Update3Stage, NewLocalVar) == 0x000020, "Member 'WBP_CourseSelect_C_Update3Stage::NewLocalVar' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_Update3Stage, IgnoreGrandprixPre2nd) == 0x000030, "Member 'WBP_CourseSelect_C_Update3Stage::IgnoreGrandprixPre2nd' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_Update3Stage, TmpStageId) == 0x000040, "Member 'WBP_CourseSelect_C_Update3Stage::TmpStageId' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_Update3Stage, Temp_int_Loop_Counter_Variable) == 0x000050, "Member 'WBP_CourseSelect_C_Update3Stage::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_Update3Stage, CallFunc_Add_IntInt_ReturnValue) == 0x000054, "Member 'WBP_CourseSelect_C_Update3Stage::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_Update3Stage, Temp_int_Array_Index_Variable) == 0x000058, "Member 'WBP_CourseSelect_C_Update3Stage::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_Update3Stage, Temp_int_Array_Index_Variable_1) == 0x00005C, "Member 'WBP_CourseSelect_C_Update3Stage::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_Update3Stage, CallFunc_Array_Get_Item) == 0x000060, "Member 'WBP_CourseSelect_C_Update3Stage::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_Update3Stage, CallFunc_Array_Length_ReturnValue) == 0x000080, "Member 'WBP_CourseSelect_C_Update3Stage::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_Update3Stage, CallFunc_Array_Add_ReturnValue) == 0x000084, "Member 'WBP_CourseSelect_C_Update3Stage::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_Update3Stage, Temp_int_Loop_Counter_Variable_1) == 0x000088, "Member 'WBP_CourseSelect_C_Update3Stage::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_Update3Stage, CallFunc_Array_Get_Item_1) == 0x00008C, "Member 'WBP_CourseSelect_C_Update3Stage::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_Update3Stage, CallFunc_Less_IntInt_ReturnValue) == 0x00008D, "Member 'WBP_CourseSelect_C_Update3Stage::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_Update3Stage, CallFunc_Add_IntInt_ReturnValue_1) == 0x000090, "Member 'WBP_CourseSelect_C_Update3Stage::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_Update3Stage, CallFunc_Array_Length_ReturnValue_1) == 0x000094, "Member 'WBP_CourseSelect_C_Update3Stage::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_Update3Stage, CallFunc_Less_IntInt_ReturnValue_1) == 0x000098, "Member 'WBP_CourseSelect_C_Update3Stage::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_Update3Stage, CallFunc_Map_Find_Value) == 0x0000A0, "Member 'WBP_CourseSelect_C_Update3Stage::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_Update3Stage, CallFunc_Map_Find_ReturnValue) == 0x0000F0, "Member 'WBP_CourseSelect_C_Update3Stage::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_Update3Stage;
 
 // Function WBP_CourseSelect.WBP_CourseSelect_C.UpdateButtonAnimationState
 // 0x0058 (0x0058 - 0x0000)
@@ -1343,21 +853,7 @@ public:
 	class UWBP_CMN_TextBalloon_C*                 CallFunc_Array_Get_Item;                           // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_UpdateButtonAnimationState) == 0x000008, "Wrong alignment on WBP_CourseSelect_C_UpdateButtonAnimationState");
-static_assert(sizeof(WBP_CourseSelect_C_UpdateButtonAnimationState) == 0x000058, "Wrong size on WBP_CourseSelect_C_UpdateButtonAnimationState");
-static_assert(offsetof(WBP_CourseSelect_C_UpdateButtonAnimationState, CurrentSelectedButton) == 0x000000, "Member 'WBP_CourseSelect_C_UpdateButtonAnimationState::CurrentSelectedButton' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_UpdateButtonAnimationState, UpdateTargetButton) == 0x000008, "Member 'WBP_CourseSelect_C_UpdateButtonAnimationState::UpdateTargetButton' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_UpdateButtonAnimationState, UpdateTargetButtonIndex) == 0x000010, "Member 'WBP_CourseSelect_C_UpdateButtonAnimationState::UpdateTargetButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_UpdateButtonAnimationState, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000014, "Member 'WBP_CourseSelect_C_UpdateButtonAnimationState::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_UpdateButtonAnimationState, CallFunc_NotEqual_ObjectObject_ReturnValue) == 0x000015, "Member 'WBP_CourseSelect_C_UpdateButtonAnimationState::CallFunc_NotEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_UpdateButtonAnimationState, K2Node_DynamicCast_AsWBP_Course_Select_Sub_Course_Icon) == 0x000018, "Member 'WBP_CourseSelect_C_UpdateButtonAnimationState::K2Node_DynamicCast_AsWBP_Course_Select_Sub_Course_Icon' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_UpdateButtonAnimationState, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'WBP_CourseSelect_C_UpdateButtonAnimationState::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_UpdateButtonAnimationState, K2Node_DynamicCast_AsWBP_Course_Select_Sub_Course_Icon_1) == 0x000028, "Member 'WBP_CourseSelect_C_UpdateButtonAnimationState::K2Node_DynamicCast_AsWBP_Course_Select_Sub_Course_Icon_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_UpdateButtonAnimationState, K2Node_DynamicCast_bSuccess_1) == 0x000030, "Member 'WBP_CourseSelect_C_UpdateButtonAnimationState::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_UpdateButtonAnimationState, CallFunc_PlayAnimation_ReturnValue) == 0x000038, "Member 'WBP_CourseSelect_C_UpdateButtonAnimationState::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_UpdateButtonAnimationState, CallFunc_PlayAnimation_ReturnValue_1) == 0x000040, "Member 'WBP_CourseSelect_C_UpdateButtonAnimationState::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_UpdateButtonAnimationState, CallFunc_Array_Get_Item) == 0x000048, "Member 'WBP_CourseSelect_C_UpdateButtonAnimationState::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_UpdateButtonAnimationState, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000050, "Member 'WBP_CourseSelect_C_UpdateButtonAnimationState::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_UpdateButtonAnimationState;
 
 // Function WBP_CourseSelect.WBP_CourseSelect_C.UpdateRivalSelectUI
 // 0x0018 (0x0018 - 0x0000)
@@ -1370,12 +866,7 @@ public:
 	int32                                         CallFunc_GetRivalDominationTargetCount_ReturnValue; // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetRivalDominationCount_ReturnValue;      // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_UpdateRivalSelectUI) == 0x000008, "Wrong alignment on WBP_CourseSelect_C_UpdateRivalSelectUI");
-static_assert(sizeof(WBP_CourseSelect_C_UpdateRivalSelectUI) == 0x000018, "Wrong size on WBP_CourseSelect_C_UpdateRivalSelectUI");
-static_assert(offsetof(WBP_CourseSelect_C_UpdateRivalSelectUI, GrandPrixSequence) == 0x000000, "Member 'WBP_CourseSelect_C_UpdateRivalSelectUI::GrandPrixSequence' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_UpdateRivalSelectUI, CallFunc_GetMenuDataLastChoiceDriverId_ReturnValue) == 0x000008, "Member 'WBP_CourseSelect_C_UpdateRivalSelectUI::CallFunc_GetMenuDataLastChoiceDriverId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_UpdateRivalSelectUI, CallFunc_GetRivalDominationTargetCount_ReturnValue) == 0x00000C, "Member 'WBP_CourseSelect_C_UpdateRivalSelectUI::CallFunc_GetRivalDominationTargetCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_UpdateRivalSelectUI, CallFunc_GetRivalDominationCount_ReturnValue) == 0x000010, "Member 'WBP_CourseSelect_C_UpdateRivalSelectUI::CallFunc_GetRivalDominationCount_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_UpdateRivalSelectUI;
 
 // Function WBP_CourseSelect.WBP_CourseSelect_C.UpdateSpeedClass
 // 0x000B (0x000B - 0x0000)
@@ -1394,19 +885,7 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_C_UpdateSpeedClass) == 0x000001, "Wrong alignment on WBP_CourseSelect_C_UpdateSpeedClass");
-static_assert(sizeof(WBP_CourseSelect_C_UpdateSpeedClass) == 0x00000B, "Wrong size on WBP_CourseSelect_C_UpdateSpeedClass");
-static_assert(offsetof(WBP_CourseSelect_C_UpdateSpeedClass, Temp_byte_Variable) == 0x000000, "Member 'WBP_CourseSelect_C_UpdateSpeedClass::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_UpdateSpeedClass, Temp_byte_Variable_1) == 0x000001, "Member 'WBP_CourseSelect_C_UpdateSpeedClass::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_UpdateSpeedClass, CallFunc_CalcViewMenuSpeedClassId_IsGroupSpeed) == 0x000002, "Member 'WBP_CourseSelect_C_UpdateSpeedClass::CallFunc_CalcViewMenuSpeedClassId_IsGroupSpeed' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_UpdateSpeedClass, CallFunc_CalcViewMenuSpeedClassId_ReturnValue) == 0x000003, "Member 'WBP_CourseSelect_C_UpdateSpeedClass::CallFunc_CalcViewMenuSpeedClassId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_UpdateSpeedClass, Temp_bool_Variable) == 0x000004, "Member 'WBP_CourseSelect_C_UpdateSpeedClass::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_UpdateSpeedClass, CallFunc_GetSelectedRaceParkPresetIsIndividual_ReturnValue) == 0x000005, "Member 'WBP_CourseSelect_C_UpdateSpeedClass::CallFunc_GetSelectedRaceParkPresetIsIndividual_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_UpdateSpeedClass, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x000006, "Member 'WBP_CourseSelect_C_UpdateSpeedClass::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_UpdateSpeedClass, CallFunc_Not_PreBool_ReturnValue) == 0x000007, "Member 'WBP_CourseSelect_C_UpdateSpeedClass::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_UpdateSpeedClass, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000008, "Member 'WBP_CourseSelect_C_UpdateSpeedClass::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_UpdateSpeedClass, CallFunc_BooleanAND_ReturnValue) == 0x000009, "Member 'WBP_CourseSelect_C_UpdateSpeedClass::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_C_UpdateSpeedClass, K2Node_Select_Default) == 0x00000A, "Member 'WBP_CourseSelect_C_UpdateSpeedClass::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_C_UpdateSpeedClass;
 
 }
 

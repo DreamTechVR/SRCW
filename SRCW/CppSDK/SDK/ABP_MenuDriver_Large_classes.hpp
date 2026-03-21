@@ -18,12 +18,11 @@ namespace SDK
 {
 
 // AnimBlueprintGeneratedClass ABP_MenuDriver_Large.ABP_MenuDriver_Large_C
-// 0x0000 (0x25B0 - 0x25B0)
+// 0x0010 (0x1CD0 - 0x1CC0)
 class UABP_MenuDriver_Large_C final : public UABPT_MenuDriver_C
 {
 public:
-	uint8                                         Pad_25A4[0x4];                                     // 0x25A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_ABP_MenuDriver_Large_C;             // 0x25A8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_ABP_MenuDriver_Large_C;             // 0x1CC0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void AnimNotify_CrownOff();
@@ -33,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABP_MenuDriver_Large_C">();
+		BP_STATIC_CLASS_IMPL("ABP_MenuDriver_Large_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABP_MenuDriver_Large_C")
 	}
 	static class UABP_MenuDriver_Large_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UABP_MenuDriver_Large_C>();
 	}
 };
-static_assert(alignof(UABP_MenuDriver_Large_C) == 0x000010, "Wrong alignment on UABP_MenuDriver_Large_C");
-static_assert(sizeof(UABP_MenuDriver_Large_C) == 0x0025B0, "Wrong size on UABP_MenuDriver_Large_C");
-static_assert(offsetof(UABP_MenuDriver_Large_C, UberGraphFrame_ABP_MenuDriver_Large_C) == 0x0025A8, "Member 'UABP_MenuDriver_Large_C::UberGraphFrame_ABP_MenuDriver_Large_C' has a wrong offset!");
+DUMPER7_ASSERTS_UABP_MenuDriver_Large_C;
 
 }
 

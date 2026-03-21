@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // AnimBlueprintGeneratedClass ABP_Shadow_Driver.ABP_Shadow_Driver_C
-// 0x0000 (0x5BD0 - 0x5BD0)
+// 0x0000 (0x5CE0 - 0x5CE0)
 class UABP_Shadow_Driver_C final : public UABPT_Driver_C
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABP_Shadow_Driver_C">();
+		BP_STATIC_CLASS_IMPL("ABP_Shadow_Driver_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABP_Shadow_Driver_C")
 	}
 	static class UABP_Shadow_Driver_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UABP_Shadow_Driver_C>();
 	}
 };
-static_assert(alignof(UABP_Shadow_Driver_C) == 0x000010, "Wrong alignment on UABP_Shadow_Driver_C");
-static_assert(sizeof(UABP_Shadow_Driver_C) == 0x005BD0, "Wrong size on UABP_Shadow_Driver_C");
+DUMPER7_ASSERTS_UABP_Shadow_Driver_C;
 
 }
 

@@ -23,15 +23,18 @@ class UBPC_LobbyRankMatchHolder_C final : public ULobbyHolderBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_LobbyRankMatchHolder_C">();
+		BP_STATIC_CLASS_IMPL("BPC_LobbyRankMatchHolder_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_LobbyRankMatchHolder_C")
 	}
 	static class UBPC_LobbyRankMatchHolder_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_LobbyRankMatchHolder_C>();
 	}
 };
-static_assert(alignof(UBPC_LobbyRankMatchHolder_C) == 0x000008, "Wrong alignment on UBPC_LobbyRankMatchHolder_C");
-static_assert(sizeof(UBPC_LobbyRankMatchHolder_C) == 0x000100, "Wrong size on UBPC_LobbyRankMatchHolder_C");
+DUMPER7_ASSERTS_UBPC_LobbyRankMatchHolder_C;
 
 }
 

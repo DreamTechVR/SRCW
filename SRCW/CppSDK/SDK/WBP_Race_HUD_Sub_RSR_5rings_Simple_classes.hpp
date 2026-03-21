@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "UnionRun_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -49,29 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_HUD_Sub_RSR_5rings_Simple_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_HUD_Sub_RSR_5rings_Simple_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_HUD_Sub_RSR_5rings_Simple_C")
 	}
 	static class UWBP_Race_HUD_Sub_RSR_5rings_Simple_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_HUD_Sub_RSR_5rings_Simple_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_HUD_Sub_RSR_5rings_Simple_C) == 0x000008, "Wrong alignment on UWBP_Race_HUD_Sub_RSR_5rings_Simple_C");
-static_assert(sizeof(UWBP_Race_HUD_Sub_RSR_5rings_Simple_C) == 0x000380, "Wrong size on UWBP_Race_HUD_Sub_RSR_5rings_Simple_C");
-static_assert(offsetof(UWBP_Race_HUD_Sub_RSR_5rings_Simple_C, UberGraphFrame) == 0x0002F8, "Member 'UWBP_Race_HUD_Sub_RSR_5rings_Simple_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_RSR_5rings_Simple_C, RSR_01) == 0x000300, "Member 'UWBP_Race_HUD_Sub_RSR_5rings_Simple_C::RSR_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_RSR_5rings_Simple_C, RSR_02) == 0x000308, "Member 'UWBP_Race_HUD_Sub_RSR_5rings_Simple_C::RSR_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_RSR_5rings_Simple_C, RSR_03) == 0x000310, "Member 'UWBP_Race_HUD_Sub_RSR_5rings_Simple_C::RSR_03' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_RSR_5rings_Simple_C, RSR_04) == 0x000318, "Member 'UWBP_Race_HUD_Sub_RSR_5rings_Simple_C::RSR_04' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_RSR_5rings_Simple_C, RSR_05) == 0x000320, "Member 'UWBP_Race_HUD_Sub_RSR_5rings_Simple_C::RSR_05' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_RSR_5rings_Simple_C, AddPlayTicketInAnimeEvent) == 0x000328, "Member 'UWBP_Race_HUD_Sub_RSR_5rings_Simple_C::AddPlayTicketInAnimeEvent' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_RSR_5rings_Simple_C, RSR_DM01) == 0x000338, "Member 'UWBP_Race_HUD_Sub_RSR_5rings_Simple_C::RSR_DM01' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_RSR_5rings_Simple_C, RSR_DM02) == 0x000340, "Member 'UWBP_Race_HUD_Sub_RSR_5rings_Simple_C::RSR_DM02' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_RSR_5rings_Simple_C, RSR_DM03) == 0x000348, "Member 'UWBP_Race_HUD_Sub_RSR_5rings_Simple_C::RSR_DM03' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_RSR_5rings_Simple_C, RSR_DM04) == 0x000350, "Member 'UWBP_Race_HUD_Sub_RSR_5rings_Simple_C::RSR_DM04' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_RSR_5rings_Simple_C, RSR_DM05) == 0x000358, "Member 'UWBP_Race_HUD_Sub_RSR_5rings_Simple_C::RSR_DM05' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_RSR_5rings_Simple_C, OffColor) == 0x000360, "Member 'UWBP_Race_HUD_Sub_RSR_5rings_Simple_C::OffColor' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_RSR_5rings_Simple_C, OnColor) == 0x000370, "Member 'UWBP_Race_HUD_Sub_RSR_5rings_Simple_C::OnColor' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_HUD_Sub_RSR_5rings_Simple_C;
 
 }
 

@@ -29,16 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GadgetCustom_SnapPoint_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GadgetCustom_SnapPoint_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GadgetCustom_SnapPoint_C")
 	}
 	static class UWBP_GadgetCustom_SnapPoint_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GadgetCustom_SnapPoint_C>();
 	}
 };
-static_assert(alignof(UWBP_GadgetCustom_SnapPoint_C) == 0x000008, "Wrong alignment on UWBP_GadgetCustom_SnapPoint_C");
-static_assert(sizeof(UWBP_GadgetCustom_SnapPoint_C) == 0x000308, "Wrong size on UWBP_GadgetCustom_SnapPoint_C");
-static_assert(offsetof(UWBP_GadgetCustom_SnapPoint_C, Image_SnapPoint) == 0x000300, "Member 'UWBP_GadgetCustom_SnapPoint_C::Image_SnapPoint' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GadgetCustom_SnapPoint_C;
 
 }
 

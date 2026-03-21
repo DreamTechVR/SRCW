@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
-#include "UNION_classes.hpp"
 #include "UnionRun_structs.hpp"
+#include "UnionSystem_structs.hpp"
+#include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -46,19 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_RaceSequenceStateEntryRacer_C">();
+		BP_STATIC_CLASS_IMPL("BPC_RaceSequenceStateEntryRacer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_RaceSequenceStateEntryRacer_C")
 	}
 	static class UBPC_RaceSequenceStateEntryRacer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_RaceSequenceStateEntryRacer_C>();
 	}
 };
-static_assert(alignof(UBPC_RaceSequenceStateEntryRacer_C) == 0x000008, "Wrong alignment on UBPC_RaceSequenceStateEntryRacer_C");
-static_assert(sizeof(UBPC_RaceSequenceStateEntryRacer_C) == 0x000148, "Wrong size on UBPC_RaceSequenceStateEntryRacer_C");
-static_assert(offsetof(UBPC_RaceSequenceStateEntryRacer_C, UberGraphFrame) == 0x000120, "Member 'UBPC_RaceSequenceStateEntryRacer_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateEntryRacer_C, Out_Effects) == 0x000128, "Member 'UBPC_RaceSequenceStateEntryRacer_C::Out_Effects' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateEntryRacer_C, PlayerObject) == 0x000138, "Member 'UBPC_RaceSequenceStateEntryRacer_C::PlayerObject' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateEntryRacer_C, CameraOffsetDataTable) == 0x000140, "Member 'UBPC_RaceSequenceStateEntryRacer_C::CameraOffsetDataTable' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_RaceSequenceStateEntryRacer_C;
 
 }
 

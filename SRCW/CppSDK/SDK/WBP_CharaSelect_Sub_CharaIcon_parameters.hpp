@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
+#include "UnionSystem_structs.hpp"
 
 
 namespace SDK::Params
@@ -29,13 +29,7 @@ public:
 	class UWBP_DonpaTicketApp_C*                  CallFunc_Create_ReturnValue;                       // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CharaSelect_Sub_CharaIcon_C_CreateDialog) == 0x000008, "Wrong alignment on WBP_CharaSelect_Sub_CharaIcon_C_CreateDialog");
-static_assert(sizeof(WBP_CharaSelect_Sub_CharaIcon_C_CreateDialog) == 0x000028, "Wrong size on WBP_CharaSelect_Sub_CharaIcon_C_CreateDialog");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_CreateDialog, OwningPlayer) == 0x000000, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_CreateDialog::OwningPlayer' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_CreateDialog, ReturnValue) == 0x000008, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_CreateDialog::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_CreateDialog, CallFunc_MakeLiteralByte_ReturnValue) == 0x000010, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_CreateDialog::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_CreateDialog, CallFunc_Create_ReturnValue) == 0x000018, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_CreateDialog::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_CreateDialog, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000020, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_CreateDialog::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CharaSelect_Sub_CharaIcon_C_CreateDialog;
 
 // Function WBP_CharaSelect_Sub_CharaIcon.WBP_CharaSelect_Sub_CharaIcon_C.CreateDialogPrice
 // 0x0008 (0x0008 - 0x0000)
@@ -45,10 +39,7 @@ public:
 	int32                                         InPlayerIndex;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         InPrice;                                           // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CharaSelect_Sub_CharaIcon_C_CreateDialogPrice) == 0x000004, "Wrong alignment on WBP_CharaSelect_Sub_CharaIcon_C_CreateDialogPrice");
-static_assert(sizeof(WBP_CharaSelect_Sub_CharaIcon_C_CreateDialogPrice) == 0x000008, "Wrong size on WBP_CharaSelect_Sub_CharaIcon_C_CreateDialogPrice");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_CreateDialogPrice, InPlayerIndex) == 0x000000, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_CreateDialogPrice::InPlayerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_CreateDialogPrice, InPrice) == 0x000004, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_CreateDialogPrice::InPrice' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CharaSelect_Sub_CharaIcon_C_CreateDialogPrice;
 
 // Function WBP_CharaSelect_Sub_CharaIcon.WBP_CharaSelect_Sub_CharaIcon_C.CreateDialogUnlock
 // 0x0004 (0x0004 - 0x0000)
@@ -57,9 +48,7 @@ struct WBP_CharaSelect_Sub_CharaIcon_C_CreateDialogUnlock final
 public:
 	int32                                         InPlayerIndex;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CharaSelect_Sub_CharaIcon_C_CreateDialogUnlock) == 0x000004, "Wrong alignment on WBP_CharaSelect_Sub_CharaIcon_C_CreateDialogUnlock");
-static_assert(sizeof(WBP_CharaSelect_Sub_CharaIcon_C_CreateDialogUnlock) == 0x000004, "Wrong size on WBP_CharaSelect_Sub_CharaIcon_C_CreateDialogUnlock");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_CreateDialogUnlock, InPlayerIndex) == 0x000000, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_CreateDialogUnlock::InPlayerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CharaSelect_Sub_CharaIcon_C_CreateDialogUnlock;
 
 // Function WBP_CharaSelect_Sub_CharaIcon.WBP_CharaSelect_Sub_CharaIcon_C.CustomEvent_0
 // 0x0001 (0x0001 - 0x0000)
@@ -68,9 +57,7 @@ struct WBP_CharaSelect_Sub_CharaIcon_C_CustomEvent_0 final
 public:
 	EDialogResult                                 Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CharaSelect_Sub_CharaIcon_C_CustomEvent_0) == 0x000001, "Wrong alignment on WBP_CharaSelect_Sub_CharaIcon_C_CustomEvent_0");
-static_assert(sizeof(WBP_CharaSelect_Sub_CharaIcon_C_CustomEvent_0) == 0x000001, "Wrong size on WBP_CharaSelect_Sub_CharaIcon_C_CustomEvent_0");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_CustomEvent_0, Result) == 0x000000, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_CustomEvent_0::Result' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CharaSelect_Sub_CharaIcon_C_CustomEvent_0;
 
 // Function WBP_CharaSelect_Sub_CharaIcon.WBP_CharaSelect_Sub_CharaIcon_C.CustomEvent_2
 // 0x0001 (0x0001 - 0x0000)
@@ -79,9 +66,7 @@ struct WBP_CharaSelect_Sub_CharaIcon_C_CustomEvent_2 final
 public:
 	EDialogResult                                 Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CharaSelect_Sub_CharaIcon_C_CustomEvent_2) == 0x000001, "Wrong alignment on WBP_CharaSelect_Sub_CharaIcon_C_CustomEvent_2");
-static_assert(sizeof(WBP_CharaSelect_Sub_CharaIcon_C_CustomEvent_2) == 0x000001, "Wrong size on WBP_CharaSelect_Sub_CharaIcon_C_CustomEvent_2");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_CustomEvent_2, Result) == 0x000000, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_CustomEvent_2::Result' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CharaSelect_Sub_CharaIcon_C_CustomEvent_2;
 
 // Function WBP_CharaSelect_Sub_CharaIcon.WBP_CharaSelect_Sub_CharaIcon_C.ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon
 // 0x0CF0 (0x0CF0 - 0x0000)
@@ -153,62 +138,7 @@ public:
 	class UWBP_DonpaTicketApp_C*                  CallFunc_CreateDialog_ReturnValue_1;               // 0x0CE0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	EDialogResult                                 K2Node_CustomEvent_Result;                         // 0x0CE8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon) == 0x000008, "Wrong alignment on WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon");
-static_assert(sizeof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon) == 0x000CF0, "Wrong size on WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, EntryPoint) == 0x000000, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, K2Node_CreateDelegate_OutputDelegate_2) == 0x000024, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, K2Node_CustomEvent_PlayDriverId) == 0x000034, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::K2Node_CustomEvent_PlayDriverId' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, CallFunc_GetCharaIndex_ReturnValue) == 0x000038, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::CallFunc_GetCharaIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, CallFunc_GetGrandPrixLastFocusedMenuSpeedClassId_ReturnValue) == 0x00003C, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::CallFunc_GetGrandPrixLastFocusedMenuSpeedClassId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, CallFunc_Conv_IntToByte_ReturnValue) == 0x00003D, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, CallFunc_GetValidValue_ReturnValue) == 0x00003E, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, CallFunc_GetDriverData_ReturnValue) == 0x000040, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::CallFunc_GetDriverData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0003D0, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, CallFunc_IsValidSoftObjectReference_ReturnValue) == 0x0003D1, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::CallFunc_IsValidSoftObjectReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, CallFunc_GetTopKnockdownRivalLevel_ReturnValue) == 0x0003D2, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::CallFunc_GetTopKnockdownRivalLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, CallFunc_Conv_ByteToInt_ReturnValue) == 0x0003D4, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, CallFunc_Greater_IntInt_ReturnValue) == 0x0003D8, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, CallFunc_BooleanOR_ReturnValue) == 0x0003D9, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, K2Node_CreateDelegate_OutputDelegate_3) == 0x0003DC, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, K2Node_CreateDelegate_OutputDelegate_4) == 0x0003EC, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, CallFunc_SoundPlay_ReturnValue) == 0x0003FC, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, K2Node_DynamicCast_AsWBP_Chara_Select_Sub_Rival_Win_Icon) == 0x000400, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::K2Node_DynamicCast_AsWBP_Chara_Select_Sub_Rival_Win_Icon' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, K2Node_DynamicCast_bSuccess) == 0x000408, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, K2Node_Event_PlayerControllerIndex_2) == 0x00040C, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::K2Node_Event_PlayerControllerIndex_2' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result) == 0x000410, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue) == 0x000418, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result_1) == 0x000420, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result_1' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue_1) == 0x000428, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, CallFunc_IsValid_ReturnValue) == 0x000430, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, CallFunc_IsValid_ReturnValue_1) == 0x000431, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, K2Node_Event_PlayerControllerIndex_1) == 0x000434, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::K2Node_Event_PlayerControllerIndex_1' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, K2Node_Event_PlayerControllerIndex) == 0x000438, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::K2Node_Event_PlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, K2Node_CustomEvent_Result_1) == 0x00043C, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::K2Node_CustomEvent_Result_1' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, Temp_object_Variable) == 0x000440, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, CallFunc_GetDriverData_ReturnValue_1) == 0x000448, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::CallFunc_GetDriverData_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, K2Node_DynamicCast_AsSound_Atom_Cue) == 0x0007D8, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::K2Node_DynamicCast_AsSound_Atom_Cue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, K2Node_DynamicCast_bSuccess_1) == 0x0007E0, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, CallFunc_SoundPlay_ReturnValue_1) == 0x0007E4, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x0007E8, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, CallFunc_GetDriverData_ReturnValue_2) == 0x0007F0, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::CallFunc_GetDriverData_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, K2Node_DynamicCast_As_____2D) == 0x000B80, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, K2Node_DynamicCast_bSuccess_2) == 0x000B88, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, K2Node_CustomEvent_Loaded) == 0x000B90, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::K2Node_CustomEvent_Loaded' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, CallFunc_LoadAsset_Blocking_ReturnValue_1) == 0x000B98, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::CallFunc_LoadAsset_Blocking_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, K2Node_DynamicCast_As_____2D_1) == 0x000BA0, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::K2Node_DynamicCast_As_____2D_1' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, K2Node_DynamicCast_bSuccess_3) == 0x000BA8, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, K2Node_Event_InPlayerIndex_1) == 0x000BAC, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::K2Node_Event_InPlayerIndex_1' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, K2Node_MakeStruct_RewardDialogParameter) == 0x000BB0, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::K2Node_MakeStruct_RewardDialogParameter' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, CallFunc_GetPlayerControllerFromID_ReturnValue) == 0x000C38, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::CallFunc_GetPlayerControllerFromID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, K2Node_Event_InPlayerIndex) == 0x000C40, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::K2Node_Event_InPlayerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, K2Node_Event_InPrice) == 0x000C44, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::K2Node_Event_InPrice' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, CallFunc_CreateDialog_ReturnValue) == 0x000C48, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::CallFunc_CreateDialog_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, K2Node_MakeStruct_RewardDialogParameter_1) == 0x000C50, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::K2Node_MakeStruct_RewardDialogParameter_1' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, CallFunc_GetPlayerControllerFromID_ReturnValue_1) == 0x000CD8, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::CallFunc_GetPlayerControllerFromID_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, CallFunc_CreateDialog_ReturnValue_1) == 0x000CE0, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::CallFunc_CreateDialog_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon, K2Node_CustomEvent_Result) == 0x000CE8, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon::K2Node_CustomEvent_Result' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CharaSelect_Sub_CharaIcon_C_ExecuteUbergraph_WBP_CharaSelect_Sub_CharaIcon;
 
 // Function WBP_CharaSelect_Sub_CharaIcon.WBP_CharaSelect_Sub_CharaIcon_C.OnAcceptKeyPressedWithPlayerId
 // 0x0004 (0x0004 - 0x0000)
@@ -217,9 +147,7 @@ struct WBP_CharaSelect_Sub_CharaIcon_C_OnAcceptKeyPressedWithPlayerId final
 public:
 	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CharaSelect_Sub_CharaIcon_C_OnAcceptKeyPressedWithPlayerId) == 0x000004, "Wrong alignment on WBP_CharaSelect_Sub_CharaIcon_C_OnAcceptKeyPressedWithPlayerId");
-static_assert(sizeof(WBP_CharaSelect_Sub_CharaIcon_C_OnAcceptKeyPressedWithPlayerId) == 0x000004, "Wrong size on WBP_CharaSelect_Sub_CharaIcon_C_OnAcceptKeyPressedWithPlayerId");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_OnAcceptKeyPressedWithPlayerId, PlayerControllerIndex) == 0x000000, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_OnAcceptKeyPressedWithPlayerId::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CharaSelect_Sub_CharaIcon_C_OnAcceptKeyPressedWithPlayerId;
 
 // Function WBP_CharaSelect_Sub_CharaIcon.WBP_CharaSelect_Sub_CharaIcon_C.OnBackKeyPressedWithPlayerId
 // 0x0004 (0x0004 - 0x0000)
@@ -228,9 +156,7 @@ struct WBP_CharaSelect_Sub_CharaIcon_C_OnBackKeyPressedWithPlayerId final
 public:
 	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CharaSelect_Sub_CharaIcon_C_OnBackKeyPressedWithPlayerId) == 0x000004, "Wrong alignment on WBP_CharaSelect_Sub_CharaIcon_C_OnBackKeyPressedWithPlayerId");
-static_assert(sizeof(WBP_CharaSelect_Sub_CharaIcon_C_OnBackKeyPressedWithPlayerId) == 0x000004, "Wrong size on WBP_CharaSelect_Sub_CharaIcon_C_OnBackKeyPressedWithPlayerId");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_OnBackKeyPressedWithPlayerId, PlayerControllerIndex) == 0x000000, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_OnBackKeyPressedWithPlayerId::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CharaSelect_Sub_CharaIcon_C_OnBackKeyPressedWithPlayerId;
 
 // Function WBP_CharaSelect_Sub_CharaIcon.WBP_CharaSelect_Sub_CharaIcon_C.OnLeftShoulderPressedWithPlayerId
 // 0x0004 (0x0004 - 0x0000)
@@ -239,9 +165,7 @@ struct WBP_CharaSelect_Sub_CharaIcon_C_OnLeftShoulderPressedWithPlayerId final
 public:
 	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CharaSelect_Sub_CharaIcon_C_OnLeftShoulderPressedWithPlayerId) == 0x000004, "Wrong alignment on WBP_CharaSelect_Sub_CharaIcon_C_OnLeftShoulderPressedWithPlayerId");
-static_assert(sizeof(WBP_CharaSelect_Sub_CharaIcon_C_OnLeftShoulderPressedWithPlayerId) == 0x000004, "Wrong size on WBP_CharaSelect_Sub_CharaIcon_C_OnLeftShoulderPressedWithPlayerId");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_OnLeftShoulderPressedWithPlayerId, PlayerControllerIndex) == 0x000000, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_OnLeftShoulderPressedWithPlayerId::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CharaSelect_Sub_CharaIcon_C_OnLeftShoulderPressedWithPlayerId;
 
 // Function WBP_CharaSelect_Sub_CharaIcon.WBP_CharaSelect_Sub_CharaIcon_C.OnLoaded_505E989D4450E120554A18BB3B775420
 // 0x0008 (0x0008 - 0x0000)
@@ -250,9 +174,7 @@ struct WBP_CharaSelect_Sub_CharaIcon_C_OnLoaded_505E989D4450E120554A18BB3B775420
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CharaSelect_Sub_CharaIcon_C_OnLoaded_505E989D4450E120554A18BB3B775420) == 0x000008, "Wrong alignment on WBP_CharaSelect_Sub_CharaIcon_C_OnLoaded_505E989D4450E120554A18BB3B775420");
-static_assert(sizeof(WBP_CharaSelect_Sub_CharaIcon_C_OnLoaded_505E989D4450E120554A18BB3B775420) == 0x000008, "Wrong size on WBP_CharaSelect_Sub_CharaIcon_C_OnLoaded_505E989D4450E120554A18BB3B775420");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_OnLoaded_505E989D4450E120554A18BB3B775420, Loaded) == 0x000000, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_OnLoaded_505E989D4450E120554A18BB3B775420::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CharaSelect_Sub_CharaIcon_C_OnLoaded_505E989D4450E120554A18BB3B775420;
 
 // Function WBP_CharaSelect_Sub_CharaIcon.WBP_CharaSelect_Sub_CharaIcon_C.Play Rival In Icon
 // 0x0001 (0x0001 - 0x0000)
@@ -261,9 +183,7 @@ struct WBP_CharaSelect_Sub_CharaIcon_C_Play_Rival_In_Icon final
 public:
 	EDriverId                                     PlayDriverId;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CharaSelect_Sub_CharaIcon_C_Play_Rival_In_Icon) == 0x000001, "Wrong alignment on WBP_CharaSelect_Sub_CharaIcon_C_Play_Rival_In_Icon");
-static_assert(sizeof(WBP_CharaSelect_Sub_CharaIcon_C_Play_Rival_In_Icon) == 0x000001, "Wrong size on WBP_CharaSelect_Sub_CharaIcon_C_Play_Rival_In_Icon");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_Play_Rival_In_Icon, PlayDriverId) == 0x000000, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_Play_Rival_In_Icon::PlayDriverId' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CharaSelect_Sub_CharaIcon_C_Play_Rival_In_Icon;
 
 // Function WBP_CharaSelect_Sub_CharaIcon.WBP_CharaSelect_Sub_CharaIcon_C.PlayAnimationActiveLoop
 // 0x0010 (0x0010 - 0x0000)
@@ -273,10 +193,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationActiveLoop) == 0x000008, "Wrong alignment on WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationActiveLoop");
-static_assert(sizeof(WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationActiveLoop) == 0x000010, "Wrong size on WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationActiveLoop");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationActiveLoop, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationActiveLoop::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationActiveLoop, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000008, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationActiveLoop::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationActiveLoop;
 
 // Function WBP_CharaSelect_Sub_CharaIcon.WBP_CharaSelect_Sub_CharaIcon_C.PlayAnimationPushPlayer
 // 0x0038 (0x0038 - 0x0000)
@@ -292,14 +209,7 @@ public:
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidgetAnimation*                       CallFunc_Array_Get_Item;                           // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationPushPlayer) == 0x000008, "Wrong alignment on WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationPushPlayer");
-static_assert(sizeof(WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationPushPlayer) == 0x000038, "Wrong size on WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationPushPlayer");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationPushPlayer, InPlayerIndex) == 0x000000, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationPushPlayer::InPlayerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationPushPlayer, Anim) == 0x000008, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationPushPlayer::Anim' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationPushPlayer, CallFunc_PlayAnimation_ReturnValue) == 0x000010, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationPushPlayer::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationPushPlayer, K2Node_MakeArray_Array) == 0x000018, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationPushPlayer::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationPushPlayer, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000028, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationPushPlayer::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationPushPlayer, CallFunc_Array_Get_Item) == 0x000030, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationPushPlayer::CallFunc_Array_Get_Item' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationPushPlayer;
 
 // Function WBP_CharaSelect_Sub_CharaIcon.WBP_CharaSelect_Sub_CharaIcon_C.PlayAnimationSelectImpossible
 // 0x0010 (0x0010 - 0x0000)
@@ -310,11 +220,7 @@ public:
 	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationSelectImpossible) == 0x000008, "Wrong alignment on WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationSelectImpossible");
-static_assert(sizeof(WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationSelectImpossible) == 0x000010, "Wrong size on WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationSelectImpossible");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationSelectImpossible, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationSelectImpossible::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationSelectImpossible, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000008, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationSelectImpossible::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationSelectImpossible, CallFunc_Not_PreBool_ReturnValue) == 0x000009, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationSelectImpossible::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationSelectImpossible;
 
 // Function WBP_CharaSelect_Sub_CharaIcon.WBP_CharaSelect_Sub_CharaIcon_C.PlayAnimationSelectLoop
 // 0x0008 (0x0008 - 0x0000)
@@ -323,9 +229,7 @@ struct WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationSelectLoop final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationSelectLoop) == 0x000008, "Wrong alignment on WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationSelectLoop");
-static_assert(sizeof(WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationSelectLoop) == 0x000008, "Wrong size on WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationSelectLoop");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationSelectLoop, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationSelectLoop::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationSelectLoop;
 
 // Function WBP_CharaSelect_Sub_CharaIcon.WBP_CharaSelect_Sub_CharaIcon_C.PlayAnimationUnlock
 // 0x0008 (0x0008 - 0x0000)
@@ -334,9 +238,7 @@ struct WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationUnlock final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationUnlock) == 0x000008, "Wrong alignment on WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationUnlock");
-static_assert(sizeof(WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationUnlock) == 0x000008, "Wrong size on WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationUnlock");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationUnlock, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationUnlock::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CharaSelect_Sub_CharaIcon_C_PlayAnimationUnlock;
 
 // Function WBP_CharaSelect_Sub_CharaIcon.WBP_CharaSelect_Sub_CharaIcon_C.PlaySoundCancel
 // 0x0004 (0x0004 - 0x0000)
@@ -345,9 +247,7 @@ struct WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundCancel final
 public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0000(0x0004)()
 };
-static_assert(alignof(WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundCancel) == 0x000004, "Wrong alignment on WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundCancel");
-static_assert(sizeof(WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundCancel) == 0x000004, "Wrong size on WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundCancel");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundCancel, CallFunc_SoundPlay_ReturnValue) == 0x000000, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundCancel::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundCancel;
 
 // Function WBP_CharaSelect_Sub_CharaIcon.WBP_CharaSelect_Sub_CharaIcon_C.PlaySoundDecisionRivalSelect
 // 0x0030 (0x0030 - 0x0000)
@@ -364,15 +264,7 @@ public:
 	class USoundAtomCue*                          K2Node_Select_Default;                             // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0028(0x0004)()
 };
-static_assert(alignof(WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundDecisionRivalSelect) == 0x000008, "Wrong alignment on WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundDecisionRivalSelect");
-static_assert(sizeof(WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundDecisionRivalSelect) == 0x000030, "Wrong size on WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundDecisionRivalSelect");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundDecisionRivalSelect, Temp_bool_Variable) == 0x000000, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundDecisionRivalSelect::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundDecisionRivalSelect, Temp_object_Variable) == 0x000008, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundDecisionRivalSelect::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundDecisionRivalSelect, Temp_object_Variable_1) == 0x000010, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundDecisionRivalSelect::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundDecisionRivalSelect, CallFunc_GetDriverId_ReturnValue) == 0x000018, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundDecisionRivalSelect::CallFunc_GetDriverId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundDecisionRivalSelect, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000019, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundDecisionRivalSelect::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundDecisionRivalSelect, K2Node_Select_Default) == 0x000020, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundDecisionRivalSelect::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundDecisionRivalSelect, CallFunc_SoundPlay_ReturnValue) == 0x000028, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundDecisionRivalSelect::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundDecisionRivalSelect;
 
 // Function WBP_CharaSelect_Sub_CharaIcon.WBP_CharaSelect_Sub_CharaIcon_C.PlaySoundImpossible
 // 0x0004 (0x0004 - 0x0000)
@@ -381,9 +273,7 @@ struct WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundImpossible final
 public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0000(0x0004)()
 };
-static_assert(alignof(WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundImpossible) == 0x000004, "Wrong alignment on WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundImpossible");
-static_assert(sizeof(WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundImpossible) == 0x000004, "Wrong size on WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundImpossible");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundImpossible, CallFunc_SoundPlay_ReturnValue) == 0x000000, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundImpossible::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CharaSelect_Sub_CharaIcon_C_PlaySoundImpossible;
 
 // Function WBP_CharaSelect_Sub_CharaIcon.WBP_CharaSelect_Sub_CharaIcon_C.StopAnimationAllPushPlayer
 // 0x0004 (0x0004 - 0x0000)
@@ -395,12 +285,7 @@ public:
 	bool                                          CallFunc_IsAnimationPlaying_ReturnValue_2;         // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsAnimationPlaying_ReturnValue_3;         // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CharaSelect_Sub_CharaIcon_C_StopAnimationAllPushPlayer) == 0x000001, "Wrong alignment on WBP_CharaSelect_Sub_CharaIcon_C_StopAnimationAllPushPlayer");
-static_assert(sizeof(WBP_CharaSelect_Sub_CharaIcon_C_StopAnimationAllPushPlayer) == 0x000004, "Wrong size on WBP_CharaSelect_Sub_CharaIcon_C_StopAnimationAllPushPlayer");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_StopAnimationAllPushPlayer, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000000, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_StopAnimationAllPushPlayer::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_StopAnimationAllPushPlayer, CallFunc_IsAnimationPlaying_ReturnValue_1) == 0x000001, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_StopAnimationAllPushPlayer::CallFunc_IsAnimationPlaying_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_StopAnimationAllPushPlayer, CallFunc_IsAnimationPlaying_ReturnValue_2) == 0x000002, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_StopAnimationAllPushPlayer::CallFunc_IsAnimationPlaying_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_StopAnimationAllPushPlayer, CallFunc_IsAnimationPlaying_ReturnValue_3) == 0x000003, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_StopAnimationAllPushPlayer::CallFunc_IsAnimationPlaying_ReturnValue_3' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CharaSelect_Sub_CharaIcon_C_StopAnimationAllPushPlayer;
 
 // Function WBP_CharaSelect_Sub_CharaIcon.WBP_CharaSelect_Sub_CharaIcon_C.StopAnimationPushPlayer
 // 0x0028 (0x0028 - 0x0000)
@@ -413,12 +298,7 @@ public:
 	class UWidgetAnimation*                       CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CharaSelect_Sub_CharaIcon_C_StopAnimationPushPlayer) == 0x000008, "Wrong alignment on WBP_CharaSelect_Sub_CharaIcon_C_StopAnimationPushPlayer");
-static_assert(sizeof(WBP_CharaSelect_Sub_CharaIcon_C_StopAnimationPushPlayer) == 0x000028, "Wrong size on WBP_CharaSelect_Sub_CharaIcon_C_StopAnimationPushPlayer");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_StopAnimationPushPlayer, InPlayerIndex) == 0x000000, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_StopAnimationPushPlayer::InPlayerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_StopAnimationPushPlayer, K2Node_MakeArray_Array) == 0x000008, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_StopAnimationPushPlayer::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_StopAnimationPushPlayer, CallFunc_Array_Get_Item) == 0x000018, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_StopAnimationPushPlayer::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_CharaSelect_Sub_CharaIcon_C_StopAnimationPushPlayer, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000020, "Member 'WBP_CharaSelect_Sub_CharaIcon_C_StopAnimationPushPlayer::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CharaSelect_Sub_CharaIcon_C_StopAnimationPushPlayer;
 
 }
 

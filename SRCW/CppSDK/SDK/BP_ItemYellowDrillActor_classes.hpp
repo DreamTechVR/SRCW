@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -39,19 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ItemYellowDrillActor_C">();
+		BP_STATIC_CLASS_IMPL("BP_ItemYellowDrillActor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ItemYellowDrillActor_C")
 	}
 	static class ABP_ItemYellowDrillActor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ItemYellowDrillActor_C>();
 	}
 };
-static_assert(alignof(ABP_ItemYellowDrillActor_C) == 0x000008, "Wrong alignment on ABP_ItemYellowDrillActor_C");
-static_assert(sizeof(ABP_ItemYellowDrillActor_C) == 0x000348, "Wrong size on ABP_ItemYellowDrillActor_C");
-static_assert(offsetof(ABP_ItemYellowDrillActor_C, UberGraphFrame) == 0x000330, "Member 'ABP_ItemYellowDrillActor_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_ItemYellowDrillActor_C, Timeline_CountDown_CountDown_EF64C89B4F9F80B1E6C14D903A73331E) == 0x000338, "Member 'ABP_ItemYellowDrillActor_C::Timeline_CountDown_CountDown_EF64C89B4F9F80B1E6C14D903A73331E' has a wrong offset!");
-static_assert(offsetof(ABP_ItemYellowDrillActor_C, Timeline_CountDown__Direction_EF64C89B4F9F80B1E6C14D903A73331E) == 0x00033C, "Member 'ABP_ItemYellowDrillActor_C::Timeline_CountDown__Direction_EF64C89B4F9F80B1E6C14D903A73331E' has a wrong offset!");
-static_assert(offsetof(ABP_ItemYellowDrillActor_C, Timeline_CountDown) == 0x000340, "Member 'ABP_ItemYellowDrillActor_C::Timeline_CountDown' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_ItemYellowDrillActor_C;
 
 }
 

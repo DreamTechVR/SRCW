@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -46,23 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MachineCustom_Sub_TabBtn_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MachineCustom_Sub_TabBtn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MachineCustom_Sub_TabBtn_C")
 	}
 	static class UWBP_MachineCustom_Sub_TabBtn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MachineCustom_Sub_TabBtn_C>();
 	}
 };
-static_assert(alignof(UWBP_MachineCustom_Sub_TabBtn_C) == 0x000008, "Wrong alignment on UWBP_MachineCustom_Sub_TabBtn_C");
-static_assert(sizeof(UWBP_MachineCustom_Sub_TabBtn_C) == 0x000350, "Wrong size on UWBP_MachineCustom_Sub_TabBtn_C");
-static_assert(offsetof(UWBP_MachineCustom_Sub_TabBtn_C, UberGraphFrame) == 0x000310, "Member 'UWBP_MachineCustom_Sub_TabBtn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_TabBtn_C, Tab_Select_Loop) == 0x000318, "Member 'UWBP_MachineCustom_Sub_TabBtn_C::Tab_Select_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_TabBtn_C, Tab_Active_Loop) == 0x000320, "Member 'UWBP_MachineCustom_Sub_TabBtn_C::Tab_Active_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_TabBtn_C, PAT_TabPict_Mark) == 0x000328, "Member 'UWBP_MachineCustom_Sub_TabBtn_C::PAT_TabPict_Mark' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_TabBtn_C, PAT_TabPict_Platform) == 0x000330, "Member 'UWBP_MachineCustom_Sub_TabBtn_C::PAT_TabPict_Platform' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_TabBtn_C, UnionUIButton) == 0x000338, "Member 'UWBP_MachineCustom_Sub_TabBtn_C::UnionUIButton' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_TabBtn_C, WidgetSwitcher_All) == 0x000340, "Member 'UWBP_MachineCustom_Sub_TabBtn_C::WidgetSwitcher_All' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_TabBtn_C, WidgetSwitcher_FriendList) == 0x000348, "Member 'UWBP_MachineCustom_Sub_TabBtn_C::WidgetSwitcher_FriendList' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MachineCustom_Sub_TabBtn_C;
 
 }
 

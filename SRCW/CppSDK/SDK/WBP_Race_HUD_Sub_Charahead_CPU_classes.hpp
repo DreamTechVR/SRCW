@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "UnionRun_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UnionRun_classes.hpp"
 
 
 namespace SDK
@@ -52,30 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_HUD_Sub_Charahead_CPU_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_HUD_Sub_Charahead_CPU_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_HUD_Sub_Charahead_CPU_C")
 	}
 	static class UWBP_Race_HUD_Sub_Charahead_CPU_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_HUD_Sub_Charahead_CPU_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_HUD_Sub_Charahead_CPU_C) == 0x000008, "Wrong alignment on UWBP_Race_HUD_Sub_Charahead_CPU_C");
-static_assert(sizeof(UWBP_Race_HUD_Sub_Charahead_CPU_C) == 0x000398, "Wrong size on UWBP_Race_HUD_Sub_Charahead_CPU_C");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Charahead_CPU_C, UberGraphFrame) == 0x0002E8, "Member 'UWBP_Race_HUD_Sub_Charahead_CPU_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Charahead_CPU_C, Line) == 0x0002F0, "Member 'UWBP_Race_HUD_Sub_Charahead_CPU_C::Line' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Charahead_CPU_C, MLC_PAT_CharaHead_CPU) == 0x0002F8, "Member 'UWBP_Race_HUD_Sub_Charahead_CPU_C::MLC_PAT_CharaHead_CPU' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Charahead_CPU_C, PAT_CharaHead_CPU) == 0x000300, "Member 'UWBP_Race_HUD_Sub_Charahead_CPU_C::PAT_CharaHead_CPU' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Charahead_CPU_C, PAT_NUM_Main) == 0x000308, "Member 'UWBP_Race_HUD_Sub_Charahead_CPU_C::PAT_NUM_Main' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Charahead_CPU_C, PAT_NUM_Outline) == 0x000310, "Member 'UWBP_Race_HUD_Sub_Charahead_CPU_C::PAT_NUM_Outline' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Charahead_CPU_C, TXT_MLC_Rank) == 0x000318, "Member 'UWBP_Race_HUD_Sub_Charahead_CPU_C::TXT_MLC_Rank' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Charahead_CPU_C, Rank_TextColor_Index) == 0x000320, "Member 'UWBP_Race_HUD_Sub_Charahead_CPU_C::Rank_TextColor_Index' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Charahead_CPU_C, PATMaterial) == 0x000328, "Member 'UWBP_Race_HUD_Sub_Charahead_CPU_C::PATMaterial' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Charahead_CPU_C, RankMat_Body) == 0x000330, "Member 'UWBP_Race_HUD_Sub_Charahead_CPU_C::RankMat_Body' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Charahead_CPU_C, RankMat_Outline) == 0x000338, "Member 'UWBP_Race_HUD_Sub_Charahead_CPU_C::RankMat_Outline' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Charahead_CPU_C, ColorMap) == 0x000340, "Member 'UWBP_Race_HUD_Sub_Charahead_CPU_C::ColorMap' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Charahead_CPU_C, Group_Index) == 0x000390, "Member 'UWBP_Race_HUD_Sub_Charahead_CPU_C::Group_Index' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Charahead_CPU_C, NewVar_0) == 0x000394, "Member 'UWBP_Race_HUD_Sub_Charahead_CPU_C::NewVar_0' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Charahead_CPU_C, IsRivalNow) == 0x000395, "Member 'UWBP_Race_HUD_Sub_Charahead_CPU_C::IsRivalNow' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_HUD_Sub_Charahead_CPU_C;
 
 }
 

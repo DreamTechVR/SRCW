@@ -23,9 +23,7 @@ struct BPC_MenuStatePartyRaceSelectClass_C_OnRightShoulderReleasedEvent_Event fi
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MenuStatePartyRaceSelectClass_C_OnRightShoulderReleasedEvent_Event) == 0x000008, "Wrong alignment on BPC_MenuStatePartyRaceSelectClass_C_OnRightShoulderReleasedEvent_Event");
-static_assert(sizeof(BPC_MenuStatePartyRaceSelectClass_C_OnRightShoulderReleasedEvent_Event) == 0x000008, "Wrong size on BPC_MenuStatePartyRaceSelectClass_C_OnRightShoulderReleasedEvent_Event");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_OnRightShoulderReleasedEvent_Event, Object) == 0x000000, "Member 'BPC_MenuStatePartyRaceSelectClass_C_OnRightShoulderReleasedEvent_Event::Object' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MenuStatePartyRaceSelectClass_C_OnRightShoulderReleasedEvent_Event;
 
 // Function BPC_MenuStatePartyRaceSelectClass.BPC_MenuStatePartyRaceSelectClass_C.OnRightShoulderPressedEvent_Event
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +32,7 @@ struct BPC_MenuStatePartyRaceSelectClass_C_OnRightShoulderPressedEvent_Event fin
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MenuStatePartyRaceSelectClass_C_OnRightShoulderPressedEvent_Event) == 0x000008, "Wrong alignment on BPC_MenuStatePartyRaceSelectClass_C_OnRightShoulderPressedEvent_Event");
-static_assert(sizeof(BPC_MenuStatePartyRaceSelectClass_C_OnRightShoulderPressedEvent_Event) == 0x000008, "Wrong size on BPC_MenuStatePartyRaceSelectClass_C_OnRightShoulderPressedEvent_Event");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_OnRightShoulderPressedEvent_Event, Object) == 0x000000, "Member 'BPC_MenuStatePartyRaceSelectClass_C_OnRightShoulderPressedEvent_Event::Object' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MenuStatePartyRaceSelectClass_C_OnRightShoulderPressedEvent_Event;
 
 // Function BPC_MenuStatePartyRaceSelectClass.BPC_MenuStatePartyRaceSelectClass_C.OnLeftShoulderPressedEvent_Event
 // 0x0008 (0x0008 - 0x0000)
@@ -45,9 +41,7 @@ struct BPC_MenuStatePartyRaceSelectClass_C_OnLeftShoulderPressedEvent_Event fina
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MenuStatePartyRaceSelectClass_C_OnLeftShoulderPressedEvent_Event) == 0x000008, "Wrong alignment on BPC_MenuStatePartyRaceSelectClass_C_OnLeftShoulderPressedEvent_Event");
-static_assert(sizeof(BPC_MenuStatePartyRaceSelectClass_C_OnLeftShoulderPressedEvent_Event) == 0x000008, "Wrong size on BPC_MenuStatePartyRaceSelectClass_C_OnLeftShoulderPressedEvent_Event");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_OnLeftShoulderPressedEvent_Event, Object) == 0x000000, "Member 'BPC_MenuStatePartyRaceSelectClass_C_OnLeftShoulderPressedEvent_Event::Object' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MenuStatePartyRaceSelectClass_C_OnLeftShoulderPressedEvent_Event;
 
 // Function BPC_MenuStatePartyRaceSelectClass.BPC_MenuStatePartyRaceSelectClass_C.OnLeftShoulderReleasedEvent_Event
 // 0x0008 (0x0008 - 0x0000)
@@ -56,9 +50,7 @@ struct BPC_MenuStatePartyRaceSelectClass_C_OnLeftShoulderReleasedEvent_Event fin
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MenuStatePartyRaceSelectClass_C_OnLeftShoulderReleasedEvent_Event) == 0x000008, "Wrong alignment on BPC_MenuStatePartyRaceSelectClass_C_OnLeftShoulderReleasedEvent_Event");
-static_assert(sizeof(BPC_MenuStatePartyRaceSelectClass_C_OnLeftShoulderReleasedEvent_Event) == 0x000008, "Wrong size on BPC_MenuStatePartyRaceSelectClass_C_OnLeftShoulderReleasedEvent_Event");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_OnLeftShoulderReleasedEvent_Event, Object) == 0x000000, "Member 'BPC_MenuStatePartyRaceSelectClass_C_OnLeftShoulderReleasedEvent_Event::Object' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MenuStatePartyRaceSelectClass_C_OnLeftShoulderReleasedEvent_Event;
 
 // Function BPC_MenuStatePartyRaceSelectClass.BPC_MenuStatePartyRaceSelectClass_C. OnSpecialPressedEvent_Event
 // 0x0008 (0x0008 - 0x0000)
@@ -67,9 +59,7 @@ struct BPC_MenuStatePartyRaceSelectClass_C__OnSpecialPressedEvent_Event final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MenuStatePartyRaceSelectClass_C__OnSpecialPressedEvent_Event) == 0x000008, "Wrong alignment on BPC_MenuStatePartyRaceSelectClass_C__OnSpecialPressedEvent_Event");
-static_assert(sizeof(BPC_MenuStatePartyRaceSelectClass_C__OnSpecialPressedEvent_Event) == 0x000008, "Wrong size on BPC_MenuStatePartyRaceSelectClass_C__OnSpecialPressedEvent_Event");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C__OnSpecialPressedEvent_Event, Object) == 0x000000, "Member 'BPC_MenuStatePartyRaceSelectClass_C__OnSpecialPressedEvent_Event::Object' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MenuStatePartyRaceSelectClass_C__OnSpecialPressedEvent_Event;
 
 // Function BPC_MenuStatePartyRaceSelectClass.BPC_MenuStatePartyRaceSelectClass_C. OnSpecialReleasedEvent_Event
 // 0x0008 (0x0008 - 0x0000)
@@ -78,9 +68,7 @@ struct BPC_MenuStatePartyRaceSelectClass_C__OnSpecialReleasedEvent_Event final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MenuStatePartyRaceSelectClass_C__OnSpecialReleasedEvent_Event) == 0x000008, "Wrong alignment on BPC_MenuStatePartyRaceSelectClass_C__OnSpecialReleasedEvent_Event");
-static_assert(sizeof(BPC_MenuStatePartyRaceSelectClass_C__OnSpecialReleasedEvent_Event) == 0x000008, "Wrong size on BPC_MenuStatePartyRaceSelectClass_C__OnSpecialReleasedEvent_Event");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C__OnSpecialReleasedEvent_Event, Object) == 0x000000, "Member 'BPC_MenuStatePartyRaceSelectClass_C__OnSpecialReleasedEvent_Event::Object' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MenuStatePartyRaceSelectClass_C__OnSpecialReleasedEvent_Event;
 
 // Function BPC_MenuStatePartyRaceSelectClass.BPC_MenuStatePartyRaceSelectClass_C.OnUISceneCancelEvent_Event
 // 0x0010 (0x0010 - 0x0000)
@@ -91,11 +79,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MenuStatePartyRaceSelectClass_C_OnUISceneCancelEvent_Event) == 0x000008, "Wrong alignment on BPC_MenuStatePartyRaceSelectClass_C_OnUISceneCancelEvent_Event");
-static_assert(sizeof(BPC_MenuStatePartyRaceSelectClass_C_OnUISceneCancelEvent_Event) == 0x000010, "Wrong size on BPC_MenuStatePartyRaceSelectClass_C_OnUISceneCancelEvent_Event");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_OnUISceneCancelEvent_Event, Button) == 0x000000, "Member 'BPC_MenuStatePartyRaceSelectClass_C_OnUISceneCancelEvent_Event::Button' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_OnUISceneCancelEvent_Event, PanelIndex) == 0x000008, "Member 'BPC_MenuStatePartyRaceSelectClass_C_OnUISceneCancelEvent_Event::PanelIndex' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_OnUISceneCancelEvent_Event, ButtonIndex) == 0x00000C, "Member 'BPC_MenuStatePartyRaceSelectClass_C_OnUISceneCancelEvent_Event::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MenuStatePartyRaceSelectClass_C_OnUISceneCancelEvent_Event;
 
 // Function BPC_MenuStatePartyRaceSelectClass.BPC_MenuStatePartyRaceSelectClass_C.OnUISceneDecisionEvent_Event
 // 0x0010 (0x0010 - 0x0000)
@@ -106,11 +90,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MenuStatePartyRaceSelectClass_C_OnUISceneDecisionEvent_Event) == 0x000008, "Wrong alignment on BPC_MenuStatePartyRaceSelectClass_C_OnUISceneDecisionEvent_Event");
-static_assert(sizeof(BPC_MenuStatePartyRaceSelectClass_C_OnUISceneDecisionEvent_Event) == 0x000010, "Wrong size on BPC_MenuStatePartyRaceSelectClass_C_OnUISceneDecisionEvent_Event");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_OnUISceneDecisionEvent_Event, Button) == 0x000000, "Member 'BPC_MenuStatePartyRaceSelectClass_C_OnUISceneDecisionEvent_Event::Button' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_OnUISceneDecisionEvent_Event, PanelIndex) == 0x000008, "Member 'BPC_MenuStatePartyRaceSelectClass_C_OnUISceneDecisionEvent_Event::PanelIndex' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_OnUISceneDecisionEvent_Event, ButtonIndex) == 0x00000C, "Member 'BPC_MenuStatePartyRaceSelectClass_C_OnUISceneDecisionEvent_Event::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MenuStatePartyRaceSelectClass_C_OnUISceneDecisionEvent_Event;
 
 // Function BPC_MenuStatePartyRaceSelectClass.BPC_MenuStatePartyRaceSelectClass_C.OnUISceneFocusEvent_Event
 // 0x0010 (0x0010 - 0x0000)
@@ -121,11 +101,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MenuStatePartyRaceSelectClass_C_OnUISceneFocusEvent_Event) == 0x000008, "Wrong alignment on BPC_MenuStatePartyRaceSelectClass_C_OnUISceneFocusEvent_Event");
-static_assert(sizeof(BPC_MenuStatePartyRaceSelectClass_C_OnUISceneFocusEvent_Event) == 0x000010, "Wrong size on BPC_MenuStatePartyRaceSelectClass_C_OnUISceneFocusEvent_Event");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_OnUISceneFocusEvent_Event, Button) == 0x000000, "Member 'BPC_MenuStatePartyRaceSelectClass_C_OnUISceneFocusEvent_Event::Button' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_OnUISceneFocusEvent_Event, PanelIndex) == 0x000008, "Member 'BPC_MenuStatePartyRaceSelectClass_C_OnUISceneFocusEvent_Event::PanelIndex' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_OnUISceneFocusEvent_Event, ButtonIndex) == 0x00000C, "Member 'BPC_MenuStatePartyRaceSelectClass_C_OnUISceneFocusEvent_Event::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MenuStatePartyRaceSelectClass_C_OnUISceneFocusEvent_Event;
 
 // Function BPC_MenuStatePartyRaceSelectClass.BPC_MenuStatePartyRaceSelectClass_C.ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass
 // 0x0210 (0x0210 - 0x0000)
@@ -224,82 +200,7 @@ public:
 	uint8                                         Pad_202[0x6];                                      // 0x0202(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_ClassSelect_C*                     CallFunc_Create_ReturnValue;                       // 0x0208(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass) == 0x000008, "Wrong alignment on BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass");
-static_assert(sizeof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass) == 0x000210, "Wrong size on BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, EntryPoint) == 0x000000, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, Temp_bool_Has_Been_Initd_Variable) == 0x00000C, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, CallFunc_GetPlayerController_ReturnValue) == 0x000010, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000020, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_CustomEvent_Object_5) == 0x000030, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_CustomEvent_Object_5' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_CustomEvent_Object_4) == 0x000038, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_CustomEvent_Object_4' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_CustomEvent_Object_3) == 0x000040, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_CustomEvent_Object_3' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_CustomEvent_Object_2) == 0x000048, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_CustomEvent_Object_2' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, Temp_int_Array_Index_Variable) == 0x000050, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_CustomEvent_Object_1) == 0x000058, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_CustomEvent_Object_1' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_CustomEvent_Object) == 0x000060, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_CustomEvent_Object' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, CallFunc_GetPlayerController_ReturnValue_1) == 0x000068, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_DynamicCast_AsApp_Player_Controller_1) == 0x000070, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_DynamicCast_AsApp_Player_Controller_1' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_DynamicCast_bSuccess_1) == 0x000078, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, CallFunc_IsShippingBuild_ReturnValue) == 0x000079, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::CallFunc_IsShippingBuild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, CallFunc_Not_PreBool_ReturnValue) == 0x00007A, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, CallFunc_Array_Get_Item) == 0x000080, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_DynamicCast_AsWBP_Class_Select_Sub_Btn_Class) == 0x000088, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_DynamicCast_AsWBP_Class_Select_Sub_Btn_Class' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_DynamicCast_bSuccess_2) == 0x000090, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, CallFunc_Array_Length_ReturnValue) == 0x000094, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, CallFunc_Less_IntInt_ReturnValue) == 0x000098, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_CreateDelegate_OutputDelegate) == 0x00009C, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_CreateDelegate_OutputDelegate_1) == 0x0000AC, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_CreateDelegate_OutputDelegate_2) == 0x0000BC, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_CreateDelegate_OutputDelegate_3) == 0x0000CC, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_CreateDelegate_OutputDelegate_4) == 0x0000DC, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_CreateDelegate_OutputDelegate_5) == 0x0000EC, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable) == 0x0000FC, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, CallFunc_IsValid_ReturnValue_1) == 0x0000FD, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, CallFunc_UnregisterSingleSubMenu_ReturnValue) == 0x0000FE, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::CallFunc_UnregisterSingleSubMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, CallFunc_IsValid_ReturnValue_2) == 0x0000FF, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, CallFunc_GetSelectedMenuSpeedClassId_ReturnValue) == 0x000100, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::CallFunc_GetSelectedMenuSpeedClassId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_CustomEvent_Button_2) == 0x000108, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_CustomEvent_Button_2' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_CustomEvent_PanelIndex_2) == 0x000110, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_CustomEvent_PanelIndex_2' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_CustomEvent_ButtonIndex_2) == 0x000114, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_CustomEvent_ButtonIndex_2' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_CustomEvent_Button_1) == 0x000118, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_CustomEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_CustomEvent_PanelIndex_1) == 0x000120, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_CustomEvent_PanelIndex_1' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_CustomEvent_ButtonIndex_1) == 0x000124, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_CustomEvent_ButtonIndex_1' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_DynamicCast_AsClass_Select_Button_Base) == 0x000128, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_DynamicCast_AsClass_Select_Button_Base' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_DynamicCast_bSuccess_3) == 0x000130, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, CallFunc_GetSpeedClass_ReturnValue) == 0x000131, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::CallFunc_GetSpeedClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, CallFunc_GetMenuSpeedClass_ReturnValue) == 0x000132, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::CallFunc_GetMenuSpeedClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000138, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_CreateDelegate_OutputDelegate_6) == 0x000140, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_CreateDelegate_OutputDelegate_7) == 0x000150, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, CallFunc_IsValid_ReturnValue_3) == 0x000160, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_CreateDelegate_OutputDelegate_8) == 0x000164, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_CreateDelegate_OutputDelegate_8' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_CreateDelegate_OutputDelegate_9) == 0x000174, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_CreateDelegate_OutputDelegate_9' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, CallFunc_GetAppPlayerController_ReturnValue) == 0x000188, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::CallFunc_GetAppPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, Temp_bool_IsClosed_Variable) == 0x000190, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, CallFunc_SoundPlay_ReturnValue) == 0x000194, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, CallFunc_SoundPlay_ReturnValue_1) == 0x000198, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_CustomEvent_Button) == 0x0001A0, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_CustomEvent_PanelIndex) == 0x0001A8, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_CustomEvent_PanelIndex' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_CustomEvent_ButtonIndex) == 0x0001AC, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_CustomEvent_ButtonIndex' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_CreateDelegate_OutputDelegate_10) == 0x0001B0, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_CreateDelegate_OutputDelegate_10' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, CallFunc_SoundPlay_ReturnValue_2) == 0x0001C0, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::CallFunc_SoundPlay_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, CallFunc_SpawnObject_ReturnValue) == 0x0001C8, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, CallFunc_GetOwnerSequence_ReturnValue) == 0x0001D0, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::CallFunc_GetOwnerSequence_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_DynamicCast_AsBP_Party_Race_Menu_Sequence) == 0x0001D8, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_DynamicCast_AsBP_Party_Race_Menu_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, K2Node_DynamicCast_bSuccess_4) == 0x0001E0, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, CallFunc_MakeLiteralByte_ReturnValue) == 0x0001E1, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, CallFunc_MakeLiteralByte_ReturnValue_1) == 0x0001E2, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::CallFunc_MakeLiteralByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, CallFunc_Conv_ByteToInt_ReturnValue) == 0x0001E4, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x0001E8, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, CallFunc_GetWorldSubsystem_ReturnValue_1) == 0x0001F0, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::CallFunc_GetWorldSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, CallFunc_GetWorldSubsystem_ReturnValue_2) == 0x0001F8, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::CallFunc_GetWorldSubsystem_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, CallFunc_IsValid_ReturnValue_4) == 0x000200, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, CallFunc_IsValid_ReturnValue_5) == 0x000201, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass, CallFunc_Create_ReturnValue) == 0x000208, "Member 'BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass::CallFunc_Create_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MenuStatePartyRaceSelectClass_C_ExecuteUbergraph_BPC_MenuStatePartyRaceSelectClass;
 
 }
 

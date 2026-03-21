@@ -29,14 +29,7 @@ public:
 	ESlateVisibility                              K2Node_CustomEvent_InVisibility;                   // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Ready_Sub_Decide_C_ExecuteUbergraph_WBP_Ready_Sub_Decide) == 0x000008, "Wrong alignment on WBP_Ready_Sub_Decide_C_ExecuteUbergraph_WBP_Ready_Sub_Decide");
-static_assert(sizeof(WBP_Ready_Sub_Decide_C_ExecuteUbergraph_WBP_Ready_Sub_Decide) == 0x000038, "Wrong size on WBP_Ready_Sub_Decide_C_ExecuteUbergraph_WBP_Ready_Sub_Decide");
-static_assert(offsetof(WBP_Ready_Sub_Decide_C_ExecuteUbergraph_WBP_Ready_Sub_Decide, EntryPoint) == 0x000000, "Member 'WBP_Ready_Sub_Decide_C_ExecuteUbergraph_WBP_Ready_Sub_Decide::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_Decide_C_ExecuteUbergraph_WBP_Ready_Sub_Decide, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_Ready_Sub_Decide_C_ExecuteUbergraph_WBP_Ready_Sub_Decide::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_Decide_C_ExecuteUbergraph_WBP_Ready_Sub_Decide, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'WBP_Ready_Sub_Decide_C_ExecuteUbergraph_WBP_Ready_Sub_Decide::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_Decide_C_ExecuteUbergraph_WBP_Ready_Sub_Decide, CallFunc_PlayAnimation_ReturnValue) == 0x000028, "Member 'WBP_Ready_Sub_Decide_C_ExecuteUbergraph_WBP_Ready_Sub_Decide::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_Decide_C_ExecuteUbergraph_WBP_Ready_Sub_Decide, K2Node_CustomEvent_InVisibility) == 0x000030, "Member 'WBP_Ready_Sub_Decide_C_ExecuteUbergraph_WBP_Ready_Sub_Decide::K2Node_CustomEvent_InVisibility' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_Sub_Decide_C_ExecuteUbergraph_WBP_Ready_Sub_Decide, K2Node_SwitchEnum_CmpSuccess) == 0x000031, "Member 'WBP_Ready_Sub_Decide_C_ExecuteUbergraph_WBP_Ready_Sub_Decide::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Ready_Sub_Decide_C_ExecuteUbergraph_WBP_Ready_Sub_Decide;
 
 // Function WBP_Ready_Sub_Decide.WBP_Ready_Sub_Decide_C.OnVisibilityChangedEvent
 // 0x0001 (0x0001 - 0x0000)
@@ -45,9 +38,7 @@ struct WBP_Ready_Sub_Decide_C_OnVisibilityChangedEvent final
 public:
 	ESlateVisibility                              InVisibility;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Ready_Sub_Decide_C_OnVisibilityChangedEvent) == 0x000001, "Wrong alignment on WBP_Ready_Sub_Decide_C_OnVisibilityChangedEvent");
-static_assert(sizeof(WBP_Ready_Sub_Decide_C_OnVisibilityChangedEvent) == 0x000001, "Wrong size on WBP_Ready_Sub_Decide_C_OnVisibilityChangedEvent");
-static_assert(offsetof(WBP_Ready_Sub_Decide_C_OnVisibilityChangedEvent, InVisibility) == 0x000000, "Member 'WBP_Ready_Sub_Decide_C_OnVisibilityChangedEvent::InVisibility' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Ready_Sub_Decide_C_OnVisibilityChangedEvent;
 
 }
 

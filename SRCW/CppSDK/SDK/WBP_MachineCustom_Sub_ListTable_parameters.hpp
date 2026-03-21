@@ -28,13 +28,7 @@ public:
 	bool                                          CallFunc_IsSelect_ReturnValue;                     // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_ListTable_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ListTable) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_ListTable_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ListTable");
-static_assert(sizeof(WBP_MachineCustom_Sub_ListTable_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ListTable) == 0x000018, "Wrong size on WBP_MachineCustom_Sub_ListTable_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ListTable");
-static_assert(offsetof(WBP_MachineCustom_Sub_ListTable_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ListTable, EntryPoint) == 0x000000, "Member 'WBP_MachineCustom_Sub_ListTable_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ListTable::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ListTable_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ListTable, CallFunc_GetPlayerController_ReturnValue) == 0x000008, "Member 'WBP_MachineCustom_Sub_ListTable_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ListTable::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ListTable_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ListTable, CallFunc_HasUserFocus_ReturnValue) == 0x000010, "Member 'WBP_MachineCustom_Sub_ListTable_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ListTable::CallFunc_HasUserFocus_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ListTable_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ListTable, CallFunc_IsSelect_ReturnValue) == 0x000011, "Member 'WBP_MachineCustom_Sub_ListTable_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ListTable::CallFunc_IsSelect_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ListTable_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ListTable, CallFunc_Not_PreBool_ReturnValue) == 0x000012, "Member 'WBP_MachineCustom_Sub_ListTable_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ListTable::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_ListTable_C_ExecuteUbergraph_WBP_MachineCustom_Sub_ListTable;
 
 // Function WBP_MachineCustom_Sub_ListTable.WBP_MachineCustom_Sub_ListTable_C.PlayAnimationActiveLoop
 // 0x0018 (0x0018 - 0x0000)
@@ -47,12 +41,7 @@ public:
 	bool                                          CallFunc_IsAnimationPlaying_ReturnValue_1;         // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_ListTable_C_PlayAnimationActiveLoop) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_ListTable_C_PlayAnimationActiveLoop");
-static_assert(sizeof(WBP_MachineCustom_Sub_ListTable_C_PlayAnimationActiveLoop) == 0x000018, "Wrong size on WBP_MachineCustom_Sub_ListTable_C_PlayAnimationActiveLoop");
-static_assert(offsetof(WBP_MachineCustom_Sub_ListTable_C_PlayAnimationActiveLoop, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000000, "Member 'WBP_MachineCustom_Sub_ListTable_C_PlayAnimationActiveLoop::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ListTable_C_PlayAnimationActiveLoop, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_MachineCustom_Sub_ListTable_C_PlayAnimationActiveLoop::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ListTable_C_PlayAnimationActiveLoop, CallFunc_IsAnimationPlaying_ReturnValue_1) == 0x000010, "Member 'WBP_MachineCustom_Sub_ListTable_C_PlayAnimationActiveLoop::CallFunc_IsAnimationPlaying_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ListTable_C_PlayAnimationActiveLoop, CallFunc_Not_PreBool_ReturnValue) == 0x000011, "Member 'WBP_MachineCustom_Sub_ListTable_C_PlayAnimationActiveLoop::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_ListTable_C_PlayAnimationActiveLoop;
 
 // Function WBP_MachineCustom_Sub_ListTable.WBP_MachineCustom_Sub_ListTable_C.PlayAnimationSelectLoop
 // 0x0018 (0x0018 - 0x0000)
@@ -65,12 +54,7 @@ public:
 	bool                                          CallFunc_IsAnimationPlaying_ReturnValue_1;         // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_ListTable_C_PlayAnimationSelectLoop) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_ListTable_C_PlayAnimationSelectLoop");
-static_assert(sizeof(WBP_MachineCustom_Sub_ListTable_C_PlayAnimationSelectLoop) == 0x000018, "Wrong size on WBP_MachineCustom_Sub_ListTable_C_PlayAnimationSelectLoop");
-static_assert(offsetof(WBP_MachineCustom_Sub_ListTable_C_PlayAnimationSelectLoop, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000000, "Member 'WBP_MachineCustom_Sub_ListTable_C_PlayAnimationSelectLoop::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ListTable_C_PlayAnimationSelectLoop, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_MachineCustom_Sub_ListTable_C_PlayAnimationSelectLoop::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ListTable_C_PlayAnimationSelectLoop, CallFunc_IsAnimationPlaying_ReturnValue_1) == 0x000010, "Member 'WBP_MachineCustom_Sub_ListTable_C_PlayAnimationSelectLoop::CallFunc_IsAnimationPlaying_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_ListTable_C_PlayAnimationSelectLoop, CallFunc_Not_PreBool_ReturnValue) == 0x000011, "Member 'WBP_MachineCustom_Sub_ListTable_C_PlayAnimationSelectLoop::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_ListTable_C_PlayAnimationSelectLoop;
 
 // Function WBP_MachineCustom_Sub_ListTable.WBP_MachineCustom_Sub_ListTable_C.PlaySECancel
 // 0x0004 (0x0004 - 0x0000)
@@ -79,9 +63,7 @@ struct WBP_MachineCustom_Sub_ListTable_C_PlaySECancel final
 public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0000(0x0004)()
 };
-static_assert(alignof(WBP_MachineCustom_Sub_ListTable_C_PlaySECancel) == 0x000004, "Wrong alignment on WBP_MachineCustom_Sub_ListTable_C_PlaySECancel");
-static_assert(sizeof(WBP_MachineCustom_Sub_ListTable_C_PlaySECancel) == 0x000004, "Wrong size on WBP_MachineCustom_Sub_ListTable_C_PlaySECancel");
-static_assert(offsetof(WBP_MachineCustom_Sub_ListTable_C_PlaySECancel, CallFunc_SoundPlay_ReturnValue) == 0x000000, "Member 'WBP_MachineCustom_Sub_ListTable_C_PlaySECancel::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_ListTable_C_PlaySECancel;
 
 // Function WBP_MachineCustom_Sub_ListTable.WBP_MachineCustom_Sub_ListTable_C.PlaySEDecision
 // 0x0004 (0x0004 - 0x0000)
@@ -90,9 +72,7 @@ struct WBP_MachineCustom_Sub_ListTable_C_PlaySEDecision final
 public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0000(0x0004)()
 };
-static_assert(alignof(WBP_MachineCustom_Sub_ListTable_C_PlaySEDecision) == 0x000004, "Wrong alignment on WBP_MachineCustom_Sub_ListTable_C_PlaySEDecision");
-static_assert(sizeof(WBP_MachineCustom_Sub_ListTable_C_PlaySEDecision) == 0x000004, "Wrong size on WBP_MachineCustom_Sub_ListTable_C_PlaySEDecision");
-static_assert(offsetof(WBP_MachineCustom_Sub_ListTable_C_PlaySEDecision, CallFunc_SoundPlay_ReturnValue) == 0x000000, "Member 'WBP_MachineCustom_Sub_ListTable_C_PlaySEDecision::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_ListTable_C_PlaySEDecision;
 
 // Function WBP_MachineCustom_Sub_ListTable.WBP_MachineCustom_Sub_ListTable_C.PlaySEFocus
 // 0x0004 (0x0004 - 0x0000)
@@ -101,9 +81,7 @@ struct WBP_MachineCustom_Sub_ListTable_C_PlaySEFocus final
 public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0000(0x0004)()
 };
-static_assert(alignof(WBP_MachineCustom_Sub_ListTable_C_PlaySEFocus) == 0x000004, "Wrong alignment on WBP_MachineCustom_Sub_ListTable_C_PlaySEFocus");
-static_assert(sizeof(WBP_MachineCustom_Sub_ListTable_C_PlaySEFocus) == 0x000004, "Wrong size on WBP_MachineCustom_Sub_ListTable_C_PlaySEFocus");
-static_assert(offsetof(WBP_MachineCustom_Sub_ListTable_C_PlaySEFocus, CallFunc_SoundPlay_ReturnValue) == 0x000000, "Member 'WBP_MachineCustom_Sub_ListTable_C_PlaySEFocus::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_ListTable_C_PlaySEFocus;
 
 }
 

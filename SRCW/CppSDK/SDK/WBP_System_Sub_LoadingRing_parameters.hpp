@@ -27,13 +27,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_System_Sub_LoadingRing_C_ExecuteUbergraph_WBP_System_Sub_LoadingRing) == 0x000008, "Wrong alignment on WBP_System_Sub_LoadingRing_C_ExecuteUbergraph_WBP_System_Sub_LoadingRing");
-static_assert(sizeof(WBP_System_Sub_LoadingRing_C_ExecuteUbergraph_WBP_System_Sub_LoadingRing) == 0x000028, "Wrong size on WBP_System_Sub_LoadingRing_C_ExecuteUbergraph_WBP_System_Sub_LoadingRing");
-static_assert(offsetof(WBP_System_Sub_LoadingRing_C_ExecuteUbergraph_WBP_System_Sub_LoadingRing, EntryPoint) == 0x000000, "Member 'WBP_System_Sub_LoadingRing_C_ExecuteUbergraph_WBP_System_Sub_LoadingRing::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_System_Sub_LoadingRing_C_ExecuteUbergraph_WBP_System_Sub_LoadingRing, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_System_Sub_LoadingRing_C_ExecuteUbergraph_WBP_System_Sub_LoadingRing::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Sub_LoadingRing_C_ExecuteUbergraph_WBP_System_Sub_LoadingRing, K2Node_Event_IsDesignTime) == 0x000010, "Member 'WBP_System_Sub_LoadingRing_C_ExecuteUbergraph_WBP_System_Sub_LoadingRing::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_System_Sub_LoadingRing_C_ExecuteUbergraph_WBP_System_Sub_LoadingRing, CallFunc_PlayAnimation_ReturnValue_1) == 0x000018, "Member 'WBP_System_Sub_LoadingRing_C_ExecuteUbergraph_WBP_System_Sub_LoadingRing::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_System_Sub_LoadingRing_C_ExecuteUbergraph_WBP_System_Sub_LoadingRing, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000020, "Member 'WBP_System_Sub_LoadingRing_C_ExecuteUbergraph_WBP_System_Sub_LoadingRing::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_System_Sub_LoadingRing_C_ExecuteUbergraph_WBP_System_Sub_LoadingRing;
 
 // Function WBP_System_Sub_LoadingRing.WBP_System_Sub_LoadingRing_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -42,9 +36,7 @@ struct WBP_System_Sub_LoadingRing_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_System_Sub_LoadingRing_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_System_Sub_LoadingRing_C_PreConstruct");
-static_assert(sizeof(WBP_System_Sub_LoadingRing_C_PreConstruct) == 0x000001, "Wrong size on WBP_System_Sub_LoadingRing_C_PreConstruct");
-static_assert(offsetof(WBP_System_Sub_LoadingRing_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_System_Sub_LoadingRing_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_System_Sub_LoadingRing_C_PreConstruct;
 
 }
 

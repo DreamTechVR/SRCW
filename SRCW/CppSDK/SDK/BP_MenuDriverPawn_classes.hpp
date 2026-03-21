@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
+#include "UnionRun_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "UnionRun_structs.hpp"
+#include "Engine_structs.hpp"
+#include "UnionSystem_structs.hpp"
 
 
 namespace SDK
@@ -56,7 +56,6 @@ public:
 	void OnNotifyEnd_650D5ABC44CE98FE2AD3D39CE35BEAAC(class FName NotifyName);
 	void Play_Animation(EMenuDriverAnimationStateId StateId, int32 Index_0);
 	void PlayFaceOverrideMontage(EMenuDriverAnimationStateId InStateId, int32 InIndex);
-	void ReceiveBeginPlay();
 	void SetAnimationBoneSetting(bool UseBoneControl, const struct FRotator& NeckRotation, const struct FRotator& SpineRotation);
 	void SetAnimationIsDriveIdleLowLoop(bool IsDriveIdleLowLoop);
 	void SetAnimClass(const class UClass* NewClass);
@@ -69,27 +68,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_MenuDriverPawn_C">();
+		BP_STATIC_CLASS_IMPL("BP_MenuDriverPawn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_MenuDriverPawn_C")
 	}
 	static class ABP_MenuDriverPawn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_MenuDriverPawn_C>();
 	}
 };
-static_assert(alignof(ABP_MenuDriverPawn_C) == 0x000008, "Wrong alignment on ABP_MenuDriverPawn_C");
-static_assert(sizeof(ABP_MenuDriverPawn_C) == 0x0005C0, "Wrong size on ABP_MenuDriverPawn_C");
-static_assert(offsetof(ABP_MenuDriverPawn_C, UberGraphFrame) == 0x000550, "Member 'ABP_MenuDriverPawn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_MenuDriverPawn_C, GFur) == 0x000558, "Member 'ABP_MenuDriverPawn_C::GFur' has a wrong offset!");
-static_assert(offsetof(ABP_MenuDriverPawn_C, SteeringWheel) == 0x000560, "Member 'ABP_MenuDriverPawn_C::SteeringWheel' has a wrong offset!");
-static_assert(offsetof(ABP_MenuDriverPawn_C, SkeletalMesh) == 0x000568, "Member 'ABP_MenuDriverPawn_C::SkeletalMesh' has a wrong offset!");
-static_assert(offsetof(ABP_MenuDriverPawn_C, DefaultSceneRoot) == 0x000570, "Member 'ABP_MenuDriverPawn_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABP_MenuDriverPawn_C, DriverId) == 0x000578, "Member 'ABP_MenuDriverPawn_C::DriverId' has a wrong offset!");
-static_assert(offsetof(ABP_MenuDriverPawn_C, OnActivateItem) == 0x000580, "Member 'ABP_MenuDriverPawn_C::OnActivateItem' has a wrong offset!");
-static_assert(offsetof(ABP_MenuDriverPawn_C, DriverAnimInstance) == 0x000590, "Member 'ABP_MenuDriverPawn_C::DriverAnimInstance' has a wrong offset!");
-static_assert(offsetof(ABP_MenuDriverPawn_C, OnBindItem) == 0x000598, "Member 'ABP_MenuDriverPawn_C::OnBindItem' has a wrong offset!");
-static_assert(offsetof(ABP_MenuDriverPawn_C, bHoverboard) == 0x0005A8, "Member 'ABP_MenuDriverPawn_C::bHoverboard' has a wrong offset!");
-static_assert(offsetof(ABP_MenuDriverPawn_C, ABPT_MenuDriverRef) == 0x0005B0, "Member 'ABP_MenuDriverPawn_C::ABPT_MenuDriverRef' has a wrong offset!");
-static_assert(offsetof(ABP_MenuDriverPawn_C, bEnabledSound) == 0x0005B8, "Member 'ABP_MenuDriverPawn_C::bEnabledSound' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_MenuDriverPawn_C;
 
 }
 

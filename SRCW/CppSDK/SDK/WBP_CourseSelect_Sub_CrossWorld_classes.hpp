@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
+#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
 #include "UnionUI_structs.hpp"
-#include "UNION_classes.hpp"
 
 
 namespace SDK
@@ -66,38 +66,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CourseSelect_Sub_CrossWorld_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CourseSelect_Sub_CrossWorld_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CourseSelect_Sub_CrossWorld_C")
 	}
 	static class UWBP_CourseSelect_Sub_CrossWorld_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CourseSelect_Sub_CrossWorld_C>();
 	}
 };
-static_assert(alignof(UWBP_CourseSelect_Sub_CrossWorld_C) == 0x000008, "Wrong alignment on UWBP_CourseSelect_Sub_CrossWorld_C");
-static_assert(sizeof(UWBP_CourseSelect_Sub_CrossWorld_C) == 0x000758, "Wrong size on UWBP_CourseSelect_Sub_CrossWorld_C");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CrossWorld_C, UberGraphFrame) == 0x0006A0, "Member 'UWBP_CourseSelect_Sub_CrossWorld_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CrossWorld_C, AnotherIcon) == 0x0006A8, "Member 'UWBP_CourseSelect_Sub_CrossWorld_C::AnotherIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CrossWorld_C, CourseIcon) == 0x0006B0, "Member 'UWBP_CourseSelect_Sub_CrossWorld_C::CourseIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CrossWorld_C, Coursor_Icon_Eff) == 0x0006B8, "Member 'UWBP_CourseSelect_Sub_CrossWorld_C::Coursor_Icon_Eff' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CrossWorld_C, Coursor_Icon_Eff2) == 0x0006C0, "Member 'UWBP_CourseSelect_Sub_CrossWorld_C::Coursor_Icon_Eff2' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CrossWorld_C, Coursor_Icon_Eff_Core) == 0x0006C8, "Member 'UWBP_CourseSelect_Sub_CrossWorld_C::Coursor_Icon_Eff_Core' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CrossWorld_C, Coursor_Icon_Eff_Core2) == 0x0006D0, "Member 'UWBP_CourseSelect_Sub_CrossWorld_C::Coursor_Icon_Eff_Core2' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CrossWorld_C, Coursor_Icon_LightGlare) == 0x0006D8, "Member 'UWBP_CourseSelect_Sub_CrossWorld_C::Coursor_Icon_LightGlare' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CrossWorld_C, Cursor_CourseSelect) == 0x0006E0, "Member 'UWBP_CourseSelect_Sub_CrossWorld_C::Cursor_CourseSelect' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CrossWorld_C, LockIcon) == 0x0006E8, "Member 'UWBP_CourseSelect_Sub_CrossWorld_C::LockIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CrossWorld_C, MF_GateQuestion) == 0x0006F0, "Member 'UWBP_CourseSelect_Sub_CrossWorld_C::MF_GateQuestion' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CrossWorld_C, MouseInteraction) == 0x0006F8, "Member 'UWBP_CourseSelect_Sub_CrossWorld_C::MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CrossWorld_C, Overlay_Eff_Set) == 0x000700, "Member 'UWBP_CourseSelect_Sub_CrossWorld_C::Overlay_Eff_Set' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CrossWorld_C, RingEff_Light) == 0x000708, "Member 'UWBP_CourseSelect_Sub_CrossWorld_C::RingEff_Light' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CrossWorld_C, WBP_TimeTrial_MedalSlot_01) == 0x000710, "Member 'UWBP_CourseSelect_Sub_CrossWorld_C::WBP_TimeTrial_MedalSlot_01' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CrossWorld_C, WBP_TimeTrial_MedalSlot_02) == 0x000718, "Member 'UWBP_CourseSelect_Sub_CrossWorld_C::WBP_TimeTrial_MedalSlot_02' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CrossWorld_C, WBP_TimeTrial_MedalSlot_03) == 0x000720, "Member 'UWBP_CourseSelect_Sub_CrossWorld_C::WBP_TimeTrial_MedalSlot_03' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CrossWorld_C, WBP_TimeTrial_MedalSlot_04) == 0x000728, "Member 'UWBP_CourseSelect_Sub_CrossWorld_C::WBP_TimeTrial_MedalSlot_04' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CrossWorld_C, WBP_TimeTrial_MedalSlot_05) == 0x000730, "Member 'UWBP_CourseSelect_Sub_CrossWorld_C::WBP_TimeTrial_MedalSlot_05' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CrossWorld_C, SlotSize) == 0x000738, "Member 'UWBP_CourseSelect_Sub_CrossWorld_C::SlotSize' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CrossWorld_C, TimeTrialMedalSlotArray) == 0x000740, "Member 'UWBP_CourseSelect_Sub_CrossWorld_C::TimeTrialMedalSlotArray' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CrossWorld_C, CurrentPageIndex) == 0x000750, "Member 'UWBP_CourseSelect_Sub_CrossWorld_C::CurrentPageIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CrossWorld_C, Locking) == 0x000754, "Member 'UWBP_CourseSelect_Sub_CrossWorld_C::Locking' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CourseSelect_Sub_CrossWorld_C;
 
 }
 

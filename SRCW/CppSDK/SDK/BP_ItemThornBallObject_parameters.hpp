@@ -44,27 +44,7 @@ public:
 	struct FSoundHandle                           CallFunc_SetPanSplit_ReturnValue;                  // 0x0084(0x0004)()
 	double                                        CallFunc_Conv_DoubleToVector_InDouble_ImplicitCast; // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject) == 0x000008, "Wrong alignment on BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject");
-static_assert(sizeof(BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject) == 0x000090, "Wrong size on BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject");
-static_assert(offsetof(BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject, EntryPoint) == 0x000000, "Member 'BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject, CallFunc_Play_ReturnValue) == 0x000004, "Member 'BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject::CallFunc_Play_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject, K2Node_Event_waterFlag) == 0x000008, "Member 'BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject::K2Node_Event_waterFlag' has a wrong offset!");
-static_assert(offsetof(BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject, CallFunc_SoundBuildPlayer_ReturnValue) == 0x00000C, "Member 'BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject::CallFunc_SoundBuildPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject, K2Node_Event_SoundPan) == 0x000010, "Member 'BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject::K2Node_Event_SoundPan' has a wrong offset!");
-static_assert(offsetof(BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000018, "Member 'BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject, CallFunc_SetLocation_ReturnValue) == 0x000030, "Member 'BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject::CallFunc_SetLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject, CallFunc_Play_ReturnValue_1) == 0x000034, "Member 'BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject::CallFunc_Play_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject, CallFunc_Play_ReturnValue_2) == 0x000038, "Member 'BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject::CallFunc_Play_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject, CallFunc_SoundBuildPlayer_ReturnValue_1) == 0x00003C, "Member 'BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject::CallFunc_SoundBuildPlayer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000040, "Member 'BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject, K2Node_Event_Scale) == 0x000058, "Member 'BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject::K2Node_Event_Scale' has a wrong offset!");
-static_assert(offsetof(BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject, CallFunc_SetLocation_ReturnValue_1) == 0x00005C, "Member 'BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject::CallFunc_SetLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject, CallFunc_Conv_DoubleToVector_ReturnValue) == 0x000060, "Member 'BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject::CallFunc_Conv_DoubleToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject, CallFunc_Play_ReturnValue_3) == 0x000078, "Member 'BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject::CallFunc_Play_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject, CallFunc_GetHitSpeedRatio_ReturnValue) == 0x00007C, "Member 'BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject::CallFunc_GetHitSpeedRatio_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject, CallFunc_SoundBuildPlayer_ReturnValue_2) == 0x000080, "Member 'BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject::CallFunc_SoundBuildPlayer_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject, CallFunc_SetPanSplit_ReturnValue) == 0x000084, "Member 'BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject::CallFunc_SetPanSplit_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject, CallFunc_Conv_DoubleToVector_InDouble_ImplicitCast) == 0x000088, "Member 'BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject::CallFunc_Conv_DoubleToVector_InDouble_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_BP_ItemThornBallObject_C_ExecuteUbergraph_BP_ItemThornBallObject;
 
 // Function BP_ItemThornBallObject.BP_ItemThornBallObject_C.OnPlayBreakEffect
 // 0x0004 (0x0004 - 0x0000)
@@ -73,9 +53,7 @@ struct BP_ItemThornBallObject_C_OnPlayBreakEffect final
 public:
 	float                                         Scale;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_ItemThornBallObject_C_OnPlayBreakEffect) == 0x000004, "Wrong alignment on BP_ItemThornBallObject_C_OnPlayBreakEffect");
-static_assert(sizeof(BP_ItemThornBallObject_C_OnPlayBreakEffect) == 0x000004, "Wrong size on BP_ItemThornBallObject_C_OnPlayBreakEffect");
-static_assert(offsetof(BP_ItemThornBallObject_C_OnPlayBreakEffect, Scale) == 0x000000, "Member 'BP_ItemThornBallObject_C_OnPlayBreakEffect::Scale' has a wrong offset!");
+DUMPER7_ASSERTS_BP_ItemThornBallObject_C_OnPlayBreakEffect;
 
 // Function BP_ItemThornBallObject.BP_ItemThornBallObject_C.OnPlayDamegeSound
 // 0x0001 (0x0001 - 0x0000)
@@ -84,9 +62,7 @@ struct BP_ItemThornBallObject_C_OnPlayDamegeSound final
 public:
 	ESoundPan                                     SoundPan;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_ItemThornBallObject_C_OnPlayDamegeSound) == 0x000001, "Wrong alignment on BP_ItemThornBallObject_C_OnPlayDamegeSound");
-static_assert(sizeof(BP_ItemThornBallObject_C_OnPlayDamegeSound) == 0x000001, "Wrong size on BP_ItemThornBallObject_C_OnPlayDamegeSound");
-static_assert(offsetof(BP_ItemThornBallObject_C_OnPlayDamegeSound, SoundPan) == 0x000000, "Member 'BP_ItemThornBallObject_C_OnPlayDamegeSound::SoundPan' has a wrong offset!");
+DUMPER7_ASSERTS_BP_ItemThornBallObject_C_OnPlayDamegeSound;
 
 // Function BP_ItemThornBallObject.BP_ItemThornBallObject_C.OnPlayLandingSound
 // 0x0001 (0x0001 - 0x0000)
@@ -95,9 +71,7 @@ struct BP_ItemThornBallObject_C_OnPlayLandingSound final
 public:
 	bool                                          waterFlag;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_ItemThornBallObject_C_OnPlayLandingSound) == 0x000001, "Wrong alignment on BP_ItemThornBallObject_C_OnPlayLandingSound");
-static_assert(sizeof(BP_ItemThornBallObject_C_OnPlayLandingSound) == 0x000001, "Wrong size on BP_ItemThornBallObject_C_OnPlayLandingSound");
-static_assert(offsetof(BP_ItemThornBallObject_C_OnPlayLandingSound, waterFlag) == 0x000000, "Member 'BP_ItemThornBallObject_C_OnPlayLandingSound::waterFlag' has a wrong offset!");
+DUMPER7_ASSERTS_BP_ItemThornBallObject_C_OnPlayLandingSound;
 
 }
 

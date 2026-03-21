@@ -23,9 +23,7 @@ struct WBP_CMN_ShopLabel_C_OnSetPrice final
 public:
 	int32                                         InPrice;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_ShopLabel_C_OnSetPrice) == 0x000004, "Wrong alignment on WBP_CMN_ShopLabel_C_OnSetPrice");
-static_assert(sizeof(WBP_CMN_ShopLabel_C_OnSetPrice) == 0x000004, "Wrong size on WBP_CMN_ShopLabel_C_OnSetPrice");
-static_assert(offsetof(WBP_CMN_ShopLabel_C_OnSetPrice, InPrice) == 0x000000, "Member 'WBP_CMN_ShopLabel_C_OnSetPrice::InPrice' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_ShopLabel_C_OnSetPrice;
 
 // Function WBP_CMN_ShopLabel.WBP_CMN_ShopLabel_C.OnSetPriceColor
 // 0x0014 (0x0014 - 0x0000)
@@ -34,9 +32,7 @@ struct WBP_CMN_ShopLabel_C_OnSetPriceColor final
 public:
 	struct FSlateColor                            InColor;                                           // 0x0000(0x0014)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_CMN_ShopLabel_C_OnSetPriceColor) == 0x000004, "Wrong alignment on WBP_CMN_ShopLabel_C_OnSetPriceColor");
-static_assert(sizeof(WBP_CMN_ShopLabel_C_OnSetPriceColor) == 0x000014, "Wrong size on WBP_CMN_ShopLabel_C_OnSetPriceColor");
-static_assert(offsetof(WBP_CMN_ShopLabel_C_OnSetPriceColor, InColor) == 0x000000, "Member 'WBP_CMN_ShopLabel_C_OnSetPriceColor::InColor' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_ShopLabel_C_OnSetPriceColor;
 
 }
 

@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
+#include "UnionRun_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "UNION_structs.hpp"
+#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
 #include "EMachineSelectMode_structs.hpp"
 #include "UnionUI_structs.hpp"
-#include "UNION_structs.hpp"
-#include "UNION_classes.hpp"
-#include "UnionRun_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -121,54 +121,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MachineSelect_Sub_TypeWindow_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MachineSelect_Sub_TypeWindow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MachineSelect_Sub_TypeWindow_C")
 	}
 	static class UWBP_MachineSelect_Sub_TypeWindow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MachineSelect_Sub_TypeWindow_C>();
 	}
 };
-static_assert(alignof(UWBP_MachineSelect_Sub_TypeWindow_C) == 0x000008, "Wrong alignment on UWBP_MachineSelect_Sub_TypeWindow_C");
-static_assert(sizeof(UWBP_MachineSelect_Sub_TypeWindow_C) == 0x000898, "Wrong size on UWBP_MachineSelect_Sub_TypeWindow_C");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, UberGraphFrame) == 0x000760, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, MachineType_Down_Program) == 0x000768, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::MachineType_Down_Program' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, MachineType_Up_Program) == 0x000770, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::MachineType_Up_Program' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, MachineType_Idle_Program) == 0x000778, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::MachineType_Idle_Program' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, Window_M2_Out) == 0x000780, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::Window_M2_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, Window_M2_Loop) == 0x000788, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::Window_M2_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, Window_M2_In) == 0x000790, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::Window_M2_In' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, Window_M1M4_Out) == 0x000798, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::Window_M1M4_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, Window_M1M4_Loop) == 0x0007A0, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::Window_M1M4_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, Window_M1M4_In) == 0x0007A8, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::Window_M1M4_In' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, MLC_Down_Button) == 0x0007B0, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::MLC_Down_Button' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, MLC_Left_Button) == 0x0007B8, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::MLC_Left_Button' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, MLC_Right_Button) == 0x0007C0, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::MLC_Right_Button' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, MLC_Up_Button) == 0x0007C8, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::MLC_Up_Button' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, UnionUIButton_Bottom) == 0x0007D0, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::UnionUIButton_Bottom' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, UnionUIButton_Center) == 0x0007D8, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::UnionUIButton_Center' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, UnionUIButton_Left) == 0x0007E0, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::UnionUIButton_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, UnionUIButton_Right) == 0x0007E8, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::UnionUIButton_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, UnionUIButton_Top) == 0x0007F0, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::UnionUIButton_Top' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, WBP_CMN_ScrollSnapPoint) == 0x0007F8, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::WBP_CMN_ScrollSnapPoint' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, WBP_MachineSelect_Sub_Header_MachineType_01) == 0x000800, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::WBP_MachineSelect_Sub_Header_MachineType_01' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, WBP_MachineSelect_Sub_Header_MachineType_02) == 0x000808, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::WBP_MachineSelect_Sub_Header_MachineType_02' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, WBP_MachineSelect_Sub_Header_MachineType_03) == 0x000810, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::WBP_MachineSelect_Sub_Header_MachineType_03' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, WBP_MachineSelect_Sub_Header_MachineType_04) == 0x000818, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::WBP_MachineSelect_Sub_Header_MachineType_04' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, WBP_MachineSelect_Sub_Header_MachineType_05) == 0x000820, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::WBP_MachineSelect_Sub_Header_MachineType_05' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, WBP_MachineSelect_Sub_Header_MachineType_06) == 0x000828, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::WBP_MachineSelect_Sub_Header_MachineType_06' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, WBP_MachineSelect_Sub_Header_MachineType_07) == 0x000830, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::WBP_MachineSelect_Sub_Header_MachineType_07' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, WBP_MachineSelect_Sub_TypeBox_00) == 0x000838, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::WBP_MachineSelect_Sub_TypeBox_00' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, WBP_MachineSelect_Sub_TypeBox_01) == 0x000840, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::WBP_MachineSelect_Sub_TypeBox_01' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, WBP_MachineSelect_Sub_TypeBox_02) == 0x000848, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::WBP_MachineSelect_Sub_TypeBox_02' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, WBP_MachineSelect_Sub_TypeBox_03) == 0x000850, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::WBP_MachineSelect_Sub_TypeBox_03' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, WBP_MachineSelect_Sub_TypeBox_04) == 0x000858, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::WBP_MachineSelect_Sub_TypeBox_04' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, WBP_MachineSelect_Sub_TypeBox_05) == 0x000860, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::WBP_MachineSelect_Sub_TypeBox_05' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, WBP_MachineSelect_Sub_TypeBox_06) == 0x000868, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::WBP_MachineSelect_Sub_TypeBox_06' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, WBP_MachineSelect_Sub_TypeBox_07) == 0x000870, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::WBP_MachineSelect_Sub_TypeBox_07' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, WBP_MachineSelect_Sub_TypeBox_08) == 0x000878, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::WBP_MachineSelect_Sub_TypeBox_08' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, WBP_MachineSelect_Sub_TypeBox_09) == 0x000880, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::WBP_MachineSelect_Sub_TypeBox_09' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, Mode) == 0x000888, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::Mode' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_TypeWindow_C, CrossButtons) == 0x000890, "Member 'UWBP_MachineSelect_Sub_TypeWindow_C::CrossButtons' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MachineSelect_Sub_TypeWindow_C;
 
 }
 

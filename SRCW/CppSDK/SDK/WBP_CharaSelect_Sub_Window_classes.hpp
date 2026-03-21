@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -48,22 +48,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CharaSelect_Sub_Window_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CharaSelect_Sub_Window_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CharaSelect_Sub_Window_C")
 	}
 	static class UWBP_CharaSelect_Sub_Window_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CharaSelect_Sub_Window_C>();
 	}
 };
-static_assert(alignof(UWBP_CharaSelect_Sub_Window_C) == 0x000008, "Wrong alignment on UWBP_CharaSelect_Sub_Window_C");
-static_assert(sizeof(UWBP_CharaSelect_Sub_Window_C) == 0x000518, "Wrong size on UWBP_CharaSelect_Sub_Window_C");
-static_assert(offsetof(UWBP_CharaSelect_Sub_Window_C, UberGraphFrame) == 0x0004D8, "Member 'UWBP_CharaSelect_Sub_Window_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_Window_C, CharaWindow_Out) == 0x0004E0, "Member 'UWBP_CharaSelect_Sub_Window_C::CharaWindow_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_Window_C, CharaWindow_Loop) == 0x0004E8, "Member 'UWBP_CharaSelect_Sub_Window_C::CharaWindow_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_Window_C, CharaWindow_In) == 0x0004F0, "Member 'UWBP_CharaSelect_Sub_Window_C::CharaWindow_In' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_Window_C, CharaSelect_ONT) == 0x0004F8, "Member 'UWBP_CharaSelect_Sub_Window_C::CharaSelect_ONT' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_Window_C, CharaSelect_ONT_1) == 0x000500, "Member 'UWBP_CharaSelect_Sub_Window_C::CharaSelect_ONT_1' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_Window_C, Event_RivalWinIconAnimFinished) == 0x000508, "Member 'UWBP_CharaSelect_Sub_Window_C::Event_RivalWinIconAnimFinished' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CharaSelect_Sub_Window_C;
 
 }
 

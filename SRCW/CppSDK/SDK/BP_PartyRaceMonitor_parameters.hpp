@@ -34,17 +34,7 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0140(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue_1; // 0x0148(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_PartyRaceMonitor_C_ExecuteUbergraph_BP_PartyRaceMonitor) == 0x000008, "Wrong alignment on BP_PartyRaceMonitor_C_ExecuteUbergraph_BP_PartyRaceMonitor");
-static_assert(sizeof(BP_PartyRaceMonitor_C_ExecuteUbergraph_BP_PartyRaceMonitor) == 0x000150, "Wrong size on BP_PartyRaceMonitor_C_ExecuteUbergraph_BP_PartyRaceMonitor");
-static_assert(offsetof(BP_PartyRaceMonitor_C_ExecuteUbergraph_BP_PartyRaceMonitor, EntryPoint) == 0x000000, "Member 'BP_PartyRaceMonitor_C_ExecuteUbergraph_BP_PartyRaceMonitor::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_PartyRaceMonitor_C_ExecuteUbergraph_BP_PartyRaceMonitor, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x000008, "Member 'BP_PartyRaceMonitor_C_ExecuteUbergraph_BP_PartyRaceMonitor::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PartyRaceMonitor_C_ExecuteUbergraph_BP_PartyRaceMonitor, CallFunc_GetCameraLocation_ReturnValue) == 0x000010, "Member 'BP_PartyRaceMonitor_C_ExecuteUbergraph_BP_PartyRaceMonitor::CallFunc_GetCameraLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PartyRaceMonitor_C_ExecuteUbergraph_BP_PartyRaceMonitor, CallFunc_GetCameraRotation_ReturnValue) == 0x000028, "Member 'BP_PartyRaceMonitor_C_ExecuteUbergraph_BP_PartyRaceMonitor::CallFunc_GetCameraRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PartyRaceMonitor_C_ExecuteUbergraph_BP_PartyRaceMonitor, CallFunc_K2_SetActorLocationAndRotation_SweepHitResult) == 0x000040, "Member 'BP_PartyRaceMonitor_C_ExecuteUbergraph_BP_PartyRaceMonitor::CallFunc_K2_SetActorLocationAndRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_PartyRaceMonitor_C_ExecuteUbergraph_BP_PartyRaceMonitor, CallFunc_K2_SetActorLocationAndRotation_ReturnValue) == 0x000138, "Member 'BP_PartyRaceMonitor_C_ExecuteUbergraph_BP_PartyRaceMonitor::CallFunc_K2_SetActorLocationAndRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PartyRaceMonitor_C_ExecuteUbergraph_BP_PartyRaceMonitor, K2Node_Event_DeltaSeconds) == 0x00013C, "Member 'BP_PartyRaceMonitor_C_ExecuteUbergraph_BP_PartyRaceMonitor::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(BP_PartyRaceMonitor_C_ExecuteUbergraph_BP_PartyRaceMonitor, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000140, "Member 'BP_PartyRaceMonitor_C_ExecuteUbergraph_BP_PartyRaceMonitor::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PartyRaceMonitor_C_ExecuteUbergraph_BP_PartyRaceMonitor, CallFunc_CreateDynamicMaterialInstance_ReturnValue_1) == 0x000148, "Member 'BP_PartyRaceMonitor_C_ExecuteUbergraph_BP_PartyRaceMonitor::CallFunc_CreateDynamicMaterialInstance_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_PartyRaceMonitor_C_ExecuteUbergraph_BP_PartyRaceMonitor;
 
 // Function BP_PartyRaceMonitor.BP_PartyRaceMonitor_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -53,9 +43,7 @@ struct BP_PartyRaceMonitor_C_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_PartyRaceMonitor_C_ReceiveTick) == 0x000004, "Wrong alignment on BP_PartyRaceMonitor_C_ReceiveTick");
-static_assert(sizeof(BP_PartyRaceMonitor_C_ReceiveTick) == 0x000004, "Wrong size on BP_PartyRaceMonitor_C_ReceiveTick");
-static_assert(offsetof(BP_PartyRaceMonitor_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'BP_PartyRaceMonitor_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_BP_PartyRaceMonitor_C_ReceiveTick;
 
 // Function BP_PartyRaceMonitor.BP_PartyRaceMonitor_C.SetImagePanelTexture
 // 0x0008 (0x0008 - 0x0000)
@@ -64,9 +52,7 @@ struct BP_PartyRaceMonitor_C_SetImagePanelTexture final
 public:
 	class UTexture*                               Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_PartyRaceMonitor_C_SetImagePanelTexture) == 0x000008, "Wrong alignment on BP_PartyRaceMonitor_C_SetImagePanelTexture");
-static_assert(sizeof(BP_PartyRaceMonitor_C_SetImagePanelTexture) == 0x000008, "Wrong size on BP_PartyRaceMonitor_C_SetImagePanelTexture");
-static_assert(offsetof(BP_PartyRaceMonitor_C_SetImagePanelTexture, Value) == 0x000000, "Member 'BP_PartyRaceMonitor_C_SetImagePanelTexture::Value' has a wrong offset!");
+DUMPER7_ASSERTS_BP_PartyRaceMonitor_C_SetImagePanelTexture;
 
 }
 

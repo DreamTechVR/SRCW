@@ -31,21 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_RivalSelect_Sub_CharaInfo_C">();
+		BP_STATIC_CLASS_IMPL("WBP_RivalSelect_Sub_CharaInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_RivalSelect_Sub_CharaInfo_C")
 	}
 	static class UWBP_RivalSelect_Sub_CharaInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_RivalSelect_Sub_CharaInfo_C>();
 	}
 };
-static_assert(alignof(UWBP_RivalSelect_Sub_CharaInfo_C) == 0x000008, "Wrong alignment on UWBP_RivalSelect_Sub_CharaInfo_C");
-static_assert(sizeof(UWBP_RivalSelect_Sub_CharaInfo_C) == 0x000338, "Wrong size on UWBP_RivalSelect_Sub_CharaInfo_C");
-static_assert(offsetof(UWBP_RivalSelect_Sub_CharaInfo_C, Base_01) == 0x000308, "Member 'UWBP_RivalSelect_Sub_CharaInfo_C::Base_01' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_Sub_CharaInfo_C, NameLine) == 0x000310, "Member 'UWBP_RivalSelect_Sub_CharaInfo_C::NameLine' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_Sub_CharaInfo_C, TXT_CharaName) == 0x000318, "Member 'UWBP_RivalSelect_Sub_CharaInfo_C::TXT_CharaName' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_Sub_CharaInfo_C, TXT_CountWin_Title) == 0x000320, "Member 'UWBP_RivalSelect_Sub_CharaInfo_C::TXT_CountWin_Title' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_Sub_CharaInfo_C, Window_01) == 0x000328, "Member 'UWBP_RivalSelect_Sub_CharaInfo_C::Window_01' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_Sub_CharaInfo_C, Window_02) == 0x000330, "Member 'UWBP_RivalSelect_Sub_CharaInfo_C::Window_02' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_RivalSelect_Sub_CharaInfo_C;
 
 }
 

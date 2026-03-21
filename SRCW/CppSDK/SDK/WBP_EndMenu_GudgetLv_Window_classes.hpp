@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -84,50 +84,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_EndMenu_GudgetLv_Window_C">();
+		BP_STATIC_CLASS_IMPL("WBP_EndMenu_GudgetLv_Window_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_EndMenu_GudgetLv_Window_C")
 	}
 	static class UWBP_EndMenu_GudgetLv_Window_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_EndMenu_GudgetLv_Window_C>();
 	}
 };
-static_assert(alignof(UWBP_EndMenu_GudgetLv_Window_C) == 0x000008, "Wrong alignment on UWBP_EndMenu_GudgetLv_Window_C");
-static_assert(sizeof(UWBP_EndMenu_GudgetLv_Window_C) == 0x000458, "Wrong size on UWBP_EndMenu_GudgetLv_Window_C");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, UberGraphFrame) == 0x000340, "Member 'UWBP_EndMenu_GudgetLv_Window_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, EndMenuGudget_WindowBase_Out) == 0x000348, "Member 'UWBP_EndMenu_GudgetLv_Window_C::EndMenuGudget_WindowBase_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, EndMenuGudget_WindowBase_Loop) == 0x000350, "Member 'UWBP_EndMenu_GudgetLv_Window_C::EndMenuGudget_WindowBase_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, EndMenuGudget_WindowBase_In) == 0x000358, "Member 'UWBP_EndMenu_GudgetLv_Window_C::EndMenuGudget_WindowBase_In' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, base) == 0x000360, "Member 'UWBP_EndMenu_GudgetLv_Window_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, base_1) == 0x000368, "Member 'UWBP_EndMenu_GudgetLv_Window_C::base_1' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, base_2) == 0x000370, "Member 'UWBP_EndMenu_GudgetLv_Window_C::base_2' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, base_3) == 0x000378, "Member 'UWBP_EndMenu_GudgetLv_Window_C::base_3' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, base_4) == 0x000380, "Member 'UWBP_EndMenu_GudgetLv_Window_C::base_4' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, base_5) == 0x000388, "Member 'UWBP_EndMenu_GudgetLv_Window_C::base_5' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, base_6) == 0x000390, "Member 'UWBP_EndMenu_GudgetLv_Window_C::base_6' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, Base_01) == 0x000398, "Member 'UWBP_EndMenu_GudgetLv_Window_C::Base_01' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, BG_Black) == 0x0003A0, "Member 'UWBP_EndMenu_GudgetLv_Window_C::BG_Black' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, Icon) == 0x0003A8, "Member 'UWBP_EndMenu_GudgetLv_Window_C::Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, Icon_1) == 0x0003B0, "Member 'UWBP_EndMenu_GudgetLv_Window_C::Icon_1' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, Icon_2) == 0x0003B8, "Member 'UWBP_EndMenu_GudgetLv_Window_C::Icon_2' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, Icon_3) == 0x0003C0, "Member 'UWBP_EndMenu_GudgetLv_Window_C::Icon_3' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, Icon_4) == 0x0003C8, "Member 'UWBP_EndMenu_GudgetLv_Window_C::Icon_4' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, Icon_5) == 0x0003D0, "Member 'UWBP_EndMenu_GudgetLv_Window_C::Icon_5' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, Icon_6) == 0x0003D8, "Member 'UWBP_EndMenu_GudgetLv_Window_C::Icon_6' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, Icon_7) == 0x0003E0, "Member 'UWBP_EndMenu_GudgetLv_Window_C::Icon_7' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, TXT_Praise) == 0x0003E8, "Member 'UWBP_EndMenu_GudgetLv_Window_C::TXT_Praise' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, TXT_Term) == 0x0003F0, "Member 'UWBP_EndMenu_GudgetLv_Window_C::TXT_Term' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, WBP_CMN_BG_01) == 0x0003F8, "Member 'UWBP_EndMenu_GudgetLv_Window_C::WBP_CMN_BG_01' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, WBP_GadgetCustom_Sub_GadgetPlate) == 0x000400, "Member 'UWBP_EndMenu_GudgetLv_Window_C::WBP_GadgetCustom_Sub_GadgetPlate' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, WBP_GadgetCustom_Sub_GadgetPlate_1) == 0x000408, "Member 'UWBP_EndMenu_GudgetLv_Window_C::WBP_GadgetCustom_Sub_GadgetPlate_1' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, WBP_Hint_Sub_11014) == 0x000410, "Member 'UWBP_EndMenu_GudgetLv_Window_C::WBP_Hint_Sub_11014' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, WBP_RoundEndGaugeGadgetRank) == 0x000418, "Member 'UWBP_EndMenu_GudgetLv_Window_C::WBP_RoundEndGaugeGadgetRank' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, WidgetSwitcher_0) == 0x000420, "Member 'UWBP_EndMenu_GudgetLv_Window_C::WidgetSwitcher_0' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, bPressButton) == 0x000428, "Member 'UWBP_EndMenu_GudgetLv_Window_C::bPressButton' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, OnEndEvent) == 0x000430, "Member 'UWBP_EndMenu_GudgetLv_Window_C::OnEndEvent' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, bGaugeAnimation) == 0x000440, "Member 'UWBP_EndMenu_GudgetLv_Window_C::bGaugeAnimation' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, GaugeSE) == 0x000444, "Member 'UWBP_EndMenu_GudgetLv_Window_C::GaugeSE' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, ForceCount) == 0x000448, "Member 'UWBP_EndMenu_GudgetLv_Window_C::ForceCount' has a wrong offset!");
-static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, IsStart) == 0x000450, "Member 'UWBP_EndMenu_GudgetLv_Window_C::IsStart' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_EndMenu_GudgetLv_Window_C;
 
 }
 

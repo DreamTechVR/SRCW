@@ -23,9 +23,7 @@ struct FST_OffsetTransform final
 public:
 	struct FTransform                             Transform_2_E82524A143A28B942C404DA3161FB7DF;      // 0x0000(0x0060)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FST_OffsetTransform) == 0x000010, "Wrong alignment on FST_OffsetTransform");
-static_assert(sizeof(FST_OffsetTransform) == 0x000060, "Wrong size on FST_OffsetTransform");
-static_assert(offsetof(FST_OffsetTransform, Transform_2_E82524A143A28B942C404DA3161FB7DF) == 0x000000, "Member 'FST_OffsetTransform::Transform_2_E82524A143A28B942C404DA3161FB7DF' has a wrong offset!");
+DUMPER7_ASSERTS_FST_OffsetTransform;
 
 }
 

@@ -11,8 +11,9 @@
 #include "Basic.hpp"
 
 #include "UMG_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
+#include "UNION_structs.hpp"
 
 
 namespace SDK::Params
@@ -48,28 +49,7 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0128(0x0010)(ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0138(0x0010)()
 };
-static_assert(alignof(WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow) == 0x000008, "Wrong alignment on WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow");
-static_assert(sizeof(WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow) == 0x000148, "Wrong size on WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow, EntryPoint) == 0x000000, "Member 'WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow, CallFunc_MakeLiteralText_ReturnValue) == 0x000008, "Member 'WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow, K2Node_CustomEvent_RewardId_3) == 0x000018, "Member 'WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow::K2Node_CustomEvent_RewardId_3' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow, K2Node_CustomEvent_RewardId_2) == 0x00001C, "Member 'WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow::K2Node_CustomEvent_RewardId_2' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow, CallFunc_GetRewardItemNameText_ReturnValue) == 0x000020, "Member 'WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow::CallFunc_GetRewardItemNameText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow, CallFunc_GetRewardItemNameText_ReturnValue_1) == 0x000030, "Member 'WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow::CallFunc_GetRewardItemNameText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow, K2Node_CustomEvent_RewardId_1) == 0x000040, "Member 'WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow::K2Node_CustomEvent_RewardId_1' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow, K2Node_CustomEvent_Num) == 0x000044, "Member 'WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow::K2Node_CustomEvent_Num' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow, CallFunc_GetRewardItemNameText_ReturnValue_2) == 0x000048, "Member 'WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow::CallFunc_GetRewardItemNameText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000058, "Member 'WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow, K2Node_MakeStruct_FormatArgumentData) == 0x000060, "Member 'WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow, K2Node_CustomEvent_StickerId) == 0x0000A8, "Member 'WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow::K2Node_CustomEvent_StickerId' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow, CallFunc_GetRewardItemNameText_ReturnValue_3) == 0x0000B0, "Member 'WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow::CallFunc_GetRewardItemNameText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow, K2Node_CustomEvent_RewardType) == 0x0000C0, "Member 'WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow::K2Node_CustomEvent_RewardType' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow, K2Node_CustomEvent_RewardId) == 0x0000C4, "Member 'WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow::K2Node_CustomEvent_RewardId' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow, K2Node_SwitchEnum_CmpSuccess) == 0x0000C8, "Member 'WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow, CallFunc_MakeLiteralText_ReturnValue_1) == 0x0000D0, "Member 'WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow, K2Node_MakeStruct_FormatArgumentData_1) == 0x0000E0, "Member 'WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow, K2Node_MakeArray_Array) == 0x000128, "Member 'WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow, CallFunc_Format_ReturnValue) == 0x000138, "Member 'WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow::CallFunc_Format_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_SmallWindow_C_ExecuteUbergraph_WBP_StatusInfo_SmallWindow;
 
 // Function WBP_StatusInfo_SmallWindow.WBP_StatusInfo_SmallWindow_C.Setup
 // 0x0008 (0x0008 - 0x0000)
@@ -80,10 +60,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         rewardId;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_SmallWindow_C_Setup) == 0x000004, "Wrong alignment on WBP_StatusInfo_SmallWindow_C_Setup");
-static_assert(sizeof(WBP_StatusInfo_SmallWindow_C_Setup) == 0x000008, "Wrong size on WBP_StatusInfo_SmallWindow_C_Setup");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_Setup, rewardType) == 0x000000, "Member 'WBP_StatusInfo_SmallWindow_C_Setup::rewardType' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_Setup, rewardId) == 0x000004, "Member 'WBP_StatusInfo_SmallWindow_C_Setup::rewardId' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_SmallWindow_C_Setup;
 
 // Function WBP_StatusInfo_SmallWindow.WBP_StatusInfo_SmallWindow_C.SetupDonpaTicket
 // 0x0004 (0x0004 - 0x0000)
@@ -92,9 +69,7 @@ struct WBP_StatusInfo_SmallWindow_C_SetupDonpaTicket final
 public:
 	int32                                         Num;                                               // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_SmallWindow_C_SetupDonpaTicket) == 0x000004, "Wrong alignment on WBP_StatusInfo_SmallWindow_C_SetupDonpaTicket");
-static_assert(sizeof(WBP_StatusInfo_SmallWindow_C_SetupDonpaTicket) == 0x000004, "Wrong size on WBP_StatusInfo_SmallWindow_C_SetupDonpaTicket");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_SetupDonpaTicket, Num) == 0x000000, "Member 'WBP_StatusInfo_SmallWindow_C_SetupDonpaTicket::Num' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_SmallWindow_C_SetupDonpaTicket;
 
 // Function WBP_StatusInfo_SmallWindow.WBP_StatusInfo_SmallWindow_C.SetupDonpaticketIcon
 // 0x0005 (0x0005 - 0x0000)
@@ -107,13 +82,7 @@ public:
 	bool                                          CallFunc_SetActiveWidgetIndexByRewardType_ReturnValue; // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_SmallWindow_C_SetupDonpaticketIcon) == 0x000001, "Wrong alignment on WBP_StatusInfo_SmallWindow_C_SetupDonpaticketIcon");
-static_assert(sizeof(WBP_StatusInfo_SmallWindow_C_SetupDonpaticketIcon) == 0x000005, "Wrong size on WBP_StatusInfo_SmallWindow_C_SetupDonpaticketIcon");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_SetupDonpaticketIcon, Temp_bool_Variable) == 0x000000, "Member 'WBP_StatusInfo_SmallWindow_C_SetupDonpaticketIcon::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_SetupDonpaticketIcon, Temp_byte_Variable) == 0x000001, "Member 'WBP_StatusInfo_SmallWindow_C_SetupDonpaticketIcon::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_SetupDonpaticketIcon, Temp_byte_Variable_1) == 0x000002, "Member 'WBP_StatusInfo_SmallWindow_C_SetupDonpaticketIcon::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_SetupDonpaticketIcon, CallFunc_SetActiveWidgetIndexByRewardType_ReturnValue) == 0x000003, "Member 'WBP_StatusInfo_SmallWindow_C_SetupDonpaticketIcon::CallFunc_SetActiveWidgetIndexByRewardType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_SetupDonpaticketIcon, K2Node_Select_Default) == 0x000004, "Member 'WBP_StatusInfo_SmallWindow_C_SetupDonpaticketIcon::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_SmallWindow_C_SetupDonpaticketIcon;
 
 // Function WBP_StatusInfo_SmallWindow.WBP_StatusInfo_SmallWindow_C.SetupGadget
 // 0x0004 (0x0004 - 0x0000)
@@ -122,23 +91,32 @@ struct WBP_StatusInfo_SmallWindow_C_SetupGadget final
 public:
 	int32                                         rewardId;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_SmallWindow_C_SetupGadget) == 0x000004, "Wrong alignment on WBP_StatusInfo_SmallWindow_C_SetupGadget");
-static_assert(sizeof(WBP_StatusInfo_SmallWindow_C_SetupGadget) == 0x000004, "Wrong size on WBP_StatusInfo_SmallWindow_C_SetupGadget");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_SetupGadget, rewardId) == 0x000000, "Member 'WBP_StatusInfo_SmallWindow_C_SetupGadget::rewardId' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_SmallWindow_C_SetupGadget;
 
 // Function WBP_StatusInfo_SmallWindow.WBP_StatusInfo_SmallWindow_C.SetupGadgetIcon
-// 0x0010 (0x0010 - 0x0000)
+// 0x0168 (0x0168 - 0x0000)
 struct WBP_StatusInfo_SmallWindow_C_SetupGadgetIcon final
 {
 public:
 	int32                                         gadgetId;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         CallFunc_Conv_IntToByte_ReturnValue;               // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             CallFunc_GetRewardItemIconTexture_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CallFunc_GetEnumeratorName_ReturnValue;            // 0x0014(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGadgetData                            CallFunc_GetGadgetData_OutGadgetData;              // 0x0020(0x00C0)()
+	bool                                          CallFunc_GetGadgetData_ReturnValue;                // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E1[0x7];                                       // 0x00E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_NameToText_ReturnValue;              // 0x00E8(0x0010)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00F8(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0140(0x0010)(ReferenceParm)
+	bool                                          CallFunc_IsGadgetKit_ReturnValue;                  // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_151[0x7];                                      // 0x0151(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0158(0x0010)()
 };
-static_assert(alignof(WBP_StatusInfo_SmallWindow_C_SetupGadgetIcon) == 0x000008, "Wrong alignment on WBP_StatusInfo_SmallWindow_C_SetupGadgetIcon");
-static_assert(sizeof(WBP_StatusInfo_SmallWindow_C_SetupGadgetIcon) == 0x000010, "Wrong size on WBP_StatusInfo_SmallWindow_C_SetupGadgetIcon");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_SetupGadgetIcon, gadgetId) == 0x000000, "Member 'WBP_StatusInfo_SmallWindow_C_SetupGadgetIcon::gadgetId' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_SetupGadgetIcon, CallFunc_GetRewardItemIconTexture_ReturnValue) == 0x000008, "Member 'WBP_StatusInfo_SmallWindow_C_SetupGadgetIcon::CallFunc_GetRewardItemIconTexture_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_SmallWindow_C_SetupGadgetIcon;
 
 // Function WBP_StatusInfo_SmallWindow.WBP_StatusInfo_SmallWindow_C.SetupHonorTitle
 // 0x0004 (0x0004 - 0x0000)
@@ -147,9 +125,7 @@ struct WBP_StatusInfo_SmallWindow_C_SetupHonorTitle final
 public:
 	int32                                         rewardId;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_SmallWindow_C_SetupHonorTitle) == 0x000004, "Wrong alignment on WBP_StatusInfo_SmallWindow_C_SetupHonorTitle");
-static_assert(sizeof(WBP_StatusInfo_SmallWindow_C_SetupHonorTitle) == 0x000004, "Wrong size on WBP_StatusInfo_SmallWindow_C_SetupHonorTitle");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_SetupHonorTitle, rewardId) == 0x000000, "Member 'WBP_StatusInfo_SmallWindow_C_SetupHonorTitle::rewardId' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_SmallWindow_C_SetupHonorTitle;
 
 // Function WBP_StatusInfo_SmallWindow.WBP_StatusInfo_SmallWindow_C.SetupHonorTitleIcon
 // 0x0004 (0x0004 - 0x0000)
@@ -158,9 +134,7 @@ struct WBP_StatusInfo_SmallWindow_C_SetupHonorTitleIcon final
 public:
 	int32                                         HonorId;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_SmallWindow_C_SetupHonorTitleIcon) == 0x000004, "Wrong alignment on WBP_StatusInfo_SmallWindow_C_SetupHonorTitleIcon");
-static_assert(sizeof(WBP_StatusInfo_SmallWindow_C_SetupHonorTitleIcon) == 0x000004, "Wrong size on WBP_StatusInfo_SmallWindow_C_SetupHonorTitleIcon");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_SetupHonorTitleIcon, HonorId) == 0x000000, "Member 'WBP_StatusInfo_SmallWindow_C_SetupHonorTitleIcon::HonorId' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_SmallWindow_C_SetupHonorTitleIcon;
 
 // Function WBP_StatusInfo_SmallWindow.WBP_StatusInfo_SmallWindow_C.SetupHorn
 // 0x0004 (0x0004 - 0x0000)
@@ -169,9 +143,7 @@ struct WBP_StatusInfo_SmallWindow_C_SetupHorn final
 public:
 	int32                                         rewardId;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_SmallWindow_C_SetupHorn) == 0x000004, "Wrong alignment on WBP_StatusInfo_SmallWindow_C_SetupHorn");
-static_assert(sizeof(WBP_StatusInfo_SmallWindow_C_SetupHorn) == 0x000004, "Wrong size on WBP_StatusInfo_SmallWindow_C_SetupHorn");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_SetupHorn, rewardId) == 0x000000, "Member 'WBP_StatusInfo_SmallWindow_C_SetupHorn::rewardId' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_SmallWindow_C_SetupHorn;
 
 // Function WBP_StatusInfo_SmallWindow.WBP_StatusInfo_SmallWindow_C.SetupHornIcon
 // 0x0020 (0x0020 - 0x0000)
@@ -185,12 +157,7 @@ public:
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             CallFunc_GetRewardItemIconTexture_ReturnValue;     // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_SmallWindow_C_SetupHornIcon) == 0x000008, "Wrong alignment on WBP_StatusInfo_SmallWindow_C_SetupHornIcon");
-static_assert(sizeof(WBP_StatusInfo_SmallWindow_C_SetupHornIcon) == 0x000020, "Wrong size on WBP_StatusInfo_SmallWindow_C_SetupHornIcon");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_SetupHornIcon, hornId) == 0x000000, "Member 'WBP_StatusInfo_SmallWindow_C_SetupHornIcon::hornId' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_SetupHornIcon, L_IconTexture) == 0x000008, "Member 'WBP_StatusInfo_SmallWindow_C_SetupHornIcon::L_IconTexture' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_SetupHornIcon, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'WBP_StatusInfo_SmallWindow_C_SetupHornIcon::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_SetupHornIcon, CallFunc_GetRewardItemIconTexture_ReturnValue) == 0x000018, "Member 'WBP_StatusInfo_SmallWindow_C_SetupHornIcon::CallFunc_GetRewardItemIconTexture_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_SmallWindow_C_SetupHornIcon;
 
 // Function WBP_StatusInfo_SmallWindow.WBP_StatusInfo_SmallWindow_C.SetupSticker
 // 0x0004 (0x0004 - 0x0000)
@@ -199,9 +166,7 @@ struct WBP_StatusInfo_SmallWindow_C_SetupSticker final
 public:
 	int32                                         stickerId;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_SmallWindow_C_SetupSticker) == 0x000004, "Wrong alignment on WBP_StatusInfo_SmallWindow_C_SetupSticker");
-static_assert(sizeof(WBP_StatusInfo_SmallWindow_C_SetupSticker) == 0x000004, "Wrong size on WBP_StatusInfo_SmallWindow_C_SetupSticker");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_SetupSticker, stickerId) == 0x000000, "Member 'WBP_StatusInfo_SmallWindow_C_SetupSticker::stickerId' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_SmallWindow_C_SetupSticker;
 
 // Function WBP_StatusInfo_SmallWindow.WBP_StatusInfo_SmallWindow_C.SetupStickerIcon
 // 0x0010 (0x0010 - 0x0000)
@@ -212,10 +177,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             CallFunc_GetRewardItemIconTexture_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_SmallWindow_C_SetupStickerIcon) == 0x000008, "Wrong alignment on WBP_StatusInfo_SmallWindow_C_SetupStickerIcon");
-static_assert(sizeof(WBP_StatusInfo_SmallWindow_C_SetupStickerIcon) == 0x000010, "Wrong size on WBP_StatusInfo_SmallWindow_C_SetupStickerIcon");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_SetupStickerIcon, rewardId) == 0x000000, "Member 'WBP_StatusInfo_SmallWindow_C_SetupStickerIcon::rewardId' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_SetupStickerIcon, CallFunc_GetRewardItemIconTexture_ReturnValue) == 0x000008, "Member 'WBP_StatusInfo_SmallWindow_C_SetupStickerIcon::CallFunc_GetRewardItemIconTexture_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_SmallWindow_C_SetupStickerIcon;
 
 // Function WBP_StatusInfo_SmallWindow.WBP_StatusInfo_SmallWindow_C.SetupTypeText
 // 0x0018 (0x0018 - 0x0000)
@@ -226,10 +188,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetRewardTypeText_ReturnValue;            // 0x0008(0x0010)()
 };
-static_assert(alignof(WBP_StatusInfo_SmallWindow_C_SetupTypeText) == 0x000008, "Wrong alignment on WBP_StatusInfo_SmallWindow_C_SetupTypeText");
-static_assert(sizeof(WBP_StatusInfo_SmallWindow_C_SetupTypeText) == 0x000018, "Wrong size on WBP_StatusInfo_SmallWindow_C_SetupTypeText");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_SetupTypeText, rewardType) == 0x000000, "Member 'WBP_StatusInfo_SmallWindow_C_SetupTypeText::rewardType' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_SmallWindow_C_SetupTypeText, CallFunc_GetRewardTypeText_ReturnValue) == 0x000008, "Member 'WBP_StatusInfo_SmallWindow_C_SetupTypeText::CallFunc_GetRewardTypeText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_SmallWindow_C_SetupTypeText;
 
 }
 

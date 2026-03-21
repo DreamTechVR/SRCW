@@ -66,35 +66,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_RaceBefore_FinalRound_C">();
+		BP_STATIC_CLASS_IMPL("WBP_RaceBefore_FinalRound_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_RaceBefore_FinalRound_C")
 	}
 	static class UWBP_RaceBefore_FinalRound_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_RaceBefore_FinalRound_C>();
 	}
 };
-static_assert(alignof(UWBP_RaceBefore_FinalRound_C) == 0x000008, "Wrong alignment on UWBP_RaceBefore_FinalRound_C");
-static_assert(sizeof(UWBP_RaceBefore_FinalRound_C) == 0x0003B0, "Wrong size on UWBP_RaceBefore_FinalRound_C");
-static_assert(offsetof(UWBP_RaceBefore_FinalRound_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_RaceBefore_FinalRound_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FinalRound_C, RaceBefore_Out) == 0x0002E8, "Member 'UWBP_RaceBefore_FinalRound_C::RaceBefore_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FinalRound_C, RaceBefore_In) == 0x0002F0, "Member 'UWBP_RaceBefore_FinalRound_C::RaceBefore_In' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FinalRound_C, base) == 0x0002F8, "Member 'UWBP_RaceBefore_FinalRound_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FinalRound_C, BlackBG) == 0x000300, "Member 'UWBP_RaceBefore_FinalRound_C::BlackBG' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FinalRound_C, CanvasPanel_0) == 0x000308, "Member 'UWBP_RaceBefore_FinalRound_C::CanvasPanel_0' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FinalRound_C, DMY_System_BG_01) == 0x000310, "Member 'UWBP_RaceBefore_FinalRound_C::DMY_System_BG_01' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FinalRound_C, DMY_System_BG_02) == 0x000318, "Member 'UWBP_RaceBefore_FinalRound_C::DMY_System_BG_02' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FinalRound_C, DMY_System_BG_03) == 0x000320, "Member 'UWBP_RaceBefore_FinalRound_C::DMY_System_BG_03' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FinalRound_C, Panel) == 0x000328, "Member 'UWBP_RaceBefore_FinalRound_C::Panel' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FinalRound_C, TXT_GrandPrixMedley) == 0x000330, "Member 'UWBP_RaceBefore_FinalRound_C::TXT_GrandPrixMedley' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FinalRound_C, WBP_CourseSelect_Sub_CourseIcon) == 0x000338, "Member 'UWBP_RaceBefore_FinalRound_C::WBP_CourseSelect_Sub_CourseIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FinalRound_C, StageIds) == 0x000340, "Member 'UWBP_RaceBefore_FinalRound_C::StageIds' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FinalRound_C, StageImageTexture) == 0x000350, "Member 'UWBP_RaceBefore_FinalRound_C::StageImageTexture' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FinalRound_C, NewVar) == 0x000360, "Member 'UWBP_RaceBefore_FinalRound_C::NewVar' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FinalRound_C, OnLoadComplete) == 0x000368, "Member 'UWBP_RaceBefore_FinalRound_C::OnLoadComplete' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FinalRound_C, OnAnimCompleted) == 0x000378, "Member 'UWBP_RaceBefore_FinalRound_C::OnAnimCompleted' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FinalRound_C, OpenTipsWindow) == 0x000388, "Member 'UWBP_RaceBefore_FinalRound_C::OpenTipsWindow' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FinalRound_C, OnResumeRaceBeforeIn) == 0x000390, "Member 'UWBP_RaceBefore_FinalRound_C::OnResumeRaceBeforeIn' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FinalRound_C, OnShowTipsWindow) == 0x0003A0, "Member 'UWBP_RaceBefore_FinalRound_C::OnShowTipsWindow' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_RaceBefore_FinalRound_C;
 
 }
 

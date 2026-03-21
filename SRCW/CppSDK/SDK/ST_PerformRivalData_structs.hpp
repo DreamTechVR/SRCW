@@ -21,9 +21,7 @@ struct FST_PerformRivalData final
 public:
 	TArray<TSoftObjectPtr<class UAnimSequenceBase>> Animations_10_820BFE1547DA1DC4EEB28FB093B97656;  // 0x0000(0x0010)(Edit, BlueprintVisible)
 };
-static_assert(alignof(FST_PerformRivalData) == 0x000008, "Wrong alignment on FST_PerformRivalData");
-static_assert(sizeof(FST_PerformRivalData) == 0x000010, "Wrong size on FST_PerformRivalData");
-static_assert(offsetof(FST_PerformRivalData, Animations_10_820BFE1547DA1DC4EEB28FB093B97656) == 0x000000, "Member 'FST_PerformRivalData::Animations_10_820BFE1547DA1DC4EEB28FB093B97656' has a wrong offset!");
+DUMPER7_ASSERTS_FST_PerformRivalData;
 
 }
 

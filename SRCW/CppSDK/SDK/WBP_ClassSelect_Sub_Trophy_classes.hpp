@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -35,19 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ClassSelect_Sub_Trophy_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ClassSelect_Sub_Trophy_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ClassSelect_Sub_Trophy_C")
 	}
 	static class UWBP_ClassSelect_Sub_Trophy_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ClassSelect_Sub_Trophy_C>();
 	}
 };
-static_assert(alignof(UWBP_ClassSelect_Sub_Trophy_C) == 0x000008, "Wrong alignment on UWBP_ClassSelect_Sub_Trophy_C");
-static_assert(sizeof(UWBP_ClassSelect_Sub_Trophy_C) == 0x000318, "Wrong size on UWBP_ClassSelect_Sub_Trophy_C");
-static_assert(offsetof(UWBP_ClassSelect_Sub_Trophy_C, UberGraphFrame) == 0x0002F8, "Member 'UWBP_ClassSelect_Sub_Trophy_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_Sub_Trophy_C, Blank) == 0x000300, "Member 'UWBP_ClassSelect_Sub_Trophy_C::Blank' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_Sub_Trophy_C, WBP_CourseSelect_Sub_Trophy) == 0x000308, "Member 'UWBP_ClassSelect_Sub_Trophy_C::WBP_CourseSelect_Sub_Trophy' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_Sub_Trophy_C, WS_Trophy) == 0x000310, "Member 'UWBP_ClassSelect_Sub_Trophy_C::WS_Trophy' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ClassSelect_Sub_Trophy_C;
 
 }
 

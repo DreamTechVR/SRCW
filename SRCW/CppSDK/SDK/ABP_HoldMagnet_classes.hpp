@@ -23,15 +23,18 @@ class UABP_HoldMagnet_C final : public UABPT_HoldItem_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABP_HoldMagnet_C">();
+		BP_STATIC_CLASS_IMPL("ABP_HoldMagnet_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABP_HoldMagnet_C")
 	}
 	static class UABP_HoldMagnet_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UABP_HoldMagnet_C>();
 	}
 };
-static_assert(alignof(UABP_HoldMagnet_C) == 0x000010, "Wrong alignment on UABP_HoldMagnet_C");
-static_assert(sizeof(UABP_HoldMagnet_C) == 0x001130, "Wrong size on UABP_HoldMagnet_C");
+DUMPER7_ASSERTS_UABP_HoldMagnet_C;
 
 }
 

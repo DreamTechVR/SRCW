@@ -23,15 +23,18 @@ class UDisplayWidgetComponent_C final : public UUnionWidgetComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DisplayWidgetComponent_C">();
+		BP_STATIC_CLASS_IMPL("DisplayWidgetComponent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DisplayWidgetComponent_C")
 	}
 	static class UDisplayWidgetComponent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDisplayWidgetComponent_C>();
 	}
 };
-static_assert(alignof(UDisplayWidgetComponent_C) == 0x000010, "Wrong alignment on UDisplayWidgetComponent_C");
-static_assert(sizeof(UDisplayWidgetComponent_C) == 0x000690, "Wrong size on UDisplayWidgetComponent_C");
+DUMPER7_ASSERTS_UDisplayWidgetComponent_C;
 
 }
 

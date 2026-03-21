@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
+#include "UnionSystem_structs.hpp"
 
 
 namespace SDK::Params
@@ -25,9 +25,7 @@ struct BP_HoldItemSKM_C_Create final
 public:
 	struct FHoldItemCreateParam                   Param;                                             // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(BP_HoldItemSKM_C_Create) == 0x000004, "Wrong alignment on BP_HoldItemSKM_C_Create");
-static_assert(sizeof(BP_HoldItemSKM_C_Create) == 0x000010, "Wrong size on BP_HoldItemSKM_C_Create");
-static_assert(offsetof(BP_HoldItemSKM_C_Create, Param) == 0x000000, "Member 'BP_HoldItemSKM_C_Create::Param' has a wrong offset!");
+DUMPER7_ASSERTS_BP_HoldItemSKM_C_Create;
 
 // Function BP_HoldItemSKM.BP_HoldItemSKM_C.CreateItem
 // 0x0170 (0x0170 - 0x0000)
@@ -64,32 +62,7 @@ public:
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0168(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_3;          // 0x016C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_HoldItemSKM_C_CreateItem) == 0x000008, "Wrong alignment on BP_HoldItemSKM_C_CreateItem");
-static_assert(sizeof(BP_HoldItemSKM_C_CreateItem) == 0x000170, "Wrong size on BP_HoldItemSKM_C_CreateItem");
-static_assert(offsetof(BP_HoldItemSKM_C_CreateItem, In_Param) == 0x000000, "Member 'BP_HoldItemSKM_C_CreateItem::In_Param' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_CreateItem, HoldItemAnimInstance) == 0x000010, "Member 'BP_HoldItemSKM_C_CreateItem::HoldItemAnimInstance' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_CreateItem, CallFunc_Map_Find_Value) == 0x000018, "Member 'BP_HoldItemSKM_C_CreateItem::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_CreateItem, CallFunc_Map_Find_ReturnValue) == 0x000020, "Member 'BP_HoldItemSKM_C_CreateItem::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_CreateItem, CallFunc_GetAnimInstance_ReturnValue) == 0x000028, "Member 'BP_HoldItemSKM_C_CreateItem::CallFunc_GetAnimInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_CreateItem, K2Node_DynamicCast_AsHold_Item_Anim_Instance) == 0x000030, "Member 'BP_HoldItemSKM_C_CreateItem::K2Node_DynamicCast_AsHold_Item_Anim_Instance' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_CreateItem, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'BP_HoldItemSKM_C_CreateItem::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_CreateItem, CallFunc_GetSkinnedAsset_ReturnValue) == 0x000040, "Member 'BP_HoldItemSKM_C_CreateItem::CallFunc_GetSkinnedAsset_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_CreateItem, K2Node_SwitchEnum_CmpSuccess) == 0x000048, "Member 'BP_HoldItemSKM_C_CreateItem::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_CreateItem, CallFunc_IsValid_ReturnValue) == 0x000049, "Member 'BP_HoldItemSKM_C_CreateItem::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_CreateItem, CallFunc_Map_Find_Value_1) == 0x000050, "Member 'BP_HoldItemSKM_C_CreateItem::CallFunc_Map_Find_Value_1' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_CreateItem, CallFunc_Map_Find_ReturnValue_1) == 0x000058, "Member 'BP_HoldItemSKM_C_CreateItem::CallFunc_Map_Find_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_CreateItem, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000059, "Member 'BP_HoldItemSKM_C_CreateItem::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_CreateItem, CallFunc_AddComponentByClass_ReturnValue) == 0x000060, "Member 'BP_HoldItemSKM_C_CreateItem::CallFunc_AddComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_CreateItem, CallFunc_K2_AddLocalRotation_SweepHitResult) == 0x000068, "Member 'BP_HoldItemSKM_C_CreateItem::CallFunc_K2_AddLocalRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_CreateItem, CallFunc_SetStaticMesh_ReturnValue) == 0x000160, "Member 'BP_HoldItemSKM_C_CreateItem::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_CreateItem, CallFunc_SetStaticMesh_ReturnValue_1) == 0x000161, "Member 'BP_HoldItemSKM_C_CreateItem::CallFunc_SetStaticMesh_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_CreateItem, CallFunc_SetStaticMesh_ReturnValue_2) == 0x000162, "Member 'BP_HoldItemSKM_C_CreateItem::CallFunc_SetStaticMesh_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_CreateItem, CallFunc_SetStaticMesh_ReturnValue_3) == 0x000163, "Member 'BP_HoldItemSKM_C_CreateItem::CallFunc_SetStaticMesh_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_CreateItem, CallFunc_K2_AttachToComponent_ReturnValue) == 0x000164, "Member 'BP_HoldItemSKM_C_CreateItem::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_CreateItem, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000165, "Member 'BP_HoldItemSKM_C_CreateItem::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_CreateItem, CallFunc_EqualEqual_IntInt_ReturnValue_2) == 0x000166, "Member 'BP_HoldItemSKM_C_CreateItem::CallFunc_EqualEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_CreateItem, CallFunc_Subtract_IntInt_ReturnValue) == 0x000168, "Member 'BP_HoldItemSKM_C_CreateItem::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_CreateItem, CallFunc_EqualEqual_IntInt_ReturnValue_3) == 0x00016C, "Member 'BP_HoldItemSKM_C_CreateItem::CallFunc_EqualEqual_IntInt_ReturnValue_3' has a wrong offset!");
+DUMPER7_ASSERTS_BP_HoldItemSKM_C_CreateItem;
 
 // Function BP_HoldItemSKM.BP_HoldItemSKM_C.ExecuteUbergraph_BP_HoldItemSKM
 // 0x0028 (0x0028 - 0x0000)
@@ -102,12 +75,7 @@ public:
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHoldItemCreateParam                   K2Node_Event_Param;                                // 0x0018(0x0010)(ConstParm, NoDestructor)
 };
-static_assert(alignof(BP_HoldItemSKM_C_ExecuteUbergraph_BP_HoldItemSKM) == 0x000004, "Wrong alignment on BP_HoldItemSKM_C_ExecuteUbergraph_BP_HoldItemSKM");
-static_assert(sizeof(BP_HoldItemSKM_C_ExecuteUbergraph_BP_HoldItemSKM) == 0x000028, "Wrong size on BP_HoldItemSKM_C_ExecuteUbergraph_BP_HoldItemSKM");
-static_assert(offsetof(BP_HoldItemSKM_C_ExecuteUbergraph_BP_HoldItemSKM, EntryPoint) == 0x000000, "Member 'BP_HoldItemSKM_C_ExecuteUbergraph_BP_HoldItemSKM::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_ExecuteUbergraph_BP_HoldItemSKM, K2Node_Event_Param_1) == 0x000004, "Member 'BP_HoldItemSKM_C_ExecuteUbergraph_BP_HoldItemSKM::K2Node_Event_Param_1' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_ExecuteUbergraph_BP_HoldItemSKM, CallFunc_IsValid_ReturnValue) == 0x000014, "Member 'BP_HoldItemSKM_C_ExecuteUbergraph_BP_HoldItemSKM::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_ExecuteUbergraph_BP_HoldItemSKM, K2Node_Event_Param) == 0x000018, "Member 'BP_HoldItemSKM_C_ExecuteUbergraph_BP_HoldItemSKM::K2Node_Event_Param' has a wrong offset!");
+DUMPER7_ASSERTS_BP_HoldItemSKM_C_ExecuteUbergraph_BP_HoldItemSKM;
 
 // Function BP_HoldItemSKM.BP_HoldItemSKM_C.PlayRareItemEffect
 // 0x0008 (0x0008 - 0x0000)
@@ -116,9 +84,7 @@ struct BP_HoldItemSKM_C_PlayRareItemEffect final
 public:
 	class UNiagaraComponent*                      CallFunc_SpawnSystemAttached_ReturnValue;          // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_HoldItemSKM_C_PlayRareItemEffect) == 0x000008, "Wrong alignment on BP_HoldItemSKM_C_PlayRareItemEffect");
-static_assert(sizeof(BP_HoldItemSKM_C_PlayRareItemEffect) == 0x000008, "Wrong size on BP_HoldItemSKM_C_PlayRareItemEffect");
-static_assert(offsetof(BP_HoldItemSKM_C_PlayRareItemEffect, CallFunc_SpawnSystemAttached_ReturnValue) == 0x000000, "Member 'BP_HoldItemSKM_C_PlayRareItemEffect::CallFunc_SpawnSystemAttached_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_HoldItemSKM_C_PlayRareItemEffect;
 
 // Function BP_HoldItemSKM.BP_HoldItemSKM_C.PreCreate
 // 0x0010 (0x0010 - 0x0000)
@@ -127,9 +93,7 @@ struct BP_HoldItemSKM_C_PreCreate final
 public:
 	struct FHoldItemCreateParam                   Param;                                             // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(BP_HoldItemSKM_C_PreCreate) == 0x000004, "Wrong alignment on BP_HoldItemSKM_C_PreCreate");
-static_assert(sizeof(BP_HoldItemSKM_C_PreCreate) == 0x000010, "Wrong size on BP_HoldItemSKM_C_PreCreate");
-static_assert(offsetof(BP_HoldItemSKM_C_PreCreate, Param) == 0x000000, "Member 'BP_HoldItemSKM_C_PreCreate::Param' has a wrong offset!");
+DUMPER7_ASSERTS_BP_HoldItemSKM_C_PreCreate;
 
 // Function BP_HoldItemSKM.BP_HoldItemSKM_C.PreCreateItem
 // 0x0040 (0x0040 - 0x0000)
@@ -150,18 +114,7 @@ public:
 	class USkeletalMesh*                          CallFunc_Map_Find_Value_1;                         // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_HoldItemSKM_C_PreCreateItem) == 0x000008, "Wrong alignment on BP_HoldItemSKM_C_PreCreateItem");
-static_assert(sizeof(BP_HoldItemSKM_C_PreCreateItem) == 0x000040, "Wrong size on BP_HoldItemSKM_C_PreCreateItem");
-static_assert(offsetof(BP_HoldItemSKM_C_PreCreateItem, In_ItemId) == 0x000000, "Member 'BP_HoldItemSKM_C_PreCreateItem::In_ItemId' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_PreCreateItem, CallFunc_GetSkinnedAsset_ReturnValue) == 0x000008, "Member 'BP_HoldItemSKM_C_PreCreateItem::CallFunc_GetSkinnedAsset_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_PreCreateItem, CallFunc_GetAnimInstance_ReturnValue) == 0x000010, "Member 'BP_HoldItemSKM_C_PreCreateItem::CallFunc_GetAnimInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_PreCreateItem, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'BP_HoldItemSKM_C_PreCreateItem::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_PreCreateItem, CallFunc_IsValid_ReturnValue_1) == 0x000019, "Member 'BP_HoldItemSKM_C_PreCreateItem::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_PreCreateItem, CallFunc_BooleanAND_ReturnValue) == 0x00001A, "Member 'BP_HoldItemSKM_C_PreCreateItem::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_PreCreateItem, CallFunc_Map_Find_Value) == 0x000020, "Member 'BP_HoldItemSKM_C_PreCreateItem::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_PreCreateItem, CallFunc_Map_Find_ReturnValue) == 0x000028, "Member 'BP_HoldItemSKM_C_PreCreateItem::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_PreCreateItem, CallFunc_Map_Find_Value_1) == 0x000030, "Member 'BP_HoldItemSKM_C_PreCreateItem::CallFunc_Map_Find_Value_1' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_PreCreateItem, CallFunc_Map_Find_ReturnValue_1) == 0x000038, "Member 'BP_HoldItemSKM_C_PreCreateItem::CallFunc_Map_Find_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_HoldItemSKM_C_PreCreateItem;
 
 // Function BP_HoldItemSKM.BP_HoldItemSKM_C.SetLightChannels
 // 0x0003 (0x0003 - 0x0000)
@@ -172,11 +125,7 @@ public:
 	bool                                          Channel1;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Channel2;                                          // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_HoldItemSKM_C_SetLightChannels) == 0x000001, "Wrong alignment on BP_HoldItemSKM_C_SetLightChannels");
-static_assert(sizeof(BP_HoldItemSKM_C_SetLightChannels) == 0x000003, "Wrong size on BP_HoldItemSKM_C_SetLightChannels");
-static_assert(offsetof(BP_HoldItemSKM_C_SetLightChannels, Channel0) == 0x000000, "Member 'BP_HoldItemSKM_C_SetLightChannels::Channel0' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_SetLightChannels, Channel1) == 0x000001, "Member 'BP_HoldItemSKM_C_SetLightChannels::Channel1' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSKM_C_SetLightChannels, Channel2) == 0x000002, "Member 'BP_HoldItemSKM_C_SetLightChannels::Channel2' has a wrong offset!");
+DUMPER7_ASSERTS_BP_HoldItemSKM_C_SetLightChannels;
 
 // Function BP_HoldItemSKM.BP_HoldItemSKM_C.GetMeshComponent
 // 0x0008 (0x0008 - 0x0000)
@@ -185,9 +134,7 @@ struct BP_HoldItemSKM_C_GetMeshComponent final
 public:
 	class UMeshComponent*                         ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_HoldItemSKM_C_GetMeshComponent) == 0x000008, "Wrong alignment on BP_HoldItemSKM_C_GetMeshComponent");
-static_assert(sizeof(BP_HoldItemSKM_C_GetMeshComponent) == 0x000008, "Wrong size on BP_HoldItemSKM_C_GetMeshComponent");
-static_assert(offsetof(BP_HoldItemSKM_C_GetMeshComponent, ReturnValue) == 0x000000, "Member 'BP_HoldItemSKM_C_GetMeshComponent::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_HoldItemSKM_C_GetMeshComponent;
 
 }
 

@@ -68,49 +68,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Ready_Sub_Decide_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Ready_Sub_Decide_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Ready_Sub_Decide_C")
 	}
 	static class UWBP_Ready_Sub_Decide_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Ready_Sub_Decide_C>();
 	}
 };
-static_assert(alignof(UWBP_Ready_Sub_Decide_C) == 0x000008, "Wrong alignment on UWBP_Ready_Sub_Decide_C");
-static_assert(sizeof(UWBP_Ready_Sub_Decide_C) == 0x0003F8, "Wrong size on UWBP_Ready_Sub_Decide_C");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Ready_Sub_Decide_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, Decide_Inout) == 0x0002E8, "Member 'UWBP_Ready_Sub_Decide_C::Decide_Inout' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, ArcUV_01) == 0x0002F0, "Member 'UWBP_Ready_Sub_Decide_C::ArcUV_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, Belt) == 0x0002F8, "Member 'UWBP_Ready_Sub_Decide_C::Belt' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, BG) == 0x000300, "Member 'UWBP_Ready_Sub_Decide_C::BG' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, BG_Cover) == 0x000308, "Member 'UWBP_Ready_Sub_Decide_C::BG_Cover' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, Eff_Spread) == 0x000310, "Member 'UWBP_Ready_Sub_Decide_C::Eff_Spread' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, RetainerBox_Mask) == 0x000318, "Member 'UWBP_Ready_Sub_Decide_C::RetainerBox_Mask' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, TXT_GO) == 0x000320, "Member 'UWBP_Ready_Sub_Decide_C::TXT_GO' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, TXT_SonicRacing) == 0x000328, "Member 'UWBP_Ready_Sub_Decide_C::TXT_SonicRacing' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, Union_Line_10) == 0x000330, "Member 'UWBP_Ready_Sub_Decide_C::Union_Line_10' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, Union_Line_11) == 0x000338, "Member 'UWBP_Ready_Sub_Decide_C::Union_Line_11' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, Union_Line_12) == 0x000340, "Member 'UWBP_Ready_Sub_Decide_C::Union_Line_12' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, Union_Line_13) == 0x000348, "Member 'UWBP_Ready_Sub_Decide_C::Union_Line_13' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, Union_Line_14) == 0x000350, "Member 'UWBP_Ready_Sub_Decide_C::Union_Line_14' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, Union_Line_15) == 0x000358, "Member 'UWBP_Ready_Sub_Decide_C::Union_Line_15' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, Union_Line_16) == 0x000360, "Member 'UWBP_Ready_Sub_Decide_C::Union_Line_16' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, Union_Line_17) == 0x000368, "Member 'UWBP_Ready_Sub_Decide_C::Union_Line_17' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, Union_Line_18) == 0x000370, "Member 'UWBP_Ready_Sub_Decide_C::Union_Line_18' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, Union_Line_19) == 0x000378, "Member 'UWBP_Ready_Sub_Decide_C::Union_Line_19' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, Union_Line_01) == 0x000380, "Member 'UWBP_Ready_Sub_Decide_C::Union_Line_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, Union_Line_02) == 0x000388, "Member 'UWBP_Ready_Sub_Decide_C::Union_Line_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, Union_Line_03) == 0x000390, "Member 'UWBP_Ready_Sub_Decide_C::Union_Line_03' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, Union_Line_04) == 0x000398, "Member 'UWBP_Ready_Sub_Decide_C::Union_Line_04' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, Union_Line_05) == 0x0003A0, "Member 'UWBP_Ready_Sub_Decide_C::Union_Line_05' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, Union_Line_06) == 0x0003A8, "Member 'UWBP_Ready_Sub_Decide_C::Union_Line_06' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, Union_Line_07) == 0x0003B0, "Member 'UWBP_Ready_Sub_Decide_C::Union_Line_07' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, Union_Line_08) == 0x0003B8, "Member 'UWBP_Ready_Sub_Decide_C::Union_Line_08' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, Union_Line_09) == 0x0003C0, "Member 'UWBP_Ready_Sub_Decide_C::Union_Line_09' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, UnionLine_Left_01) == 0x0003C8, "Member 'UWBP_Ready_Sub_Decide_C::UnionLine_Left_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, UnionLine_Left_02) == 0x0003D0, "Member 'UWBP_Ready_Sub_Decide_C::UnionLine_Left_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, UnionLine_Right_01) == 0x0003D8, "Member 'UWBP_Ready_Sub_Decide_C::UnionLine_Right_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, UnionLine_Right_02) == 0x0003E0, "Member 'UWBP_Ready_Sub_Decide_C::UnionLine_Right_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_Decide_C, OnGoAnimFinished) == 0x0003E8, "Member 'UWBP_Ready_Sub_Decide_C::OnGoAnimFinished' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Ready_Sub_Decide_C;
 
 }
 

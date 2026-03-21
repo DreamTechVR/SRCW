@@ -12,8 +12,8 @@
 
 #include "UnionSystem_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "UMG_structs.hpp"
 #include "UnionUI_structs.hpp"
+#include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "ST_ItemDisable_structs.hpp"
 
@@ -28,9 +28,7 @@ struct WBP_ItemSwitch_Sub_ItemIcon_C_CheckIsGuest final
 public:
 	bool                                          IsGuest_0;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemSwitch_Sub_ItemIcon_C_CheckIsGuest) == 0x000001, "Wrong alignment on WBP_ItemSwitch_Sub_ItemIcon_C_CheckIsGuest");
-static_assert(sizeof(WBP_ItemSwitch_Sub_ItemIcon_C_CheckIsGuest) == 0x000001, "Wrong size on WBP_ItemSwitch_Sub_ItemIcon_C_CheckIsGuest");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_CheckIsGuest, IsGuest_0) == 0x000000, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_CheckIsGuest::IsGuest_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemSwitch_Sub_ItemIcon_C_CheckIsGuest;
 
 // Function WBP_ItemSwitch_Sub_ItemIcon.WBP_ItemSwitch_Sub_ItemIcon_C.ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon
 // 0x01D8 (0x01D8 - 0x0000)
@@ -144,92 +142,7 @@ public:
 	bool                                          CallFunc_UnregisterMainMenu_ReturnValue_1;         // 0x01D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable_2; // 0x01D5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon) == 0x000008, "Wrong alignment on WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon");
-static_assert(sizeof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon) == 0x0001D8, "Wrong size on WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, EntryPoint) == 0x000000, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000014, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, K2Node_Event_IsDesignTime) == 0x000015, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, K2Node_CustomEvent_Button_1) == 0x000018, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::K2Node_CustomEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, K2Node_Event_InFocusEvent_2) == 0x000020, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::K2Node_Event_InFocusEvent_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, K2Node_Event_InFocusEvent_1) == 0x000028, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::K2Node_Event_InFocusEvent_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, K2Node_Event_InFocusEvent) == 0x000030, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::K2Node_Event_InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_GetUserIndexByFocusEvent_ReturnValue) == 0x000038, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_GetUserIndexByFocusEvent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_GetPlayerController_ReturnValue) == 0x000040, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, Temp_bool_Has_Been_Initd_Variable) == 0x000048, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_NotEqual_ByteByte_ReturnValue_1) == 0x000049, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_NotEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_GetOwningPlayer_ReturnValue) == 0x000050, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000058, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, K2Node_DynamicCast_bSuccess) == 0x000060, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_GetOwningPlayer_ReturnValue_1) == 0x000068, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_GetOwningPlayer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, K2Node_DynamicCast_AsApp_Player_Controller_1) == 0x000070, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::K2Node_DynamicCast_AsApp_Player_Controller_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, K2Node_DynamicCast_bSuccess_1) == 0x000078, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, Temp_bool_IsClosed_Variable) == 0x000079, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, K2Node_CustomEvent_Button) == 0x000080, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, K2Node_SwitchEnum_CmpSuccess) == 0x000088, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, K2Node_SwitchEnum_CmpSuccess_1) == 0x000089, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable) == 0x00008A, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, Temp_byte_Variable) == 0x00008B, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_IsValid_ReturnValue) == 0x00008C, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_PauseAnimation_ReturnValue) == 0x000090, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_PauseAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000094, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_NotEqual_ByteByte_ReturnValue_2) == 0x000095, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_NotEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, Temp_bool_Has_Been_Initd_Variable_1) == 0x000096, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::Temp_bool_Has_Been_Initd_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, Temp_bool_IsClosed_Variable_1) == 0x000097, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::Temp_bool_IsClosed_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, Temp_byte_Variable_1) == 0x000098, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_NotEqual_ByteByte_ReturnValue_3) == 0x000099, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_NotEqual_ByteByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable_1) == 0x00009A, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, Temp_bool_Has_Been_Initd_Variable_2) == 0x00009B, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::Temp_bool_Has_Been_Initd_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, K2Node_SwitchEnum_CmpSuccess_2) == 0x00009C, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::K2Node_SwitchEnum_CmpSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_SoundPlay_ReturnValue) == 0x0000A0, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_GetOwningPlayer_ReturnValue_2) == 0x0000A8, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_GetOwningPlayer_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_HasAnyUserFocus_ReturnValue) == 0x0000B0, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_HasAnyUserFocus_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, K2Node_DynamicCast_AsApp_Player_Controller_2) == 0x0000B8, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::K2Node_DynamicCast_AsApp_Player_Controller_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, K2Node_DynamicCast_bSuccess_2) == 0x0000C0, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_SoundPlay_ReturnValue_1) == 0x0000C4, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_SoundPlay_ReturnValue_2) == 0x0000C8, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_SoundPlay_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_PlayAnimation_ReturnValue) == 0x0000D0, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, Temp_bool_Variable) == 0x0000D8, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, K2Node_CreateDelegate_OutputDelegate_1) == 0x0000DC, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, K2Node_Select_Default) == 0x0000EC, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_NotEqual_ByteByte_ReturnValue_4) == 0x0000ED, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_NotEqual_ByteByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_GetCurrentDisableItemArr_ReturnValue) == 0x0000F0, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_GetCurrentDisableItemArr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000100, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_GetEnumeratorName_ReturnValue) == 0x000104, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_NotEqual_ByteByte_ReturnValue_5) == 0x00010C, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_NotEqual_ByteByte_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_GetDataTableRowFromName_OutRow) == 0x000110, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000128, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000130, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_IsValid_ReturnValue_1) == 0x000138, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_NotEqual_ByteByte_ReturnValue_6) == 0x000139, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_NotEqual_ByteByte_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_PauseAnimation_ReturnValue_1) == 0x00013C, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_PauseAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_IsAnimationPlaying_ReturnValue_1) == 0x000140, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_IsAnimationPlaying_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, Temp_bool_IsClosed_Variable_2) == 0x000141, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::Temp_bool_IsClosed_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_IsAnimationPlaying_ReturnValue_2) == 0x000142, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_IsAnimationPlaying_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_IsAnimationPlaying_ReturnValue_3) == 0x000143, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_IsAnimationPlaying_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, Temp_struct_Variable) == 0x000144, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, Temp_struct_Variable_1) == 0x000154, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, Temp_bool_Variable_1) == 0x000164, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_Array_Contains_ReturnValue) == 0x000165, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, K2Node_Select_Default_1) == 0x000168, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_Array_RemoveItem_ReturnValue) == 0x000178, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_Array_RemoveItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, Temp_bool_Variable_2) == 0x000179, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, Temp_bool_Variable_3) == 0x00017A, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, K2Node_Select_Default_2) == 0x000180, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, K2Node_Select_Default_3) == 0x000188, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, Temp_bool_Variable_4) == 0x000190, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::Temp_bool_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, K2Node_CreateDelegate_OutputDelegate_2) == 0x000194, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, K2Node_Select_Default_4) == 0x0001A8, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, Temp_bool_Variable_5) == 0x0001B0, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::Temp_bool_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_PlayAnimation_ReturnValue_1) == 0x0001B8, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, K2Node_Select_Default_5) == 0x0001C0, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::K2Node_Select_Default_5' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_PlayAnimation_ReturnValue_2) == 0x0001C8, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, K2Node_Event_IsGuest) == 0x0001D0, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::K2Node_Event_IsGuest' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_Not_PreBool_ReturnValue) == 0x0001D1, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_BooleanAND_ReturnValue) == 0x0001D2, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_UnregisterMainMenu_ReturnValue) == 0x0001D3, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_UnregisterMainMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, CallFunc_UnregisterMainMenu_ReturnValue_1) == 0x0001D4, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::CallFunc_UnregisterMainMenu_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon, Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable_2) == 0x0001D5, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon::Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemSwitch_Sub_ItemIcon_C_ExecuteUbergraph_WBP_ItemSwitch_Sub_ItemIcon;
 
 // Function WBP_ItemSwitch_Sub_ItemIcon.WBP_ItemSwitch_Sub_ItemIcon_C.GetDisplayItemId
 // 0x0001 (0x0001 - 0x0000)
@@ -238,9 +151,7 @@ struct WBP_ItemSwitch_Sub_ItemIcon_C_GetDisplayItemId final
 public:
 	EItemId                                       CurrentItemId;                                     // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemSwitch_Sub_ItemIcon_C_GetDisplayItemId) == 0x000001, "Wrong alignment on WBP_ItemSwitch_Sub_ItemIcon_C_GetDisplayItemId");
-static_assert(sizeof(WBP_ItemSwitch_Sub_ItemIcon_C_GetDisplayItemId) == 0x000001, "Wrong size on WBP_ItemSwitch_Sub_ItemIcon_C_GetDisplayItemId");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_GetDisplayItemId, CurrentItemId) == 0x000000, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_GetDisplayItemId::CurrentItemId' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemSwitch_Sub_ItemIcon_C_GetDisplayItemId;
 
 // Function WBP_ItemSwitch_Sub_ItemIcon.WBP_ItemSwitch_Sub_ItemIcon_C.OnAddedToFocusPath
 // 0x0008 (0x0008 - 0x0000)
@@ -249,9 +160,7 @@ struct WBP_ItemSwitch_Sub_ItemIcon_C_OnAddedToFocusPath final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_ItemSwitch_Sub_ItemIcon_C_OnAddedToFocusPath) == 0x000004, "Wrong alignment on WBP_ItemSwitch_Sub_ItemIcon_C_OnAddedToFocusPath");
-static_assert(sizeof(WBP_ItemSwitch_Sub_ItemIcon_C_OnAddedToFocusPath) == 0x000008, "Wrong size on WBP_ItemSwitch_Sub_ItemIcon_C_OnAddedToFocusPath");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_OnAddedToFocusPath, InFocusEvent) == 0x000000, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_OnAddedToFocusPath::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemSwitch_Sub_ItemIcon_C_OnAddedToFocusPath;
 
 // Function WBP_ItemSwitch_Sub_ItemIcon.WBP_ItemSwitch_Sub_ItemIcon_C.OnDecision_Init
 // 0x0008 (0x0008 - 0x0000)
@@ -260,9 +169,7 @@ struct WBP_ItemSwitch_Sub_ItemIcon_C_OnDecision_Init final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemSwitch_Sub_ItemIcon_C_OnDecision_Init) == 0x000008, "Wrong alignment on WBP_ItemSwitch_Sub_ItemIcon_C_OnDecision_Init");
-static_assert(sizeof(WBP_ItemSwitch_Sub_ItemIcon_C_OnDecision_Init) == 0x000008, "Wrong size on WBP_ItemSwitch_Sub_ItemIcon_C_OnDecision_Init");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_OnDecision_Init, Button) == 0x000000, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_OnDecision_Init::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemSwitch_Sub_ItemIcon_C_OnDecision_Init;
 
 // Function WBP_ItemSwitch_Sub_ItemIcon.WBP_ItemSwitch_Sub_ItemIcon_C.OnFocus_Imp
 // 0x0008 (0x0008 - 0x0000)
@@ -271,9 +178,7 @@ struct WBP_ItemSwitch_Sub_ItemIcon_C_OnFocus_Imp final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemSwitch_Sub_ItemIcon_C_OnFocus_Imp) == 0x000008, "Wrong alignment on WBP_ItemSwitch_Sub_ItemIcon_C_OnFocus_Imp");
-static_assert(sizeof(WBP_ItemSwitch_Sub_ItemIcon_C_OnFocus_Imp) == 0x000008, "Wrong size on WBP_ItemSwitch_Sub_ItemIcon_C_OnFocus_Imp");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_OnFocus_Imp, Button) == 0x000000, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_OnFocus_Imp::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemSwitch_Sub_ItemIcon_C_OnFocus_Imp;
 
 // Function WBP_ItemSwitch_Sub_ItemIcon.WBP_ItemSwitch_Sub_ItemIcon_C.OnFocusLost
 // 0x0008 (0x0008 - 0x0000)
@@ -282,9 +187,7 @@ struct WBP_ItemSwitch_Sub_ItemIcon_C_OnFocusLost final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_ItemSwitch_Sub_ItemIcon_C_OnFocusLost) == 0x000004, "Wrong alignment on WBP_ItemSwitch_Sub_ItemIcon_C_OnFocusLost");
-static_assert(sizeof(WBP_ItemSwitch_Sub_ItemIcon_C_OnFocusLost) == 0x000008, "Wrong size on WBP_ItemSwitch_Sub_ItemIcon_C_OnFocusLost");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_OnFocusLost, InFocusEvent) == 0x000000, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_OnFocusLost::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemSwitch_Sub_ItemIcon_C_OnFocusLost;
 
 // Function WBP_ItemSwitch_Sub_ItemIcon.WBP_ItemSwitch_Sub_ItemIcon_C.OnFocusReceived
 // 0x01B0 (0x01B0 - 0x0000)
@@ -296,12 +199,7 @@ public:
 	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
 	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x00F8(0x00B8)()
 };
-static_assert(alignof(WBP_ItemSwitch_Sub_ItemIcon_C_OnFocusReceived) == 0x000008, "Wrong alignment on WBP_ItemSwitch_Sub_ItemIcon_C_OnFocusReceived");
-static_assert(sizeof(WBP_ItemSwitch_Sub_ItemIcon_C_OnFocusReceived) == 0x0001B0, "Wrong size on WBP_ItemSwitch_Sub_ItemIcon_C_OnFocusReceived");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_OnFocusReceived, K2Node_MakeStruct_EventReply) == 0x0000F8, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_OnFocusReceived::K2Node_MakeStruct_EventReply' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemSwitch_Sub_ItemIcon_C_OnFocusReceived;
 
 // Function WBP_ItemSwitch_Sub_ItemIcon.WBP_ItemSwitch_Sub_ItemIcon_C.OnRemovedFromFocusPath
 // 0x0008 (0x0008 - 0x0000)
@@ -310,9 +208,7 @@ struct WBP_ItemSwitch_Sub_ItemIcon_C_OnRemovedFromFocusPath final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_ItemSwitch_Sub_ItemIcon_C_OnRemovedFromFocusPath) == 0x000004, "Wrong alignment on WBP_ItemSwitch_Sub_ItemIcon_C_OnRemovedFromFocusPath");
-static_assert(sizeof(WBP_ItemSwitch_Sub_ItemIcon_C_OnRemovedFromFocusPath) == 0x000008, "Wrong size on WBP_ItemSwitch_Sub_ItemIcon_C_OnRemovedFromFocusPath");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_OnRemovedFromFocusPath, InFocusEvent) == 0x000000, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_OnRemovedFromFocusPath::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemSwitch_Sub_ItemIcon_C_OnRemovedFromFocusPath;
 
 // Function WBP_ItemSwitch_Sub_ItemIcon.WBP_ItemSwitch_Sub_ItemIcon_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -321,9 +217,7 @@ struct WBP_ItemSwitch_Sub_ItemIcon_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemSwitch_Sub_ItemIcon_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_ItemSwitch_Sub_ItemIcon_C_PreConstruct");
-static_assert(sizeof(WBP_ItemSwitch_Sub_ItemIcon_C_PreConstruct) == 0x000001, "Wrong size on WBP_ItemSwitch_Sub_ItemIcon_C_PreConstruct");
-static_assert(offsetof(WBP_ItemSwitch_Sub_ItemIcon_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_ItemSwitch_Sub_ItemIcon_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemSwitch_Sub_ItemIcon_C_PreConstruct;
 
 }
 

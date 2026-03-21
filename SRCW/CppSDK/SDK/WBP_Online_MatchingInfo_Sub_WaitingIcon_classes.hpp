@@ -43,28 +43,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Online_MatchingInfo_Sub_WaitingIcon_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Online_MatchingInfo_Sub_WaitingIcon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Online_MatchingInfo_Sub_WaitingIcon_C")
 	}
 	static class UWBP_Online_MatchingInfo_Sub_WaitingIcon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Online_MatchingInfo_Sub_WaitingIcon_C>();
 	}
 };
-static_assert(alignof(UWBP_Online_MatchingInfo_Sub_WaitingIcon_C) == 0x000008, "Wrong alignment on UWBP_Online_MatchingInfo_Sub_WaitingIcon_C");
-static_assert(sizeof(UWBP_Online_MatchingInfo_Sub_WaitingIcon_C) == 0x000348, "Wrong size on UWBP_Online_MatchingInfo_Sub_WaitingIcon_C");
-static_assert(offsetof(UWBP_Online_MatchingInfo_Sub_WaitingIcon_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Online_MatchingInfo_Sub_WaitingIcon_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_MatchingInfo_Sub_WaitingIcon_C, WaitingIcon_Go) == 0x0002E8, "Member 'UWBP_Online_MatchingInfo_Sub_WaitingIcon_C::WaitingIcon_Go' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_MatchingInfo_Sub_WaitingIcon_C, WaitingIcon_Cancel) == 0x0002F0, "Member 'UWBP_Online_MatchingInfo_Sub_WaitingIcon_C::WaitingIcon_Cancel' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_MatchingInfo_Sub_WaitingIcon_C, WaitingIcon_Loop) == 0x0002F8, "Member 'UWBP_Online_MatchingInfo_Sub_WaitingIcon_C::WaitingIcon_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_MatchingInfo_Sub_WaitingIcon_C, WaitingIcon_In) == 0x000300, "Member 'UWBP_Online_MatchingInfo_Sub_WaitingIcon_C::WaitingIcon_In' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_MatchingInfo_Sub_WaitingIcon_C, Car) == 0x000308, "Member 'UWBP_Online_MatchingInfo_Sub_WaitingIcon_C::Car' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_MatchingInfo_Sub_WaitingIcon_C, Effect_01) == 0x000310, "Member 'UWBP_Online_MatchingInfo_Sub_WaitingIcon_C::Effect_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_MatchingInfo_Sub_WaitingIcon_C, Effect_02) == 0x000318, "Member 'UWBP_Online_MatchingInfo_Sub_WaitingIcon_C::Effect_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_MatchingInfo_Sub_WaitingIcon_C, Effect_03) == 0x000320, "Member 'UWBP_Online_MatchingInfo_Sub_WaitingIcon_C::Effect_03' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_MatchingInfo_Sub_WaitingIcon_C, Overlay_31) == 0x000328, "Member 'UWBP_Online_MatchingInfo_Sub_WaitingIcon_C::Overlay_31' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_MatchingInfo_Sub_WaitingIcon_C, PAT_sonic) == 0x000330, "Member 'UWBP_Online_MatchingInfo_Sub_WaitingIcon_C::PAT_sonic' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_MatchingInfo_Sub_WaitingIcon_C, Wheel_Front) == 0x000338, "Member 'UWBP_Online_MatchingInfo_Sub_WaitingIcon_C::Wheel_Front' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_MatchingInfo_Sub_WaitingIcon_C, Wheel_Rear) == 0x000340, "Member 'UWBP_Online_MatchingInfo_Sub_WaitingIcon_C::Wheel_Rear' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Online_MatchingInfo_Sub_WaitingIcon_C;
 
 }
 

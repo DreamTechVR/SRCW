@@ -43,25 +43,7 @@ public:
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_1; // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward) == 0x000008, "Wrong alignment on WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward");
-static_assert(sizeof(WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward) == 0x0000F8, "Wrong size on WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward");
-static_assert(offsetof(WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward, EntryPoint) == 0x000000, "Member 'WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward, K2Node_CustomEvent_MedalCount) == 0x000004, "Member 'WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward::K2Node_CustomEvent_MedalCount' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward, K2Node_CustomEvent_MedalMax) == 0x000008, "Member 'WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward::K2Node_CustomEvent_MedalMax' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward, K2Node_CustomEvent_RewardData) == 0x000010, "Member 'WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward::K2Node_CustomEvent_RewardData' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward, CallFunc_MakeLiteralInt_ReturnValue) == 0x000078, "Member 'WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x000080, "Member 'WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward, CallFunc_Conv_IntToString_ReturnValue) == 0x000088, "Member 'WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward, K2Node_DynamicCast_As_____2D) == 0x000098, "Member 'WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward, K2Node_DynamicCast_bSuccess) == 0x0000A0, "Member 'WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward, CallFunc_Concat_StrStr_ReturnValue) == 0x0000A8, "Member 'WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward, CallFunc_Conv_IntToText_ReturnValue) == 0x0000B8, "Member 'WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward, CallFunc_Conv_StringToText_ReturnValue) == 0x0000C8, "Member 'WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward, K2Node_Event_Index) == 0x0000D8, "Member 'WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward::K2Node_Event_Index' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward, CallFunc_GetDynamicMaterial_ReturnValue) == 0x0000E0, "Member 'WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x0000E8, "Member 'WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x0000F0, "Member 'WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward, CallFunc_SetScalarParameterValue_Value_ImplicitCast_1) == 0x0000F4, "Member 'WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward::CallFunc_SetScalarParameterValue_Value_ImplicitCast_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Sub_RivalReward_C_ExecuteUbergraph_WBP_CMN_Sub_RivalReward;
 
 // Function WBP_CMN_Sub_RivalReward.WBP_CMN_Sub_RivalReward_C.SetDetailTextIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -70,9 +52,7 @@ struct WBP_CMN_Sub_RivalReward_C_SetDetailTextIndex final
 public:
 	int32                                         Index_0;                                           // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_Sub_RivalReward_C_SetDetailTextIndex) == 0x000004, "Wrong alignment on WBP_CMN_Sub_RivalReward_C_SetDetailTextIndex");
-static_assert(sizeof(WBP_CMN_Sub_RivalReward_C_SetDetailTextIndex) == 0x000004, "Wrong size on WBP_CMN_Sub_RivalReward_C_SetDetailTextIndex");
-static_assert(offsetof(WBP_CMN_Sub_RivalReward_C_SetDetailTextIndex, Index_0) == 0x000000, "Member 'WBP_CMN_Sub_RivalReward_C_SetDetailTextIndex::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Sub_RivalReward_C_SetDetailTextIndex;
 
 // Function WBP_CMN_Sub_RivalReward.WBP_CMN_Sub_RivalReward_C.SetupTimeTrialReward
 // 0x0070 (0x0070 - 0x0000)
@@ -83,11 +63,7 @@ public:
 	int32                                         MedalMax;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTimeTrialResultRewardTableData        RewardData;                                        // 0x0008(0x0068)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_CMN_Sub_RivalReward_C_SetupTimeTrialReward) == 0x000008, "Wrong alignment on WBP_CMN_Sub_RivalReward_C_SetupTimeTrialReward");
-static_assert(sizeof(WBP_CMN_Sub_RivalReward_C_SetupTimeTrialReward) == 0x000070, "Wrong size on WBP_CMN_Sub_RivalReward_C_SetupTimeTrialReward");
-static_assert(offsetof(WBP_CMN_Sub_RivalReward_C_SetupTimeTrialReward, MedalCount) == 0x000000, "Member 'WBP_CMN_Sub_RivalReward_C_SetupTimeTrialReward::MedalCount' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_RivalReward_C_SetupTimeTrialReward, MedalMax) == 0x000004, "Member 'WBP_CMN_Sub_RivalReward_C_SetupTimeTrialReward::MedalMax' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_RivalReward_C_SetupTimeTrialReward, RewardData) == 0x000008, "Member 'WBP_CMN_Sub_RivalReward_C_SetupTimeTrialReward::RewardData' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Sub_RivalReward_C_SetupTimeTrialReward;
 
 }
 

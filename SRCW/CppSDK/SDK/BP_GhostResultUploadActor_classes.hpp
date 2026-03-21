@@ -63,28 +63,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_GhostResultUploadActor_C">();
+		BP_STATIC_CLASS_IMPL("BP_GhostResultUploadActor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_GhostResultUploadActor_C")
 	}
 	static class ABP_GhostResultUploadActor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_GhostResultUploadActor_C>();
 	}
 };
-static_assert(alignof(ABP_GhostResultUploadActor_C) == 0x000008, "Wrong alignment on ABP_GhostResultUploadActor_C");
-static_assert(sizeof(ABP_GhostResultUploadActor_C) == 0x000300, "Wrong size on ABP_GhostResultUploadActor_C");
-static_assert(offsetof(ABP_GhostResultUploadActor_C, UberGraphFrame) == 0x000290, "Member 'ABP_GhostResultUploadActor_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_GhostResultUploadActor_C, DefaultSceneRoot) == 0x000298, "Member 'ABP_GhostResultUploadActor_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABP_GhostResultUploadActor_C, GhostDataController) == 0x0002A0, "Member 'ABP_GhostResultUploadActor_C::GhostDataController' has a wrong offset!");
-static_assert(offsetof(ABP_GhostResultUploadActor_C, LoadingWidget) == 0x0002A8, "Member 'ABP_GhostResultUploadActor_C::LoadingWidget' has a wrong offset!");
-static_assert(offsetof(ABP_GhostResultUploadActor_C, OnFinishEvent) == 0x0002B0, "Member 'ABP_GhostResultUploadActor_C::OnFinishEvent' has a wrong offset!");
-static_assert(offsetof(ABP_GhostResultUploadActor_C, PopupWindow) == 0x0002C0, "Member 'ABP_GhostResultUploadActor_C::PopupWindow' has a wrong offset!");
-static_assert(offsetof(ABP_GhostResultUploadActor_C, bIsAllUpload) == 0x0002C8, "Member 'ABP_GhostResultUploadActor_C::bIsAllUpload' has a wrong offset!");
-static_assert(offsetof(ABP_GhostResultUploadActor_C, SubInputReciever) == 0x0002D0, "Member 'ABP_GhostResultUploadActor_C::SubInputReciever' has a wrong offset!");
-static_assert(offsetof(ABP_GhostResultUploadActor_C, IsUploadCancel) == 0x0002D8, "Member 'ABP_GhostResultUploadActor_C::IsUploadCancel' has a wrong offset!");
-static_assert(offsetof(ABP_GhostResultUploadActor_C, FooterMenu) == 0x0002E0, "Member 'ABP_GhostResultUploadActor_C::FooterMenu' has a wrong offset!");
-static_assert(offsetof(ABP_GhostResultUploadActor_C, bIsNotCancelEntry) == 0x0002E8, "Member 'ABP_GhostResultUploadActor_C::bIsNotCancelEntry' has a wrong offset!");
-static_assert(offsetof(ABP_GhostResultUploadActor_C, CountTimer) == 0x0002F0, "Member 'ABP_GhostResultUploadActor_C::CountTimer' has a wrong offset!");
-static_assert(offsetof(ABP_GhostResultUploadActor_C, CancelEntryTime) == 0x0002F8, "Member 'ABP_GhostResultUploadActor_C::CancelEntryTime' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_GhostResultUploadActor_C;
 
 }
 

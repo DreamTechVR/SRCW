@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_System_BlackBoard_C">();
+		BP_STATIC_CLASS_IMPL("WBP_System_BlackBoard_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_System_BlackBoard_C")
 	}
 	static class UWBP_System_BlackBoard_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_System_BlackBoard_C>();
 	}
 };
-static_assert(alignof(UWBP_System_BlackBoard_C) == 0x000008, "Wrong alignment on UWBP_System_BlackBoard_C");
-static_assert(sizeof(UWBP_System_BlackBoard_C) == 0x0002E8, "Wrong size on UWBP_System_BlackBoard_C");
-static_assert(offsetof(UWBP_System_BlackBoard_C, Image_55) == 0x0002E0, "Member 'UWBP_System_BlackBoard_C::Image_55' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_System_BlackBoard_C;
 
 }
 

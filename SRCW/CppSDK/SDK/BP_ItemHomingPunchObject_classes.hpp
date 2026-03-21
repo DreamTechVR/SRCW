@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ItemHomingPunchObject_C">();
+		BP_STATIC_CLASS_IMPL("BP_ItemHomingPunchObject_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ItemHomingPunchObject_C")
 	}
 	static class ABP_ItemHomingPunchObject_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ItemHomingPunchObject_C>();
 	}
 };
-static_assert(alignof(ABP_ItemHomingPunchObject_C) == 0x000010, "Wrong alignment on ABP_ItemHomingPunchObject_C");
-static_assert(sizeof(ABP_ItemHomingPunchObject_C) == 0x000980, "Wrong size on ABP_ItemHomingPunchObject_C");
-static_assert(offsetof(ABP_ItemHomingPunchObject_C, UberGraphFrame) == 0x000970, "Member 'ABP_ItemHomingPunchObject_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_ItemHomingPunchObject_C;
 
 }
 

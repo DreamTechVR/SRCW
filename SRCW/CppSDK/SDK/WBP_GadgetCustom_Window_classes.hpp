@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
+#include "UnionRun_structs.hpp"
+#include "UNION_structs.hpp"
+#include "UNION_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
 #include "EMachineSelectMode_structs.hpp"
-#include "UNION_structs.hpp"
-#include "UNION_classes.hpp"
-#include "UnionUI_structs.hpp"
-#include "UnionRun_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "UnionUI_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -145,80 +145,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GadgetCustom_Window_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GadgetCustom_Window_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GadgetCustom_Window_C")
 	}
 	static class UWBP_GadgetCustom_Window_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GadgetCustom_Window_C>();
 	}
 };
-static_assert(alignof(UWBP_GadgetCustom_Window_C) == 0x000008, "Wrong alignment on UWBP_GadgetCustom_Window_C");
-static_assert(sizeof(UWBP_GadgetCustom_Window_C) == 0x000A00, "Wrong size on UWBP_GadgetCustom_Window_C");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, UberGraphFrame) == 0x000770, "Member 'UWBP_GadgetCustom_Window_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, Window_M2_Out) == 0x000778, "Member 'UWBP_GadgetCustom_Window_C::Window_M2_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, Window_M2_Loop) == 0x000780, "Member 'UWBP_GadgetCustom_Window_C::Window_M2_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, Window_M2_In) == 0x000788, "Member 'UWBP_GadgetCustom_Window_C::Window_M2_In' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, Window_M1M4_Out) == 0x000790, "Member 'UWBP_GadgetCustom_Window_C::Window_M1M4_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, Window_M1M4_Loop) == 0x000798, "Member 'UWBP_GadgetCustom_Window_C::Window_M1M4_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, Window_M1M4_In) == 0x0007A0, "Member 'UWBP_GadgetCustom_Window_C::Window_M1M4_In' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, MachineType_Down) == 0x0007A8, "Member 'UWBP_GadgetCustom_Window_C::MachineType_Down' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, MachineType_Up) == 0x0007B0, "Member 'UWBP_GadgetCustom_Window_C::MachineType_Up' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, BG_Black) == 0x0007B8, "Member 'UWBP_GadgetCustom_Window_C::BG_Black' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, Blur_Btm) == 0x0007C0, "Member 'UWBP_GadgetCustom_Window_C::Blur_Btm' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, Blur_Btm_1) == 0x0007C8, "Member 'UWBP_GadgetCustom_Window_C::Blur_Btm_1' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, Blur_Top) == 0x0007D0, "Member 'UWBP_GadgetCustom_Window_C::Blur_Top' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, Blur_Top_1) == 0x0007D8, "Member 'UWBP_GadgetCustom_Window_C::Blur_Top_1' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, BoxLine) == 0x0007E0, "Member 'UWBP_GadgetCustom_Window_C::BoxLine' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, CLP_MaichineType) == 0x0007E8, "Member 'UWBP_GadgetCustom_Window_C::CLP_MaichineType' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, DSP_RentalPlate_Info) == 0x0007F0, "Member 'UWBP_GadgetCustom_Window_C::DSP_RentalPlate_Info' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, InfoBase) == 0x0007F8, "Member 'UWBP_GadgetCustom_Window_C::InfoBase' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, MouseInteraction_Decision) == 0x000800, "Member 'UWBP_GadgetCustom_Window_C::MouseInteraction_Decision' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, MouseInteraction_ToDown) == 0x000808, "Member 'UWBP_GadgetCustom_Window_C::MouseInteraction_ToDown' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, MouseInteraction_ToLeft) == 0x000810, "Member 'UWBP_GadgetCustom_Window_C::MouseInteraction_ToLeft' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, MouseInteraction_ToRight) == 0x000818, "Member 'UWBP_GadgetCustom_Window_C::MouseInteraction_ToRight' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, MouseInteraction_ToUp) == 0x000820, "Member 'UWBP_GadgetCustom_Window_C::MouseInteraction_ToUp' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, Overlay_Header) == 0x000828, "Member 'UWBP_GadgetCustom_Window_C::Overlay_Header' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, TXT_RentalPlate_Info) == 0x000830, "Member 'UWBP_GadgetCustom_Window_C::TXT_RentalPlate_Info' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, WBP_GadgetCustom_ScrollSnapPoint) == 0x000838, "Member 'UWBP_GadgetCustom_Window_C::WBP_GadgetCustom_ScrollSnapPoint' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, WBP_GadgetCustom_Sub_Cursor) == 0x000840, "Member 'UWBP_GadgetCustom_Window_C::WBP_GadgetCustom_Sub_Cursor' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, WBP_GadgetCustom_Sub_TypeBox_00) == 0x000848, "Member 'UWBP_GadgetCustom_Window_C::WBP_GadgetCustom_Sub_TypeBox_00' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, WBP_GadgetCustom_Sub_TypeBox_01) == 0x000850, "Member 'UWBP_GadgetCustom_Window_C::WBP_GadgetCustom_Sub_TypeBox_01' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, WBP_GadgetCustom_Sub_TypeBox_02) == 0x000858, "Member 'UWBP_GadgetCustom_Window_C::WBP_GadgetCustom_Sub_TypeBox_02' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, WBP_GadgetCustom_Sub_TypeBox_03) == 0x000860, "Member 'UWBP_GadgetCustom_Window_C::WBP_GadgetCustom_Sub_TypeBox_03' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, WBP_GadgetCustom_Sub_TypeBox_04) == 0x000868, "Member 'UWBP_GadgetCustom_Window_C::WBP_GadgetCustom_Sub_TypeBox_04' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, WBP_GadgetCustom_Sub_TypeBox_05) == 0x000870, "Member 'UWBP_GadgetCustom_Window_C::WBP_GadgetCustom_Sub_TypeBox_05' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, WBP_GadgetCustom_Sub_TypeBox_06) == 0x000878, "Member 'UWBP_GadgetCustom_Window_C::WBP_GadgetCustom_Sub_TypeBox_06' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, WBP_GadgetCustom_Sub_TypeBox_07) == 0x000880, "Member 'UWBP_GadgetCustom_Window_C::WBP_GadgetCustom_Sub_TypeBox_07' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, WBP_GadgetCustom_Sub_TypeBox_08) == 0x000888, "Member 'UWBP_GadgetCustom_Window_C::WBP_GadgetCustom_Sub_TypeBox_08' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, WBP_GadgetCustom_Sub_TypeBox_09) == 0x000890, "Member 'UWBP_GadgetCustom_Window_C::WBP_GadgetCustom_Sub_TypeBox_09' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, WBP_MachineSelect_Sub_Header_MachineType_01) == 0x000898, "Member 'UWBP_GadgetCustom_Window_C::WBP_MachineSelect_Sub_Header_MachineType_01' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, WBP_MachineSelect_Sub_Header_MachineType_02) == 0x0008A0, "Member 'UWBP_GadgetCustom_Window_C::WBP_MachineSelect_Sub_Header_MachineType_02' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, WBP_MachineSelect_Sub_Header_MachineType_03) == 0x0008A8, "Member 'UWBP_GadgetCustom_Window_C::WBP_MachineSelect_Sub_Header_MachineType_03' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, WBP_MachineSelect_Sub_Header_MachineType_04) == 0x0008B0, "Member 'UWBP_GadgetCustom_Window_C::WBP_MachineSelect_Sub_Header_MachineType_04' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, WBP_MachineSelect_Sub_Header_MachineType_05) == 0x0008B8, "Member 'UWBP_GadgetCustom_Window_C::WBP_MachineSelect_Sub_Header_MachineType_05' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, WBP_MachineSelect_Sub_Header_MachineType_06) == 0x0008C0, "Member 'UWBP_GadgetCustom_Window_C::WBP_MachineSelect_Sub_Header_MachineType_06' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, WBP_MachineSelect_Sub_Header_MachineType_07) == 0x0008C8, "Member 'UWBP_GadgetCustom_Window_C::WBP_MachineSelect_Sub_Header_MachineType_07' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, WBP_MachineSelect_Sub_Ready) == 0x0008D0, "Member 'UWBP_GadgetCustom_Window_C::WBP_MachineSelect_Sub_Ready' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, Mode) == 0x0008D8, "Member 'UWBP_GadgetCustom_Window_C::Mode' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, Array_Index) == 0x0008DC, "Member 'UWBP_GadgetCustom_Window_C::Array_Index' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, Margin_0) == 0x0008E0, "Member 'UWBP_GadgetCustom_Window_C::Margin_0' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, Margin_1) == 0x0008F0, "Member 'UWBP_GadgetCustom_Window_C::Margin_1' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, Margin_2) == 0x000900, "Member 'UWBP_GadgetCustom_Window_C::Margin_2' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, Margin_3) == 0x000910, "Member 'UWBP_GadgetCustom_Window_C::Margin_3' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, Margin_4) == 0x000920, "Member 'UWBP_GadgetCustom_Window_C::Margin_4' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, Margin_5) == 0x000930, "Member 'UWBP_GadgetCustom_Window_C::Margin_5' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, Margin_6) == 0x000940, "Member 'UWBP_GadgetCustom_Window_C::Margin_6' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, Transform_0) == 0x000950, "Member 'UWBP_GadgetCustom_Window_C::Transform_0' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, Decided) == 0x000988, "Member 'UWBP_GadgetCustom_Window_C::Decided' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, OnPadFaceLeft) == 0x000990, "Member 'UWBP_GadgetCustom_Window_C::OnPadFaceLeft' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, OnPadFaceUp) == 0x0009A0, "Member 'UWBP_GadgetCustom_Window_C::OnPadFaceUp' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, OnRightShoulder) == 0x0009B0, "Member 'UWBP_GadgetCustom_Window_C::OnRightShoulder' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, AllDecided) == 0x0009C0, "Member 'UWBP_GadgetCustom_Window_C::AllDecided' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, OnLeftShoulder) == 0x0009C8, "Member 'UWBP_GadgetCustom_Window_C::OnLeftShoulder' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, OnSpecial) == 0x0009D8, "Member 'UWBP_GadgetCustom_Window_C::OnSpecial' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, GadgetCategoryHiddenBox) == 0x0009E8, "Member 'UWBP_GadgetCustom_Window_C::GadgetCategoryHiddenBox' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, CurrentGadgetCategory) == 0x0009F8, "Member 'UWBP_GadgetCustom_Window_C::CurrentGadgetCategory' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Window_C, LastCallDir) == 0x0009F9, "Member 'UWBP_GadgetCustom_Window_C::LastCallDir' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GadgetCustom_Window_C;
 
 }
 

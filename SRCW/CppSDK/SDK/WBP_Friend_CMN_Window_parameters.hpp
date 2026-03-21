@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "UnionUI_structs.hpp"
-#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
-#include "SlateCore_structs.hpp"
+#include "UNION_structs.hpp"
 #include "UMG_structs.hpp"
+#include "UnionUI_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -29,10 +29,7 @@ public:
 	EFriendListCategory                           InCategory;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bInDataCommunicationDisplay;                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_CMN_Window_C_ChangeCategoryDisplay) == 0x000001, "Wrong alignment on WBP_Friend_CMN_Window_C_ChangeCategoryDisplay");
-static_assert(sizeof(WBP_Friend_CMN_Window_C_ChangeCategoryDisplay) == 0x000002, "Wrong size on WBP_Friend_CMN_Window_C_ChangeCategoryDisplay");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ChangeCategoryDisplay, InCategory) == 0x000000, "Member 'WBP_Friend_CMN_Window_C_ChangeCategoryDisplay::InCategory' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ChangeCategoryDisplay, bInDataCommunicationDisplay) == 0x000001, "Member 'WBP_Friend_CMN_Window_C_ChangeCategoryDisplay::bInDataCommunicationDisplay' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_CMN_Window_C_ChangeCategoryDisplay;
 
 // Function WBP_Friend_CMN_Window.WBP_Friend_CMN_Window_C.ChangeTabWidgetCategory
 // 0x0050 (0x0050 - 0x0000)
@@ -58,21 +55,7 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_CMN_Window_C_ChangeTabWidgetCategory) == 0x000008, "Wrong alignment on WBP_Friend_CMN_Window_C_ChangeTabWidgetCategory");
-static_assert(sizeof(WBP_Friend_CMN_Window_C_ChangeTabWidgetCategory) == 0x000050, "Wrong size on WBP_Friend_CMN_Window_C_ChangeTabWidgetCategory");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ChangeTabWidgetCategory, InCategory) == 0x000000, "Member 'WBP_Friend_CMN_Window_C_ChangeTabWidgetCategory::InCategory' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ChangeTabWidgetCategory, Temp_int_Array_Index_Variable) == 0x000004, "Member 'WBP_Friend_CMN_Window_C_ChangeTabWidgetCategory::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ChangeTabWidgetCategory, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000008, "Member 'WBP_Friend_CMN_Window_C_ChangeTabWidgetCategory::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ChangeTabWidgetCategory, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_Friend_CMN_Window_C_ChangeTabWidgetCategory::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ChangeTabWidgetCategory, Temp_int_Loop_Counter_Variable) == 0x000010, "Member 'WBP_Friend_CMN_Window_C_ChangeTabWidgetCategory::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ChangeTabWidgetCategory, CallFunc_GetIcons_ReturnValue) == 0x000018, "Member 'WBP_Friend_CMN_Window_C_ChangeTabWidgetCategory::CallFunc_GetIcons_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ChangeTabWidgetCategory, CallFunc_Add_IntInt_ReturnValue) == 0x000028, "Member 'WBP_Friend_CMN_Window_C_ChangeTabWidgetCategory::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ChangeTabWidgetCategory, CallFunc_Array_Get_Item) == 0x000030, "Member 'WBP_Friend_CMN_Window_C_ChangeTabWidgetCategory::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ChangeTabWidgetCategory, K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Tab_Btn) == 0x000038, "Member 'WBP_Friend_CMN_Window_C_ChangeTabWidgetCategory::K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Tab_Btn' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ChangeTabWidgetCategory, K2Node_DynamicCast_bSuccess) == 0x000040, "Member 'WBP_Friend_CMN_Window_C_ChangeTabWidgetCategory::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ChangeTabWidgetCategory, CallFunc_Array_Length_ReturnValue) == 0x000044, "Member 'WBP_Friend_CMN_Window_C_ChangeTabWidgetCategory::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ChangeTabWidgetCategory, CallFunc_Less_IntInt_ReturnValue) == 0x000048, "Member 'WBP_Friend_CMN_Window_C_ChangeTabWidgetCategory::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ChangeTabWidgetCategory, CallFunc_IsVisible_ReturnValue) == 0x000049, "Member 'WBP_Friend_CMN_Window_C_ChangeTabWidgetCategory::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_CMN_Window_C_ChangeTabWidgetCategory;
 
 // Function WBP_Friend_CMN_Window.WBP_Friend_CMN_Window_C.ClearContentsWidgetListPlayerInfo
 // 0x0001 (0x0001 - 0x0000)
@@ -81,9 +64,7 @@ struct WBP_Friend_CMN_Window_C_ClearContentsWidgetListPlayerInfo final
 public:
 	EFriendListCategory                           InCategory;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_CMN_Window_C_ClearContentsWidgetListPlayerInfo) == 0x000001, "Wrong alignment on WBP_Friend_CMN_Window_C_ClearContentsWidgetListPlayerInfo");
-static_assert(sizeof(WBP_Friend_CMN_Window_C_ClearContentsWidgetListPlayerInfo) == 0x000001, "Wrong size on WBP_Friend_CMN_Window_C_ClearContentsWidgetListPlayerInfo");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ClearContentsWidgetListPlayerInfo, InCategory) == 0x000000, "Member 'WBP_Friend_CMN_Window_C_ClearContentsWidgetListPlayerInfo::InCategory' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_CMN_Window_C_ClearContentsWidgetListPlayerInfo;
 
 // Function WBP_Friend_CMN_Window.WBP_Friend_CMN_Window_C.ExecuteUbergraph_WBP_Friend_CMN_Window
 // 0x04E0 (0x04E0 - 0x0000)
@@ -278,158 +259,7 @@ public:
 	int32                                         Temp_int_Variable_6;                               // 0x04D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_Select_Default_3;                           // 0x04D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window) == 0x000008, "Wrong alignment on WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window");
-static_assert(sizeof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window) == 0x0004E0, "Wrong size on WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, EntryPoint) == 0x000000, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_GetCurrentCategory_ReturnValue) == 0x000004, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_GetCurrentCategory_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_SwitchEnum_CmpSuccess) == 0x000005, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_Event_InCategory_1) == 0x000006, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_Event_InCategory_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_Event_bInDataCommunicationDisplay) == 0x000007, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_Event_bInDataCommunicationDisplay' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_GetParentCategory_ReturnValue) == 0x000008, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_GetParentCategory_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_CustomEvent_InCategory_1) == 0x000009, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_CustomEvent_InCategory_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, Temp_int_Loop_Counter_Variable) == 0x000010, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, Temp_int_Array_Index_Variable_1) == 0x000014, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_CustomEvent_InCategory) == 0x00001C, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_CustomEvent_InCategory' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_SwitchEnum_CmpSuccess_1) == 0x00001D, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, Temp_int_Variable) == 0x000020, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_CustomEvent_Object_3) == 0x000028, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_CustomEvent_Object_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_GetInputEnable_ReturnValue) == 0x000030, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_GetInputEnable_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_GetInputEnable_ReturnValue_1) == 0x000031, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_GetInputEnable_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_CreateDelegate_OutputDelegate) == 0x000034, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, Temp_int_Loop_Counter_Variable_1) == 0x000044, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_CustomEvent_Object_2) == 0x000048, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_CustomEvent_Object_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_Add_IntInt_ReturnValue_1) == 0x000050, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_CreateDelegate_OutputDelegate_1) == 0x000054, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, Temp_int_Array_Index_Variable_2) == 0x000064, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_CustomEvent_Object_1) == 0x000068, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_CustomEvent_Object_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_CreateDelegate_OutputDelegate_2) == 0x000070, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_Event_ListPlayerInfo_1) == 0x000080, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_Event_ListPlayerInfo_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_Event_InDataError_2) == 0x000090, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_Event_InDataError_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, Temp_byte_Variable) == 0x000091, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_GetOwningPlayer_ReturnValue) == 0x000098, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_DynamicCast_AsApp_Player_Controller) == 0x0000A0, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_DynamicCast_bSuccess) == 0x0000A8, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_GetOwningPlayer_ReturnValue_1) == 0x0000B0, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_GetOwningPlayer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_DynamicCast_AsApp_Player_Controller_1) == 0x0000B8, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_DynamicCast_AsApp_Player_Controller_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_DynamicCast_bSuccess_1) == 0x0000C0, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_Event_InListPlayerInfo) == 0x0000C8, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_Event_InListPlayerInfo' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_GetCurrentCategory_ReturnValue_1) == 0x0001B8, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_GetCurrentCategory_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_SwitchEnum_CmpSuccess_2) == 0x0001B9, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_SwitchEnum_CmpSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_Conv_StringToText_ReturnValue) == 0x0001C0, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_IsValid_ReturnValue) == 0x0001D0, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_Event_InUserSearchData_1) == 0x0001D8, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_Event_InUserSearchData_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_GetCurrentCategory_ReturnValue_2) == 0x0001E8, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_GetCurrentCategory_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_SwitchEnum_CmpSuccess_3) == 0x0001E9, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_SwitchEnum_CmpSuccess_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_GetCurrentCategory_ReturnValue_3) == 0x0001EA, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_GetCurrentCategory_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_Event_InCommandType) == 0x0001EB, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_Event_InCommandType' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_GetCurrentCategory_ReturnValue_4) == 0x0001EC, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_GetCurrentCategory_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_SwitchEnum_CmpSuccess_4) == 0x0001ED, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_SwitchEnum_CmpSuccess_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, Temp_byte_Variable_1) == 0x0001EE, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_Event_ListPlayerInfo) == 0x0001F0, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_Event_ListPlayerInfo' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_Event_InDataError_1) == 0x000200, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_Event_InDataError_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, Temp_text_Variable) == 0x000208, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_Event_PlayerController) == 0x000218, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_Event_PlayerController' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_GetCurrentCategory_ReturnValue_5) == 0x000220, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_GetCurrentCategory_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, Temp_text_Variable_1) == 0x000228, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::Temp_text_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_Event_InShortLobbyId) == 0x000238, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_Event_InShortLobbyId' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_Event_bInSuccess) == 0x000248, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_Event_bInSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_GetPlatformGroup_ReturnValue) == 0x000249, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_GetPlatformGroup_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_Event_InUserSearchData) == 0x000250, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_Event_InUserSearchData' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_Event_InLobbyIdData) == 0x000260, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_Event_InLobbyIdData' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_Event_InLobbyType) == 0x000270, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_Event_InLobbyType' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_Event_InCategory) == 0x000271, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_Event_InCategory' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_SwitchEnum_CmpSuccess_5) == 0x000272, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_SwitchEnum_CmpSuccess_5' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_SoundPlay_ReturnValue) == 0x000274, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_PlayAnimation_ReturnValue) == 0x000278, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000280, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, Temp_text_Variable_2) == 0x000288, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::Temp_text_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, Temp_text_Variable_3) == 0x000298, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::Temp_text_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_MakeLiteralText_ReturnValue) == 0x0002A8, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, Temp_text_Variable_4) == 0x0002B8, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::Temp_text_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, Temp_text_Variable_5) == 0x0002C8, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::Temp_text_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, Temp_text_Variable_6) == 0x0002D8, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::Temp_text_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, Temp_text_Variable_7) == 0x0002E8, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::Temp_text_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_GetCurrentCategory_ReturnValue_6) == 0x0002F8, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_GetCurrentCategory_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_SwitchEnum_CmpSuccess_6) == 0x0002F9, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_SwitchEnum_CmpSuccess_6' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_GetCurrentCategory_ReturnValue_7) == 0x0002FA, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_GetCurrentCategory_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0002FB, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, Temp_byte_Variable_2) == 0x0002FC, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, Temp_byte_Variable_3) == 0x0002FD, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_IsValid_ReturnValue_1) == 0x0002FE, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_Select_Default) == 0x000300, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_UnregisterSingleSubMenu_ReturnValue) == 0x000308, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_UnregisterSingleSubMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_GetCurrentCategory_ReturnValue_8) == 0x000309, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_GetCurrentCategory_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_GetParentCategory_ReturnValue_1) == 0x00030A, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_GetParentCategory_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_IsValid_ReturnValue_2) == 0x00030B, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x00030C, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_Event_InOnlineSettingData) == 0x000310, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_Event_InOnlineSettingData' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_Event_InDataError) == 0x000320, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_Event_InDataError' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_GetCurrentCategory_ReturnValue_9) == 0x000321, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_GetCurrentCategory_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_GetNextMoveCategory_ReturnValue) == 0x000322, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_GetNextMoveCategory_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x000323, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_RequestOnlineSettingSave_ReturnValue) == 0x000324, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_RequestOnlineSettingSave_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_Event_InIconTexture) == 0x000328, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_Event_InIconTexture' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_Event_InBgColor) == 0x000350, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_Event_InBgColor' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_RequestOnlineSettingSave_ReturnValue_1) == 0x000360, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_RequestOnlineSettingSave_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_GetCurrentCategory_ReturnValue_10) == 0x000361, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_GetCurrentCategory_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_SwitchEnum_CmpSuccess_7) == 0x000362, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_SwitchEnum_CmpSuccess_7' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_Event_PrevWidgetCommandType) == 0x000363, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_Event_PrevWidgetCommandType' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_SpawnObject_ReturnValue) == 0x000368, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_SoundPlay_ReturnValue_1) == 0x000370, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_GetCurrentCategory_ReturnValue_11) == 0x000374, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_GetCurrentCategory_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_SwitchEnum_CmpSuccess_8) == 0x000375, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_SwitchEnum_CmpSuccess_8' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, Temp_int_Variable_1) == 0x000378, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, Temp_int_Variable_2) == 0x00037C, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_CreateDelegate_OutputDelegate_3) == 0x000380, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_CustomEvent_Object) == 0x000390, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_CustomEvent_Object' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_GetCurrentCategory_ReturnValue_12) == 0x000398, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_GetCurrentCategory_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_EqualEqual_ByteByte_ReturnValue_3) == 0x000399, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_EqualEqual_ByteByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_IsValid_ReturnValue_3) == 0x00039A, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_GetPlatform_ReturnValue) == 0x00039B, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_GetPlatform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_Select_Default_1) == 0x0003A0, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_GetCurrentCategory_ReturnValue_13) == 0x0003B0, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_GetCurrentCategory_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_GetTerminologyTextByText_ReturnValue) == 0x0003B8, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_GetTerminologyTextByText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_Event_bInEnanle) == 0x0003C8, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_Event_bInEnanle' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_Select_Default_2) == 0x0003D0, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, Temp_int_Variable_3) == 0x0003D8, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_CreateDelegate_OutputDelegate_4) == 0x0003DC, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_GetIcons_ReturnValue) == 0x0003F0, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_GetIcons_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_CustomEvent_InTabID) == 0x000400, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_CustomEvent_InTabID' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_Array_Get_Item) == 0x000408, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_TabIDToCategory_ReturnValue) == 0x000410, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_TabIDToCategory_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Tab_Btn) == 0x000418, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Tab_Btn' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_DynamicCast_bSuccess_2) == 0x000420, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_RequestOnlineSettingSave_ReturnValue_2) == 0x000421, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_RequestOnlineSettingSave_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_Array_Length_ReturnValue) == 0x000424, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_GetInputEnable_ReturnValue_2) == 0x000428, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_GetInputEnable_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_SoundPlay_ReturnValue_2) == 0x00042C, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_SoundPlay_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, Temp_int_Variable_4) == 0x000430, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_GetOwningPlayer_ReturnValue_2) == 0x000438, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_GetOwningPlayer_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_DynamicCast_AsApp_Player_Controller_2) == 0x000440, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_DynamicCast_AsApp_Player_Controller_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_DynamicCast_bSuccess_3) == 0x000448, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, Temp_int_Variable_5) == 0x00044C, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::Temp_int_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_GetRegisteredSubMenu_ReturnValue) == 0x000450, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_GetRegisteredSubMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_Array_Contains_ReturnValue) == 0x000460, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_GetIcons_ReturnValue_1) == 0x000468, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_GetIcons_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_Array_Get_Item_1) == 0x000478, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_GetIcons_ReturnValue_2) == 0x000480, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_GetIcons_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Tab_Btn_1) == 0x000490, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Tab_Btn_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_DynamicCast_bSuccess_4) == 0x000498, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_Array_Get_Item_2) == 0x0004A0, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Tab_Btn_2) == 0x0004A8, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Tab_Btn_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_DynamicCast_bSuccess_5) == 0x0004B0, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_Array_Length_ReturnValue_1) == 0x0004B4, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_Less_IntInt_ReturnValue) == 0x0004B8, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_Array_Length_ReturnValue_2) == 0x0004BC, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_Less_IntInt_ReturnValue_1) == 0x0004C0, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, Temp_int_Loop_Counter_Variable_2) == 0x0004C4, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_Less_IntInt_ReturnValue_2) == 0x0004C8, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, CallFunc_Add_IntInt_ReturnValue_2) == 0x0004CC, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_Event_Param) == 0x0004D0, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_Event_Param' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, Temp_int_Variable_6) == 0x0004D4, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::Temp_int_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window, K2Node_Select_Default_3) == 0x0004D8, "Member 'WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window::K2Node_Select_Default_3' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_CMN_Window_C_ExecuteUbergraph_WBP_Friend_CMN_Window;
 
 // Function WBP_Friend_CMN_Window.WBP_Friend_CMN_Window_C.ListDirectionEvent
 // 0x0158 (0x0158 - 0x0000)
@@ -516,73 +346,7 @@ public:
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue_2;            // 0x0148(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue_3;            // 0x0150(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_CMN_Window_C_ListDirectionEvent) == 0x000008, "Wrong alignment on WBP_Friend_CMN_Window_C_ListDirectionEvent");
-static_assert(sizeof(WBP_Friend_CMN_Window_C_ListDirectionEvent) == 0x000158, "Wrong size on WBP_Friend_CMN_Window_C_ListDirectionEvent");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, Direction) == 0x000000, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::Direction' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, Button) == 0x000008, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::Button' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, PlateWidgetArray) == 0x000010, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::PlateWidgetArray' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CurrentListCnt) == 0x000020, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CurrentListCnt' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, NextListCnt) == 0x000024, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::NextListCnt' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, K2Node_DynamicCast_AsWBP_Friend_Sub_Player_Plate) == 0x000028, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::K2Node_DynamicCast_AsWBP_Friend_Sub_Player_Plate' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, K2Node_SwitchEnum_CmpSuccess) == 0x000031, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_IsValid_ReturnValue) == 0x000032, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_Array_Get_Item) == 0x000038, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_Array_Find_ReturnValue) == 0x000040, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000044, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_Array_Get_Item_1) == 0x000048, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_GetMainWidget_OutMainWidget) == 0x000050, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_GetMainWidget_OutMainWidget' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000058, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_Array_Get_Item_2) == 0x000060, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_Array_Get_Item_3) == 0x000068, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000070, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_Array_IsValidIndex_ReturnValue_1) == 0x000071, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_Array_IsValidIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_Array_Get_Item_4) == 0x000078, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_GetMainWidget_OutMainWidget_1) == 0x000080, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_GetMainWidget_OutMainWidget_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_Subtract_IntInt_ReturnValue) == 0x000088, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_GetOwningPlayer_ReturnValue) == 0x000090, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000098, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x00009C, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_Array_Get_Item_5) == 0x0000A0, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_Array_Get_Item_5' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_Array_Get_Item_6) == 0x0000A8, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_Array_Get_Item_6' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x0000B0, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, Temp_int_Variable) == 0x0000B4, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_Array_IsValidIndex_ReturnValue_2) == 0x0000B8, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_Array_IsValidIndex_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_Array_LastIndex_ReturnValue) == 0x0000BC, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_Array_Get_Item_7) == 0x0000C0, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_Array_Get_Item_7' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_Subtract_IntInt_ReturnValue_2) == 0x0000C8, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_Subtract_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x0000CC, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_Add_IntInt_ReturnValue) == 0x0000D0, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, Temp_int_Variable_1) == 0x0000D4, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, Temp_int_Variable_2) == 0x0000D8, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000DC, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, Temp_int_Variable_3) == 0x0000E0, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_Subtract_IntInt_ReturnValue_3) == 0x0000E4, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_Subtract_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_LessEqual_IntInt_ReturnValue_2) == 0x0000E8, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_LessEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_Subtract_IntInt_ReturnValue_4) == 0x0000EC, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_Subtract_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_LessEqual_IntInt_ReturnValue_3) == 0x0000F0, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_LessEqual_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_Subtract_IntInt_ReturnValue_5) == 0x0000F4, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_Subtract_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_Array_Get_Item_8) == 0x0000F8, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_Array_Get_Item_8' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_Array_Get_Item_9) == 0x000100, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_Array_Get_Item_9' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_GetMainWidget_OutMainWidget_2) == 0x000108, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_GetMainWidget_OutMainWidget_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_GetMainWidget_OutMainWidget_3) == 0x000110, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_GetMainWidget_OutMainWidget_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_Array_Get_Item_10) == 0x000118, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_Array_Get_Item_10' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_GreaterEqual_IntInt_ReturnValue_1) == 0x000120, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_GreaterEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_Not_PreBool_ReturnValue) == 0x000121, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x000122, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_Array_IsValidIndex_ReturnValue_3) == 0x000123, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_Array_IsValidIndex_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_Array_IsValidIndex_ReturnValue_4) == 0x000124, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_Array_IsValidIndex_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_Array_Get_Item_11) == 0x000128, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_Array_Get_Item_11' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_LessEqual_IntInt_ReturnValue_4) == 0x000130, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_LessEqual_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_Not_PreBool_ReturnValue_1) == 0x000131, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_EqualEqual_ByteByte_ReturnValue_3) == 0x000132, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_EqualEqual_ByteByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_Array_IsValidIndex_ReturnValue_5) == 0x000133, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_Array_IsValidIndex_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_Array_IsValidIndex_ReturnValue_6) == 0x000134, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_Array_IsValidIndex_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_Subtract_IntInt_ReturnValue_6) == 0x000138, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_Subtract_IntInt_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_Add_IntInt_ReturnValue_2) == 0x00013C, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_GetOwningPlayer_ReturnValue_1) == 0x000140, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_GetOwningPlayer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_GetOwningPlayer_ReturnValue_2) == 0x000148, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_GetOwningPlayer_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_ListDirectionEvent, CallFunc_GetOwningPlayer_ReturnValue_3) == 0x000150, "Member 'WBP_Friend_CMN_Window_C_ListDirectionEvent::CallFunc_GetOwningPlayer_ReturnValue_3' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_CMN_Window_C_ListDirectionEvent;
 
 // Function WBP_Friend_CMN_Window.WBP_Friend_CMN_Window_C.OnBackKeyPressedEvent
 // 0x0008 (0x0008 - 0x0000)
@@ -591,9 +355,7 @@ struct WBP_Friend_CMN_Window_C_OnBackKeyPressedEvent final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_CMN_Window_C_OnBackKeyPressedEvent) == 0x000008, "Wrong alignment on WBP_Friend_CMN_Window_C_OnBackKeyPressedEvent");
-static_assert(sizeof(WBP_Friend_CMN_Window_C_OnBackKeyPressedEvent) == 0x000008, "Wrong size on WBP_Friend_CMN_Window_C_OnBackKeyPressedEvent");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_OnBackKeyPressedEvent, Object) == 0x000000, "Member 'WBP_Friend_CMN_Window_C_OnBackKeyPressedEvent::Object' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_CMN_Window_C_OnBackKeyPressedEvent;
 
 // Function WBP_Friend_CMN_Window.WBP_Friend_CMN_Window_C.OnFaceKeyPressedEvent
 // 0x0008 (0x0008 - 0x0000)
@@ -602,9 +364,7 @@ struct WBP_Friend_CMN_Window_C_OnFaceKeyPressedEvent final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_CMN_Window_C_OnFaceKeyPressedEvent) == 0x000008, "Wrong alignment on WBP_Friend_CMN_Window_C_OnFaceKeyPressedEvent");
-static_assert(sizeof(WBP_Friend_CMN_Window_C_OnFaceKeyPressedEvent) == 0x000008, "Wrong size on WBP_Friend_CMN_Window_C_OnFaceKeyPressedEvent");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_OnFaceKeyPressedEvent, Object) == 0x000000, "Member 'WBP_Friend_CMN_Window_C_OnFaceKeyPressedEvent::Object' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_CMN_Window_C_OnFaceKeyPressedEvent;
 
 // Function WBP_Friend_CMN_Window.WBP_Friend_CMN_Window_C.OnFocusReceived
 // 0x01C0 (0x01C0 - 0x0000)
@@ -619,14 +379,7 @@ public:
 	uint8                                         Pad_1B4[0x4];                                      // 0x01B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x01B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_CMN_Window_C_OnFocusReceived) == 0x000008, "Wrong alignment on WBP_Friend_CMN_Window_C_OnFocusReceived");
-static_assert(sizeof(WBP_Friend_CMN_Window_C_OnFocusReceived) == 0x0001C0, "Wrong size on WBP_Friend_CMN_Window_C_OnFocusReceived");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'WBP_Friend_CMN_Window_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'WBP_Friend_CMN_Window_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'WBP_Friend_CMN_Window_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_OnFocusReceived, K2Node_MakeStruct_EventReply) == 0x0000F8, "Member 'WBP_Friend_CMN_Window_C_OnFocusReceived::K2Node_MakeStruct_EventReply' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_OnFocusReceived, CallFunc_GetUserIndexByFocusEvent_ReturnValue) == 0x0001B0, "Member 'WBP_Friend_CMN_Window_C_OnFocusReceived::CallFunc_GetUserIndexByFocusEvent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_OnFocusReceived, CallFunc_GetPlayerController_ReturnValue) == 0x0001B8, "Member 'WBP_Friend_CMN_Window_C_OnFocusReceived::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_CMN_Window_C_OnFocusReceived;
 
 // Function WBP_Friend_CMN_Window.WBP_Friend_CMN_Window_C.OnFriendListCommandSuccess
 // 0x0001 (0x0001 - 0x0000)
@@ -635,9 +388,7 @@ struct WBP_Friend_CMN_Window_C_OnFriendListCommandSuccess final
 public:
 	EFriendListCommandType                        InCommandType;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_CMN_Window_C_OnFriendListCommandSuccess) == 0x000001, "Wrong alignment on WBP_Friend_CMN_Window_C_OnFriendListCommandSuccess");
-static_assert(sizeof(WBP_Friend_CMN_Window_C_OnFriendListCommandSuccess) == 0x000001, "Wrong size on WBP_Friend_CMN_Window_C_OnFriendListCommandSuccess");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_OnFriendListCommandSuccess, InCommandType) == 0x000000, "Member 'WBP_Friend_CMN_Window_C_OnFriendListCommandSuccess::InCommandType' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_CMN_Window_C_OnFriendListCommandSuccess;
 
 // Function WBP_Friend_CMN_Window.WBP_Friend_CMN_Window_C.OnLeftShoulderKeyPressedEvent
 // 0x0008 (0x0008 - 0x0000)
@@ -646,9 +397,7 @@ struct WBP_Friend_CMN_Window_C_OnLeftShoulderKeyPressedEvent final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_CMN_Window_C_OnLeftShoulderKeyPressedEvent) == 0x000008, "Wrong alignment on WBP_Friend_CMN_Window_C_OnLeftShoulderKeyPressedEvent");
-static_assert(sizeof(WBP_Friend_CMN_Window_C_OnLeftShoulderKeyPressedEvent) == 0x000008, "Wrong size on WBP_Friend_CMN_Window_C_OnLeftShoulderKeyPressedEvent");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_OnLeftShoulderKeyPressedEvent, Object) == 0x000000, "Member 'WBP_Friend_CMN_Window_C_OnLeftShoulderKeyPressedEvent::Object' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_CMN_Window_C_OnLeftShoulderKeyPressedEvent;
 
 // Function WBP_Friend_CMN_Window.WBP_Friend_CMN_Window_C.OnLobbyIdSearchSuccess
 // 0x0028 (0x0028 - 0x0000)
@@ -659,11 +408,7 @@ public:
 	TArray<struct FLobbyId>                       InLobbyIdData;                                     // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	ELobbyType                                    InLobbyType;                                       // 0x0020(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_CMN_Window_C_OnLobbyIdSearchSuccess) == 0x000008, "Wrong alignment on WBP_Friend_CMN_Window_C_OnLobbyIdSearchSuccess");
-static_assert(sizeof(WBP_Friend_CMN_Window_C_OnLobbyIdSearchSuccess) == 0x000028, "Wrong size on WBP_Friend_CMN_Window_C_OnLobbyIdSearchSuccess");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_OnLobbyIdSearchSuccess, InUserSearchData) == 0x000000, "Member 'WBP_Friend_CMN_Window_C_OnLobbyIdSearchSuccess::InUserSearchData' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_OnLobbyIdSearchSuccess, InLobbyIdData) == 0x000010, "Member 'WBP_Friend_CMN_Window_C_OnLobbyIdSearchSuccess::InLobbyIdData' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_OnLobbyIdSearchSuccess, InLobbyType) == 0x000020, "Member 'WBP_Friend_CMN_Window_C_OnLobbyIdSearchSuccess::InLobbyType' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_CMN_Window_C_OnLobbyIdSearchSuccess;
 
 // Function WBP_Friend_CMN_Window.WBP_Friend_CMN_Window_C.OnRightShoulderKeyPressedEvent
 // 0x0008 (0x0008 - 0x0000)
@@ -672,9 +417,7 @@ struct WBP_Friend_CMN_Window_C_OnRightShoulderKeyPressedEvent final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_CMN_Window_C_OnRightShoulderKeyPressedEvent) == 0x000008, "Wrong alignment on WBP_Friend_CMN_Window_C_OnRightShoulderKeyPressedEvent");
-static_assert(sizeof(WBP_Friend_CMN_Window_C_OnRightShoulderKeyPressedEvent) == 0x000008, "Wrong size on WBP_Friend_CMN_Window_C_OnRightShoulderKeyPressedEvent");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_OnRightShoulderKeyPressedEvent, Object) == 0x000000, "Member 'WBP_Friend_CMN_Window_C_OnRightShoulderKeyPressedEvent::Object' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_CMN_Window_C_OnRightShoulderKeyPressedEvent;
 
 // Function WBP_Friend_CMN_Window.WBP_Friend_CMN_Window_C.OnSubWidgetDisplayEnd
 // 0x0001 (0x0001 - 0x0000)
@@ -683,9 +426,7 @@ struct WBP_Friend_CMN_Window_C_OnSubWidgetDisplayEnd final
 public:
 	EFriendListCommandType                        PrevWidgetCommandType;                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_CMN_Window_C_OnSubWidgetDisplayEnd) == 0x000001, "Wrong alignment on WBP_Friend_CMN_Window_C_OnSubWidgetDisplayEnd");
-static_assert(sizeof(WBP_Friend_CMN_Window_C_OnSubWidgetDisplayEnd) == 0x000001, "Wrong size on WBP_Friend_CMN_Window_C_OnSubWidgetDisplayEnd");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_OnSubWidgetDisplayEnd, PrevWidgetCommandType) == 0x000000, "Member 'WBP_Friend_CMN_Window_C_OnSubWidgetDisplayEnd::PrevWidgetCommandType' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_CMN_Window_C_OnSubWidgetDisplayEnd;
 
 // Function WBP_Friend_CMN_Window.WBP_Friend_CMN_Window_C.OnTabClicked
 // 0x0001 (0x0001 - 0x0000)
@@ -694,9 +435,7 @@ struct WBP_Friend_CMN_Window_C_OnTabClicked final
 public:
 	EMachineCustomizeTabID                        InTabID;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_CMN_Window_C_OnTabClicked) == 0x000001, "Wrong alignment on WBP_Friend_CMN_Window_C_OnTabClicked");
-static_assert(sizeof(WBP_Friend_CMN_Window_C_OnTabClicked) == 0x000001, "Wrong size on WBP_Friend_CMN_Window_C_OnTabClicked");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_OnTabClicked, InTabID) == 0x000000, "Member 'WBP_Friend_CMN_Window_C_OnTabClicked::InTabID' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_CMN_Window_C_OnTabClicked;
 
 // Function WBP_Friend_CMN_Window.WBP_Friend_CMN_Window_C.OnUserSearchSuccess
 // 0x0010 (0x0010 - 0x0000)
@@ -705,9 +444,7 @@ struct WBP_Friend_CMN_Window_C_OnUserSearchSuccess final
 public:
 	TArray<struct FCommon_UserSearchData>         InUserSearchData;                                  // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_Friend_CMN_Window_C_OnUserSearchSuccess) == 0x000008, "Wrong alignment on WBP_Friend_CMN_Window_C_OnUserSearchSuccess");
-static_assert(sizeof(WBP_Friend_CMN_Window_C_OnUserSearchSuccess) == 0x000010, "Wrong size on WBP_Friend_CMN_Window_C_OnUserSearchSuccess");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_OnUserSearchSuccess, InUserSearchData) == 0x000000, "Member 'WBP_Friend_CMN_Window_C_OnUserSearchSuccess::InUserSearchData' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_CMN_Window_C_OnUserSearchSuccess;
 
 // Function WBP_Friend_CMN_Window.WBP_Friend_CMN_Window_C.SetActiveWidgetIndexByCategory
 // 0x0001 (0x0001 - 0x0000)
@@ -716,9 +453,7 @@ struct WBP_Friend_CMN_Window_C_SetActiveWidgetIndexByCategory final
 public:
 	EFriendListCategory                           InCategory;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_CMN_Window_C_SetActiveWidgetIndexByCategory) == 0x000001, "Wrong alignment on WBP_Friend_CMN_Window_C_SetActiveWidgetIndexByCategory");
-static_assert(sizeof(WBP_Friend_CMN_Window_C_SetActiveWidgetIndexByCategory) == 0x000001, "Wrong size on WBP_Friend_CMN_Window_C_SetActiveWidgetIndexByCategory");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetActiveWidgetIndexByCategory, InCategory) == 0x000000, "Member 'WBP_Friend_CMN_Window_C_SetActiveWidgetIndexByCategory::InCategory' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_CMN_Window_C_SetActiveWidgetIndexByCategory;
 
 // Function WBP_Friend_CMN_Window.WBP_Friend_CMN_Window_C.SetButtonControlEnableCurrentWidget
 // 0x0001 (0x0001 - 0x0000)
@@ -727,9 +462,7 @@ struct WBP_Friend_CMN_Window_C_SetButtonControlEnableCurrentWidget final
 public:
 	bool                                          bInEnanle;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_CMN_Window_C_SetButtonControlEnableCurrentWidget) == 0x000001, "Wrong alignment on WBP_Friend_CMN_Window_C_SetButtonControlEnableCurrentWidget");
-static_assert(sizeof(WBP_Friend_CMN_Window_C_SetButtonControlEnableCurrentWidget) == 0x000001, "Wrong size on WBP_Friend_CMN_Window_C_SetButtonControlEnableCurrentWidget");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetButtonControlEnableCurrentWidget, bInEnanle) == 0x000000, "Member 'WBP_Friend_CMN_Window_C_SetButtonControlEnableCurrentWidget::bInEnanle' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_CMN_Window_C_SetButtonControlEnableCurrentWidget;
 
 // Function WBP_Friend_CMN_Window.WBP_Friend_CMN_Window_C.SetCategoryNewIconVisible
 // 0x0008 (0x0008 - 0x0000)
@@ -741,11 +474,7 @@ public:
 	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_CMN_Window_C_SetCategoryNewIconVisible) == 0x000004, "Wrong alignment on WBP_Friend_CMN_Window_C_SetCategoryNewIconVisible");
-static_assert(sizeof(WBP_Friend_CMN_Window_C_SetCategoryNewIconVisible) == 0x000008, "Wrong size on WBP_Friend_CMN_Window_C_SetCategoryNewIconVisible");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetCategoryNewIconVisible, InCategory) == 0x000000, "Member 'WBP_Friend_CMN_Window_C_SetCategoryNewIconVisible::InCategory' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetCategoryNewIconVisible, bInVisible) == 0x000001, "Member 'WBP_Friend_CMN_Window_C_SetCategoryNewIconVisible::bInVisible' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetCategoryNewIconVisible, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000004, "Member 'WBP_Friend_CMN_Window_C_SetCategoryNewIconVisible::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_CMN_Window_C_SetCategoryNewIconVisible;
 
 // Function WBP_Friend_CMN_Window.WBP_Friend_CMN_Window_C.SetMyListPlayerInfo
 // 0x00F0 (0x00F0 - 0x0000)
@@ -754,9 +483,7 @@ struct WBP_Friend_CMN_Window_C_SetMyListPlayerInfo final
 public:
 	struct FFriendListPlayerInfo                  InListPlayerInfo;                                  // 0x0000(0x00F0)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_Friend_CMN_Window_C_SetMyListPlayerInfo) == 0x000008, "Wrong alignment on WBP_Friend_CMN_Window_C_SetMyListPlayerInfo");
-static_assert(sizeof(WBP_Friend_CMN_Window_C_SetMyListPlayerInfo) == 0x0000F0, "Wrong size on WBP_Friend_CMN_Window_C_SetMyListPlayerInfo");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetMyListPlayerInfo, InListPlayerInfo) == 0x000000, "Member 'WBP_Friend_CMN_Window_C_SetMyListPlayerInfo::InListPlayerInfo' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_CMN_Window_C_SetMyListPlayerInfo;
 
 // Function WBP_Friend_CMN_Window.WBP_Friend_CMN_Window_C.SetMyPlayerIcon
 // 0x0038 (0x0038 - 0x0000)
@@ -766,10 +493,7 @@ public:
 	TSoftObjectPtr<class UTexture2D>              InIconTexture;                                     // 0x0000(0x0028)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, UObjectWrapper, HasGetValueTypeHash)
 	struct FLinearColor                           InBgColor;                                         // 0x0028(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_CMN_Window_C_SetMyPlayerIcon) == 0x000008, "Wrong alignment on WBP_Friend_CMN_Window_C_SetMyPlayerIcon");
-static_assert(sizeof(WBP_Friend_CMN_Window_C_SetMyPlayerIcon) == 0x000038, "Wrong size on WBP_Friend_CMN_Window_C_SetMyPlayerIcon");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetMyPlayerIcon, InIconTexture) == 0x000000, "Member 'WBP_Friend_CMN_Window_C_SetMyPlayerIcon::InIconTexture' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetMyPlayerIcon, InBgColor) == 0x000028, "Member 'WBP_Friend_CMN_Window_C_SetMyPlayerIcon::InBgColor' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_CMN_Window_C_SetMyPlayerIcon;
 
 // Function WBP_Friend_CMN_Window.WBP_Friend_CMN_Window_C.SetScrollBoxVisibility
 // 0x0001 (0x0001 - 0x0000)
@@ -778,9 +502,7 @@ struct WBP_Friend_CMN_Window_C_SetScrollBoxVisibility final
 public:
 	ESlateVisibility                              Param;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_CMN_Window_C_SetScrollBoxVisibility) == 0x000001, "Wrong alignment on WBP_Friend_CMN_Window_C_SetScrollBoxVisibility");
-static_assert(sizeof(WBP_Friend_CMN_Window_C_SetScrollBoxVisibility) == 0x000001, "Wrong size on WBP_Friend_CMN_Window_C_SetScrollBoxVisibility");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetScrollBoxVisibility, Param) == 0x000000, "Member 'WBP_Friend_CMN_Window_C_SetScrollBoxVisibility::Param' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_CMN_Window_C_SetScrollBoxVisibility;
 
 // Function WBP_Friend_CMN_Window.WBP_Friend_CMN_Window_C.SetupInsideListWidget
 // 0x0001 (0x0001 - 0x0000)
@@ -789,9 +511,7 @@ struct WBP_Friend_CMN_Window_C_SetupInsideListWidget final
 public:
 	EFriendListCategory                           InCategory;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_CMN_Window_C_SetupInsideListWidget) == 0x000001, "Wrong alignment on WBP_Friend_CMN_Window_C_SetupInsideListWidget");
-static_assert(sizeof(WBP_Friend_CMN_Window_C_SetupInsideListWidget) == 0x000001, "Wrong size on WBP_Friend_CMN_Window_C_SetupInsideListWidget");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupInsideListWidget, InCategory) == 0x000000, "Member 'WBP_Friend_CMN_Window_C_SetupInsideListWidget::InCategory' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_CMN_Window_C_SetupInsideListWidget;
 
 // Function WBP_Friend_CMN_Window.WBP_Friend_CMN_Window_C.SetupTabWidget
 // 0x0168 (0x0168 - 0x0000)
@@ -846,46 +566,7 @@ public:
 	int32                                         Temp_int_Variable_1;                               // 0x015C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EMachineCustomizeTabID                        K2Node_Select_Default_2;                           // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_CMN_Window_C_SetupTabWidget) == 0x000008, "Wrong alignment on WBP_Friend_CMN_Window_C_SetupTabWidget");
-static_assert(sizeof(WBP_Friend_CMN_Window_C_SetupTabWidget) == 0x000168, "Wrong size on WBP_Friend_CMN_Window_C_SetupTabWidget");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, InPlatformType) == 0x000000, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::InPlatformType' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, Temp_text_Variable) == 0x000008, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, Temp_text_Variable_1) == 0x000018, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::Temp_text_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, Temp_text_Variable_2) == 0x000028, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::Temp_text_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, Temp_text_Variable_3) == 0x000038, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::Temp_text_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, Temp_text_Variable_4) == 0x000048, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::Temp_text_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, Temp_text_Variable_5) == 0x000058, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::Temp_text_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, Temp_int_Variable) == 0x000068, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, Temp_text_Variable_6) == 0x000070, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::Temp_text_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, Temp_text_Variable_7) == 0x000080, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::Temp_text_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, Temp_text_Variable_8) == 0x000090, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::Temp_text_Variable_8' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, Temp_text_Variable_9) == 0x0000A0, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::Temp_text_Variable_9' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, Temp_int_Array_Index_Variable) == 0x0000B0, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, Temp_int_Loop_Counter_Variable) == 0x0000B4, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0000B8, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, CallFunc_Add_IntInt_ReturnValue) == 0x0000BC, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0000C0, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, CallFunc_Subtract_IntInt_ReturnValue) == 0x0000C4, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, Temp_text_Variable_10) == 0x0000C8, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::Temp_text_Variable_10' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, CallFunc_GetPlatform_ReturnValue) == 0x0000D8, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::CallFunc_GetPlatform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, Temp_text_Variable_11) == 0x0000E0, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::Temp_text_Variable_11' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, CallFunc_GetIcons_ReturnValue) == 0x0000F0, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::CallFunc_GetIcons_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, CallFunc_Array_Get_Item) == 0x000100, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, CallFunc_Array_Length_ReturnValue) == 0x000108, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Tab_Btn) == 0x000110, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Tab_Btn' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, K2Node_DynamicCast_bSuccess) == 0x000118, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, CallFunc_Less_IntInt_ReturnValue) == 0x000119, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, Temp_byte_Variable) == 0x00011A, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, Temp_byte_Variable_1) == 0x00011B, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, K2Node_Select_Default) == 0x000120, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, Temp_byte_Variable_2) == 0x000130, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, K2Node_Select_Default_1) == 0x000138, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, CallFunc_GetTerminologyTextByText_ReturnValue) == 0x000148, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::CallFunc_GetTerminologyTextByText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, Temp_byte_Variable_3) == 0x000158, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, Temp_byte_Variable_4) == 0x000159, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, Temp_byte_Variable_5) == 0x00015A, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, Temp_int_Variable_1) == 0x00015C, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetupTabWidget, K2Node_Select_Default_2) == 0x000160, "Member 'WBP_Friend_CMN_Window_C_SetupTabWidget::K2Node_Select_Default_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_CMN_Window_C_SetupTabWidget;
 
 // Function WBP_Friend_CMN_Window.WBP_Friend_CMN_Window_C.SetWidgetFocus
 // 0x0008 (0x0008 - 0x0000)
@@ -894,9 +575,7 @@ struct WBP_Friend_CMN_Window_C_SetWidgetFocus final
 public:
 	class APlayerController*                      PlayerController;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_CMN_Window_C_SetWidgetFocus) == 0x000008, "Wrong alignment on WBP_Friend_CMN_Window_C_SetWidgetFocus");
-static_assert(sizeof(WBP_Friend_CMN_Window_C_SetWidgetFocus) == 0x000008, "Wrong size on WBP_Friend_CMN_Window_C_SetWidgetFocus");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_SetWidgetFocus, PlayerController) == 0x000000, "Member 'WBP_Friend_CMN_Window_C_SetWidgetFocus::PlayerController' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_CMN_Window_C_SetWidgetFocus;
 
 // Function WBP_Friend_CMN_Window.WBP_Friend_CMN_Window_C.TabIDToCategory
 // 0x000F (0x000F - 0x0000)
@@ -919,23 +598,7 @@ public:
 	EFriendListCategory                           Temp_byte_Variable_11;                             // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFriendListCategory                           K2Node_Select_Default;                             // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_CMN_Window_C_TabIDToCategory) == 0x000001, "Wrong alignment on WBP_Friend_CMN_Window_C_TabIDToCategory");
-static_assert(sizeof(WBP_Friend_CMN_Window_C_TabIDToCategory) == 0x00000F, "Wrong size on WBP_Friend_CMN_Window_C_TabIDToCategory");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_TabIDToCategory, Index_0) == 0x000000, "Member 'WBP_Friend_CMN_Window_C_TabIDToCategory::Index_0' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_TabIDToCategory, ReturnValue) == 0x000001, "Member 'WBP_Friend_CMN_Window_C_TabIDToCategory::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_TabIDToCategory, Temp_byte_Variable) == 0x000002, "Member 'WBP_Friend_CMN_Window_C_TabIDToCategory::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_TabIDToCategory, Temp_byte_Variable_1) == 0x000003, "Member 'WBP_Friend_CMN_Window_C_TabIDToCategory::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_TabIDToCategory, Temp_byte_Variable_2) == 0x000004, "Member 'WBP_Friend_CMN_Window_C_TabIDToCategory::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_TabIDToCategory, Temp_byte_Variable_3) == 0x000005, "Member 'WBP_Friend_CMN_Window_C_TabIDToCategory::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_TabIDToCategory, Temp_byte_Variable_4) == 0x000006, "Member 'WBP_Friend_CMN_Window_C_TabIDToCategory::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_TabIDToCategory, Temp_byte_Variable_5) == 0x000007, "Member 'WBP_Friend_CMN_Window_C_TabIDToCategory::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_TabIDToCategory, Temp_byte_Variable_6) == 0x000008, "Member 'WBP_Friend_CMN_Window_C_TabIDToCategory::Temp_byte_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_TabIDToCategory, Temp_byte_Variable_7) == 0x000009, "Member 'WBP_Friend_CMN_Window_C_TabIDToCategory::Temp_byte_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_TabIDToCategory, Temp_byte_Variable_8) == 0x00000A, "Member 'WBP_Friend_CMN_Window_C_TabIDToCategory::Temp_byte_Variable_8' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_TabIDToCategory, Temp_byte_Variable_9) == 0x00000B, "Member 'WBP_Friend_CMN_Window_C_TabIDToCategory::Temp_byte_Variable_9' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_TabIDToCategory, Temp_byte_Variable_10) == 0x00000C, "Member 'WBP_Friend_CMN_Window_C_TabIDToCategory::Temp_byte_Variable_10' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_TabIDToCategory, Temp_byte_Variable_11) == 0x00000D, "Member 'WBP_Friend_CMN_Window_C_TabIDToCategory::Temp_byte_Variable_11' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_TabIDToCategory, K2Node_Select_Default) == 0x00000E, "Member 'WBP_Friend_CMN_Window_C_TabIDToCategory::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_CMN_Window_C_TabIDToCategory;
 
 // Function WBP_Friend_CMN_Window.WBP_Friend_CMN_Window_C.UpdateFriendList
 // 0x0018 (0x0018 - 0x0000)
@@ -945,10 +608,7 @@ public:
 	TArray<struct FFriendListPlayerInfo>          ListPlayerInfo;                                    // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	bool                                          InDataError;                                       // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_CMN_Window_C_UpdateFriendList) == 0x000008, "Wrong alignment on WBP_Friend_CMN_Window_C_UpdateFriendList");
-static_assert(sizeof(WBP_Friend_CMN_Window_C_UpdateFriendList) == 0x000018, "Wrong size on WBP_Friend_CMN_Window_C_UpdateFriendList");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_UpdateFriendList, ListPlayerInfo) == 0x000000, "Member 'WBP_Friend_CMN_Window_C_UpdateFriendList::ListPlayerInfo' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_UpdateFriendList, InDataError) == 0x000010, "Member 'WBP_Friend_CMN_Window_C_UpdateFriendList::InDataError' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_CMN_Window_C_UpdateFriendList;
 
 // Function WBP_Friend_CMN_Window.WBP_Friend_CMN_Window_C.UpdateLobbyIdDisplay
 // 0x0018 (0x0018 - 0x0000)
@@ -958,10 +618,7 @@ public:
 	class FString                                 InShortLobbyId;                                    // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          bInSuccess;                                        // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_CMN_Window_C_UpdateLobbyIdDisplay) == 0x000008, "Wrong alignment on WBP_Friend_CMN_Window_C_UpdateLobbyIdDisplay");
-static_assert(sizeof(WBP_Friend_CMN_Window_C_UpdateLobbyIdDisplay) == 0x000018, "Wrong size on WBP_Friend_CMN_Window_C_UpdateLobbyIdDisplay");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_UpdateLobbyIdDisplay, InShortLobbyId) == 0x000000, "Member 'WBP_Friend_CMN_Window_C_UpdateLobbyIdDisplay::InShortLobbyId' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_UpdateLobbyIdDisplay, bInSuccess) == 0x000010, "Member 'WBP_Friend_CMN_Window_C_UpdateLobbyIdDisplay::bInSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_CMN_Window_C_UpdateLobbyIdDisplay;
 
 // Function WBP_Friend_CMN_Window.WBP_Friend_CMN_Window_C.UpdateOnlineSettingList
 // 0x0018 (0x0018 - 0x0000)
@@ -971,10 +628,7 @@ public:
 	TArray<struct FFriendListOnlineSettingData>   InOnlineSettingData;                               // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	bool                                          InDataError;                                       // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_CMN_Window_C_UpdateOnlineSettingList) == 0x000008, "Wrong alignment on WBP_Friend_CMN_Window_C_UpdateOnlineSettingList");
-static_assert(sizeof(WBP_Friend_CMN_Window_C_UpdateOnlineSettingList) == 0x000018, "Wrong size on WBP_Friend_CMN_Window_C_UpdateOnlineSettingList");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_UpdateOnlineSettingList, InOnlineSettingData) == 0x000000, "Member 'WBP_Friend_CMN_Window_C_UpdateOnlineSettingList::InOnlineSettingData' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_UpdateOnlineSettingList, InDataError) == 0x000010, "Member 'WBP_Friend_CMN_Window_C_UpdateOnlineSettingList::InDataError' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_CMN_Window_C_UpdateOnlineSettingList;
 
 // Function WBP_Friend_CMN_Window.WBP_Friend_CMN_Window_C.UpdateRecentPlayerList
 // 0x0018 (0x0018 - 0x0000)
@@ -984,10 +638,7 @@ public:
 	TArray<struct FFriendListPlayerInfo>          ListPlayerInfo;                                    // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	bool                                          InDataError;                                       // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_CMN_Window_C_UpdateRecentPlayerList) == 0x000008, "Wrong alignment on WBP_Friend_CMN_Window_C_UpdateRecentPlayerList");
-static_assert(sizeof(WBP_Friend_CMN_Window_C_UpdateRecentPlayerList) == 0x000018, "Wrong size on WBP_Friend_CMN_Window_C_UpdateRecentPlayerList");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_UpdateRecentPlayerList, ListPlayerInfo) == 0x000000, "Member 'WBP_Friend_CMN_Window_C_UpdateRecentPlayerList::ListPlayerInfo' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_CMN_Window_C_UpdateRecentPlayerList, InDataError) == 0x000010, "Member 'WBP_Friend_CMN_Window_C_UpdateRecentPlayerList::InDataError' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_CMN_Window_C_UpdateRecentPlayerList;
 
 }
 

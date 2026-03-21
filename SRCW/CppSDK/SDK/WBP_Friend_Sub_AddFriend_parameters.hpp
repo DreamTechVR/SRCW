@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "SlateCore_structs.hpp"
-#include "UMG_structs.hpp"
 #include "UnionUI_structs.hpp"
-#include "UNION_structs.hpp"
+#include "UMG_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "UNION_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -28,9 +28,7 @@ struct WBP_Friend_Sub_AddFriend_C_GetNumberInputWidget final
 public:
 	class UFriendListNumberInputWidget*           ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_AddFriend_C_GetNumberInputWidget) == 0x000008, "Wrong alignment on WBP_Friend_Sub_AddFriend_C_GetNumberInputWidget");
-static_assert(sizeof(WBP_Friend_Sub_AddFriend_C_GetNumberInputWidget) == 0x000008, "Wrong size on WBP_Friend_Sub_AddFriend_C_GetNumberInputWidget");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_GetNumberInputWidget, ReturnValue) == 0x000000, "Member 'WBP_Friend_Sub_AddFriend_C_GetNumberInputWidget::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_GetNumberInputWidget;
 
 // Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.OnFocusReceived
 // 0x01C0 (0x01C0 - 0x0000)
@@ -45,14 +43,7 @@ public:
 	uint8                                         Pad_1B4[0x4];                                      // 0x01B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x01B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_AddFriend_C_OnFocusReceived) == 0x000008, "Wrong alignment on WBP_Friend_Sub_AddFriend_C_OnFocusReceived");
-static_assert(sizeof(WBP_Friend_Sub_AddFriend_C_OnFocusReceived) == 0x0001C0, "Wrong size on WBP_Friend_Sub_AddFriend_C_OnFocusReceived");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'WBP_Friend_Sub_AddFriend_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'WBP_Friend_Sub_AddFriend_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'WBP_Friend_Sub_AddFriend_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_OnFocusReceived, K2Node_MakeStruct_EventReply) == 0x0000F8, "Member 'WBP_Friend_Sub_AddFriend_C_OnFocusReceived::K2Node_MakeStruct_EventReply' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_OnFocusReceived, CallFunc_GetUserIndexByFocusEvent_ReturnValue) == 0x0001B0, "Member 'WBP_Friend_Sub_AddFriend_C_OnFocusReceived::CallFunc_GetUserIndexByFocusEvent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_OnFocusReceived, CallFunc_GetPlayerController_ReturnValue) == 0x0001B8, "Member 'WBP_Friend_Sub_AddFriend_C_OnFocusReceived::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_OnFocusReceived;
 
 // Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.GetScrollBoxWidget
 // 0x0008 (0x0008 - 0x0000)
@@ -61,9 +52,7 @@ struct WBP_Friend_Sub_AddFriend_C_GetScrollBoxWidget final
 public:
 	class UScrollBox*                             ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_AddFriend_C_GetScrollBoxWidget) == 0x000008, "Wrong alignment on WBP_Friend_Sub_AddFriend_C_GetScrollBoxWidget");
-static_assert(sizeof(WBP_Friend_Sub_AddFriend_C_GetScrollBoxWidget) == 0x000008, "Wrong size on WBP_Friend_Sub_AddFriend_C_GetScrollBoxWidget");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_GetScrollBoxWidget, ReturnValue) == 0x000000, "Member 'WBP_Friend_Sub_AddFriend_C_GetScrollBoxWidget::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_GetScrollBoxWidget;
 
 // Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.OnListItemDecisionDown
 // 0x0008 (0x0008 - 0x0000)
@@ -72,9 +61,7 @@ struct WBP_Friend_Sub_AddFriend_C_OnListItemDecisionDown final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_AddFriend_C_OnListItemDecisionDown) == 0x000008, "Wrong alignment on WBP_Friend_Sub_AddFriend_C_OnListItemDecisionDown");
-static_assert(sizeof(WBP_Friend_Sub_AddFriend_C_OnListItemDecisionDown) == 0x000008, "Wrong size on WBP_Friend_Sub_AddFriend_C_OnListItemDecisionDown");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_OnListItemDecisionDown, Button) == 0x000000, "Member 'WBP_Friend_Sub_AddFriend_C_OnListItemDecisionDown::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_OnListItemDecisionDown;
 
 // Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.SetupListItemWidgetSingle
 // 0x0100 (0x0100 - 0x0000)
@@ -85,11 +72,7 @@ public:
 	struct FFriendListPlayerInfo                  InListPlayerInfo;                                  // 0x0008(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm)
 	int32                                         InButtonIndex;                                     // 0x00F8(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_AddFriend_C_SetupListItemWidgetSingle) == 0x000008, "Wrong alignment on WBP_Friend_Sub_AddFriend_C_SetupListItemWidgetSingle");
-static_assert(sizeof(WBP_Friend_Sub_AddFriend_C_SetupListItemWidgetSingle) == 0x000100, "Wrong size on WBP_Friend_Sub_AddFriend_C_SetupListItemWidgetSingle");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_SetupListItemWidgetSingle, InItemListWidget) == 0x000000, "Member 'WBP_Friend_Sub_AddFriend_C_SetupListItemWidgetSingle::InItemListWidget' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_SetupListItemWidgetSingle, InListPlayerInfo) == 0x000008, "Member 'WBP_Friend_Sub_AddFriend_C_SetupListItemWidgetSingle::InListPlayerInfo' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_SetupListItemWidgetSingle, InButtonIndex) == 0x0000F8, "Member 'WBP_Friend_Sub_AddFriend_C_SetupListItemWidgetSingle::InButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_SetupListItemWidgetSingle;
 
 // Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.OnListItemCancelDown
 // 0x0008 (0x0008 - 0x0000)
@@ -98,9 +81,7 @@ struct WBP_Friend_Sub_AddFriend_C_OnListItemCancelDown final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_AddFriend_C_OnListItemCancelDown) == 0x000008, "Wrong alignment on WBP_Friend_Sub_AddFriend_C_OnListItemCancelDown");
-static_assert(sizeof(WBP_Friend_Sub_AddFriend_C_OnListItemCancelDown) == 0x000008, "Wrong size on WBP_Friend_Sub_AddFriend_C_OnListItemCancelDown");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_OnListItemCancelDown, Button) == 0x000000, "Member 'WBP_Friend_Sub_AddFriend_C_OnListItemCancelDown::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_OnListItemCancelDown;
 
 // Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.FocusListItemWidget
 // 0x0001 (0x0001 - 0x0000)
@@ -109,9 +90,7 @@ struct WBP_Friend_Sub_AddFriend_C_FocusListItemWidget final
 public:
 	bool                                          bInPlayFocusSound;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_AddFriend_C_FocusListItemWidget) == 0x000001, "Wrong alignment on WBP_Friend_Sub_AddFriend_C_FocusListItemWidget");
-static_assert(sizeof(WBP_Friend_Sub_AddFriend_C_FocusListItemWidget) == 0x000001, "Wrong size on WBP_Friend_Sub_AddFriend_C_FocusListItemWidget");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_FocusListItemWidget, bInPlayFocusSound) == 0x000000, "Member 'WBP_Friend_Sub_AddFriend_C_FocusListItemWidget::bInPlayFocusSound' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_FocusListItemWidget;
 
 // Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.OnButtonDecisionEvent
 // 0x0008 (0x0008 - 0x0000)
@@ -120,9 +99,7 @@ struct WBP_Friend_Sub_AddFriend_C_OnButtonDecisionEvent final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_AddFriend_C_OnButtonDecisionEvent) == 0x000008, "Wrong alignment on WBP_Friend_Sub_AddFriend_C_OnButtonDecisionEvent");
-static_assert(sizeof(WBP_Friend_Sub_AddFriend_C_OnButtonDecisionEvent) == 0x000008, "Wrong size on WBP_Friend_Sub_AddFriend_C_OnButtonDecisionEvent");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_OnButtonDecisionEvent, Button) == 0x000000, "Member 'WBP_Friend_Sub_AddFriend_C_OnButtonDecisionEvent::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_OnButtonDecisionEvent;
 
 // Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.OnNumberInputWidgetDecision
 // 0x0010 (0x0010 - 0x0000)
@@ -133,11 +110,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_AddFriend_C_OnNumberInputWidgetDecision) == 0x000008, "Wrong alignment on WBP_Friend_Sub_AddFriend_C_OnNumberInputWidgetDecision");
-static_assert(sizeof(WBP_Friend_Sub_AddFriend_C_OnNumberInputWidgetDecision) == 0x000010, "Wrong size on WBP_Friend_Sub_AddFriend_C_OnNumberInputWidgetDecision");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_OnNumberInputWidgetDecision, Button) == 0x000000, "Member 'WBP_Friend_Sub_AddFriend_C_OnNumberInputWidgetDecision::Button' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_OnNumberInputWidgetDecision, PanelIndex) == 0x000008, "Member 'WBP_Friend_Sub_AddFriend_C_OnNumberInputWidgetDecision::PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_OnNumberInputWidgetDecision, ButtonIndex) == 0x00000C, "Member 'WBP_Friend_Sub_AddFriend_C_OnNumberInputWidgetDecision::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_OnNumberInputWidgetDecision;
 
 // Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.OnUserSearchSuccess
 // 0x0010 (0x0010 - 0x0000)
@@ -146,9 +119,7 @@ struct WBP_Friend_Sub_AddFriend_C_OnUserSearchSuccess final
 public:
 	TArray<struct FCommon_UserSearchData>         InUserSearchData;                                  // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_Friend_Sub_AddFriend_C_OnUserSearchSuccess) == 0x000008, "Wrong alignment on WBP_Friend_Sub_AddFriend_C_OnUserSearchSuccess");
-static_assert(sizeof(WBP_Friend_Sub_AddFriend_C_OnUserSearchSuccess) == 0x000010, "Wrong size on WBP_Friend_Sub_AddFriend_C_OnUserSearchSuccess");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_OnUserSearchSuccess, InUserSearchData) == 0x000000, "Member 'WBP_Friend_Sub_AddFriend_C_OnUserSearchSuccess::InUserSearchData' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_OnUserSearchSuccess;
 
 // Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.ExecuteAfterConfirmWidget
 // 0x000C (0x000C - 0x0000)
@@ -160,11 +131,7 @@ public:
 	int32                                         InButtonIndex;                                     // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bInCanceled;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_AddFriend_C_ExecuteAfterConfirmWidget) == 0x000004, "Wrong alignment on WBP_Friend_Sub_AddFriend_C_ExecuteAfterConfirmWidget");
-static_assert(sizeof(WBP_Friend_Sub_AddFriend_C_ExecuteAfterConfirmWidget) == 0x00000C, "Wrong size on WBP_Friend_Sub_AddFriend_C_ExecuteAfterConfirmWidget");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteAfterConfirmWidget, CommandType) == 0x000000, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteAfterConfirmWidget::CommandType' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteAfterConfirmWidget, InButtonIndex) == 0x000004, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteAfterConfirmWidget::InButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteAfterConfirmWidget, bInCanceled) == 0x000008, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteAfterConfirmWidget::bInCanceled' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_ExecuteAfterConfirmWidget;
 
 // Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.AddListItemWidgetByListItemIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -173,9 +140,7 @@ struct WBP_Friend_Sub_AddFriend_C_AddListItemWidgetByListItemIndex final
 public:
 	int32                                         InListItemIndex;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_AddFriend_C_AddListItemWidgetByListItemIndex) == 0x000004, "Wrong alignment on WBP_Friend_Sub_AddFriend_C_AddListItemWidgetByListItemIndex");
-static_assert(sizeof(WBP_Friend_Sub_AddFriend_C_AddListItemWidgetByListItemIndex) == 0x000004, "Wrong size on WBP_Friend_Sub_AddFriend_C_AddListItemWidgetByListItemIndex");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_AddListItemWidgetByListItemIndex, InListItemIndex) == 0x000000, "Member 'WBP_Friend_Sub_AddFriend_C_AddListItemWidgetByListItemIndex::InListItemIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_AddListItemWidgetByListItemIndex;
 
 // Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.SetButtonControlEnable
 // 0x0001 (0x0001 - 0x0000)
@@ -184,9 +149,7 @@ struct WBP_Friend_Sub_AddFriend_C_SetButtonControlEnable final
 public:
 	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_AddFriend_C_SetButtonControlEnable) == 0x000001, "Wrong alignment on WBP_Friend_Sub_AddFriend_C_SetButtonControlEnable");
-static_assert(sizeof(WBP_Friend_Sub_AddFriend_C_SetButtonControlEnable) == 0x000001, "Wrong size on WBP_Friend_Sub_AddFriend_C_SetButtonControlEnable");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_SetButtonControlEnable, bInEnable) == 0x000000, "Member 'WBP_Friend_Sub_AddFriend_C_SetButtonControlEnable::bInEnable' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_SetButtonControlEnable;
 
 // Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.SetWidgetFocus
 // 0x0010 (0x0010 - 0x0000)
@@ -196,10 +159,7 @@ public:
 	class APlayerController*                      PlayerController;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          bInPlayFocusSound;                                 // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_AddFriend_C_SetWidgetFocus) == 0x000008, "Wrong alignment on WBP_Friend_Sub_AddFriend_C_SetWidgetFocus");
-static_assert(sizeof(WBP_Friend_Sub_AddFriend_C_SetWidgetFocus) == 0x000010, "Wrong size on WBP_Friend_Sub_AddFriend_C_SetWidgetFocus");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_SetWidgetFocus, PlayerController) == 0x000000, "Member 'WBP_Friend_Sub_AddFriend_C_SetWidgetFocus::PlayerController' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_SetWidgetFocus, bInPlayFocusSound) == 0x000008, "Member 'WBP_Friend_Sub_AddFriend_C_SetWidgetFocus::bInPlayFocusSound' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_SetWidgetFocus;
 
 // Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.SetListItemWidgetInteractableState
 // 0x0001 (0x0001 - 0x0000)
@@ -208,9 +168,7 @@ struct WBP_Friend_Sub_AddFriend_C_SetListItemWidgetInteractableState final
 public:
 	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_AddFriend_C_SetListItemWidgetInteractableState) == 0x000001, "Wrong alignment on WBP_Friend_Sub_AddFriend_C_SetListItemWidgetInteractableState");
-static_assert(sizeof(WBP_Friend_Sub_AddFriend_C_SetListItemWidgetInteractableState) == 0x000001, "Wrong size on WBP_Friend_Sub_AddFriend_C_SetListItemWidgetInteractableState");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_SetListItemWidgetInteractableState, bInEnable) == 0x000000, "Member 'WBP_Friend_Sub_AddFriend_C_SetListItemWidgetInteractableState::bInEnable' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_SetListItemWidgetInteractableState;
 
 // Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.SetListItemWidgetButtonChangeableState
 // 0x0008 (0x0008 - 0x0000)
@@ -220,10 +178,7 @@ public:
 	int32                                         InListItemIndex;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bEnable;                                           // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_AddFriend_C_SetListItemWidgetButtonChangeableState) == 0x000004, "Wrong alignment on WBP_Friend_Sub_AddFriend_C_SetListItemWidgetButtonChangeableState");
-static_assert(sizeof(WBP_Friend_Sub_AddFriend_C_SetListItemWidgetButtonChangeableState) == 0x000008, "Wrong size on WBP_Friend_Sub_AddFriend_C_SetListItemWidgetButtonChangeableState");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_SetListItemWidgetButtonChangeableState, InListItemIndex) == 0x000000, "Member 'WBP_Friend_Sub_AddFriend_C_SetListItemWidgetButtonChangeableState::InListItemIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_SetListItemWidgetButtonChangeableState, bEnable) == 0x000004, "Member 'WBP_Friend_Sub_AddFriend_C_SetListItemWidgetButtonChangeableState::bEnable' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_SetListItemWidgetButtonChangeableState;
 
 // Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.OnDirectionEvent
 // 0x0010 (0x0010 - 0x0000)
@@ -233,10 +188,7 @@ public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	EUnionUIControlDir                            Dir;                                               // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_AddFriend_C_OnDirectionEvent) == 0x000008, "Wrong alignment on WBP_Friend_Sub_AddFriend_C_OnDirectionEvent");
-static_assert(sizeof(WBP_Friend_Sub_AddFriend_C_OnDirectionEvent) == 0x000010, "Wrong size on WBP_Friend_Sub_AddFriend_C_OnDirectionEvent");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_OnDirectionEvent, Button) == 0x000000, "Member 'WBP_Friend_Sub_AddFriend_C_OnDirectionEvent::Button' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_OnDirectionEvent, Dir) == 0x000008, "Member 'WBP_Friend_Sub_AddFriend_C_OnDirectionEvent::Dir' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_OnDirectionEvent;
 
 // Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.GenerateSubMenu
 // 0x0008 (0x0008 - 0x0000)
@@ -245,9 +197,7 @@ struct WBP_Friend_Sub_AddFriend_C_GenerateSubMenu final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_AddFriend_C_GenerateSubMenu) == 0x000008, "Wrong alignment on WBP_Friend_Sub_AddFriend_C_GenerateSubMenu");
-static_assert(sizeof(WBP_Friend_Sub_AddFriend_C_GenerateSubMenu) == 0x000008, "Wrong size on WBP_Friend_Sub_AddFriend_C_GenerateSubMenu");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_GenerateSubMenu, Button) == 0x000000, "Member 'WBP_Friend_Sub_AddFriend_C_GenerateSubMenu::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_GenerateSubMenu;
 
 // Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.SetScrollBoxVisibility
 // 0x0001 (0x0001 - 0x0000)
@@ -256,51 +206,56 @@ struct WBP_Friend_Sub_AddFriend_C_SetScrollBoxVisibility final
 public:
 	ESlateVisibility                              Param;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_AddFriend_C_SetScrollBoxVisibility) == 0x000001, "Wrong alignment on WBP_Friend_Sub_AddFriend_C_SetScrollBoxVisibility");
-static_assert(sizeof(WBP_Friend_Sub_AddFriend_C_SetScrollBoxVisibility) == 0x000001, "Wrong size on WBP_Friend_Sub_AddFriend_C_SetScrollBoxVisibility");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_SetScrollBoxVisibility, Param) == 0x000000, "Member 'WBP_Friend_Sub_AddFriend_C_SetScrollBoxVisibility::Param' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_SetScrollBoxVisibility;
 
 // Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.ExecuteUbergraph_WBP_Friend_Sub_AddFriend
-// 0x07B8 (0x07B8 - 0x0000)
+// 0x07F8 (0x07F8 - 0x0000)
 struct WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button_4;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Friend_Sub_PlayerPlate_Small_C*    K2Node_CustomEvent_InItemListWidget;               // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FFriendListPlayerInfo                  K2Node_CustomEvent_InListPlayerInfo;               // 0x0018(0x00F0)()
-	int32                                         K2Node_CustomEvent_InButtonIndex;                  // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Friend_Sub_PlayerPlate_C*          CallFunc_GetMainWidget_OutMainWidget;              // 0x0110(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button_5;                       // 0x0118(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CheckSubMenuWidgetDisplay_ReturnValue;    // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_121[0x3];                                      // 0x0121(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0124(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UUnionUIButtonBase* Button)> K2Node_CreateDelegate_OutputDelegate;          // 0x0128(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x013C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsNotEmpty_ReturnValue;             // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0141(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInPlayFocusSound_1;                  // 0x0142(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_143[0x5];                                      // 0x0143(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button_3;                       // 0x0148(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Friend_Sub_PlayerPlate_Small_C*    CallFunc_Create_ReturnValue;                       // 0x0150(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button_2;                       // 0x0158(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_PanelIndex;                     // 0x0160(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_ButtonIndex;                    // 0x0164(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0168(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x016C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16D[0x3];                                      // 0x016D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FText>                           K2Node_MakeArray_Array;                            // 0x0170(0x0010)(ConstParm, ReferenceParm)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Friend_SmallWindow_Top_C*          K2Node_DynamicCast_AsWBP_Friend_Small_Window_Top;  // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button_4;                       // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Friend_Sub_PlayerPlate_Small_C*    K2Node_CustomEvent_InItemListWidget;               // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FFriendListPlayerInfo                  K2Node_CustomEvent_InListPlayerInfo;               // 0x0030(0x00F0)()
+	int32                                         K2Node_CustomEvent_InButtonIndex;                  // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_124[0x4];                                      // 0x0124(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button_5;                       // 0x0128(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Friend_Sub_PlayerPlate_C*          CallFunc_GetMainWidget_OutMainWidget;              // 0x0130(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CheckSubMenuWidgetDisplay_ReturnValue;    // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_139[0x3];                                      // 0x0139(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class UUnionUIButtonBase* Button)> K2Node_CreateDelegate_OutputDelegate;          // 0x013C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x014C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsNotEmpty_ReturnValue;             // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_151[0x3];                                      // 0x0151(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0154(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_159[0x3];                                      // 0x0159(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x015C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInPlayFocusSound_1;                  // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_161[0x7];                                      // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button_3;                       // 0x0168(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button_2;                       // 0x0170(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_PanelIndex;                     // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_ButtonIndex;                    // 0x017C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class UUnionUIButtonBase* Button)> K2Node_CreateDelegate_OutputDelegate_1;        // 0x0180(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_194[0x4];                                      // 0x0194(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0198(0x0010)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_1;            // 0x01A8(0x0010)()
-	class FText                                   CallFunc_GetInputText_OutInputText;                // 0x01B8(0x0010)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x01C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x01D8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_191[0x7];                                      // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FText>                           K2Node_MakeArray_Array;                            // 0x0198(0x0010)(ConstParm, ReferenceParm)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1AC[0x4];                                      // 0x01AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x01B0(0x0010)()
+	class UWBP_Friend_Sub_PlayerPlate_Small_C*    CallFunc_Array_Get_Item;                           // 0x01C0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Friend_Sub_PlayerPlate_C*          CallFunc_GetMainWidget_OutMainWidget_1;            // 0x01C8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_1;            // 0x01D0(0x0010)()
+	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E4[0x4];                                      // 0x01E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x01E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	const class UFriendListMainWidget*            CallFunc_GetMainWidget_ReturnValue;                // 0x01F0(0x0008)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FCommon_UserSearchData>         K2Node_Event_InUserSearchData;                     // 0x01F8(0x0010)(ConstParm, ReferenceParm)
@@ -319,250 +274,123 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0219(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_21A[0x2];                                      // 0x021A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x021C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0220(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_224[0x4];                                      // 0x0224(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Friend_Sub_PlayerPlate_Small_C*    CallFunc_Array_Get_Item;                           // 0x0228(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Friend_Sub_PlayerPlate_C*          CallFunc_GetMainWidget_OutMainWidget_1;            // 0x0230(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0238(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_23C[0x4];                                      // 0x023C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFriendListPlayerInfo                  CallFunc_GetSearchPlayerInfo_OutSearchPlayerInfo;  // 0x0240(0x00F0)()
-	struct FFriendListPlayerInfo                  CallFunc_GetSearchPlayerInfo_OutSearchPlayerInfo_1; // 0x0330(0x00F0)()
-	struct FFriendListPlayerInfo                  CallFunc_Array_Get_Item_1;                         // 0x0420(0x00F0)()
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0510(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_511[0x3];                                      // 0x0511(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_Event_InListItemIndex_1;                    // 0x0514(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInEnable_1;                          // 0x0518(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_519[0x7];                                      // 0x0519(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      K2Node_Event_PlayerController;                     // 0x0520(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInPlayFocusSound;                    // 0x0528(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInEnable;                            // 0x0529(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_52A[0x2];                                      // 0x052A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetZOrder_ReturnValue;                    // 0x052C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_InListItemIndex;                      // 0x0530(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bEnable;                              // 0x0534(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_535[0x3];                                      // 0x0535(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x0538(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_53C[0x4];                                      // 0x053C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Friend_Sub_PlayerPlate_Small_C*    CallFunc_Array_Get_Item_2;                         // 0x0540(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Friend_Sub_PlayerPlate_C*          CallFunc_GetMainWidget_OutMainWidget_2;            // 0x0548(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_1;         // 0x0550(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_551[0x3];                                      // 0x0551(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x0554(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFriendListPlayerInfo                  CallFunc_Array_Get_Item_1;                         // 0x0220(0x00F0)()
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0310(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0314(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_315[0x3];                                      // 0x0315(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFriendListPlayerInfo                  CallFunc_GetSearchPlayerInfo_OutSearchPlayerInfo;  // 0x0318(0x00F0)()
+	struct FFriendListPlayerInfo                  CallFunc_GetSearchPlayerInfo_OutSearchPlayerInfo_1; // 0x0408(0x00F0)()
+	int32                                         K2Node_Event_InListItemIndex_1;                    // 0x04F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInEnable_1;                          // 0x04FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4FD[0x3];                                      // 0x04FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      K2Node_Event_PlayerController;                     // 0x0500(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInPlayFocusSound;                    // 0x0508(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInEnable;                            // 0x0509(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_50A[0x2];                                      // 0x050A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetZOrder_ReturnValue;                    // 0x050C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_InListItemIndex;                      // 0x0510(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bEnable;                              // 0x0514(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_515[0x3];                                      // 0x0515(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x0518(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_51C[0x4];                                      // 0x051C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Friend_Sub_PlayerPlate_Small_C*    CallFunc_Array_Get_Item_2;                         // 0x0520(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0528(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_52C[0x4];                                      // 0x052C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Friend_Sub_PlayerPlate_C*          CallFunc_GetMainWidget_OutMainWidget_2;            // 0x0530(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_1;         // 0x0538(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_539[0x3];                                      // 0x0539(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x053C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0540(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0541(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_542[0x6];                                      // 0x0542(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetInputText_OutInputText;                // 0x0548(0x0010)()
 	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0558(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_559[0x3];                                      // 0x0559(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x055C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0560(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_564[0x4];                                      // 0x0564(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UForceNextSequenceManagerSubsytem*      CallFunc_GetWorldSubsystem_ReturnValue;            // 0x0568(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_1;            // 0x0570(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_571[0x3];                                      // 0x0571(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_1;             // 0x0574(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_559[0x7];                                      // 0x0559(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UForceNextSequenceManagerSubsytem*      CallFunc_GetWorldSubsystem_ReturnValue;            // 0x0560(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0568(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_1;            // 0x056C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_56D[0x3];                                      // 0x056D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_1;             // 0x0570(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsNotEmpty_ReturnValue_1;           // 0x0574(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_575[0x3];                                      // 0x0575(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UForceNextSequenceManagerSubsytem*      CallFunc_GetWorldSubsystem_ReturnValue_1;          // 0x0578(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_2;            // 0x0580(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_581[0x3];                                      // 0x0581(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_2;         // 0x0581(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_582[0x2];                                      // 0x0582(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_2;             // 0x0584(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UForceNextSequenceManagerSubsytem*      CallFunc_GetWorldSubsystem_ReturnValue_2;          // 0x0588(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsNotEmpty_ReturnValue_1;           // 0x0590(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EButtonFocusType                              Temp_byte_Variable;                                // 0x0591(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_2;         // 0x0592(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_593[0x5];                                      // 0x0593(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Friend_Sub_PlayerPlate_Small_C*    CallFunc_Array_Get_Item_3;                         // 0x0598(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_3;         // 0x05A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5A1[0x7];                                      // 0x05A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Friend_Sub_PlayerPlate_C*          CallFunc_GetMainWidget_OutMainWidget_3;            // 0x05A8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	EButtonFocusType                              Temp_byte_Variable_1;                              // 0x05B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x05B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x05B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EButtonFocusType                              K2Node_Select_Default;                             // 0x05B3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UUnionUIButtonBase* Button, EUnionUIControlDir Dir)> K2Node_CreateDelegate_OutputDelegate_2; // 0x05B4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5C4[0x4];                                      // 0x05C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button_1;                       // 0x05C8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	EUnionUIControlDir                            K2Node_CustomEvent_Dir;                            // 0x05D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5D1[0x7];                                      // 0x05D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	const class UFriendListMainWidget*            CallFunc_GetMainWidget_ReturnValue_1;              // 0x05D8(0x0008)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	EFriendListCommandType                        Temp_byte_Variable_2;                              // 0x05E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Friend_Sub_PlayerPlate_Small_C*    CallFunc_Array_Get_Item_3;                         // 0x0590(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_3;         // 0x0598(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_599[0x7];                                      // 0x0599(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Friend_Sub_PlayerPlate_C*          CallFunc_GetMainWidget_OutMainWidget_3;            // 0x05A0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EButtonFocusType                              Temp_byte_Variable;                                // 0x05A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EButtonFocusType                              Temp_byte_Variable_1;                              // 0x05A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x05AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x05AB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EButtonFocusType                              K2Node_Select_Default;                             // 0x05AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5AD[0x3];                                      // 0x05AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class UUnionUIButtonBase* Button, EUnionUIControlDir Dir)> K2Node_CreateDelegate_OutputDelegate_2; // 0x05B0(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button_1;                       // 0x05C0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EUnionUIControlDir                            K2Node_CustomEvent_Dir;                            // 0x05C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5C9[0x7];                                      // 0x05C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	const class UFriendListMainWidget*            CallFunc_GetMainWidget_ReturnValue_1;              // 0x05D0(0x0008)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Friend_CMN_Window_C*               K2Node_DynamicCast_AsWBP_Friend_CMN_Window;        // 0x05D8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x05E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_5E1[0x7];                                      // 0x05E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Friend_CMN_Window_C*               K2Node_DynamicCast_AsWBP_Friend_CMN_Window;        // 0x05E8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x05F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFriendListCommandType                        Temp_byte_Variable_3;                              // 0x05F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5F2[0x6];                                      // 0x05F2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x05F8(0x0010)(ReferenceParm, ContainsInstancedReference)
-	class UWidget*                                CallFunc_Array_Get_Item_4;                         // 0x0608(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Friend_Sub_PlayerPlate_Small_C*    K2Node_DynamicCast_AsWBP_Friend_Sub_Player_Plate_Small; // 0x0610(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0618(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_619[0x3];                                      // 0x0619(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x061C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0620(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x05E8(0x0010)(ReferenceParm, ContainsInstancedReference)
+	class UWidget*                                CallFunc_Array_Get_Item_4;                         // 0x05F8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Friend_Sub_PlayerPlate_Small_C*    K2Node_DynamicCast_AsWBP_Friend_Sub_Player_Plate_Small; // 0x0600(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0608(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_609[0x3];                                      // 0x0609(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x060C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0610(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_611[0x3];                                      // 0x0611(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0614(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUnionUIButtonsPanel*                   CallFunc_CreateButtonsPanel_ReturnValue;           // 0x0618(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_MakeLiteralBool_ReturnValue;              // 0x0620(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_621[0x3];                                      // 0x0621(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0624(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUnionUIButtonsPanel*                   CallFunc_CreateButtonsPanel_ReturnValue;           // 0x0628(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_MakeLiteralBool_ReturnValue;              // 0x0630(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_1;                              // 0x0631(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsNotEmpty_ReturnValue_2;           // 0x0632(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EFriendListCommandType                        K2Node_Select_Default_1;                           // 0x0633(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_3;                  // 0x0634(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_MakeLiteralInt_ReturnValue;               // 0x0638(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_MakeLiteralInt_ReturnValue;               // 0x0624(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsNotEmpty_ReturnValue_2;           // 0x0628(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_629[0x7];                                      // 0x0629(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Friend_Sub_PlayerPlate_Small_C*    CallFunc_Array_Get_Item_5;                         // 0x0630(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_3;               // 0x0638(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x063C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_63D[0x3];                                      // 0x063D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x0640(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_644[0x4];                                      // 0x0644(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Friend_Sub_PlayerPlate_Small_C*    CallFunc_Array_Get_Item_5;                         // 0x0648(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_3;               // 0x0650(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_3;                // 0x0654(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x0655(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0656(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_657[0x1];                                      // 0x0657(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex)> K2Node_CreateDelegate_OutputDelegate_3; // 0x0658(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0668(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_669[0x7];                                      // 0x0669(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button;                         // 0x0670(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_GetSubMenuWidgetTranslation_OutTranslation; // 0x0678(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFriendListCommandType                        Temp_byte_Variable_2;                              // 0x063D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x063E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x063F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFriendListCommandType                        Temp_byte_Variable_3;                              // 0x0640(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_641[0x7];                                      // 0x0641(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Friend_Sub_PlayerPlate_Small_C*    CallFunc_Create_ReturnValue;                       // 0x0648(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0650(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x0654(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_655[0x3];                                      // 0x0655(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable_3;                  // 0x0658(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_3;                // 0x065C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_65D[0x3];                                      // 0x065D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x0660(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_664[0x4];                                      // 0x0664(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button;                         // 0x0668(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_GetSubMenuWidgetTranslation_OutTranslation; // 0x0670(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x0680(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFriendListCommandType                        K2Node_Select_Default_1;                           // 0x0681(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_682[0x6];                                      // 0x0682(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_Friend_NumberInput_Window_C*       CallFunc_Create_ReturnValue_1;                     // 0x0688(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UUnionUIButtonBase* Button)> K2Node_CreateDelegate_OutputDelegate_4;        // 0x0690(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex)> K2Node_CreateDelegate_OutputDelegate_3; // 0x0690(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable_3;                   // 0x06A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6A4[0x4];                                      // 0x06A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	ESlateVisibility                              K2Node_Event_Param;                                // 0x06A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6A5[0x3];                                      // 0x06A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_Friend_Sub_PlayerPlate_Small_C*    CallFunc_Array_Get_Item_6;                         // 0x06A8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FFriendListPlayerInfo                  CallFunc_Array_Get_Item_7;                         // 0x06B0(0x00F0)()
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_4;         // 0x07A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Event_Param;                                // 0x07A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x07A2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7A3[0x5];                                      // 0x07A3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Friend_SmallWindow_Top_C*          K2Node_DynamicCast_AsWBP_Friend_Small_Window_Top;  // 0x07A8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x07B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7A1[0x3];                                      // 0x07A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class UUnionUIButtonBase* Button)> K2Node_CreateDelegate_OutputDelegate_4;        // 0x07A4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7B4[0x4];                                      // 0x07B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x07B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x07C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_GetObjectName_ReturnValue;                // 0x07D8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x07E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend) == 0x000008, "Wrong alignment on WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend");
-static_assert(sizeof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend) == 0x0007B8, "Wrong size on WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, EntryPoint) == 0x000000, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_CustomEvent_Button_4) == 0x000008, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_CustomEvent_Button_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_CustomEvent_InItemListWidget) == 0x000010, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_CustomEvent_InItemListWidget' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_CustomEvent_InListPlayerInfo) == 0x000018, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_CustomEvent_InListPlayerInfo' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_CustomEvent_InButtonIndex) == 0x000108, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_CustomEvent_InButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Array_Length_ReturnValue) == 0x00010C, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_GetMainWidget_OutMainWidget) == 0x000110, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_GetMainWidget_OutMainWidget' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_CustomEvent_Button_5) == 0x000118, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_CustomEvent_Button_5' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_CheckSubMenuWidgetDisplay_ReturnValue) == 0x000120, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_CheckSubMenuWidgetDisplay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, Temp_int_Loop_Counter_Variable) == 0x000124, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_CreateDelegate_OutputDelegate) == 0x000128, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Add_IntInt_ReturnValue) == 0x000138, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Array_Length_ReturnValue_1) == 0x00013C, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Array_IsNotEmpty_ReturnValue) == 0x000140, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Array_IsNotEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Less_IntInt_ReturnValue) == 0x000141, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_Event_bInPlayFocusSound_1) == 0x000142, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_Event_bInPlayFocusSound_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_CustomEvent_Button_3) == 0x000148, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_CustomEvent_Button_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Create_ReturnValue) == 0x000150, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_CustomEvent_Button_2) == 0x000158, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_CustomEvent_Button_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_CustomEvent_PanelIndex) == 0x000160, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_CustomEvent_PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_CustomEvent_ButtonIndex) == 0x000164, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_CustomEvent_ButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Array_Add_ReturnValue) == 0x000168, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_SwitchInteger_CmpSuccess) == 0x00016C, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_MakeArray_Array) == 0x000170, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_CreateDelegate_OutputDelegate_1) == 0x000180, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, Temp_int_Array_Index_Variable) == 0x000190, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_MakeLiteralText_ReturnValue) == 0x000198, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_MakeLiteralText_ReturnValue_1) == 0x0001A8, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_GetInputText_OutInputText) == 0x0001B8, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_GetInputText_OutInputText' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Conv_TextToString_ReturnValue) == 0x0001C8, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Concat_StrStr_ReturnValue) == 0x0001D8, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_GetOwningPlayer_ReturnValue) == 0x0001E8, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_GetMainWidget_ReturnValue) == 0x0001F0, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_GetMainWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_Event_InUserSearchData) == 0x0001F8, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_Event_InUserSearchData' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_Event_CommandType) == 0x000208, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_Event_CommandType' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_Event_InButtonIndex) == 0x00020C, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_Event_InButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_Event_bInCanceled) == 0x000210, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_Event_bInCanceled' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000211, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_CheckShowPfProfile_ReturnValue) == 0x000212, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_CheckShowPfProfile_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000213, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Not_PreBool_ReturnValue) == 0x000214, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000215, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_BooleanOR_ReturnValue) == 0x000216, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x000217, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_EqualEqual_ByteByte_ReturnValue_3) == 0x000218, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_EqualEqual_ByteByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_BooleanOR_ReturnValue_1) == 0x000219, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, Temp_int_Loop_Counter_Variable_1) == 0x00021C, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, Temp_int_Array_Index_Variable_1) == 0x000220, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Array_Get_Item) == 0x000228, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_GetMainWidget_OutMainWidget_1) == 0x000230, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_GetMainWidget_OutMainWidget_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Add_IntInt_ReturnValue_1) == 0x000238, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_GetSearchPlayerInfo_OutSearchPlayerInfo) == 0x000240, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_GetSearchPlayerInfo_OutSearchPlayerInfo' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_GetSearchPlayerInfo_OutSearchPlayerInfo_1) == 0x000330, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_GetSearchPlayerInfo_OutSearchPlayerInfo_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Array_Get_Item_1) == 0x000420, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000510, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_Event_InListItemIndex_1) == 0x000514, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_Event_InListItemIndex_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_Event_bInEnable_1) == 0x000518, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_Event_bInEnable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_Event_PlayerController) == 0x000520, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_Event_PlayerController' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_Event_bInPlayFocusSound) == 0x000528, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_Event_bInPlayFocusSound' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_Event_bInEnable) == 0x000529, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_Event_bInEnable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_GetZOrder_ReturnValue) == 0x00052C, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_GetZOrder_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_Event_InListItemIndex) == 0x000530, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_Event_InListItemIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_Event_bEnable) == 0x000534, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_Event_bEnable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, Temp_int_Array_Index_Variable_2) == 0x000538, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Array_Get_Item_2) == 0x000540, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_GetMainWidget_OutMainWidget_2) == 0x000548, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_GetMainWidget_OutMainWidget_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Array_IsValidIndex_ReturnValue_1) == 0x000550, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Array_IsValidIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, Temp_int_Loop_Counter_Variable_2) == 0x000554, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_MakeLiteralByte_ReturnValue) == 0x000558, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Add_IntInt_ReturnValue_2) == 0x00055C, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000560, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000568, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_MakeLiteralByte_ReturnValue_1) == 0x000570, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_MakeLiteralByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x000574, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_GetWorldSubsystem_ReturnValue_1) == 0x000578, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_GetWorldSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_MakeLiteralByte_ReturnValue_2) == 0x000580, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_MakeLiteralByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Conv_ByteToInt_ReturnValue_2) == 0x000584, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Conv_ByteToInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_GetWorldSubsystem_ReturnValue_2) == 0x000588, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_GetWorldSubsystem_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Array_IsNotEmpty_ReturnValue_1) == 0x000590, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Array_IsNotEmpty_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, Temp_byte_Variable) == 0x000591, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Array_IsValidIndex_ReturnValue_2) == 0x000592, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Array_IsValidIndex_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Array_Get_Item_3) == 0x000598, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Array_IsValidIndex_ReturnValue_3) == 0x0005A0, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Array_IsValidIndex_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_GetMainWidget_OutMainWidget_3) == 0x0005A8, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_GetMainWidget_OutMainWidget_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, Temp_byte_Variable_1) == 0x0005B0, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, Temp_bool_Variable) == 0x0005B1, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_IsValid_ReturnValue) == 0x0005B2, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_Select_Default) == 0x0005B3, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_CreateDelegate_OutputDelegate_2) == 0x0005B4, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_CustomEvent_Button_1) == 0x0005C8, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_CustomEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_CustomEvent_Dir) == 0x0005D0, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_CustomEvent_Dir' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_GetMainWidget_ReturnValue_1) == 0x0005D8, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_GetMainWidget_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, Temp_byte_Variable_2) == 0x0005E0, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_DynamicCast_AsWBP_Friend_CMN_Window) == 0x0005E8, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_DynamicCast_AsWBP_Friend_CMN_Window' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_DynamicCast_bSuccess) == 0x0005F0, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, Temp_byte_Variable_3) == 0x0005F1, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_GetAllChildren_ReturnValue) == 0x0005F8, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Array_Get_Item_4) == 0x000608, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_DynamicCast_AsWBP_Friend_Sub_Player_Plate_Small) == 0x000610, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_DynamicCast_AsWBP_Friend_Sub_Player_Plate_Small' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_DynamicCast_bSuccess_1) == 0x000618, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Array_Length_ReturnValue_2) == 0x00061C, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Less_IntInt_ReturnValue_1) == 0x000620, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Array_Add_ReturnValue_1) == 0x000624, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_CreateButtonsPanel_ReturnValue) == 0x000628, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_CreateButtonsPanel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_MakeLiteralBool_ReturnValue) == 0x000630, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_MakeLiteralBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, Temp_bool_Variable_1) == 0x000631, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Array_IsNotEmpty_ReturnValue_2) == 0x000632, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Array_IsNotEmpty_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_Select_Default_1) == 0x000633, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, Temp_int_Loop_Counter_Variable_3) == 0x000634, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::Temp_int_Loop_Counter_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_MakeLiteralInt_ReturnValue) == 0x000638, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Less_IntInt_ReturnValue_2) == 0x00063C, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Add_IntInt_ReturnValue_3) == 0x000640, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Array_Get_Item_5) == 0x000648, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Array_Get_Item_5' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Array_Length_ReturnValue_3) == 0x000650, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Less_IntInt_ReturnValue_3) == 0x000654, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000655, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_IsValid_ReturnValue_1) == 0x000656, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_CreateDelegate_OutputDelegate_3) == 0x000658, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_IsValid_ReturnValue_2) == 0x000668, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_CustomEvent_Button) == 0x000670, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_GetSubMenuWidgetTranslation_OutTranslation) == 0x000678, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_GetSubMenuWidgetTranslation_OutTranslation' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Create_ReturnValue_1) == 0x000688, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Create_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_CreateDelegate_OutputDelegate_4) == 0x000690, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, Temp_int_Array_Index_Variable_3) == 0x0006A0, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::Temp_int_Array_Index_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Array_Get_Item_6) == 0x0006A8, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Array_Get_Item_6' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Array_Get_Item_7) == 0x0006B0, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Array_Get_Item_7' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_Array_IsValidIndex_ReturnValue_4) == 0x0007A0, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_Array_IsValidIndex_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_Event_Param) == 0x0007A1, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_Event_Param' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, CallFunc_IsValid_ReturnValue_3) == 0x0007A2, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_DynamicCast_AsWBP_Friend_Small_Window_Top) == 0x0007A8, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_DynamicCast_AsWBP_Friend_Small_Window_Top' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend, K2Node_DynamicCast_bSuccess_2) == 0x0007B0, "Member 'WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend;
 
 // Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.CheckButtonWidgetExist
 // 0x0001 (0x0001 - 0x0000)
@@ -571,9 +399,7 @@ struct WBP_Friend_Sub_AddFriend_C_CheckButtonWidgetExist final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_AddFriend_C_CheckButtonWidgetExist) == 0x000001, "Wrong alignment on WBP_Friend_Sub_AddFriend_C_CheckButtonWidgetExist");
-static_assert(sizeof(WBP_Friend_Sub_AddFriend_C_CheckButtonWidgetExist) == 0x000001, "Wrong size on WBP_Friend_Sub_AddFriend_C_CheckButtonWidgetExist");
-static_assert(offsetof(WBP_Friend_Sub_AddFriend_C_CheckButtonWidgetExist, ReturnValue) == 0x000000, "Member 'WBP_Friend_Sub_AddFriend_C_CheckButtonWidgetExist::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_CheckButtonWidgetExist;
 
 }
 

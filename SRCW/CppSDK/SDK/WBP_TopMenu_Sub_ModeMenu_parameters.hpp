@@ -27,12 +27,7 @@ public:
 	class UCommonMenuSubMenu*                     K2Node_Event_SubMenu;                              // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	TArray<class UTopMenuGameModeButton*>         K2Node_MakeArray_Array;                            // 0x0020(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(WBP_TopMenu_Sub_ModeMenu_C_ExecuteUbergraph_WBP_TopMenu_Sub_ModeMenu) == 0x000008, "Wrong alignment on WBP_TopMenu_Sub_ModeMenu_C_ExecuteUbergraph_WBP_TopMenu_Sub_ModeMenu");
-static_assert(sizeof(WBP_TopMenu_Sub_ModeMenu_C_ExecuteUbergraph_WBP_TopMenu_Sub_ModeMenu) == 0x000030, "Wrong size on WBP_TopMenu_Sub_ModeMenu_C_ExecuteUbergraph_WBP_TopMenu_Sub_ModeMenu");
-static_assert(offsetof(WBP_TopMenu_Sub_ModeMenu_C_ExecuteUbergraph_WBP_TopMenu_Sub_ModeMenu, EntryPoint) == 0x000000, "Member 'WBP_TopMenu_Sub_ModeMenu_C_ExecuteUbergraph_WBP_TopMenu_Sub_ModeMenu::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_ModeMenu_C_ExecuteUbergraph_WBP_TopMenu_Sub_ModeMenu, K2Node_Event_BeltButtonTypeArr) == 0x000008, "Member 'WBP_TopMenu_Sub_ModeMenu_C_ExecuteUbergraph_WBP_TopMenu_Sub_ModeMenu::K2Node_Event_BeltButtonTypeArr' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_ModeMenu_C_ExecuteUbergraph_WBP_TopMenu_Sub_ModeMenu, K2Node_Event_SubMenu) == 0x000018, "Member 'WBP_TopMenu_Sub_ModeMenu_C_ExecuteUbergraph_WBP_TopMenu_Sub_ModeMenu::K2Node_Event_SubMenu' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_ModeMenu_C_ExecuteUbergraph_WBP_TopMenu_Sub_ModeMenu, K2Node_MakeArray_Array) == 0x000020, "Member 'WBP_TopMenu_Sub_ModeMenu_C_ExecuteUbergraph_WBP_TopMenu_Sub_ModeMenu::K2Node_MakeArray_Array' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TopMenu_Sub_ModeMenu_C_ExecuteUbergraph_WBP_TopMenu_Sub_ModeMenu;
 
 // Function WBP_TopMenu_Sub_ModeMenu.WBP_TopMenu_Sub_ModeMenu_C.InitializeGameModeMenu
 // 0x0018 (0x0018 - 0x0000)
@@ -42,10 +37,7 @@ public:
 	TArray<ETopMenuGameMode>                      BeltButtonTypeArr;                                 // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	class UCommonMenuSubMenu*                     SubMenu;                                           // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TopMenu_Sub_ModeMenu_C_InitializeGameModeMenu) == 0x000008, "Wrong alignment on WBP_TopMenu_Sub_ModeMenu_C_InitializeGameModeMenu");
-static_assert(sizeof(WBP_TopMenu_Sub_ModeMenu_C_InitializeGameModeMenu) == 0x000018, "Wrong size on WBP_TopMenu_Sub_ModeMenu_C_InitializeGameModeMenu");
-static_assert(offsetof(WBP_TopMenu_Sub_ModeMenu_C_InitializeGameModeMenu, BeltButtonTypeArr) == 0x000000, "Member 'WBP_TopMenu_Sub_ModeMenu_C_InitializeGameModeMenu::BeltButtonTypeArr' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_ModeMenu_C_InitializeGameModeMenu, SubMenu) == 0x000010, "Member 'WBP_TopMenu_Sub_ModeMenu_C_InitializeGameModeMenu::SubMenu' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TopMenu_Sub_ModeMenu_C_InitializeGameModeMenu;
 
 }
 

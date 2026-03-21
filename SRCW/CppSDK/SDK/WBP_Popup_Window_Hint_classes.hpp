@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
+#include "UnionSystem_structs.hpp"
 #include "UMG_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK
@@ -109,43 +109,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Popup_Window_Hint_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Popup_Window_Hint_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Popup_Window_Hint_C")
 	}
 	static class UWBP_Popup_Window_Hint_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Popup_Window_Hint_C>();
 	}
 };
-static_assert(alignof(UWBP_Popup_Window_Hint_C) == 0x000008, "Wrong alignment on UWBP_Popup_Window_Hint_C");
-static_assert(sizeof(UWBP_Popup_Window_Hint_C) == 0x000598, "Wrong size on UWBP_Popup_Window_Hint_C");
-static_assert(offsetof(UWBP_Popup_Window_Hint_C, UberGraphFrame) == 0x0004C8, "Member 'UWBP_Popup_Window_Hint_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Hint_C, Popup_Out) == 0x0004D0, "Member 'UWBP_Popup_Window_Hint_C::Popup_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Hint_C, Popup_Loop) == 0x0004D8, "Member 'UWBP_Popup_Window_Hint_C::Popup_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Hint_C, Popup_In) == 0x0004E0, "Member 'UWBP_Popup_Window_Hint_C::Popup_In' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Hint_C, BackgroundBlur) == 0x0004E8, "Member 'UWBP_Popup_Window_Hint_C::BackgroundBlur' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Hint_C, Border_0) == 0x0004F0, "Member 'UWBP_Popup_Window_Hint_C::Border_0' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Hint_C, DSP_Popup_Omochao) == 0x0004F8, "Member 'UWBP_Popup_Window_Hint_C::DSP_Popup_Omochao' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Hint_C, OutOfContentButton) == 0x000500, "Member 'UWBP_Popup_Window_Hint_C::OutOfContentButton' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Hint_C, Overlay_Tips) == 0x000508, "Member 'UWBP_Popup_Window_Hint_C::Overlay_Tips' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Hint_C, Panel) == 0x000510, "Member 'UWBP_Popup_Window_Hint_C::Panel' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Hint_C, RihteArrow_01) == 0x000518, "Member 'UWBP_Popup_Window_Hint_C::RihteArrow_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Hint_C, RihteArrow_02) == 0x000520, "Member 'UWBP_Popup_Window_Hint_C::RihteArrow_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Hint_C, TextBase) == 0x000528, "Member 'UWBP_Popup_Window_Hint_C::TextBase' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Hint_C, TipsImage) == 0x000530, "Member 'UWBP_Popup_Window_Hint_C::TipsImage' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Hint_C, TXT_HintTitle) == 0x000538, "Member 'UWBP_Popup_Window_Hint_C::TXT_HintTitle' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Hint_C, TXT_Info) == 0x000540, "Member 'UWBP_Popup_Window_Hint_C::TXT_Info' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Hint_C, WBP_CMN_ScrollSnapPoint) == 0x000548, "Member 'UWBP_Popup_Window_Hint_C::WBP_CMN_ScrollSnapPoint' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Hint_C, WBP_FooterMenu_Sub_CommonBtn) == 0x000550, "Member 'UWBP_Popup_Window_Hint_C::WBP_FooterMenu_Sub_CommonBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Hint_C, WindowBase) == 0x000558, "Member 'UWBP_Popup_Window_Hint_C::WindowBase' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Hint_C, HintId) == 0x000560, "Member 'UWBP_Popup_Window_Hint_C::HintId' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Hint_C, PageIndex) == 0x000564, "Member 'UWBP_Popup_Window_Hint_C::PageIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Hint_C, PageNum) == 0x000568, "Member 'UWBP_Popup_Window_Hint_C::PageNum' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Hint_C, ImageWidgetTexture) == 0x000570, "Member 'UWBP_Popup_Window_Hint_C::ImageWidgetTexture' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Hint_C, bOpenAnimationEnd) == 0x000580, "Member 'UWBP_Popup_Window_Hint_C::bOpenAnimationEnd' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Hint_C, bImageWidgetAnimationRequest) == 0x000581, "Member 'UWBP_Popup_Window_Hint_C::bImageWidgetAnimationRequest' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Hint_C, bAutoEnableSubMenu) == 0x000582, "Member 'UWBP_Popup_Window_Hint_C::bAutoEnableSubMenu' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Hint_C, InputType) == 0x000583, "Member 'UWBP_Popup_Window_Hint_C::InputType' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Hint_C, CurrentText) == 0x000588, "Member 'UWBP_Popup_Window_Hint_C::CurrentText' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Popup_Window_Hint_C;
 
 }
 

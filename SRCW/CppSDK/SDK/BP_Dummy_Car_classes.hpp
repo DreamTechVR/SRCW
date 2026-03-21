@@ -36,26 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Dummy_Car_C">();
+		BP_STATIC_CLASS_IMPL("BP_Dummy_Car_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Dummy_Car_C")
 	}
 	static class ABP_Dummy_Car_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Dummy_Car_C>();
 	}
 };
-static_assert(alignof(ABP_Dummy_Car_C) == 0x000008, "Wrong alignment on ABP_Dummy_Car_C");
-static_assert(sizeof(ABP_Dummy_Car_C) == 0x0002E8, "Wrong size on ABP_Dummy_Car_C");
-static_assert(offsetof(ABP_Dummy_Car_C, SM_Speedcar_01_TireL_L1) == 0x000290, "Member 'ABP_Dummy_Car_C::SM_Speedcar_01_TireL_L1' has a wrong offset!");
-static_assert(offsetof(ABP_Dummy_Car_C, SM_Speedcar_01_TireL_L) == 0x000298, "Member 'ABP_Dummy_Car_C::SM_Speedcar_01_TireL_L' has a wrong offset!");
-static_assert(offsetof(ABP_Dummy_Car_C, SM_Speedcar_01_TireR_L1) == 0x0002A0, "Member 'ABP_Dummy_Car_C::SM_Speedcar_01_TireR_L1' has a wrong offset!");
-static_assert(offsetof(ABP_Dummy_Car_C, SM_Speedcar_01_TireR_L) == 0x0002A8, "Member 'ABP_Dummy_Car_C::SM_Speedcar_01_TireR_L' has a wrong offset!");
-static_assert(offsetof(ABP_Dummy_Car_C, SM_Speedcar_01_01_Side_L) == 0x0002B0, "Member 'ABP_Dummy_Car_C::SM_Speedcar_01_01_Side_L' has a wrong offset!");
-static_assert(offsetof(ABP_Dummy_Car_C, SM_Speedcar_01_Rear_L) == 0x0002B8, "Member 'ABP_Dummy_Car_C::SM_Speedcar_01_Rear_L' has a wrong offset!");
-static_assert(offsetof(ABP_Dummy_Car_C, SM_Speedcar_01_Front_L) == 0x0002C0, "Member 'ABP_Dummy_Car_C::SM_Speedcar_01_Front_L' has a wrong offset!");
-static_assert(offsetof(ABP_Dummy_Car_C, ST_Speedcar_00_SmallHandle_L) == 0x0002C8, "Member 'ABP_Dummy_Car_C::ST_Speedcar_00_SmallHandle_L' has a wrong offset!");
-static_assert(offsetof(ABP_Dummy_Car_C, SK_Sonic) == 0x0002D0, "Member 'ABP_Dummy_Car_C::SK_Sonic' has a wrong offset!");
-static_assert(offsetof(ABP_Dummy_Car_C, SK_Speedcar_00_SmallCockpit_L) == 0x0002D8, "Member 'ABP_Dummy_Car_C::SK_Speedcar_00_SmallCockpit_L' has a wrong offset!");
-static_assert(offsetof(ABP_Dummy_Car_C, DefaultSceneRoot) == 0x0002E0, "Member 'ABP_Dummy_Car_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_Dummy_Car_C;
 
 }
 

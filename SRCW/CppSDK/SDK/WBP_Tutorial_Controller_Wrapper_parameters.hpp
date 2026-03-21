@@ -32,16 +32,7 @@ public:
 	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Tutorial_Controller_Wrapper_C_Create) == 0x000008, "Wrong alignment on WBP_Tutorial_Controller_Wrapper_C_Create");
-static_assert(sizeof(WBP_Tutorial_Controller_Wrapper_C_Create) == 0x000040, "Wrong size on WBP_Tutorial_Controller_Wrapper_C_Create");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_Create, InRowName) == 0x000000, "Member 'WBP_Tutorial_Controller_Wrapper_C_Create::InRowName' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_Create, InType) == 0x000008, "Member 'WBP_Tutorial_Controller_Wrapper_C_Create::InType' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_Create, InPlatform) == 0x000009, "Member 'WBP_Tutorial_Controller_Wrapper_C_Create::InPlatform' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_Create, RowName) == 0x00000C, "Member 'WBP_Tutorial_Controller_Wrapper_C_Create::RowName' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_Create, CallFunc_CreateController_NewParam) == 0x000018, "Member 'WBP_Tutorial_Controller_Wrapper_C_Create::CallFunc_CreateController_NewParam' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_Create, CallFunc_GetDataTableRowFromName_OutRow) == 0x000020, "Member 'WBP_Tutorial_Controller_Wrapper_C_Create::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_Create, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000038, "Member 'WBP_Tutorial_Controller_Wrapper_C_Create::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_Create, CallFunc_IsValid_ReturnValue) == 0x000039, "Member 'WBP_Tutorial_Controller_Wrapper_C_Create::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Tutorial_Controller_Wrapper_C_Create;
 
 // Function WBP_Tutorial_Controller_Wrapper.WBP_Tutorial_Controller_Wrapper_C.CreateController
 // 0x00E8 (0x00E8 - 0x0000)
@@ -94,42 +85,7 @@ public:
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x00D8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_ObjectObject_ReturnValue;        // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Tutorial_Controller_Wrapper_C_CreateController) == 0x000008, "Wrong alignment on WBP_Tutorial_Controller_Wrapper_C_CreateController");
-static_assert(sizeof(WBP_Tutorial_Controller_Wrapper_C_CreateController) == 0x0000E8, "Wrong size on WBP_Tutorial_Controller_Wrapper_C_CreateController");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, InType) == 0x000000, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::InType' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, InPlatform) == 0x000001, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::InPlatform' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, newParam) == 0x000008, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::newParam' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, NeedToRemove) == 0x000010, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::NeedToRemove' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, RowName) == 0x000020, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::RowName' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, Temp_int_Array_Index_Variable) == 0x000028, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_GetAllChildren_ReturnValue) == 0x000030, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_Array_Get_Item) == 0x000048, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_Array_Length_ReturnValue_1) == 0x000050, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_RemoveChild_ReturnValue) == 0x000054, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_RemoveChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, Temp_int_Loop_Counter_Variable) == 0x000058, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_Less_IntInt_ReturnValue) == 0x00005C, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_Add_IntInt_ReturnValue) == 0x000060, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, Temp_int_Loop_Counter_Variable_1) == 0x000064, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_Less_IntInt_ReturnValue_1) == 0x000068, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_Add_IntInt_ReturnValue_1) == 0x00006C, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, Temp_int_Array_Index_Variable_1) == 0x000070, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_Array_Get_Item_1) == 0x000078, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_GetChildAt_ReturnValue) == 0x000080, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, K2Node_DynamicCast_AsCommon_UIController) == 0x000088, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::K2Node_DynamicCast_AsCommon_UIController' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, K2Node_DynamicCast_bSuccess) == 0x000090, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, K2Node_DynamicCast_AsCommon_UIController_1) == 0x000098, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::K2Node_DynamicCast_AsCommon_UIController_1' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, K2Node_DynamicCast_bSuccess_1) == 0x0000A0, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_Array_Add_ReturnValue) == 0x0000A4, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_GetPlatformControllerWidgetClass_OutClass) == 0x0000A8, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_GetPlatformControllerWidgetClass_OutClass' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_IsValidClass_ReturnValue) == 0x0000B0, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_NotEqual_ClassClass_ReturnValue) == 0x0000B1, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_NotEqual_ClassClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_GetPlayerController_ReturnValue) == 0x0000B8, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_Create_ReturnValue) == 0x0000C0, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, K2Node_DynamicCast_AsCommon_UIController_2) == 0x0000C8, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::K2Node_DynamicCast_AsCommon_UIController_2' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, K2Node_DynamicCast_bSuccess_2) == 0x0000D0, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_AddChild_ReturnValue) == 0x0000D8, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_NotEqual_ObjectObject_ReturnValue) == 0x0000E0, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_NotEqual_ObjectObject_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Tutorial_Controller_Wrapper_C_CreateController;
 
 // Function WBP_Tutorial_Controller_Wrapper.WBP_Tutorial_Controller_Wrapper_C.CreateHintID
 // 0x0038 (0x0038 - 0x0000)
@@ -152,20 +108,7 @@ public:
 	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x0033(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CallFunc_GetValidValue_ReturnValue_1;              // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Tutorial_Controller_Wrapper_C_CreateHintID) == 0x000008, "Wrong alignment on WBP_Tutorial_Controller_Wrapper_C_CreateHintID");
-static_assert(sizeof(WBP_Tutorial_Controller_Wrapper_C_CreateHintID) == 0x000038, "Wrong size on WBP_Tutorial_Controller_Wrapper_C_CreateHintID");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateHintID, InHintId) == 0x000000, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateHintID::InHintId' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateHintID, bIsKeyboard) == 0x000001, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateHintID::bIsKeyboard' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateHintID, CallFunc_GetEnumeratorName_ReturnValue) == 0x000004, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateHintID::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateHintID, CallFunc_GetOwningPlayer_ReturnValue) == 0x000010, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateHintID::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateHintID, K2Node_DynamicCast_AsWBP_Tutorial_Controller_Key) == 0x000018, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateHintID::K2Node_DynamicCast_AsWBP_Tutorial_Controller_Key' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateHintID, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateHintID::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateHintID, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000028, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateHintID::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateHintID, K2Node_DynamicCast_bSuccess_1) == 0x000030, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateHintID::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateHintID, CallFunc_CalcTutorialControllerType_Type) == 0x000031, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateHintID::CallFunc_CalcTutorialControllerType_Type' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateHintID, CallFunc_CalcTutorialControllerType_Platform) == 0x000032, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateHintID::CallFunc_CalcTutorialControllerType_Platform' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateHintID, CallFunc_GetValidValue_ReturnValue) == 0x000033, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateHintID::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateHintID, CallFunc_GetValidValue_ReturnValue_1) == 0x000034, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateHintID::CallFunc_GetValidValue_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Tutorial_Controller_Wrapper_C_CreateHintID;
 
 // Function WBP_Tutorial_Controller_Wrapper.WBP_Tutorial_Controller_Wrapper_C.CreateTutorialAction
 // 0x0028 (0x0028 - 0x0000)
@@ -183,17 +126,7 @@ public:
 	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CallFunc_GetValidValue_ReturnValue_1;              // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Tutorial_Controller_Wrapper_C_CreateTutorialAction) == 0x000008, "Wrong alignment on WBP_Tutorial_Controller_Wrapper_C_CreateTutorialAction");
-static_assert(sizeof(WBP_Tutorial_Controller_Wrapper_C_CreateTutorialAction) == 0x000028, "Wrong size on WBP_Tutorial_Controller_Wrapper_C_CreateTutorialAction");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateTutorialAction, InTutorialAction) == 0x000000, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateTutorialAction::InTutorialAction' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateTutorialAction, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateTutorialAction::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateTutorialAction, CallFunc_GetEnumeratorName_ReturnValue) == 0x000010, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateTutorialAction::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateTutorialAction, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000018, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateTutorialAction::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateTutorialAction, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateTutorialAction::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateTutorialAction, CallFunc_CalcTutorialControllerType_Type) == 0x000021, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateTutorialAction::CallFunc_CalcTutorialControllerType_Type' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateTutorialAction, CallFunc_CalcTutorialControllerType_Platform) == 0x000022, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateTutorialAction::CallFunc_CalcTutorialControllerType_Platform' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateTutorialAction, CallFunc_GetValidValue_ReturnValue) == 0x000023, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateTutorialAction::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateTutorialAction, CallFunc_GetValidValue_ReturnValue_1) == 0x000024, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateTutorialAction::CallFunc_GetValidValue_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Tutorial_Controller_Wrapper_C_CreateTutorialAction;
 
 // Function WBP_Tutorial_Controller_Wrapper.WBP_Tutorial_Controller_Wrapper_C.CreateTutorialActionKeyboard
 // 0x0018 (0x0018 - 0x0000)
@@ -205,11 +138,7 @@ public:
 	class UWBP_Tutorial_Controller_Key_C*         K2Node_DynamicCast_AsWBP_Tutorial_Controller_Key;  // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Tutorial_Controller_Wrapper_C_CreateTutorialActionKeyboard) == 0x000008, "Wrong alignment on WBP_Tutorial_Controller_Wrapper_C_CreateTutorialActionKeyboard");
-static_assert(sizeof(WBP_Tutorial_Controller_Wrapper_C_CreateTutorialActionKeyboard) == 0x000018, "Wrong size on WBP_Tutorial_Controller_Wrapper_C_CreateTutorialActionKeyboard");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateTutorialActionKeyboard, tutorialAction) == 0x000000, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateTutorialActionKeyboard::tutorialAction' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateTutorialActionKeyboard, K2Node_DynamicCast_AsWBP_Tutorial_Controller_Key) == 0x000008, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateTutorialActionKeyboard::K2Node_DynamicCast_AsWBP_Tutorial_Controller_Key' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateTutorialActionKeyboard, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateTutorialActionKeyboard::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Tutorial_Controller_Wrapper_C_CreateTutorialActionKeyboard;
 
 }
 

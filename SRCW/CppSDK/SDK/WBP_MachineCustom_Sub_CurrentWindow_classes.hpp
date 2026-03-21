@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -46,24 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MachineCustom_Sub_CurrentWindow_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MachineCustom_Sub_CurrentWindow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MachineCustom_Sub_CurrentWindow_C")
 	}
 	static class UWBP_MachineCustom_Sub_CurrentWindow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MachineCustom_Sub_CurrentWindow_C>();
 	}
 };
-static_assert(alignof(UWBP_MachineCustom_Sub_CurrentWindow_C) == 0x000008, "Wrong alignment on UWBP_MachineCustom_Sub_CurrentWindow_C");
-static_assert(sizeof(UWBP_MachineCustom_Sub_CurrentWindow_C) == 0x000358, "Wrong size on UWBP_MachineCustom_Sub_CurrentWindow_C");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CurrentWindow_C, UberGraphFrame) == 0x0002F8, "Member 'UWBP_MachineCustom_Sub_CurrentWindow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CurrentWindow_C, Window_Out) == 0x000300, "Member 'UWBP_MachineCustom_Sub_CurrentWindow_C::Window_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CurrentWindow_C, Window_Loop) == 0x000308, "Member 'UWBP_MachineCustom_Sub_CurrentWindow_C::Window_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CurrentWindow_C, Window_In) == 0x000310, "Member 'UWBP_MachineCustom_Sub_CurrentWindow_C::Window_In' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CurrentWindow_C, WidgetSwitcher_Info) == 0x000318, "Member 'UWBP_MachineCustom_Sub_CurrentWindow_C::WidgetSwitcher_Info' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CurrentWindow_C, OnInAnimFinished) == 0x000320, "Member 'UWBP_MachineCustom_Sub_CurrentWindow_C::OnInAnimFinished' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CurrentWindow_C, OnOutAnimFinished) == 0x000330, "Member 'UWBP_MachineCustom_Sub_CurrentWindow_C::OnOutAnimFinished' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CurrentWindow_C, IsVisible_) == 0x000340, "Member 'UWBP_MachineCustom_Sub_CurrentWindow_C::IsVisible_' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CurrentWindow_C, OnClicked) == 0x000348, "Member 'UWBP_MachineCustom_Sub_CurrentWindow_C::OnClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MachineCustom_Sub_CurrentWindow_C;
 
 }
 

@@ -32,19 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GadgetCustom_Sub_HexagonCursor_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GadgetCustom_Sub_HexagonCursor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GadgetCustom_Sub_HexagonCursor_C")
 	}
 	static class UWBP_GadgetCustom_Sub_HexagonCursor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GadgetCustom_Sub_HexagonCursor_C>();
 	}
 };
-static_assert(alignof(UWBP_GadgetCustom_Sub_HexagonCursor_C) == 0x000008, "Wrong alignment on UWBP_GadgetCustom_Sub_HexagonCursor_C");
-static_assert(sizeof(UWBP_GadgetCustom_Sub_HexagonCursor_C) == 0x000300, "Wrong size on UWBP_GadgetCustom_Sub_HexagonCursor_C");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_HexagonCursor_C, Cursor_01) == 0x0002E0, "Member 'UWBP_GadgetCustom_Sub_HexagonCursor_C::Cursor_01' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_HexagonCursor_C, Cursor_02) == 0x0002E8, "Member 'UWBP_GadgetCustom_Sub_HexagonCursor_C::Cursor_02' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_HexagonCursor_C, Cursor_03) == 0x0002F0, "Member 'UWBP_GadgetCustom_Sub_HexagonCursor_C::Cursor_03' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_HexagonCursor_C, WidgetSwitcher) == 0x0002F8, "Member 'UWBP_GadgetCustom_Sub_HexagonCursor_C::WidgetSwitcher' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GadgetCustom_Sub_HexagonCursor_C;
 
 }
 

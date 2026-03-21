@@ -23,9 +23,7 @@ struct WBP_Result_RewardGetDisplay_C_CreateRewardGetWindow final
 public:
 	bool                                          bInSetFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_RewardGetDisplay_C_CreateRewardGetWindow) == 0x000001, "Wrong alignment on WBP_Result_RewardGetDisplay_C_CreateRewardGetWindow");
-static_assert(sizeof(WBP_Result_RewardGetDisplay_C_CreateRewardGetWindow) == 0x000001, "Wrong size on WBP_Result_RewardGetDisplay_C_CreateRewardGetWindow");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_CreateRewardGetWindow, bInSetFocus) == 0x000000, "Member 'WBP_Result_RewardGetDisplay_C_CreateRewardGetWindow::bInSetFocus' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_RewardGetDisplay_C_CreateRewardGetWindow;
 
 // Function WBP_Result_RewardGetDisplay.WBP_Result_RewardGetDisplay_C.ExecuteUbergraph_WBP_Result_RewardGetDisplay
 // 0x00E0 (0x00E0 - 0x0000)
@@ -77,44 +75,7 @@ public:
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x00D7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay) == 0x000008, "Wrong alignment on WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay");
-static_assert(sizeof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay) == 0x0000E0, "Wrong size on WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, EntryPoint) == 0x000000, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, K2Node_DynamicCast_AsWBP_Item_Get_Window_Mini) == 0x000008, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::K2Node_DynamicCast_AsWBP_Item_Get_Window_Mini' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, K2Node_CustomEvent_InRewardGetWindow) == 0x000018, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::K2Node_CustomEvent_InRewardGetWindow' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, K2Node_CustomEvent_InRateRank) == 0x000020, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::K2Node_CustomEvent_InRateRank' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, K2Node_CustomEvent_InRewardGetWindowParam) == 0x000028, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::K2Node_CustomEvent_InRewardGetWindowParam' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, K2Node_CustomEvent_bInWindowTimeClose) == 0x000038, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::K2Node_CustomEvent_bInWindowTimeClose' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, K2Node_CustomEvent_InWindowZOrder) == 0x00003C, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::K2Node_CustomEvent_InWindowZOrder' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, CallFunc_IsValid_ReturnValue_1) == 0x000040, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, CallFunc_GetValidValue_ReturnValue) == 0x000041, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, K2Node_Event_bInSetFocus) == 0x000042, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::K2Node_Event_bInSetFocus' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, CallFunc_GetOwningPlayer_ReturnValue) == 0x000048, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, CallFunc_IsValid_ReturnValue_2) == 0x000050, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, K2Node_CreateDelegate_OutputDelegate) == 0x000054, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, K2Node_CustomEvent_InRankUpTitleText) == 0x000068, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::K2Node_CustomEvent_InRankUpTitleText' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, K2Node_CustomEvent_InRewardGetTitleText) == 0x000078, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::K2Node_CustomEvent_InRewardGetTitleText' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, K2Node_CustomEvent_InCompleteTitleText) == 0x000088, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::K2Node_CustomEvent_InCompleteTitleText' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, Temp_int_Array_Index_Variable) == 0x000098, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, Temp_bool_True_if_break_was_hit_Variable) == 0x00009C, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, CallFunc_Not_PreBool_ReturnValue) == 0x00009D, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, K2Node_CustomEvent_bInSetFocus) == 0x00009E, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::K2Node_CustomEvent_bInSetFocus' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, CallFunc_BooleanAND_ReturnValue) == 0x00009F, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, Temp_int_Loop_Counter_Variable) == 0x0000A0, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, CallFunc_Add_IntInt_ReturnValue) == 0x0000A4, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, K2Node_DynamicCast_AsWBP_Item_Get_Window_Mini_1) == 0x0000A8, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::K2Node_DynamicCast_AsWBP_Item_Get_Window_Mini_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, K2Node_DynamicCast_bSuccess_1) == 0x0000B0, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, CallFunc_IsInViewport_ReturnValue) == 0x0000B1, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::CallFunc_IsInViewport_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, CallFunc_Create_ReturnValue) == 0x0000B8, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, CallFunc_Array_Get_Item) == 0x0000C0, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, CallFunc_Array_Length_ReturnValue) == 0x0000D0, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, CallFunc_CheckDisplayReward_ReturnValue) == 0x0000D4, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::CallFunc_CheckDisplayReward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, CallFunc_Less_IntInt_ReturnValue) == 0x0000D5, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, CallFunc_BooleanAND_ReturnValue_1) == 0x0000D6, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, K2Node_SwitchEnum_CmpSuccess) == 0x0000D7, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay, CallFunc_IsValid_ReturnValue_3) == 0x0000D8, "Member 'WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_RewardGetDisplay_C_ExecuteUbergraph_WBP_Result_RewardGetDisplay;
 
 // Function WBP_Result_RewardGetDisplay.WBP_Result_RewardGetDisplay_C.SetModeTitleText
 // 0x0030 (0x0030 - 0x0000)
@@ -125,11 +86,7 @@ public:
 	class FText                                   InRewardGetTitleText;                              // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 	class FText                                   InCompleteTitleText;                               // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_Result_RewardGetDisplay_C_SetModeTitleText) == 0x000008, "Wrong alignment on WBP_Result_RewardGetDisplay_C_SetModeTitleText");
-static_assert(sizeof(WBP_Result_RewardGetDisplay_C_SetModeTitleText) == 0x000030, "Wrong size on WBP_Result_RewardGetDisplay_C_SetModeTitleText");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_SetModeTitleText, InRankUpTitleText) == 0x000000, "Member 'WBP_Result_RewardGetDisplay_C_SetModeTitleText::InRankUpTitleText' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_SetModeTitleText, InRewardGetTitleText) == 0x000010, "Member 'WBP_Result_RewardGetDisplay_C_SetModeTitleText::InRewardGetTitleText' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_SetModeTitleText, InCompleteTitleText) == 0x000020, "Member 'WBP_Result_RewardGetDisplay_C_SetModeTitleText::InCompleteTitleText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_RewardGetDisplay_C_SetModeTitleText;
 
 // Function WBP_Result_RewardGetDisplay.WBP_Result_RewardGetDisplay_C.SetupResultRankRewardGetWindow
 // 0x0001 (0x0001 - 0x0000)
@@ -138,9 +95,7 @@ struct WBP_Result_RewardGetDisplay_C_SetupResultRankRewardGetWindow final
 public:
 	bool                                          bInSetFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_RewardGetDisplay_C_SetupResultRankRewardGetWindow) == 0x000001, "Wrong alignment on WBP_Result_RewardGetDisplay_C_SetupResultRankRewardGetWindow");
-static_assert(sizeof(WBP_Result_RewardGetDisplay_C_SetupResultRankRewardGetWindow) == 0x000001, "Wrong size on WBP_Result_RewardGetDisplay_C_SetupResultRankRewardGetWindow");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_SetupResultRankRewardGetWindow, bInSetFocus) == 0x000000, "Member 'WBP_Result_RewardGetDisplay_C_SetupResultRankRewardGetWindow::bInSetFocus' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_RewardGetDisplay_C_SetupResultRankRewardGetWindow;
 
 // Function WBP_Result_RewardGetDisplay.WBP_Result_RewardGetDisplay_C.SetWindowParamForResult
 // 0x0028 (0x0028 - 0x0000)
@@ -155,13 +110,7 @@ public:
 	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         InWindowZOrder;                                    // 0x0024(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_RewardGetDisplay_C_SetWindowParamForResult) == 0x000008, "Wrong alignment on WBP_Result_RewardGetDisplay_C_SetWindowParamForResult");
-static_assert(sizeof(WBP_Result_RewardGetDisplay_C_SetWindowParamForResult) == 0x000028, "Wrong size on WBP_Result_RewardGetDisplay_C_SetWindowParamForResult");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_SetWindowParamForResult, InRewardGetWindow) == 0x000000, "Member 'WBP_Result_RewardGetDisplay_C_SetWindowParamForResult::InRewardGetWindow' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_SetWindowParamForResult, InRateRank) == 0x000008, "Member 'WBP_Result_RewardGetDisplay_C_SetWindowParamForResult::InRateRank' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_SetWindowParamForResult, InRewardGetWindowParam) == 0x000010, "Member 'WBP_Result_RewardGetDisplay_C_SetWindowParamForResult::InRewardGetWindowParam' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_SetWindowParamForResult, bInWindowTimeClose) == 0x000020, "Member 'WBP_Result_RewardGetDisplay_C_SetWindowParamForResult::bInWindowTimeClose' has a wrong offset!");
-static_assert(offsetof(WBP_Result_RewardGetDisplay_C_SetWindowParamForResult, InWindowZOrder) == 0x000024, "Member 'WBP_Result_RewardGetDisplay_C_SetWindowParamForResult::InWindowZOrder' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_RewardGetDisplay_C_SetWindowParamForResult;
 
 }
 

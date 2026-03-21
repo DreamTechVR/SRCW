@@ -27,17 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_HUD_Sub_Irregular_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_HUD_Sub_Irregular_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_HUD_Sub_Irregular_C")
 	}
 	static class UWBP_Race_HUD_Sub_Irregular_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_HUD_Sub_Irregular_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_HUD_Sub_Irregular_C) == 0x000008, "Wrong alignment on UWBP_Race_HUD_Sub_Irregular_C");
-static_assert(sizeof(UWBP_Race_HUD_Sub_Irregular_C) == 0x0002F0, "Wrong size on UWBP_Race_HUD_Sub_Irregular_C");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Irregular_C, Irregular_Icon) == 0x0002E0, "Member 'UWBP_Race_HUD_Sub_Irregular_C::Irregular_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Irregular_C, Irregular_Icon_Eff) == 0x0002E8, "Member 'UWBP_Race_HUD_Sub_Irregular_C::Irregular_Icon_Eff' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_HUD_Sub_Irregular_C;
 
 }
 

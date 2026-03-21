@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "EGadgetCustomizeSequenceMode_structs.hpp"
-#include "UnionSystem_structs.hpp"
 #include "EMachineCustomizeSequenceMode_structs.hpp"
 #include "UNION_structs.hpp"
+#include "UnionSystem_structs.hpp"
+#include "EGadgetCustomizeSequenceMode_structs.hpp"
 
 
 namespace SDK
@@ -43,24 +43,7 @@ public:
 	uint8                                         Pad_4E[0x2];                                       // 0x004E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABP_StickerMasterSystem_C*              StickerMasterSystem_58_ED1D6E5649FC86C5B26A768905EAC552; // 0x0050(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FST_GarageData) == 0x000008, "Wrong alignment on FST_GarageData");
-static_assert(sizeof(FST_GarageData) == 0x000058, "Wrong size on FST_GarageData");
-static_assert(offsetof(FST_GarageData, Camera_54_CB1C91D746CCC78347A4339BE4BF43FD) == 0x000000, "Member 'FST_GarageData::Camera_54_CB1C91D746CCC78347A4339BE4BF43FD' has a wrong offset!");
-static_assert(offsetof(FST_GarageData, Turntable_9_3E01EA1A4FE05505A0BE9A824C0BF23C) == 0x000008, "Member 'FST_GarageData::Turntable_9_3E01EA1A4FE05505A0BE9A824C0BF23C' has a wrong offset!");
-static_assert(offsetof(FST_GarageData, PlayerIndex_15_9C4BC3EB43A93C96AA1A0CA02AECC50E) == 0x000010, "Member 'FST_GarageData::PlayerIndex_15_9C4BC3EB43A93C96AA1A0CA02AECC50E' has a wrong offset!");
-static_assert(offsetof(FST_GarageData, Racer_18_AA970EC54DEAB02B6A792B8C419FAC1F) == 0x000018, "Member 'FST_GarageData::Racer_18_AA970EC54DEAB02B6A792B8C419FAC1F' has a wrong offset!");
-static_assert(offsetof(FST_GarageData, Footer_21_410F2EEA43AD88EBE3C91D85FC00AABD) == 0x000020, "Member 'FST_GarageData::Footer_21_410F2EEA43AD88EBE3C91D85FC00AABD' has a wrong offset!");
-static_assert(offsetof(FST_GarageData, RootWidget_60_63F12E6848D1E0C7B9E12388BC5ED063) == 0x000028, "Member 'FST_GarageData::RootWidget_60_63F12E6848D1E0C7B9E12388BC5ED063' has a wrong offset!");
-static_assert(offsetof(FST_GarageData, InputReceiver_27_D28F119C412DE9B91ADBECB36DFA5A90) == 0x000030, "Member 'FST_GarageData::InputReceiver_27_D28F119C412DE9B91ADBECB36DFA5A90' has a wrong offset!");
-static_assert(offsetof(FST_GarageData, ParamWindow_59_792FE73A4CDACD98E8189A95C99958A5) == 0x000038, "Member 'FST_GarageData::ParamWindow_59_792FE73A4CDACD98E8189A95C99958A5' has a wrong offset!");
-static_assert(offsetof(FST_GarageData, DummyWidget_33_8C15CE7C4BF0B523BB3FB0A368841457) == 0x000040, "Member 'FST_GarageData::DummyWidget_33_8C15CE7C4BF0B523BB3FB0A368841457' has a wrong offset!");
-static_assert(offsetof(FST_GarageData, CurrentMachineIdMachine_38_4991BB52473ED2ACE3897EA683267828) == 0x000048, "Member 'FST_GarageData::CurrentMachineIdMachine_38_4991BB52473ED2ACE3897EA683267828' has a wrong offset!");
-static_assert(offsetof(FST_GarageData, CurrentMachineIdGadget_40_242B9A5440719EA35EBCF6A1138EDC91) == 0x000049, "Member 'FST_GarageData::CurrentMachineIdGadget_40_242B9A5440719EA35EBCF6A1138EDC91' has a wrong offset!");
-static_assert(offsetof(FST_GarageData, MachineCustomizeSequenceMode_43_E34E2A344E3AB7E6A4988486E264CF86) == 0x00004A, "Member 'FST_GarageData::MachineCustomizeSequenceMode_43_E34E2A344E3AB7E6A4988486E264CF86' has a wrong offset!");
-static_assert(offsetof(FST_GarageData, GadgetCustomizeSequenceMode_46_318112494FC5235BED09EABEF86CC130) == 0x00004B, "Member 'FST_GarageData::GadgetCustomizeSequenceMode_46_318112494FC5235BED09EABEF86CC130' has a wrong offset!");
-static_assert(offsetof(FST_GarageData, MachineIdShortcut_49_7710E539442A535D69ED50AA545CC34C) == 0x00004C, "Member 'FST_GarageData::MachineIdShortcut_49_7710E539442A535D69ED50AA545CC34C' has a wrong offset!");
-static_assert(offsetof(FST_GarageData, MachinePartsTypeShortcut_53_65D03D224764D4C403B72A85A2E4DCEA) == 0x00004D, "Member 'FST_GarageData::MachinePartsTypeShortcut_53_65D03D224764D4C403B72A85A2E4DCEA' has a wrong offset!");
-static_assert(offsetof(FST_GarageData, StickerMasterSystem_58_ED1D6E5649FC86C5B26A768905EAC552) == 0x000050, "Member 'FST_GarageData::StickerMasterSystem_58_ED1D6E5649FC86C5B26A768905EAC552' has a wrong offset!");
+DUMPER7_ASSERTS_FST_GarageData;
 
 }
 

@@ -39,24 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Popup_Window_Tutorial_Sub_Cover_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Popup_Window_Tutorial_Sub_Cover_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Popup_Window_Tutorial_Sub_Cover_C")
 	}
 	static class UWBP_Popup_Window_Tutorial_Sub_Cover_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Popup_Window_Tutorial_Sub_Cover_C>();
 	}
 };
-static_assert(alignof(UWBP_Popup_Window_Tutorial_Sub_Cover_C) == 0x000008, "Wrong alignment on UWBP_Popup_Window_Tutorial_Sub_Cover_C");
-static_assert(sizeof(UWBP_Popup_Window_Tutorial_Sub_Cover_C) == 0x000328, "Wrong size on UWBP_Popup_Window_Tutorial_Sub_Cover_C");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_Sub_Cover_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Popup_Window_Tutorial_Sub_Cover_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_Sub_Cover_C, OpEd_Out) == 0x0002E8, "Member 'UWBP_Popup_Window_Tutorial_Sub_Cover_C::OpEd_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_Sub_Cover_C, OpEd_Loop) == 0x0002F0, "Member 'UWBP_Popup_Window_Tutorial_Sub_Cover_C::OpEd_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_Sub_Cover_C, OpEd_In) == 0x0002F8, "Member 'UWBP_Popup_Window_Tutorial_Sub_Cover_C::OpEd_In' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_Sub_Cover_C, base) == 0x000300, "Member 'UWBP_Popup_Window_Tutorial_Sub_Cover_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_Sub_Cover_C, BG_Blue) == 0x000308, "Member 'UWBP_Popup_Window_Tutorial_Sub_Cover_C::BG_Blue' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_Sub_Cover_C, BG_Blue_Addtive) == 0x000310, "Member 'UWBP_Popup_Window_Tutorial_Sub_Cover_C::BG_Blue_Addtive' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_Sub_Cover_C, Logo) == 0x000318, "Member 'UWBP_Popup_Window_Tutorial_Sub_Cover_C::Logo' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_Sub_Cover_C, TXT_OpEd) == 0x000320, "Member 'UWBP_Popup_Window_Tutorial_Sub_Cover_C::TXT_OpEd' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Popup_Window_Tutorial_Sub_Cover_C;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -66,26 +66,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_TopMenu_Sub_Btn_Player_Offline_C">();
+		BP_STATIC_CLASS_IMPL("WBP_TopMenu_Sub_Btn_Player_Offline_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_TopMenu_Sub_Btn_Player_Offline_C")
 	}
 	static class UWBP_TopMenu_Sub_Btn_Player_Offline_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_TopMenu_Sub_Btn_Player_Offline_C>();
 	}
 };
-static_assert(alignof(UWBP_TopMenu_Sub_Btn_Player_Offline_C) == 0x000008, "Wrong alignment on UWBP_TopMenu_Sub_Btn_Player_Offline_C");
-static_assert(sizeof(UWBP_TopMenu_Sub_Btn_Player_Offline_C) == 0x000538, "Wrong size on UWBP_TopMenu_Sub_Btn_Player_Offline_C");
-static_assert(offsetof(UWBP_TopMenu_Sub_Btn_Player_Offline_C, UberGraphFrame) == 0x0004D8, "Member 'UWBP_TopMenu_Sub_Btn_Player_Offline_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Sub_Btn_Player_Offline_C, BtnCursor) == 0x0004E0, "Member 'UWBP_TopMenu_Sub_Btn_Player_Offline_C::BtnCursor' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Sub_Btn_Player_Offline_C, MouseInteraction) == 0x0004E8, "Member 'UWBP_TopMenu_Sub_Btn_Player_Offline_C::MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Sub_Btn_Player_Offline_C, PAT_BtnBase) == 0x0004F0, "Member 'UWBP_TopMenu_Sub_Btn_Player_Offline_C::PAT_BtnBase' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Sub_Btn_Player_Offline_C, RaceFlagWave) == 0x0004F8, "Member 'UWBP_TopMenu_Sub_Btn_Player_Offline_C::RaceFlagWave' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Sub_Btn_Player_Offline_C, SelectBright) == 0x000500, "Member 'UWBP_TopMenu_Sub_Btn_Player_Offline_C::SelectBright' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Sub_Btn_Player_Offline_C, Shadow) == 0x000508, "Member 'UWBP_TopMenu_Sub_Btn_Player_Offline_C::Shadow' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Sub_Btn_Player_Offline_C, TXT_Player_Active) == 0x000510, "Member 'UWBP_TopMenu_Sub_Btn_Player_Offline_C::TXT_Player_Active' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Sub_Btn_Player_Offline_C, TXT_Player_Select) == 0x000518, "Member 'UWBP_TopMenu_Sub_Btn_Player_Offline_C::TXT_Player_Select' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Sub_Btn_Player_Offline_C, NewVar_0) == 0x000520, "Member 'UWBP_TopMenu_Sub_Btn_Player_Offline_C::NewVar_0' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Sub_Btn_Player_Offline_C, PlayerCountText) == 0x000528, "Member 'UWBP_TopMenu_Sub_Btn_Player_Offline_C::PlayerCountText' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_TopMenu_Sub_Btn_Player_Offline_C;
 
 }
 

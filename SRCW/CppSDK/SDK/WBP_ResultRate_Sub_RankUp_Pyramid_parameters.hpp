@@ -32,16 +32,7 @@ public:
 	uint8                                         Pad_4B[0x1];                                       // 0x004B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x004C(0x0004)()
 };
-static_assert(alignof(WBP_ResultRate_Sub_RankUp_Pyramid_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Pyramid) == 0x000008, "Wrong alignment on WBP_ResultRate_Sub_RankUp_Pyramid_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Pyramid");
-static_assert(sizeof(WBP_ResultRate_Sub_RankUp_Pyramid_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Pyramid) == 0x000050, "Wrong size on WBP_ResultRate_Sub_RankUp_Pyramid_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Pyramid");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Pyramid_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Pyramid, EntryPoint) == 0x000000, "Member 'WBP_ResultRate_Sub_RankUp_Pyramid_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Pyramid::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Pyramid_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Pyramid, K2Node_Event_MyGeometry) == 0x000004, "Member 'WBP_ResultRate_Sub_RankUp_Pyramid_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Pyramid::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Pyramid_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Pyramid, K2Node_Event_InDeltaTime) == 0x00003C, "Member 'WBP_ResultRate_Sub_RankUp_Pyramid_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Pyramid::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Pyramid_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Pyramid, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000040, "Member 'WBP_ResultRate_Sub_RankUp_Pyramid_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Pyramid::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Pyramid_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Pyramid, CallFunc_GreaterEqual_DoubleDouble_ReturnValue) == 0x000048, "Member 'WBP_ResultRate_Sub_RankUp_Pyramid_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Pyramid::CallFunc_GreaterEqual_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Pyramid_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Pyramid, CallFunc_Greater_DoubleDouble_ReturnValue) == 0x000049, "Member 'WBP_ResultRate_Sub_RankUp_Pyramid_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Pyramid::CallFunc_Greater_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Pyramid_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Pyramid, CallFunc_LessEqual_DoubleDouble_ReturnValue) == 0x00004A, "Member 'WBP_ResultRate_Sub_RankUp_Pyramid_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Pyramid::CallFunc_LessEqual_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Pyramid_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Pyramid, CallFunc_SoundPlay_ReturnValue) == 0x00004C, "Member 'WBP_ResultRate_Sub_RankUp_Pyramid_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Pyramid::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ResultRate_Sub_RankUp_Pyramid_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankUp_Pyramid;
 
 // Function WBP_ResultRate_Sub_RankUp_Pyramid.WBP_ResultRate_Sub_RankUp_Pyramid_C.Set Now Rank Impl
 // 0x0010 (0x0010 - 0x0000)
@@ -51,10 +42,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_PlayAnimation_StartAtTime_ImplicitCast;   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ResultRate_Sub_RankUp_Pyramid_C_Set_Now_Rank_Impl) == 0x000008, "Wrong alignment on WBP_ResultRate_Sub_RankUp_Pyramid_C_Set_Now_Rank_Impl");
-static_assert(sizeof(WBP_ResultRate_Sub_RankUp_Pyramid_C_Set_Now_Rank_Impl) == 0x000010, "Wrong size on WBP_ResultRate_Sub_RankUp_Pyramid_C_Set_Now_Rank_Impl");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Pyramid_C_Set_Now_Rank_Impl, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_ResultRate_Sub_RankUp_Pyramid_C_Set_Now_Rank_Impl::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Pyramid_C_Set_Now_Rank_Impl, CallFunc_PlayAnimation_StartAtTime_ImplicitCast) == 0x000008, "Member 'WBP_ResultRate_Sub_RankUp_Pyramid_C_Set_Now_Rank_Impl::CallFunc_PlayAnimation_StartAtTime_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ResultRate_Sub_RankUp_Pyramid_C_Set_Now_Rank_Impl;
 
 // Function WBP_ResultRate_Sub_RankUp_Pyramid.WBP_ResultRate_Sub_RankUp_Pyramid_C.SetAnimateImpl
 // 0x0030 (0x0030 - 0x0000)
@@ -74,18 +62,7 @@ public:
 	int32                                         CallFunc_GetRateRankCategoryNo_ReturnValue;        // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ResultRate_Sub_RankUp_Pyramid_C_SetAnimateImpl) == 0x000008, "Wrong alignment on WBP_ResultRate_Sub_RankUp_Pyramid_C_SetAnimateImpl");
-static_assert(sizeof(WBP_ResultRate_Sub_RankUp_Pyramid_C_SetAnimateImpl) == 0x000030, "Wrong size on WBP_ResultRate_Sub_RankUp_Pyramid_C_SetAnimateImpl");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Pyramid_C_SetAnimateImpl, NowRank_in) == 0x000000, "Member 'WBP_ResultRate_Sub_RankUp_Pyramid_C_SetAnimateImpl::NowRank_in' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Pyramid_C_SetAnimateImpl, NextRank_in) == 0x000001, "Member 'WBP_ResultRate_Sub_RankUp_Pyramid_C_SetAnimateImpl::NextRank_in' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Pyramid_C_SetAnimateImpl, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000008, "Member 'WBP_ResultRate_Sub_RankUp_Pyramid_C_SetAnimateImpl::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Pyramid_C_SetAnimateImpl, CallFunc_Add_DoubleDouble_ReturnValue_1) == 0x000010, "Member 'WBP_ResultRate_Sub_RankUp_Pyramid_C_SetAnimateImpl::CallFunc_Add_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Pyramid_C_SetAnimateImpl, CallFunc_GetRateRankToIntRank_ReturnValue) == 0x000018, "Member 'WBP_ResultRate_Sub_RankUp_Pyramid_C_SetAnimateImpl::CallFunc_GetRateRankToIntRank_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Pyramid_C_SetAnimateImpl, CallFunc_GetRateRankToIntRank_ReturnValue_1) == 0x00001C, "Member 'WBP_ResultRate_Sub_RankUp_Pyramid_C_SetAnimateImpl::CallFunc_GetRateRankToIntRank_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Pyramid_C_SetAnimateImpl, CallFunc_Greater_IntInt_ReturnValue) == 0x000020, "Member 'WBP_ResultRate_Sub_RankUp_Pyramid_C_SetAnimateImpl::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Pyramid_C_SetAnimateImpl, CallFunc_GetValidValue_ReturnValue) == 0x000021, "Member 'WBP_ResultRate_Sub_RankUp_Pyramid_C_SetAnimateImpl::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Pyramid_C_SetAnimateImpl, CallFunc_GetRateRankCategoryNo_ReturnValue) == 0x000024, "Member 'WBP_ResultRate_Sub_RankUp_Pyramid_C_SetAnimateImpl::CallFunc_GetRateRankCategoryNo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Pyramid_C_SetAnimateImpl, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000028, "Member 'WBP_ResultRate_Sub_RankUp_Pyramid_C_SetAnimateImpl::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ResultRate_Sub_RankUp_Pyramid_C_SetAnimateImpl;
 
 // Function WBP_ResultRate_Sub_RankUp_Pyramid.WBP_ResultRate_Sub_RankUp_Pyramid_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -95,10 +72,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ResultRate_Sub_RankUp_Pyramid_C_Tick) == 0x000004, "Wrong alignment on WBP_ResultRate_Sub_RankUp_Pyramid_C_Tick");
-static_assert(sizeof(WBP_ResultRate_Sub_RankUp_Pyramid_C_Tick) == 0x00003C, "Wrong size on WBP_ResultRate_Sub_RankUp_Pyramid_C_Tick");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Pyramid_C_Tick, MyGeometry) == 0x000000, "Member 'WBP_ResultRate_Sub_RankUp_Pyramid_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankUp_Pyramid_C_Tick, InDeltaTime) == 0x000038, "Member 'WBP_ResultRate_Sub_RankUp_Pyramid_C_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ResultRate_Sub_RankUp_Pyramid_C_Tick;
 
 }
 

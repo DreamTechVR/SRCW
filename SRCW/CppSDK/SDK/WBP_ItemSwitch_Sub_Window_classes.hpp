@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
+#include "UnionSystem_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
@@ -82,53 +82,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ItemSwitch_Sub_Window_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ItemSwitch_Sub_Window_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ItemSwitch_Sub_Window_C")
 	}
 	static class UWBP_ItemSwitch_Sub_Window_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ItemSwitch_Sub_Window_C>();
 	}
 };
-static_assert(alignof(UWBP_ItemSwitch_Sub_Window_C) == 0x000008, "Wrong alignment on UWBP_ItemSwitch_Sub_Window_C");
-static_assert(sizeof(UWBP_ItemSwitch_Sub_Window_C) == 0x000618, "Wrong size on UWBP_ItemSwitch_Sub_Window_C");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, UberGraphFrame) == 0x000480, "Member 'UWBP_ItemSwitch_Sub_Window_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, DSP_Btn) == 0x000488, "Member 'UWBP_ItemSwitch_Sub_Window_C::DSP_Btn' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, Image_40) == 0x000490, "Member 'UWBP_ItemSwitch_Sub_Window_C::Image_40' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, OutOfContentButton_80) == 0x000498, "Member 'UWBP_ItemSwitch_Sub_Window_C::OutOfContentButton_80' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, WBP_CMN_SubMenu_Btn_01) == 0x0004A0, "Member 'UWBP_ItemSwitch_Sub_Window_C::WBP_CMN_SubMenu_Btn_01' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, WBP_CMN_SubMenu_Btn_02) == 0x0004A8, "Member 'UWBP_ItemSwitch_Sub_Window_C::WBP_CMN_SubMenu_Btn_02' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, WBP_CMN_SubMenu_Btn_03) == 0x0004B0, "Member 'UWBP_ItemSwitch_Sub_Window_C::WBP_CMN_SubMenu_Btn_03' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, WBP_ItemSwitch_Sub_ItemIcon_10) == 0x0004B8, "Member 'UWBP_ItemSwitch_Sub_Window_C::WBP_ItemSwitch_Sub_ItemIcon_10' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, WBP_ItemSwitch_Sub_ItemIcon_12) == 0x0004C0, "Member 'UWBP_ItemSwitch_Sub_Window_C::WBP_ItemSwitch_Sub_ItemIcon_12' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, WBP_ItemSwitch_Sub_ItemIcon_13) == 0x0004C8, "Member 'UWBP_ItemSwitch_Sub_Window_C::WBP_ItemSwitch_Sub_ItemIcon_13' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, WBP_ItemSwitch_Sub_ItemIcon_15) == 0x0004D0, "Member 'UWBP_ItemSwitch_Sub_Window_C::WBP_ItemSwitch_Sub_ItemIcon_15' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, WBP_ItemSwitch_Sub_ItemIcon_16) == 0x0004D8, "Member 'UWBP_ItemSwitch_Sub_Window_C::WBP_ItemSwitch_Sub_ItemIcon_16' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, WBP_ItemSwitch_Sub_ItemIcon_17) == 0x0004E0, "Member 'UWBP_ItemSwitch_Sub_Window_C::WBP_ItemSwitch_Sub_ItemIcon_17' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, WBP_ItemSwitch_Sub_ItemIcon_18) == 0x0004E8, "Member 'UWBP_ItemSwitch_Sub_Window_C::WBP_ItemSwitch_Sub_ItemIcon_18' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, WBP_ItemSwitch_Sub_ItemIcon_19) == 0x0004F0, "Member 'UWBP_ItemSwitch_Sub_Window_C::WBP_ItemSwitch_Sub_ItemIcon_19' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, WBP_ItemSwitch_Sub_ItemIcon_20) == 0x0004F8, "Member 'UWBP_ItemSwitch_Sub_Window_C::WBP_ItemSwitch_Sub_ItemIcon_20' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, WBP_ItemSwitch_Sub_ItemIcon_21) == 0x000500, "Member 'UWBP_ItemSwitch_Sub_Window_C::WBP_ItemSwitch_Sub_ItemIcon_21' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, WBP_ItemSwitch_Sub_ItemIcon_23) == 0x000508, "Member 'UWBP_ItemSwitch_Sub_Window_C::WBP_ItemSwitch_Sub_ItemIcon_23' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, WBP_ItemSwitch_Sub_ItemIcon_24) == 0x000510, "Member 'UWBP_ItemSwitch_Sub_Window_C::WBP_ItemSwitch_Sub_ItemIcon_24' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, WBP_ItemSwitch_Sub_ItemIcon_25) == 0x000518, "Member 'UWBP_ItemSwitch_Sub_Window_C::WBP_ItemSwitch_Sub_ItemIcon_25' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, WBP_ItemSwitch_Sub_ItemIcon_26) == 0x000520, "Member 'UWBP_ItemSwitch_Sub_Window_C::WBP_ItemSwitch_Sub_ItemIcon_26' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, WBP_ItemSwitch_Sub_ItemIcon_27) == 0x000528, "Member 'UWBP_ItemSwitch_Sub_Window_C::WBP_ItemSwitch_Sub_ItemIcon_27' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, WBP_ItemSwitch_Sub_ItemIcon_28) == 0x000530, "Member 'UWBP_ItemSwitch_Sub_Window_C::WBP_ItemSwitch_Sub_ItemIcon_28' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, WBP_ItemSwitch_Sub_ItemIcon_01) == 0x000538, "Member 'UWBP_ItemSwitch_Sub_Window_C::WBP_ItemSwitch_Sub_ItemIcon_01' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, WBP_ItemSwitch_Sub_ItemIcon_02) == 0x000540, "Member 'UWBP_ItemSwitch_Sub_Window_C::WBP_ItemSwitch_Sub_ItemIcon_02' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, WBP_ItemSwitch_Sub_ItemIcon_03) == 0x000548, "Member 'UWBP_ItemSwitch_Sub_Window_C::WBP_ItemSwitch_Sub_ItemIcon_03' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, WBP_ItemSwitch_Sub_ItemIcon_04) == 0x000550, "Member 'UWBP_ItemSwitch_Sub_Window_C::WBP_ItemSwitch_Sub_ItemIcon_04' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, WBP_ItemSwitch_Sub_ItemIcon_05) == 0x000558, "Member 'UWBP_ItemSwitch_Sub_Window_C::WBP_ItemSwitch_Sub_ItemIcon_05' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, WBP_ItemSwitch_Sub_ItemIcon_06) == 0x000560, "Member 'UWBP_ItemSwitch_Sub_Window_C::WBP_ItemSwitch_Sub_ItemIcon_06' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, WBP_ItemSwitch_Sub_ItemIcon_07) == 0x000568, "Member 'UWBP_ItemSwitch_Sub_Window_C::WBP_ItemSwitch_Sub_ItemIcon_07' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, WBP_ItemSwitch_Sub_ItemIcon_08) == 0x000570, "Member 'UWBP_ItemSwitch_Sub_Window_C::WBP_ItemSwitch_Sub_ItemIcon_08' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, WBP_ItemSwitch_Sub_ItemIcon_09) == 0x000578, "Member 'UWBP_ItemSwitch_Sub_Window_C::WBP_ItemSwitch_Sub_ItemIcon_09' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, OnFocusOutToDown) == 0x000580, "Member 'UWBP_ItemSwitch_Sub_Window_C::OnFocusOutToDown' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, NewVar) == 0x000590, "Member 'UWBP_ItemSwitch_Sub_Window_C::NewVar' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, DefaultDisableItemTable) == 0x0005E0, "Member 'UWBP_ItemSwitch_Sub_Window_C::DefaultDisableItemTable' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, IsGuest) == 0x000608, "Member 'UWBP_ItemSwitch_Sub_Window_C::IsGuest' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, IsHint) == 0x000609, "Member 'UWBP_ItemSwitch_Sub_Window_C::IsHint' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Window_C, Parent) == 0x000610, "Member 'UWBP_ItemSwitch_Sub_Window_C::Parent' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ItemSwitch_Sub_Window_C;
 
 }
 

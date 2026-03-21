@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK
@@ -128,27 +128,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_PrivateMatch_Popup_C">();
+		BP_STATIC_CLASS_IMPL("WBP_PrivateMatch_Popup_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_PrivateMatch_Popup_C")
 	}
 	static class UWBP_PrivateMatch_Popup_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_PrivateMatch_Popup_C>();
 	}
 };
-static_assert(alignof(UWBP_PrivateMatch_Popup_C) == 0x000008, "Wrong alignment on UWBP_PrivateMatch_Popup_C");
-static_assert(sizeof(UWBP_PrivateMatch_Popup_C) == 0x000480, "Wrong size on UWBP_PrivateMatch_Popup_C");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_C, UberGraphFrame) == 0x000420, "Member 'UWBP_PrivateMatch_Popup_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_C, Popup_Out) == 0x000428, "Member 'UWBP_PrivateMatch_Popup_C::Popup_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_C, Popup_Loop) == 0x000430, "Member 'UWBP_PrivateMatch_Popup_C::Popup_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_C, Popup_In) == 0x000438, "Member 'UWBP_PrivateMatch_Popup_C::Popup_In' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_C, base) == 0x000440, "Member 'UWBP_PrivateMatch_Popup_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_C, Base_Line_01) == 0x000448, "Member 'UWBP_PrivateMatch_Popup_C::Base_Line_01' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_C, Base_Line_02) == 0x000450, "Member 'UWBP_PrivateMatch_Popup_C::Base_Line_02' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_C, OutOfContentButton) == 0x000458, "Member 'UWBP_PrivateMatch_Popup_C::OutOfContentButton' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_C, Panel) == 0x000460, "Member 'UWBP_PrivateMatch_Popup_C::Panel' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_C, WBP_PrivateMatch_Popup_Sub_Info) == 0x000468, "Member 'UWBP_PrivateMatch_Popup_C::WBP_PrivateMatch_Popup_Sub_Info' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_C, SelectLobbyButtonsPanel) == 0x000470, "Member 'UWBP_PrivateMatch_Popup_C::SelectLobbyButtonsPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_C, SelectRuleButtonsPanel) == 0x000478, "Member 'UWBP_PrivateMatch_Popup_C::SelectRuleButtonsPanel' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_PrivateMatch_Popup_C;
 
 }
 

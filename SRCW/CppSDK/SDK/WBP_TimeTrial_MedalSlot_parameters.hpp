@@ -51,34 +51,7 @@ public:
 	uint8                                         Pad_79[0x3];                                       // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot) == 0x000008, "Wrong alignment on WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot");
-static_assert(sizeof(WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot) == 0x000080, "Wrong size on WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot");
-static_assert(offsetof(WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot, EntryPoint) == 0x000000, "Member 'WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot, Temp_int_Array_Index_Variable) == 0x000004, "Member 'WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot, CallFunc_Array_Length_ReturnValue) == 0x000008, "Member 'WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot, Temp_int_Array_Index_Variable_1) == 0x00000C, "Member 'WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot, CallFunc_Array_Get_Item) == 0x000010, "Member 'WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot, Temp_int_Loop_Counter_Variable) == 0x000018, "Member 'WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot, CallFunc_Add_IntInt_ReturnValue) == 0x00001C, "Member 'WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot, Temp_int_Array_Index_Variable_2) == 0x000020, "Member 'WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot, K2Node_CustomEvent_InTimeTrialClearRanks) == 0x000028, "Member 'WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot::K2Node_CustomEvent_InTimeTrialClearRanks' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot, K2Node_CustomEvent_InIndex) == 0x000038, "Member 'WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot::K2Node_CustomEvent_InIndex' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot, CallFunc_Array_Get_Item_1) == 0x00003C, "Member 'WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00003D, "Member 'WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot, CallFunc_Array_IsValidIndex_ReturnValue) == 0x00003E, "Member 'WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot, CallFunc_Array_IsValidIndex_ReturnValue_1) == 0x00003F, "Member 'WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot::CallFunc_Array_IsValidIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot, CallFunc_Array_Get_Item_2) == 0x000040, "Member 'WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot, CallFunc_Array_Length_ReturnValue_1) == 0x000048, "Member 'WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot, Temp_int_Loop_Counter_Variable_1) == 0x00004C, "Member 'WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot, CallFunc_Array_Get_Item_3) == 0x000050, "Member 'WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot, CallFunc_Array_Length_ReturnValue_2) == 0x000058, "Member 'WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot, CallFunc_Less_IntInt_ReturnValue) == 0x00005C, "Member 'WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot, CallFunc_Less_IntInt_ReturnValue_1) == 0x00005D, "Member 'WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot, CallFunc_Add_IntInt_ReturnValue_1) == 0x000060, "Member 'WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot, Temp_int_Loop_Counter_Variable_2) == 0x000064, "Member 'WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot, K2Node_MakeArray_Array) == 0x000068, "Member 'WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot, CallFunc_Less_IntInt_ReturnValue_2) == 0x000078, "Member 'WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot, CallFunc_Add_IntInt_ReturnValue_2) == 0x00007C, "Member 'WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_MedalSlot_C_ExecuteUbergraph_WBP_TimeTrial_MedalSlot;
 
 // Function WBP_TimeTrial_MedalSlot.WBP_TimeTrial_MedalSlot_C.SelectMedal
 // 0x0004 (0x0004 - 0x0000)
@@ -87,9 +60,7 @@ struct WBP_TimeTrial_MedalSlot_C_SelectMedal final
 public:
 	int32                                         InIndex;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TimeTrial_MedalSlot_C_SelectMedal) == 0x000004, "Wrong alignment on WBP_TimeTrial_MedalSlot_C_SelectMedal");
-static_assert(sizeof(WBP_TimeTrial_MedalSlot_C_SelectMedal) == 0x000004, "Wrong size on WBP_TimeTrial_MedalSlot_C_SelectMedal");
-static_assert(offsetof(WBP_TimeTrial_MedalSlot_C_SelectMedal, InIndex) == 0x000000, "Member 'WBP_TimeTrial_MedalSlot_C_SelectMedal::InIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_MedalSlot_C_SelectMedal;
 
 // Function WBP_TimeTrial_MedalSlot.WBP_TimeTrial_MedalSlot_C.SetupMedalSlot
 // 0x0010 (0x0010 - 0x0000)
@@ -98,9 +69,7 @@ struct WBP_TimeTrial_MedalSlot_C_SetupMedalSlot final
 public:
 	TArray<ETimeTrialClearRankId>                 InTimeTrialClearRanks;                             // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_TimeTrial_MedalSlot_C_SetupMedalSlot) == 0x000008, "Wrong alignment on WBP_TimeTrial_MedalSlot_C_SetupMedalSlot");
-static_assert(sizeof(WBP_TimeTrial_MedalSlot_C_SetupMedalSlot) == 0x000010, "Wrong size on WBP_TimeTrial_MedalSlot_C_SetupMedalSlot");
-static_assert(offsetof(WBP_TimeTrial_MedalSlot_C_SetupMedalSlot, InTimeTrialClearRanks) == 0x000000, "Member 'WBP_TimeTrial_MedalSlot_C_SetupMedalSlot::InTimeTrialClearRanks' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_MedalSlot_C_SetupMedalSlot;
 
 }
 

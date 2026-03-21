@@ -21,9 +21,7 @@ struct WBP_GadgetCustom_ScrollSnapPoint_C_ExecuteUbergraph_WBP_GadgetCustom_Scro
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_ScrollSnapPoint_C_ExecuteUbergraph_WBP_GadgetCustom_ScrollSnapPoint) == 0x000004, "Wrong alignment on WBP_GadgetCustom_ScrollSnapPoint_C_ExecuteUbergraph_WBP_GadgetCustom_ScrollSnapPoint");
-static_assert(sizeof(WBP_GadgetCustom_ScrollSnapPoint_C_ExecuteUbergraph_WBP_GadgetCustom_ScrollSnapPoint) == 0x000004, "Wrong size on WBP_GadgetCustom_ScrollSnapPoint_C_ExecuteUbergraph_WBP_GadgetCustom_ScrollSnapPoint");
-static_assert(offsetof(WBP_GadgetCustom_ScrollSnapPoint_C_ExecuteUbergraph_WBP_GadgetCustom_ScrollSnapPoint, EntryPoint) == 0x000000, "Member 'WBP_GadgetCustom_ScrollSnapPoint_C_ExecuteUbergraph_WBP_GadgetCustom_ScrollSnapPoint::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_ScrollSnapPoint_C_ExecuteUbergraph_WBP_GadgetCustom_ScrollSnapPoint;
 
 // Function WBP_GadgetCustom_ScrollSnapPoint.WBP_GadgetCustom_ScrollSnapPoint_C.Resize
 // 0x0060 (0x0060 - 0x0000)
@@ -50,24 +48,7 @@ public:
 	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UHorizontalBoxSlot*                     CallFunc_AddChildToHorizontalBox_ReturnValue;      // 0x0058(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_ScrollSnapPoint_C_Resize) == 0x000008, "Wrong alignment on WBP_GadgetCustom_ScrollSnapPoint_C_Resize");
-static_assert(sizeof(WBP_GadgetCustom_ScrollSnapPoint_C_Resize) == 0x000060, "Wrong size on WBP_GadgetCustom_ScrollSnapPoint_C_Resize");
-static_assert(offsetof(WBP_GadgetCustom_ScrollSnapPoint_C_Resize, InNewSize) == 0x000000, "Member 'WBP_GadgetCustom_ScrollSnapPoint_C_Resize::InNewSize' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_ScrollSnapPoint_C_Resize, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'WBP_GadgetCustom_ScrollSnapPoint_C_Resize::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_ScrollSnapPoint_C_Resize, CallFunc_Subtract_IntInt_ReturnValue) == 0x000008, "Member 'WBP_GadgetCustom_ScrollSnapPoint_C_Resize::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_ScrollSnapPoint_C_Resize, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_GadgetCustom_ScrollSnapPoint_C_Resize::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_ScrollSnapPoint_C_Resize, Temp_int_Array_Index_Variable) == 0x000010, "Member 'WBP_GadgetCustom_ScrollSnapPoint_C_Resize::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_ScrollSnapPoint_C_Resize, Temp_int_Variable) == 0x000014, "Member 'WBP_GadgetCustom_ScrollSnapPoint_C_Resize::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_ScrollSnapPoint_C_Resize, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000018, "Member 'WBP_GadgetCustom_ScrollSnapPoint_C_Resize::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_ScrollSnapPoint_C_Resize, CallFunc_Add_IntInt_ReturnValue_1) == 0x00001C, "Member 'WBP_GadgetCustom_ScrollSnapPoint_C_Resize::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_ScrollSnapPoint_C_Resize, CallFunc_GetAllChildren_ReturnValue) == 0x000020, "Member 'WBP_GadgetCustom_ScrollSnapPoint_C_Resize::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_ScrollSnapPoint_C_Resize, CallFunc_Array_Get_Item) == 0x000030, "Member 'WBP_GadgetCustom_ScrollSnapPoint_C_Resize::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_ScrollSnapPoint_C_Resize, CallFunc_Array_Length_ReturnValue) == 0x000038, "Member 'WBP_GadgetCustom_ScrollSnapPoint_C_Resize::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_ScrollSnapPoint_C_Resize, CallFunc_Less_IntInt_ReturnValue) == 0x00003C, "Member 'WBP_GadgetCustom_ScrollSnapPoint_C_Resize::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_ScrollSnapPoint_C_Resize, CallFunc_GetOwningPlayer_ReturnValue) == 0x000040, "Member 'WBP_GadgetCustom_ScrollSnapPoint_C_Resize::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_ScrollSnapPoint_C_Resize, CallFunc_Create_ReturnValue) == 0x000048, "Member 'WBP_GadgetCustom_ScrollSnapPoint_C_Resize::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_ScrollSnapPoint_C_Resize, CallFunc_IsValid_ReturnValue) == 0x000050, "Member 'WBP_GadgetCustom_ScrollSnapPoint_C_Resize::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_ScrollSnapPoint_C_Resize, CallFunc_AddChildToHorizontalBox_ReturnValue) == 0x000058, "Member 'WBP_GadgetCustom_ScrollSnapPoint_C_Resize::CallFunc_AddChildToHorizontalBox_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_ScrollSnapPoint_C_Resize;
 
 }
 

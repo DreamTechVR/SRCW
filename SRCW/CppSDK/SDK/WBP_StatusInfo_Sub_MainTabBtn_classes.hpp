@@ -52,29 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_StatusInfo_Sub_MainTabBtn_C">();
+		BP_STATIC_CLASS_IMPL("WBP_StatusInfo_Sub_MainTabBtn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_StatusInfo_Sub_MainTabBtn_C")
 	}
 	static class UWBP_StatusInfo_Sub_MainTabBtn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_StatusInfo_Sub_MainTabBtn_C>();
 	}
 };
-static_assert(alignof(UWBP_StatusInfo_Sub_MainTabBtn_C) == 0x000008, "Wrong alignment on UWBP_StatusInfo_Sub_MainTabBtn_C");
-static_assert(sizeof(UWBP_StatusInfo_Sub_MainTabBtn_C) == 0x000358, "Wrong size on UWBP_StatusInfo_Sub_MainTabBtn_C");
-static_assert(offsetof(UWBP_StatusInfo_Sub_MainTabBtn_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_StatusInfo_Sub_MainTabBtn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_MainTabBtn_C, Tab_Select_Loop) == 0x0002E8, "Member 'UWBP_StatusInfo_Sub_MainTabBtn_C::Tab_Select_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_MainTabBtn_C, Tab_Active_Loop) == 0x0002F0, "Member 'UWBP_StatusInfo_Sub_MainTabBtn_C::Tab_Active_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_MainTabBtn_C, Active) == 0x0002F8, "Member 'UWBP_StatusInfo_Sub_MainTabBtn_C::Active' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_MainTabBtn_C, DSP_New_Pict) == 0x000300, "Member 'UWBP_StatusInfo_Sub_MainTabBtn_C::DSP_New_Pict' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_MainTabBtn_C, PAT_TabPict) == 0x000308, "Member 'UWBP_StatusInfo_Sub_MainTabBtn_C::PAT_TabPict' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_MainTabBtn_C, PAT_TabPict_Ranking) == 0x000310, "Member 'UWBP_StatusInfo_Sub_MainTabBtn_C::PAT_TabPict_Ranking' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_MainTabBtn_C, Select) == 0x000318, "Member 'UWBP_StatusInfo_Sub_MainTabBtn_C::Select' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_MainTabBtn_C, TXT_CategoryName) == 0x000320, "Member 'UWBP_StatusInfo_Sub_MainTabBtn_C::TXT_CategoryName' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_MainTabBtn_C, UnionUIButton) == 0x000328, "Member 'UWBP_StatusInfo_Sub_MainTabBtn_C::UnionUIButton' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_MainTabBtn_C, WidgetSwitcher_TabBase) == 0x000330, "Member 'UWBP_StatusInfo_Sub_MainTabBtn_C::WidgetSwitcher_TabBase' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_MainTabBtn_C, MainIconMaterialInstance) == 0x000338, "Member 'UWBP_StatusInfo_Sub_MainTabBtn_C::MainIconMaterialInstance' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_MainTabBtn_C, RankingMaterialInstance) == 0x000340, "Member 'UWBP_StatusInfo_Sub_MainTabBtn_C::RankingMaterialInstance' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_MainTabBtn_C, OnPressed) == 0x000348, "Member 'UWBP_StatusInfo_Sub_MainTabBtn_C::OnPressed' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_StatusInfo_Sub_MainTabBtn_C;
 
 }
 

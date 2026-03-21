@@ -49,25 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Friend_SmallWindow_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Friend_SmallWindow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Friend_SmallWindow_C")
 	}
 	static class UWBP_Friend_SmallWindow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Friend_SmallWindow_C>();
 	}
 };
-static_assert(alignof(UWBP_Friend_SmallWindow_C) == 0x000008, "Wrong alignment on UWBP_Friend_SmallWindow_C");
-static_assert(sizeof(UWBP_Friend_SmallWindow_C) == 0x000438, "Wrong size on UWBP_Friend_SmallWindow_C");
-static_assert(offsetof(UWBP_Friend_SmallWindow_C, UberGraphFrame) == 0x0003D8, "Member 'UWBP_Friend_SmallWindow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_SmallWindow_C, DSP_WBP_Friend_Sub_Line_Btn_01) == 0x0003E0, "Member 'UWBP_Friend_SmallWindow_C::DSP_WBP_Friend_Sub_Line_Btn_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_SmallWindow_C, DSP_WBP_Friend_Sub_Line_Btn_02) == 0x0003E8, "Member 'UWBP_Friend_SmallWindow_C::DSP_WBP_Friend_Sub_Line_Btn_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_SmallWindow_C, DSP_WBP_Friend_Sub_Line_Btn_03) == 0x0003F0, "Member 'UWBP_Friend_SmallWindow_C::DSP_WBP_Friend_Sub_Line_Btn_03' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_SmallWindow_C, DSP_WBP_Friend_Sub_Line_Btn_04) == 0x0003F8, "Member 'UWBP_Friend_SmallWindow_C::DSP_WBP_Friend_Sub_Line_Btn_04' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_SmallWindow_C, DSP_WBP_Friend_Sub_Line_Btn_05) == 0x000400, "Member 'UWBP_Friend_SmallWindow_C::DSP_WBP_Friend_Sub_Line_Btn_05' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_SmallWindow_C, SmallWindowBase) == 0x000408, "Member 'UWBP_Friend_SmallWindow_C::SmallWindowBase' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_SmallWindow_C, Buttons) == 0x000410, "Member 'UWBP_Friend_SmallWindow_C::Buttons' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_SmallWindow_C, FocusButtonIndex) == 0x000420, "Member 'UWBP_Friend_SmallWindow_C::FocusButtonIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_SmallWindow_C, bInitialButtonSelectable) == 0x000428, "Member 'UWBP_Friend_SmallWindow_C::bInitialButtonSelectable' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Friend_SmallWindow_C;
 
 }
 

@@ -24,7 +24,7 @@ public:
 	class UWidgetAnimation*                       Zero3_in;                                          // 0x02E0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Zero2_In;                                          // 0x02E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Zero1_In;                                          // 0x02F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Zero0_In;                                          // 0x02F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Zero0_in;                                          // 0x02F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UImage*                                 Eff_01;                                            // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Eff_02;                                            // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Eff_06;                                            // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -41,31 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_EventTip_PartyRace_Monitor_PartyRace_C">();
+		BP_STATIC_CLASS_IMPL("WBP_EventTip_PartyRace_Monitor_PartyRace_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_EventTip_PartyRace_Monitor_PartyRace_C")
 	}
 	static class UWBP_EventTip_PartyRace_Monitor_PartyRace_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_EventTip_PartyRace_Monitor_PartyRace_C>();
 	}
 };
-static_assert(alignof(UWBP_EventTip_PartyRace_Monitor_PartyRace_C) == 0x000008, "Wrong alignment on UWBP_EventTip_PartyRace_Monitor_PartyRace_C");
-static_assert(sizeof(UWBP_EventTip_PartyRace_Monitor_PartyRace_C) == 0x000360, "Wrong size on UWBP_EventTip_PartyRace_Monitor_PartyRace_C");
-static_assert(offsetof(UWBP_EventTip_PartyRace_Monitor_PartyRace_C, Zero3_in) == 0x0002E0, "Member 'UWBP_EventTip_PartyRace_Monitor_PartyRace_C::Zero3_in' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_PartyRace_Monitor_PartyRace_C, Zero2_In) == 0x0002E8, "Member 'UWBP_EventTip_PartyRace_Monitor_PartyRace_C::Zero2_In' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_PartyRace_Monitor_PartyRace_C, Zero1_In) == 0x0002F0, "Member 'UWBP_EventTip_PartyRace_Monitor_PartyRace_C::Zero1_In' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_PartyRace_Monitor_PartyRace_C, Zero0_In) == 0x0002F8, "Member 'UWBP_EventTip_PartyRace_Monitor_PartyRace_C::Zero0_In' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_PartyRace_Monitor_PartyRace_C, Eff_01) == 0x000300, "Member 'UWBP_EventTip_PartyRace_Monitor_PartyRace_C::Eff_01' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_PartyRace_Monitor_PartyRace_C, Eff_02) == 0x000308, "Member 'UWBP_EventTip_PartyRace_Monitor_PartyRace_C::Eff_02' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_PartyRace_Monitor_PartyRace_C, Eff_06) == 0x000310, "Member 'UWBP_EventTip_PartyRace_Monitor_PartyRace_C::Eff_06' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_PartyRace_Monitor_PartyRace_C, Eff_07) == 0x000318, "Member 'UWBP_EventTip_PartyRace_Monitor_PartyRace_C::Eff_07' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_PartyRace_Monitor_PartyRace_C, Logo_Wipe) == 0x000320, "Member 'UWBP_EventTip_PartyRace_Monitor_PartyRace_C::Logo_Wipe' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_PartyRace_Monitor_PartyRace_C, Map) == 0x000328, "Member 'UWBP_EventTip_PartyRace_Monitor_PartyRace_C::Map' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_PartyRace_Monitor_PartyRace_C, Monitor_Tuning) == 0x000330, "Member 'UWBP_EventTip_PartyRace_Monitor_PartyRace_C::Monitor_Tuning' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_PartyRace_Monitor_PartyRace_C, Reward) == 0x000338, "Member 'UWBP_EventTip_PartyRace_Monitor_PartyRace_C::Reward' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_PartyRace_Monitor_PartyRace_C, RivalLogo) == 0x000340, "Member 'UWBP_EventTip_PartyRace_Monitor_PartyRace_C::RivalLogo' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_PartyRace_Monitor_PartyRace_C, WBP_EventTips_PartyRace_Sub_RivalCutin) == 0x000348, "Member 'UWBP_EventTip_PartyRace_Monitor_PartyRace_C::WBP_EventTips_PartyRace_Sub_RivalCutin' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_PartyRace_Monitor_PartyRace_C, WBP_GrandPrixTips_Monitor_StandBy) == 0x000350, "Member 'UWBP_EventTip_PartyRace_Monitor_PartyRace_C::WBP_GrandPrixTips_Monitor_StandBy' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_PartyRace_Monitor_PartyRace_C, WBP_GrandPrixTips_Sub_BG_Red) == 0x000358, "Member 'UWBP_EventTip_PartyRace_Monitor_PartyRace_C::WBP_GrandPrixTips_Sub_BG_Red' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_EventTip_PartyRace_Monitor_PartyRace_C;
 
 }
 

@@ -23,15 +23,18 @@ class UWBP_MachineCustom_Sub_CustomList_C final : public UMachineCustomizeCustom
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MachineCustom_Sub_CustomList_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MachineCustom_Sub_CustomList_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MachineCustom_Sub_CustomList_C")
 	}
 	static class UWBP_MachineCustom_Sub_CustomList_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MachineCustom_Sub_CustomList_C>();
 	}
 };
-static_assert(alignof(UWBP_MachineCustom_Sub_CustomList_C) == 0x000008, "Wrong alignment on UWBP_MachineCustom_Sub_CustomList_C");
-static_assert(sizeof(UWBP_MachineCustom_Sub_CustomList_C) == 0x000400, "Wrong size on UWBP_MachineCustom_Sub_CustomList_C");
+DUMPER7_ASSERTS_UWBP_MachineCustom_Sub_CustomList_C;
 
 }
 

@@ -21,9 +21,7 @@ struct ABP_MenuDriver_Eggpawn_C_ExecuteUbergraph_ABP_MenuDriver_Eggpawn final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ABP_MenuDriver_Eggpawn_C_ExecuteUbergraph_ABP_MenuDriver_Eggpawn) == 0x000004, "Wrong alignment on ABP_MenuDriver_Eggpawn_C_ExecuteUbergraph_ABP_MenuDriver_Eggpawn");
-static_assert(sizeof(ABP_MenuDriver_Eggpawn_C_ExecuteUbergraph_ABP_MenuDriver_Eggpawn) == 0x000004, "Wrong size on ABP_MenuDriver_Eggpawn_C_ExecuteUbergraph_ABP_MenuDriver_Eggpawn");
-static_assert(offsetof(ABP_MenuDriver_Eggpawn_C_ExecuteUbergraph_ABP_MenuDriver_Eggpawn, EntryPoint) == 0x000000, "Member 'ABP_MenuDriver_Eggpawn_C_ExecuteUbergraph_ABP_MenuDriver_Eggpawn::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_MenuDriver_Eggpawn_C_ExecuteUbergraph_ABP_MenuDriver_Eggpawn;
 
 }
 

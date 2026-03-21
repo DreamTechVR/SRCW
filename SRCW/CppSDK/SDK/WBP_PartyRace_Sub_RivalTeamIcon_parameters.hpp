@@ -28,13 +28,7 @@ public:
 	struct FFocusEvent                            K2Node_Event_InFocusEvent;                         // 0x0014(0x0008)(NoDestructor)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_RivalTeamIcon_C_ExecuteUbergraph_WBP_PartyRace_Sub_RivalTeamIcon) == 0x000004, "Wrong alignment on WBP_PartyRace_Sub_RivalTeamIcon_C_ExecuteUbergraph_WBP_PartyRace_Sub_RivalTeamIcon");
-static_assert(sizeof(WBP_PartyRace_Sub_RivalTeamIcon_C_ExecuteUbergraph_WBP_PartyRace_Sub_RivalTeamIcon) == 0x000020, "Wrong size on WBP_PartyRace_Sub_RivalTeamIcon_C_ExecuteUbergraph_WBP_PartyRace_Sub_RivalTeamIcon");
-static_assert(offsetof(WBP_PartyRace_Sub_RivalTeamIcon_C_ExecuteUbergraph_WBP_PartyRace_Sub_RivalTeamIcon, EntryPoint) == 0x000000, "Member 'WBP_PartyRace_Sub_RivalTeamIcon_C_ExecuteUbergraph_WBP_PartyRace_Sub_RivalTeamIcon::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_RivalTeamIcon_C_ExecuteUbergraph_WBP_PartyRace_Sub_RivalTeamIcon, K2Node_Event_InFocusEvent_2) == 0x000004, "Member 'WBP_PartyRace_Sub_RivalTeamIcon_C_ExecuteUbergraph_WBP_PartyRace_Sub_RivalTeamIcon::K2Node_Event_InFocusEvent_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_RivalTeamIcon_C_ExecuteUbergraph_WBP_PartyRace_Sub_RivalTeamIcon, K2Node_Event_InFocusEvent_1) == 0x00000C, "Member 'WBP_PartyRace_Sub_RivalTeamIcon_C_ExecuteUbergraph_WBP_PartyRace_Sub_RivalTeamIcon::K2Node_Event_InFocusEvent_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_RivalTeamIcon_C_ExecuteUbergraph_WBP_PartyRace_Sub_RivalTeamIcon, K2Node_Event_InFocusEvent) == 0x000014, "Member 'WBP_PartyRace_Sub_RivalTeamIcon_C_ExecuteUbergraph_WBP_PartyRace_Sub_RivalTeamIcon::K2Node_Event_InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_RivalTeamIcon_C_ExecuteUbergraph_WBP_PartyRace_Sub_RivalTeamIcon, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x00001C, "Member 'WBP_PartyRace_Sub_RivalTeamIcon_C_ExecuteUbergraph_WBP_PartyRace_Sub_RivalTeamIcon::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_RivalTeamIcon_C_ExecuteUbergraph_WBP_PartyRace_Sub_RivalTeamIcon;
 
 // Function WBP_PartyRace_Sub_RivalTeamIcon.WBP_PartyRace_Sub_RivalTeamIcon_C.OnAddedToFocusPath
 // 0x0008 (0x0008 - 0x0000)
@@ -43,9 +37,7 @@ struct WBP_PartyRace_Sub_RivalTeamIcon_C_OnAddedToFocusPath final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_PartyRace_Sub_RivalTeamIcon_C_OnAddedToFocusPath) == 0x000004, "Wrong alignment on WBP_PartyRace_Sub_RivalTeamIcon_C_OnAddedToFocusPath");
-static_assert(sizeof(WBP_PartyRace_Sub_RivalTeamIcon_C_OnAddedToFocusPath) == 0x000008, "Wrong size on WBP_PartyRace_Sub_RivalTeamIcon_C_OnAddedToFocusPath");
-static_assert(offsetof(WBP_PartyRace_Sub_RivalTeamIcon_C_OnAddedToFocusPath, InFocusEvent) == 0x000000, "Member 'WBP_PartyRace_Sub_RivalTeamIcon_C_OnAddedToFocusPath::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_RivalTeamIcon_C_OnAddedToFocusPath;
 
 // Function WBP_PartyRace_Sub_RivalTeamIcon.WBP_PartyRace_Sub_RivalTeamIcon_C.OnFocusLost
 // 0x0008 (0x0008 - 0x0000)
@@ -54,9 +46,7 @@ struct WBP_PartyRace_Sub_RivalTeamIcon_C_OnFocusLost final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_PartyRace_Sub_RivalTeamIcon_C_OnFocusLost) == 0x000004, "Wrong alignment on WBP_PartyRace_Sub_RivalTeamIcon_C_OnFocusLost");
-static_assert(sizeof(WBP_PartyRace_Sub_RivalTeamIcon_C_OnFocusLost) == 0x000008, "Wrong size on WBP_PartyRace_Sub_RivalTeamIcon_C_OnFocusLost");
-static_assert(offsetof(WBP_PartyRace_Sub_RivalTeamIcon_C_OnFocusLost, InFocusEvent) == 0x000000, "Member 'WBP_PartyRace_Sub_RivalTeamIcon_C_OnFocusLost::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_RivalTeamIcon_C_OnFocusLost;
 
 // Function WBP_PartyRace_Sub_RivalTeamIcon.WBP_PartyRace_Sub_RivalTeamIcon_C.OnRemovedFromFocusPath
 // 0x0008 (0x0008 - 0x0000)
@@ -65,9 +55,7 @@ struct WBP_PartyRace_Sub_RivalTeamIcon_C_OnRemovedFromFocusPath final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_PartyRace_Sub_RivalTeamIcon_C_OnRemovedFromFocusPath) == 0x000004, "Wrong alignment on WBP_PartyRace_Sub_RivalTeamIcon_C_OnRemovedFromFocusPath");
-static_assert(sizeof(WBP_PartyRace_Sub_RivalTeamIcon_C_OnRemovedFromFocusPath) == 0x000008, "Wrong size on WBP_PartyRace_Sub_RivalTeamIcon_C_OnRemovedFromFocusPath");
-static_assert(offsetof(WBP_PartyRace_Sub_RivalTeamIcon_C_OnRemovedFromFocusPath, InFocusEvent) == 0x000000, "Member 'WBP_PartyRace_Sub_RivalTeamIcon_C_OnRemovedFromFocusPath::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_RivalTeamIcon_C_OnRemovedFromFocusPath;
 
 // Function WBP_PartyRace_Sub_RivalTeamIcon.WBP_PartyRace_Sub_RivalTeamIcon_C.PlayAnimationLoop
 // 0x0008 (0x0008 - 0x0000)
@@ -76,9 +64,7 @@ struct WBP_PartyRace_Sub_RivalTeamIcon_C_PlayAnimationLoop final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_RivalTeamIcon_C_PlayAnimationLoop) == 0x000008, "Wrong alignment on WBP_PartyRace_Sub_RivalTeamIcon_C_PlayAnimationLoop");
-static_assert(sizeof(WBP_PartyRace_Sub_RivalTeamIcon_C_PlayAnimationLoop) == 0x000008, "Wrong size on WBP_PartyRace_Sub_RivalTeamIcon_C_PlayAnimationLoop");
-static_assert(offsetof(WBP_PartyRace_Sub_RivalTeamIcon_C_PlayAnimationLoop, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_PartyRace_Sub_RivalTeamIcon_C_PlayAnimationLoop::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_RivalTeamIcon_C_PlayAnimationLoop;
 
 // Function WBP_PartyRace_Sub_RivalTeamIcon.WBP_PartyRace_Sub_RivalTeamIcon_C.PlayAnimationSelectIn
 // 0x0008 (0x0008 - 0x0000)
@@ -87,9 +73,7 @@ struct WBP_PartyRace_Sub_RivalTeamIcon_C_PlayAnimationSelectIn final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_RivalTeamIcon_C_PlayAnimationSelectIn) == 0x000008, "Wrong alignment on WBP_PartyRace_Sub_RivalTeamIcon_C_PlayAnimationSelectIn");
-static_assert(sizeof(WBP_PartyRace_Sub_RivalTeamIcon_C_PlayAnimationSelectIn) == 0x000008, "Wrong size on WBP_PartyRace_Sub_RivalTeamIcon_C_PlayAnimationSelectIn");
-static_assert(offsetof(WBP_PartyRace_Sub_RivalTeamIcon_C_PlayAnimationSelectIn, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_PartyRace_Sub_RivalTeamIcon_C_PlayAnimationSelectIn::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_RivalTeamIcon_C_PlayAnimationSelectIn;
 
 // Function WBP_PartyRace_Sub_RivalTeamIcon.WBP_PartyRace_Sub_RivalTeamIcon_C.PlayAnimationSelectLoop
 // 0x0008 (0x0008 - 0x0000)
@@ -98,9 +82,7 @@ struct WBP_PartyRace_Sub_RivalTeamIcon_C_PlayAnimationSelectLoop final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_RivalTeamIcon_C_PlayAnimationSelectLoop) == 0x000008, "Wrong alignment on WBP_PartyRace_Sub_RivalTeamIcon_C_PlayAnimationSelectLoop");
-static_assert(sizeof(WBP_PartyRace_Sub_RivalTeamIcon_C_PlayAnimationSelectLoop) == 0x000008, "Wrong size on WBP_PartyRace_Sub_RivalTeamIcon_C_PlayAnimationSelectLoop");
-static_assert(offsetof(WBP_PartyRace_Sub_RivalTeamIcon_C_PlayAnimationSelectLoop, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_PartyRace_Sub_RivalTeamIcon_C_PlayAnimationSelectLoop::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_RivalTeamIcon_C_PlayAnimationSelectLoop;
 
 // Function WBP_PartyRace_Sub_RivalTeamIcon.WBP_PartyRace_Sub_RivalTeamIcon_C.PlayCancelSE
 // 0x0004 (0x0004 - 0x0000)
@@ -109,9 +91,7 @@ struct WBP_PartyRace_Sub_RivalTeamIcon_C_PlayCancelSE final
 public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0000(0x0004)()
 };
-static_assert(alignof(WBP_PartyRace_Sub_RivalTeamIcon_C_PlayCancelSE) == 0x000004, "Wrong alignment on WBP_PartyRace_Sub_RivalTeamIcon_C_PlayCancelSE");
-static_assert(sizeof(WBP_PartyRace_Sub_RivalTeamIcon_C_PlayCancelSE) == 0x000004, "Wrong size on WBP_PartyRace_Sub_RivalTeamIcon_C_PlayCancelSE");
-static_assert(offsetof(WBP_PartyRace_Sub_RivalTeamIcon_C_PlayCancelSE, CallFunc_SoundPlay_ReturnValue) == 0x000000, "Member 'WBP_PartyRace_Sub_RivalTeamIcon_C_PlayCancelSE::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_RivalTeamIcon_C_PlayCancelSE;
 
 // Function WBP_PartyRace_Sub_RivalTeamIcon.WBP_PartyRace_Sub_RivalTeamIcon_C.PlayFocusSE
 // 0x0004 (0x0004 - 0x0000)
@@ -120,9 +100,7 @@ struct WBP_PartyRace_Sub_RivalTeamIcon_C_PlayFocusSE final
 public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0000(0x0004)()
 };
-static_assert(alignof(WBP_PartyRace_Sub_RivalTeamIcon_C_PlayFocusSE) == 0x000004, "Wrong alignment on WBP_PartyRace_Sub_RivalTeamIcon_C_PlayFocusSE");
-static_assert(sizeof(WBP_PartyRace_Sub_RivalTeamIcon_C_PlayFocusSE) == 0x000004, "Wrong size on WBP_PartyRace_Sub_RivalTeamIcon_C_PlayFocusSE");
-static_assert(offsetof(WBP_PartyRace_Sub_RivalTeamIcon_C_PlayFocusSE, CallFunc_SoundPlay_ReturnValue) == 0x000000, "Member 'WBP_PartyRace_Sub_RivalTeamIcon_C_PlayFocusSE::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_RivalTeamIcon_C_PlayFocusSE;
 
 }
 

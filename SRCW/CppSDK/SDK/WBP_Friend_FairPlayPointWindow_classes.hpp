@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -42,25 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Friend_FairPlayPointWindow_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Friend_FairPlayPointWindow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Friend_FairPlayPointWindow_C")
 	}
 	static class UWBP_Friend_FairPlayPointWindow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Friend_FairPlayPointWindow_C>();
 	}
 };
-static_assert(alignof(UWBP_Friend_FairPlayPointWindow_C) == 0x000008, "Wrong alignment on UWBP_Friend_FairPlayPointWindow_C");
-static_assert(sizeof(UWBP_Friend_FairPlayPointWindow_C) == 0x000398, "Wrong size on UWBP_Friend_FairPlayPointWindow_C");
-static_assert(offsetof(UWBP_Friend_FairPlayPointWindow_C, UberGraphFrame) == 0x000348, "Member 'UWBP_Friend_FairPlayPointWindow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_FairPlayPointWindow_C, OutOfContentButton) == 0x000350, "Member 'UWBP_Friend_FairPlayPointWindow_C::OutOfContentButton' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_FairPlayPointWindow_C, PenaltyBase) == 0x000358, "Member 'UWBP_Friend_FairPlayPointWindow_C::PenaltyBase' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_FairPlayPointWindow_C, PlateBase) == 0x000360, "Member 'UWBP_Friend_FairPlayPointWindow_C::PlateBase' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_FairPlayPointWindow_C, SmallWindowBase) == 0x000368, "Member 'UWBP_Friend_FairPlayPointWindow_C::SmallWindowBase' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_FairPlayPointWindow_C, TXT_Explanation) == 0x000370, "Member 'UWBP_Friend_FairPlayPointWindow_C::TXT_Explanation' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_FairPlayPointWindow_C, TXT_Info_Default) == 0x000378, "Member 'UWBP_Friend_FairPlayPointWindow_C::TXT_Info_Default' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_FairPlayPointWindow_C, TXT_Penalty) == 0x000380, "Member 'UWBP_Friend_FairPlayPointWindow_C::TXT_Penalty' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_FairPlayPointWindow_C, WBP_Friend_Sub_FairPlayGauge) == 0x000388, "Member 'UWBP_Friend_FairPlayPointWindow_C::WBP_Friend_Sub_FairPlayGauge' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_FairPlayPointWindow_C, WidgetSwitcher_FairPlayPointInfo) == 0x000390, "Member 'UWBP_Friend_FairPlayPointWindow_C::WidgetSwitcher_FairPlayPointInfo' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Friend_FairPlayPointWindow_C;
 
 }
 

@@ -48,30 +48,7 @@ public:
 	class UMenuWorldSubsystem*                    CallFunc_GetWorldSubsystem_ReturnValue;            // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList) == 0x000008, "Wrong alignment on BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList");
-static_assert(sizeof(BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList) == 0x000060, "Wrong size on BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList");
-static_assert(offsetof(BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList, EntryPoint) == 0x000000, "Member 'BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList, K2Node_Event_InBaseScene) == 0x000008, "Member 'BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList::K2Node_Event_InBaseScene' has a wrong offset!");
-static_assert(offsetof(BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList, K2Node_Event_InCanvasPanel) == 0x000010, "Member 'BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList::K2Node_Event_InCanvasPanel' has a wrong offset!");
-static_assert(offsetof(BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList, K2Node_Event_InIsSquadMode) == 0x000018, "Member 'BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList::K2Node_Event_InIsSquadMode' has a wrong offset!");
-static_assert(offsetof(BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList, CallFunc_SoundPlay_ReturnValue) == 0x00001C, "Member 'BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList, CallFunc_GetOwner_ReturnValue) == 0x000020, "Member 'BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList, K2Node_DynamicCast_AsLobby_Sequence_Base_2) == 0x000028, "Member 'BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList::K2Node_DynamicCast_AsLobby_Sequence_Base_2' has a wrong offset!");
-static_assert(offsetof(BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList, K2Node_DynamicCast_AsTop_Menu_Sequence) == 0x000038, "Member 'BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList::K2Node_DynamicCast_AsTop_Menu_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList, K2Node_DynamicCast_bSuccess_1) == 0x000040, "Member 'BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000041, "Member 'BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList, CallFunc_NotEqual_ByteByte_ReturnValue_1) == 0x000042, "Member 'BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList::CallFunc_NotEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList, CallFunc_NotEqual_ByteByte_ReturnValue_2) == 0x000043, "Member 'BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList::CallFunc_NotEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList, CallFunc_NotEqual_ByteByte_ReturnValue_3) == 0x000044, "Member 'BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList::CallFunc_NotEqual_ByteByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList, CallFunc_BooleanAND_ReturnValue) == 0x000045, "Member 'BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList, CallFunc_BooleanAND_ReturnValue_1) == 0x000046, "Member 'BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList, CallFunc_NotEqual_ByteByte_ReturnValue_4) == 0x000047, "Member 'BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList::CallFunc_NotEqual_ByteByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList, K2Node_Event_InPlayerNameMaxCount) == 0x000048, "Member 'BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList::K2Node_Event_InPlayerNameMaxCount' has a wrong offset!");
-static_assert(offsetof(BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList, CallFunc_BooleanAND_ReturnValue_2) == 0x00004C, "Member 'BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000050, "Member 'BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList, CallFunc_IsValid_ReturnValue_1) == 0x000058, "Member 'BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_LobbyPlayerList_C_ExecuteUbergraph_BPC_LobbyPlayerList;
 
 // Function BPC_LobbyPlayerList.BPC_LobbyPlayerList_C.OnInitialize
 // 0x0004 (0x0004 - 0x0000)
@@ -80,9 +57,7 @@ struct BPC_LobbyPlayerList_C_OnInitialize final
 public:
 	int32                                         InPlayerNameMaxCount;                              // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_LobbyPlayerList_C_OnInitialize) == 0x000004, "Wrong alignment on BPC_LobbyPlayerList_C_OnInitialize");
-static_assert(sizeof(BPC_LobbyPlayerList_C_OnInitialize) == 0x000004, "Wrong size on BPC_LobbyPlayerList_C_OnInitialize");
-static_assert(offsetof(BPC_LobbyPlayerList_C_OnInitialize, InPlayerNameMaxCount) == 0x000000, "Member 'BPC_LobbyPlayerList_C_OnInitialize::InPlayerNameMaxCount' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_LobbyPlayerList_C_OnInitialize;
 
 // Function BPC_LobbyPlayerList.BPC_LobbyPlayerList_C.Setup
 // 0x0018 (0x0018 - 0x0000)
@@ -93,11 +68,7 @@ public:
 	class UCanvasPanel*                           InCanvasPanel;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          InIsSquadMode;                                     // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_LobbyPlayerList_C_Setup) == 0x000008, "Wrong alignment on BPC_LobbyPlayerList_C_Setup");
-static_assert(sizeof(BPC_LobbyPlayerList_C_Setup) == 0x000018, "Wrong size on BPC_LobbyPlayerList_C_Setup");
-static_assert(offsetof(BPC_LobbyPlayerList_C_Setup, InBaseScene) == 0x000000, "Member 'BPC_LobbyPlayerList_C_Setup::InBaseScene' has a wrong offset!");
-static_assert(offsetof(BPC_LobbyPlayerList_C_Setup, InCanvasPanel) == 0x000008, "Member 'BPC_LobbyPlayerList_C_Setup::InCanvasPanel' has a wrong offset!");
-static_assert(offsetof(BPC_LobbyPlayerList_C_Setup, InIsSquadMode) == 0x000010, "Member 'BPC_LobbyPlayerList_C_Setup::InIsSquadMode' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_LobbyPlayerList_C_Setup;
 
 }
 

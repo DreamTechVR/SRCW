@@ -12,9 +12,9 @@
 
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK
@@ -82,31 +82,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_RacePauseMenuSequence_C">();
+		BP_STATIC_CLASS_IMPL("BP_RacePauseMenuSequence_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_RacePauseMenuSequence_C")
 	}
 	static class ABP_RacePauseMenuSequence_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_RacePauseMenuSequence_C>();
 	}
 };
-static_assert(alignof(ABP_RacePauseMenuSequence_C) == 0x000008, "Wrong alignment on ABP_RacePauseMenuSequence_C");
-static_assert(sizeof(ABP_RacePauseMenuSequence_C) == 0x000440, "Wrong size on ABP_RacePauseMenuSequence_C");
-static_assert(offsetof(ABP_RacePauseMenuSequence_C, UberGraphFrame) == 0x0003C8, "Member 'ABP_RacePauseMenuSequence_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_RacePauseMenuSequence_C, PauseMenuWidget) == 0x0003D0, "Member 'ABP_RacePauseMenuSequence_C::PauseMenuWidget' has a wrong offset!");
-static_assert(offsetof(ABP_RacePauseMenuSequence_C, RacePlayerController) == 0x0003D8, "Member 'ABP_RacePauseMenuSequence_C::RacePlayerController' has a wrong offset!");
-static_assert(offsetof(ABP_RacePauseMenuSequence_C, LastSelectedItem) == 0x0003E0, "Member 'ABP_RacePauseMenuSequence_C::LastSelectedItem' has a wrong offset!");
-static_assert(offsetof(ABP_RacePauseMenuSequence_C, bEnableTSR) == 0x0003E1, "Member 'ABP_RacePauseMenuSequence_C::bEnableTSR' has a wrong offset!");
-static_assert(offsetof(ABP_RacePauseMenuSequence_C, SelectedContentId) == 0x0003E2, "Member 'ABP_RacePauseMenuSequence_C::SelectedContentId' has a wrong offset!");
-static_assert(offsetof(ABP_RacePauseMenuSequence_C, PopupWidget) == 0x0003E8, "Member 'ABP_RacePauseMenuSequence_C::PopupWidget' has a wrong offset!");
-static_assert(offsetof(ABP_RacePauseMenuSequence_C, InputRecieveObjects) == 0x0003F0, "Member 'ABP_RacePauseMenuSequence_C::InputRecieveObjects' has a wrong offset!");
-static_assert(offsetof(ABP_RacePauseMenuSequence_C, OnEnd) == 0x000400, "Member 'ABP_RacePauseMenuSequence_C::OnEnd' has a wrong offset!");
-static_assert(offsetof(ABP_RacePauseMenuSequence_C, PrevFocusBtn) == 0x000410, "Member 'ABP_RacePauseMenuSequence_C::PrevFocusBtn' has a wrong offset!");
-static_assert(offsetof(ABP_RacePauseMenuSequence_C, IsCancelCancel) == 0x000418, "Member 'ABP_RacePauseMenuSequence_C::IsCancelCancel' has a wrong offset!");
-static_assert(offsetof(ABP_RacePauseMenuSequence_C, ReadySequenceActor) == 0x000420, "Member 'ABP_RacePauseMenuSequence_C::ReadySequenceActor' has a wrong offset!");
-static_assert(offsetof(ABP_RacePauseMenuSequence_C, IsCreated) == 0x000428, "Member 'ABP_RacePauseMenuSequence_C::IsCreated' has a wrong offset!");
-static_assert(offsetof(ABP_RacePauseMenuSequence_C, RaceSequence) == 0x000430, "Member 'ABP_RacePauseMenuSequence_C::RaceSequence' has a wrong offset!");
-static_assert(offsetof(ABP_RacePauseMenuSequence_C, bIsReady) == 0x000438, "Member 'ABP_RacePauseMenuSequence_C::bIsReady' has a wrong offset!");
-static_assert(offsetof(ABP_RacePauseMenuSequence_C, IsPopupOpen) == 0x000439, "Member 'ABP_RacePauseMenuSequence_C::IsPopupOpen' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_RacePauseMenuSequence_C;
 
 }
 

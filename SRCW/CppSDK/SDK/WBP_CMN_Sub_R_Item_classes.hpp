@@ -49,33 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_Sub_R_Item_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_Sub_R_Item_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_Sub_R_Item_C")
 	}
 	static class UWBP_CMN_Sub_R_Item_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_Sub_R_Item_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_Sub_R_Item_C) == 0x000008, "Wrong alignment on UWBP_CMN_Sub_R_Item_C");
-static_assert(sizeof(UWBP_CMN_Sub_R_Item_C) == 0x000370, "Wrong size on UWBP_CMN_Sub_R_Item_C");
-static_assert(offsetof(UWBP_CMN_Sub_R_Item_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_CMN_Sub_R_Item_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_R_Item_C, Reality_Get_Out) == 0x0002E8, "Member 'UWBP_CMN_Sub_R_Item_C::Reality_Get_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_R_Item_C, Default_Get_Out) == 0x0002F0, "Member 'UWBP_CMN_Sub_R_Item_C::Default_Get_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_R_Item_C, Eff_01) == 0x0002F8, "Member 'UWBP_CMN_Sub_R_Item_C::Eff_01' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_R_Item_C, Eff_02) == 0x000300, "Member 'UWBP_CMN_Sub_R_Item_C::Eff_02' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_R_Item_C, Eff_03) == 0x000308, "Member 'UWBP_CMN_Sub_R_Item_C::Eff_03' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_R_Item_C, Eff_04) == 0x000310, "Member 'UWBP_CMN_Sub_R_Item_C::Eff_04' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_R_Item_C, Eff_05) == 0x000318, "Member 'UWBP_CMN_Sub_R_Item_C::Eff_05' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_R_Item_C, Eff_06) == 0x000320, "Member 'UWBP_CMN_Sub_R_Item_C::Eff_06' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_R_Item_C, Eff_07) == 0x000328, "Member 'UWBP_CMN_Sub_R_Item_C::Eff_07' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_R_Item_C, Eff_08) == 0x000330, "Member 'UWBP_CMN_Sub_R_Item_C::Eff_08' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_R_Item_C, Eff_09) == 0x000338, "Member 'UWBP_CMN_Sub_R_Item_C::Eff_09' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_R_Item_C, Eff_Light) == 0x000340, "Member 'UWBP_CMN_Sub_R_Item_C::Eff_Light' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_R_Item_C, Eff_Wave) == 0x000348, "Member 'UWBP_CMN_Sub_R_Item_C::Eff_Wave' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_R_Item_C, ItemBox) == 0x000350, "Member 'UWBP_CMN_Sub_R_Item_C::ItemBox' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_R_Item_C, ItemBox_Open_Bottom) == 0x000358, "Member 'UWBP_CMN_Sub_R_Item_C::ItemBox_Open_Bottom' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_R_Item_C, ItemBox_Open_Eff) == 0x000360, "Member 'UWBP_CMN_Sub_R_Item_C::ItemBox_Open_Eff' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_R_Item_C, ItemBox_Open_Top) == 0x000368, "Member 'UWBP_CMN_Sub_R_Item_C::ItemBox_Open_Top' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_Sub_R_Item_C;
 
 }
 

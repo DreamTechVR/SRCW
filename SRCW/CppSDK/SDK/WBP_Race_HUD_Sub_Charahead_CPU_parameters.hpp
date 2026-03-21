@@ -91,61 +91,7 @@ public:
 	struct FLinearColor                           K2Node_Select_Default;                             // 0x0268(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0278(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU");
-static_assert(sizeof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU) == 0x000280, "Wrong size on WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, EntryPoint) == 0x000000, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, Temp_struct_Variable) == 0x000004, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, Temp_int_Variable) == 0x000014, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, Temp_int_Variable_1) == 0x000018, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, Temp_int_Variable_2) == 0x00001C, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, CallFunc_GetDataTableRowFromName_OutRow) == 0x000020, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000040, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, CallFunc_GetDataTableRowFromName_OutRow_1) == 0x000048, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::CallFunc_GetDataTableRowFromName_OutRow_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, CallFunc_GetDataTableRowFromName_ReturnValue_1) == 0x000068, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::CallFunc_GetDataTableRowFromName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, CallFunc_GetDataTableRowFromName_OutRow_2) == 0x000070, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::CallFunc_GetDataTableRowFromName_OutRow_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, CallFunc_GetDataTableRowFromName_ReturnValue_2) == 0x000090, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::CallFunc_GetDataTableRowFromName_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, Temp_int_Variable_3) == 0x000094, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, Temp_int_Variable_4) == 0x000098, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, Temp_int_Variable_5) == 0x00009C, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::Temp_int_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, K2Node_Event_IsGroup) == 0x0000A0, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::K2Node_Event_IsGroup' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, K2Node_Event_GroupIndex) == 0x0000A4, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::K2Node_Event_GroupIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, K2Node_Event_IsForce) == 0x0000A8, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::K2Node_Event_IsForce' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, CallFunc_GetDynamicMaterial_ReturnValue) == 0x0000B0, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, CallFunc_NotEqual_IntInt_ReturnValue) == 0x0000B8, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, CallFunc_Map_Find_Value) == 0x0000C0, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, CallFunc_Map_Find_ReturnValue) == 0x0000E0, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, Temp_struct_Variable_1) == 0x0000E4, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, CallFunc_Conv_ColorToLinearColor_ReturnValue) == 0x0000F4, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::CallFunc_Conv_ColorToLinearColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, CallFunc_Conv_ColorToLinearColor_ReturnValue_1) == 0x000104, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::CallFunc_Conv_ColorToLinearColor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, CallFunc_Add_IntInt_ReturnValue) == 0x000114, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, CallFunc_GetShapeIndex_ShapeIndex) == 0x000118, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::CallFunc_GetShapeIndex_ShapeIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, CallFunc_Map_Find_Value_1) == 0x000120, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::CallFunc_Map_Find_Value_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, CallFunc_Map_Find_ReturnValue_1) == 0x000140, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::CallFunc_Map_Find_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000148, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, CallFunc_Conv_ColorToLinearColor_ReturnValue_2) == 0x000150, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::CallFunc_Conv_ColorToLinearColor_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, K2Node_Event_IsDesignTime) == 0x000160, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, Temp_struct_Variable_2) == 0x000164, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::Temp_struct_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, Temp_struct_Variable_3) == 0x000174, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::Temp_struct_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, CallFunc_GetGroupColorId_ReturnValue) == 0x000184, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::CallFunc_GetGroupColorId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, CallFunc_GetGroupColorId_ReturnValue_1) == 0x000185, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::CallFunc_GetGroupColorId_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, CallFunc_GetEnumeratorName_ReturnValue) == 0x000188, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, CallFunc_GetEnumeratorName_ReturnValue_1) == 0x000190, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::CallFunc_GetEnumeratorName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, CallFunc_GetDataTableRowFromName_OutRow_3) == 0x000198, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::CallFunc_GetDataTableRowFromName_OutRow_3' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, CallFunc_GetDataTableRowFromName_ReturnValue_3) == 0x0001B8, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::CallFunc_GetDataTableRowFromName_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, CallFunc_GetDataTableRowFromName_OutRow_4) == 0x0001C0, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::CallFunc_GetDataTableRowFromName_OutRow_4' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, CallFunc_GetDataTableRowFromName_ReturnValue_4) == 0x0001E0, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::CallFunc_GetDataTableRowFromName_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, Temp_struct_Variable_4) == 0x0001E4, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::Temp_struct_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, CallFunc_GetGroupColorId_ReturnValue_2) == 0x0001F4, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::CallFunc_GetGroupColorId_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, CallFunc_GetEnumeratorName_ReturnValue_2) == 0x0001F8, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::CallFunc_GetEnumeratorName_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, Temp_struct_Variable_5) == 0x000200, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::Temp_struct_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, CallFunc_GetDataTableRowFromName_OutRow_5) == 0x000210, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::CallFunc_GetDataTableRowFromName_OutRow_5' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, CallFunc_GetDataTableRowFromName_ReturnValue_5) == 0x000230, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::CallFunc_GetDataTableRowFromName_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, Temp_struct_Variable_6) == 0x000234, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::Temp_struct_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, Temp_struct_Variable_7) == 0x000244, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::Temp_struct_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, Temp_int_Variable_6) == 0x000254, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::Temp_int_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, Temp_struct_Variable_8) == 0x000258, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::Temp_struct_Variable_8' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, K2Node_Select_Default) == 0x000268, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000278, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Charahead_CPU_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead_CPU;
 
 // Function WBP_Race_HUD_Sub_Charahead_CPU.WBP_Race_HUD_Sub_Charahead_CPU_C.GetShapeIndex
 // 0x0018 (0x0018 - 0x0000)
@@ -161,15 +107,7 @@ public:
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Charahead_CPU_C_GetShapeIndex) == 0x000004, "Wrong alignment on WBP_Race_HUD_Sub_Charahead_CPU_C_GetShapeIndex");
-static_assert(sizeof(WBP_Race_HUD_Sub_Charahead_CPU_C_GetShapeIndex) == 0x000018, "Wrong size on WBP_Race_HUD_Sub_Charahead_CPU_C_GetShapeIndex");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_GetShapeIndex, InIndex) == 0x000000, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_GetShapeIndex::InIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_GetShapeIndex, ShapeIndex) == 0x000004, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_GetShapeIndex::ShapeIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_GetShapeIndex, TmpIndex) == 0x000008, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_GetShapeIndex::TmpIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_GetShapeIndex, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_GetShapeIndex::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_GetShapeIndex, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x00000D, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_GetShapeIndex::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_GetShapeIndex, CallFunc_Subtract_IntInt_ReturnValue) == 0x000010, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_GetShapeIndex::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_GetShapeIndex, CallFunc_Add_IntInt_ReturnValue) == 0x000014, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_GetShapeIndex::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Charahead_CPU_C_GetShapeIndex;
 
 // Function WBP_Race_HUD_Sub_Charahead_CPU.WBP_Race_HUD_Sub_Charahead_CPU_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -178,9 +116,7 @@ struct WBP_Race_HUD_Sub_Charahead_CPU_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Charahead_CPU_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_Race_HUD_Sub_Charahead_CPU_C_PreConstruct");
-static_assert(sizeof(WBP_Race_HUD_Sub_Charahead_CPU_C_PreConstruct) == 0x000001, "Wrong size on WBP_Race_HUD_Sub_Charahead_CPU_C_PreConstruct");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Charahead_CPU_C_PreConstruct;
 
 // Function WBP_Race_HUD_Sub_Charahead_CPU.WBP_Race_HUD_Sub_Charahead_CPU_C.SetGroupIndexIF
 // 0x000C (0x000C - 0x0000)
@@ -192,11 +128,7 @@ public:
 	int32                                         GroupIndex;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsForce;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Charahead_CPU_C_SetGroupIndexIF) == 0x000004, "Wrong alignment on WBP_Race_HUD_Sub_Charahead_CPU_C_SetGroupIndexIF");
-static_assert(sizeof(WBP_Race_HUD_Sub_Charahead_CPU_C_SetGroupIndexIF) == 0x00000C, "Wrong size on WBP_Race_HUD_Sub_Charahead_CPU_C_SetGroupIndexIF");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_SetGroupIndexIF, IsGroup) == 0x000000, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_SetGroupIndexIF::IsGroup' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_SetGroupIndexIF, GroupIndex) == 0x000004, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_SetGroupIndexIF::GroupIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_SetGroupIndexIF, IsForce) == 0x000008, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_SetGroupIndexIF::IsForce' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Charahead_CPU_C_SetGroupIndexIF;
 
 // Function WBP_Race_HUD_Sub_Charahead_CPU.WBP_Race_HUD_Sub_Charahead_CPU_C.SetRank
 // 0x0028 (0x0028 - 0x0000)
@@ -211,14 +143,7 @@ public:
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_1; // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Charahead_CPU_C_SetRank) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Charahead_CPU_C_SetRank");
-static_assert(sizeof(WBP_Race_HUD_Sub_Charahead_CPU_C_SetRank) == 0x000028, "Wrong size on WBP_Race_HUD_Sub_Charahead_CPU_C_SetRank");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_SetRank, NewRank) == 0x000000, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_SetRank::NewRank' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_SetRank, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000008, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_SetRank::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_SetRank, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000010, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_SetRank::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_SetRank, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x000018, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_SetRank::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_SetRank, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000020, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_SetRank::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_SetRank, CallFunc_SetScalarParameterValue_Value_ImplicitCast_1) == 0x000024, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_SetRank::CallFunc_SetScalarParameterValue_Value_ImplicitCast_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Charahead_CPU_C_SetRank;
 
 // Function WBP_Race_HUD_Sub_Charahead_CPU.WBP_Race_HUD_Sub_Charahead_CPU_C.SetRivalInfo
 // 0x0018 (0x0018 - 0x0000)
@@ -234,15 +159,7 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Less_DoubleDouble_A_ImplicitCast;         // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Charahead_CPU_C_SetRivalInfo) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Charahead_CPU_C_SetRivalInfo");
-static_assert(sizeof(WBP_Race_HUD_Sub_Charahead_CPU_C_SetRivalInfo) == 0x000018, "Wrong size on WBP_Race_HUD_Sub_Charahead_CPU_C_SetRivalInfo");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_SetRivalInfo, IsRival) == 0x000000, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_SetRivalInfo::IsRival' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_SetRivalInfo, IsPowerRival) == 0x000001, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_SetRivalInfo::IsPowerRival' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_SetRivalInfo, CallFunc_GetRaceSettingGrouping_ReturnValue) == 0x000002, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_SetRivalInfo::CallFunc_GetRaceSettingGrouping_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_SetRivalInfo, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000003, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_SetRivalInfo::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_SetRivalInfo, CallFunc_K2_GetScalarParameterValue_ReturnValue) == 0x000004, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_SetRivalInfo::CallFunc_K2_GetScalarParameterValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_SetRivalInfo, CallFunc_Less_DoubleDouble_ReturnValue) == 0x000008, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_SetRivalInfo::CallFunc_Less_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Charahead_CPU_C_SetRivalInfo, CallFunc_Less_DoubleDouble_A_ImplicitCast) == 0x000010, "Member 'WBP_Race_HUD_Sub_Charahead_CPU_C_SetRivalInfo::CallFunc_Less_DoubleDouble_A_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Charahead_CPU_C_SetRivalInfo;
 
 }
 

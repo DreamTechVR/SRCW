@@ -28,13 +28,7 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_1;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_2;         // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Rank_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Rank) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Rank_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Rank");
-static_assert(sizeof(WBP_Race_HUD_Sub_Rank_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Rank) == 0x000020, "Wrong size on WBP_Race_HUD_Sub_Rank_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Rank");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Rank, EntryPoint) == 0x000000, "Member 'WBP_Race_HUD_Sub_Rank_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Rank::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Rank, K2Node_Event_IsDesignTime) == 0x000004, "Member 'WBP_Race_HUD_Sub_Rank_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Rank::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Rank, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'WBP_Race_HUD_Sub_Rank_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Rank::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Rank, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x000010, "Member 'WBP_Race_HUD_Sub_Rank_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Rank::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Rank, CallFunc_GetDynamicMaterial_ReturnValue_2) == 0x000018, "Member 'WBP_Race_HUD_Sub_Rank_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Rank::CallFunc_GetDynamicMaterial_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Rank_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Rank;
 
 // Function WBP_Race_HUD_Sub_Rank.WBP_Race_HUD_Sub_Rank_C.FireRankChangeAnim
 // 0x0010 (0x0010 - 0x0000)
@@ -45,10 +39,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Rank_C_FireRankChangeAnim) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Rank_C_FireRankChangeAnim");
-static_assert(sizeof(WBP_Race_HUD_Sub_Rank_C_FireRankChangeAnim) == 0x000010, "Wrong size on WBP_Race_HUD_Sub_Rank_C_FireRankChangeAnim");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_FireRankChangeAnim, Amount) == 0x000000, "Member 'WBP_Race_HUD_Sub_Rank_C_FireRankChangeAnim::Amount' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_FireRankChangeAnim, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_Race_HUD_Sub_Rank_C_FireRankChangeAnim::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Rank_C_FireRankChangeAnim;
 
 // Function WBP_Race_HUD_Sub_Rank.WBP_Race_HUD_Sub_Rank_C.GetRankIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -57,9 +48,7 @@ struct WBP_Race_HUD_Sub_Rank_C_GetRankIndex final
 public:
 	int32                                         RankIndex_0;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Rank_C_GetRankIndex) == 0x000004, "Wrong alignment on WBP_Race_HUD_Sub_Rank_C_GetRankIndex");
-static_assert(sizeof(WBP_Race_HUD_Sub_Rank_C_GetRankIndex) == 0x000004, "Wrong size on WBP_Race_HUD_Sub_Rank_C_GetRankIndex");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_GetRankIndex, RankIndex_0) == 0x000000, "Member 'WBP_Race_HUD_Sub_Rank_C_GetRankIndex::RankIndex_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Rank_C_GetRankIndex;
 
 // Function WBP_Race_HUD_Sub_Rank.WBP_Race_HUD_Sub_Rank_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -68,9 +57,7 @@ struct WBP_Race_HUD_Sub_Rank_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Rank_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_Race_HUD_Sub_Rank_C_PreConstruct");
-static_assert(sizeof(WBP_Race_HUD_Sub_Rank_C_PreConstruct) == 0x000001, "Wrong size on WBP_Race_HUD_Sub_Rank_C_PreConstruct");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_Race_HUD_Sub_Rank_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Rank_C_PreConstruct;
 
 // Function WBP_Race_HUD_Sub_Rank.WBP_Race_HUD_Sub_Rank_C.SetRankByIndex
 // 0x0018 (0x0018 - 0x0000)
@@ -83,12 +70,7 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                K2Node_Select_Default;                             // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Rank_C_SetRankByIndex) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Rank_C_SetRankByIndex");
-static_assert(sizeof(WBP_Race_HUD_Sub_Rank_C_SetRankByIndex) == 0x000018, "Wrong size on WBP_Race_HUD_Sub_Rank_C_SetRankByIndex");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_SetRankByIndex, InRank) == 0x000000, "Member 'WBP_Race_HUD_Sub_Rank_C_SetRankByIndex::InRank' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_SetRankByIndex, Temp_int_Variable) == 0x000004, "Member 'WBP_Race_HUD_Sub_Rank_C_SetRankByIndex::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_SetRankByIndex, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000008, "Member 'WBP_Race_HUD_Sub_Rank_C_SetRankByIndex::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_SetRankByIndex, K2Node_Select_Default) == 0x000010, "Member 'WBP_Race_HUD_Sub_Rank_C_SetRankByIndex::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Rank_C_SetRankByIndex;
 
 // Function WBP_Race_HUD_Sub_Rank.WBP_Race_HUD_Sub_Rank_C.SetRankByIndexTo4-12Material
 // 0x0020 (0x0020 - 0x0000)
@@ -103,14 +85,7 @@ public:
 	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Rank_C_SetRankByIndexTo4_12Material) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Rank_C_SetRankByIndexTo4_12Material");
-static_assert(sizeof(WBP_Race_HUD_Sub_Rank_C_SetRankByIndexTo4_12Material) == 0x000020, "Wrong size on WBP_Race_HUD_Sub_Rank_C_SetRankByIndexTo4_12Material");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_SetRankByIndexTo4_12Material, Index_0) == 0x000000, "Member 'WBP_Race_HUD_Sub_Rank_C_SetRankByIndexTo4_12Material::Index_0' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_SetRankByIndexTo4_12Material, CallFunc_Subtract_IntInt_ReturnValue) == 0x000004, "Member 'WBP_Race_HUD_Sub_Rank_C_SetRankByIndexTo4_12Material::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_SetRankByIndexTo4_12Material, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'WBP_Race_HUD_Sub_Rank_C_SetRankByIndexTo4_12Material::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_SetRankByIndexTo4_12Material, CallFunc_Clamp_ReturnValue) == 0x00000C, "Member 'WBP_Race_HUD_Sub_Rank_C_SetRankByIndexTo4_12Material::CallFunc_Clamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_SetRankByIndexTo4_12Material, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000010, "Member 'WBP_Race_HUD_Sub_Rank_C_SetRankByIndexTo4_12Material::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_SetRankByIndexTo4_12Material, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000018, "Member 'WBP_Race_HUD_Sub_Rank_C_SetRankByIndexTo4_12Material::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Rank_C_SetRankByIndexTo4_12Material;
 
 // Function WBP_Race_HUD_Sub_Rank.WBP_Race_HUD_Sub_Rank_C.UpdateLocalizeTexture
 // 0x01A8 (0x01A8 - 0x0000)
@@ -177,52 +152,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x019C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture");
-static_assert(sizeof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture) == 0x0001A8, "Wrong size on WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, Temp_int_Loop_Counter_Variable) == 0x000000, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, CallFunc_Add_IntInt_ReturnValue) == 0x000004, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, Temp_int_Array_Index_Variable) == 0x000008, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, Temp_int_Array_Index_Variable_1) == 0x00000C, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, K2Node_SwitchInteger_CmpSuccess) == 0x000010, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, K2Node_SwitchInteger_CmpSuccess_1) == 0x000011, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::K2Node_SwitchInteger_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, Temp_int_Loop_Counter_Variable_1) == 0x000014, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x000018, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, K2Node_DynamicCast_As_______) == 0x000020, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::K2Node_DynamicCast_As_______' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, CallFunc_Add_IntInt_ReturnValue_1) == 0x00002C, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, CallFunc_GetTextLangFromSave_ReturnValue) == 0x000030, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::CallFunc_GetTextLangFromSave_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, CallFunc_GetEnumeratorName_ReturnValue) == 0x000034, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, CallFunc_GetDataTableRowFromName_OutRow) == 0x000040, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000058, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, CallFunc_GetTextLangFromSave_ReturnValue_1) == 0x000059, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::CallFunc_GetTextLangFromSave_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, CallFunc_Array_Get_Item) == 0x000060, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, CallFunc_GetEnumeratorName_ReturnValue_1) == 0x000088, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::CallFunc_GetEnumeratorName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, CallFunc_LoadAsset_Blocking_ReturnValue_1) == 0x000090, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::CallFunc_LoadAsset_Blocking_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, CallFunc_Array_Length_ReturnValue) == 0x000098, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, K2Node_DynamicCast_As_____2D) == 0x0000A0, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, K2Node_DynamicCast_bSuccess_1) == 0x0000A8, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, CallFunc_Less_IntInt_ReturnValue) == 0x0000A9, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, CallFunc_LoadAsset_Blocking_ReturnValue_2) == 0x0000B0, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::CallFunc_LoadAsset_Blocking_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, CallFunc_GetTextLangFromSave_ReturnValue_2) == 0x0000B8, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::CallFunc_GetTextLangFromSave_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, K2Node_DynamicCast_As________1) == 0x0000C0, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::K2Node_DynamicCast_As________1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, K2Node_DynamicCast_bSuccess_2) == 0x0000C8, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, CallFunc_GetEnumeratorName_ReturnValue_2) == 0x0000CC, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::CallFunc_GetEnumeratorName_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, CallFunc_GetDataTableRowFromName_OutRow_1) == 0x0000D8, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::CallFunc_GetDataTableRowFromName_OutRow_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, CallFunc_GetDataTableRowFromName_ReturnValue_1) == 0x0000F0, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::CallFunc_GetDataTableRowFromName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, CallFunc_Array_Get_Item_1) == 0x0000F8, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, CallFunc_LoadAsset_Blocking_ReturnValue_3) == 0x000120, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::CallFunc_LoadAsset_Blocking_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, CallFunc_LoadAsset_Blocking_ReturnValue_4) == 0x000128, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::CallFunc_LoadAsset_Blocking_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, K2Node_DynamicCast_As________2) == 0x000130, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::K2Node_DynamicCast_As________2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, K2Node_DynamicCast_bSuccess_3) == 0x000138, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, K2Node_DynamicCast_As_____2D_1) == 0x000140, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::K2Node_DynamicCast_As_____2D_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, K2Node_DynamicCast_bSuccess_4) == 0x000148, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, CallFunc_GetDataTableRowFromName_OutRow_2) == 0x000150, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::CallFunc_GetDataTableRowFromName_OutRow_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, CallFunc_GetDataTableRowFromName_ReturnValue_2) == 0x000180, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::CallFunc_GetDataTableRowFromName_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, CallFunc_LoadAsset_Blocking_ReturnValue_5) == 0x000188, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::CallFunc_LoadAsset_Blocking_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, K2Node_DynamicCast_As_____2D_2) == 0x000190, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::K2Node_DynamicCast_As_____2D_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, K2Node_DynamicCast_bSuccess_5) == 0x000198, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, CallFunc_Array_Length_ReturnValue_1) == 0x00019C, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture, CallFunc_Less_IntInt_ReturnValue_1) == 0x0001A0, "Member 'WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Rank_C_UpdateLocalizeTexture;
 
 }
 

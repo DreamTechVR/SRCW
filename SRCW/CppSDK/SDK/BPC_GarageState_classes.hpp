@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -40,19 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_GarageState_C">();
+		BP_STATIC_CLASS_IMPL("BPC_GarageState_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_GarageState_C")
 	}
 	static class UBPC_GarageState_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_GarageState_C>();
 	}
 };
-static_assert(alignof(UBPC_GarageState_C) == 0x000008, "Wrong alignment on UBPC_GarageState_C");
-static_assert(sizeof(UBPC_GarageState_C) == 0x000140, "Wrong size on UBPC_GarageState_C");
-static_assert(offsetof(UBPC_GarageState_C, UberGraphFrame) == 0x000128, "Member 'UBPC_GarageState_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_GarageState_C, Sequence) == 0x000130, "Member 'UBPC_GarageState_C::Sequence' has a wrong offset!");
-static_assert(offsetof(UBPC_GarageState_C, bIsMessageBarVisible) == 0x000138, "Member 'UBPC_GarageState_C::bIsMessageBarVisible' has a wrong offset!");
-static_assert(offsetof(UBPC_GarageState_C, bIsSelectedCustomizeDataChanged) == 0x000139, "Member 'UBPC_GarageState_C::bIsSelectedCustomizeDataChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_GarageState_C;
 
 }
 

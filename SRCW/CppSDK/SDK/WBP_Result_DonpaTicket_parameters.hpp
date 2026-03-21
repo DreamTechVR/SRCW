@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "UNION_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "UNION_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
@@ -27,10 +27,7 @@ public:
 	int32                                         AddNum;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIsCountUp;                                        // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_DonpaTicket_C_AddOpen) == 0x000004, "Wrong alignment on WBP_Result_DonpaTicket_C_AddOpen");
-static_assert(sizeof(WBP_Result_DonpaTicket_C_AddOpen) == 0x000008, "Wrong size on WBP_Result_DonpaTicket_C_AddOpen");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_AddOpen, AddNum) == 0x000000, "Member 'WBP_Result_DonpaTicket_C_AddOpen::AddNum' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_AddOpen, bIsCountUp) == 0x000004, "Member 'WBP_Result_DonpaTicket_C_AddOpen::bIsCountUp' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_DonpaTicket_C_AddOpen;
 
 // Function WBP_Result_DonpaTicket.WBP_Result_DonpaTicket_C.AddOpenForRival
 // 0x0004 (0x0004 - 0x0000)
@@ -39,201 +36,117 @@ struct WBP_Result_DonpaTicket_C_AddOpenForRival final
 public:
 	int32                                         AddNum;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_DonpaTicket_C_AddOpenForRival) == 0x000004, "Wrong alignment on WBP_Result_DonpaTicket_C_AddOpenForRival");
-static_assert(sizeof(WBP_Result_DonpaTicket_C_AddOpenForRival) == 0x000004, "Wrong size on WBP_Result_DonpaTicket_C_AddOpenForRival");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_AddOpenForRival, AddNum) == 0x000000, "Member 'WBP_Result_DonpaTicket_C_AddOpenForRival::AddNum' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_DonpaTicket_C_AddOpenForRival;
 
 // Function WBP_Result_DonpaTicket.WBP_Result_DonpaTicket_C.ExecuteUbergraph_WBP_Result_DonpaTicket
-// 0x02F8 (0x02F8 - 0x0000)
+// 0x02F0 (0x02F0 - 0x0000)
 struct WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_DoubleDouble_ReturnValue;       // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0008(0x0038)(IsPlainOldData, NoDestructor)
-	float                                         K2Node_Event_InDeltaTime;                          // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetDonpaTicket_ReturnValue;               // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetAddPoint_AddPoint;                     // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result; // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue; // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result_1; // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue_1; // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_72[0x2];                                       // 0x0072(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_CustomEvent_AddTicketNum;                   // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_bIsTicketUpdate;                // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetDisplayName_ReturnValue;               // 0x0080(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0090(0x0010)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00A0(0x0048)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00E8(0x0010)(ReferenceParm)
-	int32                                         CallFunc_GetDonpaTicket_ReturnValue_1;             // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_FC[0x4];                                       // 0x00FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0100(0x0010)()
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_114[0x4];                                      // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0118(0x0010)()
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0128(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0130(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetDonpaTicketMax_ReturnValue;            // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0144(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_AddNum_1;                             // 0x0154(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bIsCountUp;                           // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ERivalTeamId                                  CallFunc_GetResultRivalTeamId_ReturnValue;         // 0x0159(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_15A[0x2];                                      // 0x015A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetRivalTeamEliminatedCount_ReturnValue;  // 0x015C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetWinRivalTotalRankForPartyRace_ReturnValue; // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ERivalTeamId                                  CallFunc_GetResultRivalTeamId_ReturnValue_1;       // 0x0161(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_162[0x2];                                      // 0x0162(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetRivalTeamWinCount_ReturnValue;         // 0x0164(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ERewardType                                   CallFunc_FindRivalTeamWinRewardDataByWinCount_OutRewardType; // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_169[0x3];                                      // 0x0169(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_FindRivalTeamWinRewardDataByWinCount_OutRewardId; // 0x016C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_FindRivalTeamWinRewardDataByWinCount_OutNumRewards; // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_FindRivalTeamWinRewardDataByWinCount_ReturnValue; // 0x0174(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_175[0x3];                                      // 0x0175(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0178(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0189(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_18A[0x2];                                      // 0x018A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_Event_AddNum;                               // 0x018C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x0194(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Clamp_ReturnValue;                        // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19C[0x4];                                      // 0x019C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue_1;             // 0x01A0(0x0010)()
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue_2;             // 0x01B0(0x0010)()
-	int32                                         CallFunc_GetDonpaTicket_ReturnValue_2;             // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_AddAmt;                         // 0x01C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_2;            // 0x01C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x01CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue_3;             // 0x01D0(0x0010)()
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x01E0(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_4;            // 0x01F0(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetDonpaTicketMax_ReturnValue_1;          // 0x0200(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetDonpaTicketMax_ReturnValue_2;          // 0x0204(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Clamp_ReturnValue_1;                      // 0x0208(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Clamp_ReturnValue_2;                      // 0x020C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue_4;             // 0x0210(0x0010)()
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue_5;             // 0x0220(0x0010)()
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_5;            // 0x0230(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result_2; // 0x0240(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue_2; // 0x0248(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0250(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_251[0x3];                                      // 0x0251(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_6;            // 0x0254(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_7;            // 0x0264(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_274[0x4];                                      // 0x0274(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0278(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue_1;        // 0x0280(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0288(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x0289(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_28A[0x6];                                      // 0x028A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class AAppPlayerController*                   K2Node_DynamicCast_AsApp_Player_Controller;        // 0x0290(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0298(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_299[0x7];                                      // 0x0299(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AAppPlayerController*                   K2Node_DynamicCast_AsApp_Player_Controller_1;      // 0x02A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x02A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A9[0x7];                                      // 0x02A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        K2Node_CustomEvent_Time;                           // 0x02B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x02B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x02C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C1[0x7];                                      // 0x02C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x02C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_DoubleDouble_ReturnValue_1;     // 0x02D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D1[0x3];                                      // 0x02D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Event_InTime;                               // 0x02D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_8;            // 0x02D8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetDonpaTicket_ReturnValue;               // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_DoubleDouble_ReturnValue;       // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue; // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result_1; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue_1; // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_32[0x2];                                       // 0x0032(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_CustomEvent_AddTicketNum;                   // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_bIsTicketUpdate;                // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetDisplayName_ReturnValue;               // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0050(0x0010)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0060(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00A8(0x0010)(ReferenceParm)
+	int32                                         CallFunc_GetDonpaTicket_ReturnValue_1;             // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00C0(0x0010)()
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D4[0x4];                                       // 0x00D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x00D8(0x0010)()
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x00E8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x00F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0100(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetDonpaTicketMax_ReturnValue;            // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0114(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_AddNum_1;                             // 0x0124(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bIsCountUp;                           // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ERivalTeamId                                  CallFunc_GetResultRivalTeamId_ReturnValue;         // 0x0129(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_12A[0x2];                                      // 0x012A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetRivalTeamEliminatedCount_ReturnValue;  // 0x012C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetWinRivalTotalRankForPartyRace_ReturnValue; // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ERivalTeamId                                  CallFunc_GetResultRivalTeamId_ReturnValue_1;       // 0x0131(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_132[0x2];                                      // 0x0132(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetRivalTeamWinCount_ReturnValue;         // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ERewardType                                   CallFunc_FindRivalTeamWinRewardDataByWinCount_OutRewardType; // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_139[0x3];                                      // 0x0139(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_FindRivalTeamWinRewardDataByWinCount_OutRewardId; // 0x013C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_FindRivalTeamWinRewardDataByWinCount_OutNumRewards; // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_FindRivalTeamWinRewardDataByWinCount_ReturnValue; // 0x0144(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0145(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0146(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_147[0x1];                                      // 0x0147(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Clamp_ReturnValue;                        // 0x014C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_AddNum;                               // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_154[0x4];                                      // 0x0154(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue_1;             // 0x0158(0x0010)()
+	int32                                         CallFunc_GetDonpaTicket_ReturnValue_2;             // 0x0168(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_AddAmt;                         // 0x016C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue_2;             // 0x0178(0x0010)()
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x0188(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_4;            // 0x0198(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetDonpaTicketMax_ReturnValue_1;          // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetDonpaTicketMax_ReturnValue_2;          // 0x01AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Clamp_ReturnValue_1;                      // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Clamp_ReturnValue_2;                      // 0x01B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue_3;             // 0x01B8(0x0010)()
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue_4;             // 0x01C8(0x0010)()
+	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result_2; // 0x01D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue_2; // 0x01E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E9[0x3];                                      // 0x01E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_5;            // 0x01EC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_6;            // 0x01FC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_20C[0x4];                                      // 0x020C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0210(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue_1;        // 0x0218(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0220(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x0221(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_222[0x6];                                      // 0x0222(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class AAppPlayerController*                   K2Node_DynamicCast_AsApp_Player_Controller;        // 0x0228(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0230(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_231[0x7];                                      // 0x0231(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AAppPlayerController*                   K2Node_DynamicCast_AsApp_Player_Controller_1;      // 0x0238(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0240(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_241[0x3];                                      // 0x0241(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_7;            // 0x0244(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_254[0x4];                                      // 0x0254(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        K2Node_CustomEvent_Time;                           // 0x0258(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0260(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_DoubleDouble_ReturnValue_1;     // 0x0268(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0269(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_26A[0x2];                                      // 0x026A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Event_InTime;                               // 0x026C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_8;            // 0x0270(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetPrevDonpaTicketNum_ReturnValue;        // 0x0280(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_284[0x4];                                      // 0x0284(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue_5;             // 0x0288(0x0010)()
+	bool                                          CallFunc_GetIsRivalSkinExistsGameMode_ReturnValue; // 0x0298(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0299(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29A[0x2];                                      // 0x029A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x029C(0x0038)(IsPlainOldData, NoDestructor)
+	float                                         K2Node_Event_InDeltaTime;                          // 0x02D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x02D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetForceCloseTime_Imp_Time_ImplicitCast;  // 0x02E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Subtract_DoubleDouble_B_ImplicitCast;     // 0x02E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetForceCloseTime_Imp_Time_ImplicitCast;  // 0x02F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket) == 0x000008, "Wrong alignment on WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket");
-static_assert(sizeof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket) == 0x0002F8, "Wrong size on WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, EntryPoint) == 0x000000, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_LessEqual_DoubleDouble_ReturnValue) == 0x000004, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_LessEqual_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, K2Node_Event_MyGeometry) == 0x000008, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, K2Node_Event_InDeltaTime) == 0x000040, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_GetDonpaTicket_ReturnValue) == 0x000044, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_GetDonpaTicket_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_GetAddPoint_AddPoint) == 0x000048, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_GetAddPoint_AddPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result) == 0x000050, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue) == 0x000058, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result_1) == 0x000060, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue_1) == 0x000068, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_IsValid_ReturnValue) == 0x000070, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_IsValid_ReturnValue_1) == 0x000071, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, K2Node_CustomEvent_AddTicketNum) == 0x000074, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::K2Node_CustomEvent_AddTicketNum' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, K2Node_CustomEvent_bIsTicketUpdate) == 0x000078, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::K2Node_CustomEvent_bIsTicketUpdate' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_GetDisplayName_ReturnValue) == 0x000080, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_Conv_StringToText_ReturnValue) == 0x000090, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, K2Node_MakeStruct_FormatArgumentData) == 0x0000A0, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, K2Node_MakeArray_Array) == 0x0000E8, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_GetDonpaTicket_ReturnValue_1) == 0x0000F8, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_GetDonpaTicket_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_Format_ReturnValue) == 0x000100, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_Add_IntInt_ReturnValue) == 0x000110, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_Conv_IntToText_ReturnValue) == 0x000118, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_PlayAnimation_ReturnValue) == 0x000128, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, K2Node_CreateDelegate_OutputDelegate) == 0x000130, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_GetDonpaTicketMax_ReturnValue) == 0x000140, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_GetDonpaTicketMax_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, K2Node_CreateDelegate_OutputDelegate_1) == 0x000144, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, K2Node_Event_AddNum_1) == 0x000154, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::K2Node_Event_AddNum_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, K2Node_Event_bIsCountUp) == 0x000158, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::K2Node_Event_bIsCountUp' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_GetResultRivalTeamId_ReturnValue) == 0x000159, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_GetResultRivalTeamId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_GetRivalTeamEliminatedCount_ReturnValue) == 0x00015C, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_GetRivalTeamEliminatedCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_GetWinRivalTotalRankForPartyRace_ReturnValue) == 0x000160, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_GetWinRivalTotalRankForPartyRace_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_GetResultRivalTeamId_ReturnValue_1) == 0x000161, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_GetResultRivalTeamId_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_GetRivalTeamWinCount_ReturnValue) == 0x000164, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_GetRivalTeamWinCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_FindRivalTeamWinRewardDataByWinCount_OutRewardType) == 0x000168, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_FindRivalTeamWinRewardDataByWinCount_OutRewardType' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_FindRivalTeamWinRewardDataByWinCount_OutRewardId) == 0x00016C, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_FindRivalTeamWinRewardDataByWinCount_OutRewardId' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_FindRivalTeamWinRewardDataByWinCount_OutNumRewards) == 0x000170, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_FindRivalTeamWinRewardDataByWinCount_OutNumRewards' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_FindRivalTeamWinRewardDataByWinCount_ReturnValue) == 0x000174, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_FindRivalTeamWinRewardDataByWinCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, K2Node_CreateDelegate_OutputDelegate_2) == 0x000178, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000188, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_BooleanAND_ReturnValue) == 0x000189, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, K2Node_Event_AddNum) == 0x00018C, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::K2Node_Event_AddNum' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_Subtract_IntInt_ReturnValue) == 0x000190, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x000194, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_Clamp_ReturnValue) == 0x000198, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_Clamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_Conv_IntToText_ReturnValue_1) == 0x0001A0, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_Conv_IntToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_Conv_IntToText_ReturnValue_2) == 0x0001B0, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_Conv_IntToText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_GetDonpaTicket_ReturnValue_2) == 0x0001C0, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_GetDonpaTicket_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, K2Node_CustomEvent_AddAmt) == 0x0001C4, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::K2Node_CustomEvent_AddAmt' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_Subtract_IntInt_ReturnValue_2) == 0x0001C8, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_Subtract_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_Add_IntInt_ReturnValue_1) == 0x0001CC, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_Conv_IntToText_ReturnValue_3) == 0x0001D0, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_Conv_IntToText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, K2Node_CreateDelegate_OutputDelegate_3) == 0x0001E0, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, K2Node_CreateDelegate_OutputDelegate_4) == 0x0001F0, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_GetDonpaTicketMax_ReturnValue_1) == 0x000200, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_GetDonpaTicketMax_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_GetDonpaTicketMax_ReturnValue_2) == 0x000204, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_GetDonpaTicketMax_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_Clamp_ReturnValue_1) == 0x000208, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_Clamp_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_Clamp_ReturnValue_2) == 0x00020C, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_Clamp_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_Conv_IntToText_ReturnValue_4) == 0x000210, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_Conv_IntToText_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_Conv_IntToText_ReturnValue_5) == 0x000220, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_Conv_IntToText_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, K2Node_CreateDelegate_OutputDelegate_5) == 0x000230, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result_2) == 0x000240, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result_2' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue_2) == 0x000248, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_IsValid_ReturnValue_2) == 0x000250, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, K2Node_CreateDelegate_OutputDelegate_6) == 0x000254, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, K2Node_CreateDelegate_OutputDelegate_7) == 0x000264, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_GetPlayerController_ReturnValue) == 0x000278, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_GetPlayerController_ReturnValue_1) == 0x000280, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_IsValid_ReturnValue_3) == 0x000288, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_IsValid_ReturnValue_4) == 0x000289, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000290, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, K2Node_DynamicCast_bSuccess) == 0x000298, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, K2Node_DynamicCast_AsApp_Player_Controller_1) == 0x0002A0, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::K2Node_DynamicCast_AsApp_Player_Controller_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, K2Node_DynamicCast_bSuccess_1) == 0x0002A8, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, K2Node_CustomEvent_Time) == 0x0002B0, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::K2Node_CustomEvent_Time' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_Add_DoubleDouble_ReturnValue) == 0x0002B8, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_Greater_DoubleDouble_ReturnValue) == 0x0002C0, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_Greater_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x0002C8, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_LessEqual_DoubleDouble_ReturnValue_1) == 0x0002D0, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_LessEqual_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, K2Node_Event_InTime) == 0x0002D4, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::K2Node_Event_InTime' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, K2Node_CreateDelegate_OutputDelegate_8) == 0x0002D8, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::K2Node_CreateDelegate_OutputDelegate_8' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_Subtract_DoubleDouble_B_ImplicitCast) == 0x0002E8, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_Subtract_DoubleDouble_B_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket, CallFunc_SetForceCloseTime_Imp_Time_ImplicitCast) == 0x0002F0, "Member 'WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket::CallFunc_SetForceCloseTime_Imp_Time_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_DonpaTicket_C_ExecuteUbergraph_WBP_Result_DonpaTicket;
 
 // Function WBP_Result_DonpaTicket.WBP_Result_DonpaTicket_C.GetAddPoint
 // 0x00A0 (0x00A0 - 0x0000)
@@ -259,25 +172,10 @@ public:
 	uint8                                         Pad_99[0x3];                                       // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_DonpaTicket_C_GetAddPoint) == 0x000008, "Wrong alignment on WBP_Result_DonpaTicket_C_GetAddPoint");
-static_assert(sizeof(WBP_Result_DonpaTicket_C_GetAddPoint) == 0x0000A0, "Wrong size on WBP_Result_DonpaTicket_C_GetAddPoint");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddPoint, AddPoint) == 0x000000, "Member 'WBP_Result_DonpaTicket_C_GetAddPoint::AddPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddPoint, Point) == 0x000004, "Member 'WBP_Result_DonpaTicket_C_GetAddPoint::Point' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddPoint, Temp_int_Array_Index_Variable) == 0x000008, "Member 'WBP_Result_DonpaTicket_C_GetAddPoint::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddPoint, Temp_int_Loop_Counter_Variable) == 0x00000C, "Member 'WBP_Result_DonpaTicket_C_GetAddPoint::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddPoint, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'WBP_Result_DonpaTicket_C_GetAddPoint::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddPoint, CallFunc_GetRewardRedStarRingTypeList_OutRewardRedStarRingTypes) == 0x000018, "Member 'WBP_Result_DonpaTicket_C_GetAddPoint::CallFunc_GetRewardRedStarRingTypeList_OutRewardRedStarRingTypes' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddPoint, CallFunc_GetRewardRedStarRingTypeList_OutRSRHonorList) == 0x000028, "Member 'WBP_Result_DonpaTicket_C_GetAddPoint::CallFunc_GetRewardRedStarRingTypeList_OutRSRHonorList' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddPoint, CallFunc_SaveResult_OutPlayerLevelInfo) == 0x000038, "Member 'WBP_Result_DonpaTicket_C_GetAddPoint::CallFunc_SaveResult_OutPlayerLevelInfo' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddPoint, CallFunc_SaveResult_OutRedStarRingData) == 0x000050, "Member 'WBP_Result_DonpaTicket_C_GetAddPoint::CallFunc_SaveResult_OutRedStarRingData' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddPoint, CallFunc_MakeResultRewardItemInfos_Output) == 0x000060, "Member 'WBP_Result_DonpaTicket_C_GetAddPoint::CallFunc_MakeResultRewardItemInfos_Output' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddPoint, CallFunc_Array_Length_ReturnValue) == 0x000070, "Member 'WBP_Result_DonpaTicket_C_GetAddPoint::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddPoint, CallFunc_Array_Get_Item) == 0x000078, "Member 'WBP_Result_DonpaTicket_C_GetAddPoint::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddPoint, CallFunc_Less_IntInt_ReturnValue) == 0x000098, "Member 'WBP_Result_DonpaTicket_C_GetAddPoint::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddPoint, CallFunc_Add_IntInt_ReturnValue_1) == 0x00009C, "Member 'WBP_Result_DonpaTicket_C_GetAddPoint::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_DonpaTicket_C_GetAddPoint;
 
 // Function WBP_Result_DonpaTicket.WBP_Result_DonpaTicket_C.GetAddTicketCount
-// 0x05A0 (0x05A0 - 0x0000)
+// 0x05C0 (0x05C0 - 0x0000)
 struct WBP_Result_DonpaTicket_C_GetAddTicketCount final
 {
 public:
@@ -287,40 +185,21 @@ public:
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_14[0xC];                                       // 0x0014(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAppRaceConfigData                     CallFunc_GetAppRaceConfigData_OutData;             // 0x0020(0x0500)()
-	TArray<ERewardRedStarRingType>                CallFunc_GetRewardRedStarRingTypeList_OutRewardRedStarRingTypes; // 0x0520(0x0010)(ReferenceParm)
-	TArray<struct FHonorCommendationData>         CallFunc_GetRewardRedStarRingTypeList_OutRSRHonorList; // 0x0530(0x0010)(ReferenceParm)
-	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0540(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FPlayerLevelInfo                       CallFunc_SaveResult_OutPlayerLevelInfo;            // 0x0544(0x0014)(NoDestructor)
-	TArray<struct FRewardRedStarRingData>         CallFunc_SaveResult_OutRedStarRingData;            // 0x0558(0x0010)(ReferenceParm)
-	struct FRewardRedStarRingData                 CallFunc_Array_Get_Item;                           // 0x0568(0x0020)()
-	int32                                         CallFunc_GetRSRDonpaTicket_ReturnValue;            // 0x0588(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x058C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0590(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0594(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetAddTicketCount_ReturnValue;            // 0x0598(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x059C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FAppRaceConfigData                     CallFunc_GetAppRaceConfigData_OutData;             // 0x0020(0x0520)()
+	TArray<ERewardRedStarRingType>                CallFunc_GetRewardRedStarRingTypeList_OutRewardRedStarRingTypes; // 0x0540(0x0010)(ReferenceParm)
+	TArray<struct FHonorCommendationData>         CallFunc_GetRewardRedStarRingTypeList_OutRSRHonorList; // 0x0550(0x0010)(ReferenceParm)
+	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0560(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPlayerLevelInfo                       CallFunc_SaveResult_OutPlayerLevelInfo;            // 0x0564(0x0014)(NoDestructor)
+	TArray<struct FRewardRedStarRingData>         CallFunc_SaveResult_OutRedStarRingData;            // 0x0578(0x0010)(ReferenceParm)
+	struct FRewardRedStarRingData                 CallFunc_Array_Get_Item;                           // 0x0588(0x0020)()
+	int32                                         CallFunc_GetRSRDonpaTicket_ReturnValue;            // 0x05A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x05AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x05B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x05B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetAddTicketCount_ReturnValue;            // 0x05B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x05BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_DonpaTicket_C_GetAddTicketCount) == 0x000010, "Wrong alignment on WBP_Result_DonpaTicket_C_GetAddTicketCount");
-static_assert(sizeof(WBP_Result_DonpaTicket_C_GetAddTicketCount) == 0x0005A0, "Wrong size on WBP_Result_DonpaTicket_C_GetAddTicketCount");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, ReturnValue) == 0x000000, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, PointResult) == 0x000004, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::PointResult' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, Temp_int_Array_Index_Variable) == 0x000008, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, Temp_int_Loop_Counter_Variable) == 0x00000C, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_GetAppRaceConfigData_OutData) == 0x000020, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_GetAppRaceConfigData_OutData' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_GetRewardRedStarRingTypeList_OutRewardRedStarRingTypes) == 0x000520, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_GetRewardRedStarRingTypeList_OutRewardRedStarRingTypes' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_GetRewardRedStarRingTypeList_OutRSRHonorList) == 0x000530, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_GetRewardRedStarRingTypeList_OutRSRHonorList' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_Array_LastIndex_ReturnValue) == 0x000540, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_SaveResult_OutPlayerLevelInfo) == 0x000544, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_SaveResult_OutPlayerLevelInfo' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_SaveResult_OutRedStarRingData) == 0x000558, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_SaveResult_OutRedStarRingData' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_Array_Get_Item) == 0x000568, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_GetRSRDonpaTicket_ReturnValue) == 0x000588, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_GetRSRDonpaTicket_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_Add_IntInt_ReturnValue_1) == 0x00058C, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_Add_IntInt_ReturnValue_2) == 0x000590, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_Array_Length_ReturnValue) == 0x000594, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_GetAddTicketCount_ReturnValue) == 0x000598, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_GetAddTicketCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_Less_IntInt_ReturnValue) == 0x00059C, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_DonpaTicket_C_GetAddTicketCount;
 
 // Function WBP_Result_DonpaTicket.WBP_Result_DonpaTicket_C.SetAddDonpaTicketForRival
 // 0x0004 (0x0004 - 0x0000)
@@ -329,9 +208,7 @@ struct WBP_Result_DonpaTicket_C_SetAddDonpaTicketForRival final
 public:
 	int32                                         AddAmt;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_DonpaTicket_C_SetAddDonpaTicketForRival) == 0x000004, "Wrong alignment on WBP_Result_DonpaTicket_C_SetAddDonpaTicketForRival");
-static_assert(sizeof(WBP_Result_DonpaTicket_C_SetAddDonpaTicketForRival) == 0x000004, "Wrong size on WBP_Result_DonpaTicket_C_SetAddDonpaTicketForRival");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_SetAddDonpaTicketForRival, AddAmt) == 0x000000, "Member 'WBP_Result_DonpaTicket_C_SetAddDonpaTicketForRival::AddAmt' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_DonpaTicket_C_SetAddDonpaTicketForRival;
 
 // Function WBP_Result_DonpaTicket.WBP_Result_DonpaTicket_C.SetAddDonpaTicketNum
 // 0x0008 (0x0008 - 0x0000)
@@ -341,10 +218,7 @@ public:
 	int32                                         AddTicketNum;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIsTicketUpdate;                                   // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_DonpaTicket_C_SetAddDonpaTicketNum) == 0x000004, "Wrong alignment on WBP_Result_DonpaTicket_C_SetAddDonpaTicketNum");
-static_assert(sizeof(WBP_Result_DonpaTicket_C_SetAddDonpaTicketNum) == 0x000008, "Wrong size on WBP_Result_DonpaTicket_C_SetAddDonpaTicketNum");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_SetAddDonpaTicketNum, AddTicketNum) == 0x000000, "Member 'WBP_Result_DonpaTicket_C_SetAddDonpaTicketNum::AddTicketNum' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_SetAddDonpaTicketNum, bIsTicketUpdate) == 0x000004, "Member 'WBP_Result_DonpaTicket_C_SetAddDonpaTicketNum::bIsTicketUpdate' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_DonpaTicket_C_SetAddDonpaTicketNum;
 
 // Function WBP_Result_DonpaTicket.WBP_Result_DonpaTicket_C.SetForceCloseTime
 // 0x0004 (0x0004 - 0x0000)
@@ -353,9 +227,7 @@ struct WBP_Result_DonpaTicket_C_SetForceCloseTime final
 public:
 	float                                         InTime;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_DonpaTicket_C_SetForceCloseTime) == 0x000004, "Wrong alignment on WBP_Result_DonpaTicket_C_SetForceCloseTime");
-static_assert(sizeof(WBP_Result_DonpaTicket_C_SetForceCloseTime) == 0x000004, "Wrong size on WBP_Result_DonpaTicket_C_SetForceCloseTime");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_SetForceCloseTime, InTime) == 0x000000, "Member 'WBP_Result_DonpaTicket_C_SetForceCloseTime::InTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_DonpaTicket_C_SetForceCloseTime;
 
 // Function WBP_Result_DonpaTicket.WBP_Result_DonpaTicket_C.SetForceCloseTime_Imp
 // 0x0008 (0x0008 - 0x0000)
@@ -364,9 +236,7 @@ struct WBP_Result_DonpaTicket_C_SetForceCloseTime_Imp final
 public:
 	double                                        Time;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_DonpaTicket_C_SetForceCloseTime_Imp) == 0x000008, "Wrong alignment on WBP_Result_DonpaTicket_C_SetForceCloseTime_Imp");
-static_assert(sizeof(WBP_Result_DonpaTicket_C_SetForceCloseTime_Imp) == 0x000008, "Wrong size on WBP_Result_DonpaTicket_C_SetForceCloseTime_Imp");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_SetForceCloseTime_Imp, Time) == 0x000000, "Member 'WBP_Result_DonpaTicket_C_SetForceCloseTime_Imp::Time' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_DonpaTicket_C_SetForceCloseTime_Imp;
 
 // Function WBP_Result_DonpaTicket.WBP_Result_DonpaTicket_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -376,10 +246,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_DonpaTicket_C_Tick) == 0x000004, "Wrong alignment on WBP_Result_DonpaTicket_C_Tick");
-static_assert(sizeof(WBP_Result_DonpaTicket_C_Tick) == 0x00003C, "Wrong size on WBP_Result_DonpaTicket_C_Tick");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_Tick, MyGeometry) == 0x000000, "Member 'WBP_Result_DonpaTicket_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_Tick, InDeltaTime) == 0x000038, "Member 'WBP_Result_DonpaTicket_C_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_DonpaTicket_C_Tick;
 
 }
 

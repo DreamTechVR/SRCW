@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
+#include "UNION_structs.hpp"
+#include "ST_ColorPresetSelectPageData_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
-#include "ST_ColorPresetSelectPageData_structs.hpp"
-#include "ST_ColorPresetSelectPageItemData_structs.hpp"
-#include "UNION_structs.hpp"
 #include "UnionUI_structs.hpp"
 #include "UnionUI_classes.hpp"
+#include "ST_ColorPresetSelectPageItemData_structs.hpp"
 
 
 namespace SDK
@@ -96,39 +96,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MachineCustom_Sub_PresetPaint_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MachineCustom_Sub_PresetPaint_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MachineCustom_Sub_PresetPaint_C")
 	}
 	static class UWBP_MachineCustom_Sub_PresetPaint_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MachineCustom_Sub_PresetPaint_C>();
 	}
 };
-static_assert(alignof(UWBP_MachineCustom_Sub_PresetPaint_C) == 0x000008, "Wrong alignment on UWBP_MachineCustom_Sub_PresetPaint_C");
-static_assert(sizeof(UWBP_MachineCustom_Sub_PresetPaint_C) == 0x0004A0, "Wrong size on UWBP_MachineCustom_Sub_PresetPaint_C");
-static_assert(offsetof(UWBP_MachineCustom_Sub_PresetPaint_C, UberGraphFrame) == 0x0003D8, "Member 'UWBP_MachineCustom_Sub_PresetPaint_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_PresetPaint_C, PresetWindow_Loop) == 0x0003E0, "Member 'UWBP_MachineCustom_Sub_PresetPaint_C::PresetWindow_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_PresetPaint_C, PresetWindow_Left_In) == 0x0003E8, "Member 'UWBP_MachineCustom_Sub_PresetPaint_C::PresetWindow_Left_In' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_PresetPaint_C, PresetWindow_Right_In) == 0x0003F0, "Member 'UWBP_MachineCustom_Sub_PresetPaint_C::PresetWindow_Right_In' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_PresetPaint_C, CPPage) == 0x0003F8, "Member 'UWBP_MachineCustom_Sub_PresetPaint_C::CPPage' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_PresetPaint_C, WBP_CMN_LR_Arrow_L) == 0x000400, "Member 'UWBP_MachineCustom_Sub_PresetPaint_C::WBP_CMN_LR_Arrow_L' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_PresetPaint_C, WBP_CMN_LR_Arrow_R) == 0x000408, "Member 'UWBP_MachineCustom_Sub_PresetPaint_C::WBP_CMN_LR_Arrow_R' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_PresetPaint_C, WBP_CMN_ScrollSnapPoint) == 0x000410, "Member 'UWBP_MachineCustom_Sub_PresetPaint_C::WBP_CMN_ScrollSnapPoint' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_PresetPaint_C, ItemNumPerPage) == 0x000418, "Member 'UWBP_MachineCustom_Sub_PresetPaint_C::ItemNumPerPage' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_PresetPaint_C, ItemNumInRow) == 0x00041C, "Member 'UWBP_MachineCustom_Sub_PresetPaint_C::ItemNumInRow' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_PresetPaint_C, PageDataIndex) == 0x000420, "Member 'UWBP_MachineCustom_Sub_PresetPaint_C::PageDataIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_PresetPaint_C, PrevPageDataIndex) == 0x000424, "Member 'UWBP_MachineCustom_Sub_PresetPaint_C::PrevPageDataIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_PresetPaint_C, OnItemFocused) == 0x000428, "Member 'UWBP_MachineCustom_Sub_PresetPaint_C::OnItemFocused' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_PresetPaint_C, OnItemSelected) == 0x000438, "Member 'UWBP_MachineCustom_Sub_PresetPaint_C::OnItemSelected' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_PresetPaint_C, OnCancel) == 0x000448, "Member 'UWBP_MachineCustom_Sub_PresetPaint_C::OnCancel' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_PresetPaint_C, PlayerIndex) == 0x000458, "Member 'UWBP_MachineCustom_Sub_PresetPaint_C::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_PresetPaint_C, PageDataList) == 0x000460, "Member 'UWBP_MachineCustom_Sub_PresetPaint_C::PageDataList' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_PresetPaint_C, LastItemIndex) == 0x000470, "Member 'UWBP_MachineCustom_Sub_PresetPaint_C::LastItemIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_PresetPaint_C, PrevRowIndex) == 0x000474, "Member 'UWBP_MachineCustom_Sub_PresetPaint_C::PrevRowIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_PresetPaint_C, NextRowIndex) == 0x000478, "Member 'UWBP_MachineCustom_Sub_PresetPaint_C::NextRowIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_PresetPaint_C, bCanNextPage) == 0x00047C, "Member 'UWBP_MachineCustom_Sub_PresetPaint_C::bCanNextPage' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_PresetPaint_C, bCanPrevPage) == 0x00047D, "Member 'UWBP_MachineCustom_Sub_PresetPaint_C::bCanPrevPage' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_PresetPaint_C, OnPageSlideStart) == 0x000480, "Member 'UWBP_MachineCustom_Sub_PresetPaint_C::OnPageSlideStart' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_PresetPaint_C, OnPageSlideEnd) == 0x000490, "Member 'UWBP_MachineCustom_Sub_PresetPaint_C::OnPageSlideEnd' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MachineCustom_Sub_PresetPaint_C;
 
 }
 

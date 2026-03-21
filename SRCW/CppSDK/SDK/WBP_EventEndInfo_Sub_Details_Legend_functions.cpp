@@ -177,8 +177,10 @@ void UWBP_EventEndInfo_Sub_Details_Legend_C::ExecuteUbergraph_WBP_EventEndInfo_S
 // int32                                   OriginalNumber                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   Dight                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UImage*                           Image                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UImage*                           BackImage                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// ESlateVisibility                        VisibilityOnZero                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_EventEndInfo_Sub_Details_Legend_C::Get_Number_OfDight(int32 OriginalNumber, int32 Dight, class UImage* Image)
+void UWBP_EventEndInfo_Sub_Details_Legend_C::Get_Number_OfDight(int32 OriginalNumber, int32 Dight, class UImage* Image, class UImage* BackImage, ESlateVisibility VisibilityOnZero)
 {
 	static class UFunction* Func = nullptr;
 
@@ -190,6 +192,8 @@ void UWBP_EventEndInfo_Sub_Details_Legend_C::Get_Number_OfDight(int32 OriginalNu
 	Parms.OriginalNumber = OriginalNumber;
 	Parms.Dight = Dight;
 	Parms.Image = Image;
+	Parms.BackImage = BackImage;
+	Parms.VisibilityOnZero = VisibilityOnZero;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

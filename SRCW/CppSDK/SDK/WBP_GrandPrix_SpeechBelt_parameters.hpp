@@ -24,11 +24,7 @@ public:
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0008(0x0010)()
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue_1;            // 0x0018(0x0010)()
 };
-static_assert(alignof(WBP_GrandPrix_SpeechBelt_C_ExecuteUbergraph_WBP_GrandPrix_SpeechBelt) == 0x000008, "Wrong alignment on WBP_GrandPrix_SpeechBelt_C_ExecuteUbergraph_WBP_GrandPrix_SpeechBelt");
-static_assert(sizeof(WBP_GrandPrix_SpeechBelt_C_ExecuteUbergraph_WBP_GrandPrix_SpeechBelt) == 0x000028, "Wrong size on WBP_GrandPrix_SpeechBelt_C_ExecuteUbergraph_WBP_GrandPrix_SpeechBelt");
-static_assert(offsetof(WBP_GrandPrix_SpeechBelt_C_ExecuteUbergraph_WBP_GrandPrix_SpeechBelt, EntryPoint) == 0x000000, "Member 'WBP_GrandPrix_SpeechBelt_C_ExecuteUbergraph_WBP_GrandPrix_SpeechBelt::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_GrandPrix_SpeechBelt_C_ExecuteUbergraph_WBP_GrandPrix_SpeechBelt, CallFunc_MakeLiteralText_ReturnValue) == 0x000008, "Member 'WBP_GrandPrix_SpeechBelt_C_ExecuteUbergraph_WBP_GrandPrix_SpeechBelt::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GrandPrix_SpeechBelt_C_ExecuteUbergraph_WBP_GrandPrix_SpeechBelt, CallFunc_MakeLiteralText_ReturnValue_1) == 0x000018, "Member 'WBP_GrandPrix_SpeechBelt_C_ExecuteUbergraph_WBP_GrandPrix_SpeechBelt::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GrandPrix_SpeechBelt_C_ExecuteUbergraph_WBP_GrandPrix_SpeechBelt;
 
 }
 

@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "UnionSystem_structs.hpp"
-#include "UMG_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UNION_structs.hpp"
+#include "UnionSystem_structs.hpp"
+#include "UnionUI_structs.hpp"
+#include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
@@ -112,82 +112,7 @@ public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_1;                  // 0x01F0(0x0004)()
 	bool                                          CallFunc_HasAnyUserFocus_ReturnValue;              // 0x01F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line) == 0x000008, "Wrong alignment on WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line");
-static_assert(sizeof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line) == 0x0001F8, "Wrong size on WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, EntryPoint) == 0x000000, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, Temp_bool_IsClosed_Variable) == 0x000004, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable) == 0x000005, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, Temp_byte_Variable) == 0x000006, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, Temp_bool_Has_Been_Initd_Variable) == 0x000007, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, K2Node_Event_IsDesignTime) == 0x000008, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_PlayAnimation_ReturnValue) == 0x000010, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, K2Node_Event_InFocusEvent_2) == 0x000018, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::K2Node_Event_InFocusEvent_2' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, K2Node_Event_InFocusEvent_1) == 0x000020, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::K2Node_Event_InFocusEvent_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, K2Node_Event_InFocusEvent) == 0x000028, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::K2Node_Event_InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_GetOwningPlayer_ReturnValue) == 0x000030, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_GetUserIndexByFocusEvent_ReturnValue) == 0x000038, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_GetUserIndexByFocusEvent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000040, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_GetPlayerController_ReturnValue) == 0x000050, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, K2Node_CustomEvent_Button) == 0x000058, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_GetOwningPlayer_ReturnValue_1) == 0x000060, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_GetOwningPlayer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, K2Node_DynamicCast_AsApp_Player_Controller_1) == 0x000068, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::K2Node_DynamicCast_AsApp_Player_Controller_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, K2Node_DynamicCast_bSuccess_1) == 0x000070, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, Temp_bool_IsClosed_Variable_1) == 0x000071, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::Temp_bool_IsClosed_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, K2Node_SwitchEnum_CmpSuccess) == 0x000072, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_GetObjectName_ReturnValue) == 0x000078, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_GetObjectName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_Conv_StringToText_ReturnValue) == 0x000088, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, K2Node_MakeStruct_FormatArgumentData) == 0x000098, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, K2Node_MakeArray_Array) == 0x0000E0, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_Format_ReturnValue) == 0x0000F0, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, K2Node_SwitchEnum_CmpSuccess_1) == 0x000100, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_SoundPlay_ReturnValue) == 0x000104, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, K2Node_Event_ToDirection) == 0x000108, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::K2Node_Event_ToDirection' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, K2Node_Event_Count) == 0x00010C, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::K2Node_Event_Count' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_Greater_IntInt_ReturnValue) == 0x000110, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_CalcMovable_ReturnValue) == 0x000111, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_CalcMovable_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_GetObjectName_ReturnValue_1) == 0x000118, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_GetObjectName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_Conv_StringToText_ReturnValue_1) == 0x000128, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, K2Node_MakeStruct_FormatArgumentData_1) == 0x000138, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, K2Node_MakeArray_Array_1) == 0x000180, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_Format_ReturnValue_1) == 0x000190, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0001A0, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, Temp_bool_Has_Been_Initd_Variable_1) == 0x0001A1, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::Temp_bool_Has_Been_Initd_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable_1) == 0x0001A2, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, Temp_byte_Variable_1) == 0x0001A3, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, Temp_byte_Variable_2) == 0x0001A4, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, Temp_bool_Variable) == 0x0001A5, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, Temp_int_Variable) == 0x0001A8, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, K2Node_Event_InIconIndex) == 0x0001AC, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::K2Node_Event_InIconIndex' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_GetIsWait_ReturnValue) == 0x0001B0, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_GetIsWait_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_GetIsOnlineGameMode_ReturnValue) == 0x0001B1, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_GetIsOnlineGameMode_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_GetEndFlag_ReturnValue) == 0x0001B2, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_GetEndFlag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_BooleanAND_ReturnValue) == 0x0001B3, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, Temp_byte_Variable_3) == 0x0001B4, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x0001B5, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0001B6, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, K2Node_CreateDelegate_OutputDelegate) == 0x0001B8, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_Not_PreBool_ReturnValue) == 0x0001C8, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_IsRacePark1P_result) == 0x0001C9, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_IsRacePark1P_result' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_IsRacePark1P_result_1) == 0x0001CA, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_IsRacePark1P_result_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_IsRacePark1P_result_2) == 0x0001CB, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_IsRacePark1P_result_2' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_GetIsOnlineGameMode_ReturnValue_1) == 0x0001CC, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_GetIsOnlineGameMode_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_IsRacePark1P_result_3) == 0x0001CD, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_IsRacePark1P_result_3' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_GetIsOnlineGameMode_ReturnValue_2) == 0x0001CE, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_GetIsOnlineGameMode_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_IsValid_ReturnValue) == 0x0001CF, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_Not_PreBool_ReturnValue_1) == 0x0001D0, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_IsValid_ReturnValue_1) == 0x0001D1, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_Not_PreBool_ReturnValue_2) == 0x0001D2, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, Temp_bool_Variable_1) == 0x0001D3, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, K2Node_Select_Default) == 0x0001D4, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, K2Node_Select_Default_1) == 0x0001D5, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_Greater_IntInt_ReturnValue_1) == 0x0001D6, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_CreatePlayAnimationProxyObject_Result) == 0x0001D8, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_CreatePlayAnimationProxyObject_Result' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_CreatePlayAnimationProxyObject_ReturnValue) == 0x0001E0, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_CreatePlayAnimationProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_IsValid_ReturnValue_2) == 0x0001E8, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_Subtract_IntInt_ReturnValue) == 0x0001EC, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_SoundPlay_ReturnValue_1) == 0x0001F0, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line, CallFunc_HasAnyUserFocus_ReturnValue) == 0x0001F4, "Member 'WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line::CallFunc_HasAnyUserFocus_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GroupSelect_Sub_Table_Line_C_ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line;
 
 // Function WBP_GroupSelect_Sub_Table_Line.WBP_GroupSelect_Sub_Table_Line_C.IsRacePark1P
 // 0x0005 (0x0005 - 0x0000)
@@ -200,13 +125,7 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GroupSelect_Sub_Table_Line_C_IsRacePark1P) == 0x000001, "Wrong alignment on WBP_GroupSelect_Sub_Table_Line_C_IsRacePark1P");
-static_assert(sizeof(WBP_GroupSelect_Sub_Table_Line_C_IsRacePark1P) == 0x000005, "Wrong size on WBP_GroupSelect_Sub_Table_Line_C_IsRacePark1P");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_IsRacePark1P, Result) == 0x000000, "Member 'WBP_GroupSelect_Sub_Table_Line_C_IsRacePark1P::Result' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_IsRacePark1P, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x000001, "Member 'WBP_GroupSelect_Sub_Table_Line_C_IsRacePark1P::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_IsRacePark1P, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000002, "Member 'WBP_GroupSelect_Sub_Table_Line_C_IsRacePark1P::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_IsRacePark1P, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000003, "Member 'WBP_GroupSelect_Sub_Table_Line_C_IsRacePark1P::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_IsRacePark1P, CallFunc_BooleanAND_ReturnValue) == 0x000004, "Member 'WBP_GroupSelect_Sub_Table_Line_C_IsRacePark1P::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GroupSelect_Sub_Table_Line_C_IsRacePark1P;
 
 // Function WBP_GroupSelect_Sub_Table_Line.WBP_GroupSelect_Sub_Table_Line_C.MoveToDirectionBP
 // 0x0008 (0x0008 - 0x0000)
@@ -217,10 +136,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Count_0;                                           // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GroupSelect_Sub_Table_Line_C_MoveToDirectionBP) == 0x000004, "Wrong alignment on WBP_GroupSelect_Sub_Table_Line_C_MoveToDirectionBP");
-static_assert(sizeof(WBP_GroupSelect_Sub_Table_Line_C_MoveToDirectionBP) == 0x000008, "Wrong size on WBP_GroupSelect_Sub_Table_Line_C_MoveToDirectionBP");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_MoveToDirectionBP, ToDirection) == 0x000000, "Member 'WBP_GroupSelect_Sub_Table_Line_C_MoveToDirectionBP::ToDirection' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_MoveToDirectionBP, Count_0) == 0x000004, "Member 'WBP_GroupSelect_Sub_Table_Line_C_MoveToDirectionBP::Count_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GroupSelect_Sub_Table_Line_C_MoveToDirectionBP;
 
 // Function WBP_GroupSelect_Sub_Table_Line.WBP_GroupSelect_Sub_Table_Line_C.OnAddedToFocusPath
 // 0x0008 (0x0008 - 0x0000)
@@ -229,9 +145,7 @@ struct WBP_GroupSelect_Sub_Table_Line_C_OnAddedToFocusPath final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_GroupSelect_Sub_Table_Line_C_OnAddedToFocusPath) == 0x000004, "Wrong alignment on WBP_GroupSelect_Sub_Table_Line_C_OnAddedToFocusPath");
-static_assert(sizeof(WBP_GroupSelect_Sub_Table_Line_C_OnAddedToFocusPath) == 0x000008, "Wrong size on WBP_GroupSelect_Sub_Table_Line_C_OnAddedToFocusPath");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_OnAddedToFocusPath, InFocusEvent) == 0x000000, "Member 'WBP_GroupSelect_Sub_Table_Line_C_OnAddedToFocusPath::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GroupSelect_Sub_Table_Line_C_OnAddedToFocusPath;
 
 // Function WBP_GroupSelect_Sub_Table_Line.WBP_GroupSelect_Sub_Table_Line_C.OnFocus_Imp
 // 0x0008 (0x0008 - 0x0000)
@@ -240,9 +154,7 @@ struct WBP_GroupSelect_Sub_Table_Line_C_OnFocus_Imp final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GroupSelect_Sub_Table_Line_C_OnFocus_Imp) == 0x000008, "Wrong alignment on WBP_GroupSelect_Sub_Table_Line_C_OnFocus_Imp");
-static_assert(sizeof(WBP_GroupSelect_Sub_Table_Line_C_OnFocus_Imp) == 0x000008, "Wrong size on WBP_GroupSelect_Sub_Table_Line_C_OnFocus_Imp");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_OnFocus_Imp, Button) == 0x000000, "Member 'WBP_GroupSelect_Sub_Table_Line_C_OnFocus_Imp::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GroupSelect_Sub_Table_Line_C_OnFocus_Imp;
 
 // Function WBP_GroupSelect_Sub_Table_Line.WBP_GroupSelect_Sub_Table_Line_C.OnFocusLost
 // 0x0008 (0x0008 - 0x0000)
@@ -251,9 +163,7 @@ struct WBP_GroupSelect_Sub_Table_Line_C_OnFocusLost final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_GroupSelect_Sub_Table_Line_C_OnFocusLost) == 0x000004, "Wrong alignment on WBP_GroupSelect_Sub_Table_Line_C_OnFocusLost");
-static_assert(sizeof(WBP_GroupSelect_Sub_Table_Line_C_OnFocusLost) == 0x000008, "Wrong size on WBP_GroupSelect_Sub_Table_Line_C_OnFocusLost");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_OnFocusLost, InFocusEvent) == 0x000000, "Member 'WBP_GroupSelect_Sub_Table_Line_C_OnFocusLost::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GroupSelect_Sub_Table_Line_C_OnFocusLost;
 
 // Function WBP_GroupSelect_Sub_Table_Line.WBP_GroupSelect_Sub_Table_Line_C.OnFocusReceived
 // 0x01B0 (0x01B0 - 0x0000)
@@ -265,12 +175,7 @@ public:
 	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
 	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x00F8(0x00B8)()
 };
-static_assert(alignof(WBP_GroupSelect_Sub_Table_Line_C_OnFocusReceived) == 0x000008, "Wrong alignment on WBP_GroupSelect_Sub_Table_Line_C_OnFocusReceived");
-static_assert(sizeof(WBP_GroupSelect_Sub_Table_Line_C_OnFocusReceived) == 0x0001B0, "Wrong size on WBP_GroupSelect_Sub_Table_Line_C_OnFocusReceived");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'WBP_GroupSelect_Sub_Table_Line_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'WBP_GroupSelect_Sub_Table_Line_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'WBP_GroupSelect_Sub_Table_Line_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_OnFocusReceived, K2Node_MakeStruct_EventReply) == 0x0000F8, "Member 'WBP_GroupSelect_Sub_Table_Line_C_OnFocusReceived::K2Node_MakeStruct_EventReply' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GroupSelect_Sub_Table_Line_C_OnFocusReceived;
 
 // Function WBP_GroupSelect_Sub_Table_Line.WBP_GroupSelect_Sub_Table_Line_C.OnRemovedFromFocusPath
 // 0x0008 (0x0008 - 0x0000)
@@ -279,9 +184,7 @@ struct WBP_GroupSelect_Sub_Table_Line_C_OnRemovedFromFocusPath final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_GroupSelect_Sub_Table_Line_C_OnRemovedFromFocusPath) == 0x000004, "Wrong alignment on WBP_GroupSelect_Sub_Table_Line_C_OnRemovedFromFocusPath");
-static_assert(sizeof(WBP_GroupSelect_Sub_Table_Line_C_OnRemovedFromFocusPath) == 0x000008, "Wrong size on WBP_GroupSelect_Sub_Table_Line_C_OnRemovedFromFocusPath");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_OnRemovedFromFocusPath, InFocusEvent) == 0x000000, "Member 'WBP_GroupSelect_Sub_Table_Line_C_OnRemovedFromFocusPath::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GroupSelect_Sub_Table_Line_C_OnRemovedFromFocusPath;
 
 // Function WBP_GroupSelect_Sub_Table_Line.WBP_GroupSelect_Sub_Table_Line_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -290,9 +193,7 @@ struct WBP_GroupSelect_Sub_Table_Line_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GroupSelect_Sub_Table_Line_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_GroupSelect_Sub_Table_Line_C_PreConstruct");
-static_assert(sizeof(WBP_GroupSelect_Sub_Table_Line_C_PreConstruct) == 0x000001, "Wrong size on WBP_GroupSelect_Sub_Table_Line_C_PreConstruct");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_GroupSelect_Sub_Table_Line_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GroupSelect_Sub_Table_Line_C_PreConstruct;
 
 // Function WBP_GroupSelect_Sub_Table_Line.WBP_GroupSelect_Sub_Table_Line_C.SetIconIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -301,9 +202,7 @@ struct WBP_GroupSelect_Sub_Table_Line_C_SetIconIndex final
 public:
 	int32                                         InIconIndex;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GroupSelect_Sub_Table_Line_C_SetIconIndex) == 0x000004, "Wrong alignment on WBP_GroupSelect_Sub_Table_Line_C_SetIconIndex");
-static_assert(sizeof(WBP_GroupSelect_Sub_Table_Line_C_SetIconIndex) == 0x000004, "Wrong size on WBP_GroupSelect_Sub_Table_Line_C_SetIconIndex");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_SetIconIndex, InIconIndex) == 0x000000, "Member 'WBP_GroupSelect_Sub_Table_Line_C_SetIconIndex::InIconIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GroupSelect_Sub_Table_Line_C_SetIconIndex;
 
 // Function WBP_GroupSelect_Sub_Table_Line.WBP_GroupSelect_Sub_Table_Line_C.SwitchVisibleMouseFocusButton
 // 0x0005 (0x0005 - 0x0000)
@@ -316,13 +215,7 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GroupSelect_Sub_Table_Line_C_SwitchVisibleMouseFocusButton) == 0x000001, "Wrong alignment on WBP_GroupSelect_Sub_Table_Line_C_SwitchVisibleMouseFocusButton");
-static_assert(sizeof(WBP_GroupSelect_Sub_Table_Line_C_SwitchVisibleMouseFocusButton) == 0x000005, "Wrong size on WBP_GroupSelect_Sub_Table_Line_C_SwitchVisibleMouseFocusButton");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_SwitchVisibleMouseFocusButton, bIsVisible) == 0x000000, "Member 'WBP_GroupSelect_Sub_Table_Line_C_SwitchVisibleMouseFocusButton::bIsVisible' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_SwitchVisibleMouseFocusButton, Temp_bool_Variable) == 0x000001, "Member 'WBP_GroupSelect_Sub_Table_Line_C_SwitchVisibleMouseFocusButton::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_SwitchVisibleMouseFocusButton, Temp_byte_Variable) == 0x000002, "Member 'WBP_GroupSelect_Sub_Table_Line_C_SwitchVisibleMouseFocusButton::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_SwitchVisibleMouseFocusButton, Temp_byte_Variable_1) == 0x000003, "Member 'WBP_GroupSelect_Sub_Table_Line_C_SwitchVisibleMouseFocusButton::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_SwitchVisibleMouseFocusButton, K2Node_Select_Default) == 0x000004, "Member 'WBP_GroupSelect_Sub_Table_Line_C_SwitchVisibleMouseFocusButton::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GroupSelect_Sub_Table_Line_C_SwitchVisibleMouseFocusButton;
 
 // Function WBP_GroupSelect_Sub_Table_Line.WBP_GroupSelect_Sub_Table_Line_C.UpdateArrowVisible
 // 0x0040 (0x0040 - 0x0000)
@@ -369,45 +262,7 @@ public:
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x003E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default_4;                           // 0x003F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible) == 0x000008, "Wrong alignment on WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible");
-static_assert(sizeof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible) == 0x000040, "Wrong size on WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, Temp_bool_Variable) == 0x000000, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, Temp_byte_Variable) == 0x000001, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, Temp_byte_Variable_1) == 0x000002, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, Temp_byte_Variable_2) == 0x000003, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, Temp_byte_Variable_3) == 0x000004, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, Temp_byte_Variable_4) == 0x000005, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, Temp_byte_Variable_5) == 0x000006, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, Temp_byte_Variable_6) == 0x000007, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::Temp_byte_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, Temp_byte_Variable_7) == 0x000008, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::Temp_byte_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, Temp_byte_Variable_8) == 0x000009, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::Temp_byte_Variable_8' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, Temp_byte_Variable_9) == 0x00000A, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::Temp_byte_Variable_9' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, Temp_byte_Variable_10) == 0x00000B, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::Temp_byte_Variable_10' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, Temp_byte_Variable_11) == 0x00000C, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::Temp_byte_Variable_11' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, Temp_byte_Variable_12) == 0x00000D, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::Temp_byte_Variable_12' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, Temp_byte_Variable_13) == 0x00000E, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::Temp_byte_Variable_13' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, CallFunc_IsRacePark1P_result) == 0x00000F, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::CallFunc_IsRacePark1P_result' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, CallFunc_GetIsOnlineGameMode_ReturnValue) == 0x000010, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::CallFunc_GetIsOnlineGameMode_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, CallFunc_BooleanOR_ReturnValue) == 0x000011, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, CallFunc_GetVisibility_ReturnValue) == 0x000012, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::CallFunc_GetVisibility_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000013, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, Temp_byte_Variable_14) == 0x000014, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::Temp_byte_Variable_14' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, CallFunc_GetVisibility_ReturnValue_1) == 0x000015, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::CallFunc_GetVisibility_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000016, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, K2Node_Select_Default) == 0x000017, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, Temp_byte_Variable_15) == 0x000018, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::Temp_byte_Variable_15' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, CallFunc_GetIsOnlineGameMode_ReturnValue_1) == 0x000019, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::CallFunc_GetIsOnlineGameMode_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, CallFunc_GetNavigationExplicitWidget_FocusToWidget) == 0x000020, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::CallFunc_GetNavigationExplicitWidget_FocusToWidget' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, CallFunc_GetNavigationExplicitWidget_ReturnValue) == 0x000028, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::CallFunc_GetNavigationExplicitWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, CallFunc_GetNavigationExplicitWidget_FocusToWidget_1) == 0x000030, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::CallFunc_GetNavigationExplicitWidget_FocusToWidget_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, CallFunc_GetNavigationExplicitWidget_ReturnValue_1) == 0x000038, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::CallFunc_GetNavigationExplicitWidget_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, Temp_bool_Variable_1) == 0x000039, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, K2Node_Select_Default_1) == 0x00003A, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, K2Node_Select_Default_2) == 0x00003B, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, K2Node_Select_Default_3) == 0x00003C, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, CallFunc_GetRaceSettingGrouping_ReturnValue) == 0x00003D, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::CallFunc_GetRaceSettingGrouping_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, K2Node_SwitchEnum_CmpSuccess) == 0x00003E, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible, K2Node_Select_Default_4) == 0x00003F, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible::K2Node_Select_Default_4' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GroupSelect_Sub_Table_Line_C_UpdateArrowVisible;
 
 // Function WBP_GroupSelect_Sub_Table_Line.WBP_GroupSelect_Sub_Table_Line_C.UpdateCursorVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -416,9 +271,7 @@ struct WBP_GroupSelect_Sub_Table_Line_C_UpdateCursorVisible final
 public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GroupSelect_Sub_Table_Line_C_UpdateCursorVisible) == 0x000001, "Wrong alignment on WBP_GroupSelect_Sub_Table_Line_C_UpdateCursorVisible");
-static_assert(sizeof(WBP_GroupSelect_Sub_Table_Line_C_UpdateCursorVisible) == 0x000001, "Wrong size on WBP_GroupSelect_Sub_Table_Line_C_UpdateCursorVisible");
-static_assert(offsetof(WBP_GroupSelect_Sub_Table_Line_C_UpdateCursorVisible, CallFunc_BooleanAND_ReturnValue) == 0x000000, "Member 'WBP_GroupSelect_Sub_Table_Line_C_UpdateCursorVisible::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GroupSelect_Sub_Table_Line_C_UpdateCursorVisible;
 
 }
 

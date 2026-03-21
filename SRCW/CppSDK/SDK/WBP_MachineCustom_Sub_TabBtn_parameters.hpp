@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
+#include "UnionSystem_structs.hpp"
 
 
 namespace SDK::Params
@@ -28,12 +28,7 @@ public:
 	bool                                          CallFunc_IsEnableMouseClick_ReturnValue;           // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bInIsEnabled;                         // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_TabBtn_C_ExecuteUbergraph_WBP_MachineCustom_Sub_TabBtn) == 0x000004, "Wrong alignment on WBP_MachineCustom_Sub_TabBtn_C_ExecuteUbergraph_WBP_MachineCustom_Sub_TabBtn");
-static_assert(sizeof(WBP_MachineCustom_Sub_TabBtn_C_ExecuteUbergraph_WBP_MachineCustom_Sub_TabBtn) == 0x000008, "Wrong size on WBP_MachineCustom_Sub_TabBtn_C_ExecuteUbergraph_WBP_MachineCustom_Sub_TabBtn");
-static_assert(offsetof(WBP_MachineCustom_Sub_TabBtn_C_ExecuteUbergraph_WBP_MachineCustom_Sub_TabBtn, EntryPoint) == 0x000000, "Member 'WBP_MachineCustom_Sub_TabBtn_C_ExecuteUbergraph_WBP_MachineCustom_Sub_TabBtn::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_TabBtn_C_ExecuteUbergraph_WBP_MachineCustom_Sub_TabBtn, CallFunc_GetTabID_ReturnValue) == 0x000004, "Member 'WBP_MachineCustom_Sub_TabBtn_C_ExecuteUbergraph_WBP_MachineCustom_Sub_TabBtn::CallFunc_GetTabID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_TabBtn_C_ExecuteUbergraph_WBP_MachineCustom_Sub_TabBtn, CallFunc_IsEnableMouseClick_ReturnValue) == 0x000005, "Member 'WBP_MachineCustom_Sub_TabBtn_C_ExecuteUbergraph_WBP_MachineCustom_Sub_TabBtn::CallFunc_IsEnableMouseClick_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_TabBtn_C_ExecuteUbergraph_WBP_MachineCustom_Sub_TabBtn, K2Node_Event_bInIsEnabled) == 0x000006, "Member 'WBP_MachineCustom_Sub_TabBtn_C_ExecuteUbergraph_WBP_MachineCustom_Sub_TabBtn::K2Node_Event_bInIsEnabled' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_TabBtn_C_ExecuteUbergraph_WBP_MachineCustom_Sub_TabBtn;
 
 // Function WBP_MachineCustom_Sub_TabBtn.WBP_MachineCustom_Sub_TabBtn_C.PlayAnim
 // 0x0018 (0x0018 - 0x0000)
@@ -46,12 +41,7 @@ public:
 	class UWidgetAnimation*                       K2Node_Select_Default;                             // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_TabBtn_C_PlayAnim) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_TabBtn_C_PlayAnim");
-static_assert(sizeof(WBP_MachineCustom_Sub_TabBtn_C_PlayAnim) == 0x000018, "Wrong size on WBP_MachineCustom_Sub_TabBtn_C_PlayAnim");
-static_assert(offsetof(WBP_MachineCustom_Sub_TabBtn_C_PlayAnim, bInIsActive) == 0x000000, "Member 'WBP_MachineCustom_Sub_TabBtn_C_PlayAnim::bInIsActive' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_TabBtn_C_PlayAnim, Temp_bool_Variable) == 0x000001, "Member 'WBP_MachineCustom_Sub_TabBtn_C_PlayAnim::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_TabBtn_C_PlayAnim, K2Node_Select_Default) == 0x000008, "Member 'WBP_MachineCustom_Sub_TabBtn_C_PlayAnim::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_TabBtn_C_PlayAnim, CallFunc_PlayAnimation_ReturnValue) == 0x000010, "Member 'WBP_MachineCustom_Sub_TabBtn_C_PlayAnim::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_TabBtn_C_PlayAnim;
 
 // Function WBP_MachineCustom_Sub_TabBtn.WBP_MachineCustom_Sub_TabBtn_C.SetEnabled
 // 0x0014 (0x0014 - 0x0000)
@@ -62,10 +52,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0004(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_TabBtn_C_SetEnabled) == 0x000004, "Wrong alignment on WBP_MachineCustom_Sub_TabBtn_C_SetEnabled");
-static_assert(sizeof(WBP_MachineCustom_Sub_TabBtn_C_SetEnabled) == 0x000014, "Wrong size on WBP_MachineCustom_Sub_TabBtn_C_SetEnabled");
-static_assert(offsetof(WBP_MachineCustom_Sub_TabBtn_C_SetEnabled, bInIsEnabled) == 0x000000, "Member 'WBP_MachineCustom_Sub_TabBtn_C_SetEnabled::bInIsEnabled' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_TabBtn_C_SetEnabled, CallFunc_SelectColor_ReturnValue) == 0x000004, "Member 'WBP_MachineCustom_Sub_TabBtn_C_SetEnabled::CallFunc_SelectColor_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_TabBtn_C_SetEnabled;
 
 // Function WBP_MachineCustom_Sub_TabBtn.WBP_MachineCustom_Sub_TabBtn_C.SetEnableMouseInput
 // 0x0001 (0x0001 - 0x0000)
@@ -74,9 +61,7 @@ struct WBP_MachineCustom_Sub_TabBtn_C_SetEnableMouseInput final
 public:
 	bool                                          bInIsEnabled;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_TabBtn_C_SetEnableMouseInput) == 0x000001, "Wrong alignment on WBP_MachineCustom_Sub_TabBtn_C_SetEnableMouseInput");
-static_assert(sizeof(WBP_MachineCustom_Sub_TabBtn_C_SetEnableMouseInput) == 0x000001, "Wrong size on WBP_MachineCustom_Sub_TabBtn_C_SetEnableMouseInput");
-static_assert(offsetof(WBP_MachineCustom_Sub_TabBtn_C_SetEnableMouseInput, bInIsEnabled) == 0x000000, "Member 'WBP_MachineCustom_Sub_TabBtn_C_SetEnableMouseInput::bInIsEnabled' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_TabBtn_C_SetEnableMouseInput;
 
 // Function WBP_MachineCustom_Sub_TabBtn.WBP_MachineCustom_Sub_TabBtn_C.SetFriendListIconIndex
 // 0x0020 (0x0020 - 0x0000)
@@ -89,12 +74,7 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_TabBtn_C_SetFriendListIconIndex) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_TabBtn_C_SetFriendListIconIndex");
-static_assert(sizeof(WBP_MachineCustom_Sub_TabBtn_C_SetFriendListIconIndex) == 0x000020, "Wrong size on WBP_MachineCustom_Sub_TabBtn_C_SetFriendListIconIndex");
-static_assert(offsetof(WBP_MachineCustom_Sub_TabBtn_C_SetFriendListIconIndex, InIconIndex) == 0x000000, "Member 'WBP_MachineCustom_Sub_TabBtn_C_SetFriendListIconIndex::InIconIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_TabBtn_C_SetFriendListIconIndex, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000008, "Member 'WBP_MachineCustom_Sub_TabBtn_C_SetFriendListIconIndex::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_TabBtn_C_SetFriendListIconIndex, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000010, "Member 'WBP_MachineCustom_Sub_TabBtn_C_SetFriendListIconIndex::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_TabBtn_C_SetFriendListIconIndex, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000018, "Member 'WBP_MachineCustom_Sub_TabBtn_C_SetFriendListIconIndex::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_TabBtn_C_SetFriendListIconIndex;
 
 // Function WBP_MachineCustom_Sub_TabBtn.WBP_MachineCustom_Sub_TabBtn_C.SetPlatformIconType
 // 0x0020 (0x0020 - 0x0000)
@@ -107,12 +87,7 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_TabBtn_C_SetPlatformIconType) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_TabBtn_C_SetPlatformIconType");
-static_assert(sizeof(WBP_MachineCustom_Sub_TabBtn_C_SetPlatformIconType) == 0x000020, "Wrong size on WBP_MachineCustom_Sub_TabBtn_C_SetPlatformIconType");
-static_assert(offsetof(WBP_MachineCustom_Sub_TabBtn_C_SetPlatformIconType, InPlatformType) == 0x000000, "Member 'WBP_MachineCustom_Sub_TabBtn_C_SetPlatformIconType::InPlatformType' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_TabBtn_C_SetPlatformIconType, CallFunc_Conv_ByteToDouble_ReturnValue) == 0x000008, "Member 'WBP_MachineCustom_Sub_TabBtn_C_SetPlatformIconType::CallFunc_Conv_ByteToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_TabBtn_C_SetPlatformIconType, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000010, "Member 'WBP_MachineCustom_Sub_TabBtn_C_SetPlatformIconType::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_TabBtn_C_SetPlatformIconType, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000018, "Member 'WBP_MachineCustom_Sub_TabBtn_C_SetPlatformIconType::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_TabBtn_C_SetPlatformIconType;
 
 }
 

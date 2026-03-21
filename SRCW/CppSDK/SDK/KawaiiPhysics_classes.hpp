@@ -28,16 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"KawaiiPhysicsBoneConstraintsDataAsset">();
+		STATIC_CLASS_IMPL("KawaiiPhysicsBoneConstraintsDataAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"KawaiiPhysicsBoneConstraintsDataAsset")
 	}
 	static class UKawaiiPhysicsBoneConstraintsDataAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UKawaiiPhysicsBoneConstraintsDataAsset>();
 	}
 };
-static_assert(alignof(UKawaiiPhysicsBoneConstraintsDataAsset) == 0x000008, "Wrong alignment on UKawaiiPhysicsBoneConstraintsDataAsset");
-static_assert(sizeof(UKawaiiPhysicsBoneConstraintsDataAsset) == 0x000040, "Wrong size on UKawaiiPhysicsBoneConstraintsDataAsset");
-static_assert(offsetof(UKawaiiPhysicsBoneConstraintsDataAsset, BoneConstraintsData) == 0x000030, "Member 'UKawaiiPhysicsBoneConstraintsDataAsset::BoneConstraintsData' has a wrong offset!");
+DUMPER7_ASSERTS_UKawaiiPhysicsBoneConstraintsDataAsset;
 
 // Class KawaiiPhysics.KawaiiPhysicsLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -69,15 +71,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"KawaiiPhysicsLibrary">();
+		STATIC_CLASS_IMPL("KawaiiPhysicsLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"KawaiiPhysicsLibrary")
 	}
 	static class UKawaiiPhysicsLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UKawaiiPhysicsLibrary>();
 	}
 };
-static_assert(alignof(UKawaiiPhysicsLibrary) == 0x000008, "Wrong alignment on UKawaiiPhysicsLibrary");
-static_assert(sizeof(UKawaiiPhysicsLibrary) == 0x000028, "Wrong size on UKawaiiPhysicsLibrary");
+DUMPER7_ASSERTS_UKawaiiPhysicsLibrary;
 
 // Class KawaiiPhysics.KawaiiPhysicsLimitsDataAsset
 // 0x0030 (0x0060 - 0x0030)
@@ -91,18 +96,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"KawaiiPhysicsLimitsDataAsset">();
+		STATIC_CLASS_IMPL("KawaiiPhysicsLimitsDataAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"KawaiiPhysicsLimitsDataAsset")
 	}
 	static class UKawaiiPhysicsLimitsDataAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UKawaiiPhysicsLimitsDataAsset>();
 	}
 };
-static_assert(alignof(UKawaiiPhysicsLimitsDataAsset) == 0x000008, "Wrong alignment on UKawaiiPhysicsLimitsDataAsset");
-static_assert(sizeof(UKawaiiPhysicsLimitsDataAsset) == 0x000060, "Wrong size on UKawaiiPhysicsLimitsDataAsset");
-static_assert(offsetof(UKawaiiPhysicsLimitsDataAsset, SphericalLimits) == 0x000030, "Member 'UKawaiiPhysicsLimitsDataAsset::SphericalLimits' has a wrong offset!");
-static_assert(offsetof(UKawaiiPhysicsLimitsDataAsset, CapsuleLimits) == 0x000040, "Member 'UKawaiiPhysicsLimitsDataAsset::CapsuleLimits' has a wrong offset!");
-static_assert(offsetof(UKawaiiPhysicsLimitsDataAsset, PlanarLimits) == 0x000050, "Member 'UKawaiiPhysicsLimitsDataAsset::PlanarLimits' has a wrong offset!");
+DUMPER7_ASSERTS_UKawaiiPhysicsLimitsDataAsset;
 
 }
 

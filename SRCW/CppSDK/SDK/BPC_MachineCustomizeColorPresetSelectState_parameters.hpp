@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "ST_GarageData_structs.hpp"
-#include "UnionSystem_structs.hpp"
 #include "ST_ColorPresetSelectPageItemData_structs.hpp"
+#include "ST_GarageData_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "UNION_structs.hpp"
 #include "ST_ColorPresetSelectPageData_structs.hpp"
+#include "UnionSystem_structs.hpp"
 
 
 namespace SDK::Params
@@ -28,9 +28,7 @@ struct BPC_MachineCustomizeColorPresetSelectState_C_EventCancel final
 public:
 	int32                                         InPlayerIndex;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MachineCustomizeColorPresetSelectState_C_EventCancel) == 0x000004, "Wrong alignment on BPC_MachineCustomizeColorPresetSelectState_C_EventCancel");
-static_assert(sizeof(BPC_MachineCustomizeColorPresetSelectState_C_EventCancel) == 0x000004, "Wrong size on BPC_MachineCustomizeColorPresetSelectState_C_EventCancel");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_EventCancel, InPlayerIndex) == 0x000000, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_EventCancel::InPlayerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeColorPresetSelectState_C_EventCancel;
 
 // Function BPC_MachineCustomizeColorPresetSelectState.BPC_MachineCustomizeColorPresetSelectState_C.EventColorPresetSelectPage_OnItemSelected
 // 0x02F0 (0x02F0 - 0x0000)
@@ -52,21 +50,7 @@ public:
 	struct FUserMachineCustomizeData              CallFunc_GetSelectedMachineCustomizeData_ReturnValue_2; // 0x0200(0x0078)()
 	struct FUserMachineCustomizeData              K2Node_SetFieldsInStruct_StructOut_1;              // 0x0278(0x0078)()
 };
-static_assert(alignof(BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemSelected) == 0x000008, "Wrong alignment on BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemSelected");
-static_assert(sizeof(BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemSelected) == 0x0002F0, "Wrong size on BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemSelected");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemSelected, newParam) == 0x000000, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemSelected::newParam' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemSelected, InPlayerIndex) == 0x000058, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemSelected::InPlayerIndex' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemSelected, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00005C, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemSelected::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemSelected, K2Node_SwitchEnum_CmpSuccess) == 0x00005D, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemSelected::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemSelected, CallFunc_GetSelectedMachineCustomizeData_ReturnValue) == 0x000060, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemSelected::CallFunc_GetSelectedMachineCustomizeData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemSelected, CallFunc_GetMachineColorById_OutMachineColor) == 0x0000D8, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemSelected::CallFunc_GetMachineColorById_OutMachineColor' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemSelected, CallFunc_GetMachineColorById_OutMachineColor_1) == 0x0000E8, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemSelected::CallFunc_GetMachineColorById_OutMachineColor_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemSelected, CallFunc_GetMachineColorById_OutMachineColor_2) == 0x0000F8, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemSelected::CallFunc_GetMachineColorById_OutMachineColor_2' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemSelected, CallFunc_GetSelectedMachineCustomizeData_ReturnValue_1) == 0x000108, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemSelected::CallFunc_GetSelectedMachineCustomizeData_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemSelected, CallFunc_GetItem_OutItem) == 0x000180, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemSelected::CallFunc_GetItem_OutItem' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemSelected, K2Node_SetFieldsInStruct_StructOut) == 0x000188, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemSelected::K2Node_SetFieldsInStruct_StructOut' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemSelected, CallFunc_GetSelectedMachineCustomizeData_ReturnValue_2) == 0x000200, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemSelected::CallFunc_GetSelectedMachineCustomizeData_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemSelected, K2Node_SetFieldsInStruct_StructOut_1) == 0x000278, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemSelected::K2Node_SetFieldsInStruct_StructOut_1' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemSelected;
 
 // Function BPC_MachineCustomizeColorPresetSelectState.BPC_MachineCustomizeColorPresetSelectState_C.EventColorPresetSelectPage_OnItemFocused
 // 0x0248 (0x0248 - 0x0000)
@@ -83,16 +67,7 @@ public:
 	struct FUserMachineCustomizeData              CallFunc_GetSelectedMachineCustomizeData_ReturnValue; // 0x0158(0x0078)()
 	struct FUserMachineCustomizeData              CallFunc_SetAllMachineColorsAsPreset_ReturnValue;  // 0x01D0(0x0078)()
 };
-static_assert(alignof(BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemFocused) == 0x000008, "Wrong alignment on BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemFocused");
-static_assert(sizeof(BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemFocused) == 0x000248, "Wrong size on BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemFocused");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemFocused, ItemData) == 0x000000, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemFocused::ItemData' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemFocused, InPlayerIndex) == 0x000058, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemFocused::InPlayerIndex' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemFocused, ButtonIndex) == 0x00005C, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemFocused::ButtonIndex' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemFocused, K2Node_SwitchEnum_CmpSuccess) == 0x000060, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemFocused::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemFocused, CallFunc_Get_Customize_Data_OutCustomizeData) == 0x000068, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemFocused::CallFunc_Get_Customize_Data_OutCustomizeData' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemFocused, K2Node_SetFieldsInStruct_StructOut) == 0x0000E0, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemFocused::K2Node_SetFieldsInStruct_StructOut' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemFocused, CallFunc_GetSelectedMachineCustomizeData_ReturnValue) == 0x000158, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemFocused::CallFunc_GetSelectedMachineCustomizeData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemFocused, CallFunc_SetAllMachineColorsAsPreset_ReturnValue) == 0x0001D0, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemFocused::CallFunc_SetAllMachineColorsAsPreset_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeColorPresetSelectState_C_EventColorPresetSelectPage_OnItemFocused;
 
 // Function BPC_MachineCustomizeColorPresetSelectState.BPC_MachineCustomizeColorPresetSelectState_C.OnSetupPage
 // 0x0298 (0x0298 - 0x0000)
@@ -135,35 +110,7 @@ public:
 	struct FST_ColorPresetSelectPageItemData      K2Node_MakeStruct_ST_ColorPresetSelectPageItemData_1; // 0x0238(0x0058)(HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0290(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage) == 0x000008, "Wrong alignment on BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage");
-static_assert(sizeof(BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage) == 0x000298, "Wrong size on BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage, PageData) == 0x000000, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage::PageData' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage, Temp_bool_True_if_break_was_hit_Variable) == 0x000018, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage, Temp_int_Array_Index_Variable) == 0x00001C, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage, CallFunc_Not_PreBool_ReturnValue) == 0x000020, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage, Temp_int_Loop_Counter_Variable) == 0x000024, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage, CallFunc_Add_IntInt_ReturnValue) == 0x000028, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage, CallFunc_GetSelectableMachineColorPresets_OutPresets) == 0x000030, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage::CallFunc_GetSelectableMachineColorPresets_OutPresets' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage, CallFunc_Array_Get_Item) == 0x000040, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage, CallFunc_Array_Length_ReturnValue) == 0x000098, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage, CallFunc_Less_IntInt_ReturnValue) == 0x00009C, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage, CallFunc_BooleanAND_ReturnValue) == 0x00009D, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage, CallFunc_GetPlayerController_ReturnValue) == 0x0000A0, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage, CallFunc_GetSelectedMachineCustomizeData_ReturnValue) == 0x0000A8, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage::CallFunc_GetSelectedMachineCustomizeData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage, CallFunc_GetSelectedMachineCustomizeData_ReturnValue_1) == 0x000120, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage::CallFunc_GetSelectedMachineCustomizeData_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage, CallFunc_GetMachineColorById_OutMachineColor) == 0x000198, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage::CallFunc_GetMachineColorById_OutMachineColor' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0001A8, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x0001A9, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage, CallFunc_GetMachineColorById_OutMachineColor_1) == 0x0001AC, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage::CallFunc_GetMachineColorById_OutMachineColor_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage, CallFunc_BooleanAND_ReturnValue_1) == 0x0001BC, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage, CallFunc_GetMachineColorById_OutMachineColor_2) == 0x0001C0, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage::CallFunc_GetMachineColorById_OutMachineColor_2' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage, K2Node_MakeStruct_ST_ColorPresetSelectPageItemData) == 0x0001D0, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage::K2Node_MakeStruct_ST_ColorPresetSelectPageItemData' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x000228, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage, CallFunc_Array_Add_ReturnValue) == 0x00022C, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage, CallFunc_EqualEqual_ByteByte_ReturnValue_3) == 0x000230, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage::CallFunc_EqualEqual_ByteByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage, CallFunc_BooleanOR_ReturnValue) == 0x000231, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage, K2Node_MakeStruct_ST_ColorPresetSelectPageItemData_1) == 0x000238, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage::K2Node_MakeStruct_ST_ColorPresetSelectPageItemData_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage, CallFunc_Array_Add_ReturnValue_1) == 0x000290, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeColorPresetSelectState_C_OnSetupPage;
 
 // Function BPC_MachineCustomizeColorPresetSelectState.BPC_MachineCustomizeColorPresetSelectState_C.SetProperties
 // 0x0048 (0x0048 - 0x0000)
@@ -182,17 +129,7 @@ public:
 	class UWBP_MachineCustom_Sub_PresetPaint_C*   K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Preset_Paint; // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MachineCustomizeColorPresetSelectState_C_SetProperties) == 0x000008, "Wrong alignment on BPC_MachineCustomizeColorPresetSelectState_C_SetProperties");
-static_assert(sizeof(BPC_MachineCustomizeColorPresetSelectState_C_SetProperties) == 0x000048, "Wrong size on BPC_MachineCustomizeColorPresetSelectState_C_SetProperties");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_SetProperties, CallFunc_GetOwnerStateMachine_ReturnValue) == 0x000000, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_SetProperties::CallFunc_GetOwnerStateMachine_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_SetProperties, K2Node_DynamicCast_AsMachine_Customize_Sequence) == 0x000008, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_SetProperties::K2Node_DynamicCast_AsMachine_Customize_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_SetProperties, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_SetProperties::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_SetProperties, CallFunc_GetRacer_ReturnValue) == 0x000018, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_SetProperties::CallFunc_GetRacer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_SetProperties, K2Node_DynamicCast_AsBP_Menu_Racer_Preview) == 0x000020, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_SetProperties::K2Node_DynamicCast_AsBP_Menu_Racer_Preview' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_SetProperties, K2Node_DynamicCast_bSuccess_1) == 0x000028, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_SetProperties::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_SetProperties, CallFunc_GetColorPresetSelectPage_ReturnValue) == 0x000030, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_SetProperties::CallFunc_GetColorPresetSelectPage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_SetProperties, K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Preset_Paint) == 0x000038, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_SetProperties::K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Preset_Paint' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_SetProperties, K2Node_DynamicCast_bSuccess_2) == 0x000040, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_SetProperties::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeColorPresetSelectState_C_SetProperties;
 
 // Function BPC_MachineCustomizeColorPresetSelectState.BPC_MachineCustomizeColorPresetSelectState_C.ExecuteUbergraph_BPC_MachineCustomizeColorPresetSelectState
 // 0x0058 (0x0058 - 0x0000)
@@ -208,15 +145,7 @@ public:
 	class UMachineCustomTab*                      CallFunc_GetTab_ReturnValue;                       // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UMachineCustomTab*                      CallFunc_GetTab_ReturnValue_1;                     // 0x0050(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MachineCustomizeColorPresetSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeColorPresetSelectState) == 0x000008, "Wrong alignment on BPC_MachineCustomizeColorPresetSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeColorPresetSelectState");
-static_assert(sizeof(BPC_MachineCustomizeColorPresetSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeColorPresetSelectState) == 0x000058, "Wrong size on BPC_MachineCustomizeColorPresetSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeColorPresetSelectState");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeColorPresetSelectState, EntryPoint) == 0x000000, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeColorPresetSelectState::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeColorPresetSelectState, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeColorPresetSelectState::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeColorPresetSelectState, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeColorPresetSelectState::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeColorPresetSelectState, K2Node_CreateDelegate_OutputDelegate_2) == 0x000024, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeColorPresetSelectState::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeColorPresetSelectState, K2Node_CreateDelegate_OutputDelegate_3) == 0x000034, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeColorPresetSelectState::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeColorPresetSelectState, CallFunc_GetTab_ReturnValue) == 0x000048, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeColorPresetSelectState::CallFunc_GetTab_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeColorPresetSelectState, CallFunc_GetTab_ReturnValue_1) == 0x000050, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeColorPresetSelectState::CallFunc_GetTab_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeColorPresetSelectState_C_ExecuteUbergraph_BPC_MachineCustomizeColorPresetSelectState;
 
 // Function BPC_MachineCustomizeColorPresetSelectState.BPC_MachineCustomizeColorPresetSelectState_C.GetCamera
 // 0x0078 (0x0078 - 0x0000)
@@ -230,13 +159,7 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FST_GarageData                         CallFunc_GetGarageData_OutGarageData;              // 0x0020(0x0058)(ZeroConstructor, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MachineCustomizeColorPresetSelectState_C_GetCamera) == 0x000008, "Wrong alignment on BPC_MachineCustomizeColorPresetSelectState_C_GetCamera");
-static_assert(sizeof(BPC_MachineCustomizeColorPresetSelectState_C_GetCamera) == 0x000078, "Wrong size on BPC_MachineCustomizeColorPresetSelectState_C_GetCamera");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_GetCamera, ReturnValue) == 0x000000, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_GetCamera::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_GetCamera, CallFunc_GetOwnerStateMachine_ReturnValue) == 0x000008, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_GetCamera::CallFunc_GetOwnerStateMachine_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_GetCamera, K2Node_DynamicCast_AsBP_Machine_Customize_Sequence) == 0x000010, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_GetCamera::K2Node_DynamicCast_AsBP_Machine_Customize_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_GetCamera, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_GetCamera::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorPresetSelectState_C_GetCamera, CallFunc_GetGarageData_OutGarageData) == 0x000020, "Member 'BPC_MachineCustomizeColorPresetSelectState_C_GetCamera::CallFunc_GetGarageData_OutGarageData' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MachineCustomizeColorPresetSelectState_C_GetCamera;
 
 }
 

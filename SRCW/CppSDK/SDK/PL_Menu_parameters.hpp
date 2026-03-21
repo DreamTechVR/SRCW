@@ -36,21 +36,7 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PL_Menu_C_ExecuteUbergraph_PL_Menu) == 0x000008, "Wrong alignment on PL_Menu_C_ExecuteUbergraph_PL_Menu");
-static_assert(sizeof(PL_Menu_C_ExecuteUbergraph_PL_Menu) == 0x000048, "Wrong size on PL_Menu_C_ExecuteUbergraph_PL_Menu");
-static_assert(offsetof(PL_Menu_C_ExecuteUbergraph_PL_Menu, EntryPoint) == 0x000000, "Member 'PL_Menu_C_ExecuteUbergraph_PL_Menu::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PL_Menu_C_ExecuteUbergraph_PL_Menu, Temp_bool_True_if_break_was_hit_Variable) == 0x000004, "Member 'PL_Menu_C_ExecuteUbergraph_PL_Menu::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(PL_Menu_C_ExecuteUbergraph_PL_Menu, Temp_int_Array_Index_Variable) == 0x000008, "Member 'PL_Menu_C_ExecuteUbergraph_PL_Menu::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(PL_Menu_C_ExecuteUbergraph_PL_Menu, CallFunc_Not_PreBool_ReturnValue) == 0x00000C, "Member 'PL_Menu_C_ExecuteUbergraph_PL_Menu::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PL_Menu_C_ExecuteUbergraph_PL_Menu, Temp_int_Loop_Counter_Variable) == 0x000010, "Member 'PL_Menu_C_ExecuteUbergraph_PL_Menu::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(PL_Menu_C_ExecuteUbergraph_PL_Menu, CallFunc_Add_IntInt_ReturnValue) == 0x000014, "Member 'PL_Menu_C_ExecuteUbergraph_PL_Menu::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PL_Menu_C_ExecuteUbergraph_PL_Menu, CallFunc_GetPlayerController_ReturnValue) == 0x000018, "Member 'PL_Menu_C_ExecuteUbergraph_PL_Menu::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PL_Menu_C_ExecuteUbergraph_PL_Menu, CallFunc_GetAllActorsOfClass_OutActors) == 0x000020, "Member 'PL_Menu_C_ExecuteUbergraph_PL_Menu::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(PL_Menu_C_ExecuteUbergraph_PL_Menu, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'PL_Menu_C_ExecuteUbergraph_PL_Menu::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PL_Menu_C_ExecuteUbergraph_PL_Menu, CallFunc_Array_Get_Item) == 0x000038, "Member 'PL_Menu_C_ExecuteUbergraph_PL_Menu::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PL_Menu_C_ExecuteUbergraph_PL_Menu, CallFunc_Less_IntInt_ReturnValue) == 0x000040, "Member 'PL_Menu_C_ExecuteUbergraph_PL_Menu::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PL_Menu_C_ExecuteUbergraph_PL_Menu, CallFunc_BooleanAND_ReturnValue) == 0x000041, "Member 'PL_Menu_C_ExecuteUbergraph_PL_Menu::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PL_Menu_C_ExecuteUbergraph_PL_Menu, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000042, "Member 'PL_Menu_C_ExecuteUbergraph_PL_Menu::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PL_Menu_C_ExecuteUbergraph_PL_Menu;
 
 }
 

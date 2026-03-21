@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "UnionUI_structs.hpp"
-#include "UNION_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -27,9 +27,7 @@ struct BP_TimeTrialSequence_C_BndEvt__BP_TimeTrialSequence_BPC_CharaMachineState
 public:
 	EMenuSequenceSubState                         State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TimeTrialSequence_C_BndEvt__BP_TimeTrialSequence_BPC_CharaMachineState_K2Node_ComponentBoundEvent_0_OnChangeStateDelegate__DelegateSignature) == 0x000001, "Wrong alignment on BP_TimeTrialSequence_C_BndEvt__BP_TimeTrialSequence_BPC_CharaMachineState_K2Node_ComponentBoundEvent_0_OnChangeStateDelegate__DelegateSignature");
-static_assert(sizeof(BP_TimeTrialSequence_C_BndEvt__BP_TimeTrialSequence_BPC_CharaMachineState_K2Node_ComponentBoundEvent_0_OnChangeStateDelegate__DelegateSignature) == 0x000001, "Wrong size on BP_TimeTrialSequence_C_BndEvt__BP_TimeTrialSequence_BPC_CharaMachineState_K2Node_ComponentBoundEvent_0_OnChangeStateDelegate__DelegateSignature");
-static_assert(offsetof(BP_TimeTrialSequence_C_BndEvt__BP_TimeTrialSequence_BPC_CharaMachineState_K2Node_ComponentBoundEvent_0_OnChangeStateDelegate__DelegateSignature, State) == 0x000000, "Member 'BP_TimeTrialSequence_C_BndEvt__BP_TimeTrialSequence_BPC_CharaMachineState_K2Node_ComponentBoundEvent_0_OnChangeStateDelegate__DelegateSignature::State' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TimeTrialSequence_C_BndEvt__BP_TimeTrialSequence_BPC_CharaMachineState_K2Node_ComponentBoundEvent_0_OnChangeStateDelegate__DelegateSignature;
 
 // Function BP_TimeTrialSequence.BP_TimeTrialSequence_C.BndEvt__BP_TimeTrialSequence_BPC_TimeTrialClassSelectSubState_K2Node_ComponentBoundEvent_1_OnChangeStateDelegate__DelegateSignature
 // 0x0001 (0x0001 - 0x0000)
@@ -38,9 +36,7 @@ struct BP_TimeTrialSequence_C_BndEvt__BP_TimeTrialSequence_BPC_TimeTrialClassSel
 public:
 	EMenuSequenceSubState                         State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TimeTrialSequence_C_BndEvt__BP_TimeTrialSequence_BPC_TimeTrialClassSelectSubState_K2Node_ComponentBoundEvent_1_OnChangeStateDelegate__DelegateSignature) == 0x000001, "Wrong alignment on BP_TimeTrialSequence_C_BndEvt__BP_TimeTrialSequence_BPC_TimeTrialClassSelectSubState_K2Node_ComponentBoundEvent_1_OnChangeStateDelegate__DelegateSignature");
-static_assert(sizeof(BP_TimeTrialSequence_C_BndEvt__BP_TimeTrialSequence_BPC_TimeTrialClassSelectSubState_K2Node_ComponentBoundEvent_1_OnChangeStateDelegate__DelegateSignature) == 0x000001, "Wrong size on BP_TimeTrialSequence_C_BndEvt__BP_TimeTrialSequence_BPC_TimeTrialClassSelectSubState_K2Node_ComponentBoundEvent_1_OnChangeStateDelegate__DelegateSignature");
-static_assert(offsetof(BP_TimeTrialSequence_C_BndEvt__BP_TimeTrialSequence_BPC_TimeTrialClassSelectSubState_K2Node_ComponentBoundEvent_1_OnChangeStateDelegate__DelegateSignature, State) == 0x000000, "Member 'BP_TimeTrialSequence_C_BndEvt__BP_TimeTrialSequence_BPC_TimeTrialClassSelectSubState_K2Node_ComponentBoundEvent_1_OnChangeStateDelegate__DelegateSignature::State' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TimeTrialSequence_C_BndEvt__BP_TimeTrialSequence_BPC_TimeTrialClassSelectSubState_K2Node_ComponentBoundEvent_1_OnChangeStateDelegate__DelegateSignature;
 
 // Function BP_TimeTrialSequence.BP_TimeTrialSequence_C.ConvertTimeTrialRaceData
 // 0x0190 (0x0190 - 0x0000)
@@ -81,38 +77,7 @@ public:
 	uint8                                         Pad_13D[0x3];                                      // 0x013D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FUserTimeTrialRaceData                 K2Node_MakeStruct_UserTimeTrialRaceData;           // 0x0140(0x0050)()
 };
-static_assert(alignof(BP_TimeTrialSequence_C_ConvertTimeTrialRaceData) == 0x000008, "Wrong alignment on BP_TimeTrialSequence_C_ConvertTimeTrialRaceData");
-static_assert(sizeof(BP_TimeTrialSequence_C_ConvertTimeTrialRaceData) == 0x000190, "Wrong size on BP_TimeTrialSequence_C_ConvertTimeTrialRaceData");
-static_assert(offsetof(BP_TimeTrialSequence_C_ConvertTimeTrialRaceData, InRankingData) == 0x000000, "Member 'BP_TimeTrialSequence_C_ConvertTimeTrialRaceData::InRankingData' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ConvertTimeTrialRaceData, CallFunc_Conv_IntToByte_ReturnValue) == 0x0000D0, "Member 'BP_TimeTrialSequence_C_ConvertTimeTrialRaceData::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ConvertTimeTrialRaceData, CallFunc_GetValidValue_ReturnValue) == 0x0000D1, "Member 'BP_TimeTrialSequence_C_ConvertTimeTrialRaceData::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ConvertTimeTrialRaceData, CallFunc_Conv_IntToByte_ReturnValue_1) == 0x0000D2, "Member 'BP_TimeTrialSequence_C_ConvertTimeTrialRaceData::CallFunc_Conv_IntToByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ConvertTimeTrialRaceData, CallFunc_Conv_IntToByte_ReturnValue_2) == 0x0000D3, "Member 'BP_TimeTrialSequence_C_ConvertTimeTrialRaceData::CallFunc_Conv_IntToByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ConvertTimeTrialRaceData, CallFunc_GetValidValue_ReturnValue_1) == 0x0000D4, "Member 'BP_TimeTrialSequence_C_ConvertTimeTrialRaceData::CallFunc_GetValidValue_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ConvertTimeTrialRaceData, CallFunc_GetValidValue_ReturnValue_2) == 0x0000D5, "Member 'BP_TimeTrialSequence_C_ConvertTimeTrialRaceData::CallFunc_GetValidValue_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ConvertTimeTrialRaceData, K2Node_MakeStruct_UserGadgetData) == 0x0000D8, "Member 'BP_TimeTrialSequence_C_ConvertTimeTrialRaceData::K2Node_MakeStruct_UserGadgetData' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ConvertTimeTrialRaceData, K2Node_MakeStruct_UserGadgetData_1) == 0x0000E0, "Member 'BP_TimeTrialSequence_C_ConvertTimeTrialRaceData::K2Node_MakeStruct_UserGadgetData_1' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ConvertTimeTrialRaceData, CallFunc_Conv_IntToByte_ReturnValue_3) == 0x0000E8, "Member 'BP_TimeTrialSequence_C_ConvertTimeTrialRaceData::CallFunc_Conv_IntToByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ConvertTimeTrialRaceData, CallFunc_Conv_IntToByte_ReturnValue_4) == 0x0000E9, "Member 'BP_TimeTrialSequence_C_ConvertTimeTrialRaceData::CallFunc_Conv_IntToByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ConvertTimeTrialRaceData, CallFunc_GetValidValue_ReturnValue_3) == 0x0000EA, "Member 'BP_TimeTrialSequence_C_ConvertTimeTrialRaceData::CallFunc_GetValidValue_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ConvertTimeTrialRaceData, CallFunc_GetValidValue_ReturnValue_4) == 0x0000EB, "Member 'BP_TimeTrialSequence_C_ConvertTimeTrialRaceData::CallFunc_GetValidValue_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ConvertTimeTrialRaceData, K2Node_MakeStruct_UserGadgetData_2) == 0x0000EC, "Member 'BP_TimeTrialSequence_C_ConvertTimeTrialRaceData::K2Node_MakeStruct_UserGadgetData_2' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ConvertTimeTrialRaceData, K2Node_MakeStruct_UserGadgetData_3) == 0x0000F4, "Member 'BP_TimeTrialSequence_C_ConvertTimeTrialRaceData::K2Node_MakeStruct_UserGadgetData_3' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ConvertTimeTrialRaceData, CallFunc_Conv_IntToByte_ReturnValue_5) == 0x0000FC, "Member 'BP_TimeTrialSequence_C_ConvertTimeTrialRaceData::CallFunc_Conv_IntToByte_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ConvertTimeTrialRaceData, CallFunc_Conv_IntToByte_ReturnValue_6) == 0x0000FD, "Member 'BP_TimeTrialSequence_C_ConvertTimeTrialRaceData::CallFunc_Conv_IntToByte_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ConvertTimeTrialRaceData, CallFunc_GetValidValue_ReturnValue_5) == 0x0000FE, "Member 'BP_TimeTrialSequence_C_ConvertTimeTrialRaceData::CallFunc_GetValidValue_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ConvertTimeTrialRaceData, CallFunc_GetValidValue_ReturnValue_6) == 0x0000FF, "Member 'BP_TimeTrialSequence_C_ConvertTimeTrialRaceData::CallFunc_GetValidValue_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ConvertTimeTrialRaceData, K2Node_MakeStruct_UserGadgetData_4) == 0x000100, "Member 'BP_TimeTrialSequence_C_ConvertTimeTrialRaceData::K2Node_MakeStruct_UserGadgetData_4' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ConvertTimeTrialRaceData, K2Node_MakeStruct_UserGadgetData_5) == 0x000108, "Member 'BP_TimeTrialSequence_C_ConvertTimeTrialRaceData::K2Node_MakeStruct_UserGadgetData_5' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ConvertTimeTrialRaceData, K2Node_MakeArray_Array) == 0x000110, "Member 'BP_TimeTrialSequence_C_ConvertTimeTrialRaceData::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ConvertTimeTrialRaceData, CallFunc_Conv_IntToByte_ReturnValue_7) == 0x000120, "Member 'BP_TimeTrialSequence_C_ConvertTimeTrialRaceData::CallFunc_Conv_IntToByte_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ConvertTimeTrialRaceData, K2Node_MakeStruct_UserGadgetPresetData) == 0x000128, "Member 'BP_TimeTrialSequence_C_ConvertTimeTrialRaceData::K2Node_MakeStruct_UserGadgetPresetData' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ConvertTimeTrialRaceData, CallFunc_GetValidValue_ReturnValue_7) == 0x000138, "Member 'BP_TimeTrialSequence_C_ConvertTimeTrialRaceData::CallFunc_GetValidValue_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ConvertTimeTrialRaceData, CallFunc_Conv_IntToByte_ReturnValue_8) == 0x000139, "Member 'BP_TimeTrialSequence_C_ConvertTimeTrialRaceData::CallFunc_Conv_IntToByte_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ConvertTimeTrialRaceData, CallFunc_GetValidValue_ReturnValue_8) == 0x00013A, "Member 'BP_TimeTrialSequence_C_ConvertTimeTrialRaceData::CallFunc_GetValidValue_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ConvertTimeTrialRaceData, CallFunc_Conv_IntToByte_ReturnValue_9) == 0x00013B, "Member 'BP_TimeTrialSequence_C_ConvertTimeTrialRaceData::CallFunc_Conv_IntToByte_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ConvertTimeTrialRaceData, CallFunc_GetValidValue_ReturnValue_9) == 0x00013C, "Member 'BP_TimeTrialSequence_C_ConvertTimeTrialRaceData::CallFunc_GetValidValue_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ConvertTimeTrialRaceData, K2Node_MakeStruct_UserTimeTrialRaceData) == 0x000140, "Member 'BP_TimeTrialSequence_C_ConvertTimeTrialRaceData::K2Node_MakeStruct_UserTimeTrialRaceData' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TimeTrialSequence_C_ConvertTimeTrialRaceData;
 
 // Function BP_TimeTrialSequence.BP_TimeTrialSequence_C.ExecuteUbergraph_BP_TimeTrialSequence
 // 0x01C0 (0x01C0 - 0x0000)
@@ -191,65 +156,7 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x01B3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EMenuSpeedClassId                             K2Node_Select_Default;                             // 0x01B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence) == 0x000010, "Wrong alignment on BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence");
-static_assert(sizeof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence) == 0x0001C0, "Wrong size on BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, EntryPoint) == 0x000000, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000008, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, CallFunc_IsValid_ReturnValue_1) == 0x000011, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, CallFunc_GetRacerCount_ReturnValue) == 0x000014, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::CallFunc_GetRacerCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, CallFunc_IsValid_ReturnValue_2) == 0x000018, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, CallFunc_GetParentActor_ReturnValue) == 0x000020, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::CallFunc_GetParentActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, CallFunc_IsValid_ReturnValue_3) == 0x000028, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, K2Node_DynamicCast_AsBP_Menu_Sequence) == 0x000030, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::K2Node_DynamicCast_AsBP_Menu_Sequence' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, CallFunc_GetBoolFromConfig_ConfigValue) == 0x000039, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::CallFunc_GetBoolFromConfig_ConfigValue' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, CallFunc_GetBoolFromConfig_ReturnValue) == 0x00003A, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::CallFunc_GetBoolFromConfig_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, CallFunc_IsComeBackFromRace_ReturnValue) == 0x00003B, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::CallFunc_IsComeBackFromRace_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, CallFunc_GetSelectedMenuSpeedClassId_ReturnValue) == 0x00003C, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::CallFunc_GetSelectedMenuSpeedClassId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, CallFunc_IsTimeTrialSkipSelectClassOnetime_ReturnValue) == 0x00003D, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::CallFunc_IsTimeTrialSkipSelectClassOnetime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00003E, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000040, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, K2Node_CreateDelegate_OutputDelegate) == 0x000048, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, K2Node_CreateDelegate_OutputDelegate_1) == 0x000058, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, K2Node_Event_InDeltaTime) == 0x000068, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, K2Node_ComponentBoundEvent_State_1) == 0x00006C, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::K2Node_ComponentBoundEvent_State_1' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, K2Node_ComponentBoundEvent_State) == 0x00006D, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::K2Node_ComponentBoundEvent_State' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, CallFunc_SetNextMenuSequenceState_self_CastInput) == 0x000070, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::CallFunc_SetNextMenuSequenceState_self_CastInput' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, K2Node_Event_InState) == 0x000080, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::K2Node_Event_InState' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, K2Node_Event_PrevSequence) == 0x000088, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::K2Node_Event_PrevSequence' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000090, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x000091, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, CallFunc_MakeTransform_ReturnValue) == 0x0000A0, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000100, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, CallFunc_FinishSpawningActor_ReturnValue) == 0x000108, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, K2Node_CreateDelegate_OutputDelegate_2) == 0x000110, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, CallFunc_GetNextState_ReturnValue) == 0x000120, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::CallFunc_GetNextState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, CallFunc_NotEqual_ObjectObject_ReturnValue) == 0x000124, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::CallFunc_NotEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000125, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, K2Node_MakeArray_Array) == 0x000128, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, CallFunc_Format_ReturnValue) == 0x000138, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000148, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, CallFunc_BooleanAND_ReturnValue) == 0x000149, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x000150, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, CallFunc_GetNextState_ReturnValue_1) == 0x000158, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::CallFunc_GetNextState_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x00015C, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, CallFunc_GetPlayerController_ReturnValue) == 0x000160, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, K2Node_DynamicCast_AsBP_Menu_Player_Controller) == 0x000168, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::K2Node_DynamicCast_AsBP_Menu_Player_Controller' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, K2Node_DynamicCast_bSuccess_1) == 0x000170, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, K2Node_CreateDelegate_OutputDelegate_3) == 0x000174, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, K2Node_CustomEvent_State) == 0x000184, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::K2Node_CustomEvent_State' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, K2Node_CustomEvent_FadeDirection_1) == 0x000185, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::K2Node_CustomEvent_FadeDirection_1' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, CallFunc_GetSelectedPlayerCount_ReturnValue) == 0x000188, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::CallFunc_GetSelectedPlayerCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, CallFunc_IsGhostOnline_ReturnValue) == 0x00018C, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::CallFunc_IsGhostOnline_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, K2Node_CustomEvent_FadeDirection) == 0x00018D, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::K2Node_CustomEvent_FadeDirection' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, K2Node_CreateDelegate_OutputDelegate_4) == 0x000190, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, K2Node_CreateDelegate_OutputDelegate_5) == 0x0001A0, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, Temp_byte_Variable) == 0x0001B0, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, Temp_byte_Variable_1) == 0x0001B1, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, CallFunc_IsValid_ReturnValue_4) == 0x0001B2, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, Temp_bool_Variable) == 0x0001B3, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence, K2Node_Select_Default) == 0x0001B4, "Member 'BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TimeTrialSequence_C_ExecuteUbergraph_BP_TimeTrialSequence;
 
 // Function BP_TimeTrialSequence.BP_TimeTrialSequence_C.FadeToRaceLevel
 // 0x0001 (0x0001 - 0x0000)
@@ -258,9 +165,7 @@ struct BP_TimeTrialSequence_C_FadeToRaceLevel final
 public:
 	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TimeTrialSequence_C_FadeToRaceLevel) == 0x000001, "Wrong alignment on BP_TimeTrialSequence_C_FadeToRaceLevel");
-static_assert(sizeof(BP_TimeTrialSequence_C_FadeToRaceLevel) == 0x000001, "Wrong size on BP_TimeTrialSequence_C_FadeToRaceLevel");
-static_assert(offsetof(BP_TimeTrialSequence_C_FadeToRaceLevel, FadeDirection) == 0x000000, "Member 'BP_TimeTrialSequence_C_FadeToRaceLevel::FadeDirection' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TimeTrialSequence_C_FadeToRaceLevel;
 
 // Function BP_TimeTrialSequence.BP_TimeTrialSequence_C.GadgetCustomFadeFinished
 // 0x0001 (0x0001 - 0x0000)
@@ -269,9 +174,7 @@ struct BP_TimeTrialSequence_C_GadgetCustomFadeFinished final
 public:
 	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TimeTrialSequence_C_GadgetCustomFadeFinished) == 0x000001, "Wrong alignment on BP_TimeTrialSequence_C_GadgetCustomFadeFinished");
-static_assert(sizeof(BP_TimeTrialSequence_C_GadgetCustomFadeFinished) == 0x000001, "Wrong size on BP_TimeTrialSequence_C_GadgetCustomFadeFinished");
-static_assert(offsetof(BP_TimeTrialSequence_C_GadgetCustomFadeFinished, FadeDirection) == 0x000000, "Member 'BP_TimeTrialSequence_C_GadgetCustomFadeFinished::FadeDirection' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TimeTrialSequence_C_GadgetCustomFadeFinished;
 
 // Function BP_TimeTrialSequence.BP_TimeTrialSequence_C.GetLastStateIsClassSelect
 // 0x0001 (0x0001 - 0x0000)
@@ -280,9 +183,7 @@ struct BP_TimeTrialSequence_C_GetLastStateIsClassSelect final
 public:
 	bool                                          LClassSelect;                                      // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TimeTrialSequence_C_GetLastStateIsClassSelect) == 0x000001, "Wrong alignment on BP_TimeTrialSequence_C_GetLastStateIsClassSelect");
-static_assert(sizeof(BP_TimeTrialSequence_C_GetLastStateIsClassSelect) == 0x000001, "Wrong size on BP_TimeTrialSequence_C_GetLastStateIsClassSelect");
-static_assert(offsetof(BP_TimeTrialSequence_C_GetLastStateIsClassSelect, LClassSelect) == 0x000000, "Member 'BP_TimeTrialSequence_C_GetLastStateIsClassSelect::LClassSelect' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TimeTrialSequence_C_GetLastStateIsClassSelect;
 
 // Function BP_TimeTrialSequence.BP_TimeTrialSequence_C.GetOwnerMenuSequence
 // 0x0008 (0x0008 - 0x0000)
@@ -291,9 +192,7 @@ struct BP_TimeTrialSequence_C_GetOwnerMenuSequence final
 public:
 	class UObject*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TimeTrialSequence_C_GetOwnerMenuSequence) == 0x000008, "Wrong alignment on BP_TimeTrialSequence_C_GetOwnerMenuSequence");
-static_assert(sizeof(BP_TimeTrialSequence_C_GetOwnerMenuSequence) == 0x000008, "Wrong size on BP_TimeTrialSequence_C_GetOwnerMenuSequence");
-static_assert(offsetof(BP_TimeTrialSequence_C_GetOwnerMenuSequence, ReturnValue) == 0x000000, "Member 'BP_TimeTrialSequence_C_GetOwnerMenuSequence::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TimeTrialSequence_C_GetOwnerMenuSequence;
 
 // Function BP_TimeTrialSequence.BP_TimeTrialSequence_C.GetSelectedStageId
 // 0x0001 (0x0001 - 0x0000)
@@ -302,9 +201,7 @@ struct BP_TimeTrialSequence_C_GetSelectedStageId final
 public:
 	EStageId                                      Selected_Stage_Id_Single;                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TimeTrialSequence_C_GetSelectedStageId) == 0x000001, "Wrong alignment on BP_TimeTrialSequence_C_GetSelectedStageId");
-static_assert(sizeof(BP_TimeTrialSequence_C_GetSelectedStageId) == 0x000001, "Wrong size on BP_TimeTrialSequence_C_GetSelectedStageId");
-static_assert(offsetof(BP_TimeTrialSequence_C_GetSelectedStageId, Selected_Stage_Id_Single) == 0x000000, "Member 'BP_TimeTrialSequence_C_GetSelectedStageId::Selected_Stage_Id_Single' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TimeTrialSequence_C_GetSelectedStageId;
 
 // Function BP_TimeTrialSequence.BP_TimeTrialSequence_C.OnBackFromGadgetCustomize
 // 0x0001 (0x0001 - 0x0000)
@@ -313,9 +210,7 @@ struct BP_TimeTrialSequence_C_OnBackFromGadgetCustomize final
 public:
 	EMenuSequenceSubState                         State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TimeTrialSequence_C_OnBackFromGadgetCustomize) == 0x000001, "Wrong alignment on BP_TimeTrialSequence_C_OnBackFromGadgetCustomize");
-static_assert(sizeof(BP_TimeTrialSequence_C_OnBackFromGadgetCustomize) == 0x000001, "Wrong size on BP_TimeTrialSequence_C_OnBackFromGadgetCustomize");
-static_assert(offsetof(BP_TimeTrialSequence_C_OnBackFromGadgetCustomize, State) == 0x000000, "Member 'BP_TimeTrialSequence_C_OnBackFromGadgetCustomize::State' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TimeTrialSequence_C_OnBackFromGadgetCustomize;
 
 // Function BP_TimeTrialSequence.BP_TimeTrialSequence_C.OnUpdate
 // 0x0004 (0x0004 - 0x0000)
@@ -324,9 +219,7 @@ struct BP_TimeTrialSequence_C_OnUpdate final
 public:
 	float                                         InDeltaTime;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TimeTrialSequence_C_OnUpdate) == 0x000004, "Wrong alignment on BP_TimeTrialSequence_C_OnUpdate");
-static_assert(sizeof(BP_TimeTrialSequence_C_OnUpdate) == 0x000004, "Wrong size on BP_TimeTrialSequence_C_OnUpdate");
-static_assert(offsetof(BP_TimeTrialSequence_C_OnUpdate, InDeltaTime) == 0x000000, "Member 'BP_TimeTrialSequence_C_OnUpdate::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TimeTrialSequence_C_OnUpdate;
 
 // Function BP_TimeTrialSequence.BP_TimeTrialSequence_C.PreloadTimeTrialStageAssets
 // 0x0030 (0x0030 - 0x0000)
@@ -345,17 +238,7 @@ public:
 	TArray<EStageId>                              K2Node_MakeArray_Array;                            // 0x0018(0x0010)(ConstParm, ReferenceParm)
 	bool                                          CallFunc_PreloadStageAssets2_ReturnValue;          // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TimeTrialSequence_C_PreloadTimeTrialStageAssets) == 0x000008, "Wrong alignment on BP_TimeTrialSequence_C_PreloadTimeTrialStageAssets");
-static_assert(sizeof(BP_TimeTrialSequence_C_PreloadTimeTrialStageAssets) == 0x000030, "Wrong size on BP_TimeTrialSequence_C_PreloadTimeTrialStageAssets");
-static_assert(offsetof(BP_TimeTrialSequence_C_PreloadTimeTrialStageAssets, InStageId) == 0x000000, "Member 'BP_TimeTrialSequence_C_PreloadTimeTrialStageAssets::InStageId' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_PreloadTimeTrialStageAssets, Temp_bool_Variable) == 0x000001, "Member 'BP_TimeTrialSequence_C_PreloadTimeTrialStageAssets::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_PreloadTimeTrialStageAssets, CallFunc_IsMainStage_ReturnValue) == 0x000002, "Member 'BP_TimeTrialSequence_C_PreloadTimeTrialStageAssets::CallFunc_IsMainStage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_PreloadTimeTrialStageAssets, Temp_byte_Variable) == 0x000003, "Member 'BP_TimeTrialSequence_C_PreloadTimeTrialStageAssets::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_PreloadTimeTrialStageAssets, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000008, "Member 'BP_TimeTrialSequence_C_PreloadTimeTrialStageAssets::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_PreloadTimeTrialStageAssets, CallFunc_GetSelectedStageId_Selected_Stage_Id_Single) == 0x000010, "Member 'BP_TimeTrialSequence_C_PreloadTimeTrialStageAssets::CallFunc_GetSelectedStageId_Selected_Stage_Id_Single' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_PreloadTimeTrialStageAssets, K2Node_Select_Default) == 0x000011, "Member 'BP_TimeTrialSequence_C_PreloadTimeTrialStageAssets::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_PreloadTimeTrialStageAssets, K2Node_MakeArray_Array) == 0x000018, "Member 'BP_TimeTrialSequence_C_PreloadTimeTrialStageAssets::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_PreloadTimeTrialStageAssets, CallFunc_PreloadStageAssets2_ReturnValue) == 0x000028, "Member 'BP_TimeTrialSequence_C_PreloadTimeTrialStageAssets::CallFunc_PreloadStageAssets2_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TimeTrialSequence_C_PreloadTimeTrialStageAssets;
 
 // Function BP_TimeTrialSequence.BP_TimeTrialSequence_C.SetNextSubMenuSequenceState
 // 0x0010 (0x0010 - 0x0000)
@@ -366,10 +249,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                PrevSequence;                                      // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TimeTrialSequence_C_SetNextSubMenuSequenceState) == 0x000008, "Wrong alignment on BP_TimeTrialSequence_C_SetNextSubMenuSequenceState");
-static_assert(sizeof(BP_TimeTrialSequence_C_SetNextSubMenuSequenceState) == 0x000010, "Wrong size on BP_TimeTrialSequence_C_SetNextSubMenuSequenceState");
-static_assert(offsetof(BP_TimeTrialSequence_C_SetNextSubMenuSequenceState, InState) == 0x000000, "Member 'BP_TimeTrialSequence_C_SetNextSubMenuSequenceState::InState' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_SetNextSubMenuSequenceState, PrevSequence) == 0x000008, "Member 'BP_TimeTrialSequence_C_SetNextSubMenuSequenceState::PrevSequence' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TimeTrialSequence_C_SetNextSubMenuSequenceState;
 
 // Function BP_TimeTrialSequence.BP_TimeTrialSequence_C.SetSelectedStageId
 // 0x0001 (0x0001 - 0x0000)
@@ -378,9 +258,7 @@ struct BP_TimeTrialSequence_C_SetSelectedStageId final
 public:
 	EStageId                                      InSelectStageId;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TimeTrialSequence_C_SetSelectedStageId) == 0x000001, "Wrong alignment on BP_TimeTrialSequence_C_SetSelectedStageId");
-static_assert(sizeof(BP_TimeTrialSequence_C_SetSelectedStageId) == 0x000001, "Wrong size on BP_TimeTrialSequence_C_SetSelectedStageId");
-static_assert(offsetof(BP_TimeTrialSequence_C_SetSelectedStageId, InSelectStageId) == 0x000000, "Member 'BP_TimeTrialSequence_C_SetSelectedStageId::InSelectStageId' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TimeTrialSequence_C_SetSelectedStageId;
 
 // Function BP_TimeTrialSequence.BP_TimeTrialSequence_C.Setting Ghost Gadget Presset
 // 0x0158 (0x0158 - 0x0000)
@@ -391,11 +269,7 @@ public:
 	struct FUserGadgetPresetData                  CallFunc_ConvertGhostDataToGadgetPreset_OutGadgetPreset; // 0x0140(0x0010)()
 	bool                                          CallFunc_ConvertGhostDataToGadgetPreset_ReturnValue; // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TimeTrialSequence_C_Setting_Ghost_Gadget_Presset) == 0x000008, "Wrong alignment on BP_TimeTrialSequence_C_Setting_Ghost_Gadget_Presset");
-static_assert(sizeof(BP_TimeTrialSequence_C_Setting_Ghost_Gadget_Presset) == 0x000158, "Wrong size on BP_TimeTrialSequence_C_Setting_Ghost_Gadget_Presset");
-static_assert(offsetof(BP_TimeTrialSequence_C_Setting_Ghost_Gadget_Presset, InGhostData) == 0x000000, "Member 'BP_TimeTrialSequence_C_Setting_Ghost_Gadget_Presset::InGhostData' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_Setting_Ghost_Gadget_Presset, CallFunc_ConvertGhostDataToGadgetPreset_OutGadgetPreset) == 0x000140, "Member 'BP_TimeTrialSequence_C_Setting_Ghost_Gadget_Presset::CallFunc_ConvertGhostDataToGadgetPreset_OutGadgetPreset' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_Setting_Ghost_Gadget_Presset, CallFunc_ConvertGhostDataToGadgetPreset_ReturnValue) == 0x000150, "Member 'BP_TimeTrialSequence_C_Setting_Ghost_Gadget_Presset::CallFunc_ConvertGhostDataToGadgetPreset_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TimeTrialSequence_C_Setting_Ghost_Gadget_Presset;
 
 // Function BP_TimeTrialSequence.BP_TimeTrialSequence_C.Setup Time Trial Race Setting
 // 0x0040 (0x0040 - 0x0000)
@@ -420,23 +294,7 @@ public:
 	uint8                                         Pad_2B[0x5];                                       // 0x002B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<EStageId>                              K2Node_MakeArray_Array;                            // 0x0030(0x0010)(ConstParm, ReferenceParm)
 };
-static_assert(alignof(BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting) == 0x000008, "Wrong alignment on BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting");
-static_assert(sizeof(BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting) == 0x000040, "Wrong size on BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting");
-static_assert(offsetof(BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting, bIsMainStage) == 0x000000, "Member 'BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting::bIsMainStage' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting, Temp_bool_Variable) == 0x000001, "Member 'BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting, Temp_byte_Variable) == 0x000002, "Member 'BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting, Temp_byte_Variable_1) == 0x000003, "Member 'BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting, Temp_bool_Variable_1) == 0x000004, "Member 'BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting, Temp_byte_Variable_2) == 0x000005, "Member 'BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting, CallFunc_GetSelectedStageId_Selected_Stage_Id_Single) == 0x000006, "Member 'BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting::CallFunc_GetSelectedStageId_Selected_Stage_Id_Single' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting, CallFunc_GetSelectedStageId_Selected_Stage_Id_Single_1) == 0x000007, "Member 'BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting::CallFunc_GetSelectedStageId_Selected_Stage_Id_Single_1' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting, CallFunc_IsMainStage_ReturnValue) == 0x000008, "Member 'BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting::CallFunc_IsMainStage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting, CallFunc_GetGadgetDataTableDisabledGadgetIds_OutDisabledGadgetIds) == 0x000010, "Member 'BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting::CallFunc_GetGadgetDataTableDisabledGadgetIds_OutDisabledGadgetIds' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000020, "Member 'BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting, K2Node_SwitchEnum_CmpSuccess) == 0x000028, "Member 'BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting, K2Node_Select_Default) == 0x000029, "Member 'BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting, K2Node_Select_Default_1) == 0x00002A, "Member 'BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting, K2Node_MakeArray_Array) == 0x000030, "Member 'BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting::K2Node_MakeArray_Array' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TimeTrialSequence_C_Setup_Time_Trial_Race_Setting;
 
 // Function BP_TimeTrialSequence.BP_TimeTrialSequence_C.UnloadTimeTrailStageAssets
 // 0x0008 (0x0008 - 0x0000)
@@ -445,9 +303,7 @@ struct BP_TimeTrialSequence_C_UnloadTimeTrailStageAssets final
 public:
 	class UUnionAssetPreloaderSubsystem*          CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TimeTrialSequence_C_UnloadTimeTrailStageAssets) == 0x000008, "Wrong alignment on BP_TimeTrialSequence_C_UnloadTimeTrailStageAssets");
-static_assert(sizeof(BP_TimeTrialSequence_C_UnloadTimeTrailStageAssets) == 0x000008, "Wrong size on BP_TimeTrialSequence_C_UnloadTimeTrailStageAssets");
-static_assert(offsetof(BP_TimeTrialSequence_C_UnloadTimeTrailStageAssets, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000000, "Member 'BP_TimeTrialSequence_C_UnloadTimeTrailStageAssets::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TimeTrialSequence_C_UnloadTimeTrailStageAssets;
 
 }
 

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "UNION_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UNION_classes.hpp"
 
 
 namespace SDK
@@ -52,22 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_RaceSequenceHolder_C">();
+		BP_STATIC_CLASS_IMPL("BP_RaceSequenceHolder_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_RaceSequenceHolder_C")
 	}
 	static class ABP_RaceSequenceHolder_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_RaceSequenceHolder_C>();
 	}
 };
-static_assert(alignof(ABP_RaceSequenceHolder_C) == 0x000008, "Wrong alignment on ABP_RaceSequenceHolder_C");
-static_assert(sizeof(ABP_RaceSequenceHolder_C) == 0x000320, "Wrong size on ABP_RaceSequenceHolder_C");
-static_assert(offsetof(ABP_RaceSequenceHolder_C, UberGraphFrame) == 0x0002E8, "Member 'ABP_RaceSequenceHolder_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_RaceSequenceHolder_C, NewVar) == 0x0002F0, "Member 'ABP_RaceSequenceHolder_C::NewVar' has a wrong offset!");
-static_assert(offsetof(ABP_RaceSequenceHolder_C, New_Id) == 0x0002F8, "Member 'ABP_RaceSequenceHolder_C::New_Id' has a wrong offset!");
-static_assert(offsetof(ABP_RaceSequenceHolder_C, LoadingDisplay) == 0x000308, "Member 'ABP_RaceSequenceHolder_C::LoadingDisplay' has a wrong offset!");
-static_assert(offsetof(ABP_RaceSequenceHolder_C, In_End_Hide) == 0x000310, "Member 'ABP_RaceSequenceHolder_C::In_End_Hide' has a wrong offset!");
-static_assert(offsetof(ABP_RaceSequenceHolder_C, CantFindStage) == 0x000311, "Member 'ABP_RaceSequenceHolder_C::CantFindStage' has a wrong offset!");
-static_assert(offsetof(ABP_RaceSequenceHolder_C, LoadingWidget) == 0x000318, "Member 'ABP_RaceSequenceHolder_C::LoadingWidget' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_RaceSequenceHolder_C;
 
 }
 

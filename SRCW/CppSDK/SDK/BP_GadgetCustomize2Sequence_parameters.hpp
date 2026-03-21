@@ -28,13 +28,7 @@ public:
 	struct FGadgetPlateUIData                     CallFunc_GetSelectedGadgetPlateUIData_OutGadgetPlateUIData; // 0x0018(0x0028)()
 	class UAppSequenceLogManagerSubsystem*        CallFunc_GetGameInstanceSubsystem_ReturnValue_2;   // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_GadgetCustomize2Sequence_C_ExecuteUbergraph_BP_GadgetCustomize2Sequence) == 0x000008, "Wrong alignment on BP_GadgetCustomize2Sequence_C_ExecuteUbergraph_BP_GadgetCustomize2Sequence");
-static_assert(sizeof(BP_GadgetCustomize2Sequence_C_ExecuteUbergraph_BP_GadgetCustomize2Sequence) == 0x000048, "Wrong size on BP_GadgetCustomize2Sequence_C_ExecuteUbergraph_BP_GadgetCustomize2Sequence");
-static_assert(offsetof(BP_GadgetCustomize2Sequence_C_ExecuteUbergraph_BP_GadgetCustomize2Sequence, EntryPoint) == 0x000000, "Member 'BP_GadgetCustomize2Sequence_C_ExecuteUbergraph_BP_GadgetCustomize2Sequence::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_GadgetCustomize2Sequence_C_ExecuteUbergraph_BP_GadgetCustomize2Sequence, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000008, "Member 'BP_GadgetCustomize2Sequence_C_ExecuteUbergraph_BP_GadgetCustomize2Sequence::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GadgetCustomize2Sequence_C_ExecuteUbergraph_BP_GadgetCustomize2Sequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x000010, "Member 'BP_GadgetCustomize2Sequence_C_ExecuteUbergraph_BP_GadgetCustomize2Sequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_GadgetCustomize2Sequence_C_ExecuteUbergraph_BP_GadgetCustomize2Sequence, CallFunc_GetSelectedGadgetPlateUIData_OutGadgetPlateUIData) == 0x000018, "Member 'BP_GadgetCustomize2Sequence_C_ExecuteUbergraph_BP_GadgetCustomize2Sequence::CallFunc_GetSelectedGadgetPlateUIData_OutGadgetPlateUIData' has a wrong offset!");
-static_assert(offsetof(BP_GadgetCustomize2Sequence_C_ExecuteUbergraph_BP_GadgetCustomize2Sequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_2) == 0x000040, "Member 'BP_GadgetCustomize2Sequence_C_ExecuteUbergraph_BP_GadgetCustomize2Sequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_BP_GadgetCustomize2Sequence_C_ExecuteUbergraph_BP_GadgetCustomize2Sequence;
 
 // Function BP_GadgetCustomize2Sequence.BP_GadgetCustomize2Sequence_C.Exit
 // 0x0030 (0x0030 - 0x0000)
@@ -45,11 +39,7 @@ public:
 	bool                                          CallFunc_GadgetPlateUIDataEquals_ReturnValue;      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_GadgetCustomize2Sequence_C_Exit) == 0x000008, "Wrong alignment on BP_GadgetCustomize2Sequence_C_Exit");
-static_assert(sizeof(BP_GadgetCustomize2Sequence_C_Exit) == 0x000030, "Wrong size on BP_GadgetCustomize2Sequence_C_Exit");
-static_assert(offsetof(BP_GadgetCustomize2Sequence_C_Exit, CallFunc_GetSelectedGadgetPlateUIData_OutGadgetPlateUIData) == 0x000000, "Member 'BP_GadgetCustomize2Sequence_C_Exit::CallFunc_GetSelectedGadgetPlateUIData_OutGadgetPlateUIData' has a wrong offset!");
-static_assert(offsetof(BP_GadgetCustomize2Sequence_C_Exit, CallFunc_GadgetPlateUIDataEquals_ReturnValue) == 0x000028, "Member 'BP_GadgetCustomize2Sequence_C_Exit::CallFunc_GadgetPlateUIDataEquals_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GadgetCustomize2Sequence_C_Exit, CallFunc_Not_PreBool_ReturnValue) == 0x000029, "Member 'BP_GadgetCustomize2Sequence_C_Exit::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_GadgetCustomize2Sequence_C_Exit;
 
 // Function BP_GadgetCustomize2Sequence.BP_GadgetCustomize2Sequence_C.GetPlayerNum
 // 0x0004 (0x0004 - 0x0000)
@@ -58,9 +48,7 @@ struct BP_GadgetCustomize2Sequence_C_GetPlayerNum final
 public:
 	int32                                         OutPlayerNum;                                      // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_GadgetCustomize2Sequence_C_GetPlayerNum) == 0x000004, "Wrong alignment on BP_GadgetCustomize2Sequence_C_GetPlayerNum");
-static_assert(sizeof(BP_GadgetCustomize2Sequence_C_GetPlayerNum) == 0x000004, "Wrong size on BP_GadgetCustomize2Sequence_C_GetPlayerNum");
-static_assert(offsetof(BP_GadgetCustomize2Sequence_C_GetPlayerNum, OutPlayerNum) == 0x000000, "Member 'BP_GadgetCustomize2Sequence_C_GetPlayerNum::OutPlayerNum' has a wrong offset!");
+DUMPER7_ASSERTS_BP_GadgetCustomize2Sequence_C_GetPlayerNum;
 
 // Function BP_GadgetCustomize2Sequence.BP_GadgetCustomize2Sequence_C.GetSelectMode
 // 0x0001 (0x0001 - 0x0000)
@@ -69,9 +57,7 @@ struct BP_GadgetCustomize2Sequence_C_GetSelectMode final
 public:
 	EGadgetCustomizeSelectMode                    OutSelectMode;                                     // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_GadgetCustomize2Sequence_C_GetSelectMode) == 0x000001, "Wrong alignment on BP_GadgetCustomize2Sequence_C_GetSelectMode");
-static_assert(sizeof(BP_GadgetCustomize2Sequence_C_GetSelectMode) == 0x000001, "Wrong size on BP_GadgetCustomize2Sequence_C_GetSelectMode");
-static_assert(offsetof(BP_GadgetCustomize2Sequence_C_GetSelectMode, OutSelectMode) == 0x000000, "Member 'BP_GadgetCustomize2Sequence_C_GetSelectMode::OutSelectMode' has a wrong offset!");
+DUMPER7_ASSERTS_BP_GadgetCustomize2Sequence_C_GetSelectMode;
 
 // Function BP_GadgetCustomize2Sequence.BP_GadgetCustomize2Sequence_C.IsDirty
 // 0x0001 (0x0001 - 0x0000)
@@ -80,9 +66,7 @@ struct BP_GadgetCustomize2Sequence_C_IsDirty final
 public:
 	bool                                          bOutIsDirty;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_GadgetCustomize2Sequence_C_IsDirty) == 0x000001, "Wrong alignment on BP_GadgetCustomize2Sequence_C_IsDirty");
-static_assert(sizeof(BP_GadgetCustomize2Sequence_C_IsDirty) == 0x000001, "Wrong size on BP_GadgetCustomize2Sequence_C_IsDirty");
-static_assert(offsetof(BP_GadgetCustomize2Sequence_C_IsDirty, bOutIsDirty) == 0x000000, "Member 'BP_GadgetCustomize2Sequence_C_IsDirty::bOutIsDirty' has a wrong offset!");
+DUMPER7_ASSERTS_BP_GadgetCustomize2Sequence_C_IsDirty;
 
 // Function BP_GadgetCustomize2Sequence.BP_GadgetCustomize2Sequence_C.IsMessageBarVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -91,9 +75,7 @@ struct BP_GadgetCustomize2Sequence_C_IsMessageBarVisible final
 public:
 	bool                                          bOutIsVisible;                                     // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_GadgetCustomize2Sequence_C_IsMessageBarVisible) == 0x000001, "Wrong alignment on BP_GadgetCustomize2Sequence_C_IsMessageBarVisible");
-static_assert(sizeof(BP_GadgetCustomize2Sequence_C_IsMessageBarVisible) == 0x000001, "Wrong size on BP_GadgetCustomize2Sequence_C_IsMessageBarVisible");
-static_assert(offsetof(BP_GadgetCustomize2Sequence_C_IsMessageBarVisible, bOutIsVisible) == 0x000000, "Member 'BP_GadgetCustomize2Sequence_C_IsMessageBarVisible::bOutIsVisible' has a wrong offset!");
+DUMPER7_ASSERTS_BP_GadgetCustomize2Sequence_C_IsMessageBarVisible;
 
 // Function BP_GadgetCustomize2Sequence.BP_GadgetCustomize2Sequence_C.SetDirty
 // 0x0001 (0x0001 - 0x0000)
@@ -102,9 +84,7 @@ struct BP_GadgetCustomize2Sequence_C_SetDirty final
 public:
 	bool                                          bInIsDirty;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_GadgetCustomize2Sequence_C_SetDirty) == 0x000001, "Wrong alignment on BP_GadgetCustomize2Sequence_C_SetDirty");
-static_assert(sizeof(BP_GadgetCustomize2Sequence_C_SetDirty) == 0x000001, "Wrong size on BP_GadgetCustomize2Sequence_C_SetDirty");
-static_assert(offsetof(BP_GadgetCustomize2Sequence_C_SetDirty, bInIsDirty) == 0x000000, "Member 'BP_GadgetCustomize2Sequence_C_SetDirty::bInIsDirty' has a wrong offset!");
+DUMPER7_ASSERTS_BP_GadgetCustomize2Sequence_C_SetDirty;
 
 // Function BP_GadgetCustomize2Sequence.BP_GadgetCustomize2Sequence_C.Setup
 // 0x0008 (0x0008 - 0x0000)
@@ -115,11 +95,7 @@ public:
 	EGadgetCustomizeSelectMode                    InSelectMode;                                      // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIsMessageBarVisible_0;                            // 0x0005(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_GadgetCustomize2Sequence_C_Setup) == 0x000004, "Wrong alignment on BP_GadgetCustomize2Sequence_C_Setup");
-static_assert(sizeof(BP_GadgetCustomize2Sequence_C_Setup) == 0x000008, "Wrong size on BP_GadgetCustomize2Sequence_C_Setup");
-static_assert(offsetof(BP_GadgetCustomize2Sequence_C_Setup, InPlayerNum) == 0x000000, "Member 'BP_GadgetCustomize2Sequence_C_Setup::InPlayerNum' has a wrong offset!");
-static_assert(offsetof(BP_GadgetCustomize2Sequence_C_Setup, InSelectMode) == 0x000004, "Member 'BP_GadgetCustomize2Sequence_C_Setup::InSelectMode' has a wrong offset!");
-static_assert(offsetof(BP_GadgetCustomize2Sequence_C_Setup, bIsMessageBarVisible_0) == 0x000005, "Member 'BP_GadgetCustomize2Sequence_C_Setup::bIsMessageBarVisible_0' has a wrong offset!");
+DUMPER7_ASSERTS_BP_GadgetCustomize2Sequence_C_Setup;
 
 }
 

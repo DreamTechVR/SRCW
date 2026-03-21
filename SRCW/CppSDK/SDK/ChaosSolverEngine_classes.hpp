@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "Chaos_structs.hpp"
 #include "Engine_classes.hpp"
 #include "ChaosSolverEngine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
-#include "Chaos_structs.hpp"
 #include "DeveloperSettings_classes.hpp"
 
 
@@ -31,15 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ChaosDebugDrawComponent">();
+		STATIC_CLASS_IMPL("ChaosDebugDrawComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChaosDebugDrawComponent")
 	}
 	static class UChaosDebugDrawComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChaosDebugDrawComponent>();
 	}
 };
-static_assert(alignof(UChaosDebugDrawComponent) == 0x000008, "Wrong alignment on UChaosDebugDrawComponent");
-static_assert(sizeof(UChaosDebugDrawComponent) == 0x0000A8, "Wrong size on UChaosDebugDrawComponent");
+DUMPER7_ASSERTS_UChaosDebugDrawComponent;
 
 // Class ChaosSolverEngine.ChaosEventListenerComponent
 // 0x0008 (0x00A8 - 0x00A0)
@@ -51,15 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ChaosEventListenerComponent">();
+		STATIC_CLASS_IMPL("ChaosEventListenerComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChaosEventListenerComponent")
 	}
 	static class UChaosEventListenerComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChaosEventListenerComponent>();
 	}
 };
-static_assert(alignof(UChaosEventListenerComponent) == 0x000008, "Wrong alignment on UChaosEventListenerComponent");
-static_assert(sizeof(UChaosEventListenerComponent) == 0x0000A8, "Wrong size on UChaosEventListenerComponent");
+DUMPER7_ASSERTS_UChaosEventListenerComponent;
 
 // Class ChaosSolverEngine.ChaosGameplayEventDispatcher
 // 0x0210 (0x02B8 - 0x00A8)
@@ -76,19 +82,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ChaosGameplayEventDispatcher">();
+		STATIC_CLASS_IMPL("ChaosGameplayEventDispatcher")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChaosGameplayEventDispatcher")
 	}
 	static class UChaosGameplayEventDispatcher* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChaosGameplayEventDispatcher>();
 	}
 };
-static_assert(alignof(UChaosGameplayEventDispatcher) == 0x000008, "Wrong alignment on UChaosGameplayEventDispatcher");
-static_assert(sizeof(UChaosGameplayEventDispatcher) == 0x0002B8, "Wrong size on UChaosGameplayEventDispatcher");
-static_assert(offsetof(UChaosGameplayEventDispatcher, CollisionEventRegistrations) == 0x000168, "Member 'UChaosGameplayEventDispatcher::CollisionEventRegistrations' has a wrong offset!");
-static_assert(offsetof(UChaosGameplayEventDispatcher, BreakEventRegistrations) == 0x0001B8, "Member 'UChaosGameplayEventDispatcher::BreakEventRegistrations' has a wrong offset!");
-static_assert(offsetof(UChaosGameplayEventDispatcher, RemovalEventRegistrations) == 0x000208, "Member 'UChaosGameplayEventDispatcher::RemovalEventRegistrations' has a wrong offset!");
-static_assert(offsetof(UChaosGameplayEventDispatcher, CrumblingEventRegistrations) == 0x000258, "Member 'UChaosGameplayEventDispatcher::CrumblingEventRegistrations' has a wrong offset!");
+DUMPER7_ASSERTS_UChaosGameplayEventDispatcher;
 
 // Class ChaosSolverEngine.ChaosNotifyHandlerInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -97,7 +102,11 @@ class IChaosNotifyHandlerInterface final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ChaosNotifyHandlerInterface">();
+		STATIC_CLASS_IMPL("ChaosNotifyHandlerInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChaosNotifyHandlerInterface")
 	}
 	static class IChaosNotifyHandlerInterface* GetDefaultObj()
 	{
@@ -113,8 +122,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IChaosNotifyHandlerInterface) == 0x000001, "Wrong alignment on IChaosNotifyHandlerInterface");
-static_assert(sizeof(IChaosNotifyHandlerInterface) == 0x000001, "Wrong size on IChaosNotifyHandlerInterface");
+DUMPER7_ASSERTS_IChaosNotifyHandlerInterface;
 
 // Class ChaosSolverEngine.ChaosSolverEngineBlueprintLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -126,15 +134,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ChaosSolverEngineBlueprintLibrary">();
+		STATIC_CLASS_IMPL("ChaosSolverEngineBlueprintLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChaosSolverEngineBlueprintLibrary")
 	}
 	static class UChaosSolverEngineBlueprintLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChaosSolverEngineBlueprintLibrary>();
 	}
 };
-static_assert(alignof(UChaosSolverEngineBlueprintLibrary) == 0x000008, "Wrong alignment on UChaosSolverEngineBlueprintLibrary");
-static_assert(sizeof(UChaosSolverEngineBlueprintLibrary) == 0x000028, "Wrong size on UChaosSolverEngineBlueprintLibrary");
+DUMPER7_ASSERTS_UChaosSolverEngineBlueprintLibrary;
 
 // Class ChaosSolverEngine.ChaosSolver
 // 0x0000 (0x0028 - 0x0028)
@@ -143,15 +154,18 @@ class UChaosSolver final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ChaosSolver">();
+		STATIC_CLASS_IMPL("ChaosSolver")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChaosSolver")
 	}
 	static class UChaosSolver* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChaosSolver>();
 	}
 };
-static_assert(alignof(UChaosSolver) == 0x000008, "Wrong alignment on UChaosSolver");
-static_assert(sizeof(UChaosSolver) == 0x000028, "Wrong size on UChaosSolver");
+DUMPER7_ASSERTS_UChaosSolver;
 
 // Class ChaosSolverEngine.ChaosSolverActor
 // 0x0100 (0x0390 - 0x0290)
@@ -180,9 +194,9 @@ public:
 	float                                         FloorHeight;                                       // 0x0354(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FChaosDebugSubstepControl              ChaosDebugSubstepControl;                          // 0x0358(0x0003)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_35B[0x5];                                      // 0x035B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UBillboardComponent*                    SpriteComponent;                                   // 0x0360(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBillboardComponent*                    SpriteComponent;                                   // 0x0360(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 	uint8                                         Pad_368[0x18];                                     // 0x0368(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
-	class UChaosGameplayEventDispatcher*          GameplayEventDispatcherComponent;                  // 0x0380(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UChaosGameplayEventDispatcher*          GameplayEventDispatcherComponent;                  // 0x0380(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
 	uint8                                         Pad_388[0x8];                                      // 0x0388(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -192,34 +206,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ChaosSolverActor">();
+		STATIC_CLASS_IMPL("ChaosSolverActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChaosSolverActor")
 	}
 	static class AChaosSolverActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AChaosSolverActor>();
 	}
 };
-static_assert(alignof(AChaosSolverActor) == 0x000008, "Wrong alignment on AChaosSolverActor");
-static_assert(sizeof(AChaosSolverActor) == 0x000390, "Wrong size on AChaosSolverActor");
-static_assert(offsetof(AChaosSolverActor, Properties) == 0x000290, "Member 'AChaosSolverActor::Properties' has a wrong offset!");
-static_assert(offsetof(AChaosSolverActor, TimeStepMultiplier) == 0x0002FC, "Member 'AChaosSolverActor::TimeStepMultiplier' has a wrong offset!");
-static_assert(offsetof(AChaosSolverActor, CollisionIterations) == 0x000300, "Member 'AChaosSolverActor::CollisionIterations' has a wrong offset!");
-static_assert(offsetof(AChaosSolverActor, PushOutIterations) == 0x000304, "Member 'AChaosSolverActor::PushOutIterations' has a wrong offset!");
-static_assert(offsetof(AChaosSolverActor, PushOutPairIterations) == 0x000308, "Member 'AChaosSolverActor::PushOutPairIterations' has a wrong offset!");
-static_assert(offsetof(AChaosSolverActor, ClusterConnectionFactor) == 0x00030C, "Member 'AChaosSolverActor::ClusterConnectionFactor' has a wrong offset!");
-static_assert(offsetof(AChaosSolverActor, ClusterUnionConnectionType) == 0x000310, "Member 'AChaosSolverActor::ClusterUnionConnectionType' has a wrong offset!");
-static_assert(offsetof(AChaosSolverActor, DoGenerateCollisionData) == 0x000311, "Member 'AChaosSolverActor::DoGenerateCollisionData' has a wrong offset!");
-static_assert(offsetof(AChaosSolverActor, CollisionFilterSettings) == 0x000314, "Member 'AChaosSolverActor::CollisionFilterSettings' has a wrong offset!");
-static_assert(offsetof(AChaosSolverActor, DoGenerateBreakingData) == 0x000324, "Member 'AChaosSolverActor::DoGenerateBreakingData' has a wrong offset!");
-static_assert(offsetof(AChaosSolverActor, BreakingFilterSettings) == 0x000328, "Member 'AChaosSolverActor::BreakingFilterSettings' has a wrong offset!");
-static_assert(offsetof(AChaosSolverActor, DoGenerateTrailingData) == 0x000338, "Member 'AChaosSolverActor::DoGenerateTrailingData' has a wrong offset!");
-static_assert(offsetof(AChaosSolverActor, TrailingFilterSettings) == 0x00033C, "Member 'AChaosSolverActor::TrailingFilterSettings' has a wrong offset!");
-static_assert(offsetof(AChaosSolverActor, MassScale) == 0x00034C, "Member 'AChaosSolverActor::MassScale' has a wrong offset!");
-static_assert(offsetof(AChaosSolverActor, bHasFloor) == 0x000350, "Member 'AChaosSolverActor::bHasFloor' has a wrong offset!");
-static_assert(offsetof(AChaosSolverActor, FloorHeight) == 0x000354, "Member 'AChaosSolverActor::FloorHeight' has a wrong offset!");
-static_assert(offsetof(AChaosSolverActor, ChaosDebugSubstepControl) == 0x000358, "Member 'AChaosSolverActor::ChaosDebugSubstepControl' has a wrong offset!");
-static_assert(offsetof(AChaosSolverActor, SpriteComponent) == 0x000360, "Member 'AChaosSolverActor::SpriteComponent' has a wrong offset!");
-static_assert(offsetof(AChaosSolverActor, GameplayEventDispatcherComponent) == 0x000380, "Member 'AChaosSolverActor::GameplayEventDispatcherComponent' has a wrong offset!");
+DUMPER7_ASSERTS_AChaosSolverActor;
 
 // Class ChaosSolverEngine.ChaosSolverSettings
 // 0x0028 (0x0060 - 0x0038)
@@ -232,16 +230,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ChaosSolverSettings">();
+		STATIC_CLASS_IMPL("ChaosSolverSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChaosSolverSettings")
 	}
 	static class UChaosSolverSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChaosSolverSettings>();
 	}
 };
-static_assert(alignof(UChaosSolverSettings) == 0x000008, "Wrong alignment on UChaosSolverSettings");
-static_assert(sizeof(UChaosSolverSettings) == 0x000060, "Wrong size on UChaosSolverSettings");
-static_assert(offsetof(UChaosSolverSettings, DefaultChaosSolverActorClass) == 0x000040, "Member 'UChaosSolverSettings::DefaultChaosSolverActorClass' has a wrong offset!");
+DUMPER7_ASSERTS_UChaosSolverSettings;
 
 }
 

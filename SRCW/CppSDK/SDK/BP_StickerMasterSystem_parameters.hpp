@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
+#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "ST_StickerMachineData_structs.hpp"
+#include "ST_ColorDetailWindowColorItemData_structs.hpp"
 #include "ST_GarageData_structs.hpp"
 #include "ST_ColorDetailWindowData_structs.hpp"
-#include "UNION_structs.hpp"
 #include "ST_PullDownMenuItemData_structs.hpp"
-#include "ST_ColorDetailWindowColorItemData_structs.hpp"
 #include "Engine_structs.hpp"
 
 
@@ -47,23 +47,7 @@ public:
 	TDelegate<void(class UObject* Object)>        K2Node_CreateDelegate_OutputDelegate_11;           // 0x00B8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class UObject* Object, const struct FVector2D& Value)> K2Node_CreateDelegate_OutputDelegate_12; // 0x00C8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_BindInputReceiver) == 0x000004, "Wrong alignment on BP_StickerMasterSystem_C_BindInputReceiver");
-static_assert(sizeof(BP_StickerMasterSystem_C_BindInputReceiver) == 0x0000D8, "Wrong size on BP_StickerMasterSystem_C_BindInputReceiver");
-static_assert(offsetof(BP_StickerMasterSystem_C_BindInputReceiver, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'BP_StickerMasterSystem_C_BindInputReceiver::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_BindInputReceiver, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'BP_StickerMasterSystem_C_BindInputReceiver::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_BindInputReceiver, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'BP_StickerMasterSystem_C_BindInputReceiver::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_BindInputReceiver, K2Node_CreateDelegate_OutputDelegate_2) == 0x000024, "Member 'BP_StickerMasterSystem_C_BindInputReceiver::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_BindInputReceiver, K2Node_CreateDelegate_OutputDelegate_3) == 0x000034, "Member 'BP_StickerMasterSystem_C_BindInputReceiver::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_BindInputReceiver, CallFunc_IsValid_ReturnValue_1) == 0x000044, "Member 'BP_StickerMasterSystem_C_BindInputReceiver::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_BindInputReceiver, K2Node_CreateDelegate_OutputDelegate_4) == 0x000048, "Member 'BP_StickerMasterSystem_C_BindInputReceiver::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_BindInputReceiver, K2Node_CreateDelegate_OutputDelegate_5) == 0x000058, "Member 'BP_StickerMasterSystem_C_BindInputReceiver::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_BindInputReceiver, K2Node_CreateDelegate_OutputDelegate_6) == 0x000068, "Member 'BP_StickerMasterSystem_C_BindInputReceiver::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_BindInputReceiver, K2Node_CreateDelegate_OutputDelegate_7) == 0x000078, "Member 'BP_StickerMasterSystem_C_BindInputReceiver::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_BindInputReceiver, K2Node_CreateDelegate_OutputDelegate_8) == 0x000088, "Member 'BP_StickerMasterSystem_C_BindInputReceiver::K2Node_CreateDelegate_OutputDelegate_8' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_BindInputReceiver, K2Node_CreateDelegate_OutputDelegate_9) == 0x000098, "Member 'BP_StickerMasterSystem_C_BindInputReceiver::K2Node_CreateDelegate_OutputDelegate_9' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_BindInputReceiver, K2Node_CreateDelegate_OutputDelegate_10) == 0x0000A8, "Member 'BP_StickerMasterSystem_C_BindInputReceiver::K2Node_CreateDelegate_OutputDelegate_10' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_BindInputReceiver, K2Node_CreateDelegate_OutputDelegate_11) == 0x0000B8, "Member 'BP_StickerMasterSystem_C_BindInputReceiver::K2Node_CreateDelegate_OutputDelegate_11' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_BindInputReceiver, K2Node_CreateDelegate_OutputDelegate_12) == 0x0000C8, "Member 'BP_StickerMasterSystem_C_BindInputReceiver::K2Node_CreateDelegate_OutputDelegate_12' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_BindInputReceiver;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.CancelEvent
 // 0x0068 (0x0068 - 0x0000)
@@ -75,11 +59,7 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FST_GarageData                         CallFunc_GetGarageData_OutGarageData;              // 0x0010(0x0058)(ZeroConstructor, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_CancelEvent) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_CancelEvent");
-static_assert(sizeof(BP_StickerMasterSystem_C_CancelEvent) == 0x000068, "Wrong size on BP_StickerMasterSystem_C_CancelEvent");
-static_assert(offsetof(BP_StickerMasterSystem_C_CancelEvent, Object) == 0x000000, "Member 'BP_StickerMasterSystem_C_CancelEvent::Object' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_CancelEvent, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'BP_StickerMasterSystem_C_CancelEvent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_CancelEvent, CallFunc_GetGarageData_OutGarageData) == 0x000010, "Member 'BP_StickerMasterSystem_C_CancelEvent::CallFunc_GetGarageData_OutGarageData' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_CancelEvent;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.ClampStickerLeft
 // 0x0028 (0x0028 - 0x0000)
@@ -103,22 +83,7 @@ public:
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_ClampStickerLeft) == 0x000004, "Wrong alignment on BP_StickerMasterSystem_C_ClampStickerLeft");
-static_assert(sizeof(BP_StickerMasterSystem_C_ClampStickerLeft) == 0x000028, "Wrong size on BP_StickerMasterSystem_C_ClampStickerLeft");
-static_assert(offsetof(BP_StickerMasterSystem_C_ClampStickerLeft, ContenderIndex) == 0x000000, "Member 'BP_StickerMasterSystem_C_ClampStickerLeft::ContenderIndex' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ClampStickerLeft, FirstIndex) == 0x000004, "Member 'BP_StickerMasterSystem_C_ClampStickerLeft::FirstIndex' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ClampStickerLeft, Temp_bool_Variable) == 0x000008, "Member 'BP_StickerMasterSystem_C_ClampStickerLeft::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ClampStickerLeft, CallFunc_Not_PreBool_ReturnValue) == 0x000009, "Member 'BP_StickerMasterSystem_C_ClampStickerLeft::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ClampStickerLeft, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00000A, "Member 'BP_StickerMasterSystem_C_ClampStickerLeft::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ClampStickerLeft, CallFunc_Subtract_IntInt_ReturnValue) == 0x00000C, "Member 'BP_StickerMasterSystem_C_ClampStickerLeft::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ClampStickerLeft, CallFunc_Less_IntInt_ReturnValue) == 0x000010, "Member 'BP_StickerMasterSystem_C_ClampStickerLeft::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ClampStickerLeft, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000011, "Member 'BP_StickerMasterSystem_C_ClampStickerLeft::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ClampStickerLeft, CallFunc_Array_Length_ReturnValue) == 0x000014, "Member 'BP_StickerMasterSystem_C_ClampStickerLeft::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ClampStickerLeft, Temp_int_Variable) == 0x000018, "Member 'BP_StickerMasterSystem_C_ClampStickerLeft::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ClampStickerLeft, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x00001C, "Member 'BP_StickerMasterSystem_C_ClampStickerLeft::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ClampStickerLeft, CallFunc_Add_IntInt_ReturnValue) == 0x000020, "Member 'BP_StickerMasterSystem_C_ClampStickerLeft::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ClampStickerLeft, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000024, "Member 'BP_StickerMasterSystem_C_ClampStickerLeft::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ClampStickerLeft, CallFunc_BooleanAND_ReturnValue) == 0x000025, "Member 'BP_StickerMasterSystem_C_ClampStickerLeft::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_ClampStickerLeft;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.ClampStickerRight
 // 0x0028 (0x0028 - 0x0000)
@@ -142,22 +107,7 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0026(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_ClampStickerRight) == 0x000004, "Wrong alignment on BP_StickerMasterSystem_C_ClampStickerRight");
-static_assert(sizeof(BP_StickerMasterSystem_C_ClampStickerRight) == 0x000028, "Wrong size on BP_StickerMasterSystem_C_ClampStickerRight");
-static_assert(offsetof(BP_StickerMasterSystem_C_ClampStickerRight, ContenderIndex) == 0x000000, "Member 'BP_StickerMasterSystem_C_ClampStickerRight::ContenderIndex' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ClampStickerRight, FirstIndex) == 0x000004, "Member 'BP_StickerMasterSystem_C_ClampStickerRight::FirstIndex' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ClampStickerRight, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000008, "Member 'BP_StickerMasterSystem_C_ClampStickerRight::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ClampStickerRight, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000009, "Member 'BP_StickerMasterSystem_C_ClampStickerRight::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ClampStickerRight, CallFunc_Array_Length_ReturnValue) == 0x00000C, "Member 'BP_StickerMasterSystem_C_ClampStickerRight::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ClampStickerRight, CallFunc_Subtract_IntInt_ReturnValue) == 0x000010, "Member 'BP_StickerMasterSystem_C_ClampStickerRight::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ClampStickerRight, CallFunc_Add_IntInt_ReturnValue) == 0x000014, "Member 'BP_StickerMasterSystem_C_ClampStickerRight::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ClampStickerRight, CallFunc_Greater_IntInt_ReturnValue) == 0x000018, "Member 'BP_StickerMasterSystem_C_ClampStickerRight::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ClampStickerRight, Temp_bool_Variable) == 0x000019, "Member 'BP_StickerMasterSystem_C_ClampStickerRight::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ClampStickerRight, Temp_int_Variable) == 0x00001C, "Member 'BP_StickerMasterSystem_C_ClampStickerRight::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ClampStickerRight, CallFunc_Add_IntInt_ReturnValue_1) == 0x000020, "Member 'BP_StickerMasterSystem_C_ClampStickerRight::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ClampStickerRight, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000024, "Member 'BP_StickerMasterSystem_C_ClampStickerRight::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ClampStickerRight, CallFunc_Not_PreBool_ReturnValue) == 0x000025, "Member 'BP_StickerMasterSystem_C_ClampStickerRight::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ClampStickerRight, CallFunc_BooleanAND_ReturnValue) == 0x000026, "Member 'BP_StickerMasterSystem_C_ClampStickerRight::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_ClampStickerRight;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.CollectMaterials
 // 0x0028 (0x0028 - 0x0000)
@@ -173,14 +123,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_CollectMaterials) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_CollectMaterials");
-static_assert(sizeof(BP_StickerMasterSystem_C_CollectMaterials) == 0x000028, "Wrong size on BP_StickerMasterSystem_C_CollectMaterials");
-static_assert(offsetof(BP_StickerMasterSystem_C_CollectMaterials, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'BP_StickerMasterSystem_C_CollectMaterials::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_CollectMaterials, CallFunc_GetMaterial_ReturnValue) == 0x000008, "Member 'BP_StickerMasterSystem_C_CollectMaterials::CallFunc_GetMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_CollectMaterials, CallFunc_IsValid_ReturnValue_1) == 0x000010, "Member 'BP_StickerMasterSystem_C_CollectMaterials::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_CollectMaterials, CallFunc_GetMaterial_ReturnValue_1) == 0x000018, "Member 'BP_StickerMasterSystem_C_CollectMaterials::CallFunc_GetMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_CollectMaterials, CallFunc_IsValid_ReturnValue_2) == 0x000020, "Member 'BP_StickerMasterSystem_C_CollectMaterials::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_CollectMaterials, CallFunc_IsValid_ReturnValue_3) == 0x000021, "Member 'BP_StickerMasterSystem_C_CollectMaterials::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_CollectMaterials;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.Collision Adjust
 // 0x00B8 (0x00B8 - 0x0000)
@@ -212,29 +155,7 @@ public:
 	bool                                          CallFunc_Less_DoubleDouble_ReturnValue;            // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00B5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_Collision_Adjust) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_Collision_Adjust");
-static_assert(sizeof(BP_StickerMasterSystem_C_Collision_Adjust) == 0x0000B8, "Wrong size on BP_StickerMasterSystem_C_Collision_Adjust");
-static_assert(offsetof(BP_StickerMasterSystem_C_Collision_Adjust, Temp_int_Array_Index_Variable) == 0x000000, "Member 'BP_StickerMasterSystem_C_Collision_Adjust::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_Collision_Adjust, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'BP_StickerMasterSystem_C_Collision_Adjust::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_Collision_Adjust, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000008, "Member 'BP_StickerMasterSystem_C_Collision_Adjust::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_Collision_Adjust, CallFunc_BreakVector_X) == 0x000020, "Member 'BP_StickerMasterSystem_C_Collision_Adjust::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_Collision_Adjust, CallFunc_BreakVector_Y) == 0x000028, "Member 'BP_StickerMasterSystem_C_Collision_Adjust::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_Collision_Adjust, CallFunc_BreakVector_Z) == 0x000030, "Member 'BP_StickerMasterSystem_C_Collision_Adjust::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_Collision_Adjust, CallFunc_Add_IntInt_ReturnValue) == 0x000038, "Member 'BP_StickerMasterSystem_C_Collision_Adjust::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_Collision_Adjust, CallFunc_MakeVector2D_ReturnValue) == 0x000040, "Member 'BP_StickerMasterSystem_C_Collision_Adjust::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_Collision_Adjust, CallFunc_Array_Get_Item) == 0x000050, "Member 'BP_StickerMasterSystem_C_Collision_Adjust::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_Collision_Adjust, CallFunc_IsValid_ReturnValue) == 0x000058, "Member 'BP_StickerMasterSystem_C_Collision_Adjust::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_Collision_Adjust, CallFunc_NotEqual_ObjectObject_ReturnValue) == 0x000059, "Member 'BP_StickerMasterSystem_C_Collision_Adjust::CallFunc_NotEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_Collision_Adjust, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000060, "Member 'BP_StickerMasterSystem_C_Collision_Adjust::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_Collision_Adjust, CallFunc_BreakVector_X_1) == 0x000078, "Member 'BP_StickerMasterSystem_C_Collision_Adjust::CallFunc_BreakVector_X_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_Collision_Adjust, CallFunc_BreakVector_Y_1) == 0x000080, "Member 'BP_StickerMasterSystem_C_Collision_Adjust::CallFunc_BreakVector_Y_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_Collision_Adjust, CallFunc_BreakVector_Z_1) == 0x000088, "Member 'BP_StickerMasterSystem_C_Collision_Adjust::CallFunc_BreakVector_Z_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_Collision_Adjust, CallFunc_Not_PreBool_ReturnValue) == 0x000090, "Member 'BP_StickerMasterSystem_C_Collision_Adjust::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_Collision_Adjust, CallFunc_MakeVector2D_ReturnValue_1) == 0x000098, "Member 'BP_StickerMasterSystem_C_Collision_Adjust::CallFunc_MakeVector2D_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_Collision_Adjust, CallFunc_Distance2D_ReturnValue) == 0x0000A8, "Member 'BP_StickerMasterSystem_C_Collision_Adjust::CallFunc_Distance2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_Collision_Adjust, CallFunc_Array_Length_ReturnValue) == 0x0000B0, "Member 'BP_StickerMasterSystem_C_Collision_Adjust::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_Collision_Adjust, CallFunc_Less_DoubleDouble_ReturnValue) == 0x0000B4, "Member 'BP_StickerMasterSystem_C_Collision_Adjust::CallFunc_Less_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_Collision_Adjust, CallFunc_Less_IntInt_ReturnValue) == 0x0000B5, "Member 'BP_StickerMasterSystem_C_Collision_Adjust::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_Collision_Adjust;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.ColorPicker_OnColorItemFocused
 // 0x0018 (0x0018 - 0x0000)
@@ -243,9 +164,7 @@ struct BP_StickerMasterSystem_C_ColorPicker_OnColorItemFocused final
 public:
 	struct FST_ColorDetailWindowColorItemData     InItemData;                                        // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_ColorPicker_OnColorItemFocused) == 0x000004, "Wrong alignment on BP_StickerMasterSystem_C_ColorPicker_OnColorItemFocused");
-static_assert(sizeof(BP_StickerMasterSystem_C_ColorPicker_OnColorItemFocused) == 0x000018, "Wrong size on BP_StickerMasterSystem_C_ColorPicker_OnColorItemFocused");
-static_assert(offsetof(BP_StickerMasterSystem_C_ColorPicker_OnColorItemFocused, InItemData) == 0x000000, "Member 'BP_StickerMasterSystem_C_ColorPicker_OnColorItemFocused::InItemData' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_ColorPicker_OnColorItemFocused;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.ColorPicker_OnColorItemSelected
 // 0x0018 (0x0018 - 0x0000)
@@ -254,9 +173,7 @@ struct BP_StickerMasterSystem_C_ColorPicker_OnColorItemSelected final
 public:
 	struct FST_ColorDetailWindowColorItemData     InItemData;                                        // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_ColorPicker_OnColorItemSelected) == 0x000004, "Wrong alignment on BP_StickerMasterSystem_C_ColorPicker_OnColorItemSelected");
-static_assert(sizeof(BP_StickerMasterSystem_C_ColorPicker_OnColorItemSelected) == 0x000018, "Wrong size on BP_StickerMasterSystem_C_ColorPicker_OnColorItemSelected");
-static_assert(offsetof(BP_StickerMasterSystem_C_ColorPicker_OnColorItemSelected, InItemData) == 0x000000, "Member 'BP_StickerMasterSystem_C_ColorPicker_OnColorItemSelected::InItemData' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_ColorPicker_OnColorItemSelected;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.ColorPicker_OnSurfaceItemFocused
 // 0x0020 (0x0020 - 0x0000)
@@ -265,9 +182,7 @@ struct BP_StickerMasterSystem_C_ColorPicker_OnSurfaceItemFocused final
 public:
 	struct FST_PullDownMenuItemData               InItemData;                                        // 0x0000(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_ColorPicker_OnSurfaceItemFocused) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_ColorPicker_OnSurfaceItemFocused");
-static_assert(sizeof(BP_StickerMasterSystem_C_ColorPicker_OnSurfaceItemFocused) == 0x000020, "Wrong size on BP_StickerMasterSystem_C_ColorPicker_OnSurfaceItemFocused");
-static_assert(offsetof(BP_StickerMasterSystem_C_ColorPicker_OnSurfaceItemFocused, InItemData) == 0x000000, "Member 'BP_StickerMasterSystem_C_ColorPicker_OnSurfaceItemFocused::InItemData' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_ColorPicker_OnSurfaceItemFocused;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.ColorPicker_OnSurfaceItemSelected
 // 0x0020 (0x0020 - 0x0000)
@@ -276,9 +191,7 @@ struct BP_StickerMasterSystem_C_ColorPicker_OnSurfaceItemSelected final
 public:
 	struct FST_PullDownMenuItemData               InItemData;                                        // 0x0000(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_ColorPicker_OnSurfaceItemSelected) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_ColorPicker_OnSurfaceItemSelected");
-static_assert(sizeof(BP_StickerMasterSystem_C_ColorPicker_OnSurfaceItemSelected) == 0x000020, "Wrong size on BP_StickerMasterSystem_C_ColorPicker_OnSurfaceItemSelected");
-static_assert(offsetof(BP_StickerMasterSystem_C_ColorPicker_OnSurfaceItemSelected, InItemData) == 0x000000, "Member 'BP_StickerMasterSystem_C_ColorPicker_OnSurfaceItemSelected::InItemData' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_ColorPicker_OnSurfaceItemSelected;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.ColorWindowEvent
 // 0x0008 (0x0008 - 0x0000)
@@ -287,9 +200,7 @@ struct BP_StickerMasterSystem_C_ColorWindowEvent final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_ColorWindowEvent) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_ColorWindowEvent");
-static_assert(sizeof(BP_StickerMasterSystem_C_ColorWindowEvent) == 0x000008, "Wrong size on BP_StickerMasterSystem_C_ColorWindowEvent");
-static_assert(offsetof(BP_StickerMasterSystem_C_ColorWindowEvent, Object) == 0x000000, "Member 'BP_StickerMasterSystem_C_ColorWindowEvent::Object' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_ColorWindowEvent;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.DecisionEvent
 // 0x0068 (0x0068 - 0x0000)
@@ -303,13 +214,7 @@ public:
 	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FST_GarageData                         CallFunc_GetGarageData_OutGarageData;              // 0x0010(0x0058)(ZeroConstructor, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_DecisionEvent) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_DecisionEvent");
-static_assert(sizeof(BP_StickerMasterSystem_C_DecisionEvent) == 0x000068, "Wrong size on BP_StickerMasterSystem_C_DecisionEvent");
-static_assert(offsetof(BP_StickerMasterSystem_C_DecisionEvent, Object) == 0x000000, "Member 'BP_StickerMasterSystem_C_DecisionEvent::Object' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_DecisionEvent, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'BP_StickerMasterSystem_C_DecisionEvent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_DecisionEvent, CallFunc_IsValid_ReturnValue_1) == 0x000009, "Member 'BP_StickerMasterSystem_C_DecisionEvent::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_DecisionEvent, CallFunc_BooleanOR_ReturnValue) == 0x00000A, "Member 'BP_StickerMasterSystem_C_DecisionEvent::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_DecisionEvent, CallFunc_GetGarageData_OutGarageData) == 0x000010, "Member 'BP_StickerMasterSystem_C_DecisionEvent::CallFunc_GetGarageData_OutGarageData' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_DecisionEvent;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.DeregistInputRecevier
 // 0x0010 (0x0010 - 0x0000)
@@ -321,12 +226,7 @@ public:
 	bool                                          CallFunc_UnregisterSingleSubMenu_ReturnValue;      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_DeregistInputRecevier) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_DeregistInputRecevier");
-static_assert(sizeof(BP_StickerMasterSystem_C_DeregistInputRecevier) == 0x000010, "Wrong size on BP_StickerMasterSystem_C_DeregistInputRecevier");
-static_assert(offsetof(BP_StickerMasterSystem_C_DeregistInputRecevier, CallFunc_GetAppPlayerController_ReturnValue) == 0x000000, "Member 'BP_StickerMasterSystem_C_DeregistInputRecevier::CallFunc_GetAppPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_DeregistInputRecevier, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'BP_StickerMasterSystem_C_DeregistInputRecevier::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_DeregistInputRecevier, CallFunc_UnregisterSingleSubMenu_ReturnValue) == 0x000009, "Member 'BP_StickerMasterSystem_C_DeregistInputRecevier::CallFunc_UnregisterSingleSubMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_DeregistInputRecevier, CallFunc_IsValid_ReturnValue_1) == 0x00000A, "Member 'BP_StickerMasterSystem_C_DeregistInputRecevier::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_DeregistInputRecevier;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.ExecuteUbergraph_BP_StickerMasterSystem
 // 0x0F50 (0x0F50 - 0x0000)
@@ -540,175 +440,7 @@ public:
 	uint8                                         Pad_F44[0x4];                                      // 0x0F44(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_NearlyEqual_FloatFloat_A_ImplicitCast;    // 0x0F48(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem) == 0x000010, "Wrong alignment on BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem");
-static_assert(sizeof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem) == 0x000F50, "Wrong size on BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, EntryPoint) == 0x000000, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_IsValid_ReturnValue_1) == 0x000005, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_GetPlayerController_ReturnValue) == 0x000008, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_WasInputKeyJustPressed_ReturnValue) == 0x000010, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_WasInputKeyJustPressed_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, K2Node_CustomEvent_MCSequence) == 0x000018, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::K2Node_CustomEvent_MCSequence' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, K2Node_CustomEvent_IsRear) == 0x000020, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::K2Node_CustomEvent_IsRear' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_IsValid_ReturnValue_2) == 0x000021, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, K2Node_CustomEvent_Object_10) == 0x000028, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::K2Node_CustomEvent_Object_10' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_IsValid_ReturnValue_3) == 0x000030, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, K2Node_CustomEvent_Object_9) == 0x000038, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::K2Node_CustomEvent_Object_9' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, K2Node_CustomEvent_Object_8) == 0x000040, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::K2Node_CustomEvent_Object_8' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_GetPlayerController_ReturnValue_1) == 0x000048, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_IsValid_ReturnValue_4) == 0x000050, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_IsValid_ReturnValue_5) == 0x000051, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_GetStickerUIData_OutStickerUIData) == 0x000058, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_GetStickerUIData_OutStickerUIData' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_GetPlayerController_ReturnValue_2) == 0x0000E0, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_GetPlayerController_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_GetMachineColorById_OutMachineColor) == 0x0000E8, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_GetMachineColorById_OutMachineColor' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_GetPlayerController_ReturnValue_3) == 0x0000F8, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_GetPlayerController_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_GetSelectedMachineCustomizeData_ReturnValue) == 0x000100, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_GetSelectedMachineCustomizeData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_WasInputKeyJustPressed_ReturnValue_1) == 0x000178, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_WasInputKeyJustPressed_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_MakeTransform_ReturnValue) == 0x000180, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0001E0, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_MakeTransform_ReturnValue_1) == 0x0001F0, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_FinishSpawningActor_ReturnValue) == 0x000250, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x000258, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x000260, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, K2Node_Event_DeltaSeconds) == 0x000268, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_MakeTransform_ReturnValue_2) == 0x000270, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_MakeTransform_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_MakeTransform_ReturnValue_3) == 0x0002D0, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_MakeTransform_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2) == 0x000330, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_FinishSpawningActor_ReturnValue_2) == 0x000338, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_FinishSpawningActor_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_IsPlaying_ReturnValue) == 0x000340, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_IsPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Stop_ReturnValue) == 0x000344, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Stop_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Stop_ReturnValue_1) == 0x000348, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Stop_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_IsPlaying_ReturnValue_1) == 0x00034C, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_IsPlaying_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Stop_ReturnValue_2) == 0x000350, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Stop_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_IsPlaying_ReturnValue_2) == 0x000354, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_IsPlaying_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, K2Node_Event_EndPlayReason) == 0x000355, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::K2Node_Event_EndPlayReason' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Array_Length_ReturnValue) == 0x000358, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, Temp_int_Loop_Counter_Variable) == 0x00035C, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_GetPlayerController_ReturnValue_4) == 0x000360, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_GetPlayerController_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Add_IntInt_ReturnValue) == 0x000368, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_WasInputKeyJustPressed_ReturnValue_2) == 0x00036C, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_WasInputKeyJustPressed_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, K2Node_CustomEvent_Object_7) == 0x000370, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::K2Node_CustomEvent_Object_7' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, K2Node_CustomEvent_Object_6) == 0x000378, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::K2Node_CustomEvent_Object_6' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, K2Node_CustomEvent_Object_5) == 0x000380, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::K2Node_CustomEvent_Object_5' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, K2Node_CustomEvent_Object_4) == 0x000388, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::K2Node_CustomEvent_Object_4' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, K2Node_CreateDelegate_OutputDelegate) == 0x000390, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x0003A0, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, K2Node_CreateDelegate_OutputDelegate_1) == 0x0003A8, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_K2_SetTimerDelegate_ReturnValue_1) == 0x0003B8, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_K2_SetTimerDelegate_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_BooleanAND_ReturnValue) == 0x0003C0, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_GetPlayerController_ReturnValue_5) == 0x0003C8, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_GetPlayerController_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_WasInputKeyJustPressed_ReturnValue_3) == 0x0003D0, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_WasInputKeyJustPressed_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_GetPlayerController_ReturnValue_6) == 0x0003D8, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_GetPlayerController_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_GetTurntableComponent_ReturnValue) == 0x0003E0, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_GetTurntableComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_GetCurrentTurntableData_ReturnValue) == 0x0003E8, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_GetCurrentTurntableData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_IsValid_ReturnValue_6) == 0x0003F8, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x000400, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Array_Length_ReturnValue_1) == 0x000408, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Array_Length_ReturnValue_2) == 0x00040C, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_GetActorScale3D_ReturnValue) == 0x000410, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_GetActorScale3D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Less_IntInt_ReturnValue) == 0x000428, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_BreakVector_X) == 0x000430, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_BreakVector_Y) == 0x000438, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_BreakVector_Z) == 0x000440, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_MakeVector2D_ReturnValue) == 0x000448, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000458, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Conv_Vector2dToString_ReturnValue) == 0x000470, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Conv_Vector2dToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_BreakVector_X_1) == 0x000480, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_BreakVector_X_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_BreakVector_Y_1) == 0x000488, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_BreakVector_Y_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_BreakVector_Z_1) == 0x000490, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_BreakVector_Z_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000498, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Add_DoubleDouble_ReturnValue_1) == 0x0004A0, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Add_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_MakeVector2D_ReturnValue_1) == 0x0004A8, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_MakeVector2D_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Conv_Vector2dToString_ReturnValue_1) == 0x0004B8, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Conv_Vector2dToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_K2_GetScalarParameterValue_ReturnValue) == 0x0004C8, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_K2_GetScalarParameterValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_NearlyEqual_FloatFloat_ReturnValue) == 0x0004CC, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_NearlyEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Array_Length_ReturnValue_3) == 0x0004D0, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_IsValid_ReturnValue_7) == 0x0004D4, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_IsValid_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Array_Length_ReturnValue_4) == 0x0004D8, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Array_Length_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, Temp_int_Array_Index_Variable) == 0x0004DC, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_SoundPlay_ReturnValue) == 0x0004E0, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Array_Get_Item) == 0x0004E8, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Conv_DoubleToString_ReturnValue) == 0x0004F0, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Conv_DoubleToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_IsValid_ReturnValue_8) == 0x000500, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_IsValid_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Stop_ReturnValue_3) == 0x000504, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Stop_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_IsPlaying_ReturnValue_3) == 0x000508, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_IsPlaying_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_GetGarageData_OutGarageData) == 0x000510, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_GetGarageData_OutGarageData' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_GetPlayerController_ReturnValue_7) == 0x000568, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_GetPlayerController_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_WasInputKeyJustPressed_ReturnValue_4) == 0x000570, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_WasInputKeyJustPressed_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000571, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_GetMachineColorById_OutMachineColor_1) == 0x000574, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_GetMachineColorById_OutMachineColor_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, K2Node_CustomEvent_Object_3) == 0x000588, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::K2Node_CustomEvent_Object_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, K2Node_CustomEvent_Object_2) == 0x000590, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::K2Node_CustomEvent_Object_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, K2Node_CustomEvent_Object_1) == 0x000598, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::K2Node_CustomEvent_Object_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, K2Node_CustomEvent_Object) == 0x0005A0, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::K2Node_CustomEvent_Object' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, Temp_int_Loop_Counter_Variable_1) == 0x0005A8, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Less_IntInt_ReturnValue_1) == 0x0005AC, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Add_IntInt_ReturnValue_1) == 0x0005B0, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, Temp_int_Array_Index_Variable_1) == 0x0005B4, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Array_Get_Item_1) == 0x0005B8, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, K2Node_MakeArray_Array) == 0x0005C0, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_MakeTransform_ReturnValue_4) == 0x0005D0, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_MakeTransform_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_MakeTransform_ReturnValue_5) == 0x000630, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_MakeTransform_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, K2Node_MakeArray_Array_1) == 0x000690, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3) == 0x0006A0, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_MakeTransform_ReturnValue_6) == 0x0006B0, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_MakeTransform_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_FinishSpawningActor_ReturnValue_3) == 0x000710, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_FinishSpawningActor_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_K2_SetActorRelativeTransform_SweepHitResult) == 0x000718, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_K2_SetActorRelativeTransform_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_K2_AttachToActor_ReturnValue) == 0x000810, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_K2_AttachToActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Array_Add_ReturnValue) == 0x000814, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_MakeTransform_ReturnValue_7) == 0x000820, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_MakeTransform_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_4) == 0x000880, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_FinishSpawningActor_ReturnValue_4) == 0x000888, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_FinishSpawningActor_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, K2Node_MakeArray_Array_2) == 0x000890, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::K2Node_MakeArray_Array_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_K2_SetActorRelativeTransform_SweepHitResult_1) == 0x0008A0, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_K2_SetActorRelativeTransform_SweepHitResult_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_K2_AttachToActor_ReturnValue_1) == 0x000998, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_K2_AttachToActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Array_Add_ReturnValue_1) == 0x00099C, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_MakeTransform_ReturnValue_8) == 0x0009A0, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_MakeTransform_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, K2Node_CustomEvent_InItemData) == 0x000A00, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::K2Node_CustomEvent_InItemData' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, K2Node_CustomEvent_InItemData_1) == 0x000A20, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::K2Node_CustomEvent_InItemData_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_MakeTransform_ReturnValue_9) == 0x000A40, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_MakeTransform_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_5) == 0x000AA0, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_K2_SetActorRelativeTransform_SweepHitResult_2) == 0x000AA8, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_K2_SetActorRelativeTransform_SweepHitResult_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_FinishSpawningActor_ReturnValue_5) == 0x000BA0, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_FinishSpawningActor_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_K2_SetActorRelativeTransform_SweepHitResult_3) == 0x000BA8, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_K2_SetActorRelativeTransform_SweepHitResult_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_K2_AttachToActor_ReturnValue_2) == 0x000CA0, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_K2_AttachToActor_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Array_Add_ReturnValue_2) == 0x000CA4, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Array_Add_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_K2_AttachToActor_ReturnValue_3) == 0x000CA8, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_K2_AttachToActor_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, K2Node_CustomEvent_InItemData_2) == 0x000CAC, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::K2Node_CustomEvent_InItemData_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, K2Node_MakeArray_Array_3) == 0x000CC8, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::K2Node_MakeArray_Array_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, K2Node_CustomEvent_InItemData_3) == 0x000CD8, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::K2Node_CustomEvent_InItemData_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_MakeTransform_ReturnValue_10) == 0x000CF0, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_MakeTransform_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_GetMachineColorById_OutMachineColor_2) == 0x000D50, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_GetMachineColorById_OutMachineColor_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, Temp_int_Loop_Counter_Variable_2) == 0x000D60, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Less_IntInt_ReturnValue_2) == 0x000D64, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Add_IntInt_ReturnValue_2) == 0x000D68, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_MakeTransform_ReturnValue_11) == 0x000D70, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_MakeTransform_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_6) == 0x000DD0, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_FinishSpawningActor_ReturnValue_6) == 0x000DD8, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_FinishSpawningActor_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, Temp_int_Array_Index_Variable_2) == 0x000DE0, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Array_Get_Item_2) == 0x000DE8, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_K2_SetActorRelativeTransform_SweepHitResult_4) == 0x000DF0, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_K2_SetActorRelativeTransform_SweepHitResult_4' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_K2_AttachToActor_ReturnValue_4) == 0x000EE8, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_K2_AttachToActor_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Array_Add_ReturnValue_3) == 0x000EEC, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Array_Add_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, Temp_int_Loop_Counter_Variable_3) == 0x000EF0, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::Temp_int_Loop_Counter_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, Temp_int_Array_Index_Variable_3) == 0x000EF4, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::Temp_int_Array_Index_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Array_Get_Item_3) == 0x000EF8, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Less_IntInt_ReturnValue_3) == 0x000F00, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Add_IntInt_ReturnValue_3) == 0x000F04, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, Temp_int_Array_Index_Variable_4) == 0x000F08, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::Temp_int_Array_Index_Variable_4' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, Temp_int_Loop_Counter_Variable_4) == 0x000F0C, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::Temp_int_Loop_Counter_Variable_4' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Array_Get_Item_4) == 0x000F10, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Less_IntInt_ReturnValue_4) == 0x000F18, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Less_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_Add_IntInt_ReturnValue_4) == 0x000F1C, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_IsShippingBuild_ReturnValue) == 0x000F20, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_IsShippingBuild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_IsShippingBuild_ReturnValue_1) == 0x000F21, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_IsShippingBuild_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_IsShippingBuild_ReturnValue_2) == 0x000F22, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_IsShippingBuild_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_IsShippingBuild_ReturnValue_3) == 0x000F23, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_IsShippingBuild_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_TranslateScaleSticker_InDeltaSeconds_ImplicitCast) == 0x000F28, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_TranslateScaleSticker_InDeltaSeconds_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_RotateSticker_InDeltaSeconds_ImplicitCast) == 0x000F30, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_RotateSticker_InDeltaSeconds_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_SetRenderTransformAngle_Angle_ImplicitCast) == 0x000F38, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_SetRenderTransformAngle_Angle_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_SetRenderTransformAngle_Angle_ImplicitCast_1) == 0x000F3C, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_SetRenderTransformAngle_Angle_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_SetRenderTransformAngle_Angle_ImplicitCast_2) == 0x000F40, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_SetRenderTransformAngle_Angle_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem, CallFunc_NearlyEqual_FloatFloat_A_ImplicitCast) == 0x000F48, "Member 'BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem::CallFunc_NearlyEqual_FloatFloat_A_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_ExecuteUbergraph_BP_StickerMasterSystem;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.FlipUVEvent
 // 0x0008 (0x0008 - 0x0000)
@@ -717,9 +449,7 @@ struct BP_StickerMasterSystem_C_FlipUVEvent final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_FlipUVEvent) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_FlipUVEvent");
-static_assert(sizeof(BP_StickerMasterSystem_C_FlipUVEvent) == 0x000008, "Wrong size on BP_StickerMasterSystem_C_FlipUVEvent");
-static_assert(offsetof(BP_StickerMasterSystem_C_FlipUVEvent, Object) == 0x000000, "Member 'BP_StickerMasterSystem_C_FlipUVEvent::Object' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_FlipUVEvent;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.GetCustomizeData
 // 0x0148 (0x0148 - 0x0000)
@@ -730,11 +460,7 @@ public:
 	struct FST_GarageData                         CallFunc_GetGarageData_OutGarageData;              // 0x0078(0x0058)(ZeroConstructor, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
 	struct FUserMachineCustomizeData              CallFunc_Get_Customize_Data_OutCustomizeData;      // 0x00D0(0x0078)()
 };
-static_assert(alignof(BP_StickerMasterSystem_C_GetCustomizeData) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_GetCustomizeData");
-static_assert(sizeof(BP_StickerMasterSystem_C_GetCustomizeData) == 0x000148, "Wrong size on BP_StickerMasterSystem_C_GetCustomizeData");
-static_assert(offsetof(BP_StickerMasterSystem_C_GetCustomizeData, OutCustomizeData) == 0x000000, "Member 'BP_StickerMasterSystem_C_GetCustomizeData::OutCustomizeData' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_GetCustomizeData, CallFunc_GetGarageData_OutGarageData) == 0x000078, "Member 'BP_StickerMasterSystem_C_GetCustomizeData::CallFunc_GetGarageData_OutGarageData' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_GetCustomizeData, CallFunc_Get_Customize_Data_OutCustomizeData) == 0x0000D0, "Member 'BP_StickerMasterSystem_C_GetCustomizeData::CallFunc_Get_Customize_Data_OutCustomizeData' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_GetCustomizeData;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.GetUVWH
 // 0x0070 (0x0070 - 0x0000)
@@ -756,22 +482,7 @@ public:
 	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue_4;      // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue_5;      // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_GetUVWH) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_GetUVWH");
-static_assert(sizeof(BP_StickerMasterSystem_C_GetUVWH) == 0x000070, "Wrong size on BP_StickerMasterSystem_C_GetUVWH");
-static_assert(offsetof(BP_StickerMasterSystem_C_GetUVWH, OutU) == 0x000000, "Member 'BP_StickerMasterSystem_C_GetUVWH::OutU' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_GetUVWH, OutV) == 0x000008, "Member 'BP_StickerMasterSystem_C_GetUVWH::OutV' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_GetUVWH, OutW) == 0x000010, "Member 'BP_StickerMasterSystem_C_GetUVWH::OutW' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_GetUVWH, OutH) == 0x000018, "Member 'BP_StickerMasterSystem_C_GetUVWH::OutH' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_GetUVWH, CallFunc_BreakVector2D_X) == 0x000020, "Member 'BP_StickerMasterSystem_C_GetUVWH::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_GetUVWH, CallFunc_BreakVector2D_Y) == 0x000028, "Member 'BP_StickerMasterSystem_C_GetUVWH::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_GetUVWH, CallFunc_BreakVector2D_X_1) == 0x000030, "Member 'BP_StickerMasterSystem_C_GetUVWH::CallFunc_BreakVector2D_X_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_GetUVWH, CallFunc_BreakVector2D_Y_1) == 0x000038, "Member 'BP_StickerMasterSystem_C_GetUVWH::CallFunc_BreakVector2D_Y_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_GetUVWH, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x000040, "Member 'BP_StickerMasterSystem_C_GetUVWH::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_GetUVWH, CallFunc_Subtract_DoubleDouble_ReturnValue_1) == 0x000048, "Member 'BP_StickerMasterSystem_C_GetUVWH::CallFunc_Subtract_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_GetUVWH, CallFunc_Subtract_DoubleDouble_ReturnValue_2) == 0x000050, "Member 'BP_StickerMasterSystem_C_GetUVWH::CallFunc_Subtract_DoubleDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_GetUVWH, CallFunc_Subtract_DoubleDouble_ReturnValue_3) == 0x000058, "Member 'BP_StickerMasterSystem_C_GetUVWH::CallFunc_Subtract_DoubleDouble_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_GetUVWH, CallFunc_Subtract_DoubleDouble_ReturnValue_4) == 0x000060, "Member 'BP_StickerMasterSystem_C_GetUVWH::CallFunc_Subtract_DoubleDouble_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_GetUVWH, CallFunc_Subtract_DoubleDouble_ReturnValue_5) == 0x000068, "Member 'BP_StickerMasterSystem_C_GetUVWH::CallFunc_Subtract_DoubleDouble_ReturnValue_5' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_GetUVWH;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.InitCamera
 // 0x0008 (0x0008 - 0x0000)
@@ -780,9 +491,7 @@ struct BP_StickerMasterSystem_C_InitCamera final
 public:
 	class ABP_GarageCamera_C*                     GarageCamera_0;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_InitCamera) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_InitCamera");
-static_assert(sizeof(BP_StickerMasterSystem_C_InitCamera) == 0x000008, "Wrong size on BP_StickerMasterSystem_C_InitCamera");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitCamera, GarageCamera_0) == 0x000000, "Member 'BP_StickerMasterSystem_C_InitCamera::GarageCamera_0' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_InitCamera;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.InitFrames
 // 0x0830 (0x0830 - 0x0000)
@@ -852,69 +561,7 @@ public:
 	class AUnionStickerFrame*                     CallFunc_Array_Get_Item_3;                         // 0x0728(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             CallFunc_K2_SetActorRelativeTransform_SweepHitResult_3; // 0x0730(0x00F8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_InitFrames) == 0x000010, "Wrong alignment on BP_StickerMasterSystem_C_InitFrames");
-static_assert(sizeof(BP_StickerMasterSystem_C_InitFrames) == 0x000830, "Wrong size on BP_StickerMasterSystem_C_InitFrames");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, TempBoxCenter) == 0x000000, "Member 'BP_StickerMasterSystem_C_InitFrames::TempBoxCenter' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, TempBoxSize) == 0x000010, "Member 'BP_StickerMasterSystem_C_InitFrames::TempBoxSize' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, TempBox) == 0x000020, "Member 'BP_StickerMasterSystem_C_InitFrames::TempBox' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_Subtract_Vector2DVector2D_ReturnValue) == 0x000048, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_Subtract_Vector2DVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_Subtract_Vector2DVector2D_ReturnValue_1) == 0x000058, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_Subtract_Vector2DVector2D_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_Subtract_Vector2DVector2D_ReturnValue_2) == 0x000068, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_Subtract_Vector2DVector2D_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_BreakVector2D_X) == 0x000078, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_BreakVector2D_Y) == 0x000080, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_BreakVector2D_X_1) == 0x000088, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_BreakVector2D_X_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_BreakVector2D_Y_1) == 0x000090, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_BreakVector2D_Y_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x000098, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_Divide_DoubleDouble_ReturnValue_1) == 0x0000A0, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_Divide_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_Add_DoubleDouble_ReturnValue) == 0x0000A8, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_MakeVector_ReturnValue) == 0x0000B0, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_MakeVector_ReturnValue_1) == 0x0000C8, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_MakeTransform_ReturnValue) == 0x0000E0, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_Array_Get_Item) == 0x000140, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_K2_SetActorRelativeTransform_SweepHitResult) == 0x000148, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_K2_SetActorRelativeTransform_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_BreakVector2D_X_2) == 0x000240, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_BreakVector2D_X_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_BreakVector2D_Y_2) == 0x000248, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_BreakVector2D_Y_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_Divide_DoubleDouble_ReturnValue_2) == 0x000250, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_Divide_DoubleDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_BreakVector2D_X_3) == 0x000258, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_BreakVector2D_X_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_BreakVector2D_Y_3) == 0x000260, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_BreakVector2D_Y_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_Divide_DoubleDouble_ReturnValue_3) == 0x000268, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_Divide_DoubleDouble_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x000270, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_MakeVector_ReturnValue_2) == 0x000278, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_MakeVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_MakeVector_ReturnValue_3) == 0x000290, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_MakeVector_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_MakeTransform_ReturnValue_1) == 0x0002B0, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_Array_Get_Item_1) == 0x000310, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_K2_SetActorRelativeTransform_SweepHitResult_1) == 0x000318, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_K2_SetActorRelativeTransform_SweepHitResult_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_BreakVector2D_X_4) == 0x000410, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_BreakVector2D_X_4' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_BreakVector2D_Y_4) == 0x000418, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_BreakVector2D_Y_4' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_Divide_DoubleDouble_ReturnValue_4) == 0x000420, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_Divide_DoubleDouble_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_BreakVector2D_X_5) == 0x000428, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_BreakVector2D_X_5' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_BreakVector2D_Y_5) == 0x000430, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_BreakVector2D_Y_5' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_MakeVector_ReturnValue_4) == 0x000438, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_MakeVector_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_Divide_DoubleDouble_ReturnValue_5) == 0x000450, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_Divide_DoubleDouble_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_Add_DoubleDouble_ReturnValue_1) == 0x000458, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_Add_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_Array_Get_Item_2) == 0x000460, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_MakeVector_ReturnValue_5) == 0x000468, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_MakeVector_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_MakeTransform_ReturnValue_2) == 0x000480, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_MakeTransform_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_BreakVector2D_X_6) == 0x0004E0, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_BreakVector2D_X_6' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_BreakVector2D_Y_6) == 0x0004E8, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_BreakVector2D_Y_6' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_K2_SetActorRelativeTransform_SweepHitResult_2) == 0x0004F0, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_K2_SetActorRelativeTransform_SweepHitResult_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_Divide_DoubleDouble_ReturnValue_6) == 0x0005E8, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_Divide_DoubleDouble_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_Divide_DoubleDouble_ReturnValue_7) == 0x0005F0, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_Divide_DoubleDouble_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_MakeVector_ReturnValue_6) == 0x0005F8, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_MakeVector_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_BreakVector2D_X_7) == 0x000610, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_BreakVector2D_X_7' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_BreakVector2D_Y_7) == 0x000618, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_BreakVector2D_Y_7' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_Subtract_DoubleDouble_ReturnValue_1) == 0x000620, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_Subtract_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_Add_Vector2DVector2D_ReturnValue) == 0x000628, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_Add_Vector2DVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_MakeVector_ReturnValue_7) == 0x000638, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_MakeVector_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_Divide_Vector2DVector2D_ReturnValue) == 0x000650, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_Divide_Vector2DVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_MakeTransform_ReturnValue_3) == 0x000660, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_MakeTransform_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_MakeVector2D_ReturnValue) == 0x0006C0, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_MakeVector2D_ReturnValue_1) == 0x0006D0, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_MakeVector2D_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_Multiply_Vector2DVector2D_ReturnValue) == 0x0006E0, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_Multiply_Vector2DVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_Multiply_Vector2DVector2D_ReturnValue_1) == 0x0006F0, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_Multiply_Vector2DVector2D_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_MakeBox2D_ReturnValue) == 0x000700, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_MakeBox2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_Array_Get_Item_3) == 0x000728, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrames, CallFunc_K2_SetActorRelativeTransform_SweepHitResult_3) == 0x000730, "Member 'BP_StickerMasterSystem_C_InitFrames::CallFunc_K2_SetActorRelativeTransform_SweepHitResult_3' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_InitFrames;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.InitFrontParts
 // 0x0040 (0x0040 - 0x0000)
@@ -932,18 +579,7 @@ public:
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_2; // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_3; // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_InitFrontParts) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_InitFrontParts");
-static_assert(sizeof(BP_StickerMasterSystem_C_InitFrontParts) == 0x000040, "Wrong size on BP_StickerMasterSystem_C_InitFrontParts");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrontParts, Mid) == 0x000000, "Member 'BP_StickerMasterSystem_C_InitFrontParts::Mid' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrontParts, CallFunc_GetUVWH_OutU) == 0x000008, "Member 'BP_StickerMasterSystem_C_InitFrontParts::CallFunc_GetUVWH_OutU' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrontParts, CallFunc_GetUVWH_OutV) == 0x000010, "Member 'BP_StickerMasterSystem_C_InitFrontParts::CallFunc_GetUVWH_OutV' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrontParts, CallFunc_GetUVWH_OutW) == 0x000018, "Member 'BP_StickerMasterSystem_C_InitFrontParts::CallFunc_GetUVWH_OutW' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrontParts, CallFunc_GetUVWH_OutH) == 0x000020, "Member 'BP_StickerMasterSystem_C_InitFrontParts::CallFunc_GetUVWH_OutH' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrontParts, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000028, "Member 'BP_StickerMasterSystem_C_InitFrontParts::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrontParts, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000030, "Member 'BP_StickerMasterSystem_C_InitFrontParts::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrontParts, CallFunc_SetScalarParameterValue_Value_ImplicitCast_1) == 0x000034, "Member 'BP_StickerMasterSystem_C_InitFrontParts::CallFunc_SetScalarParameterValue_Value_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrontParts, CallFunc_SetScalarParameterValue_Value_ImplicitCast_2) == 0x000038, "Member 'BP_StickerMasterSystem_C_InitFrontParts::CallFunc_SetScalarParameterValue_Value_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitFrontParts, CallFunc_SetScalarParameterValue_Value_ImplicitCast_3) == 0x00003C, "Member 'BP_StickerMasterSystem_C_InitFrontParts::CallFunc_SetScalarParameterValue_Value_ImplicitCast_3' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_InitFrontParts;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.Initialize
 // 0x0010 (0x0010 - 0x0000)
@@ -953,10 +589,7 @@ public:
 	class ABP_MachineCustomizeSequence_C*         MCSequence_0;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsRear;                                            // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_Initialize) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_Initialize");
-static_assert(sizeof(BP_StickerMasterSystem_C_Initialize) == 0x000010, "Wrong size on BP_StickerMasterSystem_C_Initialize");
-static_assert(offsetof(BP_StickerMasterSystem_C_Initialize, MCSequence_0) == 0x000000, "Member 'BP_StickerMasterSystem_C_Initialize::MCSequence_0' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_Initialize, IsRear) == 0x000008, "Member 'BP_StickerMasterSystem_C_Initialize::IsRear' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_Initialize;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.InitializeStickers
 // 0x00A0 (0x00A0 - 0x0000)
@@ -979,20 +612,7 @@ public:
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_InitializeStickers) == 0x000010, "Wrong alignment on BP_StickerMasterSystem_C_InitializeStickers");
-static_assert(sizeof(BP_StickerMasterSystem_C_InitializeStickers) == 0x0000A0, "Wrong size on BP_StickerMasterSystem_C_InitializeStickers");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitializeStickers, IsEditRear_0) == 0x000000, "Member 'BP_StickerMasterSystem_C_InitializeStickers::IsEditRear_0' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitializeStickers, Temp_int_Variable) == 0x000004, "Member 'BP_StickerMasterSystem_C_InitializeStickers::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitializeStickers, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000008, "Member 'BP_StickerMasterSystem_C_InitializeStickers::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitializeStickers, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000010, "Member 'BP_StickerMasterSystem_C_InitializeStickers::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitializeStickers, CallFunc_Add_IntInt_ReturnValue) == 0x000014, "Member 'BP_StickerMasterSystem_C_InitializeStickers::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitializeStickers, CallFunc_CreateDynamicMaterialInstance_ReturnValue_1) == 0x000018, "Member 'BP_StickerMasterSystem_C_InitializeStickers::CallFunc_CreateDynamicMaterialInstance_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitializeStickers, CallFunc_MakeTransform_ReturnValue) == 0x000020, "Member 'BP_StickerMasterSystem_C_InitializeStickers::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitializeStickers, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000080, "Member 'BP_StickerMasterSystem_C_InitializeStickers::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitializeStickers, CallFunc_FinishSpawningActor_ReturnValue) == 0x000088, "Member 'BP_StickerMasterSystem_C_InitializeStickers::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitializeStickers, CallFunc_K2_AttachToActor_ReturnValue) == 0x000090, "Member 'BP_StickerMasterSystem_C_InitializeStickers::CallFunc_K2_AttachToActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitializeStickers, CallFunc_Array_Add_ReturnValue) == 0x000094, "Member 'BP_StickerMasterSystem_C_InitializeStickers::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitializeStickers, CallFunc_Array_Add_ReturnValue_1) == 0x000098, "Member 'BP_StickerMasterSystem_C_InitializeStickers::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_InitializeStickers;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.InitRearParts
 // 0x0040 (0x0040 - 0x0000)
@@ -1010,18 +630,7 @@ public:
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_2; // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_3; // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_InitRearParts) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_InitRearParts");
-static_assert(sizeof(BP_StickerMasterSystem_C_InitRearParts) == 0x000040, "Wrong size on BP_StickerMasterSystem_C_InitRearParts");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitRearParts, Mid) == 0x000000, "Member 'BP_StickerMasterSystem_C_InitRearParts::Mid' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitRearParts, CallFunc_GetUVWH_OutU) == 0x000008, "Member 'BP_StickerMasterSystem_C_InitRearParts::CallFunc_GetUVWH_OutU' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitRearParts, CallFunc_GetUVWH_OutV) == 0x000010, "Member 'BP_StickerMasterSystem_C_InitRearParts::CallFunc_GetUVWH_OutV' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitRearParts, CallFunc_GetUVWH_OutW) == 0x000018, "Member 'BP_StickerMasterSystem_C_InitRearParts::CallFunc_GetUVWH_OutW' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitRearParts, CallFunc_GetUVWH_OutH) == 0x000020, "Member 'BP_StickerMasterSystem_C_InitRearParts::CallFunc_GetUVWH_OutH' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitRearParts, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000028, "Member 'BP_StickerMasterSystem_C_InitRearParts::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitRearParts, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000030, "Member 'BP_StickerMasterSystem_C_InitRearParts::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitRearParts, CallFunc_SetScalarParameterValue_Value_ImplicitCast_1) == 0x000034, "Member 'BP_StickerMasterSystem_C_InitRearParts::CallFunc_SetScalarParameterValue_Value_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitRearParts, CallFunc_SetScalarParameterValue_Value_ImplicitCast_2) == 0x000038, "Member 'BP_StickerMasterSystem_C_InitRearParts::CallFunc_SetScalarParameterValue_Value_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitRearParts, CallFunc_SetScalarParameterValue_Value_ImplicitCast_3) == 0x00003C, "Member 'BP_StickerMasterSystem_C_InitRearParts::CallFunc_SetScalarParameterValue_Value_ImplicitCast_3' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_InitRearParts;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.InitRenderTargetMid
 // 0x0018 (0x0018 - 0x0000)
@@ -1032,11 +641,7 @@ public:
 	double                                        CallFunc_SelectFloat_ReturnValue;                  // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_InitRenderTargetMid) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_InitRenderTargetMid");
-static_assert(sizeof(BP_StickerMasterSystem_C_InitRenderTargetMid) == 0x000018, "Wrong size on BP_StickerMasterSystem_C_InitRenderTargetMid");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitRenderTargetMid, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000000, "Member 'BP_StickerMasterSystem_C_InitRenderTargetMid::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitRenderTargetMid, CallFunc_SelectFloat_ReturnValue) == 0x000008, "Member 'BP_StickerMasterSystem_C_InitRenderTargetMid::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitRenderTargetMid, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000010, "Member 'BP_StickerMasterSystem_C_InitRenderTargetMid::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_InitRenderTargetMid;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.InitRenderTargetPlane
 // 0x0010 (0x0010 - 0x0000)
@@ -1046,10 +651,7 @@ public:
 	class UMaterialInstanceDynamic*               Mid;                                               // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_InitRenderTargetPlane) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_InitRenderTargetPlane");
-static_assert(sizeof(BP_StickerMasterSystem_C_InitRenderTargetPlane) == 0x000010, "Wrong size on BP_StickerMasterSystem_C_InitRenderTargetPlane");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitRenderTargetPlane, Mid) == 0x000000, "Member 'BP_StickerMasterSystem_C_InitRenderTargetPlane::Mid' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitRenderTargetPlane, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000008, "Member 'BP_StickerMasterSystem_C_InitRenderTargetPlane::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_InitRenderTargetPlane;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.InitStickers
 // 0x0310 (0x0310 - 0x0000)
@@ -1071,19 +673,7 @@ public:
 	float                                         CallFunc_MakeRotator_Pitch_ImplicitCast;           // 0x0308(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_MakeRotator_Pitch_ImplicitCast_1;         // 0x030C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_InitStickers) == 0x000010, "Wrong alignment on BP_StickerMasterSystem_C_InitStickers");
-static_assert(sizeof(BP_StickerMasterSystem_C_InitStickers) == 0x000310, "Wrong size on BP_StickerMasterSystem_C_InitStickers");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitStickers, CallFunc_MakeRotator_ReturnValue) == 0x000000, "Member 'BP_StickerMasterSystem_C_InitStickers::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitStickers, CallFunc_MakeTransform_ReturnValue) == 0x000020, "Member 'BP_StickerMasterSystem_C_InitStickers::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitStickers, CallFunc_K2_SetActorRelativeTransform_SweepHitResult) == 0x000080, "Member 'BP_StickerMasterSystem_C_InitStickers::CallFunc_K2_SetActorRelativeTransform_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitStickers, CallFunc_MakeRotator_ReturnValue_1) == 0x000178, "Member 'BP_StickerMasterSystem_C_InitStickers::CallFunc_MakeRotator_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitStickers, CallFunc_Array_Get_Item) == 0x000190, "Member 'BP_StickerMasterSystem_C_InitStickers::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitStickers, CallFunc_MakeTransform_ReturnValue_1) == 0x0001A0, "Member 'BP_StickerMasterSystem_C_InitStickers::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitStickers, CallFunc_K2_SetActorRelativeTransform_SweepHitResult_1) == 0x000200, "Member 'BP_StickerMasterSystem_C_InitStickers::CallFunc_K2_SetActorRelativeTransform_SweepHitResult_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitStickers, CallFunc_Subtract_IntInt_ReturnValue) == 0x0002F8, "Member 'BP_StickerMasterSystem_C_InitStickers::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitStickers, CallFunc_Array_Get_Item_1) == 0x000300, "Member 'BP_StickerMasterSystem_C_InitStickers::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitStickers, CallFunc_MakeRotator_Pitch_ImplicitCast) == 0x000308, "Member 'BP_StickerMasterSystem_C_InitStickers::CallFunc_MakeRotator_Pitch_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitStickers, CallFunc_MakeRotator_Pitch_ImplicitCast_1) == 0x00030C, "Member 'BP_StickerMasterSystem_C_InitStickers::CallFunc_MakeRotator_Pitch_ImplicitCast_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_InitStickers;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.InitUvPreview
 // 0x00D8 (0x00D8 - 0x0000)
@@ -1103,19 +693,7 @@ public:
 	class UTexture2D*                             CallFunc_GetFrontStickerUVTexture_ReturnValue;     // 0x00C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_InitUvPreview) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_InitUvPreview");
-static_assert(sizeof(BP_StickerMasterSystem_C_InitUvPreview) == 0x0000D8, "Wrong size on BP_StickerMasterSystem_C_InitUvPreview");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitUvPreview, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'BP_StickerMasterSystem_C_InitUvPreview::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitUvPreview, CallFunc_IsValid_ReturnValue_1) == 0x000001, "Member 'BP_StickerMasterSystem_C_InitUvPreview::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitUvPreview, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'BP_StickerMasterSystem_C_InitUvPreview::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitUvPreview, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x000010, "Member 'BP_StickerMasterSystem_C_InitUvPreview::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitUvPreview, CallFunc_GetSelectedMachineCustomizeData_ReturnValue) == 0x000018, "Member 'BP_StickerMasterSystem_C_InitUvPreview::CallFunc_GetSelectedMachineCustomizeData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitUvPreview, CallFunc_GetMachineColorById_OutMachineColor) == 0x000090, "Member 'BP_StickerMasterSystem_C_InitUvPreview::CallFunc_GetMachineColorById_OutMachineColor' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitUvPreview, CallFunc_GetMachineColorById_OutMachineColor_1) == 0x0000A0, "Member 'BP_StickerMasterSystem_C_InitUvPreview::CallFunc_GetMachineColorById_OutMachineColor_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitUvPreview, CallFunc_GetMachineColorById_OutMachineColor_2) == 0x0000B0, "Member 'BP_StickerMasterSystem_C_InitUvPreview::CallFunc_GetMachineColorById_OutMachineColor_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitUvPreview, CallFunc_GetRearStickerUVTexture_ReturnValue) == 0x0000C0, "Member 'BP_StickerMasterSystem_C_InitUvPreview::CallFunc_GetRearStickerUVTexture_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitUvPreview, CallFunc_GetFrontStickerUVTexture_ReturnValue) == 0x0000C8, "Member 'BP_StickerMasterSystem_C_InitUvPreview::CallFunc_GetFrontStickerUVTexture_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitUvPreview, CallFunc_IsValid_ReturnValue_2) == 0x0000D0, "Member 'BP_StickerMasterSystem_C_InitUvPreview::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_InitUvPreview;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.InitWidget
 // 0x0020 (0x0020 - 0x0000)
@@ -1127,12 +705,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UDummyWidget*                           CallFunc_Create_ReturnValue_2;                     // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_InitWidget) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_InitWidget");
-static_assert(sizeof(BP_StickerMasterSystem_C_InitWidget) == 0x000020, "Wrong size on BP_StickerMasterSystem_C_InitWidget");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitWidget, CallFunc_Create_ReturnValue) == 0x000000, "Member 'BP_StickerMasterSystem_C_InitWidget::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitWidget, CallFunc_Create_ReturnValue_1) == 0x000008, "Member 'BP_StickerMasterSystem_C_InitWidget::CallFunc_Create_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitWidget, CallFunc_PlayAnimation_ReturnValue) == 0x000010, "Member 'BP_StickerMasterSystem_C_InitWidget::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_InitWidget, CallFunc_Create_ReturnValue_2) == 0x000018, "Member 'BP_StickerMasterSystem_C_InitWidget::CallFunc_Create_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_InitWidget;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.JudgeStickerMaxScaleHorizontal
 // 0x0050 (0x0050 - 0x0000)
@@ -1149,16 +722,7 @@ public:
 	double                                        CallFunc_BreakVector_Z;                            // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue;    // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_JudgeStickerMaxScaleHorizontal) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_JudgeStickerMaxScaleHorizontal");
-static_assert(sizeof(BP_StickerMasterSystem_C_JudgeStickerMaxScaleHorizontal) == 0x000050, "Wrong size on BP_StickerMasterSystem_C_JudgeStickerMaxScaleHorizontal");
-static_assert(offsetof(BP_StickerMasterSystem_C_JudgeStickerMaxScaleHorizontal, Scale) == 0x000000, "Member 'BP_StickerMasterSystem_C_JudgeStickerMaxScaleHorizontal::Scale' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_JudgeStickerMaxScaleHorizontal, IsMaxScale) == 0x000008, "Member 'BP_StickerMasterSystem_C_JudgeStickerMaxScaleHorizontal::IsMaxScale' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_JudgeStickerMaxScaleHorizontal, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x000010, "Member 'BP_StickerMasterSystem_C_JudgeStickerMaxScaleHorizontal::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_JudgeStickerMaxScaleHorizontal, CallFunc_GetActorScale3D_ReturnValue) == 0x000018, "Member 'BP_StickerMasterSystem_C_JudgeStickerMaxScaleHorizontal::CallFunc_GetActorScale3D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_JudgeStickerMaxScaleHorizontal, CallFunc_BreakVector_X) == 0x000030, "Member 'BP_StickerMasterSystem_C_JudgeStickerMaxScaleHorizontal::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_JudgeStickerMaxScaleHorizontal, CallFunc_BreakVector_Y) == 0x000038, "Member 'BP_StickerMasterSystem_C_JudgeStickerMaxScaleHorizontal::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_JudgeStickerMaxScaleHorizontal, CallFunc_BreakVector_Z) == 0x000040, "Member 'BP_StickerMasterSystem_C_JudgeStickerMaxScaleHorizontal::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_JudgeStickerMaxScaleHorizontal, CallFunc_GreaterEqual_DoubleDouble_ReturnValue) == 0x000048, "Member 'BP_StickerMasterSystem_C_JudgeStickerMaxScaleHorizontal::CallFunc_GreaterEqual_DoubleDouble_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_JudgeStickerMaxScaleHorizontal;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.JudgeStickerMaxScaleVertical
 // 0x0050 (0x0050 - 0x0000)
@@ -1175,16 +739,7 @@ public:
 	double                                        CallFunc_BreakVector_Z;                            // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue;    // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_JudgeStickerMaxScaleVertical) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_JudgeStickerMaxScaleVertical");
-static_assert(sizeof(BP_StickerMasterSystem_C_JudgeStickerMaxScaleVertical) == 0x000050, "Wrong size on BP_StickerMasterSystem_C_JudgeStickerMaxScaleVertical");
-static_assert(offsetof(BP_StickerMasterSystem_C_JudgeStickerMaxScaleVertical, Scale) == 0x000000, "Member 'BP_StickerMasterSystem_C_JudgeStickerMaxScaleVertical::Scale' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_JudgeStickerMaxScaleVertical, IsMaxScale) == 0x000008, "Member 'BP_StickerMasterSystem_C_JudgeStickerMaxScaleVertical::IsMaxScale' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_JudgeStickerMaxScaleVertical, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x000010, "Member 'BP_StickerMasterSystem_C_JudgeStickerMaxScaleVertical::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_JudgeStickerMaxScaleVertical, CallFunc_GetActorScale3D_ReturnValue) == 0x000018, "Member 'BP_StickerMasterSystem_C_JudgeStickerMaxScaleVertical::CallFunc_GetActorScale3D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_JudgeStickerMaxScaleVertical, CallFunc_BreakVector_X) == 0x000030, "Member 'BP_StickerMasterSystem_C_JudgeStickerMaxScaleVertical::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_JudgeStickerMaxScaleVertical, CallFunc_BreakVector_Y) == 0x000038, "Member 'BP_StickerMasterSystem_C_JudgeStickerMaxScaleVertical::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_JudgeStickerMaxScaleVertical, CallFunc_BreakVector_Z) == 0x000040, "Member 'BP_StickerMasterSystem_C_JudgeStickerMaxScaleVertical::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_JudgeStickerMaxScaleVertical, CallFunc_GreaterEqual_DoubleDouble_ReturnValue) == 0x000048, "Member 'BP_StickerMasterSystem_C_JudgeStickerMaxScaleVertical::CallFunc_GreaterEqual_DoubleDouble_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_JudgeStickerMaxScaleVertical;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.JudgeStickerMinScaleHorizontal
 // 0x0050 (0x0050 - 0x0000)
@@ -1201,16 +756,7 @@ public:
 	double                                        CallFunc_BreakVector_Z;                            // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_DoubleDouble_ReturnValue;       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_JudgeStickerMinScaleHorizontal) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_JudgeStickerMinScaleHorizontal");
-static_assert(sizeof(BP_StickerMasterSystem_C_JudgeStickerMinScaleHorizontal) == 0x000050, "Wrong size on BP_StickerMasterSystem_C_JudgeStickerMinScaleHorizontal");
-static_assert(offsetof(BP_StickerMasterSystem_C_JudgeStickerMinScaleHorizontal, Scale) == 0x000000, "Member 'BP_StickerMasterSystem_C_JudgeStickerMinScaleHorizontal::Scale' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_JudgeStickerMinScaleHorizontal, IsMinScale) == 0x000008, "Member 'BP_StickerMasterSystem_C_JudgeStickerMinScaleHorizontal::IsMinScale' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_JudgeStickerMinScaleHorizontal, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000010, "Member 'BP_StickerMasterSystem_C_JudgeStickerMinScaleHorizontal::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_JudgeStickerMinScaleHorizontal, CallFunc_GetActorScale3D_ReturnValue) == 0x000018, "Member 'BP_StickerMasterSystem_C_JudgeStickerMinScaleHorizontal::CallFunc_GetActorScale3D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_JudgeStickerMinScaleHorizontal, CallFunc_BreakVector_X) == 0x000030, "Member 'BP_StickerMasterSystem_C_JudgeStickerMinScaleHorizontal::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_JudgeStickerMinScaleHorizontal, CallFunc_BreakVector_Y) == 0x000038, "Member 'BP_StickerMasterSystem_C_JudgeStickerMinScaleHorizontal::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_JudgeStickerMinScaleHorizontal, CallFunc_BreakVector_Z) == 0x000040, "Member 'BP_StickerMasterSystem_C_JudgeStickerMinScaleHorizontal::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_JudgeStickerMinScaleHorizontal, CallFunc_LessEqual_DoubleDouble_ReturnValue) == 0x000048, "Member 'BP_StickerMasterSystem_C_JudgeStickerMinScaleHorizontal::CallFunc_LessEqual_DoubleDouble_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_JudgeStickerMinScaleHorizontal;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.JudgeStickerMinScaleVertical
 // 0x0050 (0x0050 - 0x0000)
@@ -1227,16 +773,7 @@ public:
 	double                                        CallFunc_BreakVector_Z;                            // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_DoubleDouble_ReturnValue;       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_JudgeStickerMinScaleVertical) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_JudgeStickerMinScaleVertical");
-static_assert(sizeof(BP_StickerMasterSystem_C_JudgeStickerMinScaleVertical) == 0x000050, "Wrong size on BP_StickerMasterSystem_C_JudgeStickerMinScaleVertical");
-static_assert(offsetof(BP_StickerMasterSystem_C_JudgeStickerMinScaleVertical, Scale) == 0x000000, "Member 'BP_StickerMasterSystem_C_JudgeStickerMinScaleVertical::Scale' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_JudgeStickerMinScaleVertical, IsMinScale) == 0x000008, "Member 'BP_StickerMasterSystem_C_JudgeStickerMinScaleVertical::IsMinScale' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_JudgeStickerMinScaleVertical, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000010, "Member 'BP_StickerMasterSystem_C_JudgeStickerMinScaleVertical::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_JudgeStickerMinScaleVertical, CallFunc_GetActorScale3D_ReturnValue) == 0x000018, "Member 'BP_StickerMasterSystem_C_JudgeStickerMinScaleVertical::CallFunc_GetActorScale3D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_JudgeStickerMinScaleVertical, CallFunc_BreakVector_X) == 0x000030, "Member 'BP_StickerMasterSystem_C_JudgeStickerMinScaleVertical::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_JudgeStickerMinScaleVertical, CallFunc_BreakVector_Y) == 0x000038, "Member 'BP_StickerMasterSystem_C_JudgeStickerMinScaleVertical::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_JudgeStickerMinScaleVertical, CallFunc_BreakVector_Z) == 0x000040, "Member 'BP_StickerMasterSystem_C_JudgeStickerMinScaleVertical::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_JudgeStickerMinScaleVertical, CallFunc_LessEqual_DoubleDouble_ReturnValue) == 0x000048, "Member 'BP_StickerMasterSystem_C_JudgeStickerMinScaleVertical::CallFunc_LessEqual_DoubleDouble_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_JudgeStickerMinScaleVertical;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.LeftButtonPressed
 // 0x0008 (0x0008 - 0x0000)
@@ -1245,9 +782,7 @@ struct BP_StickerMasterSystem_C_LeftButtonPressed final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_LeftButtonPressed) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_LeftButtonPressed");
-static_assert(sizeof(BP_StickerMasterSystem_C_LeftButtonPressed) == 0x000008, "Wrong size on BP_StickerMasterSystem_C_LeftButtonPressed");
-static_assert(offsetof(BP_StickerMasterSystem_C_LeftButtonPressed, Object) == 0x000000, "Member 'BP_StickerMasterSystem_C_LeftButtonPressed::Object' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_LeftButtonPressed;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.LeftButtonReleased
 // 0x0008 (0x0008 - 0x0000)
@@ -1256,9 +791,7 @@ struct BP_StickerMasterSystem_C_LeftButtonReleased final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_LeftButtonReleased) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_LeftButtonReleased");
-static_assert(sizeof(BP_StickerMasterSystem_C_LeftButtonReleased) == 0x000008, "Wrong size on BP_StickerMasterSystem_C_LeftButtonReleased");
-static_assert(offsetof(BP_StickerMasterSystem_C_LeftButtonReleased, Object) == 0x000000, "Member 'BP_StickerMasterSystem_C_LeftButtonReleased::Object' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_LeftButtonReleased;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.LoadStickerParts
 // 0x0850 (0x0850 - 0x0000)
@@ -1365,94 +898,7 @@ public:
 	double                                        CallFunc_Multiply_DoubleDouble_B_ImplicitCast_6;   // 0x0840(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Multiply_DoubleDouble_B_ImplicitCast_7;   // 0x0848(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_LoadStickerParts) == 0x000010, "Wrong alignment on BP_StickerMasterSystem_C_LoadStickerParts");
-static_assert(sizeof(BP_StickerMasterSystem_C_LoadStickerParts) == 0x000850, "Wrong size on BP_StickerMasterSystem_C_LoadStickerParts");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, ScaleInverse) == 0x000000, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::ScaleInverse' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, TempEditStickerData) == 0x000008, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::TempEditStickerData' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_MakeRotator_ReturnValue) == 0x000018, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, Temp_int_Array_Index_Variable) == 0x000030, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_GetStickerBaseInitSize_ReturnValue) == 0x000034, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_GetStickerBaseInitSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_MakeVector_ReturnValue) == 0x000038, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_GetStickerBaseInitSize_ReturnValue_1) == 0x000050, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_GetStickerBaseInitSize_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_GetStickerBaseOutsideSize_ReturnValue) == 0x000054, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_GetStickerBaseOutsideSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_MakeVector_ReturnValue_1) == 0x000058, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_GetStickerBaseInsideSize_ReturnValue) == 0x000070, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_GetStickerBaseInsideSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_MakeRotator_ReturnValue_1) == 0x000078, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_MakeRotator_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_GetDefaultStickerColorId_ReturnValue) == 0x000090, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_GetDefaultStickerColorId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_GetMachineColorById_OutMachineColor) == 0x000094, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_GetMachineColorById_OutMachineColor' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_GetSelectedMachineCustomizeData_ReturnValue) == 0x0000A8, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_GetSelectedMachineCustomizeData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_GetRearStickerInitialLocation_ReturnValue) == 0x000120, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_GetRearStickerInitialLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_GetFrontStickerInitialLocation_ReturnValue) == 0x000138, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_GetFrontStickerInitialLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_BreakVector_X) == 0x000150, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_BreakVector_Y) == 0x000158, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_BreakVector_Z) == 0x000160, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_BreakVector_X_1) == 0x000168, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_BreakVector_X_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_BreakVector_Y_1) == 0x000170, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_BreakVector_Y_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_BreakVector_Z_1) == 0x000178, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_BreakVector_Z_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x000180, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_Subtract_DoubleDouble_ReturnValue_1) == 0x000188, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_Subtract_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_Subtract_DoubleDouble_ReturnValue_2) == 0x000190, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_Subtract_DoubleDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_Subtract_DoubleDouble_ReturnValue_3) == 0x000198, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_Subtract_DoubleDouble_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_MakeVector_ReturnValue_2) == 0x0001A0, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_MakeVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_MakeVector_ReturnValue_3) == 0x0001B8, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_MakeVector_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_MakeTransform_ReturnValue) == 0x0001D0, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_MakeTransform_ReturnValue_1) == 0x000230, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000290, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_GetMachineColorById_OutMachineColor_1) == 0x000294, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_GetMachineColorById_OutMachineColor_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_MakeVector_ReturnValue_4) == 0x0002A8, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_MakeVector_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_MakeRotator_ReturnValue_2) == 0x0002C0, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_MakeRotator_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_MakeVector_ReturnValue_5) == 0x0002D8, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_MakeVector_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_NotEqual_IntInt_ReturnValue) == 0x0002F0, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_MakeTransform_ReturnValue_2) == 0x000300, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_MakeTransform_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_GetStickerUIData_OutStickerUIData) == 0x000360, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_GetStickerUIData_OutStickerUIData' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_Array_Get_Item) == 0x0003E8, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x0003F0, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_EqualEqual_ObjectObject_ReturnValue_1) == 0x0003F1, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_EqualEqual_ObjectObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_EqualEqual_ObjectObject_ReturnValue_2) == 0x0003F2, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_EqualEqual_ObjectObject_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_K2_SetActorTransform_SweepHitResult) == 0x0003F8, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_K2_SetActorTransform_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_K2_SetActorTransform_ReturnValue) == 0x0004F0, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_K2_SetActorTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_K2_SetActorTransform_SweepHitResult_1) == 0x0004F8, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_K2_SetActorTransform_SweepHitResult_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_K2_SetActorTransform_ReturnValue_1) == 0x0005F0, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_K2_SetActorTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_K2_SetActorTransform_SweepHitResult_2) == 0x0005F8, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_K2_SetActorTransform_SweepHitResult_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_K2_SetActorTransform_ReturnValue_2) == 0x0006F0, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_K2_SetActorTransform_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue) == 0x0006F8, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_Array_Length_ReturnValue) == 0x000700, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, K2Node_DynamicCast_As_____2D) == 0x000708, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, K2Node_DynamicCast_bSuccess) == 0x000710, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, Temp_int_Loop_Counter_Variable) == 0x000714, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_CalculateStickerAspect_ReturnValue) == 0x000718, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_CalculateStickerAspect_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_BreakVector_X_2) == 0x000730, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_BreakVector_X_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_BreakVector_Y_2) == 0x000738, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_BreakVector_Y_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_BreakVector_Z_2) == 0x000740, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_BreakVector_Z_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_Less_IntInt_ReturnValue) == 0x000748, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000750, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_Multiply_DoubleDouble_ReturnValue_1) == 0x000758, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_Multiply_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_Multiply_DoubleDouble_ReturnValue_2) == 0x000760, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_Multiply_DoubleDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_Multiply_DoubleDouble_ReturnValue_3) == 0x000768, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_Multiply_DoubleDouble_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_Multiply_DoubleDouble_ReturnValue_4) == 0x000770, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_Multiply_DoubleDouble_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_Multiply_DoubleDouble_ReturnValue_5) == 0x000778, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_Multiply_DoubleDouble_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_Multiply_DoubleDouble_ReturnValue_6) == 0x000780, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_Multiply_DoubleDouble_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_MakeVector_ReturnValue_6) == 0x000788, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_MakeVector_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_Multiply_DoubleDouble_ReturnValue_7) == 0x0007A0, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_Multiply_DoubleDouble_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_MakeVector_ReturnValue_7) == 0x0007A8, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_MakeVector_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_Add_IntInt_ReturnValue) == 0x0007C0, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_MakeVector_X_ImplicitCast) == 0x0007C8, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_MakeVector_X_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_MakeVector_Y_ImplicitCast) == 0x0007D0, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_MakeVector_Y_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_MakeVector_X_ImplicitCast_1) == 0x0007D8, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_MakeVector_X_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_MakeVector_Y_ImplicitCast_1) == 0x0007E0, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_MakeVector_Y_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_Multiply_DoubleDouble_B_ImplicitCast) == 0x0007E8, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_Multiply_DoubleDouble_B_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_Multiply_DoubleDouble_B_ImplicitCast_1) == 0x0007F0, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_Multiply_DoubleDouble_B_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_Multiply_DoubleDouble_B_ImplicitCast_2) == 0x0007F8, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_Multiply_DoubleDouble_B_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_Multiply_DoubleDouble_B_ImplicitCast_3) == 0x000800, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_Multiply_DoubleDouble_B_ImplicitCast_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_MakeVector_X_ImplicitCast_2) == 0x000808, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_MakeVector_X_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_MakeVector_Z_ImplicitCast) == 0x000810, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_MakeVector_Z_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, K2Node_VariableSet_Rotation_ImplicitCast) == 0x000818, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::K2Node_VariableSet_Rotation_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_MakeVector_X_ImplicitCast_3) == 0x000820, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_MakeVector_X_ImplicitCast_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_Multiply_DoubleDouble_B_ImplicitCast_4) == 0x000828, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_Multiply_DoubleDouble_B_ImplicitCast_4' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_Multiply_DoubleDouble_B_ImplicitCast_5) == 0x000830, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_Multiply_DoubleDouble_B_ImplicitCast_5' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_MakeVector_Y_ImplicitCast_2) == 0x000838, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_MakeVector_Y_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_Multiply_DoubleDouble_B_ImplicitCast_6) == 0x000840, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_Multiply_DoubleDouble_B_ImplicitCast_6' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_LoadStickerParts, CallFunc_Multiply_DoubleDouble_B_ImplicitCast_7) == 0x000848, "Member 'BP_StickerMasterSystem_C_LoadStickerParts::CallFunc_Multiply_DoubleDouble_B_ImplicitCast_7' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_LoadStickerParts;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.OnLeftShoulderPressed
 // 0x0008 (0x0008 - 0x0000)
@@ -1461,9 +907,7 @@ struct BP_StickerMasterSystem_C_OnLeftShoulderPressed final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_OnLeftShoulderPressed) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_OnLeftShoulderPressed");
-static_assert(sizeof(BP_StickerMasterSystem_C_OnLeftShoulderPressed) == 0x000008, "Wrong size on BP_StickerMasterSystem_C_OnLeftShoulderPressed");
-static_assert(offsetof(BP_StickerMasterSystem_C_OnLeftShoulderPressed, Object) == 0x000000, "Member 'BP_StickerMasterSystem_C_OnLeftShoulderPressed::Object' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_OnLeftShoulderPressed;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.OnLeftShoulderReleased
 // 0x0008 (0x0008 - 0x0000)
@@ -1472,9 +916,7 @@ struct BP_StickerMasterSystem_C_OnLeftShoulderReleased final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_OnLeftShoulderReleased) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_OnLeftShoulderReleased");
-static_assert(sizeof(BP_StickerMasterSystem_C_OnLeftShoulderReleased) == 0x000008, "Wrong size on BP_StickerMasterSystem_C_OnLeftShoulderReleased");
-static_assert(offsetof(BP_StickerMasterSystem_C_OnLeftShoulderReleased, Object) == 0x000000, "Member 'BP_StickerMasterSystem_C_OnLeftShoulderReleased::Object' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_OnLeftShoulderReleased;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.OnRightShoulderPressed
 // 0x0008 (0x0008 - 0x0000)
@@ -1483,9 +925,7 @@ struct BP_StickerMasterSystem_C_OnRightShoulderPressed final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_OnRightShoulderPressed) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_OnRightShoulderPressed");
-static_assert(sizeof(BP_StickerMasterSystem_C_OnRightShoulderPressed) == 0x000008, "Wrong size on BP_StickerMasterSystem_C_OnRightShoulderPressed");
-static_assert(offsetof(BP_StickerMasterSystem_C_OnRightShoulderPressed, Object) == 0x000000, "Member 'BP_StickerMasterSystem_C_OnRightShoulderPressed::Object' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_OnRightShoulderPressed;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.OnRightShoulderReleased
 // 0x0008 (0x0008 - 0x0000)
@@ -1494,9 +934,7 @@ struct BP_StickerMasterSystem_C_OnRightShoulderReleased final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_OnRightShoulderReleased) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_OnRightShoulderReleased");
-static_assert(sizeof(BP_StickerMasterSystem_C_OnRightShoulderReleased) == 0x000008, "Wrong size on BP_StickerMasterSystem_C_OnRightShoulderReleased");
-static_assert(offsetof(BP_StickerMasterSystem_C_OnRightShoulderReleased, Object) == 0x000000, "Member 'BP_StickerMasterSystem_C_OnRightShoulderReleased::Object' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_OnRightShoulderReleased;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -1505,9 +943,7 @@ struct BP_StickerMasterSystem_C_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_ReceiveEndPlay) == 0x000001, "Wrong alignment on BP_StickerMasterSystem_C_ReceiveEndPlay");
-static_assert(sizeof(BP_StickerMasterSystem_C_ReceiveEndPlay) == 0x000001, "Wrong size on BP_StickerMasterSystem_C_ReceiveEndPlay");
-static_assert(offsetof(BP_StickerMasterSystem_C_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'BP_StickerMasterSystem_C_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_ReceiveEndPlay;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -1516,9 +952,7 @@ struct BP_StickerMasterSystem_C_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_ReceiveTick) == 0x000004, "Wrong alignment on BP_StickerMasterSystem_C_ReceiveTick");
-static_assert(sizeof(BP_StickerMasterSystem_C_ReceiveTick) == 0x000004, "Wrong size on BP_StickerMasterSystem_C_ReceiveTick");
-static_assert(offsetof(BP_StickerMasterSystem_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'BP_StickerMasterSystem_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_ReceiveTick;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.RegistInputReceiver
 // 0x0018 (0x0018 - 0x0000)
@@ -1530,11 +964,7 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AAppPlayerController*                   CallFunc_GetAppPlayerController_ReturnValue_1;     // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_RegistInputReceiver) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_RegistInputReceiver");
-static_assert(sizeof(BP_StickerMasterSystem_C_RegistInputReceiver) == 0x000018, "Wrong size on BP_StickerMasterSystem_C_RegistInputReceiver");
-static_assert(offsetof(BP_StickerMasterSystem_C_RegistInputReceiver, CallFunc_GetAppPlayerController_ReturnValue) == 0x000000, "Member 'BP_StickerMasterSystem_C_RegistInputReceiver::CallFunc_GetAppPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_RegistInputReceiver, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'BP_StickerMasterSystem_C_RegistInputReceiver::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_RegistInputReceiver, CallFunc_GetAppPlayerController_ReturnValue_1) == 0x000010, "Member 'BP_StickerMasterSystem_C_RegistInputReceiver::CallFunc_GetAppPlayerController_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_RegistInputReceiver;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.ResetControlledSticker
 // 0x0440 (0x0440 - 0x0000)
@@ -1571,35 +1001,7 @@ public:
 	double                                        CallFunc_MakeVector_Y_ImplicitCast_1;              // 0x0428(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_NearlyEqual_FloatFloat_A_ImplicitCast;    // 0x0430(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_ResetControlledSticker) == 0x000010, "Wrong alignment on BP_StickerMasterSystem_C_ResetControlledSticker");
-static_assert(sizeof(BP_StickerMasterSystem_C_ResetControlledSticker) == 0x000440, "Wrong size on BP_StickerMasterSystem_C_ResetControlledSticker");
-static_assert(offsetof(BP_StickerMasterSystem_C_ResetControlledSticker, CallFunc_GetStickerBaseInitSize_ReturnValue) == 0x000000, "Member 'BP_StickerMasterSystem_C_ResetControlledSticker::CallFunc_GetStickerBaseInitSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ResetControlledSticker, CallFunc_GetDefaultStickerColorId_ReturnValue) == 0x000004, "Member 'BP_StickerMasterSystem_C_ResetControlledSticker::CallFunc_GetDefaultStickerColorId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ResetControlledSticker, CallFunc_MakeVector_ReturnValue) == 0x000008, "Member 'BP_StickerMasterSystem_C_ResetControlledSticker::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ResetControlledSticker, CallFunc_GetMachineColorById_OutMachineColor) == 0x000020, "Member 'BP_StickerMasterSystem_C_ResetControlledSticker::CallFunc_GetMachineColorById_OutMachineColor' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ResetControlledSticker, CallFunc_MakeVector_ReturnValue_1) == 0x000030, "Member 'BP_StickerMasterSystem_C_ResetControlledSticker::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ResetControlledSticker, CallFunc_GetSelectedMachineCustomizeData_ReturnValue) == 0x000048, "Member 'BP_StickerMasterSystem_C_ResetControlledSticker::CallFunc_GetSelectedMachineCustomizeData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ResetControlledSticker, CallFunc_GetRearStickerInitialLocation_ReturnValue) == 0x0000C0, "Member 'BP_StickerMasterSystem_C_ResetControlledSticker::CallFunc_GetRearStickerInitialLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ResetControlledSticker, CallFunc_BreakVector_X) == 0x0000D8, "Member 'BP_StickerMasterSystem_C_ResetControlledSticker::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ResetControlledSticker, CallFunc_BreakVector_Y) == 0x0000E0, "Member 'BP_StickerMasterSystem_C_ResetControlledSticker::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ResetControlledSticker, CallFunc_BreakVector_Z) == 0x0000E8, "Member 'BP_StickerMasterSystem_C_ResetControlledSticker::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ResetControlledSticker, CallFunc_MakeVector_ReturnValue_2) == 0x0000F0, "Member 'BP_StickerMasterSystem_C_ResetControlledSticker::CallFunc_MakeVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ResetControlledSticker, CallFunc_K2_GetScalarParameterValue_ReturnValue) == 0x000108, "Member 'BP_StickerMasterSystem_C_ResetControlledSticker::CallFunc_K2_GetScalarParameterValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ResetControlledSticker, CallFunc_MakeTransform_ReturnValue) == 0x000110, "Member 'BP_StickerMasterSystem_C_ResetControlledSticker::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ResetControlledSticker, CallFunc_NearlyEqual_FloatFloat_ReturnValue) == 0x000170, "Member 'BP_StickerMasterSystem_C_ResetControlledSticker::CallFunc_NearlyEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ResetControlledSticker, CallFunc_GetFrontStickerInitialLocation_ReturnValue) == 0x000178, "Member 'BP_StickerMasterSystem_C_ResetControlledSticker::CallFunc_GetFrontStickerInitialLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ResetControlledSticker, CallFunc_BreakVector_X_1) == 0x000190, "Member 'BP_StickerMasterSystem_C_ResetControlledSticker::CallFunc_BreakVector_X_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ResetControlledSticker, CallFunc_BreakVector_Y_1) == 0x000198, "Member 'BP_StickerMasterSystem_C_ResetControlledSticker::CallFunc_BreakVector_Y_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ResetControlledSticker, CallFunc_BreakVector_Z_1) == 0x0001A0, "Member 'BP_StickerMasterSystem_C_ResetControlledSticker::CallFunc_BreakVector_Z_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ResetControlledSticker, CallFunc_MakeVector_ReturnValue_3) == 0x0001A8, "Member 'BP_StickerMasterSystem_C_ResetControlledSticker::CallFunc_MakeVector_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ResetControlledSticker, CallFunc_MakeTransform_ReturnValue_1) == 0x0001C0, "Member 'BP_StickerMasterSystem_C_ResetControlledSticker::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ResetControlledSticker, CallFunc_K2_SetActorRelativeTransform_SweepHitResult) == 0x000220, "Member 'BP_StickerMasterSystem_C_ResetControlledSticker::CallFunc_K2_SetActorRelativeTransform_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ResetControlledSticker, CallFunc_K2_SetActorRelativeTransform_SweepHitResult_1) == 0x000318, "Member 'BP_StickerMasterSystem_C_ResetControlledSticker::CallFunc_K2_SetActorRelativeTransform_SweepHitResult_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ResetControlledSticker, CallFunc_MakeVector_X_ImplicitCast) == 0x000410, "Member 'BP_StickerMasterSystem_C_ResetControlledSticker::CallFunc_MakeVector_X_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ResetControlledSticker, CallFunc_MakeVector_Y_ImplicitCast) == 0x000418, "Member 'BP_StickerMasterSystem_C_ResetControlledSticker::CallFunc_MakeVector_Y_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ResetControlledSticker, CallFunc_MakeVector_X_ImplicitCast_1) == 0x000420, "Member 'BP_StickerMasterSystem_C_ResetControlledSticker::CallFunc_MakeVector_X_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ResetControlledSticker, CallFunc_MakeVector_Y_ImplicitCast_1) == 0x000428, "Member 'BP_StickerMasterSystem_C_ResetControlledSticker::CallFunc_MakeVector_Y_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_ResetControlledSticker, CallFunc_NearlyEqual_FloatFloat_A_ImplicitCast) == 0x000430, "Member 'BP_StickerMasterSystem_C_ResetControlledSticker::CallFunc_NearlyEqual_FloatFloat_A_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_ResetControlledSticker;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.ResetStickerSystem
 // 0x0001 (0x0001 - 0x0000)
@@ -1608,9 +1010,7 @@ struct BP_StickerMasterSystem_C_ResetStickerSystem final
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_ResetStickerSystem) == 0x000001, "Wrong alignment on BP_StickerMasterSystem_C_ResetStickerSystem");
-static_assert(sizeof(BP_StickerMasterSystem_C_ResetStickerSystem) == 0x000001, "Wrong size on BP_StickerMasterSystem_C_ResetStickerSystem");
-static_assert(offsetof(BP_StickerMasterSystem_C_ResetStickerSystem, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'BP_StickerMasterSystem_C_ResetStickerSystem::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_ResetStickerSystem;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.RotateSticker
 // 0x0068 (0x0068 - 0x0000)
@@ -1629,18 +1029,7 @@ public:
 	float                                         CallFunc_MakeRotator_Pitch_ImplicitCast;           // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_MakeRotator_Pitch_ImplicitCast_1;         // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_RotateSticker) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_RotateSticker");
-static_assert(sizeof(BP_StickerMasterSystem_C_RotateSticker) == 0x000068, "Wrong size on BP_StickerMasterSystem_C_RotateSticker");
-static_assert(offsetof(BP_StickerMasterSystem_C_RotateSticker, InDeltaSeconds) == 0x000000, "Member 'BP_StickerMasterSystem_C_RotateSticker::InDeltaSeconds' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_RotateSticker, CallFunc_MakeRotator_ReturnValue) == 0x000008, "Member 'BP_StickerMasterSystem_C_RotateSticker::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_RotateSticker, CallFunc_MakeRotator_ReturnValue_1) == 0x000020, "Member 'BP_StickerMasterSystem_C_RotateSticker::CallFunc_MakeRotator_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_RotateSticker, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000038, "Member 'BP_StickerMasterSystem_C_RotateSticker::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_RotateSticker, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x000040, "Member 'BP_StickerMasterSystem_C_RotateSticker::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_RotateSticker, CallFunc_K2_SetActorRotation_ReturnValue) == 0x000048, "Member 'BP_StickerMasterSystem_C_RotateSticker::CallFunc_K2_SetActorRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_RotateSticker, CallFunc_Multiply_DoubleDouble_ReturnValue_1) == 0x000050, "Member 'BP_StickerMasterSystem_C_RotateSticker::CallFunc_Multiply_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_RotateSticker, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000058, "Member 'BP_StickerMasterSystem_C_RotateSticker::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_RotateSticker, CallFunc_MakeRotator_Pitch_ImplicitCast) == 0x000060, "Member 'BP_StickerMasterSystem_C_RotateSticker::CallFunc_MakeRotator_Pitch_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_RotateSticker, CallFunc_MakeRotator_Pitch_ImplicitCast_1) == 0x000064, "Member 'BP_StickerMasterSystem_C_RotateSticker::CallFunc_MakeRotator_Pitch_ImplicitCast_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_RotateSticker;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.SaveStickerParts
 // 0x03F8 (0x03F8 - 0x0000)
@@ -1689,43 +1078,7 @@ public:
 	float                                         K2Node_MakeStruct_ScaleX_ImplicitCast;             // 0x03F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_MakeStruct_ScaleY_ImplicitCast;             // 0x03F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_SaveStickerParts) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_SaveStickerParts");
-static_assert(sizeof(BP_StickerMasterSystem_C_SaveStickerParts) == 0x0003F8, "Wrong size on BP_StickerMasterSystem_C_SaveStickerParts");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, TempSlotIndex) == 0x000000, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::TempSlotIndex' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, TargetArray) == 0x000008, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::TargetArray' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, Temp_int_Variable) == 0x000018, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, Temp_byte_Variable) == 0x00001C, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, Temp_byte_Variable_1) == 0x00001D, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, CallFunc_GetCustomizeData_OutCustomizeData) == 0x000020, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::CallFunc_GetCustomizeData_OutCustomizeData' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, CallFunc_GetSelectedMachineId_ReturnValue) == 0x000098, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::CallFunc_GetSelectedMachineId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, CallFunc_GetCustomizeData_OutCustomizeData_1) == 0x0000A0, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::CallFunc_GetCustomizeData_OutCustomizeData_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, K2Node_SetFieldsInStruct_StructOut) == 0x000118, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::K2Node_SetFieldsInStruct_StructOut' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, K2Node_SetFieldsInStruct_StructOut_1) == 0x000138, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::K2Node_SetFieldsInStruct_StructOut_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, CallFunc_Subtract_IntInt_ReturnValue) == 0x0001B0, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, CallFunc_GetSelectedMachineId_ReturnValue_1) == 0x0001B4, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::CallFunc_GetSelectedMachineId_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, CallFunc_GetCustomizeData_OutCustomizeData_2) == 0x0001B8, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::CallFunc_GetCustomizeData_OutCustomizeData_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, CallFunc_GetCustomizeData_OutCustomizeData_3) == 0x000230, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::CallFunc_GetCustomizeData_OutCustomizeData_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, K2Node_SetFieldsInStruct_StructOut_2) == 0x0002A8, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::K2Node_SetFieldsInStruct_StructOut_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, K2Node_SetFieldsInStruct_StructOut_3) == 0x0002C8, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::K2Node_SetFieldsInStruct_StructOut_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, CallFunc_Array_Get_Item) == 0x000340, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000348, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, CallFunc_BreakRotator_Roll) == 0x000360, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::CallFunc_BreakRotator_Roll' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, CallFunc_BreakRotator_Pitch) == 0x000364, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::CallFunc_BreakRotator_Pitch' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, CallFunc_BreakRotator_Yaw) == 0x000368, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::CallFunc_BreakRotator_Yaw' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, CallFunc_BreakVector_X) == 0x000370, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, CallFunc_BreakVector_Y) == 0x000378, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, CallFunc_BreakVector_Z) == 0x000380, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, CallFunc_GetActorScale3D_ReturnValue) == 0x000388, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::CallFunc_GetActorScale3D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, CallFunc_BreakVector_X_1) == 0x0003A0, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::CallFunc_BreakVector_X_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, CallFunc_BreakVector_Y_1) == 0x0003A8, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::CallFunc_BreakVector_Y_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, CallFunc_BreakVector_Z_1) == 0x0003B0, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::CallFunc_BreakVector_Z_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, CallFunc_SelectInt_ReturnValue) == 0x0003B8, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, K2Node_Select_Default) == 0x0003BC, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, K2Node_MakeStruct_UserStickerData) == 0x0003C0, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::K2Node_MakeStruct_UserStickerData' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, K2Node_MakeStruct_LocationX_ImplicitCast) == 0x0003E8, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::K2Node_MakeStruct_LocationX_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, K2Node_MakeStruct_LocationY_ImplicitCast) == 0x0003EC, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::K2Node_MakeStruct_LocationY_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, K2Node_MakeStruct_ScaleX_ImplicitCast) == 0x0003F0, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::K2Node_MakeStruct_ScaleX_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SaveStickerParts, K2Node_MakeStruct_ScaleY_ImplicitCast) == 0x0003F4, "Member 'BP_StickerMasterSystem_C_SaveStickerParts::K2Node_MakeStruct_ScaleY_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_SaveStickerParts;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.SetHoverDataList
 // 0x0180 (0x0180 - 0x0000)
@@ -1746,19 +1099,7 @@ public:
 	struct FBox2D                                 CallFunc_GetFrontStickerMoveRange_ReturnValue;     // 0x0130(0x0028)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FBox2D                                 CallFunc_GetRearStickerMoveRange_ReturnValue;      // 0x0158(0x0028)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_SetHoverDataList) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_SetHoverDataList");
-static_assert(sizeof(BP_StickerMasterSystem_C_SetHoverDataList) == 0x000180, "Wrong size on BP_StickerMasterSystem_C_SetHoverDataList");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetHoverDataList, Racer) == 0x000000, "Member 'BP_StickerMasterSystem_C_SetHoverDataList::Racer' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetHoverDataList, MoveRange) == 0x000008, "Member 'BP_StickerMasterSystem_C_SetHoverDataList::MoveRange' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetHoverDataList, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'BP_StickerMasterSystem_C_SetHoverDataList::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetHoverDataList, CallFunc_GetMaterialIndex_ReturnValue) == 0x000034, "Member 'BP_StickerMasterSystem_C_SetHoverDataList::CallFunc_GetMaterialIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetHoverDataList, CallFunc_GetMaterialIndex_ReturnValue_1) == 0x000038, "Member 'BP_StickerMasterSystem_C_SetHoverDataList::CallFunc_GetMaterialIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetHoverDataList, CallFunc_GetMaterial_ReturnValue) == 0x000040, "Member 'BP_StickerMasterSystem_C_SetHoverDataList::CallFunc_GetMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetHoverDataList, CallFunc_GetMaterial_ReturnValue_1) == 0x000048, "Member 'BP_StickerMasterSystem_C_SetHoverDataList::CallFunc_GetMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetHoverDataList, K2Node_MakeStruct_ST_StickerMachineData) == 0x000050, "Member 'BP_StickerMasterSystem_C_SetHoverDataList::K2Node_MakeStruct_ST_StickerMachineData' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetHoverDataList, CallFunc_GetSelectedMachineCustomizeData_ReturnValue) == 0x0000B8, "Member 'BP_StickerMasterSystem_C_SetHoverDataList::CallFunc_GetSelectedMachineCustomizeData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetHoverDataList, CallFunc_GetFrontStickerMoveRange_ReturnValue) == 0x000130, "Member 'BP_StickerMasterSystem_C_SetHoverDataList::CallFunc_GetFrontStickerMoveRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetHoverDataList, CallFunc_GetRearStickerMoveRange_ReturnValue) == 0x000158, "Member 'BP_StickerMasterSystem_C_SetHoverDataList::CallFunc_GetRearStickerMoveRange_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_SetHoverDataList;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.SetMachineDataList
 // 0x0180 (0x0180 - 0x0000)
@@ -1779,19 +1120,7 @@ public:
 	struct FBox2D                                 CallFunc_GetFrontStickerMoveRange_ReturnValue;     // 0x0130(0x0028)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FBox2D                                 CallFunc_GetRearStickerMoveRange_ReturnValue;      // 0x0158(0x0028)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_SetMachineDataList) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_SetMachineDataList");
-static_assert(sizeof(BP_StickerMasterSystem_C_SetMachineDataList) == 0x000180, "Wrong size on BP_StickerMasterSystem_C_SetMachineDataList");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetMachineDataList, Racer) == 0x000000, "Member 'BP_StickerMasterSystem_C_SetMachineDataList::Racer' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetMachineDataList, MoveRange) == 0x000008, "Member 'BP_StickerMasterSystem_C_SetMachineDataList::MoveRange' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetMachineDataList, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'BP_StickerMasterSystem_C_SetMachineDataList::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetMachineDataList, CallFunc_GetMaterialIndex_ReturnValue) == 0x000034, "Member 'BP_StickerMasterSystem_C_SetMachineDataList::CallFunc_GetMaterialIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetMachineDataList, CallFunc_GetMaterialIndex_ReturnValue_1) == 0x000038, "Member 'BP_StickerMasterSystem_C_SetMachineDataList::CallFunc_GetMaterialIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetMachineDataList, CallFunc_GetMaterial_ReturnValue) == 0x000040, "Member 'BP_StickerMasterSystem_C_SetMachineDataList::CallFunc_GetMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetMachineDataList, CallFunc_GetMaterial_ReturnValue_1) == 0x000048, "Member 'BP_StickerMasterSystem_C_SetMachineDataList::CallFunc_GetMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetMachineDataList, K2Node_MakeStruct_ST_StickerMachineData) == 0x000050, "Member 'BP_StickerMasterSystem_C_SetMachineDataList::K2Node_MakeStruct_ST_StickerMachineData' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetMachineDataList, CallFunc_GetSelectedMachineCustomizeData_ReturnValue) == 0x0000B8, "Member 'BP_StickerMasterSystem_C_SetMachineDataList::CallFunc_GetSelectedMachineCustomizeData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetMachineDataList, CallFunc_GetFrontStickerMoveRange_ReturnValue) == 0x000130, "Member 'BP_StickerMasterSystem_C_SetMachineDataList::CallFunc_GetFrontStickerMoveRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetMachineDataList, CallFunc_GetRearStickerMoveRange_ReturnValue) == 0x000158, "Member 'BP_StickerMasterSystem_C_SetMachineDataList::CallFunc_GetRearStickerMoveRange_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_SetMachineDataList;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.SetupColorPicker
 // 0x0140 (0x0140 - 0x0000)
@@ -1828,34 +1157,7 @@ public:
 	TDelegate<void(const struct FST_ColorDetailWindowColorItemData& InItemData)> K2Node_CreateDelegate_OutputDelegate_3; // 0x0120(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(const struct FST_ColorDetailWindowColorItemData& InItemData)> K2Node_CreateDelegate_OutputDelegate_4; // 0x0130(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_SetupColorPicker) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_SetupColorPicker");
-static_assert(sizeof(BP_StickerMasterSystem_C_SetupColorPicker) == 0x000140, "Wrong size on BP_StickerMasterSystem_C_SetupColorPicker");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetupColorPicker, ColorPickerData) == 0x000000, "Member 'BP_StickerMasterSystem_C_SetupColorPicker::ColorPickerData' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetupColorPicker, Temp_int_Loop_Counter_Variable) == 0x000038, "Member 'BP_StickerMasterSystem_C_SetupColorPicker::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetupColorPicker, CallFunc_Add_IntInt_ReturnValue) == 0x00003C, "Member 'BP_StickerMasterSystem_C_SetupColorPicker::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetupColorPicker, Temp_int_Array_Index_Variable) == 0x000040, "Member 'BP_StickerMasterSystem_C_SetupColorPicker::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetupColorPicker, Temp_int_Array_Index_Variable_1) == 0x000044, "Member 'BP_StickerMasterSystem_C_SetupColorPicker::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetupColorPicker, Temp_int_Loop_Counter_Variable_1) == 0x000048, "Member 'BP_StickerMasterSystem_C_SetupColorPicker::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetupColorPicker, CallFunc_Add_IntInt_ReturnValue_1) == 0x00004C, "Member 'BP_StickerMasterSystem_C_SetupColorPicker::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetupColorPicker, CallFunc_GetMachineSurfaceSelectDataList_OutMachineSurfaceSelectDataList) == 0x000050, "Member 'BP_StickerMasterSystem_C_SetupColorPicker::CallFunc_GetMachineSurfaceSelectDataList_OutMachineSurfaceSelectDataList' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetupColorPicker, CallFunc_Array_Get_Item) == 0x000060, "Member 'BP_StickerMasterSystem_C_SetupColorPicker::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetupColorPicker, CallFunc_Array_Length_ReturnValue) == 0x000078, "Member 'BP_StickerMasterSystem_C_SetupColorPicker::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetupColorPicker, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00007C, "Member 'BP_StickerMasterSystem_C_SetupColorPicker::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetupColorPicker, CallFunc_Less_IntInt_ReturnValue) == 0x00007D, "Member 'BP_StickerMasterSystem_C_SetupColorPicker::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetupColorPicker, K2Node_MakeStruct_ST_PullDownMenuItemData) == 0x000080, "Member 'BP_StickerMasterSystem_C_SetupColorPicker::K2Node_MakeStruct_ST_PullDownMenuItemData' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetupColorPicker, CallFunc_Array_Add_ReturnValue) == 0x0000A0, "Member 'BP_StickerMasterSystem_C_SetupColorPicker::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetupColorPicker, CallFunc_GetMachineColorSelectDataList_OutMachineColorSelectDataList) == 0x0000A8, "Member 'BP_StickerMasterSystem_C_SetupColorPicker::CallFunc_GetMachineColorSelectDataList_OutMachineColorSelectDataList' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetupColorPicker, CallFunc_Array_Get_Item_1) == 0x0000B8, "Member 'BP_StickerMasterSystem_C_SetupColorPicker::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetupColorPicker, CallFunc_Array_Length_ReturnValue_1) == 0x0000CC, "Member 'BP_StickerMasterSystem_C_SetupColorPicker::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetupColorPicker, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000D0, "Member 'BP_StickerMasterSystem_C_SetupColorPicker::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetupColorPicker, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x0000D1, "Member 'BP_StickerMasterSystem_C_SetupColorPicker::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetupColorPicker, K2Node_MakeStruct_ST_ColorDetailWindowColorItemData) == 0x0000D4, "Member 'BP_StickerMasterSystem_C_SetupColorPicker::K2Node_MakeStruct_ST_ColorDetailWindowColorItemData' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetupColorPicker, K2Node_CreateDelegate_OutputDelegate) == 0x0000EC, "Member 'BP_StickerMasterSystem_C_SetupColorPicker::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetupColorPicker, CallFunc_Array_Add_ReturnValue_1) == 0x0000FC, "Member 'BP_StickerMasterSystem_C_SetupColorPicker::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetupColorPicker, K2Node_CreateDelegate_OutputDelegate_1) == 0x000100, "Member 'BP_StickerMasterSystem_C_SetupColorPicker::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetupColorPicker, K2Node_CreateDelegate_OutputDelegate_2) == 0x000110, "Member 'BP_StickerMasterSystem_C_SetupColorPicker::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetupColorPicker, K2Node_CreateDelegate_OutputDelegate_3) == 0x000120, "Member 'BP_StickerMasterSystem_C_SetupColorPicker::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetupColorPicker, K2Node_CreateDelegate_OutputDelegate_4) == 0x000130, "Member 'BP_StickerMasterSystem_C_SetupColorPicker::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_SetupColorPicker;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.SetupInput
 // 0x0010 (0x0010 - 0x0000)
@@ -1865,10 +1167,7 @@ public:
 	class UMenuInputRecieveObject*                CallFunc_SpawnObject_ReturnValue;                  // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UMenuInputRecieveObject*                CallFunc_SpawnObject_ReturnValue_1;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_SetupInput) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_SetupInput");
-static_assert(sizeof(BP_StickerMasterSystem_C_SetupInput) == 0x000010, "Wrong size on BP_StickerMasterSystem_C_SetupInput");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetupInput, CallFunc_SpawnObject_ReturnValue) == 0x000000, "Member 'BP_StickerMasterSystem_C_SetupInput::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetupInput, CallFunc_SpawnObject_ReturnValue_1) == 0x000008, "Member 'BP_StickerMasterSystem_C_SetupInput::CallFunc_SpawnObject_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_SetupInput;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.SetupStickerSystem
 // 0x0030 (0x0030 - 0x0000)
@@ -1880,11 +1179,7 @@ public:
 	struct FUnionStickerSystemData                K2Node_MakeStruct_UnionStickerSystemData;          // 0x0008(0x0020)(NoDestructor)
 	class UUnionStickerSystem*                    CallFunc_SpawnObject_ReturnValue;                  // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_SetupStickerSystem) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_SetupStickerSystem");
-static_assert(sizeof(BP_StickerMasterSystem_C_SetupStickerSystem) == 0x000030, "Wrong size on BP_StickerMasterSystem_C_SetupStickerSystem");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetupStickerSystem, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'BP_StickerMasterSystem_C_SetupStickerSystem::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetupStickerSystem, K2Node_MakeStruct_UnionStickerSystemData) == 0x000008, "Member 'BP_StickerMasterSystem_C_SetupStickerSystem::K2Node_MakeStruct_UnionStickerSystemData' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_SetupStickerSystem, CallFunc_SpawnObject_ReturnValue) == 0x000028, "Member 'BP_StickerMasterSystem_C_SetupStickerSystem::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_SetupStickerSystem;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.SpecialEvent
 // 0x0008 (0x0008 - 0x0000)
@@ -1893,9 +1188,7 @@ struct BP_StickerMasterSystem_C_SpecialEvent final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_SpecialEvent) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_SpecialEvent");
-static_assert(sizeof(BP_StickerMasterSystem_C_SpecialEvent) == 0x000008, "Wrong size on BP_StickerMasterSystem_C_SpecialEvent");
-static_assert(offsetof(BP_StickerMasterSystem_C_SpecialEvent, Object) == 0x000000, "Member 'BP_StickerMasterSystem_C_SpecialEvent::Object' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_SpecialEvent;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.StickerMoveEvent
 // 0x0020 (0x0020 - 0x0000)
@@ -1906,11 +1199,7 @@ public:
 	struct FVector2D                              Value;                                             // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         cnt;                                               // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_StickerMoveEvent) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_StickerMoveEvent");
-static_assert(sizeof(BP_StickerMasterSystem_C_StickerMoveEvent) == 0x000020, "Wrong size on BP_StickerMasterSystem_C_StickerMoveEvent");
-static_assert(offsetof(BP_StickerMasterSystem_C_StickerMoveEvent, Object) == 0x000000, "Member 'BP_StickerMasterSystem_C_StickerMoveEvent::Object' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_StickerMoveEvent, Value) == 0x000008, "Member 'BP_StickerMasterSystem_C_StickerMoveEvent::Value' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_StickerMoveEvent, cnt) == 0x000018, "Member 'BP_StickerMasterSystem_C_StickerMoveEvent::cnt' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_StickerMoveEvent;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.StopSE
 // 0x0018 (0x0018 - 0x0000)
@@ -1927,16 +1216,7 @@ public:
 	bool                                          CallFunc_IsPlaying_ReturnValue_2;                  // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsPlaying_ReturnValue_3;                  // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_StopSE) == 0x000004, "Wrong alignment on BP_StickerMasterSystem_C_StopSE");
-static_assert(sizeof(BP_StickerMasterSystem_C_StopSE) == 0x000018, "Wrong size on BP_StickerMasterSystem_C_StopSE");
-static_assert(offsetof(BP_StickerMasterSystem_C_StopSE, CallFunc_Stop_ReturnValue) == 0x000000, "Member 'BP_StickerMasterSystem_C_StopSE::CallFunc_Stop_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_StopSE, CallFunc_Stop_ReturnValue_1) == 0x000004, "Member 'BP_StickerMasterSystem_C_StopSE::CallFunc_Stop_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_StopSE, CallFunc_IsPlaying_ReturnValue) == 0x000008, "Member 'BP_StickerMasterSystem_C_StopSE::CallFunc_IsPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_StopSE, CallFunc_IsPlaying_ReturnValue_1) == 0x000009, "Member 'BP_StickerMasterSystem_C_StopSE::CallFunc_IsPlaying_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_StopSE, CallFunc_Stop_ReturnValue_2) == 0x00000C, "Member 'BP_StickerMasterSystem_C_StopSE::CallFunc_Stop_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_StopSE, CallFunc_Stop_ReturnValue_3) == 0x000010, "Member 'BP_StickerMasterSystem_C_StopSE::CallFunc_Stop_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_StopSE, CallFunc_IsPlaying_ReturnValue_2) == 0x000014, "Member 'BP_StickerMasterSystem_C_StopSE::CallFunc_IsPlaying_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_StopSE, CallFunc_IsPlaying_ReturnValue_3) == 0x000015, "Member 'BP_StickerMasterSystem_C_StopSE::CallFunc_IsPlaying_ReturnValue_3' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_StopSE;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.TopButtonPressed
 // 0x0008 (0x0008 - 0x0000)
@@ -1945,9 +1225,7 @@ struct BP_StickerMasterSystem_C_TopButtonPressed final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_TopButtonPressed) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_TopButtonPressed");
-static_assert(sizeof(BP_StickerMasterSystem_C_TopButtonPressed) == 0x000008, "Wrong size on BP_StickerMasterSystem_C_TopButtonPressed");
-static_assert(offsetof(BP_StickerMasterSystem_C_TopButtonPressed, Object) == 0x000000, "Member 'BP_StickerMasterSystem_C_TopButtonPressed::Object' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_TopButtonPressed;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.TopButtonReleased
 // 0x0008 (0x0008 - 0x0000)
@@ -1956,9 +1234,7 @@ struct BP_StickerMasterSystem_C_TopButtonReleased final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_TopButtonReleased) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_TopButtonReleased");
-static_assert(sizeof(BP_StickerMasterSystem_C_TopButtonReleased) == 0x000008, "Wrong size on BP_StickerMasterSystem_C_TopButtonReleased");
-static_assert(offsetof(BP_StickerMasterSystem_C_TopButtonReleased, Object) == 0x000000, "Member 'BP_StickerMasterSystem_C_TopButtonReleased::Object' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_TopButtonReleased;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.TranslateScaleSticker
 // 0x0610 (0x0610 - 0x0000)
@@ -2147,163 +1423,7 @@ public:
 	double                                        K2Node_VariableSet_MoveXThreshold_ImplicitCast;    // 0x0600(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RotateAngleAxis_AngleDeg_ImplicitCast;    // 0x0608(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_TranslateScaleSticker) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_TranslateScaleSticker");
-static_assert(sizeof(BP_StickerMasterSystem_C_TranslateScaleSticker) == 0x000610, "Wrong size on BP_StickerMasterSystem_C_TranslateScaleSticker");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, InDeltaSeconds) == 0x000000, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::InDeltaSeconds' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, bDownScaleHorizontal) == 0x000008, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::bDownScaleHorizontal' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, bUpScaleHorizontal) == 0x000009, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::bUpScaleHorizontal' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, bDownScaleVertical) == 0x00000A, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::bDownScaleVertical' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, bUpScaleVertical) == 0x00000B, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::bUpScaleVertical' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, MoveYThreshold) == 0x000010, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::MoveYThreshold' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, MoveXThreshold) == 0x000018, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::MoveXThreshold' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, NormalizedInputVal) == 0x000020, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::NormalizedInputVal' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, InputVal) == 0x000038, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::InputVal' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_JudgeStickerMinScaleHorizontal_IsMinScale) == 0x000050, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_JudgeStickerMinScaleHorizontal_IsMinScale' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_JudgeStickerMaxScaleHorizontal_IsMaxScale) == 0x000051, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_JudgeStickerMaxScaleHorizontal_IsMaxScale' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_JudgeStickerMinScaleVertical_IsMinScale) == 0x000052, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_JudgeStickerMinScaleVertical_IsMinScale' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_JudgeStickerMaxScaleVertical_IsMaxScale) == 0x000053, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_JudgeStickerMaxScaleVertical_IsMaxScale' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BooleanAND_ReturnValue) == 0x000054, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BooleanAND_ReturnValue_1) == 0x000055, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BooleanAND_ReturnValue_2) == 0x000056, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BooleanAND_ReturnValue_3) == 0x000057, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Stop_ReturnValue) == 0x000058, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Stop_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_IsPlaying_ReturnValue) == 0x00005C, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_IsPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Stop_ReturnValue_1) == 0x000060, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Stop_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Stop_ReturnValue_2) == 0x000064, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Stop_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_IsPlaying_ReturnValue_1) == 0x000068, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_IsPlaying_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_IsPlaying_ReturnValue_2) == 0x000069, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_IsPlaying_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Stop_ReturnValue_3) == 0x00006C, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Stop_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Stop_ReturnValue_4) == 0x000070, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Stop_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_IsPlaying_ReturnValue_3) == 0x000074, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_IsPlaying_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_IsPlaying_ReturnValue_4) == 0x000075, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_IsPlaying_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Stop_ReturnValue_5) == 0x000078, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Stop_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_IsPlaying_ReturnValue_5) == 0x00007C, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_IsPlaying_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000080, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Stop_ReturnValue_6) == 0x000098, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Stop_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_IsPlaying_ReturnValue_6) == 0x00009C, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_IsPlaying_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_JudgeStickerMinScaleHorizontal_IsMinScale_1) == 0x00009D, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_JudgeStickerMinScaleHorizontal_IsMinScale_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_JudgeStickerMaxScaleHorizontal_IsMaxScale_1) == 0x00009E, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_JudgeStickerMaxScaleHorizontal_IsMaxScale_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_SoundPlay_ReturnValue) == 0x0000A0, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_IsPlaying_ReturnValue_7) == 0x0000A4, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_IsPlaying_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_SoundPlay_ReturnValue_1) == 0x0000A8, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Stop_ReturnValue_7) == 0x0000AC, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Stop_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_IsPlaying_ReturnValue_8) == 0x0000B0, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_IsPlaying_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_IsPlaying_ReturnValue_9) == 0x0000B1, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_IsPlaying_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Stop_ReturnValue_8) == 0x0000B4, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Stop_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Stop_ReturnValue_9) == 0x0000B8, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Stop_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Stop_ReturnValue_10) == 0x0000BC, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Stop_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_IsPlaying_ReturnValue_10) == 0x0000C0, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_IsPlaying_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_IsPlaying_ReturnValue_11) == 0x0000C1, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_IsPlaying_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_JudgeStickerMaxScaleHorizontal_IsMaxScale_2) == 0x0000C2, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_JudgeStickerMaxScaleHorizontal_IsMaxScale_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_IsPlaying_ReturnValue_12) == 0x0000C3, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_IsPlaying_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_JudgeStickerMinScaleHorizontal_IsMinScale_2) == 0x0000C4, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_JudgeStickerMinScaleHorizontal_IsMinScale_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_JudgeStickerMaxScaleHorizontal_IsMaxScale_3) == 0x0000C5, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_JudgeStickerMaxScaleHorizontal_IsMaxScale_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Stop_ReturnValue_11) == 0x0000C8, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Stop_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_IsPlaying_ReturnValue_13) == 0x0000CC, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_IsPlaying_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_JudgeStickerMinScaleHorizontal_IsMinScale_3) == 0x0000CD, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_JudgeStickerMinScaleHorizontal_IsMinScale_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_JudgeStickerMaxScaleHorizontal_IsMaxScale_4) == 0x0000CE, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_JudgeStickerMaxScaleHorizontal_IsMaxScale_4' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_SoundPlay_ReturnValue_2) == 0x0000D0, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_SoundPlay_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_JudgeStickerMinScaleVertical_IsMinScale_1) == 0x0000D4, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_JudgeStickerMinScaleVertical_IsMinScale_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_IsPlaying_ReturnValue_14) == 0x0000D5, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_IsPlaying_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_JudgeStickerMaxScaleVertical_IsMaxScale_1) == 0x0000D6, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_JudgeStickerMaxScaleVertical_IsMaxScale_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Stop_ReturnValue_12) == 0x0000D8, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Stop_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Stop_ReturnValue_13) == 0x0000DC, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Stop_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_IsPlaying_ReturnValue_15) == 0x0000E0, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_IsPlaying_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Stop_ReturnValue_14) == 0x0000E4, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Stop_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_IsPlaying_ReturnValue_16) == 0x0000E8, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_IsPlaying_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_SoundPlay_ReturnValue_3) == 0x0000EC, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_SoundPlay_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_IsPlaying_ReturnValue_17) == 0x0000F0, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_IsPlaying_ReturnValue_17' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_MakeVector_ReturnValue) == 0x0000F8, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BreakVector2D_X) == 0x000110, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BreakVector2D_Y) == 0x000118, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Abs_ReturnValue) == 0x000120, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Abs_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_EvaluateCurveTableRow_OutResult) == 0x000128, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_EvaluateCurveTableRow_OutResult' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_EvaluateCurveTableRow_OutXY) == 0x00012C, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_EvaluateCurveTableRow_OutXY' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, K2Node_SwitchEnum_CmpSuccess) == 0x000130, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Abs_ReturnValue_1) == 0x000138, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Abs_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_EvaluateCurveTableRow_OutResult_1) == 0x000140, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_EvaluateCurveTableRow_OutResult_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_EvaluateCurveTableRow_OutXY_1) == 0x000144, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_EvaluateCurveTableRow_OutXY_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, K2Node_SwitchEnum_CmpSuccess_1) == 0x000148, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Conv_Vector2DToVector_ReturnValue) == 0x000150, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Conv_Vector2DToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_GetTurntableComponent_ReturnValue) == 0x000168, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_GetTurntableComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_GetCurrentTurntableData_ReturnValue) == 0x000170, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_GetCurrentTurntableData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000180, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000188, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_GetActorScale3D_ReturnValue) == 0x000190, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_GetActorScale3D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BreakVector_X) == 0x0001A8, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BreakVector_Y) == 0x0001B0, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BreakVector_Z) == 0x0001B8, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BreakVector_X_1) == 0x0001C0, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BreakVector_X_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BreakVector_Y_1) == 0x0001C8, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BreakVector_Y_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BreakVector_Z_1) == 0x0001D0, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BreakVector_Z_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Greater_DoubleDouble_ReturnValue) == 0x0001D8, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Greater_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Add_DoubleDouble_ReturnValue_1) == 0x0001E0, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Add_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_FMin_ReturnValue) == 0x0001E8, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_FMin_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_MakeVector_ReturnValue_1) == 0x0001F0, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_MakeVector_ReturnValue_2) == 0x000208, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_MakeVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Multiply_DoubleDouble_ReturnValue_1) == 0x000220, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Multiply_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_GetActorScale3D_ReturnValue_1) == 0x000228, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_GetActorScale3D_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BreakVector_X_2) == 0x000240, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BreakVector_X_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BreakVector_Y_2) == 0x000248, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BreakVector_Y_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BreakVector_Z_2) == 0x000250, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BreakVector_Z_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BreakVector_X_3) == 0x000258, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BreakVector_X_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BreakVector_Y_3) == 0x000260, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BreakVector_Y_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BreakVector_Z_3) == 0x000268, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BreakVector_Z_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x000270, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Less_DoubleDouble_ReturnValue) == 0x000278, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Less_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_FMax_ReturnValue) == 0x000280, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_FMax_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_MakeVector_ReturnValue_3) == 0x000288, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_MakeVector_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_MakeVector_ReturnValue_4) == 0x0002A0, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_MakeVector_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Multiply_DoubleDouble_ReturnValue_2) == 0x0002B8, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Multiply_DoubleDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_GetActorScale3D_ReturnValue_2) == 0x0002C0, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_GetActorScale3D_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BreakVector_X_4) == 0x0002D8, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BreakVector_X_4' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BreakVector_Y_4) == 0x0002E0, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BreakVector_Y_4' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BreakVector_Z_4) == 0x0002E8, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BreakVector_Z_4' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BreakVector_X_5) == 0x0002F0, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BreakVector_X_5' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BreakVector_Y_5) == 0x0002F8, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BreakVector_Y_5' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BreakVector_Z_5) == 0x000300, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BreakVector_Z_5' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Add_DoubleDouble_ReturnValue_2) == 0x000308, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Add_DoubleDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Greater_DoubleDouble_ReturnValue_1) == 0x000310, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Greater_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_FMin_ReturnValue_1) == 0x000318, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_FMin_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_MakeVector_ReturnValue_5) == 0x000320, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_MakeVector_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_MakeVector_ReturnValue_6) == 0x000338, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_MakeVector_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Multiply_DoubleDouble_ReturnValue_3) == 0x000350, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Multiply_DoubleDouble_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_GetActorScale3D_ReturnValue_3) == 0x000358, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_GetActorScale3D_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BreakVector_X_6) == 0x000370, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BreakVector_X_6' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BreakVector_Y_6) == 0x000378, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BreakVector_Y_6' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BreakVector_Z_6) == 0x000380, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BreakVector_Z_6' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BreakVector_X_7) == 0x000388, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BreakVector_X_7' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BreakVector_Y_7) == 0x000390, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BreakVector_Y_7' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BreakVector_Z_7) == 0x000398, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BreakVector_Z_7' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Subtract_DoubleDouble_ReturnValue_1) == 0x0003A0, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Subtract_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Less_DoubleDouble_ReturnValue_1) == 0x0003A8, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Less_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_FMax_ReturnValue_1) == 0x0003B0, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_FMax_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_MakeVector_ReturnValue_7) == 0x0003B8, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_MakeVector_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_MakeVector_ReturnValue_8) == 0x0003D0, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_MakeVector_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Normal_ReturnValue) == 0x0003E8, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Normal_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_VSize_ReturnValue) == 0x000400, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Less_DoubleDouble_ReturnValue_2) == 0x000408, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Less_DoubleDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BooleanOR_ReturnValue) == 0x000409, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Conv_DoubleToVector_ReturnValue) == 0x000410, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Conv_DoubleToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Conv_DoubleToVector_ReturnValue_1) == 0x000428, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Conv_DoubleToVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Multiply_VectorVector_ReturnValue) == 0x000440, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Multiply_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Multiply_VectorVector_ReturnValue_1) == 0x000458, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Multiply_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_RotateAngleAxis_ReturnValue) == 0x000470, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_RotateAngleAxis_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Multiply_VectorVector_ReturnValue_2) == 0x000488, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Multiply_VectorVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BreakVector_X_8) == 0x0004A0, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BreakVector_X_8' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BreakVector_Y_8) == 0x0004A8, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BreakVector_Y_8' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BreakVector_Z_8) == 0x0004B0, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BreakVector_Z_8' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_MakeVector_ReturnValue_9) == 0x0004B8, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_MakeVector_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_Add_VectorVector_ReturnValue) == 0x0004D0, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BooleanOR_ReturnValue_1) == 0x0004E8, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_K2_SetActorLocation_SweepHitResult) == 0x0004F0, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_K2_SetActorLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_K2_SetActorLocation_ReturnValue) == 0x0005E8, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_K2_SetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_BooleanOR_ReturnValue_2) == 0x0005E9, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_EvaluateCurveTableRow_InXY_ImplicitCast) == 0x0005EC, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_EvaluateCurveTableRow_InXY_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, K2Node_VariableSet_MoveYThreshold_ImplicitCast) == 0x0005F0, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::K2Node_VariableSet_MoveYThreshold_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_EvaluateCurveTableRow_InXY_ImplicitCast_1) == 0x0005F8, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_EvaluateCurveTableRow_InXY_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, K2Node_VariableSet_MoveXThreshold_ImplicitCast) == 0x000600, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::K2Node_VariableSet_MoveXThreshold_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TranslateScaleSticker, CallFunc_RotateAngleAxis_AngleDeg_ImplicitCast) == 0x000608, "Member 'BP_StickerMasterSystem_C_TranslateScaleSticker::CallFunc_RotateAngleAxis_AngleDeg_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_TranslateScaleSticker;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.TurnStickerFrameVisible
 // 0x0010 (0x0010 - 0x0000)
@@ -2314,11 +1434,7 @@ public:
 	bool                                          IsVisible;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_TurnStickerFrameVisible) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_TurnStickerFrameVisible");
-static_assert(sizeof(BP_StickerMasterSystem_C_TurnStickerFrameVisible) == 0x000010, "Wrong size on BP_StickerMasterSystem_C_TurnStickerFrameVisible");
-static_assert(offsetof(BP_StickerMasterSystem_C_TurnStickerFrameVisible, Sticker) == 0x000000, "Member 'BP_StickerMasterSystem_C_TurnStickerFrameVisible::Sticker' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TurnStickerFrameVisible, IsVisible) == 0x000008, "Member 'BP_StickerMasterSystem_C_TurnStickerFrameVisible::IsVisible' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_TurnStickerFrameVisible, CallFunc_IsValid_ReturnValue) == 0x000009, "Member 'BP_StickerMasterSystem_C_TurnStickerFrameVisible::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_TurnStickerFrameVisible;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.UnbindInputReceiver
 // 0x0002 (0x0002 - 0x0000)
@@ -2328,10 +1444,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_UnbindInputReceiver) == 0x000001, "Wrong alignment on BP_StickerMasterSystem_C_UnbindInputReceiver");
-static_assert(sizeof(BP_StickerMasterSystem_C_UnbindInputReceiver) == 0x000002, "Wrong size on BP_StickerMasterSystem_C_UnbindInputReceiver");
-static_assert(offsetof(BP_StickerMasterSystem_C_UnbindInputReceiver, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'BP_StickerMasterSystem_C_UnbindInputReceiver::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_UnbindInputReceiver, CallFunc_IsValid_ReturnValue_1) == 0x000001, "Member 'BP_StickerMasterSystem_C_UnbindInputReceiver::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_UnbindInputReceiver;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.UpdateCalculateStickerScale
 // 0x00E8 (0x00E8 - 0x0000)
@@ -2366,34 +1479,7 @@ public:
 	double                                        CallFunc_Multiply_DoubleDouble_B_ImplicitCast_2;   // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Multiply_DoubleDouble_B_ImplicitCast_3;   // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_UpdateCalculateStickerScale) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_UpdateCalculateStickerScale");
-static_assert(sizeof(BP_StickerMasterSystem_C_UpdateCalculateStickerScale) == 0x0000E8, "Wrong size on BP_StickerMasterSystem_C_UpdateCalculateStickerScale");
-static_assert(offsetof(BP_StickerMasterSystem_C_UpdateCalculateStickerScale, CallFunc_GetStickerBaseOutsideSize_ReturnValue) == 0x000000, "Member 'BP_StickerMasterSystem_C_UpdateCalculateStickerScale::CallFunc_GetStickerBaseOutsideSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_UpdateCalculateStickerScale, CallFunc_GetStickerBaseInsideSize_ReturnValue) == 0x000004, "Member 'BP_StickerMasterSystem_C_UpdateCalculateStickerScale::CallFunc_GetStickerBaseInsideSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_UpdateCalculateStickerScale, CallFunc_GetCurrentState_ReturnValue) == 0x000008, "Member 'BP_StickerMasterSystem_C_UpdateCalculateStickerScale::CallFunc_GetCurrentState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_UpdateCalculateStickerScale, CallFunc_IsValid_ReturnValue) == 0x00000C, "Member 'BP_StickerMasterSystem_C_UpdateCalculateStickerScale::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_UpdateCalculateStickerScale, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00000D, "Member 'BP_StickerMasterSystem_C_UpdateCalculateStickerScale::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_UpdateCalculateStickerScale, CallFunc_GetActorScale3D_ReturnValue) == 0x000010, "Member 'BP_StickerMasterSystem_C_UpdateCalculateStickerScale::CallFunc_GetActorScale3D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_UpdateCalculateStickerScale, CallFunc_BreakVector_X) == 0x000028, "Member 'BP_StickerMasterSystem_C_UpdateCalculateStickerScale::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_UpdateCalculateStickerScale, CallFunc_BreakVector_Y) == 0x000030, "Member 'BP_StickerMasterSystem_C_UpdateCalculateStickerScale::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_UpdateCalculateStickerScale, CallFunc_BreakVector_Z) == 0x000038, "Member 'BP_StickerMasterSystem_C_UpdateCalculateStickerScale::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_UpdateCalculateStickerScale, CallFunc_BreakVector_X_1) == 0x000040, "Member 'BP_StickerMasterSystem_C_UpdateCalculateStickerScale::CallFunc_BreakVector_X_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_UpdateCalculateStickerScale, CallFunc_BreakVector_Y_1) == 0x000048, "Member 'BP_StickerMasterSystem_C_UpdateCalculateStickerScale::CallFunc_BreakVector_Y_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_UpdateCalculateStickerScale, CallFunc_BreakVector_Z_1) == 0x000050, "Member 'BP_StickerMasterSystem_C_UpdateCalculateStickerScale::CallFunc_BreakVector_Z_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_UpdateCalculateStickerScale, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000058, "Member 'BP_StickerMasterSystem_C_UpdateCalculateStickerScale::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_UpdateCalculateStickerScale, CallFunc_Multiply_DoubleDouble_ReturnValue_1) == 0x000060, "Member 'BP_StickerMasterSystem_C_UpdateCalculateStickerScale::CallFunc_Multiply_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_UpdateCalculateStickerScale, CallFunc_Multiply_DoubleDouble_ReturnValue_2) == 0x000068, "Member 'BP_StickerMasterSystem_C_UpdateCalculateStickerScale::CallFunc_Multiply_DoubleDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_UpdateCalculateStickerScale, CallFunc_Multiply_DoubleDouble_ReturnValue_3) == 0x000070, "Member 'BP_StickerMasterSystem_C_UpdateCalculateStickerScale::CallFunc_Multiply_DoubleDouble_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_UpdateCalculateStickerScale, CallFunc_Multiply_DoubleDouble_ReturnValue_4) == 0x000078, "Member 'BP_StickerMasterSystem_C_UpdateCalculateStickerScale::CallFunc_Multiply_DoubleDouble_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_UpdateCalculateStickerScale, CallFunc_Multiply_DoubleDouble_ReturnValue_5) == 0x000080, "Member 'BP_StickerMasterSystem_C_UpdateCalculateStickerScale::CallFunc_Multiply_DoubleDouble_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_UpdateCalculateStickerScale, CallFunc_Multiply_DoubleDouble_ReturnValue_6) == 0x000088, "Member 'BP_StickerMasterSystem_C_UpdateCalculateStickerScale::CallFunc_Multiply_DoubleDouble_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_UpdateCalculateStickerScale, CallFunc_Multiply_DoubleDouble_ReturnValue_7) == 0x000090, "Member 'BP_StickerMasterSystem_C_UpdateCalculateStickerScale::CallFunc_Multiply_DoubleDouble_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_UpdateCalculateStickerScale, CallFunc_MakeVector_ReturnValue) == 0x000098, "Member 'BP_StickerMasterSystem_C_UpdateCalculateStickerScale::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_UpdateCalculateStickerScale, CallFunc_MakeVector_ReturnValue_1) == 0x0000B0, "Member 'BP_StickerMasterSystem_C_UpdateCalculateStickerScale::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_UpdateCalculateStickerScale, CallFunc_Multiply_DoubleDouble_B_ImplicitCast) == 0x0000C8, "Member 'BP_StickerMasterSystem_C_UpdateCalculateStickerScale::CallFunc_Multiply_DoubleDouble_B_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_UpdateCalculateStickerScale, CallFunc_Multiply_DoubleDouble_B_ImplicitCast_1) == 0x0000D0, "Member 'BP_StickerMasterSystem_C_UpdateCalculateStickerScale::CallFunc_Multiply_DoubleDouble_B_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_UpdateCalculateStickerScale, CallFunc_Multiply_DoubleDouble_B_ImplicitCast_2) == 0x0000D8, "Member 'BP_StickerMasterSystem_C_UpdateCalculateStickerScale::CallFunc_Multiply_DoubleDouble_B_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_UpdateCalculateStickerScale, CallFunc_Multiply_DoubleDouble_B_ImplicitCast_3) == 0x0000E0, "Member 'BP_StickerMasterSystem_C_UpdateCalculateStickerScale::CallFunc_Multiply_DoubleDouble_B_ImplicitCast_3' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_UpdateCalculateStickerScale;
 
 // Function BP_StickerMasterSystem.BP_StickerMasterSystem_C.UpdateWarningVisibility
 // 0x0018 (0x0018 - 0x0000)
@@ -2406,13 +1492,7 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_BoolBool_ReturnValue;            // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StickerMasterSystem_C_UpdateWarningVisibility) == 0x000008, "Wrong alignment on BP_StickerMasterSystem_C_UpdateWarningVisibility");
-static_assert(sizeof(BP_StickerMasterSystem_C_UpdateWarningVisibility) == 0x000018, "Wrong size on BP_StickerMasterSystem_C_UpdateWarningVisibility");
-static_assert(offsetof(BP_StickerMasterSystem_C_UpdateWarningVisibility, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'BP_StickerMasterSystem_C_UpdateWarningVisibility::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_UpdateWarningVisibility, CallFunc_PlayAnimation_ReturnValue_1) == 0x000008, "Member 'BP_StickerMasterSystem_C_UpdateWarningVisibility::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_UpdateWarningVisibility, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'BP_StickerMasterSystem_C_UpdateWarningVisibility::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_UpdateWarningVisibility, CallFunc_BooleanOR_ReturnValue) == 0x000011, "Member 'BP_StickerMasterSystem_C_UpdateWarningVisibility::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StickerMasterSystem_C_UpdateWarningVisibility, CallFunc_NotEqual_BoolBool_ReturnValue) == 0x000012, "Member 'BP_StickerMasterSystem_C_UpdateWarningVisibility::CallFunc_NotEqual_BoolBool_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_StickerMasterSystem_C_UpdateWarningVisibility;
 
 }
 

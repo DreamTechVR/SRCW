@@ -101,6 +101,7 @@ void UnlockAll()
 	for (int i = 0; i < (uint8_t)SDK::EDriverId::Num; i++)
 	{
 		SDK::UAppSaveGameHelper::SetDriverSelectable(SDK::EDriverId(i));
+		SDK::UAppSaveGameHelper::ClearDriverNew(SDK::EDriverId(i));
 	}
 
 	SDK::UMachineCustomizeUtilityLibrary::StoreAllAura();

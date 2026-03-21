@@ -23,15 +23,18 @@ class UABP_Menu_ACL_SmallCockpit_C final : public UABPT_Menu_CockpitBase_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABP_Menu_ACL_SmallCockpit_C">();
+		BP_STATIC_CLASS_IMPL("ABP_Menu_ACL_SmallCockpit_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABP_Menu_ACL_SmallCockpit_C")
 	}
 	static class UABP_Menu_ACL_SmallCockpit_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UABP_Menu_ACL_SmallCockpit_C>();
 	}
 };
-static_assert(alignof(UABP_Menu_ACL_SmallCockpit_C) == 0x000010, "Wrong alignment on UABP_Menu_ACL_SmallCockpit_C");
-static_assert(sizeof(UABP_Menu_ACL_SmallCockpit_C) == 0x000650, "Wrong size on UABP_Menu_ACL_SmallCockpit_C");
+DUMPER7_ASSERTS_UABP_Menu_ACL_SmallCockpit_C;
 
 }
 

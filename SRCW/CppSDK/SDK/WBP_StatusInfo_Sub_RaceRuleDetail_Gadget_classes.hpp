@@ -29,19 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_StatusInfo_Sub_RaceRuleDetail_Gadget_C">();
+		BP_STATIC_CLASS_IMPL("WBP_StatusInfo_Sub_RaceRuleDetail_Gadget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_StatusInfo_Sub_RaceRuleDetail_Gadget_C")
 	}
 	static class UWBP_StatusInfo_Sub_RaceRuleDetail_Gadget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_StatusInfo_Sub_RaceRuleDetail_Gadget_C>();
 	}
 };
-static_assert(alignof(UWBP_StatusInfo_Sub_RaceRuleDetail_Gadget_C) == 0x000008, "Wrong alignment on UWBP_StatusInfo_Sub_RaceRuleDetail_Gadget_C");
-static_assert(sizeof(UWBP_StatusInfo_Sub_RaceRuleDetail_Gadget_C) == 0x000300, "Wrong size on UWBP_StatusInfo_Sub_RaceRuleDetail_Gadget_C");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRuleDetail_Gadget_C, base_2) == 0x0002E0, "Member 'UWBP_StatusInfo_Sub_RaceRuleDetail_Gadget_C::base_2' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRuleDetail_Gadget_C, TitleBase_1) == 0x0002E8, "Member 'UWBP_StatusInfo_Sub_RaceRuleDetail_Gadget_C::TitleBase_1' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRuleDetail_Gadget_C, TXT_Title) == 0x0002F0, "Member 'UWBP_StatusInfo_Sub_RaceRuleDetail_Gadget_C::TXT_Title' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRuleDetail_Gadget_C, WBP_GadgetCustom_Sub_GadgetPlate) == 0x0002F8, "Member 'UWBP_StatusInfo_Sub_RaceRuleDetail_Gadget_C::WBP_GadgetCustom_Sub_GadgetPlate' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_StatusInfo_Sub_RaceRuleDetail_Gadget_C;
 
 }
 

@@ -93,49 +93,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CourseSelect_Sub_ThumbnailSelecter_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CourseSelect_Sub_ThumbnailSelecter_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CourseSelect_Sub_ThumbnailSelecter_C")
 	}
 	static class UWBP_CourseSelect_Sub_ThumbnailSelecter_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CourseSelect_Sub_ThumbnailSelecter_C>();
 	}
 };
-static_assert(alignof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C) == 0x000008, "Wrong alignment on UWBP_CourseSelect_Sub_ThumbnailSelecter_C");
-static_assert(sizeof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C) == 0x000420, "Wrong size on UWBP_CourseSelect_Sub_ThumbnailSelecter_C");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, LongBox_Loop) == 0x0002E8, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::LongBox_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, ShortBox_Loop) == 0x0002F0, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::ShortBox_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, Threepiece) == 0x0002F8, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::Threepiece' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, base) == 0x000300, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, Header) == 0x000308, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::Header' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, ScrollBox_45) == 0x000310, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::ScrollBox_45' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, TXT_GrandPrixName) == 0x000318, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::TXT_GrandPrixName' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, WBP_CourseSelect_Sub_StageBox_CrossWorld) == 0x000320, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::WBP_CourseSelect_Sub_StageBox_CrossWorld' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, WBP_CourseSelect_Sub_StageBox_CrossWorld_1) == 0x000328, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::WBP_CourseSelect_Sub_StageBox_CrossWorld_1' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, WBP_CourseSelect_Sub_StageBox_CrossWorld_2) == 0x000330, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::WBP_CourseSelect_Sub_StageBox_CrossWorld_2' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, WBP_CourseSelect_Sub_StageBox_Multiple_01) == 0x000338, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::WBP_CourseSelect_Sub_StageBox_Multiple_01' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, WBP_CourseSelect_Sub_StageBox_Multiple_02) == 0x000340, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::WBP_CourseSelect_Sub_StageBox_Multiple_02' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, WBP_CourseSelect_Sub_StageBox_Multiple_03) == 0x000348, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::WBP_CourseSelect_Sub_StageBox_Multiple_03' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, WBP_CourseSelect_Sub_StageBox_Multiple_04) == 0x000350, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::WBP_CourseSelect_Sub_StageBox_Multiple_04' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, WBP_CourseSelect_Sub_StageBox_Multiple_05) == 0x000358, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::WBP_CourseSelect_Sub_StageBox_Multiple_05' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, WBP_CourseSelect_Sub_Thumbnail_CrossWorld) == 0x000360, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::WBP_CourseSelect_Sub_Thumbnail_CrossWorld' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, WidgetSwitcher_CourseThumbnail) == 0x000368, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::WidgetSwitcher_CourseThumbnail' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, CurrentIndex) == 0x000370, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::CurrentIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, MaxIndex) == 0x000374, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::MaxIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, CurrentOffset) == 0x000378, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::CurrentOffset' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, OffsetMount) == 0x000380, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::OffsetMount' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, GoalOffset) == 0x000388, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::GoalOffset' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, CourseSelectSubStageBox) == 0x000390, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::CourseSelectSubStageBox' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, Grand_Prix_Id) == 0x0003A0, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::Grand_Prix_Id' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, OnStageDecisionEvent) == 0x0003A8, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::OnStageDecisionEvent' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, OnStageCancelEvent) == 0x0003B8, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::OnStageCancelEvent' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, OnStageIconFocusEvent) == 0x0003C8, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::OnStageIconFocusEvent' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, NewVar_0) == 0x0003D8, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::NewVar_0' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, NewVar_1) == 0x0003E0, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::NewVar_1' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, IsEventBind) == 0x0003E8, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::IsEventBind' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, On3PieceStageIconFocusEvent) == 0x0003F0, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::On3PieceStageIconFocusEvent' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, OnCrossWorldStageIconFocusEvent) == 0x000400, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::OnCrossWorldStageIconFocusEvent' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, OnStoreShortcutPressedDelegate) == 0x000410, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::OnStoreShortcutPressedDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CourseSelect_Sub_ThumbnailSelecter_C;
 
 }
 

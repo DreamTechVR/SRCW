@@ -10,25 +10,25 @@
 
 #include "Basic.hpp"
 
+#include "UNION_structs.hpp"
+#include "UNION_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UnionUI_structs.hpp"
-#include "UNION_structs.hpp"
-#include "UNION_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BPC_DodonpaEventState.BPC_DodonpaEventState_C
-// 0x0018 (0x0148 - 0x0130)
+// 0x0018 (0x0160 - 0x0148)
 class UBPC_DodonpaEventState_C final : public UDodonpaEventState
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0130(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class FName                                   CallEventName;                                     // 0x0138(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGrandPrixEventFlag                           Save_Data_Flag_Id;                                 // 0x0140(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EMenuSequenceBGM                              BgmId;                                             // 0x0141(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0148(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class FName                                   CallEventName;                                     // 0x0150(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGrandPrixEventFlag                           Save_Data_Flag_Id;                                 // 0x0158(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EMenuSequenceBGM                              BgmId;                                             // 0x0159(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void AttachDodonpaCamera();
@@ -48,19 +48,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_DodonpaEventState_C">();
+		BP_STATIC_CLASS_IMPL("BPC_DodonpaEventState_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_DodonpaEventState_C")
 	}
 	static class UBPC_DodonpaEventState_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_DodonpaEventState_C>();
 	}
 };
-static_assert(alignof(UBPC_DodonpaEventState_C) == 0x000008, "Wrong alignment on UBPC_DodonpaEventState_C");
-static_assert(sizeof(UBPC_DodonpaEventState_C) == 0x000148, "Wrong size on UBPC_DodonpaEventState_C");
-static_assert(offsetof(UBPC_DodonpaEventState_C, UberGraphFrame) == 0x000130, "Member 'UBPC_DodonpaEventState_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_DodonpaEventState_C, CallEventName) == 0x000138, "Member 'UBPC_DodonpaEventState_C::CallEventName' has a wrong offset!");
-static_assert(offsetof(UBPC_DodonpaEventState_C, Save_Data_Flag_Id) == 0x000140, "Member 'UBPC_DodonpaEventState_C::Save_Data_Flag_Id' has a wrong offset!");
-static_assert(offsetof(UBPC_DodonpaEventState_C, BgmId) == 0x000141, "Member 'UBPC_DodonpaEventState_C::BgmId' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_DodonpaEventState_C;
 
 }
 

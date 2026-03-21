@@ -36,26 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CustomRandom_Sub_MenuBtn_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CustomRandom_Sub_MenuBtn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CustomRandom_Sub_MenuBtn_C")
 	}
 	static class UWBP_CustomRandom_Sub_MenuBtn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CustomRandom_Sub_MenuBtn_C>();
 	}
 };
-static_assert(alignof(UWBP_CustomRandom_Sub_MenuBtn_C) == 0x000008, "Wrong alignment on UWBP_CustomRandom_Sub_MenuBtn_C");
-static_assert(sizeof(UWBP_CustomRandom_Sub_MenuBtn_C) == 0x000338, "Wrong size on UWBP_CustomRandom_Sub_MenuBtn_C");
-static_assert(offsetof(UWBP_CustomRandom_Sub_MenuBtn_C, Btn_Select_Loop) == 0x0002E0, "Member 'UWBP_CustomRandom_Sub_MenuBtn_C::Btn_Select_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CustomRandom_Sub_MenuBtn_C, Btn_Active_Loop) == 0x0002E8, "Member 'UWBP_CustomRandom_Sub_MenuBtn_C::Btn_Active_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CustomRandom_Sub_MenuBtn_C, Btn_Active) == 0x0002F0, "Member 'UWBP_CustomRandom_Sub_MenuBtn_C::Btn_Active' has a wrong offset!");
-static_assert(offsetof(UWBP_CustomRandom_Sub_MenuBtn_C, Btn_Cursor) == 0x0002F8, "Member 'UWBP_CustomRandom_Sub_MenuBtn_C::Btn_Cursor' has a wrong offset!");
-static_assert(offsetof(UWBP_CustomRandom_Sub_MenuBtn_C, Btn_Select) == 0x000300, "Member 'UWBP_CustomRandom_Sub_MenuBtn_C::Btn_Select' has a wrong offset!");
-static_assert(offsetof(UWBP_CustomRandom_Sub_MenuBtn_C, DSP_Cursor_Texture) == 0x000308, "Member 'UWBP_CustomRandom_Sub_MenuBtn_C::DSP_Cursor_Texture' has a wrong offset!");
-static_assert(offsetof(UWBP_CustomRandom_Sub_MenuBtn_C, DSP_Set_Icon_01) == 0x000310, "Member 'UWBP_CustomRandom_Sub_MenuBtn_C::DSP_Set_Icon_01' has a wrong offset!");
-static_assert(offsetof(UWBP_CustomRandom_Sub_MenuBtn_C, DSP_Set_Icon_02) == 0x000318, "Member 'UWBP_CustomRandom_Sub_MenuBtn_C::DSP_Set_Icon_02' has a wrong offset!");
-static_assert(offsetof(UWBP_CustomRandom_Sub_MenuBtn_C, RaceFlagWave) == 0x000320, "Member 'UWBP_CustomRandom_Sub_MenuBtn_C::RaceFlagWave' has a wrong offset!");
-static_assert(offsetof(UWBP_CustomRandom_Sub_MenuBtn_C, TXT_MiniBtn) == 0x000328, "Member 'UWBP_CustomRandom_Sub_MenuBtn_C::TXT_MiniBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_CustomRandom_Sub_MenuBtn_C, WidgetSwitcher_BtnBase) == 0x000330, "Member 'UWBP_CustomRandom_Sub_MenuBtn_C::WidgetSwitcher_BtnBase' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CustomRandom_Sub_MenuBtn_C;
 
 }
 

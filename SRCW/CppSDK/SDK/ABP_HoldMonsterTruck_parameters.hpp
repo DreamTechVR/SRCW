@@ -23,9 +23,7 @@ struct ABP_HoldMonsterTruck_C_AnimGraph final
 public:
 	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(ABP_HoldMonsterTruck_C_AnimGraph) == 0x000008, "Wrong alignment on ABP_HoldMonsterTruck_C_AnimGraph");
-static_assert(sizeof(ABP_HoldMonsterTruck_C_AnimGraph) == 0x000010, "Wrong size on ABP_HoldMonsterTruck_C_AnimGraph");
-static_assert(offsetof(ABP_HoldMonsterTruck_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'ABP_HoldMonsterTruck_C_AnimGraph::AnimGraph_0' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_HoldMonsterTruck_C_AnimGraph;
 
 // Function ABP_HoldMonsterTruck.ABP_HoldMonsterTruck_C.ExecuteUbergraph_ABP_HoldMonsterTruck
 // 0x0018 (0x0018 - 0x0000)
@@ -40,14 +38,7 @@ public:
 	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_LessEqual_DoubleDouble_A_ImplicitCast;    // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ABP_HoldMonsterTruck_C_ExecuteUbergraph_ABP_HoldMonsterTruck) == 0x000008, "Wrong alignment on ABP_HoldMonsterTruck_C_ExecuteUbergraph_ABP_HoldMonsterTruck");
-static_assert(sizeof(ABP_HoldMonsterTruck_C_ExecuteUbergraph_ABP_HoldMonsterTruck) == 0x000018, "Wrong size on ABP_HoldMonsterTruck_C_ExecuteUbergraph_ABP_HoldMonsterTruck");
-static_assert(offsetof(ABP_HoldMonsterTruck_C_ExecuteUbergraph_ABP_HoldMonsterTruck, EntryPoint) == 0x000000, "Member 'ABP_HoldMonsterTruck_C_ExecuteUbergraph_ABP_HoldMonsterTruck::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ABP_HoldMonsterTruck_C_ExecuteUbergraph_ABP_HoldMonsterTruck, CallFunc_GetRelevantAnimTimeRemaining_ReturnValue) == 0x000004, "Member 'ABP_HoldMonsterTruck_C_ExecuteUbergraph_ABP_HoldMonsterTruck::CallFunc_GetRelevantAnimTimeRemaining_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_HoldMonsterTruck_C_ExecuteUbergraph_ABP_HoldMonsterTruck, CallFunc_IsUsed_ReturnValue) == 0x000008, "Member 'ABP_HoldMonsterTruck_C_ExecuteUbergraph_ABP_HoldMonsterTruck::CallFunc_IsUsed_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_HoldMonsterTruck_C_ExecuteUbergraph_ABP_HoldMonsterTruck, CallFunc_LessEqual_DoubleDouble_ReturnValue) == 0x000009, "Member 'ABP_HoldMonsterTruck_C_ExecuteUbergraph_ABP_HoldMonsterTruck::CallFunc_LessEqual_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_HoldMonsterTruck_C_ExecuteUbergraph_ABP_HoldMonsterTruck, CallFunc_IsUsed_ReturnValue_1) == 0x00000A, "Member 'ABP_HoldMonsterTruck_C_ExecuteUbergraph_ABP_HoldMonsterTruck::CallFunc_IsUsed_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABP_HoldMonsterTruck_C_ExecuteUbergraph_ABP_HoldMonsterTruck, CallFunc_LessEqual_DoubleDouble_A_ImplicitCast) == 0x000010, "Member 'ABP_HoldMonsterTruck_C_ExecuteUbergraph_ABP_HoldMonsterTruck::CallFunc_LessEqual_DoubleDouble_A_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_HoldMonsterTruck_C_ExecuteUbergraph_ABP_HoldMonsterTruck;
 
 }
 

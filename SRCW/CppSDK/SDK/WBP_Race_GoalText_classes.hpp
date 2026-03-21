@@ -48,31 +48,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_GoalText_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_GoalText_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_GoalText_C")
 	}
 	static class UWBP_Race_GoalText_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_GoalText_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_GoalText_C) == 0x000008, "Wrong alignment on UWBP_Race_GoalText_C");
-static_assert(sizeof(UWBP_Race_GoalText_C) == 0x000368, "Wrong size on UWBP_Race_GoalText_C");
-static_assert(offsetof(UWBP_Race_GoalText_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Race_GoalText_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_GoalText_C, Goal_InOut) == 0x0002E8, "Member 'UWBP_Race_GoalText_C::Goal_InOut' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_GoalText_C, Left) == 0x0002F0, "Member 'UWBP_Race_GoalText_C::Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_GoalText_C, Light_01) == 0x0002F8, "Member 'UWBP_Race_GoalText_C::Light_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_GoalText_C, Light_02) == 0x000300, "Member 'UWBP_Race_GoalText_C::Light_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_GoalText_C, Light_03) == 0x000308, "Member 'UWBP_Race_GoalText_C::Light_03' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_GoalText_C, Light_04) == 0x000310, "Member 'UWBP_Race_GoalText_C::Light_04' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_GoalText_C, Right) == 0x000318, "Member 'UWBP_Race_GoalText_C::Right' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_GoalText_C, Small_Line_01) == 0x000320, "Member 'UWBP_Race_GoalText_C::Small_Line_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_GoalText_C, Small_Line_02) == 0x000328, "Member 'UWBP_Race_GoalText_C::Small_Line_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_GoalText_C, Small_Line_03) == 0x000330, "Member 'UWBP_Race_GoalText_C::Small_Line_03' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_GoalText_C, Small_Line_04) == 0x000338, "Member 'UWBP_Race_GoalText_C::Small_Line_04' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_GoalText_C, TXT_Goal) == 0x000340, "Member 'UWBP_Race_GoalText_C::TXT_Goal' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_GoalText_C, TXT_Goal_Shadow) == 0x000348, "Member 'UWBP_Race_GoalText_C::TXT_Goal_Shadow' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_GoalText_C, OnGoalAnimationFinished) == 0x000350, "Member 'UWBP_Race_GoalText_C::OnGoalAnimationFinished' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_GoalText_C, bFired) == 0x000360, "Member 'UWBP_Race_GoalText_C::bFired' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_GoalText_C;
 
 }
 

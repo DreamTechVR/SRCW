@@ -32,22 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_RaceBefore_RivalRacer_C">();
+		BP_STATIC_CLASS_IMPL("WBP_RaceBefore_RivalRacer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_RaceBefore_RivalRacer_C")
 	}
 	static class UWBP_RaceBefore_RivalRacer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_RaceBefore_RivalRacer_C>();
 	}
 };
-static_assert(alignof(UWBP_RaceBefore_RivalRacer_C) == 0x000008, "Wrong alignment on UWBP_RaceBefore_RivalRacer_C");
-static_assert(sizeof(UWBP_RaceBefore_RivalRacer_C) == 0x000318, "Wrong size on UWBP_RaceBefore_RivalRacer_C");
-static_assert(offsetof(UWBP_RaceBefore_RivalRacer_C, RivalRacer_InOut) == 0x0002E0, "Member 'UWBP_RaceBefore_RivalRacer_C::RivalRacer_InOut' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RivalRacer_C, RaceFlag) == 0x0002E8, "Member 'UWBP_RaceBefore_RivalRacer_C::RaceFlag' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RivalRacer_C, RedBase) == 0x0002F0, "Member 'UWBP_RaceBefore_RivalRacer_C::RedBase' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RivalRacer_C, SafeZone) == 0x0002F8, "Member 'UWBP_RaceBefore_RivalRacer_C::SafeZone' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RivalRacer_C, TXT_RivalName) == 0x000300, "Member 'UWBP_RaceBefore_RivalRacer_C::TXT_RivalName' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RivalRacer_C, WBP_CMN_RivalLevel) == 0x000308, "Member 'UWBP_RaceBefore_RivalRacer_C::WBP_CMN_RivalLevel' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RivalRacer_C, WBP_RaceBefore_RivalRacer_Sub_RivalRacerInfo) == 0x000310, "Member 'UWBP_RaceBefore_RivalRacer_C::WBP_RaceBefore_RivalRacer_Sub_RivalRacerInfo' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_RaceBefore_RivalRacer_C;
 
 }
 

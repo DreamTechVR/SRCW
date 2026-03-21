@@ -49,32 +49,7 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x01E8(0x0010)(ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x01F8(0x0010)()
 };
-static_assert(alignof(WBP_SonicLogo_Movie_C_Conv_Timeto_Text) == 0x000008, "Wrong alignment on WBP_SonicLogo_Movie_C_Conv_Timeto_Text");
-static_assert(sizeof(WBP_SonicLogo_Movie_C_Conv_Timeto_Text) == 0x000208, "Wrong size on WBP_SonicLogo_Movie_C_Conv_Timeto_Text");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_Conv_Timeto_Text, Min) == 0x000000, "Member 'WBP_SonicLogo_Movie_C_Conv_Timeto_Text::Min' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_Conv_Timeto_Text, Sec) == 0x000004, "Member 'WBP_SonicLogo_Movie_C_Conv_Timeto_Text::Sec' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_Conv_Timeto_Text, MiliSec) == 0x000008, "Member 'WBP_SonicLogo_Movie_C_Conv_Timeto_Text::MiliSec' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_Conv_Timeto_Text, Text) == 0x000010, "Member 'WBP_SonicLogo_Movie_C_Conv_Timeto_Text::Text' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_Conv_Timeto_Text, CallFunc_Conv_IntToText_ReturnValue) == 0x000020, "Member 'WBP_SonicLogo_Movie_C_Conv_Timeto_Text::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_Conv_Timeto_Text, CallFunc_Conv_IntToText_ReturnValue_1) == 0x000030, "Member 'WBP_SonicLogo_Movie_C_Conv_Timeto_Text::CallFunc_Conv_IntToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_Conv_Timeto_Text, CallFunc_Conv_TextToString_ReturnValue) == 0x000040, "Member 'WBP_SonicLogo_Movie_C_Conv_Timeto_Text::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_Conv_Timeto_Text, CallFunc_Conv_TextToString_ReturnValue_1) == 0x000050, "Member 'WBP_SonicLogo_Movie_C_Conv_Timeto_Text::CallFunc_Conv_TextToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_Conv_Timeto_Text, CallFunc_Concat_StrStr_ReturnValue) == 0x000060, "Member 'WBP_SonicLogo_Movie_C_Conv_Timeto_Text::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_Conv_Timeto_Text, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000070, "Member 'WBP_SonicLogo_Movie_C_Conv_Timeto_Text::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_Conv_Timeto_Text, CallFunc_Right_ReturnValue) == 0x000080, "Member 'WBP_SonicLogo_Movie_C_Conv_Timeto_Text::CallFunc_Right_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_Conv_Timeto_Text, CallFunc_Right_ReturnValue_1) == 0x000090, "Member 'WBP_SonicLogo_Movie_C_Conv_Timeto_Text::CallFunc_Right_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_Conv_Timeto_Text, CallFunc_Conv_StringToText_ReturnValue) == 0x0000A0, "Member 'WBP_SonicLogo_Movie_C_Conv_Timeto_Text::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_Conv_Timeto_Text, CallFunc_Conv_StringToText_ReturnValue_1) == 0x0000B0, "Member 'WBP_SonicLogo_Movie_C_Conv_Timeto_Text::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_Conv_Timeto_Text, K2Node_MakeStruct_FormatArgumentData) == 0x0000C0, "Member 'WBP_SonicLogo_Movie_C_Conv_Timeto_Text::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_Conv_Timeto_Text, K2Node_MakeStruct_FormatArgumentData_1) == 0x000108, "Member 'WBP_SonicLogo_Movie_C_Conv_Timeto_Text::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_Conv_Timeto_Text, CallFunc_Conv_IntToText_ReturnValue_2) == 0x000150, "Member 'WBP_SonicLogo_Movie_C_Conv_Timeto_Text::CallFunc_Conv_IntToText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_Conv_Timeto_Text, CallFunc_Conv_TextToString_ReturnValue_2) == 0x000160, "Member 'WBP_SonicLogo_Movie_C_Conv_Timeto_Text::CallFunc_Conv_TextToString_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_Conv_Timeto_Text, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000170, "Member 'WBP_SonicLogo_Movie_C_Conv_Timeto_Text::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_Conv_Timeto_Text, CallFunc_Right_ReturnValue_2) == 0x000180, "Member 'WBP_SonicLogo_Movie_C_Conv_Timeto_Text::CallFunc_Right_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_Conv_Timeto_Text, CallFunc_Conv_StringToText_ReturnValue_2) == 0x000190, "Member 'WBP_SonicLogo_Movie_C_Conv_Timeto_Text::CallFunc_Conv_StringToText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_Conv_Timeto_Text, K2Node_MakeStruct_FormatArgumentData_2) == 0x0001A0, "Member 'WBP_SonicLogo_Movie_C_Conv_Timeto_Text::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_Conv_Timeto_Text, K2Node_MakeArray_Array) == 0x0001E8, "Member 'WBP_SonicLogo_Movie_C_Conv_Timeto_Text::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_Conv_Timeto_Text, CallFunc_Format_ReturnValue) == 0x0001F8, "Member 'WBP_SonicLogo_Movie_C_Conv_Timeto_Text::CallFunc_Format_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_SonicLogo_Movie_C_Conv_Timeto_Text;
 
 // Function WBP_SonicLogo_Movie.WBP_SonicLogo_Movie_C.ExecuteUbergraph_WBP_SonicLogo_Movie
 // 0x0180 (0x0180 - 0x0000)
@@ -123,43 +98,7 @@ public:
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_5;              // 0x0160(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_6;              // 0x0170(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie) == 0x000008, "Wrong alignment on WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie");
-static_assert(sizeof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie) == 0x000180, "Wrong size on WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, EntryPoint) == 0x000000, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, CallFunc_SpawnObject_ReturnValue) == 0x000008, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, CallFunc_Create_ReturnValue) == 0x000020, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, CallFunc_SetMovie_ReturnValue) == 0x000021, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::CallFunc_SetMovie_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, CallFunc_SetLooping_ReturnValue) == 0x000022, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::CallFunc_SetLooping_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, CallFunc_GetMaterial_ReturnValue) == 0x000028, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::CallFunc_GetMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, CallFunc_Play_ReturnValue) == 0x000030, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::CallFunc_Play_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, K2Node_Event_MyGeometry) == 0x000034, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, K2Node_Event_InDeltaTime) == 0x00006C, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, CallFunc_GetStatus_ReturnValue) == 0x000070, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::CallFunc_GetStatus_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, CallFunc_IsValid_ReturnValue) == 0x000071, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, K2Node_SwitchEnum_CmpSuccess) == 0x000072, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, CallFunc_GetStatus_ReturnValue_1) == 0x000073, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::CallFunc_GetStatus_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, CallFunc_IsClosed_ReturnValue) == 0x000074, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::CallFunc_IsClosed_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, K2Node_SwitchEnum_CmpSuccess_1) == 0x000075, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, CallFunc_IsValid_ReturnValue_1) == 0x000076, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, K2Node_Event_MovieListIndex) == 0x000078, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::K2Node_Event_MovieListIndex' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, CallFunc_Conv_NameToString_ReturnValue) == 0x000080, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::CallFunc_Conv_NameToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, CallFunc_Conv_IntToString_ReturnValue) == 0x000090, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, CallFunc_GetMovieSource_ReturnValue) == 0x0000A0, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::CallFunc_GetMovieSource_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, K2Node_SwitchInteger_CmpSuccess) == 0x0000A8, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue) == 0x0000B0, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, K2Node_CreateDelegate_OutputDelegate_1) == 0x0000C0, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, CallFunc_Concat_StrStr_ReturnValue) == 0x0000D0, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, CallFunc_Conv_IntToString_ReturnValue_1) == 0x0000E0, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::CallFunc_Conv_IntToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, CallFunc_Conv_IntToString_ReturnValue_2) == 0x0000F0, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::CallFunc_Conv_IntToString_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, CallFunc_Conv_IntToString_ReturnValue_3) == 0x000100, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::CallFunc_Conv_IntToString_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, CallFunc_Conv_IntToString_ReturnValue_4) == 0x000110, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::CallFunc_Conv_IntToString_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000120, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000130, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, CallFunc_Concat_StrStr_ReturnValue_3) == 0x000140, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, CallFunc_Concat_StrStr_ReturnValue_4) == 0x000150, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::CallFunc_Concat_StrStr_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, CallFunc_Concat_StrStr_ReturnValue_5) == 0x000160, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::CallFunc_Concat_StrStr_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie, CallFunc_Concat_StrStr_ReturnValue_6) == 0x000170, "Member 'WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie::CallFunc_Concat_StrStr_ReturnValue_6' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_SonicLogo_Movie_C_ExecuteUbergraph_WBP_SonicLogo_Movie;
 
 // Function WBP_SonicLogo_Movie.WBP_SonicLogo_Movie_C.InitialiseMovie
 // 0x0004 (0x0004 - 0x0000)
@@ -168,9 +107,7 @@ struct WBP_SonicLogo_Movie_C_InitialiseMovie final
 public:
 	int32                                         MovieListIndex;                                    // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_SonicLogo_Movie_C_InitialiseMovie) == 0x000004, "Wrong alignment on WBP_SonicLogo_Movie_C_InitialiseMovie");
-static_assert(sizeof(WBP_SonicLogo_Movie_C_InitialiseMovie) == 0x000004, "Wrong size on WBP_SonicLogo_Movie_C_InitialiseMovie");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_InitialiseMovie, MovieListIndex) == 0x000000, "Member 'WBP_SonicLogo_Movie_C_InitialiseMovie::MovieListIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_SonicLogo_Movie_C_InitialiseMovie;
 
 // Function WBP_SonicLogo_Movie.WBP_SonicLogo_Movie_C.ResetMoviePanelOpacity
 // 0x0060 (0x0060 - 0x0000)
@@ -195,20 +132,7 @@ public:
 	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Less_DoubleDouble_A_ImplicitCast;         // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_SonicLogo_Movie_C_ResetMoviePanelOpacity) == 0x000008, "Wrong alignment on WBP_SonicLogo_Movie_C_ResetMoviePanelOpacity");
-static_assert(sizeof(WBP_SonicLogo_Movie_C_ResetMoviePanelOpacity) == 0x000060, "Wrong size on WBP_SonicLogo_Movie_C_ResetMoviePanelOpacity");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ResetMoviePanelOpacity, CallFunc_GetParent_ReturnValue) == 0x000000, "Member 'WBP_SonicLogo_Movie_C_ResetMoviePanelOpacity::CallFunc_GetParent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ResetMoviePanelOpacity, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000008, "Member 'WBP_SonicLogo_Movie_C_ResetMoviePanelOpacity::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ResetMoviePanelOpacity, CallFunc_GetParent_ReturnValue_1) == 0x000010, "Member 'WBP_SonicLogo_Movie_C_ResetMoviePanelOpacity::CallFunc_GetParent_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ResetMoviePanelOpacity, K2Node_DynamicCast_As________) == 0x000018, "Member 'WBP_SonicLogo_Movie_C_ResetMoviePanelOpacity::K2Node_DynamicCast_As________' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ResetMoviePanelOpacity, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'WBP_SonicLogo_Movie_C_ResetMoviePanelOpacity::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ResetMoviePanelOpacity, CallFunc_GetParent_ReturnValue_2) == 0x000028, "Member 'WBP_SonicLogo_Movie_C_ResetMoviePanelOpacity::CallFunc_GetParent_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ResetMoviePanelOpacity, CallFunc_GetRenderOpacity_ReturnValue) == 0x000030, "Member 'WBP_SonicLogo_Movie_C_ResetMoviePanelOpacity::CallFunc_GetRenderOpacity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ResetMoviePanelOpacity, CallFunc_GetParent_ReturnValue_3) == 0x000038, "Member 'WBP_SonicLogo_Movie_C_ResetMoviePanelOpacity::CallFunc_GetParent_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ResetMoviePanelOpacity, CallFunc_Less_DoubleDouble_ReturnValue) == 0x000040, "Member 'WBP_SonicLogo_Movie_C_ResetMoviePanelOpacity::CallFunc_Less_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ResetMoviePanelOpacity, K2Node_DynamicCast_As_________1) == 0x000048, "Member 'WBP_SonicLogo_Movie_C_ResetMoviePanelOpacity::K2Node_DynamicCast_As_________1' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ResetMoviePanelOpacity, K2Node_DynamicCast_bSuccess_1) == 0x000050, "Member 'WBP_SonicLogo_Movie_C_ResetMoviePanelOpacity::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_ResetMoviePanelOpacity, CallFunc_Less_DoubleDouble_A_ImplicitCast) == 0x000058, "Member 'WBP_SonicLogo_Movie_C_ResetMoviePanelOpacity::CallFunc_Less_DoubleDouble_A_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_SonicLogo_Movie_C_ResetMoviePanelOpacity;
 
 // Function WBP_SonicLogo_Movie.WBP_SonicLogo_Movie_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -218,10 +142,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_SonicLogo_Movie_C_Tick) == 0x000004, "Wrong alignment on WBP_SonicLogo_Movie_C_Tick");
-static_assert(sizeof(WBP_SonicLogo_Movie_C_Tick) == 0x00003C, "Wrong size on WBP_SonicLogo_Movie_C_Tick");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_Tick, MyGeometry) == 0x000000, "Member 'WBP_SonicLogo_Movie_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_SonicLogo_Movie_C_Tick, InDeltaTime) == 0x000038, "Member 'WBP_SonicLogo_Movie_C_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_SonicLogo_Movie_C_Tick;
 
 }
 

@@ -29,7 +29,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPI_VehicleObjectRef_C">();
+		BP_STATIC_CLASS_IMPL("BPI_VehicleObjectRef_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPI_VehicleObjectRef_C")
 	}
 	static class IBPI_VehicleObjectRef_C* GetDefaultObj()
 	{
@@ -45,8 +49,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IBPI_VehicleObjectRef_C) == 0x000001, "Wrong alignment on IBPI_VehicleObjectRef_C");
-static_assert(sizeof(IBPI_VehicleObjectRef_C) == 0x000001, "Wrong size on IBPI_VehicleObjectRef_C");
+DUMPER7_ASSERTS_IBPI_VehicleObjectRef_C;
 
 }
 

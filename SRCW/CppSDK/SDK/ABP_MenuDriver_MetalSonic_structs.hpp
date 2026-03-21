@@ -17,12 +17,11 @@ namespace SDK
 {
 
 // ScriptStruct ABP_MenuDriver_MetalSonic.ABP_MenuDriver_MetalSonic_C.AnimBlueprintGeneratedConstantData
-// 0x0000 (0x1330 - 0x1330)
+// 0x0000 (0x09B0 - 0x09B0)
 struct ABP_MenuDriver_MetalSonic::FAnimBlueprintGeneratedConstantData final : public ABPT_MenuDriver::FAnimBlueprintGeneratedConstantData
 {
 };
-static_assert(alignof(ABP_MenuDriver_MetalSonic::FAnimBlueprintGeneratedConstantData) == 0x000008, "Wrong alignment on ABP_MenuDriver_MetalSonic::FAnimBlueprintGeneratedConstantData");
-static_assert(sizeof(ABP_MenuDriver_MetalSonic::FAnimBlueprintGeneratedConstantData) == 0x001330, "Wrong size on ABP_MenuDriver_MetalSonic::FAnimBlueprintGeneratedConstantData");
+DUMPER7_ASSERTS_ABP_MenuDriver_MetalSonic__FAnimBlueprintGeneratedConstantData;
 
 }
 

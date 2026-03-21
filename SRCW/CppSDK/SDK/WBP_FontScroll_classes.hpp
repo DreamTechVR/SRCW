@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "UnionUI_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
+#include "UnionUI_classes.hpp"
 
 
 namespace SDK
@@ -41,22 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_FontScroll_C">();
+		BP_STATIC_CLASS_IMPL("WBP_FontScroll_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_FontScroll_C")
 	}
 	static class UWBP_FontScroll_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_FontScroll_C>();
 	}
 };
-static_assert(alignof(UWBP_FontScroll_C) == 0x000010, "Wrong alignment on UWBP_FontScroll_C");
-static_assert(sizeof(UWBP_FontScroll_C) == 0x000700, "Wrong size on UWBP_FontScroll_C");
-static_assert(offsetof(UWBP_FontScroll_C, UberGraphFrame) == 0x0006C0, "Member 'UWBP_FontScroll_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_FontScroll_C, UpdateTime) == 0x0006C8, "Member 'UWBP_FontScroll_C::UpdateTime' has a wrong offset!");
-static_assert(offsetof(UWBP_FontScroll_C, Overlay_1) == 0x0006D0, "Member 'UWBP_FontScroll_C::Overlay_1' has a wrong offset!");
-static_assert(offsetof(UWBP_FontScroll_C, RetainerBox) == 0x0006D8, "Member 'UWBP_FontScroll_C::RetainerBox' has a wrong offset!");
-static_assert(offsetof(UWBP_FontScroll_C, TXT_Default) == 0x0006E0, "Member 'UWBP_FontScroll_C::TXT_Default' has a wrong offset!");
-static_assert(offsetof(UWBP_FontScroll_C, base) == 0x0006E8, "Member 'UWBP_FontScroll_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_FontScroll_C, Translation) == 0x0006F0, "Member 'UWBP_FontScroll_C::Translation' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_FontScroll_C;
 
 }
 

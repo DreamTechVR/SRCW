@@ -24,11 +24,7 @@ public:
 	int32                                         CallFunc_GetPlayerIndex_ReturnValue;               // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_PlayerNumber_C_SetPlayerNumberText) == 0x000004, "Wrong alignment on WBP_CMN_PlayerNumber_C_SetPlayerNumberText");
-static_assert(sizeof(WBP_CMN_PlayerNumber_C_SetPlayerNumberText) == 0x00000C, "Wrong size on WBP_CMN_PlayerNumber_C_SetPlayerNumberText");
-static_assert(offsetof(WBP_CMN_PlayerNumber_C_SetPlayerNumberText, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'WBP_CMN_PlayerNumber_C_SetPlayerNumberText::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PlayerNumber_C_SetPlayerNumberText, CallFunc_GetPlayerIndex_ReturnValue) == 0x000004, "Member 'WBP_CMN_PlayerNumber_C_SetPlayerNumberText::CallFunc_GetPlayerIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PlayerNumber_C_SetPlayerNumberText, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000008, "Member 'WBP_CMN_PlayerNumber_C_SetPlayerNumberText::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_PlayerNumber_C_SetPlayerNumberText;
 
 }
 

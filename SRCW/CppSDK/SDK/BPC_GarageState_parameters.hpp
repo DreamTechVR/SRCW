@@ -32,18 +32,7 @@ public:
 	bool                                          K2Node_Event_bInIsVisible;                         // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_bIsSelectedCustomizeDataChanged; // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GarageState_C_ExecuteUbergraph_BPC_GarageState) == 0x000008, "Wrong alignment on BPC_GarageState_C_ExecuteUbergraph_BPC_GarageState");
-static_assert(sizeof(BPC_GarageState_C_ExecuteUbergraph_BPC_GarageState) == 0x000048, "Wrong size on BPC_GarageState_C_ExecuteUbergraph_BPC_GarageState");
-static_assert(offsetof(BPC_GarageState_C_ExecuteUbergraph_BPC_GarageState, EntryPoint) == 0x000000, "Member 'BPC_GarageState_C_ExecuteUbergraph_BPC_GarageState::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BPC_GarageState_C_ExecuteUbergraph_BPC_GarageState, CallFunc_GetChildStateMachine_ReturnValue) == 0x000008, "Member 'BPC_GarageState_C_ExecuteUbergraph_BPC_GarageState::CallFunc_GetChildStateMachine_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GarageState_C_ExecuteUbergraph_BPC_GarageState, K2Node_DynamicCast_AsBP_Garage_Sequence) == 0x000010, "Member 'BPC_GarageState_C_ExecuteUbergraph_BPC_GarageState::K2Node_DynamicCast_AsBP_Garage_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_GarageState_C_ExecuteUbergraph_BPC_GarageState, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'BPC_GarageState_C_ExecuteUbergraph_BPC_GarageState::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_GarageState_C_ExecuteUbergraph_BPC_GarageState, K2Node_CreateDelegate_OutputDelegate) == 0x00001C, "Member 'BPC_GarageState_C_ExecuteUbergraph_BPC_GarageState::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BPC_GarageState_C_ExecuteUbergraph_BPC_GarageState, K2Node_Event_InTimeOutTime) == 0x00002C, "Member 'BPC_GarageState_C_ExecuteUbergraph_BPC_GarageState::K2Node_Event_InTimeOutTime' has a wrong offset!");
-static_assert(offsetof(BPC_GarageState_C_ExecuteUbergraph_BPC_GarageState, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000030, "Member 'BPC_GarageState_C_ExecuteUbergraph_BPC_GarageState::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GarageState_C_ExecuteUbergraph_BPC_GarageState, CallFunc_GetWorldSubsystem_ReturnValue_1) == 0x000038, "Member 'BPC_GarageState_C_ExecuteUbergraph_BPC_GarageState::CallFunc_GetWorldSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GarageState_C_ExecuteUbergraph_BPC_GarageState, K2Node_Event_bInIsVisible) == 0x000040, "Member 'BPC_GarageState_C_ExecuteUbergraph_BPC_GarageState::K2Node_Event_bInIsVisible' has a wrong offset!");
-static_assert(offsetof(BPC_GarageState_C_ExecuteUbergraph_BPC_GarageState, K2Node_CustomEvent_bIsSelectedCustomizeDataChanged) == 0x000041, "Member 'BPC_GarageState_C_ExecuteUbergraph_BPC_GarageState::K2Node_CustomEvent_bIsSelectedCustomizeDataChanged' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GarageState_C_ExecuteUbergraph_BPC_GarageState;
 
 // Function BPC_GarageState.BPC_GarageState_C.MatchingTimeOut
 // 0x0004 (0x0004 - 0x0000)
@@ -52,9 +41,7 @@ struct BPC_GarageState_C_MatchingTimeOut final
 public:
 	float                                         InTimeOutTime;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GarageState_C_MatchingTimeOut) == 0x000004, "Wrong alignment on BPC_GarageState_C_MatchingTimeOut");
-static_assert(sizeof(BPC_GarageState_C_MatchingTimeOut) == 0x000004, "Wrong size on BPC_GarageState_C_MatchingTimeOut");
-static_assert(offsetof(BPC_GarageState_C_MatchingTimeOut, InTimeOutTime) == 0x000000, "Member 'BPC_GarageState_C_MatchingTimeOut::InTimeOutTime' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GarageState_C_MatchingTimeOut;
 
 // Function BPC_GarageState.BPC_GarageState_C.Sequence_OnBackEvent
 // 0x0001 (0x0001 - 0x0000)
@@ -63,9 +50,7 @@ struct BPC_GarageState_C_Sequence_OnBackEvent final
 public:
 	bool                                          bIsSelectedCustomizeDataChanged_0;                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GarageState_C_Sequence_OnBackEvent) == 0x000001, "Wrong alignment on BPC_GarageState_C_Sequence_OnBackEvent");
-static_assert(sizeof(BPC_GarageState_C_Sequence_OnBackEvent) == 0x000001, "Wrong size on BPC_GarageState_C_Sequence_OnBackEvent");
-static_assert(offsetof(BPC_GarageState_C_Sequence_OnBackEvent, bIsSelectedCustomizeDataChanged_0) == 0x000000, "Member 'BPC_GarageState_C_Sequence_OnBackEvent::bIsSelectedCustomizeDataChanged_0' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GarageState_C_Sequence_OnBackEvent;
 
 // Function BPC_GarageState.BPC_GarageState_C.SetMessageBarVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -74,9 +59,7 @@ struct BPC_GarageState_C_SetMessageBarVisible final
 public:
 	bool                                          bInIsVisible;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GarageState_C_SetMessageBarVisible) == 0x000001, "Wrong alignment on BPC_GarageState_C_SetMessageBarVisible");
-static_assert(sizeof(BPC_GarageState_C_SetMessageBarVisible) == 0x000001, "Wrong size on BPC_GarageState_C_SetMessageBarVisible");
-static_assert(offsetof(BPC_GarageState_C_SetMessageBarVisible, bInIsVisible) == 0x000000, "Member 'BPC_GarageState_C_SetMessageBarVisible::bInIsVisible' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GarageState_C_SetMessageBarVisible;
 
 // Function BPC_GarageState.BPC_GarageState_C.IsSelectedCustomizeDataChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -85,9 +68,7 @@ struct BPC_GarageState_C_IsSelectedCustomizeDataChanged final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GarageState_C_IsSelectedCustomizeDataChanged) == 0x000001, "Wrong alignment on BPC_GarageState_C_IsSelectedCustomizeDataChanged");
-static_assert(sizeof(BPC_GarageState_C_IsSelectedCustomizeDataChanged) == 0x000001, "Wrong size on BPC_GarageState_C_IsSelectedCustomizeDataChanged");
-static_assert(offsetof(BPC_GarageState_C_IsSelectedCustomizeDataChanged, ReturnValue) == 0x000000, "Member 'BPC_GarageState_C_IsSelectedCustomizeDataChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GarageState_C_IsSelectedCustomizeDataChanged;
 
 }
 

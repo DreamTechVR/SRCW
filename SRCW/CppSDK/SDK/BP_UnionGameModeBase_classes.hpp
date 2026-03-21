@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_UnionGameModeBase_C">();
+		BP_STATIC_CLASS_IMPL("BP_UnionGameModeBase_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_UnionGameModeBase_C")
 	}
 	static class ABP_UnionGameModeBase_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_UnionGameModeBase_C>();
 	}
 };
-static_assert(alignof(ABP_UnionGameModeBase_C) == 0x000008, "Wrong alignment on ABP_UnionGameModeBase_C");
-static_assert(sizeof(ABP_UnionGameModeBase_C) == 0x000338, "Wrong size on ABP_UnionGameModeBase_C");
-static_assert(offsetof(ABP_UnionGameModeBase_C, UberGraphFrame) == 0x000328, "Member 'ABP_UnionGameModeBase_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_UnionGameModeBase_C, DefaultSceneRoot) == 0x000330, "Member 'ABP_UnionGameModeBase_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_UnionGameModeBase_C;
 
 }
 

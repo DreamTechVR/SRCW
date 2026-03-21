@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
+#include "UnionSystem_structs.hpp"
 #include "UnionUI_classes.hpp"
 
 
@@ -50,29 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_NiceNotice_Window_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_NiceNotice_Window_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_NiceNotice_Window_C")
 	}
 	static class UWBP_CMN_NiceNotice_Window_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_NiceNotice_Window_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_NiceNotice_Window_C) == 0x000008, "Wrong alignment on UWBP_CMN_NiceNotice_Window_C");
-static_assert(sizeof(UWBP_CMN_NiceNotice_Window_C) == 0x000460, "Wrong size on UWBP_CMN_NiceNotice_Window_C");
-static_assert(offsetof(UWBP_CMN_NiceNotice_Window_C, UberGraphFrame) == 0x0003D8, "Member 'UWBP_CMN_NiceNotice_Window_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_NiceNotice_Window_C, VerticalBox_0) == 0x0003E0, "Member 'UWBP_CMN_NiceNotice_Window_C::VerticalBox_0' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_NiceNotice_Window_C, WBP_CMN_NiceNotice_01) == 0x0003E8, "Member 'UWBP_CMN_NiceNotice_Window_C::WBP_CMN_NiceNotice_01' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_NiceNotice_Window_C, WBP_CMN_NiceNotice_02) == 0x0003F0, "Member 'UWBP_CMN_NiceNotice_Window_C::WBP_CMN_NiceNotice_02' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_NiceNotice_Window_C, WBP_CMN_NiceNotice_03) == 0x0003F8, "Member 'UWBP_CMN_NiceNotice_Window_C::WBP_CMN_NiceNotice_03' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_NiceNotice_Window_C, WBP_CMN_NiceNotice_04) == 0x000400, "Member 'UWBP_CMN_NiceNotice_Window_C::WBP_CMN_NiceNotice_04' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_NiceNotice_Window_C, WBP_CMN_NiceNotice_05) == 0x000408, "Member 'UWBP_CMN_NiceNotice_Window_C::WBP_CMN_NiceNotice_05' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_NiceNotice_Window_C, WBP_CMN_NiceNotice_06) == 0x000410, "Member 'UWBP_CMN_NiceNotice_Window_C::WBP_CMN_NiceNotice_06' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_NiceNotice_Window_C, WBP_CMN_NiceNotice_07) == 0x000418, "Member 'UWBP_CMN_NiceNotice_Window_C::WBP_CMN_NiceNotice_07' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_NiceNotice_Window_C, WBP_CMN_NiceNotice_08) == 0x000420, "Member 'UWBP_CMN_NiceNotice_Window_C::WBP_CMN_NiceNotice_08' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_NiceNotice_Window_C, NameList) == 0x000428, "Member 'UWBP_CMN_NiceNotice_Window_C::NameList' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_NiceNotice_Window_C, PlatformList) == 0x000438, "Member 'UWBP_CMN_NiceNotice_Window_C::PlatformList' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_NiceNotice_Window_C, OutEndNiceNotice) == 0x000448, "Member 'UWBP_CMN_NiceNotice_Window_C::OutEndNiceNotice' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_NiceNotice_Window_C, ResetNoticeList) == 0x000450, "Member 'UWBP_CMN_NiceNotice_Window_C::ResetNoticeList' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_NiceNotice_Window_C;
 
 }
 

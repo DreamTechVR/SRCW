@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "ABPT_CockpitBase_structs.hpp"
-#include "AnimGraphRuntime_structs.hpp"
-#include "UNION_structs.hpp"
-#include "UNION_classes.hpp"
 #include "ControlRig_structs.hpp"
 #include "UnionRun_structs.hpp"
+#include "UNION_structs.hpp"
+#include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
+#include "AnimGraphRuntime_structs.hpp"
+#include "ABPT_CockpitBase_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -254,173 +254,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABPT_CockpitBase_C">();
+		BP_STATIC_CLASS_IMPL("ABPT_CockpitBase_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABPT_CockpitBase_C")
 	}
 	static class UABPT_CockpitBase_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UABPT_CockpitBase_C>();
 	}
 };
-static_assert(alignof(UABPT_CockpitBase_C) == 0x000010, "Wrong alignment on UABPT_CockpitBase_C");
-static_assert(sizeof(UABPT_CockpitBase_C) == 0x003580, "Wrong size on UABPT_CockpitBase_C");
-static_assert(offsetof(UABPT_CockpitBase_C, UberGraphFrame) == 0x0004E0, "Member 'UABPT_CockpitBase_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, __AnimBlueprintMutables) == 0x0004E8, "Member 'UABPT_CockpitBase_C::__AnimBlueprintMutables' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimBlueprintExtension_PropertyAccess) == 0x000528, "Member 'UABPT_CockpitBase_C::AnimBlueprintExtension_PropertyAccess' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimBlueprintExtension_Base) == 0x000530, "Member 'UABPT_CockpitBase_C::AnimBlueprintExtension_Base' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_Root_1) == 0x000538, "Member 'UABPT_CockpitBase_C::AnimGraphNode_Root_1' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_ModifyBone_3) == 0x000558, "Member 'UABPT_CockpitBase_C::AnimGraphNode_ModifyBone_3' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_LocalToComponentSpace) == 0x000680, "Member 'UABPT_CockpitBase_C::AnimGraphNode_LocalToComponentSpace' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_ComponentToLocalSpace) == 0x0006A0, "Member 'UABPT_CockpitBase_C::AnimGraphNode_ComponentToLocalSpace' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_ModifyBone_2) == 0x0006C0, "Member 'UABPT_CockpitBase_C::AnimGraphNode_ModifyBone_2' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_ModifyBone_1) == 0x0007E8, "Member 'UABPT_CockpitBase_C::AnimGraphNode_ModifyBone_1' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_ModifyBone) == 0x000910, "Member 'UABPT_CockpitBase_C::AnimGraphNode_ModifyBone' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_LinkedInputPose) == 0x000A38, "Member 'UABPT_CockpitBase_C::AnimGraphNode_LinkedInputPose' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_Root) == 0x000AF0, "Member 'UABPT_CockpitBase_C::AnimGraphNode_Root' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_61) == 0x000B10, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_61' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_60) == 0x000B38, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_60' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_59) == 0x000B60, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_59' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_58) == 0x000B88, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_58' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_57) == 0x000BB0, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_57' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_56) == 0x000BD8, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_56' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_55) == 0x000C00, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_55' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_54) == 0x000C28, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_54' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_53) == 0x000C50, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_53' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_52) == 0x000C78, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_52' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_51) == 0x000CA0, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_51' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_50) == 0x000CC8, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_50' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_49) == 0x000CF0, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_49' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_48) == 0x000D18, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_48' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_47) == 0x000D40, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_47' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_46) == 0x000D68, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_46' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_45) == 0x000D90, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_45' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_44) == 0x000DB8, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_44' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_43) == 0x000DE0, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_43' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_42) == 0x000E08, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_42' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_41) == 0x000E30, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_41' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_40) == 0x000E58, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_40' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_39) == 0x000E80, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_39' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_38) == 0x000EA8, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_38' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_37) == 0x000ED0, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_37' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_36) == 0x000EF8, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_36' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_35) == 0x000F20, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_35' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_34) == 0x000F48, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_34' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_33) == 0x000F70, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_33' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TwoWayBlend) == 0x000F98, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TwoWayBlend' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_BlendSpacePlayer_7) == 0x001060, "Member 'UABPT_CockpitBase_C::AnimGraphNode_BlendSpacePlayer_7' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_BlendSpacePlayer_6) == 0x0010D0, "Member 'UABPT_CockpitBase_C::AnimGraphNode_BlendSpacePlayer_6' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateResult_29) == 0x001140, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateResult_29' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_32) == 0x001160, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_32' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_31) == 0x001188, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_31' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_30) == 0x0011B0, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_30' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_29) == 0x0011D8, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_29' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_28) == 0x001200, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_28' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_27) == 0x001228, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_27' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_26) == 0x001250, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_26' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_25) == 0x001278, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_25' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_SequencePlayer_15) == 0x0012A0, "Member 'UABPT_CockpitBase_C::AnimGraphNode_SequencePlayer_15' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateResult_28) == 0x0012E8, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateResult_28' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_SequencePlayer_14) == 0x001308, "Member 'UABPT_CockpitBase_C::AnimGraphNode_SequencePlayer_14' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateResult_27) == 0x001350, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateResult_27' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_SequencePlayer_13) == 0x001370, "Member 'UABPT_CockpitBase_C::AnimGraphNode_SequencePlayer_13' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateResult_26) == 0x0013B8, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateResult_26' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_SequencePlayer_12) == 0x0013D8, "Member 'UABPT_CockpitBase_C::AnimGraphNode_SequencePlayer_12' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateResult_25) == 0x001420, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateResult_25' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_BlendSpaceEvaluator) == 0x001440, "Member 'UABPT_CockpitBase_C::AnimGraphNode_BlendSpaceEvaluator' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateResult_24) == 0x0014B8, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateResult_24' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateMachine_6) == 0x0014D8, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateMachine_6' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateResult_23) == 0x0015A0, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateResult_23' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_24) == 0x0015C0, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_24' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_23) == 0x0015E8, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_23' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_22) == 0x001610, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_22' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_21) == 0x001638, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_21' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_20) == 0x001660, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_20' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_19) == 0x001688, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_19' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_SequencePlayer_11) == 0x0016B0, "Member 'UABPT_CockpitBase_C::AnimGraphNode_SequencePlayer_11' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateResult_22) == 0x0016F8, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateResult_22' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_SequencePlayer_10) == 0x001718, "Member 'UABPT_CockpitBase_C::AnimGraphNode_SequencePlayer_10' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateResult_21) == 0x001760, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateResult_21' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_SequencePlayer_9) == 0x001780, "Member 'UABPT_CockpitBase_C::AnimGraphNode_SequencePlayer_9' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateResult_20) == 0x0017C8, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateResult_20' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateMachine_5) == 0x0017E8, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateMachine_5' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateResult_19) == 0x0018B0, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateResult_19' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_18) == 0x0018D0, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_18' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateMachine_4) == 0x0018F8, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateMachine_4' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateResult_18) == 0x0019C0, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateResult_18' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_17) == 0x0019E0, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_17' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_16) == 0x001A08, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_16' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_15) == 0x001A30, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_15' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_14) == 0x001A58, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_14' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_13) == 0x001A80, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_13' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_12) == 0x001AA8, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_12' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_11) == 0x001AD0, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_11' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_10) == 0x001AF8, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_10' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_9) == 0x001B20, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_9' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_BlendSpacePlayer_5) == 0x001B48, "Member 'UABPT_CockpitBase_C::AnimGraphNode_BlendSpacePlayer_5' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateResult_17) == 0x001BB8, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateResult_17' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_BlendSpacePlayer_4) == 0x001BD8, "Member 'UABPT_CockpitBase_C::AnimGraphNode_BlendSpacePlayer_4' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateResult_16) == 0x001C48, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateResult_16' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_BlendSpacePlayer_3) == 0x001C68, "Member 'UABPT_CockpitBase_C::AnimGraphNode_BlendSpacePlayer_3' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateResult_15) == 0x001CD8, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateResult_15' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_8) == 0x001CF8, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_8' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateMachine_3) == 0x001D20, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateMachine_3' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateResult_14) == 0x001DE8, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateResult_14' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_7) == 0x001E08, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_7' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_6) == 0x001E30, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_6' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_5) == 0x001E58, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_5' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_SequencePlayer_8) == 0x001E80, "Member 'UABPT_CockpitBase_C::AnimGraphNode_SequencePlayer_8' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateResult_13) == 0x001EC8, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateResult_13' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_SequencePlayer_7) == 0x001EE8, "Member 'UABPT_CockpitBase_C::AnimGraphNode_SequencePlayer_7' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateResult_12) == 0x001F30, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateResult_12' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_SequencePlayer_6) == 0x001F50, "Member 'UABPT_CockpitBase_C::AnimGraphNode_SequencePlayer_6' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateResult_11) == 0x001F98, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateResult_11' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_4) == 0x001FB8, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_4' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateMachine_2) == 0x001FE0, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateMachine_2' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateResult_10) == 0x0020A8, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateResult_10' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_3) == 0x0020C8, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_3' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_2) == 0x0020F0, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_2' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult_1) == 0x002118, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult_1' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_BlendSpacePlayer_2) == 0x002140, "Member 'UABPT_CockpitBase_C::AnimGraphNode_BlendSpacePlayer_2' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateResult_9) == 0x0021B0, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateResult_9' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_BlendSpacePlayer_1) == 0x0021D0, "Member 'UABPT_CockpitBase_C::AnimGraphNode_BlendSpacePlayer_1' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateResult_8) == 0x002240, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateResult_8' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_BlendSpacePlayer) == 0x002260, "Member 'UABPT_CockpitBase_C::AnimGraphNode_BlendSpacePlayer' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateResult_7) == 0x0022D0, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateResult_7' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_TransitionResult) == 0x0022F0, "Member 'UABPT_CockpitBase_C::AnimGraphNode_TransitionResult' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateMachine_1) == 0x002318, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateMachine_1' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateResult_6) == 0x0023E0, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateResult_6' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_SequencePlayer_5) == 0x002400, "Member 'UABPT_CockpitBase_C::AnimGraphNode_SequencePlayer_5' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateResult_5) == 0x002448, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateResult_5' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_SequencePlayer_4) == 0x002468, "Member 'UABPT_CockpitBase_C::AnimGraphNode_SequencePlayer_4' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateResult_4) == 0x0024B0, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateResult_4' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_SequencePlayer_3) == 0x0024D0, "Member 'UABPT_CockpitBase_C::AnimGraphNode_SequencePlayer_3' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateResult_3) == 0x002518, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateResult_3' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_SequencePlayer_2) == 0x002538, "Member 'UABPT_CockpitBase_C::AnimGraphNode_SequencePlayer_2' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateResult_2) == 0x002580, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateResult_2' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_SequencePlayer_1) == 0x0025A0, "Member 'UABPT_CockpitBase_C::AnimGraphNode_SequencePlayer_1' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateResult_1) == 0x0025E8, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateResult_1' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_SequencePlayer) == 0x002608, "Member 'UABPT_CockpitBase_C::AnimGraphNode_SequencePlayer' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateResult) == 0x002650, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateResult' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_StateMachine) == 0x002670, "Member 'UABPT_CockpitBase_C::AnimGraphNode_StateMachine' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_Slot_2) == 0x002738, "Member 'UABPT_CockpitBase_C::AnimGraphNode_Slot_2' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_ControlRig_1) == 0x002780, "Member 'UABPT_CockpitBase_C::AnimGraphNode_ControlRig_1' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_Slot_1) == 0x002C50, "Member 'UABPT_CockpitBase_C::AnimGraphNode_Slot_1' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_ControlRig) == 0x002C98, "Member 'UABPT_CockpitBase_C::AnimGraphNode_ControlRig' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_UseCachedPose_4) == 0x003168, "Member 'UABPT_CockpitBase_C::AnimGraphNode_UseCachedPose_4' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_SaveCachedPose_2) == 0x003190, "Member 'UABPT_CockpitBase_C::AnimGraphNode_SaveCachedPose_2' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_Slot) == 0x003210, "Member 'UABPT_CockpitBase_C::AnimGraphNode_Slot' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_BlendListByBool_1) == 0x003258, "Member 'UABPT_CockpitBase_C::AnimGraphNode_BlendListByBool_1' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_SaveCachedPose_1) == 0x0032A0, "Member 'UABPT_CockpitBase_C::AnimGraphNode_SaveCachedPose_1' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_UseCachedPose_3) == 0x003320, "Member 'UABPT_CockpitBase_C::AnimGraphNode_UseCachedPose_3' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_UseCachedPose_2) == 0x003348, "Member 'UABPT_CockpitBase_C::AnimGraphNode_UseCachedPose_2' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_SaveCachedPose) == 0x003370, "Member 'UABPT_CockpitBase_C::AnimGraphNode_SaveCachedPose' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_BlendListByBool) == 0x0033F0, "Member 'UABPT_CockpitBase_C::AnimGraphNode_BlendListByBool' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_LinkedAnimLayer) == 0x003438, "Member 'UABPT_CockpitBase_C::AnimGraphNode_LinkedAnimLayer' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_UseCachedPose_1) == 0x003500, "Member 'UABPT_CockpitBase_C::AnimGraphNode_UseCachedPose_1' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, AnimGraphNode_UseCachedPose) == 0x003528, "Member 'UABPT_CockpitBase_C::AnimGraphNode_UseCachedPose' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, __CustomProperty_IsEnableWheelUpdate_3F74E5DA44D7287D691F7589B0326C03) == 0x003550, "Member 'UABPT_CockpitBase_C::__CustomProperty_IsEnableWheelUpdate_3F74E5DA44D7287D691F7589B0326C03' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, __CustomProperty_WheelRot_3F74E5DA44D7287D691F7589B0326C03) == 0x003558, "Member 'UABPT_CockpitBase_C::__CustomProperty_WheelRot_3F74E5DA44D7287D691F7589B0326C03' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, __CustomProperty_IsEnableWheelUpdate_EA2D29024976665F2D9479B43740D47A) == 0x003568, "Member 'UABPT_CockpitBase_C::__CustomProperty_IsEnableWheelUpdate_EA2D29024976665F2D9479B43740D47A' has a wrong offset!");
-static_assert(offsetof(UABPT_CockpitBase_C, __CustomProperty_WheelPos_EA2D29024976665F2D9479B43740D47A) == 0x003570, "Member 'UABPT_CockpitBase_C::__CustomProperty_WheelPos_EA2D29024976665F2D9479B43740D47A' has a wrong offset!");
+DUMPER7_ASSERTS_UABPT_CockpitBase_C;
 
 }
 

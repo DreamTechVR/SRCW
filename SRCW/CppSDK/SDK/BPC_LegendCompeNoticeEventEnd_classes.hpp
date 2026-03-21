@@ -10,18 +10,18 @@
 
 #include "Basic.hpp"
 
-#include "UnionUI_structs.hpp"
+#include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BPC_LegendCompeNoticeEventEnd.BPC_LegendCompeNoticeEventEnd_C
-// 0x00B0 (0x01D8 - 0x0128)
+// 0x00C0 (0x01E8 - 0x0128)
 class UBPC_LegendCompeNoticeEventEnd_C final : public UNoticeEventEndState
 {
 public:
@@ -37,6 +37,9 @@ public:
 	class UWBP_ItemGet_Window_C*                  RewardDialog;                                      // 0x0190(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UBPC_PreNotice_C*                       BPC_Pre_Notice;                                    // 0x0198(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FLegendCompeRewardResultData           ResultData;                                        // 0x01A0(0x0038)(Edit, BlueprintVisible, DisableEditOnInstance)
+	int32                                         DonpaTicketNumPrevReward;                          // 0x01D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1DC[0x4];                                      // 0x01DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Result_DonpaTicket_C*              ResultDonpaTicketWidget;                           // 0x01E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void CreateRewardParamArray();
@@ -52,30 +55,25 @@ public:
 	void OnClosed_ItemGet();
 	void OnExitState();
 	void OnInitState();
+	void ShowDonpaTicketDiff();
+	void FinishNoticeEventEnd();
 	void ExecuteUbergraph_BPC_LegendCompeNoticeEventEnd(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_LegendCompeNoticeEventEnd_C">();
+		BP_STATIC_CLASS_IMPL("BPC_LegendCompeNoticeEventEnd_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_LegendCompeNoticeEventEnd_C")
 	}
 	static class UBPC_LegendCompeNoticeEventEnd_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_LegendCompeNoticeEventEnd_C>();
 	}
 };
-static_assert(alignof(UBPC_LegendCompeNoticeEventEnd_C) == 0x000008, "Wrong alignment on UBPC_LegendCompeNoticeEventEnd_C");
-static_assert(sizeof(UBPC_LegendCompeNoticeEventEnd_C) == 0x0001D8, "Wrong size on UBPC_LegendCompeNoticeEventEnd_C");
-static_assert(offsetof(UBPC_LegendCompeNoticeEventEnd_C, UberGraphFrame) == 0x000128, "Member 'UBPC_LegendCompeNoticeEventEnd_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_LegendCompeNoticeEventEnd_C, EventEndInfo) == 0x000130, "Member 'UBPC_LegendCompeNoticeEventEnd_C::EventEndInfo' has a wrong offset!");
-static_assert(offsetof(UBPC_LegendCompeNoticeEventEnd_C, EndEventID) == 0x000138, "Member 'UBPC_LegendCompeNoticeEventEnd_C::EndEventID' has a wrong offset!");
-static_assert(offsetof(UBPC_LegendCompeNoticeEventEnd_C, EventEndBG) == 0x000140, "Member 'UBPC_LegendCompeNoticeEventEnd_C::EventEndBG' has a wrong offset!");
-static_assert(offsetof(UBPC_LegendCompeNoticeEventEnd_C, EventName) == 0x000168, "Member 'UBPC_LegendCompeNoticeEventEnd_C::EventName' has a wrong offset!");
-static_assert(offsetof(UBPC_LegendCompeNoticeEventEnd_C, DebugMode) == 0x000178, "Member 'UBPC_LegendCompeNoticeEventEnd_C::DebugMode' has a wrong offset!");
-static_assert(offsetof(UBPC_LegendCompeNoticeEventEnd_C, RewardParamArray) == 0x000180, "Member 'UBPC_LegendCompeNoticeEventEnd_C::RewardParamArray' has a wrong offset!");
-static_assert(offsetof(UBPC_LegendCompeNoticeEventEnd_C, RewardDialog) == 0x000190, "Member 'UBPC_LegendCompeNoticeEventEnd_C::RewardDialog' has a wrong offset!");
-static_assert(offsetof(UBPC_LegendCompeNoticeEventEnd_C, BPC_Pre_Notice) == 0x000198, "Member 'UBPC_LegendCompeNoticeEventEnd_C::BPC_Pre_Notice' has a wrong offset!");
-static_assert(offsetof(UBPC_LegendCompeNoticeEventEnd_C, ResultData) == 0x0001A0, "Member 'UBPC_LegendCompeNoticeEventEnd_C::ResultData' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_LegendCompeNoticeEventEnd_C;
 
 }
 

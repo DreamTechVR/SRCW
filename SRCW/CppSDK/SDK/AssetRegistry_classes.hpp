@@ -40,15 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AssetRegistryHelpers">();
+		STATIC_CLASS_IMPL("AssetRegistryHelpers")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AssetRegistryHelpers")
 	}
 	static class UAssetRegistryHelpers* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAssetRegistryHelpers>();
 	}
 };
-static_assert(alignof(UAssetRegistryHelpers) == 0x000008, "Wrong alignment on UAssetRegistryHelpers");
-static_assert(sizeof(UAssetRegistryHelpers) == 0x000028, "Wrong size on UAssetRegistryHelpers");
+DUMPER7_ASSERTS_UAssetRegistryHelpers;
 
 // Class AssetRegistry.AssetRegistry
 // 0x0000 (0x0000 - 0x0000)
@@ -87,7 +90,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AssetRegistry">();
+		STATIC_CLASS_IMPL("AssetRegistry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AssetRegistry")
 	}
 	static class IAssetRegistry* GetDefaultObj()
 	{
@@ -103,8 +110,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IAssetRegistry) == 0x000001, "Wrong alignment on IAssetRegistry");
-static_assert(sizeof(IAssetRegistry) == 0x000001, "Wrong size on IAssetRegistry");
+DUMPER7_ASSERTS_IAssetRegistry;
 
 // Class AssetRegistry.AssetRegistryImpl
 // 0x0E20 (0x0E48 - 0x0028)
@@ -116,15 +122,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AssetRegistryImpl">();
+		STATIC_CLASS_IMPL("AssetRegistryImpl")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AssetRegistryImpl")
 	}
 	static class UAssetRegistryImpl* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAssetRegistryImpl>();
 	}
 };
-static_assert(alignof(UAssetRegistryImpl) == 0x000008, "Wrong alignment on UAssetRegistryImpl");
-static_assert(sizeof(UAssetRegistryImpl) == 0x000E48, "Wrong size on UAssetRegistryImpl");
+DUMPER7_ASSERTS_UAssetRegistryImpl;
 
 }
 

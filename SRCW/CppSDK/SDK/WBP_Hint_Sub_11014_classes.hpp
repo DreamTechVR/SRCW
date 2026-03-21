@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -38,23 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Hint_Sub_11014_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Hint_Sub_11014_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Hint_Sub_11014_C")
 	}
 	static class UWBP_Hint_Sub_11014_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Hint_Sub_11014_C>();
 	}
 };
-static_assert(alignof(UWBP_Hint_Sub_11014_C) == 0x000008, "Wrong alignment on UWBP_Hint_Sub_11014_C");
-static_assert(sizeof(UWBP_Hint_Sub_11014_C) == 0x000328, "Wrong size on UWBP_Hint_Sub_11014_C");
-static_assert(offsetof(UWBP_Hint_Sub_11014_C, UberGraphFrame) == 0x0002E8, "Member 'UWBP_Hint_Sub_11014_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Hint_Sub_11014_C, B_Out) == 0x0002F0, "Member 'UWBP_Hint_Sub_11014_C::B_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Hint_Sub_11014_C, A_Out) == 0x0002F8, "Member 'UWBP_Hint_Sub_11014_C::A_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Hint_Sub_11014_C, In) == 0x000300, "Member 'UWBP_Hint_Sub_11014_C::In' has a wrong offset!");
-static_assert(offsetof(UWBP_Hint_Sub_11014_C, TXT_Title) == 0x000308, "Member 'UWBP_Hint_Sub_11014_C::TXT_Title' has a wrong offset!");
-static_assert(offsetof(UWBP_Hint_Sub_11014_C, WBP_CMN_BG_01) == 0x000310, "Member 'UWBP_Hint_Sub_11014_C::WBP_CMN_BG_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Hint_Sub_11014_C, WBP_FontScroll_A) == 0x000318, "Member 'UWBP_Hint_Sub_11014_C::WBP_FontScroll_A' has a wrong offset!");
-static_assert(offsetof(UWBP_Hint_Sub_11014_C, WBP_FontScroll_B) == 0x000320, "Member 'UWBP_Hint_Sub_11014_C::WBP_FontScroll_B' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Hint_Sub_11014_C;
 
 }
 

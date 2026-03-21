@@ -24,10 +24,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_RivalTeamNext_C_ExecuteUbergraph_WBP_PartyRace_Sub_RivalTeamNext) == 0x000004, "Wrong alignment on WBP_PartyRace_Sub_RivalTeamNext_C_ExecuteUbergraph_WBP_PartyRace_Sub_RivalTeamNext");
-static_assert(sizeof(WBP_PartyRace_Sub_RivalTeamNext_C_ExecuteUbergraph_WBP_PartyRace_Sub_RivalTeamNext) == 0x000008, "Wrong size on WBP_PartyRace_Sub_RivalTeamNext_C_ExecuteUbergraph_WBP_PartyRace_Sub_RivalTeamNext");
-static_assert(offsetof(WBP_PartyRace_Sub_RivalTeamNext_C_ExecuteUbergraph_WBP_PartyRace_Sub_RivalTeamNext, EntryPoint) == 0x000000, "Member 'WBP_PartyRace_Sub_RivalTeamNext_C_ExecuteUbergraph_WBP_PartyRace_Sub_RivalTeamNext::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_RivalTeamNext_C_ExecuteUbergraph_WBP_PartyRace_Sub_RivalTeamNext, K2Node_Event_IsDesignTime) == 0x000004, "Member 'WBP_PartyRace_Sub_RivalTeamNext_C_ExecuteUbergraph_WBP_PartyRace_Sub_RivalTeamNext::K2Node_Event_IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_RivalTeamNext_C_ExecuteUbergraph_WBP_PartyRace_Sub_RivalTeamNext;
 
 // Function WBP_PartyRace_Sub_RivalTeamNext.WBP_PartyRace_Sub_RivalTeamNext_C.In ReflectionONOFF
 // 0x0020 (0x0020 - 0x0000)
@@ -43,14 +40,7 @@ public:
 	uint8                                         Pad_13[0x5];                                       // 0x0013(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_RivalTeamNext_C_In_ReflectionONOFF) == 0x000008, "Wrong alignment on WBP_PartyRace_Sub_RivalTeamNext_C_In_ReflectionONOFF");
-static_assert(sizeof(WBP_PartyRace_Sub_RivalTeamNext_C_In_ReflectionONOFF) == 0x000020, "Wrong size on WBP_PartyRace_Sub_RivalTeamNext_C_In_ReflectionONOFF");
-static_assert(offsetof(WBP_PartyRace_Sub_RivalTeamNext_C_In_ReflectionONOFF, CallFunc_SoundPlay_ReturnValue) == 0x000000, "Member 'WBP_PartyRace_Sub_RivalTeamNext_C_In_ReflectionONOFF::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_RivalTeamNext_C_In_ReflectionONOFF, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_PartyRace_Sub_RivalTeamNext_C_In_ReflectionONOFF::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_RivalTeamNext_C_In_ReflectionONOFF, CallFunc_IsPartyRaceRivalExists_ReturnValue) == 0x000010, "Member 'WBP_PartyRace_Sub_RivalTeamNext_C_In_ReflectionONOFF::CallFunc_IsPartyRaceRivalExists_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_RivalTeamNext_C_In_ReflectionONOFF, CallFunc_Not_PreBool_ReturnValue) == 0x000011, "Member 'WBP_PartyRace_Sub_RivalTeamNext_C_In_ReflectionONOFF::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_RivalTeamNext_C_In_ReflectionONOFF, CallFunc_Not_PreBool_ReturnValue_1) == 0x000012, "Member 'WBP_PartyRace_Sub_RivalTeamNext_C_In_ReflectionONOFF::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_RivalTeamNext_C_In_ReflectionONOFF, CallFunc_PlayAnimation_ReturnValue_1) == 0x000018, "Member 'WBP_PartyRace_Sub_RivalTeamNext_C_In_ReflectionONOFF::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_RivalTeamNext_C_In_ReflectionONOFF;
 
 // Function WBP_PartyRace_Sub_RivalTeamNext.WBP_PartyRace_Sub_RivalTeamNext_C.In ReflectionONOFF_ForPrivateMatch
 // 0x0020 (0x0020 - 0x0000)
@@ -65,13 +55,7 @@ public:
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_RivalTeamNext_C_In_ReflectionONOFF_ForPrivateMatch) == 0x000008, "Wrong alignment on WBP_PartyRace_Sub_RivalTeamNext_C_In_ReflectionONOFF_ForPrivateMatch");
-static_assert(sizeof(WBP_PartyRace_Sub_RivalTeamNext_C_In_ReflectionONOFF_ForPrivateMatch) == 0x000020, "Wrong size on WBP_PartyRace_Sub_RivalTeamNext_C_In_ReflectionONOFF_ForPrivateMatch");
-static_assert(offsetof(WBP_PartyRace_Sub_RivalTeamNext_C_In_ReflectionONOFF_ForPrivateMatch, bIsRivalChallenge) == 0x000000, "Member 'WBP_PartyRace_Sub_RivalTeamNext_C_In_ReflectionONOFF_ForPrivateMatch::bIsRivalChallenge' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_RivalTeamNext_C_In_ReflectionONOFF_ForPrivateMatch, CallFunc_SoundPlay_ReturnValue) == 0x000004, "Member 'WBP_PartyRace_Sub_RivalTeamNext_C_In_ReflectionONOFF_ForPrivateMatch::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_RivalTeamNext_C_In_ReflectionONOFF_ForPrivateMatch, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_PartyRace_Sub_RivalTeamNext_C_In_ReflectionONOFF_ForPrivateMatch::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_RivalTeamNext_C_In_ReflectionONOFF_ForPrivateMatch, CallFunc_Not_PreBool_ReturnValue) == 0x000010, "Member 'WBP_PartyRace_Sub_RivalTeamNext_C_In_ReflectionONOFF_ForPrivateMatch::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_RivalTeamNext_C_In_ReflectionONOFF_ForPrivateMatch, CallFunc_PlayAnimation_ReturnValue_1) == 0x000018, "Member 'WBP_PartyRace_Sub_RivalTeamNext_C_In_ReflectionONOFF_ForPrivateMatch::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_RivalTeamNext_C_In_ReflectionONOFF_ForPrivateMatch;
 
 // Function WBP_PartyRace_Sub_RivalTeamNext.WBP_PartyRace_Sub_RivalTeamNext_C.Out ReflectionONOFF
 // 0x0008 (0x0008 - 0x0000)
@@ -80,9 +64,7 @@ struct WBP_PartyRace_Sub_RivalTeamNext_C_Out_ReflectionONOFF final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_RivalTeamNext_C_Out_ReflectionONOFF) == 0x000008, "Wrong alignment on WBP_PartyRace_Sub_RivalTeamNext_C_Out_ReflectionONOFF");
-static_assert(sizeof(WBP_PartyRace_Sub_RivalTeamNext_C_Out_ReflectionONOFF) == 0x000008, "Wrong size on WBP_PartyRace_Sub_RivalTeamNext_C_Out_ReflectionONOFF");
-static_assert(offsetof(WBP_PartyRace_Sub_RivalTeamNext_C_Out_ReflectionONOFF, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_PartyRace_Sub_RivalTeamNext_C_Out_ReflectionONOFF::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_RivalTeamNext_C_Out_ReflectionONOFF;
 
 // Function WBP_PartyRace_Sub_RivalTeamNext.WBP_PartyRace_Sub_RivalTeamNext_C.Play Animation ONOFF
 // 0x0018 (0x0018 - 0x0000)
@@ -95,12 +77,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_RivalTeamNext_C_Play_Animation_ONOFF) == 0x000008, "Wrong alignment on WBP_PartyRace_Sub_RivalTeamNext_C_Play_Animation_ONOFF");
-static_assert(sizeof(WBP_PartyRace_Sub_RivalTeamNext_C_Play_Animation_ONOFF) == 0x000018, "Wrong size on WBP_PartyRace_Sub_RivalTeamNext_C_Play_Animation_ONOFF");
-static_assert(offsetof(WBP_PartyRace_Sub_RivalTeamNext_C_Play_Animation_ONOFF, bIsOn) == 0x000000, "Member 'WBP_PartyRace_Sub_RivalTeamNext_C_Play_Animation_ONOFF::bIsOn' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_RivalTeamNext_C_Play_Animation_ONOFF, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000001, "Member 'WBP_PartyRace_Sub_RivalTeamNext_C_Play_Animation_ONOFF::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_RivalTeamNext_C_Play_Animation_ONOFF, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_PartyRace_Sub_RivalTeamNext_C_Play_Animation_ONOFF::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_RivalTeamNext_C_Play_Animation_ONOFF, CallFunc_PlayAnimation_ReturnValue_1) == 0x000010, "Member 'WBP_PartyRace_Sub_RivalTeamNext_C_Play_Animation_ONOFF::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_RivalTeamNext_C_Play_Animation_ONOFF;
 
 // Function WBP_PartyRace_Sub_RivalTeamNext.WBP_PartyRace_Sub_RivalTeamNext_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -109,9 +86,7 @@ struct WBP_PartyRace_Sub_RivalTeamNext_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_RivalTeamNext_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_PartyRace_Sub_RivalTeamNext_C_PreConstruct");
-static_assert(sizeof(WBP_PartyRace_Sub_RivalTeamNext_C_PreConstruct) == 0x000001, "Wrong size on WBP_PartyRace_Sub_RivalTeamNext_C_PreConstruct");
-static_assert(offsetof(WBP_PartyRace_Sub_RivalTeamNext_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_PartyRace_Sub_RivalTeamNext_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_RivalTeamNext_C_PreConstruct;
 
 }
 

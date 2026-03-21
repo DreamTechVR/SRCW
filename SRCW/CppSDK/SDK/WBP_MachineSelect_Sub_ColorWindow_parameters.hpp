@@ -31,16 +31,7 @@ public:
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_ColorWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_ColorWindow) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_ColorWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_ColorWindow");
-static_assert(sizeof(WBP_MachineSelect_Sub_ColorWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_ColorWindow) == 0x000038, "Wrong size on WBP_MachineSelect_Sub_ColorWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_ColorWindow");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_ColorWindow, EntryPoint) == 0x000000, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_ColorWindow::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_ColorWindow, K2Node_Event_IsDesignTime) == 0x000004, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_ColorWindow::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_ColorWindow, CallFunc_GetPresetPaint_ReturnValue) == 0x000008, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_ColorWindow::CallFunc_GetPresetPaint_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_ColorWindow, K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Preset_Paint) == 0x000010, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_ColorWindow::K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Preset_Paint' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_ColorWindow, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_ColorWindow::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_ColorWindow, CallFunc_GetButtonOK_ReturnValue) == 0x000020, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_ColorWindow::CallFunc_GetButtonOK_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_ColorWindow, CallFunc_GetPlayerIndex_ReturnValue) == 0x000028, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_ColorWindow::CallFunc_GetPlayerIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_ColorWindow, CallFunc_GetPlayerController_ReturnValue) == 0x000030, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_ColorWindow::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_ColorWindow_C_ExecuteUbergraph_WBP_MachineSelect_Sub_ColorWindow;
 
 // Function WBP_MachineSelect_Sub_ColorWindow.WBP_MachineSelect_Sub_ColorWindow_C.OnItemFocus
 // 0x0068 (0x0068 - 0x0000)
@@ -65,21 +56,7 @@ public:
 	class UWBP_MachinrCustom_Sub_Paint_PresetWindow_C* CallFunc_Array_Get_Item;                      // 0x0058(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_ColorWindow_C_OnItemFocus) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_ColorWindow_C_OnItemFocus");
-static_assert(sizeof(WBP_MachineSelect_Sub_ColorWindow_C_OnItemFocus) == 0x000068, "Wrong size on WBP_MachineSelect_Sub_ColorWindow_C_OnItemFocus");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OnItemFocus, Button) == 0x000000, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OnItemFocus::Button' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OnItemFocus, Temp_int_Array_Index_Variable) == 0x000008, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OnItemFocus::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OnItemFocus, Temp_int_Loop_Counter_Variable) == 0x00000C, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OnItemFocus::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OnItemFocus, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OnItemFocus::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OnItemFocus, CallFunc_GetButtonOK_ReturnValue) == 0x000018, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OnItemFocus::CallFunc_GetButtonOK_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OnItemFocus, CallFunc_GetPresetPaint_ReturnValue) == 0x000020, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OnItemFocus::CallFunc_GetPresetPaint_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OnItemFocus, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000028, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OnItemFocus::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OnItemFocus, K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Preset_Paint) == 0x000030, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OnItemFocus::K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Preset_Paint' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OnItemFocus, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OnItemFocus::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OnItemFocus, CallFunc_GetPage_OutList) == 0x000040, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OnItemFocus::CallFunc_GetPage_OutList' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OnItemFocus, CallFunc_Array_Length_ReturnValue) == 0x000050, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OnItemFocus::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OnItemFocus, CallFunc_Array_Get_Item) == 0x000058, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OnItemFocus::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OnItemFocus, CallFunc_Less_IntInt_ReturnValue) == 0x000060, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OnItemFocus::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_ColorWindow_C_OnItemFocus;
 
 // Function WBP_MachineSelect_Sub_ColorWindow.WBP_MachineSelect_Sub_ColorWindow_C.OnSetPlayerIndex
 // 0x0038 (0x0038 - 0x0000)
@@ -97,16 +74,7 @@ public:
 	class UWBP_MachineCustom_Sub_PresetPaint_C*   K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Preset_Paint_1; // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_ColorWindow_C_OnSetPlayerIndex) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_ColorWindow_C_OnSetPlayerIndex");
-static_assert(sizeof(WBP_MachineSelect_Sub_ColorWindow_C_OnSetPlayerIndex) == 0x000038, "Wrong size on WBP_MachineSelect_Sub_ColorWindow_C_OnSetPlayerIndex");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OnSetPlayerIndex, InPlayerIndex) == 0x000000, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OnSetPlayerIndex::InPlayerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OnSetPlayerIndex, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000004, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OnSetPlayerIndex::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OnSetPlayerIndex, CallFunc_GetPresetPaint_ReturnValue) == 0x000008, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OnSetPlayerIndex::CallFunc_GetPresetPaint_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OnSetPlayerIndex, CallFunc_GetPresetPaint_ReturnValue_1) == 0x000010, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OnSetPlayerIndex::CallFunc_GetPresetPaint_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OnSetPlayerIndex, K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Preset_Paint) == 0x000018, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OnSetPlayerIndex::K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Preset_Paint' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OnSetPlayerIndex, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OnSetPlayerIndex::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OnSetPlayerIndex, K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Preset_Paint_1) == 0x000028, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OnSetPlayerIndex::K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Preset_Paint_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OnSetPlayerIndex, K2Node_DynamicCast_bSuccess_1) == 0x000030, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OnSetPlayerIndex::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_ColorWindow_C_OnSetPlayerIndex;
 
 // Function WBP_MachineSelect_Sub_ColorWindow.WBP_MachineSelect_Sub_ColorWindow_C.OverrideNavigationRule
 // 0x0078 (0x0078 - 0x0000)
@@ -133,23 +101,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule");
-static_assert(sizeof(WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule) == 0x000078, "Wrong size on WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule, Temp_int_Variable) == 0x000000, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000004, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule, CallFunc_GetPresetPaint_ReturnValue) == 0x000010, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule::CallFunc_GetPresetPaint_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule, K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Preset_Paint) == 0x000018, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule::K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Preset_Paint' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule, CallFunc_GetPage_OutList) == 0x000028, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule::CallFunc_GetPage_OutList' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule, CallFunc_Array_Get_Item) == 0x000038, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule, CallFunc_GetNavigation_GridNavigationBuilder) == 0x000040, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule::CallFunc_GetNavigation_GridNavigationBuilder' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule, CallFunc_GetButtonsByColumnIndex_OutButtons) == 0x000048, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule::CallFunc_GetButtonsByColumnIndex_OutButtons' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule, CallFunc_Array_LastIndex_ReturnValue) == 0x000058, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule, CallFunc_Array_Get_Item_1) == 0x000060, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule, CallFunc_Array_Get_Item_2) == 0x000068, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule, CallFunc_IsValid_ReturnValue) == 0x000070, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule, CallFunc_IsValid_ReturnValue_1) == 0x000071, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_ColorWindow_C_OverrideNavigationRule;
 
 // Function WBP_MachineSelect_Sub_ColorWindow.WBP_MachineSelect_Sub_ColorWindow_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -158,9 +110,7 @@ struct WBP_MachineSelect_Sub_ColorWindow_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_ColorWindow_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_MachineSelect_Sub_ColorWindow_C_PreConstruct");
-static_assert(sizeof(WBP_MachineSelect_Sub_ColorWindow_C_PreConstruct) == 0x000001, "Wrong size on WBP_MachineSelect_Sub_ColorWindow_C_PreConstruct");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_ColorWindow_C_PreConstruct;
 
 // Function WBP_MachineSelect_Sub_ColorWindow.WBP_MachineSelect_Sub_ColorWindow_C.SetEnableShoulder
 // 0x0020 (0x0020 - 0x0000)
@@ -173,12 +123,7 @@ public:
 	class UWBP_MachineCustom_Sub_PresetPaint_C*   K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Preset_Paint; // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineSelect_Sub_ColorWindow_C_SetEnableShoulder) == 0x000008, "Wrong alignment on WBP_MachineSelect_Sub_ColorWindow_C_SetEnableShoulder");
-static_assert(sizeof(WBP_MachineSelect_Sub_ColorWindow_C_SetEnableShoulder) == 0x000020, "Wrong size on WBP_MachineSelect_Sub_ColorWindow_C_SetEnableShoulder");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_SetEnableShoulder, IsEnable) == 0x000000, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_SetEnableShoulder::IsEnable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_SetEnableShoulder, CallFunc_GetPresetPaint_ReturnValue) == 0x000008, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_SetEnableShoulder::CallFunc_GetPresetPaint_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_SetEnableShoulder, K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Preset_Paint) == 0x000010, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_SetEnableShoulder::K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Preset_Paint' has a wrong offset!");
-static_assert(offsetof(WBP_MachineSelect_Sub_ColorWindow_C_SetEnableShoulder, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'WBP_MachineSelect_Sub_ColorWindow_C_SetEnableShoulder::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_ColorWindow_C_SetEnableShoulder;
 
 }
 

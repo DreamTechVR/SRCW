@@ -36,26 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ResultLegend_Sub_LegendGrade_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ResultLegend_Sub_LegendGrade_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ResultLegend_Sub_LegendGrade_C")
 	}
 	static class UWBP_ResultLegend_Sub_LegendGrade_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ResultLegend_Sub_LegendGrade_C>();
 	}
 };
-static_assert(alignof(UWBP_ResultLegend_Sub_LegendGrade_C) == 0x000008, "Wrong alignment on UWBP_ResultLegend_Sub_LegendGrade_C");
-static_assert(sizeof(UWBP_ResultLegend_Sub_LegendGrade_C) == 0x000368, "Wrong size on UWBP_ResultLegend_Sub_LegendGrade_C");
-static_assert(offsetof(UWBP_ResultLegend_Sub_LegendGrade_C, BG_05) == 0x000310, "Member 'UWBP_ResultLegend_Sub_LegendGrade_C::BG_05' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultLegend_Sub_LegendGrade_C, Effect) == 0x000318, "Member 'UWBP_ResultLegend_Sub_LegendGrade_C::Effect' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultLegend_Sub_LegendGrade_C, Effect_02) == 0x000320, "Member 'UWBP_ResultLegend_Sub_LegendGrade_C::Effect_02' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultLegend_Sub_LegendGrade_C, Effect_03) == 0x000328, "Member 'UWBP_ResultLegend_Sub_LegendGrade_C::Effect_03' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultLegend_Sub_LegendGrade_C, Effect_04) == 0x000330, "Member 'UWBP_ResultLegend_Sub_LegendGrade_C::Effect_04' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultLegend_Sub_LegendGrade_C, Effect_05) == 0x000338, "Member 'UWBP_ResultLegend_Sub_LegendGrade_C::Effect_05' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultLegend_Sub_LegendGrade_C, Icon) == 0x000340, "Member 'UWBP_ResultLegend_Sub_LegendGrade_C::Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultLegend_Sub_LegendGrade_C, Icon_02) == 0x000348, "Member 'UWBP_ResultLegend_Sub_LegendGrade_C::Icon_02' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultLegend_Sub_LegendGrade_C, Icon_03) == 0x000350, "Member 'UWBP_ResultLegend_Sub_LegendGrade_C::Icon_03' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultLegend_Sub_LegendGrade_C, Icon_04) == 0x000358, "Member 'UWBP_ResultLegend_Sub_LegendGrade_C::Icon_04' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultLegend_Sub_LegendGrade_C, Icon_05) == 0x000360, "Member 'UWBP_ResultLegend_Sub_LegendGrade_C::Icon_05' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ResultLegend_Sub_LegendGrade_C;
 
 }
 

@@ -23,15 +23,18 @@ class UVerifyFreeEditionLicenseCommandlet final : public UCommandlet
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"VerifyFreeEditionLicenseCommandlet">();
+		STATIC_CLASS_IMPL("VerifyFreeEditionLicenseCommandlet")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VerifyFreeEditionLicenseCommandlet")
 	}
 	static class UVerifyFreeEditionLicenseCommandlet* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UVerifyFreeEditionLicenseCommandlet>();
 	}
 };
-static_assert(alignof(UVerifyFreeEditionLicenseCommandlet) == 0x000008, "Wrong alignment on UVerifyFreeEditionLicenseCommandlet");
-static_assert(sizeof(UVerifyFreeEditionLicenseCommandlet) == 0x000080, "Wrong size on UVerifyFreeEditionLicenseCommandlet");
+DUMPER7_ASSERTS_UVerifyFreeEditionLicenseCommandlet;
 
 }
 

@@ -186,140 +186,7 @@ public:
 	class USoundAtomCue*                          K2Node_Select_Default_4;                           // 0x0590(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_2;                  // 0x0598(0x0004)()
 };
-static_assert(alignof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini) == 0x000008, "Wrong alignment on WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini");
-static_assert(sizeof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini) == 0x0005A0, "Wrong size on WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, EntryPoint) == 0x000000, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, Temp_byte_Variable) == 0x000004, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_Event_InDisplayParamArray) == 0x000008, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_Event_InDisplayParamArray' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_Event_InWindowZOrder) == 0x000018, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_Event_InWindowZOrder' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_CustomEvent_InRewardType_5) == 0x00001C, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_CustomEvent_InRewardType_5' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_CustomEvent_InRewardType_4) == 0x00001D, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_CustomEvent_InRewardType_4' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_CustomEvent_bInVisible_1) == 0x00001E, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_CustomEvent_bInVisible_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_GetItemIconImageWidget_OutImageWidget) == 0x000020, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_GetItemIconImageWidget_OutImageWidget' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_SetActiveWidgetIndexByRewardType_ReturnValue) == 0x000028, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_SetActiveWidgetIndexByRewardType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_Add_IntInt_ReturnValue) == 0x00002C, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_Array_IsNotEmpty_ReturnValue) == 0x000030, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_Array_IsNotEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_GetItemCountWidgetIconTexture_OutIconTexture) == 0x000038, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_GetItemCountWidgetIconTexture_OutIconTexture' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_GetRewardItemCount_ReturnValue) == 0x000040, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_GetRewardItemCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_GetRewardItemIconTexture_ReturnValue) == 0x000048, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_GetRewardItemIconTexture_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_IsValid_ReturnValue) == 0x000050, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_CheckDisplayReward_ReturnValue) == 0x000051, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_CheckDisplayReward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_CheckRewardItemCountDisplay_ReturnValue) == 0x000052, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_CheckRewardItemCountDisplay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_GetItemIconImageWidget_OutImageWidget_1) == 0x000058, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_GetItemIconImageWidget_OutImageWidget_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_CustomEvent_InRewardType_3) == 0x000060, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_CustomEvent_InRewardType_3' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_CustomEvent_InRewardId_2) == 0x000064, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_CustomEvent_InRewardId_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, Temp_bool_Variable) == 0x000068, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_Conv_IntToByte_ReturnValue) == 0x000069, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_GetValidValue_ReturnValue) == 0x00006A, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_GetValidValue_ReturnValue_1) == 0x00006B, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_GetValidValue_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue) == 0x000070, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_1) == 0x000080, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_GetValidValue_ReturnValue_2) == 0x000090, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_GetValidValue_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_Conv_ByteToString_ReturnValue) == 0x000098, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_Conv_ByteToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_2) == 0x0000A8, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_3) == 0x0000B8, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_SwitchEnum_CmpSuccess) == 0x0000C8, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_MakeLiteralString_ReturnValue) == 0x0000D0, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_MakeLiteralString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_Concat_StrStr_ReturnValue) == 0x0000E0, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_Concat_StrStr_ReturnValue_1) == 0x0000F0, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000100, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_Concat_StrStr_ReturnValue_3) == 0x000110, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_Concat_StrStr_ReturnValue_4) == 0x000120, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_Concat_StrStr_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_Concat_StrStr_ReturnValue_5) == 0x000130, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_Concat_StrStr_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_Concat_StrStr_ReturnValue_6) == 0x000140, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_Concat_StrStr_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_Concat_StrStr_ReturnValue_7) == 0x000150, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_Concat_StrStr_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_Concat_StrStr_ReturnValue_8) == 0x000160, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_Concat_StrStr_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_Concat_StrStr_ReturnValue_9) == 0x000170, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_Concat_StrStr_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_Concat_StrStr_ReturnValue_10) == 0x000180, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_Concat_StrStr_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_Concat_StrStr_ReturnValue_11) == 0x000190, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_Concat_StrStr_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_Concat_StrStr_ReturnValue_12) == 0x0001A0, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_Concat_StrStr_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_SoundPlay_ReturnValue) == 0x0001B0, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_GetPlayerController_ReturnValue) == 0x0001B8, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_DynamicCast_AsApp_Player_Controller) == 0x0001C0, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_DynamicCast_bSuccess) == 0x0001C8, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_CustomEvent_InRankTitleText) == 0x0001D0, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_CustomEvent_InRankTitleText' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_CustomEvent_InRewardTitleText) == 0x0001E0, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_CustomEvent_InRewardTitleText' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_UnregisterSingleMenu_ReturnValue) == 0x0001F0, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_UnregisterSingleMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_CustomEvent_bRewardDisplay) == 0x0001F1, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_CustomEvent_bRewardDisplay' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_SoundPlay_ReturnValue_1) == 0x0001F4, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_CustomEvent_InRateRank) == 0x0001F8, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_CustomEvent_InRateRank' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_CustomEvent_InRewardParam) == 0x000200, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_CustomEvent_InRewardParam' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_CustomEvent_InWindowZOrder) == 0x000210, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_CustomEvent_InWindowZOrder' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_SwitchInteger_CmpSuccess) == 0x000214, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000215, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_SwitchInteger_CmpSuccess_1) == 0x000216, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_SwitchInteger_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_Array_IsNotEmpty_ReturnValue_1) == 0x000217, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_Array_IsNotEmpty_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000218, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_SwitchInteger_CmpSuccess_2) == 0x000219, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_SwitchInteger_CmpSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_CustomEvent_InItemNum) == 0x00021C, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_CustomEvent_InItemNum' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_CustomEvent_InItemGetNum) == 0x000220, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_CustomEvent_InItemGetNum' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_CustomEvent_InRewardType_2) == 0x000224, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_CustomEvent_InRewardType_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_CustomEvent_InIconTexture) == 0x000228, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_CustomEvent_InIconTexture' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, Temp_int_Variable) == 0x000230, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_Subtract_IntInt_ReturnValue) == 0x000234, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000238, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_Max_ReturnValue) == 0x00023C, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_Max_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, Temp_object_Variable) == 0x000240, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, Temp_object_Variable_1) == 0x000248, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, Temp_bool_Variable_1) == 0x000250, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_CustomEvent_bInVisible) == 0x000251, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_CustomEvent_bInVisible' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_IsVisible_ReturnValue) == 0x000252, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_Array_Length_ReturnValue) == 0x000254, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_Add_IntInt_ReturnValue_1) == 0x000258, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_IsValid_ReturnValue_1) == 0x00025C, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_IsValid_ReturnValue_2) == 0x00025D, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_IsValid_ReturnValue_3) == 0x00025E, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_CreateDelegate_OutputDelegate) == 0x000260, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_CreateDelegate_OutputDelegate_1) == 0x000270, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_GetPlayerController_ReturnValue_1) == 0x000280, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_DynamicCast_AsApp_Player_Controller_1) == 0x000288, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_DynamicCast_AsApp_Player_Controller_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_DynamicCast_bSuccess_1) == 0x000290, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_Create_ReturnValue) == 0x000298, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, Temp_byte_Variable_1) == 0x0002A0, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, Temp_byte_Variable_2) == 0x0002A1, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, Temp_bool_Variable_2) == 0x0002A2, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_CreateDelegate_OutputDelegate_2) == 0x0002A4, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_Select_Default) == 0x0002B4, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, Temp_int_Variable_1) == 0x0002B8, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_Select_Default_1) == 0x0002C0, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_CustomEvent_InText_1) == 0x0002D0, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_CustomEvent_InText_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_TextIsEmpty_ReturnValue) == 0x0002E0, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_CustomEvent_InVisibility) == 0x0002E1, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_CustomEvent_InVisibility' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_CustomEvent_InText) == 0x0002E8, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_CustomEvent_InText' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_CustomEvent_InRewardType_1) == 0x0002F8, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_CustomEvent_InRewardType_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_CustomEvent_InRewardId_1) == 0x0002FC, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_CustomEvent_InRewardId_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_CustomEvent_InRewardNum) == 0x000300, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_CustomEvent_InRewardNum' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_GetRewardItemNameText_ReturnValue) == 0x000308, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_GetRewardItemNameText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_GetRewardTypeText_ReturnValue) == 0x000318, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_GetRewardTypeText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, Temp_int_Variable_2) == 0x000328, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_CustomEvent_InRewardType) == 0x00032C, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_CustomEvent_InRewardType' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_CustomEvent_InRewardId) == 0x000330, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_CustomEvent_InRewardId' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, Temp_int_Variable_3) == 0x000334, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_Conv_IntToByte_ReturnValue_1) == 0x000338, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_Conv_IntToByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_GetValidValue_ReturnValue_3) == 0x000339, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_GetValidValue_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x00033A, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x00033B, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_GetMachinePartsDataById_OutMachinePartsData) == 0x000340, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_GetMachinePartsDataById_OutMachinePartsData' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_BooleanOR_ReturnValue) == 0x000538, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_EqualEqual_ByteByte_ReturnValue_3) == 0x000539, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_EqualEqual_ByteByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_BooleanOR_ReturnValue_1) == 0x00053A, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, Temp_bool_Variable_3) == 0x00053B, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_Select_Default_2) == 0x00053C, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_GetAnimationIn_OutAnimationIn) == 0x000540, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_GetAnimationIn_OutAnimationIn' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_GetAnimationIn_OutAnimationIn_1) == 0x000548, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_GetAnimationIn_OutAnimationIn_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_PlayAnimation_ReturnValue) == 0x000550, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_PlayAnimation_ReturnValue_1) == 0x000558, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_GetAnimationOut_OutAnimationOut) == 0x000560, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_GetAnimationOut_OutAnimationOut' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_GetAnimationIn_OutAnimationIn_2) == 0x000568, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_GetAnimationIn_OutAnimationIn_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_PlayAnimation_ReturnValue_2) == 0x000570, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000578, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_GetAnimationIn_OutAnimationIn_3) == 0x000580, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_GetAnimationIn_OutAnimationIn_3' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_IsAnimationPlaying_ReturnValue_1) == 0x000588, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_IsAnimationPlaying_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, Temp_byte_Variable_3) == 0x000589, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_IsRateRankLegend_ReturnValue) == 0x00058A, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_IsRateRankLegend_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_Select_Default_3) == 0x00058B, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, K2Node_Select_Default_4) == 0x000590, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini, CallFunc_SoundPlay_ReturnValue_2) == 0x000598, "Member 'WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini::CallFunc_SoundPlay_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemGet_WindowMini_C_ExecuteUbergraph_WBP_ItemGet_WindowMini;
 
 // Function WBP_ItemGet_WindowMini.WBP_ItemGet_WindowMini_C.GetAnimationIn
 // 0x0018 (0x0018 - 0x0000)
@@ -331,11 +198,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidgetAnimation*                       K2Node_Select_Default;                             // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemGet_WindowMini_C_GetAnimationIn) == 0x000008, "Wrong alignment on WBP_ItemGet_WindowMini_C_GetAnimationIn");
-static_assert(sizeof(WBP_ItemGet_WindowMini_C_GetAnimationIn) == 0x000018, "Wrong size on WBP_ItemGet_WindowMini_C_GetAnimationIn");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_GetAnimationIn, OutAnimationIn) == 0x000000, "Member 'WBP_ItemGet_WindowMini_C_GetAnimationIn::OutAnimationIn' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_GetAnimationIn, Temp_int_Variable) == 0x000008, "Member 'WBP_ItemGet_WindowMini_C_GetAnimationIn::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_GetAnimationIn, K2Node_Select_Default) == 0x000010, "Member 'WBP_ItemGet_WindowMini_C_GetAnimationIn::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemGet_WindowMini_C_GetAnimationIn;
 
 // Function WBP_ItemGet_WindowMini.WBP_ItemGet_WindowMini_C.GetAnimationOut
 // 0x0018 (0x0018 - 0x0000)
@@ -347,11 +210,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidgetAnimation*                       K2Node_Select_Default;                             // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemGet_WindowMini_C_GetAnimationOut) == 0x000008, "Wrong alignment on WBP_ItemGet_WindowMini_C_GetAnimationOut");
-static_assert(sizeof(WBP_ItemGet_WindowMini_C_GetAnimationOut) == 0x000018, "Wrong size on WBP_ItemGet_WindowMini_C_GetAnimationOut");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_GetAnimationOut, OutAnimationOut) == 0x000000, "Member 'WBP_ItemGet_WindowMini_C_GetAnimationOut::OutAnimationOut' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_GetAnimationOut, Temp_int_Variable) == 0x000008, "Member 'WBP_ItemGet_WindowMini_C_GetAnimationOut::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_GetAnimationOut, K2Node_Select_Default) == 0x000010, "Member 'WBP_ItemGet_WindowMini_C_GetAnimationOut::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemGet_WindowMini_C_GetAnimationOut;
 
 // Function WBP_ItemGet_WindowMini.WBP_ItemGet_WindowMini_C.GetItemCountWidgetIconTexture
 // 0x0050 (0x0050 - 0x0000)
@@ -368,15 +227,7 @@ public:
 	uint8                                         Pad_13[0x5];                                       // 0x0013(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGadgetUIData                          CallFunc_GetGadgetUIData_OutGadgetUIData;          // 0x0018(0x0038)()
 };
-static_assert(alignof(WBP_ItemGet_WindowMini_C_GetItemCountWidgetIconTexture) == 0x000008, "Wrong alignment on WBP_ItemGet_WindowMini_C_GetItemCountWidgetIconTexture");
-static_assert(sizeof(WBP_ItemGet_WindowMini_C_GetItemCountWidgetIconTexture) == 0x000050, "Wrong size on WBP_ItemGet_WindowMini_C_GetItemCountWidgetIconTexture");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_GetItemCountWidgetIconTexture, InRewardType) == 0x000000, "Member 'WBP_ItemGet_WindowMini_C_GetItemCountWidgetIconTexture::InRewardType' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_GetItemCountWidgetIconTexture, InRewardId) == 0x000004, "Member 'WBP_ItemGet_WindowMini_C_GetItemCountWidgetIconTexture::InRewardId' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_GetItemCountWidgetIconTexture, OutIconTexture) == 0x000008, "Member 'WBP_ItemGet_WindowMini_C_GetItemCountWidgetIconTexture::OutIconTexture' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_GetItemCountWidgetIconTexture, CallFunc_Conv_IntToByte_ReturnValue) == 0x000010, "Member 'WBP_ItemGet_WindowMini_C_GetItemCountWidgetIconTexture::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_GetItemCountWidgetIconTexture, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000011, "Member 'WBP_ItemGet_WindowMini_C_GetItemCountWidgetIconTexture::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_GetItemCountWidgetIconTexture, CallFunc_GetValidValue_ReturnValue) == 0x000012, "Member 'WBP_ItemGet_WindowMini_C_GetItemCountWidgetIconTexture::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_GetItemCountWidgetIconTexture, CallFunc_GetGadgetUIData_OutGadgetUIData) == 0x000018, "Member 'WBP_ItemGet_WindowMini_C_GetItemCountWidgetIconTexture::CallFunc_GetGadgetUIData_OutGadgetUIData' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemGet_WindowMini_C_GetItemCountWidgetIconTexture;
 
 // Function WBP_ItemGet_WindowMini.WBP_ItemGet_WindowMini_C.GetItemIconImageWidget
 // 0x0018 (0x0018 - 0x0000)
@@ -388,11 +239,7 @@ public:
 	class UImage*                                 OutImageWidget;                                    // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemGet_WindowMini_C_GetItemIconImageWidget) == 0x000008, "Wrong alignment on WBP_ItemGet_WindowMini_C_GetItemIconImageWidget");
-static_assert(sizeof(WBP_ItemGet_WindowMini_C_GetItemIconImageWidget) == 0x000018, "Wrong size on WBP_ItemGet_WindowMini_C_GetItemIconImageWidget");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_GetItemIconImageWidget, InRewardType) == 0x000000, "Member 'WBP_ItemGet_WindowMini_C_GetItemIconImageWidget::InRewardType' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_GetItemIconImageWidget, OutImageWidget) == 0x000008, "Member 'WBP_ItemGet_WindowMini_C_GetItemIconImageWidget::OutImageWidget' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_GetItemIconImageWidget, K2Node_SwitchEnum_CmpSuccess) == 0x000010, "Member 'WBP_ItemGet_WindowMini_C_GetItemIconImageWidget::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemGet_WindowMini_C_GetItemIconImageWidget;
 
 // Function WBP_ItemGet_WindowMini.WBP_ItemGet_WindowMini_C.GetMachineTypeIconImage
 // 0x0008 (0x0008 - 0x0000)
@@ -401,9 +248,7 @@ struct WBP_ItemGet_WindowMini_C_GetMachineTypeIconImage final
 public:
 	class UImage*                                 ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemGet_WindowMini_C_GetMachineTypeIconImage) == 0x000008, "Wrong alignment on WBP_ItemGet_WindowMini_C_GetMachineTypeIconImage");
-static_assert(sizeof(WBP_ItemGet_WindowMini_C_GetMachineTypeIconImage) == 0x000008, "Wrong size on WBP_ItemGet_WindowMini_C_GetMachineTypeIconImage");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_GetMachineTypeIconImage, ReturnValue) == 0x000000, "Member 'WBP_ItemGet_WindowMini_C_GetMachineTypeIconImage::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemGet_WindowMini_C_GetMachineTypeIconImage;
 
 // Function WBP_ItemGet_WindowMini.WBP_ItemGet_WindowMini_C.PrintInvalidRewardWarning
 // 0x0008 (0x0008 - 0x0000)
@@ -414,10 +259,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         InRewardId;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemGet_WindowMini_C_PrintInvalidRewardWarning) == 0x000004, "Wrong alignment on WBP_ItemGet_WindowMini_C_PrintInvalidRewardWarning");
-static_assert(sizeof(WBP_ItemGet_WindowMini_C_PrintInvalidRewardWarning) == 0x000008, "Wrong size on WBP_ItemGet_WindowMini_C_PrintInvalidRewardWarning");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_PrintInvalidRewardWarning, InRewardType) == 0x000000, "Member 'WBP_ItemGet_WindowMini_C_PrintInvalidRewardWarning::InRewardType' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_PrintInvalidRewardWarning, InRewardId) == 0x000004, "Member 'WBP_ItemGet_WindowMini_C_PrintInvalidRewardWarning::InRewardId' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemGet_WindowMini_C_PrintInvalidRewardWarning;
 
 // Function WBP_ItemGet_WindowMini.WBP_ItemGet_WindowMini_C.SetBaseDisplay
 // 0x0001 (0x0001 - 0x0000)
@@ -426,9 +268,7 @@ struct WBP_ItemGet_WindowMini_C_SetBaseDisplay final
 public:
 	bool                                          bRewardDisplay;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemGet_WindowMini_C_SetBaseDisplay) == 0x000001, "Wrong alignment on WBP_ItemGet_WindowMini_C_SetBaseDisplay");
-static_assert(sizeof(WBP_ItemGet_WindowMini_C_SetBaseDisplay) == 0x000001, "Wrong size on WBP_ItemGet_WindowMini_C_SetBaseDisplay");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_SetBaseDisplay, bRewardDisplay) == 0x000000, "Member 'WBP_ItemGet_WindowMini_C_SetBaseDisplay::bRewardDisplay' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemGet_WindowMini_C_SetBaseDisplay;
 
 // Function WBP_ItemGet_WindowMini.WBP_ItemGet_WindowMini_C.SetDisplayParam
 // 0x0018 (0x0018 - 0x0000)
@@ -438,10 +278,7 @@ public:
 	TArray<struct FRewardGetWindowParam>          InDisplayParamArray;                               // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	int32                                         InWindowZOrder;                                    // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemGet_WindowMini_C_SetDisplayParam) == 0x000008, "Wrong alignment on WBP_ItemGet_WindowMini_C_SetDisplayParam");
-static_assert(sizeof(WBP_ItemGet_WindowMini_C_SetDisplayParam) == 0x000018, "Wrong size on WBP_ItemGet_WindowMini_C_SetDisplayParam");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_SetDisplayParam, InDisplayParamArray) == 0x000000, "Member 'WBP_ItemGet_WindowMini_C_SetDisplayParam::InDisplayParamArray' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_SetDisplayParam, InWindowZOrder) == 0x000010, "Member 'WBP_ItemGet_WindowMini_C_SetDisplayParam::InWindowZOrder' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemGet_WindowMini_C_SetDisplayParam;
 
 // Function WBP_ItemGet_WindowMini.WBP_ItemGet_WindowMini_C.SetDisplayParams
 // 0x0020 (0x0020 - 0x0000)
@@ -453,11 +290,7 @@ public:
 	TArray<struct FRewardGetWindowParam>          InRewardParam;                                     // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	int32                                         InWindowZOrder;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemGet_WindowMini_C_SetDisplayParams) == 0x000008, "Wrong alignment on WBP_ItemGet_WindowMini_C_SetDisplayParams");
-static_assert(sizeof(WBP_ItemGet_WindowMini_C_SetDisplayParams) == 0x000020, "Wrong size on WBP_ItemGet_WindowMini_C_SetDisplayParams");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_SetDisplayParams, InRateRank) == 0x000000, "Member 'WBP_ItemGet_WindowMini_C_SetDisplayParams::InRateRank' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_SetDisplayParams, InRewardParam) == 0x000008, "Member 'WBP_ItemGet_WindowMini_C_SetDisplayParams::InRewardParam' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_SetDisplayParams, InWindowZOrder) == 0x000018, "Member 'WBP_ItemGet_WindowMini_C_SetDisplayParams::InWindowZOrder' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemGet_WindowMini_C_SetDisplayParams;
 
 // Function WBP_ItemGet_WindowMini.WBP_ItemGet_WindowMini_C.SetItemCountWidget
 // 0x0018 (0x0018 - 0x0000)
@@ -470,12 +303,7 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             InIconTexture;                                     // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemGet_WindowMini_C_SetItemCountWidget) == 0x000008, "Wrong alignment on WBP_ItemGet_WindowMini_C_SetItemCountWidget");
-static_assert(sizeof(WBP_ItemGet_WindowMini_C_SetItemCountWidget) == 0x000018, "Wrong size on WBP_ItemGet_WindowMini_C_SetItemCountWidget");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_SetItemCountWidget, InItemNum) == 0x000000, "Member 'WBP_ItemGet_WindowMini_C_SetItemCountWidget::InItemNum' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_SetItemCountWidget, InItemGetNum) == 0x000004, "Member 'WBP_ItemGet_WindowMini_C_SetItemCountWidget::InItemGetNum' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_SetItemCountWidget, InRewardType) == 0x000008, "Member 'WBP_ItemGet_WindowMini_C_SetItemCountWidget::InRewardType' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_SetItemCountWidget, InIconTexture) == 0x000010, "Member 'WBP_ItemGet_WindowMini_C_SetItemCountWidget::InIconTexture' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemGet_WindowMini_C_SetItemCountWidget;
 
 // Function WBP_ItemGet_WindowMini.WBP_ItemGet_WindowMini_C.SetItemCountWidgetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -484,9 +312,7 @@ struct WBP_ItemGet_WindowMini_C_SetItemCountWidgetVisible final
 public:
 	bool                                          bInVisible;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemGet_WindowMini_C_SetItemCountWidgetVisible) == 0x000001, "Wrong alignment on WBP_ItemGet_WindowMini_C_SetItemCountWidgetVisible");
-static_assert(sizeof(WBP_ItemGet_WindowMini_C_SetItemCountWidgetVisible) == 0x000001, "Wrong size on WBP_ItemGet_WindowMini_C_SetItemCountWidgetVisible");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_SetItemCountWidgetVisible, bInVisible) == 0x000000, "Member 'WBP_ItemGet_WindowMini_C_SetItemCountWidgetVisible::bInVisible' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemGet_WindowMini_C_SetItemCountWidgetVisible;
 
 // Function WBP_ItemGet_WindowMini.WBP_ItemGet_WindowMini_C.SetItemIconActiveIndex
 // 0x0001 (0x0001 - 0x0000)
@@ -495,9 +321,7 @@ struct WBP_ItemGet_WindowMini_C_SetItemIconActiveIndex final
 public:
 	ERewardType                                   InRewardType;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemGet_WindowMini_C_SetItemIconActiveIndex) == 0x000001, "Wrong alignment on WBP_ItemGet_WindowMini_C_SetItemIconActiveIndex");
-static_assert(sizeof(WBP_ItemGet_WindowMini_C_SetItemIconActiveIndex) == 0x000001, "Wrong size on WBP_ItemGet_WindowMini_C_SetItemIconActiveIndex");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_SetItemIconActiveIndex, InRewardType) == 0x000000, "Member 'WBP_ItemGet_WindowMini_C_SetItemIconActiveIndex::InRewardType' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemGet_WindowMini_C_SetItemIconActiveIndex;
 
 // Function WBP_ItemGet_WindowMini.WBP_ItemGet_WindowMini_C.SetItemIconImageWidgetVisible
 // 0x0002 (0x0002 - 0x0000)
@@ -507,10 +331,7 @@ public:
 	ERewardType                                   InRewardType;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bInVisible;                                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemGet_WindowMini_C_SetItemIconImageWidgetVisible) == 0x000001, "Wrong alignment on WBP_ItemGet_WindowMini_C_SetItemIconImageWidgetVisible");
-static_assert(sizeof(WBP_ItemGet_WindowMini_C_SetItemIconImageWidgetVisible) == 0x000002, "Wrong size on WBP_ItemGet_WindowMini_C_SetItemIconImageWidgetVisible");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_SetItemIconImageWidgetVisible, InRewardType) == 0x000000, "Member 'WBP_ItemGet_WindowMini_C_SetItemIconImageWidgetVisible::InRewardType' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_SetItemIconImageWidgetVisible, bInVisible) == 0x000001, "Member 'WBP_ItemGet_WindowMini_C_SetItemIconImageWidgetVisible::bInVisible' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemGet_WindowMini_C_SetItemIconImageWidgetVisible;
 
 // Function WBP_ItemGet_WindowMini.WBP_ItemGet_WindowMini_C.SetItemName
 // 0x0010 (0x0010 - 0x0000)
@@ -519,9 +340,7 @@ struct WBP_ItemGet_WindowMini_C_SetItemName final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_ItemGet_WindowMini_C_SetItemName) == 0x000008, "Wrong alignment on WBP_ItemGet_WindowMini_C_SetItemName");
-static_assert(sizeof(WBP_ItemGet_WindowMini_C_SetItemName) == 0x000010, "Wrong size on WBP_ItemGet_WindowMini_C_SetItemName");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_SetItemName, InText) == 0x000000, "Member 'WBP_ItemGet_WindowMini_C_SetItemName::InText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemGet_WindowMini_C_SetItemName;
 
 // Function WBP_ItemGet_WindowMini.WBP_ItemGet_WindowMini_C.SetMachineTypeIconByRewardParam
 // 0x0008 (0x0008 - 0x0000)
@@ -532,10 +351,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         InRewardId;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemGet_WindowMini_C_SetMachineTypeIconByRewardParam) == 0x000004, "Wrong alignment on WBP_ItemGet_WindowMini_C_SetMachineTypeIconByRewardParam");
-static_assert(sizeof(WBP_ItemGet_WindowMini_C_SetMachineTypeIconByRewardParam) == 0x000008, "Wrong size on WBP_ItemGet_WindowMini_C_SetMachineTypeIconByRewardParam");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_SetMachineTypeIconByRewardParam, InRewardType) == 0x000000, "Member 'WBP_ItemGet_WindowMini_C_SetMachineTypeIconByRewardParam::InRewardType' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_SetMachineTypeIconByRewardParam, InRewardId) == 0x000004, "Member 'WBP_ItemGet_WindowMini_C_SetMachineTypeIconByRewardParam::InRewardId' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemGet_WindowMini_C_SetMachineTypeIconByRewardParam;
 
 // Function WBP_ItemGet_WindowMini.WBP_ItemGet_WindowMini_C.SetMachineTypeIconVisibility
 // 0x0001 (0x0001 - 0x0000)
@@ -544,9 +360,7 @@ struct WBP_ItemGet_WindowMini_C_SetMachineTypeIconVisibility final
 public:
 	ESlateVisibility                              InVisibility;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemGet_WindowMini_C_SetMachineTypeIconVisibility) == 0x000001, "Wrong alignment on WBP_ItemGet_WindowMini_C_SetMachineTypeIconVisibility");
-static_assert(sizeof(WBP_ItemGet_WindowMini_C_SetMachineTypeIconVisibility) == 0x000001, "Wrong size on WBP_ItemGet_WindowMini_C_SetMachineTypeIconVisibility");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_SetMachineTypeIconVisibility, InVisibility) == 0x000000, "Member 'WBP_ItemGet_WindowMini_C_SetMachineTypeIconVisibility::InVisibility' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemGet_WindowMini_C_SetMachineTypeIconVisibility;
 
 // Function WBP_ItemGet_WindowMini.WBP_ItemGet_WindowMini_C.SetModeTitleText
 // 0x0020 (0x0020 - 0x0000)
@@ -556,10 +370,7 @@ public:
 	class FText                                   InRankTitleText;                                   // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 	class FText                                   InRewardTitleText;                                 // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_ItemGet_WindowMini_C_SetModeTitleText) == 0x000008, "Wrong alignment on WBP_ItemGet_WindowMini_C_SetModeTitleText");
-static_assert(sizeof(WBP_ItemGet_WindowMini_C_SetModeTitleText) == 0x000020, "Wrong size on WBP_ItemGet_WindowMini_C_SetModeTitleText");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_SetModeTitleText, InRankTitleText) == 0x000000, "Member 'WBP_ItemGet_WindowMini_C_SetModeTitleText::InRankTitleText' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_SetModeTitleText, InRewardTitleText) == 0x000010, "Member 'WBP_ItemGet_WindowMini_C_SetModeTitleText::InRewardTitleText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemGet_WindowMini_C_SetModeTitleText;
 
 // Function WBP_ItemGet_WindowMini.WBP_ItemGet_WindowMini_C.SetRewardTypeText
 // 0x0010 (0x0010 - 0x0000)
@@ -568,9 +379,7 @@ struct WBP_ItemGet_WindowMini_C_SetRewardTypeText final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_ItemGet_WindowMini_C_SetRewardTypeText) == 0x000008, "Wrong alignment on WBP_ItemGet_WindowMini_C_SetRewardTypeText");
-static_assert(sizeof(WBP_ItemGet_WindowMini_C_SetRewardTypeText) == 0x000010, "Wrong size on WBP_ItemGet_WindowMini_C_SetRewardTypeText");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_SetRewardTypeText, InText) == 0x000000, "Member 'WBP_ItemGet_WindowMini_C_SetRewardTypeText::InText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemGet_WindowMini_C_SetRewardTypeText;
 
 // Function WBP_ItemGet_WindowMini.WBP_ItemGet_WindowMini_C.UpdateRewardItemInfoDisplay
 // 0x000C (0x000C - 0x0000)
@@ -582,11 +391,7 @@ public:
 	int32                                         InRewardId;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         InRewardNum;                                       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemGet_WindowMini_C_UpdateRewardItemInfoDisplay) == 0x000004, "Wrong alignment on WBP_ItemGet_WindowMini_C_UpdateRewardItemInfoDisplay");
-static_assert(sizeof(WBP_ItemGet_WindowMini_C_UpdateRewardItemInfoDisplay) == 0x00000C, "Wrong size on WBP_ItemGet_WindowMini_C_UpdateRewardItemInfoDisplay");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_UpdateRewardItemInfoDisplay, InRewardType) == 0x000000, "Member 'WBP_ItemGet_WindowMini_C_UpdateRewardItemInfoDisplay::InRewardType' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_UpdateRewardItemInfoDisplay, InRewardId) == 0x000004, "Member 'WBP_ItemGet_WindowMini_C_UpdateRewardItemInfoDisplay::InRewardId' has a wrong offset!");
-static_assert(offsetof(WBP_ItemGet_WindowMini_C_UpdateRewardItemInfoDisplay, InRewardNum) == 0x000008, "Member 'WBP_ItemGet_WindowMini_C_UpdateRewardItemInfoDisplay::InRewardNum' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemGet_WindowMini_C_UpdateRewardItemInfoDisplay;
 
 }
 

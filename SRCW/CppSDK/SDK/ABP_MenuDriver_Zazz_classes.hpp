@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // AnimBlueprintGeneratedClass ABP_MenuDriver_Zazz.ABP_MenuDriver_Zazz_C
-// 0x0000 (0x25B0 - 0x25B0)
+// 0x0000 (0x1CC0 - 0x1CC0)
 class UABP_MenuDriver_Zazz_C final : public UABPT_MenuDriver_C
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABP_MenuDriver_Zazz_C">();
+		BP_STATIC_CLASS_IMPL("ABP_MenuDriver_Zazz_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABP_MenuDriver_Zazz_C")
 	}
 	static class UABP_MenuDriver_Zazz_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UABP_MenuDriver_Zazz_C>();
 	}
 };
-static_assert(alignof(UABP_MenuDriver_Zazz_C) == 0x000010, "Wrong alignment on UABP_MenuDriver_Zazz_C");
-static_assert(sizeof(UABP_MenuDriver_Zazz_C) == 0x0025B0, "Wrong size on UABP_MenuDriver_Zazz_C");
+DUMPER7_ASSERTS_UABP_MenuDriver_Zazz_C;
 
 }
 

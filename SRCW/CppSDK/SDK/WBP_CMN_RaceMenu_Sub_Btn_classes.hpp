@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK
@@ -99,42 +99,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_RaceMenu_Sub_Btn_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_RaceMenu_Sub_Btn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_RaceMenu_Sub_Btn_C")
 	}
 	static class UWBP_CMN_RaceMenu_Sub_Btn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_RaceMenu_Sub_Btn_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_RaceMenu_Sub_Btn_C) == 0x000008, "Wrong alignment on UWBP_CMN_RaceMenu_Sub_Btn_C");
-static_assert(sizeof(UWBP_CMN_RaceMenu_Sub_Btn_C) == 0x0005B8, "Wrong size on UWBP_CMN_RaceMenu_Sub_Btn_C");
-static_assert(offsetof(UWBP_CMN_RaceMenu_Sub_Btn_C, UberGraphFrame) == 0x0004E0, "Member 'UWBP_CMN_RaceMenu_Sub_Btn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_RaceMenu_Sub_Btn_C, Btn_Select_to_Active) == 0x0004E8, "Member 'UWBP_CMN_RaceMenu_Sub_Btn_C::Btn_Select_to_Active' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_RaceMenu_Sub_Btn_C, Btn_Select_CancelBack) == 0x0004F0, "Member 'UWBP_CMN_RaceMenu_Sub_Btn_C::Btn_Select_CancelBack' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_RaceMenu_Sub_Btn_C, Btn_Active_Out) == 0x0004F8, "Member 'UWBP_CMN_RaceMenu_Sub_Btn_C::Btn_Active_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_RaceMenu_Sub_Btn_C, Btn_Select_Out) == 0x000500, "Member 'UWBP_CMN_RaceMenu_Sub_Btn_C::Btn_Select_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_RaceMenu_Sub_Btn_C, Btn_Active_to_Select) == 0x000508, "Member 'UWBP_CMN_RaceMenu_Sub_Btn_C::Btn_Active_to_Select' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_RaceMenu_Sub_Btn_C, Btn_Select_Loop) == 0x000510, "Member 'UWBP_CMN_RaceMenu_Sub_Btn_C::Btn_Select_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_RaceMenu_Sub_Btn_C, Btn_Active_Loop) == 0x000518, "Member 'UWBP_CMN_RaceMenu_Sub_Btn_C::Btn_Active_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_RaceMenu_Sub_Btn_C, DSP_LobbyInvitation) == 0x000520, "Member 'UWBP_CMN_RaceMenu_Sub_Btn_C::DSP_LobbyInvitation' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_RaceMenu_Sub_Btn_C, DSP_NewIconWave) == 0x000528, "Member 'UWBP_CMN_RaceMenu_Sub_Btn_C::DSP_NewIconWave' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_RaceMenu_Sub_Btn_C, DSP_Non_ActiveCover) == 0x000530, "Member 'UWBP_CMN_RaceMenu_Sub_Btn_C::DSP_Non_ActiveCover' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_RaceMenu_Sub_Btn_C, PAT_BtnColor) == 0x000538, "Member 'UWBP_CMN_RaceMenu_Sub_Btn_C::PAT_BtnColor' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_RaceMenu_Sub_Btn_C, PAT_BtnPict) == 0x000540, "Member 'UWBP_CMN_RaceMenu_Sub_Btn_C::PAT_BtnPict' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_RaceMenu_Sub_Btn_C, TXT_Btn_Active) == 0x000548, "Member 'UWBP_CMN_RaceMenu_Sub_Btn_C::TXT_Btn_Active' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_RaceMenu_Sub_Btn_C, TXT_Btn_Select) == 0x000550, "Member 'UWBP_CMN_RaceMenu_Sub_Btn_C::TXT_Btn_Select' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_RaceMenu_Sub_Btn_C, WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn) == 0x000558, "Member 'UWBP_CMN_RaceMenu_Sub_Btn_C::WBP_DonpaTicketApp_Sub_TicketNumber_OnBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_RaceMenu_Sub_Btn_C, ButtonPictIndex) == 0x000560, "Member 'UWBP_CMN_RaceMenu_Sub_Btn_C::ButtonPictIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_RaceMenu_Sub_Btn_C, ButtonText) == 0x000568, "Member 'UWBP_CMN_RaceMenu_Sub_Btn_C::ButtonText' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_RaceMenu_Sub_Btn_C, NowLoopAnim) == 0x000578, "Member 'UWBP_CMN_RaceMenu_Sub_Btn_C::NowLoopAnim' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_RaceMenu_Sub_Btn_C, FocusAnimStatus) == 0x000580, "Member 'UWBP_CMN_RaceMenu_Sub_Btn_C::FocusAnimStatus' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_RaceMenu_Sub_Btn_C, OnRightStickButtonPressedEvent) == 0x000588, "Member 'UWBP_CMN_RaceMenu_Sub_Btn_C::OnRightStickButtonPressedEvent' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_RaceMenu_Sub_Btn_C, NeedDonpaTicketCount) == 0x000598, "Member 'UWBP_CMN_RaceMenu_Sub_Btn_C::NeedDonpaTicketCount' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_RaceMenu_Sub_Btn_C, IsAccept) == 0x00059C, "Member 'UWBP_CMN_RaceMenu_Sub_Btn_C::IsAccept' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_RaceMenu_Sub_Btn_C, OtherBtn) == 0x0005A0, "Member 'UWBP_CMN_RaceMenu_Sub_Btn_C::OtherBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_RaceMenu_Sub_Btn_C, bIsNonActiveBtn) == 0x0005B0, "Member 'UWBP_CMN_RaceMenu_Sub_Btn_C::bIsNonActiveBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_RaceMenu_Sub_Btn_C, AcceptKeyIgnored) == 0x0005B1, "Member 'UWBP_CMN_RaceMenu_Sub_Btn_C::AcceptKeyIgnored' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_RaceMenu_Sub_Btn_C, IsNotAnim) == 0x0005B2, "Member 'UWBP_CMN_RaceMenu_Sub_Btn_C::IsNotAnim' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_RaceMenu_Sub_Btn_C;
 
 }
 

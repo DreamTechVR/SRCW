@@ -44,27 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C">();
+		BP_STATIC_CLASS_IMPL("WBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C")
 	}
 	static class UWBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C>();
 	}
 };
-static_assert(alignof(UWBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C) == 0x000008, "Wrong alignment on UWBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C");
-static_assert(sizeof(UWBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C) == 0x000348, "Wrong size on UWBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C");
-static_assert(offsetof(UWBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C, Btn_Loop) == 0x0002E8, "Member 'UWBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C::Btn_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C, base) == 0x0002F0, "Member 'UWBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C, Btn_image) == 0x0002F8, "Member 'UWBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C::Btn_image' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C, WBP_ClassSelect_Sub_Trophy_01) == 0x000300, "Member 'UWBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C::WBP_ClassSelect_Sub_Trophy_01' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C, WBP_ClassSelect_Sub_Trophy_02) == 0x000308, "Member 'UWBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C::WBP_ClassSelect_Sub_Trophy_02' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C, WBP_ClassSelect_Sub_Trophy_03) == 0x000310, "Member 'UWBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C::WBP_ClassSelect_Sub_Trophy_03' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C, WBP_ClassSelect_Sub_Trophy_04) == 0x000318, "Member 'UWBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C::WBP_ClassSelect_Sub_Trophy_04' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C, WBP_ClassSelect_Sub_Trophy_05) == 0x000320, "Member 'UWBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C::WBP_ClassSelect_Sub_Trophy_05' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C, WBP_ClassSelect_Sub_Trophy_06) == 0x000328, "Member 'UWBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C::WBP_ClassSelect_Sub_Trophy_06' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C, WBP_ClassSelect_Sub_Trophy_07) == 0x000330, "Member 'UWBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C::WBP_ClassSelect_Sub_Trophy_07' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C, ClassSelectTrophyArr) == 0x000338, "Member 'UWBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C::ClassSelectTrophyArr' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_TopMenu_Btnmode_Sub_Offine_Grandprix_C;
 
 }
 

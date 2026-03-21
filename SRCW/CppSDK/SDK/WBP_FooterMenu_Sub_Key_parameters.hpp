@@ -24,11 +24,7 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FooterMenu_Sub_Key_C_ExecuteUbergraph_WBP_FooterMenu_Sub_Key) == 0x000008, "Wrong alignment on WBP_FooterMenu_Sub_Key_C_ExecuteUbergraph_WBP_FooterMenu_Sub_Key");
-static_assert(sizeof(WBP_FooterMenu_Sub_Key_C_ExecuteUbergraph_WBP_FooterMenu_Sub_Key) == 0x000018, "Wrong size on WBP_FooterMenu_Sub_Key_C_ExecuteUbergraph_WBP_FooterMenu_Sub_Key");
-static_assert(offsetof(WBP_FooterMenu_Sub_Key_C_ExecuteUbergraph_WBP_FooterMenu_Sub_Key, EntryPoint) == 0x000000, "Member 'WBP_FooterMenu_Sub_Key_C_ExecuteUbergraph_WBP_FooterMenu_Sub_Key::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_Key_C_ExecuteUbergraph_WBP_FooterMenu_Sub_Key, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'WBP_FooterMenu_Sub_Key_C_ExecuteUbergraph_WBP_FooterMenu_Sub_Key::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FooterMenu_Sub_Key_C_ExecuteUbergraph_WBP_FooterMenu_Sub_Key, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000010, "Member 'WBP_FooterMenu_Sub_Key_C_ExecuteUbergraph_WBP_FooterMenu_Sub_Key::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FooterMenu_Sub_Key_C_ExecuteUbergraph_WBP_FooterMenu_Sub_Key;
 
 }
 

@@ -51,14 +51,7 @@ public:
 	bool                                          bUpdateEvenWhenPaused;                             // 0x0060(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FHierarchicalStateMachineStateInfo) == 0x000008, "Wrong alignment on FHierarchicalStateMachineStateInfo");
-static_assert(sizeof(FHierarchicalStateMachineStateInfo) == 0x000068, "Wrong size on FHierarchicalStateMachineStateInfo");
-static_assert(offsetof(FHierarchicalStateMachineStateInfo, StateName) == 0x000000, "Member 'FHierarchicalStateMachineStateInfo::StateName' has a wrong offset!");
-static_assert(offsetof(FHierarchicalStateMachineStateInfo, OnInitState) == 0x000008, "Member 'FHierarchicalStateMachineStateInfo::OnInitState' has a wrong offset!");
-static_assert(offsetof(FHierarchicalStateMachineStateInfo, OnUpdateState) == 0x000018, "Member 'FHierarchicalStateMachineStateInfo::OnUpdateState' has a wrong offset!");
-static_assert(offsetof(FHierarchicalStateMachineStateInfo, OnExitState) == 0x000028, "Member 'FHierarchicalStateMachineStateInfo::OnExitState' has a wrong offset!");
-static_assert(offsetof(FHierarchicalStateMachineStateInfo, ChildStateMachineClass) == 0x000038, "Member 'FHierarchicalStateMachineStateInfo::ChildStateMachineClass' has a wrong offset!");
-static_assert(offsetof(FHierarchicalStateMachineStateInfo, bUpdateEvenWhenPaused) == 0x000060, "Member 'FHierarchicalStateMachineStateInfo::bUpdateEvenWhenPaused' has a wrong offset!");
+DUMPER7_ASSERTS_FHierarchicalStateMachineStateInfo;
 
 }
 

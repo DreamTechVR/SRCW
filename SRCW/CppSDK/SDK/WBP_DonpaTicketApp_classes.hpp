@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -37,19 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_DonpaTicketApp_C">();
+		BP_STATIC_CLASS_IMPL("WBP_DonpaTicketApp_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_DonpaTicketApp_C")
 	}
 	static class UWBP_DonpaTicketApp_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_DonpaTicketApp_C>();
 	}
 };
-static_assert(alignof(UWBP_DonpaTicketApp_C) == 0x000008, "Wrong alignment on UWBP_DonpaTicketApp_C");
-static_assert(sizeof(UWBP_DonpaTicketApp_C) == 0x000488, "Wrong size on UWBP_DonpaTicketApp_C");
-static_assert(offsetof(UWBP_DonpaTicketApp_C, UberGraphFrame) == 0x000468, "Member 'UWBP_DonpaTicketApp_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_DonpaTicketApp_C, Out) == 0x000470, "Member 'UWBP_DonpaTicketApp_C::Out' has a wrong offset!");
-static_assert(offsetof(UWBP_DonpaTicketApp_C, Loop) == 0x000478, "Member 'UWBP_DonpaTicketApp_C::Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_DonpaTicketApp_C, In) == 0x000480, "Member 'UWBP_DonpaTicketApp_C::In' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_DonpaTicketApp_C;
 
 }
 

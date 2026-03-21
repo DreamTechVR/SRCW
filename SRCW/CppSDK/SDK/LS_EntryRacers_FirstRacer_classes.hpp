@@ -42,19 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LS_EntryRacers_FirstRacer_DirectorBP_C">();
+		BP_STATIC_CLASS_IMPL("LS_EntryRacers_FirstRacer_DirectorBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LS_EntryRacers_FirstRacer_DirectorBP_C")
 	}
 	static class ULS_EntryRacers_FirstRacer_DirectorBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULS_EntryRacers_FirstRacer_DirectorBP_C>();
 	}
 };
-static_assert(alignof(ULS_EntryRacers_FirstRacer_DirectorBP_C) == 0x000008, "Wrong alignment on ULS_EntryRacers_FirstRacer_DirectorBP_C");
-static_assert(sizeof(ULS_EntryRacers_FirstRacer_DirectorBP_C) == 0x000078, "Wrong size on ULS_EntryRacers_FirstRacer_DirectorBP_C");
-static_assert(offsetof(ULS_EntryRacers_FirstRacer_DirectorBP_C, UberGraphFrame) == 0x000048, "Member 'ULS_EntryRacers_FirstRacer_DirectorBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULS_EntryRacers_FirstRacer_DirectorBP_C, OnFinishedPlay) == 0x000050, "Member 'ULS_EntryRacers_FirstRacer_DirectorBP_C::OnFinishedPlay' has a wrong offset!");
-static_assert(offsetof(ULS_EntryRacers_FirstRacer_DirectorBP_C, OnEnterRacerActor) == 0x000060, "Member 'ULS_EntryRacers_FirstRacer_DirectorBP_C::OnEnterRacerActor' has a wrong offset!");
-static_assert(offsetof(ULS_EntryRacers_FirstRacer_DirectorBP_C, SceneDriver) == 0x000070, "Member 'ULS_EntryRacers_FirstRacer_DirectorBP_C::SceneDriver' has a wrong offset!");
+DUMPER7_ASSERTS_ULS_EntryRacers_FirstRacer_DirectorBP_C;
 
 }
 

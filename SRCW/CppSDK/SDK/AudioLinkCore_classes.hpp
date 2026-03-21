@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AudioLinkSettingsAbstract">();
+		STATIC_CLASS_IMPL("AudioLinkSettingsAbstract")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AudioLinkSettingsAbstract")
 	}
 	static class UAudioLinkSettingsAbstract* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAudioLinkSettingsAbstract>();
 	}
 };
-static_assert(alignof(UAudioLinkSettingsAbstract) == 0x000008, "Wrong alignment on UAudioLinkSettingsAbstract");
-static_assert(sizeof(UAudioLinkSettingsAbstract) == 0x000038, "Wrong size on UAudioLinkSettingsAbstract");
+DUMPER7_ASSERTS_UAudioLinkSettingsAbstract;
 
 }
 

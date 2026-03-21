@@ -30,16 +30,7 @@ public:
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_1; // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Drone_Text_C_ExecuteUbergraph_WBP_Drone_Text) == 0x000008, "Wrong alignment on WBP_Drone_Text_C_ExecuteUbergraph_WBP_Drone_Text");
-static_assert(sizeof(WBP_Drone_Text_C_ExecuteUbergraph_WBP_Drone_Text) == 0x000038, "Wrong size on WBP_Drone_Text_C_ExecuteUbergraph_WBP_Drone_Text");
-static_assert(offsetof(WBP_Drone_Text_C_ExecuteUbergraph_WBP_Drone_Text, EntryPoint) == 0x000000, "Member 'WBP_Drone_Text_C_ExecuteUbergraph_WBP_Drone_Text::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Drone_Text_C_ExecuteUbergraph_WBP_Drone_Text, K2Node_CustomEvent_Index) == 0x000008, "Member 'WBP_Drone_Text_C_ExecuteUbergraph_WBP_Drone_Text::K2Node_CustomEvent_Index' has a wrong offset!");
-static_assert(offsetof(WBP_Drone_Text_C_ExecuteUbergraph_WBP_Drone_Text, K2Node_CustomEvent_Is_Reverse) == 0x000010, "Member 'WBP_Drone_Text_C_ExecuteUbergraph_WBP_Drone_Text::K2Node_CustomEvent_Is_Reverse' has a wrong offset!");
-static_assert(offsetof(WBP_Drone_Text_C_ExecuteUbergraph_WBP_Drone_Text, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000018, "Member 'WBP_Drone_Text_C_ExecuteUbergraph_WBP_Drone_Text::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Drone_Text_C_ExecuteUbergraph_WBP_Drone_Text, CallFunc_SelectFloat_ReturnValue) == 0x000020, "Member 'WBP_Drone_Text_C_ExecuteUbergraph_WBP_Drone_Text::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Drone_Text_C_ExecuteUbergraph_WBP_Drone_Text, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x000028, "Member 'WBP_Drone_Text_C_ExecuteUbergraph_WBP_Drone_Text::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Drone_Text_C_ExecuteUbergraph_WBP_Drone_Text, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000030, "Member 'WBP_Drone_Text_C_ExecuteUbergraph_WBP_Drone_Text::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Drone_Text_C_ExecuteUbergraph_WBP_Drone_Text, CallFunc_SetScalarParameterValue_Value_ImplicitCast_1) == 0x000034, "Member 'WBP_Drone_Text_C_ExecuteUbergraph_WBP_Drone_Text::CallFunc_SetScalarParameterValue_Value_ImplicitCast_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Drone_Text_C_ExecuteUbergraph_WBP_Drone_Text;
 
 // Function WBP_Drone_Text.WBP_Drone_Text_C.Set Moniter Meterial Index
 // 0x0008 (0x0008 - 0x0000)
@@ -48,9 +39,7 @@ struct WBP_Drone_Text_C_Set_Moniter_Meterial_Index final
 public:
 	double                                        Index_0;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Drone_Text_C_Set_Moniter_Meterial_Index) == 0x000008, "Wrong alignment on WBP_Drone_Text_C_Set_Moniter_Meterial_Index");
-static_assert(sizeof(WBP_Drone_Text_C_Set_Moniter_Meterial_Index) == 0x000008, "Wrong size on WBP_Drone_Text_C_Set_Moniter_Meterial_Index");
-static_assert(offsetof(WBP_Drone_Text_C_Set_Moniter_Meterial_Index, Index_0) == 0x000000, "Member 'WBP_Drone_Text_C_Set_Moniter_Meterial_Index::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Drone_Text_C_Set_Moniter_Meterial_Index;
 
 // Function WBP_Drone_Text.WBP_Drone_Text_C.Set Moniter Meterial Reverse
 // 0x0001 (0x0001 - 0x0000)
@@ -59,9 +48,7 @@ struct WBP_Drone_Text_C_Set_Moniter_Meterial_Reverse final
 public:
 	bool                                          Is_Reverse;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Drone_Text_C_Set_Moniter_Meterial_Reverse) == 0x000001, "Wrong alignment on WBP_Drone_Text_C_Set_Moniter_Meterial_Reverse");
-static_assert(sizeof(WBP_Drone_Text_C_Set_Moniter_Meterial_Reverse) == 0x000001, "Wrong size on WBP_Drone_Text_C_Set_Moniter_Meterial_Reverse");
-static_assert(offsetof(WBP_Drone_Text_C_Set_Moniter_Meterial_Reverse, Is_Reverse) == 0x000000, "Member 'WBP_Drone_Text_C_Set_Moniter_Meterial_Reverse::Is_Reverse' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Drone_Text_C_Set_Moniter_Meterial_Reverse;
 
 }
 

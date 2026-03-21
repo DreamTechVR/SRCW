@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
+#include "UnionRun_structs.hpp"
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
-#include "UnionUI_structs.hpp"
-#include "UnionLib_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "UnionRun_structs.hpp"
+#include "Engine_structs.hpp"
+#include "UnionLib_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK
@@ -95,29 +95,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_CharaMachineSequence_C">();
+		BP_STATIC_CLASS_IMPL("BP_CharaMachineSequence_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_CharaMachineSequence_C")
 	}
 	static class ABP_CharaMachineSequence_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_CharaMachineSequence_C>();
 	}
 };
-static_assert(alignof(ABP_CharaMachineSequence_C) == 0x000008, "Wrong alignment on ABP_CharaMachineSequence_C");
-static_assert(sizeof(ABP_CharaMachineSequence_C) == 0x000438, "Wrong size on ABP_CharaMachineSequence_C");
-static_assert(offsetof(ABP_CharaMachineSequence_C, UberGraphFrame) == 0x0003B0, "Member 'ABP_CharaMachineSequence_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_CharaMachineSequence_C, BPC_MachineState) == 0x0003B8, "Member 'ABP_CharaMachineSequence_C::BPC_MachineState' has a wrong offset!");
-static_assert(offsetof(ABP_CharaMachineSequence_C, BPC_CharaSelectState) == 0x0003C0, "Member 'ABP_CharaMachineSequence_C::BPC_CharaSelectState' has a wrong offset!");
-static_assert(offsetof(ABP_CharaMachineSequence_C, OnExitEvent) == 0x0003C8, "Member 'ABP_CharaMachineSequence_C::OnExitEvent' has a wrong offset!");
-static_assert(offsetof(ABP_CharaMachineSequence_C, Start_State) == 0x0003D8, "Member 'ABP_CharaMachineSequence_C::Start_State' has a wrong offset!");
-static_assert(offsetof(ABP_CharaMachineSequence_C, OnMachineSelectToCharaSelectEvent) == 0x0003E0, "Member 'ABP_CharaMachineSequence_C::OnMachineSelectToCharaSelectEvent' has a wrong offset!");
-static_assert(offsetof(ABP_CharaMachineSequence_C, OnCharaSelectToClassSelectEvent) == 0x0003F0, "Member 'ABP_CharaMachineSequence_C::OnCharaSelectToClassSelectEvent' has a wrong offset!");
-static_assert(offsetof(ABP_CharaMachineSequence_C, SelectedPlayerCharacterIndex) == 0x000400, "Member 'ABP_CharaMachineSequence_C::SelectedPlayerCharacterIndex' has a wrong offset!");
-static_assert(offsetof(ABP_CharaMachineSequence_C, ParamWindowMinParam) == 0x000410, "Member 'ABP_CharaMachineSequence_C::ParamWindowMinParam' has a wrong offset!");
-static_assert(offsetof(ABP_CharaMachineSequence_C, ParamWindowMaxParam) == 0x000418, "Member 'ABP_CharaMachineSequence_C::ParamWindowMaxParam' has a wrong offset!");
-static_assert(offsetof(ABP_CharaMachineSequence_C, ParamWindowCorrectionVal) == 0x000420, "Member 'ABP_CharaMachineSequence_C::ParamWindowCorrectionVal' has a wrong offset!");
-static_assert(offsetof(ABP_CharaMachineSequence_C, InitDriverID) == 0x000428, "Member 'ABP_CharaMachineSequence_C::InitDriverID' has a wrong offset!");
-static_assert(offsetof(ABP_CharaMachineSequence_C, bIsMessageBarVisible) == 0x000429, "Member 'ABP_CharaMachineSequence_C::bIsMessageBarVisible' has a wrong offset!");
-static_assert(offsetof(ABP_CharaMachineSequence_C, MessageBar) == 0x000430, "Member 'ABP_CharaMachineSequence_C::MessageBar' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_CharaMachineSequence_C;
 
 }
 

@@ -26,10 +26,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FST_ColorPresetSelectPageItemData> ItemDataList_6_9FB8251A47136F41FE29589EB76127FE; // 0x0008(0x0010)(Edit, BlueprintVisible)
 };
-static_assert(alignof(FST_ColorPresetSelectPageData) == 0x000008, "Wrong alignment on FST_ColorPresetSelectPageData");
-static_assert(sizeof(FST_ColorPresetSelectPageData) == 0x000018, "Wrong size on FST_ColorPresetSelectPageData");
-static_assert(offsetof(FST_ColorPresetSelectPageData, Type_2_E8BBDA1842884ADEA2E6A484F4F7532E) == 0x000000, "Member 'FST_ColorPresetSelectPageData::Type_2_E8BBDA1842884ADEA2E6A484F4F7532E' has a wrong offset!");
-static_assert(offsetof(FST_ColorPresetSelectPageData, ItemDataList_6_9FB8251A47136F41FE29589EB76127FE) == 0x000008, "Member 'FST_ColorPresetSelectPageData::ItemDataList_6_9FB8251A47136F41FE29589EB76127FE' has a wrong offset!");
+DUMPER7_ASSERTS_FST_ColorPresetSelectPageData;
 
 }
 

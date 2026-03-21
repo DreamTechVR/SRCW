@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "ST_ColorDetailWindowColorItemData_structs.hpp"
-#include "UnionUI_classes.hpp"
 #include "UMG_structs.hpp"
+#include "UnionUI_classes.hpp"
+#include "ST_ColorDetailWindowColorItemData_structs.hpp"
 
 
 namespace SDK
@@ -57,24 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MachineCustom_Sub_ColorPicker_LiquidIcon_C")
 	}
 	static class UWBP_MachineCustom_Sub_ColorPicker_LiquidIcon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MachineCustom_Sub_ColorPicker_LiquidIcon_C>();
 	}
 };
-static_assert(alignof(UWBP_MachineCustom_Sub_ColorPicker_LiquidIcon_C) == 0x000008, "Wrong alignment on UWBP_MachineCustom_Sub_ColorPicker_LiquidIcon_C");
-static_assert(sizeof(UWBP_MachineCustom_Sub_ColorPicker_LiquidIcon_C) == 0x0004D0, "Wrong size on UWBP_MachineCustom_Sub_ColorPicker_LiquidIcon_C");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_LiquidIcon_C, UberGraphFrame) == 0x000480, "Member 'UWBP_MachineCustom_Sub_ColorPicker_LiquidIcon_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_LiquidIcon_C, Btn_Select_Loop) == 0x000488, "Member 'UWBP_MachineCustom_Sub_ColorPicker_LiquidIcon_C::Btn_Select_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_LiquidIcon_C, Btn_Active_Loop) == 0x000490, "Member 'UWBP_MachineCustom_Sub_ColorPicker_LiquidIcon_C::Btn_Active_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_LiquidIcon_C, DSP_Cursor_PaintIcon) == 0x000498, "Member 'UWBP_MachineCustom_Sub_ColorPicker_LiquidIcon_C::DSP_Cursor_PaintIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_LiquidIcon_C, DSP_Set_Icon) == 0x0004A0, "Member 'UWBP_MachineCustom_Sub_ColorPicker_LiquidIcon_C::DSP_Set_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_LiquidIcon_C, MLC_LiquidIcon) == 0x0004A8, "Member 'UWBP_MachineCustom_Sub_ColorPicker_LiquidIcon_C::MLC_LiquidIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_LiquidIcon_C, ItemData) == 0x0004B0, "Member 'UWBP_MachineCustom_Sub_ColorPicker_LiquidIcon_C::ItemData' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_LiquidIcon_C, PlayerIndex) == 0x0004C8, "Member 'UWBP_MachineCustom_Sub_ColorPicker_LiquidIcon_C::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_LiquidIcon_C, IsPlaySound) == 0x0004CC, "Member 'UWBP_MachineCustom_Sub_ColorPicker_LiquidIcon_C::IsPlaySound' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MachineCustom_Sub_ColorPicker_LiquidIcon_C;
 
 }
 

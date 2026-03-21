@@ -10,73 +10,73 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
 #include "UnionRun_structs.hpp"
+#include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C
-// 0x0360 (0x0578 - 0x0218)
+// 0x0360 (0x0590 - 0x0230)
 class UBPC_RaceSequenceStateLoadAssets_C final : public URaceSequenceStateLoadAssets
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UUnionBtCollisionBinaryAsset*           TempCollisionAsset;                                // 0x0220(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UUnionNavigationBinaryDataAsset*        TempNavigationAsset;                               // 0x0228(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UUnionRunPathBinaryDataAsset*           TempRunPathAsset;                                  // 0x0230(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	EStageId                                      TempStageId;                                       // 0x0238(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_239[0x7];                                      // 0x0239(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                TempLocationOffset;                                // 0x0240(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         TempDomainIndex;                                   // 0x0258(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_25C[0x4];                                      // 0x025C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDateTime                              StartTime;                                         // 0x0260(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FDateTime                              endTime;                                           // 0x0268(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UUnionComPathBinaryDataAsset*           TempComPathAsset;                                  // 0x0270(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FPrimaryAssetId>                LoadCourseAssetIdList;                             // 0x0278(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<EStageId, struct FPrimaryAssetId>        StageDataAssetMap;                                 // 0x0288(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	int32                                         TempLightChannel;                                  // 0x02D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         TemporaryIndex;                                    // 0x02DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             TempCourseMapTexture;                              // 0x02E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FUnionRaceStageDynamicData             TempStageDynamicData;                              // 0x02E8(0x0070)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<struct FAppRaceStageSetting>           StageSettings;                                     // 0x0358(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	ETravelRingScreenType                         TempTravelRingScreenType;                          // 0x0368(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EIrregularEventId                             TempIrregularEventId;                              // 0x0369(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          TempEditorFinallap;                                // 0x036A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          TempEditorMainCourse;                              // 0x036B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36C[0x4];                                      // 0x036C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FStageCourseMapInfo>            Course_Map_UIInfo;                                 // 0x0370(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          TempFinalLap;                                      // 0x0380(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_381[0x7];                                      // 0x0381(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UTexture2D*>                     TempCourseMapTexture_0;                            // 0x0388(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	int32                                         TmpCoutseMapIndex;                                 // 0x0398(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39C[0x4];                                      // 0x039C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStageCourseMapInfo                    NewVar;                                            // 0x03A0(0x0048)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<EStageCourseMapInfo, struct FStageCourseMapParam> Course_Map_UIParam;                       // 0x03E8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<EStageCourseMainSubMapInfo, struct FStageCourseMapParam> SubCourse_Map_UIParam;             // 0x0438(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FString                                 UnloadStageName;                                   // 0x0488(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	TMap<class FString, class FString>            ConvertUnLoadName;                                 // 0x0498(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UUnionBtCollisionBinaryAsset*           CollisionData;                                     // 0x04E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UUnionRunPathBinaryDataAsset*           RunPathData;                                       // 0x04F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UUnionComPathBinaryDataAsset*           ComPathData;                                       // 0x04F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UUnionNavigationBinaryDataAsset*        NavigationData;                                    // 0x0500(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class FName                                   RowName;                                           // 0x0508(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                           RowNames;                                          // 0x0510(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class UMaterialInstance*>              TempEntranceCubemap;                               // 0x0520(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class UMaterialInstance*>              TempExitCubemap;                                   // 0x0530(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	int32                                         AnotherDimeTrialCount;                             // 0x0540(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         TempCourseEditorIndex;                             // 0x0544(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         StageCourseMainSubIndex;                           // 0x0548(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_54C[0x4];                                      // 0x054C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UStaticMesh*>                    TempEntranceMesh;                                  // 0x0550(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class UStaticMesh*>                    TempExitMesh;                                      // 0x0560(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          NewVar_0;                                          // 0x0570(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UUnionBtCollisionBinaryAsset*           TempCollisionAsset;                                // 0x0238(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UUnionNavigationBinaryDataAsset*        TempNavigationAsset;                               // 0x0240(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UUnionRunPathBinaryDataAsset*           TempRunPathAsset;                                  // 0x0248(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	EStageId                                      TempStageId;                                       // 0x0250(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_251[0x7];                                      // 0x0251(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                TempLocationOffset;                                // 0x0258(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         TempDomainIndex;                                   // 0x0270(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_274[0x4];                                      // 0x0274(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDateTime                              StartTime;                                         // 0x0278(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FDateTime                              endTime;                                           // 0x0280(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UUnionComPathBinaryDataAsset*           TempComPathAsset;                                  // 0x0288(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FPrimaryAssetId>                LoadCourseAssetIdList;                             // 0x0290(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<EStageId, struct FPrimaryAssetId>        StageDataAssetMap;                                 // 0x02A0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	int32                                         TempLightChannel;                                  // 0x02F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         TemporaryIndex;                                    // 0x02F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             TempCourseMapTexture;                              // 0x02F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FUnionRaceStageDynamicData             TempStageDynamicData;                              // 0x0300(0x0070)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<struct FAppRaceStageSetting>           StageSettings;                                     // 0x0370(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	ETravelRingScreenType                         TempTravelRingScreenType;                          // 0x0380(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EIrregularEventId                             TempIrregularEventId;                              // 0x0381(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          TempEditorFinallap;                                // 0x0382(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          TempEditorMainCourse;                              // 0x0383(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_384[0x4];                                      // 0x0384(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FStageCourseMapInfo>            Course_Map_UIInfo;                                 // 0x0388(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          TempFinalLap;                                      // 0x0398(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_399[0x7];                                      // 0x0399(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UTexture2D*>                     TempCourseMapTexture_0;                            // 0x03A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	int32                                         TmpCoutseMapIndex;                                 // 0x03B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B4[0x4];                                      // 0x03B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStageCourseMapInfo                    NewVar;                                            // 0x03B8(0x0048)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<EStageCourseMapInfo, struct FStageCourseMapParam> Course_Map_UIParam;                       // 0x0400(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<EStageCourseMainSubMapInfo, struct FStageCourseMapParam> SubCourse_Map_UIParam;             // 0x0450(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FString                                 UnloadStageName;                                   // 0x04A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	TMap<class FString, class FString>            ConvertUnLoadName;                                 // 0x04B0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UUnionBtCollisionBinaryAsset*           CollisionData;                                     // 0x0500(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UUnionRunPathBinaryDataAsset*           RunPathData;                                       // 0x0508(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UUnionComPathBinaryDataAsset*           ComPathData;                                       // 0x0510(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UUnionNavigationBinaryDataAsset*        NavigationData;                                    // 0x0518(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class FName                                   RowName;                                           // 0x0520(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                           RowNames;                                          // 0x0528(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class UMaterialInstance*>              TempEntranceCubemap;                               // 0x0538(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class UMaterialInstance*>              TempExitCubemap;                                   // 0x0548(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	int32                                         AnotherDimeTrialCount;                             // 0x0558(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         TempCourseEditorIndex;                             // 0x055C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         StageCourseMainSubIndex;                           // 0x0560(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_564[0x4];                                      // 0x0564(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UStaticMesh*>                    TempEntranceMesh;                                  // 0x0568(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class UStaticMesh*>                    TempExitMesh;                                      // 0x0578(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          NewVar_0;                                          // 0x0588(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void DevelopmentTimerLap(const class FString& Tag);
@@ -134,59 +134,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_RaceSequenceStateLoadAssets_C">();
+		BP_STATIC_CLASS_IMPL("BPC_RaceSequenceStateLoadAssets_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_RaceSequenceStateLoadAssets_C")
 	}
 	static class UBPC_RaceSequenceStateLoadAssets_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_RaceSequenceStateLoadAssets_C>();
 	}
 };
-static_assert(alignof(UBPC_RaceSequenceStateLoadAssets_C) == 0x000008, "Wrong alignment on UBPC_RaceSequenceStateLoadAssets_C");
-static_assert(sizeof(UBPC_RaceSequenceStateLoadAssets_C) == 0x000578, "Wrong size on UBPC_RaceSequenceStateLoadAssets_C");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, UberGraphFrame) == 0x000218, "Member 'UBPC_RaceSequenceStateLoadAssets_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, TempCollisionAsset) == 0x000220, "Member 'UBPC_RaceSequenceStateLoadAssets_C::TempCollisionAsset' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, TempNavigationAsset) == 0x000228, "Member 'UBPC_RaceSequenceStateLoadAssets_C::TempNavigationAsset' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, TempRunPathAsset) == 0x000230, "Member 'UBPC_RaceSequenceStateLoadAssets_C::TempRunPathAsset' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, TempStageId) == 0x000238, "Member 'UBPC_RaceSequenceStateLoadAssets_C::TempStageId' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, TempLocationOffset) == 0x000240, "Member 'UBPC_RaceSequenceStateLoadAssets_C::TempLocationOffset' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, TempDomainIndex) == 0x000258, "Member 'UBPC_RaceSequenceStateLoadAssets_C::TempDomainIndex' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, StartTime) == 0x000260, "Member 'UBPC_RaceSequenceStateLoadAssets_C::StartTime' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, endTime) == 0x000268, "Member 'UBPC_RaceSequenceStateLoadAssets_C::endTime' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, TempComPathAsset) == 0x000270, "Member 'UBPC_RaceSequenceStateLoadAssets_C::TempComPathAsset' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, LoadCourseAssetIdList) == 0x000278, "Member 'UBPC_RaceSequenceStateLoadAssets_C::LoadCourseAssetIdList' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, StageDataAssetMap) == 0x000288, "Member 'UBPC_RaceSequenceStateLoadAssets_C::StageDataAssetMap' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, TempLightChannel) == 0x0002D8, "Member 'UBPC_RaceSequenceStateLoadAssets_C::TempLightChannel' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, TemporaryIndex) == 0x0002DC, "Member 'UBPC_RaceSequenceStateLoadAssets_C::TemporaryIndex' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, TempCourseMapTexture) == 0x0002E0, "Member 'UBPC_RaceSequenceStateLoadAssets_C::TempCourseMapTexture' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, TempStageDynamicData) == 0x0002E8, "Member 'UBPC_RaceSequenceStateLoadAssets_C::TempStageDynamicData' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, StageSettings) == 0x000358, "Member 'UBPC_RaceSequenceStateLoadAssets_C::StageSettings' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, TempTravelRingScreenType) == 0x000368, "Member 'UBPC_RaceSequenceStateLoadAssets_C::TempTravelRingScreenType' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, TempIrregularEventId) == 0x000369, "Member 'UBPC_RaceSequenceStateLoadAssets_C::TempIrregularEventId' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, TempEditorFinallap) == 0x00036A, "Member 'UBPC_RaceSequenceStateLoadAssets_C::TempEditorFinallap' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, TempEditorMainCourse) == 0x00036B, "Member 'UBPC_RaceSequenceStateLoadAssets_C::TempEditorMainCourse' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, Course_Map_UIInfo) == 0x000370, "Member 'UBPC_RaceSequenceStateLoadAssets_C::Course_Map_UIInfo' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, TempFinalLap) == 0x000380, "Member 'UBPC_RaceSequenceStateLoadAssets_C::TempFinalLap' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, TempCourseMapTexture_0) == 0x000388, "Member 'UBPC_RaceSequenceStateLoadAssets_C::TempCourseMapTexture_0' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, TmpCoutseMapIndex) == 0x000398, "Member 'UBPC_RaceSequenceStateLoadAssets_C::TmpCoutseMapIndex' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, NewVar) == 0x0003A0, "Member 'UBPC_RaceSequenceStateLoadAssets_C::NewVar' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, Course_Map_UIParam) == 0x0003E8, "Member 'UBPC_RaceSequenceStateLoadAssets_C::Course_Map_UIParam' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, SubCourse_Map_UIParam) == 0x000438, "Member 'UBPC_RaceSequenceStateLoadAssets_C::SubCourse_Map_UIParam' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, UnloadStageName) == 0x000488, "Member 'UBPC_RaceSequenceStateLoadAssets_C::UnloadStageName' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, ConvertUnLoadName) == 0x000498, "Member 'UBPC_RaceSequenceStateLoadAssets_C::ConvertUnLoadName' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, CollisionData) == 0x0004E8, "Member 'UBPC_RaceSequenceStateLoadAssets_C::CollisionData' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, RunPathData) == 0x0004F0, "Member 'UBPC_RaceSequenceStateLoadAssets_C::RunPathData' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, ComPathData) == 0x0004F8, "Member 'UBPC_RaceSequenceStateLoadAssets_C::ComPathData' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, NavigationData) == 0x000500, "Member 'UBPC_RaceSequenceStateLoadAssets_C::NavigationData' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, RowName) == 0x000508, "Member 'UBPC_RaceSequenceStateLoadAssets_C::RowName' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, RowNames) == 0x000510, "Member 'UBPC_RaceSequenceStateLoadAssets_C::RowNames' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, TempEntranceCubemap) == 0x000520, "Member 'UBPC_RaceSequenceStateLoadAssets_C::TempEntranceCubemap' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, TempExitCubemap) == 0x000530, "Member 'UBPC_RaceSequenceStateLoadAssets_C::TempExitCubemap' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, AnotherDimeTrialCount) == 0x000540, "Member 'UBPC_RaceSequenceStateLoadAssets_C::AnotherDimeTrialCount' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, TempCourseEditorIndex) == 0x000544, "Member 'UBPC_RaceSequenceStateLoadAssets_C::TempCourseEditorIndex' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, StageCourseMainSubIndex) == 0x000548, "Member 'UBPC_RaceSequenceStateLoadAssets_C::StageCourseMainSubIndex' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, TempEntranceMesh) == 0x000550, "Member 'UBPC_RaceSequenceStateLoadAssets_C::TempEntranceMesh' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, TempExitMesh) == 0x000560, "Member 'UBPC_RaceSequenceStateLoadAssets_C::TempExitMesh' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateLoadAssets_C, NewVar_0) == 0x000570, "Member 'UBPC_RaceSequenceStateLoadAssets_C::NewVar_0' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_RaceSequenceStateLoadAssets_C;
 
 }
 

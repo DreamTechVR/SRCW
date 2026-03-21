@@ -23,15 +23,18 @@ class ABP_MachineActor_C final : public AMachineInRaceActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_MachineActor_C">();
+		BP_STATIC_CLASS_IMPL("BP_MachineActor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_MachineActor_C")
 	}
 	static class ABP_MachineActor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_MachineActor_C>();
 	}
 };
-static_assert(alignof(ABP_MachineActor_C) == 0x000008, "Wrong alignment on ABP_MachineActor_C");
-static_assert(sizeof(ABP_MachineActor_C) == 0x0009E8, "Wrong size on ABP_MachineActor_C");
+DUMPER7_ASSERTS_ABP_MachineActor_C;
 
 }
 

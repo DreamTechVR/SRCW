@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
+#include "UnionRun_structs.hpp"
+#include "UNION_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
-#include "UnionUI_structs.hpp"
-#include "UNION_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "UnionRun_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK::Params
@@ -32,12 +32,7 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ULapTimer*                              CallFunc_GetOrCreateLapTimer_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_DevelopmentTimerLap) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_DevelopmentTimerLap");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_DevelopmentTimerLap) == 0x000028, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_DevelopmentTimerLap");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_DevelopmentTimerLap, Tag) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_DevelopmentTimerLap::Tag' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_DevelopmentTimerLap, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000010, "Member 'BPC_RaceSequenceStateLoadAssets_C_DevelopmentTimerLap::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_DevelopmentTimerLap, CallFunc_IsShippingBuild_ReturnValue) == 0x000018, "Member 'BPC_RaceSequenceStateLoadAssets_C_DevelopmentTimerLap::CallFunc_IsShippingBuild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_DevelopmentTimerLap, CallFunc_GetOrCreateLapTimer_ReturnValue) == 0x000020, "Member 'BPC_RaceSequenceStateLoadAssets_C_DevelopmentTimerLap::CallFunc_GetOrCreateLapTimer_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_DevelopmentTimerLap;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.SelectMaterialInstance
 // 0x0088 (0x0088 - 0x0000)
@@ -52,14 +47,7 @@ public:
 	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue;   // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_SelectMaterialInstance) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_SelectMaterialInstance");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_SelectMaterialInstance) == 0x000088, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_SelectMaterialInstance");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_SelectMaterialInstance, A) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_SelectMaterialInstance::A' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_SelectMaterialInstance, B) == 0x000028, "Member 'BPC_RaceSequenceStateLoadAssets_C_SelectMaterialInstance::B' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_SelectMaterialInstance, Select) == 0x000050, "Member 'BPC_RaceSequenceStateLoadAssets_C_SelectMaterialInstance::Select' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_SelectMaterialInstance, Ret) == 0x000058, "Member 'BPC_RaceSequenceStateLoadAssets_C_SelectMaterialInstance::Ret' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_SelectMaterialInstance, CallFunc_IsValidSoftObjectReference_ReturnValue) == 0x000080, "Member 'BPC_RaceSequenceStateLoadAssets_C_SelectMaterialInstance::CallFunc_IsValidSoftObjectReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_SelectMaterialInstance, CallFunc_BooleanAND_ReturnValue) == 0x000081, "Member 'BPC_RaceSequenceStateLoadAssets_C_SelectMaterialInstance::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_SelectMaterialInstance;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.SelectTextureCube
 // 0x0088 (0x0088 - 0x0000)
@@ -74,14 +62,7 @@ public:
 	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue;   // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_SelectTextureCube) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_SelectTextureCube");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_SelectTextureCube) == 0x000088, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_SelectTextureCube");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_SelectTextureCube, A) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_SelectTextureCube::A' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_SelectTextureCube, B) == 0x000028, "Member 'BPC_RaceSequenceStateLoadAssets_C_SelectTextureCube::B' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_SelectTextureCube, Select) == 0x000050, "Member 'BPC_RaceSequenceStateLoadAssets_C_SelectTextureCube::Select' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_SelectTextureCube, Ret) == 0x000058, "Member 'BPC_RaceSequenceStateLoadAssets_C_SelectTextureCube::Ret' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_SelectTextureCube, CallFunc_IsValidSoftObjectReference_ReturnValue) == 0x000080, "Member 'BPC_RaceSequenceStateLoadAssets_C_SelectTextureCube::CallFunc_IsValidSoftObjectReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_SelectTextureCube, CallFunc_BooleanAND_ReturnValue) == 0x000081, "Member 'BPC_RaceSequenceStateLoadAssets_C_SelectTextureCube::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_SelectTextureCube;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.RegisterObjectLevel
 // 0x0AC8 (0x0AC8 - 0x0000)
@@ -256,148 +237,7 @@ public:
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0AC2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_AddLevelByReference_ReturnValue_7;        // 0x0AC3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel) == 0x000AC8, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, StageData) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::StageData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, FreeRunFinalLap) == 0x000008, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::FreeRunFinalLap' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, AnotherTimeTrialFinalLap) == 0x000009, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::AnotherTimeTrialFinalLap' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, NewLocalVar) == 0x000010, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::NewLocalVar' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, bNeedFinalLapLevel) == 0x000020, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::bNeedFinalLapLevel' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, LocalDependant) == 0x000028, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::LocalDependant' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, LocalBackGroundLevel) == 0x000050, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::LocalBackGroundLevel' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, bNotReadyItemBoxIrregular) == 0x000060, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::bNotReadyItemBoxIrregular' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, LocalFinalLapObjectLevel) == 0x000068, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::LocalFinalLapObjectLevel' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, LocalBasicLapObjectLevel) == 0x000078, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::LocalBasicLapObjectLevel' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, Temp_bool_Variable) == 0x000088, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, Temp_softobject_Variable) == 0x000090, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::Temp_softobject_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_Array_Get_Item) == 0x0000B8, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_Array_IsValidIndex_ReturnValue) == 0x0000E0, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_Array_Length_ReturnValue) == 0x0000E4, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, K2Node_Select_Default) == 0x0000E8, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_Array_Length_ReturnValue_1) == 0x000110, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, Temp_int_Array_Index_Variable) == 0x000114, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_Array_Get_Item_1) == 0x000118, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_IsValidSoftObjectReference_ReturnValue) == 0x000140, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_IsValidSoftObjectReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_GetLevelNameByReference_ReturnValue) == 0x000148, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_GetLevelNameByReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_Contains_ReturnValue) == 0x000158, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, Temp_int_Loop_Counter_Variable) == 0x00015C, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_Less_IntInt_ReturnValue) == 0x000160, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_Add_IntInt_ReturnValue) == 0x000164, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, Temp_int_Array_Index_Variable_1) == 0x000168, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_Array_Get_Item_2) == 0x000170, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue) == 0x000198, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_IsValidSoftObjectReference_ReturnValue_1) == 0x0001A8, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_IsValidSoftObjectReference_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_Conv_StringToText_ReturnValue) == 0x0001B0, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, K2Node_MakeStruct_FormatArgumentData) == 0x0001C0, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_GetLevelNameByReference_ReturnValue_1) == 0x000208, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_GetLevelNameByReference_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_GetLevelNameByReference_ReturnValue_2) == 0x000218, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_GetLevelNameByReference_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_Contains_ReturnValue_1) == 0x000228, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_Contains_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_Contains_ReturnValue_2) == 0x000229, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_Contains_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, Temp_int_Loop_Counter_Variable_1) == 0x00022C, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_Add_IntInt_ReturnValue_1) == 0x000230, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_1) == 0x000238, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_Conv_StringToText_ReturnValue_1) == 0x000248, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, K2Node_MakeStruct_FormatArgumentData_1) == 0x000258, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_GetRaceDebugParamFinalLap_ReturnValue) == 0x0002A0, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_GetRaceDebugParamFinalLap_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0002A1, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_GetSelectedRaceType_ReturnValue) == 0x0002A2, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_GetSelectedRaceType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x0002A3, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0002A4, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_IsAnotherStage_ReturnValue) == 0x0002A5, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_IsAnotherStage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_BooleanAND_ReturnValue) == 0x0002A6, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_BooleanAND_ReturnValue_1) == 0x0002A7, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_GetFinalLapData_ReturnValue) == 0x0002A8, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_GetFinalLapData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_AddLevelByReference_ReturnValue) == 0x0003A8, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_AddLevelByReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_IsValidSoftObjectReference_ReturnValue_2) == 0x0003A9, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_IsValidSoftObjectReference_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_GetDefaultBasicLapData_ReturnValue) == 0x0003B0, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_GetDefaultBasicLapData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_BooleanOR_ReturnValue) == 0x0004B0, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_AddLevelByReference_ReturnValue_1) == 0x0004B1, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_AddLevelByReference_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_IsValidSoftObjectReference_ReturnValue_3) == 0x0004B2, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_IsValidSoftObjectReference_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_GetSelectedRaceType_ReturnValue_1) == 0x0004B3, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_GetSelectedRaceType_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x0004B4, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x0004B5, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_BooleanOR_ReturnValue_1) == 0x0004B6, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_GetFinalLapData_ReturnValue_1) == 0x0004B8, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_GetFinalLapData_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_Array_Length_ReturnValue_2) == 0x0005B8, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, Temp_int_Loop_Counter_Variable_2) == 0x0005BC, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_Less_IntInt_ReturnValue_1) == 0x0005C0, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_Less_IntInt_ReturnValue_2) == 0x0005C1, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_Add_IntInt_ReturnValue_2) == 0x0005C4, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_GetDefaultBasicLapData_ReturnValue_1) == 0x0005C8, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_GetDefaultBasicLapData_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, Temp_int_Array_Index_Variable_2) == 0x0006C8, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_Array_Get_Item_3) == 0x0006D0, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_Array_Length_ReturnValue_3) == 0x0006F8, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_AddLevelByReference_ReturnValue_2) == 0x0006FC, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_AddLevelByReference_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_EqualEqual_ByteByte_ReturnValue_3) == 0x0006FD, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_EqualEqual_ByteByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_EqualEqual_IntInt_ReturnValue_2) == 0x0006FE, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_EqualEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_BooleanAND_ReturnValue_2) == 0x0006FF, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_GetSelectedRaceType_ReturnValue_2) == 0x000700, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_GetSelectedRaceType_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_IsAnotherStage_ReturnValue_1) == 0x000701, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_IsAnotherStage_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_EqualEqual_ByteByte_ReturnValue_4) == 0x000702, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_EqualEqual_ByteByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_Add_IntInt_ReturnValue_3) == 0x000704, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000708, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_BooleanAND_ReturnValue_3) == 0x000709, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_BooleanAND_ReturnValue_4) == 0x00070A, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_BooleanAND_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_GetSelectedRaceType_ReturnValue_3) == 0x00070B, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_GetSelectedRaceType_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_BooleanAND_ReturnValue_5) == 0x00070C, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_BooleanAND_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_EqualEqual_ByteByte_ReturnValue_5) == 0x00070D, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_EqualEqual_ByteByte_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_EqualEqual_ByteByte_ReturnValue_6) == 0x00070E, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_EqualEqual_ByteByte_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_BooleanOR_ReturnValue_2) == 0x00070F, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_GetSelectedRaceType_ReturnValue_4) == 0x000710, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_GetSelectedRaceType_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_BooleanAND_ReturnValue_6) == 0x000711, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_BooleanAND_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_EqualEqual_ByteByte_ReturnValue_7) == 0x000712, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_EqualEqual_ByteByte_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_EqualEqual_ByteByte_ReturnValue_8) == 0x000713, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_EqualEqual_ByteByte_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_BooleanOR_ReturnValue_3) == 0x000714, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_BooleanOR_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_BooleanAND_ReturnValue_7) == 0x000715, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_BooleanAND_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_IsMainStage_ReturnValue) == 0x000716, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_IsMainStage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_GetSelectedRaceType_ReturnValue_5) == 0x000717, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_GetSelectedRaceType_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_GetRaceDebugParamFinalLap_ReturnValue_1) == 0x000718, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_GetRaceDebugParamFinalLap_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_EqualEqual_ByteByte_ReturnValue_9) == 0x000719, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_EqualEqual_ByteByte_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_BooleanAND_ReturnValue_8) == 0x00071A, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_BooleanAND_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_BooleanAND_ReturnValue_9) == 0x00071B, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_BooleanAND_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, Temp_int_Loop_Counter_Variable_3) == 0x00071C, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::Temp_int_Loop_Counter_Variable_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_EqualEqual_IntInt_ReturnValue_3) == 0x000720, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_EqualEqual_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_Less_IntInt_ReturnValue_3) == 0x000721, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_Add_IntInt_ReturnValue_4) == 0x000724, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_GetSelectedRaceType_ReturnValue_6) == 0x000728, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_GetSelectedRaceType_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_EqualEqual_ByteByte_ReturnValue_10) == 0x000729, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_EqualEqual_ByteByte_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_EqualEqual_ByteByte_ReturnValue_11) == 0x00072A, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_EqualEqual_ByteByte_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_IsMainStage_ReturnValue_1) == 0x00072B, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_IsMainStage_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_BooleanOR_ReturnValue_4) == 0x00072C, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_BooleanOR_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_GetSelectedRaceType_ReturnValue_7) == 0x00072D, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_GetSelectedRaceType_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_BooleanAND_ReturnValue_10) == 0x00072E, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_BooleanAND_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_EqualEqual_ByteByte_ReturnValue_12) == 0x00072F, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_EqualEqual_ByteByte_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_BooleanAND_ReturnValue_11) == 0x000730, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_BooleanAND_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_IsMainStage_ReturnValue_2) == 0x000731, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_IsMainStage_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_BooleanAND_ReturnValue_12) == 0x000732, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_BooleanAND_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_2) == 0x000738, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_BooleanAND_ReturnValue_13) == 0x000748, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_BooleanAND_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_Conv_StringToText_ReturnValue_2) == 0x000750, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_Conv_StringToText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_BooleanOR_ReturnValue_5) == 0x000760, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_BooleanOR_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, K2Node_MakeStruct_FormatArgumentData_2) == 0x000768, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_BooleanOR_ReturnValue_6) == 0x0007B0, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_BooleanOR_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, K2Node_MakeArray_Array) == 0x0007B8, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_Format_ReturnValue) == 0x0007C8, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_3) == 0x0007D8, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_Conv_StringToText_ReturnValue_3) == 0x0007E8, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_Conv_StringToText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_Not_PreBool_ReturnValue) == 0x0007F8, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, K2Node_MakeStruct_FormatArgumentData_3) == 0x000800, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::K2Node_MakeStruct_FormatArgumentData_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_BooleanAND_ReturnValue_14) == 0x000848, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_BooleanAND_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, K2Node_MakeArray_Array_1) == 0x000850, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_Format_ReturnValue_1) == 0x000860, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_GetBackgroundLevels_OutBackgroundLevels) == 0x000870, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_GetBackgroundLevels_OutBackgroundLevels' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, Temp_int_Array_Index_Variable_3) == 0x000880, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::Temp_int_Array_Index_Variable_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_AddLevelByReference_ReturnValue_3) == 0x000884, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_AddLevelByReference_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_Array_Get_Item_4) == 0x000888, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_AddLevelByReference_ReturnValue_4) == 0x0008B0, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_AddLevelByReference_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_GetFinalLapData_ReturnValue_2) == 0x0008B8, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_GetFinalLapData_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_IsValidSoftObjectReference_ReturnValue_4) == 0x0009B8, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_IsValidSoftObjectReference_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_IsValidSoftObjectReference_ReturnValue_5) == 0x0009B9, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_IsValidSoftObjectReference_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_GetDefaultBasicLapData_ReturnValue_2) == 0x0009C0, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_GetDefaultBasicLapData_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_AddLevelByReference_ReturnValue_5) == 0x000AC0, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_AddLevelByReference_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_AddLevelByReference_ReturnValue_6) == 0x000AC1, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_AddLevelByReference_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, K2Node_SwitchEnum_CmpSuccess) == 0x000AC2, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel, CallFunc_AddLevelByReference_ReturnValue_7) == 0x000AC3, "Member 'BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel::CallFunc_AddLevelByReference_ReturnValue_7' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_RegisterObjectLevel;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.EndLoadTimeMeasurement
 // 0x0010 (0x0010 - 0x0000)
@@ -407,10 +247,7 @@ public:
 	class UAppSystemSubsystem*                    CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ULapTimer*                              CallFunc_GetOrCreateLapTimer_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_EndLoadTimeMeasurement) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_EndLoadTimeMeasurement");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_EndLoadTimeMeasurement) == 0x000010, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_EndLoadTimeMeasurement");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_EndLoadTimeMeasurement, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_EndLoadTimeMeasurement::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_EndLoadTimeMeasurement, CallFunc_GetOrCreateLapTimer_ReturnValue) == 0x000008, "Member 'BPC_RaceSequenceStateLoadAssets_C_EndLoadTimeMeasurement::CallFunc_GetOrCreateLapTimer_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_EndLoadTimeMeasurement;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.BeginLoadTimeMeasurement
 // 0x0018 (0x0018 - 0x0000)
@@ -421,11 +258,7 @@ public:
 	struct FDateTime                              CallFunc_Now_ReturnValue;                          // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ULapTimer*                              CallFunc_GetOrCreateLapTimer_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_BeginLoadTimeMeasurement) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_BeginLoadTimeMeasurement");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_BeginLoadTimeMeasurement) == 0x000018, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_BeginLoadTimeMeasurement");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_BeginLoadTimeMeasurement, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_BeginLoadTimeMeasurement::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_BeginLoadTimeMeasurement, CallFunc_Now_ReturnValue) == 0x000008, "Member 'BPC_RaceSequenceStateLoadAssets_C_BeginLoadTimeMeasurement::CallFunc_Now_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_BeginLoadTimeMeasurement, CallFunc_GetOrCreateLapTimer_ReturnValue) == 0x000010, "Member 'BPC_RaceSequenceStateLoadAssets_C_BeginLoadTimeMeasurement::CallFunc_GetOrCreateLapTimer_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_BeginLoadTimeMeasurement;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.PreCreateRaceSingle
 // 0x0408 (0x0408 - 0x0000)
@@ -443,17 +276,7 @@ public:
 	struct FUnionRaceStageData                    K2Node_MakeStruct_UnionRaceStageData;              // 0x00E0(0x0170)()
 	struct FUnionRaceDomainData                   K2Node_MakeStruct_UnionRaceDomainData;             // 0x0250(0x01B8)()
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_PreCreateRaceSingle) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_PreCreateRaceSingle");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_PreCreateRaceSingle) == 0x000408, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_PreCreateRaceSingle");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_PreCreateRaceSingle, StageId) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_PreCreateRaceSingle::StageId' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_PreCreateRaceSingle, CollisionAsset) == 0x000008, "Member 'BPC_RaceSequenceStateLoadAssets_C_PreCreateRaceSingle::CollisionAsset' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_PreCreateRaceSingle, NavigationAsset) == 0x000010, "Member 'BPC_RaceSequenceStateLoadAssets_C_PreCreateRaceSingle::NavigationAsset' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_PreCreateRaceSingle, RuPathAsset) == 0x000018, "Member 'BPC_RaceSequenceStateLoadAssets_C_PreCreateRaceSingle::RuPathAsset' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_PreCreateRaceSingle, ComPathAsset) == 0x000020, "Member 'BPC_RaceSequenceStateLoadAssets_C_PreCreateRaceSingle::ComPathAsset' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_PreCreateRaceSingle, K2Node_MakeStruct_UnionRaceStageDynamicData) == 0x000028, "Member 'BPC_RaceSequenceStateLoadAssets_C_PreCreateRaceSingle::K2Node_MakeStruct_UnionRaceStageDynamicData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_PreCreateRaceSingle, K2Node_MakeStruct_UnionRaceDomainInfo) == 0x000098, "Member 'BPC_RaceSequenceStateLoadAssets_C_PreCreateRaceSingle::K2Node_MakeStruct_UnionRaceDomainInfo' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_PreCreateRaceSingle, K2Node_MakeStruct_UnionRaceStageData) == 0x0000E0, "Member 'BPC_RaceSequenceStateLoadAssets_C_PreCreateRaceSingle::K2Node_MakeStruct_UnionRaceStageData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_PreCreateRaceSingle, K2Node_MakeStruct_UnionRaceDomainData) == 0x000250, "Member 'BPC_RaceSequenceStateLoadAssets_C_PreCreateRaceSingle::K2Node_MakeStruct_UnionRaceDomainData' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_PreCreateRaceSingle;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_1881E30949760AF8F517E1A8E8E12334
 // 0x0008 (0x0008 - 0x0000)
@@ -462,9 +285,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A8E8E123
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A8E8E12334) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A8E8E12334");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A8E8E12334) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A8E8E12334");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A8E8E12334, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A8E8E12334::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A8E8E12334;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_85DA89AA4A74182281DE208A65D832FE
 // 0x0008 (0x0008 - 0x0000)
@@ -473,9 +294,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208A65D832
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208A65D832FE) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208A65D832FE");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208A65D832FE) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208A65D832FE");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208A65D832FE, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208A65D832FE::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208A65D832FE;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_DAE0F2D042E1EE8E98127380E631900B
 // 0x0008 (0x0008 - 0x0000)
@@ -484,9 +303,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E98127380E63190
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E98127380E631900B) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E98127380E631900B");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E98127380E631900B) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E98127380E631900B");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E98127380E631900B, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E98127380E631900B::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E98127380E631900B;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_F240FC9447C9A18C546668ADCD4F307B
 // 0x0008 (0x0008 - 0x0000)
@@ -495,9 +312,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668ADCD4F30
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668ADCD4F307B) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668ADCD4F307B");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668ADCD4F307B) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668ADCD4F307B");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668ADCD4F307B, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668ADCD4F307B::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668ADCD4F307B;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_35CC1E574E5588E39448ADBB4E57CA00
 // 0x0008 (0x0008 - 0x0000)
@@ -506,9 +321,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_35CC1E574E5588E39448ADBB4E57CA
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_35CC1E574E5588E39448ADBB4E57CA00) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_35CC1E574E5588E39448ADBB4E57CA00");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_35CC1E574E5588E39448ADBB4E57CA00) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_35CC1E574E5588E39448ADBB4E57CA00");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_35CC1E574E5588E39448ADBB4E57CA00, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_35CC1E574E5588E39448ADBB4E57CA00::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_35CC1E574E5588E39448ADBB4E57CA00;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_F53382BD4C684157B17F42A5912B4B19
 // 0x0008 (0x0008 - 0x0000)
@@ -517,9 +330,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F53382BD4C684157B17F42A5912B4B
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F53382BD4C684157B17F42A5912B4B19) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F53382BD4C684157B17F42A5912B4B19");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F53382BD4C684157B17F42A5912B4B19) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F53382BD4C684157B17F42A5912B4B19");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F53382BD4C684157B17F42A5912B4B19, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F53382BD4C684157B17F42A5912B4B19::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F53382BD4C684157B17F42A5912B4B19;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_1881E30949760AF8F517E1A80588BBD2
 // 0x0008 (0x0008 - 0x0000)
@@ -528,9 +339,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A80588BB
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A80588BBD2) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A80588BBD2");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A80588BBD2) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A80588BBD2");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A80588BBD2, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A80588BBD2::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A80588BBD2;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_85DA89AA4A74182281DE208A88B1AA18
 // 0x0008 (0x0008 - 0x0000)
@@ -539,9 +348,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208A88B1AA
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208A88B1AA18) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208A88B1AA18");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208A88B1AA18) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208A88B1AA18");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208A88B1AA18, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208A88B1AA18::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208A88B1AA18;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_DAE0F2D042E1EE8E981273800B5808ED
 // 0x0008 (0x0008 - 0x0000)
@@ -550,9 +357,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E981273800B5808
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E981273800B5808ED) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E981273800B5808ED");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E981273800B5808ED) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E981273800B5808ED");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E981273800B5808ED, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E981273800B5808ED::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E981273800B5808ED;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_F240FC9447C9A18C546668AD2026A89D
 // 0x0008 (0x0008 - 0x0000)
@@ -561,9 +366,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668AD2026A8
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668AD2026A89D) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668AD2026A89D");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668AD2026A89D) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668AD2026A89D");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668AD2026A89D, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668AD2026A89D::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668AD2026A89D;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_1881E30949760AF8F517E1A8502FCB2D
 // 0x0008 (0x0008 - 0x0000)
@@ -572,9 +375,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A8502FCB
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A8502FCB2D) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A8502FCB2D");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A8502FCB2D) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A8502FCB2D");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A8502FCB2D, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A8502FCB2D::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A8502FCB2D;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_85DA89AA4A74182281DE208ADD16DAE7
 // 0x0008 (0x0008 - 0x0000)
@@ -583,9 +384,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208ADD16DA
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208ADD16DAE7) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208ADD16DAE7");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208ADD16DAE7) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208ADD16DAE7");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208ADD16DAE7, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208ADD16DAE7::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208ADD16DAE7;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.Completed_0236B9464600658108D0BDBEFF5198A5
 // 0x0010 (0x0010 - 0x0000)
@@ -594,9 +393,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_Completed_0236B9464600658108D0BDBEFF519
 public:
 	TArray<class UObject*>                        Loaded;                                            // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_Completed_0236B9464600658108D0BDBEFF5198A5) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_Completed_0236B9464600658108D0BDBEFF5198A5");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_Completed_0236B9464600658108D0BDBEFF5198A5) == 0x000010, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_Completed_0236B9464600658108D0BDBEFF5198A5");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_Completed_0236B9464600658108D0BDBEFF5198A5, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_Completed_0236B9464600658108D0BDBEFF5198A5::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_Completed_0236B9464600658108D0BDBEFF5198A5;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_74D1CC7A4F84EBED1C5CFC8D43B48DB7
 // 0x0008 (0x0008 - 0x0000)
@@ -605,9 +402,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_74D1CC7A4F84EBED1C5CFC8D43B48D
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_74D1CC7A4F84EBED1C5CFC8D43B48DB7) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_74D1CC7A4F84EBED1C5CFC8D43B48DB7");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_74D1CC7A4F84EBED1C5CFC8D43B48DB7) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_74D1CC7A4F84EBED1C5CFC8D43B48DB7");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_74D1CC7A4F84EBED1C5CFC8D43B48DB7, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_74D1CC7A4F84EBED1C5CFC8D43B48DB7::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_74D1CC7A4F84EBED1C5CFC8D43B48DB7;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_FFB6617641135AD0D32A768FC1989049
 // 0x0008 (0x0008 - 0x0000)
@@ -616,9 +411,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_FFB6617641135AD0D32A768FC19890
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_FFB6617641135AD0D32A768FC1989049) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_FFB6617641135AD0D32A768FC1989049");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_FFB6617641135AD0D32A768FC1989049) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_FFB6617641135AD0D32A768FC1989049");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_FFB6617641135AD0D32A768FC1989049, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_FFB6617641135AD0D32A768FC1989049::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_FFB6617641135AD0D32A768FC1989049;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_7FB8D15543DD9CE9EC69B19710B777B9
 // 0x0008 (0x0008 - 0x0000)
@@ -627,9 +420,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_7FB8D15543DD9CE9EC69B19710B777
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_7FB8D15543DD9CE9EC69B19710B777B9) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_7FB8D15543DD9CE9EC69B19710B777B9");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_7FB8D15543DD9CE9EC69B19710B777B9) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_7FB8D15543DD9CE9EC69B19710B777B9");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_7FB8D15543DD9CE9EC69B19710B777B9, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_7FB8D15543DD9CE9EC69B19710B777B9::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_7FB8D15543DD9CE9EC69B19710B777B9;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_26872E9640F7F23EF04A41B77864513E
 // 0x0008 (0x0008 - 0x0000)
@@ -638,9 +429,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_26872E9640F7F23EF04A41B7786451
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_26872E9640F7F23EF04A41B77864513E) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_26872E9640F7F23EF04A41B77864513E");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_26872E9640F7F23EF04A41B77864513E) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_26872E9640F7F23EF04A41B77864513E");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_26872E9640F7F23EF04A41B77864513E, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_26872E9640F7F23EF04A41B77864513E::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_26872E9640F7F23EF04A41B77864513E;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_44A7D1534DFE4EE4FB91AD8375BFD3E2
 // 0x0008 (0x0008 - 0x0000)
@@ -649,9 +438,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_44A7D1534DFE4EE4FB91AD8375BFD3
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_44A7D1534DFE4EE4FB91AD8375BFD3E2) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_44A7D1534DFE4EE4FB91AD8375BFD3E2");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_44A7D1534DFE4EE4FB91AD8375BFD3E2) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_44A7D1534DFE4EE4FB91AD8375BFD3E2");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_44A7D1534DFE4EE4FB91AD8375BFD3E2, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_44A7D1534DFE4EE4FB91AD8375BFD3E2::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_44A7D1534DFE4EE4FB91AD8375BFD3E2;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_31E9E3EE486E6EF4E8ECDC82813540EA
 // 0x0008 (0x0008 - 0x0000)
@@ -660,9 +447,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_31E9E3EE486E6EF4E8ECDC82813540
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_31E9E3EE486E6EF4E8ECDC82813540EA) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_31E9E3EE486E6EF4E8ECDC82813540EA");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_31E9E3EE486E6EF4E8ECDC82813540EA) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_31E9E3EE486E6EF4E8ECDC82813540EA");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_31E9E3EE486E6EF4E8ECDC82813540EA, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_31E9E3EE486E6EF4E8ECDC82813540EA::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_31E9E3EE486E6EF4E8ECDC82813540EA;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_AC84F9DA4173DFEB8B103D821EDCE00B
 // 0x0008 (0x0008 - 0x0000)
@@ -671,9 +456,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_AC84F9DA4173DFEB8B103D821EDCE0
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_AC84F9DA4173DFEB8B103D821EDCE00B) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_AC84F9DA4173DFEB8B103D821EDCE00B");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_AC84F9DA4173DFEB8B103D821EDCE00B) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_AC84F9DA4173DFEB8B103D821EDCE00B");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_AC84F9DA4173DFEB8B103D821EDCE00B, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_AC84F9DA4173DFEB8B103D821EDCE00B::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_AC84F9DA4173DFEB8B103D821EDCE00B;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_7996DEF049A092A6E49671B674D70BB1
 // 0x0008 (0x0008 - 0x0000)
@@ -682,9 +465,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_7996DEF049A092A6E49671B674D70B
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_7996DEF049A092A6E49671B674D70BB1) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_7996DEF049A092A6E49671B674D70BB1");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_7996DEF049A092A6E49671B674D70BB1) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_7996DEF049A092A6E49671B674D70BB1");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_7996DEF049A092A6E49671B674D70BB1, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_7996DEF049A092A6E49671B674D70BB1::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_7996DEF049A092A6E49671B674D70BB1;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_E29ACA1D498FE0A77FA03FBA82F46999
 // 0x0008 (0x0008 - 0x0000)
@@ -693,9 +474,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_E29ACA1D498FE0A77FA03FBA82F469
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_E29ACA1D498FE0A77FA03FBA82F46999) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_E29ACA1D498FE0A77FA03FBA82F46999");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_E29ACA1D498FE0A77FA03FBA82F46999) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_E29ACA1D498FE0A77FA03FBA82F46999");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_E29ACA1D498FE0A77FA03FBA82F46999, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_E29ACA1D498FE0A77FA03FBA82F46999::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_E29ACA1D498FE0A77FA03FBA82F46999;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_53F9E91A46FA061383A2709D7D14B927
 // 0x0008 (0x0008 - 0x0000)
@@ -704,9 +483,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_53F9E91A46FA061383A2709D7D14B9
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_53F9E91A46FA061383A2709D7D14B927) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_53F9E91A46FA061383A2709D7D14B927");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_53F9E91A46FA061383A2709D7D14B927) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_53F9E91A46FA061383A2709D7D14B927");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_53F9E91A46FA061383A2709D7D14B927, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_53F9E91A46FA061383A2709D7D14B927::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_53F9E91A46FA061383A2709D7D14B927;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_0226E8684E9F4CF1912DD2B08BCDD432
 // 0x0008 (0x0008 - 0x0000)
@@ -715,9 +492,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_0226E8684E9F4CF1912DD2B08BCDD4
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_0226E8684E9F4CF1912DD2B08BCDD432) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_0226E8684E9F4CF1912DD2B08BCDD432");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_0226E8684E9F4CF1912DD2B08BCDD432) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_0226E8684E9F4CF1912DD2B08BCDD432");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_0226E8684E9F4CF1912DD2B08BCDD432, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_0226E8684E9F4CF1912DD2B08BCDD432::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_0226E8684E9F4CF1912DD2B08BCDD432;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_44C233E04C497E898A6EE68EA5506F5A
 // 0x0008 (0x0008 - 0x0000)
@@ -726,9 +501,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_44C233E04C497E898A6EE68EA5506F
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_44C233E04C497E898A6EE68EA5506F5A) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_44C233E04C497E898A6EE68EA5506F5A");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_44C233E04C497E898A6EE68EA5506F5A) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_44C233E04C497E898A6EE68EA5506F5A");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_44C233E04C497E898A6EE68EA5506F5A, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_44C233E04C497E898A6EE68EA5506F5A::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_44C233E04C497E898A6EE68EA5506F5A;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_2099005542700D2022F146817F7CD551
 // 0x0008 (0x0008 - 0x0000)
@@ -737,9 +510,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_2099005542700D2022F146817F7CD5
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_2099005542700D2022F146817F7CD551) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_2099005542700D2022F146817F7CD551");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_2099005542700D2022F146817F7CD551) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_2099005542700D2022F146817F7CD551");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_2099005542700D2022F146817F7CD551, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_2099005542700D2022F146817F7CD551::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_2099005542700D2022F146817F7CD551;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_DAE0F2D042E1EE8E981273805EFF7812
 // 0x0008 (0x0008 - 0x0000)
@@ -748,9 +519,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E981273805EFF78
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E981273805EFF7812) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E981273805EFF7812");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E981273805EFF7812) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E981273805EFF7812");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E981273805EFF7812, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E981273805EFF7812::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E981273805EFF7812;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_697F5A3248F5E8F3196B0098EA6A45BF
 // 0x0008 (0x0008 - 0x0000)
@@ -759,9 +528,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_697F5A3248F5E8F3196B0098EA6A45
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_697F5A3248F5E8F3196B0098EA6A45BF) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_697F5A3248F5E8F3196B0098EA6A45BF");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_697F5A3248F5E8F3196B0098EA6A45BF) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_697F5A3248F5E8F3196B0098EA6A45BF");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_697F5A3248F5E8F3196B0098EA6A45BF, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_697F5A3248F5E8F3196B0098EA6A45BF::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_697F5A3248F5E8F3196B0098EA6A45BF;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_470FF1454207867BDDE76AB7420F01A4
 // 0x0008 (0x0008 - 0x0000)
@@ -770,9 +537,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_470FF1454207867BDDE76AB7420F01
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_470FF1454207867BDDE76AB7420F01A4) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_470FF1454207867BDDE76AB7420F01A4");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_470FF1454207867BDDE76AB7420F01A4) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_470FF1454207867BDDE76AB7420F01A4");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_470FF1454207867BDDE76AB7420F01A4, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_470FF1454207867BDDE76AB7420F01A4::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_470FF1454207867BDDE76AB7420F01A4;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_9FF53A5440DBF220AB61D1A2BE554E6B
 // 0x0008 (0x0008 - 0x0000)
@@ -781,9 +546,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_9FF53A5440DBF220AB61D1A2BE554E
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_9FF53A5440DBF220AB61D1A2BE554E6B) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_9FF53A5440DBF220AB61D1A2BE554E6B");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_9FF53A5440DBF220AB61D1A2BE554E6B) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_9FF53A5440DBF220AB61D1A2BE554E6B");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_9FF53A5440DBF220AB61D1A2BE554E6B, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_9FF53A5440DBF220AB61D1A2BE554E6B::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_9FF53A5440DBF220AB61D1A2BE554E6B;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_D6D8FBBE4351F56F8B516DAE7F6C1B0F
 // 0x0008 (0x0008 - 0x0000)
@@ -792,9 +555,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_D6D8FBBE4351F56F8B516DAE7F6C1B
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_D6D8FBBE4351F56F8B516DAE7F6C1B0F) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_D6D8FBBE4351F56F8B516DAE7F6C1B0F");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_D6D8FBBE4351F56F8B516DAE7F6C1B0F) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_D6D8FBBE4351F56F8B516DAE7F6C1B0F");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_D6D8FBBE4351F56F8B516DAE7F6C1B0F, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_D6D8FBBE4351F56F8B516DAE7F6C1B0F::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_D6D8FBBE4351F56F8B516DAE7F6C1B0F;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_F240FC9447C9A18C546668AD7581D862
 // 0x0008 (0x0008 - 0x0000)
@@ -803,9 +564,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668AD7581D8
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668AD7581D862) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668AD7581D862");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668AD7581D862) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668AD7581D862");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668AD7581D862, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668AD7581D862::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668AD7581D862;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.Completed_C44C0BCB4761CE1EEC04BEB933867411
 // 0x0010 (0x0010 - 0x0000)
@@ -814,9 +573,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_Completed_C44C0BCB4761CE1EEC04BEB933867
 public:
 	TArray<class UObject*>                        Loaded;                                            // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_Completed_C44C0BCB4761CE1EEC04BEB933867411) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_Completed_C44C0BCB4761CE1EEC04BEB933867411");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_Completed_C44C0BCB4761CE1EEC04BEB933867411) == 0x000010, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_Completed_C44C0BCB4761CE1EEC04BEB933867411");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_Completed_C44C0BCB4761CE1EEC04BEB933867411, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_Completed_C44C0BCB4761CE1EEC04BEB933867411::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_Completed_C44C0BCB4761CE1EEC04BEB933867411;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_F240FC9447C9A18C546668AD9F028A2B
 // 0x0008 (0x0008 - 0x0000)
@@ -825,9 +582,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668AD9F028A
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668AD9F028A2B) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668AD9F028A2B");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668AD9F028A2B) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668AD9F028A2B");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668AD9F028A2B, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668AD9F028A2B::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668AD9F028A2B;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_DAE0F2D042E1EE8E98127380B47C2A5B
 // 0x0008 (0x0008 - 0x0000)
@@ -836,9 +591,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E98127380B47C2A
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E98127380B47C2A5B) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E98127380B47C2A5B");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E98127380B47C2A5B) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E98127380B47C2A5B");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E98127380B47C2A5B, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E98127380B47C2A5B::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E98127380B47C2A5B;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_85DA89AA4A74182281DE208A379588AE
 // 0x0008 (0x0008 - 0x0000)
@@ -847,9 +600,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208A379588
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208A379588AE) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208A379588AE");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208A379588AE) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208A379588AE");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208A379588AE, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208A379588AE::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208A379588AE;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_1881E30949760AF8F517E1A8BAAC9964
 // 0x0008 (0x0008 - 0x0000)
@@ -858,9 +609,7 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A8BAAC99
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A8BAAC9964) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A8BAAC9964");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A8BAAC9964) == 0x000008, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A8BAAC9964");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A8BAAC9964, Loaded) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A8BAAC9964::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A8BAAC9964;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoadedStageAsset
 // 0x0004 (0x0004 - 0x0000)
@@ -869,12 +618,10 @@ struct BPC_RaceSequenceStateLoadAssets_C_OnLoadedStageAsset final
 public:
 	int32                                         StageIndex;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_OnLoadedStageAsset) == 0x000004, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_OnLoadedStageAsset");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_OnLoadedStageAsset) == 0x000004, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_OnLoadedStageAsset");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_OnLoadedStageAsset, StageIndex) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_OnLoadedStageAsset::StageIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_OnLoadedStageAsset;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets
-// 0x2F20 (0x2F20 - 0x0000)
+// 0x2F18 (0x2F18 - 0x0000)
 struct BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets final
 {
 public:
@@ -887,12 +634,12 @@ public:
 	EUnionLoadingGaugeState                       Temp_byte_Variable_3;                              // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EUnionLoadingGaugeState                       Temp_byte_Variable_4;                              // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UObject*>                        K2Node_CustomEvent_Loaded_4;                       // 0x0020(0x0010)(ConstParm, ReferenceParm)
-	TDelegate<void(const TArray<class UObject*>& Loaded)> K2Node_CreateDelegate_OutputDelegate_1;    // 0x0030(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(const TArray<class UObject*>& Loaded)> K2Node_CreateDelegate_OutputDelegate_1;    // 0x0020(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class UObject*>                        K2Node_CustomEvent_Loaded_4;                       // 0x0030(0x0010)(ConstParm, ReferenceParm)
 	TArray<class UObject*>                        Temp_object_Variable;                              // 0x0040(0x0010)(ReferenceParm)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                K2Node_CustomEvent_Loaded_3;                       // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                K2Node_CustomEvent_Loaded_3;                       // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                Temp_object_Variable_1;                            // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUnionComPathBinaryDataAsset*           K2Node_DynamicCast_AsUnion_Com_Path_Binary_Data_Asset; // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -901,514 +648,515 @@ public:
 	class UObject*                                Temp_object_Variable_2;                            // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUnionRunPathBinaryDataAsset*           K2Node_DynamicCast_AsUnion_Run_Path_Binary_Data_Asset; // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                K2Node_CustomEvent_Loaded_1;                       // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                Temp_object_Variable_3;                            // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUnionNavigationBinaryDataAsset*        K2Node_DynamicCast_AsUnion_Navigation_Binary_Data_Asset; // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                K2Node_CustomEvent_Loaded;                         // 0x00B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                Temp_object_Variable_4;                            // 0x00C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUnionBtCollisionBinaryAsset*           K2Node_DynamicCast_AsUnion_Bt_Collision_Binary_Asset; // 0x00C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x00D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EStageId                                      Temp_byte_Variable_5;                              // 0x00D2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_1;                              // 0x00D3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D4[0x4];                                       // 0x00D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Temp_string_Variable;                              // 0x00D8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 Temp_string_Variable_1;                            // 0x00E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_2;                              // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Temp_string_Variable_2;                            // 0x0100(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 Temp_string_Variable_3;                            // 0x0110(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_3;                              // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_121[0x7];                                      // 0x0121(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Temp_string_Variable_4;                            // 0x0128(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 Temp_string_Variable_5;                            // 0x0138(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_4;                              // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_149[0x7];                                      // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Temp_string_Variable_6;                            // 0x0150(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 Temp_string_Variable_7;                            // 0x0160(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_5;                              // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EStageId                                      Temp_byte_Variable_5;                              // 0x0092(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x0093(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Temp_string_Variable;                              // 0x0098(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 Temp_string_Variable_1;                            // 0x00A8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_2;                              // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Temp_string_Variable_2;                            // 0x00C0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 Temp_string_Variable_3;                            // 0x00D0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_3;                              // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E1[0x7];                                       // 0x00E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Temp_string_Variable_4;                            // 0x00E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 Temp_string_Variable_5;                            // 0x00F8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_4;                              // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_109[0x7];                                      // 0x0109(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Temp_string_Variable_6;                            // 0x0110(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 Temp_string_Variable_7;                            // 0x0120(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class UObject*                                K2Node_CustomEvent_Loaded_1;                       // 0x0130(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable_3;                            // 0x0138(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUnionNavigationBinaryDataAsset*        K2Node_DynamicCast_AsUnion_Navigation_Binary_Data_Asset; // 0x0140(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_5;                              // 0x0149(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14A[0x6];                                      // 0x014A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Temp_string_Variable_8;                            // 0x0150(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 Temp_string_Variable_9;                            // 0x0160(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_6;                              // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_171[0x7];                                      // 0x0171(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Temp_string_Variable_8;                            // 0x0178(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 Temp_string_Variable_9;                            // 0x0188(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_6;                              // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_199[0x7];                                      // 0x0199(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Temp_string_Variable_10;                           // 0x01A0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 Temp_string_Variable_11;                           // 0x01B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	EUnionLoadingGaugeState                       Temp_byte_Variable_6;                              // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C1[0x3];                                      // 0x01C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x01C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x01C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EUnionLoadingGaugeState                       Temp_byte_Variable_7;                              // 0x01CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1CD[0x3];                                      // 0x01CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable_1;                               // 0x01D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D4[0x4];                                      // 0x01D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                Temp_object_Variable_5;                            // 0x01D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUnionComPathBinaryDataAsset*           K2Node_DynamicCast_AsUnion_Com_Path_Binary_Data_Asset_1; // 0x01E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1E9[0x7];                                      // 0x01E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                K2Node_CustomEvent_Loaded_5;                       // 0x01F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x01FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x01FD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1FE[0x2];                                      // 0x01FE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                Temp_object_Variable_6;                            // 0x0200(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EStageCourseMapInfo                           Temp_byte_Variable_8;                              // 0x0208(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_209[0x7];                                      // 0x0209(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstance*                      K2Node_DynamicCast_As___________;                  // 0x0210(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_5;                     // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_219[0x3];                                      // 0x0219(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x021C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0220(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EStageCourseMapInfo                           Temp_byte_Variable_9;                              // 0x0224(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_225[0x3];                                      // 0x0225(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                K2Node_CustomEvent_Loaded_6;                       // 0x0228(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue;   // 0x0230(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_231[0x3];                                      // 0x0231(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0234(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_True_if_break_was_hit_Variable_1;        // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_239[0x7];                                      // 0x0239(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                Temp_object_Variable_7;                            // 0x0240(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstance*                      K2Node_DynamicCast_As____________1;                // 0x0248(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_6;                     // 0x0250(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0251(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_252[0x2];                                      // 0x0252(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x0254(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                K2Node_CustomEvent_Loaded_7;                       // 0x0258(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0260(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_264[0x4];                                      // 0x0264(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRaceCourseMapInfo                     K2Node_MakeStruct_RaceCourseMapInfo;               // 0x0268(0x0050)()
-	class UObject*                                Temp_object_Variable_8;                            // 0x02B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             K2Node_DynamicCast_As_____2D;                      // 0x02C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_7;                     // 0x02C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C9[0x3];                                      // 0x02C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x02CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStageCourseMapParam                   K2Node_MakeStruct_StageCourseMapParam;             // 0x02D0(0x0028)(NoDestructor)
-	class UObject*                                K2Node_CustomEvent_Loaded_31;                      // 0x02F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                Temp_object_Variable_9;                            // 0x0300(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstance*                      K2Node_DynamicCast_As____________2;                // 0x0308(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_8;                     // 0x0310(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_311[0x3];                                      // 0x0311(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable_3;                  // 0x0314(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                K2Node_CustomEvent_Loaded_8;                       // 0x0318(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x0320(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_324[0x4];                                      // 0x0324(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARaceSequence*                          CallFunc_GetOwnerRaceSequence_ReturnValue;         // 0x0328(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_RaceSequence_C*                     K2Node_DynamicCast_AsBP_Race_Sequence;             // 0x0330(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_9;                     // 0x0338(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue_1; // 0x0339(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EStageCourseMapInfo                           Temp_byte_Variable_10;                             // 0x033A(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_33B[0x5];                                      // 0x033B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARaceSequence*                          CallFunc_GetOwnerRaceSequence_ReturnValue_1;       // 0x0340(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_RaceSequence_C*                     K2Node_DynamicCast_AsBP_Race_Sequence_1;           // 0x0348(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_10;                    // 0x0350(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EStageCourseMapInfo                           Temp_byte_Variable_11;                             // 0x0351(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_352[0x2];                                      // 0x0352(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable_3;                   // 0x0354(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                Temp_object_Variable_10;                           // 0x0358(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                Temp_object_Variable_11;                           // 0x0360(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             K2Node_DynamicCast_As_____2D_1;                    // 0x0368(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_11;                    // 0x0370(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_371[0x7];                                      // 0x0371(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstance*                      K2Node_DynamicCast_As____________3;                // 0x0378(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_12;                    // 0x0380(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_381[0x7];                                      // 0x0381(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStageCourseMapParam                   K2Node_MakeStruct_StageCourseMapParam_1;           // 0x0388(0x0028)(NoDestructor)
-	bool                                          Temp_bool_True_if_break_was_hit_Variable_2;        // 0x03B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x03B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3B2[0x6];                                      // 0x03B2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                K2Node_CustomEvent_Loaded_32;                      // 0x03B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                K2Node_CustomEvent_Loaded_9;                       // 0x03C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                Temp_object_Variable_12;                           // 0x03C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                K2Node_CustomEvent_Loaded_10;                      // 0x03D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUnionRunPathBinaryDataAsset*           K2Node_DynamicCast_AsUnion_Run_Path_Binary_Data_Asset_1; // 0x03D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_13;                    // 0x03E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E1[0x7];                                      // 0x03E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                Temp_object_Variable_13;                           // 0x03E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x03F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 Temp_string_Variable_10;                           // 0x0178(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 Temp_string_Variable_11;                           // 0x0188(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class UObject*                                K2Node_CustomEvent_Loaded;                         // 0x0198(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable_4;                            // 0x01A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUnionBtCollisionBinaryAsset*           K2Node_DynamicCast_AsUnion_Bt_Collision_Binary_Asset; // 0x01A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUnionLoadingGaugeState                       Temp_byte_Variable_6;                              // 0x01B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUnionLoadingGaugeState                       Temp_byte_Variable_7;                              // 0x01B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1B3[0x1];                                      // 0x01B3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x01B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x01B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUnionLoadingGaugeState                       Temp_byte_Variable_8;                              // 0x01BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1BD[0x3];                                      // 0x01BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                Temp_object_Variable_5;                            // 0x01C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUnionComPathBinaryDataAsset*           K2Node_DynamicCast_AsUnion_Com_Path_Binary_Data_Asset_1; // 0x01C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D1[0x3];                                      // 0x01D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable_1;                               // 0x01D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                K2Node_CustomEvent_Loaded_5;                       // 0x01D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x01E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x01E5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E6[0x2];                                      // 0x01E6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                Temp_object_Variable_6;                            // 0x01E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EStageCourseMapInfo                           Temp_byte_Variable_9;                              // 0x01F0(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1F1[0x7];                                      // 0x01F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstance*                      K2Node_DynamicCast_As___________;                  // 0x01F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_5;                     // 0x0200(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EStageCourseMapInfo                           Temp_byte_Variable_10;                             // 0x0201(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_202[0x2];                                      // 0x0202(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0204(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0208(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_20C[0x4];                                      // 0x020C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                K2Node_CustomEvent_Loaded_6;                       // 0x0210(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0218(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue;   // 0x021C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21D[0x3];                                      // 0x021D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                Temp_object_Variable_7;                            // 0x0220(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_True_if_break_was_hit_Variable_1;        // 0x0228(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_229[0x7];                                      // 0x0229(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstance*                      K2Node_DynamicCast_As____________1;                // 0x0230(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_6;                     // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0239(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_23A[0x6];                                      // 0x023A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                K2Node_CustomEvent_Loaded_7;                       // 0x0240(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FRaceCourseMapInfo                     K2Node_MakeStruct_RaceCourseMapInfo;               // 0x0248(0x0050)()
+	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x0298(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x029C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable_8;                            // 0x02A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x02A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2AC[0x4];                                      // 0x02AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstance*                      K2Node_DynamicCast_As____________2;                // 0x02B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_7;                     // 0x02B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2B9[0x7];                                      // 0x02B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                Temp_object_Variable_9;                            // 0x02C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             K2Node_DynamicCast_As_____2D;                      // 0x02C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_8;                     // 0x02D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2D1[0x3];                                      // 0x02D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable_3;                  // 0x02D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStageCourseMapParam                   K2Node_MakeStruct_StageCourseMapParam;             // 0x02D8(0x0028)(NoDestructor)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x0300(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_304[0x4];                                      // 0x0304(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                K2Node_CustomEvent_Loaded_8;                       // 0x0308(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                K2Node_CustomEvent_Loaded_31;                      // 0x0310(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ARaceSequence*                          CallFunc_GetOwnerRaceSequence_ReturnValue;         // 0x0318(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_RaceSequence_C*                     K2Node_DynamicCast_AsBP_Race_Sequence;             // 0x0320(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_9;                     // 0x0328(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue_1; // 0x0329(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_32A[0x6];                                      // 0x032A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARaceSequence*                          CallFunc_GetOwnerRaceSequence_ReturnValue_1;       // 0x0330(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EStageCourseMapInfo                           Temp_byte_Variable_11;                             // 0x0338(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_339[0x7];                                      // 0x0339(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_RaceSequence_C*                     K2Node_DynamicCast_AsBP_Race_Sequence_1;           // 0x0340(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_10;                    // 0x0348(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EStageCourseMapInfo                           Temp_byte_Variable_12;                             // 0x0349(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34A[0x6];                                      // 0x034A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                Temp_object_Variable_10;                           // 0x0350(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable_11;                           // 0x0358(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstance*                      K2Node_DynamicCast_As____________3;                // 0x0360(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_11;                    // 0x0368(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_369[0x7];                                      // 0x0369(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             K2Node_DynamicCast_As_____2D_1;                    // 0x0370(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_12;                    // 0x0378(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_379[0x3];                                      // 0x0379(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable_3;                   // 0x037C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStageCourseMapParam                   K2Node_MakeStruct_StageCourseMapParam_1;           // 0x0380(0x0028)(NoDestructor)
+	class UObject*                                K2Node_CustomEvent_Loaded_32;                      // 0x03A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                K2Node_CustomEvent_Loaded_9;                       // 0x03B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_True_if_break_was_hit_Variable_2;        // 0x03B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x03B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3BA[0x6];                                      // 0x03BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                Temp_object_Variable_12;                           // 0x03C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                K2Node_CustomEvent_Loaded_10;                      // 0x03C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUnionRunPathBinaryDataAsset*           K2Node_DynamicCast_AsUnion_Run_Path_Binary_Data_Asset_1; // 0x03D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_13;                    // 0x03D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3D9[0x7];                                      // 0x03D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                Temp_object_Variable_13;                           // 0x03E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUnionComPathBinaryDataAsset*           K2Node_DynamicCast_AsUnion_Com_Path_Binary_Data_Asset_2; // 0x03E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_14;                    // 0x03F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_3F1[0x7];                                      // 0x03F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionComPathBinaryDataAsset*           K2Node_DynamicCast_AsUnion_Com_Path_Binary_Data_Asset_2; // 0x03F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_14;                    // 0x0400(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0401(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_402[0x6];                                      // 0x0402(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                K2Node_CustomEvent_Loaded_33;                      // 0x0408(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_4;                  // 0x0410(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x0414(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0418(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_41C[0x4];                                      // 0x041C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FName>                           CallFunc_GetDataTableRowNames_OutRowNames;         // 0x0420(0x0010)(ReferenceParm)
-	class UObject*                                Temp_object_Variable_14;                           // 0x0430(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0438(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_43C[0x4];                                      // 0x043C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionRunPathBinaryDataAsset*           K2Node_DynamicCast_AsUnion_Run_Path_Binary_Data_Asset_2; // 0x0440(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_15;                    // 0x0448(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_449[0x3];                                      // 0x0449(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x044C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0450(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_451[0x7];                                      // 0x0451(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FAppRaceStageSetting>           CallFunc_GetSelectedStageSettings_ReturnValue;     // 0x0458(0x0010)(ReferenceParm)
-	class UObject*                                K2Node_CustomEvent_Loaded_34;                      // 0x0468(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FAppRaceStageSetting                   CallFunc_Array_Get_Item;                           // 0x0470(0x0004)(NoDestructor)
-	int32                                         CallFunc_Array_Length_ReturnValue_3;               // 0x0474(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                K2Node_CustomEvent_Loaded_33;                      // 0x03F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0400(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_4;                  // 0x0404(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                           CallFunc_GetDataTableRowNames_OutRowNames;         // 0x0408(0x0010)(ReferenceParm)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0418(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x041C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x0420(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0424(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_425[0x3];                                      // 0x0425(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                Temp_object_Variable_14;                           // 0x0428(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstance*                      K2Node_DynamicCast_As____________4;                // 0x0430(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_15;                    // 0x0438(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_439[0x7];                                      // 0x0439(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FAppRaceStageSetting>           CallFunc_GetSelectedStageSettings_ReturnValue;     // 0x0440(0x0010)(ReferenceParm)
+	class UObject*                                Temp_object_Variable_15;                           // 0x0450(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FAppRaceStageSetting                   CallFunc_Array_Get_Item;                           // 0x0458(0x0004)(NoDestructor)
+	uint8                                         Pad_45C[0x4];                                      // 0x045C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionRunPathBinaryDataAsset*           K2Node_DynamicCast_AsUnion_Run_Path_Binary_Data_Asset_2; // 0x0460(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_16;                    // 0x0468(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_469[0x3];                                      // 0x0469(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue_3;               // 0x046C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                K2Node_CustomEvent_Loaded_11;                      // 0x0470(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0478(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_479[0x7];                                      // 0x0479(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                Temp_object_Variable_15;                           // 0x0480(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0488(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_489[0x7];                                      // 0x0489(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstance*                      K2Node_DynamicCast_As____________4;                // 0x0490(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_16;                    // 0x0498(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_499[0x7];                                      // 0x0499(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FAppRaceStageSetting>           CallFunc_GetSelectedStageSettings_ReturnValue_1;   // 0x04A0(0x0010)(ReferenceParm)
-	EGroupRaceRule                                CallFunc_GetGroupRaceRuleSetting_ReturnValue;      // 0x04B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsGroupRace_ReturnValue;                  // 0x04B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4B2[0x6];                                      // 0x04B2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGroupRaceRuleData                     CallFunc_Get_Group_Rule_Data_Impl_GroupRaceRuleData; // 0x04B8(0x0050)()
-	struct FAppRaceStageSetting                   K2Node_MakeStruct_AppRaceStageSetting;             // 0x0508(0x0004)(NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x050C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x050D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_50E[0x2];                                      // 0x050E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable_4;                   // 0x0510(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0479(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_47A[0x6];                                      // 0x047A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FAppRaceStageSetting>           CallFunc_GetSelectedStageSettings_ReturnValue_1;   // 0x0480(0x0010)(ReferenceParm)
+	EGroupRaceRule                                CallFunc_GetGroupRaceRuleSetting_ReturnValue;      // 0x0490(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsGroupRace_ReturnValue;                  // 0x0491(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_492[0x6];                                      // 0x0492(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGroupRaceRuleData                     CallFunc_Get_Group_Rule_Data_Impl_GroupRaceRuleData; // 0x0498(0x0050)()
+	class UObject*                                K2Node_CustomEvent_Loaded_34;                      // 0x04E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FAppRaceStageSetting                   K2Node_MakeStruct_AppRaceStageSetting;             // 0x04F0(0x0004)(NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x04F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x04F5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4F6[0x2];                                      // 0x04F6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FName>                           CallFunc_GetDataTableRowNames_OutRowNames_1;       // 0x04F8(0x0010)(ReferenceParm)
+	class FName                                   CallFunc_Array_Get_Item_1;                         // 0x0508(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_4;               // 0x0510(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_514[0x4];                                      // 0x0514(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FName>                           CallFunc_GetDataTableRowNames_OutRowNames_1;       // 0x0518(0x0010)(ReferenceParm)
-	class UObject*                                Temp_object_Variable_16;                           // 0x0528(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Array_Get_Item_1;                         // 0x0530(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUnionNavigationBinaryDataAsset*        K2Node_DynamicCast_AsUnion_Navigation_Binary_Data_Asset_1; // 0x0538(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_17;                    // 0x0540(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_541[0x7];                                      // 0x0541(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStageDataAssetTableRow                CallFunc_GetDataTableRowFromName_OutRow;           // 0x0548(0x00E0)()
-	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0628(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_629[0x3];                                      // 0x0629(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue_4;               // 0x062C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0630(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_631[0x3];                                      // 0x0631(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue_5;               // 0x0634(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                K2Node_CustomEvent_Loaded_11;                      // 0x0638(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue_1;        // 0x0640(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_641[0x7];                                      // 0x0641(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FAppRaceStageSetting>           CallFunc_GetSelectedStageSettings_ReturnValue_2;   // 0x0648(0x0010)(ReferenceParm)
-	struct FAppRaceStageSetting                   CallFunc_Array_Get_Item_2;                         // 0x0658(0x0004)(NoDestructor)
-	int32                                         CallFunc_Array_Length_ReturnValue_6;               // 0x065C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x0660(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_661[0x7];                                      // 0x0661(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FAppRaceStageSetting>           CallFunc_GetSelectedStageSettings_ReturnValue_3;   // 0x0668(0x0010)(ReferenceParm)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0678(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGroupRaceRule                                CallFunc_GetGroupRaceRuleSetting_ReturnValue_1;    // 0x0679(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsGroupRace_ReturnValue_1;                // 0x067A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_67B[0x5];                                      // 0x067B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGroupRaceRuleData                     CallFunc_Get_Group_Rule_Data_Impl_GroupRaceRuleData_1; // 0x0680(0x0050)()
-	bool                                          Temp_bool_True_if_break_was_hit_Variable_3;        // 0x06D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FAppRaceStageSetting                   K2Node_MakeStruct_AppRaceStageSetting_1;           // 0x06D1(0x0004)(NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_3;                // 0x06D5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6D6[0x2];                                      // 0x06D6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                Temp_object_Variable_17;                           // 0x06D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                K2Node_CustomEvent_Loaded_35;                      // 0x06E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstance*                      K2Node_DynamicCast_As____________5;                // 0x06E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_18;                    // 0x06F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ERaceType                                     CallFunc_GetSelectedRaceType_ReturnValue;          // 0x06F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x06F2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x06F3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x06F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6F5[0x3];                                      // 0x06F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                K2Node_CustomEvent_Loaded_12;                      // 0x06F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FStageDataAssetTableRow                CallFunc_GetDataTableRowFromName_OutRow;           // 0x0518(0x00E0)()
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x05F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x05F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5FA[0x6];                                      // 0x05FA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                Temp_object_Variable_16;                           // 0x0600(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUnionNavigationBinaryDataAsset*        K2Node_DynamicCast_AsUnion_Navigation_Binary_Data_Asset_1; // 0x0608(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_17;                    // 0x0610(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_611[0x3];                                      // 0x0611(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue_5;               // 0x0614(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable_17;                           // 0x0618(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue_1;        // 0x0620(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_621[0x7];                                      // 0x0621(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstance*                      K2Node_DynamicCast_As____________5;                // 0x0628(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_18;                    // 0x0630(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_631[0x7];                                      // 0x0631(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FAppRaceStageSetting>           CallFunc_GetSelectedStageSettings_ReturnValue_2;   // 0x0638(0x0010)(ReferenceParm)
+	int32                                         Temp_int_Array_Index_Variable_4;                   // 0x0648(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FAppRaceStageSetting                   CallFunc_Array_Get_Item_2;                         // 0x064C(0x0004)(NoDestructor)
+	int32                                         CallFunc_Array_Length_ReturnValue_6;               // 0x0650(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_654[0x4];                                      // 0x0654(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FAppRaceStageSetting>           CallFunc_GetSelectedStageSettings_ReturnValue_3;   // 0x0658(0x0010)(ReferenceParm)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x0668(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0669(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGroupRaceRule                                CallFunc_GetGroupRaceRuleSetting_ReturnValue_1;    // 0x066A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsGroupRace_ReturnValue_1;                // 0x066B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_66C[0x4];                                      // 0x066C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGroupRaceRuleData                     CallFunc_Get_Group_Rule_Data_Impl_GroupRaceRuleData_1; // 0x0670(0x0050)()
+	class UObject*                                K2Node_CustomEvent_Loaded_12;                      // 0x06C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FAppRaceStageSetting                   K2Node_MakeStruct_AppRaceStageSetting_1;           // 0x06C8(0x0004)(NoDestructor)
+	uint8                                         Pad_6CC[0x4];                                      // 0x06CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                K2Node_CustomEvent_Loaded_35;                      // 0x06D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ERaceType                                     CallFunc_GetSelectedRaceType_ReturnValue;          // 0x06D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x06D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x06DA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x06DB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6DC[0x4];                                      // 0x06DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                Temp_object_Variable_18;                           // 0x06E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstance*                      K2Node_DynamicCast_As____________6;                // 0x06E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_19;                    // 0x06F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6F1[0x7];                                      // 0x06F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                K2Node_CustomEvent_Loaded_13;                      // 0x06F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CallFunc_Conv_IntToByte_ReturnValue;               // 0x0700(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x0701(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_Conv_IntToByte_ReturnValue_1;             // 0x0702(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_703[0x1];                                      // 0x0703(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   CallFunc_GetEnumeratorName_ReturnValue;            // 0x0704(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_GetValidValue_ReturnValue_1;              // 0x070C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_70D[0x3];                                      // 0x070D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	ERaceType                                     CallFunc_GetSelectedRaceType_ReturnValue_1;        // 0x0702(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_True_if_break_was_hit_Variable_3;        // 0x0703(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_Conv_IntToByte_ReturnValue_1;             // 0x0704(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_3;                // 0x0705(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_GetValidValue_ReturnValue_1;              // 0x0706(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_707[0x1];                                      // 0x0707(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CallFunc_GetEnumeratorName_ReturnValue;            // 0x0708(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Conv_NameToString_ReturnValue;            // 0x0710(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0720(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class UObject*                                Temp_object_Variable_18;                           // 0x0730(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstance*                      K2Node_DynamicCast_As____________6;                // 0x0738(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_19;                    // 0x0740(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ERaceType                                     CallFunc_GetSelectedRaceType_ReturnValue_1;        // 0x0741(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_742[0x6];                                      // 0x0742(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRaceCourseSubMapInfo                  K2Node_MakeStruct_RaceCourseSubMapInfo;            // 0x0748(0x0050)()
-	class UObject*                                K2Node_CustomEvent_Loaded_13;                      // 0x0798(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                Temp_object_Variable_19;                           // 0x07A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FVector>                        K2Node_MakeArray_Array;                            // 0x07A8(0x0010)(ReferenceParm)
-	class UUnionBtCollisionBinaryAsset*           K2Node_DynamicCast_AsUnion_Bt_Collision_Binary_Asset_1; // 0x07B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_20;                    // 0x07C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7C1[0x7];                                      // 0x07C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                Temp_object_Variable_20;                           // 0x07C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstance*                      K2Node_DynamicCast_As____________7;                // 0x07D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_21;                    // 0x07D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7D9[0x7];                                      // 0x07D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARaceSequence*                          CallFunc_GetOwnerRaceSequence_ReturnValue_2;       // 0x07E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_RaceSequence_C*                     K2Node_DynamicCast_AsBP_Race_Sequence_2;           // 0x07E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_22;                    // 0x07F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7F1[0x7];                                      // 0x07F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                K2Node_CustomEvent_Loaded_14;                      // 0x07F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0800(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_801[0x7];                                      // 0x0801(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                K2Node_CustomEvent_Loaded_36;                      // 0x0808(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                Temp_object_Variable_21;                           // 0x0810(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_5;                  // 0x0818(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_81C[0x4];                                      // 0x081C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstance*                      K2Node_DynamicCast_As____________8;                // 0x0820(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_23;                    // 0x0828(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_829[0x3];                                      // 0x0829(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_5;                 // 0x082C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                K2Node_CustomEvent_Loaded_15;                      // 0x0830(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_6;                 // 0x0838(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_83C[0x4];                                      // 0x083C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                Temp_object_Variable_22;                           // 0x0840(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstance*                      K2Node_DynamicCast_As____________9;                // 0x0848(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_24;                    // 0x0850(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_851[0x7];                                      // 0x0851(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                K2Node_CustomEvent_Loaded_16;                      // 0x0858(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                Temp_object_Variable_23;                           // 0x0860(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_2;            // 0x0868(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UStaticMesh*                            K2Node_DynamicCast_As__________;                   // 0x0878(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_25;                    // 0x0880(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_881[0x7];                                      // 0x0881(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                K2Node_CustomEvent_Loaded_17;                      // 0x0888(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                Temp_object_Variable_24;                           // 0x0890(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_7;                 // 0x0898(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_89C[0x4];                                      // 0x089C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UStaticMesh*                            K2Node_DynamicCast_As___________1;                 // 0x08A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_26;                    // 0x08A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_Conv_IntToByte_ReturnValue_2;             // 0x08A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_GetValidValue_ReturnValue_2;              // 0x08AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8AB[0x5];                                      // 0x08AB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                K2Node_CustomEvent_Loaded_18;                      // 0x08B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                Temp_object_Variable_25;                           // 0x08B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UStaticMesh*                            K2Node_DynamicCast_As___________2;                 // 0x08C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_27;                    // 0x08C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8C9[0x7];                                      // 0x08C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x08D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_8;                 // 0x08D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8DC[0x4];                                      // 0x08DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x08E0(0x0048)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0928(0x0010)(ReferenceParm)
-	class UObject*                                K2Node_CustomEvent_Loaded_19;                      // 0x0938(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0940(0x0010)()
-	class ARaceSequence*                          CallFunc_GetOwnerRaceSequence_ReturnValue_3;       // 0x0950(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_RaceSequence_C*                     K2Node_DynamicCast_AsBP_Race_Sequence_3;           // 0x0958(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_28;                    // 0x0960(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_961[0x7];                                      // 0x0961(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                Temp_object_Variable_26;                           // 0x0968(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable_19;                           // 0x0720(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0728(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class UMaterialInstance*                      K2Node_DynamicCast_As____________7;                // 0x0738(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_20;                    // 0x0740(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_741[0x7];                                      // 0x0741(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                Temp_object_Variable_20;                           // 0x0748(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FRaceCourseSubMapInfo                  K2Node_MakeStruct_RaceCourseSubMapInfo;            // 0x0750(0x0050)()
+	class UUnionBtCollisionBinaryAsset*           K2Node_DynamicCast_AsUnion_Bt_Collision_Binary_Asset_1; // 0x07A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_21;                    // 0x07A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7A9[0x7];                                      // 0x07A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FVector>                        K2Node_MakeArray_Array;                            // 0x07B0(0x0010)(ReferenceParm)
+	class UObject*                                K2Node_CustomEvent_Loaded_14;                      // 0x07C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x07C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7C9[0x7];                                      // 0x07C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                Temp_object_Variable_21;                           // 0x07D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstance*                      K2Node_DynamicCast_As____________8;                // 0x07D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_22;                    // 0x07E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7E1[0x7];                                      // 0x07E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                K2Node_CustomEvent_Loaded_36;                      // 0x07E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                K2Node_CustomEvent_Loaded_15;                      // 0x07F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable_22;                           // 0x07F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_5;                 // 0x0800(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_804[0x4];                                      // 0x0804(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstance*                      K2Node_DynamicCast_As____________9;                // 0x0808(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_23;                    // 0x0810(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_811[0x7];                                      // 0x0811(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARaceSequence*                          CallFunc_GetOwnerRaceSequence_ReturnValue_2;       // 0x0818(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_RaceSequence_C*                     K2Node_DynamicCast_AsBP_Race_Sequence_2;           // 0x0820(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_24;                    // 0x0828(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_829[0x7];                                      // 0x0829(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                K2Node_CustomEvent_Loaded_16;                      // 0x0830(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_5;                   // 0x0838(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x083C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_83D[0x3];                                      // 0x083D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                Temp_object_Variable_23;                           // 0x0840(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_5;                  // 0x0848(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_84C[0x4];                                      // 0x084C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UStaticMesh*                            K2Node_DynamicCast_As__________;                   // 0x0850(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_25;                    // 0x0858(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_859[0x3];                                      // 0x0859(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_6;                 // 0x085C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                K2Node_CustomEvent_Loaded_17;                      // 0x0860(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable_24;                           // 0x0868(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UStaticMesh*                            K2Node_DynamicCast_As___________1;                 // 0x0870(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_26;                    // 0x0878(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_879[0x3];                                      // 0x0879(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_7;                 // 0x087C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                K2Node_CustomEvent_Loaded_18;                      // 0x0880(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable_25;                           // 0x0888(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UStaticMesh*                            K2Node_DynamicCast_As___________2;                 // 0x0890(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_27;                    // 0x0898(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_899[0x7];                                      // 0x0899(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x08A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_8;                 // 0x08A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8AC[0x4];                                      // 0x08AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x08B0(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x08F8(0x0010)(ReferenceParm)
+	uint8                                         CallFunc_Conv_IntToByte_ReturnValue_2;             // 0x0908(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_909[0x7];                                      // 0x0909(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0910(0x0010)()
+	uint8                                         CallFunc_GetValidValue_ReturnValue_2;              // 0x0920(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_921[0x7];                                      // 0x0921(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                K2Node_CustomEvent_Loaded_19;                      // 0x0928(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_2;            // 0x0930(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ARaceSequence*                          CallFunc_GetOwnerRaceSequence_ReturnValue_3;       // 0x0940(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable_26;                           // 0x0948(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_RaceSequence_C*                     K2Node_DynamicCast_AsBP_Race_Sequence_3;           // 0x0950(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_28;                    // 0x0958(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_959[0x7];                                      // 0x0959(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UStaticMesh*                            K2Node_DynamicCast_As___________3;                 // 0x0960(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_29;                    // 0x0968(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_969[0x7];                                      // 0x0969(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUnionRaceUI*                           CallFunc_GetRaceHUDRef_ReturnValue;                // 0x0970(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UStaticMesh*                            K2Node_DynamicCast_As___________3;                 // 0x0978(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_29;                    // 0x0980(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_981[0x7];                                      // 0x0981(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TSoftObjectPtr<class UObject>                 CallFunc_Select_Course_Setting_Impl_Texture;       // 0x0988(0x0028)(UObjectWrapper, HasGetValueTypeHash)
-	double                                        CallFunc_Select_Course_Setting_Impl_OrthoRate;     // 0x09B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Select_Course_Setting_Impl_Angle;         // 0x09B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Select_Course_Setting_Impl_Offset;        // 0x09C0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                K2Node_CustomEvent_Loaded_20;                      // 0x09D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IUnionRaceUIInterface> CallFunc_SetCourseSetting_self_CastInput;          // 0x09E0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_5;                   // 0x09F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Array_Get_Item_3;                         // 0x09F4(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9FC[0x4];                                      // 0x09FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStageDataAssetTableRow                CallFunc_GetDataTableRowFromName_OutRow_1;         // 0x0A00(0x00E0)()
-	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue_1;    // 0x0AE0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_AE1[0x7];                                      // 0x0AE1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                Temp_object_Variable_27;                           // 0x0AE8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UStaticMesh*                            K2Node_DynamicCast_As___________4;                 // 0x0AF0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_30;                    // 0x0AF8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_AF9[0x7];                                      // 0x0AF9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                K2Node_CustomEvent_Loaded_21;                      // 0x0B00(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                Temp_object_Variable_28;                           // 0x0B08(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_StartStageLevels_ReturnValue;             // 0x0B10(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B11[0x7];                                      // 0x0B11(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UStaticMesh*                            K2Node_DynamicCast_As___________5;                 // 0x0B18(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_31;                    // 0x0B20(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B21[0x3];                                      // 0x0B21(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable_6;                   // 0x0B24(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                K2Node_CustomEvent_Loaded_22;                      // 0x0B28(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0B30(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B31[0x3];                                      // 0x0B31(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable_6;                  // 0x0B34(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TSoftObjectPtr<class UObject>                 CallFunc_Select_Course_Setting_Impl_Texture;       // 0x0978(0x0028)(UObjectWrapper, HasGetValueTypeHash)
+	double                                        CallFunc_Select_Course_Setting_Impl_OrthoRate;     // 0x09A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Select_Course_Setting_Impl_Angle;         // 0x09A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Select_Course_Setting_Impl_Offset;        // 0x09B0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                K2Node_CustomEvent_Loaded_20;                      // 0x09C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IUnionRaceUIInterface> CallFunc_SetCourseSetting_self_CastInput;          // 0x09D0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable_27;                           // 0x09E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UStaticMesh*                            K2Node_DynamicCast_As___________4;                 // 0x09E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_30;                    // 0x09F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9F1[0x7];                                      // 0x09F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                K2Node_CustomEvent_Loaded_21;                      // 0x09F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_6;                   // 0x0A00(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Array_Get_Item_3;                         // 0x0A04(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A0C[0x4];                                      // 0x0A0C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStageDataAssetTableRow                CallFunc_GetDataTableRowFromName_OutRow_1;         // 0x0A10(0x00E0)()
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue_1;    // 0x0AF0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_AF1[0x7];                                      // 0x0AF1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                Temp_object_Variable_28;                           // 0x0AF8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                K2Node_CustomEvent_Loaded_22;                      // 0x0B00(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UStaticMesh*                            K2Node_DynamicCast_As___________5;                 // 0x0B08(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_31;                    // 0x0B10(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_StartStageLevels_ReturnValue;             // 0x0B11(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0B12(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B13[0x5];                                      // 0x0B13(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                Temp_object_Variable_29;                           // 0x0B18(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_6;                  // 0x0B20(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B24[0x4];                                      // 0x0B24(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             K2Node_DynamicCast_As_____2D_2;                    // 0x0B28(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_32;                    // 0x0B30(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_3;                // 0x0B31(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B32[0x2];                                      // 0x0B32(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_9;                 // 0x0B34(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CallFunc_Conv_IntToByte_ReturnValue_3;             // 0x0B38(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_3;                // 0x0B39(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_GetValidValue_ReturnValue_3;              // 0x0B3A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B3B[0x1];                                      // 0x0B3B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_9;                 // 0x0B3C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                Temp_object_Variable_29;                           // 0x0B40(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             K2Node_DynamicCast_As_____2D_2;                    // 0x0B48(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_32;                    // 0x0B50(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B51[0x7];                                      // 0x0B51(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                K2Node_CustomEvent_Loaded_23;                      // 0x0B58(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_3;            // 0x0B60(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_2;                               // 0x0B70(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_4;            // 0x0B74(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_5;            // 0x0B84(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B94[0x4];                                      // 0x0B94(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FName>                           Temp_name_Variable;                                // 0x0B98(0x0010)(ConstParm, ReferenceParm)
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_6;            // 0x0BA8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_7;            // 0x0BB8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_8;            // 0x0BC8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_9;            // 0x0BD8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_10;           // 0x0BE8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_11;           // 0x0BF8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_12;           // 0x0C08(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_13;           // 0x0C18(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_14;           // 0x0C28(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_15;           // 0x0C38(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_16;           // 0x0C48(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_17;           // 0x0C58(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FUnionRaceStageRingGateData            K2Node_MakeStruct_UnionRaceStageRingGateData;      // 0x0C68(0x0078)()
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_18;           // 0x0CE0(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FUnionTravelRingDataRow                CallFunc_GetDataTableRowFromName_OutRow_2;         // 0x0CF0(0x05D8)()
-	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue_2;    // 0x12C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_12C9[0x3];                                     // 0x12C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_19;           // 0x12CC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_MakeLiteralInt_ReturnValue;               // 0x12DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x12E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_12E1[0x3];                                     // 0x12E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable_7;                   // 0x12E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Array_Get_Item_4;                         // 0x12E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FUnionTravelRingDataRow                CallFunc_GetDataTableRowFromName_OutRow_3;         // 0x12F0(0x05D8)()
-	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue_3;    // 0x18C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_18C9[0x3];                                     // 0x18C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x18CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_True_if_break_was_hit_Variable_4;        // 0x18D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_18D1[0x3];                                     // 0x18D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_20;           // 0x18D4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_4;                // 0x18E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_18E5[0x3];                                     // 0x18E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_21;           // 0x18E8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_22;           // 0x18F8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_7;                  // 0x1908(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_4;                // 0x190C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_190D[0x3];                                     // 0x190D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_10;                // 0x1910(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x1914(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ERaceType                                     CallFunc_GetSelectedRaceType_ReturnValue_2;        // 0x1915(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1916[0x2];                                     // 0x1916(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_23;           // 0x1918(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x1928(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1929[0x7];                                     // 0x1929(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FName>                           CallFunc_GetDataTableRowNames_OutRowNames_2;       // 0x1930(0x0010)(ReferenceParm)
-	TArray<class UObject*>                        Temp_object_Variable_30;                           // 0x1940(0x0010)(ReferenceParm)
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_24;           // 0x1950(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                CallFunc_Array_Get_Item_5;                         // 0x1960(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_1;         // 0x1968(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1969[0x7];                                     // 0x1969(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPrimaryStageDataAsset*                 K2Node_DynamicCast_AsPrimary_Stage_Data_Asset;     // 0x1970(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_33;                    // 0x1978(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_AddTravelRingLevels_ReturnValue;          // 0x1979(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_197A[0x6];                                     // 0x197A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStageDynamicData                      CallFunc_GetFinalLapData_ReturnValue;              // 0x1980(0x0100)(ConstParm)
-	struct FUnionRaceDomainInfo                   K2Node_MakeStruct_UnionRaceDomainInfo;             // 0x1A80(0x0048)()
-	struct FStageDynamicData                      CallFunc_GetDefaultBasicLapData_ReturnValue;       // 0x1AC8(0x0100)(ConstParm)
-	struct FUnionRaceStageDynamicData             K2Node_MakeStruct_UnionRaceStageDynamicData;       // 0x1BC8(0x0070)()
-	struct FUnionRaceDomainInfo                   K2Node_MakeStruct_UnionRaceDomainInfo_1;           // 0x1C38(0x0048)()
-	struct FStageDynamicData                      CallFunc_GetDefaultBasicLapData_ReturnValue_1;     // 0x1C80(0x0100)(ConstParm)
-	struct FStageDynamicData                      CallFunc_GetFinalLapData_ReturnValue_1;            // 0x1D80(0x0100)(ConstParm)
-	struct FUnionRaceStageDynamicData             K2Node_MakeStruct_UnionRaceStageDynamicData_1;     // 0x1E80(0x0070)()
-	struct FUnionRaceStageDynamicData             K2Node_MakeStruct_UnionRaceStageDynamicData_2;     // 0x1EF0(0x0070)()
-	struct FUnionRaceStageData                    K2Node_MakeStruct_UnionRaceStageData;              // 0x1F60(0x0170)()
-	struct FUnionRaceDomainData                   K2Node_MakeStruct_UnionRaceDomainData;             // 0x20D0(0x01B8)()
-	bool                                          CallFunc_IsDebugStage_ReturnValue;                 // 0x2288(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B39[0x3];                                      // 0x0B39(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_3;            // 0x0B3C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_GetValidValue_ReturnValue_3;              // 0x0B4C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B4D[0x3];                                      // 0x0B4D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                K2Node_CustomEvent_Loaded_23;                      // 0x0B50(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_2;                               // 0x0B58(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_4;            // 0x0B5C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_5;            // 0x0B6C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_MakeLiteralInt_ReturnValue;               // 0x0B7C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                           Temp_name_Variable;                                // 0x0B80(0x0010)(ConstParm, ReferenceParm)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x0B90(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B91[0x3];                                      // 0x0B91(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_6;            // 0x0B94(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_7;            // 0x0BA4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_8;            // 0x0BB4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_9;            // 0x0BC4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_10;           // 0x0BD4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_11;           // 0x0BE4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_12;           // 0x0BF4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_13;           // 0x0C04(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_14;           // 0x0C14(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_15;           // 0x0C24(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_16;           // 0x0C34(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C44[0x4];                                      // 0x0C44(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUnionRaceStageRingGateData            K2Node_MakeStruct_UnionRaceStageRingGateData;      // 0x0C48(0x0078)()
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_17;           // 0x0CC0(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_18;           // 0x0CD0(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FUnionTravelRingDataRow                CallFunc_GetDataTableRowFromName_OutRow_2;         // 0x0CE0(0x05D8)()
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue_2;    // 0x12B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_12B9[0x3];                                     // 0x12B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_19;           // 0x12BC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_7;                   // 0x12CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Array_Get_Item_4;                         // 0x12D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x12D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_12D9[0x7];                                     // 0x12D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUnionTravelRingDataRow                CallFunc_GetDataTableRowFromName_OutRow_3;         // 0x12E0(0x05D8)()
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue_3;    // 0x18B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_18B9[0x3];                                     // 0x18B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x18BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_True_if_break_was_hit_Variable_4;        // 0x18C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_18C1[0x3];                                     // 0x18C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_20;           // 0x18C4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_4;                // 0x18D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_18D5[0x3];                                     // 0x18D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_21;           // 0x18D8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_22;           // 0x18E8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_7;                  // 0x18F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_4;                // 0x18FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_18FD[0x3];                                     // 0x18FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_10;                // 0x1900(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x1904(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ERaceType                                     CallFunc_GetSelectedRaceType_ReturnValue_2;        // 0x1905(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1906[0x2];                                     // 0x1906(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_23;           // 0x1908(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x1918(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1919[0x7];                                     // 0x1919(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FName>                           CallFunc_GetDataTableRowNames_OutRowNames_2;       // 0x1920(0x0010)(ReferenceParm)
+	TArray<class UObject*>                        Temp_object_Variable_30;                           // 0x1930(0x0010)(ReferenceParm)
+	class UObject*                                CallFunc_Array_Get_Item_5;                         // 0x1940(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_1;         // 0x1948(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1949[0x7];                                     // 0x1949(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPrimaryStageDataAsset*                 K2Node_DynamicCast_AsPrimary_Stage_Data_Asset;     // 0x1950(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_33;                    // 0x1958(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_AddTravelRingLevels_ReturnValue;          // 0x1959(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_195A[0x6];                                     // 0x195A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStageDynamicData                      CallFunc_GetFinalLapData_ReturnValue;              // 0x1960(0x0100)(ConstParm)
+	struct FUnionRaceDomainInfo                   K2Node_MakeStruct_UnionRaceDomainInfo;             // 0x1A60(0x0048)()
+	struct FStageDynamicData                      CallFunc_GetDefaultBasicLapData_ReturnValue;       // 0x1AA8(0x0100)(ConstParm)
+	struct FUnionRaceStageDynamicData             K2Node_MakeStruct_UnionRaceStageDynamicData;       // 0x1BA8(0x0070)()
+	struct FUnionRaceDomainInfo                   K2Node_MakeStruct_UnionRaceDomainInfo_1;           // 0x1C18(0x0048)()
+	struct FStageDynamicData                      CallFunc_GetDefaultBasicLapData_ReturnValue_1;     // 0x1C60(0x0100)(ConstParm)
+	struct FStageDynamicData                      CallFunc_GetFinalLapData_ReturnValue_1;            // 0x1D60(0x0100)(ConstParm)
+	struct FUnionRaceStageDynamicData             K2Node_MakeStruct_UnionRaceStageDynamicData_1;     // 0x1E60(0x0070)()
+	struct FUnionRaceStageDynamicData             K2Node_MakeStruct_UnionRaceStageDynamicData_2;     // 0x1ED0(0x0070)()
+	struct FUnionRaceStageData                    K2Node_MakeStruct_UnionRaceStageData;              // 0x1F40(0x0170)()
+	struct FUnionRaceDomainData                   K2Node_MakeStruct_UnionRaceDomainData;             // 0x20B0(0x01B8)()
+	bool                                          CallFunc_IsDebugStage_ReturnValue;                 // 0x2268(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2269[0x7];                                     // 0x2269(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<TSoftObjectPtr<class USoundAtomCueSheet>> K2Node_MakeArray_Array_2;                       // 0x2270(0x0010)(ReferenceParm)
+	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue_2; // 0x2280(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2281[0x3];                                     // 0x2281(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_1;             // 0x2284(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_2;          // 0x2288(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2289[0x7];                                     // 0x2289(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<TSoftObjectPtr<class USoundAtomCueSheet>> K2Node_MakeArray_Array_2;                       // 0x2290(0x0010)(ReferenceParm)
-	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue_2; // 0x22A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_22A1[0x3];                                     // 0x22A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_1;             // 0x22A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_2;          // 0x22A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_22A9[0x7];                                     // 0x22A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStageCourseMapInfo                    CallFunc_Map_Find_Value;                           // 0x22B0(0x0048)()
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x22F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_22F9[0x7];                                     // 0x22F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStageCourseMapInfo                    CallFunc_Map_Find_Value_1;                         // 0x2300(0x0048)()
-	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x2348(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2349[0x7];                                     // 0x2349(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStageCourseMapInfo                    CallFunc_Map_Find_Value_2;                         // 0x2350(0x0048)()
-	bool                                          CallFunc_Map_Find_ReturnValue_2;                   // 0x2398(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2399[0x7];                                     // 0x2399(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStageCourseMapParam                   K2Node_MakeStruct_StageCourseMapParam_2;           // 0x23A0(0x0028)(NoDestructor)
-	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue_3; // 0x23C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_23C9[0x7];                                     // 0x23C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<TSoftObjectPtr<class UWorld>>          CallFunc_GetBackgroundLevels_OutBackgroundLevels;  // 0x23D0(0x0010)(ReferenceParm)
-	TSoftObjectPtr<class UWorld>                  CallFunc_Array_Get_Item_6;                         // 0x23E0(0x0028)(HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_2;         // 0x2408(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2409[0x7];                                     // 0x2409(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetLevelNameByReference_ReturnValue;      // 0x2410(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	TArray<TSoftObjectPtr<class UWorld>>          CallFunc_GetBackgroundLevels_OutBackgroundLevels_1; // 0x2420(0x0010)(ReferenceParm)
-	TSoftObjectPtr<class UWorld>                  CallFunc_Array_Get_Item_7;                         // 0x2430(0x0028)(HasGetValueTypeHash)
-	TSoftObjectPtr<class UWorld>                  CallFunc_Array_Get_Item_8;                         // 0x2458(0x0028)(HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_7;               // 0x2480(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x2484(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_5;                // 0x2485(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2486[0x2];                                     // 0x2486(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UObject*>                        K2Node_CustomEvent_Loaded_24;                      // 0x2488(0x0010)(ConstParm, ReferenceParm)
-	TArray<class FName>                           Temp_name_Variable_1;                              // 0x2498(0x0010)(ConstParm, ReferenceParm)
-	class UAsyncActionLoadPrimaryAssetList*       CallFunc_AsyncLoadPrimaryAssetList_ReturnValue;    // 0x24A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const TArray<class UObject*>& Loaded)> K2Node_CreateDelegate_OutputDelegate_25;   // 0x24B0(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_6;                    // 0x24C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24C1[0x3];                                     // 0x24C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_26;           // 0x24C4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_27;           // 0x24D4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_3;                               // 0x24E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsMainStage_ReturnValue;                  // 0x24E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGameModeId                                   CallFunc_GetSelectedGameModeId_ReturnValue;        // 0x24E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x24EA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24EB[0x1];                                     // 0x24EB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_28;           // 0x24EC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetRaceDebugParamFinalLap_ReturnValue;    // 0x24FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_3;                 // 0x24FD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24FE[0x2];                                     // 0x24FE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable_4;                               // 0x2500(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_4;                 // 0x2504(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStageCourseMapInfo                    CallFunc_Map_Find_Value;                           // 0x2290(0x0048)()
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x22D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_22D9[0x7];                                     // 0x22D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStageCourseMapInfo                    CallFunc_Map_Find_Value_1;                         // 0x22E0(0x0048)()
+	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x2328(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2329[0x7];                                     // 0x2329(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStageCourseMapInfo                    CallFunc_Map_Find_Value_2;                         // 0x2330(0x0048)()
+	bool                                          CallFunc_Map_Find_ReturnValue_2;                   // 0x2378(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2379[0x7];                                     // 0x2379(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStageCourseMapParam                   K2Node_MakeStruct_StageCourseMapParam_2;           // 0x2380(0x0028)(NoDestructor)
+	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue_3; // 0x23A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_23A9[0x7];                                     // 0x23A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<TSoftObjectPtr<class UWorld>>          CallFunc_GetBackgroundLevels_OutBackgroundLevels;  // 0x23B0(0x0010)(ReferenceParm)
+	TSoftObjectPtr<class UWorld>                  CallFunc_Array_Get_Item_6;                         // 0x23C0(0x0028)(HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_2;         // 0x23E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_23E9[0x7];                                     // 0x23E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetLevelNameByReference_ReturnValue;      // 0x23F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	TArray<TSoftObjectPtr<class UWorld>>          CallFunc_GetBackgroundLevels_OutBackgroundLevels_1; // 0x2400(0x0010)(ReferenceParm)
+	TSoftObjectPtr<class UWorld>                  CallFunc_Array_Get_Item_7;                         // 0x2410(0x0028)(HasGetValueTypeHash)
+	TSoftObjectPtr<class UWorld>                  CallFunc_Array_Get_Item_8;                         // 0x2438(0x0028)(HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_7;               // 0x2460(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x2464(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_5;                // 0x2465(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2466[0x2];                                     // 0x2466(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UObject*>                        K2Node_CustomEvent_Loaded_24;                      // 0x2468(0x0010)(ConstParm, ReferenceParm)
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_24;           // 0x2478(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                           Temp_name_Variable_1;                              // 0x2488(0x0010)(ConstParm, ReferenceParm)
+	class UAsyncActionLoadPrimaryAssetList*       CallFunc_AsyncLoadPrimaryAssetList_ReturnValue;    // 0x2498(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(const TArray<class UObject*>& Loaded)> K2Node_CreateDelegate_OutputDelegate_25;   // 0x24A0(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_6;                    // 0x24B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24B1[0x3];                                     // 0x24B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable_3;                               // 0x24B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_26;           // 0x24B8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_27;           // 0x24C8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsMainStage_ReturnValue;                  // 0x24D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24D9[0x3];                                     // 0x24D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable_4;                               // 0x24DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGameModeId                                   CallFunc_GetSelectedGameModeId_ReturnValue;        // 0x24E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x24E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetRaceDebugParamFinalLap_ReturnValue;    // 0x24E2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_3;                 // 0x24E3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_28;           // 0x24E4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_4;                 // 0x24F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24F5[0x3];                                     // 0x24F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable_5;                               // 0x24F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ContainsLevel_ReturnValue;                // 0x24FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24FD[0x3];                                     // 0x24FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable_6;                               // 0x2500(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGameModeId                                   CallFunc_GetSelectedGameModeId_ReturnValue_1;      // 0x2504(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2505[0x3];                                     // 0x2505(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable_5;                               // 0x2508(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_6;                               // 0x250C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Select_Default;                             // 0x2508(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_2;                    // 0x250C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_250D[0x3];                                     // 0x250D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Variable_7;                               // 0x2510(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Select_Default;                             // 0x2514(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_ContainsLevel_ReturnValue;                // 0x2518(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGameModeId                                   CallFunc_GetSelectedGameModeId_ReturnValue_1;      // 0x2519(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_2;                    // 0x251A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_251B[0x5];                                     // 0x251B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	TSoftObjectPtr<class UWorld>                  Temp_softobject_Variable;                          // 0x2520(0x0028)(UObjectWrapper, HasGetValueTypeHash)
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_29;           // 0x2548(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_7;                              // 0x2558(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_ShouldNativeLoad_ReturnValue;             // 0x2559(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_255A[0x6];                                     // 0x255A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSoftObjectPtr<class UWorld>                  K2Node_Select_Default_1;                           // 0x2560(0x0028)(UObjectWrapper, HasGetValueTypeHash)
-	int32                                         K2Node_Event_StageIndex;                           // 0x2588(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_AddLevelByReference_ReturnValue;          // 0x258C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_258D[0x3];                                     // 0x258D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_11;                // 0x2590(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2594[0x4];                                     // 0x2594(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARaceSequence*                          CallFunc_GetOwnerRaceSequence_ReturnValue_4;       // 0x2598(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_RaceSequence_C*                     K2Node_DynamicCast_AsBP_Race_Sequence_4;           // 0x25A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_34;                    // 0x25A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EUnionLoadingGaugeState                       K2Node_Select_Default_2;                           // 0x25A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_25AA[0x6];                                     // 0x25AA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARaceSequence*                          CallFunc_GetOwnerRaceSequence_ReturnValue_5;       // 0x25B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_GetStageAssetFilenameTrunk_ReturnValue;   // 0x25B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class ABP_RaceSequence_C*                     K2Node_DynamicCast_AsBP_Race_Sequence_5;           // 0x25C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_35;                    // 0x25D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EStageId                                      CallFunc_StringToStageId_ReturnValue;              // 0x25D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_3;         // 0x25D2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_25D3[0x1];                                     // 0x25D3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2514[0x4];                                     // 0x2514(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class UWorld>                  Temp_softobject_Variable;                          // 0x2518(0x0028)(UObjectWrapper, HasGetValueTypeHash)
+	bool                                          CallFunc_ShouldNativeLoad_ReturnValue;             // 0x2540(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2541[0x3];                                     // 0x2541(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_Event_StageIndex;                           // 0x2544(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ARaceSequence*                          CallFunc_GetOwnerRaceSequence_ReturnValue_4;       // 0x2548(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_11;                // 0x2550(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2554[0x4];                                     // 0x2554(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_RaceSequence_C*                     K2Node_DynamicCast_AsBP_Race_Sequence_4;           // 0x2558(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_34;                    // 0x2560(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_7;                              // 0x2561(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUnionLoadingGaugeState                       K2Node_Select_Default_1;                           // 0x2562(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2563[0x5];                                     // 0x2563(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class UWorld>                  K2Node_Select_Default_2;                           // 0x2568(0x0028)(UObjectWrapper, HasGetValueTypeHash)
+	bool                                          CallFunc_AddLevelByReference_ReturnValue;          // 0x2590(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2591[0x7];                                     // 0x2591(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARaceSequence*                          CallFunc_GetOwnerRaceSequence_ReturnValue_5;       // 0x2598(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_RaceSequence_C*                     K2Node_DynamicCast_AsBP_Race_Sequence_5;           // 0x25A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_35;                    // 0x25A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25A9[0x3];                                     // 0x25A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_29;           // 0x25AC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25BC[0x4];                                     // 0x25BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetStageAssetFilenameTrunk_ReturnValue;   // 0x25C0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	EStageId                                      CallFunc_StringToStageId_ReturnValue;              // 0x25D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25D1[0x3];                                     // 0x25D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_12;                // 0x25D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                CallFunc_Array_Get_Item_9;                         // 0x25D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FAppRaceStageSetting                   CallFunc_Array_Get_Item_10;                        // 0x25E0(0x0004)(NoDestructor)
-	uint8                                         Pad_25E4[0x4];                                     // 0x25E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPrimaryStageDataAsset*                 K2Node_DynamicCast_AsPrimary_Stage_Data_Asset_1;   // 0x25E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_36;                    // 0x25F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_25F1[0x3];                                     // 0x25F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPrimaryAssetId                        CallFunc_Map_Find_Value_3;                         // 0x25F4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue_3;                   // 0x2604(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2605[0x3];                                     // 0x2605(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_3;         // 0x25D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25D9[0x7];                                     // 0x25D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                CallFunc_Array_Get_Item_9;                         // 0x25E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_GetStageAssetFilenameTrunk_ReturnValue_1; // 0x25E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class UPrimaryStageDataAsset*                 K2Node_DynamicCast_AsPrimary_Stage_Data_Asset_1;   // 0x25F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_36;                    // 0x2600(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EStageId                                      CallFunc_StringToStageId_ReturnValue_1;            // 0x2601(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2602[0x6];                                     // 0x2602(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<TSoftObjectPtr<class USoundAtomCueSheet>> K2Node_MakeArray_Array_3;                       // 0x2608(0x0010)(ReferenceParm)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x2618(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue_4; // 0x261C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_261D[0x3];                                     // 0x261D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x2618(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue_4; // 0x2619(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FAppRaceStageSetting                   CallFunc_Array_Get_Item_10;                        // 0x261A(0x0004)(NoDestructor)
+	uint8                                         Pad_261E[0x2];                                     // 0x261E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Length_ReturnValue_8;               // 0x2620(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2624[0x4];                                     // 0x2624(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetStageAssetFilenameTrunk_ReturnValue_1; // 0x2628(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_6;                // 0x2638(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EStageId                                      CallFunc_StringToStageId_ReturnValue_1;            // 0x2639(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_5;                 // 0x263A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x263B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_263C[0x4];                                     // 0x263C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_Less_IntInt_ReturnValue_6;                // 0x2624(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2625[0x3];                                     // 0x2625(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPrimaryAssetId                        CallFunc_Map_Find_Value_3;                         // 0x2628(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue_3;                   // 0x2638(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_5;                 // 0x2639(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_263A[0x2];                                     // 0x263A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x263C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAsyncActionLoadPrimaryAssetList*       CallFunc_AsyncLoadPrimaryAssetList_ReturnValue_1;  // 0x2640(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_FindSubstring_ReturnValue;                // 0x2648(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x264C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1416,730 +1164,166 @@ public:
 	uint8                                         Pad_264E[0x2];                                     // 0x264E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_FindSubstring_ReturnValue_1;              // 0x2650(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_IntInt_ReturnValue_1;            // 0x2654(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FAppRaceStageSetting                   CallFunc_Array_Get_Item_11;                        // 0x2655(0x0004)(NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_8;                    // 0x2659(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_265A[0x2];                                     // 0x265A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPrimaryAssetId                        CallFunc_Map_Find_Value_4;                         // 0x265C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue_4;                   // 0x266C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_266D[0x3];                                     // 0x266D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue_9;               // 0x2670(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_7;                // 0x2674(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2675[0x3];                                     // 0x2675(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x2678(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_6;                 // 0x267C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_9;                    // 0x267D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_267E[0x2];                                     // 0x267E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                Temp_object_Variable_31;                           // 0x2680(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUnionNavigationBinaryDataAsset*        K2Node_DynamicCast_AsUnion_Navigation_Binary_Data_Asset_2; // 0x2688(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_37;                    // 0x2690(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2691[0x3];                                     // 0x2691(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_30;           // 0x2694(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_8;                    // 0x2655(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2656[0x2];                                     // 0x2656(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                Temp_object_Variable_31;                           // 0x2658(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_9;                    // 0x2660(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2661[0x7];                                     // 0x2661(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionNavigationBinaryDataAsset*        K2Node_DynamicCast_AsUnion_Navigation_Binary_Data_Asset_2; // 0x2668(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_37;                    // 0x2670(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2671[0x7];                                     // 0x2671(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                K2Node_CustomEvent_Loaded_25;                      // 0x2678(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FAppRaceStageSetting                   CallFunc_Array_Get_Item_11;                        // 0x2680(0x0004)(NoDestructor)
+	int32                                         CallFunc_Array_Length_ReturnValue_9;               // 0x2684(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_7;                // 0x2688(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2689[0x3];                                     // 0x2689(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPrimaryAssetId                        CallFunc_Map_Find_Value_4;                         // 0x268C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue_4;                   // 0x269C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_6;                 // 0x269D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_269E[0x2];                                     // 0x269E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x26A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_26A4[0x4];                                     // 0x26A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x26A8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x26B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_3;              // 0x26C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_4;              // 0x26D8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x26E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_5;              // 0x26F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_6;              // 0x2700(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_7;              // 0x2710(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_8;              // 0x2720(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_9;              // 0x2730(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_10;             // 0x2740(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_11;             // 0x2750(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_12;             // 0x2760(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_13;             // 0x2770(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class UObject*                                K2Node_CustomEvent_Loaded_25;                      // 0x2780(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_14;             // 0x2788(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Map_Find_Value_5;                         // 0x2798(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue_5;                   // 0x27A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_27A9[0x3];                                     // 0x27A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_FindSubstring_ReturnValue_2;              // 0x27AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue_2;            // 0x27B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_27B1[0x3];                                     // 0x27B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_FindSubstring_ReturnValue_3;              // 0x27B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue_3;            // 0x27B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_27B9[0x7];                                     // 0x27B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                Temp_object_Variable_32;                           // 0x27C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x27C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_27C9[0x7];                                     // 0x27C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionBtCollisionBinaryAsset*           K2Node_DynamicCast_AsUnion_Bt_Collision_Binary_Asset_2; // 0x27D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_38;                    // 0x27D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x27D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x27DA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_27DB[0x1];                                     // 0x27DB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_31;           // 0x27DC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_27EC[0x4];                                     // 0x27EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                K2Node_CustomEvent_Loaded_26;                      // 0x27F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_8;                               // 0x27F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_32;           // 0x27FC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_280C[0x4];                                     // 0x280C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                Temp_object_Variable_33;                           // 0x2810(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                K2Node_CustomEvent_Loaded_27;                      // 0x2818(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUnionComPathBinaryDataAsset*           K2Node_DynamicCast_AsUnion_Com_Path_Binary_Data_Asset_3; // 0x2820(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_39;                    // 0x2828(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2829[0x3];                                     // 0x2829(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_33;           // 0x282C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_3;                    // 0x283C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetBoolFromConfig_ConfigValue;            // 0x283D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetBoolFromConfig_ReturnValue;            // 0x283E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetBoolFromConfig_ConfigValue_1;          // 0x283F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetBoolFromConfig_ReturnValue_1;          // 0x2840(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2841[0x7];                                     // 0x2841(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetStageAssetFilenameTrunk_ReturnValue_2; // 0x2848(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class UObject*                                Temp_object_Variable_34;                           // 0x2858(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Split_LeftS;                              // 0x2860(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Split_RightS;                             // 0x2870(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Split_ReturnValue;                        // 0x2880(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2881[0x7];                                     // 0x2881(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionRunPathBinaryDataAsset*           K2Node_DynamicCast_AsUnion_Run_Path_Binary_Data_Asset_3; // 0x2888(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_40;                    // 0x2890(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2891[0x3];                                     // 0x2891(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_StringToInt_ReturnValue;             // 0x2894(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EStageId                                      CallFunc_GetStageId_ReturnValue;                   // 0x2898(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsStageIdValid_ReturnValue;               // 0x2899(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EStageId                                      K2Node_Select_Default_3;                           // 0x289A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_5;                // 0x289B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_6;                // 0x289C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_289D[0x3];                                     // 0x289D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 K2Node_Select_Default_4;                           // 0x28A0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_15;             // 0x28B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 K2Node_Select_Default_5;                           // 0x28C0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Conv_StringToName_ReturnValue_1;          // 0x28D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_16;             // 0x28D8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Conv_StringToName_ReturnValue_2;          // 0x28E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                K2Node_CustomEvent_Loaded_28;                      // 0x28F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FString                                 K2Node_Select_Default_6;                           // 0x28F8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_17;             // 0x2908(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Conv_StringToName_ReturnValue_3;          // 0x2918(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 K2Node_Select_Default_7;                           // 0x2920(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_18;             // 0x2930(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FUnionRaceStageDynamicData             K2Node_MakeStruct_UnionRaceStageDynamicData_3;     // 0x2940(0x0070)()
-	class FName                                   CallFunc_Conv_StringToName_ReturnValue_4;          // 0x29B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FUnionRaceStageData                    K2Node_MakeStruct_UnionRaceStageData_1;            // 0x29B8(0x0170)()
-	struct FUnionRaceDomainData                   K2Node_MakeStruct_UnionRaceDomainData_1;           // 0x2B28(0x01B8)()
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_30;           // 0x26F0(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_5;              // 0x2700(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_6;              // 0x2710(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_7;              // 0x2720(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_8;              // 0x2730(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_9;              // 0x2740(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_10;             // 0x2750(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_11;             // 0x2760(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_12;             // 0x2770(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_13;             // 0x2780(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_14;             // 0x2790(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable_32;                           // 0x27A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUnionBtCollisionBinaryAsset*           K2Node_DynamicCast_AsUnion_Bt_Collision_Binary_Asset_2; // 0x27A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_38;                    // 0x27B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_27B1[0x7];                                     // 0x27B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Map_Find_Value_5;                         // 0x27B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue_5;                   // 0x27C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_27C9[0x3];                                     // 0x27C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_FindSubstring_ReturnValue_2;              // 0x27CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue_2;            // 0x27D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_27D1[0x3];                                     // 0x27D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_FindSubstring_ReturnValue_3;              // 0x27D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue_3;            // 0x27D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_27D9[0x7];                                     // 0x27D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                K2Node_CustomEvent_Loaded_26;                      // 0x27E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x27E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x27E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_27EA[0x2];                                     // 0x27EA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable_8;                               // 0x27EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x27F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_27F1[0x3];                                     // 0x27F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_31;           // 0x27F4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2804[0x4];                                     // 0x2804(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                Temp_object_Variable_33;                           // 0x2808(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUnionComPathBinaryDataAsset*           K2Node_DynamicCast_AsUnion_Com_Path_Binary_Data_Asset_3; // 0x2810(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_39;                    // 0x2818(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2819[0x7];                                     // 0x2819(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                K2Node_CustomEvent_Loaded_27;                      // 0x2820(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_32;           // 0x2828(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_3;                    // 0x2838(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetBoolFromConfig_ConfigValue;            // 0x2839(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetBoolFromConfig_ReturnValue;            // 0x283A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetBoolFromConfig_ConfigValue_1;          // 0x283B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetBoolFromConfig_ReturnValue_1;          // 0x283C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_283D[0x3];                                     // 0x283D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetStageAssetFilenameTrunk_ReturnValue_2; // 0x2840(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable_34;                           // 0x2850(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Split_LeftS;                              // 0x2858(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Split_RightS;                             // 0x2868(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Split_ReturnValue;                        // 0x2878(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2879[0x7];                                     // 0x2879(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionRunPathBinaryDataAsset*           K2Node_DynamicCast_AsUnion_Run_Path_Binary_Data_Asset_3; // 0x2880(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_40;                    // 0x2888(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2889[0x3];                                     // 0x2889(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_StringToInt_ReturnValue;             // 0x288C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EStageId                                      CallFunc_GetStageId_ReturnValue;                   // 0x2890(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsStageIdValid_ReturnValue;               // 0x2891(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EStageId                                      K2Node_Select_Default_3;                           // 0x2892(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_5;                // 0x2893(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_6;                // 0x2894(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2895[0x3];                                     // 0x2895(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 K2Node_Select_Default_4;                           // 0x2898(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_15;             // 0x28A8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 K2Node_Select_Default_5;                           // 0x28B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Conv_StringToName_ReturnValue_1;          // 0x28C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_16;             // 0x28D0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Conv_StringToName_ReturnValue_2;          // 0x28E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                K2Node_CustomEvent_Loaded_28;                      // 0x28E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FString                                 K2Node_Select_Default_6;                           // 0x28F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FUnionRaceStageDynamicData             K2Node_MakeStruct_UnionRaceStageDynamicData_3;     // 0x2900(0x0070)()
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_17;             // 0x2970(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FUnionRaceStageData                    K2Node_MakeStruct_UnionRaceStageData_1;            // 0x2980(0x0170)()
+	class FName                                   CallFunc_Conv_StringToName_ReturnValue_3;          // 0x2AF0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FUnionRaceDomainData                   K2Node_MakeStruct_UnionRaceDomainData_1;           // 0x2AF8(0x01B8)()
+	class FString                                 K2Node_Select_Default_7;                           // 0x2CB0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_18;             // 0x2CC0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Conv_StringToName_ReturnValue_4;          // 0x2CD0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable_35;                           // 0x2CD8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_GetStageAssetFilenameTrunk_ReturnValue_3; // 0x2CE0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_7;                 // 0x2CF0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_8;                 // 0x2CF1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2CF2[0x6];                                     // 0x2CF2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 K2Node_Select_Default_8;                           // 0x2CF8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetBoolFromConfig_ConfigValue_2;          // 0x2D08(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetBoolFromConfig_ReturnValue_2;          // 0x2D09(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D0A[0x6];                                     // 0x2D0A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionNavigationBinaryDataAsset*        K2Node_DynamicCast_AsUnion_Navigation_Binary_Data_Asset_3; // 0x2CF0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_41;                    // 0x2CF8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_7;                 // 0x2CF9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_8;                 // 0x2CFA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2CFB[0x5];                                     // 0x2CFB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 K2Node_Select_Default_8;                           // 0x2D00(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 K2Node_Select_Default_9;                           // 0x2D10(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class UObject*                                Temp_object_Variable_35;                           // 0x2D20(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUnionNavigationBinaryDataAsset*        K2Node_DynamicCast_AsUnion_Navigation_Binary_Data_Asset_3; // 0x2D28(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_41;                    // 0x2D30(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D31[0x7];                                     // 0x2D31(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetStageAssetFilenameTrunk_ReturnValue_4; // 0x2D38(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetBoolFromConfig_ConfigValue_2;          // 0x2D20(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetBoolFromConfig_ReturnValue_2;          // 0x2D21(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2D22[0x6];                                     // 0x2D22(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetStageAssetFilenameTrunk_ReturnValue_4; // 0x2D28(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_33;           // 0x2D38(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_19;             // 0x2D48(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_GetStageAssetDir_ReturnValue;             // 0x2D58(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class UObject*                                K2Node_CustomEvent_Loaded_29;                      // 0x2D68(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class FString>                         K2Node_MakeArray_Array_4;                          // 0x2D70(0x0010)(ConstParm, ReferenceParm)
-	class FString                                 CallFunc_Combine_ReturnValue;                      // 0x2D80(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	TArray<class FString>                         K2Node_MakeArray_Array_4;                          // 0x2D68(0x0010)(ConstParm, ReferenceParm)
+	class FString                                 CallFunc_Combine_ReturnValue;                      // 0x2D78(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class UObject*                                K2Node_CustomEvent_Loaded_29;                      // 0x2D88(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUnionComPathBinaryDataAsset*           CallFunc_LoadComPathAssetByFilePath_ReturnValue;   // 0x2D90(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_GetStageAssetFilenameTrunk_ReturnValue_5; // 0x2D98(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_20;             // 0x2DA8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_GetStageAssetDir_ReturnValue_1;           // 0x2DB8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_GetStageAssetDir_ReturnValue_1;           // 0x2DA8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_20;             // 0x2DB8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	TArray<class FString>                         K2Node_MakeArray_Array_5;                          // 0x2DC8(0x0010)(ConstParm, ReferenceParm)
 	class FString                                 CallFunc_Combine_ReturnValue_1;                    // 0x2DD8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_34;           // 0x2DE8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUnionRunPathBinaryDataAsset*           CallFunc_LoadRunPathAssetByFilePath_ReturnValue;   // 0x2DF8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                Temp_object_Variable_36;                           // 0x2E00(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_GetStageAssetFilenameTrunk_ReturnValue_6; // 0x2E08(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class UUnionBtCollisionBinaryAsset*           K2Node_DynamicCast_AsUnion_Bt_Collision_Binary_Asset_3; // 0x2E18(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_42;                    // 0x2E20(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2E21[0x7];                                     // 0x2E21(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_21;             // 0x2E28(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_GetStageAssetDir_ReturnValue_2;           // 0x2E38(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_GetStageAssetFilenameTrunk_ReturnValue_7; // 0x2E48(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	TArray<class FString>                         K2Node_MakeArray_Array_6;                          // 0x2E58(0x0010)(ConstParm, ReferenceParm)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_22;             // 0x2E68(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Combine_ReturnValue_2;                    // 0x2E78(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class UUnionNavigationBinaryDataAsset*        CallFunc_LoadCourseNavigationAssetByFilePath_ReturnValue; // 0x2E88(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                K2Node_CustomEvent_Loaded_30;                      // 0x2E90(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_GetStageAssetDir_ReturnValue_3;           // 0x2E98(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	EUnionLoadingGaugeState                       Temp_byte_Variable_12;                             // 0x2EA8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2EA9[0x7];                                     // 0x2EA9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FString>                         K2Node_MakeArray_Array_7;                          // 0x2EB0(0x0010)(ConstParm, ReferenceParm)
-	class FString                                 CallFunc_Combine_ReturnValue_3;                    // 0x2EC0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class UUnionBtCollisionBinaryAsset*           CallFunc_LoadCourseCollisionAssetByFilePath_ReturnValue; // 0x2ED0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_35;           // 0x2ED8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EUnionLoadingGaugeState                       Temp_byte_Variable_13;                             // 0x2EE8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EUnionLoadingGaugeState                       Temp_byte_Variable_14;                             // 0x2EE9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetBoolFromConfig_ConfigValue_3;          // 0x2EEA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetBoolFromConfig_ReturnValue_3;          // 0x2EEB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EUnionLoadingGaugeState                       K2Node_Select_Default_10;                          // 0x2EEC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_9;                 // 0x2EED(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2EEE[0x2];                                     // 0x2EEE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FPrimaryAssetId>                K2Node_MakeArray_Array_8;                          // 0x2EF0(0x0010)(ReferenceParm)
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_36;           // 0x2F00(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_9;                               // 0x2F10(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetCourseSetting_OrthoRate_ImplicitCast;  // 0x2F14(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetCourseSetting_Angle_ImplicitCast;      // 0x2F18(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_GetStageAssetFilenameTrunk_ReturnValue_6; // 0x2E00(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_GetStageAssetDir_ReturnValue_2;           // 0x2E10(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_21;             // 0x2E20(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_GetStageAssetFilenameTrunk_ReturnValue_7; // 0x2E30(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	TArray<class FString>                         K2Node_MakeArray_Array_6;                          // 0x2E40(0x0010)(ConstParm, ReferenceParm)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_22;             // 0x2E50(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Combine_ReturnValue_2;                    // 0x2E60(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable_36;                           // 0x2E70(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUnionNavigationBinaryDataAsset*        CallFunc_LoadCourseNavigationAssetByFilePath_ReturnValue; // 0x2E78(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUnionBtCollisionBinaryAsset*           K2Node_DynamicCast_AsUnion_Bt_Collision_Binary_Asset_3; // 0x2E80(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_42;                    // 0x2E88(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2E89[0x7];                                     // 0x2E89(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetStageAssetDir_ReturnValue_3;           // 0x2E90(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class UObject*                                K2Node_CustomEvent_Loaded_30;                      // 0x2EA0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class FString>                         K2Node_MakeArray_Array_7;                          // 0x2EA8(0x0010)(ConstParm, ReferenceParm)
+	class FString                                 CallFunc_Combine_ReturnValue_3;                    // 0x2EB8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class UUnionBtCollisionBinaryAsset*           CallFunc_LoadCourseCollisionAssetByFilePath_ReturnValue; // 0x2EC8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_35;           // 0x2ED0(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EUnionLoadingGaugeState                       Temp_byte_Variable_13;                             // 0x2EE0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUnionLoadingGaugeState                       Temp_byte_Variable_14;                             // 0x2EE1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetBoolFromConfig_ConfigValue_3;          // 0x2EE2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetBoolFromConfig_ReturnValue_3;          // 0x2EE3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUnionLoadingGaugeState                       K2Node_Select_Default_10;                          // 0x2EE4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_9;                 // 0x2EE5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2EE6[0x2];                                     // 0x2EE6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FPrimaryAssetId>                K2Node_MakeArray_Array_8;                          // 0x2EE8(0x0010)(ReferenceParm)
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_36;           // 0x2EF8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_9;                               // 0x2F08(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetCourseSetting_OrthoRate_ImplicitCast;  // 0x2F0C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetCourseSetting_Angle_ImplicitCast;      // 0x2F10(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets) == 0x002F20, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, EntryPoint) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_int_Variable) == 0x000014, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_byte_Variable) == 0x000018, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_byte_Variable_1) == 0x000019, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_byte_Variable_2) == 0x00001A, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_byte_Variable_3) == 0x00001B, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_byte_Variable_4) == 0x00001C, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_4) == 0x000020, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_1) == 0x000030, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable) == 0x000040, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_IsValid_ReturnValue) == 0x000050, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_3) == 0x000058, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_1) == 0x000060, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_AsUnion_Com_Path_Binary_Data_Asset) == 0x000068, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_AsUnion_Com_Path_Binary_Data_Asset' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess) == 0x000070, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_2) == 0x000078, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_2) == 0x000080, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_AsUnion_Run_Path_Binary_Data_Asset) == 0x000088, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_AsUnion_Run_Path_Binary_Data_Asset' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_1) == 0x000090, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_1) == 0x000098, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_3) == 0x0000A0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_AsUnion_Navigation_Binary_Data_Asset) == 0x0000A8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_AsUnion_Navigation_Binary_Data_Asset' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_2) == 0x0000B0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded) == 0x0000B8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_4) == 0x0000C0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_AsUnion_Bt_Collision_Binary_Asset) == 0x0000C8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_AsUnion_Bt_Collision_Binary_Asset' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_3) == 0x0000D0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_bool_Variable) == 0x0000D1, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_byte_Variable_5) == 0x0000D2, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_bool_Variable_1) == 0x0000D3, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_string_Variable) == 0x0000D8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_string_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_string_Variable_1) == 0x0000E8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_string_Variable_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_bool_Variable_2) == 0x0000F8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_string_Variable_2) == 0x000100, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_string_Variable_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_string_Variable_3) == 0x000110, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_string_Variable_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_bool_Variable_3) == 0x000120, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_string_Variable_4) == 0x000128, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_string_Variable_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_string_Variable_5) == 0x000138, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_string_Variable_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_bool_Variable_4) == 0x000148, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_bool_Variable_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_string_Variable_6) == 0x000150, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_string_Variable_6' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_string_Variable_7) == 0x000160, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_string_Variable_7' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_bool_Variable_5) == 0x000170, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_bool_Variable_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_string_Variable_8) == 0x000178, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_string_Variable_8' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_string_Variable_9) == 0x000188, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_string_Variable_9' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_bool_Variable_6) == 0x000198, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_bool_Variable_6' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_string_Variable_10) == 0x0001A0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_string_Variable_10' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_string_Variable_11) == 0x0001B0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_string_Variable_11' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_byte_Variable_6) == 0x0001C0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_byte_Variable_6' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_int_Loop_Counter_Variable) == 0x0001C4, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Add_IntInt_ReturnValue) == 0x0001C8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_byte_Variable_7) == 0x0001CC, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_byte_Variable_7' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_int_Variable_1) == 0x0001D0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_5) == 0x0001D8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_AsUnion_Com_Path_Binary_Data_Asset_1) == 0x0001E0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_AsUnion_Com_Path_Binary_Data_Asset_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_4) == 0x0001E8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_5) == 0x0001F0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_int_Array_Index_Variable) == 0x0001F8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_bool_True_if_break_was_hit_Variable) == 0x0001FC, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Not_PreBool_ReturnValue) == 0x0001FD, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_6) == 0x000200, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_6' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_byte_Variable_8) == 0x000208, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_byte_Variable_8' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_As___________) == 0x000210, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_As___________' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_5) == 0x000218, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_int_Loop_Counter_Variable_1) == 0x00021C, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Add_IntInt_ReturnValue_1) == 0x000220, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_byte_Variable_9) == 0x000224, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_byte_Variable_9' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_6) == 0x000228, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_6' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_IsValidSoftObjectReference_ReturnValue) == 0x000230, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_IsValidSoftObjectReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_int_Array_Index_Variable_1) == 0x000234, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_bool_True_if_break_was_hit_Variable_1) == 0x000238, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_bool_True_if_break_was_hit_Variable_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_7) == 0x000240, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_7' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_As____________1) == 0x000248, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_As____________1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_6) == 0x000250, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_6' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Not_PreBool_ReturnValue_1) == 0x000251, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_int_Loop_Counter_Variable_2) == 0x000254, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_7) == 0x000258, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_7' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Add_IntInt_ReturnValue_2) == 0x000260, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_MakeStruct_RaceCourseMapInfo) == 0x000268, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_MakeStruct_RaceCourseMapInfo' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_8) == 0x0002B8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_8' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_As_____2D) == 0x0002C0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_7) == 0x0002C8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_7' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_int_Array_Index_Variable_2) == 0x0002CC, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_MakeStruct_StageCourseMapParam) == 0x0002D0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_MakeStruct_StageCourseMapParam' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_31) == 0x0002F8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_31' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_9) == 0x000300, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_9' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_As____________2) == 0x000308, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_As____________2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_8) == 0x000310, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_8' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_int_Loop_Counter_Variable_3) == 0x000314, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_int_Loop_Counter_Variable_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_8) == 0x000318, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_8' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Add_IntInt_ReturnValue_3) == 0x000320, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetOwnerRaceSequence_ReturnValue) == 0x000328, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetOwnerRaceSequence_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_AsBP_Race_Sequence) == 0x000330, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_AsBP_Race_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_9) == 0x000338, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_9' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_IsValidSoftObjectReference_ReturnValue_1) == 0x000339, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_IsValidSoftObjectReference_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_byte_Variable_10) == 0x00033A, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_byte_Variable_10' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetOwnerRaceSequence_ReturnValue_1) == 0x000340, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetOwnerRaceSequence_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_AsBP_Race_Sequence_1) == 0x000348, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_AsBP_Race_Sequence_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_10) == 0x000350, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_10' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_byte_Variable_11) == 0x000351, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_byte_Variable_11' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_int_Array_Index_Variable_3) == 0x000354, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_int_Array_Index_Variable_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_10) == 0x000358, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_10' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_11) == 0x000360, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_11' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_As_____2D_1) == 0x000368, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_As_____2D_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_11) == 0x000370, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_11' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_As____________3) == 0x000378, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_As____________3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_12) == 0x000380, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_12' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_MakeStruct_StageCourseMapParam_1) == 0x000388, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_MakeStruct_StageCourseMapParam_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_bool_True_if_break_was_hit_Variable_2) == 0x0003B0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_bool_True_if_break_was_hit_Variable_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Not_PreBool_ReturnValue_2) == 0x0003B1, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_32) == 0x0003B8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_32' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_9) == 0x0003C0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_9' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_12) == 0x0003C8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_12' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_10) == 0x0003D0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_10' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_AsUnion_Run_Path_Binary_Data_Asset_1) == 0x0003D8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_AsUnion_Run_Path_Binary_Data_Asset_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_13) == 0x0003E0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_13' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_13) == 0x0003E8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_13' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_IsValid_ReturnValue_1) == 0x0003F0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_AsUnion_Com_Path_Binary_Data_Asset_2) == 0x0003F8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_AsUnion_Com_Path_Binary_Data_Asset_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_14) == 0x000400, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_14' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_IsValid_ReturnValue_2) == 0x000401, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_33) == 0x000408, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_33' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_int_Loop_Counter_Variable_4) == 0x000410, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_int_Loop_Counter_Variable_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Add_IntInt_ReturnValue_4) == 0x000414, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Array_Length_ReturnValue) == 0x000418, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetDataTableRowNames_OutRowNames) == 0x000420, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetDataTableRowNames_OutRowNames' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_14) == 0x000430, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_14' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Array_Length_ReturnValue_1) == 0x000438, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_AsUnion_Run_Path_Binary_Data_Asset_2) == 0x000440, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_AsUnion_Run_Path_Binary_Data_Asset_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_15) == 0x000448, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_15' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Array_Length_ReturnValue_2) == 0x00044C, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000450, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetSelectedStageSettings_ReturnValue) == 0x000458, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetSelectedStageSettings_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_34) == 0x000468, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_34' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Array_Get_Item) == 0x000470, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Array_Length_ReturnValue_3) == 0x000474, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Less_IntInt_ReturnValue) == 0x000478, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_15) == 0x000480, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_15' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_BooleanAND_ReturnValue) == 0x000488, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_As____________4) == 0x000490, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_As____________4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_16) == 0x000498, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_16' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetSelectedStageSettings_ReturnValue_1) == 0x0004A0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetSelectedStageSettings_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetGroupRaceRuleSetting_ReturnValue) == 0x0004B0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetGroupRaceRuleSetting_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_IsGroupRace_ReturnValue) == 0x0004B1, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_IsGroupRace_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Get_Group_Rule_Data_Impl_GroupRaceRuleData) == 0x0004B8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Get_Group_Rule_Data_Impl_GroupRaceRuleData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_MakeStruct_AppRaceStageSetting) == 0x000508, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_MakeStruct_AppRaceStageSetting' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_IsValid_ReturnValue_3) == 0x00050C, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_IsValid_ReturnValue_4) == 0x00050D, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_int_Array_Index_Variable_4) == 0x000510, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_int_Array_Index_Variable_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetDataTableRowNames_OutRowNames_1) == 0x000518, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetDataTableRowNames_OutRowNames_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_16) == 0x000528, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_16' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Array_Get_Item_1) == 0x000530, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_AsUnion_Navigation_Binary_Data_Asset_1) == 0x000538, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_AsUnion_Navigation_Binary_Data_Asset_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_17) == 0x000540, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_17' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetDataTableRowFromName_OutRow) == 0x000548, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000628, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Array_Length_ReturnValue_4) == 0x00062C, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Array_Length_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Less_IntInt_ReturnValue_1) == 0x000630, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Array_Length_ReturnValue_5) == 0x000634, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Array_Length_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_11) == 0x000638, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_11' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GreaterEqual_IntInt_ReturnValue_1) == 0x000640, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GreaterEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetSelectedStageSettings_ReturnValue_2) == 0x000648, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetSelectedStageSettings_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Array_Get_Item_2) == 0x000658, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Array_Length_ReturnValue_6) == 0x00065C, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Array_Length_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Less_IntInt_ReturnValue_2) == 0x000660, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetSelectedStageSettings_ReturnValue_3) == 0x000668, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetSelectedStageSettings_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_BooleanAND_ReturnValue_1) == 0x000678, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetGroupRaceRuleSetting_ReturnValue_1) == 0x000679, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetGroupRaceRuleSetting_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_IsGroupRace_ReturnValue_1) == 0x00067A, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_IsGroupRace_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Get_Group_Rule_Data_Impl_GroupRaceRuleData_1) == 0x000680, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Get_Group_Rule_Data_Impl_GroupRaceRuleData_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_bool_True_if_break_was_hit_Variable_3) == 0x0006D0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_bool_True_if_break_was_hit_Variable_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_MakeStruct_AppRaceStageSetting_1) == 0x0006D1, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_MakeStruct_AppRaceStageSetting_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Not_PreBool_ReturnValue_3) == 0x0006D5, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Not_PreBool_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_17) == 0x0006D8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_17' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_35) == 0x0006E0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_35' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_As____________5) == 0x0006E8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_As____________5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_18) == 0x0006F0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_18' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetSelectedRaceType_ReturnValue) == 0x0006F1, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetSelectedRaceType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_SwitchEnum_CmpSuccess) == 0x0006F2, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0006F3, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x0006F4, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_12) == 0x0006F8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_12' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Conv_IntToByte_ReturnValue) == 0x000700, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetValidValue_ReturnValue) == 0x000701, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Conv_IntToByte_ReturnValue_1) == 0x000702, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Conv_IntToByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetEnumeratorName_ReturnValue) == 0x000704, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetValidValue_ReturnValue_1) == 0x00070C, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetValidValue_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Conv_NameToString_ReturnValue) == 0x000710, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Conv_NameToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Concat_StrStr_ReturnValue) == 0x000720, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_18) == 0x000730, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_18' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_As____________6) == 0x000738, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_As____________6' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_19) == 0x000740, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_19' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetSelectedRaceType_ReturnValue_1) == 0x000741, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetSelectedRaceType_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_MakeStruct_RaceCourseSubMapInfo) == 0x000748, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_MakeStruct_RaceCourseSubMapInfo' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_13) == 0x000798, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_13' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_19) == 0x0007A0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_19' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_MakeArray_Array) == 0x0007A8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_AsUnion_Bt_Collision_Binary_Asset_1) == 0x0007B8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_AsUnion_Bt_Collision_Binary_Asset_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_20) == 0x0007C0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_20' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_20) == 0x0007C8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_20' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_As____________7) == 0x0007D0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_As____________7' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_21) == 0x0007D8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_21' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetOwnerRaceSequence_ReturnValue_2) == 0x0007E0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetOwnerRaceSequence_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_AsBP_Race_Sequence_2) == 0x0007E8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_AsBP_Race_Sequence_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_22) == 0x0007F0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_22' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_14) == 0x0007F8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_14' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000800, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_36) == 0x000808, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_36' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_21) == 0x000810, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_21' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_int_Loop_Counter_Variable_5) == 0x000818, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_int_Loop_Counter_Variable_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_As____________8) == 0x000820, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_As____________8' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_23) == 0x000828, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_23' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Add_IntInt_ReturnValue_5) == 0x00082C, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Add_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_15) == 0x000830, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_15' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Add_IntInt_ReturnValue_6) == 0x000838, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Add_IntInt_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_22) == 0x000840, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_22' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_As____________9) == 0x000848, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_As____________9' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_24) == 0x000850, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_24' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_16) == 0x000858, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_16' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_23) == 0x000860, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_23' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_2) == 0x000868, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_As__________) == 0x000878, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_As__________' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_25) == 0x000880, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_25' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_17) == 0x000888, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_17' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_24) == 0x000890, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_24' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Add_IntInt_ReturnValue_7) == 0x000898, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Add_IntInt_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_As___________1) == 0x0008A0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_As___________1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_26) == 0x0008A8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_26' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Conv_IntToByte_ReturnValue_2) == 0x0008A9, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Conv_IntToByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetValidValue_ReturnValue_2) == 0x0008AA, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetValidValue_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_18) == 0x0008B0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_18' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_25) == 0x0008B8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_25' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_As___________2) == 0x0008C0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_As___________2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_27) == 0x0008C8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_27' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Conv_IntToInt64_ReturnValue) == 0x0008D0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Add_IntInt_ReturnValue_8) == 0x0008D8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Add_IntInt_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_MakeStruct_FormatArgumentData) == 0x0008E0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_MakeArray_Array_1) == 0x000928, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_19) == 0x000938, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_19' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Format_ReturnValue) == 0x000940, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetOwnerRaceSequence_ReturnValue_3) == 0x000950, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetOwnerRaceSequence_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_AsBP_Race_Sequence_3) == 0x000958, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_AsBP_Race_Sequence_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_28) == 0x000960, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_28' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_26) == 0x000968, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_26' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetRaceHUDRef_ReturnValue) == 0x000970, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetRaceHUDRef_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_As___________3) == 0x000978, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_As___________3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_29) == 0x000980, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_29' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Select_Course_Setting_Impl_Texture) == 0x000988, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Select_Course_Setting_Impl_Texture' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Select_Course_Setting_Impl_OrthoRate) == 0x0009B0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Select_Course_Setting_Impl_OrthoRate' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Select_Course_Setting_Impl_Angle) == 0x0009B8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Select_Course_Setting_Impl_Angle' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Select_Course_Setting_Impl_Offset) == 0x0009C0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Select_Course_Setting_Impl_Offset' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_20) == 0x0009D8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_20' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_SetCourseSetting_self_CastInput) == 0x0009E0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_SetCourseSetting_self_CastInput' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_int_Array_Index_Variable_5) == 0x0009F0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_int_Array_Index_Variable_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Array_Get_Item_3) == 0x0009F4, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetDataTableRowFromName_OutRow_1) == 0x000A00, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetDataTableRowFromName_OutRow_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetDataTableRowFromName_ReturnValue_1) == 0x000AE0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetDataTableRowFromName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_27) == 0x000AE8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_27' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_As___________4) == 0x000AF0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_As___________4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_30) == 0x000AF8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_30' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_21) == 0x000B00, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_21' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_28) == 0x000B08, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_28' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_StartStageLevels_ReturnValue) == 0x000B10, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_StartStageLevels_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_As___________5) == 0x000B18, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_As___________5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_31) == 0x000B20, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_31' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_int_Array_Index_Variable_6) == 0x000B24, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_int_Array_Index_Variable_6' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_22) == 0x000B28, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_22' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Greater_IntInt_ReturnValue) == 0x000B30, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_int_Loop_Counter_Variable_6) == 0x000B34, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_int_Loop_Counter_Variable_6' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Conv_IntToByte_ReturnValue_3) == 0x000B38, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Conv_IntToByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Less_IntInt_ReturnValue_3) == 0x000B39, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetValidValue_ReturnValue_3) == 0x000B3A, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetValidValue_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Add_IntInt_ReturnValue_9) == 0x000B3C, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Add_IntInt_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_29) == 0x000B40, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_29' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_As_____2D_2) == 0x000B48, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_As_____2D_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_32) == 0x000B50, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_32' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_23) == 0x000B58, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_23' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_3) == 0x000B60, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_int_Variable_2) == 0x000B70, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_4) == 0x000B74, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_5) == 0x000B84, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_name_Variable) == 0x000B98, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_name_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_6) == 0x000BA8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_7) == 0x000BB8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_8) == 0x000BC8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_8' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_9) == 0x000BD8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_9' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_10) == 0x000BE8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_10' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_11) == 0x000BF8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_11' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_12) == 0x000C08, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_12' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_13) == 0x000C18, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_13' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_14) == 0x000C28, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_14' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_15) == 0x000C38, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_15' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_16) == 0x000C48, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_16' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_17) == 0x000C58, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_17' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_MakeStruct_UnionRaceStageRingGateData) == 0x000C68, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_MakeStruct_UnionRaceStageRingGateData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_18) == 0x000CE0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_18' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetDataTableRowFromName_OutRow_2) == 0x000CF0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetDataTableRowFromName_OutRow_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetDataTableRowFromName_ReturnValue_2) == 0x0012C8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetDataTableRowFromName_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_19) == 0x0012CC, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_19' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_MakeLiteralInt_ReturnValue) == 0x0012DC, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Greater_IntInt_ReturnValue_1) == 0x0012E0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_int_Array_Index_Variable_7) == 0x0012E4, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_int_Array_Index_Variable_7' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Array_Get_Item_4) == 0x0012E8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetDataTableRowFromName_OutRow_3) == 0x0012F0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetDataTableRowFromName_OutRow_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetDataTableRowFromName_ReturnValue_3) == 0x0018C8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetDataTableRowFromName_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Conv_ByteToInt_ReturnValue) == 0x0018CC, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_bool_True_if_break_was_hit_Variable_4) == 0x0018D0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_bool_True_if_break_was_hit_Variable_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_20) == 0x0018D4, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_20' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Not_PreBool_ReturnValue_4) == 0x0018E4, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Not_PreBool_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_21) == 0x0018E8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_21' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_22) == 0x0018F8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_22' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_int_Loop_Counter_Variable_7) == 0x001908, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_int_Loop_Counter_Variable_7' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Less_IntInt_ReturnValue_4) == 0x00190C, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Less_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Add_IntInt_ReturnValue_10) == 0x001910, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Add_IntInt_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_BooleanAND_ReturnValue_2) == 0x001914, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetSelectedRaceType_ReturnValue_2) == 0x001915, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetSelectedRaceType_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_23) == 0x001918, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_23' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_SwitchEnum_CmpSuccess_1) == 0x001928, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetDataTableRowNames_OutRowNames_2) == 0x001930, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetDataTableRowNames_OutRowNames_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_30) == 0x001940, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_30' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_24) == 0x001950, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_24' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Array_Get_Item_5) == 0x001960, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Array_Get_Item_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Array_IsValidIndex_ReturnValue_1) == 0x001968, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Array_IsValidIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_AsPrimary_Stage_Data_Asset) == 0x001970, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_AsPrimary_Stage_Data_Asset' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_33) == 0x001978, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_33' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_AddTravelRingLevels_ReturnValue) == 0x001979, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_AddTravelRingLevels_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetFinalLapData_ReturnValue) == 0x001980, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetFinalLapData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_MakeStruct_UnionRaceDomainInfo) == 0x001A80, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_MakeStruct_UnionRaceDomainInfo' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetDefaultBasicLapData_ReturnValue) == 0x001AC8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetDefaultBasicLapData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_MakeStruct_UnionRaceStageDynamicData) == 0x001BC8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_MakeStruct_UnionRaceStageDynamicData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_MakeStruct_UnionRaceDomainInfo_1) == 0x001C38, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_MakeStruct_UnionRaceDomainInfo_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetDefaultBasicLapData_ReturnValue_1) == 0x001C80, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetDefaultBasicLapData_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetFinalLapData_ReturnValue_1) == 0x001D80, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetFinalLapData_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_MakeStruct_UnionRaceStageDynamicData_1) == 0x001E80, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_MakeStruct_UnionRaceStageDynamicData_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_MakeStruct_UnionRaceStageDynamicData_2) == 0x001EF0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_MakeStruct_UnionRaceStageDynamicData_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_MakeStruct_UnionRaceStageData) == 0x001F60, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_MakeStruct_UnionRaceStageData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_MakeStruct_UnionRaceDomainData) == 0x0020D0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_MakeStruct_UnionRaceDomainData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_IsDebugStage_ReturnValue) == 0x002288, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_IsDebugStage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_MakeArray_Array_2) == 0x002290, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_MakeArray_Array_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_IsValidSoftObjectReference_ReturnValue_2) == 0x0022A0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_IsValidSoftObjectReference_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x0022A4, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_EqualEqual_IntInt_ReturnValue_2) == 0x0022A8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_EqualEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Map_Find_Value) == 0x0022B0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Map_Find_ReturnValue) == 0x0022F8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Map_Find_Value_1) == 0x002300, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Map_Find_Value_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Map_Find_ReturnValue_1) == 0x002348, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Map_Find_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Map_Find_Value_2) == 0x002350, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Map_Find_Value_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Map_Find_ReturnValue_2) == 0x002398, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Map_Find_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_MakeStruct_StageCourseMapParam_2) == 0x0023A0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_MakeStruct_StageCourseMapParam_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_IsValidSoftObjectReference_ReturnValue_3) == 0x0023C8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_IsValidSoftObjectReference_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetBackgroundLevels_OutBackgroundLevels) == 0x0023D0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetBackgroundLevels_OutBackgroundLevels' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Array_Get_Item_6) == 0x0023E0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Array_Get_Item_6' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Array_IsValidIndex_ReturnValue_2) == 0x002408, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Array_IsValidIndex_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetLevelNameByReference_ReturnValue) == 0x002410, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetLevelNameByReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetBackgroundLevels_OutBackgroundLevels_1) == 0x002420, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetBackgroundLevels_OutBackgroundLevels_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Array_Get_Item_7) == 0x002430, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Array_Get_Item_7' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Array_Get_Item_8) == 0x002458, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Array_Get_Item_8' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Array_Length_ReturnValue_7) == 0x002480, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Array_Length_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_IsValid_ReturnValue_5) == 0x002484, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Less_IntInt_ReturnValue_5) == 0x002485, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Less_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_24) == 0x002488, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_24' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_name_Variable_1) == 0x002498, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_name_Variable_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_AsyncLoadPrimaryAssetList_ReturnValue) == 0x0024A8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_AsyncLoadPrimaryAssetList_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_25) == 0x0024B0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_25' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_IsValid_ReturnValue_6) == 0x0024C0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_26) == 0x0024C4, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_26' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_27) == 0x0024D4, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_27' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_int_Variable_3) == 0x0024E4, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_IsMainStage_ReturnValue) == 0x0024E8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_IsMainStage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x0024E9, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0024EA, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_28) == 0x0024EC, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_28' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetRaceDebugParamFinalLap_ReturnValue) == 0x0024FC, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetRaceDebugParamFinalLap_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_BooleanAND_ReturnValue_3) == 0x0024FD, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_int_Variable_4) == 0x002500, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_BooleanAND_ReturnValue_4) == 0x002504, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_BooleanAND_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_int_Variable_5) == 0x002508, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_int_Variable_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_int_Variable_6) == 0x00250C, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_int_Variable_6' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_int_Variable_7) == 0x002510, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_int_Variable_7' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_Select_Default) == 0x002514, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_ContainsLevel_ReturnValue) == 0x002518, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_ContainsLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetSelectedGameModeId_ReturnValue_1) == 0x002519, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetSelectedGameModeId_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_SwitchEnum_CmpSuccess_2) == 0x00251A, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_SwitchEnum_CmpSuccess_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_softobject_Variable) == 0x002520, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_softobject_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_29) == 0x002548, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_29' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_bool_Variable_7) == 0x002558, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_bool_Variable_7' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_ShouldNativeLoad_ReturnValue) == 0x002559, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_ShouldNativeLoad_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_Select_Default_1) == 0x002560, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_Event_StageIndex) == 0x002588, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_Event_StageIndex' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_AddLevelByReference_ReturnValue) == 0x00258C, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_AddLevelByReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Add_IntInt_ReturnValue_11) == 0x002590, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Add_IntInt_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetOwnerRaceSequence_ReturnValue_4) == 0x002598, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetOwnerRaceSequence_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_AsBP_Race_Sequence_4) == 0x0025A0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_AsBP_Race_Sequence_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_34) == 0x0025A8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_34' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_Select_Default_2) == 0x0025A9, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetOwnerRaceSequence_ReturnValue_5) == 0x0025B0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetOwnerRaceSequence_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetStageAssetFilenameTrunk_ReturnValue) == 0x0025B8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetStageAssetFilenameTrunk_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_AsBP_Race_Sequence_5) == 0x0025C8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_AsBP_Race_Sequence_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_35) == 0x0025D0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_35' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_StringToStageId_ReturnValue) == 0x0025D1, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_StringToStageId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Array_IsValidIndex_ReturnValue_3) == 0x0025D2, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Array_IsValidIndex_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Add_IntInt_ReturnValue_12) == 0x0025D4, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Add_IntInt_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Array_Get_Item_9) == 0x0025D8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Array_Get_Item_9' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Array_Get_Item_10) == 0x0025E0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Array_Get_Item_10' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_AsPrimary_Stage_Data_Asset_1) == 0x0025E8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_AsPrimary_Stage_Data_Asset_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_36) == 0x0025F0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_36' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Map_Find_Value_3) == 0x0025F4, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Map_Find_Value_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Map_Find_ReturnValue_3) == 0x002604, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Map_Find_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_MakeArray_Array_3) == 0x002608, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_MakeArray_Array_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Array_Add_ReturnValue) == 0x002618, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_IsValidSoftObjectReference_ReturnValue_4) == 0x00261C, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_IsValidSoftObjectReference_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Array_Length_ReturnValue_8) == 0x002620, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Array_Length_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetStageAssetFilenameTrunk_ReturnValue_1) == 0x002628, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetStageAssetFilenameTrunk_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Less_IntInt_ReturnValue_6) == 0x002638, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Less_IntInt_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_StringToStageId_ReturnValue_1) == 0x002639, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_StringToStageId_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_BooleanAND_ReturnValue_5) == 0x00263A, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_BooleanAND_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x00263B, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_AsyncLoadPrimaryAssetList_ReturnValue_1) == 0x002640, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_AsyncLoadPrimaryAssetList_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_FindSubstring_ReturnValue) == 0x002648, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_FindSubstring_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_NotEqual_IntInt_ReturnValue) == 0x00264C, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_IsValid_ReturnValue_7) == 0x00264D, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_IsValid_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_FindSubstring_ReturnValue_1) == 0x002650, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_FindSubstring_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_NotEqual_IntInt_ReturnValue_1) == 0x002654, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_NotEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Array_Get_Item_11) == 0x002655, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Array_Get_Item_11' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_IsValid_ReturnValue_8) == 0x002659, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_IsValid_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Map_Find_Value_4) == 0x00265C, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Map_Find_Value_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Map_Find_ReturnValue_4) == 0x00266C, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Map_Find_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Array_Length_ReturnValue_9) == 0x002670, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Array_Length_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Less_IntInt_ReturnValue_7) == 0x002674, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Less_IntInt_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Array_Add_ReturnValue_1) == 0x002678, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_BooleanAND_ReturnValue_6) == 0x00267C, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_BooleanAND_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_IsValid_ReturnValue_9) == 0x00267D, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_IsValid_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_31) == 0x002680, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_31' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_AsUnion_Navigation_Binary_Data_Asset_2) == 0x002688, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_AsUnion_Navigation_Binary_Data_Asset_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_37) == 0x002690, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_37' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_30) == 0x002694, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_30' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Concat_StrStr_ReturnValue_1) == 0x0026A8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Concat_StrStr_ReturnValue_2) == 0x0026B8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Concat_StrStr_ReturnValue_3) == 0x0026C8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Concat_StrStr_ReturnValue_4) == 0x0026D8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Concat_StrStr_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Conv_StringToName_ReturnValue) == 0x0026E8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Concat_StrStr_ReturnValue_5) == 0x0026F0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Concat_StrStr_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Concat_StrStr_ReturnValue_6) == 0x002700, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Concat_StrStr_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Concat_StrStr_ReturnValue_7) == 0x002710, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Concat_StrStr_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Concat_StrStr_ReturnValue_8) == 0x002720, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Concat_StrStr_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Concat_StrStr_ReturnValue_9) == 0x002730, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Concat_StrStr_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Concat_StrStr_ReturnValue_10) == 0x002740, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Concat_StrStr_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Concat_StrStr_ReturnValue_11) == 0x002750, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Concat_StrStr_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Concat_StrStr_ReturnValue_12) == 0x002760, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Concat_StrStr_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Concat_StrStr_ReturnValue_13) == 0x002770, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Concat_StrStr_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_25) == 0x002780, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_25' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Concat_StrStr_ReturnValue_14) == 0x002788, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Concat_StrStr_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Map_Find_Value_5) == 0x002798, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Map_Find_Value_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Map_Find_ReturnValue_5) == 0x0027A8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Map_Find_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_FindSubstring_ReturnValue_2) == 0x0027AC, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_FindSubstring_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_NotEqual_IntInt_ReturnValue_2) == 0x0027B0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_NotEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_FindSubstring_ReturnValue_3) == 0x0027B4, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_FindSubstring_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_NotEqual_IntInt_ReturnValue_3) == 0x0027B8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_NotEqual_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_32) == 0x0027C0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_32' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_BooleanOR_ReturnValue) == 0x0027C8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_AsUnion_Bt_Collision_Binary_Asset_2) == 0x0027D0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_AsUnion_Bt_Collision_Binary_Asset_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_38) == 0x0027D8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_38' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_BooleanOR_ReturnValue_1) == 0x0027D9, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_BooleanOR_ReturnValue_2) == 0x0027DA, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_31) == 0x0027DC, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_31' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_26) == 0x0027F0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_26' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_int_Variable_8) == 0x0027F8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_int_Variable_8' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_32) == 0x0027FC, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_32' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_33) == 0x002810, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_33' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_27) == 0x002818, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_27' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_AsUnion_Com_Path_Binary_Data_Asset_3) == 0x002820, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_AsUnion_Com_Path_Binary_Data_Asset_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_39) == 0x002828, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_39' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_33) == 0x00282C, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_33' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_SwitchEnum_CmpSuccess_3) == 0x00283C, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_SwitchEnum_CmpSuccess_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetBoolFromConfig_ConfigValue) == 0x00283D, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetBoolFromConfig_ConfigValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetBoolFromConfig_ReturnValue) == 0x00283E, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetBoolFromConfig_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetBoolFromConfig_ConfigValue_1) == 0x00283F, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetBoolFromConfig_ConfigValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetBoolFromConfig_ReturnValue_1) == 0x002840, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetBoolFromConfig_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetStageAssetFilenameTrunk_ReturnValue_2) == 0x002848, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetStageAssetFilenameTrunk_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_34) == 0x002858, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_34' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Split_LeftS) == 0x002860, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Split_LeftS' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Split_RightS) == 0x002870, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Split_RightS' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Split_ReturnValue) == 0x002880, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Split_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_AsUnion_Run_Path_Binary_Data_Asset_3) == 0x002888, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_AsUnion_Run_Path_Binary_Data_Asset_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_40) == 0x002890, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_40' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Conv_StringToInt_ReturnValue) == 0x002894, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Conv_StringToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetStageId_ReturnValue) == 0x002898, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetStageId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_IsStageIdValid_ReturnValue) == 0x002899, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_IsStageIdValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_Select_Default_3) == 0x00289A, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Not_PreBool_ReturnValue_5) == 0x00289B, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Not_PreBool_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Not_PreBool_ReturnValue_6) == 0x00289C, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Not_PreBool_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_Select_Default_4) == 0x0028A0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Concat_StrStr_ReturnValue_15) == 0x0028B0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Concat_StrStr_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_Select_Default_5) == 0x0028C0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_Select_Default_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Conv_StringToName_ReturnValue_1) == 0x0028D0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Conv_StringToName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Concat_StrStr_ReturnValue_16) == 0x0028D8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Concat_StrStr_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Conv_StringToName_ReturnValue_2) == 0x0028E8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Conv_StringToName_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_28) == 0x0028F0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_28' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_Select_Default_6) == 0x0028F8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_Select_Default_6' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Concat_StrStr_ReturnValue_17) == 0x002908, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Concat_StrStr_ReturnValue_17' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Conv_StringToName_ReturnValue_3) == 0x002918, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Conv_StringToName_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_Select_Default_7) == 0x002920, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_Select_Default_7' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Concat_StrStr_ReturnValue_18) == 0x002930, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Concat_StrStr_ReturnValue_18' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_MakeStruct_UnionRaceStageDynamicData_3) == 0x002940, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_MakeStruct_UnionRaceStageDynamicData_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Conv_StringToName_ReturnValue_4) == 0x0029B0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Conv_StringToName_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_MakeStruct_UnionRaceStageData_1) == 0x0029B8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_MakeStruct_UnionRaceStageData_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_MakeStruct_UnionRaceDomainData_1) == 0x002B28, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_MakeStruct_UnionRaceDomainData_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetStageAssetFilenameTrunk_ReturnValue_3) == 0x002CE0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetStageAssetFilenameTrunk_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_BooleanAND_ReturnValue_7) == 0x002CF0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_BooleanAND_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_BooleanAND_ReturnValue_8) == 0x002CF1, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_BooleanAND_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_Select_Default_8) == 0x002CF8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_Select_Default_8' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetBoolFromConfig_ConfigValue_2) == 0x002D08, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetBoolFromConfig_ConfigValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetBoolFromConfig_ReturnValue_2) == 0x002D09, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetBoolFromConfig_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_Select_Default_9) == 0x002D10, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_Select_Default_9' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_35) == 0x002D20, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_35' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_AsUnion_Navigation_Binary_Data_Asset_3) == 0x002D28, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_AsUnion_Navigation_Binary_Data_Asset_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_41) == 0x002D30, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_41' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetStageAssetFilenameTrunk_ReturnValue_4) == 0x002D38, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetStageAssetFilenameTrunk_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Concat_StrStr_ReturnValue_19) == 0x002D48, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Concat_StrStr_ReturnValue_19' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetStageAssetDir_ReturnValue) == 0x002D58, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetStageAssetDir_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_29) == 0x002D68, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_29' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_MakeArray_Array_4) == 0x002D70, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_MakeArray_Array_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Combine_ReturnValue) == 0x002D80, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Combine_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_LoadComPathAssetByFilePath_ReturnValue) == 0x002D90, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_LoadComPathAssetByFilePath_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetStageAssetFilenameTrunk_ReturnValue_5) == 0x002D98, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetStageAssetFilenameTrunk_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Concat_StrStr_ReturnValue_20) == 0x002DA8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Concat_StrStr_ReturnValue_20' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetStageAssetDir_ReturnValue_1) == 0x002DB8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetStageAssetDir_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_MakeArray_Array_5) == 0x002DC8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_MakeArray_Array_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Combine_ReturnValue_1) == 0x002DD8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Combine_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_34) == 0x002DE8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_34' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_LoadRunPathAssetByFilePath_ReturnValue) == 0x002DF8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_LoadRunPathAssetByFilePath_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_object_Variable_36) == 0x002E00, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_object_Variable_36' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetStageAssetFilenameTrunk_ReturnValue_6) == 0x002E08, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetStageAssetFilenameTrunk_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_AsUnion_Bt_Collision_Binary_Asset_3) == 0x002E18, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_AsUnion_Bt_Collision_Binary_Asset_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_DynamicCast_bSuccess_42) == 0x002E20, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_DynamicCast_bSuccess_42' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Concat_StrStr_ReturnValue_21) == 0x002E28, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Concat_StrStr_ReturnValue_21' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetStageAssetDir_ReturnValue_2) == 0x002E38, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetStageAssetDir_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetStageAssetFilenameTrunk_ReturnValue_7) == 0x002E48, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetStageAssetFilenameTrunk_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_MakeArray_Array_6) == 0x002E58, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_MakeArray_Array_6' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Concat_StrStr_ReturnValue_22) == 0x002E68, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Concat_StrStr_ReturnValue_22' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Combine_ReturnValue_2) == 0x002E78, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Combine_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_LoadCourseNavigationAssetByFilePath_ReturnValue) == 0x002E88, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_LoadCourseNavigationAssetByFilePath_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CustomEvent_Loaded_30) == 0x002E90, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CustomEvent_Loaded_30' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetStageAssetDir_ReturnValue_3) == 0x002E98, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetStageAssetDir_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_byte_Variable_12) == 0x002EA8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_byte_Variable_12' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_MakeArray_Array_7) == 0x002EB0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_MakeArray_Array_7' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_Combine_ReturnValue_3) == 0x002EC0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_Combine_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_LoadCourseCollisionAssetByFilePath_ReturnValue) == 0x002ED0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_LoadCourseCollisionAssetByFilePath_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_35) == 0x002ED8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_35' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_byte_Variable_13) == 0x002EE8, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_byte_Variable_13' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_byte_Variable_14) == 0x002EE9, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_byte_Variable_14' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetBoolFromConfig_ConfigValue_3) == 0x002EEA, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetBoolFromConfig_ConfigValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_GetBoolFromConfig_ReturnValue_3) == 0x002EEB, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_GetBoolFromConfig_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_Select_Default_10) == 0x002EEC, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_Select_Default_10' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_BooleanAND_ReturnValue_9) == 0x002EED, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_BooleanAND_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_MakeArray_Array_8) == 0x002EF0, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_MakeArray_Array_8' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, K2Node_CreateDelegate_OutputDelegate_36) == 0x002F00, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::K2Node_CreateDelegate_OutputDelegate_36' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, Temp_int_Variable_9) == 0x002F10, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::Temp_int_Variable_9' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_SetCourseSetting_OrthoRate_ImplicitCast) == 0x002F14, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_SetCourseSetting_OrthoRate_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets, CallFunc_SetCourseSetting_Angle_ImplicitCast) == 0x002F18, "Member 'BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets::CallFunc_SetCourseSetting_Angle_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_ExecuteUbergraph_BPC_RaceSequenceStateLoadAssets;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.GetGroupRuleData
 // 0x00A8 (0x00A8 - 0x0000)
@@ -2151,11 +1335,7 @@ public:
 	struct FGroupRaceRuleData                     GroupRaceRuleData;                                 // 0x0008(0x0050)(Parm, OutParm)
 	struct FGroupRaceRuleData                     CallFunc_Get_Group_Rule_Data_Impl_GroupRaceRuleData; // 0x0058(0x0050)()
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_GetGroupRuleData) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_GetGroupRuleData");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_GetGroupRuleData) == 0x0000A8, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_GetGroupRuleData");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_GetGroupRuleData, GroupRaceRule) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_GetGroupRuleData::GroupRaceRule' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_GetGroupRuleData, GroupRaceRuleData) == 0x000008, "Member 'BPC_RaceSequenceStateLoadAssets_C_GetGroupRuleData::GroupRaceRuleData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_GetGroupRuleData, CallFunc_Get_Group_Rule_Data_Impl_GroupRaceRuleData) == 0x000058, "Member 'BPC_RaceSequenceStateLoadAssets_C_GetGroupRuleData::CallFunc_Get_Group_Rule_Data_Impl_GroupRaceRuleData' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_GetGroupRuleData;
 
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.Get Group Rule Data Impl
 // 0x00E8 (0x00E8 - 0x0000)
@@ -2183,23 +1363,7 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl");
-static_assert(sizeof(BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl) == 0x0000E8, "Wrong size on BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl, GroupRaceRule) == 0x000000, "Member 'BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl::GroupRaceRule' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl, GroupRaceRuleData) == 0x000008, "Member 'BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl::GroupRaceRuleData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl, Temp_bool_True_if_break_was_hit_Variable) == 0x000058, "Member 'BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl, Temp_int_Array_Index_Variable) == 0x00005C, "Member 'BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl, CallFunc_Not_PreBool_ReturnValue) == 0x000060, "Member 'BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl, Temp_int_Loop_Counter_Variable) == 0x000064, "Member 'BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl, CallFunc_GetDataTableRowNames_OutRowNames) == 0x000068, "Member 'BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl::CallFunc_GetDataTableRowNames_OutRowNames' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl, CallFunc_Array_Get_Item) == 0x000078, "Member 'BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl, CallFunc_Array_Length_ReturnValue) == 0x000080, "Member 'BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl, CallFunc_GetDataTableRowFromName_OutRow) == 0x000088, "Member 'BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x0000D8, "Member 'BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl, CallFunc_Less_IntInt_ReturnValue) == 0x0000D9, "Member 'BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl, CallFunc_BooleanAND_ReturnValue) == 0x0000DA, "Member 'BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl, CallFunc_Add_IntInt_ReturnValue) == 0x0000DC, "Member 'BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000E0, "Member 'BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateLoadAssets_C_Get_Group_Rule_Data_Impl;
 
 }
 

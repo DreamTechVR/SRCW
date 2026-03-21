@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK
@@ -62,25 +62,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_GrandPrixSequence_C">();
+		BP_STATIC_CLASS_IMPL("BP_GrandPrixSequence_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_GrandPrixSequence_C")
 	}
 	static class ABP_GrandPrixSequence_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_GrandPrixSequence_C>();
 	}
 };
-static_assert(alignof(ABP_GrandPrixSequence_C) == 0x000008, "Wrong alignment on ABP_GrandPrixSequence_C");
-static_assert(sizeof(ABP_GrandPrixSequence_C) == 0x0003D0, "Wrong size on ABP_GrandPrixSequence_C");
-static_assert(offsetof(ABP_GrandPrixSequence_C, UberGraphFrame) == 0x000380, "Member 'ABP_GrandPrixSequence_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_GrandPrixSequence_C, BPC_GadgetCustomize2State) == 0x000388, "Member 'ABP_GrandPrixSequence_C::BPC_GadgetCustomize2State' has a wrong offset!");
-static_assert(offsetof(ABP_GrandPrixSequence_C, BPC_RivalSelectState) == 0x000390, "Member 'ABP_GrandPrixSequence_C::BPC_RivalSelectState' has a wrong offset!");
-static_assert(offsetof(ABP_GrandPrixSequence_C, BPC_SelectCourse) == 0x000398, "Member 'ABP_GrandPrixSequence_C::BPC_SelectCourse' has a wrong offset!");
-static_assert(offsetof(ABP_GrandPrixSequence_C, BPC_CharaMachineState) == 0x0003A0, "Member 'ABP_GrandPrixSequence_C::BPC_CharaMachineState' has a wrong offset!");
-static_assert(offsetof(ABP_GrandPrixSequence_C, BPC_MenuSubStateSelectClass) == 0x0003A8, "Member 'ABP_GrandPrixSequence_C::BPC_MenuSubStateSelectClass' has a wrong offset!");
-static_assert(offsetof(ABP_GrandPrixSequence_C, Footer) == 0x0003B0, "Member 'ABP_GrandPrixSequence_C::Footer' has a wrong offset!");
-static_assert(offsetof(ABP_GrandPrixSequence_C, MenuSequence) == 0x0003B8, "Member 'ABP_GrandPrixSequence_C::MenuSequence' has a wrong offset!");
-static_assert(offsetof(ABP_GrandPrixSequence_C, CommonBlueBK) == 0x0003C0, "Member 'ABP_GrandPrixSequence_C::CommonBlueBK' has a wrong offset!");
-static_assert(offsetof(ABP_GrandPrixSequence_C, LClassSelect) == 0x0003C8, "Member 'ABP_GrandPrixSequence_C::LClassSelect' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_GrandPrixSequence_C;
 
 }
 

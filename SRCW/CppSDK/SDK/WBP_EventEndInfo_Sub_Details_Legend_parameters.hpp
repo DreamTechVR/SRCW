@@ -10,8 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "UNION_structs.hpp"
+#include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
@@ -32,15 +33,7 @@ public:
 	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Min_ReturnValue;                          // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_EventEndInfo_Sub_Details_Legend_C_Calc_Next_Point) == 0x000008, "Wrong alignment on WBP_EventEndInfo_Sub_Details_Legend_C_Calc_Next_Point");
-static_assert(sizeof(WBP_EventEndInfo_Sub_Details_Legend_C_Calc_Next_Point) == 0x000020, "Wrong size on WBP_EventEndInfo_Sub_Details_Legend_C_Calc_Next_Point");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_Calc_Next_Point, InBasePoint) == 0x000000, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_Calc_Next_Point::InBasePoint' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_Calc_Next_Point, OutNextPoint) == 0x000004, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_Calc_Next_Point::OutNextPoint' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_Calc_Next_Point, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000008, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_Calc_Next_Point::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_Calc_Next_Point, CallFunc_GetLegendCompeRequiredRateToNextGradeById_ReturnValue) == 0x000010, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_Calc_Next_Point::CallFunc_GetLegendCompeRequiredRateToNextGradeById_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_Calc_Next_Point, CallFunc_Add_IntInt_ReturnValue) == 0x000014, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_Calc_Next_Point::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_Calc_Next_Point, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000018, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_Calc_Next_Point::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_Calc_Next_Point, CallFunc_Min_ReturnValue) == 0x00001C, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_Calc_Next_Point::CallFunc_Min_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_EventEndInfo_Sub_Details_Legend_C_Calc_Next_Point;
 
 // Function WBP_EventEndInfo_Sub_Details_Legend.WBP_EventEndInfo_Sub_Details_Legend_C.CalcDirectionProgressTimeSec
 // 0x0020 (0x0020 - 0x0000)
@@ -54,13 +47,7 @@ public:
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Add_DoubleDouble_ReturnValue_1;           // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionProgressTimeSec) == 0x000008, "Wrong alignment on WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionProgressTimeSec");
-static_assert(sizeof(WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionProgressTimeSec) == 0x000020, "Wrong size on WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionProgressTimeSec");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionProgressTimeSec, DeltaTimeSec) == 0x000000, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionProgressTimeSec::DeltaTimeSec' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionProgressTimeSec, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000008, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionProgressTimeSec::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionProgressTimeSec, CallFunc_GreaterEqual_DoubleDouble_ReturnValue) == 0x000010, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionProgressTimeSec::CallFunc_GreaterEqual_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionProgressTimeSec, CallFunc_Greater_DoubleDouble_ReturnValue) == 0x000011, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionProgressTimeSec::CallFunc_Greater_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionProgressTimeSec, CallFunc_Add_DoubleDouble_ReturnValue_1) == 0x000018, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionProgressTimeSec::CallFunc_Add_DoubleDouble_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionProgressTimeSec;
 
 // Function WBP_EventEndInfo_Sub_Details_Legend.WBP_EventEndInfo_Sub_Details_Legend_C.CalcDirectionStepNum
 // 0x0028 (0x0028 - 0x0000)
@@ -78,17 +65,7 @@ public:
 	ELegendCompeRateGrade                         CallFunc_GetLegendCompeGradeById_ReturnValue;      // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionStepNum) == 0x000008, "Wrong alignment on WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionStepNum");
-static_assert(sizeof(WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionStepNum) == 0x000028, "Wrong size on WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionStepNum");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionStepNum, OutStepNum) == 0x000000, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionStepNum::OutStepNum' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionStepNum, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000004, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionStepNum::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionStepNum, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x000008, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionStepNum::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionStepNum, CallFunc_Max_ReturnValue) == 0x00000C, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionStepNum::CallFunc_Max_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionStepNum, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionStepNum::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionStepNum, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000018, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionStepNum::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionStepNum, CallFunc_Subtract_IntInt_ReturnValue) == 0x000020, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionStepNum::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionStepNum, CallFunc_GetLegendCompeGradeById_ReturnValue) == 0x000024, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionStepNum::CallFunc_GetLegendCompeGradeById_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionStepNum, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000025, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionStepNum::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_EventEndInfo_Sub_Details_Legend_C_CalcDirectionStepNum;
 
 // Function WBP_EventEndInfo_Sub_Details_Legend.WBP_EventEndInfo_Sub_Details_Legend_C.CalculatePointForAdditionAnimation
 // 0x0098 (0x0098 - 0x0000)
@@ -122,31 +99,7 @@ public:
 	double                                        CallFunc_Ease_ReturnValue;                         // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation) == 0x000008, "Wrong alignment on WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation");
-static_assert(sizeof(WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation) == 0x000098, "Wrong size on WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation, ReturnValue) == 0x000000, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation, CurrentDirectionProgressStep) == 0x000004, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation::CurrentDirectionProgressStep' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation, CallFunc_CalcDirectionStepNum_OutStepNum) == 0x000008, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation::CallFunc_CalcDirectionStepNum_OutStepNum' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation, CallFunc_CalcCurrentDirectionProgressStep_CurrentStep) == 0x00000C, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation::CallFunc_CalcCurrentDirectionProgressStep_CurrentStep' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation, CallFunc_CalcDirectionStepNum_OutStepNum_1) == 0x000010, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation::CallFunc_CalcDirectionStepNum_OutStepNum_1' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000018, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000020, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000028, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation, CallFunc_FTrunc64_ReturnValue) == 0x000030, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation::CallFunc_FTrunc64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation, CallFunc_Conv_IntToDouble_ReturnValue_1) == 0x000038, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation::CallFunc_Conv_IntToDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation, CallFunc_Conv_IntToDouble_ReturnValue_2) == 0x000040, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation::CallFunc_Conv_IntToDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation, CallFunc_Calc_Next_Point_OutNextPoint) == 0x000048, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation::CallFunc_Calc_Next_Point_OutNextPoint' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation, CallFunc_Greater_DoubleDouble_ReturnValue) == 0x00004C, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation::CallFunc_Greater_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation, CallFunc_NotEqual_DoubleDouble_ReturnValue) == 0x00004D, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation::CallFunc_NotEqual_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation, CallFunc_SafeDivide_ReturnValue) == 0x000050, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation::CallFunc_SafeDivide_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation, CallFunc_Multiply_DoubleDouble_ReturnValue_1) == 0x000058, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation::CallFunc_Multiply_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation, CallFunc_FTrunc64_ReturnValue_1) == 0x000060, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation::CallFunc_FTrunc64_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation, CallFunc_Percent_Int64Int64_ReturnValue) == 0x000068, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation::CallFunc_Percent_Int64Int64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation, CallFunc_Conv_Int64ToDouble_ReturnValue) == 0x000070, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation::CallFunc_Conv_Int64ToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x000078, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation, CallFunc_SafeDivide_ReturnValue_1) == 0x000080, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation::CallFunc_SafeDivide_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation, CallFunc_Ease_ReturnValue) == 0x000088, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation::CallFunc_Ease_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation, CallFunc_FTrunc_ReturnValue) == 0x000090, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_EventEndInfo_Sub_Details_Legend_C_CalculatePointForAdditionAnimation;
 
 // Function WBP_EventEndInfo_Sub_Details_Legend.WBP_EventEndInfo_Sub_Details_Legend_C.CheckEndPointUp
 // 0x0003 (0x0003 - 0x0000)
@@ -157,11 +110,7 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue;    // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_EventEndInfo_Sub_Details_Legend_C_CheckEndPointUp) == 0x000001, "Wrong alignment on WBP_EventEndInfo_Sub_Details_Legend_C_CheckEndPointUp");
-static_assert(sizeof(WBP_EventEndInfo_Sub_Details_Legend_C_CheckEndPointUp) == 0x000003, "Wrong size on WBP_EventEndInfo_Sub_Details_Legend_C_CheckEndPointUp");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CheckEndPointUp, ShouldEnd) == 0x000000, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CheckEndPointUp::ShouldEnd' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CheckEndPointUp, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000001, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CheckEndPointUp::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CheckEndPointUp, CallFunc_GreaterEqual_DoubleDouble_ReturnValue) == 0x000002, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CheckEndPointUp::CallFunc_GreaterEqual_DoubleDouble_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_EventEndInfo_Sub_Details_Legend_C_CheckEndPointUp;
 
 // Function WBP_EventEndInfo_Sub_Details_Legend.WBP_EventEndInfo_Sub_Details_Legend_C.ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend
 // 0x00D0 (0x00D0 - 0x0000)
@@ -197,65 +146,33 @@ public:
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_CalcDirectionProgressTimeSec_DeltaTimeSec_ImplicitCast; // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend) == 0x000008, "Wrong alignment on WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend");
-static_assert(sizeof(WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend) == 0x0000D0, "Wrong size on WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend, EntryPoint) == 0x000000, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend, CallFunc_CheckEndPointUp_ShouldEnd) == 0x000004, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend::CallFunc_CheckEndPointUp_ShouldEnd' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend, CallFunc_Calc_Next_Point_OutNextPoint) == 0x000018, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend::CallFunc_Calc_Next_Point_OutNextPoint' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend, CallFunc_SoundPlay_ReturnValue) == 0x00001C, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend, CallFunc_GetEndTime_ReturnValue) == 0x000020, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend::CallFunc_GetEndTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend, CallFunc_PlayAnimation_ReturnValue) == 0x000028, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend, CallFunc_SoundPlay_ReturnValue_1) == 0x000030, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend, K2Node_Event_MyGeometry) == 0x000034, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend, K2Node_Event_InDeltaTime) == 0x00006C, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend, CallFunc_SoundPlay_ReturnValue_2) == 0x000070, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend::CallFunc_SoundPlay_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend, CallFunc_Stop_ReturnValue) == 0x000074, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend::CallFunc_Stop_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend, CallFunc_CalculatePointForAdditionAnimation_ReturnValue) == 0x000078, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend::CallFunc_CalculatePointForAdditionAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend, CallFunc_PlayAnimationForward_ReturnValue) == 0x000080, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend, K2Node_Event_Ranking_1) == 0x000088, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend::K2Node_Event_Ranking_1' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend, K2Node_Event_Point) == 0x00008C, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend::K2Node_Event_Point' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend, K2Node_Event_Ranking) == 0x000090, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend::K2Node_Event_Ranking' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend, CallFunc_MakeLiteralText_ReturnValue) == 0x000098, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend, K2Node_Event_Texture) == 0x0000A8, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend::K2Node_Event_Texture' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend, K2Node_Event_PlayerPoint) == 0x0000B0, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend::K2Node_Event_PlayerPoint' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend, CallFunc_CalcDirectionStepNum_OutStepNum) == 0x0000B4, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend::CallFunc_CalcDirectionStepNum_OutStepNum' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend, CallFunc_Conv_IntToDouble_ReturnValue) == 0x0000B8, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x0000C0, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend, CallFunc_CalcDirectionProgressTimeSec_DeltaTimeSec_ImplicitCast) == 0x0000C8, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend::CallFunc_CalcDirectionProgressTimeSec_DeltaTimeSec_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_EventEndInfo_Sub_Details_Legend_C_ExecuteUbergraph_WBP_EventEndInfo_Sub_Details_Legend;
 
 // Function WBP_EventEndInfo_Sub_Details_Legend.WBP_EventEndInfo_Sub_Details_Legend_C.Get Number OfDight
-// 0x0038 (0x0038 - 0x0000)
+// 0x0048 (0x0048 - 0x0000)
 struct WBP_EventEndInfo_Sub_Details_Legend_C_Get_Number_OfDight final
 {
 public:
 	int32                                         OriginalNumber;                                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Dight;                                             // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UImage*                                 Image;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Divide_IntInt_ReturnValue;                // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1E[0x2];                                       // 0x001E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UImage*                                 BackImage;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              VisibilityOnZero;                                  // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1B[0x1];                                       // 0x001B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Divide_IntInt_ReturnValue;                // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_26[0x2];                                       // 0x0026(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_EventEndInfo_Sub_Details_Legend_C_Get_Number_OfDight) == 0x000008, "Wrong alignment on WBP_EventEndInfo_Sub_Details_Legend_C_Get_Number_OfDight");
-static_assert(sizeof(WBP_EventEndInfo_Sub_Details_Legend_C_Get_Number_OfDight) == 0x000038, "Wrong size on WBP_EventEndInfo_Sub_Details_Legend_C_Get_Number_OfDight");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_Get_Number_OfDight, OriginalNumber) == 0x000000, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_Get_Number_OfDight::OriginalNumber' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_Get_Number_OfDight, Dight) == 0x000004, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_Get_Number_OfDight::Dight' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_Get_Number_OfDight, Image) == 0x000008, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_Get_Number_OfDight::Image' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_Get_Number_OfDight, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000010, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_Get_Number_OfDight::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_Get_Number_OfDight, CallFunc_Divide_IntInt_ReturnValue) == 0x000014, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_Get_Number_OfDight::CallFunc_Divide_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_Get_Number_OfDight, CallFunc_Percent_IntInt_ReturnValue) == 0x000018, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_Get_Number_OfDight::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_Get_Number_OfDight, CallFunc_Less_IntInt_ReturnValue) == 0x00001C, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_Get_Number_OfDight::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_Get_Number_OfDight, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00001D, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_Get_Number_OfDight::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_Get_Number_OfDight, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000020, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_Get_Number_OfDight::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_Get_Number_OfDight, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000028, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_Get_Number_OfDight::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_Get_Number_OfDight, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000030, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_Get_Number_OfDight::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_EventEndInfo_Sub_Details_Legend_C_Get_Number_OfDight;
 
 // Function WBP_EventEndInfo_Sub_Details_Legend.WBP_EventEndInfo_Sub_Details_Legend_C.PlayResultSound
 // 0x0068 (0x0068 - 0x0000)
@@ -278,20 +195,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_EventEndInfo_Sub_Details_Legend_C_PlayResultSound) == 0x000008, "Wrong alignment on WBP_EventEndInfo_Sub_Details_Legend_C_PlayResultSound");
-static_assert(sizeof(WBP_EventEndInfo_Sub_Details_Legend_C_PlayResultSound) == 0x000068, "Wrong size on WBP_EventEndInfo_Sub_Details_Legend_C_PlayResultSound");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_PlayResultSound, PlayCue_Voice) == 0x000000, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_PlayResultSound::PlayCue_Voice' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_PlayResultSound, PlayCue_SE) == 0x000008, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_PlayResultSound::PlayCue_SE' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_PlayResultSound, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_PlayResultSound::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_PlayResultSound, CallFunc_IsValid_ReturnValue_1) == 0x000011, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_PlayResultSound::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_PlayResultSound, CallFunc_SoundPlay_ReturnValue) == 0x000014, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_PlayResultSound::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_PlayResultSound, CallFunc_SoundPlay_ReturnValue_1) == 0x000018, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_PlayResultSound::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_PlayResultSound, CallFunc_Map_Find_Value) == 0x000020, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_PlayResultSound::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_PlayResultSound, CallFunc_Map_Find_ReturnValue) == 0x000048, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_PlayResultSound::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_PlayResultSound, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x000050, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_PlayResultSound::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_PlayResultSound, K2Node_DynamicCast_AsSound_Atom_Cue) == 0x000058, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_PlayResultSound::K2Node_DynamicCast_AsSound_Atom_Cue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_PlayResultSound, K2Node_DynamicCast_bSuccess) == 0x000060, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_PlayResultSound::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_PlayResultSound, K2Node_SwitchEnum_CmpSuccess) == 0x000061, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_PlayResultSound::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_EventEndInfo_Sub_Details_Legend_C_PlayResultSound;
 
 // Function WBP_EventEndInfo_Sub_Details_Legend.WBP_EventEndInfo_Sub_Details_Legend_C.Set Fixed Result Disp Data
 // 0x0003 (0x0003 - 0x0000)
@@ -302,11 +206,7 @@ public:
 	EGameEventPhase                               EventPhase_0;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsPlayed_0;                                        // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_EventEndInfo_Sub_Details_Legend_C_Set_Fixed_Result_Disp_Data) == 0x000001, "Wrong alignment on WBP_EventEndInfo_Sub_Details_Legend_C_Set_Fixed_Result_Disp_Data");
-static_assert(sizeof(WBP_EventEndInfo_Sub_Details_Legend_C_Set_Fixed_Result_Disp_Data) == 0x000003, "Wrong size on WBP_EventEndInfo_Sub_Details_Legend_C_Set_Fixed_Result_Disp_Data");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_Set_Fixed_Result_Disp_Data, OriginalGrade_0) == 0x000000, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_Set_Fixed_Result_Disp_Data::OriginalGrade_0' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_Set_Fixed_Result_Disp_Data, EventPhase_0) == 0x000001, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_Set_Fixed_Result_Disp_Data::EventPhase_0' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_Set_Fixed_Result_Disp_Data, IsPlayed_0) == 0x000002, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_Set_Fixed_Result_Disp_Data::IsPlayed_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_EventEndInfo_Sub_Details_Legend_C_Set_Fixed_Result_Disp_Data;
 
 // Function WBP_EventEndInfo_Sub_Details_Legend.WBP_EventEndInfo_Sub_Details_Legend_C.Set Legend Grade
 // 0x0001 (0x0001 - 0x0000)
@@ -315,9 +215,7 @@ struct WBP_EventEndInfo_Sub_Details_Legend_C_Set_Legend_Grade final
 public:
 	ELegendCompeRateGrade                         Grade;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_EventEndInfo_Sub_Details_Legend_C_Set_Legend_Grade) == 0x000001, "Wrong alignment on WBP_EventEndInfo_Sub_Details_Legend_C_Set_Legend_Grade");
-static_assert(sizeof(WBP_EventEndInfo_Sub_Details_Legend_C_Set_Legend_Grade) == 0x000001, "Wrong size on WBP_EventEndInfo_Sub_Details_Legend_C_Set_Legend_Grade");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_Set_Legend_Grade, Grade) == 0x000000, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_Set_Legend_Grade::Grade' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_EventEndInfo_Sub_Details_Legend_C_Set_Legend_Grade;
 
 // Function WBP_EventEndInfo_Sub_Details_Legend.WBP_EventEndInfo_Sub_Details_Legend_C.SetLegendCompeId
 // 0x0004 (0x0004 - 0x0000)
@@ -326,9 +224,7 @@ struct WBP_EventEndInfo_Sub_Details_Legend_C_SetLegendCompeId final
 public:
 	int32                                         LegendCompeId_0;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_EventEndInfo_Sub_Details_Legend_C_SetLegendCompeId) == 0x000004, "Wrong alignment on WBP_EventEndInfo_Sub_Details_Legend_C_SetLegendCompeId");
-static_assert(sizeof(WBP_EventEndInfo_Sub_Details_Legend_C_SetLegendCompeId) == 0x000004, "Wrong size on WBP_EventEndInfo_Sub_Details_Legend_C_SetLegendCompeId");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_SetLegendCompeId, LegendCompeId_0) == 0x000000, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_SetLegendCompeId::LegendCompeId_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_EventEndInfo_Sub_Details_Legend_C_SetLegendCompeId;
 
 // Function WBP_EventEndInfo_Sub_Details_Legend.WBP_EventEndInfo_Sub_Details_Legend_C.SetPointDisplay
 // 0x0004 (0x0004 - 0x0000)
@@ -337,9 +233,7 @@ struct WBP_EventEndInfo_Sub_Details_Legend_C_SetPointDisplay final
 public:
 	int32                                         PlayerPoint;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_EventEndInfo_Sub_Details_Legend_C_SetPointDisplay) == 0x000004, "Wrong alignment on WBP_EventEndInfo_Sub_Details_Legend_C_SetPointDisplay");
-static_assert(sizeof(WBP_EventEndInfo_Sub_Details_Legend_C_SetPointDisplay) == 0x000004, "Wrong size on WBP_EventEndInfo_Sub_Details_Legend_C_SetPointDisplay");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_SetPointDisplay, PlayerPoint) == 0x000000, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_SetPointDisplay::PlayerPoint' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_EventEndInfo_Sub_Details_Legend_C_SetPointDisplay;
 
 // Function WBP_EventEndInfo_Sub_Details_Legend.WBP_EventEndInfo_Sub_Details_Legend_C.SetPointNumber
 // 0x0018 (0x0018 - 0x0000)
@@ -353,13 +247,7 @@ public:
 	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_EventEndInfo_Sub_Details_Legend_C_SetPointNumber) == 0x000008, "Wrong alignment on WBP_EventEndInfo_Sub_Details_Legend_C_SetPointNumber");
-static_assert(sizeof(WBP_EventEndInfo_Sub_Details_Legend_C_SetPointNumber) == 0x000018, "Wrong size on WBP_EventEndInfo_Sub_Details_Legend_C_SetPointNumber");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_SetPointNumber, Point) == 0x000000, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_SetPointNumber::Point' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_SetPointNumber, CallFunc_SoundPlay_ReturnValue) == 0x000004, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_SetPointNumber::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_SetPointNumber, CallFunc_IsGradeChanged_Changed) == 0x000008, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_SetPointNumber::CallFunc_IsGradeChanged_Changed' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_SetPointNumber, CallFunc_IsGradeChanged_CurrentGrade) == 0x000009, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_SetPointNumber::CallFunc_IsGradeChanged_CurrentGrade' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_SetPointNumber, CallFunc_PlayAnimation_ReturnValue) == 0x000010, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_SetPointNumber::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_EventEndInfo_Sub_Details_Legend_C_SetPointNumber;
 
 // Function WBP_EventEndInfo_Sub_Details_Legend.WBP_EventEndInfo_Sub_Details_Legend_C.SetRankingDisplay
 // 0x0004 (0x0004 - 0x0000)
@@ -368,9 +256,7 @@ struct WBP_EventEndInfo_Sub_Details_Legend_C_SetRankingDisplay final
 public:
 	int32                                         Ranking;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_EventEndInfo_Sub_Details_Legend_C_SetRankingDisplay) == 0x000004, "Wrong alignment on WBP_EventEndInfo_Sub_Details_Legend_C_SetRankingDisplay");
-static_assert(sizeof(WBP_EventEndInfo_Sub_Details_Legend_C_SetRankingDisplay) == 0x000004, "Wrong size on WBP_EventEndInfo_Sub_Details_Legend_C_SetRankingDisplay");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_SetRankingDisplay, Ranking) == 0x000000, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_SetRankingDisplay::Ranking' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_EventEndInfo_Sub_Details_Legend_C_SetRankingDisplay;
 
 // Function WBP_EventEndInfo_Sub_Details_Legend.WBP_EventEndInfo_Sub_Details_Legend_C.SetTextureBG
 // 0x0008 (0x0008 - 0x0000)
@@ -379,9 +265,7 @@ struct WBP_EventEndInfo_Sub_Details_Legend_C_SetTextureBG final
 public:
 	class UTexture2D*                             Texture;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_EventEndInfo_Sub_Details_Legend_C_SetTextureBG) == 0x000008, "Wrong alignment on WBP_EventEndInfo_Sub_Details_Legend_C_SetTextureBG");
-static_assert(sizeof(WBP_EventEndInfo_Sub_Details_Legend_C_SetTextureBG) == 0x000008, "Wrong size on WBP_EventEndInfo_Sub_Details_Legend_C_SetTextureBG");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_SetTextureBG, Texture) == 0x000000, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_SetTextureBG::Texture' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_EventEndInfo_Sub_Details_Legend_C_SetTextureBG;
 
 // Function WBP_EventEndInfo_Sub_Details_Legend.WBP_EventEndInfo_Sub_Details_Legend_C.StartPointDisplay
 // 0x0004 (0x0004 - 0x0000)
@@ -390,9 +274,7 @@ struct WBP_EventEndInfo_Sub_Details_Legend_C_StartPointDisplay final
 public:
 	int32                                         Point;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_EventEndInfo_Sub_Details_Legend_C_StartPointDisplay) == 0x000004, "Wrong alignment on WBP_EventEndInfo_Sub_Details_Legend_C_StartPointDisplay");
-static_assert(sizeof(WBP_EventEndInfo_Sub_Details_Legend_C_StartPointDisplay) == 0x000004, "Wrong size on WBP_EventEndInfo_Sub_Details_Legend_C_StartPointDisplay");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_StartPointDisplay, Point) == 0x000000, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_StartPointDisplay::Point' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_EventEndInfo_Sub_Details_Legend_C_StartPointDisplay;
 
 // Function WBP_EventEndInfo_Sub_Details_Legend.WBP_EventEndInfo_Sub_Details_Legend_C.StartRankingDisplay
 // 0x0004 (0x0004 - 0x0000)
@@ -401,9 +283,7 @@ struct WBP_EventEndInfo_Sub_Details_Legend_C_StartRankingDisplay final
 public:
 	int32                                         Ranking;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_EventEndInfo_Sub_Details_Legend_C_StartRankingDisplay) == 0x000004, "Wrong alignment on WBP_EventEndInfo_Sub_Details_Legend_C_StartRankingDisplay");
-static_assert(sizeof(WBP_EventEndInfo_Sub_Details_Legend_C_StartRankingDisplay) == 0x000004, "Wrong size on WBP_EventEndInfo_Sub_Details_Legend_C_StartRankingDisplay");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_StartRankingDisplay, Ranking) == 0x000000, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_StartRankingDisplay::Ranking' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_EventEndInfo_Sub_Details_Legend_C_StartRankingDisplay;
 
 // Function WBP_EventEndInfo_Sub_Details_Legend.WBP_EventEndInfo_Sub_Details_Legend_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -413,10 +293,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_EventEndInfo_Sub_Details_Legend_C_Tick) == 0x000004, "Wrong alignment on WBP_EventEndInfo_Sub_Details_Legend_C_Tick");
-static_assert(sizeof(WBP_EventEndInfo_Sub_Details_Legend_C_Tick) == 0x00003C, "Wrong size on WBP_EventEndInfo_Sub_Details_Legend_C_Tick");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_Tick, MyGeometry) == 0x000000, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_Tick, InDeltaTime) == 0x000038, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_EventEndInfo_Sub_Details_Legend_C_Tick;
 
 // Function WBP_EventEndInfo_Sub_Details_Legend.WBP_EventEndInfo_Sub_Details_Legend_C.CalcCurrentDirectionProgressStep
 // 0x0058 (0x0058 - 0x0000)
@@ -436,20 +313,7 @@ public:
 	int64                                         CallFunc_Divide_Int64Int64_ReturnValue;            // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Conv_Int64ToInt_ReturnValue;              // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_EventEndInfo_Sub_Details_Legend_C_CalcCurrentDirectionProgressStep) == 0x000008, "Wrong alignment on WBP_EventEndInfo_Sub_Details_Legend_C_CalcCurrentDirectionProgressStep");
-static_assert(sizeof(WBP_EventEndInfo_Sub_Details_Legend_C_CalcCurrentDirectionProgressStep) == 0x000058, "Wrong size on WBP_EventEndInfo_Sub_Details_Legend_C_CalcCurrentDirectionProgressStep");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalcCurrentDirectionProgressStep, CurrentTimeSec) == 0x000000, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalcCurrentDirectionProgressStep::CurrentTimeSec' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalcCurrentDirectionProgressStep, EndTimeSec) == 0x000008, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalcCurrentDirectionProgressStep::EndTimeSec' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalcCurrentDirectionProgressStep, DirectionStepNum) == 0x000010, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalcCurrentDirectionProgressStep::DirectionStepNum' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalcCurrentDirectionProgressStep, CurrentStep) == 0x000014, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalcCurrentDirectionProgressStep::CurrentStep' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalcCurrentDirectionProgressStep, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000018, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalcCurrentDirectionProgressStep::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalcCurrentDirectionProgressStep, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000020, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalcCurrentDirectionProgressStep::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalcCurrentDirectionProgressStep, CallFunc_FTrunc64_ReturnValue) == 0x000028, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalcCurrentDirectionProgressStep::CallFunc_FTrunc64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalcCurrentDirectionProgressStep, CallFunc_SafeDivide_ReturnValue) == 0x000030, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalcCurrentDirectionProgressStep::CallFunc_SafeDivide_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalcCurrentDirectionProgressStep, CallFunc_Multiply_DoubleDouble_ReturnValue_1) == 0x000038, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalcCurrentDirectionProgressStep::CallFunc_Multiply_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalcCurrentDirectionProgressStep, CallFunc_FTrunc64_ReturnValue_1) == 0x000040, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalcCurrentDirectionProgressStep::CallFunc_FTrunc64_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalcCurrentDirectionProgressStep, CallFunc_Divide_Int64Int64_ReturnValue) == 0x000048, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalcCurrentDirectionProgressStep::CallFunc_Divide_Int64Int64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_CalcCurrentDirectionProgressStep, CallFunc_Conv_Int64ToInt_ReturnValue) == 0x000050, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_CalcCurrentDirectionProgressStep::CallFunc_Conv_Int64ToInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_EventEndInfo_Sub_Details_Legend_C_CalcCurrentDirectionProgressStep;
 
 // Function WBP_EventEndInfo_Sub_Details_Legend.WBP_EventEndInfo_Sub_Details_Legend_C.IsGradeChanged
 // 0x0020 (0x0020 - 0x0000)
@@ -466,16 +330,7 @@ public:
 	ELegendCompeRateGrade                         CallFunc_GetLegendCompeGradeById_ReturnValue_1;    // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_EventEndInfo_Sub_Details_Legend_C_IsGradeChanged) == 0x000008, "Wrong alignment on WBP_EventEndInfo_Sub_Details_Legend_C_IsGradeChanged");
-static_assert(sizeof(WBP_EventEndInfo_Sub_Details_Legend_C_IsGradeChanged) == 0x000020, "Wrong size on WBP_EventEndInfo_Sub_Details_Legend_C_IsGradeChanged");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_IsGradeChanged, CurrentRate) == 0x000000, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_IsGradeChanged::CurrentRate' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_IsGradeChanged, PrevRate) == 0x000004, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_IsGradeChanged::PrevRate' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_IsGradeChanged, Changed) == 0x000008, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_IsGradeChanged::Changed' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_IsGradeChanged, CurrentGrade) == 0x000009, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_IsGradeChanged::CurrentGrade' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_IsGradeChanged, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000010, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_IsGradeChanged::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_IsGradeChanged, CallFunc_GetLegendCompeGradeById_ReturnValue) == 0x000018, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_IsGradeChanged::CallFunc_GetLegendCompeGradeById_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_IsGradeChanged, CallFunc_GetLegendCompeGradeById_ReturnValue_1) == 0x000019, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_IsGradeChanged::CallFunc_GetLegendCompeGradeById_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Details_Legend_C_IsGradeChanged, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x00001A, "Member 'WBP_EventEndInfo_Sub_Details_Legend_C_IsGradeChanged::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_EventEndInfo_Sub_Details_Legend_C_IsGradeChanged;
 
 }
 

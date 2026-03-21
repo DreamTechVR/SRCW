@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK
@@ -92,38 +92,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Friend_NumberInput_Window_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Friend_NumberInput_Window_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Friend_NumberInput_Window_C")
 	}
 	static class UWBP_Friend_NumberInput_Window_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Friend_NumberInput_Window_C>();
 	}
 };
-static_assert(alignof(UWBP_Friend_NumberInput_Window_C) == 0x000008, "Wrong alignment on UWBP_Friend_NumberInput_Window_C");
-static_assert(sizeof(UWBP_Friend_NumberInput_Window_C) == 0x0004D8, "Wrong size on UWBP_Friend_NumberInput_Window_C");
-static_assert(offsetof(UWBP_Friend_NumberInput_Window_C, UberGraphFrame) == 0x000418, "Member 'UWBP_Friend_NumberInput_Window_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_NumberInput_Window_C, Popup_Out) == 0x000420, "Member 'UWBP_Friend_NumberInput_Window_C::Popup_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_NumberInput_Window_C, Popup_Loop) == 0x000428, "Member 'UWBP_Friend_NumberInput_Window_C::Popup_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_NumberInput_Window_C, Popup_In) == 0x000430, "Member 'UWBP_Friend_NumberInput_Window_C::Popup_In' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_NumberInput_Window_C, CanvasPanel_0) == 0x000438, "Member 'UWBP_Friend_NumberInput_Window_C::CanvasPanel_0' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_NumberInput_Window_C, DSP_Cursor_Texture) == 0x000440, "Member 'UWBP_Friend_NumberInput_Window_C::DSP_Cursor_Texture' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_NumberInput_Window_C, DSP_TXT_Info_01) == 0x000448, "Member 'UWBP_Friend_NumberInput_Window_C::DSP_TXT_Info_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_NumberInput_Window_C, DSP_TXT_Info_02) == 0x000450, "Member 'UWBP_Friend_NumberInput_Window_C::DSP_TXT_Info_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_NumberInput_Window_C, DSP_WBP_Popup_Sub_Btn_Standard_01) == 0x000458, "Member 'UWBP_Friend_NumberInput_Window_C::DSP_WBP_Popup_Sub_Btn_Standard_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_NumberInput_Window_C, DSP_WBP_Popup_Sub_Btn_Standard_02) == 0x000460, "Member 'UWBP_Friend_NumberInput_Window_C::DSP_WBP_Popup_Sub_Btn_Standard_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_NumberInput_Window_C, EditableTextBox) == 0x000468, "Member 'UWBP_Friend_NumberInput_Window_C::EditableTextBox' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_NumberInput_Window_C, MouseInteraction) == 0x000470, "Member 'UWBP_Friend_NumberInput_Window_C::MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_NumberInput_Window_C, OutOfContentButton) == 0x000478, "Member 'UWBP_Friend_NumberInput_Window_C::OutOfContentButton' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_NumberInput_Window_C, Overlay_PlayerPlate) == 0x000480, "Member 'UWBP_Friend_NumberInput_Window_C::Overlay_PlayerPlate' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_NumberInput_Window_C, Plate_Base) == 0x000488, "Member 'UWBP_Friend_NumberInput_Window_C::Plate_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_NumberInput_Window_C, SafeZone_0) == 0x000490, "Member 'UWBP_Friend_NumberInput_Window_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_NumberInput_Window_C, WindowBase) == 0x000498, "Member 'UWBP_Friend_NumberInput_Window_C::WindowBase' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_NumberInput_Window_C, bTextBoxFocus) == 0x0004A0, "Member 'UWBP_Friend_NumberInput_Window_C::bTextBoxFocus' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_NumberInput_Window_C, DiffText) == 0x0004A8, "Member 'UWBP_Friend_NumberInput_Window_C::DiffText' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_NumberInput_Window_C, bPressedTextBox) == 0x0004B8, "Member 'UWBP_Friend_NumberInput_Window_C::bPressedTextBox' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_NumberInput_Window_C, InputNumber) == 0x0004C0, "Member 'UWBP_Friend_NumberInput_Window_C::InputNumber' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_NumberInput_Window_C, bOpenSoftwareKeyboard) == 0x0004D0, "Member 'UWBP_Friend_NumberInput_Window_C::bOpenSoftwareKeyboard' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_NumberInput_Window_C, LastFocusedButtonIndex) == 0x0004D4, "Member 'UWBP_Friend_NumberInput_Window_C::LastFocusedButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Friend_NumberInput_Window_C;
 
 }
 

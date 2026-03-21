@@ -23,15 +23,18 @@ class ABP_ItemOmochaoDroppedRing_C final : public AItemOmochaoDroppedRing
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ItemOmochaoDroppedRing_C">();
+		BP_STATIC_CLASS_IMPL("BP_ItemOmochaoDroppedRing_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ItemOmochaoDroppedRing_C")
 	}
 	static class ABP_ItemOmochaoDroppedRing_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ItemOmochaoDroppedRing_C>();
 	}
 };
-static_assert(alignof(ABP_ItemOmochaoDroppedRing_C) == 0x000010, "Wrong alignment on ABP_ItemOmochaoDroppedRing_C");
-static_assert(sizeof(ABP_ItemOmochaoDroppedRing_C) == 0x000480, "Wrong size on ABP_ItemOmochaoDroppedRing_C");
+DUMPER7_ASSERTS_ABP_ItemOmochaoDroppedRing_C;
 
 }
 

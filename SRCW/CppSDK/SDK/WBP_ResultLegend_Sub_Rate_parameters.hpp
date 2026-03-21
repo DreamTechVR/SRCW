@@ -39,20 +39,7 @@ public:
 	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ResultLegend_Sub_Rate_C_AddTextImageToTextArray) == 0x000008, "Wrong alignment on WBP_ResultLegend_Sub_Rate_C_AddTextImageToTextArray");
-static_assert(sizeof(WBP_ResultLegend_Sub_Rate_C_AddTextImageToTextArray) == 0x000060, "Wrong size on WBP_ResultLegend_Sub_Rate_C_AddTextImageToTextArray");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_AddTextImageToTextArray, TargetArray) == 0x000000, "Member 'WBP_ResultLegend_Sub_Rate_C_AddTextImageToTextArray::TargetArray' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_AddTextImageToTextArray, TextParent) == 0x000010, "Member 'WBP_ResultLegend_Sub_Rate_C_AddTextImageToTextArray::TextParent' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_AddTextImageToTextArray, Temp_int_Array_Index_Variable) == 0x000018, "Member 'WBP_ResultLegend_Sub_Rate_C_AddTextImageToTextArray::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_AddTextImageToTextArray, CallFunc_GetAllChildren_ReturnValue) == 0x000020, "Member 'WBP_ResultLegend_Sub_Rate_C_AddTextImageToTextArray::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_AddTextImageToTextArray, CallFunc_Array_Get_Item) == 0x000030, "Member 'WBP_ResultLegend_Sub_Rate_C_AddTextImageToTextArray::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_AddTextImageToTextArray, CallFunc_Array_Length_ReturnValue) == 0x000038, "Member 'WBP_ResultLegend_Sub_Rate_C_AddTextImageToTextArray::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_AddTextImageToTextArray, K2Node_DynamicCast_As__) == 0x000040, "Member 'WBP_ResultLegend_Sub_Rate_C_AddTextImageToTextArray::K2Node_DynamicCast_As__' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_AddTextImageToTextArray, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'WBP_ResultLegend_Sub_Rate_C_AddTextImageToTextArray::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_AddTextImageToTextArray, CallFunc_Array_Add_ReturnValue) == 0x00004C, "Member 'WBP_ResultLegend_Sub_Rate_C_AddTextImageToTextArray::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_AddTextImageToTextArray, Temp_int_Loop_Counter_Variable) == 0x000050, "Member 'WBP_ResultLegend_Sub_Rate_C_AddTextImageToTextArray::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_AddTextImageToTextArray, CallFunc_Less_IntInt_ReturnValue) == 0x000054, "Member 'WBP_ResultLegend_Sub_Rate_C_AddTextImageToTextArray::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_AddTextImageToTextArray, CallFunc_Add_IntInt_ReturnValue) == 0x000058, "Member 'WBP_ResultLegend_Sub_Rate_C_AddTextImageToTextArray::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ResultLegend_Sub_Rate_C_AddTextImageToTextArray;
 
 // Function WBP_ResultLegend_Sub_Rate.WBP_ResultLegend_Sub_Rate_C.ExecuteUbergraph_WBP_ResultLegend_Sub_Rate
 // 0x0170 (0x0170 - 0x0000)
@@ -113,48 +100,7 @@ public:
 	uint8                                         Pad_161[0x7];                                      // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0168(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate) == 0x000008, "Wrong alignment on WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate");
-static_assert(sizeof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate) == 0x000170, "Wrong size on WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, EntryPoint) == 0x000000, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, CallFunc_IsValid_ReturnValue_1) == 0x000018, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, K2Node_CreateDelegate_OutputDelegate_1) == 0x00001C, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, K2Node_Event_PrevGradeIcon) == 0x00002C, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::K2Node_Event_PrevGradeIcon' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, K2Node_Event_CurrentGradeIcon) == 0x00002D, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::K2Node_Event_CurrentGradeIcon' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, K2Node_Event_NextGradeIcon) == 0x00002E, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::K2Node_Event_NextGradeIcon' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, K2Node_Event_LowestLimitGrade) == 0x00002F, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::K2Node_Event_LowestLimitGrade' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, CallFunc_Not_PreBool_ReturnValue) == 0x000030, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000031, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, CallFunc_NotEqual_ByteByte_ReturnValue_1) == 0x000032, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::CallFunc_NotEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, CallFunc_Map_Find_Value) == 0x000038, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, CallFunc_Map_Find_ReturnValue) == 0x000060, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, CallFunc_Map_Find_Value_1) == 0x000068, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::CallFunc_Map_Find_Value_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, CallFunc_Map_Find_ReturnValue_1) == 0x000090, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::CallFunc_Map_Find_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, K2Node_CreateDelegate_OutputDelegate_2) == 0x000094, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, Temp_object_Variable) == 0x0000A8, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, K2Node_DynamicCast_As_____2D) == 0x0000B0, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, K2Node_DynamicCast_bSuccess) == 0x0000B8, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, Temp_object_Variable_1) == 0x0000C0, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, K2Node_CustomEvent_Loaded) == 0x0000C8, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::K2Node_CustomEvent_Loaded' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, K2Node_DynamicCast_As_____2D_1) == 0x0000D0, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::K2Node_DynamicCast_As_____2D_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, K2Node_DynamicCast_bSuccess_1) == 0x0000D8, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, K2Node_CustomEvent_Loaded_1) == 0x0000E0, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::K2Node_CustomEvent_Loaded_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, CallFunc_CreatePlayAnimationProxyObject_Result) == 0x0000E8, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::CallFunc_CreatePlayAnimationProxyObject_Result' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, CallFunc_CreatePlayAnimationProxyObject_ReturnValue) == 0x0000F0, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::CallFunc_CreatePlayAnimationProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, CallFunc_IsValid_ReturnValue_2) == 0x0000F8, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, K2Node_CreateDelegate_OutputDelegate_3) == 0x0000FC, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, CallFunc_CreatePlayAnimationProxyObject_Result_1) == 0x000110, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::CallFunc_CreatePlayAnimationProxyObject_Result_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, CallFunc_CreatePlayAnimationProxyObject_ReturnValue_1) == 0x000118, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::CallFunc_CreatePlayAnimationProxyObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, K2Node_CreateDelegate_OutputDelegate_4) == 0x000120, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, CallFunc_IsValid_ReturnValue_3) == 0x000130, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, CallFunc_PlayAnimation_ReturnValue) == 0x000138, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, K2Node_Event_IsDesignTime) == 0x000140, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, CallFunc_PlayAnimation_ReturnValue_1) == 0x000148, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, CallFunc_CreatePlayAnimationProxyObject_Result_2) == 0x000150, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::CallFunc_CreatePlayAnimationProxyObject_Result_2' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, CallFunc_CreatePlayAnimationProxyObject_ReturnValue_2) == 0x000158, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::CallFunc_CreatePlayAnimationProxyObject_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, CallFunc_IsValid_ReturnValue_4) == 0x000160, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate, CallFunc_PlayAnimation_ReturnValue_2) == 0x000168, "Member 'WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ResultLegend_Sub_Rate_C_ExecuteUbergraph_WBP_ResultLegend_Sub_Rate;
 
 // Function WBP_ResultLegend_Sub_Rate.WBP_ResultLegend_Sub_Rate_C.OnLoaded_614E58FB488C4503F994FF8A54908BA9
 // 0x0008 (0x0008 - 0x0000)
@@ -163,9 +109,7 @@ struct WBP_ResultLegend_Sub_Rate_C_OnLoaded_614E58FB488C4503F994FF8A54908BA9 fin
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ResultLegend_Sub_Rate_C_OnLoaded_614E58FB488C4503F994FF8A54908BA9) == 0x000008, "Wrong alignment on WBP_ResultLegend_Sub_Rate_C_OnLoaded_614E58FB488C4503F994FF8A54908BA9");
-static_assert(sizeof(WBP_ResultLegend_Sub_Rate_C_OnLoaded_614E58FB488C4503F994FF8A54908BA9) == 0x000008, "Wrong size on WBP_ResultLegend_Sub_Rate_C_OnLoaded_614E58FB488C4503F994FF8A54908BA9");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_OnLoaded_614E58FB488C4503F994FF8A54908BA9, Loaded) == 0x000000, "Member 'WBP_ResultLegend_Sub_Rate_C_OnLoaded_614E58FB488C4503F994FF8A54908BA9::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ResultLegend_Sub_Rate_C_OnLoaded_614E58FB488C4503F994FF8A54908BA9;
 
 // Function WBP_ResultLegend_Sub_Rate.WBP_ResultLegend_Sub_Rate_C.OnLoaded_FF8DD9F649CD1B5C771F029C3341E817
 // 0x0008 (0x0008 - 0x0000)
@@ -174,9 +118,7 @@ struct WBP_ResultLegend_Sub_Rate_C_OnLoaded_FF8DD9F649CD1B5C771F029C3341E817 fin
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ResultLegend_Sub_Rate_C_OnLoaded_FF8DD9F649CD1B5C771F029C3341E817) == 0x000008, "Wrong alignment on WBP_ResultLegend_Sub_Rate_C_OnLoaded_FF8DD9F649CD1B5C771F029C3341E817");
-static_assert(sizeof(WBP_ResultLegend_Sub_Rate_C_OnLoaded_FF8DD9F649CD1B5C771F029C3341E817) == 0x000008, "Wrong size on WBP_ResultLegend_Sub_Rate_C_OnLoaded_FF8DD9F649CD1B5C771F029C3341E817");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_OnLoaded_FF8DD9F649CD1B5C771F029C3341E817, Loaded) == 0x000000, "Member 'WBP_ResultLegend_Sub_Rate_C_OnLoaded_FF8DD9F649CD1B5C771F029C3341E817::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ResultLegend_Sub_Rate_C_OnLoaded_FF8DD9F649CD1B5C771F029C3341E817;
 
 // Function WBP_ResultLegend_Sub_Rate.WBP_ResultLegend_Sub_Rate_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -185,9 +127,7 @@ struct WBP_ResultLegend_Sub_Rate_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ResultLegend_Sub_Rate_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_ResultLegend_Sub_Rate_C_PreConstruct");
-static_assert(sizeof(WBP_ResultLegend_Sub_Rate_C_PreConstruct) == 0x000001, "Wrong size on WBP_ResultLegend_Sub_Rate_C_PreConstruct");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_ResultLegend_Sub_Rate_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ResultLegend_Sub_Rate_C_PreConstruct;
 
 // Function WBP_ResultLegend_Sub_Rate.WBP_ResultLegend_Sub_Rate_C.SetGaugeCurrentAndNextGradeIcon
 // 0x0004 (0x0004 - 0x0000)
@@ -199,12 +139,7 @@ public:
 	ELegendCompeRateGrade                         NextGradeIcon;                                     // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          LowestLimitGrade;                                  // 0x0003(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ResultLegend_Sub_Rate_C_SetGaugeCurrentAndNextGradeIcon) == 0x000001, "Wrong alignment on WBP_ResultLegend_Sub_Rate_C_SetGaugeCurrentAndNextGradeIcon");
-static_assert(sizeof(WBP_ResultLegend_Sub_Rate_C_SetGaugeCurrentAndNextGradeIcon) == 0x000004, "Wrong size on WBP_ResultLegend_Sub_Rate_C_SetGaugeCurrentAndNextGradeIcon");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_SetGaugeCurrentAndNextGradeIcon, PrevGradeIcon) == 0x000000, "Member 'WBP_ResultLegend_Sub_Rate_C_SetGaugeCurrentAndNextGradeIcon::PrevGradeIcon' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_SetGaugeCurrentAndNextGradeIcon, CurrentGradeIcon) == 0x000001, "Member 'WBP_ResultLegend_Sub_Rate_C_SetGaugeCurrentAndNextGradeIcon::CurrentGradeIcon' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_SetGaugeCurrentAndNextGradeIcon, NextGradeIcon) == 0x000002, "Member 'WBP_ResultLegend_Sub_Rate_C_SetGaugeCurrentAndNextGradeIcon::NextGradeIcon' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_SetGaugeCurrentAndNextGradeIcon, LowestLimitGrade) == 0x000003, "Member 'WBP_ResultLegend_Sub_Rate_C_SetGaugeCurrentAndNextGradeIcon::LowestLimitGrade' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ResultLegend_Sub_Rate_C_SetGaugeCurrentAndNextGradeIcon;
 
 // Function WBP_ResultLegend_Sub_Rate.WBP_ResultLegend_Sub_Rate_C.UpdateCurrentVisibilityByGrade
 // 0x0018 (0x0018 - 0x0000)
@@ -223,18 +158,7 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                K2Node_Select_Default_1;                           // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ResultLegend_Sub_Rate_C_UpdateCurrentVisibilityByGrade) == 0x000008, "Wrong alignment on WBP_ResultLegend_Sub_Rate_C_UpdateCurrentVisibilityByGrade");
-static_assert(sizeof(WBP_ResultLegend_Sub_Rate_C_UpdateCurrentVisibilityByGrade) == 0x000018, "Wrong size on WBP_ResultLegend_Sub_Rate_C_UpdateCurrentVisibilityByGrade");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_UpdateCurrentVisibilityByGrade, CurrentGrade) == 0x000000, "Member 'WBP_ResultLegend_Sub_Rate_C_UpdateCurrentVisibilityByGrade::CurrentGrade' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_UpdateCurrentVisibilityByGrade, IsLowestLimit) == 0x000001, "Member 'WBP_ResultLegend_Sub_Rate_C_UpdateCurrentVisibilityByGrade::IsLowestLimit' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_UpdateCurrentVisibilityByGrade, Temp_byte_Variable) == 0x000002, "Member 'WBP_ResultLegend_Sub_Rate_C_UpdateCurrentVisibilityByGrade::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_UpdateCurrentVisibilityByGrade, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000003, "Member 'WBP_ResultLegend_Sub_Rate_C_UpdateCurrentVisibilityByGrade::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_UpdateCurrentVisibilityByGrade, K2Node_SwitchEnum_CmpSuccess) == 0x000004, "Member 'WBP_ResultLegend_Sub_Rate_C_UpdateCurrentVisibilityByGrade::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_UpdateCurrentVisibilityByGrade, Temp_byte_Variable_1) == 0x000005, "Member 'WBP_ResultLegend_Sub_Rate_C_UpdateCurrentVisibilityByGrade::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_UpdateCurrentVisibilityByGrade, Temp_bool_Variable) == 0x000006, "Member 'WBP_ResultLegend_Sub_Rate_C_UpdateCurrentVisibilityByGrade::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_UpdateCurrentVisibilityByGrade, Temp_bool_Variable_1) == 0x000007, "Member 'WBP_ResultLegend_Sub_Rate_C_UpdateCurrentVisibilityByGrade::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_UpdateCurrentVisibilityByGrade, K2Node_Select_Default) == 0x000008, "Member 'WBP_ResultLegend_Sub_Rate_C_UpdateCurrentVisibilityByGrade::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_Rate_C_UpdateCurrentVisibilityByGrade, K2Node_Select_Default_1) == 0x000010, "Member 'WBP_ResultLegend_Sub_Rate_C_UpdateCurrentVisibilityByGrade::K2Node_Select_Default_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ResultLegend_Sub_Rate_C_UpdateCurrentVisibilityByGrade;
 
 }
 

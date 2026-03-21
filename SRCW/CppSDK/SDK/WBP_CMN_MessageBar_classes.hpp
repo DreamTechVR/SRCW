@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -55,30 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_MessageBar_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_MessageBar_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_MessageBar_C")
 	}
 	static class UWBP_CMN_MessageBar_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_MessageBar_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_MessageBar_C) == 0x000008, "Wrong alignment on UWBP_CMN_MessageBar_C");
-static_assert(sizeof(UWBP_CMN_MessageBar_C) == 0x000368, "Wrong size on UWBP_CMN_MessageBar_C");
-static_assert(offsetof(UWBP_CMN_MessageBar_C, UberGraphFrame) == 0x000300, "Member 'UWBP_CMN_MessageBar_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_MessageBar_C, Messege_Out) == 0x000308, "Member 'UWBP_CMN_MessageBar_C::Messege_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_MessageBar_C, Messege_Loop) == 0x000310, "Member 'UWBP_CMN_MessageBar_C::Messege_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_MessageBar_C, Messege_In) == 0x000318, "Member 'UWBP_CMN_MessageBar_C::Messege_In' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_MessageBar_C, BarBase) == 0x000320, "Member 'UWBP_CMN_MessageBar_C::BarBase' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_MessageBar_C, DSP_AlertPict) == 0x000328, "Member 'UWBP_CMN_MessageBar_C::DSP_AlertPict' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_MessageBar_C, DSP_NGPict) == 0x000330, "Member 'UWBP_CMN_MessageBar_C::DSP_NGPict' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_MessageBar_C, RaceCheck) == 0x000338, "Member 'UWBP_CMN_MessageBar_C::RaceCheck' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_MessageBar_C, TXT_Massage) == 0x000340, "Member 'UWBP_CMN_MessageBar_C::TXT_Massage' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_MessageBar_C, TXT_Waiting) == 0x000348, "Member 'UWBP_CMN_MessageBar_C::TXT_Waiting' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_MessageBar_C, TXT_Waiting_Before) == 0x000350, "Member 'UWBP_CMN_MessageBar_C::TXT_Waiting_Before' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_MessageBar_C, WidgetSwitcher_Pict) == 0x000358, "Member 'UWBP_CMN_MessageBar_C::WidgetSwitcher_Pict' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_MessageBar_C, Count) == 0x000360, "Member 'UWBP_CMN_MessageBar_C::Count' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_MessageBar_C, EnableBlinkLoopAnim) == 0x000364, "Member 'UWBP_CMN_MessageBar_C::EnableBlinkLoopAnim' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_MessageBar_C, bVisible) == 0x000365, "Member 'UWBP_CMN_MessageBar_C::bVisible' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_MessageBar_C;
 
 }
 

@@ -55,33 +55,7 @@ public:
 	uint8                                         Pad_D2[0x2];                                       // 0x00D2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x00D4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText) == 0x000008, "Wrong alignment on WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText");
-static_assert(sizeof(WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText) == 0x0000E8, "Wrong size on WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText");
-static_assert(offsetof(WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText, EntryPoint) == 0x000000, "Member 'WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText, Temp_int_Variable) == 0x000004, "Member 'WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText, K2Node_Event_IsDesignTime) == 0x000008, "Member 'WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText, CallFunc_Left_ReturnValue) == 0x000010, "Member 'WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText::CallFunc_Left_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText, CallFunc_Add_IntInt_ReturnValue) == 0x000020, "Member 'WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText, CallFunc_Conv_StringToText_ReturnValue) == 0x000028, "Member 'WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText, K2Node_Event_SuccessCount) == 0x000038, "Member 'WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText::K2Node_Event_SuccessCount' has a wrong offset!");
-static_assert(offsetof(WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText, K2Node_Event_SuccessBonusCount) == 0x00003C, "Member 'WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText::K2Node_Event_SuccessBonusCount' has a wrong offset!");
-static_assert(offsetof(WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText, K2Node_Event_IsGhostView) == 0x000040, "Member 'WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText::K2Node_Event_IsGhostView' has a wrong offset!");
-static_assert(offsetof(WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText, K2Node_CustomEvent_Point) == 0x000044, "Member 'WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText::K2Node_CustomEvent_Point' has a wrong offset!");
-static_assert(offsetof(WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText, K2Node_CustomEvent_Text) == 0x000048, "Member 'WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText::K2Node_CustomEvent_Text' has a wrong offset!");
-static_assert(offsetof(WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText, CallFunc_Conv_IntToString_ReturnValue) == 0x000050, "Member 'WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText, K2Node_SwitchInteger_CmpSuccess) == 0x000060, "Member 'WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText, CallFunc_Concat_StrStr_ReturnValue) == 0x000068, "Member 'WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText, CallFunc_Conv_StringToText_ReturnValue_1) == 0x000078, "Member 'WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText, CallFunc_Len_ReturnValue) == 0x000088, "Member 'WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText::CallFunc_Len_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText, CallFunc_Conv_TextToString_ReturnValue) == 0x000090, "Member 'WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0000A0, "Member 'WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText, K2Node_CreateDelegate_OutputDelegate) == 0x0000A4, "Member 'WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x0000B8, "Member 'WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText, CallFunc_CreatePlayAnimationProxyObject_Result) == 0x0000C0, "Member 'WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText::CallFunc_CreatePlayAnimationProxyObject_Result' has a wrong offset!");
-static_assert(offsetof(WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText, CallFunc_CreatePlayAnimationProxyObject_ReturnValue) == 0x0000C8, "Member 'WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText::CallFunc_CreatePlayAnimationProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText, CallFunc_IsValid_ReturnValue) == 0x0000D0, "Member 'WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText, CallFunc_IsValid_ReturnValue_1) == 0x0000D1, "Member 'WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText, K2Node_CreateDelegate_OutputDelegate_1) == 0x0000D4, "Member 'WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_AirTrickText_C_ExecuteUbergraph_WBP_Race_AirTrickText;
 
 // Function WBP_Race_AirTrickText.WBP_Race_AirTrickText_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -90,9 +64,7 @@ struct WBP_Race_AirTrickText_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_AirTrickText_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_Race_AirTrickText_C_PreConstruct");
-static_assert(sizeof(WBP_Race_AirTrickText_C_PreConstruct) == 0x000001, "Wrong size on WBP_Race_AirTrickText_C_PreConstruct");
-static_assert(offsetof(WBP_Race_AirTrickText_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_Race_AirTrickText_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_AirTrickText_C_PreConstruct;
 
 // Function WBP_Race_AirTrickText.WBP_Race_AirTrickText_C.SetAirTrickBonusInfo
 // 0x000C (0x000C - 0x0000)
@@ -103,11 +75,7 @@ public:
 	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetAirTrickBonusValue_ReturnValue;        // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_AirTrickText_C_SetAirTrickBonusInfo) == 0x000004, "Wrong alignment on WBP_Race_AirTrickText_C_SetAirTrickBonusInfo");
-static_assert(sizeof(WBP_Race_AirTrickText_C_SetAirTrickBonusInfo) == 0x00000C, "Wrong size on WBP_Race_AirTrickText_C_SetAirTrickBonusInfo");
-static_assert(offsetof(WBP_Race_AirTrickText_C_SetAirTrickBonusInfo, SuccessCount) == 0x000000, "Member 'WBP_Race_AirTrickText_C_SetAirTrickBonusInfo::SuccessCount' has a wrong offset!");
-static_assert(offsetof(WBP_Race_AirTrickText_C_SetAirTrickBonusInfo, ReturnValue) == 0x000004, "Member 'WBP_Race_AirTrickText_C_SetAirTrickBonusInfo::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_AirTrickText_C_SetAirTrickBonusInfo, CallFunc_GetAirTrickBonusValue_ReturnValue) == 0x000008, "Member 'WBP_Race_AirTrickText_C_SetAirTrickBonusInfo::CallFunc_GetAirTrickBonusValue_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_AirTrickText_C_SetAirTrickBonusInfo;
 
 // Function WBP_Race_AirTrickText.WBP_Race_AirTrickText_C.SetAirTrickInfo
 // 0x0004 (0x0004 - 0x0000)
@@ -116,9 +84,7 @@ struct WBP_Race_AirTrickText_C_SetAirTrickInfo final
 public:
 	int32                                         SuccessCount;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_AirTrickText_C_SetAirTrickInfo) == 0x000004, "Wrong alignment on WBP_Race_AirTrickText_C_SetAirTrickInfo");
-static_assert(sizeof(WBP_Race_AirTrickText_C_SetAirTrickInfo) == 0x000004, "Wrong size on WBP_Race_AirTrickText_C_SetAirTrickInfo");
-static_assert(offsetof(WBP_Race_AirTrickText_C_SetAirTrickInfo, SuccessCount) == 0x000000, "Member 'WBP_Race_AirTrickText_C_SetAirTrickInfo::SuccessCount' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_AirTrickText_C_SetAirTrickInfo;
 
 // Function WBP_Race_AirTrickText.WBP_Race_AirTrickText_C.SetAirTrickInfoAndFireAnimation
 // 0x000C (0x000C - 0x0000)
@@ -129,11 +95,7 @@ public:
 	int32                                         SuccessBonusCount;                                 // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsGhostView;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_AirTrickText_C_SetAirTrickInfoAndFireAnimation) == 0x000004, "Wrong alignment on WBP_Race_AirTrickText_C_SetAirTrickInfoAndFireAnimation");
-static_assert(sizeof(WBP_Race_AirTrickText_C_SetAirTrickInfoAndFireAnimation) == 0x00000C, "Wrong size on WBP_Race_AirTrickText_C_SetAirTrickInfoAndFireAnimation");
-static_assert(offsetof(WBP_Race_AirTrickText_C_SetAirTrickInfoAndFireAnimation, SuccessCount) == 0x000000, "Member 'WBP_Race_AirTrickText_C_SetAirTrickInfoAndFireAnimation::SuccessCount' has a wrong offset!");
-static_assert(offsetof(WBP_Race_AirTrickText_C_SetAirTrickInfoAndFireAnimation, SuccessBonusCount) == 0x000004, "Member 'WBP_Race_AirTrickText_C_SetAirTrickInfoAndFireAnimation::SuccessBonusCount' has a wrong offset!");
-static_assert(offsetof(WBP_Race_AirTrickText_C_SetAirTrickInfoAndFireAnimation, IsGhostView) == 0x000008, "Member 'WBP_Race_AirTrickText_C_SetAirTrickInfoAndFireAnimation::IsGhostView' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_AirTrickText_C_SetAirTrickInfoAndFireAnimation;
 
 // Function WBP_Race_AirTrickText.WBP_Race_AirTrickText_C.SetAirTrickText
 // 0x0010 (0x0010 - 0x0000)
@@ -144,10 +106,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class URichTextBlock*                         Text;                                              // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_AirTrickText_C_SetAirTrickText) == 0x000008, "Wrong alignment on WBP_Race_AirTrickText_C_SetAirTrickText");
-static_assert(sizeof(WBP_Race_AirTrickText_C_SetAirTrickText) == 0x000010, "Wrong size on WBP_Race_AirTrickText_C_SetAirTrickText");
-static_assert(offsetof(WBP_Race_AirTrickText_C_SetAirTrickText, Point) == 0x000000, "Member 'WBP_Race_AirTrickText_C_SetAirTrickText::Point' has a wrong offset!");
-static_assert(offsetof(WBP_Race_AirTrickText_C_SetAirTrickText, Text) == 0x000008, "Member 'WBP_Race_AirTrickText_C_SetAirTrickText::Text' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_AirTrickText_C_SetAirTrickText;
 
 }
 

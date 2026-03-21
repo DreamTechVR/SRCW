@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "UMG_structs.hpp"
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK
@@ -69,40 +69,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_RivalSelect_C">();
+		BP_STATIC_CLASS_IMPL("WBP_RivalSelect_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_RivalSelect_C")
 	}
 	static class UWBP_RivalSelect_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_RivalSelect_C>();
 	}
 };
-static_assert(alignof(UWBP_RivalSelect_C) == 0x000008, "Wrong alignment on UWBP_RivalSelect_C");
-static_assert(sizeof(UWBP_RivalSelect_C) == 0x000548, "Wrong size on UWBP_RivalSelect_C");
-static_assert(offsetof(UWBP_RivalSelect_C, UberGraphFrame) == 0x000478, "Member 'UWBP_RivalSelect_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_C, Base_AllWinInfo) == 0x000480, "Member 'UWBP_RivalSelect_C::Base_AllWinInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_C, Base_WinComplete) == 0x000488, "Member 'UWBP_RivalSelect_C::Base_WinComplete' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_C, CanvasPanel_Main) == 0x000490, "Member 'UWBP_RivalSelect_C::CanvasPanel_Main' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_C, CharaIcon) == 0x000498, "Member 'UWBP_RivalSelect_C::CharaIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_C, DSP_AllWinInfo) == 0x0004A0, "Member 'UWBP_RivalSelect_C::DSP_AllWinInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_C, FooterBtnCover) == 0x0004A8, "Member 'UWBP_RivalSelect_C::FooterBtnCover' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_C, Grow_01) == 0x0004B0, "Member 'UWBP_RivalSelect_C::Grow_01' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_C, Grow_02) == 0x0004B8, "Member 'UWBP_RivalSelect_C::Grow_02' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_C, Icon_Complete) == 0x0004C0, "Member 'UWBP_RivalSelect_C::Icon_Complete' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_C, Plate_RivalLevel) == 0x0004C8, "Member 'UWBP_RivalSelect_C::Plate_RivalLevel' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_C, TXT_AllWinInfo) == 0x0004D0, "Member 'UWBP_RivalSelect_C::TXT_AllWinInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_C, WBP_CharaSelect_Sub_Window) == 0x0004D8, "Member 'UWBP_RivalSelect_C::WBP_CharaSelect_Sub_Window' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_C, WBP_CMN_ControllerBtn_L) == 0x0004E0, "Member 'UWBP_RivalSelect_C::WBP_CMN_ControllerBtn_L' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_C, WBP_CMN_ControllerBtn_R) == 0x0004E8, "Member 'UWBP_RivalSelect_C::WBP_CMN_ControllerBtn_R' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_C, WBP_CMN_RivalLevel) == 0x0004F0, "Member 'UWBP_RivalSelect_C::WBP_CMN_RivalLevel' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_C, WBP_GrandPrixTips_Sub_BG_Red) == 0x0004F8, "Member 'UWBP_RivalSelect_C::WBP_GrandPrixTips_Sub_BG_Red' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_C, WBP_RivalSelect_Sub_CharaCutIn) == 0x000500, "Member 'UWBP_RivalSelect_C::WBP_RivalSelect_Sub_CharaCutIn' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_C, WBP_RivalSelect_Sub_CharaInfo) == 0x000508, "Member 'UWBP_RivalSelect_C::WBP_RivalSelect_Sub_CharaInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_C, WBP_RivalSelect_Sub_Effects_Fire_01) == 0x000510, "Member 'UWBP_RivalSelect_C::WBP_RivalSelect_Sub_Effects_Fire_01' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_C, WBP_RivalSelect_Sub_Effects_Fire_02) == 0x000518, "Member 'UWBP_RivalSelect_C::WBP_RivalSelect_Sub_Effects_Fire_02' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_C, WBP_RivalSelect_Sub_GetInfo) == 0x000520, "Member 'UWBP_RivalSelect_C::WBP_RivalSelect_Sub_GetInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_C, WBP_RivalSelect_Sub_NextRival) == 0x000528, "Member 'UWBP_RivalSelect_C::WBP_RivalSelect_Sub_NextRival' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_C, WBP_RivalSelect_Sub_WinInfo) == 0x000530, "Member 'UWBP_RivalSelect_C::WBP_RivalSelect_Sub_WinInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_RivalSelect_C, DefaultChildVisibilitys) == 0x000538, "Member 'UWBP_RivalSelect_C::DefaultChildVisibilitys' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_RivalSelect_C;
 
 }
 

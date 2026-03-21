@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -44,28 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GadgetCustom_ScrollSnapPoint_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GadgetCustom_ScrollSnapPoint_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GadgetCustom_ScrollSnapPoint_C")
 	}
 	static class UWBP_GadgetCustom_ScrollSnapPoint_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GadgetCustom_ScrollSnapPoint_C>();
 	}
 };
-static_assert(alignof(UWBP_GadgetCustom_ScrollSnapPoint_C) == 0x000008, "Wrong alignment on UWBP_GadgetCustom_ScrollSnapPoint_C");
-static_assert(sizeof(UWBP_GadgetCustom_ScrollSnapPoint_C) == 0x000370, "Wrong size on UWBP_GadgetCustom_ScrollSnapPoint_C");
-static_assert(offsetof(UWBP_GadgetCustom_ScrollSnapPoint_C, UberGraphFrame) == 0x000308, "Member 'UWBP_GadgetCustom_ScrollSnapPoint_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_ScrollSnapPoint_C, HorizontalBox) == 0x000310, "Member 'UWBP_GadgetCustom_ScrollSnapPoint_C::HorizontalBox' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_ScrollSnapPoint_C, WBP_GadgetCustom_SnapPoint) == 0x000318, "Member 'UWBP_GadgetCustom_ScrollSnapPoint_C::WBP_GadgetCustom_SnapPoint' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_ScrollSnapPoint_C, WBP_GadgetCustom_SnapPoint_1) == 0x000320, "Member 'UWBP_GadgetCustom_ScrollSnapPoint_C::WBP_GadgetCustom_SnapPoint_1' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_ScrollSnapPoint_C, WBP_GadgetCustom_SnapPoint_2) == 0x000328, "Member 'UWBP_GadgetCustom_ScrollSnapPoint_C::WBP_GadgetCustom_SnapPoint_2' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_ScrollSnapPoint_C, WBP_GadgetCustom_SnapPoint_3) == 0x000330, "Member 'UWBP_GadgetCustom_ScrollSnapPoint_C::WBP_GadgetCustom_SnapPoint_3' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_ScrollSnapPoint_C, WBP_GadgetCustom_SnapPoint_4) == 0x000338, "Member 'UWBP_GadgetCustom_ScrollSnapPoint_C::WBP_GadgetCustom_SnapPoint_4' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_ScrollSnapPoint_C, WBP_GadgetCustom_SnapPoint_5) == 0x000340, "Member 'UWBP_GadgetCustom_ScrollSnapPoint_C::WBP_GadgetCustom_SnapPoint_5' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_ScrollSnapPoint_C, WBP_GadgetCustom_SnapPoint_6) == 0x000348, "Member 'UWBP_GadgetCustom_ScrollSnapPoint_C::WBP_GadgetCustom_SnapPoint_6' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_ScrollSnapPoint_C, WBP_GadgetCustom_SnapPoint_7) == 0x000350, "Member 'UWBP_GadgetCustom_ScrollSnapPoint_C::WBP_GadgetCustom_SnapPoint_7' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_ScrollSnapPoint_C, WBP_GadgetCustom_SnapPoint_8) == 0x000358, "Member 'UWBP_GadgetCustom_ScrollSnapPoint_C::WBP_GadgetCustom_SnapPoint_8' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_ScrollSnapPoint_C, WBP_GadgetCustom_SnapPoint_9) == 0x000360, "Member 'UWBP_GadgetCustom_ScrollSnapPoint_C::WBP_GadgetCustom_SnapPoint_9' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_ScrollSnapPoint_C, WBP_GadgetCustom_SnapPoint_10) == 0x000368, "Member 'UWBP_GadgetCustom_ScrollSnapPoint_C::WBP_GadgetCustom_SnapPoint_10' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GadgetCustom_ScrollSnapPoint_C;
 
 }
 

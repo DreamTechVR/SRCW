@@ -31,15 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AppScreenLogBPF">();
+		STATIC_CLASS_IMPL("AppScreenLogBPF")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AppScreenLogBPF")
 	}
 	static class UAppScreenLogBPF* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAppScreenLogBPF>();
 	}
 };
-static_assert(alignof(UAppScreenLogBPF) == 0x000008, "Wrong alignment on UAppScreenLogBPF");
-static_assert(sizeof(UAppScreenLogBPF) == 0x000028, "Wrong size on UAppScreenLogBPF");
+DUMPER7_ASSERTS_UAppScreenLogBPF;
 
 // Class UnionLib.BPFL_Config
 // 0x0000 (0x0028 - 0x0028)
@@ -66,15 +69,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BPFL_Config">();
+		STATIC_CLASS_IMPL("BPFL_Config")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPFL_Config")
 	}
 	static class UBPFL_Config* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPFL_Config>();
 	}
 };
-static_assert(alignof(UBPFL_Config) == 0x000008, "Wrong alignment on UBPFL_Config");
-static_assert(sizeof(UBPFL_Config) == 0x000028, "Wrong size on UBPFL_Config");
+DUMPER7_ASSERTS_UBPFL_Config;
 
 // Class UnionLib.GameSingletonManageSubsystem
 // 0x0070 (0x00A0 - 0x0030)
@@ -87,16 +93,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GameSingletonManageSubsystem">();
+		STATIC_CLASS_IMPL("GameSingletonManageSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GameSingletonManageSubsystem")
 	}
 	static class UGameSingletonManageSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGameSingletonManageSubsystem>();
 	}
 };
-static_assert(alignof(UGameSingletonManageSubsystem) == 0x000008, "Wrong alignment on UGameSingletonManageSubsystem");
-static_assert(sizeof(UGameSingletonManageSubsystem) == 0x0000A0, "Wrong size on UGameSingletonManageSubsystem");
-static_assert(offsetof(UGameSingletonManageSubsystem, ObjectSingletonList) == 0x000090, "Member 'UGameSingletonManageSubsystem::ObjectSingletonList' has a wrong offset!");
+DUMPER7_ASSERTS_UGameSingletonManageSubsystem;
 
 // Class UnionLib.HierarchicalStateMachine
 // 0x00D8 (0x0368 - 0x0290)
@@ -140,18 +148,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HierarchicalStateMachine">();
+		STATIC_CLASS_IMPL("HierarchicalStateMachine")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HierarchicalStateMachine")
 	}
 	static class AHierarchicalStateMachine* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AHierarchicalStateMachine>();
 	}
 };
-static_assert(alignof(AHierarchicalStateMachine) == 0x000008, "Wrong alignment on AHierarchicalStateMachine");
-static_assert(sizeof(AHierarchicalStateMachine) == 0x000368, "Wrong size on AHierarchicalStateMachine");
-static_assert(offsetof(AHierarchicalStateMachine, StateMachineName) == 0x000290, "Member 'AHierarchicalStateMachine::StateMachineName' has a wrong offset!");
-static_assert(offsetof(AHierarchicalStateMachine, ChildStateMachineComponent) == 0x000298, "Member 'AHierarchicalStateMachine::ChildStateMachineComponent' has a wrong offset!");
-static_assert(offsetof(AHierarchicalStateMachine, ChildStateMachine) == 0x000348, "Member 'AHierarchicalStateMachine::ChildStateMachine' has a wrong offset!");
+DUMPER7_ASSERTS_AHierarchicalStateMachine;
 
 // Class UnionLib.HierarchicalStateMachineHolder
 // 0x0048 (0x02D8 - 0x0290)
@@ -175,19 +183,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HierarchicalStateMachineHolder">();
+		STATIC_CLASS_IMPL("HierarchicalStateMachineHolder")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HierarchicalStateMachineHolder")
 	}
 	static class AHierarchicalStateMachineHolder* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AHierarchicalStateMachineHolder>();
 	}
 };
-static_assert(alignof(AHierarchicalStateMachineHolder) == 0x000008, "Wrong alignment on AHierarchicalStateMachineHolder");
-static_assert(sizeof(AHierarchicalStateMachineHolder) == 0x0002D8, "Wrong size on AHierarchicalStateMachineHolder");
-static_assert(offsetof(AHierarchicalStateMachineHolder, bAutoActivateStateMachine) == 0x000290, "Member 'AHierarchicalStateMachineHolder::bAutoActivateStateMachine' has a wrong offset!");
-static_assert(offsetof(AHierarchicalStateMachineHolder, RootStateMachineClass) == 0x000298, "Member 'AHierarchicalStateMachineHolder::RootStateMachineClass' has a wrong offset!");
-static_assert(offsetof(AHierarchicalStateMachineHolder, RootStateMachine) == 0x0002C0, "Member 'AHierarchicalStateMachineHolder::RootStateMachine' has a wrong offset!");
-static_assert(offsetof(AHierarchicalStateMachineHolder, RootStateMachineComponent) == 0x0002C8, "Member 'AHierarchicalStateMachineHolder::RootStateMachineComponent' has a wrong offset!");
+DUMPER7_ASSERTS_AHierarchicalStateMachineHolder;
 
 // Class UnionLib.HierarchicalStateMachineStateComponent
 // 0x0058 (0x00F8 - 0x00A0)
@@ -229,22 +236,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HierarchicalStateMachineStateComponent">();
+		STATIC_CLASS_IMPL("HierarchicalStateMachineStateComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HierarchicalStateMachineStateComponent")
 	}
 	static class UHierarchicalStateMachineStateComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHierarchicalStateMachineStateComponent>();
 	}
 };
-static_assert(alignof(UHierarchicalStateMachineStateComponent) == 0x000008, "Wrong alignment on UHierarchicalStateMachineStateComponent");
-static_assert(sizeof(UHierarchicalStateMachineStateComponent) == 0x0000F8, "Wrong size on UHierarchicalStateMachineStateComponent");
-static_assert(offsetof(UHierarchicalStateMachineStateComponent, bAutoRegistration) == 0x0000A0, "Member 'UHierarchicalStateMachineStateComponent::bAutoRegistration' has a wrong offset!");
-static_assert(offsetof(UHierarchicalStateMachineStateComponent, DefaultState) == 0x0000A4, "Member 'UHierarchicalStateMachineStateComponent::DefaultState' has a wrong offset!");
-static_assert(offsetof(UHierarchicalStateMachineStateComponent, DefaultStateName) == 0x0000A8, "Member 'UHierarchicalStateMachineStateComponent::DefaultStateName' has a wrong offset!");
-static_assert(offsetof(UHierarchicalStateMachineStateComponent, ChildStateMachineClass) == 0x0000B0, "Member 'UHierarchicalStateMachineStateComponent::ChildStateMachineClass' has a wrong offset!");
-static_assert(offsetof(UHierarchicalStateMachineStateComponent, bUpdateEvenWhenPaused) == 0x0000D8, "Member 'UHierarchicalStateMachineStateComponent::bUpdateEvenWhenPaused' has a wrong offset!");
-static_assert(offsetof(UHierarchicalStateMachineStateComponent, bNeedInitFadeOut) == 0x0000D9, "Member 'UHierarchicalStateMachineStateComponent::bNeedInitFadeOut' has a wrong offset!");
-static_assert(offsetof(UHierarchicalStateMachineStateComponent, OwnerStateMachine) == 0x0000E0, "Member 'UHierarchicalStateMachineStateComponent::OwnerStateMachine' has a wrong offset!");
+DUMPER7_ASSERTS_UHierarchicalStateMachineStateComponent;
 
 // Class UnionLib.SimpleBinaryAsset
 // 0x0010 (0x0038 - 0x0028)
@@ -256,16 +259,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SimpleBinaryAsset">();
+		STATIC_CLASS_IMPL("SimpleBinaryAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SimpleBinaryAsset")
 	}
 	static class USimpleBinaryAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USimpleBinaryAsset>();
 	}
 };
-static_assert(alignof(USimpleBinaryAsset) == 0x000008, "Wrong alignment on USimpleBinaryAsset");
-static_assert(sizeof(USimpleBinaryAsset) == 0x000038, "Wrong size on USimpleBinaryAsset");
-static_assert(offsetof(USimpleBinaryAsset, RawData) == 0x000028, "Member 'USimpleBinaryAsset::RawData' has a wrong offset!");
+DUMPER7_ASSERTS_USimpleBinaryAsset;
 
 // Class UnionLib.UnionDebugDrawLineSubsystem
 // 0x0010 (0x0040 - 0x0030)
@@ -282,16 +287,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionDebugDrawLineSubsystem">();
+		STATIC_CLASS_IMPL("UnionDebugDrawLineSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionDebugDrawLineSubsystem")
 	}
 	static class UUnionDebugDrawLineSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionDebugDrawLineSubsystem>();
 	}
 };
-static_assert(alignof(UUnionDebugDrawLineSubsystem) == 0x000008, "Wrong alignment on UUnionDebugDrawLineSubsystem");
-static_assert(sizeof(UUnionDebugDrawLineSubsystem) == 0x000040, "Wrong size on UUnionDebugDrawLineSubsystem");
-static_assert(offsetof(UUnionDebugDrawLineSubsystem, bDebugVisibleFlag) == 0x000030, "Member 'UUnionDebugDrawLineSubsystem::bDebugVisibleFlag' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionDebugDrawLineSubsystem;
 
 }
 

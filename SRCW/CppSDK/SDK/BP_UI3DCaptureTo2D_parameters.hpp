@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "E3DCaptureMenuType_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "ImageWriteQueue_structs.hpp"
 
@@ -26,9 +26,7 @@ struct BP_UI3DCaptureTo2D_C_CustomEvent_0 final
 public:
 	bool                                          bSuccess;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_UI3DCaptureTo2D_C_CustomEvent_0) == 0x000001, "Wrong alignment on BP_UI3DCaptureTo2D_C_CustomEvent_0");
-static_assert(sizeof(BP_UI3DCaptureTo2D_C_CustomEvent_0) == 0x000001, "Wrong size on BP_UI3DCaptureTo2D_C_CustomEvent_0");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_CustomEvent_0, bSuccess) == 0x000000, "Member 'BP_UI3DCaptureTo2D_C_CustomEvent_0::bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BP_UI3DCaptureTo2D_C_CustomEvent_0;
 
 // Function BP_UI3DCaptureTo2D.BP_UI3DCaptureTo2D_C.ExecuteUbergraph_BP_UI3DCaptureTo2D
 // 0x0260 (0x0260 - 0x0000)
@@ -80,46 +78,7 @@ public:
 	uint8                                         Pad_254[0x4];                                      // 0x0254(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	const class UTextureRenderTarget2D*           CallFunc_GetRenderTarget2D_ReturnValue_1;          // 0x0258(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D) == 0x000010, "Wrong alignment on BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D");
-static_assert(sizeof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D) == 0x000260, "Wrong size on BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, EntryPoint) == 0x000000, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, CallFunc_MakeLiteralInt_ReturnValue) == 0x000004, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, K2Node_MakeStruct_ImageWriteOptions) == 0x000020, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::K2Node_MakeStruct_ImageWriteOptions' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, CallFunc_GetTransform_ReturnValue) == 0x000080, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, CallFunc_GetRenderTarget2D_ReturnValue) == 0x0000E0, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::CallFunc_GetRenderTarget2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, K2Node_CustomEvent_FileName_Footer) == 0x0000E8, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::K2Node_CustomEvent_FileName_Footer' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, CallFunc_GetProjectSavedDirectory_ReturnValue) == 0x0000F8, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::CallFunc_GetProjectSavedDirectory_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, CallFunc_Concat_StrStr_ReturnValue) == 0x000108, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, K2Node_CustomEvent_bSuccess) == 0x000118, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::K2Node_CustomEvent_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, CallFunc_Now_ReturnValue) == 0x000120, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::CallFunc_Now_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, CallFunc_GetAllActorsOfClass_OutActors) == 0x000128, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, CallFunc_BreakDateTime_Year) == 0x000138, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::CallFunc_BreakDateTime_Year' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, CallFunc_BreakDateTime_Month) == 0x00013C, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::CallFunc_BreakDateTime_Month' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, CallFunc_BreakDateTime_Day) == 0x000140, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::CallFunc_BreakDateTime_Day' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, CallFunc_BreakDateTime_Hour) == 0x000144, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::CallFunc_BreakDateTime_Hour' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, CallFunc_BreakDateTime_Minute) == 0x000148, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::CallFunc_BreakDateTime_Minute' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, CallFunc_BreakDateTime_Second) == 0x00014C, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::CallFunc_BreakDateTime_Second' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, CallFunc_BreakDateTime_Millisecond) == 0x000150, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::CallFunc_BreakDateTime_Millisecond' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, CallFunc_Array_Get_Item) == 0x000158, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, CallFunc_Conv_IntToString_ReturnValue) == 0x000160, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, CallFunc_Conv_IntToString_ReturnValue_1) == 0x000170, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::CallFunc_Conv_IntToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, CallFunc_Conv_IntToString_ReturnValue_2) == 0x000180, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::CallFunc_Conv_IntToString_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, CallFunc_Conv_IntToString_ReturnValue_3) == 0x000190, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::CallFunc_Conv_IntToString_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, CallFunc_Conv_IntToString_ReturnValue_4) == 0x0001A0, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::CallFunc_Conv_IntToString_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, CallFunc_Conv_IntToString_ReturnValue_5) == 0x0001B0, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::CallFunc_Conv_IntToString_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, CallFunc_Concat_StrStr_ReturnValue_1) == 0x0001C0, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, Temp_byte_Variable) == 0x0001D0, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, CallFunc_Concat_StrStr_ReturnValue_2) == 0x0001D8, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, CallFunc_Concat_StrStr_ReturnValue_3) == 0x0001E8, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, CallFunc_Concat_StrStr_ReturnValue_4) == 0x0001F8, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::CallFunc_Concat_StrStr_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, CallFunc_Concat_StrStr_ReturnValue_5) == 0x000208, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::CallFunc_Concat_StrStr_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, CallFunc_Concat_StrStr_ReturnValue_6) == 0x000218, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::CallFunc_Concat_StrStr_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, CallFunc_Concat_StrStr_ReturnValue_7) == 0x000228, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::CallFunc_Concat_StrStr_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, Temp_byte_Variable_1) == 0x000238, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, CallFunc_Concat_StrStr_ReturnValue_8) == 0x000240, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::CallFunc_Concat_StrStr_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, CallFunc_MakeLiteralInt_ReturnValue_1) == 0x000250, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::CallFunc_MakeLiteralInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D, CallFunc_GetRenderTarget2D_ReturnValue_1) == 0x000258, "Member 'BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D::CallFunc_GetRenderTarget2D_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_UI3DCaptureTo2D_C_ExecuteUbergraph_BP_UI3DCaptureTo2D;
 
 // Function BP_UI3DCaptureTo2D.BP_UI3DCaptureTo2D_C.SetTransformByMenuType
 // 0x0180 (0x0180 - 0x0000)
@@ -134,13 +93,7 @@ public:
 	struct FHitResult                             CallFunc_K2_SetActorTransform_SweepHitResult;      // 0x0078(0x00F8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_K2_SetActorTransform_ReturnValue;         // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_UI3DCaptureTo2D_C_SetTransformByMenuType) == 0x000010, "Wrong alignment on BP_UI3DCaptureTo2D_C_SetTransformByMenuType");
-static_assert(sizeof(BP_UI3DCaptureTo2D_C_SetTransformByMenuType) == 0x000180, "Wrong size on BP_UI3DCaptureTo2D_C_SetTransformByMenuType");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_SetTransformByMenuType, MenuType) == 0x000000, "Member 'BP_UI3DCaptureTo2D_C_SetTransformByMenuType::MenuType' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_SetTransformByMenuType, CallFunc_Map_Find_Value) == 0x000010, "Member 'BP_UI3DCaptureTo2D_C_SetTransformByMenuType::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_SetTransformByMenuType, CallFunc_Map_Find_ReturnValue) == 0x000070, "Member 'BP_UI3DCaptureTo2D_C_SetTransformByMenuType::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_SetTransformByMenuType, CallFunc_K2_SetActorTransform_SweepHitResult) == 0x000078, "Member 'BP_UI3DCaptureTo2D_C_SetTransformByMenuType::CallFunc_K2_SetActorTransform_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_SetTransformByMenuType, CallFunc_K2_SetActorTransform_ReturnValue) == 0x000170, "Member 'BP_UI3DCaptureTo2D_C_SetTransformByMenuType::CallFunc_K2_SetActorTransform_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_UI3DCaptureTo2D_C_SetTransformByMenuType;
 
 // Function BP_UI3DCaptureTo2D.BP_UI3DCaptureTo2D_C.TakePicture
 // 0x0010 (0x0010 - 0x0000)
@@ -149,9 +102,7 @@ struct BP_UI3DCaptureTo2D_C_TakePicture final
 public:
 	class FString                                 FileName_Footer;                                   // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_UI3DCaptureTo2D_C_TakePicture) == 0x000008, "Wrong alignment on BP_UI3DCaptureTo2D_C_TakePicture");
-static_assert(sizeof(BP_UI3DCaptureTo2D_C_TakePicture) == 0x000010, "Wrong size on BP_UI3DCaptureTo2D_C_TakePicture");
-static_assert(offsetof(BP_UI3DCaptureTo2D_C_TakePicture, FileName_Footer) == 0x000000, "Member 'BP_UI3DCaptureTo2D_C_TakePicture::FileName_Footer' has a wrong offset!");
+DUMPER7_ASSERTS_BP_UI3DCaptureTo2D_C_TakePicture;
 
 }
 

@@ -45,35 +45,7 @@ public:
 	struct FAnimNodeExposedValueHandler_PropertyAccess AnimGraphNode_StateResult;                    // 0x01A8(0x0030)()
 	struct FAnimNodeExposedValueHandler_PropertyAccess AnimGraphNode_StateMachine;                   // 0x01D8(0x0030)()
 };
-static_assert(alignof(ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData) == 0x000008, "Wrong alignment on ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData");
-static_assert(sizeof(ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData) == 0x000208, "Wrong size on ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData");
-static_assert(offsetof(ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData, __NameProperty_17) == 0x000004, "Member 'ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData::__NameProperty_17' has a wrong offset!");
-static_assert(offsetof(ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData, __BoolProperty_18) == 0x00000C, "Member 'ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData::__BoolProperty_18' has a wrong offset!");
-static_assert(offsetof(ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData, __FloatProperty_19) == 0x000010, "Member 'ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData::__FloatProperty_19' has a wrong offset!");
-static_assert(offsetof(ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData, __StructProperty_20) == 0x000014, "Member 'ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData::__StructProperty_20' has a wrong offset!");
-static_assert(offsetof(ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData, __FloatProperty_21) == 0x000040, "Member 'ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData::__FloatProperty_21' has a wrong offset!");
-static_assert(offsetof(ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData, __BoolProperty_22) == 0x000044, "Member 'ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData::__BoolProperty_22' has a wrong offset!");
-static_assert(offsetof(ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData, __EnumProperty_23) == 0x000045, "Member 'ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData::__EnumProperty_23' has a wrong offset!");
-static_assert(offsetof(ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData, __ByteProperty_24) == 0x000046, "Member 'ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData::__ByteProperty_24' has a wrong offset!");
-static_assert(offsetof(ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData, __NameProperty_25) == 0x000048, "Member 'ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData::__NameProperty_25' has a wrong offset!");
-static_assert(offsetof(ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData, __NameProperty_26) == 0x000050, "Member 'ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData::__NameProperty_26' has a wrong offset!");
-static_assert(offsetof(ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData, __NameProperty_27) == 0x000058, "Member 'ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData::__NameProperty_27' has a wrong offset!");
-static_assert(offsetof(ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData, __IntProperty_28) == 0x000060, "Member 'ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData::__IntProperty_28' has a wrong offset!");
-static_assert(offsetof(ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData, __StructProperty_29) == 0x000068, "Member 'ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData::__StructProperty_29' has a wrong offset!");
-static_assert(offsetof(ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData, AnimBlueprintExtension_PropertyAccess) == 0x000088, "Member 'ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData::AnimBlueprintExtension_PropertyAccess' has a wrong offset!");
-static_assert(offsetof(ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData, AnimBlueprintExtension_Base) == 0x000108, "Member 'ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData::AnimBlueprintExtension_Base' has a wrong offset!");
-static_assert(offsetof(ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData, AnimGraphNode_Root) == 0x000148, "Member 'ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData::AnimGraphNode_Root' has a wrong offset!");
-static_assert(offsetof(ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData, AnimGraphNode_SequencePlayer) == 0x000178, "Member 'ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData::AnimGraphNode_SequencePlayer' has a wrong offset!");
-static_assert(offsetof(ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData, AnimGraphNode_StateResult) == 0x0001A8, "Member 'ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData::AnimGraphNode_StateResult' has a wrong offset!");
-static_assert(offsetof(ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData, AnimGraphNode_StateMachine) == 0x0001D8, "Member 'ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedConstantData::AnimGraphNode_StateMachine' has a wrong offset!");
-
-// ScriptStruct ABPT_Menu_CockpitBase.ABPT_Menu_CockpitBase_C.AnimBlueprintGeneratedMutableData
-// 0x0000 (0x0001 - 0x0001)
-struct ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
-{
-};
-static_assert(alignof(ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedMutableData) == 0x000001, "Wrong alignment on ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedMutableData");
-static_assert(sizeof(ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedMutableData) == 0x000001, "Wrong size on ABPT_Menu_CockpitBase::FAnimBlueprintGeneratedMutableData");
+DUMPER7_ASSERTS_ABPT_Menu_CockpitBase__FAnimBlueprintGeneratedConstantData;
 
 }
 

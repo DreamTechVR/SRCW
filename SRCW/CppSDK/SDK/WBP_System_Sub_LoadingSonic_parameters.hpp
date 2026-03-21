@@ -21,9 +21,7 @@ struct WBP_System_Sub_LoadingSonic_C_ChangeSonicState final
 public:
 	uint8                                         SonicStateID;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_System_Sub_LoadingSonic_C_ChangeSonicState) == 0x000001, "Wrong alignment on WBP_System_Sub_LoadingSonic_C_ChangeSonicState");
-static_assert(sizeof(WBP_System_Sub_LoadingSonic_C_ChangeSonicState) == 0x000001, "Wrong size on WBP_System_Sub_LoadingSonic_C_ChangeSonicState");
-static_assert(offsetof(WBP_System_Sub_LoadingSonic_C_ChangeSonicState, SonicStateID) == 0x000000, "Member 'WBP_System_Sub_LoadingSonic_C_ChangeSonicState::SonicStateID' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_System_Sub_LoadingSonic_C_ChangeSonicState;
 
 // Function WBP_System_Sub_LoadingSonic.WBP_System_Sub_LoadingSonic_C.ExecuteUbergraph_WBP_System_Sub_LoadingSonic
 // 0x0058 (0x0058 - 0x0000)
@@ -45,19 +43,7 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0040(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_System_Sub_LoadingSonic_C_ExecuteUbergraph_WBP_System_Sub_LoadingSonic) == 0x000008, "Wrong alignment on WBP_System_Sub_LoadingSonic_C_ExecuteUbergraph_WBP_System_Sub_LoadingSonic");
-static_assert(sizeof(WBP_System_Sub_LoadingSonic_C_ExecuteUbergraph_WBP_System_Sub_LoadingSonic) == 0x000058, "Wrong size on WBP_System_Sub_LoadingSonic_C_ExecuteUbergraph_WBP_System_Sub_LoadingSonic");
-static_assert(offsetof(WBP_System_Sub_LoadingSonic_C_ExecuteUbergraph_WBP_System_Sub_LoadingSonic, EntryPoint) == 0x000000, "Member 'WBP_System_Sub_LoadingSonic_C_ExecuteUbergraph_WBP_System_Sub_LoadingSonic::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_System_Sub_LoadingSonic_C_ExecuteUbergraph_WBP_System_Sub_LoadingSonic, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x000008, "Member 'WBP_System_Sub_LoadingSonic_C_ExecuteUbergraph_WBP_System_Sub_LoadingSonic::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Sub_LoadingSonic_C_ExecuteUbergraph_WBP_System_Sub_LoadingSonic, K2Node_DynamicCast_As_____2D) == 0x000010, "Member 'WBP_System_Sub_LoadingSonic_C_ExecuteUbergraph_WBP_System_Sub_LoadingSonic::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(WBP_System_Sub_LoadingSonic_C_ExecuteUbergraph_WBP_System_Sub_LoadingSonic, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'WBP_System_Sub_LoadingSonic_C_ExecuteUbergraph_WBP_System_Sub_LoadingSonic::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_System_Sub_LoadingSonic_C_ExecuteUbergraph_WBP_System_Sub_LoadingSonic, K2Node_Event_IsDesignTime) == 0x000019, "Member 'WBP_System_Sub_LoadingSonic_C_ExecuteUbergraph_WBP_System_Sub_LoadingSonic::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_System_Sub_LoadingSonic_C_ExecuteUbergraph_WBP_System_Sub_LoadingSonic, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000020, "Member 'WBP_System_Sub_LoadingSonic_C_ExecuteUbergraph_WBP_System_Sub_LoadingSonic::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Sub_LoadingSonic_C_ExecuteUbergraph_WBP_System_Sub_LoadingSonic, K2Node_CustomEvent_SonicStateID) == 0x000028, "Member 'WBP_System_Sub_LoadingSonic_C_ExecuteUbergraph_WBP_System_Sub_LoadingSonic::K2Node_CustomEvent_SonicStateID' has a wrong offset!");
-static_assert(offsetof(WBP_System_Sub_LoadingSonic_C_ExecuteUbergraph_WBP_System_Sub_LoadingSonic, CallFunc_Conv_ByteToDouble_ReturnValue) == 0x000030, "Member 'WBP_System_Sub_LoadingSonic_C_ExecuteUbergraph_WBP_System_Sub_LoadingSonic::CallFunc_Conv_ByteToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Sub_LoadingSonic_C_ExecuteUbergraph_WBP_System_Sub_LoadingSonic, CallFunc_PlayAnimation_ReturnValue) == 0x000038, "Member 'WBP_System_Sub_LoadingSonic_C_ExecuteUbergraph_WBP_System_Sub_LoadingSonic::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Sub_LoadingSonic_C_ExecuteUbergraph_WBP_System_Sub_LoadingSonic, K2Node_CreateDelegate_OutputDelegate) == 0x000040, "Member 'WBP_System_Sub_LoadingSonic_C_ExecuteUbergraph_WBP_System_Sub_LoadingSonic::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_System_Sub_LoadingSonic_C_ExecuteUbergraph_WBP_System_Sub_LoadingSonic, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000050, "Member 'WBP_System_Sub_LoadingSonic_C_ExecuteUbergraph_WBP_System_Sub_LoadingSonic::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_System_Sub_LoadingSonic_C_ExecuteUbergraph_WBP_System_Sub_LoadingSonic;
 
 // Function WBP_System_Sub_LoadingSonic.WBP_System_Sub_LoadingSonic_C.FireOutAnim
 // 0x0008 (0x0008 - 0x0000)
@@ -66,9 +52,7 @@ struct WBP_System_Sub_LoadingSonic_C_FireOutAnim final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_System_Sub_LoadingSonic_C_FireOutAnim) == 0x000008, "Wrong alignment on WBP_System_Sub_LoadingSonic_C_FireOutAnim");
-static_assert(sizeof(WBP_System_Sub_LoadingSonic_C_FireOutAnim) == 0x000008, "Wrong size on WBP_System_Sub_LoadingSonic_C_FireOutAnim");
-static_assert(offsetof(WBP_System_Sub_LoadingSonic_C_FireOutAnim, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_System_Sub_LoadingSonic_C_FireOutAnim::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_System_Sub_LoadingSonic_C_FireOutAnim;
 
 // Function WBP_System_Sub_LoadingSonic.WBP_System_Sub_LoadingSonic_C.PlayLoopAnimation
 // 0x0008 (0x0008 - 0x0000)
@@ -77,9 +61,7 @@ struct WBP_System_Sub_LoadingSonic_C_PlayLoopAnimation final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_System_Sub_LoadingSonic_C_PlayLoopAnimation) == 0x000008, "Wrong alignment on WBP_System_Sub_LoadingSonic_C_PlayLoopAnimation");
-static_assert(sizeof(WBP_System_Sub_LoadingSonic_C_PlayLoopAnimation) == 0x000008, "Wrong size on WBP_System_Sub_LoadingSonic_C_PlayLoopAnimation");
-static_assert(offsetof(WBP_System_Sub_LoadingSonic_C_PlayLoopAnimation, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_System_Sub_LoadingSonic_C_PlayLoopAnimation::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_System_Sub_LoadingSonic_C_PlayLoopAnimation;
 
 // Function WBP_System_Sub_LoadingSonic.WBP_System_Sub_LoadingSonic_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -88,9 +70,7 @@ struct WBP_System_Sub_LoadingSonic_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_System_Sub_LoadingSonic_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_System_Sub_LoadingSonic_C_PreConstruct");
-static_assert(sizeof(WBP_System_Sub_LoadingSonic_C_PreConstruct) == 0x000001, "Wrong size on WBP_System_Sub_LoadingSonic_C_PreConstruct");
-static_assert(offsetof(WBP_System_Sub_LoadingSonic_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_System_Sub_LoadingSonic_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_System_Sub_LoadingSonic_C_PreConstruct;
 
 // Function WBP_System_Sub_LoadingSonic.WBP_System_Sub_LoadingSonic_C.SetText
 // 0x0010 (0x0010 - 0x0000)
@@ -99,9 +79,7 @@ struct WBP_System_Sub_LoadingSonic_C_SetText final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_System_Sub_LoadingSonic_C_SetText) == 0x000008, "Wrong alignment on WBP_System_Sub_LoadingSonic_C_SetText");
-static_assert(sizeof(WBP_System_Sub_LoadingSonic_C_SetText) == 0x000010, "Wrong size on WBP_System_Sub_LoadingSonic_C_SetText");
-static_assert(offsetof(WBP_System_Sub_LoadingSonic_C_SetText, InText) == 0x000000, "Member 'WBP_System_Sub_LoadingSonic_C_SetText::InText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_System_Sub_LoadingSonic_C_SetText;
 
 }
 

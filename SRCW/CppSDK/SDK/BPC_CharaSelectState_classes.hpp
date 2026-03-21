@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
+#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
 #include "UnionLib_structs.hpp"
-#include "UNION_classes.hpp"
 
 
 namespace SDK
@@ -37,17 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_CharaSelectState_C">();
+		BP_STATIC_CLASS_IMPL("BPC_CharaSelectState_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_CharaSelectState_C")
 	}
 	static class UBPC_CharaSelectState_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_CharaSelectState_C>();
 	}
 };
-static_assert(alignof(UBPC_CharaSelectState_C) == 0x000008, "Wrong alignment on UBPC_CharaSelectState_C");
-static_assert(sizeof(UBPC_CharaSelectState_C) == 0x000148, "Wrong size on UBPC_CharaSelectState_C");
-static_assert(offsetof(UBPC_CharaSelectState_C, UberGraphFrame) == 0x000138, "Member 'UBPC_CharaSelectState_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_CharaSelectState_C, ToMachineSelectTransitionTime) == 0x000140, "Member 'UBPC_CharaSelectState_C::ToMachineSelectTransitionTime' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_CharaSelectState_C;
 
 }
 

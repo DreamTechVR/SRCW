@@ -30,15 +30,7 @@ public:
 	struct FCustomRaceSettingLine                 CallFunc_GetDataTableRowFromName_OutRow;           // 0x0028(0x0058)()
 	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_Option_Preview_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Preview) == 0x000008, "Wrong alignment on WBP_PartyRace_Sub_Option_Preview_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Preview");
-static_assert(sizeof(WBP_PartyRace_Sub_Option_Preview_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Preview) == 0x000088, "Wrong size on WBP_PartyRace_Sub_Option_Preview_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Preview");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Preview_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Preview, EntryPoint) == 0x000000, "Member 'WBP_PartyRace_Sub_Option_Preview_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Preview::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Preview_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Preview, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000004, "Member 'WBP_PartyRace_Sub_Option_Preview_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Preview::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Preview_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Preview, K2Node_Event_IsDesignTime) == 0x000008, "Member 'WBP_PartyRace_Sub_Option_Preview_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Preview::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Preview_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Preview, CallFunc_GetDataTableRowNames_OutRowNames) == 0x000010, "Member 'WBP_PartyRace_Sub_Option_Preview_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Preview::CallFunc_GetDataTableRowNames_OutRowNames' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Preview_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Preview, CallFunc_Array_Get_Item) == 0x000020, "Member 'WBP_PartyRace_Sub_Option_Preview_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Preview::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Preview_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Preview, CallFunc_GetDataTableRowFromName_OutRow) == 0x000028, "Member 'WBP_PartyRace_Sub_Option_Preview_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Preview::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Preview_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Preview, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000080, "Member 'WBP_PartyRace_Sub_Option_Preview_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Preview::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_Option_Preview_C_ExecuteUbergraph_WBP_PartyRace_Sub_Option_Preview;
 
 // Function WBP_PartyRace_Sub_Option_Preview.WBP_PartyRace_Sub_Option_Preview_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -47,9 +39,7 @@ struct WBP_PartyRace_Sub_Option_Preview_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_Sub_Option_Preview_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_PartyRace_Sub_Option_Preview_C_PreConstruct");
-static_assert(sizeof(WBP_PartyRace_Sub_Option_Preview_C_PreConstruct) == 0x000001, "Wrong size on WBP_PartyRace_Sub_Option_Preview_C_PreConstruct");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Preview_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_PartyRace_Sub_Option_Preview_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_Option_Preview_C_PreConstruct;
 
 // Function WBP_PartyRace_Sub_Option_Preview.WBP_PartyRace_Sub_Option_Preview_C.SetModeDetailText
 // 0x0010 (0x0010 - 0x0000)
@@ -58,9 +48,7 @@ struct WBP_PartyRace_Sub_Option_Preview_C_SetModeDetailText final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_PartyRace_Sub_Option_Preview_C_SetModeDetailText) == 0x000008, "Wrong alignment on WBP_PartyRace_Sub_Option_Preview_C_SetModeDetailText");
-static_assert(sizeof(WBP_PartyRace_Sub_Option_Preview_C_SetModeDetailText) == 0x000010, "Wrong size on WBP_PartyRace_Sub_Option_Preview_C_SetModeDetailText");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Preview_C_SetModeDetailText, InText) == 0x000000, "Member 'WBP_PartyRace_Sub_Option_Preview_C_SetModeDetailText::InText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_Option_Preview_C_SetModeDetailText;
 
 // Function WBP_PartyRace_Sub_Option_Preview.WBP_PartyRace_Sub_Option_Preview_C.SetModeNameText
 // 0x0010 (0x0010 - 0x0000)
@@ -69,9 +57,7 @@ struct WBP_PartyRace_Sub_Option_Preview_C_SetModeNameText final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_PartyRace_Sub_Option_Preview_C_SetModeNameText) == 0x000008, "Wrong alignment on WBP_PartyRace_Sub_Option_Preview_C_SetModeNameText");
-static_assert(sizeof(WBP_PartyRace_Sub_Option_Preview_C_SetModeNameText) == 0x000010, "Wrong size on WBP_PartyRace_Sub_Option_Preview_C_SetModeNameText");
-static_assert(offsetof(WBP_PartyRace_Sub_Option_Preview_C_SetModeNameText, InText) == 0x000000, "Member 'WBP_PartyRace_Sub_Option_Preview_C_SetModeNameText::InText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_Sub_Option_Preview_C_SetModeNameText;
 
 }
 

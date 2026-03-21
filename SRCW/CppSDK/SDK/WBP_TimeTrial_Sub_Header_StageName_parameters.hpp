@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
+#include "UnionSystem_structs.hpp"
 
 
 namespace SDK::Params
@@ -47,26 +47,7 @@ public:
 	EStageId                                      K2Node_CustomEvent_InStageID;                      // 0x0139(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x013A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName) == 0x000008, "Wrong alignment on WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName");
-static_assert(sizeof(WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName) == 0x000140, "Wrong size on WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName");
-static_assert(offsetof(WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName, EntryPoint) == 0x000000, "Member 'WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName, CallFunc_GetDataTableRowNames_OutRowNames) == 0x000008, "Member 'WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName::CallFunc_GetDataTableRowNames_OutRowNames' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName, CallFunc_Array_Length_ReturnValue) == 0x000018, "Member 'WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName, Temp_bool_True_if_break_was_hit_Variable) == 0x00001C, "Member 'WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName, Temp_int_Array_Index_Variable) == 0x000020, "Member 'WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName, CallFunc_Array_Get_Item) == 0x000024, "Member 'WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName, CallFunc_GetDataTableRowFromName_OutRow) == 0x000030, "Member 'WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000110, "Member 'WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName, CallFunc_Not_PreBool_ReturnValue) == 0x000111, "Member 'WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x000118, "Member 'WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName, Temp_int_Loop_Counter_Variable) == 0x000120, "Member 'WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName, K2Node_DynamicCast_As_____2D) == 0x000128, "Member 'WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName, K2Node_DynamicCast_bSuccess) == 0x000130, "Member 'WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName, CallFunc_Less_IntInt_ReturnValue) == 0x000131, "Member 'WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName, CallFunc_Add_IntInt_ReturnValue) == 0x000134, "Member 'WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName, CallFunc_BooleanAND_ReturnValue) == 0x000138, "Member 'WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName, K2Node_CustomEvent_InStageID) == 0x000139, "Member 'WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName::K2Node_CustomEvent_InStageID' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00013A, "Member 'WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_Sub_Header_StageName_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Header_StageName;
 
 // Function WBP_TimeTrial_Sub_Header_StageName.WBP_TimeTrial_Sub_Header_StageName_C.SetStageParam
 // 0x0001 (0x0001 - 0x0000)
@@ -75,9 +56,7 @@ struct WBP_TimeTrial_Sub_Header_StageName_C_SetStageParam final
 public:
 	EStageId                                      InStageId;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TimeTrial_Sub_Header_StageName_C_SetStageParam) == 0x000001, "Wrong alignment on WBP_TimeTrial_Sub_Header_StageName_C_SetStageParam");
-static_assert(sizeof(WBP_TimeTrial_Sub_Header_StageName_C_SetStageParam) == 0x000001, "Wrong size on WBP_TimeTrial_Sub_Header_StageName_C_SetStageParam");
-static_assert(offsetof(WBP_TimeTrial_Sub_Header_StageName_C_SetStageParam, InStageId) == 0x000000, "Member 'WBP_TimeTrial_Sub_Header_StageName_C_SetStageParam::InStageId' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_Sub_Header_StageName_C_SetStageParam;
 
 }
 

@@ -97,10 +97,7 @@ public:
 	ESubstanceInputType                           Type;                                              // 0x0010(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSubstanceInputDesc) == 0x000008, "Wrong alignment on FSubstanceInputDesc");
-static_assert(sizeof(FSubstanceInputDesc) == 0x000018, "Wrong size on FSubstanceInputDesc");
-static_assert(offsetof(FSubstanceInputDesc, Name) == 0x000000, "Member 'FSubstanceInputDesc::Name' has a wrong offset!");
-static_assert(offsetof(FSubstanceInputDesc, Type) == 0x000010, "Member 'FSubstanceInputDesc::Type' has a wrong offset!");
+DUMPER7_ASSERTS_FSubstanceInputDesc;
 
 // ScriptStruct SubstanceCore.SubstanceIntInputDesc
 // 0x0030 (0x0048 - 0x0018)
@@ -111,11 +108,7 @@ public:
 	TArray<int32>                                 Max;                                               // 0x0028(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
 	TArray<int32>                                 Default;                                           // 0x0038(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSubstanceIntInputDesc) == 0x000008, "Wrong alignment on FSubstanceIntInputDesc");
-static_assert(sizeof(FSubstanceIntInputDesc) == 0x000048, "Wrong size on FSubstanceIntInputDesc");
-static_assert(offsetof(FSubstanceIntInputDesc, Min) == 0x000018, "Member 'FSubstanceIntInputDesc::Min' has a wrong offset!");
-static_assert(offsetof(FSubstanceIntInputDesc, Max) == 0x000028, "Member 'FSubstanceIntInputDesc::Max' has a wrong offset!");
-static_assert(offsetof(FSubstanceIntInputDesc, Default) == 0x000038, "Member 'FSubstanceIntInputDesc::Default' has a wrong offset!");
+DUMPER7_ASSERTS_FSubstanceIntInputDesc;
 
 // ScriptStruct SubstanceCore.SubstanceFloatInputDesc
 // 0x0030 (0x0048 - 0x0018)
@@ -126,11 +119,7 @@ public:
 	TArray<float>                                 Max;                                               // 0x0028(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
 	TArray<float>                                 Default;                                           // 0x0038(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSubstanceFloatInputDesc) == 0x000008, "Wrong alignment on FSubstanceFloatInputDesc");
-static_assert(sizeof(FSubstanceFloatInputDesc) == 0x000048, "Wrong size on FSubstanceFloatInputDesc");
-static_assert(offsetof(FSubstanceFloatInputDesc, Min) == 0x000018, "Member 'FSubstanceFloatInputDesc::Min' has a wrong offset!");
-static_assert(offsetof(FSubstanceFloatInputDesc, Max) == 0x000028, "Member 'FSubstanceFloatInputDesc::Max' has a wrong offset!");
-static_assert(offsetof(FSubstanceFloatInputDesc, Default) == 0x000038, "Member 'FSubstanceFloatInputDesc::Default' has a wrong offset!");
+DUMPER7_ASSERTS_FSubstanceFloatInputDesc;
 
 // ScriptStruct SubstanceCore.SubstanceInstanceDesc
 // 0x0020 (0x0020 - 0x0000)
@@ -140,10 +129,7 @@ public:
 	class FString                                 Name;                                              // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FSubstanceInputDesc>            Inputs;                                            // 0x0010(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSubstanceInstanceDesc) == 0x000008, "Wrong alignment on FSubstanceInstanceDesc");
-static_assert(sizeof(FSubstanceInstanceDesc) == 0x000020, "Wrong size on FSubstanceInstanceDesc");
-static_assert(offsetof(FSubstanceInstanceDesc, Name) == 0x000000, "Member 'FSubstanceInstanceDesc::Name' has a wrong offset!");
-static_assert(offsetof(FSubstanceInstanceDesc, Inputs) == 0x000010, "Member 'FSubstanceInstanceDesc::Inputs' has a wrong offset!");
+DUMPER7_ASSERTS_FSubstanceInstanceDesc;
 
 // ScriptStruct SubstanceCore.SubstanceGraphDesc
 // 0x0078 (0x0078 - 0x0000)
@@ -160,16 +146,7 @@ public:
 	class FString                                 AuthorUrl;                                         // 0x0058(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 UserTag;                                           // 0x0068(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSubstanceGraphDesc) == 0x000008, "Wrong alignment on FSubstanceGraphDesc");
-static_assert(sizeof(FSubstanceGraphDesc) == 0x000078, "Wrong size on FSubstanceGraphDesc");
-static_assert(offsetof(FSubstanceGraphDesc, Index) == 0x000000, "Member 'FSubstanceGraphDesc::Index' has a wrong offset!");
-static_assert(offsetof(FSubstanceGraphDesc, Label) == 0x000008, "Member 'FSubstanceGraphDesc::Label' has a wrong offset!");
-static_assert(offsetof(FSubstanceGraphDesc, Description) == 0x000018, "Member 'FSubstanceGraphDesc::Description' has a wrong offset!");
-static_assert(offsetof(FSubstanceGraphDesc, Category) == 0x000028, "Member 'FSubstanceGraphDesc::Category' has a wrong offset!");
-static_assert(offsetof(FSubstanceGraphDesc, Keywords) == 0x000038, "Member 'FSubstanceGraphDesc::Keywords' has a wrong offset!");
-static_assert(offsetof(FSubstanceGraphDesc, Author) == 0x000048, "Member 'FSubstanceGraphDesc::Author' has a wrong offset!");
-static_assert(offsetof(FSubstanceGraphDesc, AuthorUrl) == 0x000058, "Member 'FSubstanceGraphDesc::AuthorUrl' has a wrong offset!");
-static_assert(offsetof(FSubstanceGraphDesc, UserTag) == 0x000068, "Member 'FSubstanceGraphDesc::UserTag' has a wrong offset!");
+DUMPER7_ASSERTS_FSubstanceGraphDesc;
 
 // ScriptStruct SubstanceCore.SubstancePreset
 // 0x0088 (0x0088 - 0x0000)
@@ -179,9 +156,7 @@ public:
 	uint8                                         Pad_0[0x78];                                       // 0x0000(0x0078)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 SavedPresetString;                                 // 0x0078(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FSubstancePreset) == 0x000008, "Wrong alignment on FSubstancePreset");
-static_assert(sizeof(FSubstancePreset) == 0x000088, "Wrong size on FSubstancePreset");
-static_assert(offsetof(FSubstancePreset, SavedPresetString) == 0x000078, "Member 'FSubstancePreset::SavedPresetString' has a wrong offset!");
+DUMPER7_ASSERTS_FSubstancePreset;
 
 // ScriptStruct SubstanceCore.SubstanceConnection
 // 0x0020 (0x0020 - 0x0000)
@@ -191,10 +166,7 @@ public:
 	class FString                                 OutputIdentifier;                                  // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 InputImageIdentifier;                              // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSubstanceConnection) == 0x000008, "Wrong alignment on FSubstanceConnection");
-static_assert(sizeof(FSubstanceConnection) == 0x000020, "Wrong size on FSubstanceConnection");
-static_assert(offsetof(FSubstanceConnection, OutputIdentifier) == 0x000000, "Member 'FSubstanceConnection::OutputIdentifier' has a wrong offset!");
-static_assert(offsetof(FSubstanceConnection, InputImageIdentifier) == 0x000010, "Member 'FSubstanceConnection::InputImageIdentifier' has a wrong offset!");
+DUMPER7_ASSERTS_FSubstanceConnection;
 
 }
 

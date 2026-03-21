@@ -23,15 +23,18 @@ class UBPC_RaceSequenceStateSpawnRacer_C final : public URaceSequenceStateSpawnR
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_RaceSequenceStateSpawnRacer_C">();
+		BP_STATIC_CLASS_IMPL("BPC_RaceSequenceStateSpawnRacer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_RaceSequenceStateSpawnRacer_C")
 	}
 	static class UBPC_RaceSequenceStateSpawnRacer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_RaceSequenceStateSpawnRacer_C>();
 	}
 };
-static_assert(alignof(UBPC_RaceSequenceStateSpawnRacer_C) == 0x000008, "Wrong alignment on UBPC_RaceSequenceStateSpawnRacer_C");
-static_assert(sizeof(UBPC_RaceSequenceStateSpawnRacer_C) == 0x000110, "Wrong size on UBPC_RaceSequenceStateSpawnRacer_C");
+DUMPER7_ASSERTS_UBPC_RaceSequenceStateSpawnRacer_C;
 
 }
 

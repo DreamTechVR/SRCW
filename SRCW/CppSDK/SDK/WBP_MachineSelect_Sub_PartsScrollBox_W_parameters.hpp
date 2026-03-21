@@ -23,9 +23,7 @@ struct WBP_MachineSelect_Sub_PartsScrollBox_W_C_PlaySoundImpossible final
 public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0000(0x0004)()
 };
-static_assert(alignof(WBP_MachineSelect_Sub_PartsScrollBox_W_C_PlaySoundImpossible) == 0x000004, "Wrong alignment on WBP_MachineSelect_Sub_PartsScrollBox_W_C_PlaySoundImpossible");
-static_assert(sizeof(WBP_MachineSelect_Sub_PartsScrollBox_W_C_PlaySoundImpossible) == 0x000004, "Wrong size on WBP_MachineSelect_Sub_PartsScrollBox_W_C_PlaySoundImpossible");
-static_assert(offsetof(WBP_MachineSelect_Sub_PartsScrollBox_W_C_PlaySoundImpossible, CallFunc_SoundPlay_ReturnValue) == 0x000000, "Member 'WBP_MachineSelect_Sub_PartsScrollBox_W_C_PlaySoundImpossible::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_PartsScrollBox_W_C_PlaySoundImpossible;
 
 // Function WBP_MachineSelect_Sub_PartsScrollBox_W.WBP_MachineSelect_Sub_PartsScrollBox_W_C.PlaySoundPossible
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +32,7 @@ struct WBP_MachineSelect_Sub_PartsScrollBox_W_C_PlaySoundPossible final
 public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0000(0x0004)()
 };
-static_assert(alignof(WBP_MachineSelect_Sub_PartsScrollBox_W_C_PlaySoundPossible) == 0x000004, "Wrong alignment on WBP_MachineSelect_Sub_PartsScrollBox_W_C_PlaySoundPossible");
-static_assert(sizeof(WBP_MachineSelect_Sub_PartsScrollBox_W_C_PlaySoundPossible) == 0x000004, "Wrong size on WBP_MachineSelect_Sub_PartsScrollBox_W_C_PlaySoundPossible");
-static_assert(offsetof(WBP_MachineSelect_Sub_PartsScrollBox_W_C_PlaySoundPossible, CallFunc_SoundPlay_ReturnValue) == 0x000000, "Member 'WBP_MachineSelect_Sub_PartsScrollBox_W_C_PlaySoundPossible::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineSelect_Sub_PartsScrollBox_W_C_PlaySoundPossible;
 
 }
 

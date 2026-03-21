@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -41,16 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_RivalLevel_Sub_Content_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_RivalLevel_Sub_Content_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_RivalLevel_Sub_Content_C")
 	}
 	static class UWBP_CMN_RivalLevel_Sub_Content_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_RivalLevel_Sub_Content_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_RivalLevel_Sub_Content_C) == 0x000008, "Wrong alignment on UWBP_CMN_RivalLevel_Sub_Content_C");
-static_assert(sizeof(UWBP_CMN_RivalLevel_Sub_Content_C) == 0x0002F8, "Wrong size on UWBP_CMN_RivalLevel_Sub_Content_C");
-static_assert(offsetof(UWBP_CMN_RivalLevel_Sub_Content_C, UberGraphFrame) == 0x0002F0, "Member 'UWBP_CMN_RivalLevel_Sub_Content_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_RivalLevel_Sub_Content_C;
 
 }
 

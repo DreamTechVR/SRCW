@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
+#include "UnionSystem_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -42,22 +42,7 @@ public:
 	TSoftObjectPtr<class UTexture2D>              CallFunc_Map_Find_Value;                           // 0x0028(0x0028)(UObjectWrapper, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecChangeRank) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecChangeRank");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecChangeRank) == 0x000058, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecChangeRank");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecChangeRank, PanelIndex) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecChangeRank::PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecChangeRank, DriverId) == 0x000004, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecChangeRank::DriverId' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecChangeRank, IsDispPlayer) == 0x000005, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecChangeRank::IsDispPlayer' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecChangeRank, Rank) == 0x000008, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecChangeRank::Rank' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecChangeRank, ReturnValue) == 0x00000C, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecChangeRank::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecChangeRank, TmpGroupHUD0) == 0x000010, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecChangeRank::TmpGroupHUD0' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecChangeRank, Temp_byte_Variable) == 0x000018, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecChangeRank::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecChangeRank, CallFunc_GetIsCharacterReleased_ReturnValue) == 0x000019, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecChangeRank::CallFunc_GetIsCharacterReleased_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecChangeRank, Temp_byte_Variable_1) == 0x00001A, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecChangeRank::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecChangeRank, Temp_bool_Variable) == 0x00001B, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecChangeRank::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecChangeRank, K2Node_Select_Default) == 0x00001C, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecChangeRank::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecChangeRank, CallFunc_GetSingle_GroupPanelHUD) == 0x000020, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecChangeRank::CallFunc_GetSingle_GroupPanelHUD' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecChangeRank, CallFunc_Map_Find_Value) == 0x000028, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecChangeRank::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecChangeRank, CallFunc_Map_Find_ReturnValue) == 0x000050, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecChangeRank::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecChangeRank;
 
 // Function WBP_Race_HUD_Sub_Festa_TeamHUD.WBP_Race_HUD_Sub_Festa_TeamHUD_C.ExecPlayChangeRank
 // 0x0050 (0x0050 - 0x0000)
@@ -80,20 +65,7 @@ public:
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_Race_HUD_Sub_Festa_TeamGroup_C*    CallFunc_GetSingle_GroupPanelHUD;                  // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecPlayChangeRank) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecPlayChangeRank");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecPlayChangeRank) == 0x000050, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecPlayChangeRank");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecPlayChangeRank, PanelIndex) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecPlayChangeRank::PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecPlayChangeRank, DriverId) == 0x000004, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecPlayChangeRank::DriverId' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecPlayChangeRank, IsDispPlayer) == 0x000005, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecPlayChangeRank::IsDispPlayer' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecPlayChangeRank, Rank) == 0x000008, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecPlayChangeRank::Rank' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecPlayChangeRank, ReturnValue) == 0x00000C, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecPlayChangeRank::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecPlayChangeRank, Temp_bool_Variable) == 0x00000D, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecPlayChangeRank::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecPlayChangeRank, CallFunc_GetIsCharacterReleased_ReturnValue) == 0x00000E, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecPlayChangeRank::CallFunc_GetIsCharacterReleased_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecPlayChangeRank, Temp_byte_Variable) == 0x00000F, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecPlayChangeRank::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecPlayChangeRank, K2Node_Select_Default) == 0x000010, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecPlayChangeRank::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecPlayChangeRank, CallFunc_Map_Find_Value) == 0x000018, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecPlayChangeRank::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecPlayChangeRank, CallFunc_Map_Find_ReturnValue) == 0x000040, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecPlayChangeRank::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecPlayChangeRank, CallFunc_GetSingle_GroupPanelHUD) == 0x000048, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecPlayChangeRank::CallFunc_GetSingle_GroupPanelHUD' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecPlayChangeRank;
 
 // Function WBP_Race_HUD_Sub_Festa_TeamHUD.WBP_Race_HUD_Sub_Festa_TeamHUD_C.ExecSetRankOnly
 // 0x0018 (0x0018 - 0x0000)
@@ -106,12 +78,7 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_Race_HUD_Sub_Festa_TeamGroup_C*    CallFunc_GetSingle_GroupPanelHUD;                  // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecSetRankOnly) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecSetRankOnly");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecSetRankOnly) == 0x000018, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecSetRankOnly");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecSetRankOnly, PanelIndex) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecSetRankOnly::PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecSetRankOnly, Rank) == 0x000004, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecSetRankOnly::Rank' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecSetRankOnly, ReturnValue) == 0x000008, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecSetRankOnly::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecSetRankOnly, CallFunc_GetSingle_GroupPanelHUD) == 0x000010, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecSetRankOnly::CallFunc_GetSingle_GroupPanelHUD' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecSetRankOnly;
 
 // Function WBP_Race_HUD_Sub_Festa_TeamHUD.WBP_Race_HUD_Sub_Festa_TeamHUD_C.ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD
 // 0x0048 (0x0048 - 0x0000)
@@ -130,16 +97,7 @@ public:
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0040(0x0008)(NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD) == 0x000048, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD, EntryPoint) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD, K2Node_CustomEvent_RanelHHUD) == 0x000008, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD::K2Node_CustomEvent_RanelHHUD' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD, K2Node_CustomEvent_Rank) == 0x000010, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD::K2Node_CustomEvent_Rank' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD, K2Node_MakeArray_Array) == 0x000018, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD, K2Node_Event_TeamRank) == 0x000028, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD::K2Node_Event_TeamRank' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD, K2Node_CreateDelegate_OutputDelegate) == 0x00002C, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000040, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamHUD_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD;
 
 // Function WBP_Race_HUD_Sub_Festa_TeamHUD.WBP_Race_HUD_Sub_Festa_TeamHUD_C.Get Normal Gauge Percent
 // 0x0010 (0x0010 - 0x0000)
@@ -149,10 +107,7 @@ public:
 	double                                        GaugePercent;                                      // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_GetNormalGaugePercent_GaugePercent;       // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_Get_Normal_Gauge_Percent) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamHUD_C_Get_Normal_Gauge_Percent");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_Get_Normal_Gauge_Percent) == 0x000010, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_C_Get_Normal_Gauge_Percent");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_Get_Normal_Gauge_Percent, GaugePercent) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_Get_Normal_Gauge_Percent::GaugePercent' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_Get_Normal_Gauge_Percent, CallFunc_GetNormalGaugePercent_GaugePercent) == 0x000008, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_Get_Normal_Gauge_Percent::CallFunc_GetNormalGaugePercent_GaugePercent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamHUD_C_Get_Normal_Gauge_Percent;
 
 // Function WBP_Race_HUD_Sub_Festa_TeamHUD.WBP_Race_HUD_Sub_Festa_TeamHUD_C.GetCrownIndex
 // 0x0038 (0x0038 - 0x0000)
@@ -171,18 +126,7 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetCrownIndex) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetCrownIndex");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetCrownIndex) == 0x000038, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetCrownIndex");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetCrownIndex, Input) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetCrownIndex::Input' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetCrownIndex, Output) == 0x000004, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetCrownIndex::Output' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetCrownIndex, TmpArray) == 0x000008, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetCrownIndex::TmpArray' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetCrownIndex, Temp_int_Variable) == 0x000018, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetCrownIndex::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetCrownIndex, CallFunc_Array_Find_ReturnValue) == 0x00001C, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetCrownIndex::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetCrownIndex, CallFunc_Add_IntInt_ReturnValue) == 0x000020, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetCrownIndex::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetCrownIndex, CallFunc_Percent_IntInt_ReturnValue) == 0x000024, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetCrownIndex::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetCrownIndex, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000028, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetCrownIndex::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetCrownIndex, CallFunc_Add_IntInt_ReturnValue_1) == 0x00002C, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetCrownIndex::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetCrownIndex, CallFunc_Array_Add_ReturnValue) == 0x000030, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetCrownIndex::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetCrownIndex;
 
 // Function WBP_Race_HUD_Sub_Festa_TeamHUD.WBP_Race_HUD_Sub_Festa_TeamHUD_C.GetTeamRank
 // 0x00E0 (0x00E0 - 0x0000)
@@ -220,33 +164,7 @@ public:
 	uint8                                         Pad_D9[0x3];                                       // 0x00D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank) == 0x0000E0, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank, NextTeamRank) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank::NextTeamRank' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank, TmpPointList) == 0x000008, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank::TmpPointList' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank, TeamPoint) == 0x000018, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank::TeamPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank, LastIndex) == 0x00001C, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank::LastIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank, SortPointList) == 0x000020, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank::SortPointList' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank, PointList) == 0x000030, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank::PointList' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank, Temp_int_Array_Index_Variable) == 0x000040, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank, CallFunc_Array_Get_Item) == 0x000044, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank, CallFunc_Array_Length_ReturnValue) == 0x000048, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank, CallFunc_NotEqual_IntInt_ReturnValue) == 0x00004C, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank, Temp_int_Variable) == 0x000050, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000054, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank, CallFunc_Add_IntInt_ReturnValue) == 0x000058, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank, CallFunc_GetPartyResultRacerAll_TeamInfo) == 0x000060, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank::CallFunc_GetPartyResultRacerAll_TeamInfo' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank, CallFunc_GetPartyResultRacerAll_ReturnValue) == 0x0000A8, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank::CallFunc_GetPartyResultRacerAll_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank, CallFunc_MinOfIntArray_IndexOfMinValue) == 0x0000B8, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank::CallFunc_MinOfIntArray_IndexOfMinValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank, CallFunc_MinOfIntArray_MinValue) == 0x0000BC, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank::CallFunc_MinOfIntArray_MinValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank, CallFunc_Array_Length_ReturnValue_1) == 0x0000C0, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank, CallFunc_Subtract_IntInt_ReturnValue) == 0x0000C4, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank, CallFunc_Array_Add_ReturnValue) == 0x0000C8, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank, CallFunc_Array_Find_ReturnValue) == 0x0000CC, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank, CallFunc_Array_Get_Item_1) == 0x0000D0, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank, Temp_int_Loop_Counter_Variable) == 0x0000D4, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank, CallFunc_Less_IntInt_ReturnValue) == 0x0000D8, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000DC, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamHUD_C_GetTeamRank;
 
 // Function WBP_Race_HUD_Sub_Festa_TeamHUD.WBP_Race_HUD_Sub_Festa_TeamHUD_C.InitializeRingGauge
 // 0x0005 (0x0005 - 0x0000)
@@ -259,13 +177,7 @@ public:
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_InitializeRingGauge) == 0x000001, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamHUD_C_InitializeRingGauge");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_InitializeRingGauge) == 0x000005, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_C_InitializeRingGauge");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_InitializeRingGauge, CallFunc_GetRaceBonusSetting_ReturnValue) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_InitializeRingGauge::CallFunc_GetRaceBonusSetting_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_InitializeRingGauge, CallFunc_GetSelectedRaceParkPresetId_ReturnValue) == 0x000001, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_InitializeRingGauge::CallFunc_GetSelectedRaceParkPresetId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_InitializeRingGauge, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000002, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_InitializeRingGauge::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_InitializeRingGauge, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000003, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_InitializeRingGauge::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_InitializeRingGauge, CallFunc_BooleanOR_ReturnValue) == 0x000004, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_InitializeRingGauge::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamHUD_C_InitializeRingGauge;
 
 // Function WBP_Race_HUD_Sub_Festa_TeamHUD.WBP_Race_HUD_Sub_Festa_TeamHUD_C.PlayChrageEffect
 // 0x0018 (0x0018 - 0x0000)
@@ -280,14 +192,7 @@ public:
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_PlayChrageEffect) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamHUD_C_PlayChrageEffect");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_PlayChrageEffect) == 0x000018, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_C_PlayChrageEffect");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_PlayChrageEffect, RacerIndex) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_PlayChrageEffect::RacerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_PlayChrageEffect, isSingle) == 0x000004, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_PlayChrageEffect::isSingle' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_PlayChrageEffect, ChargePer) == 0x000008, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_PlayChrageEffect::ChargePer' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_PlayChrageEffect, CallFunc_Map_Find_Value) == 0x000010, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_PlayChrageEffect::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_PlayChrageEffect, CallFunc_Map_Find_ReturnValue) == 0x000014, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_PlayChrageEffect::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_PlayChrageEffect, CallFunc_IsValid_ReturnValue) == 0x000015, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_PlayChrageEffect::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamHUD_C_PlayChrageEffect;
 
 // Function WBP_Race_HUD_Sub_Festa_TeamHUD.WBP_Race_HUD_Sub_Festa_TeamHUD_C.SetBaseColor
 // 0x00B0 (0x00B0 - 0x0000)
@@ -322,28 +227,7 @@ public:
 	uint8                                         Pad_99[0x3];                                       // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           CallFunc_Conv_ColorToLinearColor_ReturnValue_1;    // 0x009C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor) == 0x0000B0, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000001, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor, CallFunc_IsValid_ReturnValue) == 0x000002, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor, Temp_int_Variable) == 0x000004, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor, CallFunc_MakeLiteralByte_ReturnValue) == 0x000008, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor, CallFunc_GetEnumeratorName_ReturnValue) == 0x00000C, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor, CallFunc_IsValid_ReturnValue_1) == 0x000014, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor, CallFunc_MakeLiteralByte_ReturnValue_1) == 0x000015, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor::CallFunc_MakeLiteralByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor, CallFunc_GetGroupColorId_ReturnValue) == 0x000016, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor::CallFunc_GetGroupColorId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor, CallFunc_GetEnumeratorName_ReturnValue_1) == 0x000018, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor::CallFunc_GetEnumeratorName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor, CallFunc_GetEnumeratorName_ReturnValue_2) == 0x000020, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor::CallFunc_GetEnumeratorName_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor, CallFunc_MakeLiteralByte_ReturnValue_2) == 0x000028, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor::CallFunc_MakeLiteralByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor, CallFunc_GetDataTableRowFromName_OutRow) == 0x000030, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000050, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor, CallFunc_GetEnumeratorName_ReturnValue_3) == 0x000054, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor::CallFunc_GetEnumeratorName_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor, K2Node_Select_Default) == 0x00005C, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor, CallFunc_Conv_ColorToLinearColor_ReturnValue) == 0x000064, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor::CallFunc_Conv_ColorToLinearColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor, CallFunc_GetDataTableRowFromName_OutRow_1) == 0x000078, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor::CallFunc_GetDataTableRowFromName_OutRow_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor, CallFunc_GetDataTableRowFromName_ReturnValue_1) == 0x000098, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor::CallFunc_GetDataTableRowFromName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor, CallFunc_Conv_ColorToLinearColor_ReturnValue_1) == 0x00009C, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor::CallFunc_Conv_ColorToLinearColor_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBaseColor;
 
 // Function WBP_Race_HUD_Sub_Festa_TeamHUD.WBP_Race_HUD_Sub_Festa_TeamHUD_C.SetBoostGaugePercent
 // 0x0008 (0x0008 - 0x0000)
@@ -352,9 +236,7 @@ struct WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBoostGaugePercent final
 public:
 	double                                        Percent;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBoostGaugePercent) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBoostGaugePercent");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBoostGaugePercent) == 0x000008, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBoostGaugePercent");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBoostGaugePercent, Percent) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBoostGaugePercent::Percent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetBoostGaugePercent;
 
 // Function WBP_Race_HUD_Sub_Festa_TeamHUD.WBP_Race_HUD_Sub_Festa_TeamHUD_C.SetCrown
 // 0x0120 (0x0120 - 0x0000)
@@ -402,40 +284,7 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue_2;             // 0x0119(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown) == 0x000120, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown, IsVisible_0) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown::IsVisible_0' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown, OutTopGroupList) == 0x000008, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown::OutTopGroupList' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown, TopGroupList) == 0x000018, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown::TopGroupList' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown, MaxPoint) == 0x000028, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown::MaxPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown, ResultRacer) == 0x000030, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown::ResultRacer' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown, NowPointList) == 0x000040, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown::NowPointList' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown, NextPointList) == 0x000050, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown::NextPointList' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown, Temp_int_Variable) == 0x000060, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown, Temp_int_Variable_1) == 0x000064, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown, Temp_int_Variable_2) == 0x000068, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown, Temp_int_Variable_3) == 0x00006C, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown, CallFunc_GetCrownIndex_OutPut) == 0x000070, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown::CallFunc_GetCrownIndex_OutPut' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000074, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown, CallFunc_Add_IntInt_ReturnValue) == 0x000078, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown, CallFunc_GetPartyResultRacerAll_TeamInfo) == 0x000080, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown::CallFunc_GetPartyResultRacerAll_TeamInfo' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown, CallFunc_GetPartyResultRacerAll_ReturnValue) == 0x0000C8, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown::CallFunc_GetPartyResultRacerAll_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown, Temp_int_Variable_4) == 0x0000D8, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown, CallFunc_Array_Get_Item) == 0x0000E0, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown, CallFunc_Array_Find_ReturnValue) == 0x0000E8, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown, CallFunc_Greater_IntInt_ReturnValue) == 0x0000EC, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown, Temp_int_Variable_5) == 0x0000F0, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown::Temp_int_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0000F4, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown, CallFunc_Array_Add_ReturnValue) == 0x0000F8, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown, Temp_int_Variable_6) == 0x0000FC, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown::Temp_int_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown, CallFunc_Array_Add_ReturnValue_1) == 0x000100, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown, CallFunc_Greater_IntInt_ReturnValue_1) == 0x000104, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown, CallFunc_Array_Add_ReturnValue_2) == 0x000108, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown::CallFunc_Array_Add_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown, CallFunc_Array_Add_ReturnValue_3) == 0x00010C, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown::CallFunc_Array_Add_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown, CallFunc_Array_Add_ReturnValue_4) == 0x000110, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown::CallFunc_Array_Add_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown, CallFunc_Array_Add_ReturnValue_5) == 0x000114, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown::CallFunc_Array_Add_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000118, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown, CallFunc_Greater_IntInt_ReturnValue_2) == 0x000119, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown::CallFunc_Greater_IntInt_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetCrown;
 
 // Function WBP_Race_HUD_Sub_Festa_TeamHUD.WBP_Race_HUD_Sub_Festa_TeamHUD_C.SetDirverIcon
 // 0x0068 (0x0068 - 0x0000)
@@ -463,23 +312,7 @@ public:
 	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUnionRacerStatusObject*                CallFunc_GetRacerStatusObject_ReturnValue;         // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon) == 0x000068, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon, IndexMax) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon::IndexMax' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon, Temp_int_Variable) == 0x000004, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon, CallFunc_Map_Keys_Keys) == 0x000010, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon::CallFunc_Map_Keys_Keys' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon, CallFunc_Array_Get_Item) == 0x000020, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000028, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon, CallFunc_GetUnionRacers_ReturnValue) == 0x000030, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon::CallFunc_GetUnionRacers_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon, CallFunc_Array_Get_Item_1) == 0x000038, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon, CallFunc_Array_Get_Item_2) == 0x00003C, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon, CallFunc_Map_Find_Value) == 0x000048, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon, CallFunc_Map_Find_ReturnValue) == 0x000050, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon, CallFunc_Subtract_IntInt_ReturnValue) == 0x000054, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon, CallFunc_Greater_IntInt_ReturnValue) == 0x000058, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon, CallFunc_GetRacerStatusObject_ReturnValue) == 0x000060, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon::CallFunc_GetRacerStatusObject_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon;
 
 // Function WBP_Race_HUD_Sub_Festa_TeamHUD.WBP_Race_HUD_Sub_Festa_TeamHUD_C.SetDisplayInfo
 // 0x08B0 (0x08B0 - 0x0000)
@@ -553,58 +386,7 @@ public:
 	TSoftObjectPtr<class UTexture2D>              CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue_2; // 0x0880(0x0028)(UObjectWrapper, HasGetValueTypeHash)
 	class UUnionRacers*                           CallFunc_GetUnionRacers_ReturnValue;               // 0x08A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo) == 0x0008B0, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, PlayerIndex) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Map_Keys_Keys) == 0x000008, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Map_Keys_Keys' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Array_Length_ReturnValue) == 0x000018, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Subtract_IntInt_ReturnValue) == 0x00001C, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, Temp_byte_Variable) == 0x000020, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_MakeLiteralByte_ReturnValue) == 0x000021, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetEnumeratorName_ReturnValue) == 0x000024, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetDataTableRowFromName_OutRow) == 0x000030, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x0003C0, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x0003C8, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_IsValid_ReturnValue) == 0x0003D0, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, K2Node_DynamicCast_As_____2D) == 0x0003D8, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, K2Node_DynamicCast_bSuccess) == 0x0003E0, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue) == 0x0003E8, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, Temp_bool_Variable) == 0x000410, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Array_Length_ReturnValue_1) == 0x000414, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Array_Add_ReturnValue) == 0x000418, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetRacerIndexByPlayerID_ReturnValue) == 0x00041C, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetRacerIndexByPlayerID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Map_Find_Value) == 0x000420, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Map_Find_ReturnValue) == 0x000428, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetRacerStatusObject_ReturnValue) == 0x000430, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetRacerStatusObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetGroupIndex_ReturnValue) == 0x000438, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetGroupIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, Temp_int_Variable) == 0x00043C, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetPlayerRacerIndex_ReturnValue) == 0x000440, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetPlayerRacerIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Array_Get_Item) == 0x000444, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Map_Find_Value_1) == 0x000448, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Map_Find_Value_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Map_Find_ReturnValue_1) == 0x000450, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Map_Find_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000451, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetRacerStatusObject_ReturnValue_1) == 0x000458, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetRacerStatusObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Add_IntInt_ReturnValue) == 0x000460, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_IsRaceParkRivalRacerSkin_ReturnValue) == 0x000464, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_IsRaceParkRivalRacerSkin_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetRacerIndex_OutRacerIndex) == 0x000468, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetRacerIndex_OutRacerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetIsCharacterReleased_ReturnValue) == 0x00046C, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetIsCharacterReleased_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Array_AddUnique_ReturnValue) == 0x000470, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Array_AddUnique_ReturnValue_1) == 0x000474, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Array_AddUnique_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, K2Node_Select_Default) == 0x000478, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetGroupIndex_ReturnValue_1) == 0x00047C, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetGroupIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetEnumeratorName_ReturnValue_1) == 0x000480, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetEnumeratorName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000488, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetDataTableRowFromName_OutRow_1) == 0x000490, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetDataTableRowFromName_OutRow_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetDataTableRowFromName_ReturnValue_1) == 0x000820, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetDataTableRowFromName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_LoadAsset_Blocking_ReturnValue_1) == 0x000828, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_LoadAsset_Blocking_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_LoadAsset_Blocking_ReturnValue_2) == 0x000830, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_LoadAsset_Blocking_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, K2Node_DynamicCast_As_____2D_1) == 0x000838, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::K2Node_DynamicCast_As_____2D_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, K2Node_DynamicCast_bSuccess_1) == 0x000840, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, K2Node_DynamicCast_As_____2D_2) == 0x000848, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::K2Node_DynamicCast_As_____2D_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, K2Node_DynamicCast_bSuccess_2) == 0x000850, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue_1) == 0x000858, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue_2) == 0x000880, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetUnionRacers_ReturnValue) == 0x0008A8, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetUnionRacers_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo;
 
 // Function WBP_Race_HUD_Sub_Festa_TeamHUD.WBP_Race_HUD_Sub_Festa_TeamHUD_C.SetModeBattleRush
 // 0x0001 (0x0001 - 0x0000)
@@ -613,9 +395,7 @@ struct WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetModeBattleRush final
 public:
 	bool                                          IsModeBattleRush;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetModeBattleRush) == 0x000001, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetModeBattleRush");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetModeBattleRush) == 0x000001, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetModeBattleRush");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetModeBattleRush, IsModeBattleRush) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetModeBattleRush::IsModeBattleRush' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetModeBattleRush;
 
 // Function WBP_Race_HUD_Sub_Festa_TeamHUD.WBP_Race_HUD_Sub_Festa_TeamHUD_C.SetNormalGaugePercent
 // 0x0008 (0x0008 - 0x0000)
@@ -624,9 +404,7 @@ struct WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetNormalGaugePercent final
 public:
 	double                                        Percent;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetNormalGaugePercent) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetNormalGaugePercent");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetNormalGaugePercent) == 0x000008, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetNormalGaugePercent");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetNormalGaugePercent, Percent) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetNormalGaugePercent::Percent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetNormalGaugePercent;
 
 // Function WBP_Race_HUD_Sub_Festa_TeamHUD.WBP_Race_HUD_Sub_Festa_TeamHUD_C.SetPanelRank
 // 0x0010 (0x0010 - 0x0000)
@@ -636,10 +414,7 @@ public:
 	class UWBP_Race_HUD_Sub_Festa_TeamGroup_C*    RanelHHUD;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                         Rank;                                              // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetPanelRank) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetPanelRank");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetPanelRank) == 0x000010, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetPanelRank");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetPanelRank, RanelHHUD) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetPanelRank::RanelHHUD' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetPanelRank, Rank) == 0x000008, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetPanelRank::Rank' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetPanelRank;
 
 // Function WBP_Race_HUD_Sub_Festa_TeamHUD.WBP_Race_HUD_Sub_Festa_TeamHUD_C.SetPreStartInfo
 // 0x0018 (0x0018 - 0x0000)
@@ -652,12 +427,7 @@ public:
 	class UWBP_Race_HUD_Sub_Festa_TeamGroup_P1_C* InWBPGroup;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetPreStartInfo) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetPreStartInfo");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetPreStartInfo) == 0x000018, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetPreStartInfo");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetPreStartInfo, IsValid) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetPreStartInfo::IsValid' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetPreStartInfo, PlayerIndex) == 0x000004, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetPreStartInfo::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetPreStartInfo, InWBPGroup) == 0x000008, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetPreStartInfo::InWBPGroup' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetPreStartInfo, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetPreStartInfo::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetPreStartInfo;
 
 // Function WBP_Race_HUD_Sub_Festa_TeamHUD.WBP_Race_HUD_Sub_Festa_TeamHUD_C.SetRankForSingle
 // 0x0004 (0x0004 - 0x0000)
@@ -666,9 +436,7 @@ struct WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetRankForSingle final
 public:
 	int32                                         newParam;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetRankForSingle) == 0x000004, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetRankForSingle");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetRankForSingle) == 0x000004, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetRankForSingle");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetRankForSingle, newParam) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetRankForSingle::newParam' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetRankForSingle;
 
 // Function WBP_Race_HUD_Sub_Festa_TeamHUD.WBP_Race_HUD_Sub_Festa_TeamHUD_C.SetTeamIcon
 // 0x01D0 (0x01D0 - 0x0000)
@@ -722,43 +490,7 @@ public:
 	struct FGroupUIData                           CallFunc_GetDataTableRowFromName_OutRow_1;         // 0x0198(0x0030)()
 	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue_1;    // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon) == 0x0001D0, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, TeamId) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::TeamId' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, WindowNo) == 0x000004, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::WindowNo' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, LocalTeamId) == 0x000008, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::LocalTeamId' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, LocalUIDataArray) == 0x000010, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::LocalUIDataArray' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, LocalGroupId) == 0x000020, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::LocalGroupId' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, LocalSoftRefTexture) == 0x000028, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::LocalSoftRefTexture' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, CallFunc_IsValidSoftObjectReference_ReturnValue) == 0x000050, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::CallFunc_IsValidSoftObjectReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000058, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, CallFunc_GetEnumeratorName_ReturnValue) == 0x000060, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, CallFunc_IsValid_ReturnValue) == 0x000068, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, CallFunc_GetDataTableRowFromName_OutRow) == 0x000070, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x0000A0, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, CallFunc_IsValid_ReturnValue_1) == 0x0000A1, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, K2Node_DynamicCast_AsFesta_UIData_Asset) == 0x0000A8, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::K2Node_DynamicCast_AsFesta_UIData_Asset' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, K2Node_DynamicCast_bSuccess) == 0x0000B0, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, CallFunc_GetFestaUITeamUIDataByGroupColorId_ArrayData) == 0x0000B8, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::CallFunc_GetFestaUITeamUIDataByGroupColorId_ArrayData' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, CallFunc_GetFestaUITeamUIDataByGroupColorId_IsFound) == 0x0000C8, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::CallFunc_GetFestaUITeamUIDataByGroupColorId_IsFound' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, CallFunc_Array_Get_Item) == 0x0000D0, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, CallFunc_MakeLiteralByte_ReturnValue) == 0x0000D8, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, Temp_int_Variable) == 0x0000DC, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, CallFunc_GetEnumeratorName_ReturnValue_1) == 0x0000E0, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::CallFunc_GetEnumeratorName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, CallFunc_MakeLiteralByte_ReturnValue_1) == 0x0000E8, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::CallFunc_MakeLiteralByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, CallFunc_Array_Get_Item_1) == 0x0000F0, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, CallFunc_GetEnumeratorName_ReturnValue_2) == 0x000168, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::CallFunc_GetEnumeratorName_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x000170, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000171, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, CallFunc_Array_Get_Item_2) == 0x000178, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000180, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, CallFunc_IsValid_ReturnValue_2) == 0x000181, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, CallFunc_MakeLiteralByte_ReturnValue_2) == 0x000182, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::CallFunc_MakeLiteralByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, CallFunc_GetGroupColorId_ReturnValue) == 0x000183, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::CallFunc_GetGroupColorId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, CallFunc_GetEnumeratorName_ReturnValue_3) == 0x000184, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::CallFunc_GetEnumeratorName_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, K2Node_Select_Default) == 0x00018C, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, CallFunc_GetDataTableRowFromName_OutRow_1) == 0x000198, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::CallFunc_GetDataTableRowFromName_OutRow_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon, CallFunc_GetDataTableRowFromName_ReturnValue_1) == 0x0001C8, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon::CallFunc_GetDataTableRowFromName_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamIcon;
 
 // Function WBP_Race_HUD_Sub_Festa_TeamHUD.WBP_Race_HUD_Sub_Festa_TeamHUD_C.SetTeamInfo
 // 0x0008 (0x0008 - 0x0000)
@@ -768,10 +500,7 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamInfo) == 0x000004, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamInfo");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamInfo) == 0x000008, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamInfo");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamInfo, CallFunc_Add_IntInt_ReturnValue) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamInfo::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamInfo, CallFunc_Percent_IntInt_ReturnValue) == 0x000004, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamInfo::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamInfo;
 
 // Function WBP_Race_HUD_Sub_Festa_TeamHUD.WBP_Race_HUD_Sub_Festa_TeamHUD_C.SetTeamRank
 // 0x0004 (0x0004 - 0x0000)
@@ -780,9 +509,7 @@ struct WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamRank final
 public:
 	int32                                         TeamRank;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamRank) == 0x000004, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamRank");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamRank) == 0x000004, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamRank");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamRank, TeamRank) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamRank::TeamRank' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetTeamRank;
 
 // Function WBP_Race_HUD_Sub_Festa_TeamHUD.WBP_Race_HUD_Sub_Festa_TeamHUD_C.UpdateCharaInfo
 // 0x0160 (0x0160 - 0x0000)
@@ -848,53 +575,7 @@ public:
 	uint8                                         Pad_159[0x3];                                      // 0x0159(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x015C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo) == 0x000160, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, IsForce) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::IsForce' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, TmpGroupHUD) == 0x000008, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::TmpGroupHUD' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, TmpPanelIndexKey) == 0x000010, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::TmpPanelIndexKey' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, TmpSortMax) == 0x000020, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::TmpSortMax' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, TmpRankSort) == 0x000028, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::TmpRankSort' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, TmpMapRank) == 0x000038, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::TmpMapRank' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, InfoMax) == 0x000088, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::InfoMax' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, TmpRanks) == 0x000090, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::TmpRanks' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, Temp_int_Variable) == 0x0000A0, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_Add_IntInt_ReturnValue) == 0x0000A4, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_Map_Keys_Keys) == 0x0000A8, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_Map_Keys_Keys' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, Temp_int_Variable_1) == 0x0000B8, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, Temp_int_Variable_2) == 0x0000BC, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_Array_Get_Item) == 0x0000C0, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0000C4, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000C8, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_Add_IntInt_ReturnValue_2) == 0x0000CC, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_Array_Length_ReturnValue) == 0x0000D0, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_Subtract_IntInt_ReturnValue) == 0x0000D4, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_Array_Length_ReturnValue_1) == 0x0000D8, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_Array_Get_Item_1) == 0x0000DC, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_Greater_IntInt_ReturnValue) == 0x0000E0, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_Map_Find_Value) == 0x0000E4, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_Map_Find_ReturnValue) == 0x0000E8, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_NotEqual_IntInt_ReturnValue) == 0x0000E9, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0000EA, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_BooleanOR_ReturnValue) == 0x0000EB, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_Map_Find_Value_1) == 0x0000F0, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_Map_Find_Value_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_Map_Find_ReturnValue_1) == 0x0000F8, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_Map_Find_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_GetRacerStatusObject_ReturnValue) == 0x000100, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_GetRacerStatusObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_MaxOfIntArray_IndexOfMaxValue) == 0x000108, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_MaxOfIntArray_IndexOfMaxValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_MaxOfIntArray_MaxValue) == 0x00010C, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_MaxOfIntArray_MaxValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_IsValid_ReturnValue) == 0x000110, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x000114, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x000118, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_GetSingle_GroupPanelHUD) == 0x000120, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_GetSingle_GroupPanelHUD' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_GetUnionRacers_ReturnValue) == 0x000128, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_GetUnionRacers_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_Array_Get_Item_2) == 0x000130, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_Map_Find_Value_2) == 0x000138, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_Map_Find_Value_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_Map_Find_ReturnValue_2) == 0x000140, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_Map_Find_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_Array_Length_ReturnValue_2) == 0x000144, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_Subtract_IntInt_ReturnValue_2) == 0x000148, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_Subtract_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_GetRacerStatusObject_ReturnValue_1) == 0x000150, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_GetRacerStatusObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_LessEqual_IntInt_ReturnValue_2) == 0x000158, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_LessEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo, CallFunc_Array_Add_ReturnValue) == 0x00015C, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamHUD_C_UpdateCharaInfo;
 
 }
 

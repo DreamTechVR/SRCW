@@ -22,10 +22,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Hint_Sub_11014_C_ExecuteUbergraph_WBP_Hint_Sub_11014) == 0x000004, "Wrong alignment on WBP_Hint_Sub_11014_C_ExecuteUbergraph_WBP_Hint_Sub_11014");
-static_assert(sizeof(WBP_Hint_Sub_11014_C_ExecuteUbergraph_WBP_Hint_Sub_11014) == 0x000008, "Wrong size on WBP_Hint_Sub_11014_C_ExecuteUbergraph_WBP_Hint_Sub_11014");
-static_assert(offsetof(WBP_Hint_Sub_11014_C_ExecuteUbergraph_WBP_Hint_Sub_11014, EntryPoint) == 0x000000, "Member 'WBP_Hint_Sub_11014_C_ExecuteUbergraph_WBP_Hint_Sub_11014::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Hint_Sub_11014_C_ExecuteUbergraph_WBP_Hint_Sub_11014, K2Node_Event_IsDesignTime) == 0x000004, "Member 'WBP_Hint_Sub_11014_C_ExecuteUbergraph_WBP_Hint_Sub_11014::K2Node_Event_IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Hint_Sub_11014_C_ExecuteUbergraph_WBP_Hint_Sub_11014;
 
 // Function WBP_Hint_Sub_11014.WBP_Hint_Sub_11014_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +31,7 @@ struct WBP_Hint_Sub_11014_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Hint_Sub_11014_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_Hint_Sub_11014_C_PreConstruct");
-static_assert(sizeof(WBP_Hint_Sub_11014_C_PreConstruct) == 0x000001, "Wrong size on WBP_Hint_Sub_11014_C_PreConstruct");
-static_assert(offsetof(WBP_Hint_Sub_11014_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_Hint_Sub_11014_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Hint_Sub_11014_C_PreConstruct;
 
 }
 

@@ -129,6 +129,20 @@ void UWBP_FooterMenu_C::BndEvt__WBP_FooterMenu_MouseInteraction_Sub_0_K2Node_Com
 }
 
 
+// Function WBP_FooterMenu.WBP_FooterMenu_C.BndEvt__WBP_FooterMenu_MouseInteraction_Sub_0_K2Node_ComponentBoundEvent_4_OnButtonReleasedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_FooterMenu_C::BndEvt__WBP_FooterMenu_MouseInteraction_Sub_0_K2Node_ComponentBoundEvent_4_OnButtonReleasedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FooterMenu_C", "BndEvt__WBP_FooterMenu_MouseInteraction_Sub_0_K2Node_ComponentBoundEvent_4_OnButtonReleasedEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_FooterMenu.WBP_FooterMenu_C.BndEvt__WBP_FooterMenu_MouseInteraction_Sub_1_K2Node_ComponentBoundEvent_2_OnButtonPressedEvent__DelegateSignature
 // (BlueprintEvent)
 
@@ -138,6 +152,20 @@ void UWBP_FooterMenu_C::BndEvt__WBP_FooterMenu_MouseInteraction_Sub_1_K2Node_Com
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_FooterMenu_C", "BndEvt__WBP_FooterMenu_MouseInteraction_Sub_1_K2Node_ComponentBoundEvent_2_OnButtonPressedEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_FooterMenu.WBP_FooterMenu_C.BndEvt__WBP_FooterMenu_MouseInteraction_Sub_1_K2Node_ComponentBoundEvent_5_OnButtonReleasedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_FooterMenu_C::BndEvt__WBP_FooterMenu_MouseInteraction_Sub_1_K2Node_ComponentBoundEvent_5_OnButtonReleasedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FooterMenu_C", "BndEvt__WBP_FooterMenu_MouseInteraction_Sub_1_K2Node_ComponentBoundEvent_5_OnButtonReleasedEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -185,6 +213,20 @@ void UWBP_FooterMenu_C::BndEvt__WBP_FooterMenu_MouseInteraction_Sub_2_K2Node_Com
 }
 
 
+// Function WBP_FooterMenu.WBP_FooterMenu_C.BndEvt__WBP_FooterMenu_MouseInteraction_Sub_2_K2Node_ComponentBoundEvent_6_OnButtonReleasedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_FooterMenu_C::BndEvt__WBP_FooterMenu_MouseInteraction_Sub_2_K2Node_ComponentBoundEvent_6_OnButtonReleasedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FooterMenu_C", "BndEvt__WBP_FooterMenu_MouseInteraction_Sub_2_K2Node_ComponentBoundEvent_6_OnButtonReleasedEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_FooterMenu.WBP_FooterMenu_C.BndEvt__WBP_FooterMenu_MouseInteraction_Sub_3_K2Node_ComponentBoundEvent_12_OnButtonPressedEvent__DelegateSignature
 // (BlueprintEvent)
 
@@ -208,6 +250,20 @@ void UWBP_FooterMenu_C::BndEvt__WBP_FooterMenu_MouseInteraction_Sub_3_K2Node_Com
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_FooterMenu_C", "BndEvt__WBP_FooterMenu_MouseInteraction_Sub_3_K2Node_ComponentBoundEvent_13_OnButtonHoverEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_FooterMenu.WBP_FooterMenu_C.BndEvt__WBP_FooterMenu_MouseInteraction_Sub_3_K2Node_ComponentBoundEvent_7_OnButtonReleasedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_FooterMenu_C::BndEvt__WBP_FooterMenu_MouseInteraction_Sub_3_K2Node_ComponentBoundEvent_7_OnButtonReleasedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FooterMenu_C", "BndEvt__WBP_FooterMenu_MouseInteraction_Sub_3_K2Node_ComponentBoundEvent_7_OnButtonReleasedEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -241,6 +297,20 @@ void UWBP_FooterMenu_C::BndEvt__WBP_FooterMenu_MouseInteraction_Sub_4_K2Node_Com
 }
 
 
+// Function WBP_FooterMenu.WBP_FooterMenu_C.BndEvt__WBP_FooterMenu_MouseInteraction_Sub_4_K2Node_ComponentBoundEvent_8_OnButtonReleasedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_FooterMenu_C::BndEvt__WBP_FooterMenu_MouseInteraction_Sub_4_K2Node_ComponentBoundEvent_8_OnButtonReleasedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FooterMenu_C", "BndEvt__WBP_FooterMenu_MouseInteraction_Sub_4_K2Node_ComponentBoundEvent_8_OnButtonReleasedEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_FooterMenu.WBP_FooterMenu_C.BndEvt__WBP_FooterMenu_MouseInteraction_Sub_5_K2Node_ComponentBoundEvent_16_OnButtonPressedEvent__DelegateSignature
 // (BlueprintEvent)
 
@@ -264,6 +334,20 @@ void UWBP_FooterMenu_C::BndEvt__WBP_FooterMenu_MouseInteraction_Sub_5_K2Node_Com
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_FooterMenu_C", "BndEvt__WBP_FooterMenu_MouseInteraction_Sub_5_K2Node_ComponentBoundEvent_17_OnButtonHoverEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_FooterMenu.WBP_FooterMenu_C.BndEvt__WBP_FooterMenu_MouseInteraction_Sub_5_K2Node_ComponentBoundEvent_18_OnButtonReleasedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_FooterMenu_C::BndEvt__WBP_FooterMenu_MouseInteraction_Sub_5_K2Node_ComponentBoundEvent_18_OnButtonReleasedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FooterMenu_C", "BndEvt__WBP_FooterMenu_MouseInteraction_Sub_5_K2Node_ComponentBoundEvent_18_OnButtonReleasedEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

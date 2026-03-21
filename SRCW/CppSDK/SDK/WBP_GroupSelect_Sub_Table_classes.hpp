@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -55,32 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GroupSelect_Sub_Table_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GroupSelect_Sub_Table_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GroupSelect_Sub_Table_C")
 	}
 	static class UWBP_GroupSelect_Sub_Table_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GroupSelect_Sub_Table_C>();
 	}
 };
-static_assert(alignof(UWBP_GroupSelect_Sub_Table_C) == 0x000008, "Wrong alignment on UWBP_GroupSelect_Sub_Table_C");
-static_assert(sizeof(UWBP_GroupSelect_Sub_Table_C) == 0x000398, "Wrong size on UWBP_GroupSelect_Sub_Table_C");
-static_assert(offsetof(UWBP_GroupSelect_Sub_Table_C, UberGraphFrame) == 0x000310, "Member 'UWBP_GroupSelect_Sub_Table_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_Sub_Table_C, Non_Active_Loop) == 0x000318, "Member 'UWBP_GroupSelect_Sub_Table_C::Non_Active_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_Sub_Table_C, FourP_Loop) == 0x000320, "Member 'UWBP_GroupSelect_Sub_Table_C::FourP_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_Sub_Table_C, ThreeP_Loop) == 0x000328, "Member 'UWBP_GroupSelect_Sub_Table_C::ThreeP_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_Sub_Table_C, TwoP_Loop) == 0x000330, "Member 'UWBP_GroupSelect_Sub_Table_C::TwoP_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_Sub_Table_C, OneP_Loop) == 0x000338, "Member 'UWBP_GroupSelect_Sub_Table_C::OneP_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_Sub_Table_C, NPC_Loop) == 0x000340, "Member 'UWBP_GroupSelect_Sub_Table_C::NPC_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_Sub_Table_C, BaseWhite) == 0x000348, "Member 'UWBP_GroupSelect_Sub_Table_C::BaseWhite' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_Sub_Table_C, CharaFaceIcon) == 0x000350, "Member 'UWBP_GroupSelect_Sub_Table_C::CharaFaceIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_Sub_Table_C, PlatformIcon) == 0x000358, "Member 'UWBP_GroupSelect_Sub_Table_C::PlatformIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_Sub_Table_C, RivalIcon) == 0x000360, "Member 'UWBP_GroupSelect_Sub_Table_C::RivalIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_Sub_Table_C, Table_Base) == 0x000368, "Member 'UWBP_GroupSelect_Sub_Table_C::Table_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_Sub_Table_C, Title_Plate) == 0x000370, "Member 'UWBP_GroupSelect_Sub_Table_C::Title_Plate' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_Sub_Table_C, TXT_Name) == 0x000378, "Member 'UWBP_GroupSelect_Sub_Table_C::TXT_Name' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_Sub_Table_C, WBP_CMN_PlayerNumber) == 0x000380, "Member 'UWBP_GroupSelect_Sub_Table_C::WBP_CMN_PlayerNumber' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_Sub_Table_C, WidgetSwitcher_0) == 0x000388, "Member 'UWBP_GroupSelect_Sub_Table_C::WidgetSwitcher_0' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupSelect_Sub_Table_C, WidgetSwitcher_DSP) == 0x000390, "Member 'UWBP_GroupSelect_Sub_Table_C::WidgetSwitcher_DSP' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GroupSelect_Sub_Table_C;
 
 }
 

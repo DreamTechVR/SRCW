@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "UNION_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UNION_classes.hpp"
 
 
 namespace SDK
@@ -38,18 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_MenuStateTitle_C">();
+		BP_STATIC_CLASS_IMPL("BPC_MenuStateTitle_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_MenuStateTitle_C")
 	}
 	static class UBPC_MenuStateTitle_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_MenuStateTitle_C>();
 	}
 };
-static_assert(alignof(UBPC_MenuStateTitle_C) == 0x000008, "Wrong alignment on UBPC_MenuStateTitle_C");
-static_assert(sizeof(UBPC_MenuStateTitle_C) == 0x000150, "Wrong size on UBPC_MenuStateTitle_C");
-static_assert(offsetof(UBPC_MenuStateTitle_C, UberGraphFrame) == 0x000138, "Member 'UBPC_MenuStateTitle_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStateTitle_C, OwnerSequence) == 0x000140, "Member 'UBPC_MenuStateTitle_C::OwnerSequence' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStateTitle_C, TitleBGMHandle) == 0x000148, "Member 'UBPC_MenuStateTitle_C::TitleBGMHandle' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_MenuStateTitle_C;
 
 }
 

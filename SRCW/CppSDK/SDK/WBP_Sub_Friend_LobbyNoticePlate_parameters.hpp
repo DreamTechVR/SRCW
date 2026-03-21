@@ -66,41 +66,7 @@ public:
 	float                                         CallFunc_SetMeterParam_Value_ImplicitCast;         // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate) == 0x000008, "Wrong alignment on WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate");
-static_assert(sizeof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate) == 0x0000E0, "Wrong size on WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate, EntryPoint) == 0x000000, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate, K2Node_CustomEvent_InIconTexture) == 0x000008, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate::K2Node_CustomEvent_InIconTexture' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate, K2Node_CustomEvent_InBgColor) == 0x000030, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate::K2Node_CustomEvent_InBgColor' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate, K2Node_CustomEvent_bInNowPlaying) == 0x000040, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate::K2Node_CustomEvent_bInNowPlaying' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate, K2Node_CustomEvent_InValue) == 0x000048, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate::K2Node_CustomEvent_InValue' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate, K2Node_CustomEvent_InSwitcherIndex) == 0x000050, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate::K2Node_CustomEvent_InSwitcherIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate, K2Node_CustomEvent_InButtonIndex) == 0x000054, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate::K2Node_CustomEvent_InButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate, K2Node_CustomEvent_bInVisible) == 0x000058, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate::K2Node_CustomEvent_bInVisible' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate, K2Node_SwitchInteger_CmpSuccess) == 0x000059, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate, CallFunc_MakeLiteralByte_ReturnValue) == 0x00005A, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000060, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate, CallFunc_GetCurrentDeviceTexture_ReturnValue) == 0x000068, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate::CallFunc_GetCurrentDeviceTexture_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000070, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate, K2Node_DynamicCast_AsWBP_Footer_Menu_Sub_Controller_Cross) == 0x000078, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate::K2Node_DynamicCast_AsWBP_Footer_Menu_Sub_Controller_Cross' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate, K2Node_DynamicCast_bSuccess) == 0x000080, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate, K2Node_DynamicCast_AsWBP_Footer_Menu_Sub_Controller_Btn) == 0x000088, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate::K2Node_DynamicCast_AsWBP_Footer_Menu_Sub_Controller_Btn' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate, K2Node_DynamicCast_bSuccess_1) == 0x000090, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate, CallFunc_IsValid_ReturnValue) == 0x000091, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000098, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate, K2Node_CustomEvent_InPlatformType) == 0x0000A0, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate::K2Node_CustomEvent_InPlatformType' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate, Temp_byte_Variable) == 0x0000A1, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000A2, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate, K2Node_CustomEvent_InText) == 0x0000A8, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate::K2Node_CustomEvent_InText' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate, K2Node_CustomEvent_IsRaceSequence) == 0x0000B8, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate::K2Node_CustomEvent_IsRaceSequence' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate, Temp_byte_Variable_1) == 0x0000B9, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate, CallFunc_GetPlatformGroup_ReturnValue) == 0x0000BA, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate::CallFunc_GetPlatformGroup_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x0000C0, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x0000C8, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate, Temp_bool_Variable) == 0x0000C9, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate, K2Node_Select_Default) == 0x0000CA, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate, CallFunc_Conv_ByteToDouble_ReturnValue) == 0x0000D0, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate::CallFunc_Conv_ByteToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate, CallFunc_SetMeterParam_Value_ImplicitCast) == 0x0000D8, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate::CallFunc_SetMeterParam_Value_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x0000DC, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Sub_Friend_LobbyNoticePlate_C_ExecuteUbergraph_WBP_Sub_Friend_LobbyNoticePlate;
 
 // Function WBP_Sub_Friend_LobbyNoticePlate.WBP_Sub_Friend_LobbyNoticePlate_C.SetControlGaugeValue
 // 0x0008 (0x0008 - 0x0000)
@@ -109,9 +75,7 @@ struct WBP_Sub_Friend_LobbyNoticePlate_C_SetControlGaugeValue final
 public:
 	double                                        InValue;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Sub_Friend_LobbyNoticePlate_C_SetControlGaugeValue) == 0x000008, "Wrong alignment on WBP_Sub_Friend_LobbyNoticePlate_C_SetControlGaugeValue");
-static_assert(sizeof(WBP_Sub_Friend_LobbyNoticePlate_C_SetControlGaugeValue) == 0x000008, "Wrong size on WBP_Sub_Friend_LobbyNoticePlate_C_SetControlGaugeValue");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_SetControlGaugeValue, InValue) == 0x000000, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_SetControlGaugeValue::InValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Sub_Friend_LobbyNoticePlate_C_SetControlGaugeValue;
 
 // Function WBP_Sub_Friend_LobbyNoticePlate.WBP_Sub_Friend_LobbyNoticePlate_C.SetControlIcon
 // 0x0008 (0x0008 - 0x0000)
@@ -121,10 +85,7 @@ public:
 	int32                                         InSwitcherIndex;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         InButtonIndex;                                     // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Sub_Friend_LobbyNoticePlate_C_SetControlIcon) == 0x000004, "Wrong alignment on WBP_Sub_Friend_LobbyNoticePlate_C_SetControlIcon");
-static_assert(sizeof(WBP_Sub_Friend_LobbyNoticePlate_C_SetControlIcon) == 0x000008, "Wrong size on WBP_Sub_Friend_LobbyNoticePlate_C_SetControlIcon");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_SetControlIcon, InSwitcherIndex) == 0x000000, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_SetControlIcon::InSwitcherIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_SetControlIcon, InButtonIndex) == 0x000004, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_SetControlIcon::InButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Sub_Friend_LobbyNoticePlate_C_SetControlIcon;
 
 // Function WBP_Sub_Friend_LobbyNoticePlate.WBP_Sub_Friend_LobbyNoticePlate_C.SetPlatformIcon
 // 0x0001 (0x0001 - 0x0000)
@@ -133,9 +94,7 @@ struct WBP_Sub_Friend_LobbyNoticePlate_C_SetPlatformIcon final
 public:
 	ECrossplayPlatform                            InPlatformType;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Sub_Friend_LobbyNoticePlate_C_SetPlatformIcon) == 0x000001, "Wrong alignment on WBP_Sub_Friend_LobbyNoticePlate_C_SetPlatformIcon");
-static_assert(sizeof(WBP_Sub_Friend_LobbyNoticePlate_C_SetPlatformIcon) == 0x000001, "Wrong size on WBP_Sub_Friend_LobbyNoticePlate_C_SetPlatformIcon");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_SetPlatformIcon, InPlatformType) == 0x000000, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_SetPlatformIcon::InPlatformType' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Sub_Friend_LobbyNoticePlate_C_SetPlatformIcon;
 
 // Function WBP_Sub_Friend_LobbyNoticePlate.WBP_Sub_Friend_LobbyNoticePlate_C.SetPlayerIcon
 // 0x0040 (0x0040 - 0x0000)
@@ -146,11 +105,7 @@ public:
 	struct FLinearColor                           InBgColor;                                         // 0x0028(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bInNowPlaying;                                     // 0x0038(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Sub_Friend_LobbyNoticePlate_C_SetPlayerIcon) == 0x000008, "Wrong alignment on WBP_Sub_Friend_LobbyNoticePlate_C_SetPlayerIcon");
-static_assert(sizeof(WBP_Sub_Friend_LobbyNoticePlate_C_SetPlayerIcon) == 0x000040, "Wrong size on WBP_Sub_Friend_LobbyNoticePlate_C_SetPlayerIcon");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_SetPlayerIcon, InIconTexture) == 0x000000, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_SetPlayerIcon::InIconTexture' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_SetPlayerIcon, InBgColor) == 0x000028, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_SetPlayerIcon::InBgColor' has a wrong offset!");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_SetPlayerIcon, bInNowPlaying) == 0x000038, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_SetPlayerIcon::bInNowPlaying' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Sub_Friend_LobbyNoticePlate_C_SetPlayerIcon;
 
 // Function WBP_Sub_Friend_LobbyNoticePlate.WBP_Sub_Friend_LobbyNoticePlate_C.SetPlayerIconVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -159,9 +114,7 @@ struct WBP_Sub_Friend_LobbyNoticePlate_C_SetPlayerIconVisible final
 public:
 	bool                                          bInVisible;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Sub_Friend_LobbyNoticePlate_C_SetPlayerIconVisible) == 0x000001, "Wrong alignment on WBP_Sub_Friend_LobbyNoticePlate_C_SetPlayerIconVisible");
-static_assert(sizeof(WBP_Sub_Friend_LobbyNoticePlate_C_SetPlayerIconVisible) == 0x000001, "Wrong size on WBP_Sub_Friend_LobbyNoticePlate_C_SetPlayerIconVisible");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_SetPlayerIconVisible, bInVisible) == 0x000000, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_SetPlayerIconVisible::bInVisible' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Sub_Friend_LobbyNoticePlate_C_SetPlayerIconVisible;
 
 // Function WBP_Sub_Friend_LobbyNoticePlate.WBP_Sub_Friend_LobbyNoticePlate_C.SetPlayerNameText
 // 0x0010 (0x0010 - 0x0000)
@@ -170,9 +123,7 @@ struct WBP_Sub_Friend_LobbyNoticePlate_C_SetPlayerNameText final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_Sub_Friend_LobbyNoticePlate_C_SetPlayerNameText) == 0x000008, "Wrong alignment on WBP_Sub_Friend_LobbyNoticePlate_C_SetPlayerNameText");
-static_assert(sizeof(WBP_Sub_Friend_LobbyNoticePlate_C_SetPlayerNameText) == 0x000010, "Wrong size on WBP_Sub_Friend_LobbyNoticePlate_C_SetPlayerNameText");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_SetPlayerNameText, InText) == 0x000000, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_SetPlayerNameText::InText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Sub_Friend_LobbyNoticePlate_C_SetPlayerNameText;
 
 // Function WBP_Sub_Friend_LobbyNoticePlate.WBP_Sub_Friend_LobbyNoticePlate_C.SetRaceCustomVisibility
 // 0x0001 (0x0001 - 0x0000)
@@ -181,9 +132,7 @@ struct WBP_Sub_Friend_LobbyNoticePlate_C_SetRaceCustomVisibility final
 public:
 	bool                                          IsRaceSequence;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Sub_Friend_LobbyNoticePlate_C_SetRaceCustomVisibility) == 0x000001, "Wrong alignment on WBP_Sub_Friend_LobbyNoticePlate_C_SetRaceCustomVisibility");
-static_assert(sizeof(WBP_Sub_Friend_LobbyNoticePlate_C_SetRaceCustomVisibility) == 0x000001, "Wrong size on WBP_Sub_Friend_LobbyNoticePlate_C_SetRaceCustomVisibility");
-static_assert(offsetof(WBP_Sub_Friend_LobbyNoticePlate_C_SetRaceCustomVisibility, IsRaceSequence) == 0x000000, "Member 'WBP_Sub_Friend_LobbyNoticePlate_C_SetRaceCustomVisibility::IsRaceSequence' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Sub_Friend_LobbyNoticePlate_C_SetRaceCustomVisibility;
 
 }
 

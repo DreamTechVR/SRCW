@@ -51,6 +51,26 @@ void UWBP_Race_HUD_Sub_ItemSummonButton_C::ExecuteUbergraph_WBP_Race_HUD_Sub_Ite
 }
 
 
+// Function WBP_Race_HUD_Sub_ItemSummonButton.WBP_Race_HUD_Sub_ItemSummonButton_C.SetAlignment
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bRightSide                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Race_HUD_Sub_ItemSummonButton_C::SetAlignment(bool bRightSide)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Race_HUD_Sub_ItemSummonButton_C", "SetAlignment");
+
+	Params::WBP_Race_HUD_Sub_ItemSummonButton_C_SetAlignment Parms{};
+
+	Parms.bRightSide = bRightSide;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_Race_HUD_Sub_ItemSummonButton.WBP_Race_HUD_Sub_ItemSummonButton_C.SetSummonInputKey
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:

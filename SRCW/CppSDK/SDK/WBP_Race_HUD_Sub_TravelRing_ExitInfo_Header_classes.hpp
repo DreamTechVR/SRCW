@@ -63,32 +63,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C")
 	}
 	static class UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C) == 0x000008, "Wrong alignment on UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C");
-static_assert(sizeof(UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C) == 0x000340, "Wrong size on UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C, TravelRing_Info_Out_delete) == 0x0002E8, "Member 'UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C::TravelRing_Info_Out_delete' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C, TravelRing_Info_Loop_delete) == 0x0002F0, "Member 'UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C::TravelRing_Info_Loop_delete' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C, TravelRing_Info_InOut) == 0x0002F8, "Member 'UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C::TravelRing_Info_InOut' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C, Attention) == 0x000300, "Member 'UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C::Attention' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C, Attention_Eff) == 0x000308, "Member 'UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C::Attention_Eff' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C, Attention_Eff_02) == 0x000310, "Member 'UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C::Attention_Eff_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C, PAT_Pict_DELETE) == 0x000318, "Member 'UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C::PAT_Pict_DELETE' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C, TXT_Info_Delete) == 0x000320, "Member 'UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C::TXT_Info_Delete' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C, TypeIndex) == 0x000328, "Member 'UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C::TypeIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C, EnablePlaySound) == 0x00032C, "Member 'UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C::EnablePlaySound' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C, PlayerIndex) == 0x000330, "Member 'UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C, Type) == 0x000334, "Member 'UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C::Type' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C, IsActive) == 0x000335, "Member 'UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C::IsActive' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C, SoundPan) == 0x000336, "Member 'UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C::SoundPan' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C, SoundHandleStart) == 0x000338, "Member 'UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C::SoundHandleStart' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C, SoundHandleStartInfo) == 0x00033C, "Member 'UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C::SoundHandleStartInfo' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C;
 
 }
 

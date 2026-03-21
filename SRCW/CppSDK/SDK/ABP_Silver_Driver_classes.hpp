@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // AnimBlueprintGeneratedClass ABP_Silver_Driver.ABP_Silver_Driver_C
-// 0x0000 (0x5BD0 - 0x5BD0)
+// 0x0000 (0x5CE0 - 0x5CE0)
 class UABP_Silver_Driver_C final : public UABPT_Driver_C
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABP_Silver_Driver_C">();
+		BP_STATIC_CLASS_IMPL("ABP_Silver_Driver_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABP_Silver_Driver_C")
 	}
 	static class UABP_Silver_Driver_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UABP_Silver_Driver_C>();
 	}
 };
-static_assert(alignof(UABP_Silver_Driver_C) == 0x000010, "Wrong alignment on UABP_Silver_Driver_C");
-static_assert(sizeof(UABP_Silver_Driver_C) == 0x005BD0, "Wrong size on UABP_Silver_Driver_C");
+DUMPER7_ASSERTS_UABP_Silver_Driver_C;
 
 }
 

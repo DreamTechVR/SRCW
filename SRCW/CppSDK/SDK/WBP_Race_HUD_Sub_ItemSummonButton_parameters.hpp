@@ -32,16 +32,19 @@ public:
 	bool                                          CallFunc_SetKey_Success_1;                         // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_SetKey_IsSuccess;                         // 0x002B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemSummonButton) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemSummonButton");
-static_assert(sizeof(WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemSummonButton) == 0x000030, "Wrong size on WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemSummonButton");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemSummonButton, EntryPoint) == 0x000000, "Member 'WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemSummonButton::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemSummonButton, K2Node_Event_Key) == 0x000008, "Member 'WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemSummonButton::K2Node_Event_Key' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemSummonButton, K2Node_Event_IsKeyboard) == 0x000020, "Member 'WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemSummonButton::K2Node_Event_IsKeyboard' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemSummonButton, K2Node_Event_PlayerControllerIndex) == 0x000024, "Member 'WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemSummonButton::K2Node_Event_PlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemSummonButton, CallFunc_Key_IsGamepadKey_ReturnValue) == 0x000028, "Member 'WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemSummonButton::CallFunc_Key_IsGamepadKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemSummonButton, CallFunc_SetKey_Success) == 0x000029, "Member 'WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemSummonButton::CallFunc_SetKey_Success' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemSummonButton, CallFunc_SetKey_Success_1) == 0x00002A, "Member 'WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemSummonButton::CallFunc_SetKey_Success_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemSummonButton, CallFunc_SetKey_IsSuccess) == 0x00002B, "Member 'WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemSummonButton::CallFunc_SetKey_IsSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemSummonButton;
+
+// Function WBP_Race_HUD_Sub_ItemSummonButton.WBP_Race_HUD_Sub_ItemSummonButton_C.SetAlignment
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Race_HUD_Sub_ItemSummonButton_C_SetAlignment final
+{
+public:
+	bool                                          bRightSide;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_1;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_ItemSummonButton_C_SetAlignment;
 
 // Function WBP_Race_HUD_Sub_ItemSummonButton.WBP_Race_HUD_Sub_ItemSummonButton_C.SetSummonInputKey
 // 0x0020 (0x0020 - 0x0000)
@@ -53,11 +56,7 @@ public:
 	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         PlayerControllerIndex;                             // 0x001C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_ItemSummonButton_C_SetSummonInputKey) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_ItemSummonButton_C_SetSummonInputKey");
-static_assert(sizeof(WBP_Race_HUD_Sub_ItemSummonButton_C_SetSummonInputKey) == 0x000020, "Wrong size on WBP_Race_HUD_Sub_ItemSummonButton_C_SetSummonInputKey");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemSummonButton_C_SetSummonInputKey, Key) == 0x000000, "Member 'WBP_Race_HUD_Sub_ItemSummonButton_C_SetSummonInputKey::Key' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemSummonButton_C_SetSummonInputKey, IsKeyboard) == 0x000018, "Member 'WBP_Race_HUD_Sub_ItemSummonButton_C_SetSummonInputKey::IsKeyboard' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_ItemSummonButton_C_SetSummonInputKey, PlayerControllerIndex) == 0x00001C, "Member 'WBP_Race_HUD_Sub_ItemSummonButton_C_SetSummonInputKey::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_ItemSummonButton_C_SetSummonInputKey;
 
 }
 

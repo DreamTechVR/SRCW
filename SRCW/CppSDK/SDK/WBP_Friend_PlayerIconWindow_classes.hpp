@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -53,21 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Friend_PlayerIconWindow_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Friend_PlayerIconWindow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Friend_PlayerIconWindow_C")
 	}
 	static class UWBP_Friend_PlayerIconWindow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Friend_PlayerIconWindow_C>();
 	}
 };
-static_assert(alignof(UWBP_Friend_PlayerIconWindow_C) == 0x000008, "Wrong alignment on UWBP_Friend_PlayerIconWindow_C");
-static_assert(sizeof(UWBP_Friend_PlayerIconWindow_C) == 0x0004A8, "Wrong size on UWBP_Friend_PlayerIconWindow_C");
-static_assert(offsetof(UWBP_Friend_PlayerIconWindow_C, UberGraphFrame) == 0x000470, "Member 'UWBP_Friend_PlayerIconWindow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_PlayerIconWindow_C, CanvasPanel_1) == 0x000478, "Member 'UWBP_Friend_PlayerIconWindow_C::CanvasPanel_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_PlayerIconWindow_C, OutOfContentButton) == 0x000480, "Member 'UWBP_Friend_PlayerIconWindow_C::OutOfContentButton' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_PlayerIconWindow_C, SmallWindowBase) == 0x000488, "Member 'UWBP_Friend_PlayerIconWindow_C::SmallWindowBase' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_PlayerIconWindow_C, WrapBox) == 0x000490, "Member 'UWBP_Friend_PlayerIconWindow_C::WrapBox' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_PlayerIconWindow_C, PlayerIconWidgetArray) == 0x000498, "Member 'UWBP_Friend_PlayerIconWindow_C::PlayerIconWidgetArray' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Friend_PlayerIconWindow_C;
 
 }
 

@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
+#include "UNION_structs.hpp"
+#include "UnionRun_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UnionRun_structs.hpp"
-#include "UNION_structs.hpp"
 
 
 namespace SDK::Params
@@ -28,10 +28,7 @@ public:
 	double                                        InDeltaRotation;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_AddRotation) == 0x000008, "Wrong alignment on BP_MenuRacerPreview_C_AddRotation");
-static_assert(sizeof(BP_MenuRacerPreview_C_AddRotation) == 0x000010, "Wrong size on BP_MenuRacerPreview_C_AddRotation");
-static_assert(offsetof(BP_MenuRacerPreview_C_AddRotation, InDeltaRotation) == 0x000000, "Member 'BP_MenuRacerPreview_C_AddRotation::InDeltaRotation' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_AddRotation, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000008, "Member 'BP_MenuRacerPreview_C_AddRotation::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_AddRotation;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.Attach Driver to Machine
 // 0x0110 (0x0110 - 0x0000)
@@ -45,13 +42,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_K2_AttachToActor_ReturnValue;             // 0x0109(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_Attach_Driver_to_Machine) == 0x000008, "Wrong alignment on BP_MenuRacerPreview_C_Attach_Driver_to_Machine");
-static_assert(sizeof(BP_MenuRacerPreview_C_Attach_Driver_to_Machine) == 0x000110, "Wrong size on BP_MenuRacerPreview_C_Attach_Driver_to_Machine");
-static_assert(offsetof(BP_MenuRacerPreview_C_Attach_Driver_to_Machine, CallFunc_K2_SetActorRelativeRotation_SweepHitResult) == 0x000000, "Member 'BP_MenuRacerPreview_C_Attach_Driver_to_Machine::CallFunc_K2_SetActorRelativeRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Attach_Driver_to_Machine, CallFunc_K2_AttachToComponent_ReturnValue) == 0x0000F8, "Member 'BP_MenuRacerPreview_C_Attach_Driver_to_Machine::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Attach_Driver_to_Machine, CallFunc_GetSkeletalMeshAsset_ReturnValue) == 0x000100, "Member 'BP_MenuRacerPreview_C_Attach_Driver_to_Machine::CallFunc_GetSkeletalMeshAsset_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Attach_Driver_to_Machine, CallFunc_IsValid_ReturnValue) == 0x000108, "Member 'BP_MenuRacerPreview_C_Attach_Driver_to_Machine::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Attach_Driver_to_Machine, CallFunc_K2_AttachToActor_ReturnValue) == 0x000109, "Member 'BP_MenuRacerPreview_C_Attach_Driver_to_Machine::CallFunc_K2_AttachToActor_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_Attach_Driver_to_Machine;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.AttachDriverToHoverboard
 // 0x0100 (0x0100 - 0x0000)
@@ -62,11 +53,7 @@ public:
 	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_K2_AttachToActor_ReturnValue;             // 0x00F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_AttachDriverToHoverboard) == 0x000008, "Wrong alignment on BP_MenuRacerPreview_C_AttachDriverToHoverboard");
-static_assert(sizeof(BP_MenuRacerPreview_C_AttachDriverToHoverboard) == 0x000100, "Wrong size on BP_MenuRacerPreview_C_AttachDriverToHoverboard");
-static_assert(offsetof(BP_MenuRacerPreview_C_AttachDriverToHoverboard, CallFunc_K2_SetActorRelativeRotation_SweepHitResult) == 0x000000, "Member 'BP_MenuRacerPreview_C_AttachDriverToHoverboard::CallFunc_K2_SetActorRelativeRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_AttachDriverToHoverboard, CallFunc_K2_AttachToComponent_ReturnValue) == 0x0000F8, "Member 'BP_MenuRacerPreview_C_AttachDriverToHoverboard::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_AttachDriverToHoverboard, CallFunc_K2_AttachToActor_ReturnValue) == 0x0000F9, "Member 'BP_MenuRacerPreview_C_AttachDriverToHoverboard::CallFunc_K2_AttachToActor_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_AttachDriverToHoverboard;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.CharaMachineMoveStart
 // 0x0170 (0x0170 - 0x0000)
@@ -79,12 +66,7 @@ public:
 	struct FHitResult                             CallFunc_K2_SetActorTransform_SweepHitResult;      // 0x0068(0x00F8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_K2_SetActorTransform_ReturnValue;         // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_CharaMachineMoveStart) == 0x000010, "Wrong alignment on BP_MenuRacerPreview_C_CharaMachineMoveStart");
-static_assert(sizeof(BP_MenuRacerPreview_C_CharaMachineMoveStart) == 0x000170, "Wrong size on BP_MenuRacerPreview_C_CharaMachineMoveStart");
-static_assert(offsetof(BP_MenuRacerPreview_C_CharaMachineMoveStart, GoalTransForm_0) == 0x000000, "Member 'BP_MenuRacerPreview_C_CharaMachineMoveStart::GoalTransForm_0' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_CharaMachineMoveStart, NoLerp) == 0x000060, "Member 'BP_MenuRacerPreview_C_CharaMachineMoveStart::NoLerp' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_CharaMachineMoveStart, CallFunc_K2_SetActorTransform_SweepHitResult) == 0x000068, "Member 'BP_MenuRacerPreview_C_CharaMachineMoveStart::CallFunc_K2_SetActorTransform_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_CharaMachineMoveStart, CallFunc_K2_SetActorTransform_ReturnValue) == 0x000160, "Member 'BP_MenuRacerPreview_C_CharaMachineMoveStart::CallFunc_K2_SetActorTransform_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_CharaMachineMoveStart;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.CorrectCustomizeData
 // 0x0080 (0x0080 - 0x0000)
@@ -94,10 +76,7 @@ public:
 	struct FUserMachineCustomizeData              InCustomizeData;                                   // 0x0000(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm)
 	ECarStatusType                                InVehicleType;                                     // 0x0078(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_CorrectCustomizeData) == 0x000008, "Wrong alignment on BP_MenuRacerPreview_C_CorrectCustomizeData");
-static_assert(sizeof(BP_MenuRacerPreview_C_CorrectCustomizeData) == 0x000080, "Wrong size on BP_MenuRacerPreview_C_CorrectCustomizeData");
-static_assert(offsetof(BP_MenuRacerPreview_C_CorrectCustomizeData, InCustomizeData) == 0x000000, "Member 'BP_MenuRacerPreview_C_CorrectCustomizeData::InCustomizeData' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_CorrectCustomizeData, InVehicleType) == 0x000078, "Member 'BP_MenuRacerPreview_C_CorrectCustomizeData::InVehicleType' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_CorrectCustomizeData;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.CreateDriver
 // 0x0120 (0x0120 - 0x0000)
@@ -125,25 +104,7 @@ public:
 	class ABP_MenuDriverPawn_C*                   K2Node_DynamicCast_AsBP_Menu_Driver_Pawn;          // 0x0110(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_CreateDriver) == 0x000010, "Wrong alignment on BP_MenuRacerPreview_C_CreateDriver");
-static_assert(sizeof(BP_MenuRacerPreview_C_CreateDriver) == 0x000120, "Wrong size on BP_MenuRacerPreview_C_CreateDriver");
-static_assert(offsetof(BP_MenuRacerPreview_C_CreateDriver, Temp_byte_Variable) == 0x000000, "Member 'BP_MenuRacerPreview_C_CreateDriver::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_CreateDriver, Temp_struct_Variable) == 0x000010, "Member 'BP_MenuRacerPreview_C_CreateDriver::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_CreateDriver, CallFunc_AddComponent_ReturnValue) == 0x000070, "Member 'BP_MenuRacerPreview_C_CreateDriver::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_CreateDriver, Temp_bool_Variable) == 0x000078, "Member 'BP_MenuRacerPreview_C_CreateDriver::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_CreateDriver, CallFunc_IsHoverboard_ReturnValue) == 0x000079, "Member 'BP_MenuRacerPreview_C_CreateDriver::CallFunc_IsHoverboard_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_CreateDriver, CallFunc_SetAnimClass_self_CastInput) == 0x000080, "Member 'BP_MenuRacerPreview_C_CreateDriver::CallFunc_SetAnimClass_self_CastInput' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_CreateDriver, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000090, "Member 'BP_MenuRacerPreview_C_CreateDriver::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_CreateDriver, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000091, "Member 'BP_MenuRacerPreview_C_CreateDriver::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_CreateDriver, CallFunc_BooleanAND_ReturnValue) == 0x000092, "Member 'BP_MenuRacerPreview_C_CreateDriver::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_CreateDriver, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000093, "Member 'BP_MenuRacerPreview_C_CreateDriver::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_CreateDriver, K2Node_Select_Default) == 0x000094, "Member 'BP_MenuRacerPreview_C_CreateDriver::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_CreateDriver, CallFunc_Conv_ByteToText_ReturnValue) == 0x000098, "Member 'BP_MenuRacerPreview_C_CreateDriver::CallFunc_Conv_ByteToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_CreateDriver, K2Node_MakeStruct_FormatArgumentData) == 0x0000A8, "Member 'BP_MenuRacerPreview_C_CreateDriver::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_CreateDriver, K2Node_MakeArray_Array) == 0x0000F0, "Member 'BP_MenuRacerPreview_C_CreateDriver::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_CreateDriver, CallFunc_Format_ReturnValue) == 0x000100, "Member 'BP_MenuRacerPreview_C_CreateDriver::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_CreateDriver, K2Node_DynamicCast_AsBP_Menu_Driver_Pawn) == 0x000110, "Member 'BP_MenuRacerPreview_C_CreateDriver::K2Node_DynamicCast_AsBP_Menu_Driver_Pawn' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_CreateDriver, K2Node_DynamicCast_bSuccess) == 0x000118, "Member 'BP_MenuRacerPreview_C_CreateDriver::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_CreateDriver;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.CreateHoverboard
 // 0x01D0 (0x01D0 - 0x0000)
@@ -158,14 +119,7 @@ public:
 	class UChildActorComponent*                   CallFunc_AddComponent_ReturnValue;                 // 0x00D0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             CallFunc_K2_SetRelativeTransform_SweepHitResult;   // 0x00D8(0x00F8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_CreateHoverboard) == 0x000010, "Wrong alignment on BP_MenuRacerPreview_C_CreateHoverboard");
-static_assert(sizeof(BP_MenuRacerPreview_C_CreateHoverboard) == 0x0001D0, "Wrong size on BP_MenuRacerPreview_C_CreateHoverboard");
-static_assert(offsetof(BP_MenuRacerPreview_C_CreateHoverboard, CallFunc_MakeTransform_ReturnValue) == 0x000000, "Member 'BP_MenuRacerPreview_C_CreateHoverboard::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_CreateHoverboard, Temp_struct_Variable) == 0x000060, "Member 'BP_MenuRacerPreview_C_CreateHoverboard::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_CreateHoverboard, K2Node_DynamicCast_AsBP_Menu_Racer_Hoverboard) == 0x0000C0, "Member 'BP_MenuRacerPreview_C_CreateHoverboard::K2Node_DynamicCast_AsBP_Menu_Racer_Hoverboard' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_CreateHoverboard, K2Node_DynamicCast_bSuccess) == 0x0000C8, "Member 'BP_MenuRacerPreview_C_CreateHoverboard::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_CreateHoverboard, CallFunc_AddComponent_ReturnValue) == 0x0000D0, "Member 'BP_MenuRacerPreview_C_CreateHoverboard::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_CreateHoverboard, CallFunc_K2_SetRelativeTransform_SweepHitResult) == 0x0000D8, "Member 'BP_MenuRacerPreview_C_CreateHoverboard::CallFunc_K2_SetRelativeTransform_SweepHitResult' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_CreateHoverboard;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.CreateMachine
 // 0x0090 (0x0090 - 0x0000)
@@ -180,14 +134,7 @@ public:
 	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UChildActorComponent*                   CallFunc_AddComponent_ReturnValue;                 // 0x0080(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_CreateMachine) == 0x000010, "Wrong alignment on BP_MenuRacerPreview_C_CreateMachine");
-static_assert(sizeof(BP_MenuRacerPreview_C_CreateMachine) == 0x000090, "Wrong size on BP_MenuRacerPreview_C_CreateMachine");
-static_assert(offsetof(BP_MenuRacerPreview_C_CreateMachine, TempMachineActor) == 0x000000, "Member 'BP_MenuRacerPreview_C_CreateMachine::TempMachineActor' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_CreateMachine, TempMachineComponet) == 0x000008, "Member 'BP_MenuRacerPreview_C_CreateMachine::TempMachineComponet' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_CreateMachine, Temp_struct_Variable) == 0x000010, "Member 'BP_MenuRacerPreview_C_CreateMachine::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_CreateMachine, K2Node_DynamicCast_AsBP_Menu_Racer_Machine) == 0x000070, "Member 'BP_MenuRacerPreview_C_CreateMachine::K2Node_DynamicCast_AsBP_Menu_Racer_Machine' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_CreateMachine, K2Node_DynamicCast_bSuccess) == 0x000078, "Member 'BP_MenuRacerPreview_C_CreateMachine::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_CreateMachine, CallFunc_AddComponent_ReturnValue) == 0x000080, "Member 'BP_MenuRacerPreview_C_CreateMachine::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_CreateMachine;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.DecideChara
 // 0x0320 (0x0320 - 0x0000)
@@ -313,122 +260,7 @@ public:
 	TScriptInterface<class IDriverAnimator>       CallFunc_PlayAnimation_self_CastInput;             // 0x0308(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSoundHandle                           CallFunc_SetPanSplit_ReturnValue;                  // 0x0318(0x0004)()
 };
-static_assert(alignof(BP_MenuRacerPreview_C_DecideChara) == 0x000008, "Wrong alignment on BP_MenuRacerPreview_C_DecideChara");
-static_assert(sizeof(BP_MenuRacerPreview_C_DecideChara) == 0x000320, "Wrong size on BP_MenuRacerPreview_C_DecideChara");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, InPlayerIndex) == 0x000000, "Member 'BP_MenuRacerPreview_C_DecideChara::InPlayerIndex' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, InSelectedPlayerCount) == 0x000004, "Member 'BP_MenuRacerPreview_C_DecideChara::InSelectedPlayerCount' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_byte_Variable) == 0x000008, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_bool_Variable) == 0x000009, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_byte_Variable_1) == 0x00000A, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_byte_Variable_2) == 0x00000B, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable) == 0x000010, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_1) == 0x000018, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_2) == 0x000020, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_3) == 0x000028, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_4) == 0x000030, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_4' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_5) == 0x000038, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_5' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_6) == 0x000040, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_6' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_7) == 0x000048, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_7' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_8) == 0x000050, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_8' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_9) == 0x000058, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_9' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_10) == 0x000060, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_10' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_11) == 0x000068, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_11' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_12) == 0x000070, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_12' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_13) == 0x000078, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_13' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_14) == 0x000080, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_14' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_15) == 0x000088, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_15' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_16) == 0x000090, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_16' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_17) == 0x000098, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_17' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_18) == 0x0000A0, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_18' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_19) == 0x0000A8, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_19' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_20) == 0x0000B0, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_20' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_21) == 0x0000B8, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_21' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_22) == 0x0000C0, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_22' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_23) == 0x0000C8, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_23' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_24) == 0x0000D0, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_24' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_25) == 0x0000D8, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_25' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_26) == 0x0000E0, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_26' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_27) == 0x0000E8, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_27' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_28) == 0x0000F0, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_28' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_29) == 0x0000F8, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_29' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_30) == 0x000100, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_30' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_31) == 0x000108, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_31' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_32) == 0x000110, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_32' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_33) == 0x000118, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_33' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_34) == 0x000120, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_34' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_35) == 0x000128, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_35' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_36) == 0x000130, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_36' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_37) == 0x000138, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_37' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_38) == 0x000140, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_38' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_39) == 0x000148, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_39' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_40) == 0x000150, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_40' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_41) == 0x000158, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_41' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_42) == 0x000160, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_42' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_43) == 0x000168, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_43' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_44) == 0x000170, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_44' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_45) == 0x000178, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_45' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_46) == 0x000180, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_46' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_47) == 0x000188, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_47' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_48) == 0x000190, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_48' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_49) == 0x000198, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_49' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_50) == 0x0001A0, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_50' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_51) == 0x0001A8, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_51' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_52) == 0x0001B0, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_52' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_53) == 0x0001B8, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_53' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_54) == 0x0001C0, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_54' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_55) == 0x0001C8, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_55' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_56) == 0x0001D0, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_56' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_57) == 0x0001D8, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_57' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_58) == 0x0001E0, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_58' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_59) == 0x0001E8, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_59' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_60) == 0x0001F0, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_60' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_61) == 0x0001F8, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_61' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_62) == 0x000200, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_62' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_63) == 0x000208, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_63' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_64) == 0x000210, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_64' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_65) == 0x000218, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_65' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_66) == 0x000220, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_66' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_67) == 0x000228, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_67' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_68) == 0x000230, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_68' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_69) == 0x000238, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_69' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_70) == 0x000240, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_70' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_71) == 0x000248, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_71' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_72) == 0x000250, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_72' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_73) == 0x000258, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_73' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_74) == 0x000260, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_74' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_75) == 0x000268, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_75' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_76) == 0x000270, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_76' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_77) == 0x000278, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_77' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_78) == 0x000280, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_78' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_79) == 0x000288, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_79' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_80) == 0x000290, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_80' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_81) == 0x000298, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_81' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_82) == 0x0002A0, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_82' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_83) == 0x0002A8, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_83' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_84) == 0x0002B0, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_84' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_85) == 0x0002B8, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_85' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_86) == 0x0002C0, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_86' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_87) == 0x0002C8, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_87' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_88) == 0x0002D0, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_88' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_object_Variable_89) == 0x0002D8, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_object_Variable_89' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_int_Variable) == 0x0002E0, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_byte_Variable_3) == 0x0002E4, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_byte_Variable_4) == 0x0002E5, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_byte_Variable_5) == 0x0002E6, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, K2Node_Select_Default) == 0x0002E8, "Member 'BP_MenuRacerPreview_C_DecideChara::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, CallFunc_SoundPlay_ReturnValue) == 0x0002F0, "Member 'BP_MenuRacerPreview_C_DecideChara::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, CallFunc_Percent_IntInt_ReturnValue) == 0x0002F4, "Member 'BP_MenuRacerPreview_C_DecideChara::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, CallFunc_IsValid_ReturnValue) == 0x0002F8, "Member 'BP_MenuRacerPreview_C_DecideChara::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0002F9, "Member 'BP_MenuRacerPreview_C_DecideChara::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_byte_Variable_6) == 0x0002FA, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_byte_Variable_6' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x0002FB, "Member 'BP_MenuRacerPreview_C_DecideChara::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, Temp_bool_Variable_1) == 0x0002FC, "Member 'BP_MenuRacerPreview_C_DecideChara::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, CallFunc_RandomIntegerInRange_ReturnValue) == 0x000300, "Member 'BP_MenuRacerPreview_C_DecideChara::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, K2Node_Select_Default_1) == 0x000304, "Member 'BP_MenuRacerPreview_C_DecideChara::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, K2Node_Select_Default_2) == 0x000305, "Member 'BP_MenuRacerPreview_C_DecideChara::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, K2Node_Select_Default_3) == 0x000306, "Member 'BP_MenuRacerPreview_C_DecideChara::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, CallFunc_PlayAnimation_self_CastInput) == 0x000308, "Member 'BP_MenuRacerPreview_C_DecideChara::CallFunc_PlayAnimation_self_CastInput' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DecideChara, CallFunc_SetPanSplit_ReturnValue) == 0x000318, "Member 'BP_MenuRacerPreview_C_DecideChara::CallFunc_SetPanSplit_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_DecideChara;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.DestoryOldComponents
 // 0x0003 (0x0003 - 0x0000)
@@ -439,11 +271,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_DestoryOldComponents) == 0x000001, "Wrong alignment on BP_MenuRacerPreview_C_DestoryOldComponents");
-static_assert(sizeof(BP_MenuRacerPreview_C_DestoryOldComponents) == 0x000003, "Wrong size on BP_MenuRacerPreview_C_DestoryOldComponents");
-static_assert(offsetof(BP_MenuRacerPreview_C_DestoryOldComponents, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'BP_MenuRacerPreview_C_DestoryOldComponents::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DestoryOldComponents, CallFunc_IsValid_ReturnValue_1) == 0x000001, "Member 'BP_MenuRacerPreview_C_DestoryOldComponents::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DestoryOldComponents, CallFunc_IsValid_ReturnValue_2) == 0x000002, "Member 'BP_MenuRacerPreview_C_DestoryOldComponents::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_DestoryOldComponents;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.DisableBoundsAndLod_Machine
 // 0x0030 (0x0030 - 0x0000)
@@ -460,15 +288,7 @@ public:
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUnionStaticMeshComponent*              CallFunc_Array_Get_Item;                           // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_DisableBoundsAndLod_Machine) == 0x000008, "Wrong alignment on BP_MenuRacerPreview_C_DisableBoundsAndLod_Machine");
-static_assert(sizeof(BP_MenuRacerPreview_C_DisableBoundsAndLod_Machine) == 0x000030, "Wrong size on BP_MenuRacerPreview_C_DisableBoundsAndLod_Machine");
-static_assert(offsetof(BP_MenuRacerPreview_C_DisableBoundsAndLod_Machine, MeshComponents) == 0x000000, "Member 'BP_MenuRacerPreview_C_DisableBoundsAndLod_Machine::MeshComponents' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DisableBoundsAndLod_Machine, CallFunc_Array_Length_ReturnValue) == 0x000010, "Member 'BP_MenuRacerPreview_C_DisableBoundsAndLod_Machine::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DisableBoundsAndLod_Machine, Temp_int_Loop_Counter_Variable) == 0x000014, "Member 'BP_MenuRacerPreview_C_DisableBoundsAndLod_Machine::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DisableBoundsAndLod_Machine, CallFunc_Less_IntInt_ReturnValue) == 0x000018, "Member 'BP_MenuRacerPreview_C_DisableBoundsAndLod_Machine::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DisableBoundsAndLod_Machine, CallFunc_Add_IntInt_ReturnValue) == 0x00001C, "Member 'BP_MenuRacerPreview_C_DisableBoundsAndLod_Machine::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DisableBoundsAndLod_Machine, Temp_int_Array_Index_Variable) == 0x000020, "Member 'BP_MenuRacerPreview_C_DisableBoundsAndLod_Machine::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_DisableBoundsAndLod_Machine, CallFunc_Array_Get_Item) == 0x000028, "Member 'BP_MenuRacerPreview_C_DisableBoundsAndLod_Machine::CallFunc_Array_Get_Item' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_DisableBoundsAndLod_Machine;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.ExecuteUbergraph_BP_MenuRacerPreview
 // 0x0680 (0x0680 - 0x0000)
@@ -544,68 +364,7 @@ public:
 	float                                         CallFunc_MakeRotator_Pitch_ImplicitCast;           // 0x066C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_MakeRotator_Roll_ImplicitCast;            // 0x0670(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview) == 0x000010, "Wrong alignment on BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview");
-static_assert(sizeof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview) == 0x000680, "Wrong size on BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, EntryPoint) == 0x000000, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, K2Node_Event_DeltaSeconds) == 0x000004, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_Conv_DoubleToVector_ReturnValue) == 0x000008, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_Conv_DoubleToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_BreakTransform_Location) == 0x000020, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_BreakTransform_Location' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_BreakTransform_Rotation) == 0x000038, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_BreakTransform_Rotation' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_BreakTransform_Scale) == 0x000050, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_BreakTransform_Scale' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_BreakTransform_Location_1) == 0x000068, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_BreakTransform_Location_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_BreakTransform_Rotation_1) == 0x000080, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_BreakTransform_Rotation_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_BreakTransform_Scale_1) == 0x000098, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_BreakTransform_Scale_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_BreakRotator_Roll) == 0x0000B0, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_BreakRotator_Roll' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_BreakRotator_Pitch) == 0x0000B4, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_BreakRotator_Pitch' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_BreakRotator_Yaw) == 0x0000B8, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_BreakRotator_Yaw' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_BreakRotator_Roll_1) == 0x0000BC, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_BreakRotator_Roll_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_BreakRotator_Pitch_1) == 0x0000C0, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_BreakRotator_Pitch_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_BreakRotator_Yaw_1) == 0x0000C4, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_BreakRotator_Yaw_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_Subtract_VectorVector_ReturnValue) == 0x0000C8, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_Lerp_ReturnValue) == 0x0000E0, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_Lerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_Multiply_VectorVector_ReturnValue) == 0x0000E8, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_Multiply_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_Lerp_ReturnValue_1) == 0x000100, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_Lerp_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_Add_VectorVector_ReturnValue) == 0x000108, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_Lerp_ReturnValue_2) == 0x000120, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_Lerp_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_GetTransform_ReturnValue) == 0x000130, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_MakeRotator_ReturnValue) == 0x000190, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_MakeTransform_ReturnValue) == 0x0001B0, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_K2_SetActorTransform_SweepHitResult) == 0x000210, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_K2_SetActorTransform_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_K2_SetActorTransform_ReturnValue) == 0x000308, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_K2_SetActorTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_K2_SetActorTransform_SweepHitResult_1) == 0x000310, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_K2_SetActorTransform_SweepHitResult_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_K2_SetActorTransform_ReturnValue_1) == 0x000408, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_K2_SetActorTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_GetDefaultMachineCustomizeData_OutCustomizeData) == 0x000410, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_GetDefaultMachineCustomizeData_OutCustomizeData' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_Polling_Set_Sticker_IsCompleteSetSticker) == 0x000488, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_Polling_Set_Sticker_IsCompleteSetSticker' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_Polling_Set_Sticker_IsCompleteSetSticker_1) == 0x000489, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_Polling_Set_Sticker_IsCompleteSetSticker_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, K2Node_Event_PlayerIndex_2) == 0x00048C, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::K2Node_Event_PlayerIndex_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, K2Node_Event_SelectedPlayerCount) == 0x000490, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::K2Node_Event_SelectedPlayerCount' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, K2Node_Event_PlayerIndex_1) == 0x000494, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::K2Node_Event_PlayerIndex_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, K2Node_Event_PlayerIndex) == 0x000498, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::K2Node_Event_PlayerIndex' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, K2Node_Event_StateId) == 0x00049C, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::K2Node_Event_StateId' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, K2Node_Event_Index) == 0x0004A0, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::K2Node_Event_Index' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_Array_Get_Item) == 0x0004B0, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_Conv_IntToByte_ReturnValue) == 0x000510, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_K2_SetActorTransform_SweepHitResult_2) == 0x000518, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_K2_SetActorTransform_SweepHitResult_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_K2_SetActorTransform_ReturnValue_2) == 0x000610, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_K2_SetActorTransform_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_GetValidValue_ReturnValue) == 0x000611, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000612, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, K2Node_Event_InDriverId) == 0x000613, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::K2Node_Event_InDriverId' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, K2Node_Event_bInForcedSetting) == 0x000614, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::K2Node_Event_bInForcedSetting' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_IsValid_ReturnValue) == 0x000615, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_IsValid_ReturnValue_1) == 0x000616, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_Lerp_Alpha_ImplicitCast) == 0x000618, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_Lerp_Alpha_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_Lerp_Alpha_ImplicitCast_1) == 0x000620, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_Lerp_Alpha_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_Lerp_Alpha_ImplicitCast_2) == 0x000628, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_Lerp_Alpha_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_Conv_DoubleToVector_InDouble_ImplicitCast) == 0x000630, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_Conv_DoubleToVector_InDouble_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_Lerp_A_ImplicitCast) == 0x000638, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_Lerp_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_Lerp_A_ImplicitCast_1) == 0x000640, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_Lerp_A_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_Lerp_A_ImplicitCast_2) == 0x000648, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_Lerp_A_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_Lerp_B_ImplicitCast) == 0x000650, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_Lerp_B_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_Lerp_B_ImplicitCast_1) == 0x000658, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_Lerp_B_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_Lerp_B_ImplicitCast_2) == 0x000660, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_Lerp_B_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_MakeRotator_Yaw_ImplicitCast) == 0x000668, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_MakeRotator_Yaw_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_MakeRotator_Pitch_ImplicitCast) == 0x00066C, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_MakeRotator_Pitch_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview, CallFunc_MakeRotator_Roll_ImplicitCast) == 0x000670, "Member 'BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview::CallFunc_MakeRotator_Roll_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_ExecuteUbergraph_BP_MenuRacerPreview;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.GetChildActors
 // 0x0020 (0x0020 - 0x0000)
@@ -615,10 +374,7 @@ public:
 	TArray<class AActor*>                         OutChildActors;                                    // 0x0000(0x0010)(Parm, OutParm)
 	TArray<class AActor*>                         CallFunc_GetChildActors_Internal_OutChildActors;   // 0x0010(0x0010)(ReferenceParm)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_GetChildActors) == 0x000008, "Wrong alignment on BP_MenuRacerPreview_C_GetChildActors");
-static_assert(sizeof(BP_MenuRacerPreview_C_GetChildActors) == 0x000020, "Wrong size on BP_MenuRacerPreview_C_GetChildActors");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetChildActors, OutChildActors) == 0x000000, "Member 'BP_MenuRacerPreview_C_GetChildActors::OutChildActors' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetChildActors, CallFunc_GetChildActors_Internal_OutChildActors) == 0x000010, "Member 'BP_MenuRacerPreview_C_GetChildActors::CallFunc_GetChildActors_Internal_OutChildActors' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_GetChildActors;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.GetChildActors_Internal
 // 0x0048 (0x0048 - 0x0000)
@@ -638,19 +394,7 @@ public:
 	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue_2;                  // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_GetChildActors_Internal) == 0x000008, "Wrong alignment on BP_MenuRacerPreview_C_GetChildActors_Internal");
-static_assert(sizeof(BP_MenuRacerPreview_C_GetChildActors_Internal) == 0x000048, "Wrong size on BP_MenuRacerPreview_C_GetChildActors_Internal");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetChildActors_Internal, InDriverComponent) == 0x000000, "Member 'BP_MenuRacerPreview_C_GetChildActors_Internal::InDriverComponent' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetChildActors_Internal, InMachineComponet) == 0x000008, "Member 'BP_MenuRacerPreview_C_GetChildActors_Internal::InMachineComponet' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetChildActors_Internal, InHoverboardComponet) == 0x000010, "Member 'BP_MenuRacerPreview_C_GetChildActors_Internal::InHoverboardComponet' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetChildActors_Internal, OutChildActors) == 0x000018, "Member 'BP_MenuRacerPreview_C_GetChildActors_Internal::OutChildActors' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetChildActors_Internal, TempChildActors) == 0x000028, "Member 'BP_MenuRacerPreview_C_GetChildActors_Internal::TempChildActors' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetChildActors_Internal, CallFunc_IsValid_ReturnValue) == 0x000038, "Member 'BP_MenuRacerPreview_C_GetChildActors_Internal::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetChildActors_Internal, CallFunc_IsValid_ReturnValue_1) == 0x000039, "Member 'BP_MenuRacerPreview_C_GetChildActors_Internal::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetChildActors_Internal, CallFunc_IsValid_ReturnValue_2) == 0x00003A, "Member 'BP_MenuRacerPreview_C_GetChildActors_Internal::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetChildActors_Internal, CallFunc_Array_Add_ReturnValue) == 0x00003C, "Member 'BP_MenuRacerPreview_C_GetChildActors_Internal::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetChildActors_Internal, CallFunc_Array_Add_ReturnValue_1) == 0x000040, "Member 'BP_MenuRacerPreview_C_GetChildActors_Internal::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetChildActors_Internal, CallFunc_Array_Add_ReturnValue_2) == 0x000044, "Member 'BP_MenuRacerPreview_C_GetChildActors_Internal::CallFunc_Array_Add_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_GetChildActors_Internal;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.GetDriverData
 // 0x08D0 (0x08D0 - 0x0000)
@@ -684,30 +428,7 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue_2;                     // 0x08B8(0x0010)()
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x08C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_GetDriverData) == 0x000008, "Wrong alignment on BP_MenuRacerPreview_C_GetDriverData");
-static_assert(sizeof(BP_MenuRacerPreview_C_GetDriverData) == 0x0008D0, "Wrong size on BP_MenuRacerPreview_C_GetDriverData");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetDriverData, DriverId_0) == 0x000000, "Member 'BP_MenuRacerPreview_C_GetDriverData::DriverId_0' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetDriverData, DriverData) == 0x000008, "Member 'BP_MenuRacerPreview_C_GetDriverData::DriverData' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetDriverData, bFind) == 0x000398, "Member 'BP_MenuRacerPreview_C_GetDriverData::bFind' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetDriverData, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x0003A0, "Member 'BP_MenuRacerPreview_C_GetDriverData::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetDriverData, CallFunc_GetEnumeratorName_ReturnValue) == 0x0003A8, "Member 'BP_MenuRacerPreview_C_GetDriverData::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetDriverData, CallFunc_IsValid_ReturnValue) == 0x0003B0, "Member 'BP_MenuRacerPreview_C_GetDriverData::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetDriverData, CallFunc_GetDisplayName_ReturnValue) == 0x0003B8, "Member 'BP_MenuRacerPreview_C_GetDriverData::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetDriverData, CallFunc_Conv_StringToText_ReturnValue) == 0x0003C8, "Member 'BP_MenuRacerPreview_C_GetDriverData::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetDriverData, CallFunc_Conv_StringToText_ReturnValue_1) == 0x0003D8, "Member 'BP_MenuRacerPreview_C_GetDriverData::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetDriverData, K2Node_MakeStruct_FormatArgumentData) == 0x0003E8, "Member 'BP_MenuRacerPreview_C_GetDriverData::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetDriverData, K2Node_MakeStruct_FormatArgumentData_1) == 0x000430, "Member 'BP_MenuRacerPreview_C_GetDriverData::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetDriverData, K2Node_MakeArray_Array) == 0x000478, "Member 'BP_MenuRacerPreview_C_GetDriverData::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetDriverData, K2Node_MakeArray_Array_1) == 0x000488, "Member 'BP_MenuRacerPreview_C_GetDriverData::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetDriverData, CallFunc_Format_ReturnValue) == 0x000498, "Member 'BP_MenuRacerPreview_C_GetDriverData::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetDriverData, CallFunc_Format_ReturnValue_1) == 0x0004A8, "Member 'BP_MenuRacerPreview_C_GetDriverData::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetDriverData, CallFunc_Conv_StringToText_ReturnValue_2) == 0x0004B8, "Member 'BP_MenuRacerPreview_C_GetDriverData::CallFunc_Conv_StringToText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetDriverData, K2Node_MakeStruct_FormatArgumentData_2) == 0x0004C8, "Member 'BP_MenuRacerPreview_C_GetDriverData::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetDriverData, CallFunc_GetDataTableRowFromName_OutRow) == 0x000510, "Member 'BP_MenuRacerPreview_C_GetDriverData::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetDriverData, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x0008A0, "Member 'BP_MenuRacerPreview_C_GetDriverData::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetDriverData, K2Node_MakeArray_Array_2) == 0x0008A8, "Member 'BP_MenuRacerPreview_C_GetDriverData::K2Node_MakeArray_Array_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetDriverData, CallFunc_Format_ReturnValue_2) == 0x0008B8, "Member 'BP_MenuRacerPreview_C_GetDriverData::CallFunc_Format_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_GetDriverData, CallFunc_IsValid_ReturnValue_1) == 0x0008C8, "Member 'BP_MenuRacerPreview_C_GetDriverData::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_GetDriverData;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.InitTransformForTopMenu
 // 0x0060 (0x0060 - 0x0000)
@@ -716,9 +437,7 @@ struct BP_MenuRacerPreview_C_InitTransformForTopMenu final
 public:
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0000(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_InitTransformForTopMenu) == 0x000010, "Wrong alignment on BP_MenuRacerPreview_C_InitTransformForTopMenu");
-static_assert(sizeof(BP_MenuRacerPreview_C_InitTransformForTopMenu) == 0x000060, "Wrong size on BP_MenuRacerPreview_C_InitTransformForTopMenu");
-static_assert(offsetof(BP_MenuRacerPreview_C_InitTransformForTopMenu, CallFunc_MakeTransform_ReturnValue) == 0x000000, "Member 'BP_MenuRacerPreview_C_InitTransformForTopMenu::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_InitTransformForTopMenu;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.InitTransformMapForCharaMachineSelect
 // 0x0380 (0x0380 - 0x0000)
@@ -749,24 +468,7 @@ public:
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue_7;              // 0x0310(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EViewSplitId                                  Temp_byte_Variable_7;                              // 0x0370(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect) == 0x000010, "Wrong alignment on BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect");
-static_assert(sizeof(BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect) == 0x000380, "Wrong size on BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect");
-static_assert(offsetof(BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect, Temp_byte_Variable) == 0x000000, "Member 'BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect, CallFunc_MakeTransform_ReturnValue) == 0x000010, "Member 'BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect, Temp_byte_Variable_1) == 0x000070, "Member 'BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect, CallFunc_MakeTransform_ReturnValue_1) == 0x000080, "Member 'BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect, Temp_byte_Variable_2) == 0x0000E0, "Member 'BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect, CallFunc_MakeTransform_ReturnValue_2) == 0x0000F0, "Member 'BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect::CallFunc_MakeTransform_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect, Temp_byte_Variable_3) == 0x000150, "Member 'BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect, CallFunc_MakeTransform_ReturnValue_3) == 0x000160, "Member 'BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect::CallFunc_MakeTransform_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect, Temp_byte_Variable_4) == 0x0001C0, "Member 'BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect, CallFunc_MakeTransform_ReturnValue_4) == 0x0001D0, "Member 'BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect::CallFunc_MakeTransform_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect, Temp_byte_Variable_5) == 0x000230, "Member 'BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect, CallFunc_MakeTransform_ReturnValue_5) == 0x000240, "Member 'BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect::CallFunc_MakeTransform_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect, Temp_byte_Variable_6) == 0x0002A0, "Member 'BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect::Temp_byte_Variable_6' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect, CallFunc_MakeTransform_ReturnValue_6) == 0x0002B0, "Member 'BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect::CallFunc_MakeTransform_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect, CallFunc_MakeTransform_ReturnValue_7) == 0x000310, "Member 'BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect::CallFunc_MakeTransform_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect, Temp_byte_Variable_7) == 0x000370, "Member 'BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect::Temp_byte_Variable_7' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_InitTransformMapForCharaMachineSelect;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.OnCreateAuraEffect
 // 0x0007 (0x0007 - 0x0000)
@@ -781,15 +483,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_OnCreateAuraEffect) == 0x000001, "Wrong alignment on BP_MenuRacerPreview_C_OnCreateAuraEffect");
-static_assert(sizeof(BP_MenuRacerPreview_C_OnCreateAuraEffect) == 0x000007, "Wrong size on BP_MenuRacerPreview_C_OnCreateAuraEffect");
-static_assert(offsetof(BP_MenuRacerPreview_C_OnCreateAuraEffect, InAuraID) == 0x000000, "Member 'BP_MenuRacerPreview_C_OnCreateAuraEffect::InAuraID' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_OnCreateAuraEffect, InType) == 0x000001, "Member 'BP_MenuRacerPreview_C_OnCreateAuraEffect::InType' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_OnCreateAuraEffect, CallFunc_IsHoverboard_ReturnValue) == 0x000002, "Member 'BP_MenuRacerPreview_C_OnCreateAuraEffect::CallFunc_IsHoverboard_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_OnCreateAuraEffect, CallFunc_IsValid_ReturnValue) == 0x000003, "Member 'BP_MenuRacerPreview_C_OnCreateAuraEffect::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_OnCreateAuraEffect, CallFunc_IsValid_ReturnValue_1) == 0x000004, "Member 'BP_MenuRacerPreview_C_OnCreateAuraEffect::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_OnCreateAuraEffect, CallFunc_IsValid_ReturnValue_2) == 0x000005, "Member 'BP_MenuRacerPreview_C_OnCreateAuraEffect::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_OnCreateAuraEffect, CallFunc_IsValid_ReturnValue_3) == 0x000006, "Member 'BP_MenuRacerPreview_C_OnCreateAuraEffect::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_OnCreateAuraEffect;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.PlayDriverAnimation
 // 0x0008 (0x0008 - 0x0000)
@@ -799,10 +493,7 @@ public:
 	int32                                         StateId;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Index_0;                                           // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_PlayDriverAnimation) == 0x000004, "Wrong alignment on BP_MenuRacerPreview_C_PlayDriverAnimation");
-static_assert(sizeof(BP_MenuRacerPreview_C_PlayDriverAnimation) == 0x000008, "Wrong size on BP_MenuRacerPreview_C_PlayDriverAnimation");
-static_assert(offsetof(BP_MenuRacerPreview_C_PlayDriverAnimation, StateId) == 0x000000, "Member 'BP_MenuRacerPreview_C_PlayDriverAnimation::StateId' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_PlayDriverAnimation, Index_0) == 0x000004, "Member 'BP_MenuRacerPreview_C_PlayDriverAnimation::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_PlayDriverAnimation;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.PlayLeaveAnimation
 // 0x0010 (0x0010 - 0x0000)
@@ -811,9 +502,7 @@ struct BP_MenuRacerPreview_C_PlayLeaveAnimation final
 public:
 	TScriptInterface<class IDriverVoicePlayer>    CallFunc_PlayVoice_self_CastInput;                 // 0x0000(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_PlayLeaveAnimation) == 0x000008, "Wrong alignment on BP_MenuRacerPreview_C_PlayLeaveAnimation");
-static_assert(sizeof(BP_MenuRacerPreview_C_PlayLeaveAnimation) == 0x000010, "Wrong size on BP_MenuRacerPreview_C_PlayLeaveAnimation");
-static_assert(offsetof(BP_MenuRacerPreview_C_PlayLeaveAnimation, CallFunc_PlayVoice_self_CastInput) == 0x000000, "Member 'BP_MenuRacerPreview_C_PlayLeaveAnimation::CallFunc_PlayVoice_self_CastInput' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_PlayLeaveAnimation;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.Polling Set Sticker
 // 0x0058 (0x0058 - 0x0000)
@@ -837,23 +526,7 @@ public:
 	bool                                          CallFunc_IsBakingComplete_ReturnValue;             // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsHoverboard_ReturnValue;                 // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_Polling_Set_Sticker) == 0x000008, "Wrong alignment on BP_MenuRacerPreview_C_Polling_Set_Sticker");
-static_assert(sizeof(BP_MenuRacerPreview_C_Polling_Set_Sticker) == 0x000058, "Wrong size on BP_MenuRacerPreview_C_Polling_Set_Sticker");
-static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, StickerBakerHandle) == 0x000000, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::StickerBakerHandle' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, IsCompleteSetSticker) == 0x000008, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::IsCompleteSetSticker' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, CallFunc_IsValid_ReturnValue) == 0x000009, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, CallFunc_IsHandleDead_ReturnValue) == 0x00000A, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::CallFunc_IsHandleDead_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, CallFunc_Not_PreBool_ReturnValue) == 0x00000B, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, CallFunc_GetBaker_ReturnValue) == 0x000010, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::CallFunc_GetBaker_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, CallFunc_GetBaker_ReturnValue_1) == 0x000018, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::CallFunc_GetBaker_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, CallFunc_GetStickerTexture_ReturnValue) == 0x000020, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::CallFunc_GetStickerTexture_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, CallFunc_GetStickerTexture_ReturnValue_1) == 0x000028, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::CallFunc_GetStickerTexture_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, CallFunc_GetBaker_ReturnValue_2) == 0x000030, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::CallFunc_GetBaker_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, CallFunc_GetBaker_ReturnValue_3) == 0x000038, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::CallFunc_GetBaker_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, CallFunc_GetStickerTexture_ReturnValue_2) == 0x000040, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::CallFunc_GetStickerTexture_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, CallFunc_GetStickerTexture_ReturnValue_3) == 0x000048, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::CallFunc_GetStickerTexture_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, CallFunc_IsBakingComplete_ReturnValue) == 0x000050, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::CallFunc_IsBakingComplete_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, CallFunc_IsHoverboard_ReturnValue) == 0x000051, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::CallFunc_IsHoverboard_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_Polling_Set_Sticker;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -862,9 +535,7 @@ struct BP_MenuRacerPreview_C_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_ReceiveTick) == 0x000004, "Wrong alignment on BP_MenuRacerPreview_C_ReceiveTick");
-static_assert(sizeof(BP_MenuRacerPreview_C_ReceiveTick) == 0x000004, "Wrong size on BP_MenuRacerPreview_C_ReceiveTick");
-static_assert(offsetof(BP_MenuRacerPreview_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'BP_MenuRacerPreview_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_ReceiveTick;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.ResetLeaveAnimTimer
 // 0x0020 (0x0020 - 0x0000)
@@ -877,12 +548,7 @@ public:
 	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_K2_IsValidTimerHandle_ReturnValue;        // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_ResetLeaveAnimTimer) == 0x000008, "Wrong alignment on BP_MenuRacerPreview_C_ResetLeaveAnimTimer");
-static_assert(sizeof(BP_MenuRacerPreview_C_ResetLeaveAnimTimer) == 0x000020, "Wrong size on BP_MenuRacerPreview_C_ResetLeaveAnimTimer");
-static_assert(offsetof(BP_MenuRacerPreview_C_ResetLeaveAnimTimer, bIsStop) == 0x000000, "Member 'BP_MenuRacerPreview_C_ResetLeaveAnimTimer::bIsStop' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ResetLeaveAnimTimer, CallFunc_K2_InvalidateTimerHandle_ReturnValue) == 0x000008, "Member 'BP_MenuRacerPreview_C_ResetLeaveAnimTimer::CallFunc_K2_InvalidateTimerHandle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ResetLeaveAnimTimer, CallFunc_K2_SetTimer_ReturnValue) == 0x000010, "Member 'BP_MenuRacerPreview_C_ResetLeaveAnimTimer::CallFunc_K2_SetTimer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ResetLeaveAnimTimer, CallFunc_K2_IsValidTimerHandle_ReturnValue) == 0x000018, "Member 'BP_MenuRacerPreview_C_ResetLeaveAnimTimer::CallFunc_K2_IsValidTimerHandle_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_ResetLeaveAnimTimer;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.ResetMachineRelativeRotation
 // 0x0108 (0x0108 - 0x0000)
@@ -894,11 +560,7 @@ public:
 	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult;    // 0x0010(0x00F8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_ResetMachineRelativeRotation) == 0x000008, "Wrong alignment on BP_MenuRacerPreview_C_ResetMachineRelativeRotation");
-static_assert(sizeof(BP_MenuRacerPreview_C_ResetMachineRelativeRotation) == 0x000108, "Wrong size on BP_MenuRacerPreview_C_ResetMachineRelativeRotation");
-static_assert(offsetof(BP_MenuRacerPreview_C_ResetMachineRelativeRotation, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'BP_MenuRacerPreview_C_ResetMachineRelativeRotation::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ResetMachineRelativeRotation, CallFunc_K2_GetRootComponent_ReturnValue) == 0x000008, "Member 'BP_MenuRacerPreview_C_ResetMachineRelativeRotation::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_ResetMachineRelativeRotation, CallFunc_K2_SetRelativeRotation_SweepHitResult) == 0x000010, "Member 'BP_MenuRacerPreview_C_ResetMachineRelativeRotation::CallFunc_K2_SetRelativeRotation_SweepHitResult' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_ResetMachineRelativeRotation;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.Set All
 // 0x0510 (0x0510 - 0x0000)
@@ -965,60 +627,7 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue_6;                  // 0x0508(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue_7;                  // 0x0509(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_Set_All) == 0x000008, "Wrong alignment on BP_MenuRacerPreview_C_Set_All");
-static_assert(sizeof(BP_MenuRacerPreview_C_Set_All) == 0x000510, "Wrong size on BP_MenuRacerPreview_C_Set_All");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, InDriverId) == 0x000000, "Member 'BP_MenuRacerPreview_C_Set_All::InDriverId' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, InCustomizeData) == 0x000008, "Member 'BP_MenuRacerPreview_C_Set_All::InCustomizeData' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, bInForcedSetting) == 0x000080, "Member 'BP_MenuRacerPreview_C_Set_All::bInForcedSetting' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, bIsInitialize) == 0x000081, "Member 'BP_MenuRacerPreview_C_Set_All::bIsInitialize' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, bIsChangeAura) == 0x000082, "Member 'BP_MenuRacerPreview_C_Set_All::bIsChangeAura' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, bIsRearStickerChanged) == 0x000083, "Member 'BP_MenuRacerPreview_C_Set_All::bIsRearStickerChanged' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, bIsFrontStickerChanged) == 0x000084, "Member 'BP_MenuRacerPreview_C_Set_All::bIsFrontStickerChanged' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, bIsRearMeshChanged) == 0x000085, "Member 'BP_MenuRacerPreview_C_Set_All::bIsRearMeshChanged' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, bIsFrontMeshChanged) == 0x000086, "Member 'BP_MenuRacerPreview_C_Set_All::bIsFrontMeshChanged' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, OldCustomizeData) == 0x000088, "Member 'BP_MenuRacerPreview_C_Set_All::OldCustomizeData' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, NewActors) == 0x000100, "Member 'BP_MenuRacerPreview_C_Set_All::NewActors' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, OldActors) == 0x000110, "Member 'BP_MenuRacerPreview_C_Set_All::OldActors' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, OldVehicleType) == 0x000120, "Member 'BP_MenuRacerPreview_C_Set_All::OldVehicleType' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, OldDriverId) == 0x000121, "Member 'BP_MenuRacerPreview_C_Set_All::OldDriverId' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, bShouldCreateVehicle) == 0x000122, "Member 'BP_MenuRacerPreview_C_Set_All::bShouldCreateVehicle' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, bShouldCreateDriver) == 0x000123, "Member 'BP_MenuRacerPreview_C_Set_All::bShouldCreateDriver' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, bIsHoverboard) == 0x000124, "Member 'BP_MenuRacerPreview_C_Set_All::bIsHoverboard' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, bIsHoverboard_Old) == 0x000125, "Member 'BP_MenuRacerPreview_C_Set_All::bIsHoverboard_Old' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, CallFunc_GetDriverData_DriverData) == 0x000128, "Member 'BP_MenuRacerPreview_C_Set_All::CallFunc_GetDriverData_DriverData' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, CallFunc_GetDriverData_bFind) == 0x0004B8, "Member 'BP_MenuRacerPreview_C_Set_All::CallFunc_GetDriverData_bFind' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x0004B9, "Member 'BP_MenuRacerPreview_C_Set_All::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, CallFunc_GetCarStatusType_ReturnValue) == 0x0004BA, "Member 'BP_MenuRacerPreview_C_Set_All::CallFunc_GetCarStatusType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0004BB, "Member 'BP_MenuRacerPreview_C_Set_All::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, CallFunc_GetCarStatusType_ReturnValue_1) == 0x0004BC, "Member 'BP_MenuRacerPreview_C_Set_All::CallFunc_GetCarStatusType_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, CallFunc_Conv_ByteToInt_ReturnValue) == 0x0004C0, "Member 'BP_MenuRacerPreview_C_Set_All::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x0004C4, "Member 'BP_MenuRacerPreview_C_Set_All::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, CallFunc_Conv_ByteToInt_ReturnValue_2) == 0x0004C8, "Member 'BP_MenuRacerPreview_C_Set_All::CallFunc_Conv_ByteToInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, CallFunc_IsStickerChanged_ReturnValue) == 0x0004CC, "Member 'BP_MenuRacerPreview_C_Set_All::CallFunc_IsStickerChanged_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, CallFunc_NotEqual_IntInt_ReturnValue) == 0x0004CD, "Member 'BP_MenuRacerPreview_C_Set_All::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, CallFunc_BooleanOR_ReturnValue) == 0x0004CE, "Member 'BP_MenuRacerPreview_C_Set_All::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, CallFunc_BooleanOR_ReturnValue_1) == 0x0004CF, "Member 'BP_MenuRacerPreview_C_Set_All::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, CallFunc_IsStickerChanged_ReturnValue_1) == 0x0004D0, "Member 'BP_MenuRacerPreview_C_Set_All::CallFunc_IsStickerChanged_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, CallFunc_Conv_ByteToInt_ReturnValue_3) == 0x0004D4, "Member 'BP_MenuRacerPreview_C_Set_All::CallFunc_Conv_ByteToInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, CallFunc_BooleanOR_ReturnValue_2) == 0x0004D8, "Member 'BP_MenuRacerPreview_C_Set_All::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, CallFunc_NotEqual_IntInt_ReturnValue_1) == 0x0004D9, "Member 'BP_MenuRacerPreview_C_Set_All::CallFunc_NotEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, CallFunc_BooleanOR_ReturnValue_3) == 0x0004DA, "Member 'BP_MenuRacerPreview_C_Set_All::CallFunc_BooleanOR_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, CallFunc_IsHoverboard_ReturnValue) == 0x0004DB, "Member 'BP_MenuRacerPreview_C_Set_All::CallFunc_IsHoverboard_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, CallFunc_GetCarStatusType_ReturnValue_2) == 0x0004DC, "Member 'BP_MenuRacerPreview_C_Set_All::CallFunc_GetCarStatusType_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, CallFunc_BooleanOR_ReturnValue_4) == 0x0004DD, "Member 'BP_MenuRacerPreview_C_Set_All::CallFunc_BooleanOR_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, CallFunc_SetRideableStatusType_self_CastInput) == 0x0004E0, "Member 'BP_MenuRacerPreview_C_Set_All::CallFunc_SetRideableStatusType_self_CastInput' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, CallFunc_Conv_ByteToInt_ReturnValue_4) == 0x0004F0, "Member 'BP_MenuRacerPreview_C_Set_All::CallFunc_Conv_ByteToInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, CallFunc_IsHoverboard_ReturnValue_1) == 0x0004F4, "Member 'BP_MenuRacerPreview_C_Set_All::CallFunc_IsHoverboard_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, CallFunc_IsValid_ReturnValue) == 0x0004F5, "Member 'BP_MenuRacerPreview_C_Set_All::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, CallFunc_NotEqual_BoolBool_ReturnValue) == 0x0004F6, "Member 'BP_MenuRacerPreview_C_Set_All::CallFunc_NotEqual_BoolBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, CallFunc_Conv_ByteToInt_ReturnValue_5) == 0x0004F8, "Member 'BP_MenuRacerPreview_C_Set_All::CallFunc_Conv_ByteToInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, CallFunc_BooleanOR_ReturnValue_5) == 0x0004FC, "Member 'BP_MenuRacerPreview_C_Set_All::CallFunc_BooleanOR_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, CallFunc_NotEqual_IntInt_ReturnValue_2) == 0x0004FD, "Member 'BP_MenuRacerPreview_C_Set_All::CallFunc_NotEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, Temp_bool_Variable) == 0x0004FE, "Member 'BP_MenuRacerPreview_C_Set_All::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, CallFunc_NotEqual_BoolBool_ReturnValue_1) == 0x0004FF, "Member 'BP_MenuRacerPreview_C_Set_All::CallFunc_NotEqual_BoolBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, K2Node_Select_Default) == 0x000500, "Member 'BP_MenuRacerPreview_C_Set_All::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, CallFunc_BooleanOR_ReturnValue_6) == 0x000508, "Member 'BP_MenuRacerPreview_C_Set_All::CallFunc_BooleanOR_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_All, CallFunc_BooleanOR_ReturnValue_7) == 0x000509, "Member 'BP_MenuRacerPreview_C_Set_All::CallFunc_BooleanOR_ReturnValue_7' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_Set_All;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.Set Cockpit Anim Enabled
 // 0x0001 (0x0001 - 0x0000)
@@ -1027,9 +636,7 @@ struct BP_MenuRacerPreview_C_Set_Cockpit_Anim_Enabled final
 public:
 	bool                                          bInEnabled;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_Set_Cockpit_Anim_Enabled) == 0x000001, "Wrong alignment on BP_MenuRacerPreview_C_Set_Cockpit_Anim_Enabled");
-static_assert(sizeof(BP_MenuRacerPreview_C_Set_Cockpit_Anim_Enabled) == 0x000001, "Wrong size on BP_MenuRacerPreview_C_Set_Cockpit_Anim_Enabled");
-static_assert(offsetof(BP_MenuRacerPreview_C_Set_Cockpit_Anim_Enabled, bInEnabled) == 0x000000, "Member 'BP_MenuRacerPreview_C_Set_Cockpit_Anim_Enabled::bInEnabled' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_Set_Cockpit_Anim_Enabled;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.SetCustomizeData
 // 0x0080 (0x0080 - 0x0000)
@@ -1039,10 +646,7 @@ public:
 	struct FUserMachineCustomizeData              InCustomizeData;                                   // 0x0000(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm)
 	bool                                          bInForcedSetting;                                  // 0x0078(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_SetCustomizeData) == 0x000008, "Wrong alignment on BP_MenuRacerPreview_C_SetCustomizeData");
-static_assert(sizeof(BP_MenuRacerPreview_C_SetCustomizeData) == 0x000080, "Wrong size on BP_MenuRacerPreview_C_SetCustomizeData");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData, InCustomizeData) == 0x000000, "Member 'BP_MenuRacerPreview_C_SetCustomizeData::InCustomizeData' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData, bInForcedSetting) == 0x000078, "Member 'BP_MenuRacerPreview_C_SetCustomizeData::bInForcedSetting' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_SetCustomizeData;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.SetCustomizeData_Hoverboard
 // 0x0038 (0x0038 - 0x0000)
@@ -1066,21 +670,7 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_SetCustomizeData_Hoverboard) == 0x000008, "Wrong alignment on BP_MenuRacerPreview_C_SetCustomizeData_Hoverboard");
-static_assert(sizeof(BP_MenuRacerPreview_C_SetCustomizeData_Hoverboard) == 0x000038, "Wrong size on BP_MenuRacerPreview_C_SetCustomizeData_Hoverboard");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Hoverboard, bIsFrontMeshChanged) == 0x000000, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Hoverboard::bIsFrontMeshChanged' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Hoverboard, bIsRearMeshChanged) == 0x000001, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Hoverboard::bIsRearMeshChanged' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Hoverboard, bIsFrontStickerChanged) == 0x000002, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Hoverboard::bIsFrontStickerChanged' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Hoverboard, bIsRearStickerChanged) == 0x000003, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Hoverboard::bIsRearStickerChanged' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Hoverboard, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000008, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Hoverboard::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Hoverboard, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Hoverboard::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Hoverboard, CallFunc_IsValid_ReturnValue_1) == 0x000011, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Hoverboard::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Hoverboard, CallFunc_GetStickerSize_ReturnValue) == 0x000014, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Hoverboard::CallFunc_GetStickerSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Hoverboard, CallFunc_GetStickerSize_ReturnValue_1) == 0x000018, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Hoverboard::CallFunc_GetStickerSize_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Hoverboard, CallFunc_StartBake_ReturnValue) == 0x000020, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Hoverboard::CallFunc_StartBake_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Hoverboard, CallFunc_StartBake_ReturnValue_1) == 0x000028, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Hoverboard::CallFunc_StartBake_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Hoverboard, CallFunc_BooleanOR_ReturnValue) == 0x000030, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Hoverboard::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Hoverboard, CallFunc_BooleanOR_ReturnValue_1) == 0x000031, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Hoverboard::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_SetCustomizeData_Hoverboard;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.SetCustomizeData_Machine
 // 0x0058 (0x0058 - 0x0000)
@@ -1115,30 +705,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_SetCustomizeData_Machine) == 0x000008, "Wrong alignment on BP_MenuRacerPreview_C_SetCustomizeData_Machine");
-static_assert(sizeof(BP_MenuRacerPreview_C_SetCustomizeData_Machine) == 0x000058, "Wrong size on BP_MenuRacerPreview_C_SetCustomizeData_Machine");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Machine, bIsFrontMeshChanged) == 0x000000, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Machine::bIsFrontMeshChanged' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Machine, bIsRearMeshChanged) == 0x000001, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Machine::bIsRearMeshChanged' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Machine, bIsFrontStickerChanged) == 0x000002, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Machine::bIsFrontStickerChanged' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Machine, bIsRearStickerChanged) == 0x000003, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Machine::bIsRearStickerChanged' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Machine, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000008, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Machine::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Machine, Temp_byte_Variable) == 0x000010, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Machine::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Machine, Temp_int_Loop_Counter_Variable) == 0x000014, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Machine::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Machine, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Machine::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Machine, Temp_int_Array_Index_Variable) == 0x00001C, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Machine::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Machine, Temp_byte_Variable_1) == 0x000020, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Machine::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Machine, CallFunc_IsValid_ReturnValue) == 0x000021, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Machine::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Machine, CallFunc_IsValid_ReturnValue_1) == 0x000022, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Machine::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Machine, CallFunc_GetStickerSize_ReturnValue) == 0x000024, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Machine::CallFunc_GetStickerSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Machine, CallFunc_StartBake_ReturnValue) == 0x000028, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Machine::CallFunc_StartBake_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Machine, CallFunc_GetStickerSize_ReturnValue_1) == 0x000030, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Machine::CallFunc_GetStickerSize_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Machine, CallFunc_StartBake_ReturnValue_1) == 0x000038, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Machine::CallFunc_StartBake_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Machine, K2Node_Select_Default) == 0x000040, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Machine::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Machine, CallFunc_BooleanOR_ReturnValue) == 0x000041, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Machine::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Machine, CallFunc_BooleanOR_ReturnValue_1) == 0x000042, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Machine::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Machine, CallFunc_Array_Get_Item) == 0x000048, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Machine::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Machine, CallFunc_Array_Length_ReturnValue) == 0x000050, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Machine::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetCustomizeData_Machine, CallFunc_Less_IntInt_ReturnValue) == 0x000054, "Member 'BP_MenuRacerPreview_C_SetCustomizeData_Machine::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_SetCustomizeData_Machine;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.SetDriver
 // 0x0003 (0x0003 - 0x0000)
@@ -1149,11 +716,7 @@ public:
 	bool                                          bInForcedSetting;                                  // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EDriverId                                     SetDriverId;                                       // 0x0002(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_SetDriver) == 0x000001, "Wrong alignment on BP_MenuRacerPreview_C_SetDriver");
-static_assert(sizeof(BP_MenuRacerPreview_C_SetDriver) == 0x000003, "Wrong size on BP_MenuRacerPreview_C_SetDriver");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetDriver, InDriverId) == 0x000000, "Member 'BP_MenuRacerPreview_C_SetDriver::InDriverId' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetDriver, bInForcedSetting) == 0x000001, "Member 'BP_MenuRacerPreview_C_SetDriver::bInForcedSetting' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetDriver, SetDriverId) == 0x000002, "Member 'BP_MenuRacerPreview_C_SetDriver::SetDriverId' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_SetDriver;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.SetDriverInterface
 // 0x0002 (0x0002 - 0x0000)
@@ -1163,10 +726,7 @@ public:
 	EDriverId                                     InDriverId;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bInForcedSetting;                                  // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_SetDriverInterface) == 0x000001, "Wrong alignment on BP_MenuRacerPreview_C_SetDriverInterface");
-static_assert(sizeof(BP_MenuRacerPreview_C_SetDriverInterface) == 0x000002, "Wrong size on BP_MenuRacerPreview_C_SetDriverInterface");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetDriverInterface, InDriverId) == 0x000000, "Member 'BP_MenuRacerPreview_C_SetDriverInterface::InDriverId' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetDriverInterface, bInForcedSetting) == 0x000001, "Member 'BP_MenuRacerPreview_C_SetDriverInterface::bInForcedSetting' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_SetDriverInterface;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.SetDriverTransform_Hoverboard
 // 0x00F8 (0x00F8 - 0x0000)
@@ -1175,9 +735,7 @@ struct BP_MenuRacerPreview_C_SetDriverTransform_Hoverboard final
 public:
 	struct FHitResult                             CallFunc_K2_SetActorRelativeLocation_SweepHitResult; // 0x0000(0x00F8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_SetDriverTransform_Hoverboard) == 0x000008, "Wrong alignment on BP_MenuRacerPreview_C_SetDriverTransform_Hoverboard");
-static_assert(sizeof(BP_MenuRacerPreview_C_SetDriverTransform_Hoverboard) == 0x0000F8, "Wrong size on BP_MenuRacerPreview_C_SetDriverTransform_Hoverboard");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetDriverTransform_Hoverboard, CallFunc_K2_SetActorRelativeLocation_SweepHitResult) == 0x000000, "Member 'BP_MenuRacerPreview_C_SetDriverTransform_Hoverboard::CallFunc_K2_SetActorRelativeLocation_SweepHitResult' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_SetDriverTransform_Hoverboard;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.SetLightingChannels
 // 0x0003 (0x0003 - 0x0000)
@@ -1188,11 +746,7 @@ public:
 	bool                                          bInLightingChannel1;                               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bInLightingChannel2;                               // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_SetLightingChannels) == 0x000001, "Wrong alignment on BP_MenuRacerPreview_C_SetLightingChannels");
-static_assert(sizeof(BP_MenuRacerPreview_C_SetLightingChannels) == 0x000003, "Wrong size on BP_MenuRacerPreview_C_SetLightingChannels");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetLightingChannels, bInLightingChannel0) == 0x000000, "Member 'BP_MenuRacerPreview_C_SetLightingChannels::bInLightingChannel0' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetLightingChannels, bInLightingChannel1) == 0x000001, "Member 'BP_MenuRacerPreview_C_SetLightingChannels::bInLightingChannel1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetLightingChannels, bInLightingChannel2) == 0x000002, "Member 'BP_MenuRacerPreview_C_SetLightingChannels::bInLightingChannel2' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_SetLightingChannels;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.SetParts
 // 0x0004 (0x0004 - 0x0000)
@@ -1204,12 +758,7 @@ public:
 	EMachineId                                    InTirePartsId;                                     // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bInForcedSetting;                                  // 0x0003(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_SetParts) == 0x000001, "Wrong alignment on BP_MenuRacerPreview_C_SetParts");
-static_assert(sizeof(BP_MenuRacerPreview_C_SetParts) == 0x000004, "Wrong size on BP_MenuRacerPreview_C_SetParts");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetParts, InFrontPartsId) == 0x000000, "Member 'BP_MenuRacerPreview_C_SetParts::InFrontPartsId' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetParts, InRearPartsId) == 0x000001, "Member 'BP_MenuRacerPreview_C_SetParts::InRearPartsId' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetParts, InTirePartsId) == 0x000002, "Member 'BP_MenuRacerPreview_C_SetParts::InTirePartsId' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetParts, bInForcedSetting) == 0x000003, "Member 'BP_MenuRacerPreview_C_SetParts::bInForcedSetting' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_SetParts;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.SetupForCharaSelect
 // 0x0180 (0x0180 - 0x0000)
@@ -1226,15 +775,7 @@ public:
 	struct FHitResult                             CallFunc_K2_SetActorTransform_SweepHitResult;      // 0x0078(0x00F8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_K2_SetActorTransform_ReturnValue;         // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_SetupForCharaSelect) == 0x000010, "Wrong alignment on BP_MenuRacerPreview_C_SetupForCharaSelect");
-static_assert(sizeof(BP_MenuRacerPreview_C_SetupForCharaSelect) == 0x000180, "Wrong size on BP_MenuRacerPreview_C_SetupForCharaSelect");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetupForCharaSelect, InPlayerIndex) == 0x000000, "Member 'BP_MenuRacerPreview_C_SetupForCharaSelect::InPlayerIndex' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetupForCharaSelect, InSelectedPlayerCount) == 0x000004, "Member 'BP_MenuRacerPreview_C_SetupForCharaSelect::InSelectedPlayerCount' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetupForCharaSelect, CallFunc_CalcViewSplitId_ReturnValue) == 0x000008, "Member 'BP_MenuRacerPreview_C_SetupForCharaSelect::CallFunc_CalcViewSplitId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetupForCharaSelect, CallFunc_Map_Find_Value) == 0x000010, "Member 'BP_MenuRacerPreview_C_SetupForCharaSelect::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetupForCharaSelect, CallFunc_Map_Find_ReturnValue) == 0x000070, "Member 'BP_MenuRacerPreview_C_SetupForCharaSelect::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetupForCharaSelect, CallFunc_K2_SetActorTransform_SweepHitResult) == 0x000078, "Member 'BP_MenuRacerPreview_C_SetupForCharaSelect::CallFunc_K2_SetActorTransform_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetupForCharaSelect, CallFunc_K2_SetActorTransform_ReturnValue) == 0x000170, "Member 'BP_MenuRacerPreview_C_SetupForCharaSelect::CallFunc_K2_SetActorTransform_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_SetupForCharaSelect;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.SetupForTopMenu
 // 0x0100 (0x0100 - 0x0000)
@@ -1244,10 +785,7 @@ public:
 	struct FHitResult                             CallFunc_K2_SetActorTransform_SweepHitResult;      // 0x0000(0x00F8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_K2_SetActorTransform_ReturnValue;         // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_SetupForTopMenu) == 0x000008, "Wrong alignment on BP_MenuRacerPreview_C_SetupForTopMenu");
-static_assert(sizeof(BP_MenuRacerPreview_C_SetupForTopMenu) == 0x000100, "Wrong size on BP_MenuRacerPreview_C_SetupForTopMenu");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetupForTopMenu, CallFunc_K2_SetActorTransform_SweepHitResult) == 0x000000, "Member 'BP_MenuRacerPreview_C_SetupForTopMenu::CallFunc_K2_SetActorTransform_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetupForTopMenu, CallFunc_K2_SetActorTransform_ReturnValue) == 0x0000F8, "Member 'BP_MenuRacerPreview_C_SetupForTopMenu::CallFunc_K2_SetActorTransform_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_SetupForTopMenu;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.SetupTranformForCharaMachine
 // 0x0008 (0x0008 - 0x0000)
@@ -1257,10 +795,7 @@ public:
 	int32                                         PlayerIndex;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         SelectedPlayerCount;                               // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_SetupTranformForCharaMachine) == 0x000004, "Wrong alignment on BP_MenuRacerPreview_C_SetupTranformForCharaMachine");
-static_assert(sizeof(BP_MenuRacerPreview_C_SetupTranformForCharaMachine) == 0x000008, "Wrong size on BP_MenuRacerPreview_C_SetupTranformForCharaMachine");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetupTranformForCharaMachine, PlayerIndex) == 0x000000, "Member 'BP_MenuRacerPreview_C_SetupTranformForCharaMachine::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetupTranformForCharaMachine, SelectedPlayerCount) == 0x000004, "Member 'BP_MenuRacerPreview_C_SetupTranformForCharaMachine::SelectedPlayerCount' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_SetupTranformForCharaMachine;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.SetupTranformForLobby
 // 0x0004 (0x0004 - 0x0000)
@@ -1269,9 +804,7 @@ struct BP_MenuRacerPreview_C_SetupTranformForLobby final
 public:
 	int32                                         PlayerIndex;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_SetupTranformForLobby) == 0x000004, "Wrong alignment on BP_MenuRacerPreview_C_SetupTranformForLobby");
-static_assert(sizeof(BP_MenuRacerPreview_C_SetupTranformForLobby) == 0x000004, "Wrong size on BP_MenuRacerPreview_C_SetupTranformForLobby");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetupTranformForLobby, PlayerIndex) == 0x000000, "Member 'BP_MenuRacerPreview_C_SetupTranformForLobby::PlayerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_SetupTranformForLobby;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.SetupTranformForTopMenu
 // 0x0004 (0x0004 - 0x0000)
@@ -1280,9 +813,7 @@ struct BP_MenuRacerPreview_C_SetupTranformForTopMenu final
 public:
 	int32                                         PlayerIndex;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_SetupTranformForTopMenu) == 0x000004, "Wrong alignment on BP_MenuRacerPreview_C_SetupTranformForTopMenu");
-static_assert(sizeof(BP_MenuRacerPreview_C_SetupTranformForTopMenu) == 0x000004, "Wrong size on BP_MenuRacerPreview_C_SetupTranformForTopMenu");
-static_assert(offsetof(BP_MenuRacerPreview_C_SetupTranformForTopMenu, PlayerIndex) == 0x000000, "Member 'BP_MenuRacerPreview_C_SetupTranformForTopMenu::PlayerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_SetupTranformForTopMenu;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.StartRotation
 // 0x0020 (0x0020 - 0x0000)
@@ -1296,13 +827,7 @@ public:
 	double                                        CallFunc_SelectFloat_ReturnValue;                  // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_StartRotation) == 0x000008, "Wrong alignment on BP_MenuRacerPreview_C_StartRotation");
-static_assert(sizeof(BP_MenuRacerPreview_C_StartRotation) == 0x000020, "Wrong size on BP_MenuRacerPreview_C_StartRotation");
-static_assert(offsetof(BP_MenuRacerPreview_C_StartRotation, InPlayerIndex) == 0x000000, "Member 'BP_MenuRacerPreview_C_StartRotation::InPlayerIndex' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_StartRotation, CallFunc_Percent_IntInt_ReturnValue) == 0x000004, "Member 'BP_MenuRacerPreview_C_StartRotation::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_StartRotation, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000008, "Member 'BP_MenuRacerPreview_C_StartRotation::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_StartRotation, CallFunc_SelectFloat_ReturnValue) == 0x000010, "Member 'BP_MenuRacerPreview_C_StartRotation::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_StartRotation, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000018, "Member 'BP_MenuRacerPreview_C_StartRotation::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_StartRotation;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.UpdateRotation
 // 0x0240 (0x0240 - 0x0000)
@@ -1322,18 +847,7 @@ public:
 	float                                         CallFunc_MakeRotator_Yaw_ImplicitCast;             // 0x0234(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_MakeRotator_Yaw_ImplicitCast_1;           // 0x0238(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_UpdateRotation) == 0x000008, "Wrong alignment on BP_MenuRacerPreview_C_UpdateRotation");
-static_assert(sizeof(BP_MenuRacerPreview_C_UpdateRotation) == 0x000240, "Wrong size on BP_MenuRacerPreview_C_UpdateRotation");
-static_assert(offsetof(BP_MenuRacerPreview_C_UpdateRotation, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'BP_MenuRacerPreview_C_UpdateRotation::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_UpdateRotation, CallFunc_IsValid_ReturnValue_1) == 0x000001, "Member 'BP_MenuRacerPreview_C_UpdateRotation::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_UpdateRotation, CallFunc_MakeRotator_ReturnValue) == 0x000008, "Member 'BP_MenuRacerPreview_C_UpdateRotation::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_UpdateRotation, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x000020, "Member 'BP_MenuRacerPreview_C_UpdateRotation::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_UpdateRotation, CallFunc_K2_SetActorRelativeRotation_SweepHitResult) == 0x000028, "Member 'BP_MenuRacerPreview_C_UpdateRotation::CallFunc_K2_SetActorRelativeRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_UpdateRotation, CallFunc_MakeRotator_ReturnValue_1) == 0x000120, "Member 'BP_MenuRacerPreview_C_UpdateRotation::CallFunc_MakeRotator_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_UpdateRotation, CallFunc_K2_SetActorRelativeRotation_SweepHitResult_1) == 0x000138, "Member 'BP_MenuRacerPreview_C_UpdateRotation::CallFunc_K2_SetActorRelativeRotation_SweepHitResult_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_UpdateRotation, CallFunc_IsHoverboard_ReturnValue) == 0x000230, "Member 'BP_MenuRacerPreview_C_UpdateRotation::CallFunc_IsHoverboard_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_UpdateRotation, CallFunc_MakeRotator_Yaw_ImplicitCast) == 0x000234, "Member 'BP_MenuRacerPreview_C_UpdateRotation::CallFunc_MakeRotator_Yaw_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_UpdateRotation, CallFunc_MakeRotator_Yaw_ImplicitCast_1) == 0x000238, "Member 'BP_MenuRacerPreview_C_UpdateRotation::CallFunc_MakeRotator_Yaw_ImplicitCast_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_UpdateRotation;
 
 // Function BP_MenuRacerPreview.BP_MenuRacerPreview_C.Get Customize Data
 // 0x0078 (0x0078 - 0x0000)
@@ -1342,9 +856,7 @@ struct BP_MenuRacerPreview_C_Get_Customize_Data final
 public:
 	struct FUserMachineCustomizeData              OutCustomizeData;                                  // 0x0000(0x0078)(Parm, OutParm)
 };
-static_assert(alignof(BP_MenuRacerPreview_C_Get_Customize_Data) == 0x000008, "Wrong alignment on BP_MenuRacerPreview_C_Get_Customize_Data");
-static_assert(sizeof(BP_MenuRacerPreview_C_Get_Customize_Data) == 0x000078, "Wrong size on BP_MenuRacerPreview_C_Get_Customize_Data");
-static_assert(offsetof(BP_MenuRacerPreview_C_Get_Customize_Data, OutCustomizeData) == 0x000000, "Member 'BP_MenuRacerPreview_C_Get_Customize_Data::OutCustomizeData' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MenuRacerPreview_C_Get_Customize_Data;
 
 }
 

@@ -31,15 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CustomMeshComponent">();
+		STATIC_CLASS_IMPL("CustomMeshComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CustomMeshComponent")
 	}
 	static class UCustomMeshComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCustomMeshComponent>();
 	}
 };
-static_assert(alignof(UCustomMeshComponent) == 0x000010, "Wrong alignment on UCustomMeshComponent");
-static_assert(sizeof(UCustomMeshComponent) == 0x000560, "Wrong size on UCustomMeshComponent");
+DUMPER7_ASSERTS_UCustomMeshComponent;
 
 }
 

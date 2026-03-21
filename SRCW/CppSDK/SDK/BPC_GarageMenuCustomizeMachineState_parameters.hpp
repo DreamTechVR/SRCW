@@ -22,10 +22,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_InDeltaTime;                          // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GarageMenuCustomizeMachineState_C_ExecuteUbergraph_BPC_GarageMenuCustomizeMachineState) == 0x000004, "Wrong alignment on BPC_GarageMenuCustomizeMachineState_C_ExecuteUbergraph_BPC_GarageMenuCustomizeMachineState");
-static_assert(sizeof(BPC_GarageMenuCustomizeMachineState_C_ExecuteUbergraph_BPC_GarageMenuCustomizeMachineState) == 0x000008, "Wrong size on BPC_GarageMenuCustomizeMachineState_C_ExecuteUbergraph_BPC_GarageMenuCustomizeMachineState");
-static_assert(offsetof(BPC_GarageMenuCustomizeMachineState_C_ExecuteUbergraph_BPC_GarageMenuCustomizeMachineState, EntryPoint) == 0x000000, "Member 'BPC_GarageMenuCustomizeMachineState_C_ExecuteUbergraph_BPC_GarageMenuCustomizeMachineState::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BPC_GarageMenuCustomizeMachineState_C_ExecuteUbergraph_BPC_GarageMenuCustomizeMachineState, K2Node_Event_InDeltaTime) == 0x000004, "Member 'BPC_GarageMenuCustomizeMachineState_C_ExecuteUbergraph_BPC_GarageMenuCustomizeMachineState::K2Node_Event_InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GarageMenuCustomizeMachineState_C_ExecuteUbergraph_BPC_GarageMenuCustomizeMachineState;
 
 // Function BPC_GarageMenuCustomizeMachineState.BPC_GarageMenuCustomizeMachineState_C.OnUpdateState
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +31,7 @@ struct BPC_GarageMenuCustomizeMachineState_C_OnUpdateState final
 public:
 	float                                         InDeltaTime;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GarageMenuCustomizeMachineState_C_OnUpdateState) == 0x000004, "Wrong alignment on BPC_GarageMenuCustomizeMachineState_C_OnUpdateState");
-static_assert(sizeof(BPC_GarageMenuCustomizeMachineState_C_OnUpdateState) == 0x000004, "Wrong size on BPC_GarageMenuCustomizeMachineState_C_OnUpdateState");
-static_assert(offsetof(BPC_GarageMenuCustomizeMachineState_C_OnUpdateState, InDeltaTime) == 0x000000, "Member 'BPC_GarageMenuCustomizeMachineState_C_OnUpdateState::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GarageMenuCustomizeMachineState_C_OnUpdateState;
 
 }
 

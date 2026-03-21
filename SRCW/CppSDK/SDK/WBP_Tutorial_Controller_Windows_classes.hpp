@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Tutorial_Controller_Windows_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Tutorial_Controller_Windows_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Tutorial_Controller_Windows_C")
 	}
 	static class UWBP_Tutorial_Controller_Windows_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Tutorial_Controller_Windows_C>();
 	}
 };
-static_assert(alignof(UWBP_Tutorial_Controller_Windows_C) == 0x000008, "Wrong alignment on UWBP_Tutorial_Controller_Windows_C");
-static_assert(sizeof(UWBP_Tutorial_Controller_Windows_C) == 0x000460, "Wrong size on UWBP_Tutorial_Controller_Windows_C");
-static_assert(offsetof(UWBP_Tutorial_Controller_Windows_C, Controller) == 0x000458, "Member 'UWBP_Tutorial_Controller_Windows_C::Controller' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Tutorial_Controller_Windows_C;
 
 }
 

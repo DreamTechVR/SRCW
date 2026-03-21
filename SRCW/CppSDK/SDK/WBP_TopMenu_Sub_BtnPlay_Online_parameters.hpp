@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "UnionUI_structs.hpp"
 #include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "UnionSystem_structs.hpp"
-#include "UnionUI_structs.hpp"
 
 
 namespace SDK::Params
@@ -55,35 +55,7 @@ public:
 	bool                                          CallFunc_GetStaySceneMonkeyTesting_ReturnValue_1;  // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x005D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online) == 0x000008, "Wrong alignment on WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online");
-static_assert(sizeof(WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online) == 0x000060, "Wrong size on WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online, EntryPoint) == 0x000000, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online, CallFunc_GetMileStoneVersion_ReturnValue) == 0x000004, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online::CallFunc_GetMileStoneVersion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online, Temp_byte_Variable) == 0x000005, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000006, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online, CallFunc_IsOfflineMilestoneVersion_ReturnValue) == 0x000007, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online::CallFunc_IsOfflineMilestoneVersion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online, CallFunc_IsGrandPrixLeast1Play_ReturnValue) == 0x000008, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online::CallFunc_IsGrandPrixLeast1Play_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online, Temp_bool_Variable) == 0x000009, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online, Temp_byte_Variable_1) == 0x00000A, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online, CallFunc_IsShippingBuild_ReturnValue) == 0x00000B, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online::CallFunc_IsShippingBuild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online, CallFunc_IsShippingBuild_ReturnValue_1) == 0x00000C, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online::CallFunc_IsShippingBuild_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online, CallFunc_MakeLiteralText_ReturnValue) == 0x000010, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online, CallFunc_PlayAnimation_ReturnValue) == 0x000020, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online, K2Node_Event_InFocusEvent_1) == 0x000028, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online::K2Node_Event_InFocusEvent_1' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online, CallFunc_SoundPlay_ReturnValue) == 0x000030, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online, CallFunc_SoundPlay_ReturnValue_1) == 0x000034, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online, K2Node_SwitchEnum_CmpSuccess) == 0x000038, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online, K2Node_Event_InFocusEvent) == 0x00003C, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online::K2Node_Event_InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online, CallFunc_SoundPlay_ReturnValue_2) == 0x000044, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online::CallFunc_SoundPlay_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online, K2Node_Event_IsEnable) == 0x000048, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online::K2Node_Event_IsEnable' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online, K2Node_Select_Default) == 0x000049, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online, CallFunc_PlayAnimation_ReturnValue_1) == 0x000050, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online, CallFunc_GetStaySceneMonkeyTesting_ReturnValue) == 0x000058, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online::CallFunc_GetStaySceneMonkeyTesting_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online, CallFunc_Not_PreBool_ReturnValue) == 0x000059, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online, CallFunc_GetMileStoneVersion_ReturnValue_1) == 0x00005A, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online::CallFunc_GetMileStoneVersion_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x00005B, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online, CallFunc_GetStaySceneMonkeyTesting_ReturnValue_1) == 0x00005C, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online::CallFunc_GetStaySceneMonkeyTesting_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online, CallFunc_Not_PreBool_ReturnValue_1) == 0x00005D, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TopMenu_Sub_BtnPlay_Online_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnPlay_Online;
 
 // Function WBP_TopMenu_Sub_BtnPlay_Online.WBP_TopMenu_Sub_BtnPlay_Online_C.JudgeMenuClose
 // 0x0006 (0x0006 - 0x0000)
@@ -97,14 +69,7 @@ public:
 	bool                                          CallFunc_IsOpenMenuByConditions_ReturnValue;       // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TopMenu_Sub_BtnPlay_Online_C_JudgeMenuClose) == 0x000001, "Wrong alignment on WBP_TopMenu_Sub_BtnPlay_Online_C_JudgeMenuClose");
-static_assert(sizeof(WBP_TopMenu_Sub_BtnPlay_Online_C_JudgeMenuClose) == 0x000006, "Wrong size on WBP_TopMenu_Sub_BtnPlay_Online_C_JudgeMenuClose");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_JudgeMenuClose, bLocalPlayable) == 0x000000, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_JudgeMenuClose::bLocalPlayable' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_JudgeMenuClose, Temp_bool_Variable) == 0x000001, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_JudgeMenuClose::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_JudgeMenuClose, Temp_byte_Variable) == 0x000002, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_JudgeMenuClose::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_JudgeMenuClose, Temp_byte_Variable_1) == 0x000003, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_JudgeMenuClose::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_JudgeMenuClose, CallFunc_IsOpenMenuByConditions_ReturnValue) == 0x000004, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_JudgeMenuClose::CallFunc_IsOpenMenuByConditions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_JudgeMenuClose, K2Node_Select_Default) == 0x000005, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_JudgeMenuClose::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TopMenu_Sub_BtnPlay_Online_C_JudgeMenuClose;
 
 // Function WBP_TopMenu_Sub_BtnPlay_Online.WBP_TopMenu_Sub_BtnPlay_Online_C.OnFocusLost
 // 0x0008 (0x0008 - 0x0000)
@@ -113,9 +78,7 @@ struct WBP_TopMenu_Sub_BtnPlay_Online_C_OnFocusLost final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_TopMenu_Sub_BtnPlay_Online_C_OnFocusLost) == 0x000004, "Wrong alignment on WBP_TopMenu_Sub_BtnPlay_Online_C_OnFocusLost");
-static_assert(sizeof(WBP_TopMenu_Sub_BtnPlay_Online_C_OnFocusLost) == 0x000008, "Wrong size on WBP_TopMenu_Sub_BtnPlay_Online_C_OnFocusLost");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_OnFocusLost, InFocusEvent) == 0x000000, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_OnFocusLost::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TopMenu_Sub_BtnPlay_Online_C_OnFocusLost;
 
 // Function WBP_TopMenu_Sub_BtnPlay_Online.WBP_TopMenu_Sub_BtnPlay_Online_C.OnFocusLostImpl
 // 0x0008 (0x0008 - 0x0000)
@@ -124,9 +87,7 @@ struct WBP_TopMenu_Sub_BtnPlay_Online_C_OnFocusLostImpl final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_TopMenu_Sub_BtnPlay_Online_C_OnFocusLostImpl) == 0x000004, "Wrong alignment on WBP_TopMenu_Sub_BtnPlay_Online_C_OnFocusLostImpl");
-static_assert(sizeof(WBP_TopMenu_Sub_BtnPlay_Online_C_OnFocusLostImpl) == 0x000008, "Wrong size on WBP_TopMenu_Sub_BtnPlay_Online_C_OnFocusLostImpl");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_OnFocusLostImpl, InFocusEvent) == 0x000000, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_OnFocusLostImpl::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TopMenu_Sub_BtnPlay_Online_C_OnFocusLostImpl;
 
 // Function WBP_TopMenu_Sub_BtnPlay_Online.WBP_TopMenu_Sub_BtnPlay_Online_C.OnFocusReceived
 // 0x0268 (0x0268 - 0x0000)
@@ -139,13 +100,7 @@ public:
 	struct FEventReply                            CallFunc_OnFocusReceived_ReturnValue;              // 0x00F8(0x00B8)()
 	struct FEventReply                            CallFunc_OnFocusReceivedImpl_ReturnValue;          // 0x01B0(0x00B8)()
 };
-static_assert(alignof(WBP_TopMenu_Sub_BtnPlay_Online_C_OnFocusReceived) == 0x000008, "Wrong alignment on WBP_TopMenu_Sub_BtnPlay_Online_C_OnFocusReceived");
-static_assert(sizeof(WBP_TopMenu_Sub_BtnPlay_Online_C_OnFocusReceived) == 0x000268, "Wrong size on WBP_TopMenu_Sub_BtnPlay_Online_C_OnFocusReceived");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_OnFocusReceived, CallFunc_OnFocusReceived_ReturnValue) == 0x0000F8, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_OnFocusReceived::CallFunc_OnFocusReceived_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_OnFocusReceived, CallFunc_OnFocusReceivedImpl_ReturnValue) == 0x0001B0, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_OnFocusReceived::CallFunc_OnFocusReceivedImpl_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TopMenu_Sub_BtnPlay_Online_C_OnFocusReceived;
 
 // Function WBP_TopMenu_Sub_BtnPlay_Online.WBP_TopMenu_Sub_BtnPlay_Online_C.SetEnableButton
 // 0x0001 (0x0001 - 0x0000)
@@ -154,9 +109,7 @@ struct WBP_TopMenu_Sub_BtnPlay_Online_C_SetEnableButton final
 public:
 	bool                                          IsEnable;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TopMenu_Sub_BtnPlay_Online_C_SetEnableButton) == 0x000001, "Wrong alignment on WBP_TopMenu_Sub_BtnPlay_Online_C_SetEnableButton");
-static_assert(sizeof(WBP_TopMenu_Sub_BtnPlay_Online_C_SetEnableButton) == 0x000001, "Wrong size on WBP_TopMenu_Sub_BtnPlay_Online_C_SetEnableButton");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnPlay_Online_C_SetEnableButton, IsEnable) == 0x000000, "Member 'WBP_TopMenu_Sub_BtnPlay_Online_C_SetEnableButton::IsEnable' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TopMenu_Sub_BtnPlay_Online_C_SetEnableButton;
 
 }
 

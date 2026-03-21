@@ -29,17 +29,7 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_6;            // 0x0064(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_7;            // 0x0074(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_Sub_RaceRule_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRule) == 0x000004, "Wrong alignment on WBP_StatusInfo_Sub_RaceRule_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRule");
-static_assert(sizeof(WBP_StatusInfo_Sub_RaceRule_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRule) == 0x000084, "Wrong size on WBP_StatusInfo_Sub_RaceRule_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRule");
-static_assert(offsetof(WBP_StatusInfo_Sub_RaceRule_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRule, EntryPoint) == 0x000000, "Member 'WBP_StatusInfo_Sub_RaceRule_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRule::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_RaceRule_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRule, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_StatusInfo_Sub_RaceRule_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRule::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_RaceRule_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRule, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'WBP_StatusInfo_Sub_RaceRule_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRule::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_RaceRule_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRule, K2Node_CreateDelegate_OutputDelegate_2) == 0x000024, "Member 'WBP_StatusInfo_Sub_RaceRule_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRule::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_RaceRule_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRule, K2Node_CreateDelegate_OutputDelegate_3) == 0x000034, "Member 'WBP_StatusInfo_Sub_RaceRule_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRule::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_RaceRule_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRule, K2Node_CreateDelegate_OutputDelegate_4) == 0x000044, "Member 'WBP_StatusInfo_Sub_RaceRule_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRule::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_RaceRule_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRule, K2Node_CreateDelegate_OutputDelegate_5) == 0x000054, "Member 'WBP_StatusInfo_Sub_RaceRule_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRule::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_RaceRule_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRule, K2Node_CreateDelegate_OutputDelegate_6) == 0x000064, "Member 'WBP_StatusInfo_Sub_RaceRule_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRule::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_RaceRule_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRule, K2Node_CreateDelegate_OutputDelegate_7) == 0x000074, "Member 'WBP_StatusInfo_Sub_RaceRule_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRule::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_Sub_RaceRule_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RaceRule;
 
 // Function WBP_StatusInfo_Sub_RaceRule.WBP_StatusInfo_Sub_RaceRule_C.SetSelect
 // 0x0008 (0x0008 - 0x0000)
@@ -52,13 +42,7 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_2;          // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_3;          // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_Sub_RaceRule_C_SetSelect) == 0x000004, "Wrong alignment on WBP_StatusInfo_Sub_RaceRule_C_SetSelect");
-static_assert(sizeof(WBP_StatusInfo_Sub_RaceRule_C_SetSelect) == 0x000008, "Wrong size on WBP_StatusInfo_Sub_RaceRule_C_SetSelect");
-static_assert(offsetof(WBP_StatusInfo_Sub_RaceRule_C_SetSelect, Index_0) == 0x000000, "Member 'WBP_StatusInfo_Sub_RaceRule_C_SetSelect::Index_0' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_RaceRule_C_SetSelect, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000004, "Member 'WBP_StatusInfo_Sub_RaceRule_C_SetSelect::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_RaceRule_C_SetSelect, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000005, "Member 'WBP_StatusInfo_Sub_RaceRule_C_SetSelect::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_RaceRule_C_SetSelect, CallFunc_EqualEqual_IntInt_ReturnValue_2) == 0x000006, "Member 'WBP_StatusInfo_Sub_RaceRule_C_SetSelect::CallFunc_EqualEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_RaceRule_C_SetSelect, CallFunc_EqualEqual_IntInt_ReturnValue_3) == 0x000007, "Member 'WBP_StatusInfo_Sub_RaceRule_C_SetSelect::CallFunc_EqualEqual_IntInt_ReturnValue_3' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_Sub_RaceRule_C_SetSelect;
 
 }
 

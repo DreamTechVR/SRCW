@@ -78,38 +78,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_System_Loading_C">();
+		BP_STATIC_CLASS_IMPL("WBP_System_Loading_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_System_Loading_C")
 	}
 	static class UWBP_System_Loading_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_System_Loading_C>();
 	}
 };
-static_assert(alignof(UWBP_System_Loading_C) == 0x000008, "Wrong alignment on UWBP_System_Loading_C");
-static_assert(sizeof(UWBP_System_Loading_C) == 0x0003A0, "Wrong size on UWBP_System_Loading_C");
-static_assert(offsetof(UWBP_System_Loading_C, UberGraphFrame) == 0x0002E8, "Member 'UWBP_System_Loading_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_C, Zero_to_100per) == 0x0002F0, "Member 'UWBP_System_Loading_C::Zero_to_100per' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_C, BaseLeft) == 0x0002F8, "Member 'UWBP_System_Loading_C::BaseLeft' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_C, BaseRight) == 0x000300, "Member 'UWBP_System_Loading_C::BaseRight' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_C, GoalFalg) == 0x000308, "Member 'UWBP_System_Loading_C::GoalFalg' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_C, GoalLine) == 0x000310, "Member 'UWBP_System_Loading_C::GoalLine' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_C, Panel) == 0x000318, "Member 'UWBP_System_Loading_C::Panel' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_C, WBP_System_Sub_LoadingRing_01) == 0x000320, "Member 'UWBP_System_Loading_C::WBP_System_Sub_LoadingRing_01' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_C, WBP_System_Sub_LoadingRing_02) == 0x000328, "Member 'UWBP_System_Loading_C::WBP_System_Sub_LoadingRing_02' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_C, WBP_System_Sub_LoadingRing_03) == 0x000330, "Member 'UWBP_System_Loading_C::WBP_System_Sub_LoadingRing_03' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_C, WBP_System_Sub_LoadingSonic) == 0x000338, "Member 'UWBP_System_Loading_C::WBP_System_Sub_LoadingSonic' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_C, XXX_w_1800) == 0x000340, "Member 'UWBP_System_Loading_C::XXX_w_1800' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_C, XXX_w_2000) == 0x000348, "Member 'UWBP_System_Loading_C::XXX_w_2000' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_C, LoadingPhase) == 0x000350, "Member 'UWBP_System_Loading_C::LoadingPhase' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_C, TargetLoadingPhase) == 0x000354, "Member 'UWBP_System_Loading_C::TargetLoadingPhase' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_C, LoadingPhaseNum) == 0x000358, "Member 'UWBP_System_Loading_C::LoadingPhaseNum' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_C, LoadingPhaseAnimTime) == 0x000360, "Member 'UWBP_System_Loading_C::LoadingPhaseAnimTime' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_C, DefaultAnimSpeed) == 0x000368, "Member 'UWBP_System_Loading_C::DefaultAnimSpeed' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_C, MinAnimSpeed) == 0x000370, "Member 'UWBP_System_Loading_C::MinAnimSpeed' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_C, AnimationStopTime) == 0x000378, "Member 'UWBP_System_Loading_C::AnimationStopTime' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_C, IsLoadingProgressMode) == 0x000380, "Member 'UWBP_System_Loading_C::IsLoadingProgressMode' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_C, OnEndAnimFinished) == 0x000388, "Member 'UWBP_System_Loading_C::OnEndAnimFinished' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Loading_C, bProgressAnimationEnd) == 0x000398, "Member 'UWBP_System_Loading_C::bProgressAnimationEnd' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_System_Loading_C;
 
 }
 

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "UnionUI_structs.hpp"
-#include "UNION_structs.hpp"
 
 
 namespace SDK::Params
@@ -25,9 +25,7 @@ struct WBP_System_Loading_BG_C_ChangeCourseImage final
 public:
 	EStageId                                      InCourseId;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_System_Loading_BG_C_ChangeCourseImage) == 0x000001, "Wrong alignment on WBP_System_Loading_BG_C_ChangeCourseImage");
-static_assert(sizeof(WBP_System_Loading_BG_C_ChangeCourseImage) == 0x000001, "Wrong size on WBP_System_Loading_BG_C_ChangeCourseImage");
-static_assert(offsetof(WBP_System_Loading_BG_C_ChangeCourseImage, InCourseId) == 0x000000, "Member 'WBP_System_Loading_BG_C_ChangeCourseImage::InCourseId' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_System_Loading_BG_C_ChangeCourseImage;
 
 // Function WBP_System_Loading_BG.WBP_System_Loading_BG_C.CreateHintPopupWindow
 // 0x0001 (0x0001 - 0x0000)
@@ -36,9 +34,7 @@ struct WBP_System_Loading_BG_C_CreateHintPopupWindow final
 public:
 	EHintId                                       InHintId;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_System_Loading_BG_C_CreateHintPopupWindow) == 0x000001, "Wrong alignment on WBP_System_Loading_BG_C_CreateHintPopupWindow");
-static_assert(sizeof(WBP_System_Loading_BG_C_CreateHintPopupWindow) == 0x000001, "Wrong size on WBP_System_Loading_BG_C_CreateHintPopupWindow");
-static_assert(offsetof(WBP_System_Loading_BG_C_CreateHintPopupWindow, InHintId) == 0x000000, "Member 'WBP_System_Loading_BG_C_CreateHintPopupWindow::InHintId' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_System_Loading_BG_C_CreateHintPopupWindow;
 
 // Function WBP_System_Loading_BG.WBP_System_Loading_BG_C.ExecuteUbergraph_WBP_System_Loading_BG
 // 0x01E0 (0x01E0 - 0x0000)
@@ -121,68 +117,7 @@ public:
 	uint8                                         Pad_1D9[0x3];                                      // 0x01D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_GetLegendCompeRating_ReturnValue;         // 0x01DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG) == 0x000008, "Wrong alignment on WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG");
-static_assert(sizeof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG) == 0x0001E0, "Wrong size on WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, EntryPoint) == 0x000000, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_MakeLiteralByte_ReturnValue) == 0x000004, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, K2Node_CustomEvent_InCourseId) == 0x000005, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::K2Node_CustomEvent_InCourseId' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_GetEnumeratorName_ReturnValue) == 0x000008, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000010, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_GetDataTableRowFromName_OutRow) == 0x000018, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x0000F8, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_Add_IntInt_ReturnValue) == 0x0000FC, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, Temp_object_Variable) == 0x000100, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, K2Node_CustomEvent_Loaded_1) == 0x000108, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::K2Node_CustomEvent_Loaded_1' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, K2Node_DynamicCast_As_____2D) == 0x000110, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, K2Node_DynamicCast_bSuccess) == 0x000118, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_IsValidSoftObjectReference_ReturnValue) == 0x000119, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_IsValidSoftObjectReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_IsAnimationPlaying_ReturnValue) == 0x00011A, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_PlayAnimation_ReturnValue) == 0x000120, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, K2Node_CreateDelegate_OutputDelegate) == 0x000128, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_IsGroupRace_ReturnValue) == 0x000138, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_IsGroupRace_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, K2Node_CustomEvent_InHintId) == 0x000139, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::K2Node_CustomEvent_InHintId' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, K2Node_CreateDelegate_OutputDelegate_1) == 0x00013C, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_IsValid_ReturnValue) == 0x00014C, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_Create_ReturnValue) == 0x000150, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_Get_Display_TipsHint_Id_OutHintId) == 0x000158, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_Get_Display_TipsHint_Id_OutHintId' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_IsReadHint_ReturnValue) == 0x000159, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_IsReadHint_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x00015A, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_IsFinalRace_ReturnValue) == 0x00015B, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_IsFinalRace_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00015C, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_BooleanAND_ReturnValue) == 0x00015D, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000160, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_GetCurrentRaceCount_ReturnValue) == 0x000168, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_GetCurrentRaceCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_Greater_IntInt_ReturnValue) == 0x00016C, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_BooleanAND_ReturnValue_1) == 0x00016D, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_GetSelectedGameModeId_ReturnValue_1) == 0x00016E, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_GetSelectedGameModeId_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, Temp_object_Variable_1) == 0x000170, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000178, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, K2Node_DynamicCast_As_____2D_1) == 0x000180, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::K2Node_DynamicCast_As_____2D_1' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, K2Node_DynamicCast_bSuccess_1) == 0x000188, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_GetCurrentRaceCount_ReturnValue_1) == 0x00018C, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_GetCurrentRaceCount_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000190, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_BooleanAND_ReturnValue_2) == 0x000191, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, K2Node_Event_IsDesignTime) == 0x000192, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_IsValid_ReturnValue_1) == 0x000193, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_IsValid_ReturnValue_2) == 0x000194, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, K2Node_CustomEvent_Loaded) == 0x000198, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::K2Node_CustomEvent_Loaded' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_GetSelectedGameModeId_ReturnValue_2) == 0x0001A0, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_GetSelectedGameModeId_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x0001A1, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_IsValidSoftObjectReference_ReturnValue_1) == 0x0001A2, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_IsValidSoftObjectReference_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_EqualEqual_ByteByte_ReturnValue_3) == 0x0001A3, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_EqualEqual_ByteByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_BooleanOR_ReturnValue) == 0x0001A4, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_GetOnlineRating_ReturnValue) == 0x0001A8, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_GetOnlineRating_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_CalcViewMenuSpeedClassId_IsGroupSpeed) == 0x0001AC, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_CalcViewMenuSpeedClassId_IsGroupSpeed' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_CalcViewMenuSpeedClassId_ReturnValue) == 0x0001AD, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_CalcViewMenuSpeedClassId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_BooleanAND_ReturnValue_3) == 0x0001AE, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, K2Node_CreateDelegate_OutputDelegate_2) == 0x0001B0, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, K2Node_CustomEvent_FadeDirection) == 0x0001C0, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::K2Node_CustomEvent_FadeDirection' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_GetSelectedGameModeId_ReturnValue_3) == 0x0001C1, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_GetSelectedGameModeId_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x0001C2, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x0001C8, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, K2Node_DynamicCast_As_____2D_2) == 0x0001D0, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::K2Node_DynamicCast_As_____2D_2' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, K2Node_DynamicCast_bSuccess_2) == 0x0001D8, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG, CallFunc_GetLegendCompeRating_ReturnValue) == 0x0001DC, "Member 'WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG::CallFunc_GetLegendCompeRating_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_System_Loading_BG_C_ExecuteUbergraph_WBP_System_Loading_BG;
 
 // Function WBP_System_Loading_BG.WBP_System_Loading_BG_C.Get Display TipsHint Id
 // 0x00B8 (0x00B8 - 0x0000)
@@ -211,23 +146,7 @@ public:
 	uint8                                         Pad_AE[0x2];                                       // 0x00AE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_Select_Default;                             // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_System_Loading_BG_C_Get_Display_TipsHint_Id) == 0x000008, "Wrong alignment on WBP_System_Loading_BG_C_Get_Display_TipsHint_Id");
-static_assert(sizeof(WBP_System_Loading_BG_C_Get_Display_TipsHint_Id) == 0x0000B8, "Wrong size on WBP_System_Loading_BG_C_Get_Display_TipsHint_Id");
-static_assert(offsetof(WBP_System_Loading_BG_C_Get_Display_TipsHint_Id, OutHintId) == 0x000000, "Member 'WBP_System_Loading_BG_C_Get_Display_TipsHint_Id::OutHintId' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_Get_Display_TipsHint_Id, LocalTipsIndex) == 0x000004, "Member 'WBP_System_Loading_BG_C_Get_Display_TipsHint_Id::LocalTipsIndex' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_Get_Display_TipsHint_Id, CallFunc_GetTipsDisplayIndex_ReturnValue) == 0x000008, "Member 'WBP_System_Loading_BG_C_Get_Display_TipsHint_Id::CallFunc_GetTipsDisplayIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_Get_Display_TipsHint_Id, CallFunc_Conv_ByteToInt_ReturnValue) == 0x00000C, "Member 'WBP_System_Loading_BG_C_Get_Display_TipsHint_Id::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_Get_Display_TipsHint_Id, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'WBP_System_Loading_BG_C_Get_Display_TipsHint_Id::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_Get_Display_TipsHint_Id, Temp_bool_Variable) == 0x000014, "Member 'WBP_System_Loading_BG_C_Get_Display_TipsHint_Id::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_Get_Display_TipsHint_Id, CallFunc_GetTipsHintDataArrayOnlyNormal_OutTipsHintDataArray) == 0x000018, "Member 'WBP_System_Loading_BG_C_Get_Display_TipsHint_Id::CallFunc_GetTipsHintDataArrayOnlyNormal_OutTipsHintDataArray' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_Get_Display_TipsHint_Id, CallFunc_Array_IsNotEmpty_ReturnValue) == 0x000028, "Member 'WBP_System_Loading_BG_C_Get_Display_TipsHint_Id::CallFunc_Array_IsNotEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_Get_Display_TipsHint_Id, CallFunc_Array_Length_ReturnValue) == 0x00002C, "Member 'WBP_System_Loading_BG_C_Get_Display_TipsHint_Id::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_Get_Display_TipsHint_Id, CallFunc_Percent_IntInt_ReturnValue) == 0x000030, "Member 'WBP_System_Loading_BG_C_Get_Display_TipsHint_Id::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_Get_Display_TipsHint_Id, CallFunc_Array_Random_OutItem) == 0x000038, "Member 'WBP_System_Loading_BG_C_Get_Display_TipsHint_Id::CallFunc_Array_Random_OutItem' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_Get_Display_TipsHint_Id, CallFunc_Array_Random_OutIndex) == 0x0000A8, "Member 'WBP_System_Loading_BG_C_Get_Display_TipsHint_Id::CallFunc_Array_Random_OutIndex' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_Get_Display_TipsHint_Id, CallFunc_Conv_IntToByte_ReturnValue) == 0x0000AC, "Member 'WBP_System_Loading_BG_C_Get_Display_TipsHint_Id::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_Get_Display_TipsHint_Id, CallFunc_Array_IsValidIndex_ReturnValue) == 0x0000AD, "Member 'WBP_System_Loading_BG_C_Get_Display_TipsHint_Id::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_Loading_BG_C_Get_Display_TipsHint_Id, K2Node_Select_Default) == 0x0000B0, "Member 'WBP_System_Loading_BG_C_Get_Display_TipsHint_Id::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_System_Loading_BG_C_Get_Display_TipsHint_Id;
 
 // Function WBP_System_Loading_BG.WBP_System_Loading_BG_C.GetLoadingGaurgeWB
 // 0x0008 (0x0008 - 0x0000)
@@ -236,9 +155,7 @@ struct WBP_System_Loading_BG_C_GetLoadingGaurgeWB final
 public:
 	class UWBP_System_Loading_C*                  WBP_System_Loading_0;                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_System_Loading_BG_C_GetLoadingGaurgeWB) == 0x000008, "Wrong alignment on WBP_System_Loading_BG_C_GetLoadingGaurgeWB");
-static_assert(sizeof(WBP_System_Loading_BG_C_GetLoadingGaurgeWB) == 0x000008, "Wrong size on WBP_System_Loading_BG_C_GetLoadingGaurgeWB");
-static_assert(offsetof(WBP_System_Loading_BG_C_GetLoadingGaurgeWB, WBP_System_Loading_0) == 0x000000, "Member 'WBP_System_Loading_BG_C_GetLoadingGaurgeWB::WBP_System_Loading_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_System_Loading_BG_C_GetLoadingGaurgeWB;
 
 // Function WBP_System_Loading_BG.WBP_System_Loading_BG_C.OnFinishedFadeOut
 // 0x0001 (0x0001 - 0x0000)
@@ -247,9 +164,7 @@ struct WBP_System_Loading_BG_C_OnFinishedFadeOut final
 public:
 	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_System_Loading_BG_C_OnFinishedFadeOut) == 0x000001, "Wrong alignment on WBP_System_Loading_BG_C_OnFinishedFadeOut");
-static_assert(sizeof(WBP_System_Loading_BG_C_OnFinishedFadeOut) == 0x000001, "Wrong size on WBP_System_Loading_BG_C_OnFinishedFadeOut");
-static_assert(offsetof(WBP_System_Loading_BG_C_OnFinishedFadeOut, FadeDirection) == 0x000000, "Member 'WBP_System_Loading_BG_C_OnFinishedFadeOut::FadeDirection' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_System_Loading_BG_C_OnFinishedFadeOut;
 
 // Function WBP_System_Loading_BG.WBP_System_Loading_BG_C.OnLoaded_9D730D33489CFB97E01C0EAC778D0A17
 // 0x0008 (0x0008 - 0x0000)
@@ -258,9 +173,7 @@ struct WBP_System_Loading_BG_C_OnLoaded_9D730D33489CFB97E01C0EAC778D0A17 final
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_System_Loading_BG_C_OnLoaded_9D730D33489CFB97E01C0EAC778D0A17) == 0x000008, "Wrong alignment on WBP_System_Loading_BG_C_OnLoaded_9D730D33489CFB97E01C0EAC778D0A17");
-static_assert(sizeof(WBP_System_Loading_BG_C_OnLoaded_9D730D33489CFB97E01C0EAC778D0A17) == 0x000008, "Wrong size on WBP_System_Loading_BG_C_OnLoaded_9D730D33489CFB97E01C0EAC778D0A17");
-static_assert(offsetof(WBP_System_Loading_BG_C_OnLoaded_9D730D33489CFB97E01C0EAC778D0A17, Loaded) == 0x000000, "Member 'WBP_System_Loading_BG_C_OnLoaded_9D730D33489CFB97E01C0EAC778D0A17::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_System_Loading_BG_C_OnLoaded_9D730D33489CFB97E01C0EAC778D0A17;
 
 // Function WBP_System_Loading_BG.WBP_System_Loading_BG_C.OnLoaded_FDDD149A43E2111E1175FB87562812C9
 // 0x0008 (0x0008 - 0x0000)
@@ -269,9 +182,7 @@ struct WBP_System_Loading_BG_C_OnLoaded_FDDD149A43E2111E1175FB87562812C9 final
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_System_Loading_BG_C_OnLoaded_FDDD149A43E2111E1175FB87562812C9) == 0x000008, "Wrong alignment on WBP_System_Loading_BG_C_OnLoaded_FDDD149A43E2111E1175FB87562812C9");
-static_assert(sizeof(WBP_System_Loading_BG_C_OnLoaded_FDDD149A43E2111E1175FB87562812C9) == 0x000008, "Wrong size on WBP_System_Loading_BG_C_OnLoaded_FDDD149A43E2111E1175FB87562812C9");
-static_assert(offsetof(WBP_System_Loading_BG_C_OnLoaded_FDDD149A43E2111E1175FB87562812C9, Loaded) == 0x000000, "Member 'WBP_System_Loading_BG_C_OnLoaded_FDDD149A43E2111E1175FB87562812C9::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_System_Loading_BG_C_OnLoaded_FDDD149A43E2111E1175FB87562812C9;
 
 // Function WBP_System_Loading_BG.WBP_System_Loading_BG_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -280,9 +191,7 @@ struct WBP_System_Loading_BG_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_System_Loading_BG_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_System_Loading_BG_C_PreConstruct");
-static_assert(sizeof(WBP_System_Loading_BG_C_PreConstruct) == 0x000001, "Wrong size on WBP_System_Loading_BG_C_PreConstruct");
-static_assert(offsetof(WBP_System_Loading_BG_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_System_Loading_BG_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_System_Loading_BG_C_PreConstruct;
 
 // Function WBP_System_Loading_BG.WBP_System_Loading_BG_C.SetCharaIcons
 // 0x0010 (0x0010 - 0x0000)
@@ -291,9 +200,7 @@ struct WBP_System_Loading_BG_C_SetCharaIcons final
 public:
 	TArray<class UObject*>                        CharaIcons_0;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_System_Loading_BG_C_SetCharaIcons) == 0x000008, "Wrong alignment on WBP_System_Loading_BG_C_SetCharaIcons");
-static_assert(sizeof(WBP_System_Loading_BG_C_SetCharaIcons) == 0x000010, "Wrong size on WBP_System_Loading_BG_C_SetCharaIcons");
-static_assert(offsetof(WBP_System_Loading_BG_C_SetCharaIcons, CharaIcons_0) == 0x000000, "Member 'WBP_System_Loading_BG_C_SetCharaIcons::CharaIcons_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_System_Loading_BG_C_SetCharaIcons;
 
 }
 

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -36,17 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ItemDarkChaoPerformance_C">();
+		BP_STATIC_CLASS_IMPL("BP_ItemDarkChaoPerformance_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ItemDarkChaoPerformance_C")
 	}
 	static class ABP_ItemDarkChaoPerformance_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ItemDarkChaoPerformance_C>();
 	}
 };
-static_assert(alignof(ABP_ItemDarkChaoPerformance_C) == 0x000008, "Wrong alignment on ABP_ItemDarkChaoPerformance_C");
-static_assert(sizeof(ABP_ItemDarkChaoPerformance_C) == 0x000630, "Wrong size on ABP_ItemDarkChaoPerformance_C");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance_C, UberGraphFrame) == 0x000620, "Member 'ABP_ItemDarkChaoPerformance_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance_C, Niagara) == 0x000628, "Member 'ABP_ItemDarkChaoPerformance_C::Niagara' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_ItemDarkChaoPerformance_C;
 
 }
 

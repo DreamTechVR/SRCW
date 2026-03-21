@@ -47,27 +47,7 @@ public:
 	double                                        CallFunc_Subtract_DoubleDouble_B_ImplicitCast;     // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave) == 0x000008, "Wrong alignment on WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave");
-static_assert(sizeof(WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave) == 0x0000A8, "Wrong size on WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave");
-static_assert(offsetof(WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave, EntryPoint) == 0x000000, "Member 'WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000008, "Member 'WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave, K2Node_CustomEvent_Status) == 0x000010, "Member 'WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave::K2Node_CustomEvent_Status' has a wrong offset!");
-static_assert(offsetof(WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave, K2Node_SwitchEnum_CmpSuccess) == 0x000011, "Member 'WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave, K2Node_CreateDelegate_OutputDelegate) == 0x000014, "Member 'WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave, CallFunc_PlayAnimation_ReturnValue) == 0x000028, "Member 'WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave, CallFunc_PlayAnimation_ReturnValue_1) == 0x000030, "Member 'WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave, CallFunc_PlayAnimation_ReturnValue_2) == 0x000038, "Member 'WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x000040, "Member 'WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave, K2Node_CreateDelegate_OutputDelegate_1) == 0x000048, "Member 'WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave, CallFunc_Now_ReturnValue) == 0x000058, "Member 'WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave::CallFunc_Now_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave, CallFunc_Now_ReturnValue_1) == 0x000060, "Member 'WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave::CallFunc_Now_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave, CallFunc_Sub_DateTimeDateTime_ReturnValue) == 0x000068, "Member 'WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave::CallFunc_Sub_DateTimeDateTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave, CallFunc_GetTotalSeconds_ReturnValue) == 0x000070, "Member 'WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave::CallFunc_GetTotalSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave, K2Node_CreateDelegate_OutputDelegate_2) == 0x000074, "Member 'WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x000088, "Member 'WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave, K2Node_Event_IsDesignTime) == 0x000090, "Member 'WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave, CallFunc_Subtract_DoubleDouble_B_ImplicitCast) == 0x000098, "Member 'WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave::CallFunc_Subtract_DoubleDouble_B_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave, CallFunc_Delay_Duration_ImplicitCast) == 0x0000A0, "Member 'WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave::CallFunc_Delay_Duration_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_System_AutoSave_C_ExecuteUbergraph_WBP_System_AutoSave;
 
 // Function WBP_System_AutoSave.WBP_System_AutoSave_C.OnSaveComplete
 // 0x0001 (0x0001 - 0x0000)
@@ -76,9 +56,7 @@ struct WBP_System_AutoSave_C_OnSaveComplete final
 public:
 	ESaveDataStatus                               Status;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_System_AutoSave_C_OnSaveComplete) == 0x000001, "Wrong alignment on WBP_System_AutoSave_C_OnSaveComplete");
-static_assert(sizeof(WBP_System_AutoSave_C_OnSaveComplete) == 0x000001, "Wrong size on WBP_System_AutoSave_C_OnSaveComplete");
-static_assert(offsetof(WBP_System_AutoSave_C_OnSaveComplete, Status) == 0x000000, "Member 'WBP_System_AutoSave_C_OnSaveComplete::Status' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_System_AutoSave_C_OnSaveComplete;
 
 // Function WBP_System_AutoSave.WBP_System_AutoSave_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -87,9 +65,7 @@ struct WBP_System_AutoSave_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_System_AutoSave_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_System_AutoSave_C_PreConstruct");
-static_assert(sizeof(WBP_System_AutoSave_C_PreConstruct) == 0x000001, "Wrong size on WBP_System_AutoSave_C_PreConstruct");
-static_assert(offsetof(WBP_System_AutoSave_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_System_AutoSave_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_System_AutoSave_C_PreConstruct;
 
 }
 

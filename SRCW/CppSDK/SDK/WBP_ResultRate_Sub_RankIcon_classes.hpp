@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -77,52 +77,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ResultRate_Sub_RankIcon_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ResultRate_Sub_RankIcon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ResultRate_Sub_RankIcon_C")
 	}
 	static class UWBP_ResultRate_Sub_RankIcon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ResultRate_Sub_RankIcon_C>();
 	}
 };
-static_assert(alignof(UWBP_ResultRate_Sub_RankIcon_C) == 0x000008, "Wrong alignment on UWBP_ResultRate_Sub_RankIcon_C");
-static_assert(sizeof(UWBP_ResultRate_Sub_RankIcon_C) == 0x0004E0, "Wrong size on UWBP_ResultRate_Sub_RankIcon_C");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, UberGraphFrame) == 0x000370, "Member 'UWBP_ResultRate_Sub_RankIcon_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, RankIcon_RankDown) == 0x000378, "Member 'UWBP_ResultRate_Sub_RankIcon_C::RankIcon_RankDown' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, RankIcon_RankUp) == 0x000380, "Member 'UWBP_ResultRate_Sub_RankIcon_C::RankIcon_RankUp' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, RankIcon_Loop) == 0x000388, "Member 'UWBP_ResultRate_Sub_RankIcon_C::RankIcon_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, Circle_01) == 0x000390, "Member 'UWBP_ResultRate_Sub_RankIcon_C::Circle_01' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, Circle_02) == 0x000398, "Member 'UWBP_ResultRate_Sub_RankIcon_C::Circle_02' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, LEGEND_Grade) == 0x0003A0, "Member 'UWBP_ResultRate_Sub_RankIcon_C::LEGEND_Grade' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, LEGEND_Grade02) == 0x0003A8, "Member 'UWBP_ResultRate_Sub_RankIcon_C::LEGEND_Grade02' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, LEGEND_Grade03) == 0x0003B0, "Member 'UWBP_ResultRate_Sub_RankIcon_C::LEGEND_Grade03' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, LEGEND_Grade04) == 0x0003B8, "Member 'UWBP_ResultRate_Sub_RankIcon_C::LEGEND_Grade04' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, LEGEND_Grade05) == 0x0003C0, "Member 'UWBP_ResultRate_Sub_RankIcon_C::LEGEND_Grade05' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, RankIcon_A) == 0x0003C8, "Member 'UWBP_ResultRate_Sub_RankIcon_C::RankIcon_A' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, RankIcon_B) == 0x0003D0, "Member 'UWBP_ResultRate_Sub_RankIcon_C::RankIcon_B' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, RankIcon_C) == 0x0003D8, "Member 'UWBP_ResultRate_Sub_RankIcon_C::RankIcon_C' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, RankIcon_D) == 0x0003E0, "Member 'UWBP_ResultRate_Sub_RankIcon_C::RankIcon_D' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, RankIcon_E) == 0x0003E8, "Member 'UWBP_ResultRate_Sub_RankIcon_C::RankIcon_E' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, RankIcon_LEGEND) == 0x0003F0, "Member 'UWBP_ResultRate_Sub_RankIcon_C::RankIcon_LEGEND' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, Star_01) == 0x0003F8, "Member 'UWBP_ResultRate_Sub_RankIcon_C::Star_01' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, Star_02) == 0x000400, "Member 'UWBP_ResultRate_Sub_RankIcon_C::Star_02' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, Star_03) == 0x000408, "Member 'UWBP_ResultRate_Sub_RankIcon_C::Star_03' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, Star_04) == 0x000410, "Member 'UWBP_ResultRate_Sub_RankIcon_C::Star_04' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, Star_05) == 0x000418, "Member 'UWBP_ResultRate_Sub_RankIcon_C::Star_05' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, TXT_LEGEND) == 0x000420, "Member 'UWBP_ResultRate_Sub_RankIcon_C::TXT_LEGEND' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, TXT_LEGEND_Base_01) == 0x000428, "Member 'UWBP_ResultRate_Sub_RankIcon_C::TXT_LEGEND_Base_01' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, TXT_LEGEND_Base_02) == 0x000430, "Member 'UWBP_ResultRate_Sub_RankIcon_C::TXT_LEGEND_Base_02' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, TXT_Num_A) == 0x000438, "Member 'UWBP_ResultRate_Sub_RankIcon_C::TXT_Num_A' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, TXT_Num_A_Base) == 0x000440, "Member 'UWBP_ResultRate_Sub_RankIcon_C::TXT_Num_A_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, TXT_Num_B) == 0x000448, "Member 'UWBP_ResultRate_Sub_RankIcon_C::TXT_Num_B' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, TXT_Num_B_Base) == 0x000450, "Member 'UWBP_ResultRate_Sub_RankIcon_C::TXT_Num_B_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, TXT_Num_C) == 0x000458, "Member 'UWBP_ResultRate_Sub_RankIcon_C::TXT_Num_C' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, TXT_Num_C_Base) == 0x000460, "Member 'UWBP_ResultRate_Sub_RankIcon_C::TXT_Num_C_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, TXT_Num_D) == 0x000468, "Member 'UWBP_ResultRate_Sub_RankIcon_C::TXT_Num_D' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, TXT_Num_D_Base) == 0x000470, "Member 'UWBP_ResultRate_Sub_RankIcon_C::TXT_Num_D_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, TXT_Num_E) == 0x000478, "Member 'UWBP_ResultRate_Sub_RankIcon_C::TXT_Num_E' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, TXT_Num_E_Base) == 0x000480, "Member 'UWBP_ResultRate_Sub_RankIcon_C::TXT_Num_E_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, TXT_Num_LEGEND) == 0x000488, "Member 'UWBP_ResultRate_Sub_RankIcon_C::TXT_Num_LEGEND' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankIcon_C, LegendCompeGradeIcon) == 0x000490, "Member 'UWBP_ResultRate_Sub_RankIcon_C::LegendCompeGradeIcon' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ResultRate_Sub_RankIcon_C;
 
 }
 

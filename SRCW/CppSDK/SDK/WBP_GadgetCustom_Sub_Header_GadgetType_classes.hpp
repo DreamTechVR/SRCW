@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UnionRun_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
 
@@ -47,27 +47,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GadgetCustom_Sub_Header_GadgetType_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GadgetCustom_Sub_Header_GadgetType_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GadgetCustom_Sub_Header_GadgetType_C")
 	}
 	static class UWBP_GadgetCustom_Sub_Header_GadgetType_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GadgetCustom_Sub_Header_GadgetType_C>();
 	}
 };
-static_assert(alignof(UWBP_GadgetCustom_Sub_Header_GadgetType_C) == 0x000008, "Wrong alignment on UWBP_GadgetCustom_Sub_Header_GadgetType_C");
-static_assert(sizeof(UWBP_GadgetCustom_Sub_Header_GadgetType_C) == 0x000330, "Wrong size on UWBP_GadgetCustom_Sub_Header_GadgetType_C");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_Header_GadgetType_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_GadgetCustom_Sub_Header_GadgetType_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_Header_GadgetType_C, DSP_Icon_New) == 0x0002E8, "Member 'UWBP_GadgetCustom_Sub_Header_GadgetType_C::DSP_Icon_New' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_Header_GadgetType_C, Line_White_Btm) == 0x0002F0, "Member 'UWBP_GadgetCustom_Sub_Header_GadgetType_C::Line_White_Btm' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_Header_GadgetType_C, Line_White_Rgiht) == 0x0002F8, "Member 'UWBP_GadgetCustom_Sub_Header_GadgetType_C::Line_White_Rgiht' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_Header_GadgetType_C, Line_White_Top) == 0x000300, "Member 'UWBP_GadgetCustom_Sub_Header_GadgetType_C::Line_White_Top' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_Header_GadgetType_C, MLC_TypeColor) == 0x000308, "Member 'UWBP_GadgetCustom_Sub_Header_GadgetType_C::MLC_TypeColor' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_Header_GadgetType_C, Shadow) == 0x000310, "Member 'UWBP_GadgetCustom_Sub_Header_GadgetType_C::Shadow' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_Header_GadgetType_C, Shadow_Line) == 0x000318, "Member 'UWBP_GadgetCustom_Sub_Header_GadgetType_C::Shadow_Line' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_Header_GadgetType_C, TXT_MachineType) == 0x000320, "Member 'UWBP_GadgetCustom_Sub_Header_GadgetType_C::TXT_MachineType' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_Header_GadgetType_C, Machine_Type) == 0x000328, "Member 'UWBP_GadgetCustom_Sub_Header_GadgetType_C::Machine_Type' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_Header_GadgetType_C, bGadget) == 0x000329, "Member 'UWBP_GadgetCustom_Sub_Header_GadgetType_C::bGadget' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_Header_GadgetType_C, GadgetCategoty) == 0x00032A, "Member 'UWBP_GadgetCustom_Sub_Header_GadgetType_C::GadgetCategoty' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GadgetCustom_Sub_Header_GadgetType_C;
 
 }
 

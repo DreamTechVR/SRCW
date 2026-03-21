@@ -23,15 +23,18 @@ class UABP_SPD_SmallCockpit_C final : public UABPT_CockpitBase_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABP_SPD_SmallCockpit_C">();
+		BP_STATIC_CLASS_IMPL("ABP_SPD_SmallCockpit_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABP_SPD_SmallCockpit_C")
 	}
 	static class UABP_SPD_SmallCockpit_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UABP_SPD_SmallCockpit_C>();
 	}
 };
-static_assert(alignof(UABP_SPD_SmallCockpit_C) == 0x000010, "Wrong alignment on UABP_SPD_SmallCockpit_C");
-static_assert(sizeof(UABP_SPD_SmallCockpit_C) == 0x003580, "Wrong size on UABP_SPD_SmallCockpit_C");
+DUMPER7_ASSERTS_UABP_SPD_SmallCockpit_C;
 
 }
 

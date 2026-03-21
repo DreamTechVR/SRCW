@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "UNION_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UnionUI_structs.hpp"
-#include "UNION_classes.hpp"
 
 
 namespace SDK
@@ -59,32 +59,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_PartyRace_Sub_Window_C">();
+		BP_STATIC_CLASS_IMPL("WBP_PartyRace_Sub_Window_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_PartyRace_Sub_Window_C")
 	}
 	static class UWBP_PartyRace_Sub_Window_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_PartyRace_Sub_Window_C>();
 	}
 };
-static_assert(alignof(UWBP_PartyRace_Sub_Window_C) == 0x000008, "Wrong alignment on UWBP_PartyRace_Sub_Window_C");
-static_assert(sizeof(UWBP_PartyRace_Sub_Window_C) == 0x0003C8, "Wrong size on UWBP_PartyRace_Sub_Window_C");
-static_assert(offsetof(UWBP_PartyRace_Sub_Window_C, UberGraphFrame) == 0x0002F8, "Member 'UWBP_PartyRace_Sub_Window_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Window_C, Option_Preview_Out) == 0x000300, "Member 'UWBP_PartyRace_Sub_Window_C::Option_Preview_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Window_C, Option_Preview_In) == 0x000308, "Member 'UWBP_PartyRace_Sub_Window_C::Option_Preview_In' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Window_C, Option_Preview_Loop) == 0x000310, "Member 'UWBP_PartyRace_Sub_Window_C::Option_Preview_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Window_C, MLC_Title_Base) == 0x000318, "Member 'UWBP_PartyRace_Sub_Window_C::MLC_Title_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Window_C, Panel_BG_Black) == 0x000320, "Member 'UWBP_PartyRace_Sub_Window_C::Panel_BG_Black' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Window_C, Panel_BG_Panel) == 0x000328, "Member 'UWBP_PartyRace_Sub_Window_C::Panel_BG_Panel' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Window_C, Preset_image) == 0x000330, "Member 'UWBP_PartyRace_Sub_Window_C::Preset_image' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Window_C, TXT_Race_Name) == 0x000338, "Member 'UWBP_PartyRace_Sub_Window_C::TXT_Race_Name' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Window_C, WBP_PartyRace_Sub_Option_Preview_01) == 0x000340, "Member 'UWBP_PartyRace_Sub_Window_C::WBP_PartyRace_Sub_Option_Preview_01' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Window_C, WBP_PartyRace_Sub_Option_Preview_02) == 0x000348, "Member 'UWBP_PartyRace_Sub_Window_C::WBP_PartyRace_Sub_Option_Preview_02' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Window_C, WBP_PartyRace_Sub_Option_Preview_03) == 0x000350, "Member 'UWBP_PartyRace_Sub_Window_C::WBP_PartyRace_Sub_Option_Preview_03' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Window_C, WBP_PartyRace_Sub_Option_Preview_04) == 0x000358, "Member 'UWBP_PartyRace_Sub_Window_C::WBP_PartyRace_Sub_Option_Preview_04' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Window_C, WBP_PartyRace_Sub_Option_Preview_05) == 0x000360, "Member 'UWBP_PartyRace_Sub_Window_C::WBP_PartyRace_Sub_Option_Preview_05' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Window_C, WBP_PartyRace_Sub_Option_Preview_06) == 0x000368, "Member 'UWBP_PartyRace_Sub_Window_C::WBP_PartyRace_Sub_Option_Preview_06' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Window_C, Preset_Number_Index) == 0x000370, "Member 'UWBP_PartyRace_Sub_Window_C::Preset_Number_Index' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Window_C, PresetName_Value) == 0x000378, "Member 'UWBP_PartyRace_Sub_Window_C::PresetName_Value' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_PartyRace_Sub_Window_C;
 
 }
 

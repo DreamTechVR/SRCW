@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
-#include "UNION_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "UnionSystem_structs.hpp"
+#include "UNION_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -89,58 +89,22 @@ public:
 	void StartAnim();
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	void Update();
-	void UpdateUI();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GroupResult_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GroupResult_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GroupResult_C")
 	}
 	static class UWBP_GroupResult_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GroupResult_C>();
 	}
 };
-static_assert(alignof(UWBP_GroupResult_C) == 0x000008, "Wrong alignment on UWBP_GroupResult_C");
-static_assert(sizeof(UWBP_GroupResult_C) == 0x0004C0, "Wrong size on UWBP_GroupResult_C");
-static_assert(offsetof(UWBP_GroupResult_C, UberGraphFrame) == 0x000320, "Member 'UWBP_GroupResult_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, GroupResult_Out) == 0x000328, "Member 'UWBP_GroupResult_C::GroupResult_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, GroupResult_Loop) == 0x000330, "Member 'UWBP_GroupResult_C::GroupResult_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, GroupResult_In) == 0x000338, "Member 'UWBP_GroupResult_C::GroupResult_In' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, Button_front) == 0x000340, "Member 'UWBP_GroupResult_C::Button_front' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, CanvasPanel_230) == 0x000348, "Member 'UWBP_GroupResult_C::CanvasPanel_230' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, DSP_Base) == 0x000350, "Member 'UWBP_GroupResult_C::DSP_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, DSP_Base_WIN_01) == 0x000358, "Member 'UWBP_GroupResult_C::DSP_Base_WIN_01' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, DSP_Base_WIN_02) == 0x000360, "Member 'UWBP_GroupResult_C::DSP_Base_WIN_02' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, DSP_Base_WIN_03) == 0x000368, "Member 'UWBP_GroupResult_C::DSP_Base_WIN_03' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, Panel) == 0x000370, "Member 'UWBP_GroupResult_C::Panel' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, SafeZone) == 0x000378, "Member 'UWBP_GroupResult_C::SafeZone' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, WBP_GroupResult_Sub_BonusInfo) == 0x000380, "Member 'UWBP_GroupResult_C::WBP_GroupResult_Sub_BonusInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, WBP_GroupResult_Sub_Table_Line_01) == 0x000388, "Member 'UWBP_GroupResult_C::WBP_GroupResult_Sub_Table_Line_01' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, WBP_GroupResult_Sub_Table_Line_02) == 0x000390, "Member 'UWBP_GroupResult_C::WBP_GroupResult_Sub_Table_Line_02' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, WBP_GroupResult_Sub_Table_Line_03) == 0x000398, "Member 'UWBP_GroupResult_C::WBP_GroupResult_Sub_Table_Line_03' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, WBP_GroupResult_Sub_TeamTable_Blue) == 0x0003A0, "Member 'UWBP_GroupResult_C::WBP_GroupResult_Sub_TeamTable_Blue' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, WBP_GroupResult_Sub_TeamTable_Red) == 0x0003A8, "Member 'UWBP_GroupResult_C::WBP_GroupResult_Sub_TeamTable_Red' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, WBP_GroupResult_Sub_TeamTable_Yellow) == 0x0003B0, "Member 'UWBP_GroupResult_C::WBP_GroupResult_Sub_TeamTable_Yellow' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, bIsPress) == 0x0003B8, "Member 'UWBP_GroupResult_C::bIsPress' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, bIsStart) == 0x0003B9, "Member 'UWBP_GroupResult_C::bIsStart' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, bIsEnd) == 0x0003BA, "Member 'UWBP_GroupResult_C::bIsEnd' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, GroupResult) == 0x0003C0, "Member 'UWBP_GroupResult_C::GroupResult' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, RacerList) == 0x0003C8, "Member 'UWBP_GroupResult_C::RacerList' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, SubTableLineList) == 0x0003D8, "Member 'UWBP_GroupResult_C::SubTableLineList' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, NextTotalTime) == 0x0003E8, "Member 'UWBP_GroupResult_C::NextTotalTime' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, NextTotalPoint) == 0x0003F8, "Member 'UWBP_GroupResult_C::NextTotalPoint' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, bIsTimeMode) == 0x000408, "Member 'UWBP_GroupResult_C::bIsTimeMode' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, TeamInfo) == 0x000410, "Member 'UWBP_GroupResult_C::TeamInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, NowTimeList) == 0x000458, "Member 'UWBP_GroupResult_C::NowTimeList' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, NowPointList) == 0x000468, "Member 'UWBP_GroupResult_C::NowPointList' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, bIsLoadingMode) == 0x000478, "Member 'UWBP_GroupResult_C::bIsLoadingMode' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, Num) == 0x00047C, "Member 'UWBP_GroupResult_C::Num' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, bIsLastAnimOk) == 0x000480, "Member 'UWBP_GroupResult_C::bIsLastAnimOk' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, PanelDebugTexture) == 0x000488, "Member 'UWBP_GroupResult_C::PanelDebugTexture' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, GameModeID) == 0x0004B0, "Member 'UWBP_GroupResult_C::GameModeID' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, WaitCount) == 0x0004B4, "Member 'UWBP_GroupResult_C::WaitCount' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_C, MenuInputReceiveObject) == 0x0004B8, "Member 'UWBP_GroupResult_C::MenuInputReceiveObject' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GroupResult_C;
 
 }
 

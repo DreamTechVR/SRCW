@@ -31,15 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_MachineCustomizeHornSelectState_C">();
+		BP_STATIC_CLASS_IMPL("BPC_MachineCustomizeHornSelectState_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_MachineCustomizeHornSelectState_C")
 	}
 	static class UBPC_MachineCustomizeHornSelectState_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_MachineCustomizeHornSelectState_C>();
 	}
 };
-static_assert(alignof(UBPC_MachineCustomizeHornSelectState_C) == 0x000008, "Wrong alignment on UBPC_MachineCustomizeHornSelectState_C");
-static_assert(sizeof(UBPC_MachineCustomizeHornSelectState_C) == 0x000148, "Wrong size on UBPC_MachineCustomizeHornSelectState_C");
+DUMPER7_ASSERTS_UBPC_MachineCustomizeHornSelectState_C;
 
 }
 

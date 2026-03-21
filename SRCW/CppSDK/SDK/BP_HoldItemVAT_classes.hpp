@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -44,18 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_HoldItemVAT_C">();
+		BP_STATIC_CLASS_IMPL("BP_HoldItemVAT_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_HoldItemVAT_C")
 	}
 	static class ABP_HoldItemVAT_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_HoldItemVAT_C>();
 	}
 };
-static_assert(alignof(ABP_HoldItemVAT_C) == 0x000008, "Wrong alignment on ABP_HoldItemVAT_C");
-static_assert(sizeof(ABP_HoldItemVAT_C) == 0x0003F8, "Wrong size on ABP_HoldItemVAT_C");
-static_assert(offsetof(ABP_HoldItemVAT_C, UberGraphFrame) == 0x0003D8, "Member 'ABP_HoldItemVAT_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_HoldItemVAT_C, HoldItemCreateParam) == 0x0003E0, "Member 'ABP_HoldItemVAT_C::HoldItemCreateParam' has a wrong offset!");
-static_assert(offsetof(ABP_HoldItemVAT_C, RareItemEffect) == 0x0003F0, "Member 'ABP_HoldItemVAT_C::RareItemEffect' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_HoldItemVAT_C;
 
 }
 

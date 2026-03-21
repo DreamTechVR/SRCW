@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPFL_Widget_C">();
+		BP_STATIC_CLASS_IMPL("BPFL_Widget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPFL_Widget_C")
 	}
 	static class UBPFL_Widget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPFL_Widget_C>();
 	}
 };
-static_assert(alignof(UBPFL_Widget_C) == 0x000008, "Wrong alignment on UBPFL_Widget_C");
-static_assert(sizeof(UBPFL_Widget_C) == 0x000028, "Wrong size on UBPFL_Widget_C");
+DUMPER7_ASSERTS_UBPFL_Widget_C;
 
 }
 

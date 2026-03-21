@@ -23,9 +23,7 @@ struct BP_CommonConnectingUI_C_Display final
 public:
 	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CommonConnectingUI_C_Display) == 0x000008, "Wrong alignment on BP_CommonConnectingUI_C_Display");
-static_assert(sizeof(BP_CommonConnectingUI_C_Display) == 0x000008, "Wrong size on BP_CommonConnectingUI_C_Display");
-static_assert(offsetof(BP_CommonConnectingUI_C_Display, Widget) == 0x000000, "Member 'BP_CommonConnectingUI_C_Display::Widget' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CommonConnectingUI_C_Display;
 
 // Function BP_CommonConnectingUI.BP_CommonConnectingUI_C.ExecuteUbergraph_BP_CommonConnectingUI
 // 0x0040 (0x0040 - 0x0000)
@@ -41,14 +39,7 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0020(0x0010)(ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0030(0x0010)()
 };
-static_assert(alignof(BP_CommonConnectingUI_C_ExecuteUbergraph_BP_CommonConnectingUI) == 0x000008, "Wrong alignment on BP_CommonConnectingUI_C_ExecuteUbergraph_BP_CommonConnectingUI");
-static_assert(sizeof(BP_CommonConnectingUI_C_ExecuteUbergraph_BP_CommonConnectingUI) == 0x000040, "Wrong size on BP_CommonConnectingUI_C_ExecuteUbergraph_BP_CommonConnectingUI");
-static_assert(offsetof(BP_CommonConnectingUI_C_ExecuteUbergraph_BP_CommonConnectingUI, EntryPoint) == 0x000000, "Member 'BP_CommonConnectingUI_C_ExecuteUbergraph_BP_CommonConnectingUI::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_CommonConnectingUI_C_ExecuteUbergraph_BP_CommonConnectingUI, K2Node_Event_Widget) == 0x000008, "Member 'BP_CommonConnectingUI_C_ExecuteUbergraph_BP_CommonConnectingUI::K2Node_Event_Widget' has a wrong offset!");
-static_assert(offsetof(BP_CommonConnectingUI_C_ExecuteUbergraph_BP_CommonConnectingUI, K2Node_DynamicCast_AsWBP_System_Title_Communication) == 0x000010, "Member 'BP_CommonConnectingUI_C_ExecuteUbergraph_BP_CommonConnectingUI::K2Node_DynamicCast_AsWBP_System_Title_Communication' has a wrong offset!");
-static_assert(offsetof(BP_CommonConnectingUI_C_ExecuteUbergraph_BP_CommonConnectingUI, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'BP_CommonConnectingUI_C_ExecuteUbergraph_BP_CommonConnectingUI::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_CommonConnectingUI_C_ExecuteUbergraph_BP_CommonConnectingUI, K2Node_MakeArray_Array) == 0x000020, "Member 'BP_CommonConnectingUI_C_ExecuteUbergraph_BP_CommonConnectingUI::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_CommonConnectingUI_C_ExecuteUbergraph_BP_CommonConnectingUI, CallFunc_Format_ReturnValue) == 0x000030, "Member 'BP_CommonConnectingUI_C_ExecuteUbergraph_BP_CommonConnectingUI::CallFunc_Format_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CommonConnectingUI_C_ExecuteUbergraph_BP_CommonConnectingUI;
 
 }
 

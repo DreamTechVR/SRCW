@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "UNION_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UNION_classes.hpp"
 
 
 namespace SDK
@@ -40,21 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_SquadContext_C">();
+		BP_STATIC_CLASS_IMPL("BP_SquadContext_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_SquadContext_C")
 	}
 	static class UBP_SquadContext_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_SquadContext_C>();
 	}
 };
-static_assert(alignof(UBP_SquadContext_C) == 0x000008, "Wrong alignment on UBP_SquadContext_C");
-static_assert(sizeof(UBP_SquadContext_C) == 0x000528, "Wrong size on UBP_SquadContext_C");
-static_assert(offsetof(UBP_SquadContext_C, UberGraphFrame) == 0x0004D0, "Member 'UBP_SquadContext_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_SquadContext_C, OnCreateSquad) == 0x0004D8, "Member 'UBP_SquadContext_C::OnCreateSquad' has a wrong offset!");
-static_assert(offsetof(UBP_SquadContext_C, OnConnectSquad) == 0x0004E8, "Member 'UBP_SquadContext_C::OnConnectSquad' has a wrong offset!");
-static_assert(offsetof(UBP_SquadContext_C, OnSearchSquad) == 0x0004F8, "Member 'UBP_SquadContext_C::OnSearchSquad' has a wrong offset!");
-static_assert(offsetof(UBP_SquadContext_C, OnDestroySquad) == 0x000508, "Member 'UBP_SquadContext_C::OnDestroySquad' has a wrong offset!");
-static_assert(offsetof(UBP_SquadContext_C, OnSendInvitationSquad) == 0x000518, "Member 'UBP_SquadContext_C::OnSendInvitationSquad' has a wrong offset!");
+DUMPER7_ASSERTS_UBP_SquadContext_C;
 
 }
 

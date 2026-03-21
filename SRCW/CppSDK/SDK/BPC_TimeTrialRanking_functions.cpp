@@ -17,6 +17,48 @@
 namespace SDK
 {
 
+// Function BPC_TimeTrialRanking.BPC_TimeTrialRanking_C.SetFooterVisible
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsVisible                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsNextButtonVisisble                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBPC_TimeTrialRanking_C::SetFooterVisible(bool IsVisible, bool IsNextButtonVisisble)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_TimeTrialRanking_C", "SetFooterVisible");
+
+	Params::BPC_TimeTrialRanking_C_SetFooterVisible Parms{};
+
+	Parms.IsVisible = IsVisible;
+	Parms.IsNextButtonVisisble = IsNextButtonVisisble;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BPC_TimeTrialRanking.BPC_TimeTrialRanking_C.OnFinishedRankingRequest
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsDisplayRanking                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBPC_TimeTrialRanking_C::OnFinishedRankingRequest(bool bIsDisplayRanking)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_TimeTrialRanking_C", "OnFinishedRankingRequest");
+
+	Params::BPC_TimeTrialRanking_C_OnFinishedRankingRequest Parms{};
+
+	Parms.bIsDisplayRanking = bIsDisplayRanking;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BPC_TimeTrialRanking.BPC_TimeTrialRanking_C.SettingGhostGadgetPreset
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
@@ -181,40 +223,6 @@ void UBPC_TimeTrialRanking_C::OnExitState()
 }
 
 
-// Function BPC_TimeTrialRanking.BPC_TimeTrialRanking_C.OnUpdateState
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBPC_TimeTrialRanking_C::OnUpdateState(float InDeltaTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPC_TimeTrialRanking_C", "OnUpdateState");
-
-	Params::BPC_TimeTrialRanking_C_OnUpdateState Parms{};
-
-	Parms.InDeltaTime = InDeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BPC_TimeTrialRanking.BPC_TimeTrialRanking_C.OnInitState
-// (Event, Public, BlueprintEvent)
-
-void UBPC_TimeTrialRanking_C::OnInitState()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPC_TimeTrialRanking_C", "OnInitState");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BPC_TimeTrialRanking.BPC_TimeTrialRanking_C.FinishDownloadEvent
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -273,21 +281,21 @@ void UBPC_TimeTrialRanking_C::OnClosed_RankingWidget()
 }
 
 
-// Function BPC_TimeTrialRanking.BPC_TimeTrialRanking_C.SetupFooter
-// (BlueprintCallable, BlueprintEvent)
+// Function BPC_TimeTrialRanking.BPC_TimeTrialRanking_C.OnUpdateState
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsVisible                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBPC_TimeTrialRanking_C::SetupFooter(bool IsVisible)
+void UBPC_TimeTrialRanking_C::OnUpdateState(float InDeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BPC_TimeTrialRanking_C", "SetupFooter");
+		Func = Class->GetFunction("BPC_TimeTrialRanking_C", "OnUpdateState");
 
-	Params::BPC_TimeTrialRanking_C_SetupFooter Parms{};
+	Params::BPC_TimeTrialRanking_C_OnUpdateState Parms{};
 
-	Parms.IsVisible = IsVisible;
+	Parms.InDeltaTime = InDeltaTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -310,6 +318,20 @@ void UBPC_TimeTrialRanking_C::OnMyBestButtonPressed(class UObject* Object)
 	Parms.Object = Object;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BPC_TimeTrialRanking.BPC_TimeTrialRanking_C.OnInitState
+// (Event, Public, BlueprintEvent)
+
+void UBPC_TimeTrialRanking_C::OnInitState()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_TimeTrialRanking_C", "OnInitState");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

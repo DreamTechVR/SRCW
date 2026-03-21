@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
+#include "UnionRun_structs.hpp"
+#include "UNION_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
-#include "ST_GarageData_structs.hpp"
 #include "UnionUI_structs.hpp"
+#include "ST_GarageData_structs.hpp"
 #include "UnionLib_structs.hpp"
-#include "UNION_classes.hpp"
-#include "UnionRun_structs.hpp"
 
 
 namespace SDK
@@ -108,32 +108,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_GarageSequence_C">();
+		BP_STATIC_CLASS_IMPL("BP_GarageSequence_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_GarageSequence_C")
 	}
 	static class ABP_GarageSequence_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_GarageSequence_C>();
 	}
 };
-static_assert(alignof(ABP_GarageSequence_C) == 0x000008, "Wrong alignment on ABP_GarageSequence_C");
-static_assert(sizeof(ABP_GarageSequence_C) == 0x0005A8, "Wrong size on ABP_GarageSequence_C");
-static_assert(offsetof(ABP_GarageSequence_C, UberGraphFrame) == 0x0003F8, "Member 'ABP_GarageSequence_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_GarageSequence_C, BPC_GarageMenuTopState) == 0x000400, "Member 'ABP_GarageSequence_C::BPC_GarageMenuTopState' has a wrong offset!");
-static_assert(offsetof(ABP_GarageSequence_C, BPC_GarageMenuGalleryState) == 0x000408, "Member 'ABP_GarageSequence_C::BPC_GarageMenuGalleryState' has a wrong offset!");
-static_assert(offsetof(ABP_GarageSequence_C, BPC_GarageMenuCustomizeGadgetState) == 0x000410, "Member 'ABP_GarageSequence_C::BPC_GarageMenuCustomizeGadgetState' has a wrong offset!");
-static_assert(offsetof(ABP_GarageSequence_C, BPC_GarageMenuCustomizeMachineState) == 0x000418, "Member 'ABP_GarageSequence_C::BPC_GarageMenuCustomizeMachineState' has a wrong offset!");
-static_assert(offsetof(ABP_GarageSequence_C, TopMenuLevelName) == 0x000420, "Member 'ABP_GarageSequence_C::TopMenuLevelName' has a wrong offset!");
-static_assert(offsetof(ABP_GarageSequence_C, GarageData) == 0x000428, "Member 'ABP_GarageSequence_C::GarageData' has a wrong offset!");
-static_assert(offsetof(ABP_GarageSequence_C, bCanControlTurntable) == 0x000480, "Member 'ABP_GarageSequence_C::bCanControlTurntable' has a wrong offset!");
-static_assert(offsetof(ABP_GarageSequence_C, TurntableRotationInputThreshold) == 0x000488, "Member 'ABP_GarageSequence_C::TurntableRotationInputThreshold' has a wrong offset!");
-static_assert(offsetof(ABP_GarageSequence_C, MaxTurntableRotationSpeed) == 0x000490, "Member 'ABP_GarageSequence_C::MaxTurntableRotationSpeed' has a wrong offset!");
-static_assert(offsetof(ABP_GarageSequence_C, bCanControlParamWindow) == 0x000498, "Member 'ABP_GarageSequence_C::bCanControlParamWindow' has a wrong offset!");
-static_assert(offsetof(ABP_GarageSequence_C, bDebugLevel) == 0x000499, "Member 'ABP_GarageSequence_C::bDebugLevel' has a wrong offset!");
-static_assert(offsetof(ABP_GarageSequence_C, TimeOutHandle) == 0x0004A0, "Member 'ABP_GarageSequence_C::TimeOutHandle' has a wrong offset!");
-static_assert(offsetof(ABP_GarageSequence_C, bIsMessageBarVisible) == 0x0004A8, "Member 'ABP_GarageSequence_C::bIsMessageBarVisible' has a wrong offset!");
-static_assert(offsetof(ABP_GarageSequence_C, MessageBar) == 0x0004B0, "Member 'ABP_GarageSequence_C::MessageBar' has a wrong offset!");
-static_assert(offsetof(ABP_GarageSequence_C, PrevSelectedCustomizeData) == 0x0004B8, "Member 'ABP_GarageSequence_C::PrevSelectedCustomizeData' has a wrong offset!");
-static_assert(offsetof(ABP_GarageSequence_C, CurrentSelectedCustomizeData) == 0x000530, "Member 'ABP_GarageSequence_C::CurrentSelectedCustomizeData' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_GarageSequence_C;
 
 }
 

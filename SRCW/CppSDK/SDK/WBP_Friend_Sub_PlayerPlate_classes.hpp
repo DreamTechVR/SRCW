@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
+#include "UNION_structs.hpp"
+#include "Engine_structs.hpp"
+#include "UnionSystem_structs.hpp"
+#include "UMG_structs.hpp"
 #include "UnionUI_structs.hpp"
 #include "UnionUI_classes.hpp"
-#include "UNION_structs.hpp"
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "UMG_structs.hpp"
 
 
 namespace SDK
@@ -57,84 +57,61 @@ public:
 	double                                        MovingUpDownDeadzone;                              // 0x0530(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	class UWidget* LeftNavigationEvent(EUINavigation Navigation_0);
-	class UWidget* RightNavigationEvent(EUINavigation Navigation_0);
-	void Check_Release_Response_InputType(bool* bOutReleaseResponseInput);
-	struct FEventReply OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent);
-	void SetPlayerIcon(TSoftObjectPtr<class UTexture2D> InIconTexture, const struct FLinearColor& InBgColor, bool bInNowPlaying);
-	void SetPlayerNameText(const class FText& InText);
-	void SetPlayerIdText(const class FString& InPlayerId);
-	void SetPlatformIcon(ECrossplayPlatform InPlatformType);
-	void SetPlayerStatusIcon(bool bInAppBlock, bool bInPFBlock);
-	void SetLobbyInvitationIconVisible(bool bInVisible);
-	void SetFocusAnimation(bool bInEnable);
-	void SetCursorVisible(bool bInVisible);
 	void ChangePlayAnimation(class UWidgetAnimation* InStopAnimation, class UWidgetAnimation* InPlayAnimation);
-	void SetMouseInteractionVisible(bool bInVisible);
-	void SetDateText(const class FString& InDate);
-	void SetByListPlayerInfo(const struct FFriendListPlayerInfo& InListPlayerInfo, bool InShowPlayerId);
-	void SetFocusEnable(bool bInEnable);
-	void SetButtonFocusType(EButtonFocusType InButtonFocusType);
-	void SetPlayDecisionSe(bool bInEnable);
-	void SetPlayerIconVisible(bool bInVisible);
-	void SetLobbyType(bool bInFriendMatch);
-	void SetLobbyInfoVisible(bool bInVisible);
+	void Check_Release_Response_InputType(bool* bOutReleaseResponseInput);
 	void Construct();
-	void OnFocusImpl(class UUnionUIButtonBase* Button);
-	void OnAddedToFocusPath(const struct FFocusEvent& InFocusEvent);
-	void OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent);
-	void OnFocusLost(const struct FFocusEvent& InFocusEvent);
-	void OnFocusAnimStart();
-	void OnUnFocusAnimStart();
-	void OnAcceptKeyPressedImpl();
-	void OnBackKeyPressed();
-	void OnAcceptKeyPressed();
-	void OnInitialized();
-	void SetWidgetFocus(bool bInPlayFocusSound);
-	void OnLeftKeyReleased();
-	void OnRightKeyReleased();
-	void LeftDirectionEvent();
-	void RightDirectionEvent();
 	void ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate(int32 EntryPoint);
+	void LeftDirectionEvent();
+	class UWidget* LeftNavigationEvent(EUINavigation Navigation_0);
+	void OnAcceptKeyPressed();
+	void OnAcceptKeyPressedImpl();
+	void OnAddedToFocusPath(const struct FFocusEvent& InFocusEvent);
+	void OnBackKeyPressed();
+	void OnFocusAnimStart();
+	void OnFocusImpl(class UUnionUIButtonBase* Button);
+	void OnFocusLost(const struct FFocusEvent& InFocusEvent);
+	struct FEventReply OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent);
+	void OnInitialized();
+	void OnLeftKeyReleased();
+	void OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent);
+	void OnRightKeyReleased();
+	void OnUnFocusAnimStart();
+	void RightDirectionEvent();
+	class UWidget* RightNavigationEvent(EUINavigation Navigation_0);
+	void SetButtonFocusType(EButtonFocusType InButtonFocusType);
+	void SetByListPlayerInfo(const struct FFriendListPlayerInfo& InListPlayerInfo, bool InShowPlayerId);
+	void SetCursorVisible(bool bInVisible);
+	void SetDateText(const class FString& InDate);
+	void SetFocusAnimation(bool bInEnable);
+	void SetFocusEnable(bool bInEnable);
+	void SetLobbyInfoVisible(bool bInVisible);
+	void SetLobbyInvitationIconVisible(bool bInVisible);
+	void SetLobbyType(bool bInFriendMatch);
+	void SetMouseInteractionVisible(bool bInVisible);
+	void SetPlatformIcon(ECrossplayPlatform InPlatformType);
+	void SetPlayDecisionSe(bool bInEnable);
+	void SetPlayerIcon(TSoftObjectPtr<class UTexture2D> InIconTexture, const struct FLinearColor& InBgColor, bool bInNowPlaying);
+	void SetPlayerIconVisible(bool bInVisible);
+	void SetPlayerIdText(const class FString& InPlayerId);
+	void SetPlayerNameText(const class FText& InText);
+	void SetPlayerStatusIcon(bool bInAppBlock, bool bInPFBlock);
+	void SetWidgetFocus(bool bInPlayFocusSound);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Friend_Sub_PlayerPlate_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Friend_Sub_PlayerPlate_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Friend_Sub_PlayerPlate_C")
 	}
 	static class UWBP_Friend_Sub_PlayerPlate_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Friend_Sub_PlayerPlate_C>();
 	}
 };
-static_assert(alignof(UWBP_Friend_Sub_PlayerPlate_C) == 0x000008, "Wrong alignment on UWBP_Friend_Sub_PlayerPlate_C");
-static_assert(sizeof(UWBP_Friend_Sub_PlayerPlate_C) == 0x000538, "Wrong size on UWBP_Friend_Sub_PlayerPlate_C");
-static_assert(offsetof(UWBP_Friend_Sub_PlayerPlate_C, UberGraphFrame) == 0x000480, "Member 'UWBP_Friend_Sub_PlayerPlate_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_PlayerPlate_C, Btn_Select_Loop) == 0x000488, "Member 'UWBP_Friend_Sub_PlayerPlate_C::Btn_Select_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_PlayerPlate_C, Btn_Active_Loop) == 0x000490, "Member 'UWBP_Friend_Sub_PlayerPlate_C::Btn_Active_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_PlayerPlate_C, DSP_Cursor_Texture) == 0x000498, "Member 'UWBP_Friend_Sub_PlayerPlate_C::DSP_Cursor_Texture' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_PlayerPlate_C, DSP_LobbyInfo_All) == 0x0004A0, "Member 'UWBP_Friend_Sub_PlayerPlate_C::DSP_LobbyInfo_All' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_PlayerPlate_C, DSP_LobbyInvitation) == 0x0004A8, "Member 'UWBP_Friend_Sub_PlayerPlate_C::DSP_LobbyInvitation' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_PlayerPlate_C, DSP_PlayerInfo_All) == 0x0004B0, "Member 'UWBP_Friend_Sub_PlayerPlate_C::DSP_PlayerInfo_All' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_PlayerPlate_C, DSP_WBP_Friend_PlayerIcon) == 0x0004B8, "Member 'UWBP_Friend_Sub_PlayerPlate_C::DSP_WBP_Friend_PlayerIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_PlayerPlate_C, DSP_WBP_Friend_PlayerStatusIcon) == 0x0004C0, "Member 'UWBP_Friend_Sub_PlayerPlate_C::DSP_WBP_Friend_PlayerStatusIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_PlayerPlate_C, FriendMatchBase) == 0x0004C8, "Member 'UWBP_Friend_Sub_PlayerPlate_C::FriendMatchBase' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_PlayerPlate_C, LobbyInfoBase) == 0x0004D0, "Member 'UWBP_Friend_Sub_PlayerPlate_C::LobbyInfoBase' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_PlayerPlate_C, MouseInteraction) == 0x0004D8, "Member 'UWBP_Friend_Sub_PlayerPlate_C::MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_PlayerPlate_C, PAT_PlatformIcon) == 0x0004E0, "Member 'UWBP_Friend_Sub_PlayerPlate_C::PAT_PlatformIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_PlayerPlate_C, PlayerInfoBase) == 0x0004E8, "Member 'UWBP_Friend_Sub_PlayerPlate_C::PlayerInfoBase' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_PlayerPlate_C, PlayerPlateBase) == 0x0004F0, "Member 'UWBP_Friend_Sub_PlayerPlate_C::PlayerPlateBase' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_PlayerPlate_C, TXT_FriendMatch) == 0x0004F8, "Member 'UWBP_Friend_Sub_PlayerPlate_C::TXT_FriendMatch' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_PlayerPlate_C, TXT_LobbyInfo) == 0x000500, "Member 'UWBP_Friend_Sub_PlayerPlate_C::TXT_LobbyInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_PlayerPlate_C, TXT_PlayerInfo) == 0x000508, "Member 'UWBP_Friend_Sub_PlayerPlate_C::TXT_PlayerInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_PlayerPlate_C, TXT_PlayerName) == 0x000510, "Member 'UWBP_Friend_Sub_PlayerPlate_C::TXT_PlayerName' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_PlayerPlate_C, MouseDown) == 0x000518, "Member 'UWBP_Friend_Sub_PlayerPlate_C::MouseDown' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_PlayerPlate_C, bPlayDecisionSe) == 0x000519, "Member 'UWBP_Friend_Sub_PlayerPlate_C::bPlayDecisionSe' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_PlayerPlate_C, IsDirectionKeyPressed) == 0x00051A, "Member 'UWBP_Friend_Sub_PlayerPlate_C::IsDirectionKeyPressed' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_PlayerPlate_C, ParentPlate) == 0x000520, "Member 'UWBP_Friend_Sub_PlayerPlate_C::ParentPlate' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_PlayerPlate_C, TargetPlatform) == 0x000528, "Member 'UWBP_Friend_Sub_PlayerPlate_C::TargetPlatform' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_PlayerPlate_C, ListType) == 0x000529, "Member 'UWBP_Friend_Sub_PlayerPlate_C::ListType' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_PlayerPlate_C, MovingUpDownDeadzone) == 0x000530, "Member 'UWBP_Friend_Sub_PlayerPlate_C::MovingUpDownDeadzone' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Friend_Sub_PlayerPlate_C;
 
 }
 

@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
-#include "UMG_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "UnionRun_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "Engine_structs.hpp"
+#include "UnionSystem_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK
@@ -363,197 +363,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_HUD_Player04_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_HUD_Player04_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_HUD_Player04_C")
 	}
 	static class UWBP_Race_HUD_Player04_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_HUD_Player04_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_HUD_Player04_C) == 0x000008, "Wrong alignment on UWBP_Race_HUD_Player04_C");
-static_assert(sizeof(UWBP_Race_HUD_Player04_C) == 0x000DC8, "Wrong size on UWBP_Race_HUD_Player04_C");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, UberGraphFrame) == 0x000680, "Member 'UWBP_Race_HUD_Player04_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, HUD_Out) == 0x000688, "Member 'UWBP_Race_HUD_Player04_C::HUD_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, HUD_Loop) == 0x000690, "Member 'UWBP_Race_HUD_Player04_C::HUD_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, HUD_In) == 0x000698, "Member 'UWBP_Race_HUD_Player04_C::HUD_In' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, CanvasPanel_ItemWarningArea_P1) == 0x0006A0, "Member 'UWBP_Race_HUD_Player04_C::CanvasPanel_ItemWarningArea_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, CanvasPanel_ItemWarningArea_P2) == 0x0006A8, "Member 'UWBP_Race_HUD_Player04_C::CanvasPanel_ItemWarningArea_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, CanvasPanel_ItemWarningArea_P3) == 0x0006B0, "Member 'UWBP_Race_HUD_Player04_C::CanvasPanel_ItemWarningArea_P3' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, CanvasPanel_ItemWarningArea_P4) == 0x0006B8, "Member 'UWBP_Race_HUD_Player04_C::CanvasPanel_ItemWarningArea_P4' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, CanvasPanel_P1_HUD) == 0x0006C0, "Member 'UWBP_Race_HUD_Player04_C::CanvasPanel_P1_HUD' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, CanvasPanel_P1_StartInfo) == 0x0006C8, "Member 'UWBP_Race_HUD_Player04_C::CanvasPanel_P1_StartInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, CanvasPanel_P2_HUD) == 0x0006D0, "Member 'UWBP_Race_HUD_Player04_C::CanvasPanel_P2_HUD' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, CanvasPanel_P2_StartInfo) == 0x0006D8, "Member 'UWBP_Race_HUD_Player04_C::CanvasPanel_P2_StartInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, CanvasPanel_P3_HUD) == 0x0006E0, "Member 'UWBP_Race_HUD_Player04_C::CanvasPanel_P3_HUD' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, CanvasPanel_P3_StartInfo) == 0x0006E8, "Member 'UWBP_Race_HUD_Player04_C::CanvasPanel_P3_StartInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, CanvasPanel_P4_HUD) == 0x0006F0, "Member 'UWBP_Race_HUD_Player04_C::CanvasPanel_P4_HUD' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, CanvasPanel_P4_StartInfo) == 0x0006F8, "Member 'UWBP_Race_HUD_Player04_C::CanvasPanel_P4_StartInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, CLIP_TextDirection_P2) == 0x000700, "Member 'UWBP_Race_HUD_Player04_C::CLIP_TextDirection_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, CLIP_TextDirection_P3) == 0x000708, "Member 'UWBP_Race_HUD_Player04_C::CLIP_TextDirection_P3' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, CLIP_TextDirection_P4) == 0x000710, "Member 'UWBP_Race_HUD_Player04_C::CLIP_TextDirection_P4' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, DSP_ItemWarning_Belt_P1) == 0x000718, "Member 'UWBP_Race_HUD_Player04_C::DSP_ItemWarning_Belt_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, DSP_ItemWarning_Belt_P2) == 0x000720, "Member 'UWBP_Race_HUD_Player04_C::DSP_ItemWarning_Belt_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, DSP_ItemWarning_Belt_P3) == 0x000728, "Member 'UWBP_Race_HUD_Player04_C::DSP_ItemWarning_Belt_P3' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, DSP_ItemWarning_Belt_P4) == 0x000730, "Member 'UWBP_Race_HUD_Player04_C::DSP_ItemWarning_Belt_P4' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, DSP_P3_Cover) == 0x000738, "Member 'UWBP_Race_HUD_Player04_C::DSP_P3_Cover' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, HorizontalLine) == 0x000740, "Member 'UWBP_Race_HUD_Player04_C::HorizontalLine' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, Logo) == 0x000748, "Member 'UWBP_Race_HUD_Player04_C::Logo' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, Panel) == 0x000750, "Member 'UWBP_Race_HUD_Player04_C::Panel' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, VerticalLine) == 0x000758, "Member 'UWBP_Race_HUD_Player04_C::VerticalLine' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_AirTrickText_P1) == 0x000760, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_AirTrickText_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_AirTrickText_P2) == 0x000768, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_AirTrickText_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_AirTrickText_P3) == 0x000770, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_AirTrickText_P3' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_AirTrickText_P4) == 0x000778, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_AirTrickText_P4' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_GoalText_P1) == 0x000780, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_GoalText_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_GoalText_P2) == 0x000788, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_GoalText_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_GoalText_P3) == 0x000790, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_GoalText_P3' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_GoalText_P4) == 0x000798, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_GoalText_P4' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_CourseMap) == 0x0007A0, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_CourseMap' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Aiming_P1) == 0x0007A8, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Aiming_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Aiming_P2) == 0x0007B0, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Aiming_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Aiming_P3) == 0x0007B8, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Aiming_P3' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Aiming_P4) == 0x0007C0, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Aiming_P4' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Boost_P1) == 0x0007C8, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Boost_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Boost_P2) == 0x0007D0, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Boost_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Boost_P3) == 0x0007D8, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Boost_P3' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Boost_P4) == 0x0007E0, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Boost_P4' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Charahead_P1_01) == 0x0007E8, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Charahead_P1_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Charahead_P2_01) == 0x0007F0, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Charahead_P2_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Charahead_P3_01) == 0x0007F8, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Charahead_P3_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Charahead_P4_01) == 0x000800, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Charahead_P4_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Coin_P1) == 0x000808, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Coin_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Coin_P2) == 0x000810, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Coin_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Coin_P3) == 0x000818, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Coin_P3' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Coin_P4) == 0x000820, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Coin_P4' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Festa_TeamGroup_P1) == 0x000828, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Festa_TeamGroup_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Festa_TeamGroup_P2) == 0x000830, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Festa_TeamGroup_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Festa_TeamGroup_P3) == 0x000838, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Festa_TeamGroup_P3' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Festa_TeamGroup_P4) == 0x000840, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Festa_TeamGroup_P4' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Festa_TeamHUD_P1) == 0x000848, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Festa_TeamHUD_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Festa_TeamHUD_P2) == 0x000850, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Festa_TeamHUD_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Festa_TeamHUD_P3) == 0x000858, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Festa_TeamHUD_P3' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Festa_TeamHUD_P4) == 0x000860, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Festa_TeamHUD_P4' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_GadgetIcon_Simple_P1) == 0x000868, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_GadgetIcon_Simple_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_GadgetIcon_Simple_P2) == 0x000870, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_GadgetIcon_Simple_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_GadgetIcon_Simple_P3) == 0x000878, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_GadgetIcon_Simple_P3' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_GadgetIcon_Simple_P4) == 0x000880, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_GadgetIcon_Simple_P4' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_ItemIconSet_Simple_P1) == 0x000888, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_ItemIconSet_Simple_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_ItemIconSet_Simple_P2) == 0x000890, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_ItemIconSet_Simple_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_ItemIconSet_Simple_P3) == 0x000898, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_ItemIconSet_Simple_P3' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_ItemIconSet_Simple_P4) == 0x0008A0, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_ItemIconSet_Simple_P4' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_ItemWarning_P1) == 0x0008A8, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_ItemWarning_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_ItemWarning_P2) == 0x0008B0, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_ItemWarning_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_ItemWarning_P3) == 0x0008B8, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_ItemWarning_P3' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_ItemWarning_P4) == 0x0008C0, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_ItemWarning_P4' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_LAP_P1) == 0x0008C8, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_LAP_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_LAP_P2) == 0x0008D0, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_LAP_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_LAP_P3) == 0x0008D8, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_LAP_P3' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_LAP_P4) == 0x0008E0, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_LAP_P4' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_PlayerName_P1) == 0x0008E8, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_PlayerName_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_PlayerName_P2) == 0x0008F0, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_PlayerName_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_PlayerName_P3) == 0x0008F8, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_PlayerName_P3' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_PlayerName_P4) == 0x000900, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_PlayerName_P4' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_PlayerNumber_P1) == 0x000908, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_PlayerNumber_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_PlayerNumber_P2) == 0x000910, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_PlayerNumber_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_PlayerNumber_P3) == 0x000918, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_PlayerNumber_P3' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_PlayerNumber_P4) == 0x000920, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_PlayerNumber_P4' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_PlayerNumber_RaceStart_P1) == 0x000928, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_PlayerNumber_RaceStart_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_PlayerNumber_RaceStart_P2) == 0x000930, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_PlayerNumber_RaceStart_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_PlayerNumber_RaceStart_P3) == 0x000938, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_PlayerNumber_RaceStart_P3' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_PlayerNumber_RaceStart_P4) == 0x000940, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_PlayerNumber_RaceStart_P4' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Rank_P1) == 0x000948, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Rank_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Rank_P2) == 0x000950, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Rank_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Rank_P3) == 0x000958, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Rank_P3' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Rank_P4) == 0x000960, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Rank_P4' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Rival_RaceStart_P1) == 0x000968, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Rival_RaceStart_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Rival_RaceStart_P2) == 0x000970, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Rival_RaceStart_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Rival_RaceStart_P3) == 0x000978, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Rival_RaceStart_P3' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Rival_RaceStart_P4) == 0x000980, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Rival_RaceStart_P4' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_RSR_5rings_Simple_P1) == 0x000988, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_RSR_5rings_Simple_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Targeted_P1) == 0x000990, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Targeted_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Targeted_P2) == 0x000998, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Targeted_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Targeted_P3) == 0x0009A0, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Targeted_P3' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Targeted_P4) == 0x0009A8, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Targeted_P4' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_TextBalloon_P1) == 0x0009B0, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_TextBalloon_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_TextBalloon_P2) == 0x0009B8, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_TextBalloon_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_TextBalloon_P3) == 0x0009C0, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_TextBalloon_P3' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_TextBalloon_P4) == 0x0009C8, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_TextBalloon_P4' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_P1) == 0x0009D0, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_P2) == 0x0009D8, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_P3) == 0x0009E0, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_P3' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_P4) == 0x0009E8, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_P4' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_StartDash_P1) == 0x0009F0, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_StartDash_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_StartDash_P2) == 0x0009F8, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_StartDash_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_StartDash_P3) == 0x000A00, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_StartDash_P3' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_StartDash_P4) == 0x000A08, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_StartDash_P4' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_Sub_BtnGuide_P1) == 0x000A10, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_Sub_BtnGuide_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_Sub_BtnGuide_P2) == 0x000A18, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_Sub_BtnGuide_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_Sub_BtnGuide_P3) == 0x000A20, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_Sub_BtnGuide_P3' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_Sub_BtnGuide_P4) == 0x000A28, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_Sub_BtnGuide_P4' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_Sub_HitInfo_P1) == 0x000A30, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_Sub_HitInfo_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_Sub_HitInfo_P2) == 0x000A38, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_Sub_HitInfo_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_Sub_HitInfo_P3) == 0x000A40, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_Sub_HitInfo_P3' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_Sub_HitInfo_P4) == 0x000A48, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_Sub_HitInfo_P4' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Coin_Arr) == 0x000A50, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Coin_Arr' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Item_Icon_Main_Arr) == 0x000A60, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Item_Icon_Main_Arr' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Item_Warning_Arr) == 0x000A70, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Item_Warning_Arr' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Item_Icon_Sub_Arr) == 0x000A80, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Item_Icon_Sub_Arr' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Player_Name_Arr) == 0x000A90, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Player_Name_Arr' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Rank_Arr) == 0x000AA0, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Rank_Arr' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_Sub_Hit_Info_Arr) == 0x000AB0, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_Sub_Hit_Info_Arr' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_Sub_HUD_Player_Number_Arr) == 0x000AC0, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_Sub_HUD_Player_Number_Arr' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, DebugElapsedTime) == 0x000AD0, "Member 'UWBP_Race_HUD_Player04_C::DebugElapsedTime' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, DebugIntervalTime) == 0x000AD8, "Member 'UWBP_Race_HUD_Player04_C::DebugIntervalTime' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, DebugTmpFlag) == 0x000AE0, "Member 'UWBP_Race_HUD_Player04_C::DebugTmpFlag' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, SafeZoneSize) == 0x000AE8, "Member 'UWBP_Race_HUD_Player04_C::SafeZoneSize' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WarningMovePos) == 0x000AF8, "Member 'UWBP_Race_HUD_Player04_C::WarningMovePos' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, bMinimapDefault) == 0x000B08, "Member 'UWBP_Race_HUD_Player04_C::bMinimapDefault' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, In_New_State) == 0x000B09, "Member 'UWBP_Race_HUD_Player04_C::In_New_State' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_Start_Dash_Arr) == 0x000B10, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_Start_Dash_Arr' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WarningAreaArr) == 0x000B20, "Member 'UWBP_Race_HUD_Player04_C::WarningAreaArr' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WarningLayout) == 0x000B30, "Member 'UWBP_Race_HUD_Player04_C::WarningLayout' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WarningTransform) == 0x000B70, "Member 'UWBP_Race_HUD_Player04_C::WarningTransform' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WarningPosition) == 0x000BA8, "Member 'UWBP_Race_HUD_Player04_C::WarningPosition' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, YellowDrillShortTimeFlag) == 0x000BB8, "Member 'UWBP_Race_HUD_Player04_C::YellowDrillShortTimeFlag' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, EnablePlaySoundIrregular) == 0x000BC8, "Member 'UWBP_Race_HUD_Player04_C::EnablePlaySoundIrregular' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, PlayerCount) == 0x000BCC, "Member 'UWBP_Race_HUD_Player04_C::PlayerCount' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Lap_Array) == 0x000BD0, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Lap_Array' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Aim_Array) == 0x000BE0, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Aim_Array' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_AimTargeted_Array) == 0x000BF0, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_AimTargeted_Array' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, PanelDebugTexture) == 0x000C00, "Member 'UWBP_Race_HUD_Player04_C::PanelDebugTexture' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_RivalStart_Array) == 0x000C28, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_RivalStart_Array' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Team_HUD) == 0x000C38, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Team_HUD' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Controls) == 0x000C48, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Controls' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_BtnGuide) == 0x000C58, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_BtnGuide' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_ItemUse) == 0x000C68, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_ItemUse' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, LostRacerId) == 0x000C78, "Member 'UWBP_Race_HUD_Player04_C::LostRacerId' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, LostItemId) == 0x000C7C, "Member 'UWBP_Race_HUD_Player04_C::LostItemId' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, ManualAimingScale) == 0x000C80, "Member 'UWBP_Race_HUD_Player04_C::ManualAimingScale' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, IsScaleKeeo) == 0x000C88, "Member 'UWBP_Race_HUD_Player04_C::IsScaleKeeo' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, ShuffleRacerIndex) == 0x000C90, "Member 'UWBP_Race_HUD_Player04_C::ShuffleRacerIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Boost) == 0x000CA0, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Boost' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, GadgetPlateHUDArr) == 0x000CB0, "Member 'UWBP_Race_HUD_Player04_C::GadgetPlateHUDArr' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, IsEnableGadget) == 0x000CC0, "Member 'UWBP_Race_HUD_Player04_C::IsEnableGadget' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_TeamGroup) == 0x000CC8, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_TeamGroup' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, IsGoal) == 0x000CD8, "Member 'UWBP_Race_HUD_Player04_C::IsGoal' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, GeneralArrInt) == 0x000CE8, "Member 'UWBP_Race_HUD_Player04_C::GeneralArrInt' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, ChargeGaugePer) == 0x000CF8, "Member 'UWBP_Race_HUD_Player04_C::ChargeGaugePer' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Item_Icon_Set_Simple_Arr) == 0x000D08, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Item_Icon_Set_Simple_Arr' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, WBP_Race_HUD_Sub_Item_Icon_Sub_Simple_Arr) == 0x000D18, "Member 'UWBP_Race_HUD_Player04_C::WBP_Race_HUD_Sub_Item_Icon_Sub_Simple_Arr' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, IsInBoostCharge) == 0x000D28, "Member 'UWBP_Race_HUD_Player04_C::IsInBoostCharge' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, IsEnableVisibilityCourseMap) == 0x000D38, "Member 'UWBP_Race_HUD_Player04_C::IsEnableVisibilityCourseMap' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, IsEnableVisibilityRank) == 0x000D39, "Member 'UWBP_Race_HUD_Player04_C::IsEnableVisibilityRank' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, IsEnableVisibilityLap) == 0x000D3A, "Member 'UWBP_Race_HUD_Player04_C::IsEnableVisibilityLap' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, IsEnableVisibilityItemIcon) == 0x000D3B, "Member 'UWBP_Race_HUD_Player04_C::IsEnableVisibilityItemIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, IsEnableVisibilityHitInfo) == 0x000D3C, "Member 'UWBP_Race_HUD_Player04_C::IsEnableVisibilityHitInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, IsEnableVisibilityTextBalloon) == 0x000D3D, "Member 'UWBP_Race_HUD_Player04_C::IsEnableVisibilityTextBalloon' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, IsOnReleaseItemEffect) == 0x000D40, "Member 'UWBP_Race_HUD_Player04_C::IsOnReleaseItemEffect' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, IsOnControlItemUse) == 0x000D50, "Member 'UWBP_Race_HUD_Player04_C::IsOnControlItemUse' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, IsOnControlGuideFlight) == 0x000D60, "Member 'UWBP_Race_HUD_Player04_C::IsOnControlGuideFlight' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, IsFeverControl) == 0x000D70, "Member 'UWBP_Race_HUD_Player04_C::IsFeverControl' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, IsSuggestUpInput) == 0x000D80, "Member 'UWBP_Race_HUD_Player04_C::IsSuggestUpInput' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, Data_Table) == 0x000D90, "Member 'UWBP_Race_HUD_Player04_C::Data_Table' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player04_C, IsExecChargeGauge) == 0x000DB8, "Member 'UWBP_Race_HUD_Player04_C::IsExecChargeGauge' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_HUD_Player04_C;
 
 }
 

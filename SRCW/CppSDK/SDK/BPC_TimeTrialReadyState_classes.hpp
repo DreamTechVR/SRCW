@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -39,19 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_TimeTrialReadyState_C">();
+		BP_STATIC_CLASS_IMPL("BPC_TimeTrialReadyState_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_TimeTrialReadyState_C")
 	}
 	static class UBPC_TimeTrialReadyState_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_TimeTrialReadyState_C>();
 	}
 };
-static_assert(alignof(UBPC_TimeTrialReadyState_C) == 0x000008, "Wrong alignment on UBPC_TimeTrialReadyState_C");
-static_assert(sizeof(UBPC_TimeTrialReadyState_C) == 0x000150, "Wrong size on UBPC_TimeTrialReadyState_C");
-static_assert(offsetof(UBPC_TimeTrialReadyState_C, UberGraphFrame) == 0x000130, "Member 'UBPC_TimeTrialReadyState_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialReadyState_C, TimeTrialSequence) == 0x000138, "Member 'UBPC_TimeTrialReadyState_C::TimeTrialSequence' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialReadyState_C, Ready_Sequence_Actor) == 0x000140, "Member 'UBPC_TimeTrialReadyState_C::Ready_Sequence_Actor' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialReadyState_C, PlayerIndex) == 0x000148, "Member 'UBPC_TimeTrialReadyState_C::PlayerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_TimeTrialReadyState_C;
 
 }
 

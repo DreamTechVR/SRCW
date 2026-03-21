@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -42,18 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_LoginProcessor_C">();
+		BP_STATIC_CLASS_IMPL("BP_LoginProcessor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_LoginProcessor_C")
 	}
 	static class ABP_LoginProcessor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_LoginProcessor_C>();
 	}
 };
-static_assert(alignof(ABP_LoginProcessor_C) == 0x000008, "Wrong alignment on ABP_LoginProcessor_C");
-static_assert(sizeof(ABP_LoginProcessor_C) == 0x0003C0, "Wrong size on ABP_LoginProcessor_C");
-static_assert(offsetof(ABP_LoginProcessor_C, UberGraphFrame) == 0x0003A8, "Member 'ABP_LoginProcessor_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_LoginProcessor_C, DefaultSceneRoot) == 0x0003B0, "Member 'ABP_LoginProcessor_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABP_LoginProcessor_C, WBP_System_Title_Communication) == 0x0003B8, "Member 'ABP_LoginProcessor_C::WBP_System_Title_Communication' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_LoginProcessor_C;
 
 }
 

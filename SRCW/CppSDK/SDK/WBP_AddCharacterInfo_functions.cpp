@@ -57,6 +57,20 @@ void UWBP_AddCharacterInfo_C::ExecuteUbergraph_WBP_AddCharacterInfo(int32 EntryP
 }
 
 
+// Function WBP_AddCharacterInfo.WBP_AddCharacterInfo_C.ForceClose
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_AddCharacterInfo_C::ForceClose()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AddCharacterInfo_C", "ForceClose");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_AddCharacterInfo.WBP_AddCharacterInfo_C.GetCharacterInfos
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:

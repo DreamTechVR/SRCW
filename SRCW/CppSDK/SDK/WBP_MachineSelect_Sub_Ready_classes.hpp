@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UNION_classes.hpp"
-#include "UnionUI_structs.hpp"
 #include "Engine_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK
@@ -54,30 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MachineSelect_Sub_Ready_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MachineSelect_Sub_Ready_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MachineSelect_Sub_Ready_C")
 	}
 	static class UWBP_MachineSelect_Sub_Ready_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MachineSelect_Sub_Ready_C>();
 	}
 };
-static_assert(alignof(UWBP_MachineSelect_Sub_Ready_C) == 0x000008, "Wrong alignment on UWBP_MachineSelect_Sub_Ready_C");
-static_assert(sizeof(UWBP_MachineSelect_Sub_Ready_C) == 0x000378, "Wrong size on UWBP_MachineSelect_Sub_Ready_C");
-static_assert(offsetof(UWBP_MachineSelect_Sub_Ready_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_MachineSelect_Sub_Ready_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_Ready_C, Ready_Back) == 0x0002E8, "Member 'UWBP_MachineSelect_Sub_Ready_C::Ready_Back' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_Ready_C, Ready_Loop) == 0x0002F0, "Member 'UWBP_MachineSelect_Sub_Ready_C::Ready_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_Ready_C, Ready_In) == 0x0002F8, "Member 'UWBP_MachineSelect_Sub_Ready_C::Ready_In' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_Ready_C, BG_Black) == 0x000300, "Member 'UWBP_MachineSelect_Sub_Ready_C::BG_Black' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_Ready_C, RaceFlag) == 0x000308, "Member 'UWBP_MachineSelect_Sub_Ready_C::RaceFlag' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_Ready_C, TXT_Ready) == 0x000310, "Member 'UWBP_MachineSelect_Sub_Ready_C::TXT_Ready' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_Ready_C, YellowLine_Center) == 0x000318, "Member 'UWBP_MachineSelect_Sub_Ready_C::YellowLine_Center' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_Ready_C, CurrentIndex) == 0x000320, "Member 'UWBP_MachineSelect_Sub_Ready_C::CurrentIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_Ready_C, ReadyText) == 0x000328, "Member 'UWBP_MachineSelect_Sub_Ready_C::ReadyText' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_Ready_C, ReadyTextString) == 0x000338, "Member 'UWBP_MachineSelect_Sub_Ready_C::ReadyTextString' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_Ready_C, Event_AnimFinishedIn) == 0x000348, "Member 'UWBP_MachineSelect_Sub_Ready_C::Event_AnimFinishedIn' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_Ready_C, Event_AnimFinishedOut) == 0x000358, "Member 'UWBP_MachineSelect_Sub_Ready_C::Event_AnimFinishedOut' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_Ready_C, TimerHandle) == 0x000368, "Member 'UWBP_MachineSelect_Sub_Ready_C::TimerHandle' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_Ready_C, PlayAnimType) == 0x000370, "Member 'UWBP_MachineSelect_Sub_Ready_C::PlayAnimType' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MachineSelect_Sub_Ready_C;
 
 }
 

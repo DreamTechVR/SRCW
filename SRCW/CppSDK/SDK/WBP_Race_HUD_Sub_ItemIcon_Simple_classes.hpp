@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UnionRun_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "Engine_structs.hpp"
+#include "UnionSystem_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -106,60 +106,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_HUD_Sub_ItemIcon_Simple_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_HUD_Sub_ItemIcon_Simple_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_HUD_Sub_ItemIcon_Simple_C")
 	}
 	static class UWBP_Race_HUD_Sub_ItemIcon_Simple_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_HUD_Sub_ItemIcon_Simple_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C) == 0x000008, "Wrong alignment on UWBP_Race_HUD_Sub_ItemIcon_Simple_C");
-static_assert(sizeof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C) == 0x0008E0, "Wrong size on UWBP_Race_HUD_Sub_ItemIcon_Simple_C");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, UberGraphFrame) == 0x000788, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, DisplayHide_ItemIcon) == 0x000790, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::DisplayHide_ItemIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, Out_ItemIcon_LostIcon) == 0x000798, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::Out_ItemIcon_LostIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, Out_ItemIcon_LostEffect) == 0x0007A0, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::Out_ItemIcon_LostEffect' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, Decision_ItemIcon) == 0x0007A8, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::Decision_ItemIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, LotteryLoop_ItemIcon) == 0x0007B0, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::LotteryLoop_ItemIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, Border_Color) == 0x0007B8, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::Border_Color' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, Colud_Eff_02) == 0x0007C0, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::Colud_Eff_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, DMY_ItemIcon) == 0x0007C8, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::DMY_ItemIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, DSP_ArcGauge_Add) == 0x0007D0, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::DSP_ArcGauge_Add' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, DSP_Irregular) == 0x0007D8, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::DSP_Irregular' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, Irregular_Icon) == 0x0007E0, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::Irregular_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, Overlay_LostEffect) == 0x0007E8, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::Overlay_LostEffect' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, PAT_AttributeColorBase) == 0x0007F0, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::PAT_AttributeColorBase' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, PAT_ItemPict) == 0x0007F8, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::PAT_ItemPict' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, Ring) == 0x000800, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::Ring' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, Root) == 0x000808, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::Root' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, M_ItemIcon) == 0x000810, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::M_ItemIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, ItemIconIndex) == 0x000818, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::ItemIconIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, LotteryCountMax) == 0x00081C, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::LotteryCountMax' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, LotteryCount) == 0x000820, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::LotteryCount' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, PlayerIndex) == 0x000824, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, VisibleFlame) == 0x000828, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::VisibleFlame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, bActionanimating) == 0x000830, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::bActionanimating' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, bLotterySound) == 0x000831, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::bLotterySound' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, DisplayAnimState) == 0x000832, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::DisplayAnimState' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, ItemIdIndex_0) == 0x000834, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::ItemIdIndex_0' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, bPauseFlag) == 0x000838, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::bPauseFlag' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, ItemTextureNum) == 0x00083C, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::ItemTextureNum' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, Accele) == 0x000840, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::Accele' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, Defense) == 0x000848, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::Defense' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, Offense) == 0x000850, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::Offense' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, Place) == 0x000858, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::Place' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, OnFirstItemGet) == 0x000860, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::OnFirstItemGet' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, ItemBorderCol) == 0x000870, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::ItemBorderCol' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, bActive) == 0x000880, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::bActive' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, GaugeItemIds) == 0x000888, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::GaugeItemIds' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, Enable) == 0x000898, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::Enable' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, LifeTime) == 0x0008A8, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::LifeTime' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, ItemSelectSoundHandle) == 0x0008B0, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::ItemSelectSoundHandle' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, AcceleLabel) == 0x0008B8, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::AcceleLabel' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, DefenseLabel) == 0x0008C0, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::DefenseLabel' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, OffenseLabel) == 0x0008C8, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::OffenseLabel' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, PlaceLabel) == 0x0008D0, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::PlaceLabel' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIcon_Simple_C, RareItemSelectSoundHandle) == 0x0008D8, "Member 'UWBP_Race_HUD_Sub_ItemIcon_Simple_C::RareItemSelectSoundHandle' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_HUD_Sub_ItemIcon_Simple_C;
 
 }
 

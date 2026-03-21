@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
+#include "UnionRun_structs.hpp"
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
-#include "ST_GarageData_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "UnionRun_structs.hpp"
+#include "Engine_structs.hpp"
+#include "ST_GarageData_structs.hpp"
 #include "EMachineCustomizeSequenceMode_structs.hpp"
 
 
@@ -85,37 +85,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_MachineCustomizeSequence_C">();
+		BP_STATIC_CLASS_IMPL("BP_MachineCustomizeSequence_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_MachineCustomizeSequence_C")
 	}
 	static class ABP_MachineCustomizeSequence_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_MachineCustomizeSequence_C>();
 	}
 };
-static_assert(alignof(ABP_MachineCustomizeSequence_C) == 0x000008, "Wrong alignment on ABP_MachineCustomizeSequence_C");
-static_assert(sizeof(ABP_MachineCustomizeSequence_C) == 0x0004A0, "Wrong size on ABP_MachineCustomizeSequence_C");
-static_assert(offsetof(ABP_MachineCustomizeSequence_C, UberGraphFrame) == 0x000378, "Member 'ABP_MachineCustomizeSequence_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_MachineCustomizeSequence_C, BPC_MachineCustomizeAuraSelectState) == 0x000380, "Member 'ABP_MachineCustomizeSequence_C::BPC_MachineCustomizeAuraSelectState' has a wrong offset!");
-static_assert(offsetof(ABP_MachineCustomizeSequence_C, BPC_MachineCustomizeHornSelectState) == 0x000388, "Member 'ABP_MachineCustomizeSequence_C::BPC_MachineCustomizeHornSelectState' has a wrong offset!");
-static_assert(offsetof(ABP_MachineCustomizeSequence_C, BPC_MachineCustomizeStickerApplyState) == 0x000390, "Member 'ABP_MachineCustomizeSequence_C::BPC_MachineCustomizeStickerApplyState' has a wrong offset!");
-static_assert(offsetof(ABP_MachineCustomizeSequence_C, BPC_MachineCustomizeStickerSelectState) == 0x000398, "Member 'ABP_MachineCustomizeSequence_C::BPC_MachineCustomizeStickerSelectState' has a wrong offset!");
-static_assert(offsetof(ABP_MachineCustomizeSequence_C, BPC_MachineCustomizeStickerSlotSelectState) == 0x0003A0, "Member 'ABP_MachineCustomizeSequence_C::BPC_MachineCustomizeStickerSlotSelectState' has a wrong offset!");
-static_assert(offsetof(ABP_MachineCustomizeSequence_C, BPC_MachineCustomizeSaveState) == 0x0003A8, "Member 'ABP_MachineCustomizeSequence_C::BPC_MachineCustomizeSaveState' has a wrong offset!");
-static_assert(offsetof(ABP_MachineCustomizeSequence_C, BPC_MachineCustomizeColorPresetSelectState) == 0x0003B0, "Member 'ABP_MachineCustomizeSequence_C::BPC_MachineCustomizeColorPresetSelectState' has a wrong offset!");
-static_assert(offsetof(ABP_MachineCustomizeSequence_C, BPC_MachineCustomizeColorDetailState) == 0x0003B8, "Member 'ABP_MachineCustomizeSequence_C::BPC_MachineCustomizeColorDetailState' has a wrong offset!");
-static_assert(offsetof(ABP_MachineCustomizeSequence_C, BPC_MachineCustomizeColorAreaSelectState) == 0x0003C0, "Member 'ABP_MachineCustomizeSequence_C::BPC_MachineCustomizeColorAreaSelectState' has a wrong offset!");
-static_assert(offsetof(ABP_MachineCustomizeSequence_C, BPC_MachineCustomizePartsSelectState) == 0x0003C8, "Member 'ABP_MachineCustomizeSequence_C::BPC_MachineCustomizePartsSelectState' has a wrong offset!");
-static_assert(offsetof(ABP_MachineCustomizeSequence_C, BPC_MachineCustomizeMachineSelectState) == 0x0003D0, "Member 'ABP_MachineCustomizeSequence_C::BPC_MachineCustomizeMachineSelectState' has a wrong offset!");
-static_assert(offsetof(ABP_MachineCustomizeSequence_C, BPC_MachineCustomizeInitState) == 0x0003D8, "Member 'ABP_MachineCustomizeSequence_C::BPC_MachineCustomizeInitState' has a wrong offset!");
-static_assert(offsetof(ABP_MachineCustomizeSequence_C, OnExit) == 0x0003E0, "Member 'ABP_MachineCustomizeSequence_C::OnExit' has a wrong offset!");
-static_assert(offsetof(ABP_MachineCustomizeSequence_C, GarageData) == 0x0003F0, "Member 'ABP_MachineCustomizeSequence_C::GarageData' has a wrong offset!");
-static_assert(offsetof(ABP_MachineCustomizeSequence_C, OnMachineSelected) == 0x000448, "Member 'ABP_MachineCustomizeSequence_C::OnMachineSelected' has a wrong offset!");
-static_assert(offsetof(ABP_MachineCustomizeSequence_C, OnShortcutCustomizeStarted) == 0x000458, "Member 'ABP_MachineCustomizeSequence_C::OnShortcutCustomizeStarted' has a wrong offset!");
-static_assert(offsetof(ABP_MachineCustomizeSequence_C, bHasExitedByShortcut) == 0x000468, "Member 'ABP_MachineCustomizeSequence_C::bHasExitedByShortcut' has a wrong offset!");
-static_assert(offsetof(ABP_MachineCustomizeSequence_C, OnTurntableControlStateChanged) == 0x000470, "Member 'ABP_MachineCustomizeSequence_C::OnTurntableControlStateChanged' has a wrong offset!");
-static_assert(offsetof(ABP_MachineCustomizeSequence_C, OnParamWindowControlStateChanged) == 0x000480, "Member 'ABP_MachineCustomizeSequence_C::OnParamWindowControlStateChanged' has a wrong offset!");
-static_assert(offsetof(ABP_MachineCustomizeSequence_C, Is_Message_Bar_Visible) == 0x000490, "Member 'ABP_MachineCustomizeSequence_C::Is_Message_Bar_Visible' has a wrong offset!");
-static_assert(offsetof(ABP_MachineCustomizeSequence_C, MessageBar) == 0x000498, "Member 'ABP_MachineCustomizeSequence_C::MessageBar' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_MachineCustomizeSequence_C;
 
 }
 

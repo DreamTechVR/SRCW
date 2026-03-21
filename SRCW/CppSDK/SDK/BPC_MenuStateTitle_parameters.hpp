@@ -21,9 +21,7 @@ struct BPC_MenuStateTitle_C_Play_Title_BGM final
 public:
 	class UMenuSoundSubsystem*                    CallFunc_GetWorldSubsystem_ReturnValue;            // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MenuStateTitle_C_Play_Title_BGM) == 0x000008, "Wrong alignment on BPC_MenuStateTitle_C_Play_Title_BGM");
-static_assert(sizeof(BPC_MenuStateTitle_C_Play_Title_BGM) == 0x000008, "Wrong size on BPC_MenuStateTitle_C_Play_Title_BGM");
-static_assert(offsetof(BPC_MenuStateTitle_C_Play_Title_BGM, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000000, "Member 'BPC_MenuStateTitle_C_Play_Title_BGM::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MenuStateTitle_C_Play_Title_BGM;
 
 // Function BPC_MenuStateTitle.BPC_MenuStateTitle_C.OnLoaded_4765DBF64D84C160A2E9C08B7DD924AD
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct BPC_MenuStateTitle_C_OnLoaded_4765DBF64D84C160A2E9C08B7DD924AD final
 public:
 	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MenuStateTitle_C_OnLoaded_4765DBF64D84C160A2E9C08B7DD924AD) == 0x000008, "Wrong alignment on BPC_MenuStateTitle_C_OnLoaded_4765DBF64D84C160A2E9C08B7DD924AD");
-static_assert(sizeof(BPC_MenuStateTitle_C_OnLoaded_4765DBF64D84C160A2E9C08B7DD924AD) == 0x000008, "Wrong size on BPC_MenuStateTitle_C_OnLoaded_4765DBF64D84C160A2E9C08B7DD924AD");
-static_assert(offsetof(BPC_MenuStateTitle_C_OnLoaded_4765DBF64D84C160A2E9C08B7DD924AD, Loaded) == 0x000000, "Member 'BPC_MenuStateTitle_C_OnLoaded_4765DBF64D84C160A2E9C08B7DD924AD::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MenuStateTitle_C_OnLoaded_4765DBF64D84C160A2E9C08B7DD924AD;
 
 // Function BPC_MenuStateTitle.BPC_MenuStateTitle_C.OnUpdateState
 // 0x0004 (0x0004 - 0x0000)
@@ -43,9 +39,7 @@ struct BPC_MenuStateTitle_C_OnUpdateState final
 public:
 	float                                         InDeltaTime;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MenuStateTitle_C_OnUpdateState) == 0x000004, "Wrong alignment on BPC_MenuStateTitle_C_OnUpdateState");
-static_assert(sizeof(BPC_MenuStateTitle_C_OnUpdateState) == 0x000004, "Wrong size on BPC_MenuStateTitle_C_OnUpdateState");
-static_assert(offsetof(BPC_MenuStateTitle_C_OnUpdateState, InDeltaTime) == 0x000000, "Member 'BPC_MenuStateTitle_C_OnUpdateState::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MenuStateTitle_C_OnUpdateState;
 
 // Function BPC_MenuStateTitle.BPC_MenuStateTitle_C.ExecuteUbergraph_BPC_MenuStateTitle
 // 0x0058 (0x0058 - 0x0000)
@@ -69,21 +63,7 @@ public:
 	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(TSubclassOf<class UObject> Loaded)> K2Node_CreateDelegate_OutputDelegate;         // 0x0044(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_MenuStateTitle_C_ExecuteUbergraph_BPC_MenuStateTitle) == 0x000008, "Wrong alignment on BPC_MenuStateTitle_C_ExecuteUbergraph_BPC_MenuStateTitle");
-static_assert(sizeof(BPC_MenuStateTitle_C_ExecuteUbergraph_BPC_MenuStateTitle) == 0x000058, "Wrong size on BPC_MenuStateTitle_C_ExecuteUbergraph_BPC_MenuStateTitle");
-static_assert(offsetof(BPC_MenuStateTitle_C_ExecuteUbergraph_BPC_MenuStateTitle, EntryPoint) == 0x000000, "Member 'BPC_MenuStateTitle_C_ExecuteUbergraph_BPC_MenuStateTitle::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStateTitle_C_ExecuteUbergraph_BPC_MenuStateTitle, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'BPC_MenuStateTitle_C_ExecuteUbergraph_BPC_MenuStateTitle::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStateTitle_C_ExecuteUbergraph_BPC_MenuStateTitle, CallFunc_IsValid_ReturnValue_1) == 0x000005, "Member 'BPC_MenuStateTitle_C_ExecuteUbergraph_BPC_MenuStateTitle::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStateTitle_C_ExecuteUbergraph_BPC_MenuStateTitle, CallFunc_IsInViewport_ReturnValue) == 0x000006, "Member 'BPC_MenuStateTitle_C_ExecuteUbergraph_BPC_MenuStateTitle::CallFunc_IsInViewport_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStateTitle_C_ExecuteUbergraph_BPC_MenuStateTitle, K2Node_CustomEvent_Loaded) == 0x000008, "Member 'BPC_MenuStateTitle_C_ExecuteUbergraph_BPC_MenuStateTitle::K2Node_CustomEvent_Loaded' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStateTitle_C_ExecuteUbergraph_BPC_MenuStateTitle, Temp_class_Variable) == 0x000010, "Member 'BPC_MenuStateTitle_C_ExecuteUbergraph_BPC_MenuStateTitle::Temp_class_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStateTitle_C_ExecuteUbergraph_BPC_MenuStateTitle, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000018, "Member 'BPC_MenuStateTitle_C_ExecuteUbergraph_BPC_MenuStateTitle::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStateTitle_C_ExecuteUbergraph_BPC_MenuStateTitle, CallFunc_GetWorldSubsystem_ReturnValue_1) == 0x000020, "Member 'BPC_MenuStateTitle_C_ExecuteUbergraph_BPC_MenuStateTitle::CallFunc_GetWorldSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStateTitle_C_ExecuteUbergraph_BPC_MenuStateTitle, K2Node_Event_InDeltaTime) == 0x000028, "Member 'BPC_MenuStateTitle_C_ExecuteUbergraph_BPC_MenuStateTitle::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStateTitle_C_ExecuteUbergraph_BPC_MenuStateTitle, CallFunc_GetOwnerMenuSequence_ReturnValue) == 0x000030, "Member 'BPC_MenuStateTitle_C_ExecuteUbergraph_BPC_MenuStateTitle::CallFunc_GetOwnerMenuSequence_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStateTitle_C_ExecuteUbergraph_BPC_MenuStateTitle, K2Node_DynamicCast_AsBP_Menu_Sequence) == 0x000038, "Member 'BPC_MenuStateTitle_C_ExecuteUbergraph_BPC_MenuStateTitle::K2Node_DynamicCast_AsBP_Menu_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStateTitle_C_ExecuteUbergraph_BPC_MenuStateTitle, K2Node_DynamicCast_bSuccess) == 0x000040, "Member 'BPC_MenuStateTitle_C_ExecuteUbergraph_BPC_MenuStateTitle::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_MenuStateTitle_C_ExecuteUbergraph_BPC_MenuStateTitle, K2Node_CreateDelegate_OutputDelegate) == 0x000044, "Member 'BPC_MenuStateTitle_C_ExecuteUbergraph_BPC_MenuStateTitle::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_MenuStateTitle_C_ExecuteUbergraph_BPC_MenuStateTitle;
 
 }
 

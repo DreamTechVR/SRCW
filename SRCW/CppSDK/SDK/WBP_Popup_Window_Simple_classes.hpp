@@ -63,25 +63,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Popup_Window_Simple_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Popup_Window_Simple_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Popup_Window_Simple_C")
 	}
 	static class UWBP_Popup_Window_Simple_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Popup_Window_Simple_C>();
 	}
 };
-static_assert(alignof(UWBP_Popup_Window_Simple_C) == 0x000008, "Wrong alignment on UWBP_Popup_Window_Simple_C");
-static_assert(sizeof(UWBP_Popup_Window_Simple_C) == 0x000448, "Wrong size on UWBP_Popup_Window_Simple_C");
-static_assert(offsetof(UWBP_Popup_Window_Simple_C, UberGraphFrame) == 0x0003F0, "Member 'UWBP_Popup_Window_Simple_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Simple_C, Popup_Out) == 0x0003F8, "Member 'UWBP_Popup_Window_Simple_C::Popup_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Simple_C, Popup_Loop) == 0x000400, "Member 'UWBP_Popup_Window_Simple_C::Popup_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Simple_C, Popup_In) == 0x000408, "Member 'UWBP_Popup_Window_Simple_C::Popup_In' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Simple_C, SafeZone_0) == 0x000410, "Member 'UWBP_Popup_Window_Simple_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Simple_C, TXT_Info) == 0x000418, "Member 'UWBP_Popup_Window_Simple_C::TXT_Info' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Simple_C, WBP_Popup_Sub_Btn_Standard_01) == 0x000420, "Member 'UWBP_Popup_Window_Simple_C::WBP_Popup_Sub_Btn_Standard_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Simple_C, WBP_Popup_Sub_Btn_Standard_02) == 0x000428, "Member 'UWBP_Popup_Window_Simple_C::WBP_Popup_Sub_Btn_Standard_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Simple_C, WindowBase) == 0x000430, "Member 'UWBP_Popup_Window_Simple_C::WindowBase' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Simple_C, Buttons) == 0x000438, "Member 'UWBP_Popup_Window_Simple_C::Buttons' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Popup_Window_Simple_C;
 
 }
 

@@ -33,18 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Result_Sub_RivalRacerText_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Result_Sub_RivalRacerText_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Result_Sub_RivalRacerText_C")
 	}
 	static class UWBP_Result_Sub_RivalRacerText_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Result_Sub_RivalRacerText_C>();
 	}
 };
-static_assert(alignof(UWBP_Result_Sub_RivalRacerText_C) == 0x000008, "Wrong alignment on UWBP_Result_Sub_RivalRacerText_C");
-static_assert(sizeof(UWBP_Result_Sub_RivalRacerText_C) == 0x0002F8, "Wrong size on UWBP_Result_Sub_RivalRacerText_C");
-static_assert(offsetof(UWBP_Result_Sub_RivalRacerText_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Result_Sub_RivalRacerText_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RivalRacerText_C, TXT_Loop) == 0x0002E8, "Member 'UWBP_Result_Sub_RivalRacerText_C::TXT_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RivalRacerText_C, TXT_RivalRacer) == 0x0002F0, "Member 'UWBP_Result_Sub_RivalRacerText_C::TXT_RivalRacer' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Result_Sub_RivalRacerText_C;
 
 }
 

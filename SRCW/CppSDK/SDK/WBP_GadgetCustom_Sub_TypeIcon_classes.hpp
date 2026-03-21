@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -84,51 +84,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GadgetCustom_Sub_TypeIcon_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GadgetCustom_Sub_TypeIcon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GadgetCustom_Sub_TypeIcon_C")
 	}
 	static class UWBP_GadgetCustom_Sub_TypeIcon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GadgetCustom_Sub_TypeIcon_C>();
 	}
 };
-static_assert(alignof(UWBP_GadgetCustom_Sub_TypeIcon_C) == 0x000008, "Wrong alignment on UWBP_GadgetCustom_Sub_TypeIcon_C");
-static_assert(sizeof(UWBP_GadgetCustom_Sub_TypeIcon_C) == 0x000690, "Wrong size on UWBP_GadgetCustom_Sub_TypeIcon_C");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, UberGraphFrame) == 0x000558, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, Default_Loop) == 0x000560, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::Default_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, UnLock_Inout) == 0x000568, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::UnLock_Inout' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, DonpaTicket_Small) == 0x000570, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::DonpaTicket_Small' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, DSP_HorizontalBox_Ticket) == 0x000578, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::DSP_HorizontalBox_Ticket' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, DSP_NewIconWave) == 0x000580, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::DSP_NewIconWave' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, DSP_NGMark) == 0x000588, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::DSP_NGMark' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, DSP_NGPowerMark) == 0x000590, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::DSP_NGPowerMark' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, DSP_Set_Icon) == 0x000598, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::DSP_Set_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, Eff_01) == 0x0005A0, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::Eff_01' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, Eff_02) == 0x0005A8, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::Eff_02' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, Eff_03) == 0x0005B0, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::Eff_03' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, Eff_04) == 0x0005B8, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::Eff_04' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, Eff_05) == 0x0005C0, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::Eff_05' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, Eff_06) == 0x0005C8, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::Eff_06' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, Eff_07) == 0x0005D0, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::Eff_07' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, Eff_08) == 0x0005D8, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::Eff_08' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, Eff_Core_Add_01) == 0x0005E0, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::Eff_Core_Add_01' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, Eff_Core_Add_02) == 0x0005E8, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::Eff_Core_Add_02' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, MLC_Base) == 0x0005F0, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::MLC_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, NG_Base) == 0x0005F8, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::NG_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, Overlay_GadgetIconName) == 0x000600, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::Overlay_GadgetIconName' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, Overlay_Lock) == 0x000608, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::Overlay_Lock' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, SizeBox_LockIcon) == 0x000610, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::SizeBox_LockIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, TXT_ItemCount_Num) == 0x000618, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::TXT_ItemCount_Num' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, UnLock_Eff_Base) == 0x000620, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::UnLock_Eff_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, WBP_FontScroll_88) == 0x000628, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::WBP_FontScroll_88' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, WBP_GadgetIcon_Cost01_Icon) == 0x000630, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::WBP_GadgetIcon_Cost01_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, WBP_GadgetIcon_Cost01_Icon_Lock) == 0x000638, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::WBP_GadgetIcon_Cost01_Icon_Lock' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, WhiteBase) == 0x000640, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::WhiteBase' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, WidgetSwitcher) == 0x000648, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::WidgetSwitcher' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, BaseColors) == 0x000650, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::BaseColors' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, PlayerIcons) == 0x000660, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::PlayerIcons' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, PlayerNum) == 0x000670, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::PlayerNum' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, PriceColors) == 0x000678, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::PriceColors' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeIcon_C, Index_0) == 0x000688, "Member 'UWBP_GadgetCustom_Sub_TypeIcon_C::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GadgetCustom_Sub_TypeIcon_C;
 
 }
 

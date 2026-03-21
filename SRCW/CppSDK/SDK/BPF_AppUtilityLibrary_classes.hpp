@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPF_AppUtilityLibrary_C">();
+		BP_STATIC_CLASS_IMPL("BPF_AppUtilityLibrary_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPF_AppUtilityLibrary_C")
 	}
 	static class UBPF_AppUtilityLibrary_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPF_AppUtilityLibrary_C>();
 	}
 };
-static_assert(alignof(UBPF_AppUtilityLibrary_C) == 0x000008, "Wrong alignment on UBPF_AppUtilityLibrary_C");
-static_assert(sizeof(UBPF_AppUtilityLibrary_C) == 0x000028, "Wrong size on UBPF_AppUtilityLibrary_C");
+DUMPER7_ASSERTS_UBPF_AppUtilityLibrary_C;
 
 }
 

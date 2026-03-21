@@ -23,15 +23,18 @@ class UABP_HoldSlicer_C final : public UABPT_HoldItem_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABP_HoldSlicer_C">();
+		BP_STATIC_CLASS_IMPL("ABP_HoldSlicer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABP_HoldSlicer_C")
 	}
 	static class UABP_HoldSlicer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UABP_HoldSlicer_C>();
 	}
 };
-static_assert(alignof(UABP_HoldSlicer_C) == 0x000010, "Wrong alignment on UABP_HoldSlicer_C");
-static_assert(sizeof(UABP_HoldSlicer_C) == 0x001130, "Wrong size on UABP_HoldSlicer_C");
+DUMPER7_ASSERTS_UABP_HoldSlicer_C;
 
 }
 

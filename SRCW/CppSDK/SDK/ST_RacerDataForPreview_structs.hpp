@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
 #include "UnionRun_structs.hpp"
+#include "UnionSystem_structs.hpp"
 
 
 namespace SDK
@@ -36,21 +36,7 @@ public:
 	bool                                          bSetTireParts_31_A20066A8409E5FD9CBFC66BD75677EB3; // 0x000B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EMachineHornType                              HornType_37_D6AC293841F86D5A62F0ECAF0BB0C149;      // 0x000C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FST_RacerDataForPreview) == 0x000001, "Wrong alignment on FST_RacerDataForPreview");
-static_assert(sizeof(FST_RacerDataForPreview) == 0x00000D, "Wrong size on FST_RacerDataForPreview");
-static_assert(offsetof(FST_RacerDataForPreview, DriverId_15_E857A5CE428FFC63DD88BC8AAF8E51A0) == 0x000000, "Member 'FST_RacerDataForPreview::DriverId_15_E857A5CE428FFC63DD88BC8AAF8E51A0' has a wrong offset!");
-static_assert(offsetof(FST_RacerDataForPreview, VehicleType_12_4AA2B0BF4A1AC834784B98AAA97AA1C8) == 0x000001, "Member 'FST_RacerDataForPreview::VehicleType_12_4AA2B0BF4A1AC834784B98AAA97AA1C8' has a wrong offset!");
-static_assert(offsetof(FST_RacerDataForPreview, FrontPartsId_8_1D14001942F07676159E47B9D347550D) == 0x000002, "Member 'FST_RacerDataForPreview::FrontPartsId_8_1D14001942F07676159E47B9D347550D' has a wrong offset!");
-static_assert(offsetof(FST_RacerDataForPreview, RearPartsId_9_242176874673D3293EC98EA2CB49C770) == 0x000003, "Member 'FST_RacerDataForPreview::RearPartsId_9_242176874673D3293EC98EA2CB49C770' has a wrong offset!");
-static_assert(offsetof(FST_RacerDataForPreview, TirePartsId_10_51A89DDF4C406AF86A452590867273A7) == 0x000004, "Member 'FST_RacerDataForPreview::TirePartsId_10_51A89DDF4C406AF86A452590867273A7' has a wrong offset!");
-static_assert(offsetof(FST_RacerDataForPreview, bHoverboard_18_B2EFE3284EA4459FE02259B8EC8A43C4) == 0x000005, "Member 'FST_RacerDataForPreview::bHoverboard_18_B2EFE3284EA4459FE02259B8EC8A43C4' has a wrong offset!");
-static_assert(offsetof(FST_RacerDataForPreview, bSetDriver_21_C72189EE4A79AF23007A6681C4C3297B) == 0x000006, "Member 'FST_RacerDataForPreview::bSetDriver_21_C72189EE4A79AF23007A6681C4C3297B' has a wrong offset!");
-static_assert(offsetof(FST_RacerDataForPreview, bSetCockpit_23_0852FF2144DBBF21EA1875AB91308FAB) == 0x000007, "Member 'FST_RacerDataForPreview::bSetCockpit_23_0852FF2144DBBF21EA1875AB91308FAB' has a wrong offset!");
-static_assert(offsetof(FST_RacerDataForPreview, bSetFrontParts_26_A1C88B4146797E3B96BA2BB997AEAA55) == 0x000008, "Member 'FST_RacerDataForPreview::bSetFrontParts_26_A1C88B4146797E3B96BA2BB997AEAA55' has a wrong offset!");
-static_assert(offsetof(FST_RacerDataForPreview, bSetRearParts_28_A8C071804309956F4BA8A4A77009D958) == 0x000009, "Member 'FST_RacerDataForPreview::bSetRearParts_28_A8C071804309956F4BA8A4A77009D958' has a wrong offset!");
-static_assert(offsetof(FST_RacerDataForPreview, bSetSideParts_33_8D70167140A0F42F5D79E8B091CE5FC0) == 0x00000A, "Member 'FST_RacerDataForPreview::bSetSideParts_33_8D70167140A0F42F5D79E8B091CE5FC0' has a wrong offset!");
-static_assert(offsetof(FST_RacerDataForPreview, bSetTireParts_31_A20066A8409E5FD9CBFC66BD75677EB3) == 0x00000B, "Member 'FST_RacerDataForPreview::bSetTireParts_31_A20066A8409E5FD9CBFC66BD75677EB3' has a wrong offset!");
-static_assert(offsetof(FST_RacerDataForPreview, HornType_37_D6AC293841F86D5A62F0ECAF0BB0C149) == 0x00000C, "Member 'FST_RacerDataForPreview::HornType_37_D6AC293841F86D5A62F0ECAF0BB0C149' has a wrong offset!");
+DUMPER7_ASSERTS_FST_RacerDataForPreview;
 
 }
 

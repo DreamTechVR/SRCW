@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -65,40 +65,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_Sub_MatchingState_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_Sub_MatchingState_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_Sub_MatchingState_C")
 	}
 	static class UWBP_CMN_Sub_MatchingState_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_Sub_MatchingState_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_Sub_MatchingState_C) == 0x000008, "Wrong alignment on UWBP_CMN_Sub_MatchingState_C");
-static_assert(sizeof(UWBP_CMN_Sub_MatchingState_C) == 0x0004F0, "Wrong size on UWBP_CMN_Sub_MatchingState_C");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, UberGraphFrame) == 0x000430, "Member 'UWBP_CMN_Sub_MatchingState_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, MatchingState_Out) == 0x000438, "Member 'UWBP_CMN_Sub_MatchingState_C::MatchingState_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, MatchingState_Loop_Matching) == 0x000440, "Member 'UWBP_CMN_Sub_MatchingState_C::MatchingState_Loop_Matching' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, MatchingState_Change_Matching) == 0x000448, "Member 'UWBP_CMN_Sub_MatchingState_C::MatchingState_Change_Matching' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, MatchingState_Loop_Remind) == 0x000450, "Member 'UWBP_CMN_Sub_MatchingState_C::MatchingState_Loop_Remind' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, MatchingState_Loop) == 0x000458, "Member 'UWBP_CMN_Sub_MatchingState_C::MatchingState_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, MatchingState_In) == 0x000460, "Member 'UWBP_CMN_Sub_MatchingState_C::MatchingState_In' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, Base_Effect) == 0x000468, "Member 'UWBP_CMN_Sub_MatchingState_C::Base_Effect' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, Base_Frame) == 0x000470, "Member 'UWBP_CMN_Sub_MatchingState_C::Base_Frame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, Base_Matching) == 0x000478, "Member 'UWBP_CMN_Sub_MatchingState_C::Base_Matching' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, Base_Normal) == 0x000480, "Member 'UWBP_CMN_Sub_MatchingState_C::Base_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, DSP_Icon_Friend) == 0x000488, "Member 'UWBP_CMN_Sub_MatchingState_C::DSP_Icon_Friend' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, DSP_Throbber_dot) == 0x000490, "Member 'UWBP_CMN_Sub_MatchingState_C::DSP_Throbber_dot' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, Overlay_0) == 0x000498, "Member 'UWBP_CMN_Sub_MatchingState_C::Overlay_0' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, SizeBox_57) == 0x0004A0, "Member 'UWBP_CMN_Sub_MatchingState_C::SizeBox_57' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, TXT_Message) == 0x0004A8, "Member 'UWBP_CMN_Sub_MatchingState_C::TXT_Message' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, WBP_CMN_Sub_MatchingState_CharaIcon_01) == 0x0004B0, "Member 'UWBP_CMN_Sub_MatchingState_C::WBP_CMN_Sub_MatchingState_CharaIcon_01' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, WBP_CMN_Sub_MatchingState_CharaIcon_02) == 0x0004B8, "Member 'UWBP_CMN_Sub_MatchingState_C::WBP_CMN_Sub_MatchingState_CharaIcon_02' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, WBP_CMN_Sub_MatchingState_CharaIcon_03) == 0x0004C0, "Member 'UWBP_CMN_Sub_MatchingState_C::WBP_CMN_Sub_MatchingState_CharaIcon_03' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, WBP_CMN_Sub_MatchingState_CharaIcon_04) == 0x0004C8, "Member 'UWBP_CMN_Sub_MatchingState_C::WBP_CMN_Sub_MatchingState_CharaIcon_04' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, WBP_CMN_Sub_MatchingState_ModeIcon) == 0x0004D0, "Member 'UWBP_CMN_Sub_MatchingState_C::WBP_CMN_Sub_MatchingState_ModeIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, MatchingIconArray) == 0x0004D8, "Member 'UWBP_CMN_Sub_MatchingState_C::MatchingIconArray' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, bIsSetGameMode) == 0x0004E8, "Member 'UWBP_CMN_Sub_MatchingState_C::bIsSetGameMode' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, bIsPlayStartMatchingForward) == 0x0004E9, "Member 'UWBP_CMN_Sub_MatchingState_C::bIsPlayStartMatchingForward' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, bIsPlayedRemind) == 0x0004EA, "Member 'UWBP_CMN_Sub_MatchingState_C::bIsPlayedRemind' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_Sub_MatchingState_C;
 
 }
 

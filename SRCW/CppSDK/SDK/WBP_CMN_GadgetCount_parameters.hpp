@@ -39,22 +39,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_3;              // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_GadgetCount_C_ExecuteUbergraph_WBP_CMN_GadgetCount) == 0x000008, "Wrong alignment on WBP_CMN_GadgetCount_C_ExecuteUbergraph_WBP_CMN_GadgetCount");
-static_assert(sizeof(WBP_CMN_GadgetCount_C_ExecuteUbergraph_WBP_CMN_GadgetCount) == 0x000068, "Wrong size on WBP_CMN_GadgetCount_C_ExecuteUbergraph_WBP_CMN_GadgetCount");
-static_assert(offsetof(WBP_CMN_GadgetCount_C_ExecuteUbergraph_WBP_CMN_GadgetCount, EntryPoint) == 0x000000, "Member 'WBP_CMN_GadgetCount_C_ExecuteUbergraph_WBP_CMN_GadgetCount::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_GadgetCount_C_ExecuteUbergraph_WBP_CMN_GadgetCount, CallFunc_GetDonpaTicketMax_ReturnValue) == 0x000004, "Member 'WBP_CMN_GadgetCount_C_ExecuteUbergraph_WBP_CMN_GadgetCount::CallFunc_GetDonpaTicketMax_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_GadgetCount_C_ExecuteUbergraph_WBP_CMN_GadgetCount, K2Node_Event_InRewardType) == 0x000008, "Member 'WBP_CMN_GadgetCount_C_ExecuteUbergraph_WBP_CMN_GadgetCount::K2Node_Event_InRewardType' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_GadgetCount_C_ExecuteUbergraph_WBP_CMN_GadgetCount, K2Node_Event_InIconTexture) == 0x000010, "Member 'WBP_CMN_GadgetCount_C_ExecuteUbergraph_WBP_CMN_GadgetCount::K2Node_Event_InIconTexture' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_GadgetCount_C_ExecuteUbergraph_WBP_CMN_GadgetCount, CallFunc_SetActiveWidgetIndexByRewardType_ReturnValue) == 0x000018, "Member 'WBP_CMN_GadgetCount_C_ExecuteUbergraph_WBP_CMN_GadgetCount::CallFunc_SetActiveWidgetIndexByRewardType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_GadgetCount_C_ExecuteUbergraph_WBP_CMN_GadgetCount, K2Node_CreateDelegate_OutputDelegate) == 0x00001C, "Member 'WBP_CMN_GadgetCount_C_ExecuteUbergraph_WBP_CMN_GadgetCount::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_GadgetCount_C_ExecuteUbergraph_WBP_CMN_GadgetCount, K2Node_Event_InNumber) == 0x00002C, "Member 'WBP_CMN_GadgetCount_C_ExecuteUbergraph_WBP_CMN_GadgetCount::K2Node_Event_InNumber' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_GadgetCount_C_ExecuteUbergraph_WBP_CMN_GadgetCount, CallFunc_SetActiveWidgetIndexByRewardType_ReturnValue_1) == 0x000030, "Member 'WBP_CMN_GadgetCount_C_ExecuteUbergraph_WBP_CMN_GadgetCount::CallFunc_SetActiveWidgetIndexByRewardType_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_GadgetCount_C_ExecuteUbergraph_WBP_CMN_GadgetCount, CallFunc_Clamp_ReturnValue) == 0x000034, "Member 'WBP_CMN_GadgetCount_C_ExecuteUbergraph_WBP_CMN_GadgetCount::CallFunc_Clamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_GadgetCount_C_ExecuteUbergraph_WBP_CMN_GadgetCount, CallFunc_Conv_IntToText_ReturnValue) == 0x000038, "Member 'WBP_CMN_GadgetCount_C_ExecuteUbergraph_WBP_CMN_GadgetCount::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_GadgetCount_C_ExecuteUbergraph_WBP_CMN_GadgetCount, CallFunc_PlayAnimation_ReturnValue) == 0x000048, "Member 'WBP_CMN_GadgetCount_C_ExecuteUbergraph_WBP_CMN_GadgetCount::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_GadgetCount_C_ExecuteUbergraph_WBP_CMN_GadgetCount, CallFunc_PlayAnimation_ReturnValue_1) == 0x000050, "Member 'WBP_CMN_GadgetCount_C_ExecuteUbergraph_WBP_CMN_GadgetCount::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_GadgetCount_C_ExecuteUbergraph_WBP_CMN_GadgetCount, CallFunc_PlayAnimation_ReturnValue_2) == 0x000058, "Member 'WBP_CMN_GadgetCount_C_ExecuteUbergraph_WBP_CMN_GadgetCount::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_GadgetCount_C_ExecuteUbergraph_WBP_CMN_GadgetCount, CallFunc_PlayAnimation_ReturnValue_3) == 0x000060, "Member 'WBP_CMN_GadgetCount_C_ExecuteUbergraph_WBP_CMN_GadgetCount::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_GadgetCount_C_ExecuteUbergraph_WBP_CMN_GadgetCount;
 
 // Function WBP_CMN_GadgetCount.WBP_CMN_GadgetCount_C.GetAnimationCount
 // 0x0008 (0x0008 - 0x0000)
@@ -63,9 +48,7 @@ struct WBP_CMN_GadgetCount_C_GetAnimationCount final
 public:
 	class UWidgetAnimation*                       ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_GadgetCount_C_GetAnimationCount) == 0x000008, "Wrong alignment on WBP_CMN_GadgetCount_C_GetAnimationCount");
-static_assert(sizeof(WBP_CMN_GadgetCount_C_GetAnimationCount) == 0x000008, "Wrong size on WBP_CMN_GadgetCount_C_GetAnimationCount");
-static_assert(offsetof(WBP_CMN_GadgetCount_C_GetAnimationCount, ReturnValue) == 0x000000, "Member 'WBP_CMN_GadgetCount_C_GetAnimationCount::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_GadgetCount_C_GetAnimationCount;
 
 // Function WBP_CMN_GadgetCount.WBP_CMN_GadgetCount_C.GetAnimationIn
 // 0x0008 (0x0008 - 0x0000)
@@ -74,9 +57,7 @@ struct WBP_CMN_GadgetCount_C_GetAnimationIn final
 public:
 	class UWidgetAnimation*                       ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_GadgetCount_C_GetAnimationIn) == 0x000008, "Wrong alignment on WBP_CMN_GadgetCount_C_GetAnimationIn");
-static_assert(sizeof(WBP_CMN_GadgetCount_C_GetAnimationIn) == 0x000008, "Wrong size on WBP_CMN_GadgetCount_C_GetAnimationIn");
-static_assert(offsetof(WBP_CMN_GadgetCount_C_GetAnimationIn, ReturnValue) == 0x000000, "Member 'WBP_CMN_GadgetCount_C_GetAnimationIn::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_GadgetCount_C_GetAnimationIn;
 
 // Function WBP_CMN_GadgetCount.WBP_CMN_GadgetCount_C.GetAnimationLoop
 // 0x0008 (0x0008 - 0x0000)
@@ -85,9 +66,7 @@ struct WBP_CMN_GadgetCount_C_GetAnimationLoop final
 public:
 	class UWidgetAnimation*                       ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_GadgetCount_C_GetAnimationLoop) == 0x000008, "Wrong alignment on WBP_CMN_GadgetCount_C_GetAnimationLoop");
-static_assert(sizeof(WBP_CMN_GadgetCount_C_GetAnimationLoop) == 0x000008, "Wrong size on WBP_CMN_GadgetCount_C_GetAnimationLoop");
-static_assert(offsetof(WBP_CMN_GadgetCount_C_GetAnimationLoop, ReturnValue) == 0x000000, "Member 'WBP_CMN_GadgetCount_C_GetAnimationLoop::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_GadgetCount_C_GetAnimationLoop;
 
 // Function WBP_CMN_GadgetCount.WBP_CMN_GadgetCount_C.GetAnimationOut
 // 0x0008 (0x0008 - 0x0000)
@@ -96,9 +75,7 @@ struct WBP_CMN_GadgetCount_C_GetAnimationOut final
 public:
 	class UWidgetAnimation*                       ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_GadgetCount_C_GetAnimationOut) == 0x000008, "Wrong alignment on WBP_CMN_GadgetCount_C_GetAnimationOut");
-static_assert(sizeof(WBP_CMN_GadgetCount_C_GetAnimationOut) == 0x000008, "Wrong size on WBP_CMN_GadgetCount_C_GetAnimationOut");
-static_assert(offsetof(WBP_CMN_GadgetCount_C_GetAnimationOut, ReturnValue) == 0x000000, "Member 'WBP_CMN_GadgetCount_C_GetAnimationOut::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_GadgetCount_C_GetAnimationOut;
 
 // Function WBP_CMN_GadgetCount.WBP_CMN_GadgetCount_C.SetIconTexture
 // 0x0008 (0x0008 - 0x0000)
@@ -107,9 +84,7 @@ struct WBP_CMN_GadgetCount_C_SetIconTexture final
 public:
 	const class UTexture2D*                       InIconTexture;                                     // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_GadgetCount_C_SetIconTexture) == 0x000008, "Wrong alignment on WBP_CMN_GadgetCount_C_SetIconTexture");
-static_assert(sizeof(WBP_CMN_GadgetCount_C_SetIconTexture) == 0x000008, "Wrong size on WBP_CMN_GadgetCount_C_SetIconTexture");
-static_assert(offsetof(WBP_CMN_GadgetCount_C_SetIconTexture, InIconTexture) == 0x000000, "Member 'WBP_CMN_GadgetCount_C_SetIconTexture::InIconTexture' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_GadgetCount_C_SetIconTexture;
 
 // Function WBP_CMN_GadgetCount.WBP_CMN_GadgetCount_C.SetIconType
 // 0x0001 (0x0001 - 0x0000)
@@ -118,9 +93,7 @@ struct WBP_CMN_GadgetCount_C_SetIconType final
 public:
 	ERewardType                                   InRewardType;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_GadgetCount_C_SetIconType) == 0x000001, "Wrong alignment on WBP_CMN_GadgetCount_C_SetIconType");
-static_assert(sizeof(WBP_CMN_GadgetCount_C_SetIconType) == 0x000001, "Wrong size on WBP_CMN_GadgetCount_C_SetIconType");
-static_assert(offsetof(WBP_CMN_GadgetCount_C_SetIconType, InRewardType) == 0x000000, "Member 'WBP_CMN_GadgetCount_C_SetIconType::InRewardType' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_GadgetCount_C_SetIconType;
 
 // Function WBP_CMN_GadgetCount.WBP_CMN_GadgetCount_C.UpdateNumberDisplay
 // 0x0004 (0x0004 - 0x0000)
@@ -129,9 +102,7 @@ struct WBP_CMN_GadgetCount_C_UpdateNumberDisplay final
 public:
 	int32                                         InNumber;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_GadgetCount_C_UpdateNumberDisplay) == 0x000004, "Wrong alignment on WBP_CMN_GadgetCount_C_UpdateNumberDisplay");
-static_assert(sizeof(WBP_CMN_GadgetCount_C_UpdateNumberDisplay) == 0x000004, "Wrong size on WBP_CMN_GadgetCount_C_UpdateNumberDisplay");
-static_assert(offsetof(WBP_CMN_GadgetCount_C_UpdateNumberDisplay, InNumber) == 0x000000, "Member 'WBP_CMN_GadgetCount_C_UpdateNumberDisplay::InNumber' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_GadgetCount_C_UpdateNumberDisplay;
 
 }
 

@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -54,18 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_GarageMenuTopState_C">();
+		BP_STATIC_CLASS_IMPL("BPC_GarageMenuTopState_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_GarageMenuTopState_C")
 	}
 	static class UBPC_GarageMenuTopState_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_GarageMenuTopState_C>();
 	}
 };
-static_assert(alignof(UBPC_GarageMenuTopState_C) == 0x000008, "Wrong alignment on UBPC_GarageMenuTopState_C");
-static_assert(sizeof(UBPC_GarageMenuTopState_C) == 0x000140, "Wrong size on UBPC_GarageMenuTopState_C");
-static_assert(offsetof(UBPC_GarageMenuTopState_C, UberGraphFrame) == 0x000128, "Member 'UBPC_GarageMenuTopState_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_GarageMenuTopState_C, Sequence) == 0x000130, "Member 'UBPC_GarageMenuTopState_C::Sequence' has a wrong offset!");
-static_assert(offsetof(UBPC_GarageMenuTopState_C, TopWidget) == 0x000138, "Member 'UBPC_GarageMenuTopState_C::TopWidget' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_GarageMenuTopState_C;
 
 }
 

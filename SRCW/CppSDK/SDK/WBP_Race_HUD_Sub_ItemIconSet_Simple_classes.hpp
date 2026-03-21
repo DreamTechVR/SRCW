@@ -10,18 +10,18 @@
 
 #include "Basic.hpp"
 
+#include "UnionRun_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
-#include "SlateCore_structs.hpp"
-#include "UnionRun_classes.hpp"
 #include "UMG_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Race_HUD_Sub_ItemIconSet_Simple.WBP_Race_HUD_Sub_ItemIconSet_Simple_C
-// 0x0090 (0x03F0 - 0x0360)
+// 0x00A8 (0x0408 - 0x0360)
 class UWBP_Race_HUD_Sub_ItemIconSet_Simple_C final : public UURaceUISubItemIconSet
 {
 public:
@@ -31,22 +31,25 @@ public:
 	class UWidgetAnimation*                       Trade_In;                                          // 0x0378(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UBorder*                                Border_Alignment;                                  // 0x0380(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USizeBox*                               DSP_ItemnIcon_03_Alignment_Simple;                 // 0x0388(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               ItemnIcon_02_Alignment_Simple;                     // 0x0390(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               Overlay_Trade;                                     // 0x0398(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 TradeBase;                                         // 0x03A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CMN_ControllerBtn_C*               WBP_CMN_ControllerBtn;                             // 0x03A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_HUD_Sub_ItemIcon_C*           WBP_Race_HUD_Sub_ItemIcon_01;                      // 0x03B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_HUD_Sub_ItemIcon_Simple_C*    WBP_Race_HUD_Sub_ItemIcon_Simple_02;               // 0x03B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_HUD_Sub_ItemIcon_Simple_C*    WBP_Race_HUD_Sub_ItemIcon_Simple_03;               // 0x03C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_HUD_Sub_ItemSummonButton_C*   WBP_Race_HUD_Sub_ItemSummonButton_01;              // 0x03C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_HUD_Sub_ItemSummonButton_C*   WBP_Race_HUD_Sub_ItemSummonButton_02;              // 0x03D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_HUD_Sub_ItemSummonButton_C*   WBP_Race_HUD_Sub_ItemSummonButton_03;              // 0x03D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	int32                                         RacerIndex;                                        // 0x03E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         PlayerIndex;                                       // 0x03E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bThirdItemSlotAvailable;                           // 0x03E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsPanSplit;                                        // 0x03E9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESoundPan                                     SoundPan;                                          // 0x03EA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bItemStockTrading;                                 // 0x03EB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USizeBox*                               DSP_ItemSummonButton_03_Alignment_Simple_1;        // 0x0390(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               DSP_ItemSummonButton_03_Alignment_Simple_2;        // 0x0398(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               DSP_ItemSummonButton_03_Alignment_Simple_3;        // 0x03A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               ItemnIcon_02_Alignment_Simple;                     // 0x03A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               Overlay_Trade;                                     // 0x03B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 TradeBase;                                         // 0x03B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CMN_ControllerBtn_C*               WBP_CMN_ControllerBtn;                             // 0x03C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_HUD_Sub_ItemIcon_C*           WBP_Race_HUD_Sub_ItemIcon_01;                      // 0x03C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_HUD_Sub_ItemIcon_Simple_C*    WBP_Race_HUD_Sub_ItemIcon_Simple_02;               // 0x03D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_HUD_Sub_ItemIcon_Simple_C*    WBP_Race_HUD_Sub_ItemIcon_Simple_03;               // 0x03D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_HUD_Sub_ItemSummonButton_C*   WBP_Race_HUD_Sub_ItemSummonButton_01;              // 0x03E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_HUD_Sub_ItemSummonButton_C*   WBP_Race_HUD_Sub_ItemSummonButton_02;              // 0x03E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_HUD_Sub_ItemSummonButton_C*   WBP_Race_HUD_Sub_ItemSummonButton_03;              // 0x03F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	int32                                         RacerIndex;                                        // 0x03F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         PlayerIndex;                                       // 0x03FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bThirdItemSlotAvailable;                           // 0x0400(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsPanSplit;                                        // 0x0401(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESoundPan                                     SoundPan;                                          // 0x0402(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bItemStockTrading;                                 // 0x0403(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void Construct();
@@ -85,37 +88,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_HUD_Sub_ItemIconSet_Simple_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_HUD_Sub_ItemIconSet_Simple_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_HUD_Sub_ItemIconSet_Simple_C")
 	}
 	static class UWBP_Race_HUD_Sub_ItemIconSet_Simple_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_HUD_Sub_ItemIconSet_Simple_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_HUD_Sub_ItemIconSet_Simple_C) == 0x000008, "Wrong alignment on UWBP_Race_HUD_Sub_ItemIconSet_Simple_C");
-static_assert(sizeof(UWBP_Race_HUD_Sub_ItemIconSet_Simple_C) == 0x0003F0, "Wrong size on UWBP_Race_HUD_Sub_ItemIconSet_Simple_C");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIconSet_Simple_C, UberGraphFrame) == 0x000360, "Member 'UWBP_Race_HUD_Sub_ItemIconSet_Simple_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIconSet_Simple_C, Trade_NG_Loop) == 0x000368, "Member 'UWBP_Race_HUD_Sub_ItemIconSet_Simple_C::Trade_NG_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIconSet_Simple_C, Trade_Out) == 0x000370, "Member 'UWBP_Race_HUD_Sub_ItemIconSet_Simple_C::Trade_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIconSet_Simple_C, Trade_In) == 0x000378, "Member 'UWBP_Race_HUD_Sub_ItemIconSet_Simple_C::Trade_In' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIconSet_Simple_C, Border_Alignment) == 0x000380, "Member 'UWBP_Race_HUD_Sub_ItemIconSet_Simple_C::Border_Alignment' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIconSet_Simple_C, DSP_ItemnIcon_03_Alignment_Simple) == 0x000388, "Member 'UWBP_Race_HUD_Sub_ItemIconSet_Simple_C::DSP_ItemnIcon_03_Alignment_Simple' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIconSet_Simple_C, ItemnIcon_02_Alignment_Simple) == 0x000390, "Member 'UWBP_Race_HUD_Sub_ItemIconSet_Simple_C::ItemnIcon_02_Alignment_Simple' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIconSet_Simple_C, Overlay_Trade) == 0x000398, "Member 'UWBP_Race_HUD_Sub_ItemIconSet_Simple_C::Overlay_Trade' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIconSet_Simple_C, TradeBase) == 0x0003A0, "Member 'UWBP_Race_HUD_Sub_ItemIconSet_Simple_C::TradeBase' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIconSet_Simple_C, WBP_CMN_ControllerBtn) == 0x0003A8, "Member 'UWBP_Race_HUD_Sub_ItemIconSet_Simple_C::WBP_CMN_ControllerBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIconSet_Simple_C, WBP_Race_HUD_Sub_ItemIcon_01) == 0x0003B0, "Member 'UWBP_Race_HUD_Sub_ItemIconSet_Simple_C::WBP_Race_HUD_Sub_ItemIcon_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIconSet_Simple_C, WBP_Race_HUD_Sub_ItemIcon_Simple_02) == 0x0003B8, "Member 'UWBP_Race_HUD_Sub_ItemIconSet_Simple_C::WBP_Race_HUD_Sub_ItemIcon_Simple_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIconSet_Simple_C, WBP_Race_HUD_Sub_ItemIcon_Simple_03) == 0x0003C0, "Member 'UWBP_Race_HUD_Sub_ItemIconSet_Simple_C::WBP_Race_HUD_Sub_ItemIcon_Simple_03' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIconSet_Simple_C, WBP_Race_HUD_Sub_ItemSummonButton_01) == 0x0003C8, "Member 'UWBP_Race_HUD_Sub_ItemIconSet_Simple_C::WBP_Race_HUD_Sub_ItemSummonButton_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIconSet_Simple_C, WBP_Race_HUD_Sub_ItemSummonButton_02) == 0x0003D0, "Member 'UWBP_Race_HUD_Sub_ItemIconSet_Simple_C::WBP_Race_HUD_Sub_ItemSummonButton_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIconSet_Simple_C, WBP_Race_HUD_Sub_ItemSummonButton_03) == 0x0003D8, "Member 'UWBP_Race_HUD_Sub_ItemIconSet_Simple_C::WBP_Race_HUD_Sub_ItemSummonButton_03' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIconSet_Simple_C, RacerIndex) == 0x0003E0, "Member 'UWBP_Race_HUD_Sub_ItemIconSet_Simple_C::RacerIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIconSet_Simple_C, PlayerIndex) == 0x0003E4, "Member 'UWBP_Race_HUD_Sub_ItemIconSet_Simple_C::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIconSet_Simple_C, bThirdItemSlotAvailable) == 0x0003E8, "Member 'UWBP_Race_HUD_Sub_ItemIconSet_Simple_C::bThirdItemSlotAvailable' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIconSet_Simple_C, IsPanSplit) == 0x0003E9, "Member 'UWBP_Race_HUD_Sub_ItemIconSet_Simple_C::IsPanSplit' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIconSet_Simple_C, SoundPan) == 0x0003EA, "Member 'UWBP_Race_HUD_Sub_ItemIconSet_Simple_C::SoundPan' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemIconSet_Simple_C, bItemStockTrading) == 0x0003EB, "Member 'UWBP_Race_HUD_Sub_ItemIconSet_Simple_C::bItemStockTrading' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_HUD_Sub_ItemIconSet_Simple_C;
 
 }
 

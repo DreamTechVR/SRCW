@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "UMG_structs.hpp"
 #include "UnionUI_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "UMG_structs.hpp"
 
 
 namespace SDK::Params
@@ -65,41 +65,7 @@ public:
 	uint8                                         Pad_F5[0x3];                                       // 0x00F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x00F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop");
-static_assert(sizeof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop) == 0x000100, "Wrong size on WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop, EntryPoint) == 0x000000, "Member 'WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop, CallFunc_GetAppPlayerController_ReturnValue) == 0x000008, "Member 'WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop::CallFunc_GetAppPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop, Temp_int_Array_Index_Variable) == 0x000010, "Member 'WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop, Temp_int_Array_Index_Variable_1) == 0x000014, "Member 'WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop, Temp_int_Loop_Counter_Variable) == 0x000018, "Member 'WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop, CallFunc_Add_IntInt_ReturnValue) == 0x00001C, "Member 'WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop, Temp_int_Array_Index_Variable_2) == 0x000020, "Member 'WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop, K2Node_MakeArray_Array) == 0x000028, "Member 'WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop, K2Node_CreateDelegate_OutputDelegate) == 0x000038, "Member 'WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop, K2Node_MakeArray_Array_1) == 0x000048, "Member 'WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop, K2Node_CreateDelegate_OutputDelegate_1) == 0x000058, "Member 'WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop, K2Node_CreateDelegate_OutputDelegate_2) == 0x000068, "Member 'WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop, K2Node_CreateDelegate_OutputDelegate_3) == 0x000078, "Member 'WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop, CallFunc_CreateButtonsPanel_ReturnValue) == 0x000088, "Member 'WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop::CallFunc_CreateButtonsPanel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop, Temp_int_Loop_Counter_Variable_1) == 0x000090, "Member 'WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop, CallFunc_Add_IntInt_ReturnValue_1) == 0x000094, "Member 'WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop, CallFunc_MakeLiteralBool_ReturnValue) == 0x000098, "Member 'WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop::CallFunc_MakeLiteralBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop, CallFunc_MakeLiteralInt_ReturnValue) == 0x00009C, "Member 'WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop, Temp_int_Loop_Counter_Variable_2) == 0x0000A0, "Member 'WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop, CallFunc_Array_Get_Item) == 0x0000A8, "Member 'WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop, CallFunc_Array_Add_ReturnValue) == 0x0000B0, "Member 'WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop, CallFunc_Add_IntInt_ReturnValue_2) == 0x0000B4, "Member 'WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop, CallFunc_Array_Length_ReturnValue) == 0x0000B8, "Member 'WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop, CallFunc_Less_IntInt_ReturnValue) == 0x0000BC, "Member 'WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop, CallFunc_Array_Get_Item_1) == 0x0000C0, "Member 'WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop, CallFunc_Array_Length_ReturnValue_1) == 0x0000C8, "Member 'WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop, CallFunc_Array_Add_ReturnValue_1) == 0x0000CC, "Member 'WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000D0, "Member 'WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop, K2Node_CreateDelegate_OutputDelegate_4) == 0x0000D4, "Member 'WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop, CallFunc_Array_Get_Item_2) == 0x0000E8, "Member 'WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop, CallFunc_Array_Length_ReturnValue_2) == 0x0000F0, "Member 'WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop, CallFunc_Less_IntInt_ReturnValue_2) == 0x0000F4, "Member 'WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop, CallFunc_GetDynamicMaterial_ReturnValue) == 0x0000F8, "Member 'WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_StickerTop_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTop;
 
 // Function WBP_MachineCustom_Sub_StickerTop.WBP_MachineCustom_Sub_StickerTop_C.OnCancelEvent
 // 0x0008 (0x0008 - 0x0000)
@@ -108,9 +74,7 @@ struct WBP_MachineCustom_Sub_StickerTop_C_OnCancelEvent final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_StickerTop_C_OnCancelEvent) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_StickerTop_C_OnCancelEvent");
-static_assert(sizeof(WBP_MachineCustom_Sub_StickerTop_C_OnCancelEvent) == 0x000008, "Wrong size on WBP_MachineCustom_Sub_StickerTop_C_OnCancelEvent");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_OnCancelEvent, Button) == 0x000000, "Member 'WBP_MachineCustom_Sub_StickerTop_C_OnCancelEvent::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_StickerTop_C_OnCancelEvent;
 
 // Function WBP_MachineCustom_Sub_StickerTop.WBP_MachineCustom_Sub_StickerTop_C.OnDecisionEvent
 // 0x0008 (0x0008 - 0x0000)
@@ -119,9 +83,7 @@ struct WBP_MachineCustom_Sub_StickerTop_C_OnDecisionEvent final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_StickerTop_C_OnDecisionEvent) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_StickerTop_C_OnDecisionEvent");
-static_assert(sizeof(WBP_MachineCustom_Sub_StickerTop_C_OnDecisionEvent) == 0x000008, "Wrong size on WBP_MachineCustom_Sub_StickerTop_C_OnDecisionEvent");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_OnDecisionEvent, Button) == 0x000000, "Member 'WBP_MachineCustom_Sub_StickerTop_C_OnDecisionEvent::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_StickerTop_C_OnDecisionEvent;
 
 // Function WBP_MachineCustom_Sub_StickerTop.WBP_MachineCustom_Sub_StickerTop_C.OnDirectionEvent
 // 0x0010 (0x0010 - 0x0000)
@@ -132,11 +94,7 @@ public:
 	EUnionUIControlDir                            Dir;                                               // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_StickerTop_C_OnDirectionEvent) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_StickerTop_C_OnDirectionEvent");
-static_assert(sizeof(WBP_MachineCustom_Sub_StickerTop_C_OnDirectionEvent) == 0x000010, "Wrong size on WBP_MachineCustom_Sub_StickerTop_C_OnDirectionEvent");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_OnDirectionEvent, Button) == 0x000000, "Member 'WBP_MachineCustom_Sub_StickerTop_C_OnDirectionEvent::Button' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_OnDirectionEvent, Dir) == 0x000008, "Member 'WBP_MachineCustom_Sub_StickerTop_C_OnDirectionEvent::Dir' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_OnDirectionEvent, K2Node_SwitchEnum_CmpSuccess) == 0x000009, "Member 'WBP_MachineCustom_Sub_StickerTop_C_OnDirectionEvent::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_StickerTop_C_OnDirectionEvent;
 
 // Function WBP_MachineCustom_Sub_StickerTop.WBP_MachineCustom_Sub_StickerTop_C.OnFaceButtonTopEvent
 // 0x0008 (0x0008 - 0x0000)
@@ -145,9 +103,7 @@ struct WBP_MachineCustom_Sub_StickerTop_C_OnFaceButtonTopEvent final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_StickerTop_C_OnFaceButtonTopEvent) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_StickerTop_C_OnFaceButtonTopEvent");
-static_assert(sizeof(WBP_MachineCustom_Sub_StickerTop_C_OnFaceButtonTopEvent) == 0x000008, "Wrong size on WBP_MachineCustom_Sub_StickerTop_C_OnFaceButtonTopEvent");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_OnFaceButtonTopEvent, Button) == 0x000000, "Member 'WBP_MachineCustom_Sub_StickerTop_C_OnFaceButtonTopEvent::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_StickerTop_C_OnFaceButtonTopEvent;
 
 // Function WBP_MachineCustom_Sub_StickerTop.WBP_MachineCustom_Sub_StickerTop_C.OnFocusedEvent
 // 0x0050 (0x0050 - 0x0000)
@@ -172,23 +128,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent");
-static_assert(sizeof(WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent) == 0x000050, "Wrong size on WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent, Button) == 0x000000, "Member 'WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent::Button' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent, K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Sticker_Top_Icon) == 0x000008, "Member 'WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent::K2Node_DynamicCast_AsWBP_Machine_Custom_Sub_Sticker_Top_Icon' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent, Temp_int_Loop_Counter_Variable) == 0x000014, "Member 'WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent, Temp_int_Array_Index_Variable) == 0x00001C, "Member 'WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent, Temp_int_Array_Index_Variable_1) == 0x000020, "Member 'WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent, Temp_int_Loop_Counter_Variable_1) == 0x000024, "Member 'WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent, CallFunc_Array_Get_Item) == 0x000028, "Member 'WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent, CallFunc_Add_IntInt_ReturnValue_1) == 0x000030, "Member 'WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent, CallFunc_Array_Length_ReturnValue) == 0x000034, "Member 'WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent, CallFunc_Less_IntInt_ReturnValue) == 0x000038, "Member 'WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent, CallFunc_Array_Get_Item_1) == 0x000040, "Member 'WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent, CallFunc_Array_Length_ReturnValue_1) == 0x000048, "Member 'WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent, CallFunc_Less_IntInt_ReturnValue_1) == 0x00004C, "Member 'WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_StickerTop_C_OnFocusedEvent;
 
 // Function WBP_MachineCustom_Sub_StickerTop.WBP_MachineCustom_Sub_StickerTop_C.OnFocusReceived
 // 0x01B0 (0x01B0 - 0x0000)
@@ -200,12 +140,7 @@ public:
 	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
 	struct FEventReply                            CallFunc_OnFocusReceivedImpl_ReturnValue;          // 0x00F8(0x00B8)()
 };
-static_assert(alignof(WBP_MachineCustom_Sub_StickerTop_C_OnFocusReceived) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_StickerTop_C_OnFocusReceived");
-static_assert(sizeof(WBP_MachineCustom_Sub_StickerTop_C_OnFocusReceived) == 0x0001B0, "Wrong size on WBP_MachineCustom_Sub_StickerTop_C_OnFocusReceived");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'WBP_MachineCustom_Sub_StickerTop_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'WBP_MachineCustom_Sub_StickerTop_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'WBP_MachineCustom_Sub_StickerTop_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_OnFocusReceived, CallFunc_OnFocusReceivedImpl_ReturnValue) == 0x0000F8, "Member 'WBP_MachineCustom_Sub_StickerTop_C_OnFocusReceived::CallFunc_OnFocusReceivedImpl_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_StickerTop_C_OnFocusReceived;
 
 // Function WBP_MachineCustom_Sub_StickerTop.WBP_MachineCustom_Sub_StickerTop_C.SetButtonsPanel
 // 0x0028 (0x0028 - 0x0000)
@@ -220,15 +155,7 @@ public:
 	class UMachineStickerSlotIcon*                CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_StickerTop_C_SetButtonsPanel) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_StickerTop_C_SetButtonsPanel");
-static_assert(sizeof(WBP_MachineCustom_Sub_StickerTop_C_SetButtonsPanel) == 0x000028, "Wrong size on WBP_MachineCustom_Sub_StickerTop_C_SetButtonsPanel");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_SetButtonsPanel, InButtonsPanel) == 0x000000, "Member 'WBP_MachineCustom_Sub_StickerTop_C_SetButtonsPanel::InButtonsPanel' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_SetButtonsPanel, Temp_int_Array_Index_Variable) == 0x000008, "Member 'WBP_MachineCustom_Sub_StickerTop_C_SetButtonsPanel::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_SetButtonsPanel, Temp_int_Loop_Counter_Variable) == 0x00000C, "Member 'WBP_MachineCustom_Sub_StickerTop_C_SetButtonsPanel::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_SetButtonsPanel, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'WBP_MachineCustom_Sub_StickerTop_C_SetButtonsPanel::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_SetButtonsPanel, CallFunc_Array_Length_ReturnValue) == 0x000014, "Member 'WBP_MachineCustom_Sub_StickerTop_C_SetButtonsPanel::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_SetButtonsPanel, CallFunc_Array_Get_Item) == 0x000018, "Member 'WBP_MachineCustom_Sub_StickerTop_C_SetButtonsPanel::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_SetButtonsPanel, CallFunc_Less_IntInt_ReturnValue) == 0x000020, "Member 'WBP_MachineCustom_Sub_StickerTop_C_SetButtonsPanel::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_StickerTop_C_SetButtonsPanel;
 
 // Function WBP_MachineCustom_Sub_StickerTop.WBP_MachineCustom_Sub_StickerTop_C.SetStickerImages
 // 0x0080 (0x0080 - 0x0000)
@@ -261,29 +188,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages");
-static_assert(sizeof(WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages) == 0x000080, "Wrong size on WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages, Stickers) == 0x000000, "Member 'WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages::Stickers' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages, Temp_int_Loop_Counter_Variable) == 0x000010, "Member 'WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages, CallFunc_Add_IntInt_ReturnValue) == 0x000014, "Member 'WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages, Temp_int_Array_Index_Variable) == 0x000018, "Member 'WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages, Temp_int_Loop_Counter_Variable_1) == 0x00001C, "Member 'WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages, CallFunc_Add_IntInt_ReturnValue_1) == 0x000020, "Member 'WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages, Temp_int_Array_Index_Variable_1) == 0x000024, "Member 'WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages, CallFunc_Array_Get_Item) == 0x000028, "Member 'WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages, CallFunc_Array_Get_Item_1) == 0x000030, "Member 'WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages, CallFunc_IsValid_ReturnValue) == 0x000038, "Member 'WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages, CallFunc_IsValid_ReturnValue_1) == 0x000039, "Member 'WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages, K2Node_DynamicCast_As_____2D) == 0x000040, "Member 'WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages, K2Node_DynamicCast_As_____2D_1) == 0x000050, "Member 'WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages::K2Node_DynamicCast_As_____2D_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages, K2Node_DynamicCast_bSuccess_1) == 0x000058, "Member 'WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages, CallFunc_Array_Get_Item_2) == 0x000060, "Member 'WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages, CallFunc_Array_Length_ReturnValue) == 0x000068, "Member 'WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages, CallFunc_Less_IntInt_ReturnValue) == 0x00006C, "Member 'WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages, CallFunc_Array_Get_Item_3) == 0x000070, "Member 'WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages, CallFunc_Array_Length_ReturnValue_1) == 0x000078, "Member 'WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages, CallFunc_Less_IntInt_ReturnValue_1) == 0x00007C, "Member 'WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_StickerTop_C_SetStickerImages;
 
 }
 

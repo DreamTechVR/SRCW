@@ -22,10 +22,7 @@ public:
 	class FText                                   Text;                                              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_BasicOperationHeader_C_Init_with_Text) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_BasicOperationHeader_C_Init_with_Text");
-static_assert(sizeof(WBP_Race_HUD_Sub_BasicOperationHeader_C_Init_with_Text) == 0x000018, "Wrong size on WBP_Race_HUD_Sub_BasicOperationHeader_C_Init_with_Text");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperationHeader_C_Init_with_Text, Text) == 0x000000, "Member 'WBP_Race_HUD_Sub_BasicOperationHeader_C_Init_with_Text::Text' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_BasicOperationHeader_C_Init_with_Text, CallFunc_PlayAnimation_ReturnValue) == 0x000010, "Member 'WBP_Race_HUD_Sub_BasicOperationHeader_C_Init_with_Text::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_BasicOperationHeader_C_Init_with_Text;
 
 }
 

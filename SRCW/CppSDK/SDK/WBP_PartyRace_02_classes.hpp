@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -80,38 +80,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_PartyRace_02_C">();
+		BP_STATIC_CLASS_IMPL("WBP_PartyRace_02_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_PartyRace_02_C")
 	}
 	static class UWBP_PartyRace_02_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_PartyRace_02_C>();
 	}
 };
-static_assert(alignof(UWBP_PartyRace_02_C) == 0x000008, "Wrong alignment on UWBP_PartyRace_02_C");
-static_assert(sizeof(UWBP_PartyRace_02_C) == 0x0005F0, "Wrong size on UWBP_PartyRace_02_C");
-static_assert(offsetof(UWBP_PartyRace_02_C, UberGraphFrame) == 0x000528, "Member 'UWBP_PartyRace_02_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_02_C, base) == 0x000530, "Member 'UWBP_PartyRace_02_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_02_C, DSP_PlayAfter) == 0x000538, "Member 'UWBP_PartyRace_02_C::DSP_PlayAfter' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_02_C, Outline) == 0x000540, "Member 'UWBP_PartyRace_02_C::Outline' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_02_C, PlayAfter_Base) == 0x000548, "Member 'UWBP_PartyRace_02_C::PlayAfter_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_02_C, TXT_PlayAfter) == 0x000550, "Member 'UWBP_PartyRace_02_C::TXT_PlayAfter' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_02_C, WBP_CMN_ControllerBtn) == 0x000558, "Member 'UWBP_PartyRace_02_C::WBP_CMN_ControllerBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_02_C, WBP_CMN_Sub_SpeedClassInfo) == 0x000560, "Member 'UWBP_PartyRace_02_C::WBP_CMN_Sub_SpeedClassInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_02_C, WBP_PartyRace_RivalSwitch) == 0x000568, "Member 'UWBP_PartyRace_02_C::WBP_PartyRace_RivalSwitch' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_02_C, WBP_PartyRace_Sub_GadgetCustom) == 0x000570, "Member 'UWBP_PartyRace_02_C::WBP_PartyRace_Sub_GadgetCustom' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_02_C, WBP_PartyRace_Sub_PresetBtn_01) == 0x000578, "Member 'UWBP_PartyRace_02_C::WBP_PartyRace_Sub_PresetBtn_01' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_02_C, WBP_PartyRace_Sub_PresetBtn_02) == 0x000580, "Member 'UWBP_PartyRace_02_C::WBP_PartyRace_Sub_PresetBtn_02' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_02_C, WBP_PartyRace_Sub_PresetBtn_03) == 0x000588, "Member 'UWBP_PartyRace_02_C::WBP_PartyRace_Sub_PresetBtn_03' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_02_C, WBP_PartyRace_Sub_PresetBtn_04) == 0x000590, "Member 'UWBP_PartyRace_02_C::WBP_PartyRace_Sub_PresetBtn_04' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_02_C, WBP_PartyRace_Sub_PresetBtn_05) == 0x000598, "Member 'UWBP_PartyRace_02_C::WBP_PartyRace_Sub_PresetBtn_05' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_02_C, WBP_PartyRace_Sub_PresetBtn_06) == 0x0005A0, "Member 'UWBP_PartyRace_02_C::WBP_PartyRace_Sub_PresetBtn_06' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_02_C, WBP_PartyRace_Sub_PresetBtn_07) == 0x0005A8, "Member 'UWBP_PartyRace_02_C::WBP_PartyRace_Sub_PresetBtn_07' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_02_C, WBP_PartyRace_Sub_RivalReward_DELETE) == 0x0005B0, "Member 'UWBP_PartyRace_02_C::WBP_PartyRace_Sub_RivalReward_DELETE' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_02_C, WBP_PartyRace_Sub_RivalTeamNext) == 0x0005B8, "Member 'UWBP_PartyRace_02_C::WBP_PartyRace_Sub_RivalTeamNext' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_02_C, IsInOrOut) == 0x0005C0, "Member 'UWBP_PartyRace_02_C::IsInOrOut' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_02_C, EnterCustomPreset) == 0x0005C8, "Member 'UWBP_PartyRace_02_C::EnterCustomPreset' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_02_C, ExitCustomPreset) == 0x0005D8, "Member 'UWBP_PartyRace_02_C::ExitCustomPreset' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_02_C, LastFocusedPresetBtn) == 0x0005E8, "Member 'UWBP_PartyRace_02_C::LastFocusedPresetBtn' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_PartyRace_02_C;
 
 }
 

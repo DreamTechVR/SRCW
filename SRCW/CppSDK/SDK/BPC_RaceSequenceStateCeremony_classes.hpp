@@ -23,15 +23,18 @@ class UBPC_RaceSequenceStateCeremony_C final : public URaceSequenceStateCeremony
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_RaceSequenceStateCeremony_C">();
+		BP_STATIC_CLASS_IMPL("BPC_RaceSequenceStateCeremony_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_RaceSequenceStateCeremony_C")
 	}
 	static class UBPC_RaceSequenceStateCeremony_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_RaceSequenceStateCeremony_C>();
 	}
 };
-static_assert(alignof(UBPC_RaceSequenceStateCeremony_C) == 0x000008, "Wrong alignment on UBPC_RaceSequenceStateCeremony_C");
-static_assert(sizeof(UBPC_RaceSequenceStateCeremony_C) == 0x000118, "Wrong size on UBPC_RaceSequenceStateCeremony_C");
+DUMPER7_ASSERTS_UBPC_RaceSequenceStateCeremony_C;
 
 }
 

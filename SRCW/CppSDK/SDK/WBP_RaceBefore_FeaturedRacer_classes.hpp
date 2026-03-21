@@ -53,34 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_RaceBefore_FeaturedRacer_C">();
+		BP_STATIC_CLASS_IMPL("WBP_RaceBefore_FeaturedRacer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_RaceBefore_FeaturedRacer_C")
 	}
 	static class UWBP_RaceBefore_FeaturedRacer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_RaceBefore_FeaturedRacer_C>();
 	}
 };
-static_assert(alignof(UWBP_RaceBefore_FeaturedRacer_C) == 0x000008, "Wrong alignment on UWBP_RaceBefore_FeaturedRacer_C");
-static_assert(sizeof(UWBP_RaceBefore_FeaturedRacer_C) == 0x000378, "Wrong size on UWBP_RaceBefore_FeaturedRacer_C");
-static_assert(offsetof(UWBP_RaceBefore_FeaturedRacer_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_RaceBefore_FeaturedRacer_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FeaturedRacer_C, FeaturedRacer_InOut) == 0x0002E8, "Member 'UWBP_RaceBefore_FeaturedRacer_C::FeaturedRacer_InOut' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FeaturedRacer_C, BG_Black) == 0x0002F0, "Member 'UWBP_RaceBefore_FeaturedRacer_C::BG_Black' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FeaturedRacer_C, BlueBase) == 0x0002F8, "Member 'UWBP_RaceBefore_FeaturedRacer_C::BlueBase' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FeaturedRacer_C, BlueBase_CutIn) == 0x000300, "Member 'UWBP_RaceBefore_FeaturedRacer_C::BlueBase_CutIn' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FeaturedRacer_C, BlueBase_s) == 0x000308, "Member 'UWBP_RaceBefore_FeaturedRacer_C::BlueBase_s' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FeaturedRacer_C, NmaeLine) == 0x000310, "Member 'UWBP_RaceBefore_FeaturedRacer_C::NmaeLine' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FeaturedRacer_C, Panel) == 0x000318, "Member 'UWBP_RaceBefore_FeaturedRacer_C::Panel' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FeaturedRacer_C, Panel_00) == 0x000320, "Member 'UWBP_RaceBefore_FeaturedRacer_C::Panel_00' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FeaturedRacer_C, PAT_PlatformIcon) == 0x000328, "Member 'UWBP_RaceBefore_FeaturedRacer_C::PAT_PlatformIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FeaturedRacer_C, RaceFlag) == 0x000330, "Member 'UWBP_RaceBefore_FeaturedRacer_C::RaceFlag' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FeaturedRacer_C, RaceFlag_CutIn) == 0x000338, "Member 'UWBP_RaceBefore_FeaturedRacer_C::RaceFlag_CutIn' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FeaturedRacer_C, RaceFlag_s) == 0x000340, "Member 'UWBP_RaceBefore_FeaturedRacer_C::RaceFlag_s' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FeaturedRacer_C, SafeZone) == 0x000348, "Member 'UWBP_RaceBefore_FeaturedRacer_C::SafeZone' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FeaturedRacer_C, TitileBase) == 0x000350, "Member 'UWBP_RaceBefore_FeaturedRacer_C::TitileBase' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FeaturedRacer_C, TXT_FeaturedRacer) == 0x000358, "Member 'UWBP_RaceBefore_FeaturedRacer_C::TXT_FeaturedRacer' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FeaturedRacer_C, TXT_FeaturedRacer_2) == 0x000360, "Member 'UWBP_RaceBefore_FeaturedRacer_C::TXT_FeaturedRacer_2' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FeaturedRacer_C, TXT_MachineName) == 0x000368, "Member 'UWBP_RaceBefore_FeaturedRacer_C::TXT_MachineName' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_FeaturedRacer_C, TXT_PlayerName) == 0x000370, "Member 'UWBP_RaceBefore_FeaturedRacer_C::TXT_PlayerName' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_RaceBefore_FeaturedRacer_C;
 
 }
 

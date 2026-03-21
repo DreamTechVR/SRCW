@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -66,28 +66,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_HeaderMenu_C">();
+		BP_STATIC_CLASS_IMPL("WBP_HeaderMenu_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_HeaderMenu_C")
 	}
 	static class UWBP_HeaderMenu_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_HeaderMenu_C>();
 	}
 };
-static_assert(alignof(UWBP_HeaderMenu_C) == 0x000008, "Wrong alignment on UWBP_HeaderMenu_C");
-static_assert(sizeof(UWBP_HeaderMenu_C) == 0x0004D0, "Wrong size on UWBP_HeaderMenu_C");
-static_assert(offsetof(UWBP_HeaderMenu_C, UberGraphFrame) == 0x000458, "Member 'UWBP_HeaderMenu_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_C, DMY_Banner) == 0x000460, "Member 'UWBP_HeaderMenu_C::DMY_Banner' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_C, DSP_WBP_TopMenu_Sub_ShopInfo) == 0x000468, "Member 'UWBP_HeaderMenu_C::DSP_WBP_TopMenu_Sub_ShopInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_C, SafeZone_HeaderMenu) == 0x000470, "Member 'UWBP_HeaderMenu_C::SafeZone_HeaderMenu' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_C, WBP_CMN_NiceNotice_Window) == 0x000478, "Member 'UWBP_HeaderMenu_C::WBP_CMN_NiceNotice_Window' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_C, WBP_CMN_Sub_MatchingState) == 0x000480, "Member 'UWBP_HeaderMenu_C::WBP_CMN_Sub_MatchingState' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_C, WBP_HeaderMenu_Sub_Btn_01_L) == 0x000488, "Member 'UWBP_HeaderMenu_C::WBP_HeaderMenu_Sub_Btn_01_L' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_C, WBP_HeaderMenu_Sub_Btn_02_R) == 0x000490, "Member 'UWBP_HeaderMenu_C::WBP_HeaderMenu_Sub_Btn_02_R' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_C, WBP_HeaderMenu_Sub_NewsBtn) == 0x000498, "Member 'UWBP_HeaderMenu_C::WBP_HeaderMenu_Sub_NewsBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_C, WBP_HeaderMenu_Sub_PlayerNamePlate) == 0x0004A0, "Member 'UWBP_HeaderMenu_C::WBP_HeaderMenu_Sub_PlayerNamePlate' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_C, WBP_HeaderMenu_Sub_Rule_TimeTable) == 0x0004A8, "Member 'UWBP_HeaderMenu_C::WBP_HeaderMenu_Sub_Rule_TimeTable' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_C, ButtonMainArr) == 0x0004B0, "Member 'UWBP_HeaderMenu_C::ButtonMainArr' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_C, In_Text) == 0x0004C0, "Member 'UWBP_HeaderMenu_C::In_Text' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_HeaderMenu_C;
 
 }
 

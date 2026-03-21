@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -33,18 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_FooterMenu_Sub_Key_C">();
+		BP_STATIC_CLASS_IMPL("WBP_FooterMenu_Sub_Key_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_FooterMenu_Sub_Key_C")
 	}
 	static class UWBP_FooterMenu_Sub_Key_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_FooterMenu_Sub_Key_C>();
 	}
 };
-static_assert(alignof(UWBP_FooterMenu_Sub_Key_C) == 0x000008, "Wrong alignment on UWBP_FooterMenu_Sub_Key_C");
-static_assert(sizeof(UWBP_FooterMenu_Sub_Key_C) == 0x000320, "Wrong size on UWBP_FooterMenu_Sub_Key_C");
-static_assert(offsetof(UWBP_FooterMenu_Sub_Key_C, UberGraphFrame) == 0x000308, "Member 'UWBP_FooterMenu_Sub_Key_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_FooterMenu_Sub_Key_C, PAT_Mouse) == 0x000310, "Member 'UWBP_FooterMenu_Sub_Key_C::PAT_Mouse' has a wrong offset!");
-static_assert(offsetof(UWBP_FooterMenu_Sub_Key_C, WidgetSwitcher_PC) == 0x000318, "Member 'UWBP_FooterMenu_Sub_Key_C::WidgetSwitcher_PC' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_FooterMenu_Sub_Key_C;
 
 }
 

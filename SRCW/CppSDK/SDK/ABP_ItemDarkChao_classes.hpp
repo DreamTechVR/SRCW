@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "Engine_structs.hpp"
 #include "ABP_ItemDarkChao_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
 
@@ -78,52 +78,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABP_ItemDarkChao_C">();
+		BP_STATIC_CLASS_IMPL("ABP_ItemDarkChao_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABP_ItemDarkChao_C")
 	}
 	static class UABP_ItemDarkChao_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UABP_ItemDarkChao_C>();
 	}
 };
-static_assert(alignof(UABP_ItemDarkChao_C) == 0x000010, "Wrong alignment on UABP_ItemDarkChao_C");
-static_assert(sizeof(UABP_ItemDarkChao_C) == 0x000C20, "Wrong size on UABP_ItemDarkChao_C");
-static_assert(offsetof(UABP_ItemDarkChao_C, UberGraphFrame) == 0x000380, "Member 'UABP_ItemDarkChao_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, __AnimBlueprintMutables) == 0x000388, "Member 'UABP_ItemDarkChao_C::__AnimBlueprintMutables' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimBlueprintExtension_PropertyAccess) == 0x000390, "Member 'UABP_ItemDarkChao_C::AnimBlueprintExtension_PropertyAccess' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimBlueprintExtension_Base) == 0x000398, "Member 'UABP_ItemDarkChao_C::AnimBlueprintExtension_Base' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimGraphNode_Root) == 0x0003A0, "Member 'UABP_ItemDarkChao_C::AnimGraphNode_Root' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimGraphNode_TransitionResult_10) == 0x0003C0, "Member 'UABP_ItemDarkChao_C::AnimGraphNode_TransitionResult_10' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimGraphNode_TransitionResult_9) == 0x0003E8, "Member 'UABP_ItemDarkChao_C::AnimGraphNode_TransitionResult_9' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimGraphNode_TransitionResult_8) == 0x000410, "Member 'UABP_ItemDarkChao_C::AnimGraphNode_TransitionResult_8' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimGraphNode_TransitionResult_7) == 0x000438, "Member 'UABP_ItemDarkChao_C::AnimGraphNode_TransitionResult_7' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimGraphNode_TransitionResult_6) == 0x000460, "Member 'UABP_ItemDarkChao_C::AnimGraphNode_TransitionResult_6' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimGraphNode_TransitionResult_5) == 0x000488, "Member 'UABP_ItemDarkChao_C::AnimGraphNode_TransitionResult_5' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimGraphNode_TransitionResult_4) == 0x0004B0, "Member 'UABP_ItemDarkChao_C::AnimGraphNode_TransitionResult_4' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimGraphNode_TransitionPoseEvaluator_3) == 0x0004D8, "Member 'UABP_ItemDarkChao_C::AnimGraphNode_TransitionPoseEvaluator_3' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimGraphNode_TransitionPoseEvaluator_2) == 0x000580, "Member 'UABP_ItemDarkChao_C::AnimGraphNode_TransitionPoseEvaluator_2' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimGraphNode_CustomTransitionResult_1) == 0x000628, "Member 'UABP_ItemDarkChao_C::AnimGraphNode_CustomTransitionResult_1' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimGraphNode_TransitionResult_3) == 0x000648, "Member 'UABP_ItemDarkChao_C::AnimGraphNode_TransitionResult_3' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimGraphNode_TransitionResult_2) == 0x000670, "Member 'UABP_ItemDarkChao_C::AnimGraphNode_TransitionResult_2' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimGraphNode_TransitionResult_1) == 0x000698, "Member 'UABP_ItemDarkChao_C::AnimGraphNode_TransitionResult_1' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimGraphNode_TransitionPoseEvaluator_1) == 0x0006C0, "Member 'UABP_ItemDarkChao_C::AnimGraphNode_TransitionPoseEvaluator_1' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimGraphNode_TransitionPoseEvaluator) == 0x000768, "Member 'UABP_ItemDarkChao_C::AnimGraphNode_TransitionPoseEvaluator' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimGraphNode_CustomTransitionResult) == 0x000810, "Member 'UABP_ItemDarkChao_C::AnimGraphNode_CustomTransitionResult' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimGraphNode_TransitionResult) == 0x000830, "Member 'UABP_ItemDarkChao_C::AnimGraphNode_TransitionResult' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimGraphNode_SequencePlayer_5) == 0x000858, "Member 'UABP_ItemDarkChao_C::AnimGraphNode_SequencePlayer_5' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimGraphNode_StateResult_6) == 0x0008A0, "Member 'UABP_ItemDarkChao_C::AnimGraphNode_StateResult_6' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimGraphNode_BlendSpacePlayer) == 0x0008C0, "Member 'UABP_ItemDarkChao_C::AnimGraphNode_BlendSpacePlayer' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimGraphNode_StateResult_5) == 0x000930, "Member 'UABP_ItemDarkChao_C::AnimGraphNode_StateResult_5' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimGraphNode_SequencePlayer_4) == 0x000950, "Member 'UABP_ItemDarkChao_C::AnimGraphNode_SequencePlayer_4' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimGraphNode_StateResult_4) == 0x000998, "Member 'UABP_ItemDarkChao_C::AnimGraphNode_StateResult_4' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimGraphNode_SequencePlayer_3) == 0x0009B8, "Member 'UABP_ItemDarkChao_C::AnimGraphNode_SequencePlayer_3' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimGraphNode_StateResult_3) == 0x000A00, "Member 'UABP_ItemDarkChao_C::AnimGraphNode_StateResult_3' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimGraphNode_SequencePlayer_2) == 0x000A20, "Member 'UABP_ItemDarkChao_C::AnimGraphNode_SequencePlayer_2' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimGraphNode_StateResult_2) == 0x000A68, "Member 'UABP_ItemDarkChao_C::AnimGraphNode_StateResult_2' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimGraphNode_SequencePlayer_1) == 0x000A88, "Member 'UABP_ItemDarkChao_C::AnimGraphNode_SequencePlayer_1' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimGraphNode_StateResult_1) == 0x000AD0, "Member 'UABP_ItemDarkChao_C::AnimGraphNode_StateResult_1' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimGraphNode_SequencePlayer) == 0x000AF0, "Member 'UABP_ItemDarkChao_C::AnimGraphNode_SequencePlayer' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimGraphNode_StateResult) == 0x000B38, "Member 'UABP_ItemDarkChao_C::AnimGraphNode_StateResult' has a wrong offset!");
-static_assert(offsetof(UABP_ItemDarkChao_C, AnimGraphNode_StateMachine) == 0x000B58, "Member 'UABP_ItemDarkChao_C::AnimGraphNode_StateMachine' has a wrong offset!");
+DUMPER7_ASSERTS_UABP_ItemDarkChao_C;
 
 }
 

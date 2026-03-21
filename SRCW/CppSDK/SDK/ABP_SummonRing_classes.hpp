@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -43,28 +43,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABP_SummonRing_C">();
+		BP_STATIC_CLASS_IMPL("ABP_SummonRing_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABP_SummonRing_C")
 	}
 	static class UABP_SummonRing_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UABP_SummonRing_C>();
 	}
 };
-static_assert(alignof(UABP_SummonRing_C) == 0x000010, "Wrong alignment on UABP_SummonRing_C");
-static_assert(sizeof(UABP_SummonRing_C) == 0x000600, "Wrong size on UABP_SummonRing_C");
-static_assert(offsetof(UABP_SummonRing_C, UberGraphFrame) == 0x000370, "Member 'UABP_SummonRing_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UABP_SummonRing_C, AnimBlueprintExtension_PropertyAccess) == 0x000378, "Member 'UABP_SummonRing_C::AnimBlueprintExtension_PropertyAccess' has a wrong offset!");
-static_assert(offsetof(UABP_SummonRing_C, AnimBlueprintExtension_Base) == 0x000380, "Member 'UABP_SummonRing_C::AnimBlueprintExtension_Base' has a wrong offset!");
-static_assert(offsetof(UABP_SummonRing_C, AnimGraphNode_Root) == 0x000388, "Member 'UABP_SummonRing_C::AnimGraphNode_Root' has a wrong offset!");
-static_assert(offsetof(UABP_SummonRing_C, AnimGraphNode_TransitionResult_1) == 0x0003A8, "Member 'UABP_SummonRing_C::AnimGraphNode_TransitionResult_1' has a wrong offset!");
-static_assert(offsetof(UABP_SummonRing_C, AnimGraphNode_TransitionResult) == 0x0003D0, "Member 'UABP_SummonRing_C::AnimGraphNode_TransitionResult' has a wrong offset!");
-static_assert(offsetof(UABP_SummonRing_C, AnimGraphNode_SequencePlayer_2) == 0x0003F8, "Member 'UABP_SummonRing_C::AnimGraphNode_SequencePlayer_2' has a wrong offset!");
-static_assert(offsetof(UABP_SummonRing_C, AnimGraphNode_StateResult_2) == 0x000440, "Member 'UABP_SummonRing_C::AnimGraphNode_StateResult_2' has a wrong offset!");
-static_assert(offsetof(UABP_SummonRing_C, AnimGraphNode_SequencePlayer_1) == 0x000460, "Member 'UABP_SummonRing_C::AnimGraphNode_SequencePlayer_1' has a wrong offset!");
-static_assert(offsetof(UABP_SummonRing_C, AnimGraphNode_StateResult_1) == 0x0004A8, "Member 'UABP_SummonRing_C::AnimGraphNode_StateResult_1' has a wrong offset!");
-static_assert(offsetof(UABP_SummonRing_C, AnimGraphNode_SequencePlayer) == 0x0004C8, "Member 'UABP_SummonRing_C::AnimGraphNode_SequencePlayer' has a wrong offset!");
-static_assert(offsetof(UABP_SummonRing_C, AnimGraphNode_StateResult) == 0x000510, "Member 'UABP_SummonRing_C::AnimGraphNode_StateResult' has a wrong offset!");
-static_assert(offsetof(UABP_SummonRing_C, AnimGraphNode_StateMachine) == 0x000530, "Member 'UABP_SummonRing_C::AnimGraphNode_StateMachine' has a wrong offset!");
+DUMPER7_ASSERTS_UABP_SummonRing_C;
 
 }
 

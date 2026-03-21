@@ -23,15 +23,18 @@ class ABP_ItemBoxEffect_C final : public AItemBoxEffectObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ItemBoxEffect_C">();
+		BP_STATIC_CLASS_IMPL("BP_ItemBoxEffect_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ItemBoxEffect_C")
 	}
 	static class ABP_ItemBoxEffect_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ItemBoxEffect_C>();
 	}
 };
-static_assert(alignof(ABP_ItemBoxEffect_C) == 0x000008, "Wrong alignment on ABP_ItemBoxEffect_C");
-static_assert(sizeof(ABP_ItemBoxEffect_C) == 0x000428, "Wrong size on ABP_ItemBoxEffect_C");
+DUMPER7_ASSERTS_ABP_ItemBoxEffect_C;
 
 }
 

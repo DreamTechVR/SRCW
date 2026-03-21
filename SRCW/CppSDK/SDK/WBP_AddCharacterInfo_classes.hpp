@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -84,6 +84,7 @@ public:
 public:
 	void EditOpen(EDriverId characterId);
 	void ExecuteUbergraph_WBP_AddCharacterInfo(int32 EntryPoint);
+	void ForceClose();
 	void GetCharacterInfos(TArray<class UWBP_AddCharacterInfo_Sub_Ring_C*>* Infos);
 	void OnInitialized();
 	void OnOpenAnimEnd();
@@ -95,72 +96,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_AddCharacterInfo_C">();
+		BP_STATIC_CLASS_IMPL("WBP_AddCharacterInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_AddCharacterInfo_C")
 	}
 	static class UWBP_AddCharacterInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_AddCharacterInfo_C>();
 	}
 };
-static_assert(alignof(UWBP_AddCharacterInfo_C) == 0x000008, "Wrong alignment on UWBP_AddCharacterInfo_C");
-static_assert(sizeof(UWBP_AddCharacterInfo_C) == 0x0004D0, "Wrong size on UWBP_AddCharacterInfo_C");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, UberGraphFrame) == 0x000300, "Member 'UWBP_AddCharacterInfo_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, AddChara_In) == 0x000308, "Member 'UWBP_AddCharacterInfo_C::AddChara_In' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, Base_BG) == 0x000310, "Member 'UWBP_AddCharacterInfo_C::Base_BG' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, BG_Black) == 0x000318, "Member 'UWBP_AddCharacterInfo_C::BG_Black' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, BG_Black_Cover) == 0x000320, "Member 'UWBP_AddCharacterInfo_C::BG_Black_Cover' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, BG_Center) == 0x000328, "Member 'UWBP_AddCharacterInfo_C::BG_Center' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, BG_Grad_Y_B) == 0x000330, "Member 'UWBP_AddCharacterInfo_C::BG_Grad_Y_B' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, BG_Grad_Y_T) == 0x000338, "Member 'UWBP_AddCharacterInfo_C::BG_Grad_Y_T' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, BG_Turbulent_C) == 0x000340, "Member 'UWBP_AddCharacterInfo_C::BG_Turbulent_C' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, BG_Turbulent_M) == 0x000348, "Member 'UWBP_AddCharacterInfo_C::BG_Turbulent_M' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, BG_Turbulent_Y) == 0x000350, "Member 'UWBP_AddCharacterInfo_C::BG_Turbulent_Y' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, Black_Cover) == 0x000358, "Member 'UWBP_AddCharacterInfo_C::Black_Cover' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, Cloud_Left) == 0x000360, "Member 'UWBP_AddCharacterInfo_C::Cloud_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, Cloud_Left_02) == 0x000368, "Member 'UWBP_AddCharacterInfo_C::Cloud_Left_02' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, Cloud_Right) == 0x000370, "Member 'UWBP_AddCharacterInfo_C::Cloud_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, Cloud_Right_02) == 0x000378, "Member 'UWBP_AddCharacterInfo_C::Cloud_Right_02' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, DMY_CharaSet) == 0x000380, "Member 'UWBP_AddCharacterInfo_C::DMY_CharaSet' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, Eff_10) == 0x000388, "Member 'UWBP_AddCharacterInfo_C::Eff_10' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, Eff_11) == 0x000390, "Member 'UWBP_AddCharacterInfo_C::Eff_11' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, Eff_00) == 0x000398, "Member 'UWBP_AddCharacterInfo_C::Eff_00' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, Eff_01) == 0x0003A0, "Member 'UWBP_AddCharacterInfo_C::Eff_01' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, Eff_02) == 0x0003A8, "Member 'UWBP_AddCharacterInfo_C::Eff_02' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, Eff_03) == 0x0003B0, "Member 'UWBP_AddCharacterInfo_C::Eff_03' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, Eff_04) == 0x0003B8, "Member 'UWBP_AddCharacterInfo_C::Eff_04' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, Eff_05) == 0x0003C0, "Member 'UWBP_AddCharacterInfo_C::Eff_05' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, Eff_06) == 0x0003C8, "Member 'UWBP_AddCharacterInfo_C::Eff_06' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, Eff_07) == 0x0003D0, "Member 'UWBP_AddCharacterInfo_C::Eff_07' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, Eff_08) == 0x0003D8, "Member 'UWBP_AddCharacterInfo_C::Eff_08' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, Eff_09) == 0x0003E0, "Member 'UWBP_AddCharacterInfo_C::Eff_09' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, Eff_Core_Add_01) == 0x0003E8, "Member 'UWBP_AddCharacterInfo_C::Eff_Core_Add_01' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, Eff_Core_Add_02) == 0x0003F0, "Member 'UWBP_AddCharacterInfo_C::Eff_Core_Add_02' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, Eff_Light) == 0x0003F8, "Member 'UWBP_AddCharacterInfo_C::Eff_Light' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, Light) == 0x000400, "Member 'UWBP_AddCharacterInfo_C::Light' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, Light_Center) == 0x000408, "Member 'UWBP_AddCharacterInfo_C::Light_Center' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, Light_Center_1) == 0x000410, "Member 'UWBP_AddCharacterInfo_C::Light_Center_1' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, Light_Center_Eff) == 0x000418, "Member 'UWBP_AddCharacterInfo_C::Light_Center_Eff' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, NameBase) == 0x000420, "Member 'UWBP_AddCharacterInfo_C::NameBase' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, NameLine_B) == 0x000428, "Member 'UWBP_AddCharacterInfo_C::NameLine_B' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, NameLine_T) == 0x000430, "Member 'UWBP_AddCharacterInfo_C::NameLine_T' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, RaceFlag_Left_1) == 0x000438, "Member 'UWBP_AddCharacterInfo_C::RaceFlag_Left_1' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, RaceFlag_Right_1) == 0x000440, "Member 'UWBP_AddCharacterInfo_C::RaceFlag_Right_1' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, TXT_CharaName_01) == 0x000448, "Member 'UWBP_AddCharacterInfo_C::TXT_CharaName_01' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, TXT_Title_Bottom) == 0x000450, "Member 'UWBP_AddCharacterInfo_C::TXT_Title_Bottom' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, TXT_Title_Top) == 0x000458, "Member 'UWBP_AddCharacterInfo_C::TXT_Title_Top' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, WBP_AddCharacterInfo_Sub_Ring_01) == 0x000460, "Member 'UWBP_AddCharacterInfo_C::WBP_AddCharacterInfo_Sub_Ring_01' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, WBP_AddCharacterInfo_Sub_Ring_02) == 0x000468, "Member 'UWBP_AddCharacterInfo_C::WBP_AddCharacterInfo_Sub_Ring_02' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, WBP_AddCharacterInfo_Sub_Ring_03) == 0x000470, "Member 'UWBP_AddCharacterInfo_C::WBP_AddCharacterInfo_Sub_Ring_03' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, WBP_AddCharacterInfo_Sub_Ring_04) == 0x000478, "Member 'UWBP_AddCharacterInfo_C::WBP_AddCharacterInfo_Sub_Ring_04' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, WBP_AddCharacterInfo_Sub_Ring_05) == 0x000480, "Member 'UWBP_AddCharacterInfo_C::WBP_AddCharacterInfo_Sub_Ring_05' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, White) == 0x000488, "Member 'UWBP_AddCharacterInfo_C::White' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, YellowLine_Left) == 0x000490, "Member 'UWBP_AddCharacterInfo_C::YellowLine_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, YellowLine_Left_1) == 0x000498, "Member 'UWBP_AddCharacterInfo_C::YellowLine_Left_1' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, YellowLine_Left_2) == 0x0004A0, "Member 'UWBP_AddCharacterInfo_C::YellowLine_Left_2' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, YellowLine_Right) == 0x0004A8, "Member 'UWBP_AddCharacterInfo_C::YellowLine_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, YellowLine_Right_1) == 0x0004B0, "Member 'UWBP_AddCharacterInfo_C::YellowLine_Right_1' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, YellowLine_Right_2) == 0x0004B8, "Member 'UWBP_AddCharacterInfo_C::YellowLine_Right_2' has a wrong offset!");
-static_assert(offsetof(UWBP_AddCharacterInfo_C, OnEndAnim) == 0x0004C0, "Member 'UWBP_AddCharacterInfo_C::OnEndAnim' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_AddCharacterInfo_C;
 
 }
 

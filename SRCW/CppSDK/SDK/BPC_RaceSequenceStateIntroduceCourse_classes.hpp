@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "UNION_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "UnionUI_structs.hpp"
-#include "UNION_classes.hpp"
 
 
 namespace SDK
@@ -74,28 +74,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_RaceSequenceStateIntroduceCourse_C">();
+		BP_STATIC_CLASS_IMPL("BPC_RaceSequenceStateIntroduceCourse_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_RaceSequenceStateIntroduceCourse_C")
 	}
 	static class UBPC_RaceSequenceStateIntroduceCourse_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_RaceSequenceStateIntroduceCourse_C>();
 	}
 };
-static_assert(alignof(UBPC_RaceSequenceStateIntroduceCourse_C) == 0x000008, "Wrong alignment on UBPC_RaceSequenceStateIntroduceCourse_C");
-static_assert(sizeof(UBPC_RaceSequenceStateIntroduceCourse_C) == 0x000198, "Wrong size on UBPC_RaceSequenceStateIntroduceCourse_C");
-static_assert(offsetof(UBPC_RaceSequenceStateIntroduceCourse_C, UberGraphFrame) == 0x000120, "Member 'UBPC_RaceSequenceStateIntroduceCourse_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateIntroduceCourse_C, SequncePlayer) == 0x000128, "Member 'UBPC_RaceSequenceStateIntroduceCourse_C::SequncePlayer' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateIntroduceCourse_C, SequnceActor) == 0x000130, "Member 'UBPC_RaceSequenceStateIntroduceCourse_C::SequnceActor' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateIntroduceCourse_C, CourseInfoUI) == 0x000138, "Member 'UBPC_RaceSequenceStateIntroduceCourse_C::CourseInfoUI' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateIntroduceCourse_C, FinalRoundWidget) == 0x000140, "Member 'UBPC_RaceSequenceStateIntroduceCourse_C::FinalRoundWidget' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateIntroduceCourse_C, SceneLocationRoot) == 0x000148, "Member 'UBPC_RaceSequenceStateIntroduceCourse_C::SceneLocationRoot' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateIntroduceCourse_C, Offset) == 0x000150, "Member 'UBPC_RaceSequenceStateIntroduceCourse_C::Offset' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateIntroduceCourse_C, TipsWindow) == 0x000168, "Member 'UBPC_RaceSequenceStateIntroduceCourse_C::TipsWindow' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateIntroduceCourse_C, TipsIdGrandprixFinal) == 0x000170, "Member 'UBPC_RaceSequenceStateIntroduceCourse_C::TipsIdGrandprixFinal' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateIntroduceCourse_C, EndOpenTipsWindow) == 0x000171, "Member 'UBPC_RaceSequenceStateIntroduceCourse_C::EndOpenTipsWindow' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateIntroduceCourse_C, FinalRoundIndexes) == 0x000174, "Member 'UBPC_RaceSequenceStateIntroduceCourse_C::FinalRoundIndexes' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateIntroduceCourse_C, FinalRoundStageIds) == 0x000178, "Member 'UBPC_RaceSequenceStateIntroduceCourse_C::FinalRoundStageIds' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateIntroduceCourse_C, FinalRoundTextures) == 0x000188, "Member 'UBPC_RaceSequenceStateIntroduceCourse_C::FinalRoundTextures' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_RaceSequenceStateIntroduceCourse_C;
 
 }
 

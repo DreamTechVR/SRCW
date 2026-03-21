@@ -40,23 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C")
 	}
 	static class UWBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C) == 0x000008, "Wrong alignment on UWBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C");
-static_assert(sizeof(UWBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C) == 0x000328, "Wrong size on UWBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C, MLC_Base) == 0x0002E8, "Member 'UWBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C::MLC_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C, TXT_1st) == 0x0002F0, "Member 'UWBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C::TXT_1st' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C, TXT_2nd) == 0x0002F8, "Member 'UWBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C::TXT_2nd' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C, TXT_3rd) == 0x000300, "Member 'UWBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C::TXT_3rd' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C, WidgetSwitcher_Text) == 0x000308, "Member 'UWBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C::WidgetSwitcher_Text' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C, TxtRankArr) == 0x000310, "Member 'UWBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C::TxtRankArr' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C, NowTeamRank) == 0x000320, "Member 'UWBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C::NowTeamRank' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_HUD_Sub_Festa_TeamGroup_Rank_C;
 
 }
 

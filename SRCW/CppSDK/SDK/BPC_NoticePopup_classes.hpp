@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK
@@ -72,30 +72,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_NoticePopup_C">();
+		BP_STATIC_CLASS_IMPL("BPC_NoticePopup_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_NoticePopup_C")
 	}
 	static class UBPC_NoticePopup_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_NoticePopup_C>();
 	}
 };
-static_assert(alignof(UBPC_NoticePopup_C) == 0x000008, "Wrong alignment on UBPC_NoticePopup_C");
-static_assert(sizeof(UBPC_NoticePopup_C) == 0x000270, "Wrong size on UBPC_NoticePopup_C");
-static_assert(offsetof(UBPC_NoticePopup_C, UberGraphFrame) == 0x000228, "Member 'UBPC_NoticePopup_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticePopup_C, TopInfoWidget) == 0x000230, "Member 'UBPC_NoticePopup_C::TopInfoWidget' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticePopup_C, EventInfo) == 0x000238, "Member 'UBPC_NoticePopup_C::EventInfo' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticePopup_C, ReturnState) == 0x000240, "Member 'UBPC_NoticePopup_C::ReturnState' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticePopup_C, IsFadeEnd) == 0x000241, "Member 'UBPC_NoticePopup_C::IsFadeEnd' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticePopup_C, IsEnd_ReadPlatformFriend) == 0x000242, "Member 'UBPC_NoticePopup_C::IsEnd_ReadPlatformFriend' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticePopup_C, IsNewDisplay_DLC) == 0x000243, "Member 'UBPC_NoticePopup_C::IsNewDisplay_DLC' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticePopup_C, IsNewDisplay_FreeContents) == 0x000244, "Member 'UBPC_NoticePopup_C::IsNewDisplay_FreeContents' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticePopup_C, IsNewDisplay_Festa) == 0x000245, "Member 'UBPC_NoticePopup_C::IsNewDisplay_Festa' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticePopup_C, IsNewDisplay_Emerjency) == 0x000246, "Member 'UBPC_NoticePopup_C::IsNewDisplay_Emerjency' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticePopup_C, TopInfoReturnPage) == 0x000247, "Member 'UBPC_NoticePopup_C::TopInfoReturnPage' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticePopup_C, IsOnline) == 0x000248, "Member 'UBPC_NoticePopup_C::IsOnline' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticePopup_C, DLCStoreDialog) == 0x000250, "Member 'UBPC_NoticePopup_C::DLCStoreDialog' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticePopup_C, OnBackToTopMenuEvent) == 0x000258, "Member 'UBPC_NoticePopup_C::OnBackToTopMenuEvent' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticePopup_C, IsNewDisplay_Legend) == 0x000268, "Member 'UBPC_NoticePopup_C::IsNewDisplay_Legend' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_NoticePopup_C;
 
 }
 

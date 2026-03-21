@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
+#include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
-#include "UMG_structs.hpp"
 #include "ST_StickerPresetPageItemData_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "EStickerPresetSelectPageItemType_structs.hpp"
-#include "UnionSystem_structs.hpp"
 
 
 namespace SDK::Params
@@ -32,12 +32,7 @@ public:
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0008(0x0010)()
 	TArray<struct FLinearColor>                   K2Node_MakeArray_Array;                            // 0x0018(0x0010)(ReferenceParm)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_ExecuteUbergraph_WBP_MachineCustom_Sub_Sticker_PresetIcon) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_ExecuteUbergraph_WBP_MachineCustom_Sub_Sticker_PresetIcon");
-static_assert(sizeof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_ExecuteUbergraph_WBP_MachineCustom_Sub_Sticker_PresetIcon) == 0x000028, "Wrong size on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_ExecuteUbergraph_WBP_MachineCustom_Sub_Sticker_PresetIcon");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_ExecuteUbergraph_WBP_MachineCustom_Sub_Sticker_PresetIcon, EntryPoint) == 0x000000, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_ExecuteUbergraph_WBP_MachineCustom_Sub_Sticker_PresetIcon::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_ExecuteUbergraph_WBP_MachineCustom_Sub_Sticker_PresetIcon, CallFunc_SoundPlay_ReturnValue) == 0x000004, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_ExecuteUbergraph_WBP_MachineCustom_Sub_Sticker_PresetIcon::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_ExecuteUbergraph_WBP_MachineCustom_Sub_Sticker_PresetIcon, CallFunc_MakeLiteralText_ReturnValue) == 0x000008, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_ExecuteUbergraph_WBP_MachineCustom_Sub_Sticker_PresetIcon::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_ExecuteUbergraph_WBP_MachineCustom_Sub_Sticker_PresetIcon, K2Node_MakeArray_Array) == 0x000018, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_ExecuteUbergraph_WBP_MachineCustom_Sub_Sticker_PresetIcon::K2Node_MakeArray_Array' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_Sticker_PresetIcon_C_ExecuteUbergraph_WBP_MachineCustom_Sub_Sticker_PresetIcon;
 
 // Function WBP_MachineCustom_Sub_Sticker_PresetIcon.WBP_MachineCustom_Sub_Sticker_PresetIcon_C.OnFocusLost
 // 0x0008 (0x0008 - 0x0000)
@@ -46,9 +41,7 @@ struct WBP_MachineCustom_Sub_Sticker_PresetIcon_C_OnFocusLost final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_OnFocusLost) == 0x000004, "Wrong alignment on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_OnFocusLost");
-static_assert(sizeof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_OnFocusLost) == 0x000008, "Wrong size on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_OnFocusLost");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_OnFocusLost, InFocusEvent) == 0x000000, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_OnFocusLost::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_Sticker_PresetIcon_C_OnFocusLost;
 
 // Function WBP_MachineCustom_Sub_Sticker_PresetIcon.WBP_MachineCustom_Sub_Sticker_PresetIcon_C.OnFocusReceived
 // 0x01C0 (0x01C0 - 0x0000)
@@ -63,14 +56,7 @@ public:
 	class AAppPlayerController*                   CallFunc_GetAppPlayerController_ReturnValue;       // 0x0100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FEventReply                            CallFunc_OnFocusReceivedImpl_ReturnValue;          // 0x0108(0x00B8)()
 };
-static_assert(alignof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_OnFocusReceived) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_OnFocusReceived");
-static_assert(sizeof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_OnFocusReceived) == 0x0001C0, "Wrong size on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_OnFocusReceived");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_OnFocusReceived, CallFunc_GetPlayerIndex_PlayerIndex) == 0x0000F8, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_OnFocusReceived::CallFunc_GetPlayerIndex_PlayerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_OnFocusReceived, CallFunc_GetAppPlayerController_ReturnValue) == 0x000100, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_OnFocusReceived::CallFunc_GetAppPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_OnFocusReceived, CallFunc_OnFocusReceivedImpl_ReturnValue) == 0x000108, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_OnFocusReceived::CallFunc_OnFocusReceivedImpl_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_Sticker_PresetIcon_C_OnFocusReceived;
 
 // Function WBP_MachineCustom_Sub_Sticker_PresetIcon.WBP_MachineCustom_Sub_Sticker_PresetIcon_C.PlayPurchaseAnim
 // 0x0008 (0x0008 - 0x0000)
@@ -79,20 +65,16 @@ struct WBP_MachineCustom_Sub_Sticker_PresetIcon_C_PlayPurchaseAnim final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_PlayPurchaseAnim) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_PlayPurchaseAnim");
-static_assert(sizeof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_PlayPurchaseAnim) == 0x000008, "Wrong size on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_PlayPurchaseAnim");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_PlayPurchaseAnim, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_PlayPurchaseAnim::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_Sticker_PresetIcon_C_PlayPurchaseAnim;
 
 // Function WBP_MachineCustom_Sub_Sticker_PresetIcon.WBP_MachineCustom_Sub_Sticker_PresetIcon_C.ResetType
-// 0x0050 (0x0050 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct WBP_MachineCustom_Sub_Sticker_PresetIcon_C_ResetType final
 {
 public:
-	struct FST_StickerPresetPageItemData          K2Node_MakeStruct_ST_StickerPresetPageItemData;    // 0x0000(0x0050)(HasGetValueTypeHash)
+	struct FST_StickerPresetPageItemData          K2Node_MakeStruct_ST_StickerPresetPageItemData;    // 0x0000(0x0090)(HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_ResetType) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_ResetType");
-static_assert(sizeof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_ResetType) == 0x000050, "Wrong size on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_ResetType");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_ResetType, K2Node_MakeStruct_ST_StickerPresetPageItemData) == 0x000000, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_ResetType::K2Node_MakeStruct_ST_StickerPresetPageItemData' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_Sticker_PresetIcon_C_ResetType;
 
 // Function WBP_MachineCustom_Sub_Sticker_PresetIcon.WBP_MachineCustom_Sub_Sticker_PresetIcon_C.SetBalloonPattern
 // 0x0060 (0x0060 - 0x0000)
@@ -110,27 +92,16 @@ public:
 	class UWBP_CMN_TextBalloon_C*                 K2Node_DynamicCast_AsWBP_CMN_Text_Balloon;         // 0x0050(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetBalloonPattern) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetBalloonPattern");
-static_assert(sizeof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetBalloonPattern) == 0x000060, "Wrong size on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetBalloonPattern");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetBalloonPattern, InPatternIndex) == 0x000000, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetBalloonPattern::InPatternIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetBalloonPattern, Temp_struct_Variable) == 0x000008, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetBalloonPattern::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetBalloonPattern, Temp_struct_Variable_1) == 0x000018, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetBalloonPattern::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetBalloonPattern, Temp_struct_Variable_2) == 0x000028, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetBalloonPattern::Temp_struct_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetBalloonPattern, Temp_int_Variable) == 0x000038, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetBalloonPattern::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetBalloonPattern, K2Node_Select_Default) == 0x000040, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetBalloonPattern::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetBalloonPattern, K2Node_DynamicCast_AsWBP_CMN_Text_Balloon) == 0x000050, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetBalloonPattern::K2Node_DynamicCast_AsWBP_CMN_Text_Balloon' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetBalloonPattern, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetBalloonPattern::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetBalloonPattern;
 
 // Function WBP_MachineCustom_Sub_Sticker_PresetIcon.WBP_MachineCustom_Sub_Sticker_PresetIcon_C.SetBalloonText
-// 0x0050 (0x0050 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetBalloonText final
 {
 public:
-	struct FST_StickerPresetPageItemData          InItem;                                            // 0x0000(0x0050)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+	struct FST_StickerPresetPageItemData          InItem;                                            // 0x0000(0x0090)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetBalloonText) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetBalloonText");
-static_assert(sizeof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetBalloonText) == 0x000050, "Wrong size on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetBalloonText");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetBalloonText, InItem) == 0x000000, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetBalloonText::InItem' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetBalloonText;
 
 // Function WBP_MachineCustom_Sub_Sticker_PresetIcon.WBP_MachineCustom_Sub_Sticker_PresetIcon_C.SetButtonColor
 // 0x0038 (0x0038 - 0x0000)
@@ -147,14 +118,7 @@ public:
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetButtonColor) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetButtonColor");
-static_assert(sizeof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetButtonColor) == 0x000038, "Wrong size on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetButtonColor");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetButtonColor, StickerType) == 0x000000, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetButtonColor::StickerType' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetButtonColor, BaseColorOnDefault) == 0x000004, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetButtonColor::BaseColorOnDefault' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetButtonColor, Temp_int_Variable) == 0x000014, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetButtonColor::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetButtonColor, K2Node_SwitchEnum_CmpSuccess) == 0x000018, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetButtonColor::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetButtonColor, K2Node_Select_Default) == 0x00001C, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetButtonColor::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetButtonColor, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000030, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetButtonColor::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetButtonColor;
 
 // Function WBP_MachineCustom_Sub_Sticker_PresetIcon.WBP_MachineCustom_Sub_Sticker_PresetIcon_C.SetExIconVisible
 // 0x0005 (0x0005 - 0x0000)
@@ -167,13 +131,7 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetExIconVisible) == 0x000001, "Wrong alignment on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetExIconVisible");
-static_assert(sizeof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetExIconVisible) == 0x000005, "Wrong size on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetExIconVisible");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetExIconVisible, IsVisible_0) == 0x000000, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetExIconVisible::IsVisible_0' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetExIconVisible, Temp_bool_Variable) == 0x000001, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetExIconVisible::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetExIconVisible, Temp_byte_Variable) == 0x000002, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetExIconVisible::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetExIconVisible, Temp_byte_Variable_1) == 0x000003, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetExIconVisible::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetExIconVisible, K2Node_Select_Default) == 0x000004, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetExIconVisible::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetExIconVisible;
 
 // Function WBP_MachineCustom_Sub_Sticker_PresetIcon.WBP_MachineCustom_Sub_Sticker_PresetIcon_C.SetLockVisible
 // 0x0005 (0x0005 - 0x0000)
@@ -186,13 +144,7 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetLockVisible) == 0x000001, "Wrong alignment on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetLockVisible");
-static_assert(sizeof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetLockVisible) == 0x000005, "Wrong size on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetLockVisible");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetLockVisible, IsVisible_0) == 0x000000, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetLockVisible::IsVisible_0' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetLockVisible, Temp_bool_Variable) == 0x000001, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetLockVisible::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetLockVisible, Temp_byte_Variable) == 0x000002, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetLockVisible::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetLockVisible, Temp_byte_Variable_1) == 0x000003, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetLockVisible::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetLockVisible, K2Node_Select_Default) == 0x000004, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetLockVisible::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetLockVisible;
 
 // Function WBP_MachineCustom_Sub_Sticker_PresetIcon.WBP_MachineCustom_Sub_Sticker_PresetIcon_C.SetPlayerIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -201,9 +153,7 @@ struct WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPlayerIndex final
 public:
 	int32                                         PlayerIndex_0;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPlayerIndex) == 0x000004, "Wrong alignment on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPlayerIndex");
-static_assert(sizeof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPlayerIndex) == 0x000004, "Wrong size on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPlayerIndex");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPlayerIndex, PlayerIndex_0) == 0x000000, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPlayerIndex::PlayerIndex_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPlayerIndex;
 
 // Function WBP_MachineCustom_Sub_Sticker_PresetIcon.WBP_MachineCustom_Sub_Sticker_PresetIcon_C.SetPresetIcon
 // 0x0010 (0x0010 - 0x0000)
@@ -221,29 +171,18 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPresetIcon) == 0x000004, "Wrong alignment on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPresetIcon");
-static_assert(sizeof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPresetIcon) == 0x000010, "Wrong size on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPresetIcon");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPresetIcon, InIndex) == 0x000000, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPresetIcon::InIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPresetIcon, IsVisible_0) == 0x000004, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPresetIcon::IsVisible_0' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPresetIcon, Temp_bool_Variable) == 0x000005, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPresetIcon::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPresetIcon, Temp_byte_Variable) == 0x000006, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPresetIcon::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPresetIcon, Temp_byte_Variable_1) == 0x000007, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPresetIcon::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPresetIcon, Temp_bool_Variable_1) == 0x000008, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPresetIcon::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPresetIcon, K2Node_Select_Default) == 0x000009, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPresetIcon::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPresetIcon, Temp_byte_Variable_2) == 0x00000A, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPresetIcon::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPresetIcon, Temp_byte_Variable_3) == 0x00000B, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPresetIcon::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPresetIcon, K2Node_Select_Default_1) == 0x00000C, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPresetIcon::K2Node_Select_Default_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPresetIcon;
 
 // Function WBP_MachineCustom_Sub_Sticker_PresetIcon.WBP_MachineCustom_Sub_Sticker_PresetIcon_C.SetPresetIconTexture
-// 0x0050 (0x0050 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPresetIconTexture final
 {
 public:
-	struct FST_StickerPresetPageItemData          InItem;                                            // 0x0000(0x0050)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+	struct FST_StickerPresetPageItemData          InItem;                                            // 0x0000(0x0090)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+	struct FSoftObjectPath                        CallFunc_Conv_SoftObjRefToSoftObjPath_ReturnValue; // 0x0090(0x0020)(ZeroConstructor, HasGetValueTypeHash)
+	class UTexture2D*                             CallFunc_GetTextureBySoftPath_ReturnValue;         // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPresetIconTexture) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPresetIconTexture");
-static_assert(sizeof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPresetIconTexture) == 0x000050, "Wrong size on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPresetIconTexture");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPresetIconTexture, InItem) == 0x000000, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPresetIconTexture::InItem' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetPresetIconTexture;
 
 // Function WBP_MachineCustom_Sub_Sticker_PresetIcon.WBP_MachineCustom_Sub_Sticker_PresetIcon_C.SetTicketVisible
 // 0x0005 (0x0005 - 0x0000)
@@ -256,28 +195,18 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetTicketVisible) == 0x000001, "Wrong alignment on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetTicketVisible");
-static_assert(sizeof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetTicketVisible) == 0x000005, "Wrong size on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetTicketVisible");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetTicketVisible, IsVisible_0) == 0x000000, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetTicketVisible::IsVisible_0' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetTicketVisible, Temp_bool_Variable) == 0x000001, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetTicketVisible::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetTicketVisible, Temp_byte_Variable) == 0x000002, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetTicketVisible::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetTicketVisible, Temp_byte_Variable_1) == 0x000003, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetTicketVisible::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetTicketVisible, K2Node_Select_Default) == 0x000004, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetTicketVisible::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetTicketVisible;
 
 // Function WBP_MachineCustom_Sub_Sticker_PresetIcon.WBP_MachineCustom_Sub_Sticker_PresetIcon_C.SetupType
-// 0x0058 (0x0058 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetupType final
 {
 public:
-	struct FST_StickerPresetPageItemData          InItemData;                                        // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FST_StickerPresetPageItemData          InItemData;                                        // 0x0000(0x0090)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x0091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetupType) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetupType");
-static_assert(sizeof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetupType) == 0x000058, "Wrong size on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetupType");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetupType, InItemData) == 0x000000, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetupType::InItemData' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetupType, K2Node_SwitchEnum_CmpSuccess) == 0x000050, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetupType::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetupType, K2Node_SwitchEnum_CmpSuccess_1) == 0x000051, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetupType::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_Sticker_PresetIcon_C_SetupType;
 
 // Function WBP_MachineCustom_Sub_Sticker_PresetIcon.WBP_MachineCustom_Sub_Sticker_PresetIcon_C.StopPurchaseAnim
 // 0x0008 (0x0008 - 0x0000)
@@ -286,9 +215,7 @@ struct WBP_MachineCustom_Sub_Sticker_PresetIcon_C_StopPurchaseAnim final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_StopPurchaseAnim) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_StopPurchaseAnim");
-static_assert(sizeof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_StopPurchaseAnim) == 0x000008, "Wrong size on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_StopPurchaseAnim");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_StopPurchaseAnim, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_StopPurchaseAnim::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_Sticker_PresetIcon_C_StopPurchaseAnim;
 
 // Function WBP_MachineCustom_Sub_Sticker_PresetIcon.WBP_MachineCustom_Sub_Sticker_PresetIcon_C.UpdateNum
 // 0x0010 (0x0010 - 0x0000)
@@ -297,44 +224,32 @@ struct WBP_MachineCustom_Sub_Sticker_PresetIcon_C_UpdateNum final
 public:
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0000(0x0010)()
 };
-static_assert(alignof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_UpdateNum) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_UpdateNum");
-static_assert(sizeof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_UpdateNum) == 0x000010, "Wrong size on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_UpdateNum");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_UpdateNum, CallFunc_Conv_IntToText_ReturnValue) == 0x000000, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_UpdateNum::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_Sticker_PresetIcon_C_UpdateNum;
 
 // Function WBP_MachineCustom_Sub_Sticker_PresetIcon.WBP_MachineCustom_Sub_Sticker_PresetIcon_C.UpdateNumColor
-// 0x0190 (0x0190 - 0x0000)
+// 0x01D0 (0x01D0 - 0x0000)
 struct WBP_MachineCustom_Sub_Sticker_PresetIcon_C_UpdateNumColor final
 {
 public:
 	struct FStickerUIData                         UIData;                                            // 0x0000(0x0088)(Edit, BlueprintVisible)
-	struct FST_StickerPresetPageItemData          K2Node_MakeStruct_ST_StickerPresetPageItemData;    // 0x0088(0x0050)(HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_NameToString_ReturnValue;            // 0x00D8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Conv_StringToInt_ReturnValue;             // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_EC[0x4];                                       // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStickerUIData                         CallFunc_GetStickerUIData_OutStickerUIData;        // 0x00F0(0x0088)()
-	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x017C(0x0014)()
+	struct FST_StickerPresetPageItemData          K2Node_MakeStruct_ST_StickerPresetPageItemData;    // 0x0088(0x0090)(HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_NameToString_ReturnValue;            // 0x0118(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Conv_StringToInt_ReturnValue;             // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_12C[0x4];                                      // 0x012C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStickerUIData                         CallFunc_GetStickerUIData_OutStickerUIData;        // 0x0130(0x0088)()
+	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x01B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x01BC(0x0014)()
 };
-static_assert(alignof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_UpdateNumColor) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_UpdateNumColor");
-static_assert(sizeof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_UpdateNumColor) == 0x000190, "Wrong size on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_UpdateNumColor");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_UpdateNumColor, UIData) == 0x000000, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_UpdateNumColor::UIData' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_UpdateNumColor, K2Node_MakeStruct_ST_StickerPresetPageItemData) == 0x000088, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_UpdateNumColor::K2Node_MakeStruct_ST_StickerPresetPageItemData' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_UpdateNumColor, CallFunc_Conv_NameToString_ReturnValue) == 0x0000D8, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_UpdateNumColor::CallFunc_Conv_NameToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_UpdateNumColor, CallFunc_Conv_StringToInt_ReturnValue) == 0x0000E8, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_UpdateNumColor::CallFunc_Conv_StringToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_UpdateNumColor, CallFunc_GetStickerUIData_OutStickerUIData) == 0x0000F0, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_UpdateNumColor::CallFunc_GetStickerUIData_OutStickerUIData' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_UpdateNumColor, CallFunc_SelectInt_ReturnValue) == 0x000178, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_UpdateNumColor::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_UpdateNumColor, K2Node_MakeStruct_SlateColor) == 0x00017C, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_UpdateNumColor::K2Node_MakeStruct_SlateColor' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_Sticker_PresetIcon_C_UpdateNumColor;
 
 // Function WBP_MachineCustom_Sub_Sticker_PresetIcon.WBP_MachineCustom_Sub_Sticker_PresetIcon_C.GetItemData
-// 0x0050 (0x0050 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct WBP_MachineCustom_Sub_Sticker_PresetIcon_C_GetItemData final
 {
 public:
-	struct FST_StickerPresetPageItemData          ItemData_0;                                        // 0x0000(0x0050)(Parm, OutParm, HasGetValueTypeHash)
+	struct FST_StickerPresetPageItemData          ItemData_0;                                        // 0x0000(0x0090)(Parm, OutParm, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_GetItemData) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_GetItemData");
-static_assert(sizeof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_GetItemData) == 0x000050, "Wrong size on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_GetItemData");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_GetItemData, ItemData_0) == 0x000000, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_GetItemData::ItemData_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_Sticker_PresetIcon_C_GetItemData;
 
 // Function WBP_MachineCustom_Sub_Sticker_PresetIcon.WBP_MachineCustom_Sub_Sticker_PresetIcon_C.GetPlayerController
 // 0x0018 (0x0018 - 0x0000)
@@ -346,11 +261,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_GetPlayerController) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_GetPlayerController");
-static_assert(sizeof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_GetPlayerController) == 0x000018, "Wrong size on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_GetPlayerController");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_GetPlayerController, PlayerController) == 0x000000, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_GetPlayerController::PlayerController' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_GetPlayerController, CallFunc_GetPlayerIndex_PlayerIndex) == 0x000008, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_GetPlayerController::CallFunc_GetPlayerIndex_PlayerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_GetPlayerController, CallFunc_GetPlayerController_ReturnValue) == 0x000010, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_GetPlayerController::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_Sticker_PresetIcon_C_GetPlayerController;
 
 // Function WBP_MachineCustom_Sub_Sticker_PresetIcon.WBP_MachineCustom_Sub_Sticker_PresetIcon_C.GetPlayerIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -359,9 +270,7 @@ struct WBP_MachineCustom_Sub_Sticker_PresetIcon_C_GetPlayerIndex final
 public:
 	int32                                         PlayerIndex_0;                                     // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_GetPlayerIndex) == 0x000004, "Wrong alignment on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_GetPlayerIndex");
-static_assert(sizeof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_GetPlayerIndex) == 0x000004, "Wrong size on WBP_MachineCustom_Sub_Sticker_PresetIcon_C_GetPlayerIndex");
-static_assert(offsetof(WBP_MachineCustom_Sub_Sticker_PresetIcon_C_GetPlayerIndex, PlayerIndex_0) == 0x000000, "Member 'WBP_MachineCustom_Sub_Sticker_PresetIcon_C_GetPlayerIndex::PlayerIndex_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_Sticker_PresetIcon_C_GetPlayerIndex;
 
 }
 

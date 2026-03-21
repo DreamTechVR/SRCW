@@ -44,27 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_FestaResult_Sub_ContributionRate_Table_C">();
+		BP_STATIC_CLASS_IMPL("WBP_FestaResult_Sub_ContributionRate_Table_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_FestaResult_Sub_ContributionRate_Table_C")
 	}
 	static class UWBP_FestaResult_Sub_ContributionRate_Table_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_FestaResult_Sub_ContributionRate_Table_C>();
 	}
 };
-static_assert(alignof(UWBP_FestaResult_Sub_ContributionRate_Table_C) == 0x000008, "Wrong alignment on UWBP_FestaResult_Sub_ContributionRate_Table_C");
-static_assert(sizeof(UWBP_FestaResult_Sub_ContributionRate_Table_C) == 0x000338, "Wrong size on UWBP_FestaResult_Sub_ContributionRate_Table_C");
-static_assert(offsetof(UWBP_FestaResult_Sub_ContributionRate_Table_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_FestaResult_Sub_ContributionRate_Table_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_Sub_ContributionRate_Table_C, Other_In) == 0x0002E8, "Member 'UWBP_FestaResult_Sub_ContributionRate_Table_C::Other_In' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_Sub_ContributionRate_Table_C, OneP_In) == 0x0002F0, "Member 'UWBP_FestaResult_Sub_ContributionRate_Table_C::OneP_In' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_Sub_ContributionRate_Table_C, Base_1P) == 0x0002F8, "Member 'UWBP_FestaResult_Sub_ContributionRate_Table_C::Base_1P' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_Sub_ContributionRate_Table_C, Base_Nomal) == 0x000300, "Member 'UWBP_FestaResult_Sub_ContributionRate_Table_C::Base_Nomal' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_Sub_ContributionRate_Table_C, PF_Icon) == 0x000308, "Member 'UWBP_FestaResult_Sub_ContributionRate_Table_C::PF_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_Sub_ContributionRate_Table_C, TXT_UserName) == 0x000310, "Member 'UWBP_FestaResult_Sub_ContributionRate_Table_C::TXT_UserName' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_Sub_ContributionRate_Table_C, TXT_YOU) == 0x000318, "Member 'UWBP_FestaResult_Sub_ContributionRate_Table_C::TXT_YOU' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_Sub_ContributionRate_Table_C, WBP_FestaResult_Sub_Lead_no1) == 0x000320, "Member 'UWBP_FestaResult_Sub_ContributionRate_Table_C::WBP_FestaResult_Sub_Lead_no1' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_Sub_ContributionRate_Table_C, WidgetSwitcher_0) == 0x000328, "Member 'UWBP_FestaResult_Sub_ContributionRate_Table_C::WidgetSwitcher_0' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_Sub_ContributionRate_Table_C, bIsPlayer) == 0x000330, "Member 'UWBP_FestaResult_Sub_ContributionRate_Table_C::bIsPlayer' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_Sub_ContributionRate_Table_C, bIsReadNo1) == 0x000331, "Member 'UWBP_FestaResult_Sub_ContributionRate_Table_C::bIsReadNo1' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_FestaResult_Sub_ContributionRate_Table_C;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -70,32 +70,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Result_GP_Player0204_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Result_GP_Player0204_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Result_GP_Player0204_C")
 	}
 	static class UWBP_Result_GP_Player0204_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Result_GP_Player0204_C>();
 	}
 };
-static_assert(alignof(UWBP_Result_GP_Player0204_C) == 0x000008, "Wrong alignment on UWBP_Result_GP_Player0204_C");
-static_assert(sizeof(UWBP_Result_GP_Player0204_C) == 0x000430, "Wrong size on UWBP_Result_GP_Player0204_C");
-static_assert(offsetof(UWBP_Result_GP_Player0204_C, UberGraphFrame) == 0x000388, "Member 'UWBP_Result_GP_Player0204_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_GP_Player0204_C, BUTTON_PRESS) == 0x000390, "Member 'UWBP_Result_GP_Player0204_C::BUTTON_PRESS' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_GP_Player0204_C, DSP_WBP_ItemGet_WindowMini) == 0x000398, "Member 'UWBP_Result_GP_Player0204_C::DSP_WBP_ItemGet_WindowMini' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_GP_Player0204_C, Panel) == 0x0003A0, "Member 'UWBP_Result_GP_Player0204_C::Panel' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_GP_Player0204_C, SafeZone_Result_GP_Player0204) == 0x0003A8, "Member 'UWBP_Result_GP_Player0204_C::SafeZone_Result_GP_Player0204' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_GP_Player0204_C, WBP_Result_Reward_2_1) == 0x0003B0, "Member 'UWBP_Result_GP_Player0204_C::WBP_Result_Reward_2_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_GP_Player0204_C, WBP_Result_Reward_2_2) == 0x0003B8, "Member 'UWBP_Result_GP_Player0204_C::WBP_Result_Reward_2_2' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_GP_Player0204_C, WBP_Result_Reward_4_1) == 0x0003C0, "Member 'UWBP_Result_GP_Player0204_C::WBP_Result_Reward_4_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_GP_Player0204_C, WBP_Result_Reward_4_2) == 0x0003C8, "Member 'UWBP_Result_GP_Player0204_C::WBP_Result_Reward_4_2' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_GP_Player0204_C, WBP_Result_Reward_4_3) == 0x0003D0, "Member 'UWBP_Result_GP_Player0204_C::WBP_Result_Reward_4_3' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_GP_Player0204_C, WBP_Result_Reward_4_4) == 0x0003D8, "Member 'UWBP_Result_GP_Player0204_C::WBP_Result_Reward_4_4' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_GP_Player0204_C, WBP_Result_Sub_RankingTable_GP_Line) == 0x0003E0, "Member 'UWBP_Result_GP_Player0204_C::WBP_Result_Sub_RankingTable_GP_Line' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_GP_Player0204_C, bStartOutAnim) == 0x0003E8, "Member 'UWBP_Result_GP_Player0204_C::bStartOutAnim' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_GP_Player0204_C, PanelDebugTexture) == 0x0003F0, "Member 'UWBP_Result_GP_Player0204_C::PanelDebugTexture' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_GP_Player0204_C, bIsPress) == 0x000418, "Member 'UWBP_Result_GP_Player0204_C::bIsPress' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_GP_Player0204_C, ForceCount) == 0x000420, "Member 'UWBP_Result_GP_Player0204_C::ForceCount' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_GP_Player0204_C, MenuInputReceiveObject) == 0x000428, "Member 'UWBP_Result_GP_Player0204_C::MenuInputReceiveObject' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Result_GP_Player0204_C;
 
 }
 

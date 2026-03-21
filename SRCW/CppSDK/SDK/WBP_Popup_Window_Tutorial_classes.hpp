@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "CriWareRuntime_structs.hpp"
+#include "UNION_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UNION_classes.hpp"
 
 
 namespace SDK
@@ -100,52 +100,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Popup_Window_Tutorial_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Popup_Window_Tutorial_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Popup_Window_Tutorial_C")
 	}
 	static class UWBP_Popup_Window_Tutorial_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Popup_Window_Tutorial_C>();
 	}
 };
-static_assert(alignof(UWBP_Popup_Window_Tutorial_C) == 0x000008, "Wrong alignment on UWBP_Popup_Window_Tutorial_C");
-static_assert(sizeof(UWBP_Popup_Window_Tutorial_C) == 0x000440, "Wrong size on UWBP_Popup_Window_Tutorial_C");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, UberGraphFrame) == 0x000348, "Member 'UWBP_Popup_Window_Tutorial_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, Info_Out) == 0x000350, "Member 'UWBP_Popup_Window_Tutorial_C::Info_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, Info_In) == 0x000358, "Member 'UWBP_Popup_Window_Tutorial_C::Info_In' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, Popup_Out) == 0x000360, "Member 'UWBP_Popup_Window_Tutorial_C::Popup_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, Popup_Loop) == 0x000368, "Member 'UWBP_Popup_Window_Tutorial_C::Popup_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, Popup_In) == 0x000370, "Member 'UWBP_Popup_Window_Tutorial_C::Popup_In' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, BackgroundBlur) == 0x000378, "Member 'UWBP_Popup_Window_Tutorial_C::BackgroundBlur' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, DSP_Cover) == 0x000380, "Member 'UWBP_Popup_Window_Tutorial_C::DSP_Cover' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, Frame) == 0x000388, "Member 'UWBP_Popup_Window_Tutorial_C::Frame' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, MovieImage) == 0x000390, "Member 'UWBP_Popup_Window_Tutorial_C::MovieImage' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, OutOfContentButton) == 0x000398, "Member 'UWBP_Popup_Window_Tutorial_C::OutOfContentButton' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, Overlay_Movie) == 0x0003A0, "Member 'UWBP_Popup_Window_Tutorial_C::Overlay_Movie' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, Overlay_Tutorial_Controller) == 0x0003A8, "Member 'UWBP_Popup_Window_Tutorial_C::Overlay_Tutorial_Controller' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, TextBase) == 0x0003B0, "Member 'UWBP_Popup_Window_Tutorial_C::TextBase' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, TXT_Info) == 0x0003B8, "Member 'UWBP_Popup_Window_Tutorial_C::TXT_Info' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, WBP_FooterMenu) == 0x0003C0, "Member 'UWBP_Popup_Window_Tutorial_C::WBP_FooterMenu' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, WBP_Popup_Window_Tutorial_Sub_Cover) == 0x0003C8, "Member 'UWBP_Popup_Window_Tutorial_C::WBP_Popup_Window_Tutorial_Sub_Cover' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, WBP_Tutorial_Controller_Wrapper) == 0x0003D0, "Member 'UWBP_Popup_Window_Tutorial_C::WBP_Tutorial_Controller_Wrapper' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, WindowBase) == 0x0003D8, "Member 'UWBP_Popup_Window_Tutorial_C::WindowBase' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, UnionManaPlayer) == 0x0003E0, "Member 'UWBP_Popup_Window_Tutorial_C::UnionManaPlayer' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, IsPopupTutorial) == 0x0003E8, "Member 'UWBP_Popup_Window_Tutorial_C::IsPopupTutorial' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, MovieRawName) == 0x0003F0, "Member 'UWBP_Popup_Window_Tutorial_C::MovieRawName' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, PlayMovieIndex) == 0x000400, "Member 'UWBP_Popup_Window_Tutorial_C::PlayMovieIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, MaxMovieIndex) == 0x000404, "Member 'UWBP_Popup_Window_Tutorial_C::MaxMovieIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, SoundHandle) == 0x000408, "Member 'UWBP_Popup_Window_Tutorial_C::SoundHandle' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, IsCancelMovie) == 0x00040C, "Member 'UWBP_Popup_Window_Tutorial_C::IsCancelMovie' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, CancelTimer) == 0x000410, "Member 'UWBP_Popup_Window_Tutorial_C::CancelTimer' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, IsEnd) == 0x000418, "Member 'UWBP_Popup_Window_Tutorial_C::IsEnd' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, IsCreated) == 0x000419, "Member 'UWBP_Popup_Window_Tutorial_C::IsCreated' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, IsPlayingOpening) == 0x00041A, "Member 'UWBP_Popup_Window_Tutorial_C::IsPlayingOpening' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, PlayTimer) == 0x000420, "Member 'UWBP_Popup_Window_Tutorial_C::PlayTimer' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, IsPlayingEnding) == 0x000428, "Member 'UWBP_Popup_Window_Tutorial_C::IsPlayingEnding' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, PlatformType) == 0x000429, "Member 'UWBP_Popup_Window_Tutorial_C::PlatformType' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, IsRealClosing) == 0x00042A, "Member 'UWBP_Popup_Window_Tutorial_C::IsRealClosing' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, IsOkClosing) == 0x00042B, "Member 'UWBP_Popup_Window_Tutorial_C::IsOkClosing' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, IsOkSupend) == 0x00042C, "Member 'UWBP_Popup_Window_Tutorial_C::IsOkSupend' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, OnPlayMovieComplete) == 0x000430, "Member 'UWBP_Popup_Window_Tutorial_C::OnPlayMovieComplete' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Popup_Window_Tutorial_C;
 
 }
 

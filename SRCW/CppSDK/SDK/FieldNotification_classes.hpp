@@ -23,7 +23,11 @@ class INotifyFieldValueChanged final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NotifyFieldValueChanged">();
+		STATIC_CLASS_IMPL("NotifyFieldValueChanged")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NotifyFieldValueChanged")
 	}
 	static class INotifyFieldValueChanged* GetDefaultObj()
 	{
@@ -39,8 +43,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(INotifyFieldValueChanged) == 0x000001, "Wrong alignment on INotifyFieldValueChanged");
-static_assert(sizeof(INotifyFieldValueChanged) == 0x000001, "Wrong size on INotifyFieldValueChanged");
+DUMPER7_ASSERTS_INotifyFieldValueChanged;
 
 }
 

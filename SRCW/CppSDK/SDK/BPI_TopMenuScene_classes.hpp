@@ -27,7 +27,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPI_TopMenuScene_C">();
+		BP_STATIC_CLASS_IMPL("BPI_TopMenuScene_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPI_TopMenuScene_C")
 	}
 	static class IBPI_TopMenuScene_C* GetDefaultObj()
 	{
@@ -43,8 +47,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IBPI_TopMenuScene_C) == 0x000001, "Wrong alignment on IBPI_TopMenuScene_C");
-static_assert(sizeof(IBPI_TopMenuScene_C) == 0x000001, "Wrong size on IBPI_TopMenuScene_C");
+DUMPER7_ASSERTS_IBPI_TopMenuScene_C;
 
 }
 

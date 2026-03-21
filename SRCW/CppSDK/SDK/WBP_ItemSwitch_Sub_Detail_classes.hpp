@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -42,24 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ItemSwitch_Sub_Detail_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ItemSwitch_Sub_Detail_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ItemSwitch_Sub_Detail_C")
 	}
 	static class UWBP_ItemSwitch_Sub_Detail_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ItemSwitch_Sub_Detail_C>();
 	}
 };
-static_assert(alignof(UWBP_ItemSwitch_Sub_Detail_C) == 0x000008, "Wrong alignment on UWBP_ItemSwitch_Sub_Detail_C");
-static_assert(sizeof(UWBP_ItemSwitch_Sub_Detail_C) == 0x000330, "Wrong size on UWBP_ItemSwitch_Sub_Detail_C");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Detail_C, UberGraphFrame) == 0x0002E8, "Member 'UWBP_ItemSwitch_Sub_Detail_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Detail_C, BG_Base) == 0x0002F0, "Member 'UWBP_ItemSwitch_Sub_Detail_C::BG_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Detail_C, ImageBG_Base) == 0x0002F8, "Member 'UWBP_ItemSwitch_Sub_Detail_C::ImageBG_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Detail_C, NameLine) == 0x000300, "Member 'UWBP_ItemSwitch_Sub_Detail_C::NameLine' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Detail_C, TXT_ItemDetail) == 0x000308, "Member 'UWBP_ItemSwitch_Sub_Detail_C::TXT_ItemDetail' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Detail_C, TXT_ItemName) == 0x000310, "Member 'UWBP_ItemSwitch_Sub_Detail_C::TXT_ItemName' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Detail_C, WBP_CMN_ScrollSnapPoint) == 0x000318, "Member 'UWBP_ItemSwitch_Sub_Detail_C::WBP_CMN_ScrollSnapPoint' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Detail_C, WBP_FooterMenu_Sub_ControllerBtn_01) == 0x000320, "Member 'UWBP_ItemSwitch_Sub_Detail_C::WBP_FooterMenu_Sub_ControllerBtn_01' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemSwitch_Sub_Detail_C, WBP_FooterMenu_Sub_ControllerBtn_02) == 0x000328, "Member 'UWBP_ItemSwitch_Sub_Detail_C::WBP_FooterMenu_Sub_ControllerBtn_02' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ItemSwitch_Sub_Detail_C;
 
 }
 

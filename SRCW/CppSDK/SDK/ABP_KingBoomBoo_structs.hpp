@@ -71,62 +71,7 @@ public:
 	struct FAnimNodeExposedValueHandler_PropertyAccess AnimGraphNode_StateResult;                    // 0x0510(0x0030)()
 	struct FAnimNodeExposedValueHandler_PropertyAccess AnimGraphNode_StateMachine;                   // 0x0540(0x0030)()
 };
-static_assert(alignof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData) == 0x000008, "Wrong alignment on ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData");
-static_assert(sizeof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData) == 0x000570, "Wrong size on ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, __NameProperty_143) == 0x000004, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::__NameProperty_143' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, __NameProperty_144) == 0x00000C, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::__NameProperty_144' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, __IntProperty_145) == 0x000014, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::__IntProperty_145' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, __NameProperty_146) == 0x000018, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::__NameProperty_146' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, __IntProperty_147) == 0x000020, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::__IntProperty_147' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, __NameProperty_148) == 0x000024, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::__NameProperty_148' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, __IntProperty_149) == 0x00002C, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::__IntProperty_149' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, __BoolProperty_150) == 0x000030, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::__BoolProperty_150' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, __NameProperty_151) == 0x000034, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::__NameProperty_151' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, __IntProperty_152) == 0x00003C, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::__IntProperty_152' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, __NameProperty_153) == 0x000040, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::__NameProperty_153' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, __IntProperty_154) == 0x000048, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::__IntProperty_154' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, __StructProperty_155) == 0x00004C, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::__StructProperty_155' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, __FloatProperty_156) == 0x000078, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::__FloatProperty_156' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, __FloatProperty_157) == 0x00007C, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::__FloatProperty_157' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, __BoolProperty_158) == 0x000080, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::__BoolProperty_158' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, __EnumProperty_159) == 0x000081, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::__EnumProperty_159' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, __ByteProperty_160) == 0x000082, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::__ByteProperty_160' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, __NameProperty_161) == 0x000084, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::__NameProperty_161' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, __NameProperty_162) == 0x00008C, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::__NameProperty_162' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, __NameProperty_163) == 0x000094, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::__NameProperty_163' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, __IntProperty_164) == 0x00009C, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::__IntProperty_164' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, __StructProperty_165) == 0x0000A0, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::__StructProperty_165' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, AnimBlueprintExtension_PropertyAccess) == 0x0000C0, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::AnimBlueprintExtension_PropertyAccess' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, AnimBlueprintExtension_Base) == 0x000140, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::AnimBlueprintExtension_Base' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, AnimGraphNode_Root) == 0x000180, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::AnimGraphNode_Root' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, AnimGraphNode_TransitionResult_6) == 0x0001B0, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::AnimGraphNode_TransitionResult_6' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, AnimGraphNode_TransitionResult_5) == 0x0001E0, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::AnimGraphNode_TransitionResult_5' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, AnimGraphNode_TransitionResult_4) == 0x000210, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::AnimGraphNode_TransitionResult_4' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, AnimGraphNode_TransitionResult_3) == 0x000240, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::AnimGraphNode_TransitionResult_3' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, AnimGraphNode_TransitionResult_2) == 0x000270, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::AnimGraphNode_TransitionResult_2' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, AnimGraphNode_TransitionResult_1) == 0x0002A0, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::AnimGraphNode_TransitionResult_1' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, AnimGraphNode_TransitionResult) == 0x0002D0, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::AnimGraphNode_TransitionResult' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, AnimGraphNode_SequencePlayer_5) == 0x000300, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::AnimGraphNode_SequencePlayer_5' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, AnimGraphNode_StateResult_5) == 0x000330, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::AnimGraphNode_StateResult_5' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, AnimGraphNode_SequencePlayer_4) == 0x000360, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::AnimGraphNode_SequencePlayer_4' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, AnimGraphNode_StateResult_4) == 0x000390, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::AnimGraphNode_StateResult_4' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, AnimGraphNode_SequencePlayer_3) == 0x0003C0, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::AnimGraphNode_SequencePlayer_3' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, AnimGraphNode_StateResult_3) == 0x0003F0, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::AnimGraphNode_StateResult_3' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, AnimGraphNode_SequencePlayer_2) == 0x000420, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::AnimGraphNode_SequencePlayer_2' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, AnimGraphNode_StateResult_2) == 0x000450, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::AnimGraphNode_StateResult_2' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, AnimGraphNode_SequencePlayer_1) == 0x000480, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::AnimGraphNode_SequencePlayer_1' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, AnimGraphNode_StateResult_1) == 0x0004B0, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::AnimGraphNode_StateResult_1' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, AnimGraphNode_SequencePlayer) == 0x0004E0, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::AnimGraphNode_SequencePlayer' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, AnimGraphNode_StateResult) == 0x000510, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::AnimGraphNode_StateResult' has a wrong offset!");
-static_assert(offsetof(ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData, AnimGraphNode_StateMachine) == 0x000540, "Member 'ABP_KingBoomBoo::FAnimBlueprintGeneratedConstantData::AnimGraphNode_StateMachine' has a wrong offset!");
-
-// ScriptStruct ABP_KingBoomBoo.ABP_KingBoomBoo_C.AnimBlueprintGeneratedMutableData
-// 0x0000 (0x0001 - 0x0001)
-struct ABP_KingBoomBoo::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
-{
-};
-static_assert(alignof(ABP_KingBoomBoo::FAnimBlueprintGeneratedMutableData) == 0x000001, "Wrong alignment on ABP_KingBoomBoo::FAnimBlueprintGeneratedMutableData");
-static_assert(sizeof(ABP_KingBoomBoo::FAnimBlueprintGeneratedMutableData) == 0x000001, "Wrong size on ABP_KingBoomBoo::FAnimBlueprintGeneratedMutableData");
+DUMPER7_ASSERTS_ABP_KingBoomBoo__FAnimBlueprintGeneratedConstantData;
 
 }
 

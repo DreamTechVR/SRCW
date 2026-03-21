@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "UNION_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "UNION_structs.hpp"
 #include "ControlRig_structs.hpp"
 #include "KawaiiPhysics_structs.hpp"
 
@@ -74,47 +74,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABP_Rouge_Physics_C">();
+		BP_STATIC_CLASS_IMPL("ABP_Rouge_Physics_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABP_Rouge_Physics_C")
 	}
 	static class UABP_Rouge_Physics_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UABP_Rouge_Physics_C>();
 	}
 };
-static_assert(alignof(UABP_Rouge_Physics_C) == 0x000010, "Wrong alignment on UABP_Rouge_Physics_C");
-static_assert(sizeof(UABP_Rouge_Physics_C) == 0x0023D0, "Wrong size on UABP_Rouge_Physics_C");
-static_assert(offsetof(UABP_Rouge_Physics_C, UberGraphFrame) == 0x000370, "Member 'UABP_Rouge_Physics_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UABP_Rouge_Physics_C, AnimBlueprintExtension_PropertyAccess) == 0x000378, "Member 'UABP_Rouge_Physics_C::AnimBlueprintExtension_PropertyAccess' has a wrong offset!");
-static_assert(offsetof(UABP_Rouge_Physics_C, AnimBlueprintExtension_Base) == 0x000380, "Member 'UABP_Rouge_Physics_C::AnimBlueprintExtension_Base' has a wrong offset!");
-static_assert(offsetof(UABP_Rouge_Physics_C, AnimGraphNode_Root_8) == 0x000388, "Member 'UABP_Rouge_Physics_C::AnimGraphNode_Root_8' has a wrong offset!");
-static_assert(offsetof(UABP_Rouge_Physics_C, AnimGraphNode_LinkedInputPose_13) == 0x0003A8, "Member 'UABP_Rouge_Physics_C::AnimGraphNode_LinkedInputPose_13' has a wrong offset!");
-static_assert(offsetof(UABP_Rouge_Physics_C, AnimGraphNode_LinkedInputPose_12) == 0x000460, "Member 'UABP_Rouge_Physics_C::AnimGraphNode_LinkedInputPose_12' has a wrong offset!");
-static_assert(offsetof(UABP_Rouge_Physics_C, AnimGraphNode_LinkedInputPose_11) == 0x000518, "Member 'UABP_Rouge_Physics_C::AnimGraphNode_LinkedInputPose_11' has a wrong offset!");
-static_assert(offsetof(UABP_Rouge_Physics_C, AnimGraphNode_Root_7) == 0x0005D0, "Member 'UABP_Rouge_Physics_C::AnimGraphNode_Root_7' has a wrong offset!");
-static_assert(offsetof(UABP_Rouge_Physics_C, AnimGraphNode_LinkedInputPose_10) == 0x0005F0, "Member 'UABP_Rouge_Physics_C::AnimGraphNode_LinkedInputPose_10' has a wrong offset!");
-static_assert(offsetof(UABP_Rouge_Physics_C, AnimGraphNode_LinkedInputPose_9) == 0x0006A8, "Member 'UABP_Rouge_Physics_C::AnimGraphNode_LinkedInputPose_9' has a wrong offset!");
-static_assert(offsetof(UABP_Rouge_Physics_C, AnimGraphNode_Root_6) == 0x000760, "Member 'UABP_Rouge_Physics_C::AnimGraphNode_Root_6' has a wrong offset!");
-static_assert(offsetof(UABP_Rouge_Physics_C, AnimGraphNode_LinkedInputPose_8) == 0x000780, "Member 'UABP_Rouge_Physics_C::AnimGraphNode_LinkedInputPose_8' has a wrong offset!");
-static_assert(offsetof(UABP_Rouge_Physics_C, AnimGraphNode_LinkedInputPose_7) == 0x000838, "Member 'UABP_Rouge_Physics_C::AnimGraphNode_LinkedInputPose_7' has a wrong offset!");
-static_assert(offsetof(UABP_Rouge_Physics_C, AnimGraphNode_Root_5) == 0x0008F0, "Member 'UABP_Rouge_Physics_C::AnimGraphNode_Root_5' has a wrong offset!");
-static_assert(offsetof(UABP_Rouge_Physics_C, AnimGraphNode_LinkedInputPose_6) == 0x000910, "Member 'UABP_Rouge_Physics_C::AnimGraphNode_LinkedInputPose_6' has a wrong offset!");
-static_assert(offsetof(UABP_Rouge_Physics_C, AnimGraphNode_LinkedInputPose_5) == 0x0009C8, "Member 'UABP_Rouge_Physics_C::AnimGraphNode_LinkedInputPose_5' has a wrong offset!");
-static_assert(offsetof(UABP_Rouge_Physics_C, AnimGraphNode_Root_4) == 0x000A80, "Member 'UABP_Rouge_Physics_C::AnimGraphNode_Root_4' has a wrong offset!");
-static_assert(offsetof(UABP_Rouge_Physics_C, AnimGraphNode_LinkedInputPose_4) == 0x000AA0, "Member 'UABP_Rouge_Physics_C::AnimGraphNode_LinkedInputPose_4' has a wrong offset!");
-static_assert(offsetof(UABP_Rouge_Physics_C, AnimGraphNode_LinkedInputPose_3) == 0x000B58, "Member 'UABP_Rouge_Physics_C::AnimGraphNode_LinkedInputPose_3' has a wrong offset!");
-static_assert(offsetof(UABP_Rouge_Physics_C, AnimGraphNode_Root_3) == 0x000C10, "Member 'UABP_Rouge_Physics_C::AnimGraphNode_Root_3' has a wrong offset!");
-static_assert(offsetof(UABP_Rouge_Physics_C, AnimGraphNode_LinkedInputPose_2) == 0x000C30, "Member 'UABP_Rouge_Physics_C::AnimGraphNode_LinkedInputPose_2' has a wrong offset!");
-static_assert(offsetof(UABP_Rouge_Physics_C, AnimGraphNode_KawaiiPhysics_1) == 0x000CF0, "Member 'UABP_Rouge_Physics_C::AnimGraphNode_KawaiiPhysics_1' has a wrong offset!");
-static_assert(offsetof(UABP_Rouge_Physics_C, AnimGraphNode_KawaiiPhysics) == 0x0014E0, "Member 'UABP_Rouge_Physics_C::AnimGraphNode_KawaiiPhysics' has a wrong offset!");
-static_assert(offsetof(UABP_Rouge_Physics_C, AnimGraphNode_LocalToComponentSpace) == 0x001CD0, "Member 'UABP_Rouge_Physics_C::AnimGraphNode_LocalToComponentSpace' has a wrong offset!");
-static_assert(offsetof(UABP_Rouge_Physics_C, AnimGraphNode_ComponentToLocalSpace) == 0x001CF0, "Member 'UABP_Rouge_Physics_C::AnimGraphNode_ComponentToLocalSpace' has a wrong offset!");
-static_assert(offsetof(UABP_Rouge_Physics_C, AnimGraphNode_Root_2) == 0x001D10, "Member 'UABP_Rouge_Physics_C::AnimGraphNode_Root_2' has a wrong offset!");
-static_assert(offsetof(UABP_Rouge_Physics_C, AnimGraphNode_LinkedInputPose_1) == 0x001D30, "Member 'UABP_Rouge_Physics_C::AnimGraphNode_LinkedInputPose_1' has a wrong offset!");
-static_assert(offsetof(UABP_Rouge_Physics_C, AnimGraphNode_ControlRig) == 0x001DE8, "Member 'UABP_Rouge_Physics_C::AnimGraphNode_ControlRig' has a wrong offset!");
-static_assert(offsetof(UABP_Rouge_Physics_C, AnimGraphNode_Root_1) == 0x0022B8, "Member 'UABP_Rouge_Physics_C::AnimGraphNode_Root_1' has a wrong offset!");
-static_assert(offsetof(UABP_Rouge_Physics_C, AnimGraphNode_LinkedInputPose) == 0x0022D8, "Member 'UABP_Rouge_Physics_C::AnimGraphNode_LinkedInputPose' has a wrong offset!");
-static_assert(offsetof(UABP_Rouge_Physics_C, AnimGraphNode_Root) == 0x002390, "Member 'UABP_Rouge_Physics_C::AnimGraphNode_Root' has a wrong offset!");
-static_assert(offsetof(UABP_Rouge_Physics_C, Common_Physics_Settings) == 0x0023B0, "Member 'UABP_Rouge_Physics_C::Common_Physics_Settings' has a wrong offset!");
+DUMPER7_ASSERTS_UABP_Rouge_Physics_C;
 
 }
 

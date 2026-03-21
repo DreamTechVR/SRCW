@@ -12,9 +12,9 @@
 
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UNION_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "UnionUI_structs.hpp"
 #include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
@@ -48,23 +48,7 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x01A0(0x0010)(ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x01B0(0x0010)()
 };
-static_assert(alignof(WBP_PartyRace_C_ChangeViewState) == 0x000008, "Wrong alignment on WBP_PartyRace_C_ChangeViewState");
-static_assert(sizeof(WBP_PartyRace_C_ChangeViewState) == 0x0001C0, "Wrong size on WBP_PartyRace_C_ChangeViewState");
-static_assert(offsetof(WBP_PartyRace_C_ChangeViewState, InState) == 0x000000, "Member 'WBP_PartyRace_C_ChangeViewState::InState' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ChangeViewState, CallFunc_GetEnumeratorName_ReturnValue) == 0x000004, "Member 'WBP_PartyRace_C_ChangeViewState::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ChangeViewState, K2Node_SwitchEnum_CmpSuccess) == 0x00000C, "Member 'WBP_PartyRace_C_ChangeViewState::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ChangeViewState, CallFunc_Conv_NameToText_ReturnValue) == 0x000010, "Member 'WBP_PartyRace_C_ChangeViewState::CallFunc_Conv_NameToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ChangeViewState, K2Node_MakeStruct_FormatArgumentData) == 0x000020, "Member 'WBP_PartyRace_C_ChangeViewState::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ChangeViewState, CallFunc_Map_Find_Value) == 0x000068, "Member 'WBP_PartyRace_C_ChangeViewState::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ChangeViewState, CallFunc_Map_Find_ReturnValue) == 0x000120, "Member 'WBP_PartyRace_C_ChangeViewState::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ChangeViewState, CallFunc_PlayAnimation_ReturnValue) == 0x000128, "Member 'WBP_PartyRace_C_ChangeViewState::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ChangeViewState, CallFunc_PlayAnimation_ReturnValue_1) == 0x000130, "Member 'WBP_PartyRace_C_ChangeViewState::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ChangeViewState, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000138, "Member 'WBP_PartyRace_C_ChangeViewState::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ChangeViewState, CallFunc_GetEnumeratorName_ReturnValue_1) == 0x00013C, "Member 'WBP_PartyRace_C_ChangeViewState::CallFunc_GetEnumeratorName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ChangeViewState, CallFunc_Conv_NameToText_ReturnValue_1) == 0x000148, "Member 'WBP_PartyRace_C_ChangeViewState::CallFunc_Conv_NameToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ChangeViewState, K2Node_MakeStruct_FormatArgumentData_1) == 0x000158, "Member 'WBP_PartyRace_C_ChangeViewState::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ChangeViewState, K2Node_MakeArray_Array) == 0x0001A0, "Member 'WBP_PartyRace_C_ChangeViewState::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ChangeViewState, CallFunc_Format_ReturnValue) == 0x0001B0, "Member 'WBP_PartyRace_C_ChangeViewState::CallFunc_Format_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_C_ChangeViewState;
 
 // Function WBP_PartyRace.WBP_PartyRace_C.ExchangeWindow
 // 0x0001 (0x0001 - 0x0000)
@@ -73,9 +57,7 @@ struct WBP_PartyRace_C_ExchangeWindow final
 public:
 	EPartyRaceSelectPresetState                   ToState;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_C_ExchangeWindow) == 0x000001, "Wrong alignment on WBP_PartyRace_C_ExchangeWindow");
-static_assert(sizeof(WBP_PartyRace_C_ExchangeWindow) == 0x000001, "Wrong size on WBP_PartyRace_C_ExchangeWindow");
-static_assert(offsetof(WBP_PartyRace_C_ExchangeWindow, ToState) == 0x000000, "Member 'WBP_PartyRace_C_ExchangeWindow::ToState' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_C_ExchangeWindow;
 
 // Function WBP_PartyRace.WBP_PartyRace_C.ExecuteUbergraph_WBP_PartyRace
 // 0x02E8 (0x02E8 - 0x0000)
@@ -190,95 +172,7 @@ public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_1;                  // 0x02E0(0x0004)()
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_2;                  // 0x02E4(0x0004)()
 };
-static_assert(alignof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace) == 0x000008, "Wrong alignment on WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace");
-static_assert(sizeof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace) == 0x0002E8, "Wrong size on WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, EntryPoint) == 0x000000, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, Temp_byte_Variable) == 0x000014, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, Temp_byte_Variable_1) == 0x000015, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, Temp_byte_Variable_2) == 0x000016, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, Temp_byte_Variable_3) == 0x000017, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, K2Node_CreateDelegate_OutputDelegate_1) == 0x000018, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, K2Node_CreateDelegate_OutputDelegate_2) == 0x000028, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, K2Node_CreateDelegate_OutputDelegate_3) == 0x000038, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, K2Node_MakeArray_Array) == 0x000048, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_Array_Length_ReturnValue) == 0x000058, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, Temp_int_Variable) == 0x00005C, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_Add_IntInt_ReturnValue) == 0x000060, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_Conv_IntToByte_ReturnValue) == 0x000064, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_GetEnumeratorValueFromIndex_ReturnValue) == 0x000065, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_GetEnumeratorValueFromIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000068, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, Temp_int_Variable_1) == 0x00006C, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_Conv_IntToByte_ReturnValue_1) == 0x000070, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_Conv_IntToByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_GetValidValue_ReturnValue) == 0x000071, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_GetEnumeratorName_ReturnValue) == 0x000074, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_GetDataTableRowFromName_OutRow) == 0x000080, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000138, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, K2Node_SwitchEnum_CmpSuccess) == 0x000139, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_GetPlayerController_ReturnValue) == 0x000140, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, K2Node_CustomEvent_ToState) == 0x000148, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::K2Node_CustomEvent_ToState' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_PlayAnimation_ReturnValue) == 0x000150, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_GetPlayerController_ReturnValue_1) == 0x000158, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_GetLastFocusedButton_OutLastFocusedButtonIndex) == 0x000160, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_GetLastFocusedButton_OutLastFocusedButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_GetLastFocusedButton_ReturnValue) == 0x000168, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_GetLastFocusedButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_IsValid_ReturnValue) == 0x000170, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, K2Node_CustomEvent_Button_2) == 0x000178, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::K2Node_CustomEvent_Button_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, K2Node_CustomEvent_PanelIndex_2) == 0x000180, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::K2Node_CustomEvent_PanelIndex_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, K2Node_CustomEvent_ButtonIndex_2) == 0x000184, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::K2Node_CustomEvent_ButtonIndex_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, K2Node_CustomEvent_Button_1) == 0x000188, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::K2Node_CustomEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, K2Node_CustomEvent_PanelIndex_1) == 0x000190, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::K2Node_CustomEvent_PanelIndex_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, K2Node_CustomEvent_ButtonIndex_1) == 0x000194, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::K2Node_CustomEvent_ButtonIndex_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_MakeColor_ReturnValue) == 0x000198, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_MakeColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_SoundPlay_ReturnValue) == 0x0001A8, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, K2Node_SwitchEnum_CmpSuccess_1) == 0x0001AC, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_Array_Length_ReturnValue_1) == 0x0001B0, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, K2Node_Select_Default) == 0x0001B4, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_Array_Length_ReturnValue_2) == 0x0001B8, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, K2Node_Event_MyGeometry) == 0x0001BC, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, K2Node_Event_InDeltaTime) == 0x0001F4, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_SpawnObject_ReturnValue) == 0x0001F8, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, K2Node_CreateDelegate_OutputDelegate_4) == 0x000200, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, Temp_int_Loop_Counter_Variable) == 0x000210, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_Less_IntInt_ReturnValue) == 0x000214, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_Add_IntInt_ReturnValue_1) == 0x000218, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_GetPlayerController_ReturnValue_2) == 0x000220, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_GetPlayerController_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_GetPlayerController_ReturnValue_3) == 0x000228, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_GetPlayerController_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000230, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, K2Node_DynamicCast_bSuccess) == 0x000238, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, K2Node_DynamicCast_AsApp_Player_Controller_1) == 0x000240, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::K2Node_DynamicCast_AsApp_Player_Controller_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, K2Node_DynamicCast_bSuccess_1) == 0x000248, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, Temp_int_Array_Index_Variable) == 0x00024C, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_GetPlayerController_ReturnValue_4) == 0x000250, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_GetPlayerController_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_Array_Get_Item) == 0x000258, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, K2Node_DynamicCast_AsWBP_Party_Race_Sub_Menu_Btn) == 0x000260, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::K2Node_DynamicCast_AsWBP_Party_Race_Sub_Menu_Btn' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, K2Node_DynamicCast_bSuccess_2) == 0x000268, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, K2Node_SwitchEnum_CmpSuccess_2) == 0x000269, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::K2Node_SwitchEnum_CmpSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, Temp_int_Loop_Counter_Variable_1) == 0x00026C, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_MakeLiteralInt_ReturnValue) == 0x000270, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_Less_IntInt_ReturnValue_1) == 0x000274, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_Less_IntInt_ReturnValue_2) == 0x000275, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_Add_IntInt_ReturnValue_2) == 0x000278, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, Temp_int_Array_Index_Variable_1) == 0x00027C, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_Array_Get_Item_1) == 0x000280, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, K2Node_DynamicCast_AsWBP_Party_Race_Sub_Menu_Btn_1) == 0x000288, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::K2Node_DynamicCast_AsWBP_Party_Race_Sub_Menu_Btn_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, K2Node_DynamicCast_bSuccess_3) == 0x000290, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, Temp_int_Loop_Counter_Variable_2) == 0x000294, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, Temp_int_Array_Index_Variable_2) == 0x000298, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00029C, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x00029D, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_Array_Get_Item_2) == 0x0002A0, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_BooleanOR_ReturnValue) == 0x0002A8, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_Less_IntInt_ReturnValue_3) == 0x0002A9, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_Add_IntInt_ReturnValue_3) == 0x0002AC, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, K2Node_SwitchEnum_CmpSuccess_3) == 0x0002B0, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::K2Node_SwitchEnum_CmpSuccess_3' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_GetPlayerController_ReturnValue_5) == 0x0002B8, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_GetPlayerController_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, K2Node_DynamicCast_AsApp_Player_Controller_2) == 0x0002C0, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::K2Node_DynamicCast_AsApp_Player_Controller_2' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, K2Node_DynamicCast_bSuccess_4) == 0x0002C8, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, K2Node_CustomEvent_Button) == 0x0002D0, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, K2Node_CustomEvent_PanelIndex) == 0x0002D8, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::K2Node_CustomEvent_PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, K2Node_CustomEvent_ButtonIndex) == 0x0002DC, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::K2Node_CustomEvent_ButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_SoundPlay_ReturnValue_1) == 0x0002E0, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace, CallFunc_SoundPlay_ReturnValue_2) == 0x0002E4, "Member 'WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace::CallFunc_SoundPlay_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_C_ExecuteUbergraph_WBP_PartyRace;
 
 // Function WBP_PartyRace.WBP_PartyRace_C.OnConfirmWindowCancel
 // 0x0010 (0x0010 - 0x0000)
@@ -289,11 +183,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_C_OnConfirmWindowCancel) == 0x000008, "Wrong alignment on WBP_PartyRace_C_OnConfirmWindowCancel");
-static_assert(sizeof(WBP_PartyRace_C_OnConfirmWindowCancel) == 0x000010, "Wrong size on WBP_PartyRace_C_OnConfirmWindowCancel");
-static_assert(offsetof(WBP_PartyRace_C_OnConfirmWindowCancel, Button) == 0x000000, "Member 'WBP_PartyRace_C_OnConfirmWindowCancel::Button' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_OnConfirmWindowCancel, PanelIndex) == 0x000008, "Member 'WBP_PartyRace_C_OnConfirmWindowCancel::PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_OnConfirmWindowCancel, ButtonIndex) == 0x00000C, "Member 'WBP_PartyRace_C_OnConfirmWindowCancel::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_C_OnConfirmWindowCancel;
 
 // Function WBP_PartyRace.WBP_PartyRace_C.OnDetailWindowCancel
 // 0x0010 (0x0010 - 0x0000)
@@ -304,11 +194,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_C_OnDetailWindowCancel) == 0x000008, "Wrong alignment on WBP_PartyRace_C_OnDetailWindowCancel");
-static_assert(sizeof(WBP_PartyRace_C_OnDetailWindowCancel) == 0x000010, "Wrong size on WBP_PartyRace_C_OnDetailWindowCancel");
-static_assert(offsetof(WBP_PartyRace_C_OnDetailWindowCancel, Button) == 0x000000, "Member 'WBP_PartyRace_C_OnDetailWindowCancel::Button' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_OnDetailWindowCancel, PanelIndex) == 0x000008, "Member 'WBP_PartyRace_C_OnDetailWindowCancel::PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_OnDetailWindowCancel, ButtonIndex) == 0x00000C, "Member 'WBP_PartyRace_C_OnDetailWindowCancel::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_C_OnDetailWindowCancel;
 
 // Function WBP_PartyRace.WBP_PartyRace_C.OnFocusReceived
 // 0x01E8 (0x01E8 - 0x0000)
@@ -330,20 +216,7 @@ public:
 	class UUnionUIButtonBase*                     K2Node_DynamicCast_AsUnion_UIButton_Base;          // 0x01D8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_C_OnFocusReceived) == 0x000008, "Wrong alignment on WBP_PartyRace_C_OnFocusReceived");
-static_assert(sizeof(WBP_PartyRace_C_OnFocusReceived) == 0x0001E8, "Wrong size on WBP_PartyRace_C_OnFocusReceived");
-static_assert(offsetof(WBP_PartyRace_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'WBP_PartyRace_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'WBP_PartyRace_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'WBP_PartyRace_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_OnFocusReceived, CallFunc_GetPlayerController_ReturnValue) == 0x0000F8, "Member 'WBP_PartyRace_C_OnFocusReceived::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_OnFocusReceived, CallFunc_GetPlayerController_ReturnValue_1) == 0x000100, "Member 'WBP_PartyRace_C_OnFocusReceived::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_OnFocusReceived, CallFunc_GetLastFocusedButton_OutLastFocusedButtonIndex) == 0x000108, "Member 'WBP_PartyRace_C_OnFocusReceived::CallFunc_GetLastFocusedButton_OutLastFocusedButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_OnFocusReceived, CallFunc_GetLastFocusedButton_ReturnValue) == 0x000110, "Member 'WBP_PartyRace_C_OnFocusReceived::CallFunc_GetLastFocusedButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_OnFocusReceived, K2Node_MakeStruct_EventReply) == 0x000118, "Member 'WBP_PartyRace_C_OnFocusReceived::K2Node_MakeStruct_EventReply' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_OnFocusReceived, CallFunc_IsValid_ReturnValue) == 0x0001D0, "Member 'WBP_PartyRace_C_OnFocusReceived::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_OnFocusReceived, CallFunc_HasAnyUserFocus_ReturnValue) == 0x0001D1, "Member 'WBP_PartyRace_C_OnFocusReceived::CallFunc_HasAnyUserFocus_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_OnFocusReceived, K2Node_DynamicCast_AsUnion_UIButton_Base) == 0x0001D8, "Member 'WBP_PartyRace_C_OnFocusReceived::K2Node_DynamicCast_AsUnion_UIButton_Base' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_OnFocusReceived, K2Node_DynamicCast_bSuccess) == 0x0001E0, "Member 'WBP_PartyRace_C_OnFocusReceived::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_C_OnFocusReceived;
 
 // Function WBP_PartyRace.WBP_PartyRace_C.OnUISceneDecisionEvent_Event
 // 0x0010 (0x0010 - 0x0000)
@@ -354,11 +227,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_C_OnUISceneDecisionEvent_Event) == 0x000008, "Wrong alignment on WBP_PartyRace_C_OnUISceneDecisionEvent_Event");
-static_assert(sizeof(WBP_PartyRace_C_OnUISceneDecisionEvent_Event) == 0x000010, "Wrong size on WBP_PartyRace_C_OnUISceneDecisionEvent_Event");
-static_assert(offsetof(WBP_PartyRace_C_OnUISceneDecisionEvent_Event, Button) == 0x000000, "Member 'WBP_PartyRace_C_OnUISceneDecisionEvent_Event::Button' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_OnUISceneDecisionEvent_Event, PanelIndex) == 0x000008, "Member 'WBP_PartyRace_C_OnUISceneDecisionEvent_Event::PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_OnUISceneDecisionEvent_Event, ButtonIndex) == 0x00000C, "Member 'WBP_PartyRace_C_OnUISceneDecisionEvent_Event::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_C_OnUISceneDecisionEvent_Event;
 
 // Function WBP_PartyRace.WBP_PartyRace_C.SetConfirmed
 // 0x0001 (0x0001 - 0x0000)
@@ -367,9 +236,7 @@ struct WBP_PartyRace_C_SetConfirmed final
 public:
 	bool                                          bBackedSequence_0;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_C_SetConfirmed) == 0x000001, "Wrong alignment on WBP_PartyRace_C_SetConfirmed");
-static_assert(sizeof(WBP_PartyRace_C_SetConfirmed) == 0x000001, "Wrong size on WBP_PartyRace_C_SetConfirmed");
-static_assert(offsetof(WBP_PartyRace_C_SetConfirmed, bBackedSequence_0) == 0x000000, "Member 'WBP_PartyRace_C_SetConfirmed::bBackedSequence_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_C_SetConfirmed;
 
 // Function WBP_PartyRace.WBP_PartyRace_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -379,10 +246,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PartyRace_C_Tick) == 0x000004, "Wrong alignment on WBP_PartyRace_C_Tick");
-static_assert(sizeof(WBP_PartyRace_C_Tick) == 0x00003C, "Wrong size on WBP_PartyRace_C_Tick");
-static_assert(offsetof(WBP_PartyRace_C_Tick, MyGeometry) == 0x000000, "Member 'WBP_PartyRace_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_C_Tick, InDeltaTime) == 0x000038, "Member 'WBP_PartyRace_C_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_PartyRace_C_Tick;
 
 }
 

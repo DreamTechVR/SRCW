@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_FooterMenu_Sub_KeyCross_C">();
+		BP_STATIC_CLASS_IMPL("WBP_FooterMenu_Sub_KeyCross_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_FooterMenu_Sub_KeyCross_C")
 	}
 	static class UWBP_FooterMenu_Sub_KeyCross_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_FooterMenu_Sub_KeyCross_C>();
 	}
 };
-static_assert(alignof(UWBP_FooterMenu_Sub_KeyCross_C) == 0x000008, "Wrong alignment on UWBP_FooterMenu_Sub_KeyCross_C");
-static_assert(sizeof(UWBP_FooterMenu_Sub_KeyCross_C) == 0x0002E8, "Wrong size on UWBP_FooterMenu_Sub_KeyCross_C");
-static_assert(offsetof(UWBP_FooterMenu_Sub_KeyCross_C, KeyCross) == 0x0002E0, "Member 'UWBP_FooterMenu_Sub_KeyCross_C::KeyCross' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_FooterMenu_Sub_KeyCross_C;
 
 }
 

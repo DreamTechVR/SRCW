@@ -18,12 +18,13 @@ namespace SDK
 {
 
 // Function BPFL_DodonpaEventUtilityLibrary.BPFL_DodonpaEventUtilityLibrary_C.Call Dodonpa Event
-// (Static, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FName                             EventName                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool*                                   IsSucceeded                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBPFL_DodonpaEventUtilityLibrary_C::Call_Dodonpa_Event(class FName EventName, class UObject* __WorldContext)
+void UBPFL_DodonpaEventUtilityLibrary_C::Call_Dodonpa_Event(class FName EventName, class UObject* __WorldContext, bool* IsSucceeded)
 {
 	static class UFunction* Func = nullptr;
 
@@ -36,6 +37,9 @@ void UBPFL_DodonpaEventUtilityLibrary_C::Call_Dodonpa_Event(class FName EventNam
 	Parms.__WorldContext = __WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	if (IsSucceeded != nullptr)
+		*IsSucceeded = Parms.IsSucceeded;
 }
 
 

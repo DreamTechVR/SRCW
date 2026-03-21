@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "UnionRun_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UnionRun_classes.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -71,50 +71,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Tutorial_Controller_Key_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Tutorial_Controller_Key_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Tutorial_Controller_Key_C")
 	}
 	static class UWBP_Tutorial_Controller_Key_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Tutorial_Controller_Key_C>();
 	}
 };
-static_assert(alignof(UWBP_Tutorial_Controller_Key_C) == 0x000008, "Wrong alignment on UWBP_Tutorial_Controller_Key_C");
-static_assert(sizeof(UWBP_Tutorial_Controller_Key_C) == 0x0003F8, "Wrong size on UWBP_Tutorial_Controller_Key_C");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Tutorial_Controller_Key_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, airTrick) == 0x0002E8, "Member 'UWBP_Tutorial_Controller_Key_C::airTrick' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, Arrow) == 0x0002F0, "Member 'UWBP_Tutorial_Controller_Key_C::Arrow' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, Arrow_Down) == 0x0002F8, "Member 'UWBP_Tutorial_Controller_Key_C::Arrow_Down' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, Arrow_Left) == 0x000300, "Member 'UWBP_Tutorial_Controller_Key_C::Arrow_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, Arrow_Left_1) == 0x000308, "Member 'UWBP_Tutorial_Controller_Key_C::Arrow_Left_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, Arrow_Left_02) == 0x000310, "Member 'UWBP_Tutorial_Controller_Key_C::Arrow_Left_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, Arrow_Right_02) == 0x000318, "Member 'UWBP_Tutorial_Controller_Key_C::Arrow_Right_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, Arrow_Up) == 0x000320, "Member 'UWBP_Tutorial_Controller_Key_C::Arrow_Up' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, ChargeJump) == 0x000328, "Member 'UWBP_Tutorial_Controller_Key_C::ChargeJump' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, ChargeJump_Arrow) == 0x000330, "Member 'UWBP_Tutorial_Controller_Key_C::ChargeJump_Arrow' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, ChargeJump_Btn_Key) == 0x000338, "Member 'UWBP_Tutorial_Controller_Key_C::ChargeJump_Btn_Key' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, ChargeJump_Hold) == 0x000340, "Member 'UWBP_Tutorial_Controller_Key_C::ChargeJump_Hold' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, ChargeJump_Release) == 0x000348, "Member 'UWBP_Tutorial_Controller_Key_C::ChargeJump_Release' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, ChargeJump_Release_Image) == 0x000350, "Member 'UWBP_Tutorial_Controller_Key_C::ChargeJump_Release_Image' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, Drift) == 0x000358, "Member 'UWBP_Tutorial_Controller_Key_C::Drift' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, OneKey) == 0x000360, "Member 'UWBP_Tutorial_Controller_Key_C::OneKey' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, OneKeyButton) == 0x000368, "Member 'UWBP_Tutorial_Controller_Key_C::OneKeyButton' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, Plus_02) == 0x000370, "Member 'UWBP_Tutorial_Controller_Key_C::Plus_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, StartDash) == 0x000378, "Member 'UWBP_Tutorial_Controller_Key_C::StartDash' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, StartDash_Btn_Key) == 0x000380, "Member 'UWBP_Tutorial_Controller_Key_C::StartDash_Btn_Key' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, TXT_Btn_Trigger_L_Hold) == 0x000388, "Member 'UWBP_Tutorial_Controller_Key_C::TXT_Btn_Trigger_L_Hold' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, TXT_Btn_Trigger_L_Hold_1) == 0x000390, "Member 'UWBP_Tutorial_Controller_Key_C::TXT_Btn_Trigger_L_Hold_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, TXT_Btn_Trigger_L_Release) == 0x000398, "Member 'UWBP_Tutorial_Controller_Key_C::TXT_Btn_Trigger_L_Release' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, UseItem) == 0x0003A0, "Member 'UWBP_Tutorial_Controller_Key_C::UseItem' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, UseItem_Btn_Key) == 0x0003A8, "Member 'UWBP_Tutorial_Controller_Key_C::UseItem_Btn_Key' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, WBP_Race_Sub_Btn_Key) == 0x0003B0, "Member 'UWBP_Tutorial_Controller_Key_C::WBP_Race_Sub_Btn_Key' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, WBP_Race_Sub_Btn_Key_1) == 0x0003B8, "Member 'UWBP_Tutorial_Controller_Key_C::WBP_Race_Sub_Btn_Key_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, WBP_Race_Sub_Btn_Key_2) == 0x0003C0, "Member 'UWBP_Tutorial_Controller_Key_C::WBP_Race_Sub_Btn_Key_2' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, WBP_Race_Sub_Btn_Key_3) == 0x0003C8, "Member 'UWBP_Tutorial_Controller_Key_C::WBP_Race_Sub_Btn_Key_3' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, WBP_Race_Sub_Btn_Key_4) == 0x0003D0, "Member 'UWBP_Tutorial_Controller_Key_C::WBP_Race_Sub_Btn_Key_4' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, WBP_Race_Sub_Btn_Key_5) == 0x0003D8, "Member 'UWBP_Tutorial_Controller_Key_C::WBP_Race_Sub_Btn_Key_5' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, WBP_Race_Sub_Btn_Key_6) == 0x0003E0, "Member 'UWBP_Tutorial_Controller_Key_C::WBP_Race_Sub_Btn_Key_6' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, WidgetSwitcher_BasicInfo) == 0x0003E8, "Member 'UWBP_Tutorial_Controller_Key_C::WidgetSwitcher_BasicInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_Tutorial_Controller_Key_C, Hint_Id) == 0x0003F0, "Member 'UWBP_Tutorial_Controller_Key_C::Hint_Id' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Tutorial_Controller_Key_C;
 
 }
 

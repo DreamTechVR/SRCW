@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPFL_CommonStageCameraUtility_C">();
+		BP_STATIC_CLASS_IMPL("BPFL_CommonStageCameraUtility_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPFL_CommonStageCameraUtility_C")
 	}
 	static class UBPFL_CommonStageCameraUtility_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPFL_CommonStageCameraUtility_C>();
 	}
 };
-static_assert(alignof(UBPFL_CommonStageCameraUtility_C) == 0x000008, "Wrong alignment on UBPFL_CommonStageCameraUtility_C");
-static_assert(sizeof(UBPFL_CommonStageCameraUtility_C) == 0x000028, "Wrong size on UBPFL_CommonStageCameraUtility_C");
+DUMPER7_ASSERTS_UBPFL_CommonStageCameraUtility_C;
 
 }
 

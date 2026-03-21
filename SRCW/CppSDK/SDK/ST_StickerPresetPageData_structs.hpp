@@ -23,9 +23,7 @@ struct FST_StickerPresetPageData final
 public:
 	TArray<struct FST_StickerPresetPageItemData>  ItemDataList_5_E3DCD7444FE54754F7403E80CD3093D0;   // 0x0000(0x0010)(Edit, BlueprintVisible)
 };
-static_assert(alignof(FST_StickerPresetPageData) == 0x000008, "Wrong alignment on FST_StickerPresetPageData");
-static_assert(sizeof(FST_StickerPresetPageData) == 0x000010, "Wrong size on FST_StickerPresetPageData");
-static_assert(offsetof(FST_StickerPresetPageData, ItemDataList_5_E3DCD7444FE54754F7403E80CD3093D0) == 0x000000, "Member 'FST_StickerPresetPageData::ItemDataList_5_E3DCD7444FE54754F7403E80CD3093D0' has a wrong offset!");
+DUMPER7_ASSERTS_FST_StickerPresetPageData;
 
 }
 

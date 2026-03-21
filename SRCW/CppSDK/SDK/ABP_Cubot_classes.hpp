@@ -23,15 +23,18 @@ class UABP_Cubot_C final : public UABP_DialogueCharacter_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABP_Cubot_C">();
+		BP_STATIC_CLASS_IMPL("ABP_Cubot_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABP_Cubot_C")
 	}
 	static class UABP_Cubot_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UABP_Cubot_C>();
 	}
 };
-static_assert(alignof(UABP_Cubot_C) == 0x000010, "Wrong alignment on UABP_Cubot_C");
-static_assert(sizeof(UABP_Cubot_C) == 0x0009D0, "Wrong size on UABP_Cubot_C");
+DUMPER7_ASSERTS_UABP_Cubot_C;
 
 }
 

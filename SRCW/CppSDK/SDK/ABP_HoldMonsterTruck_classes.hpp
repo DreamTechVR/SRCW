@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -46,28 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABP_HoldMonsterTruck_C">();
+		BP_STATIC_CLASS_IMPL("ABP_HoldMonsterTruck_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABP_HoldMonsterTruck_C")
 	}
 	static class UABP_HoldMonsterTruck_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UABP_HoldMonsterTruck_C>();
 	}
 };
-static_assert(alignof(UABP_HoldMonsterTruck_C) == 0x000010, "Wrong alignment on UABP_HoldMonsterTruck_C");
-static_assert(sizeof(UABP_HoldMonsterTruck_C) == 0x000650, "Wrong size on UABP_HoldMonsterTruck_C");
-static_assert(offsetof(UABP_HoldMonsterTruck_C, UberGraphFrame) == 0x0003E0, "Member 'UABP_HoldMonsterTruck_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UABP_HoldMonsterTruck_C, AnimBlueprintExtension_PropertyAccess) == 0x0003E8, "Member 'UABP_HoldMonsterTruck_C::AnimBlueprintExtension_PropertyAccess' has a wrong offset!");
-static_assert(offsetof(UABP_HoldMonsterTruck_C, AnimBlueprintExtension_Base) == 0x0003F0, "Member 'UABP_HoldMonsterTruck_C::AnimBlueprintExtension_Base' has a wrong offset!");
-static_assert(offsetof(UABP_HoldMonsterTruck_C, AnimGraphNode_Root) == 0x0003F8, "Member 'UABP_HoldMonsterTruck_C::AnimGraphNode_Root' has a wrong offset!");
-static_assert(offsetof(UABP_HoldMonsterTruck_C, AnimGraphNode_TransitionResult_2) == 0x000418, "Member 'UABP_HoldMonsterTruck_C::AnimGraphNode_TransitionResult_2' has a wrong offset!");
-static_assert(offsetof(UABP_HoldMonsterTruck_C, AnimGraphNode_TransitionResult_1) == 0x000440, "Member 'UABP_HoldMonsterTruck_C::AnimGraphNode_TransitionResult_1' has a wrong offset!");
-static_assert(offsetof(UABP_HoldMonsterTruck_C, AnimGraphNode_TransitionResult) == 0x000468, "Member 'UABP_HoldMonsterTruck_C::AnimGraphNode_TransitionResult' has a wrong offset!");
-static_assert(offsetof(UABP_HoldMonsterTruck_C, AnimGraphNode_StateResult_2) == 0x000490, "Member 'UABP_HoldMonsterTruck_C::AnimGraphNode_StateResult_2' has a wrong offset!");
-static_assert(offsetof(UABP_HoldMonsterTruck_C, AnimGraphNode_SequencePlayer_1) == 0x0004B0, "Member 'UABP_HoldMonsterTruck_C::AnimGraphNode_SequencePlayer_1' has a wrong offset!");
-static_assert(offsetof(UABP_HoldMonsterTruck_C, AnimGraphNode_StateResult_1) == 0x0004F8, "Member 'UABP_HoldMonsterTruck_C::AnimGraphNode_StateResult_1' has a wrong offset!");
-static_assert(offsetof(UABP_HoldMonsterTruck_C, AnimGraphNode_SequencePlayer) == 0x000518, "Member 'UABP_HoldMonsterTruck_C::AnimGraphNode_SequencePlayer' has a wrong offset!");
-static_assert(offsetof(UABP_HoldMonsterTruck_C, AnimGraphNode_StateResult) == 0x000560, "Member 'UABP_HoldMonsterTruck_C::AnimGraphNode_StateResult' has a wrong offset!");
-static_assert(offsetof(UABP_HoldMonsterTruck_C, AnimGraphNode_StateMachine) == 0x000580, "Member 'UABP_HoldMonsterTruck_C::AnimGraphNode_StateMachine' has a wrong offset!");
+DUMPER7_ASSERTS_UABP_HoldMonsterTruck_C;
 
 }
 

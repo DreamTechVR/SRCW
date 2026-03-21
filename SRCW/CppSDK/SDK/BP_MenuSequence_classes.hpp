@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -51,29 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_MenuSequence_C">();
+		BP_STATIC_CLASS_IMPL("BP_MenuSequence_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_MenuSequence_C")
 	}
 	static class ABP_MenuSequence_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_MenuSequence_C>();
 	}
 };
-static_assert(alignof(ABP_MenuSequence_C) == 0x000008, "Wrong alignment on ABP_MenuSequence_C");
-static_assert(sizeof(ABP_MenuSequence_C) == 0x000458, "Wrong size on ABP_MenuSequence_C");
-static_assert(offsetof(ABP_MenuSequence_C, UberGraphFrame) == 0x0003E8, "Member 'ABP_MenuSequence_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_MenuSequence_C, BPC_MenuStateEnding) == 0x0003F0, "Member 'ABP_MenuSequence_C::BPC_MenuStateEnding' has a wrong offset!");
-static_assert(offsetof(ABP_MenuSequence_C, BPC_MenuStateInitialize) == 0x0003F8, "Member 'ABP_MenuSequence_C::BPC_MenuStateInitialize' has a wrong offset!");
-static_assert(offsetof(ABP_MenuSequence_C, BPC_SaveAndLoadPlayLogState) == 0x000400, "Member 'ABP_MenuSequence_C::BPC_SaveAndLoadPlayLogState' has a wrong offset!");
-static_assert(offsetof(ABP_MenuSequence_C, BPC_LoadAssets) == 0x000408, "Member 'ABP_MenuSequence_C::BPC_LoadAssets' has a wrong offset!");
-static_assert(offsetof(ABP_MenuSequence_C, BPC_AppNet) == 0x000410, "Member 'ABP_MenuSequence_C::BPC_AppNet' has a wrong offset!");
-static_assert(offsetof(ABP_MenuSequence_C, BPC_MenuStateTimeTrial) == 0x000418, "Member 'ABP_MenuSequence_C::BPC_MenuStateTimeTrial' has a wrong offset!");
-static_assert(offsetof(ABP_MenuSequence_C, BPC_MenuStateTopMenu) == 0x000420, "Member 'ABP_MenuSequence_C::BPC_MenuStateTopMenu' has a wrong offset!");
-static_assert(offsetof(ABP_MenuSequence_C, BPC_MenuStateOnline) == 0x000428, "Member 'ABP_MenuSequence_C::BPC_MenuStateOnline' has a wrong offset!");
-static_assert(offsetof(ABP_MenuSequence_C, BPC_MenuStatePatyRace) == 0x000430, "Member 'ABP_MenuSequence_C::BPC_MenuStatePatyRace' has a wrong offset!");
-static_assert(offsetof(ABP_MenuSequence_C, BPC_MenuStateGrandPrix) == 0x000438, "Member 'ABP_MenuSequence_C::BPC_MenuStateGrandPrix' has a wrong offset!");
-static_assert(offsetof(ABP_MenuSequence_C, BPC_MenuStateTitle) == 0x000440, "Member 'ABP_MenuSequence_C::BPC_MenuStateTitle' has a wrong offset!");
-static_assert(offsetof(ABP_MenuSequence_C, MenuPlayerController) == 0x000448, "Member 'ABP_MenuSequence_C::MenuPlayerController' has a wrong offset!");
-static_assert(offsetof(ABP_MenuSequence_C, Footer) == 0x000450, "Member 'ABP_MenuSequence_C::Footer' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_MenuSequence_C;
 
 }
 

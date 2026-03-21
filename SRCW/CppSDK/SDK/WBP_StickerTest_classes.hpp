@@ -41,23 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_StickerTest_C">();
+		BP_STATIC_CLASS_IMPL("WBP_StickerTest_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_StickerTest_C")
 	}
 	static class UWBP_StickerTest_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_StickerTest_C>();
 	}
 };
-static_assert(alignof(UWBP_StickerTest_C) == 0x000008, "Wrong alignment on UWBP_StickerTest_C");
-static_assert(sizeof(UWBP_StickerTest_C) == 0x000320, "Wrong size on UWBP_StickerTest_C");
-static_assert(offsetof(UWBP_StickerTest_C, GuideOut) == 0x0002E0, "Member 'UWBP_StickerTest_C::GuideOut' has a wrong offset!");
-static_assert(offsetof(UWBP_StickerTest_C, GuideIn) == 0x0002E8, "Member 'UWBP_StickerTest_C::GuideIn' has a wrong offset!");
-static_assert(offsetof(UWBP_StickerTest_C, Image_62) == 0x0002F0, "Member 'UWBP_StickerTest_C::Image_62' has a wrong offset!");
-static_assert(offsetof(UWBP_StickerTest_C, Image_Background) == 0x0002F8, "Member 'UWBP_StickerTest_C::Image_Background' has a wrong offset!");
-static_assert(offsetof(UWBP_StickerTest_C, Image_UvPreview) == 0x000300, "Member 'UWBP_StickerTest_C::Image_UvPreview' has a wrong offset!");
-static_assert(offsetof(UWBP_StickerTest_C, SafeZone_0) == 0x000308, "Member 'UWBP_StickerTest_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UWBP_StickerTest_C, TextBlock_Warning) == 0x000310, "Member 'UWBP_StickerTest_C::TextBlock_Warning' has a wrong offset!");
-static_assert(offsetof(UWBP_StickerTest_C, IsGuideOpen) == 0x000318, "Member 'UWBP_StickerTest_C::IsGuideOpen' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_StickerTest_C;
 
 }
 

@@ -41,25 +41,7 @@ public:
 	class UWBP_Drone_Text_C*                      K2Node_DynamicCast_AsWBP_Drone_Text_1;             // 0x0040(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Drone_C_ExecuteUbergraph_BP_Drone) == 0x000008, "Wrong alignment on BP_Drone_C_ExecuteUbergraph_BP_Drone");
-static_assert(sizeof(BP_Drone_C_ExecuteUbergraph_BP_Drone) == 0x000050, "Wrong size on BP_Drone_C_ExecuteUbergraph_BP_Drone");
-static_assert(offsetof(BP_Drone_C_ExecuteUbergraph_BP_Drone, EntryPoint) == 0x000000, "Member 'BP_Drone_C_ExecuteUbergraph_BP_Drone::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_Drone_C_ExecuteUbergraph_BP_Drone, K2Node_SwitchEnum_CmpSuccess) == 0x000004, "Member 'BP_Drone_C_ExecuteUbergraph_BP_Drone::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BP_Drone_C_ExecuteUbergraph_BP_Drone, K2Node_Event_bNewAdded) == 0x000005, "Member 'BP_Drone_C_ExecuteUbergraph_BP_Drone::K2Node_Event_bNewAdded' has a wrong offset!");
-static_assert(offsetof(BP_Drone_C_ExecuteUbergraph_BP_Drone, K2Node_Event_bIsReverse) == 0x000006, "Member 'BP_Drone_C_ExecuteUbergraph_BP_Drone::K2Node_Event_bIsReverse' has a wrong offset!");
-static_assert(offsetof(BP_Drone_C_ExecuteUbergraph_BP_Drone, K2Node_Event_DeltaSeconds) == 0x000008, "Member 'BP_Drone_C_ExecuteUbergraph_BP_Drone::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(BP_Drone_C_ExecuteUbergraph_BP_Drone, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00000C, "Member 'BP_Drone_C_ExecuteUbergraph_BP_Drone::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Drone_C_ExecuteUbergraph_BP_Drone, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x00000D, "Member 'BP_Drone_C_ExecuteUbergraph_BP_Drone::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Drone_C_ExecuteUbergraph_BP_Drone, CallFunc_BooleanAND_ReturnValue) == 0x00000E, "Member 'BP_Drone_C_ExecuteUbergraph_BP_Drone::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Drone_C_ExecuteUbergraph_BP_Drone, CallFunc_GetWidget_ReturnValue) == 0x000010, "Member 'BP_Drone_C_ExecuteUbergraph_BP_Drone::CallFunc_GetWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Drone_C_ExecuteUbergraph_BP_Drone, K2Node_DynamicCast_AsWBP_Drone_Text) == 0x000018, "Member 'BP_Drone_C_ExecuteUbergraph_BP_Drone::K2Node_DynamicCast_AsWBP_Drone_Text' has a wrong offset!");
-static_assert(offsetof(BP_Drone_C_ExecuteUbergraph_BP_Drone, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'BP_Drone_C_ExecuteUbergraph_BP_Drone::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_Drone_C_ExecuteUbergraph_BP_Drone, CallFunc_GetDroneMaterialIndex_ReturnValue) == 0x000024, "Member 'BP_Drone_C_ExecuteUbergraph_BP_Drone::CallFunc_GetDroneMaterialIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Drone_C_ExecuteUbergraph_BP_Drone, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000028, "Member 'BP_Drone_C_ExecuteUbergraph_BP_Drone::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Drone_C_ExecuteUbergraph_BP_Drone, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000030, "Member 'BP_Drone_C_ExecuteUbergraph_BP_Drone::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Drone_C_ExecuteUbergraph_BP_Drone, CallFunc_GetWidget_ReturnValue_1) == 0x000038, "Member 'BP_Drone_C_ExecuteUbergraph_BP_Drone::CallFunc_GetWidget_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Drone_C_ExecuteUbergraph_BP_Drone, K2Node_DynamicCast_AsWBP_Drone_Text_1) == 0x000040, "Member 'BP_Drone_C_ExecuteUbergraph_BP_Drone::K2Node_DynamicCast_AsWBP_Drone_Text_1' has a wrong offset!");
-static_assert(offsetof(BP_Drone_C_ExecuteUbergraph_BP_Drone, K2Node_DynamicCast_bSuccess_1) == 0x000048, "Member 'BP_Drone_C_ExecuteUbergraph_BP_Drone::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_Drone_C_ExecuteUbergraph_BP_Drone;
 
 // Function BP_Drone.BP_Drone_C.OnCallDrone
 // 0x0001 (0x0001 - 0x0000)
@@ -68,9 +50,7 @@ struct BP_Drone_C_OnCallDrone final
 public:
 	bool                                          bNewAdded;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Drone_C_OnCallDrone) == 0x000001, "Wrong alignment on BP_Drone_C_OnCallDrone");
-static_assert(sizeof(BP_Drone_C_OnCallDrone) == 0x000001, "Wrong size on BP_Drone_C_OnCallDrone");
-static_assert(offsetof(BP_Drone_C_OnCallDrone, bNewAdded) == 0x000000, "Member 'BP_Drone_C_OnCallDrone::bNewAdded' has a wrong offset!");
+DUMPER7_ASSERTS_BP_Drone_C_OnCallDrone;
 
 // Function BP_Drone.BP_Drone_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -79,9 +59,7 @@ struct BP_Drone_C_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Drone_C_ReceiveTick) == 0x000004, "Wrong alignment on BP_Drone_C_ReceiveTick");
-static_assert(sizeof(BP_Drone_C_ReceiveTick) == 0x000004, "Wrong size on BP_Drone_C_ReceiveTick");
-static_assert(offsetof(BP_Drone_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'BP_Drone_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_BP_Drone_C_ReceiveTick;
 
 // Function BP_Drone.BP_Drone_C.SetDroneMaterialReverse
 // 0x0001 (0x0001 - 0x0000)
@@ -90,9 +68,7 @@ struct BP_Drone_C_SetDroneMaterialReverse final
 public:
 	bool                                          bIsReverse;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Drone_C_SetDroneMaterialReverse) == 0x000001, "Wrong alignment on BP_Drone_C_SetDroneMaterialReverse");
-static_assert(sizeof(BP_Drone_C_SetDroneMaterialReverse) == 0x000001, "Wrong size on BP_Drone_C_SetDroneMaterialReverse");
-static_assert(offsetof(BP_Drone_C_SetDroneMaterialReverse, bIsReverse) == 0x000000, "Member 'BP_Drone_C_SetDroneMaterialReverse::bIsReverse' has a wrong offset!");
+DUMPER7_ASSERTS_BP_Drone_C_SetDroneMaterialReverse;
 
 }
 

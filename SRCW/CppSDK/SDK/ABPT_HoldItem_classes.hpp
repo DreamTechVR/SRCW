@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
 #include "ABPT_HoldItem_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
-#include "UNION_classes.hpp"
 
 
 namespace SDK
@@ -132,7 +132,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABPT_HoldItem_C">();
+		BP_STATIC_CLASS_IMPL("ABPT_HoldItem_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABPT_HoldItem_C")
 	}
 	static class UABPT_HoldItem_C* GetDefaultObj()
 	{
@@ -140,74 +144,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UABPT_HoldItem_C) == 0x000010, "Wrong alignment on UABPT_HoldItem_C");
-static_assert(sizeof(UABPT_HoldItem_C) == 0x001130, "Wrong size on UABPT_HoldItem_C");
-static_assert(offsetof(UABPT_HoldItem_C, UberGraphFrame) == 0x0003E0, "Member 'UABPT_HoldItem_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, __AnimBlueprintMutables) == 0x0003E8, "Member 'UABPT_HoldItem_C::__AnimBlueprintMutables' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimBlueprintExtension_PropertyAccess) == 0x000408, "Member 'UABPT_HoldItem_C::AnimBlueprintExtension_PropertyAccess' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimBlueprintExtension_Base) == 0x000410, "Member 'UABPT_HoldItem_C::AnimBlueprintExtension_Base' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_Root) == 0x000418, "Member 'UABPT_HoldItem_C::AnimGraphNode_Root' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_TransitionResult_26) == 0x000438, "Member 'UABPT_HoldItem_C::AnimGraphNode_TransitionResult_26' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_TransitionResult_25) == 0x000460, "Member 'UABPT_HoldItem_C::AnimGraphNode_TransitionResult_25' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_TransitionResult_24) == 0x000488, "Member 'UABPT_HoldItem_C::AnimGraphNode_TransitionResult_24' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_TransitionResult_23) == 0x0004B0, "Member 'UABPT_HoldItem_C::AnimGraphNode_TransitionResult_23' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_TransitionResult_22) == 0x0004D8, "Member 'UABPT_HoldItem_C::AnimGraphNode_TransitionResult_22' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_TransitionResult_21) == 0x000500, "Member 'UABPT_HoldItem_C::AnimGraphNode_TransitionResult_21' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_TransitionResult_20) == 0x000528, "Member 'UABPT_HoldItem_C::AnimGraphNode_TransitionResult_20' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_TransitionResult_19) == 0x000550, "Member 'UABPT_HoldItem_C::AnimGraphNode_TransitionResult_19' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_TransitionResult_18) == 0x000578, "Member 'UABPT_HoldItem_C::AnimGraphNode_TransitionResult_18' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_SequencePlayer_14) == 0x0005A0, "Member 'UABPT_HoldItem_C::AnimGraphNode_SequencePlayer_14' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_StateResult_14) == 0x0005E8, "Member 'UABPT_HoldItem_C::AnimGraphNode_StateResult_14' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_SequencePlayer_13) == 0x000608, "Member 'UABPT_HoldItem_C::AnimGraphNode_SequencePlayer_13' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_StateResult_13) == 0x000650, "Member 'UABPT_HoldItem_C::AnimGraphNode_StateResult_13' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_SequencePlayer_12) == 0x000670, "Member 'UABPT_HoldItem_C::AnimGraphNode_SequencePlayer_12' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_StateResult_12) == 0x0006B8, "Member 'UABPT_HoldItem_C::AnimGraphNode_StateResult_12' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_SequencePlayer_11) == 0x0006D8, "Member 'UABPT_HoldItem_C::AnimGraphNode_SequencePlayer_11' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_StateResult_11) == 0x000720, "Member 'UABPT_HoldItem_C::AnimGraphNode_StateResult_11' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_SequencePlayer_10) == 0x000740, "Member 'UABPT_HoldItem_C::AnimGraphNode_SequencePlayer_10' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_StateResult_10) == 0x000788, "Member 'UABPT_HoldItem_C::AnimGraphNode_StateResult_10' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_StateMachine_2) == 0x0007A8, "Member 'UABPT_HoldItem_C::AnimGraphNode_StateMachine_2' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_BlendListByInt) == 0x000870, "Member 'UABPT_HoldItem_C::AnimGraphNode_BlendListByInt' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_TransitionResult_17) == 0x0008B8, "Member 'UABPT_HoldItem_C::AnimGraphNode_TransitionResult_17' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_TransitionResult_16) == 0x0008E0, "Member 'UABPT_HoldItem_C::AnimGraphNode_TransitionResult_16' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_TransitionResult_15) == 0x000908, "Member 'UABPT_HoldItem_C::AnimGraphNode_TransitionResult_15' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_TransitionResult_14) == 0x000930, "Member 'UABPT_HoldItem_C::AnimGraphNode_TransitionResult_14' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_TransitionResult_13) == 0x000958, "Member 'UABPT_HoldItem_C::AnimGraphNode_TransitionResult_13' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_TransitionResult_12) == 0x000980, "Member 'UABPT_HoldItem_C::AnimGraphNode_TransitionResult_12' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_TransitionResult_11) == 0x0009A8, "Member 'UABPT_HoldItem_C::AnimGraphNode_TransitionResult_11' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_TransitionResult_10) == 0x0009D0, "Member 'UABPT_HoldItem_C::AnimGraphNode_TransitionResult_10' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_TransitionResult_9) == 0x0009F8, "Member 'UABPT_HoldItem_C::AnimGraphNode_TransitionResult_9' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_SequencePlayer_9) == 0x000A20, "Member 'UABPT_HoldItem_C::AnimGraphNode_SequencePlayer_9' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_StateResult_9) == 0x000A68, "Member 'UABPT_HoldItem_C::AnimGraphNode_StateResult_9' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_SequencePlayer_8) == 0x000A88, "Member 'UABPT_HoldItem_C::AnimGraphNode_SequencePlayer_8' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_StateResult_8) == 0x000AD0, "Member 'UABPT_HoldItem_C::AnimGraphNode_StateResult_8' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_SequencePlayer_7) == 0x000AF0, "Member 'UABPT_HoldItem_C::AnimGraphNode_SequencePlayer_7' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_StateResult_7) == 0x000B38, "Member 'UABPT_HoldItem_C::AnimGraphNode_StateResult_7' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_SequencePlayer_6) == 0x000B58, "Member 'UABPT_HoldItem_C::AnimGraphNode_SequencePlayer_6' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_StateResult_6) == 0x000BA0, "Member 'UABPT_HoldItem_C::AnimGraphNode_StateResult_6' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_SequencePlayer_5) == 0x000BC0, "Member 'UABPT_HoldItem_C::AnimGraphNode_SequencePlayer_5' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_StateResult_5) == 0x000C08, "Member 'UABPT_HoldItem_C::AnimGraphNode_StateResult_5' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_StateMachine_1) == 0x000C28, "Member 'UABPT_HoldItem_C::AnimGraphNode_StateMachine_1' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_TransitionResult_8) == 0x000CF0, "Member 'UABPT_HoldItem_C::AnimGraphNode_TransitionResult_8' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_TransitionResult_7) == 0x000D18, "Member 'UABPT_HoldItem_C::AnimGraphNode_TransitionResult_7' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_TransitionResult_6) == 0x000D40, "Member 'UABPT_HoldItem_C::AnimGraphNode_TransitionResult_6' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_TransitionResult_5) == 0x000D68, "Member 'UABPT_HoldItem_C::AnimGraphNode_TransitionResult_5' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_TransitionResult_4) == 0x000D90, "Member 'UABPT_HoldItem_C::AnimGraphNode_TransitionResult_4' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_TransitionResult_3) == 0x000DB8, "Member 'UABPT_HoldItem_C::AnimGraphNode_TransitionResult_3' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_TransitionResult_2) == 0x000DE0, "Member 'UABPT_HoldItem_C::AnimGraphNode_TransitionResult_2' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_TransitionResult_1) == 0x000E08, "Member 'UABPT_HoldItem_C::AnimGraphNode_TransitionResult_1' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_TransitionResult) == 0x000E30, "Member 'UABPT_HoldItem_C::AnimGraphNode_TransitionResult' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_SequencePlayer_4) == 0x000E58, "Member 'UABPT_HoldItem_C::AnimGraphNode_SequencePlayer_4' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_StateResult_4) == 0x000EA0, "Member 'UABPT_HoldItem_C::AnimGraphNode_StateResult_4' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_SequencePlayer_3) == 0x000EC0, "Member 'UABPT_HoldItem_C::AnimGraphNode_SequencePlayer_3' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_StateResult_3) == 0x000F08, "Member 'UABPT_HoldItem_C::AnimGraphNode_StateResult_3' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_SequencePlayer_2) == 0x000F28, "Member 'UABPT_HoldItem_C::AnimGraphNode_SequencePlayer_2' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_StateResult_2) == 0x000F70, "Member 'UABPT_HoldItem_C::AnimGraphNode_StateResult_2' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_SequencePlayer_1) == 0x000F90, "Member 'UABPT_HoldItem_C::AnimGraphNode_SequencePlayer_1' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_StateResult_1) == 0x000FD8, "Member 'UABPT_HoldItem_C::AnimGraphNode_StateResult_1' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_SequencePlayer) == 0x000FF8, "Member 'UABPT_HoldItem_C::AnimGraphNode_SequencePlayer' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_StateResult) == 0x001040, "Member 'UABPT_HoldItem_C::AnimGraphNode_StateResult' has a wrong offset!");
-static_assert(offsetof(UABPT_HoldItem_C, AnimGraphNode_StateMachine) == 0x001060, "Member 'UABPT_HoldItem_C::AnimGraphNode_StateMachine' has a wrong offset!");
+DUMPER7_ASSERTS_UABPT_HoldItem_C;
 
 }
 

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -39,22 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_Sub_GadgetCustom_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_Sub_GadgetCustom_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_Sub_GadgetCustom_C")
 	}
 	static class UWBP_CMN_Sub_GadgetCustom_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_Sub_GadgetCustom_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_Sub_GadgetCustom_C) == 0x000008, "Wrong alignment on UWBP_CMN_Sub_GadgetCustom_C");
-static_assert(sizeof(UWBP_CMN_Sub_GadgetCustom_C) == 0x0006A8, "Wrong size on UWBP_CMN_Sub_GadgetCustom_C");
-static_assert(offsetof(UWBP_CMN_Sub_GadgetCustom_C, UberGraphFrame) == 0x000670, "Member 'UWBP_CMN_Sub_GadgetCustom_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_GadgetCustom_C, Icon_01) == 0x000678, "Member 'UWBP_CMN_Sub_GadgetCustom_C::Icon_01' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_GadgetCustom_C, Panel) == 0x000680, "Member 'UWBP_CMN_Sub_GadgetCustom_C::Panel' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_GadgetCustom_C, Plate) == 0x000688, "Member 'UWBP_CMN_Sub_GadgetCustom_C::Plate' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_GadgetCustom_C, TXT_Gadget_Custom) == 0x000690, "Member 'UWBP_CMN_Sub_GadgetCustom_C::TXT_Gadget_Custom' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_GadgetCustom_C, WBP_CMN_ControllerBtn) == 0x000698, "Member 'UWBP_CMN_Sub_GadgetCustom_C::WBP_CMN_ControllerBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_GadgetCustom_C, NewVar) == 0x0006A0, "Member 'UWBP_CMN_Sub_GadgetCustom_C::NewVar' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_Sub_GadgetCustom_C;
 
 }
 

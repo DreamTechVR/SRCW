@@ -27,14 +27,7 @@ public:
 	bool                                          Temp_bool_Variable_1;                              // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Select_Default;                             // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ABP_HoldDoubleWhiteBoost_C_IsSkipInState) == 0x000004, "Wrong alignment on ABP_HoldDoubleWhiteBoost_C_IsSkipInState");
-static_assert(sizeof(ABP_HoldDoubleWhiteBoost_C_IsSkipInState) == 0x000010, "Wrong size on ABP_HoldDoubleWhiteBoost_C_IsSkipInState");
-static_assert(offsetof(ABP_HoldDoubleWhiteBoost_C_IsSkipInState, In_RemainingUses) == 0x000000, "Member 'ABP_HoldDoubleWhiteBoost_C_IsSkipInState::In_RemainingUses' has a wrong offset!");
-static_assert(offsetof(ABP_HoldDoubleWhiteBoost_C_IsSkipInState, Out_Valid) == 0x000004, "Member 'ABP_HoldDoubleWhiteBoost_C_IsSkipInState::Out_Valid' has a wrong offset!");
-static_assert(offsetof(ABP_HoldDoubleWhiteBoost_C_IsSkipInState, Temp_int_Variable) == 0x000008, "Member 'ABP_HoldDoubleWhiteBoost_C_IsSkipInState::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(ABP_HoldDoubleWhiteBoost_C_IsSkipInState, Temp_bool_Variable) == 0x00000C, "Member 'ABP_HoldDoubleWhiteBoost_C_IsSkipInState::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ABP_HoldDoubleWhiteBoost_C_IsSkipInState, Temp_bool_Variable_1) == 0x00000D, "Member 'ABP_HoldDoubleWhiteBoost_C_IsSkipInState::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(ABP_HoldDoubleWhiteBoost_C_IsSkipInState, K2Node_Select_Default) == 0x00000E, "Member 'ABP_HoldDoubleWhiteBoost_C_IsSkipInState::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_HoldDoubleWhiteBoost_C_IsSkipInState;
 
 // Function ABP_HoldDoubleWhiteBoost.ABP_HoldDoubleWhiteBoost_C.GetBlendTime
 // 0x0008 (0x0008 - 0x0000)
@@ -43,9 +36,7 @@ struct ABP_HoldDoubleWhiteBoost_C_GetBlendTime final
 public:
 	double                                        newParam;                                          // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ABP_HoldDoubleWhiteBoost_C_GetBlendTime) == 0x000008, "Wrong alignment on ABP_HoldDoubleWhiteBoost_C_GetBlendTime");
-static_assert(sizeof(ABP_HoldDoubleWhiteBoost_C_GetBlendTime) == 0x000008, "Wrong size on ABP_HoldDoubleWhiteBoost_C_GetBlendTime");
-static_assert(offsetof(ABP_HoldDoubleWhiteBoost_C_GetBlendTime, newParam) == 0x000000, "Member 'ABP_HoldDoubleWhiteBoost_C_GetBlendTime::newParam' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_HoldDoubleWhiteBoost_C_GetBlendTime;
 
 // Function ABP_HoldDoubleWhiteBoost.ABP_HoldDoubleWhiteBoost_C.IsValidOutState
 // 0x0001 (0x0001 - 0x0000)
@@ -54,9 +45,7 @@ struct ABP_HoldDoubleWhiteBoost_C_IsValidOutState final
 public:
 	bool                                          Out_Valid;                                         // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ABP_HoldDoubleWhiteBoost_C_IsValidOutState) == 0x000001, "Wrong alignment on ABP_HoldDoubleWhiteBoost_C_IsValidOutState");
-static_assert(sizeof(ABP_HoldDoubleWhiteBoost_C_IsValidOutState) == 0x000001, "Wrong size on ABP_HoldDoubleWhiteBoost_C_IsValidOutState");
-static_assert(offsetof(ABP_HoldDoubleWhiteBoost_C_IsValidOutState, Out_Valid) == 0x000000, "Member 'ABP_HoldDoubleWhiteBoost_C_IsValidOutState::Out_Valid' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_HoldDoubleWhiteBoost_C_IsValidOutState;
 
 }
 

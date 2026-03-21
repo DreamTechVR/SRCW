@@ -364,6 +364,46 @@ void ABP_MenuRacerLobby_C::Polling_Set_Sticker(class UStickerBakerHandle* Sticke
 }
 
 
+// Function BP_MenuRacerLobby.BP_MenuRacerLobby_C.PrintFrontStickerLog
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UStickerBakerHandle*              ターゲット                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MenuRacerLobby_C::PrintFrontStickerLog(class UStickerBakerHandle* ターゲット)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MenuRacerLobby_C", "PrintFrontStickerLog");
+
+	Params::BP_MenuRacerLobby_C_PrintFrontStickerLog Parms{};
+
+	Parms.ターゲット = ターゲット;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MenuRacerLobby.BP_MenuRacerLobby_C.PrintRearStickerLog
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UStickerBakerHandle*              ターゲット                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MenuRacerLobby_C::PrintRearStickerLog(class UStickerBakerHandle* ターゲット)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MenuRacerLobby_C", "PrintRearStickerLog");
+
+	Params::BP_MenuRacerLobby_C_PrintRearStickerLog Parms{};
+
+	Parms.ターゲット = ターゲット;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_MenuRacerLobby.BP_MenuRacerLobby_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 

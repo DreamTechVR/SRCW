@@ -21,9 +21,7 @@ struct WBP_Friend_Sub_PlayerPlate_Small_C_ExecuteUbergraph_WBP_Friend_Sub_Player
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_PlayerPlate_Small_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate_Small) == 0x000004, "Wrong alignment on WBP_Friend_Sub_PlayerPlate_Small_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate_Small");
-static_assert(sizeof(WBP_Friend_Sub_PlayerPlate_Small_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate_Small) == 0x000004, "Wrong size on WBP_Friend_Sub_PlayerPlate_Small_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate_Small");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_Small_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate_Small, EntryPoint) == 0x000000, "Member 'WBP_Friend_Sub_PlayerPlate_Small_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate_Small::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_Small_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate_Small;
 
 // Function WBP_Friend_Sub_PlayerPlate_Small.WBP_Friend_Sub_PlayerPlate_Small_C.GetMainWidget
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct WBP_Friend_Sub_PlayerPlate_Small_C_GetMainWidget final
 public:
 	class UWBP_Friend_Sub_PlayerPlate_C*          OutMainWidget;                                     // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_PlayerPlate_Small_C_GetMainWidget) == 0x000008, "Wrong alignment on WBP_Friend_Sub_PlayerPlate_Small_C_GetMainWidget");
-static_assert(sizeof(WBP_Friend_Sub_PlayerPlate_Small_C_GetMainWidget) == 0x000008, "Wrong size on WBP_Friend_Sub_PlayerPlate_Small_C_GetMainWidget");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_Small_C_GetMainWidget, OutMainWidget) == 0x000000, "Member 'WBP_Friend_Sub_PlayerPlate_Small_C_GetMainWidget::OutMainWidget' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_Small_C_GetMainWidget;
 
 }
 

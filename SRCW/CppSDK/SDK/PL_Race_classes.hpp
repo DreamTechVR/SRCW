@@ -23,15 +23,18 @@ class APL_Race_C final : public ALevelScriptActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PL_Race_C">();
+		BP_STATIC_CLASS_IMPL("PL_Race_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PL_Race_C")
 	}
 	static class APL_Race_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APL_Race_C>();
 	}
 };
-static_assert(alignof(APL_Race_C) == 0x000008, "Wrong alignment on APL_Race_C");
-static_assert(sizeof(APL_Race_C) == 0x000298, "Wrong size on APL_Race_C");
+DUMPER7_ASSERTS_APL_Race_C;
 
 }
 

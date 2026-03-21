@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK
@@ -72,31 +72,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_PartyRaceMenuSequence_C">();
+		BP_STATIC_CLASS_IMPL("BP_PartyRaceMenuSequence_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_PartyRaceMenuSequence_C")
 	}
 	static class ABP_PartyRaceMenuSequence_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_PartyRaceMenuSequence_C>();
 	}
 };
-static_assert(alignof(ABP_PartyRaceMenuSequence_C) == 0x000008, "Wrong alignment on ABP_PartyRaceMenuSequence_C");
-static_assert(sizeof(ABP_PartyRaceMenuSequence_C) == 0x0004B8, "Wrong size on ABP_PartyRaceMenuSequence_C");
-static_assert(offsetof(ABP_PartyRaceMenuSequence_C, UberGraphFrame) == 0x000438, "Member 'ABP_PartyRaceMenuSequence_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_PartyRaceMenuSequence_C, BPC_GadgetCustomize2State) == 0x000440, "Member 'ABP_PartyRaceMenuSequence_C::BPC_GadgetCustomize2State' has a wrong offset!");
-static_assert(offsetof(ABP_PartyRaceMenuSequence_C, BPC_MenuStatePartyRaceRivalTeamSelect) == 0x000448, "Member 'ABP_PartyRaceMenuSequence_C::BPC_MenuStatePartyRaceRivalTeamSelect' has a wrong offset!");
-static_assert(offsetof(ABP_PartyRaceMenuSequence_C, BPC_MenuStatePartyRaceSelectGroup) == 0x000450, "Member 'ABP_PartyRaceMenuSequence_C::BPC_MenuStatePartyRaceSelectGroup' has a wrong offset!");
-static_assert(offsetof(ABP_PartyRaceMenuSequence_C, BPC_MenuStatePartyRaceSelectClass) == 0x000458, "Member 'ABP_PartyRaceMenuSequence_C::BPC_MenuStatePartyRaceSelectClass' has a wrong offset!");
-static_assert(offsetof(ABP_PartyRaceMenuSequence_C, BPC_CharaMachineState) == 0x000460, "Member 'ABP_PartyRaceMenuSequence_C::BPC_CharaMachineState' has a wrong offset!");
-static_assert(offsetof(ABP_PartyRaceMenuSequence_C, BPC_SelectCourse) == 0x000468, "Member 'ABP_PartyRaceMenuSequence_C::BPC_SelectCourse' has a wrong offset!");
-static_assert(offsetof(ABP_PartyRaceMenuSequence_C, BPC_MenuStatePartyRaceCustomizeRule) == 0x000470, "Member 'ABP_PartyRaceMenuSequence_C::BPC_MenuStatePartyRaceCustomizeRule' has a wrong offset!");
-static_assert(offsetof(ABP_PartyRaceMenuSequence_C, BPC_MenuStatePartyRaceSelectPreset) == 0x000478, "Member 'ABP_PartyRaceMenuSequence_C::BPC_MenuStatePartyRaceSelectPreset' has a wrong offset!");
-static_assert(offsetof(ABP_PartyRaceMenuSequence_C, BPC_MenuStatePartyRaceTutorial) == 0x000480, "Member 'ABP_PartyRaceMenuSequence_C::BPC_MenuStatePartyRaceTutorial' has a wrong offset!");
-static_assert(offsetof(ABP_PartyRaceMenuSequence_C, MenuSequence) == 0x000488, "Member 'ABP_PartyRaceMenuSequence_C::MenuSequence' has a wrong offset!");
-static_assert(offsetof(ABP_PartyRaceMenuSequence_C, Footer) == 0x000490, "Member 'ABP_PartyRaceMenuSequence_C::Footer' has a wrong offset!");
-static_assert(offsetof(ABP_PartyRaceMenuSequence_C, PartyRaceCamera) == 0x000498, "Member 'ABP_PartyRaceMenuSequence_C::PartyRaceCamera' has a wrong offset!");
-static_assert(offsetof(ABP_PartyRaceMenuSequence_C, bNeedFade) == 0x0004A0, "Member 'ABP_PartyRaceMenuSequence_C::bNeedFade' has a wrong offset!");
-static_assert(offsetof(ABP_PartyRaceMenuSequence_C, RuleMonitor) == 0x0004A8, "Member 'ABP_PartyRaceMenuSequence_C::RuleMonitor' has a wrong offset!");
-static_assert(offsetof(ABP_PartyRaceMenuSequence_C, IndividualClassSelected) == 0x0004B0, "Member 'ABP_PartyRaceMenuSequence_C::IndividualClassSelected' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_PartyRaceMenuSequence_C;
 
 }
 

@@ -12,8 +12,8 @@
 
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
+#include "UnionSystem_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -124,65 +124,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ItemGet_WindowMini_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ItemGet_WindowMini_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ItemGet_WindowMini_C")
 	}
 	static class UWBP_ItemGet_WindowMini_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ItemGet_WindowMini_C>();
 	}
 };
-static_assert(alignof(UWBP_ItemGet_WindowMini_C) == 0x000008, "Wrong alignment on UWBP_ItemGet_WindowMini_C");
-static_assert(sizeof(UWBP_ItemGet_WindowMini_C) == 0x000540, "Wrong size on UWBP_ItemGet_WindowMini_C");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, UberGraphFrame) == 0x0003A8, "Member 'UWBP_ItemGet_WindowMini_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, RankUp_Out) == 0x0003B0, "Member 'UWBP_ItemGet_WindowMini_C::RankUp_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, RankUp_In_Loop) == 0x0003B8, "Member 'UWBP_ItemGet_WindowMini_C::RankUp_In_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, GetWindow_Out) == 0x0003C0, "Member 'UWBP_ItemGet_WindowMini_C::GetWindow_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, GetWindow_In_Loop) == 0x0003C8, "Member 'UWBP_ItemGet_WindowMini_C::GetWindow_In_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, ArcUV_01) == 0x0003D0, "Member 'UWBP_ItemGet_WindowMini_C::ArcUV_01' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, ArcUV_02) == 0x0003D8, "Member 'UWBP_ItemGet_WindowMini_C::ArcUV_02' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, ArcUV_03) == 0x0003E0, "Member 'UWBP_ItemGet_WindowMini_C::ArcUV_03' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, base) == 0x0003E8, "Member 'UWBP_ItemGet_WindowMini_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, CanvasPanel) == 0x0003F0, "Member 'UWBP_ItemGet_WindowMini_C::CanvasPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, Eff) == 0x0003F8, "Member 'UWBP_ItemGet_WindowMini_C::Eff' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, Eff_1) == 0x000400, "Member 'UWBP_ItemGet_WindowMini_C::Eff_1' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, Eff_2) == 0x000408, "Member 'UWBP_ItemGet_WindowMini_C::Eff_2' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, Eff_3) == 0x000410, "Member 'UWBP_ItemGet_WindowMini_C::Eff_3' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, Eff_4) == 0x000418, "Member 'UWBP_ItemGet_WindowMini_C::Eff_4' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, Eff_10) == 0x000420, "Member 'UWBP_ItemGet_WindowMini_C::Eff_10' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, Eff_11) == 0x000428, "Member 'UWBP_ItemGet_WindowMini_C::Eff_11' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, Eff_00) == 0x000430, "Member 'UWBP_ItemGet_WindowMini_C::Eff_00' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, Eff_01) == 0x000438, "Member 'UWBP_ItemGet_WindowMini_C::Eff_01' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, Eff_02) == 0x000440, "Member 'UWBP_ItemGet_WindowMini_C::Eff_02' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, Eff_03) == 0x000448, "Member 'UWBP_ItemGet_WindowMini_C::Eff_03' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, Eff_04) == 0x000450, "Member 'UWBP_ItemGet_WindowMini_C::Eff_04' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, Eff_05) == 0x000458, "Member 'UWBP_ItemGet_WindowMini_C::Eff_05' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, Eff_06) == 0x000460, "Member 'UWBP_ItemGet_WindowMini_C::Eff_06' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, Eff_07) == 0x000468, "Member 'UWBP_ItemGet_WindowMini_C::Eff_07' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, Eff_08) == 0x000470, "Member 'UWBP_ItemGet_WindowMini_C::Eff_08' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, Eff_09) == 0x000478, "Member 'UWBP_ItemGet_WindowMini_C::Eff_09' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, Eff_Core) == 0x000480, "Member 'UWBP_ItemGet_WindowMini_C::Eff_Core' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, Eff_Core_Add_01) == 0x000488, "Member 'UWBP_ItemGet_WindowMini_C::Eff_Core_Add_01' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, Eff_Core_Add_02) == 0x000490, "Member 'UWBP_ItemGet_WindowMini_C::Eff_Core_Add_02' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, ItemBase) == 0x000498, "Member 'UWBP_ItemGet_WindowMini_C::ItemBase' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, Left) == 0x0004A0, "Member 'UWBP_ItemGet_WindowMini_C::Left' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, PAT_MachineTypeIcon) == 0x0004A8, "Member 'UWBP_ItemGet_WindowMini_C::PAT_MachineTypeIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, Right) == 0x0004B0, "Member 'UWBP_ItemGet_WindowMini_C::Right' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, Shadow) == 0x0004B8, "Member 'UWBP_ItemGet_WindowMini_C::Shadow' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, Small_Line_01) == 0x0004C0, "Member 'UWBP_ItemGet_WindowMini_C::Small_Line_01' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, Small_Line_02) == 0x0004C8, "Member 'UWBP_ItemGet_WindowMini_C::Small_Line_02' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, Small_Line_03) == 0x0004D0, "Member 'UWBP_ItemGet_WindowMini_C::Small_Line_03' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, Small_Line_04) == 0x0004D8, "Member 'UWBP_ItemGet_WindowMini_C::Small_Line_04' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, WBP_ResultRate_Sub_RankIcon) == 0x0004E0, "Member 'UWBP_ItemGet_WindowMini_C::WBP_ResultRate_Sub_RankIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, WidgetSwitcher_Item) == 0x0004E8, "Member 'UWBP_ItemGet_WindowMini_C::WidgetSwitcher_Item' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, RewardItemNum) == 0x0004F0, "Member 'UWBP_ItemGet_WindowMini_C::RewardItemNum' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, RewardIndex) == 0x0004F4, "Member 'UWBP_ItemGet_WindowMini_C::RewardIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, RewardParamArray) == 0x0004F8, "Member 'UWBP_ItemGet_WindowMini_C::RewardParamArray' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, RewardTitleText) == 0x000508, "Member 'UWBP_ItemGet_WindowMini_C::RewardTitleText' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, RankTitleText) == 0x000518, "Member 'UWBP_ItemGet_WindowMini_C::RankTitleText' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, RateRank) == 0x000528, "Member 'UWBP_ItemGet_WindowMini_C::RateRank' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, CurrentDisplayType) == 0x00052C, "Member 'UWBP_ItemGet_WindowMini_C::CurrentDisplayType' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, ItemCountLayoutWidget) == 0x000530, "Member 'UWBP_ItemGet_WindowMini_C::ItemCountLayoutWidget' has a wrong offset!");
-static_assert(offsetof(UWBP_ItemGet_WindowMini_C, WindowZOrder) == 0x000538, "Member 'UWBP_ItemGet_WindowMini_C::WindowZOrder' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ItemGet_WindowMini_C;
 
 }
 

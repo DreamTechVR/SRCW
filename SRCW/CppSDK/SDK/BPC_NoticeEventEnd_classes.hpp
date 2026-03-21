@@ -10,18 +10,18 @@
 
 #include "Basic.hpp"
 
-#include "UnionUI_structs.hpp"
+#include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BPC_NoticeEventEnd.BPC_NoticeEventEnd_C
-// 0x0078 (0x01A0 - 0x0128)
+// 0x0088 (0x01B0 - 0x0128)
 class UBPC_NoticeEventEnd_C final : public UNoticeEventEndState
 {
 public:
@@ -37,6 +37,9 @@ public:
 	uint8                                         Pad_181[0x7];                                      // 0x0181(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FRewardGetWindowParam>          RewardParamArray;                                  // 0x0188(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UWBP_ItemGet_Window_C*                  RewardDialog;                                      // 0x0198(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         DonpaTicketNumPrevReward;                          // 0x01A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1A4[0x4];                                      // 0x01A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Result_DonpaTicket_C*              ResultDonpaTicketWidget;                           // 0x01A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void GetFestaIdValue(int32* festaId);
@@ -49,30 +52,26 @@ public:
 	void OnSaveComplete(ESaveDataStatus Status);
 	void OnFinishedFade(EUnionUIFadeDirection FadeDirection);
 	void NoReward();
+	void SaveStart();
+	void FinishNoticeEventEnd();
+	void ShowDonpaTicketDiff();
 	void ExecuteUbergraph_BPC_NoticeEventEnd(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_NoticeEventEnd_C">();
+		BP_STATIC_CLASS_IMPL("BPC_NoticeEventEnd_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_NoticeEventEnd_C")
 	}
 	static class UBPC_NoticeEventEnd_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_NoticeEventEnd_C>();
 	}
 };
-static_assert(alignof(UBPC_NoticeEventEnd_C) == 0x000008, "Wrong alignment on UBPC_NoticeEventEnd_C");
-static_assert(sizeof(UBPC_NoticeEventEnd_C) == 0x0001A0, "Wrong size on UBPC_NoticeEventEnd_C");
-static_assert(offsetof(UBPC_NoticeEventEnd_C, UberGraphFrame) == 0x000128, "Member 'UBPC_NoticeEventEnd_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticeEventEnd_C, EventEndInfo) == 0x000130, "Member 'UBPC_NoticeEventEnd_C::EventEndInfo' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticeEventEnd_C, EventPoint) == 0x000138, "Member 'UBPC_NoticeEventEnd_C::EventPoint' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticeEventEnd_C, EventRanking) == 0x00013C, "Member 'UBPC_NoticeEventEnd_C::EventRanking' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticeEventEnd_C, EndFestaID) == 0x000140, "Member 'UBPC_NoticeEventEnd_C::EndFestaID' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticeEventEnd_C, EventEndBG) == 0x000148, "Member 'UBPC_NoticeEventEnd_C::EventEndBG' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticeEventEnd_C, FestaName) == 0x000170, "Member 'UBPC_NoticeEventEnd_C::FestaName' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticeEventEnd_C, DebugMode) == 0x000180, "Member 'UBPC_NoticeEventEnd_C::DebugMode' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticeEventEnd_C, RewardParamArray) == 0x000188, "Member 'UBPC_NoticeEventEnd_C::RewardParamArray' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticeEventEnd_C, RewardDialog) == 0x000198, "Member 'UBPC_NoticeEventEnd_C::RewardDialog' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_NoticeEventEnd_C;
 
 }
 

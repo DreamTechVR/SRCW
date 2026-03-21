@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
+#include "UnionRun_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "UnionRun_structs.hpp"
+#include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -56,21 +56,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_MachineCustomizePartsSelectState_C">();
+		BP_STATIC_CLASS_IMPL("BPC_MachineCustomizePartsSelectState_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_MachineCustomizePartsSelectState_C")
 	}
 	static class UBPC_MachineCustomizePartsSelectState_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_MachineCustomizePartsSelectState_C>();
 	}
 };
-static_assert(alignof(UBPC_MachineCustomizePartsSelectState_C) == 0x000008, "Wrong alignment on UBPC_MachineCustomizePartsSelectState_C");
-static_assert(sizeof(UBPC_MachineCustomizePartsSelectState_C) == 0x000150, "Wrong size on UBPC_MachineCustomizePartsSelectState_C");
-static_assert(offsetof(UBPC_MachineCustomizePartsSelectState_C, UberGraphFrame) == 0x000108, "Member 'UBPC_MachineCustomizePartsSelectState_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_MachineCustomizePartsSelectState_C, Sequence) == 0x000110, "Member 'UBPC_MachineCustomizePartsSelectState_C::Sequence' has a wrong offset!");
-static_assert(offsetof(UBPC_MachineCustomizePartsSelectState_C, Racer) == 0x000118, "Member 'UBPC_MachineCustomizePartsSelectState_C::Racer' has a wrong offset!");
-static_assert(offsetof(UBPC_MachineCustomizePartsSelectState_C, ParamWindow) == 0x000120, "Member 'UBPC_MachineCustomizePartsSelectState_C::ParamWindow' has a wrong offset!");
-static_assert(offsetof(UBPC_MachineCustomizePartsSelectState_C, StickerCustomizeData) == 0x000128, "Member 'UBPC_MachineCustomizePartsSelectState_C::StickerCustomizeData' has a wrong offset!");
-static_assert(offsetof(UBPC_MachineCustomizePartsSelectState_C, TipsWindow) == 0x000148, "Member 'UBPC_MachineCustomizePartsSelectState_C::TipsWindow' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_MachineCustomizePartsSelectState_C;
 
 }
 

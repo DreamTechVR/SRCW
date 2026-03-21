@@ -43,27 +43,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_FestaResult_Sub_Lead_no1_C">();
+		BP_STATIC_CLASS_IMPL("WBP_FestaResult_Sub_Lead_no1_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_FestaResult_Sub_Lead_no1_C")
 	}
 	static class UWBP_FestaResult_Sub_Lead_no1_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_FestaResult_Sub_Lead_no1_C>();
 	}
 };
-static_assert(alignof(UWBP_FestaResult_Sub_Lead_no1_C) == 0x000008, "Wrong alignment on UWBP_FestaResult_Sub_Lead_no1_C");
-static_assert(sizeof(UWBP_FestaResult_Sub_Lead_no1_C) == 0x000340, "Wrong size on UWBP_FestaResult_Sub_Lead_no1_C");
-static_assert(offsetof(UWBP_FestaResult_Sub_Lead_no1_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_FestaResult_Sub_Lead_no1_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_Sub_Lead_no1_C, Out) == 0x0002E8, "Member 'UWBP_FestaResult_Sub_Lead_no1_C::Out' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_Sub_Lead_no1_C, InLoop) == 0x0002F0, "Member 'UWBP_FestaResult_Sub_Lead_no1_C::InLoop' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_Sub_Lead_no1_C, base) == 0x0002F8, "Member 'UWBP_FestaResult_Sub_Lead_no1_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_Sub_Lead_no1_C, Eff_cross) == 0x000300, "Member 'UWBP_FestaResult_Sub_Lead_no1_C::Eff_cross' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_Sub_Lead_no1_C, Eff_cross_1) == 0x000308, "Member 'UWBP_FestaResult_Sub_Lead_no1_C::Eff_cross_1' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_Sub_Lead_no1_C, Eff_cross_2) == 0x000310, "Member 'UWBP_FestaResult_Sub_Lead_no1_C::Eff_cross_2' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_Sub_Lead_no1_C, Laurl_L) == 0x000318, "Member 'UWBP_FestaResult_Sub_Lead_no1_C::Laurl_L' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_Sub_Lead_no1_C, Laurl_R) == 0x000320, "Member 'UWBP_FestaResult_Sub_Lead_no1_C::Laurl_R' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_Sub_Lead_no1_C, Line) == 0x000328, "Member 'UWBP_FestaResult_Sub_Lead_no1_C::Line' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_Sub_Lead_no1_C, Line_1) == 0x000330, "Member 'UWBP_FestaResult_Sub_Lead_no1_C::Line_1' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaResult_Sub_Lead_no1_C, TXT_LeadTime_Ranking) == 0x000338, "Member 'UWBP_FestaResult_Sub_Lead_no1_C::TXT_LeadTime_Ranking' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_FestaResult_Sub_Lead_no1_C;
 
 }
 

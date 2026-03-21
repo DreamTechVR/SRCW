@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "UnionRun_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UMG_classes.hpp"
-#include "UnionRun_structs.hpp"
 
 
 namespace SDK
@@ -56,35 +56,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_HUD_Sub_TextBalloon_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_HUD_Sub_TextBalloon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_HUD_Sub_TextBalloon_C")
 	}
 	static class UWBP_Race_HUD_Sub_TextBalloon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_HUD_Sub_TextBalloon_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_HUD_Sub_TextBalloon_C) == 0x000008, "Wrong alignment on UWBP_Race_HUD_Sub_TextBalloon_C");
-static_assert(sizeof(UWBP_Race_HUD_Sub_TextBalloon_C) == 0x000378, "Wrong size on UWBP_Race_HUD_Sub_TextBalloon_C");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TextBalloon_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Race_HUD_Sub_TextBalloon_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TextBalloon_C, Corner_Rival_Base) == 0x0002E8, "Member 'UWBP_Race_HUD_Sub_TextBalloon_C::Corner_Rival_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TextBalloon_C, Corner_Round) == 0x0002F0, "Member 'UWBP_Race_HUD_Sub_TextBalloon_C::Corner_Round' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TextBalloon_C, Corner_Spiky_Base) == 0x0002F8, "Member 'UWBP_Race_HUD_Sub_TextBalloon_C::Corner_Spiky_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TextBalloon_C, DMY_CharaIcon) == 0x000300, "Member 'UWBP_Race_HUD_Sub_TextBalloon_C::DMY_CharaIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TextBalloon_C, DSP_Crown) == 0x000308, "Member 'UWBP_Race_HUD_Sub_TextBalloon_C::DSP_Crown' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TextBalloon_C, MLC_PlayerNameBase) == 0x000310, "Member 'UWBP_Race_HUD_Sub_TextBalloon_C::MLC_PlayerNameBase' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TextBalloon_C, PAT_PlatformIcon) == 0x000318, "Member 'UWBP_Race_HUD_Sub_TextBalloon_C::PAT_PlatformIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TextBalloon_C, RivalIcon) == 0x000320, "Member 'UWBP_Race_HUD_Sub_TextBalloon_C::RivalIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TextBalloon_C, RivalIcon_HighLevel) == 0x000328, "Member 'UWBP_Race_HUD_Sub_TextBalloon_C::RivalIcon_HighLevel' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TextBalloon_C, TXT_PlayerName) == 0x000330, "Member 'UWBP_Race_HUD_Sub_TextBalloon_C::TXT_PlayerName' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TextBalloon_C, TXT_Reaction) == 0x000338, "Member 'UWBP_Race_HUD_Sub_TextBalloon_C::TXT_Reaction' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TextBalloon_C, WBP_CMN_PlayerNumber) == 0x000340, "Member 'UWBP_Race_HUD_Sub_TextBalloon_C::WBP_CMN_PlayerNumber' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TextBalloon_C, WidgetSwitcher_BalloonBase) == 0x000348, "Member 'UWBP_Race_HUD_Sub_TextBalloon_C::WidgetSwitcher_BalloonBase' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TextBalloon_C, WidgetSwitcher_Player) == 0x000350, "Member 'UWBP_Race_HUD_Sub_TextBalloon_C::WidgetSwitcher_Player' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TextBalloon_C, WidgetSwitcher_Rival) == 0x000358, "Member 'UWBP_Race_HUD_Sub_TextBalloon_C::WidgetSwitcher_Rival' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TextBalloon_C, SubCharaIdx) == 0x000360, "Member 'UWBP_Race_HUD_Sub_TextBalloon_C::SubCharaIdx' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TextBalloon_C, Corner_Spiky) == 0x000368, "Member 'UWBP_Race_HUD_Sub_TextBalloon_C::Corner_Spiky' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TextBalloon_C, PlayerNameBase_Index) == 0x000370, "Member 'UWBP_Race_HUD_Sub_TextBalloon_C::PlayerNameBase_Index' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_TextBalloon_C, SetFaceId) == 0x000374, "Member 'UWBP_Race_HUD_Sub_TextBalloon_C::SetFaceId' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_HUD_Sub_TextBalloon_C;
 
 }
 

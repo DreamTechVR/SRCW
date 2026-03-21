@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -37,19 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_FooterMenu_Sub_ControllerBtn_C">();
+		BP_STATIC_CLASS_IMPL("WBP_FooterMenu_Sub_ControllerBtn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_FooterMenu_Sub_ControllerBtn_C")
 	}
 	static class UWBP_FooterMenu_Sub_ControllerBtn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_FooterMenu_Sub_ControllerBtn_C>();
 	}
 };
-static_assert(alignof(UWBP_FooterMenu_Sub_ControllerBtn_C) == 0x000008, "Wrong alignment on UWBP_FooterMenu_Sub_ControllerBtn_C");
-static_assert(sizeof(UWBP_FooterMenu_Sub_ControllerBtn_C) == 0x0004C0, "Wrong size on UWBP_FooterMenu_Sub_ControllerBtn_C");
-static_assert(offsetof(UWBP_FooterMenu_Sub_ControllerBtn_C, UberGraphFrame) == 0x0004A0, "Member 'UWBP_FooterMenu_Sub_ControllerBtn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_FooterMenu_Sub_ControllerBtn_C, NSX_Joycon_Loop) == 0x0004A8, "Member 'UWBP_FooterMenu_Sub_ControllerBtn_C::NSX_Joycon_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_FooterMenu_Sub_ControllerBtn_C, Default_Loop) == 0x0004B0, "Member 'UWBP_FooterMenu_Sub_ControllerBtn_C::Default_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_FooterMenu_Sub_ControllerBtn_C, ButtonImageIndex) == 0x0004B8, "Member 'UWBP_FooterMenu_Sub_ControllerBtn_C::ButtonImageIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_FooterMenu_Sub_ControllerBtn_C;
 
 }
 

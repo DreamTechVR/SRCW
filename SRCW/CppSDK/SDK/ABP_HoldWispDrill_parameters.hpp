@@ -21,9 +21,7 @@ struct ABP_HoldWispDrill_C_IsValidOutState final
 public:
 	bool                                          Out_Valid;                                         // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ABP_HoldWispDrill_C_IsValidOutState) == 0x000001, "Wrong alignment on ABP_HoldWispDrill_C_IsValidOutState");
-static_assert(sizeof(ABP_HoldWispDrill_C_IsValidOutState) == 0x000001, "Wrong size on ABP_HoldWispDrill_C_IsValidOutState");
-static_assert(offsetof(ABP_HoldWispDrill_C_IsValidOutState, Out_Valid) == 0x000000, "Member 'ABP_HoldWispDrill_C_IsValidOutState::Out_Valid' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_HoldWispDrill_C_IsValidOutState;
 
 }
 

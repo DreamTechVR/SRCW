@@ -24,12 +24,7 @@ public:
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0010)()
 	class FText                                   K2Node_CustomEvent_TimeText;                       // 0x0018(0x0010)()
 };
-static_assert(alignof(WBP_TimeTrial_Sub_Lap_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Lap) == 0x000008, "Wrong alignment on WBP_TimeTrial_Sub_Lap_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Lap");
-static_assert(sizeof(WBP_TimeTrial_Sub_Lap_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Lap) == 0x000028, "Wrong size on WBP_TimeTrial_Sub_Lap_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Lap");
-static_assert(offsetof(WBP_TimeTrial_Sub_Lap_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Lap, EntryPoint) == 0x000000, "Member 'WBP_TimeTrial_Sub_Lap_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Lap::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Lap_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Lap, K2Node_CustomEvent_LapNo) == 0x000004, "Member 'WBP_TimeTrial_Sub_Lap_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Lap::K2Node_CustomEvent_LapNo' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Lap_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Lap, CallFunc_Conv_IntToText_ReturnValue) == 0x000008, "Member 'WBP_TimeTrial_Sub_Lap_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Lap::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Lap_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Lap, K2Node_CustomEvent_TimeText) == 0x000018, "Member 'WBP_TimeTrial_Sub_Lap_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Lap::K2Node_CustomEvent_TimeText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_Sub_Lap_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Lap;
 
 // Function WBP_TimeTrial_Sub_Lap.WBP_TimeTrial_Sub_Lap_C.SetLapNo
 // 0x0004 (0x0004 - 0x0000)
@@ -38,9 +33,7 @@ struct WBP_TimeTrial_Sub_Lap_C_SetLapNo final
 public:
 	int32                                         LapNo;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TimeTrial_Sub_Lap_C_SetLapNo) == 0x000004, "Wrong alignment on WBP_TimeTrial_Sub_Lap_C_SetLapNo");
-static_assert(sizeof(WBP_TimeTrial_Sub_Lap_C_SetLapNo) == 0x000004, "Wrong size on WBP_TimeTrial_Sub_Lap_C_SetLapNo");
-static_assert(offsetof(WBP_TimeTrial_Sub_Lap_C_SetLapNo, LapNo) == 0x000000, "Member 'WBP_TimeTrial_Sub_Lap_C_SetLapNo::LapNo' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_Sub_Lap_C_SetLapNo;
 
 // Function WBP_TimeTrial_Sub_Lap.WBP_TimeTrial_Sub_Lap_C.SetLapTime
 // 0x0010 (0x0010 - 0x0000)
@@ -49,9 +42,7 @@ struct WBP_TimeTrial_Sub_Lap_C_SetLapTime final
 public:
 	class FText                                   TimeText;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_TimeTrial_Sub_Lap_C_SetLapTime) == 0x000008, "Wrong alignment on WBP_TimeTrial_Sub_Lap_C_SetLapTime");
-static_assert(sizeof(WBP_TimeTrial_Sub_Lap_C_SetLapTime) == 0x000010, "Wrong size on WBP_TimeTrial_Sub_Lap_C_SetLapTime");
-static_assert(offsetof(WBP_TimeTrial_Sub_Lap_C_SetLapTime, TimeText) == 0x000000, "Member 'WBP_TimeTrial_Sub_Lap_C_SetLapTime::TimeText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TimeTrial_Sub_Lap_C_SetLapTime;
 
 }
 

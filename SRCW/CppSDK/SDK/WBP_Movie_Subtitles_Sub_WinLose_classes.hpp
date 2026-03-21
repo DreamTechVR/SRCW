@@ -41,31 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Movie_Subtitles_Sub_WinLose_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Movie_Subtitles_Sub_WinLose_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Movie_Subtitles_Sub_WinLose_C")
 	}
 	static class UWBP_Movie_Subtitles_Sub_WinLose_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Movie_Subtitles_Sub_WinLose_C>();
 	}
 };
-static_assert(alignof(UWBP_Movie_Subtitles_Sub_WinLose_C) == 0x000008, "Wrong alignment on UWBP_Movie_Subtitles_Sub_WinLose_C");
-static_assert(sizeof(UWBP_Movie_Subtitles_Sub_WinLose_C) == 0x000360, "Wrong size on UWBP_Movie_Subtitles_Sub_WinLose_C");
-static_assert(offsetof(UWBP_Movie_Subtitles_Sub_WinLose_C, Lose_InOut) == 0x0002E0, "Member 'UWBP_Movie_Subtitles_Sub_WinLose_C::Lose_InOut' has a wrong offset!");
-static_assert(offsetof(UWBP_Movie_Subtitles_Sub_WinLose_C, Win_InOut) == 0x0002E8, "Member 'UWBP_Movie_Subtitles_Sub_WinLose_C::Win_InOut' has a wrong offset!");
-static_assert(offsetof(UWBP_Movie_Subtitles_Sub_WinLose_C, Base_01) == 0x0002F0, "Member 'UWBP_Movie_Subtitles_Sub_WinLose_C::Base_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Movie_Subtitles_Sub_WinLose_C, Base_02) == 0x0002F8, "Member 'UWBP_Movie_Subtitles_Sub_WinLose_C::Base_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Movie_Subtitles_Sub_WinLose_C, Eff_01) == 0x000300, "Member 'UWBP_Movie_Subtitles_Sub_WinLose_C::Eff_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Movie_Subtitles_Sub_WinLose_C, Eff_02) == 0x000308, "Member 'UWBP_Movie_Subtitles_Sub_WinLose_C::Eff_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Movie_Subtitles_Sub_WinLose_C, Eff_03) == 0x000310, "Member 'UWBP_Movie_Subtitles_Sub_WinLose_C::Eff_03' has a wrong offset!");
-static_assert(offsetof(UWBP_Movie_Subtitles_Sub_WinLose_C, Eff_04) == 0x000318, "Member 'UWBP_Movie_Subtitles_Sub_WinLose_C::Eff_04' has a wrong offset!");
-static_assert(offsetof(UWBP_Movie_Subtitles_Sub_WinLose_C, Effect_Base_01) == 0x000320, "Member 'UWBP_Movie_Subtitles_Sub_WinLose_C::Effect_Base_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Movie_Subtitles_Sub_WinLose_C, Effect_Base_02) == 0x000328, "Member 'UWBP_Movie_Subtitles_Sub_WinLose_C::Effect_Base_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Movie_Subtitles_Sub_WinLose_C, Effect_Base_03) == 0x000330, "Member 'UWBP_Movie_Subtitles_Sub_WinLose_C::Effect_Base_03' has a wrong offset!");
-static_assert(offsetof(UWBP_Movie_Subtitles_Sub_WinLose_C, Effect_L_01) == 0x000338, "Member 'UWBP_Movie_Subtitles_Sub_WinLose_C::Effect_L_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Movie_Subtitles_Sub_WinLose_C, TXT_Lose) == 0x000340, "Member 'UWBP_Movie_Subtitles_Sub_WinLose_C::TXT_Lose' has a wrong offset!");
-static_assert(offsetof(UWBP_Movie_Subtitles_Sub_WinLose_C, TXT_WIN) == 0x000348, "Member 'UWBP_Movie_Subtitles_Sub_WinLose_C::TXT_WIN' has a wrong offset!");
-static_assert(offsetof(UWBP_Movie_Subtitles_Sub_WinLose_C, TXT_Win_Base_01) == 0x000350, "Member 'UWBP_Movie_Subtitles_Sub_WinLose_C::TXT_Win_Base_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Movie_Subtitles_Sub_WinLose_C, TXT_Win_Base_02) == 0x000358, "Member 'UWBP_Movie_Subtitles_Sub_WinLose_C::TXT_Win_Base_02' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Movie_Subtitles_Sub_WinLose_C;
 
 }
 

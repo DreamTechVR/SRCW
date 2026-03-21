@@ -51,30 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_HUD_Sub_SpeedNum_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_HUD_Sub_SpeedNum_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_HUD_Sub_SpeedNum_C")
 	}
 	static class UWBP_Race_HUD_Sub_SpeedNum_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_HUD_Sub_SpeedNum_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_HUD_Sub_SpeedNum_C) == 0x000008, "Wrong alignment on UWBP_Race_HUD_Sub_SpeedNum_C");
-static_assert(sizeof(UWBP_Race_HUD_Sub_SpeedNum_C) == 0x000370, "Wrong size on UWBP_Race_HUD_Sub_SpeedNum_C");
-static_assert(offsetof(UWBP_Race_HUD_Sub_SpeedNum_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Race_HUD_Sub_SpeedNum_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_SpeedNum_C, base) == 0x0002E8, "Member 'UWBP_Race_HUD_Sub_SpeedNum_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_SpeedNum_C, Base_Eff) == 0x0002F0, "Member 'UWBP_Race_HUD_Sub_SpeedNum_C::Base_Eff' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_SpeedNum_C, CircularThrobber_Eff) == 0x0002F8, "Member 'UWBP_Race_HUD_Sub_SpeedNum_C::CircularThrobber_Eff' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_SpeedNum_C, Num_100) == 0x000300, "Member 'UWBP_Race_HUD_Sub_SpeedNum_C::Num_100' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_SpeedNum_C, NUM_001) == 0x000308, "Member 'UWBP_Race_HUD_Sub_SpeedNum_C::NUM_001' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_SpeedNum_C, NUM_010) == 0x000310, "Member 'UWBP_Race_HUD_Sub_SpeedNum_C::NUM_010' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_SpeedNum_C, TXT_Speed) == 0x000318, "Member 'UWBP_Race_HUD_Sub_SpeedNum_C::TXT_Speed' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_SpeedNum_C, SpeedometerScale_Normal) == 0x000320, "Member 'UWBP_Race_HUD_Sub_SpeedNum_C::SpeedometerScale_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_SpeedNum_C, SpeedometerScale_High) == 0x000328, "Member 'UWBP_Race_HUD_Sub_SpeedNum_C::SpeedometerScale_High' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_SpeedNum_C, SpeedometerScale_Sonic) == 0x000330, "Member 'UWBP_Race_HUD_Sub_SpeedNum_C::SpeedometerScale_Sonic' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_SpeedNum_C, SpeedometerScale_SuperSonic) == 0x000338, "Member 'UWBP_Race_HUD_Sub_SpeedNum_C::SpeedometerScale_SuperSonic' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_SpeedNum_C, SpeedometerScale) == 0x000340, "Member 'UWBP_Race_HUD_Sub_SpeedNum_C::SpeedometerScale' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_SpeedNum_C, SoundHandle) == 0x000350, "Member 'UWBP_Race_HUD_Sub_SpeedNum_C::SoundHandle' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_SpeedNum_C, SoundHandleFlag) == 0x000360, "Member 'UWBP_Race_HUD_Sub_SpeedNum_C::SoundHandleFlag' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_HUD_Sub_SpeedNum_C;
 
 }
 

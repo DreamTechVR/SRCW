@@ -23,15 +23,18 @@ class ABP_ItemBodyCutObject_C final : public AItemBodyCutObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ItemBodyCutObject_C">();
+		BP_STATIC_CLASS_IMPL("BP_ItemBodyCutObject_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ItemBodyCutObject_C")
 	}
 	static class ABP_ItemBodyCutObject_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ItemBodyCutObject_C>();
 	}
 };
-static_assert(alignof(ABP_ItemBodyCutObject_C) == 0x000010, "Wrong alignment on ABP_ItemBodyCutObject_C");
-static_assert(sizeof(ABP_ItemBodyCutObject_C) == 0x000950, "Wrong size on ABP_ItemBodyCutObject_C");
+DUMPER7_ASSERTS_ABP_ItemBodyCutObject_C;
 
 }
 

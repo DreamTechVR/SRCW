@@ -60,36 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C")
 	}
 	static class UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C) == 0x000008, "Wrong alignment on UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C");
-static_assert(sizeof(UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C) == 0x0003A8, "Wrong size on UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C, RingGauge_Change_Normal) == 0x0002E8, "Member 'UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C::RingGauge_Change_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C, RingGauge_Change_Boost) == 0x0002F0, "Member 'UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C::RingGauge_Change_Boost' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C, RingGauge_Loop_Normal) == 0x0002F8, "Member 'UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C::RingGauge_Loop_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C, Bar_Boost) == 0x000300, "Member 'UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C::Bar_Boost' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C, Bar_Normal) == 0x000308, "Member 'UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C::Bar_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C, Bar_Normal_Eff) == 0x000310, "Member 'UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C::Bar_Normal_Eff' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C, base) == 0x000318, "Member 'UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C, Eff_Base) == 0x000320, "Member 'UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C::Eff_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C, Eff_Core) == 0x000328, "Member 'UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C::Eff_Core' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C, Eff_Just_03) == 0x000330, "Member 'UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C::Eff_Just_03' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C, Eff_Line_01) == 0x000338, "Member 'UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C::Eff_Line_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C, Eff_Line_02) == 0x000340, "Member 'UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C::Eff_Line_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C, Eff_Ring) == 0x000348, "Member 'UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C::Eff_Ring' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C, Eff_S_01) == 0x000350, "Member 'UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C::Eff_S_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C, Eff_S_02) == 0x000358, "Member 'UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C::Eff_S_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C, Eff_S_03) == 0x000360, "Member 'UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C::Eff_S_03' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C, MLC_Base_Team) == 0x000368, "Member 'UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C::MLC_Base_Team' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C, TXT_Boost) == 0x000370, "Member 'UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C::TXT_Boost' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C, PanelDebugTexture) == 0x000378, "Member 'UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C::PanelDebugTexture' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C, IsBoost) == 0x0003A0, "Member 'UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C::IsBoost' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C;
 
 }
 

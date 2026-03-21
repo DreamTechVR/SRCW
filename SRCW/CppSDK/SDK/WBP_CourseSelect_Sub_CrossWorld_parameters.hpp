@@ -55,35 +55,7 @@ public:
 	uint8                                         Pad_A5[0x3];                                       // 0x00A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld) == 0x000008, "Wrong alignment on WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld");
-static_assert(sizeof(WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld) == 0x0000B0, "Wrong size on WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld, EntryPoint) == 0x000000, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld, Temp_int_Array_Index_Variable) == 0x000004, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld, K2Node_CustomEvent_InTimeTrialClearRanks) == 0x000008, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld::K2Node_CustomEvent_InTimeTrialClearRanks' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000018, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld, K2Node_MakeArray_Array) == 0x000020, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld, Temp_int_Loop_Counter_Variable) == 0x000030, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld, CallFunc_Add_IntInt_ReturnValue) == 0x000034, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld, Temp_int_Array_Index_Variable_1) == 0x000038, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld, CallFunc_Multiply_IntInt_ReturnValue) == 0x00003C, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld::CallFunc_Multiply_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld, CallFunc_Add_IntInt_ReturnValue_1) == 0x000040, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld, CallFunc_Add_IntInt_ReturnValue_2) == 0x000044, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld, K2Node_CustomEvent_InPanelIndex) == 0x000048, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld::K2Node_CustomEvent_InPanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld, K2Node_CustomEvent_InButtonIndex) == 0x00004C, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld::K2Node_CustomEvent_InButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld, K2Node_MakeArray_Array_1) == 0x000050, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld, CallFunc_Array_Get_Item) == 0x000060, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld, CallFunc_Array_IsValidIndex_ReturnValue_1) == 0x000068, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld::CallFunc_Array_IsValidIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld, CallFunc_Array_Length_ReturnValue) == 0x00006C, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld, CallFunc_Array_Get_Item_1) == 0x000070, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld, CallFunc_Array_Get_Item_2) == 0x000078, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld, CallFunc_Array_Length_ReturnValue_1) == 0x000080, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld, CallFunc_Less_IntInt_ReturnValue) == 0x000084, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000085, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld, CallFunc_Array_Get_Item_3) == 0x000088, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld, K2Node_CreateDelegate_OutputDelegate) == 0x000090, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld, Temp_int_Loop_Counter_Variable_1) == 0x0000A0, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000A4, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld, CallFunc_Add_IntInt_ReturnValue_3) == 0x0000A8, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_Sub_CrossWorld_C_ExecuteUbergraph_WBP_CourseSelect_Sub_CrossWorld;
 
 // Function WBP_CourseSelect_Sub_CrossWorld.WBP_CourseSelect_Sub_CrossWorld_C.SelectMedalView
 // 0x0008 (0x0008 - 0x0000)
@@ -93,10 +65,7 @@ public:
 	int32                                         InPanelIndex;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         InButtonIndex;                                     // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_Sub_CrossWorld_C_SelectMedalView) == 0x000004, "Wrong alignment on WBP_CourseSelect_Sub_CrossWorld_C_SelectMedalView");
-static_assert(sizeof(WBP_CourseSelect_Sub_CrossWorld_C_SelectMedalView) == 0x000008, "Wrong size on WBP_CourseSelect_Sub_CrossWorld_C_SelectMedalView");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_SelectMedalView, InPanelIndex) == 0x000000, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_SelectMedalView::InPanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_SelectMedalView, InButtonIndex) == 0x000004, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_SelectMedalView::InButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_Sub_CrossWorld_C_SelectMedalView;
 
 // Function WBP_CourseSelect_Sub_CrossWorld.WBP_CourseSelect_Sub_CrossWorld_C.SetLock
 // 0x003C (0x003C - 0x0000)
@@ -115,17 +84,7 @@ public:
 	struct FLinearColor                           K2Node_Select_Default;                             // 0x0028(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EButtonFocusType                              K2Node_Select_Default_1;                           // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_Sub_CrossWorld_C_SetLock) == 0x000004, "Wrong alignment on WBP_CourseSelect_Sub_CrossWorld_C_SetLock");
-static_assert(sizeof(WBP_CourseSelect_Sub_CrossWorld_C_SetLock) == 0x00003C, "Wrong size on WBP_CourseSelect_Sub_CrossWorld_C_SetLock");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_SetLock, bLock) == 0x000000, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_SetLock::bLock' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_SetLock, Temp_bool_Variable) == 0x000001, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_SetLock::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_SetLock, Temp_struct_Variable) == 0x000004, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_SetLock::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_SetLock, Temp_struct_Variable_1) == 0x000014, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_SetLock::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_SetLock, Temp_bool_Variable_1) == 0x000024, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_SetLock::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_SetLock, Temp_byte_Variable) == 0x000025, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_SetLock::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_SetLock, Temp_byte_Variable_1) == 0x000026, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_SetLock::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_SetLock, K2Node_Select_Default) == 0x000028, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_SetLock::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_SetLock, K2Node_Select_Default_1) == 0x000038, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_SetLock::K2Node_Select_Default_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_Sub_CrossWorld_C_SetLock;
 
 // Function WBP_CourseSelect_Sub_CrossWorld.WBP_CourseSelect_Sub_CrossWorld_C.Setup
 // 0x0010 (0x0010 - 0x0000)
@@ -134,9 +93,7 @@ struct WBP_CourseSelect_Sub_CrossWorld_C_Setup final
 public:
 	TArray<ETimeTrialClearRankId>                 InTimeTrialClearRanks;                             // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_CourseSelect_Sub_CrossWorld_C_Setup) == 0x000008, "Wrong alignment on WBP_CourseSelect_Sub_CrossWorld_C_Setup");
-static_assert(sizeof(WBP_CourseSelect_Sub_CrossWorld_C_Setup) == 0x000010, "Wrong size on WBP_CourseSelect_Sub_CrossWorld_C_Setup");
-static_assert(offsetof(WBP_CourseSelect_Sub_CrossWorld_C_Setup, InTimeTrialClearRanks) == 0x000000, "Member 'WBP_CourseSelect_Sub_CrossWorld_C_Setup::InTimeTrialClearRanks' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_Sub_CrossWorld_C_Setup;
 
 }
 

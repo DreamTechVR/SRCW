@@ -33,15 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AudioCapture">();
+		STATIC_CLASS_IMPL("AudioCapture")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AudioCapture")
 	}
 	static class UAudioCapture* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAudioCapture>();
 	}
 };
-static_assert(alignof(UAudioCapture) == 0x000008, "Wrong alignment on UAudioCapture");
-static_assert(sizeof(UAudioCapture) == 0x0000B0, "Wrong size on UAudioCapture");
+DUMPER7_ASSERTS_UAudioCapture;
 
 // Class AudioCapture.AudioCaptureFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -53,15 +56,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AudioCaptureFunctionLibrary">();
+		STATIC_CLASS_IMPL("AudioCaptureFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AudioCaptureFunctionLibrary")
 	}
 	static class UAudioCaptureFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAudioCaptureFunctionLibrary>();
 	}
 };
-static_assert(alignof(UAudioCaptureFunctionLibrary) == 0x000008, "Wrong alignment on UAudioCaptureFunctionLibrary");
-static_assert(sizeof(UAudioCaptureFunctionLibrary) == 0x000028, "Wrong size on UAudioCaptureFunctionLibrary");
+DUMPER7_ASSERTS_UAudioCaptureFunctionLibrary;
 
 // Class AudioCapture.AudioCaptureBlueprintLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -74,15 +80,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AudioCaptureBlueprintLibrary">();
+		STATIC_CLASS_IMPL("AudioCaptureBlueprintLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AudioCaptureBlueprintLibrary")
 	}
 	static class UAudioCaptureBlueprintLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAudioCaptureBlueprintLibrary>();
 	}
 };
-static_assert(alignof(UAudioCaptureBlueprintLibrary) == 0x000008, "Wrong alignment on UAudioCaptureBlueprintLibrary");
-static_assert(sizeof(UAudioCaptureBlueprintLibrary) == 0x000028, "Wrong size on UAudioCaptureBlueprintLibrary");
+DUMPER7_ASSERTS_UAudioCaptureBlueprintLibrary;
 
 // Class AudioCapture.AudioCaptureComponent
 // 0x00C0 (0x0950 - 0x0890)
@@ -95,16 +104,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AudioCaptureComponent">();
+		STATIC_CLASS_IMPL("AudioCaptureComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AudioCaptureComponent")
 	}
 	static class UAudioCaptureComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAudioCaptureComponent>();
 	}
 };
-static_assert(alignof(UAudioCaptureComponent) == 0x000010, "Wrong alignment on UAudioCaptureComponent");
-static_assert(sizeof(UAudioCaptureComponent) == 0x000950, "Wrong size on UAudioCaptureComponent");
-static_assert(offsetof(UAudioCaptureComponent, JitterLatencyFrames) == 0x000890, "Member 'UAudioCaptureComponent::JitterLatencyFrames' has a wrong offset!");
+DUMPER7_ASSERTS_UAudioCaptureComponent;
 
 }
 

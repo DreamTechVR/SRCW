@@ -23,9 +23,7 @@ struct WBP_Garage_MainMenu_C_Button_OnDecisionAnimFinished final
 public:
 	class UUnionUIButtonBase*                     InButton;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Garage_MainMenu_C_Button_OnDecisionAnimFinished) == 0x000008, "Wrong alignment on WBP_Garage_MainMenu_C_Button_OnDecisionAnimFinished");
-static_assert(sizeof(WBP_Garage_MainMenu_C_Button_OnDecisionAnimFinished) == 0x000008, "Wrong size on WBP_Garage_MainMenu_C_Button_OnDecisionAnimFinished");
-static_assert(offsetof(WBP_Garage_MainMenu_C_Button_OnDecisionAnimFinished, InButton) == 0x000000, "Member 'WBP_Garage_MainMenu_C_Button_OnDecisionAnimFinished::InButton' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Garage_MainMenu_C_Button_OnDecisionAnimFinished;
 
 // Function WBP_Garage_MainMenu.WBP_Garage_MainMenu_C.ExecuteUbergraph_WBP_Garage_MainMenu
 // 0x00E0 (0x00E0 - 0x0000)
@@ -73,42 +71,7 @@ public:
 	int32                                         Temp_int_Variable_1;                               // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EGarageChildSequenceId                        K2Node_Select_Default_1;                           // 0x00DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu) == 0x000008, "Wrong alignment on WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu");
-static_assert(sizeof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu) == 0x0000E0, "Wrong size on WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, EntryPoint) == 0x000000, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, Temp_byte_Variable) == 0x000014, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, Temp_byte_Variable_1) == 0x000015, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, Temp_int_Array_Index_Variable) == 0x000018, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, Temp_int_Loop_Counter_Variable) == 0x00001C, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, CallFunc_Add_IntInt_ReturnValue) == 0x000020, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, K2Node_CustomEvent_Button_2) == 0x000028, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::K2Node_CustomEvent_Button_2' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, K2Node_CustomEvent_PanelIndex_2) == 0x000030, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::K2Node_CustomEvent_PanelIndex_2' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, K2Node_CustomEvent_ButtonIndex_2) == 0x000034, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::K2Node_CustomEvent_ButtonIndex_2' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, K2Node_CustomEvent_Button_1) == 0x000038, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::K2Node_CustomEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, K2Node_CustomEvent_PanelIndex_1) == 0x000040, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::K2Node_CustomEvent_PanelIndex_1' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, K2Node_CustomEvent_ButtonIndex_1) == 0x000044, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::K2Node_CustomEvent_ButtonIndex_1' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, K2Node_CustomEvent_Button) == 0x000048, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, K2Node_CustomEvent_PanelIndex) == 0x000050, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::K2Node_CustomEvent_PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, K2Node_CustomEvent_ButtonIndex) == 0x000054, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::K2Node_CustomEvent_ButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, K2Node_CustomEvent_InButton) == 0x000058, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::K2Node_CustomEvent_InButton' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, CallFunc_PlayAnimation_ReturnValue) == 0x000060, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, CallFunc_CreateButtonsPanel_ReturnValue) == 0x000068, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::CallFunc_CreateButtonsPanel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, K2Node_MakeArray_Array) == 0x000070, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, CallFunc_MakeLiteralInt_ReturnValue) == 0x000080, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, CallFunc_MakeLiteralBool_ReturnValue) == 0x000084, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::CallFunc_MakeLiteralBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, Temp_int_Variable) == 0x000088, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, K2Node_CreateDelegate_OutputDelegate_1) == 0x00008C, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, K2Node_Select_Default) == 0x00009C, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, K2Node_CreateDelegate_OutputDelegate_2) == 0x0000A0, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, Temp_byte_Variable_2) == 0x0000B0, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, Temp_byte_Variable_3) == 0x0000B1, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, CallFunc_Array_Get_Item) == 0x0000B8, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, CallFunc_Array_Length_ReturnValue) == 0x0000C0, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, CallFunc_Less_IntInt_ReturnValue) == 0x0000C4, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, K2Node_CreateDelegate_OutputDelegate_3) == 0x0000C8, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, Temp_int_Variable_1) == 0x0000D8, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu, K2Node_Select_Default_1) == 0x0000DC, "Member 'WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu::K2Node_Select_Default_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Garage_MainMenu_C_ExecuteUbergraph_WBP_Garage_MainMenu;
 
 // Function WBP_Garage_MainMenu.WBP_Garage_MainMenu_C.PlayInAnimation
 // 0x0008 (0x0008 - 0x0000)
@@ -117,9 +80,7 @@ struct WBP_Garage_MainMenu_C_PlayInAnimation final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Garage_MainMenu_C_PlayInAnimation) == 0x000008, "Wrong alignment on WBP_Garage_MainMenu_C_PlayInAnimation");
-static_assert(sizeof(WBP_Garage_MainMenu_C_PlayInAnimation) == 0x000008, "Wrong size on WBP_Garage_MainMenu_C_PlayInAnimation");
-static_assert(offsetof(WBP_Garage_MainMenu_C_PlayInAnimation, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_Garage_MainMenu_C_PlayInAnimation::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Garage_MainMenu_C_PlayInAnimation;
 
 // Function WBP_Garage_MainMenu.WBP_Garage_MainMenu_C.Scene_OnCancel
 // 0x0010 (0x0010 - 0x0000)
@@ -130,11 +91,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Garage_MainMenu_C_Scene_OnCancel) == 0x000008, "Wrong alignment on WBP_Garage_MainMenu_C_Scene_OnCancel");
-static_assert(sizeof(WBP_Garage_MainMenu_C_Scene_OnCancel) == 0x000010, "Wrong size on WBP_Garage_MainMenu_C_Scene_OnCancel");
-static_assert(offsetof(WBP_Garage_MainMenu_C_Scene_OnCancel, Button) == 0x000000, "Member 'WBP_Garage_MainMenu_C_Scene_OnCancel::Button' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_Scene_OnCancel, PanelIndex) == 0x000008, "Member 'WBP_Garage_MainMenu_C_Scene_OnCancel::PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_Scene_OnCancel, ButtonIndex) == 0x00000C, "Member 'WBP_Garage_MainMenu_C_Scene_OnCancel::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Garage_MainMenu_C_Scene_OnCancel;
 
 // Function WBP_Garage_MainMenu.WBP_Garage_MainMenu_C.Scene_OnDecision
 // 0x0010 (0x0010 - 0x0000)
@@ -145,11 +102,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Garage_MainMenu_C_Scene_OnDecision) == 0x000008, "Wrong alignment on WBP_Garage_MainMenu_C_Scene_OnDecision");
-static_assert(sizeof(WBP_Garage_MainMenu_C_Scene_OnDecision) == 0x000010, "Wrong size on WBP_Garage_MainMenu_C_Scene_OnDecision");
-static_assert(offsetof(WBP_Garage_MainMenu_C_Scene_OnDecision, Button) == 0x000000, "Member 'WBP_Garage_MainMenu_C_Scene_OnDecision::Button' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_Scene_OnDecision, PanelIndex) == 0x000008, "Member 'WBP_Garage_MainMenu_C_Scene_OnDecision::PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_Scene_OnDecision, ButtonIndex) == 0x00000C, "Member 'WBP_Garage_MainMenu_C_Scene_OnDecision::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Garage_MainMenu_C_Scene_OnDecision;
 
 // Function WBP_Garage_MainMenu.WBP_Garage_MainMenu_C.Scene_OnFocus
 // 0x0010 (0x0010 - 0x0000)
@@ -160,11 +113,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Garage_MainMenu_C_Scene_OnFocus) == 0x000008, "Wrong alignment on WBP_Garage_MainMenu_C_Scene_OnFocus");
-static_assert(sizeof(WBP_Garage_MainMenu_C_Scene_OnFocus) == 0x000010, "Wrong size on WBP_Garage_MainMenu_C_Scene_OnFocus");
-static_assert(offsetof(WBP_Garage_MainMenu_C_Scene_OnFocus, Button) == 0x000000, "Member 'WBP_Garage_MainMenu_C_Scene_OnFocus::Button' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_Scene_OnFocus, PanelIndex) == 0x000008, "Member 'WBP_Garage_MainMenu_C_Scene_OnFocus::PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Garage_MainMenu_C_Scene_OnFocus, ButtonIndex) == 0x00000C, "Member 'WBP_Garage_MainMenu_C_Scene_OnFocus::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Garage_MainMenu_C_Scene_OnFocus;
 
 // Function WBP_Garage_MainMenu.WBP_Garage_MainMenu_C.SetInitialFocus
 // 0x0008 (0x0008 - 0x0000)
@@ -173,9 +122,7 @@ struct WBP_Garage_MainMenu_C_SetInitialFocus final
 public:
 	class APlayerController*                      InPlayerController;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Garage_MainMenu_C_SetInitialFocus) == 0x000008, "Wrong alignment on WBP_Garage_MainMenu_C_SetInitialFocus");
-static_assert(sizeof(WBP_Garage_MainMenu_C_SetInitialFocus) == 0x000008, "Wrong size on WBP_Garage_MainMenu_C_SetInitialFocus");
-static_assert(offsetof(WBP_Garage_MainMenu_C_SetInitialFocus, InPlayerController) == 0x000000, "Member 'WBP_Garage_MainMenu_C_SetInitialFocus::InPlayerController' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Garage_MainMenu_C_SetInitialFocus;
 
 }
 

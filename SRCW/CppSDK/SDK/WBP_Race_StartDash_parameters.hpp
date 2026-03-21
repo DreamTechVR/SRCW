@@ -30,17 +30,7 @@ public:
 	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_StartDash_C_ExecuteUbergraph_WBP_Race_StartDash) == 0x000008, "Wrong alignment on WBP_Race_StartDash_C_ExecuteUbergraph_WBP_Race_StartDash");
-static_assert(sizeof(WBP_Race_StartDash_C_ExecuteUbergraph_WBP_Race_StartDash) == 0x000038, "Wrong size on WBP_Race_StartDash_C_ExecuteUbergraph_WBP_Race_StartDash");
-static_assert(offsetof(WBP_Race_StartDash_C_ExecuteUbergraph_WBP_Race_StartDash, EntryPoint) == 0x000000, "Member 'WBP_Race_StartDash_C_ExecuteUbergraph_WBP_Race_StartDash::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_C_ExecuteUbergraph_WBP_Race_StartDash, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_Race_StartDash_C_ExecuteUbergraph_WBP_Race_StartDash::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_C_ExecuteUbergraph_WBP_Race_StartDash, K2Node_Event_ImageRef) == 0x000018, "Member 'WBP_Race_StartDash_C_ExecuteUbergraph_WBP_Race_StartDash::K2Node_Event_ImageRef' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_C_ExecuteUbergraph_WBP_Race_StartDash, K2Node_Event_PivotRate) == 0x000020, "Member 'WBP_Race_StartDash_C_ExecuteUbergraph_WBP_Race_StartDash::K2Node_Event_PivotRate' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_C_ExecuteUbergraph_WBP_Race_StartDash, K2Node_Event_GaugeRateRange) == 0x000024, "Member 'WBP_Race_StartDash_C_ExecuteUbergraph_WBP_Race_StartDash::K2Node_Event_GaugeRateRange' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_C_ExecuteUbergraph_WBP_Race_StartDash, K2Node_Event_InCount) == 0x000028, "Member 'WBP_Race_StartDash_C_ExecuteUbergraph_WBP_Race_StartDash::K2Node_Event_InCount' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_C_ExecuteUbergraph_WBP_Race_StartDash, CallFunc_Percent_IntInt_ReturnValue) == 0x00002C, "Member 'WBP_Race_StartDash_C_ExecuteUbergraph_WBP_Race_StartDash::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_C_ExecuteUbergraph_WBP_Race_StartDash, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000030, "Member 'WBP_Race_StartDash_C_ExecuteUbergraph_WBP_Race_StartDash::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_C_ExecuteUbergraph_WBP_Race_StartDash, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000031, "Member 'WBP_Race_StartDash_C_ExecuteUbergraph_WBP_Race_StartDash::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_StartDash_C_ExecuteUbergraph_WBP_Race_StartDash;
 
 // Function WBP_Race_StartDash.WBP_Race_StartDash_C.FireInAnim
 // 0x0008 (0x0008 - 0x0000)
@@ -49,9 +39,7 @@ struct WBP_Race_StartDash_C_FireInAnim final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_StartDash_C_FireInAnim) == 0x000008, "Wrong alignment on WBP_Race_StartDash_C_FireInAnim");
-static_assert(sizeof(WBP_Race_StartDash_C_FireInAnim) == 0x000008, "Wrong size on WBP_Race_StartDash_C_FireInAnim");
-static_assert(offsetof(WBP_Race_StartDash_C_FireInAnim, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_Race_StartDash_C_FireInAnim::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_StartDash_C_FireInAnim;
 
 // Function WBP_Race_StartDash.WBP_Race_StartDash_C.SetCount
 // 0x0004 (0x0004 - 0x0000)
@@ -60,9 +48,7 @@ struct WBP_Race_StartDash_C_SetCount final
 public:
 	int32                                         InCount;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_StartDash_C_SetCount) == 0x000004, "Wrong alignment on WBP_Race_StartDash_C_SetCount");
-static_assert(sizeof(WBP_Race_StartDash_C_SetCount) == 0x000004, "Wrong size on WBP_Race_StartDash_C_SetCount");
-static_assert(offsetof(WBP_Race_StartDash_C_SetCount, InCount) == 0x000000, "Member 'WBP_Race_StartDash_C_SetCount::InCount' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_StartDash_C_SetCount;
 
 // Function WBP_Race_StartDash.WBP_Race_StartDash_C.SetGaugePivotAndRange
 // 0x0010 (0x0010 - 0x0000)
@@ -73,11 +59,7 @@ public:
 	float                                         PivotRate;                                         // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         GaugeRateRange;                                    // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_StartDash_C_SetGaugePivotAndRange) == 0x000008, "Wrong alignment on WBP_Race_StartDash_C_SetGaugePivotAndRange");
-static_assert(sizeof(WBP_Race_StartDash_C_SetGaugePivotAndRange) == 0x000010, "Wrong size on WBP_Race_StartDash_C_SetGaugePivotAndRange");
-static_assert(offsetof(WBP_Race_StartDash_C_SetGaugePivotAndRange, ImageRef) == 0x000000, "Member 'WBP_Race_StartDash_C_SetGaugePivotAndRange::ImageRef' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_C_SetGaugePivotAndRange, PivotRate) == 0x000008, "Member 'WBP_Race_StartDash_C_SetGaugePivotAndRange::PivotRate' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_C_SetGaugePivotAndRange, GaugeRateRange) == 0x00000C, "Member 'WBP_Race_StartDash_C_SetGaugePivotAndRange::GaugeRateRange' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_StartDash_C_SetGaugePivotAndRange;
 
 }
 

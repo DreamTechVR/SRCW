@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
+#include "UnionSystem_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -26,10 +26,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_Header_GadgetType_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Header_GadgetType) == 0x000004, "Wrong alignment on WBP_GadgetCustom_Sub_Header_GadgetType_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Header_GadgetType");
-static_assert(sizeof(WBP_GadgetCustom_Sub_Header_GadgetType_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Header_GadgetType) == 0x000008, "Wrong size on WBP_GadgetCustom_Sub_Header_GadgetType_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Header_GadgetType");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Header_GadgetType_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Header_GadgetType, EntryPoint) == 0x000000, "Member 'WBP_GadgetCustom_Sub_Header_GadgetType_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Header_GadgetType::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Header_GadgetType_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Header_GadgetType, K2Node_Event_IsDesignTime) == 0x000004, "Member 'WBP_GadgetCustom_Sub_Header_GadgetType_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Header_GadgetType::K2Node_Event_IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_Header_GadgetType_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_Header_GadgetType;
 
 // Function WBP_GadgetCustom_Sub_Header_GadgetType.WBP_GadgetCustom_Sub_Header_GadgetType_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -38,9 +35,7 @@ struct WBP_GadgetCustom_Sub_Header_GadgetType_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_Header_GadgetType_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_GadgetCustom_Sub_Header_GadgetType_C_PreConstruct");
-static_assert(sizeof(WBP_GadgetCustom_Sub_Header_GadgetType_C_PreConstruct) == 0x000001, "Wrong size on WBP_GadgetCustom_Sub_Header_GadgetType_C_PreConstruct");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Header_GadgetType_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_GadgetCustom_Sub_Header_GadgetType_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_Header_GadgetType_C_PreConstruct;
 
 // Function WBP_GadgetCustom_Sub_Header_GadgetType.WBP_GadgetCustom_Sub_Header_GadgetType_C.SetGadgetCategory
 // 0x00D0 (0x00D0 - 0x0000)
@@ -59,16 +54,7 @@ public:
 	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x00C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_Header_GadgetType_C_SetGadgetCategory) == 0x000008, "Wrong alignment on WBP_GadgetCustom_Sub_Header_GadgetType_C_SetGadgetCategory");
-static_assert(sizeof(WBP_GadgetCustom_Sub_Header_GadgetType_C_SetGadgetCategory) == 0x0000D0, "Wrong size on WBP_GadgetCustom_Sub_Header_GadgetType_C_SetGadgetCategory");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Header_GadgetType_C_SetGadgetCategory, InGadgetCategory) == 0x000000, "Member 'WBP_GadgetCustom_Sub_Header_GadgetType_C_SetGadgetCategory::InGadgetCategory' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Header_GadgetType_C_SetGadgetCategory, TmpGadgetCustomCategoryData) == 0x000008, "Member 'WBP_GadgetCustom_Sub_Header_GadgetType_C_SetGadgetCategory::TmpGadgetCustomCategoryData' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Header_GadgetType_C_SetGadgetCategory, CallFunc_GetEnumeratorName_ReturnValue) == 0x000058, "Member 'WBP_GadgetCustom_Sub_Header_GadgetType_C_SetGadgetCategory::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Header_GadgetType_C_SetGadgetCategory, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000060, "Member 'WBP_GadgetCustom_Sub_Header_GadgetType_C_SetGadgetCategory::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Header_GadgetType_C_SetGadgetCategory, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000068, "Member 'WBP_GadgetCustom_Sub_Header_GadgetType_C_SetGadgetCategory::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Header_GadgetType_C_SetGadgetCategory, CallFunc_GetDataTableRowFromName_OutRow) == 0x000070, "Member 'WBP_GadgetCustom_Sub_Header_GadgetType_C_SetGadgetCategory::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Header_GadgetType_C_SetGadgetCategory, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x0000C0, "Member 'WBP_GadgetCustom_Sub_Header_GadgetType_C_SetGadgetCategory::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Header_GadgetType_C_SetGadgetCategory, CallFunc_GetDynamicMaterial_ReturnValue) == 0x0000C8, "Member 'WBP_GadgetCustom_Sub_Header_GadgetType_C_SetGadgetCategory::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_Header_GadgetType_C_SetGadgetCategory;
 
 // Function WBP_GadgetCustom_Sub_Header_GadgetType.WBP_GadgetCustom_Sub_Header_GadgetType_C.SetupNewIcon
 // 0x0005 (0x0005 - 0x0000)
@@ -81,13 +67,7 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_Header_GadgetType_C_SetupNewIcon) == 0x000001, "Wrong alignment on WBP_GadgetCustom_Sub_Header_GadgetType_C_SetupNewIcon");
-static_assert(sizeof(WBP_GadgetCustom_Sub_Header_GadgetType_C_SetupNewIcon) == 0x000005, "Wrong size on WBP_GadgetCustom_Sub_Header_GadgetType_C_SetupNewIcon");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Header_GadgetType_C_SetupNewIcon, Index_0) == 0x000000, "Member 'WBP_GadgetCustom_Sub_Header_GadgetType_C_SetupNewIcon::Index_0' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Header_GadgetType_C_SetupNewIcon, Temp_bool_Variable) == 0x000001, "Member 'WBP_GadgetCustom_Sub_Header_GadgetType_C_SetupNewIcon::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Header_GadgetType_C_SetupNewIcon, Temp_byte_Variable) == 0x000002, "Member 'WBP_GadgetCustom_Sub_Header_GadgetType_C_SetupNewIcon::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Header_GadgetType_C_SetupNewIcon, Temp_byte_Variable_1) == 0x000003, "Member 'WBP_GadgetCustom_Sub_Header_GadgetType_C_SetupNewIcon::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_Header_GadgetType_C_SetupNewIcon, K2Node_Select_Default) == 0x000004, "Member 'WBP_GadgetCustom_Sub_Header_GadgetType_C_SetupNewIcon::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_Header_GadgetType_C_SetupNewIcon;
 
 }
 

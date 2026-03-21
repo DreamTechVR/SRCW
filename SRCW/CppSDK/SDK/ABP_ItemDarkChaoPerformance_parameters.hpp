@@ -23,9 +23,7 @@ struct ABP_ItemDarkChaoPerformance_C_AnimGraph final
 public:
 	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(ABP_ItemDarkChaoPerformance_C_AnimGraph) == 0x000008, "Wrong alignment on ABP_ItemDarkChaoPerformance_C_AnimGraph");
-static_assert(sizeof(ABP_ItemDarkChaoPerformance_C_AnimGraph) == 0x000010, "Wrong size on ABP_ItemDarkChaoPerformance_C_AnimGraph");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'ABP_ItemDarkChaoPerformance_C_AnimGraph::AnimGraph_0' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_ItemDarkChaoPerformance_C_AnimGraph;
 
 // Function ABP_ItemDarkChaoPerformance.ABP_ItemDarkChaoPerformance_C.ExecuteUbergraph_ABP_ItemDarkChaoPerformance
 // 0x0058 (0x0058 - 0x0000)
@@ -51,21 +49,7 @@ public:
 	double                                        CallFunc_LessEqual_DoubleDouble_A_ImplicitCast;    // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_LessEqual_DoubleDouble_A_ImplicitCast_1;  // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ABP_ItemDarkChaoPerformance_C_ExecuteUbergraph_ABP_ItemDarkChaoPerformance) == 0x000008, "Wrong alignment on ABP_ItemDarkChaoPerformance_C_ExecuteUbergraph_ABP_ItemDarkChaoPerformance");
-static_assert(sizeof(ABP_ItemDarkChaoPerformance_C_ExecuteUbergraph_ABP_ItemDarkChaoPerformance) == 0x000058, "Wrong size on ABP_ItemDarkChaoPerformance_C_ExecuteUbergraph_ABP_ItemDarkChaoPerformance");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance_C_ExecuteUbergraph_ABP_ItemDarkChaoPerformance, EntryPoint) == 0x000000, "Member 'ABP_ItemDarkChaoPerformance_C_ExecuteUbergraph_ABP_ItemDarkChaoPerformance::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance_C_ExecuteUbergraph_ABP_ItemDarkChaoPerformance, CallFunc_GetOwningActor_ReturnValue) == 0x000008, "Member 'ABP_ItemDarkChaoPerformance_C_ExecuteUbergraph_ABP_ItemDarkChaoPerformance::CallFunc_GetOwningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance_C_ExecuteUbergraph_ABP_ItemDarkChaoPerformance, CallFunc_GetRelevantAnimTimeRemaining_ReturnValue) == 0x000010, "Member 'ABP_ItemDarkChaoPerformance_C_ExecuteUbergraph_ABP_ItemDarkChaoPerformance::CallFunc_GetRelevantAnimTimeRemaining_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance_C_ExecuteUbergraph_ABP_ItemDarkChaoPerformance, K2Node_DynamicCast_AsBP_Item_Dark_Chao_Performance) == 0x000018, "Member 'ABP_ItemDarkChaoPerformance_C_ExecuteUbergraph_ABP_ItemDarkChaoPerformance::K2Node_DynamicCast_AsBP_Item_Dark_Chao_Performance' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance_C_ExecuteUbergraph_ABP_ItemDarkChaoPerformance, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'ABP_ItemDarkChaoPerformance_C_ExecuteUbergraph_ABP_ItemDarkChaoPerformance::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance_C_ExecuteUbergraph_ABP_ItemDarkChaoPerformance, CallFunc_LessEqual_DoubleDouble_ReturnValue) == 0x000021, "Member 'ABP_ItemDarkChaoPerformance_C_ExecuteUbergraph_ABP_ItemDarkChaoPerformance::CallFunc_LessEqual_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance_C_ExecuteUbergraph_ABP_ItemDarkChaoPerformance, CallFunc_GetRelevantAnimTimeRemaining_ReturnValue_1) == 0x000024, "Member 'ABP_ItemDarkChaoPerformance_C_ExecuteUbergraph_ABP_ItemDarkChaoPerformance::CallFunc_GetRelevantAnimTimeRemaining_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance_C_ExecuteUbergraph_ABP_ItemDarkChaoPerformance, CallFunc_LessEqual_DoubleDouble_ReturnValue_1) == 0x000028, "Member 'ABP_ItemDarkChaoPerformance_C_ExecuteUbergraph_ABP_ItemDarkChaoPerformance::CallFunc_LessEqual_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance_C_ExecuteUbergraph_ABP_ItemDarkChaoPerformance, CallFunc_GetOwningActor_ReturnValue_1) == 0x000030, "Member 'ABP_ItemDarkChaoPerformance_C_ExecuteUbergraph_ABP_ItemDarkChaoPerformance::CallFunc_GetOwningActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance_C_ExecuteUbergraph_ABP_ItemDarkChaoPerformance, K2Node_DynamicCast_AsBP_Item_Dark_Chao_Performance_1) == 0x000038, "Member 'ABP_ItemDarkChaoPerformance_C_ExecuteUbergraph_ABP_ItemDarkChaoPerformance::K2Node_DynamicCast_AsBP_Item_Dark_Chao_Performance_1' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance_C_ExecuteUbergraph_ABP_ItemDarkChaoPerformance, K2Node_DynamicCast_bSuccess_1) == 0x000040, "Member 'ABP_ItemDarkChaoPerformance_C_ExecuteUbergraph_ABP_ItemDarkChaoPerformance::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance_C_ExecuteUbergraph_ABP_ItemDarkChaoPerformance, CallFunc_LessEqual_DoubleDouble_A_ImplicitCast) == 0x000048, "Member 'ABP_ItemDarkChaoPerformance_C_ExecuteUbergraph_ABP_ItemDarkChaoPerformance::CallFunc_LessEqual_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(ABP_ItemDarkChaoPerformance_C_ExecuteUbergraph_ABP_ItemDarkChaoPerformance, CallFunc_LessEqual_DoubleDouble_A_ImplicitCast_1) == 0x000050, "Member 'ABP_ItemDarkChaoPerformance_C_ExecuteUbergraph_ABP_ItemDarkChaoPerformance::CallFunc_LessEqual_DoubleDouble_A_ImplicitCast_1' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_ItemDarkChaoPerformance_C_ExecuteUbergraph_ABP_ItemDarkChaoPerformance;
 
 }
 

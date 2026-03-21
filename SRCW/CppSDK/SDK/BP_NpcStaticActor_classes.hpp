@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -38,19 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_NpcStaticActor_C">();
+		BP_STATIC_CLASS_IMPL("BP_NpcStaticActor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_NpcStaticActor_C")
 	}
 	static class ABP_NpcStaticActor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_NpcStaticActor_C>();
 	}
 };
-static_assert(alignof(ABP_NpcStaticActor_C) == 0x000008, "Wrong alignment on ABP_NpcStaticActor_C");
-static_assert(sizeof(ABP_NpcStaticActor_C) == 0x000AF8, "Wrong size on ABP_NpcStaticActor_C");
-static_assert(offsetof(ABP_NpcStaticActor_C, UberGraphFrame) == 0x000AE0, "Member 'ABP_NpcStaticActor_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_NpcStaticActor_C, Timeline_Damage_Spin_DamegeSpin_99E1231D46B8A2069479F4B29E10DF71) == 0x000AE8, "Member 'ABP_NpcStaticActor_C::Timeline_Damage_Spin_DamegeSpin_99E1231D46B8A2069479F4B29E10DF71' has a wrong offset!");
-static_assert(offsetof(ABP_NpcStaticActor_C, Timeline_Damage_Spin__Direction_99E1231D46B8A2069479F4B29E10DF71) == 0x000AEC, "Member 'ABP_NpcStaticActor_C::Timeline_Damage_Spin__Direction_99E1231D46B8A2069479F4B29E10DF71' has a wrong offset!");
-static_assert(offsetof(ABP_NpcStaticActor_C, Timeline_Damage_Spin) == 0x000AF0, "Member 'ABP_NpcStaticActor_C::Timeline_Damage_Spin' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_NpcStaticActor_C;
 
 }
 

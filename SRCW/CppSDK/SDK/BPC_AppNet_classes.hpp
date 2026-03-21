@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -88,29 +88,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_AppNet_C">();
+		BP_STATIC_CLASS_IMPL("BPC_AppNet_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_AppNet_C")
 	}
 	static class UBPC_AppNet_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_AppNet_C>();
 	}
 };
-static_assert(alignof(UBPC_AppNet_C) == 0x000008, "Wrong alignment on UBPC_AppNet_C");
-static_assert(sizeof(UBPC_AppNet_C) == 0x0003A8, "Wrong size on UBPC_AppNet_C");
-static_assert(offsetof(UBPC_AppNet_C, UberGraphFrame) == 0x000288, "Member 'UBPC_AppNet_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_AppNet_C, InviteUserIdString) == 0x000290, "Member 'UBPC_AppNet_C::InviteUserIdString' has a wrong offset!");
-static_assert(offsetof(UBPC_AppNet_C, bInvite) == 0x0002A0, "Member 'UBPC_AppNet_C::bInvite' has a wrong offset!");
-static_assert(offsetof(UBPC_AppNet_C, DebugInviteUserIdStrings) == 0x0002A8, "Member 'UBPC_AppNet_C::DebugInviteUserIdStrings' has a wrong offset!");
-static_assert(offsetof(UBPC_AppNet_C, InviteInfo) == 0x0002B8, "Member 'UBPC_AppNet_C::InviteInfo' has a wrong offset!");
-static_assert(offsetof(UBPC_AppNet_C, OnRejectedInvitation) == 0x0002C0, "Member 'UBPC_AppNet_C::OnRejectedInvitation' has a wrong offset!");
-static_assert(offsetof(UBPC_AppNet_C, OnSendInvitationComplete) == 0x0002D0, "Member 'UBPC_AppNet_C::OnSendInvitationComplete' has a wrong offset!");
-static_assert(offsetof(UBPC_AppNet_C, LobbyInvitationNoticeInfo) == 0x0002E0, "Member 'UBPC_AppNet_C::LobbyInvitationNoticeInfo' has a wrong offset!");
-static_assert(offsetof(UBPC_AppNet_C, InvitePlatformUserId) == 0x000370, "Member 'UBPC_AppNet_C::InvitePlatformUserId' has a wrong offset!");
-static_assert(offsetof(UBPC_AppNet_C, CurrentPopupWindow) == 0x000380, "Member 'UBPC_AppNet_C::CurrentPopupWindow' has a wrong offset!");
-static_assert(offsetof(UBPC_AppNet_C, CacheLobbyInfo) == 0x000388, "Member 'UBPC_AppNet_C::CacheLobbyInfo' has a wrong offset!");
-static_assert(offsetof(UBPC_AppNet_C, CachePlatformDecide) == 0x000390, "Member 'UBPC_AppNet_C::CachePlatformDecide' has a wrong offset!");
-static_assert(offsetof(UBPC_AppNet_C, IsAttentionCreating) == 0x000391, "Member 'UBPC_AppNet_C::IsAttentionCreating' has a wrong offset!");
-static_assert(offsetof(UBPC_AppNet_C, OnSendInvitationAfterCreatShortLobbyId) == 0x000398, "Member 'UBPC_AppNet_C::OnSendInvitationAfterCreatShortLobbyId' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_AppNet_C;
 
 }
 

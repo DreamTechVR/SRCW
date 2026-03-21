@@ -27,12 +27,7 @@ public:
 	TDelegate<void()>                             OnHovered;                                         // 0x0018(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             OnUnhovered;                                       // 0x0028(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_Sub_Point_Reward_C_BindToOnMouseEvent_RewardButton) == 0x000008, "Wrong alignment on WBP_StatusInfo_Sub_Point_Reward_C_BindToOnMouseEvent_RewardButton");
-static_assert(sizeof(WBP_StatusInfo_Sub_Point_Reward_C_BindToOnMouseEvent_RewardButton) == 0x000038, "Wrong size on WBP_StatusInfo_Sub_Point_Reward_C_BindToOnMouseEvent_RewardButton");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_BindToOnMouseEvent_RewardButton, MouseInteraction) == 0x000000, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_BindToOnMouseEvent_RewardButton::MouseInteraction' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_BindToOnMouseEvent_RewardButton, OnClicked) == 0x000008, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_BindToOnMouseEvent_RewardButton::OnClicked' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_BindToOnMouseEvent_RewardButton, OnHovered) == 0x000018, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_BindToOnMouseEvent_RewardButton::OnHovered' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_BindToOnMouseEvent_RewardButton, OnUnhovered) == 0x000028, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_BindToOnMouseEvent_RewardButton::OnUnhovered' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_Sub_Point_Reward_C_BindToOnMouseEvent_RewardButton;
 
 // Function WBP_StatusInfo_Sub_Point_Reward.WBP_StatusInfo_Sub_Point_Reward_C.CallMouseHoveredDispatcher
 // 0x0004 (0x0004 - 0x0000)
@@ -41,9 +36,7 @@ struct WBP_StatusInfo_Sub_Point_Reward_C_CallMouseHoveredDispatcher final
 public:
 	int32                                         ButtonIndex;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_Sub_Point_Reward_C_CallMouseHoveredDispatcher) == 0x000004, "Wrong alignment on WBP_StatusInfo_Sub_Point_Reward_C_CallMouseHoveredDispatcher");
-static_assert(sizeof(WBP_StatusInfo_Sub_Point_Reward_C_CallMouseHoveredDispatcher) == 0x000004, "Wrong size on WBP_StatusInfo_Sub_Point_Reward_C_CallMouseHoveredDispatcher");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_CallMouseHoveredDispatcher, ButtonIndex) == 0x000000, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_CallMouseHoveredDispatcher::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_Sub_Point_Reward_C_CallMouseHoveredDispatcher;
 
 // Function WBP_StatusInfo_Sub_Point_Reward.WBP_StatusInfo_Sub_Point_Reward_C.ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward
 // 0x01D4 (0x01D4 - 0x0000)
@@ -81,38 +74,7 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_27;           // 0x01B4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_28;           // 0x01C4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward) == 0x000004, "Wrong alignment on WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward");
-static_assert(sizeof(WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward) == 0x0001D4, "Wrong size on WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward, EntryPoint) == 0x000000, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward, K2Node_CreateDelegate_OutputDelegate_2) == 0x000024, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward, K2Node_CreateDelegate_OutputDelegate_3) == 0x000034, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward, K2Node_CreateDelegate_OutputDelegate_4) == 0x000044, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward, K2Node_CreateDelegate_OutputDelegate_5) == 0x000054, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward, K2Node_CreateDelegate_OutputDelegate_6) == 0x000064, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward, K2Node_CreateDelegate_OutputDelegate_7) == 0x000074, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward, K2Node_CreateDelegate_OutputDelegate_8) == 0x000084, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward::K2Node_CreateDelegate_OutputDelegate_8' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward, K2Node_CreateDelegate_OutputDelegate_9) == 0x000094, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward::K2Node_CreateDelegate_OutputDelegate_9' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward, K2Node_CreateDelegate_OutputDelegate_10) == 0x0000A4, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward::K2Node_CreateDelegate_OutputDelegate_10' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward, K2Node_CreateDelegate_OutputDelegate_11) == 0x0000B4, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward::K2Node_CreateDelegate_OutputDelegate_11' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward, K2Node_CreateDelegate_OutputDelegate_12) == 0x0000C4, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward::K2Node_CreateDelegate_OutputDelegate_12' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward, K2Node_CreateDelegate_OutputDelegate_13) == 0x0000D4, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward::K2Node_CreateDelegate_OutputDelegate_13' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward, K2Node_CreateDelegate_OutputDelegate_14) == 0x0000E4, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward::K2Node_CreateDelegate_OutputDelegate_14' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward, K2Node_CreateDelegate_OutputDelegate_15) == 0x0000F4, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward::K2Node_CreateDelegate_OutputDelegate_15' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward, K2Node_CreateDelegate_OutputDelegate_16) == 0x000104, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward::K2Node_CreateDelegate_OutputDelegate_16' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward, K2Node_CreateDelegate_OutputDelegate_17) == 0x000114, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward::K2Node_CreateDelegate_OutputDelegate_17' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward, K2Node_CreateDelegate_OutputDelegate_18) == 0x000124, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward::K2Node_CreateDelegate_OutputDelegate_18' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward, K2Node_CreateDelegate_OutputDelegate_19) == 0x000134, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward::K2Node_CreateDelegate_OutputDelegate_19' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward, K2Node_CreateDelegate_OutputDelegate_20) == 0x000144, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward::K2Node_CreateDelegate_OutputDelegate_20' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward, K2Node_CreateDelegate_OutputDelegate_21) == 0x000154, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward::K2Node_CreateDelegate_OutputDelegate_21' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward, K2Node_CreateDelegate_OutputDelegate_22) == 0x000164, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward::K2Node_CreateDelegate_OutputDelegate_22' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward, K2Node_CreateDelegate_OutputDelegate_23) == 0x000174, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward::K2Node_CreateDelegate_OutputDelegate_23' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward, K2Node_CreateDelegate_OutputDelegate_24) == 0x000184, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward::K2Node_CreateDelegate_OutputDelegate_24' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward, K2Node_CreateDelegate_OutputDelegate_25) == 0x000194, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward::K2Node_CreateDelegate_OutputDelegate_25' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward, K2Node_CreateDelegate_OutputDelegate_26) == 0x0001A4, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward::K2Node_CreateDelegate_OutputDelegate_26' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward, K2Node_CreateDelegate_OutputDelegate_27) == 0x0001B4, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward::K2Node_CreateDelegate_OutputDelegate_27' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward, K2Node_CreateDelegate_OutputDelegate_28) == 0x0001C4, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward::K2Node_CreateDelegate_OutputDelegate_28' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_Sub_Point_Reward_C_ExecuteUbergraph_WBP_StatusInfo_Sub_Point_Reward;
 
 // Function WBP_StatusInfo_Sub_Point_Reward.WBP_StatusInfo_Sub_Point_Reward_C.SetFestaPoint
 // 0x0088 (0x0088 - 0x0000)
@@ -127,14 +89,7 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0068(0x0010)(ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0078(0x0010)()
 };
-static_assert(alignof(WBP_StatusInfo_Sub_Point_Reward_C_SetFestaPoint) == 0x000008, "Wrong alignment on WBP_StatusInfo_Sub_Point_Reward_C_SetFestaPoint");
-static_assert(sizeof(WBP_StatusInfo_Sub_Point_Reward_C_SetFestaPoint) == 0x000088, "Wrong size on WBP_StatusInfo_Sub_Point_Reward_C_SetFestaPoint");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_SetFestaPoint, Point) == 0x000000, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_SetFestaPoint::Point' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_SetFestaPoint, CallFunc_MakeLiteralText_ReturnValue) == 0x000008, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_SetFestaPoint::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_SetFestaPoint, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000018, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_SetFestaPoint::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_SetFestaPoint, K2Node_MakeStruct_FormatArgumentData) == 0x000020, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_SetFestaPoint::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_SetFestaPoint, K2Node_MakeArray_Array) == 0x000068, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_SetFestaPoint::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_SetFestaPoint, CallFunc_Format_ReturnValue) == 0x000078, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_SetFestaPoint::CallFunc_Format_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_Sub_Point_Reward_C_SetFestaPoint;
 
 // Function WBP_StatusInfo_Sub_Point_Reward.WBP_StatusInfo_Sub_Point_Reward_C.SetHonorTitle
 // 0x0088 (0x0088 - 0x0000)
@@ -157,19 +112,7 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_Sub_Point_Reward_C_SetHonorTitle) == 0x000008, "Wrong alignment on WBP_StatusInfo_Sub_Point_Reward_C_SetHonorTitle");
-static_assert(sizeof(WBP_StatusInfo_Sub_Point_Reward_C_SetHonorTitle) == 0x000088, "Wrong size on WBP_StatusInfo_Sub_Point_Reward_C_SetHonorTitle");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_SetHonorTitle, RewardUIDataArray) == 0x000000, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_SetHonorTitle::RewardUIDataArray' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_SetHonorTitle, CallFunc_Array_Length_ReturnValue) == 0x000010, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_SetHonorTitle::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_SetHonorTitle, Temp_bool_True_if_break_was_hit_Variable) == 0x000014, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_SetHonorTitle::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_SetHonorTitle, Temp_int_Array_Index_Variable) == 0x000018, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_SetHonorTitle::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_SetHonorTitle, CallFunc_Array_Get_Item) == 0x000020, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_SetHonorTitle::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_SetHonorTitle, CallFunc_Not_PreBool_ReturnValue) == 0x000070, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_SetHonorTitle::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_SetHonorTitle, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000071, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_SetHonorTitle::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_SetHonorTitle, Temp_int_Loop_Counter_Variable) == 0x000074, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_SetHonorTitle::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_SetHonorTitle, CallFunc_Less_IntInt_ReturnValue) == 0x000078, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_SetHonorTitle::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_SetHonorTitle, CallFunc_Add_IntInt_ReturnValue) == 0x00007C, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_SetHonorTitle::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Point_Reward_C_SetHonorTitle, CallFunc_BooleanAND_ReturnValue) == 0x000080, "Member 'WBP_StatusInfo_Sub_Point_Reward_C_SetHonorTitle::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_Sub_Point_Reward_C_SetHonorTitle;
 
 }
 

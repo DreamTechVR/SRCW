@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_classes.hpp"
 
 
@@ -64,27 +64,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_TimeTrial_Reward_C">();
+		BP_STATIC_CLASS_IMPL("WBP_TimeTrial_Reward_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_TimeTrial_Reward_C")
 	}
 	static class UWBP_TimeTrial_Reward_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_TimeTrial_Reward_C>();
 	}
 };
-static_assert(alignof(UWBP_TimeTrial_Reward_C) == 0x000008, "Wrong alignment on UWBP_TimeTrial_Reward_C");
-static_assert(sizeof(UWBP_TimeTrial_Reward_C) == 0x000330, "Wrong size on UWBP_TimeTrial_Reward_C");
-static_assert(offsetof(UWBP_TimeTrial_Reward_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_TimeTrial_Reward_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Reward_C, InLoop) == 0x0002E8, "Member 'UWBP_TimeTrial_Reward_C::InLoop' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Reward_C, DSP_WBP_Result_Sub_DonpaTicket_Details_01) == 0x0002F0, "Member 'UWBP_TimeTrial_Reward_C::DSP_WBP_Result_Sub_DonpaTicket_Details_01' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Reward_C, DSP_WBP_Result_WBP_Result_Sub_DonpaTicket_Details_02) == 0x0002F8, "Member 'UWBP_TimeTrial_Reward_C::DSP_WBP_Result_WBP_Result_Sub_DonpaTicket_Details_02' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Reward_C, DSP_WBP_Result_WBP_Result_Sub_DonpaTicket_Details_03) == 0x000300, "Member 'UWBP_TimeTrial_Reward_C::DSP_WBP_Result_WBP_Result_Sub_DonpaTicket_Details_03' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Reward_C, TXT_RacerAward_1) == 0x000308, "Member 'UWBP_TimeTrial_Reward_C::TXT_RacerAward_1' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Reward_C, Index_0) == 0x000310, "Member 'UWBP_TimeTrial_Reward_C::Index_0' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Reward_C, IsAnmSkip) == 0x000314, "Member 'UWBP_TimeTrial_Reward_C::IsAnmSkip' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Reward_C, bRewardDispFinish) == 0x000315, "Member 'UWBP_TimeTrial_Reward_C::bRewardDispFinish' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Reward_C, ticketNum) == 0x000318, "Member 'UWBP_TimeTrial_Reward_C::ticketNum' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Reward_C, ClearRank) == 0x00031C, "Member 'UWBP_TimeTrial_Reward_C::ClearRank' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Reward_C, RewardRedStarRingTypes) == 0x000320, "Member 'UWBP_TimeTrial_Reward_C::RewardRedStarRingTypes' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_TimeTrial_Reward_C;
 
 }
 

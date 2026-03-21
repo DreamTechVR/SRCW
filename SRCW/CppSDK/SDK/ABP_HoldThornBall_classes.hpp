@@ -23,15 +23,18 @@ class UABP_HoldThornBall_C final : public UABPT_HoldItem_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABP_HoldThornBall_C">();
+		BP_STATIC_CLASS_IMPL("ABP_HoldThornBall_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABP_HoldThornBall_C")
 	}
 	static class UABP_HoldThornBall_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UABP_HoldThornBall_C>();
 	}
 };
-static_assert(alignof(UABP_HoldThornBall_C) == 0x000010, "Wrong alignment on UABP_HoldThornBall_C");
-static_assert(sizeof(UABP_HoldThornBall_C) == 0x001130, "Wrong size on UABP_HoldThornBall_C");
+DUMPER7_ASSERTS_UABP_HoldThornBall_C;
 
 }
 

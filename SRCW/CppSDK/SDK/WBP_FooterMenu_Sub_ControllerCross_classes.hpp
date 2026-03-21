@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -103,22 +103,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_FooterMenu_Sub_ControllerCross_C">();
+		BP_STATIC_CLASS_IMPL("WBP_FooterMenu_Sub_ControllerCross_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_FooterMenu_Sub_ControllerCross_C")
 	}
 	static class UWBP_FooterMenu_Sub_ControllerCross_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_FooterMenu_Sub_ControllerCross_C>();
 	}
 };
-static_assert(alignof(UWBP_FooterMenu_Sub_ControllerCross_C) == 0x000008, "Wrong alignment on UWBP_FooterMenu_Sub_ControllerCross_C");
-static_assert(sizeof(UWBP_FooterMenu_Sub_ControllerCross_C) == 0x000358, "Wrong size on UWBP_FooterMenu_Sub_ControllerCross_C");
-static_assert(offsetof(UWBP_FooterMenu_Sub_ControllerCross_C, UberGraphFrame) == 0x000310, "Member 'UWBP_FooterMenu_Sub_ControllerCross_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_FooterMenu_Sub_ControllerCross_C, Btn_Active) == 0x000318, "Member 'UWBP_FooterMenu_Sub_ControllerCross_C::Btn_Active' has a wrong offset!");
-static_assert(offsetof(UWBP_FooterMenu_Sub_ControllerCross_C, Btn_Push) == 0x000320, "Member 'UWBP_FooterMenu_Sub_ControllerCross_C::Btn_Push' has a wrong offset!");
-static_assert(offsetof(UWBP_FooterMenu_Sub_ControllerCross_C, Btn_Cross) == 0x000328, "Member 'UWBP_FooterMenu_Sub_ControllerCross_C::Btn_Cross' has a wrong offset!");
-static_assert(offsetof(UWBP_FooterMenu_Sub_ControllerCross_C, ButtonArr) == 0x000330, "Member 'UWBP_FooterMenu_Sub_ControllerCross_C::ButtonArr' has a wrong offset!");
-static_assert(offsetof(UWBP_FooterMenu_Sub_ControllerCross_C, Text) == 0x000340, "Member 'UWBP_FooterMenu_Sub_ControllerCross_C::Text' has a wrong offset!");
-static_assert(offsetof(UWBP_FooterMenu_Sub_ControllerCross_C, Index_0) == 0x000350, "Member 'UWBP_FooterMenu_Sub_ControllerCross_C::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_FooterMenu_Sub_ControllerCross_C;
 
 }
 

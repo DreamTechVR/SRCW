@@ -10,9 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UNION_structs.hpp"
+#include "UMG_structs.hpp"
 #include "UnionUI_classes.hpp"
 
 
@@ -50,31 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_HeaderMenu_Sub_PlayerNamePlate_C">();
+		BP_STATIC_CLASS_IMPL("WBP_HeaderMenu_Sub_PlayerNamePlate_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_HeaderMenu_Sub_PlayerNamePlate_C")
 	}
 	static class UWBP_HeaderMenu_Sub_PlayerNamePlate_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_HeaderMenu_Sub_PlayerNamePlate_C>();
 	}
 };
-static_assert(alignof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C) == 0x000008, "Wrong alignment on UWBP_HeaderMenu_Sub_PlayerNamePlate_C");
-static_assert(sizeof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C) == 0x000458, "Wrong size on UWBP_HeaderMenu_Sub_PlayerNamePlate_C");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, UberGraphFrame) == 0x0003D8, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, PlayerNamePlate_Out) == 0x0003E0, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::PlayerNamePlate_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, PlayerNamePlate_Loop) == 0x0003E8, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::PlayerNamePlate_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, PlayerNamePlate_In) == 0x0003F0, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::PlayerNamePlate_In' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, Bar_Rank) == 0x0003F8, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::Bar_Rank' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, BarOverlay) == 0x000400, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::BarOverlay' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, base) == 0x000408, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, base_1) == 0x000410, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::base_1' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, Base_01) == 0x000418, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::Base_01' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, DSP_LegendNum) == 0x000420, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::DSP_LegendNum' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, DSP_WBP_HeaderMenu_Sub_WinInfo) == 0x000428, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::DSP_WBP_HeaderMenu_Sub_WinInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, DSP_WBP_ResultLegend_Sub_NUM) == 0x000430, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::DSP_WBP_ResultLegend_Sub_NUM' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, PAT_PlatformIcon) == 0x000438, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::PAT_PlatformIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, TXT_Name) == 0x000440, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::TXT_Name' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, WBP_HonorTitle_Plate) == 0x000448, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::WBP_HonorTitle_Plate' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, WBP_ResultRate_Sub_RankIcon) == 0x000450, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::WBP_ResultRate_Sub_RankIcon' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_HeaderMenu_Sub_PlayerNamePlate_C;
 
 }
 

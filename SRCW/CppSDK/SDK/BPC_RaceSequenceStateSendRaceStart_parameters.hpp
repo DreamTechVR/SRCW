@@ -29,13 +29,7 @@ public:
 	class UCommonLobbyContext*                    K2Node_DynamicCast_AsCommon_Lobby_Context;         // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateSendRaceStart_C_BindRecvLobbyAttributeEvent) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateSendRaceStart_C_BindRecvLobbyAttributeEvent");
-static_assert(sizeof(BPC_RaceSequenceStateSendRaceStart_C_BindRecvLobbyAttributeEvent) == 0x000030, "Wrong size on BPC_RaceSequenceStateSendRaceStart_C_BindRecvLobbyAttributeEvent");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_BindRecvLobbyAttributeEvent, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'BPC_RaceSequenceStateSendRaceStart_C_BindRecvLobbyAttributeEvent::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_BindRecvLobbyAttributeEvent, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000010, "Member 'BPC_RaceSequenceStateSendRaceStart_C_BindRecvLobbyAttributeEvent::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_BindRecvLobbyAttributeEvent, CallFunc_GetPublicLobbyContext_ReturnValue) == 0x000018, "Member 'BPC_RaceSequenceStateSendRaceStart_C_BindRecvLobbyAttributeEvent::CallFunc_GetPublicLobbyContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_BindRecvLobbyAttributeEvent, K2Node_DynamicCast_AsCommon_Lobby_Context) == 0x000020, "Member 'BPC_RaceSequenceStateSendRaceStart_C_BindRecvLobbyAttributeEvent::K2Node_DynamicCast_AsCommon_Lobby_Context' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_BindRecvLobbyAttributeEvent, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'BPC_RaceSequenceStateSendRaceStart_C_BindRecvLobbyAttributeEvent::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateSendRaceStart_C_BindRecvLobbyAttributeEvent;
 
 // Function BPC_RaceSequenceStateSendRaceStart.BPC_RaceSequenceStateSendRaceStart_C.CalllNextState
 // 0x0040 (0x0040 - 0x0000)
@@ -53,16 +47,7 @@ public:
 	struct FDateTime                              CallFunc_DateTimeFromString_Result;                // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_DateTimeFromString_ReturnValue;           // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateSendRaceStart_C_CalllNextState) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateSendRaceStart_C_CalllNextState");
-static_assert(sizeof(BPC_RaceSequenceStateSendRaceStart_C_CalllNextState) == 0x000040, "Wrong size on BPC_RaceSequenceStateSendRaceStart_C_CalllNextState");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_CalllNextState, CallFunc_IsShippingBuild_ReturnValue) == 0x000000, "Member 'BPC_RaceSequenceStateSendRaceStart_C_CalllNextState::CallFunc_IsShippingBuild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_CalllNextState, CallFunc_IsShippingBuild_ReturnValue_1) == 0x000001, "Member 'BPC_RaceSequenceStateSendRaceStart_C_CalllNextState::CallFunc_IsShippingBuild_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_CalllNextState, CallFunc_IsShippingBuild_ReturnValue_2) == 0x000002, "Member 'BPC_RaceSequenceStateSendRaceStart_C_CalllNextState::CallFunc_IsShippingBuild_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_CalllNextState, CallFunc_GetLastServerTime_ServerTime) == 0x000008, "Member 'BPC_RaceSequenceStateSendRaceStart_C_CalllNextState::CallFunc_GetLastServerTime_ServerTime' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_CalllNextState, CallFunc_GetLastServerTime_ReturnValue) == 0x000018, "Member 'BPC_RaceSequenceStateSendRaceStart_C_CalllNextState::CallFunc_GetLastServerTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_CalllNextState, CallFunc_Concat_StrStr_ReturnValue) == 0x000020, "Member 'BPC_RaceSequenceStateSendRaceStart_C_CalllNextState::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_CalllNextState, CallFunc_DateTimeFromString_Result) == 0x000030, "Member 'BPC_RaceSequenceStateSendRaceStart_C_CalllNextState::CallFunc_DateTimeFromString_Result' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_CalllNextState, CallFunc_DateTimeFromString_ReturnValue) == 0x000038, "Member 'BPC_RaceSequenceStateSendRaceStart_C_CalllNextState::CallFunc_DateTimeFromString_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateSendRaceStart_C_CalllNextState;
 
 // Function BPC_RaceSequenceStateSendRaceStart.BPC_RaceSequenceStateSendRaceStart_C.CheckResCode
 // 0x0078 (0x0078 - 0x0000)
@@ -88,22 +73,7 @@ public:
 	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue; // 0x0060(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsShippingBuild_ReturnValue_1;            // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateSendRaceStart_C_CheckResCode) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateSendRaceStart_C_CheckResCode");
-static_assert(sizeof(BPC_RaceSequenceStateSendRaceStart_C_CheckResCode) == 0x000078, "Wrong size on BPC_RaceSequenceStateSendRaceStart_C_CheckResCode");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_CheckResCode, InResCode) == 0x000000, "Member 'BPC_RaceSequenceStateSendRaceStart_C_CheckResCode::InResCode' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_CheckResCode, OutError) == 0x000004, "Member 'BPC_RaceSequenceStateSendRaceStart_C_CheckResCode::OutError' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_CheckResCode, LogOutputInfo) == 0x000008, "Member 'BPC_RaceSequenceStateSendRaceStart_C_CheckResCode::LogOutputInfo' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_CheckResCode, bEnableChangeNextState) == 0x000018, "Member 'BPC_RaceSequenceStateSendRaceStart_C_CheckResCode::bEnableChangeNextState' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_CheckResCode, ResCodeAbstract) == 0x000019, "Member 'BPC_RaceSequenceStateSendRaceStart_C_CheckResCode::ResCodeAbstract' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_CheckResCode, OutResCode) == 0x00001C, "Member 'BPC_RaceSequenceStateSendRaceStart_C_CheckResCode::OutResCode' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_CheckResCode, CallFunc_IsShippingBuild_ReturnValue) == 0x000020, "Member 'BPC_RaceSequenceStateSendRaceStart_C_CheckResCode::CallFunc_IsShippingBuild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_CheckResCode, CallFunc_Concat_StrStr_ReturnValue) == 0x000028, "Member 'BPC_RaceSequenceStateSendRaceStart_C_CheckResCode::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_CheckResCode, CallFunc_ValidateResCode_ResCodeAbstract) == 0x000038, "Member 'BPC_RaceSequenceStateSendRaceStart_C_CheckResCode::CallFunc_ValidateResCode_ResCodeAbstract' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_CheckResCode, CallFunc_ValidateResCode_ReturnValue) == 0x000039, "Member 'BPC_RaceSequenceStateSendRaceStart_C_CheckResCode::CallFunc_ValidateResCode_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_CheckResCode, CallFunc_Conv_BoolToString_ReturnValue) == 0x000040, "Member 'BPC_RaceSequenceStateSendRaceStart_C_CheckResCode::CallFunc_Conv_BoolToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_CheckResCode, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000050, "Member 'BPC_RaceSequenceStateSendRaceStart_C_CheckResCode::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_CheckResCode, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue) == 0x000060, "Member 'BPC_RaceSequenceStateSendRaceStart_C_CheckResCode::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_CheckResCode, CallFunc_IsShippingBuild_ReturnValue_1) == 0x000070, "Member 'BPC_RaceSequenceStateSendRaceStart_C_CheckResCode::CallFunc_IsShippingBuild_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateSendRaceStart_C_CheckResCode;
 
 // Function BPC_RaceSequenceStateSendRaceStart.BPC_RaceSequenceStateSendRaceStart_C.ConvertStickerData
 // 0x0178 (0x0178 - 0x0000)
@@ -126,25 +96,10 @@ public:
 	double                                        CallFunc_Conv_DoubleToString_InDouble_ImplicitCast_3; // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Conv_DoubleToString_InDouble_ImplicitCast_4; // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateSendRaceStart_C_ConvertStickerData) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateSendRaceStart_C_ConvertStickerData");
-static_assert(sizeof(BPC_RaceSequenceStateSendRaceStart_C_ConvertStickerData) == 0x000178, "Wrong size on BPC_RaceSequenceStateSendRaceStart_C_ConvertStickerData");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ConvertStickerData, UserStickerData) == 0x000000, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ConvertStickerData::UserStickerData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ConvertStickerData, Common_MachineStickerData) == 0x000028, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ConvertStickerData::Common_MachineStickerData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ConvertStickerData, CallFunc_Conv_DoubleToString_ReturnValue) == 0x000090, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ConvertStickerData::CallFunc_Conv_DoubleToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ConvertStickerData, CallFunc_Conv_ByteToInt_ReturnValue) == 0x0000A0, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ConvertStickerData::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ConvertStickerData, CallFunc_Conv_DoubleToString_ReturnValue_1) == 0x0000A8, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ConvertStickerData::CallFunc_Conv_DoubleToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ConvertStickerData, CallFunc_Conv_DoubleToString_ReturnValue_2) == 0x0000B8, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ConvertStickerData::CallFunc_Conv_DoubleToString_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ConvertStickerData, CallFunc_Conv_DoubleToString_ReturnValue_3) == 0x0000C8, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ConvertStickerData::CallFunc_Conv_DoubleToString_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ConvertStickerData, CallFunc_Conv_DoubleToString_ReturnValue_4) == 0x0000D8, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ConvertStickerData::CallFunc_Conv_DoubleToString_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ConvertStickerData, K2Node_MakeStruct_Common_MachineStickerData) == 0x0000E8, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ConvertStickerData::K2Node_MakeStruct_Common_MachineStickerData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ConvertStickerData, CallFunc_Conv_DoubleToString_InDouble_ImplicitCast) == 0x000150, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ConvertStickerData::CallFunc_Conv_DoubleToString_InDouble_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ConvertStickerData, CallFunc_Conv_DoubleToString_InDouble_ImplicitCast_1) == 0x000158, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ConvertStickerData::CallFunc_Conv_DoubleToString_InDouble_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ConvertStickerData, CallFunc_Conv_DoubleToString_InDouble_ImplicitCast_2) == 0x000160, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ConvertStickerData::CallFunc_Conv_DoubleToString_InDouble_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ConvertStickerData, CallFunc_Conv_DoubleToString_InDouble_ImplicitCast_3) == 0x000168, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ConvertStickerData::CallFunc_Conv_DoubleToString_InDouble_ImplicitCast_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ConvertStickerData, CallFunc_Conv_DoubleToString_InDouble_ImplicitCast_4) == 0x000170, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ConvertStickerData::CallFunc_Conv_DoubleToString_InDouble_ImplicitCast_4' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateSendRaceStart_C_ConvertStickerData;
 
 // Function BPC_RaceSequenceStateSendRaceStart.BPC_RaceSequenceStateSendRaceStart_C.ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart
-// 0x3118 (0x3118 - 0x0000)
+// 0x3190 (0x3190 - 0x0000)
 struct BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart final
 {
 public:
@@ -237,261 +192,110 @@ public:
 	struct FCommon_GadgetData                     CallFunc_GetStartSaveRequestParam_GadgetData_3;    // 0x1488(0x001C)(NoDestructor)
 	struct FCommon_DegreeData                     CallFunc_GetStartSaveRequestParam_DegreeData_3;    // 0x14A4(0x0008)(NoDestructor)
 	uint8                                         Pad_14AC[0x4];                                     // 0x14AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStartSaveRankMatchStartRequest        K2Node_MakeStruct_StartSaveRankMatchStartRequest;  // 0x14B0(0x03C8)()
-	struct FStartSaveFestaStartRequest            K2Node_MakeStruct_StartSaveFestaStartRequest_1;    // 0x1878(0x03A8)()
-	class UOnlineMatchSubsystem*                  CallFunc_GetGameInstanceSubsystem_ReturnValue_2;   // 0x1C20(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UOnlineMatchSubsystem*                  CallFunc_GetGameInstanceSubsystem_ReturnValue_3;   // 0x1C28(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsEnableOnlineSinglePlay_ReturnValue_1;   // 0x1C30(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsEnableOnlineSinglePlay_ReturnValue_2;   // 0x1C31(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C32[0x6];                                     // 0x1C32(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_MakeLiteralString_ReturnValue_4;          // 0x1C38(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FStartSaveRankMatchStartRequest        K2Node_MakeStruct_StartSaveRankMatchStartRequest_1; // 0x1C48(0x03C8)()
-	class UNetMasterDataManageSubsystem*          CallFunc_GetGameInstanceSubsystem_ReturnValue_4;   // 0x2010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetLegendCompeId_ReturnValue_1;           // 0x2018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> K2Node_CreateDelegate_OutputDelegate; // 0x201C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> K2Node_CreateDelegate_OutputDelegate_1; // 0x202C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> K2Node_CreateDelegate_OutputDelegate_2; // 0x203C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_204C[0x4];                                     // 0x204C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FString>                         K2Node_MakeArray_Array_1;                          // 0x2050(0x0010)(ReferenceParm)
-	class FString                                 K2Node_CustomEvent_ApiName_2;                      // 0x2060(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 K2Node_CustomEvent_RequestData_2;                  // 0x2070(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 K2Node_CustomEvent_ResponseData_2;                 // 0x2080(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_Error_2;                        // 0x2090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2091[0x3];                                     // 0x2091(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Parse_StartSaveRankMatchStart_ResCode;    // 0x2094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStartSaveRankMatchStartResponse       CallFunc_Parse_StartSaveRankMatchStart_Response;   // 0x2098(0x0010)()
-	int32                                         CallFunc_GetStartSaveRequestParam_CharacterId_4;   // 0x20A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetStartSaveRequestParam_CourseId_4;      // 0x20AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FCommon_MachineData                    CallFunc_GetStartSaveRequestParam_MachineData_4;   // 0x20B0(0x0370)()
-	struct FCommon_GadgetData                     CallFunc_GetStartSaveRequestParam_GadgetData_4;    // 0x2420(0x001C)(NoDestructor)
-	struct FCommon_DegreeData                     CallFunc_GetStartSaveRequestParam_DegreeData_4;    // 0x243C(0x0008)(NoDestructor)
-	uint8                                         Pad_2444[0x4];                                     // 0x2444(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStartSaveLegendCompeStartRequest      K2Node_MakeStruct_StartSaveLegendCompeStartRequest; // 0x2448(0x03D0)()
-	bool                                          CallFunc_CheckResCode_bEnableChangeNextState_3;    // 0x2818(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EResponseCodeAbstract                         CallFunc_CheckResCode_ResCodeAbstract_3;           // 0x2819(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_281A[0x2];                                     // 0x281A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_CheckResCode_OutResCode_3;                // 0x281C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAppSequenceLogManagerSubsystem*        CallFunc_GetGameInstanceSubsystem_ReturnValue_5;   // 0x2820(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FString                                 K2Node_CustomEvent_ApiName_1;                      // 0x2828(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 K2Node_CustomEvent_RequestData_1;                  // 0x2838(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 K2Node_CustomEvent_ResponseData_1;                 // 0x2848(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_Error_1;                        // 0x2858(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2859[0x7];                                     // 0x2859(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_MakeLiteralString_ReturnValue_5;          // 0x2860(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Parse_StartSaveLegendCompeStart_ResCode;  // 0x2870(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2874[0x4];                                     // 0x2874(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStartSaveLegendCompeStartResponse     CallFunc_Parse_StartSaveLegendCompeStart_Response; // 0x2878(0x0010)()
-	bool                                          CallFunc_CheckResCode_bEnableChangeNextState_4;    // 0x2888(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EResponseCodeAbstract                         CallFunc_CheckResCode_ResCodeAbstract_4;           // 0x2889(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_288A[0x2];                                     // 0x288A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_CheckResCode_OutResCode_4;                // 0x288C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAppSequenceLogManagerSubsystem*        CallFunc_GetGameInstanceSubsystem_ReturnValue_6;   // 0x2890(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESequenceSubType                              CallFunc_GetSequenceSubType_ReturnValue;           // 0x2898(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESequenceMainType                             CallFunc_GetSequenceMainType_ReturnValue;          // 0x2899(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_289A[0x6];                                     // 0x289A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 K2Node_CustomEvent_ApiName;                        // 0x28A0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 K2Node_CustomEvent_RequestData;                    // 0x28B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 K2Node_CustomEvent_ResponseData;                   // 0x28C0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_Error;                          // 0x28D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_28D1[0x3];                                     // 0x28D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Parse_StartSaveLegendCompeStart_ResCode_1; // 0x28D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStartSaveLegendCompeStartResponse     CallFunc_Parse_StartSaveLegendCompeStart_Response_1; // 0x28D8(0x0010)()
-	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> K2Node_CreateDelegate_OutputDelegate_3; // 0x28E8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CheckResCode_bEnableChangeNextState_5;    // 0x28F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EResponseCodeAbstract                         CallFunc_CheckResCode_ResCodeAbstract_5;           // 0x28F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_28FA[0x2];                                     // 0x28FA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_CheckResCode_OutResCode_5;                // 0x28FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAppSequenceLogManagerSubsystem*        CallFunc_GetGameInstanceSubsystem_ReturnValue_7;   // 0x2900(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EGameModeId                                   CallFunc_GetSelectedGameModeId_ReturnValue_2;      // 0x2908(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CheckSkipCurrentState_ReturnValue;        // 0x2909(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_2;                    // 0x290A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_290B[0x5];                                     // 0x290B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAppDataManageSubsystem*                CallFunc_GetGameInstanceSubsystem_ReturnValue_8;   // 0x2910(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UAppDataManageSubsystem*                CallFunc_GetGameInstanceSubsystem_ReturnValue_9;   // 0x2918(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_MakeLiteralInt_ReturnValue;               // 0x2920(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2924[0x4];                                     // 0x2924(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAppDataManageSubsystem*                CallFunc_GetGameInstanceSubsystem_ReturnValue_10;  // 0x2928(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_StrStr_ReturnValue;              // 0x2930(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2931[0x3];                                     // 0x2931(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> K2Node_CreateDelegate_OutputDelegate_4; // 0x2934(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2944[0x4];                                     // 0x2944(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UNetDataManageSubsystem*                CallFunc_GetGameInstanceSubsystem_ReturnValue_11;  // 0x2948(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ULobbyContextBase*                      CallFunc_GetPublicLobbyContext_ReturnValue;        // 0x2950(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UCommonLobbyContext*                    K2Node_DynamicCast_AsCommon_Lobby_Context;         // 0x2958(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x2960(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2961[0x7];                                     // 0x2961(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetLobbyAttributeEntryRaceId_OutRaceId;   // 0x2968(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetLobbyAttributeEntryRaceId_ReturnValue; // 0x2978(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2979[0x7];                                     // 0x2979(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetEntryRaceId_ReturnValue;               // 0x2980(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsEmpty_ReturnValue_1;                    // 0x2990(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x2991(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2992[0x2];                                     // 0x2992(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetStartSaveRequestParam_CharacterId_5;   // 0x2994(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetStartSaveRequestParam_CourseId_5;      // 0x2998(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStartSaveFestaStartRequest            K2Node_MakeStruct_StartSaveFestaStartRequest_1;    // 0x14B0(0x03A8)()
+	class UOnlineMatchSubsystem*                  CallFunc_GetGameInstanceSubsystem_ReturnValue_2;   // 0x1858(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UOnlineMatchSubsystem*                  CallFunc_GetGameInstanceSubsystem_ReturnValue_3;   // 0x1860(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsEnableOnlineSinglePlay_ReturnValue_1;   // 0x1868(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsEnableOnlineSinglePlay_ReturnValue_2;   // 0x1869(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_186A[0x6];                                     // 0x186A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_MakeLiteralString_ReturnValue_4;          // 0x1870(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class UNetMasterDataManageSubsystem*          CallFunc_GetGameInstanceSubsystem_ReturnValue_4;   // 0x1880(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetLegendCompeId_ReturnValue_1;           // 0x1888(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> K2Node_CreateDelegate_OutputDelegate; // 0x188C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> K2Node_CreateDelegate_OutputDelegate_1; // 0x189C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> K2Node_CreateDelegate_OutputDelegate_2; // 0x18AC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_18BC[0x4];                                     // 0x18BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FString>                         K2Node_MakeArray_Array_1;                          // 0x18C0(0x0010)(ReferenceParm)
+	class FString                                 K2Node_CustomEvent_ApiName_2;                      // 0x18D0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 K2Node_CustomEvent_RequestData_2;                  // 0x18E0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 K2Node_CustomEvent_ResponseData_2;                 // 0x18F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_Error_2;                        // 0x1900(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1901[0x3];                                     // 0x1901(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Parse_StartSaveRankMatchStart_ResCode;    // 0x1904(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStartSaveRankMatchStartResponse       CallFunc_Parse_StartSaveRankMatchStart_Response;   // 0x1908(0x0010)()
+	int32                                         CallFunc_GetStartSaveRequestParam_CharacterId_4;   // 0x1918(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetStartSaveRequestParam_CourseId_4;      // 0x191C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FCommon_MachineData                    CallFunc_GetStartSaveRequestParam_MachineData_4;   // 0x1920(0x0370)()
+	struct FCommon_GadgetData                     CallFunc_GetStartSaveRequestParam_GadgetData_4;    // 0x1C90(0x001C)(NoDestructor)
+	struct FCommon_DegreeData                     CallFunc_GetStartSaveRequestParam_DegreeData_4;    // 0x1CAC(0x0008)(NoDestructor)
+	bool                                          CallFunc_CheckResCode_bEnableChangeNextState_3;    // 0x1CB4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EResponseCodeAbstract                         CallFunc_CheckResCode_ResCodeAbstract_3;           // 0x1CB5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1CB6[0x2];                                     // 0x1CB6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_CheckResCode_OutResCode_3;                // 0x1CB8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1CBC[0x4];                                     // 0x1CBC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAppSequenceLogManagerSubsystem*        CallFunc_GetGameInstanceSubsystem_ReturnValue_5;   // 0x1CC0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FString                                 K2Node_CustomEvent_ApiName_1;                      // 0x1CC8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 K2Node_CustomEvent_RequestData_1;                  // 0x1CD8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 K2Node_CustomEvent_ResponseData_1;                 // 0x1CE8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_Error_1;                        // 0x1CF8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1CF9[0x3];                                     // 0x1CF9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Parse_StartSaveLegendCompeStart_ResCode;  // 0x1CFC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStartSaveLegendCompeStartResponse     CallFunc_Parse_StartSaveLegendCompeStart_Response; // 0x1D00(0x0010)()
+	class FString                                 CallFunc_MakeLiteralString_ReturnValue_5;          // 0x1D10(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CheckResCode_bEnableChangeNextState_4;    // 0x1D20(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EResponseCodeAbstract                         CallFunc_CheckResCode_ResCodeAbstract_4;           // 0x1D21(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D22[0x2];                                     // 0x1D22(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_CheckResCode_OutResCode_4;                // 0x1D24(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAppSequenceLogManagerSubsystem*        CallFunc_GetGameInstanceSubsystem_ReturnValue_6;   // 0x1D28(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESequenceSubType                              CallFunc_GetSequenceSubType_ReturnValue;           // 0x1D30(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESequenceMainType                             CallFunc_GetSequenceMainType_ReturnValue;          // 0x1D31(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D32[0x6];                                     // 0x1D32(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 K2Node_CustomEvent_ApiName;                        // 0x1D38(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 K2Node_CustomEvent_RequestData;                    // 0x1D48(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 K2Node_CustomEvent_ResponseData;                   // 0x1D58(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_Error;                          // 0x1D68(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D69[0x3];                                     // 0x1D69(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Parse_StartSaveLegendCompeStart_ResCode_1; // 0x1D6C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStartSaveLegendCompeStartResponse     CallFunc_Parse_StartSaveLegendCompeStart_Response_1; // 0x1D70(0x0010)()
+	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> K2Node_CreateDelegate_OutputDelegate_3; // 0x1D80(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CheckResCode_bEnableChangeNextState_5;    // 0x1D90(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EResponseCodeAbstract                         CallFunc_CheckResCode_ResCodeAbstract_5;           // 0x1D91(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D92[0x2];                                     // 0x1D92(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_CheckResCode_OutResCode_5;                // 0x1D94(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAppSequenceLogManagerSubsystem*        CallFunc_GetGameInstanceSubsystem_ReturnValue_7;   // 0x1D98(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EGameModeId                                   CallFunc_GetSelectedGameModeId_ReturnValue_2;      // 0x1DA0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CheckSkipCurrentState_ReturnValue;        // 0x1DA1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_2;                    // 0x1DA2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1DA3[0x5];                                     // 0x1DA3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAppDataManageSubsystem*                CallFunc_GetGameInstanceSubsystem_ReturnValue_8;   // 0x1DA8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UAppDataManageSubsystem*                CallFunc_GetGameInstanceSubsystem_ReturnValue_9;   // 0x1DB0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_MakeLiteralInt_ReturnValue;               // 0x1DB8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1DBC[0x4];                                     // 0x1DBC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FCommon_UserRateData>           CallFunc_MakeRateData_OutUserRateData;             // 0x1DC0(0x0010)(ReferenceParm)
+	struct FStartSaveRankMatchStartRequest        K2Node_MakeStruct_StartSaveRankMatchStartRequest;  // 0x1DD0(0x03D8)()
+	TArray<struct FCommon_UserRateData>           CallFunc_MakeRateData_OutUserRateData_1;           // 0x21A8(0x0010)(ReferenceParm)
+	struct FStartSaveRankMatchStartRequest        K2Node_MakeStruct_StartSaveRankMatchStartRequest_1; // 0x21B8(0x03D8)()
+	TArray<struct FCommon_UserRateData>           CallFunc_MakeRateData_OutUserRateData_2;           // 0x2590(0x0010)(ReferenceParm)
+	class UAppDataManageSubsystem*                CallFunc_GetGameInstanceSubsystem_ReturnValue_10;  // 0x25A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FStartSaveLegendCompeStartRequest      K2Node_MakeStruct_StartSaveLegendCompeStartRequest; // 0x25A8(0x03E0)()
+	bool                                          CallFunc_NotEqual_StrStr_ReturnValue;              // 0x2988(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2989[0x3];                                     // 0x2989(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> K2Node_CreateDelegate_OutputDelegate_4; // 0x298C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_299C[0x4];                                     // 0x299C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FCommon_MachineData                    CallFunc_GetStartSaveRequestParam_MachineData_5;   // 0x29A0(0x0370)()
-	struct FCommon_GadgetData                     CallFunc_GetStartSaveRequestParam_GadgetData_5;    // 0x2D10(0x001C)(NoDestructor)
-	struct FCommon_DegreeData                     CallFunc_GetStartSaveRequestParam_DegreeData_5;    // 0x2D2C(0x0008)(NoDestructor)
-	uint8                                         Pad_2D34[0x4];                                     // 0x2D34(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStartSaveLegendCompeStartRequest      K2Node_MakeStruct_StartSaveLegendCompeStartRequest_1; // 0x2D38(0x03D0)()
-	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> K2Node_CreateDelegate_OutputDelegate_5; // 0x3108(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FCommon_UserRateData>           CallFunc_MakeRateData_OutUserRateData_3;           // 0x29A0(0x0010)(ReferenceParm)
+	class UNetDataManageSubsystem*                CallFunc_GetGameInstanceSubsystem_ReturnValue_11;  // 0x29B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ULobbyContextBase*                      CallFunc_GetPublicLobbyContext_ReturnValue;        // 0x29B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UCommonLobbyContext*                    K2Node_DynamicCast_AsCommon_Lobby_Context;         // 0x29C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x29C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29C9[0x3];                                     // 0x29C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetStartSaveRequestParam_CharacterId_5;   // 0x29CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetStartSaveRequestParam_CourseId_5;      // 0x29D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29D4[0x4];                                     // 0x29D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FCommon_MachineData                    CallFunc_GetStartSaveRequestParam_MachineData_5;   // 0x29D8(0x0370)()
+	struct FCommon_GadgetData                     CallFunc_GetStartSaveRequestParam_GadgetData_5;    // 0x2D48(0x001C)(NoDestructor)
+	struct FCommon_DegreeData                     CallFunc_GetStartSaveRequestParam_DegreeData_5;    // 0x2D64(0x0008)(NoDestructor)
+	uint8                                         Pad_2D6C[0x4];                                     // 0x2D6C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetLobbyAttributeEntryRaceId_OutRaceId;   // 0x2D70(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetLobbyAttributeEntryRaceId_ReturnValue; // 0x2D80(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2D81[0x7];                                     // 0x2D81(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetEntryRaceId_ReturnValue;               // 0x2D88(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsEmpty_ReturnValue_1;                    // 0x2D98(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x2D99(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2D9A[0x6];                                     // 0x2D9A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStartSaveLegendCompeStartRequest      K2Node_MakeStruct_StartSaveLegendCompeStartRequest_1; // 0x2DA0(0x03E0)()
+	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> K2Node_CreateDelegate_OutputDelegate_5; // 0x3180(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart");
-static_assert(sizeof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart) == 0x003118, "Wrong size on BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, EntryPoint) == 0x000000, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_MakeLiteralString_ReturnValue) == 0x000008, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_MakeLiteralString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_CustomEvent_ApiName_4) == 0x000018, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_CustomEvent_ApiName_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_CustomEvent_RequestData_4) == 0x000028, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_CustomEvent_RequestData_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_CustomEvent_ResponseData_4) == 0x000038, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_CustomEvent_ResponseData_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_CustomEvent_Error_4) == 0x000048, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_CustomEvent_Error_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_Parse_StartSaveFestaStart_ResCode) == 0x00004C, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_Parse_StartSaveFestaStart_ResCode' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_Parse_StartSaveFestaStart_Response) == 0x000050, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_Parse_StartSaveFestaStart_Response' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_MakeLiteralString_ReturnValue_1) == 0x0000A8, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_MakeLiteralString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x0000B8, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_MakeArray_Array) == 0x0000C0, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_SwitchEnum_CmpSuccess) == 0x0000D0, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_IsEmpty_ReturnValue) == 0x0000D1, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_IsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_Not_PreBool_ReturnValue) == 0x0000D2, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_Not_PreBool_ReturnValue_1) == 0x0000D3, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetBonusChanceData_IsValid) == 0x0000D4, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetBonusChanceData_IsValid' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetBonusChanceData_BonusChanceType) == 0x0000D8, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetBonusChanceData_BonusChanceType' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetBonusChanceData_BonusChanceParam) == 0x0000DC, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetBonusChanceData_BonusChanceParam' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_MakeLiteralString_ReturnValue_2) == 0x0000E0, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_MakeLiteralString_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_CheckResCode_bEnableChangeNextState) == 0x0000F0, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_CheckResCode_bEnableChangeNextState' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_CheckResCode_ResCodeAbstract) == 0x0000F1, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_CheckResCode_ResCodeAbstract' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_CheckResCode_OutResCode) == 0x0000F4, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_CheckResCode_OutResCode' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_MakeLiteralString_ReturnValue_3) == 0x0000F8, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_MakeLiteralString_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_CustomEvent_ApiName_5) == 0x000108, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_CustomEvent_ApiName_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_CustomEvent_RequestData_5) == 0x000118, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_CustomEvent_RequestData_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_CustomEvent_ResponseData_5) == 0x000128, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_CustomEvent_ResponseData_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_CustomEvent_Error_5) == 0x000138, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_CustomEvent_Error_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_MakeStruct_Common_FestaBonusChanceData) == 0x00013C, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_MakeStruct_Common_FestaBonusChanceData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_Parse_StartSaveFestaStart_ResCode_1) == 0x000144, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_Parse_StartSaveFestaStart_ResCode_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_Parse_StartSaveFestaStart_Response_1) == 0x000148, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_Parse_StartSaveFestaStart_Response_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_CustomEvent_InEntryRaceId) == 0x0001A0, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_CustomEvent_InEntryRaceId' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_CheckResCode_bEnableChangeNextState_1) == 0x0001B0, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_CheckResCode_bEnableChangeNextState_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_CheckResCode_ResCodeAbstract_1) == 0x0001B1, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_CheckResCode_ResCodeAbstract_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_CheckResCode_OutResCode_1) == 0x0001B4, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_CheckResCode_OutResCode_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_MakeStruct_Common_FestaBonusChanceData_1) == 0x0001B8, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_MakeStruct_Common_FestaBonusChanceData_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_MakeStruct_Common_FestaBonusChanceData_2) == 0x0001C0, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_MakeStruct_Common_FestaBonusChanceData_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_CustomEvent_ApiName_3) == 0x0001C8, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_CustomEvent_ApiName_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_CustomEvent_RequestData_3) == 0x0001D8, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_CustomEvent_RequestData_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_CustomEvent_ResponseData_3) == 0x0001E8, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_CustomEvent_ResponseData_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_CustomEvent_Error_3) == 0x0001F8, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_CustomEvent_Error_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_Parse_StartSaveFestaStart_ResCode_2) == 0x0001FC, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_Parse_StartSaveFestaStart_ResCode_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_Parse_StartSaveFestaStart_Response_2) == 0x000200, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_Parse_StartSaveFestaStart_Response_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_CheckResCode_bEnableChangeNextState_2) == 0x000258, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_CheckResCode_bEnableChangeNextState_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_CheckResCode_ResCodeAbstract_2) == 0x000259, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_CheckResCode_ResCodeAbstract_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_CheckResCode_OutResCode_2) == 0x00025C, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_CheckResCode_OutResCode_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetStartSaveRequestParam_CharacterId) == 0x000260, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetStartSaveRequestParam_CharacterId' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetStartSaveRequestParam_CourseId) == 0x000264, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetStartSaveRequestParam_CourseId' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetStartSaveRequestParam_MachineData) == 0x000268, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetStartSaveRequestParam_MachineData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetStartSaveRequestParam_GadgetData) == 0x0005D8, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetStartSaveRequestParam_GadgetData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetStartSaveRequestParam_DegreeData) == 0x0005F4, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetStartSaveRequestParam_DegreeData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetStartSaveRequestParam_CharacterId_1) == 0x0005FC, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetStartSaveRequestParam_CharacterId_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetStartSaveRequestParam_CourseId_1) == 0x000600, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetStartSaveRequestParam_CourseId_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetStartSaveRequestParam_MachineData_1) == 0x000608, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetStartSaveRequestParam_MachineData_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetStartSaveRequestParam_GadgetData_1) == 0x000978, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetStartSaveRequestParam_GadgetData_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetStartSaveRequestParam_DegreeData_1) == 0x000994, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetStartSaveRequestParam_DegreeData_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x0009A0, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetSelectedGameModeId_ReturnValue_1) == 0x0009A8, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetSelectedGameModeId_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_IsEnableOnlineSinglePlay_ReturnValue) == 0x0009A9, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_IsEnableOnlineSinglePlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_SwitchEnum_CmpSuccess_1) == 0x0009AA, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x0009B0, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetFestaIdUtil_ReturnValue) == 0x0009B8, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetFestaIdUtil_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetLegendCompeId_ReturnValue) == 0x0009BC, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetLegendCompeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_MakeStruct_StartSaveFestaStartRequest) == 0x0009C0, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_MakeStruct_StartSaveFestaStartRequest' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetFestaIdUtil_ReturnValue_1) == 0x000D68, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetFestaIdUtil_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetStartSaveRequestParam_CharacterId_2) == 0x000D6C, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetStartSaveRequestParam_CharacterId_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetStartSaveRequestParam_CourseId_2) == 0x000D70, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetStartSaveRequestParam_CourseId_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetStartSaveRequestParam_MachineData_2) == 0x000D78, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetStartSaveRequestParam_MachineData_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetStartSaveRequestParam_GadgetData_2) == 0x0010E8, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetStartSaveRequestParam_GadgetData_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetStartSaveRequestParam_DegreeData_2) == 0x001104, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetStartSaveRequestParam_DegreeData_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetStartSaveRequestParam_CharacterId_3) == 0x00110C, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetStartSaveRequestParam_CharacterId_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetStartSaveRequestParam_CourseId_3) == 0x001110, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetStartSaveRequestParam_CourseId_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetStartSaveRequestParam_MachineData_3) == 0x001118, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetStartSaveRequestParam_MachineData_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetStartSaveRequestParam_GadgetData_3) == 0x001488, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetStartSaveRequestParam_GadgetData_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetStartSaveRequestParam_DegreeData_3) == 0x0014A4, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetStartSaveRequestParam_DegreeData_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_MakeStruct_StartSaveRankMatchStartRequest) == 0x0014B0, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_MakeStruct_StartSaveRankMatchStartRequest' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_MakeStruct_StartSaveFestaStartRequest_1) == 0x001878, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_MakeStruct_StartSaveFestaStartRequest_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetGameInstanceSubsystem_ReturnValue_2) == 0x001C20, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetGameInstanceSubsystem_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetGameInstanceSubsystem_ReturnValue_3) == 0x001C28, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetGameInstanceSubsystem_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_IsEnableOnlineSinglePlay_ReturnValue_1) == 0x001C30, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_IsEnableOnlineSinglePlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_IsEnableOnlineSinglePlay_ReturnValue_2) == 0x001C31, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_IsEnableOnlineSinglePlay_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_MakeLiteralString_ReturnValue_4) == 0x001C38, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_MakeLiteralString_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_MakeStruct_StartSaveRankMatchStartRequest_1) == 0x001C48, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_MakeStruct_StartSaveRankMatchStartRequest_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetGameInstanceSubsystem_ReturnValue_4) == 0x002010, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetGameInstanceSubsystem_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetLegendCompeId_ReturnValue_1) == 0x002018, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetLegendCompeId_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_CreateDelegate_OutputDelegate) == 0x00201C, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_CreateDelegate_OutputDelegate_1) == 0x00202C, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_CreateDelegate_OutputDelegate_2) == 0x00203C, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_MakeArray_Array_1) == 0x002050, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_CustomEvent_ApiName_2) == 0x002060, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_CustomEvent_ApiName_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_CustomEvent_RequestData_2) == 0x002070, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_CustomEvent_RequestData_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_CustomEvent_ResponseData_2) == 0x002080, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_CustomEvent_ResponseData_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_CustomEvent_Error_2) == 0x002090, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_CustomEvent_Error_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_Parse_StartSaveRankMatchStart_ResCode) == 0x002094, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_Parse_StartSaveRankMatchStart_ResCode' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_Parse_StartSaveRankMatchStart_Response) == 0x002098, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_Parse_StartSaveRankMatchStart_Response' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetStartSaveRequestParam_CharacterId_4) == 0x0020A8, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetStartSaveRequestParam_CharacterId_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetStartSaveRequestParam_CourseId_4) == 0x0020AC, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetStartSaveRequestParam_CourseId_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetStartSaveRequestParam_MachineData_4) == 0x0020B0, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetStartSaveRequestParam_MachineData_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetStartSaveRequestParam_GadgetData_4) == 0x002420, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetStartSaveRequestParam_GadgetData_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetStartSaveRequestParam_DegreeData_4) == 0x00243C, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetStartSaveRequestParam_DegreeData_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_MakeStruct_StartSaveLegendCompeStartRequest) == 0x002448, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_MakeStruct_StartSaveLegendCompeStartRequest' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_CheckResCode_bEnableChangeNextState_3) == 0x002818, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_CheckResCode_bEnableChangeNextState_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_CheckResCode_ResCodeAbstract_3) == 0x002819, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_CheckResCode_ResCodeAbstract_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_CheckResCode_OutResCode_3) == 0x00281C, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_CheckResCode_OutResCode_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetGameInstanceSubsystem_ReturnValue_5) == 0x002820, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetGameInstanceSubsystem_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_CustomEvent_ApiName_1) == 0x002828, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_CustomEvent_ApiName_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_CustomEvent_RequestData_1) == 0x002838, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_CustomEvent_RequestData_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_CustomEvent_ResponseData_1) == 0x002848, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_CustomEvent_ResponseData_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_CustomEvent_Error_1) == 0x002858, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_CustomEvent_Error_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_MakeLiteralString_ReturnValue_5) == 0x002860, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_MakeLiteralString_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_Parse_StartSaveLegendCompeStart_ResCode) == 0x002870, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_Parse_StartSaveLegendCompeStart_ResCode' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_Parse_StartSaveLegendCompeStart_Response) == 0x002878, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_Parse_StartSaveLegendCompeStart_Response' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_CheckResCode_bEnableChangeNextState_4) == 0x002888, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_CheckResCode_bEnableChangeNextState_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_CheckResCode_ResCodeAbstract_4) == 0x002889, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_CheckResCode_ResCodeAbstract_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_CheckResCode_OutResCode_4) == 0x00288C, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_CheckResCode_OutResCode_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetGameInstanceSubsystem_ReturnValue_6) == 0x002890, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetGameInstanceSubsystem_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetSequenceSubType_ReturnValue) == 0x002898, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetSequenceSubType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetSequenceMainType_ReturnValue) == 0x002899, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetSequenceMainType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_CustomEvent_ApiName) == 0x0028A0, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_CustomEvent_ApiName' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_CustomEvent_RequestData) == 0x0028B0, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_CustomEvent_RequestData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_CustomEvent_ResponseData) == 0x0028C0, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_CustomEvent_ResponseData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_CustomEvent_Error) == 0x0028D0, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_CustomEvent_Error' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_Parse_StartSaveLegendCompeStart_ResCode_1) == 0x0028D4, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_Parse_StartSaveLegendCompeStart_ResCode_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_Parse_StartSaveLegendCompeStart_Response_1) == 0x0028D8, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_Parse_StartSaveLegendCompeStart_Response_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_CreateDelegate_OutputDelegate_3) == 0x0028E8, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_CheckResCode_bEnableChangeNextState_5) == 0x0028F8, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_CheckResCode_bEnableChangeNextState_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_CheckResCode_ResCodeAbstract_5) == 0x0028F9, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_CheckResCode_ResCodeAbstract_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_CheckResCode_OutResCode_5) == 0x0028FC, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_CheckResCode_OutResCode_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetGameInstanceSubsystem_ReturnValue_7) == 0x002900, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetGameInstanceSubsystem_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetSelectedGameModeId_ReturnValue_2) == 0x002908, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetSelectedGameModeId_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_CheckSkipCurrentState_ReturnValue) == 0x002909, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_CheckSkipCurrentState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_SwitchEnum_CmpSuccess_2) == 0x00290A, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_SwitchEnum_CmpSuccess_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetGameInstanceSubsystem_ReturnValue_8) == 0x002910, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetGameInstanceSubsystem_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetGameInstanceSubsystem_ReturnValue_9) == 0x002918, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetGameInstanceSubsystem_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_MakeLiteralInt_ReturnValue) == 0x002920, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetGameInstanceSubsystem_ReturnValue_10) == 0x002928, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetGameInstanceSubsystem_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_NotEqual_StrStr_ReturnValue) == 0x002930, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_NotEqual_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_CreateDelegate_OutputDelegate_4) == 0x002934, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetGameInstanceSubsystem_ReturnValue_11) == 0x002948, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetGameInstanceSubsystem_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetPublicLobbyContext_ReturnValue) == 0x002950, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetPublicLobbyContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_DynamicCast_AsCommon_Lobby_Context) == 0x002958, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_DynamicCast_AsCommon_Lobby_Context' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_DynamicCast_bSuccess) == 0x002960, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetLobbyAttributeEntryRaceId_OutRaceId) == 0x002968, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetLobbyAttributeEntryRaceId_OutRaceId' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetLobbyAttributeEntryRaceId_ReturnValue) == 0x002978, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetLobbyAttributeEntryRaceId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetEntryRaceId_ReturnValue) == 0x002980, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetEntryRaceId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_IsEmpty_ReturnValue_1) == 0x002990, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_IsEmpty_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_Not_PreBool_ReturnValue_2) == 0x002991, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetStartSaveRequestParam_CharacterId_5) == 0x002994, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetStartSaveRequestParam_CharacterId_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetStartSaveRequestParam_CourseId_5) == 0x002998, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetStartSaveRequestParam_CourseId_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetStartSaveRequestParam_MachineData_5) == 0x0029A0, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetStartSaveRequestParam_MachineData_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetStartSaveRequestParam_GadgetData_5) == 0x002D10, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetStartSaveRequestParam_GadgetData_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, CallFunc_GetStartSaveRequestParam_DegreeData_5) == 0x002D2C, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::CallFunc_GetStartSaveRequestParam_DegreeData_5' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_MakeStruct_StartSaveLegendCompeStartRequest_1) == 0x002D38, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_MakeStruct_StartSaveLegendCompeStartRequest_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart, K2Node_CreateDelegate_OutputDelegate_5) == 0x003108, "Member 'BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateSendRaceStart_C_ExecuteUbergraph_BPC_RaceSequenceStateSendRaceStart;
 
 // Function BPC_RaceSequenceStateSendRaceStart.BPC_RaceSequenceStateSendRaceStart_C.FinishedSendStartSaveFestaStart_Event
 // 0x0038 (0x0038 - 0x0000)
@@ -503,12 +307,7 @@ public:
 	class FString                                 ResponseData;                                      // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          Error;                                             // 0x0030(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveFestaStart_Event) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveFestaStart_Event");
-static_assert(sizeof(BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveFestaStart_Event) == 0x000038, "Wrong size on BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveFestaStart_Event");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveFestaStart_Event, ApiName) == 0x000000, "Member 'BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveFestaStart_Event::ApiName' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveFestaStart_Event, RequestData) == 0x000010, "Member 'BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveFestaStart_Event::RequestData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveFestaStart_Event, ResponseData) == 0x000020, "Member 'BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveFestaStart_Event::ResponseData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveFestaStart_Event, Error) == 0x000030, "Member 'BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveFestaStart_Event::Error' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveFestaStart_Event;
 
 // Function BPC_RaceSequenceStateSendRaceStart.BPC_RaceSequenceStateSendRaceStart_C.FinishedSendStartSaveLegendCompeStart
 // 0x0038 (0x0038 - 0x0000)
@@ -520,12 +319,7 @@ public:
 	class FString                                 ResponseData;                                      // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          Error;                                             // 0x0030(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveLegendCompeStart) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveLegendCompeStart");
-static_assert(sizeof(BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveLegendCompeStart) == 0x000038, "Wrong size on BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveLegendCompeStart");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveLegendCompeStart, ApiName) == 0x000000, "Member 'BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveLegendCompeStart::ApiName' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveLegendCompeStart, RequestData) == 0x000010, "Member 'BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveLegendCompeStart::RequestData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveLegendCompeStart, ResponseData) == 0x000020, "Member 'BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveLegendCompeStart::ResponseData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveLegendCompeStart, Error) == 0x000030, "Member 'BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveLegendCompeStart::Error' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveLegendCompeStart;
 
 // Function BPC_RaceSequenceStateSendRaceStart.BPC_RaceSequenceStateSendRaceStart_C.FinishedSendStartSaveRankMatchStart_Event
 // 0x0038 (0x0038 - 0x0000)
@@ -537,12 +331,7 @@ public:
 	class FString                                 ResponseData;                                      // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          Error;                                             // 0x0030(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveRankMatchStart_Event) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveRankMatchStart_Event");
-static_assert(sizeof(BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveRankMatchStart_Event) == 0x000038, "Wrong size on BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveRankMatchStart_Event");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveRankMatchStart_Event, ApiName) == 0x000000, "Member 'BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveRankMatchStart_Event::ApiName' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveRankMatchStart_Event, RequestData) == 0x000010, "Member 'BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveRankMatchStart_Event::RequestData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveRankMatchStart_Event, ResponseData) == 0x000020, "Member 'BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveRankMatchStart_Event::ResponseData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveRankMatchStart_Event, Error) == 0x000030, "Member 'BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveRankMatchStart_Event::Error' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateSendRaceStart_C_FinishedSendStartSaveRankMatchStart_Event;
 
 // Function BPC_RaceSequenceStateSendRaceStart.BPC_RaceSequenceStateSendRaceStart_C.GetBonusChanceData
 // 0x0038 (0x0038 - 0x0000)
@@ -563,88 +352,36 @@ public:
 	int32                                         CallFunc_GetBonusChanceData_BonusChanceParam;      // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GetBonusChanceData_ReturnValue;           // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateSendRaceStart_C_GetBonusChanceData) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateSendRaceStart_C_GetBonusChanceData");
-static_assert(sizeof(BPC_RaceSequenceStateSendRaceStart_C_GetBonusChanceData) == 0x000038, "Wrong size on BPC_RaceSequenceStateSendRaceStart_C_GetBonusChanceData");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetBonusChanceData, IsValid) == 0x000000, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetBonusChanceData::IsValid' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetBonusChanceData, BonusChanceType_0) == 0x000004, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetBonusChanceData::BonusChanceType_0' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetBonusChanceData, BonusChanceParam_0) == 0x000008, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetBonusChanceData::BonusChanceParam_0' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetBonusChanceData, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000010, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetBonusChanceData::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetBonusChanceData, CallFunc_GetPublicLobbyContext_ReturnValue) == 0x000018, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetBonusChanceData::CallFunc_GetPublicLobbyContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetBonusChanceData, K2Node_DynamicCast_AsFesta_Lobby_Context) == 0x000020, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetBonusChanceData::K2Node_DynamicCast_AsFesta_Lobby_Context' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetBonusChanceData, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetBonusChanceData::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetBonusChanceData, CallFunc_GetBonusChanceData_BonusChanceType) == 0x00002C, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetBonusChanceData::CallFunc_GetBonusChanceData_BonusChanceType' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetBonusChanceData, CallFunc_GetBonusChanceData_BonusChanceParam) == 0x000030, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetBonusChanceData::CallFunc_GetBonusChanceData_BonusChanceParam' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetBonusChanceData, CallFunc_GetBonusChanceData_ReturnValue) == 0x000034, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetBonusChanceData::CallFunc_GetBonusChanceData_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateSendRaceStart_C_GetBonusChanceData;
 
 // Function BPC_RaceSequenceStateSendRaceStart.BPC_RaceSequenceStateSendRaceStart_C.GetLobbyContextParam
-// 0x0100 (0x0100 - 0x0000)
+// 0x00D0 (0x00D0 - 0x0000)
 struct BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam final
 {
 public:
 	class UNetDataManageSubsystem*                CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ULobbyContextBase*                      CallFunc_GetPublicLobbyContext_ReturnValue;        // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UCommonLobbyContext*                    K2Node_DynamicCast_AsCommon_Lobby_Context;         // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLobbyId                               CallFunc_GetLobbyId_ReturnValue;                   // 0x0028(0x0010)(ConstParm)
-	class FString                                 CallFunc_ConvertLobbyIdToString_OutUserIdString;   // 0x0038(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsRaceHostLocalUser_ReturnValue;          // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       CallFunc_GetLocalUserId_OutUserId;                 // 0x0050(0x0030)(HasGetValueTypeHash)
-	class ULobbyMemberContextBase*                CallFunc_GetMember_ReturnValue;                    // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ULobbyContextBase*                      CallFunc_GetPublicLobbyContext_ReturnValue;        // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UCommonLobbyContext*                    K2Node_DynamicCast_AsCommon_Lobby_Context;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLobbyId                               CallFunc_GetLobbyId_ReturnValue;                   // 0x0020(0x0010)(ConstParm)
+	class FString                                 CallFunc_ConvertLobbyIdToString_OutUserIdString;   // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsRaceHostLocalUser_ReturnValue;          // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_SelectString_ReturnValue;                 // 0x0048(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       CallFunc_GetLocalUserId_OutUserId;                 // 0x0058(0x0030)(HasGetValueTypeHash)
 	class ULobbyMemberContextBase*                CallFunc_GetHostMember_ReturnValue;                // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_92[0x6];                                       // 0x0092(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class ULobbyMemberContextBase*>        CallFunc_GetAllMembers_OutResult;                  // 0x0098(0x0010)(ReferenceParm)
-	class ULobbyMemberContextBase*                CallFunc_Array_Get_Item;                           // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsCom_ReturnValue;                        // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetInternalUserId_ReturnValue;            // 0x00B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C9[0x3];                                       // 0x00C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D1[0x3];                                       // 0x00D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_DC[0x4];                                       // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_SelectString_ReturnValue;                 // 0x00E0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F1[0x3];                                       // 0x00F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ULobbyMemberContextBase*                CallFunc_GetMember_ReturnValue;                    // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9A[0x6];                                       // 0x009A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonLobbyContext*                    K2Node_DynamicCast_AsCommon_Lobby_Context_1;       // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FString>                         CallFunc_GetOnlineEntryUserIds_OutAllUserIds;      // 0x00B0(0x0010)(ReferenceParm)
+	TArray<class FString>                         CallFunc_GetOnlineEntryUserIds_OutPlayerUserIds;   // 0x00C0(0x0010)(ReferenceParm)
 };
-static_assert(alignof(BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam");
-static_assert(sizeof(BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam) == 0x000100, "Wrong size on BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000000, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam, Temp_int_Array_Index_Variable) == 0x000008, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam, CallFunc_GetPublicLobbyContext_ReturnValue) == 0x000010, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam::CallFunc_GetPublicLobbyContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam, K2Node_DynamicCast_AsCommon_Lobby_Context) == 0x000018, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam::K2Node_DynamicCast_AsCommon_Lobby_Context' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam, CallFunc_GetLobbyId_ReturnValue) == 0x000028, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam::CallFunc_GetLobbyId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam, CallFunc_ConvertLobbyIdToString_OutUserIdString) == 0x000038, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam::CallFunc_ConvertLobbyIdToString_OutUserIdString' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam, CallFunc_IsRaceHostLocalUser_ReturnValue) == 0x000048, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam::CallFunc_IsRaceHostLocalUser_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam, CallFunc_GetLocalUserId_OutUserId) == 0x000050, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam::CallFunc_GetLocalUserId_OutUserId' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam, CallFunc_GetMember_ReturnValue) == 0x000080, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam::CallFunc_GetMember_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam, CallFunc_GetHostMember_ReturnValue) == 0x000088, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam::CallFunc_GetHostMember_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam, CallFunc_IsValid_ReturnValue) == 0x000090, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000091, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam, CallFunc_GetAllMembers_OutResult) == 0x000098, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam::CallFunc_GetAllMembers_OutResult' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam, CallFunc_Array_Get_Item) == 0x0000A8, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam, CallFunc_IsCom_ReturnValue) == 0x0000B0, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam::CallFunc_IsCom_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam, CallFunc_GetInternalUserId_ReturnValue) == 0x0000B8, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam::CallFunc_GetInternalUserId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam, CallFunc_Not_PreBool_ReturnValue) == 0x0000C8, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam, CallFunc_Array_Add_ReturnValue) == 0x0000CC, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam, CallFunc_IsValid_ReturnValue_1) == 0x0000D0, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam, CallFunc_Array_Length_ReturnValue) == 0x0000D4, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam, Temp_int_Loop_Counter_Variable) == 0x0000D8, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam, CallFunc_SelectString_ReturnValue) == 0x0000E0, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam::CallFunc_SelectString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam, CallFunc_Less_IntInt_ReturnValue) == 0x0000F0, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam, CallFunc_Add_IntInt_ReturnValue) == 0x0000F4, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam, CallFunc_Array_Add_ReturnValue_1) == 0x0000F8, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateSendRaceStart_C_GetLobbyContextParam;
 
 // Function BPC_RaceSequenceStateSendRaceStart.BPC_RaceSequenceStateSendRaceStart_C.GetStartSaveRequestParam
 // 0x0AE0 (0x0AE0 - 0x0000)
@@ -671,26 +408,7 @@ public:
 	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0AD4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_1;             // 0x0AD8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam");
-static_assert(sizeof(BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam) == 0x000AE0, "Wrong size on BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam, characterId) == 0x000000, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam::characterId' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam, courseId) == 0x000004, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam::courseId' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam, MachineData) == 0x000008, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam::MachineData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam, GadgetData) == 0x000378, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam::GadgetData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam, DegreeData) == 0x000394, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam::DegreeData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam, LocalDegreeData) == 0x00039C, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam::LocalDegreeData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam, LocalGadgetData) == 0x0003A4, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam::LocalGadgetData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam, LocalMachineData) == 0x0003C0, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam::LocalMachineData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam, LocalCourseId) == 0x000730, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam::LocalCourseId' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam, LocalCharacterId) == 0x000734, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam::LocalCharacterId' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam, MyPlayerIndex) == 0x000738, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam::MyPlayerIndex' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam, CallFunc_GetRaceRequestData_OutDriverId) == 0x00073C, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam::CallFunc_GetRaceRequestData_OutDriverId' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam, CallFunc_GetRaceRequestData_OutMainStageId) == 0x00073D, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam::CallFunc_GetRaceRequestData_OutMainStageId' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam, CallFunc_GetRaceRequestData_OutMachineCustomizeData) == 0x000740, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam::CallFunc_GetRaceRequestData_OutMachineCustomizeData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam, CallFunc_GetRaceRequestData_OutGadgetPlateData) == 0x000AB0, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam::CallFunc_GetRaceRequestData_OutGadgetPlateData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam, CallFunc_GetRaceRequestData_OutDegreeData) == 0x000ACC, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam::CallFunc_GetRaceRequestData_OutDegreeData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000AD4, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x000AD8, "Member 'BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateSendRaceStart_C_GetStartSaveRequestParam;
 
 // Function BPC_RaceSequenceStateSendRaceStart.BPC_RaceSequenceStateSendRaceStart_C.OccurServerError
 // 0x0008 (0x0008 - 0x0000)
@@ -701,10 +419,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Code;                                              // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateSendRaceStart_C_OccurServerError) == 0x000004, "Wrong alignment on BPC_RaceSequenceStateSendRaceStart_C_OccurServerError");
-static_assert(sizeof(BPC_RaceSequenceStateSendRaceStart_C_OccurServerError) == 0x000008, "Wrong size on BPC_RaceSequenceStateSendRaceStart_C_OccurServerError");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_OccurServerError, ResponseCode) == 0x000000, "Member 'BPC_RaceSequenceStateSendRaceStart_C_OccurServerError::ResponseCode' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_OccurServerError, Code) == 0x000004, "Member 'BPC_RaceSequenceStateSendRaceStart_C_OccurServerError::Code' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateSendRaceStart_C_OccurServerError;
 
 // Function BPC_RaceSequenceStateSendRaceStart.BPC_RaceSequenceStateSendRaceStart_C.OnRecvEntryRaceId
 // 0x0010 (0x0010 - 0x0000)
@@ -713,9 +428,7 @@ struct BPC_RaceSequenceStateSendRaceStart_C_OnRecvEntryRaceId final
 public:
 	class FString                                 InEntryRaceId;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateSendRaceStart_C_OnRecvEntryRaceId) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateSendRaceStart_C_OnRecvEntryRaceId");
-static_assert(sizeof(BPC_RaceSequenceStateSendRaceStart_C_OnRecvEntryRaceId) == 0x000010, "Wrong size on BPC_RaceSequenceStateSendRaceStart_C_OnRecvEntryRaceId");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_OnRecvEntryRaceId, InEntryRaceId) == 0x000000, "Member 'BPC_RaceSequenceStateSendRaceStart_C_OnRecvEntryRaceId::InEntryRaceId' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateSendRaceStart_C_OnRecvEntryRaceId;
 
 // Function BPC_RaceSequenceStateSendRaceStart.BPC_RaceSequenceStateSendRaceStart_C.OnSendStartSaveFestaStartCallback
 // 0x0038 (0x0038 - 0x0000)
@@ -727,12 +440,7 @@ public:
 	class FString                                 ResponseData;                                      // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          Error;                                             // 0x0030(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveFestaStartCallback) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveFestaStartCallback");
-static_assert(sizeof(BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveFestaStartCallback) == 0x000038, "Wrong size on BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveFestaStartCallback");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveFestaStartCallback, ApiName) == 0x000000, "Member 'BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveFestaStartCallback::ApiName' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveFestaStartCallback, RequestData) == 0x000010, "Member 'BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveFestaStartCallback::RequestData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveFestaStartCallback, ResponseData) == 0x000020, "Member 'BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveFestaStartCallback::ResponseData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveFestaStartCallback, Error) == 0x000030, "Member 'BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveFestaStartCallback::Error' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveFestaStartCallback;
 
 // Function BPC_RaceSequenceStateSendRaceStart.BPC_RaceSequenceStateSendRaceStart_C.OnSendStartSaveLegendCompeStartCallback
 // 0x0038 (0x0038 - 0x0000)
@@ -744,12 +452,7 @@ public:
 	class FString                                 ResponseData;                                      // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          Error;                                             // 0x0030(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveLegendCompeStartCallback) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveLegendCompeStartCallback");
-static_assert(sizeof(BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveLegendCompeStartCallback) == 0x000038, "Wrong size on BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveLegendCompeStartCallback");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveLegendCompeStartCallback, ApiName) == 0x000000, "Member 'BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveLegendCompeStartCallback::ApiName' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveLegendCompeStartCallback, RequestData) == 0x000010, "Member 'BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveLegendCompeStartCallback::RequestData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveLegendCompeStartCallback, ResponseData) == 0x000020, "Member 'BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveLegendCompeStartCallback::ResponseData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveLegendCompeStartCallback, Error) == 0x000030, "Member 'BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveLegendCompeStartCallback::Error' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveLegendCompeStartCallback;
 
 // Function BPC_RaceSequenceStateSendRaceStart.BPC_RaceSequenceStateSendRaceStart_C.OnSendStartSaveRankMatchStartCallback
 // 0x0038 (0x0038 - 0x0000)
@@ -761,12 +464,7 @@ public:
 	class FString                                 ResponseData;                                      // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          Error;                                             // 0x0030(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveRankMatchStartCallback) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveRankMatchStartCallback");
-static_assert(sizeof(BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveRankMatchStartCallback) == 0x000038, "Wrong size on BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveRankMatchStartCallback");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveRankMatchStartCallback, ApiName) == 0x000000, "Member 'BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveRankMatchStartCallback::ApiName' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveRankMatchStartCallback, RequestData) == 0x000010, "Member 'BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveRankMatchStartCallback::RequestData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveRankMatchStartCallback, ResponseData) == 0x000020, "Member 'BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveRankMatchStartCallback::ResponseData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveRankMatchStartCallback, Error) == 0x000030, "Member 'BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveRankMatchStartCallback::Error' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateSendRaceStart_C_OnSendStartSaveRankMatchStartCallback;
 
 // Function BPC_RaceSequenceStateSendRaceStart.BPC_RaceSequenceStateSendRaceStart_C.StartPlatformGameMatch
 // 0x0030 (0x0030 - 0x0000)
@@ -782,14 +480,7 @@ public:
 	class UCommonLobbyContext*                    K2Node_DynamicCast_AsCommon_Lobby_Context;         // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateSendRaceStart_C_StartPlatformGameMatch) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateSendRaceStart_C_StartPlatformGameMatch");
-static_assert(sizeof(BPC_RaceSequenceStateSendRaceStart_C_StartPlatformGameMatch) == 0x000030, "Wrong size on BPC_RaceSequenceStateSendRaceStart_C_StartPlatformGameMatch");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_StartPlatformGameMatch, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x000000, "Member 'BPC_RaceSequenceStateSendRaceStart_C_StartPlatformGameMatch::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_StartPlatformGameMatch, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000008, "Member 'BPC_RaceSequenceStateSendRaceStart_C_StartPlatformGameMatch::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_StartPlatformGameMatch, K2Node_SwitchEnum_CmpSuccess) == 0x000010, "Member 'BPC_RaceSequenceStateSendRaceStart_C_StartPlatformGameMatch::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_StartPlatformGameMatch, CallFunc_GetPublicLobbyContext_ReturnValue) == 0x000018, "Member 'BPC_RaceSequenceStateSendRaceStart_C_StartPlatformGameMatch::CallFunc_GetPublicLobbyContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_StartPlatformGameMatch, K2Node_DynamicCast_AsCommon_Lobby_Context) == 0x000020, "Member 'BPC_RaceSequenceStateSendRaceStart_C_StartPlatformGameMatch::K2Node_DynamicCast_AsCommon_Lobby_Context' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_StartPlatformGameMatch, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'BPC_RaceSequenceStateSendRaceStart_C_StartPlatformGameMatch::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateSendRaceStart_C_StartPlatformGameMatch;
 
 // Function BPC_RaceSequenceStateSendRaceStart.BPC_RaceSequenceStateSendRaceStart_C.SyncEntryRaceId
 // 0x0028 (0x0028 - 0x0000)
@@ -802,13 +493,7 @@ public:
 	class UCommonLobbyMemberContext*              K2Node_DynamicCast_AsCommon_Lobby_Member_Context;  // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateSendRaceStart_C_SyncEntryRaceId) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateSendRaceStart_C_SyncEntryRaceId");
-static_assert(sizeof(BPC_RaceSequenceStateSendRaceStart_C_SyncEntryRaceId) == 0x000028, "Wrong size on BPC_RaceSequenceStateSendRaceStart_C_SyncEntryRaceId");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_SyncEntryRaceId, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000000, "Member 'BPC_RaceSequenceStateSendRaceStart_C_SyncEntryRaceId::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_SyncEntryRaceId, CallFunc_GetPublicLobbyContext_ReturnValue) == 0x000008, "Member 'BPC_RaceSequenceStateSendRaceStart_C_SyncEntryRaceId::CallFunc_GetPublicLobbyContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_SyncEntryRaceId, CallFunc_GetLocalMember_ReturnValue) == 0x000010, "Member 'BPC_RaceSequenceStateSendRaceStart_C_SyncEntryRaceId::CallFunc_GetLocalMember_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_SyncEntryRaceId, K2Node_DynamicCast_AsCommon_Lobby_Member_Context) == 0x000018, "Member 'BPC_RaceSequenceStateSendRaceStart_C_SyncEntryRaceId::K2Node_DynamicCast_AsCommon_Lobby_Member_Context' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_SyncEntryRaceId, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'BPC_RaceSequenceStateSendRaceStart_C_SyncEntryRaceId::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateSendRaceStart_C_SyncEntryRaceId;
 
 // Function BPC_RaceSequenceStateSendRaceStart.BPC_RaceSequenceStateSendRaceStart_C.SyncEntryRaceIdForFesta
 // 0x0030 (0x0030 - 0x0000)
@@ -822,14 +507,7 @@ public:
 	class UFestaLobbyMemberContext*               K2Node_DynamicCast_AsFesta_Lobby_Member_Context;   // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceSequenceStateSendRaceStart_C_SyncEntryRaceIdForFesta) == 0x000008, "Wrong alignment on BPC_RaceSequenceStateSendRaceStart_C_SyncEntryRaceIdForFesta");
-static_assert(sizeof(BPC_RaceSequenceStateSendRaceStart_C_SyncEntryRaceIdForFesta) == 0x000030, "Wrong size on BPC_RaceSequenceStateSendRaceStart_C_SyncEntryRaceIdForFesta");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_SyncEntryRaceIdForFesta, K2Node_MakeStruct_Common_FestaBonusChanceData) == 0x000000, "Member 'BPC_RaceSequenceStateSendRaceStart_C_SyncEntryRaceIdForFesta::K2Node_MakeStruct_Common_FestaBonusChanceData' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_SyncEntryRaceIdForFesta, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000008, "Member 'BPC_RaceSequenceStateSendRaceStart_C_SyncEntryRaceIdForFesta::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_SyncEntryRaceIdForFesta, CallFunc_GetPublicLobbyContext_ReturnValue) == 0x000010, "Member 'BPC_RaceSequenceStateSendRaceStart_C_SyncEntryRaceIdForFesta::CallFunc_GetPublicLobbyContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_SyncEntryRaceIdForFesta, CallFunc_GetLocalMember_ReturnValue) == 0x000018, "Member 'BPC_RaceSequenceStateSendRaceStart_C_SyncEntryRaceIdForFesta::CallFunc_GetLocalMember_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_SyncEntryRaceIdForFesta, K2Node_DynamicCast_AsFesta_Lobby_Member_Context) == 0x000020, "Member 'BPC_RaceSequenceStateSendRaceStart_C_SyncEntryRaceIdForFesta::K2Node_DynamicCast_AsFesta_Lobby_Member_Context' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateSendRaceStart_C_SyncEntryRaceIdForFesta, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'BPC_RaceSequenceStateSendRaceStart_C_SyncEntryRaceIdForFesta::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceSequenceStateSendRaceStart_C_SyncEntryRaceIdForFesta;
 
 }
 

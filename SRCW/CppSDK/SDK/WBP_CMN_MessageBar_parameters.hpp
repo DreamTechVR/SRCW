@@ -54,35 +54,7 @@ public:
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x00A8(0x0010)()
 	int32                                         K2Node_Event_Index;                                // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar) == 0x000008, "Wrong alignment on WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar");
-static_assert(sizeof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar) == 0x0000C0, "Wrong size on WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar");
-static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar, EntryPoint) == 0x000000, "Member 'WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar, Temp_int_Variable) == 0x000004, "Member 'WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar, Temp_text_Variable) == 0x000008, "Member 'WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar, Temp_text_Variable_1) == 0x000018, "Member 'WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar::Temp_text_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar, Temp_text_Variable_2) == 0x000028, "Member 'WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar::Temp_text_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar, Temp_text_Variable_3) == 0x000038, "Member 'WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar::Temp_text_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar, Temp_bool_Variable) == 0x000048, "Member 'WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar, Temp_byte_Variable) == 0x000049, "Member 'WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar, Temp_byte_Variable_1) == 0x00004A, "Member 'WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar, Temp_int_Variable_1) == 0x00004C, "Member 'WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar, Temp_byte_Variable_2) == 0x000050, "Member 'WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar, CallFunc_Greater_IntInt_ReturnValue) == 0x000051, "Member 'WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar, Temp_byte_Variable_3) == 0x000052, "Member 'WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar, Temp_bool_Variable_1) == 0x000053, "Member 'WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar, K2Node_Event_InText) == 0x000058, "Member 'WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar::K2Node_Event_InText' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar, K2Node_Event_bInIsVisible_1) == 0x000068, "Member 'WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar::K2Node_Event_bInIsVisible_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar, K2Node_Select_Default) == 0x000069, "Member 'WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar, CallFunc_PlayAnimation_ReturnValue) == 0x000070, "Member 'WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar, CallFunc_PlayAnimation_ReturnValue_1) == 0x000078, "Member 'WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar, CallFunc_PlayAnimation_ReturnValue_2) == 0x000080, "Member 'WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar, CallFunc_Add_IntInt_ReturnValue) == 0x000088, "Member 'WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar, K2Node_Select_Default_1) == 0x000090, "Member 'WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar, K2Node_Event_bInIsVisible) == 0x0000A0, "Member 'WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar::K2Node_Event_bInIsVisible' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar, K2Node_Select_Default_2) == 0x0000A1, "Member 'WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar, K2Node_Event_bEnableBlinkLoop) == 0x0000A2, "Member 'WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar::K2Node_Event_bEnableBlinkLoop' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar, CallFunc_MakeLiteralText_ReturnValue) == 0x0000A8, "Member 'WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar, K2Node_Event_Index) == 0x0000B8, "Member 'WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar::K2Node_Event_Index' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar;
 
 // Function WBP_CMN_MessageBar.WBP_CMN_MessageBar_C.SetText
 // 0x0010 (0x0010 - 0x0000)
@@ -91,9 +63,7 @@ struct WBP_CMN_MessageBar_C_SetText final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_CMN_MessageBar_C_SetText) == 0x000008, "Wrong alignment on WBP_CMN_MessageBar_C_SetText");
-static_assert(sizeof(WBP_CMN_MessageBar_C_SetText) == 0x000010, "Wrong size on WBP_CMN_MessageBar_C_SetText");
-static_assert(offsetof(WBP_CMN_MessageBar_C_SetText, InText) == 0x000000, "Member 'WBP_CMN_MessageBar_C_SetText::InText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_MessageBar_C_SetText;
 
 // Function WBP_CMN_MessageBar.WBP_CMN_MessageBar_C.SetupDisableGadgetMessage
 // 0x0001 (0x0001 - 0x0000)
@@ -102,9 +72,7 @@ struct WBP_CMN_MessageBar_C_SetupDisableGadgetMessage final
 public:
 	bool                                          bEnableBlinkLoop;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_MessageBar_C_SetupDisableGadgetMessage) == 0x000001, "Wrong alignment on WBP_CMN_MessageBar_C_SetupDisableGadgetMessage");
-static_assert(sizeof(WBP_CMN_MessageBar_C_SetupDisableGadgetMessage) == 0x000001, "Wrong size on WBP_CMN_MessageBar_C_SetupDisableGadgetMessage");
-static_assert(offsetof(WBP_CMN_MessageBar_C_SetupDisableGadgetMessage, bEnableBlinkLoop) == 0x000000, "Member 'WBP_CMN_MessageBar_C_SetupDisableGadgetMessage::bEnableBlinkLoop' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_MessageBar_C_SetupDisableGadgetMessage;
 
 // Function WBP_CMN_MessageBar.WBP_CMN_MessageBar_C.SetWaitingTextVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -113,9 +81,7 @@ struct WBP_CMN_MessageBar_C_SetWaitingTextVisible final
 public:
 	bool                                          bInIsVisible;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_MessageBar_C_SetWaitingTextVisible) == 0x000001, "Wrong alignment on WBP_CMN_MessageBar_C_SetWaitingTextVisible");
-static_assert(sizeof(WBP_CMN_MessageBar_C_SetWaitingTextVisible) == 0x000001, "Wrong size on WBP_CMN_MessageBar_C_SetWaitingTextVisible");
-static_assert(offsetof(WBP_CMN_MessageBar_C_SetWaitingTextVisible, bInIsVisible) == 0x000000, "Member 'WBP_CMN_MessageBar_C_SetWaitingTextVisible::bInIsVisible' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_MessageBar_C_SetWaitingTextVisible;
 
 // Function WBP_CMN_MessageBar.WBP_CMN_MessageBar_C.SetWarningIconVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -124,9 +90,7 @@ struct WBP_CMN_MessageBar_C_SetWarningIconVisible final
 public:
 	bool                                          bInIsVisible;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_MessageBar_C_SetWarningIconVisible) == 0x000001, "Wrong alignment on WBP_CMN_MessageBar_C_SetWarningIconVisible");
-static_assert(sizeof(WBP_CMN_MessageBar_C_SetWarningIconVisible) == 0x000001, "Wrong size on WBP_CMN_MessageBar_C_SetWarningIconVisible");
-static_assert(offsetof(WBP_CMN_MessageBar_C_SetWarningIconVisible, bInIsVisible) == 0x000000, "Member 'WBP_CMN_MessageBar_C_SetWarningIconVisible::bInIsVisible' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_MessageBar_C_SetWarningIconVisible;
 
 // Function WBP_CMN_MessageBar.WBP_CMN_MessageBar_C.SetWidgetSwitcherActiveWidgetIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -135,9 +99,7 @@ struct WBP_CMN_MessageBar_C_SetWidgetSwitcherActiveWidgetIndex final
 public:
 	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_MessageBar_C_SetWidgetSwitcherActiveWidgetIndex) == 0x000004, "Wrong alignment on WBP_CMN_MessageBar_C_SetWidgetSwitcherActiveWidgetIndex");
-static_assert(sizeof(WBP_CMN_MessageBar_C_SetWidgetSwitcherActiveWidgetIndex) == 0x000004, "Wrong size on WBP_CMN_MessageBar_C_SetWidgetSwitcherActiveWidgetIndex");
-static_assert(offsetof(WBP_CMN_MessageBar_C_SetWidgetSwitcherActiveWidgetIndex, Index_0) == 0x000000, "Member 'WBP_CMN_MessageBar_C_SetWidgetSwitcherActiveWidgetIndex::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_MessageBar_C_SetWidgetSwitcherActiveWidgetIndex;
 
 }
 

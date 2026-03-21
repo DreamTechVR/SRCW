@@ -25,12 +25,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue_1;       // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge) == 0x000020, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge, EntryPoint) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge, CallFunc_PlayAnimationForward_ReturnValue) == 0x000008, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge, CallFunc_PlayAnimationForward_ReturnValue_1) == 0x000010, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge::CallFunc_PlayAnimationForward_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge, K2Node_Event_IsDesignTime) == 0x000018, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge::K2Node_Event_IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge;
 
 // Function WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge.WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C.GetNormalGaugePercent
 // 0x0020 (0x0020 - 0x0000)
@@ -43,12 +38,7 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        K2Node_FunctionResult_GaugePercent_ImplicitCast;   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_GetNormalGaugePercent) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_GetNormalGaugePercent");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_GetNormalGaugePercent) == 0x000020, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_GetNormalGaugePercent");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_GetNormalGaugePercent, GaugePercent) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_GetNormalGaugePercent::GaugePercent' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_GetNormalGaugePercent, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_GetNormalGaugePercent::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_GetNormalGaugePercent, CallFunc_K2_GetScalarParameterValue_ReturnValue) == 0x000010, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_GetNormalGaugePercent::CallFunc_K2_GetScalarParameterValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_GetNormalGaugePercent, K2Node_FunctionResult_GaugePercent_ImplicitCast) == 0x000018, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_GetNormalGaugePercent::K2Node_FunctionResult_GaugePercent_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_GetNormalGaugePercent;
 
 // Function WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge.WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C.Initialize
 // 0x0008 (0x0008 - 0x0000)
@@ -57,9 +47,7 @@ struct WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_Initialize final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_Initialize) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_Initialize");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_Initialize) == 0x000008, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_Initialize");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_Initialize, CallFunc_PlayAnimationForward_ReturnValue) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_Initialize::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_Initialize;
 
 // Function WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge.WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C.PlayGroupChargeEffect
 // 0x0020 (0x0020 - 0x0000)
@@ -72,12 +60,7 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_PlayGroupChargeEffect) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_PlayGroupChargeEffect");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_PlayGroupChargeEffect) == 0x000020, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_PlayGroupChargeEffect");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_PlayGroupChargeEffect, ChargePer) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_PlayGroupChargeEffect::ChargePer' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_PlayGroupChargeEffect, isSingle) == 0x000008, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_PlayGroupChargeEffect::isSingle' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_PlayGroupChargeEffect, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000010, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_PlayGroupChargeEffect::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_PlayGroupChargeEffect, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000018, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_PlayGroupChargeEffect::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_PlayGroupChargeEffect;
 
 // Function WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge.WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -86,9 +69,7 @@ struct WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_PreConstruct");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_PreConstruct) == 0x000001, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_PreConstruct");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_PreConstruct;
 
 // Function WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge.WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C.Set Normal GaugePercent
 // 0x0020 (0x0020 - 0x0000)
@@ -101,12 +82,7 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_Set_Normal_GaugePercent) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_Set_Normal_GaugePercent");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_Set_Normal_GaugePercent) == 0x000020, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_Set_Normal_GaugePercent");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_Set_Normal_GaugePercent, Percent) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_Set_Normal_GaugePercent::Percent' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_Set_Normal_GaugePercent, CallFunc_Greater_DoubleDouble_ReturnValue) == 0x000008, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_Set_Normal_GaugePercent::CallFunc_Greater_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_Set_Normal_GaugePercent, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000010, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_Set_Normal_GaugePercent::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_Set_Normal_GaugePercent, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000018, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_Set_Normal_GaugePercent::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_Set_Normal_GaugePercent;
 
 // Function WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge.WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C.SetBoostGaugePercent
 // 0x0018 (0x0018 - 0x0000)
@@ -117,11 +93,7 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_SetBoostGaugePercent) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_SetBoostGaugePercent");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_SetBoostGaugePercent) == 0x000018, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_SetBoostGaugePercent");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_SetBoostGaugePercent, Percent) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_SetBoostGaugePercent::Percent' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_SetBoostGaugePercent, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_SetBoostGaugePercent::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_SetBoostGaugePercent, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000010, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_SetBoostGaugePercent::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_Festa_TeamHUD_RingGauge_C_SetBoostGaugePercent;
 
 }
 

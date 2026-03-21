@@ -33,17 +33,7 @@ public:
 	uint8                                         Pad_42[0x2];                                       // 0x0042(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPF_AppUtilityLibrary_C_OpenRewardDialog) == 0x000008, "Wrong alignment on BPF_AppUtilityLibrary_C_OpenRewardDialog");
-static_assert(sizeof(BPF_AppUtilityLibrary_C_OpenRewardDialog) == 0x000048, "Wrong size on BPF_AppUtilityLibrary_C_OpenRewardDialog");
-static_assert(offsetof(BPF_AppUtilityLibrary_C_OpenRewardDialog, Title) == 0x000000, "Member 'BPF_AppUtilityLibrary_C_OpenRewardDialog::Title' has a wrong offset!");
-static_assert(offsetof(BPF_AppUtilityLibrary_C_OpenRewardDialog, rewardList) == 0x000010, "Member 'BPF_AppUtilityLibrary_C_OpenRewardDialog::rewardList' has a wrong offset!");
-static_assert(offsetof(BPF_AppUtilityLibrary_C_OpenRewardDialog, __WorldContext) == 0x000020, "Member 'BPF_AppUtilityLibrary_C_OpenRewardDialog::__WorldContext' has a wrong offset!");
-static_assert(offsetof(BPF_AppUtilityLibrary_C_OpenRewardDialog, RewardDialogWidget) == 0x000028, "Member 'BPF_AppUtilityLibrary_C_OpenRewardDialog::RewardDialogWidget' has a wrong offset!");
-static_assert(offsetof(BPF_AppUtilityLibrary_C_OpenRewardDialog, ZOrder) == 0x000030, "Member 'BPF_AppUtilityLibrary_C_OpenRewardDialog::ZOrder' has a wrong offset!");
-static_assert(offsetof(BPF_AppUtilityLibrary_C_OpenRewardDialog, CallFunc_Create_ReturnValue) == 0x000038, "Member 'BPF_AppUtilityLibrary_C_OpenRewardDialog::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPF_AppUtilityLibrary_C_OpenRewardDialog, CallFunc_Array_IsNotEmpty_ReturnValue) == 0x000040, "Member 'BPF_AppUtilityLibrary_C_OpenRewardDialog::CallFunc_Array_IsNotEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPF_AppUtilityLibrary_C_OpenRewardDialog, CallFunc_MakeLiteralByte_ReturnValue) == 0x000041, "Member 'BPF_AppUtilityLibrary_C_OpenRewardDialog::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPF_AppUtilityLibrary_C_OpenRewardDialog, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000044, "Member 'BPF_AppUtilityLibrary_C_OpenRewardDialog::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPF_AppUtilityLibrary_C_OpenRewardDialog;
 
 // Function BPF_AppUtilityLibrary.BPF_AppUtilityLibrary_C.Set Input Blocked
 // 0x0028 (0x0028 - 0x0000)
@@ -58,14 +48,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPF_AppUtilityLibrary_C_Set_Input_Blocked) == 0x000008, "Wrong alignment on BPF_AppUtilityLibrary_C_Set_Input_Blocked");
-static_assert(sizeof(BPF_AppUtilityLibrary_C_Set_Input_Blocked) == 0x000028, "Wrong size on BPF_AppUtilityLibrary_C_Set_Input_Blocked");
-static_assert(offsetof(BPF_AppUtilityLibrary_C_Set_Input_Blocked, Controller) == 0x000000, "Member 'BPF_AppUtilityLibrary_C_Set_Input_Blocked::Controller' has a wrong offset!");
-static_assert(offsetof(BPF_AppUtilityLibrary_C_Set_Input_Blocked, bBlocked) == 0x000008, "Member 'BPF_AppUtilityLibrary_C_Set_Input_Blocked::bBlocked' has a wrong offset!");
-static_assert(offsetof(BPF_AppUtilityLibrary_C_Set_Input_Blocked, __WorldContext) == 0x000010, "Member 'BPF_AppUtilityLibrary_C_Set_Input_Blocked::__WorldContext' has a wrong offset!");
-static_assert(offsetof(BPF_AppUtilityLibrary_C_Set_Input_Blocked, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000018, "Member 'BPF_AppUtilityLibrary_C_Set_Input_Blocked::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(BPF_AppUtilityLibrary_C_Set_Input_Blocked, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'BPF_AppUtilityLibrary_C_Set_Input_Blocked::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPF_AppUtilityLibrary_C_Set_Input_Blocked, CallFunc_IsValid_ReturnValue) == 0x000021, "Member 'BPF_AppUtilityLibrary_C_Set_Input_Blocked::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPF_AppUtilityLibrary_C_Set_Input_Blocked;
 
 }
 

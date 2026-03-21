@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -72,32 +72,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Online_PlayerDetail_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Online_PlayerDetail_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Online_PlayerDetail_C")
 	}
 	static class UWBP_Online_PlayerDetail_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Online_PlayerDetail_C>();
 	}
 };
-static_assert(alignof(UWBP_Online_PlayerDetail_C) == 0x000008, "Wrong alignment on UWBP_Online_PlayerDetail_C");
-static_assert(sizeof(UWBP_Online_PlayerDetail_C) == 0x000610, "Wrong size on UWBP_Online_PlayerDetail_C");
-static_assert(offsetof(UWBP_Online_PlayerDetail_C, UberGraphFrame) == 0x000580, "Member 'UWBP_Online_PlayerDetail_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerDetail_C, PlayerDetail_Out) == 0x000588, "Member 'UWBP_Online_PlayerDetail_C::PlayerDetail_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerDetail_C, PlayerDetail_Loop) == 0x000590, "Member 'UWBP_Online_PlayerDetail_C::PlayerDetail_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerDetail_C, PlayerDetail_In) == 0x000598, "Member 'UWBP_Online_PlayerDetail_C::PlayerDetail_In' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerDetail_C, Arrow_L_01) == 0x0005A0, "Member 'UWBP_Online_PlayerDetail_C::Arrow_L_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerDetail_C, Arrow_L_02) == 0x0005A8, "Member 'UWBP_Online_PlayerDetail_C::Arrow_L_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerDetail_C, Arrow_R_01) == 0x0005B0, "Member 'UWBP_Online_PlayerDetail_C::Arrow_R_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerDetail_C, Arrow_R_02) == 0x0005B8, "Member 'UWBP_Online_PlayerDetail_C::Arrow_R_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerDetail_C, DSP_Arrow_L) == 0x0005C0, "Member 'UWBP_Online_PlayerDetail_C::DSP_Arrow_L' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerDetail_C, DSP_Arrow_R) == 0x0005C8, "Member 'UWBP_Online_PlayerDetail_C::DSP_Arrow_R' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerDetail_C, MouseInteractionLeft) == 0x0005D0, "Member 'UWBP_Online_PlayerDetail_C::MouseInteractionLeft' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerDetail_C, MouseInteractionRight) == 0x0005D8, "Member 'UWBP_Online_PlayerDetail_C::MouseInteractionRight' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerDetail_C, WBP_CMN_BlockWindow) == 0x0005E0, "Member 'UWBP_Online_PlayerDetail_C::WBP_CMN_BlockWindow' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerDetail_C, WBP_CMN_Nice) == 0x0005E8, "Member 'UWBP_Online_PlayerDetail_C::WBP_CMN_Nice' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerDetail_C, WBP_CMN_PlayerDetail) == 0x0005F0, "Member 'UWBP_Online_PlayerDetail_C::WBP_CMN_PlayerDetail' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerDetail_C, ProductUserId) == 0x0005F8, "Member 'UWBP_Online_PlayerDetail_C::ProductUserId' has a wrong offset!");
-static_assert(offsetof(UWBP_Online_PlayerDetail_C, IsShowFooterMenu) == 0x000608, "Member 'UWBP_Online_PlayerDetail_C::IsShowFooterMenu' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Online_PlayerDetail_C;
 
 }
 

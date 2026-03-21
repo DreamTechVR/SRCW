@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -57,32 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_StartDash_Sub_ArcGauge_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_StartDash_Sub_ArcGauge_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_StartDash_Sub_ArcGauge_C")
 	}
 	static class UWBP_Race_StartDash_Sub_ArcGauge_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_StartDash_Sub_ArcGauge_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_StartDash_Sub_ArcGauge_C) == 0x000008, "Wrong alignment on UWBP_Race_StartDash_Sub_ArcGauge_C");
-static_assert(sizeof(UWBP_Race_StartDash_Sub_ArcGauge_C) == 0x0003A0, "Wrong size on UWBP_Race_StartDash_Sub_ArcGauge_C");
-static_assert(offsetof(UWBP_Race_StartDash_Sub_ArcGauge_C, UberGraphFrame) == 0x000318, "Member 'UWBP_Race_StartDash_Sub_ArcGauge_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_StartDash_Sub_ArcGauge_C, TestGaurgeAnim) == 0x000320, "Member 'UWBP_Race_StartDash_Sub_ArcGauge_C::TestGaurgeAnim' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_StartDash_Sub_ArcGauge_C, Arrow) == 0x000328, "Member 'UWBP_Race_StartDash_Sub_ArcGauge_C::Arrow' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_StartDash_Sub_ArcGauge_C, base) == 0x000330, "Member 'UWBP_Race_StartDash_Sub_ArcGauge_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_StartDash_Sub_ArcGauge_C, HugeSuccess_LightGreen) == 0x000338, "Member 'UWBP_Race_StartDash_Sub_ArcGauge_C::HugeSuccess_LightGreen' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_StartDash_Sub_ArcGauge_C, MeterCover) == 0x000340, "Member 'UWBP_Race_StartDash_Sub_ArcGauge_C::MeterCover' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_StartDash_Sub_ArcGauge_C, NG_Red_01) == 0x000348, "Member 'UWBP_Race_StartDash_Sub_ArcGauge_C::NG_Red_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_StartDash_Sub_ArcGauge_C, NG_Red_02) == 0x000350, "Member 'UWBP_Race_StartDash_Sub_ArcGauge_C::NG_Red_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_StartDash_Sub_ArcGauge_C, PushGauge) == 0x000358, "Member 'UWBP_Race_StartDash_Sub_ArcGauge_C::PushGauge' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_StartDash_Sub_ArcGauge_C, Success_Green) == 0x000360, "Member 'UWBP_Race_StartDash_Sub_ArcGauge_C::Success_Green' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_StartDash_Sub_ArcGauge_C, WBP_Race_StartDash_Sub_Btn) == 0x000368, "Member 'UWBP_Race_StartDash_Sub_ArcGauge_C::WBP_Race_StartDash_Sub_Btn' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_StartDash_Sub_ArcGauge_C, WBP_Race_StartDash_Sub_Btn_Cross) == 0x000370, "Member 'UWBP_Race_StartDash_Sub_ArcGauge_C::WBP_Race_StartDash_Sub_Btn_Cross' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_StartDash_Sub_ArcGauge_C, WBP_Race_StartDash_Sub_Btn_LR) == 0x000378, "Member 'UWBP_Race_StartDash_Sub_ArcGauge_C::WBP_Race_StartDash_Sub_Btn_LR' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_StartDash_Sub_ArcGauge_C, WBP_Race_Sub_Btn_Option) == 0x000380, "Member 'UWBP_Race_StartDash_Sub_ArcGauge_C::WBP_Race_Sub_Btn_Option' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_StartDash_Sub_ArcGauge_C, WidgetSwitcher_Btn) == 0x000388, "Member 'UWBP_Race_StartDash_Sub_ArcGauge_C::WidgetSwitcher_Btn' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_StartDash_Sub_ArcGauge_C, GaugeMat) == 0x000390, "Member 'UWBP_Race_StartDash_Sub_ArcGauge_C::GaugeMat' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_StartDash_Sub_ArcGauge_C, ButtonWB) == 0x000398, "Member 'UWBP_Race_StartDash_Sub_ArcGauge_C::ButtonWB' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_StartDash_Sub_ArcGauge_C;
 
 }
 

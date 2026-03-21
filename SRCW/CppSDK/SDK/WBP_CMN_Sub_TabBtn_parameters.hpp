@@ -37,19 +37,7 @@ public:
 	uint8                                         Pad_33[0x1];                                       // 0x0033(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_Sub_TabBtn_C_ExecuteUbergraph_WBP_CMN_Sub_TabBtn) == 0x000008, "Wrong alignment on WBP_CMN_Sub_TabBtn_C_ExecuteUbergraph_WBP_CMN_Sub_TabBtn");
-static_assert(sizeof(WBP_CMN_Sub_TabBtn_C_ExecuteUbergraph_WBP_CMN_Sub_TabBtn) == 0x000038, "Wrong size on WBP_CMN_Sub_TabBtn_C_ExecuteUbergraph_WBP_CMN_Sub_TabBtn");
-static_assert(offsetof(WBP_CMN_Sub_TabBtn_C_ExecuteUbergraph_WBP_CMN_Sub_TabBtn, EntryPoint) == 0x000000, "Member 'WBP_CMN_Sub_TabBtn_C_ExecuteUbergraph_WBP_CMN_Sub_TabBtn::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_TabBtn_C_ExecuteUbergraph_WBP_CMN_Sub_TabBtn, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000004, "Member 'WBP_CMN_Sub_TabBtn_C_ExecuteUbergraph_WBP_CMN_Sub_TabBtn::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_TabBtn_C_ExecuteUbergraph_WBP_CMN_Sub_TabBtn, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_CMN_Sub_TabBtn_C_ExecuteUbergraph_WBP_CMN_Sub_TabBtn::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_TabBtn_C_ExecuteUbergraph_WBP_CMN_Sub_TabBtn, CallFunc_PlayAnimation_ReturnValue_1) == 0x000010, "Member 'WBP_CMN_Sub_TabBtn_C_ExecuteUbergraph_WBP_CMN_Sub_TabBtn::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_TabBtn_C_ExecuteUbergraph_WBP_CMN_Sub_TabBtn, K2Node_CustomEvent_Index) == 0x000018, "Member 'WBP_CMN_Sub_TabBtn_C_ExecuteUbergraph_WBP_CMN_Sub_TabBtn::K2Node_CustomEvent_Index' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_TabBtn_C_ExecuteUbergraph_WBP_CMN_Sub_TabBtn, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000020, "Member 'WBP_CMN_Sub_TabBtn_C_ExecuteUbergraph_WBP_CMN_Sub_TabBtn::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_TabBtn_C_ExecuteUbergraph_WBP_CMN_Sub_TabBtn, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000028, "Member 'WBP_CMN_Sub_TabBtn_C_ExecuteUbergraph_WBP_CMN_Sub_TabBtn::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_TabBtn_C_ExecuteUbergraph_WBP_CMN_Sub_TabBtn, CallFunc_IsAnimationPlaying_ReturnValue_1) == 0x000030, "Member 'WBP_CMN_Sub_TabBtn_C_ExecuteUbergraph_WBP_CMN_Sub_TabBtn::CallFunc_IsAnimationPlaying_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_TabBtn_C_ExecuteUbergraph_WBP_CMN_Sub_TabBtn, CallFunc_IsAnimationPlaying_ReturnValue_2) == 0x000031, "Member 'WBP_CMN_Sub_TabBtn_C_ExecuteUbergraph_WBP_CMN_Sub_TabBtn::CallFunc_IsAnimationPlaying_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_TabBtn_C_ExecuteUbergraph_WBP_CMN_Sub_TabBtn, CallFunc_IsAnimationPlaying_ReturnValue_3) == 0x000032, "Member 'WBP_CMN_Sub_TabBtn_C_ExecuteUbergraph_WBP_CMN_Sub_TabBtn::CallFunc_IsAnimationPlaying_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_TabBtn_C_ExecuteUbergraph_WBP_CMN_Sub_TabBtn, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000034, "Member 'WBP_CMN_Sub_TabBtn_C_ExecuteUbergraph_WBP_CMN_Sub_TabBtn::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Sub_TabBtn_C_ExecuteUbergraph_WBP_CMN_Sub_TabBtn;
 
 // Function WBP_CMN_Sub_TabBtn.WBP_CMN_Sub_TabBtn_C.OnMouseButtonDown
 // 0x0220 (0x0220 - 0x0000)
@@ -61,12 +49,7 @@ public:
 	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x00B8)(Parm, OutParm, ReturnParm)
 	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x0168(0x00B8)()
 };
-static_assert(alignof(WBP_CMN_Sub_TabBtn_C_OnMouseButtonDown) == 0x000008, "Wrong alignment on WBP_CMN_Sub_TabBtn_C_OnMouseButtonDown");
-static_assert(sizeof(WBP_CMN_Sub_TabBtn_C_OnMouseButtonDown) == 0x000220, "Wrong size on WBP_CMN_Sub_TabBtn_C_OnMouseButtonDown");
-static_assert(offsetof(WBP_CMN_Sub_TabBtn_C_OnMouseButtonDown, MyGeometry) == 0x000000, "Member 'WBP_CMN_Sub_TabBtn_C_OnMouseButtonDown::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_TabBtn_C_OnMouseButtonDown, MouseEvent) == 0x000038, "Member 'WBP_CMN_Sub_TabBtn_C_OnMouseButtonDown::MouseEvent' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_TabBtn_C_OnMouseButtonDown, ReturnValue) == 0x0000B0, "Member 'WBP_CMN_Sub_TabBtn_C_OnMouseButtonDown::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_TabBtn_C_OnMouseButtonDown, K2Node_MakeStruct_EventReply) == 0x000168, "Member 'WBP_CMN_Sub_TabBtn_C_OnMouseButtonDown::K2Node_MakeStruct_EventReply' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Sub_TabBtn_C_OnMouseButtonDown;
 
 // Function WBP_CMN_Sub_TabBtn.WBP_CMN_Sub_TabBtn_C.SelectAnimation
 // 0x0018 (0x0018 - 0x0000)
@@ -79,12 +62,7 @@ public:
 	class UWidgetAnimation*                       K2Node_Select_Default;                             // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_Sub_TabBtn_C_SelectAnimation) == 0x000008, "Wrong alignment on WBP_CMN_Sub_TabBtn_C_SelectAnimation");
-static_assert(sizeof(WBP_CMN_Sub_TabBtn_C_SelectAnimation) == 0x000018, "Wrong size on WBP_CMN_Sub_TabBtn_C_SelectAnimation");
-static_assert(offsetof(WBP_CMN_Sub_TabBtn_C_SelectAnimation, bIsSelected) == 0x000000, "Member 'WBP_CMN_Sub_TabBtn_C_SelectAnimation::bIsSelected' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_TabBtn_C_SelectAnimation, Temp_bool_Variable) == 0x000001, "Member 'WBP_CMN_Sub_TabBtn_C_SelectAnimation::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_TabBtn_C_SelectAnimation, K2Node_Select_Default) == 0x000008, "Member 'WBP_CMN_Sub_TabBtn_C_SelectAnimation::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_TabBtn_C_SelectAnimation, CallFunc_PlayAnimation_ReturnValue) == 0x000010, "Member 'WBP_CMN_Sub_TabBtn_C_SelectAnimation::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Sub_TabBtn_C_SelectAnimation;
 
 // Function WBP_CMN_Sub_TabBtn.WBP_CMN_Sub_TabBtn_C.Set Up Tab Texts
 // 0x0010 (0x0010 - 0x0000)
@@ -93,9 +71,7 @@ struct WBP_CMN_Sub_TabBtn_C_Set_Up_Tab_Texts final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_CMN_Sub_TabBtn_C_Set_Up_Tab_Texts) == 0x000008, "Wrong alignment on WBP_CMN_Sub_TabBtn_C_Set_Up_Tab_Texts");
-static_assert(sizeof(WBP_CMN_Sub_TabBtn_C_Set_Up_Tab_Texts) == 0x000010, "Wrong size on WBP_CMN_Sub_TabBtn_C_Set_Up_Tab_Texts");
-static_assert(offsetof(WBP_CMN_Sub_TabBtn_C_Set_Up_Tab_Texts, InText) == 0x000000, "Member 'WBP_CMN_Sub_TabBtn_C_Set_Up_Tab_Texts::InText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Sub_TabBtn_C_Set_Up_Tab_Texts;
 
 // Function WBP_CMN_Sub_TabBtn.WBP_CMN_Sub_TabBtn_C.SetIconIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -104,9 +80,7 @@ struct WBP_CMN_Sub_TabBtn_C_SetIconIndex final
 public:
 	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_Sub_TabBtn_C_SetIconIndex) == 0x000004, "Wrong alignment on WBP_CMN_Sub_TabBtn_C_SetIconIndex");
-static_assert(sizeof(WBP_CMN_Sub_TabBtn_C_SetIconIndex) == 0x000004, "Wrong size on WBP_CMN_Sub_TabBtn_C_SetIconIndex");
-static_assert(offsetof(WBP_CMN_Sub_TabBtn_C_SetIconIndex, Index_0) == 0x000000, "Member 'WBP_CMN_Sub_TabBtn_C_SetIconIndex::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Sub_TabBtn_C_SetIconIndex;
 
 }
 

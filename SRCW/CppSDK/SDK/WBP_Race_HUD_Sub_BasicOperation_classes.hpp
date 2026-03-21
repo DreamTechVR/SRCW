@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "UnionSystem_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -49,24 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_HUD_Sub_BasicOperation_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_HUD_Sub_BasicOperation_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_HUD_Sub_BasicOperation_C")
 	}
 	static class UWBP_Race_HUD_Sub_BasicOperation_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_HUD_Sub_BasicOperation_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_HUD_Sub_BasicOperation_C) == 0x000008, "Wrong alignment on UWBP_Race_HUD_Sub_BasicOperation_C");
-static_assert(sizeof(UWBP_Race_HUD_Sub_BasicOperation_C) == 0x000320, "Wrong size on UWBP_Race_HUD_Sub_BasicOperation_C");
-static_assert(offsetof(UWBP_Race_HUD_Sub_BasicOperation_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Race_HUD_Sub_BasicOperation_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_BasicOperation_C, Operation_Out) == 0x0002E8, "Member 'UWBP_Race_HUD_Sub_BasicOperation_C::Operation_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_BasicOperation_C, Operation_InLoop) == 0x0002F0, "Member 'UWBP_Race_HUD_Sub_BasicOperation_C::Operation_InLoop' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_BasicOperation_C, WBP_Race_HUD_Sub_BasicOperationHeader) == 0x0002F8, "Member 'UWBP_Race_HUD_Sub_BasicOperation_C::WBP_Race_HUD_Sub_BasicOperationHeader' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_BasicOperation_C, WBP_Tutorial_Controller_Wrapper) == 0x000300, "Member 'UWBP_Race_HUD_Sub_BasicOperation_C::WBP_Tutorial_Controller_Wrapper' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_BasicOperation_C, bIsVisible) == 0x000308, "Member 'UWBP_Race_HUD_Sub_BasicOperation_C::bIsVisible' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_BasicOperation_C, CurrentTutorialAction) == 0x000309, "Member 'UWBP_Race_HUD_Sub_BasicOperation_C::CurrentTutorialAction' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_BasicOperation_C, bSuccess) == 0x00030A, "Member 'UWBP_Race_HUD_Sub_BasicOperation_C::bSuccess' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_BasicOperation_C, SuccessedTutorialActions) == 0x000310, "Member 'UWBP_Race_HUD_Sub_BasicOperation_C::SuccessedTutorialActions' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_HUD_Sub_BasicOperation_C;
 
 }
 

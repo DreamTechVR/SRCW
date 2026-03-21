@@ -21,9 +21,7 @@ struct BPI_UnionGameInstance_C_GetVCSRevisionNumIF final
 public:
 	int32                                         RevisionNum;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPI_UnionGameInstance_C_GetVCSRevisionNumIF) == 0x000004, "Wrong alignment on BPI_UnionGameInstance_C_GetVCSRevisionNumIF");
-static_assert(sizeof(BPI_UnionGameInstance_C_GetVCSRevisionNumIF) == 0x000004, "Wrong size on BPI_UnionGameInstance_C_GetVCSRevisionNumIF");
-static_assert(offsetof(BPI_UnionGameInstance_C_GetVCSRevisionNumIF, RevisionNum) == 0x000000, "Member 'BPI_UnionGameInstance_C_GetVCSRevisionNumIF::RevisionNum' has a wrong offset!");
+DUMPER7_ASSERTS_BPI_UnionGameInstance_C_GetVCSRevisionNumIF;
 
 // Function BPI_UnionGameInstance.BPI_UnionGameInstance_C.GetVCSRevisionStrIF
 // 0x0010 (0x0010 - 0x0000)
@@ -32,9 +30,7 @@ struct BPI_UnionGameInstance_C_GetVCSRevisionStrIF final
 public:
 	class FString                                 VCSStr;                                            // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPI_UnionGameInstance_C_GetVCSRevisionStrIF) == 0x000008, "Wrong alignment on BPI_UnionGameInstance_C_GetVCSRevisionStrIF");
-static_assert(sizeof(BPI_UnionGameInstance_C_GetVCSRevisionStrIF) == 0x000010, "Wrong size on BPI_UnionGameInstance_C_GetVCSRevisionStrIF");
-static_assert(offsetof(BPI_UnionGameInstance_C_GetVCSRevisionStrIF, VCSStr) == 0x000000, "Member 'BPI_UnionGameInstance_C_GetVCSRevisionStrIF::VCSStr' has a wrong offset!");
+DUMPER7_ASSERTS_BPI_UnionGameInstance_C_GetVCSRevisionStrIF;
 
 }
 

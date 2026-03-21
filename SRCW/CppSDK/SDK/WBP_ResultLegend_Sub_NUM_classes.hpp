@@ -10,6 +10,7 @@
 
 #include "Basic.hpp"
 
+#include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
 
 
@@ -17,37 +18,38 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_ResultLegend_Sub_NUM.WBP_ResultLegend_Sub_NUM_C
-// 0x0028 (0x0308 - 0x02E0)
+// 0x0038 (0x0318 - 0x02E0)
 class UWBP_ResultLegend_Sub_NUM_C final : public UUserWidget
 {
 public:
 	class UImage*                                 Grade_1000;                                        // 0x02E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Grade_0001;                                        // 0x02E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Grade_0010;                                        // 0x02F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Grade_0100;                                        // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         NUM_Grade;                                         // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Grade_10000;                                       // 0x02E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Grade_100000;                                      // 0x02F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Grade_0001;                                        // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Grade_0010;                                        // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Grade_0100;                                        // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         NUM_Grade;                                         // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void SetRateNumber(int32 InRate);
 	void SetRateOnce(int32 InRate, class UImage* InRateGradeTexture);
+	void SetRateVisibilityForBackground(int32 InRate);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ResultLegend_Sub_NUM_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ResultLegend_Sub_NUM_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ResultLegend_Sub_NUM_C")
 	}
 	static class UWBP_ResultLegend_Sub_NUM_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ResultLegend_Sub_NUM_C>();
 	}
 };
-static_assert(alignof(UWBP_ResultLegend_Sub_NUM_C) == 0x000008, "Wrong alignment on UWBP_ResultLegend_Sub_NUM_C");
-static_assert(sizeof(UWBP_ResultLegend_Sub_NUM_C) == 0x000308, "Wrong size on UWBP_ResultLegend_Sub_NUM_C");
-static_assert(offsetof(UWBP_ResultLegend_Sub_NUM_C, Grade_1000) == 0x0002E0, "Member 'UWBP_ResultLegend_Sub_NUM_C::Grade_1000' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultLegend_Sub_NUM_C, Grade_0001) == 0x0002E8, "Member 'UWBP_ResultLegend_Sub_NUM_C::Grade_0001' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultLegend_Sub_NUM_C, Grade_0010) == 0x0002F0, "Member 'UWBP_ResultLegend_Sub_NUM_C::Grade_0010' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultLegend_Sub_NUM_C, Grade_0100) == 0x0002F8, "Member 'UWBP_ResultLegend_Sub_NUM_C::Grade_0100' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultLegend_Sub_NUM_C, NUM_Grade) == 0x000300, "Member 'UWBP_ResultLegend_Sub_NUM_C::NUM_Grade' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ResultLegend_Sub_NUM_C;
 
 }
 

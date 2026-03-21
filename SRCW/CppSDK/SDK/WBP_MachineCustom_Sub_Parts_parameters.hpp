@@ -24,11 +24,7 @@ public:
 	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_Parts_C_ExecuteUbergraph_WBP_MachineCustom_Sub_Parts) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_Parts_C_ExecuteUbergraph_WBP_MachineCustom_Sub_Parts");
-static_assert(sizeof(WBP_MachineCustom_Sub_Parts_C_ExecuteUbergraph_WBP_MachineCustom_Sub_Parts) == 0x000018, "Wrong size on WBP_MachineCustom_Sub_Parts_C_ExecuteUbergraph_WBP_MachineCustom_Sub_Parts");
-static_assert(offsetof(WBP_MachineCustom_Sub_Parts_C_ExecuteUbergraph_WBP_MachineCustom_Sub_Parts, EntryPoint) == 0x000000, "Member 'WBP_MachineCustom_Sub_Parts_C_ExecuteUbergraph_WBP_MachineCustom_Sub_Parts::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Parts_C_ExecuteUbergraph_WBP_MachineCustom_Sub_Parts, CallFunc_SlotAsCanvasSlot_ReturnValue) == 0x000008, "Member 'WBP_MachineCustom_Sub_Parts_C_ExecuteUbergraph_WBP_MachineCustom_Sub_Parts::CallFunc_SlotAsCanvasSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Parts_C_ExecuteUbergraph_WBP_MachineCustom_Sub_Parts, K2Node_Event_IsDesignTime) == 0x000010, "Member 'WBP_MachineCustom_Sub_Parts_C_ExecuteUbergraph_WBP_MachineCustom_Sub_Parts::K2Node_Event_IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_Parts_C_ExecuteUbergraph_WBP_MachineCustom_Sub_Parts;
 
 // Function WBP_MachineCustom_Sub_Parts.WBP_MachineCustom_Sub_Parts_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -37,9 +33,7 @@ struct WBP_MachineCustom_Sub_Parts_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_Parts_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_MachineCustom_Sub_Parts_C_PreConstruct");
-static_assert(sizeof(WBP_MachineCustom_Sub_Parts_C_PreConstruct) == 0x000001, "Wrong size on WBP_MachineCustom_Sub_Parts_C_PreConstruct");
-static_assert(offsetof(WBP_MachineCustom_Sub_Parts_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_MachineCustom_Sub_Parts_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_Parts_C_PreConstruct;
 
 // Function WBP_MachineCustom_Sub_Parts.WBP_MachineCustom_Sub_Parts_C.OnCreateRewardDialog
 // 0x0028 (0x0028 - 0x0000)
@@ -53,13 +47,7 @@ public:
 	class UWBP_DonpaTicketApp_C*                  CallFunc_Create_ReturnValue;                       // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_Parts_C_OnCreateRewardDialog) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_Parts_C_OnCreateRewardDialog");
-static_assert(sizeof(WBP_MachineCustom_Sub_Parts_C_OnCreateRewardDialog) == 0x000028, "Wrong size on WBP_MachineCustom_Sub_Parts_C_OnCreateRewardDialog");
-static_assert(offsetof(WBP_MachineCustom_Sub_Parts_C_OnCreateRewardDialog, ReturnValue) == 0x000000, "Member 'WBP_MachineCustom_Sub_Parts_C_OnCreateRewardDialog::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Parts_C_OnCreateRewardDialog, CallFunc_MakeLiteralByte_ReturnValue) == 0x000008, "Member 'WBP_MachineCustom_Sub_Parts_C_OnCreateRewardDialog::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Parts_C_OnCreateRewardDialog, CallFunc_GetPlayerController_ReturnValue) == 0x000010, "Member 'WBP_MachineCustom_Sub_Parts_C_OnCreateRewardDialog::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Parts_C_OnCreateRewardDialog, CallFunc_Create_ReturnValue) == 0x000018, "Member 'WBP_MachineCustom_Sub_Parts_C_OnCreateRewardDialog::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_Parts_C_OnCreateRewardDialog, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000020, "Member 'WBP_MachineCustom_Sub_Parts_C_OnCreateRewardDialog::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_Parts_C_OnCreateRewardDialog;
 
 }
 

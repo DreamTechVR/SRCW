@@ -35,17 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_HitTestBtn_C">();
+		BP_STATIC_CLASS_IMPL("WBP_HitTestBtn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_HitTestBtn_C")
 	}
 	static class UWBP_HitTestBtn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_HitTestBtn_C>();
 	}
 };
-static_assert(alignof(UWBP_HitTestBtn_C) == 0x000008, "Wrong alignment on UWBP_HitTestBtn_C");
-static_assert(sizeof(UWBP_HitTestBtn_C) == 0x000490, "Wrong size on UWBP_HitTestBtn_C");
-static_assert(offsetof(UWBP_HitTestBtn_C, UberGraphFrame) == 0x000480, "Member 'UWBP_HitTestBtn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_HitTestBtn_C, BG) == 0x000488, "Member 'UWBP_HitTestBtn_C::BG' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_HitTestBtn_C;
 
 }
 

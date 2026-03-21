@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -47,21 +47,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_RaceResultGhostEnd_C">();
+		BP_STATIC_CLASS_IMPL("BPC_RaceResultGhostEnd_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_RaceResultGhostEnd_C")
 	}
 	static class UBPC_RaceResultGhostEnd_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_RaceResultGhostEnd_C>();
 	}
 };
-static_assert(alignof(UBPC_RaceResultGhostEnd_C) == 0x000008, "Wrong alignment on UBPC_RaceResultGhostEnd_C");
-static_assert(sizeof(UBPC_RaceResultGhostEnd_C) == 0x000130, "Wrong size on UBPC_RaceResultGhostEnd_C");
-static_assert(offsetof(UBPC_RaceResultGhostEnd_C, UberGraphFrame) == 0x000108, "Member 'UBPC_RaceResultGhostEnd_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceResultGhostEnd_C, RequestHandle) == 0x000110, "Member 'UBPC_RaceResultGhostEnd_C::RequestHandle' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceResultGhostEnd_C, NextRaceResultSequenceState) == 0x000114, "Member 'UBPC_RaceResultGhostEnd_C::NextRaceResultSequenceState' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceResultGhostEnd_C, GhostResultUploadActor) == 0x000118, "Member 'UBPC_RaceResultGhostEnd_C::GhostResultUploadActor' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceResultGhostEnd_C, PopupWindow) == 0x000120, "Member 'UBPC_RaceResultGhostEnd_C::PopupWindow' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceResultGhostEnd_C, CurrentStageId) == 0x000128, "Member 'UBPC_RaceResultGhostEnd_C::CurrentStageId' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_RaceResultGhostEnd_C;
 
 }
 

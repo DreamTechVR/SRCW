@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "UnionRun_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -72,34 +72,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_StartingLights_C">();
+		BP_STATIC_CLASS_IMPL("BP_StartingLights_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_StartingLights_C")
 	}
 	static class ABP_StartingLights_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_StartingLights_C>();
 	}
 };
-static_assert(alignof(ABP_StartingLights_C) == 0x000008, "Wrong alignment on ABP_StartingLights_C");
-static_assert(sizeof(ABP_StartingLights_C) == 0x000380, "Wrong size on ABP_StartingLights_C");
-static_assert(offsetof(ABP_StartingLights_C, UberGraphFrame) == 0x0002A0, "Member 'ABP_StartingLights_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_StartingLights_C, Atom) == 0x0002A8, "Member 'ABP_StartingLights_C::Atom' has a wrong offset!");
-static_assert(offsetof(ABP_StartingLights_C, DelayStarted_Rate_68AD9B2D45FF9BAE383C3A80276A4067) == 0x0002B0, "Member 'ABP_StartingLights_C::DelayStarted_Rate_68AD9B2D45FF9BAE383C3A80276A4067' has a wrong offset!");
-static_assert(offsetof(ABP_StartingLights_C, DelayStarted__Direction_68AD9B2D45FF9BAE383C3A80276A4067) == 0x0002B4, "Member 'ABP_StartingLights_C::DelayStarted__Direction_68AD9B2D45FF9BAE383C3A80276A4067' has a wrong offset!");
-static_assert(offsetof(ABP_StartingLights_C, DelayStarted) == 0x0002B8, "Member 'ABP_StartingLights_C::DelayStarted' has a wrong offset!");
-static_assert(offsetof(ABP_StartingLights_C, Count3) == 0x0002C0, "Member 'ABP_StartingLights_C::Count3' has a wrong offset!");
-static_assert(offsetof(ABP_StartingLights_C, Count2) == 0x0002C8, "Member 'ABP_StartingLights_C::Count2' has a wrong offset!");
-static_assert(offsetof(ABP_StartingLights_C, Count1) == 0x0002D0, "Member 'ABP_StartingLights_C::Count1' has a wrong offset!");
-static_assert(offsetof(ABP_StartingLights_C, CountMaterials) == 0x0002D8, "Member 'ABP_StartingLights_C::CountMaterials' has a wrong offset!");
-static_assert(offsetof(ABP_StartingLights_C, SkelRef) == 0x0002E8, "Member 'ABP_StartingLights_C::SkelRef' has a wrong offset!");
-static_assert(offsetof(ABP_StartingLights_C, OnStartDash) == 0x000310, "Member 'ABP_StartingLights_C::OnStartDash' has a wrong offset!");
-static_assert(offsetof(ABP_StartingLights_C, bPlayerIndexZero) == 0x000320, "Member 'ABP_StartingLights_C::bPlayerIndexZero' has a wrong offset!");
-static_assert(offsetof(ABP_StartingLights_C, Forward) == 0x000328, "Member 'ABP_StartingLights_C::Forward' has a wrong offset!");
-static_assert(offsetof(ABP_StartingLights_C, Up) == 0x000330, "Member 'ABP_StartingLights_C::Up' has a wrong offset!");
-static_assert(offsetof(ABP_StartingLights_C, Left) == 0x000338, "Member 'ABP_StartingLights_C::Left' has a wrong offset!");
-static_assert(offsetof(ABP_StartingLights_C, TargetCamera) == 0x000340, "Member 'ABP_StartingLights_C::TargetCamera' has a wrong offset!");
-static_assert(offsetof(ABP_StartingLights_C, NewVar_0) == 0x000348, "Member 'ABP_StartingLights_C::NewVar_0' has a wrong offset!");
-static_assert(offsetof(ABP_StartingLights_C, NewVar_1) == 0x000360, "Member 'ABP_StartingLights_C::NewVar_1' has a wrong offset!");
-static_assert(offsetof(ABP_StartingLights_C, Racer_Actor) == 0x000378, "Member 'ABP_StartingLights_C::Racer_Actor' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_StartingLights_C;
 
 }
 

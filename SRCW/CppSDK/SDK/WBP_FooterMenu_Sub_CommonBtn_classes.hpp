@@ -10,9 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
-#include "UnionUI_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -20,50 +19,51 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_FooterMenu_Sub_CommonBtn.WBP_FooterMenu_Sub_CommonBtn_C
-// 0x0028 (0x0360 - 0x0338)
+// 0x0020 (0x0390 - 0x0370)
 class UWBP_FooterMenu_Sub_CommonBtn_C final : public UCommonMenuFooterButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0338(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Btn_Active;                                        // 0x0340(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Btn_Push;                                          // 0x0348(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UUnionRichTextBlock*                    TXT_BtnName;                                       // 0x0350(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	int32                                         Index_0;                                           // 0x0358(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EUIButtonIconType                             ButtonIconType;                                    // 0x035C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0370(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Btn_Active;                                        // 0x0378(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Btn_Push;                                          // 0x0380(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_BtnName;                                       // 0x0388(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void Construct();
 	void ExecuteUbergraph_WBP_FooterMenu_Sub_CommonBtn(int32 EntryPoint);
 	void OnAcceptKeyPressed();
+	void OnAcceptKeyReleased();
 	void OnBackKeyPressed();
+	void OnBackKeyReleased();
+	void OnChangeInputRegistration(ESlateVisibility InVisibility);
 	void OnFaceButtonLeftPressed();
+	void OnFaceButtonLeftReleased();
 	void OnFaceButtonTopPressed();
+	void OnFaceButtonTopReleased();
 	void OnLeftShoulderPressed();
+	void OnLeftShoulderReleased();
 	void OnRightShoulderPressed();
-	void OnVisibilityChanged_イベント(ESlateVisibility InVisibility);
+	void OnRightShoulderReleased();
 	void PreConstruct(bool IsDesignTime);
 	void SetIconGauge(float InGaugeParam);
-	void SetIconType(int32 InButtonIconIndex, EUIButtonIconType InButtonIconType);
 	void SetText(const class FText& InText);
+	void SetupButtonIcon();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_FooterMenu_Sub_CommonBtn_C">();
+		BP_STATIC_CLASS_IMPL("WBP_FooterMenu_Sub_CommonBtn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_FooterMenu_Sub_CommonBtn_C")
 	}
 	static class UWBP_FooterMenu_Sub_CommonBtn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_FooterMenu_Sub_CommonBtn_C>();
 	}
 };
-static_assert(alignof(UWBP_FooterMenu_Sub_CommonBtn_C) == 0x000008, "Wrong alignment on UWBP_FooterMenu_Sub_CommonBtn_C");
-static_assert(sizeof(UWBP_FooterMenu_Sub_CommonBtn_C) == 0x000360, "Wrong size on UWBP_FooterMenu_Sub_CommonBtn_C");
-static_assert(offsetof(UWBP_FooterMenu_Sub_CommonBtn_C, UberGraphFrame) == 0x000338, "Member 'UWBP_FooterMenu_Sub_CommonBtn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_FooterMenu_Sub_CommonBtn_C, Btn_Active) == 0x000340, "Member 'UWBP_FooterMenu_Sub_CommonBtn_C::Btn_Active' has a wrong offset!");
-static_assert(offsetof(UWBP_FooterMenu_Sub_CommonBtn_C, Btn_Push) == 0x000348, "Member 'UWBP_FooterMenu_Sub_CommonBtn_C::Btn_Push' has a wrong offset!");
-static_assert(offsetof(UWBP_FooterMenu_Sub_CommonBtn_C, TXT_BtnName) == 0x000350, "Member 'UWBP_FooterMenu_Sub_CommonBtn_C::TXT_BtnName' has a wrong offset!");
-static_assert(offsetof(UWBP_FooterMenu_Sub_CommonBtn_C, Index_0) == 0x000358, "Member 'UWBP_FooterMenu_Sub_CommonBtn_C::Index_0' has a wrong offset!");
-static_assert(offsetof(UWBP_FooterMenu_Sub_CommonBtn_C, ButtonIconType) == 0x00035C, "Member 'UWBP_FooterMenu_Sub_CommonBtn_C::ButtonIconType' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_FooterMenu_Sub_CommonBtn_C;
 
 }
 

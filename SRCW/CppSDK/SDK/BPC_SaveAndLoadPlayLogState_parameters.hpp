@@ -24,11 +24,7 @@ public:
 	class UAppSequenceLogManagerSubsystem*        CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_InDeltaTime;                          // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_SaveAndLoadPlayLogState_C_ExecuteUbergraph_BPC_SaveAndLoadPlayLogState) == 0x000008, "Wrong alignment on BPC_SaveAndLoadPlayLogState_C_ExecuteUbergraph_BPC_SaveAndLoadPlayLogState");
-static_assert(sizeof(BPC_SaveAndLoadPlayLogState_C_ExecuteUbergraph_BPC_SaveAndLoadPlayLogState) == 0x000018, "Wrong size on BPC_SaveAndLoadPlayLogState_C_ExecuteUbergraph_BPC_SaveAndLoadPlayLogState");
-static_assert(offsetof(BPC_SaveAndLoadPlayLogState_C_ExecuteUbergraph_BPC_SaveAndLoadPlayLogState, EntryPoint) == 0x000000, "Member 'BPC_SaveAndLoadPlayLogState_C_ExecuteUbergraph_BPC_SaveAndLoadPlayLogState::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BPC_SaveAndLoadPlayLogState_C_ExecuteUbergraph_BPC_SaveAndLoadPlayLogState, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000008, "Member 'BPC_SaveAndLoadPlayLogState_C_ExecuteUbergraph_BPC_SaveAndLoadPlayLogState::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_SaveAndLoadPlayLogState_C_ExecuteUbergraph_BPC_SaveAndLoadPlayLogState, K2Node_Event_InDeltaTime) == 0x000010, "Member 'BPC_SaveAndLoadPlayLogState_C_ExecuteUbergraph_BPC_SaveAndLoadPlayLogState::K2Node_Event_InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_SaveAndLoadPlayLogState_C_ExecuteUbergraph_BPC_SaveAndLoadPlayLogState;
 
 // Function BPC_SaveAndLoadPlayLogState.BPC_SaveAndLoadPlayLogState_C.OnUpdateState
 // 0x0004 (0x0004 - 0x0000)
@@ -37,9 +33,7 @@ struct BPC_SaveAndLoadPlayLogState_C_OnUpdateState final
 public:
 	float                                         InDeltaTime;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_SaveAndLoadPlayLogState_C_OnUpdateState) == 0x000004, "Wrong alignment on BPC_SaveAndLoadPlayLogState_C_OnUpdateState");
-static_assert(sizeof(BPC_SaveAndLoadPlayLogState_C_OnUpdateState) == 0x000004, "Wrong size on BPC_SaveAndLoadPlayLogState_C_OnUpdateState");
-static_assert(offsetof(BPC_SaveAndLoadPlayLogState_C_OnUpdateState, InDeltaTime) == 0x000000, "Member 'BPC_SaveAndLoadPlayLogState_C_OnUpdateState::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_SaveAndLoadPlayLogState_C_OnUpdateState;
 
 }
 

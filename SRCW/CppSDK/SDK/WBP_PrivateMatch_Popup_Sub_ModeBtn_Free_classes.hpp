@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
 #include "UnionUI_structs.hpp"
-#include "UNION_classes.hpp"
 
 
 namespace SDK
@@ -60,29 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C">();
+		BP_STATIC_CLASS_IMPL("WBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C")
 	}
 	static class UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C>();
 	}
 };
-static_assert(alignof(UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C) == 0x000008, "Wrong alignment on UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C");
-static_assert(sizeof(UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C) == 0x0004F0, "Wrong size on UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C, UberGraphFrame) == 0x000480, "Member 'UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C, Btn_Active_Out) == 0x000488, "Member 'UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C::Btn_Active_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C, Btn_Select_Out) == 0x000490, "Member 'UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C::Btn_Select_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C, Btn_Select_to_Active) == 0x000498, "Member 'UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C::Btn_Select_to_Active' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C, Btn_Active_to_Select) == 0x0004A0, "Member 'UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C::Btn_Active_to_Select' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C, Btn_Select_Loop) == 0x0004A8, "Member 'UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C::Btn_Select_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C, Btn_Active_Loop) == 0x0004B0, "Member 'UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C::Btn_Active_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C, Arrow_Left_02) == 0x0004B8, "Member 'UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C::Arrow_Left_02' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C, Corsor) == 0x0004C0, "Member 'UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C::Corsor' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C, MouseInteraction) == 0x0004C8, "Member 'UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C::MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C, RaceFlagWave) == 0x0004D0, "Member 'UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C::RaceFlagWave' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C, TXT_BtnTitle) == 0x0004D8, "Member 'UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C::TXT_BtnTitle' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C, TXT_Detail) == 0x0004E0, "Member 'UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C::TXT_Detail' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C, Decision_Sound) == 0x0004E8, "Member 'UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C::Decision_Sound' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_PrivateMatch_Popup_Sub_ModeBtn_Free_C;
 
 }
 

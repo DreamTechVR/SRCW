@@ -29,7 +29,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPI_SLCharaMachineSelect_C">();
+		BP_STATIC_CLASS_IMPL("BPI_SLCharaMachineSelect_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPI_SLCharaMachineSelect_C")
 	}
 	static class IBPI_SLCharaMachineSelect_C* GetDefaultObj()
 	{
@@ -45,8 +49,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IBPI_SLCharaMachineSelect_C) == 0x000001, "Wrong alignment on IBPI_SLCharaMachineSelect_C");
-static_assert(sizeof(IBPI_SLCharaMachineSelect_C) == 0x000001, "Wrong size on IBPI_SLCharaMachineSelect_C");
+DUMPER7_ASSERTS_IBPI_SLCharaMachineSelect_C;
 
 }
 

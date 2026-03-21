@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BPC_RaceSequenceStateRivalTeamEliminateResult.BPC_RaceSequenceStateRivalTeamEliminateResult_C
-// 0x0000 (0x0220 - 0x0220)
+// 0x0000 (0x0228 - 0x0228)
 class UBPC_RaceSequenceStateRivalTeamEliminateResult_C final : public URaceSequenceStateRivalTeamEliminateResult
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_RaceSequenceStateRivalTeamEliminateResult_C">();
+		BP_STATIC_CLASS_IMPL("BPC_RaceSequenceStateRivalTeamEliminateResult_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_RaceSequenceStateRivalTeamEliminateResult_C")
 	}
 	static class UBPC_RaceSequenceStateRivalTeamEliminateResult_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_RaceSequenceStateRivalTeamEliminateResult_C>();
 	}
 };
-static_assert(alignof(UBPC_RaceSequenceStateRivalTeamEliminateResult_C) == 0x000008, "Wrong alignment on UBPC_RaceSequenceStateRivalTeamEliminateResult_C");
-static_assert(sizeof(UBPC_RaceSequenceStateRivalTeamEliminateResult_C) == 0x000220, "Wrong size on UBPC_RaceSequenceStateRivalTeamEliminateResult_C");
+DUMPER7_ASSERTS_UBPC_RaceSequenceStateRivalTeamEliminateResult_C;
 
 }
 

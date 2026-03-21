@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UnionRun_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
 
@@ -50,27 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MachineSelect_Sub_Header_MachineType_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MachineSelect_Sub_Header_MachineType_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MachineSelect_Sub_Header_MachineType_C")
 	}
 	static class UWBP_MachineSelect_Sub_Header_MachineType_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MachineSelect_Sub_Header_MachineType_C>();
 	}
 };
-static_assert(alignof(UWBP_MachineSelect_Sub_Header_MachineType_C) == 0x000008, "Wrong alignment on UWBP_MachineSelect_Sub_Header_MachineType_C");
-static_assert(sizeof(UWBP_MachineSelect_Sub_Header_MachineType_C) == 0x000358, "Wrong size on UWBP_MachineSelect_Sub_Header_MachineType_C");
-static_assert(offsetof(UWBP_MachineSelect_Sub_Header_MachineType_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_MachineSelect_Sub_Header_MachineType_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_Header_MachineType_C, DSP_Icon_New) == 0x0002E8, "Member 'UWBP_MachineSelect_Sub_Header_MachineType_C::DSP_Icon_New' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_Header_MachineType_C, MLC_TypeColor) == 0x0002F0, "Member 'UWBP_MachineSelect_Sub_Header_MachineType_C::MLC_TypeColor' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_Header_MachineType_C, TXT_MachineType) == 0x0002F8, "Member 'UWBP_MachineSelect_Sub_Header_MachineType_C::TXT_MachineType' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_Header_MachineType_C, Machine_Type) == 0x000300, "Member 'UWBP_MachineSelect_Sub_Header_MachineType_C::Machine_Type' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_Header_MachineType_C, bGadget) == 0x000301, "Member 'UWBP_MachineSelect_Sub_Header_MachineType_C::bGadget' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_Header_MachineType_C, GadgetCategoty) == 0x000302, "Member 'UWBP_MachineSelect_Sub_Header_MachineType_C::GadgetCategoty' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_Header_MachineType_C, TEXT_CarStatusSpeed) == 0x000308, "Member 'UWBP_MachineSelect_Sub_Header_MachineType_C::TEXT_CarStatusSpeed' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_Header_MachineType_C, TEXT_CarStatusAccele) == 0x000318, "Member 'UWBP_MachineSelect_Sub_Header_MachineType_C::TEXT_CarStatusAccele' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_Header_MachineType_C, TEXT_CarStatusHandle) == 0x000328, "Member 'UWBP_MachineSelect_Sub_Header_MachineType_C::TEXT_CarStatusHandle' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_Header_MachineType_C, TEXT_CarStatusPower) == 0x000338, "Member 'UWBP_MachineSelect_Sub_Header_MachineType_C::TEXT_CarStatusPower' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_Header_MachineType_C, TEXT_CarStatusBoost) == 0x000348, "Member 'UWBP_MachineSelect_Sub_Header_MachineType_C::TEXT_CarStatusBoost' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MachineSelect_Sub_Header_MachineType_C;
 
 }
 

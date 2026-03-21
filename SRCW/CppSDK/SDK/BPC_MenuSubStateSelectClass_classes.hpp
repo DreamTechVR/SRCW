@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK
@@ -75,27 +75,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_MenuSubStateSelectClass_C">();
+		BP_STATIC_CLASS_IMPL("BPC_MenuSubStateSelectClass_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_MenuSubStateSelectClass_C")
 	}
 	static class UBPC_MenuSubStateSelectClass_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_MenuSubStateSelectClass_C>();
 	}
 };
-static_assert(alignof(UBPC_MenuSubStateSelectClass_C) == 0x000008, "Wrong alignment on UBPC_MenuSubStateSelectClass_C");
-static_assert(sizeof(UBPC_MenuSubStateSelectClass_C) == 0x0001B0, "Wrong size on UBPC_MenuSubStateSelectClass_C");
-static_assert(offsetof(UBPC_MenuSubStateSelectClass_C, UberGraphFrame) == 0x000128, "Member 'UBPC_MenuSubStateSelectClass_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuSubStateSelectClass_C, OwnerGrandPrixSequence) == 0x000130, "Member 'UBPC_MenuSubStateSelectClass_C::OwnerGrandPrixSequence' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuSubStateSelectClass_C, SelectClassClass) == 0x000138, "Member 'UBPC_MenuSubStateSelectClass_C::SelectClassClass' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuSubStateSelectClass_C, SelectClass) == 0x000160, "Member 'UBPC_MenuSubStateSelectClass_C::SelectClass' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuSubStateSelectClass_C, bCaptureUpdate) == 0x000168, "Member 'UBPC_MenuSubStateSelectClass_C::bCaptureUpdate' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuSubStateSelectClass_C, CourseSelectWidgetClassRef) == 0x000170, "Member 'UBPC_MenuSubStateSelectClass_C::CourseSelectWidgetClassRef' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuSubStateSelectClass_C, bFirstFocus) == 0x000198, "Member 'UBPC_MenuSubStateSelectClass_C::bFirstFocus' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuSubStateSelectClass_C, bBackToCourseSelect) == 0x000199, "Member 'UBPC_MenuSubStateSelectClass_C::bBackToCourseSelect' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuSubStateSelectClass_C, SubInputReciever) == 0x0001A0, "Member 'UBPC_MenuSubStateSelectClass_C::SubInputReciever' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuSubStateSelectClass_C, bRightShoulderPressed) == 0x0001A8, "Member 'UBPC_MenuSubStateSelectClass_C::bRightShoulderPressed' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuSubStateSelectClass_C, bLeftShoulderPressed) == 0x0001A9, "Member 'UBPC_MenuSubStateSelectClass_C::bLeftShoulderPressed' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuSubStateSelectClass_C, bStartPressed) == 0x0001AA, "Member 'UBPC_MenuSubStateSelectClass_C::bStartPressed' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_MenuSubStateSelectClass_C;
 
 }
 

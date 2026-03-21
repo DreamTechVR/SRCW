@@ -28,16 +28,7 @@ public:
 	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ChallengeNotice_Window_C_ExecuteUbergraph_WBP_ChallengeNotice_Window) == 0x000008, "Wrong alignment on WBP_ChallengeNotice_Window_C_ExecuteUbergraph_WBP_ChallengeNotice_Window");
-static_assert(sizeof(WBP_ChallengeNotice_Window_C_ExecuteUbergraph_WBP_ChallengeNotice_Window) == 0x000028, "Wrong size on WBP_ChallengeNotice_Window_C_ExecuteUbergraph_WBP_ChallengeNotice_Window");
-static_assert(offsetof(WBP_ChallengeNotice_Window_C_ExecuteUbergraph_WBP_ChallengeNotice_Window, EntryPoint) == 0x000000, "Member 'WBP_ChallengeNotice_Window_C_ExecuteUbergraph_WBP_ChallengeNotice_Window::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_ChallengeNotice_Window_C_ExecuteUbergraph_WBP_ChallengeNotice_Window, CallFunc_MakeLiteralInt_ReturnValue) == 0x000004, "Member 'WBP_ChallengeNotice_Window_C_ExecuteUbergraph_WBP_ChallengeNotice_Window::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ChallengeNotice_Window_C_ExecuteUbergraph_WBP_ChallengeNotice_Window, CallFunc_Create_ReturnValue) == 0x000008, "Member 'WBP_ChallengeNotice_Window_C_ExecuteUbergraph_WBP_ChallengeNotice_Window::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ChallengeNotice_Window_C_ExecuteUbergraph_WBP_ChallengeNotice_Window, K2Node_Event_ChallengeId) == 0x000010, "Member 'WBP_ChallengeNotice_Window_C_ExecuteUbergraph_WBP_ChallengeNotice_Window::K2Node_Event_ChallengeId' has a wrong offset!");
-static_assert(offsetof(WBP_ChallengeNotice_Window_C_ExecuteUbergraph_WBP_ChallengeNotice_Window, K2Node_Event_Time) == 0x000014, "Member 'WBP_ChallengeNotice_Window_C_ExecuteUbergraph_WBP_ChallengeNotice_Window::K2Node_Event_Time' has a wrong offset!");
-static_assert(offsetof(WBP_ChallengeNotice_Window_C_ExecuteUbergraph_WBP_ChallengeNotice_Window, CallFunc_AddChildToWrapBox_ReturnValue) == 0x000018, "Member 'WBP_ChallengeNotice_Window_C_ExecuteUbergraph_WBP_ChallengeNotice_Window::CallFunc_AddChildToWrapBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ChallengeNotice_Window_C_ExecuteUbergraph_WBP_ChallengeNotice_Window, CallFunc_GetChildrenCount_ReturnValue) == 0x000020, "Member 'WBP_ChallengeNotice_Window_C_ExecuteUbergraph_WBP_ChallengeNotice_Window::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ChallengeNotice_Window_C_ExecuteUbergraph_WBP_ChallengeNotice_Window, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000024, "Member 'WBP_ChallengeNotice_Window_C_ExecuteUbergraph_WBP_ChallengeNotice_Window::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ChallengeNotice_Window_C_ExecuteUbergraph_WBP_ChallengeNotice_Window;
 
 // Function WBP_ChallengeNotice_Window.WBP_ChallengeNotice_Window_C.SpawnChallengeNotice
 // 0x0008 (0x0008 - 0x0000)
@@ -47,10 +38,7 @@ public:
 	int32                                         ChallengeId;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Time;                                              // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ChallengeNotice_Window_C_SpawnChallengeNotice) == 0x000004, "Wrong alignment on WBP_ChallengeNotice_Window_C_SpawnChallengeNotice");
-static_assert(sizeof(WBP_ChallengeNotice_Window_C_SpawnChallengeNotice) == 0x000008, "Wrong size on WBP_ChallengeNotice_Window_C_SpawnChallengeNotice");
-static_assert(offsetof(WBP_ChallengeNotice_Window_C_SpawnChallengeNotice, ChallengeId) == 0x000000, "Member 'WBP_ChallengeNotice_Window_C_SpawnChallengeNotice::ChallengeId' has a wrong offset!");
-static_assert(offsetof(WBP_ChallengeNotice_Window_C_SpawnChallengeNotice, Time) == 0x000004, "Member 'WBP_ChallengeNotice_Window_C_SpawnChallengeNotice::Time' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ChallengeNotice_Window_C_SpawnChallengeNotice;
 
 }
 

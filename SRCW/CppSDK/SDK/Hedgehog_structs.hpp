@@ -37,12 +37,7 @@ public:
 	struct FVector                                Velocity;                                          // 0x0040(0x0018)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                AngularVelocity;                                   // 0x0058(0x0018)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FGOCMovementTRData) == 0x000010, "Wrong alignment on FGOCMovementTRData");
-static_assert(sizeof(FGOCMovementTRData) == 0x000070, "Wrong size on FGOCMovementTRData");
-static_assert(offsetof(FGOCMovementTRData, Position) == 0x000000, "Member 'FGOCMovementTRData::Position' has a wrong offset!");
-static_assert(offsetof(FGOCMovementTRData, Rotation) == 0x000020, "Member 'FGOCMovementTRData::Rotation' has a wrong offset!");
-static_assert(offsetof(FGOCMovementTRData, Velocity) == 0x000040, "Member 'FGOCMovementTRData::Velocity' has a wrong offset!");
-static_assert(offsetof(FGOCMovementTRData, AngularVelocity) == 0x000058, "Member 'FGOCMovementTRData::AngularVelocity' has a wrong offset!");
+DUMPER7_ASSERTS_FGOCMovementTRData;
 
 // ScriptStruct Hedgehog.GOCMovementContextParam
 // 0x00E0 (0x00E0 - 0x0000)
@@ -52,10 +47,7 @@ public:
 	struct FGOCMovementTRData                     prev;                                              // 0x0000(0x0070)(Edit, BlueprintVisible, EditConst, NoDestructor, NativeAccessSpecifierPublic)
 	struct FGOCMovementTRData                     Current;                                           // 0x0070(0x0070)(Edit, BlueprintVisible, EditConst, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FGOCMovementContextParam) == 0x000010, "Wrong alignment on FGOCMovementContextParam");
-static_assert(sizeof(FGOCMovementContextParam) == 0x0000E0, "Wrong size on FGOCMovementContextParam");
-static_assert(offsetof(FGOCMovementContextParam, prev) == 0x000000, "Member 'FGOCMovementContextParam::prev' has a wrong offset!");
-static_assert(offsetof(FGOCMovementContextParam, Current) == 0x000070, "Member 'FGOCMovementContextParam::Current' has a wrong offset!");
+DUMPER7_ASSERTS_FGOCMovementContextParam;
 
 // ScriptStruct Hedgehog.HHPathConvertParam
 // 0x0030 (0x0030 - 0x0000)
@@ -64,8 +56,7 @@ struct alignas(0x08) FHHPathConvertParam final
 public:
 	uint8                                         Pad_0[0x30];                                       // 0x0000(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FHHPathConvertParam) == 0x000008, "Wrong alignment on FHHPathConvertParam");
-static_assert(sizeof(FHHPathConvertParam) == 0x000030, "Wrong size on FHHPathConvertParam");
+DUMPER7_ASSERTS_FHHPathConvertParam;
 
 // ScriptStruct Hedgehog.HHSplinePoint
 // 0x0068 (0x0068 - 0x0000)
@@ -79,13 +70,7 @@ public:
 	float                                         Distance;                                          // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FHHSplinePoint) == 0x000008, "Wrong alignment on FHHSplinePoint");
-static_assert(sizeof(FHHSplinePoint) == 0x000068, "Wrong size on FHHSplinePoint");
-static_assert(offsetof(FHHSplinePoint, Position) == 0x000000, "Member 'FHHSplinePoint::Position' has a wrong offset!");
-static_assert(offsetof(FHHSplinePoint, Rotation) == 0x000018, "Member 'FHHSplinePoint::Rotation' has a wrong offset!");
-static_assert(offsetof(FHHSplinePoint, Tangent) == 0x000030, "Member 'FHHSplinePoint::Tangent' has a wrong offset!");
-static_assert(offsetof(FHHSplinePoint, Normal) == 0x000048, "Member 'FHHSplinePoint::Normal' has a wrong offset!");
-static_assert(offsetof(FHHSplinePoint, Distance) == 0x000060, "Member 'FHHSplinePoint::Distance' has a wrong offset!");
+DUMPER7_ASSERTS_FHHSplinePoint;
 
 }
 

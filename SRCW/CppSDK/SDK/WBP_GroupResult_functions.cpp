@@ -335,19 +335,5 @@ void UWBP_GroupResult_C::Update()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-
-// Function WBP_GroupResult.WBP_GroupResult_C.UpdateUI
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_GroupResult_C::UpdateUI()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GroupResult_C", "UpdateUI");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
 }
 

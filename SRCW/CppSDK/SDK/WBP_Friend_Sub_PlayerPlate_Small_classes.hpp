@@ -35,19 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Friend_Sub_PlayerPlate_Small_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Friend_Sub_PlayerPlate_Small_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Friend_Sub_PlayerPlate_Small_C")
 	}
 	static class UWBP_Friend_Sub_PlayerPlate_Small_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Friend_Sub_PlayerPlate_Small_C>();
 	}
 };
-static_assert(alignof(UWBP_Friend_Sub_PlayerPlate_Small_C) == 0x000008, "Wrong alignment on UWBP_Friend_Sub_PlayerPlate_Small_C");
-static_assert(sizeof(UWBP_Friend_Sub_PlayerPlate_Small_C) == 0x0004A0, "Wrong size on UWBP_Friend_Sub_PlayerPlate_Small_C");
-static_assert(offsetof(UWBP_Friend_Sub_PlayerPlate_Small_C, UberGraphFrame) == 0x000480, "Member 'UWBP_Friend_Sub_PlayerPlate_Small_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_PlayerPlate_Small_C, PlayerPlate_Out) == 0x000488, "Member 'UWBP_Friend_Sub_PlayerPlate_Small_C::PlayerPlate_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_PlayerPlate_Small_C, PlayerPlate_Loop) == 0x000490, "Member 'UWBP_Friend_Sub_PlayerPlate_Small_C::PlayerPlate_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_PlayerPlate_Small_C, WBP_Friend_Sub_PlayerPlate) == 0x000498, "Member 'UWBP_Friend_Sub_PlayerPlate_Small_C::WBP_Friend_Sub_PlayerPlate' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Friend_Sub_PlayerPlate_Small_C;
 
 }
 

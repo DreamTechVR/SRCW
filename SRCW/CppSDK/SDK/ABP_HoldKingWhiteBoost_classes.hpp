@@ -23,15 +23,18 @@ class UABP_HoldKingWhiteBoost_C final : public UABPT_HoldItem_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABP_HoldKingWhiteBoost_C">();
+		BP_STATIC_CLASS_IMPL("ABP_HoldKingWhiteBoost_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABP_HoldKingWhiteBoost_C")
 	}
 	static class UABP_HoldKingWhiteBoost_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UABP_HoldKingWhiteBoost_C>();
 	}
 };
-static_assert(alignof(UABP_HoldKingWhiteBoost_C) == 0x000010, "Wrong alignment on UABP_HoldKingWhiteBoost_C");
-static_assert(sizeof(UABP_HoldKingWhiteBoost_C) == 0x001130, "Wrong size on UABP_HoldKingWhiteBoost_C");
+DUMPER7_ASSERTS_UABP_HoldKingWhiteBoost_C;
 
 }
 

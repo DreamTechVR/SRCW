@@ -49,25 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_StatusInfo_Sub_RaceRule_C">();
+		BP_STATIC_CLASS_IMPL("WBP_StatusInfo_Sub_RaceRule_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_StatusInfo_Sub_RaceRule_C")
 	}
 	static class UWBP_StatusInfo_Sub_RaceRule_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_StatusInfo_Sub_RaceRule_C>();
 	}
 };
-static_assert(alignof(UWBP_StatusInfo_Sub_RaceRule_C) == 0x000008, "Wrong alignment on UWBP_StatusInfo_Sub_RaceRule_C");
-static_assert(sizeof(UWBP_StatusInfo_Sub_RaceRule_C) == 0x000340, "Wrong size on UWBP_StatusInfo_Sub_RaceRule_C");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRule_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_StatusInfo_Sub_RaceRule_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRule_C, base) == 0x0002E8, "Member 'UWBP_StatusInfo_Sub_RaceRule_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRule_C, RaceFlag_Left) == 0x0002F0, "Member 'UWBP_StatusInfo_Sub_RaceRule_C::RaceFlag_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRule_C, RaceFlag_Right) == 0x0002F8, "Member 'UWBP_StatusInfo_Sub_RaceRule_C::RaceFlag_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRule_C, WBP_StatusInfo_Sub_RaceRuleTable_01) == 0x000300, "Member 'UWBP_StatusInfo_Sub_RaceRule_C::WBP_StatusInfo_Sub_RaceRuleTable_01' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRule_C, WBP_StatusInfo_Sub_RaceRuleTable_02) == 0x000308, "Member 'UWBP_StatusInfo_Sub_RaceRule_C::WBP_StatusInfo_Sub_RaceRuleTable_02' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRule_C, WBP_StatusInfo_Sub_RaceRuleTable_03) == 0x000310, "Member 'UWBP_StatusInfo_Sub_RaceRule_C::WBP_StatusInfo_Sub_RaceRuleTable_03' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRule_C, WBP_StatusInfo_Sub_RaceRuleTable_04) == 0x000318, "Member 'UWBP_StatusInfo_Sub_RaceRule_C::WBP_StatusInfo_Sub_RaceRuleTable_04' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRule_C, OnMouseHovered) == 0x000320, "Member 'UWBP_StatusInfo_Sub_RaceRule_C::OnMouseHovered' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_RaceRule_C, OnMouseClicked) == 0x000330, "Member 'UWBP_StatusInfo_Sub_RaceRule_C::OnMouseClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_StatusInfo_Sub_RaceRule_C;
 
 }
 

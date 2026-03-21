@@ -23,15 +23,18 @@ class ABP_ItemSplashObject_C final : public AItemSplashObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ItemSplashObject_C">();
+		BP_STATIC_CLASS_IMPL("BP_ItemSplashObject_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ItemSplashObject_C")
 	}
 	static class ABP_ItemSplashObject_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ItemSplashObject_C>();
 	}
 };
-static_assert(alignof(ABP_ItemSplashObject_C) == 0x000010, "Wrong alignment on ABP_ItemSplashObject_C");
-static_assert(sizeof(ABP_ItemSplashObject_C) == 0x000720, "Wrong size on ABP_ItemSplashObject_C");
+DUMPER7_ASSERTS_ABP_ItemSplashObject_C;
 
 }
 

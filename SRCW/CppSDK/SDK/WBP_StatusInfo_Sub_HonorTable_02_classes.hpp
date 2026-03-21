@@ -37,22 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_StatusInfo_Sub_HonorTable_02_C">();
+		BP_STATIC_CLASS_IMPL("WBP_StatusInfo_Sub_HonorTable_02_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_StatusInfo_Sub_HonorTable_02_C")
 	}
 	static class UWBP_StatusInfo_Sub_HonorTable_02_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_StatusInfo_Sub_HonorTable_02_C>();
 	}
 };
-static_assert(alignof(UWBP_StatusInfo_Sub_HonorTable_02_C) == 0x000008, "Wrong alignment on UWBP_StatusInfo_Sub_HonorTable_02_C");
-static_assert(sizeof(UWBP_StatusInfo_Sub_HonorTable_02_C) == 0x000318, "Wrong size on UWBP_StatusInfo_Sub_HonorTable_02_C");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorTable_02_C, base) == 0x0002E0, "Member 'UWBP_StatusInfo_Sub_HonorTable_02_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorTable_02_C, Base02) == 0x0002E8, "Member 'UWBP_StatusInfo_Sub_HonorTable_02_C::Base02' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorTable_02_C, Base02_1) == 0x0002F0, "Member 'UWBP_StatusInfo_Sub_HonorTable_02_C::Base02_1' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorTable_02_C, Base_Line) == 0x0002F8, "Member 'UWBP_StatusInfo_Sub_HonorTable_02_C::Base_Line' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorTable_02_C, DSP_Check) == 0x000300, "Member 'UWBP_StatusInfo_Sub_HonorTable_02_C::DSP_Check' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorTable_02_C, TXT_HeaderWin) == 0x000308, "Member 'UWBP_StatusInfo_Sub_HonorTable_02_C::TXT_HeaderWin' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorTable_02_C, WBP_HonorTitle_Plate) == 0x000310, "Member 'UWBP_StatusInfo_Sub_HonorTable_02_C::WBP_HonorTitle_Plate' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_StatusInfo_Sub_HonorTable_02_C;
 
 }
 

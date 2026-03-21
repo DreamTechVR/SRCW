@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "ST_PullDownMenuData_structs.hpp"
+#include "EColorDetailWindowMode_structs.hpp"
 #include "ST_ColorDetailWindowColorItemData_structs.hpp"
 #include "ST_ColorDetailWindowSurfaceItemData_structs.hpp"
-#include "EColorDetailWindowMode_structs.hpp"
-#include "ST_PullDownMenuData_structs.hpp"
 
 
 namespace SDK
@@ -31,13 +31,7 @@ public:
 	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FST_PullDownMenuData                   SurfaceMenuData_18_2DB9F15C4EFB510984F126A1515B00E8; // 0x0028(0x0010)(Edit, BlueprintVisible, HasGetValueTypeHash)
 };
-static_assert(alignof(FST_ColorDetailWindowData) == 0x000008, "Wrong alignment on FST_ColorDetailWindowData");
-static_assert(sizeof(FST_ColorDetailWindowData) == 0x000038, "Wrong size on FST_ColorDetailWindowData");
-static_assert(offsetof(FST_ColorDetailWindowData, ColorItemDataList_4_D7E4A63B464BFE2ADEB0F0BA9144FBD5) == 0x000000, "Member 'FST_ColorDetailWindowData::ColorItemDataList_4_D7E4A63B464BFE2ADEB0F0BA9144FBD5' has a wrong offset!");
-static_assert(offsetof(FST_ColorDetailWindowData, SurfaceItemDataList_7_3E6D1554405D34F2A3029EB99D790C78) == 0x000010, "Member 'FST_ColorDetailWindowData::SurfaceItemDataList_7_3E6D1554405D34F2A3029EB99D790C78' has a wrong offset!");
-static_assert(offsetof(FST_ColorDetailWindowData, bIsSurfaceBoxVisible_12_A778B7D74303A72D839419B68CF85E2F) == 0x000020, "Member 'FST_ColorDetailWindowData::bIsSurfaceBoxVisible_12_A778B7D74303A72D839419B68CF85E2F' has a wrong offset!");
-static_assert(offsetof(FST_ColorDetailWindowData, Mode_15_BD3A33C44A1AAB9A4BA086848904AE11) == 0x000021, "Member 'FST_ColorDetailWindowData::Mode_15_BD3A33C44A1AAB9A4BA086848904AE11' has a wrong offset!");
-static_assert(offsetof(FST_ColorDetailWindowData, SurfaceMenuData_18_2DB9F15C4EFB510984F126A1515B00E8) == 0x000028, "Member 'FST_ColorDetailWindowData::SurfaceMenuData_18_2DB9F15C4EFB510984F126A1515B00E8' has a wrong offset!");
+DUMPER7_ASSERTS_FST_ColorDetailWindowData;
 
 }
 

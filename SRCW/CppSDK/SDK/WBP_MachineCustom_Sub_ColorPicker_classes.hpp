@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "ST_ColorDetailWindowData_structs.hpp"
-#include "ST_ColorDetailWindowColorItemData_structs.hpp"
-#include "ST_PullDownMenuItemData_structs.hpp"
+#include "Engine_structs.hpp"
 #include "EColorDetailWindowMode_structs.hpp"
-#include "UnionUI_classes.hpp"
 #include "UMG_structs.hpp"
+#include "UnionUI_classes.hpp"
+#include "ST_ColorDetailWindowColorItemData_structs.hpp"
+#include "ST_ColorDetailWindowData_structs.hpp"
+#include "ST_PullDownMenuItemData_structs.hpp"
 
 
 namespace SDK
@@ -88,40 +88,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MachineCustom_Sub_ColorPicker_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MachineCustom_Sub_ColorPicker_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MachineCustom_Sub_ColorPicker_C")
 	}
 	static class UWBP_MachineCustom_Sub_ColorPicker_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MachineCustom_Sub_ColorPicker_C>();
 	}
 };
-static_assert(alignof(UWBP_MachineCustom_Sub_ColorPicker_C) == 0x000008, "Wrong alignment on UWBP_MachineCustom_Sub_ColorPicker_C");
-static_assert(sizeof(UWBP_MachineCustom_Sub_ColorPicker_C) == 0x0005D8, "Wrong size on UWBP_MachineCustom_Sub_ColorPicker_C");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_C, UberGraphFrame) == 0x0003D8, "Member 'UWBP_MachineCustom_Sub_ColorPicker_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_C, ColorPicker_Out) == 0x0003E0, "Member 'UWBP_MachineCustom_Sub_ColorPicker_C::ColorPicker_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_C, ColorPicker_Loop) == 0x0003E8, "Member 'UWBP_MachineCustom_Sub_ColorPicker_C::ColorPicker_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_C, ColorPicker_In) == 0x0003F0, "Member 'UWBP_MachineCustom_Sub_ColorPicker_C::ColorPicker_In' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_C, CanvasPanel_Texture) == 0x0003F8, "Member 'UWBP_MachineCustom_Sub_ColorPicker_C::CanvasPanel_Texture' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_C, DSP_Cursor_Texture) == 0x000400, "Member 'UWBP_MachineCustom_Sub_ColorPicker_C::DSP_Cursor_Texture' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_C, OutOfContentButton) == 0x000408, "Member 'UWBP_MachineCustom_Sub_ColorPicker_C::OutOfContentButton' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_C, TXT_SetTexture) == 0x000410, "Member 'UWBP_MachineCustom_Sub_ColorPicker_C::TXT_SetTexture' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_C, WBP_CMN_Line_Btn) == 0x000418, "Member 'UWBP_MachineCustom_Sub_ColorPicker_C::WBP_CMN_Line_Btn' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_C, WBP_CMN_PullDownMenu) == 0x000420, "Member 'UWBP_MachineCustom_Sub_ColorPicker_C::WBP_CMN_PullDownMenu' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_C, WrapBox_Liquid) == 0x000428, "Member 'UWBP_MachineCustom_Sub_ColorPicker_C::WrapBox_Liquid' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_C, ColorItemNumPerRow) == 0x000430, "Member 'UWBP_MachineCustom_Sub_ColorPicker_C::ColorItemNumPerRow' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_C, ColorItems) == 0x000438, "Member 'UWBP_MachineCustom_Sub_ColorPicker_C::ColorItems' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_C, OnCancel) == 0x000448, "Member 'UWBP_MachineCustom_Sub_ColorPicker_C::OnCancel' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_C, LastColumnIndex) == 0x000458, "Member 'UWBP_MachineCustom_Sub_ColorPicker_C::LastColumnIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_C, GridNavigationBuilder) == 0x000460, "Member 'UWBP_MachineCustom_Sub_ColorPicker_C::GridNavigationBuilder' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_C, WindowData) == 0x000468, "Member 'UWBP_MachineCustom_Sub_ColorPicker_C::WindowData' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_C, OnColorItemFocused) == 0x0004A0, "Member 'UWBP_MachineCustom_Sub_ColorPicker_C::OnColorItemFocused' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_C, OnColorItemSelected) == 0x0004B0, "Member 'UWBP_MachineCustom_Sub_ColorPicker_C::OnColorItemSelected' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_C, OnSurfaceItemFocused) == 0x0004C0, "Member 'UWBP_MachineCustom_Sub_ColorPicker_C::OnSurfaceItemFocused' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_C, ColorItemNumMap) == 0x0004D0, "Member 'UWBP_MachineCustom_Sub_ColorPicker_C::ColorItemNumMap' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_C, InnerSlotPaddingMap) == 0x000520, "Member 'UWBP_MachineCustom_Sub_ColorPicker_C::InnerSlotPaddingMap' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_C, WrapBoxPositionMap) == 0x000570, "Member 'UWBP_MachineCustom_Sub_ColorPicker_C::WrapBoxPositionMap' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_C, PlayerController) == 0x0005C0, "Member 'UWBP_MachineCustom_Sub_ColorPicker_C::PlayerController' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_C, OnSurfaceItemSelected) == 0x0005C8, "Member 'UWBP_MachineCustom_Sub_ColorPicker_C::OnSurfaceItemSelected' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MachineCustom_Sub_ColorPicker_C;
 
 }
 

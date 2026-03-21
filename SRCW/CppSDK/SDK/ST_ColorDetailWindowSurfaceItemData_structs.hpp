@@ -24,11 +24,7 @@ public:
 	class FText                                   Name_5_C20AD69645C3BDE9645ACA92E353382F;           // 0x0008(0x0010)(Edit, BlueprintVisible)
 	bool                                          bIsSelected_8_C70CE4904A5EBCCB16211AABC806E824;    // 0x0018(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FST_ColorDetailWindowSurfaceItemData) == 0x000008, "Wrong alignment on FST_ColorDetailWindowSurfaceItemData");
-static_assert(sizeof(FST_ColorDetailWindowSurfaceItemData) == 0x000020, "Wrong size on FST_ColorDetailWindowSurfaceItemData");
-static_assert(offsetof(FST_ColorDetailWindowSurfaceItemData, MachineSurfaceId_2_9BB0701B47C5835A161A1FA7D6F2CB6F) == 0x000000, "Member 'FST_ColorDetailWindowSurfaceItemData::MachineSurfaceId_2_9BB0701B47C5835A161A1FA7D6F2CB6F' has a wrong offset!");
-static_assert(offsetof(FST_ColorDetailWindowSurfaceItemData, Name_5_C20AD69645C3BDE9645ACA92E353382F) == 0x000008, "Member 'FST_ColorDetailWindowSurfaceItemData::Name_5_C20AD69645C3BDE9645ACA92E353382F' has a wrong offset!");
-static_assert(offsetof(FST_ColorDetailWindowSurfaceItemData, bIsSelected_8_C70CE4904A5EBCCB16211AABC806E824) == 0x000018, "Member 'FST_ColorDetailWindowSurfaceItemData::bIsSelected_8_C70CE4904A5EBCCB16211AABC806E824' has a wrong offset!");
+DUMPER7_ASSERTS_FST_ColorDetailWindowSurfaceItemData;
 
 }
 

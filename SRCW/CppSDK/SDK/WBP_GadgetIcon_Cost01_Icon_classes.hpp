@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -40,20 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GadgetIcon_Cost01_Icon_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GadgetIcon_Cost01_Icon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GadgetIcon_Cost01_Icon_C")
 	}
 	static class UWBP_GadgetIcon_Cost01_Icon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GadgetIcon_Cost01_Icon_C>();
 	}
 };
-static_assert(alignof(UWBP_GadgetIcon_Cost01_Icon_C) == 0x000008, "Wrong alignment on UWBP_GadgetIcon_Cost01_Icon_C");
-static_assert(sizeof(UWBP_GadgetIcon_Cost01_Icon_C) == 0x0006A0, "Wrong size on UWBP_GadgetIcon_Cost01_Icon_C");
-static_assert(offsetof(UWBP_GadgetIcon_Cost01_Icon_C, UberGraphFrame) == 0x000678, "Member 'UWBP_GadgetIcon_Cost01_Icon_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetIcon_Cost01_Icon_C, Base_01) == 0x000680, "Member 'UWBP_GadgetIcon_Cost01_Icon_C::Base_01' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetIcon_Cost01_Icon_C, DMY_Icon) == 0x000688, "Member 'UWBP_GadgetIcon_Cost01_Icon_C::DMY_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetIcon_Cost01_Icon_C, DSP_Cost) == 0x000690, "Member 'UWBP_GadgetIcon_Cost01_Icon_C::DSP_Cost' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetIcon_Cost01_Icon_C, PAT_Base_Cost) == 0x000698, "Member 'UWBP_GadgetIcon_Cost01_Icon_C::PAT_Base_Cost' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GadgetIcon_Cost01_Icon_C;
 
 }
 

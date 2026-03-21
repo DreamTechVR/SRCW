@@ -45,27 +45,7 @@ public:
 	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0043(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon) == 0x000008, "Wrong alignment on WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon");
-static_assert(sizeof(WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon) == 0x000048, "Wrong size on WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon");
-static_assert(offsetof(WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon, EntryPoint) == 0x000000, "Member 'WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon, Temp_bool_Variable) == 0x000004, "Member 'WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon, Temp_byte_Variable) == 0x000005, "Member 'WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon, Temp_byte_Variable_1) == 0x000006, "Member 'WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon, K2Node_Event_InTexture) == 0x000008, "Member 'WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon::K2Node_Event_InTexture' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon, Temp_byte_Variable_2) == 0x000011, "Member 'WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon, Temp_byte_Variable_3) == 0x000012, "Member 'WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000018, "Member 'WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon, K2Node_Event_bInIsVisible_1) == 0x000020, "Member 'WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon::K2Node_Event_bInIsVisible_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon, K2Node_Event_InCost) == 0x000024, "Member 'WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon::K2Node_Event_InCost' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon, CallFunc_Subtract_IntInt_ReturnValue) == 0x000028, "Member 'WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x000030, "Member 'WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000038, "Member 'WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon, Temp_bool_Variable_1) == 0x000040, "Member 'WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon, K2Node_Event_bInIsVisible) == 0x000041, "Member 'WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon::K2Node_Event_bInIsVisible' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon, K2Node_Select_Default) == 0x000042, "Member 'WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon, K2Node_Select_Default_1) == 0x000043, "Member 'WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000044, "Member 'WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetIcon_Cost01_Icon_C_ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon;
 
 // Function WBP_GadgetIcon_Cost01_Icon.WBP_GadgetIcon_Cost01_Icon_C.SetBaseVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -74,9 +54,7 @@ struct WBP_GadgetIcon_Cost01_Icon_C_SetBaseVisible final
 public:
 	bool                                          bInIsVisible;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetIcon_Cost01_Icon_C_SetBaseVisible) == 0x000001, "Wrong alignment on WBP_GadgetIcon_Cost01_Icon_C_SetBaseVisible");
-static_assert(sizeof(WBP_GadgetIcon_Cost01_Icon_C_SetBaseVisible) == 0x000001, "Wrong size on WBP_GadgetIcon_Cost01_Icon_C_SetBaseVisible");
-static_assert(offsetof(WBP_GadgetIcon_Cost01_Icon_C_SetBaseVisible, bInIsVisible) == 0x000000, "Member 'WBP_GadgetIcon_Cost01_Icon_C_SetBaseVisible::bInIsVisible' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetIcon_Cost01_Icon_C_SetBaseVisible;
 
 // Function WBP_GadgetIcon_Cost01_Icon.WBP_GadgetIcon_Cost01_Icon_C.SetCost
 // 0x0004 (0x0004 - 0x0000)
@@ -85,9 +63,7 @@ struct WBP_GadgetIcon_Cost01_Icon_C_SetCost final
 public:
 	int32                                         InCost;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetIcon_Cost01_Icon_C_SetCost) == 0x000004, "Wrong alignment on WBP_GadgetIcon_Cost01_Icon_C_SetCost");
-static_assert(sizeof(WBP_GadgetIcon_Cost01_Icon_C_SetCost) == 0x000004, "Wrong size on WBP_GadgetIcon_Cost01_Icon_C_SetCost");
-static_assert(offsetof(WBP_GadgetIcon_Cost01_Icon_C_SetCost, InCost) == 0x000000, "Member 'WBP_GadgetIcon_Cost01_Icon_C_SetCost::InCost' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetIcon_Cost01_Icon_C_SetCost;
 
 // Function WBP_GadgetIcon_Cost01_Icon.WBP_GadgetIcon_Cost01_Icon_C.SetCostVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -96,9 +72,7 @@ struct WBP_GadgetIcon_Cost01_Icon_C_SetCostVisible final
 public:
 	bool                                          bInIsVisible;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetIcon_Cost01_Icon_C_SetCostVisible) == 0x000001, "Wrong alignment on WBP_GadgetIcon_Cost01_Icon_C_SetCostVisible");
-static_assert(sizeof(WBP_GadgetIcon_Cost01_Icon_C_SetCostVisible) == 0x000001, "Wrong size on WBP_GadgetIcon_Cost01_Icon_C_SetCostVisible");
-static_assert(offsetof(WBP_GadgetIcon_Cost01_Icon_C_SetCostVisible, bInIsVisible) == 0x000000, "Member 'WBP_GadgetIcon_Cost01_Icon_C_SetCostVisible::bInIsVisible' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetIcon_Cost01_Icon_C_SetCostVisible;
 
 // Function WBP_GadgetIcon_Cost01_Icon.WBP_GadgetIcon_Cost01_Icon_C.SetTexture
 // 0x0008 (0x0008 - 0x0000)
@@ -107,9 +81,7 @@ struct WBP_GadgetIcon_Cost01_Icon_C_SetTexture final
 public:
 	class UTexture2D*                             InTexture;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetIcon_Cost01_Icon_C_SetTexture) == 0x000008, "Wrong alignment on WBP_GadgetIcon_Cost01_Icon_C_SetTexture");
-static_assert(sizeof(WBP_GadgetIcon_Cost01_Icon_C_SetTexture) == 0x000008, "Wrong size on WBP_GadgetIcon_Cost01_Icon_C_SetTexture");
-static_assert(offsetof(WBP_GadgetIcon_Cost01_Icon_C_SetTexture, InTexture) == 0x000000, "Member 'WBP_GadgetIcon_Cost01_Icon_C_SetTexture::InTexture' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetIcon_Cost01_Icon_C_SetTexture;
 
 }
 

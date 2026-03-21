@@ -21,8 +21,7 @@ namespace SDK
 struct ABP_HoldSummonRing::FAnimBlueprintGeneratedConstantData final : public ABPT_HoldItem::FAnimBlueprintGeneratedConstantData
 {
 };
-static_assert(alignof(ABP_HoldSummonRing::FAnimBlueprintGeneratedConstantData) == 0x000008, "Wrong alignment on ABP_HoldSummonRing::FAnimBlueprintGeneratedConstantData");
-static_assert(sizeof(ABP_HoldSummonRing::FAnimBlueprintGeneratedConstantData) == 0x000D30, "Wrong size on ABP_HoldSummonRing::FAnimBlueprintGeneratedConstantData");
+DUMPER7_ASSERTS_ABP_HoldSummonRing__FAnimBlueprintGeneratedConstantData;
 
 }
 

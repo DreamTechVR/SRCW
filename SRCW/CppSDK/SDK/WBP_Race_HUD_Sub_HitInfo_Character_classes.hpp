@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "Engine_structs.hpp"
+#include "UnionSystem_structs.hpp"
 
 
 namespace SDK
@@ -73,43 +73,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_HUD_Sub_HitInfo_Character_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_HUD_Sub_HitInfo_Character_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_HUD_Sub_HitInfo_Character_C")
 	}
 	static class UWBP_Race_HUD_Sub_HitInfo_Character_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_HUD_Sub_HitInfo_Character_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_HUD_Sub_HitInfo_Character_C) == 0x000008, "Wrong alignment on UWBP_Race_HUD_Sub_HitInfo_Character_C");
-static_assert(sizeof(UWBP_Race_HUD_Sub_HitInfo_Character_C) == 0x000498, "Wrong size on UWBP_Race_HUD_Sub_HitInfo_Character_C");
-static_assert(offsetof(UWBP_Race_HUD_Sub_HitInfo_Character_C, UberGraphFrame) == 0x000320, "Member 'UWBP_Race_HUD_Sub_HitInfo_Character_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_HitInfo_Character_C, Base_02) == 0x000328, "Member 'UWBP_Race_HUD_Sub_HitInfo_Character_C::Base_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_HitInfo_Character_C, DMY_CharaIcon_Default) == 0x000330, "Member 'UWBP_Race_HUD_Sub_HitInfo_Character_C::DMY_CharaIcon_Default' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_HitInfo_Character_C, DMY_CharaIcon_Rival) == 0x000338, "Member 'UWBP_Race_HUD_Sub_HitInfo_Character_C::DMY_CharaIcon_Rival' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_HitInfo_Character_C, DMY_ItemIcon) == 0x000340, "Member 'UWBP_Race_HUD_Sub_HitInfo_Character_C::DMY_ItemIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_HitInfo_Character_C, DSP_Crown) == 0x000348, "Member 'UWBP_Race_HUD_Sub_HitInfo_Character_C::DSP_Crown' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_HitInfo_Character_C, MLC_Base_01) == 0x000350, "Member 'UWBP_Race_HUD_Sub_HitInfo_Character_C::MLC_Base_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_HitInfo_Character_C, MLC_ColorBase) == 0x000358, "Member 'UWBP_Race_HUD_Sub_HitInfo_Character_C::MLC_ColorBase' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_HitInfo_Character_C, MLC_TXT_PlayerName) == 0x000360, "Member 'UWBP_Race_HUD_Sub_HitInfo_Character_C::MLC_TXT_PlayerName' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_HitInfo_Character_C, Overlay_Lost) == 0x000368, "Member 'UWBP_Race_HUD_Sub_HitInfo_Character_C::Overlay_Lost' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_HitInfo_Character_C, Overlay_Shuffle) == 0x000370, "Member 'UWBP_Race_HUD_Sub_HitInfo_Character_C::Overlay_Shuffle' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_HitInfo_Character_C, PAT_Base) == 0x000378, "Member 'UWBP_Race_HUD_Sub_HitInfo_Character_C::PAT_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_HitInfo_Character_C, PAT_Icon) == 0x000380, "Member 'UWBP_Race_HUD_Sub_HitInfo_Character_C::PAT_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_HitInfo_Character_C, PAT_PlatformIcon) == 0x000388, "Member 'UWBP_Race_HUD_Sub_HitInfo_Character_C::PAT_PlatformIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_HitInfo_Character_C, RivalIcon) == 0x000390, "Member 'UWBP_Race_HUD_Sub_HitInfo_Character_C::RivalIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_HitInfo_Character_C, RivalIcon_HighLevel) == 0x000398, "Member 'UWBP_Race_HUD_Sub_HitInfo_Character_C::RivalIcon_HighLevel' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_HitInfo_Character_C, TXT_PlayerNumber) == 0x0003A0, "Member 'UWBP_Race_HUD_Sub_HitInfo_Character_C::TXT_PlayerNumber' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_HitInfo_Character_C, WBP_CMN_PlayerNumber) == 0x0003A8, "Member 'UWBP_Race_HUD_Sub_HitInfo_Character_C::WBP_CMN_PlayerNumber' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_HitInfo_Character_C, WidgetSwitcher) == 0x0003B0, "Member 'UWBP_Race_HUD_Sub_HitInfo_Character_C::WidgetSwitcher' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_HitInfo_Character_C, WidgetSwitcher_Chara) == 0x0003B8, "Member 'UWBP_Race_HUD_Sub_HitInfo_Character_C::WidgetSwitcher_Chara' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_HitInfo_Character_C, WidgetSwitcher_RivalIcon) == 0x0003C0, "Member 'UWBP_Race_HUD_Sub_HitInfo_Character_C::WidgetSwitcher_RivalIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_HitInfo_Character_C, MLC_Base) == 0x0003C8, "Member 'UWBP_Race_HUD_Sub_HitInfo_Character_C::MLC_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_HitInfo_Character_C, PlayerNameMat_Body) == 0x0003D0, "Member 'UWBP_Race_HUD_Sub_HitInfo_Character_C::PlayerNameMat_Body' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_HitInfo_Character_C, PlayerNameMat_Outline) == 0x0003D8, "Member 'UWBP_Race_HUD_Sub_HitInfo_Character_C::PlayerNameMat_Outline' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_HitInfo_Character_C, ItemIdTextureMap) == 0x0003E0, "Member 'UWBP_Race_HUD_Sub_HitInfo_Character_C::ItemIdTextureMap' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_HitInfo_Character_C, IsPartyRival) == 0x000430, "Member 'UWBP_Race_HUD_Sub_HitInfo_Character_C::IsPartyRival' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_HitInfo_Character_C, ColorMap) == 0x000438, "Member 'UWBP_Race_HUD_Sub_HitInfo_Character_C::ColorMap' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_HitInfo_Character_C, Array) == 0x000488, "Member 'UWBP_Race_HUD_Sub_HitInfo_Character_C::Array' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_HUD_Sub_HitInfo_Character_C;
 
 }
 

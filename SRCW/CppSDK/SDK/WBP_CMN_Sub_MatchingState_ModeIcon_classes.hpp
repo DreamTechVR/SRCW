@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -52,33 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_Sub_MatchingState_ModeIcon_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_Sub_MatchingState_ModeIcon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_Sub_MatchingState_ModeIcon_C")
 	}
 	static class UWBP_CMN_Sub_MatchingState_ModeIcon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_Sub_MatchingState_ModeIcon_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_Sub_MatchingState_ModeIcon_C) == 0x000008, "Wrong alignment on UWBP_CMN_Sub_MatchingState_ModeIcon_C");
-static_assert(sizeof(UWBP_CMN_Sub_MatchingState_ModeIcon_C) == 0x000478, "Wrong size on UWBP_CMN_Sub_MatchingState_ModeIcon_C");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, UberGraphFrame) == 0x0003E0, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, ModeIcon_Out) == 0x0003E8, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::ModeIcon_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, ModeIcon_Loop) == 0x0003F0, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::ModeIcon_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, ModeIcon_In) == 0x0003F8, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::ModeIcon_In' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, Effect_Event) == 0x000400, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::Effect_Event' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, Effect_Friend) == 0x000408, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::Effect_Friend' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, Effect_Legend) == 0x000410, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::Effect_Legend' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, Effect_World) == 0x000418, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::Effect_World' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, Icon_Event) == 0x000420, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::Icon_Event' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, Icon_Event_1) == 0x000428, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::Icon_Event_1' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, Icon_Friend) == 0x000430, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::Icon_Friend' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, Icon_World) == 0x000438, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::Icon_World' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, TXT_Event) == 0x000440, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::TXT_Event' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, TXT_Friend) == 0x000448, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::TXT_Friend' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, TXT_LEGEND) == 0x000450, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::TXT_LEGEND' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, TXT_World) == 0x000458, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::TXT_World' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, WS_ModeIcon) == 0x000460, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::WS_ModeIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, FriendMatchText) == 0x000468, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::FriendMatchText' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_Sub_MatchingState_ModeIcon_C;
 
 }
 

@@ -128,93 +128,7 @@ public:
 	TDelegate<void(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex)> K2Node_CreateDelegate_OutputDelegate_10; // 0x0340(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_11;           // 0x0350(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect) == 0x000008, "Wrong alignment on BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect");
-static_assert(sizeof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect) == 0x000360, "Wrong size on BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, EntryPoint) == 0x000000, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_IsValid_ReturnValue_1) == 0x000005, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_MakeLiteralByte_ReturnValue) == 0x000006, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, K2Node_CustomEvent_Loaded) == 0x000008, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::K2Node_CustomEvent_Loaded' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, Temp_object_Variable) == 0x000010, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000018, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, K2Node_DynamicCast_As_____2D) == 0x000020, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_Array_Add_ReturnValue) == 0x00002C, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, Temp_bool_True_if_break_was_hit_Variable) == 0x000030, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_IsValid_ReturnValue_2) == 0x000031, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_Not_PreBool_ReturnValue) == 0x000032, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, Temp_int_Array_Index_Variable) == 0x000034, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_GetPlayerController_ReturnValue) == 0x000038, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000040, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, K2Node_DynamicCast_bSuccess_1) == 0x000048, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, K2Node_CreateDelegate_OutputDelegate) == 0x00004C, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, K2Node_CustomEvent_Object) == 0x000060, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::K2Node_CustomEvent_Object' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_GetPlayerController_ReturnValue_1) == 0x000068, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, K2Node_DynamicCast_AsApp_Player_Controller_1) == 0x000070, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::K2Node_DynamicCast_AsApp_Player_Controller_1' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, K2Node_DynamicCast_bSuccess_2) == 0x000078, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_UnregisterSingleSubMenu_ReturnValue) == 0x000079, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_UnregisterSingleSubMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_IsValid_ReturnValue_3) == 0x00007A, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, K2Node_CreateDelegate_OutputDelegate_1) == 0x00007C, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_GetOwnerSequence_ReturnValue) == 0x000090, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_GetOwnerSequence_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, K2Node_DynamicCast_AsBP_Time_Trial_Sequence) == 0x000098, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::K2Node_DynamicCast_AsBP_Time_Trial_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, K2Node_DynamicCast_bSuccess_3) == 0x0000A0, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_IsValid_ReturnValue_4) == 0x0000A1, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, K2Node_CustomEvent_Button_1) == 0x0000A8, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::K2Node_CustomEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, K2Node_CustomEvent_PanelIndex_1) == 0x0000B0, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::K2Node_CustomEvent_PanelIndex_1' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, K2Node_CustomEvent_ButtonIndex_1) == 0x0000B4, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::K2Node_CustomEvent_ButtonIndex_1' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, K2Node_DynamicCast_AsTop_Menu_Play_Mode_Button) == 0x0000B8, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::K2Node_DynamicCast_AsTop_Menu_Play_Mode_Button' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, K2Node_DynamicCast_bSuccess_4) == 0x0000C0, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000C1, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_PlayAnimation_ReturnValue) == 0x0000C8, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x0000D0, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, K2Node_CreateDelegate_OutputDelegate_2) == 0x0000D4, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, Temp_int_Loop_Counter_Variable) == 0x0000E4, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_Add_IntInt_ReturnValue) == 0x0000E8, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_IsDisableTimeTrialMilestoneVersion_ReturnValue) == 0x0000EC, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_IsDisableTimeTrialMilestoneVersion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_SpawnObject_ReturnValue) == 0x0000F0, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_IsInViewport_ReturnValue) == 0x0000F8, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_IsInViewport_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_GetSelectedStageId_Selected_Stage_Id_Single) == 0x0000F9, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_GetSelectedStageId_Selected_Stage_Id_Single' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, K2Node_CustomEvent_Button) == 0x000100, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, K2Node_CustomEvent_PanelIndex) == 0x000108, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::K2Node_CustomEvent_PanelIndex' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, K2Node_CustomEvent_ButtonIndex) == 0x00010C, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::K2Node_CustomEvent_ButtonIndex' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, K2Node_CreateDelegate_OutputDelegate_3) == 0x000110, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, K2Node_CreateDelegate_OutputDelegate_4) == 0x000120, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_PlayAnimation_ReturnValue_1) == 0x000130, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, K2Node_CreateDelegate_OutputDelegate_5) == 0x000138, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, K2Node_CreateDelegate_OutputDelegate_6) == 0x000148, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_SoundPlay_ReturnValue) == 0x000158, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_SoundPlay_ReturnValue_1) == 0x00015C, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_SetNextSubMenuSequenceState_self_CastInput) == 0x000160, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_SetNextSubMenuSequenceState_self_CastInput' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_GetSelectedClassId_ReturnValue) == 0x000170, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_GetSelectedClassId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_GetSelectedStageId_Selected_Stage_Id_Single_1) == 0x000171, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_GetSelectedStageId_Selected_Stage_Id_Single_1' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, Temp_class_Variable) == 0x000178, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::Temp_class_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_GetTimeTrialRaceData_bOutIsGhostValid) == 0x000180, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_GetTimeTrialRaceData_bOutIsGhostValid' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_GetTimeTrialRaceData_ReturnValue) == 0x000188, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_GetTimeTrialRaceData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, K2Node_ClassDynamicCast_AsWBP_Time_Trial_Sub_Mode_Select) == 0x0001D8, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::K2Node_ClassDynamicCast_AsWBP_Time_Trial_Sub_Mode_Select' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, K2Node_ClassDynamicCast_bSuccess) == 0x0001E0, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_Create_ReturnValue) == 0x0001E8, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_IsTimeTrialRankCleared_ReturnValue) == 0x0001F0, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_IsTimeTrialRankCleared_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_BooleanAND_ReturnValue) == 0x0001F1, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_Not_PreBool_ReturnValue_1) == 0x0001F2, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_BooleanAND_ReturnValue_1) == 0x0001F3, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, K2Node_CustomEvent_Loaded_1) == 0x0001F8, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::K2Node_CustomEvent_Loaded_1' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_SoundPlay_ReturnValue_2) == 0x000200, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_SoundPlay_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, K2Node_CreateDelegate_OutputDelegate_7) == 0x000204, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_GetDataTableRowNames_OutRowNames) == 0x000218, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_GetDataTableRowNames_OutRowNames' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_Array_Get_Item) == 0x000228, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_GetDataTableRowFromName_OutRow) == 0x000230, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000310, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_Array_Length_ReturnValue) == 0x000314, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_Less_IntInt_ReturnValue) == 0x000318, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_BooleanAND_ReturnValue_2) == 0x000319, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, K2Node_CreateDelegate_OutputDelegate_8) == 0x00031C, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::K2Node_CreateDelegate_OutputDelegate_8' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_IsValid_ReturnValue_5) == 0x00032C, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_IsExclusionGhostUpDownloadEventMilestoneVersion_ReturnValue) == 0x00032D, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_IsExclusionGhostUpDownloadEventMilestoneVersion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_Not_PreBool_ReturnValue_2) == 0x00032E, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, CallFunc_BooleanAND_ReturnValue_3) == 0x00032F, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, K2Node_CreateDelegate_OutputDelegate_9) == 0x000330, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::K2Node_CreateDelegate_OutputDelegate_9' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, K2Node_CreateDelegate_OutputDelegate_10) == 0x000340, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::K2Node_CreateDelegate_OutputDelegate_10' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect, K2Node_CreateDelegate_OutputDelegate_11) == 0x000350, "Member 'BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect::K2Node_CreateDelegate_OutputDelegate_11' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GhostSelect_C_ExecuteUbergraph_BPC_GhostSelect;
 
 // Function BPC_GhostSelect.BPC_GhostSelect_C.OnCancelGhostSelectEvent
 // 0x0010 (0x0010 - 0x0000)
@@ -225,11 +139,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GhostSelect_C_OnCancelGhostSelectEvent) == 0x000008, "Wrong alignment on BPC_GhostSelect_C_OnCancelGhostSelectEvent");
-static_assert(sizeof(BPC_GhostSelect_C_OnCancelGhostSelectEvent) == 0x000010, "Wrong size on BPC_GhostSelect_C_OnCancelGhostSelectEvent");
-static_assert(offsetof(BPC_GhostSelect_C_OnCancelGhostSelectEvent, Button) == 0x000000, "Member 'BPC_GhostSelect_C_OnCancelGhostSelectEvent::Button' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_OnCancelGhostSelectEvent, PanelIndex) == 0x000008, "Member 'BPC_GhostSelect_C_OnCancelGhostSelectEvent::PanelIndex' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_OnCancelGhostSelectEvent, ButtonIndex) == 0x00000C, "Member 'BPC_GhostSelect_C_OnCancelGhostSelectEvent::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GhostSelect_C_OnCancelGhostSelectEvent;
 
 // Function BPC_GhostSelect.BPC_GhostSelect_C.OnDecideGhostSelectEvent
 // 0x0010 (0x0010 - 0x0000)
@@ -240,11 +150,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GhostSelect_C_OnDecideGhostSelectEvent) == 0x000008, "Wrong alignment on BPC_GhostSelect_C_OnDecideGhostSelectEvent");
-static_assert(sizeof(BPC_GhostSelect_C_OnDecideGhostSelectEvent) == 0x000010, "Wrong size on BPC_GhostSelect_C_OnDecideGhostSelectEvent");
-static_assert(offsetof(BPC_GhostSelect_C_OnDecideGhostSelectEvent, Button) == 0x000000, "Member 'BPC_GhostSelect_C_OnDecideGhostSelectEvent::Button' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_OnDecideGhostSelectEvent, PanelIndex) == 0x000008, "Member 'BPC_GhostSelect_C_OnDecideGhostSelectEvent::PanelIndex' has a wrong offset!");
-static_assert(offsetof(BPC_GhostSelect_C_OnDecideGhostSelectEvent, ButtonIndex) == 0x00000C, "Member 'BPC_GhostSelect_C_OnDecideGhostSelectEvent::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GhostSelect_C_OnDecideGhostSelectEvent;
 
 // Function BPC_GhostSelect.BPC_GhostSelect_C.OnLeftShoulderPressedEvent
 // 0x0008 (0x0008 - 0x0000)
@@ -253,9 +159,7 @@ struct BPC_GhostSelect_C_OnLeftShoulderPressedEvent final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GhostSelect_C_OnLeftShoulderPressedEvent) == 0x000008, "Wrong alignment on BPC_GhostSelect_C_OnLeftShoulderPressedEvent");
-static_assert(sizeof(BPC_GhostSelect_C_OnLeftShoulderPressedEvent) == 0x000008, "Wrong size on BPC_GhostSelect_C_OnLeftShoulderPressedEvent");
-static_assert(offsetof(BPC_GhostSelect_C_OnLeftShoulderPressedEvent, Object) == 0x000000, "Member 'BPC_GhostSelect_C_OnLeftShoulderPressedEvent::Object' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GhostSelect_C_OnLeftShoulderPressedEvent;
 
 // Function BPC_GhostSelect.BPC_GhostSelect_C.OnLoaded_307172AF4F7E28861F563BA26C397D31
 // 0x0008 (0x0008 - 0x0000)
@@ -264,9 +168,7 @@ struct BPC_GhostSelect_C_OnLoaded_307172AF4F7E28861F563BA26C397D31 final
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GhostSelect_C_OnLoaded_307172AF4F7E28861F563BA26C397D31) == 0x000008, "Wrong alignment on BPC_GhostSelect_C_OnLoaded_307172AF4F7E28861F563BA26C397D31");
-static_assert(sizeof(BPC_GhostSelect_C_OnLoaded_307172AF4F7E28861F563BA26C397D31) == 0x000008, "Wrong size on BPC_GhostSelect_C_OnLoaded_307172AF4F7E28861F563BA26C397D31");
-static_assert(offsetof(BPC_GhostSelect_C_OnLoaded_307172AF4F7E28861F563BA26C397D31, Loaded) == 0x000000, "Member 'BPC_GhostSelect_C_OnLoaded_307172AF4F7E28861F563BA26C397D31::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GhostSelect_C_OnLoaded_307172AF4F7E28861F563BA26C397D31;
 
 // Function BPC_GhostSelect.BPC_GhostSelect_C.OnLoaded_58AE36EB44E34CAB87C7BFB602F2F257
 // 0x0008 (0x0008 - 0x0000)
@@ -275,9 +177,7 @@ struct BPC_GhostSelect_C_OnLoaded_58AE36EB44E34CAB87C7BFB602F2F257 final
 public:
 	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GhostSelect_C_OnLoaded_58AE36EB44E34CAB87C7BFB602F2F257) == 0x000008, "Wrong alignment on BPC_GhostSelect_C_OnLoaded_58AE36EB44E34CAB87C7BFB602F2F257");
-static_assert(sizeof(BPC_GhostSelect_C_OnLoaded_58AE36EB44E34CAB87C7BFB602F2F257) == 0x000008, "Wrong size on BPC_GhostSelect_C_OnLoaded_58AE36EB44E34CAB87C7BFB602F2F257");
-static_assert(offsetof(BPC_GhostSelect_C_OnLoaded_58AE36EB44E34CAB87C7BFB602F2F257, Loaded) == 0x000000, "Member 'BPC_GhostSelect_C_OnLoaded_58AE36EB44E34CAB87C7BFB602F2F257::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GhostSelect_C_OnLoaded_58AE36EB44E34CAB87C7BFB602F2F257;
 
 }
 

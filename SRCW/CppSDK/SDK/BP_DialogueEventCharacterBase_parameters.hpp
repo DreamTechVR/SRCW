@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "UNION_structs.hpp"
 #include "Engine_structs.hpp"
+#include "UNION_structs.hpp"
 
 
 namespace SDK::Params
@@ -28,12 +28,7 @@ public:
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_DialogueEventCharacterBase_C_ExecuteUbergraph_BP_DialogueEventCharacterBase) == 0x000004, "Wrong alignment on BP_DialogueEventCharacterBase_C_ExecuteUbergraph_BP_DialogueEventCharacterBase");
-static_assert(sizeof(BP_DialogueEventCharacterBase_C_ExecuteUbergraph_BP_DialogueEventCharacterBase) == 0x00001C, "Wrong size on BP_DialogueEventCharacterBase_C_ExecuteUbergraph_BP_DialogueEventCharacterBase");
-static_assert(offsetof(BP_DialogueEventCharacterBase_C_ExecuteUbergraph_BP_DialogueEventCharacterBase, EntryPoint) == 0x000000, "Member 'BP_DialogueEventCharacterBase_C_ExecuteUbergraph_BP_DialogueEventCharacterBase::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_DialogueEventCharacterBase_C_ExecuteUbergraph_BP_DialogueEventCharacterBase, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'BP_DialogueEventCharacterBase_C_ExecuteUbergraph_BP_DialogueEventCharacterBase::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_DialogueEventCharacterBase_C_ExecuteUbergraph_BP_DialogueEventCharacterBase, K2Node_Event_DeltaSeconds) == 0x000014, "Member 'BP_DialogueEventCharacterBase_C_ExecuteUbergraph_BP_DialogueEventCharacterBase::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(BP_DialogueEventCharacterBase_C_ExecuteUbergraph_BP_DialogueEventCharacterBase, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'BP_DialogueEventCharacterBase_C_ExecuteUbergraph_BP_DialogueEventCharacterBase::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_DialogueEventCharacterBase_C_ExecuteUbergraph_BP_DialogueEventCharacterBase;
 
 // Function BP_DialogueEventCharacterBase.BP_DialogueEventCharacterBase_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -42,9 +37,7 @@ struct BP_DialogueEventCharacterBase_C_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_DialogueEventCharacterBase_C_ReceiveTick) == 0x000004, "Wrong alignment on BP_DialogueEventCharacterBase_C_ReceiveTick");
-static_assert(sizeof(BP_DialogueEventCharacterBase_C_ReceiveTick) == 0x000004, "Wrong size on BP_DialogueEventCharacterBase_C_ReceiveTick");
-static_assert(offsetof(BP_DialogueEventCharacterBase_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'BP_DialogueEventCharacterBase_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_BP_DialogueEventCharacterBase_C_ReceiveTick;
 
 // Function BP_DialogueEventCharacterBase.BP_DialogueEventCharacterBase_C.SetCharacterLocationAndRotation
 // 0x01E0 (0x01E0 - 0x0000)
@@ -67,22 +60,7 @@ public:
 	struct FHitResult                             CallFunc_K2_SetActorLocationAndRotation_SweepHitResult; // 0x00E0(0x00F8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_K2_SetActorLocationAndRotation_ReturnValue; // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_DialogueEventCharacterBase_C_SetCharacterLocationAndRotation) == 0x000008, "Wrong alignment on BP_DialogueEventCharacterBase_C_SetCharacterLocationAndRotation");
-static_assert(sizeof(BP_DialogueEventCharacterBase_C_SetCharacterLocationAndRotation) == 0x0001E0, "Wrong size on BP_DialogueEventCharacterBase_C_SetCharacterLocationAndRotation");
-static_assert(offsetof(BP_DialogueEventCharacterBase_C_SetCharacterLocationAndRotation, CallFunc_GetPlayerController_ReturnValue) == 0x000000, "Member 'BP_DialogueEventCharacterBase_C_SetCharacterLocationAndRotation::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_DialogueEventCharacterBase_C_SetCharacterLocationAndRotation, CallFunc_GetViewportSize_ReturnValue) == 0x000008, "Member 'BP_DialogueEventCharacterBase_C_SetCharacterLocationAndRotation::CallFunc_GetViewportSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_DialogueEventCharacterBase_C_SetCharacterLocationAndRotation, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x000018, "Member 'BP_DialogueEventCharacterBase_C_SetCharacterLocationAndRotation::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_DialogueEventCharacterBase_C_SetCharacterLocationAndRotation, CallFunc_GetCameraLocation_ReturnValue) == 0x000020, "Member 'BP_DialogueEventCharacterBase_C_SetCharacterLocationAndRotation::CallFunc_GetCameraLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_DialogueEventCharacterBase_C_SetCharacterLocationAndRotation, CallFunc_Conv_DoubleToVector_ReturnValue) == 0x000038, "Member 'BP_DialogueEventCharacterBase_C_SetCharacterLocationAndRotation::CallFunc_Conv_DoubleToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_DialogueEventCharacterBase_C_SetCharacterLocationAndRotation, CallFunc_Multiply_Vector2DVector2D_ReturnValue) == 0x000050, "Member 'BP_DialogueEventCharacterBase_C_SetCharacterLocationAndRotation::CallFunc_Multiply_Vector2DVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_DialogueEventCharacterBase_C_SetCharacterLocationAndRotation, CallFunc_DeprojectScreenToWorld_WorldPosition) == 0x000060, "Member 'BP_DialogueEventCharacterBase_C_SetCharacterLocationAndRotation::CallFunc_DeprojectScreenToWorld_WorldPosition' has a wrong offset!");
-static_assert(offsetof(BP_DialogueEventCharacterBase_C_SetCharacterLocationAndRotation, CallFunc_DeprojectScreenToWorld_WorldDirection) == 0x000078, "Member 'BP_DialogueEventCharacterBase_C_SetCharacterLocationAndRotation::CallFunc_DeprojectScreenToWorld_WorldDirection' has a wrong offset!");
-static_assert(offsetof(BP_DialogueEventCharacterBase_C_SetCharacterLocationAndRotation, CallFunc_DeprojectScreenToWorld_ReturnValue) == 0x000090, "Member 'BP_DialogueEventCharacterBase_C_SetCharacterLocationAndRotation::CallFunc_DeprojectScreenToWorld_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_DialogueEventCharacterBase_C_SetCharacterLocationAndRotation, CallFunc_Multiply_VectorVector_ReturnValue) == 0x000098, "Member 'BP_DialogueEventCharacterBase_C_SetCharacterLocationAndRotation::CallFunc_Multiply_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_DialogueEventCharacterBase_C_SetCharacterLocationAndRotation, CallFunc_Add_VectorVector_ReturnValue) == 0x0000B0, "Member 'BP_DialogueEventCharacterBase_C_SetCharacterLocationAndRotation::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_DialogueEventCharacterBase_C_SetCharacterLocationAndRotation, CallFunc_FindLookAtRotation_ReturnValue) == 0x0000C8, "Member 'BP_DialogueEventCharacterBase_C_SetCharacterLocationAndRotation::CallFunc_FindLookAtRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_DialogueEventCharacterBase_C_SetCharacterLocationAndRotation, CallFunc_K2_SetActorLocationAndRotation_SweepHitResult) == 0x0000E0, "Member 'BP_DialogueEventCharacterBase_C_SetCharacterLocationAndRotation::CallFunc_K2_SetActorLocationAndRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_DialogueEventCharacterBase_C_SetCharacterLocationAndRotation, CallFunc_K2_SetActorLocationAndRotation_ReturnValue) == 0x0001D8, "Member 'BP_DialogueEventCharacterBase_C_SetCharacterLocationAndRotation::CallFunc_K2_SetActorLocationAndRotation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_DialogueEventCharacterBase_C_SetCharacterLocationAndRotation;
 
 // Function BP_DialogueEventCharacterBase.BP_DialogueEventCharacterBase_C.SetupDirectLocation
 // 0x0010 (0x0010 - 0x0000)
@@ -91,9 +69,7 @@ struct BP_DialogueEventCharacterBase_C_SetupDirectLocation final
 public:
 	struct FVector2D                              ScreenPos_0;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_DialogueEventCharacterBase_C_SetupDirectLocation) == 0x000008, "Wrong alignment on BP_DialogueEventCharacterBase_C_SetupDirectLocation");
-static_assert(sizeof(BP_DialogueEventCharacterBase_C_SetupDirectLocation) == 0x000010, "Wrong size on BP_DialogueEventCharacterBase_C_SetupDirectLocation");
-static_assert(offsetof(BP_DialogueEventCharacterBase_C_SetupDirectLocation, ScreenPos_0) == 0x000000, "Member 'BP_DialogueEventCharacterBase_C_SetupDirectLocation::ScreenPos_0' has a wrong offset!");
+DUMPER7_ASSERTS_BP_DialogueEventCharacterBase_C_SetupDirectLocation;
 
 // Function BP_DialogueEventCharacterBase.BP_DialogueEventCharacterBase_C.StartAnimation
 // 0x0001 (0x0001 - 0x0000)
@@ -102,9 +78,7 @@ struct BP_DialogueEventCharacterBase_C_StartAnimation final
 public:
 	EDialogueAnimationAssetID                     AnimationAssetID;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_DialogueEventCharacterBase_C_StartAnimation) == 0x000001, "Wrong alignment on BP_DialogueEventCharacterBase_C_StartAnimation");
-static_assert(sizeof(BP_DialogueEventCharacterBase_C_StartAnimation) == 0x000001, "Wrong size on BP_DialogueEventCharacterBase_C_StartAnimation");
-static_assert(offsetof(BP_DialogueEventCharacterBase_C_StartAnimation, AnimationAssetID) == 0x000000, "Member 'BP_DialogueEventCharacterBase_C_StartAnimation::AnimationAssetID' has a wrong offset!");
+DUMPER7_ASSERTS_BP_DialogueEventCharacterBase_C_StartAnimation;
 
 }
 

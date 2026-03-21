@@ -29,13 +29,7 @@ public:
 	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFocusEvent                            K2Node_Event_InFocusEvent;                         // 0x001C(0x0008)(NoDestructor)
 };
-static_assert(alignof(WBP_HitTestBtn_C_ExecuteUbergraph_WBP_HitTestBtn) == 0x000008, "Wrong alignment on WBP_HitTestBtn_C_ExecuteUbergraph_WBP_HitTestBtn");
-static_assert(sizeof(WBP_HitTestBtn_C_ExecuteUbergraph_WBP_HitTestBtn) == 0x000028, "Wrong size on WBP_HitTestBtn_C_ExecuteUbergraph_WBP_HitTestBtn");
-static_assert(offsetof(WBP_HitTestBtn_C_ExecuteUbergraph_WBP_HitTestBtn, EntryPoint) == 0x000000, "Member 'WBP_HitTestBtn_C_ExecuteUbergraph_WBP_HitTestBtn::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_HitTestBtn_C_ExecuteUbergraph_WBP_HitTestBtn, CallFunc_GetPlayerController_ReturnValue) == 0x000008, "Member 'WBP_HitTestBtn_C_ExecuteUbergraph_WBP_HitTestBtn::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HitTestBtn_C_ExecuteUbergraph_WBP_HitTestBtn, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000010, "Member 'WBP_HitTestBtn_C_ExecuteUbergraph_WBP_HitTestBtn::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_HitTestBtn_C_ExecuteUbergraph_WBP_HitTestBtn, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'WBP_HitTestBtn_C_ExecuteUbergraph_WBP_HitTestBtn::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_HitTestBtn_C_ExecuteUbergraph_WBP_HitTestBtn, K2Node_Event_InFocusEvent) == 0x00001C, "Member 'WBP_HitTestBtn_C_ExecuteUbergraph_WBP_HitTestBtn::K2Node_Event_InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HitTestBtn_C_ExecuteUbergraph_WBP_HitTestBtn;
 
 // Function WBP_HitTestBtn.WBP_HitTestBtn_C.OnAddedToFocusPath
 // 0x0008 (0x0008 - 0x0000)
@@ -44,9 +38,7 @@ struct WBP_HitTestBtn_C_OnAddedToFocusPath final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_HitTestBtn_C_OnAddedToFocusPath) == 0x000004, "Wrong alignment on WBP_HitTestBtn_C_OnAddedToFocusPath");
-static_assert(sizeof(WBP_HitTestBtn_C_OnAddedToFocusPath) == 0x000008, "Wrong size on WBP_HitTestBtn_C_OnAddedToFocusPath");
-static_assert(offsetof(WBP_HitTestBtn_C_OnAddedToFocusPath, InFocusEvent) == 0x000000, "Member 'WBP_HitTestBtn_C_OnAddedToFocusPath::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HitTestBtn_C_OnAddedToFocusPath;
 
 }
 

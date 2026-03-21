@@ -32,13 +32,7 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsPlaying_ReturnValue;                    // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Tutorial_C_CheckOkClosing) == 0x000004, "Wrong alignment on WBP_Popup_Window_Tutorial_C_CheckOkClosing");
-static_assert(sizeof(WBP_Popup_Window_Tutorial_C_CheckOkClosing) == 0x00000C, "Wrong size on WBP_Popup_Window_Tutorial_C_CheckOkClosing");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_CheckOkClosing, newParam) == 0x000000, "Member 'WBP_Popup_Window_Tutorial_C_CheckOkClosing::newParam' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_CheckOkClosing, CallFunc_IsValid_ReturnValue) == 0x000001, "Member 'WBP_Popup_Window_Tutorial_C_CheckOkClosing::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_CheckOkClosing, CallFunc_GetMovieFrames_ReturnValue) == 0x000004, "Member 'WBP_Popup_Window_Tutorial_C_CheckOkClosing::CallFunc_GetMovieFrames_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_CheckOkClosing, CallFunc_Less_IntInt_ReturnValue) == 0x000008, "Member 'WBP_Popup_Window_Tutorial_C_CheckOkClosing::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_CheckOkClosing, CallFunc_IsPlaying_ReturnValue) == 0x000009, "Member 'WBP_Popup_Window_Tutorial_C_CheckOkClosing::CallFunc_IsPlaying_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Tutorial_C_CheckOkClosing;
 
 // Function WBP_Popup_Window_Tutorial.WBP_Popup_Window_Tutorial_C.CreateMoviePlayer
 // 0x0088 (0x0088 - 0x0000)
@@ -65,24 +59,7 @@ public:
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Tutorial_C_CreateMoviePlayer) == 0x000008, "Wrong alignment on WBP_Popup_Window_Tutorial_C_CreateMoviePlayer");
-static_assert(sizeof(WBP_Popup_Window_Tutorial_C_CreateMoviePlayer) == 0x000088, "Wrong size on WBP_Popup_Window_Tutorial_C_CreateMoviePlayer");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_CreateMoviePlayer, Temp_int_Array_Index_Variable) == 0x000000, "Member 'WBP_Popup_Window_Tutorial_C_CreateMoviePlayer::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_CreateMoviePlayer, CallFunc_SpawnObject_ReturnValue) == 0x000008, "Member 'WBP_Popup_Window_Tutorial_C_CreateMoviePlayer::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_CreateMoviePlayer, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'WBP_Popup_Window_Tutorial_C_CreateMoviePlayer::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_CreateMoviePlayer, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'WBP_Popup_Window_Tutorial_C_CreateMoviePlayer::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_CreateMoviePlayer, Temp_int_Loop_Counter_Variable) == 0x000024, "Member 'WBP_Popup_Window_Tutorial_C_CreateMoviePlayer::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_CreateMoviePlayer, CallFunc_Subtract_IntInt_ReturnValue) == 0x000028, "Member 'WBP_Popup_Window_Tutorial_C_CreateMoviePlayer::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_CreateMoviePlayer, CallFunc_Add_IntInt_ReturnValue) == 0x00002C, "Member 'WBP_Popup_Window_Tutorial_C_CreateMoviePlayer::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_CreateMoviePlayer, CallFunc_GetDataTableRowNames_OutRowNames) == 0x000030, "Member 'WBP_Popup_Window_Tutorial_C_CreateMoviePlayer::CallFunc_GetDataTableRowNames_OutRowNames' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_CreateMoviePlayer, CallFunc_Array_Get_Item) == 0x000040, "Member 'WBP_Popup_Window_Tutorial_C_CreateMoviePlayer::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_CreateMoviePlayer, CallFunc_Array_Length_ReturnValue_1) == 0x000048, "Member 'WBP_Popup_Window_Tutorial_C_CreateMoviePlayer::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_CreateMoviePlayer, CallFunc_GetDataTableRowFromName_OutRow) == 0x000050, "Member 'WBP_Popup_Window_Tutorial_C_CreateMoviePlayer::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_CreateMoviePlayer, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000078, "Member 'WBP_Popup_Window_Tutorial_C_CreateMoviePlayer::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_CreateMoviePlayer, CallFunc_Less_IntInt_ReturnValue) == 0x000079, "Member 'WBP_Popup_Window_Tutorial_C_CreateMoviePlayer::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_CreateMoviePlayer, CallFunc_Create_ReturnValue) == 0x00007A, "Member 'WBP_Popup_Window_Tutorial_C_CreateMoviePlayer::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_CreateMoviePlayer, CallFunc_Array_Add_ReturnValue) == 0x00007C, "Member 'WBP_Popup_Window_Tutorial_C_CreateMoviePlayer::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_CreateMoviePlayer, CallFunc_IsValid_ReturnValue) == 0x000080, "Member 'WBP_Popup_Window_Tutorial_C_CreateMoviePlayer::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Tutorial_C_CreateMoviePlayer;
 
 // Function WBP_Popup_Window_Tutorial.WBP_Popup_Window_Tutorial_C.DispText
 // 0x0030 (0x0030 - 0x0000)
@@ -99,16 +76,7 @@ public:
 	EAppControllerInputType                       CallFunc_GetCurrentInputType_ReturnValue;          // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Tutorial_C_DispText) == 0x000008, "Wrong alignment on WBP_Popup_Window_Tutorial_C_DispText");
-static_assert(sizeof(WBP_Popup_Window_Tutorial_C_DispText) == 0x000030, "Wrong size on WBP_Popup_Window_Tutorial_C_DispText");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_DispText, IsOnDisp) == 0x000000, "Member 'WBP_Popup_Window_Tutorial_C_DispText::IsOnDisp' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_DispText, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_Popup_Window_Tutorial_C_DispText::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_DispText, CallFunc_PlayAnimation_ReturnValue_1) == 0x000010, "Member 'WBP_Popup_Window_Tutorial_C_DispText::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_DispText, CallFunc_GetOwningPlayer_ReturnValue) == 0x000018, "Member 'WBP_Popup_Window_Tutorial_C_DispText::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_DispText, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000020, "Member 'WBP_Popup_Window_Tutorial_C_DispText::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_DispText, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'WBP_Popup_Window_Tutorial_C_DispText::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_DispText, CallFunc_GetCurrentInputType_ReturnValue) == 0x000029, "Member 'WBP_Popup_Window_Tutorial_C_DispText::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_DispText, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00002A, "Member 'WBP_Popup_Window_Tutorial_C_DispText::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Tutorial_C_DispText;
 
 // Function WBP_Popup_Window_Tutorial.WBP_Popup_Window_Tutorial_C.ExecuteUbergraph_WBP_Popup_Window_Tutorial
 // 0x0188 (0x0188 - 0x0000)
@@ -187,69 +155,7 @@ public:
 	double                                        CallFunc_Add_DoubleDouble_B_ImplicitCast_2;        // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetCancelIconGauge_InGaugeParam_ImplicitCast_1; // 0x0180(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial) == 0x000008, "Wrong alignment on WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial");
-static_assert(sizeof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial) == 0x000188, "Wrong size on WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, EntryPoint) == 0x000000, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x000008, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000020, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_Not_PreBool_ReturnValue) == 0x000028, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_PlayNext_IsEnd) == 0x000029, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_PlayNext_IsEnd' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_IsValid_ReturnValue) == 0x00002A, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_Stop_ReturnValue) == 0x00002C, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_Stop_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_Stop_ReturnValue_1) == 0x000030, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_Stop_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_Not_PreBool_ReturnValue_1) == 0x000034, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_IsValid_ReturnValue_1) == 0x000035, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_GetMovieTime_ReturnValue) == 0x000038, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_GetMovieTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_BreakTimespan_Days) == 0x000040, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_BreakTimespan_Days' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_BreakTimespan_Hours) == 0x000044, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_BreakTimespan_Hours' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_BreakTimespan_Minutes) == 0x000048, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_BreakTimespan_Minutes' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_BreakTimespan_Seconds) == 0x00004C, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_BreakTimespan_Seconds' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_BreakTimespan_Milliseconds) == 0x000050, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_BreakTimespan_Milliseconds' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_IsPlaying_ReturnValue) == 0x000054, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_IsPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000058, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_Multiply_DoubleDouble_ReturnValue_1) == 0x000060, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_Multiply_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_Conv_IntToDouble_ReturnValue_1) == 0x000068, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_Conv_IntToDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000070, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_IsTextDisp_ReturnValue) == 0x000078, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_IsTextDisp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_GetOwningPlayer_ReturnValue) == 0x000080, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000088, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, K2Node_DynamicCast_bSuccess) == 0x000090, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_CalcTutorialControllerType_Type) == 0x000091, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_CalcTutorialControllerType_Type' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_CalcTutorialControllerType_Platform) == 0x000092, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_CalcTutorialControllerType_Platform' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_GetValidValue_ReturnValue) == 0x000093, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_GetValidValue_ReturnValue_1) == 0x000094, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_GetValidValue_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_PlayAnimation_ReturnValue) == 0x000098, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_CreatePlayAnimationProxyObject_Result) == 0x0000A0, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_CreatePlayAnimationProxyObject_Result' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_CreatePlayAnimationProxyObject_ReturnValue) == 0x0000A8, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_CreatePlayAnimationProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_IsValid_ReturnValue_2) == 0x0000B0, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_Greater_DoubleDouble_ReturnValue) == 0x0000B1, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_Greater_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_Greater_DoubleDouble_ReturnValue_1) == 0x0000B2, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_Greater_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, K2Node_CustomEvent_IsPopup) == 0x0000B3, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::K2Node_CustomEvent_IsPopup' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_IsValid_ReturnValue_3) == 0x0000B4, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_GetStatus_ReturnValue) == 0x0000B5, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_GetStatus_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000B6, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, K2Node_Event_MyGeometry) == 0x0000B8, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, K2Node_Event_InDeltaTime) == 0x0000F0, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_Add_DoubleDouble_ReturnValue_1) == 0x0000F8, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_Add_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_Add_DoubleDouble_ReturnValue_2) == 0x000100, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_Add_DoubleDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_Add_DoubleDouble_ReturnValue_3) == 0x000108, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_Add_DoubleDouble_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, K2Node_CreateDelegate_OutputDelegate_1) == 0x000110, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_Greater_DoubleDouble_ReturnValue_2) == 0x000120, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_Greater_DoubleDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x000128, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_FClamp_ReturnValue) == 0x000130, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_SoundPlay_ReturnValue) == 0x000138, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_Stop_ReturnValue_2) == 0x00013C, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_Stop_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_Greater_DoubleDouble_ReturnValue_3) == 0x000140, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_Greater_DoubleDouble_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_Divide_DoubleDouble_ReturnValue_1) == 0x000148, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_Divide_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_Multiply_DoubleDouble_ReturnValue_2) == 0x000150, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_Multiply_DoubleDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_SetCancelIconGauge_InGaugeParam_ImplicitCast) == 0x000158, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_SetCancelIconGauge_InGaugeParam_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_IsTextDisp_MovieTime_ImplicitCast) == 0x00015C, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_IsTextDisp_MovieTime_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_Subtract_DoubleDouble_B_ImplicitCast) == 0x000160, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_Subtract_DoubleDouble_B_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_Add_DoubleDouble_B_ImplicitCast) == 0x000168, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_Add_DoubleDouble_B_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_Add_DoubleDouble_B_ImplicitCast_1) == 0x000170, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_Add_DoubleDouble_B_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_Add_DoubleDouble_B_ImplicitCast_2) == 0x000178, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_Add_DoubleDouble_B_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_SetCancelIconGauge_InGaugeParam_ImplicitCast_1) == 0x000180, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_SetCancelIconGauge_InGaugeParam_ImplicitCast_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial;
 
 // Function WBP_Popup_Window_Tutorial.WBP_Popup_Window_Tutorial_C.isEnableMovingNextCursor
 // 0x0058 (0x0058 - 0x0000)
@@ -274,22 +180,7 @@ public:
 	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor) == 0x000008, "Wrong alignment on WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor");
-static_assert(sizeof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor) == 0x000058, "Wrong size on WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor, newParam) == 0x000000, "Member 'WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor::newParam' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor, CallFunc_GetMovieTime_ReturnValue) == 0x000008, "Member 'WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor::CallFunc_GetMovieTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor, CallFunc_BreakTimespan_Days) == 0x000014, "Member 'WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor::CallFunc_BreakTimespan_Days' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor, CallFunc_BreakTimespan_Hours) == 0x000018, "Member 'WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor::CallFunc_BreakTimespan_Hours' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor, CallFunc_BreakTimespan_Minutes) == 0x00001C, "Member 'WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor::CallFunc_BreakTimespan_Minutes' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor, CallFunc_BreakTimespan_Seconds) == 0x000020, "Member 'WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor::CallFunc_BreakTimespan_Seconds' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor, CallFunc_BreakTimespan_Milliseconds) == 0x000024, "Member 'WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor::CallFunc_BreakTimespan_Milliseconds' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000028, "Member 'WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor, CallFunc_Conv_IntToDouble_ReturnValue_1) == 0x000030, "Member 'WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor::CallFunc_Conv_IntToDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000038, "Member 'WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor, CallFunc_IsPlaying_ReturnValue) == 0x000040, "Member 'WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor::CallFunc_IsPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000048, "Member 'WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor, CallFunc_Greater_DoubleDouble_ReturnValue) == 0x000050, "Member 'WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor::CallFunc_Greater_DoubleDouble_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor;
 
 // Function WBP_Popup_Window_Tutorial.WBP_Popup_Window_Tutorial_C.PauseMovie
 // 0x000C (0x000C - 0x0000)
@@ -303,13 +194,7 @@ public:
 	bool                                          CallFunc_Play_ReturnValue;                         // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Tutorial_C_PauseMovie) == 0x000004, "Wrong alignment on WBP_Popup_Window_Tutorial_C_PauseMovie");
-static_assert(sizeof(WBP_Popup_Window_Tutorial_C_PauseMovie) == 0x00000C, "Wrong size on WBP_Popup_Window_Tutorial_C_PauseMovie");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PauseMovie, IsPause) == 0x000000, "Member 'WBP_Popup_Window_Tutorial_C_PauseMovie::IsPause' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PauseMovie, IsRealClose) == 0x000001, "Member 'WBP_Popup_Window_Tutorial_C_PauseMovie::IsRealClose' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PauseMovie, CallFunc_Stop_ReturnValue) == 0x000004, "Member 'WBP_Popup_Window_Tutorial_C_PauseMovie::CallFunc_Stop_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PauseMovie, CallFunc_Play_ReturnValue) == 0x000008, "Member 'WBP_Popup_Window_Tutorial_C_PauseMovie::CallFunc_Play_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PauseMovie, CallFunc_IsValid_ReturnValue) == 0x000009, "Member 'WBP_Popup_Window_Tutorial_C_PauseMovie::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Tutorial_C_PauseMovie;
 
 // Function WBP_Popup_Window_Tutorial.WBP_Popup_Window_Tutorial_C.PlayMovie
 // 0x0030 (0x0030 - 0x0000)
@@ -330,18 +215,7 @@ public:
 	bool                                          CallFunc_Rewind_ReturnValue;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Tutorial_C_PlayMovie) == 0x000008, "Wrong alignment on WBP_Popup_Window_Tutorial_C_PlayMovie");
-static_assert(sizeof(WBP_Popup_Window_Tutorial_C_PlayMovie) == 0x000030, "Wrong size on WBP_Popup_Window_Tutorial_C_PlayMovie");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PlayMovie, CallFunc_GetStatus_ReturnValue) == 0x000000, "Member 'WBP_Popup_Window_Tutorial_C_PlayMovie::CallFunc_GetStatus_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PlayMovie, CallFunc_Play_ReturnValue) == 0x000001, "Member 'WBP_Popup_Window_Tutorial_C_PlayMovie::CallFunc_Play_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PlayMovie, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000002, "Member 'WBP_Popup_Window_Tutorial_C_PlayMovie::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PlayMovie, CallFunc_GetMaterial_ReturnValue) == 0x000008, "Member 'WBP_Popup_Window_Tutorial_C_PlayMovie::CallFunc_GetMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PlayMovie, CallFunc_SetLooping_ReturnValue) == 0x000010, "Member 'WBP_Popup_Window_Tutorial_C_PlayMovie::CallFunc_SetLooping_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PlayMovie, CallFunc_MakeLiteralName_ReturnValue) == 0x000014, "Member 'WBP_Popup_Window_Tutorial_C_PlayMovie::CallFunc_MakeLiteralName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PlayMovie, CallFunc_SetMovie_ReturnValue) == 0x00001C, "Member 'WBP_Popup_Window_Tutorial_C_PlayMovie::CallFunc_SetMovie_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PlayMovie, CallFunc_SpawnObject_ReturnValue) == 0x000020, "Member 'WBP_Popup_Window_Tutorial_C_PlayMovie::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PlayMovie, CallFunc_Rewind_ReturnValue) == 0x000028, "Member 'WBP_Popup_Window_Tutorial_C_PlayMovie::CallFunc_Rewind_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PlayMovie, CallFunc_IsValid_ReturnValue) == 0x000029, "Member 'WBP_Popup_Window_Tutorial_C_PlayMovie::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Tutorial_C_PlayMovie;
 
 // Function WBP_Popup_Window_Tutorial.WBP_Popup_Window_Tutorial_C.PlayMovie_Test
 // 0x0070 (0x0070 - 0x0000)
@@ -368,23 +242,7 @@ public:
 	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_SetMovie_ReturnValue;                     // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Tutorial_C_PlayMovie_Test) == 0x000008, "Wrong alignment on WBP_Popup_Window_Tutorial_C_PlayMovie_Test");
-static_assert(sizeof(WBP_Popup_Window_Tutorial_C_PlayMovie_Test) == 0x000070, "Wrong size on WBP_Popup_Window_Tutorial_C_PlayMovie_Test");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PlayMovie_Test, Index_0) == 0x000000, "Member 'WBP_Popup_Window_Tutorial_C_PlayMovie_Test::Index_0' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PlayMovie_Test, IsRepeat) == 0x000004, "Member 'WBP_Popup_Window_Tutorial_C_PlayMovie_Test::IsRepeat' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PlayMovie_Test, TmpIndex) == 0x000008, "Member 'WBP_Popup_Window_Tutorial_C_PlayMovie_Test::TmpIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PlayMovie_Test, CallFunc_GetDataTableRowNames_OutRowNames) == 0x000010, "Member 'WBP_Popup_Window_Tutorial_C_PlayMovie_Test::CallFunc_GetDataTableRowNames_OutRowNames' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PlayMovie_Test, CallFunc_Add_IntInt_ReturnValue) == 0x000020, "Member 'WBP_Popup_Window_Tutorial_C_PlayMovie_Test::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PlayMovie_Test, CallFunc_Percent_IntInt_ReturnValue) == 0x000024, "Member 'WBP_Popup_Window_Tutorial_C_PlayMovie_Test::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PlayMovie_Test, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000028, "Member 'WBP_Popup_Window_Tutorial_C_PlayMovie_Test::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PlayMovie_Test, CallFunc_Rewind_ReturnValue) == 0x000029, "Member 'WBP_Popup_Window_Tutorial_C_PlayMovie_Test::CallFunc_Rewind_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PlayMovie_Test, CallFunc_Play_ReturnValue) == 0x00002A, "Member 'WBP_Popup_Window_Tutorial_C_PlayMovie_Test::CallFunc_Play_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PlayMovie_Test, CallFunc_GetMaterial_ReturnValue) == 0x000030, "Member 'WBP_Popup_Window_Tutorial_C_PlayMovie_Test::CallFunc_GetMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PlayMovie_Test, CallFunc_SetLooping_ReturnValue) == 0x000038, "Member 'WBP_Popup_Window_Tutorial_C_PlayMovie_Test::CallFunc_SetLooping_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PlayMovie_Test, CallFunc_IsValid_ReturnValue) == 0x000039, "Member 'WBP_Popup_Window_Tutorial_C_PlayMovie_Test::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PlayMovie_Test, CallFunc_GetDataTableRowFromName_OutRow) == 0x000040, "Member 'WBP_Popup_Window_Tutorial_C_PlayMovie_Test::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PlayMovie_Test, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000068, "Member 'WBP_Popup_Window_Tutorial_C_PlayMovie_Test::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PlayMovie_Test, CallFunc_SetMovie_ReturnValue) == 0x000069, "Member 'WBP_Popup_Window_Tutorial_C_PlayMovie_Test::CallFunc_SetMovie_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Tutorial_C_PlayMovie_Test;
 
 // Function WBP_Popup_Window_Tutorial.WBP_Popup_Window_Tutorial_C.PlayNext
 // 0x0010 (0x0010 - 0x0000)
@@ -398,12 +256,7 @@ public:
 	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Tutorial_C_PlayNext) == 0x000004, "Wrong alignment on WBP_Popup_Window_Tutorial_C_PlayNext");
-static_assert(sizeof(WBP_Popup_Window_Tutorial_C_PlayNext) == 0x000010, "Wrong size on WBP_Popup_Window_Tutorial_C_PlayNext");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PlayNext, IsEnd_0) == 0x000000, "Member 'WBP_Popup_Window_Tutorial_C_PlayNext::IsEnd_0' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PlayNext, TmpNextIndex) == 0x000004, "Member 'WBP_Popup_Window_Tutorial_C_PlayNext::TmpNextIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PlayNext, CallFunc_Greater_IntInt_ReturnValue) == 0x000008, "Member 'WBP_Popup_Window_Tutorial_C_PlayNext::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_PlayNext, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_Popup_Window_Tutorial_C_PlayNext::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Tutorial_C_PlayNext;
 
 // Function WBP_Popup_Window_Tutorial.WBP_Popup_Window_Tutorial_C.SetCancelIconGauge
 // 0x0010 (0x0010 - 0x0000)
@@ -414,10 +267,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonMenuFooterButton*                CallFunc_GetMainButtons_ReturnValue;               // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Tutorial_C_SetCancelIconGauge) == 0x000008, "Wrong alignment on WBP_Popup_Window_Tutorial_C_SetCancelIconGauge");
-static_assert(sizeof(WBP_Popup_Window_Tutorial_C_SetCancelIconGauge) == 0x000010, "Wrong size on WBP_Popup_Window_Tutorial_C_SetCancelIconGauge");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_SetCancelIconGauge, InGaugeParam) == 0x000000, "Member 'WBP_Popup_Window_Tutorial_C_SetCancelIconGauge::InGaugeParam' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_SetCancelIconGauge, CallFunc_GetMainButtons_ReturnValue) == 0x000008, "Member 'WBP_Popup_Window_Tutorial_C_SetCancelIconGauge::CallFunc_GetMainButtons_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Tutorial_C_SetCancelIconGauge;
 
 // Function WBP_Popup_Window_Tutorial.WBP_Popup_Window_Tutorial_C.SetFooterMenu
 // 0x0028 (0x0028 - 0x0000)
@@ -430,12 +280,7 @@ public:
 	class UCommonMenuFooterButton*                CallFunc_GetMainButtons_ReturnValue;               // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0018(0x0010)()
 };
-static_assert(alignof(WBP_Popup_Window_Tutorial_C_SetFooterMenu) == 0x000008, "Wrong alignment on WBP_Popup_Window_Tutorial_C_SetFooterMenu");
-static_assert(sizeof(WBP_Popup_Window_Tutorial_C_SetFooterMenu) == 0x000028, "Wrong size on WBP_Popup_Window_Tutorial_C_SetFooterMenu");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_SetFooterMenu, Button) == 0x000000, "Member 'WBP_Popup_Window_Tutorial_C_SetFooterMenu::Button' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_SetFooterMenu, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'WBP_Popup_Window_Tutorial_C_SetFooterMenu::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_SetFooterMenu, CallFunc_GetMainButtons_ReturnValue) == 0x000010, "Member 'WBP_Popup_Window_Tutorial_C_SetFooterMenu::CallFunc_GetMainButtons_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_SetFooterMenu, CallFunc_MakeLiteralText_ReturnValue) == 0x000018, "Member 'WBP_Popup_Window_Tutorial_C_SetFooterMenu::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Tutorial_C_SetFooterMenu;
 
 // Function WBP_Popup_Window_Tutorial.WBP_Popup_Window_Tutorial_C.SetTextDispTime
 // 0x0040 (0x0040 - 0x0000)
@@ -446,11 +291,7 @@ public:
 	struct FF_HintTutorialStructure               CallFunc_GetDataTableRowFromName_OutRow;           // 0x0010(0x0028)(HasGetValueTypeHash)
 	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Tutorial_C_SetTextDispTime) == 0x000008, "Wrong alignment on WBP_Popup_Window_Tutorial_C_SetTextDispTime");
-static_assert(sizeof(WBP_Popup_Window_Tutorial_C_SetTextDispTime) == 0x000040, "Wrong size on WBP_Popup_Window_Tutorial_C_SetTextDispTime");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_SetTextDispTime, CallFunc_GetDataTableRowNames_OutRowNames) == 0x000000, "Member 'WBP_Popup_Window_Tutorial_C_SetTextDispTime::CallFunc_GetDataTableRowNames_OutRowNames' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_SetTextDispTime, CallFunc_GetDataTableRowFromName_OutRow) == 0x000010, "Member 'WBP_Popup_Window_Tutorial_C_SetTextDispTime::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_SetTextDispTime, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000038, "Member 'WBP_Popup_Window_Tutorial_C_SetTextDispTime::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Tutorial_C_SetTextDispTime;
 
 // Function WBP_Popup_Window_Tutorial.WBP_Popup_Window_Tutorial_C.Setup
 // 0x0001 (0x0001 - 0x0000)
@@ -459,9 +300,7 @@ struct WBP_Popup_Window_Tutorial_C_Setup final
 public:
 	bool                                          IsPopup;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Tutorial_C_Setup) == 0x000001, "Wrong alignment on WBP_Popup_Window_Tutorial_C_Setup");
-static_assert(sizeof(WBP_Popup_Window_Tutorial_C_Setup) == 0x000001, "Wrong size on WBP_Popup_Window_Tutorial_C_Setup");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_Setup, IsPopup) == 0x000000, "Member 'WBP_Popup_Window_Tutorial_C_Setup::IsPopup' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Tutorial_C_Setup;
 
 // Function WBP_Popup_Window_Tutorial.WBP_Popup_Window_Tutorial_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -471,10 +310,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Popup_Window_Tutorial_C_Tick) == 0x000004, "Wrong alignment on WBP_Popup_Window_Tutorial_C_Tick");
-static_assert(sizeof(WBP_Popup_Window_Tutorial_C_Tick) == 0x00003C, "Wrong size on WBP_Popup_Window_Tutorial_C_Tick");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_Tick, MyGeometry) == 0x000000, "Member 'WBP_Popup_Window_Tutorial_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_Tick, InDeltaTime) == 0x000038, "Member 'WBP_Popup_Window_Tutorial_C_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Tutorial_C_Tick;
 
 // Function WBP_Popup_Window_Tutorial.WBP_Popup_Window_Tutorial_C.UpdateInfoTxt
 // 0x0010 (0x0010 - 0x0000)
@@ -483,9 +319,7 @@ struct WBP_Popup_Window_Tutorial_C_UpdateInfoTxt final
 public:
 	class FText                                   InTxt;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_Popup_Window_Tutorial_C_UpdateInfoTxt) == 0x000008, "Wrong alignment on WBP_Popup_Window_Tutorial_C_UpdateInfoTxt");
-static_assert(sizeof(WBP_Popup_Window_Tutorial_C_UpdateInfoTxt) == 0x000010, "Wrong size on WBP_Popup_Window_Tutorial_C_UpdateInfoTxt");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_UpdateInfoTxt, InTxt) == 0x000000, "Member 'WBP_Popup_Window_Tutorial_C_UpdateInfoTxt::InTxt' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Popup_Window_Tutorial_C_UpdateInfoTxt;
 
 }
 

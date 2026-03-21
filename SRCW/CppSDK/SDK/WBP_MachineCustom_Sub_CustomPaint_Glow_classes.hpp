@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "UnionUI_classes.hpp"
 #include "UNION_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
+#include "UnionUI_classes.hpp"
 
 
 namespace SDK
@@ -51,24 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MachineCustom_Sub_CustomPaint_Glow_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MachineCustom_Sub_CustomPaint_Glow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MachineCustom_Sub_CustomPaint_Glow_C")
 	}
 	static class UWBP_MachineCustom_Sub_CustomPaint_Glow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MachineCustom_Sub_CustomPaint_Glow_C>();
 	}
 };
-static_assert(alignof(UWBP_MachineCustom_Sub_CustomPaint_Glow_C) == 0x000008, "Wrong alignment on UWBP_MachineCustom_Sub_CustomPaint_Glow_C");
-static_assert(sizeof(UWBP_MachineCustom_Sub_CustomPaint_Glow_C) == 0x000500, "Wrong size on UWBP_MachineCustom_Sub_CustomPaint_Glow_C");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomPaint_Glow_C, UberGraphFrame) == 0x000480, "Member 'UWBP_MachineCustom_Sub_CustomPaint_Glow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomPaint_Glow_C, Displayable_Detail) == 0x000488, "Member 'UWBP_MachineCustom_Sub_CustomPaint_Glow_C::Displayable_Detail' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomPaint_Glow_C, DSP_Cursor_Texture) == 0x000490, "Member 'UWBP_MachineCustom_Sub_CustomPaint_Glow_C::DSP_Cursor_Texture' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomPaint_Glow_C, MLC_GlowIcon) == 0x000498, "Member 'UWBP_MachineCustom_Sub_CustomPaint_Glow_C::MLC_GlowIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomPaint_Glow_C, Undisplayable_Detail) == 0x0004A0, "Member 'UWBP_MachineCustom_Sub_CustomPaint_Glow_C::Undisplayable_Detail' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomPaint_Glow_C, WBP_CMN_Line_Btn) == 0x0004A8, "Member 'UWBP_MachineCustom_Sub_CustomPaint_Glow_C::WBP_CMN_Line_Btn' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomPaint_Glow_C, WidgetSwitcher_Category) == 0x0004B0, "Member 'UWBP_MachineCustom_Sub_CustomPaint_Glow_C::WidgetSwitcher_Category' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomPaint_Glow_C, PlayerController) == 0x0004B8, "Member 'UWBP_MachineCustom_Sub_CustomPaint_Glow_C::PlayerController' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomPaint_Glow_C, ItemData) == 0x0004C0, "Member 'UWBP_MachineCustom_Sub_CustomPaint_Glow_C::ItemData' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MachineCustom_Sub_CustomPaint_Glow_C;
 
 }
 

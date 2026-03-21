@@ -27,7 +27,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPI_UnionGameInstance_C">();
+		BP_STATIC_CLASS_IMPL("BPI_UnionGameInstance_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPI_UnionGameInstance_C")
 	}
 	static class IBPI_UnionGameInstance_C* GetDefaultObj()
 	{
@@ -43,8 +47,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IBPI_UnionGameInstance_C) == 0x000001, "Wrong alignment on IBPI_UnionGameInstance_C");
-static_assert(sizeof(IBPI_UnionGameInstance_C) == 0x000001, "Wrong size on IBPI_UnionGameInstance_C");
+DUMPER7_ASSERTS_IBPI_UnionGameInstance_C;
 
 }
 

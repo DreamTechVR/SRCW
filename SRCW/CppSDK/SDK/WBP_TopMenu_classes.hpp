@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -65,27 +65,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_TopMenu_C">();
+		BP_STATIC_CLASS_IMPL("WBP_TopMenu_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_TopMenu_C")
 	}
 	static class UWBP_TopMenu_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_TopMenu_C>();
 	}
 };
-static_assert(alignof(UWBP_TopMenu_C) == 0x000008, "Wrong alignment on UWBP_TopMenu_C");
-static_assert(sizeof(UWBP_TopMenu_C) == 0x0004C0, "Wrong size on UWBP_TopMenu_C");
-static_assert(offsetof(UWBP_TopMenu_C, UberGraphFrame) == 0x000460, "Member 'UWBP_TopMenu_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_C, base) == 0x000468, "Member 'UWBP_TopMenu_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_C, CanvasPanel) == 0x000470, "Member 'UWBP_TopMenu_C::CanvasPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_C, Line) == 0x000478, "Member 'UWBP_TopMenu_C::Line' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_C, Panel) == 0x000480, "Member 'UWBP_TopMenu_C::Panel' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_C, SafeZone_TopMenu) == 0x000488, "Member 'UWBP_TopMenu_C::SafeZone_TopMenu' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_C, Shadow) == 0x000490, "Member 'UWBP_TopMenu_C::Shadow' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_C, WBP_TopMenu_Sub_BtnPlay_Offline) == 0x000498, "Member 'UWBP_TopMenu_C::WBP_TopMenu_Sub_BtnPlay_Offline' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_C, WBP_TopMenu_Sub_BtnPlay_Online) == 0x0004A0, "Member 'UWBP_TopMenu_C::WBP_TopMenu_Sub_BtnPlay_Online' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_C, WBP_TopMenu_Sub_BtnPlay_Wireless) == 0x0004A8, "Member 'UWBP_TopMenu_C::WBP_TopMenu_Sub_BtnPlay_Wireless' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_C, WBP_TopMenu_Sub_ModeMenu) == 0x0004B0, "Member 'UWBP_TopMenu_C::WBP_TopMenu_Sub_ModeMenu' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_C, DesignationFocuButton) == 0x0004B8, "Member 'UWBP_TopMenu_C::DesignationFocuButton' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_TopMenu_C;
 
 }
 

@@ -23,15 +23,18 @@ class UBP_RewardAchievementManager_C final : public URewardAchievementManager
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_RewardAchievementManager_C">();
+		BP_STATIC_CLASS_IMPL("BP_RewardAchievementManager_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_RewardAchievementManager_C")
 	}
 	static class UBP_RewardAchievementManager_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_RewardAchievementManager_C>();
 	}
 };
-static_assert(alignof(UBP_RewardAchievementManager_C) == 0x000008, "Wrong alignment on UBP_RewardAchievementManager_C");
-static_assert(sizeof(UBP_RewardAchievementManager_C) == 0x000040, "Wrong size on UBP_RewardAchievementManager_C");
+DUMPER7_ASSERTS_UBP_RewardAchievementManager_C;
 
 }
 

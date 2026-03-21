@@ -32,15 +32,7 @@ public:
 	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetIcon_C_ExecuteUbergraph_WBP_GadgetIcon) == 0x000008, "Wrong alignment on WBP_GadgetIcon_C_ExecuteUbergraph_WBP_GadgetIcon");
-static_assert(sizeof(WBP_GadgetIcon_C_ExecuteUbergraph_WBP_GadgetIcon) == 0x000060, "Wrong size on WBP_GadgetIcon_C_ExecuteUbergraph_WBP_GadgetIcon");
-static_assert(offsetof(WBP_GadgetIcon_C_ExecuteUbergraph_WBP_GadgetIcon, EntryPoint) == 0x000000, "Member 'WBP_GadgetIcon_C_ExecuteUbergraph_WBP_GadgetIcon::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_C_ExecuteUbergraph_WBP_GadgetIcon, K2Node_CustomEvent_MyGeometry) == 0x000004, "Member 'WBP_GadgetIcon_C_ExecuteUbergraph_WBP_GadgetIcon::K2Node_CustomEvent_MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_C_ExecuteUbergraph_WBP_GadgetIcon, K2Node_CustomEvent_InFocusEvent) == 0x00003C, "Member 'WBP_GadgetIcon_C_ExecuteUbergraph_WBP_GadgetIcon::K2Node_CustomEvent_InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_C_ExecuteUbergraph_WBP_GadgetIcon, CallFunc_GetUserIndexByFocusEvent_ReturnValue) == 0x000044, "Member 'WBP_GadgetIcon_C_ExecuteUbergraph_WBP_GadgetIcon::CallFunc_GetUserIndexByFocusEvent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_C_ExecuteUbergraph_WBP_GadgetIcon, K2Node_Event_InFocusEvent) == 0x000048, "Member 'WBP_GadgetIcon_C_ExecuteUbergraph_WBP_GadgetIcon::K2Node_Event_InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_C_ExecuteUbergraph_WBP_GadgetIcon, CallFunc_SoundPlay_ReturnValue) == 0x000050, "Member 'WBP_GadgetIcon_C_ExecuteUbergraph_WBP_GadgetIcon::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_C_ExecuteUbergraph_WBP_GadgetIcon, CallFunc_GetPlayerController_ReturnValue) == 0x000058, "Member 'WBP_GadgetIcon_C_ExecuteUbergraph_WBP_GadgetIcon::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetIcon_C_ExecuteUbergraph_WBP_GadgetIcon;
 
 // Function WBP_GadgetIcon.WBP_GadgetIcon_C.OnConstInitBpWidgetRef
 // 0x0030 (0x0030 - 0x0000)
@@ -51,11 +43,7 @@ public:
 	TArray<class UMaterialInstance*>              K2Node_MakeArray_Array_1;                          // 0x0010(0x0010)(ReferenceParm)
 	TArray<class UImage*>                         K2Node_MakeArray_Array_2;                          // 0x0020(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(WBP_GadgetIcon_C_OnConstInitBpWidgetRef) == 0x000008, "Wrong alignment on WBP_GadgetIcon_C_OnConstInitBpWidgetRef");
-static_assert(sizeof(WBP_GadgetIcon_C_OnConstInitBpWidgetRef) == 0x000030, "Wrong size on WBP_GadgetIcon_C_OnConstInitBpWidgetRef");
-static_assert(offsetof(WBP_GadgetIcon_C_OnConstInitBpWidgetRef, K2Node_MakeArray_Array) == 0x000000, "Member 'WBP_GadgetIcon_C_OnConstInitBpWidgetRef::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_C_OnConstInitBpWidgetRef, K2Node_MakeArray_Array_1) == 0x000010, "Member 'WBP_GadgetIcon_C_OnConstInitBpWidgetRef::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_C_OnConstInitBpWidgetRef, K2Node_MakeArray_Array_2) == 0x000020, "Member 'WBP_GadgetIcon_C_OnConstInitBpWidgetRef::K2Node_MakeArray_Array_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetIcon_C_OnConstInitBpWidgetRef;
 
 // Function WBP_GadgetIcon.WBP_GadgetIcon_C.OnConstUseType
 // 0x0010 (0x0010 - 0x0000)
@@ -68,13 +56,7 @@ public:
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetIcon_C_OnConstUseType) == 0x000008, "Wrong alignment on WBP_GadgetIcon_C_OnConstUseType");
-static_assert(sizeof(WBP_GadgetIcon_C_OnConstUseType) == 0x000010, "Wrong size on WBP_GadgetIcon_C_OnConstUseType");
-static_assert(offsetof(WBP_GadgetIcon_C_OnConstUseType, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000000, "Member 'WBP_GadgetIcon_C_OnConstUseType::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_C_OnConstUseType, CallFunc_GetSequenceMainType_ReturnValue) == 0x000008, "Member 'WBP_GadgetIcon_C_OnConstUseType::CallFunc_GetSequenceMainType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_C_OnConstUseType, CallFunc_GetSequenceSubType_ReturnValue) == 0x000009, "Member 'WBP_GadgetIcon_C_OnConstUseType::CallFunc_GetSequenceSubType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_C_OnConstUseType, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00000A, "Member 'WBP_GadgetIcon_C_OnConstUseType::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_C_OnConstUseType, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x00000B, "Member 'WBP_GadgetIcon_C_OnConstUseType::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetIcon_C_OnConstUseType;
 
 // Function WBP_GadgetIcon.WBP_GadgetIcon_C.OnFocusLost
 // 0x0008 (0x0008 - 0x0000)
@@ -83,9 +65,7 @@ struct WBP_GadgetIcon_C_OnFocusLost final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_GadgetIcon_C_OnFocusLost) == 0x000004, "Wrong alignment on WBP_GadgetIcon_C_OnFocusLost");
-static_assert(sizeof(WBP_GadgetIcon_C_OnFocusLost) == 0x000008, "Wrong size on WBP_GadgetIcon_C_OnFocusLost");
-static_assert(offsetof(WBP_GadgetIcon_C_OnFocusLost, InFocusEvent) == 0x000000, "Member 'WBP_GadgetIcon_C_OnFocusLost::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetIcon_C_OnFocusLost;
 
 // Function WBP_GadgetIcon.WBP_GadgetIcon_C.OnFocusReceived
 // 0x01B0 (0x01B0 - 0x0000)
@@ -97,12 +77,7 @@ public:
 	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
 	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x00F8(0x00B8)()
 };
-static_assert(alignof(WBP_GadgetIcon_C_OnFocusReceived) == 0x000008, "Wrong alignment on WBP_GadgetIcon_C_OnFocusReceived");
-static_assert(sizeof(WBP_GadgetIcon_C_OnFocusReceived) == 0x0001B0, "Wrong size on WBP_GadgetIcon_C_OnFocusReceived");
-static_assert(offsetof(WBP_GadgetIcon_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'WBP_GadgetIcon_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'WBP_GadgetIcon_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'WBP_GadgetIcon_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_C_OnFocusReceived, K2Node_MakeStruct_EventReply) == 0x0000F8, "Member 'WBP_GadgetIcon_C_OnFocusReceived::K2Node_MakeStruct_EventReply' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetIcon_C_OnFocusReceived;
 
 // Function WBP_GadgetIcon.WBP_GadgetIcon_C.OnFocusReceivedInternal
 // 0x0040 (0x0040 - 0x0000)
@@ -112,10 +87,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_GadgetIcon_C_OnFocusReceivedInternal) == 0x000004, "Wrong alignment on WBP_GadgetIcon_C_OnFocusReceivedInternal");
-static_assert(sizeof(WBP_GadgetIcon_C_OnFocusReceivedInternal) == 0x000040, "Wrong size on WBP_GadgetIcon_C_OnFocusReceivedInternal");
-static_assert(offsetof(WBP_GadgetIcon_C_OnFocusReceivedInternal, MyGeometry) == 0x000000, "Member 'WBP_GadgetIcon_C_OnFocusReceivedInternal::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_C_OnFocusReceivedInternal, InFocusEvent) == 0x000038, "Member 'WBP_GadgetIcon_C_OnFocusReceivedInternal::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetIcon_C_OnFocusReceivedInternal;
 
 // Function WBP_GadgetIcon.WBP_GadgetIcon_C.PlayUnselectedAnimation
 // 0x0008 (0x0008 - 0x0000)
@@ -124,9 +96,7 @@ struct WBP_GadgetIcon_C_PlayUnselectedAnimation final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetIcon_C_PlayUnselectedAnimation) == 0x000008, "Wrong alignment on WBP_GadgetIcon_C_PlayUnselectedAnimation");
-static_assert(sizeof(WBP_GadgetIcon_C_PlayUnselectedAnimation) == 0x000008, "Wrong size on WBP_GadgetIcon_C_PlayUnselectedAnimation");
-static_assert(offsetof(WBP_GadgetIcon_C_PlayUnselectedAnimation, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_GadgetIcon_C_PlayUnselectedAnimation::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetIcon_C_PlayUnselectedAnimation;
 
 // Function WBP_GadgetIcon.WBP_GadgetIcon_C.SetGadgetSelectCursorColor
 // 0x0030 (0x0030 - 0x0000)
@@ -141,15 +111,7 @@ public:
 	class UMaterialInterface*                     Temp_object_Variable_3;                            // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInterface*                     K2Node_Select_Default;                             // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetIcon_C_SetGadgetSelectCursorColor) == 0x000008, "Wrong alignment on WBP_GadgetIcon_C_SetGadgetSelectCursorColor");
-static_assert(sizeof(WBP_GadgetIcon_C_SetGadgetSelectCursorColor) == 0x000030, "Wrong size on WBP_GadgetIcon_C_SetGadgetSelectCursorColor");
-static_assert(offsetof(WBP_GadgetIcon_C_SetGadgetSelectCursorColor, InPlayerIndex) == 0x000000, "Member 'WBP_GadgetIcon_C_SetGadgetSelectCursorColor::InPlayerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_C_SetGadgetSelectCursorColor, Temp_int_Variable) == 0x000004, "Member 'WBP_GadgetIcon_C_SetGadgetSelectCursorColor::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_C_SetGadgetSelectCursorColor, Temp_object_Variable) == 0x000008, "Member 'WBP_GadgetIcon_C_SetGadgetSelectCursorColor::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_C_SetGadgetSelectCursorColor, Temp_object_Variable_1) == 0x000010, "Member 'WBP_GadgetIcon_C_SetGadgetSelectCursorColor::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_C_SetGadgetSelectCursorColor, Temp_object_Variable_2) == 0x000018, "Member 'WBP_GadgetIcon_C_SetGadgetSelectCursorColor::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_C_SetGadgetSelectCursorColor, Temp_object_Variable_3) == 0x000020, "Member 'WBP_GadgetIcon_C_SetGadgetSelectCursorColor::Temp_object_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_C_SetGadgetSelectCursorColor, K2Node_Select_Default) == 0x000028, "Member 'WBP_GadgetIcon_C_SetGadgetSelectCursorColor::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetIcon_C_SetGadgetSelectCursorColor;
 
 // Function WBP_GadgetIcon.WBP_GadgetIcon_C.SetIconBaseShape
 // 0x0008 (0x0008 - 0x0000)
@@ -159,10 +121,7 @@ public:
 	int32                                         InSizeX;                                           // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         InSizeY;                                           // 0x0004(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetIcon_C_SetIconBaseShape) == 0x000004, "Wrong alignment on WBP_GadgetIcon_C_SetIconBaseShape");
-static_assert(sizeof(WBP_GadgetIcon_C_SetIconBaseShape) == 0x000008, "Wrong size on WBP_GadgetIcon_C_SetIconBaseShape");
-static_assert(offsetof(WBP_GadgetIcon_C_SetIconBaseShape, InSizeX) == 0x000000, "Member 'WBP_GadgetIcon_C_SetIconBaseShape::InSizeX' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetIcon_C_SetIconBaseShape, InSizeY) == 0x000004, "Member 'WBP_GadgetIcon_C_SetIconBaseShape::InSizeY' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetIcon_C_SetIconBaseShape;
 
 // Function WBP_GadgetIcon.WBP_GadgetIcon_C.SetReadyWindowFlag
 // 0x0001 (0x0001 - 0x0000)
@@ -171,9 +130,7 @@ struct WBP_GadgetIcon_C_SetReadyWindowFlag final
 public:
 	bool                                          InFlag;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetIcon_C_SetReadyWindowFlag) == 0x000001, "Wrong alignment on WBP_GadgetIcon_C_SetReadyWindowFlag");
-static_assert(sizeof(WBP_GadgetIcon_C_SetReadyWindowFlag) == 0x000001, "Wrong size on WBP_GadgetIcon_C_SetReadyWindowFlag");
-static_assert(offsetof(WBP_GadgetIcon_C_SetReadyWindowFlag, InFlag) == 0x000000, "Member 'WBP_GadgetIcon_C_SetReadyWindowFlag::InFlag' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetIcon_C_SetReadyWindowFlag;
 
 // Function WBP_GadgetIcon.WBP_GadgetIcon_C.SoundPlayMenuCancel
 // 0x0004 (0x0004 - 0x0000)
@@ -182,9 +139,7 @@ struct WBP_GadgetIcon_C_SoundPlayMenuCancel final
 public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0000(0x0004)()
 };
-static_assert(alignof(WBP_GadgetIcon_C_SoundPlayMenuCancel) == 0x000004, "Wrong alignment on WBP_GadgetIcon_C_SoundPlayMenuCancel");
-static_assert(sizeof(WBP_GadgetIcon_C_SoundPlayMenuCancel) == 0x000004, "Wrong size on WBP_GadgetIcon_C_SoundPlayMenuCancel");
-static_assert(offsetof(WBP_GadgetIcon_C_SoundPlayMenuCancel, CallFunc_SoundPlay_ReturnValue) == 0x000000, "Member 'WBP_GadgetIcon_C_SoundPlayMenuCancel::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetIcon_C_SoundPlayMenuCancel;
 
 // Function WBP_GadgetIcon.WBP_GadgetIcon_C.SoundPlayMenuError
 // 0x0004 (0x0004 - 0x0000)
@@ -193,9 +148,7 @@ struct WBP_GadgetIcon_C_SoundPlayMenuError final
 public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0000(0x0004)()
 };
-static_assert(alignof(WBP_GadgetIcon_C_SoundPlayMenuError) == 0x000004, "Wrong alignment on WBP_GadgetIcon_C_SoundPlayMenuError");
-static_assert(sizeof(WBP_GadgetIcon_C_SoundPlayMenuError) == 0x000004, "Wrong size on WBP_GadgetIcon_C_SoundPlayMenuError");
-static_assert(offsetof(WBP_GadgetIcon_C_SoundPlayMenuError, CallFunc_SoundPlay_ReturnValue) == 0x000000, "Member 'WBP_GadgetIcon_C_SoundPlayMenuError::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetIcon_C_SoundPlayMenuError;
 
 // Function WBP_GadgetIcon.WBP_GadgetIcon_C.SoundPlayMenuFix
 // 0x0004 (0x0004 - 0x0000)
@@ -204,9 +157,7 @@ struct WBP_GadgetIcon_C_SoundPlayMenuFix final
 public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0000(0x0004)()
 };
-static_assert(alignof(WBP_GadgetIcon_C_SoundPlayMenuFix) == 0x000004, "Wrong alignment on WBP_GadgetIcon_C_SoundPlayMenuFix");
-static_assert(sizeof(WBP_GadgetIcon_C_SoundPlayMenuFix) == 0x000004, "Wrong size on WBP_GadgetIcon_C_SoundPlayMenuFix");
-static_assert(offsetof(WBP_GadgetIcon_C_SoundPlayMenuFix, CallFunc_SoundPlay_ReturnValue) == 0x000000, "Member 'WBP_GadgetIcon_C_SoundPlayMenuFix::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetIcon_C_SoundPlayMenuFix;
 
 // Function WBP_GadgetIcon.WBP_GadgetIcon_C.SoundPlayMenuTab
 // 0x0004 (0x0004 - 0x0000)
@@ -215,9 +166,7 @@ struct WBP_GadgetIcon_C_SoundPlayMenuTab final
 public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0000(0x0004)()
 };
-static_assert(alignof(WBP_GadgetIcon_C_SoundPlayMenuTab) == 0x000004, "Wrong alignment on WBP_GadgetIcon_C_SoundPlayMenuTab");
-static_assert(sizeof(WBP_GadgetIcon_C_SoundPlayMenuTab) == 0x000004, "Wrong size on WBP_GadgetIcon_C_SoundPlayMenuTab");
-static_assert(offsetof(WBP_GadgetIcon_C_SoundPlayMenuTab, CallFunc_SoundPlay_ReturnValue) == 0x000000, "Member 'WBP_GadgetIcon_C_SoundPlayMenuTab::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetIcon_C_SoundPlayMenuTab;
 
 }
 

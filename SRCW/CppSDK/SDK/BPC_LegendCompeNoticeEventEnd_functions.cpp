@@ -234,6 +234,34 @@ void UBPC_LegendCompeNoticeEventEnd_C::OnInitState()
 }
 
 
+// Function BPC_LegendCompeNoticeEventEnd.BPC_LegendCompeNoticeEventEnd_C.ShowDonpaTicketDiff
+// (BlueprintCallable, BlueprintEvent)
+
+void UBPC_LegendCompeNoticeEventEnd_C::ShowDonpaTicketDiff()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_LegendCompeNoticeEventEnd_C", "ShowDonpaTicketDiff");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BPC_LegendCompeNoticeEventEnd.BPC_LegendCompeNoticeEventEnd_C.FinishNoticeEventEnd
+// (BlueprintCallable, BlueprintEvent)
+
+void UBPC_LegendCompeNoticeEventEnd_C::FinishNoticeEventEnd()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_LegendCompeNoticeEventEnd_C", "FinishNoticeEventEnd");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BPC_LegendCompeNoticeEventEnd.BPC_LegendCompeNoticeEventEnd_C.ExecuteUbergraph_BPC_LegendCompeNoticeEventEnd
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "UnionSystem_classes.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -39,18 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_UnionGameInstance_C">();
+		BP_STATIC_CLASS_IMPL("BP_UnionGameInstance_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_UnionGameInstance_C")
 	}
 	static class UBP_UnionGameInstance_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_UnionGameInstance_C>();
 	}
 };
-static_assert(alignof(UBP_UnionGameInstance_C) == 0x000008, "Wrong alignment on UBP_UnionGameInstance_C");
-static_assert(sizeof(UBP_UnionGameInstance_C) == 0x000220, "Wrong size on UBP_UnionGameInstance_C");
-static_assert(offsetof(UBP_UnionGameInstance_C, UberGraphFrame) == 0x0001E0, "Member 'UBP_UnionGameInstance_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_UnionGameInstance_C, DefaultDisableItemTable) == 0x0001E8, "Member 'UBP_UnionGameInstance_C::DefaultDisableItemTable' has a wrong offset!");
-static_assert(offsetof(UBP_UnionGameInstance_C, DefaultDisableItemArr) == 0x000210, "Member 'UBP_UnionGameInstance_C::DefaultDisableItemArr' has a wrong offset!");
+DUMPER7_ASSERTS_UBP_UnionGameInstance_C;
 
 }
 

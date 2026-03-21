@@ -23,15 +23,18 @@ class UInterchangeTextureWriter final : public UInterchangeWriterBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeTextureWriter">();
+		STATIC_CLASS_IMPL("InterchangeTextureWriter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeTextureWriter")
 	}
 	static class UInterchangeTextureWriter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeTextureWriter>();
 	}
 };
-static_assert(alignof(UInterchangeTextureWriter) == 0x000008, "Wrong alignment on UInterchangeTextureWriter");
-static_assert(sizeof(UInterchangeTextureWriter) == 0x000028, "Wrong size on UInterchangeTextureWriter");
+DUMPER7_ASSERTS_UInterchangeTextureWriter;
 
 }
 

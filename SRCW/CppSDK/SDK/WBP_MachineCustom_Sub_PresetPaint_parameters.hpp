@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "ST_ColorPresetSelectPageItemData_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "UNION_structs.hpp"
-#include "UnionUI_structs.hpp"
-#include "UMG_structs.hpp"
 #include "ST_ColorPresetSelectPageData_structs.hpp"
+#include "UnionSystem_structs.hpp"
+#include "SlateCore_structs.hpp"
+#include "UMG_structs.hpp"
+#include "ST_ColorPresetSelectPageItemData_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK::Params
@@ -31,11 +31,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnCancel) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_PresetPaint_C_Event_OnCancel");
-static_assert(sizeof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnCancel) == 0x000010, "Wrong size on WBP_MachineCustom_Sub_PresetPaint_C_Event_OnCancel");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnCancel, Button) == 0x000000, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnCancel::Button' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnCancel, PanelIndex) == 0x000008, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnCancel::PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnCancel, ButtonIndex) == 0x00000C, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnCancel::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_PresetPaint_C_Event_OnCancel;
 
 // Function WBP_MachineCustom_Sub_PresetPaint.WBP_MachineCustom_Sub_PresetPaint_C.Event_OnDecision
 // 0x0180 (0x0180 - 0x0000)
@@ -75,34 +71,7 @@ public:
 	uint8                                         Pad_127[0x1];                                      // 0x0127(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FST_ColorPresetSelectPageItemData      K2Node_SetFieldsInStruct_StructOut;                // 0x0128(0x0058)(HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision");
-static_assert(sizeof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision) == 0x000180, "Wrong size on WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision, Button) == 0x000000, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision::Button' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision, PanelIndex) == 0x000008, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision::PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision, ButtonIndex) == 0x00000C, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision::ButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision, Temp_int_Loop_Counter_Variable) == 0x000010, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision, CallFunc_GetPageForIndex_Output) == 0x000018, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision::CallFunc_GetPageForIndex_Output' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision, CallFunc_Add_IntInt_ReturnValue) == 0x000020, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision, K2Node_DynamicCast_AsWBP_Machinr_Custom_Sub_Paint_Preset_Icon) == 0x000028, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision::K2Node_DynamicCast_AsWBP_Machinr_Custom_Sub_Paint_Preset_Icon' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision, CallFunc_GetItemData_OutItemData) == 0x000038, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision::CallFunc_GetItemData_OutItemData' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision, Temp_int_Array_Index_Variable) == 0x000090, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000094, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000095, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision, CallFunc_IsAnimationPlaying_ReturnValue_1) == 0x000096, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision::CallFunc_IsAnimationPlaying_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision, CallFunc_BooleanOR_ReturnValue) == 0x000097, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision, Temp_int_Loop_Counter_Variable_1) == 0x000098, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision, CallFunc_Add_IntInt_ReturnValue_1) == 0x00009C, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision, CallFunc_Array_Length_ReturnValue) == 0x0000A0, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision, CallFunc_Less_IntInt_ReturnValue) == 0x0000A4, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision, Temp_int_Array_Index_Variable_1) == 0x0000A8, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision, CallFunc_Array_Get_Item) == 0x0000B0, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision, CallFunc_Array_Get_Item_1) == 0x0000C8, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision, CallFunc_Array_Length_ReturnValue_1) == 0x000120, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision, CallFunc_Less_IntInt_ReturnValue_1) == 0x000124, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000125, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision, CallFunc_BooleanAND_ReturnValue) == 0x000126, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision, K2Node_SetFieldsInStruct_StructOut) == 0x000128, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision::K2Node_SetFieldsInStruct_StructOut' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_PresetPaint_C_Event_OnDecision;
 
 // Function WBP_MachineCustom_Sub_PresetPaint.WBP_MachineCustom_Sub_PresetPaint_C.Event_OnFocus
 // 0x0078 (0x0078 - 0x0000)
@@ -117,14 +86,7 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FST_ColorPresetSelectPageItemData      CallFunc_GetItemData_OutItemData;                  // 0x0020(0x0058)(HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnFocus) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_PresetPaint_C_Event_OnFocus");
-static_assert(sizeof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnFocus) == 0x000078, "Wrong size on WBP_MachineCustom_Sub_PresetPaint_C_Event_OnFocus");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnFocus, Button) == 0x000000, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnFocus::Button' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnFocus, PanelIndex) == 0x000008, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnFocus::PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnFocus, ButtonIndex) == 0x00000C, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnFocus::ButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnFocus, K2Node_DynamicCast_AsWBP_Machinr_Custom_Sub_Paint_Preset_Icon) == 0x000010, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnFocus::K2Node_DynamicCast_AsWBP_Machinr_Custom_Sub_Paint_Preset_Icon' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnFocus, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnFocus::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnFocus, CallFunc_GetItemData_OutItemData) == 0x000020, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnFocus::CallFunc_GetItemData_OutItemData' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_PresetPaint_C_Event_OnFocus;
 
 // Function WBP_MachineCustom_Sub_PresetPaint.WBP_MachineCustom_Sub_PresetPaint_C.Event_OnLShoulder
 // 0x0018 (0x0018 - 0x0000)
@@ -136,12 +98,7 @@ public:
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsVisibleButton_ButtonVisibility;         // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnLShoulder) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_PresetPaint_C_Event_OnLShoulder");
-static_assert(sizeof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnLShoulder) == 0x000018, "Wrong size on WBP_MachineCustom_Sub_PresetPaint_C_Event_OnLShoulder");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnLShoulder, Button) == 0x000000, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnLShoulder::Button' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnLShoulder, PanelIndex) == 0x000008, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnLShoulder::PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnLShoulder, ButtonIndex) == 0x00000C, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnLShoulder::ButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnLShoulder, CallFunc_IsVisibleButton_ButtonVisibility) == 0x000010, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnLShoulder::CallFunc_IsVisibleButton_ButtonVisibility' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_PresetPaint_C_Event_OnLShoulder;
 
 // Function WBP_MachineCustom_Sub_PresetPaint.WBP_MachineCustom_Sub_PresetPaint_C.Event_OnRShoulder
 // 0x0018 (0x0018 - 0x0000)
@@ -153,12 +110,7 @@ public:
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsVisibleButton_ButtonVisibility;         // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnRShoulder) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_PresetPaint_C_Event_OnRShoulder");
-static_assert(sizeof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnRShoulder) == 0x000018, "Wrong size on WBP_MachineCustom_Sub_PresetPaint_C_Event_OnRShoulder");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnRShoulder, Button) == 0x000000, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnRShoulder::Button' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnRShoulder, PanelIndex) == 0x000008, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnRShoulder::PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnRShoulder, ButtonIndex) == 0x00000C, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnRShoulder::ButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnRShoulder, CallFunc_IsVisibleButton_ButtonVisibility) == 0x000010, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnRShoulder::CallFunc_IsVisibleButton_ButtonVisibility' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_PresetPaint_C_Event_OnRShoulder;
 
 // Function WBP_MachineCustom_Sub_PresetPaint.WBP_MachineCustom_Sub_PresetPaint_C.Event_OnSideNavigationCustom
 // 0x0020 (0x0020 - 0x0000)
@@ -172,13 +124,7 @@ public:
 	int32                                         ColumnIndex;                                       // 0x0014(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnSideNavigationCustom) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_PresetPaint_C_Event_OnSideNavigationCustom");
-static_assert(sizeof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnSideNavigationCustom) == 0x000020, "Wrong size on WBP_MachineCustom_Sub_PresetPaint_C_Event_OnSideNavigationCustom");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnSideNavigationCustom, Direction) == 0x000000, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnSideNavigationCustom::Direction' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnSideNavigationCustom, Button) == 0x000008, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnSideNavigationCustom::Button' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnSideNavigationCustom, RowIndex) == 0x000010, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnSideNavigationCustom::RowIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnSideNavigationCustom, ColumnIndex) == 0x000014, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnSideNavigationCustom::ColumnIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Event_OnSideNavigationCustom, K2Node_SwitchEnum_CmpSuccess) == 0x000018, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Event_OnSideNavigationCustom::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_PresetPaint_C_Event_OnSideNavigationCustom;
 
 // Function WBP_MachineCustom_Sub_PresetPaint.WBP_MachineCustom_Sub_PresetPaint_C.ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint
 // 0x00D0 (0x00D0 - 0x0000)
@@ -214,31 +160,7 @@ public:
 	TDelegate<void(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex)> K2Node_CreateDelegate_OutputDelegate_4; // 0x00B0(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex)> K2Node_CreateDelegate_OutputDelegate_5; // 0x00C0(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint");
-static_assert(sizeof(WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint) == 0x0000D0, "Wrong size on WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint, EntryPoint) == 0x000000, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint, Temp_int_Array_Index_Variable) == 0x000008, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint, CallFunc_CreateButtonsPanel_ReturnValue) == 0x000010, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint::CallFunc_CreateButtonsPanel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint, CallFunc_MakeLiteralBool_ReturnValue) == 0x000018, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint::CallFunc_MakeLiteralBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint, K2Node_CreateDelegate_OutputDelegate) == 0x00001C, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint, K2Node_CreateDelegate_OutputDelegate_1) == 0x00002C, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint, K2Node_CreateDelegate_OutputDelegate_2) == 0x00003C, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint, K2Node_CreateDelegate_OutputDelegate_3) == 0x00004C, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint, CallFunc_GetPage_OutList) == 0x000060, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint::CallFunc_GetPage_OutList' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint, CallFunc_GetPageForIndex_Output) == 0x000070, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint::CallFunc_GetPageForIndex_Output' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint, CallFunc_Array_Get_Item) == 0x000078, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint, CallFunc_Array_Length_ReturnValue) == 0x000080, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint, CallFunc_GetPageForIndex_Output_1) == 0x000088, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint::CallFunc_GetPageForIndex_Output_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint, CallFunc_Less_IntInt_ReturnValue) == 0x000090, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint, CallFunc_GetItemNumInRow_OutItemNumInRow) == 0x000094, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint::CallFunc_GetItemNumInRow_OutItemNumInRow' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint, CallFunc_GetItems_List) == 0x000098, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint::CallFunc_GetItems_List' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint, CallFunc_Array_Length_ReturnValue_1) == 0x0000A8, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint, CallFunc_IsEnableMouseClick_ReturnValue) == 0x0000AC, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint::CallFunc_IsEnableMouseClick_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint, CallFunc_IsEnableMouseClick_ReturnValue_1) == 0x0000AD, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint::CallFunc_IsEnableMouseClick_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint, K2Node_CreateDelegate_OutputDelegate_4) == 0x0000B0, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint, K2Node_CreateDelegate_OutputDelegate_5) == 0x0000C0, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_PresetPaint_C_ExecuteUbergraph_WBP_MachineCustom_Sub_PresetPaint;
 
 // Function WBP_MachineCustom_Sub_PresetPaint.WBP_MachineCustom_Sub_PresetPaint_C.OnFocusReceived
 // 0x01B0 (0x01B0 - 0x0000)
@@ -250,12 +172,7 @@ public:
 	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
 	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x00F8(0x00B8)()
 };
-static_assert(alignof(WBP_MachineCustom_Sub_PresetPaint_C_OnFocusReceived) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_PresetPaint_C_OnFocusReceived");
-static_assert(sizeof(WBP_MachineCustom_Sub_PresetPaint_C_OnFocusReceived) == 0x0001B0, "Wrong size on WBP_MachineCustom_Sub_PresetPaint_C_OnFocusReceived");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_OnFocusReceived, K2Node_MakeStruct_EventReply) == 0x0000F8, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_OnFocusReceived::K2Node_MakeStruct_EventReply' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_PresetPaint_C_OnFocusReceived;
 
 // Function WBP_MachineCustom_Sub_PresetPaint.WBP_MachineCustom_Sub_PresetPaint_C.OnFocusReceivedInternal
 // 0x0044 (0x0044 - 0x0000)
@@ -266,11 +183,7 @@ public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	int32                                         CallFunc_GetUserIndexByFocusEvent_ReturnValue;     // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_PresetPaint_C_OnFocusReceivedInternal) == 0x000004, "Wrong alignment on WBP_MachineCustom_Sub_PresetPaint_C_OnFocusReceivedInternal");
-static_assert(sizeof(WBP_MachineCustom_Sub_PresetPaint_C_OnFocusReceivedInternal) == 0x000044, "Wrong size on WBP_MachineCustom_Sub_PresetPaint_C_OnFocusReceivedInternal");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_OnFocusReceivedInternal, MyGeometry) == 0x000000, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_OnFocusReceivedInternal::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_OnFocusReceivedInternal, InFocusEvent) == 0x000038, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_OnFocusReceivedInternal::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_OnFocusReceivedInternal, CallFunc_GetUserIndexByFocusEvent_ReturnValue) == 0x000040, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_OnFocusReceivedInternal::CallFunc_GetUserIndexByFocusEvent_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_PresetPaint_C_OnFocusReceivedInternal;
 
 // Function WBP_MachineCustom_Sub_PresetPaint.WBP_MachineCustom_Sub_PresetPaint_C.PlayAnimationLeftIn
 // 0x0008 (0x0008 - 0x0000)
@@ -279,9 +192,7 @@ struct WBP_MachineCustom_Sub_PresetPaint_C_PlayAnimationLeftIn final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_PresetPaint_C_PlayAnimationLeftIn) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_PresetPaint_C_PlayAnimationLeftIn");
-static_assert(sizeof(WBP_MachineCustom_Sub_PresetPaint_C_PlayAnimationLeftIn) == 0x000008, "Wrong size on WBP_MachineCustom_Sub_PresetPaint_C_PlayAnimationLeftIn");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_PlayAnimationLeftIn, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_PlayAnimationLeftIn::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_PresetPaint_C_PlayAnimationLeftIn;
 
 // Function WBP_MachineCustom_Sub_PresetPaint.WBP_MachineCustom_Sub_PresetPaint_C.PlayAnimationLoop
 // 0x0008 (0x0008 - 0x0000)
@@ -290,9 +201,7 @@ struct WBP_MachineCustom_Sub_PresetPaint_C_PlayAnimationLoop final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_PresetPaint_C_PlayAnimationLoop) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_PresetPaint_C_PlayAnimationLoop");
-static_assert(sizeof(WBP_MachineCustom_Sub_PresetPaint_C_PlayAnimationLoop) == 0x000008, "Wrong size on WBP_MachineCustom_Sub_PresetPaint_C_PlayAnimationLoop");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_PlayAnimationLoop, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_PlayAnimationLoop::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_PresetPaint_C_PlayAnimationLoop;
 
 // Function WBP_MachineCustom_Sub_PresetPaint.WBP_MachineCustom_Sub_PresetPaint_C.PlayAnimationRightIn
 // 0x0008 (0x0008 - 0x0000)
@@ -301,9 +210,7 @@ struct WBP_MachineCustom_Sub_PresetPaint_C_PlayAnimationRightIn final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_PresetPaint_C_PlayAnimationRightIn) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_PresetPaint_C_PlayAnimationRightIn");
-static_assert(sizeof(WBP_MachineCustom_Sub_PresetPaint_C_PlayAnimationRightIn) == 0x000008, "Wrong size on WBP_MachineCustom_Sub_PresetPaint_C_PlayAnimationRightIn");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_PlayAnimationRightIn, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_PlayAnimationRightIn::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_PresetPaint_C_PlayAnimationRightIn;
 
 // Function WBP_MachineCustom_Sub_PresetPaint.WBP_MachineCustom_Sub_PresetPaint_C.PlaySETab
 // 0x0004 (0x0004 - 0x0000)
@@ -312,9 +219,7 @@ struct WBP_MachineCustom_Sub_PresetPaint_C_PlaySETab final
 public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0000(0x0004)()
 };
-static_assert(alignof(WBP_MachineCustom_Sub_PresetPaint_C_PlaySETab) == 0x000004, "Wrong alignment on WBP_MachineCustom_Sub_PresetPaint_C_PlaySETab");
-static_assert(sizeof(WBP_MachineCustom_Sub_PresetPaint_C_PlaySETab) == 0x000004, "Wrong size on WBP_MachineCustom_Sub_PresetPaint_C_PlaySETab");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_PlaySETab, CallFunc_SoundPlay_ReturnValue) == 0x000000, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_PlaySETab::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_PresetPaint_C_PlaySETab;
 
 // Function WBP_MachineCustom_Sub_PresetPaint.WBP_MachineCustom_Sub_PresetPaint_C.SetEnableShoulderItem
 // 0x0050 (0x0050 - 0x0000)
@@ -334,18 +239,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_PresetPaint_C_SetEnableShoulderItem) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_PresetPaint_C_SetEnableShoulderItem");
-static_assert(sizeof(WBP_MachineCustom_Sub_PresetPaint_C_SetEnableShoulderItem) == 0x000050, "Wrong size on WBP_MachineCustom_Sub_PresetPaint_C_SetEnableShoulderItem");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetEnableShoulderItem, IsEnable) == 0x000000, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetEnableShoulderItem::IsEnable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetEnableShoulderItem, Items) == 0x000008, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetEnableShoulderItem::Items' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetEnableShoulderItem, Temp_int_Array_Index_Variable) == 0x000018, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetEnableShoulderItem::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetEnableShoulderItem, Temp_int_Loop_Counter_Variable) == 0x00001C, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetEnableShoulderItem::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetEnableShoulderItem, CallFunc_Add_IntInt_ReturnValue) == 0x000020, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetEnableShoulderItem::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetEnableShoulderItem, CallFunc_GetPageForIndex_Output) == 0x000028, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetEnableShoulderItem::CallFunc_GetPageForIndex_Output' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetEnableShoulderItem, CallFunc_Array_Get_Item) == 0x000030, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetEnableShoulderItem::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetEnableShoulderItem, CallFunc_GetItems_List) == 0x000038, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetEnableShoulderItem::CallFunc_GetItems_List' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetEnableShoulderItem, CallFunc_Array_Length_ReturnValue) == 0x000048, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetEnableShoulderItem::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetEnableShoulderItem, CallFunc_Less_IntInt_ReturnValue) == 0x00004C, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetEnableShoulderItem::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_PresetPaint_C_SetEnableShoulderItem;
 
 // Function WBP_MachineCustom_Sub_PresetPaint.WBP_MachineCustom_Sub_PresetPaint_C.SetFocusItem
 // 0x0030 (0x0030 - 0x0000)
@@ -360,14 +254,7 @@ public:
 	class UWBP_MachinrCustom_Sub_Paint_PresetIcon_C* CallFunc_GetItem_Output;                        // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusItem) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_PresetPaint_C_SetFocusItem");
-static_assert(sizeof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusItem) == 0x000030, "Wrong size on WBP_MachineCustom_Sub_PresetPaint_C_SetFocusItem");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusItem, InItemIndex) == 0x000000, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusItem::InItemIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusItem, PlayerContorller) == 0x000008, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusItem::PlayerContorller' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusItem, Item) == 0x000010, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusItem::Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusItem, CallFunc_GetPageForIndex_Output) == 0x000018, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusItem::CallFunc_GetPageForIndex_Output' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusItem, CallFunc_GetItem_Output) == 0x000020, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusItem::CallFunc_GetItem_Output' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusItem, CallFunc_GetPlayerController_ReturnValue) == 0x000028, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusItem::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_PresetPaint_C_SetFocusItem;
 
 // Function WBP_MachineCustom_Sub_PresetPaint.WBP_MachineCustom_Sub_PresetPaint_C.SetFocusToItemInNextPage
 // 0x0040 (0x0040 - 0x0000)
@@ -400,28 +287,7 @@ public:
 	uint8                                         Pad_3A[0x2];                                       // 0x003A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Multiply_IntInt_ReturnValue_1;            // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage) == 0x000004, "Wrong alignment on WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage");
-static_assert(sizeof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage) == 0x000040, "Wrong size on WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage, InRowIndex) == 0x000000, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage::InRowIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage, TempItemIndex) == 0x000004, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage::TempItemIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage, TempRowIndex) == 0x000008, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage::TempRowIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage, bIsItemFound) == 0x00000C, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage::bIsItemFound' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage, CallFunc_Subtract_IntInt_ReturnValue) == 0x000010, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000014, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000015, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x000018, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage, CallFunc_Add_IntInt_ReturnValue) == 0x00001C, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000020, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage, CallFunc_Not_PreBool_ReturnValue) == 0x000021, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage, CallFunc_Not_PreBool_ReturnValue_1) == 0x000022, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage, Temp_int_Variable) == 0x000024, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage, CallFunc_BooleanAND_ReturnValue) == 0x000028, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage, Temp_int_Variable_1) == 0x00002C, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage, CallFunc_Multiply_IntInt_ReturnValue) == 0x000030, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage::CallFunc_Multiply_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage, CallFunc_Subtract_IntInt_ReturnValue_2) == 0x000034, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage::CallFunc_Subtract_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000038, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage, CallFunc_BooleanAND_ReturnValue_1) == 0x000039, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage, CallFunc_Multiply_IntInt_ReturnValue_1) == 0x00003C, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage::CallFunc_Multiply_IntInt_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInNextPage;
 
 // Function WBP_MachineCustom_Sub_PresetPaint.WBP_MachineCustom_Sub_PresetPaint_C.SetFocusToItemInPrevPage
 // 0x0040 (0x0040 - 0x0000)
@@ -454,28 +320,7 @@ public:
 	int32                                         CallFunc_Multiply_IntInt_ReturnValue_1;            // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue_2;            // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage) == 0x000004, "Wrong alignment on WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage");
-static_assert(sizeof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage) == 0x000040, "Wrong size on WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage, InRowIndex) == 0x000000, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage::InRowIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage, TempItemIndex) == 0x000004, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage::TempItemIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage, TempRowIndex) == 0x000008, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage::TempRowIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage, bIsItemFound) == 0x00000C, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage::bIsItemFound' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage, CallFunc_Not_PreBool_ReturnValue) == 0x00000D, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage, CallFunc_Not_PreBool_ReturnValue_1) == 0x00000E, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage, CallFunc_Subtract_IntInt_ReturnValue) == 0x000010, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x000014, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000018, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000019, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage, CallFunc_Add_IntInt_ReturnValue) == 0x00001C, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000020, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage, Temp_int_Variable) == 0x000024, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage, CallFunc_BooleanAND_ReturnValue) == 0x000028, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage, Temp_int_Variable_1) == 0x00002C, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage, CallFunc_Multiply_IntInt_ReturnValue) == 0x000030, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage::CallFunc_Multiply_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage, CallFunc_GreaterEqual_IntInt_ReturnValue_1) == 0x000034, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage::CallFunc_GreaterEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage, CallFunc_BooleanAND_ReturnValue_1) == 0x000035, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage, CallFunc_Multiply_IntInt_ReturnValue_1) == 0x000038, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage::CallFunc_Multiply_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage, CallFunc_Subtract_IntInt_ReturnValue_2) == 0x00003C, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage::CallFunc_Subtract_IntInt_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_PresetPaint_C_SetFocusToItemInPrevPage;
 
 // Function WBP_MachineCustom_Sub_PresetPaint.WBP_MachineCustom_Sub_PresetPaint_C.SetIndices
 // 0x0098 (0x0098 - 0x0000)
@@ -496,20 +341,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0094(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_PresetPaint_C_SetIndices) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_PresetPaint_C_SetIndices");
-static_assert(sizeof(WBP_MachineCustom_Sub_PresetPaint_C_SetIndices) == 0x000098, "Wrong size on WBP_MachineCustom_Sub_PresetPaint_C_SetIndices");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetIndices, Temp_int_Loop_Counter_Variable) == 0x000000, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetIndices::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetIndices, CallFunc_Add_IntInt_ReturnValue) == 0x000004, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetIndices::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetIndices, Temp_int_Array_Index_Variable) == 0x000008, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetIndices::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetIndices, Temp_int_Array_Index_Variable_1) == 0x00000C, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetIndices::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetIndices, Temp_int_Loop_Counter_Variable_1) == 0x000010, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetIndices::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetIndices, CallFunc_Add_IntInt_ReturnValue_1) == 0x000014, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetIndices::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetIndices, CallFunc_Array_Get_Item) == 0x000018, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetIndices::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetIndices, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetIndices::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetIndices, CallFunc_Less_IntInt_ReturnValue) == 0x000034, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetIndices::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetIndices, CallFunc_Array_Get_Item_1) == 0x000038, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetIndices::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetIndices, CallFunc_Array_Length_ReturnValue_1) == 0x000090, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetIndices::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetIndices, CallFunc_Less_IntInt_ReturnValue_1) == 0x000094, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetIndices::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_PresetPaint_C_SetIndices;
 
 // Function WBP_MachineCustom_Sub_PresetPaint.WBP_MachineCustom_Sub_PresetPaint_C.SetIsGamepadKey
 // 0x0001 (0x0001 - 0x0000)
@@ -518,9 +350,7 @@ struct WBP_MachineCustom_Sub_PresetPaint_C_SetIsGamepadKey final
 public:
 	bool                                          Is_Game_Pad_Key;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_PresetPaint_C_SetIsGamepadKey) == 0x000001, "Wrong alignment on WBP_MachineCustom_Sub_PresetPaint_C_SetIsGamepadKey");
-static_assert(sizeof(WBP_MachineCustom_Sub_PresetPaint_C_SetIsGamepadKey) == 0x000001, "Wrong size on WBP_MachineCustom_Sub_PresetPaint_C_SetIsGamepadKey");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetIsGamepadKey, Is_Game_Pad_Key) == 0x000000, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetIsGamepadKey::Is_Game_Pad_Key' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_PresetPaint_C_SetIsGamepadKey;
 
 // Function WBP_MachineCustom_Sub_PresetPaint.WBP_MachineCustom_Sub_PresetPaint_C.SetPageItems
 // 0x0018 (0x0018 - 0x0000)
@@ -533,12 +363,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_MachinrCustom_Sub_Paint_PresetWindow_C* CallFunc_GetPageForIndex_Output;              // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_PresetPaint_C_SetPageItems) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_PresetPaint_C_SetPageItems");
-static_assert(sizeof(WBP_MachineCustom_Sub_PresetPaint_C_SetPageItems) == 0x000018, "Wrong size on WBP_MachineCustom_Sub_PresetPaint_C_SetPageItems");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetPageItems, InPageDataIndex) == 0x000000, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetPageItems::InPageDataIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetPageItems, InPageIndex) == 0x000004, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetPageItems::InPageIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetPageItems, TempItemNum) == 0x000008, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetPageItems::TempItemNum' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetPageItems, CallFunc_GetPageForIndex_Output) == 0x000010, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetPageItems::CallFunc_GetPageForIndex_Output' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_PresetPaint_C_SetPageItems;
 
 // Function WBP_MachineCustom_Sub_PresetPaint.WBP_MachineCustom_Sub_PresetPaint_C.SetPagePlayerIndex
 // 0x0010 (0x0010 - 0x0000)
@@ -549,11 +374,7 @@ public:
 	int32                                         InPageIndex;                                       // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWBP_MachinrCustom_Sub_Paint_PresetWindow_C* CallFunc_GetPageForIndex_Output;              // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_PresetPaint_C_SetPagePlayerIndex) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_PresetPaint_C_SetPagePlayerIndex");
-static_assert(sizeof(WBP_MachineCustom_Sub_PresetPaint_C_SetPagePlayerIndex) == 0x000010, "Wrong size on WBP_MachineCustom_Sub_PresetPaint_C_SetPagePlayerIndex");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetPagePlayerIndex, InPlayerIndex) == 0x000000, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetPagePlayerIndex::InPlayerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetPagePlayerIndex, InPageIndex) == 0x000004, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetPagePlayerIndex::InPageIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetPagePlayerIndex, CallFunc_GetPageForIndex_Output) == 0x000008, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetPagePlayerIndex::CallFunc_GetPageForIndex_Output' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_PresetPaint_C_SetPagePlayerIndex;
 
 // Function WBP_MachineCustom_Sub_PresetPaint.WBP_MachineCustom_Sub_PresetPaint_C.Setup
 // 0x00F0 (0x00F0 - 0x0000)
@@ -594,33 +415,7 @@ public:
 	uint8                                         Pad_E5[0x3];                                       // 0x00E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_PresetPaint_C_Setup) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_PresetPaint_C_Setup");
-static_assert(sizeof(WBP_MachineCustom_Sub_PresetPaint_C_Setup) == 0x0000F0, "Wrong size on WBP_MachineCustom_Sub_PresetPaint_C_Setup");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Setup, InItemDataList) == 0x000000, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Setup::InItemDataList' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Setup, PageDataTemp) == 0x000010, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Setup::PageDataTemp' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Setup, loopcnt) == 0x000028, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Setup::loopcnt' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Setup, Temp_int_Array_Index_Variable) == 0x00002C, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Setup::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Setup, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Setup::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Setup, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000034, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Setup::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Setup, Temp_int_Loop_Counter_Variable) == 0x000038, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Setup::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Setup, CallFunc_Less_IntInt_ReturnValue) == 0x00003C, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Setup::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Setup, CallFunc_Add_IntInt_ReturnValue) == 0x000040, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Setup::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Setup, Temp_bool_True_if_break_was_hit_Variable) == 0x000044, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Setup::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Setup, Temp_int_Array_Index_Variable_1) == 0x000048, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Setup::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Setup, CallFunc_Array_Get_Item) == 0x000050, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Setup::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Setup, CallFunc_Not_PreBool_ReturnValue) == 0x0000A8, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Setup::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Setup, Temp_int_Loop_Counter_Variable_1) == 0x0000AC, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Setup::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Setup, CallFunc_BooleanAND_ReturnValue) == 0x0000B0, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Setup::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Setup, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000B4, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Setup::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Setup, CallFunc_GetPage_OutList) == 0x0000B8, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Setup::CallFunc_GetPage_OutList' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Setup, CallFunc_Array_Get_Item_1) == 0x0000C8, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Setup::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Setup, CallFunc_Array_Length_ReturnValue_1) == 0x0000D0, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Setup::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Setup, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000D4, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Setup::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Setup, CallFunc_Array_Add_ReturnValue) == 0x0000D8, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Setup::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Setup, CallFunc_Array_Add_ReturnValue_1) == 0x0000DC, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Setup::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Setup, CallFunc_Array_Add_ReturnValue_2) == 0x0000E0, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Setup::CallFunc_Array_Add_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Setup, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x0000E4, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Setup::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_Setup, CallFunc_Add_IntInt_ReturnValue_2) == 0x0000E8, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_Setup::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_PresetPaint_C_Setup;
 
 // Function WBP_MachineCustom_Sub_PresetPaint.WBP_MachineCustom_Sub_PresetPaint_C.SetupArrows
 // 0x0014 (0x0014 - 0x0000)
@@ -641,20 +436,7 @@ public:
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_PresetPaint_C_SetupArrows) == 0x000004, "Wrong alignment on WBP_MachineCustom_Sub_PresetPaint_C_SetupArrows");
-static_assert(sizeof(WBP_MachineCustom_Sub_PresetPaint_C_SetupArrows) == 0x000014, "Wrong size on WBP_MachineCustom_Sub_PresetPaint_C_SetupArrows");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetupArrows, Temp_bool_Variable) == 0x000000, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetupArrows::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetupArrows, Temp_byte_Variable) == 0x000001, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetupArrows::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetupArrows, Temp_byte_Variable_1) == 0x000002, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetupArrows::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetupArrows, Temp_bool_Variable_1) == 0x000003, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetupArrows::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetupArrows, Temp_byte_Variable_2) == 0x000004, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetupArrows::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetupArrows, Temp_byte_Variable_3) == 0x000005, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetupArrows::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetupArrows, CallFunc_Array_Length_ReturnValue) == 0x000008, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetupArrows::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetupArrows, CallFunc_Subtract_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetupArrows::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetupArrows, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000010, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetupArrows::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetupArrows, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000011, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetupArrows::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetupArrows, K2Node_Select_Default) == 0x000012, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetupArrows::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetupArrows, K2Node_Select_Default_1) == 0x000013, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetupArrows::K2Node_Select_Default_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_PresetPaint_C_SetupArrows;
 
 // Function WBP_MachineCustom_Sub_PresetPaint.WBP_MachineCustom_Sub_PresetPaint_C.SetupPage
 // 0x0010 (0x0010 - 0x0000)
@@ -665,11 +447,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_PresetPaint_C_SetupPage) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_PresetPaint_C_SetupPage");
-static_assert(sizeof(WBP_MachineCustom_Sub_PresetPaint_C_SetupPage) == 0x000010, "Wrong size on WBP_MachineCustom_Sub_PresetPaint_C_SetupPage");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetupPage, CallFunc_GetPageForIndex_Output) == 0x000000, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetupPage::CallFunc_GetPageForIndex_Output' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetupPage, CallFunc_Array_Length_ReturnValue) == 0x000008, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetupPage::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetupPage, CallFunc_LessEqual_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetupPage::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_PresetPaint_C_SetupPage;
 
 // Function WBP_MachineCustom_Sub_PresetPaint.WBP_MachineCustom_Sub_PresetPaint_C.SetupScrollPointBox
 // 0x0040 (0x0040 - 0x0000)
@@ -698,26 +476,7 @@ public:
 	uint8                                         Pad_37[0x1];                                       // 0x0037(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox");
-static_assert(sizeof(WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox) == 0x000040, "Wrong size on WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox, Temp_byte_Variable) == 0x000000, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox, Temp_bool_Variable) == 0x000001, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox, Temp_byte_Variable_1) == 0x000002, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox, Temp_byte_Variable_2) == 0x000003, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox, Temp_int_Array_Index_Variable) == 0x000004, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox, Temp_byte_Variable_3) == 0x000010, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox, CallFunc_GetItems_OutItems) == 0x000018, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox::CallFunc_GetItems_OutItems' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox, CallFunc_Less_IntInt_ReturnValue) == 0x00002C, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00002D, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox, Temp_bool_Variable_1) == 0x00002E, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox, CallFunc_Array_Length_ReturnValue_1) == 0x000030, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox, K2Node_Select_Default) == 0x000034, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000035, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox, K2Node_Select_Default_1) == 0x000036, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox, CallFunc_Array_Length_ReturnValue_2) == 0x000038, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_PresetPaint_C_SetupScrollPointBox;
 
 // Function WBP_MachineCustom_Sub_PresetPaint.WBP_MachineCustom_Sub_PresetPaint_C.SetVisibleArrowButton
 // 0x0001 (0x0001 - 0x0000)
@@ -726,9 +485,7 @@ struct WBP_MachineCustom_Sub_PresetPaint_C_SetVisibleArrowButton final
 public:
 	bool                                          IsVisibility;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_PresetPaint_C_SetVisibleArrowButton) == 0x000001, "Wrong alignment on WBP_MachineCustom_Sub_PresetPaint_C_SetVisibleArrowButton");
-static_assert(sizeof(WBP_MachineCustom_Sub_PresetPaint_C_SetVisibleArrowButton) == 0x000001, "Wrong size on WBP_MachineCustom_Sub_PresetPaint_C_SetVisibleArrowButton");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SetVisibleArrowButton, IsVisibility) == 0x000000, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SetVisibleArrowButton::IsVisibility' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_PresetPaint_C_SetVisibleArrowButton;
 
 // Function WBP_MachineCustom_Sub_PresetPaint.WBP_MachineCustom_Sub_PresetPaint_C.SwitchPageToNext
 // 0x0020 (0x0020 - 0x0000)
@@ -744,14 +501,7 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_MachinrCustom_Sub_Paint_PresetWindow_C* CallFunc_GetPageForIndex_Output;              // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_PresetPaint_C_SwitchPageToNext) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_PresetPaint_C_SwitchPageToNext");
-static_assert(sizeof(WBP_MachineCustom_Sub_PresetPaint_C_SwitchPageToNext) == 0x000020, "Wrong size on WBP_MachineCustom_Sub_PresetPaint_C_SwitchPageToNext");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SwitchPageToNext, RowIndex) == 0x000000, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SwitchPageToNext::RowIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SwitchPageToNext, CallFunc_Array_Length_ReturnValue) == 0x000004, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SwitchPageToNext::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SwitchPageToNext, CallFunc_Subtract_IntInt_ReturnValue) == 0x000008, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SwitchPageToNext::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SwitchPageToNext, CallFunc_Less_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SwitchPageToNext::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SwitchPageToNext, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SwitchPageToNext::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SwitchPageToNext, CallFunc_GetPageForIndex_Output) == 0x000018, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SwitchPageToNext::CallFunc_GetPageForIndex_Output' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_PresetPaint_C_SwitchPageToNext;
 
 // Function WBP_MachineCustom_Sub_PresetPaint.WBP_MachineCustom_Sub_PresetPaint_C.SwitchPageToPrev
 // 0x0018 (0x0018 - 0x0000)
@@ -764,12 +514,7 @@ public:
 	class UWBP_MachinrCustom_Sub_Paint_PresetWindow_C* CallFunc_GetPageForIndex_Output;              // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_PresetPaint_C_SwitchPageToPrev) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_PresetPaint_C_SwitchPageToPrev");
-static_assert(sizeof(WBP_MachineCustom_Sub_PresetPaint_C_SwitchPageToPrev) == 0x000018, "Wrong size on WBP_MachineCustom_Sub_PresetPaint_C_SwitchPageToPrev");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SwitchPageToPrev, RowIndex) == 0x000000, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SwitchPageToPrev::RowIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SwitchPageToPrev, CallFunc_Greater_IntInt_ReturnValue) == 0x000004, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SwitchPageToPrev::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SwitchPageToPrev, CallFunc_GetPageForIndex_Output) == 0x000008, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SwitchPageToPrev::CallFunc_GetPageForIndex_Output' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_SwitchPageToPrev, CallFunc_Subtract_IntInt_ReturnValue) == 0x000010, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_SwitchPageToPrev::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_PresetPaint_C_SwitchPageToPrev;
 
 // Function WBP_MachineCustom_Sub_PresetPaint.WBP_MachineCustom_Sub_PresetPaint_C.GetItem
 // 0x0020 (0x0020 - 0x0000)
@@ -782,12 +527,7 @@ public:
 	class UWBP_MachinrCustom_Sub_Paint_PresetWindow_C* CallFunc_GetPageForIndex_Output;              // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWBP_MachinrCustom_Sub_Paint_PresetIcon_C* CallFunc_GetItem_Output;                        // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_PresetPaint_C_GetItem) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_PresetPaint_C_GetItem");
-static_assert(sizeof(WBP_MachineCustom_Sub_PresetPaint_C_GetItem) == 0x000020, "Wrong size on WBP_MachineCustom_Sub_PresetPaint_C_GetItem");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_GetItem, InItemIndex) == 0x000000, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_GetItem::InItemIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_GetItem, OutItem) == 0x000008, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_GetItem::OutItem' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_GetItem, CallFunc_GetPageForIndex_Output) == 0x000010, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_GetItem::CallFunc_GetPageForIndex_Output' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_GetItem, CallFunc_GetItem_Output) == 0x000018, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_GetItem::CallFunc_GetItem_Output' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_PresetPaint_C_GetItem;
 
 // Function WBP_MachineCustom_Sub_PresetPaint.WBP_MachineCustom_Sub_PresetPaint_C.GetPage
 // 0x0068 (0x0068 - 0x0000)
@@ -811,20 +551,7 @@ public:
 	uint8                                         Pad_61[0x3];                                       // 0x0061(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_PresetPaint_C_GetPage) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_PresetPaint_C_GetPage");
-static_assert(sizeof(WBP_MachineCustom_Sub_PresetPaint_C_GetPage) == 0x000068, "Wrong size on WBP_MachineCustom_Sub_PresetPaint_C_GetPage");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_GetPage, OutList) == 0x000000, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_GetPage::OutList' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_GetPage, list) == 0x000010, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_GetPage::list' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_GetPage, Temp_int_Array_Index_Variable) == 0x000020, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_GetPage::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_GetPage, Temp_int_Loop_Counter_Variable) == 0x000024, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_GetPage::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_GetPage, CallFunc_Add_IntInt_ReturnValue) == 0x000028, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_GetPage::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_GetPage, CallFunc_GetAllChildren_ReturnValue) == 0x000030, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_GetPage::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_GetPage, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_GetPage::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_GetPage, CallFunc_Array_Get_Item) == 0x000048, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_GetPage::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_GetPage, CallFunc_Less_IntInt_ReturnValue) == 0x000050, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_GetPage::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_GetPage, K2Node_DynamicCast_AsWBP_Machinr_Custom_Sub_Paint_Preset_Window) == 0x000058, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_GetPage::K2Node_DynamicCast_AsWBP_Machinr_Custom_Sub_Paint_Preset_Window' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_GetPage, K2Node_DynamicCast_bSuccess) == 0x000060, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_GetPage::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_GetPage, CallFunc_Array_Add_ReturnValue) == 0x000064, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_GetPage::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_PresetPaint_C_GetPage;
 
 // Function WBP_MachineCustom_Sub_PresetPaint.WBP_MachineCustom_Sub_PresetPaint_C.GetPageForIndex
 // 0x0038 (0x0038 - 0x0000)
@@ -838,13 +565,7 @@ public:
 	TArray<class UWBP_MachinrCustom_Sub_Paint_PresetWindow_C*> CallFunc_GetPage_OutList;             // 0x0020(0x0010)(ReferenceParm, ContainsInstancedReference)
 	class UWBP_MachinrCustom_Sub_Paint_PresetWindow_C* CallFunc_Array_Get_Item;                      // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_PresetPaint_C_GetPageForIndex) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_PresetPaint_C_GetPageForIndex");
-static_assert(sizeof(WBP_MachineCustom_Sub_PresetPaint_C_GetPageForIndex) == 0x000038, "Wrong size on WBP_MachineCustom_Sub_PresetPaint_C_GetPageForIndex");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_GetPageForIndex, InIndex) == 0x000000, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_GetPageForIndex::InIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_GetPageForIndex, Output) == 0x000008, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_GetPageForIndex::Output' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_GetPageForIndex, list) == 0x000010, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_GetPageForIndex::list' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_GetPageForIndex, CallFunc_GetPage_OutList) == 0x000020, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_GetPageForIndex::CallFunc_GetPage_OutList' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_PresetPaint_C_GetPageForIndex, CallFunc_Array_Get_Item) == 0x000030, "Member 'WBP_MachineCustom_Sub_PresetPaint_C_GetPageForIndex::CallFunc_Array_Get_Item' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_PresetPaint_C_GetPageForIndex;
 
 }
 

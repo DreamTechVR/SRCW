@@ -37,20 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Result_Sub_BonusCountIcon_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Result_Sub_BonusCountIcon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Result_Sub_BonusCountIcon_C")
 	}
 	static class UWBP_Result_Sub_BonusCountIcon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Result_Sub_BonusCountIcon_C>();
 	}
 };
-static_assert(alignof(UWBP_Result_Sub_BonusCountIcon_C) == 0x000008, "Wrong alignment on UWBP_Result_Sub_BonusCountIcon_C");
-static_assert(sizeof(UWBP_Result_Sub_BonusCountIcon_C) == 0x000308, "Wrong size on UWBP_Result_Sub_BonusCountIcon_C");
-static_assert(offsetof(UWBP_Result_Sub_BonusCountIcon_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Result_Sub_BonusCountIcon_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_BonusCountIcon_C, Icon_1st_In) == 0x0002E8, "Member 'UWBP_Result_Sub_BonusCountIcon_C::Icon_1st_In' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_BonusCountIcon_C, Icon_In) == 0x0002F0, "Member 'UWBP_Result_Sub_BonusCountIcon_C::Icon_In' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_BonusCountIcon_C, DMY_RuleIcon) == 0x0002F8, "Member 'UWBP_Result_Sub_BonusCountIcon_C::DMY_RuleIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_BonusCountIcon_C, TXT_NumPoint) == 0x000300, "Member 'UWBP_Result_Sub_BonusCountIcon_C::TXT_NumPoint' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Result_Sub_BonusCountIcon_C;
 
 }
 

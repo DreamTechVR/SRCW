@@ -23,15 +23,18 @@ class ABP_FootcutWarpRingPerformance_C final : public AFootcutWarpRingPerformanc
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_FootcutWarpRingPerformance_C">();
+		BP_STATIC_CLASS_IMPL("BP_FootcutWarpRingPerformance_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_FootcutWarpRingPerformance_C")
 	}
 	static class ABP_FootcutWarpRingPerformance_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_FootcutWarpRingPerformance_C>();
 	}
 };
-static_assert(alignof(ABP_FootcutWarpRingPerformance_C) == 0x000008, "Wrong alignment on ABP_FootcutWarpRingPerformance_C");
-static_assert(sizeof(ABP_FootcutWarpRingPerformance_C) == 0x000460, "Wrong size on ABP_FootcutWarpRingPerformance_C");
+DUMPER7_ASSERTS_ABP_FootcutWarpRingPerformance_C;
 
 }
 

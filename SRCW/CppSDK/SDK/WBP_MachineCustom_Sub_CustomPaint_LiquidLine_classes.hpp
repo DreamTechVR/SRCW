@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "UnionUI_classes.hpp"
 #include "UNION_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
+#include "UnionUI_classes.hpp"
 
 
 namespace SDK
@@ -54,26 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MachineCustom_Sub_CustomPaint_LiquidLine_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MachineCustom_Sub_CustomPaint_LiquidLine_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MachineCustom_Sub_CustomPaint_LiquidLine_C")
 	}
 	static class UWBP_MachineCustom_Sub_CustomPaint_LiquidLine_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MachineCustom_Sub_CustomPaint_LiquidLine_C>();
 	}
 };
-static_assert(alignof(UWBP_MachineCustom_Sub_CustomPaint_LiquidLine_C) == 0x000008, "Wrong alignment on UWBP_MachineCustom_Sub_CustomPaint_LiquidLine_C");
-static_assert(sizeof(UWBP_MachineCustom_Sub_CustomPaint_LiquidLine_C) == 0x000510, "Wrong size on UWBP_MachineCustom_Sub_CustomPaint_LiquidLine_C");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomPaint_LiquidLine_C, UberGraphFrame) == 0x000480, "Member 'UWBP_MachineCustom_Sub_CustomPaint_LiquidLine_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomPaint_LiquidLine_C, CanvasPanel_0) == 0x000488, "Member 'UWBP_MachineCustom_Sub_CustomPaint_LiquidLine_C::CanvasPanel_0' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomPaint_LiquidLine_C, DSP_Cursor_Texture) == 0x000490, "Member 'UWBP_MachineCustom_Sub_CustomPaint_LiquidLine_C::DSP_Cursor_Texture' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomPaint_LiquidLine_C, MLC_LiquidIcon) == 0x000498, "Member 'UWBP_MachineCustom_Sub_CustomPaint_LiquidLine_C::MLC_LiquidIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomPaint_LiquidLine_C, TXT_CustomPaint) == 0x0004A0, "Member 'UWBP_MachineCustom_Sub_CustomPaint_LiquidLine_C::TXT_CustomPaint' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomPaint_LiquidLine_C, TXT_Surface) == 0x0004A8, "Member 'UWBP_MachineCustom_Sub_CustomPaint_LiquidLine_C::TXT_Surface' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomPaint_LiquidLine_C, Undisplayable_Detail) == 0x0004B0, "Member 'UWBP_MachineCustom_Sub_CustomPaint_LiquidLine_C::Undisplayable_Detail' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomPaint_LiquidLine_C, WBP_CMN_Line_Btn) == 0x0004B8, "Member 'UWBP_MachineCustom_Sub_CustomPaint_LiquidLine_C::WBP_CMN_Line_Btn' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomPaint_LiquidLine_C, WidgetSwitcher_0) == 0x0004C0, "Member 'UWBP_MachineCustom_Sub_CustomPaint_LiquidLine_C::WidgetSwitcher_0' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomPaint_LiquidLine_C, PlayerController) == 0x0004C8, "Member 'UWBP_MachineCustom_Sub_CustomPaint_LiquidLine_C::PlayerController' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomPaint_LiquidLine_C, ItemData) == 0x0004D0, "Member 'UWBP_MachineCustom_Sub_CustomPaint_LiquidLine_C::ItemData' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MachineCustom_Sub_CustomPaint_LiquidLine_C;
 
 }
 

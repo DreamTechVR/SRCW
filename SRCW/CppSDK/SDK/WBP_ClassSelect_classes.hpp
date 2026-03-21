@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "UNION_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UNION_classes.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -76,46 +76,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ClassSelect_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ClassSelect_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ClassSelect_C")
 	}
 	static class UWBP_ClassSelect_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ClassSelect_C>();
 	}
 };
-static_assert(alignof(UWBP_ClassSelect_C) == 0x000008, "Wrong alignment on UWBP_ClassSelect_C");
-static_assert(sizeof(UWBP_ClassSelect_C) == 0x000520, "Wrong size on UWBP_ClassSelect_C");
-static_assert(offsetof(UWBP_ClassSelect_C, UberGraphFrame) == 0x000420, "Member 'UWBP_ClassSelect_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_C, Filter) == 0x000428, "Member 'UWBP_ClassSelect_C::Filter' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_C, Line_Title) == 0x000430, "Member 'UWBP_ClassSelect_C::Line_Title' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_C, Panel) == 0x000438, "Member 'UWBP_ClassSelect_C::Panel' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_C, Plate) == 0x000440, "Member 'UWBP_ClassSelect_C::Plate' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_C, Spacer) == 0x000448, "Member 'UWBP_ClassSelect_C::Spacer' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_C, TrophyPanel_Bottom) == 0x000450, "Member 'UWBP_ClassSelect_C::TrophyPanel_Bottom' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_C, TrophyPanel_Top) == 0x000458, "Member 'UWBP_ClassSelect_C::TrophyPanel_Top' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_C, TXT_Detail) == 0x000460, "Member 'UWBP_ClassSelect_C::TXT_Detail' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_C, TXT_Title) == 0x000468, "Member 'UWBP_ClassSelect_C::TXT_Title' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_C, WBP_ClassSelect_Sub_Btn_Class_01) == 0x000470, "Member 'UWBP_ClassSelect_C::WBP_ClassSelect_Sub_Btn_Class_01' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_C, WBP_ClassSelect_Sub_Btn_Class_02) == 0x000478, "Member 'UWBP_ClassSelect_C::WBP_ClassSelect_Sub_Btn_Class_02' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_C, WBP_ClassSelect_Sub_Btn_Class_03) == 0x000480, "Member 'UWBP_ClassSelect_C::WBP_ClassSelect_Sub_Btn_Class_03' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_C, WBP_ClassSelect_Sub_Btn_Class_04) == 0x000488, "Member 'UWBP_ClassSelect_C::WBP_ClassSelect_Sub_Btn_Class_04' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_C, WBP_ClassSelect_Sub_Btn_Class_05) == 0x000490, "Member 'UWBP_ClassSelect_C::WBP_ClassSelect_Sub_Btn_Class_05' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_C, WBP_ClassSelect_Sub_Trophy_10) == 0x000498, "Member 'UWBP_ClassSelect_C::WBP_ClassSelect_Sub_Trophy_10' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_C, WBP_ClassSelect_Sub_Trophy_01) == 0x0004A0, "Member 'UWBP_ClassSelect_C::WBP_ClassSelect_Sub_Trophy_01' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_C, WBP_ClassSelect_Sub_Trophy_02) == 0x0004A8, "Member 'UWBP_ClassSelect_C::WBP_ClassSelect_Sub_Trophy_02' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_C, WBP_ClassSelect_Sub_Trophy_03) == 0x0004B0, "Member 'UWBP_ClassSelect_C::WBP_ClassSelect_Sub_Trophy_03' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_C, WBP_ClassSelect_Sub_Trophy_04) == 0x0004B8, "Member 'UWBP_ClassSelect_C::WBP_ClassSelect_Sub_Trophy_04' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_C, WBP_ClassSelect_Sub_Trophy_05) == 0x0004C0, "Member 'UWBP_ClassSelect_C::WBP_ClassSelect_Sub_Trophy_05' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_C, WBP_ClassSelect_Sub_Trophy_06) == 0x0004C8, "Member 'UWBP_ClassSelect_C::WBP_ClassSelect_Sub_Trophy_06' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_C, WBP_ClassSelect_Sub_Trophy_07) == 0x0004D0, "Member 'UWBP_ClassSelect_C::WBP_ClassSelect_Sub_Trophy_07' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_C, WBP_ClassSelect_Sub_Trophy_08) == 0x0004D8, "Member 'UWBP_ClassSelect_C::WBP_ClassSelect_Sub_Trophy_08' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_C, WBP_ClassSelect_Sub_Trophy_09) == 0x0004E0, "Member 'UWBP_ClassSelect_C::WBP_ClassSelect_Sub_Trophy_09' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_C, ClassButtonsPanel) == 0x0004E8, "Member 'UWBP_ClassSelect_C::ClassButtonsPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_C, NewVar_0) == 0x0004F0, "Member 'UWBP_ClassSelect_C::NewVar_0' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_C, OnInFinished) == 0x0004F8, "Member 'UWBP_ClassSelect_C::OnInFinished' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_C, OnOutFinished) == 0x000508, "Member 'UWBP_ClassSelect_C::OnOutFinished' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_C, TrophyEnabled) == 0x000518, "Member 'UWBP_ClassSelect_C::TrophyEnabled' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_C, LastFocusedMenuSpeedClassId) == 0x000519, "Member 'UWBP_ClassSelect_C::LastFocusedMenuSpeedClassId' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ClassSelect_C;
 
 }
 

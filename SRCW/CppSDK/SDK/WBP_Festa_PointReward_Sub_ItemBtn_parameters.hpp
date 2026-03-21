@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "UNION_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
-#include "UNION_structs.hpp"
 
 
 namespace SDK::Params
@@ -109,74 +109,7 @@ public:
 	uint8                                         Pad_251[0x7];                                      // 0x0251(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_4;              // 0x0258(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn) == 0x000008, "Wrong alignment on WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn");
-static_assert(sizeof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn) == 0x000260, "Wrong size on WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, EntryPoint) == 0x000000, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, Temp_byte_Variable) == 0x000004, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, K2Node_CustomEvent_IsDesplay) == 0x000005, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::K2Node_CustomEvent_IsDesplay' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, K2Node_CustomEvent_InItemNum) == 0x000008, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::K2Node_CustomEvent_InItemNum' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000010, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, CallFunc_Greater_IntInt_ReturnValue) == 0x000018, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, K2Node_MakeStruct_FormatArgumentData) == 0x000020, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, CallFunc_BooleanAND_ReturnValue) == 0x000068, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, K2Node_MakeArray_Array) == 0x000070, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, CallFunc_Format_ReturnValue) == 0x000080, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, K2Node_Event_InFocusEvent_2) == 0x000090, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::K2Node_Event_InFocusEvent_2' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, Temp_bool_Variable) == 0x000098, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, K2Node_Event_InFocusEvent_1) == 0x00009C, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::K2Node_Event_InFocusEvent_1' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, Temp_object_Variable) == 0x0000A8, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, K2Node_CustomEvent_InFestaPoint) == 0x0000B0, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::K2Node_CustomEvent_InFestaPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, CallFunc_Greater_IntInt_ReturnValue_1) == 0x0000B4, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, CallFunc_GetFestaPointText_ReturnValue) == 0x0000B8, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::CallFunc_GetFestaPointText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, K2Node_Event_InFocusEvent) == 0x0000C8, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::K2Node_Event_InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, K2Node_CustomEvent_Button) == 0x0000D0, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, K2Node_CustomEvent_InItemIconTexture) == 0x0000D8, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::K2Node_CustomEvent_InItemIconTexture' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, CallFunc_IsValid_ReturnValue) == 0x0000E0, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, K2Node_CustomEvent_IsGet) == 0x0000E1, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::K2Node_CustomEvent_IsGet' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, Temp_bool_Variable_1) == 0x0000E2, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, Temp_bool_Variable_2) == 0x0000E3, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, Temp_bool_Variable_3) == 0x0000E4, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, Temp_object_Variable_1) == 0x0000E8, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, K2Node_CustomEvent_InRewardType) == 0x0000F0, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::K2Node_CustomEvent_InRewardType' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, CallFunc_SetActiveWidgetIndexByRewardType_ReturnValue) == 0x0000F1, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::CallFunc_SetActiveWidgetIndexByRewardType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, CallFunc_PlayAnimation_ReturnValue) == 0x0000F8, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, K2Node_CustomEvent_InWidgetAnimation) == 0x000100, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::K2Node_CustomEvent_InWidgetAnimation' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, K2Node_CustomEvent_bInArrowLVisible) == 0x000108, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::K2Node_CustomEvent_bInArrowLVisible' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, K2Node_CustomEvent_bInArrowRVisible) == 0x000109, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::K2Node_CustomEvent_bInArrowRVisible' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, CallFunc_IsAnimationPlaying_ReturnValue) == 0x00010A, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, CallFunc_IsValid_ReturnValue_1) == 0x00010B, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, Temp_bool_Variable_4) == 0x00010C, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::Temp_bool_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, K2Node_CustomEvent_RewardType) == 0x00010D, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::K2Node_CustomEvent_RewardType' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, K2Node_CustomEvent_InItemId) == 0x000110, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::K2Node_CustomEvent_InItemId' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, K2Node_CustomEvent_Texture) == 0x000118, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::K2Node_CustomEvent_Texture' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, CallFunc_IsValid_ReturnValue_2) == 0x000120, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, CallFunc_IsValid_ReturnValue_3) == 0x000121, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, K2Node_Select_Default) == 0x000128, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, K2Node_Select_Default_1) == 0x000130, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, CallFunc_Conv_IntToByte_ReturnValue) == 0x000138, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, CallFunc_GetValidValue_ReturnValue) == 0x000139, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, K2Node_SwitchEnum_CmpSuccess) == 0x00013A, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, CallFunc_GetGadgetData_OutGadgetData) == 0x000140, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::CallFunc_GetGadgetData_OutGadgetData' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, CallFunc_GetGadgetData_ReturnValue) == 0x000200, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::CallFunc_GetGadgetData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, Temp_byte_Variable_1) == 0x000201, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, CallFunc_IsGadgetKit_ReturnValue) == 0x000202, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::CallFunc_IsGadgetKit_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, K2Node_CustomEvent_IsSelect_1) == 0x000203, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::K2Node_CustomEvent_IsSelect_1' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, CallFunc_PlayAnimationForward_ReturnValue) == 0x000208, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, CallFunc_PlayAnimationForward_ReturnValue_1) == 0x000210, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::CallFunc_PlayAnimationForward_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, Temp_byte_Variable_2) == 0x000218, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, CallFunc_PlayAnimation_ReturnValue_1) == 0x000220, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, CallFunc_SetActiveWidgetIndexByRewardType_ReturnValue_1) == 0x000228, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::CallFunc_SetActiveWidgetIndexByRewardType_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, K2Node_CustomEvent_IsSelect) == 0x000229, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::K2Node_CustomEvent_IsSelect' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, Temp_bool_Variable_5) == 0x00022A, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::Temp_bool_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, K2Node_Select_Default_2) == 0x00022B, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, Temp_byte_Variable_3) == 0x00022C, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, K2Node_Select_Default_3) == 0x00022D, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, CallFunc_PlayAnimation_ReturnValue_2) == 0x000230, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, K2Node_Select_Default_4) == 0x000238, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, CallFunc_PlayAnimation_ReturnValue_3) == 0x000240, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, K2Node_Select_Default_5) == 0x000248, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::K2Node_Select_Default_5' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, K2Node_CustomEvent_bIsGet) == 0x000250, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::K2Node_CustomEvent_bIsGet' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn, CallFunc_PlayAnimation_ReturnValue_4) == 0x000258, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn::CallFunc_PlayAnimation_ReturnValue_4' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Festa_PointReward_Sub_ItemBtn_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_ItemBtn;
 
 // Function WBP_Festa_PointReward_Sub_ItemBtn.WBP_Festa_PointReward_Sub_ItemBtn_C.InitializeArrow
 // 0x000C (0x000C - 0x0000)
@@ -188,12 +121,7 @@ public:
 	bool                                          IsLeftEnd;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsRightEnd;                                        // 0x0009(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Festa_PointReward_Sub_ItemBtn_C_InitializeArrow) == 0x000004, "Wrong alignment on WBP_Festa_PointReward_Sub_ItemBtn_C_InitializeArrow");
-static_assert(sizeof(WBP_Festa_PointReward_Sub_ItemBtn_C_InitializeArrow) == 0x00000C, "Wrong size on WBP_Festa_PointReward_Sub_ItemBtn_C_InitializeArrow");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_InitializeArrow, ButtonIndex_0) == 0x000000, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_InitializeArrow::ButtonIndex_0' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_InitializeArrow, RewardDataNum_0) == 0x000004, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_InitializeArrow::RewardDataNum_0' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_InitializeArrow, IsLeftEnd) == 0x000008, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_InitializeArrow::IsLeftEnd' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_InitializeArrow, IsRightEnd) == 0x000009, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_InitializeArrow::IsRightEnd' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Festa_PointReward_Sub_ItemBtn_C_InitializeArrow;
 
 // Function WBP_Festa_PointReward_Sub_ItemBtn.WBP_Festa_PointReward_Sub_ItemBtn_C.OnAddedToFocusPath
 // 0x0008 (0x0008 - 0x0000)
@@ -202,9 +130,7 @@ struct WBP_Festa_PointReward_Sub_ItemBtn_C_OnAddedToFocusPath final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_Festa_PointReward_Sub_ItemBtn_C_OnAddedToFocusPath) == 0x000004, "Wrong alignment on WBP_Festa_PointReward_Sub_ItemBtn_C_OnAddedToFocusPath");
-static_assert(sizeof(WBP_Festa_PointReward_Sub_ItemBtn_C_OnAddedToFocusPath) == 0x000008, "Wrong size on WBP_Festa_PointReward_Sub_ItemBtn_C_OnAddedToFocusPath");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_OnAddedToFocusPath, InFocusEvent) == 0x000000, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_OnAddedToFocusPath::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Festa_PointReward_Sub_ItemBtn_C_OnAddedToFocusPath;
 
 // Function WBP_Festa_PointReward_Sub_ItemBtn.WBP_Festa_PointReward_Sub_ItemBtn_C.OnFocus_Imp
 // 0x0008 (0x0008 - 0x0000)
@@ -213,9 +139,7 @@ struct WBP_Festa_PointReward_Sub_ItemBtn_C_OnFocus_Imp final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Festa_PointReward_Sub_ItemBtn_C_OnFocus_Imp) == 0x000008, "Wrong alignment on WBP_Festa_PointReward_Sub_ItemBtn_C_OnFocus_Imp");
-static_assert(sizeof(WBP_Festa_PointReward_Sub_ItemBtn_C_OnFocus_Imp) == 0x000008, "Wrong size on WBP_Festa_PointReward_Sub_ItemBtn_C_OnFocus_Imp");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_OnFocus_Imp, Button) == 0x000000, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_OnFocus_Imp::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Festa_PointReward_Sub_ItemBtn_C_OnFocus_Imp;
 
 // Function WBP_Festa_PointReward_Sub_ItemBtn.WBP_Festa_PointReward_Sub_ItemBtn_C.OnFocusLost
 // 0x0008 (0x0008 - 0x0000)
@@ -224,9 +148,7 @@ struct WBP_Festa_PointReward_Sub_ItemBtn_C_OnFocusLost final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_Festa_PointReward_Sub_ItemBtn_C_OnFocusLost) == 0x000004, "Wrong alignment on WBP_Festa_PointReward_Sub_ItemBtn_C_OnFocusLost");
-static_assert(sizeof(WBP_Festa_PointReward_Sub_ItemBtn_C_OnFocusLost) == 0x000008, "Wrong size on WBP_Festa_PointReward_Sub_ItemBtn_C_OnFocusLost");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_OnFocusLost, InFocusEvent) == 0x000000, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_OnFocusLost::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Festa_PointReward_Sub_ItemBtn_C_OnFocusLost;
 
 // Function WBP_Festa_PointReward_Sub_ItemBtn.WBP_Festa_PointReward_Sub_ItemBtn_C.OnFocusReceived
 // 0x01B0 (0x01B0 - 0x0000)
@@ -238,12 +160,7 @@ public:
 	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
 	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x00F8(0x00B8)()
 };
-static_assert(alignof(WBP_Festa_PointReward_Sub_ItemBtn_C_OnFocusReceived) == 0x000008, "Wrong alignment on WBP_Festa_PointReward_Sub_ItemBtn_C_OnFocusReceived");
-static_assert(sizeof(WBP_Festa_PointReward_Sub_ItemBtn_C_OnFocusReceived) == 0x0001B0, "Wrong size on WBP_Festa_PointReward_Sub_ItemBtn_C_OnFocusReceived");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_OnFocusReceived, K2Node_MakeStruct_EventReply) == 0x0000F8, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_OnFocusReceived::K2Node_MakeStruct_EventReply' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Festa_PointReward_Sub_ItemBtn_C_OnFocusReceived;
 
 // Function WBP_Festa_PointReward_Sub_ItemBtn.WBP_Festa_PointReward_Sub_ItemBtn_C.OnMouseButtonUp
 // 0x0220 (0x0220 - 0x0000)
@@ -255,12 +172,7 @@ public:
 	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x00B8)(Parm, OutParm, ReturnParm)
 	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x0168(0x00B8)()
 };
-static_assert(alignof(WBP_Festa_PointReward_Sub_ItemBtn_C_OnMouseButtonUp) == 0x000008, "Wrong alignment on WBP_Festa_PointReward_Sub_ItemBtn_C_OnMouseButtonUp");
-static_assert(sizeof(WBP_Festa_PointReward_Sub_ItemBtn_C_OnMouseButtonUp) == 0x000220, "Wrong size on WBP_Festa_PointReward_Sub_ItemBtn_C_OnMouseButtonUp");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_OnMouseButtonUp, MyGeometry) == 0x000000, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_OnMouseButtonUp::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_OnMouseButtonUp, MouseEvent) == 0x000038, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_OnMouseButtonUp::MouseEvent' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_OnMouseButtonUp, ReturnValue) == 0x0000B0, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_OnMouseButtonUp::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_OnMouseButtonUp, K2Node_MakeStruct_EventReply) == 0x000168, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_OnMouseButtonUp::K2Node_MakeStruct_EventReply' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Festa_PointReward_Sub_ItemBtn_C_OnMouseButtonUp;
 
 // Function WBP_Festa_PointReward_Sub_ItemBtn.WBP_Festa_PointReward_Sub_ItemBtn_C.OnRemovedFromFocusPath
 // 0x0008 (0x0008 - 0x0000)
@@ -269,9 +181,7 @@ struct WBP_Festa_PointReward_Sub_ItemBtn_C_OnRemovedFromFocusPath final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_Festa_PointReward_Sub_ItemBtn_C_OnRemovedFromFocusPath) == 0x000004, "Wrong alignment on WBP_Festa_PointReward_Sub_ItemBtn_C_OnRemovedFromFocusPath");
-static_assert(sizeof(WBP_Festa_PointReward_Sub_ItemBtn_C_OnRemovedFromFocusPath) == 0x000008, "Wrong size on WBP_Festa_PointReward_Sub_ItemBtn_C_OnRemovedFromFocusPath");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_OnRemovedFromFocusPath, InFocusEvent) == 0x000000, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_OnRemovedFromFocusPath::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Festa_PointReward_Sub_ItemBtn_C_OnRemovedFromFocusPath;
 
 // Function WBP_Festa_PointReward_Sub_ItemBtn.WBP_Festa_PointReward_Sub_ItemBtn_C.SetArrowVisible
 // 0x0002 (0x0002 - 0x0000)
@@ -281,10 +191,7 @@ public:
 	bool                                          bInArrowLVisible;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bInArrowRVisible;                                  // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetArrowVisible) == 0x000001, "Wrong alignment on WBP_Festa_PointReward_Sub_ItemBtn_C_SetArrowVisible");
-static_assert(sizeof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetArrowVisible) == 0x000002, "Wrong size on WBP_Festa_PointReward_Sub_ItemBtn_C_SetArrowVisible");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetArrowVisible, bInArrowLVisible) == 0x000000, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_SetArrowVisible::bInArrowLVisible' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetArrowVisible, bInArrowRVisible) == 0x000001, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_SetArrowVisible::bInArrowRVisible' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Festa_PointReward_Sub_ItemBtn_C_SetArrowVisible;
 
 // Function WBP_Festa_PointReward_Sub_ItemBtn.WBP_Festa_PointReward_Sub_ItemBtn_C.SetDisplayGetIcon
 // 0x0001 (0x0001 - 0x0000)
@@ -293,9 +200,7 @@ struct WBP_Festa_PointReward_Sub_ItemBtn_C_SetDisplayGetIcon final
 public:
 	bool                                          IsGet_0;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetDisplayGetIcon) == 0x000001, "Wrong alignment on WBP_Festa_PointReward_Sub_ItemBtn_C_SetDisplayGetIcon");
-static_assert(sizeof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetDisplayGetIcon) == 0x000001, "Wrong size on WBP_Festa_PointReward_Sub_ItemBtn_C_SetDisplayGetIcon");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetDisplayGetIcon, IsGet_0) == 0x000000, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_SetDisplayGetIcon::IsGet_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Festa_PointReward_Sub_ItemBtn_C_SetDisplayGetIcon;
 
 // Function WBP_Festa_PointReward_Sub_ItemBtn.WBP_Festa_PointReward_Sub_ItemBtn_C.SetDisplayGetIconResult
 // 0x0001 (0x0001 - 0x0000)
@@ -304,9 +209,7 @@ struct WBP_Festa_PointReward_Sub_ItemBtn_C_SetDisplayGetIconResult final
 public:
 	bool                                          bIsGet;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetDisplayGetIconResult) == 0x000001, "Wrong alignment on WBP_Festa_PointReward_Sub_ItemBtn_C_SetDisplayGetIconResult");
-static_assert(sizeof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetDisplayGetIconResult) == 0x000001, "Wrong size on WBP_Festa_PointReward_Sub_ItemBtn_C_SetDisplayGetIconResult");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetDisplayGetIconResult, bIsGet) == 0x000000, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_SetDisplayGetIconResult::bIsGet' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Festa_PointReward_Sub_ItemBtn_C_SetDisplayGetIconResult;
 
 // Function WBP_Festa_PointReward_Sub_ItemBtn.WBP_Festa_PointReward_Sub_ItemBtn_C.SetDisplaySelect
 // 0x0001 (0x0001 - 0x0000)
@@ -315,9 +218,7 @@ struct WBP_Festa_PointReward_Sub_ItemBtn_C_SetDisplaySelect final
 public:
 	bool                                          IsSelect;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetDisplaySelect) == 0x000001, "Wrong alignment on WBP_Festa_PointReward_Sub_ItemBtn_C_SetDisplaySelect");
-static_assert(sizeof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetDisplaySelect) == 0x000001, "Wrong size on WBP_Festa_PointReward_Sub_ItemBtn_C_SetDisplaySelect");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetDisplaySelect, IsSelect) == 0x000000, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_SetDisplaySelect::IsSelect' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Festa_PointReward_Sub_ItemBtn_C_SetDisplaySelect;
 
 // Function WBP_Festa_PointReward_Sub_ItemBtn.WBP_Festa_PointReward_Sub_ItemBtn_C.SetFestaEventInfoDisplaySelect
 // 0x0001 (0x0001 - 0x0000)
@@ -326,9 +227,7 @@ struct WBP_Festa_PointReward_Sub_ItemBtn_C_SetFestaEventInfoDisplaySelect final
 public:
 	bool                                          IsSelect;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetFestaEventInfoDisplaySelect) == 0x000001, "Wrong alignment on WBP_Festa_PointReward_Sub_ItemBtn_C_SetFestaEventInfoDisplaySelect");
-static_assert(sizeof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetFestaEventInfoDisplaySelect) == 0x000001, "Wrong size on WBP_Festa_PointReward_Sub_ItemBtn_C_SetFestaEventInfoDisplaySelect");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetFestaEventInfoDisplaySelect, IsSelect) == 0x000000, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_SetFestaEventInfoDisplaySelect::IsSelect' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Festa_PointReward_Sub_ItemBtn_C_SetFestaEventInfoDisplaySelect;
 
 // Function WBP_Festa_PointReward_Sub_ItemBtn.WBP_Festa_PointReward_Sub_ItemBtn_C.SetFestaPoint
 // 0x0004 (0x0004 - 0x0000)
@@ -337,9 +236,7 @@ struct WBP_Festa_PointReward_Sub_ItemBtn_C_SetFestaPoint final
 public:
 	int32                                         InFestaPoint;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetFestaPoint) == 0x000004, "Wrong alignment on WBP_Festa_PointReward_Sub_ItemBtn_C_SetFestaPoint");
-static_assert(sizeof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetFestaPoint) == 0x000004, "Wrong size on WBP_Festa_PointReward_Sub_ItemBtn_C_SetFestaPoint");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetFestaPoint, InFestaPoint) == 0x000000, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_SetFestaPoint::InFestaPoint' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Festa_PointReward_Sub_ItemBtn_C_SetFestaPoint;
 
 // Function WBP_Festa_PointReward_Sub_ItemBtn.WBP_Festa_PointReward_Sub_ItemBtn_C.SetItemIcon
 // 0x0010 (0x0010 - 0x0000)
@@ -351,11 +248,7 @@ public:
 	int32                                         InItemId;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             Texture;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemIcon) == 0x000008, "Wrong alignment on WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemIcon");
-static_assert(sizeof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemIcon) == 0x000010, "Wrong size on WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemIcon");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemIcon, rewardType) == 0x000000, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemIcon::rewardType' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemIcon, InItemId) == 0x000004, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemIcon::InItemId' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemIcon, Texture) == 0x000008, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemIcon::Texture' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemIcon;
 
 // Function WBP_Festa_PointReward_Sub_ItemBtn.WBP_Festa_PointReward_Sub_ItemBtn_C.SetItemIconActiveWidgetIndex
 // 0x0001 (0x0001 - 0x0000)
@@ -364,9 +257,7 @@ struct WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemIconActiveWidgetIndex final
 public:
 	ERewardType                                   InRewardType;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemIconActiveWidgetIndex) == 0x000001, "Wrong alignment on WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemIconActiveWidgetIndex");
-static_assert(sizeof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemIconActiveWidgetIndex) == 0x000001, "Wrong size on WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemIconActiveWidgetIndex");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemIconActiveWidgetIndex, InRewardType) == 0x000000, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemIconActiveWidgetIndex::InRewardType' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemIconActiveWidgetIndex;
 
 // Function WBP_Festa_PointReward_Sub_ItemBtn.WBP_Festa_PointReward_Sub_ItemBtn_C.SetItemIconTexture
 // 0x0008 (0x0008 - 0x0000)
@@ -375,9 +266,7 @@ struct WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemIconTexture final
 public:
 	class UTexture2D*                             InItemIconTexture;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemIconTexture) == 0x000008, "Wrong alignment on WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemIconTexture");
-static_assert(sizeof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemIconTexture) == 0x000008, "Wrong size on WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemIconTexture");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemIconTexture, InItemIconTexture) == 0x000000, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemIconTexture::InItemIconTexture' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemIconTexture;
 
 // Function WBP_Festa_PointReward_Sub_ItemBtn.WBP_Festa_PointReward_Sub_ItemBtn_C.SetItemNum
 // 0x0008 (0x0008 - 0x0000)
@@ -388,10 +277,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         InItemNum;                                         // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemNum) == 0x000004, "Wrong alignment on WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemNum");
-static_assert(sizeof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemNum) == 0x000008, "Wrong size on WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemNum");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemNum, IsDesplay) == 0x000000, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemNum::IsDesplay' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemNum, InItemNum) == 0x000004, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemNum::InItemNum' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemNum;
 
 // Function WBP_Festa_PointReward_Sub_ItemBtn.WBP_Festa_PointReward_Sub_ItemBtn_C.StopPlayingAnimation
 // 0x0008 (0x0008 - 0x0000)
@@ -400,9 +286,7 @@ struct WBP_Festa_PointReward_Sub_ItemBtn_C_StopPlayingAnimation final
 public:
 	class UWidgetAnimation*                       InWidgetAnimation;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Festa_PointReward_Sub_ItemBtn_C_StopPlayingAnimation) == 0x000008, "Wrong alignment on WBP_Festa_PointReward_Sub_ItemBtn_C_StopPlayingAnimation");
-static_assert(sizeof(WBP_Festa_PointReward_Sub_ItemBtn_C_StopPlayingAnimation) == 0x000008, "Wrong size on WBP_Festa_PointReward_Sub_ItemBtn_C_StopPlayingAnimation");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_StopPlayingAnimation, InWidgetAnimation) == 0x000000, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_StopPlayingAnimation::InWidgetAnimation' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Festa_PointReward_Sub_ItemBtn_C_StopPlayingAnimation;
 
 // Function WBP_Festa_PointReward_Sub_ItemBtn.WBP_Festa_PointReward_Sub_ItemBtn_C.UpdateFestaEventInfoSelect
 // 0x0014 (0x0014 - 0x0000)
@@ -419,16 +303,7 @@ public:
 	bool                                          CallFunc_NotEqual_IntInt_ReturnValue_1;            // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateFestaEventInfoSelect) == 0x000004, "Wrong alignment on WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateFestaEventInfoSelect");
-static_assert(sizeof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateFestaEventInfoSelect) == 0x000014, "Wrong size on WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateFestaEventInfoSelect");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateFestaEventInfoSelect, RewardDataIndex) == 0x000000, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateFestaEventInfoSelect::RewardDataIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateFestaEventInfoSelect, SelectButtonIndex) == 0x000004, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateFestaEventInfoSelect::SelectButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateFestaEventInfoSelect, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000008, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateFestaEventInfoSelect::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateFestaEventInfoSelect, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000009, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateFestaEventInfoSelect::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateFestaEventInfoSelect, CallFunc_Subtract_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateFestaEventInfoSelect::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateFestaEventInfoSelect, CallFunc_BooleanAND_ReturnValue) == 0x000010, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateFestaEventInfoSelect::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateFestaEventInfoSelect, CallFunc_NotEqual_IntInt_ReturnValue_1) == 0x000011, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateFestaEventInfoSelect::CallFunc_NotEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateFestaEventInfoSelect, CallFunc_BooleanAND_ReturnValue_1) == 0x000012, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateFestaEventInfoSelect::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateFestaEventInfoSelect;
 
 // Function WBP_Festa_PointReward_Sub_ItemBtn.WBP_Festa_PointReward_Sub_ItemBtn_C.UpdateReward
 // 0x0028 (0x0028 - 0x0000)
@@ -447,17 +322,7 @@ public:
 	int32                                         isNext;                                            // 0x0020(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateReward) == 0x000008, "Wrong alignment on WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateReward");
-static_assert(sizeof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateReward) == 0x000028, "Wrong size on WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateReward");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateReward, rewardType) == 0x000000, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateReward::rewardType' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateReward, InItemId) == 0x000004, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateReward::InItemId' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateReward, Texture) == 0x000008, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateReward::Texture' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateReward, IsNumDisplay) == 0x000010, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateReward::IsNumDisplay' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateReward, Num) == 0x000014, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateReward::Num' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateReward, RewardFestaPoint) == 0x000018, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateReward::RewardFestaPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateReward, PlayerFestaPoint) == 0x00001C, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateReward::PlayerFestaPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateReward, isNext) == 0x000020, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateReward::isNext' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateReward, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000024, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateReward::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateReward;
 
 // Function WBP_Festa_PointReward_Sub_ItemBtn.WBP_Festa_PointReward_Sub_ItemBtn_C.UpdateRewardFromFestaPointRewardUIData
 // 0x0058 (0x0058 - 0x0000)
@@ -467,10 +332,7 @@ public:
 	struct FFestaPointRewardUIData                UIData;                                            // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm)
 	int32                                         PlayerFestaPoint;                                  // 0x0050(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateRewardFromFestaPointRewardUIData) == 0x000008, "Wrong alignment on WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateRewardFromFestaPointRewardUIData");
-static_assert(sizeof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateRewardFromFestaPointRewardUIData) == 0x000058, "Wrong size on WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateRewardFromFestaPointRewardUIData");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateRewardFromFestaPointRewardUIData, UIData) == 0x000000, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateRewardFromFestaPointRewardUIData::UIData' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateRewardFromFestaPointRewardUIData, PlayerFestaPoint) == 0x000050, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateRewardFromFestaPointRewardUIData::PlayerFestaPoint' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateRewardFromFestaPointRewardUIData;
 
 // Function WBP_Festa_PointReward_Sub_ItemBtn.WBP_Festa_PointReward_Sub_ItemBtn_C.UpdateSelect
 // 0x0014 (0x0014 - 0x0000)
@@ -487,16 +349,7 @@ public:
 	bool                                          CallFunc_NotEqual_IntInt_ReturnValue_1;            // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateSelect) == 0x000004, "Wrong alignment on WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateSelect");
-static_assert(sizeof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateSelect) == 0x000014, "Wrong size on WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateSelect");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateSelect, RewardDataIndex) == 0x000000, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateSelect::RewardDataIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateSelect, SelectButtonIndex) == 0x000004, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateSelect::SelectButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateSelect, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000008, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateSelect::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateSelect, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000009, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateSelect::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateSelect, CallFunc_Subtract_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateSelect::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateSelect, CallFunc_BooleanAND_ReturnValue) == 0x000010, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateSelect::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateSelect, CallFunc_NotEqual_IntInt_ReturnValue_1) == 0x000011, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateSelect::CallFunc_NotEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateSelect, CallFunc_BooleanAND_ReturnValue_1) == 0x000012, "Member 'WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateSelect::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateSelect;
 
 }
 

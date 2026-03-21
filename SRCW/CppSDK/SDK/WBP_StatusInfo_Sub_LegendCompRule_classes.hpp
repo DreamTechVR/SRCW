@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -70,49 +70,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_StatusInfo_Sub_LegendCompRule_C">();
+		BP_STATIC_CLASS_IMPL("WBP_StatusInfo_Sub_LegendCompRule_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_StatusInfo_Sub_LegendCompRule_C")
 	}
 	static class UWBP_StatusInfo_Sub_LegendCompRule_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_StatusInfo_Sub_LegendCompRule_C>();
 	}
 };
-static_assert(alignof(UWBP_StatusInfo_Sub_LegendCompRule_C) == 0x000008, "Wrong alignment on UWBP_StatusInfo_Sub_LegendCompRule_C");
-static_assert(sizeof(UWBP_StatusInfo_Sub_LegendCompRule_C) == 0x000448, "Wrong size on UWBP_StatusInfo_Sub_LegendCompRule_C");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, UberGraphFrame) == 0x000318, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, base) == 0x000320, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, base_2) == 0x000328, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::base_2' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, GadgetImage) == 0x000330, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::GadgetImage' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, GadgetImage_1) == 0x000338, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::GadgetImage_1' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, GadgetImage_2) == 0x000340, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::GadgetImage_2' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, GadgetImage_3) == 0x000348, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::GadgetImage_3' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, GadgetImage_4) == 0x000350, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::GadgetImage_4' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, Header_Base) == 0x000358, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::Header_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, Header_Btm) == 0x000360, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::Header_Btm' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, Header_Top) == 0x000368, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::Header_Top' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, Line) == 0x000370, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::Line' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, RaceFlag_Left) == 0x000378, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::RaceFlag_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, RaceFlag_Right) == 0x000380, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::RaceFlag_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, RoundBase) == 0x000388, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::RoundBase' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, RoundLine) == 0x000390, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::RoundLine' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, TitleBase) == 0x000398, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::TitleBase' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, TitleBase_1) == 0x0003A0, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::TitleBase_1' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, TXT_ExGadget) == 0x0003A8, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::TXT_ExGadget' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, TXT_NGGadget) == 0x0003B0, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::TXT_NGGadget' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, TXT_Title_2) == 0x0003B8, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::TXT_Title_2' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, TXT_Title_Detail) == 0x0003C0, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::TXT_Title_Detail' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, WBP_FontScroll_GadgetName) == 0x0003C8, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::WBP_FontScroll_GadgetName' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, WBP_GadgetCustom_Sub_SkillPlate) == 0x0003D0, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::WBP_GadgetCustom_Sub_SkillPlate' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, WBP_GadgetIcon_Cost01_Icon) == 0x0003D8, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::WBP_GadgetIcon_Cost01_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, WBP_StatusInfo_Sub_NGGadjet) == 0x0003E0, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::WBP_StatusInfo_Sub_NGGadjet' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, WBP_StatusInfo_Sub_NGGadjet_1) == 0x0003E8, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::WBP_StatusInfo_Sub_NGGadjet_1' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, WBP_StatusInfo_Sub_NGGadjet_2) == 0x0003F0, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::WBP_StatusInfo_Sub_NGGadjet_2' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, WBP_StatusInfo_Sub_NGGadjet_3) == 0x0003F8, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::WBP_StatusInfo_Sub_NGGadjet_3' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, WidgetSwitcher) == 0x000400, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::WidgetSwitcher' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, ExGadgetTitle) == 0x000408, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::ExGadgetTitle' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, ExGadgetDetail) == 0x000418, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::ExGadgetDetail' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, NgGadgetTitle) == 0x000428, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::NgGadgetTitle' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_LegendCompRule_C, NgGadgetDetail) == 0x000438, "Member 'UWBP_StatusInfo_Sub_LegendCompRule_C::NgGadgetDetail' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_StatusInfo_Sub_LegendCompRule_C;
 
 }
 

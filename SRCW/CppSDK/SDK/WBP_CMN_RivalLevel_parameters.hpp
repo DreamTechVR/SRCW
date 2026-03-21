@@ -30,16 +30,7 @@ public:
 	const class UWidgetAnimation*                 K2Node_Event_Animation;                            // 0x0020(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_RivalLevel_C_ExecuteUbergraph_WBP_CMN_RivalLevel) == 0x000008, "Wrong alignment on WBP_CMN_RivalLevel_C_ExecuteUbergraph_WBP_CMN_RivalLevel");
-static_assert(sizeof(WBP_CMN_RivalLevel_C_ExecuteUbergraph_WBP_CMN_RivalLevel) == 0x000030, "Wrong size on WBP_CMN_RivalLevel_C_ExecuteUbergraph_WBP_CMN_RivalLevel");
-static_assert(offsetof(WBP_CMN_RivalLevel_C_ExecuteUbergraph_WBP_CMN_RivalLevel, EntryPoint) == 0x000000, "Member 'WBP_CMN_RivalLevel_C_ExecuteUbergraph_WBP_CMN_RivalLevel::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RivalLevel_C_ExecuteUbergraph_WBP_CMN_RivalLevel, K2Node_Event_IsDesignTime) == 0x000004, "Member 'WBP_CMN_RivalLevel_C_ExecuteUbergraph_WBP_CMN_RivalLevel::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RivalLevel_C_ExecuteUbergraph_WBP_CMN_RivalLevel, CallFunc_IsValidSoftObjectReference_ReturnValue) == 0x000005, "Member 'WBP_CMN_RivalLevel_C_ExecuteUbergraph_WBP_CMN_RivalLevel::CallFunc_IsValidSoftObjectReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RivalLevel_C_ExecuteUbergraph_WBP_CMN_RivalLevel, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x000008, "Member 'WBP_CMN_RivalLevel_C_ExecuteUbergraph_WBP_CMN_RivalLevel::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RivalLevel_C_ExecuteUbergraph_WBP_CMN_RivalLevel, K2Node_DynamicCast_As_____2D) == 0x000010, "Member 'WBP_CMN_RivalLevel_C_ExecuteUbergraph_WBP_CMN_RivalLevel::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RivalLevel_C_ExecuteUbergraph_WBP_CMN_RivalLevel, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'WBP_CMN_RivalLevel_C_ExecuteUbergraph_WBP_CMN_RivalLevel::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RivalLevel_C_ExecuteUbergraph_WBP_CMN_RivalLevel, K2Node_Event_Animation) == 0x000020, "Member 'WBP_CMN_RivalLevel_C_ExecuteUbergraph_WBP_CMN_RivalLevel::K2Node_Event_Animation' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_RivalLevel_C_ExecuteUbergraph_WBP_CMN_RivalLevel, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000028, "Member 'WBP_CMN_RivalLevel_C_ExecuteUbergraph_WBP_CMN_RivalLevel::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_RivalLevel_C_ExecuteUbergraph_WBP_CMN_RivalLevel;
 
 // Function WBP_CMN_RivalLevel.WBP_CMN_RivalLevel_C.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -48,9 +39,7 @@ struct WBP_CMN_RivalLevel_C_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_RivalLevel_C_OnAnimationFinished) == 0x000008, "Wrong alignment on WBP_CMN_RivalLevel_C_OnAnimationFinished");
-static_assert(sizeof(WBP_CMN_RivalLevel_C_OnAnimationFinished) == 0x000008, "Wrong size on WBP_CMN_RivalLevel_C_OnAnimationFinished");
-static_assert(offsetof(WBP_CMN_RivalLevel_C_OnAnimationFinished, Animation) == 0x000000, "Member 'WBP_CMN_RivalLevel_C_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_RivalLevel_C_OnAnimationFinished;
 
 // Function WBP_CMN_RivalLevel.WBP_CMN_RivalLevel_C.PlayAnimationIn
 // 0x0008 (0x0008 - 0x0000)
@@ -59,9 +48,7 @@ struct WBP_CMN_RivalLevel_C_PlayAnimationIn final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_RivalLevel_C_PlayAnimationIn) == 0x000008, "Wrong alignment on WBP_CMN_RivalLevel_C_PlayAnimationIn");
-static_assert(sizeof(WBP_CMN_RivalLevel_C_PlayAnimationIn) == 0x000008, "Wrong size on WBP_CMN_RivalLevel_C_PlayAnimationIn");
-static_assert(offsetof(WBP_CMN_RivalLevel_C_PlayAnimationIn, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_CMN_RivalLevel_C_PlayAnimationIn::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_RivalLevel_C_PlayAnimationIn;
 
 // Function WBP_CMN_RivalLevel.WBP_CMN_RivalLevel_C.PlayAnimationLoop
 // 0x0008 (0x0008 - 0x0000)
@@ -70,9 +57,7 @@ struct WBP_CMN_RivalLevel_C_PlayAnimationLoop final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_RivalLevel_C_PlayAnimationLoop) == 0x000008, "Wrong alignment on WBP_CMN_RivalLevel_C_PlayAnimationLoop");
-static_assert(sizeof(WBP_CMN_RivalLevel_C_PlayAnimationLoop) == 0x000008, "Wrong size on WBP_CMN_RivalLevel_C_PlayAnimationLoop");
-static_assert(offsetof(WBP_CMN_RivalLevel_C_PlayAnimationLoop, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_CMN_RivalLevel_C_PlayAnimationLoop::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_RivalLevel_C_PlayAnimationLoop;
 
 // Function WBP_CMN_RivalLevel.WBP_CMN_RivalLevel_C.PlayAnimationOut
 // 0x0008 (0x0008 - 0x0000)
@@ -81,9 +66,7 @@ struct WBP_CMN_RivalLevel_C_PlayAnimationOut final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_RivalLevel_C_PlayAnimationOut) == 0x000008, "Wrong alignment on WBP_CMN_RivalLevel_C_PlayAnimationOut");
-static_assert(sizeof(WBP_CMN_RivalLevel_C_PlayAnimationOut) == 0x000008, "Wrong size on WBP_CMN_RivalLevel_C_PlayAnimationOut");
-static_assert(offsetof(WBP_CMN_RivalLevel_C_PlayAnimationOut, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_CMN_RivalLevel_C_PlayAnimationOut::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_RivalLevel_C_PlayAnimationOut;
 
 // Function WBP_CMN_RivalLevel.WBP_CMN_RivalLevel_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -92,9 +75,7 @@ struct WBP_CMN_RivalLevel_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_RivalLevel_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_CMN_RivalLevel_C_PreConstruct");
-static_assert(sizeof(WBP_CMN_RivalLevel_C_PreConstruct) == 0x000001, "Wrong size on WBP_CMN_RivalLevel_C_PreConstruct");
-static_assert(offsetof(WBP_CMN_RivalLevel_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_CMN_RivalLevel_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_RivalLevel_C_PreConstruct;
 
 }
 

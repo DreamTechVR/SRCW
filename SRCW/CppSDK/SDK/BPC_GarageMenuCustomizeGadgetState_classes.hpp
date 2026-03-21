@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -33,16 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_GarageMenuCustomizeGadgetState_C">();
+		BP_STATIC_CLASS_IMPL("BPC_GarageMenuCustomizeGadgetState_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_GarageMenuCustomizeGadgetState_C")
 	}
 	static class UBPC_GarageMenuCustomizeGadgetState_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_GarageMenuCustomizeGadgetState_C>();
 	}
 };
-static_assert(alignof(UBPC_GarageMenuCustomizeGadgetState_C) == 0x000008, "Wrong alignment on UBPC_GarageMenuCustomizeGadgetState_C");
-static_assert(sizeof(UBPC_GarageMenuCustomizeGadgetState_C) == 0x000130, "Wrong size on UBPC_GarageMenuCustomizeGadgetState_C");
-static_assert(offsetof(UBPC_GarageMenuCustomizeGadgetState_C, UberGraphFrame) == 0x000128, "Member 'UBPC_GarageMenuCustomizeGadgetState_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_GarageMenuCustomizeGadgetState_C;
 
 }
 

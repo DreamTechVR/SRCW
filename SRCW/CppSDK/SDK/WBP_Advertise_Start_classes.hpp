@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -88,48 +88,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Advertise_Start_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Advertise_Start_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Advertise_Start_C")
 	}
 	static class UWBP_Advertise_Start_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Advertise_Start_C>();
 	}
 };
-static_assert(alignof(UWBP_Advertise_Start_C) == 0x000008, "Wrong alignment on UWBP_Advertise_Start_C");
-static_assert(sizeof(UWBP_Advertise_Start_C) == 0x0004F0, "Wrong size on UWBP_Advertise_Start_C");
-static_assert(offsetof(UWBP_Advertise_Start_C, UberGraphFrame) == 0x0003E0, "Member 'UWBP_Advertise_Start_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_Start_C, EnsureZeroOpacity) == 0x0003E8, "Member 'UWBP_Advertise_Start_C::EnsureZeroOpacity' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_Start_C, Out) == 0x0003F0, "Member 'UWBP_Advertise_Start_C::Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_Start_C, Loop) == 0x0003F8, "Member 'UWBP_Advertise_Start_C::Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_Start_C, In) == 0x000400, "Member 'UWBP_Advertise_Start_C::In' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_Start_C, Adv_01) == 0x000408, "Member 'UWBP_Advertise_Start_C::Adv_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_Start_C, BG_Black) == 0x000410, "Member 'UWBP_Advertise_Start_C::BG_Black' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_Start_C, BG_Black_03) == 0x000418, "Member 'UWBP_Advertise_Start_C::BG_Black_03' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_Start_C, BG_Black_05) == 0x000420, "Member 'UWBP_Advertise_Start_C::BG_Black_05' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_Start_C, BG_Black_06) == 0x000428, "Member 'UWBP_Advertise_Start_C::BG_Black_06' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_Start_C, BG_Black_08) == 0x000430, "Member 'UWBP_Advertise_Start_C::BG_Black_08' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_Start_C, CanvasPanel) == 0x000438, "Member 'UWBP_Advertise_Start_C::CanvasPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_Start_C, DMY_photosensitivity) == 0x000440, "Member 'UWBP_Advertise_Start_C::DMY_photosensitivity' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_Start_C, DMY_SegaLogo) == 0x000448, "Member 'UWBP_Advertise_Start_C::DMY_SegaLogo' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_Start_C, DMY_SegaLogo_US) == 0x000450, "Member 'UWBP_Advertise_Start_C::DMY_SegaLogo_US' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_Start_C, ESRB_Logo) == 0x000458, "Member 'UWBP_Advertise_Start_C::ESRB_Logo' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_Start_C, ESRB_Logo_1) == 0x000460, "Member 'UWBP_Advertise_Start_C::ESRB_Logo_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_Start_C, RightsLogo) == 0x000468, "Member 'UWBP_Advertise_Start_C::RightsLogo' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_Start_C, TXT_Ad) == 0x000470, "Member 'UWBP_Advertise_Start_C::TXT_Ad' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_Start_C, UE_Logo) == 0x000478, "Member 'UWBP_Advertise_Start_C::UE_Logo' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_Start_C, USK_Logo) == 0x000480, "Member 'UWBP_Advertise_Start_C::USK_Logo' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_Start_C, USK_Logo_1) == 0x000488, "Member 'UWBP_Advertise_Start_C::USK_Logo_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_Start_C, WBP_SonicLogo_Movie) == 0x000490, "Member 'UWBP_Advertise_Start_C::WBP_SonicLogo_Movie' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_Start_C, WidgetSwitcher_Rating) == 0x000498, "Member 'UWBP_Advertise_Start_C::WidgetSwitcher_Rating' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_Start_C, WS_Adv_Image) == 0x0004A0, "Member 'UWBP_Advertise_Start_C::WS_Adv_Image' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_Start_C, ActiveWidgetIndex) == 0x0004A8, "Member 'UWBP_Advertise_Start_C::ActiveWidgetIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_Start_C, WaitTimerLogoHandle) == 0x0004B0, "Member 'UWBP_Advertise_Start_C::WaitTimerLogoHandle' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_Start_C, FinishedLogosOutAnimation) == 0x0004B8, "Member 'UWBP_Advertise_Start_C::FinishedLogosOutAnimation' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_Start_C, LogosTimer) == 0x0004C8, "Member 'UWBP_Advertise_Start_C::LogosTimer' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_Start_C, WaitTimerDisableInputHandle) == 0x0004D0, "Member 'UWBP_Advertise_Start_C::WaitTimerDisableInputHandle' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_Start_C, SkipDisableTime) == 0x0004D8, "Member 'UWBP_Advertise_Start_C::SkipDisableTime' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_Start_C, StrapTime) == 0x0004E0, "Member 'UWBP_Advertise_Start_C::StrapTime' has a wrong offset!");
-static_assert(offsetof(UWBP_Advertise_Start_C, CopyrightDataAsset) == 0x0004E8, "Member 'UWBP_Advertise_Start_C::CopyrightDataAsset' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Advertise_Start_C;
 
 }
 

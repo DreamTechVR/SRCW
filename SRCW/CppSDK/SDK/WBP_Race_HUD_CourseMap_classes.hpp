@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -48,24 +48,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_HUD_CourseMap_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_HUD_CourseMap_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_HUD_CourseMap_C")
 	}
 	static class UWBP_Race_HUD_CourseMap_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_HUD_CourseMap_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_HUD_CourseMap_C) == 0x000008, "Wrong alignment on UWBP_Race_HUD_CourseMap_C");
-static_assert(sizeof(UWBP_Race_HUD_CourseMap_C) == 0x000420, "Wrong size on UWBP_Race_HUD_CourseMap_C");
-static_assert(offsetof(UWBP_Race_HUD_CourseMap_C, UberGraphFrame) == 0x0003B8, "Member 'UWBP_Race_HUD_CourseMap_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_CourseMap_C, CourseMap_Out) == 0x0003C0, "Member 'UWBP_Race_HUD_CourseMap_C::CourseMap_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_CourseMap_C, CourseMap_Loop) == 0x0003C8, "Member 'UWBP_Race_HUD_CourseMap_C::CourseMap_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_CourseMap_C, CourseMap_In) == 0x0003D0, "Member 'UWBP_Race_HUD_CourseMap_C::CourseMap_In' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_CourseMap_C, DMY_CourseMapTexture) == 0x0003D8, "Member 'UWBP_Race_HUD_CourseMap_C::DMY_CourseMapTexture' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_CourseMap_C, DMY_CourseMapTextureRT) == 0x0003E0, "Member 'UWBP_Race_HUD_CourseMap_C::DMY_CourseMapTextureRT' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_CourseMap_C, Overlay_0) == 0x0003E8, "Member 'UWBP_Race_HUD_CourseMap_C::Overlay_0' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_CourseMap_C, CourseRate) == 0x0003F0, "Member 'UWBP_Race_HUD_CourseMap_C::CourseRate' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_CourseMap_C, PanelDebugTexture) == 0x0003F8, "Member 'UWBP_Race_HUD_CourseMap_C::PanelDebugTexture' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_HUD_CourseMap_C;
 
 }
 

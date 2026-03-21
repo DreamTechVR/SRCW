@@ -23,15 +23,18 @@ class ABP_HoverboardActor_C final : public AHoverboardInRaceActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_HoverboardActor_C">();
+		BP_STATIC_CLASS_IMPL("BP_HoverboardActor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_HoverboardActor_C")
 	}
 	static class ABP_HoverboardActor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_HoverboardActor_C>();
 	}
 };
-static_assert(alignof(ABP_HoverboardActor_C) == 0x000008, "Wrong alignment on ABP_HoverboardActor_C");
-static_assert(sizeof(ABP_HoverboardActor_C) == 0x000798, "Wrong size on ABP_HoverboardActor_C");
+DUMPER7_ASSERTS_ABP_HoverboardActor_C;
 
 }
 

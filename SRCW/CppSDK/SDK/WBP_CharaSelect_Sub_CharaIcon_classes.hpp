@@ -11,38 +11,38 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_CharaSelect_Sub_CharaIcon.WBP_CharaSelect_Sub_CharaIcon_C
-// 0x00C8 (0x0698 - 0x05D0)
+// 0x00C8 (0x06B0 - 0x05E8)
 class UWBP_CharaSelect_Sub_CharaIcon_C final : public UCharaSelectCharaIcon
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       UnLock_Inout;                                      // 0x05D8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Select_Impossible;                                 // 0x05E0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Push_Player04;                                     // 0x05E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Push_Player03;                                     // 0x05F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Push_Player02;                                     // 0x05F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Push_Player01;                                     // 0x0600(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Select_Loop;                                       // 0x0608(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Active_Loop;                                       // 0x0610(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWBP_DonpaTicketApp_C*                  Dialog;                                            // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         SkinPrice;                                         // 0x0620(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_624[0x4];                                      // 0x0624(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   TextCateogry;                                      // 0x0628(0x0010)(Edit, BlueprintVisible)
-	class FText                                   TextTitlePrice;                                    // 0x0638(0x0010)(Edit, BlueprintVisible)
-	class FText                                   TextTitleUnlock;                                   // 0x0648(0x0010)(Edit, BlueprintVisible)
-	class FText                                   TextButtonYes;                                     // 0x0658(0x0010)(Edit, BlueprintVisible)
-	class FText                                   TextButtonNo;                                      // 0x0668(0x0010)(Edit, BlueprintVisible)
-	class FText                                   TextButtonOK;                                      // 0x0678(0x0010)(Edit, BlueprintVisible)
-	TMulticastInlineDelegate<void()>              Event_RivalWinIconAnimFinished;                    // 0x0688(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05E8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       UnLock_Inout;                                      // 0x05F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Select_Impossible;                                 // 0x05F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Push_Player04;                                     // 0x0600(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Push_Player03;                                     // 0x0608(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Push_Player02;                                     // 0x0610(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Push_Player01;                                     // 0x0618(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Select_Loop;                                       // 0x0620(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Active_Loop;                                       // 0x0628(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWBP_DonpaTicketApp_C*                  Dialog;                                            // 0x0630(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         SkinPrice;                                         // 0x0638(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_63C[0x4];                                      // 0x063C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   TextCateogry;                                      // 0x0640(0x0010)(Edit, BlueprintVisible)
+	class FText                                   TextTitlePrice;                                    // 0x0650(0x0010)(Edit, BlueprintVisible)
+	class FText                                   TextTitleUnlock;                                   // 0x0660(0x0010)(Edit, BlueprintVisible)
+	class FText                                   TextButtonYes;                                     // 0x0670(0x0010)(Edit, BlueprintVisible)
+	class FText                                   TextButtonNo;                                      // 0x0680(0x0010)(Edit, BlueprintVisible)
+	class FText                                   TextButtonOK;                                      // 0x0690(0x0010)(Edit, BlueprintVisible)
+	TMulticastInlineDelegate<void()>              Event_RivalWinIconAnimFinished;                    // 0x06A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void BindDialogPrice();
@@ -78,33 +78,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CharaSelect_Sub_CharaIcon_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CharaSelect_Sub_CharaIcon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CharaSelect_Sub_CharaIcon_C")
 	}
 	static class UWBP_CharaSelect_Sub_CharaIcon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CharaSelect_Sub_CharaIcon_C>();
 	}
 };
-static_assert(alignof(UWBP_CharaSelect_Sub_CharaIcon_C) == 0x000008, "Wrong alignment on UWBP_CharaSelect_Sub_CharaIcon_C");
-static_assert(sizeof(UWBP_CharaSelect_Sub_CharaIcon_C) == 0x000698, "Wrong size on UWBP_CharaSelect_Sub_CharaIcon_C");
-static_assert(offsetof(UWBP_CharaSelect_Sub_CharaIcon_C, UberGraphFrame) == 0x0005D0, "Member 'UWBP_CharaSelect_Sub_CharaIcon_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_CharaIcon_C, UnLock_Inout) == 0x0005D8, "Member 'UWBP_CharaSelect_Sub_CharaIcon_C::UnLock_Inout' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_CharaIcon_C, Select_Impossible) == 0x0005E0, "Member 'UWBP_CharaSelect_Sub_CharaIcon_C::Select_Impossible' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_CharaIcon_C, Push_Player04) == 0x0005E8, "Member 'UWBP_CharaSelect_Sub_CharaIcon_C::Push_Player04' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_CharaIcon_C, Push_Player03) == 0x0005F0, "Member 'UWBP_CharaSelect_Sub_CharaIcon_C::Push_Player03' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_CharaIcon_C, Push_Player02) == 0x0005F8, "Member 'UWBP_CharaSelect_Sub_CharaIcon_C::Push_Player02' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_CharaIcon_C, Push_Player01) == 0x000600, "Member 'UWBP_CharaSelect_Sub_CharaIcon_C::Push_Player01' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_CharaIcon_C, Select_Loop) == 0x000608, "Member 'UWBP_CharaSelect_Sub_CharaIcon_C::Select_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_CharaIcon_C, Active_Loop) == 0x000610, "Member 'UWBP_CharaSelect_Sub_CharaIcon_C::Active_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_CharaIcon_C, Dialog) == 0x000618, "Member 'UWBP_CharaSelect_Sub_CharaIcon_C::Dialog' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_CharaIcon_C, SkinPrice) == 0x000620, "Member 'UWBP_CharaSelect_Sub_CharaIcon_C::SkinPrice' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_CharaIcon_C, TextCateogry) == 0x000628, "Member 'UWBP_CharaSelect_Sub_CharaIcon_C::TextCateogry' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_CharaIcon_C, TextTitlePrice) == 0x000638, "Member 'UWBP_CharaSelect_Sub_CharaIcon_C::TextTitlePrice' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_CharaIcon_C, TextTitleUnlock) == 0x000648, "Member 'UWBP_CharaSelect_Sub_CharaIcon_C::TextTitleUnlock' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_CharaIcon_C, TextButtonYes) == 0x000658, "Member 'UWBP_CharaSelect_Sub_CharaIcon_C::TextButtonYes' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_CharaIcon_C, TextButtonNo) == 0x000668, "Member 'UWBP_CharaSelect_Sub_CharaIcon_C::TextButtonNo' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_CharaIcon_C, TextButtonOK) == 0x000678, "Member 'UWBP_CharaSelect_Sub_CharaIcon_C::TextButtonOK' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaSelect_Sub_CharaIcon_C, Event_RivalWinIconAnimFinished) == 0x000688, "Member 'UWBP_CharaSelect_Sub_CharaIcon_C::Event_RivalWinIconAnimFinished' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CharaSelect_Sub_CharaIcon_C;
 
 }
 

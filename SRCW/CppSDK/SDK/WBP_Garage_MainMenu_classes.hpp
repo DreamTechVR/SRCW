@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "UnionUI_classes.hpp"
 #include "UNION_structs.hpp"
+#include "UnionUI_classes.hpp"
 
 
 namespace SDK
@@ -54,31 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Garage_MainMenu_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Garage_MainMenu_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Garage_MainMenu_C")
 	}
 	static class UWBP_Garage_MainMenu_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Garage_MainMenu_C>();
 	}
 };
-static_assert(alignof(UWBP_Garage_MainMenu_C) == 0x000008, "Wrong alignment on UWBP_Garage_MainMenu_C");
-static_assert(sizeof(UWBP_Garage_MainMenu_C) == 0x000488, "Wrong size on UWBP_Garage_MainMenu_C");
-static_assert(offsetof(UWBP_Garage_MainMenu_C, UberGraphFrame) == 0x0003D8, "Member 'UWBP_Garage_MainMenu_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Garage_MainMenu_C, Garage_MainMenu_Out) == 0x0003E0, "Member 'UWBP_Garage_MainMenu_C::Garage_MainMenu_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Garage_MainMenu_C, Garage_MainMenu_In) == 0x0003E8, "Member 'UWBP_Garage_MainMenu_C::Garage_MainMenu_In' has a wrong offset!");
-static_assert(offsetof(UWBP_Garage_MainMenu_C, Garage_MainMenu_Loop) == 0x0003F0, "Member 'UWBP_Garage_MainMenu_C::Garage_MainMenu_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Garage_MainMenu_C, SafeZone_Garage_MainMenu) == 0x0003F8, "Member 'UWBP_Garage_MainMenu_C::SafeZone_Garage_MainMenu' has a wrong offset!");
-static_assert(offsetof(UWBP_Garage_MainMenu_C, WBP_CMN_MainMenu_Sub_Btn_01) == 0x000400, "Member 'UWBP_Garage_MainMenu_C::WBP_CMN_MainMenu_Sub_Btn_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Garage_MainMenu_C, WBP_CMN_MainMenu_Sub_Btn_02) == 0x000408, "Member 'UWBP_Garage_MainMenu_C::WBP_CMN_MainMenu_Sub_Btn_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Garage_MainMenu_C, WBP_CMN_MainMenu_Sub_Btn_03_Delete) == 0x000410, "Member 'UWBP_Garage_MainMenu_C::WBP_CMN_MainMenu_Sub_Btn_03_Delete' has a wrong offset!");
-static_assert(offsetof(UWBP_Garage_MainMenu_C, WBP_Garage_BG) == 0x000418, "Member 'UWBP_Garage_MainMenu_C::WBP_Garage_BG' has a wrong offset!");
-static_assert(offsetof(UWBP_Garage_MainMenu_C, OnCancel) == 0x000420, "Member 'UWBP_Garage_MainMenu_C::OnCancel' has a wrong offset!");
-static_assert(offsetof(UWBP_Garage_MainMenu_C, OnInAnimationFinished) == 0x000430, "Member 'UWBP_Garage_MainMenu_C::OnInAnimationFinished' has a wrong offset!");
-static_assert(offsetof(UWBP_Garage_MainMenu_C, OnDecisionAnimFinished) == 0x000440, "Member 'UWBP_Garage_MainMenu_C::OnDecisionAnimFinished' has a wrong offset!");
-static_assert(offsetof(UWBP_Garage_MainMenu_C, OnFocus) == 0x000450, "Member 'UWBP_Garage_MainMenu_C::OnFocus' has a wrong offset!");
-static_assert(offsetof(UWBP_Garage_MainMenu_C, Buttons) == 0x000460, "Member 'UWBP_Garage_MainMenu_C::Buttons' has a wrong offset!");
-static_assert(offsetof(UWBP_Garage_MainMenu_C, ButtonsPanel) == 0x000470, "Member 'UWBP_Garage_MainMenu_C::ButtonsPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_Garage_MainMenu_C, OnDecision) == 0x000478, "Member 'UWBP_Garage_MainMenu_C::OnDecision' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Garage_MainMenu_C;
 
 }
 

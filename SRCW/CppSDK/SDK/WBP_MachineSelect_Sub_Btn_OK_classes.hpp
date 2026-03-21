@@ -32,18 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MachineSelect_Sub_Btn_OK_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MachineSelect_Sub_Btn_OK_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MachineSelect_Sub_Btn_OK_C")
 	}
 	static class UWBP_MachineSelect_Sub_Btn_OK_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MachineSelect_Sub_Btn_OK_C>();
 	}
 };
-static_assert(alignof(UWBP_MachineSelect_Sub_Btn_OK_C) == 0x000008, "Wrong alignment on UWBP_MachineSelect_Sub_Btn_OK_C");
-static_assert(sizeof(UWBP_MachineSelect_Sub_Btn_OK_C) == 0x0004C0, "Wrong size on UWBP_MachineSelect_Sub_Btn_OK_C");
-static_assert(offsetof(UWBP_MachineSelect_Sub_Btn_OK_C, Btn_Select_to_Active) == 0x0004A8, "Member 'UWBP_MachineSelect_Sub_Btn_OK_C::Btn_Select_to_Active' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_Btn_OK_C, Btn_Active_to_Select) == 0x0004B0, "Member 'UWBP_MachineSelect_Sub_Btn_OK_C::Btn_Active_to_Select' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_Btn_OK_C, MouseInteraction) == 0x0004B8, "Member 'UWBP_MachineSelect_Sub_Btn_OK_C::MouseInteraction' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MachineSelect_Sub_Btn_OK_C;
 
 }
 

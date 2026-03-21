@@ -341,8 +341,9 @@ void UBPC_MachineCustomizeStickerSelectState_C::SetActiveAuraEffect(bool IsActiv
 // bool                                    IsExtra                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    IsRear                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // EExtraStickerPattern                    Pattern                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   stickerId                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBPC_MachineCustomizeStickerSelectState_C::SetExtraSticker(bool IsExtra, bool IsRear, EExtraStickerPattern Pattern)
+void UBPC_MachineCustomizeStickerSelectState_C::SetExtraSticker(bool IsExtra, bool IsRear, EExtraStickerPattern Pattern, int32 stickerId)
 {
 	static class UFunction* Func = nullptr;
 
@@ -354,6 +355,7 @@ void UBPC_MachineCustomizeStickerSelectState_C::SetExtraSticker(bool IsExtra, bo
 	Parms.IsExtra = IsExtra;
 	Parms.IsRear = IsRear;
 	Parms.Pattern = Pattern;
+	Parms.stickerId = stickerId;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

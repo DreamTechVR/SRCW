@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -46,19 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_MachineCustomizeColorPresetSelectState_C">();
+		BP_STATIC_CLASS_IMPL("BPC_MachineCustomizeColorPresetSelectState_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_MachineCustomizeColorPresetSelectState_C")
 	}
 	static class UBPC_MachineCustomizeColorPresetSelectState_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_MachineCustomizeColorPresetSelectState_C>();
 	}
 };
-static_assert(alignof(UBPC_MachineCustomizeColorPresetSelectState_C) == 0x000008, "Wrong alignment on UBPC_MachineCustomizeColorPresetSelectState_C");
-static_assert(sizeof(UBPC_MachineCustomizeColorPresetSelectState_C) == 0x000118, "Wrong size on UBPC_MachineCustomizeColorPresetSelectState_C");
-static_assert(offsetof(UBPC_MachineCustomizeColorPresetSelectState_C, UberGraphFrame) == 0x0000F8, "Member 'UBPC_MachineCustomizeColorPresetSelectState_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_MachineCustomizeColorPresetSelectState_C, Sequence) == 0x000100, "Member 'UBPC_MachineCustomizeColorPresetSelectState_C::Sequence' has a wrong offset!");
-static_assert(offsetof(UBPC_MachineCustomizeColorPresetSelectState_C, Racer) == 0x000108, "Member 'UBPC_MachineCustomizeColorPresetSelectState_C::Racer' has a wrong offset!");
-static_assert(offsetof(UBPC_MachineCustomizeColorPresetSelectState_C, ColorPresetSelectPage) == 0x000110, "Member 'UBPC_MachineCustomizeColorPresetSelectState_C::ColorPresetSelectPage' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_MachineCustomizeColorPresetSelectState_C;
 
 }
 

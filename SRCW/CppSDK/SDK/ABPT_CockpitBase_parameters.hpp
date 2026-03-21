@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UnionRun_structs.hpp"
+#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -26,9 +26,7 @@ struct ABPT_CockpitBase_C_AnimGraph final
 public:
 	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(ABPT_CockpitBase_C_AnimGraph) == 0x000008, "Wrong alignment on ABPT_CockpitBase_C_AnimGraph");
-static_assert(sizeof(ABPT_CockpitBase_C_AnimGraph) == 0x000010, "Wrong size on ABPT_CockpitBase_C_AnimGraph");
-static_assert(offsetof(ABPT_CockpitBase_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'ABPT_CockpitBase_C_AnimGraph::AnimGraph_0' has a wrong offset!");
+DUMPER7_ASSERTS_ABPT_CockpitBase_C_AnimGraph;
 
 // Function ABPT_CockpitBase.ABPT_CockpitBase_C.BlueprintUpdateAnimation
 // 0x0004 (0x0004 - 0x0000)
@@ -37,9 +35,7 @@ struct ABPT_CockpitBase_C_BlueprintUpdateAnimation final
 public:
 	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ABPT_CockpitBase_C_BlueprintUpdateAnimation) == 0x000004, "Wrong alignment on ABPT_CockpitBase_C_BlueprintUpdateAnimation");
-static_assert(sizeof(ABPT_CockpitBase_C_BlueprintUpdateAnimation) == 0x000004, "Wrong size on ABPT_CockpitBase_C_BlueprintUpdateAnimation");
-static_assert(offsetof(ABPT_CockpitBase_C_BlueprintUpdateAnimation, DeltaTimeX) == 0x000000, "Member 'ABPT_CockpitBase_C_BlueprintUpdateAnimation::DeltaTimeX' has a wrong offset!");
+DUMPER7_ASSERTS_ABPT_CockpitBase_C_BlueprintUpdateAnimation;
 
 // Function ABPT_CockpitBase.ABPT_CockpitBase_C.BoatAnimationLayer
 // 0x0020 (0x0020 - 0x0000)
@@ -49,10 +45,7 @@ public:
 	struct FPoseLink                              InPose;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              BoatAnimationLayer_0;                              // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(ABPT_CockpitBase_C_BoatAnimationLayer) == 0x000008, "Wrong alignment on ABPT_CockpitBase_C_BoatAnimationLayer");
-static_assert(sizeof(ABPT_CockpitBase_C_BoatAnimationLayer) == 0x000020, "Wrong size on ABPT_CockpitBase_C_BoatAnimationLayer");
-static_assert(offsetof(ABPT_CockpitBase_C_BoatAnimationLayer, InPose) == 0x000000, "Member 'ABPT_CockpitBase_C_BoatAnimationLayer::InPose' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_BoatAnimationLayer, BoatAnimationLayer_0) == 0x000010, "Member 'ABPT_CockpitBase_C_BoatAnimationLayer::BoatAnimationLayer_0' has a wrong offset!");
+DUMPER7_ASSERTS_ABPT_CockpitBase_C_BoatAnimationLayer;
 
 // Function ABPT_CockpitBase.ABPT_CockpitBase_C.ExecuteUbergraph_ABPT_CockpitBase
 // 0x0148 (0x0148 - 0x0000)
@@ -195,133 +188,7 @@ public:
 	double                                        CallFunc_Multiply_DoubleDouble_A_ImplicitCast_1;   // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_MakeRotator_Yaw_ImplicitCast_1;           // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase) == 0x000008, "Wrong alignment on ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase");
-static_assert(sizeof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase) == 0x000148, "Wrong size on ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, EntryPoint) == 0x000000, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, K2Node_Event_DeltaTimeX) == 0x000004, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::K2Node_Event_DeltaTimeX' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetRideableType_ReturnValue) == 0x000008, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetRideableType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetRideableType_ReturnValue_1) == 0x000009, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetRideableType_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00000A, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x00000B, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetRideableType_ReturnValue_2) == 0x00000C, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetRideableType_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetRideableType_ReturnValue_3) == 0x00000D, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetRideableType_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x00000E, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_EqualEqual_ByteByte_ReturnValue_3) == 0x00000F, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_EqualEqual_ByteByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetRideableType_ReturnValue_4) == 0x000010, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetRideableType_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetRelevantAnimTimeRemaining_ReturnValue) == 0x000014, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetRelevantAnimTimeRemaining_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_EqualEqual_ByteByte_ReturnValue_4) == 0x000018, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_EqualEqual_ByteByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_LessEqual_DoubleDouble_ReturnValue) == 0x000019, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_LessEqual_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetFlag_ReturnValue) == 0x00001A, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetFlag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetRideableType_ReturnValue_5) == 0x00001B, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetRideableType_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_BooleanAND_ReturnValue) == 0x00001C, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_EqualEqual_ByteByte_ReturnValue_5) == 0x00001D, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_EqualEqual_ByteByte_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_BooleanOR_ReturnValue) == 0x00001E, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetFlag_ReturnValue_1) == 0x00001F, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetFlag_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetRelevantAnimTimeRemaining_ReturnValue_1) == 0x000020, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetRelevantAnimTimeRemaining_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_LessEqual_DoubleDouble_ReturnValue_1) == 0x000024, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_LessEqual_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetRideableType_ReturnValue_6) == 0x000025, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetRideableType_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_EqualEqual_ByteByte_ReturnValue_6) == 0x000026, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_EqualEqual_ByteByte_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetRideableType_ReturnValue_7) == 0x000027, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetRideableType_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_EqualEqual_ByteByte_ReturnValue_7) == 0x000028, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_EqualEqual_ByteByte_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetBoatSyncAnimTime_ReturnValue) == 0x00002C, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetBoatSyncAnimTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetRideableType_ReturnValue_8) == 0x000030, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetRideableType_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_EqualEqual_ByteByte_ReturnValue_8) == 0x000031, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_EqualEqual_ByteByte_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_BooleanAND_ReturnValue_1) == 0x000032, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_Not_PreBool_ReturnValue) == 0x000033, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_Less_DoubleDouble_ReturnValue) == 0x000034, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_Less_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetFlag_ReturnValue_2) == 0x000035, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetFlag_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetFlag_ReturnValue_3) == 0x000036, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetFlag_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_BooleanAND_ReturnValue_2) == 0x000037, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_Greater_DoubleDouble_ReturnValue) == 0x000038, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_Greater_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_IsUpdateState_ReturnValue) == 0x000039, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_IsUpdateState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_IsUpdateState_ReturnValue_1) == 0x00003A, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_IsUpdateState_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_IsUpdateState_ReturnValue_2) == 0x00003B, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_IsUpdateState_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_Not_PreBool_ReturnValue_1) == 0x00003C, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetFlag_ReturnValue_4) == 0x00003D, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetFlag_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetRideableType_ReturnValue_9) == 0x00003E, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetRideableType_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_EqualEqual_ByteByte_ReturnValue_9) == 0x00003F, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_EqualEqual_ByteByte_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetRideableType_ReturnValue_10) == 0x000040, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetRideableType_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_EqualEqual_ByteByte_ReturnValue_10) == 0x000041, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_EqualEqual_ByteByte_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetFlag_ReturnValue_5) == 0x000042, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetFlag_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetFlag_ReturnValue_6) == 0x000043, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetFlag_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetRideableType_ReturnValue_11) == 0x000044, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetRideableType_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_Not_PreBool_ReturnValue_2) == 0x000045, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_EqualEqual_ByteByte_ReturnValue_11) == 0x000046, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_EqualEqual_ByteByte_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetRideableType_ReturnValue_12) == 0x000047, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetRideableType_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetFlag_ReturnValue_7) == 0x000048, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetFlag_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_EqualEqual_ByteByte_ReturnValue_12) == 0x000049, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_EqualEqual_ByteByte_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetParam_ReturnValue) == 0x00004C, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetParam_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetRideableType_ReturnValue_13) == 0x000050, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetRideableType_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_Greater_DoubleDouble_ReturnValue_1) == 0x000051, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_Greater_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_EqualEqual_ByteByte_ReturnValue_13) == 0x000052, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_EqualEqual_ByteByte_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_BooleanAND_ReturnValue_3) == 0x000053, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetRideableType_ReturnValue_14) == 0x000054, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetRideableType_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_EqualEqual_ByteByte_ReturnValue_14) == 0x000055, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_EqualEqual_ByteByte_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetRideableType_ReturnValue_15) == 0x000056, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetRideableType_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_EqualEqual_ByteByte_ReturnValue_15) == 0x000057, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_EqualEqual_ByteByte_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetFlag_ReturnValue_8) == 0x000058, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetFlag_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_Not_PreBool_ReturnValue_3) == 0x000059, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_Not_PreBool_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetRideableType_ReturnValue_16) == 0x00005A, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetRideableType_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_EqualEqual_ByteByte_ReturnValue_16) == 0x00005B, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_EqualEqual_ByteByte_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetRideableType_ReturnValue_17) == 0x00005C, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetRideableType_ReturnValue_17' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_EqualEqual_ByteByte_ReturnValue_17) == 0x00005D, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_EqualEqual_ByteByte_ReturnValue_17' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetFlag_ReturnValue_9) == 0x00005E, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetFlag_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetFlag_ReturnValue_10) == 0x00005F, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetFlag_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetRideableType_ReturnValue_18) == 0x000060, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetRideableType_ReturnValue_18' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_EqualEqual_ByteByte_ReturnValue_18) == 0x000061, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_EqualEqual_ByteByte_ReturnValue_18' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetRideableType_ReturnValue_19) == 0x000062, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetRideableType_ReturnValue_19' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_EqualEqual_ByteByte_ReturnValue_19) == 0x000063, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_EqualEqual_ByteByte_ReturnValue_19' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetFlag_ReturnValue_11) == 0x000064, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetFlag_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetRideableType_ReturnValue_20) == 0x000065, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetRideableType_ReturnValue_20' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetRideableType_ReturnValue_21) == 0x000066, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetRideableType_ReturnValue_21' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_EqualEqual_ByteByte_ReturnValue_20) == 0x000067, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_EqualEqual_ByteByte_ReturnValue_20' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_EqualEqual_ByteByte_ReturnValue_21) == 0x000068, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_EqualEqual_ByteByte_ReturnValue_21' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetRelevantAnimTimeRemaining_ReturnValue_2) == 0x00006C, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetRelevantAnimTimeRemaining_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_LessEqual_DoubleDouble_ReturnValue_2) == 0x000070, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_LessEqual_DoubleDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetAnimState_ReturnValue) == 0x000071, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetAnimState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_EqualEqual_ByteByte_ReturnValue_22) == 0x000072, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_EqualEqual_ByteByte_ReturnValue_22' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetRideableType_ReturnValue_22) == 0x000073, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetRideableType_ReturnValue_22' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetAnimState_ReturnValue_1) == 0x000074, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetAnimState_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_EqualEqual_ByteByte_ReturnValue_23) == 0x000075, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_EqualEqual_ByteByte_ReturnValue_23' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_EqualEqual_ByteByte_ReturnValue_24) == 0x000076, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_EqualEqual_ByteByte_ReturnValue_24' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetRideableType_ReturnValue_23) == 0x000077, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetRideableType_ReturnValue_23' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_EqualEqual_ByteByte_ReturnValue_25) == 0x000078, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_EqualEqual_ByteByte_ReturnValue_25' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetRideableType_ReturnValue_24) == 0x000079, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetRideableType_ReturnValue_24' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_EqualEqual_ByteByte_ReturnValue_26) == 0x00007A, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_EqualEqual_ByteByte_ReturnValue_26' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetFlag_ReturnValue_12) == 0x00007B, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetFlag_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetParam_ReturnValue_1) == 0x00007C, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetParam_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_Not_PreBool_ReturnValue_4) == 0x000080, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_Not_PreBool_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetParam_ReturnValue_2) == 0x000084, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetParam_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_BooleanAND_ReturnValue_4) == 0x000088, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_BooleanAND_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetParam_ReturnValue_3) == 0x00008C, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetParam_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetParam_ReturnValue_4) == 0x000090, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetParam_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetParam_ReturnValue_5) == 0x000094, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetParam_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetParam_ReturnValue_6) == 0x000098, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetParam_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetRideableType_ReturnValue_25) == 0x00009C, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetRideableType_ReturnValue_25' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x0000A0, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_EqualEqual_ByteByte_ReturnValue_27) == 0x0000A8, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_EqualEqual_ByteByte_ReturnValue_27' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_MakeRotator_ReturnValue) == 0x0000B0, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_Multiply_DoubleDouble_ReturnValue_1) == 0x0000C8, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_Multiply_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_MakeRotator_ReturnValue_1) == 0x0000D0, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_MakeRotator_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetRideableType_ReturnValue_26) == 0x0000E8, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetRideableType_ReturnValue_26' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_EqualEqual_ByteByte_ReturnValue_28) == 0x0000E9, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_EqualEqual_ByteByte_ReturnValue_28' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_BooleanAND_ReturnValue_5) == 0x0000EA, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_BooleanAND_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_BooleanOR_ReturnValue_1) == 0x0000EB, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_GetRideableType_ReturnValue_27) == 0x0000EC, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_GetRideableType_ReturnValue_27' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_EqualEqual_ByteByte_ReturnValue_29) == 0x0000ED, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_EqualEqual_ByteByte_ReturnValue_29' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_BooleanAND_ReturnValue_6) == 0x0000EE, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_BooleanAND_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_Not_PreBool_ReturnValue_5) == 0x0000EF, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_Not_PreBool_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_BooleanAND_ReturnValue_7) == 0x0000F0, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_BooleanAND_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_LessEqual_DoubleDouble_A_ImplicitCast) == 0x0000F8, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_LessEqual_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_LessEqual_DoubleDouble_A_ImplicitCast_1) == 0x000100, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_LessEqual_DoubleDouble_A_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_Less_DoubleDouble_A_ImplicitCast) == 0x000108, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_Less_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_Greater_DoubleDouble_A_ImplicitCast) == 0x000110, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_Greater_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_Greater_DoubleDouble_A_ImplicitCast_1) == 0x000118, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_Greater_DoubleDouble_A_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_LessEqual_DoubleDouble_A_ImplicitCast_2) == 0x000120, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_LessEqual_DoubleDouble_A_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_Multiply_DoubleDouble_A_ImplicitCast) == 0x000128, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_Multiply_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_MakeRotator_Yaw_ImplicitCast) == 0x000130, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_MakeRotator_Yaw_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_Multiply_DoubleDouble_A_ImplicitCast_1) == 0x000138, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_Multiply_DoubleDouble_A_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase, CallFunc_MakeRotator_Yaw_ImplicitCast_1) == 0x000140, "Member 'ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase::CallFunc_MakeRotator_Yaw_ImplicitCast_1' has a wrong offset!");
+DUMPER7_ASSERTS_ABPT_CockpitBase_C_ExecuteUbergraph_ABPT_CockpitBase;
 
 }
 

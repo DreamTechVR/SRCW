@@ -17,62 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_ResultRate.WBP_ResultRate_C.BndEvt__WBP_ResultRate_Button_Screen_K2Node_ComponentBoundEvent_0_OnButtonPressedEvent__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_ResultRate_C::BndEvt__WBP_ResultRate_Button_Screen_K2Node_ComponentBoundEvent_0_OnButtonPressedEvent__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResultRate_C", "BndEvt__WBP_ResultRate_Button_Screen_K2Node_ComponentBoundEvent_0_OnButtonPressedEvent__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ResultRate.WBP_ResultRate_C.CloseTips
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_ResultRate_C::CloseTips()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResultRate_C", "CloseTips");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ResultRate.WBP_ResultRate_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_ResultRate_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResultRate_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ResultRate.WBP_ResultRate_C.EndProc
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_ResultRate_C::EndProc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResultRate_C", "EndProc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_ResultRate.WBP_ResultRate_C.ExecuteUbergraph_WBP_ResultRate
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -88,6 +32,144 @@ void UWBP_ResultRate_C::ExecuteUbergraph_WBP_ResultRate(int32 EntryPoint)
 	Params::WBP_ResultRate_C_ExecuteUbergraph_WBP_ResultRate Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ResultRate.WBP_ResultRate_C.Finished_177244A04DFC44CECD5AE6BB5A0E8ECE
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_ResultRate_C::Finished_177244A04DFC44CECD5AE6BB5A0E8ECE()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResultRate_C", "Finished_177244A04DFC44CECD5AE6BB5A0E8ECE");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ResultRate.WBP_ResultRate_C.Finished_5FA4F69C407DB8CCA6F4208DEC9CF07A
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_ResultRate_C::Finished_5FA4F69C407DB8CCA6F4208DEC9CF07A()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResultRate_C", "Finished_5FA4F69C407DB8CCA6F4208DEC9CF07A");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ResultRate.WBP_ResultRate_C.PlayInAnimation
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ResultRate_C::PlayInAnimation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResultRate_C", "PlayInAnimation");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ResultRate.WBP_ResultRate_C.PlayOutAnimation
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ResultRate_C::PlayOutAnimation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResultRate_C", "PlayOutAnimation");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ResultRate.WBP_ResultRate_C.PlayRateRankBandAnimation
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ERateRank                               StartRank                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ERateRank                               EndRank                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ResultRate_C::PlayRateRankBandAnimation(ERateRank StartRank, ERateRank EndRank)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResultRate_C", "PlayRateRankBandAnimation");
+
+	Params::WBP_ResultRate_C_PlayRateRankBandAnimation Parms{};
+
+	Parms.StartRank = StartRank;
+	Parms.EndRank = EndRank;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ResultRate.WBP_ResultRate_C.SetCurrentGaugeValue
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   CurrentValue                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ResultRate_C::SetCurrentGaugeValue(float CurrentValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResultRate_C", "SetCurrentGaugeValue");
+
+	Params::WBP_ResultRate_C_SetCurrentGaugeValue Parms{};
+
+	Parms.CurrentValue = CurrentValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ResultRate.WBP_ResultRate_C.SetCurrentRateValue
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   CurrentRateValue                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ResultRate_C::SetCurrentRateValue(int32 CurrentRateValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResultRate_C", "SetCurrentRateValue");
+
+	Params::WBP_ResultRate_C_SetCurrentRateValue Parms{};
+
+	Parms.CurrentRateValue = CurrentRateValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ResultRate.WBP_ResultRate_C.SetNextRewardIcon
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ERateRank                               CurrentRank                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ResultRate_C::SetNextRewardIcon(ERateRank CurrentRank)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResultRate_C", "SetNextRewardIcon");
+
+	Params::WBP_ResultRate_C_SetNextRewardIcon Parms{};
+
+	Parms.CurrentRank = CurrentRank;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -113,23 +195,43 @@ void UWBP_ResultRate_C::SetOpenTipsWindow(bool InOpenWindow)
 }
 
 
-// Function WBP_ResultRate.WBP_ResultRate_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_ResultRate.WBP_ResultRate_C.SetResultIcon
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   IconIndex                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ResultRate_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+void UWBP_ResultRate_C::SetResultIcon(int32 IconIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResultRate_C", "Tick");
+		Func = Class->GetFunction("WBP_ResultRate_C", "SetResultIcon");
 
-	Params::WBP_ResultRate_C_Tick Parms{};
+	Params::WBP_ResultRate_C_SetResultIcon Parms{};
 
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
+	Parms.IconIndex = IconIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ResultRate.WBP_ResultRate_C.SetupLimitValue
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   CurrentRankLimit                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NextRankLimit                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ResultRate_C::SetupLimitValue(int32 CurrentRankLimit, int32 NextRankLimit)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResultRate_C", "SetupLimitValue");
+
+	Params::WBP_ResultRate_C_SetupLimitValue Parms{};
+
+	Parms.CurrentRankLimit = CurrentRankLimit;
+	Parms.NextRankLimit = NextRankLimit;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

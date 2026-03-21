@@ -11,25 +11,27 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_RaceResultRateRankSequence.BP_RaceResultRateRankSequence_C
-// 0x0008 (0x0500 - 0x04F8)
+// 0x0008 (0x0530 - 0x0528)
 class ABP_RaceResultRateRankSequence_C final : public ARaceResultRateRankSequence
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04F8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0528(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
+	void CreateRankUpRewardGetDisplay();
 	void CreateRankupWidget();
 	void CreateResultRateWidget();
 	void CreateRewardDialogAndSaveObject();
 	void ExecuteUbergraph_BP_RaceResultRateRankSequence(int32 EntryPoint);
+	void LoadResultRateWidget();
 	void OnInitStateEndDisplay();
 	void OnInitStateExit();
 	void OnInitStateGetRankReward();
@@ -38,20 +40,24 @@ public:
 	void OnInitStateRankUp();
 	void OnInitStateStartDisplay();
 	void OnInitStateUpdateRate();
+	void OnLoaded_8253A9344CCF796B76F6C29F92EDA292(TSubclassOf<class UObject> Loaded);
+	void OnLoaded_954DBACF48FD86B2267102BA58197816(TSubclassOf<class UObject> Loaded);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_RaceResultRateRankSequence_C">();
+		BP_STATIC_CLASS_IMPL("BP_RaceResultRateRankSequence_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_RaceResultRateRankSequence_C")
 	}
 	static class ABP_RaceResultRateRankSequence_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_RaceResultRateRankSequence_C>();
 	}
 };
-static_assert(alignof(ABP_RaceResultRateRankSequence_C) == 0x000008, "Wrong alignment on ABP_RaceResultRateRankSequence_C");
-static_assert(sizeof(ABP_RaceResultRateRankSequence_C) == 0x000500, "Wrong size on ABP_RaceResultRateRankSequence_C");
-static_assert(offsetof(ABP_RaceResultRateRankSequence_C, UberGraphFrame) == 0x0004F8, "Member 'ABP_RaceResultRateRankSequence_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_RaceResultRateRankSequence_C;
 
 }
 

@@ -43,25 +43,7 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x005B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext) == 0x000008, "Wrong alignment on WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext");
-static_assert(sizeof(WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext) == 0x000060, "Wrong size on WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext, EntryPoint) == 0x000000, "Member 'WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext, CallFunc_GetTxtRivalCompleteNum_ReturnValue) == 0x000008, "Member 'WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext::CallFunc_GetTxtRivalCompleteNum_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext, Temp_bool_Variable) == 0x000018, "Member 'WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext, Temp_byte_Variable) == 0x000019, "Member 'WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext, Temp_byte_Variable_1) == 0x00001A, "Member 'WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x000020, "Member 'WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext, K2Node_DynamicCast_As_____2D) == 0x000028, "Member 'WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext, K2Node_Event_IsDesignTime) == 0x000031, "Member 'WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext, K2Node_DynamicCast_AsWBP_Footer_Menu_Sub_Controller_Btn) == 0x000038, "Member 'WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext::K2Node_DynamicCast_AsWBP_Footer_Menu_Sub_Controller_Btn' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext, K2Node_DynamicCast_bSuccess_1) == 0x000040, "Member 'WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext, K2Node_MakeArray_Array) == 0x000048, "Member 'WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext, CallFunc_IsClearedNormalGrandPrix_ReturnValue) == 0x000058, "Member 'WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext::CallFunc_IsClearedNormalGrandPrix_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext, CallFunc_IsSelectableDriver_ReturnValue) == 0x000059, "Member 'WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext::CallFunc_IsSelectableDriver_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext, CallFunc_Not_PreBool_ReturnValue) == 0x00005A, "Member 'WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext, CallFunc_BooleanAND_ReturnValue) == 0x00005B, "Member 'WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext, K2Node_Select_Default) == 0x00005C, "Member 'WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_Sub_RivalNext_C_ExecuteUbergraph_WBP_CourseSelect_Sub_RivalNext;
 
 // Function WBP_CourseSelect_Sub_RivalNext.WBP_CourseSelect_Sub_RivalNext_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -70,9 +52,7 @@ struct WBP_CourseSelect_Sub_RivalNext_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_Sub_RivalNext_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_CourseSelect_Sub_RivalNext_C_PreConstruct");
-static_assert(sizeof(WBP_CourseSelect_Sub_RivalNext_C_PreConstruct) == 0x000001, "Wrong size on WBP_CourseSelect_Sub_RivalNext_C_PreConstruct");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_CourseSelect_Sub_RivalNext_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_Sub_RivalNext_C_PreConstruct;
 
 // Function WBP_CourseSelect_Sub_RivalNext.WBP_CourseSelect_Sub_RivalNext_C.UpdateDisplayLevel
 // 0x0068 (0x0068 - 0x0000)
@@ -105,28 +85,7 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel) == 0x000008, "Wrong alignment on WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel");
-static_assert(sizeof(WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel) == 0x000068, "Wrong size on WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel, RivalLevel) == 0x000000, "Member 'WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel::RivalLevel' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel, BaseRivalLevel) == 0x000004, "Member 'WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel::BaseRivalLevel' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel, LevelIconIndex) == 0x000008, "Member 'WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel::LevelIconIndex' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel, CallFunc_Greater_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel, Temp_int_Array_Index_Variable) == 0x000010, "Member 'WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel, CallFunc_SelectInt_ReturnValue) == 0x000014, "Member 'WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel, CallFunc_SelectInt_ReturnValue_1) == 0x000018, "Member 'WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel::CallFunc_SelectInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel, Temp_int_Loop_Counter_Variable) == 0x00001C, "Member 'WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel, CallFunc_Subtract_IntInt_ReturnValue) == 0x000020, "Member 'WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel, CallFunc_Add_IntInt_ReturnValue) == 0x000024, "Member 'WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel, CallFunc_Greater_IntInt_ReturnValue_1) == 0x000028, "Member 'WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel, CallFunc_SelectFloat_ReturnValue) == 0x000030, "Member 'WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x000038, "Member 'WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel, CallFunc_LessEqual_IntInt_ReturnValue) == 0x00003C, "Member 'WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel, CallFunc_Array_Get_Item) == 0x000048, "Member 'WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel, CallFunc_Less_IntInt_ReturnValue) == 0x000050, "Member 'WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel, CallFunc_IsValid_ReturnValue) == 0x000051, "Member 'WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000058, "Member 'WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000060, "Member 'WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSelect_Sub_RivalNext_C_UpdateDisplayLevel;
 
 }
 

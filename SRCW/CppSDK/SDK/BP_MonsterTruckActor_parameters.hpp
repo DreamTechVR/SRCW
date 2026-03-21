@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
+#include "UNION_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
-#include "UNION_structs.hpp"
 
 
 namespace SDK::Params
@@ -77,52 +77,7 @@ public:
 	class UClass*                                 K2Node_ClassDynamicCast_AsAnim______;              // 0x0368(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ClassDynamicCast_bSuccess;                  // 0x0370(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor) == 0x000008, "Wrong alignment on BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor");
-static_assert(sizeof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor) == 0x000378, "Wrong size on BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, EntryPoint) == 0x000000, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, K2Node_MakeArray_Array) == 0x000008, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, CallFunc_Format_ReturnValue) == 0x000018, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, K2Node_MakeArray_Array_1) == 0x000028, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, K2Node_Event_bIsPlay) == 0x000038, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::K2Node_Event_bIsPlay' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, K2Node_Event_Color) == 0x00003C, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::K2Node_Event_Color' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, K2Node_Event_bWithDriver) == 0x00004C, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::K2Node_Event_bWithDriver' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, CallFunc_Format_ReturnValue_1) == 0x000050, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, K2Node_Event_InDriverSize_1) == 0x000060, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::K2Node_Event_InDriverSize_1' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, K2Node_Event_InDriverSize) == 0x000061, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::K2Node_Event_InDriverSize' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, CallFunc_GetEnumeratorName_ReturnValue) == 0x000064, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, CallFunc_GetEnumeratorName_ReturnValue_1) == 0x00006C, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::CallFunc_GetEnumeratorName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, CallFunc_GetEnumeratorName_ReturnValue_2) == 0x000074, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::CallFunc_GetEnumeratorName_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, CallFunc_GetEnumeratorName_ReturnValue_3) == 0x00007C, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::CallFunc_GetEnumeratorName_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, CallFunc_Conv_NameToText_ReturnValue) == 0x000088, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::CallFunc_Conv_NameToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, CallFunc_Conv_NameToText_ReturnValue_1) == 0x000098, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::CallFunc_Conv_NameToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, K2Node_MakeStruct_FormatArgumentData) == 0x0000A8, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, K2Node_MakeStruct_FormatArgumentData_1) == 0x0000F0, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, K2Node_MakeArray_Array_2) == 0x000138, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::K2Node_MakeArray_Array_2' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, K2Node_MakeArray_Array_3) == 0x000148, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::K2Node_MakeArray_Array_3' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, CallFunc_Format_ReturnValue_2) == 0x000158, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::CallFunc_Format_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, CallFunc_Format_ReturnValue_3) == 0x000168, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::CallFunc_Format_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, CallFunc_GetEnumeratorName_ReturnValue_4) == 0x000178, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::CallFunc_GetEnumeratorName_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, CallFunc_GetEnumeratorName_ReturnValue_5) == 0x000180, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::CallFunc_GetEnumeratorName_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, CallFunc_Conv_NameToText_ReturnValue_2) == 0x000188, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::CallFunc_Conv_NameToText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, CallFunc_Conv_NameToText_ReturnValue_3) == 0x000198, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::CallFunc_Conv_NameToText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, K2Node_MakeStruct_FormatArgumentData_2) == 0x0001A8, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, K2Node_MakeStruct_FormatArgumentData_3) == 0x0001F0, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::K2Node_MakeStruct_FormatArgumentData_3' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, K2Node_MakeArray_Array_4) == 0x000238, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::K2Node_MakeArray_Array_4' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, K2Node_MakeArray_Array_5) == 0x000248, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::K2Node_MakeArray_Array_5' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, CallFunc_Format_ReturnValue_4) == 0x000258, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::CallFunc_Format_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, CallFunc_Format_ReturnValue_5) == 0x000268, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::CallFunc_Format_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000278, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x000280, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, CallFunc_GetDataTableRowFromName_OutRow) == 0x000288, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x0002E0, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, CallFunc_GetDataTableRowFromName_OutRow_1) == 0x0002E8, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::CallFunc_GetDataTableRowFromName_OutRow_1' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, CallFunc_GetDataTableRowFromName_ReturnValue_1) == 0x000340, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::CallFunc_GetDataTableRowFromName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x000348, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, CallFunc_LoadClassAsset_Blocking_ReturnValue) == 0x000350, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::CallFunc_LoadClassAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, K2Node_DynamicCast_As_________) == 0x000358, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::K2Node_DynamicCast_As_________' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, K2Node_DynamicCast_bSuccess) == 0x000360, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, K2Node_ClassDynamicCast_AsAnim______) == 0x000368, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::K2Node_ClassDynamicCast_AsAnim______' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor, K2Node_ClassDynamicCast_bSuccess) == 0x000370, "Member 'BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MonsterTruckActor_C_ExecuteUbergraph_BP_MonsterTruckActor;
 
 // Function BP_MonsterTruckActor.BP_MonsterTruckActor_C.LoadingCockpitAnimation
 // 0x0001 (0x0001 - 0x0000)
@@ -131,9 +86,7 @@ struct BP_MonsterTruckActor_C_LoadingCockpitAnimation final
 public:
 	EDriverSize                                   InDriverSize;                                      // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MonsterTruckActor_C_LoadingCockpitAnimation) == 0x000001, "Wrong alignment on BP_MonsterTruckActor_C_LoadingCockpitAnimation");
-static_assert(sizeof(BP_MonsterTruckActor_C_LoadingCockpitAnimation) == 0x000001, "Wrong size on BP_MonsterTruckActor_C_LoadingCockpitAnimation");
-static_assert(offsetof(BP_MonsterTruckActor_C_LoadingCockpitAnimation, InDriverSize) == 0x000000, "Member 'BP_MonsterTruckActor_C_LoadingCockpitAnimation::InDriverSize' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MonsterTruckActor_C_LoadingCockpitAnimation;
 
 // Function BP_MonsterTruckActor.BP_MonsterTruckActor_C.LoadingCockpitMesh
 // 0x0001 (0x0001 - 0x0000)
@@ -142,9 +95,7 @@ struct BP_MonsterTruckActor_C_LoadingCockpitMesh final
 public:
 	EDriverSize                                   InDriverSize;                                      // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MonsterTruckActor_C_LoadingCockpitMesh) == 0x000001, "Wrong alignment on BP_MonsterTruckActor_C_LoadingCockpitMesh");
-static_assert(sizeof(BP_MonsterTruckActor_C_LoadingCockpitMesh) == 0x000001, "Wrong size on BP_MonsterTruckActor_C_LoadingCockpitMesh");
-static_assert(offsetof(BP_MonsterTruckActor_C_LoadingCockpitMesh, InDriverSize) == 0x000000, "Member 'BP_MonsterTruckActor_C_LoadingCockpitMesh::InDriverSize' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MonsterTruckActor_C_LoadingCockpitMesh;
 
 // Function BP_MonsterTruckActor.BP_MonsterTruckActor_C.OnCountDown
 // 0x0018 (0x0018 - 0x0000)
@@ -156,11 +107,7 @@ public:
 	struct FLinearColor                           Color;                                             // 0x0004(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bWithDriver;                                       // 0x0014(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MonsterTruckActor_C_OnCountDown) == 0x000004, "Wrong alignment on BP_MonsterTruckActor_C_OnCountDown");
-static_assert(sizeof(BP_MonsterTruckActor_C_OnCountDown) == 0x000018, "Wrong size on BP_MonsterTruckActor_C_OnCountDown");
-static_assert(offsetof(BP_MonsterTruckActor_C_OnCountDown, bIsPlay) == 0x000000, "Member 'BP_MonsterTruckActor_C_OnCountDown::bIsPlay' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_OnCountDown, Color) == 0x000004, "Member 'BP_MonsterTruckActor_C_OnCountDown::Color' has a wrong offset!");
-static_assert(offsetof(BP_MonsterTruckActor_C_OnCountDown, bWithDriver) == 0x000014, "Member 'BP_MonsterTruckActor_C_OnCountDown::bWithDriver' has a wrong offset!");
+DUMPER7_ASSERTS_BP_MonsterTruckActor_C_OnCountDown;
 
 }
 

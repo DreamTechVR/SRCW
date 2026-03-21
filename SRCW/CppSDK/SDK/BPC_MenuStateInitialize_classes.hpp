@@ -23,15 +23,18 @@ class UBPC_MenuStateInitialize_C final : public UMenuSequenceStateBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_MenuStateInitialize_C">();
+		BP_STATIC_CLASS_IMPL("BPC_MenuStateInitialize_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_MenuStateInitialize_C")
 	}
 	static class UBPC_MenuStateInitialize_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_MenuStateInitialize_C>();
 	}
 };
-static_assert(alignof(UBPC_MenuStateInitialize_C) == 0x000008, "Wrong alignment on UBPC_MenuStateInitialize_C");
-static_assert(sizeof(UBPC_MenuStateInitialize_C) == 0x000138, "Wrong size on UBPC_MenuStateInitialize_C");
+DUMPER7_ASSERTS_UBPC_MenuStateInitialize_C;
 
 }
 

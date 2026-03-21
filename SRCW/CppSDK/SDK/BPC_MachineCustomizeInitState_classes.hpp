@@ -23,15 +23,18 @@ class UBPC_MachineCustomizeInitState_C final : public UMachineCustomizeInitState
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_MachineCustomizeInitState_C">();
+		BP_STATIC_CLASS_IMPL("BPC_MachineCustomizeInitState_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_MachineCustomizeInitState_C")
 	}
 	static class UBPC_MachineCustomizeInitState_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_MachineCustomizeInitState_C>();
 	}
 };
-static_assert(alignof(UBPC_MachineCustomizeInitState_C) == 0x000008, "Wrong alignment on UBPC_MachineCustomizeInitState_C");
-static_assert(sizeof(UBPC_MachineCustomizeInitState_C) == 0x0000F8, "Wrong size on UBPC_MachineCustomizeInitState_C");
+DUMPER7_ASSERTS_UBPC_MachineCustomizeInitState_C;
 
 }
 

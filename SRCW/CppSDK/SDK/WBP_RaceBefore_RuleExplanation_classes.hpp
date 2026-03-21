@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
+#include "UnionSystem_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_RaceBefore_RuleExplanation.WBP_RaceBefore_RuleExplanation_C
-// 0x0230 (0x0538 - 0x0308)
+// 0x0240 (0x0548 - 0x0308)
 class UWBP_RaceBefore_RuleExplanation_C final : public UBeforeRaceRuleExplanationWidget
 {
 public:
@@ -68,8 +68,8 @@ public:
 	class UWidgetAnimation*                       NewVar;                                            // 0x0440(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIsExtreme;                                        // 0x0448(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_449[0x7];                                      // 0x0449(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMenuGroupRaceRuleData                 Out_Row;                                           // 0x0450(0x00E0)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          bCunstomSingle;                                    // 0x0530(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FMenuGroupRaceRuleData                 Out_Row;                                           // 0x0450(0x00F0)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          bCunstomSingle;                                    // 0x0540(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void CallAnimFinishEvent();
@@ -89,59 +89,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_RaceBefore_RuleExplanation_C">();
+		BP_STATIC_CLASS_IMPL("WBP_RaceBefore_RuleExplanation_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_RaceBefore_RuleExplanation_C")
 	}
 	static class UWBP_RaceBefore_RuleExplanation_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_RaceBefore_RuleExplanation_C>();
 	}
 };
-static_assert(alignof(UWBP_RaceBefore_RuleExplanation_C) == 0x000008, "Wrong alignment on UWBP_RaceBefore_RuleExplanation_C");
-static_assert(sizeof(UWBP_RaceBefore_RuleExplanation_C) == 0x000538, "Wrong size on UWBP_RaceBefore_RuleExplanation_C");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, UberGraphFrame) == 0x000308, "Member 'UWBP_RaceBefore_RuleExplanation_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, Rule_QuickMach_Out) == 0x000310, "Member 'UWBP_RaceBefore_RuleExplanation_C::Rule_QuickMach_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, Rule_QuickMach_In) == 0x000318, "Member 'UWBP_RaceBefore_RuleExplanation_C::Rule_QuickMach_In' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, Rule_SP_Out) == 0x000320, "Member 'UWBP_RaceBefore_RuleExplanation_C::Rule_SP_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, Rule_SP_Loop) == 0x000328, "Member 'UWBP_RaceBefore_RuleExplanation_C::Rule_SP_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, Festa_Rule_SP_In) == 0x000330, "Member 'UWBP_RaceBefore_RuleExplanation_C::Festa_Rule_SP_In' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, Rule_SP_In) == 0x000338, "Member 'UWBP_RaceBefore_RuleExplanation_C::Rule_SP_In' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, Rule_Out) == 0x000340, "Member 'UWBP_RaceBefore_RuleExplanation_C::Rule_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, Rule_Loop) == 0x000348, "Member 'UWBP_RaceBefore_RuleExplanation_C::Rule_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, Festa_Rule_In) == 0x000350, "Member 'UWBP_RaceBefore_RuleExplanation_C::Festa_Rule_In' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, Friend_Rule_In) == 0x000358, "Member 'UWBP_RaceBefore_RuleExplanation_C::Friend_Rule_In' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, Rule_In) == 0x000360, "Member 'UWBP_RaceBefore_RuleExplanation_C::Rule_In' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, base) == 0x000368, "Member 'UWBP_RaceBefore_RuleExplanation_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, Base_02) == 0x000370, "Member 'UWBP_RaceBefore_RuleExplanation_C::Base_02' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, BG_Black) == 0x000378, "Member 'UWBP_RaceBefore_RuleExplanation_C::BG_Black' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, Border_FixedGadget) == 0x000380, "Member 'UWBP_RaceBefore_RuleExplanation_C::Border_FixedGadget' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, DMY_ItemIcon) == 0x000388, "Member 'UWBP_RaceBefore_RuleExplanation_C::DMY_ItemIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, DSP_Top_TXT_01) == 0x000390, "Member 'UWBP_RaceBefore_RuleExplanation_C::DSP_Top_TXT_01' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, DSP_Top_TXT_02) == 0x000398, "Member 'UWBP_RaceBefore_RuleExplanation_C::DSP_Top_TXT_02' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, Eff_01) == 0x0003A0, "Member 'UWBP_RaceBefore_RuleExplanation_C::Eff_01' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, Eff_02) == 0x0003A8, "Member 'UWBP_RaceBefore_RuleExplanation_C::Eff_02' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, Eff_03) == 0x0003B0, "Member 'UWBP_RaceBefore_RuleExplanation_C::Eff_03' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, Eff_04) == 0x0003B8, "Member 'UWBP_RaceBefore_RuleExplanation_C::Eff_04' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, GroupRuleRoot) == 0x0003C0, "Member 'UWBP_RaceBefore_RuleExplanation_C::GroupRuleRoot' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, HorizontalBox_2Team) == 0x0003C8, "Member 'UWBP_RaceBefore_RuleExplanation_C::HorizontalBox_2Team' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, HorizontalBox_3Team) == 0x0003D0, "Member 'UWBP_RaceBefore_RuleExplanation_C::HorizontalBox_3Team' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, Overlay_0) == 0x0003D8, "Member 'UWBP_RaceBefore_RuleExplanation_C::Overlay_0' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, Overlay_2) == 0x0003E0, "Member 'UWBP_RaceBefore_RuleExplanation_C::Overlay_2' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, Panel) == 0x0003E8, "Member 'UWBP_RaceBefore_RuleExplanation_C::Panel' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, SizeBox_PeopleIcon) == 0x0003F0, "Member 'UWBP_RaceBefore_RuleExplanation_C::SizeBox_PeopleIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, TXT_FixedGadget) == 0x0003F8, "Member 'UWBP_RaceBefore_RuleExplanation_C::TXT_FixedGadget' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, TXT_MatchFormat) == 0x000400, "Member 'UWBP_RaceBefore_RuleExplanation_C::TXT_MatchFormat' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, TXT_RuleDetail_01) == 0x000408, "Member 'UWBP_RaceBefore_RuleExplanation_C::TXT_RuleDetail_01' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, TXT_RuleDetail_02) == 0x000410, "Member 'UWBP_RaceBefore_RuleExplanation_C::TXT_RuleDetail_02' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, TXT_RuleName) == 0x000418, "Member 'UWBP_RaceBefore_RuleExplanation_C::TXT_RuleName' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, WidgetSwitcher_PeopleIcon) == 0x000420, "Member 'UWBP_RaceBefore_RuleExplanation_C::WidgetSwitcher_PeopleIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, bIsTickLock) == 0x000428, "Member 'UWBP_RaceBefore_RuleExplanation_C::bIsTickLock' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, bEnableFixedGadget) == 0x000429, "Member 'UWBP_RaceBefore_RuleExplanation_C::bEnableFixedGadget' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, GroupRule) == 0x00042A, "Member 'UWBP_RaceBefore_RuleExplanation_C::GroupRule' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, WithRule) == 0x000430, "Member 'UWBP_RaceBefore_RuleExplanation_C::WithRule' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, NewVar) == 0x000440, "Member 'UWBP_RaceBefore_RuleExplanation_C::NewVar' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, bIsExtreme) == 0x000448, "Member 'UWBP_RaceBefore_RuleExplanation_C::bIsExtreme' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, Out_Row) == 0x000450, "Member 'UWBP_RaceBefore_RuleExplanation_C::Out_Row' has a wrong offset!");
-static_assert(offsetof(UWBP_RaceBefore_RuleExplanation_C, bCunstomSingle) == 0x000530, "Member 'UWBP_RaceBefore_RuleExplanation_C::bCunstomSingle' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_RaceBefore_RuleExplanation_C;
 
 }
 

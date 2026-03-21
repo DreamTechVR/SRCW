@@ -28,13 +28,7 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_RaceBefore_BasicRound_C_ExecuteUbergraph_WBP_RaceBefore_BasicRound) == 0x000004, "Wrong alignment on WBP_RaceBefore_BasicRound_C_ExecuteUbergraph_WBP_RaceBefore_BasicRound");
-static_assert(sizeof(WBP_RaceBefore_BasicRound_C_ExecuteUbergraph_WBP_RaceBefore_BasicRound) == 0x00001C, "Wrong size on WBP_RaceBefore_BasicRound_C_ExecuteUbergraph_WBP_RaceBefore_BasicRound");
-static_assert(offsetof(WBP_RaceBefore_BasicRound_C_ExecuteUbergraph_WBP_RaceBefore_BasicRound, EntryPoint) == 0x000000, "Member 'WBP_RaceBefore_BasicRound_C_ExecuteUbergraph_WBP_RaceBefore_BasicRound::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_BasicRound_C_ExecuteUbergraph_WBP_RaceBefore_BasicRound, CallFunc_CalcViewMenuSpeedClassId_IsGroupSpeed) == 0x000004, "Member 'WBP_RaceBefore_BasicRound_C_ExecuteUbergraph_WBP_RaceBefore_BasicRound::CallFunc_CalcViewMenuSpeedClassId_IsGroupSpeed' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_BasicRound_C_ExecuteUbergraph_WBP_RaceBefore_BasicRound, CallFunc_CalcViewMenuSpeedClassId_ReturnValue) == 0x000005, "Member 'WBP_RaceBefore_BasicRound_C_ExecuteUbergraph_WBP_RaceBefore_BasicRound::CallFunc_CalcViewMenuSpeedClassId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_BasicRound_C_ExecuteUbergraph_WBP_RaceBefore_BasicRound, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'WBP_RaceBefore_BasicRound_C_ExecuteUbergraph_WBP_RaceBefore_BasicRound::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_BasicRound_C_ExecuteUbergraph_WBP_RaceBefore_BasicRound, K2Node_Event_IsDesignTime) == 0x000018, "Member 'WBP_RaceBefore_BasicRound_C_ExecuteUbergraph_WBP_RaceBefore_BasicRound::K2Node_Event_IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_RaceBefore_BasicRound_C_ExecuteUbergraph_WBP_RaceBefore_BasicRound;
 
 // Function WBP_RaceBefore_BasicRound.WBP_RaceBefore_BasicRound_C.FireAnimation
 // 0x0018 (0x0018 - 0x0000)
@@ -47,12 +41,7 @@ public:
 	class UWidgetAnimation*                       K2Node_Select_Default;                             // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_RaceBefore_BasicRound_C_FireAnimation) == 0x000008, "Wrong alignment on WBP_RaceBefore_BasicRound_C_FireAnimation");
-static_assert(sizeof(WBP_RaceBefore_BasicRound_C_FireAnimation) == 0x000018, "Wrong size on WBP_RaceBefore_BasicRound_C_FireAnimation");
-static_assert(offsetof(WBP_RaceBefore_BasicRound_C_FireAnimation, In) == 0x000000, "Member 'WBP_RaceBefore_BasicRound_C_FireAnimation::In' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_BasicRound_C_FireAnimation, Temp_bool_Variable) == 0x000001, "Member 'WBP_RaceBefore_BasicRound_C_FireAnimation::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_BasicRound_C_FireAnimation, K2Node_Select_Default) == 0x000008, "Member 'WBP_RaceBefore_BasicRound_C_FireAnimation::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_BasicRound_C_FireAnimation, CallFunc_PlayAnimation_ReturnValue) == 0x000010, "Member 'WBP_RaceBefore_BasicRound_C_FireAnimation::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_RaceBefore_BasicRound_C_FireAnimation;
 
 // Function WBP_RaceBefore_BasicRound.WBP_RaceBefore_BasicRound_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -61,9 +50,7 @@ struct WBP_RaceBefore_BasicRound_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_RaceBefore_BasicRound_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_RaceBefore_BasicRound_C_PreConstruct");
-static_assert(sizeof(WBP_RaceBefore_BasicRound_C_PreConstruct) == 0x000001, "Wrong size on WBP_RaceBefore_BasicRound_C_PreConstruct");
-static_assert(offsetof(WBP_RaceBefore_BasicRound_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_RaceBefore_BasicRound_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_RaceBefore_BasicRound_C_PreConstruct;
 
 // Function WBP_RaceBefore_BasicRound.WBP_RaceBefore_BasicRound_C.SetGrandPrix
 // 0x0001 (0x0001 - 0x0000)
@@ -72,9 +59,7 @@ struct WBP_RaceBefore_BasicRound_C_SetGrandPrix final
 public:
 	EGrandPrixId                                  newParam;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_RaceBefore_BasicRound_C_SetGrandPrix) == 0x000001, "Wrong alignment on WBP_RaceBefore_BasicRound_C_SetGrandPrix");
-static_assert(sizeof(WBP_RaceBefore_BasicRound_C_SetGrandPrix) == 0x000001, "Wrong size on WBP_RaceBefore_BasicRound_C_SetGrandPrix");
-static_assert(offsetof(WBP_RaceBefore_BasicRound_C_SetGrandPrix, newParam) == 0x000000, "Member 'WBP_RaceBefore_BasicRound_C_SetGrandPrix::newParam' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_RaceBefore_BasicRound_C_SetGrandPrix;
 
 // Function WBP_RaceBefore_BasicRound.WBP_RaceBefore_BasicRound_C.SetRoundAndStageName
 // 0x0020 (0x0020 - 0x0000)
@@ -84,10 +69,7 @@ public:
 	class FText                                   InRoundName;                                       // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	class FText                                   InStageName;                                       // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_RaceBefore_BasicRound_C_SetRoundAndStageName) == 0x000008, "Wrong alignment on WBP_RaceBefore_BasicRound_C_SetRoundAndStageName");
-static_assert(sizeof(WBP_RaceBefore_BasicRound_C_SetRoundAndStageName) == 0x000020, "Wrong size on WBP_RaceBefore_BasicRound_C_SetRoundAndStageName");
-static_assert(offsetof(WBP_RaceBefore_BasicRound_C_SetRoundAndStageName, InRoundName) == 0x000000, "Member 'WBP_RaceBefore_BasicRound_C_SetRoundAndStageName::InRoundName' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_BasicRound_C_SetRoundAndStageName, InStageName) == 0x000010, "Member 'WBP_RaceBefore_BasicRound_C_SetRoundAndStageName::InStageName' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_RaceBefore_BasicRound_C_SetRoundAndStageName;
 
 // Function WBP_RaceBefore_BasicRound.WBP_RaceBefore_BasicRound_C.SetStageIconTexture
 // 0x0008 (0x0008 - 0x0000)
@@ -96,9 +78,7 @@ struct WBP_RaceBefore_BasicRound_C_SetStageIconTexture final
 public:
 	class UTexture2D*                             Texture;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_RaceBefore_BasicRound_C_SetStageIconTexture) == 0x000008, "Wrong alignment on WBP_RaceBefore_BasicRound_C_SetStageIconTexture");
-static_assert(sizeof(WBP_RaceBefore_BasicRound_C_SetStageIconTexture) == 0x000008, "Wrong size on WBP_RaceBefore_BasicRound_C_SetStageIconTexture");
-static_assert(offsetof(WBP_RaceBefore_BasicRound_C_SetStageIconTexture, Texture) == 0x000000, "Member 'WBP_RaceBefore_BasicRound_C_SetStageIconTexture::Texture' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_RaceBefore_BasicRound_C_SetStageIconTexture;
 
 }
 

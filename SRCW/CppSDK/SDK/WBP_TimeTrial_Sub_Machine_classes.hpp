@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
-#include "UnionRun_structs.hpp"
-#include "UMG_classes.hpp"
 #include "UNION_structs.hpp"
+#include "UnionSystem_structs.hpp"
+#include "UnionRun_structs.hpp"
+#include "Engine_structs.hpp"
+#include "UMG_classes.hpp"
 
 
 namespace SDK
@@ -44,25 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_TimeTrial_Sub_Machine_C">();
+		BP_STATIC_CLASS_IMPL("WBP_TimeTrial_Sub_Machine_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_TimeTrial_Sub_Machine_C")
 	}
 	static class UWBP_TimeTrial_Sub_Machine_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_TimeTrial_Sub_Machine_C>();
 	}
 };
-static_assert(alignof(UWBP_TimeTrial_Sub_Machine_C) == 0x000008, "Wrong alignment on UWBP_TimeTrial_Sub_Machine_C");
-static_assert(sizeof(UWBP_TimeTrial_Sub_Machine_C) == 0x000330, "Wrong size on UWBP_TimeTrial_Sub_Machine_C");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Machine_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_TimeTrial_Sub_Machine_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Machine_C, DMY_PartsIcon_Front) == 0x0002E8, "Member 'UWBP_TimeTrial_Sub_Machine_C::DMY_PartsIcon_Front' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Machine_C, DMY_PartsIcon_Rear) == 0x0002F0, "Member 'UWBP_TimeTrial_Sub_Machine_C::DMY_PartsIcon_Rear' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Machine_C, DMY_PartsIcon_Wheel) == 0x0002F8, "Member 'UWBP_TimeTrial_Sub_Machine_C::DMY_PartsIcon_Wheel' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Machine_C, PAT_Icon_Type_Front) == 0x000300, "Member 'UWBP_TimeTrial_Sub_Machine_C::PAT_Icon_Type_Front' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Machine_C, TXT_Machine_Type) == 0x000308, "Member 'UWBP_TimeTrial_Sub_Machine_C::TXT_Machine_Type' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Machine_C, TXT_Parts_Front) == 0x000310, "Member 'UWBP_TimeTrial_Sub_Machine_C::TXT_Parts_Front' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Machine_C, TXT_Parts_Rear) == 0x000318, "Member 'UWBP_TimeTrial_Sub_Machine_C::TXT_Parts_Rear' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Machine_C, TXT_Parts_Wheel) == 0x000320, "Member 'UWBP_TimeTrial_Sub_Machine_C::TXT_Parts_Wheel' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Machine_C, CarStatusTypeId) == 0x000328, "Member 'UWBP_TimeTrial_Sub_Machine_C::CarStatusTypeId' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_TimeTrial_Sub_Machine_C;
 
 }
 

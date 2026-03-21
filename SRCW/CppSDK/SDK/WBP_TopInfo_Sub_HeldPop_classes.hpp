@@ -35,22 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_TopInfo_Sub_HeldPop_C">();
+		BP_STATIC_CLASS_IMPL("WBP_TopInfo_Sub_HeldPop_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_TopInfo_Sub_HeldPop_C")
 	}
 	static class UWBP_TopInfo_Sub_HeldPop_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_TopInfo_Sub_HeldPop_C>();
 	}
 };
-static_assert(alignof(UWBP_TopInfo_Sub_HeldPop_C) == 0x000008, "Wrong alignment on UWBP_TopInfo_Sub_HeldPop_C");
-static_assert(sizeof(UWBP_TopInfo_Sub_HeldPop_C) == 0x000318, "Wrong size on UWBP_TopInfo_Sub_HeldPop_C");
-static_assert(offsetof(UWBP_TopInfo_Sub_HeldPop_C, PopBase_Current) == 0x0002E0, "Member 'UWBP_TopInfo_Sub_HeldPop_C::PopBase_Current' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_Sub_HeldPop_C, PopBase_End) == 0x0002E8, "Member 'UWBP_TopInfo_Sub_HeldPop_C::PopBase_End' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_Sub_HeldPop_C, PopBase_Notice) == 0x0002F0, "Member 'UWBP_TopInfo_Sub_HeldPop_C::PopBase_Notice' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_Sub_HeldPop_C, TXT_Current) == 0x0002F8, "Member 'UWBP_TopInfo_Sub_HeldPop_C::TXT_Current' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_Sub_HeldPop_C, TXT_End) == 0x000300, "Member 'UWBP_TopInfo_Sub_HeldPop_C::TXT_End' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_Sub_HeldPop_C, TXT_Notice) == 0x000308, "Member 'UWBP_TopInfo_Sub_HeldPop_C::TXT_Notice' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_Sub_HeldPop_C, WidgetSwitcher_Pop) == 0x000310, "Member 'UWBP_TopInfo_Sub_HeldPop_C::WidgetSwitcher_Pop' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_TopInfo_Sub_HeldPop_C;
 
 }
 

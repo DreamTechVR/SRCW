@@ -29,12 +29,7 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_MakeColor_ReturnValue;                    // 0x0020(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_StickerTopIcon_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTopIcon) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_StickerTopIcon_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTopIcon");
-static_assert(sizeof(WBP_MachineCustom_Sub_StickerTopIcon_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTopIcon) == 0x000030, "Wrong size on WBP_MachineCustom_Sub_StickerTopIcon_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTopIcon");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTopIcon_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTopIcon, EntryPoint) == 0x000000, "Member 'WBP_MachineCustom_Sub_StickerTopIcon_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTopIcon::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTopIcon_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTopIcon, CallFunc_MakeLiteralText_ReturnValue) == 0x000008, "Member 'WBP_MachineCustom_Sub_StickerTopIcon_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTopIcon::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTopIcon_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTopIcon, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000018, "Member 'WBP_MachineCustom_Sub_StickerTopIcon_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTopIcon::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTopIcon_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTopIcon, CallFunc_MakeColor_ReturnValue) == 0x000020, "Member 'WBP_MachineCustom_Sub_StickerTopIcon_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTopIcon::CallFunc_MakeColor_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_StickerTopIcon_C_ExecuteUbergraph_WBP_MachineCustom_Sub_StickerTopIcon;
 
 // Function WBP_MachineCustom_Sub_StickerTopIcon.WBP_MachineCustom_Sub_StickerTopIcon_C.OnFocusReceived
 // 0x01B8 (0x01B8 - 0x0000)
@@ -48,13 +43,7 @@ public:
 	uint8                                         Pad_FC[0x4];                                       // 0x00FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x0100(0x00B8)()
 };
-static_assert(alignof(WBP_MachineCustom_Sub_StickerTopIcon_C_OnFocusReceived) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_StickerTopIcon_C_OnFocusReceived");
-static_assert(sizeof(WBP_MachineCustom_Sub_StickerTopIcon_C_OnFocusReceived) == 0x0001B8, "Wrong size on WBP_MachineCustom_Sub_StickerTopIcon_C_OnFocusReceived");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTopIcon_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'WBP_MachineCustom_Sub_StickerTopIcon_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTopIcon_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'WBP_MachineCustom_Sub_StickerTopIcon_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTopIcon_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'WBP_MachineCustom_Sub_StickerTopIcon_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTopIcon_C_OnFocusReceived, PlayerIndex) == 0x0000F8, "Member 'WBP_MachineCustom_Sub_StickerTopIcon_C_OnFocusReceived::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTopIcon_C_OnFocusReceived, K2Node_MakeStruct_EventReply) == 0x000100, "Member 'WBP_MachineCustom_Sub_StickerTopIcon_C_OnFocusReceived::K2Node_MakeStruct_EventReply' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_StickerTopIcon_C_OnFocusReceived;
 
 // Function WBP_MachineCustom_Sub_StickerTopIcon.WBP_MachineCustom_Sub_StickerTopIcon_C.SetIsIconEmpty
 // 0x0018 (0x0018 - 0x0000)
@@ -65,10 +54,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0008(0x0010)()
 };
-static_assert(alignof(WBP_MachineCustom_Sub_StickerTopIcon_C_SetIsIconEmpty) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_StickerTopIcon_C_SetIsIconEmpty");
-static_assert(sizeof(WBP_MachineCustom_Sub_StickerTopIcon_C_SetIsIconEmpty) == 0x000018, "Wrong size on WBP_MachineCustom_Sub_StickerTopIcon_C_SetIsIconEmpty");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTopIcon_C_SetIsIconEmpty, IsEmpty) == 0x000000, "Member 'WBP_MachineCustom_Sub_StickerTopIcon_C_SetIsIconEmpty::IsEmpty' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTopIcon_C_SetIsIconEmpty, CallFunc_MakeLiteralText_ReturnValue) == 0x000008, "Member 'WBP_MachineCustom_Sub_StickerTopIcon_C_SetIsIconEmpty::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_StickerTopIcon_C_SetIsIconEmpty;
 
 // Function WBP_MachineCustom_Sub_StickerTopIcon.WBP_MachineCustom_Sub_StickerTopIcon_C.SetMaterialName
 // 0x0010 (0x0010 - 0x0000)
@@ -77,9 +63,7 @@ struct WBP_MachineCustom_Sub_StickerTopIcon_C_SetMaterialName final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_StickerTopIcon_C_SetMaterialName) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_StickerTopIcon_C_SetMaterialName");
-static_assert(sizeof(WBP_MachineCustom_Sub_StickerTopIcon_C_SetMaterialName) == 0x000010, "Wrong size on WBP_MachineCustom_Sub_StickerTopIcon_C_SetMaterialName");
-static_assert(offsetof(WBP_MachineCustom_Sub_StickerTopIcon_C_SetMaterialName, InText) == 0x000000, "Member 'WBP_MachineCustom_Sub_StickerTopIcon_C_SetMaterialName::InText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_StickerTopIcon_C_SetMaterialName;
 
 }
 

@@ -14,11 +14,11 @@
 #include "UnionSystem_classes.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "UMG_structs.hpp"
+#include "UMG_classes.hpp"
 #include "UnionUI_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
-#include "UMG_structs.hpp"
-#include "UMG_classes.hpp"
 #include "SlateCore_structs.hpp"
 #include "ImageWriteQueue_structs.hpp"
 #include "Slate_structs.hpp"
@@ -44,15 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BPFL_ChallengeManagerUtil">();
+		STATIC_CLASS_IMPL("BPFL_ChallengeManagerUtil")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPFL_ChallengeManagerUtil")
 	}
 	static class UBPFL_ChallengeManagerUtil* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPFL_ChallengeManagerUtil>();
 	}
 };
-static_assert(alignof(UBPFL_ChallengeManagerUtil) == 0x000008, "Wrong alignment on UBPFL_ChallengeManagerUtil");
-static_assert(sizeof(UBPFL_ChallengeManagerUtil) == 0x000028, "Wrong size on UBPFL_ChallengeManagerUtil");
+DUMPER7_ASSERTS_UBPFL_ChallengeManagerUtil;
 
 // Class UnionUI.BPFL_UnionUI
 // 0x0000 (0x0028 - 0x0028)
@@ -75,53 +78,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BPFL_UnionUI">();
+		STATIC_CLASS_IMPL("BPFL_UnionUI")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPFL_UnionUI")
 	}
 	static class UBPFL_UnionUI* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPFL_UnionUI>();
 	}
 };
-static_assert(alignof(UBPFL_UnionUI) == 0x000008, "Wrong alignment on UBPFL_UnionUI");
-static_assert(sizeof(UBPFL_UnionUI) == 0x000028, "Wrong size on UBPFL_UnionUI");
-
-// Class UnionUI.WidgetManBaseWidget
-// 0x0080 (0x0360 - 0x02E0)
-class UWidgetManBaseWidget final : public UUserWidget
-{
-public:
-	class UCanvasPanel*                           RootPanel;                                         // 0x02E0(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 DebugString;                                       // 0x02E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              DebugInfoPosition;                                 // 0x02F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ShowDebugInfo;                                     // 0x0308(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_309[0x7];                                      // 0x0309(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TSet<class UWidgetManDebugString*>            DebugStringObjectSet;                              // 0x0310(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-
-public:
-	void AddChild(class UUserWidget* ChildWidget, class UCanvasPanelSlot* ChildSlot, int32 ZOrder);
-	void AppendDebugString(const class FString& String__const);
-	void AttachDebugStringObject(class UWidgetManDebugString* DebugStringObject);
-	void ClearDebugString();
-	void DetachDebugStringObject(class UWidgetManDebugString* DebugStringObject);
-	void RemoveChild(class UUserWidget* Widget, bool* IsSucceeded);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"WidgetManBaseWidget">();
-	}
-	static class UWidgetManBaseWidget* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UWidgetManBaseWidget>();
-	}
-};
-static_assert(alignof(UWidgetManBaseWidget) == 0x000008, "Wrong alignment on UWidgetManBaseWidget");
-static_assert(sizeof(UWidgetManBaseWidget) == 0x000360, "Wrong size on UWidgetManBaseWidget");
-static_assert(offsetof(UWidgetManBaseWidget, RootPanel) == 0x0002E0, "Member 'UWidgetManBaseWidget::RootPanel' has a wrong offset!");
-static_assert(offsetof(UWidgetManBaseWidget, DebugString) == 0x0002E8, "Member 'UWidgetManBaseWidget::DebugString' has a wrong offset!");
-static_assert(offsetof(UWidgetManBaseWidget, DebugInfoPosition) == 0x0002F8, "Member 'UWidgetManBaseWidget::DebugInfoPosition' has a wrong offset!");
-static_assert(offsetof(UWidgetManBaseWidget, ShowDebugInfo) == 0x000308, "Member 'UWidgetManBaseWidget::ShowDebugInfo' has a wrong offset!");
-static_assert(offsetof(UWidgetManBaseWidget, DebugStringObjectSet) == 0x000310, "Member 'UWidgetManBaseWidget::DebugStringObjectSet' has a wrong offset!");
+DUMPER7_ASSERTS_UBPFL_UnionUI;
 
 // Class UnionUI.FontFunctionObject
 // 0x00A0 (0x00C8 - 0x0028)
@@ -137,17 +105,79 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FontFunctionObject">();
+		STATIC_CLASS_IMPL("FontFunctionObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FontFunctionObject")
 	}
 	static class UFontFunctionObject* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFontFunctionObject>();
 	}
 };
-static_assert(alignof(UFontFunctionObject) == 0x000008, "Wrong alignment on UFontFunctionObject");
-static_assert(sizeof(UFontFunctionObject) == 0x0000C8, "Wrong size on UFontFunctionObject");
-static_assert(offsetof(UFontFunctionObject, DinToMoriMap) == 0x000028, "Member 'UFontFunctionObject::DinToMoriMap' has a wrong offset!");
-static_assert(offsetof(UFontFunctionObject, MoriToDinMap) == 0x000078, "Member 'UFontFunctionObject::MoriToDinMap' has a wrong offset!");
+DUMPER7_ASSERTS_UFontFunctionObject;
+
+// Class UnionUI.WidgetManComponent
+// 0x00D0 (0x0170 - 0x00A0)
+class UWidgetManComponent final : public UActorComponent
+{
+public:
+	TMulticastInlineDelegate<void(class UUserWidget* EventedWidget, class UObject* LogicObject)> OnLostPriority; // 0x00A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UUserWidget* EventedWidget, class UObject* LogicObject)> OnRegainPriority; // 0x00B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UUserWidget* EventedWidget, class UObject* LogicObject)> OnPushed; // 0x00C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UUserWidget* EventedWidget, class UObject* LogicObject)> OnPoped; // 0x00D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMap<EWidgetManZLayer, int32>                 ZLayerToZOrder;                                    // 0x00E0(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          CreateDebugInfo;                                   // 0x0130(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ShowDebugInfo;                                     // 0x0131(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_132[0x6];                                      // 0x0132(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              DebugInfoPosition;                                 // 0x0138(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BaseWidgetZOrder;                                  // 0x0148(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14C[0x4];                                      // 0x014C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidgetManDebugString*                  DebugStringObject;                                 // 0x0150(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UWidgetManContainer*>            WidgetStack;                                       // 0x0158(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	class UWidgetManBaseWidget*                   BaseWidget;                                        // 0x0168(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+
+public:
+	void AddWidgetToTopAsGroup(class UUserWidget* Widget, class UObject* Logic, bool* IsSucceeded);
+	void AttachDebugStringObject(class UWidgetManDebugString* DebugStringObjectRef);
+	void DetachDebugStringObject(class UWidgetManDebugString* DebugStringObjectRef);
+	void EventBeginBaseWidget();
+	void EventBeginDebug();
+	void EventBeginStack();
+	void EventDrawDebug();
+	void EventEndBaseWidget();
+	void EventEndDebug();
+	void EventEndStack();
+	void FindWidget(class UUserWidget* Widget, bool* IsFound, int32* IndexFromTop, int32* IndexInGroup);
+	void GetTopWidget(int32 Index_0, bool* IsSucceeded, class UUserWidget** Widget, bool* IsSubWidget, class UObject** Logic);
+	void GetTopWidgetCount(int32* WidgetCount);
+	void NotifyLostPriority();
+	void NotifyPoped(class UUserWidget* Widget, class UObject* Logic);
+	void NotifyPushed(class UUserWidget* Widget, class UObject* Logic);
+	void NotifyRegainPriority();
+	void PopAllWidgets();
+	void PopWidget(bool* IsSucceeded);
+	void PushSubWidget(class UUserWidget* SubWidget, class UObject* Logic);
+	int32 PushWidget(class UUserWidget* Widget, class UObject* Logic, EWidgetManZLayer ZLayer);
+	void SwapTopWidget(class UUserWidget* Widget, bool* IsSucceeded);
+	void SwapTopWidgetByIndex(int32 IndexFromTop, bool* IsSucceeded);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("WidgetManComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WidgetManComponent")
+	}
+	static class UWidgetManComponent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UWidgetManComponent>();
+	}
+};
+DUMPER7_ASSERTS_UWidgetManComponent;
 
 // Class UnionUI.MenuCameraManager
 // 0x01F0 (0x0480 - 0x0290)
@@ -180,22 +210,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MenuCameraManager">();
+		STATIC_CLASS_IMPL("MenuCameraManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MenuCameraManager")
 	}
 	static class AMenuCameraManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMenuCameraManager>();
 	}
 };
-static_assert(alignof(AMenuCameraManager) == 0x000010, "Wrong alignment on AMenuCameraManager");
-static_assert(sizeof(AMenuCameraManager) == 0x000480, "Wrong size on AMenuCameraManager");
-static_assert(offsetof(AMenuCameraManager, CameraActor) == 0x000290, "Member 'AMenuCameraManager::CameraActor' has a wrong offset!");
-static_assert(offsetof(AMenuCameraManager, CameraFOV) == 0x000418, "Member 'AMenuCameraManager::CameraFOV' has a wrong offset!");
-static_assert(offsetof(AMenuCameraManager, CameraManualFocusDistance) == 0x000424, "Member 'AMenuCameraManager::CameraManualFocusDistance' has a wrong offset!");
-static_assert(offsetof(AMenuCameraManager, OnCameraMoveEndEvent) == 0x000438, "Member 'AMenuCameraManager::OnCameraMoveEndEvent' has a wrong offset!");
-static_assert(offsetof(AMenuCameraManager, OnPlayLevelSequence) == 0x000448, "Member 'AMenuCameraManager::OnPlayLevelSequence' has a wrong offset!");
-static_assert(offsetof(AMenuCameraManager, OnPlayReverseLevelSequence) == 0x000458, "Member 'AMenuCameraManager::OnPlayReverseLevelSequence' has a wrong offset!");
-static_assert(offsetof(AMenuCameraManager, OnFinishedLevelSequence) == 0x000468, "Member 'AMenuCameraManager::OnFinishedLevelSequence' has a wrong offset!");
+DUMPER7_ASSERTS_AMenuCameraManager;
 
 // Class UnionUI.MenuInputRecieveObject
 // 0x02F8 (0x0320 - 0x0028)
@@ -254,61 +280,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MenuInputRecieveObject">();
+		STATIC_CLASS_IMPL("MenuInputRecieveObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MenuInputRecieveObject")
 	}
 	static class UMenuInputRecieveObject* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMenuInputRecieveObject>();
 	}
 };
-static_assert(alignof(UMenuInputRecieveObject) == 0x000008, "Wrong alignment on UMenuInputRecieveObject");
-static_assert(sizeof(UMenuInputRecieveObject) == 0x000320, "Wrong size on UMenuInputRecieveObject");
-static_assert(offsetof(UMenuInputRecieveObject, OnUpKeyPressedEvent) == 0x000030, "Member 'UMenuInputRecieveObject::OnUpKeyPressedEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnDownKeyPressedEvent) == 0x000040, "Member 'UMenuInputRecieveObject::OnDownKeyPressedEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnLeftKeyPressedEvent) == 0x000050, "Member 'UMenuInputRecieveObject::OnLeftKeyPressedEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnRightKeyPressedEvent) == 0x000060, "Member 'UMenuInputRecieveObject::OnRightKeyPressedEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnAcceptKeyPressedEvent) == 0x000070, "Member 'UMenuInputRecieveObject::OnAcceptKeyPressedEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnBackKeyPressedEvent) == 0x000080, "Member 'UMenuInputRecieveObject::OnBackKeyPressedEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnFaceButtonLeftPressedEvent) == 0x000090, "Member 'UMenuInputRecieveObject::OnFaceButtonLeftPressedEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnFaceButtonTopPressedEvent) == 0x0000A0, "Member 'UMenuInputRecieveObject::OnFaceButtonTopPressedEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnLeftShoulderPressedEvent) == 0x0000B0, "Member 'UMenuInputRecieveObject::OnLeftShoulderPressedEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnRightShoulderPressedEvent) == 0x0000C0, "Member 'UMenuInputRecieveObject::OnRightShoulderPressedEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnLeftStickButtonPressedEvent) == 0x0000D0, "Member 'UMenuInputRecieveObject::OnLeftStickButtonPressedEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnRightStickButtonPressedEvent) == 0x0000E0, "Member 'UMenuInputRecieveObject::OnRightStickButtonPressedEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnSpecialPressedEvent) == 0x0000F0, "Member 'UMenuInputRecieveObject::OnSpecialPressedEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnSpecialShotEvent) == 0x000100, "Member 'UMenuInputRecieveObject::OnSpecialShotEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnUpKeyPressedWithPlayerIdEvent) == 0x000110, "Member 'UMenuInputRecieveObject::OnUpKeyPressedWithPlayerIdEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnDownKeyPressedWithPlayerIdEvent) == 0x000120, "Member 'UMenuInputRecieveObject::OnDownKeyPressedWithPlayerIdEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnLeftKeyPressedWithPlayerIdEvent) == 0x000130, "Member 'UMenuInputRecieveObject::OnLeftKeyPressedWithPlayerIdEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnRightKeyPressedWithPlayerIdEvent) == 0x000140, "Member 'UMenuInputRecieveObject::OnRightKeyPressedWithPlayerIdEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnAcceptKeyPressedWithPlayerIdEvent) == 0x000150, "Member 'UMenuInputRecieveObject::OnAcceptKeyPressedWithPlayerIdEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnBackKeyPressedWithPlayerIdEvent) == 0x000160, "Member 'UMenuInputRecieveObject::OnBackKeyPressedWithPlayerIdEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnFaceButtonLeftPressedWithPlayerIdEvent) == 0x000170, "Member 'UMenuInputRecieveObject::OnFaceButtonLeftPressedWithPlayerIdEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnFaceButtonTopPressedWithPlayerIdEvent) == 0x000180, "Member 'UMenuInputRecieveObject::OnFaceButtonTopPressedWithPlayerIdEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnLeftShoulderPressedWithPlayerIdEvent) == 0x000190, "Member 'UMenuInputRecieveObject::OnLeftShoulderPressedWithPlayerIdEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnRightShoulderPressedWithPlayerIdEvent) == 0x0001A0, "Member 'UMenuInputRecieveObject::OnRightShoulderPressedWithPlayerIdEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnSpecialPressedWithPlayerIdEvent) == 0x0001B0, "Member 'UMenuInputRecieveObject::OnSpecialPressedWithPlayerIdEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnUpKeyReleasedEvent) == 0x0001C0, "Member 'UMenuInputRecieveObject::OnUpKeyReleasedEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnDownKeyReleasedEvent) == 0x0001D0, "Member 'UMenuInputRecieveObject::OnDownKeyReleasedEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnLeftKeyReleasedEvent) == 0x0001E0, "Member 'UMenuInputRecieveObject::OnLeftKeyReleasedEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnRightKeyReleasedEvent) == 0x0001F0, "Member 'UMenuInputRecieveObject::OnRightKeyReleasedEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnAcceptKeyReleasedEvent) == 0x000200, "Member 'UMenuInputRecieveObject::OnAcceptKeyReleasedEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnBackKeyReleasedEvent) == 0x000210, "Member 'UMenuInputRecieveObject::OnBackKeyReleasedEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnFaceButtonLeftReleasedEvent) == 0x000220, "Member 'UMenuInputRecieveObject::OnFaceButtonLeftReleasedEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnFaceButtonTopReleasedEvent) == 0x000230, "Member 'UMenuInputRecieveObject::OnFaceButtonTopReleasedEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnLeftShoulderReleasedEvent) == 0x000240, "Member 'UMenuInputRecieveObject::OnLeftShoulderReleasedEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnRightShoulderReleasedEvent) == 0x000250, "Member 'UMenuInputRecieveObject::OnRightShoulderReleasedEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnLeftStickButtonReleasedEvent) == 0x000260, "Member 'UMenuInputRecieveObject::OnLeftStickButtonReleasedEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnRightStickButtonReleasedEvent) == 0x000270, "Member 'UMenuInputRecieveObject::OnRightStickButtonReleasedEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnSpecialReleasedEvent) == 0x000280, "Member 'UMenuInputRecieveObject::OnSpecialReleasedEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnLeftStickAxisEvent) == 0x000290, "Member 'UMenuInputRecieveObject::OnLeftStickAxisEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnRightStickAxisEvent) == 0x0002A0, "Member 'UMenuInputRecieveObject::OnRightStickAxisEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnLeftStickAxisWithPlayerIdEvent) == 0x0002B0, "Member 'UMenuInputRecieveObject::OnLeftStickAxisWithPlayerIdEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnRightStickAxisWithPlayerIdEvent) == 0x0002C0, "Member 'UMenuInputRecieveObject::OnRightStickAxisWithPlayerIdEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnUpKeyReleasedWithPlayerIdEvent) == 0x0002D0, "Member 'UMenuInputRecieveObject::OnUpKeyReleasedWithPlayerIdEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnDownKeyReleasedWithPlayerIdEvent) == 0x0002E0, "Member 'UMenuInputRecieveObject::OnDownKeyReleasedWithPlayerIdEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnLeftKeyReleasedWithPlayerIdEvent) == 0x0002F0, "Member 'UMenuInputRecieveObject::OnLeftKeyReleasedWithPlayerIdEvent' has a wrong offset!");
-static_assert(offsetof(UMenuInputRecieveObject, OnRightKeyReleasedWithPlayerIdEvent) == 0x000300, "Member 'UMenuInputRecieveObject::OnRightKeyReleasedWithPlayerIdEvent' has a wrong offset!");
+DUMPER7_ASSERTS_UMenuInputRecieveObject;
 
 // Class UnionUI.RichTextBlockDefaultDecorator
 // 0x0000 (0x0028 - 0x0028)
@@ -317,15 +300,18 @@ class URichTextBlockDefaultDecorator final : public URichTextBlockDecorator
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RichTextBlockDefaultDecorator">();
+		STATIC_CLASS_IMPL("RichTextBlockDefaultDecorator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RichTextBlockDefaultDecorator")
 	}
 	static class URichTextBlockDefaultDecorator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URichTextBlockDefaultDecorator>();
 	}
 };
-static_assert(alignof(URichTextBlockDefaultDecorator) == 0x000008, "Wrong alignment on URichTextBlockDefaultDecorator");
-static_assert(sizeof(URichTextBlockDefaultDecorator) == 0x000028, "Wrong size on URichTextBlockDefaultDecorator");
+DUMPER7_ASSERTS_URichTextBlockDefaultDecorator;
 
 // Class UnionUI.RichTextBlockRubyDecorator
 // 0x0418 (0x0440 - 0x0028)
@@ -355,29 +341,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RichTextBlockRubyDecorator">();
+		STATIC_CLASS_IMPL("RichTextBlockRubyDecorator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RichTextBlockRubyDecorator")
 	}
 	static class URichTextBlockRubyDecorator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URichTextBlockRubyDecorator>();
 	}
 };
-static_assert(alignof(URichTextBlockRubyDecorator) == 0x000010, "Wrong alignment on URichTextBlockRubyDecorator");
-static_assert(sizeof(URichTextBlockRubyDecorator) == 0x000440, "Wrong size on URichTextBlockRubyDecorator");
-static_assert(offsetof(URichTextBlockRubyDecorator, DisplayBaseTextStartIndex) == 0x000028, "Member 'URichTextBlockRubyDecorator::DisplayBaseTextStartIndex' has a wrong offset!");
-static_assert(offsetof(URichTextBlockRubyDecorator, OriginalLetterIndex) == 0x00002C, "Member 'URichTextBlockRubyDecorator::OriginalLetterIndex' has a wrong offset!");
-static_assert(offsetof(URichTextBlockRubyDecorator, TaggedContentOriginalIndex) == 0x000030, "Member 'URichTextBlockRubyDecorator::TaggedContentOriginalIndex' has a wrong offset!");
-static_assert(offsetof(URichTextBlockRubyDecorator, ParseTagName) == 0x000040, "Member 'URichTextBlockRubyDecorator::ParseTagName' has a wrong offset!");
-static_assert(offsetof(URichTextBlockRubyDecorator, AttributeLabelName) == 0x000050, "Member 'URichTextBlockRubyDecorator::AttributeLabelName' has a wrong offset!");
-static_assert(offsetof(URichTextBlockRubyDecorator, AttributeStyleName) == 0x000060, "Member 'URichTextBlockRubyDecorator::AttributeStyleName' has a wrong offset!");
-static_assert(offsetof(URichTextBlockRubyDecorator, RubyTextStyleNameFormat) == 0x000070, "Member 'URichTextBlockRubyDecorator::RubyTextStyleNameFormat' has a wrong offset!");
-static_assert(offsetof(URichTextBlockRubyDecorator, RubyOffset) == 0x000078, "Member 'URichTextBlockRubyDecorator::RubyOffset' has a wrong offset!");
-static_assert(offsetof(URichTextBlockRubyDecorator, bOverrideRubyStyle) == 0x000088, "Member 'URichTextBlockRubyDecorator::bOverrideRubyStyle' has a wrong offset!");
-static_assert(offsetof(URichTextBlockRubyDecorator, RubyTextStyleOverride) == 0x000090, "Member 'URichTextBlockRubyDecorator::RubyTextStyleOverride' has a wrong offset!");
-static_assert(offsetof(URichTextBlockRubyDecorator, WithoutXmlString) == 0x0003D0, "Member 'URichTextBlockRubyDecorator::WithoutXmlString' has a wrong offset!");
-static_assert(offsetof(URichTextBlockRubyDecorator, BaseIndex_RubyStringMap) == 0x0003E0, "Member 'URichTextBlockRubyDecorator::BaseIndex_RubyStringMap' has a wrong offset!");
-static_assert(offsetof(URichTextBlockRubyDecorator, CalcedFontSize) == 0x000430, "Member 'URichTextBlockRubyDecorator::CalcedFontSize' has a wrong offset!");
-static_assert(offsetof(URichTextBlockRubyDecorator, RubyFontSize) == 0x000434, "Member 'URichTextBlockRubyDecorator::RubyFontSize' has a wrong offset!");
+DUMPER7_ASSERTS_URichTextBlockRubyDecorator;
 
 // Class UnionUI.UICapture2DTargetInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -389,7 +364,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UICapture2DTargetInterface">();
+		STATIC_CLASS_IMPL("UICapture2DTargetInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UICapture2DTargetInterface")
 	}
 	static class IUICapture2DTargetInterface* GetDefaultObj()
 	{
@@ -405,8 +384,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IUICapture2DTargetInterface) == 0x000001, "Wrong alignment on IUICapture2DTargetInterface");
-static_assert(sizeof(IUICapture2DTargetInterface) == 0x000001, "Wrong size on IUICapture2DTargetInterface");
+DUMPER7_ASSERTS_IUICapture2DTargetInterface;
 
 // Class UnionUI.UnionComboBoxString
 // 0x0020 (0x1DF0 - 0x1DD0)
@@ -423,16 +401,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionComboBoxString">();
+		STATIC_CLASS_IMPL("UnionComboBoxString")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionComboBoxString")
 	}
 	static class UUnionComboBoxString* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionComboBoxString>();
 	}
 };
-static_assert(alignof(UUnionComboBoxString) == 0x000010, "Wrong alignment on UUnionComboBoxString");
-static_assert(sizeof(UUnionComboBoxString) == 0x001DF0, "Wrong size on UUnionComboBoxString");
-static_assert(offsetof(UUnionComboBoxString, IsInit) == 0x001DD0, "Member 'UUnionComboBoxString::IsInit' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionComboBoxString;
 
 // Class UnionUI.UnionFontScroll
 // 0x03E0 (0x06C0 - 0x02E0)
@@ -480,33 +460,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionFontScroll">();
+		STATIC_CLASS_IMPL("UnionFontScroll")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionFontScroll")
 	}
 	static class UUnionFontScroll* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionFontScroll>();
 	}
 };
-static_assert(alignof(UUnionFontScroll) == 0x000010, "Wrong alignment on UUnionFontScroll");
-static_assert(sizeof(UUnionFontScroll) == 0x0006C0, "Wrong size on UUnionFontScroll");
-static_assert(offsetof(UUnionFontScroll, TextWidgetChild) == 0x0002E8, "Member 'UUnionFontScroll::TextWidgetChild' has a wrong offset!");
-static_assert(offsetof(UUnionFontScroll, RetainerBoxChild) == 0x0002F0, "Member 'UUnionFontScroll::RetainerBoxChild' has a wrong offset!");
-static_assert(offsetof(UUnionFontScroll, Text) == 0x0002F8, "Member 'UUnionFontScroll::Text' has a wrong offset!");
-static_assert(offsetof(UUnionFontScroll, TextStyleParameter) == 0x000310, "Member 'UUnionFontScroll::TextStyleParameter' has a wrong offset!");
-static_assert(offsetof(UUnionFontScroll, TextJustification) == 0x000650, "Member 'UUnionFontScroll::TextJustification' has a wrong offset!");
-static_assert(offsetof(UUnionFontScroll, TextScrollSpeed) == 0x000654, "Member 'UUnionFontScroll::TextScrollSpeed' has a wrong offset!");
-static_assert(offsetof(UUnionFontScroll, TextStartScrollDelayTime) == 0x000658, "Member 'UUnionFontScroll::TextStartScrollDelayTime' has a wrong offset!");
-static_assert(offsetof(UUnionFontScroll, SizeBoxLimitX) == 0x00065C, "Member 'UUnionFontScroll::SizeBoxLimitX' has a wrong offset!");
-static_assert(offsetof(UUnionFontScroll, EndBlankCnt) == 0x000660, "Member 'UUnionFontScroll::EndBlankCnt' has a wrong offset!");
-static_assert(offsetof(UUnionFontScroll, SizeBoxAdjustValue) == 0x000664, "Member 'UUnionFontScroll::SizeBoxAdjustValue' has a wrong offset!");
-static_assert(offsetof(UUnionFontScroll, CanDisappearSlowly) == 0x000668, "Member 'UUnionFontScroll::CanDisappearSlowly' has a wrong offset!");
-static_assert(offsetof(UUnionFontScroll, GradiationSpeed) == 0x00066C, "Member 'UUnionFontScroll::GradiationSpeed' has a wrong offset!");
-static_assert(offsetof(UUnionFontScroll, LeftVisible) == 0x000670, "Member 'UUnionFontScroll::LeftVisible' has a wrong offset!");
-static_assert(offsetof(UUnionFontScroll, LeftAppearSpeed) == 0x000674, "Member 'UUnionFontScroll::LeftAppearSpeed' has a wrong offset!");
-static_assert(offsetof(UUnionFontScroll, StartLocationMultiplier) == 0x000678, "Member 'UUnionFontScroll::StartLocationMultiplier' has a wrong offset!");
-static_assert(offsetof(UUnionFontScroll, AdjustRetainerBoxSize) == 0x00067C, "Member 'UUnionFontScroll::AdjustRetainerBoxSize' has a wrong offset!");
-static_assert(offsetof(UUnionFontScroll, CenterWhileNotScroll) == 0x000680, "Member 'UUnionFontScroll::CenterWhileNotScroll' has a wrong offset!");
-static_assert(offsetof(UUnionFontScroll, LeftStartLocationWhenScroll) == 0x000688, "Member 'UUnionFontScroll::LeftStartLocationWhenScroll' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionFontScroll;
 
 // Class UnionUI.UnionLoadingGauge
 // 0x0008 (0x02E8 - 0x02E0)
@@ -529,18 +494,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionLoadingGauge">();
+		STATIC_CLASS_IMPL("UnionLoadingGauge")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionLoadingGauge")
 	}
 	static class UUnionLoadingGauge* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionLoadingGauge>();
 	}
 };
-static_assert(alignof(UUnionLoadingGauge) == 0x000008, "Wrong alignment on UUnionLoadingGauge");
-static_assert(sizeof(UUnionLoadingGauge) == 0x0002E8, "Wrong size on UUnionLoadingGauge");
-static_assert(offsetof(UUnionLoadingGauge, LoadingGaugeNowState) == 0x0002E0, "Member 'UUnionLoadingGauge::LoadingGaugeNowState' has a wrong offset!");
-static_assert(offsetof(UUnionLoadingGauge, LoadingGaugeTargetState) == 0x0002E1, "Member 'UUnionLoadingGauge::LoadingGaugeTargetState' has a wrong offset!");
-static_assert(offsetof(UUnionLoadingGauge, GaugeAnimationRate) == 0x0002E4, "Member 'UUnionLoadingGauge::GaugeAnimationRate' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionLoadingGauge;
 
 // Class UnionUI.MouseButtonBlueprintFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -553,22 +518,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MouseButtonBlueprintFunctionLibrary">();
+		STATIC_CLASS_IMPL("MouseButtonBlueprintFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MouseButtonBlueprintFunctionLibrary")
 	}
 	static class UMouseButtonBlueprintFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMouseButtonBlueprintFunctionLibrary>();
 	}
 };
-static_assert(alignof(UMouseButtonBlueprintFunctionLibrary) == 0x000008, "Wrong alignment on UMouseButtonBlueprintFunctionLibrary");
-static_assert(sizeof(UMouseButtonBlueprintFunctionLibrary) == 0x000028, "Wrong size on UMouseButtonBlueprintFunctionLibrary");
+DUMPER7_ASSERTS_UMouseButtonBlueprintFunctionLibrary;
 
 // Class UnionUI.UnionRichTextBlockImageDecorator
 // 0x0010 (0x0040 - 0x0030)
 class UUnionRichTextBlockImageDecorator : public URichTextBlockImageDecorator
 {
 public:
-	class UDataTable*                             OverrideImageSet;                                  // 0x0030(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UDataTable*                             OverrideImageSet;                                  // 0x0030(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 	int32                                         PlayerIndex;                                       // 0x0038(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bEachPlayerSetting;                                // 0x003C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -583,18 +551,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionRichTextBlockImageDecorator">();
+		STATIC_CLASS_IMPL("UnionRichTextBlockImageDecorator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionRichTextBlockImageDecorator")
 	}
 	static class UUnionRichTextBlockImageDecorator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionRichTextBlockImageDecorator>();
 	}
 };
-static_assert(alignof(UUnionRichTextBlockImageDecorator) == 0x000008, "Wrong alignment on UUnionRichTextBlockImageDecorator");
-static_assert(sizeof(UUnionRichTextBlockImageDecorator) == 0x000040, "Wrong size on UUnionRichTextBlockImageDecorator");
-static_assert(offsetof(UUnionRichTextBlockImageDecorator, OverrideImageSet) == 0x000030, "Member 'UUnionRichTextBlockImageDecorator::OverrideImageSet' has a wrong offset!");
-static_assert(offsetof(UUnionRichTextBlockImageDecorator, PlayerIndex) == 0x000038, "Member 'UUnionRichTextBlockImageDecorator::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(UUnionRichTextBlockImageDecorator, bEachPlayerSetting) == 0x00003C, "Member 'UUnionRichTextBlockImageDecorator::bEachPlayerSetting' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionRichTextBlockImageDecorator;
 
 // Class UnionUI.UnionScreenCaptureActor
 // 0x0028 (0x02B8 - 0x0290)
@@ -604,7 +572,7 @@ public:
 	class FString                                 FileNameBase;                                      // 0x0290(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Width;                                             // 0x02A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Height;                                            // 0x02A4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTextureRenderTarget2D*                 RenderTarget;                                      // 0x02A8(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UTextureRenderTarget2D*                 RenderTarget;                                      // 0x02A8(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
 	uint8                                         Pad_2B0[0x8];                                      // 0x02B0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -616,19 +584,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionScreenCaptureActor">();
+		STATIC_CLASS_IMPL("UnionScreenCaptureActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionScreenCaptureActor")
 	}
 	static class AUnionScreenCaptureActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AUnionScreenCaptureActor>();
 	}
 };
-static_assert(alignof(AUnionScreenCaptureActor) == 0x000008, "Wrong alignment on AUnionScreenCaptureActor");
-static_assert(sizeof(AUnionScreenCaptureActor) == 0x0002B8, "Wrong size on AUnionScreenCaptureActor");
-static_assert(offsetof(AUnionScreenCaptureActor, FileNameBase) == 0x000290, "Member 'AUnionScreenCaptureActor::FileNameBase' has a wrong offset!");
-static_assert(offsetof(AUnionScreenCaptureActor, Width) == 0x0002A0, "Member 'AUnionScreenCaptureActor::Width' has a wrong offset!");
-static_assert(offsetof(AUnionScreenCaptureActor, Height) == 0x0002A4, "Member 'AUnionScreenCaptureActor::Height' has a wrong offset!");
-static_assert(offsetof(AUnionScreenCaptureActor, RenderTarget) == 0x0002A8, "Member 'AUnionScreenCaptureActor::RenderTarget' has a wrong offset!");
+DUMPER7_ASSERTS_AUnionScreenCaptureActor;
 
 // Class UnionUI.UnionStickerCamera
 // 0x0000 (0x02A8 - 0x02A8)
@@ -637,15 +604,18 @@ class AUnionStickerCamera final : public ASceneCapture2D
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionStickerCamera">();
+		STATIC_CLASS_IMPL("UnionStickerCamera")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionStickerCamera")
 	}
 	static class AUnionStickerCamera* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AUnionStickerCamera>();
 	}
 };
-static_assert(alignof(AUnionStickerCamera) == 0x000008, "Wrong alignment on AUnionStickerCamera");
-static_assert(sizeof(AUnionStickerCamera) == 0x0002A8, "Wrong size on AUnionStickerCamera");
+DUMPER7_ASSERTS_AUnionStickerCamera;
 
 // Class UnionUI.UnionStickerFrame
 // 0x0008 (0x0298 - 0x0290)
@@ -660,37 +630,41 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionStickerFrame">();
+		STATIC_CLASS_IMPL("UnionStickerFrame")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionStickerFrame")
 	}
 	static class AUnionStickerFrame* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AUnionStickerFrame>();
 	}
 };
-static_assert(alignof(AUnionStickerFrame) == 0x000008, "Wrong alignment on AUnionStickerFrame");
-static_assert(sizeof(AUnionStickerFrame) == 0x000298, "Wrong size on AUnionStickerFrame");
-static_assert(offsetof(AUnionStickerFrame, StaticMeshComponent) == 0x000290, "Member 'AUnionStickerFrame::StaticMeshComponent' has a wrong offset!");
+DUMPER7_ASSERTS_AUnionStickerFrame;
 
 // Class UnionUI.UnionStickerRenderTarget
 // 0x0008 (0x0030 - 0x0028)
 class UUnionStickerRenderTarget final : public UObject
 {
 public:
-	class UTextureRenderTarget2D*                 RenderTarget2D;                                    // 0x0028(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTextureRenderTarget2D*                 RenderTarget2D;                                    // 0x0028(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionStickerRenderTarget">();
+		STATIC_CLASS_IMPL("UnionStickerRenderTarget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionStickerRenderTarget")
 	}
 	static class UUnionStickerRenderTarget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionStickerRenderTarget>();
 	}
 };
-static_assert(alignof(UUnionStickerRenderTarget) == 0x000008, "Wrong alignment on UUnionStickerRenderTarget");
-static_assert(sizeof(UUnionStickerRenderTarget) == 0x000030, "Wrong size on UUnionStickerRenderTarget");
-static_assert(offsetof(UUnionStickerRenderTarget, RenderTarget2D) == 0x000028, "Member 'UUnionStickerRenderTarget::RenderTarget2D' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionStickerRenderTarget;
 
 // Class UnionUI.UnionUIWidgetBase
 // 0x0030 (0x0310 - 0x02E0)
@@ -709,18 +683,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionUIWidgetBase">();
+		STATIC_CLASS_IMPL("UnionUIWidgetBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionUIWidgetBase")
 	}
 	static class UUnionUIWidgetBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionUIWidgetBase>();
 	}
 };
-static_assert(alignof(UUnionUIWidgetBase) == 0x000008, "Wrong alignment on UUnionUIWidgetBase");
-static_assert(sizeof(UUnionUIWidgetBase) == 0x000310, "Wrong size on UUnionUIWidgetBase");
-static_assert(offsetof(UUnionUIWidgetBase, AnimEndDelegate) == 0x0002E0, "Member 'UUnionUIWidgetBase::AnimEndDelegate' has a wrong offset!");
-static_assert(offsetof(UUnionUIWidgetBase, Animations) == 0x0002F0, "Member 'UUnionUIWidgetBase::Animations' has a wrong offset!");
-static_assert(offsetof(UUnionUIWidgetBase, CustomActionStringArray) == 0x000300, "Member 'UUnionUIWidgetBase::CustomActionStringArray' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionUIWidgetBase;
 
 // Class UnionUI.UnionUIInputWidget
 // 0x0018 (0x0328 - 0x0310)
@@ -742,15 +716,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionUIInputWidget">();
+		STATIC_CLASS_IMPL("UnionUIInputWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionUIInputWidget")
 	}
 	static class UUnionUIInputWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionUIInputWidget>();
 	}
 };
-static_assert(alignof(UUnionUIInputWidget) == 0x000008, "Wrong alignment on UUnionUIInputWidget");
-static_assert(sizeof(UUnionUIInputWidget) == 0x000328, "Wrong size on UUnionUIInputWidget");
+DUMPER7_ASSERTS_UUnionUIInputWidget;
 
 // Class UnionUI.UnionUIButtonBaseCore
 // 0x0020 (0x0348 - 0x0328)
@@ -760,7 +737,7 @@ public:
 	bool                                          bChangeableButtonState;                            // 0x0328(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAnalogEvent;                                      // 0x0329(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_32A[0xE];                                      // 0x032A(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CurrentButtonAnimPlayer;                           // 0x0338(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UUMGSequencePlayer*                     CurrentButtonAnimPlayer;                           // 0x0338(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
 	uint8                                         Pad_340[0x4];                                      // 0x0340(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	bool                                          bEnableMouseInteraction;                           // 0x0344(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_345[0x3];                                      // 0x0345(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -781,19 +758,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionUIButtonBaseCore">();
+		STATIC_CLASS_IMPL("UnionUIButtonBaseCore")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionUIButtonBaseCore")
 	}
 	static class UUnionUIButtonBaseCore* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionUIButtonBaseCore>();
 	}
 };
-static_assert(alignof(UUnionUIButtonBaseCore) == 0x000008, "Wrong alignment on UUnionUIButtonBaseCore");
-static_assert(sizeof(UUnionUIButtonBaseCore) == 0x000348, "Wrong size on UUnionUIButtonBaseCore");
-static_assert(offsetof(UUnionUIButtonBaseCore, bChangeableButtonState) == 0x000328, "Member 'UUnionUIButtonBaseCore::bChangeableButtonState' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonBaseCore, bAnalogEvent) == 0x000329, "Member 'UUnionUIButtonBaseCore::bAnalogEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonBaseCore, CurrentButtonAnimPlayer) == 0x000338, "Member 'UUnionUIButtonBaseCore::CurrentButtonAnimPlayer' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonBaseCore, bEnableMouseInteraction) == 0x000344, "Member 'UUnionUIButtonBaseCore::bEnableMouseInteraction' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionUIButtonBaseCore;
 
 // Class UnionUI.UnionUIButtonBase
 // 0x0138 (0x0480 - 0x0348)
@@ -830,7 +806,7 @@ public:
 	bool                                          bConsumePointerInput;                              // 0x0458(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bMouseUnFocus;                                     // 0x0459(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_45A[0x6];                                      // 0x045A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UButton*                                MouseButton;                                       // 0x0460(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UButton*                                MouseButton;                                       // 0x0460(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
 	uint8                                         Pad_468[0x18];                                     // 0x0468(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -857,43 +833,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionUIButtonBase">();
+		STATIC_CLASS_IMPL("UnionUIButtonBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionUIButtonBase")
 	}
 	static class UUnionUIButtonBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionUIButtonBase>();
 	}
 };
-static_assert(alignof(UUnionUIButtonBase) == 0x000008, "Wrong alignment on UUnionUIButtonBase");
-static_assert(sizeof(UUnionUIButtonBase) == 0x000480, "Wrong size on UUnionUIButtonBase");
-static_assert(offsetof(UUnionUIButtonBase, ButtonFocusType) == 0x000348, "Member 'UUnionUIButtonBase::ButtonFocusType' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonBase, OnFocusEvent) == 0x000350, "Member 'UUnionUIButtonBase::OnFocusEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonBase, OnUnFocusEvent) == 0x000360, "Member 'UUnionUIButtonBase::OnUnFocusEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonBase, OnDecisionEvent) == 0x000370, "Member 'UUnionUIButtonBase::OnDecisionEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonBase, OnDecisionDownEvent) == 0x000380, "Member 'UUnionUIButtonBase::OnDecisionDownEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonBase, OnCancelEvent) == 0x000390, "Member 'UUnionUIButtonBase::OnCancelEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonBase, OnCancelDownEvent) == 0x0003A0, "Member 'UUnionUIButtonBase::OnCancelDownEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonBase, OnLeftShoulderEvent) == 0x0003B0, "Member 'UUnionUIButtonBase::OnLeftShoulderEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonBase, OnLeftShoulderDownEvent) == 0x0003C0, "Member 'UUnionUIButtonBase::OnLeftShoulderDownEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonBase, OnRightShoulderEvent) == 0x0003D0, "Member 'UUnionUIButtonBase::OnRightShoulderEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonBase, OnRightShoulderDownEvent) == 0x0003E0, "Member 'UUnionUIButtonBase::OnRightShoulderDownEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonBase, OnFaceTopEvent) == 0x0003F0, "Member 'UUnionUIButtonBase::OnFaceTopEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonBase, OnFaceTopDownEvent) == 0x000400, "Member 'UUnionUIButtonBase::OnFaceTopDownEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonBase, OnSpecialEvent) == 0x000410, "Member 'UUnionUIButtonBase::OnSpecialEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonBase, OnDirectionEvent) == 0x000420, "Member 'UUnionUIButtonBase::OnDirectionEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonBase, bSoundEnable) == 0x000430, "Member 'UUnionUIButtonBase::bSoundEnable' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonBase, bFocusSound) == 0x000431, "Member 'UUnionUIButtonBase::bFocusSound' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonBase, CurrentFocusSoundSetting) == 0x000432, "Member 'UUnionUIButtonBase::CurrentFocusSoundSetting' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonBase, NowUIButtonState) == 0x000433, "Member 'UUnionUIButtonBase::NowUIButtonState' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonBase, PanelIndex) == 0x000434, "Member 'UUnionUIButtonBase::PanelIndex' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonBase, ButtonIndex) == 0x000438, "Member 'UUnionUIButtonBase::ButtonIndex' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonBase, NowButtonAnimState) == 0x00043C, "Member 'UUnionUIButtonBase::NowButtonAnimState' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonBase, LastPlayButtonAnim) == 0x000440, "Member 'UUnionUIButtonBase::LastPlayButtonAnim' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonBase, FocusAnimRef) == 0x000448, "Member 'UUnionUIButtonBase::FocusAnimRef' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonBase, UnFocusAnimRef) == 0x000450, "Member 'UUnionUIButtonBase::UnFocusAnimRef' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonBase, bConsumePointerInput) == 0x000458, "Member 'UUnionUIButtonBase::bConsumePointerInput' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonBase, bMouseUnFocus) == 0x000459, "Member 'UUnionUIButtonBase::bMouseUnFocus' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonBase, MouseButton) == 0x000460, "Member 'UUnionUIButtonBase::MouseButton' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionUIButtonBase;
 
 // Class UnionUI.UnionUIAnimScrollControl
 // 0x00F0 (0x0570 - 0x0480)
@@ -939,31 +890,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionUIAnimScrollControl">();
+		STATIC_CLASS_IMPL("UnionUIAnimScrollControl")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionUIAnimScrollControl")
 	}
 	static class UUnionUIAnimScrollControl* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionUIAnimScrollControl>();
 	}
 };
-static_assert(alignof(UUnionUIAnimScrollControl) == 0x000008, "Wrong alignment on UUnionUIAnimScrollControl");
-static_assert(sizeof(UUnionUIAnimScrollControl) == 0x000570, "Wrong size on UUnionUIAnimScrollControl");
-static_assert(offsetof(UUnionUIAnimScrollControl, ControlVH) == 0x000480, "Member 'UUnionUIAnimScrollControl::ControlVH' has a wrong offset!");
-static_assert(offsetof(UUnionUIAnimScrollControl, PresentElementNum) == 0x000484, "Member 'UUnionUIAnimScrollControl::PresentElementNum' has a wrong offset!");
-static_assert(offsetof(UUnionUIAnimScrollControl, ElementNum) == 0x000488, "Member 'UUnionUIAnimScrollControl::ElementNum' has a wrong offset!");
-static_assert(offsetof(UUnionUIAnimScrollControl, CenterElementIndex) == 0x00048C, "Member 'UUnionUIAnimScrollControl::CenterElementIndex' has a wrong offset!");
-static_assert(offsetof(UUnionUIAnimScrollControl, LastAnimDownRight) == 0x000490, "Member 'UUnionUIAnimScrollControl::LastAnimDownRight' has a wrong offset!");
-static_assert(offsetof(UUnionUIAnimScrollControl, LastPlayAnimation) == 0x000498, "Member 'UUnionUIAnimScrollControl::LastPlayAnimation' has a wrong offset!");
-static_assert(offsetof(UUnionUIAnimScrollControl, IdleAnim) == 0x0004A0, "Member 'UUnionUIAnimScrollControl::IdleAnim' has a wrong offset!");
-static_assert(offsetof(UUnionUIAnimScrollControl, PresentElementArr) == 0x0004A8, "Member 'UUnionUIAnimScrollControl::PresentElementArr' has a wrong offset!");
-static_assert(offsetof(UUnionUIAnimScrollControl, ElementArr) == 0x0004B8, "Member 'UUnionUIAnimScrollControl::ElementArr' has a wrong offset!");
-static_assert(offsetof(UUnionUIAnimScrollControl, ScrollAnimation) == 0x0004C8, "Member 'UUnionUIAnimScrollControl::ScrollAnimation' has a wrong offset!");
-static_assert(offsetof(UUnionUIAnimScrollControl, AnchorArr) == 0x000518, "Member 'UUnionUIAnimScrollControl::AnchorArr' has a wrong offset!");
-static_assert(offsetof(UUnionUIAnimScrollControl, ColorAndOpacityArr) == 0x000528, "Member 'UUnionUIAnimScrollControl::ColorAndOpacityArr' has a wrong offset!");
-static_assert(offsetof(UUnionUIAnimScrollControl, PositionArr) == 0x000538, "Member 'UUnionUIAnimScrollControl::PositionArr' has a wrong offset!");
-static_assert(offsetof(UUnionUIAnimScrollControl, WidgetTransformArr) == 0x000548, "Member 'UUnionUIAnimScrollControl::WidgetTransformArr' has a wrong offset!");
-static_assert(offsetof(UUnionUIAnimScrollControl, OnScrollFinishedEvent) == 0x000558, "Member 'UUnionUIAnimScrollControl::OnScrollFinishedEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIAnimScrollControl, bControllable) == 0x000568, "Member 'UUnionUIAnimScrollControl::bControllable' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionUIAnimScrollControl;
 
 // Class UnionUI.UnionUIButton
 // 0x0020 (0x0630 - 0x0610)
@@ -983,18 +921,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionUIButton">();
+		STATIC_CLASS_IMPL("UnionUIButton")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionUIButton")
 	}
 	static class UUnionUIButton* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionUIButton>();
 	}
 };
-static_assert(alignof(UUnionUIButton) == 0x000010, "Wrong alignment on UUnionUIButton");
-static_assert(sizeof(UUnionUIButton) == 0x000630, "Wrong size on UUnionUIButton");
-static_assert(offsetof(UUnionUIButton, OnRepeat) == 0x000608, "Member 'UUnionUIButton::OnRepeat' has a wrong offset!");
-static_assert(offsetof(UUnionUIButton, RepeatTimeFirst) == 0x000618, "Member 'UUnionUIButton::RepeatTimeFirst' has a wrong offset!");
-static_assert(offsetof(UUnionUIButton, RepeatTime) == 0x00061C, "Member 'UUnionUIButton::RepeatTime' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionUIButton;
 
 // Class UnionUI.UnionUIButtonStandard
 // 0x01C8 (0x0648 - 0x0480)
@@ -1016,20 +954,20 @@ public:
 	bool                                          _ToggleEnabled;                                    // 0x056A(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                          _DecidedKeep;                                      // 0x056B(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_56C[0x4];                                      // 0x056C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidgetAnimation*                       Btn_NonActive_Loop;                                // 0x0570(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UWidgetAnimation*                       Btn_Active_Loop;                                   // 0x0578(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UWidgetAnimation*                       Btn_Select_Loop;                                   // 0x0580(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UWidgetAnimation*                       Btn_Decide_Loop;                                   // 0x0588(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UWidgetAnimation*                       Btn_NonActive_to_Active;                           // 0x0590(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UWidgetAnimation*                       Btn_Active_to_NonActive;                           // 0x0598(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UWidgetAnimation*                       Btn_Active_to_Select;                              // 0x05A0(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UWidgetAnimation*                       Btn_Active_to_Decide;                              // 0x05A8(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UWidgetAnimation*                       Btn_Select_to_NonActive;                           // 0x05B0(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UWidgetAnimation*                       Btn_Select_to_Active;                              // 0x05B8(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UWidgetAnimation*                       Btn_Select_to_Decide;                              // 0x05C0(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UWidgetAnimation*                       Btn_Decide_to_NonActive;                           // 0x05C8(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UWidgetAnimation*                       Btn_Decide_to_Active;                              // 0x05D0(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UWidgetAnimation*                       Btn_Decide_to_Select;                              // 0x05D8(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UWidgetAnimation*                       Btn_NonActive_Loop;                                // 0x0570(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	class UWidgetAnimation*                       Btn_Active_Loop;                                   // 0x0578(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	class UWidgetAnimation*                       Btn_Select_Loop;                                   // 0x0580(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	class UWidgetAnimation*                       Btn_Decide_Loop;                                   // 0x0588(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	class UWidgetAnimation*                       Btn_NonActive_to_Active;                           // 0x0590(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	class UWidgetAnimation*                       Btn_Active_to_NonActive;                           // 0x0598(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	class UWidgetAnimation*                       Btn_Active_to_Select;                              // 0x05A0(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	class UWidgetAnimation*                       Btn_Active_to_Decide;                              // 0x05A8(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	class UWidgetAnimation*                       Btn_Select_to_NonActive;                           // 0x05B0(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	class UWidgetAnimation*                       Btn_Select_to_Active;                              // 0x05B8(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	class UWidgetAnimation*                       Btn_Select_to_Decide;                              // 0x05C0(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	class UWidgetAnimation*                       Btn_Decide_to_NonActive;                           // 0x05C8(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	class UWidgetAnimation*                       Btn_Decide_to_Active;                              // 0x05D0(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	class UWidgetAnimation*                       Btn_Decide_to_Select;                              // 0x05D8(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
 	uint8                                         Pad_5E0[0x68];                                     // 0x05E0(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -1060,42 +998,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionUIButtonStandard">();
+		STATIC_CLASS_IMPL("UnionUIButtonStandard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionUIButtonStandard")
 	}
 	static class UUnionUIButtonStandard* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionUIButtonStandard>();
 	}
 };
-static_assert(alignof(UUnionUIButtonStandard) == 0x000008, "Wrong alignment on UUnionUIButtonStandard");
-static_assert(sizeof(UUnionUIButtonStandard) == 0x000648, "Wrong size on UUnionUIButtonStandard");
-static_assert(offsetof(UUnionUIButtonStandard, OnActivatedEvent) == 0x000480, "Member 'UUnionUIButtonStandard::OnActivatedEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonStandard, OnDeactivatedEvent) == 0x000490, "Member 'UUnionUIButtonStandard::OnDeactivatedEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonStandard, OnSelectedEvent) == 0x0004A0, "Member 'UUnionUIButtonStandard::OnSelectedEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonStandard, OnDeselectedEvent) == 0x0004B0, "Member 'UUnionUIButtonStandard::OnDeselectedEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonStandard, OnSelectAnimationFinishedEvent) == 0x0004C0, "Member 'UUnionUIButtonStandard::OnSelectAnimationFinishedEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonStandard, OnDecidedEvent) == 0x0004D0, "Member 'UUnionUIButtonStandard::OnDecidedEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonStandard, OnDecideAnimationFinishedEvent) == 0x0004E0, "Member 'UUnionUIButtonStandard::OnDecideAnimationFinishedEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonStandard, _SelecetdSoundCue) == 0x0004F0, "Member 'UUnionUIButtonStandard::_SelecetdSoundCue' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonStandard, _DecidedSoundCue) == 0x000518, "Member 'UUnionUIButtonStandard::_DecidedSoundCue' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonStandard, _ErrorSoundCue) == 0x000540, "Member 'UUnionUIButtonStandard::_ErrorSoundCue' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonStandard, _Selectable) == 0x000569, "Member 'UUnionUIButtonStandard::_Selectable' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonStandard, _ToggleEnabled) == 0x00056A, "Member 'UUnionUIButtonStandard::_ToggleEnabled' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonStandard, _DecidedKeep) == 0x00056B, "Member 'UUnionUIButtonStandard::_DecidedKeep' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonStandard, Btn_NonActive_Loop) == 0x000570, "Member 'UUnionUIButtonStandard::Btn_NonActive_Loop' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonStandard, Btn_Active_Loop) == 0x000578, "Member 'UUnionUIButtonStandard::Btn_Active_Loop' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonStandard, Btn_Select_Loop) == 0x000580, "Member 'UUnionUIButtonStandard::Btn_Select_Loop' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonStandard, Btn_Decide_Loop) == 0x000588, "Member 'UUnionUIButtonStandard::Btn_Decide_Loop' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonStandard, Btn_NonActive_to_Active) == 0x000590, "Member 'UUnionUIButtonStandard::Btn_NonActive_to_Active' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonStandard, Btn_Active_to_NonActive) == 0x000598, "Member 'UUnionUIButtonStandard::Btn_Active_to_NonActive' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonStandard, Btn_Active_to_Select) == 0x0005A0, "Member 'UUnionUIButtonStandard::Btn_Active_to_Select' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonStandard, Btn_Active_to_Decide) == 0x0005A8, "Member 'UUnionUIButtonStandard::Btn_Active_to_Decide' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonStandard, Btn_Select_to_NonActive) == 0x0005B0, "Member 'UUnionUIButtonStandard::Btn_Select_to_NonActive' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonStandard, Btn_Select_to_Active) == 0x0005B8, "Member 'UUnionUIButtonStandard::Btn_Select_to_Active' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonStandard, Btn_Select_to_Decide) == 0x0005C0, "Member 'UUnionUIButtonStandard::Btn_Select_to_Decide' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonStandard, Btn_Decide_to_NonActive) == 0x0005C8, "Member 'UUnionUIButtonStandard::Btn_Decide_to_NonActive' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonStandard, Btn_Decide_to_Active) == 0x0005D0, "Member 'UUnionUIButtonStandard::Btn_Decide_to_Active' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonStandard, Btn_Decide_to_Select) == 0x0005D8, "Member 'UUnionUIButtonStandard::Btn_Decide_to_Select' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionUIButtonStandard;
 
 // Class UnionUI.UnionUICapture2DActor
 // 0x0020 (0x02B0 - 0x0290)
@@ -1123,20 +1037,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionUICapture2DActor">();
+		STATIC_CLASS_IMPL("UnionUICapture2DActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionUICapture2DActor")
 	}
 	static class AUnionUICapture2DActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AUnionUICapture2DActor>();
 	}
 };
-static_assert(alignof(AUnionUICapture2DActor) == 0x000008, "Wrong alignment on AUnionUICapture2DActor");
-static_assert(sizeof(AUnionUICapture2DActor) == 0x0002B0, "Wrong size on AUnionUICapture2DActor");
-static_assert(offsetof(AUnionUICapture2DActor, bEnableCapture) == 0x000290, "Member 'AUnionUICapture2DActor::bEnableCapture' has a wrong offset!");
-static_assert(offsetof(AUnionUICapture2DActor, PlayerControllerIndex) == 0x000294, "Member 'AUnionUICapture2DActor::PlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(AUnionUICapture2DActor, Root) == 0x000298, "Member 'AUnionUICapture2DActor::Root' has a wrong offset!");
-static_assert(offsetof(AUnionUICapture2DActor, SceneCapture2D) == 0x0002A0, "Member 'AUnionUICapture2DActor::SceneCapture2D' has a wrong offset!");
-static_assert(offsetof(AUnionUICapture2DActor, RenderTarget2D) == 0x0002A8, "Member 'AUnionUICapture2DActor::RenderTarget2D' has a wrong offset!");
+DUMPER7_ASSERTS_AUnionUICapture2DActor;
 
 // Class UnionUI.UnionUIButtonsPanel
 // 0x00D8 (0x0100 - 0x0028)
@@ -1189,31 +1101,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionUIButtonsPanel">();
+		STATIC_CLASS_IMPL("UnionUIButtonsPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionUIButtonsPanel")
 	}
 	static class UUnionUIButtonsPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionUIButtonsPanel>();
 	}
 };
-static_assert(alignof(UUnionUIButtonsPanel) == 0x000008, "Wrong alignment on UUnionUIButtonsPanel");
-static_assert(sizeof(UUnionUIButtonsPanel) == 0x000100, "Wrong size on UUnionUIButtonsPanel");
-static_assert(offsetof(UUnionUIButtonsPanel, OnUIButtonsPanelDecisionEvent) == 0x000028, "Member 'UUnionUIButtonsPanel::OnUIButtonsPanelDecisionEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonsPanel, OnUIButtonsPanelDecisionDownEvent) == 0x000038, "Member 'UUnionUIButtonsPanel::OnUIButtonsPanelDecisionDownEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonsPanel, OnUIButtonsPanelCancelEvent) == 0x000048, "Member 'UUnionUIButtonsPanel::OnUIButtonsPanelCancelEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonsPanel, OnUIButtonsPanelCancelDownEvent) == 0x000058, "Member 'UUnionUIButtonsPanel::OnUIButtonsPanelCancelDownEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonsPanel, OnUIButtonsPanelFocusEvent) == 0x000068, "Member 'UUnionUIButtonsPanel::OnUIButtonsPanelFocusEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonsPanel, OnUIButtonsPanelUnFocusEvent) == 0x000078, "Member 'UUnionUIButtonsPanel::OnUIButtonsPanelUnFocusEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonsPanel, OnUIButtonsPanelLeftShoulderEvent) == 0x000088, "Member 'UUnionUIButtonsPanel::OnUIButtonsPanelLeftShoulderEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonsPanel, OnUIButtonsPanelRightShoulderEvent) == 0x000098, "Member 'UUnionUIButtonsPanel::OnUIButtonsPanelRightShoulderEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonsPanel, OnUIButtonsPanelFaceTopEvent) == 0x0000A8, "Member 'UUnionUIButtonsPanel::OnUIButtonsPanelFaceTopEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonsPanel, OnUIButtonsPanelDirectionEvent) == 0x0000B8, "Member 'UUnionUIButtonsPanel::OnUIButtonsPanelDirectionEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonsPanel, ButtonsPanel) == 0x0000C8, "Member 'UUnionUIButtonsPanel::ButtonsPanel' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonsPanel, Buttons) == 0x0000D0, "Member 'UUnionUIButtonsPanel::Buttons' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonsPanel, LastFocusedButtonIndex) == 0x0000E0, "Member 'UUnionUIButtonsPanel::LastFocusedButtonIndex' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonsPanel, LastFocusedPlayerControllerIndex_ButtonsPanelIndex) == 0x0000E8, "Member 'UUnionUIButtonsPanel::LastFocusedPlayerControllerIndex_ButtonsPanelIndex' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonsPanel, PanelIndex) == 0x0000F8, "Member 'UUnionUIButtonsPanel::PanelIndex' has a wrong offset!");
-static_assert(offsetof(UUnionUIButtonsPanel, bExclusiveFocus) == 0x0000FC, "Member 'UUnionUIButtonsPanel::bExclusiveFocus' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionUIButtonsPanel;
 
 // Class UnionUI.UnionUICrossButtons
 // 0x0000 (0x0100 - 0x0100)
@@ -1225,15 +1124,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionUICrossButtons">();
+		STATIC_CLASS_IMPL("UnionUICrossButtons")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionUICrossButtons")
 	}
 	static class UUnionUICrossButtons* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionUICrossButtons>();
 	}
 };
-static_assert(alignof(UUnionUICrossButtons) == 0x000008, "Wrong alignment on UUnionUICrossButtons");
-static_assert(sizeof(UUnionUICrossButtons) == 0x000100, "Wrong size on UUnionUICrossButtons");
+DUMPER7_ASSERTS_UUnionUICrossButtons;
 
 // Class UnionUI.UnionUIFrameGrabber
 // 0x0048 (0x0328 - 0x02E0)
@@ -1242,8 +1144,8 @@ class UUnionUIFrameGrabber : public UUserWidget
 public:
 	TMulticastInlineDelegate<void()>              OnFrameGrabberCaptureEnd;                          // 0x02E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_2F0[0x10];                                     // 0x02F0(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               MaterialInstanceDynamic;                           // 0x0300(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UTexture2D*                             CaptureFrameTexture;                               // 0x0308(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UMaterialInstanceDynamic*               MaterialInstanceDynamic;                           // 0x0300(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	class UTexture2D*                             CaptureFrameTexture;                               // 0x0308(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
 	uint8                                         Pad_310[0x18];                                     // 0x0310(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -1254,18 +1156,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionUIFrameGrabber">();
+		STATIC_CLASS_IMPL("UnionUIFrameGrabber")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionUIFrameGrabber")
 	}
 	static class UUnionUIFrameGrabber* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionUIFrameGrabber>();
 	}
 };
-static_assert(alignof(UUnionUIFrameGrabber) == 0x000008, "Wrong alignment on UUnionUIFrameGrabber");
-static_assert(sizeof(UUnionUIFrameGrabber) == 0x000328, "Wrong size on UUnionUIFrameGrabber");
-static_assert(offsetof(UUnionUIFrameGrabber, OnFrameGrabberCaptureEnd) == 0x0002E0, "Member 'UUnionUIFrameGrabber::OnFrameGrabberCaptureEnd' has a wrong offset!");
-static_assert(offsetof(UUnionUIFrameGrabber, MaterialInstanceDynamic) == 0x000300, "Member 'UUnionUIFrameGrabber::MaterialInstanceDynamic' has a wrong offset!");
-static_assert(offsetof(UUnionUIFrameGrabber, CaptureFrameTexture) == 0x000308, "Member 'UUnionUIFrameGrabber::CaptureFrameTexture' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionUIFrameGrabber;
 
 // Class UnionUI.UnionUICrossFade
 // 0x0020 (0x0348 - 0x0328)
@@ -1281,39 +1183,42 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionUICrossFade">();
+		STATIC_CLASS_IMPL("UnionUICrossFade")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionUICrossFade")
 	}
 	static class UUnionUICrossFade* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionUICrossFade>();
 	}
 };
-static_assert(alignof(UUnionUICrossFade) == 0x000008, "Wrong alignment on UUnionUICrossFade");
-static_assert(sizeof(UUnionUICrossFade) == 0x000348, "Wrong size on UUnionUICrossFade");
-static_assert(offsetof(UUnionUICrossFade, OnCrossFadeStart) == 0x000328, "Member 'UUnionUICrossFade::OnCrossFadeStart' has a wrong offset!");
-static_assert(offsetof(UUnionUICrossFade, OnCrossFadeEnd) == 0x000338, "Member 'UUnionUICrossFade::OnCrossFadeEnd' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionUICrossFade;
 
 // Class UnionUI.UnionUIErrorViewer
 // 0x01C8 (0x01F0 - 0x0028)
 class UUnionUIErrorViewer final : public UUnionErrorViewer
 {
 public:
-	class UUnionUIPopupWindowBase*                m_ErrorWindow;                                     // 0x0028(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UUnionUIPopupWindowBase*                m_ErrorWindow;                                     // 0x0028(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
 	uint8                                         Pad_30[0x1C0];                                     // 0x0030(0x01C0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionUIErrorViewer">();
+		STATIC_CLASS_IMPL("UnionUIErrorViewer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionUIErrorViewer")
 	}
 	static class UUnionUIErrorViewer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionUIErrorViewer>();
 	}
 };
-static_assert(alignof(UUnionUIErrorViewer) == 0x000008, "Wrong alignment on UUnionUIErrorViewer");
-static_assert(sizeof(UUnionUIErrorViewer) == 0x0001F0, "Wrong size on UUnionUIErrorViewer");
-static_assert(offsetof(UUnionUIErrorViewer, m_ErrorWindow) == 0x000028, "Member 'UUnionUIErrorViewer::m_ErrorWindow' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionUIErrorViewer;
 
 // Class UnionUI.UnionUIFade
 // 0x0028 (0x0308 - 0x02E0)
@@ -1336,19 +1241,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionUIFade">();
+		STATIC_CLASS_IMPL("UnionUIFade")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionUIFade")
 	}
 	static class UUnionUIFade* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionUIFade>();
 	}
 };
-static_assert(alignof(UUnionUIFade) == 0x000008, "Wrong alignment on UUnionUIFade");
-static_assert(sizeof(UUnionUIFade) == 0x000308, "Wrong size on UUnionUIFade");
-static_assert(offsetof(UUnionUIFade, OnFinishedFade) == 0x0002E0, "Member 'UUnionUIFade::OnFinishedFade' has a wrong offset!");
-static_assert(offsetof(UUnionUIFade, OnFinishedFadeInternal) == 0x0002F0, "Member 'UUnionUIFade::OnFinishedFadeInternal' has a wrong offset!");
-static_assert(offsetof(UUnionUIFade, LastFadeColor) == 0x000300, "Member 'UUnionUIFade::LastFadeColor' has a wrong offset!");
-static_assert(offsetof(UUnionUIFade, LastFadeDirection) == 0x000301, "Member 'UUnionUIFade::LastFadeDirection' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionUIFade;
 
 // Class UnionUI.UnionUIFixedScrollBox
 // 0x0090 (0x0D80 - 0x0CF0)
@@ -1373,24 +1277,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionUIFixedScrollBox">();
+		STATIC_CLASS_IMPL("UnionUIFixedScrollBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionUIFixedScrollBox")
 	}
 	static class UUnionUIFixedScrollBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionUIFixedScrollBox>();
 	}
 };
-static_assert(alignof(UUnionUIFixedScrollBox) == 0x000010, "Wrong alignment on UUnionUIFixedScrollBox");
-static_assert(sizeof(UUnionUIFixedScrollBox) == 0x000D80, "Wrong size on UUnionUIFixedScrollBox");
-static_assert(offsetof(UUnionUIFixedScrollBox, OnScrollStarted) == 0x000CE8, "Member 'UUnionUIFixedScrollBox::OnScrollStarted' has a wrong offset!");
-static_assert(offsetof(UUnionUIFixedScrollBox, OnScrollUpdated) == 0x000CF8, "Member 'UUnionUIFixedScrollBox::OnScrollUpdated' has a wrong offset!");
-static_assert(offsetof(UUnionUIFixedScrollBox, OnScrollFinished) == 0x000D08, "Member 'UUnionUIFixedScrollBox::OnScrollFinished' has a wrong offset!");
-static_assert(offsetof(UUnionUIFixedScrollBox, ScrollTime) == 0x000D18, "Member 'UUnionUIFixedScrollBox::ScrollTime' has a wrong offset!");
-static_assert(offsetof(UUnionUIFixedScrollBox, ScrollEasingFunc) == 0x000D1C, "Member 'UUnionUIFixedScrollBox::ScrollEasingFunc' has a wrong offset!");
-static_assert(offsetof(UUnionUIFixedScrollBox, FocusSwitchTiming) == 0x000D20, "Member 'UUnionUIFixedScrollBox::FocusSwitchTiming' has a wrong offset!");
-static_assert(offsetof(UUnionUIFixedScrollBox, ScrollUpdateInterval) == 0x000D24, "Member 'UUnionUIFixedScrollBox::ScrollUpdateInterval' has a wrong offset!");
-static_assert(offsetof(UUnionUIFixedScrollBox, ScrollAmount) == 0x000D28, "Member 'UUnionUIFixedScrollBox::ScrollAmount' has a wrong offset!");
-static_assert(offsetof(UUnionUIFixedScrollBox, DisplayItemNum) == 0x000D2C, "Member 'UUnionUIFixedScrollBox::DisplayItemNum' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionUIFixedScrollBox;
 
 // Class UnionUI.UnionUIGridLayoutControl
 // 0x00B0 (0x00D8 - 0x0028)
@@ -1421,15 +1319,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionUIGridLayoutControl">();
+		STATIC_CLASS_IMPL("UnionUIGridLayoutControl")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionUIGridLayoutControl")
 	}
 	static class UUnionUIGridLayoutControl* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionUIGridLayoutControl>();
 	}
 };
-static_assert(alignof(UUnionUIGridLayoutControl) == 0x000008, "Wrong alignment on UUnionUIGridLayoutControl");
-static_assert(sizeof(UUnionUIGridLayoutControl) == 0x0000D8, "Wrong size on UUnionUIGridLayoutControl");
+DUMPER7_ASSERTS_UUnionUIGridLayoutControl;
 
 // Class UnionUI.UnionUIGridNavigationBuilderEventHandler
 // 0x00A8 (0x00D0 - 0x0028)
@@ -1446,18 +1347,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionUIGridNavigationBuilderEventHandler">();
+		STATIC_CLASS_IMPL("UnionUIGridNavigationBuilderEventHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionUIGridNavigationBuilderEventHandler")
 	}
 	static class UUnionUIGridNavigationBuilderEventHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionUIGridNavigationBuilderEventHandler>();
 	}
 };
-static_assert(alignof(UUnionUIGridNavigationBuilderEventHandler) == 0x000008, "Wrong alignment on UUnionUIGridNavigationBuilderEventHandler");
-static_assert(sizeof(UUnionUIGridNavigationBuilderEventHandler) == 0x0000D0, "Wrong size on UUnionUIGridNavigationBuilderEventHandler");
-static_assert(offsetof(UUnionUIGridNavigationBuilderEventHandler, ButtonData) == 0x000028, "Member 'UUnionUIGridNavigationBuilderEventHandler::ButtonData' has a wrong offset!");
-static_assert(offsetof(UUnionUIGridNavigationBuilderEventHandler, NavigationDirectionDelegate) == 0x000040, "Member 'UUnionUIGridNavigationBuilderEventHandler::NavigationDirectionDelegate' has a wrong offset!");
-static_assert(offsetof(UUnionUIGridNavigationBuilderEventHandler, SideNavigation) == 0x000050, "Member 'UUnionUIGridNavigationBuilderEventHandler::SideNavigation' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionUIGridNavigationBuilderEventHandler;
 
 // Class UnionUI.UnionUIGridNavigationBuilder
 // 0x00A0 (0x00C8 - 0x0028)
@@ -1483,35 +1384,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionUIGridNavigationBuilder">();
+		STATIC_CLASS_IMPL("UnionUIGridNavigationBuilder")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionUIGridNavigationBuilder")
 	}
 	static class UUnionUIGridNavigationBuilder* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionUIGridNavigationBuilder>();
 	}
 };
-static_assert(alignof(UUnionUIGridNavigationBuilder) == 0x000008, "Wrong alignment on UUnionUIGridNavigationBuilder");
-static_assert(sizeof(UUnionUIGridNavigationBuilder) == 0x0000C8, "Wrong size on UUnionUIGridNavigationBuilder");
-static_assert(offsetof(UUnionUIGridNavigationBuilder, ButtonDataList) == 0x000028, "Member 'UUnionUIGridNavigationBuilder::ButtonDataList' has a wrong offset!");
-static_assert(offsetof(UUnionUIGridNavigationBuilder, EventHandler) == 0x000038, "Member 'UUnionUIGridNavigationBuilder::EventHandler' has a wrong offset!");
-static_assert(offsetof(UUnionUIGridNavigationBuilder, SideNavigation) == 0x000048, "Member 'UUnionUIGridNavigationBuilder::SideNavigation' has a wrong offset!");
-
-// Class UnionUI.WidgetMenuFunctionLibrary
-// 0x0000 (0x0028 - 0x0028)
-class UWidgetMenuFunctionLibrary final : public UBlueprintFunctionLibrary
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"WidgetMenuFunctionLibrary">();
-	}
-	static class UWidgetMenuFunctionLibrary* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UWidgetMenuFunctionLibrary>();
-	}
-};
-static_assert(alignof(UWidgetMenuFunctionLibrary) == 0x000008, "Wrong alignment on UWidgetMenuFunctionLibrary");
-static_assert(sizeof(UWidgetMenuFunctionLibrary) == 0x000028, "Wrong size on UWidgetMenuFunctionLibrary");
+DUMPER7_ASSERTS_UUnionUIGridNavigationBuilder;
 
 // Class UnionUI.UnionUIListView
 // 0x0010 (0x0C80 - 0x0C70)
@@ -1527,19 +1411,58 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionUIListView">();
+		STATIC_CLASS_IMPL("UnionUIListView")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionUIListView")
 	}
 	static class UUnionUIListView* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionUIListView>();
 	}
 };
-static_assert(alignof(UUnionUIListView) == 0x000010, "Wrong alignment on UUnionUIListView");
-static_assert(sizeof(UUnionUIListView) == 0x000C80, "Wrong size on UUnionUIListView");
+DUMPER7_ASSERTS_UUnionUIListView;
+
+// Class UnionUI.WidgetManBaseWidget
+// 0x0080 (0x0360 - 0x02E0)
+class UWidgetManBaseWidget final : public UUserWidget
+{
+public:
+	class UCanvasPanel*                           RootPanel;                                         // 0x02E0(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 DebugString;                                       // 0x02E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              DebugInfoPosition;                                 // 0x02F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ShowDebugInfo;                                     // 0x0308(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_309[0x7];                                      // 0x0309(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSet<class UWidgetManDebugString*>            DebugStringObjectSet;                              // 0x0310(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+
+public:
+	void AddChild(class UUserWidget* ChildWidget, class UCanvasPanelSlot* ChildSlot, int32 ZOrder);
+	void AppendDebugString(const class FString& String__const);
+	void AttachDebugStringObject(class UWidgetManDebugString* DebugStringObject);
+	void ClearDebugString();
+	void DetachDebugStringObject(class UWidgetManDebugString* DebugStringObject);
+	void RemoveChild(class UUserWidget* Widget, bool* IsSucceeded);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("WidgetManBaseWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WidgetManBaseWidget")
+	}
+	static class UWidgetManBaseWidget* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UWidgetManBaseWidget>();
+	}
+};
+DUMPER7_ASSERTS_UWidgetManBaseWidget;
 
 // Class UnionUI.UnionUILoadingDisplay
 // 0x0020 (0x0300 - 0x02E0)
-class UUnionUILoadingDisplay : public UUserWidget
+class UUnionUILoadingDisplay final : public UUserWidget
 {
 public:
 	TMulticastInlineDelegate<void()>              OnLoadingEndAnimFinished;                          // 0x02E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
@@ -1558,48 +1481,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionUILoadingDisplay">();
+		STATIC_CLASS_IMPL("UnionUILoadingDisplay")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionUILoadingDisplay")
 	}
 	static class UUnionUILoadingDisplay* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionUILoadingDisplay>();
 	}
 };
-static_assert(alignof(UUnionUILoadingDisplay) == 0x000008, "Wrong alignment on UUnionUILoadingDisplay");
-static_assert(sizeof(UUnionUILoadingDisplay) == 0x000300, "Wrong size on UUnionUILoadingDisplay");
-static_assert(offsetof(UUnionUILoadingDisplay, OnLoadingEndAnimFinished) == 0x0002E0, "Member 'UUnionUILoadingDisplay::OnLoadingEndAnimFinished' has a wrong offset!");
-static_assert(offsetof(UUnionUILoadingDisplay, OnLoadingDisplayHideFinished) == 0x0002F0, "Member 'UUnionUILoadingDisplay::OnLoadingDisplayHideFinished' has a wrong offset!");
-
-// Class UnionUI.UnionUISceneCaptureManager
-// 0x0020 (0x0050 - 0x0030)
-class UUnionUISceneCaptureManager final : public UWorldSubsystem
-{
-public:
-	TArray<class AActor*>                         CaptureTargetActors;                               // 0x0030(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<class AUnionUICapture2DActor*>         UICapture2DActors;                                 // 0x0040(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
-
-public:
-	TArray<class AUnionUICapture2DActor*> GetCaptureCameraActor();
-	class AUnionUICapture2DActor* GetCaptureCameraActorByPlayerControllerIndex(const int32& PlayerControllerIndex);
-	TArray<class AActor*> GetCaptureTargetActor();
-	void RegisterCaptureCameraActor(const int32& PlayerControllerIndex, class AUnionUICapture2DActor* CaptureActor);
-	void RegisterCaptureTargetActor(const int32& PlayerControllerIndex, class AActor* CaptureActor);
-	void UnRegisterCaptureCameraActor(const int32& PlayerControllerIndex);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"UnionUISceneCaptureManager">();
-	}
-	static class UUnionUISceneCaptureManager* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UUnionUISceneCaptureManager>();
-	}
-};
-static_assert(alignof(UUnionUISceneCaptureManager) == 0x000008, "Wrong alignment on UUnionUISceneCaptureManager");
-static_assert(sizeof(UUnionUISceneCaptureManager) == 0x000050, "Wrong size on UUnionUISceneCaptureManager");
-static_assert(offsetof(UUnionUISceneCaptureManager, CaptureTargetActors) == 0x000030, "Member 'UUnionUISceneCaptureManager::CaptureTargetActors' has a wrong offset!");
-static_assert(offsetof(UUnionUISceneCaptureManager, UICapture2DActors) == 0x000040, "Member 'UUnionUISceneCaptureManager::UICapture2DActors' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionUILoadingDisplay;
 
 // Class UnionUI.UnionUILoopScrollBox
 // 0x0060 (0x0D50 - 0x0CF0)
@@ -1641,27 +1534,52 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionUILoopScrollBox">();
+		STATIC_CLASS_IMPL("UnionUILoopScrollBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionUILoopScrollBox")
 	}
 	static class UUnionUILoopScrollBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionUILoopScrollBox>();
 	}
 };
-static_assert(alignof(UUnionUILoopScrollBox) == 0x000010, "Wrong alignment on UUnionUILoopScrollBox");
-static_assert(sizeof(UUnionUILoopScrollBox) == 0x000D50, "Wrong size on UUnionUILoopScrollBox");
-static_assert(offsetof(UUnionUILoopScrollBox, ElementArr) == 0x000CE8, "Member 'UUnionUILoopScrollBox::ElementArr' has a wrong offset!");
-static_assert(offsetof(UUnionUILoopScrollBox, MoveAnim) == 0x000CF8, "Member 'UUnionUILoopScrollBox::MoveAnim' has a wrong offset!");
-static_assert(offsetof(UUnionUILoopScrollBox, ParentWidget) == 0x000D00, "Member 'UUnionUILoopScrollBox::ParentWidget' has a wrong offset!");
-static_assert(offsetof(UUnionUILoopScrollBox, LastAnimDownRight) == 0x000D08, "Member 'UUnionUILoopScrollBox::LastAnimDownRight' has a wrong offset!");
-static_assert(offsetof(UUnionUILoopScrollBox, PivotRate) == 0x000D0C, "Member 'UUnionUILoopScrollBox::PivotRate' has a wrong offset!");
-static_assert(offsetof(UUnionUILoopScrollBox, AnimRate) == 0x000D10, "Member 'UUnionUILoopScrollBox::AnimRate' has a wrong offset!");
-static_assert(offsetof(UUnionUILoopScrollBox, OffsetDir) == 0x000D14, "Member 'UUnionUILoopScrollBox::OffsetDir' has a wrong offset!");
-static_assert(offsetof(UUnionUILoopScrollBox, ScrollWidth) == 0x000D18, "Member 'UUnionUILoopScrollBox::ScrollWidth' has a wrong offset!");
-static_assert(offsetof(UUnionUILoopScrollBox, IsManualLoopSet) == 0x000D1C, "Member 'UUnionUILoopScrollBox::IsManualLoopSet' has a wrong offset!");
-static_assert(offsetof(UUnionUILoopScrollBox, ManualLoopNum) == 0x000D20, "Member 'UUnionUILoopScrollBox::ManualLoopNum' has a wrong offset!");
-static_assert(offsetof(UUnionUILoopScrollBox, OnScrollFinishedEvent) == 0x000D28, "Member 'UUnionUILoopScrollBox::OnScrollFinishedEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUILoopScrollBox, bControllable) == 0x000D40, "Member 'UUnionUILoopScrollBox::bControllable' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionUILoopScrollBox;
+
+// Class UnionUI.UnionUISequenceInterface
+// 0x0000 (0x0000 - 0x0000)
+class IUnionUISequenceInterface final
+{
+public:
+	void Begin();
+	void Close(bool bSelfRemove);
+	void Init();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("UnionUISequenceInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionUISequenceInterface")
+	}
+	static class IUnionUISequenceInterface* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<IUnionUISequenceInterface>();
+	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
+};
+DUMPER7_ASSERTS_IUnionUISequenceInterface;
 
 // Class UnionUI.UnionUIMovieTransition
 // 0x0030 (0x0310 - 0x02E0)
@@ -1683,18 +1601,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionUIMovieTransition">();
+		STATIC_CLASS_IMPL("UnionUIMovieTransition")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionUIMovieTransition")
 	}
 	static class UUnionUIMovieTransition* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionUIMovieTransition>();
 	}
 };
-static_assert(alignof(UUnionUIMovieTransition) == 0x000008, "Wrong alignment on UUnionUIMovieTransition");
-static_assert(sizeof(UUnionUIMovieTransition) == 0x000310, "Wrong size on UUnionUIMovieTransition");
-static_assert(offsetof(UUnionUIMovieTransition, OnMovieTransitionPlayStart) == 0x0002E0, "Member 'UUnionUIMovieTransition::OnMovieTransitionPlayStart' has a wrong offset!");
-static_assert(offsetof(UUnionUIMovieTransition, OnMovieTransitionPlayEnd) == 0x0002F0, "Member 'UUnionUIMovieTransition::OnMovieTransitionPlayEnd' has a wrong offset!");
-static_assert(offsetof(UUnionUIMovieTransition, OnMovieTransitionSceneChange) == 0x000300, "Member 'UUnionUIMovieTransition::OnMovieTransitionSceneChange' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionUIMovieTransition;
 
 // Class UnionUI.UnionUISceneBase
 // 0x00C8 (0x03D8 - 0x0310)
@@ -1742,28 +1660,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionUISceneBase">();
+		STATIC_CLASS_IMPL("UnionUISceneBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionUISceneBase")
 	}
 	static class UUnionUISceneBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionUISceneBase>();
 	}
 };
-static_assert(alignof(UUnionUISceneBase) == 0x000008, "Wrong alignment on UUnionUISceneBase");
-static_assert(sizeof(UUnionUISceneBase) == 0x0003D8, "Wrong size on UUnionUISceneBase");
-static_assert(offsetof(UUnionUISceneBase, OnUISceneDecisionEvent) == 0x000310, "Member 'UUnionUISceneBase::OnUISceneDecisionEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUISceneBase, OnUISceneDecisionDownEvent) == 0x000320, "Member 'UUnionUISceneBase::OnUISceneDecisionDownEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUISceneBase, OnUISceneCancelEvent) == 0x000330, "Member 'UUnionUISceneBase::OnUISceneCancelEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUISceneBase, OnUISceneCancelDownEvent) == 0x000340, "Member 'UUnionUISceneBase::OnUISceneCancelDownEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUISceneBase, OnUISceneFocusEvent) == 0x000350, "Member 'UUnionUISceneBase::OnUISceneFocusEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUISceneBase, OnUISceneUnFocusEvent) == 0x000360, "Member 'UUnionUISceneBase::OnUISceneUnFocusEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUISceneBase, OnUISceneLeftShoulderEvent) == 0x000370, "Member 'UUnionUISceneBase::OnUISceneLeftShoulderEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUISceneBase, OnUISceneRightShoulderEvent) == 0x000380, "Member 'UUnionUISceneBase::OnUISceneRightShoulderEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUISceneBase, OnUISceneFaceTopEvent) == 0x000390, "Member 'UUnionUISceneBase::OnUISceneFaceTopEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUISceneBase, OnUISceneDirectionEvent) == 0x0003A0, "Member 'UUnionUISceneBase::OnUISceneDirectionEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUISceneBase, ButtonsPanels) == 0x0003B0, "Member 'UUnionUISceneBase::ButtonsPanels' has a wrong offset!");
-static_assert(offsetof(UUnionUISceneBase, LastFocusedButtonsPanelIndex) == 0x0003C0, "Member 'UUnionUISceneBase::LastFocusedButtonsPanelIndex' has a wrong offset!");
-static_assert(offsetof(UUnionUISceneBase, LastFocusedPlayerControllerIndex_ButtonsPanelIndex) == 0x0003C8, "Member 'UUnionUISceneBase::LastFocusedPlayerControllerIndex_ButtonsPanelIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionUISceneBase;
 
 // Class UnionUI.UnionUIPopupWindowBase
 // 0x0018 (0x03F0 - 0x03D8)
@@ -1777,52 +1685,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionUIPopupWindowBase">();
+		STATIC_CLASS_IMPL("UnionUIPopupWindowBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionUIPopupWindowBase")
 	}
 	static class UUnionUIPopupWindowBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionUIPopupWindowBase>();
 	}
 };
-static_assert(alignof(UUnionUIPopupWindowBase) == 0x000008, "Wrong alignment on UUnionUIPopupWindowBase");
-static_assert(sizeof(UUnionUIPopupWindowBase) == 0x0003F0, "Wrong size on UUnionUIPopupWindowBase");
-static_assert(offsetof(UUnionUIPopupWindowBase, OnRemoveFromParent) == 0x0003D8, "Member 'UUnionUIPopupWindowBase::OnRemoveFromParent' has a wrong offset!");
-static_assert(offsetof(UUnionUIPopupWindowBase, bAutoFocusPrevWidget) == 0x0003E8, "Member 'UUnionUIPopupWindowBase::bAutoFocusPrevWidget' has a wrong offset!");
-
-// Class UnionUI.UnionUIWheelMenu
-// 0x0168 (0x0540 - 0x03D8)
-class UUnionUIWheelMenu final : public UUnionUISceneBase
-{
-public:
-	uint8                                         Pad_3D8[0x8];                                      // 0x03D8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex)> OnUISceneWheelSelectEvent; // 0x03E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMap<EWheelDirection, class UUnionUIButtonBase*> SelectDirectStamp;                              // 0x03F0(0x0050)(Edit, BlueprintVisible, ExportObject, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	class UMenuInputRecieveObject*                MenuInputReceiveObject;                            // 0x0440(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_448[0xF8];                                     // 0x0448(0x00F8)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void OnUISceneWheelSelectEvent_Impl(class UUnionUIButtonBase* UnionButton, int32 ButtonIndex);
-	void SetUpWheelParam(bool bInIsLeftTurn, float InLStickIgone, bool bInIsTopHalf, float InBitweenDeathZone);
-	void UISceneWheelMenuKeyBind(class APlayerController* InPlayerController);
-	void UISceneWheelMenuKeyUnBind(class APlayerController* InPlayerController);
-	void WheelMenuSelect_Impl(const struct FVector& InStickVector);
-	void WheelMenuSelectInput_Impl(class UObject* Object, const struct FVector2D& InStickVector);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"UnionUIWheelMenu">();
-	}
-	static class UUnionUIWheelMenu* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UUnionUIWheelMenu>();
-	}
-};
-static_assert(alignof(UUnionUIWheelMenu) == 0x000008, "Wrong alignment on UUnionUIWheelMenu");
-static_assert(sizeof(UUnionUIWheelMenu) == 0x000540, "Wrong size on UUnionUIWheelMenu");
-static_assert(offsetof(UUnionUIWheelMenu, OnUISceneWheelSelectEvent) == 0x0003E0, "Member 'UUnionUIWheelMenu::OnUISceneWheelSelectEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIWheelMenu, SelectDirectStamp) == 0x0003F0, "Member 'UUnionUIWheelMenu::SelectDirectStamp' has a wrong offset!");
-static_assert(offsetof(UUnionUIWheelMenu, MenuInputReceiveObject) == 0x000440, "Member 'UUnionUIWheelMenu::MenuInputReceiveObject' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionUIPopupWindowBase;
 
 // Class UnionUI.UnionUIPopupWindowManager
 // 0x0050 (0x0080 - 0x0030)
@@ -1834,7 +1708,7 @@ public:
 	TMulticastInlineDelegate<void()>              OnPopupWindowRemoved;                              // 0x0048(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void()>              OnPopupWindowRemovedAll;                           // 0x0058(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TArray<class UUnionUIPopupWindowBase*>        PopupWindowList;                                   // 0x0068(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate)
-	class UUnionErrorViewer*                      ErrorViewer;                                       // 0x0078(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UUnionErrorViewer*                      ErrorViewer;                                       // 0x0078(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
 
 public:
 	class UUnionUIPopupWindowBase* CreatePopupWindow(EPopupWindowType WindowType);
@@ -1846,20 +1720,49 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionUIPopupWindowManager">();
+		STATIC_CLASS_IMPL("UnionUIPopupWindowManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionUIPopupWindowManager")
 	}
 	static class UUnionUIPopupWindowManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionUIPopupWindowManager>();
 	}
 };
-static_assert(alignof(UUnionUIPopupWindowManager) == 0x000008, "Wrong alignment on UUnionUIPopupWindowManager");
-static_assert(sizeof(UUnionUIPopupWindowManager) == 0x000080, "Wrong size on UUnionUIPopupWindowManager");
-static_assert(offsetof(UUnionUIPopupWindowManager, OnPopupWindowCreated) == 0x000038, "Member 'UUnionUIPopupWindowManager::OnPopupWindowCreated' has a wrong offset!");
-static_assert(offsetof(UUnionUIPopupWindowManager, OnPopupWindowRemoved) == 0x000048, "Member 'UUnionUIPopupWindowManager::OnPopupWindowRemoved' has a wrong offset!");
-static_assert(offsetof(UUnionUIPopupWindowManager, OnPopupWindowRemovedAll) == 0x000058, "Member 'UUnionUIPopupWindowManager::OnPopupWindowRemovedAll' has a wrong offset!");
-static_assert(offsetof(UUnionUIPopupWindowManager, PopupWindowList) == 0x000068, "Member 'UUnionUIPopupWindowManager::PopupWindowList' has a wrong offset!");
-static_assert(offsetof(UUnionUIPopupWindowManager, ErrorViewer) == 0x000078, "Member 'UUnionUIPopupWindowManager::ErrorViewer' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionUIPopupWindowManager;
+
+// Class UnionUI.WidgetFunctionLibrary
+// 0x0000 (0x0028 - 0x0028)
+class UWidgetFunctionLibrary final : public UBlueprintFunctionLibrary
+{
+public:
+	static void ClipboardCopy(const class FString& str);
+	static void ClipboardPaste(class FString* Dest);
+	static class FString ConvMilliSecondToMinute(int32 Millisecond);
+	static float ConvMilliSecondToSecond(int32 Millisecond);
+	static int32 CulcDigitNumber(int32 Index_0, int32 Num);
+	static void DrawWidgetToTarget(class UTextureRenderTarget2D* Target, class UUserWidget* WidgetToRender, const struct FVector2D& DrawSize, bool UseGamma, ETextureFilter Filter, float DeltaTime);
+	static void ExportWidgetAsImage(class UUserWidget* Widget, const class FString& Filename, const struct FVector2D& DrawSize, const float Scale, const EDesiredImageFormat Format, const bool bOverwriteFile, const bool bAsync, const ETextureFilter Filter, const bool bUseGammaCorrection);
+	static void GetWidgetCenterLocation(class UWidget* Widget, class UWidget* ParentWidget, struct FVector2D* OutLocation);
+	static void GetWidgetZOrder(EWidgetZOrder Layer, int32 Priority, int32* ZOrder);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("WidgetFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WidgetFunctionLibrary")
+	}
+	static class UWidgetFunctionLibrary* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UWidgetFunctionLibrary>();
+	}
+};
+DUMPER7_ASSERTS_UWidgetFunctionLibrary;
 
 // Class UnionUI.UnionRichTextBlock
 // 0x01B0 (0x0A40 - 0x0890)
@@ -1913,36 +1816,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionRichTextBlock">();
+		STATIC_CLASS_IMPL("UnionRichTextBlock")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionRichTextBlock")
 	}
 	static class UUnionRichTextBlock* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionRichTextBlock>();
 	}
 };
-static_assert(alignof(UUnionRichTextBlock) == 0x000010, "Wrong alignment on UUnionRichTextBlock");
-static_assert(sizeof(UUnionRichTextBlock) == 0x000A40, "Wrong size on UUnionRichTextBlock");
-static_assert(offsetof(UUnionRichTextBlock, TextStyleName) == 0x000890, "Member 'UUnionRichTextBlock::TextStyleName' has a wrong offset!");
-static_assert(offsetof(UUnionRichTextBlock, WithoutXmlString) == 0x000898, "Member 'UUnionRichTextBlock::WithoutXmlString' has a wrong offset!");
-static_assert(offsetof(UUnionRichTextBlock, BaseIndex_RubyStringMap) == 0x0008A8, "Member 'UUnionRichTextBlock::BaseIndex_RubyStringMap' has a wrong offset!");
-static_assert(offsetof(UUnionRichTextBlock, BaseEnFontSize) == 0x000908, "Member 'UUnionRichTextBlock::BaseEnFontSize' has a wrong offset!");
-static_assert(offsetof(UUnionRichTextBlock, OriginalText) == 0x000910, "Member 'UUnionRichTextBlock::OriginalText' has a wrong offset!");
-static_assert(offsetof(UUnionRichTextBlock, ProcessingString) == 0x000920, "Member 'UUnionRichTextBlock::ProcessingString' has a wrong offset!");
-static_assert(offsetof(UUnionRichTextBlock, CurrentLetterIndex) == 0x000930, "Member 'UUnionRichTextBlock::CurrentLetterIndex' has a wrong offset!");
-static_assert(offsetof(UUnionRichTextBlock, CurrentOriginalLetterIndex) == 0x000934, "Member 'UUnionRichTextBlock::CurrentOriginalLetterIndex' has a wrong offset!");
-static_assert(offsetof(UUnionRichTextBlock, CurrentLineIndex) == 0x000938, "Member 'UUnionRichTextBlock::CurrentLineIndex' has a wrong offset!");
-static_assert(offsetof(UUnionRichTextBlock, CurrentSegmentIndex) == 0x00093C, "Member 'UUnionRichTextBlock::CurrentSegmentIndex' has a wrong offset!");
-static_assert(offsetof(UUnionRichTextBlock, CurrentOriginalEndIndex) == 0x000940, "Member 'UUnionRichTextBlock::CurrentOriginalEndIndex' has a wrong offset!");
-static_assert(offsetof(UUnionRichTextBlock, CurrentTaggedIndex) == 0x000944, "Member 'UUnionRichTextBlock::CurrentTaggedIndex' has a wrong offset!");
-static_assert(offsetof(UUnionRichTextBlock, OnlyTagContentLetterIndex) == 0x000948, "Member 'UUnionRichTextBlock::OnlyTagContentLetterIndex' has a wrong offset!");
-static_assert(offsetof(UUnionRichTextBlock, SegmentIndex_TaggedString) == 0x000950, "Member 'UUnionRichTextBlock::SegmentIndex_TaggedString' has a wrong offset!");
-static_assert(offsetof(UUnionRichTextBlock, bIsScrollingEnabled) == 0x0009A0, "Member 'UUnionRichTextBlock::bIsScrollingEnabled' has a wrong offset!");
-static_assert(offsetof(UUnionRichTextBlock, ScrollSpeed) == 0x0009A4, "Member 'UUnionRichTextBlock::ScrollSpeed' has a wrong offset!");
-static_assert(offsetof(UUnionRichTextBlock, ScrollStartDelay) == 0x0009A8, "Member 'UUnionRichTextBlock::ScrollStartDelay' has a wrong offset!");
-static_assert(offsetof(UUnionRichTextBlock, ScrollEndDelay) == 0x0009AC, "Member 'UUnionRichTextBlock::ScrollEndDelay' has a wrong offset!");
-static_assert(offsetof(UUnionRichTextBlock, ScrollFadeInDelay) == 0x0009B0, "Member 'UUnionRichTextBlock::ScrollFadeInDelay' has a wrong offset!");
-static_assert(offsetof(UUnionRichTextBlock, ScrollFadeOutDelay) == 0x0009B4, "Member 'UUnionRichTextBlock::ScrollFadeOutDelay' has a wrong offset!");
-static_assert(offsetof(UUnionRichTextBlock, PlayerIndex) == 0x0009B8, "Member 'UUnionRichTextBlock::PlayerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionRichTextBlock;
 
 // Class UnionUI.UnionUIRivalTransition
 // 0x0028 (0x0308 - 0x02E0)
@@ -1962,49 +1847,50 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionUIRivalTransition">();
+		STATIC_CLASS_IMPL("UnionUIRivalTransition")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionUIRivalTransition")
 	}
 	static class UUnionUIRivalTransition* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionUIRivalTransition>();
 	}
 };
-static_assert(alignof(UUnionUIRivalTransition) == 0x000008, "Wrong alignment on UUnionUIRivalTransition");
-static_assert(sizeof(UUnionUIRivalTransition) == 0x000308, "Wrong size on UUnionUIRivalTransition");
-static_assert(offsetof(UUnionUIRivalTransition, OnFinishedTransition) == 0x0002E0, "Member 'UUnionUIRivalTransition::OnFinishedTransition' has a wrong offset!");
-static_assert(offsetof(UUnionUIRivalTransition, OnFinishedTransitionEffect) == 0x0002F0, "Member 'UUnionUIRivalTransition::OnFinishedTransitionEffect' has a wrong offset!");
-static_assert(offsetof(UUnionUIRivalTransition, WS_Fire_Level) == 0x000300, "Member 'UUnionUIRivalTransition::WS_Fire_Level' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionUIRivalTransition;
 
-// Class UnionUI.UnionUISequenceInterface
-// 0x0000 (0x0000 - 0x0000)
-class IUnionUISequenceInterface final
+// Class UnionUI.UnionUISceneCaptureManager
+// 0x0020 (0x0050 - 0x0030)
+class UUnionUISceneCaptureManager final : public UWorldSubsystem
 {
 public:
-	void Begin();
-	void Close(bool bSelfRemove);
-	void Init();
+	TArray<class AActor*>                         CaptureTargetActors;                               // 0x0030(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<class AUnionUICapture2DActor*>         UICapture2DActors;                                 // 0x0040(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
+
+public:
+	TArray<class AUnionUICapture2DActor*> GetCaptureCameraActor();
+	class AUnionUICapture2DActor* GetCaptureCameraActorByPlayerControllerIndex(const int32& PlayerControllerIndex);
+	TArray<class AActor*> GetCaptureTargetActor();
+	void RegisterCaptureCameraActor(const int32& PlayerControllerIndex, class AUnionUICapture2DActor* CaptureActor);
+	void RegisterCaptureTargetActor(const int32& PlayerControllerIndex, class AActor* CaptureActor);
+	void UnRegisterCaptureCameraActor(const int32& PlayerControllerIndex);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionUISequenceInterface">();
+		STATIC_CLASS_IMPL("UnionUISceneCaptureManager")
 	}
-	static class IUnionUISequenceInterface* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<IUnionUISequenceInterface>();
+		STATIC_NAME_IMPL(L"UnionUISceneCaptureManager")
 	}
-
-	class UObject* AsUObject()
+	static class UUnionUISceneCaptureManager* GetDefaultObj()
 	{
-		return reinterpret_cast<UObject*>(this);
-	}
-	const class UObject* AsUObject() const
-	{
-		return reinterpret_cast<const UObject*>(this);
+		return GetDefaultObjImpl<UUnionUISceneCaptureManager>();
 	}
 };
-static_assert(alignof(IUnionUISequenceInterface) == 0x000001, "Wrong alignment on IUnionUISequenceInterface");
-static_assert(sizeof(IUnionUISequenceInterface) == 0x000001, "Wrong size on IUnionUISequenceInterface");
+DUMPER7_ASSERTS_UUnionUISceneCaptureManager;
 
 // Class UnionUI.UnionUITextBlock
 // 0x0000 (0x0370 - 0x0370)
@@ -2020,16 +1906,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionUITextBlock">();
+		STATIC_CLASS_IMPL("UnionUITextBlock")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionUITextBlock")
 	}
 	static class UUnionUITextBlock* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionUITextBlock>();
 	}
 };
-static_assert(alignof(UUnionUITextBlock) == 0x000010, "Wrong alignment on UUnionUITextBlock");
-static_assert(sizeof(UUnionUITextBlock) == 0x000370, "Wrong size on UUnionUITextBlock");
-static_assert(offsetof(UUnionUITextBlock, BaseEnFontSize) == 0x000368, "Member 'UUnionUITextBlock::BaseEnFontSize' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionUITextBlock;
 
 // Class UnionUI.UnionUITransitionManager
 // 0x0098 (0x00C8 - 0x0030)
@@ -2088,122 +1976,73 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UnionUITransitionManager">();
+		STATIC_CLASS_IMPL("UnionUITransitionManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionUITransitionManager")
 	}
 	static class UUnionUITransitionManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUnionUITransitionManager>();
 	}
 };
-static_assert(alignof(UUnionUITransitionManager) == 0x000008, "Wrong alignment on UUnionUITransitionManager");
-static_assert(sizeof(UUnionUITransitionManager) == 0x0000C8, "Wrong size on UUnionUITransitionManager");
-static_assert(offsetof(UUnionUITransitionManager, OnFinishedFade) == 0x000060, "Member 'UUnionUITransitionManager::OnFinishedFade' has a wrong offset!");
-static_assert(offsetof(UUnionUITransitionManager, OnFinishedSubFade) == 0x000070, "Member 'UUnionUITransitionManager::OnFinishedSubFade' has a wrong offset!");
-static_assert(offsetof(UUnionUITransitionManager, FadeWidgetRef) == 0x000080, "Member 'UUnionUITransitionManager::FadeWidgetRef' has a wrong offset!");
-static_assert(offsetof(UUnionUITransitionManager, SubFadeWidgetRef) == 0x000088, "Member 'UUnionUITransitionManager::SubFadeWidgetRef' has a wrong offset!");
-static_assert(offsetof(UUnionUITransitionManager, LastDisplayedSceneUI) == 0x000090, "Member 'UUnionUITransitionManager::LastDisplayedSceneUI' has a wrong offset!");
-static_assert(offsetof(UUnionUITransitionManager, CrossFadeWidget) == 0x000098, "Member 'UUnionUITransitionManager::CrossFadeWidget' has a wrong offset!");
-static_assert(offsetof(UUnionUITransitionManager, MovieTransitionWidget) == 0x0000A0, "Member 'UUnionUITransitionManager::MovieTransitionWidget' has a wrong offset!");
-static_assert(offsetof(UUnionUITransitionManager, LoadingDisplayWidget) == 0x0000A8, "Member 'UUnionUITransitionManager::LoadingDisplayWidget' has a wrong offset!");
-static_assert(offsetof(UUnionUITransitionManager, RivalTransitionWidget) == 0x0000B8, "Member 'UUnionUITransitionManager::RivalTransitionWidget' has a wrong offset!");
+DUMPER7_ASSERTS_UUnionUITransitionManager;
 
-// Class UnionUI.WidgetFunctionLibrary
+// Class UnionUI.UnionUIWheelMenu
+// 0x0168 (0x0540 - 0x03D8)
+class UUnionUIWheelMenu final : public UUnionUISceneBase
+{
+public:
+	uint8                                         Pad_3D8[0x8];                                      // 0x03D8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex)> OnUISceneWheelSelectEvent; // 0x03E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMap<EWheelDirection, class UUnionUIButtonBase*> SelectDirectStamp;                              // 0x03F0(0x0050)(Edit, BlueprintVisible, ExportObject, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	class UMenuInputRecieveObject*                MenuInputReceiveObject;                            // 0x0440(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	uint8                                         Pad_448[0xF8];                                     // 0x0448(0x00F8)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void OnUISceneWheelSelectEvent_Impl(class UUnionUIButtonBase* UnionButton, int32 ButtonIndex);
+	void SetUpWheelParam(bool bInIsLeftTurn, float InLStickIgone, bool bInIsTopHalf, float InBitweenDeathZone);
+	void UISceneWheelMenuKeyBind(class APlayerController* InPlayerController);
+	void UISceneWheelMenuKeyUnBind(class APlayerController* InPlayerController);
+	void WheelMenuSelect_Impl(const struct FVector& InStickVector);
+	void WheelMenuSelectInput_Impl(class UObject* Object, const struct FVector2D& InStickVector);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("UnionUIWheelMenu")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionUIWheelMenu")
+	}
+	static class UUnionUIWheelMenu* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UUnionUIWheelMenu>();
+	}
+};
+DUMPER7_ASSERTS_UUnionUIWheelMenu;
+
+// Class UnionUI.WidgetMenuFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
-class UWidgetFunctionLibrary final : public UBlueprintFunctionLibrary
+class UWidgetMenuFunctionLibrary final : public UBlueprintFunctionLibrary
 {
-public:
-	static void ClipboardCopy(const class FString& str);
-	static void ClipboardPaste(class FString* Dest);
-	static class FString ConvMilliSecondToMinute(int32 Millisecond);
-	static float ConvMilliSecondToSecond(int32 Millisecond);
-	static int32 CulcDigitNumber(int32 Index_0, int32 Num);
-	static void DrawWidgetToTarget(class UTextureRenderTarget2D* Target, class UUserWidget* WidgetToRender, const struct FVector2D& DrawSize, bool UseGamma, ETextureFilter Filter, float DeltaTime);
-	static void ExportWidgetAsImage(class UUserWidget* Widget, const class FString& Filename, const struct FVector2D& DrawSize, const float Scale, const EDesiredImageFormat Format, const bool bOverwriteFile, const bool bAsync, const ETextureFilter Filter, const bool bUseGammaCorrection);
-	static void GetWidgetCenterLocation(class UWidget* Widget, class UWidget* ParentWidget, struct FVector2D* OutLocation);
-	static void GetWidgetZOrder(EWidgetZOrder Layer, int32 Priority, int32* ZOrder);
-
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WidgetFunctionLibrary">();
+		STATIC_CLASS_IMPL("WidgetMenuFunctionLibrary")
 	}
-	static class UWidgetFunctionLibrary* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UWidgetFunctionLibrary>();
+		STATIC_NAME_IMPL(L"WidgetMenuFunctionLibrary")
+	}
+	static class UWidgetMenuFunctionLibrary* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UWidgetMenuFunctionLibrary>();
 	}
 };
-static_assert(alignof(UWidgetFunctionLibrary) == 0x000008, "Wrong alignment on UWidgetFunctionLibrary");
-static_assert(sizeof(UWidgetFunctionLibrary) == 0x000028, "Wrong size on UWidgetFunctionLibrary");
-
-// Class UnionUI.WidgetManComponent
-// 0x00D0 (0x0170 - 0x00A0)
-class UWidgetManComponent final : public UActorComponent
-{
-public:
-	TMulticastInlineDelegate<void(class UUserWidget* EventedWidget, class UObject* LogicObject)> OnLostPriority; // 0x00A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UUserWidget* EventedWidget, class UObject* LogicObject)> OnRegainPriority; // 0x00B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UUserWidget* EventedWidget, class UObject* LogicObject)> OnPushed; // 0x00C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UUserWidget* EventedWidget, class UObject* LogicObject)> OnPoped; // 0x00D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMap<EWidgetManZLayer, int32>                 ZLayerToZOrder;                                    // 0x00E0(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          CreateDebugInfo;                                   // 0x0130(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ShowDebugInfo;                                     // 0x0131(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_132[0x6];                                      // 0x0132(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              DebugInfoPosition;                                 // 0x0138(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BaseWidgetZOrder;                                  // 0x0148(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14C[0x4];                                      // 0x014C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidgetManDebugString*                  DebugStringObject;                                 // 0x0150(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UWidgetManContainer*>            WidgetStack;                                       // 0x0158(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	class UWidgetManBaseWidget*                   BaseWidget;                                        // 0x0168(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-
-public:
-	void AddWidgetToTopAsGroup(class UUserWidget* Widget, class UObject* Logic, bool* IsSucceeded);
-	void AttachDebugStringObject(class UWidgetManDebugString* DebugStringObjectRef);
-	void DetachDebugStringObject(class UWidgetManDebugString* DebugStringObjectRef);
-	void EventBeginBaseWidget();
-	void EventBeginDebug();
-	void EventBeginStack();
-	void EventDrawDebug();
-	void EventEndBaseWidget();
-	void EventEndDebug();
-	void EventEndStack();
-	void FindWidget(class UUserWidget* Widget, bool* IsFound, int32* IndexFromTop, int32* IndexInGroup);
-	void GetTopWidget(int32 Index_0, bool* IsSucceeded, class UUserWidget** Widget, bool* IsSubWidget, class UObject** Logic);
-	void GetTopWidgetCount(int32* WidgetCount);
-	void NotifyLostPriority();
-	void NotifyPoped(class UUserWidget* Widget, class UObject* Logic);
-	void NotifyPushed(class UUserWidget* Widget, class UObject* Logic);
-	void NotifyRegainPriority();
-	void PopAllWidgets();
-	void PopWidget(bool* IsSucceeded);
-	void PushSubWidget(class UUserWidget* SubWidget, class UObject* Logic);
-	int32 PushWidget(class UUserWidget* Widget, class UObject* Logic, EWidgetManZLayer ZLayer);
-	void SwapTopWidget(class UUserWidget* Widget, bool* IsSucceeded);
-	void SwapTopWidgetByIndex(int32 IndexFromTop, bool* IsSucceeded);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"WidgetManComponent">();
-	}
-	static class UWidgetManComponent* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UWidgetManComponent>();
-	}
-};
-static_assert(alignof(UWidgetManComponent) == 0x000008, "Wrong alignment on UWidgetManComponent");
-static_assert(sizeof(UWidgetManComponent) == 0x000170, "Wrong size on UWidgetManComponent");
-static_assert(offsetof(UWidgetManComponent, OnLostPriority) == 0x0000A0, "Member 'UWidgetManComponent::OnLostPriority' has a wrong offset!");
-static_assert(offsetof(UWidgetManComponent, OnRegainPriority) == 0x0000B0, "Member 'UWidgetManComponent::OnRegainPriority' has a wrong offset!");
-static_assert(offsetof(UWidgetManComponent, OnPushed) == 0x0000C0, "Member 'UWidgetManComponent::OnPushed' has a wrong offset!");
-static_assert(offsetof(UWidgetManComponent, OnPoped) == 0x0000D0, "Member 'UWidgetManComponent::OnPoped' has a wrong offset!");
-static_assert(offsetof(UWidgetManComponent, ZLayerToZOrder) == 0x0000E0, "Member 'UWidgetManComponent::ZLayerToZOrder' has a wrong offset!");
-static_assert(offsetof(UWidgetManComponent, CreateDebugInfo) == 0x000130, "Member 'UWidgetManComponent::CreateDebugInfo' has a wrong offset!");
-static_assert(offsetof(UWidgetManComponent, ShowDebugInfo) == 0x000131, "Member 'UWidgetManComponent::ShowDebugInfo' has a wrong offset!");
-static_assert(offsetof(UWidgetManComponent, DebugInfoPosition) == 0x000138, "Member 'UWidgetManComponent::DebugInfoPosition' has a wrong offset!");
-static_assert(offsetof(UWidgetManComponent, BaseWidgetZOrder) == 0x000148, "Member 'UWidgetManComponent::BaseWidgetZOrder' has a wrong offset!");
-static_assert(offsetof(UWidgetManComponent, DebugStringObject) == 0x000150, "Member 'UWidgetManComponent::DebugStringObject' has a wrong offset!");
-static_assert(offsetof(UWidgetManComponent, WidgetStack) == 0x000158, "Member 'UWidgetManComponent::WidgetStack' has a wrong offset!");
-static_assert(offsetof(UWidgetManComponent, BaseWidget) == 0x000168, "Member 'UWidgetManComponent::BaseWidget' has a wrong offset!");
+DUMPER7_ASSERTS_UWidgetMenuFunctionLibrary;
 
 // Class UnionUI.WidgetManContainer
 // 0x0040 (0x0068 - 0x0028)
@@ -2231,21 +2070,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WidgetManContainer">();
+		STATIC_CLASS_IMPL("WidgetManContainer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WidgetManContainer")
 	}
 	static class UWidgetManContainer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWidgetManContainer>();
 	}
 };
-static_assert(alignof(UWidgetManContainer) == 0x000008, "Wrong alignment on UWidgetManContainer");
-static_assert(sizeof(UWidgetManContainer) == 0x000068, "Wrong size on UWidgetManContainer");
-static_assert(offsetof(UWidgetManContainer, Logic) == 0x000028, "Member 'UWidgetManContainer::Logic' has a wrong offset!");
-static_assert(offsetof(UWidgetManContainer, WidgetArray) == 0x000030, "Member 'UWidgetManContainer::WidgetArray' has a wrong offset!");
-static_assert(offsetof(UWidgetManContainer, CanvasPanelSlotArray) == 0x000040, "Member 'UWidgetManContainer::CanvasPanelSlotArray' has a wrong offset!");
-static_assert(offsetof(UWidgetManContainer, LogicArray) == 0x000050, "Member 'UWidgetManContainer::LogicArray' has a wrong offset!");
-static_assert(offsetof(UWidgetManContainer, IsSubWidget) == 0x000060, "Member 'UWidgetManContainer::IsSubWidget' has a wrong offset!");
-static_assert(offsetof(UWidgetManContainer, ContainerZOrder) == 0x000064, "Member 'UWidgetManContainer::ContainerZOrder' has a wrong offset!");
+DUMPER7_ASSERTS_UWidgetManContainer;
 
 // Class UnionUI.WidgetManDebugString
 // 0x0058 (0x0080 - 0x0028)
@@ -2280,25 +2116,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WidgetManDebugString">();
+		STATIC_CLASS_IMPL("WidgetManDebugString")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WidgetManDebugString")
 	}
 	static class UWidgetManDebugString* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWidgetManDebugString>();
 	}
 };
-static_assert(alignof(UWidgetManDebugString) == 0x000008, "Wrong alignment on UWidgetManDebugString");
-static_assert(sizeof(UWidgetManDebugString) == 0x000080, "Wrong size on UWidgetManDebugString");
-static_assert(offsetof(UWidgetManDebugString, PositionX) == 0x000028, "Member 'UWidgetManDebugString::PositionX' has a wrong offset!");
-static_assert(offsetof(UWidgetManDebugString, DebugString) == 0x000030, "Member 'UWidgetManDebugString::DebugString' has a wrong offset!");
-static_assert(offsetof(UWidgetManDebugString, PositionY) == 0x000040, "Member 'UWidgetManDebugString::PositionY' has a wrong offset!");
-static_assert(offsetof(UWidgetManDebugString, FontSize) == 0x000044, "Member 'UWidgetManDebugString::FontSize' has a wrong offset!");
-static_assert(offsetof(UWidgetManDebugString, Color) == 0x000048, "Member 'UWidgetManDebugString::Color' has a wrong offset!");
-static_assert(offsetof(UWidgetManDebugString, ShadowColor) == 0x000058, "Member 'UWidgetManDebugString::ShadowColor' has a wrong offset!");
-static_assert(offsetof(UWidgetManDebugString, ShowHideFlag) == 0x000068, "Member 'UWidgetManDebugString::ShowHideFlag' has a wrong offset!");
-static_assert(offsetof(UWidgetManDebugString, ShadowOffsetX) == 0x00006C, "Member 'UWidgetManDebugString::ShadowOffsetX' has a wrong offset!");
-static_assert(offsetof(UWidgetManDebugString, ShadowOffsetY) == 0x000070, "Member 'UWidgetManDebugString::ShadowOffsetY' has a wrong offset!");
-static_assert(offsetof(UWidgetManDebugString, FontObject) == 0x000078, "Member 'UWidgetManDebugString::FontObject' has a wrong offset!");
+DUMPER7_ASSERTS_UWidgetManDebugString;
 
 // Class UnionUI.WidgetManLogicInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -2313,7 +2142,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WidgetManLogicInterface">();
+		STATIC_CLASS_IMPL("WidgetManLogicInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WidgetManLogicInterface")
 	}
 	static class IWidgetManLogicInterface* GetDefaultObj()
 	{
@@ -2329,8 +2162,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IWidgetManLogicInterface) == 0x000001, "Wrong alignment on IWidgetManLogicInterface");
-static_assert(sizeof(IWidgetManLogicInterface) == 0x000001, "Wrong size on IWidgetManLogicInterface");
+DUMPER7_ASSERTS_IWidgetManLogicInterface;
 
 }
 

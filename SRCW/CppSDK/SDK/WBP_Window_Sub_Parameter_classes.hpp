@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "UnionRun_structs.hpp"
 #include "UNION_classes.hpp"
+#include "UnionRun_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -51,32 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Window_Sub_Parameter_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Window_Sub_Parameter_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Window_Sub_Parameter_C")
 	}
 	static class UWBP_Window_Sub_Parameter_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Window_Sub_Parameter_C>();
 	}
 };
-static_assert(alignof(UWBP_Window_Sub_Parameter_C) == 0x000008, "Wrong alignment on UWBP_Window_Sub_Parameter_C");
-static_assert(sizeof(UWBP_Window_Sub_Parameter_C) == 0x000400, "Wrong size on UWBP_Window_Sub_Parameter_C");
-static_assert(offsetof(UWBP_Window_Sub_Parameter_C, UberGraphFrame) == 0x000380, "Member 'UWBP_Window_Sub_Parameter_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Window_Sub_Parameter_C, Bar_Blue) == 0x000388, "Member 'UWBP_Window_Sub_Parameter_C::Bar_Blue' has a wrong offset!");
-static_assert(offsetof(UWBP_Window_Sub_Parameter_C, Bar_Blue_Blink) == 0x000390, "Member 'UWBP_Window_Sub_Parameter_C::Bar_Blue_Blink' has a wrong offset!");
-static_assert(offsetof(UWBP_Window_Sub_Parameter_C, Bar_Down) == 0x000398, "Member 'UWBP_Window_Sub_Parameter_C::Bar_Down' has a wrong offset!");
-static_assert(offsetof(UWBP_Window_Sub_Parameter_C, Bar_Up) == 0x0003A0, "Member 'UWBP_Window_Sub_Parameter_C::Bar_Up' has a wrong offset!");
-static_assert(offsetof(UWBP_Window_Sub_Parameter_C, base) == 0x0003A8, "Member 'UWBP_Window_Sub_Parameter_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_Window_Sub_Parameter_C, Base_Num) == 0x0003B0, "Member 'UWBP_Window_Sub_Parameter_C::Base_Num' has a wrong offset!");
-static_assert(offsetof(UWBP_Window_Sub_Parameter_C, Cover) == 0x0003B8, "Member 'UWBP_Window_Sub_Parameter_C::Cover' has a wrong offset!");
-static_assert(offsetof(UWBP_Window_Sub_Parameter_C, DSP_PAT_UpDownArrow) == 0x0003C0, "Member 'UWBP_Window_Sub_Parameter_C::DSP_PAT_UpDownArrow' has a wrong offset!");
-static_assert(offsetof(UWBP_Window_Sub_Parameter_C, GadgetIcon) == 0x0003C8, "Member 'UWBP_Window_Sub_Parameter_C::GadgetIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Window_Sub_Parameter_C, MLC_NUM_Gadget_ParamValue) == 0x0003D0, "Member 'UWBP_Window_Sub_Parameter_C::MLC_NUM_Gadget_ParamValue' has a wrong offset!");
-static_assert(offsetof(UWBP_Window_Sub_Parameter_C, MLC_NUM_ParamValue) == 0x0003D8, "Member 'UWBP_Window_Sub_Parameter_C::MLC_NUM_ParamValue' has a wrong offset!");
-static_assert(offsetof(UWBP_Window_Sub_Parameter_C, PAT_Icon_Type) == 0x0003E0, "Member 'UWBP_Window_Sub_Parameter_C::PAT_Icon_Type' has a wrong offset!");
-static_assert(offsetof(UWBP_Window_Sub_Parameter_C, TXT_MachineType) == 0x0003E8, "Member 'UWBP_Window_Sub_Parameter_C::TXT_MachineType' has a wrong offset!");
-static_assert(offsetof(UWBP_Window_Sub_Parameter_C, WidgetSwitcher_UpDown) == 0x0003F0, "Member 'UWBP_Window_Sub_Parameter_C::WidgetSwitcher_UpDown' has a wrong offset!");
-static_assert(offsetof(UWBP_Window_Sub_Parameter_C, ParameterNumColor_Index) == 0x0003F8, "Member 'UWBP_Window_Sub_Parameter_C::ParameterNumColor_Index' has a wrong offset!");
-static_assert(offsetof(UWBP_Window_Sub_Parameter_C, ParamType) == 0x0003FC, "Member 'UWBP_Window_Sub_Parameter_C::ParamType' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Window_Sub_Parameter_C;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
@@ -53,20 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MachineSelect_Sub_CrossButton_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MachineSelect_Sub_CrossButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MachineSelect_Sub_CrossButton_C")
 	}
 	static class UWBP_MachineSelect_Sub_CrossButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MachineSelect_Sub_CrossButton_C>();
 	}
 };
-static_assert(alignof(UWBP_MachineSelect_Sub_CrossButton_C) == 0x000008, "Wrong alignment on UWBP_MachineSelect_Sub_CrossButton_C");
-static_assert(sizeof(UWBP_MachineSelect_Sub_CrossButton_C) == 0x0004C0, "Wrong size on UWBP_MachineSelect_Sub_CrossButton_C");
-static_assert(offsetof(UWBP_MachineSelect_Sub_CrossButton_C, UberGraphFrame) == 0x000488, "Member 'UWBP_MachineSelect_Sub_CrossButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_CrossButton_C, MLC_PlayerNumber) == 0x000490, "Member 'UWBP_MachineSelect_Sub_CrossButton_C::MLC_PlayerNumber' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_CrossButton_C, bEnableInput) == 0x000498, "Member 'UWBP_MachineSelect_Sub_CrossButton_C::bEnableInput' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_CrossButton_C, OnTakePicture) == 0x0004A0, "Member 'UWBP_MachineSelect_Sub_CrossButton_C::OnTakePicture' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineSelect_Sub_CrossButton_C, OnTriggerFocus) == 0x0004B0, "Member 'UWBP_MachineSelect_Sub_CrossButton_C::OnTriggerFocus' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MachineSelect_Sub_CrossButton_C;
 
 }
 

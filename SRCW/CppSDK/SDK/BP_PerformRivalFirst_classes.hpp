@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -90,50 +90,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_PerformRivalFirst_C">();
+		BP_STATIC_CLASS_IMPL("BP_PerformRivalFirst_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_PerformRivalFirst_C")
 	}
 	static class ABP_PerformRivalFirst_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_PerformRivalFirst_C>();
 	}
 };
-static_assert(alignof(ABP_PerformRivalFirst_C) == 0x000008, "Wrong alignment on ABP_PerformRivalFirst_C");
-static_assert(sizeof(ABP_PerformRivalFirst_C) == 0x0003C8, "Wrong size on ABP_PerformRivalFirst_C");
-static_assert(offsetof(ABP_PerformRivalFirst_C, UberGraphFrame) == 0x0002A0, "Member 'ABP_PerformRivalFirst_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, PlayerLevelSequenceActor) == 0x0002A8, "Member 'ABP_PerformRivalFirst_C::PlayerLevelSequenceActor' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, RivalLevelSequenceActor) == 0x0002B0, "Member 'ABP_PerformRivalFirst_C::RivalLevelSequenceActor' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, PlayerLevelSequencePlayer) == 0x0002B8, "Member 'ABP_PerformRivalFirst_C::PlayerLevelSequencePlayer' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, RivalLevelSequencePlayer) == 0x0002C0, "Member 'ABP_PerformRivalFirst_C::RivalLevelSequencePlayer' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, ScreenSlideLevelSequenceActor) == 0x0002C8, "Member 'ABP_PerformRivalFirst_C::ScreenSlideLevelSequenceActor' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, PlaySceneEvent) == 0x0002D0, "Member 'ABP_PerformRivalFirst_C::PlaySceneEvent' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, ScreenSlideLevelSequencePlayer) == 0x0002E0, "Member 'ABP_PerformRivalFirst_C::ScreenSlideLevelSequencePlayer' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, CutInUI) == 0x0002E8, "Member 'ABP_PerformRivalFirst_C::CutInUI' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, PlayerDriver) == 0x0002F0, "Member 'ABP_PerformRivalFirst_C::PlayerDriver' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, RivalDriver) == 0x0002F8, "Member 'ABP_PerformRivalFirst_C::RivalDriver' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, OnFinishedPlay) == 0x000300, "Member 'ABP_PerformRivalFirst_C::OnFinishedPlay' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, SceneCapture2D) == 0x000310, "Member 'ABP_PerformRivalFirst_C::SceneCapture2D' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, IntroductionUI) == 0x000318, "Member 'ABP_PerformRivalFirst_C::IntroductionUI' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, StartSE) == 0x000320, "Member 'ABP_PerformRivalFirst_C::StartSE' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, SubtitleUI) == 0x000328, "Member 'ABP_PerformRivalFirst_C::SubtitleUI' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, SceneDriverAnimInstance) == 0x000330, "Member 'ABP_PerformRivalFirst_C::SceneDriverAnimInstance' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, ChangedMaterial) == 0x000338, "Member 'ABP_PerformRivalFirst_C::ChangedMaterial' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, RivalCineCameraActor) == 0x000340, "Member 'ABP_PerformRivalFirst_C::RivalCineCameraActor' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, RT_Rival) == 0x000348, "Member 'ABP_PerformRivalFirst_C::RT_Rival' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, IsLoadStart) == 0x000370, "Member 'ABP_PerformRivalFirst_C::IsLoadStart' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, RivalRacerIndex) == 0x000374, "Member 'ABP_PerformRivalFirst_C::RivalRacerIndex' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, DriverDataTable) == 0x000378, "Member 'ABP_PerformRivalFirst_C::DriverDataTable' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, PlayerVoiceTable) == 0x000380, "Member 'ABP_PerformRivalFirst_C::PlayerVoiceTable' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, RivalVoiceTable) == 0x000388, "Member 'ABP_PerformRivalFirst_C::RivalVoiceTable' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, PlayerStringTableId) == 0x000390, "Member 'ABP_PerformRivalFirst_C::PlayerStringTableId' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, RivalStringTableId) == 0x000398, "Member 'ABP_PerformRivalFirst_C::RivalStringTableId' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, bIsPlayerSceneFinished) == 0x0003A0, "Member 'ABP_PerformRivalFirst_C::bIsPlayerSceneFinished' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, bIsRivalSceneFinished) == 0x0003A1, "Member 'ABP_PerformRivalFirst_C::bIsRivalSceneFinished' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, bIsPlayerVoiceFinished) == 0x0003A2, "Member 'ABP_PerformRivalFirst_C::bIsPlayerVoiceFinished' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, bIsRivalVoiceFinished) == 0x0003A3, "Member 'ABP_PerformRivalFirst_C::bIsRivalVoiceFinished' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, VoiceDelayAfterPlayback) == 0x0003A8, "Member 'ABP_PerformRivalFirst_C::VoiceDelayAfterPlayback' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, LipSyncMotions) == 0x0003B0, "Member 'ABP_PerformRivalFirst_C::LipSyncMotions' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, bSoloMode) == 0x0003B8, "Member 'ABP_PerformRivalFirst_C::bSoloMode' has a wrong offset!");
-static_assert(offsetof(ABP_PerformRivalFirst_C, OwnerSequence) == 0x0003C0, "Member 'ABP_PerformRivalFirst_C::OwnerSequence' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_PerformRivalFirst_C;
 
 }
 

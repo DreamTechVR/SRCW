@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "UnionSystem_structs.hpp"
 
 
 namespace SDK::Params
@@ -29,13 +29,7 @@ public:
 	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_VariableSet_MinimapCourseRate_ImplicitCast; // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_CourseMap_C_CalcCourseRate) == 0x000008, "Wrong alignment on WBP_Race_HUD_CourseMap_C_CalcCourseRate");
-static_assert(sizeof(WBP_Race_HUD_CourseMap_C_CalcCourseRate) == 0x000028, "Wrong size on WBP_Race_HUD_CourseMap_C_CalcCourseRate");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_CalcCourseRate, InOrthoValue) == 0x000000, "Member 'WBP_Race_HUD_CourseMap_C_CalcCourseRate::InOrthoValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_CalcCourseRate, CallFunc_Greater_DoubleDouble_ReturnValue) == 0x000008, "Member 'WBP_Race_HUD_CourseMap_C_CalcCourseRate::CallFunc_Greater_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_CalcCourseRate, CallFunc_MakeLiteralDouble_ReturnValue) == 0x000010, "Member 'WBP_Race_HUD_CourseMap_C_CalcCourseRate::CallFunc_MakeLiteralDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_CalcCourseRate, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x000018, "Member 'WBP_Race_HUD_CourseMap_C_CalcCourseRate::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_CalcCourseRate, K2Node_VariableSet_MinimapCourseRate_ImplicitCast) == 0x000020, "Member 'WBP_Race_HUD_CourseMap_C_CalcCourseRate::K2Node_VariableSet_MinimapCourseRate_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_CourseMap_C_CalcCourseRate;
 
 // Function WBP_Race_HUD_CourseMap.WBP_Race_HUD_CourseMap_C.ExecuteUbergraph_WBP_Race_HUD_CourseMap
 // 0x0118 (0x0118 - 0x0000)
@@ -79,35 +73,7 @@ public:
 	uint8                                         Pad_109[0x7];                                      // 0x0109(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_CalcCourseRate_InOrthoValue_ImplicitCast; // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap) == 0x000008, "Wrong alignment on WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap");
-static_assert(sizeof(WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap) == 0x000118, "Wrong size on WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap, EntryPoint) == 0x000000, "Member 'WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap, K2Node_Event_IsDesignTime) == 0x000004, "Member 'WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap, CallFunc_IsValidSoftObjectReference_ReturnValue) == 0x000005, "Member 'WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap::CallFunc_IsValidSoftObjectReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x000008, "Member 'WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap, K2Node_DynamicCast_As_____2D) == 0x000010, "Member 'WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap, K2Node_CustomEvent_Loaded_1) == 0x000020, "Member 'WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap::K2Node_CustomEvent_Loaded_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap, K2Node_CustomEvent_InLoadedPrimaryTextureAsset) == 0x000028, "Member 'WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap::K2Node_CustomEvent_InLoadedPrimaryTextureAsset' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap, K2Node_CustomEvent_InOrthoRatePerCourse) == 0x000050, "Member 'WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap::K2Node_CustomEvent_InOrthoRatePerCourse' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap, CallFunc_IsValidSoftObjectReference_ReturnValue_1) == 0x000058, "Member 'WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap::CallFunc_IsValidSoftObjectReference_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap, K2Node_CreateDelegate_OutputDelegate) == 0x00005C, "Member 'WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap, K2Node_Event_CourseTexture) == 0x000070, "Member 'WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap::K2Node_Event_CourseTexture' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap, K2Node_Event_InOrthoRate) == 0x000098, "Member 'WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap::K2Node_Event_InOrthoRate' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap, K2Node_Event_InAngle) == 0x00009C, "Member 'WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap::K2Node_Event_InAngle' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap, K2Node_Event_InOffset) == 0x0000A0, "Member 'WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap::K2Node_Event_InOffset' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap, Temp_object_Variable) == 0x0000B8, "Member 'WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap, CallFunc_IsValid_ReturnValue) == 0x0000C0, "Member 'WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap, K2Node_DynamicCast_As_____2D_1) == 0x0000C8, "Member 'WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap::K2Node_DynamicCast_As_____2D_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap, K2Node_DynamicCast_bSuccess_1) == 0x0000D0, "Member 'WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap, CallFunc_IsValidSoftObjectReference_ReturnValue_2) == 0x0000D1, "Member 'WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap::CallFunc_IsValidSoftObjectReference_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap, K2Node_CreateDelegate_OutputDelegate_1) == 0x0000D4, "Member 'WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap, K2Node_CustomEvent_Loaded) == 0x0000E8, "Member 'WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap::K2Node_CustomEvent_Loaded' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap, Temp_object_Variable_1) == 0x0000F0, "Member 'WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap, CallFunc_IsValid_ReturnValue_1) == 0x0000F8, "Member 'WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap, K2Node_DynamicCast_As_____2D_2) == 0x000100, "Member 'WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap::K2Node_DynamicCast_As_____2D_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap, K2Node_DynamicCast_bSuccess_2) == 0x000108, "Member 'WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap, CallFunc_CalcCourseRate_InOrthoValue_ImplicitCast) == 0x000110, "Member 'WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap::CallFunc_CalcCourseRate_InOrthoValue_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_CourseMap_C_ExecuteUbergraph_WBP_Race_HUD_CourseMap;
 
 // Function WBP_Race_HUD_CourseMap.WBP_Race_HUD_CourseMap_C.GetGroupColor
 // 0x00C8 (0x00C8 - 0x0000)
@@ -141,29 +107,7 @@ public:
 	uint8                                         Pad_B1[0x3];                                       // 0x00B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           CallFunc_Conv_ColorToLinearColor_ReturnValue_1;    // 0x00B4(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_CourseMap_C_GetGroupColor) == 0x000008, "Wrong alignment on WBP_Race_HUD_CourseMap_C_GetGroupColor");
-static_assert(sizeof(WBP_Race_HUD_CourseMap_C_GetGroupColor) == 0x0000C8, "Wrong size on WBP_Race_HUD_CourseMap_C_GetGroupColor");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_GetGroupColor, GouupIndex) == 0x000000, "Member 'WBP_Race_HUD_CourseMap_C_GetGroupColor::GouupIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_GetGroupColor, ReturnValue) == 0x000004, "Member 'WBP_Race_HUD_CourseMap_C_GetGroupColor::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_GetGroupColor, CallFunc_MakeLiteralByte_ReturnValue) == 0x000014, "Member 'WBP_Race_HUD_CourseMap_C_GetGroupColor::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_GetGroupColor, CallFunc_GetGroupColorId_ReturnValue) == 0x000015, "Member 'WBP_Race_HUD_CourseMap_C_GetGroupColor::CallFunc_GetGroupColorId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_GetGroupColor, CallFunc_GetEnumeratorName_ReturnValue) == 0x000018, "Member 'WBP_Race_HUD_CourseMap_C_GetGroupColor::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_GetGroupColor, CallFunc_GetEnumeratorName_ReturnValue_1) == 0x000020, "Member 'WBP_Race_HUD_CourseMap_C_GetGroupColor::CallFunc_GetEnumeratorName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_GetGroupColor, CallFunc_GetDataTableRowFromName_OutRow) == 0x000028, "Member 'WBP_Race_HUD_CourseMap_C_GetGroupColor::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_GetGroupColor, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000048, "Member 'WBP_Race_HUD_CourseMap_C_GetGroupColor::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_GetGroupColor, CallFunc_GetGroupColor_ReturnValue) == 0x00004C, "Member 'WBP_Race_HUD_CourseMap_C_GetGroupColor::CallFunc_GetGroupColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_GetGroupColor, Temp_int_Variable) == 0x00005C, "Member 'WBP_Race_HUD_CourseMap_C_GetGroupColor::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_GetGroupColor, CallFunc_Conv_ColorToLinearColor_ReturnValue) == 0x000060, "Member 'WBP_Race_HUD_CourseMap_C_GetGroupColor::CallFunc_Conv_ColorToLinearColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_GetGroupColor, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x000070, "Member 'WBP_Race_HUD_CourseMap_C_GetGroupColor::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_GetGroupColor, CallFunc_MakeLiteralByte_ReturnValue_1) == 0x000071, "Member 'WBP_Race_HUD_CourseMap_C_GetGroupColor::CallFunc_MakeLiteralByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_GetGroupColor, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000072, "Member 'WBP_Race_HUD_CourseMap_C_GetGroupColor::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_GetGroupColor, CallFunc_GetEnumeratorName_ReturnValue_2) == 0x000074, "Member 'WBP_Race_HUD_CourseMap_C_GetGroupColor::CallFunc_GetEnumeratorName_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_GetGroupColor, CallFunc_MakeLiteralByte_ReturnValue_2) == 0x00007C, "Member 'WBP_Race_HUD_CourseMap_C_GetGroupColor::CallFunc_MakeLiteralByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_GetGroupColor, CallFunc_GetEnumeratorName_ReturnValue_3) == 0x000080, "Member 'WBP_Race_HUD_CourseMap_C_GetGroupColor::CallFunc_GetEnumeratorName_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_GetGroupColor, K2Node_Select_Default) == 0x000088, "Member 'WBP_Race_HUD_CourseMap_C_GetGroupColor::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_GetGroupColor, CallFunc_GetDataTableRowFromName_OutRow_1) == 0x000090, "Member 'WBP_Race_HUD_CourseMap_C_GetGroupColor::CallFunc_GetDataTableRowFromName_OutRow_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_GetGroupColor, CallFunc_GetDataTableRowFromName_ReturnValue_1) == 0x0000B0, "Member 'WBP_Race_HUD_CourseMap_C_GetGroupColor::CallFunc_GetDataTableRowFromName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_GetGroupColor, CallFunc_Conv_ColorToLinearColor_ReturnValue_1) == 0x0000B4, "Member 'WBP_Race_HUD_CourseMap_C_GetGroupColor::CallFunc_Conv_ColorToLinearColor_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_CourseMap_C_GetGroupColor;
 
 // Function WBP_Race_HUD_CourseMap.WBP_Race_HUD_CourseMap_C.OnLoaded_2734C97647CC07CC458348BACAE44190
 // 0x0008 (0x0008 - 0x0000)
@@ -172,9 +116,7 @@ struct WBP_Race_HUD_CourseMap_C_OnLoaded_2734C97647CC07CC458348BACAE44190 final
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_CourseMap_C_OnLoaded_2734C97647CC07CC458348BACAE44190) == 0x000008, "Wrong alignment on WBP_Race_HUD_CourseMap_C_OnLoaded_2734C97647CC07CC458348BACAE44190");
-static_assert(sizeof(WBP_Race_HUD_CourseMap_C_OnLoaded_2734C97647CC07CC458348BACAE44190) == 0x000008, "Wrong size on WBP_Race_HUD_CourseMap_C_OnLoaded_2734C97647CC07CC458348BACAE44190");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_OnLoaded_2734C97647CC07CC458348BACAE44190, Loaded) == 0x000000, "Member 'WBP_Race_HUD_CourseMap_C_OnLoaded_2734C97647CC07CC458348BACAE44190::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_CourseMap_C_OnLoaded_2734C97647CC07CC458348BACAE44190;
 
 // Function WBP_Race_HUD_CourseMap.WBP_Race_HUD_CourseMap_C.OnLoaded_3373138B4097631D9D5970993F01FC16
 // 0x0008 (0x0008 - 0x0000)
@@ -183,9 +125,7 @@ struct WBP_Race_HUD_CourseMap_C_OnLoaded_3373138B4097631D9D5970993F01FC16 final
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_CourseMap_C_OnLoaded_3373138B4097631D9D5970993F01FC16) == 0x000008, "Wrong alignment on WBP_Race_HUD_CourseMap_C_OnLoaded_3373138B4097631D9D5970993F01FC16");
-static_assert(sizeof(WBP_Race_HUD_CourseMap_C_OnLoaded_3373138B4097631D9D5970993F01FC16) == 0x000008, "Wrong size on WBP_Race_HUD_CourseMap_C_OnLoaded_3373138B4097631D9D5970993F01FC16");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_OnLoaded_3373138B4097631D9D5970993F01FC16, Loaded) == 0x000000, "Member 'WBP_Race_HUD_CourseMap_C_OnLoaded_3373138B4097631D9D5970993F01FC16::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_CourseMap_C_OnLoaded_3373138B4097631D9D5970993F01FC16;
 
 // Function WBP_Race_HUD_CourseMap.WBP_Race_HUD_CourseMap_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -194,9 +134,7 @@ struct WBP_Race_HUD_CourseMap_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_CourseMap_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_Race_HUD_CourseMap_C_PreConstruct");
-static_assert(sizeof(WBP_Race_HUD_CourseMap_C_PreConstruct) == 0x000001, "Wrong size on WBP_Race_HUD_CourseMap_C_PreConstruct");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_Race_HUD_CourseMap_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_CourseMap_C_PreConstruct;
 
 // Function WBP_Race_HUD_CourseMap.WBP_Race_HUD_CourseMap_C.SetCourseSetting
 // 0x0048 (0x0048 - 0x0000)
@@ -208,12 +146,7 @@ public:
 	float                                         InAngle;                                           // 0x002C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                InOffset;                                          // 0x0030(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_CourseMap_C_SetCourseSetting) == 0x000008, "Wrong alignment on WBP_Race_HUD_CourseMap_C_SetCourseSetting");
-static_assert(sizeof(WBP_Race_HUD_CourseMap_C_SetCourseSetting) == 0x000048, "Wrong size on WBP_Race_HUD_CourseMap_C_SetCourseSetting");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_SetCourseSetting, CourseTexture) == 0x000000, "Member 'WBP_Race_HUD_CourseMap_C_SetCourseSetting::CourseTexture' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_SetCourseSetting, InOrthoRate) == 0x000028, "Member 'WBP_Race_HUD_CourseMap_C_SetCourseSetting::InOrthoRate' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_SetCourseSetting, InAngle) == 0x00002C, "Member 'WBP_Race_HUD_CourseMap_C_SetCourseSetting::InAngle' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_SetCourseSetting, InOffset) == 0x000030, "Member 'WBP_Race_HUD_CourseMap_C_SetCourseSetting::InOffset' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_CourseMap_C_SetCourseSetting;
 
 // Function WBP_Race_HUD_CourseMap.WBP_Race_HUD_CourseMap_C.SetCourseTextureAndOrthoRate
 // 0x0030 (0x0030 - 0x0000)
@@ -223,10 +156,7 @@ public:
 	TSoftObjectPtr<class UObject>                 InLoadedPrimaryTextureAsset;                       // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	double                                        InOrthoRatePerCourse;                              // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_CourseMap_C_SetCourseTextureAndOrthoRate) == 0x000008, "Wrong alignment on WBP_Race_HUD_CourseMap_C_SetCourseTextureAndOrthoRate");
-static_assert(sizeof(WBP_Race_HUD_CourseMap_C_SetCourseTextureAndOrthoRate) == 0x000030, "Wrong size on WBP_Race_HUD_CourseMap_C_SetCourseTextureAndOrthoRate");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_SetCourseTextureAndOrthoRate, InLoadedPrimaryTextureAsset) == 0x000000, "Member 'WBP_Race_HUD_CourseMap_C_SetCourseTextureAndOrthoRate::InLoadedPrimaryTextureAsset' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_CourseMap_C_SetCourseTextureAndOrthoRate, InOrthoRatePerCourse) == 0x000028, "Member 'WBP_Race_HUD_CourseMap_C_SetCourseTextureAndOrthoRate::InOrthoRatePerCourse' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_CourseMap_C_SetCourseTextureAndOrthoRate;
 
 }
 

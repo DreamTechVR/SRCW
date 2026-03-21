@@ -48,31 +48,7 @@ public:
 	class FText                                   CallFunc_Map_Find_Value;                           // 0x0070(0x0010)()
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp) == 0x000008, "Wrong alignment on WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp");
-static_assert(sizeof(WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp) == 0x000088, "Wrong size on WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp");
-static_assert(offsetof(WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp, EntryPoint) == 0x000000, "Member 'WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp, CallFunc_SoundPlay_ReturnValue) == 0x000024, "Member 'WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp, CallFunc_SoundPlay_ReturnValue_1) == 0x000028, "Member 'WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp, K2Node_Event_PrevRank) == 0x00002C, "Member 'WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp::K2Node_Event_PrevRank' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp, K2Node_Event_LatestRank) == 0x000030, "Member 'WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp::K2Node_Event_LatestRank' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp, CallFunc_Conv_IntToByte_ReturnValue) == 0x000034, "Member 'WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp, CallFunc_IsValid_ReturnValue) == 0x000035, "Member 'WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp, CallFunc_GetValidValue_ReturnValue) == 0x000036, "Member 'WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp, CallFunc_Conv_IntToByte_ReturnValue_1) == 0x000037, "Member 'WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp::CallFunc_Conv_IntToByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp, CallFunc_GetValidValue_ReturnValue_1) == 0x000038, "Member 'WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp::CallFunc_GetValidValue_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp, CallFunc_CreatePlayAnimationProxyObject_Result) == 0x000040, "Member 'WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp::CallFunc_CreatePlayAnimationProxyObject_Result' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp, CallFunc_CreatePlayAnimationProxyObject_ReturnValue) == 0x000048, "Member 'WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp::CallFunc_CreatePlayAnimationProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp, CallFunc_IsValid_ReturnValue_1) == 0x000050, "Member 'WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp, CallFunc_CreatePlayAnimationProxyObject_Result_1) == 0x000058, "Member 'WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp::CallFunc_CreatePlayAnimationProxyObject_Result_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp, CallFunc_CreatePlayAnimationProxyObject_ReturnValue_1) == 0x000060, "Member 'WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp::CallFunc_CreatePlayAnimationProxyObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp, CallFunc_SoundPlay_ReturnValue_2) == 0x000068, "Member 'WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp::CallFunc_SoundPlay_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp, CallFunc_IsValid_ReturnValue_2) == 0x00006C, "Member 'WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp, K2Node_SwitchEnum_CmpSuccess) == 0x00006D, "Member 'WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp, CallFunc_IsValid_ReturnValue_3) == 0x00006E, "Member 'WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp, CallFunc_Map_Find_Value) == 0x000070, "Member 'WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp, CallFunc_Map_Find_ReturnValue) == 0x000080, "Member 'WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ResultLegend_Sub_GradeUp_C_ExecuteUbergraph_WBP_ResultLegend_Sub_GradeUp;
 
 // Function WBP_ResultLegend_Sub_GradeUp.WBP_ResultLegend_Sub_GradeUp_C.SetupRankUpInfo
 // 0x0008 (0x0008 - 0x0000)
@@ -82,10 +58,7 @@ public:
 	int32                                         PrevRank;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         LatestRank;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ResultLegend_Sub_GradeUp_C_SetupRankUpInfo) == 0x000004, "Wrong alignment on WBP_ResultLegend_Sub_GradeUp_C_SetupRankUpInfo");
-static_assert(sizeof(WBP_ResultLegend_Sub_GradeUp_C_SetupRankUpInfo) == 0x000008, "Wrong size on WBP_ResultLegend_Sub_GradeUp_C_SetupRankUpInfo");
-static_assert(offsetof(WBP_ResultLegend_Sub_GradeUp_C_SetupRankUpInfo, PrevRank) == 0x000000, "Member 'WBP_ResultLegend_Sub_GradeUp_C_SetupRankUpInfo::PrevRank' has a wrong offset!");
-static_assert(offsetof(WBP_ResultLegend_Sub_GradeUp_C_SetupRankUpInfo, LatestRank) == 0x000004, "Member 'WBP_ResultLegend_Sub_GradeUp_C_SetupRankUpInfo::LatestRank' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ResultLegend_Sub_GradeUp_C_SetupRankUpInfo;
 
 }
 

@@ -60,35 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_EntryRacers_C">();
+		BP_STATIC_CLASS_IMPL("BP_EntryRacers_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_EntryRacers_C")
 	}
 	static class ABP_EntryRacers_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_EntryRacers_C>();
 	}
 };
-static_assert(alignof(ABP_EntryRacers_C) == 0x000008, "Wrong alignment on ABP_EntryRacers_C");
-static_assert(sizeof(ABP_EntryRacers_C) == 0x000480, "Wrong size on ABP_EntryRacers_C");
-static_assert(offsetof(ABP_EntryRacers_C, UberGraphFrame) == 0x000338, "Member 'ABP_EntryRacers_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_EntryRacers_C, RingIdArray) == 0x000340, "Member 'ABP_EntryRacers_C::RingIdArray' has a wrong offset!");
-static_assert(offsetof(ABP_EntryRacers_C, CarIdArray) == 0x000350, "Member 'ABP_EntryRacers_C::CarIdArray' has a wrong offset!");
-static_assert(offsetof(ABP_EntryRacers_C, DriverIdArray) == 0x000360, "Member 'ABP_EntryRacers_C::DriverIdArray' has a wrong offset!");
-static_assert(offsetof(ABP_EntryRacers_C, CameraId) == 0x000370, "Member 'ABP_EntryRacers_C::CameraId' has a wrong offset!");
-static_assert(offsetof(ABP_EntryRacers_C, RingForLoad) == 0x000388, "Member 'ABP_EntryRacers_C::RingForLoad' has a wrong offset!");
-static_assert(offsetof(ABP_EntryRacers_C, OnFinishedPlay) == 0x000390, "Member 'ABP_EntryRacers_C::OnFinishedPlay' has a wrong offset!");
-static_assert(offsetof(ABP_EntryRacers_C, TempSceneDriver) == 0x0003A0, "Member 'ABP_EntryRacers_C::TempSceneDriver' has a wrong offset!");
-static_assert(offsetof(ABP_EntryRacers_C, ParentIdArray) == 0x0003A8, "Member 'ABP_EntryRacers_C::ParentIdArray' has a wrong offset!");
-static_assert(offsetof(ABP_EntryRacers_C, ParentActors) == 0x0003B8, "Member 'ABP_EntryRacers_C::ParentActors' has a wrong offset!");
-static_assert(offsetof(ABP_EntryRacers_C, RingActors) == 0x0003C8, "Member 'ABP_EntryRacers_C::RingActors' has a wrong offset!");
-static_assert(offsetof(ABP_EntryRacers_C, MainRingId) == 0x0003D8, "Member 'ABP_EntryRacers_C::MainRingId' has a wrong offset!");
-static_assert(offsetof(ABP_EntryRacers_C, MainCarId) == 0x0003F0, "Member 'ABP_EntryRacers_C::MainCarId' has a wrong offset!");
-static_assert(offsetof(ABP_EntryRacers_C, MainDriverId) == 0x000408, "Member 'ABP_EntryRacers_C::MainDriverId' has a wrong offset!");
-static_assert(offsetof(ABP_EntryRacers_C, MainParent) == 0x000420, "Member 'ABP_EntryRacers_C::MainParent' has a wrong offset!");
-static_assert(offsetof(ABP_EntryRacers_C, Root) == 0x000438, "Member 'ABP_EntryRacers_C::Root' has a wrong offset!");
-static_assert(offsetof(ABP_EntryRacers_C, VoltageMax) == 0x000450, "Member 'ABP_EntryRacers_C::VoltageMax' has a wrong offset!");
-static_assert(offsetof(ABP_EntryRacers_C, bGroupRaceRule) == 0x000458, "Member 'ABP_EntryRacers_C::bGroupRaceRule' has a wrong offset!");
-static_assert(offsetof(ABP_EntryRacers_C, OnFinishedUI) == 0x000460, "Member 'ABP_EntryRacers_C::OnFinishedUI' has a wrong offset!");
-static_assert(offsetof(ABP_EntryRacers_C, DriverAnimationAssets) == 0x000470, "Member 'ABP_EntryRacers_C::DriverAnimationAssets' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_EntryRacers_C;
 
 }
 

@@ -10,17 +10,17 @@
 
 #include "Basic.hpp"
 
+#include "UNION_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UnionLib_structs.hpp"
-#include "UNION_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BPC_TimeTrialSelectCourse.BPC_TimeTrialSelectCourse_C
-// 0x0110 (0x02E0 - 0x01D0)
+// 0x0108 (0x02D8 - 0x01D0)
 class UBPC_TimeTrialSelectCourse_C final : public UTimeTrialSelectCourseState
 {
 public:
@@ -47,9 +47,8 @@ public:
 	class ABP_TimeTrialSequence_C*                TimeTrialSequence;                                 // 0x02B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                TargetTimePerStageSuperSonicSpeedDataTarble;       // 0x02B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                TargetTimePerStageSonicSpeedDataTarble_0;          // 0x02C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                RankRatioDataTarble;                               // 0x02C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Popup_Window_Hint_C*               TipsWindow;                                        // 0x02D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	EHintId                                       OpenTipsId;                                        // 0x02D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Popup_Window_Hint_C*               TipsWindow;                                        // 0x02C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EHintId                                       OpenTipsId;                                        // 0x02D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void _OnSpecialPressedEvent_Event(class UObject* Object);
@@ -81,38 +80,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_TimeTrialSelectCourse_C">();
+		BP_STATIC_CLASS_IMPL("BPC_TimeTrialSelectCourse_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_TimeTrialSelectCourse_C")
 	}
 	static class UBPC_TimeTrialSelectCourse_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_TimeTrialSelectCourse_C>();
 	}
 };
-static_assert(alignof(UBPC_TimeTrialSelectCourse_C) == 0x000008, "Wrong alignment on UBPC_TimeTrialSelectCourse_C");
-static_assert(sizeof(UBPC_TimeTrialSelectCourse_C) == 0x0002E0, "Wrong size on UBPC_TimeTrialSelectCourse_C");
-static_assert(offsetof(UBPC_TimeTrialSelectCourse_C, UberGraphFrame) == 0x0001D0, "Member 'UBPC_TimeTrialSelectCourse_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialSelectCourse_C, Footer) == 0x0001D8, "Member 'UBPC_TimeTrialSelectCourse_C::Footer' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialSelectCourse_C, CourseSelectWidgetClassRef) == 0x0001E0, "Member 'UBPC_TimeTrialSelectCourse_C::CourseSelectWidgetClassRef' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialSelectCourse_C, bSelected) == 0x000208, "Member 'UBPC_TimeTrialSelectCourse_C::bSelected' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialSelectCourse_C, LastRegisterd) == 0x000210, "Member 'UBPC_TimeTrialSelectCourse_C::LastRegisterd' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialSelectCourse_C, LastRegisterdSubMenus) == 0x000218, "Member 'UBPC_TimeTrialSelectCourse_C::LastRegisterdSubMenus' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialSelectCourse_C, TimeTrialSubModeSelect) == 0x000228, "Member 'UBPC_TimeTrialSelectCourse_C::TimeTrialSubModeSelect' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialSelectCourse_C, bGoToClassSelect) == 0x000230, "Member 'UBPC_TimeTrialSelectCourse_C::bGoToClassSelect' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialSelectCourse_C, OnlineReadyWidget) == 0x000238, "Member 'UBPC_TimeTrialSelectCourse_C::OnlineReadyWidget' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialSelectCourse_C, OfflineReadyWidget) == 0x000240, "Member 'UBPC_TimeTrialSelectCourse_C::OfflineReadyWidget' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialSelectCourse_C, NormalReadyWidget) == 0x000248, "Member 'UBPC_TimeTrialSelectCourse_C::NormalReadyWidget' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialSelectCourse_C, SubInputReciever) == 0x000250, "Member 'UBPC_TimeTrialSelectCourse_C::SubInputReciever' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialSelectCourse_C, bStartPressed) == 0x000258, "Member 'UBPC_TimeTrialSelectCourse_C::bStartPressed' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialSelectCourse_C, bRightShoulderPressed) == 0x000259, "Member 'UBPC_TimeTrialSelectCourse_C::bRightShoulderPressed' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialSelectCourse_C, bLeftShoulderPressed) == 0x00025A, "Member 'UBPC_TimeTrialSelectCourse_C::bLeftShoulderPressed' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialSelectCourse_C, CurrentDebugLevel) == 0x00025C, "Member 'UBPC_TimeTrialSelectCourse_C::CurrentDebugLevel' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialSelectCourse_C, Level_Persent) == 0x000260, "Member 'UBPC_TimeTrialSelectCourse_C::Level_Persent' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialSelectCourse_C, TimeTrialSequence) == 0x0002B0, "Member 'UBPC_TimeTrialSelectCourse_C::TimeTrialSequence' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialSelectCourse_C, TargetTimePerStageSuperSonicSpeedDataTarble) == 0x0002B8, "Member 'UBPC_TimeTrialSelectCourse_C::TargetTimePerStageSuperSonicSpeedDataTarble' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialSelectCourse_C, TargetTimePerStageSonicSpeedDataTarble_0) == 0x0002C0, "Member 'UBPC_TimeTrialSelectCourse_C::TargetTimePerStageSonicSpeedDataTarble_0' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialSelectCourse_C, RankRatioDataTarble) == 0x0002C8, "Member 'UBPC_TimeTrialSelectCourse_C::RankRatioDataTarble' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialSelectCourse_C, TipsWindow) == 0x0002D0, "Member 'UBPC_TimeTrialSelectCourse_C::TipsWindow' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialSelectCourse_C, OpenTipsId) == 0x0002D8, "Member 'UBPC_TimeTrialSelectCourse_C::OpenTipsId' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_TimeTrialSelectCourse_C;
 
 }
 

@@ -34,20 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C">();
+		BP_STATIC_CLASS_IMPL("WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C")
 	}
 	static class UWBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C>();
 	}
 };
-static_assert(alignof(UWBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C) == 0x000008, "Wrong alignment on UWBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C");
-static_assert(sizeof(UWBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C) == 0x000398, "Wrong size on UWBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C, DMY_GadgetPlate) == 0x0002E0, "Member 'UWBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C::DMY_GadgetPlate' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C, TXT_GadgetType) == 0x0002E8, "Member 'UWBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C::TXT_GadgetType' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C, WBP_Race_HUD_Sub_GadgetIcon_Simple) == 0x0002F0, "Member 'UWBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C::WBP_Race_HUD_Sub_GadgetIcon_Simple' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C, PlateMap) == 0x0002F8, "Member 'UWBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C::PlateMap' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C, RowNameMap) == 0x000348, "Member 'UWBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C::RowNameMap' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_PartyRace_RivalTeamSelect_Sub_GadgetPlate_C;
 
 }
 

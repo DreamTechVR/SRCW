@@ -28,18 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BacktraceOnCrashpadSettings">();
+		STATIC_CLASS_IMPL("BacktraceOnCrashpadSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BacktraceOnCrashpadSettings")
 	}
 	static class UBacktraceOnCrashpadSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBacktraceOnCrashpadSettings>();
 	}
 };
-static_assert(alignof(UBacktraceOnCrashpadSettings) == 0x000008, "Wrong alignment on UBacktraceOnCrashpadSettings");
-static_assert(sizeof(UBacktraceOnCrashpadSettings) == 0x000068, "Wrong size on UBacktraceOnCrashpadSettings");
-static_assert(offsetof(UBacktraceOnCrashpadSettings, BacktraceURL) == 0x000038, "Member 'UBacktraceOnCrashpadSettings::BacktraceURL' has a wrong offset!");
-static_assert(offsetof(UBacktraceOnCrashpadSettings, BacktraceToken) == 0x000048, "Member 'UBacktraceOnCrashpadSettings::BacktraceToken' has a wrong offset!");
-static_assert(offsetof(UBacktraceOnCrashpadSettings, CrashpadDatabasePath) == 0x000058, "Member 'UBacktraceOnCrashpadSettings::CrashpadDatabasePath' has a wrong offset!");
+DUMPER7_ASSERTS_UBacktraceOnCrashpadSettings;
 
 }
 

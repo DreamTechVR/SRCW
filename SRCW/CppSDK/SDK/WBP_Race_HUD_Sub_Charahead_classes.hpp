@@ -11,15 +11,15 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Race_HUD_Sub_Charahead.WBP_Race_HUD_Sub_Charahead_C
-// 0x0028 (0x0310 - 0x02E8)
+// 0x0068 (0x0350 - 0x02E8)
 class UWBP_Race_HUD_Sub_Charahead_C final : public URaceUISubPlayerName
 {
 public:
@@ -28,6 +28,11 @@ public:
 	class UWBP_Race_HUD_Sub_Charahead_Player_C*   WBP_Race_HUD_Sub_Charahead_Player;                 // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetSwitcher*                        WidgetSwitcher_CharaHead;                          // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          IsRival;                                           // 0x0308(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_309[0x7];                                      // 0x0309(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Player1PNumText;                                   // 0x0310(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                   Player2PNumText;                                   // 0x0320(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                   Player3PNumText;                                   // 0x0330(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                   Player4PNumText;                                   // 0x0340(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead(int32 EntryPoint);
@@ -44,20 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_HUD_Sub_Charahead_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_HUD_Sub_Charahead_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_HUD_Sub_Charahead_C")
 	}
 	static class UWBP_Race_HUD_Sub_Charahead_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_HUD_Sub_Charahead_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_HUD_Sub_Charahead_C) == 0x000008, "Wrong alignment on UWBP_Race_HUD_Sub_Charahead_C");
-static_assert(sizeof(UWBP_Race_HUD_Sub_Charahead_C) == 0x000310, "Wrong size on UWBP_Race_HUD_Sub_Charahead_C");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Charahead_C, UberGraphFrame) == 0x0002E8, "Member 'UWBP_Race_HUD_Sub_Charahead_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Charahead_C, WBP_Race_HUD_Sub_Charahead_CPU) == 0x0002F0, "Member 'UWBP_Race_HUD_Sub_Charahead_C::WBP_Race_HUD_Sub_Charahead_CPU' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Charahead_C, WBP_Race_HUD_Sub_Charahead_Player) == 0x0002F8, "Member 'UWBP_Race_HUD_Sub_Charahead_C::WBP_Race_HUD_Sub_Charahead_Player' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Charahead_C, WidgetSwitcher_CharaHead) == 0x000300, "Member 'UWBP_Race_HUD_Sub_Charahead_C::WidgetSwitcher_CharaHead' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Charahead_C, IsRival) == 0x000308, "Member 'UWBP_Race_HUD_Sub_Charahead_C::IsRival' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_HUD_Sub_Charahead_C;
 
 }
 

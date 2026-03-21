@@ -23,15 +23,18 @@ class ULS_PerformRival_ScreenSlide_DirectorBP_C final : public ULevelSequenceDir
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LS_PerformRival_ScreenSlide_DirectorBP_C">();
+		BP_STATIC_CLASS_IMPL("LS_PerformRival_ScreenSlide_DirectorBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LS_PerformRival_ScreenSlide_DirectorBP_C")
 	}
 	static class ULS_PerformRival_ScreenSlide_DirectorBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULS_PerformRival_ScreenSlide_DirectorBP_C>();
 	}
 };
-static_assert(alignof(ULS_PerformRival_ScreenSlide_DirectorBP_C) == 0x000008, "Wrong alignment on ULS_PerformRival_ScreenSlide_DirectorBP_C");
-static_assert(sizeof(ULS_PerformRival_ScreenSlide_DirectorBP_C) == 0x000048, "Wrong size on ULS_PerformRival_ScreenSlide_DirectorBP_C");
+DUMPER7_ASSERTS_ULS_PerformRival_ScreenSlide_DirectorBP_C;
 
 }
 

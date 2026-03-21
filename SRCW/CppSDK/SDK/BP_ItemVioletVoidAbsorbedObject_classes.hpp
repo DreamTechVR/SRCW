@@ -23,15 +23,18 @@ class ABP_ItemVioletVoidAbsorbedObject_C final : public AItemVioletVoidAbsorbedO
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ItemVioletVoidAbsorbedObject_C">();
+		BP_STATIC_CLASS_IMPL("BP_ItemVioletVoidAbsorbedObject_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ItemVioletVoidAbsorbedObject_C")
 	}
 	static class ABP_ItemVioletVoidAbsorbedObject_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ItemVioletVoidAbsorbedObject_C>();
 	}
 };
-static_assert(alignof(ABP_ItemVioletVoidAbsorbedObject_C) == 0x000010, "Wrong alignment on ABP_ItemVioletVoidAbsorbedObject_C");
-static_assert(sizeof(ABP_ItemVioletVoidAbsorbedObject_C) == 0x0004D0, "Wrong size on ABP_ItemVioletVoidAbsorbedObject_C");
+DUMPER7_ASSERTS_ABP_ItemVioletVoidAbsorbedObject_C;
 
 }
 

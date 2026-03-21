@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AutomationUtilsBlueprintLibrary">();
+		STATIC_CLASS_IMPL("AutomationUtilsBlueprintLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AutomationUtilsBlueprintLibrary")
 	}
 	static class UAutomationUtilsBlueprintLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAutomationUtilsBlueprintLibrary>();
 	}
 };
-static_assert(alignof(UAutomationUtilsBlueprintLibrary) == 0x000008, "Wrong alignment on UAutomationUtilsBlueprintLibrary");
-static_assert(sizeof(UAutomationUtilsBlueprintLibrary) == 0x000028, "Wrong size on UAutomationUtilsBlueprintLibrary");
+DUMPER7_ASSERTS_UAutomationUtilsBlueprintLibrary;
 
 }
 

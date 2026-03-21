@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "UnionRun_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UnionRun_classes.hpp"
 
 
 namespace SDK
@@ -43,7 +43,7 @@ public:
 	class UImage*                                 Light_01;                                          // 0x0380(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 MLC_Base;                                          // 0x0388(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 MLC_Festa_TeamName;                                // 0x0390(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               Overlay_Win;                                       // 0x0398(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               Overlay_WIN;                                       // 0x0398(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Team_Icon_Blue_Delete;                             // 0x03A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Team_Icon_Red_1_Delete;                            // 0x03A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Team_Icon_Yellow_1_Delete;                         // 0x03B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -91,59 +91,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GroupResult_Sub_TeamTable_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GroupResult_Sub_TeamTable_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GroupResult_Sub_TeamTable_C")
 	}
 	static class UWBP_GroupResult_Sub_TeamTable_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GroupResult_Sub_TeamTable_C>();
 	}
 };
-static_assert(alignof(UWBP_GroupResult_Sub_TeamTable_C) == 0x000008, "Wrong alignment on UWBP_GroupResult_Sub_TeamTable_C");
-static_assert(sizeof(UWBP_GroupResult_Sub_TeamTable_C) == 0x000440, "Wrong size on UWBP_GroupResult_Sub_TeamTable_C");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, UberGraphFrame) == 0x0002F8, "Member 'UWBP_GroupResult_Sub_TeamTable_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, Get_Add_NumPoint) == 0x000300, "Member 'UWBP_GroupResult_Sub_TeamTable_C::Get_Add_NumPoint' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, Get_BonusMedal) == 0x000308, "Member 'UWBP_GroupResult_Sub_TeamTable_C::Get_BonusMedal' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, Base_B_Delete) == 0x000310, "Member 'UWBP_GroupResult_Sub_TeamTable_C::Base_B_Delete' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, Base_R_Delete) == 0x000318, "Member 'UWBP_GroupResult_Sub_TeamTable_C::Base_R_Delete' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, Base_Y_Delete) == 0x000320, "Member 'UWBP_GroupResult_Sub_TeamTable_C::Base_Y_Delete' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, DMY_Festa_TeamIcon) == 0x000328, "Member 'UWBP_GroupResult_Sub_TeamTable_C::DMY_Festa_TeamIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, DSP_FestaHeader) == 0x000330, "Member 'UWBP_GroupResult_Sub_TeamTable_C::DSP_FestaHeader' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, DSP_WBP_Result_Sub_BonusCountIcon) == 0x000338, "Member 'UWBP_GroupResult_Sub_TeamTable_C::DSP_WBP_Result_Sub_BonusCountIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, Effect_Base_01) == 0x000340, "Member 'UWBP_GroupResult_Sub_TeamTable_C::Effect_Base_01' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, Effect_Base_02) == 0x000348, "Member 'UWBP_GroupResult_Sub_TeamTable_C::Effect_Base_02' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, Icon_01) == 0x000350, "Member 'UWBP_GroupResult_Sub_TeamTable_C::Icon_01' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, Icon_02) == 0x000358, "Member 'UWBP_GroupResult_Sub_TeamTable_C::Icon_02' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, Icon_03) == 0x000360, "Member 'UWBP_GroupResult_Sub_TeamTable_C::Icon_03' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, Light) == 0x000368, "Member 'UWBP_GroupResult_Sub_TeamTable_C::Light' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, Light_1) == 0x000370, "Member 'UWBP_GroupResult_Sub_TeamTable_C::Light_1' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, Light_2) == 0x000378, "Member 'UWBP_GroupResult_Sub_TeamTable_C::Light_2' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, Light_01) == 0x000380, "Member 'UWBP_GroupResult_Sub_TeamTable_C::Light_01' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, MLC_Base) == 0x000388, "Member 'UWBP_GroupResult_Sub_TeamTable_C::MLC_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, MLC_Festa_TeamName) == 0x000390, "Member 'UWBP_GroupResult_Sub_TeamTable_C::MLC_Festa_TeamName' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, Overlay_Win) == 0x000398, "Member 'UWBP_GroupResult_Sub_TeamTable_C::Overlay_Win' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, Team_Icon_Blue_Delete) == 0x0003A0, "Member 'UWBP_GroupResult_Sub_TeamTable_C::Team_Icon_Blue_Delete' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, Team_Icon_Red_1_Delete) == 0x0003A8, "Member 'UWBP_GroupResult_Sub_TeamTable_C::Team_Icon_Red_1_Delete' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, Team_Icon_Yellow_1_Delete) == 0x0003B0, "Member 'UWBP_GroupResult_Sub_TeamTable_C::Team_Icon_Yellow_1_Delete' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, TXT_Add_NumPoint) == 0x0003B8, "Member 'UWBP_GroupResult_Sub_TeamTable_C::TXT_Add_NumPoint' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, TXT_Award_01) == 0x0003C0, "Member 'UWBP_GroupResult_Sub_TeamTable_C::TXT_Award_01' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, TXT_Award_02) == 0x0003C8, "Member 'UWBP_GroupResult_Sub_TeamTable_C::TXT_Award_02' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, TXT_AwardBase) == 0x0003D0, "Member 'UWBP_GroupResult_Sub_TeamTable_C::TXT_AwardBase' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, TXT_Festa_TeamName) == 0x0003D8, "Member 'UWBP_GroupResult_Sub_TeamTable_C::TXT_Festa_TeamName' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, TXT_Num_Point) == 0x0003E0, "Member 'UWBP_GroupResult_Sub_TeamTable_C::TXT_Num_Point' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, TXT_Num_Time) == 0x0003E8, "Member 'UWBP_GroupResult_Sub_TeamTable_C::TXT_Num_Time' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, WBP_Result_Sub_BonusIcon) == 0x0003F0, "Member 'UWBP_GroupResult_Sub_TeamTable_C::WBP_Result_Sub_BonusIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, WBP_Result_Sub_RankingTable_MatchPoint) == 0x0003F8, "Member 'UWBP_GroupResult_Sub_TeamTable_C::WBP_Result_Sub_RankingTable_MatchPoint' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, WidgetSwitcher_NumText) == 0x000400, "Member 'UWBP_GroupResult_Sub_TeamTable_C::WidgetSwitcher_NumText' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, WidgetSwitcher_TeamIcon) == 0x000408, "Member 'UWBP_GroupResult_Sub_TeamTable_C::WidgetSwitcher_TeamIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, LastTime) == 0x000410, "Member 'UWBP_GroupResult_Sub_TeamTable_C::LastTime' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, NowTime) == 0x000418, "Member 'UWBP_GroupResult_Sub_TeamTable_C::NowTime' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, bIsMainLoop) == 0x000420, "Member 'UWBP_GroupResult_Sub_TeamTable_C::bIsMainLoop' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, LastPoint) == 0x000424, "Member 'UWBP_GroupResult_Sub_TeamTable_C::LastPoint' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, NowPoint) == 0x000428, "Member 'UWBP_GroupResult_Sub_TeamTable_C::NowPoint' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, bIsAnimEnd) == 0x00042C, "Member 'UWBP_GroupResult_Sub_TeamTable_C::bIsAnimEnd' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, SeHandle) == 0x000430, "Member 'UWBP_GroupResult_Sub_TeamTable_C::SeHandle' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, bIsAnimStart) == 0x000434, "Member 'UWBP_GroupResult_Sub_TeamTable_C::bIsAnimStart' has a wrong offset!");
-static_assert(offsetof(UWBP_GroupResult_Sub_TeamTable_C, PlateColor) == 0x000438, "Member 'UWBP_GroupResult_Sub_TeamTable_C::PlateColor' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GroupResult_Sub_TeamTable_C;
 
 }
 

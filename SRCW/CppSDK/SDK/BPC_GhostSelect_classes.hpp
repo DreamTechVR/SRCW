@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -56,22 +56,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_GhostSelect_C">();
+		BP_STATIC_CLASS_IMPL("BPC_GhostSelect_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_GhostSelect_C")
 	}
 	static class UBPC_GhostSelect_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_GhostSelect_C>();
 	}
 };
-static_assert(alignof(UBPC_GhostSelect_C) == 0x000008, "Wrong alignment on UBPC_GhostSelect_C");
-static_assert(sizeof(UBPC_GhostSelect_C) == 0x0001B0, "Wrong size on UBPC_GhostSelect_C");
-static_assert(offsetof(UBPC_GhostSelect_C, UberGraphFrame) == 0x000150, "Member 'UBPC_GhostSelect_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_GhostSelect_C, OwnerTimeTrialSequence) == 0x000158, "Member 'UBPC_GhostSelect_C::OwnerTimeTrialSequence' has a wrong offset!");
-static_assert(offsetof(UBPC_GhostSelect_C, SelectGhostClass) == 0x000160, "Member 'UBPC_GhostSelect_C::SelectGhostClass' has a wrong offset!");
-static_assert(offsetof(UBPC_GhostSelect_C, SelectGhost) == 0x000188, "Member 'UBPC_GhostSelect_C::SelectGhost' has a wrong offset!");
-static_assert(offsetof(UBPC_GhostSelect_C, SubInputReciever) == 0x000190, "Member 'UBPC_GhostSelect_C::SubInputReciever' has a wrong offset!");
-static_assert(offsetof(UBPC_GhostSelect_C, IsUploadEnable) == 0x000198, "Member 'UBPC_GhostSelect_C::IsUploadEnable' has a wrong offset!");
-static_assert(offsetof(UBPC_GhostSelect_C, StageIconTextureArray) == 0x0001A0, "Member 'UBPC_GhostSelect_C::StageIconTextureArray' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_GhostSelect_C;
 
 }
 

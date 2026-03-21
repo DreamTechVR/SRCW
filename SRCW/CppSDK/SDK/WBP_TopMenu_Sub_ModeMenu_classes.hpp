@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -36,19 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_TopMenu_Sub_ModeMenu_C">();
+		BP_STATIC_CLASS_IMPL("WBP_TopMenu_Sub_ModeMenu_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_TopMenu_Sub_ModeMenu_C")
 	}
 	static class UWBP_TopMenu_Sub_ModeMenu_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_TopMenu_Sub_ModeMenu_C>();
 	}
 };
-static_assert(alignof(UWBP_TopMenu_Sub_ModeMenu_C) == 0x000008, "Wrong alignment on UWBP_TopMenu_Sub_ModeMenu_C");
-static_assert(sizeof(UWBP_TopMenu_Sub_ModeMenu_C) == 0x000318, "Wrong size on UWBP_TopMenu_Sub_ModeMenu_C");
-static_assert(offsetof(UWBP_TopMenu_Sub_ModeMenu_C, UberGraphFrame) == 0x0002F8, "Member 'UWBP_TopMenu_Sub_ModeMenu_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Sub_ModeMenu_C, WBP_TopMenu_Sub_BtnMode_Offline_01) == 0x000300, "Member 'UWBP_TopMenu_Sub_ModeMenu_C::WBP_TopMenu_Sub_BtnMode_Offline_01' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Sub_ModeMenu_C, WBP_TopMenu_Sub_BtnMode_Offline_02) == 0x000308, "Member 'UWBP_TopMenu_Sub_ModeMenu_C::WBP_TopMenu_Sub_BtnMode_Offline_02' has a wrong offset!");
-static_assert(offsetof(UWBP_TopMenu_Sub_ModeMenu_C, WBP_TopMenu_Sub_BtnMode_Offline_03) == 0x000310, "Member 'UWBP_TopMenu_Sub_ModeMenu_C::WBP_TopMenu_Sub_BtnMode_Offline_03' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_TopMenu_Sub_ModeMenu_C;
 
 }
 

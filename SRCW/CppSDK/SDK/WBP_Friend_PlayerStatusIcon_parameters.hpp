@@ -27,13 +27,7 @@ public:
 	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_PlayerStatusIcon_C_ExecuteUbergraph_WBP_Friend_PlayerStatusIcon) == 0x000008, "Wrong alignment on WBP_Friend_PlayerStatusIcon_C_ExecuteUbergraph_WBP_Friend_PlayerStatusIcon");
-static_assert(sizeof(WBP_Friend_PlayerStatusIcon_C_ExecuteUbergraph_WBP_Friend_PlayerStatusIcon) == 0x000028, "Wrong size on WBP_Friend_PlayerStatusIcon_C_ExecuteUbergraph_WBP_Friend_PlayerStatusIcon");
-static_assert(offsetof(WBP_Friend_PlayerStatusIcon_C_ExecuteUbergraph_WBP_Friend_PlayerStatusIcon, EntryPoint) == 0x000000, "Member 'WBP_Friend_PlayerStatusIcon_C_ExecuteUbergraph_WBP_Friend_PlayerStatusIcon::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_PlayerStatusIcon_C_ExecuteUbergraph_WBP_Friend_PlayerStatusIcon, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'WBP_Friend_PlayerStatusIcon_C_ExecuteUbergraph_WBP_Friend_PlayerStatusIcon::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_PlayerStatusIcon_C_ExecuteUbergraph_WBP_Friend_PlayerStatusIcon, K2Node_CustomEvent_InIconType) == 0x000010, "Member 'WBP_Friend_PlayerStatusIcon_C_ExecuteUbergraph_WBP_Friend_PlayerStatusIcon::K2Node_CustomEvent_InIconType' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_PlayerStatusIcon_C_ExecuteUbergraph_WBP_Friend_PlayerStatusIcon, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000018, "Member 'WBP_Friend_PlayerStatusIcon_C_ExecuteUbergraph_WBP_Friend_PlayerStatusIcon::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_PlayerStatusIcon_C_ExecuteUbergraph_WBP_Friend_PlayerStatusIcon, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000020, "Member 'WBP_Friend_PlayerStatusIcon_C_ExecuteUbergraph_WBP_Friend_PlayerStatusIcon::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_PlayerStatusIcon_C_ExecuteUbergraph_WBP_Friend_PlayerStatusIcon;
 
 // Function WBP_Friend_PlayerStatusIcon.WBP_Friend_PlayerStatusIcon_C.SetIconType
 // 0x0004 (0x0004 - 0x0000)
@@ -42,9 +36,7 @@ struct WBP_Friend_PlayerStatusIcon_C_SetIconType final
 public:
 	int32                                         InIconType;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_PlayerStatusIcon_C_SetIconType) == 0x000004, "Wrong alignment on WBP_Friend_PlayerStatusIcon_C_SetIconType");
-static_assert(sizeof(WBP_Friend_PlayerStatusIcon_C_SetIconType) == 0x000004, "Wrong size on WBP_Friend_PlayerStatusIcon_C_SetIconType");
-static_assert(offsetof(WBP_Friend_PlayerStatusIcon_C_SetIconType, InIconType) == 0x000000, "Member 'WBP_Friend_PlayerStatusIcon_C_SetIconType::InIconType' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_PlayerStatusIcon_C_SetIconType;
 
 }
 

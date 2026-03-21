@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "UNION_structs.hpp"
 
 
 namespace SDK::Params
@@ -74,51 +74,7 @@ public:
 	int32                                         K2Node_Select_Default_1;                           // 0x01D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x01D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus) == 0x000008, "Wrong alignment on WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus");
-static_assert(sizeof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus) == 0x0001E0, "Wrong size on WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, EntryPoint) == 0x000000, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, Temp_int_Variable) == 0x000004, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, Temp_int_Variable_1) == 0x000008, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, Temp_text_Variable) == 0x000010, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, Temp_text_Variable_1) == 0x000020, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::Temp_text_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, Temp_text_Variable_2) == 0x000030, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::Temp_text_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, Temp_text_Variable_3) == 0x000040, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::Temp_text_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, Temp_text_Variable_4) == 0x000050, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::Temp_text_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, Temp_text_Variable_5) == 0x000060, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::Temp_text_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, Temp_text_Variable_6) == 0x000070, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::Temp_text_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, Temp_text_Variable_7) == 0x000080, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::Temp_text_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, Temp_text_Variable_8) == 0x000090, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::Temp_text_Variable_8' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, Temp_text_Variable_9) == 0x0000A0, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::Temp_text_Variable_9' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, Temp_text_Variable_10) == 0x0000B0, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::Temp_text_Variable_10' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, Temp_text_Variable_11) == 0x0000C0, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::Temp_text_Variable_11' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, Temp_text_Variable_12) == 0x0000D0, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::Temp_text_Variable_12' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, CallFunc_LessEqual_DoubleDouble_ReturnValue) == 0x0000E0, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::CallFunc_LessEqual_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, K2Node_CustomEvent_Wait) == 0x0000E8, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::K2Node_CustomEvent_Wait' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, K2Node_CustomEvent_Text) == 0x0000F0, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::K2Node_CustomEvent_Text' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, K2Node_CustomEvent_Point_2) == 0x000100, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::K2Node_CustomEvent_Point_2' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, CallFunc_GetFestaPointText_ReturnValue) == 0x000108, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::CallFunc_GetFestaPointText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, CallFunc_GetTerminologyTextByText_ReturnValue) == 0x000118, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::CallFunc_GetTerminologyTextByText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, K2Node_CustomEvent_Rank) == 0x000128, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::K2Node_CustomEvent_Rank' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, K2Node_CustomEvent_Point_1) == 0x00012C, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::K2Node_CustomEvent_Point_1' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, CallFunc_GetFestaPointText_ReturnValue_1) == 0x000130, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::CallFunc_GetFestaPointText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, K2Node_SwitchInteger_CmpSuccess) == 0x000140, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, K2Node_Select_Default) == 0x000148, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, CallFunc_SoundPlay_ReturnValue) == 0x000158, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, K2Node_CustomEvent_TeamRank) == 0x00015C, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::K2Node_CustomEvent_TeamRank' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, K2Node_CustomEvent_Point) == 0x000160, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::K2Node_CustomEvent_Point' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, CallFunc_GetFestaPointText_ReturnValue_2) == 0x000168, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::CallFunc_GetFestaPointText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, Temp_int_Variable_2) == 0x000178, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x000180, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, Temp_int_Variable_3) == 0x000188, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, K2Node_CustomEvent_RewardData) == 0x000190, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::K2Node_CustomEvent_RewardData' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, K2Node_CustomEvent_Ratio) == 0x0001B0, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::K2Node_CustomEvent_Ratio' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, Temp_int_Variable_4) == 0x0001B4, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0001B8, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, CallFunc_Multiply_IntInt_ReturnValue) == 0x0001BC, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::CallFunc_Multiply_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, CallFunc_GetFestaPointText_ReturnValue_3) == 0x0001C0, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::CallFunc_GetFestaPointText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, Temp_int_Variable_5) == 0x0001D0, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::Temp_int_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, K2Node_Select_Default_1) == 0x0001D4, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus, CallFunc_PlayAnimation_ReturnValue) == 0x0001D8, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Festa_PointReward_Sub_Bonus_C_ExecuteUbergraph_WBP_Festa_PointReward_Sub_Bonus;
 
 // Function WBP_Festa_PointReward_Sub_Bonus.WBP_Festa_PointReward_Sub_Bonus_C.Open
 // 0x0008 (0x0008 - 0x0000)
@@ -127,9 +83,7 @@ struct WBP_Festa_PointReward_Sub_Bonus_C_Open final
 public:
 	double                                        Wait;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Festa_PointReward_Sub_Bonus_C_Open) == 0x000008, "Wrong alignment on WBP_Festa_PointReward_Sub_Bonus_C_Open");
-static_assert(sizeof(WBP_Festa_PointReward_Sub_Bonus_C_Open) == 0x000008, "Wrong size on WBP_Festa_PointReward_Sub_Bonus_C_Open");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_Open, Wait) == 0x000000, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_Open::Wait' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Festa_PointReward_Sub_Bonus_C_Open;
 
 // Function WBP_Festa_PointReward_Sub_Bonus.WBP_Festa_PointReward_Sub_Bonus_C.SetFestaResultRewardData
 // 0x0028 (0x0028 - 0x0000)
@@ -139,10 +93,7 @@ public:
 	struct FFestaResultRewardData                 RewardData;                                        // 0x0000(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm)
 	int32                                         Ratio;                                             // 0x0020(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Festa_PointReward_Sub_Bonus_C_SetFestaResultRewardData) == 0x000008, "Wrong alignment on WBP_Festa_PointReward_Sub_Bonus_C_SetFestaResultRewardData");
-static_assert(sizeof(WBP_Festa_PointReward_Sub_Bonus_C_SetFestaResultRewardData) == 0x000028, "Wrong size on WBP_Festa_PointReward_Sub_Bonus_C_SetFestaResultRewardData");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_SetFestaResultRewardData, RewardData) == 0x000000, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_SetFestaResultRewardData::RewardData' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_SetFestaResultRewardData, Ratio) == 0x000020, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_SetFestaResultRewardData::Ratio' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Festa_PointReward_Sub_Bonus_C_SetFestaResultRewardData;
 
 // Function WBP_Festa_PointReward_Sub_Bonus.WBP_Festa_PointReward_Sub_Bonus_C.SetRankAndPoint
 // 0x0008 (0x0008 - 0x0000)
@@ -152,10 +103,7 @@ public:
 	int32                                         Rank;                                              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Point;                                             // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Festa_PointReward_Sub_Bonus_C_SetRankAndPoint) == 0x000004, "Wrong alignment on WBP_Festa_PointReward_Sub_Bonus_C_SetRankAndPoint");
-static_assert(sizeof(WBP_Festa_PointReward_Sub_Bonus_C_SetRankAndPoint) == 0x000008, "Wrong size on WBP_Festa_PointReward_Sub_Bonus_C_SetRankAndPoint");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_SetRankAndPoint, Rank) == 0x000000, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_SetRankAndPoint::Rank' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_SetRankAndPoint, Point) == 0x000004, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_SetRankAndPoint::Point' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Festa_PointReward_Sub_Bonus_C_SetRankAndPoint;
 
 // Function WBP_Festa_PointReward_Sub_Bonus.WBP_Festa_PointReward_Sub_Bonus_C.SetTeamRank
 // 0x0008 (0x0008 - 0x0000)
@@ -165,10 +113,7 @@ public:
 	int32                                         TeamRank;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Point;                                             // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Festa_PointReward_Sub_Bonus_C_SetTeamRank) == 0x000004, "Wrong alignment on WBP_Festa_PointReward_Sub_Bonus_C_SetTeamRank");
-static_assert(sizeof(WBP_Festa_PointReward_Sub_Bonus_C_SetTeamRank) == 0x000008, "Wrong size on WBP_Festa_PointReward_Sub_Bonus_C_SetTeamRank");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_SetTeamRank, TeamRank) == 0x000000, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_SetTeamRank::TeamRank' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_SetTeamRank, Point) == 0x000004, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_SetTeamRank::Point' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Festa_PointReward_Sub_Bonus_C_SetTeamRank;
 
 // Function WBP_Festa_PointReward_Sub_Bonus.WBP_Festa_PointReward_Sub_Bonus_C.SetTextAndPoint
 // 0x0018 (0x0018 - 0x0000)
@@ -178,10 +123,7 @@ public:
 	class FText                                   Text;                                              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 	int32                                         Point;                                             // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Festa_PointReward_Sub_Bonus_C_SetTextAndPoint) == 0x000008, "Wrong alignment on WBP_Festa_PointReward_Sub_Bonus_C_SetTextAndPoint");
-static_assert(sizeof(WBP_Festa_PointReward_Sub_Bonus_C_SetTextAndPoint) == 0x000018, "Wrong size on WBP_Festa_PointReward_Sub_Bonus_C_SetTextAndPoint");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_SetTextAndPoint, Text) == 0x000000, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_SetTextAndPoint::Text' has a wrong offset!");
-static_assert(offsetof(WBP_Festa_PointReward_Sub_Bonus_C_SetTextAndPoint, Point) == 0x000010, "Member 'WBP_Festa_PointReward_Sub_Bonus_C_SetTextAndPoint::Point' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Festa_PointReward_Sub_Bonus_C_SetTextAndPoint;
 
 }
 

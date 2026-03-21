@@ -33,17 +33,7 @@ public:
 	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0138(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0150(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_EntryRacers_C_CalcCameraOffset) == 0x000010, "Wrong alignment on BP_EntryRacers_C_CalcCameraOffset");
-static_assert(sizeof(BP_EntryRacers_C_CalcCameraOffset) == 0x0001B0, "Wrong size on BP_EntryRacers_C_CalcCameraOffset");
-static_assert(offsetof(BP_EntryRacers_C_CalcCameraOffset, In_Transform) == 0x000000, "Member 'BP_EntryRacers_C_CalcCameraOffset::In_Transform' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_CalcCameraOffset, Out_Transform) == 0x000060, "Member 'BP_EntryRacers_C_CalcCameraOffset::Out_Transform' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_CalcCameraOffset, CallFunc_BreakTransform_Location) == 0x0000C0, "Member 'BP_EntryRacers_C_CalcCameraOffset::CallFunc_BreakTransform_Location' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_CalcCameraOffset, CallFunc_BreakTransform_Rotation) == 0x0000D8, "Member 'BP_EntryRacers_C_CalcCameraOffset::CallFunc_BreakTransform_Rotation' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_CalcCameraOffset, CallFunc_BreakTransform_Scale) == 0x0000F0, "Member 'BP_EntryRacers_C_CalcCameraOffset::CallFunc_BreakTransform_Scale' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_CalcCameraOffset, CallFunc_GetForwardVector_ReturnValue) == 0x000108, "Member 'BP_EntryRacers_C_CalcCameraOffset::CallFunc_GetForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_CalcCameraOffset, CallFunc_Multiply_VectorVector_ReturnValue) == 0x000120, "Member 'BP_EntryRacers_C_CalcCameraOffset::CallFunc_Multiply_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_CalcCameraOffset, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000138, "Member 'BP_EntryRacers_C_CalcCameraOffset::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_CalcCameraOffset, CallFunc_MakeTransform_ReturnValue) == 0x000150, "Member 'BP_EntryRacers_C_CalcCameraOffset::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_EntryRacers_C_CalcCameraOffset;
 
 // Function BP_EntryRacers.BP_EntryRacers_C.Clear
 // 0x0038 (0x0038 - 0x0000)
@@ -64,20 +54,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_EntryRacers_C_Clear) == 0x000008, "Wrong alignment on BP_EntryRacers_C_Clear");
-static_assert(sizeof(BP_EntryRacers_C_Clear) == 0x000038, "Wrong size on BP_EntryRacers_C_Clear");
-static_assert(offsetof(BP_EntryRacers_C_Clear, Temp_int_Loop_Counter_Variable) == 0x000000, "Member 'BP_EntryRacers_C_Clear::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Clear, CallFunc_Add_IntInt_ReturnValue) == 0x000004, "Member 'BP_EntryRacers_C_Clear::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Clear, Temp_int_Array_Index_Variable) == 0x000008, "Member 'BP_EntryRacers_C_Clear::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Clear, Temp_int_Array_Index_Variable_1) == 0x00000C, "Member 'BP_EntryRacers_C_Clear::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Clear, Temp_int_Loop_Counter_Variable_1) == 0x000010, "Member 'BP_EntryRacers_C_Clear::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Clear, CallFunc_Add_IntInt_ReturnValue_1) == 0x000014, "Member 'BP_EntryRacers_C_Clear::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Clear, CallFunc_Array_Get_Item) == 0x000018, "Member 'BP_EntryRacers_C_Clear::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Clear, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'BP_EntryRacers_C_Clear::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Clear, CallFunc_Less_IntInt_ReturnValue) == 0x000024, "Member 'BP_EntryRacers_C_Clear::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Clear, CallFunc_Array_Get_Item_1) == 0x000028, "Member 'BP_EntryRacers_C_Clear::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Clear, CallFunc_Array_Length_ReturnValue_1) == 0x000030, "Member 'BP_EntryRacers_C_Clear::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Clear, CallFunc_Less_IntInt_ReturnValue_1) == 0x000034, "Member 'BP_EntryRacers_C_Clear::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_EntryRacers_C_Clear;
 
 // Function BP_EntryRacers.BP_EntryRacers_C.ExecuteUbergraph_BP_EntryRacers
 // 0x0010 (0x0010 - 0x0000)
@@ -90,12 +67,7 @@ public:
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_EntryRacers_C_ExecuteUbergraph_BP_EntryRacers) == 0x000004, "Wrong alignment on BP_EntryRacers_C_ExecuteUbergraph_BP_EntryRacers");
-static_assert(sizeof(BP_EntryRacers_C_ExecuteUbergraph_BP_EntryRacers) == 0x000010, "Wrong size on BP_EntryRacers_C_ExecuteUbergraph_BP_EntryRacers");
-static_assert(offsetof(BP_EntryRacers_C_ExecuteUbergraph_BP_EntryRacers, EntryPoint) == 0x000000, "Member 'BP_EntryRacers_C_ExecuteUbergraph_BP_EntryRacers::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_ExecuteUbergraph_BP_EntryRacers, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'BP_EntryRacers_C_ExecuteUbergraph_BP_EntryRacers::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_ExecuteUbergraph_BP_EntryRacers, K2Node_Event_DeltaSeconds) == 0x000008, "Member 'BP_EntryRacers_C_ExecuteUbergraph_BP_EntryRacers::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_ExecuteUbergraph_BP_EntryRacers, CallFunc_IsValid_ReturnValue_1) == 0x00000C, "Member 'BP_EntryRacers_C_ExecuteUbergraph_BP_EntryRacers::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_EntryRacers_C_ExecuteUbergraph_BP_EntryRacers;
 
 // Function BP_EntryRacers.BP_EntryRacers_C.Play
 // 0x07F0 (0x07F0 - 0x0000)
@@ -200,81 +172,7 @@ public:
 	uint8                                         Pad_7E1[0x3];                                      // 0x07E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue_3;                  // 0x07E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_EntryRacers_C_Play) == 0x000010, "Wrong alignment on BP_EntryRacers_C_Play");
-static_assert(sizeof(BP_EntryRacers_C_Play) == 0x0007F0, "Wrong size on BP_EntryRacers_C_Play");
-static_assert(offsetof(BP_EntryRacers_C_Play, In_RacerCount) == 0x000000, "Member 'BP_EntryRacers_C_Play::In_RacerCount' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, In_Actors) == 0x000008, "Member 'BP_EntryRacers_C_Play::In_Actors' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, In_Transforms) == 0x000018, "Member 'BP_EntryRacers_C_Play::In_Transforms' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, In_BaseTransform) == 0x000030, "Member 'BP_EntryRacers_C_Play::In_BaseTransform' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, In_MainRacerIndex) == 0x000090, "Member 'BP_EntryRacers_C_Play::In_MainRacerIndex' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, In_SceneDrivers) == 0x000098, "Member 'BP_EntryRacers_C_Play::In_SceneDrivers' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, In_StageId) == 0x0000A8, "Member 'BP_EntryRacers_C_Play::In_StageId' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, Parent) == 0x0000B0, "Member 'BP_EntryRacers_C_Play::Parent' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CurrentTransform) == 0x0000C0, "Member 'BP_EntryRacers_C_Play::CurrentTransform' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, Index_0) == 0x000120, "Member 'BP_EntryRacers_C_Play::Index_0' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_LoadSceneDriverAnimationAssets_LoadAssets) == 0x000128, "Member 'BP_EntryRacers_C_Play::CallFunc_LoadSceneDriverAnimationAssets_LoadAssets' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_Subtract_IntInt_ReturnValue) == 0x000138, "Member 'BP_EntryRacers_C_Play::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_MakeTransform_ReturnValue) == 0x000140, "Member 'BP_EntryRacers_C_Play::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_Array_Get_Item) == 0x0001A0, "Member 'BP_EntryRacers_C_Play::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_K2_SetActorTransform_SweepHitResult) == 0x0001A8, "Member 'BP_EntryRacers_C_Play::CallFunc_K2_SetActorTransform_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_K2_SetActorTransform_ReturnValue) == 0x0002A0, "Member 'BP_EntryRacers_C_Play::CallFunc_K2_SetActorTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_Array_Get_Item_1) == 0x0002A8, "Member 'BP_EntryRacers_C_Play::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_K2_AttachToActor_ReturnValue) == 0x0002B0, "Member 'BP_EntryRacers_C_Play::CallFunc_K2_AttachToActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_Array_Get_Item_2) == 0x0002B8, "Member 'BP_EntryRacers_C_Play::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_MakeTransform_ReturnValue_1) == 0x0002C0, "Member 'BP_EntryRacers_C_Play::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000320, "Member 'BP_EntryRacers_C_Play::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_Array_Get_Item_3) == 0x000328, "Member 'BP_EntryRacers_C_Play::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_FinishSpawningActor_ReturnValue) == 0x000330, "Member 'BP_EntryRacers_C_Play::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_K2_AttachToActor_ReturnValue_1) == 0x000338, "Member 'BP_EntryRacers_C_Play::CallFunc_K2_AttachToActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_Array_Add_ReturnValue) == 0x00033C, "Member 'BP_EntryRacers_C_Play::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_SetStaticMesh_ReturnValue) == 0x000340, "Member 'BP_EntryRacers_C_Play::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_Array_Get_Item_4) == 0x000348, "Member 'BP_EntryRacers_C_Play::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x000350, "Member 'BP_EntryRacers_C_Play::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x000358, "Member 'BP_EntryRacers_C_Play::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000360, "Member 'BP_EntryRacers_C_Play::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, K2Node_CreateDelegate_OutputDelegate) == 0x000364, "Member 'BP_EntryRacers_C_Play::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_GetFestaChanceUpType_ReturnValue) == 0x000374, "Member 'BP_EntryRacers_C_Play::CallFunc_GetFestaChanceUpType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000375, "Member 'BP_EntryRacers_C_Play::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_ApplySettingsCineCameraByTag_OutResult) == 0x000376, "Member 'BP_EntryRacers_C_Play::CallFunc_ApplySettingsCineCameraByTag_OutResult' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_ApplySettingsCineCameraByTag_OutResult_1) == 0x000377, "Member 'BP_EntryRacers_C_Play::CallFunc_ApplySettingsCineCameraByTag_OutResult_1' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_Array_Get_Item_5) == 0x000378, "Member 'BP_EntryRacers_C_Play::CallFunc_Array_Get_Item_5' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x000380, "Member 'BP_EntryRacers_C_Play::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue) == 0x000388, "Member 'BP_EntryRacers_C_Play::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, K2Node_SwitchEnum_CmpSuccess) == 0x000398, "Member 'BP_EntryRacers_C_Play::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_Concat_StrStr_ReturnValue) == 0x0003A0, "Member 'BP_EntryRacers_C_Play::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2) == 0x0003B0, "Member 'BP_EntryRacers_C_Play::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_FinishSpawningActor_ReturnValue_2) == 0x0003B8, "Member 'BP_EntryRacers_C_Play::CallFunc_FinishSpawningActor_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_CalcCameraOffset_Out_Transform) == 0x0003C0, "Member 'BP_EntryRacers_C_Play::CallFunc_CalcCameraOffset_Out_Transform' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_OffsetRacerTransform_OutTransform) == 0x000420, "Member 'BP_EntryRacers_C_Play::CallFunc_OffsetRacerTransform_OutTransform' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_GetIsOnlineGameMode_ReturnValue) == 0x000480, "Member 'BP_EntryRacers_C_Play::CallFunc_GetIsOnlineGameMode_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_GetSequencePlayer_ReturnValue) == 0x000488, "Member 'BP_EntryRacers_C_Play::CallFunc_GetSequencePlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_Array_Get_Item_6) == 0x000490, "Member 'BP_EntryRacers_C_Play::CallFunc_Array_Get_Item_6' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_GetDriverPose_ReturnValue) == 0x000498, "Member 'BP_EntryRacers_C_Play::CallFunc_GetDriverPose_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000499, "Member 'BP_EntryRacers_C_Play::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_Subtract_VectorVector_ReturnValue) == 0x0004A0, "Member 'BP_EntryRacers_C_Play::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_K2_SetRelativeLocation_SweepHitResult) == 0x0004B8, "Member 'BP_EntryRacers_C_Play::CallFunc_K2_SetRelativeLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3) == 0x0005B0, "Member 'BP_EntryRacers_C_Play::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_FinishSpawningActor_ReturnValue_3) == 0x0005B8, "Member 'BP_EntryRacers_C_Play::CallFunc_FinishSpawningActor_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_MakeTransform_ReturnValue_2) == 0x0005C0, "Member 'BP_EntryRacers_C_Play::CallFunc_MakeTransform_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_Array_Get_Item_7) == 0x000620, "Member 'BP_EntryRacers_C_Play::CallFunc_Array_Get_Item_7' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_Array_Add_ReturnValue_1) == 0x000628, "Member 'BP_EntryRacers_C_Play::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_K2_SetActorTransform_SweepHitResult_1) == 0x000630, "Member 'BP_EntryRacers_C_Play::CallFunc_K2_SetActorTransform_SweepHitResult_1' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_K2_SetActorTransform_ReturnValue_1) == 0x000728, "Member 'BP_EntryRacers_C_Play::CallFunc_K2_SetActorTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, Temp_int_Variable) == 0x00072C, "Member 'BP_EntryRacers_C_Play::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, Temp_int_Variable_1) == 0x000730, "Member 'BP_EntryRacers_C_Play::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000734, "Member 'BP_EntryRacers_C_Play::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_Add_IntInt_ReturnValue) == 0x000738, "Member 'BP_EntryRacers_C_Play::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_Array_Get_Item_8) == 0x000740, "Member 'BP_EntryRacers_C_Play::CallFunc_Array_Get_Item_8' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_K2_AttachToActor_ReturnValue_2) == 0x000748, "Member 'BP_EntryRacers_C_Play::CallFunc_K2_AttachToActor_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_Create_ReturnValue) == 0x000750, "Member 'BP_EntryRacers_C_Play::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_MakeTransform_ReturnValue_3) == 0x000760, "Member 'BP_EntryRacers_C_Play::CallFunc_MakeTransform_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_4) == 0x0007C0, "Member 'BP_EntryRacers_C_Play::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_Array_Get_Item_9) == 0x0007C8, "Member 'BP_EntryRacers_C_Play::CallFunc_Array_Get_Item_9' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_FinishSpawningActor_ReturnValue_4) == 0x0007D0, "Member 'BP_EntryRacers_C_Play::CallFunc_FinishSpawningActor_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_K2_AttachToActor_ReturnValue_3) == 0x0007D8, "Member 'BP_EntryRacers_C_Play::CallFunc_K2_AttachToActor_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_Array_Add_ReturnValue_2) == 0x0007DC, "Member 'BP_EntryRacers_C_Play::CallFunc_Array_Add_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_SetStaticMesh_ReturnValue_1) == 0x0007E0, "Member 'BP_EntryRacers_C_Play::CallFunc_SetStaticMesh_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_EntryRacers_C_Play, CallFunc_Array_Add_ReturnValue_3) == 0x0007E4, "Member 'BP_EntryRacers_C_Play::CallFunc_Array_Add_ReturnValue_3' has a wrong offset!");
+DUMPER7_ASSERTS_BP_EntryRacers_C_Play;
 
 // Function BP_EntryRacers.BP_EntryRacers_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -283,9 +181,7 @@ struct BP_EntryRacers_C_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_EntryRacers_C_ReceiveTick) == 0x000004, "Wrong alignment on BP_EntryRacers_C_ReceiveTick");
-static_assert(sizeof(BP_EntryRacers_C_ReceiveTick) == 0x000004, "Wrong size on BP_EntryRacers_C_ReceiveTick");
-static_assert(offsetof(BP_EntryRacers_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'BP_EntryRacers_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_BP_EntryRacers_C_ReceiveTick;
 
 }
 

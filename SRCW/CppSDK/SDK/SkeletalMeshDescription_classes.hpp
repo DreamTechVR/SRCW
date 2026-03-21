@@ -23,15 +23,18 @@ class USkeletalMeshDescription final : public UMeshDescriptionBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SkeletalMeshDescription">();
+		STATIC_CLASS_IMPL("SkeletalMeshDescription")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SkeletalMeshDescription")
 	}
 	static class USkeletalMeshDescription* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USkeletalMeshDescription>();
 	}
 };
-static_assert(alignof(USkeletalMeshDescription) == 0x000008, "Wrong alignment on USkeletalMeshDescription");
-static_assert(sizeof(USkeletalMeshDescription) == 0x0002F0, "Wrong size on USkeletalMeshDescription");
+DUMPER7_ASSERTS_USkeletalMeshDescription;
 
 }
 

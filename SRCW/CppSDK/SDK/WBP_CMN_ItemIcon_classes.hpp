@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -48,27 +48,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_ItemIcon_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_ItemIcon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_ItemIcon_C")
 	}
 	static class UWBP_CMN_ItemIcon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_ItemIcon_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_ItemIcon_C) == 0x000008, "Wrong alignment on UWBP_CMN_ItemIcon_C");
-static_assert(sizeof(UWBP_CMN_ItemIcon_C) == 0x0003B8, "Wrong size on UWBP_CMN_ItemIcon_C");
-static_assert(offsetof(UWBP_CMN_ItemIcon_C, UberGraphFrame) == 0x000358, "Member 'UWBP_CMN_ItemIcon_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ItemIcon_C, HonorTitleIcon) == 0x000360, "Member 'UWBP_CMN_ItemIcon_C::HonorTitleIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ItemIcon_C, ItemIcon_Aura) == 0x000368, "Member 'UWBP_CMN_ItemIcon_C::ItemIcon_Aura' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ItemIcon_C, ItemIcon_Gadget) == 0x000370, "Member 'UWBP_CMN_ItemIcon_C::ItemIcon_Gadget' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ItemIcon_C, ItemIcon_HonorTitle) == 0x000378, "Member 'UWBP_CMN_ItemIcon_C::ItemIcon_HonorTitle' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ItemIcon_C, ItemIcon_JukeBox) == 0x000380, "Member 'UWBP_CMN_ItemIcon_C::ItemIcon_JukeBox' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ItemIcon_C, ItemIcon_Stage) == 0x000388, "Member 'UWBP_CMN_ItemIcon_C::ItemIcon_Stage' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ItemIcon_C, Outline) == 0x000390, "Member 'UWBP_CMN_ItemIcon_C::Outline' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ItemIcon_C, Overlay_ItemIcon_DnpaTicket) == 0x000398, "Member 'UWBP_CMN_ItemIcon_C::Overlay_ItemIcon_DnpaTicket' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ItemIcon_C, SizeBox_ItemIcon_CompleteMachine) == 0x0003A0, "Member 'UWBP_CMN_ItemIcon_C::SizeBox_ItemIcon_CompleteMachine' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ItemIcon_C, SizeBox_ItemIcon_MachineParts) == 0x0003A8, "Member 'UWBP_CMN_ItemIcon_C::SizeBox_ItemIcon_MachineParts' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ItemIcon_C, WBP_CMN_Sub_R_Item) == 0x0003B0, "Member 'UWBP_CMN_ItemIcon_C::WBP_CMN_Sub_R_Item' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_ItemIcon_C;
 
 }
 

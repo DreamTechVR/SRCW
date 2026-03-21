@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
+#include "UnionSystem_structs.hpp"
 
 
 namespace SDK::Params
@@ -129,95 +129,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x02E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class USoundAtomCue*                          K2Node_Select_Default_6;                           // 0x02E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward) == 0x000008, "Wrong alignment on WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward");
-static_assert(sizeof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward) == 0x0002F0, "Wrong size on WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, EntryPoint) == 0x000000, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, Temp_int_Variable) == 0x000004, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, K2Node_CreateDelegate_OutputDelegate_1) == 0x000018, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, K2Node_CreateDelegate_OutputDelegate_2) == 0x000028, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, Temp_byte_Variable) == 0x000038, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, Temp_object_Variable) == 0x000040, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, Temp_object_Variable_1) == 0x000048, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, Temp_object_Variable_2) == 0x000050, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, Temp_object_Variable_3) == 0x000058, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::Temp_object_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, Temp_byte_Variable_1) == 0x000060, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, Temp_object_Variable_4) == 0x000068, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::Temp_object_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, Temp_object_Variable_5) == 0x000070, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::Temp_object_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, Temp_object_Variable_6) == 0x000078, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::Temp_object_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, Temp_object_Variable_7) == 0x000080, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::Temp_object_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, Temp_bool_Variable) == 0x000088, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, Temp_object_Variable_8) == 0x000090, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::Temp_object_Variable_8' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, Temp_object_Variable_9) == 0x000098, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::Temp_object_Variable_9' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, Temp_byte_Variable_2) == 0x0000A0, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, Temp_object_Variable_10) == 0x0000A8, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::Temp_object_Variable_10' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, Temp_object_Variable_11) == 0x0000B0, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::Temp_object_Variable_11' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, Temp_object_Variable_12) == 0x0000B8, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::Temp_object_Variable_12' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, Temp_object_Variable_13) == 0x0000C0, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::Temp_object_Variable_13' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, Temp_byte_Variable_3) == 0x0000C8, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, Temp_object_Variable_14) == 0x0000D0, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::Temp_object_Variable_14' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, Temp_object_Variable_15) == 0x0000D8, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::Temp_object_Variable_15' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, Temp_object_Variable_16) == 0x0000E0, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::Temp_object_Variable_16' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, Temp_object_Variable_17) == 0x0000E8, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::Temp_object_Variable_17' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, Temp_bool_Variable_1) == 0x0000F0, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, Temp_object_Variable_18) == 0x0000F8, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::Temp_object_Variable_18' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, Temp_object_Variable_19) == 0x000100, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::Temp_object_Variable_19' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, Temp_byte_Variable_4) == 0x000108, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, Temp_object_Variable_20) == 0x000110, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::Temp_object_Variable_20' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, Temp_object_Variable_21) == 0x000118, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::Temp_object_Variable_21' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, Temp_object_Variable_22) == 0x000120, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::Temp_object_Variable_22' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, Temp_object_Variable_23) == 0x000128, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::Temp_object_Variable_23' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_GetRewardRedStarRingTypeList_OutRewardRedStarRingTypes) == 0x000130, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_GetRewardRedStarRingTypeList_OutRewardRedStarRingTypes' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_GetRewardRedStarRingTypeList_OutRSRHonorList) == 0x000140, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_GetRewardRedStarRingTypeList_OutRSRHonorList' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_SaveResult_OutPlayerLevelInfo) == 0x000150, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_SaveResult_OutPlayerLevelInfo' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_SaveResult_OutRedStarRingData) == 0x000168, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_SaveResult_OutRedStarRingData' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, K2Node_CustomEvent_HonorList) == 0x000178, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::K2Node_CustomEvent_HonorList' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, K2Node_CustomEvent_Index) == 0x000188, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::K2Node_CustomEvent_Index' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_GetResultOtherPlayerRank_ReturnValue) == 0x00018C, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_GetResultOtherPlayerRank_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000190, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000191, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, K2Node_Select_Default) == 0x000198, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_FindRewardRedStarRingHonorTableRow_OutData) == 0x0001A0, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_FindRewardRedStarRingHonorTableRow_OutData' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_FindRewardRedStarRingHonorTableRow_ReturnValue) == 0x0001C0, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_FindRewardRedStarRingHonorTableRow_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, K2Node_Select_Default_1) == 0x0001C8, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_IsVisibleRSR_visisble) == 0x0001D0, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_IsVisibleRSR_visisble' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_CreatePlayAnimationProxyObject_Result) == 0x0001D8, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_CreatePlayAnimationProxyObject_Result' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_CreatePlayAnimationProxyObject_ReturnValue) == 0x0001E0, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_CreatePlayAnimationProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_IsValid_ReturnValue) == 0x0001E8, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, K2Node_CreateDelegate_OutputDelegate_3) == 0x0001EC, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_CreatePlayAnimationProxyObject_Result_1) == 0x000200, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_CreatePlayAnimationProxyObject_Result_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_CreatePlayAnimationProxyObject_ReturnValue_1) == 0x000208, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_CreatePlayAnimationProxyObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_IsValid_ReturnValue_1) == 0x000210, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_CreatePlayAnimationProxyObject_Result_2) == 0x000218, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_CreatePlayAnimationProxyObject_Result_2' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_CreatePlayAnimationProxyObject_ReturnValue_2) == 0x000220, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_CreatePlayAnimationProxyObject_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_IsValid_ReturnValue_2) == 0x000228, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_CreatePlayAnimationProxyObject_Result_3) == 0x000230, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_CreatePlayAnimationProxyObject_Result_3' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_CreatePlayAnimationProxyObject_ReturnValue_3) == 0x000238, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_CreatePlayAnimationProxyObject_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_CreatePlayAnimationProxyObject_Result_4) == 0x000240, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_CreatePlayAnimationProxyObject_Result_4' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_CreatePlayAnimationProxyObject_ReturnValue_4) == 0x000248, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_CreatePlayAnimationProxyObject_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_IsValid_ReturnValue_3) == 0x000250, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_IsValid_ReturnValue_4) == 0x000251, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_IsResultReward_bIsResultReward) == 0x000252, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_IsResultReward_bIsResultReward' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_IsResultReward_bIsResultReward_1) == 0x000253, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_IsResultReward_bIsResultReward_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_IsResultReward_bIsResultReward_2) == 0x000254, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_IsResultReward_bIsResultReward_2' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_Not_PreBool_ReturnValue) == 0x000255, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, K2Node_CreateDelegate_OutputDelegate_4) == 0x000258, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_Add_IntInt_ReturnValue) == 0x000268, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, K2Node_CreateDelegate_OutputDelegate_5) == 0x00026C, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_Array_IsValidIndex_ReturnValue) == 0x00027C, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, K2Node_SwitchEnum_CmpSuccess) == 0x00027D, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_GetItemWidget_Widget) == 0x000280, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_GetItemWidget_Widget' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000288, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, K2Node_Select_Default_2) == 0x000290, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_PlayAnimation_ReturnValue) == 0x000298, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, K2Node_Select_Default_3) == 0x0002A0, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, K2Node_Select_Default_4) == 0x0002A8, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, K2Node_Select_Default_5) == 0x0002B0, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::K2Node_Select_Default_5' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, K2Node_CreateDelegate_OutputDelegate_6) == 0x0002B8, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, K2Node_CreateDelegate_OutputDelegate_7) == 0x0002C8, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0002D8, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, CallFunc_PlayAnimation_ReturnValue_1) == 0x0002E0, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward, K2Node_Select_Default_6) == 0x0002E8, "Member 'WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward::K2Node_Select_Default_6' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward;
 
 // Function WBP_Result_Reward.WBP_Result_Reward_C.GetItemWidget
 // 0x0020 (0x0020 - 0x0000)
@@ -231,12 +143,7 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_Result_Sub_DonpaTicket_Details_C*  K2Node_Select_Default;                             // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_Reward_C_GetItemWidget) == 0x000008, "Wrong alignment on WBP_Result_Reward_C_GetItemWidget");
-static_assert(sizeof(WBP_Result_Reward_C_GetItemWidget) == 0x000020, "Wrong size on WBP_Result_Reward_C_GetItemWidget");
-static_assert(offsetof(WBP_Result_Reward_C_GetItemWidget, Index_0) == 0x000000, "Member 'WBP_Result_Reward_C_GetItemWidget::Index_0' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_GetItemWidget, Widget) == 0x000008, "Member 'WBP_Result_Reward_C_GetItemWidget::Widget' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_GetItemWidget, Temp_int_Variable) == 0x000010, "Member 'WBP_Result_Reward_C_GetItemWidget::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_GetItemWidget, K2Node_Select_Default) == 0x000018, "Member 'WBP_Result_Reward_C_GetItemWidget::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_Reward_C_GetItemWidget;
 
 // Function WBP_Result_Reward.WBP_Result_Reward_C.IsResultReward
 // 0x0005 (0x0005 - 0x0000)
@@ -249,13 +156,7 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_Reward_C_IsResultReward) == 0x000001, "Wrong alignment on WBP_Result_Reward_C_IsResultReward");
-static_assert(sizeof(WBP_Result_Reward_C_IsResultReward) == 0x000005, "Wrong size on WBP_Result_Reward_C_IsResultReward");
-static_assert(offsetof(WBP_Result_Reward_C_IsResultReward, bIsResultReward) == 0x000000, "Member 'WBP_Result_Reward_C_IsResultReward::bIsResultReward' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_IsResultReward, CallFunc_IsGroupRaceFestaColor_ReturnValue) == 0x000001, "Member 'WBP_Result_Reward_C_IsResultReward::CallFunc_IsGroupRaceFestaColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_IsResultReward, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x000002, "Member 'WBP_Result_Reward_C_IsResultReward::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_IsResultReward, CallFunc_Not_PreBool_ReturnValue) == 0x000003, "Member 'WBP_Result_Reward_C_IsResultReward::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_IsResultReward, K2Node_SwitchEnum_CmpSuccess) == 0x000004, "Member 'WBP_Result_Reward_C_IsResultReward::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_Reward_C_IsResultReward;
 
 // Function WBP_Result_Reward.WBP_Result_Reward_C.IsRewardDispComplete
 // 0x0001 (0x0001 - 0x0000)
@@ -264,9 +165,7 @@ struct WBP_Result_Reward_C_IsRewardDispComplete final
 public:
 	bool                                          bIsComplete;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_Reward_C_IsRewardDispComplete) == 0x000001, "Wrong alignment on WBP_Result_Reward_C_IsRewardDispComplete");
-static_assert(sizeof(WBP_Result_Reward_C_IsRewardDispComplete) == 0x000001, "Wrong size on WBP_Result_Reward_C_IsRewardDispComplete");
-static_assert(offsetof(WBP_Result_Reward_C_IsRewardDispComplete, bIsComplete) == 0x000000, "Member 'WBP_Result_Reward_C_IsRewardDispComplete::bIsComplete' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_Reward_C_IsRewardDispComplete;
 
 // Function WBP_Result_Reward.WBP_Result_Reward_C.IsVisibleRSR
 // 0x0018 (0x0018 - 0x0000)
@@ -278,11 +177,7 @@ public:
 	class UUnionStatsManager*                     CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsRaceRedStarRingDisplay_ReturnValue;     // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_Reward_C_IsVisibleRSR) == 0x000008, "Wrong alignment on WBP_Result_Reward_C_IsVisibleRSR");
-static_assert(sizeof(WBP_Result_Reward_C_IsVisibleRSR) == 0x000018, "Wrong size on WBP_Result_Reward_C_IsVisibleRSR");
-static_assert(offsetof(WBP_Result_Reward_C_IsVisibleRSR, visisble) == 0x000000, "Member 'WBP_Result_Reward_C_IsVisibleRSR::visisble' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_IsVisibleRSR, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000008, "Member 'WBP_Result_Reward_C_IsVisibleRSR::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_IsVisibleRSR, CallFunc_IsRaceRedStarRingDisplay_ReturnValue) == 0x000010, "Member 'WBP_Result_Reward_C_IsVisibleRSR::CallFunc_IsRaceRedStarRingDisplay_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_Reward_C_IsVisibleRSR;
 
 // Function WBP_Result_Reward.WBP_Result_Reward_C.PlayOtherResultReward
 // 0x0018 (0x0018 - 0x0000)
@@ -292,10 +187,7 @@ public:
 	TArray<struct FHonorCommendationData>         HonorList;                                         // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	int32                                         Index_0;                                           // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Result_Reward_C_PlayOtherResultReward) == 0x000008, "Wrong alignment on WBP_Result_Reward_C_PlayOtherResultReward");
-static_assert(sizeof(WBP_Result_Reward_C_PlayOtherResultReward) == 0x000018, "Wrong size on WBP_Result_Reward_C_PlayOtherResultReward");
-static_assert(offsetof(WBP_Result_Reward_C_PlayOtherResultReward, HonorList) == 0x000000, "Member 'WBP_Result_Reward_C_PlayOtherResultReward::HonorList' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_PlayOtherResultReward, Index_0) == 0x000010, "Member 'WBP_Result_Reward_C_PlayOtherResultReward::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_Reward_C_PlayOtherResultReward;
 
 // Function WBP_Result_Reward.WBP_Result_Reward_C.PlayOtherSE
 // 0x0020 (0x0020 - 0x0000)
@@ -314,18 +206,7 @@ public:
 	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSoundHandle                           CallFunc_SetPanSplit_ReturnValue;                  // 0x001C(0x0004)()
 };
-static_assert(alignof(WBP_Result_Reward_C_PlayOtherSE) == 0x000008, "Wrong alignment on WBP_Result_Reward_C_PlayOtherSE");
-static_assert(sizeof(WBP_Result_Reward_C_PlayOtherSE) == 0x000020, "Wrong size on WBP_Result_Reward_C_PlayOtherSE");
-static_assert(offsetof(WBP_Result_Reward_C_PlayOtherSE, SoundID) == 0x000000, "Member 'WBP_Result_Reward_C_PlayOtherSE::SoundID' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_PlayOtherSE, PlayerIndex) == 0x000008, "Member 'WBP_Result_Reward_C_PlayOtherSE::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_PlayOtherSE, Temp_int_Variable) == 0x00000C, "Member 'WBP_Result_Reward_C_PlayOtherSE::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_PlayOtherSE, CallFunc_SoundPlay_ReturnValue) == 0x000010, "Member 'WBP_Result_Reward_C_PlayOtherSE::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_PlayOtherSE, Temp_byte_Variable) == 0x000014, "Member 'WBP_Result_Reward_C_PlayOtherSE::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_PlayOtherSE, Temp_byte_Variable_1) == 0x000015, "Member 'WBP_Result_Reward_C_PlayOtherSE::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_PlayOtherSE, Temp_byte_Variable_2) == 0x000016, "Member 'WBP_Result_Reward_C_PlayOtherSE::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_PlayOtherSE, Temp_byte_Variable_3) == 0x000017, "Member 'WBP_Result_Reward_C_PlayOtherSE::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_PlayOtherSE, K2Node_Select_Default) == 0x000018, "Member 'WBP_Result_Reward_C_PlayOtherSE::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_PlayOtherSE, CallFunc_SetPanSplit_ReturnValue) == 0x00001C, "Member 'WBP_Result_Reward_C_PlayOtherSE::CallFunc_SetPanSplit_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_Reward_C_PlayOtherSE;
 
 // Function WBP_Result_Reward.WBP_Result_Reward_C.PlayPlayerSE
 // 0x0020 (0x0020 - 0x0000)
@@ -345,17 +226,7 @@ public:
 	uint8                                         Pad_1A[0x2];                                       // 0x001A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSoundHandle                           CallFunc_SetPanSplit_ReturnValue;                  // 0x001C(0x0004)()
 };
-static_assert(alignof(WBP_Result_Reward_C_PlayPlayerSE) == 0x000008, "Wrong alignment on WBP_Result_Reward_C_PlayPlayerSE");
-static_assert(sizeof(WBP_Result_Reward_C_PlayPlayerSE) == 0x000020, "Wrong size on WBP_Result_Reward_C_PlayPlayerSE");
-static_assert(offsetof(WBP_Result_Reward_C_PlayPlayerSE, SoundID) == 0x000000, "Member 'WBP_Result_Reward_C_PlayPlayerSE::SoundID' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_PlayPlayerSE, Temp_bool_Variable) == 0x000008, "Member 'WBP_Result_Reward_C_PlayPlayerSE::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_PlayPlayerSE, CallFunc_SoundPlay_ReturnValue) == 0x00000C, "Member 'WBP_Result_Reward_C_PlayPlayerSE::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_PlayPlayerSE, Temp_byte_Variable) == 0x000010, "Member 'WBP_Result_Reward_C_PlayPlayerSE::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_PlayPlayerSE, Temp_byte_Variable_1) == 0x000011, "Member 'WBP_Result_Reward_C_PlayPlayerSE::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_PlayPlayerSE, CallFunc_GetSelectedPlayerCount_ReturnValue) == 0x000014, "Member 'WBP_Result_Reward_C_PlayPlayerSE::CallFunc_GetSelectedPlayerCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_PlayPlayerSE, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000018, "Member 'WBP_Result_Reward_C_PlayPlayerSE::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_PlayPlayerSE, K2Node_Select_Default) == 0x000019, "Member 'WBP_Result_Reward_C_PlayPlayerSE::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_PlayPlayerSE, CallFunc_SetPanSplit_ReturnValue) == 0x00001C, "Member 'WBP_Result_Reward_C_PlayPlayerSE::CallFunc_SetPanSplit_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_Reward_C_PlayPlayerSE;
 
 // Function WBP_Result_Reward.WBP_Result_Reward_C.SetRewardInfo
 // 0x0020 (0x0020 - 0x0000)
@@ -365,10 +236,7 @@ public:
 	TArray<struct FRewardRedStarRingData>         RSRList;                                           // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	TArray<struct FResultRewardItemInfo>          CallFunc_MakeResultRewardItemInfos_Output;         // 0x0010(0x0010)(ReferenceParm)
 };
-static_assert(alignof(WBP_Result_Reward_C_SetRewardInfo) == 0x000008, "Wrong alignment on WBP_Result_Reward_C_SetRewardInfo");
-static_assert(sizeof(WBP_Result_Reward_C_SetRewardInfo) == 0x000020, "Wrong size on WBP_Result_Reward_C_SetRewardInfo");
-static_assert(offsetof(WBP_Result_Reward_C_SetRewardInfo, RSRList) == 0x000000, "Member 'WBP_Result_Reward_C_SetRewardInfo::RSRList' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Reward_C_SetRewardInfo, CallFunc_MakeResultRewardItemInfos_Output) == 0x000010, "Member 'WBP_Result_Reward_C_SetRewardInfo::CallFunc_MakeResultRewardItemInfos_Output' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Result_Reward_C_SetRewardInfo;
 
 }
 

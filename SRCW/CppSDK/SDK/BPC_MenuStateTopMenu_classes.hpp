@@ -12,10 +12,10 @@
 
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UnionLib_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "UnionUI_structs.hpp"
+#include "UnionLib_structs.hpp"
 
 
 namespace SDK
@@ -39,6 +39,7 @@ public:
 	void SetupRacerConfig();
 	void ConvertDriverIdToIndex(EDriverId ID, int32* Index_0);
 	void ConvertIndexToDriverId(int32 Index_0, EDriverId* ID);
+	void CreateRewardGetDisplay();
 	void OnRewardDisplayEnd_Impl();
 	void SetRewardDisplayParam();
 	void ClearRewardDisplayRequest();
@@ -50,7 +51,6 @@ public:
 	void OnInitState();
 	void OnUpdateState(float InDeltaTime);
 	void OnExitState();
-	void CreateRewardGetDisplay();
 	void OnPopupOK(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex);
 	void NgCreatePopupWindow();
 	void EventFinishedFade(EUnionUIFadeDirection FadeDirection);
@@ -61,22 +61,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_MenuStateTopMenu_C">();
+		BP_STATIC_CLASS_IMPL("BPC_MenuStateTopMenu_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_MenuStateTopMenu_C")
 	}
 	static class UBPC_MenuStateTopMenu_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_MenuStateTopMenu_C>();
 	}
 };
-static_assert(alignof(UBPC_MenuStateTopMenu_C) == 0x000008, "Wrong alignment on UBPC_MenuStateTopMenu_C");
-static_assert(sizeof(UBPC_MenuStateTopMenu_C) == 0x000178, "Wrong size on UBPC_MenuStateTopMenu_C");
-static_assert(offsetof(UBPC_MenuStateTopMenu_C, UberGraphFrame) == 0x000138, "Member 'UBPC_MenuStateTopMenu_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStateTopMenu_C, OwnerSequence) == 0x000140, "Member 'UBPC_MenuStateTopMenu_C::OwnerSequence' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStateTopMenu_C, TopMenu) == 0x000148, "Member 'UBPC_MenuStateTopMenu_C::TopMenu' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStateTopMenu_C, NextSequenceState) == 0x000150, "Member 'UBPC_MenuStateTopMenu_C::NextSequenceState' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStateTopMenu_C, RewardAchievementDataArray) == 0x000158, "Member 'UBPC_MenuStateTopMenu_C::RewardAchievementDataArray' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStateTopMenu_C, PopupWindow) == 0x000168, "Member 'UBPC_MenuStateTopMenu_C::PopupWindow' has a wrong offset!");
-static_assert(offsetof(UBPC_MenuStateTopMenu_C, RewardWindow) == 0x000170, "Member 'UBPC_MenuStateTopMenu_C::RewardWindow' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_MenuStateTopMenu_C;
 
 }
 

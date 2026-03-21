@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "UNION_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UnionUI_classes.hpp"
-#include "UNION_structs.hpp"
 
 
 namespace SDK
@@ -62,28 +62,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MachineCustom_Sub_CustomPaint_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MachineCustom_Sub_CustomPaint_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MachineCustom_Sub_CustomPaint_C")
 	}
 	static class UWBP_MachineCustom_Sub_CustomPaint_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MachineCustom_Sub_CustomPaint_C>();
 	}
 };
-static_assert(alignof(UWBP_MachineCustom_Sub_CustomPaint_C) == 0x000008, "Wrong alignment on UWBP_MachineCustom_Sub_CustomPaint_C");
-static_assert(sizeof(UWBP_MachineCustom_Sub_CustomPaint_C) == 0x000458, "Wrong size on UWBP_MachineCustom_Sub_CustomPaint_C");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomPaint_C, UberGraphFrame) == 0x0003D8, "Member 'UWBP_MachineCustom_Sub_CustomPaint_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomPaint_C, VBButton) == 0x0003E0, "Member 'UWBP_MachineCustom_Sub_CustomPaint_C::VBButton' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomPaint_C, WBP_CMN_SubMenu_Btn) == 0x0003E8, "Member 'UWBP_MachineCustom_Sub_CustomPaint_C::WBP_CMN_SubMenu_Btn' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomPaint_C, WBP_MachineCustom_Sub_CustomPaint_Glow) == 0x0003F0, "Member 'UWBP_MachineCustom_Sub_CustomPaint_C::WBP_MachineCustom_Sub_CustomPaint_Glow' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomPaint_C, WBP_MachineCustom_Sub_CustomPaint_Liquid_Body) == 0x0003F8, "Member 'UWBP_MachineCustom_Sub_CustomPaint_C::WBP_MachineCustom_Sub_CustomPaint_Liquid_Body' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomPaint_C, WBP_MachineCustom_Sub_CustomPaint_Liquid_Cockpit) == 0x000400, "Member 'UWBP_MachineCustom_Sub_CustomPaint_C::WBP_MachineCustom_Sub_CustomPaint_Liquid_Cockpit' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomPaint_C, WBP_MachineCustom_Sub_CustomPaint_Liquid_Wheel) == 0x000408, "Member 'UWBP_MachineCustom_Sub_CustomPaint_C::WBP_MachineCustom_Sub_CustomPaint_Liquid_Wheel' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomPaint_C, OnColorAreaSelected) == 0x000410, "Member 'UWBP_MachineCustom_Sub_CustomPaint_C::OnColorAreaSelected' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomPaint_C, OnCancel) == 0x000420, "Member 'UWBP_MachineCustom_Sub_CustomPaint_C::OnCancel' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomPaint_C, OnDefault) == 0x000430, "Member 'UWBP_MachineCustom_Sub_CustomPaint_C::OnDefault' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomPaint_C, NavBuilder) == 0x000440, "Member 'UWBP_MachineCustom_Sub_CustomPaint_C::NavBuilder' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomPaint_C, ButtonsPanel0) == 0x000448, "Member 'UWBP_MachineCustom_Sub_CustomPaint_C::ButtonsPanel0' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_CustomPaint_C, ButtonsPanel1) == 0x000450, "Member 'UWBP_MachineCustom_Sub_CustomPaint_C::ButtonsPanel1' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MachineCustom_Sub_CustomPaint_C;
 
 }
 

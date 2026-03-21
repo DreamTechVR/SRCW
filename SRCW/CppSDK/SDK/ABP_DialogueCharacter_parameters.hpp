@@ -23,9 +23,7 @@ struct ABP_DialogueCharacter_C_AnimGraph final
 public:
 	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(ABP_DialogueCharacter_C_AnimGraph) == 0x000008, "Wrong alignment on ABP_DialogueCharacter_C_AnimGraph");
-static_assert(sizeof(ABP_DialogueCharacter_C_AnimGraph) == 0x000010, "Wrong size on ABP_DialogueCharacter_C_AnimGraph");
-static_assert(offsetof(ABP_DialogueCharacter_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'ABP_DialogueCharacter_C_AnimGraph::AnimGraph_0' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_DialogueCharacter_C_AnimGraph;
 
 // Function ABP_DialogueCharacter.ABP_DialogueCharacter_C.ExecuteUbergraph_ABP_DialogueCharacter
 // 0x0080 (0x0080 - 0x0000)
@@ -59,32 +57,7 @@ public:
 	double                                        CallFunc_LessEqual_DoubleDouble_A_ImplicitCast_1;  // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_LessEqual_DoubleDouble_A_ImplicitCast_2;  // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter) == 0x000008, "Wrong alignment on ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter");
-static_assert(sizeof(ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter) == 0x000080, "Wrong size on ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter");
-static_assert(offsetof(ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter, EntryPoint) == 0x000000, "Member 'ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter, CallFunc_GetRelevantAnimTimeRemainingFraction_ReturnValue) == 0x000004, "Member 'ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter::CallFunc_GetRelevantAnimTimeRemainingFraction_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter, CallFunc_LessEqual_DoubleDouble_ReturnValue) == 0x000008, "Member 'ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter::CallFunc_LessEqual_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000009, "Member 'ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter, CallFunc_GetRelevantAnimTimeRemainingFraction_ReturnValue_1) == 0x00000C, "Member 'ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter::CallFunc_GetRelevantAnimTimeRemainingFraction_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter, CallFunc_LessEqual_DoubleDouble_ReturnValue_1) == 0x000010, "Member 'ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter::CallFunc_LessEqual_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000011, "Member 'ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x000012, "Member 'ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter, CallFunc_EqualEqual_ByteByte_ReturnValue_3) == 0x000013, "Member 'ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter::CallFunc_EqualEqual_ByteByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter, CallFunc_GetRelevantAnimTimeRemainingFraction_ReturnValue_2) == 0x000014, "Member 'ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter::CallFunc_GetRelevantAnimTimeRemainingFraction_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter, CallFunc_LessEqual_DoubleDouble_ReturnValue_2) == 0x000018, "Member 'ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter::CallFunc_LessEqual_DoubleDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter, CallFunc_EqualEqual_ByteByte_ReturnValue_4) == 0x000019, "Member 'ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter::CallFunc_EqualEqual_ByteByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter, CallFunc_GetAnimationAssetById_ReturnValue) == 0x000020, "Member 'ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter::CallFunc_GetAnimationAssetById_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter, CallFunc_GetAnimationAssetById_ReturnValue_1) == 0x000028, "Member 'ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter::CallFunc_GetAnimationAssetById_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter, CallFunc_GetAnimationAssetById_ReturnValue_2) == 0x000030, "Member 'ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter::CallFunc_GetAnimationAssetById_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter, CallFunc_GetAnimationAssetById_ReturnValue_3) == 0x000038, "Member 'ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter::CallFunc_GetAnimationAssetById_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter, CallFunc_GetAnimationAssetById_ReturnValue_4) == 0x000040, "Member 'ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter::CallFunc_GetAnimationAssetById_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter, CallFunc_GetAnimationAssetById_ReturnValue_5) == 0x000048, "Member 'ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter::CallFunc_GetAnimationAssetById_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter, CallFunc_GetAnimationAssetById_ReturnValue_6) == 0x000050, "Member 'ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter::CallFunc_GetAnimationAssetById_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter, CallFunc_GetAnimationAssetById_ReturnValue_7) == 0x000058, "Member 'ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter::CallFunc_GetAnimationAssetById_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter, CallFunc_GetAnimationAssetById_ReturnValue_8) == 0x000060, "Member 'ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter::CallFunc_GetAnimationAssetById_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter, CallFunc_LessEqual_DoubleDouble_A_ImplicitCast) == 0x000068, "Member 'ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter::CallFunc_LessEqual_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter, CallFunc_LessEqual_DoubleDouble_A_ImplicitCast_1) == 0x000070, "Member 'ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter::CallFunc_LessEqual_DoubleDouble_A_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter, CallFunc_LessEqual_DoubleDouble_A_ImplicitCast_2) == 0x000078, "Member 'ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter::CallFunc_LessEqual_DoubleDouble_A_ImplicitCast_2' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_DialogueCharacter_C_ExecuteUbergraph_ABP_DialogueCharacter;
 
 }
 

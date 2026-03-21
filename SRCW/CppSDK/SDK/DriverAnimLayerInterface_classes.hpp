@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_classes.hpp"
 #include "UNION_structs.hpp"
+#include "Engine_classes.hpp"
 
 
 namespace SDK
@@ -34,7 +34,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DriverAnimLayerInterface_C">();
+		BP_STATIC_CLASS_IMPL("DriverAnimLayerInterface_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DriverAnimLayerInterface_C")
 	}
 	static class IDriverAnimLayerInterface_C* GetDefaultObj()
 	{
@@ -50,8 +54,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IDriverAnimLayerInterface_C) == 0x000001, "Wrong alignment on IDriverAnimLayerInterface_C");
-static_assert(sizeof(IDriverAnimLayerInterface_C) == 0x000001, "Wrong size on IDriverAnimLayerInterface_C");
+DUMPER7_ASSERTS_IDriverAnimLayerInterface_C;
 
 }
 

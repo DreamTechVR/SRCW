@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -57,25 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GadgetCustom_Sub_TabBtn_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GadgetCustom_Sub_TabBtn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GadgetCustom_Sub_TabBtn_C")
 	}
 	static class UWBP_GadgetCustom_Sub_TabBtn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GadgetCustom_Sub_TabBtn_C>();
 	}
 };
-static_assert(alignof(UWBP_GadgetCustom_Sub_TabBtn_C) == 0x000008, "Wrong alignment on UWBP_GadgetCustom_Sub_TabBtn_C");
-static_assert(sizeof(UWBP_GadgetCustom_Sub_TabBtn_C) == 0x000548, "Wrong size on UWBP_GadgetCustom_Sub_TabBtn_C");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TabBtn_C, UberGraphFrame) == 0x0004F8, "Member 'UWBP_GadgetCustom_Sub_TabBtn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TabBtn_C, Tab_Select_Loop) == 0x000500, "Member 'UWBP_GadgetCustom_Sub_TabBtn_C::Tab_Select_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TabBtn_C, Tab_Active_Loop) == 0x000508, "Member 'UWBP_GadgetCustom_Sub_TabBtn_C::Tab_Active_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TabBtn_C, Active) == 0x000510, "Member 'UWBP_GadgetCustom_Sub_TabBtn_C::Active' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TabBtn_C, DSP_FestaIcon) == 0x000518, "Member 'UWBP_GadgetCustom_Sub_TabBtn_C::DSP_FestaIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TabBtn_C, MouseInteraction) == 0x000520, "Member 'UWBP_GadgetCustom_Sub_TabBtn_C::MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TabBtn_C, PAT_GadgetPlate_TabPict_Delete) == 0x000528, "Member 'UWBP_GadgetCustom_Sub_TabBtn_C::PAT_GadgetPlate_TabPict_Delete' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TabBtn_C, Select) == 0x000530, "Member 'UWBP_GadgetCustom_Sub_TabBtn_C::Select' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TabBtn_C, TXT_TabBtnName) == 0x000538, "Member 'UWBP_GadgetCustom_Sub_TabBtn_C::TXT_TabBtnName' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TabBtn_C, WidgetSwitcher_TabBntBase) == 0x000540, "Member 'UWBP_GadgetCustom_Sub_TabBtn_C::WidgetSwitcher_TabBntBase' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GadgetCustom_Sub_TabBtn_C;
 
 }
 

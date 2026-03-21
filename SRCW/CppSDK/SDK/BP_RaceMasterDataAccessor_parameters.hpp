@@ -30,17 +30,7 @@ public:
 	uint8                                         Pad_17[0x1];                                       // 0x0017(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_RaceMasterDataAccessor_C_ExecuteUbergraph_BP_RaceMasterDataAccessor) == 0x000004, "Wrong alignment on BP_RaceMasterDataAccessor_C_ExecuteUbergraph_BP_RaceMasterDataAccessor");
-static_assert(sizeof(BP_RaceMasterDataAccessor_C_ExecuteUbergraph_BP_RaceMasterDataAccessor) == 0x00001C, "Wrong size on BP_RaceMasterDataAccessor_C_ExecuteUbergraph_BP_RaceMasterDataAccessor");
-static_assert(offsetof(BP_RaceMasterDataAccessor_C_ExecuteUbergraph_BP_RaceMasterDataAccessor, EntryPoint) == 0x000000, "Member 'BP_RaceMasterDataAccessor_C_ExecuteUbergraph_BP_RaceMasterDataAccessor::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_RaceMasterDataAccessor_C_ExecuteUbergraph_BP_RaceMasterDataAccessor, CallFunc_MakeLiteralInt_ReturnValue) == 0x000004, "Member 'BP_RaceMasterDataAccessor_C_ExecuteUbergraph_BP_RaceMasterDataAccessor::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceMasterDataAccessor_C_ExecuteUbergraph_BP_RaceMasterDataAccessor, Temp_int_Variable) == 0x000008, "Member 'BP_RaceMasterDataAccessor_C_ExecuteUbergraph_BP_RaceMasterDataAccessor::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_RaceMasterDataAccessor_C_ExecuteUbergraph_BP_RaceMasterDataAccessor, Temp_int_Variable_1) == 0x00000C, "Member 'BP_RaceMasterDataAccessor_C_ExecuteUbergraph_BP_RaceMasterDataAccessor::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceMasterDataAccessor_C_ExecuteUbergraph_BP_RaceMasterDataAccessor, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'BP_RaceMasterDataAccessor_C_ExecuteUbergraph_BP_RaceMasterDataAccessor::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceMasterDataAccessor_C_ExecuteUbergraph_BP_RaceMasterDataAccessor, CallFunc_Conv_IntToByte_ReturnValue) == 0x000014, "Member 'BP_RaceMasterDataAccessor_C_ExecuteUbergraph_BP_RaceMasterDataAccessor::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceMasterDataAccessor_C_ExecuteUbergraph_BP_RaceMasterDataAccessor, CallFunc_GetEnumeratorValueFromIndex_ReturnValue) == 0x000015, "Member 'BP_RaceMasterDataAccessor_C_ExecuteUbergraph_BP_RaceMasterDataAccessor::CallFunc_GetEnumeratorValueFromIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceMasterDataAccessor_C_ExecuteUbergraph_BP_RaceMasterDataAccessor, CallFunc_Less_IntInt_ReturnValue) == 0x000016, "Member 'BP_RaceMasterDataAccessor_C_ExecuteUbergraph_BP_RaceMasterDataAccessor::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceMasterDataAccessor_C_ExecuteUbergraph_BP_RaceMasterDataAccessor, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000018, "Member 'BP_RaceMasterDataAccessor_C_ExecuteUbergraph_BP_RaceMasterDataAccessor::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_RaceMasterDataAccessor_C_ExecuteUbergraph_BP_RaceMasterDataAccessor;
 
 }
 

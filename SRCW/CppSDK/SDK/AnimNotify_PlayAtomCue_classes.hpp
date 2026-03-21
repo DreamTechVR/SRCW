@@ -35,20 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayAtomCue_C">();
+		BP_STATIC_CLASS_IMPL("PlayAtomCue_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayAtomCue_C")
 	}
 	static class UPlayAtomCue_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayAtomCue_C>();
 	}
 };
-static_assert(alignof(UPlayAtomCue_C) == 0x000008, "Wrong alignment on UPlayAtomCue_C");
-static_assert(sizeof(UPlayAtomCue_C) == 0x000060, "Wrong size on UPlayAtomCue_C");
-static_assert(offsetof(UPlayAtomCue_C, Sound) == 0x000038, "Member 'UPlayAtomCue_C::Sound' has a wrong offset!");
-static_assert(offsetof(UPlayAtomCue_C, bone) == 0x000040, "Member 'UPlayAtomCue_C::bone' has a wrong offset!");
-static_assert(offsetof(UPlayAtomCue_C, follow) == 0x000048, "Member 'UPlayAtomCue_C::follow' has a wrong offset!");
-static_assert(offsetof(UPlayAtomCue_C, VolumeMultiplier) == 0x000050, "Member 'UPlayAtomCue_C::VolumeMultiplier' has a wrong offset!");
-static_assert(offsetof(UPlayAtomCue_C, PitchMultiplier) == 0x000058, "Member 'UPlayAtomCue_C::PitchMultiplier' has a wrong offset!");
+DUMPER7_ASSERTS_UPlayAtomCue_C;
 
 }
 

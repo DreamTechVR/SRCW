@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
+#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
 #include "UnionUI_structs.hpp"
-#include "UNION_classes.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -77,44 +77,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CourseSelect_Sub_CourseIcon_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CourseSelect_Sub_CourseIcon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CourseSelect_Sub_CourseIcon_C")
 	}
 	static class UWBP_CourseSelect_Sub_CourseIcon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CourseSelect_Sub_CourseIcon_C>();
 	}
 };
-static_assert(alignof(UWBP_CourseSelect_Sub_CourseIcon_C) == 0x000008, "Wrong alignment on UWBP_CourseSelect_Sub_CourseIcon_C");
-static_assert(sizeof(UWBP_CourseSelect_Sub_CourseIcon_C) == 0x000788, "Wrong size on UWBP_CourseSelect_Sub_CourseIcon_C");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CourseIcon_C, UberGraphFrame) == 0x0006A0, "Member 'UWBP_CourseSelect_Sub_CourseIcon_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CourseIcon_C, Btn_Select_Loop_ForPartyRace) == 0x0006A8, "Member 'UWBP_CourseSelect_Sub_CourseIcon_C::Btn_Select_Loop_ForPartyRace' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CourseIcon_C, Btn_TimeTrial_Select_Out) == 0x0006B0, "Member 'UWBP_CourseSelect_Sub_CourseIcon_C::Btn_TimeTrial_Select_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CourseIcon_C, Btn_TimeTrial_Select_Loop) == 0x0006B8, "Member 'UWBP_CourseSelect_Sub_CourseIcon_C::Btn_TimeTrial_Select_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CourseIcon_C, AnotherIcon) == 0x0006C0, "Member 'UWBP_CourseSelect_Sub_CourseIcon_C::AnotherIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CourseIcon_C, CourseIcon) == 0x0006C8, "Member 'UWBP_CourseSelect_Sub_CourseIcon_C::CourseIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CourseIcon_C, Coursor_Icon_Eff) == 0x0006D0, "Member 'UWBP_CourseSelect_Sub_CourseIcon_C::Coursor_Icon_Eff' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CourseIcon_C, Coursor_Icon_Eff2) == 0x0006D8, "Member 'UWBP_CourseSelect_Sub_CourseIcon_C::Coursor_Icon_Eff2' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CourseIcon_C, Coursor_Icon_Eff_Core) == 0x0006E0, "Member 'UWBP_CourseSelect_Sub_CourseIcon_C::Coursor_Icon_Eff_Core' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CourseIcon_C, Coursor_Icon_Eff_Core2) == 0x0006E8, "Member 'UWBP_CourseSelect_Sub_CourseIcon_C::Coursor_Icon_Eff_Core2' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CourseIcon_C, Coursor_Icon_LightGlare) == 0x0006F0, "Member 'UWBP_CourseSelect_Sub_CourseIcon_C::Coursor_Icon_LightGlare' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CourseIcon_C, Cursor_CourseSelect) == 0x0006F8, "Member 'UWBP_CourseSelect_Sub_CourseIcon_C::Cursor_CourseSelect' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CourseIcon_C, Cursor_CourseSelect_1) == 0x000700, "Member 'UWBP_CourseSelect_Sub_CourseIcon_C::Cursor_CourseSelect_1' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CourseIcon_C, DSP_GrandPrixIcon_Eff) == 0x000708, "Member 'UWBP_CourseSelect_Sub_CourseIcon_C::DSP_GrandPrixIcon_Eff' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CourseIcon_C, LockIcon) == 0x000710, "Member 'UWBP_CourseSelect_Sub_CourseIcon_C::LockIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CourseIcon_C, MedalSlot_Set) == 0x000718, "Member 'UWBP_CourseSelect_Sub_CourseIcon_C::MedalSlot_Set' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CourseIcon_C, MF_GateQuestion) == 0x000720, "Member 'UWBP_CourseSelect_Sub_CourseIcon_C::MF_GateQuestion' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CourseIcon_C, MouseInteraction) == 0x000728, "Member 'UWBP_CourseSelect_Sub_CourseIcon_C::MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CourseIcon_C, Overlay_Eff_Set) == 0x000730, "Member 'UWBP_CourseSelect_Sub_CourseIcon_C::Overlay_Eff_Set' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CourseIcon_C, PAT_CourseIcon) == 0x000738, "Member 'UWBP_CourseSelect_Sub_CourseIcon_C::PAT_CourseIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CourseIcon_C, PAT_CourseIcon_EmeraldMask) == 0x000740, "Member 'UWBP_CourseSelect_Sub_CourseIcon_C::PAT_CourseIcon_EmeraldMask' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CourseIcon_C, RingEff_Light) == 0x000748, "Member 'UWBP_CourseSelect_Sub_CourseIcon_C::RingEff_Light' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CourseIcon_C, WBP_CMN_TextBalloon) == 0x000750, "Member 'UWBP_CourseSelect_Sub_CourseIcon_C::WBP_CMN_TextBalloon' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CourseIcon_C, WBP_CourseSelect_Sub_Trophy) == 0x000758, "Member 'UWBP_CourseSelect_Sub_CourseIcon_C::WBP_CourseSelect_Sub_Trophy' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CourseIcon_C, WBP_TimeTrial_MedalSlot) == 0x000760, "Member 'UWBP_CourseSelect_Sub_CourseIcon_C::WBP_TimeTrial_MedalSlot' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CourseIcon_C, WidgetSwitcher_CourseIcon) == 0x000768, "Member 'UWBP_CourseSelect_Sub_CourseIcon_C::WidgetSwitcher_CourseIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CourseIcon_C, WidgetSwitcher_Cursor) == 0x000770, "Member 'UWBP_CourseSelect_Sub_CourseIcon_C::WidgetSwitcher_Cursor' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CourseIcon_C, Locking) == 0x000778, "Member 'UWBP_CourseSelect_Sub_CourseIcon_C::Locking' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_CourseIcon_C, NowLoopAnim) == 0x000780, "Member 'UWBP_CourseSelect_Sub_CourseIcon_C::NowLoopAnim' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CourseSelect_Sub_CourseIcon_C;
 
 }
 

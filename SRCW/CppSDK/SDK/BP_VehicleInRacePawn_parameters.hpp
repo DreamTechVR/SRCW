@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "UNION_structs.hpp"
 
 
 namespace SDK::Params
@@ -25,9 +25,7 @@ struct BP_VehicleInRacePawn_C_ChangeVehicleSize final
 public:
 	float                                         SizeRate;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_VehicleInRacePawn_C_ChangeVehicleSize) == 0x000004, "Wrong alignment on BP_VehicleInRacePawn_C_ChangeVehicleSize");
-static_assert(sizeof(BP_VehicleInRacePawn_C_ChangeVehicleSize) == 0x000004, "Wrong size on BP_VehicleInRacePawn_C_ChangeVehicleSize");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ChangeVehicleSize, SizeRate) == 0x000000, "Member 'BP_VehicleInRacePawn_C_ChangeVehicleSize::SizeRate' has a wrong offset!");
+DUMPER7_ASSERTS_BP_VehicleInRacePawn_C_ChangeVehicleSize;
 
 // Function BP_VehicleInRacePawn.BP_VehicleInRacePawn_C.ExecuteUbergraph_BP_VehicleInRacePawn
 // 0x05B0 (0x05B0 - 0x0000)
@@ -120,76 +118,7 @@ public:
 	double                                        CallFunc_MapRangeClamped_OutRangeA_ImplicitCast;   // 0x05A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_MapRangeClamped_Value_ImplicitCast;       // 0x05A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn) == 0x000010, "Wrong alignment on BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn");
-static_assert(sizeof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn) == 0x0005B0, "Wrong size on BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, EntryPoint) == 0x000000, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, K2Node_Event_ItemId) == 0x000005, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::K2Node_Event_ItemId' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, K2Node_Event_ThrowType) == 0x000006, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::K2Node_Event_ThrowType' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, K2Node_Event_Value) == 0x000008, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::K2Node_Event_Value' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, K2Node_Event_bIsLocalPlayer) == 0x00000C, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::K2Node_Event_bIsLocalPlayer' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, K2Node_Event_bUpdateThrowType) == 0x00000D, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::K2Node_Event_bUpdateThrowType' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, K2Node_Event_bGadgetLuckyItem) == 0x00000E, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::K2Node_Event_bGadgetLuckyItem' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_GetDriverActor_ReturnValue) == 0x000010, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_GetDriverActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, K2Node_DynamicCast_AsBP_Driver_Pawn) == 0x000018, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::K2Node_DynamicCast_AsBP_Driver_Pawn' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000021, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_BooleanAND_ReturnValue) == 0x000022, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, K2Node_Event_SizeRate) == 0x000024, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::K2Node_Event_SizeRate' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_Less_DoubleDouble_ReturnValue) == 0x000028, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_Less_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_GetMeshSizeRate_ReturnValue) == 0x00002C, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_GetMeshSizeRate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_MakeTransform_ReturnValue) == 0x000030, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000090, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_FinishSpawningActor_ReturnValue) == 0x000098, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, K2Node_Event_DriverId) == 0x0000A0, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::K2Node_Event_DriverId' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, K2Node_Event_bIsHoverboard) == 0x0000A1, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::K2Node_Event_bIsHoverboard' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, K2Node_Event_bUseRivalSkin) == 0x0000A2, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::K2Node_Event_bUseRivalSkin' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, K2Node_Event_ChargeLevel) == 0x0000A4, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::K2Node_Event_ChargeLevel' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_GetEnumeratorName_ReturnValue) == 0x0000A8, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x0000B0, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_GetActiveVehicle_ReturnValue) == 0x0000B8, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_GetActiveVehicle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_IsValid_ReturnValue_1) == 0x0000C0, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_GetActiveVehicle_ReturnValue_1) == 0x0000C8, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_GetActiveVehicle_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_LoadClassAsset_Blocking_ReturnValue) == 0x0000D0, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_LoadClassAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_IsValid_ReturnValue_2) == 0x0000D8, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_IsValidSoftClassReference_ReturnValue) == 0x0000D9, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_IsValidSoftClassReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x0000E0, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_IsValidSoftObjectReference_ReturnValue) == 0x0000E8, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_IsValidSoftObjectReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x0000F0, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_GetDataTableRowFromName_OutRow) == 0x0000F8, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000488, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_MakeTransform_ReturnValue_1) == 0x000490, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_K2_GetRootComponent_ReturnValue) == 0x0004F0, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_MapRangeClamped_ReturnValue) == 0x0004F8, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_MapRangeClamped_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_Conv_DoubleToVector_ReturnValue) == 0x000500, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_Conv_DoubleToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_GetActiveVehicle_ReturnValue_2) == 0x000518, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_GetActiveVehicle_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_IsValid_ReturnValue_3) == 0x000520, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, K2Node_Event_bIsPlay_1) == 0x000521, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::K2Node_Event_bIsPlay_1' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x000528, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x000530, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_GetPlayerControllerIndex_ReturnValue) == 0x000538, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_GetPlayerControllerIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_GetPlayerController_ReturnValue) == 0x000540, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_GetUnionRacerStatusObject_ReturnValue) == 0x000548, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_GetUnionRacerStatusObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_IsValid_ReturnValue_4) == 0x000550, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_GetViewSplitId_ReturnValue) == 0x000551, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_GetViewSplitId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_NotEqual_ByteByte_ReturnValue_1) == 0x000552, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_NotEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, K2Node_Event_TargetVehicle) == 0x000558, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::K2Node_Event_TargetVehicle' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, K2Node_Event_bIsPlay) == 0x000560, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::K2Node_Event_bIsPlay' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_IsValid_ReturnValue_5) == 0x000561, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_IsValid_ReturnValue_6) == 0x000562, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, K2Node_Event_Color) == 0x000564, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::K2Node_Event_Color' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, K2Node_Event_bWithDriver_3) == 0x000574, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::K2Node_Event_bWithDriver_3' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, K2Node_Event_bWithDriver_2) == 0x000575, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::K2Node_Event_bWithDriver_2' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_GetRacerIndex_ReturnValue) == 0x000578, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_GetRacerIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_GetGroupIndex_ReturnValue) == 0x00057C, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_GetGroupIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_GetGroupColorId_ReturnValue) == 0x000580, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_GetGroupColorId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, K2Node_MakeStruct_HoldItemCreateParam) == 0x000584, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::K2Node_MakeStruct_HoldItemCreateParam' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, K2Node_Event_bWithDriver_1) == 0x000594, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::K2Node_Event_bWithDriver_1' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_SetItemParam_Return) == 0x000595, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_SetItemParam_Return' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, K2Node_Event_bWithDriver) == 0x000596, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::K2Node_Event_bWithDriver' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_Less_DoubleDouble_A_ImplicitCast) == 0x000598, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_Less_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_MapRangeClamped_OutRangeA_ImplicitCast) == 0x0005A0, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_MapRangeClamped_OutRangeA_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn, CallFunc_MapRangeClamped_Value_ImplicitCast) == 0x0005A8, "Member 'BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn::CallFunc_MapRangeClamped_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_BP_VehicleInRacePawn_C_ExecuteUbergraph_BP_VehicleInRacePawn;
 
 // Function BP_VehicleInRacePawn.BP_VehicleInRacePawn_C.OnBlinkEnd
 // 0x0001 (0x0001 - 0x0000)
@@ -198,9 +127,7 @@ struct BP_VehicleInRacePawn_C_OnBlinkEnd final
 public:
 	bool                                          bWithDriver;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_VehicleInRacePawn_C_OnBlinkEnd) == 0x000001, "Wrong alignment on BP_VehicleInRacePawn_C_OnBlinkEnd");
-static_assert(sizeof(BP_VehicleInRacePawn_C_OnBlinkEnd) == 0x000001, "Wrong size on BP_VehicleInRacePawn_C_OnBlinkEnd");
-static_assert(offsetof(BP_VehicleInRacePawn_C_OnBlinkEnd, bWithDriver) == 0x000000, "Member 'BP_VehicleInRacePawn_C_OnBlinkEnd::bWithDriver' has a wrong offset!");
+DUMPER7_ASSERTS_BP_VehicleInRacePawn_C_OnBlinkEnd;
 
 // Function BP_VehicleInRacePawn.BP_VehicleInRacePawn_C.OnBlinkStart
 // 0x0014 (0x0014 - 0x0000)
@@ -210,10 +137,7 @@ public:
 	struct FLinearColor                           Color;                                             // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bWithDriver;                                       // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_VehicleInRacePawn_C_OnBlinkStart) == 0x000004, "Wrong alignment on BP_VehicleInRacePawn_C_OnBlinkStart");
-static_assert(sizeof(BP_VehicleInRacePawn_C_OnBlinkStart) == 0x000014, "Wrong size on BP_VehicleInRacePawn_C_OnBlinkStart");
-static_assert(offsetof(BP_VehicleInRacePawn_C_OnBlinkStart, Color) == 0x000000, "Member 'BP_VehicleInRacePawn_C_OnBlinkStart::Color' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_OnBlinkStart, bWithDriver) == 0x000010, "Member 'BP_VehicleInRacePawn_C_OnBlinkStart::bWithDriver' has a wrong offset!");
+DUMPER7_ASSERTS_BP_VehicleInRacePawn_C_OnBlinkStart;
 
 // Function BP_VehicleInRacePawn.BP_VehicleInRacePawn_C.OnDamageSpin
 // 0x0010 (0x0010 - 0x0000)
@@ -223,10 +147,7 @@ public:
 	class AVehicleBaseActor*                      TargetVehicle;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIsPlay;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_VehicleInRacePawn_C_OnDamageSpin) == 0x000008, "Wrong alignment on BP_VehicleInRacePawn_C_OnDamageSpin");
-static_assert(sizeof(BP_VehicleInRacePawn_C_OnDamageSpin) == 0x000010, "Wrong size on BP_VehicleInRacePawn_C_OnDamageSpin");
-static_assert(offsetof(BP_VehicleInRacePawn_C_OnDamageSpin, TargetVehicle) == 0x000000, "Member 'BP_VehicleInRacePawn_C_OnDamageSpin::TargetVehicle' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_OnDamageSpin, bIsPlay) == 0x000008, "Member 'BP_VehicleInRacePawn_C_OnDamageSpin::bIsPlay' has a wrong offset!");
+DUMPER7_ASSERTS_BP_VehicleInRacePawn_C_OnDamageSpin;
 
 // Function BP_VehicleInRacePawn.BP_VehicleInRacePawn_C.OnDrift
 // 0x0004 (0x0004 - 0x0000)
@@ -235,9 +156,7 @@ struct BP_VehicleInRacePawn_C_OnDrift final
 public:
 	int32                                         ChargeLevel;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_VehicleInRacePawn_C_OnDrift) == 0x000004, "Wrong alignment on BP_VehicleInRacePawn_C_OnDrift");
-static_assert(sizeof(BP_VehicleInRacePawn_C_OnDrift) == 0x000004, "Wrong size on BP_VehicleInRacePawn_C_OnDrift");
-static_assert(offsetof(BP_VehicleInRacePawn_C_OnDrift, ChargeLevel) == 0x000000, "Member 'BP_VehicleInRacePawn_C_OnDrift::ChargeLevel' has a wrong offset!");
+DUMPER7_ASSERTS_BP_VehicleInRacePawn_C_OnDrift;
 
 // Function BP_VehicleInRacePawn.BP_VehicleInRacePawn_C.OnFadeOutInk
 // 0x0001 (0x0001 - 0x0000)
@@ -246,9 +165,7 @@ struct BP_VehicleInRacePawn_C_OnFadeOutInk final
 public:
 	bool                                          bIsPlay;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_VehicleInRacePawn_C_OnFadeOutInk) == 0x000001, "Wrong alignment on BP_VehicleInRacePawn_C_OnFadeOutInk");
-static_assert(sizeof(BP_VehicleInRacePawn_C_OnFadeOutInk) == 0x000001, "Wrong size on BP_VehicleInRacePawn_C_OnFadeOutInk");
-static_assert(offsetof(BP_VehicleInRacePawn_C_OnFadeOutInk, bIsPlay) == 0x000000, "Member 'BP_VehicleInRacePawn_C_OnFadeOutInk::bIsPlay' has a wrong offset!");
+DUMPER7_ASSERTS_BP_VehicleInRacePawn_C_OnFadeOutInk;
 
 // Function BP_VehicleInRacePawn.BP_VehicleInRacePawn_C.OnRainbowBlinkEnd
 // 0x0001 (0x0001 - 0x0000)
@@ -257,9 +174,7 @@ struct BP_VehicleInRacePawn_C_OnRainbowBlinkEnd final
 public:
 	bool                                          bWithDriver;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_VehicleInRacePawn_C_OnRainbowBlinkEnd) == 0x000001, "Wrong alignment on BP_VehicleInRacePawn_C_OnRainbowBlinkEnd");
-static_assert(sizeof(BP_VehicleInRacePawn_C_OnRainbowBlinkEnd) == 0x000001, "Wrong size on BP_VehicleInRacePawn_C_OnRainbowBlinkEnd");
-static_assert(offsetof(BP_VehicleInRacePawn_C_OnRainbowBlinkEnd, bWithDriver) == 0x000000, "Member 'BP_VehicleInRacePawn_C_OnRainbowBlinkEnd::bWithDriver' has a wrong offset!");
+DUMPER7_ASSERTS_BP_VehicleInRacePawn_C_OnRainbowBlinkEnd;
 
 // Function BP_VehicleInRacePawn.BP_VehicleInRacePawn_C.OnRainbowBlinkStart
 // 0x0001 (0x0001 - 0x0000)
@@ -268,9 +183,7 @@ struct BP_VehicleInRacePawn_C_OnRainbowBlinkStart final
 public:
 	bool                                          bWithDriver;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_VehicleInRacePawn_C_OnRainbowBlinkStart) == 0x000001, "Wrong alignment on BP_VehicleInRacePawn_C_OnRainbowBlinkStart");
-static_assert(sizeof(BP_VehicleInRacePawn_C_OnRainbowBlinkStart) == 0x000001, "Wrong size on BP_VehicleInRacePawn_C_OnRainbowBlinkStart");
-static_assert(offsetof(BP_VehicleInRacePawn_C_OnRainbowBlinkStart, bWithDriver) == 0x000000, "Member 'BP_VehicleInRacePawn_C_OnRainbowBlinkStart::bWithDriver' has a wrong offset!");
+DUMPER7_ASSERTS_BP_VehicleInRacePawn_C_OnRainbowBlinkStart;
 
 // Function BP_VehicleInRacePawn.BP_VehicleInRacePawn_C.SetHoldItem
 // 0x000C (0x000C - 0x0000)
@@ -285,14 +198,7 @@ public:
 	bool                                          bUpdateThrowType;                                  // 0x0009(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bGadgetLuckyItem;                                  // 0x000A(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_VehicleInRacePawn_C_SetHoldItem) == 0x000004, "Wrong alignment on BP_VehicleInRacePawn_C_SetHoldItem");
-static_assert(sizeof(BP_VehicleInRacePawn_C_SetHoldItem) == 0x00000C, "Wrong size on BP_VehicleInRacePawn_C_SetHoldItem");
-static_assert(offsetof(BP_VehicleInRacePawn_C_SetHoldItem, ItemId) == 0x000000, "Member 'BP_VehicleInRacePawn_C_SetHoldItem::ItemId' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_SetHoldItem, ThrowType) == 0x000001, "Member 'BP_VehicleInRacePawn_C_SetHoldItem::ThrowType' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_SetHoldItem, Value) == 0x000004, "Member 'BP_VehicleInRacePawn_C_SetHoldItem::Value' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_SetHoldItem, bIsLocalPlayer) == 0x000008, "Member 'BP_VehicleInRacePawn_C_SetHoldItem::bIsLocalPlayer' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_SetHoldItem, bUpdateThrowType) == 0x000009, "Member 'BP_VehicleInRacePawn_C_SetHoldItem::bUpdateThrowType' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_SetHoldItem, bGadgetLuckyItem) == 0x00000A, "Member 'BP_VehicleInRacePawn_C_SetHoldItem::bGadgetLuckyItem' has a wrong offset!");
+DUMPER7_ASSERTS_BP_VehicleInRacePawn_C_SetHoldItem;
 
 // Function BP_VehicleInRacePawn.BP_VehicleInRacePawn_C.SpawnDriverActor
 // 0x0003 (0x0003 - 0x0000)
@@ -303,11 +209,7 @@ public:
 	bool                                          bIsHoverboard;                                     // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bUseRivalSkin;                                     // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_VehicleInRacePawn_C_SpawnDriverActor) == 0x000001, "Wrong alignment on BP_VehicleInRacePawn_C_SpawnDriverActor");
-static_assert(sizeof(BP_VehicleInRacePawn_C_SpawnDriverActor) == 0x000003, "Wrong size on BP_VehicleInRacePawn_C_SpawnDriverActor");
-static_assert(offsetof(BP_VehicleInRacePawn_C_SpawnDriverActor, DriverId) == 0x000000, "Member 'BP_VehicleInRacePawn_C_SpawnDriverActor::DriverId' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_SpawnDriverActor, bIsHoverboard) == 0x000001, "Member 'BP_VehicleInRacePawn_C_SpawnDriverActor::bIsHoverboard' has a wrong offset!");
-static_assert(offsetof(BP_VehicleInRacePawn_C_SpawnDriverActor, bUseRivalSkin) == 0x000002, "Member 'BP_VehicleInRacePawn_C_SpawnDriverActor::bUseRivalSkin' has a wrong offset!");
+DUMPER7_ASSERTS_BP_VehicleInRacePawn_C_SpawnDriverActor;
 
 }
 

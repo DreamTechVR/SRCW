@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "UNION_structs.hpp"
 #include "UnionUI_structs.hpp"
 
 
@@ -28,10 +28,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GroupSelect_3Layout_C_DoCustomNavigation) == 0x000008, "Wrong alignment on WBP_GroupSelect_3Layout_C_DoCustomNavigation");
-static_assert(sizeof(WBP_GroupSelect_3Layout_C_DoCustomNavigation) == 0x000010, "Wrong size on WBP_GroupSelect_3Layout_C_DoCustomNavigation");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_DoCustomNavigation, Navigation_0) == 0x000000, "Member 'WBP_GroupSelect_3Layout_C_DoCustomNavigation::Navigation_0' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_DoCustomNavigation, ReturnValue) == 0x000008, "Member 'WBP_GroupSelect_3Layout_C_DoCustomNavigation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GroupSelect_3Layout_C_DoCustomNavigation;
 
 // Function WBP_GroupSelect_3Layout.WBP_GroupSelect_3Layout_C.ExecuteUbergraph_WBP_GroupSelect_3Layout
 // 0x0670 (0x0670 - 0x0000)
@@ -194,131 +191,7 @@ public:
 	int32                                         CallFunc_Array_Find_ReturnValue_2;                 // 0x0664(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Find_ReturnValue_3;                 // 0x0668(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout) == 0x000008, "Wrong alignment on WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout");
-static_assert(sizeof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout) == 0x000670, "Wrong size on WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, EntryPoint) == 0x000000, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_Array_Length_ReturnValue) == 0x000004, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetIsOnlineGameMode_ReturnValue) == 0x000008, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetIsOnlineGameMode_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetSelectedPlayerCount_ReturnValue) == 0x00000C, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetSelectedPlayerCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_Subtract_IntInt_ReturnValue) == 0x000010, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, Temp_int_Loop_Counter_Variable) == 0x000014, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetSelectedPlayerCount_ReturnValue_1) == 0x000018, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetSelectedPlayerCount_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_Add_IntInt_ReturnValue) == 0x00001C, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetPlayerController_ReturnValue) == 0x000020, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetSelectedPlayerCount_ReturnValue_2) == 0x000028, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetSelectedPlayerCount_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetPlayerController_ReturnValue_1) == 0x000030, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x000038, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00003C, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetPlayerController_ReturnValue_2) == 0x000040, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetPlayerController_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, K2Node_CreateDelegate_OutputDelegate) == 0x000048, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, K2Node_CreateDelegate_OutputDelegate_1) == 0x000058, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000068, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetPlayerController_ReturnValue_3) == 0x000070, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetPlayerController_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetPlayerController_ReturnValue_4) == 0x000078, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetPlayerController_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, Temp_int_Variable) == 0x000080, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_CreatePlayer_ReturnValue) == 0x000088, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_CreatePlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_Array_LastIndex_ReturnValue) == 0x000090, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000098, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, K2Node_DynamicCast_bSuccess) == 0x0000A0, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_Array_Get_Item) == 0x0000A8, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetPlayerController_ReturnValue_5) == 0x0000B0, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetPlayerController_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_IsValid_ReturnValue) == 0x0000B8, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, K2Node_DynamicCast_AsApp_Player_Controller_1) == 0x0000C0, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::K2Node_DynamicCast_AsApp_Player_Controller_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, K2Node_DynamicCast_bSuccess_1) == 0x0000C8, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000CC, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_Array_LastIndex_ReturnValue_1) == 0x0000D0, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_Array_LastIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_Array_Get_Item_1) == 0x0000D8, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, K2Node_CustomEvent_Button) == 0x0000E0, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, K2Node_CustomEvent_Dir) == 0x0000E8, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::K2Node_CustomEvent_Dir' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_PlayAnimation_ReturnValue) == 0x0000F0, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, K2Node_SwitchEnum_CmpSuccess) == 0x0000F8, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, K2Node_DynamicCast_AsGroup_Select_Component_Controller) == 0x000100, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::K2Node_DynamicCast_AsGroup_Select_Component_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, K2Node_DynamicCast_bSuccess_2) == 0x000108, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_Array_Find_ReturnValue) == 0x00010C, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000110, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_Subtract_IntInt_ReturnValue_2) == 0x000114, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_Subtract_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000118, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_Array_Get_Item_2) == 0x000120, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_Add_IntInt_ReturnValue_2) == 0x000128, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_Array_Get_Item_3) == 0x000130, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, K2Node_CustomEvent_Button_1) == 0x000138, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::K2Node_CustomEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, K2Node_CustomEvent_Button_2) == 0x000140, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::K2Node_CustomEvent_Button_2' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, Temp_int_Array_Index_Variable) == 0x000148, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, K2Node_CreateDelegate_OutputDelegate_2) == 0x00014C, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GreaterEqual_IntInt_ReturnValue_1) == 0x00015C, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GreaterEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_Array_Get_Item_4) == 0x000160, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetLobbyIndexFromArray_ReturnValue) == 0x000168, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetLobbyIndexFromArray_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetPlatformIconIndex_ReturnValue) == 0x00016C, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetPlatformIconIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetRacerName_OutRacerName) == 0x000170, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetRacerName_OutRacerName' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_Conv_TextToString_ReturnValue) == 0x000180, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_PlayAnimation_ReturnValue_1) == 0x000190, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetRacerDriverId_OutId) == 0x000198, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetRacerDriverId_OutId' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetLobbyIndexFromArray_ReturnValue_1) == 0x00019C, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetLobbyIndexFromArray_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetEnumeratorName_ReturnValue) == 0x0001A0, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetOnlineDriverIdFromArray_ReturnValue) == 0x0001A8, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetOnlineDriverIdFromArray_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetDataTableRowFromName_OutRow) == 0x0001B0, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000540, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetRacerDriverId_OutId_1) == 0x000541, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetRacerDriverId_OutId_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_Conv_TextToString_ReturnValue_1) == 0x000548, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_Conv_TextToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_Array_Length_ReturnValue_1) == 0x000558, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_Less_IntInt_ReturnValue) == 0x00055C, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x00055D, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00055E, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, K2Node_CreateDelegate_OutputDelegate_3) == 0x000560, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_Not_PreBool_ReturnValue) == 0x000570, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetIsOnlineGameMode_ReturnValue_1) == 0x000571, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetIsOnlineGameMode_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_BooleanAND_ReturnValue) == 0x000572, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, K2Node_MakeArray_Array) == 0x000578, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GreaterEqual_IntInt_ReturnValue_2) == 0x000588, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GreaterEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_Subtract_IntInt_ReturnValue_3) == 0x00058C, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_Subtract_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000590, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_Not_PreBool_ReturnValue_1) == 0x000591, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_Not_PreBool_ReturnValue_2) == 0x000592, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetSelectedGameModeId_ReturnValue_1) == 0x000593, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetSelectedGameModeId_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000594, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_EqualEqual_IntInt_ReturnValue_2) == 0x000595, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_EqualEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetIsOnlineGameMode_ReturnValue_2) == 0x000596, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetIsOnlineGameMode_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetSelectedGameModeId_ReturnValue_2) == 0x000597, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetSelectedGameModeId_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetSelectedGameModeId_ReturnValue_3) == 0x000598, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetSelectedGameModeId_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x000599, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_EqualEqual_ByteByte_ReturnValue_3) == 0x00059A, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_EqualEqual_ByteByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetSelectedGameModeId_ReturnValue_4) == 0x00059B, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetSelectedGameModeId_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_EqualEqual_ByteByte_ReturnValue_4) == 0x00059C, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_EqualEqual_ByteByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, K2Node_CreateDelegate_OutputDelegate_4) == 0x0005A0, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, Temp_int_Variable_1) == 0x0005B0, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetIsOnlineGameMode_ReturnValue_3) == 0x0005B4, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetIsOnlineGameMode_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_Array_Get_Item_5) == 0x0005B8, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_Array_Get_Item_5' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_Array_Get_Item_6) == 0x0005C0, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_Array_Get_Item_6' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x0005C8, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_Add_IntInt_ReturnValue_3) == 0x0005CC, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, K2Node_CreateDelegate_OutputDelegate_5) == 0x0005D0, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetSelectedGameModeId_ReturnValue_5) == 0x0005E0, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetSelectedGameModeId_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, Temp_int_Array_Index_Variable_1) == 0x0005E4, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetMouseControllComponent_ReturnValue) == 0x0005E8, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetMouseControllComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_Array_Get_Item_7) == 0x0005F0, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_Array_Get_Item_7' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, K2Node_SwitchEnum_CmpSuccess_1) == 0x0005F8, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, K2Node_DynamicCast_AsWBP_Group_Select_Sub_Table_Line) == 0x000600, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::K2Node_DynamicCast_AsWBP_Group_Select_Sub_Table_Line' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, K2Node_DynamicCast_bSuccess_3) == 0x000608, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_IsValid_ReturnValue_1) == 0x000609, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetSelectedGameModeId_ReturnValue_6) == 0x00060A, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetSelectedGameModeId_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, Temp_int_Loop_Counter_Variable_1) == 0x00060C, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetMouseControllComponent_ReturnValue_1) == 0x000610, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetMouseControllComponent_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, K2Node_SwitchEnum_CmpSuccess_2) == 0x000618, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::K2Node_SwitchEnum_CmpSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_IsValid_ReturnValue_2) == 0x000619, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_Less_IntInt_ReturnValue_1) == 0x00061A, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_Add_IntInt_ReturnValue_4) == 0x00061C, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetSelectedGameModeId_ReturnValue_7) == 0x000620, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetSelectedGameModeId_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetMouseControllComponent_ReturnValue_2) == 0x000628, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetMouseControllComponent_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, K2Node_SwitchEnum_CmpSuccess_3) == 0x000630, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::K2Node_SwitchEnum_CmpSuccess_3' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_IsValid_ReturnValue_3) == 0x000631, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetPlayerController_ReturnValue_6) == 0x000638, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetPlayerController_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetPlayerController_ReturnValue_7) == 0x000640, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetPlayerController_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_GetPlayerController_ReturnValue_8) == 0x000648, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_GetPlayerController_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_SpawnObject_ReturnValue) == 0x000650, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_PlayAnimation_ReturnValue_2) == 0x000658, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_Array_Find_ReturnValue_1) == 0x000660, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_Array_Find_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_Array_Find_ReturnValue_2) == 0x000664, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_Array_Find_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout, CallFunc_Array_Find_ReturnValue_3) == 0x000668, "Member 'WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout::CallFunc_Array_Find_ReturnValue_3' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GroupSelect_3Layout_C_ExecuteUbergraph_WBP_GroupSelect_3Layout;
 
 // Function WBP_GroupSelect_3Layout.WBP_GroupSelect_3Layout_C.OnCancelEvent_Event
 // 0x0008 (0x0008 - 0x0000)
@@ -327,9 +200,7 @@ struct WBP_GroupSelect_3Layout_C_OnCancelEvent_Event final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GroupSelect_3Layout_C_OnCancelEvent_Event) == 0x000008, "Wrong alignment on WBP_GroupSelect_3Layout_C_OnCancelEvent_Event");
-static_assert(sizeof(WBP_GroupSelect_3Layout_C_OnCancelEvent_Event) == 0x000008, "Wrong size on WBP_GroupSelect_3Layout_C_OnCancelEvent_Event");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_OnCancelEvent_Event, Button) == 0x000000, "Member 'WBP_GroupSelect_3Layout_C_OnCancelEvent_Event::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GroupSelect_3Layout_C_OnCancelEvent_Event;
 
 // Function WBP_GroupSelect_3Layout.WBP_GroupSelect_3Layout_C.OnDecisionEvent_Event
 // 0x0008 (0x0008 - 0x0000)
@@ -338,9 +209,7 @@ struct WBP_GroupSelect_3Layout_C_OnDecisionEvent_Event final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GroupSelect_3Layout_C_OnDecisionEvent_Event) == 0x000008, "Wrong alignment on WBP_GroupSelect_3Layout_C_OnDecisionEvent_Event");
-static_assert(sizeof(WBP_GroupSelect_3Layout_C_OnDecisionEvent_Event) == 0x000008, "Wrong size on WBP_GroupSelect_3Layout_C_OnDecisionEvent_Event");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_OnDecisionEvent_Event, Button) == 0x000000, "Member 'WBP_GroupSelect_3Layout_C_OnDecisionEvent_Event::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GroupSelect_3Layout_C_OnDecisionEvent_Event;
 
 // Function WBP_GroupSelect_3Layout.WBP_GroupSelect_3Layout_C.OnDirectionEvent_Event
 // 0x0010 (0x0010 - 0x0000)
@@ -350,10 +219,7 @@ public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	EUnionUIControlDir                            Dir;                                               // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GroupSelect_3Layout_C_OnDirectionEvent_Event) == 0x000008, "Wrong alignment on WBP_GroupSelect_3Layout_C_OnDirectionEvent_Event");
-static_assert(sizeof(WBP_GroupSelect_3Layout_C_OnDirectionEvent_Event) == 0x000010, "Wrong size on WBP_GroupSelect_3Layout_C_OnDirectionEvent_Event");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_OnDirectionEvent_Event, Button) == 0x000000, "Member 'WBP_GroupSelect_3Layout_C_OnDirectionEvent_Event::Button' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_OnDirectionEvent_Event, Dir) == 0x000008, "Member 'WBP_GroupSelect_3Layout_C_OnDirectionEvent_Event::Dir' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GroupSelect_3Layout_C_OnDirectionEvent_Event;
 
 // Function WBP_GroupSelect_3Layout.WBP_GroupSelect_3Layout_C.ResetNavigaition
 // 0x0020 (0x0020 - 0x0000)
@@ -367,14 +233,7 @@ public:
 	class UGroupSelectComponentController*        CallFunc_Array_Get_Item;                           // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GroupSelect_3Layout_C_ResetNavigaition) == 0x000008, "Wrong alignment on WBP_GroupSelect_3Layout_C_ResetNavigaition");
-static_assert(sizeof(WBP_GroupSelect_3Layout_C_ResetNavigaition) == 0x000020, "Wrong size on WBP_GroupSelect_3Layout_C_ResetNavigaition");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ResetNavigaition, Temp_int_Array_Index_Variable) == 0x000000, "Member 'WBP_GroupSelect_3Layout_C_ResetNavigaition::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ResetNavigaition, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'WBP_GroupSelect_3Layout_C_ResetNavigaition::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ResetNavigaition, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'WBP_GroupSelect_3Layout_C_ResetNavigaition::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ResetNavigaition, CallFunc_Array_Length_ReturnValue) == 0x00000C, "Member 'WBP_GroupSelect_3Layout_C_ResetNavigaition::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ResetNavigaition, CallFunc_Array_Get_Item) == 0x000010, "Member 'WBP_GroupSelect_3Layout_C_ResetNavigaition::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_ResetNavigaition, CallFunc_Less_IntInt_ReturnValue) == 0x000018, "Member 'WBP_GroupSelect_3Layout_C_ResetNavigaition::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GroupSelect_3Layout_C_ResetNavigaition;
 
 // Function WBP_GroupSelect_3Layout.WBP_GroupSelect_3Layout_C.SetComHide
 // 0x0028 (0x0028 - 0x0000)
@@ -395,19 +254,7 @@ public:
 	uint8                                         Pad_22[0x2];                                       // 0x0022(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GroupSelect_3Layout_C_SetComHide) == 0x000008, "Wrong alignment on WBP_GroupSelect_3Layout_C_SetComHide");
-static_assert(sizeof(WBP_GroupSelect_3Layout_C_SetComHide) == 0x000028, "Wrong size on WBP_GroupSelect_3Layout_C_SetComHide");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_SetComHide, Temp_int_Array_Index_Variable) == 0x000000, "Member 'WBP_GroupSelect_3Layout_C_SetComHide::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_SetComHide, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x000004, "Member 'WBP_GroupSelect_3Layout_C_SetComHide::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_SetComHide, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000005, "Member 'WBP_GroupSelect_3Layout_C_SetComHide::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_SetComHide, CallFunc_Array_Get_Item) == 0x000008, "Member 'WBP_GroupSelect_3Layout_C_SetComHide::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_SetComHide, CallFunc_Array_Length_ReturnValue) == 0x000010, "Member 'WBP_GroupSelect_3Layout_C_SetComHide::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_SetComHide, Temp_int_Loop_Counter_Variable) == 0x000014, "Member 'WBP_GroupSelect_3Layout_C_SetComHide::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_SetComHide, CallFunc_GetSelectedPlayerCount_ReturnValue) == 0x000018, "Member 'WBP_GroupSelect_3Layout_C_SetComHide::CallFunc_GetSelectedPlayerCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_SetComHide, CallFunc_SelectInt_ReturnValue) == 0x00001C, "Member 'WBP_GroupSelect_3Layout_C_SetComHide::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_SetComHide, CallFunc_Less_IntInt_ReturnValue) == 0x000020, "Member 'WBP_GroupSelect_3Layout_C_SetComHide::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_SetComHide, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000021, "Member 'WBP_GroupSelect_3Layout_C_SetComHide::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_SetComHide, CallFunc_Add_IntInt_ReturnValue) == 0x000024, "Member 'WBP_GroupSelect_3Layout_C_SetComHide::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GroupSelect_3Layout_C_SetComHide;
 
 // Function WBP_GroupSelect_3Layout.WBP_GroupSelect_3Layout_C.WhenHostEvent
 // 0x0028 (0x0028 - 0x0000)
@@ -424,15 +271,7 @@ public:
 	class UGroupSelectComponentController*        CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GroupSelect_3Layout_C_WhenHostEvent) == 0x000008, "Wrong alignment on WBP_GroupSelect_3Layout_C_WhenHostEvent");
-static_assert(sizeof(WBP_GroupSelect_3Layout_C_WhenHostEvent) == 0x000028, "Wrong size on WBP_GroupSelect_3Layout_C_WhenHostEvent");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_WhenHostEvent, Is_Host) == 0x000000, "Member 'WBP_GroupSelect_3Layout_C_WhenHostEvent::Is_Host' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_WhenHostEvent, Temp_int_Array_Index_Variable) == 0x000004, "Member 'WBP_GroupSelect_3Layout_C_WhenHostEvent::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_WhenHostEvent, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'WBP_GroupSelect_3Layout_C_WhenHostEvent::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_WhenHostEvent, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_GroupSelect_3Layout_C_WhenHostEvent::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_WhenHostEvent, CallFunc_Array_Length_ReturnValue) == 0x000010, "Member 'WBP_GroupSelect_3Layout_C_WhenHostEvent::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_WhenHostEvent, CallFunc_Array_Get_Item) == 0x000018, "Member 'WBP_GroupSelect_3Layout_C_WhenHostEvent::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_WhenHostEvent, CallFunc_Less_IntInt_ReturnValue) == 0x000020, "Member 'WBP_GroupSelect_3Layout_C_WhenHostEvent::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GroupSelect_3Layout_C_WhenHostEvent;
 
 // Function WBP_GroupSelect_3Layout.WBP_GroupSelect_3Layout_C.WhenHostNavigation
 // 0x0048 (0x0048 - 0x0000)
@@ -457,22 +296,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GroupSelect_3Layout_C_WhenHostNavigation) == 0x000008, "Wrong alignment on WBP_GroupSelect_3Layout_C_WhenHostNavigation");
-static_assert(sizeof(WBP_GroupSelect_3Layout_C_WhenHostNavigation) == 0x000048, "Wrong size on WBP_GroupSelect_3Layout_C_WhenHostNavigation");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_WhenHostNavigation, Temp_int_Loop_Counter_Variable) == 0x000000, "Member 'WBP_GroupSelect_3Layout_C_WhenHostNavigation::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_WhenHostNavigation, Temp_int_Array_Index_Variable) == 0x000004, "Member 'WBP_GroupSelect_3Layout_C_WhenHostNavigation::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_WhenHostNavigation, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'WBP_GroupSelect_3Layout_C_WhenHostNavigation::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_WhenHostNavigation, CallFunc_Add_IntInt_ReturnValue_1) == 0x00000C, "Member 'WBP_GroupSelect_3Layout_C_WhenHostNavigation::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_WhenHostNavigation, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000010, "Member 'WBP_GroupSelect_3Layout_C_WhenHostNavigation::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_WhenHostNavigation, CallFunc_Subtract_IntInt_ReturnValue) == 0x000014, "Member 'WBP_GroupSelect_3Layout_C_WhenHostNavigation::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_WhenHostNavigation, CallFunc_Array_Get_Item) == 0x000018, "Member 'WBP_GroupSelect_3Layout_C_WhenHostNavigation::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_WhenHostNavigation, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000020, "Member 'WBP_GroupSelect_3Layout_C_WhenHostNavigation::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_WhenHostNavigation, CallFunc_Array_Get_Item_1) == 0x000028, "Member 'WBP_GroupSelect_3Layout_C_WhenHostNavigation::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_WhenHostNavigation, CallFunc_Array_IsValidIndex_ReturnValue_1) == 0x000030, "Member 'WBP_GroupSelect_3Layout_C_WhenHostNavigation::CallFunc_Array_IsValidIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_WhenHostNavigation, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000031, "Member 'WBP_GroupSelect_3Layout_C_WhenHostNavigation::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_WhenHostNavigation, CallFunc_Array_Get_Item_2) == 0x000038, "Member 'WBP_GroupSelect_3Layout_C_WhenHostNavigation::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_WhenHostNavigation, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'WBP_GroupSelect_3Layout_C_WhenHostNavigation::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GroupSelect_3Layout_C_WhenHostNavigation, CallFunc_Less_IntInt_ReturnValue) == 0x000044, "Member 'WBP_GroupSelect_3Layout_C_WhenHostNavigation::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GroupSelect_3Layout_C_WhenHostNavigation;
 
 }
 

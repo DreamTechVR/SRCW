@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
 #include "UnionUI_structs.hpp"
-#include "UNION_classes.hpp"
 
 
 namespace SDK
@@ -51,27 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MachineCustom_Sub_StickerTop_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MachineCustom_Sub_StickerTop_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MachineCustom_Sub_StickerTop_C")
 	}
 	static class UWBP_MachineCustom_Sub_StickerTop_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MachineCustom_Sub_StickerTop_C>();
 	}
 };
-static_assert(alignof(UWBP_MachineCustom_Sub_StickerTop_C) == 0x000008, "Wrong alignment on UWBP_MachineCustom_Sub_StickerTop_C");
-static_assert(sizeof(UWBP_MachineCustom_Sub_StickerTop_C) == 0x0004F8, "Wrong size on UWBP_MachineCustom_Sub_StickerTop_C");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerTop_C, UberGraphFrame) == 0x000480, "Member 'UWBP_MachineCustom_Sub_StickerTop_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerTop_C, NameLine_01) == 0x000488, "Member 'UWBP_MachineCustom_Sub_StickerTop_C::NameLine_01' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerTop_C, NameLine_02) == 0x000490, "Member 'UWBP_MachineCustom_Sub_StickerTop_C::NameLine_02' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerTop_C, PAT_FRONTIcon) == 0x000498, "Member 'UWBP_MachineCustom_Sub_StickerTop_C::PAT_FRONTIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerTop_C, PAT_REARIcon) == 0x0004A0, "Member 'UWBP_MachineCustom_Sub_StickerTop_C::PAT_REARIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerTop_C, TXT_FRONT) == 0x0004A8, "Member 'UWBP_MachineCustom_Sub_StickerTop_C::TXT_FRONT' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerTop_C, TXT_REAR) == 0x0004B0, "Member 'UWBP_MachineCustom_Sub_StickerTop_C::TXT_REAR' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerTop_C, FrontIcons) == 0x0004B8, "Member 'UWBP_MachineCustom_Sub_StickerTop_C::FrontIcons' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerTop_C, RearIcons) == 0x0004C8, "Member 'UWBP_MachineCustom_Sub_StickerTop_C::RearIcons' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerTop_C, AllIcons) == 0x0004D8, "Member 'UWBP_MachineCustom_Sub_StickerTop_C::AllIcons' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerTop_C, GridNavigationBuilder) == 0x0004E8, "Member 'UWBP_MachineCustom_Sub_StickerTop_C::GridNavigationBuilder' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_StickerTop_C, ItemNumInRow) == 0x0004F0, "Member 'UWBP_MachineCustom_Sub_StickerTop_C::ItemNumInRow' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MachineCustom_Sub_StickerTop_C;
 
 }
 

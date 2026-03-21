@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UnionRun_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -73,44 +73,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Result_Sub_RSR_5rings_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Result_Sub_RSR_5rings_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Result_Sub_RSR_5rings_C")
 	}
 	static class UWBP_Result_Sub_RSR_5rings_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Result_Sub_RSR_5rings_C>();
 	}
 };
-static_assert(alignof(UWBP_Result_Sub_RSR_5rings_C) == 0x000008, "Wrong alignment on UWBP_Result_Sub_RSR_5rings_C");
-static_assert(sizeof(UWBP_Result_Sub_RSR_5rings_C) == 0x0003D8, "Wrong size on UWBP_Result_Sub_RSR_5rings_C");
-static_assert(offsetof(UWBP_Result_Sub_RSR_5rings_C, UberGraphFrame) == 0x0002F8, "Member 'UWBP_Result_Sub_RSR_5rings_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RSR_5rings_C, Complete_Loop) == 0x000300, "Member 'UWBP_Result_Sub_RSR_5rings_C::Complete_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RSR_5rings_C, Complete_In) == 0x000308, "Member 'UWBP_Result_Sub_RSR_5rings_C::Complete_In' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RSR_5rings_C, Loop) == 0x000310, "Member 'UWBP_Result_Sub_RSR_5rings_C::Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RSR_5rings_C, Effect_Base_01) == 0x000318, "Member 'UWBP_Result_Sub_RSR_5rings_C::Effect_Base_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RSR_5rings_C, Effect_Base_02) == 0x000320, "Member 'UWBP_Result_Sub_RSR_5rings_C::Effect_Base_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RSR_5rings_C, RSR_Effect_01) == 0x000328, "Member 'UWBP_Result_Sub_RSR_5rings_C::RSR_Effect_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RSR_5rings_C, RSR_Effect_01B) == 0x000330, "Member 'UWBP_Result_Sub_RSR_5rings_C::RSR_Effect_01B' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RSR_5rings_C, RSR_Effect_01C) == 0x000338, "Member 'UWBP_Result_Sub_RSR_5rings_C::RSR_Effect_01C' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RSR_5rings_C, RSR_Effect_02) == 0x000340, "Member 'UWBP_Result_Sub_RSR_5rings_C::RSR_Effect_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RSR_5rings_C, RSR_Effect_02B) == 0x000348, "Member 'UWBP_Result_Sub_RSR_5rings_C::RSR_Effect_02B' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RSR_5rings_C, RSR_Effect_02C) == 0x000350, "Member 'UWBP_Result_Sub_RSR_5rings_C::RSR_Effect_02C' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RSR_5rings_C, RSR_Effect_03) == 0x000358, "Member 'UWBP_Result_Sub_RSR_5rings_C::RSR_Effect_03' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RSR_5rings_C, RSR_Effect_03B) == 0x000360, "Member 'UWBP_Result_Sub_RSR_5rings_C::RSR_Effect_03B' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RSR_5rings_C, RSR_Effect_04) == 0x000368, "Member 'UWBP_Result_Sub_RSR_5rings_C::RSR_Effect_04' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RSR_5rings_C, RSR_Effect_04B) == 0x000370, "Member 'UWBP_Result_Sub_RSR_5rings_C::RSR_Effect_04B' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RSR_5rings_C, TXT_Complete) == 0x000378, "Member 'UWBP_Result_Sub_RSR_5rings_C::TXT_Complete' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RSR_5rings_C, WBP_Result_Sub_RSR_01) == 0x000380, "Member 'UWBP_Result_Sub_RSR_5rings_C::WBP_Result_Sub_RSR_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RSR_5rings_C, WBP_Result_Sub_RSR_02) == 0x000388, "Member 'UWBP_Result_Sub_RSR_5rings_C::WBP_Result_Sub_RSR_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RSR_5rings_C, WBP_Result_Sub_RSR_03) == 0x000390, "Member 'UWBP_Result_Sub_RSR_5rings_C::WBP_Result_Sub_RSR_03' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RSR_5rings_C, WBP_Result_Sub_RSR_04) == 0x000398, "Member 'UWBP_Result_Sub_RSR_5rings_C::WBP_Result_Sub_RSR_04' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RSR_5rings_C, WBP_Result_Sub_RSR_05) == 0x0003A0, "Member 'UWBP_Result_Sub_RSR_5rings_C::WBP_Result_Sub_RSR_05' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RSR_5rings_C, AcquisitionTypes) == 0x0003A8, "Member 'UWBP_Result_Sub_RSR_5rings_C::AcquisitionTypes' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RSR_5rings_C, bCompleteAnim) == 0x0003B8, "Member 'UWBP_Result_Sub_RSR_5rings_C::bCompleteAnim' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RSR_5rings_C, AddPlayTicketInAnimeEvent) == 0x0003C0, "Member 'UWBP_Result_Sub_RSR_5rings_C::AddPlayTicketInAnimeEvent' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RSR_5rings_C, bInAnim) == 0x0003D0, "Member 'UWBP_Result_Sub_RSR_5rings_C::bInAnim' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RSR_5rings_C, IsAnmSkip) == 0x0003D1, "Member 'UWBP_Result_Sub_RSR_5rings_C::IsAnmSkip' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RSR_5rings_C, IsCompleteAnim) == 0x0003D2, "Member 'UWBP_Result_Sub_RSR_5rings_C::IsCompleteAnim' has a wrong offset!");
-static_assert(offsetof(UWBP_Result_Sub_RSR_5rings_C, PlayerIndex) == 0x0003D4, "Member 'UWBP_Result_Sub_RSR_5rings_C::PlayerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Result_Sub_RSR_5rings_C;
 
 }
 

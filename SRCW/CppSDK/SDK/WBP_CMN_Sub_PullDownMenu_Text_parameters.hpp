@@ -29,14 +29,7 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_Sub_PullDownMenu_Text_C_SetSelectIconVisible) == 0x000001, "Wrong alignment on WBP_CMN_Sub_PullDownMenu_Text_C_SetSelectIconVisible");
-static_assert(sizeof(WBP_CMN_Sub_PullDownMenu_Text_C_SetSelectIconVisible) == 0x000006, "Wrong size on WBP_CMN_Sub_PullDownMenu_Text_C_SetSelectIconVisible");
-static_assert(offsetof(WBP_CMN_Sub_PullDownMenu_Text_C_SetSelectIconVisible, bInIsVisible) == 0x000000, "Member 'WBP_CMN_Sub_PullDownMenu_Text_C_SetSelectIconVisible::bInIsVisible' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_PullDownMenu_Text_C_SetSelectIconVisible, NewLocalVar) == 0x000001, "Member 'WBP_CMN_Sub_PullDownMenu_Text_C_SetSelectIconVisible::NewLocalVar' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_PullDownMenu_Text_C_SetSelectIconVisible, Temp_bool_Variable) == 0x000002, "Member 'WBP_CMN_Sub_PullDownMenu_Text_C_SetSelectIconVisible::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_PullDownMenu_Text_C_SetSelectIconVisible, Temp_byte_Variable) == 0x000003, "Member 'WBP_CMN_Sub_PullDownMenu_Text_C_SetSelectIconVisible::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_PullDownMenu_Text_C_SetSelectIconVisible, Temp_byte_Variable_1) == 0x000004, "Member 'WBP_CMN_Sub_PullDownMenu_Text_C_SetSelectIconVisible::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_PullDownMenu_Text_C_SetSelectIconVisible, K2Node_Select_Default) == 0x000005, "Member 'WBP_CMN_Sub_PullDownMenu_Text_C_SetSelectIconVisible::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Sub_PullDownMenu_Text_C_SetSelectIconVisible;
 
 // Function WBP_CMN_Sub_PullDownMenu_Text.WBP_CMN_Sub_PullDownMenu_Text_C.Setup
 // 0x0020 (0x0020 - 0x0000)
@@ -45,9 +38,7 @@ struct WBP_CMN_Sub_PullDownMenu_Text_C_Setup final
 public:
 	struct FST_PullDownMenuItemData               InItemData;                                        // 0x0000(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_Sub_PullDownMenu_Text_C_Setup) == 0x000008, "Wrong alignment on WBP_CMN_Sub_PullDownMenu_Text_C_Setup");
-static_assert(sizeof(WBP_CMN_Sub_PullDownMenu_Text_C_Setup) == 0x000020, "Wrong size on WBP_CMN_Sub_PullDownMenu_Text_C_Setup");
-static_assert(offsetof(WBP_CMN_Sub_PullDownMenu_Text_C_Setup, InItemData) == 0x000000, "Member 'WBP_CMN_Sub_PullDownMenu_Text_C_Setup::InItemData' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Sub_PullDownMenu_Text_C_Setup;
 
 // Function WBP_CMN_Sub_PullDownMenu_Text.WBP_CMN_Sub_PullDownMenu_Text_C.GetItemData
 // 0x0020 (0x0020 - 0x0000)
@@ -56,9 +47,7 @@ struct WBP_CMN_Sub_PullDownMenu_Text_C_GetItemData final
 public:
 	struct FST_PullDownMenuItemData               OutItemData;                                       // 0x0000(0x0020)(Parm, OutParm, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_Sub_PullDownMenu_Text_C_GetItemData) == 0x000008, "Wrong alignment on WBP_CMN_Sub_PullDownMenu_Text_C_GetItemData");
-static_assert(sizeof(WBP_CMN_Sub_PullDownMenu_Text_C_GetItemData) == 0x000020, "Wrong size on WBP_CMN_Sub_PullDownMenu_Text_C_GetItemData");
-static_assert(offsetof(WBP_CMN_Sub_PullDownMenu_Text_C_GetItemData, OutItemData) == 0x000000, "Member 'WBP_CMN_Sub_PullDownMenu_Text_C_GetItemData::OutItemData' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Sub_PullDownMenu_Text_C_GetItemData;
 
 }
 

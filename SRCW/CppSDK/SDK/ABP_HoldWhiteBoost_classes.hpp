@@ -33,16 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABP_HoldWhiteBoost_C">();
+		BP_STATIC_CLASS_IMPL("ABP_HoldWhiteBoost_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABP_HoldWhiteBoost_C")
 	}
 	static class UABP_HoldWhiteBoost_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UABP_HoldWhiteBoost_C>();
 	}
 };
-static_assert(alignof(UABP_HoldWhiteBoost_C) == 0x000010, "Wrong alignment on UABP_HoldWhiteBoost_C");
-static_assert(sizeof(UABP_HoldWhiteBoost_C) == 0x001130, "Wrong size on UABP_HoldWhiteBoost_C");
-static_assert(offsetof(UABP_HoldWhiteBoost_C, UberGraphFrame_ABP_HoldWhiteBoost_C) == 0x001128, "Member 'UABP_HoldWhiteBoost_C::UberGraphFrame_ABP_HoldWhiteBoost_C' has a wrong offset!");
+DUMPER7_ASSERTS_UABP_HoldWhiteBoost_C;
 
 }
 

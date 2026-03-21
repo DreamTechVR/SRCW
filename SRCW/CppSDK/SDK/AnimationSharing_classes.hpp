@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_classes.hpp"
-#include "AnimationSharing_structs.hpp"
 #include "Engine_classes.hpp"
+#include "AnimationSharing_structs.hpp"
 
 
 namespace SDK
@@ -32,28 +32,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnimationSharingStateProcessor">();
+		STATIC_CLASS_IMPL("AnimationSharingStateProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimationSharingStateProcessor")
 	}
 	static class UAnimationSharingStateProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimationSharingStateProcessor>();
 	}
 };
-static_assert(alignof(UAnimationSharingStateProcessor) == 0x000008, "Wrong alignment on UAnimationSharingStateProcessor");
-static_assert(sizeof(UAnimationSharingStateProcessor) == 0x000050, "Wrong size on UAnimationSharingStateProcessor");
-static_assert(offsetof(UAnimationSharingStateProcessor, AnimationStateEnum) == 0x000028, "Member 'UAnimationSharingStateProcessor::AnimationStateEnum' has a wrong offset!");
+DUMPER7_ASSERTS_UAnimationSharingStateProcessor;
 
 // Class AnimationSharing.AnimSharingStateInstance
 // 0x0020 (0x0390 - 0x0370)
 class UAnimSharingStateInstance final : public UAnimInstance
 {
 public:
-	class UAnimSequence*                          AnimationToPlay;                                   // 0x0368(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequence*                          AnimationToPlay;                                   // 0x0368(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
 	float                                         PermutationTimeOffset;                             // 0x0370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         PlayRate;                                          // 0x0374(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bStateBool;                                        // 0x0378(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_379[0x7];                                      // 0x0379(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAnimSharingInstance*                   Instance;                                          // 0x0380(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UAnimSharingInstance*                   Instance;                                          // 0x0380(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
 	uint8                                         Pad_388[0x8];                                      // 0x0388(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -62,20 +64,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnimSharingStateInstance">();
+		STATIC_CLASS_IMPL("AnimSharingStateInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimSharingStateInstance")
 	}
 	static class UAnimSharingStateInstance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimSharingStateInstance>();
 	}
 };
-static_assert(alignof(UAnimSharingStateInstance) == 0x000010, "Wrong alignment on UAnimSharingStateInstance");
-static_assert(sizeof(UAnimSharingStateInstance) == 0x000390, "Wrong size on UAnimSharingStateInstance");
-static_assert(offsetof(UAnimSharingStateInstance, AnimationToPlay) == 0x000368, "Member 'UAnimSharingStateInstance::AnimationToPlay' has a wrong offset!");
-static_assert(offsetof(UAnimSharingStateInstance, PermutationTimeOffset) == 0x000370, "Member 'UAnimSharingStateInstance::PermutationTimeOffset' has a wrong offset!");
-static_assert(offsetof(UAnimSharingStateInstance, PlayRate) == 0x000374, "Member 'UAnimSharingStateInstance::PlayRate' has a wrong offset!");
-static_assert(offsetof(UAnimSharingStateInstance, bStateBool) == 0x000378, "Member 'UAnimSharingStateInstance::bStateBool' has a wrong offset!");
-static_assert(offsetof(UAnimSharingStateInstance, Instance) == 0x000380, "Member 'UAnimSharingStateInstance::Instance' has a wrong offset!");
+DUMPER7_ASSERTS_UAnimSharingStateInstance;
 
 // Class AnimationSharing.AnimSharingTransitionInstance
 // 0x0010 (0x0380 - 0x0370)
@@ -91,19 +91,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnimSharingTransitionInstance">();
+		STATIC_CLASS_IMPL("AnimSharingTransitionInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimSharingTransitionInstance")
 	}
 	static class UAnimSharingTransitionInstance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimSharingTransitionInstance>();
 	}
 };
-static_assert(alignof(UAnimSharingTransitionInstance) == 0x000010, "Wrong alignment on UAnimSharingTransitionInstance");
-static_assert(sizeof(UAnimSharingTransitionInstance) == 0x000380, "Wrong size on UAnimSharingTransitionInstance");
-static_assert(offsetof(UAnimSharingTransitionInstance, FromComponent) == 0x000368, "Member 'UAnimSharingTransitionInstance::FromComponent' has a wrong offset!");
-static_assert(offsetof(UAnimSharingTransitionInstance, ToComponent) == 0x000370, "Member 'UAnimSharingTransitionInstance::ToComponent' has a wrong offset!");
-static_assert(offsetof(UAnimSharingTransitionInstance, BlendTime) == 0x000378, "Member 'UAnimSharingTransitionInstance::BlendTime' has a wrong offset!");
-static_assert(offsetof(UAnimSharingTransitionInstance, bBlendBool) == 0x00037C, "Member 'UAnimSharingTransitionInstance::bBlendBool' has a wrong offset!");
+DUMPER7_ASSERTS_UAnimSharingTransitionInstance;
 
 // Class AnimationSharing.AnimSharingAdditiveInstance
 // 0x0010 (0x0380 - 0x0370)
@@ -119,60 +118,57 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnimSharingAdditiveInstance">();
+		STATIC_CLASS_IMPL("AnimSharingAdditiveInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimSharingAdditiveInstance")
 	}
 	static class UAnimSharingAdditiveInstance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimSharingAdditiveInstance>();
 	}
 };
-static_assert(alignof(UAnimSharingAdditiveInstance) == 0x000010, "Wrong alignment on UAnimSharingAdditiveInstance");
-static_assert(sizeof(UAnimSharingAdditiveInstance) == 0x000380, "Wrong size on UAnimSharingAdditiveInstance");
-static_assert(offsetof(UAnimSharingAdditiveInstance, BaseComponent) == 0x000368, "Member 'UAnimSharingAdditiveInstance::BaseComponent' has a wrong offset!");
-static_assert(offsetof(UAnimSharingAdditiveInstance, AdditiveAnimation) == 0x000370, "Member 'UAnimSharingAdditiveInstance::AdditiveAnimation' has a wrong offset!");
-static_assert(offsetof(UAnimSharingAdditiveInstance, Alpha) == 0x000378, "Member 'UAnimSharingAdditiveInstance::Alpha' has a wrong offset!");
-static_assert(offsetof(UAnimSharingAdditiveInstance, bStateBool) == 0x00037C, "Member 'UAnimSharingAdditiveInstance::bStateBool' has a wrong offset!");
+DUMPER7_ASSERTS_UAnimSharingAdditiveInstance;
 
 // Class AnimationSharing.AnimSharingInstance
 // 0x00F8 (0x0120 - 0x0028)
 class UAnimSharingInstance final : public UObject
 {
 public:
-	TArray<class AActor*>                         RegisteredActors;                                  // 0x0028(0x0010)(Edit, ZeroConstructor, Transient, EditConst, UObjectWrapper, NativeAccessSpecifierPublic)
+	TArray<class AActor*>                         RegisteredActors;                                  // 0x0028(0x0010)(Edit, ZeroConstructor, Transient, EditConst, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
 	uint8                                         Pad_38[0x50];                                      // 0x0038(0x0050)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAnimationSharingStateProcessor*        StateProcessor;                                    // 0x0088(0x0008)(Edit, ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimationSharingStateProcessor*        StateProcessor;                                    // 0x0088(0x0008)(Edit, ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 	uint8                                         Pad_90[0x38];                                      // 0x0090(0x0038)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UAnimSequence*>                  UsedAnimationSequences;                            // 0x00C8(0x0010)(Edit, ZeroConstructor, Transient, EditConst, UObjectWrapper, NativeAccessSpecifierPublic)
+	TArray<class UAnimSequence*>                  UsedAnimationSequences;                            // 0x00C8(0x0010)(Edit, ZeroConstructor, Transient, EditConst, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
 	uint8                                         Pad_D8[0x10];                                      // 0x00D8(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	class UEnum*                                  StateEnum;                                         // 0x00E8(0x0008)(Edit, ZeroConstructor, Transient, EditConst, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                 SharingActor;                                      // 0x00F0(0x0008)(Edit, ZeroConstructor, Transient, EditConst, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UEnum*                                  StateEnum;                                         // 0x00E8(0x0008)(Edit, ZeroConstructor, Transient, EditConst, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class AActor*                                 SharingActor;                                      // 0x00F0(0x0008)(Edit, ZeroConstructor, Transient, EditConst, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 	uint8                                         Pad_F8[0x28];                                      // 0x00F8(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnimSharingInstance">();
+		STATIC_CLASS_IMPL("AnimSharingInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimSharingInstance")
 	}
 	static class UAnimSharingInstance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimSharingInstance>();
 	}
 };
-static_assert(alignof(UAnimSharingInstance) == 0x000008, "Wrong alignment on UAnimSharingInstance");
-static_assert(sizeof(UAnimSharingInstance) == 0x000120, "Wrong size on UAnimSharingInstance");
-static_assert(offsetof(UAnimSharingInstance, RegisteredActors) == 0x000028, "Member 'UAnimSharingInstance::RegisteredActors' has a wrong offset!");
-static_assert(offsetof(UAnimSharingInstance, StateProcessor) == 0x000088, "Member 'UAnimSharingInstance::StateProcessor' has a wrong offset!");
-static_assert(offsetof(UAnimSharingInstance, UsedAnimationSequences) == 0x0000C8, "Member 'UAnimSharingInstance::UsedAnimationSequences' has a wrong offset!");
-static_assert(offsetof(UAnimSharingInstance, StateEnum) == 0x0000E8, "Member 'UAnimSharingInstance::StateEnum' has a wrong offset!");
-static_assert(offsetof(UAnimSharingInstance, SharingActor) == 0x0000F0, "Member 'UAnimSharingInstance::SharingActor' has a wrong offset!");
+DUMPER7_ASSERTS_UAnimSharingInstance;
 
 // Class AnimationSharing.AnimationSharingManager
 // 0x0060 (0x0088 - 0x0028)
 class UAnimationSharingManager final : public UObject
 {
 public:
-	TArray<class USkeleton*>                      Skeletons;                                         // 0x0028(0x0010)(ZeroConstructor, Transient, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	TArray<class UAnimSharingInstance*>           PerSkeletonData;                                   // 0x0038(0x0010)(Edit, ZeroConstructor, Transient, EditConst, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	TArray<class USkeleton*>                      Skeletons;                                         // 0x0028(0x0010)(ZeroConstructor, Transient, Protected, UObjectWrapper, NativeAccessSpecifierProtected, TObjectPtr)
+	TArray<class UAnimSharingInstance*>           PerSkeletonData;                                   // 0x0038(0x0010)(Edit, ZeroConstructor, Transient, EditConst, Protected, UObjectWrapper, NativeAccessSpecifierProtected, TObjectPtr)
 	uint8                                         Pad_48[0x40];                                      // 0x0048(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -185,17 +181,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnimationSharingManager">();
+		STATIC_CLASS_IMPL("AnimationSharingManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimationSharingManager")
 	}
 	static class UAnimationSharingManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimationSharingManager>();
 	}
 };
-static_assert(alignof(UAnimationSharingManager) == 0x000008, "Wrong alignment on UAnimationSharingManager");
-static_assert(sizeof(UAnimationSharingManager) == 0x000088, "Wrong size on UAnimationSharingManager");
-static_assert(offsetof(UAnimationSharingManager, Skeletons) == 0x000028, "Member 'UAnimationSharingManager::Skeletons' has a wrong offset!");
-static_assert(offsetof(UAnimationSharingManager, PerSkeletonData) == 0x000038, "Member 'UAnimationSharingManager::PerSkeletonData' has a wrong offset!");
+DUMPER7_ASSERTS_UAnimationSharingManager;
 
 // Class AnimationSharing.AnimationSharingSetup
 // 0x0020 (0x0048 - 0x0028)
@@ -208,17 +205,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnimationSharingSetup">();
+		STATIC_CLASS_IMPL("AnimationSharingSetup")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimationSharingSetup")
 	}
 	static class UAnimationSharingSetup* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimationSharingSetup>();
 	}
 };
-static_assert(alignof(UAnimationSharingSetup) == 0x000008, "Wrong alignment on UAnimationSharingSetup");
-static_assert(sizeof(UAnimationSharingSetup) == 0x000048, "Wrong size on UAnimationSharingSetup");
-static_assert(offsetof(UAnimationSharingSetup, SkeletonSetups) == 0x000028, "Member 'UAnimationSharingSetup::SkeletonSetups' has a wrong offset!");
-static_assert(offsetof(UAnimationSharingSetup, ScalabilitySettings) == 0x000038, "Member 'UAnimationSharingSetup::ScalabilitySettings' has a wrong offset!");
+DUMPER7_ASSERTS_UAnimationSharingSetup;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_RivalSelectState_C">();
+		BP_STATIC_CLASS_IMPL("BPC_RivalSelectState_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_RivalSelectState_C")
 	}
 	static class UBPC_RivalSelectState_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_RivalSelectState_C>();
 	}
 };
-static_assert(alignof(UBPC_RivalSelectState_C) == 0x000008, "Wrong alignment on UBPC_RivalSelectState_C");
-static_assert(sizeof(UBPC_RivalSelectState_C) == 0x000170, "Wrong size on UBPC_RivalSelectState_C");
-static_assert(offsetof(UBPC_RivalSelectState_C, UberGraphFrame) == 0x000168, "Member 'UBPC_RivalSelectState_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_RivalSelectState_C;
 
 }
 

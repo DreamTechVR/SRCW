@@ -12,9 +12,9 @@
 
 #include "ST_PullDownMenuItemData_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "UnionSystem_structs.hpp"
 #include "ST_PullDownMenuData_structs.hpp"
 #include "UMG_structs.hpp"
+#include "UnionSystem_structs.hpp"
 
 
 namespace SDK::Params
@@ -27,9 +27,7 @@ struct WBP_CMN_PullDownMenu_C_Close final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_PullDownMenu_C_Close) == 0x000008, "Wrong alignment on WBP_CMN_PullDownMenu_C_Close");
-static_assert(sizeof(WBP_CMN_PullDownMenu_C_Close) == 0x000008, "Wrong size on WBP_CMN_PullDownMenu_C_Close");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_Close, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_CMN_PullDownMenu_C_Close::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_PullDownMenu_C_Close;
 
 // Function WBP_CMN_PullDownMenu.WBP_CMN_PullDownMenu_C.ExecuteUbergraph_WBP_CMN_PullDownMenu
 // 0x00E0 (0x00E0 - 0x0000)
@@ -78,42 +76,7 @@ public:
 	double                                        CallFunc_LessEqual_DoubleDouble_B_ImplicitCast;    // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_LessEqual_DoubleDouble_A_ImplicitCast;    // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu) == 0x000008, "Wrong alignment on WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu");
-static_assert(sizeof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu) == 0x0000E0, "Wrong size on WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, EntryPoint) == 0x000000, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, Temp_int_Array_Index_Variable) == 0x000004, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, CallFunc_Array_Get_Item) == 0x000010, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, CallFunc_Less_IntInt_ReturnValue) == 0x000034, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000035, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, K2Node_SetFieldsInStruct_StructOut) == 0x000038, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::K2Node_SetFieldsInStruct_StructOut' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, CallFunc_Not_PreBool_ReturnValue) == 0x000058, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, CallFunc_SoundPlay_ReturnValue) == 0x00005C, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, CallFunc_Not_PreBool_ReturnValue_1) == 0x000060, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, CallFunc_Not_PreBool_ReturnValue_2) == 0x000061, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, CallFunc_Not_PreBool_ReturnValue_3) == 0x000062, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::CallFunc_Not_PreBool_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, CallFunc_SoundPlay_ReturnValue_1) == 0x000064, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, CallFunc_PlayAnimation_ReturnValue) == 0x000068, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, CallFunc_Not_PreBool_ReturnValue_4) == 0x000070, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::CallFunc_Not_PreBool_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, CallFunc_SoundPlay_ReturnValue_2) == 0x000074, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::CallFunc_SoundPlay_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, K2Node_InputAxisEvent_AxisValue) == 0x000078, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::K2Node_InputAxisEvent_AxisValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, CallFunc_PlayAnimation_ReturnValue_1) == 0x000080, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, CallFunc_LessEqual_DoubleDouble_ReturnValue) == 0x000088, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::CallFunc_LessEqual_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, CallFunc_LessEqual_DoubleDouble_ReturnValue_1) == 0x000089, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::CallFunc_LessEqual_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, K2Node_MakeArray_Array) == 0x000090, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, CallFunc_Subtract_IntInt_ReturnValue) == 0x0000A0, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, CallFunc_LoopIndex_OutIndex) == 0x0000A4, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::CallFunc_LoopIndex_OutIndex' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, CallFunc_PlayAnimation_ReturnValue_2) == 0x0000A8, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000B0, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, CallFunc_LoopIndex_OutIndex_1) == 0x0000B4, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::CallFunc_LoopIndex_OutIndex_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, CallFunc_PlayAnimation_ReturnValue_3) == 0x0000B8, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, CallFunc_IsAnimationPlaying_ReturnValue) == 0x0000C0, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, CallFunc_IsAnimationPlaying_ReturnValue_1) == 0x0000C1, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::CallFunc_IsAnimationPlaying_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, CallFunc_PlayAnimation_ReturnValue_4) == 0x0000C8, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::CallFunc_PlayAnimation_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, CallFunc_LessEqual_DoubleDouble_B_ImplicitCast) == 0x0000D0, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::CallFunc_LessEqual_DoubleDouble_B_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu, CallFunc_LessEqual_DoubleDouble_A_ImplicitCast) == 0x0000D8, "Member 'WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu::CallFunc_LessEqual_DoubleDouble_A_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_PullDownMenu_C_ExecuteUbergraph_WBP_CMN_PullDownMenu;
 
 // Function WBP_CMN_PullDownMenu.WBP_CMN_PullDownMenu_C.InpAxisEvt_MouseWheelAxis_K2Node_InputAxisEvent_0
 // 0x0004 (0x0004 - 0x0000)
@@ -122,9 +85,7 @@ struct WBP_CMN_PullDownMenu_C_InpAxisEvt_MouseWheelAxis_K2Node_InputAxisEvent_0 
 public:
 	float                                         AxisValue;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_PullDownMenu_C_InpAxisEvt_MouseWheelAxis_K2Node_InputAxisEvent_0) == 0x000004, "Wrong alignment on WBP_CMN_PullDownMenu_C_InpAxisEvt_MouseWheelAxis_K2Node_InputAxisEvent_0");
-static_assert(sizeof(WBP_CMN_PullDownMenu_C_InpAxisEvt_MouseWheelAxis_K2Node_InputAxisEvent_0) == 0x000004, "Wrong size on WBP_CMN_PullDownMenu_C_InpAxisEvt_MouseWheelAxis_K2Node_InputAxisEvent_0");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_InpAxisEvt_MouseWheelAxis_K2Node_InputAxisEvent_0, AxisValue) == 0x000000, "Member 'WBP_CMN_PullDownMenu_C_InpAxisEvt_MouseWheelAxis_K2Node_InputAxisEvent_0::AxisValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_PullDownMenu_C_InpAxisEvt_MouseWheelAxis_K2Node_InputAxisEvent_0;
 
 // Function WBP_CMN_PullDownMenu.WBP_CMN_PullDownMenu_C.LoopIndex
 // 0x0030 (0x0030 - 0x0000)
@@ -146,20 +107,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue_3;               // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_PullDownMenu_C_LoopIndex) == 0x000004, "Wrong alignment on WBP_CMN_PullDownMenu_C_LoopIndex");
-static_assert(sizeof(WBP_CMN_PullDownMenu_C_LoopIndex) == 0x000030, "Wrong size on WBP_CMN_PullDownMenu_C_LoopIndex");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_LoopIndex, InIndex) == 0x000000, "Member 'WBP_CMN_PullDownMenu_C_LoopIndex::InIndex' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_LoopIndex, OutIndex) == 0x000004, "Member 'WBP_CMN_PullDownMenu_C_LoopIndex::OutIndex' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_LoopIndex, TempIndex) == 0x000008, "Member 'WBP_CMN_PullDownMenu_C_LoopIndex::TempIndex' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_LoopIndex, CallFunc_Array_Length_ReturnValue) == 0x00000C, "Member 'WBP_CMN_PullDownMenu_C_LoopIndex::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_LoopIndex, CallFunc_Array_Length_ReturnValue_1) == 0x000010, "Member 'WBP_CMN_PullDownMenu_C_LoopIndex::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_LoopIndex, CallFunc_Array_Length_ReturnValue_2) == 0x000014, "Member 'WBP_CMN_PullDownMenu_C_LoopIndex::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_LoopIndex, CallFunc_Subtract_IntInt_ReturnValue) == 0x000018, "Member 'WBP_CMN_PullDownMenu_C_LoopIndex::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_LoopIndex, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00001C, "Member 'WBP_CMN_PullDownMenu_C_LoopIndex::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_LoopIndex, CallFunc_Add_IntInt_ReturnValue) == 0x000020, "Member 'WBP_CMN_PullDownMenu_C_LoopIndex::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_LoopIndex, CallFunc_Less_IntInt_ReturnValue) == 0x000024, "Member 'WBP_CMN_PullDownMenu_C_LoopIndex::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_LoopIndex, CallFunc_Array_Length_ReturnValue_3) == 0x000028, "Member 'WBP_CMN_PullDownMenu_C_LoopIndex::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_LoopIndex, CallFunc_LessEqual_IntInt_ReturnValue) == 0x00002C, "Member 'WBP_CMN_PullDownMenu_C_LoopIndex::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_PullDownMenu_C_LoopIndex;
 
 // Function WBP_CMN_PullDownMenu.WBP_CMN_PullDownMenu_C.OnFocusLost
 // 0x0008 (0x0008 - 0x0000)
@@ -168,9 +116,7 @@ struct WBP_CMN_PullDownMenu_C_OnFocusLost final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_CMN_PullDownMenu_C_OnFocusLost) == 0x000004, "Wrong alignment on WBP_CMN_PullDownMenu_C_OnFocusLost");
-static_assert(sizeof(WBP_CMN_PullDownMenu_C_OnFocusLost) == 0x000008, "Wrong size on WBP_CMN_PullDownMenu_C_OnFocusLost");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_OnFocusLost, InFocusEvent) == 0x000000, "Member 'WBP_CMN_PullDownMenu_C_OnFocusLost::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_PullDownMenu_C_OnFocusLost;
 
 // Function WBP_CMN_PullDownMenu.WBP_CMN_PullDownMenu_C.OnFocusReceived
 // 0x01B0 (0x01B0 - 0x0000)
@@ -182,12 +128,7 @@ public:
 	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
 	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x00F8(0x00B8)()
 };
-static_assert(alignof(WBP_CMN_PullDownMenu_C_OnFocusReceived) == 0x000008, "Wrong alignment on WBP_CMN_PullDownMenu_C_OnFocusReceived");
-static_assert(sizeof(WBP_CMN_PullDownMenu_C_OnFocusReceived) == 0x0001B0, "Wrong size on WBP_CMN_PullDownMenu_C_OnFocusReceived");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'WBP_CMN_PullDownMenu_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'WBP_CMN_PullDownMenu_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'WBP_CMN_PullDownMenu_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_OnFocusReceived, K2Node_MakeStruct_EventReply) == 0x0000F8, "Member 'WBP_CMN_PullDownMenu_C_OnFocusReceived::K2Node_MakeStruct_EventReply' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_PullDownMenu_C_OnFocusReceived;
 
 // Function WBP_CMN_PullDownMenu.WBP_CMN_PullDownMenu_C.OnFocusReceivedInternal
 // 0x0098 (0x0098 - 0x0000)
@@ -213,23 +154,7 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0094(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0095(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal) == 0x000008, "Wrong alignment on WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal");
-static_assert(sizeof(WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal) == 0x000098, "Wrong size on WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal, MyGeometry) == 0x000000, "Member 'WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal, InFocusEvent) == 0x000038, "Member 'WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal, Temp_bool_True_if_break_was_hit_Variable) == 0x000040, "Member 'WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal, CallFunc_GetUserIndexByFocusEvent_ReturnValue) == 0x000044, "Member 'WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal::CallFunc_GetUserIndexByFocusEvent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal, CallFunc_GetPlayerController_ReturnValue) == 0x000048, "Member 'WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal, CallFunc_Not_PreBool_ReturnValue) == 0x000050, "Member 'WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal, K2Node_DynamicCast_AsMenu_Player_Controller) == 0x000058, "Member 'WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal::K2Node_DynamicCast_AsMenu_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal, K2Node_DynamicCast_bSuccess) == 0x000060, "Member 'WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal, Temp_int_Array_Index_Variable) == 0x000064, "Member 'WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal, Temp_int_Loop_Counter_Variable) == 0x000068, "Member 'WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal, CallFunc_Add_IntInt_ReturnValue) == 0x00006C, "Member 'WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal, CallFunc_Array_Get_Item) == 0x000070, "Member 'WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal, CallFunc_Array_Length_ReturnValue) == 0x000090, "Member 'WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal, CallFunc_Less_IntInt_ReturnValue) == 0x000094, "Member 'WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal, CallFunc_BooleanAND_ReturnValue) == 0x000095, "Member 'WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_PullDownMenu_C_OnFocusReceivedInternal;
 
 // Function WBP_CMN_PullDownMenu.WBP_CMN_PullDownMenu_C.Open
 // 0x0008 (0x0008 - 0x0000)
@@ -238,9 +163,7 @@ struct WBP_CMN_PullDownMenu_C_Open final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_PullDownMenu_C_Open) == 0x000008, "Wrong alignment on WBP_CMN_PullDownMenu_C_Open");
-static_assert(sizeof(WBP_CMN_PullDownMenu_C_Open) == 0x000008, "Wrong size on WBP_CMN_PullDownMenu_C_Open");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_Open, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_CMN_PullDownMenu_C_Open::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_PullDownMenu_C_Open;
 
 // Function WBP_CMN_PullDownMenu.WBP_CMN_PullDownMenu_C.Reset
 // 0x0008 (0x0008 - 0x0000)
@@ -249,9 +172,7 @@ struct WBP_CMN_PullDownMenu_C_Reset final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_PullDownMenu_C_Reset) == 0x000008, "Wrong alignment on WBP_CMN_PullDownMenu_C_Reset");
-static_assert(sizeof(WBP_CMN_PullDownMenu_C_Reset) == 0x000008, "Wrong size on WBP_CMN_PullDownMenu_C_Reset");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_Reset, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_CMN_PullDownMenu_C_Reset::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_PullDownMenu_C_Reset;
 
 // Function WBP_CMN_PullDownMenu.WBP_CMN_PullDownMenu_C.Setup
 // 0x0048 (0x0048 - 0x0000)
@@ -270,18 +191,7 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_PullDownMenu_C_Setup) == 0x000008, "Wrong alignment on WBP_CMN_PullDownMenu_C_Setup");
-static_assert(sizeof(WBP_CMN_PullDownMenu_C_Setup) == 0x000048, "Wrong size on WBP_CMN_PullDownMenu_C_Setup");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_Setup, InMenuData) == 0x000000, "Member 'WBP_CMN_PullDownMenu_C_Setup::InMenuData' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_Setup, Temp_bool_True_if_break_was_hit_Variable) == 0x000010, "Member 'WBP_CMN_PullDownMenu_C_Setup::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_Setup, CallFunc_Not_PreBool_ReturnValue) == 0x000011, "Member 'WBP_CMN_PullDownMenu_C_Setup::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_Setup, Temp_int_Array_Index_Variable) == 0x000014, "Member 'WBP_CMN_PullDownMenu_C_Setup::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_Setup, Temp_int_Loop_Counter_Variable) == 0x000018, "Member 'WBP_CMN_PullDownMenu_C_Setup::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_Setup, CallFunc_Add_IntInt_ReturnValue) == 0x00001C, "Member 'WBP_CMN_PullDownMenu_C_Setup::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_Setup, CallFunc_Array_Get_Item) == 0x000020, "Member 'WBP_CMN_PullDownMenu_C_Setup::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_Setup, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'WBP_CMN_PullDownMenu_C_Setup::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_Setup, CallFunc_Less_IntInt_ReturnValue) == 0x000044, "Member 'WBP_CMN_PullDownMenu_C_Setup::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_Setup, CallFunc_BooleanAND_ReturnValue) == 0x000045, "Member 'WBP_CMN_PullDownMenu_C_Setup::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_PullDownMenu_C_Setup;
 
 // Function WBP_CMN_PullDownMenu.WBP_CMN_PullDownMenu_C.UpdateItems
 // 0x0050 (0x0050 - 0x0000)
@@ -301,19 +211,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_PullDownMenu_C_UpdateItems) == 0x000008, "Wrong alignment on WBP_CMN_PullDownMenu_C_UpdateItems");
-static_assert(sizeof(WBP_CMN_PullDownMenu_C_UpdateItems) == 0x000050, "Wrong size on WBP_CMN_PullDownMenu_C_UpdateItems");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_UpdateItems, Temp_int_Array_Index_Variable) == 0x000000, "Member 'WBP_CMN_PullDownMenu_C_UpdateItems::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_UpdateItems, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'WBP_CMN_PullDownMenu_C_UpdateItems::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_UpdateItems, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'WBP_CMN_PullDownMenu_C_UpdateItems::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_UpdateItems, CallFunc_Add_IntInt_ReturnValue_1) == 0x00000C, "Member 'WBP_CMN_PullDownMenu_C_UpdateItems::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_UpdateItems, K2Node_MakeStruct_ST_PullDownMenuItemData) == 0x000010, "Member 'WBP_CMN_PullDownMenu_C_UpdateItems::K2Node_MakeStruct_ST_PullDownMenuItemData' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_UpdateItems, CallFunc_Add_IntInt_ReturnValue_2) == 0x000030, "Member 'WBP_CMN_PullDownMenu_C_UpdateItems::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_UpdateItems, CallFunc_LoopIndex_OutIndex) == 0x000034, "Member 'WBP_CMN_PullDownMenu_C_UpdateItems::CallFunc_LoopIndex_OutIndex' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_UpdateItems, CallFunc_Array_Get_Item) == 0x000038, "Member 'WBP_CMN_PullDownMenu_C_UpdateItems::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_UpdateItems, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000040, "Member 'WBP_CMN_PullDownMenu_C_UpdateItems::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_UpdateItems, CallFunc_Array_Length_ReturnValue) == 0x000044, "Member 'WBP_CMN_PullDownMenu_C_UpdateItems::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PullDownMenu_C_UpdateItems, CallFunc_Less_IntInt_ReturnValue) == 0x000048, "Member 'WBP_CMN_PullDownMenu_C_UpdateItems::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_PullDownMenu_C_UpdateItems;
 
 }
 

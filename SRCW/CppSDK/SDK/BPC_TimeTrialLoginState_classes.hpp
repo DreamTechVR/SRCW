@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -41,18 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_TimeTrialLoginState_C">();
+		BP_STATIC_CLASS_IMPL("BPC_TimeTrialLoginState_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_TimeTrialLoginState_C")
 	}
 	static class UBPC_TimeTrialLoginState_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_TimeTrialLoginState_C>();
 	}
 };
-static_assert(alignof(UBPC_TimeTrialLoginState_C) == 0x000008, "Wrong alignment on UBPC_TimeTrialLoginState_C");
-static_assert(sizeof(UBPC_TimeTrialLoginState_C) == 0x000148, "Wrong size on UBPC_TimeTrialLoginState_C");
-static_assert(offsetof(UBPC_TimeTrialLoginState_C, UberGraphFrame) == 0x000130, "Member 'UBPC_TimeTrialLoginState_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialLoginState_C, PopupWindow) == 0x000138, "Member 'UBPC_TimeTrialLoginState_C::PopupWindow' has a wrong offset!");
-static_assert(offsetof(UBPC_TimeTrialLoginState_C, LoginProcessor) == 0x000140, "Member 'UBPC_TimeTrialLoginState_C::LoginProcessor' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_TimeTrialLoginState_C;
 
 }
 

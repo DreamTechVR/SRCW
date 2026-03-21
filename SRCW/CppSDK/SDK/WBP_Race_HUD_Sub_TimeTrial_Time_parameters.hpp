@@ -23,10 +23,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UImage*>                         K2Node_MakeArray_Array;                            // 0x0008(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_TimeTrial_Time_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_Time) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_TimeTrial_Time_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_Time");
-static_assert(sizeof(WBP_Race_HUD_Sub_TimeTrial_Time_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_Time) == 0x000018, "Wrong size on WBP_Race_HUD_Sub_TimeTrial_Time_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_Time");
-static_assert(offsetof(WBP_Race_HUD_Sub_TimeTrial_Time_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_Time, EntryPoint) == 0x000000, "Member 'WBP_Race_HUD_Sub_TimeTrial_Time_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_Time::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_TimeTrial_Time_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_Time, K2Node_MakeArray_Array) == 0x000008, "Member 'WBP_Race_HUD_Sub_TimeTrial_Time_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_Time::K2Node_MakeArray_Array' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Race_HUD_Sub_TimeTrial_Time_C_ExecuteUbergraph_WBP_Race_HUD_Sub_TimeTrial_Time;
 
 }
 

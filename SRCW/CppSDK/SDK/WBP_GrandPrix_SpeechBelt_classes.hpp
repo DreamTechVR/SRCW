@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -40,23 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GrandPrix_SpeechBelt_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GrandPrix_SpeechBelt_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GrandPrix_SpeechBelt_C")
 	}
 	static class UWBP_GrandPrix_SpeechBelt_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GrandPrix_SpeechBelt_C>();
 	}
 };
-static_assert(alignof(UWBP_GrandPrix_SpeechBelt_C) == 0x000008, "Wrong alignment on UWBP_GrandPrix_SpeechBelt_C");
-static_assert(sizeof(UWBP_GrandPrix_SpeechBelt_C) == 0x0003A8, "Wrong size on UWBP_GrandPrix_SpeechBelt_C");
-static_assert(offsetof(UWBP_GrandPrix_SpeechBelt_C, UberGraphFrame) == 0x000368, "Member 'UWBP_GrandPrix_SpeechBelt_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_GrandPrix_SpeechBelt_C, SpeechBelt_Loop) == 0x000370, "Member 'UWBP_GrandPrix_SpeechBelt_C::SpeechBelt_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_GrandPrix_SpeechBelt_C, NameBase) == 0x000378, "Member 'UWBP_GrandPrix_SpeechBelt_C::NameBase' has a wrong offset!");
-static_assert(offsetof(UWBP_GrandPrix_SpeechBelt_C, Overlay_All) == 0x000380, "Member 'UWBP_GrandPrix_SpeechBelt_C::Overlay_All' has a wrong offset!");
-static_assert(offsetof(UWBP_GrandPrix_SpeechBelt_C, UVScroll_01) == 0x000388, "Member 'UWBP_GrandPrix_SpeechBelt_C::UVScroll_01' has a wrong offset!");
-static_assert(offsetof(UWBP_GrandPrix_SpeechBelt_C, UVScroll_02) == 0x000390, "Member 'UWBP_GrandPrix_SpeechBelt_C::UVScroll_02' has a wrong offset!");
-static_assert(offsetof(UWBP_GrandPrix_SpeechBelt_C, UVScroll_03) == 0x000398, "Member 'UWBP_GrandPrix_SpeechBelt_C::UVScroll_03' has a wrong offset!");
-static_assert(offsetof(UWBP_GrandPrix_SpeechBelt_C, UVScroll_04) == 0x0003A0, "Member 'UWBP_GrandPrix_SpeechBelt_C::UVScroll_04' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GrandPrix_SpeechBelt_C;
 
 }
 

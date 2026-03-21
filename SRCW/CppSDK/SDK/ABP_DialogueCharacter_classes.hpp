@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -84,48 +84,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABP_DialogueCharacter_C">();
+		BP_STATIC_CLASS_IMPL("ABP_DialogueCharacter_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABP_DialogueCharacter_C")
 	}
 	static class UABP_DialogueCharacter_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UABP_DialogueCharacter_C>();
 	}
 };
-static_assert(alignof(UABP_DialogueCharacter_C) == 0x000010, "Wrong alignment on UABP_DialogueCharacter_C");
-static_assert(sizeof(UABP_DialogueCharacter_C) == 0x0009D0, "Wrong size on UABP_DialogueCharacter_C");
-static_assert(offsetof(UABP_DialogueCharacter_C, UberGraphFrame) == 0x0003D0, "Member 'UABP_DialogueCharacter_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UABP_DialogueCharacter_C, AnimBlueprintExtension_PropertyAccess) == 0x0003D8, "Member 'UABP_DialogueCharacter_C::AnimBlueprintExtension_PropertyAccess' has a wrong offset!");
-static_assert(offsetof(UABP_DialogueCharacter_C, AnimBlueprintExtension_Base) == 0x0003E0, "Member 'UABP_DialogueCharacter_C::AnimBlueprintExtension_Base' has a wrong offset!");
-static_assert(offsetof(UABP_DialogueCharacter_C, AnimGraphNode_Root) == 0x0003E8, "Member 'UABP_DialogueCharacter_C::AnimGraphNode_Root' has a wrong offset!");
-static_assert(offsetof(UABP_DialogueCharacter_C, AnimGraphNode_TransitionResult_7) == 0x000408, "Member 'UABP_DialogueCharacter_C::AnimGraphNode_TransitionResult_7' has a wrong offset!");
-static_assert(offsetof(UABP_DialogueCharacter_C, AnimGraphNode_TransitionResult_6) == 0x000430, "Member 'UABP_DialogueCharacter_C::AnimGraphNode_TransitionResult_6' has a wrong offset!");
-static_assert(offsetof(UABP_DialogueCharacter_C, AnimGraphNode_TransitionResult_5) == 0x000458, "Member 'UABP_DialogueCharacter_C::AnimGraphNode_TransitionResult_5' has a wrong offset!");
-static_assert(offsetof(UABP_DialogueCharacter_C, AnimGraphNode_TransitionResult_4) == 0x000480, "Member 'UABP_DialogueCharacter_C::AnimGraphNode_TransitionResult_4' has a wrong offset!");
-static_assert(offsetof(UABP_DialogueCharacter_C, AnimGraphNode_TransitionResult_3) == 0x0004A8, "Member 'UABP_DialogueCharacter_C::AnimGraphNode_TransitionResult_3' has a wrong offset!");
-static_assert(offsetof(UABP_DialogueCharacter_C, AnimGraphNode_TransitionResult_2) == 0x0004D0, "Member 'UABP_DialogueCharacter_C::AnimGraphNode_TransitionResult_2' has a wrong offset!");
-static_assert(offsetof(UABP_DialogueCharacter_C, AnimGraphNode_TransitionResult_1) == 0x0004F8, "Member 'UABP_DialogueCharacter_C::AnimGraphNode_TransitionResult_1' has a wrong offset!");
-static_assert(offsetof(UABP_DialogueCharacter_C, AnimGraphNode_TransitionResult) == 0x000520, "Member 'UABP_DialogueCharacter_C::AnimGraphNode_TransitionResult' has a wrong offset!");
-static_assert(offsetof(UABP_DialogueCharacter_C, AnimGraphNode_SequencePlayer_8) == 0x000548, "Member 'UABP_DialogueCharacter_C::AnimGraphNode_SequencePlayer_8' has a wrong offset!");
-static_assert(offsetof(UABP_DialogueCharacter_C, AnimGraphNode_StateResult_8) == 0x000590, "Member 'UABP_DialogueCharacter_C::AnimGraphNode_StateResult_8' has a wrong offset!");
-static_assert(offsetof(UABP_DialogueCharacter_C, AnimGraphNode_SequencePlayer_7) == 0x0005B0, "Member 'UABP_DialogueCharacter_C::AnimGraphNode_SequencePlayer_7' has a wrong offset!");
-static_assert(offsetof(UABP_DialogueCharacter_C, AnimGraphNode_StateResult_7) == 0x0005F8, "Member 'UABP_DialogueCharacter_C::AnimGraphNode_StateResult_7' has a wrong offset!");
-static_assert(offsetof(UABP_DialogueCharacter_C, AnimGraphNode_SequencePlayer_6) == 0x000618, "Member 'UABP_DialogueCharacter_C::AnimGraphNode_SequencePlayer_6' has a wrong offset!");
-static_assert(offsetof(UABP_DialogueCharacter_C, AnimGraphNode_StateResult_6) == 0x000660, "Member 'UABP_DialogueCharacter_C::AnimGraphNode_StateResult_6' has a wrong offset!");
-static_assert(offsetof(UABP_DialogueCharacter_C, AnimGraphNode_SequencePlayer_5) == 0x000680, "Member 'UABP_DialogueCharacter_C::AnimGraphNode_SequencePlayer_5' has a wrong offset!");
-static_assert(offsetof(UABP_DialogueCharacter_C, AnimGraphNode_StateResult_5) == 0x0006C8, "Member 'UABP_DialogueCharacter_C::AnimGraphNode_StateResult_5' has a wrong offset!");
-static_assert(offsetof(UABP_DialogueCharacter_C, AnimGraphNode_SequencePlayer_4) == 0x0006E8, "Member 'UABP_DialogueCharacter_C::AnimGraphNode_SequencePlayer_4' has a wrong offset!");
-static_assert(offsetof(UABP_DialogueCharacter_C, AnimGraphNode_StateResult_4) == 0x000730, "Member 'UABP_DialogueCharacter_C::AnimGraphNode_StateResult_4' has a wrong offset!");
-static_assert(offsetof(UABP_DialogueCharacter_C, AnimGraphNode_SequencePlayer_3) == 0x000750, "Member 'UABP_DialogueCharacter_C::AnimGraphNode_SequencePlayer_3' has a wrong offset!");
-static_assert(offsetof(UABP_DialogueCharacter_C, AnimGraphNode_StateResult_3) == 0x000798, "Member 'UABP_DialogueCharacter_C::AnimGraphNode_StateResult_3' has a wrong offset!");
-static_assert(offsetof(UABP_DialogueCharacter_C, AnimGraphNode_SequencePlayer_2) == 0x0007B8, "Member 'UABP_DialogueCharacter_C::AnimGraphNode_SequencePlayer_2' has a wrong offset!");
-static_assert(offsetof(UABP_DialogueCharacter_C, AnimGraphNode_StateResult_2) == 0x000800, "Member 'UABP_DialogueCharacter_C::AnimGraphNode_StateResult_2' has a wrong offset!");
-static_assert(offsetof(UABP_DialogueCharacter_C, AnimGraphNode_SequencePlayer_1) == 0x000820, "Member 'UABP_DialogueCharacter_C::AnimGraphNode_SequencePlayer_1' has a wrong offset!");
-static_assert(offsetof(UABP_DialogueCharacter_C, AnimGraphNode_StateResult_1) == 0x000868, "Member 'UABP_DialogueCharacter_C::AnimGraphNode_StateResult_1' has a wrong offset!");
-static_assert(offsetof(UABP_DialogueCharacter_C, AnimGraphNode_SequencePlayer) == 0x000888, "Member 'UABP_DialogueCharacter_C::AnimGraphNode_SequencePlayer' has a wrong offset!");
-static_assert(offsetof(UABP_DialogueCharacter_C, AnimGraphNode_StateResult) == 0x0008D0, "Member 'UABP_DialogueCharacter_C::AnimGraphNode_StateResult' has a wrong offset!");
-static_assert(offsetof(UABP_DialogueCharacter_C, AnimGraphNode_StateMachine) == 0x0008F0, "Member 'UABP_DialogueCharacter_C::AnimGraphNode_StateMachine' has a wrong offset!");
-static_assert(offsetof(UABP_DialogueCharacter_C, MotionId) == 0x0009B8, "Member 'UABP_DialogueCharacter_C::MotionId' has a wrong offset!");
-static_assert(offsetof(UABP_DialogueCharacter_C, OnAnimationEnd) == 0x0009C0, "Member 'UABP_DialogueCharacter_C::OnAnimationEnd' has a wrong offset!");
+DUMPER7_ASSERTS_UABP_DialogueCharacter_C;
 
 }
 

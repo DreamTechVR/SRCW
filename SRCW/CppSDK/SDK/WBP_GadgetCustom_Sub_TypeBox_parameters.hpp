@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
-#include "EMachineSelectMode_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "UNION_structs.hpp"
+#include "EMachineSelectMode_structs.hpp"
 
 
 namespace SDK::Params
@@ -98,67 +98,7 @@ public:
 	double                                        CallFunc_Multiply_DoubleDouble_B_ImplicitCast;     // 0x0258(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScrollOffset_NewScrollOffset_ImplicitCast; // 0x0260(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox) == 0x000008, "Wrong alignment on WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox");
-static_assert(sizeof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox) == 0x000268, "Wrong size on WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, EntryPoint) == 0x000000, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, Temp_struct_Variable) == 0x000004, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_Array_Length_ReturnValue) == 0x000014, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, K2Node_CustomEvent_bDownRight) == 0x000018, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::K2Node_CustomEvent_bDownRight' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, K2Node_CustomEvent_bInImmediateReflection) == 0x000019, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::K2Node_CustomEvent_bInImmediateReflection' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, K2Node_CustomEvent_FinishedWidget) == 0x000020, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::K2Node_CustomEvent_FinishedWidget' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, K2Node_CustomEvent_InCategoryIndex) == 0x000028, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::K2Node_CustomEvent_InCategoryIndex' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_Greater_IntInt_ReturnValue) == 0x00002C, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000030, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_Subtract_IntInt_ReturnValue) == 0x000038, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, Temp_struct_Variable_1) == 0x00003C, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000050, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000058, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, Temp_struct_Variable_2) == 0x000060, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::Temp_struct_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, K2Node_Event_InGadgetCustomWindow) == 0x000070, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::K2Node_Event_InGadgetCustomWindow' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, K2Node_Event_InPlayerControllerIndex) == 0x000078, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::K2Node_Event_InPlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, K2Node_Event_IsDesignTime) == 0x00007C, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, Temp_struct_Variable_3) == 0x000080, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::Temp_struct_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, K2Node_CreateDelegate_OutputDelegate) == 0x000090, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, K2Node_CreateDelegate_OutputDelegate_1) == 0x0000A0, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, K2Node_CreateDelegate_OutputDelegate_2) == 0x0000B0, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, K2Node_CreateDelegate_OutputDelegate_3) == 0x0000C0, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, Temp_int_Array_Index_Variable) == 0x0000D0, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_Array_Get_Item) == 0x0000D8, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_PlayAnimation_ReturnValue) == 0x0000E0, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_PlayAnimation_ReturnValue_1) == 0x0000E8, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_IsValid_ReturnValue) == 0x0000F0, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_IsValid_ReturnValue_1) == 0x0000F1, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_GetCurrentCenterBoxGadgetInfo_IndexOnBox) == 0x0000F4, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_GetCurrentCenterBoxGadgetInfo_IndexOnBox' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_GetCurrentCenterBoxGadgetInfo_GadgetCategory) == 0x0000F8, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_GetCurrentCenterBoxGadgetInfo_GadgetCategory' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_GetCurrentCenterBoxGadgetInfo_CenterElementTypeIndex) == 0x0000FC, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_GetCurrentCenterBoxGadgetInfo_CenterElementTypeIndex' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_GetCurrentCenterBoxGadgetInfo_GadgetId) == 0x000100, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_GetCurrentCenterBoxGadgetInfo_GadgetId' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_GetCurrentCenterBoxGadgetInfo_SelectedGadgetState) == 0x000101, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_GetCurrentCenterBoxGadgetInfo_SelectedGadgetState' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_GetCurrentCenterBoxGadgetInfo_IndexOnBox_1) == 0x000104, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_GetCurrentCenterBoxGadgetInfo_IndexOnBox_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_GetCurrentCenterBoxGadgetInfo_GadgetCategory_1) == 0x000108, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_GetCurrentCenterBoxGadgetInfo_GadgetCategory_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_GetCurrentCenterBoxGadgetInfo_CenterElementTypeIndex_1) == 0x00010C, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_GetCurrentCenterBoxGadgetInfo_CenterElementTypeIndex_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_GetCurrentCenterBoxGadgetInfo_GadgetId_1) == 0x000110, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_GetCurrentCenterBoxGadgetInfo_GadgetId_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_GetCurrentCenterBoxGadgetInfo_SelectedGadgetState_1) == 0x000111, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_GetCurrentCenterBoxGadgetInfo_SelectedGadgetState_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, Temp_int_Variable) == 0x000114, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_GetDisplayName_ReturnValue) == 0x000118, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000128, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_Conv_StringToText_ReturnValue) == 0x000130, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, K2Node_MakeStruct_FormatArgumentData) == 0x000140, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_Conv_StringToText_ReturnValue_1) == 0x000188, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, K2Node_MakeArray_Array) == 0x000198, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, K2Node_MakeStruct_FormatArgumentData_1) == 0x0001A8, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_Format_ReturnValue) == 0x0001F0, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, K2Node_MakeArray_Array_1) == 0x000200, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_Format_ReturnValue_1) == 0x000210, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_Add_IntInt_ReturnValue) == 0x000220, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, Temp_int_Variable_1) == 0x000224, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, Temp_int_Loop_Counter_Variable) == 0x000228, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, K2Node_Select_Default) == 0x00022C, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_Less_IntInt_ReturnValue) == 0x00023C, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_Add_IntInt_ReturnValue_1) == 0x000240, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000248, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_Add_DoubleDouble_B_ImplicitCast) == 0x000250, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_Add_DoubleDouble_B_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_Multiply_DoubleDouble_B_ImplicitCast) == 0x000258, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_Multiply_DoubleDouble_B_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox, CallFunc_SetScrollOffset_NewScrollOffset_ImplicitCast) == 0x000260, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox::CallFunc_SetScrollOffset_NewScrollOffset_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_TypeBox_C_ExecuteUbergraph_WBP_GadgetCustom_Sub_TypeBox;
 
 // Function WBP_GadgetCustom_Sub_TypeBox.WBP_GadgetCustom_Sub_TypeBox_C.GetCurrentItemDisplayIndex
 // 0x0008 (0x0008 - 0x0000)
@@ -168,10 +108,7 @@ public:
 	int32                                         OutDisplayIndex;                                   // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_MakeLiteralInt_ReturnValue;               // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_TypeBox_C_GetCurrentItemDisplayIndex) == 0x000004, "Wrong alignment on WBP_GadgetCustom_Sub_TypeBox_C_GetCurrentItemDisplayIndex");
-static_assert(sizeof(WBP_GadgetCustom_Sub_TypeBox_C_GetCurrentItemDisplayIndex) == 0x000008, "Wrong size on WBP_GadgetCustom_Sub_TypeBox_C_GetCurrentItemDisplayIndex");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_GetCurrentItemDisplayIndex, OutDisplayIndex) == 0x000000, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_GetCurrentItemDisplayIndex::OutDisplayIndex' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_GetCurrentItemDisplayIndex, CallFunc_MakeLiteralInt_ReturnValue) == 0x000004, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_GetCurrentItemDisplayIndex::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_TypeBox_C_GetCurrentItemDisplayIndex;
 
 // Function WBP_GadgetCustom_Sub_TypeBox.WBP_GadgetCustom_Sub_TypeBox_C.GetGedgetCategory
 // 0x0001 (0x0001 - 0x0000)
@@ -180,9 +117,7 @@ struct WBP_GadgetCustom_Sub_TypeBox_C_GetGedgetCategory final
 public:
 	EGadgetCategory                               Output_Get;                                        // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_TypeBox_C_GetGedgetCategory) == 0x000001, "Wrong alignment on WBP_GadgetCustom_Sub_TypeBox_C_GetGedgetCategory");
-static_assert(sizeof(WBP_GadgetCustom_Sub_TypeBox_C_GetGedgetCategory) == 0x000001, "Wrong size on WBP_GadgetCustom_Sub_TypeBox_C_GetGedgetCategory");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_GetGedgetCategory, Output_Get) == 0x000000, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_GetGedgetCategory::Output_Get' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_TypeBox_C_GetGedgetCategory;
 
 // Function WBP_GadgetCustom_Sub_TypeBox.WBP_GadgetCustom_Sub_TypeBox_C.GetMode
 // 0x0001 (0x0001 - 0x0000)
@@ -191,9 +126,7 @@ struct WBP_GadgetCustom_Sub_TypeBox_C_GetMode final
 public:
 	EMachineSelectMode::EMachineSelectMode        OutMode;                                           // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_TypeBox_C_GetMode) == 0x000001, "Wrong alignment on WBP_GadgetCustom_Sub_TypeBox_C_GetMode");
-static_assert(sizeof(WBP_GadgetCustom_Sub_TypeBox_C_GetMode) == 0x000001, "Wrong size on WBP_GadgetCustom_Sub_TypeBox_C_GetMode");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_GetMode, OutMode) == 0x000000, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_GetMode::OutMode' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_TypeBox_C_GetMode;
 
 // Function WBP_GadgetCustom_Sub_TypeBox.WBP_GadgetCustom_Sub_TypeBox_C.OnInitWidgetRefCategoryNg
 // 0x0028 (0x0028 - 0x0000)
@@ -205,11 +138,7 @@ public:
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0018(0x0010)()
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetRefCategoryNg) == 0x000008, "Wrong alignment on WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetRefCategoryNg");
-static_assert(sizeof(WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetRefCategoryNg) == 0x000028, "Wrong size on WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetRefCategoryNg");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetRefCategoryNg, K2Node_MakeArray_Array) == 0x000000, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetRefCategoryNg::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetRefCategoryNg, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetRefCategoryNg::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetRefCategoryNg, CallFunc_Format_ReturnValue) == 0x000018, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetRefCategoryNg::CallFunc_Format_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetRefCategoryNg;
 
 // Function WBP_GadgetCustom_Sub_TypeBox.WBP_GadgetCustom_Sub_TypeBox_C.OnInitWidgetReference
 // 0x00C0 (0x00C0 - 0x0000)
@@ -235,23 +164,7 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue_4;                     // 0x00A8(0x0010)()
 	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference) == 0x000008, "Wrong alignment on WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference");
-static_assert(sizeof(WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference) == 0x0000C0, "Wrong size on WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference, K2Node_MakeArray_Array) == 0x000000, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference, CallFunc_Format_ReturnValue) == 0x000010, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference, K2Node_MakeArray_Array_1) == 0x000028, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference, CallFunc_IsValid_ReturnValue_1) == 0x000038, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference, CallFunc_Format_ReturnValue_1) == 0x000040, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference, K2Node_MakeArray_Array_2) == 0x000050, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference::K2Node_MakeArray_Array_2' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference, CallFunc_Format_ReturnValue_2) == 0x000060, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference::CallFunc_Format_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference, CallFunc_IsValid_ReturnValue_2) == 0x000070, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference, CallFunc_IsValid_ReturnValue_3) == 0x000071, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference, K2Node_MakeArray_Array_3) == 0x000078, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference::K2Node_MakeArray_Array_3' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference, CallFunc_Format_ReturnValue_3) == 0x000088, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference::CallFunc_Format_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference, K2Node_MakeArray_Array_4) == 0x000098, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference::K2Node_MakeArray_Array_4' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference, CallFunc_Format_ReturnValue_4) == 0x0000A8, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference::CallFunc_Format_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference, CallFunc_IsValid_ReturnValue_4) == 0x0000B8, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetReference;
 
 // Function WBP_GadgetCustom_Sub_TypeBox.WBP_GadgetCustom_Sub_TypeBox_C.OnScrollAnimFinishedEvent
 // 0x0008 (0x0008 - 0x0000)
@@ -260,9 +173,7 @@ struct WBP_GadgetCustom_Sub_TypeBox_C_OnScrollAnimFinishedEvent final
 public:
 	class UUnionUILoopScrollBox*                  FinishedWidget;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_TypeBox_C_OnScrollAnimFinishedEvent) == 0x000008, "Wrong alignment on WBP_GadgetCustom_Sub_TypeBox_C_OnScrollAnimFinishedEvent");
-static_assert(sizeof(WBP_GadgetCustom_Sub_TypeBox_C_OnScrollAnimFinishedEvent) == 0x000008, "Wrong size on WBP_GadgetCustom_Sub_TypeBox_C_OnScrollAnimFinishedEvent");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_OnScrollAnimFinishedEvent, FinishedWidget) == 0x000000, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_OnScrollAnimFinishedEvent::FinishedWidget' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_TypeBox_C_OnScrollAnimFinishedEvent;
 
 // Function WBP_GadgetCustom_Sub_TypeBox.WBP_GadgetCustom_Sub_TypeBox_C.PlayScroll
 // 0x0002 (0x0002 - 0x0000)
@@ -272,10 +183,7 @@ public:
 	bool                                          bDownRight;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bInImmediateReflection;                            // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_TypeBox_C_PlayScroll) == 0x000001, "Wrong alignment on WBP_GadgetCustom_Sub_TypeBox_C_PlayScroll");
-static_assert(sizeof(WBP_GadgetCustom_Sub_TypeBox_C_PlayScroll) == 0x000002, "Wrong size on WBP_GadgetCustom_Sub_TypeBox_C_PlayScroll");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_PlayScroll, bDownRight) == 0x000000, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_PlayScroll::bDownRight' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_PlayScroll, bInImmediateReflection) == 0x000001, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_PlayScroll::bInImmediateReflection' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_TypeBox_C_PlayScroll;
 
 // Function WBP_GadgetCustom_Sub_TypeBox.WBP_GadgetCustom_Sub_TypeBox_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -284,9 +192,7 @@ struct WBP_GadgetCustom_Sub_TypeBox_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_TypeBox_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_GadgetCustom_Sub_TypeBox_C_PreConstruct");
-static_assert(sizeof(WBP_GadgetCustom_Sub_TypeBox_C_PreConstruct) == 0x000001, "Wrong size on WBP_GadgetCustom_Sub_TypeBox_C_PreConstruct");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_TypeBox_C_PreConstruct;
 
 // Function WBP_GadgetCustom_Sub_TypeBox.WBP_GadgetCustom_Sub_TypeBox_C.SetFocusIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -295,9 +201,7 @@ struct WBP_GadgetCustom_Sub_TypeBox_C_SetFocusIndex final
 public:
 	int32                                         InCategoryIndex;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_TypeBox_C_SetFocusIndex) == 0x000004, "Wrong alignment on WBP_GadgetCustom_Sub_TypeBox_C_SetFocusIndex");
-static_assert(sizeof(WBP_GadgetCustom_Sub_TypeBox_C_SetFocusIndex) == 0x000004, "Wrong size on WBP_GadgetCustom_Sub_TypeBox_C_SetFocusIndex");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_SetFocusIndex, InCategoryIndex) == 0x000000, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_SetFocusIndex::InCategoryIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_TypeBox_C_SetFocusIndex;
 
 // Function WBP_GadgetCustom_Sub_TypeBox.WBP_GadgetCustom_Sub_TypeBox_C.SetLightVer
 // 0x0001 (0x0001 - 0x0000)
@@ -306,9 +210,7 @@ struct WBP_GadgetCustom_Sub_TypeBox_C_SetLightVer final
 public:
 	bool                                          IsLight;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_TypeBox_C_SetLightVer) == 0x000001, "Wrong alignment on WBP_GadgetCustom_Sub_TypeBox_C_SetLightVer");
-static_assert(sizeof(WBP_GadgetCustom_Sub_TypeBox_C_SetLightVer) == 0x000001, "Wrong size on WBP_GadgetCustom_Sub_TypeBox_C_SetLightVer");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_SetLightVer, IsLight) == 0x000000, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_SetLightVer::IsLight' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_TypeBox_C_SetLightVer;
 
 // Function WBP_GadgetCustom_Sub_TypeBox.WBP_GadgetCustom_Sub_TypeBox_C.SetMode
 // 0x0001 (0x0001 - 0x0000)
@@ -317,9 +219,7 @@ struct WBP_GadgetCustom_Sub_TypeBox_C_SetMode final
 public:
 	EMachineSelectMode::EMachineSelectMode        InMode;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_TypeBox_C_SetMode) == 0x000001, "Wrong alignment on WBP_GadgetCustom_Sub_TypeBox_C_SetMode");
-static_assert(sizeof(WBP_GadgetCustom_Sub_TypeBox_C_SetMode) == 0x000001, "Wrong size on WBP_GadgetCustom_Sub_TypeBox_C_SetMode");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_SetMode, InMode) == 0x000000, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_SetMode::InMode' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_TypeBox_C_SetMode;
 
 // Function WBP_GadgetCustom_Sub_TypeBox.WBP_GadgetCustom_Sub_TypeBox_C.SetPlayerControllerIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -328,9 +228,7 @@ struct WBP_GadgetCustom_Sub_TypeBox_C_SetPlayerControllerIndex final
 public:
 	int32                                         InPlayerControllerIndex;                           // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_TypeBox_C_SetPlayerControllerIndex) == 0x000004, "Wrong alignment on WBP_GadgetCustom_Sub_TypeBox_C_SetPlayerControllerIndex");
-static_assert(sizeof(WBP_GadgetCustom_Sub_TypeBox_C_SetPlayerControllerIndex) == 0x000004, "Wrong size on WBP_GadgetCustom_Sub_TypeBox_C_SetPlayerControllerIndex");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_SetPlayerControllerIndex, InPlayerControllerIndex) == 0x000000, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_SetPlayerControllerIndex::InPlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_TypeBox_C_SetPlayerControllerIndex;
 
 // Function WBP_GadgetCustom_Sub_TypeBox.WBP_GadgetCustom_Sub_TypeBox_C.Setup
 // 0x0008 (0x0008 - 0x0000)
@@ -339,9 +237,7 @@ struct WBP_GadgetCustom_Sub_TypeBox_C_Setup final
 public:
 	class UGadgetCustomWindow*                    InGadgetCustomWindow;                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_TypeBox_C_Setup) == 0x000008, "Wrong alignment on WBP_GadgetCustom_Sub_TypeBox_C_Setup");
-static_assert(sizeof(WBP_GadgetCustom_Sub_TypeBox_C_Setup) == 0x000008, "Wrong size on WBP_GadgetCustom_Sub_TypeBox_C_Setup");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_Setup, InGadgetCustomWindow) == 0x000000, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_Setup::InGadgetCustomWindow' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_TypeBox_C_Setup;
 
 // Function WBP_GadgetCustom_Sub_TypeBox.WBP_GadgetCustom_Sub_TypeBox_C.SetupGadgetIconRef
 // 0x0078 (0x0078 - 0x0000)
@@ -370,27 +266,7 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0075(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef) == 0x000008, "Wrong alignment on WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef");
-static_assert(sizeof(WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef) == 0x000078, "Wrong size on WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef, Temp_int_Loop_Counter_Variable) == 0x000000, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef, CallFunc_Add_IntInt_ReturnValue) == 0x000004, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef, Temp_int_Array_Index_Variable) == 0x000008, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef, Temp_int_Array_Index_Variable_1) == 0x00000C, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef, Temp_bool_Variable) == 0x000010, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef, CallFunc_Array_Length_ReturnValue) == 0x000014, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef, Temp_int_Loop_Counter_Variable_1) == 0x000018, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef, CallFunc_Add_IntInt_ReturnValue_1) == 0x00001C, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef, CallFunc_Array_Find_ReturnValue) == 0x000020, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef, K2Node_MakeArray_Array) == 0x000028, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef, K2Node_MakeArray_Array_1) == 0x000038, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef, K2Node_Select_Default) == 0x000048, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef, CallFunc_Array_Get_Item) == 0x000058, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef, CallFunc_Array_Get_Item_1) == 0x000060, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef, CallFunc_Array_Add_ReturnValue) == 0x000068, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef, CallFunc_Array_Length_ReturnValue_1) == 0x00006C, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef, CallFunc_Array_Length_ReturnValue_2) == 0x000070, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef, CallFunc_Less_IntInt_ReturnValue) == 0x000074, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef, CallFunc_Less_IntInt_ReturnValue_1) == 0x000075, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_GadgetCustom_Sub_TypeBox_C_SetupGadgetIconRef;
 
 }
 

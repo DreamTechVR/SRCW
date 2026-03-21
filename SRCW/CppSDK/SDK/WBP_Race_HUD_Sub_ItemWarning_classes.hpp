@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UnionRun_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -45,23 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_HUD_Sub_ItemWarning_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_HUD_Sub_ItemWarning_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_HUD_Sub_ItemWarning_C")
 	}
 	static class UWBP_Race_HUD_Sub_ItemWarning_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_HUD_Sub_ItemWarning_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_HUD_Sub_ItemWarning_C) == 0x000008, "Wrong alignment on UWBP_Race_HUD_Sub_ItemWarning_C");
-static_assert(sizeof(UWBP_Race_HUD_Sub_ItemWarning_C) == 0x000460, "Wrong size on UWBP_Race_HUD_Sub_ItemWarning_C");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemWarning_C, UberGraphFrame) == 0x000420, "Member 'UWBP_Race_HUD_Sub_ItemWarning_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemWarning_C, base) == 0x000428, "Member 'UWBP_Race_HUD_Sub_ItemWarning_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemWarning_C, DMY_ItemIcon) == 0x000430, "Member 'UWBP_Race_HUD_Sub_ItemWarning_C::DMY_ItemIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemWarning_C, DMY_ItemIcon_Shadow) == 0x000438, "Member 'UWBP_Race_HUD_Sub_ItemWarning_C::DMY_ItemIcon_Shadow' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemWarning_C, WarningBlink_Circle) == 0x000440, "Member 'UWBP_Race_HUD_Sub_ItemWarning_C::WarningBlink_Circle' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemWarning_C, bBeep) == 0x000448, "Member 'UWBP_Race_HUD_Sub_ItemWarning_C::bBeep' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemWarning_C, SpeedRate) == 0x000450, "Member 'UWBP_Race_HUD_Sub_ItemWarning_C::SpeedRate' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_ItemWarning_C, bPauseFlag) == 0x000458, "Member 'UWBP_Race_HUD_Sub_ItemWarning_C::bPauseFlag' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_HUD_Sub_ItemWarning_C;
 
 }
 

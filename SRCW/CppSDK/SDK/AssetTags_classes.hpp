@@ -32,15 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AssetTagsSubsystem">();
+		STATIC_CLASS_IMPL("AssetTagsSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AssetTagsSubsystem")
 	}
 	static class UAssetTagsSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAssetTagsSubsystem>();
 	}
 };
-static_assert(alignof(UAssetTagsSubsystem) == 0x000008, "Wrong alignment on UAssetTagsSubsystem");
-static_assert(sizeof(UAssetTagsSubsystem) == 0x000030, "Wrong size on UAssetTagsSubsystem");
+DUMPER7_ASSERTS_UAssetTagsSubsystem;
 
 }
 

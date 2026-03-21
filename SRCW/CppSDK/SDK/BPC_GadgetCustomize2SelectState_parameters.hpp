@@ -10,15 +10,51 @@
 
 #include "Basic.hpp"
 
+#include "UNION_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UnionLib_structs.hpp"
-#include "UNION_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK::Params
 {
+
+// Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.CreateGadgetPurchasePopup
+// 0x0018 (0x0018 - 0x0000)
+struct BPC_GadgetCustomize2SelectState_C_CreateGadgetPurchasePopup final
+{
+public:
+	bool                                          OutSuccess;                                        // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_DonpaTicketApp_C*                  CallFunc_Create_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_CreateGadgetPurchasePopup;
+
+// Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.SetFocusToDummyAll
+// 0x0010 (0x0010 - 0x0000)
+struct BPC_GadgetCustomize2SelectState_C_SetFocusToDummyAll final
+{
+public:
+	int32                                         Temp_int_Variable;                                 // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_SetFocusToDummyAll;
+
+// Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.SetFocusToDummy
+// 0x0010 (0x0010 - 0x0000)
+struct BPC_GadgetCustomize2SelectState_C_SetFocusToDummy final
+{
+public:
+	int32                                         InPlayerIndex_0;                                   // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_SetFocusToDummy;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.PlaySoundGadgetAttachCancel
 // 0x0004 (0x0004 - 0x0000)
@@ -27,9 +63,7 @@ struct BPC_GadgetCustomize2SelectState_C_PlaySoundGadgetAttachCancel final
 public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0000(0x0004)()
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_PlaySoundGadgetAttachCancel) == 0x000004, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_PlaySoundGadgetAttachCancel");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_PlaySoundGadgetAttachCancel) == 0x000004, "Wrong size on BPC_GadgetCustomize2SelectState_C_PlaySoundGadgetAttachCancel");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_PlaySoundGadgetAttachCancel, CallFunc_SoundPlay_ReturnValue) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_PlaySoundGadgetAttachCancel::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_PlaySoundGadgetAttachCancel;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.PlaySoundGadgetAttach
 // 0x0004 (0x0004 - 0x0000)
@@ -38,9 +72,7 @@ struct BPC_GadgetCustomize2SelectState_C_PlaySoundGadgetAttach final
 public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0000(0x0004)()
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_PlaySoundGadgetAttach) == 0x000004, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_PlaySoundGadgetAttach");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_PlaySoundGadgetAttach) == 0x000004, "Wrong size on BPC_GadgetCustomize2SelectState_C_PlaySoundGadgetAttach");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_PlaySoundGadgetAttach, CallFunc_SoundPlay_ReturnValue) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_PlaySoundGadgetAttach::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_PlaySoundGadgetAttach;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.SetSequenceDirty
 // 0x0002 (0x0002 - 0x0000)
@@ -50,10 +82,7 @@ public:
 	bool                                          InDirty;                                           // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_SetSequenceDirty) == 0x000001, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_SetSequenceDirty");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_SetSequenceDirty) == 0x000002, "Wrong size on BPC_GadgetCustomize2SelectState_C_SetSequenceDirty");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetSequenceDirty, InDirty) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_SetSequenceDirty::InDirty' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetSequenceDirty, CallFunc_IsValid_ReturnValue) == 0x000001, "Member 'BPC_GadgetCustomize2SelectState_C_SetSequenceDirty::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_SetSequenceDirty;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.UpdateGadgetDetailWindowFromGadgetPlateLastFocus
 // 0x0130 (0x0130 - 0x0000)
@@ -76,23 +105,7 @@ public:
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_1;         // 0x0129(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus) == 0x000008, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus) == 0x000130, "Wrong size on BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus, InPlayerIndex_0) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus::InPlayerIndex_0' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus, TempPlayerIndex) == 0x000004, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus::TempPlayerIndex' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000008, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus, CallFunc_Conv_IntToInt64_ReturnValue_1) == 0x000010, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus::CallFunc_Conv_IntToInt64_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus, K2Node_MakeStruct_FormatArgumentData) == 0x000018, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus, K2Node_MakeStruct_FormatArgumentData_1) == 0x000060, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus, K2Node_MakeArray_Array) == 0x0000A8, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus, K2Node_MakeArray_Array_1) == 0x0000B8, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus, CallFunc_Format_ReturnValue) == 0x0000C8, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus, CallFunc_Format_ReturnValue_1) == 0x0000D8, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus, CallFunc_GetSelectedGadgetPlateUIData_OutGadgetPlateUIData) == 0x0000E8, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus::CallFunc_GetSelectedGadgetPlateUIData_OutGadgetPlateUIData' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus, CallFunc_ConvertGadgetPlateUIDataToSlotStates_OutSlotStates) == 0x000110, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus::CallFunc_ConvertGadgetPlateUIDataToSlotStates_OutSlotStates' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus, CallFunc_Array_Get_Item) == 0x000120, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000128, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus, CallFunc_Array_IsValidIndex_ReturnValue_1) == 0x000129, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus::CallFunc_Array_IsValidIndex_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindowFromGadgetPlateLastFocus;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.UnbindGadgetPlateDelegate
 // 0x00E0 (0x00E0 - 0x0000)
@@ -116,22 +129,7 @@ public:
 	TDelegate<void(int32 PlayerIndex, int32 SlotState, int32 SlotIndex)> K2Node_CreateDelegate_OutputDelegate_3; // 0x00BC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(int32 PlayerIndex, int32 SlotState, int32 SlotIndex)> K2Node_CreateDelegate_OutputDelegate_4; // 0x00CC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_UnbindGadgetPlateDelegate) == 0x000008, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_UnbindGadgetPlateDelegate");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_UnbindGadgetPlateDelegate) == 0x0000E0, "Wrong size on BPC_GadgetCustomize2SelectState_C_UnbindGadgetPlateDelegate");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindGadgetPlateDelegate, InPlayerIndex_0) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindGadgetPlateDelegate::InPlayerIndex_0' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindGadgetPlateDelegate, TempPlate) == 0x000008, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindGadgetPlateDelegate::TempPlate' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindGadgetPlateDelegate, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000010, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindGadgetPlateDelegate::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindGadgetPlateDelegate, K2Node_MakeStruct_FormatArgumentData) == 0x000018, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindGadgetPlateDelegate::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindGadgetPlateDelegate, K2Node_MakeArray_Array) == 0x000060, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindGadgetPlateDelegate::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindGadgetPlateDelegate, CallFunc_Format_ReturnValue) == 0x000070, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindGadgetPlateDelegate::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindGadgetPlateDelegate, K2Node_CreateDelegate_OutputDelegate) == 0x000080, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindGadgetPlateDelegate::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindGadgetPlateDelegate, CallFunc_Array_Get_Item) == 0x000090, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindGadgetPlateDelegate::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindGadgetPlateDelegate, CallFunc_IsValid_ReturnValue) == 0x000098, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindGadgetPlateDelegate::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindGadgetPlateDelegate, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000099, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindGadgetPlateDelegate::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindGadgetPlateDelegate, K2Node_CreateDelegate_OutputDelegate_1) == 0x00009C, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindGadgetPlateDelegate::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindGadgetPlateDelegate, K2Node_CreateDelegate_OutputDelegate_2) == 0x0000AC, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindGadgetPlateDelegate::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindGadgetPlateDelegate, K2Node_CreateDelegate_OutputDelegate_3) == 0x0000BC, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindGadgetPlateDelegate::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindGadgetPlateDelegate, K2Node_CreateDelegate_OutputDelegate_4) == 0x0000CC, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindGadgetPlateDelegate::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_UnbindGadgetPlateDelegate;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.BindGadgetPlateDelegate
 // 0x00E0 (0x00E0 - 0x0000)
@@ -155,22 +153,7 @@ public:
 	TDelegate<void(int32 PlayerIndex, int32 SlotState, int32 SlotIndex)> K2Node_CreateDelegate_OutputDelegate_3; // 0x00BC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(int32 PlayerIndex, int32 SlotState, int32 SlotIndex)> K2Node_CreateDelegate_OutputDelegate_4; // 0x00CC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_BindGadgetPlateDelegate) == 0x000008, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_BindGadgetPlateDelegate");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_BindGadgetPlateDelegate) == 0x0000E0, "Wrong size on BPC_GadgetCustomize2SelectState_C_BindGadgetPlateDelegate");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_BindGadgetPlateDelegate, InPlayerIndex_0) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_BindGadgetPlateDelegate::InPlayerIndex_0' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_BindGadgetPlateDelegate, TempPlate) == 0x000008, "Member 'BPC_GadgetCustomize2SelectState_C_BindGadgetPlateDelegate::TempPlate' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_BindGadgetPlateDelegate, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000010, "Member 'BPC_GadgetCustomize2SelectState_C_BindGadgetPlateDelegate::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_BindGadgetPlateDelegate, K2Node_MakeStruct_FormatArgumentData) == 0x000018, "Member 'BPC_GadgetCustomize2SelectState_C_BindGadgetPlateDelegate::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_BindGadgetPlateDelegate, K2Node_MakeArray_Array) == 0x000060, "Member 'BPC_GadgetCustomize2SelectState_C_BindGadgetPlateDelegate::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_BindGadgetPlateDelegate, CallFunc_Format_ReturnValue) == 0x000070, "Member 'BPC_GadgetCustomize2SelectState_C_BindGadgetPlateDelegate::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_BindGadgetPlateDelegate, CallFunc_Array_Get_Item) == 0x000080, "Member 'BPC_GadgetCustomize2SelectState_C_BindGadgetPlateDelegate::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_BindGadgetPlateDelegate, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000088, "Member 'BPC_GadgetCustomize2SelectState_C_BindGadgetPlateDelegate::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_BindGadgetPlateDelegate, CallFunc_IsValid_ReturnValue) == 0x000089, "Member 'BPC_GadgetCustomize2SelectState_C_BindGadgetPlateDelegate::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_BindGadgetPlateDelegate, K2Node_CreateDelegate_OutputDelegate) == 0x00008C, "Member 'BPC_GadgetCustomize2SelectState_C_BindGadgetPlateDelegate::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_BindGadgetPlateDelegate, K2Node_CreateDelegate_OutputDelegate_1) == 0x00009C, "Member 'BPC_GadgetCustomize2SelectState_C_BindGadgetPlateDelegate::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_BindGadgetPlateDelegate, K2Node_CreateDelegate_OutputDelegate_2) == 0x0000AC, "Member 'BPC_GadgetCustomize2SelectState_C_BindGadgetPlateDelegate::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_BindGadgetPlateDelegate, K2Node_CreateDelegate_OutputDelegate_3) == 0x0000BC, "Member 'BPC_GadgetCustomize2SelectState_C_BindGadgetPlateDelegate::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_BindGadgetPlateDelegate, K2Node_CreateDelegate_OutputDelegate_4) == 0x0000CC, "Member 'BPC_GadgetCustomize2SelectState_C_BindGadgetPlateDelegate::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_BindGadgetPlateDelegate;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.BindGadgetSelectWindowDelegate
 // 0x0100 (0x0100 - 0x0000)
@@ -196,24 +179,7 @@ public:
 	TDelegate<void(int32 SelectedPlayerControllerIndex, EGadgetCategory SelectedGadgetCategory, EGadgetId SelectedGadgetId, EGadgetState SelectedGadgetState)> K2Node_CreateDelegate_OutputDelegate_5; // 0x00DC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(int32 SelectedPlayerControllerIndex, EGadgetCategory SelectedGadgetCategory, EGadgetId SelectedGadgetId, EGadgetState SelectedGadgetState)> K2Node_CreateDelegate_OutputDelegate_6; // 0x00EC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate) == 0x000008, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate) == 0x000100, "Wrong size on BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate, InPlayerIndex_0) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate::InPlayerIndex_0' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate, TempWindow) == 0x000008, "Member 'BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate::TempWindow' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000010, "Member 'BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate, K2Node_MakeStruct_FormatArgumentData) == 0x000018, "Member 'BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate, K2Node_MakeArray_Array) == 0x000060, "Member 'BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate, CallFunc_Array_Get_Item) == 0x000070, "Member 'BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate, CallFunc_Format_ReturnValue) == 0x000078, "Member 'BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate, CallFunc_IsValid_ReturnValue) == 0x000088, "Member 'BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000089, "Member 'BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate, K2Node_CreateDelegate_OutputDelegate) == 0x00008C, "Member 'BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate, K2Node_CreateDelegate_OutputDelegate_1) == 0x00009C, "Member 'BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate, K2Node_CreateDelegate_OutputDelegate_2) == 0x0000AC, "Member 'BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate, K2Node_CreateDelegate_OutputDelegate_3) == 0x0000BC, "Member 'BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate, K2Node_CreateDelegate_OutputDelegate_4) == 0x0000CC, "Member 'BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate, K2Node_CreateDelegate_OutputDelegate_5) == 0x0000DC, "Member 'BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate, K2Node_CreateDelegate_OutputDelegate_6) == 0x0000EC, "Member 'BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_BindGadgetSelectWindowDelegate;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.SetupDummyWidget
 // 0x0008 (0x0008 - 0x0000)
@@ -222,9 +188,7 @@ struct BPC_GadgetCustomize2SelectState_C_SetupDummyWidget final
 public:
 	class UDummyWidget*                           CallFunc_Create_ReturnValue;                       // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_SetupDummyWidget) == 0x000008, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_SetupDummyWidget");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_SetupDummyWidget) == 0x000008, "Wrong size on BPC_GadgetCustomize2SelectState_C_SetupDummyWidget");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupDummyWidget, CallFunc_Create_ReturnValue) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_SetupDummyWidget::CallFunc_Create_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_SetupDummyWidget;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.ChangeFooterZOrder
 // 0x00A0 (0x00A0 - 0x0000)
@@ -244,17 +208,7 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0080(0x0010)(ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0090(0x0010)()
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_ChangeFooterZOrder) == 0x000008, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_ChangeFooterZOrder");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_ChangeFooterZOrder) == 0x0000A0, "Wrong size on BPC_GadgetCustomize2SelectState_C_ChangeFooterZOrder");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ChangeFooterZOrder, CallFunc_MakeLiteralByte_ReturnValue) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_ChangeFooterZOrder::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ChangeFooterZOrder, CallFunc_IsValid_ReturnValue) == 0x000001, "Member 'BPC_GadgetCustomize2SelectState_C_ChangeFooterZOrder::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ChangeFooterZOrder, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue) == 0x000008, "Member 'BPC_GadgetCustomize2SelectState_C_ChangeFooterZOrder::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ChangeFooterZOrder, CallFunc_Conv_StringToText_ReturnValue) == 0x000018, "Member 'BPC_GadgetCustomize2SelectState_C_ChangeFooterZOrder::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ChangeFooterZOrder, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000028, "Member 'BPC_GadgetCustomize2SelectState_C_ChangeFooterZOrder::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ChangeFooterZOrder, K2Node_MakeStruct_FormatArgumentData) == 0x000030, "Member 'BPC_GadgetCustomize2SelectState_C_ChangeFooterZOrder::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ChangeFooterZOrder, CallFunc_ChangeZOrder_ReturnValue) == 0x000078, "Member 'BPC_GadgetCustomize2SelectState_C_ChangeFooterZOrder::CallFunc_ChangeZOrder_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ChangeFooterZOrder, K2Node_MakeArray_Array) == 0x000080, "Member 'BPC_GadgetCustomize2SelectState_C_ChangeFooterZOrder::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ChangeFooterZOrder, CallFunc_Format_ReturnValue) == 0x000090, "Member 'BPC_GadgetCustomize2SelectState_C_ChangeFooterZOrder::CallFunc_Format_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_ChangeFooterZOrder;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.SetupDonpaTicketBoxWidget
 // 0x0008 (0x0008 - 0x0000)
@@ -263,9 +217,7 @@ struct BPC_GadgetCustomize2SelectState_C_SetupDonpaTicketBoxWidget final
 public:
 	class UCommonCountNumberWidget*               CallFunc_GetTicketBox_ReturnValue;                 // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_SetupDonpaTicketBoxWidget) == 0x000008, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_SetupDonpaTicketBoxWidget");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_SetupDonpaTicketBoxWidget) == 0x000008, "Wrong size on BPC_GadgetCustomize2SelectState_C_SetupDonpaTicketBoxWidget");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupDonpaTicketBoxWidget, CallFunc_GetTicketBox_ReturnValue) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_SetupDonpaTicketBoxWidget::CallFunc_GetTicketBox_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_SetupDonpaTicketBoxWidget;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.SetupMachineParameterWidget
 // 0x0040 (0x0040 - 0x0000)
@@ -285,18 +237,7 @@ public:
 	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_SetupMachineParameterWidget) == 0x000008, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_SetupMachineParameterWidget");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_SetupMachineParameterWidget) == 0x000040, "Wrong size on BPC_GadgetCustomize2SelectState_C_SetupMachineParameterWidget");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupMachineParameterWidget, Temp_int_Array_Index_Variable) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_SetupMachineParameterWidget::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupMachineParameterWidget, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'BPC_GadgetCustomize2SelectState_C_SetupMachineParameterWidget::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupMachineParameterWidget, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'BPC_GadgetCustomize2SelectState_C_SetupMachineParameterWidget::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupMachineParameterWidget, Temp_bool_Variable) == 0x00000C, "Member 'BPC_GadgetCustomize2SelectState_C_SetupMachineParameterWidget::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupMachineParameterWidget, CallFunc_Array_Add_ReturnValue) == 0x000010, "Member 'BPC_GadgetCustomize2SelectState_C_SetupMachineParameterWidget::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupMachineParameterWidget, CallFunc_GetmachineParameterWindows_OutMachineParameterWindows) == 0x000018, "Member 'BPC_GadgetCustomize2SelectState_C_SetupMachineParameterWidget::CallFunc_GetmachineParameterWindows_OutMachineParameterWindows' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupMachineParameterWidget, CallFunc_Array_Get_Item) == 0x000028, "Member 'BPC_GadgetCustomize2SelectState_C_SetupMachineParameterWidget::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupMachineParameterWidget, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'BPC_GadgetCustomize2SelectState_C_SetupMachineParameterWidget::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupMachineParameterWidget, CallFunc_Array_Add_ReturnValue_1) == 0x000034, "Member 'BPC_GadgetCustomize2SelectState_C_SetupMachineParameterWidget::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupMachineParameterWidget, CallFunc_Less_IntInt_ReturnValue) == 0x000038, "Member 'BPC_GadgetCustomize2SelectState_C_SetupMachineParameterWidget::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_SetupMachineParameterWidget;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.SetupGadgetDetailWidget
 // 0x0038 (0x0038 - 0x0000)
@@ -309,12 +250,7 @@ public:
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UGadgetDetailWindow*>            CallFunc_GetDetailWindows_OutDetailWindows;        // 0x0028(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_SetupGadgetDetailWidget) == 0x000008, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_SetupGadgetDetailWidget");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_SetupGadgetDetailWidget) == 0x000038, "Wrong size on BPC_GadgetCustomize2SelectState_C_SetupGadgetDetailWidget");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetDetailWidget, K2Node_MakeArray_Array) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetDetailWidget::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetDetailWidget, CallFunc_Format_ReturnValue) == 0x000010, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetDetailWidget::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetDetailWidget, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetDetailWidget::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetDetailWidget, CallFunc_GetDetailWindows_OutDetailWindows) == 0x000028, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetDetailWidget::CallFunc_GetDetailWindows_OutDetailWindows' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_SetupGadgetDetailWidget;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.SetupGadgetCustomizeBaseWidget
 // 0x0028 (0x0028 - 0x0000)
@@ -333,16 +269,7 @@ public:
 	class UClass*                                 CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UGadgetCustomizeWindow*                 CallFunc_Create_ReturnValue;                       // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_SetupGadgetCustomizeBaseWidget) == 0x000008, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_SetupGadgetCustomizeBaseWidget");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_SetupGadgetCustomizeBaseWidget) == 0x000028, "Wrong size on BPC_GadgetCustomize2SelectState_C_SetupGadgetCustomizeBaseWidget");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetCustomizeBaseWidget, CallFunc_Greater_IntInt_ReturnValue) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetCustomizeBaseWidget::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetCustomizeBaseWidget, CallFunc_IsFestaSpecialRuleContinuous_ReturnValue) == 0x000001, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetCustomizeBaseWidget::CallFunc_IsFestaSpecialRuleContinuous_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetCustomizeBaseWidget, K2Node_MakeStruct_GadgetCustomizeWindowData) == 0x000004, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetCustomizeBaseWidget::K2Node_MakeStruct_GadgetCustomizeWindowData' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetCustomizeBaseWidget, CallFunc_MakeLiteralByte_ReturnValue) == 0x000008, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetCustomizeBaseWidget::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetCustomizeBaseWidget, CallFunc_Conv_ByteToInt_ReturnValue) == 0x00000C, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetCustomizeBaseWidget::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetCustomizeBaseWidget, CallFunc_Subtract_IntInt_ReturnValue) == 0x000010, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetCustomizeBaseWidget::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetCustomizeBaseWidget, CallFunc_Array_Get_Item) == 0x000018, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetCustomizeBaseWidget::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetCustomizeBaseWidget, CallFunc_Create_ReturnValue) == 0x000020, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetCustomizeBaseWidget::CallFunc_Create_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_SetupGadgetCustomizeBaseWidget;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.UnbindsGadgetPlatePresetTabDelegate
 // 0x00E8 (0x00E8 - 0x0000)
@@ -380,31 +307,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x00E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate) == 0x000008, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate) == 0x0000E8, "Wrong size on BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate, TempTabButton) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate::TempTabButton' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate, TempPlateWindow) == 0x000008, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate::TempPlateWindow' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate, Temp_int_Array_Index_Variable) == 0x000010, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000018, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate, K2Node_MakeStruct_FormatArgumentData) == 0x000020, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate, Temp_int_Loop_Counter_Variable) == 0x000068, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate, K2Node_MakeArray_Array) == 0x000070, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate, CallFunc_Add_IntInt_ReturnValue) == 0x000080, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate, CallFunc_Format_ReturnValue) == 0x000088, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate, Temp_int_Array_Index_Variable_1) == 0x000098, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate, CallFunc_IsValid_ReturnValue) == 0x00009C, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate, CallFunc_IsValid_ReturnValue_1) == 0x00009D, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate, Temp_int_Loop_Counter_Variable_1) == 0x0000A0, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate, CallFunc_GetGadgetCustomTabRef_ReturnValue) == 0x0000A8, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate::CallFunc_GetGadgetCustomTabRef_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000B0, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate, CallFunc_IsValid_ReturnValue_2) == 0x0000B4, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate, CallFunc_GetTabButtonArr_ReturnValue) == 0x0000B8, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate::CallFunc_GetTabButtonArr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate, CallFunc_Array_Get_Item) == 0x0000C8, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate, CallFunc_Array_Length_ReturnValue) == 0x0000D0, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate, CallFunc_Less_IntInt_ReturnValue) == 0x0000D4, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate, CallFunc_Array_Get_Item_1) == 0x0000D8, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate, CallFunc_Array_Length_ReturnValue_1) == 0x0000E0, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000E4, "Member 'BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_UnbindsGadgetPlatePresetTabDelegate;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.SetupGadgetPlatePresetTabDelegate
 // 0x0138 (0x0138 - 0x0000)
@@ -448,36 +351,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x012C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate) == 0x000008, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate) == 0x000138, "Wrong size on BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate, TempTabButtonIndex) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate::TempTabButtonIndex' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate, TempTabButton) == 0x000008, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate::TempTabButton' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate, TempPlateWindow) == 0x000010, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate::TempPlateWindow' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate, CallFunc_IsValid_ReturnValue_1) == 0x000019, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate, Temp_int_Array_Index_Variable) == 0x00001C, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate, Temp_int_Loop_Counter_Variable) == 0x000020, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate, CallFunc_Add_IntInt_ReturnValue) == 0x000024, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate, Temp_int_Array_Index_Variable_1) == 0x000028, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate, K2Node_CreateDelegate_OutputDelegate) == 0x00002C, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate, K2Node_CreateDelegate_OutputDelegate_1) == 0x00003C, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate, K2Node_CreateDelegate_OutputDelegate_2) == 0x00004C, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate, K2Node_CreateDelegate_OutputDelegate_3) == 0x00005C, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000070, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate, K2Node_MakeStruct_FormatArgumentData) == 0x000078, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate, Temp_int_Loop_Counter_Variable_1) == 0x0000C0, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate, K2Node_MakeArray_Array) == 0x0000C8, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate, CallFunc_Format_ReturnValue) == 0x0000D8, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000E8, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate, CallFunc_GetGadgetCustomTabRef_ReturnValue) == 0x0000F0, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate::CallFunc_GetGadgetCustomTabRef_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate, CallFunc_Array_Get_Item) == 0x0000F8, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate, CallFunc_IsValid_ReturnValue_2) == 0x000100, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate, CallFunc_GetTabButtonArr_ReturnValue) == 0x000108, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate::CallFunc_GetTabButtonArr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate, CallFunc_Array_Length_ReturnValue) == 0x000118, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate, CallFunc_Array_Get_Item_1) == 0x000120, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate, CallFunc_Less_IntInt_ReturnValue) == 0x000128, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate, CallFunc_Array_Length_ReturnValue_1) == 0x00012C, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate, CallFunc_Less_IntInt_ReturnValue_1) == 0x000130, "Member 'BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_SetupGadgetPlatePresetTabDelegate;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.DebugPrintCandGadgetIds
 // 0x0108 (0x0108 - 0x0000)
@@ -502,22 +376,7 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00E8(0x0010)(ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00F8(0x0010)()
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_DebugPrintCandGadgetIds) == 0x000008, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_DebugPrintCandGadgetIds");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_DebugPrintCandGadgetIds) == 0x000108, "Wrong size on BPC_GadgetCustomize2SelectState_C_DebugPrintCandGadgetIds");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_DebugPrintCandGadgetIds, InGadgetIds) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_DebugPrintCandGadgetIds::InGadgetIds' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_DebugPrintCandGadgetIds, CallFunc_Array_Length_ReturnValue) == 0x000010, "Member 'BPC_GadgetCustomize2SelectState_C_DebugPrintCandGadgetIds::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_DebugPrintCandGadgetIds, Temp_int_Array_Index_Variable) == 0x000014, "Member 'BPC_GadgetCustomize2SelectState_C_DebugPrintCandGadgetIds::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_DebugPrintCandGadgetIds, Temp_int_Loop_Counter_Variable) == 0x000018, "Member 'BPC_GadgetCustomize2SelectState_C_DebugPrintCandGadgetIds::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_DebugPrintCandGadgetIds, CallFunc_Array_Get_Item) == 0x00001C, "Member 'BPC_GadgetCustomize2SelectState_C_DebugPrintCandGadgetIds::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_DebugPrintCandGadgetIds, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue) == 0x000020, "Member 'BPC_GadgetCustomize2SelectState_C_DebugPrintCandGadgetIds::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_DebugPrintCandGadgetIds, CallFunc_Less_IntInt_ReturnValue) == 0x000030, "Member 'BPC_GadgetCustomize2SelectState_C_DebugPrintCandGadgetIds::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_DebugPrintCandGadgetIds, CallFunc_Conv_StringToText_ReturnValue) == 0x000038, "Member 'BPC_GadgetCustomize2SelectState_C_DebugPrintCandGadgetIds::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_DebugPrintCandGadgetIds, K2Node_MakeStruct_FormatArgumentData) == 0x000048, "Member 'BPC_GadgetCustomize2SelectState_C_DebugPrintCandGadgetIds::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_DebugPrintCandGadgetIds, CallFunc_Add_IntInt_ReturnValue) == 0x000090, "Member 'BPC_GadgetCustomize2SelectState_C_DebugPrintCandGadgetIds::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_DebugPrintCandGadgetIds, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000098, "Member 'BPC_GadgetCustomize2SelectState_C_DebugPrintCandGadgetIds::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_DebugPrintCandGadgetIds, K2Node_MakeStruct_FormatArgumentData_1) == 0x0000A0, "Member 'BPC_GadgetCustomize2SelectState_C_DebugPrintCandGadgetIds::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_DebugPrintCandGadgetIds, K2Node_MakeArray_Array) == 0x0000E8, "Member 'BPC_GadgetCustomize2SelectState_C_DebugPrintCandGadgetIds::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_DebugPrintCandGadgetIds, CallFunc_Format_ReturnValue) == 0x0000F8, "Member 'BPC_GadgetCustomize2SelectState_C_DebugPrintCandGadgetIds::CallFunc_Format_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_DebugPrintCandGadgetIds;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.DebugPrintCurrentGadgetIds
 // 0x0108 (0x0108 - 0x0000)
@@ -542,22 +401,7 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00E8(0x0010)(ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00F8(0x0010)()
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_DebugPrintCurrentGadgetIds) == 0x000008, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_DebugPrintCurrentGadgetIds");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_DebugPrintCurrentGadgetIds) == 0x000108, "Wrong size on BPC_GadgetCustomize2SelectState_C_DebugPrintCurrentGadgetIds");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_DebugPrintCurrentGadgetIds, InGadgetIds) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_DebugPrintCurrentGadgetIds::InGadgetIds' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_DebugPrintCurrentGadgetIds, CallFunc_Array_Length_ReturnValue) == 0x000010, "Member 'BPC_GadgetCustomize2SelectState_C_DebugPrintCurrentGadgetIds::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_DebugPrintCurrentGadgetIds, Temp_int_Array_Index_Variable) == 0x000014, "Member 'BPC_GadgetCustomize2SelectState_C_DebugPrintCurrentGadgetIds::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_DebugPrintCurrentGadgetIds, Temp_int_Loop_Counter_Variable) == 0x000018, "Member 'BPC_GadgetCustomize2SelectState_C_DebugPrintCurrentGadgetIds::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_DebugPrintCurrentGadgetIds, CallFunc_Array_Get_Item) == 0x00001C, "Member 'BPC_GadgetCustomize2SelectState_C_DebugPrintCurrentGadgetIds::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_DebugPrintCurrentGadgetIds, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue) == 0x000020, "Member 'BPC_GadgetCustomize2SelectState_C_DebugPrintCurrentGadgetIds::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_DebugPrintCurrentGadgetIds, CallFunc_Less_IntInt_ReturnValue) == 0x000030, "Member 'BPC_GadgetCustomize2SelectState_C_DebugPrintCurrentGadgetIds::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_DebugPrintCurrentGadgetIds, CallFunc_Conv_StringToText_ReturnValue) == 0x000038, "Member 'BPC_GadgetCustomize2SelectState_C_DebugPrintCurrentGadgetIds::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_DebugPrintCurrentGadgetIds, K2Node_MakeStruct_FormatArgumentData) == 0x000048, "Member 'BPC_GadgetCustomize2SelectState_C_DebugPrintCurrentGadgetIds::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_DebugPrintCurrentGadgetIds, CallFunc_Add_IntInt_ReturnValue) == 0x000090, "Member 'BPC_GadgetCustomize2SelectState_C_DebugPrintCurrentGadgetIds::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_DebugPrintCurrentGadgetIds, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000098, "Member 'BPC_GadgetCustomize2SelectState_C_DebugPrintCurrentGadgetIds::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_DebugPrintCurrentGadgetIds, K2Node_MakeStruct_FormatArgumentData_1) == 0x0000A0, "Member 'BPC_GadgetCustomize2SelectState_C_DebugPrintCurrentGadgetIds::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_DebugPrintCurrentGadgetIds, K2Node_MakeArray_Array) == 0x0000E8, "Member 'BPC_GadgetCustomize2SelectState_C_DebugPrintCurrentGadgetIds::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_DebugPrintCurrentGadgetIds, CallFunc_Format_ReturnValue) == 0x0000F8, "Member 'BPC_GadgetCustomize2SelectState_C_DebugPrintCurrentGadgetIds::CallFunc_Format_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_DebugPrintCurrentGadgetIds;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.SetHintReadOfLowerRank
 // 0x0002 (0x0002 - 0x0000)
@@ -567,10 +411,7 @@ public:
 	EGadgetPlateId                                CallFunc_GetGadgetPlateIdFromTotalRaceCount_ReturnValue; // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_SetHintReadOfLowerRank) == 0x000001, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_SetHintReadOfLowerRank");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_SetHintReadOfLowerRank) == 0x000002, "Wrong size on BPC_GadgetCustomize2SelectState_C_SetHintReadOfLowerRank");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetHintReadOfLowerRank, CallFunc_GetGadgetPlateIdFromTotalRaceCount_ReturnValue) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_SetHintReadOfLowerRank::CallFunc_GetGadgetPlateIdFromTotalRaceCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetHintReadOfLowerRank, K2Node_SwitchEnum_CmpSuccess) == 0x000001, "Member 'BPC_GadgetCustomize2SelectState_C_SetHintReadOfLowerRank::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_SetHintReadOfLowerRank;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.SetupFestaSpecialRule
 // 0x0028 (0x0028 - 0x0000)
@@ -579,9 +420,7 @@ struct BPC_GadgetCustomize2SelectState_C_SetupFestaSpecialRule final
 public:
 	struct FGadgetPlateUIData                     TempRentalGadgetInfo;                              // 0x0000(0x0028)(Edit, BlueprintVisible)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_SetupFestaSpecialRule) == 0x000008, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_SetupFestaSpecialRule");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_SetupFestaSpecialRule) == 0x000028, "Wrong size on BPC_GadgetCustomize2SelectState_C_SetupFestaSpecialRule");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupFestaSpecialRule, TempRentalGadgetInfo) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_SetupFestaSpecialRule::TempRentalGadgetInfo' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_SetupFestaSpecialRule;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.UpdateGadgetDetailWindow
 // 0x00F8 (0x00F8 - 0x0000)
@@ -595,30 +434,16 @@ public:
 	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Conv_ByteToString_ReturnValue;            // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0020(0x0010)()
-	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0028(0x0010)()
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0038(0x0048)(HasGetValueTypeHash)
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0080(0x0048)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00C8(0x0010)(ReferenceParm)
-	class UGadgetDetailWindow*                    CallFunc_Array_Get_Item;                           // 0x00D8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00E0(0x0010)()
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00D8(0x0010)()
+	class UGadgetDetailWindow*                    CallFunc_Array_Get_Item;                           // 0x00E8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindow) == 0x000008, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindow");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindow) == 0x0000F8, "Wrong size on BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindow");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindow, InPlayerIndex_0) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindow::InPlayerIndex_0' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindow, InGadgetId) == 0x000004, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindow::InGadgetId' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindow, CallFunc_GetValidValue_ReturnValue) == 0x000005, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindow::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindow, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000008, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindow::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindow, CallFunc_Conv_ByteToString_ReturnValue) == 0x000010, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindow::CallFunc_Conv_ByteToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindow, CallFunc_Conv_StringToText_ReturnValue) == 0x000020, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindow::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindow, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000030, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindow::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindow, K2Node_MakeStruct_FormatArgumentData) == 0x000038, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindow::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindow, K2Node_MakeStruct_FormatArgumentData_1) == 0x000080, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindow::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindow, K2Node_MakeArray_Array) == 0x0000C8, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindow::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindow, CallFunc_Array_Get_Item) == 0x0000D8, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindow::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindow, CallFunc_Format_ReturnValue) == 0x0000E0, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindow::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindow, CallFunc_Array_IsValidIndex_ReturnValue) == 0x0000F0, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindow::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_UpdateGadgetDetailWindow;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.UpdateGadgetCustomWindow
 // 0x0020 (0x0020 - 0x0000)
@@ -633,14 +458,7 @@ public:
 	class UGadgetCustomWindow*                    CallFunc_Array_Get_Item;                           // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetCustomWindow) == 0x000008, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_UpdateGadgetCustomWindow");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetCustomWindow) == 0x000020, "Wrong size on BPC_GadgetCustomize2SelectState_C_UpdateGadgetCustomWindow");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetCustomWindow, InPlayerIndex_0) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetCustomWindow::InPlayerIndex_0' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetCustomWindow, InPlateSlotFocusIndex) == 0x000004, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetCustomWindow::InPlateSlotFocusIndex' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetCustomWindow, CallFunc_IsUseRentalGadgetPlate_ReturnValue) == 0x000008, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetCustomWindow::CallFunc_IsUseRentalGadgetPlate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetCustomWindow, CallFunc_IsFestaSpecialRuleContinuous_ReturnValue) == 0x000009, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetCustomWindow::CallFunc_IsFestaSpecialRuleContinuous_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetCustomWindow, CallFunc_Array_Get_Item) == 0x000010, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetCustomWindow::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateGadgetCustomWindow, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000018, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateGadgetCustomWindow::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_UpdateGadgetCustomWindow;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.UpdateMachineParameterAll
 // 0x0018 (0x0018 - 0x0000)
@@ -655,14 +473,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameterAll) == 0x000004, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_UpdateMachineParameterAll");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameterAll) == 0x000018, "Wrong size on BPC_GadgetCustomize2SelectState_C_UpdateMachineParameterAll");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameterAll, Temp_int_Array_Index_Variable) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameterAll::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameterAll, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameterAll::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameterAll, CallFunc_IsFocusCustomWindowFlag_ReturnValue) == 0x000008, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameterAll::CallFunc_IsFocusCustomWindowFlag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameterAll, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameterAll::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameterAll, CallFunc_Array_Length_ReturnValue) == 0x000010, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameterAll::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameterAll, CallFunc_Less_IntInt_ReturnValue) == 0x000014, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameterAll::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_UpdateMachineParameterAll;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.UpdateMachineParameter
 // 0x0538 (0x0538 - 0x0000)
@@ -743,70 +554,7 @@ public:
 	struct FRacerParamData                        CallFunc_GetParamData_OutParamData_3;              // 0x04E0(0x0050)(NoDestructor)
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0530(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter) == 0x000008, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter) == 0x000538, "Wrong size on BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, InPlayerIndex_0) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::InPlayerIndex_0' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, bDiffVisible) == 0x000004, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::bDiffVisible' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, TempPlayerIndex) == 0x000008, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::TempPlayerIndex' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, TempCandParamGadgetIds) == 0x000010, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::TempCandParamGadgetIds' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, TempPlateGadgetIds) == 0x000020, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::TempPlateGadgetIds' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, TempPlateWindow) == 0x000030, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::TempPlateWindow' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, TempMachineTire) == 0x000038, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::TempMachineTire' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, TempMachineRear) == 0x000039, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::TempMachineRear' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, TempMachineFront) == 0x00003A, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::TempMachineFront' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, TempMachineId) == 0x00003B, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::TempMachineId' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, TempDriverId) == 0x00003C, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::TempDriverId' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_Conv_BoolToText_ReturnValue) == 0x000040, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_Conv_BoolToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_Conv_BoolToText_ReturnValue_1) == 0x000050, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_Conv_BoolToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, K2Node_MakeStruct_FormatArgumentData) == 0x000060, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, K2Node_MakeStruct_FormatArgumentData_1) == 0x0000A8, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_Conv_IntToInt64_ReturnValue) == 0x0000F0, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, K2Node_MakeStruct_FormatArgumentData_2) == 0x0000F8, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, K2Node_MakeArray_Array) == 0x000140, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_Format_ReturnValue) == 0x000150, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_Conv_IntToInt64_ReturnValue_1) == 0x000160, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_Conv_IntToInt64_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, K2Node_MakeStruct_FormatArgumentData_3) == 0x000168, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::K2Node_MakeStruct_FormatArgumentData_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, K2Node_MakeArray_Array_1) == 0x0001B0, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_IsFocusCustomWindowFlag_ReturnValue) == 0x0001C0, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_IsFocusCustomWindowFlag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_Format_ReturnValue_1) == 0x0001C8, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_Conv_IntToInt64_ReturnValue_2) == 0x0001D8, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_Conv_IntToInt64_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, K2Node_MakeStruct_FormatArgumentData_4) == 0x0001E0, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::K2Node_MakeStruct_FormatArgumentData_4' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_GetGadgetIds_OutGadgetIds) == 0x000228, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_GetGadgetIds_OutGadgetIds' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, K2Node_MakeArray_Array_2) == 0x000238, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::K2Node_MakeArray_Array_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_Format_ReturnValue_2) == 0x000248, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_Format_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_Array_Get_Item) == 0x000258, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_GetCenterCategoryTypeBox_ReturnValue) == 0x000260, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_GetCenterCategoryTypeBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_GetCenterGadgetId_ReturnValue) == 0x000268, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_GetCenterGadgetId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, Temp_bool_Variable) == 0x000269, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_Array_Get_Item_1) == 0x00026C, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_GetAttachGadgetToPlateMockup_OutAttachableSlotIndex) == 0x000270, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_GetAttachGadgetToPlateMockup_OutAttachableSlotIndex' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_GetAttachGadgetToPlateMockup_OutResult) == 0x000278, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_GetAttachGadgetToPlateMockup_OutResult' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_ConvertGadgetPlateUIDataToIds_OutGadgetIds) == 0x0002A0, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_ConvertGadgetPlateUIDataToIds_OutGadgetIds' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x0002B0, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x0002B8, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_GetParamData_OutParamData) == 0x0002C0, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_GetParamData_OutParamData' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_Conv_IntToInt64_ReturnValue_3) == 0x000310, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_Conv_IntToInt64_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, K2Node_MakeStruct_FormatArgumentData_5) == 0x000318, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::K2Node_MakeStruct_FormatArgumentData_5' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, K2Node_MakeArray_Array_3) == 0x000360, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::K2Node_MakeArray_Array_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_GetSelectedMachineID_OutId) == 0x000370, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_GetSelectedMachineID_OutId' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_GetSelectedMachineID_OutExecsPin) == 0x000374, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_GetSelectedMachineID_OutExecsPin' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_Format_ReturnValue_3) == 0x000378, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_Format_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, K2Node_SwitchEnum_CmpSuccess) == 0x000388, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_Conv_IntToByte_ReturnValue) == 0x000389, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_GetValidValue_ReturnValue) == 0x00038A, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_GetParamData_OutParamData_1) == 0x00038C, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_GetParamData_OutParamData_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_GetMachineCustomizeDataById_OutUserMachineCustomizeData) == 0x0003E0, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_GetMachineCustomizeDataById_OutUserMachineCustomizeData' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_GetParamData_OutParamData_2) == 0x000458, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_GetParamData_OutParamData_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_GetSelectedDriverId_OutId) == 0x0004A8, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_GetSelectedDriverId_OutId' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_GetSelectedDriverId_OutExecsPin) == 0x0004A9, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_GetSelectedDriverId_OutExecsPin' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, K2Node_SwitchEnum_CmpSuccess_1) == 0x0004AA, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_Array_Get_Item_2) == 0x0004B0, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_Array_Get_Item_3) == 0x0004B8, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_IsValid_ReturnValue) == 0x0004C0, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_Array_Get_Item_4) == 0x0004C8, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, K2Node_Select_Default) == 0x0004D0, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_GetParamData_OutParamData_3) == 0x0004E0, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_GetParamData_OutParamData_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000530, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_UpdateMachineParameter;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.SetPlateWindowInValidIcons
 // 0x0150 (0x0150 - 0x0000)
@@ -842,29 +590,7 @@ public:
 	bool                                          CallFunc_GetGadgetData_ReturnValue;                // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0149(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons) == 0x000008, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons) == 0x000150, "Wrong size on BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons, InPlayerId) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons::InPlayerId' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons, CallFunc_GetSelectedGadgetPlateUIData_OutGadgetPlateUIData) == 0x000008, "Member 'BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons::CallFunc_GetSelectedGadgetPlateUIData_OutGadgetPlateUIData' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons, Temp_int_Array_Index_Variable) == 0x000030, "Member 'BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons, CallFunc_ConvertGadgetPlateUIDataToSlotStates_OutSlotStates) == 0x000038, "Member 'BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons::CallFunc_ConvertGadgetPlateUIDataToSlotStates_OutSlotStates' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons, CallFunc_Array_Get_Item) == 0x000048, "Member 'BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons, CallFunc_Array_IsValidIndex_ReturnValue) == 0x00004C, "Member 'BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons, CallFunc_Greater_IntInt_ReturnValue) == 0x00004D, "Member 'BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons, Temp_int_Loop_Counter_Variable) == 0x000050, "Member 'BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x000054, "Member 'BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons, K2Node_SwitchEnum_CmpSuccess) == 0x000055, "Member 'BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons, CallFunc_Add_IntInt_ReturnValue) == 0x000058, "Member 'BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons, CallFunc_Array_IsValidIndex_ReturnValue_1) == 0x00005C, "Member 'BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons::CallFunc_Array_IsValidIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons, CallFunc_Array_Get_Item_1) == 0x000060, "Member 'BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons, K2Node_DynamicCast_AsWBP_Gadget_Custom_Sub_Gadget_Plate) == 0x000068, "Member 'BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons::K2Node_DynamicCast_AsWBP_Gadget_Custom_Sub_Gadget_Plate' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons, K2Node_DynamicCast_bSuccess) == 0x000070, "Member 'BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons, CallFunc_Array_Length_ReturnValue) == 0x000074, "Member 'BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons, CallFunc_Array_Get_Item_2) == 0x000078, "Member 'BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons, CallFunc_Less_IntInt_ReturnValue) == 0x000080, "Member 'BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons, CallFunc_GetGadgetData_OutGadgetData) == 0x000088, "Member 'BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons::CallFunc_GetGadgetData_OutGadgetData' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons, CallFunc_GetGadgetData_ReturnValue) == 0x000148, "Member 'BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons::CallFunc_GetGadgetData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons, CallFunc_Not_PreBool_ReturnValue) == 0x000149, "Member 'BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_SetPlateWindowInValidIcons;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.Custom Window on Item Focused
 // 0x0018 (0x0018 - 0x0000)
@@ -879,13 +605,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGadgetDetailWindow*                    CallFunc_Array_Get_Item;                           // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_Custom_Window_on_Item_Focused) == 0x000008, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_Custom_Window_on_Item_Focused");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_Custom_Window_on_Item_Focused) == 0x000018, "Wrong size on BPC_GadgetCustomize2SelectState_C_Custom_Window_on_Item_Focused");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_Custom_Window_on_Item_Focused, InPlayerIndex_0) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_Custom_Window_on_Item_Focused::InPlayerIndex_0' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_Custom_Window_on_Item_Focused, InGadgetId) == 0x000004, "Member 'BPC_GadgetCustomize2SelectState_C_Custom_Window_on_Item_Focused::InGadgetId' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_Custom_Window_on_Item_Focused, InGadgetState) == 0x000005, "Member 'BPC_GadgetCustomize2SelectState_C_Custom_Window_on_Item_Focused::InGadgetState' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_Custom_Window_on_Item_Focused, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000008, "Member 'BPC_GadgetCustomize2SelectState_C_Custom_Window_on_Item_Focused::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_Custom_Window_on_Item_Focused, CallFunc_Array_Get_Item) == 0x000010, "Member 'BPC_GadgetCustomize2SelectState_C_Custom_Window_on_Item_Focused::CallFunc_Array_Get_Item' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_Custom_Window_on_Item_Focused;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.FinalizeRewardDialog
 // 0x0001 (0x0001 - 0x0000)
@@ -894,9 +614,7 @@ struct BPC_GadgetCustomize2SelectState_C_FinalizeRewardDialog final
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_FinalizeRewardDialog) == 0x000001, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_FinalizeRewardDialog");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_FinalizeRewardDialog) == 0x000001, "Wrong size on BPC_GadgetCustomize2SelectState_C_FinalizeRewardDialog");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_FinalizeRewardDialog, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_FinalizeRewardDialog::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_FinalizeRewardDialog;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.SetBeforeGadgetPlateRankUpTipsWindowFlag
 // 0x0003 (0x0003 - 0x0000)
@@ -907,11 +625,7 @@ public:
 	bool                                          CallFunc_IsReadHint_ReturnValue;                   // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_SetBeforeGadgetPlateRankUpTipsWindowFlag) == 0x000001, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_SetBeforeGadgetPlateRankUpTipsWindowFlag");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_SetBeforeGadgetPlateRankUpTipsWindowFlag) == 0x000003, "Wrong size on BPC_GadgetCustomize2SelectState_C_SetBeforeGadgetPlateRankUpTipsWindowFlag");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetBeforeGadgetPlateRankUpTipsWindowFlag, InHintId) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_SetBeforeGadgetPlateRankUpTipsWindowFlag::InHintId' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetBeforeGadgetPlateRankUpTipsWindowFlag, CallFunc_IsReadHint_ReturnValue) == 0x000001, "Member 'BPC_GadgetCustomize2SelectState_C_SetBeforeGadgetPlateRankUpTipsWindowFlag::CallFunc_IsReadHint_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetBeforeGadgetPlateRankUpTipsWindowFlag, CallFunc_Not_PreBool_ReturnValue) == 0x000002, "Member 'BPC_GadgetCustomize2SelectState_C_SetBeforeGadgetPlateRankUpTipsWindowFlag::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_SetBeforeGadgetPlateRankUpTipsWindowFlag;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.Set Gadget Plate Rank Up ID
 // 0x0010 (0x0010 - 0x0000)
@@ -931,19 +645,7 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_Set_Gadget_Plate_Rank_Up_ID) == 0x000004, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_Set_Gadget_Plate_Rank_Up_ID");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_Set_Gadget_Plate_Rank_Up_ID) == 0x000010, "Wrong size on BPC_GadgetCustomize2SelectState_C_Set_Gadget_Plate_Rank_Up_ID");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_Set_Gadget_Plate_Rank_Up_ID, EnableOpenWindow) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_Set_Gadget_Plate_Rank_Up_ID::EnableOpenWindow' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_Set_Gadget_Plate_Rank_Up_ID, CallFunc_IsReadHint_ReturnValue) == 0x000001, "Member 'BPC_GadgetCustomize2SelectState_C_Set_Gadget_Plate_Rank_Up_ID::CallFunc_IsReadHint_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_Set_Gadget_Plate_Rank_Up_ID, CallFunc_Not_PreBool_ReturnValue) == 0x000002, "Member 'BPC_GadgetCustomize2SelectState_C_Set_Gadget_Plate_Rank_Up_ID::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_Set_Gadget_Plate_Rank_Up_ID, CallFunc_GetGadgetPlateIdFromTotalRaceCount_ReturnValue) == 0x000003, "Member 'BPC_GadgetCustomize2SelectState_C_Set_Gadget_Plate_Rank_Up_ID::CallFunc_GetGadgetPlateIdFromTotalRaceCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_Set_Gadget_Plate_Rank_Up_ID, CallFunc_GetIsOnlineGameMode_ReturnValue) == 0x000004, "Member 'BPC_GadgetCustomize2SelectState_C_Set_Gadget_Plate_Rank_Up_ID::CallFunc_GetIsOnlineGameMode_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_Set_Gadget_Plate_Rank_Up_ID, K2Node_SwitchEnum_CmpSuccess) == 0x000005, "Member 'BPC_GadgetCustomize2SelectState_C_Set_Gadget_Plate_Rank_Up_ID::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_Set_Gadget_Plate_Rank_Up_ID, CallFunc_Not_PreBool_ReturnValue_1) == 0x000006, "Member 'BPC_GadgetCustomize2SelectState_C_Set_Gadget_Plate_Rank_Up_ID::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_Set_Gadget_Plate_Rank_Up_ID, CallFunc_GetSelectedPlayerCount_ReturnValue) == 0x000008, "Member 'BPC_GadgetCustomize2SelectState_C_Set_Gadget_Plate_Rank_Up_ID::CallFunc_GetSelectedPlayerCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_Set_Gadget_Plate_Rank_Up_ID, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00000C, "Member 'BPC_GadgetCustomize2SelectState_C_Set_Gadget_Plate_Rank_Up_ID::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_Set_Gadget_Plate_Rank_Up_ID, CallFunc_BooleanAND_ReturnValue) == 0x00000D, "Member 'BPC_GadgetCustomize2SelectState_C_Set_Gadget_Plate_Rank_Up_ID::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_Set_Gadget_Plate_Rank_Up_ID, CallFunc_BooleanAND_ReturnValue_1) == 0x00000E, "Member 'BPC_GadgetCustomize2SelectState_C_Set_Gadget_Plate_Rank_Up_ID::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_Set_Gadget_Plate_Rank_Up_ID;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.SetRacerGadgetPlateDataAll
 // 0x0040 (0x0040 - 0x0000)
@@ -958,13 +660,7 @@ public:
 	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_SetRacerGadgetPlateDataAll) == 0x000008, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_SetRacerGadgetPlateDataAll");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_SetRacerGadgetPlateDataAll) == 0x000040, "Wrong size on BPC_GadgetCustomize2SelectState_C_SetRacerGadgetPlateDataAll");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetRacerGadgetPlateDataAll, Temp_int_Variable) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_SetRacerGadgetPlateDataAll::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetRacerGadgetPlateDataAll, CallFunc_GetSelectedGadgetPlateUIData_OutGadgetPlateUIData) == 0x000008, "Member 'BPC_GadgetCustomize2SelectState_C_SetRacerGadgetPlateDataAll::CallFunc_GetSelectedGadgetPlateUIData_OutGadgetPlateUIData' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetRacerGadgetPlateDataAll, CallFunc_Subtract_IntInt_ReturnValue) == 0x000030, "Member 'BPC_GadgetCustomize2SelectState_C_SetRacerGadgetPlateDataAll::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetRacerGadgetPlateDataAll, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000034, "Member 'BPC_GadgetCustomize2SelectState_C_SetRacerGadgetPlateDataAll::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetRacerGadgetPlateDataAll, CallFunc_Add_IntInt_ReturnValue) == 0x000038, "Member 'BPC_GadgetCustomize2SelectState_C_SetRacerGadgetPlateDataAll::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_SetRacerGadgetPlateDataAll;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.TerminateInputReceiver
 // 0x0030 (0x0030 - 0x0000)
@@ -984,17 +680,7 @@ public:
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_TerminateInputReceiver) == 0x000008, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_TerminateInputReceiver");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_TerminateInputReceiver) == 0x000030, "Wrong size on BPC_GadgetCustomize2SelectState_C_TerminateInputReceiver");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_TerminateInputReceiver, Temp_int_Variable) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_TerminateInputReceiver::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_TerminateInputReceiver, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'BPC_GadgetCustomize2SelectState_C_TerminateInputReceiver::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_TerminateInputReceiver, CallFunc_GetPlayerController_ReturnValue) == 0x000008, "Member 'BPC_GadgetCustomize2SelectState_C_TerminateInputReceiver::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_TerminateInputReceiver, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000010, "Member 'BPC_GadgetCustomize2SelectState_C_TerminateInputReceiver::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_TerminateInputReceiver, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'BPC_GadgetCustomize2SelectState_C_TerminateInputReceiver::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_TerminateInputReceiver, CallFunc_Add_IntInt_ReturnValue) == 0x00001C, "Member 'BPC_GadgetCustomize2SelectState_C_TerminateInputReceiver::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_TerminateInputReceiver, CallFunc_UnregisterSingleSubMenu_ReturnValue) == 0x000020, "Member 'BPC_GadgetCustomize2SelectState_C_TerminateInputReceiver::CallFunc_UnregisterSingleSubMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_TerminateInputReceiver, CallFunc_Subtract_IntInt_ReturnValue) == 0x000024, "Member 'BPC_GadgetCustomize2SelectState_C_TerminateInputReceiver::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_TerminateInputReceiver, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000028, "Member 'BPC_GadgetCustomize2SelectState_C_TerminateInputReceiver::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_TerminateInputReceiver;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.SetupInputReceiver
 // 0x0058 (0x0058 - 0x0000)
@@ -1015,18 +701,7 @@ public:
 	class UMenuInputRecieveObject*                CallFunc_SpawnObject_ReturnValue;                  // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_SetupInputReceiver) == 0x000008, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_SetupInputReceiver");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_SetupInputReceiver) == 0x000058, "Wrong size on BPC_GadgetCustomize2SelectState_C_SetupInputReceiver");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupInputReceiver, Temp_int_Variable) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_SetupInputReceiver::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupInputReceiver, CallFunc_GetPlayerController_ReturnValue) == 0x000008, "Member 'BPC_GadgetCustomize2SelectState_C_SetupInputReceiver::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupInputReceiver, K2Node_DynamicCast_AsMenu_Player_Controller) == 0x000010, "Member 'BPC_GadgetCustomize2SelectState_C_SetupInputReceiver::K2Node_DynamicCast_AsMenu_Player_Controller' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupInputReceiver, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'BPC_GadgetCustomize2SelectState_C_SetupInputReceiver::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupInputReceiver, CallFunc_Add_IntInt_ReturnValue) == 0x00001C, "Member 'BPC_GadgetCustomize2SelectState_C_SetupInputReceiver::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupInputReceiver, K2Node_CreateDelegate_OutputDelegate) == 0x000020, "Member 'BPC_GadgetCustomize2SelectState_C_SetupInputReceiver::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupInputReceiver, K2Node_CreateDelegate_OutputDelegate_1) == 0x000030, "Member 'BPC_GadgetCustomize2SelectState_C_SetupInputReceiver::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupInputReceiver, CallFunc_Subtract_IntInt_ReturnValue) == 0x000040, "Member 'BPC_GadgetCustomize2SelectState_C_SetupInputReceiver::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupInputReceiver, CallFunc_SpawnObject_ReturnValue) == 0x000048, "Member 'BPC_GadgetCustomize2SelectState_C_SetupInputReceiver::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetupInputReceiver, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000050, "Member 'BPC_GadgetCustomize2SelectState_C_SetupInputReceiver::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_SetupInputReceiver;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.UpdateTicketBox
 // 0x0004 (0x0004 - 0x0000)
@@ -1035,9 +710,7 @@ struct BPC_GadgetCustomize2SelectState_C_UpdateTicketBox final
 public:
 	int32                                         CallFunc_GetDonpaTicket_ReturnValue;               // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_UpdateTicketBox) == 0x000004, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_UpdateTicketBox");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_UpdateTicketBox) == 0x000004, "Wrong size on BPC_GadgetCustomize2SelectState_C_UpdateTicketBox");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_UpdateTicketBox, CallFunc_GetDonpaTicket_ReturnValue) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_UpdateTicketBox::CallFunc_GetDonpaTicket_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_UpdateTicketBox;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.ReturnFocusAll
 // 0x0010 (0x0010 - 0x0000)
@@ -1050,12 +723,7 @@ public:
 	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_ReturnFocusAll) == 0x000004, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_ReturnFocusAll");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_ReturnFocusAll) == 0x000010, "Wrong size on BPC_GadgetCustomize2SelectState_C_ReturnFocusAll");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ReturnFocusAll, Temp_int_Variable) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_ReturnFocusAll::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ReturnFocusAll, CallFunc_Subtract_IntInt_ReturnValue) == 0x000004, "Member 'BPC_GadgetCustomize2SelectState_C_ReturnFocusAll::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ReturnFocusAll, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000008, "Member 'BPC_GadgetCustomize2SelectState_C_ReturnFocusAll::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ReturnFocusAll, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'BPC_GadgetCustomize2SelectState_C_ReturnFocusAll::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_ReturnFocusAll;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.ReturnFocus
 // 0x0030 (0x0030 - 0x0000)
@@ -1070,14 +738,7 @@ public:
 	class UGadgetPlateWindow*                     CallFunc_Array_Get_Item_1;                         // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_ReturnFocus) == 0x000008, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_ReturnFocus");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_ReturnFocus) == 0x000030, "Wrong size on BPC_GadgetCustomize2SelectState_C_ReturnFocus");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ReturnFocus, InPlayerIndex_0) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_ReturnFocus::InPlayerIndex_0' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ReturnFocus, CallFunc_Array_Get_Item) == 0x000008, "Member 'BPC_GadgetCustomize2SelectState_C_ReturnFocus::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ReturnFocus, CallFunc_GetPlayerController_ReturnValue) == 0x000010, "Member 'BPC_GadgetCustomize2SelectState_C_ReturnFocus::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ReturnFocus, CallFunc_GetPlayerController_ReturnValue_1) == 0x000018, "Member 'BPC_GadgetCustomize2SelectState_C_ReturnFocus::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ReturnFocus, CallFunc_Array_Get_Item_1) == 0x000020, "Member 'BPC_GadgetCustomize2SelectState_C_ReturnFocus::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ReturnFocus, K2Node_SwitchEnum_CmpSuccess) == 0x000028, "Member 'BPC_GadgetCustomize2SelectState_C_ReturnFocus::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_ReturnFocus;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.SetAttachedGadgetIdsToWindow
 // 0x0004 (0x0004 - 0x0000)
@@ -1086,41 +747,7 @@ struct BPC_GadgetCustomize2SelectState_C_SetAttachedGadgetIdsToWindow final
 public:
 	int32                                         InPlayerIndex_0;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_SetAttachedGadgetIdsToWindow) == 0x000004, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_SetAttachedGadgetIdsToWindow");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_SetAttachedGadgetIdsToWindow) == 0x000004, "Wrong size on BPC_GadgetCustomize2SelectState_C_SetAttachedGadgetIdsToWindow");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetAttachedGadgetIdsToWindow, InPlayerIndex_0) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_SetAttachedGadgetIdsToWindow::InPlayerIndex_0' has a wrong offset!");
-
-// Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.SetFocusToDummyAll
-// 0x0010 (0x0010 - 0x0000)
-struct BPC_GadgetCustomize2SelectState_C_SetFocusToDummyAll final
-{
-public:
-	int32                                         Temp_int_Variable;                                 // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_SetFocusToDummyAll) == 0x000004, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_SetFocusToDummyAll");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_SetFocusToDummyAll) == 0x000010, "Wrong size on BPC_GadgetCustomize2SelectState_C_SetFocusToDummyAll");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetFocusToDummyAll, Temp_int_Variable) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_SetFocusToDummyAll::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetFocusToDummyAll, CallFunc_Subtract_IntInt_ReturnValue) == 0x000004, "Member 'BPC_GadgetCustomize2SelectState_C_SetFocusToDummyAll::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetFocusToDummyAll, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000008, "Member 'BPC_GadgetCustomize2SelectState_C_SetFocusToDummyAll::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetFocusToDummyAll, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'BPC_GadgetCustomize2SelectState_C_SetFocusToDummyAll::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-
-// Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.SetFocusToDummy
-// 0x0010 (0x0010 - 0x0000)
-struct BPC_GadgetCustomize2SelectState_C_SetFocusToDummy final
-{
-public:
-	int32                                         InPlayerIndex_0;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_SetFocusToDummy) == 0x000008, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_SetFocusToDummy");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_SetFocusToDummy) == 0x000010, "Wrong size on BPC_GadgetCustomize2SelectState_C_SetFocusToDummy");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetFocusToDummy, InPlayerIndex_0) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_SetFocusToDummy::InPlayerIndex_0' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetFocusToDummy, CallFunc_GetPlayerController_ReturnValue) == 0x000008, "Member 'BPC_GadgetCustomize2SelectState_C_SetFocusToDummy::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_SetAttachedGadgetIdsToWindow;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.SetProperties
 // 0x0030 (0x0030 - 0x0000)
@@ -1135,14 +762,7 @@ public:
 	class ABP_GadgetCustomize2Sequence_C*         K2Node_DynamicCast_AsBP_Gadget_Customize_2Sequence; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_SetProperties) == 0x000008, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_SetProperties");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_SetProperties) == 0x000030, "Wrong size on BPC_GadgetCustomize2SelectState_C_SetProperties");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetProperties, K2Node_MakeArray_Array) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_SetProperties::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetProperties, CallFunc_GetSelectMode_OutSelectMode) == 0x000010, "Member 'BPC_GadgetCustomize2SelectState_C_SetProperties::CallFunc_GetSelectMode_OutSelectMode' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetProperties, CallFunc_GetPlayerNum_OutPlayerNum) == 0x000014, "Member 'BPC_GadgetCustomize2SelectState_C_SetProperties::CallFunc_GetPlayerNum_OutPlayerNum' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetProperties, CallFunc_GetOwnerStateMachine_ReturnValue) == 0x000018, "Member 'BPC_GadgetCustomize2SelectState_C_SetProperties::CallFunc_GetOwnerStateMachine_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetProperties, K2Node_DynamicCast_AsBP_Gadget_Customize_2Sequence) == 0x000020, "Member 'BPC_GadgetCustomize2SelectState_C_SetProperties::K2Node_DynamicCast_AsBP_Gadget_Customize_2Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SetProperties, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'BPC_GadgetCustomize2SelectState_C_SetProperties::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_SetProperties;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.CustomWindow_OnFocusChangeUp
 // 0x0008 (0x0008 - 0x0000)
@@ -1154,12 +774,7 @@ public:
 	EGadgetCategory                               CategoryId;                                        // 0x0005(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EGadgetState                                  GadgetState;                                       // 0x0006(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeUp) == 0x000004, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeUp");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeUp) == 0x000008, "Wrong size on BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeUp");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeUp, PlayerIndex) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeUp::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeUp, gadgetId) == 0x000004, "Member 'BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeUp::gadgetId' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeUp, CategoryId) == 0x000005, "Member 'BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeUp::CategoryId' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeUp, GadgetState) == 0x000006, "Member 'BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeUp::GadgetState' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeUp;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.CustomWindow_OnFocusChangeDown
 // 0x0008 (0x0008 - 0x0000)
@@ -1171,12 +786,7 @@ public:
 	EGadgetCategory                               CategoryId;                                        // 0x0005(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EGadgetState                                  GadgetState;                                       // 0x0006(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeDown) == 0x000004, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeDown");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeDown) == 0x000008, "Wrong size on BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeDown");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeDown, PlayerIndex) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeDown::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeDown, gadgetId) == 0x000004, "Member 'BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeDown::gadgetId' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeDown, CategoryId) == 0x000005, "Member 'BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeDown::CategoryId' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeDown, GadgetState) == 0x000006, "Member 'BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeDown::GadgetState' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeDown;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.CustomWindow_OnFocusChangeRight
 // 0x0008 (0x0008 - 0x0000)
@@ -1188,12 +798,7 @@ public:
 	EGadgetCategory                               CategoryId;                                        // 0x0005(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EGadgetState                                  GadgetState;                                       // 0x0006(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeRight) == 0x000004, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeRight");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeRight) == 0x000008, "Wrong size on BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeRight");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeRight, PlayerIndex) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeRight::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeRight, gadgetId) == 0x000004, "Member 'BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeRight::gadgetId' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeRight, CategoryId) == 0x000005, "Member 'BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeRight::CategoryId' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeRight, GadgetState) == 0x000006, "Member 'BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeRight::GadgetState' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeRight;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.CustomWindow_OnFocusChangeLeft
 // 0x0008 (0x0008 - 0x0000)
@@ -1205,12 +810,7 @@ public:
 	EGadgetCategory                               CategoryId;                                        // 0x0005(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EGadgetState                                  GadgetState;                                       // 0x0006(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeLeft) == 0x000004, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeLeft");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeLeft) == 0x000008, "Wrong size on BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeLeft");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeLeft, PlayerIndex) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeLeft::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeLeft, gadgetId) == 0x000004, "Member 'BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeLeft::gadgetId' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeLeft, CategoryId) == 0x000005, "Member 'BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeLeft::CategoryId' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeLeft, GadgetState) == 0x000006, "Member 'BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeLeft::GadgetState' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_CustomWindow_OnFocusChangeLeft;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.CreateTipsWindow
 // 0x0001 (0x0001 - 0x0000)
@@ -1219,9 +819,7 @@ struct BPC_GadgetCustomize2SelectState_C_CreateTipsWindow final
 public:
 	EHintId                                       InHintId;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_CreateTipsWindow) == 0x000001, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_CreateTipsWindow");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_CreateTipsWindow) == 0x000001, "Wrong size on BPC_GadgetCustomize2SelectState_C_CreateTipsWindow");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_CreateTipsWindow, InHintId) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_CreateTipsWindow::InHintId' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_CreateTipsWindow;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.OnDetachGadget
 // 0x0010 (0x0010 - 0x0000)
@@ -1231,10 +829,7 @@ public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         PlayerControllerIndex;                             // 0x0008(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_OnDetachGadget) == 0x000008, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_OnDetachGadget");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_OnDetachGadget) == 0x000010, "Wrong size on BPC_GadgetCustomize2SelectState_C_OnDetachGadget");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_OnDetachGadget, Object) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_OnDetachGadget::Object' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_OnDetachGadget, PlayerControllerIndex) == 0x000008, "Member 'BPC_GadgetCustomize2SelectState_C_OnDetachGadget::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_OnDetachGadget;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.OnViewParameter
 // 0x0010 (0x0010 - 0x0000)
@@ -1244,10 +839,7 @@ public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         PlayerControllerIndex;                             // 0x0008(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_OnViewParameter) == 0x000008, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_OnViewParameter");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_OnViewParameter) == 0x000010, "Wrong size on BPC_GadgetCustomize2SelectState_C_OnViewParameter");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_OnViewParameter, Object) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_OnViewParameter::Object' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_OnViewParameter, PlayerControllerIndex) == 0x000008, "Member 'BPC_GadgetCustomize2SelectState_C_OnViewParameter::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_OnViewParameter;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.SelectWindow_OnItemSelected
 // 0x0008 (0x0008 - 0x0000)
@@ -1258,11 +850,7 @@ public:
 	EGadgetId                                     gadgetId;                                          // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EGadgetState                                  GadgetState;                                       // 0x0005(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_SelectWindow_OnItemSelected) == 0x000004, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_SelectWindow_OnItemSelected");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_SelectWindow_OnItemSelected) == 0x000008, "Wrong size on BPC_GadgetCustomize2SelectState_C_SelectWindow_OnItemSelected");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SelectWindow_OnItemSelected, PlayerIndex) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_SelectWindow_OnItemSelected::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SelectWindow_OnItemSelected, gadgetId) == 0x000004, "Member 'BPC_GadgetCustomize2SelectState_C_SelectWindow_OnItemSelected::gadgetId' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SelectWindow_OnItemSelected, GadgetState) == 0x000005, "Member 'BPC_GadgetCustomize2SelectState_C_SelectWindow_OnItemSelected::GadgetState' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_SelectWindow_OnItemSelected;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.SelectWindow_OnCancel
 // 0x0004 (0x0004 - 0x0000)
@@ -1271,9 +859,7 @@ struct BPC_GadgetCustomize2SelectState_C_SelectWindow_OnCancel final
 public:
 	int32                                         PlayerIndex;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_SelectWindow_OnCancel) == 0x000004, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_SelectWindow_OnCancel");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_SelectWindow_OnCancel) == 0x000004, "Wrong size on BPC_GadgetCustomize2SelectState_C_SelectWindow_OnCancel");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SelectWindow_OnCancel, PlayerIndex) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_SelectWindow_OnCancel::PlayerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_SelectWindow_OnCancel;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.SelectWindow_OnItemFocused
 // 0x0008 (0x0008 - 0x0000)
@@ -1284,11 +870,7 @@ public:
 	EGadgetId                                     gadgetId;                                          // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EGadgetState                                  GadgetState;                                       // 0x0005(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_SelectWindow_OnItemFocused) == 0x000004, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_SelectWindow_OnItemFocused");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_SelectWindow_OnItemFocused) == 0x000008, "Wrong size on BPC_GadgetCustomize2SelectState_C_SelectWindow_OnItemFocused");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SelectWindow_OnItemFocused, PlayerIndex) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_SelectWindow_OnItemFocused::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SelectWindow_OnItemFocused, gadgetId) == 0x000004, "Member 'BPC_GadgetCustomize2SelectState_C_SelectWindow_OnItemFocused::gadgetId' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_SelectWindow_OnItemFocused, GadgetState) == 0x000005, "Member 'BPC_GadgetCustomize2SelectState_C_SelectWindow_OnItemFocused::GadgetState' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_SelectWindow_OnItemFocused;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.RewardDialog_Purchase_OnResult
 // 0x0001 (0x0001 - 0x0000)
@@ -1297,9 +879,7 @@ struct BPC_GadgetCustomize2SelectState_C_RewardDialog_Purchase_OnResult final
 public:
 	EDialogResult                                 Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_RewardDialog_Purchase_OnResult) == 0x000001, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_RewardDialog_Purchase_OnResult");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_RewardDialog_Purchase_OnResult) == 0x000001, "Wrong size on BPC_GadgetCustomize2SelectState_C_RewardDialog_Purchase_OnResult");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_RewardDialog_Purchase_OnResult, Result) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_RewardDialog_Purchase_OnResult::Result' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_RewardDialog_Purchase_OnResult;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.RewardDialog_Unlock_OnResult
 // 0x0001 (0x0001 - 0x0000)
@@ -1308,9 +888,7 @@ struct BPC_GadgetCustomize2SelectState_C_RewardDialog_Unlock_OnResult final
 public:
 	EDialogResult                                 Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_RewardDialog_Unlock_OnResult) == 0x000001, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_RewardDialog_Unlock_OnResult");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_RewardDialog_Unlock_OnResult) == 0x000001, "Wrong size on BPC_GadgetCustomize2SelectState_C_RewardDialog_Unlock_OnResult");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_RewardDialog_Unlock_OnResult, Result) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_RewardDialog_Unlock_OnResult::Result' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_RewardDialog_Unlock_OnResult;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.PlateWindow_OnItemFocused
 // 0x000C (0x000C - 0x0000)
@@ -1321,11 +899,7 @@ public:
 	int32                                         SlotState;                                         // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         SlotIndex;                                         // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_PlateWindow_OnItemFocused) == 0x000004, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_PlateWindow_OnItemFocused");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_PlateWindow_OnItemFocused) == 0x00000C, "Wrong size on BPC_GadgetCustomize2SelectState_C_PlateWindow_OnItemFocused");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_PlateWindow_OnItemFocused, PlayerIndex) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_PlateWindow_OnItemFocused::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_PlateWindow_OnItemFocused, SlotState) == 0x000004, "Member 'BPC_GadgetCustomize2SelectState_C_PlateWindow_OnItemFocused::SlotState' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_PlateWindow_OnItemFocused, SlotIndex) == 0x000008, "Member 'BPC_GadgetCustomize2SelectState_C_PlateWindow_OnItemFocused::SlotIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_PlateWindow_OnItemFocused;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.PlateWindow_OnItemSelected
 // 0x000C (0x000C - 0x0000)
@@ -1336,11 +910,7 @@ public:
 	int32                                         SlotState;                                         // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         SlotIndex;                                         // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_PlateWindow_OnItemSelected) == 0x000004, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_PlateWindow_OnItemSelected");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_PlateWindow_OnItemSelected) == 0x00000C, "Wrong size on BPC_GadgetCustomize2SelectState_C_PlateWindow_OnItemSelected");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_PlateWindow_OnItemSelected, PlayerIndex) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_PlateWindow_OnItemSelected::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_PlateWindow_OnItemSelected, SlotState) == 0x000004, "Member 'BPC_GadgetCustomize2SelectState_C_PlateWindow_OnItemSelected::SlotState' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_PlateWindow_OnItemSelected, SlotIndex) == 0x000008, "Member 'BPC_GadgetCustomize2SelectState_C_PlateWindow_OnItemSelected::SlotIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_PlateWindow_OnItemSelected;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.PlateWindow_OnCancel
 // 0x0004 (0x0004 - 0x0000)
@@ -1349,9 +919,7 @@ struct BPC_GadgetCustomize2SelectState_C_PlateWindow_OnCancel final
 public:
 	int32                                         PlayerIndex;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_PlateWindow_OnCancel) == 0x000004, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_PlateWindow_OnCancel");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_PlateWindow_OnCancel) == 0x000004, "Wrong size on BPC_GadgetCustomize2SelectState_C_PlateWindow_OnCancel");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_PlateWindow_OnCancel, PlayerIndex) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_PlateWindow_OnCancel::PlayerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_PlateWindow_OnCancel;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.PlateWindow_OnLeftShoulder
 // 0x0004 (0x0004 - 0x0000)
@@ -1360,9 +928,7 @@ struct BPC_GadgetCustomize2SelectState_C_PlateWindow_OnLeftShoulder final
 public:
 	int32                                         PlayerIndex;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_PlateWindow_OnLeftShoulder) == 0x000004, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_PlateWindow_OnLeftShoulder");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_PlateWindow_OnLeftShoulder) == 0x000004, "Wrong size on BPC_GadgetCustomize2SelectState_C_PlateWindow_OnLeftShoulder");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_PlateWindow_OnLeftShoulder, PlayerIndex) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_PlateWindow_OnLeftShoulder::PlayerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_PlateWindow_OnLeftShoulder;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.PlateWindow_OnRightShoulder
 // 0x0004 (0x0004 - 0x0000)
@@ -1371,9 +937,7 @@ struct BPC_GadgetCustomize2SelectState_C_PlateWindow_OnRightShoulder final
 public:
 	int32                                         PlayerIndex;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_PlateWindow_OnRightShoulder) == 0x000004, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_PlateWindow_OnRightShoulder");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_PlateWindow_OnRightShoulder) == 0x000004, "Wrong size on BPC_GadgetCustomize2SelectState_C_PlateWindow_OnRightShoulder");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_PlateWindow_OnRightShoulder, PlayerIndex) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_PlateWindow_OnRightShoulder::PlayerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_PlateWindow_OnRightShoulder;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.Finished_SequenceEnd_FadeIn
 // 0x0001 (0x0001 - 0x0000)
@@ -1382,9 +946,7 @@ struct BPC_GadgetCustomize2SelectState_C_Finished_SequenceEnd_FadeIn final
 public:
 	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_Finished_SequenceEnd_FadeIn) == 0x000001, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_Finished_SequenceEnd_FadeIn");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_Finished_SequenceEnd_FadeIn) == 0x000001, "Wrong size on BPC_GadgetCustomize2SelectState_C_Finished_SequenceEnd_FadeIn");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_Finished_SequenceEnd_FadeIn, FadeDirection) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_Finished_SequenceEnd_FadeIn::FadeDirection' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_Finished_SequenceEnd_FadeIn;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.GadgetTabSelect
 // 0x0008 (0x0008 - 0x0000)
@@ -1394,10 +956,7 @@ public:
 	int32                                         InPlayerIndex_0;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         InPresetNum;                                       // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_GadgetTabSelect) == 0x000004, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_GadgetTabSelect");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_GadgetTabSelect) == 0x000008, "Wrong size on BPC_GadgetCustomize2SelectState_C_GadgetTabSelect");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_GadgetTabSelect, InPlayerIndex_0) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_GadgetTabSelect::InPlayerIndex_0' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_GadgetTabSelect, InPresetNum) == 0x000004, "Member 'BPC_GadgetCustomize2SelectState_C_GadgetTabSelect::InPresetNum' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_GadgetTabSelect;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.Finished_SequenceBegin_FadeOut
 // 0x0001 (0x0001 - 0x0000)
@@ -1406,9 +965,7 @@ struct BPC_GadgetCustomize2SelectState_C_Finished_SequenceBegin_FadeOut final
 public:
 	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_Finished_SequenceBegin_FadeOut) == 0x000001, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_Finished_SequenceBegin_FadeOut");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_Finished_SequenceBegin_FadeOut) == 0x000001, "Wrong size on BPC_GadgetCustomize2SelectState_C_Finished_SequenceBegin_FadeOut");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_Finished_SequenceBegin_FadeOut, FadeDirection) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_Finished_SequenceBegin_FadeOut::FadeDirection' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_Finished_SequenceBegin_FadeOut;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.GadgetCustomWindow_OnSctollStart
 // 0x0008 (0x0008 - 0x0000)
@@ -1420,12 +977,7 @@ public:
 	EGadgetId                                     SelectedGadgetId;                                  // 0x0005(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EGadgetState                                  SelectedGadgetState;                               // 0x0006(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnSctollStart) == 0x000004, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnSctollStart");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnSctollStart) == 0x000008, "Wrong size on BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnSctollStart");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnSctollStart, SelectedPlayerControllerIndex) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnSctollStart::SelectedPlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnSctollStart, SelectedGadgetCategory) == 0x000004, "Member 'BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnSctollStart::SelectedGadgetCategory' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnSctollStart, SelectedGadgetId) == 0x000005, "Member 'BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnSctollStart::SelectedGadgetId' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnSctollStart, SelectedGadgetState) == 0x000006, "Member 'BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnSctollStart::SelectedGadgetState' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnSctollStart;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.GadgetCustomWindow_OnGadgetCategoryCancel
 // 0x0008 (0x0008 - 0x0000)
@@ -1437,12 +989,7 @@ public:
 	EGadgetId                                     SelectedGadgetId;                                  // 0x0005(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EGadgetState                                  SelectedGadgetState;                               // 0x0006(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnGadgetCategoryCancel) == 0x000004, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnGadgetCategoryCancel");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnGadgetCategoryCancel) == 0x000008, "Wrong size on BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnGadgetCategoryCancel");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnGadgetCategoryCancel, SelectedPlayerControllerIndex) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnGadgetCategoryCancel::SelectedPlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnGadgetCategoryCancel, SelectedGadgetCategory) == 0x000004, "Member 'BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnGadgetCategoryCancel::SelectedGadgetCategory' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnGadgetCategoryCancel, SelectedGadgetId) == 0x000005, "Member 'BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnGadgetCategoryCancel::SelectedGadgetId' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnGadgetCategoryCancel, SelectedGadgetState) == 0x000006, "Member 'BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnGadgetCategoryCancel::SelectedGadgetState' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnGadgetCategoryCancel;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.GadgetCustomWindow_OnGadgetCategoryDecide
 // 0x0008 (0x0008 - 0x0000)
@@ -1454,712 +1001,366 @@ public:
 	EGadgetId                                     SelectedGadgetId;                                  // 0x0005(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EGadgetState                                  SelectedGadgetState;                               // 0x0006(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnGadgetCategoryDecide) == 0x000004, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnGadgetCategoryDecide");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnGadgetCategoryDecide) == 0x000008, "Wrong size on BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnGadgetCategoryDecide");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnGadgetCategoryDecide, SelectedPlayerControllerIndex) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnGadgetCategoryDecide::SelectedPlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnGadgetCategoryDecide, SelectedGadgetCategory) == 0x000004, "Member 'BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnGadgetCategoryDecide::SelectedGadgetCategory' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnGadgetCategoryDecide, SelectedGadgetId) == 0x000005, "Member 'BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnGadgetCategoryDecide::SelectedGadgetId' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnGadgetCategoryDecide, SelectedGadgetState) == 0x000006, "Member 'BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnGadgetCategoryDecide::SelectedGadgetState' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_GadgetCustomWindow_OnGadgetCategoryDecide;
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.ExecuteUbergraph_BPC_GadgetCustomize2SelectState
-// 0x12F8 (0x12F8 - 0x0000)
+// 0x1078 (0x1078 - 0x0000)
 struct BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EDialogResult Result)>         K2Node_CreateDelegate_OutputDelegate;              // 0x000C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_PlayerIndex_8;                  // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetId                                     K2Node_CustomEvent_GadgetId_2;                     // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetCategory                               K2Node_CustomEvent_CategoryId;                     // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetState                                  K2Node_CustomEvent_GadgetState_2;                  // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_23[0x5];                                       // 0x0023(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UGadgetCustomWindow*                    CallFunc_Array_Get_Item;                           // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UGadgetPlateWindow*                     CallFunc_Array_Get_Item_1;                         // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Get_Item_2;                         // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EHintId                                       K2Node_CustomEvent_InHintId;                       // 0x003D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E[0x2];                                       // 0x003E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0040(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_PlayerIndex_9;                  // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetId                                     K2Node_CustomEvent_GadgetId_3;                     // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetCategory                               K2Node_CustomEvent_CategoryId_1;                   // 0x005D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetState                                  K2Node_CustomEvent_GadgetState_3;                  // 0x005E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5F[0x1];                                       // 0x005F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_CustomEvent_PlayerIndex_10;                 // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetId                                     K2Node_CustomEvent_GadgetId_4;                     // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetCategory                               K2Node_CustomEvent_CategoryId_2;                   // 0x0065(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetState                                  K2Node_CustomEvent_GadgetState_4;                  // 0x0066(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_67[0x1];                                       // 0x0067(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	class UGadgetCustomWindow*                    CallFunc_Array_Get_Item_3;                         // 0x0068(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UGadgetPlateWindow*                     CallFunc_Array_Get_Item_4;                         // 0x0070(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Get_Item_5;                         // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_1;         // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7D[0x3];                                       // 0x007D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UGadgetCustomWindow*                    CallFunc_Array_Get_Item_6;                         // 0x0080(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UGadgetPlateWindow*                     CallFunc_Array_Get_Item_7;                         // 0x0088(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Get_Item_8;                         // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_2;         // 0x0094(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_95[0x3];                                       // 0x0095(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_CustomEvent_PlayerIndex_11;                 // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetId                                     K2Node_CustomEvent_GadgetId_5;                     // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetCategory                               K2Node_CustomEvent_CategoryId_3;                   // 0x009D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetState                                  K2Node_CustomEvent_GadgetState_5;                  // 0x009E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9F[0x1];                                       // 0x009F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	class UGadgetCustomWindow*                    CallFunc_Array_Get_Item_9;                         // 0x00A0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UGadgetPlateWindow*                     CallFunc_Array_Get_Item_10;                        // 0x00A8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Get_Item_11;                        // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_3;         // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B5[0x3];                                       // 0x00B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00B8(0x0048)(HasGetValueTypeHash)
-	class UObject*                                K2Node_CustomEvent_Object_1;                       // 0x0100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_PlayerControllerIndex_1;        // 0x0108(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_10C[0x4];                                      // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue_1;        // 0x0110(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGadgetPlateUIData                     CallFunc_GetSelectedGadgetPlateUIData_OutGadgetPlateUIData; // 0x0118(0x0028)()
-	struct FGadgetPlateUIData                     CallFunc_GetSelectedGadgetPlateUIData_OutGadgetPlateUIData_1; // 0x0140(0x0028)()
-	TArray<int32>                                 CallFunc_ConvertGadgetPlateUIDataToSlotStates_OutSlotStates; // 0x0168(0x0010)(ReferenceParm)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_179[0x3];                                      // 0x0179(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x017C(0x0004)()
-	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_1;                  // 0x0180(0x0004)()
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0184(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0185(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_186[0x2];                                      // 0x0186(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_2;                  // 0x0188(0x0004)()
-	uint8                                         Pad_18C[0x4];                                      // 0x018C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_AttachGadgetToPlate_ReturnValue;          // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19C[0x4];                                      // 0x019C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x01A0(0x0048)(HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x01E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1EA[0x6];                                      // 0x01EA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UGadgetPlateWindow*                     CallFunc_Array_Get_Item_12;                        // 0x01F0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1F9[0x7];                                      // 0x01F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UGadgetPlateWindow*                     CallFunc_Array_Get_Item_13;                        // 0x0200(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsMultiPlayerControl_ReturnValue;         // 0x0208(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0209(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_20A[0x6];                                      // 0x020A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UGadgetPlateWindow*                     CallFunc_Array_Get_Item_14;                        // 0x0210(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0219(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsMultiPlayerControl_ReturnValue_1;       // 0x021A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21B[0x1];                                      // 0x021B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_3;                  // 0x021C(0x0004)()
-	class FText                                   CallFunc_Conv_BoolToText_ReturnValue;              // 0x0220(0x0010)()
-	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x0230(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_231[0x7];                                      // 0x0231(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_2;            // 0x0238(0x0048)(HasGetValueTypeHash)
-	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_4;                  // 0x0280(0x0004)()
-	uint8                                         Pad_284[0x4];                                      // 0x0284(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                K2Node_CustomEvent_Object;                         // 0x0288(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_PlayerControllerIndex;          // 0x0290(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_294[0x4];                                      // 0x0294(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	int64                                         CallFunc_Conv_IntToInt64_ReturnValue_1;            // 0x0298(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_3;            // 0x02A0(0x0048)(HasGetValueTypeHash)
-	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_5;                  // 0x02E8(0x0004)()
-	uint8                                         Pad_2EC[0x4];                                      // 0x02EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x02F0(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0300(0x0010)()
-	struct FGadgetData                            CallFunc_GetGadgetData_OutGadgetData;              // 0x0310(0x00C0)()
-	bool                                          CallFunc_GetGadgetData_ReturnValue;                // 0x03D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D1[0x3];                                      // 0x03D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x03D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x03D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D9[0x7];                                      // 0x03D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                CallFunc_LoadAsset_Blocking_ReturnValue;           // 0x03E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             K2Node_DynamicCast_As_____2D;                      // 0x03E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x03F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F1[0x7];                                      // 0x03F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRewardDialogParameter                 K2Node_MakeStruct_RewardDialogParameter;           // 0x03F8(0x0088)()
-	class UCharaMachineParamWindow*               CallFunc_Array_Get_Item_15;                        // 0x0480(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FGadgetData                            CallFunc_GetGadgetData_OutGadgetData_1;            // 0x0488(0x00C0)()
-	bool                                          CallFunc_GetGadgetData_ReturnValue_1;              // 0x0548(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_PlayAnim_ReturnValue;                     // 0x0549(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_PlayAnim_ReturnValue_1;                   // 0x054A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_54B[0x5];                                      // 0x054B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                CallFunc_LoadAsset_Blocking_ReturnValue_1;         // 0x0550(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_4;         // 0x0558(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_559[0x7];                                      // 0x0559(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             K2Node_DynamicCast_As_____2D_1;                    // 0x0560(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0568(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_569[0x7];                                      // 0x0569(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRewardDialogParameter                 K2Node_MakeStruct_RewardDialogParameter_1;         // 0x0570(0x0088)()
-	int64                                         CallFunc_Conv_IntToInt64_ReturnValue_2;            // 0x05F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x0600(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_601[0x7];                                      // 0x0601(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_4;            // 0x0608(0x0048)(HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0650(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_651[0x7];                                      // 0x0651(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0658(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0668(0x0010)()
-	bool                                          K2Node_SwitchEnum_CmpSuccess_2;                    // 0x0678(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_Get_Item_16;                        // 0x0679(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsUseRentalGadgetPlate_ReturnValue;       // 0x067A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_67B[0x1];                                      // 0x067B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EUnionUIFadeDirection FadeDirection)> K2Node_CreateDelegate_OutputDelegate_2;     // 0x067C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_3;                // 0x068C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_68D[0x3];                                      // 0x068D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UGadgetDetailWindow*                    CallFunc_Array_Get_Item_17;                        // 0x0690(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UUnionUITransitionManager*              CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0698(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x06A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6A1[0x3];                                      // 0x06A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x06A4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6B4[0x4];                                      // 0x06B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x06B8(0x0008)(NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EDialogResult Result)>         K2Node_CreateDelegate_OutputDelegate_4;            // 0x06C0(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EDialogResult Result)>         K2Node_CreateDelegate_OutputDelegate_5;            // 0x06D0(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_PlayerIndex_7;                  // 0x06E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetId                                     K2Node_CustomEvent_GadgetId_1;                     // 0x06E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetState                                  K2Node_CustomEvent_GadgetState_1;                  // 0x06E5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6E6[0x2];                                      // 0x06E6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_CustomEvent_PlayerIndex_6;                  // 0x06E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_3;                    // 0x06EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6ED[0x3];                                      // 0x06ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue_2;        // 0x06F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_GetEnumeratorName_ReturnValue;            // 0x06F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGadgetData                            CallFunc_GetGadgetData_OutGadgetData_2;            // 0x0700(0x00C0)()
-	bool                                          CallFunc_GetGadgetData_ReturnValue_2;              // 0x07C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7C1[0x7];                                      // 0x07C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_NameToText_ReturnValue;              // 0x07C8(0x0010)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_5;            // 0x07D8(0x0048)(HasGetValueTypeHash)
-	class UObject*                                CallFunc_LoadAsset_Blocking_ReturnValue_2;         // 0x0820(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGadgetData                            CallFunc_GetGadgetData_OutGadgetData_3;            // 0x0828(0x00C0)()
-	bool                                          CallFunc_GetGadgetData_ReturnValue_3;              // 0x08E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8E9[0x7];                                      // 0x08E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             K2Node_DynamicCast_As_____2D_2;                    // 0x08F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x08F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8F9[0x7];                                      // 0x08F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRewardDialogParameter                 K2Node_MakeStruct_RewardDialogParameter_2;         // 0x0900(0x0088)()
-	class UObject*                                CallFunc_LoadAsset_Blocking_ReturnValue_3;         // 0x0988(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_2;          // 0x0990(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_991[0x7];                                      // 0x0991(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             K2Node_DynamicCast_As_____2D_3;                    // 0x0998(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x09A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9A1[0x7];                                      // 0x09A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRewardDialogParameter                 K2Node_MakeStruct_RewardDialogParameter_3;         // 0x09A8(0x0088)()
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_3;          // 0x0A30(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A31[0x7];                                      // 0x0A31(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UGadgetPlateWindow*                     CallFunc_Array_Get_Item_18;                        // 0x0A38(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_PlayerIndex_5;                  // 0x0A40(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetId                                     K2Node_CustomEvent_GadgetId;                       // 0x0A44(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetState                                  K2Node_CustomEvent_GadgetState;                    // 0x0A45(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A46[0x2];                                      // 0x0A46(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0A48(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A4C[0x4];                                      // 0x0A4C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UGadgetDetailWindow*                    CallFunc_Array_Get_Item_19;                        // 0x0A50(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0A58(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A59[0x3];                                      // 0x0A59(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_1;             // 0x0A5C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x0A60(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A64[0x4];                                      // 0x0A64(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	int64                                         CallFunc_Conv_IntToInt64_ReturnValue_3;            // 0x0A68(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_AttachGadgetToPlate_ReturnValue_1;        // 0x0A70(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A74[0x4];                                      // 0x0A74(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_6;            // 0x0A78(0x0048)(HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x0AC0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_AC1[0x7];                                      // 0x0AC1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_2;                          // 0x0AC8(0x0010)(ReferenceParm)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_4;                // 0x0AD8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_AD9[0x7];                                      // 0x0AD9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Format_ReturnValue_2;                     // 0x0AE0(0x0010)()
-	TDelegate<void(EDialogResult Result)>         K2Node_CreateDelegate_OutputDelegate_6;            // 0x0AF0(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EDialogResult                                 K2Node_CustomEvent_Result_1;                       // 0x0B00(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_4;                    // 0x0B01(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_1;            // 0x0B02(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B03[0x1];                                      // 0x0B03(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_2;             // 0x0B04(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EDialogResult Result)>         K2Node_CreateDelegate_OutputDelegate_7;            // 0x0B08(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EDialogResult                                 K2Node_CustomEvent_Result;                         // 0x0B18(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetId                                     CallFunc_Array_Get_Item_20;                        // 0x0B19(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B1A[0x2];                                      // 0x0B1A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EUnionUIFadeDirection FadeDirection)> K2Node_CreateDelegate_OutputDelegate_8;     // 0x0B1C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B2C[0x4];                                      // 0x0B2C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGadgetData                            CallFunc_GetGadgetData_OutGadgetData_4;            // 0x0B30(0x00C0)()
-	bool                                          CallFunc_GetGadgetData_ReturnValue_4;              // 0x0BF0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetId                                     CallFunc_Array_Get_Item_21;                        // 0x0BF1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_BF2[0x6];                                      // 0x0BF2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionUITransitionManager*              CallFunc_GetGameInstanceSubsystem_ReturnValue_1;   // 0x0BF8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EDialogResult Result)>         K2Node_CreateDelegate_OutputDelegate_9;            // 0x0C00(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_2;            // 0x0C10(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C11[0x7];                                      // 0x0C11(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAppSequenceLogManagerSubsystem*        CallFunc_GetGameInstanceSubsystem_ReturnValue_2;   // 0x0C18(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_3;             // 0x0C20(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetCustomize2SequenceSubState             Temp_byte_Variable;                                // 0x0C24(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C25[0x3];                                      // 0x0C25(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable_1;                               // 0x0C28(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_2;                               // 0x0C2C(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_DonpaTicketApp_C*                  CallFunc_Create_ReturnValue;                       // 0x0C30(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UGadgetCustomWindow*                    CallFunc_Array_Get_Item_22;                        // 0x0C38(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_PlayerIndex_4;                  // 0x0C40(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_SlotState_1;                    // 0x0C44(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_SlotIndex_1;                    // 0x0C48(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_PlayerIndex_3;                  // 0x0C4C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_SlotState;                      // 0x0C50(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_SlotIndex;                      // 0x0C54(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_PlayerIndex_2;                  // 0x0C58(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_4;          // 0x0C5C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C5D[0x3];                                      // 0x0C5D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue_3;        // 0x0C60(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_PlayerIndex_1;                  // 0x0C68(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_PlayerIndex;                    // 0x0C6C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UGadgetDetailWindow*                    CallFunc_Array_Get_Item_23;                        // 0x0C70(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_3;            // 0x0C78(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_4;            // 0x0C79(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C7A[0x2];                                      // 0x0C7A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_4;             // 0x0C7C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_5;             // 0x0C80(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C84[0x4];                                      // 0x0C84(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMenuWorldSubsystem*                    CallFunc_GetWorldSubsystem_ReturnValue;            // 0x0C88(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0C90(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C91[0x7];                                      // 0x0C91(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMenuWorldSubsystem*                    CallFunc_GetWorldSubsystem_ReturnValue_1;          // 0x0C98(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EGadgetCustomize2SequenceSubState             Temp_byte_Variable_1;                              // 0x0CA0(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0CA1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetCustomize2SequenceSubState             Temp_byte_Variable_2;                              // 0x0CA2(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_CA3[0x5];                                      // 0x0CA3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UGadgetPlateWindow*                     CallFunc_Array_Get_Item_24;                        // 0x0CA8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_DonpaTicketApp_C*                  CallFunc_Create_ReturnValue_1;                     // 0x0CB0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_DonpaTicketApp_C*                  CallFunc_Create_ReturnValue_2;                     // 0x0CB8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UGadgetCustomWindow*                    CallFunc_Array_Get_Item_25;                        // 0x0CC0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_5;            // 0x0CC8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_CC9[0x3];                                      // 0x0CC9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_6;             // 0x0CCC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_GadgetCustom_Window_C*             K2Node_DynamicCast_AsWBP_Gadget_Custom_Window;     // 0x0CD0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x0CD8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_CD9[0x7];                                      // 0x0CD9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UGadgetCustomSubTypeBox*                CallFunc_GetCenterCategoryTypeBox_ReturnValue;     // 0x0CE0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_DonpaTicketApp_C*                  CallFunc_Create_ReturnValue_3;                     // 0x0CE8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_6;            // 0x0CF0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_CF1[0x3];                                      // 0x0CF1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   CallFunc_GetEnumeratorName_ReturnValue_1;          // 0x0CF4(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_CFC[0x4];                                      // 0x0CFC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_NameToText_ReturnValue_1;            // 0x0D00(0x0010)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_7;            // 0x0D10(0x0048)(HasGetValueTypeHash)
-	class UGadgetCustomWindow*                    CallFunc_Array_Get_Item_26;                        // 0x0D58(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_3;                          // 0x0D60(0x0010)(ReferenceParm)
-	class UGadgetCustomSubTypeBox*                CallFunc_GetCenterCategoryTypeBox_ReturnValue_1;   // 0x0D70(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Format_ReturnValue_3;                     // 0x0D78(0x0010)()
-	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0D88(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetId                                     CallFunc_GetCenterGadgetId_ReturnValue;            // 0x0D89(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D8A[0x2];                                      // 0x0D8A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0D8C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_7;             // 0x0D90(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_3;                // 0x0D94(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0D95(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_1;                              // 0x0D96(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D97[0x1];                                      // 0x0D97(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_6;                  // 0x0D98(0x0004)()
-	uint8                                         Pad_D9C[0x4];                                      // 0x0D9C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UGadgetPlateWindow*                     CallFunc_Array_Get_Item_27;                        // 0x0DA0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetGadgetSlotStateLocked_ReturnValue;     // 0x0DA8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_5;          // 0x0DAC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_7;            // 0x0DAD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_5;                // 0x0DAE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_DAF[0x1];                                      // 0x0DAF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_8;             // 0x0DB0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_DB4[0x4];                                      // 0x0DB4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USaveDataManageSubsystem*               CallFunc_GetGameInstanceSubsystem_ReturnValue_3;   // 0x0DB8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Popup_Window_Hint_C*               CallFunc_Create_ReturnValue_4;                     // 0x0DC0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_7;                  // 0x0DC8(0x0004)()
-	EUnionUIFadeDirection                         K2Node_CustomEvent_FadeDirection_1;                // 0x0DCC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsUseRentalGadgetPlate_ReturnValue_1;     // 0x0DCD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsFestaSpecialRuleContinuous_ReturnValue; // 0x0DCE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_6;                // 0x0DCF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_7;                // 0x0DD0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_DD1[0x3];                                      // 0x0DD1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_CustomEvent_InPlayerIndex;                  // 0x0DD4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_InPresetNum;                    // 0x0DD8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_DDC[0x4];                                      // 0x0DDC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	int64                                         CallFunc_Conv_IntToInt64_ReturnValue_4;            // 0x0DE0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_8;            // 0x0DE8(0x0048)(HasGetValueTypeHash)
-	int64                                         CallFunc_Conv_IntToInt64_ReturnValue_5;            // 0x0E30(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_9;            // 0x0E38(0x0048)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_4;                          // 0x0E80(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue_4;                     // 0x0E90(0x0010)()
-	class UGadgetPlateWindow*                     CallFunc_Array_Get_Item_28;                        // 0x0EA0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_ChangeZOrder_ReturnValue;                 // 0x0EA8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_EA9[0x7];                                      // 0x0EA9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UEquipmentGadgetIcon*                   CallFunc_GetGadgetIcon_ReturnValue;                // 0x0EB0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x0EB8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_EB9[0x7];                                      // 0x0EB9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMenuWorldSubsystem*                    CallFunc_GetWorldSubsystem_ReturnValue_2;          // 0x0EC0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMenuWorldSubsystem*                    CallFunc_GetWorldSubsystem_ReturnValue_3;          // 0x0EC8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x0ED0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_6;                    // 0x0ED1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Set_Gadget_Plate_Rank_Up_ID_EnableOpenWindow; // 0x0ED2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EUnionUIFadeDirection                         K2Node_CustomEvent_FadeDirection;                  // 0x0ED3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_SelectedPlayerControllerIndex_2; // 0x0ED4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetCategory                               K2Node_CustomEvent_SelectedGadgetCategory_2;       // 0x0ED8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetId                                     K2Node_CustomEvent_SelectedGadgetId_2;             // 0x0ED9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetState                                  K2Node_CustomEvent_SelectedGadgetState_2;          // 0x0EDA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_EDB[0x1];                                      // 0x0EDB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_CustomEvent_SelectedPlayerControllerIndex_1; // 0x0EDC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetCategory                               K2Node_CustomEvent_SelectedGadgetCategory_1;       // 0x0EE0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetId                                     K2Node_CustomEvent_SelectedGadgetId_1;             // 0x0EE1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetState                                  K2Node_CustomEvent_SelectedGadgetState_1;          // 0x0EE2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_EE3[0x5];                                      // 0x0EE3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue; // 0x0EE8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_1; // 0x0EF8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0F08(0x0010)()
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x0F18(0x0010)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_10;           // 0x0F28(0x0048)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_11;           // 0x0F70(0x0048)(HasGetValueTypeHash)
-	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_2; // 0x0FB8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class UGadgetPlateWindow*                     CallFunc_Array_Get_Item_29;                        // 0x0FC8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue_2;          // 0x0FD0(0x0010)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_12;           // 0x0FE0(0x0048)(HasGetValueTypeHash)
-	class UGadgetPlateWindow*                     CallFunc_Array_Get_Item_30;                        // 0x1028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UGadgetCustomWindow*                    CallFunc_Array_Get_Item_31;                        // 0x1030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_7;                    // 0x1038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1039[0x7];                                     // 0x1039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UGadgetCustomSubTypeBox*                CallFunc_GetCenterCategoryTypeBox_ReturnValue_2;   // 0x1040(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_8;                    // 0x1048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1049[0x7];                                     // 0x1049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	int64                                         CallFunc_Conv_IntToInt64_ReturnValue_6;            // 0x1050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_13;           // 0x1058(0x0048)(HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue_4;        // 0x10A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_5;                          // 0x10A8(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue_5;                     // 0x10B8(0x0010)()
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_9;             // 0x10C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_10CC[0x4];                                     // 0x10CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UGadgetDetailWindow*                    CallFunc_Array_Get_Item_32;                        // 0x10D0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_SelectedPlayerControllerIndex;  // 0x10D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetCategory                               K2Node_CustomEvent_SelectedGadgetCategory;         // 0x10DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetId                                     K2Node_CustomEvent_SelectedGadgetId;               // 0x10DD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetState                                  K2Node_CustomEvent_SelectedGadgetState;            // 0x10DE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_10DF[0x1];                                     // 0x10DF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_3; // 0x10E0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue_3;          // 0x10F0(0x0010)()
-	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_4; // 0x1100(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_14;           // 0x1110(0x0048)(HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue_4;          // 0x1158(0x0010)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_15;           // 0x1168(0x0048)(HasGetValueTypeHash)
-	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_5; // 0x11B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue_5;          // 0x11C0(0x0010)()
-	int64                                         CallFunc_Conv_IntToInt64_ReturnValue_7;            // 0x11D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_16;           // 0x11D8(0x0048)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_17;           // 0x1220(0x0048)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_6;                          // 0x1268(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue_6;                     // 0x1278(0x0010)()
-	EGadgetCustomize2SequenceSubState             Temp_byte_Variable_3;                              // 0x1288(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1289[0x7];                                     // 0x1289(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_18;           // 0x1290(0x0048)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_7;                          // 0x12D8(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue_7;                     // 0x12E8(0x0010)()
+	TDelegate<void(EDialogResult Result)>         K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EHintId                                       K2Node_CustomEvent_InHintId;                       // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0018(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                K2Node_CustomEvent_Object_1;                       // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_PlayerControllerIndex_1;        // 0x0038(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue_1;        // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGadgetPlateUIData                     CallFunc_GetSelectedGadgetPlateUIData_OutGadgetPlateUIData; // 0x0048(0x0028)()
+	struct FGadgetPlateUIData                     CallFunc_GetSelectedGadgetPlateUIData_OutGadgetPlateUIData_1; // 0x0070(0x0028)()
+	TArray<int32>                                 CallFunc_ConvertGadgetPlateUIDataToSlotStates_OutSlotStates; // 0x0098(0x0010)(ReferenceParm)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A9[0x3];                                       // 0x00A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x00AC(0x0004)()
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_AttachGadgetToPlate_ReturnValue;          // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C4[0x4];                                       // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00C8(0x0048)(HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0111(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0112(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_113[0x5];                                      // 0x0113(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UGadgetPlateWindow*                     CallFunc_Array_Get_Item;                           // 0x0118(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UGadgetPlateWindow*                     CallFunc_Array_Get_Item_1;                         // 0x0120(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_129[0x7];                                      // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UGadgetPlateWindow*                     CallFunc_Array_Get_Item_2;                         // 0x0130(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_1;                  // 0x0138(0x0004)()
+	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_2;                  // 0x013C(0x0004)()
+	class UObject*                                K2Node_CustomEvent_Object;                         // 0x0140(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_PlayerControllerIndex;          // 0x0148(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14C[0x4];                                      // 0x014C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue_1;            // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0158(0x0048)(HasGetValueTypeHash)
+	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_3;                  // 0x01A0(0x0004)()
+	uint8                                         Pad_1A4[0x4];                                      // 0x01A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x01A8(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x01B8(0x0010)()
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C9[0x7];                                      // 0x01C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCharaMachineParamWindow*               CallFunc_Array_Get_Item_3;                         // 0x01D0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_PlayAnim_ReturnValue;                     // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_PlayAnim_ReturnValue_1;                   // 0x01D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x01DA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1DB[0x1];                                      // 0x01DB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_CustomEvent_PlayerIndex_8;                  // 0x01DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetId                                     K2Node_CustomEvent_GadgetId_2;                     // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetCategory                               K2Node_CustomEvent_CategoryId;                     // 0x01E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetState                                  K2Node_CustomEvent_GadgetState_2;                  // 0x01E2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_Get_Item_4;                         // 0x01E3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E4[0x4];                                      // 0x01E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UGadgetCustomWindow*                    CallFunc_Array_Get_Item_5;                         // 0x01E8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UGadgetPlateWindow*                     CallFunc_Array_Get_Item_6;                         // 0x01F0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Get_Item_7;                         // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_1;         // 0x01FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1FD[0x3];                                      // 0x01FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_CustomEvent_PlayerIndex_9;                  // 0x0200(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetId                                     K2Node_CustomEvent_GadgetId_3;                     // 0x0204(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetCategory                               K2Node_CustomEvent_CategoryId_1;                   // 0x0205(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetState                                  K2Node_CustomEvent_GadgetState_3;                  // 0x0206(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_207[0x1];                                      // 0x0207(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class UGadgetCustomWindow*                    CallFunc_Array_Get_Item_8;                         // 0x0208(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UGadgetPlateWindow*                     CallFunc_Array_Get_Item_9;                         // 0x0210(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Get_Item_10;                        // 0x0218(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_2;         // 0x021C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21D[0x3];                                      // 0x021D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_CustomEvent_PlayerIndex_10;                 // 0x0220(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetId                                     K2Node_CustomEvent_GadgetId_4;                     // 0x0224(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetCategory                               K2Node_CustomEvent_CategoryId_2;                   // 0x0225(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetState                                  K2Node_CustomEvent_GadgetState_4;                  // 0x0226(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_227[0x1];                                      // 0x0227(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class UGadgetCustomWindow*                    CallFunc_Array_Get_Item_11;                        // 0x0228(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UGadgetPlateWindow*                     CallFunc_Array_Get_Item_12;                        // 0x0230(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Get_Item_13;                        // 0x0238(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_3;         // 0x023C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_23D[0x3];                                      // 0x023D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_CustomEvent_PlayerIndex_11;                 // 0x0240(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetId                                     K2Node_CustomEvent_GadgetId_5;                     // 0x0244(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetCategory                               K2Node_CustomEvent_CategoryId_3;                   // 0x0245(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetState                                  K2Node_CustomEvent_GadgetState_5;                  // 0x0246(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_247[0x1];                                      // 0x0247(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class UGadgetCustomWindow*                    CallFunc_Array_Get_Item_14;                        // 0x0248(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UGadgetPlateWindow*                     CallFunc_Array_Get_Item_15;                        // 0x0250(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Get_Item_16;                        // 0x0258(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_4;         // 0x025C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25D[0x3];                                      // 0x025D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0260(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0264(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_2;                    // 0x0268(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsUseRentalGadgetPlate_ReturnValue;       // 0x0269(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_26A[0x6];                                      // 0x026A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGadgetData                            CallFunc_GetGadgetData_OutGadgetData;              // 0x0270(0x00C0)()
+	bool                                          CallFunc_GetGadgetData_ReturnValue;                // 0x0330(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0331(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_332[0x6];                                      // 0x0332(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                CallFunc_LoadAsset_Blocking_ReturnValue;           // 0x0338(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             K2Node_DynamicCast_As_____2D;                      // 0x0340(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0348(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_349[0x7];                                      // 0x0349(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UGadgetDetailWindow*                    CallFunc_Array_Get_Item_17;                        // 0x0350(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FRewardDialogParameter                 K2Node_MakeStruct_RewardDialogParameter;           // 0x0358(0x0088)()
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x03E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3E1[0x3];                                      // 0x03E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_4;                  // 0x03E4(0x0004)()
+	TDelegate<void(EDialogResult Result)>         K2Node_CreateDelegate_OutputDelegate_2;            // 0x03E8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsMultiPlayerControl_ReturnValue;         // 0x03F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3F9[0x3];                                      // 0x03F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_CustomEvent_PlayerIndex_7;                  // 0x03FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetId                                     K2Node_CustomEvent_GadgetId_1;                     // 0x0400(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetState                                  K2Node_CustomEvent_GadgetState_1;                  // 0x0401(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x0402(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_3;                    // 0x0403(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetEnumeratorName_ReturnValue;            // 0x0404(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_40C[0x4];                                      // 0x040C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGadgetData                            CallFunc_GetGadgetData_OutGadgetData_1;            // 0x0410(0x00C0)()
+	bool                                          CallFunc_GetGadgetData_ReturnValue_1;              // 0x04D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4D1[0x7];                                      // 0x04D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_NameToText_ReturnValue;              // 0x04D8(0x0010)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_2;            // 0x04E8(0x0048)(HasGetValueTypeHash)
+	class UObject*                                CallFunc_LoadAsset_Blocking_ReturnValue_1;         // 0x0530(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGadgetData                            CallFunc_GetGadgetData_OutGadgetData_2;            // 0x0538(0x00C0)()
+	bool                                          CallFunc_GetGadgetData_ReturnValue_2;              // 0x05F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5F9[0x7];                                      // 0x05F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             K2Node_DynamicCast_As_____2D_1;                    // 0x0600(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0608(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_609[0x7];                                      // 0x0609(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRewardDialogParameter                 K2Node_MakeStruct_RewardDialogParameter_1;         // 0x0610(0x0088)()
+	class UObject*                                CallFunc_LoadAsset_Blocking_ReturnValue_2;         // 0x0698(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x06A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6A1[0x7];                                      // 0x06A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             K2Node_DynamicCast_As_____2D_2;                    // 0x06A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x06B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6B1[0x7];                                      // 0x06B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRewardDialogParameter                 K2Node_MakeStruct_RewardDialogParameter_2;         // 0x06B8(0x0088)()
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x0740(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_741[0x3];                                      // 0x0741(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_CustomEvent_PlayerIndex_6;                  // 0x0744(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UGadgetPlateWindow*                     CallFunc_Array_Get_Item_18;                        // 0x0748(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue_2;        // 0x0750(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_2;          // 0x0758(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0759(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_75A[0x2];                                      // 0x075A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_CustomEvent_PlayerIndex_5;                  // 0x075C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetId                                     K2Node_CustomEvent_GadgetId;                       // 0x0760(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetState                                  K2Node_CustomEvent_GadgetState;                    // 0x0761(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_762[0x2];                                      // 0x0762(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0764(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UGadgetDetailWindow*                    CallFunc_Array_Get_Item_19;                        // 0x0768(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UUnionUITransitionManager*              CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0770(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EUnionUIFadeDirection FadeDirection)> K2Node_CreateDelegate_OutputDelegate_3;     // 0x0778(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_4;            // 0x0788(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0798(0x0008)(NoDestructor, HasGetValueTypeHash)
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue_2;            // 0x07A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_AttachGadgetToPlate_ReturnValue_1;        // 0x07A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7AC[0x4];                                      // 0x07AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_3;            // 0x07B0(0x0048)(HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x07F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7F9[0x7];                                      // 0x07F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0800(0x0010)(ReferenceParm)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_3;                // 0x0810(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_811[0x7];                                      // 0x0811(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0818(0x0010)()
+	TDelegate<void(EDialogResult Result)>         K2Node_CreateDelegate_OutputDelegate_5;            // 0x0828(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EDialogResult                                 K2Node_CustomEvent_Result_1;                       // 0x0838(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_4;                    // 0x0839(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_83A[0x2];                                      // 0x083A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(EDialogResult Result)>         K2Node_CreateDelegate_OutputDelegate_6;            // 0x083C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EDialogResult                                 K2Node_CustomEvent_Result;                         // 0x084C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x084D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetId                                     CallFunc_Array_Get_Item_20;                        // 0x084E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_84F[0x1];                                      // 0x084F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGadgetData                            CallFunc_GetGadgetData_OutGadgetData_3;            // 0x0850(0x00C0)()
+	bool                                          CallFunc_GetGadgetData_ReturnValue_3;              // 0x0910(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_911[0x3];                                      // 0x0911(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_1;             // 0x0914(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetId                                     CallFunc_Array_Get_Item_21;                        // 0x0918(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_919[0x3];                                      // 0x0919(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable;                                 // 0x091C(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUnionUITransitionManager*              CallFunc_GetGameInstanceSubsystem_ReturnValue_1;   // 0x0920(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EUnionUIFadeDirection FadeDirection)> K2Node_CreateDelegate_OutputDelegate_7;     // 0x0928(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EDialogResult Result)>         K2Node_CreateDelegate_OutputDelegate_8;            // 0x0938(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_4;            // 0x0948(0x0048)(HasGetValueTypeHash)
+	class UGadgetCustomWindow*                    CallFunc_Array_Get_Item_22;                        // 0x0990(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_5;            // 0x0998(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_2;                          // 0x09E0(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue_2;                     // 0x09F0(0x0010)()
+	TDelegate<void(EDialogResult Result)>         K2Node_CreateDelegate_OutputDelegate_9;            // 0x0A00(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_PlayerIndex_4;                  // 0x0A10(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_SlotState_1;                    // 0x0A14(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_SlotIndex_1;                    // 0x0A18(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_PlayerIndex_3;                  // 0x0A1C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_SlotState;                      // 0x0A20(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_SlotIndex;                      // 0x0A24(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue_3;        // 0x0A28(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_PlayerIndex_2;                  // 0x0A30(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_PlayerIndex_1;                  // 0x0A34(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_3;          // 0x0A38(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A39[0x3];                                      // 0x0A39(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_CustomEvent_PlayerIndex;                    // 0x0A3C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UGadgetDetailWindow*                    CallFunc_Array_Get_Item_23;                        // 0x0A40(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UAppSequenceLogManagerSubsystem*        CallFunc_GetGameInstanceSubsystem_ReturnValue_2;   // 0x0A48(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EGadgetCustomize2SequenceSubState             Temp_byte_Variable;                                // 0x0A50(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A51[0x3];                                      // 0x0A51(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable_1;                               // 0x0A54(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_2;                               // 0x0A58(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A5C[0x4];                                      // 0x0A5C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_DonpaTicketApp_C*                  CallFunc_Create_ReturnValue;                       // 0x0A60(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_1;            // 0x0A68(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A69[0x7];                                      // 0x0A69(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UGadgetPlateWindow*                     CallFunc_Array_Get_Item_24;                        // 0x0A70(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_2;             // 0x0A78(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_2;            // 0x0A7C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A7D[0x3];                                      // 0x0A7D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_3;             // 0x0A80(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A84[0x4];                                      // 0x0A84(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMenuWorldSubsystem*                    CallFunc_GetWorldSubsystem_ReturnValue;            // 0x0A88(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0A90(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A91[0x3];                                      // 0x0A91(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0A94(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0A98(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A99[0x7];                                      // 0x0A99(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMenuWorldSubsystem*                    CallFunc_GetWorldSubsystem_ReturnValue_1;          // 0x0AA0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UGadgetCustomWindow*                    CallFunc_Array_Get_Item_25;                        // 0x0AA8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0AB0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_AB1[0x7];                                      // 0x0AB1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_GadgetCustom_Window_C*             K2Node_DynamicCast_AsWBP_Gadget_Custom_Window;     // 0x0AB8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0AC0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetCustomize2SequenceSubState             Temp_byte_Variable_1;                              // 0x0AC1(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_AC2[0x6];                                      // 0x0AC2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UGadgetCustomSubTypeBox*                CallFunc_GetCenterCategoryTypeBox_ReturnValue;     // 0x0AC8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EGadgetCustomize2SequenceSubState             Temp_byte_Variable_2;                              // 0x0AD0(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_AD1[0x7];                                      // 0x0AD1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_DonpaTicketApp_C*                  CallFunc_Create_ReturnValue_1;                     // 0x0AD8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_DonpaTicketApp_C*                  CallFunc_Create_ReturnValue_2;                     // 0x0AE0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UGadgetCustomWindow*                    CallFunc_Array_Get_Item_26;                        // 0x0AE8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0AF0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_AF4[0x4];                                      // 0x0AF4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UGadgetCustomSubTypeBox*                CallFunc_GetCenterCategoryTypeBox_ReturnValue_1;   // 0x0AF8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_3;                // 0x0B00(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x0B01(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetId                                     CallFunc_GetCenterGadgetId_ReturnValue;            // 0x0B02(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_3;            // 0x0B03(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_4;             // 0x0B04(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_5;             // 0x0B08(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_4;            // 0x0B0C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B0D[0x3];                                      // 0x0B0D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UGadgetPlateWindow*                     CallFunc_Array_Get_Item_27;                        // 0x0B10(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetEnumeratorName_ReturnValue_1;          // 0x0B18(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_NameToText_ReturnValue_1;            // 0x0B20(0x0010)()
+	bool                                          Temp_bool_Variable;                                // 0x0B30(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B31[0x7];                                      // 0x0B31(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_6;            // 0x0B38(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_3;                          // 0x0B80(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue_3;                     // 0x0B90(0x0010)()
+	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_5;                  // 0x0BA0(0x0004)()
+	int32                                         CallFunc_GetGadgetSlotStateLocked_ReturnValue;     // 0x0BA4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x0BA8(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_4;          // 0x0BA9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_4;                // 0x0BAA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_BAB[0x1];                                      // 0x0BAB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_6;                  // 0x0BAC(0x0004)()
+	EUnionUIFadeDirection                         K2Node_CustomEvent_FadeDirection_1;                // 0x0BB0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsUseRentalGadgetPlate_ReturnValue_1;     // 0x0BB1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsFestaSpecialRuleContinuous_ReturnValue; // 0x0BB2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_5;                // 0x0BB3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_6;                // 0x0BB4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_BB5[0x3];                                      // 0x0BB5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_CustomEvent_InPlayerIndex;                  // 0x0BB8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_InPresetNum;                    // 0x0BBC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue_3;            // 0x0BC0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_7;            // 0x0BC8(0x0048)(HasGetValueTypeHash)
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue_4;            // 0x0C10(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_8;            // 0x0C18(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_4;                          // 0x0C60(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue_4;                     // 0x0C70(0x0010)()
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_5;            // 0x0C80(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C81[0x3];                                      // 0x0C81(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_6;             // 0x0C84(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UGadgetPlateWindow*                     CallFunc_Array_Get_Item_28;                        // 0x0C88(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USaveDataManageSubsystem*               CallFunc_GetGameInstanceSubsystem_ReturnValue_3;   // 0x0C90(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UEquipmentGadgetIcon*                   CallFunc_GetGadgetIcon_ReturnValue;                // 0x0C98(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x0CA0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetCustomize2SequenceSubState             Temp_byte_Variable_3;                              // 0x0CA1(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_CA2[0x6];                                      // 0x0CA2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Popup_Window_Hint_C*               CallFunc_Create_ReturnValue_3;                     // 0x0CA8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ChangeZOrder_ReturnValue;                 // 0x0CB0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_CB1[0x7];                                      // 0x0CB1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMenuWorldSubsystem*                    CallFunc_GetWorldSubsystem_ReturnValue_2;          // 0x0CB8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_6;            // 0x0CC0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_6;                    // 0x0CC1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_CC2[0x2];                                      // 0x0CC2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_7;             // 0x0CC4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Set_Gadget_Plate_Rank_Up_ID_EnableOpenWindow; // 0x0CC8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUnionUIFadeDirection                         K2Node_CustomEvent_FadeDirection;                  // 0x0CC9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_CCA[0x2];                                      // 0x0CCA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_CustomEvent_SelectedPlayerControllerIndex_2; // 0x0CCC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetCategory                               K2Node_CustomEvent_SelectedGadgetCategory_2;       // 0x0CD0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetId                                     K2Node_CustomEvent_SelectedGadgetId_2;             // 0x0CD1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetState                                  K2Node_CustomEvent_SelectedGadgetState_2;          // 0x0CD2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_CD3[0x1];                                      // 0x0CD3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_8;             // 0x0CD4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UGadgetDetailWindow*                    CallFunc_Array_Get_Item_29;                        // 0x0CD8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_SelectedPlayerControllerIndex_1; // 0x0CE0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetCategory                               K2Node_CustomEvent_SelectedGadgetCategory_1;       // 0x0CE4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetId                                     K2Node_CustomEvent_SelectedGadgetId_1;             // 0x0CE5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetState                                  K2Node_CustomEvent_SelectedGadgetState_1;          // 0x0CE6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_CE7[0x1];                                      // 0x0CE7(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue; // 0x0CE8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_1; // 0x0CF8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0D08(0x0010)()
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x0D18(0x0010)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_9;            // 0x0D28(0x0048)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_10;           // 0x0D70(0x0048)(HasGetValueTypeHash)
+	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_2; // 0x0DB8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class UGadgetPlateWindow*                     CallFunc_Array_Get_Item_30;                        // 0x0DC8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue_2;          // 0x0DD0(0x0010)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_11;           // 0x0DE0(0x0048)(HasGetValueTypeHash)
+	class UGadgetPlateWindow*                     CallFunc_Array_Get_Item_31;                        // 0x0E28(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UGadgetCustomWindow*                    CallFunc_Array_Get_Item_32;                        // 0x0E30(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_7;                    // 0x0E38(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E39[0x7];                                      // 0x0E39(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UGadgetCustomSubTypeBox*                CallFunc_GetCenterCategoryTypeBox_ReturnValue_2;   // 0x0E40(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_8;                    // 0x0E48(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E49[0x7];                                      // 0x0E49(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue_5;            // 0x0E50(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_12;           // 0x0E58(0x0048)(HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue_4;        // 0x0EA0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_5;                          // 0x0EA8(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue_5;                     // 0x0EB8(0x0010)()
+	int32                                         K2Node_CustomEvent_SelectedPlayerControllerIndex;  // 0x0EC8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetCategory                               K2Node_CustomEvent_SelectedGadgetCategory;         // 0x0ECC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetId                                     K2Node_CustomEvent_SelectedGadgetId;               // 0x0ECD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetState                                  K2Node_CustomEvent_SelectedGadgetState;            // 0x0ECE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_ECF[0x1];                                      // 0x0ECF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_3; // 0x0ED0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue_3;          // 0x0EE0(0x0010)()
+	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_4; // 0x0EF0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_13;           // 0x0F00(0x0048)(HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue_4;          // 0x0F48(0x0010)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_14;           // 0x0F58(0x0048)(HasGetValueTypeHash)
+	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_5; // 0x0FA0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue_5;          // 0x0FB0(0x0010)()
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue_6;            // 0x0FC0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_15;           // 0x0FC8(0x0048)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_16;           // 0x1010(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_6;                          // 0x1058(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue_6;                     // 0x1068(0x0010)()
 };
-static_assert(alignof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState) == 0x000008, "Wrong alignment on BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState");
-static_assert(sizeof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState) == 0x0012F8, "Wrong size on BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, EntryPoint) == 0x000000, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CreateDelegate_OutputDelegate) == 0x00000C, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_PlayerIndex_8) == 0x00001C, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_PlayerIndex_8' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_GadgetId_2) == 0x000020, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_GadgetId_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_CategoryId) == 0x000021, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_CategoryId' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_GadgetState_2) == 0x000022, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_GadgetState_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Get_Item) == 0x000028, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Get_Item_1) == 0x000030, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Get_Item_2) == 0x000038, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_IsValidIndex_ReturnValue) == 0x00003C, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_InHintId) == 0x00003D, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_InHintId' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CreateDelegate_OutputDelegate_1) == 0x000040, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetPlayerController_ReturnValue) == 0x000050, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_PlayerIndex_9) == 0x000058, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_PlayerIndex_9' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_GadgetId_3) == 0x00005C, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_GadgetId_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_CategoryId_1) == 0x00005D, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_CategoryId_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_GadgetState_3) == 0x00005E, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_GadgetState_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_PlayerIndex_10) == 0x000060, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_PlayerIndex_10' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_GadgetId_4) == 0x000064, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_GadgetId_4' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_CategoryId_2) == 0x000065, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_CategoryId_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_GadgetState_4) == 0x000066, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_GadgetState_4' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Get_Item_3) == 0x000068, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Get_Item_4) == 0x000070, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Get_Item_5) == 0x000078, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Get_Item_5' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_IsValidIndex_ReturnValue_1) == 0x00007C, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_IsValidIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Get_Item_6) == 0x000080, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Get_Item_6' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Get_Item_7) == 0x000088, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Get_Item_7' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Get_Item_8) == 0x000090, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Get_Item_8' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_IsValidIndex_ReturnValue_2) == 0x000094, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_IsValidIndex_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_PlayerIndex_11) == 0x000098, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_PlayerIndex_11' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_GadgetId_5) == 0x00009C, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_GadgetId_5' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_CategoryId_3) == 0x00009D, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_CategoryId_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_GadgetState_5) == 0x00009E, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_GadgetState_5' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Get_Item_9) == 0x0000A0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Get_Item_9' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Get_Item_10) == 0x0000A8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Get_Item_10' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Get_Item_11) == 0x0000B0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Get_Item_11' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_IsValidIndex_ReturnValue_3) == 0x0000B4, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_IsValidIndex_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_MakeStruct_FormatArgumentData) == 0x0000B8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_Object_1) == 0x000100, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_Object_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_PlayerControllerIndex_1) == 0x000108, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_PlayerControllerIndex_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetPlayerController_ReturnValue_1) == 0x000110, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetSelectedGadgetPlateUIData_OutGadgetPlateUIData) == 0x000118, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetSelectedGadgetPlateUIData_OutGadgetPlateUIData' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetSelectedGadgetPlateUIData_OutGadgetPlateUIData_1) == 0x000140, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetSelectedGadgetPlateUIData_OutGadgetPlateUIData_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_ConvertGadgetPlateUIDataToSlotStates_OutSlotStates) == 0x000168, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_ConvertGadgetPlateUIDataToSlotStates_OutSlotStates' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_SwitchEnum_CmpSuccess) == 0x000178, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_SoundPlay_ReturnValue) == 0x00017C, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_SoundPlay_ReturnValue_1) == 0x000180, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000184, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Less_IntInt_ReturnValue) == 0x000185, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_SoundPlay_ReturnValue_2) == 0x000188, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_SoundPlay_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000190, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_AttachGadgetToPlate_ReturnValue) == 0x000198, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_AttachGadgetToPlate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_MakeStruct_FormatArgumentData_1) == 0x0001A0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Less_IntInt_ReturnValue_1) == 0x0001E8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Not_PreBool_ReturnValue) == 0x0001E9, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Get_Item_12) == 0x0001F0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Get_Item_12' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_SwitchEnum_CmpSuccess_1) == 0x0001F8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Get_Item_13) == 0x000200, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Get_Item_13' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_IsMultiPlayerControl_ReturnValue) == 0x000208, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_IsMultiPlayerControl_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Not_PreBool_ReturnValue_1) == 0x000209, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Get_Item_14) == 0x000210, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Get_Item_14' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000218, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_BooleanAND_ReturnValue) == 0x000219, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_IsMultiPlayerControl_ReturnValue_1) == 0x00021A, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_IsMultiPlayerControl_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_SoundPlay_ReturnValue_3) == 0x00021C, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_SoundPlay_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Conv_BoolToText_ReturnValue) == 0x000220, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Conv_BoolToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Not_PreBool_ReturnValue_2) == 0x000230, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_MakeStruct_FormatArgumentData_2) == 0x000238, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_SoundPlay_ReturnValue_4) == 0x000280, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_SoundPlay_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_Object) == 0x000288, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_Object' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_PlayerControllerIndex) == 0x000290, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_PlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Conv_IntToInt64_ReturnValue_1) == 0x000298, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Conv_IntToInt64_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_MakeStruct_FormatArgumentData_3) == 0x0002A0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_MakeStruct_FormatArgumentData_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_SoundPlay_ReturnValue_5) == 0x0002E8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_SoundPlay_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_MakeArray_Array) == 0x0002F0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Format_ReturnValue) == 0x000300, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetGadgetData_OutGadgetData) == 0x000310, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetGadgetData_OutGadgetData' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetGadgetData_ReturnValue) == 0x0003D0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetGadgetData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, Temp_int_Array_Index_Variable) == 0x0003D4, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0003D8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x0003E0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_DynamicCast_As_____2D) == 0x0003E8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_DynamicCast_bSuccess) == 0x0003F0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_MakeStruct_RewardDialogParameter) == 0x0003F8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_MakeStruct_RewardDialogParameter' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Get_Item_15) == 0x000480, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Get_Item_15' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetGadgetData_OutGadgetData_1) == 0x000488, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetGadgetData_OutGadgetData_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetGadgetData_ReturnValue_1) == 0x000548, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetGadgetData_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_PlayAnim_ReturnValue) == 0x000549, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_PlayAnim_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_PlayAnim_ReturnValue_1) == 0x00054A, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_PlayAnim_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_LoadAsset_Blocking_ReturnValue_1) == 0x000550, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_LoadAsset_Blocking_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_IsValidIndex_ReturnValue_4) == 0x000558, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_IsValidIndex_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_DynamicCast_As_____2D_1) == 0x000560, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_DynamicCast_As_____2D_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_DynamicCast_bSuccess_1) == 0x000568, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_MakeStruct_RewardDialogParameter_1) == 0x000570, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_MakeStruct_RewardDialogParameter_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Conv_IntToInt64_ReturnValue_2) == 0x0005F8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Conv_IntToInt64_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000600, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_MakeStruct_FormatArgumentData_4) == 0x000608, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_MakeStruct_FormatArgumentData_4' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_BooleanAND_ReturnValue_1) == 0x000650, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_MakeArray_Array_1) == 0x000658, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Format_ReturnValue_1) == 0x000668, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_SwitchEnum_CmpSuccess_2) == 0x000678, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_SwitchEnum_CmpSuccess_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Get_Item_16) == 0x000679, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Get_Item_16' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_IsUseRentalGadgetPlate_ReturnValue) == 0x00067A, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_IsUseRentalGadgetPlate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CreateDelegate_OutputDelegate_2) == 0x00067C, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Not_PreBool_ReturnValue_3) == 0x00068C, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Not_PreBool_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Get_Item_17) == 0x000690, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Get_Item_17' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000698, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_IsValid_ReturnValue) == 0x0006A0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CreateDelegate_OutputDelegate_3) == 0x0006A4, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x0006B8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CreateDelegate_OutputDelegate_4) == 0x0006C0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CreateDelegate_OutputDelegate_5) == 0x0006D0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_PlayerIndex_7) == 0x0006E0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_PlayerIndex_7' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_GadgetId_1) == 0x0006E4, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_GadgetId_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_GadgetState_1) == 0x0006E5, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_GadgetState_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_PlayerIndex_6) == 0x0006E8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_PlayerIndex_6' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_SwitchEnum_CmpSuccess_3) == 0x0006EC, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_SwitchEnum_CmpSuccess_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetPlayerController_ReturnValue_2) == 0x0006F0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetPlayerController_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetEnumeratorName_ReturnValue) == 0x0006F8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetGadgetData_OutGadgetData_2) == 0x000700, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetGadgetData_OutGadgetData_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetGadgetData_ReturnValue_2) == 0x0007C0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetGadgetData_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Conv_NameToText_ReturnValue) == 0x0007C8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Conv_NameToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_MakeStruct_FormatArgumentData_5) == 0x0007D8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_MakeStruct_FormatArgumentData_5' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_LoadAsset_Blocking_ReturnValue_2) == 0x000820, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_LoadAsset_Blocking_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetGadgetData_OutGadgetData_3) == 0x000828, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetGadgetData_OutGadgetData_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetGadgetData_ReturnValue_3) == 0x0008E8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetGadgetData_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_DynamicCast_As_____2D_2) == 0x0008F0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_DynamicCast_As_____2D_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_DynamicCast_bSuccess_2) == 0x0008F8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_MakeStruct_RewardDialogParameter_2) == 0x000900, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_MakeStruct_RewardDialogParameter_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_LoadAsset_Blocking_ReturnValue_3) == 0x000988, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_LoadAsset_Blocking_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_EqualEqual_IntInt_ReturnValue_2) == 0x000990, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_EqualEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_DynamicCast_As_____2D_3) == 0x000998, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_DynamicCast_As_____2D_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_DynamicCast_bSuccess_3) == 0x0009A0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_MakeStruct_RewardDialogParameter_3) == 0x0009A8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_MakeStruct_RewardDialogParameter_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_EqualEqual_IntInt_ReturnValue_3) == 0x000A30, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_EqualEqual_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Get_Item_18) == 0x000A38, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Get_Item_18' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_PlayerIndex_5) == 0x000A40, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_PlayerIndex_5' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_GadgetId) == 0x000A44, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_GadgetId' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_GadgetState) == 0x000A45, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_GadgetState' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000A48, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Get_Item_19) == 0x000A50, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Get_Item_19' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_MakeLiteralByte_ReturnValue) == 0x000A58, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x000A5C, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, Temp_int_Variable) == 0x000A60, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Conv_IntToInt64_ReturnValue_3) == 0x000A68, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Conv_IntToInt64_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_AttachGadgetToPlate_ReturnValue_1) == 0x000A70, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_AttachGadgetToPlate_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_MakeStruct_FormatArgumentData_6) == 0x000A78, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_MakeStruct_FormatArgumentData_6' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Less_IntInt_ReturnValue_2) == 0x000AC0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_MakeArray_Array_2) == 0x000AC8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_MakeArray_Array_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Not_PreBool_ReturnValue_4) == 0x000AD8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Not_PreBool_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Format_ReturnValue_2) == 0x000AE0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Format_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CreateDelegate_OutputDelegate_6) == 0x000AF0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_Result_1) == 0x000B00, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_Result_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_SwitchEnum_CmpSuccess_4) == 0x000B01, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_SwitchEnum_CmpSuccess_4' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_MakeLiteralByte_ReturnValue_1) == 0x000B02, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_MakeLiteralByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Conv_ByteToInt_ReturnValue_2) == 0x000B04, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Conv_ByteToInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CreateDelegate_OutputDelegate_7) == 0x000B08, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_Result) == 0x000B18, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_Result' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Get_Item_20) == 0x000B19, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Get_Item_20' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CreateDelegate_OutputDelegate_8) == 0x000B1C, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CreateDelegate_OutputDelegate_8' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetGadgetData_OutGadgetData_4) == 0x000B30, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetGadgetData_OutGadgetData_4' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetGadgetData_ReturnValue_4) == 0x000BF0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetGadgetData_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Get_Item_21) == 0x000BF1, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Get_Item_21' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x000BF8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CreateDelegate_OutputDelegate_9) == 0x000C00, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CreateDelegate_OutputDelegate_9' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_MakeLiteralByte_ReturnValue_2) == 0x000C10, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_MakeLiteralByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetGameInstanceSubsystem_ReturnValue_2) == 0x000C18, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetGameInstanceSubsystem_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Conv_ByteToInt_ReturnValue_3) == 0x000C20, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Conv_ByteToInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, Temp_byte_Variable) == 0x000C24, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, Temp_int_Variable_1) == 0x000C28, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, Temp_int_Variable_2) == 0x000C2C, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Create_ReturnValue) == 0x000C30, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Get_Item_22) == 0x000C38, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Get_Item_22' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_PlayerIndex_4) == 0x000C40, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_PlayerIndex_4' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_SlotState_1) == 0x000C44, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_SlotState_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_SlotIndex_1) == 0x000C48, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_SlotIndex_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_PlayerIndex_3) == 0x000C4C, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_PlayerIndex_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_SlotState) == 0x000C50, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_SlotState' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_SlotIndex) == 0x000C54, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_SlotIndex' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_PlayerIndex_2) == 0x000C58, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_PlayerIndex_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_EqualEqual_IntInt_ReturnValue_4) == 0x000C5C, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_EqualEqual_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetPlayerController_ReturnValue_3) == 0x000C60, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetPlayerController_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_PlayerIndex_1) == 0x000C68, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_PlayerIndex_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_PlayerIndex) == 0x000C6C, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_PlayerIndex' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Get_Item_23) == 0x000C70, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Get_Item_23' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_MakeLiteralByte_ReturnValue_3) == 0x000C78, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_MakeLiteralByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_MakeLiteralByte_ReturnValue_4) == 0x000C79, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_MakeLiteralByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Conv_ByteToInt_ReturnValue_4) == 0x000C7C, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Conv_ByteToInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Conv_ByteToInt_ReturnValue_5) == 0x000C80, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Conv_ByteToInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000C88, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_IsValid_ReturnValue_1) == 0x000C90, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetWorldSubsystem_ReturnValue_1) == 0x000C98, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetWorldSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, Temp_byte_Variable_1) == 0x000CA0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_IsValid_ReturnValue_2) == 0x000CA1, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, Temp_byte_Variable_2) == 0x000CA2, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Get_Item_24) == 0x000CA8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Get_Item_24' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Create_ReturnValue_1) == 0x000CB0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Create_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Create_ReturnValue_2) == 0x000CB8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Create_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Get_Item_25) == 0x000CC0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Get_Item_25' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_MakeLiteralByte_ReturnValue_5) == 0x000CC8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_MakeLiteralByte_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Conv_ByteToInt_ReturnValue_6) == 0x000CCC, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Conv_ByteToInt_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_DynamicCast_AsWBP_Gadget_Custom_Window) == 0x000CD0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_DynamicCast_AsWBP_Gadget_Custom_Window' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_DynamicCast_bSuccess_4) == 0x000CD8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetCenterCategoryTypeBox_ReturnValue) == 0x000CE0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetCenterCategoryTypeBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Create_ReturnValue_3) == 0x000CE8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Create_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_MakeLiteralByte_ReturnValue_6) == 0x000CF0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_MakeLiteralByte_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetEnumeratorName_ReturnValue_1) == 0x000CF4, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetEnumeratorName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Conv_NameToText_ReturnValue_1) == 0x000D00, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Conv_NameToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_MakeStruct_FormatArgumentData_7) == 0x000D10, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_MakeStruct_FormatArgumentData_7' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Get_Item_26) == 0x000D58, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Get_Item_26' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_MakeArray_Array_3) == 0x000D60, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_MakeArray_Array_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetCenterCategoryTypeBox_ReturnValue_1) == 0x000D70, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetCenterCategoryTypeBox_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Format_ReturnValue_3) == 0x000D78, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Format_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_IsValid_ReturnValue_3) == 0x000D88, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetCenterGadgetId_ReturnValue) == 0x000D89, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetCenterGadgetId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Length_ReturnValue) == 0x000D8C, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Conv_ByteToInt_ReturnValue_7) == 0x000D90, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Conv_ByteToInt_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Less_IntInt_ReturnValue_3) == 0x000D94, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, Temp_bool_Variable) == 0x000D95, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, Temp_bool_Variable_1) == 0x000D96, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_SoundPlay_ReturnValue_6) == 0x000D98, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_SoundPlay_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Get_Item_27) == 0x000DA0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Get_Item_27' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetGadgetSlotStateLocked_ReturnValue) == 0x000DA8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetGadgetSlotStateLocked_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_EqualEqual_IntInt_ReturnValue_5) == 0x000DAC, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_EqualEqual_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_MakeLiteralByte_ReturnValue_7) == 0x000DAD, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_MakeLiteralByte_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Not_PreBool_ReturnValue_5) == 0x000DAE, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Not_PreBool_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Conv_ByteToInt_ReturnValue_8) == 0x000DB0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Conv_ByteToInt_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetGameInstanceSubsystem_ReturnValue_3) == 0x000DB8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetGameInstanceSubsystem_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Create_ReturnValue_4) == 0x000DC0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Create_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_SoundPlay_ReturnValue_7) == 0x000DC8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_SoundPlay_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_FadeDirection_1) == 0x000DCC, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_FadeDirection_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_IsUseRentalGadgetPlate_ReturnValue_1) == 0x000DCD, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_IsUseRentalGadgetPlate_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_IsFestaSpecialRuleContinuous_ReturnValue) == 0x000DCE, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_IsFestaSpecialRuleContinuous_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Not_PreBool_ReturnValue_6) == 0x000DCF, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Not_PreBool_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Not_PreBool_ReturnValue_7) == 0x000DD0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Not_PreBool_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_InPlayerIndex) == 0x000DD4, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_InPlayerIndex' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_InPresetNum) == 0x000DD8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_InPresetNum' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Conv_IntToInt64_ReturnValue_4) == 0x000DE0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Conv_IntToInt64_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_MakeStruct_FormatArgumentData_8) == 0x000DE8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_MakeStruct_FormatArgumentData_8' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Conv_IntToInt64_ReturnValue_5) == 0x000E30, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Conv_IntToInt64_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_MakeStruct_FormatArgumentData_9) == 0x000E38, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_MakeStruct_FormatArgumentData_9' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_MakeArray_Array_4) == 0x000E80, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_MakeArray_Array_4' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Format_ReturnValue_4) == 0x000E90, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Format_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Get_Item_28) == 0x000EA0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Get_Item_28' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_ChangeZOrder_ReturnValue) == 0x000EA8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_ChangeZOrder_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetGadgetIcon_ReturnValue) == 0x000EB0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetGadgetIcon_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_IsValid_ReturnValue_4) == 0x000EB8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetWorldSubsystem_ReturnValue_2) == 0x000EC0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetWorldSubsystem_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetWorldSubsystem_ReturnValue_3) == 0x000EC8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetWorldSubsystem_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_IsValid_ReturnValue_5) == 0x000ED0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_IsValid_ReturnValue_6) == 0x000ED1, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Set_Gadget_Plate_Rank_Up_ID_EnableOpenWindow) == 0x000ED2, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Set_Gadget_Plate_Rank_Up_ID_EnableOpenWindow' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_FadeDirection) == 0x000ED3, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_FadeDirection' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_SelectedPlayerControllerIndex_2) == 0x000ED4, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_SelectedPlayerControllerIndex_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_SelectedGadgetCategory_2) == 0x000ED8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_SelectedGadgetCategory_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_SelectedGadgetId_2) == 0x000ED9, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_SelectedGadgetId_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_SelectedGadgetState_2) == 0x000EDA, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_SelectedGadgetState_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_SelectedPlayerControllerIndex_1) == 0x000EDC, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_SelectedPlayerControllerIndex_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_SelectedGadgetCategory_1) == 0x000EE0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_SelectedGadgetCategory_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_SelectedGadgetId_1) == 0x000EE1, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_SelectedGadgetId_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_SelectedGadgetState_1) == 0x000EE2, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_SelectedGadgetState_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue) == 0x000EE8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_1) == 0x000EF8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Conv_StringToText_ReturnValue) == 0x000F08, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Conv_StringToText_ReturnValue_1) == 0x000F18, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_MakeStruct_FormatArgumentData_10) == 0x000F28, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_MakeStruct_FormatArgumentData_10' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_MakeStruct_FormatArgumentData_11) == 0x000F70, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_MakeStruct_FormatArgumentData_11' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_2) == 0x000FB8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Get_Item_29) == 0x000FC8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Get_Item_29' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Conv_StringToText_ReturnValue_2) == 0x000FD0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Conv_StringToText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_MakeStruct_FormatArgumentData_12) == 0x000FE0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_MakeStruct_FormatArgumentData_12' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Get_Item_30) == 0x001028, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Get_Item_30' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Get_Item_31) == 0x001030, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Get_Item_31' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_IsValid_ReturnValue_7) == 0x001038, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_IsValid_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetCenterCategoryTypeBox_ReturnValue_2) == 0x001040, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetCenterCategoryTypeBox_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_IsValid_ReturnValue_8) == 0x001048, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_IsValid_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Conv_IntToInt64_ReturnValue_6) == 0x001050, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Conv_IntToInt64_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_MakeStruct_FormatArgumentData_13) == 0x001058, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_MakeStruct_FormatArgumentData_13' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetPlayerController_ReturnValue_4) == 0x0010A0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetPlayerController_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_MakeArray_Array_5) == 0x0010A8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_MakeArray_Array_5' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Format_ReturnValue_5) == 0x0010B8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Format_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Conv_ByteToInt_ReturnValue_9) == 0x0010C8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Conv_ByteToInt_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Array_Get_Item_32) == 0x0010D0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Array_Get_Item_32' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_SelectedPlayerControllerIndex) == 0x0010D8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_SelectedPlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_SelectedGadgetCategory) == 0x0010DC, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_SelectedGadgetCategory' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_SelectedGadgetId) == 0x0010DD, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_SelectedGadgetId' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_CustomEvent_SelectedGadgetState) == 0x0010DE, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_CustomEvent_SelectedGadgetState' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_3) == 0x0010E0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Conv_StringToText_ReturnValue_3) == 0x0010F0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Conv_StringToText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_4) == 0x001100, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_MakeStruct_FormatArgumentData_14) == 0x001110, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_MakeStruct_FormatArgumentData_14' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Conv_StringToText_ReturnValue_4) == 0x001158, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Conv_StringToText_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_MakeStruct_FormatArgumentData_15) == 0x001168, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_MakeStruct_FormatArgumentData_15' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_5) == 0x0011B0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Conv_StringToText_ReturnValue_5) == 0x0011C0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Conv_StringToText_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Conv_IntToInt64_ReturnValue_7) == 0x0011D0, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Conv_IntToInt64_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_MakeStruct_FormatArgumentData_16) == 0x0011D8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_MakeStruct_FormatArgumentData_16' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_MakeStruct_FormatArgumentData_17) == 0x001220, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_MakeStruct_FormatArgumentData_17' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_MakeArray_Array_6) == 0x001268, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_MakeArray_Array_6' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Format_ReturnValue_6) == 0x001278, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Format_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, Temp_byte_Variable_3) == 0x001288, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_MakeStruct_FormatArgumentData_18) == 0x001290, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_MakeStruct_FormatArgumentData_18' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, K2Node_MakeArray_Array_7) == 0x0012D8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::K2Node_MakeArray_Array_7' has a wrong offset!");
-static_assert(offsetof(BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState, CallFunc_Format_ReturnValue_7) == 0x0012E8, "Member 'BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState::CallFunc_Format_ReturnValue_7' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_GadgetCustomize2SelectState_C_ExecuteUbergraph_BPC_GadgetCustomize2SelectState;
 
 }
 

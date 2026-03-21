@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
+#include "UnionSystem_structs.hpp"
 
 
 namespace SDK::Params
@@ -39,21 +39,7 @@ public:
 	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate;              // 0x0054(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ResultRate_Sub_RankIcon_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankIcon) == 0x000008, "Wrong alignment on WBP_ResultRate_Sub_RankIcon_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankIcon");
-static_assert(sizeof(WBP_ResultRate_Sub_RankIcon_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankIcon) == 0x000068, "Wrong size on WBP_ResultRate_Sub_RankIcon_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankIcon");
-static_assert(offsetof(WBP_ResultRate_Sub_RankIcon_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankIcon, EntryPoint) == 0x000000, "Member 'WBP_ResultRate_Sub_RankIcon_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankIcon::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankIcon_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankIcon, K2Node_Event_InRateRank_1) == 0x000004, "Member 'WBP_ResultRate_Sub_RankIcon_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankIcon::K2Node_Event_InRateRank_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankIcon_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankIcon, K2Node_Event_InRateRank) == 0x000005, "Member 'WBP_ResultRate_Sub_RankIcon_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankIcon::K2Node_Event_InRateRank' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankIcon_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankIcon, K2Node_SwitchEnum_CmpSuccess) == 0x000006, "Member 'WBP_ResultRate_Sub_RankIcon_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankIcon::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankIcon_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankIcon, Temp_object_Variable) == 0x000008, "Member 'WBP_ResultRate_Sub_RankIcon_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankIcon::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankIcon_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankIcon, K2Node_CustomEvent_Loaded) == 0x000010, "Member 'WBP_ResultRate_Sub_RankIcon_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankIcon::K2Node_CustomEvent_Loaded' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankIcon_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankIcon, K2Node_DynamicCast_As_____2D) == 0x000018, "Member 'WBP_ResultRate_Sub_RankIcon_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankIcon::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankIcon_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankIcon, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'WBP_ResultRate_Sub_RankIcon_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankIcon::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankIcon_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankIcon, K2Node_Event_GradeValue) == 0x000021, "Member 'WBP_ResultRate_Sub_RankIcon_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankIcon::K2Node_Event_GradeValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankIcon_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankIcon, K2Node_Event_IsDesignTime) == 0x000022, "Member 'WBP_ResultRate_Sub_RankIcon_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankIcon::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankIcon_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankIcon, CallFunc_Map_Find_Value) == 0x000028, "Member 'WBP_ResultRate_Sub_RankIcon_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankIcon::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankIcon_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankIcon, CallFunc_Map_Find_ReturnValue) == 0x000050, "Member 'WBP_ResultRate_Sub_RankIcon_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankIcon::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankIcon_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankIcon, K2Node_CreateDelegate_OutputDelegate) == 0x000054, "Member 'WBP_ResultRate_Sub_RankIcon_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankIcon::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ResultRate_Sub_RankIcon_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankIcon;
 
 // Function WBP_ResultRate_Sub_RankIcon.WBP_ResultRate_Sub_RankIcon_C.OnLoaded_C50783C54ECCC47D92BB0CA0355D1832
 // 0x0008 (0x0008 - 0x0000)
@@ -62,9 +48,7 @@ struct WBP_ResultRate_Sub_RankIcon_C_OnLoaded_C50783C54ECCC47D92BB0CA0355D1832 f
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ResultRate_Sub_RankIcon_C_OnLoaded_C50783C54ECCC47D92BB0CA0355D1832) == 0x000008, "Wrong alignment on WBP_ResultRate_Sub_RankIcon_C_OnLoaded_C50783C54ECCC47D92BB0CA0355D1832");
-static_assert(sizeof(WBP_ResultRate_Sub_RankIcon_C_OnLoaded_C50783C54ECCC47D92BB0CA0355D1832) == 0x000008, "Wrong size on WBP_ResultRate_Sub_RankIcon_C_OnLoaded_C50783C54ECCC47D92BB0CA0355D1832");
-static_assert(offsetof(WBP_ResultRate_Sub_RankIcon_C_OnLoaded_C50783C54ECCC47D92BB0CA0355D1832, Loaded) == 0x000000, "Member 'WBP_ResultRate_Sub_RankIcon_C_OnLoaded_C50783C54ECCC47D92BB0CA0355D1832::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ResultRate_Sub_RankIcon_C_OnLoaded_C50783C54ECCC47D92BB0CA0355D1832;
 
 // Function WBP_ResultRate_Sub_RankIcon.WBP_ResultRate_Sub_RankIcon_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -73,9 +57,7 @@ struct WBP_ResultRate_Sub_RankIcon_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ResultRate_Sub_RankIcon_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_ResultRate_Sub_RankIcon_C_PreConstruct");
-static_assert(sizeof(WBP_ResultRate_Sub_RankIcon_C_PreConstruct) == 0x000001, "Wrong size on WBP_ResultRate_Sub_RankIcon_C_PreConstruct");
-static_assert(offsetof(WBP_ResultRate_Sub_RankIcon_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_ResultRate_Sub_RankIcon_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ResultRate_Sub_RankIcon_C_PreConstruct;
 
 // Function WBP_ResultRate_Sub_RankIcon.WBP_ResultRate_Sub_RankIcon_C.Set Rank SText Impl
 // 0x0010 (0x0010 - 0x0000)
@@ -84,9 +66,7 @@ struct WBP_ResultRate_Sub_RankIcon_C_Set_Rank_SText_Impl final
 public:
 	class FText                                   Num;                                               // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_ResultRate_Sub_RankIcon_C_Set_Rank_SText_Impl) == 0x000008, "Wrong alignment on WBP_ResultRate_Sub_RankIcon_C_Set_Rank_SText_Impl");
-static_assert(sizeof(WBP_ResultRate_Sub_RankIcon_C_Set_Rank_SText_Impl) == 0x000010, "Wrong size on WBP_ResultRate_Sub_RankIcon_C_Set_Rank_SText_Impl");
-static_assert(offsetof(WBP_ResultRate_Sub_RankIcon_C_Set_Rank_SText_Impl, Num) == 0x000000, "Member 'WBP_ResultRate_Sub_RankIcon_C_Set_Rank_SText_Impl::Num' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ResultRate_Sub_RankIcon_C_Set_Rank_SText_Impl;
 
 // Function WBP_ResultRate_Sub_RankIcon.WBP_ResultRate_Sub_RankIcon_C.SetLegendCompeGrade
 // 0x0001 (0x0001 - 0x0000)
@@ -95,9 +75,7 @@ struct WBP_ResultRate_Sub_RankIcon_C_SetLegendCompeGrade final
 public:
 	ELegendCompeRateGrade                         gradeValue;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ResultRate_Sub_RankIcon_C_SetLegendCompeGrade) == 0x000001, "Wrong alignment on WBP_ResultRate_Sub_RankIcon_C_SetLegendCompeGrade");
-static_assert(sizeof(WBP_ResultRate_Sub_RankIcon_C_SetLegendCompeGrade) == 0x000001, "Wrong size on WBP_ResultRate_Sub_RankIcon_C_SetLegendCompeGrade");
-static_assert(offsetof(WBP_ResultRate_Sub_RankIcon_C_SetLegendCompeGrade, gradeValue) == 0x000000, "Member 'WBP_ResultRate_Sub_RankIcon_C_SetLegendCompeGrade::gradeValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ResultRate_Sub_RankIcon_C_SetLegendCompeGrade;
 
 // Function WBP_ResultRate_Sub_RankIcon.WBP_ResultRate_Sub_RankIcon_C.SetRankImpl
 // 0x0001 (0x0001 - 0x0000)
@@ -106,9 +84,7 @@ struct WBP_ResultRate_Sub_RankIcon_C_SetRankImpl final
 public:
 	ERateRank                                     RateRank;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ResultRate_Sub_RankIcon_C_SetRankImpl) == 0x000001, "Wrong alignment on WBP_ResultRate_Sub_RankIcon_C_SetRankImpl");
-static_assert(sizeof(WBP_ResultRate_Sub_RankIcon_C_SetRankImpl) == 0x000001, "Wrong size on WBP_ResultRate_Sub_RankIcon_C_SetRankImpl");
-static_assert(offsetof(WBP_ResultRate_Sub_RankIcon_C_SetRankImpl, RateRank) == 0x000000, "Member 'WBP_ResultRate_Sub_RankIcon_C_SetRankImpl::RateRank' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ResultRate_Sub_RankIcon_C_SetRankImpl;
 
 // Function WBP_ResultRate_Sub_RankIcon.WBP_ResultRate_Sub_RankIcon_C.SetRateRank
 // 0x0001 (0x0001 - 0x0000)
@@ -117,9 +93,7 @@ struct WBP_ResultRate_Sub_RankIcon_C_SetRateRank final
 public:
 	ERateRank                                     InRateRank;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ResultRate_Sub_RankIcon_C_SetRateRank) == 0x000001, "Wrong alignment on WBP_ResultRate_Sub_RankIcon_C_SetRateRank");
-static_assert(sizeof(WBP_ResultRate_Sub_RankIcon_C_SetRateRank) == 0x000001, "Wrong size on WBP_ResultRate_Sub_RankIcon_C_SetRateRank");
-static_assert(offsetof(WBP_ResultRate_Sub_RankIcon_C_SetRateRank, InRateRank) == 0x000000, "Member 'WBP_ResultRate_Sub_RankIcon_C_SetRateRank::InRateRank' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ResultRate_Sub_RankIcon_C_SetRateRank;
 
 // Function WBP_ResultRate_Sub_RankIcon.WBP_ResultRate_Sub_RankIcon_C.SetRateRankText
 // 0x0050 (0x0050 - 0x0000)
@@ -137,16 +111,7 @@ public:
 	uint8                                         Pad_3A[0x6];                                       // 0x003A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select_Default;                             // 0x0040(0x0010)(ConstParm)
 };
-static_assert(alignof(WBP_ResultRate_Sub_RankIcon_C_SetRateRankText) == 0x000008, "Wrong alignment on WBP_ResultRate_Sub_RankIcon_C_SetRateRankText");
-static_assert(sizeof(WBP_ResultRate_Sub_RankIcon_C_SetRateRankText) == 0x000050, "Wrong size on WBP_ResultRate_Sub_RankIcon_C_SetRateRankText");
-static_assert(offsetof(WBP_ResultRate_Sub_RankIcon_C_SetRateRankText, BaseText) == 0x000000, "Member 'WBP_ResultRate_Sub_RankIcon_C_SetRateRankText::BaseText' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankIcon_C_SetRateRankText, Text) == 0x000008, "Member 'WBP_ResultRate_Sub_RankIcon_C_SetRateRankText::Text' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankIcon_C_SetRateRankText, RankRate) == 0x000010, "Member 'WBP_ResultRate_Sub_RankIcon_C_SetRateRankText::RankRate' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankIcon_C_SetRateRankText, CallFunc_MakeLiteralText_ReturnValue) == 0x000018, "Member 'WBP_ResultRate_Sub_RankIcon_C_SetRateRankText::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankIcon_C_SetRateRankText, CallFunc_Map_Find_Value) == 0x000028, "Member 'WBP_ResultRate_Sub_RankIcon_C_SetRateRankText::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankIcon_C_SetRateRankText, CallFunc_Map_Find_ReturnValue) == 0x000038, "Member 'WBP_ResultRate_Sub_RankIcon_C_SetRateRankText::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankIcon_C_SetRateRankText, Temp_bool_Variable) == 0x000039, "Member 'WBP_ResultRate_Sub_RankIcon_C_SetRateRankText::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RankIcon_C_SetRateRankText, K2Node_Select_Default) == 0x000040, "Member 'WBP_ResultRate_Sub_RankIcon_C_SetRateRankText::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ResultRate_Sub_RankIcon_C_SetRateRankText;
 
 // Function WBP_ResultRate_Sub_RankIcon.WBP_ResultRate_Sub_RankIcon_C.SetupRateRankText
 // 0x0001 (0x0001 - 0x0000)
@@ -155,9 +120,7 @@ struct WBP_ResultRate_Sub_RankIcon_C_SetupRateRankText final
 public:
 	ERateRank                                     InRateRank;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ResultRate_Sub_RankIcon_C_SetupRateRankText) == 0x000001, "Wrong alignment on WBP_ResultRate_Sub_RankIcon_C_SetupRateRankText");
-static_assert(sizeof(WBP_ResultRate_Sub_RankIcon_C_SetupRateRankText) == 0x000001, "Wrong size on WBP_ResultRate_Sub_RankIcon_C_SetupRateRankText");
-static_assert(offsetof(WBP_ResultRate_Sub_RankIcon_C_SetupRateRankText, InRateRank) == 0x000000, "Member 'WBP_ResultRate_Sub_RankIcon_C_SetupRateRankText::InRateRank' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ResultRate_Sub_RankIcon_C_SetupRateRankText;
 
 }
 

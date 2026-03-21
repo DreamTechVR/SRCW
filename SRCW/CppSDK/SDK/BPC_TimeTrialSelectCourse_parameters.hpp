@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "UNION_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
-#include "UNION_structs.hpp"
 #include "UnionLib_structs.hpp"
 
 
@@ -26,9 +26,7 @@ struct BPC_TimeTrialSelectCourse_C__OnSpecialPressedEvent_Event final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_TimeTrialSelectCourse_C__OnSpecialPressedEvent_Event) == 0x000008, "Wrong alignment on BPC_TimeTrialSelectCourse_C__OnSpecialPressedEvent_Event");
-static_assert(sizeof(BPC_TimeTrialSelectCourse_C__OnSpecialPressedEvent_Event) == 0x000008, "Wrong size on BPC_TimeTrialSelectCourse_C__OnSpecialPressedEvent_Event");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C__OnSpecialPressedEvent_Event, Object) == 0x000000, "Member 'BPC_TimeTrialSelectCourse_C__OnSpecialPressedEvent_Event::Object' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_TimeTrialSelectCourse_C__OnSpecialPressedEvent_Event;
 
 // Function BPC_TimeTrialSelectCourse.BPC_TimeTrialSelectCourse_C.ExecuteUbergraph_BPC_TimeTrialSelectCourse
 // 0x07B0 (0x07B0 - 0x0000)
@@ -221,155 +219,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess_13;                    // 0x07A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x07A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse) == 0x000008, "Wrong alignment on BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse");
-static_assert(sizeof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse) == 0x0007B0, "Wrong size on BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, EntryPoint) == 0x000000, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_Not_PreBool_ReturnValue) == 0x000024, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_Not_PreBool_ReturnValue_1) == 0x000025, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_Not_PreBool_ReturnValue_2) == 0x000026, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000028, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_CreateDelegate_OutputDelegate_2) == 0x000030, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_IsValid_ReturnValue) == 0x000040, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_IsReadHint_ReturnValue) == 0x000041, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_IsReadHint_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_IsReadHint_ReturnValue_1) == 0x000042, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_IsReadHint_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_Not_PreBool_ReturnValue_3) == 0x000043, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_Not_PreBool_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_BooleanAND_ReturnValue) == 0x000044, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_IsReadHint_ReturnValue_2) == 0x000045, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_IsReadHint_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_Not_PreBool_ReturnValue_4) == 0x000046, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_Not_PreBool_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_Not_PreBool_ReturnValue_5) == 0x000047, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_Not_PreBool_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_Not_PreBool_ReturnValue_6) == 0x000048, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_Not_PreBool_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_IsReadHint_ReturnValue_3) == 0x000049, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_IsReadHint_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_BooleanAND_ReturnValue_1) == 0x00004A, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_Not_PreBool_ReturnValue_7) == 0x00004B, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_Not_PreBool_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_Not_PreBool_ReturnValue_8) == 0x00004C, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_Not_PreBool_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_SpawnObject_ReturnValue) == 0x000050, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_GetPlayerController_ReturnValue) == 0x000058, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000060, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_DynamicCast_bSuccess) == 0x000068, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_SoundPlay_ReturnValue) == 0x00006C, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_Add_IntInt_ReturnValue) == 0x000070, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_Not_PreBool_ReturnValue_9) == 0x000074, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_Not_PreBool_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_Map_Keys_Keys) == 0x000078, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_Map_Keys_Keys' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_Array_Contains_ReturnValue) == 0x000088, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_IsShippingBuild_ReturnValue) == 0x000089, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_IsShippingBuild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_DynamicCast_AsWBP_Course_Select_Time_Trial) == 0x000090, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_DynamicCast_AsWBP_Course_Select_Time_Trial' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_DynamicCast_bSuccess_1) == 0x000098, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, Temp_byte_Variable) == 0x000099, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, Temp_class_Variable) == 0x0000A0, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::Temp_class_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_ClassDynamicCast_AsCourse_Select_Widget_Base) == 0x0000A8, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_ClassDynamicCast_AsCourse_Select_Widget_Base' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_ClassDynamicCast_bSuccess) == 0x0000B0, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_CreateDelegate_OutputDelegate_3) == 0x0000B4, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_Create_ReturnValue) == 0x0000C8, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_CreateDelegate_OutputDelegate_4) == 0x0000D0, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_CreateDelegate_OutputDelegate_5) == 0x0000E0, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_CreateDelegate_OutputDelegate_6) == 0x0000F0, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_DynamicCast_AsWBP_Course_Select_Time_Trial_1) == 0x000100, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_DynamicCast_AsWBP_Course_Select_Time_Trial_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_DynamicCast_bSuccess_2) == 0x000108, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_CustomEvent_Loaded) == 0x000110, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_CustomEvent_Loaded' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_CustomEvent_Object_5) == 0x000118, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_CustomEvent_Object_5' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_CustomEvent_Object_4) == 0x000120, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_CustomEvent_Object_4' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_CustomEvent_Object_3) == 0x000128, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_CustomEvent_Object_3' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_CustomEvent_Object_2) == 0x000130, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_CustomEvent_Object_2' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, Temp_byte_Variable_1) == 0x000138, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_CustomEvent_Object_1) == 0x000140, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_CustomEvent_Object_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_CustomEvent_Object) == 0x000148, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_CustomEvent_Object' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, Temp_bool_Variable) == 0x000150, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_Select_Default) == 0x000151, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_GetRaceSettingCourseSelecting_ReturnValue) == 0x000152, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_GetRaceSettingCourseSelecting_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_IsValid_ReturnValue_1) == 0x000153, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_SwitchEnum_CmpSuccess) == 0x000154, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_IsInViewport_ReturnValue) == 0x000155, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_IsInViewport_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_GetOwnerSequence_ReturnValue) == 0x000158, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_GetOwnerSequence_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, Temp_byte_Variable_2) == 0x000160, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_GetDisplayName_ReturnValue) == 0x000168, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_Conv_StringToText_ReturnValue) == 0x000178, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_DynamicCast_AsWBP_Course_Select_Time_Trial_2) == 0x000188, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_DynamicCast_AsWBP_Course_Select_Time_Trial_2' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_DynamicCast_bSuccess_3) == 0x000190, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_MakeStruct_FormatArgumentData) == 0x000198, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_IsCourseSelecting_ReturnValue) == 0x0001E0, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_IsCourseSelecting_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_MakeArray_Array) == 0x0001E8, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_Not_PreBool_ReturnValue_10) == 0x0001F8, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_Not_PreBool_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_Format_ReturnValue) == 0x000200, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_GetPlayerController_ReturnValue_1) == 0x000210, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_SoundPlay_ReturnValue_1) == 0x000218, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_DynamicCast_AsBP_Menu_Player_Controller) == 0x000220, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_DynamicCast_AsBP_Menu_Player_Controller' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_DynamicCast_bSuccess_4) == 0x000228, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_GetRegisteredSubMenu_ReturnValue) == 0x000230, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_GetRegisteredSubMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_GetRegisteredMenu_ReturnValue) == 0x000240, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_GetRegisteredMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_DynamicCast_As__________) == 0x000248, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_DynamicCast_As__________' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_DynamicCast_bSuccess_5) == 0x000250, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_Not_PreBool_ReturnValue_11) == 0x000251, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_Not_PreBool_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_CreateDelegate_OutputDelegate_7) == 0x000254, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_CustomEvent_SelectedCourseStageId) == 0x000264, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_CustomEvent_SelectedCourseStageId' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_CreateDelegate_OutputDelegate_8) == 0x000268, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_CreateDelegate_OutputDelegate_8' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_CustomEvent_SelectedGrandprixId) == 0x000278, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_CustomEvent_SelectedGrandprixId' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_CustomEvent_FirstCourseStageId) == 0x000279, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_CustomEvent_FirstCourseStageId' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_CreateDelegate_OutputDelegate_9) == 0x00027C, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_CreateDelegate_OutputDelegate_9' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_CustomEvent_SelectedGrandprixButton_2) == 0x000290, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_CustomEvent_SelectedGrandprixButton_2' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_CreateDelegate_OutputDelegate_10) == 0x000298, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_CreateDelegate_OutputDelegate_10' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_CustomEvent_SelectedGrandprixButton_1) == 0x0002A8, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_CustomEvent_SelectedGrandprixButton_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_MakeLiteralByte_ReturnValue) == 0x0002B0, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x0002B8, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_Conv_ByteToInt_ReturnValue) == 0x0002C0, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_IsValid_ReturnValue_2) == 0x0002C4, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_CreateDelegate_OutputDelegate_11) == 0x0002C8, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_CreateDelegate_OutputDelegate_11' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_SoundPlay_ReturnValue_2) == 0x0002D8, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_SoundPlay_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_CreateDelegate_OutputDelegate_12) == 0x0002DC, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_CreateDelegate_OutputDelegate_12' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_GetSelectedDriverId_OutId) == 0x0002EC, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_GetSelectedDriverId_OutId' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_GetSelectedDriverId_OutExecsPin) == 0x0002ED, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_GetSelectedDriverId_OutExecsPin' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_SwitchEnum_CmpSuccess_1) == 0x0002EE, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_GetDriverData_OutDriverData) == 0x0002F0, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_GetDriverData_OutDriverData' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, Temp_bool_Variable_1) == 0x000680, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_Select_Default_1) == 0x000681, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_DynamicCast_AsWBP_Course_Select_Time_Trial_3) == 0x000688, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_DynamicCast_AsWBP_Course_Select_Time_Trial_3' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_DynamicCast_bSuccess_6) == 0x000690, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_DynamicCast_bSuccess_6' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_Not_PreBool_ReturnValue_12) == 0x000691, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_Not_PreBool_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_GetPlayerController_ReturnValue_2) == 0x000698, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_GetPlayerController_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_DynamicCast_AsApp_Player_Controller_1) == 0x0006A0, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_DynamicCast_AsApp_Player_Controller_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_DynamicCast_bSuccess_7) == 0x0006A8, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_DynamicCast_bSuccess_7' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_GetWorldSubsystem_ReturnValue_1) == 0x0006B0, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_GetWorldSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_IsValid_ReturnValue_3) == 0x0006B8, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, Temp_byte_Variable_3) == 0x0006B9, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_SoundPlay_ReturnValue_3) == 0x0006BC, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_SoundPlay_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_IsValid_ReturnValue_4) == 0x0006C0, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_UnregisterSingleSubMenu_ReturnValue) == 0x0006C1, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_UnregisterSingleSubMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_CustomEvent_SelectedGrandprixButton) == 0x0006C8, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_CustomEvent_SelectedGrandprixButton' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, Temp_int_Variable) == 0x0006D0, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_CreateDelegate_OutputDelegate_13) == 0x0006D4, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_CreateDelegate_OutputDelegate_13' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_CreateDelegate_OutputDelegate_14) == 0x0006E4, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_CreateDelegate_OutputDelegate_14' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_IsValid_ReturnValue_5) == 0x0006F4, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_GetOwnerSequence_ReturnValue_1) == 0x0006F8, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_GetOwnerSequence_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_DynamicCast_AsBP_Time_Trial_Sequence) == 0x000700, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_DynamicCast_AsBP_Time_Trial_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_DynamicCast_bSuccess_8) == 0x000708, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_DynamicCast_bSuccess_8' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_DynamicCast_AsMenu_Sequence_UIInterface) == 0x000710, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_DynamicCast_AsMenu_Sequence_UIInterface' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_DynamicCast_bSuccess_9) == 0x000720, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_DynamicCast_bSuccess_9' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, Temp_byte_Variable_4) == 0x000721, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_GetOwnerSequence_ReturnValue_2) == 0x000728, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_GetOwnerSequence_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_DynamicCast_AsMenu_Sequence_UIInterface_1) == 0x000730, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_DynamicCast_AsMenu_Sequence_UIInterface_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_DynamicCast_bSuccess_10) == 0x000740, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_DynamicCast_bSuccess_10' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_DynamicCast_AsWBP_Course_Select_Time_Trial_4) == 0x000748, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_DynamicCast_AsWBP_Course_Select_Time_Trial_4' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_DynamicCast_bSuccess_11) == 0x000750, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_DynamicCast_bSuccess_11' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_CreateDelegate_OutputDelegate_15) == 0x000754, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_CreateDelegate_OutputDelegate_15' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, Temp_bool_Variable_2) == 0x000764, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_Select_Default_2) == 0x000765, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, Temp_byte_Variable_5) == 0x000766, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_GetOwnerSequence_ReturnValue_3) == 0x000768, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_GetOwnerSequence_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_DynamicCast_AsTime_Trial_Sequence) == 0x000770, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_DynamicCast_AsTime_Trial_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_DynamicCast_bSuccess_12) == 0x000778, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_DynamicCast_bSuccess_12' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x000779, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00077A, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_IsValid_ReturnValue_6) == 0x00077B, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, Temp_bool_Variable_3) == 0x00077C, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_Select_Default_3) == 0x00077D, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x000780, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_IsLastFadeDirectionIn_ReturnValue) == 0x000788, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_IsLastFadeDirectionIn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_GetOwnerSequence_ReturnValue_4) == 0x000790, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_GetOwnerSequence_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_GetSelectedGameModeId_ReturnValue_1) == 0x000798, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_GetSelectedGameModeId_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_DynamicCast_AsTime_Trial_Sequence_1) == 0x0007A0, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_DynamicCast_AsTime_Trial_Sequence_1' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, K2Node_DynamicCast_bSuccess_13) == 0x0007A8, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::K2Node_DynamicCast_bSuccess_13' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x0007A9, "Member 'BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_TimeTrialSelectCourse_C_ExecuteUbergraph_BPC_TimeTrialSelectCourse;
 
 // Function BPC_TimeTrialSelectCourse.BPC_TimeTrialSelectCourse_C.FocusMenu
 // 0x0010 (0x0010 - 0x0000)
@@ -379,10 +229,7 @@ public:
 	class UWBP_CourseSelect_TimeTrial_C*          K2Node_DynamicCast_AsWBP_Course_Select_Time_Trial; // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_TimeTrialSelectCourse_C_FocusMenu) == 0x000008, "Wrong alignment on BPC_TimeTrialSelectCourse_C_FocusMenu");
-static_assert(sizeof(BPC_TimeTrialSelectCourse_C_FocusMenu) == 0x000010, "Wrong size on BPC_TimeTrialSelectCourse_C_FocusMenu");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_FocusMenu, K2Node_DynamicCast_AsWBP_Course_Select_Time_Trial) == 0x000000, "Member 'BPC_TimeTrialSelectCourse_C_FocusMenu::K2Node_DynamicCast_AsWBP_Course_Select_Time_Trial' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_FocusMenu, K2Node_DynamicCast_bSuccess) == 0x000008, "Member 'BPC_TimeTrialSelectCourse_C_FocusMenu::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_TimeTrialSelectCourse_C_FocusMenu;
 
 // Function BPC_TimeTrialSelectCourse.BPC_TimeTrialSelectCourse_C.OnCourseSelectBackToClassSelect
 // 0x0008 (0x0008 - 0x0000)
@@ -391,9 +238,7 @@ struct BPC_TimeTrialSelectCourse_C_OnCourseSelectBackToClassSelect final
 public:
 	class UCourseSelectSubCategoryIcon*           SelectedGrandprixButton;                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_TimeTrialSelectCourse_C_OnCourseSelectBackToClassSelect) == 0x000008, "Wrong alignment on BPC_TimeTrialSelectCourse_C_OnCourseSelectBackToClassSelect");
-static_assert(sizeof(BPC_TimeTrialSelectCourse_C_OnCourseSelectBackToClassSelect) == 0x000008, "Wrong size on BPC_TimeTrialSelectCourse_C_OnCourseSelectBackToClassSelect");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_OnCourseSelectBackToClassSelect, SelectedGrandprixButton) == 0x000000, "Member 'BPC_TimeTrialSelectCourse_C_OnCourseSelectBackToClassSelect::SelectedGrandprixButton' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_TimeTrialSelectCourse_C_OnCourseSelectBackToClassSelect;
 
 // Function BPC_TimeTrialSelectCourse.BPC_TimeTrialSelectCourse_C.OnCourseSelectGadgetCustomSelected
 // 0x0008 (0x0008 - 0x0000)
@@ -402,9 +247,7 @@ struct BPC_TimeTrialSelectCourse_C_OnCourseSelectGadgetCustomSelected final
 public:
 	class UCourseSelectSubCategoryIcon*           SelectedGrandprixButton;                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_TimeTrialSelectCourse_C_OnCourseSelectGadgetCustomSelected) == 0x000008, "Wrong alignment on BPC_TimeTrialSelectCourse_C_OnCourseSelectGadgetCustomSelected");
-static_assert(sizeof(BPC_TimeTrialSelectCourse_C_OnCourseSelectGadgetCustomSelected) == 0x000008, "Wrong size on BPC_TimeTrialSelectCourse_C_OnCourseSelectGadgetCustomSelected");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_OnCourseSelectGadgetCustomSelected, SelectedGrandprixButton) == 0x000000, "Member 'BPC_TimeTrialSelectCourse_C_OnCourseSelectGadgetCustomSelected::SelectedGrandprixButton' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_TimeTrialSelectCourse_C_OnCourseSelectGadgetCustomSelected;
 
 // Function BPC_TimeTrialSelectCourse.BPC_TimeTrialSelectCourse_C.OnCourseSelectGrandprixCancel
 // 0x0008 (0x0008 - 0x0000)
@@ -413,9 +256,7 @@ struct BPC_TimeTrialSelectCourse_C_OnCourseSelectGrandprixCancel final
 public:
 	class UCourseSelectSubCategoryIcon*           SelectedGrandprixButton;                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_TimeTrialSelectCourse_C_OnCourseSelectGrandprixCancel) == 0x000008, "Wrong alignment on BPC_TimeTrialSelectCourse_C_OnCourseSelectGrandprixCancel");
-static_assert(sizeof(BPC_TimeTrialSelectCourse_C_OnCourseSelectGrandprixCancel) == 0x000008, "Wrong size on BPC_TimeTrialSelectCourse_C_OnCourseSelectGrandprixCancel");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_OnCourseSelectGrandprixCancel, SelectedGrandprixButton) == 0x000000, "Member 'BPC_TimeTrialSelectCourse_C_OnCourseSelectGrandprixCancel::SelectedGrandprixButton' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_TimeTrialSelectCourse_C_OnCourseSelectGrandprixCancel;
 
 // Function BPC_TimeTrialSelectCourse.BPC_TimeTrialSelectCourse_C.OnDecideGrandprixId
 // 0x0002 (0x0002 - 0x0000)
@@ -425,10 +266,7 @@ public:
 	EGrandPrixId                                  SelectedGrandprixId_0;                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EStageId                                      FirstCourseStageId;                                // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_TimeTrialSelectCourse_C_OnDecideGrandprixId) == 0x000001, "Wrong alignment on BPC_TimeTrialSelectCourse_C_OnDecideGrandprixId");
-static_assert(sizeof(BPC_TimeTrialSelectCourse_C_OnDecideGrandprixId) == 0x000002, "Wrong size on BPC_TimeTrialSelectCourse_C_OnDecideGrandprixId");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_OnDecideGrandprixId, SelectedGrandprixId_0) == 0x000000, "Member 'BPC_TimeTrialSelectCourse_C_OnDecideGrandprixId::SelectedGrandprixId_0' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_OnDecideGrandprixId, FirstCourseStageId) == 0x000001, "Member 'BPC_TimeTrialSelectCourse_C_OnDecideGrandprixId::FirstCourseStageId' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_TimeTrialSelectCourse_C_OnDecideGrandprixId;
 
 // Function BPC_TimeTrialSelectCourse.BPC_TimeTrialSelectCourse_C.OnDecideStageId
 // 0x0001 (0x0001 - 0x0000)
@@ -437,9 +275,7 @@ struct BPC_TimeTrialSelectCourse_C_OnDecideStageId final
 public:
 	EStageId                                      SelectedCourseStageId;                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_TimeTrialSelectCourse_C_OnDecideStageId) == 0x000001, "Wrong alignment on BPC_TimeTrialSelectCourse_C_OnDecideStageId");
-static_assert(sizeof(BPC_TimeTrialSelectCourse_C_OnDecideStageId) == 0x000001, "Wrong size on BPC_TimeTrialSelectCourse_C_OnDecideStageId");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_OnDecideStageId, SelectedCourseStageId) == 0x000000, "Member 'BPC_TimeTrialSelectCourse_C_OnDecideStageId::SelectedCourseStageId' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_TimeTrialSelectCourse_C_OnDecideStageId;
 
 // Function BPC_TimeTrialSelectCourse.BPC_TimeTrialSelectCourse_C.OnLeftShoulderPressedEvent_Event
 // 0x0008 (0x0008 - 0x0000)
@@ -448,9 +284,7 @@ struct BPC_TimeTrialSelectCourse_C_OnLeftShoulderPressedEvent_Event final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_TimeTrialSelectCourse_C_OnLeftShoulderPressedEvent_Event) == 0x000008, "Wrong alignment on BPC_TimeTrialSelectCourse_C_OnLeftShoulderPressedEvent_Event");
-static_assert(sizeof(BPC_TimeTrialSelectCourse_C_OnLeftShoulderPressedEvent_Event) == 0x000008, "Wrong size on BPC_TimeTrialSelectCourse_C_OnLeftShoulderPressedEvent_Event");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_OnLeftShoulderPressedEvent_Event, Object) == 0x000000, "Member 'BPC_TimeTrialSelectCourse_C_OnLeftShoulderPressedEvent_Event::Object' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_TimeTrialSelectCourse_C_OnLeftShoulderPressedEvent_Event;
 
 // Function BPC_TimeTrialSelectCourse.BPC_TimeTrialSelectCourse_C.OnLeftShoulderReleasedEvent_Event
 // 0x0008 (0x0008 - 0x0000)
@@ -459,9 +293,7 @@ struct BPC_TimeTrialSelectCourse_C_OnLeftShoulderReleasedEvent_Event final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_TimeTrialSelectCourse_C_OnLeftShoulderReleasedEvent_Event) == 0x000008, "Wrong alignment on BPC_TimeTrialSelectCourse_C_OnLeftShoulderReleasedEvent_Event");
-static_assert(sizeof(BPC_TimeTrialSelectCourse_C_OnLeftShoulderReleasedEvent_Event) == 0x000008, "Wrong size on BPC_TimeTrialSelectCourse_C_OnLeftShoulderReleasedEvent_Event");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_OnLeftShoulderReleasedEvent_Event, Object) == 0x000000, "Member 'BPC_TimeTrialSelectCourse_C_OnLeftShoulderReleasedEvent_Event::Object' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_TimeTrialSelectCourse_C_OnLeftShoulderReleasedEvent_Event;
 
 // Function BPC_TimeTrialSelectCourse.BPC_TimeTrialSelectCourse_C.OnLoaded_2818D6214851B5A07B8199A904D33989
 // 0x0008 (0x0008 - 0x0000)
@@ -470,9 +302,7 @@ struct BPC_TimeTrialSelectCourse_C_OnLoaded_2818D6214851B5A07B8199A904D33989 fin
 public:
 	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_TimeTrialSelectCourse_C_OnLoaded_2818D6214851B5A07B8199A904D33989) == 0x000008, "Wrong alignment on BPC_TimeTrialSelectCourse_C_OnLoaded_2818D6214851B5A07B8199A904D33989");
-static_assert(sizeof(BPC_TimeTrialSelectCourse_C_OnLoaded_2818D6214851B5A07B8199A904D33989) == 0x000008, "Wrong size on BPC_TimeTrialSelectCourse_C_OnLoaded_2818D6214851B5A07B8199A904D33989");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_OnLoaded_2818D6214851B5A07B8199A904D33989, Loaded) == 0x000000, "Member 'BPC_TimeTrialSelectCourse_C_OnLoaded_2818D6214851B5A07B8199A904D33989::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_TimeTrialSelectCourse_C_OnLoaded_2818D6214851B5A07B8199A904D33989;
 
 // Function BPC_TimeTrialSelectCourse.BPC_TimeTrialSelectCourse_C.OnRightShoulderPressedEvent_Event
 // 0x0008 (0x0008 - 0x0000)
@@ -481,9 +311,7 @@ struct BPC_TimeTrialSelectCourse_C_OnRightShoulderPressedEvent_Event final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_TimeTrialSelectCourse_C_OnRightShoulderPressedEvent_Event) == 0x000008, "Wrong alignment on BPC_TimeTrialSelectCourse_C_OnRightShoulderPressedEvent_Event");
-static_assert(sizeof(BPC_TimeTrialSelectCourse_C_OnRightShoulderPressedEvent_Event) == 0x000008, "Wrong size on BPC_TimeTrialSelectCourse_C_OnRightShoulderPressedEvent_Event");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_OnRightShoulderPressedEvent_Event, Object) == 0x000000, "Member 'BPC_TimeTrialSelectCourse_C_OnRightShoulderPressedEvent_Event::Object' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_TimeTrialSelectCourse_C_OnRightShoulderPressedEvent_Event;
 
 // Function BPC_TimeTrialSelectCourse.BPC_TimeTrialSelectCourse_C.OnRightShoulderReleasedEvent_Event
 // 0x0008 (0x0008 - 0x0000)
@@ -492,9 +320,7 @@ struct BPC_TimeTrialSelectCourse_C_OnRightShoulderReleasedEvent_Event final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_TimeTrialSelectCourse_C_OnRightShoulderReleasedEvent_Event) == 0x000008, "Wrong alignment on BPC_TimeTrialSelectCourse_C_OnRightShoulderReleasedEvent_Event");
-static_assert(sizeof(BPC_TimeTrialSelectCourse_C_OnRightShoulderReleasedEvent_Event) == 0x000008, "Wrong size on BPC_TimeTrialSelectCourse_C_OnRightShoulderReleasedEvent_Event");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_OnRightShoulderReleasedEvent_Event, Object) == 0x000000, "Member 'BPC_TimeTrialSelectCourse_C_OnRightShoulderReleasedEvent_Event::Object' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_TimeTrialSelectCourse_C_OnRightShoulderReleasedEvent_Event;
 
 // Function BPC_TimeTrialSelectCourse.BPC_TimeTrialSelectCourse_C.OnSpecialReleasedEvent
 // 0x0008 (0x0008 - 0x0000)
@@ -503,9 +329,7 @@ struct BPC_TimeTrialSelectCourse_C_OnSpecialReleasedEvent final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_TimeTrialSelectCourse_C_OnSpecialReleasedEvent) == 0x000008, "Wrong alignment on BPC_TimeTrialSelectCourse_C_OnSpecialReleasedEvent");
-static_assert(sizeof(BPC_TimeTrialSelectCourse_C_OnSpecialReleasedEvent) == 0x000008, "Wrong size on BPC_TimeTrialSelectCourse_C_OnSpecialReleasedEvent");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_OnSpecialReleasedEvent, Object) == 0x000000, "Member 'BPC_TimeTrialSelectCourse_C_OnSpecialReleasedEvent::Object' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_TimeTrialSelectCourse_C_OnSpecialReleasedEvent;
 
 // Function BPC_TimeTrialSelectCourse.BPC_TimeTrialSelectCourse_C.OnStoreRequested
 // 0x0003 (0x0003 - 0x0000)
@@ -516,11 +340,7 @@ public:
 	bool                                          CallFunc_StartStore_ReturnValue;                   // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_TimeTrialSelectCourse_C_OnStoreRequested) == 0x000001, "Wrong alignment on BPC_TimeTrialSelectCourse_C_OnStoreRequested");
-static_assert(sizeof(BPC_TimeTrialSelectCourse_C_OnStoreRequested) == 0x000003, "Wrong size on BPC_TimeTrialSelectCourse_C_OnStoreRequested");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_OnStoreRequested, GrandPrixSelecting) == 0x000000, "Member 'BPC_TimeTrialSelectCourse_C_OnStoreRequested::GrandPrixSelecting' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_OnStoreRequested, CallFunc_StartStore_ReturnValue) == 0x000001, "Member 'BPC_TimeTrialSelectCourse_C_OnStoreRequested::CallFunc_StartStore_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_OnStoreRequested, CallFunc_Not_PreBool_ReturnValue) == 0x000002, "Member 'BPC_TimeTrialSelectCourse_C_OnStoreRequested::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_TimeTrialSelectCourse_C_OnStoreRequested;
 
 // Function BPC_TimeTrialSelectCourse.BPC_TimeTrialSelectCourse_C.ShowTipsWindow
 // 0x0040 (0x0040 - 0x0000)
@@ -539,16 +359,7 @@ public:
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_TimeTrialSelectCourse_C_ShowTipsWindow) == 0x000008, "Wrong alignment on BPC_TimeTrialSelectCourse_C_ShowTipsWindow");
-static_assert(sizeof(BPC_TimeTrialSelectCourse_C_ShowTipsWindow) == 0x000040, "Wrong size on BPC_TimeTrialSelectCourse_C_ShowTipsWindow");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ShowTipsWindow, InHintId) == 0x000000, "Member 'BPC_TimeTrialSelectCourse_C_ShowTipsWindow::InHintId' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ShowTipsWindow, CallFunc_MakeLiteralByte_ReturnValue) == 0x000001, "Member 'BPC_TimeTrialSelectCourse_C_ShowTipsWindow::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ShowTipsWindow, CallFunc_Create_ReturnValue) == 0x000008, "Member 'BPC_TimeTrialSelectCourse_C_ShowTipsWindow::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ShowTipsWindow, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000010, "Member 'BPC_TimeTrialSelectCourse_C_ShowTipsWindow::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ShowTipsWindow, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000018, "Member 'BPC_TimeTrialSelectCourse_C_ShowTipsWindow::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ShowTipsWindow, K2Node_CreateDelegate_OutputDelegate) == 0x000020, "Member 'BPC_TimeTrialSelectCourse_C_ShowTipsWindow::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ShowTipsWindow, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'BPC_TimeTrialSelectCourse_C_ShowTipsWindow::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialSelectCourse_C_ShowTipsWindow, CallFunc_GetPlayerController_ReturnValue) == 0x000038, "Member 'BPC_TimeTrialSelectCourse_C_ShowTipsWindow::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_TimeTrialSelectCourse_C_ShowTipsWindow;
 
 }
 

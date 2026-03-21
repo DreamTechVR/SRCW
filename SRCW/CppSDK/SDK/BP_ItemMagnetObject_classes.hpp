@@ -23,15 +23,18 @@ class ABP_ItemMagnetObject_C final : public AItemMagnetObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ItemMagnetObject_C">();
+		BP_STATIC_CLASS_IMPL("BP_ItemMagnetObject_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ItemMagnetObject_C")
 	}
 	static class ABP_ItemMagnetObject_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ItemMagnetObject_C>();
 	}
 };
-static_assert(alignof(ABP_ItemMagnetObject_C) == 0x000010, "Wrong alignment on ABP_ItemMagnetObject_C");
-static_assert(sizeof(ABP_ItemMagnetObject_C) == 0x000940, "Wrong size on ABP_ItemMagnetObject_C");
+DUMPER7_ASSERTS_ABP_ItemMagnetObject_C;
 
 }
 

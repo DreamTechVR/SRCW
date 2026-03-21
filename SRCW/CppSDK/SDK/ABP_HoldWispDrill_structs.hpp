@@ -21,8 +21,7 @@ namespace SDK
 struct ABP_HoldWispDrill::FAnimBlueprintGeneratedConstantData final : public ABPT_HoldItem::FAnimBlueprintGeneratedConstantData
 {
 };
-static_assert(alignof(ABP_HoldWispDrill::FAnimBlueprintGeneratedConstantData) == 0x000008, "Wrong alignment on ABP_HoldWispDrill::FAnimBlueprintGeneratedConstantData");
-static_assert(sizeof(ABP_HoldWispDrill::FAnimBlueprintGeneratedConstantData) == 0x000D30, "Wrong size on ABP_HoldWispDrill::FAnimBlueprintGeneratedConstantData");
+DUMPER7_ASSERTS_ABP_HoldWispDrill__FAnimBlueprintGeneratedConstantData;
 
 }
 

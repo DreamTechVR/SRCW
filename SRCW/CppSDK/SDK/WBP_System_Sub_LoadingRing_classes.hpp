@@ -41,24 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_System_Sub_LoadingRing_C">();
+		BP_STATIC_CLASS_IMPL("WBP_System_Sub_LoadingRing_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_System_Sub_LoadingRing_C")
 	}
 	static class UWBP_System_Sub_LoadingRing_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_System_Sub_LoadingRing_C>();
 	}
 };
-static_assert(alignof(UWBP_System_Sub_LoadingRing_C) == 0x000008, "Wrong alignment on UWBP_System_Sub_LoadingRing_C");
-static_assert(sizeof(UWBP_System_Sub_LoadingRing_C) == 0x000328, "Wrong size on UWBP_System_Sub_LoadingRing_C");
-static_assert(offsetof(UWBP_System_Sub_LoadingRing_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_System_Sub_LoadingRing_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Sub_LoadingRing_C, Coin_Out) == 0x0002E8, "Member 'UWBP_System_Sub_LoadingRing_C::Coin_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Sub_LoadingRing_C, Coin_Loop) == 0x0002F0, "Member 'UWBP_System_Sub_LoadingRing_C::Coin_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Sub_LoadingRing_C, Particle_01) == 0x0002F8, "Member 'UWBP_System_Sub_LoadingRing_C::Particle_01' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Sub_LoadingRing_C, Particle_02) == 0x000300, "Member 'UWBP_System_Sub_LoadingRing_C::Particle_02' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Sub_LoadingRing_C, Particle_03) == 0x000308, "Member 'UWBP_System_Sub_LoadingRing_C::Particle_03' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Sub_LoadingRing_C, Particle_04) == 0x000310, "Member 'UWBP_System_Sub_LoadingRing_C::Particle_04' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Sub_LoadingRing_C, PAT_Ring) == 0x000318, "Member 'UWBP_System_Sub_LoadingRing_C::PAT_Ring' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Sub_LoadingRing_C, NewVar_0) == 0x000320, "Member 'UWBP_System_Sub_LoadingRing_C::NewVar_0' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_System_Sub_LoadingRing_C;
 
 }
 

@@ -21,9 +21,7 @@ struct ABP_Zazz_Driver_C_GetLinkedAnimClass final
 public:
 	class UClass*                                 Out_AnimInstance;                                  // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ABP_Zazz_Driver_C_GetLinkedAnimClass) == 0x000008, "Wrong alignment on ABP_Zazz_Driver_C_GetLinkedAnimClass");
-static_assert(sizeof(ABP_Zazz_Driver_C_GetLinkedAnimClass) == 0x000008, "Wrong size on ABP_Zazz_Driver_C_GetLinkedAnimClass");
-static_assert(offsetof(ABP_Zazz_Driver_C_GetLinkedAnimClass, Out_AnimInstance) == 0x000000, "Member 'ABP_Zazz_Driver_C_GetLinkedAnimClass::Out_AnimInstance' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_Zazz_Driver_C_GetLinkedAnimClass;
 
 }
 

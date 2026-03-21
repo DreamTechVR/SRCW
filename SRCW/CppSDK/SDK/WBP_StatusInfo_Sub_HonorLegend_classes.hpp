@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -58,42 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_StatusInfo_Sub_HonorLegend_C">();
+		BP_STATIC_CLASS_IMPL("WBP_StatusInfo_Sub_HonorLegend_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_StatusInfo_Sub_HonorLegend_C")
 	}
 	static class UWBP_StatusInfo_Sub_HonorLegend_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_StatusInfo_Sub_HonorLegend_C>();
 	}
 };
-static_assert(alignof(UWBP_StatusInfo_Sub_HonorLegend_C) == 0x000008, "Wrong alignment on UWBP_StatusInfo_Sub_HonorLegend_C");
-static_assert(sizeof(UWBP_StatusInfo_Sub_HonorLegend_C) == 0x000468, "Wrong size on UWBP_StatusInfo_Sub_HonorLegend_C");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorLegend_C, UberGraphFrame) == 0x000390, "Member 'UWBP_StatusInfo_Sub_HonorLegend_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorLegend_C, base) == 0x000398, "Member 'UWBP_StatusInfo_Sub_HonorLegend_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorLegend_C, base_1) == 0x0003A0, "Member 'UWBP_StatusInfo_Sub_HonorLegend_C::base_1' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorLegend_C, Base02) == 0x0003A8, "Member 'UWBP_StatusInfo_Sub_HonorLegend_C::Base02' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorLegend_C, Base02_1) == 0x0003B0, "Member 'UWBP_StatusInfo_Sub_HonorLegend_C::Base02_1' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorLegend_C, Base02_2) == 0x0003B8, "Member 'UWBP_StatusInfo_Sub_HonorLegend_C::Base02_2' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorLegend_C, Base02_3) == 0x0003C0, "Member 'UWBP_StatusInfo_Sub_HonorLegend_C::Base02_3' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorLegend_C, Base_02) == 0x0003C8, "Member 'UWBP_StatusInfo_Sub_HonorLegend_C::Base_02' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorLegend_C, Base_02_line) == 0x0003D0, "Member 'UWBP_StatusInfo_Sub_HonorLegend_C::Base_02_line' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorLegend_C, Base_02_line_1) == 0x0003D8, "Member 'UWBP_StatusInfo_Sub_HonorLegend_C::Base_02_line_1' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorLegend_C, Eff) == 0x0003E0, "Member 'UWBP_StatusInfo_Sub_HonorLegend_C::Eff' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorLegend_C, Eff_1) == 0x0003E8, "Member 'UWBP_StatusInfo_Sub_HonorLegend_C::Eff_1' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorLegend_C, Eff_2) == 0x0003F0, "Member 'UWBP_StatusInfo_Sub_HonorLegend_C::Eff_2' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorLegend_C, Eff_3) == 0x0003F8, "Member 'UWBP_StatusInfo_Sub_HonorLegend_C::Eff_3' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorLegend_C, Eff_4) == 0x000400, "Member 'UWBP_StatusInfo_Sub_HonorLegend_C::Eff_4' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorLegend_C, Eff_01) == 0x000408, "Member 'UWBP_StatusInfo_Sub_HonorLegend_C::Eff_01' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorLegend_C, RaceFlag_Left) == 0x000410, "Member 'UWBP_StatusInfo_Sub_HonorLegend_C::RaceFlag_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorLegend_C, RaceFlag_Right) == 0x000418, "Member 'UWBP_StatusInfo_Sub_HonorLegend_C::RaceFlag_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorLegend_C, TXT_HeaderGrade_Legend) == 0x000420, "Member 'UWBP_StatusInfo_Sub_HonorLegend_C::TXT_HeaderGrade_Legend' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorLegend_C, TXT_HeaderRanking_Legend) == 0x000428, "Member 'UWBP_StatusInfo_Sub_HonorLegend_C::TXT_HeaderRanking_Legend' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorLegend_C, WBP_StatusInfo_Sub_HonorTable_01) == 0x000430, "Member 'UWBP_StatusInfo_Sub_HonorLegend_C::WBP_StatusInfo_Sub_HonorTable_01' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorLegend_C, WBP_StatusInfo_Sub_HonorTable_01_RankingLegend) == 0x000438, "Member 'UWBP_StatusInfo_Sub_HonorLegend_C::WBP_StatusInfo_Sub_HonorTable_01_RankingLegend' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorLegend_C, WBP_StatusInfo_Sub_HonorTable_02) == 0x000440, "Member 'UWBP_StatusInfo_Sub_HonorLegend_C::WBP_StatusInfo_Sub_HonorTable_02' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorLegend_C, WBP_StatusInfo_Sub_HonorTable_02_RankingLegend) == 0x000448, "Member 'UWBP_StatusInfo_Sub_HonorLegend_C::WBP_StatusInfo_Sub_HonorTable_02_RankingLegend' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorLegend_C, WBP_StatusInfo_Sub_HonorTable_03) == 0x000450, "Member 'UWBP_StatusInfo_Sub_HonorLegend_C::WBP_StatusInfo_Sub_HonorTable_03' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorLegend_C, WBP_StatusInfo_Sub_HonorTable_04) == 0x000458, "Member 'UWBP_StatusInfo_Sub_HonorLegend_C::WBP_StatusInfo_Sub_HonorTable_04' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorLegend_C, WBP_StatusInfo_Sub_HonorTable_05) == 0x000460, "Member 'UWBP_StatusInfo_Sub_HonorLegend_C::WBP_StatusInfo_Sub_HonorTable_05' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_StatusInfo_Sub_HonorLegend_C;
 
 }
 

@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ABP_HoldTripleKingWhiteBoost_C">();
+		BP_STATIC_CLASS_IMPL("ABP_HoldTripleKingWhiteBoost_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABP_HoldTripleKingWhiteBoost_C")
 	}
 	static class UABP_HoldTripleKingWhiteBoost_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UABP_HoldTripleKingWhiteBoost_C>();
 	}
 };
-static_assert(alignof(UABP_HoldTripleKingWhiteBoost_C) == 0x000010, "Wrong alignment on UABP_HoldTripleKingWhiteBoost_C");
-static_assert(sizeof(UABP_HoldTripleKingWhiteBoost_C) == 0x001130, "Wrong size on UABP_HoldTripleKingWhiteBoost_C");
+DUMPER7_ASSERTS_UABP_HoldTripleKingWhiteBoost_C;
 
 }
 

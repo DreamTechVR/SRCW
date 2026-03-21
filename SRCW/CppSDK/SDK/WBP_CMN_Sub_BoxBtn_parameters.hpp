@@ -28,12 +28,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_Sub_BoxBtn_C_ExecuteUbergraph_WBP_CMN_Sub_BoxBtn) == 0x000008, "Wrong alignment on WBP_CMN_Sub_BoxBtn_C_ExecuteUbergraph_WBP_CMN_Sub_BoxBtn");
-static_assert(sizeof(WBP_CMN_Sub_BoxBtn_C_ExecuteUbergraph_WBP_CMN_Sub_BoxBtn) == 0x000020, "Wrong size on WBP_CMN_Sub_BoxBtn_C_ExecuteUbergraph_WBP_CMN_Sub_BoxBtn");
-static_assert(offsetof(WBP_CMN_Sub_BoxBtn_C_ExecuteUbergraph_WBP_CMN_Sub_BoxBtn, EntryPoint) == 0x000000, "Member 'WBP_CMN_Sub_BoxBtn_C_ExecuteUbergraph_WBP_CMN_Sub_BoxBtn::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_BoxBtn_C_ExecuteUbergraph_WBP_CMN_Sub_BoxBtn, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_CMN_Sub_BoxBtn_C_ExecuteUbergraph_WBP_CMN_Sub_BoxBtn::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_BoxBtn_C_ExecuteUbergraph_WBP_CMN_Sub_BoxBtn, CallFunc_PlayAnimation_ReturnValue_1) == 0x000010, "Member 'WBP_CMN_Sub_BoxBtn_C_ExecuteUbergraph_WBP_CMN_Sub_BoxBtn::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_BoxBtn_C_ExecuteUbergraph_WBP_CMN_Sub_BoxBtn, CallFunc_PlayAnimation_ReturnValue_2) == 0x000018, "Member 'WBP_CMN_Sub_BoxBtn_C_ExecuteUbergraph_WBP_CMN_Sub_BoxBtn::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Sub_BoxBtn_C_ExecuteUbergraph_WBP_CMN_Sub_BoxBtn;
 
 // Function WBP_CMN_Sub_BoxBtn.WBP_CMN_Sub_BoxBtn_C.OnFocusReceived
 // 0x0268 (0x0268 - 0x0000)
@@ -46,13 +41,7 @@ public:
 	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x00F8(0x00B8)()
 	struct FEventReply                            CallFunc_OnFocusReceived_ReturnValue;              // 0x01B0(0x00B8)()
 };
-static_assert(alignof(WBP_CMN_Sub_BoxBtn_C_OnFocusReceived) == 0x000008, "Wrong alignment on WBP_CMN_Sub_BoxBtn_C_OnFocusReceived");
-static_assert(sizeof(WBP_CMN_Sub_BoxBtn_C_OnFocusReceived) == 0x000268, "Wrong size on WBP_CMN_Sub_BoxBtn_C_OnFocusReceived");
-static_assert(offsetof(WBP_CMN_Sub_BoxBtn_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'WBP_CMN_Sub_BoxBtn_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_BoxBtn_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'WBP_CMN_Sub_BoxBtn_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_BoxBtn_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'WBP_CMN_Sub_BoxBtn_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_BoxBtn_C_OnFocusReceived, K2Node_MakeStruct_EventReply) == 0x0000F8, "Member 'WBP_CMN_Sub_BoxBtn_C_OnFocusReceived::K2Node_MakeStruct_EventReply' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_BoxBtn_C_OnFocusReceived, CallFunc_OnFocusReceived_ReturnValue) == 0x0001B0, "Member 'WBP_CMN_Sub_BoxBtn_C_OnFocusReceived::CallFunc_OnFocusReceived_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Sub_BoxBtn_C_OnFocusReceived;
 
 // Function WBP_CMN_Sub_BoxBtn.WBP_CMN_Sub_BoxBtn_C.SetText
 // 0x0010 (0x0010 - 0x0000)
@@ -61,9 +50,7 @@ struct WBP_CMN_Sub_BoxBtn_C_SetText final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_CMN_Sub_BoxBtn_C_SetText) == 0x000008, "Wrong alignment on WBP_CMN_Sub_BoxBtn_C_SetText");
-static_assert(sizeof(WBP_CMN_Sub_BoxBtn_C_SetText) == 0x000010, "Wrong size on WBP_CMN_Sub_BoxBtn_C_SetText");
-static_assert(offsetof(WBP_CMN_Sub_BoxBtn_C_SetText, InText) == 0x000000, "Member 'WBP_CMN_Sub_BoxBtn_C_SetText::InText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_Sub_BoxBtn_C_SetText;
 
 }
 

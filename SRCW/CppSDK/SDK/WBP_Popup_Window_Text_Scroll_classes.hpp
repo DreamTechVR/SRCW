@@ -152,44 +152,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Popup_Window_Text_Scroll_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Popup_Window_Text_Scroll_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Popup_Window_Text_Scroll_C")
 	}
 	static class UWBP_Popup_Window_Text_Scroll_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Popup_Window_Text_Scroll_C>();
 	}
 };
-static_assert(alignof(UWBP_Popup_Window_Text_Scroll_C) == 0x000008, "Wrong alignment on UWBP_Popup_Window_Text_Scroll_C");
-static_assert(sizeof(UWBP_Popup_Window_Text_Scroll_C) == 0x0004D0, "Wrong size on UWBP_Popup_Window_Text_Scroll_C");
-static_assert(offsetof(UWBP_Popup_Window_Text_Scroll_C, UberGraphFrame) == 0x0003F0, "Member 'UWBP_Popup_Window_Text_Scroll_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Text_Scroll_C, Popup_Out) == 0x0003F8, "Member 'UWBP_Popup_Window_Text_Scroll_C::Popup_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Text_Scroll_C, Popup_Loop) == 0x000400, "Member 'UWBP_Popup_Window_Text_Scroll_C::Popup_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Text_Scroll_C, Popup_In) == 0x000408, "Member 'UWBP_Popup_Window_Text_Scroll_C::Popup_In' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Text_Scroll_C, DSP_WS_HeaderText) == 0x000410, "Member 'UWBP_Popup_Window_Text_Scroll_C::DSP_WS_HeaderText' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Text_Scroll_C, Header_Blue) == 0x000418, "Member 'UWBP_Popup_Window_Text_Scroll_C::Header_Blue' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Text_Scroll_C, RetainerBox) == 0x000420, "Member 'UWBP_Popup_Window_Text_Scroll_C::RetainerBox' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Text_Scroll_C, RetainerBox_0) == 0x000428, "Member 'UWBP_Popup_Window_Text_Scroll_C::RetainerBox_0' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Text_Scroll_C, RetainerBox_JaggyOff_L02) == 0x000430, "Member 'UWBP_Popup_Window_Text_Scroll_C::RetainerBox_JaggyOff_L02' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Text_Scroll_C, SafeZone) == 0x000438, "Member 'UWBP_Popup_Window_Text_Scroll_C::SafeZone' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Text_Scroll_C, ScrollBox) == 0x000440, "Member 'UWBP_Popup_Window_Text_Scroll_C::ScrollBox' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Text_Scroll_C, SizeBox) == 0x000448, "Member 'UWBP_Popup_Window_Text_Scroll_C::SizeBox' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Text_Scroll_C, TXT_Info) == 0x000450, "Member 'UWBP_Popup_Window_Text_Scroll_C::TXT_Info' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Text_Scroll_C, TXT_MainTitle) == 0x000458, "Member 'UWBP_Popup_Window_Text_Scroll_C::TXT_MainTitle' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Text_Scroll_C, TXT_MainTitle_Attention) == 0x000460, "Member 'UWBP_Popup_Window_Text_Scroll_C::TXT_MainTitle_Attention' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Text_Scroll_C, WBP_Popup_Sub_Btn_Standard_01) == 0x000468, "Member 'UWBP_Popup_Window_Text_Scroll_C::WBP_Popup_Sub_Btn_Standard_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Text_Scroll_C, WBP_Popup_Sub_Btn_Standard_02) == 0x000470, "Member 'UWBP_Popup_Window_Text_Scroll_C::WBP_Popup_Sub_Btn_Standard_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Text_Scroll_C, WindowBase) == 0x000478, "Member 'UWBP_Popup_Window_Text_Scroll_C::WindowBase' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Text_Scroll_C, Buttons) == 0x000480, "Member 'UWBP_Popup_Window_Text_Scroll_C::Buttons' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Text_Scroll_C, WindowType) == 0x000490, "Member 'UWBP_Popup_Window_Text_Scroll_C::WindowType' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Text_Scroll_C, ButtonType) == 0x000491, "Member 'UWBP_Popup_Window_Text_Scroll_C::ButtonType' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Text_Scroll_C, ButtonPanel) == 0x000498, "Member 'UWBP_Popup_Window_Text_Scroll_C::ButtonPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Text_Scroll_C, PlayerControllerIndex) == 0x0004A0, "Member 'UWBP_Popup_Window_Text_Scroll_C::PlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Text_Scroll_C, DecisionButtonIndex) == 0x0004A4, "Member 'UWBP_Popup_Window_Text_Scroll_C::DecisionButtonIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Text_Scroll_C, FinishedLicenseOutAnimation) == 0x0004A8, "Member 'UWBP_Popup_Window_Text_Scroll_C::FinishedLicenseOutAnimation' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Text_Scroll_C, UpKeyInput) == 0x0004B8, "Member 'UWBP_Popup_Window_Text_Scroll_C::UpKeyInput' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Text_Scroll_C, DownKeyInput) == 0x0004B9, "Member 'UWBP_Popup_Window_Text_Scroll_C::DownKeyInput' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Text_Scroll_C, ScrollOffset) == 0x0004C0, "Member 'UWBP_Popup_Window_Text_Scroll_C::ScrollOffset' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Window_Text_Scroll_C, IsPressing) == 0x0004C8, "Member 'UWBP_Popup_Window_Text_Scroll_C::IsPressing' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Popup_Window_Text_Scroll_C;
 
 }
 

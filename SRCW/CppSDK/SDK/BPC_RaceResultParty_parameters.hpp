@@ -36,20 +36,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceResultParty_C_ExecuteUbergraph_BPC_RaceResultParty) == 0x000008, "Wrong alignment on BPC_RaceResultParty_C_ExecuteUbergraph_BPC_RaceResultParty");
-static_assert(sizeof(BPC_RaceResultParty_C_ExecuteUbergraph_BPC_RaceResultParty) == 0x000040, "Wrong size on BPC_RaceResultParty_C_ExecuteUbergraph_BPC_RaceResultParty");
-static_assert(offsetof(BPC_RaceResultParty_C_ExecuteUbergraph_BPC_RaceResultParty, EntryPoint) == 0x000000, "Member 'BPC_RaceResultParty_C_ExecuteUbergraph_BPC_RaceResultParty::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultParty_C_ExecuteUbergraph_BPC_RaceResultParty, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'BPC_RaceResultParty_C_ExecuteUbergraph_BPC_RaceResultParty::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultParty_C_ExecuteUbergraph_BPC_RaceResultParty, K2Node_Event_InDeltaTime) == 0x000008, "Member 'BPC_RaceResultParty_C_ExecuteUbergraph_BPC_RaceResultParty::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultParty_C_ExecuteUbergraph_BPC_RaceResultParty, CallFunc_MakeLiteralByte_ReturnValue) == 0x00000C, "Member 'BPC_RaceResultParty_C_ExecuteUbergraph_BPC_RaceResultParty::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultParty_C_ExecuteUbergraph_BPC_RaceResultParty, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000010, "Member 'BPC_RaceResultParty_C_ExecuteUbergraph_BPC_RaceResultParty::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultParty_C_ExecuteUbergraph_BPC_RaceResultParty, CallFunc_GetOwnerStateMachine_ReturnValue) == 0x000018, "Member 'BPC_RaceResultParty_C_ExecuteUbergraph_BPC_RaceResultParty::CallFunc_GetOwnerStateMachine_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultParty_C_ExecuteUbergraph_BPC_RaceResultParty, K2Node_DynamicCast_AsBP_Race_Result_Sequence) == 0x000020, "Member 'BPC_RaceResultParty_C_ExecuteUbergraph_BPC_RaceResultParty::K2Node_DynamicCast_AsBP_Race_Result_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultParty_C_ExecuteUbergraph_BPC_RaceResultParty, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'BPC_RaceResultParty_C_ExecuteUbergraph_BPC_RaceResultParty::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultParty_C_ExecuteUbergraph_BPC_RaceResultParty, CallFunc_GetGroupRaceResultWidget_widget) == 0x000030, "Member 'BPC_RaceResultParty_C_ExecuteUbergraph_BPC_RaceResultParty::CallFunc_GetGroupRaceResultWidget_widget' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultParty_C_ExecuteUbergraph_BPC_RaceResultParty, CallFunc_IsValid_ReturnValue_1) == 0x000038, "Member 'BPC_RaceResultParty_C_ExecuteUbergraph_BPC_RaceResultParty::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultParty_C_ExecuteUbergraph_BPC_RaceResultParty, CallFunc_IsValid_ReturnValue_2) == 0x000039, "Member 'BPC_RaceResultParty_C_ExecuteUbergraph_BPC_RaceResultParty::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceResultParty_C_ExecuteUbergraph_BPC_RaceResultParty, CallFunc_IsVisible_ReturnValue) == 0x00003A, "Member 'BPC_RaceResultParty_C_ExecuteUbergraph_BPC_RaceResultParty::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceResultParty_C_ExecuteUbergraph_BPC_RaceResultParty;
 
 // Function BPC_RaceResultParty.BPC_RaceResultParty_C.OnUpdateState
 // 0x0004 (0x0004 - 0x0000)
@@ -58,9 +45,7 @@ struct BPC_RaceResultParty_C_OnUpdateState final
 public:
 	float                                         InDeltaTime;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BPC_RaceResultParty_C_OnUpdateState) == 0x000004, "Wrong alignment on BPC_RaceResultParty_C_OnUpdateState");
-static_assert(sizeof(BPC_RaceResultParty_C_OnUpdateState) == 0x000004, "Wrong size on BPC_RaceResultParty_C_OnUpdateState");
-static_assert(offsetof(BPC_RaceResultParty_C_OnUpdateState, InDeltaTime) == 0x000000, "Member 'BPC_RaceResultParty_C_OnUpdateState::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_BPC_RaceResultParty_C_OnUpdateState;
 
 }
 

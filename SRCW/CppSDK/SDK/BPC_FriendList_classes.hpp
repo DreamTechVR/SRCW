@@ -55,20 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_FriendList_C">();
+		BP_STATIC_CLASS_IMPL("BPC_FriendList_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_FriendList_C")
 	}
 	static class UBPC_FriendList_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_FriendList_C>();
 	}
 };
-static_assert(alignof(UBPC_FriendList_C) == 0x000008, "Wrong alignment on UBPC_FriendList_C");
-static_assert(sizeof(UBPC_FriendList_C) == 0x000170, "Wrong size on UBPC_FriendList_C");
-static_assert(offsetof(UBPC_FriendList_C, UberGraphFrame) == 0x000148, "Member 'UBPC_FriendList_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_FriendList_C, MenuSequence) == 0x000150, "Member 'UBPC_FriendList_C::MenuSequence' has a wrong offset!");
-static_assert(offsetof(UBPC_FriendList_C, bLobbySequence) == 0x000158, "Member 'UBPC_FriendList_C::bLobbySequence' has a wrong offset!");
-static_assert(offsetof(UBPC_FriendList_C, LobbySquadParentActor) == 0x000160, "Member 'UBPC_FriendList_C::LobbySquadParentActor' has a wrong offset!");
-static_assert(offsetof(UBPC_FriendList_C, Current_Lobby_Type) == 0x000168, "Member 'UBPC_FriendList_C::Current_Lobby_Type' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_FriendList_C;
 
 }
 

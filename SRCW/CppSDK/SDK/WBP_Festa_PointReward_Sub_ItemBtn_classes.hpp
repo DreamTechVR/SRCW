@@ -12,8 +12,8 @@
 
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UnionUI_classes.hpp"
 #include "UMG_structs.hpp"
+#include "UnionUI_classes.hpp"
 
 
 namespace SDK
@@ -81,34 +81,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Festa_PointReward_Sub_ItemBtn_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Festa_PointReward_Sub_ItemBtn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Festa_PointReward_Sub_ItemBtn_C")
 	}
 	static class UWBP_Festa_PointReward_Sub_ItemBtn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Festa_PointReward_Sub_ItemBtn_C>();
 	}
 };
-static_assert(alignof(UWBP_Festa_PointReward_Sub_ItemBtn_C) == 0x000008, "Wrong alignment on UWBP_Festa_PointReward_Sub_ItemBtn_C");
-static_assert(sizeof(UWBP_Festa_PointReward_Sub_ItemBtn_C) == 0x000500, "Wrong size on UWBP_Festa_PointReward_Sub_ItemBtn_C");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_ItemBtn_C, UberGraphFrame) == 0x000480, "Member 'UWBP_Festa_PointReward_Sub_ItemBtn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_ItemBtn_C, Select_to_Get) == 0x000488, "Member 'UWBP_Festa_PointReward_Sub_ItemBtn_C::Select_to_Get' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_ItemBtn_C, Get_Select_Loop) == 0x000490, "Member 'UWBP_Festa_PointReward_Sub_ItemBtn_C::Get_Select_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_ItemBtn_C, Get_Loop) == 0x000498, "Member 'UWBP_Festa_PointReward_Sub_ItemBtn_C::Get_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_ItemBtn_C, Select_Loop) == 0x0004A0, "Member 'UWBP_Festa_PointReward_Sub_ItemBtn_C::Select_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_ItemBtn_C, Active_Loop) == 0x0004A8, "Member 'UWBP_Festa_PointReward_Sub_ItemBtn_C::Active_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_ItemBtn_C, Arrow_Left) == 0x0004B0, "Member 'UWBP_Festa_PointReward_Sub_ItemBtn_C::Arrow_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_ItemBtn_C, Arrow_Right) == 0x0004B8, "Member 'UWBP_Festa_PointReward_Sub_ItemBtn_C::Arrow_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_ItemBtn_C, base) == 0x0004C0, "Member 'UWBP_Festa_PointReward_Sub_ItemBtn_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_ItemBtn_C, Button_0) == 0x0004C8, "Member 'UWBP_Festa_PointReward_Sub_ItemBtn_C::Button_0' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_ItemBtn_C, TXT_Num_FestaPoint) == 0x0004D0, "Member 'UWBP_Festa_PointReward_Sub_ItemBtn_C::TXT_Num_FestaPoint' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_ItemBtn_C, TXT_Num_Item) == 0x0004D8, "Member 'UWBP_Festa_PointReward_Sub_ItemBtn_C::TXT_Num_Item' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_ItemBtn_C, WBP_CMN_ItemIcon) == 0x0004E0, "Member 'UWBP_Festa_PointReward_Sub_ItemBtn_C::WBP_CMN_ItemIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_ItemBtn_C, WidgetSwitcher_Base) == 0x0004E8, "Member 'UWBP_Festa_PointReward_Sub_ItemBtn_C::WidgetSwitcher_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_ItemBtn_C, MouseDown) == 0x0004F0, "Member 'UWBP_Festa_PointReward_Sub_ItemBtn_C::MouseDown' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_ItemBtn_C, LeftEnd) == 0x0004F1, "Member 'UWBP_Festa_PointReward_Sub_ItemBtn_C::LeftEnd' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_ItemBtn_C, RightEnd) == 0x0004F2, "Member 'UWBP_Festa_PointReward_Sub_ItemBtn_C::RightEnd' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_ItemBtn_C, RewardDataNum) == 0x0004F4, "Member 'UWBP_Festa_PointReward_Sub_ItemBtn_C::RewardDataNum' has a wrong offset!");
-static_assert(offsetof(UWBP_Festa_PointReward_Sub_ItemBtn_C, IsGet) == 0x0004F8, "Member 'UWBP_Festa_PointReward_Sub_ItemBtn_C::IsGet' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Festa_PointReward_Sub_ItemBtn_C;
 
 }
 

@@ -12,8 +12,8 @@
 
 #include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
-#include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
+#include "UnionSystem_structs.hpp"
 
 
 namespace SDK::Params
@@ -73,47 +73,7 @@ public:
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x00A8(0x0010)()
 	int32                                         K2Node_Select_Default_1;                           // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline) == 0x000008, "Wrong alignment on WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline");
-static_assert(sizeof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline) == 0x0000C0, "Wrong size on WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, EntryPoint) == 0x000000, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, Temp_int_Variable) == 0x000004, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, Temp_int_Variable_1) == 0x000008, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, Temp_int_Variable_2) == 0x00000C, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, Temp_int_Variable_3) == 0x000010, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, Temp_int_Variable_4) == 0x000014, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, Temp_int_Variable_5) == 0x000018, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::Temp_int_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, CallFunc_IsValid_ReturnValue) == 0x00001C, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, CallFunc_IsValid_ReturnValue_1) == 0x00001D, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, Temp_byte_Variable) == 0x00001E, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, Temp_int_Variable_6) == 0x000020, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::Temp_int_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, Temp_int_Variable_7) == 0x000024, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::Temp_int_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, Temp_int_Variable_8) == 0x000028, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::Temp_int_Variable_8' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, Temp_int_Variable_9) == 0x00002C, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::Temp_int_Variable_9' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, Temp_int_Variable_10) == 0x000030, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::Temp_int_Variable_10' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, Temp_int_Variable_11) == 0x000034, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::Temp_int_Variable_11' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, Temp_int_Variable_12) == 0x000038, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::Temp_int_Variable_12' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, Temp_int_Variable_13) == 0x00003C, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::Temp_int_Variable_13' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, Temp_int_Variable_14) == 0x000040, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::Temp_int_Variable_14' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, K2Node_Event_Type) == 0x000044, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::K2Node_Event_Type' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, K2Node_Select_Default) == 0x000048, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, K2Node_Event_InText) == 0x000050, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::K2Node_Event_InText' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, CallFunc_IsValid_ReturnValue_2) == 0x000060, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, CallFunc_SoundPlay_ReturnValue) == 0x000064, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, CallFunc_SoundPlay_ReturnValue_1) == 0x000068, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, K2Node_SwitchEnum_CmpSuccess) == 0x00006C, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, CallFunc_SoundPlay_ReturnValue_2) == 0x000070, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::CallFunc_SoundPlay_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, K2Node_SwitchEnum_CmpSuccess_1) == 0x000074, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, Temp_int_Variable_15) == 0x000078, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::Temp_int_Variable_15' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, CallFunc_CountPrimalRivalTeams_ReturnValue) == 0x00007C, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::CallFunc_CountPrimalRivalTeams_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, CallFunc_CountEliminatedPrimalRivalTeams_ReturnValue) == 0x000080, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::CallFunc_CountEliminatedPrimalRivalTeams_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, K2Node_Event_InFocusEvent) == 0x000084, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::K2Node_Event_InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, CallFunc_PlayAnimation_ReturnValue) == 0x000090, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, Temp_int_Variable_16) == 0x000098, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::Temp_int_Variable_16' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, K2Node_Event_IsDesignTime) == 0x00009C, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, Temp_int_Variable_17) == 0x0000A0, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::Temp_int_Variable_17' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, Temp_byte_Variable_1) == 0x0000A4, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, CallFunc_MakeLiteralText_ReturnValue) == 0x0000A8, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline, K2Node_Select_Default_1) == 0x0000B8, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline::K2Node_Select_Default_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TopMenu_Sub_BtnMode_Offline_C_ExecuteUbergraph_WBP_TopMenu_Sub_BtnMode_Offline;
 
 // Function WBP_TopMenu_Sub_BtnMode_Offline.WBP_TopMenu_Sub_BtnMode_Offline_C.JudgeMenuClose
 // 0x0020 (0x0020 - 0x0000)
@@ -130,15 +90,7 @@ public:
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TopMenu_Sub_BtnMode_Offline_C_JudgeMenuClose) == 0x000008, "Wrong alignment on WBP_TopMenu_Sub_BtnMode_Offline_C_JudgeMenuClose");
-static_assert(sizeof(WBP_TopMenu_Sub_BtnMode_Offline_C_JudgeMenuClose) == 0x000020, "Wrong size on WBP_TopMenu_Sub_BtnMode_Offline_C_JudgeMenuClose");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_JudgeMenuClose, CallFunc_IsOpenMenuByConditions_ReturnValue) == 0x000000, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_JudgeMenuClose::CallFunc_IsOpenMenuByConditions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_JudgeMenuClose, CallFunc_IsOpenMenuByConditions_ReturnValue_1) == 0x000001, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_JudgeMenuClose::CallFunc_IsOpenMenuByConditions_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_JudgeMenuClose, CallFunc_IsDisableSelectTimeTrialMilestoneVersion_ReturnValue) == 0x000002, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_JudgeMenuClose::CallFunc_IsDisableSelectTimeTrialMilestoneVersion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_JudgeMenuClose, CallFunc_IsDisableRaceParkMilestoneVersion_ReturnValue) == 0x000003, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_JudgeMenuClose::CallFunc_IsDisableRaceParkMilestoneVersion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_JudgeMenuClose, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_JudgeMenuClose::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_JudgeMenuClose, K2Node_SwitchEnum_CmpSuccess) == 0x000010, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_JudgeMenuClose::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_JudgeMenuClose, CallFunc_PlayAnimation_ReturnValue_1) == 0x000018, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_JudgeMenuClose::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TopMenu_Sub_BtnMode_Offline_C_JudgeMenuClose;
 
 // Function WBP_TopMenu_Sub_BtnMode_Offline.WBP_TopMenu_Sub_BtnMode_Offline_C.OnFocusLost
 // 0x0008 (0x0008 - 0x0000)
@@ -147,9 +99,7 @@ struct WBP_TopMenu_Sub_BtnMode_Offline_C_OnFocusLost final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(WBP_TopMenu_Sub_BtnMode_Offline_C_OnFocusLost) == 0x000004, "Wrong alignment on WBP_TopMenu_Sub_BtnMode_Offline_C_OnFocusLost");
-static_assert(sizeof(WBP_TopMenu_Sub_BtnMode_Offline_C_OnFocusLost) == 0x000008, "Wrong size on WBP_TopMenu_Sub_BtnMode_Offline_C_OnFocusLost");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_OnFocusLost, InFocusEvent) == 0x000000, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_OnFocusLost::InFocusEvent' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TopMenu_Sub_BtnMode_Offline_C_OnFocusLost;
 
 // Function WBP_TopMenu_Sub_BtnMode_Offline.WBP_TopMenu_Sub_BtnMode_Offline_C.OnFocusReceived
 // 0x0268 (0x0268 - 0x0000)
@@ -162,13 +112,7 @@ public:
 	struct FEventReply                            CallFunc_OnFocusReceived_ReturnValue;              // 0x00F8(0x00B8)()
 	struct FEventReply                            CallFunc_OnFocusReceivedImpl_ReturnValue;          // 0x01B0(0x00B8)()
 };
-static_assert(alignof(WBP_TopMenu_Sub_BtnMode_Offline_C_OnFocusReceived) == 0x000008, "Wrong alignment on WBP_TopMenu_Sub_BtnMode_Offline_C_OnFocusReceived");
-static_assert(sizeof(WBP_TopMenu_Sub_BtnMode_Offline_C_OnFocusReceived) == 0x000268, "Wrong size on WBP_TopMenu_Sub_BtnMode_Offline_C_OnFocusReceived");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_OnFocusReceived, CallFunc_OnFocusReceived_ReturnValue) == 0x0000F8, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_OnFocusReceived::CallFunc_OnFocusReceived_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_OnFocusReceived, CallFunc_OnFocusReceivedImpl_ReturnValue) == 0x0001B0, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_OnFocusReceived::CallFunc_OnFocusReceivedImpl_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TopMenu_Sub_BtnMode_Offline_C_OnFocusReceived;
 
 // Function WBP_TopMenu_Sub_BtnMode_Offline.WBP_TopMenu_Sub_BtnMode_Offline_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -177,9 +121,7 @@ struct WBP_TopMenu_Sub_BtnMode_Offline_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TopMenu_Sub_BtnMode_Offline_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_TopMenu_Sub_BtnMode_Offline_C_PreConstruct");
-static_assert(sizeof(WBP_TopMenu_Sub_BtnMode_Offline_C_PreConstruct) == 0x000001, "Wrong size on WBP_TopMenu_Sub_BtnMode_Offline_C_PreConstruct");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TopMenu_Sub_BtnMode_Offline_C_PreConstruct;
 
 // Function WBP_TopMenu_Sub_BtnMode_Offline.WBP_TopMenu_Sub_BtnMode_Offline_C.SetIcon
 // 0x0001 (0x0001 - 0x0000)
@@ -188,9 +130,7 @@ struct WBP_TopMenu_Sub_BtnMode_Offline_C_SetIcon final
 public:
 	ECommonMenuButtonType                         Type;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TopMenu_Sub_BtnMode_Offline_C_SetIcon) == 0x000001, "Wrong alignment on WBP_TopMenu_Sub_BtnMode_Offline_C_SetIcon");
-static_assert(sizeof(WBP_TopMenu_Sub_BtnMode_Offline_C_SetIcon) == 0x000001, "Wrong size on WBP_TopMenu_Sub_BtnMode_Offline_C_SetIcon");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_SetIcon, Type) == 0x000000, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_SetIcon::Type' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TopMenu_Sub_BtnMode_Offline_C_SetIcon;
 
 // Function WBP_TopMenu_Sub_BtnMode_Offline.WBP_TopMenu_Sub_BtnMode_Offline_C.SetText
 // 0x0010 (0x0010 - 0x0000)
@@ -199,9 +139,7 @@ struct WBP_TopMenu_Sub_BtnMode_Offline_C_SetText final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_TopMenu_Sub_BtnMode_Offline_C_SetText) == 0x000008, "Wrong alignment on WBP_TopMenu_Sub_BtnMode_Offline_C_SetText");
-static_assert(sizeof(WBP_TopMenu_Sub_BtnMode_Offline_C_SetText) == 0x000010, "Wrong size on WBP_TopMenu_Sub_BtnMode_Offline_C_SetText");
-static_assert(offsetof(WBP_TopMenu_Sub_BtnMode_Offline_C_SetText, InText) == 0x000000, "Member 'WBP_TopMenu_Sub_BtnMode_Offline_C_SetText::InText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TopMenu_Sub_BtnMode_Offline_C_SetText;
 
 }
 

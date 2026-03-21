@@ -23,15 +23,18 @@ class ABP_MenuSequenceHolder_C final : public AHierarchicalStateMachineHolder
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_MenuSequenceHolder_C">();
+		BP_STATIC_CLASS_IMPL("BP_MenuSequenceHolder_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_MenuSequenceHolder_C")
 	}
 	static class ABP_MenuSequenceHolder_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_MenuSequenceHolder_C>();
 	}
 };
-static_assert(alignof(ABP_MenuSequenceHolder_C) == 0x000008, "Wrong alignment on ABP_MenuSequenceHolder_C");
-static_assert(sizeof(ABP_MenuSequenceHolder_C) == 0x0002D8, "Wrong size on ABP_MenuSequenceHolder_C");
+DUMPER7_ASSERTS_ABP_MenuSequenceHolder_C;
 
 }
 

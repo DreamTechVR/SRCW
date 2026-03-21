@@ -88,41 +88,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_PrivateMatch_Popup_Sub_Info_C">();
+		BP_STATIC_CLASS_IMPL("WBP_PrivateMatch_Popup_Sub_Info_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_PrivateMatch_Popup_Sub_Info_C")
 	}
 	static class UWBP_PrivateMatch_Popup_Sub_Info_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_PrivateMatch_Popup_Sub_Info_C>();
 	}
 };
-static_assert(alignof(UWBP_PrivateMatch_Popup_Sub_Info_C) == 0x000008, "Wrong alignment on UWBP_PrivateMatch_Popup_Sub_Info_C");
-static_assert(sizeof(UWBP_PrivateMatch_Popup_Sub_Info_C) == 0x0003B8, "Wrong size on UWBP_PrivateMatch_Popup_Sub_Info_C");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_PrivateMatch_Popup_Sub_Info_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, Info_Out) == 0x0002E8, "Member 'UWBP_PrivateMatch_Popup_Sub_Info_C::Info_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, Info_Loop) == 0x0002F0, "Member 'UWBP_PrivateMatch_Popup_Sub_Info_C::Info_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, Info_In) == 0x0002F8, "Member 'UWBP_PrivateMatch_Popup_Sub_Info_C::Info_In' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, Balloon_01) == 0x000300, "Member 'UWBP_PrivateMatch_Popup_Sub_Info_C::Balloon_01' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, Balloon_02) == 0x000308, "Member 'UWBP_PrivateMatch_Popup_Sub_Info_C::Balloon_02' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, Cloud_01) == 0x000310, "Member 'UWBP_PrivateMatch_Popup_Sub_Info_C::Cloud_01' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, Cloud_02) == 0x000318, "Member 'UWBP_PrivateMatch_Popup_Sub_Info_C::Cloud_02' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, DSP_TXT_Num_UpLoad) == 0x000320, "Member 'UWBP_PrivateMatch_Popup_Sub_Info_C::DSP_TXT_Num_UpLoad' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, DSP_Waiting_dot_Text_Only) == 0x000328, "Member 'UWBP_PrivateMatch_Popup_Sub_Info_C::DSP_Waiting_dot_Text_Only' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, DSP_Waiting_dot_UpLoad) == 0x000330, "Member 'UWBP_PrivateMatch_Popup_Sub_Info_C::DSP_Waiting_dot_UpLoad' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, TXT_Info_Loading) == 0x000338, "Member 'UWBP_PrivateMatch_Popup_Sub_Info_C::TXT_Info_Loading' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, TXT_Info_Text_Only) == 0x000340, "Member 'UWBP_PrivateMatch_Popup_Sub_Info_C::TXT_Info_Text_Only' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, TXT_Info_UpLoad) == 0x000348, "Member 'UWBP_PrivateMatch_Popup_Sub_Info_C::TXT_Info_UpLoad' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, WBP_FooterMenu_Sub_CommonBtn) == 0x000350, "Member 'UWBP_PrivateMatch_Popup_Sub_Info_C::WBP_FooterMenu_Sub_CommonBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, WBP_Online_MatchingInfo_Sub_WaitingIcon) == 0x000358, "Member 'UWBP_PrivateMatch_Popup_Sub_Info_C::WBP_Online_MatchingInfo_Sub_WaitingIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, WBP_Online_MatchingInfo_Sub_WaitingIcon_UpLoad) == 0x000360, "Member 'UWBP_PrivateMatch_Popup_Sub_Info_C::WBP_Online_MatchingInfo_Sub_WaitingIcon_UpLoad' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, WBP_PrivateMatch_Popup_Sub_LobbyBtn_01) == 0x000368, "Member 'UWBP_PrivateMatch_Popup_Sub_Info_C::WBP_PrivateMatch_Popup_Sub_LobbyBtn_01' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, WBP_PrivateMatch_Popup_Sub_LobbyBtn_02) == 0x000370, "Member 'UWBP_PrivateMatch_Popup_Sub_Info_C::WBP_PrivateMatch_Popup_Sub_LobbyBtn_02' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, WBP_PrivateMatch_Popup_Sub_ModeBtn_Free) == 0x000378, "Member 'UWBP_PrivateMatch_Popup_Sub_Info_C::WBP_PrivateMatch_Popup_Sub_ModeBtn_Free' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, WBP_PrivateMatch_Popup_Sub_ModeBtn_Rival) == 0x000380, "Member 'UWBP_PrivateMatch_Popup_Sub_Info_C::WBP_PrivateMatch_Popup_Sub_ModeBtn_Rival' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, WS_Information) == 0x000388, "Member 'UWBP_PrivateMatch_Popup_Sub_Info_C::WS_Information' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, bJoin) == 0x000390, "Member 'UWBP_PrivateMatch_Popup_Sub_Info_C::bJoin' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, Private_Match_Popup) == 0x000398, "Member 'UWBP_PrivateMatch_Popup_Sub_Info_C::Private_Match_Popup' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, PopupOutAnimFinishEvent) == 0x0003A0, "Member 'UWBP_PrivateMatch_Popup_Sub_Info_C::PopupOutAnimFinishEvent' has a wrong offset!");
-static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, OpenShowMenuType) == 0x0003B0, "Member 'UWBP_PrivateMatch_Popup_Sub_Info_C::OpenShowMenuType' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_PrivateMatch_Popup_Sub_Info_C;
 
 }
 

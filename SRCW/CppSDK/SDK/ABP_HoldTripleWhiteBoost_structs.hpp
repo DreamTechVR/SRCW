@@ -21,8 +21,7 @@ namespace SDK
 struct ABP_HoldTripleWhiteBoost::FAnimBlueprintGeneratedConstantData final : public ABPT_HoldItem::FAnimBlueprintGeneratedConstantData
 {
 };
-static_assert(alignof(ABP_HoldTripleWhiteBoost::FAnimBlueprintGeneratedConstantData) == 0x000008, "Wrong alignment on ABP_HoldTripleWhiteBoost::FAnimBlueprintGeneratedConstantData");
-static_assert(sizeof(ABP_HoldTripleWhiteBoost::FAnimBlueprintGeneratedConstantData) == 0x000D30, "Wrong size on ABP_HoldTripleWhiteBoost::FAnimBlueprintGeneratedConstantData");
+DUMPER7_ASSERTS_ABP_HoldTripleWhiteBoost__FAnimBlueprintGeneratedConstantData;
 
 }
 

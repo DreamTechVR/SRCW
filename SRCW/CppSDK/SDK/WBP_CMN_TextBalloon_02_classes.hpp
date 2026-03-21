@@ -23,15 +23,18 @@ class UWBP_CMN_TextBalloon_02_C final : public UCommonTextBalloon
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_TextBalloon_02_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_TextBalloon_02_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_TextBalloon_02_C")
 	}
 	static class UWBP_CMN_TextBalloon_02_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_TextBalloon_02_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_TextBalloon_02_C) == 0x000008, "Wrong alignment on UWBP_CMN_TextBalloon_02_C");
-static_assert(sizeof(UWBP_CMN_TextBalloon_02_C) == 0x0002F8, "Wrong size on UWBP_CMN_TextBalloon_02_C");
+DUMPER7_ASSERTS_UWBP_CMN_TextBalloon_02_C;
 
 }
 

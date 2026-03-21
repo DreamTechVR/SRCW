@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -75,37 +75,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CourseSwitch_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CourseSwitch_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CourseSwitch_C")
 	}
 	static class UWBP_CourseSwitch_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CourseSwitch_C>();
 	}
 };
-static_assert(alignof(UWBP_CourseSwitch_C) == 0x000008, "Wrong alignment on UWBP_CourseSwitch_C");
-static_assert(sizeof(UWBP_CourseSwitch_C) == 0x000400, "Wrong size on UWBP_CourseSwitch_C");
-static_assert(offsetof(UWBP_CourseSwitch_C, UberGraphFrame) == 0x000348, "Member 'UWBP_CourseSwitch_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_C, CourseSwitch_Out) == 0x000350, "Member 'UWBP_CourseSwitch_C::CourseSwitch_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_C, CourseSwitch_Loop) == 0x000358, "Member 'UWBP_CourseSwitch_C::CourseSwitch_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_C, CourseSwitch_In) == 0x000360, "Member 'UWBP_CourseSwitch_C::CourseSwitch_In' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_C, BG_Black) == 0x000368, "Member 'UWBP_CourseSwitch_C::BG_Black' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_C, OutOfContentButton_215) == 0x000370, "Member 'UWBP_CourseSwitch_C::OutOfContentButton_215' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_C, Panel) == 0x000378, "Member 'UWBP_CourseSwitch_C::Panel' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_C, SafeZone_93) == 0x000380, "Member 'UWBP_CourseSwitch_C::SafeZone_93' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_C, WBP_CMN_BG_01) == 0x000388, "Member 'UWBP_CourseSwitch_C::WBP_CMN_BG_01' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_C, WBP_CourseSwitch_Sub_DetailAnother) == 0x000390, "Member 'UWBP_CourseSwitch_C::WBP_CourseSwitch_Sub_DetailAnother' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_C, WBP_CourseSwitch_Sub_DetailMain) == 0x000398, "Member 'UWBP_CourseSwitch_C::WBP_CourseSwitch_Sub_DetailMain' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_C, WBP_CourseSwitch_ThumbWindow) == 0x0003A0, "Member 'UWBP_CourseSwitch_C::WBP_CourseSwitch_ThumbWindow' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_C, WBP_PartyRace_Sub_Option_Btn_OK) == 0x0003A8, "Member 'UWBP_CourseSwitch_C::WBP_PartyRace_Sub_Option_Btn_OK' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_C, WidgetSwitcher) == 0x0003B0, "Member 'UWBP_CourseSwitch_C::WidgetSwitcher' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_C, bIsOpen) == 0x0003B8, "Member 'UWBP_CourseSwitch_C::bIsOpen' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_C, ButtonPanel) == 0x0003C0, "Member 'UWBP_CourseSwitch_C::ButtonPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_C, bIsClose) == 0x0003C8, "Member 'UWBP_CourseSwitch_C::bIsClose' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_C, OnClosed) == 0x0003D0, "Member 'UWBP_CourseSwitch_C::OnClosed' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_C, PopupWindow) == 0x0003E0, "Member 'UWBP_CourseSwitch_C::PopupWindow' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_C, OnCancel) == 0x0003E8, "Member 'UWBP_CourseSwitch_C::OnCancel' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_C, IsGuest) == 0x0003F8, "Member 'UWBP_CourseSwitch_C::IsGuest' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSwitch_C, LastFocusedCursorIndex) == 0x0003FC, "Member 'UWBP_CourseSwitch_C::LastFocusedCursorIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CourseSwitch_C;
 
 }
 

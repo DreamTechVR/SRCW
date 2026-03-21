@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "ST_HoldItemSTMData_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
+#include "ST_HoldItemSTMData_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
@@ -27,9 +27,7 @@ struct BP_HoldItemSTM_C_Create final
 public:
 	struct FHoldItemCreateParam                   Param;                                             // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(BP_HoldItemSTM_C_Create) == 0x000004, "Wrong alignment on BP_HoldItemSTM_C_Create");
-static_assert(sizeof(BP_HoldItemSTM_C_Create) == 0x000010, "Wrong size on BP_HoldItemSTM_C_Create");
-static_assert(offsetof(BP_HoldItemSTM_C_Create, Param) == 0x000000, "Member 'BP_HoldItemSTM_C_Create::Param' has a wrong offset!");
+DUMPER7_ASSERTS_BP_HoldItemSTM_C_Create;
 
 // Function BP_HoldItemSTM.BP_HoldItemSTM_C.CreateItem
 // 0x02A0 (0x02A0 - 0x0000)
@@ -81,43 +79,7 @@ public:
 	bool                                          CallFunc_SetStaticMesh_ReturnValue_4;              // 0x0297(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x0298(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_HoldItemSTM_C_CreateItem) == 0x000010, "Wrong alignment on BP_HoldItemSTM_C_CreateItem");
-static_assert(sizeof(BP_HoldItemSTM_C_CreateItem) == 0x0002A0, "Wrong size on BP_HoldItemSTM_C_CreateItem");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, In_Param) == 0x000000, "Member 'BP_HoldItemSTM_C_CreateItem::In_Param' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000010, "Member 'BP_HoldItemSTM_C_CreateItem::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000011, "Member 'BP_HoldItemSTM_C_CreateItem::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000012, "Member 'BP_HoldItemSTM_C_CreateItem::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, CallFunc_EqualEqual_IntInt_ReturnValue_2) == 0x000013, "Member 'BP_HoldItemSTM_C_CreateItem::CallFunc_EqualEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, Temp_int_Array_Index_Variable) == 0x000014, "Member 'BP_HoldItemSTM_C_CreateItem::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, CallFunc_EqualEqual_IntInt_ReturnValue_3) == 0x000018, "Member 'BP_HoldItemSTM_C_CreateItem::CallFunc_EqualEqual_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, CallFunc_GetDataTableRowNames_OutRowNames) == 0x000020, "Member 'BP_HoldItemSTM_C_CreateItem::CallFunc_GetDataTableRowNames_OutRowNames' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, CallFunc_Array_Get_Item) == 0x000030, "Member 'BP_HoldItemSTM_C_CreateItem::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, CallFunc_Array_Length_ReturnValue) == 0x000038, "Member 'BP_HoldItemSTM_C_CreateItem::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, CallFunc_GetDataTableRowFromName_OutRow) == 0x000040, "Member 'BP_HoldItemSTM_C_CreateItem::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000060, "Member 'BP_HoldItemSTM_C_CreateItem::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, CallFunc_GetMaterial_ReturnValue) == 0x000068, "Member 'BP_HoldItemSTM_C_CreateItem::CallFunc_GetMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000070, "Member 'BP_HoldItemSTM_C_CreateItem::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, CallFunc_Conv_ColorToLinearColor_ReturnValue) == 0x000078, "Member 'BP_HoldItemSTM_C_CreateItem::CallFunc_Conv_ColorToLinearColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000088, "Member 'BP_HoldItemSTM_C_CreateItem::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, K2Node_SwitchEnum_CmpSuccess) == 0x000089, "Member 'BP_HoldItemSTM_C_CreateItem::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, CallFunc_GetEnumeratorName_ReturnValue) == 0x00008C, "Member 'BP_HoldItemSTM_C_CreateItem::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, CallFunc_GetDataTableRowFromName_OutRow_1) == 0x0000A0, "Member 'BP_HoldItemSTM_C_CreateItem::CallFunc_GetDataTableRowFromName_OutRow_1' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, CallFunc_GetDataTableRowFromName_ReturnValue_1) == 0x000160, "Member 'BP_HoldItemSTM_C_CreateItem::CallFunc_GetDataTableRowFromName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, CallFunc_K2_SetRelativeTransform_SweepHitResult) == 0x000168, "Member 'BP_HoldItemSTM_C_CreateItem::CallFunc_K2_SetRelativeTransform_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, CallFunc_SetStaticMesh_ReturnValue) == 0x000260, "Member 'BP_HoldItemSTM_C_CreateItem::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, K2Node_MakeArray_Array) == 0x000268, "Member 'BP_HoldItemSTM_C_CreateItem::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, CallFunc_SetStaticMesh_ReturnValue_1) == 0x000278, "Member 'BP_HoldItemSTM_C_CreateItem::CallFunc_SetStaticMesh_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, Temp_bool_True_if_break_was_hit_Variable) == 0x000279, "Member 'BP_HoldItemSTM_C_CreateItem::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, CallFunc_Not_PreBool_ReturnValue) == 0x00027A, "Member 'BP_HoldItemSTM_C_CreateItem::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, CallFunc_AddComponentByClass_ReturnValue) == 0x000280, "Member 'BP_HoldItemSTM_C_CreateItem::CallFunc_AddComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, Temp_int_Loop_Counter_Variable) == 0x000288, "Member 'BP_HoldItemSTM_C_CreateItem::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, CallFunc_Less_IntInt_ReturnValue) == 0x00028C, "Member 'BP_HoldItemSTM_C_CreateItem::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, CallFunc_Add_IntInt_ReturnValue) == 0x000290, "Member 'BP_HoldItemSTM_C_CreateItem::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, CallFunc_BooleanAND_ReturnValue) == 0x000294, "Member 'BP_HoldItemSTM_C_CreateItem::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, CallFunc_SetStaticMesh_ReturnValue_2) == 0x000295, "Member 'BP_HoldItemSTM_C_CreateItem::CallFunc_SetStaticMesh_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, CallFunc_SetStaticMesh_ReturnValue_3) == 0x000296, "Member 'BP_HoldItemSTM_C_CreateItem::CallFunc_SetStaticMesh_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, CallFunc_SetStaticMesh_ReturnValue_4) == 0x000297, "Member 'BP_HoldItemSTM_C_CreateItem::CallFunc_SetStaticMesh_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_CreateItem, CallFunc_K2_AttachToComponent_ReturnValue) == 0x000298, "Member 'BP_HoldItemSTM_C_CreateItem::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_HoldItemSTM_C_CreateItem;
 
 // Function BP_HoldItemSTM.BP_HoldItemSTM_C.DestroyItem
 // 0x0001 (0x0001 - 0x0000)
@@ -126,9 +88,7 @@ struct BP_HoldItemSTM_C_DestroyItem final
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_HoldItemSTM_C_DestroyItem) == 0x000001, "Wrong alignment on BP_HoldItemSTM_C_DestroyItem");
-static_assert(sizeof(BP_HoldItemSTM_C_DestroyItem) == 0x000001, "Wrong size on BP_HoldItemSTM_C_DestroyItem");
-static_assert(offsetof(BP_HoldItemSTM_C_DestroyItem, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'BP_HoldItemSTM_C_DestroyItem::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_HoldItemSTM_C_DestroyItem;
 
 // Function BP_HoldItemSTM.BP_HoldItemSTM_C.ExecuteUbergraph_BP_HoldItemSTM
 // 0x0014 (0x0014 - 0x0000)
@@ -138,10 +98,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHoldItemCreateParam                   K2Node_Event_Param;                                // 0x0004(0x0010)(ConstParm, NoDestructor)
 };
-static_assert(alignof(BP_HoldItemSTM_C_ExecuteUbergraph_BP_HoldItemSTM) == 0x000004, "Wrong alignment on BP_HoldItemSTM_C_ExecuteUbergraph_BP_HoldItemSTM");
-static_assert(sizeof(BP_HoldItemSTM_C_ExecuteUbergraph_BP_HoldItemSTM) == 0x000014, "Wrong size on BP_HoldItemSTM_C_ExecuteUbergraph_BP_HoldItemSTM");
-static_assert(offsetof(BP_HoldItemSTM_C_ExecuteUbergraph_BP_HoldItemSTM, EntryPoint) == 0x000000, "Member 'BP_HoldItemSTM_C_ExecuteUbergraph_BP_HoldItemSTM::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_ExecuteUbergraph_BP_HoldItemSTM, K2Node_Event_Param) == 0x000004, "Member 'BP_HoldItemSTM_C_ExecuteUbergraph_BP_HoldItemSTM::K2Node_Event_Param' has a wrong offset!");
+DUMPER7_ASSERTS_BP_HoldItemSTM_C_ExecuteUbergraph_BP_HoldItemSTM;
 
 // Function BP_HoldItemSTM.BP_HoldItemSTM_C.PlayRareItemEffect
 // 0x0008 (0x0008 - 0x0000)
@@ -150,9 +107,7 @@ struct BP_HoldItemSTM_C_PlayRareItemEffect final
 public:
 	class UNiagaraComponent*                      CallFunc_SpawnSystemAttached_ReturnValue;          // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_HoldItemSTM_C_PlayRareItemEffect) == 0x000008, "Wrong alignment on BP_HoldItemSTM_C_PlayRareItemEffect");
-static_assert(sizeof(BP_HoldItemSTM_C_PlayRareItemEffect) == 0x000008, "Wrong size on BP_HoldItemSTM_C_PlayRareItemEffect");
-static_assert(offsetof(BP_HoldItemSTM_C_PlayRareItemEffect, CallFunc_SpawnSystemAttached_ReturnValue) == 0x000000, "Member 'BP_HoldItemSTM_C_PlayRareItemEffect::CallFunc_SpawnSystemAttached_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_HoldItemSTM_C_PlayRareItemEffect;
 
 // Function BP_HoldItemSTM.BP_HoldItemSTM_C.SetLightChannels
 // 0x0003 (0x0003 - 0x0000)
@@ -163,11 +118,7 @@ public:
 	bool                                          Channel1;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Channel2;                                          // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_HoldItemSTM_C_SetLightChannels) == 0x000001, "Wrong alignment on BP_HoldItemSTM_C_SetLightChannels");
-static_assert(sizeof(BP_HoldItemSTM_C_SetLightChannels) == 0x000003, "Wrong size on BP_HoldItemSTM_C_SetLightChannels");
-static_assert(offsetof(BP_HoldItemSTM_C_SetLightChannels, Channel0) == 0x000000, "Member 'BP_HoldItemSTM_C_SetLightChannels::Channel0' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_SetLightChannels, Channel1) == 0x000001, "Member 'BP_HoldItemSTM_C_SetLightChannels::Channel1' has a wrong offset!");
-static_assert(offsetof(BP_HoldItemSTM_C_SetLightChannels, Channel2) == 0x000002, "Member 'BP_HoldItemSTM_C_SetLightChannels::Channel2' has a wrong offset!");
+DUMPER7_ASSERTS_BP_HoldItemSTM_C_SetLightChannels;
 
 // Function BP_HoldItemSTM.BP_HoldItemSTM_C.GetMeshComponent
 // 0x0008 (0x0008 - 0x0000)
@@ -176,9 +127,7 @@ struct BP_HoldItemSTM_C_GetMeshComponent final
 public:
 	class UMeshComponent*                         ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_HoldItemSTM_C_GetMeshComponent) == 0x000008, "Wrong alignment on BP_HoldItemSTM_C_GetMeshComponent");
-static_assert(sizeof(BP_HoldItemSTM_C_GetMeshComponent) == 0x000008, "Wrong size on BP_HoldItemSTM_C_GetMeshComponent");
-static_assert(offsetof(BP_HoldItemSTM_C_GetMeshComponent, ReturnValue) == 0x000000, "Member 'BP_HoldItemSTM_C_GetMeshComponent::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_HoldItemSTM_C_GetMeshComponent;
 
 }
 

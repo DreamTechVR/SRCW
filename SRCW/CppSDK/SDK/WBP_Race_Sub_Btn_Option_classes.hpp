@@ -11,9 +11,10 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UnionRun_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "Engine_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK
@@ -50,32 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_Sub_Btn_Option_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_Sub_Btn_Option_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_Sub_Btn_Option_C")
 	}
 	static class UWBP_Race_Sub_Btn_Option_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_Sub_Btn_Option_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_Sub_Btn_Option_C) == 0x000008, "Wrong alignment on UWBP_Race_Sub_Btn_Option_C");
-static_assert(sizeof(UWBP_Race_Sub_Btn_Option_C) == 0x000370, "Wrong size on UWBP_Race_Sub_Btn_Option_C");
-static_assert(offsetof(UWBP_Race_Sub_Btn_Option_C, UberGraphFrame) == 0x0002E8, "Member 'UWBP_Race_Sub_Btn_Option_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_Btn_Option_C, Btn_Push_Loop) == 0x0002F0, "Member 'UWBP_Race_Sub_Btn_Option_C::Btn_Push_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_Btn_Option_C, Btn_Active) == 0x0002F8, "Member 'UWBP_Race_Sub_Btn_Option_C::Btn_Active' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_Btn_Option_C, Arrow_Push) == 0x000300, "Member 'UWBP_Race_Sub_Btn_Option_C::Arrow_Push' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_Btn_Option_C, Btn_Option_01) == 0x000308, "Member 'UWBP_Race_Sub_Btn_Option_C::Btn_Option_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_Btn_Option_C, Btn_Option_02) == 0x000310, "Member 'UWBP_Race_Sub_Btn_Option_C::Btn_Option_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_Btn_Option_C, Btn_Stick) == 0x000318, "Member 'UWBP_Race_Sub_Btn_Option_C::Btn_Stick' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_Btn_Option_C, Fever_Option_01) == 0x000320, "Member 'UWBP_Race_Sub_Btn_Option_C::Fever_Option_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_Btn_Option_C, Fever_Option_02) == 0x000328, "Member 'UWBP_Race_Sub_Btn_Option_C::Fever_Option_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_Btn_Option_C, PAT_Option_01) == 0x000330, "Member 'UWBP_Race_Sub_Btn_Option_C::PAT_Option_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_Btn_Option_C, PAT_Option_01_Pict) == 0x000338, "Member 'UWBP_Race_Sub_Btn_Option_C::PAT_Option_01_Pict' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_Btn_Option_C, PAT_Option_02) == 0x000340, "Member 'UWBP_Race_Sub_Btn_Option_C::PAT_Option_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_Btn_Option_C, PAT_Option_02_Pict) == 0x000348, "Member 'UWBP_Race_Sub_Btn_Option_C::PAT_Option_02_Pict' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_Btn_Option_C, Stick) == 0x000350, "Member 'UWBP_Race_Sub_Btn_Option_C::Stick' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_Btn_Option_C, TXT_Stick) == 0x000358, "Member 'UWBP_Race_Sub_Btn_Option_C::TXT_Stick' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_Btn_Option_C, WidgetSwitcher_Btn) == 0x000360, "Member 'UWBP_Race_Sub_Btn_Option_C::WidgetSwitcher_Btn' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_Btn_Option_C, CurrentAnim) == 0x000368, "Member 'UWBP_Race_Sub_Btn_Option_C::CurrentAnim' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_Sub_Btn_Option_C;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -33,16 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_MenuStateOnline_C">();
+		BP_STATIC_CLASS_IMPL("BPC_MenuStateOnline_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_MenuStateOnline_C")
 	}
 	static class UBPC_MenuStateOnline_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_MenuStateOnline_C>();
 	}
 };
-static_assert(alignof(UBPC_MenuStateOnline_C) == 0x000008, "Wrong alignment on UBPC_MenuStateOnline_C");
-static_assert(sizeof(UBPC_MenuStateOnline_C) == 0x000140, "Wrong size on UBPC_MenuStateOnline_C");
-static_assert(offsetof(UBPC_MenuStateOnline_C, UberGraphFrame) == 0x000138, "Member 'UBPC_MenuStateOnline_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_MenuStateOnline_C;
 
 }
 

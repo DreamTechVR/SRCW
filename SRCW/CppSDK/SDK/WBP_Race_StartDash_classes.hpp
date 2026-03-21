@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -43,24 +43,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_StartDash_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_StartDash_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_StartDash_C")
 	}
 	static class UWBP_Race_StartDash_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_StartDash_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_StartDash_C) == 0x000008, "Wrong alignment on UWBP_Race_StartDash_C");
-static_assert(sizeof(UWBP_Race_StartDash_C) == 0x000340, "Wrong size on UWBP_Race_StartDash_C");
-static_assert(offsetof(UWBP_Race_StartDash_C, UberGraphFrame) == 0x0002F0, "Member 'UWBP_Race_StartDash_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_StartDash_C, StartDash_Out) == 0x0002F8, "Member 'UWBP_Race_StartDash_C::StartDash_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_StartDash_C, StartDash_Loop) == 0x000300, "Member 'UWBP_Race_StartDash_C::StartDash_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_StartDash_C, StartDash_In) == 0x000308, "Member 'UWBP_Race_StartDash_C::StartDash_In' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_StartDash_C, CanvasPanel_0) == 0x000310, "Member 'UWBP_Race_StartDash_C::CanvasPanel_0' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_StartDash_C, WBP_Race_StartDash_Sub_CountDown_Even) == 0x000318, "Member 'UWBP_Race_StartDash_C::WBP_Race_StartDash_Sub_CountDown_Even' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_StartDash_C, WBP_Race_StartDash_Sub_CountDown_Odd) == 0x000320, "Member 'UWBP_Race_StartDash_C::WBP_Race_StartDash_Sub_CountDown_Odd' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_StartDash_C, WBP_Race_StartText) == 0x000328, "Member 'UWBP_Race_StartDash_C::WBP_Race_StartText' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_StartDash_C, OnFinish) == 0x000330, "Member 'UWBP_Race_StartDash_C::OnFinish' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_StartDash_C;
 
 }
 

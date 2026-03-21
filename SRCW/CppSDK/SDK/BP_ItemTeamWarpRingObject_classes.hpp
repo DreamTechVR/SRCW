@@ -23,15 +23,18 @@ class ABP_ItemTeamWarpRingObject_C final : public AItemTeamWarpRingObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ItemTeamWarpRingObject_C">();
+		BP_STATIC_CLASS_IMPL("BP_ItemTeamWarpRingObject_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ItemTeamWarpRingObject_C")
 	}
 	static class ABP_ItemTeamWarpRingObject_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ItemTeamWarpRingObject_C>();
 	}
 };
-static_assert(alignof(ABP_ItemTeamWarpRingObject_C) == 0x000010, "Wrong alignment on ABP_ItemTeamWarpRingObject_C");
-static_assert(sizeof(ABP_ItemTeamWarpRingObject_C) == 0x000780, "Wrong size on ABP_ItemTeamWarpRingObject_C");
+DUMPER7_ASSERTS_ABP_ItemTeamWarpRingObject_C;
 
 }
 

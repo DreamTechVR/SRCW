@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
-#include "UnionRun_structs.hpp"
-#include "EMachineSelectMode_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "UnionRun_structs.hpp"
+#include "Engine_structs.hpp"
+#include "EMachineSelectMode_structs.hpp"
 
 
 namespace SDK
@@ -87,46 +87,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GadgetCustom_Sub_TypeBox_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GadgetCustom_Sub_TypeBox_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GadgetCustom_Sub_TypeBox_C")
 	}
 	static class UWBP_GadgetCustom_Sub_TypeBox_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GadgetCustom_Sub_TypeBox_C>();
 	}
 };
-static_assert(alignof(UWBP_GadgetCustom_Sub_TypeBox_C) == 0x000008, "Wrong alignment on UWBP_GadgetCustom_Sub_TypeBox_C");
-static_assert(sizeof(UWBP_GadgetCustom_Sub_TypeBox_C) == 0x000700, "Wrong size on UWBP_GadgetCustom_Sub_TypeBox_C");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeBox_C, UberGraphFrame) == 0x000608, "Member 'UWBP_GadgetCustom_Sub_TypeBox_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeBox_C, ScrollAnim) == 0x000610, "Member 'UWBP_GadgetCustom_Sub_TypeBox_C::ScrollAnim' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeBox_C, TypeBox_Right_to_Left) == 0x000618, "Member 'UWBP_GadgetCustom_Sub_TypeBox_C::TypeBox_Right_to_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeBox_C, TypeBox_Left_to_Right) == 0x000620, "Member 'UWBP_GadgetCustom_Sub_TypeBox_C::TypeBox_Left_to_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeBox_C, TypeBox_Loop) == 0x000628, "Member 'UWBP_GadgetCustom_Sub_TypeBox_C::TypeBox_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeBox_C, Black_BG) == 0x000630, "Member 'UWBP_GadgetCustom_Sub_TypeBox_C::Black_BG' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeBox_C, DSP_Invalid) == 0x000638, "Member 'UWBP_GadgetCustom_Sub_TypeBox_C::DSP_Invalid' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeBox_C, DSP_KitPtn) == 0x000640, "Member 'UWBP_GadgetCustom_Sub_TypeBox_C::DSP_KitPtn' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeBox_C, DSP_Legend_NG_Cover) == 0x000648, "Member 'UWBP_GadgetCustom_Sub_TypeBox_C::DSP_Legend_NG_Cover' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeBox_C, MLC_CursorBG) == 0x000650, "Member 'UWBP_GadgetCustom_Sub_TypeBox_C::MLC_CursorBG' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeBox_C, MLC_TypeColor) == 0x000658, "Member 'UWBP_GadgetCustom_Sub_TypeBox_C::MLC_TypeColor' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeBox_C, NG_Base) == 0x000660, "Member 'UWBP_GadgetCustom_Sub_TypeBox_C::NG_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeBox_C, NG_Base_Ptn) == 0x000668, "Member 'UWBP_GadgetCustom_Sub_TypeBox_C::NG_Base_Ptn' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeBox_C, NG_Base_Yellow) == 0x000670, "Member 'UWBP_GadgetCustom_Sub_TypeBox_C::NG_Base_Yellow' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeBox_C, Pattern) == 0x000678, "Member 'UWBP_GadgetCustom_Sub_TypeBox_C::Pattern' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeBox_C, ScrollCanvas_Gadget) == 0x000680, "Member 'UWBP_GadgetCustom_Sub_TypeBox_C::ScrollCanvas_Gadget' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeBox_C, UnionScroll) == 0x000688, "Member 'UWBP_GadgetCustom_Sub_TypeBox_C::UnionScroll' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeBox_C, WBP_FontScroll_NG_Info) == 0x000690, "Member 'UWBP_GadgetCustom_Sub_TypeBox_C::WBP_FontScroll_NG_Info' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeBox_C, WBP_GadgetCustom_Sub_TypeIcon_01_) == 0x000698, "Member 'UWBP_GadgetCustom_Sub_TypeBox_C::WBP_GadgetCustom_Sub_TypeIcon_01_' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeBox_C, WBP_GadgetCustom_Sub_TypeIcon_02_) == 0x0006A0, "Member 'UWBP_GadgetCustom_Sub_TypeBox_C::WBP_GadgetCustom_Sub_TypeIcon_02_' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeBox_C, WBP_GadgetCustom_Sub_TypeIcon_03_) == 0x0006A8, "Member 'UWBP_GadgetCustom_Sub_TypeBox_C::WBP_GadgetCustom_Sub_TypeIcon_03_' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeBox_C, WBP_GadgetCustom_Sub_TypeIcon_04_) == 0x0006B0, "Member 'UWBP_GadgetCustom_Sub_TypeBox_C::WBP_GadgetCustom_Sub_TypeIcon_04_' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeBox_C, WBP_GadgetCustom_Sub_TypeIcon_05_) == 0x0006B8, "Member 'UWBP_GadgetCustom_Sub_TypeBox_C::WBP_GadgetCustom_Sub_TypeIcon_05_' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeBox_C, WBP_GadgetCustom_Sub_TypeIcon_06_) == 0x0006C0, "Member 'UWBP_GadgetCustom_Sub_TypeBox_C::WBP_GadgetCustom_Sub_TypeIcon_06_' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeBox_C, WBP_GadgetCustom_Sub_TypeIcon_07_) == 0x0006C8, "Member 'UWBP_GadgetCustom_Sub_TypeBox_C::WBP_GadgetCustom_Sub_TypeIcon_07_' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeBox_C, White_BG) == 0x0006D0, "Member 'UWBP_GadgetCustom_Sub_TypeBox_C::White_BG' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeBox_C, TmpObject) == 0x0006D8, "Member 'UWBP_GadgetCustom_Sub_TypeBox_C::TmpObject' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeBox_C, Machine_Type) == 0x0006E8, "Member 'UWBP_GadgetCustom_Sub_TypeBox_C::Machine_Type' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeBox_C, TmpElementMax) == 0x0006EC, "Member 'UWBP_GadgetCustom_Sub_TypeBox_C::TmpElementMax' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeBox_C, Mode) == 0x0006F0, "Member 'UWBP_GadgetCustom_Sub_TypeBox_C::Mode' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_TypeBox_C, GadgetCustomWindow) == 0x0006F8, "Member 'UWBP_GadgetCustom_Sub_TypeBox_C::GadgetCustomWindow' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GadgetCustom_Sub_TypeBox_C;
 
 }
 

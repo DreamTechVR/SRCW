@@ -33,20 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_System_Sub_Loading_StageIcon_C">();
+		BP_STATIC_CLASS_IMPL("WBP_System_Sub_Loading_StageIcon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_System_Sub_Loading_StageIcon_C")
 	}
 	static class UWBP_System_Sub_Loading_StageIcon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_System_Sub_Loading_StageIcon_C>();
 	}
 };
-static_assert(alignof(UWBP_System_Sub_Loading_StageIcon_C) == 0x000008, "Wrong alignment on UWBP_System_Sub_Loading_StageIcon_C");
-static_assert(sizeof(UWBP_System_Sub_Loading_StageIcon_C) == 0x000308, "Wrong size on UWBP_System_Sub_Loading_StageIcon_C");
-static_assert(offsetof(UWBP_System_Sub_Loading_StageIcon_C, Base_01) == 0x0002E0, "Member 'UWBP_System_Sub_Loading_StageIcon_C::Base_01' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Sub_Loading_StageIcon_C, Base_02) == 0x0002E8, "Member 'UWBP_System_Sub_Loading_StageIcon_C::Base_02' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Sub_Loading_StageIcon_C, DMY_StageIcon) == 0x0002F0, "Member 'UWBP_System_Sub_Loading_StageIcon_C::DMY_StageIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Sub_Loading_StageIcon_C, WBP_CourseSelect_Sub_CourseIcon) == 0x0002F8, "Member 'UWBP_System_Sub_Loading_StageIcon_C::WBP_CourseSelect_Sub_CourseIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Sub_Loading_StageIcon_C, WidgetSwitcher_0) == 0x000300, "Member 'UWBP_System_Sub_Loading_StageIcon_C::WidgetSwitcher_0' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_System_Sub_Loading_StageIcon_C;
 
 }
 

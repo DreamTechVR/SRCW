@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_ResultRate_Sub_RateGauge.WBP_ResultRate_Sub_RateGauge_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_ResultRate_Sub_RateGauge_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResultRate_Sub_RateGauge_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_ResultRate_Sub_RateGauge.WBP_ResultRate_Sub_RateGauge_C.ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -46,26 +32,6 @@ void UWBP_ResultRate_Sub_RateGauge_C::ExecuteUbergraph_WBP_ResultRate_Sub_RateGa
 	Params::WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ResultRate_Sub_RateGauge.WBP_ResultRate_Sub_RateGauge_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ResultRate_Sub_RateGauge_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResultRate_Sub_RateGauge_C", "PreConstruct");
-
-	Params::WBP_ResultRate_Sub_RateGauge_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -91,41 +57,105 @@ void UWBP_ResultRate_Sub_RateGauge_C::Set_Now_Rate_Impl(double newParam)
 }
 
 
-// Function WBP_ResultRate_Sub_RateGauge.WBP_ResultRate_Sub_RateGauge_C.SetBonusIconHide
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_ResultRate_Sub_RateGauge.WBP_ResultRate_Sub_RateGauge_C.SetCurrentAndNextLimitRate
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsHide                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentLimitRate                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NextLimitRate                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ResultRate_Sub_RateGauge_C::SetBonusIconHide(bool bIsHide)
+void UWBP_ResultRate_Sub_RateGauge_C::SetCurrentAndNextLimitRate(int32 CurrentLimitRate, int32 NextLimitRate)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResultRate_Sub_RateGauge_C", "SetBonusIconHide");
+		Func = Class->GetFunction("WBP_ResultRate_Sub_RateGauge_C", "SetCurrentAndNextLimitRate");
 
-	Params::WBP_ResultRate_Sub_RateGauge_C_SetBonusIconHide Parms{};
+	Params::WBP_ResultRate_Sub_RateGauge_C_SetCurrentAndNextLimitRate Parms{};
 
-	Parms.bIsHide = bIsHide;
+	Parms.CurrentLimitRate = CurrentLimitRate;
+	Parms.NextLimitRate = NextLimitRate;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ResultRate_Sub_RateGauge.WBP_ResultRate_Sub_RateGauge_C.SetRank
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_ResultRate_Sub_RateGauge.WBP_ResultRate_Sub_RateGauge_C.SetCurrentGaugeAmount
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// ERateRank                               Rank                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   GaugeAmount                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ResultRate_Sub_RateGauge_C::SetRank(ERateRank Rank)
+void UWBP_ResultRate_Sub_RateGauge_C::SetCurrentGaugeAmount(float GaugeAmount)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResultRate_Sub_RateGauge_C", "SetRank");
+		Func = Class->GetFunction("WBP_ResultRate_Sub_RateGauge_C", "SetCurrentGaugeAmount");
 
-	Params::WBP_ResultRate_Sub_RateGauge_C_SetRank Parms{};
+	Params::WBP_ResultRate_Sub_RateGauge_C_SetCurrentGaugeAmount Parms{};
 
-	Parms.Rank = Rank;
+	Parms.GaugeAmount = GaugeAmount;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ResultRate_Sub_RateGauge.WBP_ResultRate_Sub_RateGauge_C.SetCurrentRate
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   InRate                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ResultRate_Sub_RateGauge_C::SetCurrentRate(int32 InRate)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResultRate_Sub_RateGauge_C", "SetCurrentRate");
+
+	Params::WBP_ResultRate_Sub_RateGauge_C_SetCurrentRate Parms{};
+
+	Parms.InRate = InRate;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ResultRate_Sub_RateGauge.WBP_ResultRate_Sub_RateGauge_C.SetCurrentRateIcon
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ERateRank                               CurrentRateIcon                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ResultRate_Sub_RateGauge_C::SetCurrentRateIcon(ERateRank CurrentRateIcon)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResultRate_Sub_RateGauge_C", "SetCurrentRateIcon");
+
+	Params::WBP_ResultRate_Sub_RateGauge_C_SetCurrentRateIcon Parms{};
+
+	Parms.CurrentRateIcon = CurrentRateIcon;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ResultRate_Sub_RateGauge.WBP_ResultRate_Sub_RateGauge_C.SetNextRewardIcon
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ERewardType                             rewardType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   rewardId                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ResultRate_Sub_RateGauge_C::SetNextRewardIcon(ERewardType rewardType, int32 rewardId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResultRate_Sub_RateGauge_C", "SetNextRewardIcon");
+
+	Params::WBP_ResultRate_Sub_RateGauge_C_SetNextRewardIcon Parms{};
+
+	Parms.rewardType = rewardType;
+	Parms.rewardId = rewardId;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -152,48 +182,6 @@ void UWBP_ResultRate_Sub_RateGauge_C::SetRateBaseImpl(double RateUp_0, double Ra
 	Parms.RateDown_0 = RateDown_0;
 	Parms.RateRankUp = RateRankUp;
 	Parms.RateRankDown = RateRankDown;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ResultRate_Sub_RateGauge.WBP_ResultRate_Sub_RateGauge_C.SetRewardHide
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsHide                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ResultRate_Sub_RateGauge_C::SetRewardHide(bool bIsHide)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResultRate_Sub_RateGauge_C", "SetRewardHide");
-
-	Params::WBP_ResultRate_Sub_RateGauge_C_SetRewardHide Parms{};
-
-	Parms.bIsHide = bIsHide;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ResultRate_Sub_RateGauge.WBP_ResultRate_Sub_RateGauge_C.SetRewardIcon
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ERewardType                             rewardType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   ID                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ResultRate_Sub_RateGauge_C::SetRewardIcon(ERewardType rewardType, int32 ID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResultRate_Sub_RateGauge_C", "SetRewardIcon");
-
-	Params::WBP_ResultRate_Sub_RateGauge_C_SetRewardIcon Parms{};
-
-	Parms.rewardType = rewardType;
-	Parms.ID = ID;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

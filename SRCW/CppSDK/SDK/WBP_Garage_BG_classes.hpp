@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Garage_BG_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Garage_BG_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Garage_BG_C")
 	}
 	static class UWBP_Garage_BG_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Garage_BG_C>();
 	}
 };
-static_assert(alignof(UWBP_Garage_BG_C) == 0x000008, "Wrong alignment on UWBP_Garage_BG_C");
-static_assert(sizeof(UWBP_Garage_BG_C) == 0x0002E8, "Wrong size on UWBP_Garage_BG_C");
-static_assert(offsetof(UWBP_Garage_BG_C, BG) == 0x0002E0, "Member 'UWBP_Garage_BG_C::BG' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Garage_BG_C;
 
 }
 

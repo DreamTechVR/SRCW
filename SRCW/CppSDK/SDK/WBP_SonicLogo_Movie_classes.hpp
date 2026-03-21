@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "CriWareRuntime_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -54,29 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_SonicLogo_Movie_C">();
+		BP_STATIC_CLASS_IMPL("WBP_SonicLogo_Movie_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_SonicLogo_Movie_C")
 	}
 	static class UWBP_SonicLogo_Movie_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_SonicLogo_Movie_C>();
 	}
 };
-static_assert(alignof(UWBP_SonicLogo_Movie_C) == 0x000008, "Wrong alignment on UWBP_SonicLogo_Movie_C");
-static_assert(sizeof(UWBP_SonicLogo_Movie_C) == 0x000458, "Wrong size on UWBP_SonicLogo_Movie_C");
-static_assert(offsetof(UWBP_SonicLogo_Movie_C, UberGraphFrame) == 0x0003E0, "Member 'UWBP_SonicLogo_Movie_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_SonicLogo_Movie_C, Out) == 0x0003E8, "Member 'UWBP_SonicLogo_Movie_C::Out' has a wrong offset!");
-static_assert(offsetof(UWBP_SonicLogo_Movie_C, Loop) == 0x0003F0, "Member 'UWBP_SonicLogo_Movie_C::Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_SonicLogo_Movie_C, In) == 0x0003F8, "Member 'UWBP_SonicLogo_Movie_C::In' has a wrong offset!");
-static_assert(offsetof(UWBP_SonicLogo_Movie_C, CanvasPanel) == 0x000400, "Member 'UWBP_SonicLogo_Movie_C::CanvasPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_SonicLogo_Movie_C, ManaImage) == 0x000408, "Member 'UWBP_SonicLogo_Movie_C::ManaImage' has a wrong offset!");
-static_assert(offsetof(UWBP_SonicLogo_Movie_C, WaitTimerLogoHandle) == 0x000410, "Member 'UWBP_SonicLogo_Movie_C::WaitTimerLogoHandle' has a wrong offset!");
-static_assert(offsetof(UWBP_SonicLogo_Movie_C, FinishedLogosOutAnimation) == 0x000418, "Member 'UWBP_SonicLogo_Movie_C::FinishedLogosOutAnimation' has a wrong offset!");
-static_assert(offsetof(UWBP_SonicLogo_Movie_C, UnionManaPlayer) == 0x000428, "Member 'UWBP_SonicLogo_Movie_C::UnionManaPlayer' has a wrong offset!");
-static_assert(offsetof(UWBP_SonicLogo_Movie_C, MovieName) == 0x000430, "Member 'UWBP_SonicLogo_Movie_C::MovieName' has a wrong offset!");
-static_assert(offsetof(UWBP_SonicLogo_Movie_C, AtomComp) == 0x000438, "Member 'UWBP_SonicLogo_Movie_C::AtomComp' has a wrong offset!");
-static_assert(offsetof(UWBP_SonicLogo_Movie_C, SkipSonicLogoMovie) == 0x000440, "Member 'UWBP_SonicLogo_Movie_C::SkipSonicLogoMovie' has a wrong offset!");
-static_assert(offsetof(UWBP_SonicLogo_Movie_C, MovieIndex) == 0x000450, "Member 'UWBP_SonicLogo_Movie_C::MovieIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_SonicLogo_Movie_C, MovieCount) == 0x000454, "Member 'UWBP_SonicLogo_Movie_C::MovieCount' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_SonicLogo_Movie_C;
 
 }
 

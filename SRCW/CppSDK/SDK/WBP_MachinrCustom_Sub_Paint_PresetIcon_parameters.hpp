@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "UMG_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "ST_ColorPresetSelectPageItemData_structs.hpp"
+#include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "UnionSystem_structs.hpp"
 
 
@@ -45,23 +45,7 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x003D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsEnableShoulder_bIsEnableShoulder_1;     // 0x003E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon) == 0x000008, "Wrong alignment on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon");
-static_assert(sizeof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon) == 0x000040, "Wrong size on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon, EntryPoint) == 0x000000, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon, CallFunc_IsEnableShoulder_bIsEnableShoulder) == 0x000004, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon::CallFunc_IsEnableShoulder_bIsEnableShoulder' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon, CallFunc_MakeLiteralByte_ReturnValue) == 0x000005, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000008, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000010, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon, CallFunc_Conv_IntToByte_ReturnValue) == 0x000018, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon, K2Node_Event_IsDesignTime) == 0x000019, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon, CallFunc_SoundPlay_ReturnValue) == 0x00001C, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon, CallFunc_SoundPlay_ReturnValue_1) == 0x000020, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon, Temp_int_Variable) == 0x000024, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon, CallFunc_Not_PreBool_ReturnValue) == 0x000028, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon, K2Node_Select_Default) == 0x00002C, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00003C, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon, CallFunc_BooleanOR_ReturnValue) == 0x00003D, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon, CallFunc_IsEnableShoulder_bIsEnableShoulder_1) == 0x00003E, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon::CallFunc_IsEnableShoulder_bIsEnableShoulder_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ExecuteUbergraph_WBP_MachinrCustom_Sub_Paint_PresetIcon;
 
 // Function WBP_MachinrCustom_Sub_Paint_PresetIcon.WBP_MachinrCustom_Sub_Paint_PresetIcon_C.OnFocusReceived
 // 0x01B8 (0x01B8 - 0x0000)
@@ -75,13 +59,7 @@ public:
 	uint8                                         Pad_FC[0x4];                                       // 0x00FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x0100(0x00B8)()
 };
-static_assert(alignof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_OnFocusReceived) == 0x000008, "Wrong alignment on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_OnFocusReceived");
-static_assert(sizeof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_OnFocusReceived) == 0x0001B8, "Wrong size on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_OnFocusReceived");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_OnFocusReceived, CallFunc_SoundPlay_ReturnValue) == 0x0000F8, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_OnFocusReceived::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_OnFocusReceived, K2Node_MakeStruct_EventReply) == 0x000100, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_OnFocusReceived::K2Node_MakeStruct_EventReply' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachinrCustom_Sub_Paint_PresetIcon_C_OnFocusReceived;
 
 // Function WBP_MachinrCustom_Sub_Paint_PresetIcon.WBP_MachinrCustom_Sub_Paint_PresetIcon_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -90,9 +68,7 @@ struct WBP_MachinrCustom_Sub_Paint_PresetIcon_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_PreConstruct");
-static_assert(sizeof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_PreConstruct) == 0x000001, "Wrong size on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_PreConstruct");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachinrCustom_Sub_Paint_PresetIcon_C_PreConstruct;
 
 // Function WBP_MachinrCustom_Sub_Paint_PresetIcon.WBP_MachinrCustom_Sub_Paint_PresetIcon_C.Reset
 // 0x0058 (0x0058 - 0x0000)
@@ -101,9 +77,7 @@ struct WBP_MachinrCustom_Sub_Paint_PresetIcon_C_Reset final
 public:
 	struct FST_ColorPresetSelectPageItemData      K2Node_MakeStruct_ST_ColorPresetSelectPageItemData; // 0x0000(0x0058)(HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_Reset) == 0x000008, "Wrong alignment on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_Reset");
-static_assert(sizeof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_Reset) == 0x000058, "Wrong size on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_Reset");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_Reset, K2Node_MakeStruct_ST_ColorPresetSelectPageItemData) == 0x000000, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_Reset::K2Node_MakeStruct_ST_ColorPresetSelectPageItemData' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachinrCustom_Sub_Paint_PresetIcon_C_Reset;
 
 // Function WBP_MachinrCustom_Sub_Paint_PresetIcon.WBP_MachinrCustom_Sub_Paint_PresetIcon_C.SetBalloonPattern
 // 0x0004 (0x0004 - 0x0000)
@@ -112,9 +86,7 @@ struct WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonPattern final
 public:
 	int32                                         InPatternIndex;                                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonPattern) == 0x000004, "Wrong alignment on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonPattern");
-static_assert(sizeof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonPattern) == 0x000004, "Wrong size on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonPattern");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonPattern, InPatternIndex) == 0x000000, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonPattern::InPatternIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonPattern;
 
 // Function WBP_MachinrCustom_Sub_Paint_PresetIcon.WBP_MachinrCustom_Sub_Paint_PresetIcon_C.SetBalloonPosition
 // 0x0018 (0x0018 - 0x0000)
@@ -124,10 +96,7 @@ public:
 	struct FVector2D                              InPosition;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonPosition) == 0x000008, "Wrong alignment on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonPosition");
-static_assert(sizeof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonPosition) == 0x000018, "Wrong size on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonPosition");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonPosition, InPosition) == 0x000000, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonPosition::InPosition' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonPosition, CallFunc_SlotAsCanvasSlot_ReturnValue) == 0x000010, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonPosition::CallFunc_SlotAsCanvasSlot_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonPosition;
 
 // Function WBP_MachinrCustom_Sub_Paint_PresetIcon.WBP_MachinrCustom_Sub_Paint_PresetIcon_C.SetBalloonText
 // 0x0010 (0x0010 - 0x0000)
@@ -136,9 +105,7 @@ struct WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonText final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonText) == 0x000008, "Wrong alignment on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonText");
-static_assert(sizeof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonText) == 0x000010, "Wrong size on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonText");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonText, InText) == 0x000000, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonText::InText' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonText;
 
 // Function WBP_MachinrCustom_Sub_Paint_PresetIcon.WBP_MachinrCustom_Sub_Paint_PresetIcon_C.SetBalloonVisible
 // 0x0005 (0x0005 - 0x0000)
@@ -151,13 +118,7 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonVisible) == 0x000001, "Wrong alignment on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonVisible");
-static_assert(sizeof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonVisible) == 0x000005, "Wrong size on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonVisible");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonVisible, bInIsVisible) == 0x000000, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonVisible::bInIsVisible' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonVisible, Temp_bool_Variable) == 0x000001, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonVisible::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonVisible, Temp_byte_Variable) == 0x000002, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonVisible::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonVisible, Temp_byte_Variable_1) == 0x000003, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonVisible::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonVisible, K2Node_Select_Default) == 0x000004, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonVisible::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBalloonVisible;
 
 // Function WBP_MachinrCustom_Sub_Paint_PresetIcon.WBP_MachinrCustom_Sub_Paint_PresetIcon_C.SetBrushColors
 // 0x0038 (0x0038 - 0x0000)
@@ -169,12 +130,7 @@ public:
 	struct FLinearColor                           InColor3;                                          // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBrushColors) == 0x000008, "Wrong alignment on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBrushColors");
-static_assert(sizeof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBrushColors) == 0x000038, "Wrong size on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBrushColors");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBrushColors, InColor1) == 0x000000, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBrushColors::InColor1' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBrushColors, InColor2) == 0x000010, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBrushColors::InColor2' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBrushColors, InColor3) == 0x000020, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBrushColors::InColor3' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBrushColors, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000030, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBrushColors::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetBrushColors;
 
 // Function WBP_MachinrCustom_Sub_Paint_PresetIcon.WBP_MachinrCustom_Sub_Paint_PresetIcon_C.SetCursorVisible
 // 0x0048 (0x0048 - 0x0000)
@@ -204,26 +160,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible) == 0x000008, "Wrong alignment on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible");
-static_assert(sizeof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible) == 0x000048, "Wrong size on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible, bInIsVisible) == 0x000000, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible::bInIsVisible' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible, Temp_bool_Variable) == 0x000001, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible, Temp_byte_Variable) == 0x000002, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible, Temp_byte_Variable_1) == 0x000003, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible, Temp_bool_Variable_1) == 0x000004, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible, Temp_byte_Variable_2) == 0x000005, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible, Temp_byte_Variable_3) == 0x000006, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible, Temp_int_Array_Index_Variable) == 0x000008, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible, K2Node_Select_Default) == 0x00000C, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible, Temp_int_Loop_Counter_Variable) == 0x000010, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible, CallFunc_GetPlayerIndex_PlayerIndex) == 0x000014, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible::CallFunc_GetPlayerIndex_PlayerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000018, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible, CallFunc_Add_IntInt_ReturnValue) == 0x00001C, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible, K2Node_Select_Default_1) == 0x000020, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible, CallFunc_GetAllChildren_ReturnValue) == 0x000028, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible, CallFunc_Array_Get_Item) == 0x000038, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible, CallFunc_Less_IntInt_ReturnValue) == 0x000044, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetCursorVisible;
 
 // Function WBP_MachinrCustom_Sub_Paint_PresetIcon.WBP_MachinrCustom_Sub_Paint_PresetIcon_C.SetEnableShoulder
 // 0x0001 (0x0001 - 0x0000)
@@ -232,9 +169,7 @@ struct WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetEnableShoulder final
 public:
 	bool                                          bIsEnableShoulder_0;                               // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetEnableShoulder) == 0x000001, "Wrong alignment on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetEnableShoulder");
-static_assert(sizeof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetEnableShoulder) == 0x000001, "Wrong size on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetEnableShoulder");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetEnableShoulder, bIsEnableShoulder_0) == 0x000000, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetEnableShoulder::bIsEnableShoulder_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetEnableShoulder;
 
 // Function WBP_MachinrCustom_Sub_Paint_PresetIcon.WBP_MachinrCustom_Sub_Paint_PresetIcon_C.SetPaletteColors
 // 0x0038 (0x0038 - 0x0000)
@@ -246,12 +181,7 @@ public:
 	struct FLinearColor                           InColor3;                                          // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetPaletteColors) == 0x000008, "Wrong alignment on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetPaletteColors");
-static_assert(sizeof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetPaletteColors) == 0x000038, "Wrong size on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetPaletteColors");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetPaletteColors, InColor1) == 0x000000, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetPaletteColors::InColor1' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetPaletteColors, InColor2) == 0x000010, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetPaletteColors::InColor2' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetPaletteColors, InColor3) == 0x000020, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetPaletteColors::InColor3' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetPaletteColors, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000030, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetPaletteColors::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetPaletteColors;
 
 // Function WBP_MachinrCustom_Sub_Paint_PresetIcon.WBP_MachinrCustom_Sub_Paint_PresetIcon_C.SetPlayerIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -260,9 +190,7 @@ struct WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetPlayerIndex final
 public:
 	int32                                         InPlayerIndex;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetPlayerIndex) == 0x000004, "Wrong alignment on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetPlayerIndex");
-static_assert(sizeof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetPlayerIndex) == 0x000004, "Wrong size on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetPlayerIndex");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetPlayerIndex, InPlayerIndex) == 0x000000, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetPlayerIndex::InPlayerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetPlayerIndex;
 
 // Function WBP_MachinrCustom_Sub_Paint_PresetIcon.WBP_MachinrCustom_Sub_Paint_PresetIcon_C.SetSelectIconVisible
 // 0x0005 (0x0005 - 0x0000)
@@ -275,13 +203,7 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetSelectIconVisible) == 0x000001, "Wrong alignment on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetSelectIconVisible");
-static_assert(sizeof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetSelectIconVisible) == 0x000005, "Wrong size on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetSelectIconVisible");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetSelectIconVisible, bInIsVisible) == 0x000000, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetSelectIconVisible::bInIsVisible' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetSelectIconVisible, Temp_bool_Variable) == 0x000001, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetSelectIconVisible::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetSelectIconVisible, Temp_byte_Variable) == 0x000002, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetSelectIconVisible::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetSelectIconVisible, Temp_byte_Variable_1) == 0x000003, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetSelectIconVisible::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetSelectIconVisible, K2Node_Select_Default) == 0x000004, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetSelectIconVisible::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetSelectIconVisible;
 
 // Function WBP_MachinrCustom_Sub_Paint_PresetIcon.WBP_MachinrCustom_Sub_Paint_PresetIcon_C.Setup
 // 0x0060 (0x0060 - 0x0000)
@@ -291,10 +213,7 @@ public:
 	struct FST_ColorPresetSelectPageItemData      InItemData;                                        // 0x0000(0x0058)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_Setup) == 0x000008, "Wrong alignment on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_Setup");
-static_assert(sizeof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_Setup) == 0x000060, "Wrong size on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_Setup");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_Setup, InItemData) == 0x000000, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_Setup::InItemData' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_Setup, K2Node_SwitchEnum_CmpSuccess) == 0x000058, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_Setup::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachinrCustom_Sub_Paint_PresetIcon_C_Setup;
 
 // Function WBP_MachinrCustom_Sub_Paint_PresetIcon.WBP_MachinrCustom_Sub_Paint_PresetIcon_C.SetupCharaIcon
 // 0x0068 (0x0068 - 0x0000)
@@ -309,14 +228,7 @@ public:
 	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupCharaIcon) == 0x000008, "Wrong alignment on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupCharaIcon");
-static_assert(sizeof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupCharaIcon) == 0x000068, "Wrong size on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupCharaIcon");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupCharaIcon, ST_ColorPresetSelectPageItemData) == 0x000000, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupCharaIcon::ST_ColorPresetSelectPageItemData' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupCharaIcon, CallFunc_IsValid_ReturnValue) == 0x000058, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupCharaIcon::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupCharaIcon, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000059, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupCharaIcon::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupCharaIcon, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x00005A, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupCharaIcon::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupCharaIcon, CallFunc_BooleanOR_ReturnValue) == 0x00005B, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupCharaIcon::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupCharaIcon, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000060, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupCharaIcon::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupCharaIcon;
 
 // Function WBP_MachinrCustom_Sub_Paint_PresetIcon.WBP_MachinrCustom_Sub_Paint_PresetIcon_C.SetupNewIcon
 // 0x0060 (0x0060 - 0x0000)
@@ -329,13 +241,7 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x005A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x005B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupNewIcon) == 0x000008, "Wrong alignment on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupNewIcon");
-static_assert(sizeof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupNewIcon) == 0x000060, "Wrong size on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupNewIcon");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupNewIcon, ItemData_0) == 0x000000, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupNewIcon::ItemData_0' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupNewIcon, Temp_bool_Variable) == 0x000058, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupNewIcon::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupNewIcon, Temp_byte_Variable) == 0x000059, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupNewIcon::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupNewIcon, Temp_byte_Variable_1) == 0x00005A, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupNewIcon::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupNewIcon, K2Node_Select_Default) == 0x00005B, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupNewIcon::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupNewIcon;
 
 // Function WBP_MachinrCustom_Sub_Paint_PresetIcon.WBP_MachinrCustom_Sub_Paint_PresetIcon_C.SetupPresetIcon
 // 0x0070 (0x0070 - 0x0000)
@@ -357,20 +263,7 @@ public:
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x006D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupPresetIcon) == 0x000008, "Wrong alignment on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupPresetIcon");
-static_assert(sizeof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupPresetIcon) == 0x000070, "Wrong size on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupPresetIcon");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupPresetIcon, InItem) == 0x000000, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupPresetIcon::InItem' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupPresetIcon, Temp_byte_Variable) == 0x000058, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupPresetIcon::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupPresetIcon, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000059, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupPresetIcon::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupPresetIcon, CallFunc_Conv_ByteToInt_ReturnValue) == 0x00005C, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupPresetIcon::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupPresetIcon, Temp_byte_Variable_1) == 0x000060, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupPresetIcon::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupPresetIcon, CallFunc_Subtract_IntInt_ReturnValue) == 0x000064, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupPresetIcon::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupPresetIcon, Temp_bool_Variable) == 0x000068, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupPresetIcon::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupPresetIcon, Temp_byte_Variable_2) == 0x000069, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupPresetIcon::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupPresetIcon, Temp_byte_Variable_3) == 0x00006A, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupPresetIcon::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupPresetIcon, Temp_bool_Variable_1) == 0x00006B, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupPresetIcon::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupPresetIcon, K2Node_Select_Default) == 0x00006C, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupPresetIcon::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupPresetIcon, K2Node_Select_Default_1) == 0x00006D, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupPresetIcon::K2Node_Select_Default_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetupPresetIcon;
 
 // Function WBP_MachinrCustom_Sub_Paint_PresetIcon.WBP_MachinrCustom_Sub_Paint_PresetIcon_C.SetVisibleCharaIcon
 // 0x0005 (0x0005 - 0x0000)
@@ -383,13 +276,7 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetVisibleCharaIcon) == 0x000001, "Wrong alignment on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetVisibleCharaIcon");
-static_assert(sizeof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetVisibleCharaIcon) == 0x000005, "Wrong size on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetVisibleCharaIcon");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetVisibleCharaIcon, IsVisible_0) == 0x000000, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetVisibleCharaIcon::IsVisible_0' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetVisibleCharaIcon, Temp_bool_Variable) == 0x000001, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetVisibleCharaIcon::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetVisibleCharaIcon, Temp_byte_Variable) == 0x000002, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetVisibleCharaIcon::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetVisibleCharaIcon, Temp_byte_Variable_1) == 0x000003, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetVisibleCharaIcon::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetVisibleCharaIcon, K2Node_Select_Default) == 0x000004, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetVisibleCharaIcon::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachinrCustom_Sub_Paint_PresetIcon_C_SetVisibleCharaIcon;
 
 // Function WBP_MachinrCustom_Sub_Paint_PresetIcon.WBP_MachinrCustom_Sub_Paint_PresetIcon_C.ShowCursor
 // 0x0001 (0x0001 - 0x0000)
@@ -398,9 +285,7 @@ struct WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ShowCursor final
 public:
 	bool                                          bInIsVisible;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ShowCursor) == 0x000001, "Wrong alignment on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ShowCursor");
-static_assert(sizeof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ShowCursor) == 0x000001, "Wrong size on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ShowCursor");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ShowCursor, bInIsVisible) == 0x000000, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ShowCursor::bInIsVisible' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachinrCustom_Sub_Paint_PresetIcon_C_ShowCursor;
 
 // Function WBP_MachinrCustom_Sub_Paint_PresetIcon.WBP_MachinrCustom_Sub_Paint_PresetIcon_C.UpdateBaseColor
 // 0x0028 (0x0028 - 0x0000)
@@ -413,12 +298,7 @@ public:
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0014(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_UpdateBaseColor) == 0x000008, "Wrong alignment on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_UpdateBaseColor");
-static_assert(sizeof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_UpdateBaseColor) == 0x000028, "Wrong size on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_UpdateBaseColor");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_UpdateBaseColor, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000000, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_UpdateBaseColor::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_UpdateBaseColor, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x000008, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_UpdateBaseColor::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_UpdateBaseColor, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000010, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_UpdateBaseColor::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_UpdateBaseColor, CallFunc_SelectColor_ReturnValue) == 0x000014, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_UpdateBaseColor::CallFunc_SelectColor_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachinrCustom_Sub_Paint_PresetIcon_C_UpdateBaseColor;
 
 // Function WBP_MachinrCustom_Sub_Paint_PresetIcon.WBP_MachinrCustom_Sub_Paint_PresetIcon_C.GetItemData
 // 0x0058 (0x0058 - 0x0000)
@@ -427,9 +307,7 @@ struct WBP_MachinrCustom_Sub_Paint_PresetIcon_C_GetItemData final
 public:
 	struct FST_ColorPresetSelectPageItemData      OutItemData;                                       // 0x0000(0x0058)(Parm, OutParm, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_GetItemData) == 0x000008, "Wrong alignment on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_GetItemData");
-static_assert(sizeof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_GetItemData) == 0x000058, "Wrong size on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_GetItemData");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_GetItemData, OutItemData) == 0x000000, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_GetItemData::OutItemData' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachinrCustom_Sub_Paint_PresetIcon_C_GetItemData;
 
 // Function WBP_MachinrCustom_Sub_Paint_PresetIcon.WBP_MachinrCustom_Sub_Paint_PresetIcon_C.GetPlayerController
 // 0x0018 (0x0018 - 0x0000)
@@ -441,11 +319,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_GetPlayerController) == 0x000008, "Wrong alignment on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_GetPlayerController");
-static_assert(sizeof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_GetPlayerController) == 0x000018, "Wrong size on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_GetPlayerController");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_GetPlayerController, PlayerController) == 0x000000, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_GetPlayerController::PlayerController' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_GetPlayerController, CallFunc_GetPlayerIndex_PlayerIndex) == 0x000008, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_GetPlayerController::CallFunc_GetPlayerIndex_PlayerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_GetPlayerController, CallFunc_GetPlayerController_ReturnValue) == 0x000010, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_GetPlayerController::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachinrCustom_Sub_Paint_PresetIcon_C_GetPlayerController;
 
 // Function WBP_MachinrCustom_Sub_Paint_PresetIcon.WBP_MachinrCustom_Sub_Paint_PresetIcon_C.GetPlayerIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -454,9 +328,7 @@ struct WBP_MachinrCustom_Sub_Paint_PresetIcon_C_GetPlayerIndex final
 public:
 	int32                                         PlayerIndex_0;                                     // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_GetPlayerIndex) == 0x000004, "Wrong alignment on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_GetPlayerIndex");
-static_assert(sizeof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_GetPlayerIndex) == 0x000004, "Wrong size on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_GetPlayerIndex");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_GetPlayerIndex, PlayerIndex_0) == 0x000000, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_GetPlayerIndex::PlayerIndex_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachinrCustom_Sub_Paint_PresetIcon_C_GetPlayerIndex;
 
 // Function WBP_MachinrCustom_Sub_Paint_PresetIcon.WBP_MachinrCustom_Sub_Paint_PresetIcon_C.IsEnableShoulder
 // 0x0001 (0x0001 - 0x0000)
@@ -465,9 +337,7 @@ struct WBP_MachinrCustom_Sub_Paint_PresetIcon_C_IsEnableShoulder final
 public:
 	bool                                          bIsEnableShoulder_0;                               // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_IsEnableShoulder) == 0x000001, "Wrong alignment on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_IsEnableShoulder");
-static_assert(sizeof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_IsEnableShoulder) == 0x000001, "Wrong size on WBP_MachinrCustom_Sub_Paint_PresetIcon_C_IsEnableShoulder");
-static_assert(offsetof(WBP_MachinrCustom_Sub_Paint_PresetIcon_C_IsEnableShoulder, bIsEnableShoulder_0) == 0x000000, "Member 'WBP_MachinrCustom_Sub_Paint_PresetIcon_C_IsEnableShoulder::bIsEnableShoulder_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachinrCustom_Sub_Paint_PresetIcon_C_IsEnableShoulder;
 
 }
 

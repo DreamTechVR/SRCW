@@ -24,9 +24,7 @@ struct WBP_ItemSwitch_C_CheckIsGuest final
 public:
 	bool                                          IsGuest;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemSwitch_C_CheckIsGuest) == 0x000001, "Wrong alignment on WBP_ItemSwitch_C_CheckIsGuest");
-static_assert(sizeof(WBP_ItemSwitch_C_CheckIsGuest) == 0x000001, "Wrong size on WBP_ItemSwitch_C_CheckIsGuest");
-static_assert(offsetof(WBP_ItemSwitch_C_CheckIsGuest, IsGuest) == 0x000000, "Member 'WBP_ItemSwitch_C_CheckIsGuest::IsGuest' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemSwitch_C_CheckIsGuest;
 
 // Function WBP_ItemSwitch.WBP_ItemSwitch_C.DoCustomNavigation
 // 0x0028 (0x0028 - 0x0000)
@@ -40,13 +38,7 @@ public:
 	class AAppPlayerController*                   K2Node_DynamicCast_AsApp_Player_Controller;        // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemSwitch_C_DoCustomNavigation) == 0x000008, "Wrong alignment on WBP_ItemSwitch_C_DoCustomNavigation");
-static_assert(sizeof(WBP_ItemSwitch_C_DoCustomNavigation) == 0x000028, "Wrong size on WBP_ItemSwitch_C_DoCustomNavigation");
-static_assert(offsetof(WBP_ItemSwitch_C_DoCustomNavigation, Navigation_0) == 0x000000, "Member 'WBP_ItemSwitch_C_DoCustomNavigation::Navigation_0' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_DoCustomNavigation, ReturnValue) == 0x000008, "Member 'WBP_ItemSwitch_C_DoCustomNavigation::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_DoCustomNavigation, CallFunc_GetPlayerController_ReturnValue) == 0x000010, "Member 'WBP_ItemSwitch_C_DoCustomNavigation::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_DoCustomNavigation, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000018, "Member 'WBP_ItemSwitch_C_DoCustomNavigation::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_DoCustomNavigation, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'WBP_ItemSwitch_C_DoCustomNavigation::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemSwitch_C_DoCustomNavigation;
 
 // Function WBP_ItemSwitch.WBP_ItemSwitch_C.ExecuteUbergraph_WBP_ItemSwitch
 // 0x0248 (0x0248 - 0x0000)
@@ -142,80 +134,7 @@ public:
 	TArray<struct FItemSwitchSettingSingle>       K2Node_Select_Default;                             // 0x0230(0x0010)(ReferenceParm)
 	bool                                          CallFunc_IsButtonChanged_ReturnValue;              // 0x0240(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch) == 0x000008, "Wrong alignment on WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch");
-static_assert(sizeof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch) == 0x000248, "Wrong size on WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, EntryPoint) == 0x000000, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, Temp_byte_Variable) == 0x000005, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, CallFunc_IsValid_ReturnValue_1) == 0x000018, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, CallFunc_IsInViewport_ReturnValue) == 0x000019, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::CallFunc_IsInViewport_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, CallFunc_GetPlayerController_ReturnValue) == 0x000020, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, CallFunc_GetPlayerController_ReturnValue_1) == 0x000028, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_CustomEvent_Button_4) == 0x000030, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_CustomEvent_Button_4' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, CallFunc_SoundPlay_ReturnValue) == 0x000038, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_CustomEvent_Button_3) == 0x000040, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_CustomEvent_Button_3' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_CustomEvent_PanelIndex_2) == 0x000048, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_CustomEvent_PanelIndex_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_CustomEvent_ButtonIndex_2) == 0x00004C, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_CustomEvent_ButtonIndex_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, CallFunc_SoundPlay_ReturnValue_1) == 0x000050, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_CustomEvent_Button_2) == 0x000058, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_CustomEvent_Button_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_CustomEvent_Button_1) == 0x000060, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_CustomEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_CustomEvent_PanelIndex_1) == 0x000068, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_CustomEvent_PanelIndex_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_CustomEvent_ButtonIndex_1) == 0x00006C, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_CustomEvent_ButtonIndex_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_DynamicCast_AsWBP_Item_Switch_Sub_Item_Icon) == 0x000070, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_DynamicCast_AsWBP_Item_Switch_Sub_Item_Icon' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_DynamicCast_bSuccess) == 0x000078, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_Event_IsDesignTime) == 0x000079, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_Event_IsGuest) == 0x00007A, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_Event_IsGuest' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, CallFunc_IsAnimationPlaying_ReturnValue) == 0x00007B, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, CallFunc_Not_PreBool_ReturnValue) == 0x00007C, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, CallFunc_IsAnimationPlaying_ReturnValue_1) == 0x00007D, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::CallFunc_IsAnimationPlaying_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, CallFunc_Not_PreBool_ReturnValue_1) == 0x00007E, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, CallFunc_MakeLiteralByte_ReturnValue) == 0x00007F, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_CreateDelegate_OutputDelegate_1) == 0x000080, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000090, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, CallFunc_MakeLiteralText_ReturnValue) == 0x000098, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, CallFunc_MakeLiteralText_ReturnValue_1) == 0x0000A8, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_CreateDelegate_OutputDelegate_2) == 0x0000B8, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, CallFunc_MakeLiteralText_ReturnValue_2) == 0x0000C8, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::CallFunc_MakeLiteralText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, CallFunc_MakeLiteralText_ReturnValue_3) == 0x0000D8, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::CallFunc_MakeLiteralText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_CreateDelegate_OutputDelegate_3) == 0x0000E8, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_MakeArray_Array) == 0x0000F8, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_CustomEvent_Button) == 0x000108, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_CustomEvent_PanelIndex) == 0x000110, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_CustomEvent_PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_CustomEvent_ButtonIndex) == 0x000114, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_CustomEvent_ButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, CallFunc_GetPlayerController_ReturnValue_2) == 0x000118, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::CallFunc_GetPlayerController_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000120, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_CreateDelegate_OutputDelegate_4) == 0x000124, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, CallFunc_SoundPlay_ReturnValue_2) == 0x000134, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::CallFunc_SoundPlay_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, CallFunc_SoundPlay_ReturnValue_3) == 0x000138, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::CallFunc_SoundPlay_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_DynamicCast_AsMenu_Popup_Window_Interface) == 0x000140, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_DynamicCast_AsMenu_Popup_Window_Interface' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_DynamicCast_bSuccess_1) == 0x000150, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_1) == 0x000158, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_1' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_DynamicCast_bSuccess_2) == 0x000168, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_2) == 0x000170, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_DynamicCast_bSuccess_3) == 0x000180, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_3) == 0x000188, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_3' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_DynamicCast_bSuccess_4) == 0x000198, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_4) == 0x0001A0, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_4' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_DynamicCast_bSuccess_5) == 0x0001B0, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_CustomEvent_bOut) == 0x0001B1, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_CustomEvent_bOut' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_CustomEvent_Decide) == 0x0001B2, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_CustomEvent_Decide' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, CallFunc_PlayAnimation_ReturnValue) == 0x0001B8, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_CreateDelegate_OutputDelegate_5) == 0x0001C0, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, CallFunc_CreatePlayAnimationProxyObject_Result) == 0x0001D0, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::CallFunc_CreatePlayAnimationProxyObject_Result' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, CallFunc_CreatePlayAnimationProxyObject_ReturnValue) == 0x0001D8, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::CallFunc_CreatePlayAnimationProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x0001E0, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, CallFunc_CreatePopupWindow_ReturnValue) == 0x0001E8, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::CallFunc_CreatePopupWindow_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, CallFunc_IsValid_ReturnValue_2) == 0x0001F0, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, CallFunc_IsValid_ReturnValue_3) == 0x0001F1, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_CreateDelegate_OutputDelegate_6) == 0x0001F4, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, CallFunc_DecideCurrentSetting_IsRuleChanged) == 0x000204, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::CallFunc_DecideCurrentSetting_IsRuleChanged' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_CreateDelegate_OutputDelegate_7) == 0x000208, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, CallFunc_IsAnimationPlaying_ReturnValue_2) == 0x000218, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::CallFunc_IsAnimationPlaying_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, CallFunc_GetGroupSettingFromGameMode_GroupSetting) == 0x000219, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::CallFunc_GetGroupSettingFromGameMode_GroupSetting' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_CreateDelegate_OutputDelegate_8) == 0x00021C, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_CreateDelegate_OutputDelegate_8' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, K2Node_Select_Default) == 0x000230, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch, CallFunc_IsButtonChanged_ReturnValue) == 0x000240, "Member 'WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch::CallFunc_IsButtonChanged_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemSwitch_C_ExecuteUbergraph_WBP_ItemSwitch;
 
 // Function WBP_ItemSwitch.WBP_ItemSwitch_C.FireInOutAnim
 // 0x0002 (0x0002 - 0x0000)
@@ -225,10 +144,7 @@ public:
 	bool                                          bOut;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Decide;                                            // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemSwitch_C_FireInOutAnim) == 0x000001, "Wrong alignment on WBP_ItemSwitch_C_FireInOutAnim");
-static_assert(sizeof(WBP_ItemSwitch_C_FireInOutAnim) == 0x000002, "Wrong size on WBP_ItemSwitch_C_FireInOutAnim");
-static_assert(offsetof(WBP_ItemSwitch_C_FireInOutAnim, bOut) == 0x000000, "Member 'WBP_ItemSwitch_C_FireInOutAnim::bOut' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_FireInOutAnim, Decide) == 0x000001, "Member 'WBP_ItemSwitch_C_FireInOutAnim::Decide' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemSwitch_C_FireInOutAnim;
 
 // Function WBP_ItemSwitch.WBP_ItemSwitch_C.GetGroupSettingFromGameMode
 // 0x00C8 (0x00C8 - 0x0000)
@@ -242,13 +158,7 @@ public:
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ERaceSettingGrouping                          CallFunc_GetRaceSettingGrouping_ReturnValue;       // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemSwitch_C_GetGroupSettingFromGameMode) == 0x000008, "Wrong alignment on WBP_ItemSwitch_C_GetGroupSettingFromGameMode");
-static_assert(sizeof(WBP_ItemSwitch_C_GetGroupSettingFromGameMode) == 0x0000C8, "Wrong size on WBP_ItemSwitch_C_GetGroupSettingFromGameMode");
-static_assert(offsetof(WBP_ItemSwitch_C_GetGroupSettingFromGameMode, GroupSetting) == 0x000000, "Member 'WBP_ItemSwitch_C_GetGroupSettingFromGameMode::GroupSetting' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_GetGroupSettingFromGameMode, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x000001, "Member 'WBP_ItemSwitch_C_GetGroupSettingFromGameMode::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_GetGroupSettingFromGameMode, CallFunc_GetPrivateMatchCustomRaceSetting_ReturnValue) == 0x000008, "Member 'WBP_ItemSwitch_C_GetGroupSettingFromGameMode::CallFunc_GetPrivateMatchCustomRaceSetting_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_GetGroupSettingFromGameMode, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000C0, "Member 'WBP_ItemSwitch_C_GetGroupSettingFromGameMode::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_GetGroupSettingFromGameMode, CallFunc_GetRaceSettingGrouping_ReturnValue) == 0x0000C1, "Member 'WBP_ItemSwitch_C_GetGroupSettingFromGameMode::CallFunc_GetRaceSettingGrouping_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemSwitch_C_GetGroupSettingFromGameMode;
 
 // Function WBP_ItemSwitch.WBP_ItemSwitch_C.OnCancelEvent_Event
 // 0x0008 (0x0008 - 0x0000)
@@ -257,9 +167,7 @@ struct WBP_ItemSwitch_C_OnCancelEvent_Event final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemSwitch_C_OnCancelEvent_Event) == 0x000008, "Wrong alignment on WBP_ItemSwitch_C_OnCancelEvent_Event");
-static_assert(sizeof(WBP_ItemSwitch_C_OnCancelEvent_Event) == 0x000008, "Wrong size on WBP_ItemSwitch_C_OnCancelEvent_Event");
-static_assert(offsetof(WBP_ItemSwitch_C_OnCancelEvent_Event, Button) == 0x000000, "Member 'WBP_ItemSwitch_C_OnCancelEvent_Event::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemSwitch_C_OnCancelEvent_Event;
 
 // Function WBP_ItemSwitch.WBP_ItemSwitch_C.OnDecisionEvent_Event
 // 0x0008 (0x0008 - 0x0000)
@@ -268,9 +176,7 @@ struct WBP_ItemSwitch_C_OnDecisionEvent_Event final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemSwitch_C_OnDecisionEvent_Event) == 0x000008, "Wrong alignment on WBP_ItemSwitch_C_OnDecisionEvent_Event");
-static_assert(sizeof(WBP_ItemSwitch_C_OnDecisionEvent_Event) == 0x000008, "Wrong size on WBP_ItemSwitch_C_OnDecisionEvent_Event");
-static_assert(offsetof(WBP_ItemSwitch_C_OnDecisionEvent_Event, Button) == 0x000000, "Member 'WBP_ItemSwitch_C_OnDecisionEvent_Event::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemSwitch_C_OnDecisionEvent_Event;
 
 // Function WBP_ItemSwitch.WBP_ItemSwitch_C.OnUISceneCancelEvent_Event
 // 0x0010 (0x0010 - 0x0000)
@@ -281,11 +187,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemSwitch_C_OnUISceneCancelEvent_Event) == 0x000008, "Wrong alignment on WBP_ItemSwitch_C_OnUISceneCancelEvent_Event");
-static_assert(sizeof(WBP_ItemSwitch_C_OnUISceneCancelEvent_Event) == 0x000010, "Wrong size on WBP_ItemSwitch_C_OnUISceneCancelEvent_Event");
-static_assert(offsetof(WBP_ItemSwitch_C_OnUISceneCancelEvent_Event, Button) == 0x000000, "Member 'WBP_ItemSwitch_C_OnUISceneCancelEvent_Event::Button' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_OnUISceneCancelEvent_Event, PanelIndex) == 0x000008, "Member 'WBP_ItemSwitch_C_OnUISceneCancelEvent_Event::PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_OnUISceneCancelEvent_Event, ButtonIndex) == 0x00000C, "Member 'WBP_ItemSwitch_C_OnUISceneCancelEvent_Event::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemSwitch_C_OnUISceneCancelEvent_Event;
 
 // Function WBP_ItemSwitch.WBP_ItemSwitch_C.OnUISceneFocusEvent_Event
 // 0x0010 (0x0010 - 0x0000)
@@ -296,11 +198,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemSwitch_C_OnUISceneFocusEvent_Event) == 0x000008, "Wrong alignment on WBP_ItemSwitch_C_OnUISceneFocusEvent_Event");
-static_assert(sizeof(WBP_ItemSwitch_C_OnUISceneFocusEvent_Event) == 0x000010, "Wrong size on WBP_ItemSwitch_C_OnUISceneFocusEvent_Event");
-static_assert(offsetof(WBP_ItemSwitch_C_OnUISceneFocusEvent_Event, Button) == 0x000000, "Member 'WBP_ItemSwitch_C_OnUISceneFocusEvent_Event::Button' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_OnUISceneFocusEvent_Event, PanelIndex) == 0x000008, "Member 'WBP_ItemSwitch_C_OnUISceneFocusEvent_Event::PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_OnUISceneFocusEvent_Event, ButtonIndex) == 0x00000C, "Member 'WBP_ItemSwitch_C_OnUISceneFocusEvent_Event::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemSwitch_C_OnUISceneFocusEvent_Event;
 
 // Function WBP_ItemSwitch.WBP_ItemSwitch_C.PopupDecisionEvent
 // 0x0010 (0x0010 - 0x0000)
@@ -311,11 +209,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemSwitch_C_PopupDecisionEvent) == 0x000008, "Wrong alignment on WBP_ItemSwitch_C_PopupDecisionEvent");
-static_assert(sizeof(WBP_ItemSwitch_C_PopupDecisionEvent) == 0x000010, "Wrong size on WBP_ItemSwitch_C_PopupDecisionEvent");
-static_assert(offsetof(WBP_ItemSwitch_C_PopupDecisionEvent, Button) == 0x000000, "Member 'WBP_ItemSwitch_C_PopupDecisionEvent::Button' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_PopupDecisionEvent, PanelIndex) == 0x000008, "Member 'WBP_ItemSwitch_C_PopupDecisionEvent::PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_ItemSwitch_C_PopupDecisionEvent, ButtonIndex) == 0x00000C, "Member 'WBP_ItemSwitch_C_PopupDecisionEvent::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemSwitch_C_PopupDecisionEvent;
 
 // Function WBP_ItemSwitch.WBP_ItemSwitch_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -324,9 +218,7 @@ struct WBP_ItemSwitch_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ItemSwitch_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_ItemSwitch_C_PreConstruct");
-static_assert(sizeof(WBP_ItemSwitch_C_PreConstruct) == 0x000001, "Wrong size on WBP_ItemSwitch_C_PreConstruct");
-static_assert(offsetof(WBP_ItemSwitch_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_ItemSwitch_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ItemSwitch_C_PreConstruct;
 
 }
 

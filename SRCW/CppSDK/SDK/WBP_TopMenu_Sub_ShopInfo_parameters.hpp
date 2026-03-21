@@ -30,15 +30,7 @@ public:
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetPlatformStoreButtonMessage_ReturnValue; // 0x0028(0x0010)()
 };
-static_assert(alignof(WBP_TopMenu_Sub_ShopInfo_C_ExecuteUbergraph_WBP_TopMenu_Sub_ShopInfo) == 0x000008, "Wrong alignment on WBP_TopMenu_Sub_ShopInfo_C_ExecuteUbergraph_WBP_TopMenu_Sub_ShopInfo");
-static_assert(sizeof(WBP_TopMenu_Sub_ShopInfo_C_ExecuteUbergraph_WBP_TopMenu_Sub_ShopInfo) == 0x000038, "Wrong size on WBP_TopMenu_Sub_ShopInfo_C_ExecuteUbergraph_WBP_TopMenu_Sub_ShopInfo");
-static_assert(offsetof(WBP_TopMenu_Sub_ShopInfo_C_ExecuteUbergraph_WBP_TopMenu_Sub_ShopInfo, EntryPoint) == 0x000000, "Member 'WBP_TopMenu_Sub_ShopInfo_C_ExecuteUbergraph_WBP_TopMenu_Sub_ShopInfo::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_ShopInfo_C_ExecuteUbergraph_WBP_TopMenu_Sub_ShopInfo, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000008, "Member 'WBP_TopMenu_Sub_ShopInfo_C_ExecuteUbergraph_WBP_TopMenu_Sub_ShopInfo::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_ShopInfo_C_ExecuteUbergraph_WBP_TopMenu_Sub_ShopInfo, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'WBP_TopMenu_Sub_ShopInfo_C_ExecuteUbergraph_WBP_TopMenu_Sub_ShopInfo::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_ShopInfo_C_ExecuteUbergraph_WBP_TopMenu_Sub_ShopInfo, CallFunc_IsValid_ReturnValue_1) == 0x000011, "Member 'WBP_TopMenu_Sub_ShopInfo_C_ExecuteUbergraph_WBP_TopMenu_Sub_ShopInfo::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_ShopInfo_C_ExecuteUbergraph_WBP_TopMenu_Sub_ShopInfo, K2Node_DynamicCast_AsPlatform_Store_Message_Data_Asset) == 0x000018, "Member 'WBP_TopMenu_Sub_ShopInfo_C_ExecuteUbergraph_WBP_TopMenu_Sub_ShopInfo::K2Node_DynamicCast_AsPlatform_Store_Message_Data_Asset' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_ShopInfo_C_ExecuteUbergraph_WBP_TopMenu_Sub_ShopInfo, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'WBP_TopMenu_Sub_ShopInfo_C_ExecuteUbergraph_WBP_TopMenu_Sub_ShopInfo::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_TopMenu_Sub_ShopInfo_C_ExecuteUbergraph_WBP_TopMenu_Sub_ShopInfo, CallFunc_GetPlatformStoreButtonMessage_ReturnValue) == 0x000028, "Member 'WBP_TopMenu_Sub_ShopInfo_C_ExecuteUbergraph_WBP_TopMenu_Sub_ShopInfo::CallFunc_GetPlatformStoreButtonMessage_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_TopMenu_Sub_ShopInfo_C_ExecuteUbergraph_WBP_TopMenu_Sub_ShopInfo;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -50,31 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_PartyRace_Sub_RivalTeamNext_C">();
+		BP_STATIC_CLASS_IMPL("WBP_PartyRace_Sub_RivalTeamNext_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_PartyRace_Sub_RivalTeamNext_C")
 	}
 	static class UWBP_PartyRace_Sub_RivalTeamNext_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_PartyRace_Sub_RivalTeamNext_C>();
 	}
 };
-static_assert(alignof(UWBP_PartyRace_Sub_RivalTeamNext_C) == 0x000008, "Wrong alignment on UWBP_PartyRace_Sub_RivalTeamNext_C");
-static_assert(sizeof(UWBP_PartyRace_Sub_RivalTeamNext_C) == 0x000708, "Wrong size on UWBP_PartyRace_Sub_RivalTeamNext_C");
-static_assert(offsetof(UWBP_PartyRace_Sub_RivalTeamNext_C, UberGraphFrame) == 0x000688, "Member 'UWBP_PartyRace_Sub_RivalTeamNext_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_RivalTeamNext_C, RivalNext_OFF_In) == 0x000690, "Member 'UWBP_PartyRace_Sub_RivalTeamNext_C::RivalNext_OFF_In' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_RivalTeamNext_C, RivalNext_OFF) == 0x000698, "Member 'UWBP_PartyRace_Sub_RivalTeamNext_C::RivalNext_OFF' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_RivalTeamNext_C, DMY_CharaCut) == 0x0006A0, "Member 'UWBP_PartyRace_Sub_RivalTeamNext_C::DMY_CharaCut' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_RivalTeamNext_C, Fire01_01) == 0x0006A8, "Member 'UWBP_PartyRace_Sub_RivalTeamNext_C::Fire01_01' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_RivalTeamNext_C, Fire02_01) == 0x0006B0, "Member 'UWBP_PartyRace_Sub_RivalTeamNext_C::Fire02_01' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_RivalTeamNext_C, Fire03_01) == 0x0006B8, "Member 'UWBP_PartyRace_Sub_RivalTeamNext_C::Fire03_01' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_RivalTeamNext_C, Grow) == 0x0006C0, "Member 'UWBP_PartyRace_Sub_RivalTeamNext_C::Grow' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_RivalTeamNext_C, Plate) == 0x0006C8, "Member 'UWBP_PartyRace_Sub_RivalTeamNext_C::Plate' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_RivalTeamNext_C, Plate_Text) == 0x0006D0, "Member 'UWBP_PartyRace_Sub_RivalTeamNext_C::Plate_Text' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_RivalTeamNext_C, Sparks_01) == 0x0006D8, "Member 'UWBP_PartyRace_Sub_RivalTeamNext_C::Sparks_01' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_RivalTeamNext_C, TXT_No_Rivals_Set) == 0x0006E0, "Member 'UWBP_PartyRace_Sub_RivalTeamNext_C::TXT_No_Rivals_Set' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_RivalTeamNext_C, TXT_Rival) == 0x0006E8, "Member 'UWBP_PartyRace_Sub_RivalTeamNext_C::TXT_Rival' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_RivalTeamNext_C, WBP_CMN_ControllerBtn) == 0x0006F0, "Member 'UWBP_PartyRace_Sub_RivalTeamNext_C::WBP_CMN_ControllerBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_RivalTeamNext_C, WBP_CMN_RivalLevel) == 0x0006F8, "Member 'UWBP_PartyRace_Sub_RivalTeamNext_C::WBP_CMN_RivalLevel' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_RivalTeamNext_C, Is_in_or_Out) == 0x000700, "Member 'UWBP_PartyRace_Sub_RivalTeamNext_C::Is_in_or_Out' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_PartyRace_Sub_RivalTeamNext_C;
 
 }
 

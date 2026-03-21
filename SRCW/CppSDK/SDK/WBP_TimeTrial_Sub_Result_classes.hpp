@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "UnionSystem_structs.hpp"
-#include "UNION_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "UNION_structs.hpp"
+#include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -107,68 +107,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_TimeTrial_Sub_Result_C">();
+		BP_STATIC_CLASS_IMPL("WBP_TimeTrial_Sub_Result_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_TimeTrial_Sub_Result_C")
 	}
 	static class UWBP_TimeTrial_Sub_Result_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_TimeTrial_Sub_Result_C>();
 	}
 };
-static_assert(alignof(UWBP_TimeTrial_Sub_Result_C) == 0x000008, "Wrong alignment on UWBP_TimeTrial_Sub_Result_C");
-static_assert(sizeof(UWBP_TimeTrial_Sub_Result_C) == 0x000560, "Wrong size on UWBP_TimeTrial_Sub_Result_C");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, UberGraphFrame) == 0x000388, "Member 'UWBP_TimeTrial_Sub_Result_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, TimeTrial_Reward_StyleOnline) == 0x000390, "Member 'UWBP_TimeTrial_Sub_Result_C::TimeTrial_Reward_StyleOnline' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, TimeTrial_Reward_StyleMy) == 0x000398, "Member 'UWBP_TimeTrial_Sub_Result_C::TimeTrial_Reward_StyleMy' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, TimeTrial_Reward_Out) == 0x0003A0, "Member 'UWBP_TimeTrial_Sub_Result_C::TimeTrial_Reward_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, TimeTrial_Reward_In) == 0x0003A8, "Member 'UWBP_TimeTrial_Sub_Result_C::TimeTrial_Reward_In' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, TimeTrial_Ghost_Out) == 0x0003B0, "Member 'UWBP_TimeTrial_Sub_Result_C::TimeTrial_Ghost_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, TimeTrial_Ghost_In) == 0x0003B8, "Member 'UWBP_TimeTrial_Sub_Result_C::TimeTrial_Ghost_In' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, TimeTrial_Result_Out) == 0x0003C0, "Member 'UWBP_TimeTrial_Sub_Result_C::TimeTrial_Result_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, TimeTrial_Result_Loop) == 0x0003C8, "Member 'UWBP_TimeTrial_Sub_Result_C::TimeTrial_Result_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, TimeTrial_Result_In) == 0x0003D0, "Member 'UWBP_TimeTrial_Sub_Result_C::TimeTrial_Result_In' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, DMY_Image_IconRank_L) == 0x0003D8, "Member 'UWBP_TimeTrial_Sub_Result_C::DMY_Image_IconRank_L' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, DMY_Image_IconRank_S) == 0x0003E0, "Member 'UWBP_TimeTrial_Sub_Result_C::DMY_Image_IconRank_S' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, DSP_Border_NewGhost) == 0x0003E8, "Member 'UWBP_TimeTrial_Sub_Result_C::DSP_Border_NewGhost' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, DSP_Border_Reward) == 0x0003F0, "Member 'UWBP_TimeTrial_Sub_Result_C::DSP_Border_Reward' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, DSP_Overlay_NextRankTime) == 0x0003F8, "Member 'UWBP_TimeTrial_Sub_Result_C::DSP_Overlay_NextRankTime' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, Eff_Core_Add_01) == 0x000400, "Member 'UWBP_TimeTrial_Sub_Result_C::Eff_Core_Add_01' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, Eff_Core_Add_02) == 0x000408, "Member 'UWBP_TimeTrial_Sub_Result_C::Eff_Core_Add_02' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, Eff_Core_Ptcl) == 0x000410, "Member 'UWBP_TimeTrial_Sub_Result_C::Eff_Core_Ptcl' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, Eff_Core_Ptcl_1) == 0x000418, "Member 'UWBP_TimeTrial_Sub_Result_C::Eff_Core_Ptcl_1' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, Eff_Core_Ptcl_01) == 0x000420, "Member 'UWBP_TimeTrial_Sub_Result_C::Eff_Core_Ptcl_01' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, Eff_Core_Ptcl_02) == 0x000428, "Member 'UWBP_TimeTrial_Sub_Result_C::Eff_Core_Ptcl_02' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, Image) == 0x000430, "Member 'UWBP_TimeTrial_Sub_Result_C::Image' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, Line) == 0x000438, "Member 'UWBP_TimeTrial_Sub_Result_C::Line' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, Overlay_NextRank) == 0x000440, "Member 'UWBP_TimeTrial_Sub_Result_C::Overlay_NextRank' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, PAT_Eff_Achievement_TimeAttack) == 0x000448, "Member 'UWBP_TimeTrial_Sub_Result_C::PAT_Eff_Achievement_TimeAttack' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, SafeZone_TimeTrial) == 0x000450, "Member 'UWBP_TimeTrial_Sub_Result_C::SafeZone_TimeTrial' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, TXT_NewGhost) == 0x000458, "Member 'UWBP_TimeTrial_Sub_Result_C::TXT_NewGhost' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, TXT_NextRankLabel) == 0x000460, "Member 'UWBP_TimeTrial_Sub_Result_C::TXT_NextRankLabel' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, TXT_NextRankTme) == 0x000468, "Member 'UWBP_TimeTrial_Sub_Result_C::TXT_NextRankTme' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, TXT_RankNext_01) == 0x000470, "Member 'UWBP_TimeTrial_Sub_Result_C::TXT_RankNext_01' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, TXT_RankNext_02) == 0x000478, "Member 'UWBP_TimeTrial_Sub_Result_C::TXT_RankNext_02' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, TXT_RankNow) == 0x000480, "Member 'UWBP_TimeTrial_Sub_Result_C::TXT_RankNow' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, TXT_TimeDifference) == 0x000488, "Member 'UWBP_TimeTrial_Sub_Result_C::TXT_TimeDifference' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, WBP_CMN_Sub_SpeedClassInfo) == 0x000490, "Member 'UWBP_TimeTrial_Sub_Result_C::WBP_CMN_Sub_SpeedClassInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, WBP_TimeTrial_Reward) == 0x000498, "Member 'UWBP_TimeTrial_Sub_Result_C::WBP_TimeTrial_Reward' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, WBP_TimeTrial_Sub_Lap) == 0x0004A0, "Member 'UWBP_TimeTrial_Sub_Result_C::WBP_TimeTrial_Sub_Lap' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, WBP_TimeTrial_Sub_Lap_1) == 0x0004A8, "Member 'UWBP_TimeTrial_Sub_Result_C::WBP_TimeTrial_Sub_Lap_1' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, WBP_TimeTrial_Sub_Lap_2) == 0x0004B0, "Member 'UWBP_TimeTrial_Sub_Result_C::WBP_TimeTrial_Sub_Lap_2' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, WBP_TimeTrial_Sub_Time) == 0x0004B8, "Member 'UWBP_TimeTrial_Sub_Result_C::WBP_TimeTrial_Sub_Time' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, WidgetSwitcher_LapBG) == 0x0004C0, "Member 'UWBP_TimeTrial_Sub_Result_C::WidgetSwitcher_LapBG' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, WidgetSwitcher_TargetTime) == 0x0004C8, "Member 'UWBP_TimeTrial_Sub_Result_C::WidgetSwitcher_TargetTime' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, bPushFlag) == 0x0004D0, "Member 'UWBP_TimeTrial_Sub_Result_C::bPushFlag' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, NowResultState) == 0x0004D1, "Member 'UWBP_TimeTrial_Sub_Result_C::NowResultState' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, DonpaTicketWidget) == 0x0004D8, "Member 'UWBP_TimeTrial_Sub_Result_C::DonpaTicketWidget' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, ItemGetWidget) == 0x0004E0, "Member 'UWBP_TimeTrial_Sub_Result_C::ItemGetWidget' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, bIsEnableGhost) == 0x0004E8, "Member 'UWBP_TimeTrial_Sub_Result_C::bIsEnableGhost' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, GhostRaceData) == 0x0004F0, "Member 'UWBP_TimeTrial_Sub_Result_C::GhostRaceData' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, TimeTrialClearRank) == 0x000540, "Member 'UWBP_TimeTrial_Sub_Result_C::TimeTrialClearRank' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, TotalLapTime) == 0x000544, "Member 'UWBP_TimeTrial_Sub_Result_C::TotalLapTime' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, RankData) == 0x000548, "Member 'UWBP_TimeTrial_Sub_Result_C::RankData' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, RankS) == 0x000554, "Member 'UWBP_TimeTrial_Sub_Result_C::RankS' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, PrevMedalCount) == 0x000558, "Member 'UWBP_TimeTrial_Sub_Result_C::PrevMedalCount' has a wrong offset!");
-static_assert(offsetof(UWBP_TimeTrial_Sub_Result_C, NowMedalCount) == 0x00055C, "Member 'UWBP_TimeTrial_Sub_Result_C::NowMedalCount' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_TimeTrial_Sub_Result_C;
 
 }
 

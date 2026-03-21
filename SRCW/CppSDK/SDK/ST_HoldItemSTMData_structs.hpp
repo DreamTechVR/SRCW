@@ -37,20 +37,7 @@ public:
 	uint8                                         Pad_58[0x8];                                       // 0x0058(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             OffsetTransform_105_95D1E8554CCC9D3299D04EA7FDA0A767; // 0x0060(0x0060)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FST_HoldItemSTMData) == 0x000010, "Wrong alignment on FST_HoldItemSTMData");
-static_assert(sizeof(FST_HoldItemSTMData) == 0x0000C0, "Wrong size on FST_HoldItemSTMData");
-static_assert(offsetof(FST_HoldItemSTMData, Id_5_A3FA2BF04CA06A93A21092B4D0D70D59) == 0x000000, "Member 'FST_HoldItemSTMData::Id_5_A3FA2BF04CA06A93A21092B4D0D70D59' has a wrong offset!");
-static_assert(offsetof(FST_HoldItemSTMData, StaticMesh_102_6DBB1802489B048940F443BD86C34654) == 0x000008, "Member 'FST_HoldItemSTMData::StaticMesh_102_6DBB1802489B048940F443BD86C34654' has a wrong offset!");
-static_assert(offsetof(FST_HoldItemSTMData, InTrans_91_54D93A654F3C0B4166AACFBCA812CA6C) == 0x000010, "Member 'FST_HoldItemSTMData::InTrans_91_54D93A654F3C0B4166AACFBCA812CA6C' has a wrong offset!");
-static_assert(offsetof(FST_HoldItemSTMData, InRot_92_788EDD2941A7803B4ABA00A0EDDF9277) == 0x000018, "Member 'FST_HoldItemSTMData::InRot_92_788EDD2941A7803B4ABA00A0EDDF9277' has a wrong offset!");
-static_assert(offsetof(FST_HoldItemSTMData, InScale_93_4757CF924BEADCAF1B88B1A1BF009D0C) == 0x000020, "Member 'FST_HoldItemSTMData::InScale_93_4757CF924BEADCAF1B88B1A1BF009D0C' has a wrong offset!");
-static_assert(offsetof(FST_HoldItemSTMData, IdleTrans_94_24B889B842BCCEFF84292AB475B9A6FA) == 0x000028, "Member 'FST_HoldItemSTMData::IdleTrans_94_24B889B842BCCEFF84292AB475B9A6FA' has a wrong offset!");
-static_assert(offsetof(FST_HoldItemSTMData, IdleRot_95_A89E49B34A5F430354995B8C3331793C) == 0x000030, "Member 'FST_HoldItemSTMData::IdleRot_95_A89E49B34A5F430354995B8C3331793C' has a wrong offset!");
-static_assert(offsetof(FST_HoldItemSTMData, IdleScale_96_C40F618D486DA25C4917B5A01BAC890B) == 0x000038, "Member 'FST_HoldItemSTMData::IdleScale_96_C40F618D486DA25C4917B5A01BAC890B' has a wrong offset!");
-static_assert(offsetof(FST_HoldItemSTMData, OutTrans_97_33B36E9748A647590A8B14A45351F4C3) == 0x000040, "Member 'FST_HoldItemSTMData::OutTrans_97_33B36E9748A647590A8B14A45351F4C3' has a wrong offset!");
-static_assert(offsetof(FST_HoldItemSTMData, OutRot_98_6A7D45484A5BEB2D89AC7B8685C21019) == 0x000048, "Member 'FST_HoldItemSTMData::OutRot_98_6A7D45484A5BEB2D89AC7B8685C21019' has a wrong offset!");
-static_assert(offsetof(FST_HoldItemSTMData, OutScale_99_C8D7B43541D25729D0DF87BF62197E17) == 0x000050, "Member 'FST_HoldItemSTMData::OutScale_99_C8D7B43541D25729D0DF87BF62197E17' has a wrong offset!");
-static_assert(offsetof(FST_HoldItemSTMData, OffsetTransform_105_95D1E8554CCC9D3299D04EA7FDA0A767) == 0x000060, "Member 'FST_HoldItemSTMData::OffsetTransform_105_95D1E8554CCC9D3299D04EA7FDA0A767' has a wrong offset!");
+DUMPER7_ASSERTS_FST_HoldItemSTMData;
 
 }
 

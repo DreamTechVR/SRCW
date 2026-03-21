@@ -23,9 +23,7 @@ struct WBP_CourseSwitch_ThumbWindow_C_CheckIsGuest_ThumbWindow final
 public:
 	bool                                          IsGuest_0;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSwitch_ThumbWindow_C_CheckIsGuest_ThumbWindow) == 0x000001, "Wrong alignment on WBP_CourseSwitch_ThumbWindow_C_CheckIsGuest_ThumbWindow");
-static_assert(sizeof(WBP_CourseSwitch_ThumbWindow_C_CheckIsGuest_ThumbWindow) == 0x000001, "Wrong size on WBP_CourseSwitch_ThumbWindow_C_CheckIsGuest_ThumbWindow");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_CheckIsGuest_ThumbWindow, IsGuest_0) == 0x000000, "Member 'WBP_CourseSwitch_ThumbWindow_C_CheckIsGuest_ThumbWindow::IsGuest_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSwitch_ThumbWindow_C_CheckIsGuest_ThumbWindow;
 
 // Function WBP_CourseSwitch_ThumbWindow.WBP_CourseSwitch_ThumbWindow_C.ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow
 // 0x0218 (0x0218 - 0x0000)
@@ -121,80 +119,7 @@ public:
 	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_3;                  // 0x020C(0x0004)()
 	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x0210(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow) == 0x000008, "Wrong alignment on WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow");
-static_assert(sizeof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow) == 0x000218, "Wrong size on WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, EntryPoint) == 0x000000, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_DynamicCast_AsWBP_Course_Switch) == 0x000008, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_DynamicCast_AsWBP_Course_Switch' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_SwitchEnum_CmpSuccess) == 0x000011, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_DynamicCast_AsWBP_Course_Switch_1) == 0x000018, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_DynamicCast_AsWBP_Course_Switch_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_DynamicCast_bSuccess_1) == 0x000020, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, Temp_int_Array_Index_Variable) == 0x000024, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, CallFunc_IsValid_ReturnValue_1) == 0x000028, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, CallFunc_Not_PreBool_ReturnValue) == 0x000029, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, Temp_int_Loop_Counter_Variable) == 0x00002C, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, CallFunc_Add_IntInt_ReturnValue) == 0x000030, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_DynamicCast_AsWBP_Course_Switch_2) == 0x000038, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_DynamicCast_AsWBP_Course_Switch_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_DynamicCast_bSuccess_2) == 0x000040, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, CallFunc_IsValid_ReturnValue_2) == 0x000041, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, CallFunc_Not_PreBool_ReturnValue_1) == 0x000042, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_Event_IsDesignTime) == 0x000043, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_MakeArray_Array) == 0x000048, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_CustomEvent_Button_6) == 0x000058, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_CustomEvent_Button_6' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_CustomEvent_Button_5) == 0x000060, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_CustomEvent_Button_5' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_CustomEvent_Button_4) == 0x000068, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_CustomEvent_Button_4' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_DynamicCast_AsWBP_Course_Switch_3) == 0x000070, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_DynamicCast_AsWBP_Course_Switch_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_DynamicCast_bSuccess_3) == 0x000078, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, CallFunc_IsSelectingSameButton_ReturnValue) == 0x000079, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::CallFunc_IsSelectingSameButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_CustomEvent_Button_3) == 0x000080, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_CustomEvent_Button_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, CallFunc_IsSelectingSameButton_ReturnValue_1) == 0x000088, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::CallFunc_IsSelectingSameButton_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_CustomEvent_Button_2) == 0x000090, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_CustomEvent_Button_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_CustomEvent_Button_1) == 0x000098, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_CustomEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_CustomEvent_Button) == 0x0000A0, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, CallFunc_SoundPlay_ReturnValue) == 0x0000A8, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, CallFunc_SoundPlay_ReturnValue_1) == 0x0000AC, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, CallFunc_MakeLiteralText_ReturnValue) == 0x0000B0, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, CallFunc_MakeLiteralText_ReturnValue_1) == 0x0000C0, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_CreateDelegate_OutputDelegate) == 0x0000D0, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_MakeArray_Array_1) == 0x0000E0, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_CreateDelegate_OutputDelegate_1) == 0x0000F0, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_CreateDelegate_OutputDelegate_2) == 0x000100, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_CreateDelegate_OutputDelegate_3) == 0x000110, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_CreateDelegate_OutputDelegate_4) == 0x000120, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, Temp_int_Loop_Counter_Variable_1) == 0x000130, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_CreateDelegate_OutputDelegate_5) == 0x000134, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, CallFunc_Add_IntInt_ReturnValue_1) == 0x000144, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_CreateDelegate_OutputDelegate_6) == 0x000148, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_CreateDelegate_OutputDelegate_7) == 0x000158, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, Temp_int_Array_Index_Variable_1) == 0x000168, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_CreateDelegate_OutputDelegate_8) == 0x00016C, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_CreateDelegate_OutputDelegate_8' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_CreateDelegate_OutputDelegate_9) == 0x00017C, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_CreateDelegate_OutputDelegate_9' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_CreateDelegate_OutputDelegate_10) == 0x00018C, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_CreateDelegate_OutputDelegate_10' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_CreateDelegate_OutputDelegate_11) == 0x00019C, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_CreateDelegate_OutputDelegate_11' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, Temp_int_Loop_Counter_Variable_2) == 0x0001AC, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, CallFunc_Add_IntInt_ReturnValue_2) == 0x0001B0, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_CustomEvent_IsGuest) == 0x0001B4, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_CustomEvent_IsGuest' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, CallFunc_Array_Length_ReturnValue) == 0x0001B8, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, CallFunc_Less_IntInt_ReturnValue) == 0x0001BC, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, CallFunc_Array_Get_Item) == 0x0001C0, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, CallFunc_Array_Length_ReturnValue_1) == 0x0001C8, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, CallFunc_Less_IntInt_ReturnValue_1) == 0x0001CC, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, CallFunc_IsValid_ReturnValue_3) == 0x0001CD, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, Temp_int_Array_Index_Variable_2) == 0x0001D0, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, CallFunc_Array_Get_Item_1) == 0x0001D8, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, CallFunc_Not_PreBool_ReturnValue_2) == 0x0001E0, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, CallFunc_Not_PreBool_ReturnValue_3) == 0x0001E1, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::CallFunc_Not_PreBool_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, CallFunc_Not_PreBool_ReturnValue_4) == 0x0001E2, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::CallFunc_Not_PreBool_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, CallFunc_Array_Get_Item_2) == 0x0001E8, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, CallFunc_Array_Length_ReturnValue_2) == 0x0001F0, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, CallFunc_Less_IntInt_ReturnValue_2) == 0x0001F4, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, CallFunc_SoundPlay_ReturnValue_2) == 0x0001F8, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::CallFunc_SoundPlay_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, CallFunc_IsValid_ReturnValue_4) == 0x0001FC, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_DynamicCast_AsWBP_Course_Switch_4) == 0x000200, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_DynamicCast_AsWBP_Course_Switch_4' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_DynamicCast_bSuccess_4) == 0x000208, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, CallFunc_SoundPlay_ReturnValue_3) == 0x00020C, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::CallFunc_SoundPlay_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow, K2Node_SwitchEnum_CmpSuccess_1) == 0x000210, "Member 'WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSwitch_ThumbWindow_C_ExecuteUbergraph_WBP_CourseSwitch_ThumbWindow;
 
 // Function WBP_CourseSwitch_ThumbWindow.WBP_CourseSwitch_ThumbWindow_C.OnAllOffDecision
 // 0x0008 (0x0008 - 0x0000)
@@ -203,9 +128,7 @@ struct WBP_CourseSwitch_ThumbWindow_C_OnAllOffDecision final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSwitch_ThumbWindow_C_OnAllOffDecision) == 0x000008, "Wrong alignment on WBP_CourseSwitch_ThumbWindow_C_OnAllOffDecision");
-static_assert(sizeof(WBP_CourseSwitch_ThumbWindow_C_OnAllOffDecision) == 0x000008, "Wrong size on WBP_CourseSwitch_ThumbWindow_C_OnAllOffDecision");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_OnAllOffDecision, Button) == 0x000000, "Member 'WBP_CourseSwitch_ThumbWindow_C_OnAllOffDecision::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSwitch_ThumbWindow_C_OnAllOffDecision;
 
 // Function WBP_CourseSwitch_ThumbWindow.WBP_CourseSwitch_ThumbWindow_C.OnAllOnDecision
 // 0x0008 (0x0008 - 0x0000)
@@ -214,9 +137,7 @@ struct WBP_CourseSwitch_ThumbWindow_C_OnAllOnDecision final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSwitch_ThumbWindow_C_OnAllOnDecision) == 0x000008, "Wrong alignment on WBP_CourseSwitch_ThumbWindow_C_OnAllOnDecision");
-static_assert(sizeof(WBP_CourseSwitch_ThumbWindow_C_OnAllOnDecision) == 0x000008, "Wrong size on WBP_CourseSwitch_ThumbWindow_C_OnAllOnDecision");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_OnAllOnDecision, Button) == 0x000000, "Member 'WBP_CourseSwitch_ThumbWindow_C_OnAllOnDecision::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSwitch_ThumbWindow_C_OnAllOnDecision;
 
 // Function WBP_CourseSwitch_ThumbWindow.WBP_CourseSwitch_ThumbWindow_C.OnCancelEvent
 // 0x0008 (0x0008 - 0x0000)
@@ -225,9 +146,7 @@ struct WBP_CourseSwitch_ThumbWindow_C_OnCancelEvent final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSwitch_ThumbWindow_C_OnCancelEvent) == 0x000008, "Wrong alignment on WBP_CourseSwitch_ThumbWindow_C_OnCancelEvent");
-static_assert(sizeof(WBP_CourseSwitch_ThumbWindow_C_OnCancelEvent) == 0x000008, "Wrong size on WBP_CourseSwitch_ThumbWindow_C_OnCancelEvent");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_OnCancelEvent, Button) == 0x000000, "Member 'WBP_CourseSwitch_ThumbWindow_C_OnCancelEvent::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSwitch_ThumbWindow_C_OnCancelEvent;
 
 // Function WBP_CourseSwitch_ThumbWindow.WBP_CourseSwitch_ThumbWindow_C.OnLeft1
 // 0x0008 (0x0008 - 0x0000)
@@ -236,9 +155,7 @@ struct WBP_CourseSwitch_ThumbWindow_C_OnLeft1 final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSwitch_ThumbWindow_C_OnLeft1) == 0x000008, "Wrong alignment on WBP_CourseSwitch_ThumbWindow_C_OnLeft1");
-static_assert(sizeof(WBP_CourseSwitch_ThumbWindow_C_OnLeft1) == 0x000008, "Wrong size on WBP_CourseSwitch_ThumbWindow_C_OnLeft1");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_OnLeft1, Button) == 0x000000, "Member 'WBP_CourseSwitch_ThumbWindow_C_OnLeft1::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSwitch_ThumbWindow_C_OnLeft1;
 
 // Function WBP_CourseSwitch_ThumbWindow.WBP_CourseSwitch_ThumbWindow_C.OnLeft2
 // 0x0008 (0x0008 - 0x0000)
@@ -247,9 +164,7 @@ struct WBP_CourseSwitch_ThumbWindow_C_OnLeft2 final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSwitch_ThumbWindow_C_OnLeft2) == 0x000008, "Wrong alignment on WBP_CourseSwitch_ThumbWindow_C_OnLeft2");
-static_assert(sizeof(WBP_CourseSwitch_ThumbWindow_C_OnLeft2) == 0x000008, "Wrong size on WBP_CourseSwitch_ThumbWindow_C_OnLeft2");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_OnLeft2, Button) == 0x000000, "Member 'WBP_CourseSwitch_ThumbWindow_C_OnLeft2::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSwitch_ThumbWindow_C_OnLeft2;
 
 // Function WBP_CourseSwitch_ThumbWindow.WBP_CourseSwitch_ThumbWindow_C.OnRight1
 // 0x0008 (0x0008 - 0x0000)
@@ -258,9 +173,7 @@ struct WBP_CourseSwitch_ThumbWindow_C_OnRight1 final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSwitch_ThumbWindow_C_OnRight1) == 0x000008, "Wrong alignment on WBP_CourseSwitch_ThumbWindow_C_OnRight1");
-static_assert(sizeof(WBP_CourseSwitch_ThumbWindow_C_OnRight1) == 0x000008, "Wrong size on WBP_CourseSwitch_ThumbWindow_C_OnRight1");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_OnRight1, Button) == 0x000000, "Member 'WBP_CourseSwitch_ThumbWindow_C_OnRight1::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSwitch_ThumbWindow_C_OnRight1;
 
 // Function WBP_CourseSwitch_ThumbWindow.WBP_CourseSwitch_ThumbWindow_C.OnRight2
 // 0x0008 (0x0008 - 0x0000)
@@ -269,9 +182,7 @@ struct WBP_CourseSwitch_ThumbWindow_C_OnRight2 final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSwitch_ThumbWindow_C_OnRight2) == 0x000008, "Wrong alignment on WBP_CourseSwitch_ThumbWindow_C_OnRight2");
-static_assert(sizeof(WBP_CourseSwitch_ThumbWindow_C_OnRight2) == 0x000008, "Wrong size on WBP_CourseSwitch_ThumbWindow_C_OnRight2");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_OnRight2, Button) == 0x000000, "Member 'WBP_CourseSwitch_ThumbWindow_C_OnRight2::Button' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSwitch_ThumbWindow_C_OnRight2;
 
 // Function WBP_CourseSwitch_ThumbWindow.WBP_CourseSwitch_ThumbWindow_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -280,9 +191,7 @@ struct WBP_CourseSwitch_ThumbWindow_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSwitch_ThumbWindow_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_CourseSwitch_ThumbWindow_C_PreConstruct");
-static_assert(sizeof(WBP_CourseSwitch_ThumbWindow_C_PreConstruct) == 0x000001, "Wrong size on WBP_CourseSwitch_ThumbWindow_C_PreConstruct");
-static_assert(offsetof(WBP_CourseSwitch_ThumbWindow_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_CourseSwitch_ThumbWindow_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CourseSwitch_ThumbWindow_C_PreConstruct;
 
 }
 

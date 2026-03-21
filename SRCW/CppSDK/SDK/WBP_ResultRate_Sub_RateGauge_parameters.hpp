@@ -10,91 +10,51 @@
 
 #include "Basic.hpp"
 
-#include "CriWareRuntime_structs.hpp"
-#include "UnionSystem_structs.hpp"
-#include "UMG_structs.hpp"
 #include "UNION_structs.hpp"
+#include "UnionSystem_structs.hpp"
+#include "CriWareRuntime_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function WBP_ResultRate_Sub_RateGauge.WBP_ResultRate_Sub_RateGauge_C.ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge
-// 0x0128 (0x0128 - 0x0000)
+// 0x0140 (0x0140 - 0x0000)
 struct WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_bIsHide_1;                      // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ERateRank                                     K2Node_CustomEvent_Rank;                           // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ERewardType                                   K2Node_CustomEvent_RewardType;                     // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_CustomEvent_Id;                             // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_Conv_IntToByte_ReturnValue;               // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             CallFunc_GetRewardItemIconTexture_ReturnValue;     // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TSoftObjectPtr<class UTexture2D>              CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue; // 0x0028(0x0028)(UObjectWrapper, HasGetValueTypeHash)
-	class UObject*                                CallFunc_LoadAsset_Blocking_ReturnValue;           // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGadgetData                            CallFunc_GetGadgetData_OutGadgetData;              // 0x0058(0x00C0)()
-	bool                                          CallFunc_GetGadgetData_ReturnValue;                // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0119(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x011A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsGadgetKit_ReturnValue;                  // 0x011B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_bIsHide;                        // 0x011C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_1;                              // 0x011D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x011E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x011F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetActiveWidgetIndexByRewardType_ReturnValue; // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0121(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0122(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0123(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0124(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ERewardType                                   K2Node_Event_RewardType;                           // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_Event_RewardId;                             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_Conv_IntToByte_ReturnValue;               // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             CallFunc_GetRewardItemIconTexture_ReturnValue;     // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class UTexture2D>              CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue; // 0x0020(0x0028)(UObjectWrapper, HasGetValueTypeHash)
+	class UObject*                                CallFunc_LoadAsset_Blocking_ReturnValue;           // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGadgetData                            CallFunc_GetGadgetData_OutGadgetData;              // 0x0050(0x00C0)()
+	bool                                          CallFunc_GetGadgetData_ReturnValue;                // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0111(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0112(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsGadgetKit_ReturnValue;                  // 0x0113(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0114(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_115[0x3];                                      // 0x0115(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_Event_InRate;                               // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_CurrentLimitRate;                     // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_NextLimitRate;                        // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Clamp_ReturnValue;                        // 0x0124(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Clamp_ReturnValue_1;                      // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x012C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetActiveWidgetIndexByRewardType_ReturnValue; // 0x012D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ERateRank                                     K2Node_Event_CurrentRateIcon;                      // 0x012E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_12F[0x1];                                      // 0x012F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Event_GaugeAmount;                          // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_134[0x4];                                      // 0x0134(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0138(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge) == 0x000008, "Wrong alignment on WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge");
-static_assert(sizeof(WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge) == 0x000128, "Wrong size on WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge, EntryPoint) == 0x000000, "Member 'WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge, Temp_byte_Variable) == 0x000004, "Member 'WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge, Temp_byte_Variable_1) == 0x000005, "Member 'WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge, K2Node_CustomEvent_bIsHide_1) == 0x000006, "Member 'WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge::K2Node_CustomEvent_bIsHide_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge, K2Node_CustomEvent_Rank) == 0x000007, "Member 'WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge::K2Node_CustomEvent_Rank' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge, Temp_bool_Variable) == 0x000008, "Member 'WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge, K2Node_CustomEvent_RewardType) == 0x000009, "Member 'WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge::K2Node_CustomEvent_RewardType' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge, K2Node_CustomEvent_Id) == 0x00000C, "Member 'WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge::K2Node_CustomEvent_Id' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge, CallFunc_Conv_IntToByte_ReturnValue) == 0x000010, "Member 'WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge, CallFunc_GetRewardItemIconTexture_ReturnValue) == 0x000018, "Member 'WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge::CallFunc_GetRewardItemIconTexture_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge, CallFunc_GetValidValue_ReturnValue) == 0x000020, "Member 'WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge, CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue) == 0x000028, "Member 'WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge::CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x000050, "Member 'WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge, CallFunc_GetGadgetData_OutGadgetData) == 0x000058, "Member 'WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge::CallFunc_GetGadgetData_OutGadgetData' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge, CallFunc_GetGadgetData_ReturnValue) == 0x000118, "Member 'WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge::CallFunc_GetGadgetData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge, CallFunc_IsValid_ReturnValue) == 0x000119, "Member 'WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge, K2Node_SwitchEnum_CmpSuccess) == 0x00011A, "Member 'WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge, CallFunc_IsGadgetKit_ReturnValue) == 0x00011B, "Member 'WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge::CallFunc_IsGadgetKit_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge, K2Node_CustomEvent_bIsHide) == 0x00011C, "Member 'WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge::K2Node_CustomEvent_bIsHide' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge, Temp_bool_Variable_1) == 0x00011D, "Member 'WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge, K2Node_Select_Default) == 0x00011E, "Member 'WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge, CallFunc_IsValid_ReturnValue_1) == 0x00011F, "Member 'WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge, CallFunc_SetActiveWidgetIndexByRewardType_ReturnValue) == 0x000120, "Member 'WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge::CallFunc_SetActiveWidgetIndexByRewardType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge, Temp_byte_Variable_2) == 0x000121, "Member 'WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge, Temp_byte_Variable_3) == 0x000122, "Member 'WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge, K2Node_Event_IsDesignTime) == 0x000123, "Member 'WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge, K2Node_Select_Default_1) == 0x000124, "Member 'WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge::K2Node_Select_Default_1' has a wrong offset!");
-
-// Function WBP_ResultRate_Sub_RateGauge.WBP_ResultRate_Sub_RateGauge_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_ResultRate_Sub_RateGauge_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ResultRate_Sub_RateGauge_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_ResultRate_Sub_RateGauge_C_PreConstruct");
-static_assert(sizeof(WBP_ResultRate_Sub_RateGauge_C_PreConstruct) == 0x000001, "Wrong size on WBP_ResultRate_Sub_RateGauge_C_PreConstruct");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_ResultRate_Sub_RateGauge_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ResultRate_Sub_RateGauge_C_ExecuteUbergraph_WBP_ResultRate_Sub_RateGauge;
 
 // Function WBP_ResultRate_Sub_RateGauge.WBP_ResultRate_Sub_RateGauge_C.Set Now Rate Impl
 // 0x0088 (0x0088 - 0x0000)
@@ -120,48 +80,58 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_PlayAnimation_StartAtTime_ImplicitCast;   // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl) == 0x000008, "Wrong alignment on WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl");
-static_assert(sizeof(WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl) == 0x000088, "Wrong size on WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl, newParam) == 0x000000, "Member 'WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl::newParam' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl, NewLocalVar) == 0x000008, "Member 'WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl::NewLocalVar' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl, CallFunc_GreaterEqual_DoubleDouble_ReturnValue) == 0x000028, "Member 'WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl::CallFunc_GreaterEqual_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000030, "Member 'WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl, CallFunc_FTrunc_ReturnValue) == 0x000038, "Member 'WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl, CallFunc_FTrunc_ReturnValue_1) == 0x00003C, "Member 'WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl::CallFunc_FTrunc_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl, CallFunc_GetRateToRank_ReturnValue) == 0x000040, "Member 'WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl::CallFunc_GetRateToRank_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl, CallFunc_PlayAnimation_ReturnValue) == 0x000048, "Member 'WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl, CallFunc_FClamp_ReturnValue) == 0x000050, "Member 'WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x000058, "Member 'WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl, CallFunc_Subtract_DoubleDouble_ReturnValue_1) == 0x000060, "Member 'WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl::CallFunc_Subtract_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x000068, "Member 'WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl, CallFunc_LessEqual_DoubleDouble_ReturnValue) == 0x000070, "Member 'WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl::CallFunc_LessEqual_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl, CallFunc_PlayAnimation_ReturnValue_1) == 0x000078, "Member 'WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl, CallFunc_PlayAnimation_StartAtTime_ImplicitCast) == 0x000080, "Member 'WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl::CallFunc_PlayAnimation_StartAtTime_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ResultRate_Sub_RateGauge_C_Set_Now_Rate_Impl;
 
-// Function WBP_ResultRate_Sub_RateGauge.WBP_ResultRate_Sub_RateGauge_C.SetBonusIconHide
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_ResultRate_Sub_RateGauge_C_SetBonusIconHide final
+// Function WBP_ResultRate_Sub_RateGauge.WBP_ResultRate_Sub_RateGauge_C.SetCurrentAndNextLimitRate
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ResultRate_Sub_RateGauge_C_SetCurrentAndNextLimitRate final
 {
 public:
-	bool                                          bIsHide;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentLimitRate;                                  // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NextLimitRate;                                     // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ResultRate_Sub_RateGauge_C_SetBonusIconHide) == 0x000001, "Wrong alignment on WBP_ResultRate_Sub_RateGauge_C_SetBonusIconHide");
-static_assert(sizeof(WBP_ResultRate_Sub_RateGauge_C_SetBonusIconHide) == 0x000001, "Wrong size on WBP_ResultRate_Sub_RateGauge_C_SetBonusIconHide");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_SetBonusIconHide, bIsHide) == 0x000000, "Member 'WBP_ResultRate_Sub_RateGauge_C_SetBonusIconHide::bIsHide' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ResultRate_Sub_RateGauge_C_SetCurrentAndNextLimitRate;
 
-// Function WBP_ResultRate_Sub_RateGauge.WBP_ResultRate_Sub_RateGauge_C.SetRank
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_ResultRate_Sub_RateGauge_C_SetRank final
+// Function WBP_ResultRate_Sub_RateGauge.WBP_ResultRate_Sub_RateGauge_C.SetCurrentGaugeAmount
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_ResultRate_Sub_RateGauge_C_SetCurrentGaugeAmount final
 {
 public:
-	ERateRank                                     Rank;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         GaugeAmount;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ResultRate_Sub_RateGauge_C_SetRank) == 0x000001, "Wrong alignment on WBP_ResultRate_Sub_RateGauge_C_SetRank");
-static_assert(sizeof(WBP_ResultRate_Sub_RateGauge_C_SetRank) == 0x000001, "Wrong size on WBP_ResultRate_Sub_RateGauge_C_SetRank");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_SetRank, Rank) == 0x000000, "Member 'WBP_ResultRate_Sub_RateGauge_C_SetRank::Rank' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ResultRate_Sub_RateGauge_C_SetCurrentGaugeAmount;
+
+// Function WBP_ResultRate_Sub_RateGauge.WBP_ResultRate_Sub_RateGauge_C.SetCurrentRate
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_ResultRate_Sub_RateGauge_C_SetCurrentRate final
+{
+public:
+	int32                                         InRate;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ResultRate_Sub_RateGauge_C_SetCurrentRate;
+
+// Function WBP_ResultRate_Sub_RateGauge.WBP_ResultRate_Sub_RateGauge_C.SetCurrentRateIcon
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_ResultRate_Sub_RateGauge_C_SetCurrentRateIcon final
+{
+public:
+	ERateRank                                     CurrentRateIcon;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ResultRate_Sub_RateGauge_C_SetCurrentRateIcon;
+
+// Function WBP_ResultRate_Sub_RateGauge.WBP_ResultRate_Sub_RateGauge_C.SetNextRewardIcon
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ResultRate_Sub_RateGauge_C_SetNextRewardIcon final
+{
+public:
+	ERewardType                                   rewardType;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         rewardId;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ResultRate_Sub_RateGauge_C_SetNextRewardIcon;
 
 // Function WBP_ResultRate_Sub_RateGauge.WBP_ResultRate_Sub_RateGauge_C.SetRateBaseImpl
-// 0x0048 (0x0048 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct WBP_ResultRate_Sub_RateGauge_C_SetRateBaseImpl final
 {
 public:
@@ -169,56 +139,8 @@ public:
 	double                                        RateDown_0;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ERateRank                                     RateRankUp;                                        // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ERateRank                                     RateRankDown;                                      // 0x0011(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_12[0x2];                                       // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Clamp_ReturnValue;                        // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_FTrunc_ReturnValue_1;                     // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Clamp_ReturnValue_1;                      // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_FTrunc_ReturnValue_2;                     // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ResultRate_Sub_RateGauge_C_SetRateBaseImpl) == 0x000008, "Wrong alignment on WBP_ResultRate_Sub_RateGauge_C_SetRateBaseImpl");
-static_assert(sizeof(WBP_ResultRate_Sub_RateGauge_C_SetRateBaseImpl) == 0x000048, "Wrong size on WBP_ResultRate_Sub_RateGauge_C_SetRateBaseImpl");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_SetRateBaseImpl, RateUp_0) == 0x000000, "Member 'WBP_ResultRate_Sub_RateGauge_C_SetRateBaseImpl::RateUp_0' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_SetRateBaseImpl, RateDown_0) == 0x000008, "Member 'WBP_ResultRate_Sub_RateGauge_C_SetRateBaseImpl::RateDown_0' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_SetRateBaseImpl, RateRankUp) == 0x000010, "Member 'WBP_ResultRate_Sub_RateGauge_C_SetRateBaseImpl::RateRankUp' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_SetRateBaseImpl, RateRankDown) == 0x000011, "Member 'WBP_ResultRate_Sub_RateGauge_C_SetRateBaseImpl::RateRankDown' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_SetRateBaseImpl, CallFunc_FTrunc_ReturnValue) == 0x000014, "Member 'WBP_ResultRate_Sub_RateGauge_C_SetRateBaseImpl::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_SetRateBaseImpl, CallFunc_Clamp_ReturnValue) == 0x000018, "Member 'WBP_ResultRate_Sub_RateGauge_C_SetRateBaseImpl::CallFunc_Clamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_SetRateBaseImpl, CallFunc_FTrunc_ReturnValue_1) == 0x00001C, "Member 'WBP_ResultRate_Sub_RateGauge_C_SetRateBaseImpl::CallFunc_FTrunc_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_SetRateBaseImpl, CallFunc_Clamp_ReturnValue_1) == 0x000020, "Member 'WBP_ResultRate_Sub_RateGauge_C_SetRateBaseImpl::CallFunc_Clamp_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_SetRateBaseImpl, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x000028, "Member 'WBP_ResultRate_Sub_RateGauge_C_SetRateBaseImpl::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_SetRateBaseImpl, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000030, "Member 'WBP_ResultRate_Sub_RateGauge_C_SetRateBaseImpl::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_SetRateBaseImpl, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000038, "Member 'WBP_ResultRate_Sub_RateGauge_C_SetRateBaseImpl::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_SetRateBaseImpl, CallFunc_FTrunc_ReturnValue_2) == 0x000040, "Member 'WBP_ResultRate_Sub_RateGauge_C_SetRateBaseImpl::CallFunc_FTrunc_ReturnValue_2' has a wrong offset!");
-
-// Function WBP_ResultRate_Sub_RateGauge.WBP_ResultRate_Sub_RateGauge_C.SetRewardHide
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_ResultRate_Sub_RateGauge_C_SetRewardHide final
-{
-public:
-	bool                                          bIsHide;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ResultRate_Sub_RateGauge_C_SetRewardHide) == 0x000001, "Wrong alignment on WBP_ResultRate_Sub_RateGauge_C_SetRewardHide");
-static_assert(sizeof(WBP_ResultRate_Sub_RateGauge_C_SetRewardHide) == 0x000001, "Wrong size on WBP_ResultRate_Sub_RateGauge_C_SetRewardHide");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_SetRewardHide, bIsHide) == 0x000000, "Member 'WBP_ResultRate_Sub_RateGauge_C_SetRewardHide::bIsHide' has a wrong offset!");
-
-// Function WBP_ResultRate_Sub_RateGauge.WBP_ResultRate_Sub_RateGauge_C.SetRewardIcon
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ResultRate_Sub_RateGauge_C_SetRewardIcon final
-{
-public:
-	ERewardType                                   rewardType;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         ID;                                                // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ResultRate_Sub_RateGauge_C_SetRewardIcon) == 0x000004, "Wrong alignment on WBP_ResultRate_Sub_RateGauge_C_SetRewardIcon");
-static_assert(sizeof(WBP_ResultRate_Sub_RateGauge_C_SetRewardIcon) == 0x000008, "Wrong size on WBP_ResultRate_Sub_RateGauge_C_SetRewardIcon");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_SetRewardIcon, rewardType) == 0x000000, "Member 'WBP_ResultRate_Sub_RateGauge_C_SetRewardIcon::rewardType' has a wrong offset!");
-static_assert(offsetof(WBP_ResultRate_Sub_RateGauge_C_SetRewardIcon, ID) == 0x000004, "Member 'WBP_ResultRate_Sub_RateGauge_C_SetRewardIcon::ID' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ResultRate_Sub_RateGauge_C_SetRateBaseImpl;
 
 }
 

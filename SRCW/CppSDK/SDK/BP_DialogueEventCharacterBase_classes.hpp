@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "Engine_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "UNION_structs.hpp"
+#include "Engine_structs.hpp"
+#include "Engine_classes.hpp"
 
 
 namespace SDK
@@ -51,26 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_DialogueEventCharacterBase_C">();
+		BP_STATIC_CLASS_IMPL("BP_DialogueEventCharacterBase_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_DialogueEventCharacterBase_C")
 	}
 	static class ABP_DialogueEventCharacterBase_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_DialogueEventCharacterBase_C>();
 	}
 };
-static_assert(alignof(ABP_DialogueEventCharacterBase_C) == 0x000008, "Wrong alignment on ABP_DialogueEventCharacterBase_C");
-static_assert(sizeof(ABP_DialogueEventCharacterBase_C) == 0x000310, "Wrong size on ABP_DialogueEventCharacterBase_C");
-static_assert(offsetof(ABP_DialogueEventCharacterBase_C, UberGraphFrame) == 0x000290, "Member 'ABP_DialogueEventCharacterBase_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueEventCharacterBase_C, DefaultSceneRoot) == 0x000298, "Member 'ABP_DialogueEventCharacterBase_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueEventCharacterBase_C, LeftCharacterScreenPos) == 0x0002A0, "Member 'ABP_DialogueEventCharacterBase_C::LeftCharacterScreenPos' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueEventCharacterBase_C, RightCharacterScreenPos) == 0x0002B0, "Member 'ABP_DialogueEventCharacterBase_C::RightCharacterScreenPos' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueEventCharacterBase_C, GPCharacterScreenPos) == 0x0002C0, "Member 'ABP_DialogueEventCharacterBase_C::GPCharacterScreenPos' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueEventCharacterBase_C, bVisible) == 0x0002D0, "Member 'ABP_DialogueEventCharacterBase_C::bVisible' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueEventCharacterBase_C, ScreenPos) == 0x0002D8, "Member 'ABP_DialogueEventCharacterBase_C::ScreenPos' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueEventCharacterBase_C, OnCommandWaitEnd) == 0x0002E8, "Member 'ABP_DialogueEventCharacterBase_C::OnCommandWaitEnd' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueEventCharacterBase_C, AnimBP) == 0x0002F8, "Member 'ABP_DialogueEventCharacterBase_C::AnimBP' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueEventCharacterBase_C, CharacterPosFromCameraLength) == 0x000300, "Member 'ABP_DialogueEventCharacterBase_C::CharacterPosFromCameraLength' has a wrong offset!");
-static_assert(offsetof(ABP_DialogueEventCharacterBase_C, bUseUpdateScreenPos) == 0x000308, "Member 'ABP_DialogueEventCharacterBase_C::bUseUpdateScreenPos' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_DialogueEventCharacterBase_C;
 
 }
 

@@ -21,8 +21,7 @@ namespace SDK
 struct ABP_Cubot::FAnimBlueprintGeneratedConstantData final : public ABP_DialogueCharacter::FAnimBlueprintGeneratedConstantData
 {
 };
-static_assert(alignof(ABP_Cubot::FAnimBlueprintGeneratedConstantData) == 0x000008, "Wrong alignment on ABP_Cubot::FAnimBlueprintGeneratedConstantData");
-static_assert(sizeof(ABP_Cubot::FAnimBlueprintGeneratedConstantData) == 0x0006E8, "Wrong size on ABP_Cubot::FAnimBlueprintGeneratedConstantData");
+DUMPER7_ASSERTS_ABP_Cubot__FAnimBlueprintGeneratedConstantData;
 
 }
 

@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "UNION_structs.hpp"
 #include "UnionUI_structs.hpp"
 
 
@@ -29,11 +29,7 @@ public:
 	class AAppPlayerController*                   CallFunc_GetAppPlayerController_ReturnValue;       // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TitleSequence_C_BindMouseClicked) == 0x000008, "Wrong alignment on BP_TitleSequence_C_BindMouseClicked");
-static_assert(sizeof(BP_TitleSequence_C_BindMouseClicked) == 0x000020, "Wrong size on BP_TitleSequence_C_BindMouseClicked");
-static_assert(offsetof(BP_TitleSequence_C_BindMouseClicked, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'BP_TitleSequence_C_BindMouseClicked::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_BindMouseClicked, CallFunc_GetAppPlayerController_ReturnValue) == 0x000010, "Member 'BP_TitleSequence_C_BindMouseClicked::CallFunc_GetAppPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_BindMouseClicked, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'BP_TitleSequence_C_BindMouseClicked::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TitleSequence_C_BindMouseClicked;
 
 // Function BP_TitleSequence.BP_TitleSequence_C.BindMouseEvent
 // 0x0030 (0x0030 - 0x0000)
@@ -48,14 +44,7 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x000C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x001C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TitleSequence_C_BindMouseEvent) == 0x000008, "Wrong alignment on BP_TitleSequence_C_BindMouseEvent");
-static_assert(sizeof(BP_TitleSequence_C_BindMouseEvent) == 0x000030, "Wrong size on BP_TitleSequence_C_BindMouseEvent");
-static_assert(offsetof(BP_TitleSequence_C_BindMouseEvent, TitleMenu) == 0x000000, "Member 'BP_TitleSequence_C_BindMouseEvent::TitleMenu' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_BindMouseEvent, CallFunc_IsWindows_ReturnValue) == 0x000008, "Member 'BP_TitleSequence_C_BindMouseEvent::CallFunc_IsWindows_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_BindMouseEvent, CallFunc_IsValid_ReturnValue) == 0x000009, "Member 'BP_TitleSequence_C_BindMouseEvent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_BindMouseEvent, CallFunc_IsValid_ReturnValue_1) == 0x00000A, "Member 'BP_TitleSequence_C_BindMouseEvent::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_BindMouseEvent, K2Node_CreateDelegate_OutputDelegate) == 0x00000C, "Member 'BP_TitleSequence_C_BindMouseEvent::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_BindMouseEvent, K2Node_CreateDelegate_OutputDelegate_1) == 0x00001C, "Member 'BP_TitleSequence_C_BindMouseEvent::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TitleSequence_C_BindMouseEvent;
 
 // Function BP_TitleSequence.BP_TitleSequence_C.CustomEvent
 // 0x0010 (0x0010 - 0x0000)
@@ -66,11 +55,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TitleSequence_C_CustomEvent) == 0x000008, "Wrong alignment on BP_TitleSequence_C_CustomEvent");
-static_assert(sizeof(BP_TitleSequence_C_CustomEvent) == 0x000010, "Wrong size on BP_TitleSequence_C_CustomEvent");
-static_assert(offsetof(BP_TitleSequence_C_CustomEvent, Button) == 0x000000, "Member 'BP_TitleSequence_C_CustomEvent::Button' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_CustomEvent, PanelIndex) == 0x000008, "Member 'BP_TitleSequence_C_CustomEvent::PanelIndex' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_CustomEvent, ButtonIndex) == 0x00000C, "Member 'BP_TitleSequence_C_CustomEvent::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TitleSequence_C_CustomEvent;
 
 // Function BP_TitleSequence.BP_TitleSequence_C.DecisionStoreEvent
 // 0x0001 (0x0001 - 0x0000)
@@ -79,9 +64,7 @@ struct BP_TitleSequence_C_DecisionStoreEvent final
 public:
 	bool                                          IsAccept;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TitleSequence_C_DecisionStoreEvent) == 0x000001, "Wrong alignment on BP_TitleSequence_C_DecisionStoreEvent");
-static_assert(sizeof(BP_TitleSequence_C_DecisionStoreEvent) == 0x000001, "Wrong size on BP_TitleSequence_C_DecisionStoreEvent");
-static_assert(offsetof(BP_TitleSequence_C_DecisionStoreEvent, IsAccept) == 0x000000, "Member 'BP_TitleSequence_C_DecisionStoreEvent::IsAccept' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TitleSequence_C_DecisionStoreEvent;
 
 // Function BP_TitleSequence.BP_TitleSequence_C.EnableInputPlayerController
 // 0x0001 (0x0001 - 0x0000)
@@ -90,9 +73,7 @@ struct BP_TitleSequence_C_EnableInputPlayerController final
 public:
 	bool                                          Enable;                                            // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TitleSequence_C_EnableInputPlayerController) == 0x000001, "Wrong alignment on BP_TitleSequence_C_EnableInputPlayerController");
-static_assert(sizeof(BP_TitleSequence_C_EnableInputPlayerController) == 0x000001, "Wrong size on BP_TitleSequence_C_EnableInputPlayerController");
-static_assert(offsetof(BP_TitleSequence_C_EnableInputPlayerController, Enable) == 0x000000, "Member 'BP_TitleSequence_C_EnableInputPlayerController::Enable' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TitleSequence_C_EnableInputPlayerController;
 
 // Function BP_TitleSequence.BP_TitleSequence_C.EventFinishedFade
 // 0x0001 (0x0001 - 0x0000)
@@ -101,9 +82,7 @@ struct BP_TitleSequence_C_EventFinishedFade final
 public:
 	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TitleSequence_C_EventFinishedFade) == 0x000001, "Wrong alignment on BP_TitleSequence_C_EventFinishedFade");
-static_assert(sizeof(BP_TitleSequence_C_EventFinishedFade) == 0x000001, "Wrong size on BP_TitleSequence_C_EventFinishedFade");
-static_assert(offsetof(BP_TitleSequence_C_EventFinishedFade, FadeDirection) == 0x000000, "Member 'BP_TitleSequence_C_EventFinishedFade::FadeDirection' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TitleSequence_C_EventFinishedFade;
 
 // Function BP_TitleSequence.BP_TitleSequence_C.EventLeftStickAxis
 // 0x0018 (0x0018 - 0x0000)
@@ -113,10 +92,7 @@ public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              Value;                                             // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TitleSequence_C_EventLeftStickAxis) == 0x000008, "Wrong alignment on BP_TitleSequence_C_EventLeftStickAxis");
-static_assert(sizeof(BP_TitleSequence_C_EventLeftStickAxis) == 0x000018, "Wrong size on BP_TitleSequence_C_EventLeftStickAxis");
-static_assert(offsetof(BP_TitleSequence_C_EventLeftStickAxis, Object) == 0x000000, "Member 'BP_TitleSequence_C_EventLeftStickAxis::Object' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_EventLeftStickAxis, Value) == 0x000008, "Member 'BP_TitleSequence_C_EventLeftStickAxis::Value' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TitleSequence_C_EventLeftStickAxis;
 
 // Function BP_TitleSequence.BP_TitleSequence_C.ExecuteUbergraph_BP_TitleSequence
 // 0x0CB0 (0x0CB0 - 0x0000)
@@ -599,386 +575,7 @@ public:
 	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast_2;  // 0x0CA4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast_3;  // 0x0CA8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence) == 0x000010, "Wrong alignment on BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence");
-static_assert(sizeof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence) == 0x000CB0, "Wrong size on BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, EntryPoint) == 0x000000, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_MakeLiteralByte_ReturnValue) == 0x000004, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_MakeLiteralByte_ReturnValue_1) == 0x000005, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_MakeLiteralByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_MakeLiteralByte_ReturnValue_2) == 0x000006, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_MakeLiteralByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_MakeLiteralByte_ReturnValue_3) == 0x000007, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_MakeLiteralByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_MakeLiteralByte_ReturnValue_4) == 0x000008, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_MakeLiteralByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_MakeLiteralByte_ReturnValue_5) == 0x000009, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_MakeLiteralByte_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_MakeLiteralByte_ReturnValue_6) == 0x00000A, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_MakeLiteralByte_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_MakeLiteralByte_ReturnValue_7) == 0x00000B, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_MakeLiteralByte_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, Temp_byte_Variable) == 0x00000C, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable) == 0x00000D, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, Temp_bool_Has_Been_Initd_Variable) == 0x00000E, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable_1) == 0x000020, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, Temp_bool_IsClosed_Variable) == 0x000021, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsWindows_ReturnValue) == 0x000022, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsWindows_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_Event_DeltaTime_4) == 0x000024, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_Event_DeltaTime_4' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_Event_DeltaTime_3) == 0x000028, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_Event_DeltaTime_3' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, Temp_byte_Variable_1) == 0x00002C, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_Event_IsAccept) == 0x00002D, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_Event_IsAccept' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetStrapTexture_ReturnValue) == 0x000030, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetStrapTexture_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, Temp_bool_Variable) == 0x000058, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x000060, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsValidSoftObjectReference_ReturnValue) == 0x000068, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsValidSoftObjectReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_As_____2D) == 0x000070, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_bSuccess) == 0x000078, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_Event_DeltaTime_2) == 0x00007C, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_Event_DeltaTime_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_MakeArray_Array) == 0x000080, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_Format_ReturnValue) == 0x000090, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsValid_ReturnValue) == 0x0000A0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x0000A8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsValid_ReturnValue_1) == 0x0000B0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsBusy_ReturnValue) == 0x0000B1, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsBusy_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x0000B8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_MakeLiteralByte_ReturnValue_8) == 0x0000C0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_MakeLiteralByte_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_Event_DeltaTime_1) == 0x0000C4, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_Event_DeltaTime_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_Conv_ByteToInt_ReturnValue) == 0x0000C8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, Temp_bool_Has_Been_Initd_Variable_1) == 0x0000CC, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::Temp_bool_Has_Been_Initd_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, Temp_bool_Has_Been_Initd_Variable_2) == 0x0000CD, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::Temp_bool_Has_Been_Initd_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_Create_ReturnValue) == 0x0000D0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_MakeLiteralByte_ReturnValue_9) == 0x0000D8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_MakeLiteralByte_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x0000DC, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, Temp_bool_IsClosed_Variable_1) == 0x0000E0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::Temp_bool_IsClosed_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CreateDelegate_OutputDelegate_1) == 0x0000E4, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x0000F8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_2) == 0x000100, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_CreatePopupWindow_ReturnValue) == 0x000108, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_CreatePopupWindow_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_AsMenu_Popup_Window_Interface) == 0x000110, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_AsMenu_Popup_Window_Interface' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_bSuccess_1) == 0x000120, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_1) == 0x000128, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_bSuccess_2) == 0x000138, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_2) == 0x000140, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_bSuccess_3) == 0x000150, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_3) == 0x000158, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_3' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_bSuccess_4) == 0x000168, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_4) == 0x000170, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_4' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_bSuccess_5) == 0x000180, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_3) == 0x000188, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_4) == 0x000190, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000198, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsValid_ReturnValue_2) == 0x0001A0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetTextLang_ReturnValue) == 0x0001A1, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetTextLang_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0001A2, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_MakeLiteralByte_ReturnValue_10) == 0x0001A3, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_MakeLiteralByte_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsValid_ReturnValue_3) == 0x0001A4, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_Conv_ByteToInt_ReturnValue_2) == 0x0001A8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_Conv_ByteToInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CreateDelegate_OutputDelegate_2) == 0x0001AC, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_5) == 0x0001C0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CreateDelegate_OutputDelegate_3) == 0x0001C8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_6) == 0x0001D8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CreateDelegate_OutputDelegate_4) == 0x0001E0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_CreateAdvertiseWidget_ReturnValue) == 0x0001F0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_CreateAdvertiseWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_AsWBP_Advertise_Start) == 0x0001F8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_AsWBP_Advertise_Start' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_bSuccess_6) == 0x000200, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_bSuccess_6' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_MakeLiteralText_ReturnValue) == 0x000208, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CustomEvent_Button_1) == 0x000218, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CustomEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CustomEvent_PanelIndex_1) == 0x000220, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CustomEvent_PanelIndex_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CustomEvent_ButtonIndex_1) == 0x000224, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CustomEvent_ButtonIndex_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsValidSaveDataAppRomVersion_ReturnValue) == 0x000228, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsValidSaveDataAppRomVersion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, Temp_object_Variable) == 0x000230, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_As_____2D_1) == 0x000238, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_As_____2D_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_bSuccess_7) == 0x000240, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_bSuccess_7' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, Temp_bool_IsClosed_Variable_2) == 0x000241, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::Temp_bool_IsClosed_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_5) == 0x000248, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_5' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_bSuccess_8) == 0x000258, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_bSuccess_8' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_6) == 0x000260, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_6' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_bSuccess_9) == 0x000270, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_bSuccess_9' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_7) == 0x000278, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_7' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_bSuccess_10) == 0x000288, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_bSuccess_10' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_8) == 0x000290, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_8' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_bSuccess_11) == 0x0002A0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_bSuccess_11' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CustomEvent_Object) == 0x0002A8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CustomEvent_Object' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CustomEvent_Value) == 0x0002B0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CustomEvent_Value' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CustomEvent_Loaded) == 0x0002C0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CustomEvent_Loaded' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_MakeTransform_ReturnValue) == 0x0002D0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000330, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_MakeLiteralText_ReturnValue_1) == 0x000338, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_FinishSpawningActor_ReturnValue) == 0x000348, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_MakeLiteralByte_ReturnValue_11) == 0x000350, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_MakeLiteralByte_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CreateDelegate_OutputDelegate_5) == 0x000354, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_Conv_ByteToInt_ReturnValue_3) == 0x000364, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_Conv_ByteToInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_7) == 0x000368, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsValid_ReturnValue_4) == 0x000370, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsSuccess_ReturnValue) == 0x000371, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsSuccess_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsEnd_ReturnValue) == 0x000372, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsEnd_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_8) == 0x000378, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_CreateAdvertiseWidget_ReturnValue_1) == 0x000380, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_CreateAdvertiseWidget_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CreateDelegate_OutputDelegate_6) == 0x000388, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_AsWBP_Advertise_Start_1) == 0x000398, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_AsWBP_Advertise_Start_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_bSuccess_12) == 0x0003A0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_bSuccess_12' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetWorldSubsystem_ReturnValue_1) == 0x0003A8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetWorldSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsValid_ReturnValue_5) == 0x0003B0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_AsWBP_Popup_Window_Text_Scroll) == 0x0003B8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_AsWBP_Popup_Window_Text_Scroll' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_bSuccess_13) == 0x0003C0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_bSuccess_13' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetPlayerController_ReturnValue) == 0x0003C8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_AsWBP_Popup_Window_Text_Scroll_1) == 0x0003D0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_AsWBP_Popup_Window_Text_Scroll_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_bSuccess_14) == 0x0003D8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_bSuccess_14' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_AsApp_Player_Controller) == 0x0003E0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_bSuccess_15) == 0x0003E8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_bSuccess_15' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetOSSText_Text) == 0x0003F0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetOSSText_Text' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_MakeLiteralByte_ReturnValue_12) == 0x000400, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_MakeLiteralByte_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetPlayerController_ReturnValue_1) == 0x000408, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_AsApp_Player_Controller_1) == 0x000410, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_AsApp_Player_Controller_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_bSuccess_16) == 0x000418, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_bSuccess_16' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_Conv_ByteToInt_ReturnValue_4) == 0x00041C, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_Conv_ByteToInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetPlayerController_ReturnValue_2) == 0x000420, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetPlayerController_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CreateDelegate_OutputDelegate_7) == 0x000428, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_SoundPlay_ReturnValue) == 0x000438, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CustomEvent_FadeDirection_1) == 0x00043C, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CustomEvent_FadeDirection_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_9) == 0x000440, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetTextLangFromSave_ReturnValue) == 0x000448, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetTextLangFromSave_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetEnumeratorName_ReturnValue) == 0x00044C, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetDataTableRowFromName_OutRow) == 0x000458, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000488, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_10) == 0x000490, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue) == 0x000498, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_CreateAdvertiseWidget_ReturnValue_2) == 0x0004A0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_CreateAdvertiseWidget_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_As_____2D_2) == 0x0004A8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_As_____2D_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_bSuccess_17) == 0x0004B0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_bSuccess_17' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_AsWBP_Advertise_Start_2) == 0x0004B8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_AsWBP_Advertise_Start_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_bSuccess_18) == 0x0004C0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_bSuccess_18' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsValid_ReturnValue_6) == 0x0004C1, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsValidSoftObjectReference_ReturnValue_1) == 0x0004C2, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsValidSoftObjectReference_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetWorldSubsystem_ReturnValue_2) == 0x0004C8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetWorldSubsystem_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_11) == 0x0004D0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CreateDelegate_OutputDelegate_8) == 0x0004D8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CreateDelegate_OutputDelegate_8' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CreateDelegate_OutputDelegate_9) == 0x0004E8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CreateDelegate_OutputDelegate_9' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_K2_SetTimerDelegate_ReturnValue_1) == 0x0004F8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_K2_SetTimerDelegate_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_MakeLiteralByte_ReturnValue_13) == 0x000500, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_MakeLiteralByte_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_Conv_ByteToInt_ReturnValue_5) == 0x000504, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_Conv_ByteToInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_Create_ReturnValue_1) == 0x000508, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_Create_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_12) == 0x000510, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsValid_ReturnValue_7) == 0x000518, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsValid_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_HasInviteRequest_ReturnValue) == 0x000519, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_HasInviteRequest_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetAppPlayerController_ReturnValue) == 0x000520, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetAppPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsValid_ReturnValue_8) == 0x000528, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsValid_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetPlayerController_ReturnValue_3) == 0x000530, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetPlayerController_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_AsApp_Player_Controller_2) == 0x000538, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_AsApp_Player_Controller_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_bSuccess_19) == 0x000540, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_bSuccess_19' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_UnregisterMainMenu_ReturnValue) == 0x000541, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_UnregisterMainMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CreateDelegate_OutputDelegate_10) == 0x000544, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CreateDelegate_OutputDelegate_10' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_MakeTransform_ReturnValue_1) == 0x000560, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsValid_ReturnValue_9) == 0x0005C0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsValid_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x0005C8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x0005D0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CustomEvent_FadeDirection) == 0x0005D8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CustomEvent_FadeDirection' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_MakeLiteralByte_ReturnValue_14) == 0x0005D9, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_MakeLiteralByte_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_Conv_ByteToInt_ReturnValue_6) == 0x0005DC, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_Conv_ByteToInt_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetExitSequence_ReturnValue) == 0x0005E0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetExitSequence_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CustomEvent_IsSuccess) == 0x0005E1, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CustomEvent_IsSuccess' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CustomEvent_IsEnableOnlinePlay) == 0x0005E2, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CustomEvent_IsEnableOnlinePlay' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CustomEvent_IsRequestedSequenceBlock) == 0x0005E3, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CustomEvent_IsRequestedSequenceBlock' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_13) == 0x0005E8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsValid_ReturnValue_10) == 0x0005F0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsValid_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_14) == 0x0005F8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_CreatePopupWindow_ReturnValue_1) == 0x000600, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_CreatePopupWindow_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsGrandPrixEndingCleared_ReturnValue) == 0x000608, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsGrandPrixEndingCleared_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_9) == 0x000610, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_9' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_bSuccess_20) == 0x000620, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_bSuccess_20' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_10) == 0x000628, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_10' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_bSuccess_21) == 0x000638, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_bSuccess_21' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_11) == 0x000640, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_11' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_bSuccess_22) == 0x000650, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_bSuccess_22' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_12) == 0x000658, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_12' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_bSuccess_23) == 0x000668, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_bSuccess_23' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_13) == 0x000670, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_13' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_bSuccess_24) == 0x000680, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_bSuccess_24' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_RandomIntegerInRange_ReturnValue) == 0x000684, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_15) == 0x000688, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000690, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_HasInviteRequest_ReturnValue_1) == 0x000691, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_HasInviteRequest_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsTitleForce2ndVisual_ReturnValue) == 0x000692, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsTitleForce2ndVisual_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_BooleanOR_ReturnValue) == 0x000693, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_16) == 0x000698, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_BooleanAND_ReturnValue) == 0x0006A0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_HasInviteRequest_ReturnValue_2) == 0x0006A1, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_HasInviteRequest_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CreateDelegate_OutputDelegate_11) == 0x0006A4, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CreateDelegate_OutputDelegate_11' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_Event_DeltaTime) == 0x0006B4, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_Event_DeltaTime' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsStartedStreamingInstall_ReturnValue) == 0x0006B8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsStartedStreamingInstall_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetPlatform_ReturnValue) == 0x0006B9, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetPlatform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsOfflineMilestoneVersion_ReturnValue) == 0x0006BA, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsOfflineMilestoneVersion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x0006BB, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_BooleanOR_ReturnValue_1) == 0x0006BC, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsTopMenuAccessLoginSuccessOnly_ReturnValue) == 0x0006BD, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsTopMenuAccessLoginSuccessOnly_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_BooleanOR_ReturnValue_2) == 0x0006BE, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetMileStoneVersion_ReturnValue) == 0x0006BF, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetMileStoneVersion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x0006C0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_MakeStruct_OntSaveOntParticipantUserRequest) == 0x0006C1, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_MakeStruct_OntSaveOntParticipantUserRequest' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CustomEvent_ApiName) == 0x0006C8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CustomEvent_ApiName' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CustomEvent_RequestData) == 0x0006D8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CustomEvent_RequestData' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CustomEvent_ResponseData) == 0x0006E8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CustomEvent_ResponseData' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CustomEvent_Error) == 0x0006F8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CustomEvent_Error' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetWorldSubsystem_ReturnValue_3) == 0x000700, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetWorldSubsystem_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_MakeLiteralInt_ReturnValue) == 0x000708, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, Temp_byte_Variable_2) == 0x00070C, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, Temp_byte_Variable_3) == 0x00070D, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, Temp_bool_Variable_1) == 0x00070E, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsPatchUpdate_ReturnValue) == 0x00070F, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsPatchUpdate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_Select_Default) == 0x000710, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetWorldSubsystem_ReturnValue_4) == 0x000718, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetWorldSubsystem_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsValid_ReturnValue_11) == 0x000720, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsValid_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsBusy_ReturnValue_1) == 0x000721, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsBusy_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_MakeLiteralByte_ReturnValue_15) == 0x000722, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_MakeLiteralByte_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_Not_PreBool_ReturnValue) == 0x000723, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_MakeLiteralText_ReturnValue_2) == 0x000728, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_MakeLiteralText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsValid_ReturnValue_12) == 0x000738, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsValid_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CustomEvent_Button) == 0x000740, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CustomEvent_PanelIndex) == 0x000748, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CustomEvent_PanelIndex' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CustomEvent_ButtonIndex) == 0x00074C, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CustomEvent_ButtonIndex' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsValid_ReturnValue_13) == 0x000750, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsValid_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsValid_ReturnValue_14) == 0x000751, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsValid_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_MakeTransform_ReturnValue_2) == 0x000760, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_MakeTransform_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2) == 0x0007C0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CreateDelegate_OutputDelegate_12) == 0x0007C8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CreateDelegate_OutputDelegate_12' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_FinishSpawningActor_ReturnValue_2) == 0x0007D8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_FinishSpawningActor_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_MakeTransform_ReturnValue_3) == 0x0007E0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_MakeTransform_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3) == 0x000840, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_FinishSpawningActor_ReturnValue_3) == 0x000848, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_FinishSpawningActor_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetTextLangFromSave_ReturnValue_1) == 0x000850, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetTextLangFromSave_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetEnumeratorName_ReturnValue_1) == 0x000854, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetEnumeratorName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetDataTableRowFromName_OutRow_1) == 0x000860, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetDataTableRowFromName_OutRow_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetDataTableRowFromName_ReturnValue_1) == 0x000890, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetDataTableRowFromName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue_1) == 0x000898, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsValidSoftObjectReference_ReturnValue_2) == 0x0008A0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsValidSoftObjectReference_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_As_____2D_3) == 0x0008A8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_As_____2D_3' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_bSuccess_25) == 0x0008B0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_bSuccess_25' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsValid_ReturnValue_15) == 0x0008B1, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsValid_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsValid_ReturnValue_16) == 0x0008B2, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsValid_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_17) == 0x0008B8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_17' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CreateDelegate_OutputDelegate_13) == 0x0008C0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CreateDelegate_OutputDelegate_13' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CreateDelegate_OutputDelegate_14) == 0x0008D0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CreateDelegate_OutputDelegate_14' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_K2_SetTimerDelegate_ReturnValue_2) == 0x0008E0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_K2_SetTimerDelegate_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_K2_SetTimerDelegate_ReturnValue_3) == 0x0008E8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_K2_SetTimerDelegate_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsValid_ReturnValue_17) == 0x0008F0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsValid_ReturnValue_17' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetAnimationOut_OutAnimation) == 0x0008F8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetAnimationOut_OutAnimation' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_Create_ReturnValue_2) == 0x000900, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_Create_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CreateDelegate_OutputDelegate_15) == 0x000908, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CreateDelegate_OutputDelegate_15' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetAnimationOut_OutAnimation_1) == 0x000918, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetAnimationOut_OutAnimation_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_18) == 0x000920, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_18' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_19) == 0x000928, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_19' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_MakeLiteralByte_ReturnValue_16) == 0x000930, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_MakeLiteralByte_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_K2_SetTimerDelegate_ReturnValue_4) == 0x000938, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_K2_SetTimerDelegate_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_Conv_ByteToInt_ReturnValue_7) == 0x000940, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_Conv_ByteToInt_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetAnimationOut_OutAnimation_2) == 0x000948, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetAnimationOut_OutAnimation_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_20) == 0x000950, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_20' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CreateDelegate_OutputDelegate_16) == 0x000958, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CreateDelegate_OutputDelegate_16' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CreateDelegate_OutputDelegate_17) == 0x000968, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CreateDelegate_OutputDelegate_17' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetAnimationOut_OutAnimation_3) == 0x000978, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetAnimationOut_OutAnimation_3' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_Event_InState_2) == 0x000980, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_Event_InState_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, Temp_object_Variable_1) == 0x000988, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue) == 0x000990, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_As_____2D_4) == 0x0009A0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_As_____2D_4' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_bSuccess_26) == 0x0009A8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_bSuccess_26' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_Conv_StringToText_ReturnValue) == 0x0009B0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_MakeStruct_FormatArgumentData) == 0x0009C0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_MakeArray_Array_1) == 0x000A08, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_Event_Object_3) == 0x000A18, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_Event_Object_3' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_Format_ReturnValue_1) == 0x000A20, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsValid_ReturnValue_18) == 0x000A30, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsValid_ReturnValue_18' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CustomEvent_Loaded_1) == 0x000A38, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CustomEvent_Loaded_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_21) == 0x000A40, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_21' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_MakeTransform_ReturnValue_4) == 0x000A50, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_MakeTransform_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_CreateAutoSaveInfoWidget_ReturnValue) == 0x000AB0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_CreateAutoSaveInfoWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_4) == 0x000AB8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_AsWBP_Advertise_Auto_Save) == 0x000AC0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_AsWBP_Advertise_Auto_Save' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_bSuccess_27) == 0x000AC8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_bSuccess_27' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_FinishSpawningActor_ReturnValue_4) == 0x000AD0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_FinishSpawningActor_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CreateDelegate_OutputDelegate_18) == 0x000AD8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CreateDelegate_OutputDelegate_18' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_Event_Object_2) == 0x000AE8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_Event_Object_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_K2_SetTimerDelegate_ReturnValue_5) == 0x000AF0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_K2_SetTimerDelegate_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetCurrentTitleState_ReturnValue) == 0x000AF8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetCurrentTitleState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_EqualEqual_ByteByte_ReturnValue_3) == 0x000AF9, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_EqualEqual_ByteByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_22) == 0x000B00, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_22' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetCurrentTitleState_ReturnValue_1) == 0x000B08, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetCurrentTitleState_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsFinishedAdvertiseLogoFlow_ReturnValue) == 0x000B09, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsFinishedAdvertiseLogoFlow_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_SwitchEnum_CmpSuccess) == 0x000B0A, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsValid_ReturnValue_19) == 0x000B0B, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsValid_ReturnValue_19' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_SetNextMenuSequenceState_self_CastInput) == 0x000B10, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_SetNextMenuSequenceState_self_CastInput' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsValid_ReturnValue_20) == 0x000B20, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsValid_ReturnValue_20' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CreateDelegate_OutputDelegate_19) == 0x000B24, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CreateDelegate_OutputDelegate_19' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetExecuteAdvertiseOnce_ReturnValue) == 0x000B34, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetExecuteAdvertiseOnce_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_Event_InState_1) == 0x000B35, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_Event_InState_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_Event_PrevSequence_1) == 0x000B38, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_Event_PrevSequence_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_Event_InState) == 0x000B40, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_Event_InState' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_Event_PrevSequence) == 0x000B48, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_Event_PrevSequence' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_Select_Default_1) == 0x000B50, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_Event_Enable) == 0x000B51, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_Event_Enable' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsShippingBuild_ReturnValue) == 0x000B52, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsShippingBuild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetNextState_ReturnValue) == 0x000B54, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetNextState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_23) == 0x000B58, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_23' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_Conv_IntToByte_ReturnValue) == 0x000B60, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetValidValue_ReturnValue) == 0x000B61, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetNextState_ReturnValue_1) == 0x000B64, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetNextState_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_Conv_IntToByte_ReturnValue_1) == 0x000B68, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_Conv_IntToByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000B69, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetValidValue_ReturnValue_1) == 0x000B6A, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetValidValue_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_BooleanAND_ReturnValue_1) == 0x000B6B, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_NotEqual_ByteByte_ReturnValue_1) == 0x000B6C, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_NotEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_NotEqual_ByteByte_ReturnValue_2) == 0x000B6D, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_NotEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_BooleanAND_ReturnValue_2) == 0x000B6E, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetNextState_ReturnValue_2) == 0x000B70, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetNextState_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CreateDelegate_OutputDelegate_20) == 0x000B74, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CreateDelegate_OutputDelegate_20' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_Conv_IntToByte_ReturnValue_2) == 0x000B84, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_Conv_IntToByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetValidValue_ReturnValue_2) == 0x000B85, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetValidValue_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsEnableTitleStoreMilestoneVersion_ReturnValue) == 0x000B86, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsEnableTitleStoreMilestoneVersion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_NotEqual_ByteByte_ReturnValue_3) == 0x000B87, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_NotEqual_ByteByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetCurrentTitleState_ReturnValue_2) == 0x000B88, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetCurrentTitleState_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_EqualEqual_ByteByte_ReturnValue_4) == 0x000B89, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_EqualEqual_ByteByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetNextState_ReturnValue_3) == 0x000B8C, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetNextState_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_24) == 0x000B90, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_24' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_Conv_IntToByte_ReturnValue_3) == 0x000B98, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_Conv_IntToByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_CreatePopupWindow_ReturnValue_2) == 0x000BA0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_CreatePopupWindow_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetValidValue_ReturnValue_3) == 0x000BA8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetValidValue_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_NotEqual_ByteByte_ReturnValue_4) == 0x000BA9, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_NotEqual_ByteByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsValid_ReturnValue_21) == 0x000BAA, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsValid_ReturnValue_21' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_BooleanAND_ReturnValue_3) == 0x000BAB, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_UnregisterSingleSubMenu_ReturnValue) == 0x000BAC, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_UnregisterSingleSubMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_NotEqual_ByteByte_ReturnValue_5) == 0x000BAD, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_NotEqual_ByteByte_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsShippingBuild_ReturnValue_1) == 0x000BAE, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsShippingBuild_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_BooleanAND_ReturnValue_4) == 0x000BAF, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_BooleanAND_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsShippingBuild_ReturnValue_2) == 0x000BB0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsShippingBuild_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsValid_ReturnValue_22) == 0x000BB1, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsValid_ReturnValue_22' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_MakeLiteralByte_ReturnValue_17) == 0x000BB2, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_MakeLiteralByte_ReturnValue_17' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CreateDelegate_OutputDelegate_21) == 0x000BB4, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CreateDelegate_OutputDelegate_21' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_Conv_ByteToInt_ReturnValue_8) == 0x000BC4, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_Conv_ByteToInt_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_Event_Object_1) == 0x000BC8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_Event_Object_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsFinishedAdvertiseLogoFlow_ReturnValue_1) == 0x000BD0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsFinishedAdvertiseLogoFlow_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsValid_ReturnValue_23) == 0x000BD1, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsValid_ReturnValue_23' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_AsMenu_Input_Recieve_Interface) == 0x000BD8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_AsMenu_Input_Recieve_Interface' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_DynamicCast_bSuccess_28) == 0x000BE8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_DynamicCast_bSuccess_28' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_Event_Object) == 0x000BF0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_Event_Object' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetCurrentTitleState_ReturnValue_3) == 0x000BF8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetCurrentTitleState_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_EqualEqual_ByteByte_ReturnValue_5) == 0x000BF9, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_EqualEqual_ByteByte_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CreateDelegate_OutputDelegate_22) == 0x000BFC, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CreateDelegate_OutputDelegate_22' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetNextState_ReturnValue_4) == 0x000C0C, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetNextState_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_Conv_IntToByte_ReturnValue_4) == 0x000C10, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_Conv_IntToByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetValidValue_ReturnValue_4) == 0x000C11, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetValidValue_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, K2Node_CreateDelegate_OutputDelegate_23) == 0x000C14, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::K2Node_CreateDelegate_OutputDelegate_23' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_NotEqual_ByteByte_ReturnValue_6) == 0x000C24, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_NotEqual_ByteByte_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_BooleanAND_ReturnValue_5) == 0x000C25, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_BooleanAND_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_NotEqual_ByteByte_ReturnValue_7) == 0x000C26, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_NotEqual_ByteByte_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_BooleanAND_ReturnValue_6) == 0x000C27, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_BooleanAND_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsValid_ReturnValue_24) == 0x000C28, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsValid_ReturnValue_24' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_25) == 0x000C30, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_25' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsValidAppRomVersion_OutRomVersion) == 0x000C38, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsValidAppRomVersion_OutRomVersion' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsValidAppRomVersion_OutSavedVersion) == 0x000C3C, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsValidAppRomVersion_OutSavedVersion' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsValidAppRomVersion_OutStatus) == 0x000C40, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsValidAppRomVersion_OutStatus' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_IsValidAppRomVersion_ReturnValue) == 0x000C41, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_IsValidAppRomVersion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_Conv_IntToString_ReturnValue) == 0x000C48, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_Conv_IntToString_ReturnValue_1) == 0x000C58, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_Conv_IntToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_Concat_StrStr_ReturnValue) == 0x000C68, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000C78, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000C88, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_BooleanAND_ReturnValue_7) == 0x000C98, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_BooleanAND_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_K2_SetTimerDelegate_Time_ImplicitCast) == 0x000C9C, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_K2_SetTimerDelegate_Time_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_K2_SetTimerDelegate_Time_ImplicitCast_1) == 0x000CA0, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_K2_SetTimerDelegate_Time_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_K2_SetTimerDelegate_Time_ImplicitCast_2) == 0x000CA4, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_K2_SetTimerDelegate_Time_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence, CallFunc_K2_SetTimerDelegate_Time_ImplicitCast_3) == 0x000CA8, "Member 'BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence::CallFunc_K2_SetTimerDelegate_Time_ImplicitCast_3' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TitleSequence_C_ExecuteUbergraph_BP_TitleSequence;
 
 // Function BP_TitleSequence.BP_TitleSequence_C.FinalizeTitleSequence
 // 0x0005 (0x0005 - 0x0000)
@@ -991,13 +588,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TitleSequence_C_FinalizeTitleSequence) == 0x000001, "Wrong alignment on BP_TitleSequence_C_FinalizeTitleSequence");
-static_assert(sizeof(BP_TitleSequence_C_FinalizeTitleSequence) == 0x000005, "Wrong size on BP_TitleSequence_C_FinalizeTitleSequence");
-static_assert(offsetof(BP_TitleSequence_C_FinalizeTitleSequence, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'BP_TitleSequence_C_FinalizeTitleSequence::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_FinalizeTitleSequence, CallFunc_IsValid_ReturnValue_1) == 0x000001, "Member 'BP_TitleSequence_C_FinalizeTitleSequence::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_FinalizeTitleSequence, CallFunc_IsValid_ReturnValue_2) == 0x000002, "Member 'BP_TitleSequence_C_FinalizeTitleSequence::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_FinalizeTitleSequence, CallFunc_IsValid_ReturnValue_3) == 0x000003, "Member 'BP_TitleSequence_C_FinalizeTitleSequence::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_FinalizeTitleSequence, CallFunc_IsValid_ReturnValue_4) == 0x000004, "Member 'BP_TitleSequence_C_FinalizeTitleSequence::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TitleSequence_C_FinalizeTitleSequence;
 
 // Function BP_TitleSequence.BP_TitleSequence_C.FinishedOnLoginResult_Event
 // 0x0003 (0x0003 - 0x0000)
@@ -1008,11 +599,7 @@ public:
 	bool                                          IsEnableOnlinePlay;                                // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsRequestedSequenceBlock;                          // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TitleSequence_C_FinishedOnLoginResult_Event) == 0x000001, "Wrong alignment on BP_TitleSequence_C_FinishedOnLoginResult_Event");
-static_assert(sizeof(BP_TitleSequence_C_FinishedOnLoginResult_Event) == 0x000003, "Wrong size on BP_TitleSequence_C_FinishedOnLoginResult_Event");
-static_assert(offsetof(BP_TitleSequence_C_FinishedOnLoginResult_Event, IsSuccess) == 0x000000, "Member 'BP_TitleSequence_C_FinishedOnLoginResult_Event::IsSuccess' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_FinishedOnLoginResult_Event, IsEnableOnlinePlay) == 0x000001, "Member 'BP_TitleSequence_C_FinishedOnLoginResult_Event::IsEnableOnlinePlay' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_FinishedOnLoginResult_Event, IsRequestedSequenceBlock) == 0x000002, "Member 'BP_TitleSequence_C_FinishedOnLoginResult_Event::IsRequestedSequenceBlock' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TitleSequence_C_FinishedOnLoginResult_Event;
 
 // Function BP_TitleSequence.BP_TitleSequence_C.GetFooter
 // 0x0008 (0x0008 - 0x0000)
@@ -1021,9 +608,7 @@ struct BP_TitleSequence_C_GetFooter final
 public:
 	class UObject*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TitleSequence_C_GetFooter) == 0x000008, "Wrong alignment on BP_TitleSequence_C_GetFooter");
-static_assert(sizeof(BP_TitleSequence_C_GetFooter) == 0x000008, "Wrong size on BP_TitleSequence_C_GetFooter");
-static_assert(offsetof(BP_TitleSequence_C_GetFooter, ReturnValue) == 0x000000, "Member 'BP_TitleSequence_C_GetFooter::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TitleSequence_C_GetFooter;
 
 // Function BP_TitleSequence.BP_TitleSequence_C.GetOSSText
 // 0x0028 (0x0028 - 0x0000)
@@ -1036,12 +621,7 @@ public:
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetPlatformTermsConditionText_ReturnValue; // 0x0018(0x0010)()
 };
-static_assert(alignof(BP_TitleSequence_C_GetOSSText) == 0x000008, "Wrong alignment on BP_TitleSequence_C_GetOSSText");
-static_assert(sizeof(BP_TitleSequence_C_GetOSSText) == 0x000028, "Wrong size on BP_TitleSequence_C_GetOSSText");
-static_assert(offsetof(BP_TitleSequence_C_GetOSSText, Text) == 0x000000, "Member 'BP_TitleSequence_C_GetOSSText::Text' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_GetOSSText, CallFunc_GetPlatform_ReturnValue) == 0x000010, "Member 'BP_TitleSequence_C_GetOSSText::CallFunc_GetPlatform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_GetOSSText, CallFunc_IsValid_ReturnValue) == 0x000011, "Member 'BP_TitleSequence_C_GetOSSText::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_GetOSSText, CallFunc_GetPlatformTermsConditionText_ReturnValue) == 0x000018, "Member 'BP_TitleSequence_C_GetOSSText::CallFunc_GetPlatformTermsConditionText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TitleSequence_C_GetOSSText;
 
 // Function BP_TitleSequence.BP_TitleSequence_C.GetOwnerMenuSequence
 // 0x0008 (0x0008 - 0x0000)
@@ -1050,9 +630,7 @@ struct BP_TitleSequence_C_GetOwnerMenuSequence final
 public:
 	class UObject*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TitleSequence_C_GetOwnerMenuSequence) == 0x000008, "Wrong alignment on BP_TitleSequence_C_GetOwnerMenuSequence");
-static_assert(sizeof(BP_TitleSequence_C_GetOwnerMenuSequence) == 0x000008, "Wrong size on BP_TitleSequence_C_GetOwnerMenuSequence");
-static_assert(offsetof(BP_TitleSequence_C_GetOwnerMenuSequence, ReturnValue) == 0x000000, "Member 'BP_TitleSequence_C_GetOwnerMenuSequence::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TitleSequence_C_GetOwnerMenuSequence;
 
 // Function BP_TitleSequence.BP_TitleSequence_C.OnAcceptKeyPressedTitle
 // 0x0008 (0x0008 - 0x0000)
@@ -1061,9 +639,7 @@ struct BP_TitleSequence_C_OnAcceptKeyPressedTitle final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TitleSequence_C_OnAcceptKeyPressedTitle) == 0x000008, "Wrong alignment on BP_TitleSequence_C_OnAcceptKeyPressedTitle");
-static_assert(sizeof(BP_TitleSequence_C_OnAcceptKeyPressedTitle) == 0x000008, "Wrong size on BP_TitleSequence_C_OnAcceptKeyPressedTitle");
-static_assert(offsetof(BP_TitleSequence_C_OnAcceptKeyPressedTitle, Object) == 0x000000, "Member 'BP_TitleSequence_C_OnAcceptKeyPressedTitle::Object' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TitleSequence_C_OnAcceptKeyPressedTitle;
 
 // Function BP_TitleSequence.BP_TitleSequence_C.OnBackKeyPressedTitle
 // 0x0008 (0x0008 - 0x0000)
@@ -1072,9 +648,7 @@ struct BP_TitleSequence_C_OnBackKeyPressedTitle final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TitleSequence_C_OnBackKeyPressedTitle) == 0x000008, "Wrong alignment on BP_TitleSequence_C_OnBackKeyPressedTitle");
-static_assert(sizeof(BP_TitleSequence_C_OnBackKeyPressedTitle) == 0x000008, "Wrong size on BP_TitleSequence_C_OnBackKeyPressedTitle");
-static_assert(offsetof(BP_TitleSequence_C_OnBackKeyPressedTitle, Object) == 0x000000, "Member 'BP_TitleSequence_C_OnBackKeyPressedTitle::Object' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TitleSequence_C_OnBackKeyPressedTitle;
 
 // Function BP_TitleSequence.BP_TitleSequence_C.OnDecisionEvent
 // 0x0010 (0x0010 - 0x0000)
@@ -1085,11 +659,7 @@ public:
 	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TitleSequence_C_OnDecisionEvent) == 0x000008, "Wrong alignment on BP_TitleSequence_C_OnDecisionEvent");
-static_assert(sizeof(BP_TitleSequence_C_OnDecisionEvent) == 0x000010, "Wrong size on BP_TitleSequence_C_OnDecisionEvent");
-static_assert(offsetof(BP_TitleSequence_C_OnDecisionEvent, Button) == 0x000000, "Member 'BP_TitleSequence_C_OnDecisionEvent::Button' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_OnDecisionEvent, PanelIndex) == 0x000008, "Member 'BP_TitleSequence_C_OnDecisionEvent::PanelIndex' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_OnDecisionEvent, ButtonIndex) == 0x00000C, "Member 'BP_TitleSequence_C_OnDecisionEvent::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TitleSequence_C_OnDecisionEvent;
 
 // Function BP_TitleSequence.BP_TitleSequence_C.OnFaceButtonLeftPressedTitle
 // 0x0008 (0x0008 - 0x0000)
@@ -1098,9 +668,7 @@ struct BP_TitleSequence_C_OnFaceButtonLeftPressedTitle final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TitleSequence_C_OnFaceButtonLeftPressedTitle) == 0x000008, "Wrong alignment on BP_TitleSequence_C_OnFaceButtonLeftPressedTitle");
-static_assert(sizeof(BP_TitleSequence_C_OnFaceButtonLeftPressedTitle) == 0x000008, "Wrong size on BP_TitleSequence_C_OnFaceButtonLeftPressedTitle");
-static_assert(offsetof(BP_TitleSequence_C_OnFaceButtonLeftPressedTitle, Object) == 0x000000, "Member 'BP_TitleSequence_C_OnFaceButtonLeftPressedTitle::Object' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TitleSequence_C_OnFaceButtonLeftPressedTitle;
 
 // Function BP_TitleSequence.BP_TitleSequence_C.OnFaceButtonTopPressedTitle
 // 0x0008 (0x0008 - 0x0000)
@@ -1109,9 +677,7 @@ struct BP_TitleSequence_C_OnFaceButtonTopPressedTitle final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TitleSequence_C_OnFaceButtonTopPressedTitle) == 0x000008, "Wrong alignment on BP_TitleSequence_C_OnFaceButtonTopPressedTitle");
-static_assert(sizeof(BP_TitleSequence_C_OnFaceButtonTopPressedTitle) == 0x000008, "Wrong size on BP_TitleSequence_C_OnFaceButtonTopPressedTitle");
-static_assert(offsetof(BP_TitleSequence_C_OnFaceButtonTopPressedTitle, Object) == 0x000000, "Member 'BP_TitleSequence_C_OnFaceButtonTopPressedTitle::Object' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TitleSequence_C_OnFaceButtonTopPressedTitle;
 
 // Function BP_TitleSequence.BP_TitleSequence_C.OnFinisshedFade
 // 0x0001 (0x0001 - 0x0000)
@@ -1120,9 +686,7 @@ struct BP_TitleSequence_C_OnFinisshedFade final
 public:
 	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TitleSequence_C_OnFinisshedFade) == 0x000001, "Wrong alignment on BP_TitleSequence_C_OnFinisshedFade");
-static_assert(sizeof(BP_TitleSequence_C_OnFinisshedFade) == 0x000001, "Wrong size on BP_TitleSequence_C_OnFinisshedFade");
-static_assert(offsetof(BP_TitleSequence_C_OnFinisshedFade, FadeDirection) == 0x000000, "Member 'BP_TitleSequence_C_OnFinisshedFade::FadeDirection' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TitleSequence_C_OnFinisshedFade;
 
 // Function BP_TitleSequence.BP_TitleSequence_C.OnLoaded_41F8F0A44AFD06D1D263CDB6C8FE8CC3
 // 0x0008 (0x0008 - 0x0000)
@@ -1131,9 +695,7 @@ struct BP_TitleSequence_C_OnLoaded_41F8F0A44AFD06D1D263CDB6C8FE8CC3 final
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TitleSequence_C_OnLoaded_41F8F0A44AFD06D1D263CDB6C8FE8CC3) == 0x000008, "Wrong alignment on BP_TitleSequence_C_OnLoaded_41F8F0A44AFD06D1D263CDB6C8FE8CC3");
-static_assert(sizeof(BP_TitleSequence_C_OnLoaded_41F8F0A44AFD06D1D263CDB6C8FE8CC3) == 0x000008, "Wrong size on BP_TitleSequence_C_OnLoaded_41F8F0A44AFD06D1D263CDB6C8FE8CC3");
-static_assert(offsetof(BP_TitleSequence_C_OnLoaded_41F8F0A44AFD06D1D263CDB6C8FE8CC3, Loaded) == 0x000000, "Member 'BP_TitleSequence_C_OnLoaded_41F8F0A44AFD06D1D263CDB6C8FE8CC3::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TitleSequence_C_OnLoaded_41F8F0A44AFD06D1D263CDB6C8FE8CC3;
 
 // Function BP_TitleSequence.BP_TitleSequence_C.OnLoaded_41F8F0A44AFD06D1D263CDB6FB907F3C
 // 0x0008 (0x0008 - 0x0000)
@@ -1142,9 +704,7 @@ struct BP_TitleSequence_C_OnLoaded_41F8F0A44AFD06D1D263CDB6FB907F3C final
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TitleSequence_C_OnLoaded_41F8F0A44AFD06D1D263CDB6FB907F3C) == 0x000008, "Wrong alignment on BP_TitleSequence_C_OnLoaded_41F8F0A44AFD06D1D263CDB6FB907F3C");
-static_assert(sizeof(BP_TitleSequence_C_OnLoaded_41F8F0A44AFD06D1D263CDB6FB907F3C) == 0x000008, "Wrong size on BP_TitleSequence_C_OnLoaded_41F8F0A44AFD06D1D263CDB6FB907F3C");
-static_assert(offsetof(BP_TitleSequence_C_OnLoaded_41F8F0A44AFD06D1D263CDB6FB907F3C, Loaded) == 0x000000, "Member 'BP_TitleSequence_C_OnLoaded_41F8F0A44AFD06D1D263CDB6FB907F3C::Loaded' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TitleSequence_C_OnLoaded_41F8F0A44AFD06D1D263CDB6FB907F3C;
 
 // Function BP_TitleSequence.BP_TitleSequence_C.OnSaveOntParticipantUser
 // 0x0038 (0x0038 - 0x0000)
@@ -1156,12 +716,7 @@ public:
 	class FString                                 ResponseData;                                      // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          Error;                                             // 0x0030(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TitleSequence_C_OnSaveOntParticipantUser) == 0x000008, "Wrong alignment on BP_TitleSequence_C_OnSaveOntParticipantUser");
-static_assert(sizeof(BP_TitleSequence_C_OnSaveOntParticipantUser) == 0x000038, "Wrong size on BP_TitleSequence_C_OnSaveOntParticipantUser");
-static_assert(offsetof(BP_TitleSequence_C_OnSaveOntParticipantUser, ApiName) == 0x000000, "Member 'BP_TitleSequence_C_OnSaveOntParticipantUser::ApiName' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_OnSaveOntParticipantUser, RequestData) == 0x000010, "Member 'BP_TitleSequence_C_OnSaveOntParticipantUser::RequestData' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_OnSaveOntParticipantUser, ResponseData) == 0x000020, "Member 'BP_TitleSequence_C_OnSaveOntParticipantUser::ResponseData' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_OnSaveOntParticipantUser, Error) == 0x000030, "Member 'BP_TitleSequence_C_OnSaveOntParticipantUser::Error' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TitleSequence_C_OnSaveOntParticipantUser;
 
 // Function BP_TitleSequence.BP_TitleSequence_C.OnUpdateStateCheckDefaultSaveDataForRom
 // 0x0004 (0x0004 - 0x0000)
@@ -1170,9 +725,7 @@ struct BP_TitleSequence_C_OnUpdateStateCheckDefaultSaveDataForRom final
 public:
 	float                                         DeltaTime;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TitleSequence_C_OnUpdateStateCheckDefaultSaveDataForRom) == 0x000004, "Wrong alignment on BP_TitleSequence_C_OnUpdateStateCheckDefaultSaveDataForRom");
-static_assert(sizeof(BP_TitleSequence_C_OnUpdateStateCheckDefaultSaveDataForRom) == 0x000004, "Wrong size on BP_TitleSequence_C_OnUpdateStateCheckDefaultSaveDataForRom");
-static_assert(offsetof(BP_TitleSequence_C_OnUpdateStateCheckDefaultSaveDataForRom, DeltaTime) == 0x000000, "Member 'BP_TitleSequence_C_OnUpdateStateCheckDefaultSaveDataForRom::DeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TitleSequence_C_OnUpdateStateCheckDefaultSaveDataForRom;
 
 // Function BP_TitleSequence.BP_TitleSequence_C.OnUpdateStateConvertSaveData
 // 0x0004 (0x0004 - 0x0000)
@@ -1181,9 +734,7 @@ struct BP_TitleSequence_C_OnUpdateStateConvertSaveData final
 public:
 	float                                         DeltaTime;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TitleSequence_C_OnUpdateStateConvertSaveData) == 0x000004, "Wrong alignment on BP_TitleSequence_C_OnUpdateStateConvertSaveData");
-static_assert(sizeof(BP_TitleSequence_C_OnUpdateStateConvertSaveData) == 0x000004, "Wrong size on BP_TitleSequence_C_OnUpdateStateConvertSaveData");
-static_assert(offsetof(BP_TitleSequence_C_OnUpdateStateConvertSaveData, DeltaTime) == 0x000000, "Member 'BP_TitleSequence_C_OnUpdateStateConvertSaveData::DeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TitleSequence_C_OnUpdateStateConvertSaveData;
 
 // Function BP_TitleSequence.BP_TitleSequence_C.OnUpdateStateConvertSaveDataForDemo
 // 0x0004 (0x0004 - 0x0000)
@@ -1192,9 +743,7 @@ struct BP_TitleSequence_C_OnUpdateStateConvertSaveDataForDemo final
 public:
 	float                                         DeltaTime;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TitleSequence_C_OnUpdateStateConvertSaveDataForDemo) == 0x000004, "Wrong alignment on BP_TitleSequence_C_OnUpdateStateConvertSaveDataForDemo");
-static_assert(sizeof(BP_TitleSequence_C_OnUpdateStateConvertSaveDataForDemo) == 0x000004, "Wrong size on BP_TitleSequence_C_OnUpdateStateConvertSaveDataForDemo");
-static_assert(offsetof(BP_TitleSequence_C_OnUpdateStateConvertSaveDataForDemo, DeltaTime) == 0x000000, "Member 'BP_TitleSequence_C_OnUpdateStateConvertSaveDataForDemo::DeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TitleSequence_C_OnUpdateStateConvertSaveDataForDemo;
 
 // Function BP_TitleSequence.BP_TitleSequence_C.OnUpdateStateDetachUnavailableContent
 // 0x0004 (0x0004 - 0x0000)
@@ -1203,9 +752,7 @@ struct BP_TitleSequence_C_OnUpdateStateDetachUnavailableContent final
 public:
 	float                                         DeltaTime;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TitleSequence_C_OnUpdateStateDetachUnavailableContent) == 0x000004, "Wrong alignment on BP_TitleSequence_C_OnUpdateStateDetachUnavailableContent");
-static_assert(sizeof(BP_TitleSequence_C_OnUpdateStateDetachUnavailableContent) == 0x000004, "Wrong size on BP_TitleSequence_C_OnUpdateStateDetachUnavailableContent");
-static_assert(offsetof(BP_TitleSequence_C_OnUpdateStateDetachUnavailableContent, DeltaTime) == 0x000000, "Member 'BP_TitleSequence_C_OnUpdateStateDetachUnavailableContent::DeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TitleSequence_C_OnUpdateStateDetachUnavailableContent;
 
 // Function BP_TitleSequence.BP_TitleSequence_C.OnUpdateStateTitleTop
 // 0x0004 (0x0004 - 0x0000)
@@ -1214,9 +761,7 @@ struct BP_TitleSequence_C_OnUpdateStateTitleTop final
 public:
 	float                                         DeltaTime;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TitleSequence_C_OnUpdateStateTitleTop) == 0x000004, "Wrong alignment on BP_TitleSequence_C_OnUpdateStateTitleTop");
-static_assert(sizeof(BP_TitleSequence_C_OnUpdateStateTitleTop) == 0x000004, "Wrong size on BP_TitleSequence_C_OnUpdateStateTitleTop");
-static_assert(offsetof(BP_TitleSequence_C_OnUpdateStateTitleTop, DeltaTime) == 0x000000, "Member 'BP_TitleSequence_C_OnUpdateStateTitleTop::DeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TitleSequence_C_OnUpdateStateTitleTop;
 
 // Function BP_TitleSequence.BP_TitleSequence_C.PopupGameQuit
 // 0x0110 (0x0110 - 0x0000)
@@ -1254,31 +799,7 @@ public:
 	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface_5; // 0x00F8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_5;                     // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TitleSequence_C_PopupGameQuit) == 0x000008, "Wrong alignment on BP_TitleSequence_C_PopupGameQuit");
-static_assert(sizeof(BP_TitleSequence_C_PopupGameQuit) == 0x000110, "Wrong size on BP_TitleSequence_C_PopupGameQuit");
-static_assert(offsetof(BP_TitleSequence_C_PopupGameQuit, CallFunc_MakeLiteralByte_ReturnValue) == 0x000000, "Member 'BP_TitleSequence_C_PopupGameQuit::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_PopupGameQuit, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000004, "Member 'BP_TitleSequence_C_PopupGameQuit::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_PopupGameQuit, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'BP_TitleSequence_C_PopupGameQuit::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_PopupGameQuit, K2Node_DynamicCast_AsMenu_Popup_Window_Interface) == 0x000018, "Member 'BP_TitleSequence_C_PopupGameQuit::K2Node_DynamicCast_AsMenu_Popup_Window_Interface' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_PopupGameQuit, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'BP_TitleSequence_C_PopupGameQuit::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_PopupGameQuit, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_1) == 0x000030, "Member 'BP_TitleSequence_C_PopupGameQuit::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_PopupGameQuit, K2Node_DynamicCast_bSuccess_1) == 0x000040, "Member 'BP_TitleSequence_C_PopupGameQuit::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_PopupGameQuit, CallFunc_MakeLiteralText_ReturnValue) == 0x000048, "Member 'BP_TitleSequence_C_PopupGameQuit::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_PopupGameQuit, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_2) == 0x000058, "Member 'BP_TitleSequence_C_PopupGameQuit::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_PopupGameQuit, K2Node_DynamicCast_bSuccess_2) == 0x000068, "Member 'BP_TitleSequence_C_PopupGameQuit::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_PopupGameQuit, CallFunc_MakeLiteralText_ReturnValue_1) == 0x000070, "Member 'BP_TitleSequence_C_PopupGameQuit::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_PopupGameQuit, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000080, "Member 'BP_TitleSequence_C_PopupGameQuit::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_PopupGameQuit, CallFunc_CreatePopupWindow_ReturnValue) == 0x000088, "Member 'BP_TitleSequence_C_PopupGameQuit::CallFunc_CreatePopupWindow_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_PopupGameQuit, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_3) == 0x000090, "Member 'BP_TitleSequence_C_PopupGameQuit::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_3' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_PopupGameQuit, K2Node_DynamicCast_bSuccess_3) == 0x0000A0, "Member 'BP_TitleSequence_C_PopupGameQuit::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_PopupGameQuit, CallFunc_MakeLiteralText_ReturnValue_2) == 0x0000A8, "Member 'BP_TitleSequence_C_PopupGameQuit::CallFunc_MakeLiteralText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_PopupGameQuit, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_4) == 0x0000B8, "Member 'BP_TitleSequence_C_PopupGameQuit::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_4' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_PopupGameQuit, K2Node_DynamicCast_bSuccess_4) == 0x0000C8, "Member 'BP_TitleSequence_C_PopupGameQuit::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_PopupGameQuit, CallFunc_MakeLiteralText_ReturnValue_3) == 0x0000D0, "Member 'BP_TitleSequence_C_PopupGameQuit::CallFunc_MakeLiteralText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_PopupGameQuit, K2Node_MakeArray_Array) == 0x0000E0, "Member 'BP_TitleSequence_C_PopupGameQuit::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_PopupGameQuit, CallFunc_IsValid_ReturnValue) == 0x0000F0, "Member 'BP_TitleSequence_C_PopupGameQuit::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_PopupGameQuit, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_5) == 0x0000F8, "Member 'BP_TitleSequence_C_PopupGameQuit::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_5' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_PopupGameQuit, K2Node_DynamicCast_bSuccess_5) == 0x000108, "Member 'BP_TitleSequence_C_PopupGameQuit::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TitleSequence_C_PopupGameQuit;
 
 // Function BP_TitleSequence.BP_TitleSequence_C.QuitPress
 // 0x0018 (0x0018 - 0x0000)
@@ -1292,14 +813,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TitleSequence_C_QuitPress) == 0x000008, "Wrong alignment on BP_TitleSequence_C_QuitPress");
-static_assert(sizeof(BP_TitleSequence_C_QuitPress) == 0x000018, "Wrong size on BP_TitleSequence_C_QuitPress");
-static_assert(offsetof(BP_TitleSequence_C_QuitPress, Button) == 0x000000, "Member 'BP_TitleSequence_C_QuitPress::Button' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_QuitPress, PanelIndex) == 0x000008, "Member 'BP_TitleSequence_C_QuitPress::PanelIndex' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_QuitPress, ButtonIndex) == 0x00000C, "Member 'BP_TitleSequence_C_QuitPress::ButtonIndex' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_QuitPress, K2Node_SwitchInteger_CmpSuccess) == 0x000010, "Member 'BP_TitleSequence_C_QuitPress::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_QuitPress, CallFunc_IsValid_ReturnValue) == 0x000011, "Member 'BP_TitleSequence_C_QuitPress::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_QuitPress, CallFunc_IsValid_ReturnValue_1) == 0x000012, "Member 'BP_TitleSequence_C_QuitPress::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TitleSequence_C_QuitPress;
 
 // Function BP_TitleSequence.BP_TitleSequence_C.SetNextMenuSequenceState
 // 0x0010 (0x0010 - 0x0000)
@@ -1310,10 +824,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                PrevSequence;                                      // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TitleSequence_C_SetNextMenuSequenceState) == 0x000008, "Wrong alignment on BP_TitleSequence_C_SetNextMenuSequenceState");
-static_assert(sizeof(BP_TitleSequence_C_SetNextMenuSequenceState) == 0x000010, "Wrong size on BP_TitleSequence_C_SetNextMenuSequenceState");
-static_assert(offsetof(BP_TitleSequence_C_SetNextMenuSequenceState, InState) == 0x000000, "Member 'BP_TitleSequence_C_SetNextMenuSequenceState::InState' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_SetNextMenuSequenceState, PrevSequence) == 0x000008, "Member 'BP_TitleSequence_C_SetNextMenuSequenceState::PrevSequence' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TitleSequence_C_SetNextMenuSequenceState;
 
 // Function BP_TitleSequence.BP_TitleSequence_C.SetNextSubMenuSequenceState
 // 0x0010 (0x0010 - 0x0000)
@@ -1324,10 +835,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                PrevSequence;                                      // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TitleSequence_C_SetNextSubMenuSequenceState) == 0x000008, "Wrong alignment on BP_TitleSequence_C_SetNextSubMenuSequenceState");
-static_assert(sizeof(BP_TitleSequence_C_SetNextSubMenuSequenceState) == 0x000010, "Wrong size on BP_TitleSequence_C_SetNextSubMenuSequenceState");
-static_assert(offsetof(BP_TitleSequence_C_SetNextSubMenuSequenceState, InState) == 0x000000, "Member 'BP_TitleSequence_C_SetNextSubMenuSequenceState::InState' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_SetNextSubMenuSequenceState, PrevSequence) == 0x000008, "Member 'BP_TitleSequence_C_SetNextSubMenuSequenceState::PrevSequence' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TitleSequence_C_SetNextSubMenuSequenceState;
 
 // Function BP_TitleSequence.BP_TitleSequence_C.SetNextTitleSequenceState
 // 0x0001 (0x0001 - 0x0000)
@@ -1336,9 +844,7 @@ struct BP_TitleSequence_C_SetNextTitleSequenceState final
 public:
 	ETitleSequenceState                           InState;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TitleSequence_C_SetNextTitleSequenceState) == 0x000001, "Wrong alignment on BP_TitleSequence_C_SetNextTitleSequenceState");
-static_assert(sizeof(BP_TitleSequence_C_SetNextTitleSequenceState) == 0x000001, "Wrong size on BP_TitleSequence_C_SetNextTitleSequenceState");
-static_assert(offsetof(BP_TitleSequence_C_SetNextTitleSequenceState, InState) == 0x000000, "Member 'BP_TitleSequence_C_SetNextTitleSequenceState::InState' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TitleSequence_C_SetNextTitleSequenceState;
 
 // Function BP_TitleSequence.BP_TitleSequence_C.UnbindMouseClicked
 // 0x0020 (0x0020 - 0x0000)
@@ -1349,11 +855,7 @@ public:
 	class AAppPlayerController*                   CallFunc_GetAppPlayerController_ReturnValue;       // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_TitleSequence_C_UnbindMouseClicked) == 0x000008, "Wrong alignment on BP_TitleSequence_C_UnbindMouseClicked");
-static_assert(sizeof(BP_TitleSequence_C_UnbindMouseClicked) == 0x000020, "Wrong size on BP_TitleSequence_C_UnbindMouseClicked");
-static_assert(offsetof(BP_TitleSequence_C_UnbindMouseClicked, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'BP_TitleSequence_C_UnbindMouseClicked::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_UnbindMouseClicked, CallFunc_GetAppPlayerController_ReturnValue) == 0x000010, "Member 'BP_TitleSequence_C_UnbindMouseClicked::CallFunc_GetAppPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_TitleSequence_C_UnbindMouseClicked, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'BP_TitleSequence_C_UnbindMouseClicked::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_TitleSequence_C_UnbindMouseClicked;
 
 }
 

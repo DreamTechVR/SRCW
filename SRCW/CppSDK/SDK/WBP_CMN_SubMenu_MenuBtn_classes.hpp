@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
+#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
 #include "UnionUI_structs.hpp"
-#include "UNION_classes.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -59,28 +59,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_SubMenu_MenuBtn_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_SubMenu_MenuBtn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_SubMenu_MenuBtn_C")
 	}
 	static class UWBP_CMN_SubMenu_MenuBtn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_SubMenu_MenuBtn_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_SubMenu_MenuBtn_C) == 0x000008, "Wrong alignment on UWBP_CMN_SubMenu_MenuBtn_C");
-static_assert(sizeof(UWBP_CMN_SubMenu_MenuBtn_C) == 0x000538, "Wrong size on UWBP_CMN_SubMenu_MenuBtn_C");
-static_assert(offsetof(UWBP_CMN_SubMenu_MenuBtn_C, UberGraphFrame) == 0x0004D0, "Member 'UWBP_CMN_SubMenu_MenuBtn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_SubMenu_MenuBtn_C, Btn_Active_Out) == 0x0004D8, "Member 'UWBP_CMN_SubMenu_MenuBtn_C::Btn_Active_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_SubMenu_MenuBtn_C, Corsor_BtnPlay) == 0x0004E0, "Member 'UWBP_CMN_SubMenu_MenuBtn_C::Corsor_BtnPlay' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_SubMenu_MenuBtn_C, DSP_Cover) == 0x0004E8, "Member 'UWBP_CMN_SubMenu_MenuBtn_C::DSP_Cover' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_SubMenu_MenuBtn_C, DSP_NewIcon) == 0x0004F0, "Member 'UWBP_CMN_SubMenu_MenuBtn_C::DSP_NewIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_SubMenu_MenuBtn_C, DSP_NGPict) == 0x0004F8, "Member 'UWBP_CMN_SubMenu_MenuBtn_C::DSP_NGPict' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_SubMenu_MenuBtn_C, DSP_WBP_CMN_SubMenu_MenuBtn_Sub_Festa) == 0x000500, "Member 'UWBP_CMN_SubMenu_MenuBtn_C::DSP_WBP_CMN_SubMenu_MenuBtn_Sub_Festa' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_SubMenu_MenuBtn_C, PAT_BtnBase) == 0x000508, "Member 'UWBP_CMN_SubMenu_MenuBtn_C::PAT_BtnBase' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_SubMenu_MenuBtn_C, PAT_BtnIcon) == 0x000510, "Member 'UWBP_CMN_SubMenu_MenuBtn_C::PAT_BtnIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_SubMenu_MenuBtn_C, RaceFlagWave) == 0x000518, "Member 'UWBP_CMN_SubMenu_MenuBtn_C::RaceFlagWave' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_SubMenu_MenuBtn_C, WBP_FontScroll) == 0x000520, "Member 'UWBP_CMN_SubMenu_MenuBtn_C::WBP_FontScroll' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_SubMenu_MenuBtn_C, WidgetSwitcher_Pict) == 0x000528, "Member 'UWBP_CMN_SubMenu_MenuBtn_C::WidgetSwitcher_Pict' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_SubMenu_MenuBtn_C, Icon_Material) == 0x000530, "Member 'UWBP_CMN_SubMenu_MenuBtn_C::Icon_Material' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_SubMenu_MenuBtn_C;
 
 }
 

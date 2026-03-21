@@ -42,24 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_Sub_SpeedClassInfo_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_Sub_SpeedClassInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_Sub_SpeedClassInfo_C")
 	}
 	static class UWBP_CMN_Sub_SpeedClassInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_Sub_SpeedClassInfo_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_Sub_SpeedClassInfo_C) == 0x000008, "Wrong alignment on UWBP_CMN_Sub_SpeedClassInfo_C");
-static_assert(sizeof(UWBP_CMN_Sub_SpeedClassInfo_C) == 0x000328, "Wrong size on UWBP_CMN_Sub_SpeedClassInfo_C");
-static_assert(offsetof(UWBP_CMN_Sub_SpeedClassInfo_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_CMN_Sub_SpeedClassInfo_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_SpeedClassInfo_C, Icon_Active_01) == 0x0002E8, "Member 'UWBP_CMN_Sub_SpeedClassInfo_C::Icon_Active_01' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_SpeedClassInfo_C, Icon_Active_02) == 0x0002F0, "Member 'UWBP_CMN_Sub_SpeedClassInfo_C::Icon_Active_02' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_SpeedClassInfo_C, Icon_Active_03) == 0x0002F8, "Member 'UWBP_CMN_Sub_SpeedClassInfo_C::Icon_Active_03' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_SpeedClassInfo_C, Icon_Active_04) == 0x000300, "Member 'UWBP_CMN_Sub_SpeedClassInfo_C::Icon_Active_04' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_SpeedClassInfo_C, Icon_Active_05) == 0x000308, "Member 'UWBP_CMN_Sub_SpeedClassInfo_C::Icon_Active_05' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_SpeedClassInfo_C, TXT_Class) == 0x000310, "Member 'UWBP_CMN_Sub_SpeedClassInfo_C::TXT_Class' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_SpeedClassInfo_C, WS_Icon_Active) == 0x000318, "Member 'UWBP_CMN_Sub_SpeedClassInfo_C::WS_Icon_Active' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_SpeedClassInfo_C, bBeforeSlateInvalidation) == 0x000320, "Member 'UWBP_CMN_Sub_SpeedClassInfo_C::bBeforeSlateInvalidation' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_Sub_SpeedClassInfo_C;
 
 }
 

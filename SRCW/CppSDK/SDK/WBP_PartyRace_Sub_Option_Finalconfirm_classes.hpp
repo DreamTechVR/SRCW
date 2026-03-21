@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
@@ -71,35 +71,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_PartyRace_Sub_Option_Finalconfirm_C">();
+		BP_STATIC_CLASS_IMPL("WBP_PartyRace_Sub_Option_Finalconfirm_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_PartyRace_Sub_Option_Finalconfirm_C")
 	}
 	static class UWBP_PartyRace_Sub_Option_Finalconfirm_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_PartyRace_Sub_Option_Finalconfirm_C>();
 	}
 };
-static_assert(alignof(UWBP_PartyRace_Sub_Option_Finalconfirm_C) == 0x000008, "Wrong alignment on UWBP_PartyRace_Sub_Option_Finalconfirm_C");
-static_assert(sizeof(UWBP_PartyRace_Sub_Option_Finalconfirm_C) == 0x0004F0, "Wrong size on UWBP_PartyRace_Sub_Option_Finalconfirm_C");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Finalconfirm_C, UberGraphFrame) == 0x000410, "Member 'UWBP_PartyRace_Sub_Option_Finalconfirm_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Finalconfirm_C, BG) == 0x000418, "Member 'UWBP_PartyRace_Sub_Option_Finalconfirm_C::BG' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Finalconfirm_C, BG_Window_Base) == 0x000420, "Member 'UWBP_PartyRace_Sub_Option_Finalconfirm_C::BG_Window_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Finalconfirm_C, BG_Window_Base_Outline) == 0x000428, "Member 'UWBP_PartyRace_Sub_Option_Finalconfirm_C::BG_Window_Base_Outline' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Finalconfirm_C, CanvasPanel_21) == 0x000430, "Member 'UWBP_PartyRace_Sub_Option_Finalconfirm_C::CanvasPanel_21' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Finalconfirm_C, OutOfContentButton_37) == 0x000438, "Member 'UWBP_PartyRace_Sub_Option_Finalconfirm_C::OutOfContentButton_37' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Finalconfirm_C, PAT_PresetIcon) == 0x000440, "Member 'UWBP_PartyRace_Sub_Option_Finalconfirm_C::PAT_PresetIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Finalconfirm_C, SafeZone) == 0x000448, "Member 'UWBP_PartyRace_Sub_Option_Finalconfirm_C::SafeZone' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Finalconfirm_C, TXT_PresetName) == 0x000450, "Member 'UWBP_PartyRace_Sub_Option_Finalconfirm_C::TXT_PresetName' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Finalconfirm_C, TXT_Title_RuleEdit) == 0x000458, "Member 'UWBP_PartyRace_Sub_Option_Finalconfirm_C::TXT_Title_RuleEdit' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Finalconfirm_C, WBP_PartyRace_Sub_Option_Btn_ItemSwitch) == 0x000460, "Member 'UWBP_PartyRace_Sub_Option_Finalconfirm_C::WBP_PartyRace_Sub_Option_Btn_ItemSwitch' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Finalconfirm_C, WBP_PartyRace_Sub_Option_Btn_OK) == 0x000468, "Member 'UWBP_PartyRace_Sub_Option_Finalconfirm_C::WBP_PartyRace_Sub_Option_Btn_OK' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Finalconfirm_C, WBP_PartyRace_Sub_Option_Btn_RuleSetting) == 0x000470, "Member 'UWBP_PartyRace_Sub_Option_Finalconfirm_C::WBP_PartyRace_Sub_Option_Btn_RuleSetting' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Finalconfirm_C, WBP_PartyRace_Sub_Option_Btn_TeavelCouseSwitch) == 0x000478, "Member 'UWBP_PartyRace_Sub_Option_Finalconfirm_C::WBP_PartyRace_Sub_Option_Btn_TeavelCouseSwitch' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Finalconfirm_C, WBP_PartyRace_Sub_Option_Line_Group) == 0x000480, "Member 'UWBP_PartyRace_Sub_Option_Finalconfirm_C::WBP_PartyRace_Sub_Option_Line_Group' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Finalconfirm_C, WBP_PartyRace_Sub_Option_Line_Speed) == 0x000488, "Member 'UWBP_PartyRace_Sub_Option_Finalconfirm_C::WBP_PartyRace_Sub_Option_Line_Speed' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Finalconfirm_C, LastPanelIndex) == 0x000490, "Member 'UWBP_PartyRace_Sub_Option_Finalconfirm_C::LastPanelIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Finalconfirm_C, bFirstFocus) == 0x000494, "Member 'UWBP_PartyRace_Sub_Option_Finalconfirm_C::bFirstFocus' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Finalconfirm_C, ItemSwitchOrSettingDetail) == 0x000498, "Member 'UWBP_PartyRace_Sub_Option_Finalconfirm_C::ItemSwitchOrSettingDetail' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Finalconfirm_C, PresetName_Value) == 0x0004A0, "Member 'UWBP_PartyRace_Sub_Option_Finalconfirm_C::PresetName_Value' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_PartyRace_Sub_Option_Finalconfirm_C;
 
 }
 

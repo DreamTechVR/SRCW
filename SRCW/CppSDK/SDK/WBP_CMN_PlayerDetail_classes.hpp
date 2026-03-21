@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "UnionRun_structs.hpp"
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "UnionRun_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -132,48 +132,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_PlayerDetail_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_PlayerDetail_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_PlayerDetail_C")
 	}
 	static class UWBP_CMN_PlayerDetail_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_PlayerDetail_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_PlayerDetail_C) == 0x000008, "Wrong alignment on UWBP_CMN_PlayerDetail_C");
-static_assert(sizeof(UWBP_CMN_PlayerDetail_C) == 0x000510, "Wrong size on UWBP_CMN_PlayerDetail_C");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_C, UberGraphFrame) == 0x000410, "Member 'UWBP_CMN_PlayerDetail_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_C, Base_Next) == 0x000418, "Member 'UWBP_CMN_PlayerDetail_C::Base_Next' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_C, Base_Nice) == 0x000420, "Member 'UWBP_CMN_PlayerDetail_C::Base_Nice' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_C, Base_Normal) == 0x000428, "Member 'UWBP_CMN_PlayerDetail_C::Base_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_C, Base_Rival) == 0x000430, "Member 'UWBP_CMN_PlayerDetail_C::Base_Rival' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_C, BaseWindow) == 0x000438, "Member 'UWBP_CMN_PlayerDetail_C::BaseWindow' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_C, DSP_Block) == 0x000440, "Member 'UWBP_CMN_PlayerDetail_C::DSP_Block' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_C, DSP_Nice) == 0x000448, "Member 'UWBP_CMN_PlayerDetail_C::DSP_Nice' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_C, DSP_WBP_ResultLegend_Sub_NUM) == 0x000450, "Member 'UWBP_CMN_PlayerDetail_C::DSP_WBP_ResultLegend_Sub_NUM' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_C, Icon_Nice) == 0x000458, "Member 'UWBP_CMN_PlayerDetail_C::Icon_Nice' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_C, ItemBox) == 0x000460, "Member 'UWBP_CMN_PlayerDetail_C::ItemBox' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_C, Line) == 0x000468, "Member 'UWBP_CMN_PlayerDetail_C::Line' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_C, MouseInteraction) == 0x000470, "Member 'UWBP_CMN_PlayerDetail_C::MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_C, OutOfContentButton) == 0x000478, "Member 'UWBP_CMN_PlayerDetail_C::OutOfContentButton' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_C, Overlay_59) == 0x000480, "Member 'UWBP_CMN_PlayerDetail_C::Overlay_59' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_C, PAT_Icon_Block) == 0x000488, "Member 'UWBP_CMN_PlayerDetail_C::PAT_Icon_Block' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_C, PAT_PlatformIcon) == 0x000490, "Member 'UWBP_CMN_PlayerDetail_C::PAT_PlatformIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_C, PAT_ScrollSnapPoint_01) == 0x000498, "Member 'UWBP_CMN_PlayerDetail_C::PAT_ScrollSnapPoint_01' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_C, PAT_ScrollSnapPoint_02) == 0x0004A0, "Member 'UWBP_CMN_PlayerDetail_C::PAT_ScrollSnapPoint_02' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_C, PAT_ScrollSnapPoint_03) == 0x0004A8, "Member 'UWBP_CMN_PlayerDetail_C::PAT_ScrollSnapPoint_03' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_C, TXT_Block) == 0x0004B0, "Member 'UWBP_CMN_PlayerDetail_C::TXT_Block' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_C, TXT_Next_Page) == 0x0004B8, "Member 'UWBP_CMN_PlayerDetail_C::TXT_Next_Page' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_C, TXT_Nice_Num) == 0x0004C0, "Member 'UWBP_CMN_PlayerDetail_C::TXT_Nice_Num' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_C, WBP_CMN_ControllerBtn) == 0x0004C8, "Member 'UWBP_CMN_PlayerDetail_C::WBP_CMN_ControllerBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_C, WBP_CMN_PlayerDetail_Sub_Info_Gadget) == 0x0004D0, "Member 'UWBP_CMN_PlayerDetail_C::WBP_CMN_PlayerDetail_Sub_Info_Gadget' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_C, WBP_CMN_PlayerDetail_Sub_Info_Machine) == 0x0004D8, "Member 'UWBP_CMN_PlayerDetail_C::WBP_CMN_PlayerDetail_Sub_Info_Machine' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_C, WBP_CMN_PlayerDetail_Sub_Info_Number) == 0x0004E0, "Member 'UWBP_CMN_PlayerDetail_C::WBP_CMN_PlayerDetail_Sub_Info_Number' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_C, WBP_HonorTitle_Plate) == 0x0004E8, "Member 'UWBP_CMN_PlayerDetail_C::WBP_HonorTitle_Plate' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_C, WidgetSwitcher_Info) == 0x0004F0, "Member 'UWBP_CMN_PlayerDetail_C::WidgetSwitcher_Info' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_C, PlatformIcon) == 0x0004F8, "Member 'UWBP_CMN_PlayerDetail_C::PlatformIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_C, BlockIcon) == 0x000500, "Member 'UWBP_CMN_PlayerDetail_C::BlockIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_C, PlayerDetailPage) == 0x000508, "Member 'UWBP_CMN_PlayerDetail_C::PlayerDetailPage' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_PlayerDetail_C, OpenFromFriendList) == 0x00050C, "Member 'UWBP_CMN_PlayerDetail_C::OpenFromFriendList' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_PlayerDetail_C;
 
 }
 

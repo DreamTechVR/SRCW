@@ -12,43 +12,25 @@
 
 #include "SlateCore_structs.hpp"
 #include "Engine_structs.hpp"
+#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "UnionUI_structs.hpp"
 #include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "UnionUI_structs.hpp"
-#include "UNION_structs.hpp"
 
 
 namespace SDK::Params
 {
 
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.LeftNavigationEvent
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.ChangePlayAnimation
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_LeftNavigationEvent final
+struct WBP_Friend_Sub_PlayerPlate_C_ChangePlayAnimation final
 {
 public:
-	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       InStopAnimation;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       InPlayAnimation;                                   // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_PlayerPlate_C_LeftNavigationEvent) == 0x000008, "Wrong alignment on WBP_Friend_Sub_PlayerPlate_C_LeftNavigationEvent");
-static_assert(sizeof(WBP_Friend_Sub_PlayerPlate_C_LeftNavigationEvent) == 0x000010, "Wrong size on WBP_Friend_Sub_PlayerPlate_C_LeftNavigationEvent");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_LeftNavigationEvent, Navigation_0) == 0x000000, "Member 'WBP_Friend_Sub_PlayerPlate_C_LeftNavigationEvent::Navigation_0' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_LeftNavigationEvent, ReturnValue) == 0x000008, "Member 'WBP_Friend_Sub_PlayerPlate_C_LeftNavigationEvent::ReturnValue' has a wrong offset!");
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.RightNavigationEvent
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_RightNavigationEvent final
-{
-public:
-	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_PlayerPlate_C_RightNavigationEvent) == 0x000008, "Wrong alignment on WBP_Friend_Sub_PlayerPlate_C_RightNavigationEvent");
-static_assert(sizeof(WBP_Friend_Sub_PlayerPlate_C_RightNavigationEvent) == 0x000010, "Wrong size on WBP_Friend_Sub_PlayerPlate_C_RightNavigationEvent");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_RightNavigationEvent, Navigation_0) == 0x000000, "Member 'WBP_Friend_Sub_PlayerPlate_C_RightNavigationEvent::Navigation_0' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_RightNavigationEvent, ReturnValue) == 0x000008, "Member 'WBP_Friend_Sub_PlayerPlate_C_RightNavigationEvent::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_ChangePlayAnimation;
 
 // Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.Check Release Response InputType
 // 0x0028 (0x0028 - 0x0000)
@@ -65,295 +47,7 @@ public:
 	EAppControllerInputType                       CallFunc_GetCurrentInputType_ReturnValue;          // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_PlayerPlate_C_Check_Release_Response_InputType) == 0x000008, "Wrong alignment on WBP_Friend_Sub_PlayerPlate_C_Check_Release_Response_InputType");
-static_assert(sizeof(WBP_Friend_Sub_PlayerPlate_C_Check_Release_Response_InputType) == 0x000028, "Wrong size on WBP_Friend_Sub_PlayerPlate_C_Check_Release_Response_InputType");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_Check_Release_Response_InputType, bOutReleaseResponseInput) == 0x000000, "Member 'WBP_Friend_Sub_PlayerPlate_C_Check_Release_Response_InputType::bOutReleaseResponseInput' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_Check_Release_Response_InputType, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'WBP_Friend_Sub_PlayerPlate_C_Check_Release_Response_InputType::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_Check_Release_Response_InputType, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'WBP_Friend_Sub_PlayerPlate_C_Check_Release_Response_InputType::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_Check_Release_Response_InputType, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000018, "Member 'WBP_Friend_Sub_PlayerPlate_C_Check_Release_Response_InputType::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_Check_Release_Response_InputType, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'WBP_Friend_Sub_PlayerPlate_C_Check_Release_Response_InputType::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_Check_Release_Response_InputType, CallFunc_GetCurrentInputType_ReturnValue) == 0x000021, "Member 'WBP_Friend_Sub_PlayerPlate_C_Check_Release_Response_InputType::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_Check_Release_Response_InputType, K2Node_SwitchEnum_CmpSuccess) == 0x000022, "Member 'WBP_Friend_Sub_PlayerPlate_C_Check_Release_Response_InputType::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.OnFocusReceived
-// 0x01B0 (0x01B0 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_OnFocusReceived final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FFocusEvent                            InFocusEvent;                                      // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x00F8(0x00B8)()
-};
-static_assert(alignof(WBP_Friend_Sub_PlayerPlate_C_OnFocusReceived) == 0x000008, "Wrong alignment on WBP_Friend_Sub_PlayerPlate_C_OnFocusReceived");
-static_assert(sizeof(WBP_Friend_Sub_PlayerPlate_C_OnFocusReceived) == 0x0001B0, "Wrong size on WBP_Friend_Sub_PlayerPlate_C_OnFocusReceived");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'WBP_Friend_Sub_PlayerPlate_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'WBP_Friend_Sub_PlayerPlate_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'WBP_Friend_Sub_PlayerPlate_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_OnFocusReceived, K2Node_MakeStruct_EventReply) == 0x0000F8, "Member 'WBP_Friend_Sub_PlayerPlate_C_OnFocusReceived::K2Node_MakeStruct_EventReply' has a wrong offset!");
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetPlayerIcon
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetPlayerIcon final
-{
-public:
-	TSoftObjectPtr<class UTexture2D>              InIconTexture;                                     // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	struct FLinearColor                           InBgColor;                                         // 0x0028(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInNowPlaying;                                     // 0x0038(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_PlayerPlate_C_SetPlayerIcon) == 0x000008, "Wrong alignment on WBP_Friend_Sub_PlayerPlate_C_SetPlayerIcon");
-static_assert(sizeof(WBP_Friend_Sub_PlayerPlate_C_SetPlayerIcon) == 0x000040, "Wrong size on WBP_Friend_Sub_PlayerPlate_C_SetPlayerIcon");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_SetPlayerIcon, InIconTexture) == 0x000000, "Member 'WBP_Friend_Sub_PlayerPlate_C_SetPlayerIcon::InIconTexture' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_SetPlayerIcon, InBgColor) == 0x000028, "Member 'WBP_Friend_Sub_PlayerPlate_C_SetPlayerIcon::InBgColor' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_SetPlayerIcon, bInNowPlaying) == 0x000038, "Member 'WBP_Friend_Sub_PlayerPlate_C_SetPlayerIcon::bInNowPlaying' has a wrong offset!");
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetPlayerNameText
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetPlayerNameText final
-{
-public:
-	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-static_assert(alignof(WBP_Friend_Sub_PlayerPlate_C_SetPlayerNameText) == 0x000008, "Wrong alignment on WBP_Friend_Sub_PlayerPlate_C_SetPlayerNameText");
-static_assert(sizeof(WBP_Friend_Sub_PlayerPlate_C_SetPlayerNameText) == 0x000010, "Wrong size on WBP_Friend_Sub_PlayerPlate_C_SetPlayerNameText");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_SetPlayerNameText, InText) == 0x000000, "Member 'WBP_Friend_Sub_PlayerPlate_C_SetPlayerNameText::InText' has a wrong offset!");
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetPlayerIdText
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetPlayerIdText final
-{
-public:
-	class FString                                 InPlayerId;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_PlayerPlate_C_SetPlayerIdText) == 0x000008, "Wrong alignment on WBP_Friend_Sub_PlayerPlate_C_SetPlayerIdText");
-static_assert(sizeof(WBP_Friend_Sub_PlayerPlate_C_SetPlayerIdText) == 0x000010, "Wrong size on WBP_Friend_Sub_PlayerPlate_C_SetPlayerIdText");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_SetPlayerIdText, InPlayerId) == 0x000000, "Member 'WBP_Friend_Sub_PlayerPlate_C_SetPlayerIdText::InPlayerId' has a wrong offset!");
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetPlatformIcon
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetPlatformIcon final
-{
-public:
-	ECrossplayPlatform                            InPlatformType;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_PlayerPlate_C_SetPlatformIcon) == 0x000001, "Wrong alignment on WBP_Friend_Sub_PlayerPlate_C_SetPlatformIcon");
-static_assert(sizeof(WBP_Friend_Sub_PlayerPlate_C_SetPlatformIcon) == 0x000001, "Wrong size on WBP_Friend_Sub_PlayerPlate_C_SetPlatformIcon");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_SetPlatformIcon, InPlatformType) == 0x000000, "Member 'WBP_Friend_Sub_PlayerPlate_C_SetPlatformIcon::InPlatformType' has a wrong offset!");
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetPlayerStatusIcon
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetPlayerStatusIcon final
-{
-public:
-	bool                                          bInAppBlock;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInPFBlock;                                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_PlayerPlate_C_SetPlayerStatusIcon) == 0x000001, "Wrong alignment on WBP_Friend_Sub_PlayerPlate_C_SetPlayerStatusIcon");
-static_assert(sizeof(WBP_Friend_Sub_PlayerPlate_C_SetPlayerStatusIcon) == 0x000002, "Wrong size on WBP_Friend_Sub_PlayerPlate_C_SetPlayerStatusIcon");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_SetPlayerStatusIcon, bInAppBlock) == 0x000000, "Member 'WBP_Friend_Sub_PlayerPlate_C_SetPlayerStatusIcon::bInAppBlock' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_SetPlayerStatusIcon, bInPFBlock) == 0x000001, "Member 'WBP_Friend_Sub_PlayerPlate_C_SetPlayerStatusIcon::bInPFBlock' has a wrong offset!");
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetLobbyInvitationIconVisible
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetLobbyInvitationIconVisible final
-{
-public:
-	bool                                          bInVisible;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_PlayerPlate_C_SetLobbyInvitationIconVisible) == 0x000001, "Wrong alignment on WBP_Friend_Sub_PlayerPlate_C_SetLobbyInvitationIconVisible");
-static_assert(sizeof(WBP_Friend_Sub_PlayerPlate_C_SetLobbyInvitationIconVisible) == 0x000001, "Wrong size on WBP_Friend_Sub_PlayerPlate_C_SetLobbyInvitationIconVisible");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_SetLobbyInvitationIconVisible, bInVisible) == 0x000000, "Member 'WBP_Friend_Sub_PlayerPlate_C_SetLobbyInvitationIconVisible::bInVisible' has a wrong offset!");
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetFocusAnimation
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetFocusAnimation final
-{
-public:
-	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_PlayerPlate_C_SetFocusAnimation) == 0x000001, "Wrong alignment on WBP_Friend_Sub_PlayerPlate_C_SetFocusAnimation");
-static_assert(sizeof(WBP_Friend_Sub_PlayerPlate_C_SetFocusAnimation) == 0x000001, "Wrong size on WBP_Friend_Sub_PlayerPlate_C_SetFocusAnimation");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_SetFocusAnimation, bInEnable) == 0x000000, "Member 'WBP_Friend_Sub_PlayerPlate_C_SetFocusAnimation::bInEnable' has a wrong offset!");
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetCursorVisible
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetCursorVisible final
-{
-public:
-	bool                                          bInVisible;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_PlayerPlate_C_SetCursorVisible) == 0x000001, "Wrong alignment on WBP_Friend_Sub_PlayerPlate_C_SetCursorVisible");
-static_assert(sizeof(WBP_Friend_Sub_PlayerPlate_C_SetCursorVisible) == 0x000001, "Wrong size on WBP_Friend_Sub_PlayerPlate_C_SetCursorVisible");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_SetCursorVisible, bInVisible) == 0x000000, "Member 'WBP_Friend_Sub_PlayerPlate_C_SetCursorVisible::bInVisible' has a wrong offset!");
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.ChangePlayAnimation
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_ChangePlayAnimation final
-{
-public:
-	class UWidgetAnimation*                       InStopAnimation;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       InPlayAnimation;                                   // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_PlayerPlate_C_ChangePlayAnimation) == 0x000008, "Wrong alignment on WBP_Friend_Sub_PlayerPlate_C_ChangePlayAnimation");
-static_assert(sizeof(WBP_Friend_Sub_PlayerPlate_C_ChangePlayAnimation) == 0x000010, "Wrong size on WBP_Friend_Sub_PlayerPlate_C_ChangePlayAnimation");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ChangePlayAnimation, InStopAnimation) == 0x000000, "Member 'WBP_Friend_Sub_PlayerPlate_C_ChangePlayAnimation::InStopAnimation' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ChangePlayAnimation, InPlayAnimation) == 0x000008, "Member 'WBP_Friend_Sub_PlayerPlate_C_ChangePlayAnimation::InPlayAnimation' has a wrong offset!");
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetMouseInteractionVisible
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetMouseInteractionVisible final
-{
-public:
-	bool                                          bInVisible;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_PlayerPlate_C_SetMouseInteractionVisible) == 0x000001, "Wrong alignment on WBP_Friend_Sub_PlayerPlate_C_SetMouseInteractionVisible");
-static_assert(sizeof(WBP_Friend_Sub_PlayerPlate_C_SetMouseInteractionVisible) == 0x000001, "Wrong size on WBP_Friend_Sub_PlayerPlate_C_SetMouseInteractionVisible");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_SetMouseInteractionVisible, bInVisible) == 0x000000, "Member 'WBP_Friend_Sub_PlayerPlate_C_SetMouseInteractionVisible::bInVisible' has a wrong offset!");
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetDateText
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetDateText final
-{
-public:
-	class FString                                 InDate;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_PlayerPlate_C_SetDateText) == 0x000008, "Wrong alignment on WBP_Friend_Sub_PlayerPlate_C_SetDateText");
-static_assert(sizeof(WBP_Friend_Sub_PlayerPlate_C_SetDateText) == 0x000010, "Wrong size on WBP_Friend_Sub_PlayerPlate_C_SetDateText");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_SetDateText, InDate) == 0x000000, "Member 'WBP_Friend_Sub_PlayerPlate_C_SetDateText::InDate' has a wrong offset!");
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetByListPlayerInfo
-// 0x00F8 (0x00F8 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetByListPlayerInfo final
-{
-public:
-	struct FFriendListPlayerInfo                  InListPlayerInfo;                                  // 0x0000(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm)
-	bool                                          InShowPlayerId;                                    // 0x00F0(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_PlayerPlate_C_SetByListPlayerInfo) == 0x000008, "Wrong alignment on WBP_Friend_Sub_PlayerPlate_C_SetByListPlayerInfo");
-static_assert(sizeof(WBP_Friend_Sub_PlayerPlate_C_SetByListPlayerInfo) == 0x0000F8, "Wrong size on WBP_Friend_Sub_PlayerPlate_C_SetByListPlayerInfo");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_SetByListPlayerInfo, InListPlayerInfo) == 0x000000, "Member 'WBP_Friend_Sub_PlayerPlate_C_SetByListPlayerInfo::InListPlayerInfo' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_SetByListPlayerInfo, InShowPlayerId) == 0x0000F0, "Member 'WBP_Friend_Sub_PlayerPlate_C_SetByListPlayerInfo::InShowPlayerId' has a wrong offset!");
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetFocusEnable
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetFocusEnable final
-{
-public:
-	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_PlayerPlate_C_SetFocusEnable) == 0x000001, "Wrong alignment on WBP_Friend_Sub_PlayerPlate_C_SetFocusEnable");
-static_assert(sizeof(WBP_Friend_Sub_PlayerPlate_C_SetFocusEnable) == 0x000001, "Wrong size on WBP_Friend_Sub_PlayerPlate_C_SetFocusEnable");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_SetFocusEnable, bInEnable) == 0x000000, "Member 'WBP_Friend_Sub_PlayerPlate_C_SetFocusEnable::bInEnable' has a wrong offset!");
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetButtonFocusType
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetButtonFocusType final
-{
-public:
-	EButtonFocusType                              InButtonFocusType;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_PlayerPlate_C_SetButtonFocusType) == 0x000001, "Wrong alignment on WBP_Friend_Sub_PlayerPlate_C_SetButtonFocusType");
-static_assert(sizeof(WBP_Friend_Sub_PlayerPlate_C_SetButtonFocusType) == 0x000001, "Wrong size on WBP_Friend_Sub_PlayerPlate_C_SetButtonFocusType");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_SetButtonFocusType, InButtonFocusType) == 0x000000, "Member 'WBP_Friend_Sub_PlayerPlate_C_SetButtonFocusType::InButtonFocusType' has a wrong offset!");
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetPlayDecisionSe
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetPlayDecisionSe final
-{
-public:
-	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_PlayerPlate_C_SetPlayDecisionSe) == 0x000001, "Wrong alignment on WBP_Friend_Sub_PlayerPlate_C_SetPlayDecisionSe");
-static_assert(sizeof(WBP_Friend_Sub_PlayerPlate_C_SetPlayDecisionSe) == 0x000001, "Wrong size on WBP_Friend_Sub_PlayerPlate_C_SetPlayDecisionSe");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_SetPlayDecisionSe, bInEnable) == 0x000000, "Member 'WBP_Friend_Sub_PlayerPlate_C_SetPlayDecisionSe::bInEnable' has a wrong offset!");
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetPlayerIconVisible
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetPlayerIconVisible final
-{
-public:
-	bool                                          bInVisible;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_PlayerPlate_C_SetPlayerIconVisible) == 0x000001, "Wrong alignment on WBP_Friend_Sub_PlayerPlate_C_SetPlayerIconVisible");
-static_assert(sizeof(WBP_Friend_Sub_PlayerPlate_C_SetPlayerIconVisible) == 0x000001, "Wrong size on WBP_Friend_Sub_PlayerPlate_C_SetPlayerIconVisible");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_SetPlayerIconVisible, bInVisible) == 0x000000, "Member 'WBP_Friend_Sub_PlayerPlate_C_SetPlayerIconVisible::bInVisible' has a wrong offset!");
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetLobbyType
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetLobbyType final
-{
-public:
-	bool                                          bInFriendMatch;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_PlayerPlate_C_SetLobbyType) == 0x000001, "Wrong alignment on WBP_Friend_Sub_PlayerPlate_C_SetLobbyType");
-static_assert(sizeof(WBP_Friend_Sub_PlayerPlate_C_SetLobbyType) == 0x000001, "Wrong size on WBP_Friend_Sub_PlayerPlate_C_SetLobbyType");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_SetLobbyType, bInFriendMatch) == 0x000000, "Member 'WBP_Friend_Sub_PlayerPlate_C_SetLobbyType::bInFriendMatch' has a wrong offset!");
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetLobbyInfoVisible
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetLobbyInfoVisible final
-{
-public:
-	bool                                          bInVisible;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_PlayerPlate_C_SetLobbyInfoVisible) == 0x000001, "Wrong alignment on WBP_Friend_Sub_PlayerPlate_C_SetLobbyInfoVisible");
-static_assert(sizeof(WBP_Friend_Sub_PlayerPlate_C_SetLobbyInfoVisible) == 0x000001, "Wrong size on WBP_Friend_Sub_PlayerPlate_C_SetLobbyInfoVisible");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_SetLobbyInfoVisible, bInVisible) == 0x000000, "Member 'WBP_Friend_Sub_PlayerPlate_C_SetLobbyInfoVisible::bInVisible' has a wrong offset!");
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.OnFocusImpl
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_OnFocusImpl final
-{
-public:
-	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_PlayerPlate_C_OnFocusImpl) == 0x000008, "Wrong alignment on WBP_Friend_Sub_PlayerPlate_C_OnFocusImpl");
-static_assert(sizeof(WBP_Friend_Sub_PlayerPlate_C_OnFocusImpl) == 0x000008, "Wrong size on WBP_Friend_Sub_PlayerPlate_C_OnFocusImpl");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_OnFocusImpl, Button) == 0x000000, "Member 'WBP_Friend_Sub_PlayerPlate_C_OnFocusImpl::Button' has a wrong offset!");
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.OnAddedToFocusPath
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_OnAddedToFocusPath final
-{
-public:
-	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-static_assert(alignof(WBP_Friend_Sub_PlayerPlate_C_OnAddedToFocusPath) == 0x000004, "Wrong alignment on WBP_Friend_Sub_PlayerPlate_C_OnAddedToFocusPath");
-static_assert(sizeof(WBP_Friend_Sub_PlayerPlate_C_OnAddedToFocusPath) == 0x000008, "Wrong size on WBP_Friend_Sub_PlayerPlate_C_OnAddedToFocusPath");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_OnAddedToFocusPath, InFocusEvent) == 0x000000, "Member 'WBP_Friend_Sub_PlayerPlate_C_OnAddedToFocusPath::InFocusEvent' has a wrong offset!");
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.OnRemovedFromFocusPath
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_OnRemovedFromFocusPath final
-{
-public:
-	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-static_assert(alignof(WBP_Friend_Sub_PlayerPlate_C_OnRemovedFromFocusPath) == 0x000004, "Wrong alignment on WBP_Friend_Sub_PlayerPlate_C_OnRemovedFromFocusPath");
-static_assert(sizeof(WBP_Friend_Sub_PlayerPlate_C_OnRemovedFromFocusPath) == 0x000008, "Wrong size on WBP_Friend_Sub_PlayerPlate_C_OnRemovedFromFocusPath");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_OnRemovedFromFocusPath, InFocusEvent) == 0x000000, "Member 'WBP_Friend_Sub_PlayerPlate_C_OnRemovedFromFocusPath::InFocusEvent' has a wrong offset!");
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.OnFocusLost
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_OnFocusLost final
-{
-public:
-	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-static_assert(alignof(WBP_Friend_Sub_PlayerPlate_C_OnFocusLost) == 0x000004, "Wrong alignment on WBP_Friend_Sub_PlayerPlate_C_OnFocusLost");
-static_assert(sizeof(WBP_Friend_Sub_PlayerPlate_C_OnFocusLost) == 0x000008, "Wrong size on WBP_Friend_Sub_PlayerPlate_C_OnFocusLost");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_OnFocusLost, InFocusEvent) == 0x000000, "Member 'WBP_Friend_Sub_PlayerPlate_C_OnFocusLost::InFocusEvent' has a wrong offset!");
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetWidgetFocus
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetWidgetFocus final
-{
-public:
-	bool                                          bInPlayFocusSound;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_PlayerPlate_C_SetWidgetFocus) == 0x000001, "Wrong alignment on WBP_Friend_Sub_PlayerPlate_C_SetWidgetFocus");
-static_assert(sizeof(WBP_Friend_Sub_PlayerPlate_C_SetWidgetFocus) == 0x000001, "Wrong size on WBP_Friend_Sub_PlayerPlate_C_SetWidgetFocus");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_SetWidgetFocus, bInPlayFocusSound) == 0x000000, "Member 'WBP_Friend_Sub_PlayerPlate_C_SetWidgetFocus::bInPlayFocusSound' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_Check_Release_Response_InputType;
 
 // Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate
 // 0x04B0 (0x04B0 - 0x0000)
@@ -548,163 +242,243 @@ public:
 	uint8                                         Pad_4A5[0x3];                                      // 0x04A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x04A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate) == 0x000008, "Wrong alignment on WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate");
-static_assert(sizeof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate) == 0x0004B0, "Wrong size on WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, EntryPoint) == 0x000000, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_bool_Variable) == 0x000004, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_byte_Variable) == 0x000005, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_byte_Variable_1) == 0x000006, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_bool_Variable_1) == 0x000007, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_byte_Variable_2) == 0x000008, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_byte_Variable_3) == 0x000009, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_bool_Has_Been_Initd_Variable) == 0x00000A, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_bool_Variable_2) == 0x00000B, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable) == 0x00000C, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_bool_IsClosed_Variable) == 0x00000D, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_SwitchEnum_CmpSuccess) == 0x00000E, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_SoundPlay_ReturnValue) == 0x000010, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_byte_Variable_4) == 0x000014, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_CustomEvent_InIconTexture) == 0x000018, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_CustomEvent_InIconTexture' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_CustomEvent_InBgColor) == 0x000040, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_CustomEvent_InBgColor' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_CustomEvent_bInNowPlaying) == 0x000050, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_CustomEvent_bInNowPlaying' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_byte_Variable_5) == 0x000051, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_bool_Variable_3) == 0x000052, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_byte_Variable_6) == 0x000053, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_byte_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_CustomEvent_InText) == 0x000058, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_CustomEvent_InText' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_CustomEvent_InPlayerId) == 0x000068, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_CustomEvent_InPlayerId' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_IsEmpty_ReturnValue) == 0x000078, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_IsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_ConvertPlayerIdStringForDisplay_OutPlayerIdForDisplay) == 0x000080, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_ConvertPlayerIdStringForDisplay_OutPlayerIdForDisplay' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_CustomEvent_InPlatformType) == 0x000090, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_CustomEvent_InPlatformType' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_Conv_StringToText_ReturnValue) == 0x000098, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000A8, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_MakeStruct_FormatArgumentData) == 0x0000B0, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_CustomEvent_bInAppBlock) == 0x0000F8, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_CustomEvent_bInAppBlock' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_CustomEvent_bInPFBlock) == 0x0000F9, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_CustomEvent_bInPFBlock' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000100, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_BooleanOR_ReturnValue) == 0x000108, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_byte_Variable_7) == 0x000109, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_byte_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_bool_Variable_4) == 0x00010A, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_bool_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_CustomEvent_bInVisible_4) == 0x00010B, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_CustomEvent_bInVisible_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_CustomEvent_bInEnable_2) == 0x00010C, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_CustomEvent_bInEnable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_byte_Variable_8) == 0x00010D, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_byte_Variable_8' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_CustomEvent_bInVisible_3) == 0x00010E, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_CustomEvent_bInVisible_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_CustomEvent_InStopAnimation) == 0x000110, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_CustomEvent_InStopAnimation' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_CustomEvent_InPlayAnimation) == 0x000118, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_CustomEvent_InPlayAnimation' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_byte_Variable_9) == 0x000120, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_byte_Variable_9' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_PlayAnimation_ReturnValue) == 0x000128, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_bool_Variable_5) == 0x000130, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_bool_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000131, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_byte_Variable_10) == 0x000132, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_byte_Variable_10' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_byte_Variable_11) == 0x000133, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_byte_Variable_11' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_CustomEvent_bInVisible_2) == 0x000134, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_CustomEvent_bInVisible_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_CustomEvent_InDate) == 0x000138, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_CustomEvent_InDate' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_CustomEvent_InListPlayerInfo) == 0x000148, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_CustomEvent_InListPlayerInfo' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_CustomEvent_InShowPlayerId) == 0x000238, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_CustomEvent_InShowPlayerId' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_IsEmpty_ReturnValue_1) == 0x000239, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_IsEmpty_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_Conv_StringToText_ReturnValue_1) == 0x000240, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000250, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x000251, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_EqualEqual_ByteByte_ReturnValue_3) == 0x000252, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_EqualEqual_ByteByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_EqualEqual_ByteByte_ReturnValue_4) == 0x000253, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_EqualEqual_ByteByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_EqualEqual_ByteByte_ReturnValue_5) == 0x000254, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_EqualEqual_ByteByte_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_BooleanOR_ReturnValue_1) == 0x000255, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_Conv_StringToText_ReturnValue_2) == 0x000258, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_Conv_StringToText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_bool_Variable_6) == 0x000268, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_bool_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_byte_Variable_12) == 0x000269, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_byte_Variable_12' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_byte_Variable_13) == 0x00026A, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_byte_Variable_13' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_bool_Variable_7) == 0x00026B, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_bool_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_text_Variable) == 0x000270, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_Select_Default) == 0x000280, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_bool_Variable_8) == 0x000281, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_bool_Variable_8' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_byte_Variable_14) == 0x000282, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_byte_Variable_14' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_CustomEvent_bInEnable_1) == 0x000283, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_CustomEvent_bInEnable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_byte_Variable_15) == 0x000284, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_byte_Variable_15' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_MakeLiteralText_ReturnValue) == 0x000288, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_bool_Variable_9) == 0x000298, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_bool_Variable_9' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_MakeStruct_FormatArgumentData_1) == 0x0002A0, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_MakeArray_Array) == 0x0002E8, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_Select_Default_1) == 0x0002F8, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_Format_ReturnValue) == 0x000300, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_Select_Default_2) == 0x000310, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_CustomEvent_InButtonFocusType) == 0x000320, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_CustomEvent_InButtonFocusType' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_CustomEvent_bInEnable) == 0x000321, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_CustomEvent_bInEnable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_CustomEvent_bInVisible_1) == 0x000322, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_CustomEvent_bInVisible_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_Select_Default_3) == 0x000323, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_byte_Variable_16) == 0x000324, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_byte_Variable_16' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_byte_Variable_17) == 0x000325, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_byte_Variable_17' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_bool_Variable_10) == 0x000326, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_bool_Variable_10' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_CustomEvent_bInFriendMatch) == 0x000327, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_CustomEvent_bInFriendMatch' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_Select_Default_4) == 0x000328, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_Select_Default_5) == 0x000329, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_Select_Default_5' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_byte_Variable_18) == 0x00032A, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_byte_Variable_18' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_byte_Variable_19) == 0x00032B, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_byte_Variable_19' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_CustomEvent_bInVisible) == 0x00032C, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_CustomEvent_bInVisible' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_Select_Default_6) == 0x00032D, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_Select_Default_6' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_Select_Default_7) == 0x00032E, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_Select_Default_7' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_bool_Variable_11) == 0x00032F, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_bool_Variable_11' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_Select_Default_8) == 0x000330, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_Select_Default_8' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_bool_Variable_12) == 0x000331, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_bool_Variable_12' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_Select_Default_9) == 0x000338, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_Select_Default_9' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_GetPlatformGroup_ReturnValue) == 0x000340, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_GetPlatformGroup_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_bool_Variable_13) == 0x000341, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_bool_Variable_13' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_EqualEqual_ByteByte_ReturnValue_6) == 0x000342, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_EqualEqual_ByteByte_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_Select_Default_10) == 0x000348, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_Select_Default_10' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_Conv_ByteToDouble_ReturnValue) == 0x000350, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_Conv_ByteToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_byte_Variable_20) == 0x000358, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_byte_Variable_20' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_CustomEvent_Button) == 0x000360, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_Event_InFocusEvent_2) == 0x000368, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_Event_InFocusEvent_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_GetUserIndexByFocusEvent_ReturnValue) == 0x000370, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_GetUserIndexByFocusEvent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_GetPlayerController_ReturnValue) == 0x000378, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_Event_InFocusEvent_1) == 0x000380, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_Event_InFocusEvent_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_Event_InFocusEvent) == 0x000388, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_Event_InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_bool_Has_Been_Initd_Variable_1) == 0x000390, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_bool_Has_Been_Initd_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_SwitchEnum_CmpSuccess_1) == 0x000391, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_byte_Variable_21) == 0x000392, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_byte_Variable_21' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000393, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_SoundPlay_ReturnValue_1) == 0x000394, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_HasAnyUserFocus_ReturnValue) == 0x000398, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_HasAnyUserFocus_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable_1) == 0x000399, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_CustomEvent_bInPlayFocusSound) == 0x00039A, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_CustomEvent_bInPlayFocusSound' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_Select_Default_11) == 0x00039B, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_Select_Default_11' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_Select_Default_12) == 0x00039C, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_Select_Default_12' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_SoundPlay_ReturnValue_2) == 0x0003A0, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_SoundPlay_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_bool_Variable_14) == 0x0003A4, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_bool_Variable_14' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_Select_Default_13) == 0x0003A5, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_Select_Default_13' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_int_Variable) == 0x0003A8, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_GetPlayerController_ReturnValue_1) == 0x0003B0, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_GetPlayerController_ReturnValue_2) == 0x0003B8, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_GetPlayerController_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_DynamicCast_AsApp_Player_Controller) == 0x0003C0, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_DynamicCast_bSuccess) == 0x0003C8, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_DynamicCast_AsApp_Player_Controller_1) == 0x0003D0, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_DynamicCast_AsApp_Player_Controller_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_DynamicCast_bSuccess_1) == 0x0003D8, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_GetPlayerController_ReturnValue_3) == 0x0003E0, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_GetPlayerController_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_GetPlayerController_ReturnValue_4) == 0x0003E8, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_GetPlayerController_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_DynamicCast_AsApp_Player_Controller_2) == 0x0003F0, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_DynamicCast_AsApp_Player_Controller_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_DynamicCast_bSuccess_2) == 0x0003F8, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_UnregisterMainMenu_ReturnValue) == 0x0003F9, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_UnregisterMainMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_UnregisterMainMenu_ReturnValue_1) == 0x0003FA, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_UnregisterMainMenu_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_GetAppPlayerController_ReturnValue) == 0x000400, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_GetAppPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_bool_IsClosed_Variable_1) == 0x000408, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_bool_IsClosed_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_IsValid_ReturnValue) == 0x000409, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_GetLeftStickAxisValue_ReturnValue) == 0x000410, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_GetLeftStickAxisValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, Temp_int_Variable_1) == 0x000420, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_BreakVector2D_X) == 0x000428, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_BreakVector2D_Y) == 0x000430, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_Abs_ReturnValue) == 0x000438, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_Abs_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_Select_Default_14) == 0x000440, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_Select_Default_14' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_GreaterEqual_DoubleDouble_ReturnValue) == 0x000444, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_GreaterEqual_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_GetAppPlayerController_ReturnValue_1) == 0x000448, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_GetAppPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_Not_PreBool_ReturnValue) == 0x000450, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_IsValid_ReturnValue_1) == 0x000451, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_GetLeftStickAxisValue_ReturnValue_1) == 0x000458, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_GetLeftStickAxisValue_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_BreakVector2D_X_1) == 0x000468, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_BreakVector2D_X_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_BreakVector2D_Y_1) == 0x000470, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_BreakVector2D_Y_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_CreateDelegate_OutputDelegate) == 0x000478, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_Abs_ReturnValue_1) == 0x000488, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_Abs_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_GreaterEqual_DoubleDouble_ReturnValue_1) == 0x000490, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_GreaterEqual_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, K2Node_CreateDelegate_OutputDelegate_1) == 0x000494, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_Not_PreBool_ReturnValue_1) == 0x0004A4, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x0004A8, "Member 'WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.LeftNavigationEvent
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_LeftNavigationEvent final
+{
+public:
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_LeftNavigationEvent;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.OnAddedToFocusPath
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_OnAddedToFocusPath final
+{
+public:
+	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_OnAddedToFocusPath;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.OnFocusImpl
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_OnFocusImpl final
+{
+public:
+	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_OnFocusImpl;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.OnFocusLost
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_OnFocusLost final
+{
+public:
+	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_OnFocusLost;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.OnFocusReceived
+// 0x01B0 (0x01B0 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_OnFocusReceived final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FFocusEvent                            InFocusEvent;                                      // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x00F8(0x00B8)()
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_OnFocusReceived;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.OnRemovedFromFocusPath
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_OnRemovedFromFocusPath final
+{
+public:
+	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_OnRemovedFromFocusPath;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.RightNavigationEvent
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_RightNavigationEvent final
+{
+public:
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_RightNavigationEvent;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetButtonFocusType
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetButtonFocusType final
+{
+public:
+	EButtonFocusType                              InButtonFocusType;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetButtonFocusType;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetByListPlayerInfo
+// 0x00F8 (0x00F8 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetByListPlayerInfo final
+{
+public:
+	struct FFriendListPlayerInfo                  InListPlayerInfo;                                  // 0x0000(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm)
+	bool                                          InShowPlayerId;                                    // 0x00F0(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetByListPlayerInfo;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetCursorVisible
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetCursorVisible final
+{
+public:
+	bool                                          bInVisible;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetCursorVisible;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetDateText
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetDateText final
+{
+public:
+	class FString                                 InDate;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetDateText;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetFocusAnimation
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetFocusAnimation final
+{
+public:
+	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetFocusAnimation;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetFocusEnable
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetFocusEnable final
+{
+public:
+	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetFocusEnable;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetLobbyInfoVisible
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetLobbyInfoVisible final
+{
+public:
+	bool                                          bInVisible;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetLobbyInfoVisible;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetLobbyInvitationIconVisible
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetLobbyInvitationIconVisible final
+{
+public:
+	bool                                          bInVisible;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetLobbyInvitationIconVisible;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetLobbyType
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetLobbyType final
+{
+public:
+	bool                                          bInFriendMatch;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetLobbyType;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetMouseInteractionVisible
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetMouseInteractionVisible final
+{
+public:
+	bool                                          bInVisible;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetMouseInteractionVisible;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetPlatformIcon
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetPlatformIcon final
+{
+public:
+	ECrossplayPlatform                            InPlatformType;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetPlatformIcon;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetPlayDecisionSe
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetPlayDecisionSe final
+{
+public:
+	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetPlayDecisionSe;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetPlayerIcon
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetPlayerIcon final
+{
+public:
+	TSoftObjectPtr<class UTexture2D>              InIconTexture;                                     // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	struct FLinearColor                           InBgColor;                                         // 0x0028(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInNowPlaying;                                     // 0x0038(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetPlayerIcon;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetPlayerIconVisible
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetPlayerIconVisible final
+{
+public:
+	bool                                          bInVisible;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetPlayerIconVisible;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetPlayerIdText
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetPlayerIdText final
+{
+public:
+	class FString                                 InPlayerId;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetPlayerIdText;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetPlayerNameText
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetPlayerNameText final
+{
+public:
+	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetPlayerNameText;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetPlayerStatusIcon
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetPlayerStatusIcon final
+{
+public:
+	bool                                          bInAppBlock;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInPFBlock;                                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetPlayerStatusIcon;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetWidgetFocus
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetWidgetFocus final
+{
+public:
+	bool                                          bInPlayFocusSound;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetWidgetFocus;
 
 }
 

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "Engine_structs.hpp"
+#include "UnionSystem_structs.hpp"
 
 
 namespace SDK
@@ -65,34 +65,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Race_HUD_Sub_Aming_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Race_HUD_Sub_Aming_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Race_HUD_Sub_Aming_C")
 	}
 	static class UWBP_Race_HUD_Sub_Aming_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Race_HUD_Sub_Aming_C>();
 	}
 };
-static_assert(alignof(UWBP_Race_HUD_Sub_Aming_C) == 0x000008, "Wrong alignment on UWBP_Race_HUD_Sub_Aming_C");
-static_assert(sizeof(UWBP_Race_HUD_Sub_Aming_C) == 0x0003D8, "Wrong size on UWBP_Race_HUD_Sub_Aming_C");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Aming_C, UberGraphFrame) == 0x000348, "Member 'UWBP_Race_HUD_Sub_Aming_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Aming_C, Aming_02_to_03) == 0x000350, "Member 'UWBP_Race_HUD_Sub_Aming_C::Aming_02_to_03' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Aming_C, Aming_02_to_01) == 0x000358, "Member 'UWBP_Race_HUD_Sub_Aming_C::Aming_02_to_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Aming_C, Aming_01_to_02) == 0x000360, "Member 'UWBP_Race_HUD_Sub_Aming_C::Aming_01_to_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Aming_C, Aming_01) == 0x000368, "Member 'UWBP_Race_HUD_Sub_Aming_C::Aming_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Aming_C, Image) == 0x000370, "Member 'UWBP_Race_HUD_Sub_Aming_C::Image' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Aming_C, Image_1) == 0x000378, "Member 'UWBP_Race_HUD_Sub_Aming_C::Image_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Aming_C, Image_2) == 0x000380, "Member 'UWBP_Race_HUD_Sub_Aming_C::Image_2' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Aming_C, Image_42) == 0x000388, "Member 'UWBP_Race_HUD_Sub_Aming_C::Image_42' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Aming_C, Overlay) == 0x000390, "Member 'UWBP_Race_HUD_Sub_Aming_C::Overlay' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Aming_C, Overlay_0) == 0x000398, "Member 'UWBP_Race_HUD_Sub_Aming_C::Overlay_0' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Aming_C, PAT_AmingIcon) == 0x0003A0, "Member 'UWBP_Race_HUD_Sub_Aming_C::PAT_AmingIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Aming_C, PAT_AmingIcon_1) == 0x0003A8, "Member 'UWBP_Race_HUD_Sub_Aming_C::PAT_AmingIcon_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Aming_C, PAT_Num) == 0x0003B0, "Member 'UWBP_Race_HUD_Sub_Aming_C::PAT_Num' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Aming_C, Roll) == 0x0003B8, "Member 'UWBP_Race_HUD_Sub_Aming_C::Roll' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Aming_C, Scale) == 0x0003C0, "Member 'UWBP_Race_HUD_Sub_Aming_C::Scale' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Aming_C, WidgetSwitcher_Aming) == 0x0003C8, "Member 'UWBP_Race_HUD_Sub_Aming_C::WidgetSwitcher_Aming' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Aming_C, IsAiming) == 0x0003D0, "Member 'UWBP_Race_HUD_Sub_Aming_C::IsAiming' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Sub_Aming_C, ManualAimingItem) == 0x0003D1, "Member 'UWBP_Race_HUD_Sub_Aming_C::ManualAimingItem' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Race_HUD_Sub_Aming_C;
 
 }
 

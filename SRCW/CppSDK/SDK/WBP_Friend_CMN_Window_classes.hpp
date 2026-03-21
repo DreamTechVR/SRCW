@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK
@@ -89,30 +89,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Friend_CMN_Window_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Friend_CMN_Window_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Friend_CMN_Window_C")
 	}
 	static class UWBP_Friend_CMN_Window_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Friend_CMN_Window_C>();
 	}
 };
-static_assert(alignof(UWBP_Friend_CMN_Window_C) == 0x000008, "Wrong alignment on UWBP_Friend_CMN_Window_C");
-static_assert(sizeof(UWBP_Friend_CMN_Window_C) == 0x0005E8, "Wrong size on UWBP_Friend_CMN_Window_C");
-static_assert(offsetof(UWBP_Friend_CMN_Window_C, UberGraphFrame) == 0x000570, "Member 'UWBP_Friend_CMN_Window_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_CMN_Window_C, base) == 0x000578, "Member 'UWBP_Friend_CMN_Window_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_CMN_Window_C, Base_Line_01) == 0x000580, "Member 'UWBP_Friend_CMN_Window_C::Base_Line_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_CMN_Window_C, Base_Line_02) == 0x000588, "Member 'UWBP_Friend_CMN_Window_C::Base_Line_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_CMN_Window_C, BaseWindow) == 0x000590, "Member 'UWBP_Friend_CMN_Window_C::BaseWindow' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_CMN_Window_C, TabDecoration) == 0x000598, "Member 'UWBP_Friend_CMN_Window_C::TabDecoration' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_CMN_Window_C, WBP_Friend_Sub_AddFriend) == 0x0005A0, "Member 'UWBP_Friend_CMN_Window_C::WBP_Friend_Sub_AddFriend' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_CMN_Window_C, WBP_Friend_Sub_AllScroll) == 0x0005A8, "Member 'UWBP_Friend_CMN_Window_C::WBP_Friend_Sub_AllScroll' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_CMN_Window_C, WBP_Friend_Sub_LobbyInvitation) == 0x0005B0, "Member 'UWBP_Friend_CMN_Window_C::WBP_Friend_Sub_LobbyInvitation' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_CMN_Window_C, WBP_FriendList_Tab) == 0x0005B8, "Member 'UWBP_Friend_CMN_Window_C::WBP_FriendList_Tab' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_CMN_Window_C, WBP_Sub_FriendList_MyStatus) == 0x0005C0, "Member 'UWBP_Friend_CMN_Window_C::WBP_Sub_FriendList_MyStatus' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_CMN_Window_C, WBP_System_Sub_LoadingSonic) == 0x0005C8, "Member 'UWBP_Friend_CMN_Window_C::WBP_System_Sub_LoadingSonic' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_CMN_Window_C, WidgetSwitcher_FriendList) == 0x0005D0, "Member 'UWBP_Friend_CMN_Window_C::WidgetSwitcher_FriendList' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_CMN_Window_C, MenuInputReceiveObject) == 0x0005D8, "Member 'UWBP_Friend_CMN_Window_C::MenuInputReceiveObject' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_CMN_Window_C, bShoulderRPressed) == 0x0005E0, "Member 'UWBP_Friend_CMN_Window_C::bShoulderRPressed' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Friend_CMN_Window_C;
 
 }
 

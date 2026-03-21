@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "UnionUI_structs.hpp"
-#include "UnionLib_structs.hpp"
-#include "UNION_structs.hpp"
-#include "Engine_structs.hpp"
-#include "ST_RacerTransformOffset_structs.hpp"
-#include "UnionSystem_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "UnionRun_structs.hpp"
+#include "Engine_structs.hpp"
+#include "UNION_structs.hpp"
+#include "UnionSystem_structs.hpp"
+#include "UnionLib_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "ST_RacerTransformOffset_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK::Params
@@ -30,9 +30,7 @@ struct BP_CharaMachineSequence_C_BndEvt__BP_CharaMachineSequence_BPC_CharaSelect
 public:
 	EMenuSequenceSubState                         State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_BndEvt__BP_CharaMachineSequence_BPC_CharaSelectState_K2Node_ComponentBoundEvent_2_OnBackStateDelegate__DelegateSignature) == 0x000001, "Wrong alignment on BP_CharaMachineSequence_C_BndEvt__BP_CharaMachineSequence_BPC_CharaSelectState_K2Node_ComponentBoundEvent_2_OnBackStateDelegate__DelegateSignature");
-static_assert(sizeof(BP_CharaMachineSequence_C_BndEvt__BP_CharaMachineSequence_BPC_CharaSelectState_K2Node_ComponentBoundEvent_2_OnBackStateDelegate__DelegateSignature) == 0x000001, "Wrong size on BP_CharaMachineSequence_C_BndEvt__BP_CharaMachineSequence_BPC_CharaSelectState_K2Node_ComponentBoundEvent_2_OnBackStateDelegate__DelegateSignature");
-static_assert(offsetof(BP_CharaMachineSequence_C_BndEvt__BP_CharaMachineSequence_BPC_CharaSelectState_K2Node_ComponentBoundEvent_2_OnBackStateDelegate__DelegateSignature, State) == 0x000000, "Member 'BP_CharaMachineSequence_C_BndEvt__BP_CharaMachineSequence_BPC_CharaSelectState_K2Node_ComponentBoundEvent_2_OnBackStateDelegate__DelegateSignature::State' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_BndEvt__BP_CharaMachineSequence_BPC_CharaSelectState_K2Node_ComponentBoundEvent_2_OnBackStateDelegate__DelegateSignature;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.BndEvt__BP_CharaMachineSequence_BPC_MachineState_K2Node_ComponentBoundEvent_3_OnBackStateDelegate__DelegateSignature
 // 0x0001 (0x0001 - 0x0000)
@@ -41,9 +39,7 @@ struct BP_CharaMachineSequence_C_BndEvt__BP_CharaMachineSequence_BPC_MachineStat
 public:
 	EMenuSequenceSubState                         State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_BndEvt__BP_CharaMachineSequence_BPC_MachineState_K2Node_ComponentBoundEvent_3_OnBackStateDelegate__DelegateSignature) == 0x000001, "Wrong alignment on BP_CharaMachineSequence_C_BndEvt__BP_CharaMachineSequence_BPC_MachineState_K2Node_ComponentBoundEvent_3_OnBackStateDelegate__DelegateSignature");
-static_assert(sizeof(BP_CharaMachineSequence_C_BndEvt__BP_CharaMachineSequence_BPC_MachineState_K2Node_ComponentBoundEvent_3_OnBackStateDelegate__DelegateSignature) == 0x000001, "Wrong size on BP_CharaMachineSequence_C_BndEvt__BP_CharaMachineSequence_BPC_MachineState_K2Node_ComponentBoundEvent_3_OnBackStateDelegate__DelegateSignature");
-static_assert(offsetof(BP_CharaMachineSequence_C_BndEvt__BP_CharaMachineSequence_BPC_MachineState_K2Node_ComponentBoundEvent_3_OnBackStateDelegate__DelegateSignature, State) == 0x000000, "Member 'BP_CharaMachineSequence_C_BndEvt__BP_CharaMachineSequence_BPC_MachineState_K2Node_ComponentBoundEvent_3_OnBackStateDelegate__DelegateSignature::State' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_BndEvt__BP_CharaMachineSequence_BPC_MachineState_K2Node_ComponentBoundEvent_3_OnBackStateDelegate__DelegateSignature;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.CustomEvent
 // 0x0001 (0x0001 - 0x0000)
@@ -52,9 +48,7 @@ struct BP_CharaMachineSequence_C_CustomEvent final
 public:
 	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_CustomEvent) == 0x000001, "Wrong alignment on BP_CharaMachineSequence_C_CustomEvent");
-static_assert(sizeof(BP_CharaMachineSequence_C_CustomEvent) == 0x000001, "Wrong size on BP_CharaMachineSequence_C_CustomEvent");
-static_assert(offsetof(BP_CharaMachineSequence_C_CustomEvent, FadeDirection) == 0x000000, "Member 'BP_CharaMachineSequence_C_CustomEvent::FadeDirection' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_CustomEvent;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.ExecuteUbergraph_BP_CharaMachineSequence
 // 0x01A0 (0x01A0 - 0x0000)
@@ -133,64 +127,7 @@ public:
 	class UMenuWorldSubsystem*                    CallFunc_GetWorldSubsystem_ReturnValue_3;          // 0x0190(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsParentSequenceReady_ReturnValue;        // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence) == 0x000008, "Wrong alignment on BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence");
-static_assert(sizeof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence) == 0x0001A0, "Wrong size on BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, EntryPoint) == 0x000000, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000008, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000010, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, CallFunc_GetMenuRacers_ReturnValue) == 0x000018, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::CallFunc_GetMenuRacers_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, Temp_int_Array_Index_Variable) == 0x00002C, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x000030, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, CallFunc_Array_Get_Item) == 0x000038, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, CallFunc_IsValid_ReturnValue) == 0x000040, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, K2Node_CreateDelegate_OutputDelegate) == 0x000044, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, K2Node_CreateDelegate_OutputDelegate_1) == 0x000054, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, K2Node_CreateDelegate_OutputDelegate_2) == 0x000064, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, K2Node_CreateDelegate_OutputDelegate_3) == 0x000074, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, K2Node_CreateDelegate_OutputDelegate_4) == 0x000084, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, K2Node_ComponentBoundEvent_State_1) == 0x000094, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::K2Node_ComponentBoundEvent_State_1' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, K2Node_ComponentBoundEvent_State) == 0x000095, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::K2Node_ComponentBoundEvent_State' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, K2Node_CustomEvent_PlayerControllerIndex_1) == 0x000098, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::K2Node_CustomEvent_PlayerControllerIndex_1' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, K2Node_CustomEvent_MachineType_1) == 0x00009C, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::K2Node_CustomEvent_MachineType_1' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, K2Node_CustomEvent_MachineID_1) == 0x00009D, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::K2Node_CustomEvent_MachineID_1' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, K2Node_CustomEvent_PlayerControllerIndex) == 0x0000A0, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::K2Node_CustomEvent_PlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, K2Node_CustomEvent_MachineType) == 0x0000A4, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::K2Node_CustomEvent_MachineType' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, K2Node_CustomEvent_MachineID) == 0x0000A5, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::K2Node_CustomEvent_MachineID' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, Temp_int_Loop_Counter_Variable) == 0x0000A8, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, K2Node_CreateDelegate_OutputDelegate_5) == 0x0000AC, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, CallFunc_Less_IntInt_ReturnValue) == 0x0000BC, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, CallFunc_Add_IntInt_ReturnValue) == 0x0000C0, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, K2Node_CustomEvent_PlayerIndex_2) == 0x0000C4, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::K2Node_CustomEvent_PlayerIndex_2' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, K2Node_CustomEvent_FrontPartsId_1) == 0x0000C8, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::K2Node_CustomEvent_FrontPartsId_1' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, K2Node_CustomEvent_RearPartsId_1) == 0x0000C9, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::K2Node_CustomEvent_RearPartsId_1' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, K2Node_CustomEvent_TirePartsId_1) == 0x0000CA, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::K2Node_CustomEvent_TirePartsId_1' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, K2Node_CustomEvent_PlayerIndex_1) == 0x0000CC, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::K2Node_CustomEvent_PlayerIndex_1' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, K2Node_CustomEvent_FrontPartsId) == 0x0000D0, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::K2Node_CustomEvent_FrontPartsId' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, K2Node_CustomEvent_RearPartsId) == 0x0000D1, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::K2Node_CustomEvent_RearPartsId' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, K2Node_CustomEvent_TirePartsId) == 0x0000D2, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::K2Node_CustomEvent_TirePartsId' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, K2Node_CustomEvent_PlayerIndex) == 0x0000D4, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::K2Node_CustomEvent_PlayerIndex' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, K2Node_CustomEvent_Mode) == 0x0000D8, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::K2Node_CustomEvent_Mode' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, CallFunc_GetParentActor_ReturnValue) == 0x0000E0, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::CallFunc_GetParentActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, K2Node_DynamicCast_AsBP_Grand_Prix_Sequence) == 0x0000E8, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::K2Node_DynamicCast_AsBP_Grand_Prix_Sequence' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, K2Node_DynamicCast_bSuccess) == 0x0000F0, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, CallFunc_GetParentActor_ReturnValue_1) == 0x0000F8, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::CallFunc_GetParentActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, K2Node_DynamicCast_AsBP_Party_Race_Menu_Sequence) == 0x000100, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::K2Node_DynamicCast_AsBP_Party_Race_Menu_Sequence' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, K2Node_DynamicCast_bSuccess_1) == 0x000108, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, CallFunc_SetNextSubMenuSequenceState_self_CastInput) == 0x000110, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::CallFunc_SetNextSubMenuSequenceState_self_CastInput' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_2) == 0x000120, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, CallFunc_SetNextSubMenuSequenceState_self_CastInput_1) == 0x000128, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::CallFunc_SetNextSubMenuSequenceState_self_CastInput_1' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, CallFunc_GetWorldSubsystem_ReturnValue_1) == 0x000138, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::CallFunc_GetWorldSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, K2Node_CustomEvent_FadeDirection) == 0x000140, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::K2Node_CustomEvent_FadeDirection' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, K2Node_CreateDelegate_OutputDelegate_6) == 0x000144, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, CallFunc_GetParentActor_ReturnValue_2) == 0x000158, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::CallFunc_GetParentActor_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, K2Node_DynamicCast_AsBP_Time_Trial_Sequence) == 0x000160, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::K2Node_DynamicCast_AsBP_Time_Trial_Sequence' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, K2Node_DynamicCast_bSuccess_2) == 0x000168, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, CallFunc_SetNextSubMenuSequenceState_self_CastInput_2) == 0x000170, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::CallFunc_SetNextSubMenuSequenceState_self_CastInput_2' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, CallFunc_IsLevelLoaded_ReturnValue) == 0x000180, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::CallFunc_IsLevelLoaded_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, CallFunc_GetWorldSubsystem_ReturnValue_2) == 0x000188, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::CallFunc_GetWorldSubsystem_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, CallFunc_GetWorldSubsystem_ReturnValue_3) == 0x000190, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::CallFunc_GetWorldSubsystem_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence, CallFunc_IsParentSequenceReady_ReturnValue) == 0x000198, "Member 'BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence::CallFunc_IsParentSequenceReady_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_ExecuteUbergraph_BP_CharaMachineSequence;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.FinalizeMessageBar
 // 0x0001 (0x0001 - 0x0000)
@@ -199,9 +136,7 @@ struct BP_CharaMachineSequence_C_FinalizeMessageBar final
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_FinalizeMessageBar) == 0x000001, "Wrong alignment on BP_CharaMachineSequence_C_FinalizeMessageBar");
-static_assert(sizeof(BP_CharaMachineSequence_C_FinalizeMessageBar) == 0x000001, "Wrong size on BP_CharaMachineSequence_C_FinalizeMessageBar");
-static_assert(offsetof(BP_CharaMachineSequence_C_FinalizeMessageBar, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'BP_CharaMachineSequence_C_FinalizeMessageBar::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_FinalizeMessageBar;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.HideLoadingDisplayWidget
 // 0x0010 (0x0010 - 0x0000)
@@ -211,10 +146,7 @@ public:
 	class UUnionUILoadingDisplay*                 InLoadingDisplayWidget;                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UUnionUITransitionManager*              CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_HideLoadingDisplayWidget) == 0x000008, "Wrong alignment on BP_CharaMachineSequence_C_HideLoadingDisplayWidget");
-static_assert(sizeof(BP_CharaMachineSequence_C_HideLoadingDisplayWidget) == 0x000010, "Wrong size on BP_CharaMachineSequence_C_HideLoadingDisplayWidget");
-static_assert(offsetof(BP_CharaMachineSequence_C_HideLoadingDisplayWidget, InLoadingDisplayWidget) == 0x000000, "Member 'BP_CharaMachineSequence_C_HideLoadingDisplayWidget::InLoadingDisplayWidget' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_HideLoadingDisplayWidget, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000008, "Member 'BP_CharaMachineSequence_C_HideLoadingDisplayWidget::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_HideLoadingDisplayWidget;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.InitializeSelectedPlayerCharacterIndex
 // 0x001C (0x001C - 0x0000)
@@ -229,15 +161,7 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_InitializeSelectedPlayerCharacterIndex) == 0x000004, "Wrong alignment on BP_CharaMachineSequence_C_InitializeSelectedPlayerCharacterIndex");
-static_assert(sizeof(BP_CharaMachineSequence_C_InitializeSelectedPlayerCharacterIndex) == 0x00001C, "Wrong size on BP_CharaMachineSequence_C_InitializeSelectedPlayerCharacterIndex");
-static_assert(offsetof(BP_CharaMachineSequence_C_InitializeSelectedPlayerCharacterIndex, CallFunc_MakeLiteralInt_ReturnValue) == 0x000000, "Member 'BP_CharaMachineSequence_C_InitializeSelectedPlayerCharacterIndex::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_InitializeSelectedPlayerCharacterIndex, CallFunc_Array_Add_ReturnValue) == 0x000004, "Member 'BP_CharaMachineSequence_C_InitializeSelectedPlayerCharacterIndex::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_InitializeSelectedPlayerCharacterIndex, Temp_int_Variable) == 0x000008, "Member 'BP_CharaMachineSequence_C_InitializeSelectedPlayerCharacterIndex::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_InitializeSelectedPlayerCharacterIndex, CallFunc_GetSelectedPlayerCount_ReturnValue) == 0x00000C, "Member 'BP_CharaMachineSequence_C_InitializeSelectedPlayerCharacterIndex::CallFunc_GetSelectedPlayerCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_InitializeSelectedPlayerCharacterIndex, CallFunc_Subtract_IntInt_ReturnValue) == 0x000010, "Member 'BP_CharaMachineSequence_C_InitializeSelectedPlayerCharacterIndex::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_InitializeSelectedPlayerCharacterIndex, CallFunc_Add_IntInt_ReturnValue) == 0x000014, "Member 'BP_CharaMachineSequence_C_InitializeSelectedPlayerCharacterIndex::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_InitializeSelectedPlayerCharacterIndex, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000018, "Member 'BP_CharaMachineSequence_C_InitializeSelectedPlayerCharacterIndex::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_InitializeSelectedPlayerCharacterIndex;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.MachineState_OnMachinePartsFocus
 // 0x0008 (0x0008 - 0x0000)
@@ -249,12 +173,7 @@ public:
 	EMachineId                                    RearPartsId;                                       // 0x0005(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EMachineId                                    TirePartsId;                                       // 0x0006(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_MachineState_OnMachinePartsFocus) == 0x000004, "Wrong alignment on BP_CharaMachineSequence_C_MachineState_OnMachinePartsFocus");
-static_assert(sizeof(BP_CharaMachineSequence_C_MachineState_OnMachinePartsFocus) == 0x000008, "Wrong size on BP_CharaMachineSequence_C_MachineState_OnMachinePartsFocus");
-static_assert(offsetof(BP_CharaMachineSequence_C_MachineState_OnMachinePartsFocus, PlayerIndex) == 0x000000, "Member 'BP_CharaMachineSequence_C_MachineState_OnMachinePartsFocus::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_MachineState_OnMachinePartsFocus, FrontPartsId) == 0x000004, "Member 'BP_CharaMachineSequence_C_MachineState_OnMachinePartsFocus::FrontPartsId' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_MachineState_OnMachinePartsFocus, RearPartsId) == 0x000005, "Member 'BP_CharaMachineSequence_C_MachineState_OnMachinePartsFocus::RearPartsId' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_MachineState_OnMachinePartsFocus, TirePartsId) == 0x000006, "Member 'BP_CharaMachineSequence_C_MachineState_OnMachinePartsFocus::TirePartsId' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_MachineState_OnMachinePartsFocus;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.MachineState_OnMachinePartsSelect
 // 0x0008 (0x0008 - 0x0000)
@@ -266,12 +185,7 @@ public:
 	EMachineId                                    RearPartsId;                                       // 0x0005(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EMachineId                                    TirePartsId;                                       // 0x0006(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_MachineState_OnMachinePartsSelect) == 0x000004, "Wrong alignment on BP_CharaMachineSequence_C_MachineState_OnMachinePartsSelect");
-static_assert(sizeof(BP_CharaMachineSequence_C_MachineState_OnMachinePartsSelect) == 0x000008, "Wrong size on BP_CharaMachineSequence_C_MachineState_OnMachinePartsSelect");
-static_assert(offsetof(BP_CharaMachineSequence_C_MachineState_OnMachinePartsSelect, PlayerIndex) == 0x000000, "Member 'BP_CharaMachineSequence_C_MachineState_OnMachinePartsSelect::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_MachineState_OnMachinePartsSelect, FrontPartsId) == 0x000004, "Member 'BP_CharaMachineSequence_C_MachineState_OnMachinePartsSelect::FrontPartsId' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_MachineState_OnMachinePartsSelect, RearPartsId) == 0x000005, "Member 'BP_CharaMachineSequence_C_MachineState_OnMachinePartsSelect::RearPartsId' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_MachineState_OnMachinePartsSelect, TirePartsId) == 0x000006, "Member 'BP_CharaMachineSequence_C_MachineState_OnMachinePartsSelect::TirePartsId' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_MachineState_OnMachinePartsSelect;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.MachineState_OnMachineSelectModeChanged
 // 0x0008 (0x0008 - 0x0000)
@@ -281,10 +195,7 @@ public:
 	int32                                         PlayerIndex;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	UNION::EMachineSelectMode                     Mode;                                              // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_MachineState_OnMachineSelectModeChanged) == 0x000004, "Wrong alignment on BP_CharaMachineSequence_C_MachineState_OnMachineSelectModeChanged");
-static_assert(sizeof(BP_CharaMachineSequence_C_MachineState_OnMachineSelectModeChanged) == 0x000008, "Wrong size on BP_CharaMachineSequence_C_MachineState_OnMachineSelectModeChanged");
-static_assert(offsetof(BP_CharaMachineSequence_C_MachineState_OnMachineSelectModeChanged, PlayerIndex) == 0x000000, "Member 'BP_CharaMachineSequence_C_MachineState_OnMachineSelectModeChanged::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_MachineState_OnMachineSelectModeChanged, Mode) == 0x000004, "Member 'BP_CharaMachineSequence_C_MachineState_OnMachineSelectModeChanged::Mode' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_MachineState_OnMachineSelectModeChanged;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.MachineTypeDecide_Event
 // 0x0008 (0x0008 - 0x0000)
@@ -295,11 +206,7 @@ public:
 	ECarStatusType                                machineType;                                       // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EMachineId                                    MachineId;                                         // 0x0005(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_MachineTypeDecide_Event) == 0x000004, "Wrong alignment on BP_CharaMachineSequence_C_MachineTypeDecide_Event");
-static_assert(sizeof(BP_CharaMachineSequence_C_MachineTypeDecide_Event) == 0x000008, "Wrong size on BP_CharaMachineSequence_C_MachineTypeDecide_Event");
-static_assert(offsetof(BP_CharaMachineSequence_C_MachineTypeDecide_Event, PlayerControllerIndex) == 0x000000, "Member 'BP_CharaMachineSequence_C_MachineTypeDecide_Event::PlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_MachineTypeDecide_Event, machineType) == 0x000004, "Member 'BP_CharaMachineSequence_C_MachineTypeDecide_Event::machineType' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_MachineTypeDecide_Event, MachineId) == 0x000005, "Member 'BP_CharaMachineSequence_C_MachineTypeDecide_Event::MachineId' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_MachineTypeDecide_Event;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.MachineTypeScrollStart_Event
 // 0x0008 (0x0008 - 0x0000)
@@ -310,11 +217,7 @@ public:
 	ECarStatusType                                machineType;                                       // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EMachineId                                    MachineId;                                         // 0x0005(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_MachineTypeScrollStart_Event) == 0x000004, "Wrong alignment on BP_CharaMachineSequence_C_MachineTypeScrollStart_Event");
-static_assert(sizeof(BP_CharaMachineSequence_C_MachineTypeScrollStart_Event) == 0x000008, "Wrong size on BP_CharaMachineSequence_C_MachineTypeScrollStart_Event");
-static_assert(offsetof(BP_CharaMachineSequence_C_MachineTypeScrollStart_Event, PlayerControllerIndex) == 0x000000, "Member 'BP_CharaMachineSequence_C_MachineTypeScrollStart_Event::PlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_MachineTypeScrollStart_Event, machineType) == 0x000004, "Member 'BP_CharaMachineSequence_C_MachineTypeScrollStart_Event::machineType' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_MachineTypeScrollStart_Event, MachineId) == 0x000005, "Member 'BP_CharaMachineSequence_C_MachineTypeScrollStart_Event::MachineId' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_MachineTypeScrollStart_Event;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.OnDecideCharaIcon
 // 0x0028 (0x0028 - 0x0000)
@@ -335,19 +238,7 @@ public:
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetupParamWindow_InCorrectionVal_ImplicitCast; // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_OnDecideCharaIcon) == 0x000008, "Wrong alignment on BP_CharaMachineSequence_C_OnDecideCharaIcon");
-static_assert(sizeof(BP_CharaMachineSequence_C_OnDecideCharaIcon) == 0x000028, "Wrong size on BP_CharaMachineSequence_C_OnDecideCharaIcon");
-static_assert(offsetof(BP_CharaMachineSequence_C_OnDecideCharaIcon, InPlayerControllerIndex) == 0x000000, "Member 'BP_CharaMachineSequence_C_OnDecideCharaIcon::InPlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_OnDecideCharaIcon, InCharaIndex) == 0x000004, "Member 'BP_CharaMachineSequence_C_OnDecideCharaIcon::InCharaIndex' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_OnDecideCharaIcon, DriverId) == 0x000008, "Member 'BP_CharaMachineSequence_C_OnDecideCharaIcon::DriverId' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_OnDecideCharaIcon, CharaIndex) == 0x00000C, "Member 'BP_CharaMachineSequence_C_OnDecideCharaIcon::CharaIndex' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_OnDecideCharaIcon, PlayerIndex) == 0x000010, "Member 'BP_CharaMachineSequence_C_OnDecideCharaIcon::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_OnDecideCharaIcon, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000018, "Member 'BP_CharaMachineSequence_C_OnDecideCharaIcon::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_OnDecideCharaIcon, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000020, "Member 'BP_CharaMachineSequence_C_OnDecideCharaIcon::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_OnDecideCharaIcon, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000021, "Member 'BP_CharaMachineSequence_C_OnDecideCharaIcon::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_OnDecideCharaIcon, CallFunc_GetDriverIdByCharaSelectIndex_ReturnValue) == 0x000022, "Member 'BP_CharaMachineSequence_C_OnDecideCharaIcon::CallFunc_GetDriverIdByCharaSelectIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_OnDecideCharaIcon, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000023, "Member 'BP_CharaMachineSequence_C_OnDecideCharaIcon::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_OnDecideCharaIcon, CallFunc_SetupParamWindow_InCorrectionVal_ImplicitCast) == 0x000024, "Member 'BP_CharaMachineSequence_C_OnDecideCharaIcon::CallFunc_SetupParamWindow_InCorrectionVal_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_OnDecideCharaIcon;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.OnFocusCharaIcon
 // 0x000C (0x000C - 0x0000)
@@ -358,11 +249,7 @@ public:
 	int32                                         InCharaIndex;                                      // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EDriverId                                     CallFunc_GetDriverIdByCharaSelectIndex_ReturnValue; // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_OnFocusCharaIcon) == 0x000004, "Wrong alignment on BP_CharaMachineSequence_C_OnFocusCharaIcon");
-static_assert(sizeof(BP_CharaMachineSequence_C_OnFocusCharaIcon) == 0x00000C, "Wrong size on BP_CharaMachineSequence_C_OnFocusCharaIcon");
-static_assert(offsetof(BP_CharaMachineSequence_C_OnFocusCharaIcon, InPlayerControllerIndex) == 0x000000, "Member 'BP_CharaMachineSequence_C_OnFocusCharaIcon::InPlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_OnFocusCharaIcon, InCharaIndex) == 0x000004, "Member 'BP_CharaMachineSequence_C_OnFocusCharaIcon::InCharaIndex' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_OnFocusCharaIcon, CallFunc_GetDriverIdByCharaSelectIndex_ReturnValue) == 0x000008, "Member 'BP_CharaMachineSequence_C_OnFocusCharaIcon::CallFunc_GetDriverIdByCharaSelectIndex_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_OnFocusCharaIcon;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.OnSetRacerDriver
 // 0x0020 (0x0020 - 0x0000)
@@ -375,12 +262,7 @@ public:
 	class ABP_MenuRacerPreview_C*                 K2Node_DynamicCast_AsBP_Menu_Racer_Preview;        // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_OnSetRacerDriver) == 0x000008, "Wrong alignment on BP_CharaMachineSequence_C_OnSetRacerDriver");
-static_assert(sizeof(BP_CharaMachineSequence_C_OnSetRacerDriver) == 0x000020, "Wrong size on BP_CharaMachineSequence_C_OnSetRacerDriver");
-static_assert(offsetof(BP_CharaMachineSequence_C_OnSetRacerDriver, InRacer) == 0x000000, "Member 'BP_CharaMachineSequence_C_OnSetRacerDriver::InRacer' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_OnSetRacerDriver, InDriverId) == 0x000008, "Member 'BP_CharaMachineSequence_C_OnSetRacerDriver::InDriverId' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_OnSetRacerDriver, K2Node_DynamicCast_AsBP_Menu_Racer_Preview) == 0x000010, "Member 'BP_CharaMachineSequence_C_OnSetRacerDriver::K2Node_DynamicCast_AsBP_Menu_Racer_Preview' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_OnSetRacerDriver, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'BP_CharaMachineSequence_C_OnSetRacerDriver::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_OnSetRacerDriver;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.OnSetRacerMachineCustomData
 // 0x0090 (0x0090 - 0x0000)
@@ -392,12 +274,7 @@ public:
 	class ABP_MenuRacerPreview_C*                 K2Node_DynamicCast_AsBP_Menu_Racer_Preview;        // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_OnSetRacerMachineCustomData) == 0x000008, "Wrong alignment on BP_CharaMachineSequence_C_OnSetRacerMachineCustomData");
-static_assert(sizeof(BP_CharaMachineSequence_C_OnSetRacerMachineCustomData) == 0x000090, "Wrong size on BP_CharaMachineSequence_C_OnSetRacerMachineCustomData");
-static_assert(offsetof(BP_CharaMachineSequence_C_OnSetRacerMachineCustomData, InRacer) == 0x000000, "Member 'BP_CharaMachineSequence_C_OnSetRacerMachineCustomData::InRacer' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_OnSetRacerMachineCustomData, InData) == 0x000008, "Member 'BP_CharaMachineSequence_C_OnSetRacerMachineCustomData::InData' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_OnSetRacerMachineCustomData, K2Node_DynamicCast_AsBP_Menu_Racer_Preview) == 0x000080, "Member 'BP_CharaMachineSequence_C_OnSetRacerMachineCustomData::K2Node_DynamicCast_AsBP_Menu_Racer_Preview' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_OnSetRacerMachineCustomData, K2Node_DynamicCast_bSuccess) == 0x000088, "Member 'BP_CharaMachineSequence_C_OnSetRacerMachineCustomData::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_OnSetRacerMachineCustomData;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.OnSetRacerRotation
 // 0x0028 (0x0028 - 0x0000)
@@ -412,13 +289,7 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_AddRotation_InDeltaRotation_ImplicitCast; // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_OnSetRacerRotation) == 0x000008, "Wrong alignment on BP_CharaMachineSequence_C_OnSetRacerRotation");
-static_assert(sizeof(BP_CharaMachineSequence_C_OnSetRacerRotation) == 0x000028, "Wrong size on BP_CharaMachineSequence_C_OnSetRacerRotation");
-static_assert(offsetof(BP_CharaMachineSequence_C_OnSetRacerRotation, InRacer) == 0x000000, "Member 'BP_CharaMachineSequence_C_OnSetRacerRotation::InRacer' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_OnSetRacerRotation, InValue) == 0x000008, "Member 'BP_CharaMachineSequence_C_OnSetRacerRotation::InValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_OnSetRacerRotation, K2Node_DynamicCast_AsBP_Menu_Racer_Preview) == 0x000010, "Member 'BP_CharaMachineSequence_C_OnSetRacerRotation::K2Node_DynamicCast_AsBP_Menu_Racer_Preview' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_OnSetRacerRotation, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'BP_CharaMachineSequence_C_OnSetRacerRotation::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_OnSetRacerRotation, CallFunc_AddRotation_InDeltaRotation_ImplicitCast) == 0x000020, "Member 'BP_CharaMachineSequence_C_OnSetRacerRotation::CallFunc_AddRotation_InDeltaRotation_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_OnSetRacerRotation;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.OnSetRacerTransform
 // 0x0090 (0x0090 - 0x0000)
@@ -433,13 +304,7 @@ public:
 	class ABP_MenuRacerPreview_C*                 K2Node_DynamicCast_AsBP_Menu_Racer_Preview;        // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_OnSetRacerTransform) == 0x000010, "Wrong alignment on BP_CharaMachineSequence_C_OnSetRacerTransform");
-static_assert(sizeof(BP_CharaMachineSequence_C_OnSetRacerTransform) == 0x000090, "Wrong size on BP_CharaMachineSequence_C_OnSetRacerTransform");
-static_assert(offsetof(BP_CharaMachineSequence_C_OnSetRacerTransform, InRacer) == 0x000000, "Member 'BP_CharaMachineSequence_C_OnSetRacerTransform::InRacer' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_OnSetRacerTransform, InTransform) == 0x000010, "Member 'BP_CharaMachineSequence_C_OnSetRacerTransform::InTransform' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_OnSetRacerTransform, IsNoLerp) == 0x000070, "Member 'BP_CharaMachineSequence_C_OnSetRacerTransform::IsNoLerp' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_OnSetRacerTransform, K2Node_DynamicCast_AsBP_Menu_Racer_Preview) == 0x000078, "Member 'BP_CharaMachineSequence_C_OnSetRacerTransform::K2Node_DynamicCast_AsBP_Menu_Racer_Preview' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_OnSetRacerTransform, K2Node_DynamicCast_bSuccess) == 0x000080, "Member 'BP_CharaMachineSequence_C_OnSetRacerTransform::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_OnSetRacerTransform;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.PlayRacerAnimation
 // 0x0038 (0x0038 - 0x0000)
@@ -456,15 +321,7 @@ public:
 	class AMenuRacerBase*                         CallFunc_Array_Get_Item;                           // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_PlayRacerAnimation) == 0x000008, "Wrong alignment on BP_CharaMachineSequence_C_PlayRacerAnimation");
-static_assert(sizeof(BP_CharaMachineSequence_C_PlayRacerAnimation) == 0x000038, "Wrong size on BP_CharaMachineSequence_C_PlayRacerAnimation");
-static_assert(offsetof(BP_CharaMachineSequence_C_PlayRacerAnimation, InPlayerIndex) == 0x000000, "Member 'BP_CharaMachineSequence_C_PlayRacerAnimation::InPlayerIndex' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_PlayRacerAnimation, CallFunc_MakeLiteralByte_ReturnValue) == 0x000004, "Member 'BP_CharaMachineSequence_C_PlayRacerAnimation::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_PlayRacerAnimation, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000008, "Member 'BP_CharaMachineSequence_C_PlayRacerAnimation::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_PlayRacerAnimation, CallFunc_GetMenuRacers_ReturnValue) == 0x000010, "Member 'BP_CharaMachineSequence_C_PlayRacerAnimation::CallFunc_GetMenuRacers_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_PlayRacerAnimation, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000020, "Member 'BP_CharaMachineSequence_C_PlayRacerAnimation::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_PlayRacerAnimation, CallFunc_Array_Get_Item) == 0x000028, "Member 'BP_CharaMachineSequence_C_PlayRacerAnimation::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_PlayRacerAnimation, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000030, "Member 'BP_CharaMachineSequence_C_PlayRacerAnimation::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_PlayRacerAnimation;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.SetMessageBarVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -473,9 +330,7 @@ struct BP_CharaMachineSequence_C_SetMessageBarVisible final
 public:
 	bool                                          bIsMessageBarVisible_0;                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_SetMessageBarVisible) == 0x000001, "Wrong alignment on BP_CharaMachineSequence_C_SetMessageBarVisible");
-static_assert(sizeof(BP_CharaMachineSequence_C_SetMessageBarVisible) == 0x000001, "Wrong size on BP_CharaMachineSequence_C_SetMessageBarVisible");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetMessageBarVisible, bIsMessageBarVisible_0) == 0x000000, "Member 'BP_CharaMachineSequence_C_SetMessageBarVisible::bIsMessageBarVisible_0' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_SetMessageBarVisible;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.SetNextMenuSequenceSubState
 // 0x0004 (0x0004 - 0x0000)
@@ -487,12 +342,7 @@ public:
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_SetNextMenuSequenceSubState) == 0x000001, "Wrong alignment on BP_CharaMachineSequence_C_SetNextMenuSequenceSubState");
-static_assert(sizeof(BP_CharaMachineSequence_C_SetNextMenuSequenceSubState) == 0x000004, "Wrong size on BP_CharaMachineSequence_C_SetNextMenuSequenceSubState");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetNextMenuSequenceSubState, InState) == 0x000000, "Member 'BP_CharaMachineSequence_C_SetNextMenuSequenceSubState::InState' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetNextMenuSequenceSubState, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000001, "Member 'BP_CharaMachineSequence_C_SetNextMenuSequenceSubState::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetNextMenuSequenceSubState, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000002, "Member 'BP_CharaMachineSequence_C_SetNextMenuSequenceSubState::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetNextMenuSequenceSubState, CallFunc_BooleanAND_ReturnValue) == 0x000003, "Member 'BP_CharaMachineSequence_C_SetNextMenuSequenceSubState::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_SetNextMenuSequenceSubState;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.SetSelectedDriverIds
 // 0x0110 (0x0110 - 0x0000)
@@ -523,26 +373,7 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00F0(0x0010)(ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0100(0x0010)()
 };
-static_assert(alignof(BP_CharaMachineSequence_C_SetSelectedDriverIds) == 0x000008, "Wrong alignment on BP_CharaMachineSequence_C_SetSelectedDriverIds");
-static_assert(sizeof(BP_CharaMachineSequence_C_SetSelectedDriverIds) == 0x000110, "Wrong size on BP_CharaMachineSequence_C_SetSelectedDriverIds");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetSelectedDriverIds, Temp_int_Array_Index_Variable) == 0x000000, "Member 'BP_CharaMachineSequence_C_SetSelectedDriverIds::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetSelectedDriverIds, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'BP_CharaMachineSequence_C_SetSelectedDriverIds::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetSelectedDriverIds, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000008, "Member 'BP_CharaMachineSequence_C_SetSelectedDriverIds::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetSelectedDriverIds, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'BP_CharaMachineSequence_C_SetSelectedDriverIds::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetSelectedDriverIds, CallFunc_Add_IntInt_ReturnValue_1) == 0x000010, "Member 'BP_CharaMachineSequence_C_SetSelectedDriverIds::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetSelectedDriverIds, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000018, "Member 'BP_CharaMachineSequence_C_SetSelectedDriverIds::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetSelectedDriverIds, K2Node_MakeStruct_FormatArgumentData) == 0x000020, "Member 'BP_CharaMachineSequence_C_SetSelectedDriverIds::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetSelectedDriverIds, CallFunc_Array_Length_ReturnValue) == 0x000068, "Member 'BP_CharaMachineSequence_C_SetSelectedDriverIds::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetSelectedDriverIds, CallFunc_Array_Get_Item) == 0x00006C, "Member 'BP_CharaMachineSequence_C_SetSelectedDriverIds::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetSelectedDriverIds, CallFunc_Less_IntInt_ReturnValue) == 0x000070, "Member 'BP_CharaMachineSequence_C_SetSelectedDriverIds::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetSelectedDriverIds, CallFunc_GetDriverIdByCharaSelectIndex_ReturnValue) == 0x000071, "Member 'BP_CharaMachineSequence_C_SetSelectedDriverIds::CallFunc_GetDriverIdByCharaSelectIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetSelectedDriverIds, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue) == 0x000078, "Member 'BP_CharaMachineSequence_C_SetSelectedDriverIds::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetSelectedDriverIds, CallFunc_Conv_StringToText_ReturnValue) == 0x000088, "Member 'BP_CharaMachineSequence_C_SetSelectedDriverIds::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetSelectedDriverIds, CallFunc_SetSelectedDriverId_OutExecsPin) == 0x000098, "Member 'BP_CharaMachineSequence_C_SetSelectedDriverIds::CallFunc_SetSelectedDriverId_OutExecsPin' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetSelectedDriverIds, K2Node_MakeStruct_FormatArgumentData_1) == 0x0000A0, "Member 'BP_CharaMachineSequence_C_SetSelectedDriverIds::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetSelectedDriverIds, K2Node_SwitchEnum_CmpSuccess) == 0x0000E8, "Member 'BP_CharaMachineSequence_C_SetSelectedDriverIds::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetSelectedDriverIds, K2Node_MakeArray_Array) == 0x0000F0, "Member 'BP_CharaMachineSequence_C_SetSelectedDriverIds::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetSelectedDriverIds, CallFunc_Format_ReturnValue) == 0x000100, "Member 'BP_CharaMachineSequence_C_SetSelectedDriverIds::CallFunc_Format_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_SetSelectedDriverIds;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.SetStartState
 // 0x0001 (0x0001 - 0x0000)
@@ -551,9 +382,7 @@ struct BP_CharaMachineSequence_C_SetStartState final
 public:
 	EMenuSequenceSubState                         Start_State_0;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_SetStartState) == 0x000001, "Wrong alignment on BP_CharaMachineSequence_C_SetStartState");
-static_assert(sizeof(BP_CharaMachineSequence_C_SetStartState) == 0x000001, "Wrong size on BP_CharaMachineSequence_C_SetStartState");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetStartState, Start_State_0) == 0x000000, "Member 'BP_CharaMachineSequence_C_SetStartState::Start_State_0' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_SetStartState;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.Setup
 // 0x0028 (0x0028 - 0x0000)
@@ -569,15 +398,7 @@ public:
 	class UUnionUITransitionManager*              CallFunc_GetGameInstanceSubsystem_ReturnValue_2;   // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetupParamWindowAll_InCorrectionVal_ImplicitCast; // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_Setup) == 0x000008, "Wrong alignment on BP_CharaMachineSequence_C_Setup");
-static_assert(sizeof(BP_CharaMachineSequence_C_Setup) == 0x000028, "Wrong size on BP_CharaMachineSequence_C_Setup");
-static_assert(offsetof(BP_CharaMachineSequence_C_Setup, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000000, "Member 'BP_CharaMachineSequence_C_Setup::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_Setup, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x000008, "Member 'BP_CharaMachineSequence_C_Setup::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_Setup, CallFunc_GetSelectedDriverId_OutId) == 0x000010, "Member 'BP_CharaMachineSequence_C_Setup::CallFunc_GetSelectedDriverId_OutId' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_Setup, CallFunc_GetSelectedDriverId_OutExecsPin) == 0x000011, "Member 'BP_CharaMachineSequence_C_Setup::CallFunc_GetSelectedDriverId_OutExecsPin' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_Setup, K2Node_SwitchEnum_CmpSuccess) == 0x000012, "Member 'BP_CharaMachineSequence_C_Setup::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_Setup, CallFunc_GetGameInstanceSubsystem_ReturnValue_2) == 0x000018, "Member 'BP_CharaMachineSequence_C_Setup::CallFunc_GetGameInstanceSubsystem_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_Setup, CallFunc_SetupParamWindowAll_InCorrectionVal_ImplicitCast) == 0x000020, "Member 'BP_CharaMachineSequence_C_Setup::CallFunc_SetupParamWindowAll_InCorrectionVal_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_Setup;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.SetupMessageBar
 // 0x0020 (0x0020 - 0x0000)
@@ -589,11 +410,7 @@ public:
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0008(0x0010)()
 	class UWBP_CMN_MessageBar_C*                  CallFunc_Create_ReturnValue;                       // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_SetupMessageBar) == 0x000008, "Wrong alignment on BP_CharaMachineSequence_C_SetupMessageBar");
-static_assert(sizeof(BP_CharaMachineSequence_C_SetupMessageBar) == 0x000020, "Wrong size on BP_CharaMachineSequence_C_SetupMessageBar");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetupMessageBar, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'BP_CharaMachineSequence_C_SetupMessageBar::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetupMessageBar, CallFunc_MakeLiteralText_ReturnValue) == 0x000008, "Member 'BP_CharaMachineSequence_C_SetupMessageBar::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetupMessageBar, CallFunc_Create_ReturnValue) == 0x000018, "Member 'BP_CharaMachineSequence_C_SetupMessageBar::CallFunc_Create_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_SetupMessageBar;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.SetupParamWindowMachineSelect
 // 0x0050 (0x0050 - 0x0000)
@@ -616,21 +433,7 @@ public:
 	float                                         CallFunc_SetupCharaMachineParamWindowPartsSelectState_InCorrectionVal_ImplicitCast; // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetupCharaMachineParamWindowColorSelectState_InCorrectionVal_ImplicitCast; // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_SetupParamWindowMachineSelect) == 0x000008, "Wrong alignment on BP_CharaMachineSequence_C_SetupParamWindowMachineSelect");
-static_assert(sizeof(BP_CharaMachineSequence_C_SetupParamWindowMachineSelect) == 0x000050, "Wrong size on BP_CharaMachineSequence_C_SetupParamWindowMachineSelect");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetupParamWindowMachineSelect, InPlayerIndex) == 0x000000, "Member 'BP_CharaMachineSequence_C_SetupParamWindowMachineSelect::InPlayerIndex' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetupParamWindowMachineSelect, InMode) == 0x000004, "Member 'BP_CharaMachineSequence_C_SetupParamWindowMachineSelect::InMode' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetupParamWindowMachineSelect, PlayerIndex) == 0x000008, "Member 'BP_CharaMachineSequence_C_SetupParamWindowMachineSelect::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetupParamWindowMachineSelect, K2Node_SwitchEnum_CmpSuccess) == 0x00000C, "Member 'BP_CharaMachineSequence_C_SetupParamWindowMachineSelect::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetupParamWindowMachineSelect, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000010, "Member 'BP_CharaMachineSequence_C_SetupParamWindowMachineSelect::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetupParamWindowMachineSelect, CallFunc_GetWorldSubsystem_ReturnValue_1) == 0x000018, "Member 'BP_CharaMachineSequence_C_SetupParamWindowMachineSelect::CallFunc_GetWorldSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetupParamWindowMachineSelect, CallFunc_GetCharaMachineSelectWindow_ReturnValue) == 0x000020, "Member 'BP_CharaMachineSequence_C_SetupParamWindowMachineSelect::CallFunc_GetCharaMachineSelectWindow_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetupParamWindowMachineSelect, CallFunc_GetCharaMachineSelectWindow_ReturnValue_1) == 0x000028, "Member 'BP_CharaMachineSequence_C_SetupParamWindowMachineSelect::CallFunc_GetCharaMachineSelectWindow_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetupParamWindowMachineSelect, CallFunc_GetWorldSubsystem_ReturnValue_2) == 0x000030, "Member 'BP_CharaMachineSequence_C_SetupParamWindowMachineSelect::CallFunc_GetWorldSubsystem_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetupParamWindowMachineSelect, CallFunc_GetCharaMachineSelectWindow_ReturnValue_2) == 0x000038, "Member 'BP_CharaMachineSequence_C_SetupParamWindowMachineSelect::CallFunc_GetCharaMachineSelectWindow_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetupParamWindowMachineSelect, CallFunc_SetupParamWindow_InCorrectionVal_ImplicitCast) == 0x000040, "Member 'BP_CharaMachineSequence_C_SetupParamWindowMachineSelect::CallFunc_SetupParamWindow_InCorrectionVal_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetupParamWindowMachineSelect, CallFunc_SetupCharaMachineParamWindowPartsSelectState_InCorrectionVal_ImplicitCast) == 0x000044, "Member 'BP_CharaMachineSequence_C_SetupParamWindowMachineSelect::CallFunc_SetupCharaMachineParamWindowPartsSelectState_InCorrectionVal_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_SetupParamWindowMachineSelect, CallFunc_SetupCharaMachineParamWindowColorSelectState_InCorrectionVal_ImplicitCast) == 0x000048, "Member 'BP_CharaMachineSequence_C_SetupParamWindowMachineSelect::CallFunc_SetupCharaMachineParamWindowColorSelectState_InCorrectionVal_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_SetupParamWindowMachineSelect;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.ShowLoadingDisplayWidget
 // 0x0020 (0x0020 - 0x0000)
@@ -642,12 +445,7 @@ public:
 	class UUnionUILoadingDisplay*                 CallFunc_CreateLoadingDisplayWidget_ReturnValue;   // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_ShowLoadingDisplayWidget) == 0x000008, "Wrong alignment on BP_CharaMachineSequence_C_ShowLoadingDisplayWidget");
-static_assert(sizeof(BP_CharaMachineSequence_C_ShowLoadingDisplayWidget) == 0x000020, "Wrong size on BP_CharaMachineSequence_C_ShowLoadingDisplayWidget");
-static_assert(offsetof(BP_CharaMachineSequence_C_ShowLoadingDisplayWidget, ReturnValue) == 0x000000, "Member 'BP_CharaMachineSequence_C_ShowLoadingDisplayWidget::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ShowLoadingDisplayWidget, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000008, "Member 'BP_CharaMachineSequence_C_ShowLoadingDisplayWidget::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ShowLoadingDisplayWidget, CallFunc_CreateLoadingDisplayWidget_ReturnValue) == 0x000010, "Member 'BP_CharaMachineSequence_C_ShowLoadingDisplayWidget::CallFunc_CreateLoadingDisplayWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_ShowLoadingDisplayWidget, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'BP_CharaMachineSequence_C_ShowLoadingDisplayWidget::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_ShowLoadingDisplayWidget;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.StartMoveCameraTransform
 // 0x0030 (0x0030 - 0x0000)
@@ -662,14 +460,7 @@ public:
 	TScriptInterface<class IBPI_SLCharaMachineSelect_C> K2Node_DynamicCast_AsBPI_SLChara_Machine_Select; // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_StartMoveCameraTransform) == 0x000008, "Wrong alignment on BP_CharaMachineSequence_C_StartMoveCameraTransform");
-static_assert(sizeof(BP_CharaMachineSequence_C_StartMoveCameraTransform) == 0x000030, "Wrong size on BP_CharaMachineSequence_C_StartMoveCameraTransform");
-static_assert(offsetof(BP_CharaMachineSequence_C_StartMoveCameraTransform, bCharaSelect) == 0x000000, "Member 'BP_CharaMachineSequence_C_StartMoveCameraTransform::bCharaSelect' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_StartMoveCameraTransform, NoLerp) == 0x000001, "Member 'BP_CharaMachineSequence_C_StartMoveCameraTransform::NoLerp' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_StartMoveCameraTransform, CallFunc_GetSubLevel_ReturnValue) == 0x000008, "Member 'BP_CharaMachineSequence_C_StartMoveCameraTransform::CallFunc_GetSubLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_StartMoveCameraTransform, CallFunc_GetLevelScriptActor_ReturnValue) == 0x000010, "Member 'BP_CharaMachineSequence_C_StartMoveCameraTransform::CallFunc_GetLevelScriptActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_StartMoveCameraTransform, K2Node_DynamicCast_AsBPI_SLChara_Machine_Select) == 0x000018, "Member 'BP_CharaMachineSequence_C_StartMoveCameraTransform::K2Node_DynamicCast_AsBPI_SLChara_Machine_Select' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_StartMoveCameraTransform, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'BP_CharaMachineSequence_C_StartMoveCameraTransform::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_StartMoveCameraTransform;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.UpdateParamWindow
 // 0x01B0 (0x01B0 - 0x0000)
@@ -709,33 +500,7 @@ public:
 	EOutputExecsPin_SuccessFailed                 CallFunc_GetSelectedDriverId_OutExecsPin;          // 0x01A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x01AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_UpdateParamWindow) == 0x000008, "Wrong alignment on BP_CharaMachineSequence_C_UpdateParamWindow");
-static_assert(sizeof(BP_CharaMachineSequence_C_UpdateParamWindow) == 0x0001B0, "Wrong size on BP_CharaMachineSequence_C_UpdateParamWindow");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindow, InPlayerIndex) == 0x000000, "Member 'BP_CharaMachineSequence_C_UpdateParamWindow::InPlayerIndex' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindow, ParamData) == 0x000004, "Member 'BP_CharaMachineSequence_C_UpdateParamWindow::ParamData' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindow, TempGadgetIds) == 0x000058, "Member 'BP_CharaMachineSequence_C_UpdateParamWindow::TempGadgetIds' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindow, TempDriverId) == 0x000068, "Member 'BP_CharaMachineSequence_C_UpdateParamWindow::TempDriverId' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindow, TempMachineId) == 0x000069, "Member 'BP_CharaMachineSequence_C_UpdateParamWindow::TempMachineId' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindow, PlayerIndex) == 0x00006C, "Member 'BP_CharaMachineSequence_C_UpdateParamWindow::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindow, Temp_int_Array_Index_Variable) == 0x000070, "Member 'BP_CharaMachineSequence_C_UpdateParamWindow::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindow, Temp_int_Loop_Counter_Variable) == 0x000074, "Member 'BP_CharaMachineSequence_C_UpdateParamWindow::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindow, CallFunc_Add_IntInt_ReturnValue) == 0x000078, "Member 'BP_CharaMachineSequence_C_UpdateParamWindow::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindow, CallFunc_GetSelectedGadgetPlateUIData_OutGadgetPlateUIData) == 0x000080, "Member 'BP_CharaMachineSequence_C_UpdateParamWindow::CallFunc_GetSelectedGadgetPlateUIData_OutGadgetPlateUIData' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindow, CallFunc_Array_Get_Item) == 0x0000A8, "Member 'BP_CharaMachineSequence_C_UpdateParamWindow::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindow, CallFunc_Array_Length_ReturnValue) == 0x0000B0, "Member 'BP_CharaMachineSequence_C_UpdateParamWindow::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindow, CallFunc_Less_IntInt_ReturnValue) == 0x0000B4, "Member 'BP_CharaMachineSequence_C_UpdateParamWindow::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindow, CallFunc_Array_Add_ReturnValue) == 0x0000B8, "Member 'BP_CharaMachineSequence_C_UpdateParamWindow::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindow, CallFunc_GetMachineCustomizeDataById_OutUserMachineCustomizeData) == 0x0000C0, "Member 'BP_CharaMachineSequence_C_UpdateParamWindow::CallFunc_GetMachineCustomizeDataById_OutUserMachineCustomizeData' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindow, CallFunc_GetSelectedMachineID_OutId) == 0x000138, "Member 'BP_CharaMachineSequence_C_UpdateParamWindow::CallFunc_GetSelectedMachineID_OutId' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindow, CallFunc_GetSelectedMachineID_OutExecsPin) == 0x00013C, "Member 'BP_CharaMachineSequence_C_UpdateParamWindow::CallFunc_GetSelectedMachineID_OutExecsPin' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindow, CallFunc_GetParamData_OutParamData) == 0x000140, "Member 'BP_CharaMachineSequence_C_UpdateParamWindow::CallFunc_GetParamData_OutParamData' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindow, K2Node_SwitchEnum_CmpSuccess) == 0x000190, "Member 'BP_CharaMachineSequence_C_UpdateParamWindow::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindow, CallFunc_Conv_IntToByte_ReturnValue) == 0x000191, "Member 'BP_CharaMachineSequence_C_UpdateParamWindow::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindow, CallFunc_GetValidValue_ReturnValue) == 0x000192, "Member 'BP_CharaMachineSequence_C_UpdateParamWindow::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindow, CallFunc_GetSelectedGadgetIds_OutGadgetIds) == 0x000198, "Member 'BP_CharaMachineSequence_C_UpdateParamWindow::CallFunc_GetSelectedGadgetIds_OutGadgetIds' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindow, CallFunc_GetSelectedDriverId_OutId) == 0x0001A8, "Member 'BP_CharaMachineSequence_C_UpdateParamWindow::CallFunc_GetSelectedDriverId_OutId' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindow, CallFunc_GetSelectedDriverId_OutExecsPin) == 0x0001A9, "Member 'BP_CharaMachineSequence_C_UpdateParamWindow::CallFunc_GetSelectedDriverId_OutExecsPin' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindow, K2Node_SwitchEnum_CmpSuccess_1) == 0x0001AA, "Member 'BP_CharaMachineSequence_C_UpdateParamWindow::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_UpdateParamWindow;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.UpdateParamWindowByCharaId
 // 0x0190 (0x0190 - 0x0000)
@@ -769,29 +534,7 @@ public:
 	struct FUserMachineCustomizeData              CallFunc_GetMachineCustomizeDataById_OutUserMachineCustomizeData; // 0x00C8(0x0078)()
 	struct FRacerParamData                        CallFunc_GetParamData_OutParamData;                // 0x0140(0x0050)(NoDestructor)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_UpdateParamWindowByCharaId) == 0x000008, "Wrong alignment on BP_CharaMachineSequence_C_UpdateParamWindowByCharaId");
-static_assert(sizeof(BP_CharaMachineSequence_C_UpdateParamWindowByCharaId) == 0x000190, "Wrong size on BP_CharaMachineSequence_C_UpdateParamWindowByCharaId");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByCharaId, InPlayerIndex) == 0x000000, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByCharaId::InPlayerIndex' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByCharaId, InDriverId) == 0x000004, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByCharaId::InDriverId' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByCharaId, ParamData) == 0x000008, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByCharaId::ParamData' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByCharaId, TempGadgetIds) == 0x000058, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByCharaId::TempGadgetIds' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByCharaId, TempMachineId) == 0x000068, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByCharaId::TempMachineId' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByCharaId, PlayerIndex) == 0x00006C, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByCharaId::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByCharaId, Temp_int_Array_Index_Variable) == 0x000070, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByCharaId::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByCharaId, Temp_int_Loop_Counter_Variable) == 0x000074, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByCharaId::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByCharaId, CallFunc_Add_IntInt_ReturnValue) == 0x000078, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByCharaId::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByCharaId, CallFunc_GetSelectedGadgetPlateUIData_OutGadgetPlateUIData) == 0x000080, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByCharaId::CallFunc_GetSelectedGadgetPlateUIData_OutGadgetPlateUIData' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByCharaId, CallFunc_Array_Get_Item) == 0x0000A8, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByCharaId::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByCharaId, CallFunc_Array_Length_ReturnValue) == 0x0000B0, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByCharaId::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByCharaId, CallFunc_Array_Add_ReturnValue) == 0x0000B4, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByCharaId::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByCharaId, CallFunc_Less_IntInt_ReturnValue) == 0x0000B8, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByCharaId::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByCharaId, CallFunc_GetSelectedMachineID_OutId) == 0x0000BC, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByCharaId::CallFunc_GetSelectedMachineID_OutId' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByCharaId, CallFunc_GetSelectedMachineID_OutExecsPin) == 0x0000C0, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByCharaId::CallFunc_GetSelectedMachineID_OutExecsPin' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByCharaId, K2Node_SwitchEnum_CmpSuccess) == 0x0000C1, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByCharaId::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByCharaId, CallFunc_Conv_IntToByte_ReturnValue) == 0x0000C2, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByCharaId::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByCharaId, CallFunc_GetValidValue_ReturnValue) == 0x0000C3, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByCharaId::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByCharaId, CallFunc_GetMachineCustomizeDataById_OutUserMachineCustomizeData) == 0x0000C8, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByCharaId::CallFunc_GetMachineCustomizeDataById_OutUserMachineCustomizeData' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByCharaId, CallFunc_GetParamData_OutParamData) == 0x000140, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByCharaId::CallFunc_GetParamData_OutParamData' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_UpdateParamWindowByCharaId;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.UpdateParamWindowByMachineId
 // 0x0198 (0x0198 - 0x0000)
@@ -823,28 +566,7 @@ public:
 	struct FUserMachineCustomizeData              CallFunc_GetMachineCustomizeDataById_OutUserMachineCustomizeData; // 0x00D0(0x0078)()
 	struct FRacerParamData                        CallFunc_GetParamData_OutParamData;                // 0x0148(0x0050)(NoDestructor)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_UpdateParamWindowByMachineId) == 0x000008, "Wrong alignment on BP_CharaMachineSequence_C_UpdateParamWindowByMachineId");
-static_assert(sizeof(BP_CharaMachineSequence_C_UpdateParamWindowByMachineId) == 0x000198, "Wrong size on BP_CharaMachineSequence_C_UpdateParamWindowByMachineId");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachineId, InPlayerIndex) == 0x000000, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachineId::InPlayerIndex' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachineId, InMachineID) == 0x000004, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachineId::InMachineID' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachineId, ParamData) == 0x000008, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachineId::ParamData' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachineId, TempGadgetIds) == 0x000058, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachineId::TempGadgetIds' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachineId, TempDriverId) == 0x000068, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachineId::TempDriverId' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachineId, PlayerIndex) == 0x00006C, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachineId::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachineId, Temp_int_Array_Index_Variable) == 0x000070, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachineId::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachineId, Temp_int_Loop_Counter_Variable) == 0x000074, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachineId::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachineId, CallFunc_Add_IntInt_ReturnValue) == 0x000078, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachineId::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachineId, CallFunc_GetSelectedGadgetPlateUIData_OutGadgetPlateUIData) == 0x000080, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachineId::CallFunc_GetSelectedGadgetPlateUIData_OutGadgetPlateUIData' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachineId, CallFunc_GetSelectedGadgetIds_OutGadgetIds) == 0x0000A8, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachineId::CallFunc_GetSelectedGadgetIds_OutGadgetIds' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachineId, CallFunc_Array_Get_Item) == 0x0000B8, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachineId::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachineId, CallFunc_Array_Length_ReturnValue) == 0x0000C0, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachineId::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachineId, CallFunc_Less_IntInt_ReturnValue) == 0x0000C4, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachineId::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachineId, CallFunc_GetSelectedDriverId_OutId) == 0x0000C5, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachineId::CallFunc_GetSelectedDriverId_OutId' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachineId, CallFunc_GetSelectedDriverId_OutExecsPin) == 0x0000C6, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachineId::CallFunc_GetSelectedDriverId_OutExecsPin' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachineId, K2Node_SwitchEnum_CmpSuccess) == 0x0000C7, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachineId::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachineId, CallFunc_Array_Add_ReturnValue) == 0x0000C8, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachineId::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachineId, CallFunc_GetMachineCustomizeDataById_OutUserMachineCustomizeData) == 0x0000D0, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachineId::CallFunc_GetMachineCustomizeDataById_OutUserMachineCustomizeData' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachineId, CallFunc_GetParamData_OutParamData) == 0x000148, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachineId::CallFunc_GetParamData_OutParamData' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_UpdateParamWindowByMachineId;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.UpdateParamWindowByMachinePartsIds
 // 0x0230 (0x0230 - 0x0000)
@@ -886,37 +608,7 @@ public:
 	struct FRacerParamData                        CallFunc_GetParamData_OutParamData;                // 0x0190(0x0050)(NoDestructor)
 	struct FRacerParamData                        CallFunc_GetParamData_OutParamData_1;              // 0x01E0(0x0050)(NoDestructor)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds) == 0x000008, "Wrong alignment on BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds");
-static_assert(sizeof(BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds) == 0x000230, "Wrong size on BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds, InPlayerIndex) == 0x000000, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds::InPlayerIndex' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds, InFrontPartsId) == 0x000004, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds::InFrontPartsId' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds, InRearPartsId) == 0x000005, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds::InRearPartsId' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds, InTirePartsId) == 0x000006, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds::InTirePartsId' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds, CandParamData) == 0x000008, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds::CandParamData' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds, CurrentParamData) == 0x000058, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds::CurrentParamData' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds, TempGadgetIds) == 0x0000A8, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds::TempGadgetIds' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds, TempMachineId) == 0x0000B8, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds::TempMachineId' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds, TempDriverId) == 0x0000B9, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds::TempDriverId' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds, PlayerIndex) == 0x0000BC, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds, Temp_int_Array_Index_Variable) == 0x0000C0, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds, Temp_int_Loop_Counter_Variable) == 0x0000C4, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds, CallFunc_Add_IntInt_ReturnValue) == 0x0000C8, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds, CallFunc_GetSelectedGadgetPlateUIData_OutGadgetPlateUIData) == 0x0000D0, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds::CallFunc_GetSelectedGadgetPlateUIData_OutGadgetPlateUIData' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds, CallFunc_Array_Get_Item) == 0x0000F8, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds, CallFunc_Array_Length_ReturnValue) == 0x000100, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds, CallFunc_Less_IntInt_ReturnValue) == 0x000104, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds, CallFunc_Array_Add_ReturnValue) == 0x000108, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds, CallFunc_GetSelectedMachineID_OutId) == 0x00010C, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds::CallFunc_GetSelectedMachineID_OutId' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds, CallFunc_GetSelectedMachineID_OutExecsPin) == 0x000110, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds::CallFunc_GetSelectedMachineID_OutExecsPin' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds, CallFunc_GetSelectedDriverId_OutId) == 0x000111, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds::CallFunc_GetSelectedDriverId_OutId' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds, CallFunc_GetSelectedDriverId_OutExecsPin) == 0x000112, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds::CallFunc_GetSelectedDriverId_OutExecsPin' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds, K2Node_SwitchEnum_CmpSuccess) == 0x000113, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds, K2Node_SwitchEnum_CmpSuccess_1) == 0x000114, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds, CallFunc_Conv_IntToByte_ReturnValue) == 0x000115, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds, CallFunc_GetValidValue_ReturnValue) == 0x000116, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds, CallFunc_GetMachineCustomizeDataById_OutUserMachineCustomizeData) == 0x000118, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds::CallFunc_GetMachineCustomizeDataById_OutUserMachineCustomizeData' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds, CallFunc_GetParamData_OutParamData) == 0x000190, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds::CallFunc_GetParamData_OutParamData' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds, CallFunc_GetParamData_OutParamData_1) == 0x0001E0, "Member 'BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds::CallFunc_GetParamData_OutParamData_1' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_UpdateParamWindowByMachinePartsIds;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.GetMachineTransformOffset
 // 0x0180 (0x0180 - 0x0000)
@@ -940,21 +632,7 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0171(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0172(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_GetMachineTransformOffset) == 0x000010, "Wrong alignment on BP_CharaMachineSequence_C_GetMachineTransformOffset");
-static_assert(sizeof(BP_CharaMachineSequence_C_GetMachineTransformOffset) == 0x000180, "Wrong size on BP_CharaMachineSequence_C_GetMachineTransformOffset");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetMachineTransformOffset, InMachineID) == 0x000000, "Member 'BP_CharaMachineSequence_C_GetMachineTransformOffset::InMachineID' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetMachineTransformOffset, ReturnValue) == 0x000010, "Member 'BP_CharaMachineSequence_C_GetMachineTransformOffset::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetMachineTransformOffset, Temp_int_Array_Index_Variable) == 0x000070, "Member 'BP_CharaMachineSequence_C_GetMachineTransformOffset::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetMachineTransformOffset, Temp_int_Loop_Counter_Variable) == 0x000074, "Member 'BP_CharaMachineSequence_C_GetMachineTransformOffset::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetMachineTransformOffset, CallFunc_Add_IntInt_ReturnValue) == 0x000078, "Member 'BP_CharaMachineSequence_C_GetMachineTransformOffset::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetMachineTransformOffset, CallFunc_MakeTransform_ReturnValue) == 0x000080, "Member 'BP_CharaMachineSequence_C_GetMachineTransformOffset::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetMachineTransformOffset, CallFunc_GetDataTableRowNames_OutRowNames) == 0x0000E0, "Member 'BP_CharaMachineSequence_C_GetMachineTransformOffset::CallFunc_GetDataTableRowNames_OutRowNames' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetMachineTransformOffset, CallFunc_Array_Get_Item) == 0x0000F0, "Member 'BP_CharaMachineSequence_C_GetMachineTransformOffset::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetMachineTransformOffset, CallFunc_Array_Length_ReturnValue) == 0x0000F8, "Member 'BP_CharaMachineSequence_C_GetMachineTransformOffset::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetMachineTransformOffset, CallFunc_GetDataTableRowFromName_OutRow) == 0x000100, "Member 'BP_CharaMachineSequence_C_GetMachineTransformOffset::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetMachineTransformOffset, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000170, "Member 'BP_CharaMachineSequence_C_GetMachineTransformOffset::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetMachineTransformOffset, CallFunc_Less_IntInt_ReturnValue) == 0x000171, "Member 'BP_CharaMachineSequence_C_GetMachineTransformOffset::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetMachineTransformOffset, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000172, "Member 'BP_CharaMachineSequence_C_GetMachineTransformOffset::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_GetMachineTransformOffset;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.GetMessageBarVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -963,9 +641,7 @@ struct BP_CharaMachineSequence_C_GetMessageBarVisible final
 public:
 	bool                                          IsVisible;                                         // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_GetMessageBarVisible) == 0x000001, "Wrong alignment on BP_CharaMachineSequence_C_GetMessageBarVisible");
-static_assert(sizeof(BP_CharaMachineSequence_C_GetMessageBarVisible) == 0x000001, "Wrong size on BP_CharaMachineSequence_C_GetMessageBarVisible");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetMessageBarVisible, IsVisible) == 0x000000, "Member 'BP_CharaMachineSequence_C_GetMessageBarVisible::IsVisible' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_GetMessageBarVisible;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.GetParamData
 // 0x00C0 (0x00C0 - 0x0000)
@@ -982,16 +658,7 @@ public:
 	class UMasterDataManageSubsystem*             CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FRacerParamData                        CallFunc_GetParamData_OutParamData;                // 0x0070(0x0050)(NoDestructor)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_GetParamData) == 0x000008, "Wrong alignment on BP_CharaMachineSequence_C_GetParamData");
-static_assert(sizeof(BP_CharaMachineSequence_C_GetParamData) == 0x0000C0, "Wrong size on BP_CharaMachineSequence_C_GetParamData");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetParamData, InDriverId) == 0x000000, "Member 'BP_CharaMachineSequence_C_GetParamData::InDriverId' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetParamData, InFrontPartsId) == 0x000001, "Member 'BP_CharaMachineSequence_C_GetParamData::InFrontPartsId' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetParamData, InRearPartsId) == 0x000002, "Member 'BP_CharaMachineSequence_C_GetParamData::InRearPartsId' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetParamData, InTirePartsId) == 0x000003, "Member 'BP_CharaMachineSequence_C_GetParamData::InTirePartsId' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetParamData, InGadgetIds) == 0x000008, "Member 'BP_CharaMachineSequence_C_GetParamData::InGadgetIds' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetParamData, OutParamData) == 0x000018, "Member 'BP_CharaMachineSequence_C_GetParamData::OutParamData' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetParamData, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000068, "Member 'BP_CharaMachineSequence_C_GetParamData::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetParamData, CallFunc_GetParamData_OutParamData) == 0x000070, "Member 'BP_CharaMachineSequence_C_GetParamData::CallFunc_GetParamData_OutParamData' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_GetParamData;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.GetSubLevel
 // 0x0020 (0x0020 - 0x0000)
@@ -1003,12 +670,7 @@ public:
 	class FName                                   CallFunc_GetSubLevelNameOfCharaMachineSelect_ReturnValue; // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ULevelStreaming*                        CallFunc_GetStreamingLevel_ReturnValue;            // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_GetSubLevel) == 0x000008, "Wrong alignment on BP_CharaMachineSequence_C_GetSubLevel");
-static_assert(sizeof(BP_CharaMachineSequence_C_GetSubLevel) == 0x000020, "Wrong size on BP_CharaMachineSequence_C_GetSubLevel");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetSubLevel, ReturnValue) == 0x000000, "Member 'BP_CharaMachineSequence_C_GetSubLevel::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetSubLevel, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000008, "Member 'BP_CharaMachineSequence_C_GetSubLevel::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetSubLevel, CallFunc_GetSubLevelNameOfCharaMachineSelect_ReturnValue) == 0x000010, "Member 'BP_CharaMachineSequence_C_GetSubLevel::CallFunc_GetSubLevelNameOfCharaMachineSelect_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetSubLevel, CallFunc_GetStreamingLevel_ReturnValue) == 0x000018, "Member 'BP_CharaMachineSequence_C_GetSubLevel::CallFunc_GetStreamingLevel_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_GetSubLevel;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.GetSubLevelTransform
 // 0x0100 (0x0100 - 0x0000)
@@ -1028,17 +690,7 @@ public:
 	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_GetRacerTransform_Transform;              // 0x00A0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_GetSubLevelTransform) == 0x000010, "Wrong alignment on BP_CharaMachineSequence_C_GetSubLevelTransform");
-static_assert(sizeof(BP_CharaMachineSequence_C_GetSubLevelTransform) == 0x000100, "Wrong size on BP_CharaMachineSequence_C_GetSubLevelTransform");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetSubLevelTransform, InPlayerIndex) == 0x000000, "Member 'BP_CharaMachineSequence_C_GetSubLevelTransform::InPlayerIndex' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetSubLevelTransform, IsCharaSelect) == 0x000004, "Member 'BP_CharaMachineSequence_C_GetSubLevelTransform::IsCharaSelect' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetSubLevelTransform, ReturnValue) == 0x000010, "Member 'BP_CharaMachineSequence_C_GetSubLevelTransform::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetSubLevelTransform, CallFunc_GetSubLevel_ReturnValue) == 0x000070, "Member 'BP_CharaMachineSequence_C_GetSubLevelTransform::CallFunc_GetSubLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetSubLevelTransform, CallFunc_GetSelectedPlayerCount_ReturnValue) == 0x000078, "Member 'BP_CharaMachineSequence_C_GetSubLevelTransform::CallFunc_GetSelectedPlayerCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetSubLevelTransform, CallFunc_GetLevelScriptActor_ReturnValue) == 0x000080, "Member 'BP_CharaMachineSequence_C_GetSubLevelTransform::CallFunc_GetLevelScriptActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetSubLevelTransform, K2Node_DynamicCast_AsBPI_SLChara_Machine_Select) == 0x000088, "Member 'BP_CharaMachineSequence_C_GetSubLevelTransform::K2Node_DynamicCast_AsBPI_SLChara_Machine_Select' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetSubLevelTransform, K2Node_DynamicCast_bSuccess) == 0x000098, "Member 'BP_CharaMachineSequence_C_GetSubLevelTransform::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_GetSubLevelTransform, CallFunc_GetRacerTransform_Transform) == 0x0000A0, "Member 'BP_CharaMachineSequence_C_GetSubLevelTransform::CallFunc_GetRacerTransform_Transform' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_GetSubLevelTransform;
 
 // Function BP_CharaMachineSequence.BP_CharaMachineSequence_C.IsLevelLoaded
 // 0x0018 (0x0018 - 0x0000)
@@ -1051,12 +703,7 @@ public:
 	bool                                          CallFunc_IsLevelLoaded_ReturnValue;                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CharaMachineSequence_C_IsLevelLoaded) == 0x000008, "Wrong alignment on BP_CharaMachineSequence_C_IsLevelLoaded");
-static_assert(sizeof(BP_CharaMachineSequence_C_IsLevelLoaded) == 0x000018, "Wrong size on BP_CharaMachineSequence_C_IsLevelLoaded");
-static_assert(offsetof(BP_CharaMachineSequence_C_IsLevelLoaded, ReturnValue) == 0x000000, "Member 'BP_CharaMachineSequence_C_IsLevelLoaded::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_IsLevelLoaded, CallFunc_GetSubLevel_ReturnValue) == 0x000008, "Member 'BP_CharaMachineSequence_C_IsLevelLoaded::CallFunc_GetSubLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_IsLevelLoaded, CallFunc_IsLevelLoaded_ReturnValue) == 0x000010, "Member 'BP_CharaMachineSequence_C_IsLevelLoaded::CallFunc_IsLevelLoaded_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CharaMachineSequence_C_IsLevelLoaded, CallFunc_IsValid_ReturnValue) == 0x000011, "Member 'BP_CharaMachineSequence_C_IsLevelLoaded::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_CharaMachineSequence_C_IsLevelLoaded;
 
 }
 

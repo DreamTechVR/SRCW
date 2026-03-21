@@ -65,40 +65,7 @@ public:
 	uint8                                         Pad_D1[0x3];                                       // 0x00D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(ESlateVisibility InVisibility)> K2Node_CreateDelegate_OutputDelegate_3;           // 0x00D4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4) == 0x000008, "Wrong alignment on WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4");
-static_assert(sizeof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4) == 0x0000E8, "Wrong size on WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4");
-static_assert(offsetof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4, EntryPoint) == 0x000000, "Member 'WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4, Temp_int_Array_Index_Variable) == 0x000004, "Member 'WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4, Temp_int_Array_Index_Variable_1) == 0x000010, "Member 'WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4, CallFunc_PlayAnimation_ReturnValue) == 0x000018, "Member 'WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4, CallFunc_PlayAnimation_ReturnValue_1) == 0x000020, "Member 'WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4, K2Node_Event_bIsCheck) == 0x000028, "Member 'WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4::K2Node_Event_bIsCheck' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4, CallFunc_PlayAnimation_ReturnValue_2) == 0x000030, "Member 'WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4, CallFunc_SoundPlay_ReturnValue) == 0x000038, "Member 'WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4, K2Node_Event_IsDesignTime) == 0x00003C, "Member 'WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4, CallFunc_MakeLiteralText_ReturnValue) == 0x000040, "Member 'WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4, K2Node_DynamicCast_AsWBP_Footer_Menu_Sub_Controller_Cross) == 0x000050, "Member 'WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4::K2Node_DynamicCast_AsWBP_Footer_Menu_Sub_Controller_Cross' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4, K2Node_CreateDelegate_OutputDelegate) == 0x00005C, "Member 'WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4, K2Node_CreateDelegate_OutputDelegate_1) == 0x00006C, "Member 'WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4, Temp_int_Loop_Counter_Variable_1) == 0x00007C, "Member 'WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4, K2Node_CustomEvent_InVisibility) == 0x000080, "Member 'WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4::K2Node_CustomEvent_InVisibility' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000081, "Member 'WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4, CallFunc_Add_IntInt_ReturnValue_1) == 0x000084, "Member 'WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4, K2Node_CreateDelegate_OutputDelegate_2) == 0x000088, "Member 'WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4, CallFunc_Array_Get_Item) == 0x000098, "Member 'WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4, K2Node_DynamicCast_AsWBP_Gadget_Icon) == 0x0000A0, "Member 'WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4::K2Node_DynamicCast_AsWBP_Gadget_Icon' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4, K2Node_DynamicCast_bSuccess_1) == 0x0000A8, "Member 'WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4, CallFunc_Array_Get_Item_1) == 0x0000B0, "Member 'WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4, K2Node_DynamicCast_AsWBP_Gadget_Icon_1) == 0x0000B8, "Member 'WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4::K2Node_DynamicCast_AsWBP_Gadget_Icon_1' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4, K2Node_DynamicCast_bSuccess_2) == 0x0000C0, "Member 'WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4, CallFunc_Array_Length_ReturnValue) == 0x0000C4, "Member 'WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4, CallFunc_Less_IntInt_ReturnValue) == 0x0000C8, "Member 'WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4, CallFunc_Array_Length_ReturnValue_1) == 0x0000CC, "Member 'WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000D0, "Member 'WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4, K2Node_CreateDelegate_OutputDelegate_3) == 0x0000D4, "Member 'WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Ready_M4_C_ExecuteUbergraph_WBP_Ready_M4;
 
 // Function WBP_Ready_M4.WBP_Ready_M4_C.GadgetIconMouseEnable
 // 0x0001 (0x0001 - 0x0000)
@@ -107,9 +74,7 @@ struct WBP_Ready_M4_C_GadgetIconMouseEnable final
 public:
 	ESlateVisibility                              InVisibility;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Ready_M4_C_GadgetIconMouseEnable) == 0x000001, "Wrong alignment on WBP_Ready_M4_C_GadgetIconMouseEnable");
-static_assert(sizeof(WBP_Ready_M4_C_GadgetIconMouseEnable) == 0x000001, "Wrong size on WBP_Ready_M4_C_GadgetIconMouseEnable");
-static_assert(offsetof(WBP_Ready_M4_C_GadgetIconMouseEnable, InVisibility) == 0x000000, "Member 'WBP_Ready_M4_C_GadgetIconMouseEnable::InVisibility' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Ready_M4_C_GadgetIconMouseEnable;
 
 // Function WBP_Ready_M4.WBP_Ready_M4_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -118,9 +83,7 @@ struct WBP_Ready_M4_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Ready_M4_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_Ready_M4_C_PreConstruct");
-static_assert(sizeof(WBP_Ready_M4_C_PreConstruct) == 0x000001, "Wrong size on WBP_Ready_M4_C_PreConstruct");
-static_assert(offsetof(WBP_Ready_M4_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_Ready_M4_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Ready_M4_C_PreConstruct;
 
 // Function WBP_Ready_M4.WBP_Ready_M4_C.SetReadyColor
 // 0x0001 (0x0001 - 0x0000)
@@ -129,9 +92,7 @@ struct WBP_Ready_M4_C_SetReadyColor final
 public:
 	bool                                          bIsCheck;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Ready_M4_C_SetReadyColor) == 0x000001, "Wrong alignment on WBP_Ready_M4_C_SetReadyColor");
-static_assert(sizeof(WBP_Ready_M4_C_SetReadyColor) == 0x000001, "Wrong size on WBP_Ready_M4_C_SetReadyColor");
-static_assert(offsetof(WBP_Ready_M4_C_SetReadyColor, bIsCheck) == 0x000000, "Member 'WBP_Ready_M4_C_SetReadyColor::bIsCheck' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Ready_M4_C_SetReadyColor;
 
 // Function WBP_Ready_M4.WBP_Ready_M4_C.UpdateGadgetDetailWindowToSlotZero
 // 0x0098 (0x0098 - 0x0000)
@@ -148,16 +109,7 @@ public:
 	class UWBP_Ready_Sub_Gadget_C*                CallFunc_Array_Get_Item;                           // 0x0088(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Ready_M4_C_UpdateGadgetDetailWindowToSlotZero) == 0x000008, "Wrong alignment on WBP_Ready_M4_C_UpdateGadgetDetailWindowToSlotZero");
-static_assert(sizeof(WBP_Ready_M4_C_UpdateGadgetDetailWindowToSlotZero) == 0x000098, "Wrong size on WBP_Ready_M4_C_UpdateGadgetDetailWindowToSlotZero");
-static_assert(offsetof(WBP_Ready_M4_C_UpdateGadgetDetailWindowToSlotZero, InPlayerIndex) == 0x000000, "Member 'WBP_Ready_M4_C_UpdateGadgetDetailWindowToSlotZero::InPlayerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_UpdateGadgetDetailWindowToSlotZero, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000008, "Member 'WBP_Ready_M4_C_UpdateGadgetDetailWindowToSlotZero::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_UpdateGadgetDetailWindowToSlotZero, K2Node_MakeStruct_FormatArgumentData) == 0x000010, "Member 'WBP_Ready_M4_C_UpdateGadgetDetailWindowToSlotZero::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_UpdateGadgetDetailWindowToSlotZero, K2Node_MakeArray_Array) == 0x000058, "Member 'WBP_Ready_M4_C_UpdateGadgetDetailWindowToSlotZero::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_UpdateGadgetDetailWindowToSlotZero, CallFunc_Format_ReturnValue) == 0x000068, "Member 'WBP_Ready_M4_C_UpdateGadgetDetailWindowToSlotZero::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_UpdateGadgetDetailWindowToSlotZero, K2Node_MakeArray_Array_1) == 0x000078, "Member 'WBP_Ready_M4_C_UpdateGadgetDetailWindowToSlotZero::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_UpdateGadgetDetailWindowToSlotZero, CallFunc_Array_Get_Item) == 0x000088, "Member 'WBP_Ready_M4_C_UpdateGadgetDetailWindowToSlotZero::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_UpdateGadgetDetailWindowToSlotZero, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000090, "Member 'WBP_Ready_M4_C_UpdateGadgetDetailWindowToSlotZero::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Ready_M4_C_UpdateGadgetDetailWindowToSlotZero;
 
 // Function WBP_Ready_M4.WBP_Ready_M4_C.GetCharaMachineParamWindow
 // 0x0020 (0x0020 - 0x0000)
@@ -167,10 +119,7 @@ public:
 	TArray<class UCharaMachineParamWindow*>       OutCharaMachineParamWindows;                       // 0x0000(0x0010)(Parm, OutParm, ContainsInstancedReference)
 	TArray<class UCharaMachineParamWindow*>       K2Node_MakeArray_Array;                            // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(WBP_Ready_M4_C_GetCharaMachineParamWindow) == 0x000008, "Wrong alignment on WBP_Ready_M4_C_GetCharaMachineParamWindow");
-static_assert(sizeof(WBP_Ready_M4_C_GetCharaMachineParamWindow) == 0x000020, "Wrong size on WBP_Ready_M4_C_GetCharaMachineParamWindow");
-static_assert(offsetof(WBP_Ready_M4_C_GetCharaMachineParamWindow, OutCharaMachineParamWindows) == 0x000000, "Member 'WBP_Ready_M4_C_GetCharaMachineParamWindow::OutCharaMachineParamWindows' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_GetCharaMachineParamWindow, K2Node_MakeArray_Array) == 0x000010, "Member 'WBP_Ready_M4_C_GetCharaMachineParamWindow::K2Node_MakeArray_Array' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Ready_M4_C_GetCharaMachineParamWindow;
 
 // Function WBP_Ready_M4.WBP_Ready_M4_C.GetGadgetPlateWindows
 // 0x0020 (0x0020 - 0x0000)
@@ -180,10 +129,7 @@ public:
 	TArray<class UGadgetPlateWindow*>             OutGadgetPlateWindows;                             // 0x0000(0x0010)(Parm, OutParm, ContainsInstancedReference)
 	TArray<class UGadgetPlateWindow*>             K2Node_MakeArray_Array;                            // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(WBP_Ready_M4_C_GetGadgetPlateWindows) == 0x000008, "Wrong alignment on WBP_Ready_M4_C_GetGadgetPlateWindows");
-static_assert(sizeof(WBP_Ready_M4_C_GetGadgetPlateWindows) == 0x000020, "Wrong size on WBP_Ready_M4_C_GetGadgetPlateWindows");
-static_assert(offsetof(WBP_Ready_M4_C_GetGadgetPlateWindows, OutGadgetPlateWindows) == 0x000000, "Member 'WBP_Ready_M4_C_GetGadgetPlateWindows::OutGadgetPlateWindows' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_GetGadgetPlateWindows, K2Node_MakeArray_Array) == 0x000010, "Member 'WBP_Ready_M4_C_GetGadgetPlateWindows::K2Node_MakeArray_Array' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Ready_M4_C_GetGadgetPlateWindows;
 
 // Function WBP_Ready_M4.WBP_Ready_M4_C.GetReadyOptions
 // 0x0020 (0x0020 - 0x0000)
@@ -193,10 +139,7 @@ public:
 	TArray<class UReadyOption*>                   OutReadyOptions;                                   // 0x0000(0x0010)(Parm, OutParm, ContainsInstancedReference)
 	TArray<class UReadyOption*>                   K2Node_MakeArray_Array;                            // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(WBP_Ready_M4_C_GetReadyOptions) == 0x000008, "Wrong alignment on WBP_Ready_M4_C_GetReadyOptions");
-static_assert(sizeof(WBP_Ready_M4_C_GetReadyOptions) == 0x000020, "Wrong size on WBP_Ready_M4_C_GetReadyOptions");
-static_assert(offsetof(WBP_Ready_M4_C_GetReadyOptions, OutReadyOptions) == 0x000000, "Member 'WBP_Ready_M4_C_GetReadyOptions::OutReadyOptions' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_GetReadyOptions, K2Node_MakeArray_Array) == 0x000010, "Member 'WBP_Ready_M4_C_GetReadyOptions::K2Node_MakeArray_Array' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Ready_M4_C_GetReadyOptions;
 
 // Function WBP_Ready_M4.WBP_Ready_M4_C.GetReadyWindowCharacterIcons
 // 0x0020 (0x0020 - 0x0000)
@@ -206,10 +149,7 @@ public:
 	TArray<class UReadyWindowCharacterIcon*>      OutReadyWindowCharacterIcons;                      // 0x0000(0x0010)(Parm, OutParm, ContainsInstancedReference)
 	TArray<class UReadyWindowCharacterIcon*>      K2Node_MakeArray_Array;                            // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(WBP_Ready_M4_C_GetReadyWindowCharacterIcons) == 0x000008, "Wrong alignment on WBP_Ready_M4_C_GetReadyWindowCharacterIcons");
-static_assert(sizeof(WBP_Ready_M4_C_GetReadyWindowCharacterIcons) == 0x000020, "Wrong size on WBP_Ready_M4_C_GetReadyWindowCharacterIcons");
-static_assert(offsetof(WBP_Ready_M4_C_GetReadyWindowCharacterIcons, OutReadyWindowCharacterIcons) == 0x000000, "Member 'WBP_Ready_M4_C_GetReadyWindowCharacterIcons::OutReadyWindowCharacterIcons' has a wrong offset!");
-static_assert(offsetof(WBP_Ready_M4_C_GetReadyWindowCharacterIcons, K2Node_MakeArray_Array) == 0x000010, "Member 'WBP_Ready_M4_C_GetReadyWindowCharacterIcons::K2Node_MakeArray_Array' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Ready_M4_C_GetReadyWindowCharacterIcons;
 
 }
 

@@ -26,13 +26,7 @@ public:
 	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_ExecuteUbergraph_WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge) == 0x000008, "Wrong alignment on WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_ExecuteUbergraph_WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge");
-static_assert(sizeof(WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_ExecuteUbergraph_WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge) == 0x000020, "Wrong size on WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_ExecuteUbergraph_WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge");
-static_assert(offsetof(WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_ExecuteUbergraph_WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge, EntryPoint) == 0x000000, "Member 'WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_ExecuteUbergraph_WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_ExecuteUbergraph_WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge, K2Node_Event_IsDesignTime) == 0x000004, "Member 'WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_ExecuteUbergraph_WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_ExecuteUbergraph_WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_ExecuteUbergraph_WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_ExecuteUbergraph_WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000010, "Member 'WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_ExecuteUbergraph_WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_ExecuteUbergraph_WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000018, "Member 'WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_ExecuteUbergraph_WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_ExecuteUbergraph_WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge;
 
 // Function WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge.WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -41,9 +35,7 @@ struct WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_PreConstruct");
-static_assert(sizeof(WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_PreConstruct) == 0x000001, "Wrong size on WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_PreConstruct");
-static_assert(offsetof(WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_PreConstruct;
 
 // Function WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge.WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C.SetUsedCounts
 // 0x0058 (0x0058 - 0x0000)
@@ -63,19 +55,7 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_PlayAnimationTimeRange_EndAtTime_ImplicitCast; // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_SetUsedCounts) == 0x000008, "Wrong alignment on WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_SetUsedCounts");
-static_assert(sizeof(WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_SetUsedCounts) == 0x000058, "Wrong size on WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_SetUsedCounts");
-static_assert(offsetof(WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_SetUsedCounts, InCounts) == 0x000000, "Member 'WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_SetUsedCounts::InCounts' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_SetUsedCounts, InMaxCounts) == 0x000004, "Member 'WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_SetUsedCounts::InMaxCounts' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_SetUsedCounts, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000008, "Member 'WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_SetUsedCounts::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_SetUsedCounts, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000010, "Member 'WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_SetUsedCounts::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_SetUsedCounts, CallFunc_Conv_IntToDouble_ReturnValue_1) == 0x000018, "Member 'WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_SetUsedCounts::CallFunc_Conv_IntToDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_SetUsedCounts, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x000020, "Member 'WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_SetUsedCounts::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_SetUsedCounts, CallFunc_Conv_IntToText_ReturnValue) == 0x000028, "Member 'WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_SetUsedCounts::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_SetUsedCounts, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000038, "Member 'WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_SetUsedCounts::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_SetUsedCounts, CallFunc_PlayAnimationTimeRange_ReturnValue) == 0x000040, "Member 'WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_SetUsedCounts::CallFunc_PlayAnimationTimeRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_SetUsedCounts, CallFunc_PlayAnimation_ReturnValue) == 0x000048, "Member 'WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_SetUsedCounts::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_SetUsedCounts, CallFunc_PlayAnimationTimeRange_EndAtTime_ImplicitCast) == 0x000050, "Member 'WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_SetUsedCounts::CallFunc_PlayAnimationTimeRange_EndAtTime_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CMN_PlayerDetail_Sub_Info_Number_Machine_Gauge_C_SetUsedCounts;
 
 }
 

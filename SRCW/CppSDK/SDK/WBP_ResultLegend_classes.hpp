@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -49,18 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ResultLegend_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ResultLegend_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ResultLegend_C")
 	}
 	static class UWBP_ResultLegend_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ResultLegend_C>();
 	}
 };
-static_assert(alignof(UWBP_ResultLegend_C) == 0x000008, "Wrong alignment on UWBP_ResultLegend_C");
-static_assert(sizeof(UWBP_ResultLegend_C) == 0x000340, "Wrong size on UWBP_ResultLegend_C");
-static_assert(offsetof(UWBP_ResultLegend_C, UberGraphFrame) == 0x000328, "Member 'UWBP_ResultLegend_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultLegend_C, WBP_ResultLegend_Sub_Rate) == 0x000330, "Member 'UWBP_ResultLegend_C::WBP_ResultLegend_Sub_Rate' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultLegend_C, CurrentGaugeValue) == 0x000338, "Member 'UWBP_ResultLegend_C::CurrentGaugeValue' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ResultLegend_C;
 
 }
 

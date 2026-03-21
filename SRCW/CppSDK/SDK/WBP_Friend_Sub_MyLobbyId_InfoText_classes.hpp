@@ -28,18 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Friend_Sub_MyLobbyId_InfoText_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Friend_Sub_MyLobbyId_InfoText_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Friend_Sub_MyLobbyId_InfoText_C")
 	}
 	static class UWBP_Friend_Sub_MyLobbyId_InfoText_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Friend_Sub_MyLobbyId_InfoText_C>();
 	}
 };
-static_assert(alignof(UWBP_Friend_Sub_MyLobbyId_InfoText_C) == 0x000008, "Wrong alignment on UWBP_Friend_Sub_MyLobbyId_InfoText_C");
-static_assert(sizeof(UWBP_Friend_Sub_MyLobbyId_InfoText_C) == 0x0002F8, "Wrong size on UWBP_Friend_Sub_MyLobbyId_InfoText_C");
-static_assert(offsetof(UWBP_Friend_Sub_MyLobbyId_InfoText_C, DSP_Throbber_dot_Sub) == 0x0002E0, "Member 'UWBP_Friend_Sub_MyLobbyId_InfoText_C::DSP_Throbber_dot_Sub' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_MyLobbyId_InfoText_C, Overlay_26) == 0x0002E8, "Member 'UWBP_Friend_Sub_MyLobbyId_InfoText_C::Overlay_26' has a wrong offset!");
-static_assert(offsetof(UWBP_Friend_Sub_MyLobbyId_InfoText_C, TXT_Sub) == 0x0002F0, "Member 'UWBP_Friend_Sub_MyLobbyId_InfoText_C::TXT_Sub' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Friend_Sub_MyLobbyId_InfoText_C;
 
 }
 

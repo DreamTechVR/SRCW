@@ -28,16 +28,7 @@ public:
 	float                                         CallFunc_PauseAnimation_ReturnValue_1;             // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_PauseAnimation_ReturnValue_2;             // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Advertise_AutoSave_C_ExecuteUbergraph_WBP_Advertise_AutoSave) == 0x000008, "Wrong alignment on WBP_Advertise_AutoSave_C_ExecuteUbergraph_WBP_Advertise_AutoSave");
-static_assert(sizeof(WBP_Advertise_AutoSave_C_ExecuteUbergraph_WBP_Advertise_AutoSave) == 0x000038, "Wrong size on WBP_Advertise_AutoSave_C_ExecuteUbergraph_WBP_Advertise_AutoSave");
-static_assert(offsetof(WBP_Advertise_AutoSave_C_ExecuteUbergraph_WBP_Advertise_AutoSave, EntryPoint) == 0x000000, "Member 'WBP_Advertise_AutoSave_C_ExecuteUbergraph_WBP_Advertise_AutoSave::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Advertise_AutoSave_C_ExecuteUbergraph_WBP_Advertise_AutoSave, CallFunc_PauseAnimation_ReturnValue) == 0x000004, "Member 'WBP_Advertise_AutoSave_C_ExecuteUbergraph_WBP_Advertise_AutoSave::CallFunc_PauseAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Advertise_AutoSave_C_ExecuteUbergraph_WBP_Advertise_AutoSave, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'WBP_Advertise_AutoSave_C_ExecuteUbergraph_WBP_Advertise_AutoSave::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Advertise_AutoSave_C_ExecuteUbergraph_WBP_Advertise_AutoSave, CallFunc_PlayAnimation_ReturnValue) == 0x000018, "Member 'WBP_Advertise_AutoSave_C_ExecuteUbergraph_WBP_Advertise_AutoSave::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Advertise_AutoSave_C_ExecuteUbergraph_WBP_Advertise_AutoSave, CallFunc_PlayAnimation_ReturnValue_1) == 0x000020, "Member 'WBP_Advertise_AutoSave_C_ExecuteUbergraph_WBP_Advertise_AutoSave::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Advertise_AutoSave_C_ExecuteUbergraph_WBP_Advertise_AutoSave, CallFunc_PlayAnimation_ReturnValue_2) == 0x000028, "Member 'WBP_Advertise_AutoSave_C_ExecuteUbergraph_WBP_Advertise_AutoSave::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Advertise_AutoSave_C_ExecuteUbergraph_WBP_Advertise_AutoSave, CallFunc_PauseAnimation_ReturnValue_1) == 0x000030, "Member 'WBP_Advertise_AutoSave_C_ExecuteUbergraph_WBP_Advertise_AutoSave::CallFunc_PauseAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Advertise_AutoSave_C_ExecuteUbergraph_WBP_Advertise_AutoSave, CallFunc_PauseAnimation_ReturnValue_2) == 0x000034, "Member 'WBP_Advertise_AutoSave_C_ExecuteUbergraph_WBP_Advertise_AutoSave::CallFunc_PauseAnimation_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Advertise_AutoSave_C_ExecuteUbergraph_WBP_Advertise_AutoSave;
 
 }
 

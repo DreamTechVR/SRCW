@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
+#include "UnionRun_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "UnionRun_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -63,34 +63,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_RaceGadgetPlateSequence_C">();
+		BP_STATIC_CLASS_IMPL("BP_RaceGadgetPlateSequence_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_RaceGadgetPlateSequence_C")
 	}
 	static class ABP_RaceGadgetPlateSequence_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_RaceGadgetPlateSequence_C>();
 	}
 };
-static_assert(alignof(ABP_RaceGadgetPlateSequence_C) == 0x000008, "Wrong alignment on ABP_RaceGadgetPlateSequence_C");
-static_assert(sizeof(ABP_RaceGadgetPlateSequence_C) == 0x0003D0, "Wrong size on ABP_RaceGadgetPlateSequence_C");
-static_assert(offsetof(ABP_RaceGadgetPlateSequence_C, UberGraphFrame) == 0x000368, "Member 'ABP_RaceGadgetPlateSequence_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_RaceGadgetPlateSequence_C, GadgetPlateLvWidget) == 0x000370, "Member 'ABP_RaceGadgetPlateSequence_C::GadgetPlateLvWidget' has a wrong offset!");
-static_assert(offsetof(ABP_RaceGadgetPlateSequence_C, OnGadgetPlateLvEnd) == 0x000378, "Member 'ABP_RaceGadgetPlateSequence_C::OnGadgetPlateLvEnd' has a wrong offset!");
-static_assert(offsetof(ABP_RaceGadgetPlateSequence_C, bRankUp) == 0x000388, "Member 'ABP_RaceGadgetPlateSequence_C::bRankUp' has a wrong offset!");
-static_assert(offsetof(ABP_RaceGadgetPlateSequence_C, RankUpWidget) == 0x000390, "Member 'ABP_RaceGadgetPlateSequence_C::RankUpWidget' has a wrong offset!");
-static_assert(offsetof(ABP_RaceGadgetPlateSequence_C, bAutoSave) == 0x000398, "Member 'ABP_RaceGadgetPlateSequence_C::bAutoSave' has a wrong offset!");
-static_assert(offsetof(ABP_RaceGadgetPlateSequence_C, PrevRaceCountIndex) == 0x00039C, "Member 'ABP_RaceGadgetPlateSequence_C::PrevRaceCountIndex' has a wrong offset!");
-static_assert(offsetof(ABP_RaceGadgetPlateSequence_C, NowRaceCountIndex) == 0x0003A0, "Member 'ABP_RaceGadgetPlateSequence_C::NowRaceCountIndex' has a wrong offset!");
-static_assert(offsetof(ABP_RaceGadgetPlateSequence_C, bEvenRaceCount) == 0x0003A4, "Member 'ABP_RaceGadgetPlateSequence_C::bEvenRaceCount' has a wrong offset!");
-static_assert(offsetof(ABP_RaceGadgetPlateSequence_C, CurrentRaceCountLevel) == 0x0003A8, "Member 'ABP_RaceGadgetPlateSequence_C::CurrentRaceCountLevel' has a wrong offset!");
-static_assert(offsetof(ABP_RaceGadgetPlateSequence_C, CurrentRaceCount) == 0x0003AC, "Member 'ABP_RaceGadgetPlateSequence_C::CurrentRaceCount' has a wrong offset!");
-static_assert(offsetof(ABP_RaceGadgetPlateSequence_C, NextRaceCount) == 0x0003B0, "Member 'ABP_RaceGadgetPlateSequence_C::NextRaceCount' has a wrong offset!");
-static_assert(offsetof(ABP_RaceGadgetPlateSequence_C, LvUpWidPlateIdCurrent) == 0x0003B4, "Member 'ABP_RaceGadgetPlateSequence_C::LvUpWidPlateIdCurrent' has a wrong offset!");
-static_assert(offsetof(ABP_RaceGadgetPlateSequence_C, LvUpWidAddRaceCount) == 0x0003B8, "Member 'ABP_RaceGadgetPlateSequence_C::LvUpWidAddRaceCount' has a wrong offset!");
-static_assert(offsetof(ABP_RaceGadgetPlateSequence_C, GaugeOverValue) == 0x0003BC, "Member 'ABP_RaceGadgetPlateSequence_C::GaugeOverValue' has a wrong offset!");
-static_assert(offsetof(ABP_RaceGadgetPlateSequence_C, LvUpWidBaseRaceCount) == 0x0003C0, "Member 'ABP_RaceGadgetPlateSequence_C::LvUpWidBaseRaceCount' has a wrong offset!");
-static_assert(offsetof(ABP_RaceGadgetPlateSequence_C, LvUpWidMaxRaceCount) == 0x0003C4, "Member 'ABP_RaceGadgetPlateSequence_C::LvUpWidMaxRaceCount' has a wrong offset!");
-static_assert(offsetof(ABP_RaceGadgetPlateSequence_C, LvUpWidPlateIdNext) == 0x0003C8, "Member 'ABP_RaceGadgetPlateSequence_C::LvUpWidPlateIdNext' has a wrong offset!");
-static_assert(offsetof(ABP_RaceGadgetPlateSequence_C, bPlayRunkUpEvent) == 0x0003C9, "Member 'ABP_RaceGadgetPlateSequence_C::bPlayRunkUpEvent' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_RaceGadgetPlateSequence_C;
 
 }
 

@@ -12,9 +12,9 @@
 
 #include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "UnionUI_structs.hpp"
 #include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "ImageWriteQueue_structs.hpp"
 
@@ -31,10 +31,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FChallengeStruct>               ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BPFL_ChallengeManagerUtil_GetChallengeClearList) == 0x000008, "Wrong alignment on BPFL_ChallengeManagerUtil_GetChallengeClearList");
-static_assert(sizeof(BPFL_ChallengeManagerUtil_GetChallengeClearList) == 0x000018, "Wrong size on BPFL_ChallengeManagerUtil_GetChallengeClearList");
-static_assert(offsetof(BPFL_ChallengeManagerUtil_GetChallengeClearList, ListLength) == 0x000000, "Member 'BPFL_ChallengeManagerUtil_GetChallengeClearList::ListLength' has a wrong offset!");
-static_assert(offsetof(BPFL_ChallengeManagerUtil_GetChallengeClearList, ReturnValue) == 0x000008, "Member 'BPFL_ChallengeManagerUtil_GetChallengeClearList::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_ChallengeManagerUtil_GetChallengeClearList;
 
 // Function UnionUI.BPFL_ChallengeManagerUtil.GetChallengeClearOwnerList
 // 0x0010 (0x0010 - 0x0000)
@@ -43,9 +40,7 @@ struct BPFL_ChallengeManagerUtil_GetChallengeClearOwnerList final
 public:
 	TArray<struct FChallengeOwnerStruct>          ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BPFL_ChallengeManagerUtil_GetChallengeClearOwnerList) == 0x000008, "Wrong alignment on BPFL_ChallengeManagerUtil_GetChallengeClearOwnerList");
-static_assert(sizeof(BPFL_ChallengeManagerUtil_GetChallengeClearOwnerList) == 0x000010, "Wrong size on BPFL_ChallengeManagerUtil_GetChallengeClearOwnerList");
-static_assert(offsetof(BPFL_ChallengeManagerUtil_GetChallengeClearOwnerList, ReturnValue) == 0x000000, "Member 'BPFL_ChallengeManagerUtil_GetChallengeClearOwnerList::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_ChallengeManagerUtil_GetChallengeClearOwnerList;
 
 // Function UnionUI.BPFL_ChallengeManagerUtil.GetChallengeProgress
 // 0x0010 (0x0010 - 0x0000)
@@ -56,10 +51,7 @@ public:
 	int32                                         NowProgress;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BPFL_ChallengeManagerUtil_GetChallengeProgress) == 0x000008, "Wrong alignment on BPFL_ChallengeManagerUtil_GetChallengeProgress");
-static_assert(sizeof(BPFL_ChallengeManagerUtil_GetChallengeProgress) == 0x000010, "Wrong size on BPFL_ChallengeManagerUtil_GetChallengeProgress");
-static_assert(offsetof(BPFL_ChallengeManagerUtil_GetChallengeProgress, WorldContextObject) == 0x000000, "Member 'BPFL_ChallengeManagerUtil_GetChallengeProgress::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(BPFL_ChallengeManagerUtil_GetChallengeProgress, NowProgress) == 0x000008, "Member 'BPFL_ChallengeManagerUtil_GetChallengeProgress::NowProgress' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_ChallengeManagerUtil_GetChallengeProgress;
 
 // Function UnionUI.BPFL_ChallengeManagerUtil.GetChallengeSaveData
 // 0x0018 (0x0018 - 0x0000)
@@ -70,10 +62,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FChallengeStruct>               ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BPFL_ChallengeManagerUtil_GetChallengeSaveData) == 0x000008, "Wrong alignment on BPFL_ChallengeManagerUtil_GetChallengeSaveData");
-static_assert(sizeof(BPFL_ChallengeManagerUtil_GetChallengeSaveData) == 0x000018, "Wrong size on BPFL_ChallengeManagerUtil_GetChallengeSaveData");
-static_assert(offsetof(BPFL_ChallengeManagerUtil_GetChallengeSaveData, InCategory) == 0x000000, "Member 'BPFL_ChallengeManagerUtil_GetChallengeSaveData::InCategory' has a wrong offset!");
-static_assert(offsetof(BPFL_ChallengeManagerUtil_GetChallengeSaveData, ReturnValue) == 0x000008, "Member 'BPFL_ChallengeManagerUtil_GetChallengeSaveData::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_ChallengeManagerUtil_GetChallengeSaveData;
 
 // Function UnionUI.BPFL_ChallengeManagerUtil.GetChallengeShowList
 // 0x0010 (0x0010 - 0x0000)
@@ -82,9 +71,7 @@ struct BPFL_ChallengeManagerUtil_GetChallengeShowList final
 public:
 	TArray<struct FChallengeStruct>               ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BPFL_ChallengeManagerUtil_GetChallengeShowList) == 0x000008, "Wrong alignment on BPFL_ChallengeManagerUtil_GetChallengeShowList");
-static_assert(sizeof(BPFL_ChallengeManagerUtil_GetChallengeShowList) == 0x000010, "Wrong size on BPFL_ChallengeManagerUtil_GetChallengeShowList");
-static_assert(offsetof(BPFL_ChallengeManagerUtil_GetChallengeShowList, ReturnValue) == 0x000000, "Member 'BPFL_ChallengeManagerUtil_GetChallengeShowList::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_ChallengeManagerUtil_GetChallengeShowList;
 
 // Function UnionUI.BPFL_ChallengeManagerUtil.GetSpecialChallengeProgress
 // 0x0010 (0x0010 - 0x0000)
@@ -95,10 +82,7 @@ public:
 	int32                                         NowProgress;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BPFL_ChallengeManagerUtil_GetSpecialChallengeProgress) == 0x000008, "Wrong alignment on BPFL_ChallengeManagerUtil_GetSpecialChallengeProgress");
-static_assert(sizeof(BPFL_ChallengeManagerUtil_GetSpecialChallengeProgress) == 0x000010, "Wrong size on BPFL_ChallengeManagerUtil_GetSpecialChallengeProgress");
-static_assert(offsetof(BPFL_ChallengeManagerUtil_GetSpecialChallengeProgress, WorldContextObject) == 0x000000, "Member 'BPFL_ChallengeManagerUtil_GetSpecialChallengeProgress::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(BPFL_ChallengeManagerUtil_GetSpecialChallengeProgress, NowProgress) == 0x000008, "Member 'BPFL_ChallengeManagerUtil_GetSpecialChallengeProgress::NowProgress' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_ChallengeManagerUtil_GetSpecialChallengeProgress;
 
 // Function UnionUI.BPFL_ChallengeManagerUtil.IsChallengeCategoryClear
 // 0x0002 (0x0002 - 0x0000)
@@ -108,10 +92,7 @@ public:
 	EChallengeCategory                            Category;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BPFL_ChallengeManagerUtil_IsChallengeCategoryClear) == 0x000001, "Wrong alignment on BPFL_ChallengeManagerUtil_IsChallengeCategoryClear");
-static_assert(sizeof(BPFL_ChallengeManagerUtil_IsChallengeCategoryClear) == 0x000002, "Wrong size on BPFL_ChallengeManagerUtil_IsChallengeCategoryClear");
-static_assert(offsetof(BPFL_ChallengeManagerUtil_IsChallengeCategoryClear, Category) == 0x000000, "Member 'BPFL_ChallengeManagerUtil_IsChallengeCategoryClear::Category' has a wrong offset!");
-static_assert(offsetof(BPFL_ChallengeManagerUtil_IsChallengeCategoryClear, ReturnValue) == 0x000001, "Member 'BPFL_ChallengeManagerUtil_IsChallengeCategoryClear::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_ChallengeManagerUtil_IsChallengeCategoryClear;
 
 // Function UnionUI.BPFL_ChallengeManagerUtil.IsOpenSpecialChallenge
 // 0x0001 (0x0001 - 0x0000)
@@ -120,9 +101,7 @@ struct BPFL_ChallengeManagerUtil_IsOpenSpecialChallenge final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BPFL_ChallengeManagerUtil_IsOpenSpecialChallenge) == 0x000001, "Wrong alignment on BPFL_ChallengeManagerUtil_IsOpenSpecialChallenge");
-static_assert(sizeof(BPFL_ChallengeManagerUtil_IsOpenSpecialChallenge) == 0x000001, "Wrong size on BPFL_ChallengeManagerUtil_IsOpenSpecialChallenge");
-static_assert(offsetof(BPFL_ChallengeManagerUtil_IsOpenSpecialChallenge, ReturnValue) == 0x000000, "Member 'BPFL_ChallengeManagerUtil_IsOpenSpecialChallenge::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_ChallengeManagerUtil_IsOpenSpecialChallenge;
 
 // Function UnionUI.BPFL_UnionUI.ConvertMenuButtonType
 // 0x0018 (0x0018 - 0x0000)
@@ -134,11 +113,7 @@ public:
 	ECommonMenuButtonType                         ReturnValue;                                       // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BPFL_UnionUI_ConvertMenuButtonType) == 0x000008, "Wrong alignment on BPFL_UnionUI_ConvertMenuButtonType");
-static_assert(sizeof(BPFL_UnionUI_ConvertMenuButtonType) == 0x000018, "Wrong size on BPFL_UnionUI_ConvertMenuButtonType");
-static_assert(offsetof(BPFL_UnionUI_ConvertMenuButtonType, InString) == 0x000000, "Member 'BPFL_UnionUI_ConvertMenuButtonType::InString' has a wrong offset!");
-static_assert(offsetof(BPFL_UnionUI_ConvertMenuButtonType, OutIsValid) == 0x000010, "Member 'BPFL_UnionUI_ConvertMenuButtonType::OutIsValid' has a wrong offset!");
-static_assert(offsetof(BPFL_UnionUI_ConvertMenuButtonType, ReturnValue) == 0x000011, "Member 'BPFL_UnionUI_ConvertMenuButtonType::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_UnionUI_ConvertMenuButtonType;
 
 // Function UnionUI.BPFL_UnionUI.GetArrowKeyControlDir
 // 0x0048 (0x0048 - 0x0000)
@@ -149,10 +124,7 @@ public:
 	EUnionUIControlDir                            OutControlDir;                                     // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BPFL_UnionUI_GetArrowKeyControlDir) == 0x000008, "Wrong alignment on BPFL_UnionUI_GetArrowKeyControlDir");
-static_assert(sizeof(BPFL_UnionUI_GetArrowKeyControlDir) == 0x000048, "Wrong size on BPFL_UnionUI_GetArrowKeyControlDir");
-static_assert(offsetof(BPFL_UnionUI_GetArrowKeyControlDir, InKeyEvent) == 0x000000, "Member 'BPFL_UnionUI_GetArrowKeyControlDir::InKeyEvent' has a wrong offset!");
-static_assert(offsetof(BPFL_UnionUI_GetArrowKeyControlDir, OutControlDir) == 0x000040, "Member 'BPFL_UnionUI_GetArrowKeyControlDir::OutControlDir' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_UnionUI_GetArrowKeyControlDir;
 
 // Function UnionUI.BPFL_UnionUI.GetDPadControlDir
 // 0x0048 (0x0048 - 0x0000)
@@ -163,10 +135,7 @@ public:
 	EUnionUIControlDir                            OutControlDir;                                     // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BPFL_UnionUI_GetDPadControlDir) == 0x000008, "Wrong alignment on BPFL_UnionUI_GetDPadControlDir");
-static_assert(sizeof(BPFL_UnionUI_GetDPadControlDir) == 0x000048, "Wrong size on BPFL_UnionUI_GetDPadControlDir");
-static_assert(offsetof(BPFL_UnionUI_GetDPadControlDir, InKeyEvent) == 0x000000, "Member 'BPFL_UnionUI_GetDPadControlDir::InKeyEvent' has a wrong offset!");
-static_assert(offsetof(BPFL_UnionUI_GetDPadControlDir, OutControlDir) == 0x000040, "Member 'BPFL_UnionUI_GetDPadControlDir::OutControlDir' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_UnionUI_GetDPadControlDir;
 
 // Function UnionUI.BPFL_UnionUI.GetJoyStickControlDir
 // 0x0048 (0x0048 - 0x0000)
@@ -177,10 +146,7 @@ public:
 	EUnionUIControlDir                            OutControlDir;                                     // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BPFL_UnionUI_GetJoyStickControlDir) == 0x000008, "Wrong alignment on BPFL_UnionUI_GetJoyStickControlDir");
-static_assert(sizeof(BPFL_UnionUI_GetJoyStickControlDir) == 0x000048, "Wrong size on BPFL_UnionUI_GetJoyStickControlDir");
-static_assert(offsetof(BPFL_UnionUI_GetJoyStickControlDir, InKeyEvent) == 0x000000, "Member 'BPFL_UnionUI_GetJoyStickControlDir::InKeyEvent' has a wrong offset!");
-static_assert(offsetof(BPFL_UnionUI_GetJoyStickControlDir, OutControlDir) == 0x000040, "Member 'BPFL_UnionUI_GetJoyStickControlDir::OutControlDir' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_UnionUI_GetJoyStickControlDir;
 
 // Function UnionUI.BPFL_UnionUI.GetKeyboardControlDir
 // 0x0048 (0x0048 - 0x0000)
@@ -191,10 +157,7 @@ public:
 	EUnionUIControlDir                            OutControlDir;                                     // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BPFL_UnionUI_GetKeyboardControlDir) == 0x000008, "Wrong alignment on BPFL_UnionUI_GetKeyboardControlDir");
-static_assert(sizeof(BPFL_UnionUI_GetKeyboardControlDir) == 0x000048, "Wrong size on BPFL_UnionUI_GetKeyboardControlDir");
-static_assert(offsetof(BPFL_UnionUI_GetKeyboardControlDir, InKeyEvent) == 0x000000, "Member 'BPFL_UnionUI_GetKeyboardControlDir::InKeyEvent' has a wrong offset!");
-static_assert(offsetof(BPFL_UnionUI_GetKeyboardControlDir, OutControlDir) == 0x000040, "Member 'BPFL_UnionUI_GetKeyboardControlDir::OutControlDir' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_UnionUI_GetKeyboardControlDir;
 
 // Function UnionUI.BPFL_UnionUI.GetTerminologyText
 // 0x0028 (0x0028 - 0x0000)
@@ -205,11 +168,7 @@ public:
 	class FString                                 InKey;                                             // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FText                                   ReturnValue;                                       // 0x0018(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BPFL_UnionUI_GetTerminologyText) == 0x000008, "Wrong alignment on BPFL_UnionUI_GetTerminologyText");
-static_assert(sizeof(BPFL_UnionUI_GetTerminologyText) == 0x000028, "Wrong size on BPFL_UnionUI_GetTerminologyText");
-static_assert(offsetof(BPFL_UnionUI_GetTerminologyText, InTableId) == 0x000000, "Member 'BPFL_UnionUI_GetTerminologyText::InTableId' has a wrong offset!");
-static_assert(offsetof(BPFL_UnionUI_GetTerminologyText, InKey) == 0x000008, "Member 'BPFL_UnionUI_GetTerminologyText::InKey' has a wrong offset!");
-static_assert(offsetof(BPFL_UnionUI_GetTerminologyText, ReturnValue) == 0x000018, "Member 'BPFL_UnionUI_GetTerminologyText::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_UnionUI_GetTerminologyText;
 
 // Function UnionUI.BPFL_UnionUI.GetTerminologyTextByText
 // 0x0020 (0x0020 - 0x0000)
@@ -219,10 +178,7 @@ public:
 	class FText                                   InTex;                                             // 0x0000(0x0010)(ConstParm, Parm, NativeAccessSpecifierPublic)
 	class FText                                   ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BPFL_UnionUI_GetTerminologyTextByText) == 0x000008, "Wrong alignment on BPFL_UnionUI_GetTerminologyTextByText");
-static_assert(sizeof(BPFL_UnionUI_GetTerminologyTextByText) == 0x000020, "Wrong size on BPFL_UnionUI_GetTerminologyTextByText");
-static_assert(offsetof(BPFL_UnionUI_GetTerminologyTextByText, InTex) == 0x000000, "Member 'BPFL_UnionUI_GetTerminologyTextByText::InTex' has a wrong offset!");
-static_assert(offsetof(BPFL_UnionUI_GetTerminologyTextByText, ReturnValue) == 0x000010, "Member 'BPFL_UnionUI_GetTerminologyTextByText::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_UnionUI_GetTerminologyTextByText;
 
 // Function UnionUI.BPFL_UnionUI.GetTextAddCommasToValue
 // 0x0018 (0x0018 - 0x0000)
@@ -233,10 +189,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BPFL_UnionUI_GetTextAddCommasToValue) == 0x000008, "Wrong alignment on BPFL_UnionUI_GetTextAddCommasToValue");
-static_assert(sizeof(BPFL_UnionUI_GetTextAddCommasToValue) == 0x000018, "Wrong size on BPFL_UnionUI_GetTextAddCommasToValue");
-static_assert(offsetof(BPFL_UnionUI_GetTextAddCommasToValue, InValue) == 0x000000, "Member 'BPFL_UnionUI_GetTextAddCommasToValue::InValue' has a wrong offset!");
-static_assert(offsetof(BPFL_UnionUI_GetTextAddCommasToValue, ReturnValue) == 0x000008, "Member 'BPFL_UnionUI_GetTextAddCommasToValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_UnionUI_GetTextAddCommasToValue;
 
 // Function UnionUI.BPFL_UnionUI.GetUserIndexByFocusEvent
 // 0x000C (0x000C - 0x0000)
@@ -246,10 +199,7 @@ public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BPFL_UnionUI_GetUserIndexByFocusEvent) == 0x000004, "Wrong alignment on BPFL_UnionUI_GetUserIndexByFocusEvent");
-static_assert(sizeof(BPFL_UnionUI_GetUserIndexByFocusEvent) == 0x00000C, "Wrong size on BPFL_UnionUI_GetUserIndexByFocusEvent");
-static_assert(offsetof(BPFL_UnionUI_GetUserIndexByFocusEvent, InFocusEvent) == 0x000000, "Member 'BPFL_UnionUI_GetUserIndexByFocusEvent::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(BPFL_UnionUI_GetUserIndexByFocusEvent, ReturnValue) == 0x000008, "Member 'BPFL_UnionUI_GetUserIndexByFocusEvent::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_UnionUI_GetUserIndexByFocusEvent;
 
 // Function UnionUI.BPFL_UnionUI.GetUserIndexByInputEvent
 // 0x0028 (0x0028 - 0x0000)
@@ -260,10 +210,7 @@ public:
 	int32                                         ReturnValue;                                       // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BPFL_UnionUI_GetUserIndexByInputEvent) == 0x000008, "Wrong alignment on BPFL_UnionUI_GetUserIndexByInputEvent");
-static_assert(sizeof(BPFL_UnionUI_GetUserIndexByInputEvent) == 0x000028, "Wrong size on BPFL_UnionUI_GetUserIndexByInputEvent");
-static_assert(offsetof(BPFL_UnionUI_GetUserIndexByInputEvent, InInputEvent) == 0x000000, "Member 'BPFL_UnionUI_GetUserIndexByInputEvent::InInputEvent' has a wrong offset!");
-static_assert(offsetof(BPFL_UnionUI_GetUserIndexByInputEvent, ReturnValue) == 0x000020, "Member 'BPFL_UnionUI_GetUserIndexByInputEvent::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_UnionUI_GetUserIndexByInputEvent;
 
 // Function UnionUI.BPFL_UnionUI.GetUserIndexByMouseEvent
 // 0x0080 (0x0080 - 0x0000)
@@ -274,10 +221,7 @@ public:
 	int32                                         ReturnValue;                                       // 0x0078(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BPFL_UnionUI_GetUserIndexByMouseEvent) == 0x000008, "Wrong alignment on BPFL_UnionUI_GetUserIndexByMouseEvent");
-static_assert(sizeof(BPFL_UnionUI_GetUserIndexByMouseEvent) == 0x000080, "Wrong size on BPFL_UnionUI_GetUserIndexByMouseEvent");
-static_assert(offsetof(BPFL_UnionUI_GetUserIndexByMouseEvent, InInputEvent) == 0x000000, "Member 'BPFL_UnionUI_GetUserIndexByMouseEvent::InInputEvent' has a wrong offset!");
-static_assert(offsetof(BPFL_UnionUI_GetUserIndexByMouseEvent, ReturnValue) == 0x000078, "Member 'BPFL_UnionUI_GetUserIndexByMouseEvent::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_UnionUI_GetUserIndexByMouseEvent;
 
 // Function UnionUI.BPFL_UnionUI.GetWidgetRenderTransform
 // 0x0040 (0x0040 - 0x0000)
@@ -287,73 +231,7 @@ public:
 	const class UWidget*                          InWidget;                                          // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FWidgetTransform                       OutRenderTransform;                                // 0x0008(0x0038)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BPFL_UnionUI_GetWidgetRenderTransform) == 0x000008, "Wrong alignment on BPFL_UnionUI_GetWidgetRenderTransform");
-static_assert(sizeof(BPFL_UnionUI_GetWidgetRenderTransform) == 0x000040, "Wrong size on BPFL_UnionUI_GetWidgetRenderTransform");
-static_assert(offsetof(BPFL_UnionUI_GetWidgetRenderTransform, InWidget) == 0x000000, "Member 'BPFL_UnionUI_GetWidgetRenderTransform::InWidget' has a wrong offset!");
-static_assert(offsetof(BPFL_UnionUI_GetWidgetRenderTransform, OutRenderTransform) == 0x000008, "Member 'BPFL_UnionUI_GetWidgetRenderTransform::OutRenderTransform' has a wrong offset!");
-
-// Function UnionUI.WidgetManBaseWidget.AddChild
-// 0x0018 (0x0018 - 0x0000)
-struct WidgetManBaseWidget_AddChild final
-{
-public:
-	class UUserWidget*                            ChildWidget;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCanvasPanelSlot*                       ChildSlot;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ZOrder;                                            // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(WidgetManBaseWidget_AddChild) == 0x000008, "Wrong alignment on WidgetManBaseWidget_AddChild");
-static_assert(sizeof(WidgetManBaseWidget_AddChild) == 0x000018, "Wrong size on WidgetManBaseWidget_AddChild");
-static_assert(offsetof(WidgetManBaseWidget_AddChild, ChildWidget) == 0x000000, "Member 'WidgetManBaseWidget_AddChild::ChildWidget' has a wrong offset!");
-static_assert(offsetof(WidgetManBaseWidget_AddChild, ChildSlot) == 0x000008, "Member 'WidgetManBaseWidget_AddChild::ChildSlot' has a wrong offset!");
-static_assert(offsetof(WidgetManBaseWidget_AddChild, ZOrder) == 0x000010, "Member 'WidgetManBaseWidget_AddChild::ZOrder' has a wrong offset!");
-
-// Function UnionUI.WidgetManBaseWidget.AppendDebugString
-// 0x0010 (0x0010 - 0x0000)
-struct WidgetManBaseWidget_AppendDebugString final
-{
-public:
-	class FString                                 String__const;                                     // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(WidgetManBaseWidget_AppendDebugString) == 0x000008, "Wrong alignment on WidgetManBaseWidget_AppendDebugString");
-static_assert(sizeof(WidgetManBaseWidget_AppendDebugString) == 0x000010, "Wrong size on WidgetManBaseWidget_AppendDebugString");
-static_assert(offsetof(WidgetManBaseWidget_AppendDebugString, String__const) == 0x000000, "Member 'WidgetManBaseWidget_AppendDebugString::String__const' has a wrong offset!");
-
-// Function UnionUI.WidgetManBaseWidget.AttachDebugStringObject
-// 0x0008 (0x0008 - 0x0000)
-struct WidgetManBaseWidget_AttachDebugStringObject final
-{
-public:
-	class UWidgetManDebugString*                  DebugStringObject;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(WidgetManBaseWidget_AttachDebugStringObject) == 0x000008, "Wrong alignment on WidgetManBaseWidget_AttachDebugStringObject");
-static_assert(sizeof(WidgetManBaseWidget_AttachDebugStringObject) == 0x000008, "Wrong size on WidgetManBaseWidget_AttachDebugStringObject");
-static_assert(offsetof(WidgetManBaseWidget_AttachDebugStringObject, DebugStringObject) == 0x000000, "Member 'WidgetManBaseWidget_AttachDebugStringObject::DebugStringObject' has a wrong offset!");
-
-// Function UnionUI.WidgetManBaseWidget.DetachDebugStringObject
-// 0x0008 (0x0008 - 0x0000)
-struct WidgetManBaseWidget_DetachDebugStringObject final
-{
-public:
-	class UWidgetManDebugString*                  DebugStringObject;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(WidgetManBaseWidget_DetachDebugStringObject) == 0x000008, "Wrong alignment on WidgetManBaseWidget_DetachDebugStringObject");
-static_assert(sizeof(WidgetManBaseWidget_DetachDebugStringObject) == 0x000008, "Wrong size on WidgetManBaseWidget_DetachDebugStringObject");
-static_assert(offsetof(WidgetManBaseWidget_DetachDebugStringObject, DebugStringObject) == 0x000000, "Member 'WidgetManBaseWidget_DetachDebugStringObject::DebugStringObject' has a wrong offset!");
-
-// Function UnionUI.WidgetManBaseWidget.RemoveChild
-// 0x0010 (0x0010 - 0x0000)
-struct WidgetManBaseWidget_RemoveChild final
-{
-public:
-	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsSucceeded;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(WidgetManBaseWidget_RemoveChild) == 0x000008, "Wrong alignment on WidgetManBaseWidget_RemoveChild");
-static_assert(sizeof(WidgetManBaseWidget_RemoveChild) == 0x000010, "Wrong size on WidgetManBaseWidget_RemoveChild");
-static_assert(offsetof(WidgetManBaseWidget_RemoveChild, Widget) == 0x000000, "Member 'WidgetManBaseWidget_RemoveChild::Widget' has a wrong offset!");
-static_assert(offsetof(WidgetManBaseWidget_RemoveChild, IsSucceeded) == 0x000008, "Member 'WidgetManBaseWidget_RemoveChild::IsSucceeded' has a wrong offset!");
+DUMPER7_ASSERTS_BPFL_UnionUI_GetWidgetRenderTransform;
 
 // Function UnionUI.FontFunctionObject.CalcFontPoint
 // 0x0010 (0x0010 - 0x0000)
@@ -368,13 +246,149 @@ public:
 	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         OutFontPoint;                                      // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FontFunctionObject_CalcFontPoint) == 0x000004, "Wrong alignment on FontFunctionObject_CalcFontPoint");
-static_assert(sizeof(FontFunctionObject_CalcFontPoint) == 0x000010, "Wrong size on FontFunctionObject_CalcFontPoint");
-static_assert(offsetof(FontFunctionObject_CalcFontPoint, InSrcFontType) == 0x000000, "Member 'FontFunctionObject_CalcFontPoint::InSrcFontType' has a wrong offset!");
-static_assert(offsetof(FontFunctionObject_CalcFontPoint, InDstFontType) == 0x000001, "Member 'FontFunctionObject_CalcFontPoint::InDstFontType' has a wrong offset!");
-static_assert(offsetof(FontFunctionObject_CalcFontPoint, InFontPoint) == 0x000004, "Member 'FontFunctionObject_CalcFontPoint::InFontPoint' has a wrong offset!");
-static_assert(offsetof(FontFunctionObject_CalcFontPoint, bSuccess) == 0x000008, "Member 'FontFunctionObject_CalcFontPoint::bSuccess' has a wrong offset!");
-static_assert(offsetof(FontFunctionObject_CalcFontPoint, OutFontPoint) == 0x00000C, "Member 'FontFunctionObject_CalcFontPoint::OutFontPoint' has a wrong offset!");
+DUMPER7_ASSERTS_FontFunctionObject_CalcFontPoint;
+
+// Function UnionUI.WidgetManComponent.AddWidgetToTopAsGroup
+// 0x0018 (0x0018 - 0x0000)
+struct WidgetManComponent_AddWidgetToTopAsGroup final
+{
+public:
+	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UObject*                                Logic;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsSucceeded;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_WidgetManComponent_AddWidgetToTopAsGroup;
+
+// Function UnionUI.WidgetManComponent.AttachDebugStringObject
+// 0x0008 (0x0008 - 0x0000)
+struct WidgetManComponent_AttachDebugStringObject final
+{
+public:
+	class UWidgetManDebugString*                  DebugStringObjectRef;                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_WidgetManComponent_AttachDebugStringObject;
+
+// Function UnionUI.WidgetManComponent.DetachDebugStringObject
+// 0x0008 (0x0008 - 0x0000)
+struct WidgetManComponent_DetachDebugStringObject final
+{
+public:
+	class UWidgetManDebugString*                  DebugStringObjectRef;                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_WidgetManComponent_DetachDebugStringObject;
+
+// Function UnionUI.WidgetManComponent.FindWidget
+// 0x0018 (0x0018 - 0x0000)
+struct WidgetManComponent_FindWidget final
+{
+public:
+	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsFound;                                           // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         IndexFromTop;                                      // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         IndexInGroup;                                      // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_WidgetManComponent_FindWidget;
+
+// Function UnionUI.WidgetManComponent.GetTopWidget
+// 0x0020 (0x0020 - 0x0000)
+struct WidgetManComponent_GetTopWidget final
+{
+public:
+	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsSucceeded;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUserWidget*                            Widget;                                            // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsSubWidget;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                Logic;                                             // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_WidgetManComponent_GetTopWidget;
+
+// Function UnionUI.WidgetManComponent.GetTopWidgetCount
+// 0x0004 (0x0004 - 0x0000)
+struct WidgetManComponent_GetTopWidgetCount final
+{
+public:
+	int32                                         WidgetCount;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_WidgetManComponent_GetTopWidgetCount;
+
+// Function UnionUI.WidgetManComponent.NotifyPoped
+// 0x0010 (0x0010 - 0x0000)
+struct WidgetManComponent_NotifyPoped final
+{
+public:
+	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UObject*                                Logic;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_WidgetManComponent_NotifyPoped;
+
+// Function UnionUI.WidgetManComponent.NotifyPushed
+// 0x0010 (0x0010 - 0x0000)
+struct WidgetManComponent_NotifyPushed final
+{
+public:
+	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UObject*                                Logic;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_WidgetManComponent_NotifyPushed;
+
+// Function UnionUI.WidgetManComponent.PopWidget
+// 0x0001 (0x0001 - 0x0000)
+struct WidgetManComponent_PopWidget final
+{
+public:
+	bool                                          IsSucceeded;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_WidgetManComponent_PopWidget;
+
+// Function UnionUI.WidgetManComponent.PushSubWidget
+// 0x0010 (0x0010 - 0x0000)
+struct WidgetManComponent_PushSubWidget final
+{
+public:
+	class UUserWidget*                            SubWidget;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UObject*                                Logic;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_WidgetManComponent_PushSubWidget;
+
+// Function UnionUI.WidgetManComponent.PushWidget
+// 0x0018 (0x0018 - 0x0000)
+struct WidgetManComponent_PushWidget final
+{
+public:
+	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UObject*                                Logic;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EWidgetManZLayer                              ZLayer;                                            // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         ReturnValue;                                       // 0x0014(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_WidgetManComponent_PushWidget;
+
+// Function UnionUI.WidgetManComponent.SwapTopWidget
+// 0x0010 (0x0010 - 0x0000)
+struct WidgetManComponent_SwapTopWidget final
+{
+public:
+	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsSucceeded;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_WidgetManComponent_SwapTopWidget;
+
+// Function UnionUI.WidgetManComponent.SwapTopWidgetByIndex
+// 0x0008 (0x0008 - 0x0000)
+struct WidgetManComponent_SwapTopWidgetByIndex final
+{
+public:
+	int32                                         IndexFromTop;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsSucceeded;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_WidgetManComponent_SwapTopWidgetByIndex;
 
 // Function UnionUI.MenuCameraManager.CameraCharaSlide
 // 0x0010 (0x0010 - 0x0000)
@@ -385,10 +399,7 @@ public:
 	float                                         Time;                                              // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MenuCameraManager_CameraCharaSlide) == 0x000008, "Wrong alignment on MenuCameraManager_CameraCharaSlide");
-static_assert(sizeof(MenuCameraManager_CameraCharaSlide) == 0x000010, "Wrong size on MenuCameraManager_CameraCharaSlide");
-static_assert(offsetof(MenuCameraManager_CameraCharaSlide, Target) == 0x000000, "Member 'MenuCameraManager_CameraCharaSlide::Target' has a wrong offset!");
-static_assert(offsetof(MenuCameraManager_CameraCharaSlide, Time) == 0x000008, "Member 'MenuCameraManager_CameraCharaSlide::Time' has a wrong offset!");
+DUMPER7_ASSERTS_MenuCameraManager_CameraCharaSlide;
 
 // Function UnionUI.MenuCameraManager.CameraMoveToTransform
 // 0x0070 (0x0070 - 0x0000)
@@ -399,10 +410,7 @@ public:
 	float                                         Time;                                              // 0x0060(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_64[0xC];                                       // 0x0064(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MenuCameraManager_CameraMoveToTransform) == 0x000010, "Wrong alignment on MenuCameraManager_CameraMoveToTransform");
-static_assert(sizeof(MenuCameraManager_CameraMoveToTransform) == 0x000070, "Wrong size on MenuCameraManager_CameraMoveToTransform");
-static_assert(offsetof(MenuCameraManager_CameraMoveToTransform, TargetTransform) == 0x000000, "Member 'MenuCameraManager_CameraMoveToTransform::TargetTransform' has a wrong offset!");
-static_assert(offsetof(MenuCameraManager_CameraMoveToTransform, Time) == 0x000060, "Member 'MenuCameraManager_CameraMoveToTransform::Time' has a wrong offset!");
+DUMPER7_ASSERTS_MenuCameraManager_CameraMoveToTransform;
 
 // Function UnionUI.MenuCameraManager.CameraZoomIn
 // 0x0010 (0x0010 - 0x0000)
@@ -413,10 +421,7 @@ public:
 	float                                         Time;                                              // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MenuCameraManager_CameraZoomIn) == 0x000008, "Wrong alignment on MenuCameraManager_CameraZoomIn");
-static_assert(sizeof(MenuCameraManager_CameraZoomIn) == 0x000010, "Wrong size on MenuCameraManager_CameraZoomIn");
-static_assert(offsetof(MenuCameraManager_CameraZoomIn, Target) == 0x000000, "Member 'MenuCameraManager_CameraZoomIn::Target' has a wrong offset!");
-static_assert(offsetof(MenuCameraManager_CameraZoomIn, Time) == 0x000008, "Member 'MenuCameraManager_CameraZoomIn::Time' has a wrong offset!");
+DUMPER7_ASSERTS_MenuCameraManager_CameraZoomIn;
 
 // Function UnionUI.MenuCameraManager.CameraZoomOut
 // 0x0004 (0x0004 - 0x0000)
@@ -425,9 +430,7 @@ struct MenuCameraManager_CameraZoomOut final
 public:
 	float                                         Time;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MenuCameraManager_CameraZoomOut) == 0x000004, "Wrong alignment on MenuCameraManager_CameraZoomOut");
-static_assert(sizeof(MenuCameraManager_CameraZoomOut) == 0x000004, "Wrong size on MenuCameraManager_CameraZoomOut");
-static_assert(offsetof(MenuCameraManager_CameraZoomOut, Time) == 0x000000, "Member 'MenuCameraManager_CameraZoomOut::Time' has a wrong offset!");
+DUMPER7_ASSERTS_MenuCameraManager_CameraZoomOut;
 
 // Function UnionUI.MenuCameraManager.SetCameraParam
 // 0x0010 (0x0010 - 0x0000)
@@ -438,10 +441,7 @@ public:
 	EEasingFunc                                   InEasingFunc;                                      // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MenuCameraManager_SetCameraParam) == 0x000008, "Wrong alignment on MenuCameraManager_SetCameraParam");
-static_assert(sizeof(MenuCameraManager_SetCameraParam) == 0x000010, "Wrong size on MenuCameraManager_SetCameraParam");
-static_assert(offsetof(MenuCameraManager_SetCameraParam, Camera) == 0x000000, "Member 'MenuCameraManager_SetCameraParam::Camera' has a wrong offset!");
-static_assert(offsetof(MenuCameraManager_SetCameraParam, InEasingFunc) == 0x000008, "Member 'MenuCameraManager_SetCameraParam::InEasingFunc' has a wrong offset!");
+DUMPER7_ASSERTS_MenuCameraManager_SetCameraParam;
 
 // Function UnionUI.MenuCameraManager.SetLookAtRacerCameraPos
 // 0x0030 (0x0030 - 0x0000)
@@ -451,10 +451,7 @@ public:
 	struct FVector                                OffsetPos;                                         // 0x0000(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                OffsetLookAtPos;                                   // 0x0018(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MenuCameraManager_SetLookAtRacerCameraPos) == 0x000008, "Wrong alignment on MenuCameraManager_SetLookAtRacerCameraPos");
-static_assert(sizeof(MenuCameraManager_SetLookAtRacerCameraPos) == 0x000030, "Wrong size on MenuCameraManager_SetLookAtRacerCameraPos");
-static_assert(offsetof(MenuCameraManager_SetLookAtRacerCameraPos, OffsetPos) == 0x000000, "Member 'MenuCameraManager_SetLookAtRacerCameraPos::OffsetPos' has a wrong offset!");
-static_assert(offsetof(MenuCameraManager_SetLookAtRacerCameraPos, OffsetLookAtPos) == 0x000018, "Member 'MenuCameraManager_SetLookAtRacerCameraPos::OffsetLookAtPos' has a wrong offset!");
+DUMPER7_ASSERTS_MenuCameraManager_SetLookAtRacerCameraPos;
 
 // Function UnionUI.MenuCameraManager.SetManualFocusDistance
 // 0x0004 (0x0004 - 0x0000)
@@ -463,9 +460,7 @@ struct MenuCameraManager_SetManualFocusDistance final
 public:
 	float                                         InManualDistance;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MenuCameraManager_SetManualFocusDistance) == 0x000004, "Wrong alignment on MenuCameraManager_SetManualFocusDistance");
-static_assert(sizeof(MenuCameraManager_SetManualFocusDistance) == 0x000004, "Wrong size on MenuCameraManager_SetManualFocusDistance");
-static_assert(offsetof(MenuCameraManager_SetManualFocusDistance, InManualDistance) == 0x000000, "Member 'MenuCameraManager_SetManualFocusDistance::InManualDistance' has a wrong offset!");
+DUMPER7_ASSERTS_MenuCameraManager_SetManualFocusDistance;
 
 // Function UnionUI.MenuCameraManager.SetUpCameraFOV
 // 0x0004 (0x0004 - 0x0000)
@@ -474,9 +469,7 @@ struct MenuCameraManager_SetUpCameraFOV final
 public:
 	float                                         InFOV;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MenuCameraManager_SetUpCameraFOV) == 0x000004, "Wrong alignment on MenuCameraManager_SetUpCameraFOV");
-static_assert(sizeof(MenuCameraManager_SetUpCameraFOV) == 0x000004, "Wrong size on MenuCameraManager_SetUpCameraFOV");
-static_assert(offsetof(MenuCameraManager_SetUpCameraFOV, InFOV) == 0x000000, "Member 'MenuCameraManager_SetUpCameraFOV::InFOV' has a wrong offset!");
+DUMPER7_ASSERTS_MenuCameraManager_SetUpCameraFOV;
 
 // Function UnionUI.RichTextBlockRubyDecorator.UpdateOriginalTextIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -485,9 +478,7 @@ struct RichTextBlockRubyDecorator_UpdateOriginalTextIndex final
 public:
 	int32                                         InOriginalTextIndex;                               // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(RichTextBlockRubyDecorator_UpdateOriginalTextIndex) == 0x000004, "Wrong alignment on RichTextBlockRubyDecorator_UpdateOriginalTextIndex");
-static_assert(sizeof(RichTextBlockRubyDecorator_UpdateOriginalTextIndex) == 0x000004, "Wrong size on RichTextBlockRubyDecorator_UpdateOriginalTextIndex");
-static_assert(offsetof(RichTextBlockRubyDecorator_UpdateOriginalTextIndex, InOriginalTextIndex) == 0x000000, "Member 'RichTextBlockRubyDecorator_UpdateOriginalTextIndex::InOriginalTextIndex' has a wrong offset!");
+DUMPER7_ASSERTS_RichTextBlockRubyDecorator_UpdateOriginalTextIndex;
 
 // Function UnionUI.UICapture2DTargetInterface.GetCaptureTargetActorArr
 // 0x0010 (0x0010 - 0x0000)
@@ -496,9 +487,7 @@ struct UICapture2DTargetInterface_GetCaptureTargetActorArr final
 public:
 	TArray<class AActor*>                         ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UICapture2DTargetInterface_GetCaptureTargetActorArr) == 0x000008, "Wrong alignment on UICapture2DTargetInterface_GetCaptureTargetActorArr");
-static_assert(sizeof(UICapture2DTargetInterface_GetCaptureTargetActorArr) == 0x000010, "Wrong size on UICapture2DTargetInterface_GetCaptureTargetActorArr");
-static_assert(offsetof(UICapture2DTargetInterface_GetCaptureTargetActorArr, ReturnValue) == 0x000000, "Member 'UICapture2DTargetInterface_GetCaptureTargetActorArr::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UICapture2DTargetInterface_GetCaptureTargetActorArr;
 
 // Function UnionUI.UnionComboBoxString.FilterOptions
 // 0x0010 (0x0010 - 0x0000)
@@ -507,9 +496,7 @@ struct UnionComboBoxString_FilterOptions final
 public:
 	class FString                                 FilterText;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionComboBoxString_FilterOptions) == 0x000008, "Wrong alignment on UnionComboBoxString_FilterOptions");
-static_assert(sizeof(UnionComboBoxString_FilterOptions) == 0x000010, "Wrong size on UnionComboBoxString_FilterOptions");
-static_assert(offsetof(UnionComboBoxString_FilterOptions, FilterText) == 0x000000, "Member 'UnionComboBoxString_FilterOptions::FilterText' has a wrong offset!");
+DUMPER7_ASSERTS_UnionComboBoxString_FilterOptions;
 
 // Function UnionUI.UnionComboBoxString.InitializeOptions
 // 0x0010 (0x0010 - 0x0000)
@@ -518,9 +505,7 @@ struct UnionComboBoxString_InitializeOptions final
 public:
 	TArray<class FString>                         Initialize;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionComboBoxString_InitializeOptions) == 0x000008, "Wrong alignment on UnionComboBoxString_InitializeOptions");
-static_assert(sizeof(UnionComboBoxString_InitializeOptions) == 0x000010, "Wrong size on UnionComboBoxString_InitializeOptions");
-static_assert(offsetof(UnionComboBoxString_InitializeOptions, Initialize) == 0x000000, "Member 'UnionComboBoxString_InitializeOptions::Initialize' has a wrong offset!");
+DUMPER7_ASSERTS_UnionComboBoxString_InitializeOptions;
 
 // Function UnionUI.UnionFontScroll.SetIsRefreshingText
 // 0x0001 (0x0001 - 0x0000)
@@ -529,9 +514,7 @@ struct UnionFontScroll_SetIsRefreshingText final
 public:
 	bool                                          Refreshing;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionFontScroll_SetIsRefreshingText) == 0x000001, "Wrong alignment on UnionFontScroll_SetIsRefreshingText");
-static_assert(sizeof(UnionFontScroll_SetIsRefreshingText) == 0x000001, "Wrong size on UnionFontScroll_SetIsRefreshingText");
-static_assert(offsetof(UnionFontScroll_SetIsRefreshingText, Refreshing) == 0x000000, "Member 'UnionFontScroll_SetIsRefreshingText::Refreshing' has a wrong offset!");
+DUMPER7_ASSERTS_UnionFontScroll_SetIsRefreshingText;
 
 // Function UnionUI.UnionFontScroll.SetText
 // 0x0010 (0x0010 - 0x0000)
@@ -540,9 +523,7 @@ struct UnionFontScroll_SetText final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0010)(Parm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionFontScroll_SetText) == 0x000008, "Wrong alignment on UnionFontScroll_SetText");
-static_assert(sizeof(UnionFontScroll_SetText) == 0x000010, "Wrong size on UnionFontScroll_SetText");
-static_assert(offsetof(UnionFontScroll_SetText, InText) == 0x000000, "Member 'UnionFontScroll_SetText::InText' has a wrong offset!");
+DUMPER7_ASSERTS_UnionFontScroll_SetText;
 
 // Function UnionUI.UnionFontScroll.UpdateText
 // 0x0010 (0x0010 - 0x0000)
@@ -551,9 +532,7 @@ struct UnionFontScroll_UpdateText final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0010)(Parm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionFontScroll_UpdateText) == 0x000008, "Wrong alignment on UnionFontScroll_UpdateText");
-static_assert(sizeof(UnionFontScroll_UpdateText) == 0x000010, "Wrong size on UnionFontScroll_UpdateText");
-static_assert(offsetof(UnionFontScroll_UpdateText, InText) == 0x000000, "Member 'UnionFontScroll_UpdateText::InText' has a wrong offset!");
+DUMPER7_ASSERTS_UnionFontScroll_UpdateText;
 
 // Function UnionUI.UnionFontScroll.UpdateTextWithoutStartScroll
 // 0x0010 (0x0010 - 0x0000)
@@ -562,9 +541,7 @@ struct UnionFontScroll_UpdateTextWithoutStartScroll final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0010)(Parm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionFontScroll_UpdateTextWithoutStartScroll) == 0x000008, "Wrong alignment on UnionFontScroll_UpdateTextWithoutStartScroll");
-static_assert(sizeof(UnionFontScroll_UpdateTextWithoutStartScroll) == 0x000010, "Wrong size on UnionFontScroll_UpdateTextWithoutStartScroll");
-static_assert(offsetof(UnionFontScroll_UpdateTextWithoutStartScroll, InText) == 0x000000, "Member 'UnionFontScroll_UpdateTextWithoutStartScroll::InText' has a wrong offset!");
+DUMPER7_ASSERTS_UnionFontScroll_UpdateTextWithoutStartScroll;
 
 // Function UnionUI.UnionLoadingGauge.IsEqLoadingGaugeState
 // 0x0001 (0x0001 - 0x0000)
@@ -573,9 +550,7 @@ struct UnionLoadingGauge_IsEqLoadingGaugeState final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionLoadingGauge_IsEqLoadingGaugeState) == 0x000001, "Wrong alignment on UnionLoadingGauge_IsEqLoadingGaugeState");
-static_assert(sizeof(UnionLoadingGauge_IsEqLoadingGaugeState) == 0x000001, "Wrong size on UnionLoadingGauge_IsEqLoadingGaugeState");
-static_assert(offsetof(UnionLoadingGauge_IsEqLoadingGaugeState, ReturnValue) == 0x000000, "Member 'UnionLoadingGauge_IsEqLoadingGaugeState::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionLoadingGauge_IsEqLoadingGaugeState;
 
 // Function UnionUI.UnionLoadingGauge.IsSkipLoadingGaugeState
 // 0x0001 (0x0001 - 0x0000)
@@ -584,9 +559,7 @@ struct UnionLoadingGauge_IsSkipLoadingGaugeState final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionLoadingGauge_IsSkipLoadingGaugeState) == 0x000001, "Wrong alignment on UnionLoadingGauge_IsSkipLoadingGaugeState");
-static_assert(sizeof(UnionLoadingGauge_IsSkipLoadingGaugeState) == 0x000001, "Wrong size on UnionLoadingGauge_IsSkipLoadingGaugeState");
-static_assert(offsetof(UnionLoadingGauge_IsSkipLoadingGaugeState, ReturnValue) == 0x000000, "Member 'UnionLoadingGauge_IsSkipLoadingGaugeState::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionLoadingGauge_IsSkipLoadingGaugeState;
 
 // Function UnionUI.UnionLoadingGauge.IsTargetStateBigger
 // 0x0001 (0x0001 - 0x0000)
@@ -595,9 +568,7 @@ struct UnionLoadingGauge_IsTargetStateBigger final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionLoadingGauge_IsTargetStateBigger) == 0x000001, "Wrong alignment on UnionLoadingGauge_IsTargetStateBigger");
-static_assert(sizeof(UnionLoadingGauge_IsTargetStateBigger) == 0x000001, "Wrong size on UnionLoadingGauge_IsTargetStateBigger");
-static_assert(offsetof(UnionLoadingGauge_IsTargetStateBigger, ReturnValue) == 0x000000, "Member 'UnionLoadingGauge_IsTargetStateBigger::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionLoadingGauge_IsTargetStateBigger;
 
 // Function UnionUI.UnionLoadingGauge.UpdateLoadingGaugeTargetState
 // 0x0001 (0x0001 - 0x0000)
@@ -606,9 +577,7 @@ struct UnionLoadingGauge_UpdateLoadingGaugeTargetState final
 public:
 	EUnionLoadingGaugeState                       InTargetState;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionLoadingGauge_UpdateLoadingGaugeTargetState) == 0x000001, "Wrong alignment on UnionLoadingGauge_UpdateLoadingGaugeTargetState");
-static_assert(sizeof(UnionLoadingGauge_UpdateLoadingGaugeTargetState) == 0x000001, "Wrong size on UnionLoadingGauge_UpdateLoadingGaugeTargetState");
-static_assert(offsetof(UnionLoadingGauge_UpdateLoadingGaugeTargetState, InTargetState) == 0x000000, "Member 'UnionLoadingGauge_UpdateLoadingGaugeTargetState::InTargetState' has a wrong offset!");
+DUMPER7_ASSERTS_UnionLoadingGauge_UpdateLoadingGaugeTargetState;
 
 // Function UnionUI.MouseButtonBlueprintFunctionLibrary.IsEnableMouseClick
 // 0x0001 (0x0001 - 0x0000)
@@ -617,9 +586,7 @@ struct MouseButtonBlueprintFunctionLibrary_IsEnableMouseClick final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MouseButtonBlueprintFunctionLibrary_IsEnableMouseClick) == 0x000001, "Wrong alignment on MouseButtonBlueprintFunctionLibrary_IsEnableMouseClick");
-static_assert(sizeof(MouseButtonBlueprintFunctionLibrary_IsEnableMouseClick) == 0x000001, "Wrong size on MouseButtonBlueprintFunctionLibrary_IsEnableMouseClick");
-static_assert(offsetof(MouseButtonBlueprintFunctionLibrary_IsEnableMouseClick, ReturnValue) == 0x000000, "Member 'MouseButtonBlueprintFunctionLibrary_IsEnableMouseClick::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MouseButtonBlueprintFunctionLibrary_IsEnableMouseClick;
 
 // Function UnionUI.MouseButtonBlueprintFunctionLibrary.IsEnableMouseHover
 // 0x0001 (0x0001 - 0x0000)
@@ -628,9 +595,7 @@ struct MouseButtonBlueprintFunctionLibrary_IsEnableMouseHover final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MouseButtonBlueprintFunctionLibrary_IsEnableMouseHover) == 0x000001, "Wrong alignment on MouseButtonBlueprintFunctionLibrary_IsEnableMouseHover");
-static_assert(sizeof(MouseButtonBlueprintFunctionLibrary_IsEnableMouseHover) == 0x000001, "Wrong size on MouseButtonBlueprintFunctionLibrary_IsEnableMouseHover");
-static_assert(offsetof(MouseButtonBlueprintFunctionLibrary_IsEnableMouseHover, ReturnValue) == 0x000000, "Member 'MouseButtonBlueprintFunctionLibrary_IsEnableMouseHover::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MouseButtonBlueprintFunctionLibrary_IsEnableMouseHover;
 
 // Function UnionUI.UnionRichTextBlockImageDecorator.FindResorceObject
 // 0x0010 (0x0010 - 0x0000)
@@ -640,10 +605,7 @@ public:
 	class FName                                   TagOrId;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UObject*                                OutObject;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionRichTextBlockImageDecorator_FindResorceObject) == 0x000008, "Wrong alignment on UnionRichTextBlockImageDecorator_FindResorceObject");
-static_assert(sizeof(UnionRichTextBlockImageDecorator_FindResorceObject) == 0x000010, "Wrong size on UnionRichTextBlockImageDecorator_FindResorceObject");
-static_assert(offsetof(UnionRichTextBlockImageDecorator_FindResorceObject, TagOrId) == 0x000000, "Member 'UnionRichTextBlockImageDecorator_FindResorceObject::TagOrId' has a wrong offset!");
-static_assert(offsetof(UnionRichTextBlockImageDecorator_FindResorceObject, OutObject) == 0x000008, "Member 'UnionRichTextBlockImageDecorator_FindResorceObject::OutObject' has a wrong offset!");
+DUMPER7_ASSERTS_UnionRichTextBlockImageDecorator_FindResorceObject;
 
 // Function UnionUI.UnionRichTextBlockImageDecorator.FindRichImageRow
 // 0x00F0 (0x00F0 - 0x0000)
@@ -654,10 +616,7 @@ public:
 	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRichImageRow                          OutRichImageRow;                                   // 0x0010(0x00E0)(Parm, OutParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionRichTextBlockImageDecorator_FindRichImageRow) == 0x000010, "Wrong alignment on UnionRichTextBlockImageDecorator_FindRichImageRow");
-static_assert(sizeof(UnionRichTextBlockImageDecorator_FindRichImageRow) == 0x0000F0, "Wrong size on UnionRichTextBlockImageDecorator_FindRichImageRow");
-static_assert(offsetof(UnionRichTextBlockImageDecorator_FindRichImageRow, TagOrId) == 0x000000, "Member 'UnionRichTextBlockImageDecorator_FindRichImageRow::TagOrId' has a wrong offset!");
-static_assert(offsetof(UnionRichTextBlockImageDecorator_FindRichImageRow, OutRichImageRow) == 0x000010, "Member 'UnionRichTextBlockImageDecorator_FindRichImageRow::OutRichImageRow' has a wrong offset!");
+DUMPER7_ASSERTS_UnionRichTextBlockImageDecorator_FindRichImageRow;
 
 // Function UnionUI.UnionRichTextBlockImageDecorator.FindRichSlateBrush
 // 0x00E0 (0x00E0 - 0x0000)
@@ -668,10 +627,7 @@ public:
 	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            OutSlateBrush;                                     // 0x0010(0x00D0)(Parm, OutParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionRichTextBlockImageDecorator_FindRichSlateBrush) == 0x000010, "Wrong alignment on UnionRichTextBlockImageDecorator_FindRichSlateBrush");
-static_assert(sizeof(UnionRichTextBlockImageDecorator_FindRichSlateBrush) == 0x0000E0, "Wrong size on UnionRichTextBlockImageDecorator_FindRichSlateBrush");
-static_assert(offsetof(UnionRichTextBlockImageDecorator_FindRichSlateBrush, TagOrId) == 0x000000, "Member 'UnionRichTextBlockImageDecorator_FindRichSlateBrush::TagOrId' has a wrong offset!");
-static_assert(offsetof(UnionRichTextBlockImageDecorator_FindRichSlateBrush, OutSlateBrush) == 0x000010, "Member 'UnionRichTextBlockImageDecorator_FindRichSlateBrush::OutSlateBrush' has a wrong offset!");
+DUMPER7_ASSERTS_UnionRichTextBlockImageDecorator_FindRichSlateBrush;
 
 // Function UnionUI.UnionRichTextBlockImageDecorator.SetEachPlayer
 // 0x0001 (0x0001 - 0x0000)
@@ -680,9 +636,7 @@ struct UnionRichTextBlockImageDecorator_SetEachPlayer final
 public:
 	bool                                          InEachPlayer;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionRichTextBlockImageDecorator_SetEachPlayer) == 0x000001, "Wrong alignment on UnionRichTextBlockImageDecorator_SetEachPlayer");
-static_assert(sizeof(UnionRichTextBlockImageDecorator_SetEachPlayer) == 0x000001, "Wrong size on UnionRichTextBlockImageDecorator_SetEachPlayer");
-static_assert(offsetof(UnionRichTextBlockImageDecorator_SetEachPlayer, InEachPlayer) == 0x000000, "Member 'UnionRichTextBlockImageDecorator_SetEachPlayer::InEachPlayer' has a wrong offset!");
+DUMPER7_ASSERTS_UnionRichTextBlockImageDecorator_SetEachPlayer;
 
 // Function UnionUI.UnionRichTextBlockImageDecorator.SetPlayerIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -691,9 +645,7 @@ struct UnionRichTextBlockImageDecorator_SetPlayerIndex final
 public:
 	int32                                         InIndex;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionRichTextBlockImageDecorator_SetPlayerIndex) == 0x000004, "Wrong alignment on UnionRichTextBlockImageDecorator_SetPlayerIndex");
-static_assert(sizeof(UnionRichTextBlockImageDecorator_SetPlayerIndex) == 0x000004, "Wrong size on UnionRichTextBlockImageDecorator_SetPlayerIndex");
-static_assert(offsetof(UnionRichTextBlockImageDecorator_SetPlayerIndex, InIndex) == 0x000000, "Member 'UnionRichTextBlockImageDecorator_SetPlayerIndex::InIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UnionRichTextBlockImageDecorator_SetPlayerIndex;
 
 // Function UnionUI.UnionScreenCaptureActor.SaveTextureToFile
 // 0x0028 (0x0028 - 0x0000)
@@ -704,11 +656,7 @@ public:
 	TArray<struct FColor>                         Bitmap;                                            // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                 InFilePath;                                        // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionScreenCaptureActor_SaveTextureToFile) == 0x000008, "Wrong alignment on UnionScreenCaptureActor_SaveTextureToFile");
-static_assert(sizeof(UnionScreenCaptureActor_SaveTextureToFile) == 0x000028, "Wrong size on UnionScreenCaptureActor_SaveTextureToFile");
-static_assert(offsetof(UnionScreenCaptureActor_SaveTextureToFile, InRenderTarget) == 0x000000, "Member 'UnionScreenCaptureActor_SaveTextureToFile::InRenderTarget' has a wrong offset!");
-static_assert(offsetof(UnionScreenCaptureActor_SaveTextureToFile, Bitmap) == 0x000008, "Member 'UnionScreenCaptureActor_SaveTextureToFile::Bitmap' has a wrong offset!");
-static_assert(offsetof(UnionScreenCaptureActor_SaveTextureToFile, InFilePath) == 0x000018, "Member 'UnionScreenCaptureActor_SaveTextureToFile::InFilePath' has a wrong offset!");
+DUMPER7_ASSERTS_UnionScreenCaptureActor_SaveTextureToFile;
 
 // Function UnionUI.UnionScreenCaptureActor.GetTextureRenderTarget2D
 // 0x0008 (0x0008 - 0x0000)
@@ -717,9 +665,7 @@ struct UnionScreenCaptureActor_GetTextureRenderTarget2D final
 public:
 	class UTextureRenderTarget2D*                 ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionScreenCaptureActor_GetTextureRenderTarget2D) == 0x000008, "Wrong alignment on UnionScreenCaptureActor_GetTextureRenderTarget2D");
-static_assert(sizeof(UnionScreenCaptureActor_GetTextureRenderTarget2D) == 0x000008, "Wrong size on UnionScreenCaptureActor_GetTextureRenderTarget2D");
-static_assert(offsetof(UnionScreenCaptureActor_GetTextureRenderTarget2D, ReturnValue) == 0x000000, "Member 'UnionScreenCaptureActor_GetTextureRenderTarget2D::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionScreenCaptureActor_GetTextureRenderTarget2D;
 
 // Function UnionUI.UnionUIWidgetBase.CallCustomActionbyID
 // 0x0004 (0x0004 - 0x0000)
@@ -728,9 +674,7 @@ struct UnionUIWidgetBase_CallCustomActionbyID final
 public:
 	int32                                         ActionIndex;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIWidgetBase_CallCustomActionbyID) == 0x000004, "Wrong alignment on UnionUIWidgetBase_CallCustomActionbyID");
-static_assert(sizeof(UnionUIWidgetBase_CallCustomActionbyID) == 0x000004, "Wrong size on UnionUIWidgetBase_CallCustomActionbyID");
-static_assert(offsetof(UnionUIWidgetBase_CallCustomActionbyID, ActionIndex) == 0x000000, "Member 'UnionUIWidgetBase_CallCustomActionbyID::ActionIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIWidgetBase_CallCustomActionbyID;
 
 // Function UnionUI.UnionUIWidgetBase.GetAllAnimations
 // 0x0010 (0x0010 - 0x0000)
@@ -739,9 +683,7 @@ struct UnionUIWidgetBase_GetAllAnimations final
 public:
 	TArray<class UWidgetAnimation*>               ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIWidgetBase_GetAllAnimations) == 0x000008, "Wrong alignment on UnionUIWidgetBase_GetAllAnimations");
-static_assert(sizeof(UnionUIWidgetBase_GetAllAnimations) == 0x000010, "Wrong size on UnionUIWidgetBase_GetAllAnimations");
-static_assert(offsetof(UnionUIWidgetBase_GetAllAnimations, ReturnValue) == 0x000000, "Member 'UnionUIWidgetBase_GetAllAnimations::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIWidgetBase_GetAllAnimations;
 
 // Function UnionUI.UnionUIWidgetBase.WidgetPlayAnim
 // 0x0004 (0x0004 - 0x0000)
@@ -750,9 +692,7 @@ struct UnionUIWidgetBase_WidgetPlayAnim final
 public:
 	int32                                         AnimIndex;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIWidgetBase_WidgetPlayAnim) == 0x000004, "Wrong alignment on UnionUIWidgetBase_WidgetPlayAnim");
-static_assert(sizeof(UnionUIWidgetBase_WidgetPlayAnim) == 0x000004, "Wrong size on UnionUIWidgetBase_WidgetPlayAnim");
-static_assert(offsetof(UnionUIWidgetBase_WidgetPlayAnim, AnimIndex) == 0x000000, "Member 'UnionUIWidgetBase_WidgetPlayAnim::AnimIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIWidgetBase_WidgetPlayAnim;
 
 // Function UnionUI.UnionUIInputWidget.RegisterMainMenu
 // 0x0004 (0x0004 - 0x0000)
@@ -761,9 +701,7 @@ struct UnionUIInputWidget_RegisterMainMenu final
 public:
 	int32                                         InPlayerIndex;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIInputWidget_RegisterMainMenu) == 0x000004, "Wrong alignment on UnionUIInputWidget_RegisterMainMenu");
-static_assert(sizeof(UnionUIInputWidget_RegisterMainMenu) == 0x000004, "Wrong size on UnionUIInputWidget_RegisterMainMenu");
-static_assert(offsetof(UnionUIInputWidget_RegisterMainMenu, InPlayerIndex) == 0x000000, "Member 'UnionUIInputWidget_RegisterMainMenu::InPlayerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIInputWidget_RegisterMainMenu;
 
 // Function UnionUI.UnionUIInputWidget.SetAutoRegisterMainMenuEnabled
 // 0x0001 (0x0001 - 0x0000)
@@ -772,9 +710,7 @@ struct UnionUIInputWidget_SetAutoRegisterMainMenuEnabled final
 public:
 	bool                                          Enabled;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIInputWidget_SetAutoRegisterMainMenuEnabled) == 0x000001, "Wrong alignment on UnionUIInputWidget_SetAutoRegisterMainMenuEnabled");
-static_assert(sizeof(UnionUIInputWidget_SetAutoRegisterMainMenuEnabled) == 0x000001, "Wrong size on UnionUIInputWidget_SetAutoRegisterMainMenuEnabled");
-static_assert(offsetof(UnionUIInputWidget_SetAutoRegisterMainMenuEnabled, Enabled) == 0x000000, "Member 'UnionUIInputWidget_SetAutoRegisterMainMenuEnabled::Enabled' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIInputWidget_SetAutoRegisterMainMenuEnabled;
 
 // Function UnionUI.UnionUIInputWidget.UnregisterMainMenu
 // 0x0004 (0x0004 - 0x0000)
@@ -783,9 +719,7 @@ struct UnionUIInputWidget_UnregisterMainMenu final
 public:
 	int32                                         InPlayerIndex;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIInputWidget_UnregisterMainMenu) == 0x000004, "Wrong alignment on UnionUIInputWidget_UnregisterMainMenu");
-static_assert(sizeof(UnionUIInputWidget_UnregisterMainMenu) == 0x000004, "Wrong size on UnionUIInputWidget_UnregisterMainMenu");
-static_assert(offsetof(UnionUIInputWidget_UnregisterMainMenu, InPlayerIndex) == 0x000000, "Member 'UnionUIInputWidget_UnregisterMainMenu::InPlayerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIInputWidget_UnregisterMainMenu;
 
 // Function UnionUI.UnionUIInputWidget.VisibilityChange
 // 0x0001 (0x0001 - 0x0000)
@@ -794,9 +728,7 @@ struct UnionUIInputWidget_VisibilityChange final
 public:
 	ESlateVisibility                              InVisibility;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIInputWidget_VisibilityChange) == 0x000001, "Wrong alignment on UnionUIInputWidget_VisibilityChange");
-static_assert(sizeof(UnionUIInputWidget_VisibilityChange) == 0x000001, "Wrong size on UnionUIInputWidget_VisibilityChange");
-static_assert(offsetof(UnionUIInputWidget_VisibilityChange, InVisibility) == 0x000000, "Member 'UnionUIInputWidget_VisibilityChange::InVisibility' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIInputWidget_VisibilityChange;
 
 // Function UnionUI.UnionUIInputWidget.GetFocusPlayerController
 // 0x0008 (0x0008 - 0x0000)
@@ -805,9 +737,7 @@ struct UnionUIInputWidget_GetFocusPlayerController final
 public:
 	class APlayerController*                      ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIInputWidget_GetFocusPlayerController) == 0x000008, "Wrong alignment on UnionUIInputWidget_GetFocusPlayerController");
-static_assert(sizeof(UnionUIInputWidget_GetFocusPlayerController) == 0x000008, "Wrong size on UnionUIInputWidget_GetFocusPlayerController");
-static_assert(offsetof(UnionUIInputWidget_GetFocusPlayerController, ReturnValue) == 0x000000, "Member 'UnionUIInputWidget_GetFocusPlayerController::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIInputWidget_GetFocusPlayerController;
 
 // Function UnionUI.UnionUIInputWidget.GetFocusPlayerIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -816,9 +746,7 @@ struct UnionUIInputWidget_GetFocusPlayerIndex final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIInputWidget_GetFocusPlayerIndex) == 0x000004, "Wrong alignment on UnionUIInputWidget_GetFocusPlayerIndex");
-static_assert(sizeof(UnionUIInputWidget_GetFocusPlayerIndex) == 0x000004, "Wrong size on UnionUIInputWidget_GetFocusPlayerIndex");
-static_assert(offsetof(UnionUIInputWidget_GetFocusPlayerIndex, ReturnValue) == 0x000000, "Member 'UnionUIInputWidget_GetFocusPlayerIndex::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIInputWidget_GetFocusPlayerIndex;
 
 // Function UnionUI.UnionUIInputWidget.GetRegistPriority
 // 0x0001 (0x0001 - 0x0000)
@@ -827,9 +755,7 @@ struct UnionUIInputWidget_GetRegistPriority final
 public:
 	EMainMenuRegistPriority                       ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIInputWidget_GetRegistPriority) == 0x000001, "Wrong alignment on UnionUIInputWidget_GetRegistPriority");
-static_assert(sizeof(UnionUIInputWidget_GetRegistPriority) == 0x000001, "Wrong size on UnionUIInputWidget_GetRegistPriority");
-static_assert(offsetof(UnionUIInputWidget_GetRegistPriority, ReturnValue) == 0x000000, "Member 'UnionUIInputWidget_GetRegistPriority::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIInputWidget_GetRegistPriority;
 
 // Function UnionUI.UnionUIButtonBaseCore.GetNavigationExplicitWidget
 // 0x0018 (0x0018 - 0x0000)
@@ -842,11 +768,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(UnionUIButtonBaseCore_GetNavigationExplicitWidget) == 0x000008, "Wrong alignment on UnionUIButtonBaseCore_GetNavigationExplicitWidget");
-static_assert(sizeof(UnionUIButtonBaseCore_GetNavigationExplicitWidget) == 0x000018, "Wrong size on UnionUIButtonBaseCore_GetNavigationExplicitWidget");
-static_assert(offsetof(UnionUIButtonBaseCore_GetNavigationExplicitWidget, Direction) == 0x000000, "Member 'UnionUIButtonBaseCore_GetNavigationExplicitWidget::Direction' has a wrong offset!");
-static_assert(offsetof(UnionUIButtonBaseCore_GetNavigationExplicitWidget, FocusToWidget) == 0x000008, "Member 'UnionUIButtonBaseCore_GetNavigationExplicitWidget::FocusToWidget' has a wrong offset!");
-static_assert(offsetof(UnionUIButtonBaseCore_GetNavigationExplicitWidget, ReturnValue) == 0x000010, "Member 'UnionUIButtonBaseCore_GetNavigationExplicitWidget::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonBaseCore_GetNavigationExplicitWidget;
 
 // Function UnionUI.UnionUIButtonBaseCore.PlayButtonAnimation
 // 0x0010 (0x0010 - 0x0000)
@@ -856,10 +778,7 @@ public:
 	class UWidgetAnimation*                       Animation;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UWidgetAnimation*                       LoopAnimation;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonBaseCore_PlayButtonAnimation) == 0x000008, "Wrong alignment on UnionUIButtonBaseCore_PlayButtonAnimation");
-static_assert(sizeof(UnionUIButtonBaseCore_PlayButtonAnimation) == 0x000010, "Wrong size on UnionUIButtonBaseCore_PlayButtonAnimation");
-static_assert(offsetof(UnionUIButtonBaseCore_PlayButtonAnimation, Animation) == 0x000000, "Member 'UnionUIButtonBaseCore_PlayButtonAnimation::Animation' has a wrong offset!");
-static_assert(offsetof(UnionUIButtonBaseCore_PlayButtonAnimation, LoopAnimation) == 0x000008, "Member 'UnionUIButtonBaseCore_PlayButtonAnimation::LoopAnimation' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonBaseCore_PlayButtonAnimation;
 
 // Function UnionUI.UnionUIButtonBaseCore.PlayButtonAnimationWithFinished
 // 0x0020 (0x0020 - 0x0000)
@@ -870,11 +789,7 @@ public:
 	class UWidgetAnimation*                       LoopAnimation;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TDelegate<void(bool Aborted)>                 OnFninished;                                       // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonBaseCore_PlayButtonAnimationWithFinished) == 0x000008, "Wrong alignment on UnionUIButtonBaseCore_PlayButtonAnimationWithFinished");
-static_assert(sizeof(UnionUIButtonBaseCore_PlayButtonAnimationWithFinished) == 0x000020, "Wrong size on UnionUIButtonBaseCore_PlayButtonAnimationWithFinished");
-static_assert(offsetof(UnionUIButtonBaseCore_PlayButtonAnimationWithFinished, Animation) == 0x000000, "Member 'UnionUIButtonBaseCore_PlayButtonAnimationWithFinished::Animation' has a wrong offset!");
-static_assert(offsetof(UnionUIButtonBaseCore_PlayButtonAnimationWithFinished, LoopAnimation) == 0x000008, "Member 'UnionUIButtonBaseCore_PlayButtonAnimationWithFinished::LoopAnimation' has a wrong offset!");
-static_assert(offsetof(UnionUIButtonBaseCore_PlayButtonAnimationWithFinished, OnFninished) == 0x000010, "Member 'UnionUIButtonBaseCore_PlayButtonAnimationWithFinished::OnFninished' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonBaseCore_PlayButtonAnimationWithFinished;
 
 // Function UnionUI.UnionUIButtonBaseCore.SetChangeableButtonState
 // 0x0001 (0x0001 - 0x0000)
@@ -883,9 +798,7 @@ struct UnionUIButtonBaseCore_SetChangeableButtonState final
 public:
 	bool                                          InChangeableButtonState;                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonBaseCore_SetChangeableButtonState) == 0x000001, "Wrong alignment on UnionUIButtonBaseCore_SetChangeableButtonState");
-static_assert(sizeof(UnionUIButtonBaseCore_SetChangeableButtonState) == 0x000001, "Wrong size on UnionUIButtonBaseCore_SetChangeableButtonState");
-static_assert(offsetof(UnionUIButtonBaseCore_SetChangeableButtonState, InChangeableButtonState) == 0x000000, "Member 'UnionUIButtonBaseCore_SetChangeableButtonState::InChangeableButtonState' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonBaseCore_SetChangeableButtonState;
 
 // Function UnionUI.UnionUIButtonBaseCore.SetInteractableState
 // 0x0001 (0x0001 - 0x0000)
@@ -894,9 +807,7 @@ struct UnionUIButtonBaseCore_SetInteractableState final
 public:
 	bool                                          Interactable;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonBaseCore_SetInteractableState) == 0x000001, "Wrong alignment on UnionUIButtonBaseCore_SetInteractableState");
-static_assert(sizeof(UnionUIButtonBaseCore_SetInteractableState) == 0x000001, "Wrong size on UnionUIButtonBaseCore_SetInteractableState");
-static_assert(offsetof(UnionUIButtonBaseCore_SetInteractableState, Interactable) == 0x000000, "Member 'UnionUIButtonBaseCore_SetInteractableState::Interactable' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonBaseCore_SetInteractableState;
 
 // Function UnionUI.UnionUIButtonBaseCore.SetMouseInteractionButton
 // 0x0008 (0x0008 - 0x0000)
@@ -905,9 +816,7 @@ struct UnionUIButtonBaseCore_SetMouseInteractionButton final
 public:
 	class UButton*                                InMouseInteractionButton;                          // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonBaseCore_SetMouseInteractionButton) == 0x000008, "Wrong alignment on UnionUIButtonBaseCore_SetMouseInteractionButton");
-static_assert(sizeof(UnionUIButtonBaseCore_SetMouseInteractionButton) == 0x000008, "Wrong size on UnionUIButtonBaseCore_SetMouseInteractionButton");
-static_assert(offsetof(UnionUIButtonBaseCore_SetMouseInteractionButton, InMouseInteractionButton) == 0x000000, "Member 'UnionUIButtonBaseCore_SetMouseInteractionButton::InMouseInteractionButton' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonBaseCore_SetMouseInteractionButton;
 
 // Function UnionUI.UnionUIButtonBaseCore.SetNavigationExplicitWidget
 // 0x0010 (0x0010 - 0x0000)
@@ -918,10 +827,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                FocusToWidget;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonBaseCore_SetNavigationExplicitWidget) == 0x000008, "Wrong alignment on UnionUIButtonBaseCore_SetNavigationExplicitWidget");
-static_assert(sizeof(UnionUIButtonBaseCore_SetNavigationExplicitWidget) == 0x000010, "Wrong size on UnionUIButtonBaseCore_SetNavigationExplicitWidget");
-static_assert(offsetof(UnionUIButtonBaseCore_SetNavigationExplicitWidget, Direction) == 0x000000, "Member 'UnionUIButtonBaseCore_SetNavigationExplicitWidget::Direction' has a wrong offset!");
-static_assert(offsetof(UnionUIButtonBaseCore_SetNavigationExplicitWidget, FocusToWidget) == 0x000008, "Member 'UnionUIButtonBaseCore_SetNavigationExplicitWidget::FocusToWidget' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonBaseCore_SetNavigationExplicitWidget;
 
 // Function UnionUI.UnionUIButtonBaseCore.StartDelayEnable
 // 0x0004 (0x0004 - 0x0000)
@@ -930,9 +836,7 @@ struct UnionUIButtonBaseCore_StartDelayEnable final
 public:
 	float                                         Duration;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonBaseCore_StartDelayEnable) == 0x000004, "Wrong alignment on UnionUIButtonBaseCore_StartDelayEnable");
-static_assert(sizeof(UnionUIButtonBaseCore_StartDelayEnable) == 0x000004, "Wrong size on UnionUIButtonBaseCore_StartDelayEnable");
-static_assert(offsetof(UnionUIButtonBaseCore_StartDelayEnable, Duration) == 0x000000, "Member 'UnionUIButtonBaseCore_StartDelayEnable::Duration' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonBaseCore_StartDelayEnable;
 
 // Function UnionUI.UnionUIButtonBaseCore.GetChangeableButtonState
 // 0x0001 (0x0001 - 0x0000)
@@ -941,9 +845,7 @@ struct UnionUIButtonBaseCore_GetChangeableButtonState final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonBaseCore_GetChangeableButtonState) == 0x000001, "Wrong alignment on UnionUIButtonBaseCore_GetChangeableButtonState");
-static_assert(sizeof(UnionUIButtonBaseCore_GetChangeableButtonState) == 0x000001, "Wrong size on UnionUIButtonBaseCore_GetChangeableButtonState");
-static_assert(offsetof(UnionUIButtonBaseCore_GetChangeableButtonState, ReturnValue) == 0x000000, "Member 'UnionUIButtonBaseCore_GetChangeableButtonState::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonBaseCore_GetChangeableButtonState;
 
 // Function UnionUI.UnionUIButtonBaseCore.GetMouseInteractionButton
 // 0x0008 (0x0008 - 0x0000)
@@ -952,9 +854,7 @@ struct UnionUIButtonBaseCore_GetMouseInteractionButton final
 public:
 	class UButton*                                ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonBaseCore_GetMouseInteractionButton) == 0x000008, "Wrong alignment on UnionUIButtonBaseCore_GetMouseInteractionButton");
-static_assert(sizeof(UnionUIButtonBaseCore_GetMouseInteractionButton) == 0x000008, "Wrong size on UnionUIButtonBaseCore_GetMouseInteractionButton");
-static_assert(offsetof(UnionUIButtonBaseCore_GetMouseInteractionButton, ReturnValue) == 0x000000, "Member 'UnionUIButtonBaseCore_GetMouseInteractionButton::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonBaseCore_GetMouseInteractionButton;
 
 // Function UnionUI.UnionUIButtonBase.CallOnDecision
 // 0x0008 (0x0008 - 0x0000)
@@ -963,9 +863,7 @@ struct UnionUIButtonBase_CallOnDecision final
 public:
 	class UUnionUIButtonBase*                     InButton;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonBase_CallOnDecision) == 0x000008, "Wrong alignment on UnionUIButtonBase_CallOnDecision");
-static_assert(sizeof(UnionUIButtonBase_CallOnDecision) == 0x000008, "Wrong size on UnionUIButtonBase_CallOnDecision");
-static_assert(offsetof(UnionUIButtonBase_CallOnDecision, InButton) == 0x000000, "Member 'UnionUIButtonBase_CallOnDecision::InButton' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonBase_CallOnDecision;
 
 // Function UnionUI.UnionUIButtonBase.CallOnOnCancel
 // 0x0008 (0x0008 - 0x0000)
@@ -974,9 +872,7 @@ struct UnionUIButtonBase_CallOnOnCancel final
 public:
 	class UUnionUIButtonBase*                     InButton;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonBase_CallOnOnCancel) == 0x000008, "Wrong alignment on UnionUIButtonBase_CallOnOnCancel");
-static_assert(sizeof(UnionUIButtonBase_CallOnOnCancel) == 0x000008, "Wrong size on UnionUIButtonBase_CallOnOnCancel");
-static_assert(offsetof(UnionUIButtonBase_CallOnOnCancel, InButton) == 0x000000, "Member 'UnionUIButtonBase_CallOnOnCancel::InButton' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonBase_CallOnOnCancel;
 
 // Function UnionUI.UnionUIButtonBase.DisableMouseClick
 // 0x0004 (0x0004 - 0x0000)
@@ -985,9 +881,7 @@ struct UnionUIButtonBase_DisableMouseClick final
 public:
 	float                                         InAutoOnTime;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonBase_DisableMouseClick) == 0x000004, "Wrong alignment on UnionUIButtonBase_DisableMouseClick");
-static_assert(sizeof(UnionUIButtonBase_DisableMouseClick) == 0x000004, "Wrong size on UnionUIButtonBase_DisableMouseClick");
-static_assert(offsetof(UnionUIButtonBase_DisableMouseClick, InAutoOnTime) == 0x000000, "Member 'UnionUIButtonBase_DisableMouseClick::InAutoOnTime' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonBase_DisableMouseClick;
 
 // Function UnionUI.UnionUIButtonBase.DisableMouseControl
 // 0x0004 (0x0004 - 0x0000)
@@ -996,9 +890,7 @@ struct UnionUIButtonBase_DisableMouseControl final
 public:
 	float                                         InAutoOnTime;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonBase_DisableMouseControl) == 0x000004, "Wrong alignment on UnionUIButtonBase_DisableMouseControl");
-static_assert(sizeof(UnionUIButtonBase_DisableMouseControl) == 0x000004, "Wrong size on UnionUIButtonBase_DisableMouseControl");
-static_assert(offsetof(UnionUIButtonBase_DisableMouseControl, InAutoOnTime) == 0x000000, "Member 'UnionUIButtonBase_DisableMouseControl::InAutoOnTime' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonBase_DisableMouseControl;
 
 // Function UnionUI.UnionUIButtonBase.DisableMouseHover
 // 0x0004 (0x0004 - 0x0000)
@@ -1007,9 +899,7 @@ struct UnionUIButtonBase_DisableMouseHover final
 public:
 	float                                         InAutoOnTime;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonBase_DisableMouseHover) == 0x000004, "Wrong alignment on UnionUIButtonBase_DisableMouseHover");
-static_assert(sizeof(UnionUIButtonBase_DisableMouseHover) == 0x000004, "Wrong size on UnionUIButtonBase_DisableMouseHover");
-static_assert(offsetof(UnionUIButtonBase_DisableMouseHover, InAutoOnTime) == 0x000000, "Member 'UnionUIButtonBase_DisableMouseHover::InAutoOnTime' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonBase_DisableMouseHover;
 
 // Function UnionUI.UnionUIButtonBase.SetButtonIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -1018,9 +908,7 @@ struct UnionUIButtonBase_SetButtonIndex final
 public:
 	int32                                         NewButtonIndex;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonBase_SetButtonIndex) == 0x000004, "Wrong alignment on UnionUIButtonBase_SetButtonIndex");
-static_assert(sizeof(UnionUIButtonBase_SetButtonIndex) == 0x000004, "Wrong size on UnionUIButtonBase_SetButtonIndex");
-static_assert(offsetof(UnionUIButtonBase_SetButtonIndex, NewButtonIndex) == 0x000000, "Member 'UnionUIButtonBase_SetButtonIndex::NewButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonBase_SetButtonIndex;
 
 // Function UnionUI.UnionUIButtonBase.SetFocusSoundEnable
 // 0x0001 (0x0001 - 0x0000)
@@ -1029,9 +917,7 @@ struct UnionUIButtonBase_SetFocusSoundEnable final
 public:
 	bool                                          bEnable;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonBase_SetFocusSoundEnable) == 0x000001, "Wrong alignment on UnionUIButtonBase_SetFocusSoundEnable");
-static_assert(sizeof(UnionUIButtonBase_SetFocusSoundEnable) == 0x000001, "Wrong size on UnionUIButtonBase_SetFocusSoundEnable");
-static_assert(offsetof(UnionUIButtonBase_SetFocusSoundEnable, bEnable) == 0x000000, "Member 'UnionUIButtonBase_SetFocusSoundEnable::bEnable' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonBase_SetFocusSoundEnable;
 
 // Function UnionUI.UnionUIAnimScrollControl.CalcNextCenterElementIndex
 // 0x0008 (0x0008 - 0x0000)
@@ -1042,10 +928,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIAnimScrollControl_CalcNextCenterElementIndex) == 0x000004, "Wrong alignment on UnionUIAnimScrollControl_CalcNextCenterElementIndex");
-static_assert(sizeof(UnionUIAnimScrollControl_CalcNextCenterElementIndex) == 0x000008, "Wrong size on UnionUIAnimScrollControl_CalcNextCenterElementIndex");
-static_assert(offsetof(UnionUIAnimScrollControl_CalcNextCenterElementIndex, InLastAnimDownRight) == 0x000000, "Member 'UnionUIAnimScrollControl_CalcNextCenterElementIndex::InLastAnimDownRight' has a wrong offset!");
-static_assert(offsetof(UnionUIAnimScrollControl_CalcNextCenterElementIndex, ReturnValue) == 0x000004, "Member 'UnionUIAnimScrollControl_CalcNextCenterElementIndex::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIAnimScrollControl_CalcNextCenterElementIndex;
 
 // Function UnionUI.UnionUIAnimScrollControl.PlayScrollAnimation
 // 0x0001 (0x0001 - 0x0000)
@@ -1054,9 +937,7 @@ struct UnionUIAnimScrollControl_PlayScrollAnimation final
 public:
 	EUnionUIControlDir                            ScrollDir;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIAnimScrollControl_PlayScrollAnimation) == 0x000001, "Wrong alignment on UnionUIAnimScrollControl_PlayScrollAnimation");
-static_assert(sizeof(UnionUIAnimScrollControl_PlayScrollAnimation) == 0x000001, "Wrong size on UnionUIAnimScrollControl_PlayScrollAnimation");
-static_assert(offsetof(UnionUIAnimScrollControl_PlayScrollAnimation, ScrollDir) == 0x000000, "Member 'UnionUIAnimScrollControl_PlayScrollAnimation::ScrollDir' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIAnimScrollControl_PlayScrollAnimation;
 
 // Function UnionUI.UnionUIAnimScrollControl.Repopurate
 // 0x0001 (0x0001 - 0x0000)
@@ -1065,9 +946,7 @@ struct UnionUIAnimScrollControl_Repopurate final
 public:
 	bool                                          bDownRight;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIAnimScrollControl_Repopurate) == 0x000001, "Wrong alignment on UnionUIAnimScrollControl_Repopurate");
-static_assert(sizeof(UnionUIAnimScrollControl_Repopurate) == 0x000001, "Wrong size on UnionUIAnimScrollControl_Repopurate");
-static_assert(offsetof(UnionUIAnimScrollControl_Repopurate, bDownRight) == 0x000000, "Member 'UnionUIAnimScrollControl_Repopurate::bDownRight' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIAnimScrollControl_Repopurate;
 
 // Function UnionUI.UnionUIAnimScrollControl.SetControllableFlag
 // 0x0001 (0x0001 - 0x0000)
@@ -1076,9 +955,7 @@ struct UnionUIAnimScrollControl_SetControllableFlag final
 public:
 	bool                                          InControllable;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIAnimScrollControl_SetControllableFlag) == 0x000001, "Wrong alignment on UnionUIAnimScrollControl_SetControllableFlag");
-static_assert(sizeof(UnionUIAnimScrollControl_SetControllableFlag) == 0x000001, "Wrong size on UnionUIAnimScrollControl_SetControllableFlag");
-static_assert(offsetof(UnionUIAnimScrollControl_SetControllableFlag, InControllable) == 0x000000, "Member 'UnionUIAnimScrollControl_SetControllableFlag::InControllable' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIAnimScrollControl_SetControllableFlag;
 
 // Function UnionUI.UnionUIAnimScrollControl.SetElementTexture
 // 0x0010 (0x0010 - 0x0000)
@@ -1089,10 +966,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             InTexture;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIAnimScrollControl_SetElementTexture) == 0x000008, "Wrong alignment on UnionUIAnimScrollControl_SetElementTexture");
-static_assert(sizeof(UnionUIAnimScrollControl_SetElementTexture) == 0x000010, "Wrong size on UnionUIAnimScrollControl_SetElementTexture");
-static_assert(offsetof(UnionUIAnimScrollControl_SetElementTexture, InIndex) == 0x000000, "Member 'UnionUIAnimScrollControl_SetElementTexture::InIndex' has a wrong offset!");
-static_assert(offsetof(UnionUIAnimScrollControl_SetElementTexture, InTexture) == 0x000008, "Member 'UnionUIAnimScrollControl_SetElementTexture::InTexture' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIAnimScrollControl_SetElementTexture;
 
 // Function UnionUI.UnionUIAnimScrollControl.SetScrollAnimation
 // 0x0010 (0x0010 - 0x0000)
@@ -1103,10 +977,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidgetAnimation*                       Animation;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIAnimScrollControl_SetScrollAnimation) == 0x000008, "Wrong alignment on UnionUIAnimScrollControl_SetScrollAnimation");
-static_assert(sizeof(UnionUIAnimScrollControl_SetScrollAnimation) == 0x000010, "Wrong size on UnionUIAnimScrollControl_SetScrollAnimation");
-static_assert(offsetof(UnionUIAnimScrollControl_SetScrollAnimation, ControlDir) == 0x000000, "Member 'UnionUIAnimScrollControl_SetScrollAnimation::ControlDir' has a wrong offset!");
-static_assert(offsetof(UnionUIAnimScrollControl_SetScrollAnimation, Animation) == 0x000008, "Member 'UnionUIAnimScrollControl_SetScrollAnimation::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIAnimScrollControl_SetScrollAnimation;
 
 // Function UnionUI.UnionUIAnimScrollControl.GetCenterElementIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -1115,9 +986,7 @@ struct UnionUIAnimScrollControl_GetCenterElementIndex final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIAnimScrollControl_GetCenterElementIndex) == 0x000004, "Wrong alignment on UnionUIAnimScrollControl_GetCenterElementIndex");
-static_assert(sizeof(UnionUIAnimScrollControl_GetCenterElementIndex) == 0x000004, "Wrong size on UnionUIAnimScrollControl_GetCenterElementIndex");
-static_assert(offsetof(UnionUIAnimScrollControl_GetCenterElementIndex, ReturnValue) == 0x000000, "Member 'UnionUIAnimScrollControl_GetCenterElementIndex::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIAnimScrollControl_GetCenterElementIndex;
 
 // Function UnionUI.UnionUIAnimScrollControl.GetControllableFlag
 // 0x0001 (0x0001 - 0x0000)
@@ -1126,9 +995,7 @@ struct UnionUIAnimScrollControl_GetControllableFlag final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIAnimScrollControl_GetControllableFlag) == 0x000001, "Wrong alignment on UnionUIAnimScrollControl_GetControllableFlag");
-static_assert(sizeof(UnionUIAnimScrollControl_GetControllableFlag) == 0x000001, "Wrong size on UnionUIAnimScrollControl_GetControllableFlag");
-static_assert(offsetof(UnionUIAnimScrollControl_GetControllableFlag, ReturnValue) == 0x000000, "Member 'UnionUIAnimScrollControl_GetControllableFlag::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIAnimScrollControl_GetControllableFlag;
 
 // Function UnionUI.UnionUIAnimScrollControl.GetElementArrIndexbyPivot
 // 0x0008 (0x0008 - 0x0000)
@@ -1138,10 +1005,7 @@ public:
 	int32                                         Distance;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIAnimScrollControl_GetElementArrIndexbyPivot) == 0x000004, "Wrong alignment on UnionUIAnimScrollControl_GetElementArrIndexbyPivot");
-static_assert(sizeof(UnionUIAnimScrollControl_GetElementArrIndexbyPivot) == 0x000008, "Wrong size on UnionUIAnimScrollControl_GetElementArrIndexbyPivot");
-static_assert(offsetof(UnionUIAnimScrollControl_GetElementArrIndexbyPivot, Distance) == 0x000000, "Member 'UnionUIAnimScrollControl_GetElementArrIndexbyPivot::Distance' has a wrong offset!");
-static_assert(offsetof(UnionUIAnimScrollControl_GetElementArrIndexbyPivot, ReturnValue) == 0x000004, "Member 'UnionUIAnimScrollControl_GetElementArrIndexbyPivot::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIAnimScrollControl_GetElementArrIndexbyPivot;
 
 // Function UnionUI.UnionUIButton.SetEnableMouseInput
 // 0x0001 (0x0001 - 0x0000)
@@ -1150,9 +1014,7 @@ struct UnionUIButton_SetEnableMouseInput final
 public:
 	bool                                          IsEnable;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButton_SetEnableMouseInput) == 0x000001, "Wrong alignment on UnionUIButton_SetEnableMouseInput");
-static_assert(sizeof(UnionUIButton_SetEnableMouseInput) == 0x000001, "Wrong size on UnionUIButton_SetEnableMouseInput");
-static_assert(offsetof(UnionUIButton_SetEnableMouseInput, IsEnable) == 0x000000, "Member 'UnionUIButton_SetEnableMouseInput::IsEnable' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButton_SetEnableMouseInput;
 
 // Function UnionUI.UnionUIButtonStandard.Select
 // 0x0001 (0x0001 - 0x0000)
@@ -1161,9 +1023,7 @@ struct UnionUIButtonStandard_Select final
 public:
 	bool                                          bIsSoundPass;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonStandard_Select) == 0x000001, "Wrong alignment on UnionUIButtonStandard_Select");
-static_assert(sizeof(UnionUIButtonStandard_Select) == 0x000001, "Wrong size on UnionUIButtonStandard_Select");
-static_assert(offsetof(UnionUIButtonStandard_Select, bIsSoundPass) == 0x000000, "Member 'UnionUIButtonStandard_Select::bIsSoundPass' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonStandard_Select;
 
 // Function UnionUI.UnionUIButtonStandard.SetDecidedKeep
 // 0x0001 (0x0001 - 0x0000)
@@ -1172,9 +1032,7 @@ struct UnionUIButtonStandard_SetDecidedKeep final
 public:
 	bool                                          DecidedKeep;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonStandard_SetDecidedKeep) == 0x000001, "Wrong alignment on UnionUIButtonStandard_SetDecidedKeep");
-static_assert(sizeof(UnionUIButtonStandard_SetDecidedKeep) == 0x000001, "Wrong size on UnionUIButtonStandard_SetDecidedKeep");
-static_assert(offsetof(UnionUIButtonStandard_SetDecidedKeep, DecidedKeep) == 0x000000, "Member 'UnionUIButtonStandard_SetDecidedKeep::DecidedKeep' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonStandard_SetDecidedKeep;
 
 // Function UnionUI.UnionUIButtonStandard.SetSelectable
 // 0x0001 (0x0001 - 0x0000)
@@ -1183,9 +1041,7 @@ struct UnionUIButtonStandard_SetSelectable final
 public:
 	bool                                          Selectable;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonStandard_SetSelectable) == 0x000001, "Wrong alignment on UnionUIButtonStandard_SetSelectable");
-static_assert(sizeof(UnionUIButtonStandard_SetSelectable) == 0x000001, "Wrong size on UnionUIButtonStandard_SetSelectable");
-static_assert(offsetof(UnionUIButtonStandard_SetSelectable, Selectable) == 0x000000, "Member 'UnionUIButtonStandard_SetSelectable::Selectable' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonStandard_SetSelectable;
 
 // Function UnionUI.UnionUIButtonStandard.SetToggleEnabled
 // 0x0001 (0x0001 - 0x0000)
@@ -1194,9 +1050,7 @@ struct UnionUIButtonStandard_SetToggleEnabled final
 public:
 	bool                                          ToggleEnabled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonStandard_SetToggleEnabled) == 0x000001, "Wrong alignment on UnionUIButtonStandard_SetToggleEnabled");
-static_assert(sizeof(UnionUIButtonStandard_SetToggleEnabled) == 0x000001, "Wrong size on UnionUIButtonStandard_SetToggleEnabled");
-static_assert(offsetof(UnionUIButtonStandard_SetToggleEnabled, ToggleEnabled) == 0x000000, "Member 'UnionUIButtonStandard_SetToggleEnabled::ToggleEnabled' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonStandard_SetToggleEnabled;
 
 // Function UnionUI.UnionUIButtonStandard.IsDecided
 // 0x0001 (0x0001 - 0x0000)
@@ -1205,9 +1059,7 @@ struct UnionUIButtonStandard_IsDecided final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonStandard_IsDecided) == 0x000001, "Wrong alignment on UnionUIButtonStandard_IsDecided");
-static_assert(sizeof(UnionUIButtonStandard_IsDecided) == 0x000001, "Wrong size on UnionUIButtonStandard_IsDecided");
-static_assert(offsetof(UnionUIButtonStandard_IsDecided, ReturnValue) == 0x000000, "Member 'UnionUIButtonStandard_IsDecided::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonStandard_IsDecided;
 
 // Function UnionUI.UnionUIButtonStandard.IsSelectable
 // 0x0001 (0x0001 - 0x0000)
@@ -1216,9 +1068,7 @@ struct UnionUIButtonStandard_IsSelectable final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonStandard_IsSelectable) == 0x000001, "Wrong alignment on UnionUIButtonStandard_IsSelectable");
-static_assert(sizeof(UnionUIButtonStandard_IsSelectable) == 0x000001, "Wrong size on UnionUIButtonStandard_IsSelectable");
-static_assert(offsetof(UnionUIButtonStandard_IsSelectable, ReturnValue) == 0x000000, "Member 'UnionUIButtonStandard_IsSelectable::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonStandard_IsSelectable;
 
 // Function UnionUI.UnionUIButtonStandard.IsSelected
 // 0x0001 (0x0001 - 0x0000)
@@ -1227,9 +1077,7 @@ struct UnionUIButtonStandard_IsSelected final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonStandard_IsSelected) == 0x000001, "Wrong alignment on UnionUIButtonStandard_IsSelected");
-static_assert(sizeof(UnionUIButtonStandard_IsSelected) == 0x000001, "Wrong size on UnionUIButtonStandard_IsSelected");
-static_assert(offsetof(UnionUIButtonStandard_IsSelected, ReturnValue) == 0x000000, "Member 'UnionUIButtonStandard_IsSelected::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonStandard_IsSelected;
 
 // Function UnionUI.UnionUICapture2DActor.AddShowOnlyActors
 // 0x0010 (0x0010 - 0x0000)
@@ -1238,9 +1086,7 @@ struct UnionUICapture2DActor_AddShowOnlyActors final
 public:
 	TArray<class AActor*>                         InShowOnlyActors;                                  // 0x0000(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUICapture2DActor_AddShowOnlyActors) == 0x000008, "Wrong alignment on UnionUICapture2DActor_AddShowOnlyActors");
-static_assert(sizeof(UnionUICapture2DActor_AddShowOnlyActors) == 0x000010, "Wrong size on UnionUICapture2DActor_AddShowOnlyActors");
-static_assert(offsetof(UnionUICapture2DActor_AddShowOnlyActors, InShowOnlyActors) == 0x000000, "Member 'UnionUICapture2DActor_AddShowOnlyActors::InShowOnlyActors' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUICapture2DActor_AddShowOnlyActors;
 
 // Function UnionUI.UnionUICapture2DActor.InitTexture
 // 0x0008 (0x0008 - 0x0000)
@@ -1250,10 +1096,7 @@ public:
 	int32                                         Width;                                             // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Height;                                            // 0x0004(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUICapture2DActor_InitTexture) == 0x000004, "Wrong alignment on UnionUICapture2DActor_InitTexture");
-static_assert(sizeof(UnionUICapture2DActor_InitTexture) == 0x000008, "Wrong size on UnionUICapture2DActor_InitTexture");
-static_assert(offsetof(UnionUICapture2DActor_InitTexture, Width) == 0x000000, "Member 'UnionUICapture2DActor_InitTexture::Width' has a wrong offset!");
-static_assert(offsetof(UnionUICapture2DActor_InitTexture, Height) == 0x000004, "Member 'UnionUICapture2DActor_InitTexture::Height' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUICapture2DActor_InitTexture;
 
 // Function UnionUI.UnionUICapture2DActor.RemoveShowOnlyActors
 // 0x0008 (0x0008 - 0x0000)
@@ -1262,9 +1105,7 @@ struct UnionUICapture2DActor_RemoveShowOnlyActors final
 public:
 	class AActor*                                 InShowOnlyActor;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUICapture2DActor_RemoveShowOnlyActors) == 0x000008, "Wrong alignment on UnionUICapture2DActor_RemoveShowOnlyActors");
-static_assert(sizeof(UnionUICapture2DActor_RemoveShowOnlyActors) == 0x000008, "Wrong size on UnionUICapture2DActor_RemoveShowOnlyActors");
-static_assert(offsetof(UnionUICapture2DActor_RemoveShowOnlyActors, InShowOnlyActor) == 0x000000, "Member 'UnionUICapture2DActor_RemoveShowOnlyActors::InShowOnlyActor' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUICapture2DActor_RemoveShowOnlyActors;
 
 // Function UnionUI.UnionUICapture2DActor.RemoveShowOnlyActors_Multi
 // 0x0010 (0x0010 - 0x0000)
@@ -1273,9 +1114,7 @@ struct UnionUICapture2DActor_RemoveShowOnlyActors_Multi final
 public:
 	TArray<class AActor*>                         InShowOnlyActors;                                  // 0x0000(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUICapture2DActor_RemoveShowOnlyActors_Multi) == 0x000008, "Wrong alignment on UnionUICapture2DActor_RemoveShowOnlyActors_Multi");
-static_assert(sizeof(UnionUICapture2DActor_RemoveShowOnlyActors_Multi) == 0x000010, "Wrong size on UnionUICapture2DActor_RemoveShowOnlyActors_Multi");
-static_assert(offsetof(UnionUICapture2DActor_RemoveShowOnlyActors_Multi, InShowOnlyActors) == 0x000000, "Member 'UnionUICapture2DActor_RemoveShowOnlyActors_Multi::InShowOnlyActors' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUICapture2DActor_RemoveShowOnlyActors_Multi;
 
 // Function UnionUI.UnionUICapture2DActor.SetShowOnlyActors
 // 0x0010 (0x0010 - 0x0000)
@@ -1284,9 +1123,7 @@ struct UnionUICapture2DActor_SetShowOnlyActors final
 public:
 	TArray<class AActor*>                         ShowOnlyActors;                                    // 0x0000(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUICapture2DActor_SetShowOnlyActors) == 0x000008, "Wrong alignment on UnionUICapture2DActor_SetShowOnlyActors");
-static_assert(sizeof(UnionUICapture2DActor_SetShowOnlyActors) == 0x000010, "Wrong size on UnionUICapture2DActor_SetShowOnlyActors");
-static_assert(offsetof(UnionUICapture2DActor_SetShowOnlyActors, ShowOnlyActors) == 0x000000, "Member 'UnionUICapture2DActor_SetShowOnlyActors::ShowOnlyActors' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUICapture2DActor_SetShowOnlyActors;
 
 // Function UnionUI.UnionUICapture2DActor.GetRenderTarget2D
 // 0x0008 (0x0008 - 0x0000)
@@ -1295,9 +1132,7 @@ struct UnionUICapture2DActor_GetRenderTarget2D final
 public:
 	const class UTextureRenderTarget2D*           ReturnValue;                                       // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUICapture2DActor_GetRenderTarget2D) == 0x000008, "Wrong alignment on UnionUICapture2DActor_GetRenderTarget2D");
-static_assert(sizeof(UnionUICapture2DActor_GetRenderTarget2D) == 0x000008, "Wrong size on UnionUICapture2DActor_GetRenderTarget2D");
-static_assert(offsetof(UnionUICapture2DActor_GetRenderTarget2D, ReturnValue) == 0x000000, "Member 'UnionUICapture2DActor_GetRenderTarget2D::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUICapture2DActor_GetRenderTarget2D;
 
 // Function UnionUI.UnionUIButtonsPanel.AddFocusButton
 // 0x0008 (0x0008 - 0x0000)
@@ -1306,9 +1141,7 @@ struct UnionUIButtonsPanel_AddFocusButton final
 public:
 	class UUnionUIButtonBase*                     UnionButton;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonsPanel_AddFocusButton) == 0x000008, "Wrong alignment on UnionUIButtonsPanel_AddFocusButton");
-static_assert(sizeof(UnionUIButtonsPanel_AddFocusButton) == 0x000008, "Wrong size on UnionUIButtonsPanel_AddFocusButton");
-static_assert(offsetof(UnionUIButtonsPanel_AddFocusButton, UnionButton) == 0x000000, "Member 'UnionUIButtonsPanel_AddFocusButton::UnionButton' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonsPanel_AddFocusButton;
 
 // Function UnionUI.UnionUIButtonsPanel.GetLastFocusedButton
 // 0x0010 (0x0010 - 0x0000)
@@ -1319,10 +1152,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUnionUIButtonBase*                     ReturnValue;                                       // 0x0008(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonsPanel_GetLastFocusedButton) == 0x000008, "Wrong alignment on UnionUIButtonsPanel_GetLastFocusedButton");
-static_assert(sizeof(UnionUIButtonsPanel_GetLastFocusedButton) == 0x000010, "Wrong size on UnionUIButtonsPanel_GetLastFocusedButton");
-static_assert(offsetof(UnionUIButtonsPanel_GetLastFocusedButton, OutLastFocusedButtonIndex) == 0x000000, "Member 'UnionUIButtonsPanel_GetLastFocusedButton::OutLastFocusedButtonIndex' has a wrong offset!");
-static_assert(offsetof(UnionUIButtonsPanel_GetLastFocusedButton, ReturnValue) == 0x000008, "Member 'UnionUIButtonsPanel_GetLastFocusedButton::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonsPanel_GetLastFocusedButton;
 
 // Function UnionUI.UnionUIButtonsPanel.GetLastFocusedButtonByPlayerIndex
 // 0x0010 (0x0010 - 0x0000)
@@ -1333,11 +1163,7 @@ public:
 	int32                                         OutLastFocusedButtonIndex;                         // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UUnionUIButtonBase*                     ReturnValue;                                       // 0x0008(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonsPanel_GetLastFocusedButtonByPlayerIndex) == 0x000008, "Wrong alignment on UnionUIButtonsPanel_GetLastFocusedButtonByPlayerIndex");
-static_assert(sizeof(UnionUIButtonsPanel_GetLastFocusedButtonByPlayerIndex) == 0x000010, "Wrong size on UnionUIButtonsPanel_GetLastFocusedButtonByPlayerIndex");
-static_assert(offsetof(UnionUIButtonsPanel_GetLastFocusedButtonByPlayerIndex, PlayerControllerIndex) == 0x000000, "Member 'UnionUIButtonsPanel_GetLastFocusedButtonByPlayerIndex::PlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(UnionUIButtonsPanel_GetLastFocusedButtonByPlayerIndex, OutLastFocusedButtonIndex) == 0x000004, "Member 'UnionUIButtonsPanel_GetLastFocusedButtonByPlayerIndex::OutLastFocusedButtonIndex' has a wrong offset!");
-static_assert(offsetof(UnionUIButtonsPanel_GetLastFocusedButtonByPlayerIndex, ReturnValue) == 0x000008, "Member 'UnionUIButtonsPanel_GetLastFocusedButtonByPlayerIndex::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonsPanel_GetLastFocusedButtonByPlayerIndex;
 
 // Function UnionUI.UnionUIButtonsPanel.InitParam
 // 0x0008 (0x0008 - 0x0000)
@@ -1348,10 +1174,7 @@ public:
 	bool                                          InExclusiveFocus;                                  // 0x0004(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(UnionUIButtonsPanel_InitParam) == 0x000004, "Wrong alignment on UnionUIButtonsPanel_InitParam");
-static_assert(sizeof(UnionUIButtonsPanel_InitParam) == 0x000008, "Wrong size on UnionUIButtonsPanel_InitParam");
-static_assert(offsetof(UnionUIButtonsPanel_InitParam, InPanelIndex) == 0x000000, "Member 'UnionUIButtonsPanel_InitParam::InPanelIndex' has a wrong offset!");
-static_assert(offsetof(UnionUIButtonsPanel_InitParam, InExclusiveFocus) == 0x000004, "Member 'UnionUIButtonsPanel_InitParam::InExclusiveFocus' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonsPanel_InitParam;
 
 // Function UnionUI.UnionUIButtonsPanel.OnUIButtonsPanelCancelDownEvent_Impl
 // 0x0008 (0x0008 - 0x0000)
@@ -1360,9 +1183,7 @@ struct UnionUIButtonsPanel_OnUIButtonsPanelCancelDownEvent_Impl final
 public:
 	class UUnionUIButtonBase*                     UnionButton;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonsPanel_OnUIButtonsPanelCancelDownEvent_Impl) == 0x000008, "Wrong alignment on UnionUIButtonsPanel_OnUIButtonsPanelCancelDownEvent_Impl");
-static_assert(sizeof(UnionUIButtonsPanel_OnUIButtonsPanelCancelDownEvent_Impl) == 0x000008, "Wrong size on UnionUIButtonsPanel_OnUIButtonsPanelCancelDownEvent_Impl");
-static_assert(offsetof(UnionUIButtonsPanel_OnUIButtonsPanelCancelDownEvent_Impl, UnionButton) == 0x000000, "Member 'UnionUIButtonsPanel_OnUIButtonsPanelCancelDownEvent_Impl::UnionButton' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonsPanel_OnUIButtonsPanelCancelDownEvent_Impl;
 
 // Function UnionUI.UnionUIButtonsPanel.OnUIButtonsPanelCancelEvent_Impl
 // 0x0008 (0x0008 - 0x0000)
@@ -1371,9 +1192,7 @@ struct UnionUIButtonsPanel_OnUIButtonsPanelCancelEvent_Impl final
 public:
 	class UUnionUIButtonBase*                     UnionButton;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonsPanel_OnUIButtonsPanelCancelEvent_Impl) == 0x000008, "Wrong alignment on UnionUIButtonsPanel_OnUIButtonsPanelCancelEvent_Impl");
-static_assert(sizeof(UnionUIButtonsPanel_OnUIButtonsPanelCancelEvent_Impl) == 0x000008, "Wrong size on UnionUIButtonsPanel_OnUIButtonsPanelCancelEvent_Impl");
-static_assert(offsetof(UnionUIButtonsPanel_OnUIButtonsPanelCancelEvent_Impl, UnionButton) == 0x000000, "Member 'UnionUIButtonsPanel_OnUIButtonsPanelCancelEvent_Impl::UnionButton' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonsPanel_OnUIButtonsPanelCancelEvent_Impl;
 
 // Function UnionUI.UnionUIButtonsPanel.OnUIButtonsPanelDecisionDownEvent_Impl
 // 0x0008 (0x0008 - 0x0000)
@@ -1382,9 +1201,7 @@ struct UnionUIButtonsPanel_OnUIButtonsPanelDecisionDownEvent_Impl final
 public:
 	class UUnionUIButtonBase*                     UnionButton;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonsPanel_OnUIButtonsPanelDecisionDownEvent_Impl) == 0x000008, "Wrong alignment on UnionUIButtonsPanel_OnUIButtonsPanelDecisionDownEvent_Impl");
-static_assert(sizeof(UnionUIButtonsPanel_OnUIButtonsPanelDecisionDownEvent_Impl) == 0x000008, "Wrong size on UnionUIButtonsPanel_OnUIButtonsPanelDecisionDownEvent_Impl");
-static_assert(offsetof(UnionUIButtonsPanel_OnUIButtonsPanelDecisionDownEvent_Impl, UnionButton) == 0x000000, "Member 'UnionUIButtonsPanel_OnUIButtonsPanelDecisionDownEvent_Impl::UnionButton' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonsPanel_OnUIButtonsPanelDecisionDownEvent_Impl;
 
 // Function UnionUI.UnionUIButtonsPanel.OnUIButtonsPanelDecisionEvent_Impl
 // 0x0008 (0x0008 - 0x0000)
@@ -1393,9 +1210,7 @@ struct UnionUIButtonsPanel_OnUIButtonsPanelDecisionEvent_Impl final
 public:
 	class UUnionUIButtonBase*                     UnionButton;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonsPanel_OnUIButtonsPanelDecisionEvent_Impl) == 0x000008, "Wrong alignment on UnionUIButtonsPanel_OnUIButtonsPanelDecisionEvent_Impl");
-static_assert(sizeof(UnionUIButtonsPanel_OnUIButtonsPanelDecisionEvent_Impl) == 0x000008, "Wrong size on UnionUIButtonsPanel_OnUIButtonsPanelDecisionEvent_Impl");
-static_assert(offsetof(UnionUIButtonsPanel_OnUIButtonsPanelDecisionEvent_Impl, UnionButton) == 0x000000, "Member 'UnionUIButtonsPanel_OnUIButtonsPanelDecisionEvent_Impl::UnionButton' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonsPanel_OnUIButtonsPanelDecisionEvent_Impl;
 
 // Function UnionUI.UnionUIButtonsPanel.OnUIButtonsPanelDirectionEvent_Impl
 // 0x0010 (0x0010 - 0x0000)
@@ -1406,10 +1221,7 @@ public:
 	EUnionUIControlDir                            Dir;                                               // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(UnionUIButtonsPanel_OnUIButtonsPanelDirectionEvent_Impl) == 0x000008, "Wrong alignment on UnionUIButtonsPanel_OnUIButtonsPanelDirectionEvent_Impl");
-static_assert(sizeof(UnionUIButtonsPanel_OnUIButtonsPanelDirectionEvent_Impl) == 0x000010, "Wrong size on UnionUIButtonsPanel_OnUIButtonsPanelDirectionEvent_Impl");
-static_assert(offsetof(UnionUIButtonsPanel_OnUIButtonsPanelDirectionEvent_Impl, UnionButton) == 0x000000, "Member 'UnionUIButtonsPanel_OnUIButtonsPanelDirectionEvent_Impl::UnionButton' has a wrong offset!");
-static_assert(offsetof(UnionUIButtonsPanel_OnUIButtonsPanelDirectionEvent_Impl, Dir) == 0x000008, "Member 'UnionUIButtonsPanel_OnUIButtonsPanelDirectionEvent_Impl::Dir' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonsPanel_OnUIButtonsPanelDirectionEvent_Impl;
 
 // Function UnionUI.UnionUIButtonsPanel.OnUIButtonsPanelFaceTopEvent_Impl
 // 0x0008 (0x0008 - 0x0000)
@@ -1418,9 +1230,7 @@ struct UnionUIButtonsPanel_OnUIButtonsPanelFaceTopEvent_Impl final
 public:
 	class UUnionUIButtonBase*                     UnionButton;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonsPanel_OnUIButtonsPanelFaceTopEvent_Impl) == 0x000008, "Wrong alignment on UnionUIButtonsPanel_OnUIButtonsPanelFaceTopEvent_Impl");
-static_assert(sizeof(UnionUIButtonsPanel_OnUIButtonsPanelFaceTopEvent_Impl) == 0x000008, "Wrong size on UnionUIButtonsPanel_OnUIButtonsPanelFaceTopEvent_Impl");
-static_assert(offsetof(UnionUIButtonsPanel_OnUIButtonsPanelFaceTopEvent_Impl, UnionButton) == 0x000000, "Member 'UnionUIButtonsPanel_OnUIButtonsPanelFaceTopEvent_Impl::UnionButton' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonsPanel_OnUIButtonsPanelFaceTopEvent_Impl;
 
 // Function UnionUI.UnionUIButtonsPanel.OnUIButtonsPanelFocusEvent_Impl
 // 0x0008 (0x0008 - 0x0000)
@@ -1429,9 +1239,7 @@ struct UnionUIButtonsPanel_OnUIButtonsPanelFocusEvent_Impl final
 public:
 	class UUnionUIButtonBase*                     UnionButton;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonsPanel_OnUIButtonsPanelFocusEvent_Impl) == 0x000008, "Wrong alignment on UnionUIButtonsPanel_OnUIButtonsPanelFocusEvent_Impl");
-static_assert(sizeof(UnionUIButtonsPanel_OnUIButtonsPanelFocusEvent_Impl) == 0x000008, "Wrong size on UnionUIButtonsPanel_OnUIButtonsPanelFocusEvent_Impl");
-static_assert(offsetof(UnionUIButtonsPanel_OnUIButtonsPanelFocusEvent_Impl, UnionButton) == 0x000000, "Member 'UnionUIButtonsPanel_OnUIButtonsPanelFocusEvent_Impl::UnionButton' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonsPanel_OnUIButtonsPanelFocusEvent_Impl;
 
 // Function UnionUI.UnionUIButtonsPanel.OnUIButtonsPanelLeftShoulderEvent_Impl
 // 0x0008 (0x0008 - 0x0000)
@@ -1440,9 +1248,7 @@ struct UnionUIButtonsPanel_OnUIButtonsPanelLeftShoulderEvent_Impl final
 public:
 	class UUnionUIButtonBase*                     UnionButton;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonsPanel_OnUIButtonsPanelLeftShoulderEvent_Impl) == 0x000008, "Wrong alignment on UnionUIButtonsPanel_OnUIButtonsPanelLeftShoulderEvent_Impl");
-static_assert(sizeof(UnionUIButtonsPanel_OnUIButtonsPanelLeftShoulderEvent_Impl) == 0x000008, "Wrong size on UnionUIButtonsPanel_OnUIButtonsPanelLeftShoulderEvent_Impl");
-static_assert(offsetof(UnionUIButtonsPanel_OnUIButtonsPanelLeftShoulderEvent_Impl, UnionButton) == 0x000000, "Member 'UnionUIButtonsPanel_OnUIButtonsPanelLeftShoulderEvent_Impl::UnionButton' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonsPanel_OnUIButtonsPanelLeftShoulderEvent_Impl;
 
 // Function UnionUI.UnionUIButtonsPanel.OnUIButtonsPanelRightShoulderEvent_Impl
 // 0x0008 (0x0008 - 0x0000)
@@ -1451,9 +1257,7 @@ struct UnionUIButtonsPanel_OnUIButtonsPanelRightShoulderEvent_Impl final
 public:
 	class UUnionUIButtonBase*                     UnionButton;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonsPanel_OnUIButtonsPanelRightShoulderEvent_Impl) == 0x000008, "Wrong alignment on UnionUIButtonsPanel_OnUIButtonsPanelRightShoulderEvent_Impl");
-static_assert(sizeof(UnionUIButtonsPanel_OnUIButtonsPanelRightShoulderEvent_Impl) == 0x000008, "Wrong size on UnionUIButtonsPanel_OnUIButtonsPanelRightShoulderEvent_Impl");
-static_assert(offsetof(UnionUIButtonsPanel_OnUIButtonsPanelRightShoulderEvent_Impl, UnionButton) == 0x000000, "Member 'UnionUIButtonsPanel_OnUIButtonsPanelRightShoulderEvent_Impl::UnionButton' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonsPanel_OnUIButtonsPanelRightShoulderEvent_Impl;
 
 // Function UnionUI.UnionUIButtonsPanel.OnUIButtonsPanelUnFocusEvent_Impl
 // 0x0008 (0x0008 - 0x0000)
@@ -1462,9 +1266,7 @@ struct UnionUIButtonsPanel_OnUIButtonsPanelUnFocusEvent_Impl final
 public:
 	class UUnionUIButtonBase*                     UnionButton;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonsPanel_OnUIButtonsPanelUnFocusEvent_Impl) == 0x000008, "Wrong alignment on UnionUIButtonsPanel_OnUIButtonsPanelUnFocusEvent_Impl");
-static_assert(sizeof(UnionUIButtonsPanel_OnUIButtonsPanelUnFocusEvent_Impl) == 0x000008, "Wrong size on UnionUIButtonsPanel_OnUIButtonsPanelUnFocusEvent_Impl");
-static_assert(offsetof(UnionUIButtonsPanel_OnUIButtonsPanelUnFocusEvent_Impl, UnionButton) == 0x000000, "Member 'UnionUIButtonsPanel_OnUIButtonsPanelUnFocusEvent_Impl::UnionButton' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonsPanel_OnUIButtonsPanelUnFocusEvent_Impl;
 
 // Function UnionUI.UnionUIButtonsPanel.SetFocusSilent
 // 0x0004 (0x0004 - 0x0000)
@@ -1473,9 +1275,7 @@ struct UnionUIButtonsPanel_SetFocusSilent final
 public:
 	int32                                         InButtonIndex;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonsPanel_SetFocusSilent) == 0x000004, "Wrong alignment on UnionUIButtonsPanel_SetFocusSilent");
-static_assert(sizeof(UnionUIButtonsPanel_SetFocusSilent) == 0x000004, "Wrong size on UnionUIButtonsPanel_SetFocusSilent");
-static_assert(offsetof(UnionUIButtonsPanel_SetFocusSilent, InButtonIndex) == 0x000000, "Member 'UnionUIButtonsPanel_SetFocusSilent::InButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonsPanel_SetFocusSilent;
 
 // Function UnionUI.UnionUIButtonsPanel.SetFocusSoundEnableAll
 // 0x0001 (0x0001 - 0x0000)
@@ -1484,9 +1284,7 @@ struct UnionUIButtonsPanel_SetFocusSoundEnableAll final
 public:
 	bool                                          bEnable;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonsPanel_SetFocusSoundEnableAll) == 0x000001, "Wrong alignment on UnionUIButtonsPanel_SetFocusSoundEnableAll");
-static_assert(sizeof(UnionUIButtonsPanel_SetFocusSoundEnableAll) == 0x000001, "Wrong size on UnionUIButtonsPanel_SetFocusSoundEnableAll");
-static_assert(offsetof(UnionUIButtonsPanel_SetFocusSoundEnableAll, bEnable) == 0x000000, "Member 'UnionUIButtonsPanel_SetFocusSoundEnableAll::bEnable' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonsPanel_SetFocusSoundEnableAll;
 
 // Function UnionUI.UnionUIButtonsPanel.SetLastFocusedButtonIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -1495,9 +1293,7 @@ struct UnionUIButtonsPanel_SetLastFocusedButtonIndex final
 public:
 	int32                                         InButtonIndex;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonsPanel_SetLastFocusedButtonIndex) == 0x000004, "Wrong alignment on UnionUIButtonsPanel_SetLastFocusedButtonIndex");
-static_assert(sizeof(UnionUIButtonsPanel_SetLastFocusedButtonIndex) == 0x000004, "Wrong size on UnionUIButtonsPanel_SetLastFocusedButtonIndex");
-static_assert(offsetof(UnionUIButtonsPanel_SetLastFocusedButtonIndex, InButtonIndex) == 0x000000, "Member 'UnionUIButtonsPanel_SetLastFocusedButtonIndex::InButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonsPanel_SetLastFocusedButtonIndex;
 
 // Function UnionUI.UnionUIButtonsPanel.SetLastFocusedButtonIndexByPlayerIndex
 // 0x0008 (0x0008 - 0x0000)
@@ -1507,10 +1303,7 @@ public:
 	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         InButtonIndex;                                     // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonsPanel_SetLastFocusedButtonIndexByPlayerIndex) == 0x000004, "Wrong alignment on UnionUIButtonsPanel_SetLastFocusedButtonIndexByPlayerIndex");
-static_assert(sizeof(UnionUIButtonsPanel_SetLastFocusedButtonIndexByPlayerIndex) == 0x000008, "Wrong size on UnionUIButtonsPanel_SetLastFocusedButtonIndexByPlayerIndex");
-static_assert(offsetof(UnionUIButtonsPanel_SetLastFocusedButtonIndexByPlayerIndex, PlayerControllerIndex) == 0x000000, "Member 'UnionUIButtonsPanel_SetLastFocusedButtonIndexByPlayerIndex::PlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(UnionUIButtonsPanel_SetLastFocusedButtonIndexByPlayerIndex, InButtonIndex) == 0x000004, "Member 'UnionUIButtonsPanel_SetLastFocusedButtonIndexByPlayerIndex::InButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonsPanel_SetLastFocusedButtonIndexByPlayerIndex;
 
 // Function UnionUI.UnionUIButtonsPanel.SetOwnerPlayerController
 // 0x0008 (0x0008 - 0x0000)
@@ -1519,9 +1312,7 @@ struct UnionUIButtonsPanel_SetOwnerPlayerController final
 public:
 	class APlayerController*                      InPlayerController;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIButtonsPanel_SetOwnerPlayerController) == 0x000008, "Wrong alignment on UnionUIButtonsPanel_SetOwnerPlayerController");
-static_assert(sizeof(UnionUIButtonsPanel_SetOwnerPlayerController) == 0x000008, "Wrong size on UnionUIButtonsPanel_SetOwnerPlayerController");
-static_assert(offsetof(UnionUIButtonsPanel_SetOwnerPlayerController, InPlayerController) == 0x000000, "Member 'UnionUIButtonsPanel_SetOwnerPlayerController::InPlayerController' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIButtonsPanel_SetOwnerPlayerController;
 
 // Function UnionUI.UnionUICrossButtons.SetCrossButtons
 // 0x0020 (0x0020 - 0x0000)
@@ -1533,12 +1324,7 @@ public:
 	class UUnionUIButtonBase*                     DownButton;                                        // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UUnionUIButtonBase*                     LeftButton;                                        // 0x0018(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUICrossButtons_SetCrossButtons) == 0x000008, "Wrong alignment on UnionUICrossButtons_SetCrossButtons");
-static_assert(sizeof(UnionUICrossButtons_SetCrossButtons) == 0x000020, "Wrong size on UnionUICrossButtons_SetCrossButtons");
-static_assert(offsetof(UnionUICrossButtons_SetCrossButtons, UpButton) == 0x000000, "Member 'UnionUICrossButtons_SetCrossButtons::UpButton' has a wrong offset!");
-static_assert(offsetof(UnionUICrossButtons_SetCrossButtons, RightButton) == 0x000008, "Member 'UnionUICrossButtons_SetCrossButtons::RightButton' has a wrong offset!");
-static_assert(offsetof(UnionUICrossButtons_SetCrossButtons, DownButton) == 0x000010, "Member 'UnionUICrossButtons_SetCrossButtons::DownButton' has a wrong offset!");
-static_assert(offsetof(UnionUICrossButtons_SetCrossButtons, LeftButton) == 0x000018, "Member 'UnionUICrossButtons_SetCrossButtons::LeftButton' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUICrossButtons_SetCrossButtons;
 
 // Function UnionUI.UnionUIFrameGrabber.BeginCapture
 // 0x0001 (0x0001 - 0x0000)
@@ -1547,9 +1333,7 @@ struct UnionUIFrameGrabber_BeginCapture final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIFrameGrabber_BeginCapture) == 0x000001, "Wrong alignment on UnionUIFrameGrabber_BeginCapture");
-static_assert(sizeof(UnionUIFrameGrabber_BeginCapture) == 0x000001, "Wrong size on UnionUIFrameGrabber_BeginCapture");
-static_assert(offsetof(UnionUIFrameGrabber_BeginCapture, ReturnValue) == 0x000000, "Member 'UnionUIFrameGrabber_BeginCapture::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIFrameGrabber_BeginCapture;
 
 // Function UnionUI.UnionUIFrameGrabber.SetMaterialInstanceDynamic
 // 0x0008 (0x0008 - 0x0000)
@@ -1558,9 +1342,7 @@ struct UnionUIFrameGrabber_SetMaterialInstanceDynamic final
 public:
 	class UMaterialInstanceDynamic*               MI;                                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIFrameGrabber_SetMaterialInstanceDynamic) == 0x000008, "Wrong alignment on UnionUIFrameGrabber_SetMaterialInstanceDynamic");
-static_assert(sizeof(UnionUIFrameGrabber_SetMaterialInstanceDynamic) == 0x000008, "Wrong size on UnionUIFrameGrabber_SetMaterialInstanceDynamic");
-static_assert(offsetof(UnionUIFrameGrabber_SetMaterialInstanceDynamic, MI) == 0x000000, "Member 'UnionUIFrameGrabber_SetMaterialInstanceDynamic::MI' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIFrameGrabber_SetMaterialInstanceDynamic;
 
 // Function UnionUI.UnionUIFade.FinishedFade
 // 0x0001 (0x0001 - 0x0000)
@@ -1569,9 +1351,7 @@ struct UnionUIFade_FinishedFade final
 public:
 	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIFade_FinishedFade) == 0x000001, "Wrong alignment on UnionUIFade_FinishedFade");
-static_assert(sizeof(UnionUIFade_FinishedFade) == 0x000001, "Wrong size on UnionUIFade_FinishedFade");
-static_assert(offsetof(UnionUIFade_FinishedFade, FadeDirection) == 0x000000, "Member 'UnionUIFade_FinishedFade::FadeDirection' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIFade_FinishedFade;
 
 // Function UnionUI.UnionUIFade.StartFade
 // 0x0002 (0x0002 - 0x0000)
@@ -1581,10 +1361,7 @@ public:
 	EUnionUIFadeColor                             FadeColor;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIFade_StartFade) == 0x000001, "Wrong alignment on UnionUIFade_StartFade");
-static_assert(sizeof(UnionUIFade_StartFade) == 0x000002, "Wrong size on UnionUIFade_StartFade");
-static_assert(offsetof(UnionUIFade_StartFade, FadeColor) == 0x000000, "Member 'UnionUIFade_StartFade::FadeColor' has a wrong offset!");
-static_assert(offsetof(UnionUIFade_StartFade, FadeDirection) == 0x000001, "Member 'UnionUIFade_StartFade::FadeDirection' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIFade_StartFade;
 
 // Function UnionUI.UnionUIFade.StartLoopFade
 // 0x0001 (0x0001 - 0x0000)
@@ -1593,9 +1370,7 @@ struct UnionUIFade_StartLoopFade final
 public:
 	EUnionUIFadeColor                             FadeColor;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIFade_StartLoopFade) == 0x000001, "Wrong alignment on UnionUIFade_StartLoopFade");
-static_assert(sizeof(UnionUIFade_StartLoopFade) == 0x000001, "Wrong size on UnionUIFade_StartLoopFade");
-static_assert(offsetof(UnionUIFade_StartLoopFade, FadeColor) == 0x000000, "Member 'UnionUIFade_StartLoopFade::FadeColor' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIFade_StartLoopFade;
 
 // Function UnionUI.UnionUIGridLayoutControl.AddButton
 // 0x0038 (0x0038 - 0x0000)
@@ -1604,9 +1379,7 @@ struct UnionUIGridLayoutControl_AddButton final
 public:
 	struct FUnionUIGridLayoutButtonData           InButtonData;                                      // 0x0000(0x0038)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIGridLayoutControl_AddButton) == 0x000008, "Wrong alignment on UnionUIGridLayoutControl_AddButton");
-static_assert(sizeof(UnionUIGridLayoutControl_AddButton) == 0x000038, "Wrong size on UnionUIGridLayoutControl_AddButton");
-static_assert(offsetof(UnionUIGridLayoutControl_AddButton, InButtonData) == 0x000000, "Member 'UnionUIGridLayoutControl_AddButton::InButtonData' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIGridLayoutControl_AddButton;
 
 // Function UnionUI.UnionUIGridLayoutControl.Button_OnDirectionEvent
 // 0x0010 (0x0010 - 0x0000)
@@ -1617,10 +1390,7 @@ public:
 	EUnionUIControlDir                            Dir;                                               // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(UnionUIGridLayoutControl_Button_OnDirectionEvent) == 0x000008, "Wrong alignment on UnionUIGridLayoutControl_Button_OnDirectionEvent");
-static_assert(sizeof(UnionUIGridLayoutControl_Button_OnDirectionEvent) == 0x000010, "Wrong size on UnionUIGridLayoutControl_Button_OnDirectionEvent");
-static_assert(offsetof(UnionUIGridLayoutControl_Button_OnDirectionEvent, Button) == 0x000000, "Member 'UnionUIGridLayoutControl_Button_OnDirectionEvent::Button' has a wrong offset!");
-static_assert(offsetof(UnionUIGridLayoutControl_Button_OnDirectionEvent, Dir) == 0x000008, "Member 'UnionUIGridLayoutControl_Button_OnDirectionEvent::Dir' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIGridLayoutControl_Button_OnDirectionEvent;
 
 // Function UnionUI.UnionUIGridLayoutControl.Button_OnFocusEvent
 // 0x0008 (0x0008 - 0x0000)
@@ -1629,9 +1399,7 @@ struct UnionUIGridLayoutControl_Button_OnFocusEvent final
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIGridLayoutControl_Button_OnFocusEvent) == 0x000008, "Wrong alignment on UnionUIGridLayoutControl_Button_OnFocusEvent");
-static_assert(sizeof(UnionUIGridLayoutControl_Button_OnFocusEvent) == 0x000008, "Wrong size on UnionUIGridLayoutControl_Button_OnFocusEvent");
-static_assert(offsetof(UnionUIGridLayoutControl_Button_OnFocusEvent, Button) == 0x000000, "Member 'UnionUIGridLayoutControl_Button_OnFocusEvent::Button' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIGridLayoutControl_Button_OnFocusEvent;
 
 // Function UnionUI.UnionUIGridLayoutControl.GetButtonDataList
 // 0x0010 (0x0010 - 0x0000)
@@ -1640,9 +1408,7 @@ struct UnionUIGridLayoutControl_GetButtonDataList final
 public:
 	TArray<struct FUnionUIGridLayoutButtonData>   ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIGridLayoutControl_GetButtonDataList) == 0x000008, "Wrong alignment on UnionUIGridLayoutControl_GetButtonDataList");
-static_assert(sizeof(UnionUIGridLayoutControl_GetButtonDataList) == 0x000010, "Wrong size on UnionUIGridLayoutControl_GetButtonDataList");
-static_assert(offsetof(UnionUIGridLayoutControl_GetButtonDataList, ReturnValue) == 0x000000, "Member 'UnionUIGridLayoutControl_GetButtonDataList::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIGridLayoutControl_GetButtonDataList;
 
 // Function UnionUI.UnionUIGridLayoutControl.SetSideNav
 // 0x0080 (0x0080 - 0x0000)
@@ -1651,9 +1417,7 @@ struct UnionUIGridLayoutControl_SetSideNav final
 public:
 	struct FUnionUIGridLayoutSideNav              InSideNav;                                         // 0x0000(0x0080)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIGridLayoutControl_SetSideNav) == 0x000008, "Wrong alignment on UnionUIGridLayoutControl_SetSideNav");
-static_assert(sizeof(UnionUIGridLayoutControl_SetSideNav) == 0x000080, "Wrong size on UnionUIGridLayoutControl_SetSideNav");
-static_assert(offsetof(UnionUIGridLayoutControl_SetSideNav, InSideNav) == 0x000000, "Member 'UnionUIGridLayoutControl_SetSideNav::InSideNav' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIGridLayoutControl_SetSideNav;
 
 // Function UnionUI.UnionUIGridLayoutControl.SetSideNavRuleBase
 // 0x0002 (0x0002 - 0x0000)
@@ -1663,10 +1427,7 @@ public:
 	EUnionUIControlDir                            InDirection;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EUnionUIGridLayoutSideNavRule                 InRule;                                            // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIGridLayoutControl_SetSideNavRuleBase) == 0x000001, "Wrong alignment on UnionUIGridLayoutControl_SetSideNavRuleBase");
-static_assert(sizeof(UnionUIGridLayoutControl_SetSideNavRuleBase) == 0x000002, "Wrong size on UnionUIGridLayoutControl_SetSideNavRuleBase");
-static_assert(offsetof(UnionUIGridLayoutControl_SetSideNavRuleBase, InDirection) == 0x000000, "Member 'UnionUIGridLayoutControl_SetSideNavRuleBase::InDirection' has a wrong offset!");
-static_assert(offsetof(UnionUIGridLayoutControl_SetSideNavRuleBase, InRule) == 0x000001, "Member 'UnionUIGridLayoutControl_SetSideNavRuleBase::InRule' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIGridLayoutControl_SetSideNavRuleBase;
 
 // Function UnionUI.UnionUIGridLayoutControl.SetSideNavRuleCustom
 // 0x0014 (0x0014 - 0x0000)
@@ -1677,10 +1438,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(EUnionUIControlDir Direction, const struct FUnionUIGridLayoutButtonData& ButtonData)> InCustomDelegate; // 0x0004(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIGridLayoutControl_SetSideNavRuleCustom) == 0x000004, "Wrong alignment on UnionUIGridLayoutControl_SetSideNavRuleCustom");
-static_assert(sizeof(UnionUIGridLayoutControl_SetSideNavRuleCustom) == 0x000014, "Wrong size on UnionUIGridLayoutControl_SetSideNavRuleCustom");
-static_assert(offsetof(UnionUIGridLayoutControl_SetSideNavRuleCustom, InDirection) == 0x000000, "Member 'UnionUIGridLayoutControl_SetSideNavRuleCustom::InDirection' has a wrong offset!");
-static_assert(offsetof(UnionUIGridLayoutControl_SetSideNavRuleCustom, InCustomDelegate) == 0x000004, "Member 'UnionUIGridLayoutControl_SetSideNavRuleCustom::InCustomDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIGridLayoutControl_SetSideNavRuleCustom;
 
 // Function UnionUI.UnionUIGridLayoutControl.SetSideNavRuleExplicit
 // 0x0010 (0x0010 - 0x0000)
@@ -1691,10 +1449,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                InWidget;                                          // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIGridLayoutControl_SetSideNavRuleExplicit) == 0x000008, "Wrong alignment on UnionUIGridLayoutControl_SetSideNavRuleExplicit");
-static_assert(sizeof(UnionUIGridLayoutControl_SetSideNavRuleExplicit) == 0x000010, "Wrong size on UnionUIGridLayoutControl_SetSideNavRuleExplicit");
-static_assert(offsetof(UnionUIGridLayoutControl_SetSideNavRuleExplicit, InDirection) == 0x000000, "Member 'UnionUIGridLayoutControl_SetSideNavRuleExplicit::InDirection' has a wrong offset!");
-static_assert(offsetof(UnionUIGridLayoutControl_SetSideNavRuleExplicit, InWidget) == 0x000008, "Member 'UnionUIGridLayoutControl_SetSideNavRuleExplicit::InWidget' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIGridLayoutControl_SetSideNavRuleExplicit;
 
 // Function UnionUI.UnionUIGridLayoutControl.SetSideNavRuleWrap
 // 0x0001 (0x0001 - 0x0000)
@@ -1703,9 +1458,7 @@ struct UnionUIGridLayoutControl_SetSideNavRuleWrap final
 public:
 	EUnionUIControlDir                            InDirection;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIGridLayoutControl_SetSideNavRuleWrap) == 0x000001, "Wrong alignment on UnionUIGridLayoutControl_SetSideNavRuleWrap");
-static_assert(sizeof(UnionUIGridLayoutControl_SetSideNavRuleWrap) == 0x000001, "Wrong size on UnionUIGridLayoutControl_SetSideNavRuleWrap");
-static_assert(offsetof(UnionUIGridLayoutControl_SetSideNavRuleWrap, InDirection) == 0x000000, "Member 'UnionUIGridLayoutControl_SetSideNavRuleWrap::InDirection' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIGridLayoutControl_SetSideNavRuleWrap;
 
 // Function UnionUI.UnionUIGridLayoutControl.GetButtonDataListByLocationX
 // 0x0018 (0x0018 - 0x0000)
@@ -1716,10 +1469,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FUnionUIGridLayoutButtonData>   OutButtonDataList;                                 // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIGridLayoutControl_GetButtonDataListByLocationX) == 0x000008, "Wrong alignment on UnionUIGridLayoutControl_GetButtonDataListByLocationX");
-static_assert(sizeof(UnionUIGridLayoutControl_GetButtonDataListByLocationX) == 0x000018, "Wrong size on UnionUIGridLayoutControl_GetButtonDataListByLocationX");
-static_assert(offsetof(UnionUIGridLayoutControl_GetButtonDataListByLocationX, InLocationX) == 0x000000, "Member 'UnionUIGridLayoutControl_GetButtonDataListByLocationX::InLocationX' has a wrong offset!");
-static_assert(offsetof(UnionUIGridLayoutControl_GetButtonDataListByLocationX, OutButtonDataList) == 0x000008, "Member 'UnionUIGridLayoutControl_GetButtonDataListByLocationX::OutButtonDataList' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIGridLayoutControl_GetButtonDataListByLocationX;
 
 // Function UnionUI.UnionUIGridLayoutControl.GetButtonDataListByLocationY
 // 0x0018 (0x0018 - 0x0000)
@@ -1730,10 +1480,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FUnionUIGridLayoutButtonData>   OutButtonDataList;                                 // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIGridLayoutControl_GetButtonDataListByLocationY) == 0x000008, "Wrong alignment on UnionUIGridLayoutControl_GetButtonDataListByLocationY");
-static_assert(sizeof(UnionUIGridLayoutControl_GetButtonDataListByLocationY) == 0x000018, "Wrong size on UnionUIGridLayoutControl_GetButtonDataListByLocationY");
-static_assert(offsetof(UnionUIGridLayoutControl_GetButtonDataListByLocationY, InLocationX) == 0x000000, "Member 'UnionUIGridLayoutControl_GetButtonDataListByLocationY::InLocationX' has a wrong offset!");
-static_assert(offsetof(UnionUIGridLayoutControl_GetButtonDataListByLocationY, OutButtonDataList) == 0x000008, "Member 'UnionUIGridLayoutControl_GetButtonDataListByLocationY::OutButtonDataList' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIGridLayoutControl_GetButtonDataListByLocationY;
 
 // Function UnionUI.UnionUIGridLayoutControl.GetCurrentLocationX
 // 0x0004 (0x0004 - 0x0000)
@@ -1742,9 +1489,7 @@ struct UnionUIGridLayoutControl_GetCurrentLocationX final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIGridLayoutControl_GetCurrentLocationX) == 0x000004, "Wrong alignment on UnionUIGridLayoutControl_GetCurrentLocationX");
-static_assert(sizeof(UnionUIGridLayoutControl_GetCurrentLocationX) == 0x000004, "Wrong size on UnionUIGridLayoutControl_GetCurrentLocationX");
-static_assert(offsetof(UnionUIGridLayoutControl_GetCurrentLocationX, ReturnValue) == 0x000000, "Member 'UnionUIGridLayoutControl_GetCurrentLocationX::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIGridLayoutControl_GetCurrentLocationX;
 
 // Function UnionUI.UnionUIGridLayoutControl.GetCurrentLocationY
 // 0x0004 (0x0004 - 0x0000)
@@ -1753,9 +1498,7 @@ struct UnionUIGridLayoutControl_GetCurrentLocationY final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIGridLayoutControl_GetCurrentLocationY) == 0x000004, "Wrong alignment on UnionUIGridLayoutControl_GetCurrentLocationY");
-static_assert(sizeof(UnionUIGridLayoutControl_GetCurrentLocationY) == 0x000004, "Wrong size on UnionUIGridLayoutControl_GetCurrentLocationY");
-static_assert(offsetof(UnionUIGridLayoutControl_GetCurrentLocationY, ReturnValue) == 0x000000, "Member 'UnionUIGridLayoutControl_GetCurrentLocationY::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIGridLayoutControl_GetCurrentLocationY;
 
 // Function UnionUI.UnionUIGridLayoutControl.GetSideNav
 // 0x0080 (0x0080 - 0x0000)
@@ -1764,9 +1507,7 @@ struct UnionUIGridLayoutControl_GetSideNav final
 public:
 	struct FUnionUIGridLayoutSideNav              ReturnValue;                                       // 0x0000(0x0080)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIGridLayoutControl_GetSideNav) == 0x000008, "Wrong alignment on UnionUIGridLayoutControl_GetSideNav");
-static_assert(sizeof(UnionUIGridLayoutControl_GetSideNav) == 0x000080, "Wrong size on UnionUIGridLayoutControl_GetSideNav");
-static_assert(offsetof(UnionUIGridLayoutControl_GetSideNav, ReturnValue) == 0x000000, "Member 'UnionUIGridLayoutControl_GetSideNav::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIGridLayoutControl_GetSideNav;
 
 // Function UnionUI.UnionUIGridNavigationBuilderEventHandler.NavigationDirectionEvent
 // 0x0010 (0x0010 - 0x0000)
@@ -1777,10 +1518,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIGridNavigationBuilderEventHandler_NavigationDirectionEvent) == 0x000008, "Wrong alignment on UnionUIGridNavigationBuilderEventHandler_NavigationDirectionEvent");
-static_assert(sizeof(UnionUIGridNavigationBuilderEventHandler_NavigationDirectionEvent) == 0x000010, "Wrong size on UnionUIGridNavigationBuilderEventHandler_NavigationDirectionEvent");
-static_assert(offsetof(UnionUIGridNavigationBuilderEventHandler_NavigationDirectionEvent, Navigation) == 0x000000, "Member 'UnionUIGridNavigationBuilderEventHandler_NavigationDirectionEvent::Navigation' has a wrong offset!");
-static_assert(offsetof(UnionUIGridNavigationBuilderEventHandler_NavigationDirectionEvent, ReturnValue) == 0x000008, "Member 'UnionUIGridNavigationBuilderEventHandler_NavigationDirectionEvent::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIGridNavigationBuilderEventHandler_NavigationDirectionEvent;
 
 // Function UnionUI.UnionUIGridNavigationBuilder.AddButton
 // 0x0010 (0x0010 - 0x0000)
@@ -1791,11 +1529,7 @@ public:
 	int32                                         InRowIndex;                                        // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         InColumnIndex;                                     // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIGridNavigationBuilder_AddButton) == 0x000008, "Wrong alignment on UnionUIGridNavigationBuilder_AddButton");
-static_assert(sizeof(UnionUIGridNavigationBuilder_AddButton) == 0x000010, "Wrong size on UnionUIGridNavigationBuilder_AddButton");
-static_assert(offsetof(UnionUIGridNavigationBuilder_AddButton, InButton) == 0x000000, "Member 'UnionUIGridNavigationBuilder_AddButton::InButton' has a wrong offset!");
-static_assert(offsetof(UnionUIGridNavigationBuilder_AddButton, InRowIndex) == 0x000008, "Member 'UnionUIGridNavigationBuilder_AddButton::InRowIndex' has a wrong offset!");
-static_assert(offsetof(UnionUIGridNavigationBuilder_AddButton, InColumnIndex) == 0x00000C, "Member 'UnionUIGridNavigationBuilder_AddButton::InColumnIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIGridNavigationBuilder_AddButton;
 
 // Function UnionUI.UnionUIGridNavigationBuilder.GetButtonsByColumnIndex
 // 0x0018 (0x0018 - 0x0000)
@@ -1806,10 +1540,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UUnionUIButtonBase*>             OutButtons;                                        // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIGridNavigationBuilder_GetButtonsByColumnIndex) == 0x000008, "Wrong alignment on UnionUIGridNavigationBuilder_GetButtonsByColumnIndex");
-static_assert(sizeof(UnionUIGridNavigationBuilder_GetButtonsByColumnIndex) == 0x000018, "Wrong size on UnionUIGridNavigationBuilder_GetButtonsByColumnIndex");
-static_assert(offsetof(UnionUIGridNavigationBuilder_GetButtonsByColumnIndex, InColumnIndex) == 0x000000, "Member 'UnionUIGridNavigationBuilder_GetButtonsByColumnIndex::InColumnIndex' has a wrong offset!");
-static_assert(offsetof(UnionUIGridNavigationBuilder_GetButtonsByColumnIndex, OutButtons) == 0x000008, "Member 'UnionUIGridNavigationBuilder_GetButtonsByColumnIndex::OutButtons' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIGridNavigationBuilder_GetButtonsByColumnIndex;
 
 // Function UnionUI.UnionUIGridNavigationBuilder.GetButtonsByRowIndex
 // 0x0018 (0x0018 - 0x0000)
@@ -1820,10 +1551,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UUnionUIButtonBase*>             OutButtons;                                        // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIGridNavigationBuilder_GetButtonsByRowIndex) == 0x000008, "Wrong alignment on UnionUIGridNavigationBuilder_GetButtonsByRowIndex");
-static_assert(sizeof(UnionUIGridNavigationBuilder_GetButtonsByRowIndex) == 0x000018, "Wrong size on UnionUIGridNavigationBuilder_GetButtonsByRowIndex");
-static_assert(offsetof(UnionUIGridNavigationBuilder_GetButtonsByRowIndex, InRowIndex) == 0x000000, "Member 'UnionUIGridNavigationBuilder_GetButtonsByRowIndex::InRowIndex' has a wrong offset!");
-static_assert(offsetof(UnionUIGridNavigationBuilder_GetButtonsByRowIndex, OutButtons) == 0x000008, "Member 'UnionUIGridNavigationBuilder_GetButtonsByRowIndex::OutButtons' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIGridNavigationBuilder_GetButtonsByRowIndex;
 
 // Function UnionUI.UnionUIGridNavigationBuilder.GetSideNavigation
 // 0x0080 (0x0080 - 0x0000)
@@ -1832,9 +1560,7 @@ struct UnionUIGridNavigationBuilder_GetSideNavigation final
 public:
 	struct FUnionUIGridSideNavigation             ReturnValue;                                       // 0x0000(0x0080)(Parm, OutParm, ReturnParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIGridNavigationBuilder_GetSideNavigation) == 0x000008, "Wrong alignment on UnionUIGridNavigationBuilder_GetSideNavigation");
-static_assert(sizeof(UnionUIGridNavigationBuilder_GetSideNavigation) == 0x000080, "Wrong size on UnionUIGridNavigationBuilder_GetSideNavigation");
-static_assert(offsetof(UnionUIGridNavigationBuilder_GetSideNavigation, ReturnValue) == 0x000000, "Member 'UnionUIGridNavigationBuilder_GetSideNavigation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIGridNavigationBuilder_GetSideNavigation;
 
 // Function UnionUI.UnionUIGridNavigationBuilder.SetSideNavigation
 // 0x0080 (0x0080 - 0x0000)
@@ -1843,9 +1569,7 @@ struct UnionUIGridNavigationBuilder_SetSideNavigation final
 public:
 	struct FUnionUIGridSideNavigation             InSideNavigation;                                  // 0x0000(0x0080)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIGridNavigationBuilder_SetSideNavigation) == 0x000008, "Wrong alignment on UnionUIGridNavigationBuilder_SetSideNavigation");
-static_assert(sizeof(UnionUIGridNavigationBuilder_SetSideNavigation) == 0x000080, "Wrong size on UnionUIGridNavigationBuilder_SetSideNavigation");
-static_assert(offsetof(UnionUIGridNavigationBuilder_SetSideNavigation, InSideNavigation) == 0x000000, "Member 'UnionUIGridNavigationBuilder_SetSideNavigation::InSideNavigation' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIGridNavigationBuilder_SetSideNavigation;
 
 // Function UnionUI.UnionUIGridNavigationBuilder.SetSideNavigationRuleCustom
 // 0x0014 (0x0014 - 0x0000)
@@ -1856,10 +1580,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(EUnionUIControlDir InDirection, class UUnionUIButtonBase* InButton, int32 InRowIndex, int32 InColumnIndex)> InCustomDelegate; // 0x0004(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIGridNavigationBuilder_SetSideNavigationRuleCustom) == 0x000004, "Wrong alignment on UnionUIGridNavigationBuilder_SetSideNavigationRuleCustom");
-static_assert(sizeof(UnionUIGridNavigationBuilder_SetSideNavigationRuleCustom) == 0x000014, "Wrong size on UnionUIGridNavigationBuilder_SetSideNavigationRuleCustom");
-static_assert(offsetof(UnionUIGridNavigationBuilder_SetSideNavigationRuleCustom, InDirection) == 0x000000, "Member 'UnionUIGridNavigationBuilder_SetSideNavigationRuleCustom::InDirection' has a wrong offset!");
-static_assert(offsetof(UnionUIGridNavigationBuilder_SetSideNavigationRuleCustom, InCustomDelegate) == 0x000004, "Member 'UnionUIGridNavigationBuilder_SetSideNavigationRuleCustom::InCustomDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIGridNavigationBuilder_SetSideNavigationRuleCustom;
 
 // Function UnionUI.UnionUIGridNavigationBuilder.SetSideNavigationRuleExplicit
 // 0x0010 (0x0010 - 0x0000)
@@ -1870,10 +1591,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                InWidget;                                          // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIGridNavigationBuilder_SetSideNavigationRuleExplicit) == 0x000008, "Wrong alignment on UnionUIGridNavigationBuilder_SetSideNavigationRuleExplicit");
-static_assert(sizeof(UnionUIGridNavigationBuilder_SetSideNavigationRuleExplicit) == 0x000010, "Wrong size on UnionUIGridNavigationBuilder_SetSideNavigationRuleExplicit");
-static_assert(offsetof(UnionUIGridNavigationBuilder_SetSideNavigationRuleExplicit, InDirection) == 0x000000, "Member 'UnionUIGridNavigationBuilder_SetSideNavigationRuleExplicit::InDirection' has a wrong offset!");
-static_assert(offsetof(UnionUIGridNavigationBuilder_SetSideNavigationRuleExplicit, InWidget) == 0x000008, "Member 'UnionUIGridNavigationBuilder_SetSideNavigationRuleExplicit::InWidget' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIGridNavigationBuilder_SetSideNavigationRuleExplicit;
 
 // Function UnionUI.UnionUIGridNavigationBuilder.SetSideNavigationRuleWrap
 // 0x0001 (0x0001 - 0x0000)
@@ -1882,9 +1600,7 @@ struct UnionUIGridNavigationBuilder_SetSideNavigationRuleWrap final
 public:
 	EUnionUIControlDir                            InDirection;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIGridNavigationBuilder_SetSideNavigationRuleWrap) == 0x000001, "Wrong alignment on UnionUIGridNavigationBuilder_SetSideNavigationRuleWrap");
-static_assert(sizeof(UnionUIGridNavigationBuilder_SetSideNavigationRuleWrap) == 0x000001, "Wrong size on UnionUIGridNavigationBuilder_SetSideNavigationRuleWrap");
-static_assert(offsetof(UnionUIGridNavigationBuilder_SetSideNavigationRuleWrap, InDirection) == 0x000000, "Member 'UnionUIGridNavigationBuilder_SetSideNavigationRuleWrap::InDirection' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIGridNavigationBuilder_SetSideNavigationRuleWrap;
 
 // Function UnionUI.UnionUIListView.SetHorizontalEntrySpacing
 // 0x0008 (0x0008 - 0x0000)
@@ -1894,10 +1610,7 @@ public:
 	float                                         InLeftEntrySpacing;                                // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         InRightEntrySpacing;                               // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIListView_SetHorizontalEntrySpacing) == 0x000004, "Wrong alignment on UnionUIListView_SetHorizontalEntrySpacing");
-static_assert(sizeof(UnionUIListView_SetHorizontalEntrySpacing) == 0x000008, "Wrong size on UnionUIListView_SetHorizontalEntrySpacing");
-static_assert(offsetof(UnionUIListView_SetHorizontalEntrySpacing, InLeftEntrySpacing) == 0x000000, "Member 'UnionUIListView_SetHorizontalEntrySpacing::InLeftEntrySpacing' has a wrong offset!");
-static_assert(offsetof(UnionUIListView_SetHorizontalEntrySpacing, InRightEntrySpacing) == 0x000004, "Member 'UnionUIListView_SetHorizontalEntrySpacing::InRightEntrySpacing' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIListView_SetHorizontalEntrySpacing;
 
 // Function UnionUI.UnionUIListView.SetVerticalEntrySpacing
 // 0x0008 (0x0008 - 0x0000)
@@ -1907,10 +1620,57 @@ public:
 	float                                         InTopEntrySpacing;                                 // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         InBottomEntrySpacing;                              // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIListView_SetVerticalEntrySpacing) == 0x000004, "Wrong alignment on UnionUIListView_SetVerticalEntrySpacing");
-static_assert(sizeof(UnionUIListView_SetVerticalEntrySpacing) == 0x000008, "Wrong size on UnionUIListView_SetVerticalEntrySpacing");
-static_assert(offsetof(UnionUIListView_SetVerticalEntrySpacing, InTopEntrySpacing) == 0x000000, "Member 'UnionUIListView_SetVerticalEntrySpacing::InTopEntrySpacing' has a wrong offset!");
-static_assert(offsetof(UnionUIListView_SetVerticalEntrySpacing, InBottomEntrySpacing) == 0x000004, "Member 'UnionUIListView_SetVerticalEntrySpacing::InBottomEntrySpacing' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIListView_SetVerticalEntrySpacing;
+
+// Function UnionUI.WidgetManBaseWidget.AddChild
+// 0x0018 (0x0018 - 0x0000)
+struct WidgetManBaseWidget_AddChild final
+{
+public:
+	class UUserWidget*                            ChildWidget;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCanvasPanelSlot*                       ChildSlot;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ZOrder;                                            // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_WidgetManBaseWidget_AddChild;
+
+// Function UnionUI.WidgetManBaseWidget.AppendDebugString
+// 0x0010 (0x0010 - 0x0000)
+struct WidgetManBaseWidget_AppendDebugString final
+{
+public:
+	class FString                                 String__const;                                     // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_WidgetManBaseWidget_AppendDebugString;
+
+// Function UnionUI.WidgetManBaseWidget.AttachDebugStringObject
+// 0x0008 (0x0008 - 0x0000)
+struct WidgetManBaseWidget_AttachDebugStringObject final
+{
+public:
+	class UWidgetManDebugString*                  DebugStringObject;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_WidgetManBaseWidget_AttachDebugStringObject;
+
+// Function UnionUI.WidgetManBaseWidget.DetachDebugStringObject
+// 0x0008 (0x0008 - 0x0000)
+struct WidgetManBaseWidget_DetachDebugStringObject final
+{
+public:
+	class UWidgetManDebugString*                  DebugStringObject;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_WidgetManBaseWidget_DetachDebugStringObject;
+
+// Function UnionUI.WidgetManBaseWidget.RemoveChild
+// 0x0010 (0x0010 - 0x0000)
+struct WidgetManBaseWidget_RemoveChild final
+{
+public:
+	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsSucceeded;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_WidgetManBaseWidget_RemoveChild;
 
 // Function UnionUI.UnionUILoadingDisplay.GetLoadingDisplayType
 // 0x0001 (0x0001 - 0x0000)
@@ -1919,9 +1679,7 @@ struct UnionUILoadingDisplay_GetLoadingDisplayType final
 public:
 	ELoadingDisplayType                           ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUILoadingDisplay_GetLoadingDisplayType) == 0x000001, "Wrong alignment on UnionUILoadingDisplay_GetLoadingDisplayType");
-static_assert(sizeof(UnionUILoadingDisplay_GetLoadingDisplayType) == 0x000001, "Wrong size on UnionUILoadingDisplay_GetLoadingDisplayType");
-static_assert(offsetof(UnionUILoadingDisplay_GetLoadingDisplayType, ReturnValue) == 0x000000, "Member 'UnionUILoadingDisplay_GetLoadingDisplayType::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUILoadingDisplay_GetLoadingDisplayType;
 
 // Function UnionUI.UnionUILoadingDisplay.SetLoadingGaugeParam
 // 0x0008 (0x0008 - 0x0000)
@@ -1932,10 +1690,7 @@ public:
 	bool                                          bSetProgress;                                      // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(UnionUILoadingDisplay_SetLoadingGaugeParam) == 0x000004, "Wrong alignment on UnionUILoadingDisplay_SetLoadingGaugeParam");
-static_assert(sizeof(UnionUILoadingDisplay_SetLoadingGaugeParam) == 0x000008, "Wrong size on UnionUILoadingDisplay_SetLoadingGaugeParam");
-static_assert(offsetof(UnionUILoadingDisplay_SetLoadingGaugeParam, LoadingPhaseNum) == 0x000000, "Member 'UnionUILoadingDisplay_SetLoadingGaugeParam::LoadingPhaseNum' has a wrong offset!");
-static_assert(offsetof(UnionUILoadingDisplay_SetLoadingGaugeParam, bSetProgress) == 0x000004, "Member 'UnionUILoadingDisplay_SetLoadingGaugeParam::bSetProgress' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUILoadingDisplay_SetLoadingGaugeParam;
 
 // Function UnionUI.UnionUILoadingDisplay.SetLoadingProgress
 // 0x0004 (0x0004 - 0x0000)
@@ -1944,9 +1699,7 @@ struct UnionUILoadingDisplay_SetLoadingProgress final
 public:
 	float                                         LoadingProgress;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUILoadingDisplay_SetLoadingProgress) == 0x000004, "Wrong alignment on UnionUILoadingDisplay_SetLoadingProgress");
-static_assert(sizeof(UnionUILoadingDisplay_SetLoadingProgress) == 0x000004, "Wrong size on UnionUILoadingDisplay_SetLoadingProgress");
-static_assert(offsetof(UnionUILoadingDisplay_SetLoadingProgress, LoadingProgress) == 0x000000, "Member 'UnionUILoadingDisplay_SetLoadingProgress::LoadingProgress' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUILoadingDisplay_SetLoadingProgress;
 
 // Function UnionUI.UnionUILoadingDisplay.UpdateLoadingPhase
 // 0x0004 (0x0004 - 0x0000)
@@ -1955,84 +1708,7 @@ struct UnionUILoadingDisplay_UpdateLoadingPhase final
 public:
 	int32                                         EndLoadingPhase;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUILoadingDisplay_UpdateLoadingPhase) == 0x000004, "Wrong alignment on UnionUILoadingDisplay_UpdateLoadingPhase");
-static_assert(sizeof(UnionUILoadingDisplay_UpdateLoadingPhase) == 0x000004, "Wrong size on UnionUILoadingDisplay_UpdateLoadingPhase");
-static_assert(offsetof(UnionUILoadingDisplay_UpdateLoadingPhase, EndLoadingPhase) == 0x000000, "Member 'UnionUILoadingDisplay_UpdateLoadingPhase::EndLoadingPhase' has a wrong offset!");
-
-// Function UnionUI.UnionUISceneCaptureManager.GetCaptureCameraActor
-// 0x0010 (0x0010 - 0x0000)
-struct UnionUISceneCaptureManager_GetCaptureCameraActor final
-{
-public:
-	TArray<class AUnionUICapture2DActor*>         ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUISceneCaptureManager_GetCaptureCameraActor) == 0x000008, "Wrong alignment on UnionUISceneCaptureManager_GetCaptureCameraActor");
-static_assert(sizeof(UnionUISceneCaptureManager_GetCaptureCameraActor) == 0x000010, "Wrong size on UnionUISceneCaptureManager_GetCaptureCameraActor");
-static_assert(offsetof(UnionUISceneCaptureManager_GetCaptureCameraActor, ReturnValue) == 0x000000, "Member 'UnionUISceneCaptureManager_GetCaptureCameraActor::ReturnValue' has a wrong offset!");
-
-// Function UnionUI.UnionUISceneCaptureManager.GetCaptureCameraActorByPlayerControllerIndex
-// 0x0010 (0x0010 - 0x0000)
-struct UnionUISceneCaptureManager_GetCaptureCameraActorByPlayerControllerIndex final
-{
-public:
-	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AUnionUICapture2DActor*                 ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUISceneCaptureManager_GetCaptureCameraActorByPlayerControllerIndex) == 0x000008, "Wrong alignment on UnionUISceneCaptureManager_GetCaptureCameraActorByPlayerControllerIndex");
-static_assert(sizeof(UnionUISceneCaptureManager_GetCaptureCameraActorByPlayerControllerIndex) == 0x000010, "Wrong size on UnionUISceneCaptureManager_GetCaptureCameraActorByPlayerControllerIndex");
-static_assert(offsetof(UnionUISceneCaptureManager_GetCaptureCameraActorByPlayerControllerIndex, PlayerControllerIndex) == 0x000000, "Member 'UnionUISceneCaptureManager_GetCaptureCameraActorByPlayerControllerIndex::PlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(UnionUISceneCaptureManager_GetCaptureCameraActorByPlayerControllerIndex, ReturnValue) == 0x000008, "Member 'UnionUISceneCaptureManager_GetCaptureCameraActorByPlayerControllerIndex::ReturnValue' has a wrong offset!");
-
-// Function UnionUI.UnionUISceneCaptureManager.GetCaptureTargetActor
-// 0x0010 (0x0010 - 0x0000)
-struct UnionUISceneCaptureManager_GetCaptureTargetActor final
-{
-public:
-	TArray<class AActor*>                         ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUISceneCaptureManager_GetCaptureTargetActor) == 0x000008, "Wrong alignment on UnionUISceneCaptureManager_GetCaptureTargetActor");
-static_assert(sizeof(UnionUISceneCaptureManager_GetCaptureTargetActor) == 0x000010, "Wrong size on UnionUISceneCaptureManager_GetCaptureTargetActor");
-static_assert(offsetof(UnionUISceneCaptureManager_GetCaptureTargetActor, ReturnValue) == 0x000000, "Member 'UnionUISceneCaptureManager_GetCaptureTargetActor::ReturnValue' has a wrong offset!");
-
-// Function UnionUI.UnionUISceneCaptureManager.RegisterCaptureCameraActor
-// 0x0010 (0x0010 - 0x0000)
-struct UnionUISceneCaptureManager_RegisterCaptureCameraActor final
-{
-public:
-	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AUnionUICapture2DActor*                 CaptureActor;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUISceneCaptureManager_RegisterCaptureCameraActor) == 0x000008, "Wrong alignment on UnionUISceneCaptureManager_RegisterCaptureCameraActor");
-static_assert(sizeof(UnionUISceneCaptureManager_RegisterCaptureCameraActor) == 0x000010, "Wrong size on UnionUISceneCaptureManager_RegisterCaptureCameraActor");
-static_assert(offsetof(UnionUISceneCaptureManager_RegisterCaptureCameraActor, PlayerControllerIndex) == 0x000000, "Member 'UnionUISceneCaptureManager_RegisterCaptureCameraActor::PlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(UnionUISceneCaptureManager_RegisterCaptureCameraActor, CaptureActor) == 0x000008, "Member 'UnionUISceneCaptureManager_RegisterCaptureCameraActor::CaptureActor' has a wrong offset!");
-
-// Function UnionUI.UnionUISceneCaptureManager.RegisterCaptureTargetActor
-// 0x0010 (0x0010 - 0x0000)
-struct UnionUISceneCaptureManager_RegisterCaptureTargetActor final
-{
-public:
-	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CaptureActor;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUISceneCaptureManager_RegisterCaptureTargetActor) == 0x000008, "Wrong alignment on UnionUISceneCaptureManager_RegisterCaptureTargetActor");
-static_assert(sizeof(UnionUISceneCaptureManager_RegisterCaptureTargetActor) == 0x000010, "Wrong size on UnionUISceneCaptureManager_RegisterCaptureTargetActor");
-static_assert(offsetof(UnionUISceneCaptureManager_RegisterCaptureTargetActor, PlayerControllerIndex) == 0x000000, "Member 'UnionUISceneCaptureManager_RegisterCaptureTargetActor::PlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(UnionUISceneCaptureManager_RegisterCaptureTargetActor, CaptureActor) == 0x000008, "Member 'UnionUISceneCaptureManager_RegisterCaptureTargetActor::CaptureActor' has a wrong offset!");
-
-// Function UnionUI.UnionUISceneCaptureManager.UnRegisterCaptureCameraActor
-// 0x0004 (0x0004 - 0x0000)
-struct UnionUISceneCaptureManager_UnRegisterCaptureCameraActor final
-{
-public:
-	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUISceneCaptureManager_UnRegisterCaptureCameraActor) == 0x000004, "Wrong alignment on UnionUISceneCaptureManager_UnRegisterCaptureCameraActor");
-static_assert(sizeof(UnionUISceneCaptureManager_UnRegisterCaptureCameraActor) == 0x000004, "Wrong size on UnionUISceneCaptureManager_UnRegisterCaptureCameraActor");
-static_assert(offsetof(UnionUISceneCaptureManager_UnRegisterCaptureCameraActor, PlayerControllerIndex) == 0x000000, "Member 'UnionUISceneCaptureManager_UnRegisterCaptureCameraActor::PlayerControllerIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUILoadingDisplay_UpdateLoadingPhase;
 
 // Function UnionUI.UnionUILoopScrollBox.ArrayShift
 // 0x0001 (0x0001 - 0x0000)
@@ -2041,9 +1717,7 @@ struct UnionUILoopScrollBox_ArrayShift final
 public:
 	bool                                          bDownRight;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUILoopScrollBox_ArrayShift) == 0x000001, "Wrong alignment on UnionUILoopScrollBox_ArrayShift");
-static_assert(sizeof(UnionUILoopScrollBox_ArrayShift) == 0x000001, "Wrong size on UnionUILoopScrollBox_ArrayShift");
-static_assert(offsetof(UnionUILoopScrollBox_ArrayShift, bDownRight) == 0x000000, "Member 'UnionUILoopScrollBox_ArrayShift::bDownRight' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUILoopScrollBox_ArrayShift;
 
 // Function UnionUI.UnionUILoopScrollBox.PlayMoveAnim
 // 0x0002 (0x0002 - 0x0000)
@@ -2053,10 +1727,7 @@ public:
 	bool                                          IsDownRight;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bInImmediateReflection;                            // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUILoopScrollBox_PlayMoveAnim) == 0x000001, "Wrong alignment on UnionUILoopScrollBox_PlayMoveAnim");
-static_assert(sizeof(UnionUILoopScrollBox_PlayMoveAnim) == 0x000002, "Wrong size on UnionUILoopScrollBox_PlayMoveAnim");
-static_assert(offsetof(UnionUILoopScrollBox_PlayMoveAnim, IsDownRight) == 0x000000, "Member 'UnionUILoopScrollBox_PlayMoveAnim::IsDownRight' has a wrong offset!");
-static_assert(offsetof(UnionUILoopScrollBox_PlayMoveAnim, bInImmediateReflection) == 0x000001, "Member 'UnionUILoopScrollBox_PlayMoveAnim::bInImmediateReflection' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUILoopScrollBox_PlayMoveAnim;
 
 // Function UnionUI.UnionUILoopScrollBox.Repopurate
 // 0x0001 (0x0001 - 0x0000)
@@ -2065,9 +1736,7 @@ struct UnionUILoopScrollBox_Repopurate final
 public:
 	bool                                          bDownRight;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUILoopScrollBox_Repopurate) == 0x000001, "Wrong alignment on UnionUILoopScrollBox_Repopurate");
-static_assert(sizeof(UnionUILoopScrollBox_Repopurate) == 0x000001, "Wrong size on UnionUILoopScrollBox_Repopurate");
-static_assert(offsetof(UnionUILoopScrollBox_Repopurate, bDownRight) == 0x000000, "Member 'UnionUILoopScrollBox_Repopurate::bDownRight' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUILoopScrollBox_Repopurate;
 
 // Function UnionUI.UnionUILoopScrollBox.SetControllableFlag
 // 0x0001 (0x0001 - 0x0000)
@@ -2076,9 +1745,7 @@ struct UnionUILoopScrollBox_SetControllableFlag final
 public:
 	bool                                          InControllable;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUILoopScrollBox_SetControllableFlag) == 0x000001, "Wrong alignment on UnionUILoopScrollBox_SetControllableFlag");
-static_assert(sizeof(UnionUILoopScrollBox_SetControllableFlag) == 0x000001, "Wrong size on UnionUILoopScrollBox_SetControllableFlag");
-static_assert(offsetof(UnionUILoopScrollBox_SetControllableFlag, InControllable) == 0x000000, "Member 'UnionUILoopScrollBox_SetControllableFlag::InControllable' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUILoopScrollBox_SetControllableFlag;
 
 // Function UnionUI.UnionUILoopScrollBox.SetElementArr
 // 0x0010 (0x0010 - 0x0000)
@@ -2087,9 +1754,7 @@ struct UnionUILoopScrollBox_SetElementArr final
 public:
 	TArray<class UObject*>                        InElementArr;                                      // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUILoopScrollBox_SetElementArr) == 0x000008, "Wrong alignment on UnionUILoopScrollBox_SetElementArr");
-static_assert(sizeof(UnionUILoopScrollBox_SetElementArr) == 0x000010, "Wrong size on UnionUILoopScrollBox_SetElementArr");
-static_assert(offsetof(UnionUILoopScrollBox_SetElementArr, InElementArr) == 0x000000, "Member 'UnionUILoopScrollBox_SetElementArr::InElementArr' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUILoopScrollBox_SetElementArr;
 
 // Function UnionUI.UnionUILoopScrollBox.SetMoveAnim
 // 0x0010 (0x0010 - 0x0000)
@@ -2099,10 +1764,7 @@ public:
 	class UUserWidget*                            InParentWidget;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UWidgetAnimation*                       InMoveAnim;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUILoopScrollBox_SetMoveAnim) == 0x000008, "Wrong alignment on UnionUILoopScrollBox_SetMoveAnim");
-static_assert(sizeof(UnionUILoopScrollBox_SetMoveAnim) == 0x000010, "Wrong size on UnionUILoopScrollBox_SetMoveAnim");
-static_assert(offsetof(UnionUILoopScrollBox_SetMoveAnim, InParentWidget) == 0x000000, "Member 'UnionUILoopScrollBox_SetMoveAnim::InParentWidget' has a wrong offset!");
-static_assert(offsetof(UnionUILoopScrollBox_SetMoveAnim, InMoveAnim) == 0x000008, "Member 'UnionUILoopScrollBox_SetMoveAnim::InMoveAnim' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUILoopScrollBox_SetMoveAnim;
 
 // Function UnionUI.UnionUILoopScrollBox.GetControllableFlag
 // 0x0001 (0x0001 - 0x0000)
@@ -2111,9 +1773,16 @@ struct UnionUILoopScrollBox_GetControllableFlag final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUILoopScrollBox_GetControllableFlag) == 0x000001, "Wrong alignment on UnionUILoopScrollBox_GetControllableFlag");
-static_assert(sizeof(UnionUILoopScrollBox_GetControllableFlag) == 0x000001, "Wrong size on UnionUILoopScrollBox_GetControllableFlag");
-static_assert(offsetof(UnionUILoopScrollBox_GetControllableFlag, ReturnValue) == 0x000000, "Member 'UnionUILoopScrollBox_GetControllableFlag::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUILoopScrollBox_GetControllableFlag;
+
+// Function UnionUI.UnionUISequenceInterface.Close
+// 0x0001 (0x0001 - 0x0000)
+struct UnionUISequenceInterface_Close final
+{
+public:
+	bool                                          bSelfRemove;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUISequenceInterface_Close;
 
 // Function UnionUI.UnionUIMovieTransition.IsPausedMovie
 // 0x0001 (0x0001 - 0x0000)
@@ -2122,9 +1791,7 @@ struct UnionUIMovieTransition_IsPausedMovie final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIMovieTransition_IsPausedMovie) == 0x000001, "Wrong alignment on UnionUIMovieTransition_IsPausedMovie");
-static_assert(sizeof(UnionUIMovieTransition_IsPausedMovie) == 0x000001, "Wrong size on UnionUIMovieTransition_IsPausedMovie");
-static_assert(offsetof(UnionUIMovieTransition_IsPausedMovie, ReturnValue) == 0x000000, "Member 'UnionUIMovieTransition_IsPausedMovie::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIMovieTransition_IsPausedMovie;
 
 // Function UnionUI.UnionUIMovieTransition.IsPlayingMovie
 // 0x0001 (0x0001 - 0x0000)
@@ -2133,9 +1800,7 @@ struct UnionUIMovieTransition_IsPlayingMovie final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIMovieTransition_IsPlayingMovie) == 0x000001, "Wrong alignment on UnionUIMovieTransition_IsPlayingMovie");
-static_assert(sizeof(UnionUIMovieTransition_IsPlayingMovie) == 0x000001, "Wrong size on UnionUIMovieTransition_IsPlayingMovie");
-static_assert(offsetof(UnionUIMovieTransition_IsPlayingMovie, ReturnValue) == 0x000000, "Member 'UnionUIMovieTransition_IsPlayingMovie::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIMovieTransition_IsPlayingMovie;
 
 // Function UnionUI.UnionUISceneBase.AddButtonsPanel
 // 0x0008 (0x0008 - 0x0000)
@@ -2144,9 +1809,7 @@ struct UnionUISceneBase_AddButtonsPanel final
 public:
 	class UUnionUIButtonsPanel*                   InAddButtonsPanel;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUISceneBase_AddButtonsPanel) == 0x000008, "Wrong alignment on UnionUISceneBase_AddButtonsPanel");
-static_assert(sizeof(UnionUISceneBase_AddButtonsPanel) == 0x000008, "Wrong size on UnionUISceneBase_AddButtonsPanel");
-static_assert(offsetof(UnionUISceneBase_AddButtonsPanel, InAddButtonsPanel) == 0x000000, "Member 'UnionUISceneBase_AddButtonsPanel::InAddButtonsPanel' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUISceneBase_AddButtonsPanel;
 
 // Function UnionUI.UnionUISceneBase.CreateButtonsPanel
 // 0x0008 (0x0008 - 0x0000)
@@ -2155,9 +1818,7 @@ struct UnionUISceneBase_CreateButtonsPanel final
 public:
 	class UUnionUIButtonsPanel*                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUISceneBase_CreateButtonsPanel) == 0x000008, "Wrong alignment on UnionUISceneBase_CreateButtonsPanel");
-static_assert(sizeof(UnionUISceneBase_CreateButtonsPanel) == 0x000008, "Wrong size on UnionUISceneBase_CreateButtonsPanel");
-static_assert(offsetof(UnionUISceneBase_CreateButtonsPanel, ReturnValue) == 0x000000, "Member 'UnionUISceneBase_CreateButtonsPanel::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUISceneBase_CreateButtonsPanel;
 
 // Function UnionUI.UnionUISceneBase.GetLastFocusedButton
 // 0x0010 (0x0010 - 0x0000)
@@ -2168,10 +1829,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUserWidget*                            ReturnValue;                                       // 0x0008(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUISceneBase_GetLastFocusedButton) == 0x000008, "Wrong alignment on UnionUISceneBase_GetLastFocusedButton");
-static_assert(sizeof(UnionUISceneBase_GetLastFocusedButton) == 0x000010, "Wrong size on UnionUISceneBase_GetLastFocusedButton");
-static_assert(offsetof(UnionUISceneBase_GetLastFocusedButton, OutLastFocusedButtonIndex) == 0x000000, "Member 'UnionUISceneBase_GetLastFocusedButton::OutLastFocusedButtonIndex' has a wrong offset!");
-static_assert(offsetof(UnionUISceneBase_GetLastFocusedButton, ReturnValue) == 0x000008, "Member 'UnionUISceneBase_GetLastFocusedButton::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUISceneBase_GetLastFocusedButton;
 
 // Function UnionUI.UnionUISceneBase.GetLastFocusedButtonByPlayerIndex
 // 0x0010 (0x0010 - 0x0000)
@@ -2182,11 +1840,7 @@ public:
 	int32                                         OutLastFocusedButtonIndex;                         // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UUserWidget*                            ReturnValue;                                       // 0x0008(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUISceneBase_GetLastFocusedButtonByPlayerIndex) == 0x000008, "Wrong alignment on UnionUISceneBase_GetLastFocusedButtonByPlayerIndex");
-static_assert(sizeof(UnionUISceneBase_GetLastFocusedButtonByPlayerIndex) == 0x000010, "Wrong size on UnionUISceneBase_GetLastFocusedButtonByPlayerIndex");
-static_assert(offsetof(UnionUISceneBase_GetLastFocusedButtonByPlayerIndex, PlayerControllerIndex) == 0x000000, "Member 'UnionUISceneBase_GetLastFocusedButtonByPlayerIndex::PlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(UnionUISceneBase_GetLastFocusedButtonByPlayerIndex, OutLastFocusedButtonIndex) == 0x000004, "Member 'UnionUISceneBase_GetLastFocusedButtonByPlayerIndex::OutLastFocusedButtonIndex' has a wrong offset!");
-static_assert(offsetof(UnionUISceneBase_GetLastFocusedButtonByPlayerIndex, ReturnValue) == 0x000008, "Member 'UnionUISceneBase_GetLastFocusedButtonByPlayerIndex::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUISceneBase_GetLastFocusedButtonByPlayerIndex;
 
 // Function UnionUI.UnionUISceneBase.GetLastFocusedButtonsPanel
 // 0x0010 (0x0010 - 0x0000)
@@ -2197,10 +1851,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUnionUIButtonsPanel*                   ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUISceneBase_GetLastFocusedButtonsPanel) == 0x000008, "Wrong alignment on UnionUISceneBase_GetLastFocusedButtonsPanel");
-static_assert(sizeof(UnionUISceneBase_GetLastFocusedButtonsPanel) == 0x000010, "Wrong size on UnionUISceneBase_GetLastFocusedButtonsPanel");
-static_assert(offsetof(UnionUISceneBase_GetLastFocusedButtonsPanel, OutLastFocusedButtonsPanelIndex) == 0x000000, "Member 'UnionUISceneBase_GetLastFocusedButtonsPanel::OutLastFocusedButtonsPanelIndex' has a wrong offset!");
-static_assert(offsetof(UnionUISceneBase_GetLastFocusedButtonsPanel, ReturnValue) == 0x000008, "Member 'UnionUISceneBase_GetLastFocusedButtonsPanel::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUISceneBase_GetLastFocusedButtonsPanel;
 
 // Function UnionUI.UnionUISceneBase.GetLastFocusedButtonsPanelByPlayerIndex
 // 0x0010 (0x0010 - 0x0000)
@@ -2211,11 +1862,7 @@ public:
 	int32                                         OutLastFocusedButtonsPanelIndex;                   // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UUnionUIButtonsPanel*                   ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUISceneBase_GetLastFocusedButtonsPanelByPlayerIndex) == 0x000008, "Wrong alignment on UnionUISceneBase_GetLastFocusedButtonsPanelByPlayerIndex");
-static_assert(sizeof(UnionUISceneBase_GetLastFocusedButtonsPanelByPlayerIndex) == 0x000010, "Wrong size on UnionUISceneBase_GetLastFocusedButtonsPanelByPlayerIndex");
-static_assert(offsetof(UnionUISceneBase_GetLastFocusedButtonsPanelByPlayerIndex, PlayerControllerIndex) == 0x000000, "Member 'UnionUISceneBase_GetLastFocusedButtonsPanelByPlayerIndex::PlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(UnionUISceneBase_GetLastFocusedButtonsPanelByPlayerIndex, OutLastFocusedButtonsPanelIndex) == 0x000004, "Member 'UnionUISceneBase_GetLastFocusedButtonsPanelByPlayerIndex::OutLastFocusedButtonsPanelIndex' has a wrong offset!");
-static_assert(offsetof(UnionUISceneBase_GetLastFocusedButtonsPanelByPlayerIndex, ReturnValue) == 0x000008, "Member 'UnionUISceneBase_GetLastFocusedButtonsPanelByPlayerIndex::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUISceneBase_GetLastFocusedButtonsPanelByPlayerIndex;
 
 // Function UnionUI.UnionUISceneBase.OnUISceneCancelDownEvent_Impl
 // 0x0010 (0x0010 - 0x0000)
@@ -2226,10 +1873,7 @@ public:
 	int32                                         ButtonIndex;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(UnionUISceneBase_OnUISceneCancelDownEvent_Impl) == 0x000008, "Wrong alignment on UnionUISceneBase_OnUISceneCancelDownEvent_Impl");
-static_assert(sizeof(UnionUISceneBase_OnUISceneCancelDownEvent_Impl) == 0x000010, "Wrong size on UnionUISceneBase_OnUISceneCancelDownEvent_Impl");
-static_assert(offsetof(UnionUISceneBase_OnUISceneCancelDownEvent_Impl, UnionButton) == 0x000000, "Member 'UnionUISceneBase_OnUISceneCancelDownEvent_Impl::UnionButton' has a wrong offset!");
-static_assert(offsetof(UnionUISceneBase_OnUISceneCancelDownEvent_Impl, ButtonIndex) == 0x000008, "Member 'UnionUISceneBase_OnUISceneCancelDownEvent_Impl::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUISceneBase_OnUISceneCancelDownEvent_Impl;
 
 // Function UnionUI.UnionUISceneBase.OnUISceneCancelEvent_Impl
 // 0x0010 (0x0010 - 0x0000)
@@ -2240,10 +1884,7 @@ public:
 	int32                                         ButtonIndex;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(UnionUISceneBase_OnUISceneCancelEvent_Impl) == 0x000008, "Wrong alignment on UnionUISceneBase_OnUISceneCancelEvent_Impl");
-static_assert(sizeof(UnionUISceneBase_OnUISceneCancelEvent_Impl) == 0x000010, "Wrong size on UnionUISceneBase_OnUISceneCancelEvent_Impl");
-static_assert(offsetof(UnionUISceneBase_OnUISceneCancelEvent_Impl, UnionButton) == 0x000000, "Member 'UnionUISceneBase_OnUISceneCancelEvent_Impl::UnionButton' has a wrong offset!");
-static_assert(offsetof(UnionUISceneBase_OnUISceneCancelEvent_Impl, ButtonIndex) == 0x000008, "Member 'UnionUISceneBase_OnUISceneCancelEvent_Impl::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUISceneBase_OnUISceneCancelEvent_Impl;
 
 // Function UnionUI.UnionUISceneBase.OnUISceneDecisionDownEvent_Impl
 // 0x0010 (0x0010 - 0x0000)
@@ -2254,10 +1895,7 @@ public:
 	int32                                         ButtonIndex;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(UnionUISceneBase_OnUISceneDecisionDownEvent_Impl) == 0x000008, "Wrong alignment on UnionUISceneBase_OnUISceneDecisionDownEvent_Impl");
-static_assert(sizeof(UnionUISceneBase_OnUISceneDecisionDownEvent_Impl) == 0x000010, "Wrong size on UnionUISceneBase_OnUISceneDecisionDownEvent_Impl");
-static_assert(offsetof(UnionUISceneBase_OnUISceneDecisionDownEvent_Impl, UnionButton) == 0x000000, "Member 'UnionUISceneBase_OnUISceneDecisionDownEvent_Impl::UnionButton' has a wrong offset!");
-static_assert(offsetof(UnionUISceneBase_OnUISceneDecisionDownEvent_Impl, ButtonIndex) == 0x000008, "Member 'UnionUISceneBase_OnUISceneDecisionDownEvent_Impl::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUISceneBase_OnUISceneDecisionDownEvent_Impl;
 
 // Function UnionUI.UnionUISceneBase.OnUISceneDecisionEvent_Impl
 // 0x0010 (0x0010 - 0x0000)
@@ -2268,10 +1906,7 @@ public:
 	int32                                         ButtonIndex;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(UnionUISceneBase_OnUISceneDecisionEvent_Impl) == 0x000008, "Wrong alignment on UnionUISceneBase_OnUISceneDecisionEvent_Impl");
-static_assert(sizeof(UnionUISceneBase_OnUISceneDecisionEvent_Impl) == 0x000010, "Wrong size on UnionUISceneBase_OnUISceneDecisionEvent_Impl");
-static_assert(offsetof(UnionUISceneBase_OnUISceneDecisionEvent_Impl, UnionButton) == 0x000000, "Member 'UnionUISceneBase_OnUISceneDecisionEvent_Impl::UnionButton' has a wrong offset!");
-static_assert(offsetof(UnionUISceneBase_OnUISceneDecisionEvent_Impl, ButtonIndex) == 0x000008, "Member 'UnionUISceneBase_OnUISceneDecisionEvent_Impl::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUISceneBase_OnUISceneDecisionEvent_Impl;
 
 // Function UnionUI.UnionUISceneBase.OnUISceneDirectionEvent_Impl
 // 0x0010 (0x0010 - 0x0000)
@@ -2283,11 +1918,7 @@ public:
 	EUnionUIControlDir                            Dir;                                               // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(UnionUISceneBase_OnUISceneDirectionEvent_Impl) == 0x000008, "Wrong alignment on UnionUISceneBase_OnUISceneDirectionEvent_Impl");
-static_assert(sizeof(UnionUISceneBase_OnUISceneDirectionEvent_Impl) == 0x000010, "Wrong size on UnionUISceneBase_OnUISceneDirectionEvent_Impl");
-static_assert(offsetof(UnionUISceneBase_OnUISceneDirectionEvent_Impl, UnionButton) == 0x000000, "Member 'UnionUISceneBase_OnUISceneDirectionEvent_Impl::UnionButton' has a wrong offset!");
-static_assert(offsetof(UnionUISceneBase_OnUISceneDirectionEvent_Impl, ButtonIndex) == 0x000008, "Member 'UnionUISceneBase_OnUISceneDirectionEvent_Impl::ButtonIndex' has a wrong offset!");
-static_assert(offsetof(UnionUISceneBase_OnUISceneDirectionEvent_Impl, Dir) == 0x00000C, "Member 'UnionUISceneBase_OnUISceneDirectionEvent_Impl::Dir' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUISceneBase_OnUISceneDirectionEvent_Impl;
 
 // Function UnionUI.UnionUISceneBase.OnUISceneFaceTopEvent_Impl
 // 0x0010 (0x0010 - 0x0000)
@@ -2298,10 +1929,7 @@ public:
 	int32                                         ButtonIndex;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(UnionUISceneBase_OnUISceneFaceTopEvent_Impl) == 0x000008, "Wrong alignment on UnionUISceneBase_OnUISceneFaceTopEvent_Impl");
-static_assert(sizeof(UnionUISceneBase_OnUISceneFaceTopEvent_Impl) == 0x000010, "Wrong size on UnionUISceneBase_OnUISceneFaceTopEvent_Impl");
-static_assert(offsetof(UnionUISceneBase_OnUISceneFaceTopEvent_Impl, UnionButton) == 0x000000, "Member 'UnionUISceneBase_OnUISceneFaceTopEvent_Impl::UnionButton' has a wrong offset!");
-static_assert(offsetof(UnionUISceneBase_OnUISceneFaceTopEvent_Impl, ButtonIndex) == 0x000008, "Member 'UnionUISceneBase_OnUISceneFaceTopEvent_Impl::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUISceneBase_OnUISceneFaceTopEvent_Impl;
 
 // Function UnionUI.UnionUISceneBase.OnUISceneFocusEvent_Impl
 // 0x0010 (0x0010 - 0x0000)
@@ -2312,10 +1940,7 @@ public:
 	int32                                         ButtonIndex;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(UnionUISceneBase_OnUISceneFocusEvent_Impl) == 0x000008, "Wrong alignment on UnionUISceneBase_OnUISceneFocusEvent_Impl");
-static_assert(sizeof(UnionUISceneBase_OnUISceneFocusEvent_Impl) == 0x000010, "Wrong size on UnionUISceneBase_OnUISceneFocusEvent_Impl");
-static_assert(offsetof(UnionUISceneBase_OnUISceneFocusEvent_Impl, UnionButton) == 0x000000, "Member 'UnionUISceneBase_OnUISceneFocusEvent_Impl::UnionButton' has a wrong offset!");
-static_assert(offsetof(UnionUISceneBase_OnUISceneFocusEvent_Impl, ButtonIndex) == 0x000008, "Member 'UnionUISceneBase_OnUISceneFocusEvent_Impl::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUISceneBase_OnUISceneFocusEvent_Impl;
 
 // Function UnionUI.UnionUISceneBase.OnUISceneLeftShoulderEvent_Impl
 // 0x0010 (0x0010 - 0x0000)
@@ -2326,10 +1951,7 @@ public:
 	int32                                         ButtonIndex;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(UnionUISceneBase_OnUISceneLeftShoulderEvent_Impl) == 0x000008, "Wrong alignment on UnionUISceneBase_OnUISceneLeftShoulderEvent_Impl");
-static_assert(sizeof(UnionUISceneBase_OnUISceneLeftShoulderEvent_Impl) == 0x000010, "Wrong size on UnionUISceneBase_OnUISceneLeftShoulderEvent_Impl");
-static_assert(offsetof(UnionUISceneBase_OnUISceneLeftShoulderEvent_Impl, UnionButton) == 0x000000, "Member 'UnionUISceneBase_OnUISceneLeftShoulderEvent_Impl::UnionButton' has a wrong offset!");
-static_assert(offsetof(UnionUISceneBase_OnUISceneLeftShoulderEvent_Impl, ButtonIndex) == 0x000008, "Member 'UnionUISceneBase_OnUISceneLeftShoulderEvent_Impl::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUISceneBase_OnUISceneLeftShoulderEvent_Impl;
 
 // Function UnionUI.UnionUISceneBase.OnUISceneRightShoulderEvent_Impl
 // 0x0010 (0x0010 - 0x0000)
@@ -2340,10 +1962,7 @@ public:
 	int32                                         ButtonIndex;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(UnionUISceneBase_OnUISceneRightShoulderEvent_Impl) == 0x000008, "Wrong alignment on UnionUISceneBase_OnUISceneRightShoulderEvent_Impl");
-static_assert(sizeof(UnionUISceneBase_OnUISceneRightShoulderEvent_Impl) == 0x000010, "Wrong size on UnionUISceneBase_OnUISceneRightShoulderEvent_Impl");
-static_assert(offsetof(UnionUISceneBase_OnUISceneRightShoulderEvent_Impl, UnionButton) == 0x000000, "Member 'UnionUISceneBase_OnUISceneRightShoulderEvent_Impl::UnionButton' has a wrong offset!");
-static_assert(offsetof(UnionUISceneBase_OnUISceneRightShoulderEvent_Impl, ButtonIndex) == 0x000008, "Member 'UnionUISceneBase_OnUISceneRightShoulderEvent_Impl::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUISceneBase_OnUISceneRightShoulderEvent_Impl;
 
 // Function UnionUI.UnionUISceneBase.OnUISceneUnFocusEvent_Impl
 // 0x0010 (0x0010 - 0x0000)
@@ -2354,10 +1973,7 @@ public:
 	int32                                         ButtonIndex;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(UnionUISceneBase_OnUISceneUnFocusEvent_Impl) == 0x000008, "Wrong alignment on UnionUISceneBase_OnUISceneUnFocusEvent_Impl");
-static_assert(sizeof(UnionUISceneBase_OnUISceneUnFocusEvent_Impl) == 0x000010, "Wrong size on UnionUISceneBase_OnUISceneUnFocusEvent_Impl");
-static_assert(offsetof(UnionUISceneBase_OnUISceneUnFocusEvent_Impl, UnionButton) == 0x000000, "Member 'UnionUISceneBase_OnUISceneUnFocusEvent_Impl::UnionButton' has a wrong offset!");
-static_assert(offsetof(UnionUISceneBase_OnUISceneUnFocusEvent_Impl, ButtonIndex) == 0x000008, "Member 'UnionUISceneBase_OnUISceneUnFocusEvent_Impl::ButtonIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUISceneBase_OnUISceneUnFocusEvent_Impl;
 
 // Function UnionUI.UnionUISceneBase.SetFocusSoundEnableAll
 // 0x0001 (0x0001 - 0x0000)
@@ -2366,9 +1982,7 @@ struct UnionUISceneBase_SetFocusSoundEnableAll final
 public:
 	bool                                          bEnable;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUISceneBase_SetFocusSoundEnableAll) == 0x000001, "Wrong alignment on UnionUISceneBase_SetFocusSoundEnableAll");
-static_assert(sizeof(UnionUISceneBase_SetFocusSoundEnableAll) == 0x000001, "Wrong size on UnionUISceneBase_SetFocusSoundEnableAll");
-static_assert(offsetof(UnionUISceneBase_SetFocusSoundEnableAll, bEnable) == 0x000000, "Member 'UnionUISceneBase_SetFocusSoundEnableAll::bEnable' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUISceneBase_SetFocusSoundEnableAll;
 
 // Function UnionUI.UnionUISceneBase.SetOwnerPlayerController
 // 0x0010 (0x0010 - 0x0000)
@@ -2379,10 +1993,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      InPlayerController;                                // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUISceneBase_SetOwnerPlayerController) == 0x000008, "Wrong alignment on UnionUISceneBase_SetOwnerPlayerController");
-static_assert(sizeof(UnionUISceneBase_SetOwnerPlayerController) == 0x000010, "Wrong size on UnionUISceneBase_SetOwnerPlayerController");
-static_assert(offsetof(UnionUISceneBase_SetOwnerPlayerController, InPanelIndex) == 0x000000, "Member 'UnionUISceneBase_SetOwnerPlayerController::InPanelIndex' has a wrong offset!");
-static_assert(offsetof(UnionUISceneBase_SetOwnerPlayerController, InPlayerController) == 0x000008, "Member 'UnionUISceneBase_SetOwnerPlayerController::InPlayerController' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUISceneBase_SetOwnerPlayerController;
 
 // Function UnionUI.UnionUISceneBase.SetUnFocusState
 // 0x0004 (0x0004 - 0x0000)
@@ -2391,9 +2002,7 @@ struct UnionUISceneBase_SetUnFocusState final
 public:
 	int32                                         InPanelIndex;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUISceneBase_SetUnFocusState) == 0x000004, "Wrong alignment on UnionUISceneBase_SetUnFocusState");
-static_assert(sizeof(UnionUISceneBase_SetUnFocusState) == 0x000004, "Wrong size on UnionUISceneBase_SetUnFocusState");
-static_assert(offsetof(UnionUISceneBase_SetUnFocusState, InPanelIndex) == 0x000000, "Member 'UnionUISceneBase_SetUnFocusState::InPanelIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUISceneBase_SetUnFocusState;
 
 // Function UnionUI.UnionUISceneBase.SetupButtonsPanel
 // 0x0020 (0x0020 - 0x0000)
@@ -2406,91 +2015,7 @@ public:
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUnionUIButtonsPanel*                   ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUISceneBase_SetupButtonsPanel) == 0x000008, "Wrong alignment on UnionUISceneBase_SetupButtonsPanel");
-static_assert(sizeof(UnionUISceneBase_SetupButtonsPanel) == 0x000020, "Wrong size on UnionUISceneBase_SetupButtonsPanel");
-static_assert(offsetof(UnionUISceneBase_SetupButtonsPanel, Buttons) == 0x000000, "Member 'UnionUISceneBase_SetupButtonsPanel::Buttons' has a wrong offset!");
-static_assert(offsetof(UnionUISceneBase_SetupButtonsPanel, InPanelIndex) == 0x000010, "Member 'UnionUISceneBase_SetupButtonsPanel::InPanelIndex' has a wrong offset!");
-static_assert(offsetof(UnionUISceneBase_SetupButtonsPanel, InExclusiveFocus) == 0x000014, "Member 'UnionUISceneBase_SetupButtonsPanel::InExclusiveFocus' has a wrong offset!");
-static_assert(offsetof(UnionUISceneBase_SetupButtonsPanel, ReturnValue) == 0x000018, "Member 'UnionUISceneBase_SetupButtonsPanel::ReturnValue' has a wrong offset!");
-
-// Function UnionUI.UnionUIWheelMenu.OnUISceneWheelSelectEvent_Impl
-// 0x0010 (0x0010 - 0x0000)
-struct UnionUIWheelMenu_OnUISceneWheelSelectEvent_Impl final
-{
-public:
-	class UUnionUIButtonBase*                     UnionButton;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ButtonIndex;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(UnionUIWheelMenu_OnUISceneWheelSelectEvent_Impl) == 0x000008, "Wrong alignment on UnionUIWheelMenu_OnUISceneWheelSelectEvent_Impl");
-static_assert(sizeof(UnionUIWheelMenu_OnUISceneWheelSelectEvent_Impl) == 0x000010, "Wrong size on UnionUIWheelMenu_OnUISceneWheelSelectEvent_Impl");
-static_assert(offsetof(UnionUIWheelMenu_OnUISceneWheelSelectEvent_Impl, UnionButton) == 0x000000, "Member 'UnionUIWheelMenu_OnUISceneWheelSelectEvent_Impl::UnionButton' has a wrong offset!");
-static_assert(offsetof(UnionUIWheelMenu_OnUISceneWheelSelectEvent_Impl, ButtonIndex) == 0x000008, "Member 'UnionUIWheelMenu_OnUISceneWheelSelectEvent_Impl::ButtonIndex' has a wrong offset!");
-
-// Function UnionUI.UnionUIWheelMenu.SetUpWheelParam
-// 0x0010 (0x0010 - 0x0000)
-struct UnionUIWheelMenu_SetUpWheelParam final
-{
-public:
-	bool                                          bInIsLeftTurn;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         InLStickIgone;                                     // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bInIsTopHalf;                                      // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         InBitweenDeathZone;                                // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUIWheelMenu_SetUpWheelParam) == 0x000004, "Wrong alignment on UnionUIWheelMenu_SetUpWheelParam");
-static_assert(sizeof(UnionUIWheelMenu_SetUpWheelParam) == 0x000010, "Wrong size on UnionUIWheelMenu_SetUpWheelParam");
-static_assert(offsetof(UnionUIWheelMenu_SetUpWheelParam, bInIsLeftTurn) == 0x000000, "Member 'UnionUIWheelMenu_SetUpWheelParam::bInIsLeftTurn' has a wrong offset!");
-static_assert(offsetof(UnionUIWheelMenu_SetUpWheelParam, InLStickIgone) == 0x000004, "Member 'UnionUIWheelMenu_SetUpWheelParam::InLStickIgone' has a wrong offset!");
-static_assert(offsetof(UnionUIWheelMenu_SetUpWheelParam, bInIsTopHalf) == 0x000008, "Member 'UnionUIWheelMenu_SetUpWheelParam::bInIsTopHalf' has a wrong offset!");
-static_assert(offsetof(UnionUIWheelMenu_SetUpWheelParam, InBitweenDeathZone) == 0x00000C, "Member 'UnionUIWheelMenu_SetUpWheelParam::InBitweenDeathZone' has a wrong offset!");
-
-// Function UnionUI.UnionUIWheelMenu.UISceneWheelMenuKeyBind
-// 0x0008 (0x0008 - 0x0000)
-struct UnionUIWheelMenu_UISceneWheelMenuKeyBind final
-{
-public:
-	class APlayerController*                      InPlayerController;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUIWheelMenu_UISceneWheelMenuKeyBind) == 0x000008, "Wrong alignment on UnionUIWheelMenu_UISceneWheelMenuKeyBind");
-static_assert(sizeof(UnionUIWheelMenu_UISceneWheelMenuKeyBind) == 0x000008, "Wrong size on UnionUIWheelMenu_UISceneWheelMenuKeyBind");
-static_assert(offsetof(UnionUIWheelMenu_UISceneWheelMenuKeyBind, InPlayerController) == 0x000000, "Member 'UnionUIWheelMenu_UISceneWheelMenuKeyBind::InPlayerController' has a wrong offset!");
-
-// Function UnionUI.UnionUIWheelMenu.UISceneWheelMenuKeyUnBind
-// 0x0008 (0x0008 - 0x0000)
-struct UnionUIWheelMenu_UISceneWheelMenuKeyUnBind final
-{
-public:
-	class APlayerController*                      InPlayerController;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUIWheelMenu_UISceneWheelMenuKeyUnBind) == 0x000008, "Wrong alignment on UnionUIWheelMenu_UISceneWheelMenuKeyUnBind");
-static_assert(sizeof(UnionUIWheelMenu_UISceneWheelMenuKeyUnBind) == 0x000008, "Wrong size on UnionUIWheelMenu_UISceneWheelMenuKeyUnBind");
-static_assert(offsetof(UnionUIWheelMenu_UISceneWheelMenuKeyUnBind, InPlayerController) == 0x000000, "Member 'UnionUIWheelMenu_UISceneWheelMenuKeyUnBind::InPlayerController' has a wrong offset!");
-
-// Function UnionUI.UnionUIWheelMenu.WheelMenuSelect_Impl
-// 0x0018 (0x0018 - 0x0000)
-struct UnionUIWheelMenu_WheelMenuSelect_Impl final
-{
-public:
-	struct FVector                                InStickVector;                                     // 0x0000(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUIWheelMenu_WheelMenuSelect_Impl) == 0x000008, "Wrong alignment on UnionUIWheelMenu_WheelMenuSelect_Impl");
-static_assert(sizeof(UnionUIWheelMenu_WheelMenuSelect_Impl) == 0x000018, "Wrong size on UnionUIWheelMenu_WheelMenuSelect_Impl");
-static_assert(offsetof(UnionUIWheelMenu_WheelMenuSelect_Impl, InStickVector) == 0x000000, "Member 'UnionUIWheelMenu_WheelMenuSelect_Impl::InStickVector' has a wrong offset!");
-
-// Function UnionUI.UnionUIWheelMenu.WheelMenuSelectInput_Impl
-// 0x0018 (0x0018 - 0x0000)
-struct UnionUIWheelMenu_WheelMenuSelectInput_Impl final
-{
-public:
-	class UObject*                                Object;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              InStickVector;                                     // 0x0008(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUIWheelMenu_WheelMenuSelectInput_Impl) == 0x000008, "Wrong alignment on UnionUIWheelMenu_WheelMenuSelectInput_Impl");
-static_assert(sizeof(UnionUIWheelMenu_WheelMenuSelectInput_Impl) == 0x000018, "Wrong size on UnionUIWheelMenu_WheelMenuSelectInput_Impl");
-static_assert(offsetof(UnionUIWheelMenu_WheelMenuSelectInput_Impl, Object) == 0x000000, "Member 'UnionUIWheelMenu_WheelMenuSelectInput_Impl::Object' has a wrong offset!");
-static_assert(offsetof(UnionUIWheelMenu_WheelMenuSelectInput_Impl, InStickVector) == 0x000008, "Member 'UnionUIWheelMenu_WheelMenuSelectInput_Impl::InStickVector' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUISceneBase_SetupButtonsPanel;
 
 // Function UnionUI.UnionUIPopupWindowManager.CreatePopupWindow
 // 0x0010 (0x0010 - 0x0000)
@@ -2501,10 +2026,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUnionUIPopupWindowBase*                ReturnValue;                                       // 0x0008(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIPopupWindowManager_CreatePopupWindow) == 0x000008, "Wrong alignment on UnionUIPopupWindowManager_CreatePopupWindow");
-static_assert(sizeof(UnionUIPopupWindowManager_CreatePopupWindow) == 0x000010, "Wrong size on UnionUIPopupWindowManager_CreatePopupWindow");
-static_assert(offsetof(UnionUIPopupWindowManager_CreatePopupWindow, WindowType) == 0x000000, "Member 'UnionUIPopupWindowManager_CreatePopupWindow::WindowType' has a wrong offset!");
-static_assert(offsetof(UnionUIPopupWindowManager_CreatePopupWindow, ReturnValue) == 0x000008, "Member 'UnionUIPopupWindowManager_CreatePopupWindow::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIPopupWindowManager_CreatePopupWindow;
 
 // Function UnionUI.UnionUIPopupWindowManager.IsAlreadyPopupWindowExist
 // 0x0001 (0x0001 - 0x0000)
@@ -2513,9 +2035,7 @@ struct UnionUIPopupWindowManager_IsAlreadyPopupWindowExist final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIPopupWindowManager_IsAlreadyPopupWindowExist) == 0x000001, "Wrong alignment on UnionUIPopupWindowManager_IsAlreadyPopupWindowExist");
-static_assert(sizeof(UnionUIPopupWindowManager_IsAlreadyPopupWindowExist) == 0x000001, "Wrong size on UnionUIPopupWindowManager_IsAlreadyPopupWindowExist");
-static_assert(offsetof(UnionUIPopupWindowManager_IsAlreadyPopupWindowExist, ReturnValue) == 0x000000, "Member 'UnionUIPopupWindowManager_IsAlreadyPopupWindowExist::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIPopupWindowManager_IsAlreadyPopupWindowExist;
 
 // Function UnionUI.UnionUIPopupWindowManager.IsPopupTypeExist
 // 0x0002 (0x0002 - 0x0000)
@@ -2525,10 +2045,7 @@ public:
 	EPopupWindowType                              WindowType;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIPopupWindowManager_IsPopupTypeExist) == 0x000001, "Wrong alignment on UnionUIPopupWindowManager_IsPopupTypeExist");
-static_assert(sizeof(UnionUIPopupWindowManager_IsPopupTypeExist) == 0x000002, "Wrong size on UnionUIPopupWindowManager_IsPopupTypeExist");
-static_assert(offsetof(UnionUIPopupWindowManager_IsPopupTypeExist, WindowType) == 0x000000, "Member 'UnionUIPopupWindowManager_IsPopupTypeExist::WindowType' has a wrong offset!");
-static_assert(offsetof(UnionUIPopupWindowManager_IsPopupTypeExist, ReturnValue) == 0x000001, "Member 'UnionUIPopupWindowManager_IsPopupTypeExist::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIPopupWindowManager_IsPopupTypeExist;
 
 // Function UnionUI.UnionUIPopupWindowManager.OnPopupWindowRemoveFromParent
 // 0x0008 (0x0008 - 0x0000)
@@ -2537,437 +2054,7 @@ struct UnionUIPopupWindowManager_OnPopupWindowRemoveFromParent final
 public:
 	class UUnionUIPopupWindowBase*                RemovedPopupWindow;                                // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionUIPopupWindowManager_OnPopupWindowRemoveFromParent) == 0x000008, "Wrong alignment on UnionUIPopupWindowManager_OnPopupWindowRemoveFromParent");
-static_assert(sizeof(UnionUIPopupWindowManager_OnPopupWindowRemoveFromParent) == 0x000008, "Wrong size on UnionUIPopupWindowManager_OnPopupWindowRemoveFromParent");
-static_assert(offsetof(UnionUIPopupWindowManager_OnPopupWindowRemoveFromParent, RemovedPopupWindow) == 0x000000, "Member 'UnionUIPopupWindowManager_OnPopupWindowRemoveFromParent::RemovedPopupWindow' has a wrong offset!");
-
-// Function UnionUI.UnionRichTextBlock.GetFontMaterialsFromDefaultTextStyleOverride
-// 0x0010 (0x0010 - 0x0000)
-struct UnionRichTextBlock_GetFontMaterialsFromDefaultTextStyleOverride final
-{
-public:
-	class UObject*                                FontBodyMaterial;                                  // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UObject*                                OutlineMaterial;                                   // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRichTextBlock_GetFontMaterialsFromDefaultTextStyleOverride) == 0x000008, "Wrong alignment on UnionRichTextBlock_GetFontMaterialsFromDefaultTextStyleOverride");
-static_assert(sizeof(UnionRichTextBlock_GetFontMaterialsFromDefaultTextStyleOverride) == 0x000010, "Wrong size on UnionRichTextBlock_GetFontMaterialsFromDefaultTextStyleOverride");
-static_assert(offsetof(UnionRichTextBlock_GetFontMaterialsFromDefaultTextStyleOverride, FontBodyMaterial) == 0x000000, "Member 'UnionRichTextBlock_GetFontMaterialsFromDefaultTextStyleOverride::FontBodyMaterial' has a wrong offset!");
-static_assert(offsetof(UnionRichTextBlock_GetFontMaterialsFromDefaultTextStyleOverride, OutlineMaterial) == 0x000008, "Member 'UnionRichTextBlock_GetFontMaterialsFromDefaultTextStyleOverride::OutlineMaterial' has a wrong offset!");
-
-// Function UnionUI.UnionRichTextBlock.IsPlayLetterEnd
-// 0x0001 (0x0001 - 0x0000)
-struct UnionRichTextBlock_IsPlayLetterEnd final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRichTextBlock_IsPlayLetterEnd) == 0x000001, "Wrong alignment on UnionRichTextBlock_IsPlayLetterEnd");
-static_assert(sizeof(UnionRichTextBlock_IsPlayLetterEnd) == 0x000001, "Wrong size on UnionRichTextBlock_IsPlayLetterEnd");
-static_assert(offsetof(UnionRichTextBlock_IsPlayLetterEnd, ReturnValue) == 0x000000, "Member 'UnionRichTextBlock_IsPlayLetterEnd::ReturnValue' has a wrong offset!");
-
-// Function UnionUI.UnionRichTextBlock.RemoveXml
-// 0x0020 (0x0020 - 0x0000)
-struct UnionRichTextBlock_RemoveXml final
-{
-public:
-	class FString                                 InString;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 OutString;                                         // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRichTextBlock_RemoveXml) == 0x000008, "Wrong alignment on UnionRichTextBlock_RemoveXml");
-static_assert(sizeof(UnionRichTextBlock_RemoveXml) == 0x000020, "Wrong size on UnionRichTextBlock_RemoveXml");
-static_assert(offsetof(UnionRichTextBlock_RemoveXml, InString) == 0x000000, "Member 'UnionRichTextBlock_RemoveXml::InString' has a wrong offset!");
-static_assert(offsetof(UnionRichTextBlock_RemoveXml, OutString) == 0x000010, "Member 'UnionRichTextBlock_RemoveXml::OutString' has a wrong offset!");
-
-// Function UnionUI.UnionRichTextBlock.SetDefaultFontSize
-// 0x0004 (0x0004 - 0x0000)
-struct UnionRichTextBlock_SetDefaultFontSize final
-{
-public:
-	int32                                         NewSize;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRichTextBlock_SetDefaultFontSize) == 0x000004, "Wrong alignment on UnionRichTextBlock_SetDefaultFontSize");
-static_assert(sizeof(UnionRichTextBlock_SetDefaultFontSize) == 0x000004, "Wrong size on UnionRichTextBlock_SetDefaultFontSize");
-static_assert(offsetof(UnionRichTextBlock_SetDefaultFontSize, NewSize) == 0x000000, "Member 'UnionRichTextBlock_SetDefaultFontSize::NewSize' has a wrong offset!");
-
-// Function UnionUI.UnionRichTextBlock.SetFontMaterialForDefaultTextStyleOverride
-// 0x0010 (0x0010 - 0x0000)
-struct UnionRichTextBlock_SetFontMaterialForDefaultTextStyleOverride final
-{
-public:
-	class UObject*                                FontBodyMaterial;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UObject*                                OutlineMaterial;                                   // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRichTextBlock_SetFontMaterialForDefaultTextStyleOverride) == 0x000008, "Wrong alignment on UnionRichTextBlock_SetFontMaterialForDefaultTextStyleOverride");
-static_assert(sizeof(UnionRichTextBlock_SetFontMaterialForDefaultTextStyleOverride) == 0x000010, "Wrong size on UnionRichTextBlock_SetFontMaterialForDefaultTextStyleOverride");
-static_assert(offsetof(UnionRichTextBlock_SetFontMaterialForDefaultTextStyleOverride, FontBodyMaterial) == 0x000000, "Member 'UnionRichTextBlock_SetFontMaterialForDefaultTextStyleOverride::FontBodyMaterial' has a wrong offset!");
-static_assert(offsetof(UnionRichTextBlock_SetFontMaterialForDefaultTextStyleOverride, OutlineMaterial) == 0x000008, "Member 'UnionRichTextBlock_SetFontMaterialForDefaultTextStyleOverride::OutlineMaterial' has a wrong offset!");
-
-// Function UnionUI.UnionRichTextBlock.SetScrollEnable
-// 0x0001 (0x0001 - 0x0000)
-struct UnionRichTextBlock_SetScrollEnable final
-{
-public:
-	bool                                          bInEnableScroll;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRichTextBlock_SetScrollEnable) == 0x000001, "Wrong alignment on UnionRichTextBlock_SetScrollEnable");
-static_assert(sizeof(UnionRichTextBlock_SetScrollEnable) == 0x000001, "Wrong size on UnionRichTextBlock_SetScrollEnable");
-static_assert(offsetof(UnionRichTextBlock_SetScrollEnable, bInEnableScroll) == 0x000000, "Member 'UnionRichTextBlock_SetScrollEnable::bInEnableScroll' has a wrong offset!");
-
-// Function UnionUI.UnionRichTextBlock.SetSequentialText
-// 0x0010 (0x0010 - 0x0000)
-struct UnionRichTextBlock_SetSequentialText final
-{
-public:
-	class FText                                   InText;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRichTextBlock_SetSequentialText) == 0x000008, "Wrong alignment on UnionRichTextBlock_SetSequentialText");
-static_assert(sizeof(UnionRichTextBlock_SetSequentialText) == 0x000010, "Wrong size on UnionRichTextBlock_SetSequentialText");
-static_assert(offsetof(UnionRichTextBlock_SetSequentialText, InText) == 0x000000, "Member 'UnionRichTextBlock_SetSequentialText::InText' has a wrong offset!");
-
-// Function UnionUI.UnionRichTextBlock.UpdateText
-// 0x0008 (0x0008 - 0x0000)
-struct UnionRichTextBlock_UpdateText final
-{
-public:
-	TSubclassOf<class URichTextBlockDecorator>    DecoratorClass;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRichTextBlock_UpdateText) == 0x000008, "Wrong alignment on UnionRichTextBlock_UpdateText");
-static_assert(sizeof(UnionRichTextBlock_UpdateText) == 0x000008, "Wrong size on UnionRichTextBlock_UpdateText");
-static_assert(offsetof(UnionRichTextBlock_UpdateText, DecoratorClass) == 0x000000, "Member 'UnionRichTextBlock_UpdateText::DecoratorClass' has a wrong offset!");
-
-// Function UnionUI.UnionRichTextBlock.GetDefaultFontSize
-// 0x0004 (0x0004 - 0x0000)
-struct UnionRichTextBlock_GetDefaultFontSize final
-{
-public:
-	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRichTextBlock_GetDefaultFontSize) == 0x000004, "Wrong alignment on UnionRichTextBlock_GetDefaultFontSize");
-static_assert(sizeof(UnionRichTextBlock_GetDefaultFontSize) == 0x000004, "Wrong size on UnionRichTextBlock_GetDefaultFontSize");
-static_assert(offsetof(UnionRichTextBlock_GetDefaultFontSize, ReturnValue) == 0x000000, "Member 'UnionRichTextBlock_GetDefaultFontSize::ReturnValue' has a wrong offset!");
-
-// Function UnionUI.UnionRichTextBlock.GetScrollEnable
-// 0x0001 (0x0001 - 0x0000)
-struct UnionRichTextBlock_GetScrollEnable final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRichTextBlock_GetScrollEnable) == 0x000001, "Wrong alignment on UnionRichTextBlock_GetScrollEnable");
-static_assert(sizeof(UnionRichTextBlock_GetScrollEnable) == 0x000001, "Wrong size on UnionRichTextBlock_GetScrollEnable");
-static_assert(offsetof(UnionRichTextBlock_GetScrollEnable, ReturnValue) == 0x000000, "Member 'UnionRichTextBlock_GetScrollEnable::ReturnValue' has a wrong offset!");
-
-// Function UnionUI.UnionUIRivalTransition.SetTransitionType
-// 0x0001 (0x0001 - 0x0000)
-struct UnionUIRivalTransition_SetTransitionType final
-{
-public:
-	ERivalTransitionType                          Type;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUIRivalTransition_SetTransitionType) == 0x000001, "Wrong alignment on UnionUIRivalTransition_SetTransitionType");
-static_assert(sizeof(UnionUIRivalTransition_SetTransitionType) == 0x000001, "Wrong size on UnionUIRivalTransition_SetTransitionType");
-static_assert(offsetof(UnionUIRivalTransition_SetTransitionType, Type) == 0x000000, "Member 'UnionUIRivalTransition_SetTransitionType::Type' has a wrong offset!");
-
-// Function UnionUI.UnionUISequenceInterface.Close
-// 0x0001 (0x0001 - 0x0000)
-struct UnionUISequenceInterface_Close final
-{
-public:
-	bool                                          bSelfRemove;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUISequenceInterface_Close) == 0x000001, "Wrong alignment on UnionUISequenceInterface_Close");
-static_assert(sizeof(UnionUISequenceInterface_Close) == 0x000001, "Wrong size on UnionUISequenceInterface_Close");
-static_assert(offsetof(UnionUISequenceInterface_Close, bSelfRemove) == 0x000000, "Member 'UnionUISequenceInterface_Close::bSelfRemove' has a wrong offset!");
-
-// Function UnionUI.UnionUITransitionManager.CreateCrossFadeWidget
-// 0x0008 (0x0008 - 0x0000)
-struct UnionUITransitionManager_CreateCrossFadeWidget final
-{
-public:
-	class UUnionUICrossFade*                      ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUITransitionManager_CreateCrossFadeWidget) == 0x000008, "Wrong alignment on UnionUITransitionManager_CreateCrossFadeWidget");
-static_assert(sizeof(UnionUITransitionManager_CreateCrossFadeWidget) == 0x000008, "Wrong size on UnionUITransitionManager_CreateCrossFadeWidget");
-static_assert(offsetof(UnionUITransitionManager_CreateCrossFadeWidget, ReturnValue) == 0x000000, "Member 'UnionUITransitionManager_CreateCrossFadeWidget::ReturnValue' has a wrong offset!");
-
-// Function UnionUI.UnionUITransitionManager.CreateLoadingDisplayWidget
-// 0x0010 (0x0010 - 0x0000)
-struct UnionUITransitionManager_CreateLoadingDisplayWidget final
-{
-public:
-	ELoadingDisplayType                           CreateType;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionUILoadingDisplay*                 ReturnValue;                                       // 0x0008(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUITransitionManager_CreateLoadingDisplayWidget) == 0x000008, "Wrong alignment on UnionUITransitionManager_CreateLoadingDisplayWidget");
-static_assert(sizeof(UnionUITransitionManager_CreateLoadingDisplayWidget) == 0x000010, "Wrong size on UnionUITransitionManager_CreateLoadingDisplayWidget");
-static_assert(offsetof(UnionUITransitionManager_CreateLoadingDisplayWidget, CreateType) == 0x000000, "Member 'UnionUITransitionManager_CreateLoadingDisplayWidget::CreateType' has a wrong offset!");
-static_assert(offsetof(UnionUITransitionManager_CreateLoadingDisplayWidget, ReturnValue) == 0x000008, "Member 'UnionUITransitionManager_CreateLoadingDisplayWidget::ReturnValue' has a wrong offset!");
-
-// Function UnionUI.UnionUITransitionManager.CreateMovieTransitionWidget
-// 0x0008 (0x0008 - 0x0000)
-struct UnionUITransitionManager_CreateMovieTransitionWidget final
-{
-public:
-	class UUnionUIMovieTransition*                ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUITransitionManager_CreateMovieTransitionWidget) == 0x000008, "Wrong alignment on UnionUITransitionManager_CreateMovieTransitionWidget");
-static_assert(sizeof(UnionUITransitionManager_CreateMovieTransitionWidget) == 0x000008, "Wrong size on UnionUITransitionManager_CreateMovieTransitionWidget");
-static_assert(offsetof(UnionUITransitionManager_CreateMovieTransitionWidget, ReturnValue) == 0x000000, "Member 'UnionUITransitionManager_CreateMovieTransitionWidget::ReturnValue' has a wrong offset!");
-
-// Function UnionUI.UnionUITransitionManager.CreateRivalTransitionWidget
-// 0x0008 (0x0008 - 0x0000)
-struct UnionUITransitionManager_CreateRivalTransitionWidget final
-{
-public:
-	class UUnionUIRivalTransition*                ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUITransitionManager_CreateRivalTransitionWidget) == 0x000008, "Wrong alignment on UnionUITransitionManager_CreateRivalTransitionWidget");
-static_assert(sizeof(UnionUITransitionManager_CreateRivalTransitionWidget) == 0x000008, "Wrong size on UnionUITransitionManager_CreateRivalTransitionWidget");
-static_assert(offsetof(UnionUITransitionManager_CreateRivalTransitionWidget, ReturnValue) == 0x000000, "Member 'UnionUITransitionManager_CreateRivalTransitionWidget::ReturnValue' has a wrong offset!");
-
-// Function UnionUI.UnionUITransitionManager.FinishFade
-// 0x0001 (0x0001 - 0x0000)
-struct UnionUITransitionManager_FinishFade final
-{
-public:
-	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUITransitionManager_FinishFade) == 0x000001, "Wrong alignment on UnionUITransitionManager_FinishFade");
-static_assert(sizeof(UnionUITransitionManager_FinishFade) == 0x000001, "Wrong size on UnionUITransitionManager_FinishFade");
-static_assert(offsetof(UnionUITransitionManager_FinishFade, FadeDirection) == 0x000000, "Member 'UnionUITransitionManager_FinishFade::FadeDirection' has a wrong offset!");
-
-// Function UnionUI.UnionUITransitionManager.FinishSubFade
-// 0x0001 (0x0001 - 0x0000)
-struct UnionUITransitionManager_FinishSubFade final
-{
-public:
-	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUITransitionManager_FinishSubFade) == 0x000001, "Wrong alignment on UnionUITransitionManager_FinishSubFade");
-static_assert(sizeof(UnionUITransitionManager_FinishSubFade) == 0x000001, "Wrong size on UnionUITransitionManager_FinishSubFade");
-static_assert(offsetof(UnionUITransitionManager_FinishSubFade, FadeDirection) == 0x000000, "Member 'UnionUITransitionManager_FinishSubFade::FadeDirection' has a wrong offset!");
-
-// Function UnionUI.UnionUITransitionManager.GetCrossFadeWidget
-// 0x0008 (0x0008 - 0x0000)
-struct UnionUITransitionManager_GetCrossFadeWidget final
-{
-public:
-	class UUnionUICrossFade*                      ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUITransitionManager_GetCrossFadeWidget) == 0x000008, "Wrong alignment on UnionUITransitionManager_GetCrossFadeWidget");
-static_assert(sizeof(UnionUITransitionManager_GetCrossFadeWidget) == 0x000008, "Wrong size on UnionUITransitionManager_GetCrossFadeWidget");
-static_assert(offsetof(UnionUITransitionManager_GetCrossFadeWidget, ReturnValue) == 0x000000, "Member 'UnionUITransitionManager_GetCrossFadeWidget::ReturnValue' has a wrong offset!");
-
-// Function UnionUI.UnionUITransitionManager.GetLastDisplayedSceneUI
-// 0x0008 (0x0008 - 0x0000)
-struct UnionUITransitionManager_GetLastDisplayedSceneUI final
-{
-public:
-	class UUserWidget*                            ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUITransitionManager_GetLastDisplayedSceneUI) == 0x000008, "Wrong alignment on UnionUITransitionManager_GetLastDisplayedSceneUI");
-static_assert(sizeof(UnionUITransitionManager_GetLastDisplayedSceneUI) == 0x000008, "Wrong size on UnionUITransitionManager_GetLastDisplayedSceneUI");
-static_assert(offsetof(UnionUITransitionManager_GetLastDisplayedSceneUI, ReturnValue) == 0x000000, "Member 'UnionUITransitionManager_GetLastDisplayedSceneUI::ReturnValue' has a wrong offset!");
-
-// Function UnionUI.UnionUITransitionManager.GetLoadingDisplayType
-// 0x0001 (0x0001 - 0x0000)
-struct UnionUITransitionManager_GetLoadingDisplayType final
-{
-public:
-	ELoadingDisplayType                           ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUITransitionManager_GetLoadingDisplayType) == 0x000001, "Wrong alignment on UnionUITransitionManager_GetLoadingDisplayType");
-static_assert(sizeof(UnionUITransitionManager_GetLoadingDisplayType) == 0x000001, "Wrong size on UnionUITransitionManager_GetLoadingDisplayType");
-static_assert(offsetof(UnionUITransitionManager_GetLoadingDisplayType, ReturnValue) == 0x000000, "Member 'UnionUITransitionManager_GetLoadingDisplayType::ReturnValue' has a wrong offset!");
-
-// Function UnionUI.UnionUITransitionManager.GetLoadingDisplayWidget
-// 0x0008 (0x0008 - 0x0000)
-struct UnionUITransitionManager_GetLoadingDisplayWidget final
-{
-public:
-	class UUnionUILoadingDisplay*                 ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUITransitionManager_GetLoadingDisplayWidget) == 0x000008, "Wrong alignment on UnionUITransitionManager_GetLoadingDisplayWidget");
-static_assert(sizeof(UnionUITransitionManager_GetLoadingDisplayWidget) == 0x000008, "Wrong size on UnionUITransitionManager_GetLoadingDisplayWidget");
-static_assert(offsetof(UnionUITransitionManager_GetLoadingDisplayWidget, ReturnValue) == 0x000000, "Member 'UnionUITransitionManager_GetLoadingDisplayWidget::ReturnValue' has a wrong offset!");
-
-// Function UnionUI.UnionUITransitionManager.GetMovieTransitionWidget
-// 0x0008 (0x0008 - 0x0000)
-struct UnionUITransitionManager_GetMovieTransitionWidget final
-{
-public:
-	class UUnionUIMovieTransition*                ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUITransitionManager_GetMovieTransitionWidget) == 0x000008, "Wrong alignment on UnionUITransitionManager_GetMovieTransitionWidget");
-static_assert(sizeof(UnionUITransitionManager_GetMovieTransitionWidget) == 0x000008, "Wrong size on UnionUITransitionManager_GetMovieTransitionWidget");
-static_assert(offsetof(UnionUITransitionManager_GetMovieTransitionWidget, ReturnValue) == 0x000000, "Member 'UnionUITransitionManager_GetMovieTransitionWidget::ReturnValue' has a wrong offset!");
-
-// Function UnionUI.UnionUITransitionManager.GetNowLoadingZOrder
-// 0x0004 (0x0004 - 0x0000)
-struct UnionUITransitionManager_GetNowLoadingZOrder final
-{
-public:
-	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUITransitionManager_GetNowLoadingZOrder) == 0x000004, "Wrong alignment on UnionUITransitionManager_GetNowLoadingZOrder");
-static_assert(sizeof(UnionUITransitionManager_GetNowLoadingZOrder) == 0x000004, "Wrong size on UnionUITransitionManager_GetNowLoadingZOrder");
-static_assert(offsetof(UnionUITransitionManager_GetNowLoadingZOrder, ReturnValue) == 0x000000, "Member 'UnionUITransitionManager_GetNowLoadingZOrder::ReturnValue' has a wrong offset!");
-
-// Function UnionUI.UnionUITransitionManager.GetRivalTransitionWidget
-// 0x0008 (0x0008 - 0x0000)
-struct UnionUITransitionManager_GetRivalTransitionWidget final
-{
-public:
-	class UUnionUIRivalTransition*                ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUITransitionManager_GetRivalTransitionWidget) == 0x000008, "Wrong alignment on UnionUITransitionManager_GetRivalTransitionWidget");
-static_assert(sizeof(UnionUITransitionManager_GetRivalTransitionWidget) == 0x000008, "Wrong size on UnionUITransitionManager_GetRivalTransitionWidget");
-static_assert(offsetof(UnionUITransitionManager_GetRivalTransitionWidget, ReturnValue) == 0x000000, "Member 'UnionUITransitionManager_GetRivalTransitionWidget::ReturnValue' has a wrong offset!");
-
-// Function UnionUI.UnionUITransitionManager.GetUIFadeWidget
-// 0x0008 (0x0008 - 0x0000)
-struct UnionUITransitionManager_GetUIFadeWidget final
-{
-public:
-	class UUnionUIFade*                           ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUITransitionManager_GetUIFadeWidget) == 0x000008, "Wrong alignment on UnionUITransitionManager_GetUIFadeWidget");
-static_assert(sizeof(UnionUITransitionManager_GetUIFadeWidget) == 0x000008, "Wrong size on UnionUITransitionManager_GetUIFadeWidget");
-static_assert(offsetof(UnionUITransitionManager_GetUIFadeWidget, ReturnValue) == 0x000000, "Member 'UnionUITransitionManager_GetUIFadeWidget::ReturnValue' has a wrong offset!");
-
-// Function UnionUI.UnionUITransitionManager.SetLastDisplayedSceneUI
-// 0x0008 (0x0008 - 0x0000)
-struct UnionUITransitionManager_SetLastDisplayedSceneUI final
-{
-public:
-	class UUserWidget*                            InLastDisplayedSceneUI;                            // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUITransitionManager_SetLastDisplayedSceneUI) == 0x000008, "Wrong alignment on UnionUITransitionManager_SetLastDisplayedSceneUI");
-static_assert(sizeof(UnionUITransitionManager_SetLastDisplayedSceneUI) == 0x000008, "Wrong size on UnionUITransitionManager_SetLastDisplayedSceneUI");
-static_assert(offsetof(UnionUITransitionManager_SetLastDisplayedSceneUI, InLastDisplayedSceneUI) == 0x000000, "Member 'UnionUITransitionManager_SetLastDisplayedSceneUI::InLastDisplayedSceneUI' has a wrong offset!");
-
-// Function UnionUI.UnionUITransitionManager.SetLastDisplayedSceneUIVisible
-// 0x0002 (0x0002 - 0x0000)
-struct UnionUITransitionManager_SetLastDisplayedSceneUIVisible final
-{
-public:
-	bool                                          bRemove;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESlateVisibility                              InVisibility;                                      // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUITransitionManager_SetLastDisplayedSceneUIVisible) == 0x000001, "Wrong alignment on UnionUITransitionManager_SetLastDisplayedSceneUIVisible");
-static_assert(sizeof(UnionUITransitionManager_SetLastDisplayedSceneUIVisible) == 0x000002, "Wrong size on UnionUITransitionManager_SetLastDisplayedSceneUIVisible");
-static_assert(offsetof(UnionUITransitionManager_SetLastDisplayedSceneUIVisible, bRemove) == 0x000000, "Member 'UnionUITransitionManager_SetLastDisplayedSceneUIVisible::bRemove' has a wrong offset!");
-static_assert(offsetof(UnionUITransitionManager_SetLastDisplayedSceneUIVisible, InVisibility) == 0x000001, "Member 'UnionUITransitionManager_SetLastDisplayedSceneUIVisible::InVisibility' has a wrong offset!");
-
-// Function UnionUI.UnionUITransitionManager.SetRivalTransitionType
-// 0x0001 (0x0001 - 0x0000)
-struct UnionUITransitionManager_SetRivalTransitionType final
-{
-public:
-	ERivalTransitionType                          TransitionType;                                    // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUITransitionManager_SetRivalTransitionType) == 0x000001, "Wrong alignment on UnionUITransitionManager_SetRivalTransitionType");
-static_assert(sizeof(UnionUITransitionManager_SetRivalTransitionType) == 0x000001, "Wrong size on UnionUITransitionManager_SetRivalTransitionType");
-static_assert(offsetof(UnionUITransitionManager_SetRivalTransitionType, TransitionType) == 0x000000, "Member 'UnionUITransitionManager_SetRivalTransitionType::TransitionType' has a wrong offset!");
-
-// Function UnionUI.UnionUITransitionManager.SetShouldCheckFadeIgnoreInput
-// 0x0001 (0x0001 - 0x0000)
-struct UnionUITransitionManager_SetShouldCheckFadeIgnoreInput final
-{
-public:
-	bool                                          ShouldIgnore;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUITransitionManager_SetShouldCheckFadeIgnoreInput) == 0x000001, "Wrong alignment on UnionUITransitionManager_SetShouldCheckFadeIgnoreInput");
-static_assert(sizeof(UnionUITransitionManager_SetShouldCheckFadeIgnoreInput) == 0x000001, "Wrong size on UnionUITransitionManager_SetShouldCheckFadeIgnoreInput");
-static_assert(offsetof(UnionUITransitionManager_SetShouldCheckFadeIgnoreInput, ShouldIgnore) == 0x000000, "Member 'UnionUITransitionManager_SetShouldCheckFadeIgnoreInput::ShouldIgnore' has a wrong offset!");
-
-// Function UnionUI.UnionUITransitionManager.StartFade
-// 0x0014 (0x0014 - 0x0000)
-struct UnionUITransitionManager_StartFade final
-{
-public:
-	EUnionUIFadeColor                             FadeColor;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EUnionUIFadeDirection FadeDirection)> OnFinished;                                 // 0x0004(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUITransitionManager_StartFade) == 0x000004, "Wrong alignment on UnionUITransitionManager_StartFade");
-static_assert(sizeof(UnionUITransitionManager_StartFade) == 0x000014, "Wrong size on UnionUITransitionManager_StartFade");
-static_assert(offsetof(UnionUITransitionManager_StartFade, FadeColor) == 0x000000, "Member 'UnionUITransitionManager_StartFade::FadeColor' has a wrong offset!");
-static_assert(offsetof(UnionUITransitionManager_StartFade, FadeDirection) == 0x000001, "Member 'UnionUITransitionManager_StartFade::FadeDirection' has a wrong offset!");
-static_assert(offsetof(UnionUITransitionManager_StartFade, OnFinished) == 0x000004, "Member 'UnionUITransitionManager_StartFade::OnFinished' has a wrong offset!");
-
-// Function UnionUI.UnionUITransitionManager.StartLoopFade
-// 0x0001 (0x0001 - 0x0000)
-struct UnionUITransitionManager_StartLoopFade final
-{
-public:
-	EUnionUIFadeColor                             FadeColor;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUITransitionManager_StartLoopFade) == 0x000001, "Wrong alignment on UnionUITransitionManager_StartLoopFade");
-static_assert(sizeof(UnionUITransitionManager_StartLoopFade) == 0x000001, "Wrong size on UnionUITransitionManager_StartLoopFade");
-static_assert(offsetof(UnionUITransitionManager_StartLoopFade, FadeColor) == 0x000000, "Member 'UnionUITransitionManager_StartLoopFade::FadeColor' has a wrong offset!");
-
-// Function UnionUI.UnionUITransitionManager.StartSubFade
-// 0x0014 (0x0014 - 0x0000)
-struct UnionUITransitionManager_StartSubFade final
-{
-public:
-	EUnionUIFadeColor                             FadeColor;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EUnionUIFadeDirection FadeDirection)> OnFinished;                                 // 0x0004(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUITransitionManager_StartSubFade) == 0x000004, "Wrong alignment on UnionUITransitionManager_StartSubFade");
-static_assert(sizeof(UnionUITransitionManager_StartSubFade) == 0x000014, "Wrong size on UnionUITransitionManager_StartSubFade");
-static_assert(offsetof(UnionUITransitionManager_StartSubFade, FadeColor) == 0x000000, "Member 'UnionUITransitionManager_StartSubFade::FadeColor' has a wrong offset!");
-static_assert(offsetof(UnionUITransitionManager_StartSubFade, FadeDirection) == 0x000001, "Member 'UnionUITransitionManager_StartSubFade::FadeDirection' has a wrong offset!");
-static_assert(offsetof(UnionUITransitionManager_StartSubFade, OnFinished) == 0x000004, "Member 'UnionUITransitionManager_StartSubFade::OnFinished' has a wrong offset!");
-
-// Function UnionUI.UnionUITransitionManager.GetLastFadeColor
-// 0x0001 (0x0001 - 0x0000)
-struct UnionUITransitionManager_GetLastFadeColor final
-{
-public:
-	EUnionUIFadeColor                             ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUITransitionManager_GetLastFadeColor) == 0x000001, "Wrong alignment on UnionUITransitionManager_GetLastFadeColor");
-static_assert(sizeof(UnionUITransitionManager_GetLastFadeColor) == 0x000001, "Wrong size on UnionUITransitionManager_GetLastFadeColor");
-static_assert(offsetof(UnionUITransitionManager_GetLastFadeColor, ReturnValue) == 0x000000, "Member 'UnionUITransitionManager_GetLastFadeColor::ReturnValue' has a wrong offset!");
-
-// Function UnionUI.UnionUITransitionManager.IsLastFadeDirectionIn
-// 0x0001 (0x0001 - 0x0000)
-struct UnionUITransitionManager_IsLastFadeDirectionIn final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUITransitionManager_IsLastFadeDirectionIn) == 0x000001, "Wrong alignment on UnionUITransitionManager_IsLastFadeDirectionIn");
-static_assert(sizeof(UnionUITransitionManager_IsLastFadeDirectionIn) == 0x000001, "Wrong size on UnionUITransitionManager_IsLastFadeDirectionIn");
-static_assert(offsetof(UnionUITransitionManager_IsLastFadeDirectionIn, ReturnValue) == 0x000000, "Member 'UnionUITransitionManager_IsLastFadeDirectionIn::ReturnValue' has a wrong offset!");
-
-// Function UnionUI.UnionUITransitionManager.IsLastFadeDirectionOut
-// 0x0001 (0x0001 - 0x0000)
-struct UnionUITransitionManager_IsLastFadeDirectionOut final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUITransitionManager_IsLastFadeDirectionOut) == 0x000001, "Wrong alignment on UnionUITransitionManager_IsLastFadeDirectionOut");
-static_assert(sizeof(UnionUITransitionManager_IsLastFadeDirectionOut) == 0x000001, "Wrong size on UnionUITransitionManager_IsLastFadeDirectionOut");
-static_assert(offsetof(UnionUITransitionManager_IsLastFadeDirectionOut, ReturnValue) == 0x000000, "Member 'UnionUITransitionManager_IsLastFadeDirectionOut::ReturnValue' has a wrong offset!");
-
-// Function UnionUI.UnionUITransitionManager.IsPlayingFade
-// 0x0001 (0x0001 - 0x0000)
-struct UnionUITransitionManager_IsPlayingFade final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionUITransitionManager_IsPlayingFade) == 0x000001, "Wrong alignment on UnionUITransitionManager_IsPlayingFade");
-static_assert(sizeof(UnionUITransitionManager_IsPlayingFade) == 0x000001, "Wrong size on UnionUITransitionManager_IsPlayingFade");
-static_assert(offsetof(UnionUITransitionManager_IsPlayingFade, ReturnValue) == 0x000000, "Member 'UnionUITransitionManager_IsPlayingFade::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionUIPopupWindowManager_OnPopupWindowRemoveFromParent;
 
 // Function UnionUI.WidgetFunctionLibrary.ClipboardCopy
 // 0x0010 (0x0010 - 0x0000)
@@ -2976,9 +2063,7 @@ struct WidgetFunctionLibrary_ClipboardCopy final
 public:
 	class FString                                 str;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WidgetFunctionLibrary_ClipboardCopy) == 0x000008, "Wrong alignment on WidgetFunctionLibrary_ClipboardCopy");
-static_assert(sizeof(WidgetFunctionLibrary_ClipboardCopy) == 0x000010, "Wrong size on WidgetFunctionLibrary_ClipboardCopy");
-static_assert(offsetof(WidgetFunctionLibrary_ClipboardCopy, str) == 0x000000, "Member 'WidgetFunctionLibrary_ClipboardCopy::str' has a wrong offset!");
+DUMPER7_ASSERTS_WidgetFunctionLibrary_ClipboardCopy;
 
 // Function UnionUI.WidgetFunctionLibrary.ClipboardPaste
 // 0x0010 (0x0010 - 0x0000)
@@ -2987,9 +2072,7 @@ struct WidgetFunctionLibrary_ClipboardPaste final
 public:
 	class FString                                 Dest;                                              // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WidgetFunctionLibrary_ClipboardPaste) == 0x000008, "Wrong alignment on WidgetFunctionLibrary_ClipboardPaste");
-static_assert(sizeof(WidgetFunctionLibrary_ClipboardPaste) == 0x000010, "Wrong size on WidgetFunctionLibrary_ClipboardPaste");
-static_assert(offsetof(WidgetFunctionLibrary_ClipboardPaste, Dest) == 0x000000, "Member 'WidgetFunctionLibrary_ClipboardPaste::Dest' has a wrong offset!");
+DUMPER7_ASSERTS_WidgetFunctionLibrary_ClipboardPaste;
 
 // Function UnionUI.WidgetFunctionLibrary.ConvMilliSecondToMinute
 // 0x0018 (0x0018 - 0x0000)
@@ -3000,10 +2083,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WidgetFunctionLibrary_ConvMilliSecondToMinute) == 0x000008, "Wrong alignment on WidgetFunctionLibrary_ConvMilliSecondToMinute");
-static_assert(sizeof(WidgetFunctionLibrary_ConvMilliSecondToMinute) == 0x000018, "Wrong size on WidgetFunctionLibrary_ConvMilliSecondToMinute");
-static_assert(offsetof(WidgetFunctionLibrary_ConvMilliSecondToMinute, Millisecond) == 0x000000, "Member 'WidgetFunctionLibrary_ConvMilliSecondToMinute::Millisecond' has a wrong offset!");
-static_assert(offsetof(WidgetFunctionLibrary_ConvMilliSecondToMinute, ReturnValue) == 0x000008, "Member 'WidgetFunctionLibrary_ConvMilliSecondToMinute::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WidgetFunctionLibrary_ConvMilliSecondToMinute;
 
 // Function UnionUI.WidgetFunctionLibrary.ConvMilliSecondToSecond
 // 0x0008 (0x0008 - 0x0000)
@@ -3013,10 +2093,7 @@ public:
 	int32                                         Millisecond;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WidgetFunctionLibrary_ConvMilliSecondToSecond) == 0x000004, "Wrong alignment on WidgetFunctionLibrary_ConvMilliSecondToSecond");
-static_assert(sizeof(WidgetFunctionLibrary_ConvMilliSecondToSecond) == 0x000008, "Wrong size on WidgetFunctionLibrary_ConvMilliSecondToSecond");
-static_assert(offsetof(WidgetFunctionLibrary_ConvMilliSecondToSecond, Millisecond) == 0x000000, "Member 'WidgetFunctionLibrary_ConvMilliSecondToSecond::Millisecond' has a wrong offset!");
-static_assert(offsetof(WidgetFunctionLibrary_ConvMilliSecondToSecond, ReturnValue) == 0x000004, "Member 'WidgetFunctionLibrary_ConvMilliSecondToSecond::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WidgetFunctionLibrary_ConvMilliSecondToSecond;
 
 // Function UnionUI.WidgetFunctionLibrary.CulcDigitNumber
 // 0x000C (0x000C - 0x0000)
@@ -3027,11 +2104,7 @@ public:
 	int32                                         Num;                                               // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WidgetFunctionLibrary_CulcDigitNumber) == 0x000004, "Wrong alignment on WidgetFunctionLibrary_CulcDigitNumber");
-static_assert(sizeof(WidgetFunctionLibrary_CulcDigitNumber) == 0x00000C, "Wrong size on WidgetFunctionLibrary_CulcDigitNumber");
-static_assert(offsetof(WidgetFunctionLibrary_CulcDigitNumber, Index_0) == 0x000000, "Member 'WidgetFunctionLibrary_CulcDigitNumber::Index_0' has a wrong offset!");
-static_assert(offsetof(WidgetFunctionLibrary_CulcDigitNumber, Num) == 0x000004, "Member 'WidgetFunctionLibrary_CulcDigitNumber::Num' has a wrong offset!");
-static_assert(offsetof(WidgetFunctionLibrary_CulcDigitNumber, ReturnValue) == 0x000008, "Member 'WidgetFunctionLibrary_CulcDigitNumber::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WidgetFunctionLibrary_CulcDigitNumber;
 
 // Function UnionUI.WidgetFunctionLibrary.DrawWidgetToTarget
 // 0x0028 (0x0028 - 0x0000)
@@ -3046,14 +2119,7 @@ public:
 	uint8                                         Pad_22[0x2];                                       // 0x0022(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         DeltaTime;                                         // 0x0024(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WidgetFunctionLibrary_DrawWidgetToTarget) == 0x000008, "Wrong alignment on WidgetFunctionLibrary_DrawWidgetToTarget");
-static_assert(sizeof(WidgetFunctionLibrary_DrawWidgetToTarget) == 0x000028, "Wrong size on WidgetFunctionLibrary_DrawWidgetToTarget");
-static_assert(offsetof(WidgetFunctionLibrary_DrawWidgetToTarget, Target) == 0x000000, "Member 'WidgetFunctionLibrary_DrawWidgetToTarget::Target' has a wrong offset!");
-static_assert(offsetof(WidgetFunctionLibrary_DrawWidgetToTarget, WidgetToRender) == 0x000008, "Member 'WidgetFunctionLibrary_DrawWidgetToTarget::WidgetToRender' has a wrong offset!");
-static_assert(offsetof(WidgetFunctionLibrary_DrawWidgetToTarget, DrawSize) == 0x000010, "Member 'WidgetFunctionLibrary_DrawWidgetToTarget::DrawSize' has a wrong offset!");
-static_assert(offsetof(WidgetFunctionLibrary_DrawWidgetToTarget, UseGamma) == 0x000020, "Member 'WidgetFunctionLibrary_DrawWidgetToTarget::UseGamma' has a wrong offset!");
-static_assert(offsetof(WidgetFunctionLibrary_DrawWidgetToTarget, Filter) == 0x000021, "Member 'WidgetFunctionLibrary_DrawWidgetToTarget::Filter' has a wrong offset!");
-static_assert(offsetof(WidgetFunctionLibrary_DrawWidgetToTarget, DeltaTime) == 0x000024, "Member 'WidgetFunctionLibrary_DrawWidgetToTarget::DeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_WidgetFunctionLibrary_DrawWidgetToTarget;
 
 // Function UnionUI.WidgetFunctionLibrary.ExportWidgetAsImage
 // 0x0038 (0x0038 - 0x0000)
@@ -3071,17 +2137,7 @@ public:
 	bool                                          bUseGammaCorrection;                               // 0x0030(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(WidgetFunctionLibrary_ExportWidgetAsImage) == 0x000008, "Wrong alignment on WidgetFunctionLibrary_ExportWidgetAsImage");
-static_assert(sizeof(WidgetFunctionLibrary_ExportWidgetAsImage) == 0x000038, "Wrong size on WidgetFunctionLibrary_ExportWidgetAsImage");
-static_assert(offsetof(WidgetFunctionLibrary_ExportWidgetAsImage, Widget) == 0x000000, "Member 'WidgetFunctionLibrary_ExportWidgetAsImage::Widget' has a wrong offset!");
-static_assert(offsetof(WidgetFunctionLibrary_ExportWidgetAsImage, Filename) == 0x000008, "Member 'WidgetFunctionLibrary_ExportWidgetAsImage::Filename' has a wrong offset!");
-static_assert(offsetof(WidgetFunctionLibrary_ExportWidgetAsImage, DrawSize) == 0x000018, "Member 'WidgetFunctionLibrary_ExportWidgetAsImage::DrawSize' has a wrong offset!");
-static_assert(offsetof(WidgetFunctionLibrary_ExportWidgetAsImage, Scale) == 0x000028, "Member 'WidgetFunctionLibrary_ExportWidgetAsImage::Scale' has a wrong offset!");
-static_assert(offsetof(WidgetFunctionLibrary_ExportWidgetAsImage, Format) == 0x00002C, "Member 'WidgetFunctionLibrary_ExportWidgetAsImage::Format' has a wrong offset!");
-static_assert(offsetof(WidgetFunctionLibrary_ExportWidgetAsImage, bOverwriteFile) == 0x00002D, "Member 'WidgetFunctionLibrary_ExportWidgetAsImage::bOverwriteFile' has a wrong offset!");
-static_assert(offsetof(WidgetFunctionLibrary_ExportWidgetAsImage, bAsync) == 0x00002E, "Member 'WidgetFunctionLibrary_ExportWidgetAsImage::bAsync' has a wrong offset!");
-static_assert(offsetof(WidgetFunctionLibrary_ExportWidgetAsImage, Filter) == 0x00002F, "Member 'WidgetFunctionLibrary_ExportWidgetAsImage::Filter' has a wrong offset!");
-static_assert(offsetof(WidgetFunctionLibrary_ExportWidgetAsImage, bUseGammaCorrection) == 0x000030, "Member 'WidgetFunctionLibrary_ExportWidgetAsImage::bUseGammaCorrection' has a wrong offset!");
+DUMPER7_ASSERTS_WidgetFunctionLibrary_ExportWidgetAsImage;
 
 // Function UnionUI.WidgetFunctionLibrary.GetWidgetCenterLocation
 // 0x0020 (0x0020 - 0x0000)
@@ -3092,11 +2148,7 @@ public:
 	class UWidget*                                ParentWidget;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector2D                              OutLocation;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WidgetFunctionLibrary_GetWidgetCenterLocation) == 0x000008, "Wrong alignment on WidgetFunctionLibrary_GetWidgetCenterLocation");
-static_assert(sizeof(WidgetFunctionLibrary_GetWidgetCenterLocation) == 0x000020, "Wrong size on WidgetFunctionLibrary_GetWidgetCenterLocation");
-static_assert(offsetof(WidgetFunctionLibrary_GetWidgetCenterLocation, Widget) == 0x000000, "Member 'WidgetFunctionLibrary_GetWidgetCenterLocation::Widget' has a wrong offset!");
-static_assert(offsetof(WidgetFunctionLibrary_GetWidgetCenterLocation, ParentWidget) == 0x000008, "Member 'WidgetFunctionLibrary_GetWidgetCenterLocation::ParentWidget' has a wrong offset!");
-static_assert(offsetof(WidgetFunctionLibrary_GetWidgetCenterLocation, OutLocation) == 0x000010, "Member 'WidgetFunctionLibrary_GetWidgetCenterLocation::OutLocation' has a wrong offset!");
+DUMPER7_ASSERTS_WidgetFunctionLibrary_GetWidgetCenterLocation;
 
 // Function UnionUI.WidgetFunctionLibrary.GetWidgetZOrder
 // 0x000C (0x000C - 0x0000)
@@ -3108,196 +2160,465 @@ public:
 	int32                                         Priority;                                          // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ZOrder;                                            // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WidgetFunctionLibrary_GetWidgetZOrder) == 0x000004, "Wrong alignment on WidgetFunctionLibrary_GetWidgetZOrder");
-static_assert(sizeof(WidgetFunctionLibrary_GetWidgetZOrder) == 0x00000C, "Wrong size on WidgetFunctionLibrary_GetWidgetZOrder");
-static_assert(offsetof(WidgetFunctionLibrary_GetWidgetZOrder, Layer) == 0x000000, "Member 'WidgetFunctionLibrary_GetWidgetZOrder::Layer' has a wrong offset!");
-static_assert(offsetof(WidgetFunctionLibrary_GetWidgetZOrder, Priority) == 0x000004, "Member 'WidgetFunctionLibrary_GetWidgetZOrder::Priority' has a wrong offset!");
-static_assert(offsetof(WidgetFunctionLibrary_GetWidgetZOrder, ZOrder) == 0x000008, "Member 'WidgetFunctionLibrary_GetWidgetZOrder::ZOrder' has a wrong offset!");
+DUMPER7_ASSERTS_WidgetFunctionLibrary_GetWidgetZOrder;
 
-// Function UnionUI.WidgetManComponent.AddWidgetToTopAsGroup
-// 0x0018 (0x0018 - 0x0000)
-struct WidgetManComponent_AddWidgetToTopAsGroup final
-{
-public:
-	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UObject*                                Logic;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsSucceeded;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(WidgetManComponent_AddWidgetToTopAsGroup) == 0x000008, "Wrong alignment on WidgetManComponent_AddWidgetToTopAsGroup");
-static_assert(sizeof(WidgetManComponent_AddWidgetToTopAsGroup) == 0x000018, "Wrong size on WidgetManComponent_AddWidgetToTopAsGroup");
-static_assert(offsetof(WidgetManComponent_AddWidgetToTopAsGroup, Widget) == 0x000000, "Member 'WidgetManComponent_AddWidgetToTopAsGroup::Widget' has a wrong offset!");
-static_assert(offsetof(WidgetManComponent_AddWidgetToTopAsGroup, Logic) == 0x000008, "Member 'WidgetManComponent_AddWidgetToTopAsGroup::Logic' has a wrong offset!");
-static_assert(offsetof(WidgetManComponent_AddWidgetToTopAsGroup, IsSucceeded) == 0x000010, "Member 'WidgetManComponent_AddWidgetToTopAsGroup::IsSucceeded' has a wrong offset!");
-
-// Function UnionUI.WidgetManComponent.AttachDebugStringObject
-// 0x0008 (0x0008 - 0x0000)
-struct WidgetManComponent_AttachDebugStringObject final
-{
-public:
-	class UWidgetManDebugString*                  DebugStringObjectRef;                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(WidgetManComponent_AttachDebugStringObject) == 0x000008, "Wrong alignment on WidgetManComponent_AttachDebugStringObject");
-static_assert(sizeof(WidgetManComponent_AttachDebugStringObject) == 0x000008, "Wrong size on WidgetManComponent_AttachDebugStringObject");
-static_assert(offsetof(WidgetManComponent_AttachDebugStringObject, DebugStringObjectRef) == 0x000000, "Member 'WidgetManComponent_AttachDebugStringObject::DebugStringObjectRef' has a wrong offset!");
-
-// Function UnionUI.WidgetManComponent.DetachDebugStringObject
-// 0x0008 (0x0008 - 0x0000)
-struct WidgetManComponent_DetachDebugStringObject final
-{
-public:
-	class UWidgetManDebugString*                  DebugStringObjectRef;                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(WidgetManComponent_DetachDebugStringObject) == 0x000008, "Wrong alignment on WidgetManComponent_DetachDebugStringObject");
-static_assert(sizeof(WidgetManComponent_DetachDebugStringObject) == 0x000008, "Wrong size on WidgetManComponent_DetachDebugStringObject");
-static_assert(offsetof(WidgetManComponent_DetachDebugStringObject, DebugStringObjectRef) == 0x000000, "Member 'WidgetManComponent_DetachDebugStringObject::DebugStringObjectRef' has a wrong offset!");
-
-// Function UnionUI.WidgetManComponent.FindWidget
-// 0x0018 (0x0018 - 0x0000)
-struct WidgetManComponent_FindWidget final
-{
-public:
-	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsFound;                                           // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         IndexFromTop;                                      // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         IndexInGroup;                                      // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(WidgetManComponent_FindWidget) == 0x000008, "Wrong alignment on WidgetManComponent_FindWidget");
-static_assert(sizeof(WidgetManComponent_FindWidget) == 0x000018, "Wrong size on WidgetManComponent_FindWidget");
-static_assert(offsetof(WidgetManComponent_FindWidget, Widget) == 0x000000, "Member 'WidgetManComponent_FindWidget::Widget' has a wrong offset!");
-static_assert(offsetof(WidgetManComponent_FindWidget, IsFound) == 0x000008, "Member 'WidgetManComponent_FindWidget::IsFound' has a wrong offset!");
-static_assert(offsetof(WidgetManComponent_FindWidget, IndexFromTop) == 0x00000C, "Member 'WidgetManComponent_FindWidget::IndexFromTop' has a wrong offset!");
-static_assert(offsetof(WidgetManComponent_FindWidget, IndexInGroup) == 0x000010, "Member 'WidgetManComponent_FindWidget::IndexInGroup' has a wrong offset!");
-
-// Function UnionUI.WidgetManComponent.GetTopWidget
-// 0x0020 (0x0020 - 0x0000)
-struct WidgetManComponent_GetTopWidget final
-{
-public:
-	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsSucceeded;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUserWidget*                            Widget;                                            // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsSubWidget;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                Logic;                                             // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(WidgetManComponent_GetTopWidget) == 0x000008, "Wrong alignment on WidgetManComponent_GetTopWidget");
-static_assert(sizeof(WidgetManComponent_GetTopWidget) == 0x000020, "Wrong size on WidgetManComponent_GetTopWidget");
-static_assert(offsetof(WidgetManComponent_GetTopWidget, Index_0) == 0x000000, "Member 'WidgetManComponent_GetTopWidget::Index_0' has a wrong offset!");
-static_assert(offsetof(WidgetManComponent_GetTopWidget, IsSucceeded) == 0x000004, "Member 'WidgetManComponent_GetTopWidget::IsSucceeded' has a wrong offset!");
-static_assert(offsetof(WidgetManComponent_GetTopWidget, Widget) == 0x000008, "Member 'WidgetManComponent_GetTopWidget::Widget' has a wrong offset!");
-static_assert(offsetof(WidgetManComponent_GetTopWidget, IsSubWidget) == 0x000010, "Member 'WidgetManComponent_GetTopWidget::IsSubWidget' has a wrong offset!");
-static_assert(offsetof(WidgetManComponent_GetTopWidget, Logic) == 0x000018, "Member 'WidgetManComponent_GetTopWidget::Logic' has a wrong offset!");
-
-// Function UnionUI.WidgetManComponent.GetTopWidgetCount
-// 0x0004 (0x0004 - 0x0000)
-struct WidgetManComponent_GetTopWidgetCount final
-{
-public:
-	int32                                         WidgetCount;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(WidgetManComponent_GetTopWidgetCount) == 0x000004, "Wrong alignment on WidgetManComponent_GetTopWidgetCount");
-static_assert(sizeof(WidgetManComponent_GetTopWidgetCount) == 0x000004, "Wrong size on WidgetManComponent_GetTopWidgetCount");
-static_assert(offsetof(WidgetManComponent_GetTopWidgetCount, WidgetCount) == 0x000000, "Member 'WidgetManComponent_GetTopWidgetCount::WidgetCount' has a wrong offset!");
-
-// Function UnionUI.WidgetManComponent.NotifyPoped
+// Function UnionUI.UnionRichTextBlock.GetFontMaterialsFromDefaultTextStyleOverride
 // 0x0010 (0x0010 - 0x0000)
-struct WidgetManComponent_NotifyPoped final
+struct UnionRichTextBlock_GetFontMaterialsFromDefaultTextStyleOverride final
 {
 public:
-	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UObject*                                Logic;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UObject*                                FontBodyMaterial;                                  // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UObject*                                OutlineMaterial;                                   // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WidgetManComponent_NotifyPoped) == 0x000008, "Wrong alignment on WidgetManComponent_NotifyPoped");
-static_assert(sizeof(WidgetManComponent_NotifyPoped) == 0x000010, "Wrong size on WidgetManComponent_NotifyPoped");
-static_assert(offsetof(WidgetManComponent_NotifyPoped, Widget) == 0x000000, "Member 'WidgetManComponent_NotifyPoped::Widget' has a wrong offset!");
-static_assert(offsetof(WidgetManComponent_NotifyPoped, Logic) == 0x000008, "Member 'WidgetManComponent_NotifyPoped::Logic' has a wrong offset!");
+DUMPER7_ASSERTS_UnionRichTextBlock_GetFontMaterialsFromDefaultTextStyleOverride;
 
-// Function UnionUI.WidgetManComponent.NotifyPushed
-// 0x0010 (0x0010 - 0x0000)
-struct WidgetManComponent_NotifyPushed final
-{
-public:
-	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UObject*                                Logic;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(WidgetManComponent_NotifyPushed) == 0x000008, "Wrong alignment on WidgetManComponent_NotifyPushed");
-static_assert(sizeof(WidgetManComponent_NotifyPushed) == 0x000010, "Wrong size on WidgetManComponent_NotifyPushed");
-static_assert(offsetof(WidgetManComponent_NotifyPushed, Widget) == 0x000000, "Member 'WidgetManComponent_NotifyPushed::Widget' has a wrong offset!");
-static_assert(offsetof(WidgetManComponent_NotifyPushed, Logic) == 0x000008, "Member 'WidgetManComponent_NotifyPushed::Logic' has a wrong offset!");
-
-// Function UnionUI.WidgetManComponent.PopWidget
+// Function UnionUI.UnionRichTextBlock.IsPlayLetterEnd
 // 0x0001 (0x0001 - 0x0000)
-struct WidgetManComponent_PopWidget final
+struct UnionRichTextBlock_IsPlayLetterEnd final
 {
 public:
-	bool                                          IsSucceeded;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WidgetManComponent_PopWidget) == 0x000001, "Wrong alignment on WidgetManComponent_PopWidget");
-static_assert(sizeof(WidgetManComponent_PopWidget) == 0x000001, "Wrong size on WidgetManComponent_PopWidget");
-static_assert(offsetof(WidgetManComponent_PopWidget, IsSucceeded) == 0x000000, "Member 'WidgetManComponent_PopWidget::IsSucceeded' has a wrong offset!");
+DUMPER7_ASSERTS_UnionRichTextBlock_IsPlayLetterEnd;
 
-// Function UnionUI.WidgetManComponent.PushSubWidget
+// Function UnionUI.UnionRichTextBlock.RemoveXml
+// 0x0020 (0x0020 - 0x0000)
+struct UnionRichTextBlock_RemoveXml final
+{
+public:
+	class FString                                 InString;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 OutString;                                         // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionRichTextBlock_RemoveXml;
+
+// Function UnionUI.UnionRichTextBlock.SetDefaultFontSize
+// 0x0004 (0x0004 - 0x0000)
+struct UnionRichTextBlock_SetDefaultFontSize final
+{
+public:
+	int32                                         NewSize;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionRichTextBlock_SetDefaultFontSize;
+
+// Function UnionUI.UnionRichTextBlock.SetFontMaterialForDefaultTextStyleOverride
 // 0x0010 (0x0010 - 0x0000)
-struct WidgetManComponent_PushSubWidget final
+struct UnionRichTextBlock_SetFontMaterialForDefaultTextStyleOverride final
 {
 public:
-	class UUserWidget*                            SubWidget;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UObject*                                Logic;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UObject*                                FontBodyMaterial;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UObject*                                OutlineMaterial;                                   // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WidgetManComponent_PushSubWidget) == 0x000008, "Wrong alignment on WidgetManComponent_PushSubWidget");
-static_assert(sizeof(WidgetManComponent_PushSubWidget) == 0x000010, "Wrong size on WidgetManComponent_PushSubWidget");
-static_assert(offsetof(WidgetManComponent_PushSubWidget, SubWidget) == 0x000000, "Member 'WidgetManComponent_PushSubWidget::SubWidget' has a wrong offset!");
-static_assert(offsetof(WidgetManComponent_PushSubWidget, Logic) == 0x000008, "Member 'WidgetManComponent_PushSubWidget::Logic' has a wrong offset!");
+DUMPER7_ASSERTS_UnionRichTextBlock_SetFontMaterialForDefaultTextStyleOverride;
 
-// Function UnionUI.WidgetManComponent.PushWidget
-// 0x0018 (0x0018 - 0x0000)
-struct WidgetManComponent_PushWidget final
+// Function UnionUI.UnionRichTextBlock.SetScrollEnable
+// 0x0001 (0x0001 - 0x0000)
+struct UnionRichTextBlock_SetScrollEnable final
 {
 public:
-	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UObject*                                Logic;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EWidgetManZLayer                              ZLayer;                                            // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         ReturnValue;                                       // 0x0014(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bInEnableScroll;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WidgetManComponent_PushWidget) == 0x000008, "Wrong alignment on WidgetManComponent_PushWidget");
-static_assert(sizeof(WidgetManComponent_PushWidget) == 0x000018, "Wrong size on WidgetManComponent_PushWidget");
-static_assert(offsetof(WidgetManComponent_PushWidget, Widget) == 0x000000, "Member 'WidgetManComponent_PushWidget::Widget' has a wrong offset!");
-static_assert(offsetof(WidgetManComponent_PushWidget, Logic) == 0x000008, "Member 'WidgetManComponent_PushWidget::Logic' has a wrong offset!");
-static_assert(offsetof(WidgetManComponent_PushWidget, ZLayer) == 0x000010, "Member 'WidgetManComponent_PushWidget::ZLayer' has a wrong offset!");
-static_assert(offsetof(WidgetManComponent_PushWidget, ReturnValue) == 0x000014, "Member 'WidgetManComponent_PushWidget::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UnionRichTextBlock_SetScrollEnable;
 
-// Function UnionUI.WidgetManComponent.SwapTopWidget
+// Function UnionUI.UnionRichTextBlock.SetSequentialText
 // 0x0010 (0x0010 - 0x0000)
-struct WidgetManComponent_SwapTopWidget final
+struct UnionRichTextBlock_SetSequentialText final
 {
 public:
-	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsSucceeded;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class FText                                   InText;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WidgetManComponent_SwapTopWidget) == 0x000008, "Wrong alignment on WidgetManComponent_SwapTopWidget");
-static_assert(sizeof(WidgetManComponent_SwapTopWidget) == 0x000010, "Wrong size on WidgetManComponent_SwapTopWidget");
-static_assert(offsetof(WidgetManComponent_SwapTopWidget, Widget) == 0x000000, "Member 'WidgetManComponent_SwapTopWidget::Widget' has a wrong offset!");
-static_assert(offsetof(WidgetManComponent_SwapTopWidget, IsSucceeded) == 0x000008, "Member 'WidgetManComponent_SwapTopWidget::IsSucceeded' has a wrong offset!");
+DUMPER7_ASSERTS_UnionRichTextBlock_SetSequentialText;
 
-// Function UnionUI.WidgetManComponent.SwapTopWidgetByIndex
+// Function UnionUI.UnionRichTextBlock.UpdateText
 // 0x0008 (0x0008 - 0x0000)
-struct WidgetManComponent_SwapTopWidgetByIndex final
+struct UnionRichTextBlock_UpdateText final
 {
 public:
-	int32                                         IndexFromTop;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsSucceeded;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class URichTextBlockDecorator>    DecoratorClass;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WidgetManComponent_SwapTopWidgetByIndex) == 0x000004, "Wrong alignment on WidgetManComponent_SwapTopWidgetByIndex");
-static_assert(sizeof(WidgetManComponent_SwapTopWidgetByIndex) == 0x000008, "Wrong size on WidgetManComponent_SwapTopWidgetByIndex");
-static_assert(offsetof(WidgetManComponent_SwapTopWidgetByIndex, IndexFromTop) == 0x000000, "Member 'WidgetManComponent_SwapTopWidgetByIndex::IndexFromTop' has a wrong offset!");
-static_assert(offsetof(WidgetManComponent_SwapTopWidgetByIndex, IsSucceeded) == 0x000004, "Member 'WidgetManComponent_SwapTopWidgetByIndex::IsSucceeded' has a wrong offset!");
+DUMPER7_ASSERTS_UnionRichTextBlock_UpdateText;
+
+// Function UnionUI.UnionRichTextBlock.GetDefaultFontSize
+// 0x0004 (0x0004 - 0x0000)
+struct UnionRichTextBlock_GetDefaultFontSize final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionRichTextBlock_GetDefaultFontSize;
+
+// Function UnionUI.UnionRichTextBlock.GetScrollEnable
+// 0x0001 (0x0001 - 0x0000)
+struct UnionRichTextBlock_GetScrollEnable final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionRichTextBlock_GetScrollEnable;
+
+// Function UnionUI.UnionUIRivalTransition.SetTransitionType
+// 0x0001 (0x0001 - 0x0000)
+struct UnionUIRivalTransition_SetTransitionType final
+{
+public:
+	ERivalTransitionType                          Type;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUIRivalTransition_SetTransitionType;
+
+// Function UnionUI.UnionUISceneCaptureManager.GetCaptureCameraActor
+// 0x0010 (0x0010 - 0x0000)
+struct UnionUISceneCaptureManager_GetCaptureCameraActor final
+{
+public:
+	TArray<class AUnionUICapture2DActor*>         ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUISceneCaptureManager_GetCaptureCameraActor;
+
+// Function UnionUI.UnionUISceneCaptureManager.GetCaptureCameraActorByPlayerControllerIndex
+// 0x0010 (0x0010 - 0x0000)
+struct UnionUISceneCaptureManager_GetCaptureCameraActorByPlayerControllerIndex final
+{
+public:
+	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AUnionUICapture2DActor*                 ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUISceneCaptureManager_GetCaptureCameraActorByPlayerControllerIndex;
+
+// Function UnionUI.UnionUISceneCaptureManager.GetCaptureTargetActor
+// 0x0010 (0x0010 - 0x0000)
+struct UnionUISceneCaptureManager_GetCaptureTargetActor final
+{
+public:
+	TArray<class AActor*>                         ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUISceneCaptureManager_GetCaptureTargetActor;
+
+// Function UnionUI.UnionUISceneCaptureManager.RegisterCaptureCameraActor
+// 0x0010 (0x0010 - 0x0000)
+struct UnionUISceneCaptureManager_RegisterCaptureCameraActor final
+{
+public:
+	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AUnionUICapture2DActor*                 CaptureActor;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUISceneCaptureManager_RegisterCaptureCameraActor;
+
+// Function UnionUI.UnionUISceneCaptureManager.RegisterCaptureTargetActor
+// 0x0010 (0x0010 - 0x0000)
+struct UnionUISceneCaptureManager_RegisterCaptureTargetActor final
+{
+public:
+	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CaptureActor;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUISceneCaptureManager_RegisterCaptureTargetActor;
+
+// Function UnionUI.UnionUISceneCaptureManager.UnRegisterCaptureCameraActor
+// 0x0004 (0x0004 - 0x0000)
+struct UnionUISceneCaptureManager_UnRegisterCaptureCameraActor final
+{
+public:
+	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUISceneCaptureManager_UnRegisterCaptureCameraActor;
+
+// Function UnionUI.UnionUITransitionManager.CreateCrossFadeWidget
+// 0x0008 (0x0008 - 0x0000)
+struct UnionUITransitionManager_CreateCrossFadeWidget final
+{
+public:
+	class UUnionUICrossFade*                      ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUITransitionManager_CreateCrossFadeWidget;
+
+// Function UnionUI.UnionUITransitionManager.CreateLoadingDisplayWidget
+// 0x0010 (0x0010 - 0x0000)
+struct UnionUITransitionManager_CreateLoadingDisplayWidget final
+{
+public:
+	ELoadingDisplayType                           CreateType;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionUILoadingDisplay*                 ReturnValue;                                       // 0x0008(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUITransitionManager_CreateLoadingDisplayWidget;
+
+// Function UnionUI.UnionUITransitionManager.CreateMovieTransitionWidget
+// 0x0008 (0x0008 - 0x0000)
+struct UnionUITransitionManager_CreateMovieTransitionWidget final
+{
+public:
+	class UUnionUIMovieTransition*                ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUITransitionManager_CreateMovieTransitionWidget;
+
+// Function UnionUI.UnionUITransitionManager.CreateRivalTransitionWidget
+// 0x0008 (0x0008 - 0x0000)
+struct UnionUITransitionManager_CreateRivalTransitionWidget final
+{
+public:
+	class UUnionUIRivalTransition*                ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUITransitionManager_CreateRivalTransitionWidget;
+
+// Function UnionUI.UnionUITransitionManager.FinishFade
+// 0x0001 (0x0001 - 0x0000)
+struct UnionUITransitionManager_FinishFade final
+{
+public:
+	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUITransitionManager_FinishFade;
+
+// Function UnionUI.UnionUITransitionManager.FinishSubFade
+// 0x0001 (0x0001 - 0x0000)
+struct UnionUITransitionManager_FinishSubFade final
+{
+public:
+	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUITransitionManager_FinishSubFade;
+
+// Function UnionUI.UnionUITransitionManager.GetCrossFadeWidget
+// 0x0008 (0x0008 - 0x0000)
+struct UnionUITransitionManager_GetCrossFadeWidget final
+{
+public:
+	class UUnionUICrossFade*                      ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUITransitionManager_GetCrossFadeWidget;
+
+// Function UnionUI.UnionUITransitionManager.GetLastDisplayedSceneUI
+// 0x0008 (0x0008 - 0x0000)
+struct UnionUITransitionManager_GetLastDisplayedSceneUI final
+{
+public:
+	class UUserWidget*                            ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUITransitionManager_GetLastDisplayedSceneUI;
+
+// Function UnionUI.UnionUITransitionManager.GetLoadingDisplayType
+// 0x0001 (0x0001 - 0x0000)
+struct UnionUITransitionManager_GetLoadingDisplayType final
+{
+public:
+	ELoadingDisplayType                           ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUITransitionManager_GetLoadingDisplayType;
+
+// Function UnionUI.UnionUITransitionManager.GetLoadingDisplayWidget
+// 0x0008 (0x0008 - 0x0000)
+struct UnionUITransitionManager_GetLoadingDisplayWidget final
+{
+public:
+	class UUnionUILoadingDisplay*                 ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUITransitionManager_GetLoadingDisplayWidget;
+
+// Function UnionUI.UnionUITransitionManager.GetMovieTransitionWidget
+// 0x0008 (0x0008 - 0x0000)
+struct UnionUITransitionManager_GetMovieTransitionWidget final
+{
+public:
+	class UUnionUIMovieTransition*                ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUITransitionManager_GetMovieTransitionWidget;
+
+// Function UnionUI.UnionUITransitionManager.GetNowLoadingZOrder
+// 0x0004 (0x0004 - 0x0000)
+struct UnionUITransitionManager_GetNowLoadingZOrder final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUITransitionManager_GetNowLoadingZOrder;
+
+// Function UnionUI.UnionUITransitionManager.GetRivalTransitionWidget
+// 0x0008 (0x0008 - 0x0000)
+struct UnionUITransitionManager_GetRivalTransitionWidget final
+{
+public:
+	class UUnionUIRivalTransition*                ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUITransitionManager_GetRivalTransitionWidget;
+
+// Function UnionUI.UnionUITransitionManager.GetUIFadeWidget
+// 0x0008 (0x0008 - 0x0000)
+struct UnionUITransitionManager_GetUIFadeWidget final
+{
+public:
+	class UUnionUIFade*                           ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUITransitionManager_GetUIFadeWidget;
+
+// Function UnionUI.UnionUITransitionManager.SetLastDisplayedSceneUI
+// 0x0008 (0x0008 - 0x0000)
+struct UnionUITransitionManager_SetLastDisplayedSceneUI final
+{
+public:
+	class UUserWidget*                            InLastDisplayedSceneUI;                            // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUITransitionManager_SetLastDisplayedSceneUI;
+
+// Function UnionUI.UnionUITransitionManager.SetLastDisplayedSceneUIVisible
+// 0x0002 (0x0002 - 0x0000)
+struct UnionUITransitionManager_SetLastDisplayedSceneUIVisible final
+{
+public:
+	bool                                          bRemove;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESlateVisibility                              InVisibility;                                      // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUITransitionManager_SetLastDisplayedSceneUIVisible;
+
+// Function UnionUI.UnionUITransitionManager.SetRivalTransitionType
+// 0x0001 (0x0001 - 0x0000)
+struct UnionUITransitionManager_SetRivalTransitionType final
+{
+public:
+	ERivalTransitionType                          TransitionType;                                    // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUITransitionManager_SetRivalTransitionType;
+
+// Function UnionUI.UnionUITransitionManager.SetShouldCheckFadeIgnoreInput
+// 0x0001 (0x0001 - 0x0000)
+struct UnionUITransitionManager_SetShouldCheckFadeIgnoreInput final
+{
+public:
+	bool                                          ShouldIgnore;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUITransitionManager_SetShouldCheckFadeIgnoreInput;
+
+// Function UnionUI.UnionUITransitionManager.StartFade
+// 0x0014 (0x0014 - 0x0000)
+struct UnionUITransitionManager_StartFade final
+{
+public:
+	EUnionUIFadeColor                             FadeColor;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(EUnionUIFadeDirection FadeDirection)> OnFinished;                                 // 0x0004(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUITransitionManager_StartFade;
+
+// Function UnionUI.UnionUITransitionManager.StartLoopFade
+// 0x0001 (0x0001 - 0x0000)
+struct UnionUITransitionManager_StartLoopFade final
+{
+public:
+	EUnionUIFadeColor                             FadeColor;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUITransitionManager_StartLoopFade;
+
+// Function UnionUI.UnionUITransitionManager.StartSubFade
+// 0x0014 (0x0014 - 0x0000)
+struct UnionUITransitionManager_StartSubFade final
+{
+public:
+	EUnionUIFadeColor                             FadeColor;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(EUnionUIFadeDirection FadeDirection)> OnFinished;                                 // 0x0004(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUITransitionManager_StartSubFade;
+
+// Function UnionUI.UnionUITransitionManager.GetLastFadeColor
+// 0x0001 (0x0001 - 0x0000)
+struct UnionUITransitionManager_GetLastFadeColor final
+{
+public:
+	EUnionUIFadeColor                             ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUITransitionManager_GetLastFadeColor;
+
+// Function UnionUI.UnionUITransitionManager.IsLastFadeDirectionIn
+// 0x0001 (0x0001 - 0x0000)
+struct UnionUITransitionManager_IsLastFadeDirectionIn final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUITransitionManager_IsLastFadeDirectionIn;
+
+// Function UnionUI.UnionUITransitionManager.IsLastFadeDirectionOut
+// 0x0001 (0x0001 - 0x0000)
+struct UnionUITransitionManager_IsLastFadeDirectionOut final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUITransitionManager_IsLastFadeDirectionOut;
+
+// Function UnionUI.UnionUITransitionManager.IsPlayingFade
+// 0x0001 (0x0001 - 0x0000)
+struct UnionUITransitionManager_IsPlayingFade final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUITransitionManager_IsPlayingFade;
+
+// Function UnionUI.UnionUIWheelMenu.OnUISceneWheelSelectEvent_Impl
+// 0x0010 (0x0010 - 0x0000)
+struct UnionUIWheelMenu_OnUISceneWheelSelectEvent_Impl final
+{
+public:
+	class UUnionUIButtonBase*                     UnionButton;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ButtonIndex;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_UnionUIWheelMenu_OnUISceneWheelSelectEvent_Impl;
+
+// Function UnionUI.UnionUIWheelMenu.SetUpWheelParam
+// 0x0010 (0x0010 - 0x0000)
+struct UnionUIWheelMenu_SetUpWheelParam final
+{
+public:
+	bool                                          bInIsLeftTurn;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         InLStickIgone;                                     // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bInIsTopHalf;                                      // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         InBitweenDeathZone;                                // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUIWheelMenu_SetUpWheelParam;
+
+// Function UnionUI.UnionUIWheelMenu.UISceneWheelMenuKeyBind
+// 0x0008 (0x0008 - 0x0000)
+struct UnionUIWheelMenu_UISceneWheelMenuKeyBind final
+{
+public:
+	class APlayerController*                      InPlayerController;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUIWheelMenu_UISceneWheelMenuKeyBind;
+
+// Function UnionUI.UnionUIWheelMenu.UISceneWheelMenuKeyUnBind
+// 0x0008 (0x0008 - 0x0000)
+struct UnionUIWheelMenu_UISceneWheelMenuKeyUnBind final
+{
+public:
+	class APlayerController*                      InPlayerController;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUIWheelMenu_UISceneWheelMenuKeyUnBind;
+
+// Function UnionUI.UnionUIWheelMenu.WheelMenuSelect_Impl
+// 0x0018 (0x0018 - 0x0000)
+struct UnionUIWheelMenu_WheelMenuSelect_Impl final
+{
+public:
+	struct FVector                                InStickVector;                                     // 0x0000(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUIWheelMenu_WheelMenuSelect_Impl;
+
+// Function UnionUI.UnionUIWheelMenu.WheelMenuSelectInput_Impl
+// 0x0018 (0x0018 - 0x0000)
+struct UnionUIWheelMenu_WheelMenuSelectInput_Impl final
+{
+public:
+	class UObject*                                Object;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              InStickVector;                                     // 0x0008(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionUIWheelMenu_WheelMenuSelectInput_Impl;
 
 // Function UnionUI.WidgetManContainer.AddWidget
 // 0x0020 (0x0020 - 0x0000)
@@ -3310,12 +2631,7 @@ public:
 	bool                                          bSucceeded;                                        // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(WidgetManContainer_AddWidget) == 0x000008, "Wrong alignment on WidgetManContainer_AddWidget");
-static_assert(sizeof(WidgetManContainer_AddWidget) == 0x000020, "Wrong size on WidgetManContainer_AddWidget");
-static_assert(offsetof(WidgetManContainer_AddWidget, Widget) == 0x000000, "Member 'WidgetManContainer_AddWidget::Widget' has a wrong offset!");
-static_assert(offsetof(WidgetManContainer_AddWidget, Slot) == 0x000008, "Member 'WidgetManContainer_AddWidget::Slot' has a wrong offset!");
-static_assert(offsetof(WidgetManContainer_AddWidget, LogicObjectRef) == 0x000010, "Member 'WidgetManContainer_AddWidget::LogicObjectRef' has a wrong offset!");
-static_assert(offsetof(WidgetManContainer_AddWidget, bSucceeded) == 0x000018, "Member 'WidgetManContainer_AddWidget::bSucceeded' has a wrong offset!");
+DUMPER7_ASSERTS_WidgetManContainer_AddWidget;
 
 // Function UnionUI.WidgetManContainer.FindWidget
 // 0x0010 (0x0010 - 0x0000)
@@ -3327,11 +2643,7 @@ public:
 	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Index_0;                                           // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WidgetManContainer_FindWidget) == 0x000008, "Wrong alignment on WidgetManContainer_FindWidget");
-static_assert(sizeof(WidgetManContainer_FindWidget) == 0x000010, "Wrong size on WidgetManContainer_FindWidget");
-static_assert(offsetof(WidgetManContainer_FindWidget, Widget) == 0x000000, "Member 'WidgetManContainer_FindWidget::Widget' has a wrong offset!");
-static_assert(offsetof(WidgetManContainer_FindWidget, IsFound) == 0x000008, "Member 'WidgetManContainer_FindWidget::IsFound' has a wrong offset!");
-static_assert(offsetof(WidgetManContainer_FindWidget, Index_0) == 0x00000C, "Member 'WidgetManContainer_FindWidget::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_WidgetManContainer_FindWidget;
 
 // Function UnionUI.WidgetManContainer.GetWidgetAt
 // 0x0018 (0x0018 - 0x0000)
@@ -3344,12 +2656,7 @@ public:
 	class UUserWidget*                            Widget;                                            // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UObject*                                LogicObject;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WidgetManContainer_GetWidgetAt) == 0x000008, "Wrong alignment on WidgetManContainer_GetWidgetAt");
-static_assert(sizeof(WidgetManContainer_GetWidgetAt) == 0x000018, "Wrong size on WidgetManContainer_GetWidgetAt");
-static_assert(offsetof(WidgetManContainer_GetWidgetAt, Index_0) == 0x000000, "Member 'WidgetManContainer_GetWidgetAt::Index_0' has a wrong offset!");
-static_assert(offsetof(WidgetManContainer_GetWidgetAt, IsSucceeded) == 0x000004, "Member 'WidgetManContainer_GetWidgetAt::IsSucceeded' has a wrong offset!");
-static_assert(offsetof(WidgetManContainer_GetWidgetAt, Widget) == 0x000008, "Member 'WidgetManContainer_GetWidgetAt::Widget' has a wrong offset!");
-static_assert(offsetof(WidgetManContainer_GetWidgetAt, LogicObject) == 0x000010, "Member 'WidgetManContainer_GetWidgetAt::LogicObject' has a wrong offset!");
+DUMPER7_ASSERTS_WidgetManContainer_GetWidgetAt;
 
 // Function UnionUI.WidgetManContainer.GetWidgetCount
 // 0x0004 (0x0004 - 0x0000)
@@ -3358,9 +2665,7 @@ struct WidgetManContainer_GetWidgetCount final
 public:
 	int32                                         WidgetCount;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WidgetManContainer_GetWidgetCount) == 0x000004, "Wrong alignment on WidgetManContainer_GetWidgetCount");
-static_assert(sizeof(WidgetManContainer_GetWidgetCount) == 0x000004, "Wrong size on WidgetManContainer_GetWidgetCount");
-static_assert(offsetof(WidgetManContainer_GetWidgetCount, WidgetCount) == 0x000000, "Member 'WidgetManContainer_GetWidgetCount::WidgetCount' has a wrong offset!");
+DUMPER7_ASSERTS_WidgetManContainer_GetWidgetCount;
 
 // Function UnionUI.WidgetManContainer.Initialize
 // 0x0028 (0x0028 - 0x0000)
@@ -3375,13 +2680,7 @@ public:
 	bool                                          bSubWidget;                                        // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(WidgetManContainer_Initialize) == 0x000008, "Wrong alignment on WidgetManContainer_Initialize");
-static_assert(sizeof(WidgetManContainer_Initialize) == 0x000028, "Wrong size on WidgetManContainer_Initialize");
-static_assert(offsetof(WidgetManContainer_Initialize, Widget) == 0x000000, "Member 'WidgetManContainer_Initialize::Widget' has a wrong offset!");
-static_assert(offsetof(WidgetManContainer_Initialize, ZOrder) == 0x000008, "Member 'WidgetManContainer_Initialize::ZOrder' has a wrong offset!");
-static_assert(offsetof(WidgetManContainer_Initialize, Slot) == 0x000010, "Member 'WidgetManContainer_Initialize::Slot' has a wrong offset!");
-static_assert(offsetof(WidgetManContainer_Initialize, LogicObjectRef) == 0x000018, "Member 'WidgetManContainer_Initialize::LogicObjectRef' has a wrong offset!");
-static_assert(offsetof(WidgetManContainer_Initialize, bSubWidget) == 0x000020, "Member 'WidgetManContainer_Initialize::bSubWidget' has a wrong offset!");
+DUMPER7_ASSERTS_WidgetManContainer_Initialize;
 
 // Function UnionUI.WidgetManContainer.IsSubWidgetContainer
 // 0x0001 (0x0001 - 0x0000)
@@ -3390,9 +2689,7 @@ struct WidgetManContainer_IsSubWidgetContainer final
 public:
 	bool                                          bSubWidget;                                        // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WidgetManContainer_IsSubWidgetContainer) == 0x000001, "Wrong alignment on WidgetManContainer_IsSubWidgetContainer");
-static_assert(sizeof(WidgetManContainer_IsSubWidgetContainer) == 0x000001, "Wrong size on WidgetManContainer_IsSubWidgetContainer");
-static_assert(offsetof(WidgetManContainer_IsSubWidgetContainer, bSubWidget) == 0x000000, "Member 'WidgetManContainer_IsSubWidgetContainer::bSubWidget' has a wrong offset!");
+DUMPER7_ASSERTS_WidgetManContainer_IsSubWidgetContainer;
 
 // Function UnionUI.WidgetManContainer.OffsetZOrder
 // 0x0004 (0x0004 - 0x0000)
@@ -3401,9 +2698,7 @@ struct WidgetManContainer_OffsetZOrder final
 public:
 	int32                                         Offset;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WidgetManContainer_OffsetZOrder) == 0x000004, "Wrong alignment on WidgetManContainer_OffsetZOrder");
-static_assert(sizeof(WidgetManContainer_OffsetZOrder) == 0x000004, "Wrong size on WidgetManContainer_OffsetZOrder");
-static_assert(offsetof(WidgetManContainer_OffsetZOrder, Offset) == 0x000000, "Member 'WidgetManContainer_OffsetZOrder::Offset' has a wrong offset!");
+DUMPER7_ASSERTS_WidgetManContainer_OffsetZOrder;
 
 // Function UnionUI.WidgetManContainer.SetZOrder
 // 0x0004 (0x0004 - 0x0000)
@@ -3412,9 +2707,7 @@ struct WidgetManContainer_SetZOrder final
 public:
 	int32                                         InZOrder;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WidgetManContainer_SetZOrder) == 0x000004, "Wrong alignment on WidgetManContainer_SetZOrder");
-static_assert(sizeof(WidgetManContainer_SetZOrder) == 0x000004, "Wrong size on WidgetManContainer_SetZOrder");
-static_assert(offsetof(WidgetManContainer_SetZOrder, InZOrder) == 0x000000, "Member 'WidgetManContainer_SetZOrder::InZOrder' has a wrong offset!");
+DUMPER7_ASSERTS_WidgetManContainer_SetZOrder;
 
 // Function UnionUI.WidgetManDebugString.AppendDebugString
 // 0x0010 (0x0010 - 0x0000)
@@ -3423,9 +2716,7 @@ struct WidgetManDebugString_AppendDebugString final
 public:
 	class FString                                 InString;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WidgetManDebugString_AppendDebugString) == 0x000008, "Wrong alignment on WidgetManDebugString_AppendDebugString");
-static_assert(sizeof(WidgetManDebugString_AppendDebugString) == 0x000010, "Wrong size on WidgetManDebugString_AppendDebugString");
-static_assert(offsetof(WidgetManDebugString_AppendDebugString, InString) == 0x000000, "Member 'WidgetManDebugString_AppendDebugString::InString' has a wrong offset!");
+DUMPER7_ASSERTS_WidgetManDebugString_AppendDebugString;
 
 // Function UnionUI.WidgetManDebugString.Draw_Internal
 // 0x0030 (0x0030 - 0x0000)
@@ -3434,9 +2725,7 @@ struct WidgetManDebugString_Draw_Internal final
 public:
 	struct FPaintContext                          PaintContext;                                      // 0x0000(0x0030)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WidgetManDebugString_Draw_Internal) == 0x000008, "Wrong alignment on WidgetManDebugString_Draw_Internal");
-static_assert(sizeof(WidgetManDebugString_Draw_Internal) == 0x000030, "Wrong size on WidgetManDebugString_Draw_Internal");
-static_assert(offsetof(WidgetManDebugString_Draw_Internal, PaintContext) == 0x000000, "Member 'WidgetManDebugString_Draw_Internal::PaintContext' has a wrong offset!");
+DUMPER7_ASSERTS_WidgetManDebugString_Draw_Internal;
 
 // Function UnionUI.WidgetManDebugString.GetDebugString
 // 0x0010 (0x0010 - 0x0000)
@@ -3445,9 +2734,7 @@ struct WidgetManDebugString_GetDebugString final
 public:
 	class FString                                 String;                                            // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WidgetManDebugString_GetDebugString) == 0x000008, "Wrong alignment on WidgetManDebugString_GetDebugString");
-static_assert(sizeof(WidgetManDebugString_GetDebugString) == 0x000010, "Wrong size on WidgetManDebugString_GetDebugString");
-static_assert(offsetof(WidgetManDebugString_GetDebugString, String) == 0x000000, "Member 'WidgetManDebugString_GetDebugString::String' has a wrong offset!");
+DUMPER7_ASSERTS_WidgetManDebugString_GetDebugString;
 
 // Function UnionUI.WidgetManDebugString.SetColor
 // 0x0010 (0x0010 - 0x0000)
@@ -3456,9 +2743,7 @@ struct WidgetManDebugString_SetColor final
 public:
 	struct FLinearColor                           NewColor;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WidgetManDebugString_SetColor) == 0x000004, "Wrong alignment on WidgetManDebugString_SetColor");
-static_assert(sizeof(WidgetManDebugString_SetColor) == 0x000010, "Wrong size on WidgetManDebugString_SetColor");
-static_assert(offsetof(WidgetManDebugString_SetColor, NewColor) == 0x000000, "Member 'WidgetManDebugString_SetColor::NewColor' has a wrong offset!");
+DUMPER7_ASSERTS_WidgetManDebugString_SetColor;
 
 // Function UnionUI.WidgetManDebugString.SetFontSize
 // 0x0004 (0x0004 - 0x0000)
@@ -3467,9 +2752,7 @@ struct WidgetManDebugString_SetFontSize final
 public:
 	int32                                         NewFontSize;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WidgetManDebugString_SetFontSize) == 0x000004, "Wrong alignment on WidgetManDebugString_SetFontSize");
-static_assert(sizeof(WidgetManDebugString_SetFontSize) == 0x000004, "Wrong size on WidgetManDebugString_SetFontSize");
-static_assert(offsetof(WidgetManDebugString_SetFontSize, NewFontSize) == 0x000000, "Member 'WidgetManDebugString_SetFontSize::NewFontSize' has a wrong offset!");
+DUMPER7_ASSERTS_WidgetManDebugString_SetFontSize;
 
 // Function UnionUI.WidgetManDebugString.SetPosition
 // 0x0008 (0x0008 - 0x0000)
@@ -3479,10 +2762,7 @@ public:
 	float                                         NewX;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         NewY;                                              // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WidgetManDebugString_SetPosition) == 0x000004, "Wrong alignment on WidgetManDebugString_SetPosition");
-static_assert(sizeof(WidgetManDebugString_SetPosition) == 0x000008, "Wrong size on WidgetManDebugString_SetPosition");
-static_assert(offsetof(WidgetManDebugString_SetPosition, NewX) == 0x000000, "Member 'WidgetManDebugString_SetPosition::NewX' has a wrong offset!");
-static_assert(offsetof(WidgetManDebugString_SetPosition, NewY) == 0x000004, "Member 'WidgetManDebugString_SetPosition::NewY' has a wrong offset!");
+DUMPER7_ASSERTS_WidgetManDebugString_SetPosition;
 
 // Function UnionUI.WidgetManDebugString.SetShadowColorAndOffset
 // 0x0018 (0x0018 - 0x0000)
@@ -3493,11 +2773,7 @@ public:
 	float                                         NewOffsetX;                                        // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         NewOffsetY;                                        // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WidgetManDebugString_SetShadowColorAndOffset) == 0x000004, "Wrong alignment on WidgetManDebugString_SetShadowColorAndOffset");
-static_assert(sizeof(WidgetManDebugString_SetShadowColorAndOffset) == 0x000018, "Wrong size on WidgetManDebugString_SetShadowColorAndOffset");
-static_assert(offsetof(WidgetManDebugString_SetShadowColorAndOffset, NewColor) == 0x000000, "Member 'WidgetManDebugString_SetShadowColorAndOffset::NewColor' has a wrong offset!");
-static_assert(offsetof(WidgetManDebugString_SetShadowColorAndOffset, NewOffsetX) == 0x000010, "Member 'WidgetManDebugString_SetShadowColorAndOffset::NewOffsetX' has a wrong offset!");
-static_assert(offsetof(WidgetManDebugString_SetShadowColorAndOffset, NewOffsetY) == 0x000014, "Member 'WidgetManDebugString_SetShadowColorAndOffset::NewOffsetY' has a wrong offset!");
+DUMPER7_ASSERTS_WidgetManDebugString_SetShadowColorAndOffset;
 
 // Function UnionUI.WidgetManDebugString.SetShowHide
 // 0x0001 (0x0001 - 0x0000)
@@ -3506,9 +2782,7 @@ struct WidgetManDebugString_SetShowHide final
 public:
 	bool                                          Show;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WidgetManDebugString_SetShowHide) == 0x000001, "Wrong alignment on WidgetManDebugString_SetShowHide");
-static_assert(sizeof(WidgetManDebugString_SetShowHide) == 0x000001, "Wrong size on WidgetManDebugString_SetShowHide");
-static_assert(offsetof(WidgetManDebugString_SetShowHide, Show) == 0x000000, "Member 'WidgetManDebugString_SetShowHide::Show' has a wrong offset!");
+DUMPER7_ASSERTS_WidgetManDebugString_SetShowHide;
 
 // Function UnionUI.WidgetManLogicInterface.OnLostPriority
 // 0x0008 (0x0008 - 0x0000)
@@ -3517,9 +2791,7 @@ struct WidgetManLogicInterface_OnLostPriority final
 public:
 	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WidgetManLogicInterface_OnLostPriority) == 0x000008, "Wrong alignment on WidgetManLogicInterface_OnLostPriority");
-static_assert(sizeof(WidgetManLogicInterface_OnLostPriority) == 0x000008, "Wrong size on WidgetManLogicInterface_OnLostPriority");
-static_assert(offsetof(WidgetManLogicInterface_OnLostPriority, Widget) == 0x000000, "Member 'WidgetManLogicInterface_OnLostPriority::Widget' has a wrong offset!");
+DUMPER7_ASSERTS_WidgetManLogicInterface_OnLostPriority;
 
 // Function UnionUI.WidgetManLogicInterface.OnPoped
 // 0x0008 (0x0008 - 0x0000)
@@ -3528,9 +2800,7 @@ struct WidgetManLogicInterface_OnPoped final
 public:
 	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WidgetManLogicInterface_OnPoped) == 0x000008, "Wrong alignment on WidgetManLogicInterface_OnPoped");
-static_assert(sizeof(WidgetManLogicInterface_OnPoped) == 0x000008, "Wrong size on WidgetManLogicInterface_OnPoped");
-static_assert(offsetof(WidgetManLogicInterface_OnPoped, Widget) == 0x000000, "Member 'WidgetManLogicInterface_OnPoped::Widget' has a wrong offset!");
+DUMPER7_ASSERTS_WidgetManLogicInterface_OnPoped;
 
 // Function UnionUI.WidgetManLogicInterface.OnPushed
 // 0x0008 (0x0008 - 0x0000)
@@ -3539,9 +2809,7 @@ struct WidgetManLogicInterface_OnPushed final
 public:
 	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WidgetManLogicInterface_OnPushed) == 0x000008, "Wrong alignment on WidgetManLogicInterface_OnPushed");
-static_assert(sizeof(WidgetManLogicInterface_OnPushed) == 0x000008, "Wrong size on WidgetManLogicInterface_OnPushed");
-static_assert(offsetof(WidgetManLogicInterface_OnPushed, Widget) == 0x000000, "Member 'WidgetManLogicInterface_OnPushed::Widget' has a wrong offset!");
+DUMPER7_ASSERTS_WidgetManLogicInterface_OnPushed;
 
 // Function UnionUI.WidgetManLogicInterface.OnRegainPriority
 // 0x0008 (0x0008 - 0x0000)
@@ -3550,9 +2818,7 @@ struct WidgetManLogicInterface_OnRegainPriority final
 public:
 	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WidgetManLogicInterface_OnRegainPriority) == 0x000008, "Wrong alignment on WidgetManLogicInterface_OnRegainPriority");
-static_assert(sizeof(WidgetManLogicInterface_OnRegainPriority) == 0x000008, "Wrong size on WidgetManLogicInterface_OnRegainPriority");
-static_assert(offsetof(WidgetManLogicInterface_OnRegainPriority, Widget) == 0x000000, "Member 'WidgetManLogicInterface_OnRegainPriority::Widget' has a wrong offset!");
+DUMPER7_ASSERTS_WidgetManLogicInterface_OnRegainPriority;
 
 }
 

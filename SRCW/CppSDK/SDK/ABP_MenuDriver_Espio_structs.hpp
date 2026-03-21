@@ -17,12 +17,11 @@ namespace SDK
 {
 
 // ScriptStruct ABP_MenuDriver_Espio.ABP_MenuDriver_Espio_C.AnimBlueprintGeneratedConstantData
-// 0x0000 (0x1330 - 0x1330)
+// 0x0000 (0x09B0 - 0x09B0)
 struct ABP_MenuDriver_Espio::FAnimBlueprintGeneratedConstantData final : public ABPT_MenuDriver::FAnimBlueprintGeneratedConstantData
 {
 };
-static_assert(alignof(ABP_MenuDriver_Espio::FAnimBlueprintGeneratedConstantData) == 0x000008, "Wrong alignment on ABP_MenuDriver_Espio::FAnimBlueprintGeneratedConstantData");
-static_assert(sizeof(ABP_MenuDriver_Espio::FAnimBlueprintGeneratedConstantData) == 0x001330, "Wrong size on ABP_MenuDriver_Espio::FAnimBlueprintGeneratedConstantData");
+DUMPER7_ASSERTS_ABP_MenuDriver_Espio__FAnimBlueprintGeneratedConstantData;
 
 }
 

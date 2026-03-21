@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -40,20 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ItemVioletVoidObject_C">();
+		BP_STATIC_CLASS_IMPL("BP_ItemVioletVoidObject_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ItemVioletVoidObject_C")
 	}
 	static class ABP_ItemVioletVoidObject_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ItemVioletVoidObject_C>();
 	}
 };
-static_assert(alignof(ABP_ItemVioletVoidObject_C) == 0x000010, "Wrong alignment on ABP_ItemVioletVoidObject_C");
-static_assert(sizeof(ABP_ItemVioletVoidObject_C) == 0x000710, "Wrong size on ABP_ItemVioletVoidObject_C");
-static_assert(offsetof(ABP_ItemVioletVoidObject_C, UberGraphFrame) == 0x0006E0, "Member 'ABP_ItemVioletVoidObject_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_ItemVioletVoidObject_C, Debug) == 0x0006E8, "Member 'ABP_ItemVioletVoidObject_C::Debug' has a wrong offset!");
-static_assert(offsetof(ABP_ItemVioletVoidObject_C, AppearAnimationTime) == 0x0006F0, "Member 'ABP_ItemVioletVoidObject_C::AppearAnimationTime' has a wrong offset!");
-static_assert(offsetof(ABP_ItemVioletVoidObject_C, EatAnimationTime) == 0x0006F8, "Member 'ABP_ItemVioletVoidObject_C::EatAnimationTime' has a wrong offset!");
-static_assert(offsetof(ABP_ItemVioletVoidObject_C, DisappearAnimationTime) == 0x000700, "Member 'ABP_ItemVioletVoidObject_C::DisappearAnimationTime' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_ItemVioletVoidObject_C;
 
 }
 

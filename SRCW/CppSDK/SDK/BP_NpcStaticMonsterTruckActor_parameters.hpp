@@ -27,12 +27,7 @@ public:
 	struct FLinearColor                           K2Node_Event_Color;                                // 0x0008(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bWithDriver;                          // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_NpcStaticMonsterTruckActor_C_ExecuteUbergraph_BP_NpcStaticMonsterTruckActor) == 0x000004, "Wrong alignment on BP_NpcStaticMonsterTruckActor_C_ExecuteUbergraph_BP_NpcStaticMonsterTruckActor");
-static_assert(sizeof(BP_NpcStaticMonsterTruckActor_C_ExecuteUbergraph_BP_NpcStaticMonsterTruckActor) == 0x00001C, "Wrong size on BP_NpcStaticMonsterTruckActor_C_ExecuteUbergraph_BP_NpcStaticMonsterTruckActor");
-static_assert(offsetof(BP_NpcStaticMonsterTruckActor_C_ExecuteUbergraph_BP_NpcStaticMonsterTruckActor, EntryPoint) == 0x000000, "Member 'BP_NpcStaticMonsterTruckActor_C_ExecuteUbergraph_BP_NpcStaticMonsterTruckActor::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_NpcStaticMonsterTruckActor_C_ExecuteUbergraph_BP_NpcStaticMonsterTruckActor, K2Node_Event_bIsPlay) == 0x000004, "Member 'BP_NpcStaticMonsterTruckActor_C_ExecuteUbergraph_BP_NpcStaticMonsterTruckActor::K2Node_Event_bIsPlay' has a wrong offset!");
-static_assert(offsetof(BP_NpcStaticMonsterTruckActor_C_ExecuteUbergraph_BP_NpcStaticMonsterTruckActor, K2Node_Event_Color) == 0x000008, "Member 'BP_NpcStaticMonsterTruckActor_C_ExecuteUbergraph_BP_NpcStaticMonsterTruckActor::K2Node_Event_Color' has a wrong offset!");
-static_assert(offsetof(BP_NpcStaticMonsterTruckActor_C_ExecuteUbergraph_BP_NpcStaticMonsterTruckActor, K2Node_Event_bWithDriver) == 0x000018, "Member 'BP_NpcStaticMonsterTruckActor_C_ExecuteUbergraph_BP_NpcStaticMonsterTruckActor::K2Node_Event_bWithDriver' has a wrong offset!");
+DUMPER7_ASSERTS_BP_NpcStaticMonsterTruckActor_C_ExecuteUbergraph_BP_NpcStaticMonsterTruckActor;
 
 // Function BP_NpcStaticMonsterTruckActor.BP_NpcStaticMonsterTruckActor_C.OnCountDown
 // 0x0018 (0x0018 - 0x0000)
@@ -44,11 +39,7 @@ public:
 	struct FLinearColor                           Color;                                             // 0x0004(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bWithDriver;                                       // 0x0014(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_NpcStaticMonsterTruckActor_C_OnCountDown) == 0x000004, "Wrong alignment on BP_NpcStaticMonsterTruckActor_C_OnCountDown");
-static_assert(sizeof(BP_NpcStaticMonsterTruckActor_C_OnCountDown) == 0x000018, "Wrong size on BP_NpcStaticMonsterTruckActor_C_OnCountDown");
-static_assert(offsetof(BP_NpcStaticMonsterTruckActor_C_OnCountDown, bIsPlay) == 0x000000, "Member 'BP_NpcStaticMonsterTruckActor_C_OnCountDown::bIsPlay' has a wrong offset!");
-static_assert(offsetof(BP_NpcStaticMonsterTruckActor_C_OnCountDown, Color) == 0x000004, "Member 'BP_NpcStaticMonsterTruckActor_C_OnCountDown::Color' has a wrong offset!");
-static_assert(offsetof(BP_NpcStaticMonsterTruckActor_C_OnCountDown, bWithDriver) == 0x000014, "Member 'BP_NpcStaticMonsterTruckActor_C_OnCountDown::bWithDriver' has a wrong offset!");
+DUMPER7_ASSERTS_BP_NpcStaticMonsterTruckActor_C_OnCountDown;
 
 }
 

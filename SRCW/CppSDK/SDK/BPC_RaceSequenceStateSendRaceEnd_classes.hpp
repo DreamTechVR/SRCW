@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
+#include "UnionRun_structs.hpp"
+#include "UNION_structs.hpp"
+#include "UNION_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UnionLib_structs.hpp"
-#include "UNION_structs.hpp"
-#include "UNION_classes.hpp"
-#include "UnionRun_structs.hpp"
 
 
 namespace SDK
@@ -68,26 +68,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_RaceSequenceStateSendRaceEnd_C">();
+		BP_STATIC_CLASS_IMPL("BPC_RaceSequenceStateSendRaceEnd_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_RaceSequenceStateSendRaceEnd_C")
 	}
 	static class UBPC_RaceSequenceStateSendRaceEnd_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_RaceSequenceStateSendRaceEnd_C>();
 	}
 };
-static_assert(alignof(UBPC_RaceSequenceStateSendRaceEnd_C) == 0x000008, "Wrong alignment on UBPC_RaceSequenceStateSendRaceEnd_C");
-static_assert(sizeof(UBPC_RaceSequenceStateSendRaceEnd_C) == 0x000198, "Wrong size on UBPC_RaceSequenceStateSendRaceEnd_C");
-static_assert(offsetof(UBPC_RaceSequenceStateSendRaceEnd_C, UberGraphFrame) == 0x000168, "Member 'UBPC_RaceSequenceStateSendRaceEnd_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateSendRaceEnd_C, ConnectedResCode) == 0x000170, "Member 'UBPC_RaceSequenceStateSendRaceEnd_C::ConnectedResCode' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateSendRaceEnd_C, bConnectedSuccessRes) == 0x000174, "Member 'UBPC_RaceSequenceStateSendRaceEnd_C::bConnectedSuccessRes' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateSendRaceEnd_C, ConnectedResCodeAbstract) == 0x000175, "Member 'UBPC_RaceSequenceStateSendRaceEnd_C::ConnectedResCodeAbstract' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateSendRaceEnd_C, MainSequenceType) == 0x000176, "Member 'UBPC_RaceSequenceStateSendRaceEnd_C::MainSequenceType' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateSendRaceEnd_C, SubSequenceType) == 0x000177, "Member 'UBPC_RaceSequenceStateSendRaceEnd_C::SubSequenceType' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateSendRaceEnd_C, bSaveSeq) == 0x000178, "Member 'UBPC_RaceSequenceStateSendRaceEnd_C::bSaveSeq' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateSendRaceEnd_C, ResultLegendRate) == 0x00017C, "Member 'UBPC_RaceSequenceStateSendRaceEnd_C::ResultLegendRate' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateSendRaceEnd_C, bUpdateMaxLegendCompe) == 0x000180, "Member 'UBPC_RaceSequenceStateSendRaceEnd_C::bUpdateMaxLegendCompe' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateSendRaceEnd_C, NewLegendCompeGrade) == 0x000181, "Member 'UBPC_RaceSequenceStateSendRaceEnd_C::NewLegendCompeGrade' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateSendRaceEnd_C, Out_Reward_Arr) == 0x000188, "Member 'UBPC_RaceSequenceStateSendRaceEnd_C::Out_Reward_Arr' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_RaceSequenceStateSendRaceEnd_C;
 
 }
 

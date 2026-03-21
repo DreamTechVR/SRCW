@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "UNION_structs.hpp"
+#include "UNION_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UnionUI_structs.hpp"
-#include "UNION_structs.hpp"
-#include "UNION_classes.hpp"
 
 
 namespace SDK
@@ -86,32 +86,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_RaceSequenceStateResultRival_C">();
+		BP_STATIC_CLASS_IMPL("BPC_RaceSequenceStateResultRival_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_RaceSequenceStateResultRival_C")
 	}
 	static class UBPC_RaceSequenceStateResultRival_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_RaceSequenceStateResultRival_C>();
 	}
 };
-static_assert(alignof(UBPC_RaceSequenceStateResultRival_C) == 0x000008, "Wrong alignment on UBPC_RaceSequenceStateResultRival_C");
-static_assert(sizeof(UBPC_RaceSequenceStateResultRival_C) == 0x0001B8, "Wrong size on UBPC_RaceSequenceStateResultRival_C");
-static_assert(offsetof(UBPC_RaceSequenceStateResultRival_C, UberGraphFrame) == 0x000140, "Member 'UBPC_RaceSequenceStateResultRival_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateResultRival_C, SubtitleUI) == 0x000148, "Member 'UBPC_RaceSequenceStateResultRival_C::SubtitleUI' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateResultRival_C, RaceCameraActor) == 0x000150, "Member 'UBPC_RaceSequenceStateResultRival_C::RaceCameraActor' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateResultRival_C, Camera) == 0x000158, "Member 'UBPC_RaceSequenceStateResultRival_C::Camera' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateResultRival_C, PlayerActor) == 0x000160, "Member 'UBPC_RaceSequenceStateResultRival_C::PlayerActor' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateResultRival_C, Player) == 0x000168, "Member 'UBPC_RaceSequenceStateResultRival_C::Player' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateResultRival_C, RewardGetUI) == 0x000170, "Member 'UBPC_RaceSequenceStateResultRival_C::RewardGetUI' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateResultRival_C, RivalVoiceDuration) == 0x000178, "Member 'UBPC_RaceSequenceStateResultRival_C::RivalVoiceDuration' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateResultRival_C, InputKeyHandler) == 0x000180, "Member 'UBPC_RaceSequenceStateResultRival_C::InputKeyHandler' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateResultRival_C, RewardAchievementType) == 0x000188, "Member 'UBPC_RaceSequenceStateResultRival_C::RewardAchievementType' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateResultRival_C, bRewardGetDisplay) == 0x000189, "Member 'UBPC_RaceSequenceStateResultRival_C::bRewardGetDisplay' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateResultRival_C, DisabledSplitscreen) == 0x00018A, "Member 'UBPC_RaceSequenceStateResultRival_C::DisabledSplitscreen' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateResultRival_C, RivalSelectHUD) == 0x000190, "Member 'UBPC_RaceSequenceStateResultRival_C::RivalSelectHUD' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateResultRival_C, SkipDelaySeconds) == 0x000198, "Member 'UBPC_RaceSequenceStateResultRival_C::SkipDelaySeconds' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateResultRival_C, RivalSelectSkipSeconds) == 0x0001A0, "Member 'UBPC_RaceSequenceStateResultRival_C::RivalSelectSkipSeconds' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateResultRival_C, RivalSelectAutoCloseSeconds) == 0x0001A8, "Member 'UBPC_RaceSequenceStateResultRival_C::RivalSelectAutoCloseSeconds' has a wrong offset!");
-static_assert(offsetof(UBPC_RaceSequenceStateResultRival_C, CameraOffsetActor) == 0x0001B0, "Member 'UBPC_RaceSequenceStateResultRival_C::CameraOffsetActor' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_RaceSequenceStateResultRival_C;
 
 }
 

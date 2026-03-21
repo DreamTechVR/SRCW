@@ -25,10 +25,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class ULevelSequence>          Sequencer_11_7599B49E4A287AA14AFAD0A7BFE36A62;     // 0x0008(0x0028)(Edit, BlueprintVisible, HasGetValueTypeHash)
 };
-static_assert(alignof(FST_IntroduceCourseSceneData) == 0x000008, "Wrong alignment on FST_IntroduceCourseSceneData");
-static_assert(sizeof(FST_IntroduceCourseSceneData) == 0x000030, "Wrong size on FST_IntroduceCourseSceneData");
-static_assert(offsetof(FST_IntroduceCourseSceneData, StageId_2_241DE91C4E3BED751FD3E7BDA12826DF) == 0x000000, "Member 'FST_IntroduceCourseSceneData::StageId_2_241DE91C4E3BED751FD3E7BDA12826DF' has a wrong offset!");
-static_assert(offsetof(FST_IntroduceCourseSceneData, Sequencer_11_7599B49E4A287AA14AFAD0A7BFE36A62) == 0x000008, "Member 'FST_IntroduceCourseSceneData::Sequencer_11_7599B49E4A287AA14AFAD0A7BFE36A62' has a wrong offset!");
+DUMPER7_ASSERTS_FST_IntroduceCourseSceneData;
 
 }
 

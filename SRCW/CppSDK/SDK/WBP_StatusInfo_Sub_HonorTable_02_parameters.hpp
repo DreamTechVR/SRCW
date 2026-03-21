@@ -27,13 +27,7 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_Sub_HonorTable_02_C_SetCheckIcon) == 0x000001, "Wrong alignment on WBP_StatusInfo_Sub_HonorTable_02_C_SetCheckIcon");
-static_assert(sizeof(WBP_StatusInfo_Sub_HonorTable_02_C_SetCheckIcon) == 0x000005, "Wrong size on WBP_StatusInfo_Sub_HonorTable_02_C_SetCheckIcon");
-static_assert(offsetof(WBP_StatusInfo_Sub_HonorTable_02_C_SetCheckIcon, IsTaked) == 0x000000, "Member 'WBP_StatusInfo_Sub_HonorTable_02_C_SetCheckIcon::IsTaked' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_HonorTable_02_C_SetCheckIcon, Temp_bool_Variable) == 0x000001, "Member 'WBP_StatusInfo_Sub_HonorTable_02_C_SetCheckIcon::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_HonorTable_02_C_SetCheckIcon, Temp_byte_Variable) == 0x000002, "Member 'WBP_StatusInfo_Sub_HonorTable_02_C_SetCheckIcon::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_HonorTable_02_C_SetCheckIcon, Temp_byte_Variable_1) == 0x000003, "Member 'WBP_StatusInfo_Sub_HonorTable_02_C_SetCheckIcon::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_HonorTable_02_C_SetCheckIcon, K2Node_Select_Default) == 0x000004, "Member 'WBP_StatusInfo_Sub_HonorTable_02_C_SetCheckIcon::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_Sub_HonorTable_02_C_SetCheckIcon;
 
 // Function WBP_StatusInfo_Sub_HonorTable_02.WBP_StatusInfo_Sub_HonorTable_02_C.SetTitleText
 // 0x0010 (0x0010 - 0x0000)
@@ -42,9 +36,7 @@ struct WBP_StatusInfo_Sub_HonorTable_02_C_SetTitleText final
 public:
 	class FText                                   Title;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_StatusInfo_Sub_HonorTable_02_C_SetTitleText) == 0x000008, "Wrong alignment on WBP_StatusInfo_Sub_HonorTable_02_C_SetTitleText");
-static_assert(sizeof(WBP_StatusInfo_Sub_HonorTable_02_C_SetTitleText) == 0x000010, "Wrong size on WBP_StatusInfo_Sub_HonorTable_02_C_SetTitleText");
-static_assert(offsetof(WBP_StatusInfo_Sub_HonorTable_02_C_SetTitleText, Title) == 0x000000, "Member 'WBP_StatusInfo_Sub_HonorTable_02_C_SetTitleText::Title' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_Sub_HonorTable_02_C_SetTitleText;
 
 }
 

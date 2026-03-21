@@ -23,10 +23,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAppDataManageSubsystem*                CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_UnionGameModeBase_C_ExecuteUbergraph_BP_UnionGameModeBase) == 0x000008, "Wrong alignment on BP_UnionGameModeBase_C_ExecuteUbergraph_BP_UnionGameModeBase");
-static_assert(sizeof(BP_UnionGameModeBase_C_ExecuteUbergraph_BP_UnionGameModeBase) == 0x000010, "Wrong size on BP_UnionGameModeBase_C_ExecuteUbergraph_BP_UnionGameModeBase");
-static_assert(offsetof(BP_UnionGameModeBase_C_ExecuteUbergraph_BP_UnionGameModeBase, EntryPoint) == 0x000000, "Member 'BP_UnionGameModeBase_C_ExecuteUbergraph_BP_UnionGameModeBase::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_UnionGameModeBase_C_ExecuteUbergraph_BP_UnionGameModeBase, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000008, "Member 'BP_UnionGameModeBase_C_ExecuteUbergraph_BP_UnionGameModeBase::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_UnionGameModeBase_C_ExecuteUbergraph_BP_UnionGameModeBase;
 
 }
 

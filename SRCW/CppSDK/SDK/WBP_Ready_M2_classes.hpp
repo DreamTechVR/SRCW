@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -71,40 +71,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Ready_M2_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Ready_M2_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Ready_M2_C")
 	}
 	static class UWBP_Ready_M2_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Ready_M2_C>();
 	}
 };
-static_assert(alignof(UWBP_Ready_M2_C) == 0x000008, "Wrong alignment on UWBP_Ready_M2_C");
-static_assert(sizeof(UWBP_Ready_M2_C) == 0x0003C0, "Wrong size on UWBP_Ready_M2_C");
-static_assert(offsetof(UWBP_Ready_M2_C, UberGraphFrame) == 0x0002F8, "Member 'UWBP_Ready_M2_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_M2_C, Ready_M2_Decide) == 0x000300, "Member 'UWBP_Ready_M2_C::Ready_M2_Decide' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_M2_C, Ready_M2_Cancel) == 0x000308, "Member 'UWBP_Ready_M2_C::Ready_M2_Cancel' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_M2_C, Ready_M2_Loop) == 0x000310, "Member 'UWBP_Ready_M2_C::Ready_M2_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_M2_C, Ready_M2_In) == 0x000318, "Member 'UWBP_Ready_M2_C::Ready_M2_In' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_M2_C, Base_BG_P1) == 0x000320, "Member 'UWBP_Ready_M2_C::Base_BG_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_M2_C, Base_BG_P2) == 0x000328, "Member 'UWBP_Ready_M2_C::Base_BG_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_M2_C, Base_BG_Shadow_P1) == 0x000330, "Member 'UWBP_Ready_M2_C::Base_BG_Shadow_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_M2_C, Base_BG_Shadow_P2) == 0x000338, "Member 'UWBP_Ready_M2_C::Base_BG_Shadow_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_M2_C, BG_Black) == 0x000340, "Member 'UWBP_Ready_M2_C::BG_Black' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_M2_C, BG_Light) == 0x000348, "Member 'UWBP_Ready_M2_C::BG_Light' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_M2_C, Eff_Core_Add_01) == 0x000350, "Member 'UWBP_Ready_M2_C::Eff_Core_Add_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_M2_C, Eff_Core_Add_02) == 0x000358, "Member 'UWBP_Ready_M2_C::Eff_Core_Add_02' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_M2_C, RaceFlag_Left_P1) == 0x000360, "Member 'UWBP_Ready_M2_C::RaceFlag_Left_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_M2_C, RaceFlag_Right_P2) == 0x000368, "Member 'UWBP_Ready_M2_C::RaceFlag_Right_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_M2_C, SafeZone_Ready_M2) == 0x000370, "Member 'UWBP_Ready_M2_C::SafeZone_Ready_M2' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_M2_C, WBP_CMN_Sub_BoxBtn) == 0x000378, "Member 'UWBP_Ready_M2_C::WBP_CMN_Sub_BoxBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_M2_C, WBP_Ready_Sub_CharaWindow_P1P3) == 0x000380, "Member 'UWBP_Ready_M2_C::WBP_Ready_Sub_CharaWindow_P1P3' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_M2_C, WBP_Ready_Sub_CharaWindow_P2P4) == 0x000388, "Member 'UWBP_Ready_M2_C::WBP_Ready_Sub_CharaWindow_P2P4' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_M2_C, WBP_Ready_Sub_Decide) == 0x000390, "Member 'UWBP_Ready_M2_C::WBP_Ready_Sub_Decide' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_M2_C, WBP_Ready_Sub_Gadget_P1) == 0x000398, "Member 'UWBP_Ready_M2_C::WBP_Ready_Sub_Gadget_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_M2_C, WBP_Ready_Sub_Gadget_P2) == 0x0003A0, "Member 'UWBP_Ready_M2_C::WBP_Ready_Sub_Gadget_P2' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_M2_C, WBP_Ready_Sub_StandByText) == 0x0003A8, "Member 'UWBP_Ready_M2_C::WBP_Ready_Sub_StandByText' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_M2_C, WBP_Window_MachineParameter_P1) == 0x0003B0, "Member 'UWBP_Ready_M2_C::WBP_Window_MachineParameter_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_M2_C, WBP_Window_MachineParameter_P2) == 0x0003B8, "Member 'UWBP_Ready_M2_C::WBP_Window_MachineParameter_P2' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Ready_M2_C;
 
 }
 

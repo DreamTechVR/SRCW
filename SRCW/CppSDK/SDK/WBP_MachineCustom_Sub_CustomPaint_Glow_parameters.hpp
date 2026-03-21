@@ -25,9 +25,7 @@ struct WBP_MachineCustom_Sub_CustomPaint_Glow_C_ExecuteUbergraph_WBP_MachineCust
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomPaint_Glow_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint_Glow) == 0x000004, "Wrong alignment on WBP_MachineCustom_Sub_CustomPaint_Glow_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint_Glow");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomPaint_Glow_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint_Glow) == 0x000004, "Wrong size on WBP_MachineCustom_Sub_CustomPaint_Glow_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint_Glow");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Glow_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint_Glow, EntryPoint) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomPaint_Glow_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint_Glow::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomPaint_Glow_C_ExecuteUbergraph_WBP_MachineCustom_Sub_CustomPaint_Glow;
 
 // Function WBP_MachineCustom_Sub_CustomPaint_Glow.WBP_MachineCustom_Sub_CustomPaint_Glow_C.OnFocusReceived
 // 0x01C0 (0x01C0 - 0x0000)
@@ -42,14 +40,7 @@ public:
 	uint8                                         Pad_101[0x7];                                      // 0x0101(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x0108(0x00B8)()
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomPaint_Glow_C_OnFocusReceived) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CustomPaint_Glow_C_OnFocusReceived");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomPaint_Glow_C_OnFocusReceived) == 0x0001C0, "Wrong size on WBP_MachineCustom_Sub_CustomPaint_Glow_C_OnFocusReceived");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Glow_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomPaint_Glow_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Glow_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'WBP_MachineCustom_Sub_CustomPaint_Glow_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Glow_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'WBP_MachineCustom_Sub_CustomPaint_Glow_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Glow_C_OnFocusReceived, K2Node_DynamicCast_AsMenu_Player_Controller) == 0x0000F8, "Member 'WBP_MachineCustom_Sub_CustomPaint_Glow_C_OnFocusReceived::K2Node_DynamicCast_AsMenu_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Glow_C_OnFocusReceived, K2Node_DynamicCast_bSuccess) == 0x000100, "Member 'WBP_MachineCustom_Sub_CustomPaint_Glow_C_OnFocusReceived::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Glow_C_OnFocusReceived, K2Node_MakeStruct_EventReply) == 0x000108, "Member 'WBP_MachineCustom_Sub_CustomPaint_Glow_C_OnFocusReceived::K2Node_MakeStruct_EventReply' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomPaint_Glow_C_OnFocusReceived;
 
 // Function WBP_MachineCustom_Sub_CustomPaint_Glow.WBP_MachineCustom_Sub_CustomPaint_Glow_C.SetCursorVisible
 // 0x0005 (0x0005 - 0x0000)
@@ -62,13 +53,7 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomPaint_Glow_C_SetCursorVisible) == 0x000001, "Wrong alignment on WBP_MachineCustom_Sub_CustomPaint_Glow_C_SetCursorVisible");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomPaint_Glow_C_SetCursorVisible) == 0x000005, "Wrong size on WBP_MachineCustom_Sub_CustomPaint_Glow_C_SetCursorVisible");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Glow_C_SetCursorVisible, bInIsVisible) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomPaint_Glow_C_SetCursorVisible::bInIsVisible' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Glow_C_SetCursorVisible, Temp_bool_Variable) == 0x000001, "Member 'WBP_MachineCustom_Sub_CustomPaint_Glow_C_SetCursorVisible::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Glow_C_SetCursorVisible, Temp_byte_Variable) == 0x000002, "Member 'WBP_MachineCustom_Sub_CustomPaint_Glow_C_SetCursorVisible::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Glow_C_SetCursorVisible, Temp_byte_Variable_1) == 0x000003, "Member 'WBP_MachineCustom_Sub_CustomPaint_Glow_C_SetCursorVisible::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Glow_C_SetCursorVisible, K2Node_Select_Default) == 0x000004, "Member 'WBP_MachineCustom_Sub_CustomPaint_Glow_C_SetCursorVisible::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomPaint_Glow_C_SetCursorVisible;
 
 // Function WBP_MachineCustom_Sub_CustomPaint_Glow.WBP_MachineCustom_Sub_CustomPaint_Glow_C.Setup
 // 0x0060 (0x0060 - 0x0000)
@@ -82,13 +67,7 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                K2Node_Select_Default;                             // 0x0058(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomPaint_Glow_C_Setup) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CustomPaint_Glow_C_Setup");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomPaint_Glow_C_Setup) == 0x000060, "Wrong size on WBP_MachineCustom_Sub_CustomPaint_Glow_C_Setup");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Glow_C_Setup, InPlayerController) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomPaint_Glow_C_Setup::InPlayerController' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Glow_C_Setup, InItemData) == 0x000008, "Member 'WBP_MachineCustom_Sub_CustomPaint_Glow_C_Setup::InItemData' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Glow_C_Setup, Temp_bool_Variable) == 0x000048, "Member 'WBP_MachineCustom_Sub_CustomPaint_Glow_C_Setup::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Glow_C_Setup, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000050, "Member 'WBP_MachineCustom_Sub_CustomPaint_Glow_C_Setup::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Glow_C_Setup, K2Node_Select_Default) == 0x000058, "Member 'WBP_MachineCustom_Sub_CustomPaint_Glow_C_Setup::K2Node_Select_Default' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomPaint_Glow_C_Setup;
 
 // Function WBP_MachineCustom_Sub_CustomPaint_Glow.WBP_MachineCustom_Sub_CustomPaint_Glow_C.GetItemData
 // 0x0040 (0x0040 - 0x0000)
@@ -97,9 +76,7 @@ struct WBP_MachineCustom_Sub_CustomPaint_Glow_C_GetItemData final
 public:
 	struct FMachineColorAreaUIData                OutUIData;                                         // 0x0000(0x0040)(Parm, OutParm)
 };
-static_assert(alignof(WBP_MachineCustom_Sub_CustomPaint_Glow_C_GetItemData) == 0x000008, "Wrong alignment on WBP_MachineCustom_Sub_CustomPaint_Glow_C_GetItemData");
-static_assert(sizeof(WBP_MachineCustom_Sub_CustomPaint_Glow_C_GetItemData) == 0x000040, "Wrong size on WBP_MachineCustom_Sub_CustomPaint_Glow_C_GetItemData");
-static_assert(offsetof(WBP_MachineCustom_Sub_CustomPaint_Glow_C_GetItemData, OutUIData) == 0x000000, "Member 'WBP_MachineCustom_Sub_CustomPaint_Glow_C_GetItemData::OutUIData' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MachineCustom_Sub_CustomPaint_Glow_C_GetItemData;
 
 }
 

@@ -182,6 +182,48 @@ void UBPC_NoticeEventEnd_C::NoReward()
 }
 
 
+// Function BPC_NoticeEventEnd.BPC_NoticeEventEnd_C.SaveStart
+// (BlueprintCallable, BlueprintEvent)
+
+void UBPC_NoticeEventEnd_C::SaveStart()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_NoticeEventEnd_C", "SaveStart");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BPC_NoticeEventEnd.BPC_NoticeEventEnd_C.FinishNoticeEventEnd
+// (BlueprintCallable, BlueprintEvent)
+
+void UBPC_NoticeEventEnd_C::FinishNoticeEventEnd()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_NoticeEventEnd_C", "FinishNoticeEventEnd");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BPC_NoticeEventEnd.BPC_NoticeEventEnd_C.ShowDonpaTicketDiff
+// (BlueprintCallable, BlueprintEvent)
+
+void UBPC_NoticeEventEnd_C::ShowDonpaTicketDiff()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_NoticeEventEnd_C", "ShowDonpaTicketDiff");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BPC_NoticeEventEnd.BPC_NoticeEventEnd_C.ExecuteUbergraph_BPC_NoticeEventEnd
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:

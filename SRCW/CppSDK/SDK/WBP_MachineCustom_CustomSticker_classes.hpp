@@ -45,26 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MachineCustom_CustomSticker_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MachineCustom_CustomSticker_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MachineCustom_CustomSticker_C")
 	}
 	static class UWBP_MachineCustom_CustomSticker_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MachineCustom_CustomSticker_C>();
 	}
 };
-static_assert(alignof(UWBP_MachineCustom_CustomSticker_C) == 0x000008, "Wrong alignment on UWBP_MachineCustom_CustomSticker_C");
-static_assert(sizeof(UWBP_MachineCustom_CustomSticker_C) == 0x000338, "Wrong size on UWBP_MachineCustom_CustomSticker_C");
-static_assert(offsetof(UWBP_MachineCustom_CustomSticker_C, Out) == 0x0002E0, "Member 'UWBP_MachineCustom_CustomSticker_C::Out' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_CustomSticker_C, Loop) == 0x0002E8, "Member 'UWBP_MachineCustom_CustomSticker_C::Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_CustomSticker_C, In) == 0x0002F0, "Member 'UWBP_MachineCustom_CustomSticker_C::In' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_CustomSticker_C, BoxLine) == 0x0002F8, "Member 'UWBP_MachineCustom_CustomSticker_C::BoxLine' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_CustomSticker_C, Panel) == 0x000300, "Member 'UWBP_MachineCustom_CustomSticker_C::Panel' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_CustomSticker_C, SafeZone_MachineCustom) == 0x000308, "Member 'UWBP_MachineCustom_CustomSticker_C::SafeZone_MachineCustom' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_CustomSticker_C, WBP_MachineCustom_Sub_ColorPicker) == 0x000310, "Member 'UWBP_MachineCustom_CustomSticker_C::WBP_MachineCustom_Sub_ColorPicker' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_CustomSticker_C, WBP_MachineCustom_Sub_CustomSticker_OperationGuide) == 0x000318, "Member 'UWBP_MachineCustom_CustomSticker_C::WBP_MachineCustom_Sub_CustomSticker_OperationGuide' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_CustomSticker_C, WBP_MachineCustom_Sub_StickerColorPicker) == 0x000320, "Member 'UWBP_MachineCustom_CustomSticker_C::WBP_MachineCustom_Sub_StickerColorPicker' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_CustomSticker_C, WBP_MachineCustom_Sub_StickerRangeInfo) == 0x000328, "Member 'UWBP_MachineCustom_CustomSticker_C::WBP_MachineCustom_Sub_StickerRangeInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_CustomSticker_C, IsColorPickerOpen) == 0x000330, "Member 'UWBP_MachineCustom_CustomSticker_C::IsColorPickerOpen' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MachineCustom_CustomSticker_C;
 
 }
 

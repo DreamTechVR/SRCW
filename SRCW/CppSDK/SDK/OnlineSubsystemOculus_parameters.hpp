@@ -24,11 +24,7 @@ public:
 	class FString                                 OculusMatchmakingPool;                             // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UOculusCreateSessionCallbackProxy*      ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OculusCreateSessionCallbackProxy_CreateSession) == 0x000008, "Wrong alignment on OculusCreateSessionCallbackProxy_CreateSession");
-static_assert(sizeof(OculusCreateSessionCallbackProxy_CreateSession) == 0x000020, "Wrong size on OculusCreateSessionCallbackProxy_CreateSession");
-static_assert(offsetof(OculusCreateSessionCallbackProxy_CreateSession, PublicConnections) == 0x000000, "Member 'OculusCreateSessionCallbackProxy_CreateSession::PublicConnections' has a wrong offset!");
-static_assert(offsetof(OculusCreateSessionCallbackProxy_CreateSession, OculusMatchmakingPool) == 0x000008, "Member 'OculusCreateSessionCallbackProxy_CreateSession::OculusMatchmakingPool' has a wrong offset!");
-static_assert(offsetof(OculusCreateSessionCallbackProxy_CreateSession, ReturnValue) == 0x000018, "Member 'OculusCreateSessionCallbackProxy_CreateSession::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OculusCreateSessionCallbackProxy_CreateSession;
 
 // Function OnlineSubsystemOculus.OculusEntitlementCallbackProxy.VerifyEntitlement
 // 0x0008 (0x0008 - 0x0000)
@@ -37,9 +33,7 @@ struct OculusEntitlementCallbackProxy_VerifyEntitlement final
 public:
 	class UOculusEntitlementCallbackProxy*        ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OculusEntitlementCallbackProxy_VerifyEntitlement) == 0x000008, "Wrong alignment on OculusEntitlementCallbackProxy_VerifyEntitlement");
-static_assert(sizeof(OculusEntitlementCallbackProxy_VerifyEntitlement) == 0x000008, "Wrong size on OculusEntitlementCallbackProxy_VerifyEntitlement");
-static_assert(offsetof(OculusEntitlementCallbackProxy_VerifyEntitlement, ReturnValue) == 0x000000, "Member 'OculusEntitlementCallbackProxy_VerifyEntitlement::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OculusEntitlementCallbackProxy_VerifyEntitlement;
 
 // Function OnlineSubsystemOculus.OculusFindSessionsCallbackProxy.FindMatchmakingSessions
 // 0x0020 (0x0020 - 0x0000)
@@ -51,11 +45,7 @@ public:
 	class FString                                 OculusMatchmakingPool;                             // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UOculusFindSessionsCallbackProxy*       ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OculusFindSessionsCallbackProxy_FindMatchmakingSessions) == 0x000008, "Wrong alignment on OculusFindSessionsCallbackProxy_FindMatchmakingSessions");
-static_assert(sizeof(OculusFindSessionsCallbackProxy_FindMatchmakingSessions) == 0x000020, "Wrong size on OculusFindSessionsCallbackProxy_FindMatchmakingSessions");
-static_assert(offsetof(OculusFindSessionsCallbackProxy_FindMatchmakingSessions, MaxResults) == 0x000000, "Member 'OculusFindSessionsCallbackProxy_FindMatchmakingSessions::MaxResults' has a wrong offset!");
-static_assert(offsetof(OculusFindSessionsCallbackProxy_FindMatchmakingSessions, OculusMatchmakingPool) == 0x000008, "Member 'OculusFindSessionsCallbackProxy_FindMatchmakingSessions::OculusMatchmakingPool' has a wrong offset!");
-static_assert(offsetof(OculusFindSessionsCallbackProxy_FindMatchmakingSessions, ReturnValue) == 0x000018, "Member 'OculusFindSessionsCallbackProxy_FindMatchmakingSessions::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OculusFindSessionsCallbackProxy_FindMatchmakingSessions;
 
 // Function OnlineSubsystemOculus.OculusFindSessionsCallbackProxy.FindModeratedSessions
 // 0x0010 (0x0010 - 0x0000)
@@ -66,10 +56,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UOculusFindSessionsCallbackProxy*       ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OculusFindSessionsCallbackProxy_FindModeratedSessions) == 0x000008, "Wrong alignment on OculusFindSessionsCallbackProxy_FindModeratedSessions");
-static_assert(sizeof(OculusFindSessionsCallbackProxy_FindModeratedSessions) == 0x000010, "Wrong size on OculusFindSessionsCallbackProxy_FindModeratedSessions");
-static_assert(offsetof(OculusFindSessionsCallbackProxy_FindModeratedSessions, MaxResults) == 0x000000, "Member 'OculusFindSessionsCallbackProxy_FindModeratedSessions::MaxResults' has a wrong offset!");
-static_assert(offsetof(OculusFindSessionsCallbackProxy_FindModeratedSessions, ReturnValue) == 0x000008, "Member 'OculusFindSessionsCallbackProxy_FindModeratedSessions::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OculusFindSessionsCallbackProxy_FindModeratedSessions;
 
 // Function OnlineSubsystemOculus.OculusIdentityCallbackProxy.GetOculusIdentity
 // 0x0010 (0x0010 - 0x0000)
@@ -80,10 +67,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UOculusIdentityCallbackProxy*           ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OculusIdentityCallbackProxy_GetOculusIdentity) == 0x000008, "Wrong alignment on OculusIdentityCallbackProxy_GetOculusIdentity");
-static_assert(sizeof(OculusIdentityCallbackProxy_GetOculusIdentity) == 0x000010, "Wrong size on OculusIdentityCallbackProxy_GetOculusIdentity");
-static_assert(offsetof(OculusIdentityCallbackProxy_GetOculusIdentity, LocalUserNum) == 0x000000, "Member 'OculusIdentityCallbackProxy_GetOculusIdentity::LocalUserNum' has a wrong offset!");
-static_assert(offsetof(OculusIdentityCallbackProxy_GetOculusIdentity, ReturnValue) == 0x000008, "Member 'OculusIdentityCallbackProxy_GetOculusIdentity::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OculusIdentityCallbackProxy_GetOculusIdentity;
 
 // Function OnlineSubsystemOculus.OculusUpdateSessionCallbackProxy.SetSessionEnqueue
 // 0x0010 (0x0010 - 0x0000)
@@ -94,10 +78,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UOculusUpdateSessionCallbackProxy*      ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OculusUpdateSessionCallbackProxy_SetSessionEnqueue) == 0x000008, "Wrong alignment on OculusUpdateSessionCallbackProxy_SetSessionEnqueue");
-static_assert(sizeof(OculusUpdateSessionCallbackProxy_SetSessionEnqueue) == 0x000010, "Wrong size on OculusUpdateSessionCallbackProxy_SetSessionEnqueue");
-static_assert(offsetof(OculusUpdateSessionCallbackProxy_SetSessionEnqueue, bShouldEnqueueInMatchmakingPool) == 0x000000, "Member 'OculusUpdateSessionCallbackProxy_SetSessionEnqueue::bShouldEnqueueInMatchmakingPool' has a wrong offset!");
-static_assert(offsetof(OculusUpdateSessionCallbackProxy_SetSessionEnqueue, ReturnValue) == 0x000008, "Member 'OculusUpdateSessionCallbackProxy_SetSessionEnqueue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OculusUpdateSessionCallbackProxy_SetSessionEnqueue;
 
 }
 

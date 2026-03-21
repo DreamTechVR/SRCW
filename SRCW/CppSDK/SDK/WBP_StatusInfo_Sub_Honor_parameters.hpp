@@ -44,25 +44,7 @@ public:
 	class FText                                   K2Node_Select_Default;                             // 0x00E0(0x0010)()
 	class UWBP_StatusInfo_Sub_HonorTable_01_C*    K2Node_Select_Default_1;                           // 0x00F0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_Sub_Honor_C_SetupRankingReward) == 0x000008, "Wrong alignment on WBP_StatusInfo_Sub_Honor_C_SetupRankingReward");
-static_assert(sizeof(WBP_StatusInfo_Sub_Honor_C_SetupRankingReward) == 0x0000F8, "Wrong size on WBP_StatusInfo_Sub_Honor_C_SetupRankingReward");
-static_assert(offsetof(WBP_StatusInfo_Sub_Honor_C_SetupRankingReward, Index_0) == 0x000000, "Member 'WBP_StatusInfo_Sub_Honor_C_SetupRankingReward::Index_0' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Honor_C_SetupRankingReward, HonorId) == 0x000004, "Member 'WBP_StatusInfo_Sub_Honor_C_SetupRankingReward::HonorId' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Honor_C_SetupRankingReward, BottomRank) == 0x000008, "Member 'WBP_StatusInfo_Sub_Honor_C_SetupRankingReward::BottomRank' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Honor_C_SetupRankingReward, TargetWidget) == 0x000010, "Member 'WBP_StatusInfo_Sub_Honor_C_SetupRankingReward::TargetWidget' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Honor_C_SetupRankingReward, Temp_int_Variable) == 0x000018, "Member 'WBP_StatusInfo_Sub_Honor_C_SetupRankingReward::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Honor_C_SetupRankingReward, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000020, "Member 'WBP_StatusInfo_Sub_Honor_C_SetupRankingReward::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Honor_C_SetupRankingReward, CallFunc_IsReleasedReward_ReturnValue) == 0x000028, "Member 'WBP_StatusInfo_Sub_Honor_C_SetupRankingReward::CallFunc_IsReleasedReward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Honor_C_SetupRankingReward, K2Node_MakeStruct_FormatArgumentData) == 0x000030, "Member 'WBP_StatusInfo_Sub_Honor_C_SetupRankingReward::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Honor_C_SetupRankingReward, Temp_text_Variable) == 0x000078, "Member 'WBP_StatusInfo_Sub_Honor_C_SetupRankingReward::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Honor_C_SetupRankingReward, K2Node_MakeArray_Array) == 0x000088, "Member 'WBP_StatusInfo_Sub_Honor_C_SetupRankingReward::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Honor_C_SetupRankingReward, Temp_text_Variable_1) == 0x000098, "Member 'WBP_StatusInfo_Sub_Honor_C_SetupRankingReward::Temp_text_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Honor_C_SetupRankingReward, Temp_text_Variable_2) == 0x0000A8, "Member 'WBP_StatusInfo_Sub_Honor_C_SetupRankingReward::Temp_text_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Honor_C_SetupRankingReward, Temp_int_Variable_1) == 0x0000B8, "Member 'WBP_StatusInfo_Sub_Honor_C_SetupRankingReward::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Honor_C_SetupRankingReward, CallFunc_MakeLiteralText_ReturnValue) == 0x0000C0, "Member 'WBP_StatusInfo_Sub_Honor_C_SetupRankingReward::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Honor_C_SetupRankingReward, CallFunc_Format_ReturnValue) == 0x0000D0, "Member 'WBP_StatusInfo_Sub_Honor_C_SetupRankingReward::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Honor_C_SetupRankingReward, K2Node_Select_Default) == 0x0000E0, "Member 'WBP_StatusInfo_Sub_Honor_C_SetupRankingReward::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Honor_C_SetupRankingReward, K2Node_Select_Default_1) == 0x0000F0, "Member 'WBP_StatusInfo_Sub_Honor_C_SetupRankingReward::K2Node_Select_Default_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_Sub_Honor_C_SetupRankingReward;
 
 // Function WBP_StatusInfo_Sub_Honor.WBP_StatusInfo_Sub_Honor_C.SetupStreakReward
 // 0x000C (0x000C - 0x0000)
@@ -72,10 +54,7 @@ public:
 	struct FFestaStreakRewardUIData               RewardData;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	bool                                          CallFunc_IsReleasedReward_ReturnValue;             // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_StatusInfo_Sub_Honor_C_SetupStreakReward) == 0x000004, "Wrong alignment on WBP_StatusInfo_Sub_Honor_C_SetupStreakReward");
-static_assert(sizeof(WBP_StatusInfo_Sub_Honor_C_SetupStreakReward) == 0x00000C, "Wrong size on WBP_StatusInfo_Sub_Honor_C_SetupStreakReward");
-static_assert(offsetof(WBP_StatusInfo_Sub_Honor_C_SetupStreakReward, RewardData) == 0x000000, "Member 'WBP_StatusInfo_Sub_Honor_C_SetupStreakReward::RewardData' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_Honor_C_SetupStreakReward, CallFunc_IsReleasedReward_ReturnValue) == 0x000008, "Member 'WBP_StatusInfo_Sub_Honor_C_SetupStreakReward::CallFunc_IsReleasedReward_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_StatusInfo_Sub_Honor_C_SetupStreakReward;
 
 }
 

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -39,21 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_FooterShortCut_C">();
+		BP_STATIC_CLASS_IMPL("WBP_FooterShortCut_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_FooterShortCut_C")
 	}
 	static class UWBP_FooterShortCut_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_FooterShortCut_C>();
 	}
 };
-static_assert(alignof(UWBP_FooterShortCut_C) == 0x000008, "Wrong alignment on UWBP_FooterShortCut_C");
-static_assert(sizeof(UWBP_FooterShortCut_C) == 0x000320, "Wrong size on UWBP_FooterShortCut_C");
-static_assert(offsetof(UWBP_FooterShortCut_C, UberGraphFrame) == 0x0002E8, "Member 'UWBP_FooterShortCut_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_FooterShortCut_C, FooterMenu_Out) == 0x0002F0, "Member 'UWBP_FooterShortCut_C::FooterMenu_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_FooterShortCut_C, FooterMenu_Loop) == 0x0002F8, "Member 'UWBP_FooterShortCut_C::FooterMenu_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_FooterShortCut_C, FooterMenu_In) == 0x000300, "Member 'UWBP_FooterShortCut_C::FooterMenu_In' has a wrong offset!");
-static_assert(offsetof(UWBP_FooterShortCut_C, MouseInteraction) == 0x000308, "Member 'UWBP_FooterShortCut_C::MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_FooterShortCut_C, OnClicked) == 0x000310, "Member 'UWBP_FooterShortCut_C::OnClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_FooterShortCut_C;
 
 }
 

@@ -58,5 +58,25 @@ void UWBP_ResultLegend_Sub_NUM_C::SetRateOnce(int32 InRate, class UImage* InRate
 	UObject::ProcessEvent(Func, &Parms);
 }
 
+
+// Function WBP_ResultLegend_Sub_NUM.WBP_ResultLegend_Sub_NUM_C.SetRateVisibilityForBackground
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   InRate                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ResultLegend_Sub_NUM_C::SetRateVisibilityForBackground(int32 InRate)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResultLegend_Sub_NUM_C", "SetRateVisibilityForBackground");
+
+	Params::WBP_ResultLegend_Sub_NUM_C_SetRateVisibilityForBackground Parms{};
+
+	Parms.InRate = InRate;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
 }
 

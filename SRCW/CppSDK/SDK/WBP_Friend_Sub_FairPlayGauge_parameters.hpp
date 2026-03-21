@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
@@ -42,24 +42,7 @@ public:
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00FC(0x0014)()
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge) == 0x000008, "Wrong alignment on WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge");
-static_assert(sizeof(WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge) == 0x000118, "Wrong size on WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge");
-static_assert(offsetof(WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge, EntryPoint) == 0x000000, "Member 'WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge, Temp_int_Variable) == 0x000004, "Member 'WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge, K2Node_CustomEvent_InPoint) == 0x000008, "Member 'WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge::K2Node_CustomEvent_InPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000010, "Member 'WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge, CallFunc_Get_Point_Color_Index_OutColorIndex) == 0x000018, "Member 'WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge::CallFunc_Get_Point_Color_Index_OutColorIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge, K2Node_MakeStruct_FormatArgumentData) == 0x000020, "Member 'WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000068, "Member 'WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge, CallFunc_MapRangeClamped_ReturnValue) == 0x000070, "Member 'WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge::CallFunc_MapRangeClamped_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge, K2Node_MakeStruct_FormatArgumentData_1) == 0x000078, "Member 'WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge, K2Node_MakeArray_Array) == 0x0000C0, "Member 'WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge, CallFunc_GetDynamicMaterial_ReturnValue) == 0x0000D0, "Member 'WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge, CallFunc_Format_ReturnValue) == 0x0000D8, "Member 'WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge, K2Node_CustomEvent_InColorIndex) == 0x0000E8, "Member 'WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge::K2Node_CustomEvent_InColorIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge, K2Node_Select_Default) == 0x0000EC, "Member 'WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge, K2Node_MakeStruct_SlateColor) == 0x0000FC, "Member 'WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000110, "Member 'WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_Sub_FairPlayGauge_C_ExecuteUbergraph_WBP_Friend_Sub_FairPlayGauge;
 
 // Function WBP_Friend_Sub_FairPlayGauge.WBP_Friend_Sub_FairPlayGauge_C.Get Point Color Index
 // 0x0030 (0x0030 - 0x0000)
@@ -83,22 +66,7 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_FairPlayGauge_C_Get_Point_Color_Index) == 0x000004, "Wrong alignment on WBP_Friend_Sub_FairPlayGauge_C_Get_Point_Color_Index");
-static_assert(sizeof(WBP_Friend_Sub_FairPlayGauge_C_Get_Point_Color_Index) == 0x000030, "Wrong size on WBP_Friend_Sub_FairPlayGauge_C_Get_Point_Color_Index");
-static_assert(offsetof(WBP_Friend_Sub_FairPlayGauge_C_Get_Point_Color_Index, InFairPlayPoint) == 0x000000, "Member 'WBP_Friend_Sub_FairPlayGauge_C_Get_Point_Color_Index::InFairPlayPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_FairPlayGauge_C_Get_Point_Color_Index, OutColorIndex) == 0x000004, "Member 'WBP_Friend_Sub_FairPlayGauge_C_Get_Point_Color_Index::OutColorIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_FairPlayGauge_C_Get_Point_Color_Index, LocalIndex) == 0x000008, "Member 'WBP_Friend_Sub_FairPlayGauge_C_Get_Point_Color_Index::LocalIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_FairPlayGauge_C_Get_Point_Color_Index, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'WBP_Friend_Sub_FairPlayGauge_C_Get_Point_Color_Index::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_FairPlayGauge_C_Get_Point_Color_Index, Temp_int_Loop_Counter_Variable) == 0x000010, "Member 'WBP_Friend_Sub_FairPlayGauge_C_Get_Point_Color_Index::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_FairPlayGauge_C_Get_Point_Color_Index, CallFunc_Add_IntInt_ReturnValue) == 0x000014, "Member 'WBP_Friend_Sub_FairPlayGauge_C_Get_Point_Color_Index::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_FairPlayGauge_C_Get_Point_Color_Index, Temp_bool_True_if_break_was_hit_Variable) == 0x000018, "Member 'WBP_Friend_Sub_FairPlayGauge_C_Get_Point_Color_Index::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_FairPlayGauge_C_Get_Point_Color_Index, CallFunc_Not_PreBool_ReturnValue) == 0x000019, "Member 'WBP_Friend_Sub_FairPlayGauge_C_Get_Point_Color_Index::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_FairPlayGauge_C_Get_Point_Color_Index, CallFunc_Array_Length_ReturnValue) == 0x00001C, "Member 'WBP_Friend_Sub_FairPlayGauge_C_Get_Point_Color_Index::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_FairPlayGauge_C_Get_Point_Color_Index, CallFunc_Array_Get_Item) == 0x000020, "Member 'WBP_Friend_Sub_FairPlayGauge_C_Get_Point_Color_Index::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_FairPlayGauge_C_Get_Point_Color_Index, CallFunc_Less_IntInt_ReturnValue) == 0x000024, "Member 'WBP_Friend_Sub_FairPlayGauge_C_Get_Point_Color_Index::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_FairPlayGauge_C_Get_Point_Color_Index, CallFunc_Array_Length_ReturnValue_1) == 0x000028, "Member 'WBP_Friend_Sub_FairPlayGauge_C_Get_Point_Color_Index::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_FairPlayGauge_C_Get_Point_Color_Index, CallFunc_Less_IntInt_ReturnValue_1) == 0x00002C, "Member 'WBP_Friend_Sub_FairPlayGauge_C_Get_Point_Color_Index::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_FairPlayGauge_C_Get_Point_Color_Index, CallFunc_BooleanAND_ReturnValue) == 0x00002D, "Member 'WBP_Friend_Sub_FairPlayGauge_C_Get_Point_Color_Index::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_Sub_FairPlayGauge_C_Get_Point_Color_Index;
 
 // Function WBP_Friend_Sub_FairPlayGauge.WBP_Friend_Sub_FairPlayGauge_C.SetGaugeColor
 // 0x0004 (0x0004 - 0x0000)
@@ -107,9 +75,7 @@ struct WBP_Friend_Sub_FairPlayGauge_C_SetGaugeColor final
 public:
 	int32                                         InColorIndex;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_FairPlayGauge_C_SetGaugeColor) == 0x000004, "Wrong alignment on WBP_Friend_Sub_FairPlayGauge_C_SetGaugeColor");
-static_assert(sizeof(WBP_Friend_Sub_FairPlayGauge_C_SetGaugeColor) == 0x000004, "Wrong size on WBP_Friend_Sub_FairPlayGauge_C_SetGaugeColor");
-static_assert(offsetof(WBP_Friend_Sub_FairPlayGauge_C_SetGaugeColor, InColorIndex) == 0x000000, "Member 'WBP_Friend_Sub_FairPlayGauge_C_SetGaugeColor::InColorIndex' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_Sub_FairPlayGauge_C_SetGaugeColor;
 
 // Function WBP_Friend_Sub_FairPlayGauge.WBP_Friend_Sub_FairPlayGauge_C.Setup
 // 0x0004 (0x0004 - 0x0000)
@@ -118,9 +84,7 @@ struct WBP_Friend_Sub_FairPlayGauge_C_Setup final
 public:
 	int32                                         InPoint;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_FairPlayGauge_C_Setup) == 0x000004, "Wrong alignment on WBP_Friend_Sub_FairPlayGauge_C_Setup");
-static_assert(sizeof(WBP_Friend_Sub_FairPlayGauge_C_Setup) == 0x000004, "Wrong size on WBP_Friend_Sub_FairPlayGauge_C_Setup");
-static_assert(offsetof(WBP_Friend_Sub_FairPlayGauge_C_Setup, InPoint) == 0x000000, "Member 'WBP_Friend_Sub_FairPlayGauge_C_Setup::InPoint' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Friend_Sub_FairPlayGauge_C_Setup;
 
 }
 

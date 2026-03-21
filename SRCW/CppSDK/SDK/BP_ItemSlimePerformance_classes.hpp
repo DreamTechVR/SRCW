@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ItemSlimePerformance_C">();
+		BP_STATIC_CLASS_IMPL("BP_ItemSlimePerformance_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ItemSlimePerformance_C")
 	}
 	static class ABP_ItemSlimePerformance_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ItemSlimePerformance_C>();
 	}
 };
-static_assert(alignof(ABP_ItemSlimePerformance_C) == 0x000008, "Wrong alignment on ABP_ItemSlimePerformance_C");
-static_assert(sizeof(ABP_ItemSlimePerformance_C) == 0x000548, "Wrong size on ABP_ItemSlimePerformance_C");
-static_assert(offsetof(ABP_ItemSlimePerformance_C, DebugCar) == 0x000540, "Member 'ABP_ItemSlimePerformance_C::DebugCar' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_ItemSlimePerformance_C;
 
 }
 

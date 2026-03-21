@@ -40,22 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Ready_Sub_StandByText_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Ready_Sub_StandByText_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Ready_Sub_StandByText_C")
 	}
 	static class UWBP_Ready_Sub_StandByText_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Ready_Sub_StandByText_C>();
 	}
 };
-static_assert(alignof(UWBP_Ready_Sub_StandByText_C) == 0x000008, "Wrong alignment on UWBP_Ready_Sub_StandByText_C");
-static_assert(sizeof(UWBP_Ready_Sub_StandByText_C) == 0x000320, "Wrong size on UWBP_Ready_Sub_StandByText_C");
-static_assert(offsetof(UWBP_Ready_Sub_StandByText_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Ready_Sub_StandByText_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_StandByText_C, HorizontalBox_Ready) == 0x0002E8, "Member 'UWBP_Ready_Sub_StandByText_C::HorizontalBox_Ready' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_StandByText_C, TXT_Ready) == 0x0002F0, "Member 'UWBP_Ready_Sub_StandByText_C::TXT_Ready' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_StandByText_C, degree) == 0x0002F8, "Member 'UWBP_Ready_Sub_StandByText_C::degree' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_StandByText_C, isWave) == 0x000300, "Member 'UWBP_Ready_Sub_StandByText_C::isWave' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_StandByText_C, TextBlokArray) == 0x000308, "Member 'UWBP_Ready_Sub_StandByText_C::TextBlokArray' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_StandByText_C, Speed) == 0x000318, "Member 'UWBP_Ready_Sub_StandByText_C::Speed' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Ready_Sub_StandByText_C;
 
 }
 

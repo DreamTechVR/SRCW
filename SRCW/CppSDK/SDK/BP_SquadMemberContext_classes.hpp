@@ -23,15 +23,18 @@ class UBP_SquadMemberContext_C final : public USquadMemberContext
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_SquadMemberContext_C">();
+		BP_STATIC_CLASS_IMPL("BP_SquadMemberContext_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_SquadMemberContext_C")
 	}
 	static class UBP_SquadMemberContext_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_SquadMemberContext_C>();
 	}
 };
-static_assert(alignof(UBP_SquadMemberContext_C) == 0x000008, "Wrong alignment on UBP_SquadMemberContext_C");
-static_assert(sizeof(UBP_SquadMemberContext_C) == 0x0000F0, "Wrong size on UBP_SquadMemberContext_C");
+DUMPER7_ASSERTS_UBP_SquadMemberContext_C;
 
 }
 

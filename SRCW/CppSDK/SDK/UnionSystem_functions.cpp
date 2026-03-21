@@ -153,38 +153,21 @@ void UAppControllerInputManager::SetTickable(bool bTickable)
 }
 
 
-// Function UnionSystem.AppSequenceLogManagerSubsystem.BackupSequenceType
-// (Final, Native, Public, BlueprintCallable)
-
-void UAppSequenceLogManagerSubsystem::BackupSequenceType()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppSequenceLogManagerSubsystem", "BackupSequenceType");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.AppSequenceLogManagerSubsystem.GetBackupSequenceMainType
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Function UnionSystem.AppTimeSubsystem.AddNamedDateTimeNow
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// ESequenceMainType                       ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FName&                      InTimeName                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-ESequenceMainType UAppSequenceLogManagerSubsystem::GetBackupSequenceMainType()
+void UAppTimeSubsystem::AddNamedDateTimeNow(const class FName& InTimeName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AppSequenceLogManagerSubsystem", "GetBackupSequenceMainType");
+		Func = Class->GetFunction("AppTimeSubsystem", "AddNamedDateTimeNow");
 
-	Params::AppSequenceLogManagerSubsystem_GetBackupSequenceMainType Parms{};
+	Params::AppTimeSubsystem_AddNamedDateTimeNow Parms{};
+
+	Parms.InTimeName = InTimeName;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -192,24 +175,60 @@ ESequenceMainType UAppSequenceLogManagerSubsystem::GetBackupSequenceMainType()
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.AppTimeSubsystem.GetTimeSpanMillisecondsByNamedDateTimes
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const class FName&                      InBeginTimeName                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FName&                      InEndTimeName                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32*                                  OutTimeSpan                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAppTimeSubsystem::GetTimeSpanMillisecondsByNamedDateTimes(const class FName& InBeginTimeName, const class FName& InEndTimeName, int32* OutTimeSpan)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AppTimeSubsystem", "GetTimeSpanMillisecondsByNamedDateTimes");
+
+	Params::AppTimeSubsystem_GetTimeSpanMillisecondsByNamedDateTimes Parms{};
+
+	Parms.InBeginTimeName = InBeginTimeName;
+	Parms.InEndTimeName = InEndTimeName;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutTimeSpan != nullptr)
+		*OutTimeSpan = Parms.OutTimeSpan;
 
 	return Parms.ReturnValue;
 }
 
 
-// Function UnionSystem.AppSequenceLogManagerSubsystem.GetBackupSequenceSubType
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Function UnionSystem.AppTimeSubsystem.LogTimeSpanMillisecondsByNamedDateTimes
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// ESequenceSubType                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FName&                      InBeginTimeName                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FName&                      InEndTimeName                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-ESequenceSubType UAppSequenceLogManagerSubsystem::GetBackupSequenceSubType()
+void UAppTimeSubsystem::LogTimeSpanMillisecondsByNamedDateTimes(const class FName& InBeginTimeName, const class FName& InEndTimeName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AppSequenceLogManagerSubsystem", "GetBackupSequenceSubType");
+		Func = Class->GetFunction("AppTimeSubsystem", "LogTimeSpanMillisecondsByNamedDateTimes");
 
-	Params::AppSequenceLogManagerSubsystem_GetBackupSequenceSubType Parms{};
+	Params::AppTimeSubsystem_LogTimeSpanMillisecondsByNamedDateTimes Parms{};
+
+	Parms.InBeginTimeName = InBeginTimeName;
+	Parms.InEndTimeName = InEndTimeName;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -217,135 +236,6 @@ ESequenceSubType UAppSequenceLogManagerSubsystem::GetBackupSequenceSubType()
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.AppSequenceLogManagerSubsystem.GetSequenceMainType
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// ESequenceMainType                       ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-ESequenceMainType UAppSequenceLogManagerSubsystem::GetSequenceMainType()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppSequenceLogManagerSubsystem", "GetSequenceMainType");
-
-	Params::AppSequenceLogManagerSubsystem_GetSequenceMainType Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.AppSequenceLogManagerSubsystem.GetSequenceSubType
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// ESequenceSubType                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-ESequenceSubType UAppSequenceLogManagerSubsystem::GetSequenceSubType()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppSequenceLogManagerSubsystem", "GetSequenceSubType");
-
-	Params::AppSequenceLogManagerSubsystem_GetSequenceSubType Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.AppSequenceLogManagerSubsystem.SetSequenceSubType
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// ESequenceSubType                        SubType                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAppSequenceLogManagerSubsystem::SetSequenceSubType(ESequenceSubType SubType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppSequenceLogManagerSubsystem", "SetSequenceSubType");
-
-	Params::AppSequenceLogManagerSubsystem_SetSequenceSubType Parms{};
-
-	Parms.SubType = SubType;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.AppSequenceLogManagerSubsystem.SetSequenceType
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// ESequenceMainType                       MainType                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// ESequenceSubType                        SubType                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAppSequenceLogManagerSubsystem::SetSequenceType(ESequenceMainType MainType, ESequenceSubType SubType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppSequenceLogManagerSubsystem", "SetSequenceType");
-
-	Params::AppSequenceLogManagerSubsystem_SetSequenceType Parms{};
-
-	Parms.MainType = MainType;
-	Parms.SubType = SubType;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.AppSequenceLogManagerSubsystem.GetSequenceTypeNum
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UAppSequenceLogManagerSubsystem::GetSequenceTypeNum() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppSequenceLogManagerSubsystem", "GetSequenceTypeNum");
-
-	Params::AppSequenceLogManagerSubsystem_GetSequenceTypeNum Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
@@ -1226,23 +1116,26 @@ class UObject* UAppFunctionLibrary::TryLoadAsset(const class FString& AssetPath)
 }
 
 
-// Function UnionSystem.ChallengeStatsUtility.AddChallengeStats
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function UnionSystem.CollectHelper.CollectBytesData
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// EChallengeId                            InChallengeId                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   InValue                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Name_0                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Suffix                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TArray<uint8>&                    Data                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UChallengeStatsUtility::AddChallengeStats(EChallengeId InChallengeId, int32 InValue)
+class FString UCollectHelper::CollectBytesData(const class FString& Name_0, const class FString& Suffix, const TArray<uint8>& Data)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "AddChallengeStats");
+		Func = StaticClass()->GetFunction("CollectHelper", "CollectBytesData");
 
-	Params::ChallengeStatsUtility_AddChallengeStats Parms{};
+	Params::CollectHelper_CollectBytesData Parms{};
 
-	Parms.InChallengeId = InChallengeId;
-	Parms.InValue = InValue;
+	Parms.Name_0 = std::move(Name_0);
+	Parms.Suffix = std::move(Suffix);
+	Parms.Data = std::move(Data);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1250,69 +1143,24 @@ void UChallengeStatsUtility::AddChallengeStats(EChallengeId InChallengeId, int32
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
-// Function UnionSystem.ChallengeStatsUtility.ChallengeProgressUpdateCategory
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// const EChallengeCategory                InCategory                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UChallengeStatsUtility::ChallengeProgressUpdateCategory(const EChallengeCategory InCategory)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "ChallengeProgressUpdateCategory");
-
-	Params::ChallengeStatsUtility_ChallengeProgressUpdateCategory Parms{};
-
-	Parms.InCategory = InCategory;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.ChallengeStatsUtility.CheckAllChallengeStats
-// (Final, Native, Static, Public, BlueprintCallable)
-
-void UChallengeStatsUtility::CheckAllChallengeStats()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "CheckAllChallengeStats");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.ChallengeStatsUtility.GetCategoryChallenge
+// Function UnionSystem.CollectHelper.CollectCacheDirectory
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// const EChallengeCategory                InCategory                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<EChallengeId>                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-TArray<EChallengeId> UChallengeStatsUtility::GetCategoryChallenge(const EChallengeCategory InCategory)
+class FString UCollectHelper::CollectCacheDirectory()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "GetCategoryChallenge");
+		Func = StaticClass()->GetFunction("CollectHelper", "CollectCacheDirectory");
 
-	Params::ChallengeStatsUtility_GetCategoryChallenge Parms{};
-
-	Parms.InCategory = InCategory;
+	Params::CollectHelper_CollectCacheDirectory Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1325,106 +1173,19 @@ TArray<EChallengeId> UChallengeStatsUtility::GetCategoryChallenge(const EChallen
 }
 
 
-// Function UnionSystem.ChallengeStatsUtility.GetCategoryChallengeData
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// const EChallengeCategory                InCategory                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FChallengeStruct>         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-
-TArray<struct FChallengeStruct> UChallengeStatsUtility::GetCategoryChallengeData(const EChallengeCategory InCategory)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "GetCategoryChallengeData");
-
-	Params::ChallengeStatsUtility_GetCategoryChallengeData Parms{};
-
-	Parms.InCategory = InCategory;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.ChallengeStatsUtility.GetCategoryClearCount
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// const EChallengeCategory                InCategory                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UChallengeStatsUtility::GetCategoryClearCount(const EChallengeCategory InCategory)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "GetCategoryClearCount");
-
-	Params::ChallengeStatsUtility_GetCategoryClearCount Parms{};
-
-	Parms.InCategory = InCategory;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.ChallengeStatsUtility.GetCategoryStats
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// const EChallengeCategory                InCategory                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FChallengeStatsData>      ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-
-TArray<struct FChallengeStatsData> UChallengeStatsUtility::GetCategoryStats(const EChallengeCategory InCategory)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "GetCategoryStats");
-
-	Params::ChallengeStatsUtility_GetCategoryStats Parms{};
-
-	Parms.InCategory = InCategory;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.ChallengeStatsUtility.GetChallengeCategory
+// Function UnionSystem.CollectHelper.CollectChangeList
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// const EChallengeId                      InId                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EChallengeCategory                      ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-EChallengeCategory UChallengeStatsUtility::GetChallengeCategory(const EChallengeId InId)
+class FString UCollectHelper::CollectChangeList()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "GetChallengeCategory");
+		Func = StaticClass()->GetFunction("CollectHelper", "CollectChangeList");
 
-	Params::ChallengeStatsUtility_GetChallengeCategory Parms{};
-
-	Parms.InId = InId;
+	Params::CollectHelper_CollectChangeList Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1437,211 +1198,19 @@ EChallengeCategory UChallengeStatsUtility::GetChallengeCategory(const EChallenge
 }
 
 
-// Function UnionSystem.ChallengeStatsUtility.GetChallengeData
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// const EChallengeId                      InChallengeId                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FChallengeStruct                 ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
-struct FChallengeStruct UChallengeStatsUtility::GetChallengeData(const EChallengeId InChallengeId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "GetChallengeData");
-
-	Params::ChallengeStatsUtility_GetChallengeData Parms{};
-
-	Parms.InChallengeId = InChallengeId;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.ChallengeStatsUtility.GetChallengeProgressCount
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UChallengeStatsUtility::GetChallengeProgressCount()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "GetChallengeProgressCount");
-
-	Params::ChallengeStatsUtility_GetChallengeProgressCount Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.ChallengeStatsUtility.GetChallengeProgressState
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// const EChallengeId                      InChallengeId                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EChallengeProgressState                 ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-EChallengeProgressState UChallengeStatsUtility::GetChallengeProgressState(const EChallengeId InChallengeId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "GetChallengeProgressState");
-
-	Params::ChallengeStatsUtility_GetChallengeProgressState Parms{};
-
-	Parms.InChallengeId = InChallengeId;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.ChallengeStatsUtility.GetChallengeStats
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// const EChallengeId                      InChallengeId                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FChallengeStatsData              ReturnValue                                            (Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
-
-struct FChallengeStatsData UChallengeStatsUtility::GetChallengeStats(const EChallengeId InChallengeId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "GetChallengeStats");
-
-	Params::ChallengeStatsUtility_GetChallengeStats Parms{};
-
-	Parms.InChallengeId = InChallengeId;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.ChallengeStatsUtility.GetChallengeStatsCount
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// const EChallengeId                      InChallengeId                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UChallengeStatsUtility::GetChallengeStatsCount(const EChallengeId InChallengeId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "GetChallengeStatsCount");
-
-	Params::ChallengeStatsUtility_GetChallengeStatsCount Parms{};
-
-	Parms.InChallengeId = InChallengeId;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.ChallengeStatsUtility.GetPointReward
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// int32                                   ItemGetBgIdx                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ItemGetPointIdx                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FChallengePointReward            ReturnValue                                            (Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
-
-struct FChallengePointReward UChallengeStatsUtility::GetPointReward(int32 ItemGetBgIdx, int32 ItemGetPointIdx)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "GetPointReward");
-
-	Params::ChallengeStatsUtility_GetPointReward Parms{};
-
-	Parms.ItemGetBgIdx = ItemGetBgIdx;
-	Parms.ItemGetPointIdx = ItemGetPointIdx;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.ChallengeStatsUtility.GetSpecialChallengeClearCount
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UChallengeStatsUtility::GetSpecialChallengeClearCount()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "GetSpecialChallengeClearCount");
-
-	Params::ChallengeStatsUtility_GetSpecialChallengeClearCount Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.ChallengeStatsUtility.IsChallengeAcquiredStateCheck
+// Function UnionSystem.CollectHelper.CollectCheckEnabled
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UChallengeStatsUtility::IsChallengeAcquiredStateCheck()
+bool UCollectHelper::CollectCheckEnabled()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "IsChallengeAcquiredStateCheck");
+		Func = StaticClass()->GetFunction("CollectHelper", "CollectCheckEnabled");
 
-	Params::ChallengeStatsUtility_IsChallengeAcquiredStateCheck Parms{};
+	Params::CollectHelper_CollectCheckEnabled Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1654,22 +1223,19 @@ bool UChallengeStatsUtility::IsChallengeAcquiredStateCheck()
 }
 
 
-// Function UnionSystem.ChallengeStatsUtility.IsChallengeCategoryNewIcon
+// Function UnionSystem.CollectHelper.CollectLevelName
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// const EChallengeCategory                InCategory                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UChallengeStatsUtility::IsChallengeCategoryNewIcon(const EChallengeCategory InCategory)
+class FString UCollectHelper::CollectLevelName()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "IsChallengeCategoryNewIcon");
+		Func = StaticClass()->GetFunction("CollectHelper", "CollectLevelName");
 
-	Params::ChallengeStatsUtility_IsChallengeCategoryNewIcon Parms{};
-
-	Parms.InCategory = InCategory;
+	Params::CollectHelper_CollectLevelName Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1682,22 +1248,22 @@ bool UChallengeStatsUtility::IsChallengeCategoryNewIcon(const EChallengeCategory
 }
 
 
-// Function UnionSystem.ChallengeStatsUtility.IsCompleteChallenge
+// Function UnionSystem.CollectHelper.CollectScreenShot
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// const EChallengeId                      InChallengeId                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Name_0                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UChallengeStatsUtility::IsCompleteChallenge(const EChallengeId InChallengeId)
+class FString UCollectHelper::CollectScreenShot(const class FString& Name_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "IsCompleteChallenge");
+		Func = StaticClass()->GetFunction("CollectHelper", "CollectScreenShot");
 
-	Params::ChallengeStatsUtility_IsCompleteChallenge Parms{};
+	Params::CollectHelper_CollectScreenShot Parms{};
 
-	Parms.InChallengeId = InChallengeId;
+	Parms.Name_0 = std::move(Name_0);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1710,22 +1276,26 @@ bool UChallengeStatsUtility::IsCompleteChallenge(const EChallengeId InChallengeI
 }
 
 
-// Function UnionSystem.ChallengeStatsUtility.IsCompleteChallengeCategory
+// Function UnionSystem.CollectHelper.CollectStringData
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// const EChallengeCategory                InCategory                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Name_0                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Suffix                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Data                                                   (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UChallengeStatsUtility::IsCompleteChallengeCategory(const EChallengeCategory InCategory)
+class FString UCollectHelper::CollectStringData(const class FString& Name_0, const class FString& Suffix, const class FString& Data)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "IsCompleteChallengeCategory");
+		Func = StaticClass()->GetFunction("CollectHelper", "CollectStringData");
 
-	Params::ChallengeStatsUtility_IsCompleteChallengeCategory Parms{};
+	Params::CollectHelper_CollectStringData Parms{};
 
-	Parms.InCategory = InCategory;
+	Parms.Name_0 = std::move(Name_0);
+	Parms.Suffix = std::move(Suffix);
+	Parms.Data = std::move(Data);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1735,60 +1305,6 @@ bool UChallengeStatsUtility::IsCompleteChallengeCategory(const EChallengeCategor
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.ChallengeStatsUtility.SetChallengeProgressState
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// const EChallengeId                      InChallengeId                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const EChallengeProgressState           InProgressState                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UChallengeStatsUtility::SetChallengeProgressState(const EChallengeId InChallengeId, const EChallengeProgressState InProgressState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "SetChallengeProgressState");
-
-	Params::ChallengeStatsUtility_SetChallengeProgressState Parms{};
-
-	Parms.InChallengeId = InChallengeId;
-	Parms.InProgressState = InProgressState;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.ChallengeStatsUtility.SetChallengeStats
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// EChallengeId                            InChallengeId                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   InValue                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UChallengeStatsUtility::SetChallengeStats(EChallengeId InChallengeId, int32 InValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "SetChallengeStats");
-
-	Params::ChallengeStatsUtility_SetChallengeStats Parms{};
-
-	Parms.InChallengeId = InChallengeId;
-	Parms.InValue = InValue;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
 }
 
 
@@ -2392,127 +1908,15 @@ void UAppGameInstance::GetVCSRevisionStr(class FString* OutVCSString) const
 }
 
 
-// Function UnionSystem.HashHelper.HashIntoByteArray
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// const class FString&                    Data                                                   (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<uint8>                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-
-TArray<uint8> UHashHelper::HashIntoByteArray(const class FString& Data)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HashHelper", "HashIntoByteArray");
-
-	Params::HashHelper_HashIntoByteArray Parms{};
-
-	Parms.Data = std::move(Data);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.HashHelper.HashIntoByteArrayFromByteArray
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const TArray<uint8>&                    Bytes                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-// TArray<uint8>                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-
-TArray<uint8> UHashHelper::HashIntoByteArrayFromByteArray(const TArray<uint8>& Bytes)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HashHelper", "HashIntoByteArrayFromByteArray");
-
-	Params::HashHelper_HashIntoByteArrayFromByteArray Parms{};
-
-	Parms.Bytes = std::move(Bytes);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.HashHelper.HashIntoTextString
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// const class FString&                    Data                                                   (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class FString UHashHelper::HashIntoTextString(const class FString& Data)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HashHelper", "HashIntoTextString");
-
-	Params::HashHelper_HashIntoTextString Parms{};
-
-	Parms.Data = std::move(Data);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.HashHelper.HashIntoTextStringFromByteArray
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const TArray<uint8>&                    Bytes                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class FString UHashHelper::HashIntoTextStringFromByteArray(const TArray<uint8>& Bytes)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HashHelper", "HashIntoTextStringFromByteArray");
-
-	Params::HashHelper_HashIntoTextStringFromByteArray Parms{};
-
-	Parms.Bytes = std::move(Bytes);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.JukeboxDataAsset.ClearData
+// Function UnionSystem.HonorTitleListDataAsset.ClearData
 // (Final, Native, Public, BlueprintCallable)
 
-void UJukeboxDataAsset::ClearData()
+void UHonorTitleListDataAsset::ClearData()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("JukeboxDataAsset", "ClearData");
+		Func = Class->GetFunction("HonorTitleListDataAsset", "ClearData");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2523,22 +1927,73 @@ void UJukeboxDataAsset::ClearData()
 }
 
 
-// Function UnionSystem.JukeboxDataAsset.GetAlbumData
+// Function UnionSystem.HonorTitleListDataAsset.Update
 // (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   AlbumID                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FAlbumData                       ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 
-struct FAlbumData UJukeboxDataAsset::GetAlbumData(int32 AlbumID)
+void UHonorTitleListDataAsset::Update()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("JukeboxDataAsset", "GetAlbumData");
+		Func = Class->GetFunction("HonorTitleListDataAsset", "Update");
 
-	Params::JukeboxDataAsset_GetAlbumData Parms{};
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
 
-	Parms.AlbumID = AlbumID;
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.HonorTitleListDataAsset.GetAllHonorTitleAndIdWithRarity
+// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   Rarity                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<int32>*                          outHonorTitleIdArray                                   (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+// TArray<struct FHonorTitleListData>      ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+
+TArray<struct FHonorTitleListData> UHonorTitleListDataAsset::GetAllHonorTitleAndIdWithRarity(int32 Rarity, TArray<int32>* outHonorTitleIdArray) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HonorTitleListDataAsset", "GetAllHonorTitleAndIdWithRarity");
+
+	Params::HonorTitleListDataAsset_GetAllHonorTitleAndIdWithRarity Parms{};
+
+	Parms.Rarity = Rarity;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (outHonorTitleIdArray != nullptr)
+		*outHonorTitleIdArray = std::move(Parms.outHonorTitleIdArray);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.HonorTitleListDataAsset.GetAllHonorTitleWithRarity
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   Rarity                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<struct FHonorTitleListData>      ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+
+TArray<struct FHonorTitleListData> UHonorTitleListDataAsset::GetAllHonorTitleWithRarity(int32 Rarity) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HonorTitleListDataAsset", "GetAllHonorTitleWithRarity");
+
+	Params::HonorTitleListDataAsset_GetAllHonorTitleWithRarity Parms{};
+
+	Parms.Rarity = Rarity;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2551,22 +2006,22 @@ struct FAlbumData UJukeboxDataAsset::GetAlbumData(int32 AlbumID)
 }
 
 
-// Function UnionSystem.JukeboxDataAsset.GetTrackData
-// (Final, Native, Public, BlueprintCallable)
+// Function UnionSystem.HonorTitleListDataAsset.GetHonorTitleFestaSortId
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// int32                                   TrackID                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FTrackData                       ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+// int32                                   festaId                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-struct FTrackData UJukeboxDataAsset::GetTrackData(int32 TrackID)
+int32 UHonorTitleListDataAsset::GetHonorTitleFestaSortId(int32 festaId) const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("JukeboxDataAsset", "GetTrackData");
+		Func = Class->GetFunction("HonorTitleListDataAsset", "GetHonorTitleFestaSortId");
 
-	Params::JukeboxDataAsset_GetTrackData Parms{};
+	Params::HonorTitleListDataAsset_GetHonorTitleFestaSortId Parms{};
 
-	Parms.TrackID = TrackID;
+	Parms.festaId = festaId;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2579,59 +2034,23 @@ struct FTrackData UJukeboxDataAsset::GetTrackData(int32 TrackID)
 }
 
 
-// Function UnionSystem.JukeboxDataAsset.Update
-// (Final, Native, Public, BlueprintCallable)
-
-void UJukeboxDataAsset::Update()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("JukeboxDataAsset", "Update");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.AtomListenerFocusPointForCamera.OnCameraActivated
-// (Final, Native, Private)
-
-void UAtomListenerFocusPointForCamera::OnCameraActivated()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AtomListenerFocusPointForCamera", "OnCameraActivated");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.AtomListenerFocusPointForCamera.SetCamera
-// (Final, Native, Public, BlueprintCallable)
+// Function UnionSystem.HonorTitleListDataAsset.GetHonorTitleLegendCompeInfo
+// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// class UCameraComponent*                 NewCamera                                              (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   HonorTitleIndex                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool*                                   IsLegendCompe                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32*                                  RoundNum                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UAtomListenerFocusPointForCamera::SetCamera(class UCameraComponent* NewCamera)
+void UHonorTitleListDataAsset::GetHonorTitleLegendCompeInfo(int32 HonorTitleIndex, bool* IsLegendCompe, int32* RoundNum) const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AtomListenerFocusPointForCamera", "SetCamera");
+		Func = Class->GetFunction("HonorTitleListDataAsset", "GetHonorTitleLegendCompeInfo");
 
-	Params::AtomListenerFocusPointForCamera_SetCamera Parms{};
+	Params::HonorTitleListDataAsset_GetHonorTitleLegendCompeInfo Parms{};
 
-	Parms.NewCamera = NewCamera;
+	Parms.HonorTitleIndex = HonorTitleIndex;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2639,6 +2058,128 @@ void UAtomListenerFocusPointForCamera::SetCamera(class UCameraComponent* NewCame
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+
+	if (IsLegendCompe != nullptr)
+		*IsLegendCompe = Parms.IsLegendCompe;
+
+	if (RoundNum != nullptr)
+		*RoundNum = Parms.RoundNum;
+}
+
+
+// Function UnionSystem.HonorTitleListDataAsset.GetHonorTitlePlate
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   HonorTitleId                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TSoftObjectPtr<class UTexture2D>        ReturnValue                                            (Parm, OutParm, ReturnParm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+TSoftObjectPtr<class UTexture2D> UHonorTitleListDataAsset::GetHonorTitlePlate(int32 HonorTitleId) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HonorTitleListDataAsset", "GetHonorTitlePlate");
+
+	Params::HonorTitleListDataAsset_GetHonorTitlePlate Parms{};
+
+	Parms.HonorTitleId = HonorTitleId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.HonorTitleListDataAsset.GetHonorTitleRarity
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   HonorTitleId                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UHonorTitleListDataAsset::GetHonorTitleRarity(int32 HonorTitleId) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HonorTitleListDataAsset", "GetHonorTitleRarity");
+
+	Params::HonorTitleListDataAsset_GetHonorTitleRarity Parms{};
+
+	Parms.HonorTitleId = HonorTitleId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.HonorTitleListDataAsset.GetHonorTitleVBName
+// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   HonorTitleId                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool*                                   IsValid                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+
+class FText UHonorTitleListDataAsset::GetHonorTitleVBName(int32 HonorTitleId, bool* IsValid) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HonorTitleListDataAsset", "GetHonorTitleVBName");
+
+	Params::HonorTitleListDataAsset_GetHonorTitleVBName Parms{};
+
+	Parms.HonorTitleId = HonorTitleId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (IsValid != nullptr)
+		*IsValid = Parms.IsValid;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.HonorTitleListDataAsset.GetIsHonorTitleDLC
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   HonorTitleIndex                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UHonorTitleListDataAsset::GetIsHonorTitleDLC(int32 HonorTitleIndex) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HonorTitleListDataAsset", "GetIsHonorTitleDLC");
+
+	Params::HonorTitleListDataAsset_GetIsHonorTitleDLC Parms{};
+
+	Parms.HonorTitleIndex = HonorTitleIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
@@ -3164,6 +2705,31 @@ EKeyConfigOperationType UAppOptionConfigSaveGameHelper::GetControllerOperationTy
 }
 
 
+// Function UnionSystem.AppOptionConfigSaveGameHelper.GetEnableAutoSelectRentalPlate
+// (Final, Native, Static, Public)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAppOptionConfigSaveGameHelper::GetEnableAutoSelectRentalPlate()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AppOptionConfigSaveGameHelper", "GetEnableAutoSelectRentalPlate");
+
+	Params::AppOptionConfigSaveGameHelper_GetEnableAutoSelectRentalPlate Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function UnionSystem.AppOptionConfigSaveGameHelper.GetForceFeedbackLevel
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -3180,6 +2746,34 @@ EForceFeedbackLevel UAppOptionConfigSaveGameHelper::GetForceFeedbackLevel(int32 
 	Params::AppOptionConfigSaveGameHelper_GetForceFeedbackLevel Parms{};
 
 	Parms.PlayerIndex = PlayerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.AppOptionConfigSaveGameHelper.GetSecondaryGadgetButtonType
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// int32                                   InPlayerIndex                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// ESecondaryGadgetButtonType              ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+ESecondaryGadgetButtonType UAppOptionConfigSaveGameHelper::GetSecondaryGadgetButtonType(int32 InPlayerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AppOptionConfigSaveGameHelper", "GetSecondaryGadgetButtonType");
+
+	Params::AppOptionConfigSaveGameHelper_GetSecondaryGadgetButtonType Parms{};
+
+	Parms.InPlayerIndex = InPlayerIndex;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -3364,6 +2958,68 @@ bool UAppOptionConfigSaveGameHelper::IsDiffUserAssistDataWithSaveData(const TArr
 }
 
 
+// Function UnionSystem.AppOptionConfigSaveGameHelper.IsDirty_ControllerSettings
+// (Final, Native, Static, Public, HasOutParams)
+// Parameters:
+// int32                                   PlayerIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FControllerSettings&       EditingSetting                                         (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// const struct FControllerAdditionalSetting&EditingAditionalSetting                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAppOptionConfigSaveGameHelper::IsDirty_ControllerSettings(int32 PlayerIndex, const struct FControllerSettings& EditingSetting, const struct FControllerAdditionalSetting& EditingAditionalSetting)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AppOptionConfigSaveGameHelper", "IsDirty_ControllerSettings");
+
+	Params::AppOptionConfigSaveGameHelper_IsDirty_ControllerSettings Parms{};
+
+	Parms.PlayerIndex = PlayerIndex;
+	Parms.EditingSetting = std::move(EditingSetting);
+	Parms.EditingAditionalSetting = std::move(EditingAditionalSetting);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.AppOptionConfigSaveGameHelper.IsDirty_RaceSettings
+// (Final, Native, Static, Public, HasOutParams)
+// Parameters:
+// const struct FOptionRaceSettings&       EditingSetting                                         (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+// const struct FRaceAdditionalSetting&    EditingAditionalSetting                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAppOptionConfigSaveGameHelper::IsDirty_RaceSettings(const struct FOptionRaceSettings& EditingSetting, const struct FRaceAdditionalSetting& EditingAditionalSetting)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AppOptionConfigSaveGameHelper", "IsDirty_RaceSettings");
+
+	Params::AppOptionConfigSaveGameHelper_IsDirty_RaceSettings Parms{};
+
+	Parms.EditingSetting = std::move(EditingSetting);
+	Parms.EditingAditionalSetting = std::move(EditingAditionalSetting);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function UnionSystem.AppOptionConfigSaveGameHelper.IsInverseAcceptAndCancel
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -3445,6 +3101,111 @@ bool UAppOptionConfigSaveGameHelper::IsRunningOnSteamDeck()
 }
 
 
+// Function UnionSystem.AppOptionConfigSaveGameHelper.ReadControlAdditionalSettingArrayBySave
+// (Final, Native, Static, Public)
+// Parameters:
+// int32                                   ArrayLength                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<struct FControllerAdditionalSetting>ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+
+TArray<struct FControllerAdditionalSetting> UAppOptionConfigSaveGameHelper::ReadControlAdditionalSettingArrayBySave(int32 ArrayLength)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AppOptionConfigSaveGameHelper", "ReadControlAdditionalSettingArrayBySave");
+
+	Params::AppOptionConfigSaveGameHelper_ReadControlAdditionalSettingArrayBySave Parms{};
+
+	Parms.ArrayLength = ArrayLength;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.AppOptionConfigSaveGameHelper.ReadRaceAdditionalSettingBySave
+// (Final, Native, Static, Public)
+// Parameters:
+// struct FRaceAdditionalSetting           ReturnValue                                            (Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
+
+struct FRaceAdditionalSetting UAppOptionConfigSaveGameHelper::ReadRaceAdditionalSettingBySave()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AppOptionConfigSaveGameHelper", "ReadRaceAdditionalSettingBySave");
+
+	Params::AppOptionConfigSaveGameHelper_ReadRaceAdditionalSettingBySave Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.AppOptionConfigSaveGameHelper.ResetControlAdditionalSettingArrayForSaveDataDefault
+// (Final, Native, Static, Public, HasOutParams)
+// Parameters:
+// TArray<struct FControllerAdditionalSetting>*Settings                                               (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+
+void UAppOptionConfigSaveGameHelper::ResetControlAdditionalSettingArrayForSaveDataDefault(TArray<struct FControllerAdditionalSetting>* Settings)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AppOptionConfigSaveGameHelper", "ResetControlAdditionalSettingArrayForSaveDataDefault");
+
+	Params::AppOptionConfigSaveGameHelper_ResetControlAdditionalSettingArrayForSaveDataDefault Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (Settings != nullptr)
+		*Settings = std::move(Parms.Settings);
+}
+
+
+// Function UnionSystem.AppOptionConfigSaveGameHelper.ResetControlAdditionalSettingForSaveDataDefault
+// (Final, Native, Static, Public, HasOutParams)
+// Parameters:
+// struct FControllerAdditionalSetting*    Setting                                                (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
+
+void UAppOptionConfigSaveGameHelper::ResetControlAdditionalSettingForSaveDataDefault(struct FControllerAdditionalSetting* Setting)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AppOptionConfigSaveGameHelper", "ResetControlAdditionalSettingForSaveDataDefault");
+
+	Params::AppOptionConfigSaveGameHelper_ResetControlAdditionalSettingForSaveDataDefault Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (Setting != nullptr)
+		*Setting = std::move(Parms.Setting);
+}
+
+
 // Function UnionSystem.AppOptionConfigSaveGameHelper.ResetControllerSettingsForLocalMultiPlayer
 // (Final, Native, Static, Public, BlueprintCallable)
 
@@ -3461,6 +3222,32 @@ void UAppOptionConfigSaveGameHelper::ResetControllerSettingsForLocalMultiPlayer(
 	GetDefaultObj()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.AppOptionConfigSaveGameHelper.ResetRaceAdditionalSettingForSaveDataDefault
+// (Final, Native, Static, Public, HasOutParams)
+// Parameters:
+// struct FRaceAdditionalSetting*          Setting                                                (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
+
+void UAppOptionConfigSaveGameHelper::ResetRaceAdditionalSettingForSaveDataDefault(struct FRaceAdditionalSetting* Setting)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AppOptionConfigSaveGameHelper", "ResetRaceAdditionalSettingForSaveDataDefault");
+
+	Params::AppOptionConfigSaveGameHelper_ResetRaceAdditionalSettingForSaveDataDefault Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (Setting != nullptr)
+		*Setting = std::move(Parms.Setting);
 }
 
 
@@ -3537,6 +3324,31 @@ void UAppOptionConfigSaveGameHelper::SetControllerOperationType(int32 InPlayerIn
 }
 
 
+// Function UnionSystem.AppOptionConfigSaveGameHelper.SetEnableAutoSelectRentalPlate
+// (Final, Native, Static, Public)
+// Parameters:
+// bool                                    InEnable                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAppOptionConfigSaveGameHelper::SetEnableAutoSelectRentalPlate(bool InEnable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AppOptionConfigSaveGameHelper", "SetEnableAutoSelectRentalPlate");
+
+	Params::AppOptionConfigSaveGameHelper_SetEnableAutoSelectRentalPlate Parms{};
+
+	Parms.InEnable = InEnable;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function UnionSystem.AppOptionConfigSaveGameHelper.SetForceFeedbackLevel
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -3581,6 +3393,33 @@ void UAppOptionConfigSaveGameHelper::SetInverseAcceptAndCancel(int32 InPlayerInd
 
 	Parms.InPlayerIndex = InPlayerIndex;
 	Parms.InInverse = InInverse;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.AppOptionConfigSaveGameHelper.SetSecondaryGadgetButtonType
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// int32                                   InPlayerIndex                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// ESecondaryGadgetButtonType              InType                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAppOptionConfigSaveGameHelper::SetSecondaryGadgetButtonType(int32 InPlayerIndex, ESecondaryGadgetButtonType InType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AppOptionConfigSaveGameHelper", "SetSecondaryGadgetButtonType");
+
+	Params::AppOptionConfigSaveGameHelper_SetSecondaryGadgetButtonType Parms{};
+
+	Parms.InPlayerIndex = InPlayerIndex;
+	Parms.InType = InType;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -3654,6 +3493,62 @@ bool UAppOptionConfigSaveGameHelper::UpdateGraphicSettingsAtFirstTime()
 		Func = StaticClass()->GetFunction("AppOptionConfigSaveGameHelper", "UpdateGraphicSettingsAtFirstTime");
 
 	Params::AppOptionConfigSaveGameHelper_UpdateGraphicSettingsAtFirstTime Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.AppOptionConfigSaveGameHelper.WriteControlAdditionalSettingArrayForSave
+// (Final, Native, Static, Public, HasOutParams)
+// Parameters:
+// const TArray<struct FControllerAdditionalSetting>&Source                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAppOptionConfigSaveGameHelper::WriteControlAdditionalSettingArrayForSave(const TArray<struct FControllerAdditionalSetting>& Source)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AppOptionConfigSaveGameHelper", "WriteControlAdditionalSettingArrayForSave");
+
+	Params::AppOptionConfigSaveGameHelper_WriteControlAdditionalSettingArrayForSave Parms{};
+
+	Parms.Source = std::move(Source);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.AppOptionConfigSaveGameHelper.WriteRaceAdditionalSettingForSave
+// (Final, Native, Static, Public, HasOutParams)
+// Parameters:
+// const struct FRaceAdditionalSetting&    Source                                                 (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAppOptionConfigSaveGameHelper::WriteRaceAdditionalSettingForSave(const struct FRaceAdditionalSetting& Source)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AppOptionConfigSaveGameHelper", "WriteRaceAdditionalSettingForSave");
+
+	Params::AppOptionConfigSaveGameHelper_WriteRaceAdditionalSettingForSave Parms{};
+
+	Parms.Source = std::move(Source);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -7527,6 +7422,25 @@ bool UAppSaveGameHelper::HasEnteredMachineCustomizeSequence()
 }
 
 
+// Function UnionSystem.AppSaveGameHelper.InitializePatchUpdate
+// (Final, Native, Static, Public, BlueprintCallable)
+
+void UAppSaveGameHelper::InitializePatchUpdate()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AppSaveGameHelper", "InitializePatchUpdate");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function UnionSystem.AppSaveGameHelper.IsClearedGrandPrixAnySpeedClass
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -8290,6 +8204,62 @@ bool UAppSaveGameHelper::IsStickerUnlocked(int32 InStickerId)
 	Params::AppSaveGameHelper_IsStickerUnlocked Parms{};
 
 	Parms.InStickerId = InStickerId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.AppSaveGameHelper.IsUnlockedHornFromHornType
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// const EMachineHornType                  InHornType                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAppSaveGameHelper::IsUnlockedHornFromHornType(const EMachineHornType InHornType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AppSaveGameHelper", "IsUnlockedHornFromHornType");
+
+	Params::AppSaveGameHelper_IsUnlockedHornFromHornType Parms{};
+
+	Parms.InHornType = InHornType;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.AppSaveGameHelper.IsUnlockedHornFromRewardId
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// const int32                             InRewardId                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAppSaveGameHelper::IsUnlockedHornFromRewardId(const int32 InRewardId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AppSaveGameHelper", "IsUnlockedHornFromRewardId");
+
+	Params::AppSaveGameHelper_IsUnlockedHornFromRewardId Parms{};
+
+	Parms.InRewardId = InRewardId;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -10064,50 +10034,38 @@ void UAppSaveGameHelper::UnlockHonorTitle(int32 HonorTitleIndex)
 }
 
 
-// Function UnionSystem.AppTimeSubsystem.AddNamedDateTimeNow
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const class FName&                      InTimeName                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// Function UnionSystem.AppSequenceLogManagerSubsystem.BackupSequenceType
+// (Final, Native, Public, BlueprintCallable)
 
-void UAppTimeSubsystem::AddNamedDateTimeNow(const class FName& InTimeName)
+void UAppSequenceLogManagerSubsystem::BackupSequenceType()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AppTimeSubsystem", "AddNamedDateTimeNow");
-
-	Params::AppTimeSubsystem_AddNamedDateTimeNow Parms{};
-
-	Parms.InTimeName = InTimeName;
+		Func = Class->GetFunction("AppSequenceLogManagerSubsystem", "BackupSequenceType");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
 
 
-// Function UnionSystem.AppTimeSubsystem.GetTimeSpanMillisecondsByNamedDateTimes
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Function UnionSystem.AppSequenceLogManagerSubsystem.GetBackupSequenceMainType
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// const class FName&                      InBeginTimeName                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FName&                      InEndTimeName                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32*                                  OutTimeSpan                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// ESequenceMainType                       ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UAppTimeSubsystem::GetTimeSpanMillisecondsByNamedDateTimes(const class FName& InBeginTimeName, const class FName& InEndTimeName, int32* OutTimeSpan)
+ESequenceMainType UAppSequenceLogManagerSubsystem::GetBackupSequenceMainType()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AppTimeSubsystem", "GetTimeSpanMillisecondsByNamedDateTimes");
+		Func = Class->GetFunction("AppSequenceLogManagerSubsystem", "GetBackupSequenceMainType");
 
-	Params::AppTimeSubsystem_GetTimeSpanMillisecondsByNamedDateTimes Parms{};
-
-	Parms.InBeginTimeName = InBeginTimeName;
-	Parms.InEndTimeName = InEndTimeName;
+	Params::AppSequenceLogManagerSubsystem_GetBackupSequenceMainType Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -10115,31 +10073,24 @@ bool UAppTimeSubsystem::GetTimeSpanMillisecondsByNamedDateTimes(const class FNam
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-
-	if (OutTimeSpan != nullptr)
-		*OutTimeSpan = Parms.OutTimeSpan;
 
 	return Parms.ReturnValue;
 }
 
 
-// Function UnionSystem.AppTimeSubsystem.LogTimeSpanMillisecondsByNamedDateTimes
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Function UnionSystem.AppSequenceLogManagerSubsystem.GetBackupSequenceSubType
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// const class FName&                      InBeginTimeName                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FName&                      InEndTimeName                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// ESequenceSubType                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UAppTimeSubsystem::LogTimeSpanMillisecondsByNamedDateTimes(const class FName& InBeginTimeName, const class FName& InEndTimeName)
+ESequenceSubType UAppSequenceLogManagerSubsystem::GetBackupSequenceSubType()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AppTimeSubsystem", "LogTimeSpanMillisecondsByNamedDateTimes");
+		Func = Class->GetFunction("AppSequenceLogManagerSubsystem", "GetBackupSequenceSubType");
 
-	Params::AppTimeSubsystem_LogTimeSpanMillisecondsByNamedDateTimes Parms{};
-
-	Parms.InBeginTimeName = InBeginTimeName;
-	Parms.InEndTimeName = InEndTimeName;
+	Params::AppSequenceLogManagerSubsystem_GetBackupSequenceSubType Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -10147,6 +10098,135 @@ void UAppTimeSubsystem::LogTimeSpanMillisecondsByNamedDateTimes(const class FNam
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.AppSequenceLogManagerSubsystem.GetSequenceMainType
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// ESequenceMainType                       ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+ESequenceMainType UAppSequenceLogManagerSubsystem::GetSequenceMainType()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AppSequenceLogManagerSubsystem", "GetSequenceMainType");
+
+	Params::AppSequenceLogManagerSubsystem_GetSequenceMainType Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.AppSequenceLogManagerSubsystem.GetSequenceSubType
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// ESequenceSubType                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+ESequenceSubType UAppSequenceLogManagerSubsystem::GetSequenceSubType()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AppSequenceLogManagerSubsystem", "GetSequenceSubType");
+
+	Params::AppSequenceLogManagerSubsystem_GetSequenceSubType Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.AppSequenceLogManagerSubsystem.SetSequenceSubType
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// ESequenceSubType                        SubType                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAppSequenceLogManagerSubsystem::SetSequenceSubType(ESequenceSubType SubType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AppSequenceLogManagerSubsystem", "SetSequenceSubType");
+
+	Params::AppSequenceLogManagerSubsystem_SetSequenceSubType Parms{};
+
+	Parms.SubType = SubType;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.AppSequenceLogManagerSubsystem.SetSequenceType
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// ESequenceMainType                       MainType                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// ESequenceSubType                        SubType                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAppSequenceLogManagerSubsystem::SetSequenceType(ESequenceMainType MainType, ESequenceSubType SubType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AppSequenceLogManagerSubsystem", "SetSequenceType");
+
+	Params::AppSequenceLogManagerSubsystem_SetSequenceType Parms{};
+
+	Parms.MainType = MainType;
+	Parms.SubType = SubType;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.AppSequenceLogManagerSubsystem.GetSequenceTypeNum
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UAppSequenceLogManagerSubsystem::GetSequenceTypeNum() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AppSequenceLogManagerSubsystem", "GetSequenceTypeNum");
+
+	Params::AppSequenceLogManagerSubsystem_GetSequenceTypeNum Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
@@ -10172,6 +10252,34 @@ void UAppTimeUtil::AddNamedDateTimeNow(const class FName& InTimeName)
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.AppTimeUtil.ConvertUtcToLocalTime
+// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const struct FDateTime&                 UtcDateTime                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FDateTime                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+struct FDateTime UAppTimeUtil::ConvertUtcToLocalTime(const struct FDateTime& UtcDateTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AppTimeUtil", "ConvertUtcToLocalTime");
+
+	Params::AppTimeUtil_ConvertUtcToLocalTime Parms{};
+
+	Parms.UtcDateTime = std::move(UtcDateTime);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
@@ -11252,26 +11360,23 @@ void UBPFL_AutoPlay::DoInputRaceReleased(class ARacePlayerController* RaceContro
 }
 
 
-// Function UnionSystem.CollectHelper.CollectBytesData
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Function UnionSystem.ChallengeStatsUtility.AddChallengeStats
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// const class FString&                    Name_0                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    Suffix                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const TArray<uint8>&                    Data                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EChallengeId                            InChallengeId                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   InValue                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class FString UCollectHelper::CollectBytesData(const class FString& Name_0, const class FString& Suffix, const TArray<uint8>& Data)
+void UChallengeStatsUtility::AddChallengeStats(EChallengeId InChallengeId, int32 InValue)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("CollectHelper", "CollectBytesData");
+		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "AddChallengeStats");
 
-	Params::CollectHelper_CollectBytesData Parms{};
+	Params::ChallengeStatsUtility_AddChallengeStats Parms{};
 
-	Parms.Name_0 = std::move(Name_0);
-	Parms.Suffix = std::move(Suffix);
-	Parms.Data = std::move(Data);
+	Parms.InChallengeId = InChallengeId;
+	Parms.InValue = InValue;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -11279,24 +11384,69 @@ class FString UCollectHelper::CollectBytesData(const class FString& Name_0, cons
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
-// Function UnionSystem.CollectHelper.CollectCacheDirectory
+// Function UnionSystem.ChallengeStatsUtility.ChallengeProgressUpdateCategory
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// const EChallengeCategory                InCategory                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UChallengeStatsUtility::ChallengeProgressUpdateCategory(const EChallengeCategory InCategory)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "ChallengeProgressUpdateCategory");
+
+	Params::ChallengeStatsUtility_ChallengeProgressUpdateCategory Parms{};
+
+	Parms.InCategory = InCategory;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.ChallengeStatsUtility.CheckAllChallengeStats
+// (Final, Native, Static, Public, BlueprintCallable)
+
+void UChallengeStatsUtility::CheckAllChallengeStats()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "CheckAllChallengeStats");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.ChallengeStatsUtility.GetCategoryChallenge
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const EChallengeCategory                InCategory                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<EChallengeId>                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 
-class FString UCollectHelper::CollectCacheDirectory()
+TArray<EChallengeId> UChallengeStatsUtility::GetCategoryChallenge(const EChallengeCategory InCategory)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("CollectHelper", "CollectCacheDirectory");
+		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "GetCategoryChallenge");
 
-	Params::CollectHelper_CollectCacheDirectory Parms{};
+	Params::ChallengeStatsUtility_GetCategoryChallenge Parms{};
+
+	Parms.InCategory = InCategory;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -11309,19 +11459,106 @@ class FString UCollectHelper::CollectCacheDirectory()
 }
 
 
-// Function UnionSystem.CollectHelper.CollectChangeList
+// Function UnionSystem.ChallengeStatsUtility.GetCategoryChallengeData
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// const EChallengeCategory                InCategory                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<struct FChallengeStruct>         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+
+TArray<struct FChallengeStruct> UChallengeStatsUtility::GetCategoryChallengeData(const EChallengeCategory InCategory)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "GetCategoryChallengeData");
+
+	Params::ChallengeStatsUtility_GetCategoryChallengeData Parms{};
+
+	Parms.InCategory = InCategory;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.ChallengeStatsUtility.GetCategoryClearCount
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// const EChallengeCategory                InCategory                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UChallengeStatsUtility::GetCategoryClearCount(const EChallengeCategory InCategory)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "GetCategoryClearCount");
+
+	Params::ChallengeStatsUtility_GetCategoryClearCount Parms{};
+
+	Parms.InCategory = InCategory;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.ChallengeStatsUtility.GetCategoryStats
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// const EChallengeCategory                InCategory                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<struct FChallengeStatsData>      ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+
+TArray<struct FChallengeStatsData> UChallengeStatsUtility::GetCategoryStats(const EChallengeCategory InCategory)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "GetCategoryStats");
+
+	Params::ChallengeStatsUtility_GetCategoryStats Parms{};
+
+	Parms.InCategory = InCategory;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.ChallengeStatsUtility.GetChallengeCategory
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const EChallengeId                      InId                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EChallengeCategory                      ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class FString UCollectHelper::CollectChangeList()
+EChallengeCategory UChallengeStatsUtility::GetChallengeCategory(const EChallengeId InId)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("CollectHelper", "CollectChangeList");
+		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "GetChallengeCategory");
 
-	Params::CollectHelper_CollectChangeList Parms{};
+	Params::ChallengeStatsUtility_GetChallengeCategory Parms{};
+
+	Parms.InId = InId;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -11334,19 +11571,211 @@ class FString UCollectHelper::CollectChangeList()
 }
 
 
-// Function UnionSystem.CollectHelper.CollectCheckEnabled
+// Function UnionSystem.ChallengeStatsUtility.GetChallengeData
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// const EChallengeId                      InChallengeId                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FChallengeStruct                 ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+
+struct FChallengeStruct UChallengeStatsUtility::GetChallengeData(const EChallengeId InChallengeId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "GetChallengeData");
+
+	Params::ChallengeStatsUtility_GetChallengeData Parms{};
+
+	Parms.InChallengeId = InChallengeId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.ChallengeStatsUtility.GetChallengeProgressCount
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UChallengeStatsUtility::GetChallengeProgressCount()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "GetChallengeProgressCount");
+
+	Params::ChallengeStatsUtility_GetChallengeProgressCount Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.ChallengeStatsUtility.GetChallengeProgressState
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// const EChallengeId                      InChallengeId                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EChallengeProgressState                 ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EChallengeProgressState UChallengeStatsUtility::GetChallengeProgressState(const EChallengeId InChallengeId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "GetChallengeProgressState");
+
+	Params::ChallengeStatsUtility_GetChallengeProgressState Parms{};
+
+	Parms.InChallengeId = InChallengeId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.ChallengeStatsUtility.GetChallengeStats
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// const EChallengeId                      InChallengeId                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FChallengeStatsData              ReturnValue                                            (Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
+
+struct FChallengeStatsData UChallengeStatsUtility::GetChallengeStats(const EChallengeId InChallengeId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "GetChallengeStats");
+
+	Params::ChallengeStatsUtility_GetChallengeStats Parms{};
+
+	Parms.InChallengeId = InChallengeId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.ChallengeStatsUtility.GetChallengeStatsCount
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// const EChallengeId                      InChallengeId                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UChallengeStatsUtility::GetChallengeStatsCount(const EChallengeId InChallengeId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "GetChallengeStatsCount");
+
+	Params::ChallengeStatsUtility_GetChallengeStatsCount Parms{};
+
+	Parms.InChallengeId = InChallengeId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.ChallengeStatsUtility.GetPointReward
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// int32                                   ItemGetBgIdx                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ItemGetPointIdx                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FChallengePointReward            ReturnValue                                            (Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
+
+struct FChallengePointReward UChallengeStatsUtility::GetPointReward(int32 ItemGetBgIdx, int32 ItemGetPointIdx)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "GetPointReward");
+
+	Params::ChallengeStatsUtility_GetPointReward Parms{};
+
+	Parms.ItemGetBgIdx = ItemGetBgIdx;
+	Parms.ItemGetPointIdx = ItemGetPointIdx;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.ChallengeStatsUtility.GetSpecialChallengeClearCount
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UChallengeStatsUtility::GetSpecialChallengeClearCount()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "GetSpecialChallengeClearCount");
+
+	Params::ChallengeStatsUtility_GetSpecialChallengeClearCount Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.ChallengeStatsUtility.IsChallengeAcquiredStateCheck
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UCollectHelper::CollectCheckEnabled()
+bool UChallengeStatsUtility::IsChallengeAcquiredStateCheck()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("CollectHelper", "CollectCheckEnabled");
+		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "IsChallengeAcquiredStateCheck");
 
-	Params::CollectHelper_CollectCheckEnabled Parms{};
+	Params::ChallengeStatsUtility_IsChallengeAcquiredStateCheck Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -11359,19 +11788,22 @@ bool UCollectHelper::CollectCheckEnabled()
 }
 
 
-// Function UnionSystem.CollectHelper.CollectLevelName
+// Function UnionSystem.ChallengeStatsUtility.IsChallengeCategoryNewIcon
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const EChallengeCategory                InCategory                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class FString UCollectHelper::CollectLevelName()
+bool UChallengeStatsUtility::IsChallengeCategoryNewIcon(const EChallengeCategory InCategory)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("CollectHelper", "CollectLevelName");
+		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "IsChallengeCategoryNewIcon");
 
-	Params::CollectHelper_CollectLevelName Parms{};
+	Params::ChallengeStatsUtility_IsChallengeCategoryNewIcon Parms{};
+
+	Parms.InCategory = InCategory;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -11384,22 +11816,22 @@ class FString UCollectHelper::CollectLevelName()
 }
 
 
-// Function UnionSystem.CollectHelper.CollectScreenShot
+// Function UnionSystem.ChallengeStatsUtility.IsCompleteChallenge
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// const class FString&                    Name_0                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const EChallengeId                      InChallengeId                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class FString UCollectHelper::CollectScreenShot(const class FString& Name_0)
+bool UChallengeStatsUtility::IsCompleteChallenge(const EChallengeId InChallengeId)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("CollectHelper", "CollectScreenShot");
+		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "IsCompleteChallenge");
 
-	Params::CollectHelper_CollectScreenShot Parms{};
+	Params::ChallengeStatsUtility_IsCompleteChallenge Parms{};
 
-	Parms.Name_0 = std::move(Name_0);
+	Parms.InChallengeId = InChallengeId;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -11412,26 +11844,22 @@ class FString UCollectHelper::CollectScreenShot(const class FString& Name_0)
 }
 
 
-// Function UnionSystem.CollectHelper.CollectStringData
+// Function UnionSystem.ChallengeStatsUtility.IsCompleteChallengeCategory
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// const class FString&                    Name_0                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    Suffix                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    Data                                                   (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const EChallengeCategory                InCategory                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class FString UCollectHelper::CollectStringData(const class FString& Name_0, const class FString& Suffix, const class FString& Data)
+bool UChallengeStatsUtility::IsCompleteChallengeCategory(const EChallengeCategory InCategory)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("CollectHelper", "CollectStringData");
+		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "IsCompleteChallengeCategory");
 
-	Params::CollectHelper_CollectStringData Parms{};
+	Params::ChallengeStatsUtility_IsCompleteChallengeCategory Parms{};
 
-	Parms.Name_0 = std::move(Name_0);
-	Parms.Suffix = std::move(Suffix);
-	Parms.Data = std::move(Data);
+	Parms.InCategory = InCategory;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -11441,6 +11869,60 @@ class FString UCollectHelper::CollectStringData(const class FString& Name_0, con
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.ChallengeStatsUtility.SetChallengeProgressState
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// const EChallengeId                      InChallengeId                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const EChallengeProgressState           InProgressState                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UChallengeStatsUtility::SetChallengeProgressState(const EChallengeId InChallengeId, const EChallengeProgressState InProgressState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "SetChallengeProgressState");
+
+	Params::ChallengeStatsUtility_SetChallengeProgressState Parms{};
+
+	Parms.InChallengeId = InChallengeId;
+	Parms.InProgressState = InProgressState;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.ChallengeStatsUtility.SetChallengeStats
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// EChallengeId                            InChallengeId                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   InValue                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UChallengeStatsUtility::SetChallengeStats(EChallengeId InChallengeId, int32 InValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("ChallengeStatsUtility", "SetChallengeStats");
+
+	Params::ChallengeStatsUtility_SetChallengeStats Parms{};
+
+	Parms.InChallengeId = InChallengeId;
+	Parms.InValue = InValue;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -16733,97 +17215,27 @@ void UUIColorInfoDataAsset::Update()
 }
 
 
-// Function UnionSystem.HonorTitleListDataAsset.ClearData
-// (Final, Native, Public, BlueprintCallable)
-
-void UHonorTitleListDataAsset::ClearData()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HonorTitleListDataAsset", "ClearData");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.HonorTitleListDataAsset.Update
-// (Final, Native, Public, BlueprintCallable)
-
-void UHonorTitleListDataAsset::Update()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HonorTitleListDataAsset", "Update");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.HonorTitleListDataAsset.GetAllHonorTitleAndIdWithRarity
-// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
+// Function UnionSystem.HashHelper.HashIntoByteArray
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// int32                                   Rarity                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<int32>*                          outHonorTitleIdArray                                   (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-// TArray<struct FHonorTitleListData>      ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+// const class FString&                    Data                                                   (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<uint8>                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 
-TArray<struct FHonorTitleListData> UHonorTitleListDataAsset::GetAllHonorTitleAndIdWithRarity(int32 Rarity, TArray<int32>* outHonorTitleIdArray) const
+TArray<uint8> UHashHelper::HashIntoByteArray(const class FString& Data)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("HonorTitleListDataAsset", "GetAllHonorTitleAndIdWithRarity");
+		Func = StaticClass()->GetFunction("HashHelper", "HashIntoByteArray");
 
-	Params::HonorTitleListDataAsset_GetAllHonorTitleAndIdWithRarity Parms{};
+	Params::HashHelper_HashIntoByteArray Parms{};
 
-	Parms.Rarity = Rarity;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (outHonorTitleIdArray != nullptr)
-		*outHonorTitleIdArray = std::move(Parms.outHonorTitleIdArray);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.HonorTitleListDataAsset.GetAllHonorTitleWithRarity
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   Rarity                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FHonorTitleListData>      ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-
-TArray<struct FHonorTitleListData> UHonorTitleListDataAsset::GetAllHonorTitleWithRarity(int32 Rarity) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HonorTitleListDataAsset", "GetAllHonorTitleWithRarity");
-
-	Params::HonorTitleListDataAsset_GetAllHonorTitleWithRarity Parms{};
-
-	Parms.Rarity = Rarity;
+	Parms.Data = std::move(Data);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -16831,60 +17243,27 @@ TArray<struct FHonorTitleListData> UHonorTitleListDataAsset::GetAllHonorTitleWit
 }
 
 
-// Function UnionSystem.HonorTitleListDataAsset.GetHonorTitleLegendCompeInfo
-// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
+// Function UnionSystem.HashHelper.HashIntoByteArrayFromByteArray
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// int32                                   HonorTitleIndex                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool*                                   IsLegendCompe                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32*                                  RoundNum                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TArray<uint8>&                    Bytes                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// TArray<uint8>                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 
-void UHonorTitleListDataAsset::GetHonorTitleLegendCompeInfo(int32 HonorTitleIndex, bool* IsLegendCompe, int32* RoundNum) const
+TArray<uint8> UHashHelper::HashIntoByteArrayFromByteArray(const TArray<uint8>& Bytes)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("HonorTitleListDataAsset", "GetHonorTitleLegendCompeInfo");
+		Func = StaticClass()->GetFunction("HashHelper", "HashIntoByteArrayFromByteArray");
 
-	Params::HonorTitleListDataAsset_GetHonorTitleLegendCompeInfo Parms{};
+	Params::HashHelper_HashIntoByteArrayFromByteArray Parms{};
 
-	Parms.HonorTitleIndex = HonorTitleIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (IsLegendCompe != nullptr)
-		*IsLegendCompe = Parms.IsLegendCompe;
-
-	if (RoundNum != nullptr)
-		*RoundNum = Parms.RoundNum;
-}
-
-
-// Function UnionSystem.HonorTitleListDataAsset.GetHonorTitlePlate
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   HonorTitleId                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TSoftObjectPtr<class UTexture2D>        ReturnValue                                            (Parm, OutParm, ReturnParm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-TSoftObjectPtr<class UTexture2D> UHonorTitleListDataAsset::GetHonorTitlePlate(int32 HonorTitleId) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HonorTitleListDataAsset", "GetHonorTitlePlate");
-
-	Params::HonorTitleListDataAsset_GetHonorTitlePlate Parms{};
-
-	Parms.HonorTitleId = HonorTitleId;
+	Parms.Bytes = std::move(Bytes);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -16892,27 +17271,27 @@ TSoftObjectPtr<class UTexture2D> UHonorTitleListDataAsset::GetHonorTitlePlate(in
 }
 
 
-// Function UnionSystem.HonorTitleListDataAsset.GetHonorTitleRarity
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function UnionSystem.HashHelper.HashIntoTextString
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// int32                                   HonorTitleId                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Data                                                   (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-int32 UHonorTitleListDataAsset::GetHonorTitleRarity(int32 HonorTitleId) const
+class FString UHashHelper::HashIntoTextString(const class FString& Data)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("HonorTitleListDataAsset", "GetHonorTitleRarity");
+		Func = StaticClass()->GetFunction("HashHelper", "HashIntoTextString");
 
-	Params::HonorTitleListDataAsset_GetHonorTitleRarity Parms{};
+	Params::HashHelper_HashIntoTextString Parms{};
 
-	Parms.HonorTitleId = HonorTitleId;
+	Parms.Data = std::move(Data);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -16920,59 +17299,27 @@ int32 UHonorTitleListDataAsset::GetHonorTitleRarity(int32 HonorTitleId) const
 }
 
 
-// Function UnionSystem.HonorTitleListDataAsset.GetHonorTitleVBName
-// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
+// Function UnionSystem.HashHelper.HashIntoTextStringFromByteArray
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// int32                                   HonorTitleId                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool*                                   IsValid                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+// const TArray<uint8>&                    Bytes                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class FText UHonorTitleListDataAsset::GetHonorTitleVBName(int32 HonorTitleId, bool* IsValid) const
+class FString UHashHelper::HashIntoTextStringFromByteArray(const TArray<uint8>& Bytes)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("HonorTitleListDataAsset", "GetHonorTitleVBName");
+		Func = StaticClass()->GetFunction("HashHelper", "HashIntoTextStringFromByteArray");
 
-	Params::HonorTitleListDataAsset_GetHonorTitleVBName Parms{};
+	Params::HashHelper_HashIntoTextStringFromByteArray Parms{};
 
-	Parms.HonorTitleId = HonorTitleId;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (IsValid != nullptr)
-		*IsValid = Parms.IsValid;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.HonorTitleListDataAsset.GetIsHonorTitleDLC
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   HonorTitleIndex                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UHonorTitleListDataAsset::GetIsHonorTitleDLC(int32 HonorTitleIndex) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HonorTitleListDataAsset", "GetIsHonorTitleDLC");
-
-	Params::HonorTitleListDataAsset_GetIsHonorTitleDLC Parms{};
-
-	Parms.HonorTitleIndex = HonorTitleIndex;
+	Parms.Bytes = std::move(Bytes);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -17229,6 +17576,39 @@ void UHttpHelper::Parse_CompensationGetCompensations(const class FString& OutDat
 		Func = StaticClass()->GetFunction("HttpHelper", "Parse_CompensationGetCompensations");
 
 	Params::HttpHelper_Parse_CompensationGetCompensations Parms{};
+
+	Parms.OutData = std::move(OutData);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (ResCode != nullptr)
+		*ResCode = Parms.ResCode;
+
+	if (Response != nullptr)
+		*Response = std::move(Parms.Response);
+}
+
+
+// Function UnionSystem.HttpHelper.Parse_CompensationSaveCompensations
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const class FString&                    OutData                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32*                                  ResCode                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FCompensationSaveCompensationsResponse*Response                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+
+void UHttpHelper::Parse_CompensationSaveCompensations(const class FString& OutData, int32* ResCode, struct FCompensationSaveCompensationsResponse* Response)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Parse_CompensationSaveCompensations");
+
+	Params::HttpHelper_Parse_CompensationSaveCompensations Parms{};
 
 	Parms.OutData = std::move(OutData);
 
@@ -19771,6 +20151,46 @@ bool UHttpHelper::Receive_CompensationGetCompensations(int32 Handle, bool* OutEr
 		Func = StaticClass()->GetFunction("HttpHelper", "Receive_CompensationGetCompensations");
 
 	Params::HttpHelper_Receive_CompensationGetCompensations Parms{};
+
+	Parms.Handle = Handle;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutError != nullptr)
+		*OutError = Parms.OutError;
+
+	if (ResCode != nullptr)
+		*ResCode = Parms.ResCode;
+
+	if (Response != nullptr)
+		*Response = std::move(Parms.Response);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.HttpHelper.Receive_CompensationSaveCompensations
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// int32                                   Handle                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool*                                   OutError                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32*                                  ResCode                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FCompensationSaveCompensationsResponse*Response                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UHttpHelper::Receive_CompensationSaveCompensations(int32 Handle, bool* OutError, int32* ResCode, struct FCompensationSaveCompensationsResponse* Response)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Receive_CompensationSaveCompensations");
+
+	Params::HttpHelper_Receive_CompensationSaveCompensations Parms{};
 
 	Parms.Handle = Handle;
 
@@ -22974,6 +23394,116 @@ int32 UHttpHelper::Send_CompensationGetCompensations_NoResend(const struct FComp
 }
 
 
+// Function UnionSystem.HttpHelper.Send_CompensationSaveCompensations
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FCompensationSaveCompensationsRequest&Request                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UHttpHelper::Send_CompensationSaveCompensations(const struct FCompensationSaveCompensationsRequest& Request)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Send_CompensationSaveCompensations");
+
+	Params::HttpHelper_Send_CompensationSaveCompensations Parms{};
+
+	Parms.Request = std::move(Request);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.HttpHelper.Send_CompensationSaveCompensations_Callbacked
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FCompensationSaveCompensationsRequest&Request                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)>Callback                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UHttpHelper::Send_CompensationSaveCompensations_Callbacked(const struct FCompensationSaveCompensationsRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Send_CompensationSaveCompensations_Callbacked");
+
+	Params::HttpHelper_Send_CompensationSaveCompensations_Callbacked Parms{};
+
+	Parms.Request = std::move(Request);
+	Parms.Callback = Callback;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.HttpHelper.Send_CompensationSaveCompensations_Callbacked_NoResend
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FCompensationSaveCompensationsRequest&Request                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)>Callback                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UHttpHelper::Send_CompensationSaveCompensations_Callbacked_NoResend(const struct FCompensationSaveCompensationsRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Send_CompensationSaveCompensations_Callbacked_NoResend");
+
+	Params::HttpHelper_Send_CompensationSaveCompensations_Callbacked_NoResend Parms{};
+
+	Parms.Request = std::move(Request);
+	Parms.Callback = Callback;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.HttpHelper.Send_CompensationSaveCompensations_NoResend
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FCompensationSaveCompensationsRequest&Request                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UHttpHelper::Send_CompensationSaveCompensations_NoResend(const struct FCompensationSaveCompensationsRequest& Request)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Send_CompensationSaveCompensations_NoResend");
+
+	Params::HttpHelper_Send_CompensationSaveCompensations_NoResend Parms{};
+
+	Parms.Request = std::move(Request);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function UnionSystem.HttpHelper.Send_DebugChangeFairPlayPoint
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
@@ -23967,7 +24497,7 @@ int32 UHttpHelper::Send_DebugMatchmakingSubscribeRankMatch_NoResend(const struct
 // Function UnionSystem.HttpHelper.Send_FairPointAddFairPoint
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// const struct FFairPointAddFairPointRequest&Request                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// const struct FFairPointAddFairPointRequest&Request                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 // int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 int32 UHttpHelper::Send_FairPointAddFairPoint(const struct FFairPointAddFairPointRequest& Request)
@@ -23995,7 +24525,7 @@ int32 UHttpHelper::Send_FairPointAddFairPoint(const struct FFairPointAddFairPoin
 // Function UnionSystem.HttpHelper.Send_FairPointAddFairPoint_Callbacked
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// const struct FFairPointAddFairPointRequest&Request                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// const struct FFairPointAddFairPointRequest&Request                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 // TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)>Callback                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UHttpHelper::Send_FairPointAddFairPoint_Callbacked(const struct FFairPointAddFairPointRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback)
@@ -24022,7 +24552,7 @@ void UHttpHelper::Send_FairPointAddFairPoint_Callbacked(const struct FFairPointA
 // Function UnionSystem.HttpHelper.Send_FairPointAddFairPoint_Callbacked_NoResend
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// const struct FFairPointAddFairPointRequest&Request                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// const struct FFairPointAddFairPointRequest&Request                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 // TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)>Callback                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UHttpHelper::Send_FairPointAddFairPoint_Callbacked_NoResend(const struct FFairPointAddFairPointRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback)
@@ -24049,7 +24579,7 @@ void UHttpHelper::Send_FairPointAddFairPoint_Callbacked_NoResend(const struct FF
 // Function UnionSystem.HttpHelper.Send_FairPointAddFairPoint_NoResend
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// const struct FFairPointAddFairPointRequest&Request                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// const struct FFairPointAddFairPointRequest&Request                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 // int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 int32 UHttpHelper::Send_FairPointAddFairPoint_NoResend(const struct FFairPointAddFairPointRequest& Request)
@@ -31559,6 +32089,100 @@ void IInputProcessInterface::SilentFocus()
 }
 
 
+// Function UnionSystem.JukeboxDataAsset.ClearData
+// (Final, Native, Public, BlueprintCallable)
+
+void UJukeboxDataAsset::ClearData()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("JukeboxDataAsset", "ClearData");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.JukeboxDataAsset.GetAlbumData
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   AlbumID                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FAlbumData                       ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+
+struct FAlbumData UJukeboxDataAsset::GetAlbumData(int32 AlbumID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("JukeboxDataAsset", "GetAlbumData");
+
+	Params::JukeboxDataAsset_GetAlbumData Parms{};
+
+	Parms.AlbumID = AlbumID;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.JukeboxDataAsset.GetTrackData
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   TrackID                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FTrackData                       ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+
+struct FTrackData UJukeboxDataAsset::GetTrackData(int32 TrackID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("JukeboxDataAsset", "GetTrackData");
+
+	Params::JukeboxDataAsset_GetTrackData Parms{};
+
+	Parms.TrackID = TrackID;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.JukeboxDataAsset.Update
+// (Final, Native, Public, BlueprintCallable)
+
+void UJukeboxDataAsset::Update()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("JukeboxDataAsset", "Update");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function UnionSystem.KeyConfigItem.ResetToDefault
 // (Final, Native, Public, BlueprintCallable)
 
@@ -32043,10 +32667,11 @@ bool UKeyConfigHelpers::CompareCustomKeyConfigs(const TMap<class FName, struct F
 // Parameters:
 // class UInputDataAsset*                  InputDataAsset                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // EKeyConfigOperationType                 OperationType                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// ESecondaryGadgetButtonType              SecondaryGadgetButtonType                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // struct FInputConfig*                    OutInputConfig                                         (Parm, OutParm, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UKeyConfigHelpers::FindInputConfig(class UInputDataAsset* InputDataAsset, EKeyConfigOperationType OperationType, struct FInputConfig* OutInputConfig)
+bool UKeyConfigHelpers::FindInputConfig(class UInputDataAsset* InputDataAsset, EKeyConfigOperationType OperationType, ESecondaryGadgetButtonType SecondaryGadgetButtonType, struct FInputConfig* OutInputConfig)
 {
 	static class UFunction* Func = nullptr;
 
@@ -32057,6 +32682,7 @@ bool UKeyConfigHelpers::FindInputConfig(class UInputDataAsset* InputDataAsset, E
 
 	Parms.InputDataAsset = InputDataAsset;
 	Parms.OperationType = OperationType;
+	Parms.SecondaryGadgetButtonType = SecondaryGadgetButtonType;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -32138,34 +32764,6 @@ bool UKeyConfigHelpers::GetCustomKeyConfigs(int32 InPlayerControllerIndex, TMap<
 }
 
 
-// Function UnionSystem.KeyConfigHelpers.GetInputConfigNameFromOperationType
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// EKeyConfigOperationType                 OperationType                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FName                       ReturnValue                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-const class FName UKeyConfigHelpers::GetInputConfigNameFromOperationType(EKeyConfigOperationType OperationType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("KeyConfigHelpers", "GetInputConfigNameFromOperationType");
-
-	Params::KeyConfigHelpers_GetInputConfigNameFromOperationType Parms{};
-
-	Parms.OperationType = OperationType;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
 // Function UnionSystem.KeyConfigHelpers.GetKeyConfigItems
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
@@ -32196,6 +32794,40 @@ void UKeyConfigHelpers::GetKeyConfigItems(int32 InPlayerControllerIndex, const s
 
 	if (OutKeyConfigItems != nullptr)
 		*OutKeyConfigItems = std::move(Parms.OutKeyConfigItems);
+}
+
+
+// Function UnionSystem.KeyConfigHelpers.GetRaceConfigKey
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// int32                                   PlayerIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FName&                      InActionName                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    IsPrimary                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    IsGamepad                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FKey                             ReturnValue                                            (Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+struct FKey UKeyConfigHelpers::GetRaceConfigKey(int32 PlayerIndex, const class FName& InActionName, bool IsPrimary, bool IsGamepad)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("KeyConfigHelpers", "GetRaceConfigKey");
+
+	Params::KeyConfigHelpers_GetRaceConfigKey Parms{};
+
+	Parms.PlayerIndex = PlayerIndex;
+	Parms.InActionName = InActionName;
+	Parms.IsPrimary = IsPrimary;
+	Parms.IsGamepad = IsGamepad;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
@@ -36669,6 +37301,31 @@ void ULocalStorageSubsystem::SaveAsync(const class FString& Filename, TArray<uin
 
 	if (InBuffer != nullptr)
 		*InBuffer = std::move(Parms.InBuffer);
+}
+
+
+// Function UnionSystem.LongInputTimeLine.OnHoldUpdateLocalFunc
+// (Final, Native, Protected)
+// Parameters:
+// float                                   InVlalue                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ULongInputTimeLine::OnHoldUpdateLocalFunc(float InVlalue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LongInputTimeLine", "OnHoldUpdateLocalFunc");
+
+	Params::LongInputTimeLine_OnHoldUpdateLocalFunc Parms{};
+
+	Parms.InVlalue = InVlalue;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -52280,6 +52937,31 @@ EErrorLevel UUnionErrorUtils::GetErrorLevel()
 		Func = StaticClass()->GetFunction("UnionErrorUtils", "GetErrorLevel");
 
 	Params::UnionErrorUtils_GetErrorLevel Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.UnionErrorUtils.GetLobbyAddFairPointErrorType
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// ELobbyAddFairPointErrorType             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+ELobbyAddFairPointErrorType UUnionErrorUtils::GetLobbyAddFairPointErrorType()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("UnionErrorUtils", "GetLobbyAddFairPointErrorType");
+
+	Params::UnionErrorUtils_GetLobbyAddFairPointErrorType Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

@@ -50,27 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_System_Transition_C">();
+		BP_STATIC_CLASS_IMPL("WBP_System_Transition_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_System_Transition_C")
 	}
 	static class UWBP_System_Transition_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_System_Transition_C>();
 	}
 };
-static_assert(alignof(UWBP_System_Transition_C) == 0x000008, "Wrong alignment on UWBP_System_Transition_C");
-static_assert(sizeof(UWBP_System_Transition_C) == 0x000368, "Wrong size on UWBP_System_Transition_C");
-static_assert(offsetof(UWBP_System_Transition_C, UberGraphFrame) == 0x000308, "Member 'UWBP_System_Transition_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Transition_C, Fade_Out_Black) == 0x000310, "Member 'UWBP_System_Transition_C::Fade_Out_Black' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Transition_C, Fade_Loop_Black) == 0x000318, "Member 'UWBP_System_Transition_C::Fade_Loop_Black' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Transition_C, Fade_In_Black) == 0x000320, "Member 'UWBP_System_Transition_C::Fade_In_Black' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Transition_C, Fade_Out_White) == 0x000328, "Member 'UWBP_System_Transition_C::Fade_Out_White' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Transition_C, Fade_Loop_White) == 0x000330, "Member 'UWBP_System_Transition_C::Fade_Loop_White' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Transition_C, Fade_In_White) == 0x000338, "Member 'UWBP_System_Transition_C::Fade_In_White' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Transition_C, RaceFlag_Left) == 0x000340, "Member 'UWBP_System_Transition_C::RaceFlag_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Transition_C, RaceFlag_Right) == 0x000348, "Member 'UWBP_System_Transition_C::RaceFlag_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Transition_C, WhiteBlack) == 0x000350, "Member 'UWBP_System_Transition_C::WhiteBlack' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Transition_C, LastDirectionAnim) == 0x000358, "Member 'UWBP_System_Transition_C::LastDirectionAnim' has a wrong offset!");
-static_assert(offsetof(UWBP_System_Transition_C, LastLoopAnim) == 0x000360, "Member 'UWBP_System_Transition_C::LastLoopAnim' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_System_Transition_C;
 
 }
 

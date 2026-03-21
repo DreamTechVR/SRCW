@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "Engine_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
+#include "UnionUI_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -44,18 +44,17 @@ public:
 	void CallDodonpaEvent(class FName EventName, EGrandPrixEventFlag SaveDataFlagId, EMenuSequenceBGM BGM_ID);
 	void SetSubMenuVisibility(ESlateVisibility Visibility);
 	void AttachMainCamera();
-	void DelayOpenWindow();
 	void DoCompensationNext();
+	void OnReceiveSaveCompensation(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error);
 	void OnExitStateTutorialVideo();
 	void OnInitStateTutorialVideo();
+	void DelayOpenWindow();
 	void EndTutorialPopup(ESlateVisibility InVisibility);
 	void OnFinishedFade(EUnionUIFadeDirection FadeDirection);
 	void OnInitState();
 	void OnExitState();
 	void OnInitializeFlow_final();
-	void OnDodonpaEventEnd_GrandPrixCleard(EMenuSequenceSubState State);
 	void Call_DodonpaEvent_GrandPrixCleard();
-	void OnDodonpaEvent_FestaIntro(EMenuSequenceSubState State);
 	void Call_DodonpaEvent_FestaIntro();
 	void OnEndFade_FestaIntro(EUnionUIFadeDirection FadeDirection);
 	void OnInitializeFlow_DLC_Freecontents();
@@ -70,39 +69,35 @@ public:
 	void ReturnTutorialVideo();
 	void OnInitializeFlow_ClearGrandPrix();
 	void OnInitializeFlow_TutorialCheck();
-	void OnReceiveCheckCompensation(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error);
 	void OnReceiveCheckFestaReward(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error);
 	void OnErrorPopupWindowClose(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex);
-	void OnDodonpaEventEnd_LegendInfo(EMenuSequenceSubState State);
 	void Call_DodonpaEvent_LegendInfo();
 	void OnEndFade_LegendInfo(EUnionUIFadeDirection FadeDirection);
 	void OnInitializeFlow_LegendCompeEndReward();
 	void OnReceiveCheckLegendCompeReward(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error);
+	void OnReceiveCheckCompensation(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error);
 	void OnInitializeFlow_Compensation();
+	void OnDodonpaEvent_FestaIntro(bool IsSucceeded);
+	void OnDodonpaEventEnd_GrandPrixCleard(bool IsSucceeded);
+	void OnDodonpaEventEnd_LegendInfo(bool IsSucceeded);
 	void OnAttentionPopupWindowDecision(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex);
 	void ExecuteUbergraph_BPC_PreNotice(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPC_PreNotice_C">();
+		BP_STATIC_CLASS_IMPL("BPC_PreNotice_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPC_PreNotice_C")
 	}
 	static class UBPC_PreNotice_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBPC_PreNotice_C>();
 	}
 };
-static_assert(alignof(UBPC_PreNotice_C) == 0x000008, "Wrong alignment on UBPC_PreNotice_C");
-static_assert(sizeof(UBPC_PreNotice_C) == 0x000288, "Wrong size on UBPC_PreNotice_C");
-static_assert(offsetof(UBPC_PreNotice_C, UberGraphFrame) == 0x000248, "Member 'UBPC_PreNotice_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_PreNotice_C, LastFestaId) == 0x000250, "Member 'UBPC_PreNotice_C::LastFestaId' has a wrong offset!");
-static_assert(offsetof(UBPC_PreNotice_C, LastFestaPoint) == 0x000254, "Member 'UBPC_PreNotice_C::LastFestaPoint' has a wrong offset!");
-static_assert(offsetof(UBPC_PreNotice_C, TutorialPopup) == 0x000258, "Member 'UBPC_PreNotice_C::TutorialPopup' has a wrong offset!");
-static_assert(offsetof(UBPC_PreNotice_C, PopupWindow) == 0x000260, "Member 'UBPC_PreNotice_C::PopupWindow' has a wrong offset!");
-static_assert(offsetof(UBPC_PreNotice_C, DodonpaEventState) == 0x000268, "Member 'UBPC_PreNotice_C::DodonpaEventState' has a wrong offset!");
-static_assert(offsetof(UBPC_PreNotice_C, StreamingInstallPopup) == 0x000270, "Member 'UBPC_PreNotice_C::StreamingInstallPopup' has a wrong offset!");
-static_assert(offsetof(UBPC_PreNotice_C, DonpaPrevBGM) == 0x000278, "Member 'UBPC_PreNotice_C::DonpaPrevBGM' has a wrong offset!");
-static_assert(offsetof(UBPC_PreNotice_C, CommonConnectingUI) == 0x000280, "Member 'UBPC_PreNotice_C::CommonConnectingUI' has a wrong offset!");
+DUMPER7_ASSERTS_UBPC_PreNotice_C;
 
 }
 

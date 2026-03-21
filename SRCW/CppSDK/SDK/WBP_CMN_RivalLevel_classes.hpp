@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -41,22 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CMN_RivalLevel_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CMN_RivalLevel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CMN_RivalLevel_C")
 	}
 	static class UWBP_CMN_RivalLevel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CMN_RivalLevel_C>();
 	}
 };
-static_assert(alignof(UWBP_CMN_RivalLevel_C) == 0x000008, "Wrong alignment on UWBP_CMN_RivalLevel_C");
-static_assert(sizeof(UWBP_CMN_RivalLevel_C) == 0x000350, "Wrong size on UWBP_CMN_RivalLevel_C");
-static_assert(offsetof(UWBP_CMN_RivalLevel_C, UberGraphFrame) == 0x0002F8, "Member 'UWBP_CMN_RivalLevel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_RivalLevel_C, RivalLevel_Out) == 0x000300, "Member 'UWBP_CMN_RivalLevel_C::RivalLevel_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_RivalLevel_C, RivalLevel_Loop) == 0x000308, "Member 'UWBP_CMN_RivalLevel_C::RivalLevel_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_RivalLevel_C, RivalLevel_In) == 0x000310, "Member 'UWBP_CMN_RivalLevel_C::RivalLevel_In' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_RivalLevel_C, Base_Normal) == 0x000318, "Member 'UWBP_CMN_RivalLevel_C::Base_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_RivalLevel_C, Panel) == 0x000320, "Member 'UWBP_CMN_RivalLevel_C::Panel' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_RivalLevel_C, PanelDebugTexture) == 0x000328, "Member 'UWBP_CMN_RivalLevel_C::PanelDebugTexture' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CMN_RivalLevel_C;
 
 }
 

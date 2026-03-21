@@ -19,19 +19,19 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_RacePlayerController.BP_RacePlayerController_C
-// 0x0010 (0x0BA8 - 0x0B98)
+// 0x0010 (0x0BA0 - 0x0B90)
 class ABP_RacePlayerController_C final : public ARacePlayerController
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0B98(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	bool                                          ShiftPressed;                                      // 0x0BA0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CtrlPressed;                                       // 0x0BA1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          AltPressed;                                        // 0x0BA2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          F9Pressed;                                         // 0x0BA3(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ButtonLeftThumbstickPressed;                       // 0x0BA4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ButtonRightThumbstickPressed;                      // 0x0BA5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ButtonRightTriggerPressed;                         // 0x0BA6(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          DebugTraceStarted;                                 // 0x0BA7(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0B90(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	bool                                          ShiftPressed;                                      // 0x0B98(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CtrlPressed;                                       // 0x0B99(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          AltPressed;                                        // 0x0B9A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          F9Pressed;                                         // 0x0B9B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ButtonLeftThumbstickPressed;                       // 0x0B9C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ButtonRightThumbstickPressed;                      // 0x0B9D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ButtonRightTriggerPressed;                         // 0x0B9E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          DebugTraceStarted;                                 // 0x0B9F(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BP_RacePlayerController(int32 EntryPoint);
@@ -65,24 +65,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_RacePlayerController_C">();
+		BP_STATIC_CLASS_IMPL("BP_RacePlayerController_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_RacePlayerController_C")
 	}
 	static class ABP_RacePlayerController_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_RacePlayerController_C>();
 	}
 };
-static_assert(alignof(ABP_RacePlayerController_C) == 0x000008, "Wrong alignment on ABP_RacePlayerController_C");
-static_assert(sizeof(ABP_RacePlayerController_C) == 0x000BA8, "Wrong size on ABP_RacePlayerController_C");
-static_assert(offsetof(ABP_RacePlayerController_C, UberGraphFrame) == 0x000B98, "Member 'ABP_RacePlayerController_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_RacePlayerController_C, ShiftPressed) == 0x000BA0, "Member 'ABP_RacePlayerController_C::ShiftPressed' has a wrong offset!");
-static_assert(offsetof(ABP_RacePlayerController_C, CtrlPressed) == 0x000BA1, "Member 'ABP_RacePlayerController_C::CtrlPressed' has a wrong offset!");
-static_assert(offsetof(ABP_RacePlayerController_C, AltPressed) == 0x000BA2, "Member 'ABP_RacePlayerController_C::AltPressed' has a wrong offset!");
-static_assert(offsetof(ABP_RacePlayerController_C, F9Pressed) == 0x000BA3, "Member 'ABP_RacePlayerController_C::F9Pressed' has a wrong offset!");
-static_assert(offsetof(ABP_RacePlayerController_C, ButtonLeftThumbstickPressed) == 0x000BA4, "Member 'ABP_RacePlayerController_C::ButtonLeftThumbstickPressed' has a wrong offset!");
-static_assert(offsetof(ABP_RacePlayerController_C, ButtonRightThumbstickPressed) == 0x000BA5, "Member 'ABP_RacePlayerController_C::ButtonRightThumbstickPressed' has a wrong offset!");
-static_assert(offsetof(ABP_RacePlayerController_C, ButtonRightTriggerPressed) == 0x000BA6, "Member 'ABP_RacePlayerController_C::ButtonRightTriggerPressed' has a wrong offset!");
-static_assert(offsetof(ABP_RacePlayerController_C, DebugTraceStarted) == 0x000BA7, "Member 'ABP_RacePlayerController_C::DebugTraceStarted' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_RacePlayerController_C;
 
 }
 

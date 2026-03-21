@@ -32,16 +32,7 @@ public:
 	class UTexture2D*                             K2Node_DynamicCast_As_____2D_1;                    // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_RaceBefore_FeaturedRacer_C_ExecuteUbergraph_WBP_RaceBefore_FeaturedRacer) == 0x000008, "Wrong alignment on WBP_RaceBefore_FeaturedRacer_C_ExecuteUbergraph_WBP_RaceBefore_FeaturedRacer");
-static_assert(sizeof(WBP_RaceBefore_FeaturedRacer_C_ExecuteUbergraph_WBP_RaceBefore_FeaturedRacer) == 0x000038, "Wrong size on WBP_RaceBefore_FeaturedRacer_C_ExecuteUbergraph_WBP_RaceBefore_FeaturedRacer");
-static_assert(offsetof(WBP_RaceBefore_FeaturedRacer_C_ExecuteUbergraph_WBP_RaceBefore_FeaturedRacer, EntryPoint) == 0x000000, "Member 'WBP_RaceBefore_FeaturedRacer_C_ExecuteUbergraph_WBP_RaceBefore_FeaturedRacer::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FeaturedRacer_C_ExecuteUbergraph_WBP_RaceBefore_FeaturedRacer, K2Node_Event_IsDesignTime) == 0x000004, "Member 'WBP_RaceBefore_FeaturedRacer_C_ExecuteUbergraph_WBP_RaceBefore_FeaturedRacer::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FeaturedRacer_C_ExecuteUbergraph_WBP_RaceBefore_FeaturedRacer, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x000008, "Member 'WBP_RaceBefore_FeaturedRacer_C_ExecuteUbergraph_WBP_RaceBefore_FeaturedRacer::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FeaturedRacer_C_ExecuteUbergraph_WBP_RaceBefore_FeaturedRacer, K2Node_DynamicCast_As_____2D) == 0x000010, "Member 'WBP_RaceBefore_FeaturedRacer_C_ExecuteUbergraph_WBP_RaceBefore_FeaturedRacer::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FeaturedRacer_C_ExecuteUbergraph_WBP_RaceBefore_FeaturedRacer, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'WBP_RaceBefore_FeaturedRacer_C_ExecuteUbergraph_WBP_RaceBefore_FeaturedRacer::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FeaturedRacer_C_ExecuteUbergraph_WBP_RaceBefore_FeaturedRacer, CallFunc_LoadAsset_Blocking_ReturnValue_1) == 0x000020, "Member 'WBP_RaceBefore_FeaturedRacer_C_ExecuteUbergraph_WBP_RaceBefore_FeaturedRacer::CallFunc_LoadAsset_Blocking_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FeaturedRacer_C_ExecuteUbergraph_WBP_RaceBefore_FeaturedRacer, K2Node_DynamicCast_As_____2D_1) == 0x000028, "Member 'WBP_RaceBefore_FeaturedRacer_C_ExecuteUbergraph_WBP_RaceBefore_FeaturedRacer::K2Node_DynamicCast_As_____2D_1' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FeaturedRacer_C_ExecuteUbergraph_WBP_RaceBefore_FeaturedRacer, K2Node_DynamicCast_bSuccess_1) == 0x000030, "Member 'WBP_RaceBefore_FeaturedRacer_C_ExecuteUbergraph_WBP_RaceBefore_FeaturedRacer::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_RaceBefore_FeaturedRacer_C_ExecuteUbergraph_WBP_RaceBefore_FeaturedRacer;
 
 // Function WBP_RaceBefore_FeaturedRacer.WBP_RaceBefore_FeaturedRacer_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -50,9 +41,7 @@ struct WBP_RaceBefore_FeaturedRacer_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_RaceBefore_FeaturedRacer_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_RaceBefore_FeaturedRacer_C_PreConstruct");
-static_assert(sizeof(WBP_RaceBefore_FeaturedRacer_C_PreConstruct) == 0x000001, "Wrong size on WBP_RaceBefore_FeaturedRacer_C_PreConstruct");
-static_assert(offsetof(WBP_RaceBefore_FeaturedRacer_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_RaceBefore_FeaturedRacer_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_RaceBefore_FeaturedRacer_C_PreConstruct;
 
 // Function WBP_RaceBefore_FeaturedRacer.WBP_RaceBefore_FeaturedRacer_C.SetPlatform
 // 0x0020 (0x0020 - 0x0000)
@@ -65,12 +54,7 @@ public:
 	double                                        CallFunc_Conv_ByteToDouble_ReturnValue;            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_RaceBefore_FeaturedRacer_C_SetPlatform) == 0x000008, "Wrong alignment on WBP_RaceBefore_FeaturedRacer_C_SetPlatform");
-static_assert(sizeof(WBP_RaceBefore_FeaturedRacer_C_SetPlatform) == 0x000020, "Wrong size on WBP_RaceBefore_FeaturedRacer_C_SetPlatform");
-static_assert(offsetof(WBP_RaceBefore_FeaturedRacer_C_SetPlatform, In_Platform) == 0x000000, "Member 'WBP_RaceBefore_FeaturedRacer_C_SetPlatform::In_Platform' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FeaturedRacer_C_SetPlatform, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000008, "Member 'WBP_RaceBefore_FeaturedRacer_C_SetPlatform::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FeaturedRacer_C_SetPlatform, CallFunc_Conv_ByteToDouble_ReturnValue) == 0x000010, "Member 'WBP_RaceBefore_FeaturedRacer_C_SetPlatform::CallFunc_Conv_ByteToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_RaceBefore_FeaturedRacer_C_SetPlatform, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000018, "Member 'WBP_RaceBefore_FeaturedRacer_C_SetPlatform::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_RaceBefore_FeaturedRacer_C_SetPlatform;
 
 }
 

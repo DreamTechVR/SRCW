@@ -107,8 +107,7 @@ struct alignas(0x08) FMariaQRCode final
 public:
 	uint8                                         Pad_0[0x18];                                       // 0x0000(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMariaQRCode) == 0x000008, "Wrong alignment on FMariaQRCode");
-static_assert(sizeof(FMariaQRCode) == 0x000018, "Wrong size on FMariaQRCode");
+DUMPER7_ASSERTS_FMariaQRCode;
 
 // ScriptStruct mariaUploadPlugin.MariaTableRow
 // 0x0008 (0x0008 - 0x0000)
@@ -117,8 +116,7 @@ struct alignas(0x08) FMariaTableRow final
 public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMariaTableRow) == 0x000008, "Wrong alignment on FMariaTableRow");
-static_assert(sizeof(FMariaTableRow) == 0x000008, "Wrong size on FMariaTableRow");
+DUMPER7_ASSERTS_FMariaTableRow;
 
 }
 

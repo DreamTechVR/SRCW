@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "CriWareRuntime_structs.hpp"
-#include "MovieSceneTracks_structs.hpp"
 #include "MovieScene_structs.hpp"
 #include "MovieScene_classes.hpp"
+#include "MovieSceneTracks_structs.hpp"
+#include "CriWareRuntime_structs.hpp"
 
 
 namespace SDK
@@ -52,28 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneAtomSection">();
+		STATIC_CLASS_IMPL("MovieSceneAtomSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneAtomSection")
 	}
 	static class UMovieSceneAtomSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneAtomSection>();
 	}
 };
-static_assert(alignof(UMovieSceneAtomSection) == 0x000008, "Wrong alignment on UMovieSceneAtomSection");
-static_assert(sizeof(UMovieSceneAtomSection) == 0x000498, "Wrong size on UMovieSceneAtomSection");
-static_assert(offsetof(UMovieSceneAtomSection, Sound) == 0x0000F0, "Member 'UMovieSceneAtomSection::Sound' has a wrong offset!");
-static_assert(offsetof(UMovieSceneAtomSection, StartFrameOffset) == 0x0000F8, "Member 'UMovieSceneAtomSection::StartFrameOffset' has a wrong offset!");
-static_assert(offsetof(UMovieSceneAtomSection, SoundVolume) == 0x000100, "Member 'UMovieSceneAtomSection::SoundVolume' has a wrong offset!");
-static_assert(offsetof(UMovieSceneAtomSection, PitchMultiplier) == 0x000210, "Member 'UMovieSceneAtomSection::PitchMultiplier' has a wrong offset!");
-static_assert(offsetof(UMovieSceneAtomSection, AttachActorData) == 0x000320, "Member 'UMovieSceneAtomSection::AttachActorData' has a wrong offset!");
-static_assert(offsetof(UMovieSceneAtomSection, ScalarParameterNamesAndCurves) == 0x000440, "Member 'UMovieSceneAtomSection::ScalarParameterNamesAndCurves' has a wrong offset!");
-static_assert(offsetof(UMovieSceneAtomSection, bSuppressSubtitles) == 0x000450, "Member 'UMovieSceneAtomSection::bSuppressSubtitles' has a wrong offset!");
-static_assert(offsetof(UMovieSceneAtomSection, bOverrideAttenuation) == 0x000451, "Member 'UMovieSceneAtomSection::bOverrideAttenuation' has a wrong offset!");
-static_assert(offsetof(UMovieSceneAtomSection, AttenuationSettings) == 0x000458, "Member 'UMovieSceneAtomSection::AttenuationSettings' has a wrong offset!");
-static_assert(offsetof(UMovieSceneAtomSection, bContinueSoundWhenSequenceIsEnd) == 0x000460, "Member 'UMovieSceneAtomSection::bContinueSoundWhenSequenceIsEnd' has a wrong offset!");
-static_assert(offsetof(UMovieSceneAtomSection, AsrRackIDs) == 0x000468, "Member 'UMovieSceneAtomSection::AsrRackIDs' has a wrong offset!");
-static_assert(offsetof(UMovieSceneAtomSection, SelectorLabels) == 0x000478, "Member 'UMovieSceneAtomSection::SelectorLabels' has a wrong offset!");
-static_assert(offsetof(UMovieSceneAtomSection, bLooping) == 0x000488, "Member 'UMovieSceneAtomSection::bLooping' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieSceneAtomSection;
 
 // Class CriWareMovieScenes.MovieSceneAtomTrack
 // 0x0018 (0x00B0 - 0x0098)
@@ -86,16 +76,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneAtomTrack">();
+		STATIC_CLASS_IMPL("MovieSceneAtomTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneAtomTrack")
 	}
 	static class UMovieSceneAtomTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneAtomTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneAtomTrack) == 0x000008, "Wrong alignment on UMovieSceneAtomTrack");
-static_assert(sizeof(UMovieSceneAtomTrack) == 0x0000B0, "Wrong size on UMovieSceneAtomTrack");
-static_assert(offsetof(UMovieSceneAtomTrack, AtomSections) == 0x0000A0, "Member 'UMovieSceneAtomTrack::AtomSections' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieSceneAtomTrack;
 
 // Class CriWareMovieScenes.MovieSceneManaSection
 // 0x0030 (0x0120 - 0x00F0)
@@ -115,22 +107,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneManaSection">();
+		STATIC_CLASS_IMPL("MovieSceneManaSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneManaSection")
 	}
 	static class UMovieSceneManaSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneManaSection>();
 	}
 };
-static_assert(alignof(UMovieSceneManaSection) == 0x000008, "Wrong alignment on UMovieSceneManaSection");
-static_assert(sizeof(UMovieSceneManaSection) == 0x000120, "Wrong size on UMovieSceneManaSection");
-static_assert(offsetof(UMovieSceneManaSection, ManaSource) == 0x0000F0, "Member 'UMovieSceneManaSection::ManaSource' has a wrong offset!");
-static_assert(offsetof(UMovieSceneManaSection, bLooping) == 0x0000F8, "Member 'UMovieSceneManaSection::bLooping' has a wrong offset!");
-static_assert(offsetof(UMovieSceneManaSection, StartFrameOffset) == 0x0000FC, "Member 'UMovieSceneManaSection::StartFrameOffset' has a wrong offset!");
-static_assert(offsetof(UMovieSceneManaSection, ManaTexture) == 0x000100, "Member 'UMovieSceneManaSection::ManaTexture' has a wrong offset!");
-static_assert(offsetof(UMovieSceneManaSection, AtomComponent) == 0x000108, "Member 'UMovieSceneManaSection::AtomComponent' has a wrong offset!");
-static_assert(offsetof(UMovieSceneManaSection, bUseExternalManaPlayer) == 0x000110, "Member 'UMovieSceneManaSection::bUseExternalManaPlayer' has a wrong offset!");
-static_assert(offsetof(UMovieSceneManaSection, ExternalManaPlayer) == 0x000118, "Member 'UMovieSceneManaSection::ExternalManaPlayer' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieSceneManaSection;
 
 // Class CriWareMovieScenes.MovieSceneManaTrack
 // 0x0040 (0x00D8 - 0x0098)
@@ -144,17 +132,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneManaTrack">();
+		STATIC_CLASS_IMPL("MovieSceneManaTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneManaTrack")
 	}
 	static class UMovieSceneManaTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneManaTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneManaTrack) == 0x000008, "Wrong alignment on UMovieSceneManaTrack");
-static_assert(sizeof(UMovieSceneManaTrack) == 0x0000D8, "Wrong size on UMovieSceneManaTrack");
-static_assert(offsetof(UMovieSceneManaTrack, ManaSections) == 0x0000A0, "Member 'UMovieSceneManaTrack::ManaSections' has a wrong offset!");
-static_assert(offsetof(UMovieSceneManaTrack, SyncedAtomTrack) == 0x0000B0, "Member 'UMovieSceneManaTrack::SyncedAtomTrack' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieSceneManaTrack;
 
 }
 

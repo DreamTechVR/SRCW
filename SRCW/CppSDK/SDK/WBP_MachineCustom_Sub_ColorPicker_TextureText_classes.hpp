@@ -37,18 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MachineCustom_Sub_ColorPicker_TextureText_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MachineCustom_Sub_ColorPicker_TextureText_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MachineCustom_Sub_ColorPicker_TextureText_C")
 	}
 	static class UWBP_MachineCustom_Sub_ColorPicker_TextureText_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MachineCustom_Sub_ColorPicker_TextureText_C>();
 	}
 };
-static_assert(alignof(UWBP_MachineCustom_Sub_ColorPicker_TextureText_C) == 0x000008, "Wrong alignment on UWBP_MachineCustom_Sub_ColorPicker_TextureText_C");
-static_assert(sizeof(UWBP_MachineCustom_Sub_ColorPicker_TextureText_C) == 0x0002F8, "Wrong size on UWBP_MachineCustom_Sub_ColorPicker_TextureText_C");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_TextureText_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_MachineCustom_Sub_ColorPicker_TextureText_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_TextureText_C, DSP_Set_Icon) == 0x0002E8, "Member 'UWBP_MachineCustom_Sub_ColorPicker_TextureText_C::DSP_Set_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_MachineCustom_Sub_ColorPicker_TextureText_C, TXT_TextureName) == 0x0002F0, "Member 'UWBP_MachineCustom_Sub_ColorPicker_TextureText_C::TXT_TextureName' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MachineCustom_Sub_ColorPicker_TextureText_C;
 
 }
 
